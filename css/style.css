@@ -10,7 +10,10 @@
 
 body {
     font-family: 'Inter', system-ui, sans-serif;
-    background: #f2f2f2;
+    background:
+radial-gradient(circle at 20% 20%, rgba(120,180,255,0.08), transparent 40%),
+radial-gradient(circle at 80% 80%, rgba(255,150,200,0.08), transparent 40%),
+linear-gradient(180deg, #f8f9fb, #eef1f6);
     color: #111;
     min-height: 100vh;
     display: flex;
@@ -19,7 +22,10 @@ body {
 }
 
 body.dark {
-    background: #111;
+    background:
+radial-gradient(circle at 20% 20%, rgba(0,120,255,0.15), transparent 40%),
+radial-gradient(circle at 80% 80%, rgba(255,0,120,0.12), transparent 40%),
+linear-gradient(180deg, #0f1116, #161a22);
     color: #eee;
 }
 
@@ -801,4 +807,612 @@ body.dark .mini-analog-clock::after {
     width: 2px;
     height: 44px;
     background: rgba(0,120,255,0.8);
+}
+
+/* ================= STUDY STATS PANEL ================= */
+
+.study-stats {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 14px;
+    opacity: 0.85;
+    transition: 0.3s ease;
+}
+
+.study-stat-item {
+    text-align: center;
+    min-width: 90px;
+}
+
+.study-stat-value {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.study-stat-label {
+    font-size: 12px;
+    opacity: 0.6;
+}
+
+body.dark .study-stats {
+    opacity: 0.9;
+}
+
+/* ================= IMERSÃO DINÂMICA ================= */
+
+body[data-period="morning"] {
+    background: linear-gradient(180deg, #f8fbff 0%, #e6f0ff 100%);
+}
+
+body[data-period="afternoon"] {
+    background: linear-gradient(180deg, #fff7e6 0%, #ffe4b3 100%);
+}
+
+body[data-period="night"] {
+    background: linear-gradient(180deg, #0f172a 0%, #111827 100%);
+}
+
+body[data-period="night"] .time-display {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.15);
+}
+
+.time-display {
+    position: relative;
+}
+
+.time-display::before {
+    content: "";
+    position: absolute;
+    inset: -60px;
+    background: radial-gradient(circle,
+        rgba(0,120,255,0.15) 0%,
+        rgba(0,120,255,0.05) 40%,
+        transparent 70%);
+    z-index: -1;
+    border-radius: 50%;
+    transition: 0.6s ease;
+}
+
+body[data-period="night"] .time-display::before {
+    background: radial-gradient(circle,
+        rgba(0,150,255,0.25) 0%,
+        rgba(0,150,255,0.08) 40%,
+        transparent 70%);
+}
+
+/* ================= FOCUS MODE ================= */
+
+body.focus-mode .topbar,
+body.focus-mode .footer,
+body.focus-mode .study-stats,
+body.focus-mode .pomodoro-presets {
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.4s ease;
+}
+
+body.focus-mode {
+    background: #0b1220 !important;
+}
+
+body.focus-mode .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+body.focus-mode .time-display {
+    font-size: clamp(140px, 16vw, 220px);
+    transform: scale(1.05);
+    transition: 0.4s ease;
+}
+
+body.focus-mode .time-display::before {
+    background: radial-gradient(circle,
+        rgba(0,150,255,0.35) 0%,
+        rgba(0,150,255,0.1) 40%,
+        transparent 70%);
+}
+
+/* ================= DEEP FOCUS PULSE ================= */
+
+@keyframes focusPulse {
+    0% {
+        transform: scale(1.05);
+    }
+    50% {
+        transform: scale(1.08);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+}
+
+body.focus-mode .time-display {
+    animation: focusPulse 6s ease-in-out infinite;
+}
+
+body.focus-mode .time-display::before {
+    animation: focusPulse 8s ease-in-out infinite;
+}
+
+/* ================= DAILY GOAL ================= */
+
+.daily-goal {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+.goal-bar {
+    width: 220px;
+    height: 6px;
+    background: rgba(0,0,0,0.1);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.goal-progress {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #0078ff, #00c6ff);
+    transition: width 0.4s ease;
+}
+
+.goal-text {
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+body.dark .goal-bar {
+    background: rgba(255,255,255,0.15);
+}
+
+/* ================= STREAK EFFECT ================= */
+
+.streak-active .study-stat-value {
+    color: #ff6a00;
+    animation: streakPulse 2.5s ease-in-out infinite;
+}
+
+@keyframes streakPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+    100% { transform: scale(1); }
+}
+
+/* ================= LEVEL BADGE ================= */
+
+.level-badge {
+    margin-top: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    opacity: 0.85;
+    letter-spacing: 0.5px;
+    animation: levelFade 0.4s ease;
+}
+
+@keyframes levelFade {
+    from { opacity: 0; transform: translateY(4px); }
+    to { opacity: 0.85; transform: translateY(0); }
+}
+
+/* ================= WEEKLY CHART ================= */
+
+.weekly-chart {
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    opacity: 0.9;
+}
+
+.weekly-title {
+    font-weight: 600;
+    opacity: 0.7;
+}
+
+.weekly-bar {
+    width: 220px;
+    height: 6px;
+    background: rgba(0,0,0,0.08);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.weekly-progress {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #00b894, #00cec9);
+    transition: width 0.4s ease;
+}
+
+.weekly-info {
+    font-size: 11px;
+    opacity: 0.6;
+}
+
+body.dark .weekly-bar {
+    background: rgba(255,255,255,0.12);
+}
+
+/* ================= IMMERSIVE MODE ================= */
+
+body.immersive-mode .topbar,
+body.immersive-mode .footer,
+body.immersive-mode .study-stats,
+body.immersive-mode .daily-goal,
+body.immersive-mode .weekly-chart,
+body.immersive-mode .pomodoro-presets,
+body.immersive-mode .controls {
+    display: none !important;
+}
+
+body.immersive-mode {
+    background: #050a14 !important;
+}
+
+body.immersive-mode .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+body.immersive-mode .time-display {
+    font-size: clamp(180px, 20vw, 260px);
+    animation: none;
+}
+
+/* ================= FOCUS SCORE ================= */
+
+.focus-score {
+    margin-top: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    opacity: 0.85;
+    animation: scoreFade 0.4s ease;
+}
+
+@keyframes scoreFade {
+    from { opacity: 0; transform: translateY(4px); }
+    to { opacity: 0.85; transform: translateY(0); }
+}
+
+/* ================= WEEKLY REAL BARS ================= */
+
+.weekly-bars {
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-end;
+    gap: 6px;
+    height: 60px;
+}
+
+.week-col {
+    width: 14px;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.week-bar {
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(180deg, #00c6ff, #0078ff);
+    border-radius: 4px;
+    transition: height 0.4s ease;
+}
+
+body.dark .week-bar {
+    background: linear-gradient(180deg, #00e1ff, #008cff);
+}
+
+/* ================= ACHIEVEMENTS ================= */
+
+.achievements {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+.achievement-badge {
+    padding: 6px 10px;
+    font-size: 11px;
+    font-weight: 600;
+    background: linear-gradient(90deg, #f9d423, #ff4e50);
+    color: #111;
+    border-radius: 20px;
+    animation: badgeAppear 0.4s ease;
+}
+
+@keyframes badgeAppear {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* ================= SESSION LOG ================= */
+
+.session-log {
+    margin-top: 25px;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 12px;
+    opacity: 0.9;
+}
+
+.log-title {
+    font-weight: 600;
+    opacity: 0.7;
+    margin-bottom: 4px;
+}
+
+.log-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 8px;
+    background: rgba(0,0,0,0.05);
+    border-radius: 6px;
+}
+
+body.dark .log-item {
+    background: rgba(255,255,255,0.08);
+}
+
+/* ================= AMBIENT CONTROLS ================= */
+
+.ambient-controls {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.ambient-btn {
+    padding: 6px 10px;
+    font-size: 11px;
+    border: none;
+    border-radius: 20px;
+    background: rgba(0,0,0,0.08);
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.ambient-btn:hover {
+    background: rgba(0,120,255,0.2);
+}
+
+body.dark .ambient-btn {
+    background: rgba(255,255,255,0.12);
+}
+
+/* ================= ADVANCED STATS ================= */
+
+.advanced-stats {
+    margin-top: 25px;
+    width: 240px;
+    font-size: 12px;
+    opacity: 0.9;
+}
+
+.adv-title {
+    font-weight: 600;
+    opacity: 0.7;
+    margin-bottom: 6px;
+}
+
+.adv-row {
+    margin-bottom: 4px;
+}
+
+/* ================= WEEKLY GOAL ================= */
+
+.weekly-goal {
+    margin-top: 25px;
+    width: 240px;
+    font-size: 12px;
+    opacity: 0.9;
+}
+
+.wg-title {
+    font-weight: 600;
+    opacity: 0.7;
+    margin-bottom: 6px;
+}
+
+.wg-bar {
+    width: 100%;
+    height: 6px;
+    background: rgba(0,0,0,0.08);
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 4px;
+}
+
+.wg-progress {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #ff9a9e, #fad0c4);
+    transition: width 0.4s ease;
+}
+
+body.dark .wg-bar {
+    background: rgba(255,255,255,0.12);
+}
+
+.wg-text {
+    opacity: 0.7;
+}
+
+/* ================= LEVEL SYSTEM ================= */
+
+.level-system {
+    margin-top: 25px;
+    width: 240px;
+    font-size: 12px;
+}
+
+.level-title {
+    font-weight: 600;
+    opacity: 0.7;
+    margin-bottom: 6px;
+}
+
+.level-bar {
+    width: 100%;
+    height: 6px;
+    background: rgba(0,0,0,0.08);
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 4px;
+}
+
+.level-progress {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg,#6a11cb,#2575fc);
+    transition: width 0.4s ease;
+}
+
+body.dark .level-bar {
+    background: rgba(255,255,255,0.12);
+}
+
+.level-text {
+    opacity: 0.7;
+}
+
+/* ================= ACHIEVEMENTS ================= */
+
+.achievements {
+    margin-top: 30px;
+    width: 260px;
+    font-size: 12px;
+}
+
+.ach-title {
+    font-weight: 600;
+    opacity: 0.7;
+    margin-bottom: 8px;
+}
+
+.badge {
+    padding: 6px 10px;
+    border-radius: 20px;
+    margin-bottom: 6px;
+    background: rgba(0,0,0,0.06);
+    opacity: 0.4;
+    transition: 0.3s ease;
+}
+
+.badge.unlocked {
+    opacity: 1;
+    background: linear-gradient(90deg,#fbc2eb,#a6c1ee);
+    font-weight: 500;
+}
+
+body.dark .badge {
+    background: rgba(255,255,255,0.1);
+}
+
+body.dark .badge.unlocked {
+    background: linear-gradient(90deg,#667eea,#764ba2);
+}
+
+/* ================= HEATMAP ================= */
+
+.heatmap {
+    display: flex;
+    gap: 6px;
+    margin-top: 20px;
+}
+
+.heat-cell {
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    background: rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+}
+
+.intensity-1 { background: #c6e48b; }
+.intensity-2 { background: #7bc96f; }
+.intensity-3 { background: #239a3b; }
+.intensity-4 { background: #196127; }
+
+body.dark .heat-cell {
+    background: rgba(255,255,255,0.08);
+}
+
+/* ================= LEVEL UP EFFECT ================= */
+
+.level-up {
+    animation: levelFlash 1.2s ease;
+}
+
+@keyframes levelFlash {
+    0% { transform: scale(1); }
+    30% { transform: scale(1.08); }
+    60% { transform: scale(0.98); }
+    100% { transform: scale(1); }
+}
+
+/* ================= STREAK VISUAL ================= */
+
+.streak-visual {
+    margin-top: 20px;
+}
+
+.streak-card {
+    text-align: center;
+    padding: 12px;
+    border-radius: 14px;
+    background: linear-gradient(135deg,#ff9966,#ff5e62);
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.streak-flames {
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+body.dark .streak-card {
+    background: linear-gradient(135deg,#ff5f6d,#ffc371);
+}
+
+/* ================= FOCUS MODE ================= */
+
+body.focus-mode .footer,
+body.focus-mode #studyStats,
+body.focus-mode #dailyGoal,
+body.focus-mode #weeklyChart,
+body.focus-mode #levelSystem,
+body.focus-mode #achievements,
+body.focus-mode #streakVisual {
+    display: none;
+}
+
+body.focus-mode .hero {
+    padding-top: 120px;
+}
+
+body.focus-mode .time-display {
+    font-size: clamp(120px, 15vw, 220px);
 }

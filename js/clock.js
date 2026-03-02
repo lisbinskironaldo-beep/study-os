@@ -24,6 +24,8 @@ const Clock = {
 
         const now = new Date();
 
+        this.updatePeriod(now);
+
         const time = new Intl.DateTimeFormat("pt-BR", {
             timeZone: this.currentTimeZone,
             hour: "2-digit",
@@ -166,7 +168,24 @@ const Clock = {
         if (this.worldIndex >= this.worldZones.length) {
             this.worldIndex = 0;
         }
+    },
+
+    updatePeriod(date) {
+
+    const hour = date.getHours();
+
+    let period = "morning";
+
+    if (hour >= 12 && hour < 18) {
+        period = "afternoon";
     }
+
+    if (hour >= 18 || hour < 5) {
+        period = "night";
+    }
+
+    document.body.setAttribute("data-period", period);
+},
 };
 
 

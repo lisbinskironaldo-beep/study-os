@@ -41,6 +41,11 @@ const Core = {
 
     bindUI() {
 
+        document.getElementById("focusModeBtn")
+    .addEventListener("click", () => {
+        document.body.classList.toggle("focus-mode");
+    });
+
         // Footer navigation
         this.footerButtons.forEach(btn => {
     btn.addEventListener("click", () => {
@@ -237,31 +242,48 @@ if (presets) presets.innerHTML = "";
         this.controls.style.display = "none";
     },
 
-    initKeyboard() {
+        initKeyboard() {
 
         document.addEventListener("keydown", (e) => {
-            
+
             if (
-    e.target.isContentEditable ||
-    e.target.tagName === "INPUT" ||
-    e.target.tagName === "TEXTAREA"
-) {
-    return;
-}
+                e.target.isContentEditable ||
+                e.target.tagName === "INPUT" ||
+                e.target.tagName === "TEXTAREA"
+            ) {
+                return;
+            }
 
             if (this.state.mode === "clock") return;
 
-            if (e.key === "enter" && !e.target.isContentEditable) {
-    this.control("play");
-}
+            if (e.key === "Enter") {
+                this.control("play");
+            }
 
             if (e.code === "Space") {
                 e.preventDefault();
                 this.control("pause");
             }
 
-            if (e.key === "Backspace") this.control("reset");
+            if (e.key === "Backspace") {
+                this.control("reset");
+            }
+
+            if (e.key === "Escape") {
+                document.body.classList.remove("focus-mode");
+                document.body.classList.remove("immersive-mode");
+            }
+
+            if (e.key.toLowerCase() === "f" && !e.shiftKey) {
+                document.body.classList.toggle("focus-mode");
+            }
+
+            if (e.key.toLowerCase() === "f" && e.shiftKey) {
+                document.body.classList.toggle("immersive-mode");
+            }
+
         });
+
     },
 
     initFullscreen() {
@@ -287,11 +309,6 @@ if (presets) presets.innerHTML = "";
     }
 
 };
-
-
-/* =====================================================
-   BOOT
-===================================================== */
 
 document.addEventListener("DOMContentLoaded", () => {
     Core.init();

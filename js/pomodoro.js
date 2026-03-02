@@ -294,6 +294,7 @@ updateCycleProgress() {
     play() {
 
     if (this.interval) return;
+
     if (this.remaining <= 0) return;
 
     this.running = true;
@@ -365,15 +366,23 @@ if (this.currentPreset === "progressivo") {
 
     if (this.mode === "study") {
 
+        if (typeof Stats !== "undefined") {
+            Stats.addStudySeconds(
+                this.progressiveLevels[this.progressiveIndex].study
+            );
+            Stats.addPomodoro();
+        }
+
         this.mode = "break";
         this.remaining =
             this.progressiveLevels[this.progressiveIndex].break;
 
     } else {
 
-        if (this.progressiveIndex <
-            this.progressiveLevels.length - 1) {
-
+        if (
+            this.progressiveIndex <
+            this.progressiveLevels.length - 1
+        ) {
             this.progressiveIndex++;
         }
 
@@ -382,24 +391,34 @@ if (this.currentPreset === "progressivo") {
             this.progressiveLevels[this.progressiveIndex].study;
     }
 
-    this.updateDisplay();   // ✔ atualizar depois de definir tudo
+    this.updateDisplay();
     this.beepCycle();
     this.play();
     return;
 }
 
-    // ===== PRESET NORMAL (INFINITO) =====
-    if (this.mode === "study") {
-        this.mode = "break";
+    // ===== PRESET NORMAL =====
+if (this.mode === "study") {
 
-        this.remaining = this.presets[this.currentPreset].break;
-    } else {
-        this.mode = "study";
-        this.remaining = this.presets[this.currentPreset].study;
+    if (typeof Stats !== "undefined") {
+        Stats.addStudySeconds(
+            this.presets[this.currentPreset].study
+        );
+        Stats.addPomodoro();
     }
 
-    this.beepCycle();
-    this.play();
+    this.mode = "break";
+    this.remaining = this.presets[this.currentPreset].break;
+
+} else {
+
+    this.mode = "study";
+    this.remaining = this.presets[this.currentPreset].study;
+}
+
+this.updateDisplay();   // garante atualização imediata
+this.beepCycle();
+this.play();
 },
 
     updateDisplay() {
