@@ -184,7 +184,7 @@ renderSessionLog() {
     const sessions = this.data.sessions || [];
 
     container.innerHTML = `
-        <div class="log-title">Sessões Recentes</div>
+        
         ${sessions.map(s => {
 
             const min = Math.floor(s.seconds / 60);

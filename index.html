@@ -33,6 +33,7 @@
 
 <!-- TOP BAR -->
 <header class="topbar">
+    
     <div class="topbar-left">
     <button id="homeBtn" class="icon-circle" title="Início">🏠</button>
 
@@ -46,6 +47,7 @@
         <button id="darkToggle" class="icon-circle" title="Modo noturno">🌙</button>
     </div>
 </header>
+<div id="sideModules" class="side-modules"></div>
 
 
 <!-- HERO -->
@@ -57,15 +59,19 @@
 
     <div class="time-display" id="timeDisplay">00:00:00</div>
     <div id="cycleProgress" class="cycle-progress"></div>
-    <div id="ambientControls" class="ambient-controls"></div>
+
+<div class="main-stats-row">
+    <div id="weeklyGoal" class="weekly-goal"></div>
     <div id="studyStats" class="study-stats"></div>
+    <div id="levelSystem" class="level-system"></div>
+</div>
+
+    <div id="ambientControls" class="ambient-controls"></div>
     <div id="streakVisual" class="streak-visual"></div>
     <div id="dailyGoal" class="daily-goal"></div>
     <div id="weeklyChart" class="weekly-chart"></div>
-    <div id="levelSystem" class="level-system"></div>
     <div id="sessionLog" class="session-log"></div>
     <div id="advancedStats" class="advanced-stats"></div>
-    <div id="weeklyGoal" class="weekly-goal"></div>
     <div id="achievements" class="achievements"></div>
     <div id="progressiveBars" class="progressive-bars"></div>
     <div class="controls" id="controls">

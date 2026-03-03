@@ -244,17 +244,49 @@ if (presets) presets.innerHTML = "";
 
         initKeyboard() {
 
-        document.addEventListener("keydown", (e) => {
+    document.addEventListener("keydown", (e) => {
 
-            if (
-                e.target.isContentEditable ||
-                e.target.tagName === "INPUT" ||
-                e.target.tagName === "TEXTAREA"
-            ) {
-                return;
+        if (
+            e.target.isContentEditable ||
+            e.target.tagName === "INPUT" ||
+            e.target.tagName === "TEXTAREA"
+        ) {
+            return;
+        }
+
+        // ESC sempre funciona
+        if (e.key === "Escape") {
+
+            document.body.classList.remove("focus-mode");
+            document.body.classList.remove("immersive-mode");
+
+            if (document.fullscreenElement) {
+                document.exitFullscreen();
             }
 
-            if (this.state.mode === "clock") return;
+            return;
+        }
+
+        // Shift + F → Relógio + Imersivo + Fullscreen
+        if (e.key.toLowerCase() === "f" && e.shiftKey) {
+
+            document.body.classList.remove("focus-mode");
+
+            if (Core.state.mode !== "clock") {
+                Core.goHome();
+            }
+
+            document.body.classList.add("immersive-mode");
+
+            if (!document.fullscreenElement) {
+                document.documentElement.requestFullscreen();
+            }
+
+            return;
+        }
+
+        // Controles só se NÃO for relógio
+        if (this.state.mode !== "clock") {
 
             if (e.key === "Enter") {
                 this.control("play");
@@ -269,22 +301,11 @@ if (presets) presets.innerHTML = "";
                 this.control("reset");
             }
 
-            if (e.key === "Escape") {
-                document.body.classList.remove("focus-mode");
-                document.body.classList.remove("immersive-mode");
-            }
+        }
 
-            if (e.key.toLowerCase() === "f" && !e.shiftKey) {
-                document.body.classList.toggle("focus-mode");
-            }
+    });
 
-            if (e.key.toLowerCase() === "f" && e.shiftKey) {
-                document.body.classList.toggle("immersive-mode");
-            }
-
-        });
-
-    },
+},
 
     initFullscreen() {
 
@@ -312,4 +333,15 @@ if (presets) presets.innerHTML = "";
 
 document.addEventListener("DOMContentLoaded", () => {
     Core.init();
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const side = document.getElementById("sideModules");
+    const footerIcons = document.querySelectorAll(".footer-icon");
+
+    footerIcons.forEach(icon => {
+        side.appendChild(icon);
+    });
+
 });

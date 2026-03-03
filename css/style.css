@@ -13,8 +13,8 @@ body {
     background:
 radial-gradient(circle at 20% 20%, rgba(120,180,255,0.08), transparent 40%),
 radial-gradient(circle at 80% 80%, rgba(255,150,200,0.08), transparent 40%),
-linear-gradient(180deg, #f8f9fb, #eef1f6);
-    color: #111;
+linear-gradient(180deg, #4d403980, #eef1f6);
+    color: #2b2b2b;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -23,10 +23,11 @@ linear-gradient(180deg, #f8f9fb, #eef1f6);
 
 body.dark {
     background:
-radial-gradient(circle at 20% 20%, rgba(0,120,255,0.15), transparent 40%),
-radial-gradient(circle at 80% 80%, rgba(255,0,120,0.12), transparent 40%),
-linear-gradient(180deg, #0f1116, #161a22);
-    color: #eee;
+        radial-gradient(circle at 20% 20%, rgba(20, 6, 2, 0), transparent 40%),
+        radial-gradient(circle at 80% 80%, rgba(39, 33, 34, 0.15), transparent 40%),
+        linear-gradient(180deg, #1b1618, #1b1618);
+
+    color: #7a7a7a;
 }
 
 
@@ -86,7 +87,7 @@ body.dark .hero {
 
 .time-display {
     display: inline-block;
-    padding: 35px 60px;
+    padding: 28px 45px;
     border-radius: 28px;
     background: rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(14px);
@@ -125,7 +126,7 @@ body.dark .time-display {
 }
 
 .controls {
-    margin-top: 25px;
+    margin-top: 12px;
     display: none;
     justify-content: center;
     gap: 20px;
@@ -842,23 +843,6 @@ body.dark .study-stats {
 
 /* ================= IMERSÃO DINÂMICA ================= */
 
-body[data-period="morning"] {
-    background: linear-gradient(180deg, #f8fbff 0%, #e6f0ff 100%);
-}
-
-body[data-period="afternoon"] {
-    background: linear-gradient(180deg, #fff7e6 0%, #ffe4b3 100%);
-}
-
-body[data-period="night"] {
-    background: linear-gradient(180deg, #0f172a 0%, #111827 100%);
-}
-
-body[data-period="night"] .time-display {
-    background: rgba(255,255,255,0.05);
-    border: 1px solid rgba(255,255,255,0.15);
-}
-
 .time-display {
     position: relative;
 }
@@ -866,7 +850,7 @@ body[data-period="night"] .time-display {
 .time-display::before {
     content: "";
     position: absolute;
-    inset: -60px;
+    inset: -35px;
     background: radial-gradient(circle,
         rgba(0,120,255,0.15) 0%,
         rgba(0,120,255,0.05) 40%,
@@ -1415,4 +1399,220 @@ body.focus-mode .hero {
 
 body.focus-mode .time-display {
     font-size: clamp(120px, 15vw, 220px);
+}
+
+/* ===== HERO GRID RESTRUCTURE ===== */
+
+
+#studyStats,
+#dailyGoal,
+#weeklyChart,
+#levelSystem,
+#achievements,
+#advancedStats,
+#weeklyGoal,
+#sessionLog,
+#streakVisual {
+    max-width: 420px;
+    width: 100%;
+}
+
+/* ================= HYPER CLEAN FIX ================= */
+
+body.focus-mode .ambient-controls,
+body.focus-mode .cycle-progress,
+body.focus-mode .progressive-bars,
+body.focus-mode .pomodoro-presets {
+    display: none !important;
+}
+
+body.immersive-mode .ambient-controls,
+body.immersive-mode .cycle-progress,
+body.immersive-mode .progressive-bars,
+body.immersive-mode .pomodoro-presets {
+    display: none !important;
+}
+
+
+/* HERO vira grid */
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    justify-items: center;
+    align-items: start;
+    gap: 30px;
+}
+
+/* Força relógio ocupar linha inteira */
+.date-display,
+.time-display,
+#pomodoroPresets,
+#cycleProgress,
+#ambientControls,
+#streakVisual,
+#dailyGoal,
+#weeklyChart,
+#sessionLog,
+#advancedStats,
+#achievements,
+#progressiveBars,
+.controls {
+    grid-column: 1 / -1;
+}
+
+/* Blocos laterais menores */
+#weeklyGoal {
+    grid-column: 1;
+    width: 220px;
+}
+
+#studyStats {
+    grid-column: 2;
+    width: 360px;
+}
+
+#levelSystem {
+    grid-column: 3;
+    width: 220px;
+}
+
+/* Força os 3 blocos a ocuparem colunas específicas */
+#weeklyGoal {
+    grid-column: 1;
+}
+
+#studyStats {
+    grid-column: 2;
+}
+
+#levelSystem {
+    grid-column: 3;
+}
+
+/* ================= MAIN STATS ROW CLEAN ================= */
+
+.main-stats-row {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 40px;
+    margin-top: 25px;
+}
+
+/* Laterais menores */
+#weeklyGoal,
+#levelSystem {
+    width: 220px;
+}
+
+/* Centro maior */
+#studyStats {
+    width: 360px;
+}
+
+/* ===== SIDE MODULES FIXED COLUMN ===== */
+
+.side-modules {
+    position: fixed;
+    top: 90px;
+    left: clamp(8px, 2vw, 20px);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    z-index: 100;
+}
+
+.side-modules .icon-circle {
+    width: clamp(32px, 4vw, 42px);
+    height: clamp(32px, 4vw, 42px);
+    font-size: clamp(14px, 1.5vw, 18px);
+}
+
+.footer-icons {
+    display: none;
+}
+
+/* ===== REFINO VISUAL STATS ===== */
+
+.main-stats-row {
+    align-items: center;
+}
+
+/* cartão base */
+#weeklyGoal,
+#studyStats,
+#levelSystem {
+    padding: 20px 24px;
+    border-radius: 32px;
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(14px);
+    border: 1px solid rgba(255,255,255,0.25);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+/* centro mais forte */
+#studyStats {
+    width: 400px;
+    transform: scale(1.05);
+}
+
+/* laterais discretos */
+#weeklyGoal,
+#levelSystem {
+    width: 230px;
+    opacity: 0.95;
+}
+
+/* dark mode */
+body.dark #weeklyGoal,
+body.dark #studyStats,
+body.dark #levelSystem {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.12);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+}
+
+/* Remove qualquer scroll no imersivo */
+body.immersive-mode {
+    overflow: hidden !important;
+    height: 100vh;
+}
+
+html:has(body.immersive-mode) {
+    overflow: hidden !important;
+}
+
+body.immersive-mode .side-modules {
+    display: none !important;
+}
+
+/* Esconde blocos abaixo do relógio no imersivo */
+body.immersive-mode #weeklyGoal,
+body.immersive-mode #levelSystem {
+    display: none !important;
+}
+
+body.immersive-mode #studyStats {
+    display: none !important;
+}
+
+/* Ajuste fino posição do relógio no imersivo */
+body.immersive-mode .hero {
+    padding-top: 15vh;
+}
+
+/* === Pulse também no modo imersivo === */
+
+body.immersive-mode .time-display {
+    animation: focusPulse 6s ease-in-out infinite;
+}
+
+body.immersive-mode .time-display::before {
+    animation: focusPulse 8s ease-in-out infinite;
+}
+
+.ambient-btn.active-ambient {
+    background: linear-gradient(90deg, #ffb199, #ff6a88);
+    color: white;
 }
