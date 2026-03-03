@@ -88,23 +88,7 @@ const Core = {
 
     this.stopAll();
     this.hideModules();
-
-    // limpar resíduos visuais do pomodoro
-const presets = document.getElementById("pomodoroPresets");
-if (presets) presets.innerHTML = "";
-
-    // limpar resíduos visuais do pomodoro
-    const pb = document.getElementById("progressiveBars");
-    if (pb) pb.innerHTML = "";
-
-    const cb = document.getElementById("cycleProgress");
-    if (cb) cb.innerHTML = "";
-
-    const printBtn = document.getElementById("printQtsBtn");
-    if (printBtn) {
-        printBtn.style.visibility = "hidden";
-        printBtn.style.pointerEvents = "none";
-    }
+    this.clearVisualResidues(target);
 
     // Modos que usam HERO
     if (
@@ -118,10 +102,13 @@ if (presets) presets.innerHTML = "";
     }
 
     // QTS
-    if (target === "qts" && printBtn) {
+    if (target === "qts") {
+    const printBtn = document.getElementById("printQtsBtn");
+    if (printBtn) {
         printBtn.style.visibility = "visible";
         printBtn.style.pointerEvents = "auto";
     }
+}
 
     // Módulos de tela cheia
     this.hideHero();
@@ -168,23 +155,7 @@ if (presets) presets.innerHTML = "";
 
     // 🔒 parar tudo
     this.stopAll();
-
-    // 🔒 limpar pomodoro visual
-    const pb = document.getElementById("progressiveBars");
-    if (pb) pb.innerHTML = "";
-
-    const cb = document.getElementById("cycleProgress");
-    if (cb) cb.innerHTML = "";
-
-    const presets = document.getElementById("pomodoroPresets");
-if (presets) presets.innerHTML = "";
-
-    // 🔒 esconder botão imprimir
-    const printBtn = document.getElementById("printQtsBtn");
-    if (printBtn) {
-        printBtn.style.visibility = "hidden";
-        printBtn.style.pointerEvents = "none";
-    }
+   this.clearVisualResidues("clock");
 
     this.hideModules();
     this.showHero();
@@ -217,6 +188,30 @@ if (presets) presets.innerHTML = "";
         if (typeof Timer !== "undefined") Timer.pause();
         if (typeof Pomodoro !== "undefined") Pomodoro.pause();
     },
+
+    clearVisualResidues(target) {
+
+    // NÃO limpar se o destino for QTS
+    if (target === "qts") return;
+
+    const ids = [
+        "progressiveBars",
+        "cycleProgress",
+        "pomodoroPresets"
+    ];
+
+    ids.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.innerHTML = "";
+    });
+
+    const printBtn = document.getElementById("printQtsBtn");
+    if (printBtn) {
+        printBtn.style.visibility = "hidden";
+        printBtn.style.pointerEvents = "none";
+    }
+
+},
 
     hideModules() {
     this.modules.forEach(m => {
@@ -332,16 +327,16 @@ if (presets) presets.innerHTML = "";
 };
 
 document.addEventListener("DOMContentLoaded", () => {
-    Core.init();
-});
 
-document.addEventListener("DOMContentLoaded", () => {
+    Core.init();
 
     const side = document.getElementById("sideModules");
     const footerIcons = document.querySelectorAll(".footer-icon");
 
-    footerIcons.forEach(icon => {
-        side.appendChild(icon);
-    });
+    if (side) {
+        footerIcons.forEach(icon => {
+            side.appendChild(icon);
+        });
+    }
 
 });
