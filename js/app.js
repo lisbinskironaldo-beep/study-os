@@ -44,7 +44,7 @@ const Core = {
             this.modules.pomodoro = Pomodoro;
     },
 
-    getActiveModule() {
+       getActiveModule() {
         return this.modules[this.state.mode] || null;
     },
 
@@ -157,10 +157,18 @@ const Core = {
     },
 
     changeMode(mode) {
-        this.stopAll();
-        this.clearVisualResidues(mode);
-        this.setMode(mode);
-    },
+
+    const previousMode = this.state.mode;
+
+    this.stopAll();
+    this.clearVisualResidues(mode);
+    this.setMode(mode);
+
+    if (window.AmbientEngine && AmbientEngine.onModeChange) {
+        AmbientEngine.onModeChange(previousMode, mode);
+    }
+
+},
 
     setMode(mode) {
 
@@ -193,13 +201,15 @@ const Core = {
 
     control(action) {
 
-        const module = this.getActiveModule();
+    const module = this.getActiveModule();
 
-        if (module &&
-            typeof module[action] === "function") {
-            module[action]();
-        }
-    },
+    if (!module) return;
+
+    if (typeof module[action] === "function") {
+        module[action]();
+    }
+
+},
 
     stopAll() {
 
