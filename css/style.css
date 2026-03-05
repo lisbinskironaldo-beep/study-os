@@ -2042,7 +2042,7 @@ background:rgba(0,120,255,0.8);
 
 
 
-.ambient-preview{
+.ambient-play{
 
 display:flex;
 align-items:center;
@@ -2065,7 +2065,7 @@ transition:.2s;
 
 }
 
-.ambient-preview:hover{
+.ambient-play:hover{
 
 opacity:1;
 transform:scale(1.15);
@@ -2198,7 +2198,7 @@ animation:ambientPulse 3s infinite ease-in-out;
   font-size:12px;
 }
 
-.ambient-preview.preview-active{
+.ambient-play.play-active{
 background:rgba(0,120,255,0.35);
 }
 
@@ -2207,3 +2207,27 @@ background:rgba(255,180,0,0.35);
 transform:scale(1.1);
 }
 
+/* foco teclado play */
+
+.ambient-sound.play-focus .ambient-play{
+background:rgba(0,120,255,0.35);
+transform:scale(1.2);
+box-shadow:0 0 0 2px rgba(0,120,255,0.6);
+}
+
+/* foco teclado favorito */
+
+.ambient-sound.fav-focus .ambient-fav{
+background:rgba(255,180,0,0.35);
+transform:scale(1.2);
+box-shadow:0 0 0 2px rgba(255,180,0,0.7);
+}
+
+.ambient-sound.active.paused .ambient-play{
+opacity:.6;
+}
+
+.ambient-sound.active .ambient-play{
+background:rgba(0,120,255,0.35);
+transform:scale(1.15);
+}

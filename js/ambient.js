@@ -92,6 +92,12 @@ const AmbientEngine = {
 
     init() {
 
+        const savedFav = localStorage.getItem("ambient_favorites")
+
+if(savedFav){
+this.categories.favorites.sounds = JSON.parse(savedFav)
+}
+
         this.bindOutsideClick();
 
         this.renderPlayerCategories();
@@ -323,31 +329,6 @@ transition:transform .35s;
 
 }).join("")
 
-container.querySelectorAll(".ambient-category").forEach(btn=>{
-
-btn.addEventListener("click",(e)=>{
-
-e.stopPropagation()
-
-const index = parseInt(btn.dataset.index)
-
-this.currentCategoryIndex = index
-this.renderPlayerCategories()
-
-const category = keys[index]
-
-this.currentCategory = category
-this.currentIndex = 0
-
-this.renderPlayerSounds(category)
-
-document
-.getElementById("ambientPanelNew")
-.classList.add("open")
-
-})
-
-})
 
 },
 
@@ -381,11 +362,11 @@ document
             container.innerHTML = sounds.map((s, i) => `
             <div class="ambient-sound" data-cat="${category}" data-index="${i}">
 
-            <span class="ambient-preview" data-index="${i}">▶</span>
+            <span class="ambient-play" data-index="${i}">▶</span>
 
             <span class="ambient-title">${s.name}</span>
 
-            <span class="ambient-fav" data-index="${i}">
+            <span class="ambient-fav ${this.categories.favorites.sounds.some(f=>f.name===s.name) ? "fav-active" : ""}" data-index="${i}">
 ${category === "favorites" ? "✖" : "☆"}
 </span>
 
@@ -394,94 +375,142 @@ ${category === "favorites" ? "✖" : "☆"}
 
         container.querySelectorAll(".ambient-sound").forEach(row => {
 
-        row.addEventListener("click", (e) => {
+        row.addEventListener("click",(e)=>{
 
-        if(e.target.classList.contains("ambient-preview")) return;
-        if(e.target.classList.contains("ambient-fav")) return;
+if(e.target.classList.contains("ambient-fav")) return
 
-        container.querySelectorAll(".ambient-sound")
-        .forEach(el => el.classList.remove("active"));
+const cat = row.dataset.cat
+const index = parseInt(row.dataset.index)
 
-        row.classList.add("active");
+/* mesma música tocando → pausa */
 
-        this.currentCategory = row.dataset.cat;
-        this.currentIndex = parseInt(row.dataset.index);
+if(
+this.currentAudio &&
+this.currentCategory === cat &&
+this.currentIndex === index &&
+!this.currentAudio.paused
+){
 
-        this.play(
-            this.categories[this.currentCategory]
-                .sounds[this.currentIndex].src
-        );
+this.currentAudio.pause()
+return
 
+}
 
-    });
+/* tocar nova */
 
-});
+container.querySelectorAll(".ambient-sound")
+.forEach(r=>r.classList.remove("active"))
 
-container.querySelectorAll(".ambient-preview").forEach(btn => {
+row.classList.add("active")
 
-    btn.addEventListener("click", (e) => {
+this.currentCategory = cat
+this.currentIndex = index
 
-        e.stopPropagation();
+this.play(
+this.categories[cat].sounds[index].src
+)
 
-        document.querySelectorAll(".ambient-preview")
-        .forEach(p => p.classList.remove("preview-active"));
+})
 
-        btn.classList.add("preview-active");
+})
 
-        const index = parseInt(btn.dataset.index);
+container.querySelectorAll(".ambient-play").forEach(btn=>{
 
-        const sound = this.categories[category].sounds[index];
+btn.addEventListener("click",(e)=>{
 
-        const preview = new Audio(sound.src);
+e.stopPropagation()
 
-        preview.volume = 0.35;
+const row = btn.closest(".ambient-sound")
 
-        preview.play();
+row.click()
 
-        setTimeout(() => {
-            preview.pause();
-        }, 4000);
+})
 
-    });
-
-});
+})
 
 container.querySelectorAll(".ambient-fav").forEach(btn => {
 
     btn.addEventListener("click", (e) => {
 
-        e.stopPropagation();
+e.stopPropagation()
 
-        const row = btn.closest(".ambient-sound");
+const row = btn.closest(".ambient-sound")
 
-        const cat = row.dataset.cat;
-        const index = parseInt(row.dataset.index);
+const cat = row.dataset.cat
+const index = parseInt(row.dataset.index)
 
-        const sound = this.categories[cat].sounds[index];
+const sound = this.categories[cat].sounds[index]
 
-        if(cat === "favorites"){
+const exists = this.categories.favorites.sounds
+.some(s => s.name === sound.name)
 
-            this.categories.favorites.sounds =
-            this.categories.favorites.sounds.filter(s => s.name !== sound.name);
+/* REMOVE DOS FAVORITOS */
 
-            row.remove();
+if(exists){
 
-            return;
+this.categories.favorites.sounds =
+this.categories.favorites.sounds
+.filter(s => s.name !== sound.name)
 
-        }
+localStorage.setItem(
+"ambient_favorites",
+JSON.stringify(this.categories.favorites.sounds)
+)
 
-        btn.classList.toggle("fav-active");
+/* remove destaque em todas as listas */
 
-        if(btn.classList.contains("fav-active")){
+document.querySelectorAll(".ambient-sound").forEach(r=>{
 
-            this.categories.favorites.sounds.push(sound);
+const rcat = r.dataset.cat
+const rindex = parseInt(r.dataset.index)
 
-        }else{
+const rsound = this.categories[rcat]?.sounds?.[rindex]
 
-            this.categories.favorites.sounds =
-            this.categories.favorites.sounds.filter(s => s.name !== sound.name);
+if(rsound && rsound.name === sound.name){
 
-        }
+const fav = r.querySelector(".ambient-fav")
+if(fav) fav.classList.remove("fav-active")
+
+}
+
+})
+
+/* se estiver na aba favoritos remove da lista */
+
+if(cat === "favorites"){
+row.remove()
+}
+
+return
+
+}
+
+/* ADICIONA AOS FAVORITOS */
+
+this.categories.favorites.sounds.push(sound)
+
+localStorage.setItem(
+"ambient_favorites",
+JSON.stringify(this.categories.favorites.sounds)
+)
+
+/* marca estrela em todas as ocorrências */
+
+document.querySelectorAll(".ambient-sound").forEach(r=>{
+
+const rcat = r.dataset.cat
+const rindex = parseInt(r.dataset.index)
+
+const rsound = this.categories[rcat]?.sounds?.[rindex]
+
+if(rsound && rsound.name === sound.name){
+
+const fav = r.querySelector(".ambient-fav")
+if(fav) fav.classList.add("fav-active")
+
+}
+
+})
 
     });
 
@@ -560,7 +589,12 @@ if(e.key === "ArrowDown"){
 index++
 if(index >= rows.length) index = rows.length-1
 
-rows.forEach(r=>r.classList.remove("active"))
+rows.forEach(r=>{
+r.classList.remove("active")
+r.classList.remove("play-focus")
+r.classList.remove("fav-focus")
+})
+
 rows[index].classList.add("active")
 
 return
@@ -577,7 +611,12 @@ active.classList.remove("active")
 return
 }
 
-rows.forEach(r=>r.classList.remove("active"))
+rows.forEach(r=>{
+r.classList.remove("active")
+r.classList.remove("play-focus")
+r.classList.remove("fav-focus")
+})
+
 rows[index].classList.add("active")
 
 return
@@ -587,7 +626,7 @@ return
 
 if(e.key === "ArrowRight"){
 
-active.classList.remove("preview-focus")
+active.classList.remove("play-focus")
 active.classList.add("fav-focus")
 
 return
@@ -598,7 +637,7 @@ return
 if(e.key === "ArrowLeft"){
 
 active.classList.remove("fav-focus")
-active.classList.add("preview-focus")
+active.classList.add("play-focus")
 
 return
 }
@@ -607,14 +646,8 @@ return
 
 if(e.key === "Enter"){
 
-/* preview */
-
-if(active.classList.contains("preview-focus")){
-
-const preview = active.querySelector(".ambient-preview")
-if(preview) preview.click()
-return
-}
+const cat = active.dataset.cat
+const index = parseInt(active.dataset.index)
 
 /* favorito */
 
@@ -623,12 +656,10 @@ if(active.classList.contains("fav-focus")){
 const fav = active.querySelector(".ambient-fav")
 if(fav) fav.click()
 return
+
 }
 
-/* tocar / pausar */
-
-const cat = active.dataset.cat
-const index = parseInt(active.dataset.index)
+/* play / pause */
 
 if(
 this.currentAudio &&
@@ -637,9 +668,20 @@ this.currentIndex === index
 ){
 
 this.toggle()
-return
 
+active.classList.toggle(
+"active",
+!this.currentAudio.paused
+)
+
+return
 }
+
+/* tocar nova */
+
+rows.forEach(r=>r.classList.remove("active"))
+
+active.classList.add("active")
 
 this.currentCategory = cat
 this.currentIndex = index
@@ -649,6 +691,7 @@ this.categories[cat].sounds[index].src
 )
 
 return
+
 }
 
 }
