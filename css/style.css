@@ -1882,10 +1882,10 @@ border:1px solid rgba(255,255,255,0.08);
 
 .ambient-categories{
 
-display:flex;
-justify-content:center;
-align-items:center;
-gap:18px;
+position:relative;
+height:120px;
+
+display:block;
 
 overflow:hidden;
 
@@ -2206,3 +2206,4 @@ background:rgba(0,120,255,0.35);
 background:rgba(255,180,0,0.35);
 transform:scale(1.1);
 }
+

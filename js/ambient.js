@@ -133,41 +133,6 @@ if (volume) {
 
 },
 
-    /* ================= ICONS ================= */
-
-    renderIcons() {
-
-    const container = document.getElementById("ambientControls");
-    if (!container) return;
-
-    container.innerHTML = Object.keys(this.categories)
-        .map(key => `
-            <button class="ambient-btn" data-category="${key}">
-                ${this.categories[key].icon}
-            </button>
-        `).join("");
-
-    container.querySelectorAll(".ambient-btn").forEach(btn => {
-
-        btn.addEventListener("click", (e) => {
-
-            e.stopPropagation();
-
-            const panel = document.getElementById("ambientPanel");
-
-            if (panel.classList.contains("show")) {
-                panel.classList.remove("show");
-                return;
-            }
-
-            this.openPanel(btn.dataset.category);
-
-        });
-
-    });
-
-},
-
     /* ================= PANEL ================= */
 
     openPanel(categoryKey) {
@@ -323,44 +288,53 @@ audio.volume = volumeSlider ? parseFloat(volumeSlider.value) : 0.3;
 
     /* ================= PLAYER ================= */
 
-    renderPlayerCategories() {
+    renderPlayerCategories(){
 
-        const container = document.getElementById("ambientCategories");
+const container = document.getElementById("ambientCategories")
+if(!container) return
 
-        if (!container) return;
+const keys = Object.keys(this.categories)
+const total = keys.length
 
-        container.innerHTML = Object.keys(this.categories).map((key,i) => {
+container.innerHTML = keys.map((key,i)=>{
 
-    const cat = this.categories[key];
+let pos = i - this.currentCategoryIndex
 
-    let cls = ""
+if(pos > Math.floor(total/2)) pos -= total
+if(pos < -Math.floor(total/2)) pos += total
 
-    if(i === this.currentCategoryIndex) cls = "center"
-    else if(
-        i === this.currentCategoryIndex-1 ||
-        i === this.currentCategoryIndex+1
-    ) cls = "side"
+let cls = "ambient-category"
 
-    return `
-    <div class="ambient-category ${cls}" data-cat="${key}">
-        <img src="assets/ambient/${key}.jpg">
-    </div>
-    `;
+if(pos === 0) cls += " center"
+else if(Math.abs(pos) === 1) cls += " side"
 
-}).join("");
+return `
+<div class="${cls}"
+data-index="${i}"
+style="
+position:absolute;
+left:50%;
+transform:translateX(calc(-50% + ${pos*160}px));
+transition:transform .35s;
+">
+<img src="assets/ambient/${key}.jpg">
+</div>
+`
 
-        container.querySelectorAll(".ambient-category").forEach(btn => {
+}).join("")
 
-            btn.addEventListener("click",(e)=>{
+container.querySelectorAll(".ambient-category").forEach(btn=>{
+
+btn.addEventListener("click",(e)=>{
 
 e.stopPropagation()
 
-const category = btn.dataset.cat
+const index = parseInt(btn.dataset.index)
 
-this.currentCategoryIndex =
-Object.keys(this.categories).indexOf(category)
-
+this.currentCategoryIndex = index
 this.renderPlayerCategories()
+
+const category = keys[index]
 
 this.currentCategory = category
 this.currentIndex = 0
@@ -371,15 +345,11 @@ document
 .getElementById("ambientPanelNew")
 .classList.add("open")
 
-});
+})
 
-        });
+})
 
-        const keys = Object.keys(this.categories);
-
-this.currentCategory = keys[this.currentCategoryIndex];
-
-    },
+},
 
     renderPlayerSounds(category) {
 
@@ -523,82 +493,167 @@ container.querySelectorAll(".ambient-fav").forEach(btn => {
 
 document.addEventListener("keydown",(e)=>{
 
-const panel = document.getElementById("ambientPanelNew");
-const keys = Object.keys(this.categories);
+const panel = document.getElementById("ambientPanelNew")
+if(!panel || !panel.classList.contains("open")) return
 
-/* navegar categorias */
+if(["ArrowUp","ArrowDown","ArrowLeft","ArrowRight","Enter"].includes(e.key)){
+e.preventDefault()
+}
+
+const keys = Object.keys(this.categories)
+const rows = document.querySelectorAll(".ambient-sound")
+const active = document.querySelector(".ambient-sound.active")
+
+/* ===== CATEGORIAS ===== */
+
+if(!active){
 
 if(e.key === "ArrowRight"){
 
 this.currentCategoryIndex =
-(this.currentCategoryIndex + 1) % keys.length;
+(this.currentCategoryIndex + 1) % keys.length
 
-this.renderPlayerCategories();
+this.currentCategory = keys[this.currentCategoryIndex]
+this.currentIndex = 0
 
-return;
+this.renderPlayerCategories()
+this.renderPlayerSounds(this.currentCategory)
 
+return
 }
 
 if(e.key === "ArrowLeft"){
 
 this.currentCategoryIndex =
-(this.currentCategoryIndex - 1 + keys.length) % keys.length;
+(this.currentCategoryIndex - 1 + keys.length) % keys.length
 
-this.renderPlayerCategories();
+this.currentCategory = keys[this.currentCategoryIndex]
+this.currentIndex = 0
 
-return;
+this.renderPlayerCategories()
+this.renderPlayerSounds(this.currentCategory)
 
+return
 }
-
-/* entrar nas músicas */
 
 if(e.key === "ArrowDown"){
 
-if(!panel.classList.contains("open")){
-
-const category = keys[this.currentCategoryIndex];
-
-this.renderPlayerSounds(category);
-
-panel.classList.add("open");
-
-/* selecionar primeira música automaticamente */
-
-setTimeout(()=>{
-
-const first = document.querySelector(".ambient-sound");
-
-if(first){
-first.classList.add("active");
+if(rows.length){
+rows[0].classList.add("active")
 }
 
-},50);
-
-return;
-
+return
 }
 
 }
 
-/* voltar para categorias */
-
-if(e.key === "ArrowUp"){
-
-const active = document.querySelector(".ambient-sound.active");
+/* ===== NAVEGAÇÃO NAS MUSICAS ===== */
 
 if(active){
 
-active.classList.remove("active");
+let index = [...rows].indexOf(active)
 
-panel.classList.remove("open");
+/* ↓ desce */
 
-return;
+if(e.key === "ArrowDown"){
 
+index++
+if(index >= rows.length) index = rows.length-1
+
+rows.forEach(r=>r.classList.remove("active"))
+rows[index].classList.add("active")
+
+return
+}
+
+/* ↑ sobe */
+
+if(e.key === "ArrowUp"){
+
+index--
+
+if(index < 0){
+active.classList.remove("active")
+return
+}
+
+rows.forEach(r=>r.classList.remove("active"))
+rows[index].classList.add("active")
+
+return
+}
+
+/* → selecionar favorito */
+
+if(e.key === "ArrowRight"){
+
+active.classList.remove("preview-focus")
+active.classList.add("fav-focus")
+
+return
+}
+
+/* ← selecionar preview */
+
+if(e.key === "ArrowLeft"){
+
+active.classList.remove("fav-focus")
+active.classList.add("preview-focus")
+
+return
+}
+
+/* ENTER executa */
+
+if(e.key === "Enter"){
+
+/* preview */
+
+if(active.classList.contains("preview-focus")){
+
+const preview = active.querySelector(".ambient-preview")
+if(preview) preview.click()
+return
+}
+
+/* favorito */
+
+if(active.classList.contains("fav-focus")){
+
+const fav = active.querySelector(".ambient-fav")
+if(fav) fav.click()
+return
+}
+
+/* tocar / pausar */
+
+const cat = active.dataset.cat
+const index = parseInt(active.dataset.index)
+
+if(
+this.currentAudio &&
+this.currentCategory === cat &&
+this.currentIndex === index
+){
+
+this.toggle()
+return
+
+}
+
+this.currentCategory = cat
+this.currentIndex = index
+
+this.play(
+this.categories[cat].sounds[index].src
+)
+
+return
 }
 
 }
 
-});
+})
 
 },
 
@@ -624,9 +679,14 @@ return;
             const player = document.getElementById("ambientPlayer");
             const panel = document.getElementById("ambientPanelNew");
 
-            if (!player.contains(e.target)) {
-                panel.classList.remove("open");
-            }
+            if (
+    player &&
+    panel &&
+    !player.contains(e.target) &&
+    !panel.contains(e.target)
+) {
+    panel.classList.remove("open");
+}
 
         });
 
@@ -648,7 +708,7 @@ async function searchYouTube() {
         &type=video
         &maxResults=10
         &q=${encodeURIComponent(query)}
-        &key=YOUR_API_KEY`
+        &key=API_KEY`
     );
 
     const data = await res.json();

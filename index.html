@@ -8,7 +8,11 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 
-<div id="ambientPlayer" class="ambient-player">
+
+
+<body>
+
+    <div id="ambientPlayer" class="ambient-player">
 
     <div id="ambientMain" class="ambient-main">
         <span id="ambientIcon">🌧</span>
@@ -34,8 +38,6 @@
 
 <script src="https://www.youtube.com/iframe_api"></script>
 <div id="youtubePlayer" style="display:none;"></div>
-
-<body>
 
     <div id="customModal" class="custom-modal hidden">
   <div class="custom-box">
@@ -181,8 +183,14 @@
 </footer>
 
 
+<script>
+if (!window.YT) {
+    window.onYouTubeIframeAPIReady = window.onYouTubeIframeAPIReady || function(){};
+}
+</script>
+
 <script src="js/eventBus.js"></script>
-<script src="js/app.js"></script>
+
 <script src="js/clock.js"></script>
 <script src="js/timer.js"></script>
 <script src="js/alarm.js"></script>
@@ -191,7 +199,8 @@
 <script src="js/qts.js"></script>
 <script src="js/stats.js"></script>
 <script src="js/ambient.js"></script>
-<script src="js/storage.js"></script>
+
+<script src="js/app.js"></script>
 
 </body>
 </html>
