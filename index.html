@@ -12,32 +12,40 @@
 
 <body>
 
-    <div id="ambientPlayer" class="ambient-player">
+<div id="ambientPlayer" class="ambient-player">
 
-    <div id="ambientMain" class="ambient-main">
-        <span id="ambientIcon">🌧</span>
-        <span id="ambientTrack">Nenhum som</span>
-    </div>
+<div id="ambientMain" class="ambient-main">
+<span id="ambientIcon">🌧</span>
+<span id="ambientTrack">Nenhum som</span>
+</div>
 
-    <div class="ambient-controls-row">
+<div class="ambient-controls-row">
 
-        <button id="ambientPrev">⏮</button>
-        <button id="ambientPlay">⏯</button>
-        <button id="ambientNext">⏭</button>
+<button id="ambientPrev">⏮</button>
+<button id="ambientPlay">⏯</button>
+<button id="ambientNext">⏭</button>
 
-        <input id="ambientVolume" type="range" min="0" max="1" step="0.01">
-
-    </div>
+<input id="ambientVolume" type="range" min="0" max="1" step="0.01">
 
 </div>
 
-<div id="ambientPanelNew" class="ambient-panel-new">
-    <div id="ambientCategories" class="ambient-categories"></div>
-    <div id="ambientSounds" class="ambient-sounds"></div>
 </div>
 
-<script src="https://www.youtube.com/iframe_api"></script>
-<div id="youtubePlayer" style="display:none;"></div>
+<div id="ambientPanelNew" class="ambient-panel-new" tabindex="0">
+<div id="ambientCategories"></div>
+
+<div id="ambientYoutube" class="ambient-youtube hidden">
+
+<input id="youtubeSearch"
+placeholder="Buscar ambiente no YouTube..."
+autocomplete="off">
+
+<div id="youtubeResults"></div>
+
+</div>
+
+<div id="ambientSounds"></div>
+</div>
 
     <div id="customModal" class="custom-modal hidden">
   <div class="custom-box">
@@ -95,7 +103,6 @@
     <div id="levelSystem" class="level-system"></div>
 </div>
 
-    <div id="ambientPanel" class="ambient-panel"></div>
     <div id="streakVisual" class="streak-visual"></div>
     <div id="dailyGoal" class="daily-goal"></div>
     <div id="weeklyChart" class="weekly-chart"></div>
@@ -183,11 +190,9 @@
 </footer>
 
 
-<script>
-if (!window.YT) {
-    window.onYouTubeIframeAPIReady = window.onYouTubeIframeAPIReady || function(){};
-}
-</script>
+<div id="youtubePlayer" style="display:none;"></div>
+
+<script src="https://www.youtube.com/iframe_api"></script>
 
 <script src="js/eventBus.js"></script>
 
@@ -199,7 +204,6 @@ if (!window.YT) {
 <script src="js/qts.js"></script>
 <script src="js/stats.js"></script>
 <script src="js/ambient.js"></script>
-
 <script src="js/app.js"></script>
 
 </body>
