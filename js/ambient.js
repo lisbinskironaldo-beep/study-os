@@ -2,7 +2,7 @@
    YOUTUBE PLAYER
 ===================================================== */
 
-const YT_API_KEY="AIzaSyCeJsLL0y8NYDLW4dWCvppjsipH8DV5pcY"
+const YT_API_KEY=window.YT_API_KEY
 
 async function youtubeSearch(query){
 
@@ -589,6 +589,35 @@ if(!panel || !panel.classList.contains("open")) return
 
 const rows=document.querySelectorAll(".ambient-sound")
 
+/* ================= YOUTUBE NAV ================= */
+
+if(this.currentCategory==="youtube"){
+
+const search=document.getElementById("youtubeSearch")
+
+if(e.key==="ArrowDown"){
+if(search){
+search.focus()
+}
+return
+}
+
+}
+
+const search=document.getElementById("youtubeSearch")
+
+/* se estiver digitando na busca */
+
+if(search && document.activeElement===search){
+
+if(e.key==="ArrowDown"){
+search.blur()
+this.cursorIndex=0
+return
+}
+
+}
+
 if(["ArrowUp","ArrowDown","ArrowLeft","ArrowRight","Enter"].includes(e.key)){
 e.preventDefault()
 }
@@ -596,6 +625,17 @@ e.preventDefault()
 if(rows.length){
 
 if(e.key==="ArrowDown"){
+
+/* se estiver na categoria youtube, ir para a busca */
+
+if(this.currentCategory==="youtube"){
+const search=document.getElementById("youtubeSearch")
+if(search){
+search.focus()
+return
+}
+}
+
 this.cursorIndex++
 if(this.cursorIndex>=rows.length)this.cursorIndex=rows.length-1
 }
