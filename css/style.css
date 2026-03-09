@@ -1643,18 +1643,55 @@ border:1px solid rgba(255,255,255,0.12);
 ===================================================== */
 
 .ambient-main{
+
 display:flex;
 align-items:center;
-gap:10px;
+justify-content:center;
+
+gap:8px;
+
+padding:4px 10px;
+
+border-radius:12px;
 
 font-size:13px;
 font-weight:600;
 
 cursor:pointer;
+
+transition:all .18s ease;
+
 }
 
+/* hover indica que é clicável */
+
+.ambient-main:hover{
+
+background:rgba(0,120,255,0.15);
+
+transform:scale(1.03);
+
+}
+
+/* ícone menor e alinhado */
+
 #ambientIcon{
-font-size:18px;
+font-size:15px;
+opacity:.8;
+}
+
+/* título centralizado */
+
+#ambientTrack{
+
+max-width:170px;
+
+text-align:center;
+
+overflow:hidden;
+white-space:nowrap;
+text-overflow:ellipsis;
+
 }
 
 /* =====================================================
@@ -1663,9 +1700,15 @@ font-size:18px;
 
 .ambient-controls-row{
 
-display:flex;
+display:grid;
+
+grid-template-columns:auto 1fr;
+
 align-items:center;
-gap:8px;
+
+gap:14px;
+
+margin-top:6px;
 
 }
 
@@ -2272,4 +2315,52 @@ text-align:left;
 
 #ytDuration{
 text-align:right;
+}
+
+.ambient-transport{
+
+display:flex;
+
+align-items:center;
+
+gap:6px;
+
+}
+
+.ambient-volume{
+
+display:flex;
+
+align-items:center;
+
+gap:8px;
+
+padding-left:6px;
+
+border-left:1px solid rgba(0,0,0,0.15);
+
+}
+
+body.dark .ambient-volume{
+border-left:1px solid rgba(255,255,255,0.15);
+}
+
+.ambient-volume::before{
+
+content:"🔊";
+
+font-size:14px;
+
+opacity:.75;
+
+}
+
+#ambientVolume{
+
+width:120px;
+
+cursor:pointer;
+
+accent-color:#ff3b30;
+
 }
