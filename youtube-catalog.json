@@ -7,6 +7,8 @@
     {"id":"7NOSDKb0HlU","title":"Lofi Jazzhop"},
     {"id":"P6Segk8cr-c","title":"Soft Lofi Beats"},
     {"id":"HuFYqnbVbzY","title":"Morning Lofi"},
+    {"id":"lTRiuFIWV54","title":"Lofi Study Radio"},
+    {"id":"3qG4JnFVpZw","title":"Night Coding Lofi"},
     {"id":"Q2hkpJYJq6Y","title":"Lofi Coding Session"}
   ],
 
@@ -16,7 +18,8 @@
     {"id":"6p_yaNFSYao","title":"Concentration Music"},
     {"id":"q76bMs-NwRk","title":"Brain Power Music"},
     {"id":"k9ts6p63ns0","title":"Deep Work Music"},
-    {"id":"lFcSrYw-ARY","title":"Focus Ambient"},
+    {"id":"B5unCXpegAw","title":"Deep Work Flow"},
+    {"id":"4xDzrJKXOOY","title":"Ultra Focus Music"},
     {"id":"y8NDRElMWwk","title":"Cognitive Focus Music"}
   ],
 
@@ -25,7 +28,11 @@
     {"id":"2OEL4P1Rz04","title":"Soft Piano Instrumental"},
     {"id":"sEQf5lcnj_o","title":"Calm Piano Music"},
     {"id":"Df0h2Z4n5Ns","title":"Emotional Piano"},
-    {"id":"5yx6BWlEVcY","title":"Peaceful Piano"}
+    {"id":"M0Yh0R1YFz0","title":"Peaceful Piano Mix"},
+    {"id":"Q6MemVxEquE","title":"Study Piano"},
+    {"id":"5yx6BWlEVcY","title":"Peaceful Piano"},
+    {"id":"bJU2drr0sS0","title":"Deep Space Ambient"},
+    {"id":"p9sYxN0V1xU","title":"Dark Ambient Focus"}
   ],
 
   "jazz":[
@@ -38,7 +45,6 @@
 
   "ambient":[
     {"id":"rWEI9y6PElo","title":"Ambient Space Music"},
-    {"id":"OD3F7J2PeYU","title":"Deep Ambient Atmosphere"},
     {"id":"T9yYg8ZsX4Y","title":"Atmospheric Ambient"},
     {"id":"3JQH0qY3FJ4","title":"Floating Ambient"},
     {"id":"pZPJ_VN3Iis","title":"Ambient Drone"}
@@ -47,15 +53,15 @@
   "nature":[
     {"id":"eKFTSSKCzWA","title":"Forest Sounds"},
     {"id":"xNN7iTA57jM","title":"Nature Ambience"},
-    {"id":"1ZYbU82GVz4","title":"Mountain Wind"},
     {"id":"kA6m9Vq8R2A","title":"Birdsong Nature"},
-    {"id":"Ftm2uv7-Ybw","title":"River Flow"}
+    {"id":"Ftm2uv7-Ybw","title":"River Flow"},
+    {"id":"xNN7iTA57jM","title":"Forest Ambience Extended"},
+    {"id":"K7QO7z2hS4s","title":"Calm Nature Atmosphere"}
   ],
 
   "rain":[
     {"id":"mPZkdNFkNps","title":"Rain Sounds for Sleep"},
     {"id":"q76bMs-NwRk","title":"Heavy Rain Ambience"},
-    {"id":"eKFTSSKCzWA","title":"Rain in Forest"},
     {"id":"OD3F7J2PeYU","title":"Night Rain"},
     {"id":"lFcSrYw-ARY","title":"Rainstorm Atmosphere"}
   ],

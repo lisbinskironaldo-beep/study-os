@@ -4,6 +4,8 @@ init(){
 
 document.addEventListener("keydown",(e)=>{
 
+
+
 if(
 e.target.tagName==="INPUT" ||
 e.target.tagName==="TEXTAREA" ||
@@ -12,10 +14,59 @@ e.target.isContentEditable
 return
 }
 
-const items = AmbientState.visible
-if(!items.length) return
+if(e.altKey && (e.key==="t" || e.key==="T")){
 
-if(e.key==="ArrowDown"){
+e.preventDefault()
+
+/* se já estiver no modo teste volta para shuffle */
+
+if(AmbientState.visible.length > 20){
+
+AmbientYoutube.buildRandomList()
+return
+
+}
+
+/* ativa modo teste */
+
+const list = []
+
+Object.entries(AmbientState.catalog).forEach(([cat,items])=>{
+items.forEach(v=>{
+v.category = cat
+list.push(v)
+})
+})
+
+AmbientState.visible = list
+AmbientState.cursor = 0
+AmbientState.favoritesMode = false
+
+AmbientUI.renderList()
+AmbientPlayer.playIndex(0)
+
+}
+
+const items = AmbientState.visible || []
+const hasItems = items.length > 0
+
+/* abrir fechar painel */
+
+if(e.altKey && (e.key==="m" || e.key==="M")){
+
+e.preventDefault()
+
+const panel=document.querySelector(".ambient-panel")
+if(!panel) return
+
+panel.style.display=
+panel.style.display==="none" ? "flex" : "none"
+
+}
+
+/* navegar */
+
+if(e.key==="ArrowDown" && AmbientState.visible.length){
 
 e.preventDefault()
 
@@ -28,7 +79,7 @@ AmbientUI.renderList()
 
 }
 
-if(e.key==="ArrowUp"){
+if(e.key==="ArrowUp" && AmbientState.visible.length){
 
 e.preventDefault()
 
@@ -41,56 +92,56 @@ AmbientUI.renderList()
 
 }
 
-if(e.key==="Enter"){
+/* tocar */
+
+if(e.key==="Enter" && AmbientState.visible.length){
+
+e.preventDefault()
 
 AmbientPlayer.playIndex(AmbientState.cursor)
-AmbientUI.renderList()
 
 }
 
-if(e.key==="ArrowRight"){
+/* play pause */
+
+if(e.code==="Space" && !e.altKey && AmbientState.player){
+
+e.preventDefault()
+
+AmbientPlayer.toggle()
+
+}
+
+if(e.key==="Escape"){
+
+const panel = document.querySelector(".ambient-panel")
+if(!panel) return
+
+panel.style.display="none"
+
+}
+
+/* next */
+
+if(e.key==="ArrowRight" && AmbientState.visible.length){
+
+e.preventDefault()
 
 AmbientPlayer.next()
 
 }
 
-if(e.key==="ArrowLeft"){
+/* prev */
+
+if(e.key==="ArrowLeft" && AmbientState.visible.length){
+
+e.preventDefault()
 
 AmbientPlayer.prev()
 
 }
 
-if(e.key===" "){
-
-e.preventDefault()
-
-AmbientPlayer.toggle()
-
-}
-
-if(e.altKey && (e.key==="p" || e.key==="P")){
-
-e.preventDefault()
-AmbientPlayer.toggle()
-
-}
-
-if(e.key==="r" || e.key==="R"){
-
-AmbientYoutube.buildRandomList()
-
-}
-
-if(e.key==="m" || e.key==="M"){
-
-const panel=document.querySelector(".ambient-panel")
-
-if(!panel) return
-
-panel.style.display=
-panel.style.display==="none" ? "flex" : "none"
-
-}
+/* favoritos */
 
 if(e.altKey && e.key==="Enter"){
 
@@ -122,25 +173,42 @@ AmbientUI.renderList()
 
 }
 
-if(e.altKey && (e.key==="f" || e.key==="F")){
+/* lista favoritos */
+
+if(e.key==="f" || e.key==="F"){
 
 e.preventDefault()
 
+if(AmbientState.favoritesMode){
+
+AmbientState.favoritesMode=false
+AmbientYoutube.buildRandomList()
+return
+
+}
+
 if(!AmbientState.favorites.length) return
 
-const favList = AmbientState.catalog
-? Object.values(AmbientState.catalog)
+const favList = Object.values(AmbientState.catalog)
 .flat()
 .filter(v=>AmbientState.favorites.includes(v.id))
-: []
-
-if(!favList.length) return
 
 AmbientState.visible = favList.slice(0,8)
 AmbientState.cursor = 0
+AmbientState.favoritesMode=true
 
 AmbientUI.renderList()
 AmbientPlayer.playIndex(0)
+
+}
+
+/* discovery */
+
+if(e.altKey && (e.key==="d" || e.key==="D")){
+
+e.preventDefault()
+
+AmbientYoutube.buildRandomList()
 
 }
 

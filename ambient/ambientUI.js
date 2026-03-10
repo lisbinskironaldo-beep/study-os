@@ -26,7 +26,8 @@ root.innerHTML = `
 type="range"
 min="0"
 max="100"
-value="0">
+value="0"
+step="0.1">
 
 <span id="ambientTimeTotal">0:00</span>
 
@@ -61,7 +62,10 @@ renderList(){
 
 const list = document.getElementById("ambientList")
 if(!list) return
-if(!AmbientState.visible.length) return
+if(!AmbientState.visible.length){
+list.innerHTML = ""
+return
+}
 
 if(!list) return
 
@@ -71,7 +75,7 @@ const fav = AmbientState.favorites.includes(v.id)
 
 return `
 
-<div class="ambient-item ${
+<div class="ambient-item cat-${v.category || "default"} ${
 i===AmbientState.cursor ? "cursor" : ""
 } ${
 v.id===AmbientState.currentVideo ? "playing" : ""
@@ -83,7 +87,7 @@ data-id="${v.id}">
 <img src="https://i.ytimg.com/vi/${v.id}/mqdefault.jpg">
 
 <div class="ambient-title">
-${v.title}
+${fav ? "★ " : ""}${v.title}
 </div>
 
 </div>
@@ -95,23 +99,34 @@ ${v.title}
 this.bindItems()
 const now = document.getElementById("ambientNow")
 
-const playing = AmbientState.visible.find(v => v.id === AmbientState.currentVideo)
-
+const playing = (AmbientState.visible || []).find(v => v && v.id === AmbientState.currentVideo)
 if(now && playing){
 now.textContent = "🎧 " + playing.title
 }
 
-let active=document.querySelector(".ambient-item.playing")
+const panel = document.querySelector(".ambient-panel")
 
-if(!active){
-active=document.querySelector(".ambient-item.cursor")
+if(panel && playing && playing.category){
+
+panel.className = "ambient-panel panel-" + playing.category
+
 }
 
-if(active){
-active.scrollIntoView({
+let active = list.querySelector(".ambient-item.playing")
+
+if(!active){
+active = list.querySelector(".ambient-item.cursor")
+}
+
+const items = list.querySelectorAll(".ambient-item")
+
+if(items[AmbientState.cursor]){
+
+items[AmbientState.cursor].scrollIntoView({
 block:"nearest",
 behavior:"smooth"
 })
+
 }
 
 },
@@ -121,10 +136,18 @@ bindItems(){
 document.querySelectorAll(".ambient-item")
 .forEach((row,i)=>{
 
+if(!AmbientState.visible[i]) return
+
 row.onclick=()=>{
 
-AmbientState.cursor=i
+if(i === AmbientState.cursor){
 
+AmbientPlayer.toggle()
+return
+
+}
+
+AmbientState.cursor=i
 AmbientPlayer.playIndex(i)
 
 this.renderList()

@@ -5,7 +5,13 @@ async loadCatalog(){
 const res = await fetch("data/youtube-catalog.json")
 const data = await res.json()
 
-AmbientState.catalog = data
+AmbientState.catalog = data || {}
+
+Object.keys(data).forEach(cat=>{
+data[cat].forEach(v=>{
+v.category = cat
+})
+})
 
 this.buildRandomList()
 
@@ -15,11 +21,13 @@ buildRandomList(){
 
 const all = []
 
+if(!AmbientState.catalog) return
+
 Object.values(AmbientState.catalog).forEach(list=>{
 list.forEach(v=>all.push(v))
 })
 
-const shuffled = this.shuffle(all)
+const shuffled = this.shuffle(all.filter(v => v && v.id))
 
 const favBoost = shuffled.filter(v=>AmbientState.favorites.includes(v.id))
 const rest = shuffled.filter(v=>!AmbientState.favorites.includes(v.id))
@@ -28,7 +36,7 @@ const boosted = [...favBoost, ...rest]
 
 /* evitar repetir músicas recentes */
 
-let filtered = boosted.filter(v => !AmbientState.history.includes(v.id))
+let filtered = boosted.filter(v => !AmbientState.history.slice(-20).includes(v.id))
 
 if(filtered.length < 8){
 AmbientState.history = []
@@ -37,7 +45,21 @@ filtered = shuffled
 
 /* nova lista */
 
-AmbientState.visible = filtered.slice(0,8)
+const playable = filtered.filter(v => v && v.id && v.title)
+
+let list = playable.slice(0,13)
+
+if(list.length < 10){
+
+const fallback = shuffled.filter(v =>
+v && v.id && !list.find(x => x.id === v.id)
+)
+
+list = list.concat(fallback.slice(0,10 - list.length))
+
+}
+
+AmbientState.visible = list
 
 AmbientState.cursor = 0
 

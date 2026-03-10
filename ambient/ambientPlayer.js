@@ -5,12 +5,14 @@ playIndex(i){
 if(!AmbientState.visible[i]) return
 
 const item = AmbientState.visible[i]
-if(!item) return
+if(!item || !item.id) return
 
 AmbientState.currentVideo = item.id
 localStorage.setItem("ambient_last_video", item.id)
 
+if(!AmbientState.history.includes(item.id)){
 AmbientState.history.push(item.id)
+}
 
 if(AmbientState.history.length > 20){
 AmbientState.history.shift()
@@ -18,6 +20,9 @@ AmbientState.history.shift()
 
 AmbientState.cursor = i
 AmbientState.playing=true
+
+AmbientState.lastTime = 0
+localStorage.setItem("ambient_last_time",0)
 
 this.loadVideo(item.id)
 
@@ -54,6 +59,10 @@ onReady:(e)=>{
 e.target.setVolume(AmbientState.volume*100)
 e.target.playVideo()
 
+if(AmbientState.lastTime){
+e.target.seekTo(AmbientState.lastTime,true)
+}
+
 AmbientState.playing=true
 document.getElementById("ambientPlay").textContent="⏸"
 
@@ -86,7 +95,11 @@ return
 
 }
 
-AmbientState.player.loadVideoById(id)
+AmbientState.player.loadVideoById({
+videoId:id,
+startSeconds:AmbientState.lastTime || 0
+})
+
 AmbientState.player.playVideo()
 
 AmbientState.playing=true
@@ -99,6 +112,7 @@ AmbientPlayer.startProgress()
 toggle(){
 
 if(!AmbientState.player) return
+if(!AmbientState.visible.length) return
 
 if(AmbientState.playing){
 
@@ -108,6 +122,7 @@ document.getElementById("ambientPlay").textContent="▶"
 
 if(this.progressInterval){
 clearInterval(this.progressInterval)
+this.progressInterval = null
 }
 
 }else{
@@ -128,11 +143,13 @@ let i = AmbientState.cursor+1
 
 if(i>=AmbientState.visible.length){
 
+AmbientState.history.push(AmbientState.currentVideo)
+
 AmbientYoutube.buildRandomList()
 return
 
 }
-
+if(!AmbientState.visible[i]) return
 this.playIndex(i)
 AmbientUI.renderList()
 
@@ -142,8 +159,13 @@ prev(){
 
 let i = AmbientState.cursor-1
 
-if(i<0)
+if(i<0){
+
 i=AmbientState.visible.length-1
+
+if(i<0) return
+
+}
 
 this.playIndex(i)
 AmbientUI.renderList()
@@ -158,12 +180,14 @@ clearInterval(this.progressInterval)
 
 this.progressInterval=setInterval(()=>{
 
-if(!AmbientState.player) return
+if(!AmbientState.player || !AmbientState.playing) return
 
 const cur=AmbientState.player.getCurrentTime()
 const dur=AmbientState.player.getDuration()
 
-if(!dur) return
+localStorage.setItem("ambient_last_time", cur)
+
+if(!dur || dur === Infinity) return
 
 const seek=document.getElementById("ambientSeek")
 const curTxt=document.getElementById("ambientTimeCurrent")
