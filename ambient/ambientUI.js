@@ -1,0 +1,206 @@
+const AmbientUI = {
+
+init(){
+
+const root = document.getElementById("ambientRoot")
+root.style.display="block"
+
+root.innerHTML = `
+
+<div class="ambient-panel">
+
+<div class="ambient-header">
+<span id="ambientNow">🎧 Focus Sounds</span>
+<button id="ambientShuffle">↻</button>
+</div>
+
+<div id="ambientList" class="ambient-list"></div>
+
+<div class="ambient-player">
+
+<div class="ambient-progress">
+
+<span id="ambientTimeCurrent">0:00</span>
+
+<input id="ambientSeek"
+type="range"
+min="0"
+max="100"
+value="0">
+
+<span id="ambientTimeTotal">0:00</span>
+
+</div>
+
+<div class="ambient-controls">
+
+<button id="ambientPrev">⏮</button>
+<button id="ambientPlay">▶</button>
+<button id="ambientNext">⏭</button>
+
+<input id="ambientVolume"
+type="range"
+min="0"
+max="1"
+step="0.01"
+value="${AmbientState.volume}">
+
+</div>
+
+</div>
+
+</div>
+
+`
+
+this.bindControls()
+
+},
+
+renderList(){
+
+const list = document.getElementById("ambientList")
+if(!list) return
+if(!AmbientState.visible.length) return
+
+if(!list) return
+
+list.innerHTML = AmbientState.visible.map((v,i)=>{
+
+const fav = AmbientState.favorites.includes(v.id)
+
+return `
+
+<div class="ambient-item ${
+i===AmbientState.cursor ? "cursor" : ""
+} ${
+v.id===AmbientState.currentVideo ? "playing" : ""
+} ${
+fav ? "favorite" : ""
+}"
+data-id="${v.id}">
+
+<img src="https://i.ytimg.com/vi/${v.id}/mqdefault.jpg">
+
+<div class="ambient-title">
+${v.title}
+</div>
+
+</div>
+
+`
+
+}).join("")
+
+this.bindItems()
+const now = document.getElementById("ambientNow")
+
+const playing = AmbientState.visible.find(v => v.id === AmbientState.currentVideo)
+
+if(now && playing){
+now.textContent = "🎧 " + playing.title
+}
+
+let active=document.querySelector(".ambient-item.playing")
+
+if(!active){
+active=document.querySelector(".ambient-item.cursor")
+}
+
+if(active){
+active.scrollIntoView({
+block:"nearest",
+behavior:"smooth"
+})
+}
+
+},
+
+bindItems(){
+
+document.querySelectorAll(".ambient-item")
+.forEach((row,i)=>{
+
+row.onclick=()=>{
+
+AmbientState.cursor=i
+
+AmbientPlayer.playIndex(i)
+
+this.renderList()
+
+}
+
+})
+
+},
+
+bindControls(){
+
+document.addEventListener("click",(e)=>{
+
+if(e.target.id==="ambientShuffle"){
+AmbientYoutube.buildRandomList()
+}
+
+if(e.target.id==="ambientPlay"){
+AmbientPlayer.toggle()
+}
+
+if(e.target.id==="ambientNext"){
+AmbientPlayer.next()
+}
+
+if(e.target.id==="ambientPrev"){
+AmbientPlayer.prev()
+}
+
+})
+
+const vol=document.getElementById("ambientVolume")
+
+if(vol){
+
+vol.oninput=()=>{
+
+AmbientState.volume=vol.value
+
+localStorage.setItem("ambient_volume",AmbientState.volume)
+
+if(AmbientState.player){
+AmbientState.player.setVolume(vol.value*100)
+}
+
+}
+
+}
+
+const seek = document.getElementById("ambientSeek")
+
+if(seek){
+
+seek.oninput = ()=>{
+
+if(!AmbientState.player) return
+
+const dur = AmbientState.player.getDuration()
+if(!dur) return
+
+const newTime = (seek.value/100) * dur
+
+AmbientState.player.seekTo(newTime,true)
+
+}
+
+}
+
+}
+
+}
+
+document.addEventListener("DOMContentLoaded",()=>{
+
+AmbientUI.init()
+AmbientYoutube.loadCatalog()
+
+})
