@@ -50,12 +50,38 @@ value="${AmbientState.volume}">
 
 </div>
 
+<div id="categorySelector" class="category-selector hidden">
+
+<div class="category-wheel">
+
+<div class="cat-item" data-cat="lofi">Lofi</div>
+<div class="cat-item" data-cat="focus">Focus</div>
+<div class="cat-item" data-cat="piano">Piano</div>
+<div class="cat-item" data-cat="jazz">Jazz</div>
+
+<div class="cat-item" data-cat="ambient">Ambient</div>
+<div class="cat-item" data-cat="nature">Nature</div>
+<div class="cat-item" data-cat="fireplace">fireplace</div>
+<div class="cat-item" data-cat="rain">Rain</div>
+<div class="cat-item" data-cat="white">Noise</div>
+
+</div>
+
+<button id="catClose">✕</button>
+
+</div>
+
 
 <div class="ambient-panel">
 
 <div class="ambient-header">
-<span id="ambientNow">🎧 Focus Sounds</span>
+
+<button id="ambientCatBtn" title="Categorias">🎨</button>
+
+<span id="ambientNow">Focus Sounds</span>
+
 <button id="ambientShuffle">↻</button>
+
 </div>
 
 <div id="ambientList" class="ambient-list"></div>
@@ -207,6 +233,18 @@ if(e.target.id==="ambientShuffle"){
 AmbientYoutube.buildRandomList()
 }
 
+if(e.target.id==="ambientCatBtn"){
+
+const sel = document.getElementById("categorySelector")
+
+if(sel){
+
+sel.classList.toggle("hidden")
+
+}
+
+}
+
 if(e.target.id==="ambientPlay"){
 AmbientPlayer.toggle()
 }
@@ -253,6 +291,40 @@ if(!dur) return
 const newTime = (seek.value/100) * dur
 
 AmbientState.player.seekTo(newTime,true)
+
+}
+
+}
+
+document.querySelectorAll(".cat-item").forEach(btn=>{
+
+btn.onclick = ()=>{
+
+const cat = btn.dataset.cat
+
+AmbientYoutube.buildCategory(cat)
+
+const sel = document.getElementById("categorySelector")
+
+if(sel){
+sel.classList.add("hidden")
+}
+
+}
+
+})
+
+const close = document.getElementById("catClose")
+
+if(close){
+
+close.onclick = ()=>{
+
+const sel = document.getElementById("categorySelector")
+
+if(sel){
+sel.classList.add("hidden")
+}
 
 }
 

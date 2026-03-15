@@ -8,9 +8,19 @@ const data = await res.json()
 AmbientState.catalog = data || {}
 
 Object.keys(data).forEach(cat=>{
-data[cat].forEach(v=>{
+
+const list = data[cat]
+
+if(!Array.isArray(list)) return
+
+list.forEach(v=>{
+
+if(!v || !v.id) return
+
 v.category = cat
+
 })
+
 })
 
 this.buildRandomList()
@@ -77,6 +87,28 @@ return
 }
 
 }
+
+AmbientPlayer.playIndex(0)
+
+},
+
+buildCategory(cat){
+
+if(!AmbientState.catalog) return
+
+const source = AmbientState.catalog[cat]
+
+if(!source || !source.length) return
+
+const list = this.shuffle(source.filter(v => v && v.id))
+
+if(!list.length) return
+
+AmbientState.visible = list.slice(0,13)
+
+AmbientState.cursor = 0
+
+AmbientUI.renderList()
 
 AmbientPlayer.playIndex(0)
 

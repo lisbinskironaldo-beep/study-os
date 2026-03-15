@@ -4,6 +4,18 @@ init(){
 
 document.addEventListener("keydown",(e)=>{
 
+if(e.altKey && (e.key==="k" || e.key==="K")){
+
+e.preventDefault()
+
+const sel = document.getElementById("categorySelector")
+
+if(sel){
+sel.classList.toggle("hidden")
+}
+
+}
+
 if(e.key === "?"){
 
 e.preventDefault()
