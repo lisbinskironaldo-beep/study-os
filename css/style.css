@@ -2483,5 +2483,11 @@ transition:.2s;
 }
 
 .qts-templates button:hover{
-background:rgba(0,120,255,0.35);
+    background:rgba(0,120,255,0.35);
+}
+
+.qts-templates button.is-active,
+.qts-templates button[aria-pressed="true"]{
+    background:rgba(0,120,255,0.75);
+    color:#fff;
 }

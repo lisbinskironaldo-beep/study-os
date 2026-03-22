@@ -1,1022 +1,726 @@
 window.QuestionsPage = {
-
-data: {
-errors: {},
-current: 0,
-questionsDB: {
-
-ENEM: {
-
-matematica: {
-
-algebra: [
-{
-question: "2 + 2 = ?",
-options: ["3", "4", "5", "6"],
-correct: 1,
-topic: "equacao_basica",
-difficulty: 1,
-explanation: ""
-},
-{
-question: "5 x 3 = ?",
-options: ["15", "10", "20", "8"],
-correct: 0,
-topic: "multiplicacao",
-difficulty: 1,
-explanation: ""
-}
-],
-
-geometria: [
-{
-question: "Área de um quadrado lado 2?",
-options: ["2", "4", "6", "8"],
-correct: 1,
-topic: "area_quadrado",
-difficulty: 1,
-explanation: ""
-}
-],
-
-estatistica: [
-{
-question: "Média de 2,4,6?",
-options: ["3", "4", "5", "6"],
-correct: 1,
-topic: "media",
-difficulty: 1,
-explanation: ""
-}
-]
-
-},
-
-portugues: {
-
-interpretacao: [
-{
-question: "Texto indica ideia principal?",
-options: ["A", "B", "C", "D"],
-correct: 0,
-topic: "interpretacao_texto",
-difficulty: 1,
-explanation: ""
-}
-],
-
-gramatica: [
-{
-question: "Plural de pão?",
-options: ["pães", "pãos", "pãoes", "pãoses"],
-correct: 0,
-topic: "plural_irregular",
-difficulty: 1,
-explanation: ""
-}
-]
-
-}
-
-},
-
-OAB: {
-
-direito: {
-
-constitucional: [
-{
-question: "CF foi criada em?",
-options: ["1988", "1990", "2000", "1970"],
-correct: 0,
-topic: "constituicao_1988",
-difficulty: 1,
-explanation: ""
-}
-],
-
-penal: [
-{
-question: "Princípio da legalidade significa?",
-options: ["Sem lei não há crime", "Crime sem pena", "Lei retroativa", "Nenhuma"],
-correct: 0,
-topic: "legalidade",
-difficulty: 1,
-explanation: ""
-}
-]
-
-}
-
-}
-
-} // fecha questionsDB
-
-}, // fecha data
-
-init() {
-QuestionsStore.load()
-this.render()
-
-const btn = document.getElementById("startTrainingBtn")
-
-if (btn) {
-btn.onclick = () => {
-this.data.current = 0
-this.data.sessionList = null
-this.render()
-}
-}
-
-},
-
-render() {
-
-const list = this.getCurrentQuestions()
-console.log("LIST:", list)
-
-
-if (!list.length) {
-document.getElementById("questionsContainer").innerHTML = "Sem questões"
-return
-}
-
-const q = this.getCurrentQuestion()
-if (!q) return
-document.getElementById("qPergunta").textContent = q.question
-
-const opcoesEl = document.getElementById("qOpcoes")
-
-opcoesEl.innerHTML = q.options.map((opt,i)=>`
-<button class="q-option" data-i="${i}">
-${opt}
-</button>
-`).join("")
-
-this.updateHeader()
-console.log("Q:", q)
-
-const btn = document.getElementById("startTrainingBtn")
-
-if (btn) {
-btn.onclick = () => {
-
-this.data.current = 0
-this.data.sessionList = null
-
-this.render()
-
-}
-}
-
-this.bind()
-this.renderDiagnosis()
-this.bindContextSwitch()
-
-document.getElementById("qFeedback").textContent = ""
-this.data.startTime = Date.now()
-
-},
-
-bind() {
-
-document.querySelectorAll(".q-option").forEach(btn => {
-
-btn.onclick = () => {
-
-const index = Number(btn.dataset.i)
-this.answer(index)
-
-}
-
-})
-
-},
-
-answer(index) {
-
-    const beforeLevel = this.getLevelData().level
-
-const list = this.getCurrentQuestions()
-const q = list[this.data.current]
-
-const correct = index === q.correct
-
-let xp = 0
-
-if (correct) {
-const time = Date.now() - this.data.startTime
-
-if (time < 2000) xp = 15
-else if (time < 5000) xp = 10
-else xp = 5
-}
-
-document.getElementById("qFeedback").textContent =
-correct ? `Correto +${xp} XP` : "Errado"
-
-const time = Date.now() - this.data.startTime
-const contextKey = this.getContextKey()
-QuestionsStore.registerAnswer(contextKey, q.topic, correct, time)
-
-const afterLevel = this.getLevelData().level
-
-this.showFeedback(correct, q, index)
-
-if (afterLevel > beforeLevel) {
-this.showLevelUp(this.getLevelData().name)
-}
-
-},
-
-next() {
-
-this.data.current++
-
-if (this.data.current >= this.getCurrentQuestions().length) {
-this.data.sessionList = null
-}
-
-if (this.data.current >= this.getCurrentQuestions().length) {
-this.data.current = 0
-this.data.sessionList = null
-}
-document.getElementById("qFeedback").textContent = ""
-this.render()
-this.logSession()
-},
-
-showFeedback(correct, q, index) {
-
-const container = document.getElementById("qFeedback")
-
-const buttons = document.querySelectorAll(".q-option")
-
-buttons.forEach((btn, i) => {
-
-btn.disabled = true
-
-if (i === q.correct) {
-btn.style.background = "#16a34a"
-}
-
-if (i === index && i !== q.correct) {
-btn.style.background = "#dc2626"
-}
-
-})
-
-const selected = q.options[index]
-const right = q.options[q.correct]
-
-const feedback = document.createElement("div")
-feedback.className = "q-feedback"
-
-let xp = 0
-
-if (correct) {
-const time = Date.now() - this.data.startTime
-
-if (time < 2000) xp = 15
-else if (time < 5000) xp = 10
-else xp = 5
-}
-
-feedback.innerHTML = correct
-? `✅ Correto +${xp} XP`
-: `❌ Errado<br>Resposta correta: ${right}`
-
-container.innerHTML = feedback.innerHTML
-
-setTimeout(() => {
-this.next()
-}, 800)
-
-},
-
-renderDiagnosis() {
-
-
-const el = document.getElementById("q-diagnosis")
-const statsEl = document.getElementById("q-stats")
-if (!el) return
-
-const contextKey = this.getContextKey()
-const profile = QuestionsStore.getProfile(contextKey)
-const entries = Object.entries(profile)
-
-if (!entries.length) {
-el.innerHTML = ""
-return
-}
-
-const ranked = entries
-.map(([topic, data]) => {
-
-const hits = data.hits || 0
-const errors = data.errors || 0
-const total = hits + errors
-
-const errorRate = total ? (errors / total) : 0
-
-return { topic, errorRate }
-
-})
-.sort((a,b) => b.errorRate - a.errorRate)
-.slice(0, 3)
-
-el.innerHTML = ranked.map(r => `
-<div style="font-size:13px;opacity:0.8;">
-⚠️ ${r.topic} — ${(r.errorRate * 100).toFixed(0)}% erro
-</div>
-`).join("")
-
-if (!statsEl) return
-
-const stats = entries.map(([topic, data]) => {
-
-const hits = data.hits || 0
-const errors = data.errors || 0
-const total = hits + errors
-
-const accuracy = total ? (hits / total) : 0
-
-return { topic, accuracy }
-
-}).sort((a,b) => b.accuracy - a.accuracy)
-
-statsEl.innerHTML = stats.map(s => `
-<div style="display:flex;justify-content:space-between;font-size:12px;opacity:0.8;">
-<span>${s.topic}</span>
-<span>${(s.accuracy * 100).toFixed(0)}%</span>
-</div>
-`).join("")
-
-},
-
-bindContextSwitch() {
-
-const allBtn = document.getElementById("qAll")
-const matBtn = document.getElementById("qMatematica")
-const porBtn = document.getElementById("qPortugues")
-
-const modeAssunto = document.getElementById("modeAssunto")
-const modeNivel = document.getElementById("modeNivel")
-
-const lvlFund = document.getElementById("lvlFundamental")
-const lvlMed = document.getElementById("lvlMedio")
-const lvlSup = document.getElementById("lvlSuperior")
-
-const updateLevelUI = () => {
-
-const level = QuestionsContext.get().level
-
-lvlFund?.classList.remove("active")
-lvlMed?.classList.remove("active")
-lvlSup?.classList.remove("active")
-
-if (level === "fundamental") lvlFund?.classList.add("active")
-if (level === "medio") lvlMed?.classList.add("active")
-if (level === "superior") lvlSup?.classList.add("active")
-
-}
-
-const openBtn = document.getElementById("openStatsBtn")
-const closeBtn = document.getElementById("closeStatsBtn")
-const panel = document.getElementById("statsPanel")
-
-// ===== STATS PANEL =====
-if (openBtn && panel) {
-openBtn.onclick = () => {
-panel.style.display = "block"
-this.renderStatsPanel()
-}
-}
-
-if (closeBtn && panel) {
-closeBtn.onclick = () => {
-panel.style.display = "none"
-}
-}
-
-// ===== FILTER =====
-const ctx = QuestionsContext.get()
-
-const assuntoContainer = document.getElementById("assuntoContainer")
-
-const renderAssuntos = () => {
-
-if (!assuntoContainer) return
-
-const ctx = QuestionsContext.get()
-
-// ESCONDE se não estiver em modo assunto
-if (ctx.mode !== "assunto") {
-assuntoContainer.innerHTML = ""
-return
-}
-
-const baseData = this.data.questionsDB[ctx.base]
-if (!baseData) return
-
-const subject = baseData[ctx.focus]
-if (!subject) {
-assuntoContainer.innerHTML = ""
-return
-}
-
-// categorias
-const assuntos = Object.keys(subject)
-
-assuntoContainer.innerHTML = assuntos.map(a => `
-<label style="margin:5px;display:inline-block;">
-<input type="checkbox" value="${a}" ${ctx.assuntos?.includes(a) ? "checked" : ""}/>
-${a}
-</label>
-`).join("")
-
-// bind
-assuntoContainer.querySelectorAll("input").forEach(input => {
-
-input.onchange = () => {
-
-let list = ctx.assuntos || []
-
-if (input.checked) {
-if (!list.includes(input.value)) {
-list.push(input.value)
-}
-} else {
-list = list.filter(v => v !== input.value)
-}
-
-QuestionsContext.setAssuntos(list)
-this.resetSession()
-
-}
-
-})
-
-}
-
-const updateModeUI = () => {
-
-const mode = QuestionsContext.get().mode
-
-modeAssunto?.classList.remove("active")
-modeNivel?.classList.remove("active")
-
-if (mode === "assunto") modeAssunto?.classList.add("active")
-if (mode === "nivel") modeNivel?.classList.add("active")
-
-}
-
-if (modeAssunto) {
-modeAssunto.onclick = () => {
-QuestionsContext.setMode("assunto")
-updateModeUI()
-this.resetSession()
-}
-}
-
-if (modeNivel) {
-modeNivel.onclick = () => {
-QuestionsContext.setMode("nivel")
-updateModeUI()
-this.resetSession()
-}
-}
-
-if (lvlFund) {
-lvlFund.onclick = () => {
-QuestionsContext.setLevel("fundamental")
-updateLevelUI()
-this.resetSession()
-}
-}
-
-if (lvlMed) {
-lvlMed.onclick = () => {
-QuestionsContext.setLevel("medio")
-updateLevelUI()
-this.resetSession()
-}
-}
-
-if (lvlSup) {
-lvlSup.onclick = () => {
-QuestionsContext.setLevel("superior")
-updateLevelUI()
-this.resetSession()
-}
-}
-
-const updateUI = () => {
-updateModeUI()
-
-const subjects = QuestionsContext.get().subjects || []
-
-allBtn?.classList.remove("active")
-matBtn?.classList.remove("active")
-porBtn?.classList.remove("active")
-
-if (!subjects.length) {
-allBtn?.classList.add("active")
-return
-}
-
-if (subjects.includes("matematica")) {
-matBtn?.classList.add("active")
-}
-
-if (subjects.includes("portugues")) {
-porBtn?.classList.add("active")
-}
-
-}
-
-const toggle = (value) => {
-
-let list = ctx.subjects || []
-
-if (list.includes(value)) {
-list = list.filter(v => v !== value)
-} else {
-list.push(value)
-}
-
-QuestionsContext.setSubjects(list)
-QuestionsContext.setAssuntos([])
-
-updateUI()
-this.resetSession()
-}
-
-// ===== BUTTONS =====
-if (matBtn) {
-matBtn.onclick = () => toggle("matematica")
-}
-
-if (porBtn) {
-porBtn.onclick = () => toggle("portugues")
-}
-
-if (allBtn) {
-allBtn.onclick = () => {
-QuestionsContext.setSubjects([])
-updateUI()
-this.resetSession()
-}
-}
-updateUI()
-updateLevelUI()
-renderAssuntos()
-},
-
-
-
-getCurrentQuestions() {
-
-const ctx = QuestionsContext.get()
-
-const mode = ctx.mode || "assunto"
-
-const contextKey = this.getContextKey()
-const profile = QuestionsStore.getProfile(contextKey)
-
-const base = ctx.base
-const baseData = this.data.questionsDB[base]
-
-if (!baseData) return []
-
-let all = []
-
-if (ctx.focus === "all") {
-
-Object.values(baseData).forEach(subject => {
-Object.values(subject).forEach(category => {
-if (Array.isArray(category)) {
-all.push(...category)
-}
-})
-})
-
-} else {
-
-const subject = baseData[ctx.focus]
-if (!subject) return []
-
-Object.values(subject).forEach(category => {
-if (Array.isArray(category)) {
-all.push(...category)
-}
-})
-
-}
-
-// se não tem histórico → aleatório
-if (!Object.keys(profile).length) {
-
-if (!this.data.sessionList) {
-this.data.sessionList = this.shuffle([...all])
-}
-
-return this.data.sessionList
-}
-
-// fallback se vazio ou pequeno
-let finalList = all
-
-const selectedAssuntos = ctx.assuntos || []
-
-if (mode === "assunto") {
-
-let pool = all
-
-// se usuário selecionou assuntos → restringe pool
-if (selectedAssuntos.length) {
-pool = all.filter(q => selectedAssuntos.includes(q.topic))
-}
-
-// tenta adaptar dentro do pool
-const worst = Object.entries(profile)
-.filter(([topic]) => pool.some(q => q.topic === topic))
-.sort((a,b) => (b[1].errors || 0) - (a[1].errors || 0))[0]
-
-const worstTopic = worst?.[0]
-
-// foca no pior tópico dentro do pool
-if (worstTopic) {
-
-    const focused = pool.filter(q => q.topic === worstTopic)
-
-    if (focused.length >= 3) {
-        finalList = focused
-    } else {
-        finalList = pool
+    runtimeNotice: "",
+
+    data: {
+        tracks: {
+            ensino_medio: {
+                key: "ensino_medio",
+                label: "Ensino medio",
+                note: "Treino escolar objetivo, com base mais leve e direta.",
+                baseKey: "ENEM",
+                difficultyRange: [1, 2],
+                defaultFocus: "matematica",
+                defaultSessionSize: 8
+            },
+            enem: {
+                key: "enem",
+                label: "ENEM",
+                note: "Sessao mais proxima da prova, com leitura e contexto.",
+                baseKey: "ENEM",
+                difficultyRange: [1, 4],
+                defaultFocus: "matematica",
+                defaultSessionSize: 12
+            },
+            concurso: {
+                key: "concurso",
+                label: "Concurso / OAB",
+                note: "Treino mais tecnico, com foco em cobranca de banca.",
+                baseKey: "OAB",
+                difficultyRange: [2, 4],
+                defaultFocus: "constitucional",
+                defaultSessionSize: 10
+            },
+            quiz: {
+                key: "quiz",
+                label: "Quiz leve",
+                note: "Para aquecer a mente sem peso de prova.",
+                baseKey: "QUIZ",
+                difficultyRange: [1, 3],
+                defaultFocus: "cultura_geral",
+                defaultSessionSize: 6
+            }
+        },
+
+        missions: {
+            topic: {
+                key: "topic",
+                label: "Assunto especifico",
+                note: "Escolha materia e tema para treinar de forma afiada."
+            },
+            weak: {
+                key: "weak",
+                label: "Pontos fracos",
+                note: "Puxa os temas em que voce mais erra e concentra neles."
+            },
+            quick: {
+                key: "quick",
+                label: "Sessao rapida",
+                note: "Treino curto e leve para manter a rotina quente."
+            }
+        },
+
+        sessionSizes: [5, 8, 12, 20],
+
+        questionsDB: {
+            ENEM: {
+                label: "ENEM / Ensino medio",
+                subjects: {
+                    matematica: {
+                        label: "Matematica",
+                        topics: {
+                            algebra: [
+                                {
+                                    question: "Se 3x + 6 = 21, qual e o valor de x?",
+                                    options: ["3", "4", "5", "6"],
+                                    correct: 2,
+                                    difficulty: 1,
+                                    explanation: "3x = 15, entao x = 5."
+                                },
+                                {
+                                    question: "A expressao 2(a + 3) e equivalente a:",
+                                    options: ["2a + 3", "2a + 5", "2a + 6", "a + 6"],
+                                    correct: 2,
+                                    difficulty: 1,
+                                    explanation: "Distribuindo o 2, ficamos com 2a + 6."
+                                },
+                                {
+                                    question: "Qual e a raiz de x^2 - 9 = 0 que e positiva?",
+                                    options: ["1", "3", "6", "9"],
+                                    correct: 1,
+                                    difficulty: 2,
+                                    explanation: "x^2 = 9, logo as raizes sao -3 e 3."
+                                }
+                            ],
+                            geometria: [
+                                {
+                                    question: "Um quadrado de lado 4 tem area igual a:",
+                                    options: ["8", "12", "16", "20"],
+                                    correct: 2,
+                                    difficulty: 1,
+                                    explanation: "Area do quadrado e lado vezes lado: 4 x 4 = 16."
+                                },
+                                {
+                                    question: "A soma dos angulos internos de um triangulo e:",
+                                    options: ["90 graus", "180 graus", "270 graus", "360 graus"],
+                                    correct: 1,
+                                    difficulty: 1,
+                                    explanation: "Todo triangulo possui 180 graus de soma interna."
+                                },
+                                {
+                                    question: "Circunferencia com raio 3 possui diametro:",
+                                    options: ["3", "6", "9", "12"],
+                                    correct: 1,
+                                    difficulty: 2,
+                                    explanation: "Diametro e duas vezes o raio."
+                                }
+                            ],
+                            estatistica: [
+                                {
+                                    question: "A media aritmetica de 2, 4 e 6 e:",
+                                    options: ["3", "4", "5", "6"],
+                                    correct: 1,
+                                    difficulty: 1,
+                                    explanation: "Somando e dividindo por 3, temos 12 / 3 = 4."
+                                },
+                                {
+                                    question: "No conjunto 1, 1, 2, 3, a moda e:",
+                                    options: ["1", "2", "3", "4"],
+                                    correct: 0,
+                                    difficulty: 2,
+                                    explanation: "Moda e o valor que mais se repete: 1."
+                                },
+                                {
+                                    question: "A mediana do conjunto 2, 5, 8 e:",
+                                    options: ["2", "5", "8", "15"],
+                                    correct: 1,
+                                    difficulty: 2,
+                                    explanation: "A mediana e o valor central do conjunto ordenado."
+                                }
+                            ]
+                        }
+                    },
+                    portugues: {
+                        label: "Portugues",
+                        topics: {
+                            interpretacao_textual: [
+                                {
+                                    question: "Ao ler um texto, a ideia principal costuma responder a:",
+                                    options: ["Qual e o tema central?", "Quem publicou?", "Quantas palavras ha?", "Qual e o genero do autor?"],
+                                    correct: 0,
+                                    difficulty: 1,
+                                    explanation: "A ideia principal mostra o nucleo do texto."
+                                },
+                                {
+                                    question: "Uma inferencia textual exige que o leitor:",
+                                    options: ["Copie o texto", "Leia apenas o titulo", "Relacione pistas do texto", "Ignore o contexto"],
+                                    correct: 2,
+                                    difficulty: 2,
+                                    explanation: "Inferir e ligar pistas explicitas e implicitas."
+                                },
+                                {
+                                    question: "Em textos argumentativos, a tese e:",
+                                    options: ["O titulo", "A opiniao central defendida", "A biografia do autor", "A conclusao obrigatoria"],
+                                    correct: 1,
+                                    difficulty: 2,
+                                    explanation: "A tese e o ponto de vista central do texto."
+                                }
+                            ],
+                            gramatica: [
+                                {
+                                    question: "Qual e o plural correto de 'pao'?",
+                                    options: ["paos", "paoes", "paes", "paeses"],
+                                    correct: 2,
+                                    difficulty: 1,
+                                    explanation: "O plural consagrado e 'paes'."
+                                },
+                                {
+                                    question: "Na frase 'Eles chegaram cedo', 'cedo' e:",
+                                    options: ["substantivo", "adverbio", "adjetivo", "verbo"],
+                                    correct: 1,
+                                    difficulty: 2,
+                                    explanation: "Cedo modifica o verbo chegaram, logo e adverbio."
+                                },
+                                {
+                                    question: "Em 'A menina inteligente estudou', 'inteligente' funciona como:",
+                                    options: ["verbo", "adverbio", "artigo", "adjetivo"],
+                                    correct: 3,
+                                    difficulty: 2,
+                                    explanation: "Adjetivo caracteriza o substantivo."
+                                }
+                            ],
+                            literatura: [
+                                {
+                                    question: "Uma caracteristica comum do Modernismo brasileiro e:",
+                                    options: ["linguagem engessada", "valorizacao da linguagem coloquial", "imitar sempre o passado", "rejeitar temas nacionais"],
+                                    correct: 1,
+                                    difficulty: 3,
+                                    explanation: "O Modernismo aproximou a lingua do uso brasileiro."
+                                },
+                                {
+                                    question: "O eu lirico aparece com mais frequencia em:",
+                                    options: ["poemas", "editais", "bulas", "formularios"],
+                                    correct: 0,
+                                    difficulty: 1,
+                                    explanation: "O eu lirico e uma voz tipica da poesia."
+                                }
+                            ]
+                        }
+                    },
+                    biologia: {
+                        label: "Biologia",
+                        topics: {
+                            ecologia: [
+                                {
+                                    question: "Conjunto de seres vivos da mesma especie em uma area e chamado de:",
+                                    options: ["bioma", "ecossistema", "populacao", "biosfera"],
+                                    correct: 2,
+                                    difficulty: 1,
+                                    explanation: "Populacao reune individuos da mesma especie."
+                                },
+                                {
+                                    question: "Fotossintese e importante porque:",
+                                    options: ["remove o solo", "produz materia organica", "substitui respiracao", "elimina agua"],
+                                    correct: 1,
+                                    difficulty: 1,
+                                    explanation: "A fotossintese gera materia organica e libera oxigenio."
+                                }
+                            ],
+                            genetica: [
+                                {
+                                    question: "A unidade basica da hereditariedade e:",
+                                    options: ["celula", "gene", "tecido", "ribossomo"],
+                                    correct: 1,
+                                    difficulty: 2,
+                                    explanation: "O gene carrega informacoes hereditarias."
+                                },
+                                {
+                                    question: "Genes alelos ocupam:",
+                                    options: ["organismos diferentes", "locais diferentes em cromossomos distintos", "o mesmo locus em cromossomos homlogos", "apenas celulas nervosas"],
+                                    correct: 2,
+                                    difficulty: 3,
+                                    explanation: "Alelos ocupam o mesmo locus nos cromossomos homlogos."
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            OAB: {
+                label: "OAB / Concurso",
+                subjects: {
+                    constitucional: {
+                        label: "Constitucional",
+                        topics: {
+                            direitos_fundamentais: [
+                                {
+                                    question: "A liberdade de expressao pode ser classificada como direito:",
+                                    options: ["social", "politico", "fundamental individual", "tributario"],
+                                    correct: 2,
+                                    difficulty: 2,
+                                    explanation: "A liberdade de expressao integra o rol de direitos fundamentais."
+                                },
+                                {
+                                    question: "O mandado de seguranca protege direito:",
+                                    options: ["difuso sem titular", "liquido e certo", "somente penal", "somente eleitoral"],
+                                    correct: 1,
+                                    difficulty: 3,
+                                    explanation: "O mandado de seguranca protege direito liquido e certo."
+                                }
+                            ],
+                            organizacao_estado: [
+                                {
+                                    question: "No federalismo brasileiro, os estados possuem:",
+                                    options: ["soberania", "autonomia", "supremacia internacional", "poder moderador"],
+                                    correct: 1,
+                                    difficulty: 2,
+                                    explanation: "Estados possuem autonomia, nao soberania."
+                                },
+                                {
+                                    question: "Intervencao federal e medida:",
+                                    options: ["sempre livre", "vedada pela Constituicao", "excepcional", "automaticamente anual"],
+                                    correct: 2,
+                                    difficulty: 3,
+                                    explanation: "A intervencao e excepcional e exige hipoteses constitucionais."
+                                }
+                            ]
+                        }
+                    },
+                    administrativo: {
+                        label: "Administrativo",
+                        topics: {
+                            atos_administrativos: [
+                                {
+                                    question: "Atributo que permite execucao direta do ato em alguns casos e:",
+                                    options: ["presuncao de legitimidade", "imperatividade", "autoexecutoriedade", "tipicidade"],
+                                    correct: 2,
+                                    difficulty: 2,
+                                    explanation: "Autoexecutoriedade permite execucao direta pela administracao."
+                                },
+                                {
+                                    question: "Motivo do ato administrativo corresponde a:",
+                                    options: ["forma do ato", "fundamento de fato e de direito", "autoridade competente", "finalidade privada"],
+                                    correct: 1,
+                                    difficulty: 2,
+                                    explanation: "Motivo sao as razoes de fato e de direito do ato."
+                                }
+                            ],
+                            licitacoes: [
+                                {
+                                    question: "O principio da isonomia na licitacao busca:",
+                                    options: ["favorecer fornecedor local", "igualdade entre concorrentes", "dispensar edital sempre", "eliminar competitividade"],
+                                    correct: 1,
+                                    difficulty: 3,
+                                    explanation: "Isonomia garante igualdade de tratamento entre os licitantes."
+                                },
+                                {
+                                    question: "A contratacao direta sem licitacao ocorre nas hipoteses legais de:",
+                                    options: ["dispensa ou inexigibilidade", "somente pregao", "somente leilao", "concorrencia simplificada"],
+                                    correct: 0,
+                                    difficulty: 3,
+                                    explanation: "Dispensa e inexigibilidade sao as hipoteses classicas."
+                                }
+                            ]
+                        }
+                    },
+                    penal: {
+                        label: "Penal",
+                        topics: {
+                            teoria_do_crime: [
+                                {
+                                    question: "Pelo principio da legalidade, nao ha crime sem:",
+                                    options: ["dolo", "culpa", "lei anterior", "vitima"],
+                                    correct: 2,
+                                    difficulty: 2,
+                                    explanation: "A lei anterior e indispensavel para definir crime."
+                                },
+                                {
+                                    question: "Tipicidade significa a adequacao do fato:",
+                                    options: ["a moral social", "ao tipo penal", "ao costume", "ao processo civil"],
+                                    correct: 1,
+                                    difficulty: 2,
+                                    explanation: "Tipicidade e a correspondencia ao tipo penal."
+                                }
+                            ],
+                            penas: [
+                                {
+                                    question: "Pena restritiva de direitos pode substituir privativa de liberdade quando:",
+                                    options: ["sempre", "presentes requisitos legais", "nunca", "houver reincidencia especifica grave obrigatoria"],
+                                    correct: 1,
+                                    difficulty: 3,
+                                    explanation: "A substituicao depende dos requisitos previstos em lei."
+                                },
+                                {
+                                    question: "A finalidade preventiva da pena busca:",
+                                    options: ["somente arrecadar", "evitar novas infracoes", "substituir a policia", "anular o processo"],
+                                    correct: 1,
+                                    difficulty: 2,
+                                    explanation: "Prevencao visa reduzir a reincidencia e desestimular crimes."
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            QUIZ: {
+                label: "Quiz leve",
+                subjects: {
+                    cultura_geral: {
+                        label: "Cultura geral",
+                        topics: {
+                            mundo: [
+                                {
+                                    question: "Qual pais tem Brasilia como capital?",
+                                    options: ["Brasil", "Portugal", "Argentina", "Chile"],
+                                    correct: 0,
+                                    difficulty: 1,
+                                    explanation: "Brasilia e a capital do Brasil."
+                                },
+                                {
+                                    question: "O maior oceano do planeta e o:",
+                                    options: ["Atlantico", "Pacifico", "Indico", "Artico"],
+                                    correct: 1,
+                                    difficulty: 1,
+                                    explanation: "O Oceano Pacifico e o maior do mundo."
+                                }
+                            ],
+                            ciencia: [
+                                {
+                                    question: "A agua ferve ao nivel do mar perto de:",
+                                    options: ["50 C", "75 C", "100 C", "150 C"],
+                                    correct: 2,
+                                    difficulty: 1,
+                                    explanation: "Em condicoes padrao, a fervura ocorre a 100 C."
+                                },
+                                {
+                                    question: "Planeta conhecido como planeta vermelho:",
+                                    options: ["Venus", "Marte", "Jupiter", "Mercurio"],
+                                    correct: 1,
+                                    difficulty: 1,
+                                    explanation: "Marte recebe esse apelido pela cor avermelhada."
+                                }
+                            ]
+                        }
+                    },
+                    logica: {
+                        label: "Logica",
+                        topics: {
+                            padroes: [
+                                {
+                                    question: "Qual numero completa a sequencia 2, 4, 8, 16, ...?",
+                                    options: ["18", "24", "30", "32"],
+                                    correct: 3,
+                                    difficulty: 1,
+                                    explanation: "A sequencia dobra a cada passo."
+                                },
+                                {
+                                    question: "Se todos os A sao B e todo B e C, entao:",
+                                    options: ["algum A nao e C", "todo A e C", "nenhum A e C", "todo C e A"],
+                                    correct: 1,
+                                    difficulty: 2,
+                                    explanation: "A relacao se propaga: todo A tambem e C."
+                                }
+                            ],
+                            rapido: [
+                                {
+                                    question: "Qual numero vem antes de 100?",
+                                    options: ["98", "99", "101", "90"],
+                                    correct: 1,
+                                    difficulty: 1,
+                                    explanation: "O antecessor de 100 e 99."
+                                },
+                                {
+                                    question: "Tres pessoas levam tres minutos para resolver tres problemas identicos. Quanto tempo para uma pessoa resolver um problema?",
+                                    options: ["1 minuto", "3 minutos", "6 minutos", "9 minutos"],
+                                    correct: 1,
+                                    difficulty: 2,
+                                    explanation: "Cada pessoa resolve um problema em tres minutos."
+                                }
+                            ]
+                        }
+                    },
+                    entretenimento: {
+                        label: "Entretenimento",
+                        topics: {
+                            cinema: [
+                                {
+                                    question: "Em uma producao audiovisual, quem normalmente coordena a visao artistica do filme?",
+                                    options: ["diretor", "contador", "auditor", "mecanico"],
+                                    correct: 0,
+                                    difficulty: 1,
+                                    explanation: "A direcao conduz a visao artistica da obra."
+                                },
+                                {
+                                    question: "A trilha sonora de um filme ajuda principalmente a:",
+                                    options: ["reduzir a duracao", "criar atmosfera", "substituir atores", "apagar o roteiro"],
+                                    correct: 1,
+                                    difficulty: 1,
+                                    explanation: "A trilha fortalece clima, ritmo e emocao."
+                                }
+                            ],
+                            series: [
+                                {
+                                    question: "Em series, o episodio piloto costuma servir para:",
+                                    options: ["encerrar a trama", "apresentar o universo da historia", "dispensar personagens", "substituir a temporada"],
+                                    correct: 1,
+                                    difficulty: 1,
+                                    explanation: "O piloto apresenta tom, personagens e conflito."
+                                },
+                                {
+                                    question: "Um cliffhanger e um recurso usado para:",
+                                    options: ["eliminar a trilha", "fechar todas as pontas", "criar suspense para o proximo episodio", "trocar a emissora"],
+                                    correct: 2,
+                                    difficulty: 2,
+                                    explanation: "Cliffhanger deixa gancho e expectativa."
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    },
+
+    init() {
+        QuestionsStore.load();
+        QuestionsContext.load();
+        QuestionsState.init();
+        QuestionsUI.init(this);
+        this.syncContext();
+        this.openLauncher();
+    },
+
+    getTrackConfig(trackKey = null) {
+        const ctx =
+            QuestionsContext.get();
+        const key =
+            trackKey || ctx.track;
+
+        return (
+            this.data.tracks[key] ||
+            this.data.tracks.enem
+        );
+    },
+
+    getBaseCatalog(baseKey = null) {
+        const ctx =
+            QuestionsContext.get();
+
+        return (
+            this.data.questionsDB[
+                baseKey || ctx.base
+            ] || null
+        );
+    },
+
+    syncContext() {
+        const snapshot =
+            QuestionsContext.get();
+        const track =
+            this.getTrackConfig(
+                snapshot.track
+            );
+        const base =
+            this.getBaseCatalog(
+                track.baseKey
+            );
+        const subjectKeys =
+            Object.keys(
+                base?.subjects || {}
+            );
+
+        let focus =
+            snapshot.focus;
+
+        if (
+            !subjectKeys.includes(focus)
+        ) {
+            focus =
+                track.defaultFocus &&
+                subjectKeys.includes(
+                    track.defaultFocus
+                )
+                    ? track.defaultFocus
+                    : (subjectKeys[0] || "");
+        }
+
+        const topicKeys =
+            Object.keys(
+                base?.subjects?.[focus]
+                    ?.topics || {}
+            );
+
+        let topics =
+            Array.isArray(
+                snapshot.topics
+            )
+                ? snapshot.topics.filter(
+                    (topicKey) =>
+                        topicKeys.includes(
+                            topicKey
+                        )
+                )
+                : [];
+
+        const mission =
+            this.data.missions[
+                snapshot.mission
+            ]
+                ? snapshot.mission
+                : "topic";
+
+        if (
+            mission === "topic" &&
+            !topics.length &&
+            topicKeys.length
+        ) {
+            topics = [topicKeys[0]];
+        }
+
+        let sessionSize =
+            this.data.sessionSizes.includes(
+                snapshot.sessionSize
+            )
+                ? snapshot.sessionSize
+                : track.defaultSessionSize;
+
+        if (
+            mission === "quick" &&
+            sessionSize > 8
+        ) {
+            sessionSize = 5;
+        }
+
+        QuestionsContext.replace({
+            ...snapshot,
+            track: track.key,
+            base: track.baseKey,
+            mission,
+            focus,
+            topics,
+            sessionSize
+        });
+
+        return QuestionsContext.get();
+    },
+
+    updateContext(patch = {}) {
+        const current =
+            QuestionsContext.get();
+        const next = {
+            ...current,
+            ...(patch || {})
+        };
+
+        if (
+            Object.prototype.hasOwnProperty.call(
+                patch,
+                "track"
+            )
+        ) {
+            const track =
+                this.getTrackConfig(
+                    patch.track
+                );
+
+            next.base = track.baseKey;
+            next.focus =
+                track.defaultFocus ||
+                next.focus;
+            next.topics = [];
+        }
+
+        if (
+            Object.prototype.hasOwnProperty.call(
+                patch,
+                "focus"
+            )
+        ) {
+            next.topics = [];
+        }
+
+        if (
+            Object.prototype.hasOwnProperty.call(
+                patch,
+                "mission"
+            ) &&
+            patch.mission === "quick"
+        ) {
+            next.sessionSize = 5;
+        }
+
+        QuestionsContext.replace(
+            next,
+            false
+        );
+        this.syncContext();
+        this.render();
+    },
+
+    toggleTopic(topicKey) {
+        const ctx =
+            QuestionsContext.get();
+        const currentTopics =
+            Array.isArray(ctx.topics)
+                ? [...ctx.topics]
+                : [];
+        const nextTopics =
+            currentTopics.includes(topicKey)
+                ? currentTopics.filter(
+                    (item) =>
+                        item !== topicKey
+                )
+                : [
+                    ...currentTopics,
+                    topicKey
+                ];
+
+        this.updateContext({
+            topics: nextTopics
+        });
+    },
+
+    getRuntimeNotice() {
+        return this.runtimeNotice || "";
+    },
+
+    clearRuntimeNotice() {
+        this.runtimeNotice = "";
+    },
+
+    startSession() {
+        this.syncContext();
+
+        const list =
+            QuestionsService.buildSession(
+                this
+            );
+
+        if (!list.length) {
+            this.runtimeNotice =
+                "Ainda nao ha questoes suficientes nesse recorte. Ajuste a rota e tente de novo.";
+            this.openLauncher();
+            return;
+        }
+
+        this.clearRuntimeNotice();
+
+        QuestionsState.startSession(
+            list,
+            QuestionsService.getRouteSummary(
+                this
+            )
+        );
+
+        QuestionsUI.render();
+    },
+
+    openLauncher() {
+        QuestionsState.openLauncher();
+        this.render();
+    },
+
+    render() {
+        this.syncContext();
+        QuestionsUI.render();
     }
-
-} else {
-    finalList = pool
-}
-
-}
-
-if (mode === "nivel") {
-
-const level = ctx.level || "medio"
-
-finalList = all.filter(q => {
-
-if (level === "fundamental") return q.difficulty <= 3
-if (level === "medio") return q.difficulty > 3 && q.difficulty <= 6
-if (level === "superior") return q.difficulty > 6
-
-return true
-
-})
-
-}
-
-if (!this.data.sessionList) {
-this.data.sessionList = this.shuffle([...finalList])
-}
-
-return this.data.sessionList
-
-},
-
-getCurrentQuestion() {
-
-const list = this.getCurrentQuestions()
-
-if (!list.length) return null
-
-return list[this.data.current]
-
-},
-
-resetSession() {
-
-this.data.current = 0
-this.data.sessionList = null
-
-this.render()
-
-},
-
-shuffle(array) {
-
-const arr = [...array]
-
-for (let i = arr.length - 1; i > 0; i--) {
-
-let j = Math.floor(Math.random() * (i + 1))
-
-let temp = arr[i]
-arr[i] = arr[j]
-arr[j] = temp
-
-}
-
-return arr
-
-},
-
-updateHeader() {
-
-const ctx = QuestionsContext.get()
-
-document.getElementById("qTema").textContent =
-ctx.focus
-
-document.getElementById("qProgress").textContent =
-`${this.data.current + 1}/${this.getCurrentQuestions().length}`
-
-
-const total = this.getCurrentQuestions().length
-const percent = ((this.data.current + 1) / total) * 100
-
-const fill = document.getElementById("qProgressFill")
-if (fill) fill.style.width = percent + "%"
-
-const levelData = this.getLevelData()
-
-const temaEl = document.getElementById("qTema")
-
-if (temaEl) {
-temaEl.textContent =
-`${QuestionsContext.get().focus} — ${levelData.name}`
-}
-
-},
-
-getLevelData() {
-
-const contextKey = this.getContextKey()
-const profile = QuestionsStore.getProfile(contextKey)
-
-const entries = Object.values(profile)
-
-if (!entries.length) return { level: 1, name: "Recruta" }
-
-let totalScore = 0
-
-entries.forEach(t => {
-
-const hits = t.hits || 0
-const errors = t.errors || 0
-const total = hits + errors
-
-const accuracy = total ? (hits / total) : 0
-const speed = t.avgTime ? (1 / t.avgTime) * 1000 : 0
-
-const score = (accuracy * 0.7) + (speed * 0.3)
-
-totalScore += score
-
-})
-
-const avgScore = totalScore / entries.length
-
-// normaliza para 1–19
-const level = Math.min(19, Math.max(1, Math.floor(avgScore * 20)))
-
-const ranks = [
-"Recruta",
-"Soldado",
-"Cabo",
-"3º Sargento",
-"2º Sargento",
-"1º Sargento",
-"Subtenente",
-"Aspirante",
-"2º Tenente",
-"1º Tenente",
-"Capitão",
-"Major",
-"Tenente-Coronel",
-"Coronel",
-"General de Brigada",
-"General de Divisão",
-"General de Exército",
-"Marechal",
-"Comando Geral"
-]
-
-return {
-level,
-name: ranks[level - 1]
-}
-
-},
-
-renderStatsPanel(selectedSubject = null) {
-
-const el = document.getElementById("statsContent")
-if (!el) return
-
-const contextKey = this.getContextKey()
-const profile = QuestionsStore.getProfile(contextKey)
-const entries = Object.entries(profile)
-
-if (!entries.length) {
-el.innerHTML = "Sem dados ainda"
-return
-}
-
-// 🔹 MAPEAR tópicos → matérias
-const ctx = QuestionsContext.get()
-const baseData = this.data.questionsDB[ctx.base]
-
-// cria mapa topic → subject
-const topicToSubject = {}
-
-Object.entries(baseData).forEach(([subject, categories]) => {
-Object.values(categories).forEach(list => {
-if (!Array.isArray(list)) return
-
-list.forEach(q => {
-topicToSubject[q.topic] = subject
-})
-})
-})
-
-// 🔹 AGRUPAR POR MATÉRIA
-const subjectMap = {}
-
-entries.forEach(([topic, data]) => {
-
-const subject = topicToSubject[topic]
-if (!subject) return
-
-if (!subjectMap[subject]) {
-subjectMap[subject] = []
-}
-
-subjectMap[subject].push({ topic, data })
-
-})
-
-// 🔴 SE NÃO ESCOLHEU MATÉRIA → MOSTRA MATÉRIAS
-if (!selectedSubject) {
-
-const html = Object.entries(subjectMap).map(([subject, list]) => {
-
-let totalHits = 0
-let totalErrors = 0
-
-list.forEach(({ data }) => {
-totalHits += data.hits || 0
-totalErrors += data.errors || 0
-})
-
-const total = totalHits + totalErrors
-const acc = total ? totalHits / total : 0
-
-// nível da matéria
-const levelData = this.getLevelData()
-const level = levelData.level
-
-return `
-<div style="
-margin-bottom:20px;
-cursor:pointer;
-display:flex;
-flex-direction:column;
-align-items:center;
-text-align:center;
-" data-subject="${subject}">
-<div style="display:flex;justify-content:space-between;">
-<strong>${subject}</strong>
-<span>${this.getLevelData().name}</span>
-</div>
-
-<div style="
-height:120px;
-display:flex;
-align-items:flex-end;
-justify-content:center;
-gap:6px;
-margin-top:10px;
-">
-<div style="
-width:30px;
-border-radius:6px;
-height:${acc * 100}%;
-background:#5b5bf7;
-"></div>
-</div>
-
-</div>
-`
-
-}).join("")
-
-el.innerHTML = html
-
-// bind click
-el.querySelectorAll("[data-subject]").forEach(div => {
-div.onclick = () => {
-this.renderStatsPanel(div.dataset.subject)
-}
-})
-
-return
-}
-
-// 🔴 MOSTRAR TÓPICOS DA MATÉRIA
-
-const list = subjectMap[selectedSubject] || []
-
-const html = list.map(({ topic, data }) => {
-
-const hits = data.hits || 0
-const errors = data.errors || 0
-const total = hits + errors
-
-const acc = total ? hits / total : 0
-
-return `
-<div style="margin-bottom:15px;">
-<div>${topic}</div>
-
-<div style="height:100px;display:flex;align-items:flex-end;">
-<div style="
-width:20px;
-height:${acc * 100}%;
-background:#22c55e;
-"></div>
-</div>
-
-<div style="font-size:12px;">
-${(acc * 100).toFixed(0)}%
-</div>
-
-</div>
-`
-
-}).join("")
-
-el.innerHTML = `
-<button id="backStats">← Voltar</button>
-${html}
-`
-
-document.getElementById("backStats").onclick = () => {
-this.renderStatsPanel()
-}
-
-},
-
-showLevelUp(rankName) {
-
-const el = document.createElement("div")
-
-el.style.position = "fixed"
-el.style.top = "50%"
-el.style.left = "50%"
-el.style.transform = "translate(-50%, -50%) scale(0.8)"
-el.style.background = "#111"
-el.style.color = "#fff"
-el.style.padding = "30px 50px"
-el.style.borderRadius = "12px"
-el.style.fontSize = "24px"
-el.style.zIndex = "999"
-el.style.opacity = "0"
-el.style.transition = "all 0.3s ease"
-
-el.innerHTML = `⬆️ PROMOVIDO<br><strong>${rankName}</strong>`
-
-document.body.appendChild(el)
-
-setTimeout(() => {
-el.style.opacity = "1"
-el.style.transform = "translate(-50%, -50%) scale(1)"
-}, 50)
-
-setTimeout(() => {
-el.style.opacity = "0"
-}, 1500)
-
-setTimeout(() => {
-el.remove()
-}, 2000)
-
-},
-
-logSession() {
-
-const list = this.getCurrentQuestions()
-
-console.log("TOTAL:", list.length)
-console.log("ATUAL:", this.data.current)
-
-},
-
-getContextKey() {
-const ctx = QuestionsContext.get()
-return `${ctx.base}_${ctx.focus}_${ctx.level || "medio"}`
-}
-
 };

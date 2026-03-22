@@ -1,370 +1,139 @@
 const AmbientKeyboard = {
 
-init(){
+init() {
 
-document.addEventListener("keydown",(e)=>{
+document.addEventListener("keydown", (event) => {
+this.handleKeydown(event)
+})
 
-if(e.altKey && (e.key==="k" || e.key==="K")){
+},
 
-e.preventDefault()
+handleKeydown(event) {
 
-const sel = document.getElementById("categorySelector")
-
-if(sel){
-sel.classList.toggle("hidden")
-}
-
-}
-
-if(e.key === "?"){
-
-e.preventDefault()
-
-let help = document.getElementById("ambientHelp")
-
-if(help){
-help.remove()
+if (event.key === "?") {
+event.preventDefault()
+AmbientUI.toggleHelp()
 return
 }
 
-help = document.createElement("div")
-help.id="ambientHelp"
-
-help.innerHTML = `
-<div class="ambient-help-box">
-
-<button id="ambientHelpClose">✕</button>
-
-<h3>Keyboard Shortcuts</h3>
-
-<div>ALT + ENTER — favoritar</div>
-<div>ALT + F — favoritos</div>
-<div>ALT + S — embaralhar</div>
-<div>ALT + M — esconder player</div>
-<div>↑ ↓ — navegar lista</div>
-<div>← → — trocar música</div>
-<div>ENTER — tocar</div>
-<div>SPACE — play / pause</div>
-<div>ESC — fechar player</div>
-<div>? — painel de atalhos</div>
-
-</div>
-`
-
-document.body.appendChild(help)
-
-document.getElementById("ambientHelpClose").onclick=()=>{
-help.remove()
-}
-
-}
-
-if(
-e.target.tagName==="INPUT" ||
-e.target.tagName==="TEXTAREA" ||
-e.target.isContentEditable
-){
+if (
+event.target.tagName === "INPUT" ||
+event.target.tagName === "TEXTAREA" ||
+event.target.isContentEditable
+) {
 return
 }
 
-if(e.altKey && (e.key==="t" || e.key==="T")){
+if (event.key === "Escape") {
+if (AmbientUI.closeBlockedTracks()) {
+return
+}
 
-e.preventDefault()
+if (AmbientUI.closeHelp()) {
+return
+}
 
-/* se já estiver no modo teste volta para shuffle */
+AmbientUI.setPanelMode(2)
+return
+}
 
-if(AmbientState.visible.length > 20){
+if (event.altKey && (event.key === "m" || event.key === "M")) {
+event.preventDefault()
+AmbientUI.setPanelMode((AmbientState.panelMode + 1) % 3)
+return
+}
 
+if (event.altKey && (event.key === "f" || event.key === "F")) {
+event.preventDefault()
+
+if (AmbientState.favoritesMode) {
+AmbientYoutube.buildRandomList()
+} else {
+AmbientYoutube.buildFavoritesList()
+}
+
+return
+}
+
+if (event.altKey && (event.key === "s" || event.key === "S")) {
+event.preventDefault()
 AmbientYoutube.buildRandomList()
 return
-
 }
 
-/* ativa modo teste */
-
-const list = []
-
-Object.entries(AmbientState.catalog).forEach(([cat,items])=>{
-items.forEach(v=>{
-v.category = cat
-list.push(v)
-})
-})
-
-AmbientState.visible = list
-AmbientState.cursor = 0
-AmbientState.favoritesMode = false
-
-AmbientUI.renderList()
-AmbientPlayer.playIndex(0)
-
-}
-
-const items = AmbientState.visible || []
-const hasItems = items.length > 0
-
-/* abrir fechar painel */
-
-if(e.altKey && (e.key==="m" || e.key==="M")){
-
-e.preventDefault()
-
-const panel = document.querySelector(".ambient-panel")
-const mini = document.getElementById("ambientMini")
-
-if(!panel || !mini) return
-
-AmbientState.panelMode++
-
-if(AmbientState.panelMode > 2){
-AmbientState.panelMode = 0
-}
-
-if(AmbientState.panelMode === 0){
-panel.style.display="flex"
-mini.style.display="flex"
-AmbientState.ui.panelOpen = true
-}
-
-if(AmbientState.panelMode === 1){
-panel.style.display="none"
-mini.style.display="flex"
-AmbientState.ui.panelOpen = false
-}
-
-if(AmbientState.panelMode === 2){
-panel.style.display="none"
-mini.style.display="none"
-AmbientState.ui.panelOpen = false
-}
-
-}
-
-/* navegar */
-
-if(e.key==="ArrowDown" && AmbientState.visible.length){
-
-e.preventDefault()
-
-AmbientState.cursor++
-
-if(AmbientState.cursor>=items.length)
-AmbientState.cursor=0
-
-AmbientUI.renderList()
-
-}
-
-if(e.key==="ArrowUp" && AmbientState.visible.length){
-
-e.preventDefault()
-
-AmbientState.cursor--
-
-if(AmbientState.cursor<0)
-AmbientState.cursor=items.length-1
-
-AmbientUI.renderList()
-
-}
-
-/* tocar */
-
-if(e.key==="Enter" && AmbientState.visible.length){
-
-e.preventDefault()
-
-AmbientPlayer.playIndex(AmbientState.cursor)
-
-}
-
-/* play pause */
-
-if(e.code==="Space" && !e.altKey && AmbientState.player){
-
-e.preventDefault()
-
-AmbientPlayer.toggle()
-
-}
-
-if(e.key==="Escape"){
-
-const help = document.getElementById("ambientHelp")
-
-if(help){
-help.remove()
+if (event.altKey && (event.key === "t" || event.key === "T")) {
+event.preventDefault()
+AmbientUI.toggleBlockedTracks()
 return
 }
 
-const panel = document.querySelector(".ambient-panel")
-const mini = document.getElementById("ambientMini")
-
-if(panel) panel.style.display="none"
-if(mini) mini.style.display="none"
-
-AmbientState.panelMode = 2
-
+if (event.altKey && (event.key === "k" || event.key === "K")) {
+event.preventDefault()
+AmbientUI.toggleCategorySelector()
+AmbientUI.setPanelMode(0)
+return
 }
 
-/* next */
-
-if(e.key==="ArrowRight" && AmbientState.visible.length){
-
-e.preventDefault()
-
-AmbientPlayer.next()
-
-}
-
-/* prev */
-
-if(e.key==="ArrowLeft" && AmbientState.visible.length){
-
-e.preventDefault()
-
-AmbientPlayer.prev()
-
-}
-
-/* favoritos */
-
-document.addEventListener("keydown",(e)=>{
-
-if(e.altKey && e.key === "Enter"){
-
-e.preventDefault()
+if (event.altKey && event.key === "Enter") {
+event.preventDefault()
 
 const item = AmbientState.visible[AmbientState.cursor]
+if (!item) return
 
-if(!item) return
-
-const id = item.id
-
-const idx = AmbientState.favorites.indexOf(id)
-
-if(idx === -1){
-AmbientState.favorites.push(id)
-}else{
-AmbientState.favorites.splice(idx,1)
-}
-
-localStorage.setItem(
-"ambient_favorites",
-JSON.stringify(AmbientState.favorites)
-)
-
-AmbientUI.renderList()
-
-}
-
-})
-
-/* lista favoritos */
-
-if(e.altKey && (e.key==="f" || e.key==="F")){
-
-e.preventDefault()
-
-if(AmbientState.favoritesMode){
-
-AmbientState.favoritesMode=false
-AmbientYoutube.buildRandomList()
+AmbientUI.toggleFavorite(item.id)
 return
-
 }
 
-if(!AmbientState.favorites.length) return
+if (event.code === "Space" && !event.altKey) {
+if (!AmbientState.player && !AmbientState.visible.length) return
 
-const favList = Object.values(AmbientState.catalog)
-.flat()
-.filter(v=>AmbientState.favorites.includes(v.id))
+event.preventDefault()
+AmbientPlayer.toggle()
+return
+}
 
-AmbientState.visible = favList.slice(0,8)
-AmbientState.cursor = 0
-AmbientState.favoritesMode=true
+if (event.key === "ArrowRight" && AmbientState.visible.length) {
+event.preventDefault()
+AmbientPlayer.next()
+return
+}
+
+if (event.key === "ArrowLeft" && AmbientState.visible.length) {
+event.preventDefault()
+AmbientPlayer.prev()
+return
+}
+
+if (event.key === "ArrowDown" && AmbientState.visible.length) {
+event.preventDefault()
+
+AmbientState.cursor =
+(AmbientState.cursor + 1) % AmbientState.visible.length
 
 AmbientUI.renderList()
-AmbientPlayer.playIndex(0)
-
+return
 }
 
-/* shuffle */
+if (event.key === "ArrowUp" && AmbientState.visible.length) {
+event.preventDefault()
 
-if(e.altKey && (e.key==="s" || e.key==="S")){
+AmbientState.cursor =
+(AmbientState.cursor - 1 + AmbientState.visible.length) %
+AmbientState.visible.length
 
-e.preventDefault()
-
-AmbientYoutube.buildRandomList()
-
+AmbientUI.renderList()
+return
 }
 
-/* discovery */
-
-if(e.altKey && (e.key==="d" || e.key==="D")){
-
-e.preventDefault()
-
-AmbientYoutube.buildRandomList()
-
+if (event.key === "Enter" && AmbientState.visible.length) {
+event.preventDefault()
+AmbientPlayer.playIndex(AmbientState.cursor)
 }
-
-})
 
 }
 
 }
 
-document.addEventListener("DOMContentLoaded",()=>{
+document.addEventListener("DOMContentLoaded", () => {
 AmbientKeyboard.init()
-})
-
-document.addEventListener("click",(e)=>{
-
-if(e.target.id==="ambientHelpBtn"){
-
-let help = document.getElementById("ambientHelp")
-
-if(help){
-help.remove()
-return
-}
-
-help = document.createElement("div")
-help.id="ambientHelp"
-
-help.innerHTML = `
-
-<div class="ambient-help-box">
-
-<button id="ambientHelpClose">✕</button>
-
-<h3>Keyboard Shortcuts</h3>
-
-<div>ALT + ENTER — favoritar</div>
-<div>ALT + F — favoritos</div>
-<div>ALT + S — embaralhar</div>
-<div>ALT + M — esconder player</div>
-<div>↑ ↓ — navegar lista</div>
-<div>← → — trocar música</div>
-<div>ENTER — tocar</div>
-<div>SPACE — play / pause</div>
-<div>ESC — fechar player</div>
-<div>? — painel de atalhos</div>
-
-</div>
-`
-
-document.body.appendChild(help)
-
-const closeBtn=document.getElementById("ambientHelpClose")
-
-if(closeBtn){
-closeBtn.onclick=()=>{
-help.remove()
-}
-}
-
-}
-
 })

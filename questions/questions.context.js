@@ -1,51 +1,94 @@
-const QuestionsContext = {
+window.QuestionsContext = {
+    key: "questions_context_v2",
 
-key: "questions_context_v1",
+    defaults: {
+        track: "enem",
+        base: "ENEM",
+        mission: "topic",
+        focus: "matematica",
+        topics: ["algebra"],
+        sessionSize: 8
+    },
 
-data: {
-mode: "assunto",
-base: "ENEM",
-focus: "matematica",
-subjects: [],
-topics: []
-},
+    data: {},
 
-load() {
-const saved = localStorage.getItem(this.key)
-if (saved) this.data = JSON.parse(saved)
-},
+    load() {
+        const saved =
+            localStorage.getItem(this.key);
 
-save() {
-localStorage.setItem(this.key, JSON.stringify(this.data))
-},
+        if (!saved) {
+            this.data = {
+                ...this.defaults,
+                topics: [...this.defaults.topics]
+            };
+            return;
+        }
 
-setMode(mode) {
-this.data.mode = mode
-this.save()
-},
+        try {
+            const parsed =
+                JSON.parse(saved);
 
-setBase(base) {
-this.data.base = base
-this.save()
-},
+            this.data = {
+                ...this.defaults,
+                ...(parsed || {})
+            };
+        } catch (_error) {
+            this.data = {
+                ...this.defaults,
+                topics: [...this.defaults.topics]
+            };
+        }
 
-setFocus(focus) {
-this.data.focus = focus
-this.save()
-},
+        this.data.topics =
+            Array.isArray(this.data.topics)
+                ? [...this.data.topics]
+                : [...this.defaults.topics];
+    },
 
-setSubjects(list) {
-this.data.subjects = list
-this.save()
-},
+    save() {
+        localStorage.setItem(
+            this.key,
+            JSON.stringify(this.data)
+        );
+    },
 
-setTopics(list) {
-this.data.topics = list
-this.save()
-},
+    set(patch, shouldSave = true) {
+        this.data = {
+            ...this.data,
+            ...(patch || {})
+        };
 
-get() {
-return this.data
-}
+        if (!Array.isArray(this.data.topics)) {
+            this.data.topics = [];
+        }
 
-}
+        if (shouldSave) {
+            this.save();
+        }
+    },
+
+    replace(nextState, shouldSave = true) {
+        this.data = {
+            ...this.defaults,
+            ...(nextState || {})
+        };
+
+        this.data.topics =
+            Array.isArray(this.data.topics)
+                ? [...this.data.topics]
+                : [...this.defaults.topics];
+
+        if (shouldSave) {
+            this.save();
+        }
+    },
+
+    get() {
+        return {
+            ...this.data,
+            topics: Array.isArray(this.data.topics)
+                ? [...this.data.topics]
+                : []
+        };
+    }
+};

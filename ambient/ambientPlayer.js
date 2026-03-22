@@ -1,228 +1,244 @@
 const AmbientPlayer = {
 
-playIndex(i){
+progressInterval: null,
 
-if(!AmbientState.visible[i]) return
+playIndex(i) {
 
 const item = AmbientState.visible[i]
-if(!item || !item.id) return
+if (!item || !item.id) return
 
 AmbientState.currentVideo = item.id
+AmbientState.pendingVideoId = item.id
+AmbientState.cursor = i
+
 localStorage.setItem("ambient_last_video", item.id)
 
-if(!AmbientState.history.includes(item.id)){
+if (!AmbientState.history.includes(item.id)) {
 AmbientState.history.push(item.id)
 }
 
-if(AmbientState.history.length > 20){
+if (AmbientState.history.length > 20) {
 AmbientState.history.shift()
 }
 
-AmbientState.cursor = i
-AmbientState.playing=true
-
 AmbientState.lastTime = 0
-localStorage.setItem("ambient_last_time",0)
+localStorage.setItem("ambient_last_time", 0)
 
 this.loadVideo(item.id)
-
 AmbientUI.renderList()
+AmbientUI.updateShell()
 
 },
 
-loadVideo(id){
+loadVideo(id) {
 
-if(!window.YT || !YT.Player){
+AmbientState.pendingVideoId = id
+
+if (!window.YT || !YT.Player) {
+AmbientUI.updateShell()
 return
 }
 
-if(!window.YT || !YT.Player) return
+if (!AmbientState.player) {
 
-if(!AmbientState.player){
+AmbientState.player = new YT.Player("youtubePlayer", {
+height: "0",
+width: "0",
+videoId: id,
 
-AmbientState.player = new YT.Player("youtubePlayer",{
-
-height:"0",
-width:"0",
-videoId:id,
-
-playerVars:{
-autoplay:1,
-controls:0,
-rel:0
+playerVars: {
+autoplay: 1,
+controls: 0,
+rel: 0
 },
 
-events:{
+events: {
 
-onReady:(e)=>{
+onReady: (event) => {
 
-e.target.setVolume(AmbientState.volume*100)
-e.target.playVideo()
+event.target.setVolume(AmbientState.volume * 100)
+event.target.playVideo()
 
-if(AmbientState.lastTime){
-e.target.seekTo(AmbientState.lastTime,true)
+if (AmbientState.lastTime) {
+event.target.seekTo(AmbientState.lastTime, true)
 }
-
-AmbientState.playing=true
-document.getElementById("ambientPlay").textContent="⏸"
-
-AmbientPlayer.startProgress()
 
 },
 
-onStateChange:(e)=>{
+onStateChange: (event) => {
 
-if(e.data===YT.PlayerState.ENDED){
+if (event.data === YT.PlayerState.ENDED) {
+this.next()
+return
+}
 
-AmbientPlayer.next()
-AmbientUI.renderList()
+if (event.data === YT.PlayerState.PLAYING) {
+this.setPlayingState(true)
+this.startProgress()
+return
+}
+
+if (
+event.data === YT.PlayerState.UNSTARTED ||
+event.data === YT.PlayerState.PAUSED ||
+event.data === YT.PlayerState.CUED
+) {
+this.setPlayingState(false)
+}
+
+},
+
+onError: (event) => {
+
+this.setPlayingState(false)
+this.stopProgress()
+AmbientYoutube.handlePlaybackError(
+AmbientState.currentVideo || AmbientState.pendingVideoId,
+event.data
+)
 
 }
 
-if(e.data===YT.PlayerState.PLAYING){
-
-AmbientPlayer.startProgress()
-
 }
-
-}
-
-}
-
 })
 
 return
 
 }
 
+this.setPlayingState(false)
 AmbientState.player.loadVideoById({
-videoId:id,
-startSeconds:AmbientState.lastTime || 0
+videoId: id,
+startSeconds: AmbientState.lastTime || 0
 })
 
 AmbientState.player.playVideo()
 
-AmbientState.playing=true
-document.getElementById("ambientPlay").textContent="⏸"
+},
 
-AmbientPlayer.startProgress()
+toggle() {
+
+if (!AmbientState.player) {
+if (AmbientState.visible.length) {
+this.playIndex(AmbientState.cursor || 0)
+}
+return
+}
+
+if (AmbientState.playing) {
+AmbientState.player.pauseVideo()
+this.setPlayingState(false)
+return
+}
+
+AmbientState.player.playVideo()
+this.setPlayingState(true)
+this.startProgress()
 
 },
 
-toggle(){
+next() {
 
-if(!AmbientState.player) return
-if(!AmbientState.visible.length) return
+let index = AmbientState.cursor + 1
 
-if(AmbientState.playing){
+if (index >= AmbientState.visible.length) {
+AmbientYoutube.buildRandomList()
+return
+}
 
-AmbientState.player.pauseVideo()
-AmbientState.playing=false
-document.getElementById("ambientPlay").textContent="▶"
+this.playIndex(index)
 
-if(this.progressInterval){
+},
+
+prev() {
+
+let index = AmbientState.cursor - 1
+
+if (index < 0) {
+index = AmbientState.visible.length - 1
+}
+
+if (index < 0) return
+
+this.playIndex(index)
+
+},
+
+setPlayingState(playing) {
+
+AmbientState.playing = playing
+AmbientUI.updateShell()
+
+if (!playing) {
+this.stopProgress()
+}
+
+},
+
+startProgress() {
+
+this.stopProgress()
+
+this.progressInterval = setInterval(() => {
+
+if (!AmbientState.player || !AmbientState.playing) return
+
+const current = AmbientState.player.getCurrentTime()
+const duration = AmbientState.player.getDuration()
+
+AmbientState.lastTime = current
+localStorage.setItem("ambient_last_time", current)
+
+if (!duration || duration === Infinity) return
+
+const seek = document.getElementById("ambientSeek")
+const currentLabel = document.getElementById("ambientTimeCurrent")
+const durationLabel = document.getElementById("ambientTimeTotal")
+
+if (seek) {
+seek.value = (current / duration) * 100
+}
+
+if (currentLabel) {
+currentLabel.textContent = this.formatTime(current)
+}
+
+if (durationLabel) {
+durationLabel.textContent = this.formatTime(duration)
+}
+
+}, 500)
+
+},
+
+stopProgress() {
+
+if (this.progressInterval) {
 clearInterval(this.progressInterval)
 this.progressInterval = null
 }
 
-}else{
-
-AmbientState.player.playVideo()
-AmbientState.playing=true
-document.getElementById("ambientPlay").textContent="⏸"
-
-this.startProgress()
-
-}
-
 },
 
-next(){
+formatTime(seconds) {
 
-let i = AmbientState.cursor+1
+const total = Math.floor(seconds)
+const hours = Math.floor(total / 3600)
+const minutes = Math.floor((total % 3600) / 60)
+const secs = total % 60
 
-if(i>=AmbientState.visible.length){
-
-AmbientState.history.push(AmbientState.currentVideo)
-
-AmbientYoutube.buildRandomList()
-return
-
+if (hours > 0) {
+return `${hours}:${String(minutes).padStart(2, "0")}:${String(secs).padStart(2, "0")}`
 }
-if(!AmbientState.visible[i]) return
-this.playIndex(i)
-AmbientUI.renderList()
 
-},
-
-prev(){
-
-let i = AmbientState.cursor-1
-
-if(i<0){
-
-i=AmbientState.visible.length-1
-
-if(i<0) return
+return `${minutes}:${String(secs).padStart(2, "0")}`
 
 }
 
-this.playIndex(i)
-AmbientUI.renderList()
-
-},
-
-startProgress(){
-
-if(this.progressInterval){
-clearInterval(this.progressInterval)
 }
 
-this.progressInterval=setInterval(()=>{
-
-if(!AmbientState.player || !AmbientState.playing) return
-
-const cur=AmbientState.player.getCurrentTime()
-const dur=AmbientState.player.getDuration()
-
-localStorage.setItem("ambient_last_time", cur)
-
-if(!dur || dur === Infinity) return
-
-const seek=document.getElementById("ambientSeek")
-const curTxt=document.getElementById("ambientTimeCurrent")
-const durTxt=document.getElementById("ambientTimeTotal")
-
-if(seek){
-seek.value=(cur/dur)*100
+window.onYouTubeIframeAPIReady = () => {
+if (AmbientState.pendingVideoId) {
+AmbientPlayer.loadVideo(AmbientState.pendingVideoId)
 }
-
-if(curTxt){
-curTxt.textContent=this.formatTime(cur)
-}
-
-if(durTxt){
-durTxt.textContent=this.formatTime(dur)
-}
-
-},500)
-
-},
-
-formatTime(sec){
-
-sec = Math.floor(sec)
-
-const h = Math.floor(sec / 3600)
-const m = Math.floor((sec % 3600) / 60)
-const s = sec % 60
-
-if(h > 0){
-return h + ":" + (m<10?"0"+m:m) + ":" + (s<10?"0"+s:s)
-}
-
-return m + ":" + (s<10?"0"+s:s)
-
-},
-
 }

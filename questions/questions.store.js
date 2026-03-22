@@ -1,48 +1,179 @@
-const QuestionsStore = {
+window.QuestionsStore = {
+    key: "questions_profile_v2",
 
-key: "questions_profile_v1",
+    data: {
+        topics: {}
+    },
 
-data: {
-},
+    load() {
+        const saved =
+            localStorage.getItem(this.key);
 
-load() {
+        if (!saved) {
+            this.data = { topics: {} };
+            return;
+        }
 
-const saved = localStorage.getItem(this.key)
+        try {
+            const parsed =
+                JSON.parse(saved);
 
-if (saved) {
-this.data = JSON.parse(saved)
-}
+            this.data = {
+                topics: {},
+                ...(parsed || {})
+            };
+        } catch (_error) {
+            this.data = { topics: {} };
+        }
 
-},
+        if (
+            !this.data.topics ||
+            typeof this.data.topics !== "object"
+        ) {
+            this.data.topics = {};
+        }
+    },
 
-save() {
-localStorage.setItem(this.key, JSON.stringify(this.data))
-},
+    save() {
+        localStorage.setItem(
+            this.key,
+            JSON.stringify(this.data)
+        );
+    },
 
-registerAnswer(contextKey, topic, correct, time) {
+    getTopicStorageKey(meta) {
+        return [
+            meta.baseKey,
+            meta.subjectKey,
+            meta.topicKey
+        ].join("::");
+    },
 
-if (!this.data[contextKey]) {
-this.data[contextKey] = {}
-}
+    registerAnswer(meta, correct, timeMs) {
+        const key =
+            this.getTopicStorageKey(meta);
+        const current =
+            this.data.topics[key] || {
+                baseKey: meta.baseKey,
+                baseLabel: meta.baseLabel,
+                subjectKey: meta.subjectKey,
+                subjectLabel: meta.subjectLabel,
+                topicKey: meta.topicKey,
+                topicLabel: meta.topicLabel,
+                hits: 0,
+                errors: 0,
+                attempts: 0,
+                avgTime: 0,
+                lastSeen: 0
+            };
 
-const ctx = this.data[contextKey]
+        current.attempts += 1;
 
-if (!ctx[topic]) {
-ctx[topic] = { hits: 0, errors: 0, avgTime: 0 }
-}
+        if (correct) {
+            current.hits += 1;
+        } else {
+            current.errors += 1;
+        }
 
-const t = ctx[topic]
+        current.avgTime =
+            current.avgTime > 0
+                ? (
+                    (
+                        current.avgTime *
+                        (current.attempts - 1)
+                    ) +
+                    timeMs
+                ) / current.attempts
+                : timeMs;
 
-if (correct) t.hits++
-else t.errors++
+        current.lastSeen = Date.now();
+        this.data.topics[key] = current;
+        this.save();
+    },
 
-t.avgTime = (t.avgTime + time) / 2
+    getTopicEntries(filters = {}) {
+        return Object.values(
+            this.data.topics || {}
+        ).filter((entry) => {
+            if (
+                filters.baseKey &&
+                entry.baseKey !== filters.baseKey
+            ) {
+                return false;
+            }
 
-this.save()
-},
+            if (
+                filters.subjectKey &&
+                entry.subjectKey !==
+                    filters.subjectKey
+            ) {
+                return false;
+            }
 
-getProfile(contextKey) {
-return this.data[contextKey] || {}
-}
+            return true;
+        });
+    },
 
-}
+    getWeakTopics(filters = {}) {
+        return this.getTopicEntries(filters)
+            .map((entry) => ({
+                ...entry,
+                accuracy:
+                    entry.attempts > 0
+                        ? entry.hits /
+                          entry.attempts
+                        : 0
+            }))
+            .sort((left, right) =>
+                right.errors - left.errors ||
+                left.accuracy - right.accuracy ||
+                right.attempts - left.attempts
+            );
+    },
+
+    getDashboard(filters = {}) {
+        const entries =
+            this.getTopicEntries(filters);
+        const totals =
+            entries.reduce(
+                (acc, entry) => {
+                    acc.attempts +=
+                        entry.attempts || 0;
+                    acc.hits +=
+                        entry.hits || 0;
+                    acc.errors +=
+                        entry.errors || 0;
+                    acc.totalTime +=
+                        (entry.avgTime || 0) *
+                        (entry.attempts || 0);
+                    return acc;
+                },
+                {
+                    attempts: 0,
+                    hits: 0,
+                    errors: 0,
+                    totalTime: 0
+                }
+            );
+
+        return {
+            entries,
+            attempts: totals.attempts,
+            hits: totals.hits,
+            errors: totals.errors,
+            accuracy:
+                totals.attempts > 0
+                    ? totals.hits /
+                      totals.attempts
+                    : 0,
+            avgTimeMs:
+                totals.attempts > 0
+                    ? totals.totalTime /
+                      totals.attempts
+                    : 0,
+            weakTopics:
+                this.getWeakTopics(filters)
+                    .slice(0, 5)
+        };
+    }
+};
