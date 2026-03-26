@@ -9,6 +9,8 @@ window.QuestionsContext = {
         topicos: [],
         focoPrincipal: null,
         pesos: {},
+        topicSearch: "",
+        onlyReadyTopics: true,
         quantidadeQuestoes: 5,
         estrategiaMistura: "equilibrada",
         syncSource: "",
@@ -52,6 +54,12 @@ window.QuestionsContext = {
             Array.isArray(next.topicos)
                 ? [...next.topicos]
                 : [];
+        next.topicSearch =
+            String(
+                next.topicSearch || ""
+            ).trim();
+        next.onlyReadyTopics =
+            next.onlyReadyTopics !== false;
 
         next.pesos =
             next.pesos &&

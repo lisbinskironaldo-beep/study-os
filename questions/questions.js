@@ -5,6 +5,21 @@ window.QuestionsPage = {
         document.currentScript?.src || "",
 
     data: {
+        bases: {
+            ESCOLAR: {
+                key: "ESCOLAR",
+                label: "Escolar",
+                note: "Treino curricular por serie, materia e assunto.",
+                available: true
+            },
+            ENEM: {
+                key: "ENEM",
+                label: "ENEM",
+                note: "Fluxo separado de simulado e treino ENEM. Em preparacao.",
+                available: false
+            }
+        },
+
         modes: {
             ASSUNTO_UNICO: {
                 key: "ASSUNTO_UNICO",
@@ -406,12 +421,24 @@ window.QuestionsPage = {
         QuestionsContext.replace({
             ...snapshot,
             mode,
-            base: "ESCOLAR",
+            base:
+                this.data.bases[
+                    snapshot.base
+                ]?.available
+                    ? snapshot.base
+                    : "ESCOLAR",
             serie,
             materia,
             topicos: selectedTopics,
             focoPrincipal,
             pesos,
+            topicSearch:
+                String(
+                    snapshot.topicSearch || ""
+                ).trim(),
+            onlyReadyTopics:
+                snapshot.onlyReadyTopics !==
+                false,
             quantidadeQuestoes,
             estrategiaMistura
         });
@@ -499,6 +526,26 @@ window.QuestionsPage = {
         this.dispatchSyncEvent(
             "questions:route-updated"
         );
+    },
+
+    setBase(baseKey) {
+        const base =
+            this.data.bases?.[baseKey];
+
+        if (!base) {
+            return;
+        }
+
+        if (!base.available) {
+            this.runtimeNotice =
+                "A base ENEM vai ficar em um fluxo separado. O botao ja esta preparado, mas a entrega entra em outra etapa.";
+            this.render();
+            return;
+        }
+
+        this.updateContext({
+            base: base.key
+        });
     },
 
     toggleTopic(topicKey) {
@@ -633,6 +680,14 @@ window.QuestionsPage = {
                 );
 
             QuestionsStore.registerSession({
+                baseKey:
+                    QuestionsContext.get()
+                        .base,
+                baseLabel:
+                    QuestionsContext.get()
+                        .base === "ENEM"
+                            ? "ENEM"
+                            : "Escolar",
                 mode:
                     QuestionsState.getMeta()
                         .modeLabel || "",

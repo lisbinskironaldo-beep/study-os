@@ -142,10 +142,12 @@ STATS registra o comportamento
   id: string,
 
   // organizacao
+  base: "ESCOLAR" | "ENEM",
   serie: 1 | 2 | 3,
   materia: string,
   unidade: string,
   topico: string,
+  subtopico?: string,
 
   // controle pedagogico
   dificuldade: 1 | 2 | 3,
@@ -163,9 +165,13 @@ STATS registra o comportamento
   // metadados
   tempoEsperado: number,
   tags: string[],
+  habilidades?: string[],
+  collections?: string[],
+  status?: "rascunho" | "revisada",
 
   // ENEM ready
-  sourceType?: "original" | "enem",
+  sourceType?: "original" | "enem_oficial" | "enem_autoral",
+  sourceExam?: "enem",
   sourceYear?: number,
   competencies?: string[]
 }

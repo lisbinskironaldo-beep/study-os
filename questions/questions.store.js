@@ -170,6 +170,14 @@ window.QuestionsStore = {
         return (this.data.sessions || [])
             .filter((entry) => {
                 if (
+                    filters.baseKey &&
+                    entry.baseKey !==
+                        filters.baseKey
+                ) {
+                    return false;
+                }
+
+                if (
                     filters.subjectKey &&
                     entry.subjectKey !==
                         filters.subjectKey

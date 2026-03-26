@@ -6,7 +6,14 @@
 
   metadados: {
     disciplinaId: "matematica",
+    base: "ESCOLAR",
     eixo: "Numeros",
+    frente: "Representacao numerica",
+    searchAliases: [
+      "potencias de dez",
+      "forma padrao",
+      "escrita cientifica"
+    ],
     subtopicosBase: [
       "Conceito",
       "Conversao para notacao cientifica",
@@ -15,6 +22,12 @@
       "Operacoes",
       "Ordem de grandeza",
       "Expoentes"
+    ],
+    habilidadesBase: [
+      "identificar notacao cientifica valida",
+      "converter numero decimal em notacao cientifica",
+      "converter notacao cientifica em forma decimal",
+      "comparar ordens de grandeza"
     ]
   },
 
@@ -34,7 +47,14 @@
       correta: "4,5 × 10³",
       comentario: "O número antes da potência deve ser maior ou igual a 1 e menor que 10.",
       tempoEstimado: 20,
-      tags: ["conceito", "forma-correta"]
+      tags: ["conceito", "forma-correta"],
+      habilidades: ["identificar-forma-valida"],
+      collections: ["questions"],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: null,
+      competencies: [],
+      status: "revisada"
     },
     {
       id: "nc_002",
@@ -51,7 +71,14 @@
       correta: "3 × 10³",
       comentario: "Move a vírgula 3 casas para a esquerda.",
       tempoEstimado: 20,
-      tags: ["conversao"]
+      tags: ["conversao"],
+      habilidades: ["converter-para-notacao-cientifica"],
+      collections: ["questions"],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: null,
+      competencies: [],
+      status: "revisada"
     },
     {
       id: "nc_003",
@@ -68,7 +95,14 @@
       correta: "200",
       comentario: "Expoente positivo desloca a vírgula para a direita.",
       tempoEstimado: 20,
-      tags: ["decimal"]
+      tags: ["decimal"],
+      habilidades: ["converter-para-forma-decimal"],
+      collections: ["questions"],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: null,
+      competencies: [],
+      status: "revisada"
     },
     {
       id: "nc_004",

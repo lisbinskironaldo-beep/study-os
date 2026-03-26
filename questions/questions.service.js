@@ -47,6 +47,12 @@ window.QuestionsService = {
         );
     },
 
+    getBaseOptions(page) {
+        return Object.values(
+            page.data.bases || {}
+        );
+    },
+
     getAllowedMixStrategyKeys(modeKey) {
         if (modeKey === "ASSUNTO_UNICO") {
             return ["equilibrada"];
@@ -209,6 +215,50 @@ window.QuestionsService = {
                         ).trim()
                     ).length
                     : 0;
+            const topicQuestions =
+                Array.isArray(topic.questoes)
+                    ? topic.questoes
+                    : [];
+            const metadados =
+                topic?.metadados || {};
+            const subtopics =
+                [
+                    ...(Array.isArray(
+                        metadados.subtopicosBase
+                    )
+                        ? metadados.subtopicosBase
+                        : []),
+                    ...topicQuestions.map(
+                        (question) =>
+                            question?.subtopico || ""
+                    )
+                ].filter(Boolean);
+            const uniqueSubtopics =
+                [...new Set(subtopics)];
+            const aliases =
+                Array.isArray(
+                    metadados.searchAliases
+                )
+                    ? metadados.searchAliases
+                    : [];
+            const eixo =
+                String(
+                    metadados.eixo || ""
+                ).trim();
+            const frente =
+                String(
+                    metadados.frente || ""
+                ).trim();
+            const searchIndex = this.normalizeText(
+                [
+                    topic.topico,
+                    topic.materia,
+                    eixo,
+                    frente,
+                    ...uniqueSubtopics,
+                    ...aliases
+                ].join(" ")
+            );
 
             return {
                 key:
@@ -217,9 +267,74 @@ window.QuestionsService = {
                 label: topic.topico,
                 count: questionCount,
                 hasQuestions:
-                    questionCount > 0
+                    questionCount > 0,
+                subtopicCount:
+                    uniqueSubtopics.length,
+                subtopicsPreview:
+                    uniqueSubtopics.slice(0, 3),
+                eixo,
+                frente,
+                searchIndex
             };
         });
+    },
+
+    filterTopicOptions(
+        topicOptions = [],
+        filters = {}
+    ) {
+        const search =
+            this.normalizeText(
+                filters.search || ""
+            );
+        const readyOnly =
+            filters.readyOnly === true;
+
+        return (topicOptions || []).filter(
+            (topic) => {
+                if (
+                    readyOnly &&
+                    !topic.hasQuestions
+                ) {
+                    return false;
+                }
+
+                if (!search) {
+                    return true;
+                }
+
+                return String(
+                    topic.searchIndex || ""
+                ).includes(search);
+            }
+        );
+    },
+
+    getTopicCoverage(topicOptions = []) {
+        const topics =
+            Array.isArray(topicOptions)
+                ? topicOptions
+                : [];
+        const readyTopics =
+            topics.filter(
+                (topic) => topic.hasQuestions
+            );
+        const totalQuestions =
+            readyTopics.reduce(
+                (acc, topic) =>
+                    acc + (topic.count || 0),
+                0
+            );
+
+        return {
+            totalTopics: topics.length,
+            readyTopics:
+                readyTopics.length,
+            emptyTopics:
+                topics.length -
+                readyTopics.length,
+            totalQuestions
+        };
     },
 
     getSelectedTopicOptions(page) {
@@ -258,11 +373,26 @@ window.QuestionsService = {
         const type =
             question.tipo ||
             "multipla_escolha";
+        const metadados =
+            topicRecord?.metadados || {};
+        const baseKey =
+            String(
+                question.base ||
+                    metadados.base ||
+                    "ESCOLAR"
+            ).toUpperCase();
+        const subtopicLabel =
+            question.subtopico || "";
 
         return {
             id:
                 question.id ||
                 `${topicKey}_${index + 1}`,
+            baseKey,
+            baseLabel:
+                baseKey === "ENEM"
+                    ? "ENEM"
+                    : "Escolar",
             serie:
                 Array.isArray(question.serie) &&
                 question.serie.length
@@ -272,8 +402,17 @@ window.QuestionsService = {
             subjectLabel: topicRecord.materia,
             topicKey,
             topicLabel: topicRecord.topico,
-            subtopicLabel:
-                question.subtopico || "",
+            subtopicKey:
+                this.slugify(subtopicLabel),
+            subtopicLabel,
+            axisLabel:
+                String(
+                    metadados.eixo || ""
+                ).trim(),
+            frontLabel:
+                String(
+                    metadados.frente || ""
+                ).trim(),
             type,
             prompt:
                 question.enunciado || "",
@@ -303,9 +442,36 @@ window.QuestionsService = {
             tags: Array.isArray(question.tags)
                 ? [...question.tags]
                 : [],
+            abilities:
+                Array.isArray(
+                    question.habilidades
+                )
+                    ? [...question.habilidades]
+                    : [],
+            collections:
+                Array.isArray(
+                    question.collections
+                )
+                    ? [...question.collections]
+                    : ["questions"],
             sourceType:
                 question.sourceType ||
-                "original"
+                "original",
+            sourceYear:
+                Number(
+                    question.sourceYear
+                ) || null,
+            sourceExam:
+                question.sourceExam || "",
+            competencies:
+                Array.isArray(
+                    question.competencies
+                )
+                    ? [...question.competencies]
+                    : [],
+            status:
+                question.status ||
+                "rascunho"
         };
     },
 
@@ -374,6 +540,7 @@ window.QuestionsService = {
     getTopicPerformanceMap(ctx) {
         return new Map(
             QuestionsStore.getTopicEntries({
+                baseKey: ctx.base,
                 subjectKey: ctx.materia
             }).map((entry) => [
                 entry.topicKey,
@@ -1304,8 +1471,10 @@ window.QuestionsService = {
 
         QuestionsStore.registerAnswer(
             {
-                baseKey: "ESCOLAR",
-                baseLabel: "Escolar",
+                baseKey:
+                    question.baseKey,
+                baseLabel:
+                    question.baseLabel,
                 subjectKey:
                     question.subjectKey,
                 subjectLabel:
@@ -1371,6 +1540,10 @@ window.QuestionsService = {
 
         return {
             modeLabel: mode?.label || "",
+            baseLabel:
+                ctx.base === "ENEM"
+                    ? "ENEM"
+                    : "Escolar",
             serieLabel: `${ctx.serie}a serie`,
             materiaLabel:
                 subject?.label || "",
@@ -1589,6 +1762,7 @@ window.QuestionsService = {
             this.getRouteSummary(page);
         const dashboard =
             QuestionsStore.getDashboard({
+                baseKey: ctx.base,
                 subjectKey: ctx.materia
             });
         const sessionMeta =
@@ -1640,6 +1814,7 @@ window.QuestionsService = {
             QuestionsContext.get();
         const weak =
             QuestionsStore.getWeakTopics({
+                baseKey: ctx.base,
                 subjectKey: ctx.materia
             })[0];
 

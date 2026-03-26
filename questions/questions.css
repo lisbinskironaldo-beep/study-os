@@ -121,6 +121,13 @@ gap: 10px;
 flex-wrap: wrap;
 }
 
+.questions-filter-bar {
+display: grid;
+grid-template-columns: minmax(0, 1fr) auto;
+gap: 12px;
+align-items: center;
+}
+
 .questions-link-btn {
 border: none;
 background: transparent;
@@ -179,6 +186,13 @@ background: #eef4ff;
 text-align: left;
 display: grid;
 gap: 6px;
+}
+
+.questions-chip.is-disabled {
+cursor: not-allowed;
+opacity: 0.72;
+background: #f8fafc;
+box-shadow: none;
 }
 
 .questions-chip strong,
@@ -241,6 +255,29 @@ gap: 8px;
 border: 1px solid rgba(37, 99, 235, 0.08);
 }
 
+.questions-topic-notes {
+display: flex;
+gap: 8px;
+flex-wrap: wrap;
+}
+
+.questions-topic-notes span,
+.questions-topic-preview,
+.questions-inline-note {
+font-size: 12px;
+color: rgba(15, 23, 42, 0.64);
+}
+
+.questions-topic-notes span {
+padding: 4px 8px;
+border-radius: 999px;
+background: rgba(37, 99, 235, 0.08);
+}
+
+.questions-topic-preview {
+line-height: 1.45;
+}
+
 .questions-topic-card.is-empty {
 background: rgba(241, 245, 249, 0.9);
 border-color: rgba(148, 163, 184, 0.2);
@@ -300,6 +337,24 @@ background: rgba(15, 23, 42, 0.06);
 color: #0f172a;
 }
 
+.questions-search-field {
+width: 100%;
+min-width: 0;
+padding: 12px 16px;
+border-radius: 16px;
+border: 1px solid rgba(148, 163, 184, 0.28);
+background: rgba(255, 255, 255, 0.94);
+font: inherit;
+color: #0f172a;
+}
+
+.questions-inline-note {
+padding: 12px 14px;
+border-radius: 16px;
+background: rgba(37, 99, 235, 0.06);
+border: 1px solid rgba(37, 99, 235, 0.12);
+}
+
 .questions-chip:hover,
 .questions-pill:hover,
 .questions-topic-card:hover,
@@ -319,6 +374,11 @@ box-shadow: 0 12px 24px rgba(15, 23, 42, 0.08);
 
 .questions-primary-btn:hover {
 box-shadow: 0 18px 34px rgba(37, 99, 235, 0.32);
+}
+
+.questions-chip.is-disabled:hover {
+transform: none;
+box-shadow: none;
 }
 
 .questions-chip:focus-visible,
@@ -803,6 +863,10 @@ min-width: 0;
 .questions-panel-head {
 flex-direction: column;
 align-items: stretch;
+}
+
+.questions-filter-bar {
+grid-template-columns: 1fr;
 }
 
 .questions-question-card {

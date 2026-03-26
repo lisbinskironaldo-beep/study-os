@@ -60,7 +60,10 @@ export const numerosReais = {
 
   metadados: {
     disciplinaId: "matematica",
+    base: "ESCOLAR",
     eixo: "Numeros",
+    frente: "Representacao numerica",
+    searchAliases: [],
     subtopicosBase: [
       "Conjuntos numericos",
       "Reta numerica",
@@ -69,7 +72,8 @@ export const numerosReais = {
       "Comparacao",
       "Operacoes",
       "Dizimas"
-    ]
+    ],
+    habilidadesBase: []
   },
 
   questoes: []
@@ -91,6 +95,7 @@ Cada questao deve seguir exatamente este padrao:
 ```ts
 {
   id: "",
+  base: "ESCOLAR",
   serie: [1],
   materia: "Matematica",
   topico: "Numeros Reais",
@@ -104,7 +109,16 @@ Cada questao deve seguir exatamente este padrao:
   correta: null,
   comentario: "",
   tempoEstimado: 25,
-  tags: []
+  tags: [],
+
+  // filtros e ingestao futura
+  habilidades: [],
+  collections: ["questions"],
+  sourceType: "original",
+  sourceExam: "",
+  sourceYear: null,
+  competencies: [],
+  status: "rascunho"
 }
 ```
 
@@ -114,6 +128,10 @@ Campos criticos:
 - `dificuldadeNivel`: `1` a `10`
 - `cognicao`: `calculo`, `interpretacao`, `estrategia`
 - `tipo`: `multipla_escolha`, `input`, `ordenacao`, `comparacao`, `vf`
+- `collections`: por enquanto usar `["questions"]`
+- `sourceType`: `original`, `enem_oficial`, `enem_autoral`
+- `status`: `rascunho` ou `revisada`
+- `habilidades` e `competencies` podem ficar vazios no banco escolar inicial, mas o campo deve existir no envio novo
 
 ---
 

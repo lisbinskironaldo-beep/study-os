@@ -109,6 +109,10 @@ window.QuestionsUI = {
 
         const ctx =
             QuestionsContext.get();
+        const baseOptions =
+            QuestionsService.getBaseOptions(
+                page
+            );
         const modes =
             QuestionsService.getModeOptions(
                 page
@@ -130,9 +134,22 @@ window.QuestionsUI = {
                     materia: ctx.materia
                 }
             );
+        const filteredTopics =
+            QuestionsService.filterTopicOptions(
+                topics,
+                {
+                    search: ctx.topicSearch,
+                    readyOnly:
+                        ctx.onlyReadyTopics
+                }
+            );
         const selectedTopics =
             QuestionsService.getSelectedTopicOptions(
                 page
+            );
+        const coverage =
+            QuestionsService.getTopicCoverage(
+                topics
             );
         const suggestion =
             QuestionsService.getSmartSuggestion(
@@ -193,6 +210,10 @@ window.QuestionsUI = {
                         <div class="questions-panel-label">Resumo da rota</div>
                         <div class="questions-route-grid">
                             <article class="questions-route-stat">
+                                <strong>${route.baseLabel || "Escolar"}</strong>
+                                <span>Base</span>
+                            </article>
+                            <article class="questions-route-stat">
                                 <strong>${route.serieLabel}</strong>
                                 <span>Serie ativa</span>
                             </article>
@@ -244,6 +265,23 @@ window.QuestionsUI = {
 
                 <div class="questions-grid">
                     <article class="questions-panel">
+                        <div class="questions-panel-head">
+                            <div>
+                                <div class="questions-panel-label">Base de treino</div>
+                                <div class="questions-panel-meta">Escolar ativa agora. ENEM fica em fluxo separado e ja esta preparado.</div>
+                            </div>
+                        </div>
+                        <div class="questions-chip-grid">
+                            ${baseOptions.map((base) => `
+                                <button class="questions-chip${ctx.base === base.key ? " is-active" : ""}${base.available ? "" : " is-disabled"}" type="button" data-base="${base.key}" ${base.available ? "" : "disabled"}>
+                                    <strong>${base.label}</strong>
+                                    <span>${base.note}</span>
+                                </button>
+                            `).join("")}
+                        </div>
+                    </article>
+
+                    <article class="questions-panel">
                         <div class="questions-panel-label">Modo de treino</div>
                         <div class="questions-chip-grid">
                             ${modes.map((mode) => `
@@ -282,7 +320,7 @@ window.QuestionsUI = {
                         <div class="questions-panel-head">
                             <div>
                                 <div class="questions-panel-label">Assuntos</div>
-                                <div class="questions-panel-meta">${selectedTopics.length} selecionado(s)</div>
+                                <div class="questions-panel-meta">${filteredTopics.length}/${topics.length} visiveis | ${coverage.readyTopics} prontos | ${coverage.totalQuestions} questoes</div>
                             </div>
                             ${ctx.mode !== "ASSUNTO_UNICO" ? `
                                 <div class="questions-inline-actions">
@@ -293,10 +331,36 @@ window.QuestionsUI = {
                         </div>
 
                         ${topics.length ? `
+                            <div class="questions-filter-bar">
+                                <input id="questionsTopicSearchInput" class="questions-search-field" type="search" value="${String(ctx.topicSearch || "").replace(/"/g, "&quot;")}" placeholder="Buscar por assunto, subtopico ou eixo">
+                                <button id="questionsReadyTopicsBtn" class="questions-secondary-btn" type="button">
+                                    ${ctx.onlyReadyTopics ? "So prontos" : "Mostrar vazios"}
+                                </button>
+                            </div>
+
+                            ${ctx.onlyReadyTopics && coverage.emptyTopics ? `
+                                <div class="questions-inline-note">
+                                    ${coverage.emptyTopics} assunto(s) vazios ficaram ocultos para deixar a escolha mais limpa.
+                                </div>
+                            ` : ""}
+
+                            ${filteredTopics.length ? `
                             <div class="questions-topic-grid">
-                                ${topics.map((topic) => `
+                                ${filteredTopics.map((topic) => `
                                     <button class="questions-topic-card${ctx.topicos.includes(topic.key) ? " is-active" : ""}${ctx.focoPrincipal === topic.key ? " is-focus" : ""}${topic.hasQuestions ? "" : " is-empty"}" type="button" data-topic="${topic.key}">
                                         <strong>${topic.label}</strong>
+                                        ${(topic.eixo || topic.frente || topic.subtopicsPreview.length) ? `
+                                            <div class="questions-topic-notes">
+                                                ${topic.eixo ? `<span>${topic.eixo}</span>` : ""}
+                                                ${topic.frente ? `<span>${topic.frente}</span>` : ""}
+                                                ${topic.subtopicCount ? `<span>${topic.subtopicCount} subtopicos</span>` : ""}
+                                            </div>
+                                        ` : ""}
+                                        ${topic.subtopicsPreview.length ? `
+                                            <div class="questions-topic-preview">
+                                                ${topic.subtopicsPreview.join(" | ")}
+                                            </div>
+                                        ` : ""}
                                         <div class="questions-topic-foot">
                                             <span>${topic.count} questoes</span>
                                             <span class="questions-topic-badge${topic.hasQuestions ? " is-ready" : ""}">
@@ -306,6 +370,11 @@ window.QuestionsUI = {
                                     </button>
                                 `).join("")}
                             </div>
+                            ` : `
+                                <div class="questions-empty-inline">
+                                    Nenhum assunto bate com a busca atual. Ajuste o texto ou libere os vazios.
+                                </div>
+                            `}
                         ` : `
                             <div class="questions-empty-inline">
                                 Essa materia ainda nao tem assuntos mapeados.
@@ -645,7 +714,7 @@ window.QuestionsUI = {
                             ${summary.topics.map((topic) => `
                                 <div class="questions-result-topic-item">
                                     <strong>${topic.topicLabel}</strong>
-                                    <span>${topic.hits}/${topic.attempts} acertos · ${topic.accuracy}%</span>
+                                    <span>${topic.hits}/${topic.attempts} acertos | ${topic.accuracy}%</span>
                                 </div>
                             `).join("")}
                         </div>
@@ -680,6 +749,7 @@ window.QuestionsUI = {
             QuestionsContext.get();
         const dashboard =
             QuestionsStore.getDashboard({
+                baseKey: ctx.base,
                 subjectKey: ctx.materia
             });
         const subject =
@@ -746,7 +816,7 @@ window.QuestionsUI = {
                     ${(dashboard.modeBreakdown || []).length ? dashboard.modeBreakdown.map((mode) => `
                         <div class="questions-weak-item">
                             <strong>${mode.modeLabel}</strong>
-                            <span>${mode.sessions} sessao(oes) · ${mode.avgAccuracy}% medio</span>
+                            <span>${mode.sessions} sessao(oes) | ${mode.avgAccuracy}% medio</span>
                         </div>
                     `).join("") : `
                         <div class="questions-empty-inline">
@@ -760,7 +830,7 @@ window.QuestionsUI = {
                     ${(dashboard.focusedSessions || []).length ? dashboard.focusedSessions.slice(0, 3).map((session) => `
                         <div class="questions-session-log">
                             <strong>${session.topicLabels?.[0] || session.weakTopicLabel || session.subjectLabel || "Sessao focada"}</strong>
-                            <span>${session.accuracy || 0}% · ${session.amount || 0} questoes</span>
+                            <span>${session.accuracy || 0}% | ${session.amount || 0} questoes</span>
                         </div>
                     `).join("") : `
                         <div class="questions-empty-inline">
@@ -785,6 +855,19 @@ window.QuestionsUI = {
     },
 
     bindLauncher() {
+        document
+            .querySelectorAll("[data-base]")
+            .forEach((button) => {
+                button.addEventListener(
+                    "click",
+                    () => {
+                        this.page.setBase(
+                            button.dataset.base
+                        );
+                    }
+                );
+            });
+
         document
             .querySelectorAll("[data-mode]")
             .forEach((button) => {
@@ -899,6 +982,32 @@ window.QuestionsUI = {
             "click",
             () => {
                 this.page.clearTopics();
+            }
+        );
+
+        document.getElementById(
+            "questionsTopicSearchInput"
+        )?.addEventListener(
+            "input",
+            (event) => {
+                this.page.updateContext({
+                    topicSearch:
+                        event.target?.value || ""
+                });
+            }
+        );
+
+        document.getElementById(
+            "questionsReadyTopicsBtn"
+        )?.addEventListener(
+            "click",
+            () => {
+                const ctx =
+                    QuestionsContext.get();
+                this.page.updateContext({
+                    onlyReadyTopics:
+                        !ctx.onlyReadyTopics
+                });
             }
         );
 
