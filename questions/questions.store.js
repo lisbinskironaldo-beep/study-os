@@ -1,8 +1,9 @@
 window.QuestionsStore = {
-    key: "questions_profile_v2",
+    key: "questions_profile_v3",
 
     data: {
-        topics: {}
+        topics: {},
+        sessions: []
     },
 
     load() {
@@ -10,7 +11,10 @@ window.QuestionsStore = {
             localStorage.getItem(this.key);
 
         if (!saved) {
-            this.data = { topics: {} };
+            this.data = {
+                topics: {},
+                sessions: []
+            };
             return;
         }
 
@@ -20,10 +24,14 @@ window.QuestionsStore = {
 
             this.data = {
                 topics: {},
+                sessions: [],
                 ...(parsed || {})
             };
         } catch (_error) {
-            this.data = { topics: {} };
+            this.data = {
+                topics: {},
+                sessions: []
+            };
         }
 
         if (
@@ -31,6 +39,14 @@ window.QuestionsStore = {
             typeof this.data.topics !== "object"
         ) {
             this.data.topics = {};
+        }
+
+        if (
+            !Array.isArray(
+                this.data.sessions
+            )
+        ) {
+            this.data.sessions = [];
         }
     },
 
@@ -91,6 +107,25 @@ window.QuestionsStore = {
         this.save();
     },
 
+    registerSession(session = {}) {
+        const next = {
+            id:
+                session.id ||
+                `session_${Date.now()}`,
+            createdAt:
+                session.createdAt ||
+                Date.now(),
+            ...session
+        };
+
+        this.data.sessions = [
+            next,
+            ...(this.data.sessions || [])
+        ].slice(0, 40);
+
+        this.save();
+    },
+
     getTopicEntries(filters = {}) {
         return Object.values(
             this.data.topics || {}
@@ -131,9 +166,152 @@ window.QuestionsStore = {
             );
     },
 
+    getRecentSessions(filters = {}) {
+        return (this.data.sessions || [])
+            .filter((entry) => {
+                if (
+                    filters.subjectKey &&
+                    entry.subjectKey !==
+                        filters.subjectKey
+                ) {
+                    return false;
+                }
+
+                if (
+                    filters.mode &&
+                    entry.mode !== filters.mode
+                ) {
+                    return false;
+                }
+
+                if (
+                    filters.modeKey &&
+                    entry.modeKey !==
+                        filters.modeKey
+                ) {
+                    return false;
+                }
+
+                return true;
+            })
+            .sort(
+                (left, right) =>
+                    (right.createdAt || 0) -
+                    (left.createdAt || 0)
+            );
+    },
+
+    getStrongTopics(filters = {}) {
+        return this.getTopicEntries(filters)
+            .map((entry) => ({
+                ...entry,
+                accuracy:
+                    entry.attempts > 0
+                        ? entry.hits /
+                          entry.attempts
+                        : 0
+            }))
+            .filter((entry) => entry.hits > 0)
+            .sort((left, right) =>
+                right.hits - left.hits ||
+                right.accuracy -
+                    left.accuracy ||
+                left.errors - right.errors
+            );
+    },
+
+    getModeBreakdown(filters = {}) {
+        const grouped = new Map();
+
+        this.getRecentSessions(filters).forEach(
+            (session) => {
+                const key =
+                    session.modeKey ||
+                    session.mode ||
+                    "desconhecido";
+                const current =
+                    grouped.get(key) || {
+                        modeKey:
+                            session.modeKey || "",
+                        modeLabel:
+                            session.mode ||
+                            "Modo",
+                        sessions: 0,
+                        hits: 0,
+                        errors: 0,
+                        totalAccuracy: 0
+                    };
+
+                current.sessions += 1;
+                current.hits +=
+                    session.hits || 0;
+                current.errors +=
+                    session.errors || 0;
+                current.totalAccuracy +=
+                    Number(
+                        session.accuracy || 0
+                    );
+
+                grouped.set(key, current);
+            }
+        );
+
+        return [...grouped.values()]
+            .map((entry) => ({
+                ...entry,
+                avgAccuracy:
+                    entry.sessions > 0
+                        ? Math.round(
+                            entry.totalAccuracy /
+                                entry.sessions
+                        )
+                        : 0
+            }))
+            .sort((left, right) =>
+                right.sessions - left.sessions ||
+                right.avgAccuracy -
+                    left.avgAccuracy
+            );
+    },
+
+    getFocusedSessions(filters = {}) {
+        return this.getRecentSessions(filters)
+            .filter((session) => {
+                const topics =
+                    Array.isArray(
+                        session.topicKeys
+                    )
+                        ? session.topicKeys
+                        : [];
+
+                return (
+                    session.topicCount === 1 ||
+                    topics.length === 1 ||
+                    session.modeKey ===
+                        "ASSUNTO_UNICO" ||
+                    session.modeKey ===
+                        "REFORCO_DIRECIONADO"
+                );
+            });
+    },
+
     getDashboard(filters = {}) {
         const entries =
             this.getTopicEntries(filters);
+        const sessions =
+            this.getRecentSessions(filters);
+        const weakTopics =
+            this.getWeakTopics(filters)
+                .slice(0, 5);
+        const strongTopics =
+            this.getStrongTopics(filters)
+                .slice(0, 5);
+        const modeBreakdown =
+            this.getModeBreakdown(filters)
+                .slice(0, 4);
+        const focusedSessions =
+            this.getFocusedSessions(filters)
+                .slice(0, 5);
         const totals =
             entries.reduce(
                 (acc, entry) => {
@@ -171,9 +349,19 @@ window.QuestionsStore = {
                     ? totals.totalTime /
                       totals.attempts
                     : 0,
-            weakTopics:
-                this.getWeakTopics(filters)
-                    .slice(0, 5)
+            totalSessions:
+                sessions.length,
+            sessions,
+            weakTopics,
+            strongTopics,
+            modeBreakdown,
+            focusedSessions,
+            mostTrainedTopic:
+                [...entries].sort(
+                    (left, right) =>
+                        (right.attempts || 0) -
+                        (left.attempts || 0)
+                )[0] || null
         };
     }
 };

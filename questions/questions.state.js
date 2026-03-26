@@ -6,7 +6,8 @@ window.QuestionsState = {
         startTime: 0,
         lastAnswer: null,
         results: [],
-        meta: {}
+        meta: {},
+        sessionRecorded: false
     },
 
     data: {},
@@ -27,6 +28,8 @@ window.QuestionsState = {
         this.data.lastAnswer = null;
         this.data.results = [];
         this.data.meta = {};
+        this.data.sessionRecorded =
+            false;
     },
 
     startSession(list, meta = {}) {
@@ -38,6 +41,8 @@ window.QuestionsState = {
         this.data.lastAnswer = null;
         this.data.results = [];
         this.data.meta = { ...(meta || {}) };
+        this.data.sessionRecorded =
+            false;
     },
 
     getPhase() {
@@ -104,5 +109,16 @@ window.QuestionsState = {
         return {
             ...(this.data.meta || {})
         };
+    },
+
+    markSessionRecorded() {
+        this.data.sessionRecorded =
+            true;
+    },
+
+    isSessionRecorded() {
+        return Boolean(
+            this.data.sessionRecorded
+        );
     }
 };

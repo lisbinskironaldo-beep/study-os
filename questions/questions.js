@@ -1,603 +1,419 @@
 window.QuestionsPage = {
     runtimeNotice: "",
+    syncBridgeBound: false,
+    scriptUrl:
+        document.currentScript?.src || "",
 
     data: {
-        tracks: {
-            ensino_medio: {
-                key: "ensino_medio",
-                label: "Ensino medio",
-                note: "Treino escolar objetivo, com base mais leve e direta.",
-                baseKey: "ENEM",
-                difficultyRange: [1, 2],
-                defaultFocus: "matematica",
-                defaultSessionSize: 8
+        modes: {
+            ASSUNTO_UNICO: {
+                key: "ASSUNTO_UNICO",
+                label: "Assunto unico",
+                note: "Foco total em um unico assunto."
             },
-            enem: {
-                key: "enem",
-                label: "ENEM",
-                note: "Sessao mais proxima da prova, com leitura e contexto.",
-                baseKey: "ENEM",
-                difficultyRange: [1, 4],
-                defaultFocus: "matematica",
-                defaultSessionSize: 12
+            ASSUNTOS_COMBINADOS: {
+                key: "ASSUNTOS_COMBINADOS",
+                label: "Assuntos combinados",
+                note: "Mistura equilibrada de dois ou mais assuntos."
             },
-            concurso: {
-                key: "concurso",
-                label: "Concurso / OAB",
-                note: "Treino mais tecnico, com foco em cobranca de banca.",
-                baseKey: "OAB",
-                difficultyRange: [2, 4],
-                defaultFocus: "constitucional",
-                defaultSessionSize: 10
+            REFORCO_DIRECIONADO: {
+                key: "REFORCO_DIRECIONADO",
+                label: "Reforco direcionado",
+                note: "Prioriza um assunto principal sem abandonar os demais."
             },
-            quiz: {
-                key: "quiz",
-                label: "Quiz leve",
-                note: "Para aquecer a mente sem peso de prova.",
-                baseKey: "QUIZ",
-                difficultyRange: [1, 3],
-                defaultFocus: "cultura_geral",
-                defaultSessionSize: 6
+            TREINO_PARA_PROVA: {
+                key: "TREINO_PARA_PROVA",
+                label: "Treino para prova",
+                note: "Sessao misturada com ritmo de revisao global."
             }
         },
 
-        missions: {
-            topic: {
-                key: "topic",
-                label: "Assunto especifico",
-                note: "Escolha materia e tema para treinar de forma afiada."
+        mixStrategies: {
+            equilibrada: {
+                key: "equilibrada",
+                label: "Equilibrada"
             },
-            weak: {
-                key: "weak",
-                label: "Pontos fracos",
-                note: "Puxa os temas em que voce mais erra e concentra neles."
+            foco_principal: {
+                key: "foco_principal",
+                label: "Foco principal"
             },
-            quick: {
-                key: "quick",
-                label: "Sessao rapida",
-                note: "Treino curto e leve para manter a rotina quente."
+            alternada: {
+                key: "alternada",
+                label: "Alternada"
+            },
+            adaptativa: {
+                key: "adaptativa",
+                label: "Adaptativa"
             }
         },
 
-        sessionSizes: [5, 8, 12, 20],
-
-        questionsDB: {
-            ENEM: {
-                label: "ENEM / Ensino medio",
-                subjects: {
-                    matematica: {
-                        label: "Matematica",
-                        topics: {
-                            algebra: [
-                                {
-                                    question: "Se 3x + 6 = 21, qual e o valor de x?",
-                                    options: ["3", "4", "5", "6"],
-                                    correct: 2,
-                                    difficulty: 1,
-                                    explanation: "3x = 15, entao x = 5."
-                                },
-                                {
-                                    question: "A expressao 2(a + 3) e equivalente a:",
-                                    options: ["2a + 3", "2a + 5", "2a + 6", "a + 6"],
-                                    correct: 2,
-                                    difficulty: 1,
-                                    explanation: "Distribuindo o 2, ficamos com 2a + 6."
-                                },
-                                {
-                                    question: "Qual e a raiz de x^2 - 9 = 0 que e positiva?",
-                                    options: ["1", "3", "6", "9"],
-                                    correct: 1,
-                                    difficulty: 2,
-                                    explanation: "x^2 = 9, logo as raizes sao -3 e 3."
-                                }
-                            ],
-                            geometria: [
-                                {
-                                    question: "Um quadrado de lado 4 tem area igual a:",
-                                    options: ["8", "12", "16", "20"],
-                                    correct: 2,
-                                    difficulty: 1,
-                                    explanation: "Area do quadrado e lado vezes lado: 4 x 4 = 16."
-                                },
-                                {
-                                    question: "A soma dos angulos internos de um triangulo e:",
-                                    options: ["90 graus", "180 graus", "270 graus", "360 graus"],
-                                    correct: 1,
-                                    difficulty: 1,
-                                    explanation: "Todo triangulo possui 180 graus de soma interna."
-                                },
-                                {
-                                    question: "Circunferencia com raio 3 possui diametro:",
-                                    options: ["3", "6", "9", "12"],
-                                    correct: 1,
-                                    difficulty: 2,
-                                    explanation: "Diametro e duas vezes o raio."
-                                }
-                            ],
-                            estatistica: [
-                                {
-                                    question: "A media aritmetica de 2, 4 e 6 e:",
-                                    options: ["3", "4", "5", "6"],
-                                    correct: 1,
-                                    difficulty: 1,
-                                    explanation: "Somando e dividindo por 3, temos 12 / 3 = 4."
-                                },
-                                {
-                                    question: "No conjunto 1, 1, 2, 3, a moda e:",
-                                    options: ["1", "2", "3", "4"],
-                                    correct: 0,
-                                    difficulty: 2,
-                                    explanation: "Moda e o valor que mais se repete: 1."
-                                },
-                                {
-                                    question: "A mediana do conjunto 2, 5, 8 e:",
-                                    options: ["2", "5", "8", "15"],
-                                    correct: 1,
-                                    difficulty: 2,
-                                    explanation: "A mediana e o valor central do conjunto ordenado."
-                                }
-                            ]
-                        }
-                    },
-                    portugues: {
-                        label: "Portugues",
-                        topics: {
-                            interpretacao_textual: [
-                                {
-                                    question: "Ao ler um texto, a ideia principal costuma responder a:",
-                                    options: ["Qual e o tema central?", "Quem publicou?", "Quantas palavras ha?", "Qual e o genero do autor?"],
-                                    correct: 0,
-                                    difficulty: 1,
-                                    explanation: "A ideia principal mostra o nucleo do texto."
-                                },
-                                {
-                                    question: "Uma inferencia textual exige que o leitor:",
-                                    options: ["Copie o texto", "Leia apenas o titulo", "Relacione pistas do texto", "Ignore o contexto"],
-                                    correct: 2,
-                                    difficulty: 2,
-                                    explanation: "Inferir e ligar pistas explicitas e implicitas."
-                                },
-                                {
-                                    question: "Em textos argumentativos, a tese e:",
-                                    options: ["O titulo", "A opiniao central defendida", "A biografia do autor", "A conclusao obrigatoria"],
-                                    correct: 1,
-                                    difficulty: 2,
-                                    explanation: "A tese e o ponto de vista central do texto."
-                                }
-                            ],
-                            gramatica: [
-                                {
-                                    question: "Qual e o plural correto de 'pao'?",
-                                    options: ["paos", "paoes", "paes", "paeses"],
-                                    correct: 2,
-                                    difficulty: 1,
-                                    explanation: "O plural consagrado e 'paes'."
-                                },
-                                {
-                                    question: "Na frase 'Eles chegaram cedo', 'cedo' e:",
-                                    options: ["substantivo", "adverbio", "adjetivo", "verbo"],
-                                    correct: 1,
-                                    difficulty: 2,
-                                    explanation: "Cedo modifica o verbo chegaram, logo e adverbio."
-                                },
-                                {
-                                    question: "Em 'A menina inteligente estudou', 'inteligente' funciona como:",
-                                    options: ["verbo", "adverbio", "artigo", "adjetivo"],
-                                    correct: 3,
-                                    difficulty: 2,
-                                    explanation: "Adjetivo caracteriza o substantivo."
-                                }
-                            ],
-                            literatura: [
-                                {
-                                    question: "Uma caracteristica comum do Modernismo brasileiro e:",
-                                    options: ["linguagem engessada", "valorizacao da linguagem coloquial", "imitar sempre o passado", "rejeitar temas nacionais"],
-                                    correct: 1,
-                                    difficulty: 3,
-                                    explanation: "O Modernismo aproximou a lingua do uso brasileiro."
-                                },
-                                {
-                                    question: "O eu lirico aparece com mais frequencia em:",
-                                    options: ["poemas", "editais", "bulas", "formularios"],
-                                    correct: 0,
-                                    difficulty: 1,
-                                    explanation: "O eu lirico e uma voz tipica da poesia."
-                                }
-                            ]
-                        }
-                    },
-                    biologia: {
-                        label: "Biologia",
-                        topics: {
-                            ecologia: [
-                                {
-                                    question: "Conjunto de seres vivos da mesma especie em uma area e chamado de:",
-                                    options: ["bioma", "ecossistema", "populacao", "biosfera"],
-                                    correct: 2,
-                                    difficulty: 1,
-                                    explanation: "Populacao reune individuos da mesma especie."
-                                },
-                                {
-                                    question: "Fotossintese e importante porque:",
-                                    options: ["remove o solo", "produz materia organica", "substitui respiracao", "elimina agua"],
-                                    correct: 1,
-                                    difficulty: 1,
-                                    explanation: "A fotossintese gera materia organica e libera oxigenio."
-                                }
-                            ],
-                            genetica: [
-                                {
-                                    question: "A unidade basica da hereditariedade e:",
-                                    options: ["celula", "gene", "tecido", "ribossomo"],
-                                    correct: 1,
-                                    difficulty: 2,
-                                    explanation: "O gene carrega informacoes hereditarias."
-                                },
-                                {
-                                    question: "Genes alelos ocupam:",
-                                    options: ["organismos diferentes", "locais diferentes em cromossomos distintos", "o mesmo locus em cromossomos homlogos", "apenas celulas nervosas"],
-                                    correct: 2,
-                                    difficulty: 3,
-                                    explanation: "Alelos ocupam o mesmo locus nos cromossomos homlogos."
-                                }
-                            ]
-                        }
-                    }
-                }
+        questionTypes: {
+            multipla_escolha: {
+                key: "multipla_escolha",
+                label: "Multipla escolha"
             },
-            OAB: {
-                label: "OAB / Concurso",
-                subjects: {
-                    constitucional: {
-                        label: "Constitucional",
-                        topics: {
-                            direitos_fundamentais: [
-                                {
-                                    question: "A liberdade de expressao pode ser classificada como direito:",
-                                    options: ["social", "politico", "fundamental individual", "tributario"],
-                                    correct: 2,
-                                    difficulty: 2,
-                                    explanation: "A liberdade de expressao integra o rol de direitos fundamentais."
-                                },
-                                {
-                                    question: "O mandado de seguranca protege direito:",
-                                    options: ["difuso sem titular", "liquido e certo", "somente penal", "somente eleitoral"],
-                                    correct: 1,
-                                    difficulty: 3,
-                                    explanation: "O mandado de seguranca protege direito liquido e certo."
-                                }
-                            ],
-                            organizacao_estado: [
-                                {
-                                    question: "No federalismo brasileiro, os estados possuem:",
-                                    options: ["soberania", "autonomia", "supremacia internacional", "poder moderador"],
-                                    correct: 1,
-                                    difficulty: 2,
-                                    explanation: "Estados possuem autonomia, nao soberania."
-                                },
-                                {
-                                    question: "Intervencao federal e medida:",
-                                    options: ["sempre livre", "vedada pela Constituicao", "excepcional", "automaticamente anual"],
-                                    correct: 2,
-                                    difficulty: 3,
-                                    explanation: "A intervencao e excepcional e exige hipoteses constitucionais."
-                                }
-                            ]
-                        }
-                    },
-                    administrativo: {
-                        label: "Administrativo",
-                        topics: {
-                            atos_administrativos: [
-                                {
-                                    question: "Atributo que permite execucao direta do ato em alguns casos e:",
-                                    options: ["presuncao de legitimidade", "imperatividade", "autoexecutoriedade", "tipicidade"],
-                                    correct: 2,
-                                    difficulty: 2,
-                                    explanation: "Autoexecutoriedade permite execucao direta pela administracao."
-                                },
-                                {
-                                    question: "Motivo do ato administrativo corresponde a:",
-                                    options: ["forma do ato", "fundamento de fato e de direito", "autoridade competente", "finalidade privada"],
-                                    correct: 1,
-                                    difficulty: 2,
-                                    explanation: "Motivo sao as razoes de fato e de direito do ato."
-                                }
-                            ],
-                            licitacoes: [
-                                {
-                                    question: "O principio da isonomia na licitacao busca:",
-                                    options: ["favorecer fornecedor local", "igualdade entre concorrentes", "dispensar edital sempre", "eliminar competitividade"],
-                                    correct: 1,
-                                    difficulty: 3,
-                                    explanation: "Isonomia garante igualdade de tratamento entre os licitantes."
-                                },
-                                {
-                                    question: "A contratacao direta sem licitacao ocorre nas hipoteses legais de:",
-                                    options: ["dispensa ou inexigibilidade", "somente pregao", "somente leilao", "concorrencia simplificada"],
-                                    correct: 0,
-                                    difficulty: 3,
-                                    explanation: "Dispensa e inexigibilidade sao as hipoteses classicas."
-                                }
-                            ]
-                        }
-                    },
-                    penal: {
-                        label: "Penal",
-                        topics: {
-                            teoria_do_crime: [
-                                {
-                                    question: "Pelo principio da legalidade, nao ha crime sem:",
-                                    options: ["dolo", "culpa", "lei anterior", "vitima"],
-                                    correct: 2,
-                                    difficulty: 2,
-                                    explanation: "A lei anterior e indispensavel para definir crime."
-                                },
-                                {
-                                    question: "Tipicidade significa a adequacao do fato:",
-                                    options: ["a moral social", "ao tipo penal", "ao costume", "ao processo civil"],
-                                    correct: 1,
-                                    difficulty: 2,
-                                    explanation: "Tipicidade e a correspondencia ao tipo penal."
-                                }
-                            ],
-                            penas: [
-                                {
-                                    question: "Pena restritiva de direitos pode substituir privativa de liberdade quando:",
-                                    options: ["sempre", "presentes requisitos legais", "nunca", "houver reincidencia especifica grave obrigatoria"],
-                                    correct: 1,
-                                    difficulty: 3,
-                                    explanation: "A substituicao depende dos requisitos previstos em lei."
-                                },
-                                {
-                                    question: "A finalidade preventiva da pena busca:",
-                                    options: ["somente arrecadar", "evitar novas infracoes", "substituir a policia", "anular o processo"],
-                                    correct: 1,
-                                    difficulty: 2,
-                                    explanation: "Prevencao visa reduzir a reincidencia e desestimular crimes."
-                                }
-                            ]
-                        }
-                    }
-                }
+            input: {
+                key: "input",
+                label: "Input"
             },
-            QUIZ: {
-                label: "Quiz leve",
-                subjects: {
-                    cultura_geral: {
-                        label: "Cultura geral",
-                        topics: {
-                            mundo: [
-                                {
-                                    question: "Qual pais tem Brasilia como capital?",
-                                    options: ["Brasil", "Portugal", "Argentina", "Chile"],
-                                    correct: 0,
-                                    difficulty: 1,
-                                    explanation: "Brasilia e a capital do Brasil."
-                                },
-                                {
-                                    question: "O maior oceano do planeta e o:",
-                                    options: ["Atlantico", "Pacifico", "Indico", "Artico"],
-                                    correct: 1,
-                                    difficulty: 1,
-                                    explanation: "O Oceano Pacifico e o maior do mundo."
-                                }
-                            ],
-                            ciencia: [
-                                {
-                                    question: "A agua ferve ao nivel do mar perto de:",
-                                    options: ["50 C", "75 C", "100 C", "150 C"],
-                                    correct: 2,
-                                    difficulty: 1,
-                                    explanation: "Em condicoes padrao, a fervura ocorre a 100 C."
-                                },
-                                {
-                                    question: "Planeta conhecido como planeta vermelho:",
-                                    options: ["Venus", "Marte", "Jupiter", "Mercurio"],
-                                    correct: 1,
-                                    difficulty: 1,
-                                    explanation: "Marte recebe esse apelido pela cor avermelhada."
-                                }
-                            ]
-                        }
-                    },
-                    logica: {
-                        label: "Logica",
-                        topics: {
-                            padroes: [
-                                {
-                                    question: "Qual numero completa a sequencia 2, 4, 8, 16, ...?",
-                                    options: ["18", "24", "30", "32"],
-                                    correct: 3,
-                                    difficulty: 1,
-                                    explanation: "A sequencia dobra a cada passo."
-                                },
-                                {
-                                    question: "Se todos os A sao B e todo B e C, entao:",
-                                    options: ["algum A nao e C", "todo A e C", "nenhum A e C", "todo C e A"],
-                                    correct: 1,
-                                    difficulty: 2,
-                                    explanation: "A relacao se propaga: todo A tambem e C."
-                                }
-                            ],
-                            rapido: [
-                                {
-                                    question: "Qual numero vem antes de 100?",
-                                    options: ["98", "99", "101", "90"],
-                                    correct: 1,
-                                    difficulty: 1,
-                                    explanation: "O antecessor de 100 e 99."
-                                },
-                                {
-                                    question: "Tres pessoas levam tres minutos para resolver tres problemas identicos. Quanto tempo para uma pessoa resolver um problema?",
-                                    options: ["1 minuto", "3 minutos", "6 minutos", "9 minutos"],
-                                    correct: 1,
-                                    difficulty: 2,
-                                    explanation: "Cada pessoa resolve um problema em tres minutos."
-                                }
-                            ]
-                        }
-                    },
-                    entretenimento: {
-                        label: "Entretenimento",
-                        topics: {
-                            cinema: [
-                                {
-                                    question: "Em uma producao audiovisual, quem normalmente coordena a visao artistica do filme?",
-                                    options: ["diretor", "contador", "auditor", "mecanico"],
-                                    correct: 0,
-                                    difficulty: 1,
-                                    explanation: "A direcao conduz a visao artistica da obra."
-                                },
-                                {
-                                    question: "A trilha sonora de um filme ajuda principalmente a:",
-                                    options: ["reduzir a duracao", "criar atmosfera", "substituir atores", "apagar o roteiro"],
-                                    correct: 1,
-                                    difficulty: 1,
-                                    explanation: "A trilha fortalece clima, ritmo e emocao."
-                                }
-                            ],
-                            series: [
-                                {
-                                    question: "Em series, o episodio piloto costuma servir para:",
-                                    options: ["encerrar a trama", "apresentar o universo da historia", "dispensar personagens", "substituir a temporada"],
-                                    correct: 1,
-                                    difficulty: 1,
-                                    explanation: "O piloto apresenta tom, personagens e conflito."
-                                },
-                                {
-                                    question: "Um cliffhanger e um recurso usado para:",
-                                    options: ["eliminar a trilha", "fechar todas as pontas", "criar suspense para o proximo episodio", "trocar a emissora"],
-                                    correct: 2,
-                                    difficulty: 2,
-                                    explanation: "Cliffhanger deixa gancho e expectativa."
-                                }
-                            ]
-                        }
-                    }
-                }
+            ordenacao: {
+                key: "ordenacao",
+                label: "Ordenacao"
+            },
+            comparacao: {
+                key: "comparacao",
+                label: "Comparacao"
+            },
+            vf: {
+                key: "vf",
+                label: "Verdadeiro/Falso"
             }
-        }
+        },
+
+        amountOptions: [3, 5, 8, 12],
+        schoolCatalog: [],
+        bankStatus: "idle"
     },
 
-    init() {
+    async init() {
         QuestionsStore.load();
         QuestionsContext.load();
         QuestionsState.init();
         QuestionsUI.init(this);
+        this.bindSyncBridge();
+
+        this.data.bankStatus = "loading";
+        QuestionsUI.render();
+
+        await this.loadSchoolCatalog();
         this.syncContext();
+        if (this.consumePendingSync()) {
+            return;
+        }
         this.openLauncher();
     },
 
-    getTrackConfig(trackKey = null) {
+    async loadSchoolCatalog() {
+        try {
+            const fallbackUrl =
+                new URL(
+                    "./questions/questions.js",
+                    window.location.href
+                ).href;
+            const baseUrl =
+                this.scriptUrl ||
+                fallbackUrl;
+            const bankUrl =
+                new URL(
+                    "./banks/index.js",
+                    baseUrl
+                ).href;
+            const module = await import(
+                bankUrl
+            );
+
+            this.data.schoolCatalog =
+                Array.isArray(
+                    module.questionsDB
+                )
+                    ? [...module.questionsDB]
+                    : [];
+            this.data.bankStatus = "ready";
+        } catch (error) {
+            this.data.schoolCatalog = [];
+            this.data.bankStatus = "error";
+            this.runtimeNotice =
+                `Nao foi possivel carregar o banco escolar do modulo de questoes. ${error?.message || ""}`.trim();
+            console.error(
+                "[Questions] Falha ao carregar banco escolar:",
+                error
+            );
+        }
+    },
+
+    getModeConfig(modeKey = null) {
         const ctx =
             QuestionsContext.get();
         const key =
-            trackKey || ctx.track;
+            modeKey || ctx.mode;
 
         return (
-            this.data.tracks[key] ||
-            this.data.tracks.enem
+            this.data.modes[key] ||
+            this.data.modes.ASSUNTO_UNICO
         );
     },
 
-    getBaseCatalog(baseKey = null) {
-        const ctx =
-            QuestionsContext.get();
+    bindSyncBridge() {
+        if (this.syncBridgeBound) {
+            return;
+        }
 
-        return (
-            this.data.questionsDB[
-                baseKey || ctx.base
-            ] || null
+        this.syncBridgeBound = true;
+
+        document.addEventListener(
+            "questions:apply-route",
+            (event) => {
+                this.applyExternalRoute(
+                    event.detail || {}
+                );
+            }
         );
+
+        window.QuestionsBridge = {
+            applyRoute: (payload = {}) =>
+                this.applyExternalRoute(
+                    payload
+                ),
+            queueRoute: (payload = {}) =>
+                this.queueExternalRoute(
+                    payload
+                ),
+            getSnapshot: () =>
+                this.getSyncSnapshot()
+        };
+    },
+
+    dispatchSyncEvent(
+        name,
+        detail = {}
+    ) {
+        document.dispatchEvent(
+            new CustomEvent(name, {
+                detail: {
+                    ...(detail || {}),
+                    snapshot:
+                        this.getSyncSnapshot()
+                }
+            })
+        );
+    },
+
+    getSyncSnapshot() {
+        return QuestionsService.buildSyncSnapshot(
+            this
+        );
+    },
+
+    queueExternalRoute(
+        payload = {}
+    ) {
+        QuestionsContext.setPendingSync(
+            payload,
+            true
+        );
+        this.dispatchSyncEvent(
+            "questions:route-queued",
+            {
+                source:
+                    payload?.source || ""
+            }
+        );
+    },
+
+    consumePendingSync() {
+        const pending =
+            QuestionsContext.get()
+                .pendingSync;
+
+        if (!pending) {
+            return false;
+        }
+
+        QuestionsContext.consumePendingSync();
+        return this.applyExternalRoute(
+            pending
+        );
+    },
+
+    applyExternalRoute(
+        payload = {}
+    ) {
+        const normalized =
+            QuestionsService.normalizeSyncPayload(
+                this,
+                payload
+            );
+
+        if (!normalized) {
+            return false;
+        }
+
+        QuestionsContext.replace(
+            {
+                ...QuestionsContext.get(),
+                ...normalized.context,
+                pendingSync: null
+            },
+            false
+        );
+
+        this.clearRuntimeNotice();
+        this.syncContext();
+        this.dispatchSyncEvent(
+            "questions:route-applied",
+            {
+                source:
+                    normalized.source,
+                intent:
+                    normalized.intent
+            }
+        );
+
+        if (normalized.autoStart) {
+            this.startSession();
+            return true;
+        }
+
+        this.openLauncher();
+        return true;
     },
 
     syncContext() {
         const snapshot =
             QuestionsContext.get();
-        const track =
-            this.getTrackConfig(
-                snapshot.track
+        const series =
+            QuestionsService.getSeriesOptions(
+                this
             );
-        const base =
-            this.getBaseCatalog(
-                track.baseKey
-            );
-        const subjectKeys =
-            Object.keys(
-                base?.subjects || {}
-            );
-
-        let focus =
-            snapshot.focus;
-
-        if (
-            !subjectKeys.includes(focus)
-        ) {
-            focus =
-                track.defaultFocus &&
-                subjectKeys.includes(
-                    track.defaultFocus
-                )
-                    ? track.defaultFocus
-                    : (subjectKeys[0] || "");
-        }
-
-        const topicKeys =
-            Object.keys(
-                base?.subjects?.[focus]
-                    ?.topics || {}
-            );
-
-        let topics =
-            Array.isArray(
-                snapshot.topics
+        const validSeries =
+            series.map((item) => item.key);
+        const serie =
+            validSeries.includes(
+                Number(snapshot.serie)
             )
-                ? snapshot.topics.filter(
+                ? Number(snapshot.serie)
+                : (validSeries[0] || 1);
+
+        const subjects =
+            QuestionsService.getSubjectOptions(
+                this,
+                serie
+            );
+        const validSubjects =
+            subjects.map((item) => item.key);
+        const materia =
+            validSubjects.includes(
+                snapshot.materia
+            )
+                ? snapshot.materia
+                : (validSubjects[0] || "");
+
+        const topics =
+            QuestionsService.getTopicOptions(
+                this,
+                {
+                    serie,
+                    materia
+                }
+            );
+        const validTopics =
+            topics.map((item) => item.key);
+        let selectedTopics =
+            Array.isArray(snapshot.topicos)
+                ? snapshot.topicos.filter(
                     (topicKey) =>
-                        topicKeys.includes(
+                        validTopics.includes(
                             topicKey
                         )
                 )
                 : [];
 
-        const mission =
-            this.data.missions[
-                snapshot.mission
+        const mode =
+            this.data.modes[
+                snapshot.mode
             ]
-                ? snapshot.mission
-                : "topic";
+                ? snapshot.mode
+                : "ASSUNTO_UNICO";
 
         if (
-            mission === "topic" &&
-            !topics.length &&
-            topicKeys.length
+            mode === "ASSUNTO_UNICO" &&
+            selectedTopics.length > 1
         ) {
-            topics = [topicKeys[0]];
+            selectedTopics = [
+                selectedTopics[0]
+            ];
         }
 
-        let sessionSize =
-            this.data.sessionSizes.includes(
-                snapshot.sessionSize
+        if (
+            !selectedTopics.length &&
+            validTopics.length &&
+            mode === "ASSUNTO_UNICO"
+        ) {
+            selectedTopics = [
+                validTopics[0]
+            ];
+        }
+
+        let focoPrincipal =
+            snapshot.focoPrincipal &&
+            selectedTopics.includes(
+                snapshot.focoPrincipal
             )
-                ? snapshot.sessionSize
-                : track.defaultSessionSize;
+                ? snapshot.focoPrincipal
+                : null;
 
         if (
-            mission === "quick" &&
-            sessionSize > 8
+            mode ===
+            "REFORCO_DIRECIONADO" &&
+            !focoPrincipal &&
+            selectedTopics.length
         ) {
-            sessionSize = 5;
+            focoPrincipal =
+                selectedTopics[0];
         }
+
+        const quantidadeQuestoes =
+            this.data.amountOptions.includes(
+                Number(
+                    snapshot.quantidadeQuestoes
+                )
+            )
+                ? Number(
+                    snapshot.quantidadeQuestoes
+                )
+                : 5;
+
+        const allowedStrategies =
+            QuestionsService.getMixStrategies(
+                this,
+                mode
+            ).map((item) => item.key);
+        const estrategiaMistura =
+            allowedStrategies.includes(
+                snapshot.estrategiaMistura
+            )
+                ? snapshot.estrategiaMistura
+                : (
+                    mode ===
+                    "REFORCO_DIRECIONADO"
+                        ? "foco_principal"
+                        : "equilibrada"
+                );
+
+        const pesos = {};
+        selectedTopics.forEach((topicKey) => {
+            pesos[topicKey] =
+                Number(
+                    snapshot.pesos?.[topicKey]
+                ) || (
+                    focoPrincipal ===
+                    topicKey
+                        ? 2
+                        : 1
+                );
+        });
 
         QuestionsContext.replace({
             ...snapshot,
-            track: track.key,
-            base: track.baseKey,
-            mission,
-            focus,
-            topics,
-            sessionSize
+            mode,
+            base: "ESCOLAR",
+            serie,
+            materia,
+            topicos: selectedTopics,
+            focoPrincipal,
+            pesos,
+            quantidadeQuestoes,
+            estrategiaMistura
         });
 
         return QuestionsContext.get();
@@ -614,54 +430,94 @@ window.QuestionsPage = {
         if (
             Object.prototype.hasOwnProperty.call(
                 patch,
-                "track"
+                "serie"
             )
         ) {
-            const track =
-                this.getTrackConfig(
-                    patch.track
-                );
-
-            next.base = track.baseKey;
-            next.focus =
-                track.defaultFocus ||
-                next.focus;
-            next.topics = [];
+            next.materia = "";
+            next.topicos = [];
+            next.focoPrincipal = null;
+            next.pesos = {};
         }
 
         if (
             Object.prototype.hasOwnProperty.call(
                 patch,
-                "focus"
+                "materia"
             )
         ) {
-            next.topics = [];
+            next.topicos = [];
+            next.focoPrincipal = null;
+            next.pesos = {};
         }
 
         if (
             Object.prototype.hasOwnProperty.call(
                 patch,
-                "mission"
-            ) &&
-            patch.mission === "quick"
+                "mode"
+            )
         ) {
-            next.sessionSize = 5;
+            if (
+                patch.mode ===
+                "ASSUNTO_UNICO"
+            ) {
+                next.topicos =
+                    Array.isArray(
+                        next.topicos
+                    ) &&
+                    next.topicos.length
+                        ? [next.topicos[0]]
+                        : [];
+                next.focoPrincipal = null;
+                next.estrategiaMistura =
+                    "equilibrada";
+            }
+
+            if (
+                patch.mode ===
+                "REFORCO_DIRECIONADO"
+            ) {
+                next.estrategiaMistura =
+                    "foco_principal";
+            }
+
+            if (
+                patch.mode ===
+                "TREINO_PARA_PROVA"
+            ) {
+                next.estrategiaMistura =
+                    "equilibrada";
+            }
         }
 
         QuestionsContext.replace(
             next,
             false
         );
+        this.clearRuntimeNotice();
         this.syncContext();
         this.render();
+        this.dispatchSyncEvent(
+            "questions:route-updated"
+        );
     },
 
     toggleTopic(topicKey) {
         const ctx =
             QuestionsContext.get();
+
+        if (
+            ctx.mode === "ASSUNTO_UNICO"
+        ) {
+            this.updateContext({
+                topicos: [topicKey],
+                focoPrincipal: null
+            });
+            return;
+        }
+
         const currentTopics =
-            Array.isArray(ctx.topics)
-                ? [...ctx.topics]
+            Array.isArray(ctx.topicos)
+                ? [...ctx.topicos]
                 : [];
         const nextTopics =
             currentTopics.includes(topicKey)
@@ -675,7 +531,65 @@ window.QuestionsPage = {
                 ];
 
         this.updateContext({
-            topics: nextTopics
+            topicos: nextTopics,
+            focoPrincipal:
+                nextTopics.includes(
+                    ctx.focoPrincipal
+                )
+                    ? ctx.focoPrincipal
+                    : null
+        });
+    },
+
+    setFocusPrincipal(topicKey) {
+        this.updateContext({
+            focoPrincipal: topicKey
+        });
+    },
+
+    selectAllTopics() {
+        const ctx =
+            QuestionsContext.get();
+
+        if (
+            ctx.mode === "ASSUNTO_UNICO"
+        ) {
+            return;
+        }
+
+        const topics =
+            QuestionsService.getTopicOptions(
+                this,
+                {
+                    serie: ctx.serie,
+                    materia: ctx.materia
+                }
+            ).map((item) => item.key);
+
+        this.updateContext({
+            topicos: topics,
+            focoPrincipal:
+                topics.includes(
+                    ctx.focoPrincipal
+                )
+                    ? ctx.focoPrincipal
+                    : null
+        });
+    },
+
+    clearTopics() {
+        const ctx =
+            QuestionsContext.get();
+
+        if (
+            ctx.mode === "ASSUNTO_UNICO"
+        ) {
+            return;
+        }
+
+        this.updateContext({
+            topicos: [],
+            focoPrincipal: null
         });
     },
 
@@ -687,8 +601,136 @@ window.QuestionsPage = {
         this.runtimeNotice = "";
     },
 
+    submitAnswer(payload = {}) {
+        const question =
+            QuestionsState.getCurrentQuestion();
+
+        if (!question) {
+            return;
+        }
+
+        const result =
+            QuestionsService.answer(
+                payload.index,
+                payload.value
+            );
+
+        QuestionsState.setAnswer(result);
+        this.render();
+    },
+
+    continueSession() {
+        QuestionsState.next();
+
+        if (
+            QuestionsState.isComplete() &&
+            !QuestionsState.isSessionRecorded()
+        ) {
+            const summary =
+                QuestionsService.summarizeSessionResults(
+                    QuestionsState.getResults(),
+                    QuestionsState.getMeta()
+                );
+
+            QuestionsStore.registerSession({
+                mode:
+                    QuestionsState.getMeta()
+                        .modeLabel || "",
+                modeKey:
+                    QuestionsContext.get()
+                        .mode,
+                subjectKey:
+                    QuestionsContext.get()
+                        .materia,
+                subjectLabel:
+                    QuestionsState.getMeta()
+                        .materiaLabel || "",
+                serie:
+                    QuestionsContext.get()
+                        .serie,
+                amount:
+                    summary.total,
+                accuracy:
+                    summary.accuracy,
+                hits: summary.hits,
+                errors: summary.errors,
+                avgTimeMs:
+                    summary.avgTimeMs,
+                topicCount:
+                    summary.topicCount,
+                topicKeys: [
+                    ...(
+                        QuestionsContext.get()
+                            .topicos || []
+                    )
+                ],
+                topicLabels: [
+                    ...(
+                        QuestionsState.getMeta()
+                            .topicsLabel || []
+                    )
+                ],
+                focusTopicKey:
+                    QuestionsContext.get()
+                        .focoPrincipal || "",
+                focusTopicLabel:
+                    summary.weakTopic
+                        ?.topicLabel || "",
+                weakTopicLabel:
+                    summary.weakTopic
+                        ?.topicLabel || "",
+                strongTopicLabel:
+                    summary.strongTopic
+                        ?.topicLabel || ""
+            });
+
+            QuestionsState.markSessionRecorded();
+            this.dispatchSyncEvent(
+                "questions:session-completed",
+                {
+                    summary
+                }
+            );
+        }
+
+        this.render();
+    },
+
+    restartSession() {
+        this.startSession();
+    },
+
+    startFollowUp(intent) {
+        const summary =
+            QuestionsService.summarizeSessionResults(
+                QuestionsState.getResults(),
+                QuestionsState.getMeta()
+            );
+        const patch =
+            QuestionsService.buildFollowUpContext(
+                this,
+                intent,
+                summary
+            );
+
+        this.updateContext(patch);
+        this.startSession();
+    },
+
     startSession() {
         this.syncContext();
+        const validation =
+            QuestionsService.getLauncherValidation(
+                this
+            );
+
+        if (!validation.isReady) {
+            this.runtimeNotice =
+                validation.issues[0] ||
+                "Complete a rota antes de iniciar o treino.";
+            this.openLauncher();
+            return;
+        }
 
         const list =
             QuestionsService.buildSession(
@@ -697,7 +739,7 @@ window.QuestionsPage = {
 
         if (!list.length) {
             this.runtimeNotice =
-                "Ainda nao ha questoes suficientes nesse recorte. Ajuste a rota e tente de novo.";
+                "Ainda nao ha questoes preenchidas nesse recorte. Continue alimentando o banco e tente de novo.";
             this.openLauncher();
             return;
         }
@@ -711,12 +753,22 @@ window.QuestionsPage = {
             )
         );
 
+        this.dispatchSyncEvent(
+            "questions:session-started",
+            {
+                route:
+                    QuestionsState.getMeta()
+            }
+        );
         QuestionsUI.render();
     },
 
     openLauncher() {
         QuestionsState.openLauncher();
         this.render();
+        this.dispatchSyncEvent(
+            "questions:launcher-opened"
+        );
     },
 
     render() {

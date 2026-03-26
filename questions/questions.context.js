@@ -1,13 +1,19 @@
 window.QuestionsContext = {
-    key: "questions_context_v2",
+    key: "questions_context_v3",
 
     defaults: {
-        track: "enem",
-        base: "ENEM",
-        mission: "topic",
-        focus: "matematica",
-        topics: ["algebra"],
-        sessionSize: 8
+        mode: "ASSUNTO_UNICO",
+        base: "ESCOLAR",
+        serie: 1,
+        materia: "matematica",
+        topicos: [],
+        focoPrincipal: null,
+        pesos: {},
+        quantidadeQuestoes: 5,
+        estrategiaMistura: "equilibrada",
+        syncSource: "",
+        syncIntent: "",
+        pendingSync: null
     },
 
     data: {},
@@ -17,32 +23,56 @@ window.QuestionsContext = {
             localStorage.getItem(this.key);
 
         if (!saved) {
-            this.data = {
-                ...this.defaults,
-                topics: [...this.defaults.topics]
-            };
+            this.data = this.buildState(
+                this.defaults
+            );
             return;
         }
 
         try {
             const parsed =
                 JSON.parse(saved);
-
-            this.data = {
-                ...this.defaults,
-                ...(parsed || {})
-            };
+            this.data = this.buildState(
+                parsed
+            );
         } catch (_error) {
-            this.data = {
-                ...this.defaults,
-                topics: [...this.defaults.topics]
-            };
+            this.data = this.buildState(
+                this.defaults
+            );
         }
+    },
 
-        this.data.topics =
-            Array.isArray(this.data.topics)
-                ? [...this.data.topics]
-                : [...this.defaults.topics];
+    buildState(source = {}) {
+        const next = {
+            ...this.defaults,
+            ...(source || {})
+        };
+
+        next.topicos =
+            Array.isArray(next.topicos)
+                ? [...next.topicos]
+                : [];
+
+        next.pesos =
+            next.pesos &&
+            typeof next.pesos === "object"
+                ? { ...next.pesos }
+                : {};
+        next.pendingSync =
+            next.pendingSync &&
+            typeof next.pendingSync ===
+                "object"
+                ? {
+                    ...next.pendingSync
+                }
+                : null;
+
+        next.serie =
+            Number(next.serie) || 1;
+        next.quantidadeQuestoes =
+            Number(next.quantidadeQuestoes) || 5;
+
+        return next;
     },
 
     save() {
@@ -52,31 +82,21 @@ window.QuestionsContext = {
         );
     },
 
-    set(patch, shouldSave = true) {
-        this.data = {
+    set(patch = {}, shouldSave = true) {
+        this.data = this.buildState({
             ...this.data,
             ...(patch || {})
-        };
-
-        if (!Array.isArray(this.data.topics)) {
-            this.data.topics = [];
-        }
+        });
 
         if (shouldSave) {
             this.save();
         }
     },
 
-    replace(nextState, shouldSave = true) {
-        this.data = {
-            ...this.defaults,
-            ...(nextState || {})
-        };
-
-        this.data.topics =
-            Array.isArray(this.data.topics)
-                ? [...this.data.topics]
-                : [...this.defaults.topics];
+    replace(nextState = {}, shouldSave = true) {
+        this.data = this.buildState(
+            nextState
+        );
 
         if (shouldSave) {
             this.save();
@@ -84,11 +104,35 @@ window.QuestionsContext = {
     },
 
     get() {
-        return {
-            ...this.data,
-            topics: Array.isArray(this.data.topics)
-                ? [...this.data.topics]
-                : []
-        };
+        return this.buildState(this.data);
+    },
+
+    setPendingSync(
+        payload = {},
+        shouldSave = true
+    ) {
+        this.set(
+            {
+                pendingSync:
+                    payload &&
+                    typeof payload ===
+                        "object"
+                        ? { ...payload }
+                        : null
+            },
+            shouldSave
+        );
+    },
+
+    consumePendingSync() {
+        const pending =
+            this.get().pendingSync;
+
+        this.set(
+            { pendingSync: null },
+            true
+        );
+
+        return pending;
     }
 };
