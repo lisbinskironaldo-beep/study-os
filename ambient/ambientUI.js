@@ -8,7 +8,7 @@ if (!root) return
 root.style.display = "block"
 
 root.innerHTML = `
-<button id="ambientPeek" class="ambient-peek" type="button" title="Mostrar player">
+<button id="ambientPeek" class="ambient-peek" type="button" title="Mostrar player" aria-label="Mostrar player de som">
   <span class="ambient-peek-dot"></span>
   <span class="ambient-peek-label">Som</span>
 </button>

@@ -692,7 +692,9 @@ const Pomodoro = {
                 : null);
 
         const presetLabel =
-            presetKey && this.presets[presetKey]
+            presetKey &&
+            presetKey !== "custom" &&
+            this.presets[presetKey]
                 ? this.presets[presetKey].label
                 : `${targetBlock.studyMinutes}/${targetBlock.breakMinutes}`;
 
@@ -728,6 +730,13 @@ const Pomodoro = {
         }
 
         return this.presets[this.currentPreset].label;
+    },
+
+    getTableModeLabel(block = null) {
+        const cycle =
+            this.getBlockCycleConfig(block);
+
+        return cycle?.label || "Sem ritmo da tabela";
     },
 
     getStudySecondsForLog() {
@@ -1500,8 +1509,7 @@ const Pomodoro = {
 
         if (this.mode === "break" && this.linkedTodayBlockId === block.id) {
             const blockLabel =
-                this.getBlockCycleConfig(block)?.label ||
-                this.getDisplayPresetLabel();
+                this.getTableModeLabel(block);
 
             return {
                 tone: "break",
@@ -1511,8 +1519,7 @@ const Pomodoro = {
         }
 
         const activeLabel =
-            this.getBlockCycleConfig(block)?.label ||
-            this.getDisplayPresetLabel();
+            this.getTableModeLabel(block);
 
         return {
             tone: this.syncEnabled ? "live" : "idle",
@@ -1537,9 +1544,13 @@ const Pomodoro = {
         const nextBlock = state.nextItem;
         const status =
             this.resolveTodayStatus(currentBlock, state);
+        const referenceBlock =
+            currentBlock ||
+            nextBlock ||
+            previousBlock ||
+            this.getTodayBlockById(this.linkedTodayBlockId);
         const activeMode =
-            this.getBlockCycleConfig(currentBlock)?.label ||
-            this.getDisplayPresetLabel();
+            this.getTableModeLabel(referenceBlock);
 
         const breakRange =
             currentBlock
@@ -1564,15 +1575,42 @@ const Pomodoro = {
                 ? currentBlock
                 : previousBlock;
 
+        const shellState =
+            this.syncEnabled
+                ? "is-linked"
+                : "is-idle";
+        const stateLabel =
+            this.syncEnabled
+                ? "Ligado ao quadro"
+                : "Painel desligado";
+        const stateDetail =
+            this.syncEnabled
+                ? (breakRange
+                    ? `Intervalo previsto ${breakRange}`
+                    : "Acompanhando a janela atual da tabela.")
+                : "Ative para travar o relogio no ritmo da tabela.";
+
+        document.body.classList.toggle(
+            "pomodoro-table-sync-on",
+            Boolean(
+                this.syncEnabled &&
+                typeof Core !== "undefined" &&
+                Core.state?.mode === "pomodoro"
+            )
+        );
+
         container.classList.remove("hidden");
 
         container.innerHTML = `
-            <div class="today-flow-shell ${this.syncEnabled ? "is-linked" : "is-idle"}">
+            <div class="today-flow-shell ${shellState}">
                 <div class="today-flow-center">
-                    <button id="todayFlowSyncBtn" class="today-flow-btn is-primary${this.syncEnabled ? " is-on" : ""}" type="button"${currentBlock ? "" : " disabled"}>
-                        ${this.syncEnabled ? "Sincronizado com Pomodoro" : "Sincronizar com Pomodoro"}
+                    <button id="todayFlowSyncBtn" class="today-flow-btn is-primary${this.syncEnabled ? " is-on" : ""}" type="button" aria-pressed="${this.syncEnabled ? "true" : "false"}"${referenceBlock ? "" : " disabled"}>
+                        Sincronizar com tabela
                     </button>
-                    <div class="today-flow-mode">${activeMode}</div>
+                    <div class="today-flow-mode-wrap">
+                        <span class="today-flow-mode-label">Ritmo da tabela</span>
+                        <div class="today-flow-mode">${activeMode}</div>
+                    </div>
                     <button id="todayFlowOpenQtsBtn" class="today-flow-btn today-flow-btn-secondary" type="button">Abrir quadro</button>
                 </div>
                 <div class="today-flow-track ${this.syncEnabled ? "is-live" : "is-muted"}">
@@ -1581,7 +1619,8 @@ const Pomodoro = {
                     ${this.renderFlowSlot("Proxima", nextBlock, "next")}
                 </div>
                 <div class="today-flow-breakline">
-                    ${breakRange ? `Intervalo ${breakRange}` : "Intervalo --:--"}
+                    <strong>${stateLabel}</strong>
+                    <span>${stateDetail}</span>
                 </div>
             </div>
         `;

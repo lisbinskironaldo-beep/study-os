@@ -19,9 +19,18 @@ const Core = {
     shortcutHint: null,
     shortcutShowTimer: null,
     shortcutHideTimer: null,
+    topbar: null,
+    topbarCollapseBtn: null,
     stylePanel: null,
     styleToggle: null,
     styleStorageKey: "study_os_style_theme",
+    topbarStorageKey: "study_os_topbar_collapsed",
+    ambientFocusPanelMode: null,
+    supportedStyles: [
+        "clarity",
+        "immersion",
+        "pulse"
+    ],
 
     /* ================= INIT ================= */
 
@@ -36,6 +45,7 @@ const Core = {
         this.initKeyboard();
         this.initFullscreen();
         this.initDarkMode();
+        this.initTopbarCollapse();
         this.goHome();
         this.initShortcutHint();
     },
@@ -79,6 +89,12 @@ const Core = {
         this.shortcutHint =
             document.getElementById("shortcutHint") || null;
 
+        this.topbar =
+            document.querySelector(".topbar") || null;
+
+        this.topbarCollapseBtn =
+            document.getElementById("topbarCollapseBtn") || null;
+
         this.stylePanel =
             document.getElementById("stylePanel") || null;
 
@@ -115,36 +131,17 @@ const Core = {
             });
         }
 
-        if (this.styleToggle) {
-            this.styleToggle.addEventListener("click", (event) => {
-                event.stopPropagation();
-                this.toggleStylePanel();
+        if (this.topbarCollapseBtn) {
+            this.topbarCollapseBtn.addEventListener("click", () => {
+                this.toggleTopbarCollapsed();
             });
         }
 
-        if (this.stylePanel) {
-            this.stylePanel.querySelectorAll("[data-style]")
-                .forEach(button => {
-                    button.addEventListener("click", () => {
-                        this.applyStyleTheme(button.dataset.style);
-                        this.closeStylePanel();
-                    });
-                });
+        if (this.styleToggle) {
+            this.styleToggle.addEventListener("click", () => {
+                this.cycleStyleTheme();
+            });
         }
-
-        document.addEventListener("click", (event) => {
-            if (!this.stylePanel || !this.styleToggle) return;
-
-            const clickedInsidePanel =
-                this.stylePanel.contains(event.target);
-
-            const clickedToggle =
-                this.styleToggle.contains(event.target);
-
-            if (!clickedInsidePanel && !clickedToggle) {
-                this.closeStylePanel();
-            }
-        });
 
         const playBtn =
             document.getElementById("playBtn");
@@ -331,6 +328,11 @@ return
 
         this.state.mode = target;
         document.body.setAttribute("data-mode", target);
+        if (target !== "pomodoro") {
+            document.body.classList.remove(
+                "pomodoro-table-sync-on"
+            );
+        }
         this.setActiveNav(target);
     },
 
@@ -352,6 +354,14 @@ return
 
         this.state.mode = mode;
         document.body.setAttribute("data-mode", mode);
+        document.body.classList.toggle(
+            "pomodoro-table-sync-on",
+            Boolean(
+                mode === "pomodoro" &&
+                typeof Pomodoro !== "undefined" &&
+                Pomodoro.syncEnabled
+            )
+        );
         this.setActiveNav(mode === "clock" ? null : mode);
 
         this.hideModules();
@@ -470,6 +480,7 @@ return
         if (this.state.mode !== "clock")
             this.goHome();
 
+        this.prepareAmbientForFocus();
         document.body.classList.add("focus-mode");
         this.refreshShortcutHint(2400);
 
@@ -483,11 +494,13 @@ return
     exitViewportModes() {
         document.body.classList.remove("focus-mode");
         document.body.classList.remove("immersive-mode");
+        this.restoreAmbientAfterFocus();
         this.refreshShortcutHint(5000);
     },
 
     exitFocusMode() {
         document.body.classList.remove("focus-mode");
+        this.restoreAmbientAfterFocus();
         this.refreshShortcutHint(5000);
 
         if (document.fullscreenElement) {
@@ -499,6 +512,7 @@ return
         if (!document.fullscreenElement) {
             document.body.classList.remove("immersive-mode");
             document.body.classList.remove("focus-mode");
+            this.restoreAmbientAfterFocus();
             this.refreshShortcutHint(5000);
             return;
         }
@@ -699,6 +713,7 @@ return
     toggleFullscreenCurrentView() {
         if (document.body.classList.contains("focus-mode")) {
             document.body.classList.remove("focus-mode");
+            this.restoreAmbientAfterFocus();
             this.refreshShortcutHint(2400);
             return;
         }
@@ -729,6 +744,89 @@ return
         });
     },
 
+    initTopbarCollapse() {
+        const savedState =
+            localStorage.getItem(this.topbarStorageKey);
+
+        this.setTopbarCollapsed(savedState === "1", false);
+    },
+
+    toggleTopbarCollapsed() {
+        const isCollapsed =
+            document.body.classList.contains("topbar-collapsed");
+
+        this.setTopbarCollapsed(!isCollapsed);
+    },
+
+    setTopbarCollapsed(collapsed, persist = true) {
+        document.body.classList.toggle(
+            "topbar-collapsed",
+            Boolean(collapsed)
+        );
+
+        if (this.topbarCollapseBtn) {
+            const label = collapsed
+                ? "Expandir barra"
+                : "Recolher barra";
+
+            this.topbarCollapseBtn.setAttribute(
+                "aria-label",
+                label
+            );
+            this.topbarCollapseBtn.setAttribute(
+                "title",
+                label
+            );
+            this.topbarCollapseBtn.setAttribute(
+                "aria-expanded",
+                collapsed ? "false" : "true"
+            );
+        }
+
+        if (persist) {
+            localStorage.setItem(
+                this.topbarStorageKey,
+                collapsed ? "1" : "0"
+            );
+        }
+    },
+
+    prepareAmbientForFocus() {
+        if (typeof AmbientState === "undefined") {
+            this.ambientFocusPanelMode = null;
+            return;
+        }
+
+        this.ambientFocusPanelMode = AmbientState.panelMode;
+
+        if (
+            typeof AmbientUI !== "undefined" &&
+            AmbientState.panelMode !== 2
+        ) {
+            AmbientUI.setPanelMode(2);
+        }
+    },
+
+    restoreAmbientAfterFocus() {
+        if (
+            this.ambientFocusPanelMode === null ||
+            typeof AmbientState === "undefined"
+        ) {
+            return;
+        }
+
+        const previousMode = this.ambientFocusPanelMode;
+        this.ambientFocusPanelMode = null;
+
+        if (
+            typeof AmbientUI !== "undefined" &&
+            AmbientState.panelMode === 2 &&
+            previousMode !== 2
+        ) {
+            AmbientUI.setPanelMode(previousMode);
+        }
+    },
+
     initStyleTheme() {
         const savedStyle =
             localStorage.getItem(this.styleStorageKey) ||
@@ -738,14 +836,8 @@ return
     },
 
     applyStyleTheme(style = "clarity", persist = true) {
-        const supportedStyles = [
-            "clarity",
-            "immersion",
-            "pulse"
-        ];
-
         const nextStyle =
-            supportedStyles.includes(style)
+            this.supportedStyles.includes(style)
                 ? style
                 : "clarity";
 
@@ -762,7 +854,7 @@ return
     },
 
     syncStyleThemeUI(activeStyle) {
-        if (!this.stylePanel || !this.styleToggle) return;
+        if (!this.styleToggle) return;
 
         const labels = {
             clarity: "Clareza",
@@ -770,47 +862,70 @@ return
             pulse: "Pulso"
         };
 
-        this.stylePanel.querySelectorAll("[data-style]")
-            .forEach(button => {
-                button.classList.toggle(
-                    "is-active",
-                    button.dataset.style === activeStyle
-                );
-            });
+        const nextStyle =
+            this.supportedStyles[
+                (this.supportedStyles.indexOf(activeStyle) + 1) %
+                this.supportedStyles.length
+            ] || "clarity";
+
+        const nextLabel =
+            labels[nextStyle] || "Clareza";
+
+        this.styleToggle.innerHTML =
+            this.getStyleToggleIcon(activeStyle);
 
         this.styleToggle.setAttribute(
             "aria-label",
-            `Estilo visual: ${labels[activeStyle] || "Clareza"}`
+            `Estilo visual: ${labels[activeStyle] || "Clareza"}. Clique para mudar para ${nextLabel}`
         );
 
         this.styleToggle.setAttribute(
             "title",
             `Estilo visual: ${labels[activeStyle] || "Clareza"}`
         );
-    },
-
-    toggleStylePanel(forceOpen = null) {
-        if (!this.stylePanel || !this.styleToggle) return;
-
-        const shouldOpen =
-            typeof forceOpen === "boolean"
-                ? forceOpen
-                : this.stylePanel.classList.contains("hidden");
-
-        this.stylePanel.classList.toggle("hidden", !shouldOpen);
-        this.stylePanel.setAttribute(
-            "aria-hidden",
-            shouldOpen ? "false" : "true"
-        );
 
         this.styleToggle.setAttribute(
             "aria-expanded",
-            shouldOpen ? "true" : "false"
+            "false"
         );
     },
 
-    closeStylePanel() {
-        this.toggleStylePanel(false);
+    cycleStyleTheme() {
+        const currentStyle =
+            document.body.dataset.style || "clarity";
+
+        const currentIndex =
+            this.supportedStyles.indexOf(currentStyle);
+
+        const nextStyle =
+            this.supportedStyles[
+                currentIndex >= 0
+                    ? (currentIndex + 1) % this.supportedStyles.length
+                    : 0
+            ];
+
+        this.applyStyleTheme(nextStyle);
+    },
+
+    getStyleToggleIcon(style = "clarity") {
+        const icons = {
+            clarity: `
+<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+    <circle cx="12" cy="12" r="5"/>
+    <path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2.2 2.2M16.8 16.8L19 19M19 5l-2.2 2.2M5 19l2.2-2.2" stroke-linecap="round"/>
+</svg>`,
+            immersion: `
+<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+    <path d="M12 3l7 4v10l-7 4-7-4V7l7-4z" stroke-linejoin="round"/>
+    <path d="M12 7v10M7.7 9.4 16.3 14.6" stroke-linecap="round"/>
+</svg>`,
+            pulse: `
+<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+    <path d="M3 12h4l2-4 3 8 2-4h7" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>`
+        };
+
+        return icons[style] || icons.clarity;
     }
 
 };

@@ -81,31 +81,13 @@
         </button>
         <button data-module="questions" data-tier="primary" class="icon-circle footer-icon" data-label="Questoes" title="Questoes" aria-label="Questoes">Q</button>
     </div>
-</header>
 
-<div id="stylePanel" class="style-panel hidden" aria-hidden="true">
-    <button class="style-option is-active" data-style="clarity" type="button">
-        <span class="style-option-swatch style-clarity"></span>
-        <span class="style-option-copy">
-            <strong>Clareza</strong>
-            <small>Leve, premium e acolhedor.</small>
-        </span>
+    <button id="topbarCollapseBtn" class="topbar-collapse-btn" type="button" title="Recolher barra" aria-label="Recolher barra" aria-expanded="true">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 6l-6 6 6 6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
     </button>
-    <button class="style-option" data-style="immersion" type="button">
-        <span class="style-option-swatch style-immersion"></span>
-        <span class="style-option-copy">
-            <strong>Imersao</strong>
-            <small>Mais profundo e focado.</small>
-        </span>
-    </button>
-    <button class="style-option" data-style="pulse" type="button">
-        <span class="style-option-swatch style-pulse"></span>
-        <span class="style-option-copy">
-            <strong>Pulso</strong>
-            <small>Mais vivo, dinamico e energico.</small>
-        </span>
-    </button>
-</div>
+</header>
 
 <div id="sideModules" class="side-modules">
     <div class="side-group" data-nav-group="primary">
@@ -151,35 +133,22 @@
 
     <div id="homeLaunchpad" class="home-launchpad">
         <div class="home-launchpad-main">
-            <div class="launchpad-copy">
-                <div class="launchpad-kicker">Fluxo principal</div>
-                <div class="launchpad-title">Comece pelas areas que realmente movem a rotina.</div>
-                <div class="launchpad-text">Pomodoro, quadro semanal e questoes entram primeiro. Cronometro, timer, calculadora e agenda ficam separados como apoio.</div>
-            </div>
-
             <div class="launchpad-primary-grid">
                 <button data-module="pomodoro" class="launchpad-card" type="button">
-                    <span class="launchpad-card-eyebrow">Foco</span>
                     <span class="launchpad-card-title">Pomodoro</span>
-                    <span class="launchpad-card-text">Ciclos de estudo com ritmo, descanso e progresso.</span>
                 </button>
 
                 <button data-module="qts" class="launchpad-card" type="button">
-                    <span class="launchpad-card-eyebrow">Planejamento</span>
                     <span class="launchpad-card-title">Quadro semanal</span>
-                    <span class="launchpad-card-text">Visualize blocos de estudo e distribua sua semana.</span>
                 </button>
 
                 <button data-module="questions" class="launchpad-card" type="button">
-                    <span class="launchpad-card-eyebrow">Treino</span>
                     <span class="launchpad-card-title">Questoes</span>
-                    <span class="launchpad-card-text">Pratique agora e prepare a base para simulados.</span>
                 </button>
             </div>
         </div>
 
         <div class="home-launchpad-tools">
-            <div class="launchpad-kicker">Ferramentas rapidas</div>
             <div class="launchpad-tool-row">
                 <button data-module="stopwatch" class="launchpad-tool" type="button">Cronometro</button>
                 <button data-module="timer" class="launchpad-tool" type="button">Timer</button>
