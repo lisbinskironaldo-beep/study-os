@@ -1,5 +1,17 @@
 window.QuestionsUI = {
     page: null,
+    floatingSessionState: {
+        minimized: false,
+        maximized: false,
+        left: "",
+        top: "",
+        width: "",
+        height: "",
+        dragOffsetX: 0,
+        dragOffsetY: 0,
+        dragging: false
+    },
+    floatingSessionZIndex: 1450,
 
     init(page) {
         this.page = page;
@@ -45,6 +57,8 @@ window.QuestionsUI = {
         session.hidden =
             phase !== "session";
 
+        this.teardownFloatingSession();
+
         if (phase === "launcher") {
             launcher.innerHTML =
                 this.renderLauncher();
@@ -58,10 +72,7 @@ window.QuestionsUI = {
         const shouldShowStats =
             this.page.data.bankStatus ===
                 "ready" &&
-            (
-                phase === "session" ||
-                launcherView === "specific"
-            );
+            launcherView === "specific";
 
         if (root) {
             root.classList.toggle(
@@ -79,6 +90,501 @@ window.QuestionsUI = {
 
         this.bindLauncher();
         this.bindSession();
+    },
+
+    renderFloatingSessionHint() {
+        return `
+            <section class="questions-card questions-floating-hint">
+                <div class="questions-kicker">Sessao ativa</div>
+                <h2>Janela flutuante aberta</h2>
+                <p>As questoes continuam em uma janela livre para arrastar, minimizar, redimensionar ou maximizar enquanto voce usa o resto do site.</p>
+                <div class="questions-entry-actions">
+                    <button id="questionsFloatingFocusBtn" class="questions-secondary-btn" type="button">Trazer para frente</button>
+                    <button id="questionsFloatingPauseBtn" class="questions-secondary-btn" type="button">Pausar treino</button>
+                </div>
+            </section>
+        `;
+    },
+
+    renderFloatingSessionShell(
+        content = ""
+    ) {
+        return `
+            <section id="questionsFloatingWindow" class="questions-floating-window" aria-label="Janela flutuante de questoes">
+                <div class="questions-floating-header" data-questions-float-drag="true">
+                    <div class="questions-floating-copy">
+                        <div class="questions-floating-kicker">Treino ativo</div>
+                        <div class="questions-floating-title">Questoes</div>
+                    </div>
+                    <div class="questions-floating-actions">
+                        <button id="questionsFloatingMinBtn" type="button" title="Minimizar">_</button>
+                        <button id="questionsFloatingMaxBtn" type="button" title="Maximizar">[]</button>
+                        <button id="questionsFloatingCloseBtn" type="button" title="Pausar e fechar">x</button>
+                    </div>
+                </div>
+                <div id="questionsFloatingBody" class="questions-floating-body">
+                    ${content}
+                </div>
+            </section>
+        `;
+    },
+
+    mountFloatingSession(content) {
+        const root =
+            document.getElementById(
+                "utilityRoot"
+            );
+
+        if (!root) {
+            return false;
+        }
+
+        let panel =
+            document.getElementById(
+                "questionsFloatingWindow"
+            );
+
+        if (!panel) {
+            root.insertAdjacentHTML(
+                "beforeend",
+                this.renderFloatingSessionShell(
+                    content
+                )
+            );
+            panel =
+                document.getElementById(
+                    "questionsFloatingWindow"
+                );
+
+            if (!panel) {
+                return false;
+            }
+
+            if (
+                !this.floatingSessionState.left ||
+                !this.floatingSessionState.top
+            ) {
+                this.setFloatingSessionDefaultPosition(
+                    panel
+                );
+            }
+
+            if (
+                !this.floatingSessionState
+                    .width
+            ) {
+                panel.style.width =
+                    `${Math.min(
+                        720,
+                        Math.max(
+                            420,
+                            window.innerWidth -
+                                48
+                        )
+                    )}px`;
+            }
+
+            if (
+                !this.floatingSessionState
+                    .height
+            ) {
+                panel.style.height =
+                    `${Math.min(
+                        860,
+                        Math.max(
+                            420,
+                            window.innerHeight -
+                                132
+                        )
+                    )}px`;
+            }
+
+            if (
+                this.floatingSessionState
+                    .width
+            ) {
+                panel.style.width =
+                    this.floatingSessionState.width;
+            }
+
+            if (
+                this.floatingSessionState
+                    .height
+            ) {
+                panel.style.height =
+                    this.floatingSessionState.height;
+            }
+        } else {
+            const body =
+                document.getElementById(
+                    "questionsFloatingBody"
+                );
+
+            if (body) {
+                body.innerHTML = content;
+            }
+        }
+
+        this.syncFloatingSessionPanel();
+        this.bringFloatingSessionToFront();
+        return true;
+    },
+
+    teardownFloatingSession() {
+        const panel =
+            document.getElementById(
+                "questionsFloatingWindow"
+            );
+
+        if (panel) {
+            panel.remove();
+        }
+
+        this.floatingSessionState.dragging =
+            false;
+        document.removeEventListener(
+            "pointermove",
+            this.handleFloatingPointerMove
+        );
+        document.removeEventListener(
+            "pointerup",
+            this.handleFloatingPointerUp
+        );
+    },
+
+    syncFloatingSessionPanel() {
+        const panel =
+            document.getElementById(
+                "questionsFloatingWindow"
+            );
+        const minButton =
+            document.getElementById(
+                "questionsFloatingMinBtn"
+            );
+        const maxButton =
+            document.getElementById(
+                "questionsFloatingMaxBtn"
+            );
+
+        if (!panel) {
+            return;
+        }
+
+        panel.classList.toggle(
+            "is-minimized",
+            this.floatingSessionState
+                .minimized
+        );
+        panel.classList.toggle(
+            "is-maximized",
+            this.floatingSessionState
+                .maximized
+        );
+
+        if (minButton) {
+            minButton.textContent =
+                this.floatingSessionState
+                    .minimized
+                    ? "+"
+                    : "_";
+        }
+
+        if (maxButton) {
+            maxButton.textContent =
+                this.floatingSessionState
+                    .maximized
+                    ? "<>"
+                    : "[]";
+        }
+    },
+
+    setFloatingSessionDefaultPosition(
+        panel
+    ) {
+        const width =
+            panel.offsetWidth || 560;
+        const left =
+            Math.max(
+                16,
+                window.innerWidth -
+                    width -
+                    36
+            );
+        const top = 88;
+
+        panel.style.left = `${left}px`;
+        panel.style.top = `${top}px`;
+        panel.style.right = "auto";
+        this.persistFloatingSessionBounds(
+            panel
+        );
+    },
+
+    persistFloatingSessionBounds(
+        panel = null
+    ) {
+        const target =
+            panel ||
+            document.getElementById(
+                "questionsFloatingWindow"
+            );
+
+        if (!target) {
+            return;
+        }
+
+        this.floatingSessionState.left =
+            target.style.left || "";
+        this.floatingSessionState.top =
+            target.style.top || "";
+        this.floatingSessionState.width =
+            target.style.width || "";
+        this.floatingSessionState.height =
+            target.style.height || "";
+    },
+
+    bringFloatingSessionToFront() {
+        const panel =
+            document.getElementById(
+                "questionsFloatingWindow"
+            );
+
+        if (!panel) {
+            return;
+        }
+
+        this.floatingSessionZIndex += 1;
+        panel.style.zIndex = String(
+            this.floatingSessionZIndex
+        );
+    },
+
+    bindFloatingSession() {
+        const panel =
+            document.getElementById(
+                "questionsFloatingWindow"
+            );
+        const focusBtn =
+            document.getElementById(
+                "questionsFloatingFocusBtn"
+            );
+        const pauseBtn =
+            document.getElementById(
+                "questionsFloatingPauseBtn"
+            );
+
+        focusBtn?.addEventListener(
+            "click",
+            () => {
+                this.floatingSessionState.minimized =
+                    false;
+                this.syncFloatingSessionPanel();
+                this.bringFloatingSessionToFront();
+            }
+        );
+
+        pauseBtn?.addEventListener(
+            "click",
+            () => {
+                this.page.pauseSession();
+            }
+        );
+
+        if (!panel || panel.dataset.bound) {
+            return;
+        }
+
+        panel.dataset.bound = "true";
+        this.handleFloatingPointerMove =
+            (event) => {
+                if (
+                    !this.floatingSessionState
+                        .dragging
+                ) {
+                    return;
+                }
+
+                const target =
+                    document.getElementById(
+                        "questionsFloatingWindow"
+                    );
+
+                if (
+                    !target ||
+                    this.floatingSessionState
+                        .maximized
+                ) {
+                    return;
+                }
+
+                const nextLeft =
+                    event.clientX -
+                    this
+                        .floatingSessionState
+                        .dragOffsetX;
+                const nextTop =
+                    event.clientY -
+                    this
+                        .floatingSessionState
+                        .dragOffsetY;
+                target.style.left =
+                    `${Math.max(
+                        12,
+                        Math.min(
+                            nextLeft,
+                            window.innerWidth -
+                                target.offsetWidth -
+                                12
+                        )
+                    )}px`;
+                target.style.top =
+                    `${Math.max(
+                        12,
+                        Math.min(
+                            nextTop,
+                            window.innerHeight -
+                                target.offsetHeight -
+                                12
+                        )
+                    )}px`;
+            };
+        this.handleFloatingPointerUp =
+            () => {
+                if (
+                    !this.floatingSessionState
+                        .dragging
+                ) {
+                    return;
+                }
+
+                this.floatingSessionState.dragging =
+                    false;
+                panel.classList.remove(
+                    "is-dragging"
+                );
+                this.persistFloatingSessionBounds();
+                document.removeEventListener(
+                    "pointermove",
+                    this.handleFloatingPointerMove
+                );
+                document.removeEventListener(
+                    "pointerup",
+                    this.handleFloatingPointerUp
+                );
+            };
+
+        panel.addEventListener(
+            "pointerdown",
+            () => {
+                this.bringFloatingSessionToFront();
+            }
+        );
+
+        panel
+            .querySelector(
+                "[data-questions-float-drag]"
+            )
+            ?.addEventListener(
+                "pointerdown",
+                (event) => {
+                    if (
+                        event.target.closest(
+                            "button"
+                        ) ||
+                        this
+                            .floatingSessionState
+                            .maximized
+                    ) {
+                        return;
+                    }
+
+                    const rect =
+                        panel.getBoundingClientRect();
+                    this.floatingSessionState.dragging =
+                        true;
+                    this.floatingSessionState.dragOffsetX =
+                        event.clientX -
+                        rect.left;
+                    this.floatingSessionState.dragOffsetY =
+                        event.clientY -
+                        rect.top;
+
+                    panel.classList.add(
+                        "is-dragging"
+                    );
+                    document.addEventListener(
+                        "pointermove",
+                        this.handleFloatingPointerMove
+                    );
+                    document.addEventListener(
+                        "pointerup",
+                        this.handleFloatingPointerUp
+                    );
+                }
+            );
+
+        document
+            .getElementById(
+                "questionsFloatingMinBtn"
+            )
+            ?.addEventListener(
+                "click",
+                () => {
+                    this.floatingSessionState.minimized =
+                        !this
+                            .floatingSessionState
+                            .minimized;
+                    this.syncFloatingSessionPanel();
+                }
+            );
+
+        document
+            .getElementById(
+                "questionsFloatingMaxBtn"
+            )
+            ?.addEventListener(
+                "click",
+                () => {
+                    this.floatingSessionState.maximized =
+                        !this
+                            .floatingSessionState
+                            .maximized;
+                    this.floatingSessionState.minimized =
+                        false;
+
+                    if (
+                        !this
+                            .floatingSessionState
+                            .maximized
+                    ) {
+                        this.persistFloatingSessionBounds(
+                            panel
+                        );
+                    }
+
+                    this.syncFloatingSessionPanel();
+                }
+            );
+
+        document
+            .getElementById(
+                "questionsFloatingCloseBtn"
+            )
+            ?.addEventListener(
+                "click",
+                () => {
+                    this.page.pauseSession();
+                }
+            );
+
+        panel.addEventListener(
+            "mouseup",
+            () => {
+                this.persistFloatingSessionBounds(
+                    panel
+                );
+            }
+        );
     },
 
     renderLoading() {
@@ -151,26 +657,18 @@ window.QuestionsUI = {
     renderLauncherHome() {
         const page =
             this.page;
-
-        if (
-            page.data.bankStatus ===
-            "loading"
-        ) {
-            return this.renderLoading();
-        }
-
-        if (
-            page.data.bankStatus ===
-            "error"
-        ) {
-            return `
-                <section class="questions-card questions-card-loading">
-                    <div class="questions-kicker">Questions</div>
-                    <h2>Banco escolar indisponivel</h2>
-                    <p>${page.getRuntimeNotice()}</p>
-                </section>
-            `;
-        }
+        const bankStatus =
+            page.data.bankStatus;
+        const isLoading =
+            bankStatus === "loading";
+        const isError =
+            bankStatus === "error";
+        const launcherNotice =
+            isError
+                ? page.getRuntimeNotice()
+                : isLoading
+                    ? "Preparando o banco escolar para liberar o treino."
+                    : page.getRuntimeNotice();
 
         const recentRuns =
             QuestionsStore.getRuns({
@@ -185,7 +683,7 @@ window.QuestionsUI = {
                     <div>
                         <div class="questions-kicker">Questions</div>
                         <h2>Escolha o caminho</h2>
-                        <p>Menos leitura, mais acao.</p>
+                        <p>Entre rapido e deixe o detalhe para depois.</p>
                     </div>
 
                     <div class="questions-entry-actions">
@@ -193,9 +691,9 @@ window.QuestionsUI = {
                     </div>
                 </div>
 
-                ${page.getRuntimeNotice() ? `
+                ${launcherNotice ? `
                     <div class="questions-inline-notice">
-                        ${page.getRuntimeNotice()}
+                        ${launcherNotice}
                     </div>
                 ` : ""}
 
@@ -203,27 +701,27 @@ window.QuestionsUI = {
                     <article class="questions-entry-option questions-entry-option-smart">
                         <div class="questions-entry-copy">
                             <h3>Treino inteligente</h3>
-                            <p>Escolhas curtas, tela por tela.</p>
+                            <p>O sistema organiza o bloco com poucas escolhas.</p>
                         </div>
-                        <button class="questions-primary-btn" type="button" data-launcher-view="smart_start">
-                            Abrir
+                        <button class="questions-primary-btn" type="button" data-launcher-view="smart_start" ${isLoading || isError ? "disabled" : ""}>
+                            ${isLoading ? "Preparando..." : isError ? "Indisponivel" : "Comecar"}
                         </button>
                     </article>
 
                     <article class="questions-entry-option">
                         <div class="questions-entry-copy">
                             <h3>Especificar treino</h3>
-                            <p>Abre a tela detalhada atual.</p>
+                            <p>Voce escolhe exatamente o recorte da sessao.</p>
                         </div>
-                        <button class="questions-secondary-btn" type="button" data-launcher-view="specific">
-                            Abrir
+                        <button class="questions-secondary-btn" type="button" data-launcher-view="specific" ${isLoading || isError ? "disabled" : ""}>
+                            ${isLoading ? "Preparando..." : isError ? "Indisponivel" : "Abrir"}
                         </button>
                     </article>
 
                     <article class="questions-entry-option">
                         <div class="questions-entry-copy">
                             <h3>Guardados</h3>
-                            <p>${savedBlocks.length ? `${savedBlocks.length} treino(s) pronto(s) para consultar e refazer.` : "Seus treinos guardados ficam aqui."}</p>
+                            <p>${savedBlocks.length ? `${savedBlocks.length} treino(s) salvo(s) para consultar, duplicar ou refazer.` : "Seus treinos guardados ficam aqui."}</p>
                         </div>
                         <button class="questions-secondary-btn" type="button" data-launcher-view="saved">
                             Abrir
@@ -321,7 +819,7 @@ window.QuestionsUI = {
                 <div class="questions-smart-start-shell">
                     <div class="questions-smart-ring${allAvailableActive ? " is-active" : ""}"></div>
                     <button id="questionsSmartSelectAllBtn" class="questions-smart-ring-toggle${allAvailableActive ? " is-active" : ""}" type="button">
-                        ${allAvailableActive ? "Todas ativas" : "Selecionar todas"}
+                        ${allAvailableActive ? "Desmarcar" : "Marcar todas"}
                     </button>
 
                     <div class="questions-smart-orbit">
@@ -398,31 +896,13 @@ window.QuestionsUI = {
             subjectOptions.every(
                 (item) => item.active
             );
-        const coachHint =
-            page.shouldShowCoachHint(
-                "smart_subjects"
-            )
-                ? page.getCoachHintText(
-                    "smart_subjects"
-                )
-                : "";
-        const positionClasses = [
-            "is-pos-1",
-            "is-pos-2",
-            "is-pos-3",
-            "is-pos-4",
-            "is-pos-5",
-            "is-pos-6",
-            "is-pos-7",
-            "is-pos-8",
-            "is-pos-9",
-            "is-pos-10",
-            "is-pos-11",
-            "is-pos-12"
-        ];
+        const visibleSubjects =
+            subjectOptions.slice(0, 12);
+        const totalSubjects =
+            visibleSubjects.length || 1;
 
         return `
-            <section class="questions-card questions-entry-subview questions-smart-start-card">
+            <section class="questions-card questions-entry-subview questions-smart-start-card questions-smart-subject-card">
                 <div class="questions-head questions-entry-head">
                     <div>
                         <div class="questions-kicker">Treino inteligente</div>
@@ -440,29 +920,26 @@ window.QuestionsUI = {
                     </div>
                 ` : ""}
 
-                ${coachHint ? `
-                    <div class="questions-smart-coach" style="--coach-steps: ${Math.max(coachHint.length, 24)}">
-                        <span>${coachHint}</span>
-                    </div>
-                ` : ""}
-
                 ${subjectOptions.length ? `
                     <div class="questions-smart-start-shell">
                         <div class="questions-smart-ring${allActive ? " is-active" : ""}"></div>
                         <button id="questionsSmartSubjectsSelectAllBtn" class="questions-smart-ring-toggle${allActive ? " is-active" : ""}" type="button">
-                            ${allActive ? "Todas ativas" : "Selecionar todas"}
+                            ${allActive ? "Desmarcar" : "Marcar todas"}
                         </button>
 
-                        <div class="questions-smart-subject-orbit">
+                        <div class="questions-smart-subject-orbit" style="--questions-smart-subject-count: ${totalSubjects};">
                             <div class="questions-smart-subject-grid">
-                                ${subjectOptions.slice(0, 12).map((item, index) => `
+                                ${visibleSubjects.map((item, index) => `
                                     <button
-                                        class="questions-smart-node questions-smart-subject-node ${positionClasses[index] || ""}${item.active ? " is-active" : ""}"
+                                        class="questions-smart-node questions-smart-subject-node${item.active ? " is-active" : ""}"
                                         type="button"
+                                        style="--questions-smart-node-transform: translate(-50%, -50%) rotate(${(-90 + ((360 / totalSubjects) * index)).toFixed(2)}deg) translateY(calc(var(--questions-smart-subject-radius, 248px) * -1)) rotate(${(90 - ((360 / totalSubjects) * index)).toFixed(2)}deg);"
                                         data-smart-subject-option="${item.key}"
                                     >
-                                        <strong>${item.label}</strong>
-                                        <span>${item.topicCount} assunto(s)</span>
+                                        <div class="questions-smart-node-copy">
+                                            <strong>${item.label}</strong>
+                                            <span>${item.topicCount} assunto(s)</span>
+                                        </div>
                                     </button>
                                 `).join("")}
                             </div>
@@ -524,22 +1001,6 @@ window.QuestionsUI = {
             QuestionsService.getSmartGoalOptions(
                 page
             );
-        const baseOptions =
-            QuestionsService.getBaseOptions(
-                page
-            );
-        const series =
-            QuestionsService.getSeriesOptions(
-                page
-            );
-        const subjects =
-            QuestionsService.getSubjectOptions(
-                page
-            );
-        const smartValidation =
-            QuestionsService.getSmartLauncherValidation(
-                page
-            );
         const preview =
             page.buildSmartRoutePreview();
         const amountOptions =
@@ -548,34 +1009,47 @@ window.QuestionsUI = {
             QuestionsStore.getSmartProfiles();
         const savedBlocks =
             QuestionsStore.getSavedBlocks();
-        const excludedSummary = [
-            ...(ctx.smartExcludedSeries || []).map(
-                (serie) =>
-                    `${serie}a serie`
-            ),
-            ...(ctx.smartExcludedBases || []),
-            ...(ctx.smartExcludedSubjects || [])
-                .map((subjectKey) =>
-                    subjects.find(
-                        (subject) =>
-                            subject.key ===
-                            subjectKey
-                    )?.label || ""
+        const activeSeries =
+            page.getSmartStartOptions()
+                .filter(
+                    (item) =>
+                        item.type === "serie" &&
+                        item.active &&
+                        !item.disabled
+                );
+        const activeSubjects =
+            page.getSmartSubjectOptions().filter(
+                (item) => item.active
+            );
+        const hiddenSubjectCount =
+            Math.max(
+                activeSubjects.length - 6,
+                0
+            );
+        const visibleTopics =
+            preview.isReady
+                ? preview.topics.slice(0, 5)
+                : [];
+        const hiddenTopicCount =
+            preview.isReady
+                ? Math.max(
+                    preview.topics.length -
+                        visibleTopics.length,
+                    0
                 )
-                .filter(Boolean)
-        ];
+                : 0;
 
         return `
-            <section class="questions-card questions-entry-subview">
+            <section class="questions-card questions-entry-subview questions-smart-final-card">
                 <div class="questions-head questions-entry-head">
                     <div>
                         <div class="questions-kicker">Treino inteligente</div>
-                        <h2>Menos ajuste, mais continuidade</h2>
-                        <p>Voce so define o objetivo e remove o que nao quer estudar. O sistema monta o bloco inicial dentro do recorte elegivel.</p>
+                        <div class="questions-smart-step">3/3</div>
+                        <h2>Pronto para comecar</h2>
                     </div>
 
                     <div class="questions-entry-actions">
-                        <button class="questions-secondary-btn" type="button" data-launcher-view="home">Voltar</button>
+                        <button class="questions-secondary-btn questions-review-btn" type="button" data-launcher-view="smart_subjects">Conferir</button>
                     </div>
                 </div>
 
@@ -585,201 +1059,107 @@ window.QuestionsUI = {
                     </div>
                 ` : ""}
 
-                <div class="questions-launcher-overview questions-launcher-overview-smart">
-                    <article class="questions-route-card">
-                        <div class="questions-panel-label">Resumo do recorte</div>
-                        <div class="questions-route-grid">
-                            <article class="questions-route-stat">
-                                <strong>${smartValidation.eligibleSeries.length}</strong>
-                                <span>series elegiveis</span>
-                            </article>
-                            <article class="questions-route-stat">
-                                <strong>${smartValidation.eligibleSubjects.length}</strong>
-                                <span>materias elegiveis</span>
-                            </article>
-                            <article class="questions-route-stat">
-                                <strong>${smartValidation.eligibleTopics.length}</strong>
-                                <span>assuntos elegiveis</span>
-                            </article>
-                            <article class="questions-route-stat">
-                                <strong>${smartValidation.eligibleQuestionCount}</strong>
-                                <span>questoes liberadas</span>
-                            </article>
+                ${preview.isReady ? `
+                    <section class="questions-smart-final-launch">
+                        <div class="questions-smart-final-launch-head">
+                            <span class="questions-panel-label">Bloco pronto</span>
+                            <strong>${preview.goal?.label || "Treino inteligente"}</strong>
                         </div>
+                        <button id="questionsSmartStartBtn" class="questions-smart-start-hero-btn" type="button">
+                            Comecar agora
+                        </button>
+                        <div class="questions-smart-final-stats">
+                            <span>${activeSeries.length} serie(s)</span>
+                            <span>${activeSubjects.length} materia(s)</span>
+                            <span>${preview.topics.length} assunto(s)</span>
+                            <span>${preview.eligibleQuestionCount || preview.availableCount || 0} questoes</span>
+                            <span>${preview.estimatedDuration}</span>
+                        </div>
+                    </section>
 
-                        ${excludedSummary.length ? `
-                            <div class="questions-route-stack">
-                                <div class="questions-summary-label">Exclusoes ativas</div>
-                                <div class="questions-badge-row">
-                                    ${excludedSummary.map((item) => `
-                                        <span class="questions-badge questions-badge-muted">
-                                            ${item}
-                                        </span>
-                                    `).join("")}
-                                </div>
-                            </div>
-                        ` : `
-                            <div class="questions-empty-inline questions-empty-inline-soft">
-                                Nenhuma exclusao ativa. Todo o banco escolar elegivel continua disponivel.
-                            </div>
-                        `}
-                    </article>
-
-                    <article class="questions-route-card">
-                        <div class="questions-panel-label">Leitura da proxima sessao</div>
-                        ${preview.isReady ? `
-                            <div class="questions-route-grid">
-                                <article class="questions-route-stat">
-                                    <strong>${preview.serieLabel}</strong>
-                                    <span>serie</span>
-                                </article>
-                                <article class="questions-route-stat">
-                                    <strong>${preview.materiaLabel}</strong>
-                                    <span>materia base</span>
-                                </article>
-                                <article class="questions-route-stat">
-                                    <strong>${preview.topics.length}</strong>
-                                    <span>assunto(s)</span>
-                                </article>
-                                <article class="questions-route-stat">
-                                    <strong>${preview.estimatedDuration}</strong>
-                                    <span>tempo alvo</span>
-                                </article>
-                            </div>
-
-                            <div class="questions-route-stack">
-                                <div class="questions-summary-label">${preview.objectiveLabel}</div>
-                                <strong>${preview.goal?.label || preview.objectiveLabel}</strong>
-                                <span>${preview.note}</span>
-                                ${preview.topics.length ? `
-                                    <div class="questions-badge-row">
-                                        ${preview.topics.map((topic) => `
-                                            <span class="questions-badge${preview.focusLabel === topic.label ? " is-focus" : ""}">
-                                                ${topic.label}
-                                            </span>
-                                        `).join("")}
-                                    </div>
+                    <article class="questions-route-card questions-smart-final-hero">
+                        <div class="questions-route-stack">
+                            <div class="questions-summary-label">Recorte</div>
+                            <div class="questions-static-tokens">
+                                ${activeSeries.map((item) => `
+                                    <span class="questions-static-token">${item.label}</span>
+                                `).join("")}
+                                ${activeSubjects.slice(0, 4).map((item) => `
+                                    <span class="questions-static-token">${item.label}</span>
+                                `).join("")}
+                                ${hiddenSubjectCount ? `
+                                    <span class="questions-static-token questions-static-token-muted">+${hiddenSubjectCount} materias</span>
                                 ` : ""}
                             </div>
-                        ` : `
-                            <div class="questions-issue-list">
-                                ${(preview.issues || [preview.reason]).map((issue) => `
-                                    <div class="questions-issue-item">${issue}</div>
+                        </div>
+
+                        <div class="questions-route-stack">
+                            <div class="questions-summary-label">Assuntos</div>
+                            <div class="questions-static-tokens">
+                                ${visibleTopics.map((topic) => `
+                                    <span class="questions-static-token${preview.focusLabel === topic.label ? " is-focus" : ""}">
+                                        ${topic.label}
+                                    </span>
                                 `).join("")}
-                            </div>
-                        `}
-                    </article>
-                </div>
-
-                <div class="questions-grid">
-                    <article class="questions-panel">
-                        <div class="questions-panel-head">
-                            <div>
-                                <div class="questions-panel-label">Objetivo do treino</div>
-                                <div class="questions-panel-meta">Escolha o comportamento da sugestao antes de iniciar.</div>
+                                ${hiddenTopicCount ? `
+                                    <span class="questions-static-token questions-static-token-muted">+${hiddenTopicCount}</span>
+                                ` : ""}
                             </div>
                         </div>
-                        <div class="questions-inline-grid">
+                    </article>
+                ` : `
+                    <div class="questions-issue-list">
+                        ${(preview.issues || [preview.reason]).map((issue) => `
+                            <div class="questions-issue-item">${issue}</div>
+                        `).join("")}
+                    </div>
+                `}
+
+                <article class="questions-panel questions-smart-final-quick">
+                    <div class="questions-smart-final-quick-row">
+                        <div class="questions-panel-label">Objetivo</div>
+                        <div class="questions-inline-grid questions-smart-final-pills">
                             ${goalOptions.map((goal) => `
-                                <button class="questions-chip${ctx.smartGoal === goal.key ? " is-active" : ""}" type="button" data-smart-goal="${goal.key}">
-                                    <strong>${goal.label}</strong>
-                                    <span>${goal.note}</span>
+                                <button class="questions-pill${ctx.smartGoal === goal.key ? " is-active" : ""}" type="button" data-smart-goal="${goal.key}">
+                                    ${goal.label}
                                 </button>
                             `).join("")}
                         </div>
-                    </article>
+                    </div>
 
-                    <article class="questions-panel">
-                        <div class="questions-panel-head">
-                            <div>
-                                <div class="questions-panel-label">Base de treino</div>
-                                <div class="questions-panel-meta">Exclua o que nao deve entrar no recorte automatico.</div>
-                            </div>
-                        </div>
-                        <div class="questions-chip-grid">
-                            ${baseOptions.map((base) => `
-                                <button class="questions-chip${ctx.smartExcludedBases.includes(base.key) ? " is-excluded" : ""}${base.available ? "" : " is-disabled"}" type="button" data-smart-base="${base.key}" ${base.available ? "" : "disabled"}>
-                                    <strong>${base.label}</strong>
-                                    <span>${base.available ? (ctx.smartExcludedBases.includes(base.key) ? "Excluida do treino inteligente" : "Elegivel para o recorte") : base.note}</span>
-                                </button>
-                            `).join("")}
-                        </div>
-                    </article>
-
-                    <article class="questions-panel">
-                        <div class="questions-panel-head">
-                            <div>
-                                <div class="questions-panel-label">Series</div>
-                                <div class="questions-panel-meta">Toque para remover series inteiras do recorte.</div>
-                            </div>
-                            <div class="questions-inline-actions">
-                                <button id="questionsSmartClearExclusionsBtn" class="questions-link-btn" type="button">Limpar exclusoes</button>
-                            </div>
-                        </div>
-                        <div class="questions-inline-grid">
-                            ${series.map((serie) => `
-                                <button class="questions-pill${ctx.smartExcludedSeries.includes(serie.key) ? " is-excluded" : ""}" type="button" data-smart-serie="${serie.key}">
-                                    ${serie.label}
-                                </button>
-                            `).join("")}
-                        </div>
-                    </article>
-
-                    <article class="questions-panel">
-                        <div class="questions-panel-head">
-                            <div>
-                                <div class="questions-panel-label">Materias</div>
-                                <div class="questions-panel-meta">Exclua materias inteiras sem precisar abrir os assuntos.</div>
-                            </div>
-                        </div>
-                        <div class="questions-chip-grid">
-                            ${subjects.map((subject) => `
-                                <button class="questions-chip${ctx.smartExcludedSubjects.includes(subject.key) ? " is-excluded" : ""}" type="button" data-smart-subject="${subject.key}">
-                                    <strong>${subject.label}</strong>
-                                    <span>${subject.topicCount} assuntos mapeados</span>
-                                </button>
-                            `).join("")}
-                        </div>
-                    </article>
-
-                    <article class="questions-panel">
-                        <div class="questions-panel-head">
-                            <div>
-                                <div class="questions-panel-label">Quantidade de questoes</div>
-                                <div class="questions-panel-meta">Esse e o unico ajuste manual do tamanho do bloco.</div>
-                            </div>
-                        </div>
-                        <div class="questions-inline-grid">
+                    <div class="questions-smart-final-quick-row">
+                        <div class="questions-panel-label">Quantidade</div>
+                        <div class="questions-inline-grid questions-smart-final-pills">
                             ${amountOptions.map((amount) => `
                                 <button class="questions-pill${ctx.quantidadeQuestoes === amount ? " is-active" : ""}" type="button" data-amount="${amount}">
                                     ${amount}
                                 </button>
                             `).join("")}
                         </div>
-                    </article>
-                </div>
+                    </div>
+                </article>
 
-                <div class="questions-entry-footer">
-                    <button id="questionsSmartSaveBlockBtn" class="questions-secondary-btn" type="button" ${preview.isReady ? "" : "disabled"}>
-                        Salvar bloco
+                <div class="questions-smart-final-actions">
+                    <button id="questionsSmartClearExclusionsFooterBtn" class="questions-secondary-btn" type="button">
+                        Limpar recorte
                     </button>
                     <button id="questionsSmartSaveProfileBtn" class="questions-secondary-btn" type="button">
                         Salvar perfil
                     </button>
+                    <button id="questionsSmartSaveBlockBtn" class="questions-secondary-btn" type="button" ${preview.isReady ? "" : "disabled"}>
+                        Guardar treino
+                    </button>
+                </div>
+
+                <div class="questions-entry-footer">
                     <button class="questions-secondary-btn" type="button" data-launcher-view="smart_profiles">
                         Perfis salvos${smartProfiles.length ? ` (${smartProfiles.length})` : ""}
                     </button>
                     <button class="questions-secondary-btn" type="button" data-launcher-view="saved">
                         Blocos salvos${savedBlocks.length ? ` (${savedBlocks.length})` : ""}
                     </button>
-                    <button id="questionsSmartClearExclusionsFooterBtn" class="questions-secondary-btn" type="button">
-                        Limpar exclusoes
-                    </button>
-                    <button id="questionsSmartStartBtn" class="questions-primary-btn" type="button" ${preview.isReady ? "" : "disabled"}>
-                        Comecar com sugestao
-                    </button>
                     <button class="questions-secondary-btn" type="button" data-launcher-view="specific">
-                        Abrir modo detalhado
+                        Ir para especificar treino
                     </button>
                 </div>
             </section>
@@ -1510,10 +1890,6 @@ window.QuestionsUI = {
             QuestionsState.getLastAnswer();
         const meta =
             QuestionsState.getMeta();
-        const instruction =
-            QuestionsService.getQuestionInstruction(
-                question
-            );
         const progress =
             session.length
                 ? (
@@ -1531,41 +1907,63 @@ window.QuestionsUI = {
         }
 
         return `
-            <section class="questions-card questions-session-card">
-                <div class="questions-session-top">
-                    <div>
-                        <div class="questions-kicker">${meta.modeLabel || "Treino"}</div>
-                        <h2>${question.subjectLabel}</h2>
-                        <p>${question.topicLabel}${question.subtopicLabel ? ` | ${question.subtopicLabel}` : ""}</p>
-                    </div>
-                    <button id="questionsBackBtn" class="questions-secondary-btn" type="button">Pausar</button>
-                </div>
-
-                ${this.renderSessionMeta(meta, current, session.length)}
-
-                <div class="questions-progress-shell">
-                    <div class="questions-progress-copy">
-                        <span>${current + 1}/${session.length}</span>
-                        <span>${meta.serieLabel || ""}</span>
-                    </div>
-                    <div class="questions-progress-bar">
-                        <div class="questions-progress-fill" style="width:${progress}%"></div>
-                    </div>
-                </div>
-
-                <article class="questions-question-card">
-                    <div class="questions-question-meta">
-                        <span>${this.getTypeLabel(question.type)}</span>
-                        <span>${question.difficultyLabel}</span>
-                        <span>${question.cognition}</span>
-                        <span>${question.expectedTime}s estimados</span>
-                    </div>
-                    <div class="questions-question-instruction">${instruction}</div>
+            <section class="questions-card questions-session-card questions-session-card--minimal">
+                <article class="questions-question-card questions-question-card--minimal">
                     <h3>${question.prompt}</h3>
                     <div class="questions-answer-area">
                         ${this.renderAnswerBlock(question, answer)}
                     </div>
+                    ${this.renderCommentPanel(
+                        question,
+                        answer
+                    )}
                 </article>
+
+                <details class="questions-session-drawer">
+                    <summary class="questions-session-drawer-toggle">Acompanhar progresso</summary>
+                    <div class="questions-session-drawer-body">
+                        <div class="questions-session-drawer-grid">
+                            <div>
+                                <strong>${current + 1}/${session.length}</strong>
+                                <span>Questao atual</span>
+                            </div>
+                            <div>
+                                <strong>${Math.round(progress)}%</strong>
+                                <span>Concluido</span>
+                            </div>
+                            <div>
+                                <strong>${meta.materiaLabel || "Materia"}</strong>
+                                <span>Materia</span>
+                            </div>
+                            <div>
+                                <strong>${meta.serieLabel || "-"}</strong>
+                                <span>Serie</span>
+                            </div>
+                        </div>
+                        <div class="questions-session-drawer-actions">
+                            <button id="questionsBackBtn" class="questions-secondary-btn" type="button">Pausar treino</button>
+                        </div>
+                    </div>
+                </details>
+            </section>
+        `;
+    },
+
+    renderCommentPanel(
+        question,
+        answer
+    ) {
+        if (!answer) {
+            return "";
+        }
+
+        return `
+            <section class="questions-comment-panel${answer ? " is-ready" : ""}">
+                <div class="questions-panel-label">Comentario</div>
+                <p>${question.explanation || "Comentario ainda nao preenchido para esta questao."}</p>
+                ${!answer.correct ? `
+                    <div class="questions-comment-answer">Resposta esperada: ${answer.correctAnswerLabel || "Nao preenchida"}</div>
+                ` : ""}
             </section>
         `;
     },
@@ -1619,13 +2017,19 @@ window.QuestionsUI = {
                         !answer.correct;
 
                     return `
-                        <button class="questions-option${isCorrect ? " is-correct" : ""}${isWrong ? " is-wrong" : ""}" type="button" data-answer-index="${index}" ${isLocked ? "disabled" : ""}>
+                        <button class="questions-option${isCorrect ? " is-correct" : ""}${isWrong ? " is-wrong" : ""}" type="button" data-answer-select="${index}" ${isLocked ? "disabled" : ""}>
                             <span class="questions-option-index">${String.fromCharCode(65 + index)}</span>
                             <span>${option}</span>
                         </button>
                     `;
                 }).join("")}
             </div>
+            ${!answer ? `
+                <button id="questionsChoiceConfirmBtn" class="questions-confirm-btn" type="button" disabled>
+                    <span class="questions-confirm-icon">✓</span>
+                    Confirmar
+                </button>
+            ` : ""}
             ${answer ? this.renderFeedback(answer) : ""}
         `;
     },
@@ -1641,7 +2045,6 @@ window.QuestionsUI = {
 
         return `
             <div class="questions-order-shell">
-                <div class="questions-order-note">Ajuste a ordem e confirme.</div>
                 <div id="questionsOrderingList" class="questions-order-list">
                     ${items.map((item) => `
                         <article class="questions-order-item" data-order-value="${String(item).replace(/"/g, "&quot;")}">
@@ -1655,8 +2058,9 @@ window.QuestionsUI = {
                     `).join("")}
                 </div>
 
-                <button id="questionsOrderingSubmitBtn" class="questions-primary-btn" type="button" ${isLocked ? "disabled" : ""}>
-                    Confirmar ordem
+                <button id="questionsOrderingSubmitBtn" class="questions-confirm-btn" type="button" ${isLocked ? "disabled" : ""}>
+                    <span class="questions-confirm-icon">✓</span>
+                    Confirmar
                 </button>
             </div>
             ${answer ? this.renderFeedback(answer) : ""}
@@ -1667,7 +2071,10 @@ window.QuestionsUI = {
         return `
             <form id="questionsInputForm" class="questions-input-form">
                 <input id="questionsInputField" class="questions-input-field" type="text" placeholder="Digite sua resposta" ${answer ? "disabled" : ""}>
-                <button class="questions-primary-btn" type="submit" ${answer ? "disabled" : ""}>Responder</button>
+                <button class="questions-confirm-btn" type="submit" ${answer ? "disabled" : ""}>
+                    <span class="questions-confirm-icon">✓</span>
+                    Confirmar
+                </button>
             </form>
             ${answer ? this.renderFeedback(answer) : ""}
         `;
@@ -1675,18 +2082,12 @@ window.QuestionsUI = {
 
     renderFeedback(answer) {
         return `
-            <div class="questions-feedback ${answer.correct ? "is-correct" : "is-wrong"}">
-                <strong>${answer.correct ? "Resposta correta" : "Resposta incorreta"}</strong>
-                ${!answer.correct ? `
-                    <div class="questions-feedback-answer">
-                        <span>Sua resposta: ${answer.selectedAnswerLabel || "Nao registrada"}</span>
-                        <span>Resposta esperada: ${answer.correctAnswerLabel || "Nao preenchida"}</span>
-                    </div>
-                ` : ""}
-                <p>${answer.question.explanation || "Comentario ainda nao preenchido para esta questao."}</p>
+            <div class="questions-feedback questions-feedback--minimal ${answer.correct ? "is-correct" : "is-wrong"}">
                 <div class="questions-feedback-foot">
-                    <span>${QuestionsService.formatTime(answer.timeMs)}</span>
-                    <button id="questionsContinueBtn" class="questions-primary-btn" type="button">Proxima questao</button>
+                    <button id="questionsContinueBtn" class="questions-confirm-btn" type="button">
+                        <span class="questions-confirm-icon">→</span>
+                        Proxima
+                    </button>
                 </div>
             </div>
         `;
@@ -2502,19 +2903,65 @@ window.QuestionsUI = {
 
     bindSession() {
         document
-            .querySelectorAll("[data-answer-index]")
+            .querySelectorAll("[data-answer-select]")
             .forEach((button) => {
                 button.addEventListener(
                     "click",
                     () => {
-                        this.page.submitAnswer({
-                            index: Number(
-                                button.dataset.answerIndex
+                        document
+                            .querySelectorAll(
+                                "[data-answer-select]"
                             )
-                        });
+                            .forEach((item) => {
+                                item.classList.remove(
+                                    "is-selected"
+                                );
+                            });
+
+                        button.classList.add(
+                            "is-selected"
+                        );
+
+                        const confirmBtn =
+                            document.getElementById(
+                                "questionsChoiceConfirmBtn"
+                            );
+
+                        if (confirmBtn) {
+                            confirmBtn.disabled =
+                                false;
+                            confirmBtn.dataset.selectedIndex =
+                                button.dataset.answerSelect || "";
+                        }
                     }
                 );
             });
+
+        document.getElementById(
+            "questionsChoiceConfirmBtn"
+        )?.addEventListener(
+            "click",
+            (event) => {
+                const selectedIndex =
+                    Number(
+                        event.currentTarget
+                            ?.dataset
+                            ?.selectedIndex
+                    );
+
+                if (
+                    !Number.isFinite(
+                        selectedIndex
+                    )
+                ) {
+                    return;
+                }
+
+                this.page.submitAnswer({
+                    index: selectedIndex
+                });
+            }
+        );
 
         document.getElementById(
             "questionsInputForm"

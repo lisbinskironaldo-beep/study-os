@@ -321,6 +321,26 @@ window.QuestionsService = {
         const ctx =
             context ||
             QuestionsContext.get();
+        const selectedSeries =
+            new Set(
+                (ctx.smartSelectedSeries || [])
+                    .map((item) =>
+                        Number(item)
+                    )
+                    .filter((item) =>
+                        Number.isFinite(item)
+                    )
+            );
+        const selectedSubjects =
+            new Set(
+                (ctx.smartSelectedSubjects || [])
+                    .map((item) =>
+                        String(item || "")
+                            .trim()
+                            .toLowerCase()
+                    )
+                    .filter(Boolean)
+            );
         const excludedSeries =
             new Set(
                 (ctx.smartExcludedSeries || [])
@@ -376,8 +396,28 @@ window.QuestionsService = {
                 }
 
                 if (
+                    selectedSeries.size &&
+                    !topic.serie.some((serie) =>
+                        selectedSeries.has(
+                            Number(serie)
+                        )
+                    )
+                ) {
+                    return false;
+                }
+
+                if (
                     excludedBases.has(
                         topic.baseKey
+                    )
+                ) {
+                    return false;
+                }
+
+                if (
+                    selectedSubjects.size &&
+                    !selectedSubjects.has(
+                        topic.subjectKey
                     )
                 ) {
                     return false;

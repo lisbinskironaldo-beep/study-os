@@ -1,5 +1,6 @@
 window.QuestionsContext = {
     key: "questions_context_v3",
+    saveTimer: null,
 
     defaults: {
         mode: "ASSUNTO_UNICO",
@@ -14,6 +15,8 @@ window.QuestionsContext = {
         quantidadeQuestoes: 5,
         estrategiaMistura: "equilibrada",
         smartGoal: "continue",
+        smartSelectedSeries: [],
+        smartSelectedSubjects: [],
         smartExcludedSeries: [],
         smartExcludedBases: [],
         smartExcludedSubjects: [],
@@ -63,6 +66,40 @@ window.QuestionsContext = {
                 next.smartGoal ||
                     "continue"
             ).trim() || "continue";
+        next.smartSelectedSeries =
+            Array.isArray(
+                next.smartSelectedSeries
+            )
+                ? [
+                    ...new Set(
+                        next.smartSelectedSeries
+                            .map((item) =>
+                                Number(item)
+                            )
+                            .filter((item) =>
+                                Number.isFinite(item)
+                            )
+                    )
+                ]
+                : [];
+        next.smartSelectedSubjects =
+            Array.isArray(
+                next.smartSelectedSubjects
+            )
+                ? [
+                    ...new Set(
+                        next.smartSelectedSubjects
+                            .map((item) =>
+                                String(
+                                    item || ""
+                                )
+                                    .trim()
+                                    .toLowerCase()
+                            )
+                            .filter(Boolean)
+                    )
+                ]
+                : [];
         next.topicSearch =
             String(
                 next.topicSearch || ""
@@ -144,11 +181,28 @@ window.QuestionsContext = {
         return next;
     },
 
-    save() {
-        localStorage.setItem(
-            this.key,
-            JSON.stringify(this.data)
-        );
+    save(immediate = false) {
+        if (this.saveTimer) {
+            clearTimeout(this.saveTimer);
+            this.saveTimer = null;
+        }
+
+        const write = () => {
+            localStorage.setItem(
+                this.key,
+                JSON.stringify(this.data)
+            );
+        };
+
+        if (immediate) {
+            write();
+            return;
+        }
+
+        this.saveTimer = setTimeout(() => {
+            this.saveTimer = null;
+            write();
+        }, 80);
     },
 
     set(patch = {}, shouldSave = true) {

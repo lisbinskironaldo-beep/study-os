@@ -119,9 +119,25 @@ window.QuestionsPage = {
         this.loadCoachState();
         QuestionsUI.init(this);
         this.bindSyncBridge();
+        this.clearRuntimeNotice();
+
+        if (
+            this.data.bankStatus ===
+                "ready" &&
+            this.data.schoolCatalog.length
+        ) {
+            this.syncContext();
+            if (this.consumePendingSync()) {
+                return;
+            }
+            this.openLauncher("home");
+            return;
+        }
 
         this.data.bankStatus = "loading";
-        QuestionsUI.render();
+        QuestionsState.openLauncher("home");
+        this.registerCoachView("home");
+        this.render();
 
         await this.loadSchoolCatalog();
         this.syncContext();
@@ -441,7 +457,7 @@ window.QuestionsPage = {
                 );
         });
 
-        QuestionsContext.replace({
+        const normalizedContext = {
             ...snapshot,
             mode,
             base:
@@ -464,7 +480,19 @@ window.QuestionsPage = {
                 false,
             quantidadeQuestoes,
             estrategiaMistura
-        });
+        };
+        const nextContext =
+            QuestionsContext.buildState(
+                normalizedContext
+            );
+        const hasChanged =
+            JSON.stringify(snapshot) !==
+            JSON.stringify(nextContext);
+
+        QuestionsContext.replace(
+            nextContext,
+            hasChanged
+        );
 
         return QuestionsContext.get();
     },
@@ -805,18 +833,12 @@ window.QuestionsPage = {
             QuestionsService.getSeriesOptions(
                 this
             );
-        const availableSeriesKeys =
-            availableSeries.map(
-                (item) => item.key
-            );
         const selectedSeries =
-            availableSeriesKeys.filter(
-                (serieKey) =>
-                    !(
-                        ctx.smartExcludedSeries ||
-                        []
-                    ).includes(serieKey)
-            );
+            Array.isArray(
+                ctx.smartSelectedSeries
+            )
+                ? ctx.smartSelectedSeries
+                : [];
 
         return [
             ...availableSeries.map((serie) => ({
@@ -911,8 +933,8 @@ window.QuestionsPage = {
             (subject) => ({
                 ...subject,
                 active:
-                    !(
-                        ctx.smartExcludedSubjects ||
+                    (
+                        ctx.smartSelectedSubjects ||
                         []
                     ).includes(subject.key),
                 disabled: false
@@ -952,8 +974,20 @@ window.QuestionsPage = {
         this.dismissCoachHint(
             "smart_start"
         );
+        const availableSeries =
+            QuestionsService.getSeriesOptions(
+                this
+            ).map((item) => item.key);
+        const selectedSeries =
+            QuestionsContext.get()
+                .smartSelectedSeries || [];
+
         this.setSmartConfig({
-            smartExcludedSeries: []
+            smartSelectedSeries:
+                selectedSeries.length ===
+                availableSeries.length
+                    ? []
+                    : [...availableSeries]
         });
     },
 
@@ -996,8 +1030,20 @@ window.QuestionsPage = {
         this.dismissCoachHint(
             "smart_subjects"
         );
+        const availableSubjects =
+            this.getSmartSubjectOptions().map(
+                (item) => item.key
+            );
+        const selectedSubjects =
+            QuestionsContext.get()
+                .smartSelectedSubjects || [];
+
         this.setSmartConfig({
-            smartExcludedSubjects: []
+            smartSelectedSubjects:
+                selectedSubjects.length ===
+                availableSubjects.length
+                    ? []
+                    : [...availableSubjects]
         });
     },
 
@@ -1045,23 +1091,23 @@ window.QuestionsPage = {
             return;
         }
 
-        const excluded =
+        const selected =
             Array.isArray(
-                ctx.smartExcludedSeries
+                ctx.smartSelectedSeries
             )
                 ? [
-                    ...ctx.smartExcludedSeries
+                    ...ctx.smartSelectedSeries
                 ]
                 : [];
         const next =
-            excluded.includes(serie)
-                ? excluded.filter(
+            selected.includes(serie)
+                ? selected.filter(
                     (item) => item !== serie
                 )
-                : [...excluded, serie];
+                : [...selected, serie];
 
         this.setSmartConfig({
-            smartExcludedSeries: next
+            smartSelectedSeries: next
         });
     },
 
@@ -1110,28 +1156,30 @@ window.QuestionsPage = {
 
         const ctx =
             QuestionsContext.get();
-        const excluded =
+        const selected =
             Array.isArray(
-                ctx.smartExcludedSubjects
+                ctx.smartSelectedSubjects
             )
                 ? [
-                    ...ctx.smartExcludedSubjects
+                    ...ctx.smartSelectedSubjects
                 ]
                 : [];
         const next =
-            excluded.includes(key)
-                ? excluded.filter(
+            selected.includes(key)
+                ? selected.filter(
                     (item) => item !== key
                 )
-                : [...excluded, key];
+                : [...selected, key];
 
         this.setSmartConfig({
-            smartExcludedSubjects: next
+            smartSelectedSubjects: next
         });
     },
 
     clearSmartExclusions() {
         this.setSmartConfig({
+            smartSelectedSeries: [],
+            smartSelectedSubjects: [],
             smartExcludedSeries: [],
             smartExcludedBases: [],
             smartExcludedSubjects: []
@@ -1148,6 +1196,14 @@ window.QuestionsPage = {
             smartGoal:
                 ctx.smartGoal ||
                 "continue",
+            selectedSeries: [
+                ...(ctx.smartSelectedSeries ||
+                    [])
+            ],
+            selectedSubjects: [
+                ...(ctx.smartSelectedSubjects ||
+                    [])
+            ],
             excludedSeries: [
                 ...(ctx.smartExcludedSeries ||
                     [])
@@ -1180,8 +1236,8 @@ window.QuestionsPage = {
             QuestionsService.getSubjectOptions(
                 this
             );
-        const excludedSubjects =
-            (ctx.smartExcludedSubjects || [])
+        const selectedSubjects =
+            (ctx.smartSelectedSubjects || [])
                 .map((subjectKey) =>
                     subjects.find(
                         (subject) =>
@@ -1190,25 +1246,25 @@ window.QuestionsPage = {
                     )?.label || ""
                 )
                 .filter(Boolean);
-        const excludedSeries =
-            (ctx.smartExcludedSeries || []).map(
+        const selectedSeries =
+            (ctx.smartSelectedSeries || []).map(
                 (serie) => `${serie}a serie`
             );
         const pieces = [];
 
-        if (excludedSubjects.length) {
+        if (selectedSubjects.length) {
             pieces.push(
-                `sem ${excludedSubjects
+                selectedSubjects
                     .slice(0, 2)
-                    .join(" e ")}`
+                    .join(" e ")
             );
         } else if (
-            excludedSeries.length
+            selectedSeries.length
         ) {
             pieces.push(
-                `sem ${excludedSeries
+                selectedSeries
                     .slice(0, 2)
-                    .join(" e ")}`
+                    .join(" e ")
             );
         }
 
@@ -1269,6 +1325,14 @@ window.QuestionsPage = {
             smartGoal:
                 profile.smartGoal ||
                 "continue",
+            smartSelectedSeries: [
+                ...(profile.selectedSeries ||
+                    [])
+            ],
+            smartSelectedSubjects: [
+                ...(profile.selectedSubjects ||
+                    [])
+            ],
             smartExcludedSeries: [
                 ...(profile.excludedSeries ||
                     [])
@@ -1975,73 +2039,80 @@ window.QuestionsPage = {
             return null;
         }
 
-        const session =
-            QuestionsState.getSession();
         const meta =
             QuestionsState.getMeta();
         const ctx =
             QuestionsContext.get();
+        const sourceMode =
+            extra.mode ||
+            meta.sourceMode ||
+            "specific";
+        const patch = {
+            mode: sourceMode,
+            status,
+            title: this.buildRunTitle(
+                meta,
+                ctx,
+                sourceMode
+            ),
+            currentIndex:
+                Object.prototype.hasOwnProperty.call(
+                    extra,
+                    "currentIndex"
+                )
+                    ? Number(
+                        extra.currentIndex
+                    ) || 0
+                    : QuestionsState.getCurrent(),
+            answers:
+                Array.isArray(
+                    extra.answers
+                )
+                    ? [...extra.answers]
+                    : QuestionsState.getResults(),
+            lastAnswer:
+                Object.prototype.hasOwnProperty.call(
+                    extra,
+                    "lastAnswer"
+                )
+                    ? extra.lastAnswer
+                    : QuestionsState.getLastAnswer(),
+            completedAt:
+                status === "completed"
+                    ? Date.now()
+                    : 0,
+            summary:
+                extra.summary ||
+                QuestionsStore.getRunById(
+                    runId
+                )?.summary ||
+                null
+        };
+
+        if (extra.refreshSnapshot) {
+            const session =
+                QuestionsState.getSession();
+            patch.routeSnapshot = {
+                context: {
+                    ...ctx
+                },
+                meta: {
+                    ...meta
+                }
+            };
+            patch.questionIds =
+                session.map((question) =>
+                    question?.id || ""
+                );
+            patch.sessionSnapshot =
+                Array.isArray(session)
+                    ? [...session]
+                    : [];
+        }
 
         return QuestionsStore.updateRun(
             runId,
-            {
-                mode:
-                    extra.mode ||
-                    meta.sourceMode ||
-                    "specific",
-                status,
-                title: this.buildRunTitle(
-                    meta,
-                    ctx,
-                    extra.mode ||
-                        meta.sourceMode ||
-                        "specific"
-                ),
-                routeSnapshot: {
-                    context: {
-                        ...ctx
-                    },
-                    meta: {
-                        ...meta
-                    }
-                },
-                questionIds:
-                    session.map((question) =>
-                        question?.id || ""
-                    ),
-                sessionSnapshot:
-                    Array.isArray(session)
-                        ? [...session]
-                        : [],
-                currentIndex:
-                    Number(
-                        extra.currentIndex
-                    ) ||
-                    QuestionsState.getCurrent(),
-                answers:
-                    Array.isArray(
-                        extra.answers
-                    )
-                        ? [...extra.answers]
-                        : QuestionsState.getResults(),
-                lastAnswer:
-                    Object.prototype.hasOwnProperty.call(
-                        extra,
-                        "lastAnswer"
-                    )
-                        ? extra.lastAnswer
-                        : QuestionsState.getLastAnswer(),
-                completedAt:
-                    status === "completed"
-                        ? Date.now()
-                        : 0,
-                summary:
-                    extra.summary ||
-                    QuestionsStore.getRunById(
-                        runId
-                    )?.summary ||
-                    null
-            }
+            patch
         );
     },
 
@@ -2973,6 +3044,20 @@ window.QuestionsPage = {
     },
 
     openLauncher(view = null) {
+        if (view === "smart_start") {
+            QuestionsContext.replace(
+                {
+                    ...QuestionsContext.get(),
+                    smartSelectedSeries: [],
+                    smartSelectedSubjects: [],
+                    smartExcludedSubjects: [],
+                    smartExcludedBases: []
+                },
+                false
+            );
+            this.syncContext();
+        }
+
         QuestionsState.openLauncher(view);
         this.registerCoachView(
             QuestionsState.getLauncherView()
