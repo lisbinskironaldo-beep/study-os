@@ -1,7 +1,7 @@
 # STUDY OS - STATUS DO MODULO DE QUESTOES
 
 Documento interno de acompanhamento.
-Atualizado em 2026-03-26.
+Atualizado em 2026-03-27.
 
 ---
 
@@ -61,4 +61,16 @@ Esse arquivo agora serve como exemplo de preenchimento com:
 
 ## Proxima etapa sugerida
 
-Aplicar o mesmo padrao do arquivo de referencia nas categorias que ja possuem questoes reais, antes de expandir ENEM e simulado.
+No modulo `questions`, a proxima entrega visual passa a ser:
+
+- [ ] simplificar a home para `Treino inteligente`, `Especificar treino` e `Guardados`
+- [ ] rebaixar `Retomar treino` para acao secundaria
+- [ ] implementar a primeira tela circular do novo `Treino inteligente`
+- [ ] manter `Especificar treino` abrindo a tela detalhada atual
+- [ ] preparar a sequencia `materias -> assuntos -> limites -> guardar/iniciar`
+
+Base ja pronta para sustentar essa etapa:
+
+- [x] perfis inteligentes
+- [x] blocos salvos
+- [x] runs com pausa e retomada

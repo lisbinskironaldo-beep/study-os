@@ -53,6 +53,12 @@ window.QuestionsService = {
         );
     },
 
+    getSmartGoalOptions(page) {
+        return Object.values(
+            page.data.smartGoals || {}
+        );
+    },
+
     getAllowedMixStrategyKeys(modeKey) {
         if (modeKey === "ASSUNTO_UNICO") {
             return ["equilibrada"];
@@ -114,6 +120,28 @@ window.QuestionsService = {
         )
             ? page.data.schoolCatalog
             : [];
+    },
+
+    getTopicBaseKey(topicRecord) {
+        return String(
+            topicRecord?.metadados?.base ||
+                "ESCOLAR"
+        )
+            .trim()
+            .toUpperCase();
+    },
+
+    getTopicQuestionCount(topicRecord) {
+        return Array.isArray(
+            topicRecord?.questoes
+        )
+            ? topicRecord.questoes.filter(
+                (question) =>
+                    String(
+                        question?.enunciado || ""
+                    ).trim()
+            ).length
+            : 0;
     },
 
     getSeriesOptions(page) {
@@ -208,19 +236,19 @@ window.QuestionsService = {
             filters
         ).map((topic) => {
             const questionCount =
-                Array.isArray(topic.questoes)
-                    ? topic.questoes.filter((question) =>
-                        String(
-                            question?.enunciado || ""
-                        ).trim()
-                    ).length
-                    : 0;
+                this.getTopicQuestionCount(
+                    topic
+                );
             const topicQuestions =
                 Array.isArray(topic.questoes)
                     ? topic.questoes
                     : [];
             const metadados =
                 topic?.metadados || {};
+            const subjectKey =
+                this.slugify(topic.materia);
+            const baseKey =
+                this.getTopicBaseKey(topic);
             const subtopics =
                 [
                     ...(Array.isArray(
@@ -265,6 +293,13 @@ window.QuestionsService = {
                     topic.id ||
                     this.slugify(topic.topico),
                 label: topic.topico,
+                serie: Array.isArray(topic.serie)
+                    ? [...topic.serie]
+                    : [],
+                subjectKey,
+                subjectLabel:
+                    topic.materia,
+                baseKey,
                 count: questionCount,
                 hasQuestions:
                     questionCount > 0,
@@ -277,6 +312,220 @@ window.QuestionsService = {
                 searchIndex
             };
         });
+    },
+
+    getSmartEligibleTopicOptions(
+        page,
+        context = null
+    ) {
+        const ctx =
+            context ||
+            QuestionsContext.get();
+        const excludedSeries =
+            new Set(
+                (ctx.smartExcludedSeries || [])
+                    .map((item) =>
+                        Number(item)
+                    )
+                    .filter((item) =>
+                        Number.isFinite(item)
+                    )
+            );
+        const excludedBases =
+            new Set(
+                (ctx.smartExcludedBases || [])
+                    .map((item) =>
+                        String(item || "")
+                            .trim()
+                            .toUpperCase()
+                    )
+                    .filter(Boolean)
+            );
+        const excludedSubjects =
+            new Set(
+                (ctx.smartExcludedSubjects || [])
+                    .map((item) =>
+                        String(item || "")
+                            .trim()
+                            .toLowerCase()
+                    )
+                    .filter(Boolean)
+            );
+        const availableBases =
+            new Set(
+                this.getBaseOptions(page)
+                    .filter(
+                        (base) =>
+                            base.available
+                    )
+                    .map((base) => base.key)
+            );
+
+        return this.getTopicOptions(page, {})
+            .filter((topic) => {
+                if (!topic.hasQuestions) {
+                    return false;
+                }
+
+                if (
+                    !availableBases.has(
+                        topic.baseKey
+                    )
+                ) {
+                    return false;
+                }
+
+                if (
+                    excludedBases.has(
+                        topic.baseKey
+                    )
+                ) {
+                    return false;
+                }
+
+                if (
+                    excludedSubjects.has(
+                        topic.subjectKey
+                    )
+                ) {
+                    return false;
+                }
+
+                const topicSeries =
+                    Array.isArray(topic.serie)
+                        ? topic.serie
+                        : [];
+
+                if (
+                    topicSeries.length &&
+                    !topicSeries.some(
+                        (serie) =>
+                            !excludedSeries.has(
+                                Number(serie)
+                            )
+                    )
+                ) {
+                    return false;
+                }
+
+                return true;
+            })
+            .map((topic) => ({
+                ...topic,
+                primarySerie:
+                    Array.isArray(
+                        topic.serie
+                    ) &&
+                    topic.serie.length
+                        ? Number(
+                            topic.serie[0]
+                        )
+                        : 0
+            }));
+    },
+
+    getSmartLauncherValidation(
+        page,
+        context = null
+    ) {
+        const ctx =
+            context ||
+            QuestionsContext.get();
+        const availableBases =
+            this.getBaseOptions(page).filter(
+                (base) => base.available
+            );
+        const eligibleTopics =
+            this.getSmartEligibleTopicOptions(
+                page,
+                ctx
+            );
+        const eligibleSeries =
+            [
+                ...new Set(
+                    eligibleTopics.flatMap(
+                        (topic) =>
+                            Array.isArray(
+                                topic.serie
+                            )
+                                ? topic.serie
+                                : []
+                    )
+                )
+            ].sort(
+                (left, right) =>
+                    Number(left) -
+                    Number(right)
+            );
+        const eligibleSubjects =
+            [
+                ...new Map(
+                    eligibleTopics.map(
+                        (topic) => [
+                            topic.subjectKey,
+                            {
+                                key:
+                                    topic.subjectKey,
+                                label:
+                                    topic.subjectLabel
+                            }
+                        ]
+                    )
+                ).values()
+            ].sort((left, right) =>
+                left.label.localeCompare(
+                    right.label,
+                    "pt-BR"
+                )
+            );
+        const eligibleQuestionCount =
+            eligibleTopics.reduce(
+                (acc, topic) =>
+                    acc + (topic.count || 0),
+                0
+            );
+        const requestedCount =
+            Number(
+                ctx.quantidadeQuestoes || 5
+            );
+        const readyCount =
+            Math.min(
+                requestedCount,
+                eligibleQuestionCount
+            );
+        const issues = [];
+
+        if (
+            !availableBases.some(
+                (base) =>
+                    !(
+                        ctx.smartExcludedBases || []
+                    ).includes(base.key)
+            )
+        ) {
+            issues.push(
+                "Libere pelo menos uma base de treino para continuar."
+            );
+        }
+
+        if (!eligibleTopics.length) {
+            issues.push(
+                "As exclusoes atuais removeram todas as questoes disponiveis. Limpe parte do recorte para continuar."
+            );
+        }
+
+        return {
+            isReady:
+                issues.length === 0,
+            issues,
+            requestedCount,
+            readyCount,
+            eligibleTopics,
+            eligibleSeries,
+            eligibleSubjects,
+            eligibleQuestionCount,
+            availableBases
+        };
     },
 
     filterTopicOptions(

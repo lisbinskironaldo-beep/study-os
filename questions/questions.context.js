@@ -13,6 +13,10 @@ window.QuestionsContext = {
         onlyReadyTopics: true,
         quantidadeQuestoes: 5,
         estrategiaMistura: "equilibrada",
+        smartGoal: "continue",
+        smartExcludedSeries: [],
+        smartExcludedBases: [],
+        smartExcludedSubjects: [],
         syncSource: "",
         syncIntent: "",
         pendingSync: null
@@ -54,12 +58,69 @@ window.QuestionsContext = {
             Array.isArray(next.topicos)
                 ? [...next.topicos]
                 : [];
+        next.smartGoal =
+            String(
+                next.smartGoal ||
+                    "continue"
+            ).trim() || "continue";
         next.topicSearch =
             String(
                 next.topicSearch || ""
             ).trim();
         next.onlyReadyTopics =
             next.onlyReadyTopics !== false;
+        next.smartExcludedSeries =
+            Array.isArray(
+                next.smartExcludedSeries
+            )
+                ? [
+                    ...new Set(
+                        next.smartExcludedSeries
+                            .map((item) =>
+                                Number(item)
+                            )
+                            .filter((item) =>
+                                Number.isFinite(item)
+                            )
+                    )
+                ]
+                : [];
+        next.smartExcludedBases =
+            Array.isArray(
+                next.smartExcludedBases
+            )
+                ? [
+                    ...new Set(
+                        next.smartExcludedBases
+                            .map((item) =>
+                                String(
+                                    item || ""
+                                )
+                                    .trim()
+                                    .toUpperCase()
+                            )
+                            .filter(Boolean)
+                    )
+                ]
+                : [];
+        next.smartExcludedSubjects =
+            Array.isArray(
+                next.smartExcludedSubjects
+            )
+                ? [
+                    ...new Set(
+                        next.smartExcludedSubjects
+                            .map((item) =>
+                                String(
+                                    item || ""
+                                )
+                                    .trim()
+                                    .toLowerCase()
+                            )
+                            .filter(Boolean)
+                    )
+                ]
+                : [];
 
         next.pesos =
             next.pesos &&

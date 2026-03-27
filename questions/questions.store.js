@@ -1,9 +1,13 @@
 window.QuestionsStore = {
     key: "questions_profile_v3",
+    runsKey: "questions_runs_v1",
 
     data: {
         topics: {},
-        sessions: []
+        sessions: [],
+        smartProfiles: [],
+        savedBlocks: [],
+        runs: []
     },
 
     load() {
@@ -13,8 +17,12 @@ window.QuestionsStore = {
         if (!saved) {
             this.data = {
                 topics: {},
-                sessions: []
+                sessions: [],
+                smartProfiles: [],
+                savedBlocks: [],
+                runs: []
             };
+            this.loadRuns();
             return;
         }
 
@@ -25,12 +33,18 @@ window.QuestionsStore = {
             this.data = {
                 topics: {},
                 sessions: [],
+                smartProfiles: [],
+                savedBlocks: [],
+                runs: [],
                 ...(parsed || {})
             };
         } catch (_error) {
             this.data = {
                 topics: {},
-                sessions: []
+                sessions: [],
+                smartProfiles: [],
+                savedBlocks: [],
+                runs: []
             };
         }
 
@@ -48,12 +62,74 @@ window.QuestionsStore = {
         ) {
             this.data.sessions = [];
         }
+
+        if (
+            !Array.isArray(
+                this.data.smartProfiles
+            )
+        ) {
+            this.data.smartProfiles = [];
+        }
+
+        if (
+            !Array.isArray(
+                this.data.savedBlocks
+            )
+        ) {
+            this.data.savedBlocks = [];
+        }
+
+        this.loadRuns();
     },
 
     save() {
         localStorage.setItem(
             this.key,
-            JSON.stringify(this.data)
+            JSON.stringify({
+                topics:
+                    this.data.topics || {},
+                sessions:
+                    this.data.sessions || [],
+                smartProfiles:
+                    this.data.smartProfiles ||
+                    [],
+                savedBlocks:
+                    this.data.savedBlocks ||
+                    []
+            })
+        );
+    },
+
+    loadRuns() {
+        const saved =
+            localStorage.getItem(
+                this.runsKey
+            );
+
+        if (!saved) {
+            this.data.runs = [];
+            return;
+        }
+
+        try {
+            const parsed =
+                JSON.parse(saved);
+            this.data.runs = Array.isArray(
+                parsed
+            )
+                ? parsed
+                : [];
+        } catch (_error) {
+            this.data.runs = [];
+        }
+    },
+
+    saveRuns() {
+        localStorage.setItem(
+            this.runsKey,
+            JSON.stringify(
+                this.data.runs || []
+            )
         );
     },
 
@@ -124,6 +200,507 @@ window.QuestionsStore = {
         ].slice(0, 40);
 
         this.save();
+    },
+
+    getSmartProfiles() {
+        return [
+            ...(this.data.smartProfiles || [])
+        ].sort(
+            (left, right) =>
+                (right.updatedAt || 0) -
+                (left.updatedAt || 0)
+        );
+    },
+
+    getSmartProfileById(profileId) {
+        return this.getSmartProfiles().find(
+            (profile) =>
+                String(profile.id) ===
+                String(profileId)
+        ) || null;
+    },
+
+    saveSmartProfile(profile = {}) {
+        const now = Date.now();
+        const next = {
+            id:
+                profile.id ||
+                `smart_profile_${now}`,
+            name:
+                String(
+                    profile.name ||
+                        "Perfil inteligente"
+                ).trim() ||
+                "Perfil inteligente",
+            createdAt:
+                Number(
+                    profile.createdAt
+                ) || now,
+            updatedAt: now,
+            smartGoal:
+                String(
+                    profile.smartGoal ||
+                        "continue"
+                ).trim() || "continue",
+            excludedSeries:
+                Array.isArray(
+                    profile.excludedSeries
+                )
+                    ? [
+                        ...new Set(
+                            profile.excludedSeries
+                                .map((item) =>
+                                    Number(item)
+                                )
+                                .filter((item) =>
+                                    Number.isFinite(
+                                        item
+                                    )
+                                )
+                        )
+                    ]
+                    : [],
+            excludedBases:
+                Array.isArray(
+                    profile.excludedBases
+                )
+                    ? [
+                        ...new Set(
+                            profile.excludedBases
+                                .map((item) =>
+                                    String(
+                                        item || ""
+                                    )
+                                        .trim()
+                                        .toUpperCase()
+                                )
+                                .filter(Boolean)
+                        )
+                    ]
+                    : [],
+            excludedSubjects:
+                Array.isArray(
+                    profile.excludedSubjects
+                )
+                    ? [
+                        ...new Set(
+                            profile.excludedSubjects
+                                .map((item) =>
+                                    String(
+                                        item || ""
+                                    )
+                                        .trim()
+                                        .toLowerCase()
+                                )
+                                .filter(Boolean)
+                        )
+                    ]
+                    : [],
+            preferredAmount:
+                Number(
+                    profile.preferredAmount
+                ) || null,
+            notes:
+                String(
+                    profile.notes || ""
+                ).trim(),
+            lastUsedAt:
+                Number(
+                    profile.lastUsedAt
+                ) || 0
+        };
+        const list =
+            this.getSmartProfiles().filter(
+                (entry) =>
+                    String(entry.id) !==
+                    String(next.id)
+            );
+
+        this.data.smartProfiles = [
+            next,
+            ...list
+        ].slice(0, 40);
+        this.save();
+
+        return next;
+    },
+
+    deleteSmartProfile(profileId) {
+        const before =
+            (this.data.smartProfiles || [])
+                .length;
+
+        this.data.smartProfiles =
+            (this.data.smartProfiles || []).filter(
+                (profile) =>
+                    String(profile.id) !==
+                    String(profileId)
+            );
+
+        if (
+            this.data.smartProfiles.length !==
+            before
+        ) {
+            this.save();
+            return true;
+        }
+
+        return false;
+    },
+
+    markSmartProfileUsed(profileId) {
+        const profile =
+            this.getSmartProfileById(profileId);
+
+        if (!profile) {
+            return null;
+        }
+
+        return this.saveSmartProfile({
+            ...profile,
+            lastUsedAt: Date.now()
+        });
+    },
+
+    getSavedBlocks(filters = {}) {
+        return [
+            ...(this.data.savedBlocks || [])
+        ]
+            .filter((block) => {
+                if (
+                    filters.mode &&
+                    block.mode !== filters.mode
+                ) {
+                    return false;
+                }
+
+                return true;
+            })
+            .sort(
+                (left, right) =>
+                    (right.updatedAt || 0) -
+                    (left.updatedAt || 0)
+            );
+    },
+
+    getSavedBlockById(blockId) {
+        return this.getSavedBlocks().find(
+            (block) =>
+                String(block.id) ===
+                String(blockId)
+        ) || null;
+    },
+
+    saveSavedBlock(block = {}) {
+        const now = Date.now();
+        const next = {
+            id:
+                block.id ||
+                `saved_block_${now}`,
+            name:
+                String(
+                    block.name ||
+                        "Bloco salvo"
+                ).trim() || "Bloco salvo",
+            mode:
+                String(
+                    block.mode || "specific"
+                ).trim() || "specific",
+            createdAt:
+                Number(
+                    block.createdAt
+                ) || now,
+            updatedAt: now,
+            lastUsedAt:
+                Number(
+                    block.lastUsedAt
+                ) || 0,
+            launcherContext:
+                block.launcherContext &&
+                typeof block.launcherContext ===
+                    "object"
+                    ? {
+                        ...block.launcherContext
+                    }
+                    : {},
+            routeSnapshot:
+                block.routeSnapshot &&
+                typeof block.routeSnapshot ===
+                    "object"
+                    ? {
+                        ...block.routeSnapshot,
+                        context:
+                            block.routeSnapshot
+                                .context &&
+                            typeof block
+                                .routeSnapshot
+                                .context ===
+                                "object"
+                                ? {
+                                    ...block
+                                        .routeSnapshot
+                                        .context
+                                }
+                                : {},
+                        meta:
+                            block.routeSnapshot
+                                .meta &&
+                            typeof block
+                                .routeSnapshot
+                                .meta ===
+                                "object"
+                                ? {
+                                    ...block
+                                        .routeSnapshot
+                                        .meta
+                                }
+                                : {}
+                    }
+                    : {
+                        context: {},
+                        meta: {}
+                    },
+            questionIds:
+                Array.isArray(
+                    block.questionIds
+                )
+                    ? [...block.questionIds]
+                    : [],
+            sessionSnapshot:
+                Array.isArray(
+                    block.sessionSnapshot
+                )
+                    ? [
+                        ...block.sessionSnapshot
+                    ]
+                    : [],
+            profileId:
+                String(
+                    block.profileId || ""
+                ).trim()
+        };
+        const list =
+            this.getSavedBlocks().filter(
+                (entry) =>
+                    String(entry.id) !==
+                    String(next.id)
+            );
+
+        this.data.savedBlocks = [
+            next,
+            ...list
+        ].slice(0, 80);
+        this.save();
+
+        return next;
+    },
+
+    deleteSavedBlock(blockId) {
+        const before =
+            (this.data.savedBlocks || [])
+                .length;
+
+        this.data.savedBlocks = (
+            this.data.savedBlocks || []
+        ).filter(
+            (block) =>
+                String(block.id) !==
+                String(blockId)
+        );
+
+        if (
+            this.data.savedBlocks.length !==
+            before
+        ) {
+            this.save();
+            return true;
+        }
+
+        return false;
+    },
+
+    markSavedBlockUsed(blockId) {
+        const block =
+            this.getSavedBlockById(blockId);
+
+        if (!block) {
+            return null;
+        }
+
+        return this.saveSavedBlock({
+            ...block,
+            lastUsedAt: Date.now()
+        });
+    },
+
+    getRuns(filters = {}) {
+        return [
+            ...(this.data.runs || [])
+        ]
+            .filter((run) => {
+                if (
+                    filters.status &&
+                    run.status !==
+                        filters.status
+                ) {
+                    return false;
+                }
+
+                if (
+                    filters.mode &&
+                    run.mode !== filters.mode
+                ) {
+                    return false;
+                }
+
+                return true;
+            })
+            .sort(
+                (left, right) =>
+                    (right.updatedAt || 0) -
+                    (left.updatedAt || 0)
+            );
+    },
+
+    getRunById(runId) {
+        return this.getRuns().find(
+            (run) =>
+                String(run.id) ===
+                String(runId)
+        ) || null;
+    },
+
+    saveRun(run = {}) {
+        const now = Date.now();
+        const next = {
+            id:
+                run.id ||
+                `run_${now}`,
+            mode:
+                String(
+                    run.mode || "specific"
+                ).trim() || "specific",
+            status:
+                String(
+                    run.status ||
+                        "in_progress"
+                ).trim() ||
+                "in_progress",
+            title:
+                String(
+                    run.title || "Treino"
+                ).trim() || "Treino",
+            createdAt:
+                Number(
+                    run.createdAt
+                ) || now,
+            updatedAt: now,
+            completedAt:
+                Number(
+                    run.completedAt
+                ) || 0,
+            routeSnapshot:
+                run.routeSnapshot &&
+                typeof run.routeSnapshot ===
+                    "object"
+                    ? {
+                        ...run.routeSnapshot
+                    }
+                    : {},
+            questionIds:
+                Array.isArray(
+                    run.questionIds
+                )
+                    ? [...run.questionIds]
+                    : [],
+            sessionSnapshot:
+                Array.isArray(
+                    run.sessionSnapshot
+                )
+                    ? [
+                        ...run.sessionSnapshot
+                    ]
+                    : [],
+            currentIndex:
+                Number(
+                    run.currentIndex
+                ) || 0,
+            answers:
+                Array.isArray(run.answers)
+                    ? [...run.answers]
+                    : [],
+            lastAnswer:
+                run.lastAnswer || null,
+            summary:
+                run.summary &&
+                typeof run.summary ===
+                    "object"
+                    ? { ...run.summary }
+                    : null,
+            profileId:
+                String(
+                    run.profileId || ""
+                ).trim(),
+            savedBlockId:
+                String(
+                    run.savedBlockId || ""
+                ).trim(),
+            startedAt:
+                Number(
+                    run.startedAt
+                ) || now
+        };
+
+        this.data.runs = [
+            next,
+            ...this.getRuns().filter(
+                (entry) =>
+                    String(entry.id) !==
+                    String(next.id)
+            )
+        ].slice(0, 80);
+        this.saveRuns();
+
+        return next;
+    },
+
+    updateRun(runId, patch = {}) {
+        const run =
+            this.getRunById(runId);
+
+        if (!run) {
+            return null;
+        }
+
+        return this.saveRun({
+            ...run,
+            ...(patch || {}),
+            id: run.id,
+            createdAt:
+                run.createdAt
+        });
+    },
+
+    deleteRun(runId) {
+        const before =
+            (this.data.runs || []).length;
+
+        this.data.runs = (
+            this.data.runs || []
+        ).filter(
+            (run) =>
+                String(run.id) !==
+                String(runId)
+        );
+
+        if (
+            this.data.runs.length !== before
+        ) {
+            this.saveRuns();
+            return true;
+        }
+
+        return false;
     },
 
     getTopicEntries(filters = {}) {
