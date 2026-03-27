@@ -61,13 +61,21 @@ Esse arquivo agora serve como exemplo de preenchimento com:
 
 ## Proxima etapa sugerida
 
-No modulo `questions`, a proxima entrega visual passa a ser:
+No modulo `questions`, a etapa visual atual ficou assim:
 
-- [ ] simplificar a home para `Treino inteligente`, `Especificar treino` e `Guardados`
-- [ ] rebaixar `Retomar treino` para acao secundaria
-- [ ] implementar a primeira tela circular do novo `Treino inteligente`
-- [ ] manter `Especificar treino` abrindo a tela detalhada atual
-- [ ] preparar a sequencia `materias -> assuntos -> limites -> guardar/iniciar`
+- [x] simplificar a home para `Treino inteligente`, `Especificar treino` e `Guardados`
+- [x] rebaixar `Retomar treino` para acao secundaria
+- [x] manter `Especificar treino` abrindo a tela detalhada atual
+- [x] manter a entrada circular do `Treino inteligente`
+- [x] reduzir a tela final do treino inteligente para uma revisao curta com `objetivo`, `quantidade`, `guardar` e `comecar`
+
+Proxima rodada sugerida:
+
+- [ ] transformar a etapa de materias em uma selecao ainda mais direta, com menos leitura auxiliar
+- [ ] trocar a etapa atual de assuntos por um fluxo por materia, uma aberta por vez
+- [ ] adicionar a tela curta de limites da sessao com quantidade e tempo
+- [ ] refinar `Guardados` e `Retomar treino` para consulta, duplicacao e reinicio mais rapidos
+- [ ] manter o mini player fechado por padrao e evitar flashes de tela ao abrir `questions`
 
 Base ja pronta para sustentar essa etapa:
 

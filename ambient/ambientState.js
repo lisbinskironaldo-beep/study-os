@@ -26,6 +26,6 @@ blockedTrackIds: JSON.parse(localStorage.getItem("ambient_blocked_tracks") || "[
 
 favorites: JSON.parse(localStorage.getItem("ambient_favorites") || "[]"),
 
-panelMode: 1,
+panelMode: 2,
 
 }

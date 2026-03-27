@@ -80,7 +80,7 @@ root.innerHTML = `
 </div>
 `
 
-AmbientState.panelMode = 1
+AmbientState.panelMode = 2
 
 this.bindControls()
 this.restoreMiniPosition()

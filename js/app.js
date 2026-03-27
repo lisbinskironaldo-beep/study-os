@@ -222,7 +222,7 @@ document.getElementById("questionsModule").innerHTML = html
 // CSS
 const link = document.createElement("link")
 link.rel = "stylesheet"
-link.href = "questions/questions.css?v=" + Date.now()
+link.href = "questions/questions.css"
 document.head.appendChild(link)
 
 // CONTEXT
@@ -257,7 +257,7 @@ uiScript.onload = () => {
 
 // MAIN
 const mainScript = document.createElement("script")
-mainScript.src = "questions/questions.js?v=" + Date.now()
+mainScript.src = "questions/questions.js"
 
 mainScript.onload = () => {
 
@@ -296,7 +296,18 @@ document.body.appendChild(contextScript)
 } else {
 
 if (window.QuestionsPage) {
+if (
+window.QuestionsState &&
+QuestionsState.getPhase() === "session"
+) {
+QuestionsPage.render()
+} else if (
+QuestionsPage.data?.bankStatus === "ready"
+) {
+QuestionsPage.openLauncher("home")
+} else {
 QuestionsPage.init()
+}
 }
 
 }

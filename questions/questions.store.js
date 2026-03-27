@@ -1,6 +1,8 @@
 window.QuestionsStore = {
     key: "questions_profile_v3",
     runsKey: "questions_runs_v1",
+    saveTimer: null,
+    runsSaveTimer: null,
 
     data: {
         topics: {},
@@ -82,22 +84,39 @@ window.QuestionsStore = {
         this.loadRuns();
     },
 
-    save() {
-        localStorage.setItem(
-            this.key,
-            JSON.stringify({
-                topics:
-                    this.data.topics || {},
-                sessions:
-                    this.data.sessions || [],
-                smartProfiles:
-                    this.data.smartProfiles ||
-                    [],
-                savedBlocks:
-                    this.data.savedBlocks ||
-                    []
-            })
-        );
+    save(immediate = false) {
+        if (this.saveTimer) {
+            clearTimeout(this.saveTimer);
+            this.saveTimer = null;
+        }
+
+        const write = () => {
+            localStorage.setItem(
+                this.key,
+                JSON.stringify({
+                    topics:
+                        this.data.topics || {},
+                    sessions:
+                        this.data.sessions || [],
+                    smartProfiles:
+                        this.data.smartProfiles ||
+                        [],
+                    savedBlocks:
+                        this.data.savedBlocks ||
+                        []
+                })
+            );
+        };
+
+        if (immediate) {
+            write();
+            return;
+        }
+
+        this.saveTimer = setTimeout(() => {
+            this.saveTimer = null;
+            write();
+        }, 80);
     },
 
     loadRuns() {
@@ -124,13 +143,30 @@ window.QuestionsStore = {
         }
     },
 
-    saveRuns() {
-        localStorage.setItem(
-            this.runsKey,
-            JSON.stringify(
-                this.data.runs || []
-            )
-        );
+    saveRuns(immediate = false) {
+        if (this.runsSaveTimer) {
+            clearTimeout(this.runsSaveTimer);
+            this.runsSaveTimer = null;
+        }
+
+        const write = () => {
+            localStorage.setItem(
+                this.runsKey,
+                JSON.stringify(
+                    this.data.runs || []
+                )
+            );
+        };
+
+        if (immediate) {
+            write();
+            return;
+        }
+
+        this.runsSaveTimer = setTimeout(() => {
+            this.runsSaveTimer = null;
+            write();
+        }, 80);
     },
 
     getTopicStorageKey(meta) {
