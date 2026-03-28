@@ -1,0 +1,2190 @@
+{
+  "generatedAt": "2026-03-28T00:56:00.922Z",
+  "totals": {
+    "topics": 126,
+    "readyTopics": 5,
+    "questions": 974
+  },
+  "subjects": [
+    {
+      "serie": 1,
+      "subjectKey": "artes",
+      "materia": "Artes",
+      "topicCount": 2,
+      "readyTopicCount": 0,
+      "readyQuestionCount": 0
+    },
+    {
+      "serie": 1,
+      "subjectKey": "biologia",
+      "materia": "Biologia",
+      "topicCount": 5,
+      "readyTopicCount": 0,
+      "readyQuestionCount": 0
+    },
+    {
+      "serie": 1,
+      "subjectKey": "educacao_fisica",
+      "materia": "Educacao Fisica",
+      "topicCount": 2,
+      "readyTopicCount": 0,
+      "readyQuestionCount": 0
+    },
+    {
+      "serie": 1,
+      "subjectKey": "filosofia",
+      "materia": "Filosofia",
+      "topicCount": 3,
+      "readyTopicCount": 0,
+      "readyQuestionCount": 0
+    },
+    {
+      "serie": 1,
+      "subjectKey": "fisica",
+      "materia": "Fisica",
+      "topicCount": 4,
+      "readyTopicCount": 0,
+      "readyQuestionCount": 0
+    },
+    {
+      "serie": 1,
+      "subjectKey": "geografia",
+      "materia": "Geografia",
+      "topicCount": 4,
+      "readyTopicCount": 0,
+      "readyQuestionCount": 0
+    },
+    {
+      "serie": 1,
+      "subjectKey": "historia",
+      "materia": "Historia",
+      "topicCount": 4,
+      "readyTopicCount": 0,
+      "readyQuestionCount": 0
+    },
+    {
+      "serie": 1,
+      "subjectKey": "ingles",
+      "materia": "Ingles",
+      "topicCount": 3,
+      "readyTopicCount": 0,
+      "readyQuestionCount": 0
+    },
+    {
+      "serie": 1,
+      "subjectKey": "matematica",
+      "materia": "Matemática",
+      "topicCount": 7,
+      "readyTopicCount": 4,
+      "readyQuestionCount": 774
+    },
+    {
+      "serie": 1,
+      "subjectKey": "portugues",
+      "materia": "Portugues",
+      "topicCount": 7,
+      "readyTopicCount": 0,
+      "readyQuestionCount": 0
+    },
+    {
+      "serie": 1,
+      "subjectKey": "quimica",
+      "materia": "Quimica",
+      "topicCount": 4,
+      "readyTopicCount": 0,
+      "readyQuestionCount": 0
+    },
+    {
+      "serie": 1,
+      "subjectKey": "sociologia",
+      "materia": "Sociologia",
+      "topicCount": 3,
+      "readyTopicCount": 0,
+      "readyQuestionCount": 0
+    },
+    {
+      "serie": 2,
+      "subjectKey": "artes",
+      "materia": "Artes",
+      "topicCount": 2,
+      "readyTopicCount": 0,
+      "readyQuestionCount": 0
+    },
+    {
+      "serie": 2,
+      "subjectKey": "biologia",
+      "materia": "Biologia",
+      "topicCount": 4,
+      "readyTopicCount": 0,
+      "readyQuestionCount": 0
+    },
+    {
+      "serie": 2,
+      "subjectKey": "educacao_fisica",
+      "materia": "Educacao Fisica",
+      "topicCount": 2,
+      "readyTopicCount": 0,
+      "readyQuestionCount": 0
+    },
+    {
+      "serie": 2,
+      "subjectKey": "filosofia",
+      "materia": "Filosofia",
+      "topicCount": 2,
+      "readyTopicCount": 0,
+      "readyQuestionCount": 0
+    },
+    {
+      "serie": 2,
+      "subjectKey": "fisica",
+      "materia": "Fisica",
+      "topicCount": 3,
+      "readyTopicCount": 0,
+      "readyQuestionCount": 0
+    },
+    {
+      "serie": 2,
+      "subjectKey": "geografia",
+      "materia": "Geografia",
+      "topicCount": 4,
+      "readyTopicCount": 0,
+      "readyQuestionCount": 0
+    },
+    {
+      "serie": 2,
+      "subjectKey": "historia",
+      "materia": "Historia",
+      "topicCount": 3,
+      "readyTopicCount": 0,
+      "readyQuestionCount": 0
+    },
+    {
+      "serie": 2,
+      "subjectKey": "ingles",
+      "materia": "Ingles",
+      "topicCount": 3,
+      "readyTopicCount": 0,
+      "readyQuestionCount": 0
+    },
+    {
+      "serie": 2,
+      "subjectKey": "matematica",
+      "materia": "Matematica",
+      "topicCount": 5,
+      "readyTopicCount": 0,
+      "readyQuestionCount": 0
+    },
+    {
+      "serie": 2,
+      "subjectKey": "portugues",
+      "materia": "Portugues",
+      "topicCount": 5,
+      "readyTopicCount": 0,
+      "readyQuestionCount": 0
+    },
+    {
+      "serie": 2,
+      "subjectKey": "quimica",
+      "materia": "Quimica",
+      "topicCount": 4,
+      "readyTopicCount": 0,
+      "readyQuestionCount": 0
+    },
+    {
+      "serie": 2,
+      "subjectKey": "sociologia",
+      "materia": "Sociologia",
+      "topicCount": 3,
+      "readyTopicCount": 0,
+      "readyQuestionCount": 0
+    },
+    {
+      "serie": 3,
+      "subjectKey": "artes",
+      "materia": "Artes",
+      "topicCount": 1,
+      "readyTopicCount": 0,
+      "readyQuestionCount": 0
+    },
+    {
+      "serie": 3,
+      "subjectKey": "biologia",
+      "materia": "Biologia",
+      "topicCount": 4,
+      "readyTopicCount": 0,
+      "readyQuestionCount": 0
+    },
+    {
+      "serie": 3,
+      "subjectKey": "educacao_fisica",
+      "materia": "Educacao Fisica",
+      "topicCount": 1,
+      "readyTopicCount": 0,
+      "readyQuestionCount": 0
+    },
+    {
+      "serie": 3,
+      "subjectKey": "filosofia",
+      "materia": "Filosofia",
+      "topicCount": 3,
+      "readyTopicCount": 0,
+      "readyQuestionCount": 0
+    },
+    {
+      "serie": 3,
+      "subjectKey": "fisica",
+      "materia": "Fisica",
+      "topicCount": 4,
+      "readyTopicCount": 0,
+      "readyQuestionCount": 0
+    },
+    {
+      "serie": 3,
+      "subjectKey": "geografia",
+      "materia": "Geografia",
+      "topicCount": 4,
+      "readyTopicCount": 0,
+      "readyQuestionCount": 0
+    },
+    {
+      "serie": 3,
+      "subjectKey": "historia",
+      "materia": "Historia",
+      "topicCount": 3,
+      "readyTopicCount": 0,
+      "readyQuestionCount": 0
+    },
+    {
+      "serie": 3,
+      "subjectKey": "ingles",
+      "materia": "Ingles",
+      "topicCount": 2,
+      "readyTopicCount": 0,
+      "readyQuestionCount": 0
+    },
+    {
+      "serie": 3,
+      "subjectKey": "matematica",
+      "materia": "Matemática",
+      "topicCount": 5,
+      "readyTopicCount": 1,
+      "readyQuestionCount": 200
+    },
+    {
+      "serie": 3,
+      "subjectKey": "portugues",
+      "materia": "Portugues",
+      "topicCount": 4,
+      "readyTopicCount": 0,
+      "readyQuestionCount": 0
+    },
+    {
+      "serie": 3,
+      "subjectKey": "quimica",
+      "materia": "Quimica",
+      "topicCount": 4,
+      "readyTopicCount": 0,
+      "readyQuestionCount": 0
+    },
+    {
+      "serie": 3,
+      "subjectKey": "sociologia",
+      "materia": "Sociologia",
+      "topicCount": 3,
+      "readyTopicCount": 0,
+      "readyQuestionCount": 0
+    }
+  ],
+  "topics": [
+    {
+      "id": "artes_elementos_visuais",
+      "subjectKey": "artes",
+      "materia": "Artes",
+      "topico": "Elementos Visuais",
+      "serie": [
+        1
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/1-serie/artes/elementos-visuais/index.js",
+      "updatedAt": "2026-03-26T03:35:12.850Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "artes_historia_da_arte_classica",
+      "subjectKey": "artes",
+      "materia": "Artes",
+      "topico": "Historia da Arte Classica",
+      "serie": [
+        1
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/1-serie/artes/historia-da-arte-classica/index.js",
+      "updatedAt": "2026-03-26T03:35:12.844Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "biologia_citologia",
+      "subjectKey": "biologia",
+      "materia": "Biologia",
+      "topico": "Citologia",
+      "serie": [
+        1
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/1-serie/biologia/citologia/index.js",
+      "updatedAt": "2026-03-26T03:35:12.666Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "biologia_membrana_plasmatica",
+      "subjectKey": "biologia",
+      "materia": "Biologia",
+      "topico": "Membrana Plasmatica",
+      "serie": [
+        1
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/1-serie/biologia/membrana-plasmatica/index.js",
+      "updatedAt": "2026-03-26T03:35:12.683Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "biologia_metabolismo_celular",
+      "subjectKey": "biologia",
+      "materia": "Biologia",
+      "topico": "Metabolismo Celular",
+      "serie": [
+        1
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/1-serie/biologia/metabolismo-celular/index.js",
+      "updatedAt": "2026-03-26T03:35:12.676Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "biologia_organelas_celulares",
+      "subjectKey": "biologia",
+      "materia": "Biologia",
+      "topico": "Organelas Celulares",
+      "serie": [
+        1
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/1-serie/biologia/organelas-celulares/index.js",
+      "updatedAt": "2026-03-26T03:35:12.689Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "biologia_origem_da_vida",
+      "subjectKey": "biologia",
+      "materia": "Biologia",
+      "topico": "Origem da Vida",
+      "serie": [
+        1
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/1-serie/biologia/origem-da-vida/index.js",
+      "updatedAt": "2026-03-26T03:35:12.657Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "educacao-fisica_cultura_corporal",
+      "subjectKey": "educacao_fisica",
+      "materia": "Educacao Fisica",
+      "topico": "Cultura Corporal",
+      "serie": [
+        1
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/1-serie/educacao-fisica/cultura-corporal/index.js",
+      "updatedAt": "2026-03-26T03:35:12.862Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "educacao-fisica_esportes_basicos",
+      "subjectKey": "educacao_fisica",
+      "materia": "Educacao Fisica",
+      "topico": "Esportes Basicos",
+      "serie": [
+        1
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/1-serie/educacao-fisica/esportes-basicos/index.js",
+      "updatedAt": "2026-03-26T03:35:12.867Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "filosofia_introducao_a_filosofia",
+      "subjectKey": "filosofia",
+      "materia": "Filosofia",
+      "topico": "Introducao a Filosofia",
+      "serie": [
+        1
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/1-serie/filosofia/introducao-a-filosofia/index.js",
+      "updatedAt": "2026-03-26T03:35:12.879Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "filosofia_pre_socraticos",
+      "subjectKey": "filosofia",
+      "materia": "Filosofia",
+      "topico": "Pre Socraticos",
+      "serie": [
+        1
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/1-serie/filosofia/pre-socraticos/index.js",
+      "updatedAt": "2026-03-26T03:35:12.884Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "filosofia_socrates_platao_aristoteles",
+      "subjectKey": "filosofia",
+      "materia": "Filosofia",
+      "topico": "Socrates Platao Aristoteles",
+      "serie": [
+        1
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/1-serie/filosofia/socrates-platao-aristoteles/index.js",
+      "updatedAt": "2026-03-26T03:35:12.889Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "fisica_cinematica_mru_mruv",
+      "subjectKey": "fisica",
+      "materia": "Fisica",
+      "topico": "Cinematica MRU MRUV",
+      "serie": [
+        1
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/1-serie/fisica/cinematica-mru-mruv/index.js",
+      "updatedAt": "2026-03-26T03:35:12.707Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "fisica_grandezas_fisicas",
+      "subjectKey": "fisica",
+      "materia": "Fisica",
+      "topico": "Grandezas Fisicas",
+      "serie": [
+        1
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/1-serie/fisica/grandezas-fisicas/index.js",
+      "updatedAt": "2026-03-26T03:35:12.701Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "fisica_movimento_uniforme_e_variado",
+      "subjectKey": "fisica",
+      "materia": "Fisica",
+      "topico": "Movimento Uniforme e Variado",
+      "serie": [
+        1
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/1-serie/fisica/movimento-uniforme-e-variado/index.js",
+      "updatedAt": "2026-03-26T03:35:12.719Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "fisica_vetores",
+      "subjectKey": "fisica",
+      "materia": "Fisica",
+      "topico": "Vetores",
+      "serie": [
+        1
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/1-serie/fisica/vetores/index.js",
+      "updatedAt": "2026-03-26T03:35:12.713Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "geografia_cartografia",
+      "subjectKey": "geografia",
+      "materia": "Geografia",
+      "topico": "Cartografia",
+      "serie": [
+        1
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/1-serie/geografia/cartografia/index.js",
+      "updatedAt": "2026-03-26T03:35:12.793Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "geografia_clima_e_relevo",
+      "subjectKey": "geografia",
+      "materia": "Geografia",
+      "topico": "Clima e Relevo",
+      "serie": [
+        1
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/1-serie/geografia/clima-e-relevo/index.js",
+      "updatedAt": "2026-03-26T03:35:12.803Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "geografia_estrutura_da_terra",
+      "subjectKey": "geografia",
+      "materia": "Geografia",
+      "topico": "Estrutura da Terra",
+      "serie": [
+        1
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/1-serie/geografia/estrutura-da-terra/index.js",
+      "updatedAt": "2026-03-26T03:35:12.797Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "geografia_populacao",
+      "subjectKey": "geografia",
+      "materia": "Geografia",
+      "topico": "Populacao",
+      "serie": [
+        1
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/1-serie/geografia/populacao/index.js",
+      "updatedAt": "2026-03-26T03:35:12.809Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "historia_antiguidade_egito_grecia_roma",
+      "subjectKey": "historia",
+      "materia": "Historia",
+      "topico": "Antiguidade Egito Grecia Roma",
+      "serie": [
+        1
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/1-serie/historia/antiguidade-egito-grecia-roma/index.js",
+      "updatedAt": "2026-03-26T03:35:12.762Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "historia_expansao_maritima",
+      "subjectKey": "historia",
+      "materia": "Historia",
+      "topico": "Expansao Maritima",
+      "serie": [
+        1
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/1-serie/historia/expansao-maritima/index.js",
+      "updatedAt": "2026-03-26T03:35:12.781Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "historia_feudalismo",
+      "subjectKey": "historia",
+      "materia": "Historia",
+      "topico": "Feudalismo",
+      "serie": [
+        1
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/1-serie/historia/feudalismo/index.js",
+      "updatedAt": "2026-03-26T03:35:12.768Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "historia_formacao_dos_estados_modernos",
+      "subjectKey": "historia",
+      "materia": "Historia",
+      "topico": "Formacao dos Estados Modernos",
+      "serie": [
+        1
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/1-serie/historia/formacao-dos-estados-modernos/index.js",
+      "updatedAt": "2026-03-26T03:35:12.774Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "ingles_leitura_e_interpretacao",
+      "subjectKey": "ingles",
+      "materia": "Ingles",
+      "topico": "Leitura e Interpretacao",
+      "serie": [
+        1
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/1-serie/ingles/leitura-e-interpretacao/index.js",
+      "updatedAt": "2026-03-26T03:35:12.820Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "ingles_verb_to_be_e_simple_present",
+      "subjectKey": "ingles",
+      "materia": "Ingles",
+      "topico": "Verb To Be e Simple Present",
+      "serie": [
+        1
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/1-serie/ingles/verb-to-be-e-simple-present/index.js",
+      "updatedAt": "2026-03-26T03:35:12.826Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "ingles_vocabulario_basico",
+      "subjectKey": "ingles",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "serie": [
+        1
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/1-serie/ingles/vocabulario-basico/index.js",
+      "updatedAt": "2026-03-26T03:35:12.832Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "matematica_funcoes_afim_e_quadratica",
+      "subjectKey": "matematica",
+      "materia": "Matematica",
+      "topico": "Funcoes Afim e Quadratica",
+      "serie": [
+        1
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/1-serie/matematica/funcoes-afim-e-quadratica/index.js",
+      "updatedAt": "2026-03-26T03:35:12.542Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "matematica_geometria_plana",
+      "subjectKey": "matematica",
+      "materia": "Matematica",
+      "topico": "Geometria Plana",
+      "serie": [
+        1
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/1-serie/matematica/geometria-plana/index.js",
+      "updatedAt": "2026-03-26T03:35:12.553Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "matematica_introducao_a_trigonometria",
+      "subjectKey": "matematica",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "serie": [
+        1
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/1-serie/matematica/introducao-a-trigonometria/index.js",
+      "updatedAt": "2026-03-26T03:35:12.547Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "matematica_notacao_cientifica",
+      "subjectKey": "matematica",
+      "materia": "Matemática",
+      "topico": "Notação Científica",
+      "serie": [
+        1
+      ],
+      "totalQuestionCount": 200,
+      "readyQuestionCount": 200,
+      "hasQuestions": true,
+      "path": "questions/banks/1-serie/matematica/notacao-cientifica/index.js",
+      "updatedAt": "2026-03-27T13:20:46.871Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "matematica_numeros_reais",
+      "subjectKey": "matematica",
+      "materia": "Matemática",
+      "topico": "Números Reais",
+      "serie": [
+        1
+      ],
+      "totalQuestionCount": 200,
+      "readyQuestionCount": 200,
+      "hasQuestions": true,
+      "path": "questions/banks/1-serie/matematica/numeros-reais/index.js",
+      "updatedAt": "2026-03-26T04:14:33.185Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "matematica_porcentagem",
+      "subjectKey": "matematica",
+      "materia": "Matemática",
+      "topico": "Porcentagem",
+      "serie": [
+        1
+      ],
+      "totalQuestionCount": 200,
+      "readyQuestionCount": 200,
+      "hasQuestions": true,
+      "path": "questions/banks/1-serie/matematica/porcentagem/index.js",
+      "updatedAt": "2026-03-27T02:07:15.814Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "matematica_razoes_proporcoes",
+      "subjectKey": "matematica",
+      "materia": "Matemática",
+      "topico": "Razões e Proporções",
+      "serie": [
+        1
+      ],
+      "totalQuestionCount": 174,
+      "readyQuestionCount": 174,
+      "hasQuestions": true,
+      "path": "questions/banks/1-serie/matematica/razoes-e-proporcoes/index.js",
+      "updatedAt": "2026-03-27T14:51:22.022Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "portugues_figuras_de_linguagem",
+      "subjectKey": "portugues",
+      "materia": "Portugues",
+      "topico": "Figuras de Linguagem",
+      "serie": [
+        1
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/1-serie/portugues/figuras-de-linguagem/index.js",
+      "updatedAt": "2026-03-26T03:35:12.627Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "portugues_funcoes_da_linguagem",
+      "subjectKey": "portugues",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "serie": [
+        1
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/1-serie/portugues/funcoes-da-linguagem/index.js",
+      "updatedAt": "2026-03-26T03:35:12.619Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "portugues_generos_textuais",
+      "subjectKey": "portugues",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "serie": [
+        1
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/1-serie/portugues/generos-textuais/index.js",
+      "updatedAt": "2026-03-26T03:35:12.613Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "portugues_gramatica_classes_de_palavras",
+      "subjectKey": "portugues",
+      "materia": "Portugues",
+      "topico": "Gramatica Classes de Palavras",
+      "serie": [
+        1
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/1-serie/portugues/gramatica-classes-de-palavras/index.js",
+      "updatedAt": "2026-03-26T03:35:12.635Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "portugues_interpretacao_de_texto",
+      "subjectKey": "portugues",
+      "materia": "Portugues",
+      "topico": "Interpretacao de Texto",
+      "serie": [
+        1
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/1-serie/portugues/interpretacao-de-texto/index.js",
+      "updatedAt": "2026-03-26T03:35:12.607Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "portugues_literatura_trovadorismo_humanismo_classicismo",
+      "subjectKey": "portugues",
+      "materia": "Portugues",
+      "topico": "Literatura Trovadorismo Humanismo Classicismo",
+      "serie": [
+        1
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/1-serie/portugues/literatura-trovadorismo-humanismo-classicismo/index.js",
+      "updatedAt": "2026-03-26T03:35:12.646Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "portugues_ortografia_e_pontuacao",
+      "subjectKey": "portugues",
+      "materia": "Portugues",
+      "topico": "Ortografia e Pontuacao",
+      "serie": [
+        1
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/1-serie/portugues/ortografia-e-pontuacao/index.js",
+      "updatedAt": "2026-03-26T03:35:12.640Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "quimica_estrutura_atomica",
+      "subjectKey": "quimica",
+      "materia": "Quimica",
+      "topico": "Estrutura Atomica",
+      "serie": [
+        1
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/1-serie/quimica/estrutura-atomica/index.js",
+      "updatedAt": "2026-03-26T03:35:12.730Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "quimica_funcoes_inorganicas",
+      "subjectKey": "quimica",
+      "materia": "Quimica",
+      "topico": "Funcoes Inorganicas",
+      "serie": [
+        1
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/1-serie/quimica/funcoes-inorganicas/index.js",
+      "updatedAt": "2026-03-26T03:35:12.748Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "quimica_ligacoes_quimicas",
+      "subjectKey": "quimica",
+      "materia": "Quimica",
+      "topico": "Ligacoes Quimicas",
+      "serie": [
+        1
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/1-serie/quimica/ligacoes-quimicas/index.js",
+      "updatedAt": "2026-03-26T03:35:12.743Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "quimica_tabela_periodica",
+      "subjectKey": "quimica",
+      "materia": "Quimica",
+      "topico": "Tabela Periodica",
+      "serie": [
+        1
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/1-serie/quimica/tabela-periodica/index.js",
+      "updatedAt": "2026-03-26T03:35:12.736Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "sociologia_cultura_e_sociedade",
+      "subjectKey": "sociologia",
+      "materia": "Sociologia",
+      "topico": "Cultura e Sociedade",
+      "serie": [
+        1
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/1-serie/sociologia/cultura-e-sociedade/index.js",
+      "updatedAt": "2026-03-26T03:35:12.900Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "sociologia_identidade",
+      "subjectKey": "sociologia",
+      "materia": "Sociologia",
+      "topico": "Identidade",
+      "serie": [
+        1
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/1-serie/sociologia/identidade/index.js",
+      "updatedAt": "2026-03-26T03:35:12.912Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "sociologia_socializacao",
+      "subjectKey": "sociologia",
+      "materia": "Sociologia",
+      "topico": "Socializacao",
+      "serie": [
+        1
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/1-serie/sociologia/socializacao/index.js",
+      "updatedAt": "2026-03-26T03:35:12.906Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "artes_arte_moderna",
+      "subjectKey": "artes",
+      "materia": "Artes",
+      "topico": "Arte Moderna",
+      "serie": [
+        2
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/2-serie/artes/arte-moderna/index.js",
+      "updatedAt": "2026-03-26T03:35:13.177Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "artes_movimentos_artisticos",
+      "subjectKey": "artes",
+      "materia": "Artes",
+      "topico": "Movimentos Artisticos",
+      "serie": [
+        2
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/2-serie/artes/movimentos-artisticos/index.js",
+      "updatedAt": "2026-03-26T03:35:13.182Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "biologia_biotecnologia",
+      "subjectKey": "biologia",
+      "materia": "Biologia",
+      "topico": "Biotecnologia",
+      "serie": [
+        2
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/2-serie/biologia/biotecnologia/index.js",
+      "updatedAt": "2026-03-26T03:35:13.020Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "biologia_evolucao",
+      "subjectKey": "biologia",
+      "materia": "Biologia",
+      "topico": "Evolucao",
+      "serie": [
+        2
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/2-serie/biologia/evolucao/index.js",
+      "updatedAt": "2026-03-26T03:35:13.025Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "biologia_genetica",
+      "subjectKey": "biologia",
+      "materia": "Biologia",
+      "topico": "Genetica",
+      "serie": [
+        2
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/2-serie/biologia/genetica/index.js",
+      "updatedAt": "2026-03-26T03:35:13.007Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "biologia_leis_de_mendel",
+      "subjectKey": "biologia",
+      "materia": "Biologia",
+      "topico": "Leis de Mendel",
+      "serie": [
+        2
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/2-serie/biologia/leis-de-mendel/index.js",
+      "updatedAt": "2026-03-26T03:35:13.014Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "educacao-fisica_esportes_coletivos",
+      "subjectKey": "educacao_fisica",
+      "materia": "Educacao Fisica",
+      "topico": "Esportes Coletivos",
+      "serie": [
+        2
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/2-serie/educacao-fisica/esportes-coletivos/index.js",
+      "updatedAt": "2026-03-26T03:35:13.192Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "educacao-fisica_saude_e_corpo",
+      "subjectKey": "educacao_fisica",
+      "materia": "Educacao Fisica",
+      "topico": "Saude e Corpo",
+      "serie": [
+        2
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/2-serie/educacao-fisica/saude-e-corpo/index.js",
+      "updatedAt": "2026-03-26T03:35:13.197Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "filosofia_filosofia_moderna_descartes_locke_rousseau",
+      "subjectKey": "filosofia",
+      "materia": "Filosofia",
+      "topico": "Filosofia Moderna Descartes Locke Rousseau",
+      "serie": [
+        2
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/2-serie/filosofia/filosofia-moderna-descartes-locke-rousseau/index.js",
+      "updatedAt": "2026-03-26T03:35:13.207Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "filosofia_iluminismo",
+      "subjectKey": "filosofia",
+      "materia": "Filosofia",
+      "topico": "Iluminismo",
+      "serie": [
+        2
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/2-serie/filosofia/iluminismo/index.js",
+      "updatedAt": "2026-03-26T03:35:13.212Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "fisica_dinamica_leis_de_newton",
+      "subjectKey": "fisica",
+      "materia": "Fisica",
+      "topico": "Dinamica Leis de Newton",
+      "serie": [
+        2
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/2-serie/fisica/dinamica-leis-de-newton/index.js",
+      "updatedAt": "2026-03-26T03:35:13.038Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "fisica_impulso_e_quantidade_de_movimento",
+      "subjectKey": "fisica",
+      "materia": "Fisica",
+      "topico": "Impulso e Quantidade de Movimento",
+      "serie": [
+        2
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/2-serie/fisica/impulso-e-quantidade-de-movimento/index.js",
+      "updatedAt": "2026-03-26T03:35:13.050Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "fisica_trabalho_e_energia",
+      "subjectKey": "fisica",
+      "materia": "Fisica",
+      "topico": "Trabalho e Energia",
+      "serie": [
+        2
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/2-serie/fisica/trabalho-e-energia/index.js",
+      "updatedAt": "2026-03-26T03:35:13.043Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "geografia_economia_mundial",
+      "subjectKey": "geografia",
+      "materia": "Geografia",
+      "topico": "Economia Mundial",
+      "serie": [
+        2
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/2-serie/geografia/economia-mundial/index.js",
+      "updatedAt": "2026-03-26T03:35:13.132Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "geografia_globalizacao",
+      "subjectKey": "geografia",
+      "materia": "Geografia",
+      "topico": "Globalizacao",
+      "serie": [
+        2
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/2-serie/geografia/globalizacao/index.js",
+      "updatedAt": "2026-03-26T03:35:13.127Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "geografia_industrializacao",
+      "subjectKey": "geografia",
+      "materia": "Geografia",
+      "topico": "Industrializacao",
+      "serie": [
+        2
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/2-serie/geografia/industrializacao/index.js",
+      "updatedAt": "2026-03-26T03:35:13.123Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "geografia_urbanizacao",
+      "subjectKey": "geografia",
+      "materia": "Geografia",
+      "topico": "Urbanizacao",
+      "serie": [
+        2
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/2-serie/geografia/urbanizacao/index.js",
+      "updatedAt": "2026-03-26T03:35:13.138Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "historia_independencia_do_brasil",
+      "subjectKey": "historia",
+      "materia": "Historia",
+      "topico": "Independencia do Brasil",
+      "serie": [
+        2
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/2-serie/historia/independencia-do-brasil/index.js",
+      "updatedAt": "2026-03-26T03:35:13.099Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "historia_periodo_imperial",
+      "subjectKey": "historia",
+      "materia": "Historia",
+      "topico": "Periodo Imperial",
+      "serie": [
+        2
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/2-serie/historia/periodo-imperial/index.js",
+      "updatedAt": "2026-03-26T03:35:13.105Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "historia_revolucoes_industrial_e_francesa",
+      "subjectKey": "historia",
+      "materia": "Historia",
+      "topico": "Revolucoes Industrial e Francesa",
+      "serie": [
+        2
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/2-serie/historia/revolucoes-industrial-e-francesa/index.js",
+      "updatedAt": "2026-03-26T03:35:13.092Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "ingles_reading_e_interpretacao",
+      "subjectKey": "ingles",
+      "materia": "Ingles",
+      "topico": "Reading e Interpretacao",
+      "serie": [
+        2
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/2-serie/ingles/reading-e-interpretacao/index.js",
+      "updatedAt": "2026-03-26T03:35:13.148Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "ingles_tempos_verbais_past_e_future",
+      "subjectKey": "ingles",
+      "materia": "Ingles",
+      "topico": "Tempos Verbais Past e Future",
+      "serie": [
+        2
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/2-serie/ingles/tempos-verbais-past-e-future/index.js",
+      "updatedAt": "2026-03-26T03:35:13.155Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "ingles_vocabulario_intermediario",
+      "subjectKey": "ingles",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
+      "serie": [
+        2
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/2-serie/ingles/vocabulario-intermediario/index.js",
+      "updatedAt": "2026-03-26T03:35:13.162Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "matematica_funcoes_exponenciais",
+      "subjectKey": "matematica",
+      "materia": "Matematica",
+      "topico": "Funcoes Exponenciais",
+      "serie": [
+        2
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/2-serie/matematica/funcoes-exponenciais/index.js",
+      "updatedAt": "2026-03-26T03:35:12.930Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "matematica_geometria_espacial",
+      "subjectKey": "matematica",
+      "materia": "Matematica",
+      "topico": "Geometria Espacial",
+      "serie": [
+        2
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/2-serie/matematica/geometria-espacial/index.js",
+      "updatedAt": "2026-03-26T03:35:12.957Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "matematica_logaritmos",
+      "subjectKey": "matematica",
+      "materia": "Matematica",
+      "topico": "Logaritmos",
+      "serie": [
+        2
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/2-serie/matematica/logaritmos/index.js",
+      "updatedAt": "2026-03-26T03:35:12.935Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "matematica_progressoes_pa_e_pg",
+      "subjectKey": "matematica",
+      "materia": "Matematica",
+      "topico": "Progressoes PA e PG",
+      "serie": [
+        2
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/2-serie/matematica/progressoes-pa-e-pg/index.js",
+      "updatedAt": "2026-03-26T03:35:12.943Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "matematica_trigonometria_completa",
+      "subjectKey": "matematica",
+      "materia": "Matematica",
+      "topico": "Trigonometria Completa",
+      "serie": [
+        2
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/2-serie/matematica/trigonometria-completa/index.js",
+      "updatedAt": "2026-03-26T03:35:12.952Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "portugues_concordancia",
+      "subjectKey": "portugues",
+      "materia": "Portugues",
+      "topico": "Concordancia",
+      "serie": [
+        2
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/2-serie/portugues/concordancia/index.js",
+      "updatedAt": "2026-03-26T03:35:12.984Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "portugues_interpretacao_avancada",
+      "subjectKey": "portugues",
+      "materia": "Portugues",
+      "topico": "Interpretacao Avancada",
+      "serie": [
+        2
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/2-serie/portugues/interpretacao-avancada/index.js",
+      "updatedAt": "2026-03-26T03:35:12.969Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "portugues_literatura_barroco_arcadismo_romantismo",
+      "subjectKey": "portugues",
+      "materia": "Portugues",
+      "topico": "Literatura Barroco Arcadismo Romantismo",
+      "serie": [
+        2
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/2-serie/portugues/literatura-barroco-arcadismo-romantismo/index.js",
+      "updatedAt": "2026-03-26T03:35:12.995Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "portugues_regencia",
+      "subjectKey": "portugues",
+      "materia": "Portugues",
+      "topico": "Regencia",
+      "serie": [
+        2
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/2-serie/portugues/regencia/index.js",
+      "updatedAt": "2026-03-26T03:35:12.990Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "portugues_sintaxe_periodo_simples_e_composto",
+      "subjectKey": "portugues",
+      "materia": "Portugues",
+      "topico": "Sintaxe Periodo Simples e Composto",
+      "serie": [
+        2
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/2-serie/portugues/sintaxe-periodo-simples-e-composto/index.js",
+      "updatedAt": "2026-03-26T03:35:12.975Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "quimica_estequiometria",
+      "subjectKey": "quimica",
+      "materia": "Quimica",
+      "topico": "Estequiometria",
+      "serie": [
+        2
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/2-serie/quimica/estequiometria/index.js",
+      "updatedAt": "2026-03-26T03:35:13.070Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "quimica_reacoes_quimicas",
+      "subjectKey": "quimica",
+      "materia": "Quimica",
+      "topico": "Reacoes Quimicas",
+      "serie": [
+        2
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/2-serie/quimica/reacoes-quimicas/index.js",
+      "updatedAt": "2026-03-26T03:35:13.064Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "quimica_solucoes",
+      "subjectKey": "quimica",
+      "materia": "Quimica",
+      "topico": "Solucoes",
+      "serie": [
+        2
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/2-serie/quimica/solucoes/index.js",
+      "updatedAt": "2026-03-26T03:35:13.076Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "quimica_termoquimica",
+      "subjectKey": "quimica",
+      "materia": "Quimica",
+      "topico": "Termoquimica",
+      "serie": [
+        2
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/2-serie/quimica/termoquimica/index.js",
+      "updatedAt": "2026-03-26T03:35:13.081Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "sociologia_classes_sociais",
+      "subjectKey": "sociologia",
+      "materia": "Sociologia",
+      "topico": "Classes Sociais",
+      "serie": [
+        2
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/2-serie/sociologia/classes-sociais/index.js",
+      "updatedAt": "2026-03-26T03:35:13.229Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "sociologia_estrutura_social",
+      "subjectKey": "sociologia",
+      "materia": "Sociologia",
+      "topico": "Estrutura Social",
+      "serie": [
+        2
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/2-serie/sociologia/estrutura-social/index.js",
+      "updatedAt": "2026-03-26T03:35:13.223Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "sociologia_trabalho",
+      "subjectKey": "sociologia",
+      "materia": "Sociologia",
+      "topico": "Trabalho",
+      "serie": [
+        2
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/2-serie/sociologia/trabalho/index.js",
+      "updatedAt": "2026-03-26T03:35:13.235Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "artes_arte_contemporanea",
+      "subjectKey": "artes",
+      "materia": "Artes",
+      "topico": "Arte Contemporanea",
+      "serie": [
+        3
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/3-serie/artes/arte-contemporanea/index.js",
+      "updatedAt": "2026-03-26T03:35:13.477Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "biologia_ciclos_biogeoquimicos",
+      "subjectKey": "biologia",
+      "materia": "Biologia",
+      "topico": "Ciclos Biogeoquimicos",
+      "serie": [
+        3
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/3-serie/biologia/ciclos-biogeoquimicos/index.js",
+      "updatedAt": "2026-03-26T03:35:13.319Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "biologia_ecologia",
+      "subjectKey": "biologia",
+      "materia": "Biologia",
+      "topico": "Ecologia",
+      "serie": [
+        3
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/3-serie/biologia/ecologia/index.js",
+      "updatedAt": "2026-03-26T03:35:13.313Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "biologia_impactos_ambientais",
+      "subjectKey": "biologia",
+      "materia": "Biologia",
+      "topico": "Impactos Ambientais",
+      "serie": [
+        3
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/3-serie/biologia/impactos-ambientais/index.js",
+      "updatedAt": "2026-03-26T03:35:13.325Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "biologia_revisao_geral",
+      "subjectKey": "biologia",
+      "materia": "Biologia",
+      "topico": "Revisao Geral",
+      "serie": [
+        3
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/3-serie/biologia/revisao-geral/index.js",
+      "updatedAt": "2026-03-26T03:35:13.332Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "educacao-fisica_qualidade_de_vida",
+      "subjectKey": "educacao_fisica",
+      "materia": "Educacao Fisica",
+      "topico": "Qualidade de Vida",
+      "serie": [
+        3
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/3-serie/educacao-fisica/qualidade-de-vida/index.js",
+      "updatedAt": "2026-03-26T03:35:13.486Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "filosofia_etica",
+      "subjectKey": "filosofia",
+      "materia": "Filosofia",
+      "topico": "Etica",
+      "serie": [
+        3
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/3-serie/filosofia/etica/index.js",
+      "updatedAt": "2026-03-26T03:35:13.513Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "filosofia_existencialismo",
+      "subjectKey": "filosofia",
+      "materia": "Filosofia",
+      "topico": "Existencialismo",
+      "serie": [
+        3
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/3-serie/filosofia/existencialismo/index.js",
+      "updatedAt": "2026-03-26T03:35:13.502Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "filosofia_filosofia_contemporanea",
+      "subjectKey": "filosofia",
+      "materia": "Filosofia",
+      "topico": "Filosofia Contemporanea",
+      "serie": [
+        3
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/3-serie/filosofia/filosofia-contemporanea/index.js",
+      "updatedAt": "2026-03-26T03:35:13.497Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "fisica_eletrodinamica",
+      "subjectKey": "fisica",
+      "materia": "Fisica",
+      "topico": "Eletrodinamica",
+      "serie": [
+        3
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/3-serie/fisica/eletrodinamica/index.js",
+      "updatedAt": "2026-03-26T03:35:13.343Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "fisica_magnetismo",
+      "subjectKey": "fisica",
+      "materia": "Fisica",
+      "topico": "Magnetismo",
+      "serie": [
+        3
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/3-serie/fisica/magnetismo/index.js",
+      "updatedAt": "2026-03-26T03:35:13.348Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "fisica_ondulatoria",
+      "subjectKey": "fisica",
+      "materia": "Fisica",
+      "topico": "Ondulatoria",
+      "serie": [
+        3
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/3-serie/fisica/ondulatoria/index.js",
+      "updatedAt": "2026-03-26T03:35:13.359Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "fisica_optica",
+      "subjectKey": "fisica",
+      "materia": "Fisica",
+      "topico": "Optica",
+      "serie": [
+        3
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/3-serie/fisica/optica/index.js",
+      "updatedAt": "2026-03-26T03:35:13.352Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "geografia_brasil_atual",
+      "subjectKey": "geografia",
+      "materia": "Geografia",
+      "topico": "Brasil Atual",
+      "serie": [
+        3
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/3-serie/geografia/brasil-atual/index.js",
+      "updatedAt": "2026-03-26T03:35:13.451Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "geografia_energia",
+      "subjectKey": "geografia",
+      "materia": "Geografia",
+      "topico": "Energia",
+      "serie": [
+        3
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/3-serie/geografia/energia/index.js",
+      "updatedAt": "2026-03-26T03:35:13.447Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "geografia_geopolitica",
+      "subjectKey": "geografia",
+      "materia": "Geografia",
+      "topico": "Geopolitica",
+      "serie": [
+        3
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/3-serie/geografia/geopolitica/index.js",
+      "updatedAt": "2026-03-26T03:35:13.437Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "geografia_meio_ambiente",
+      "subjectKey": "geografia",
+      "materia": "Geografia",
+      "topico": "Meio Ambiente",
+      "serie": [
+        3
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/3-serie/geografia/meio-ambiente/index.js",
+      "updatedAt": "2026-03-26T03:35:13.442Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "historia_ditadura_militar",
+      "subjectKey": "historia",
+      "materia": "Historia",
+      "topico": "Ditadura Militar",
+      "serie": [
+        3
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/3-serie/historia/ditadura-militar/index.js",
+      "updatedAt": "2026-03-26T03:35:13.422Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "historia_historia_contemporanea",
+      "subjectKey": "historia",
+      "materia": "Historia",
+      "topico": "Historia Contemporanea",
+      "serie": [
+        3
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/3-serie/historia/historia-contemporanea/index.js",
+      "updatedAt": "2026-03-26T03:35:13.427Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "historia_republica_no_brasil",
+      "subjectKey": "historia",
+      "materia": "Historia",
+      "topico": "Republica no Brasil",
+      "serie": [
+        3
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/3-serie/historia/republica-no-brasil/index.js",
+      "updatedAt": "2026-03-26T03:35:13.418Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "ingles_interpretacao_foco_enem",
+      "subjectKey": "ingles",
+      "materia": "Ingles",
+      "topico": "Interpretacao Foco ENEM",
+      "serie": [
+        3
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/3-serie/ingles/interpretacao-foco-enem/index.js",
+      "updatedAt": "2026-03-26T03:35:13.461Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "ingles_textos_longos",
+      "subjectKey": "ingles",
+      "materia": "Ingles",
+      "topico": "Textos Longos",
+      "serie": [
+        3
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/3-serie/ingles/textos-longos/index.js",
+      "updatedAt": "2026-03-26T03:35:13.466Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "matematica_estatistica",
+      "subjectKey": "matematica",
+      "materia": "Matematica",
+      "topico": "Estatistica",
+      "serie": [
+        3
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/3-serie/matematica/estatistica/index.js",
+      "updatedAt": "2026-03-26T03:35:13.262Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "matematica_matematica_aplicada_enem",
+      "subjectKey": "matematica",
+      "materia": "Matematica",
+      "topico": "Matematica Aplicada ENEM",
+      "serie": [
+        3
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/3-serie/matematica/matematica-aplicada-enem/index.js",
+      "updatedAt": "2026-03-26T03:35:13.273Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "matematica_probabilidade",
+      "subjectKey": "matematica",
+      "materia": "Matematica",
+      "topico": "Probabilidade",
+      "serie": [
+        3
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/3-serie/matematica/probabilidade/index.js",
+      "updatedAt": "2026-03-26T03:35:13.258Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "matematica_revisao_geral",
+      "subjectKey": "matematica",
+      "materia": "Matematica",
+      "topico": "Revisao Geral",
+      "serie": [
+        3
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/3-serie/matematica/revisao-geral/index.js",
+      "updatedAt": "2026-03-26T03:35:13.268Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "matematica_analise_combinatoria",
+      "subjectKey": "matematica",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "serie": [
+        3
+      ],
+      "totalQuestionCount": 200,
+      "readyQuestionCount": 200,
+      "hasQuestions": true,
+      "path": "questions/banks/3-serie/matematica/analise-combinatoria/index.js",
+      "updatedAt": "2026-03-27T02:04:44.070Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "portugues_coesao_e_coerencia",
+      "subjectKey": "portugues",
+      "materia": "Portugues",
+      "topico": "Coesao e Coerencia",
+      "serie": [
+        3
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/3-serie/portugues/coesao-e-coerencia/index.js",
+      "updatedAt": "2026-03-26T03:35:13.297Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "portugues_interpretacao_avancada_enem",
+      "subjectKey": "portugues",
+      "materia": "Portugues",
+      "topico": "Interpretacao Avancada ENEM",
+      "serie": [
+        3
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/3-serie/portugues/interpretacao-avancada-enem/index.js",
+      "updatedAt": "2026-03-26T03:35:13.285Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "portugues_literatura_realismo_naturalismo_modernismo",
+      "subjectKey": "portugues",
+      "materia": "Portugues",
+      "topico": "Literatura Realismo Naturalismo Modernismo",
+      "serie": [
+        3
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/3-serie/portugues/literatura-realismo-naturalismo-modernismo/index.js",
+      "updatedAt": "2026-03-26T03:35:13.302Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "portugues_redacao",
+      "subjectKey": "portugues",
+      "materia": "Portugues",
+      "topico": "Redacao",
+      "serie": [
+        3
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/3-serie/portugues/redacao/index.js",
+      "updatedAt": "2026-03-26T03:35:13.291Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "quimica_eletroquimica",
+      "subjectKey": "quimica",
+      "materia": "Quimica",
+      "topico": "Eletroquimica",
+      "serie": [
+        3
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/3-serie/quimica/eletroquimica/index.js",
+      "updatedAt": "2026-03-26T03:35:13.372Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "quimica_funcoes_organicas",
+      "subjectKey": "quimica",
+      "materia": "Quimica",
+      "topico": "Funcoes Organicas",
+      "serie": [
+        3
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/3-serie/quimica/funcoes-organicas/index.js",
+      "updatedAt": "2026-03-26T03:35:13.406Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "quimica_polimeros",
+      "subjectKey": "quimica",
+      "materia": "Quimica",
+      "topico": "Polimeros",
+      "serie": [
+        3
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/3-serie/quimica/polimeros/index.js",
+      "updatedAt": "2026-03-26T03:35:13.410Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "quimica_quimica_organica",
+      "subjectKey": "quimica",
+      "materia": "Quimica",
+      "topico": "Quimica Organica",
+      "serie": [
+        3
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/3-serie/quimica/quimica-organica/index.js",
+      "updatedAt": "2026-03-26T03:35:13.377Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "sociologia_cidadania",
+      "subjectKey": "sociologia",
+      "materia": "Sociologia",
+      "topico": "Cidadania",
+      "serie": [
+        3
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/3-serie/sociologia/cidadania/index.js",
+      "updatedAt": "2026-03-26T03:35:13.557Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "sociologia_movimentos_sociais",
+      "subjectKey": "sociologia",
+      "materia": "Sociologia",
+      "topico": "Movimentos Sociais",
+      "serie": [
+        3
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/3-serie/sociologia/movimentos-sociais/index.js",
+      "updatedAt": "2026-03-26T03:35:13.561Z",
+      "base": "ESCOLAR"
+    },
+    {
+      "id": "sociologia_politica",
+      "subjectKey": "sociologia",
+      "materia": "Sociologia",
+      "topico": "Politica",
+      "serie": [
+        3
+      ],
+      "totalQuestionCount": 0,
+      "readyQuestionCount": 0,
+      "hasQuestions": false,
+      "path": "questions/banks/3-serie/sociologia/politica/index.js",
+      "updatedAt": "2026-03-26T03:35:13.553Z",
+      "base": "ESCOLAR"
+    }
+  ]
+}

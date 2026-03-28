@@ -3,6 +3,12 @@ window.QuestionsStore = {
     runsKey: "questions_runs_v1",
     saveTimer: null,
     runsSaveTimer: null,
+    smartProfilesSaveTimer: null,
+    savedBlocksSaveTimer: null,
+    runsRepository: null,
+    profileStateRepository: null,
+    smartProfilesRepository: null,
+    savedBlocksRepository: null,
 
     data: {
         topics: {},
@@ -13,6 +19,24 @@ window.QuestionsStore = {
     },
 
     load() {
+        if (this.profileStateRepository) {
+            const loaded =
+                this.profileStateRepository.load();
+
+            this.data = {
+                topics: {},
+                sessions: [],
+                smartProfiles: [],
+                savedBlocks: [],
+                runs: [],
+                ...(loaded || {})
+            };
+            this.loadSmartProfiles();
+            this.loadSavedBlocks();
+            this.loadRuns();
+            return;
+        }
+
         const saved =
             localStorage.getItem(this.key);
 
@@ -24,6 +48,8 @@ window.QuestionsStore = {
                 savedBlocks: [],
                 runs: []
             };
+            this.loadSmartProfiles();
+            this.loadSavedBlocks();
             this.loadRuns();
             return;
         }
@@ -81,10 +107,61 @@ window.QuestionsStore = {
             this.data.savedBlocks = [];
         }
 
+        this.loadSmartProfiles();
+        this.loadSavedBlocks();
         this.loadRuns();
     },
 
     save(immediate = false) {
+        if (this.profileStateRepository) {
+            if (this.saveTimer) {
+                clearTimeout(this.saveTimer);
+                this.saveTimer = null;
+            }
+
+            const write = () => {
+                const payload = {
+                    topics:
+                        this.data.topics || {},
+                    sessions:
+                        this.data.sessions || []
+                };
+
+                if (
+                    !this.smartProfilesRepository
+                ) {
+                    payload.smartProfiles =
+                        this.data
+                            .smartProfiles ||
+                        [];
+                }
+
+                if (
+                    !this.savedBlocksRepository
+                ) {
+                    payload.savedBlocks =
+                        this.data
+                            .savedBlocks ||
+                        [];
+                }
+
+                this.profileStateRepository.save(
+                    payload
+                );
+            };
+
+            if (immediate) {
+                write();
+                return;
+            }
+
+            this.saveTimer = setTimeout(() => {
+                this.saveTimer = null;
+                write();
+            }, 80);
+            return;
+        }
+
         if (this.saveTimer) {
             clearTimeout(this.saveTimer);
             this.saveTimer = null;
@@ -120,6 +197,12 @@ window.QuestionsStore = {
     },
 
     loadRuns() {
+        if (this.runsRepository) {
+            this.data.runs =
+                this.runsRepository.list();
+            return;
+        }
+
         const saved =
             localStorage.getItem(
                 this.runsKey
@@ -144,6 +227,34 @@ window.QuestionsStore = {
     },
 
     saveRuns(immediate = false) {
+        if (this.runsRepository) {
+            if (this.runsSaveTimer) {
+                clearTimeout(
+                    this.runsSaveTimer
+                );
+                this.runsSaveTimer = null;
+            }
+
+            const write = () => {
+                this.runsRepository.saveAll(
+                    this.data.runs || []
+                );
+            };
+
+            if (immediate) {
+                write();
+                return;
+            }
+
+            this.runsSaveTimer =
+                setTimeout(() => {
+                    this.runsSaveTimer =
+                        null;
+                    write();
+                }, 80);
+            return;
+        }
+
         if (this.runsSaveTimer) {
             clearTimeout(this.runsSaveTimer);
             this.runsSaveTimer = null;
@@ -167,6 +278,187 @@ window.QuestionsStore = {
             this.runsSaveTimer = null;
             write();
         }, 80);
+    },
+
+    loadSmartProfiles() {
+        if (this.smartProfilesRepository) {
+            this.data.smartProfiles =
+                this.smartProfilesRepository.list();
+            return;
+        }
+
+        if (
+            !Array.isArray(
+                this.data.smartProfiles
+            )
+        ) {
+            this.data.smartProfiles = [];
+        }
+    },
+
+    saveSmartProfiles(
+        immediate = false
+    ) {
+        if (this.smartProfilesRepository) {
+            if (this.smartProfilesSaveTimer) {
+                clearTimeout(
+                    this.smartProfilesSaveTimer
+                );
+                this.smartProfilesSaveTimer =
+                    null;
+            }
+
+            const write = () => {
+                this.smartProfilesRepository.saveAll(
+                    this.data.smartProfiles || []
+                );
+            };
+
+            if (immediate) {
+                write();
+                return;
+            }
+
+            this.smartProfilesSaveTimer =
+                setTimeout(() => {
+                    this.smartProfilesSaveTimer =
+                        null;
+                    write();
+                }, 80);
+            return;
+        }
+
+        this.save(immediate);
+    },
+
+    loadSavedBlocks() {
+        if (this.savedBlocksRepository) {
+            this.data.savedBlocks =
+                this.savedBlocksRepository.list();
+            return;
+        }
+
+        if (
+            !Array.isArray(
+                this.data.savedBlocks
+            )
+        ) {
+            this.data.savedBlocks = [];
+        }
+    },
+
+    saveSavedBlocks(
+        immediate = false
+    ) {
+        if (this.savedBlocksRepository) {
+            if (this.savedBlocksSaveTimer) {
+                clearTimeout(
+                    this.savedBlocksSaveTimer
+                );
+                this.savedBlocksSaveTimer =
+                    null;
+            }
+
+            const write = () => {
+                this.savedBlocksRepository.saveAll(
+                    this.data.savedBlocks || []
+                );
+            };
+
+            if (immediate) {
+                write();
+                return;
+            }
+
+            this.savedBlocksSaveTimer =
+                setTimeout(() => {
+                    this.savedBlocksSaveTimer =
+                        null;
+                    write();
+                }, 80);
+            return;
+        }
+
+        this.save(immediate);
+    },
+
+    setRunsRepository(
+        repository = null,
+        options = {}
+    ) {
+        this.runsRepository =
+            repository || null;
+
+        if (options.reload) {
+            this.loadRuns();
+        }
+    },
+
+    setProfileStateRepository(
+        repository = null,
+        options = {}
+    ) {
+        this.profileStateRepository =
+            repository || null;
+
+        if (options.reload) {
+            this.load();
+        }
+    },
+
+    setSmartProfilesRepository(
+        repository = null,
+        options = {}
+    ) {
+        this.smartProfilesRepository =
+            repository || null;
+
+        if (options.reload) {
+            this.loadSmartProfiles();
+        }
+    },
+
+    setSavedBlocksRepository(
+        repository = null,
+        options = {}
+    ) {
+        this.savedBlocksRepository =
+            repository || null;
+
+        if (options.reload) {
+            this.loadSavedBlocks();
+        }
+    },
+
+    normalizeQuestionIds(
+        questionIds = []
+    ) {
+        return Array.isArray(questionIds)
+            ? questionIds
+                .map((questionId) =>
+                    String(questionId || "")
+                        .trim()
+                )
+                .filter(Boolean)
+            : [];
+    },
+
+    compactSessionSnapshot(
+        questionIds = [],
+        sessionSnapshot = []
+    ) {
+        if (
+            Array.isArray(questionIds) &&
+            questionIds.length
+        ) {
+            return [];
+        }
+
+        return Array.isArray(
+            sessionSnapshot
+        )
+            ? [...sessionSnapshot]
+            : [];
     },
 
     getTopicStorageKey(meta) {
@@ -356,7 +648,7 @@ window.QuestionsStore = {
             next,
             ...list
         ].slice(0, 40);
-        this.save();
+        this.saveSmartProfiles();
 
         return next;
     },
@@ -377,7 +669,7 @@ window.QuestionsStore = {
             this.data.smartProfiles.length !==
             before
         ) {
-            this.save();
+            this.saveSmartProfiles();
             return true;
         }
 
@@ -429,6 +721,10 @@ window.QuestionsStore = {
 
     saveSavedBlock(block = {}) {
         const now = Date.now();
+        const questionIds =
+            this.normalizeQuestionIds(
+                block.questionIds
+            );
         const next = {
             id:
                 block.id ||
@@ -496,20 +792,12 @@ window.QuestionsStore = {
                         context: {},
                         meta: {}
                     },
-            questionIds:
-                Array.isArray(
-                    block.questionIds
-                )
-                    ? [...block.questionIds]
-                    : [],
+            questionIds,
             sessionSnapshot:
-                Array.isArray(
+                this.compactSessionSnapshot(
+                    questionIds,
                     block.sessionSnapshot
-                )
-                    ? [
-                        ...block.sessionSnapshot
-                    ]
-                    : [],
+                ),
             profileId:
                 String(
                     block.profileId || ""
@@ -526,7 +814,7 @@ window.QuestionsStore = {
             next,
             ...list
         ].slice(0, 80);
-        this.save();
+        this.saveSavedBlocks();
 
         return next;
     },
@@ -548,7 +836,7 @@ window.QuestionsStore = {
             this.data.savedBlocks.length !==
             before
         ) {
-            this.save();
+            this.saveSavedBlocks();
             return true;
         }
 
@@ -608,6 +896,10 @@ window.QuestionsStore = {
 
     saveRun(run = {}) {
         const now = Date.now();
+        const questionIds =
+            this.normalizeQuestionIds(
+                run.questionIds
+            );
         const next = {
             id:
                 run.id ||
@@ -643,20 +935,12 @@ window.QuestionsStore = {
                         ...run.routeSnapshot
                     }
                     : {},
-            questionIds:
-                Array.isArray(
-                    run.questionIds
-                )
-                    ? [...run.questionIds]
-                    : [],
+            questionIds,
             sessionSnapshot:
-                Array.isArray(
+                this.compactSessionSnapshot(
+                    questionIds,
                     run.sessionSnapshot
-                )
-                    ? [
-                        ...run.sessionSnapshot
-                    ]
-                    : [],
+                ),
             currentIndex:
                 Number(
                     run.currentIndex

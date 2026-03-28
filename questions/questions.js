@@ -5,6 +5,13 @@ window.QuestionsPage = {
         "questions_ui_coach_v1",
     coachState: {},
     coachDismissedViews: {},
+    sessionUseCases: null,
+    libraryUseCases: null,
+    routeUseCases: null,
+    launcherSelectors: null,
+    contextSynchronization: null,
+    launcherViewModels: null,
+    contentRepository: null,
     scriptUrl:
         document.currentScript?.src || "",
 
@@ -109,6 +116,7 @@ window.QuestionsPage = {
 
         amountOptions: [3, 5, 8, 12],
         schoolCatalog: [],
+        schoolCatalogManifest: null,
         bankStatus: "idle"
     },
 
@@ -120,6 +128,12 @@ window.QuestionsPage = {
         QuestionsUI.init(this);
         this.bindSyncBridge();
         this.clearRuntimeNotice();
+        await this.ensureSessionUseCases();
+        await this.ensureLibraryUseCases();
+        await this.ensureRouteUseCases();
+        await this.ensureLauncherSelectors();
+        await this.ensureContextSynchronization();
+        await this.ensureLauncherViewModels();
 
         if (
             this.data.bankStatus ===
@@ -157,24 +171,78 @@ window.QuestionsPage = {
             const baseUrl =
                 this.scriptUrl ||
                 fallbackUrl;
-            const bankUrl =
+            const bootstrapUrl =
                 new URL(
-                    "./banks/index.js",
+                    "./app/bootstrap/questionsModuleBootstrap.mjs",
                     baseUrl
                 ).href;
-            const module = await import(
-                bankUrl
+            const {
+                bootstrapQuestionsModule
+            } = await import(
+                bootstrapUrl
             );
+            const bundle =
+                await bootstrapQuestionsModule(
+                    {
+                        runtimeBaseUrl:
+                            baseUrl
+                    }
+                );
 
             this.data.schoolCatalog =
                 Array.isArray(
-                    module.questionsDB
+                    bundle.catalog
                 )
-                    ? [...module.questionsDB]
+                    ? [...bundle.catalog]
                     : [];
+            this.data.schoolCatalogManifest =
+                bundle.manifest &&
+                typeof bundle.manifest ===
+                    "object"
+                    ? {
+                        ...bundle.manifest
+                    }
+                    : null;
+            this.contentRepository =
+                bundle.repositories
+                    ?.content || null;
+            QuestionsStore.setProfileStateRepository(
+                bundle.repositories
+                    ?.profileState || null,
+                {
+                    reload: true
+                }
+            );
+            QuestionsStore.setSmartProfilesRepository(
+                bundle.repositories
+                    ?.smartProfiles || null,
+                {
+                    reload: true
+                }
+            );
+            QuestionsStore.setSavedBlocksRepository(
+                bundle.repositories
+                    ?.savedBlocks || null,
+                {
+                    reload: true
+                }
+            );
+            QuestionsStore.setRunsRepository(
+                bundle.repositories?.runs ||
+                    null,
+                {
+                    reload: true
+                }
+            );
+            this.sessionUseCases?.setContentRepository?.(
+                this.contentRepository
+            );
             this.data.bankStatus = "ready";
         } catch (error) {
             this.data.schoolCatalog = [];
+            this.data.schoolCatalogManifest =
+                null;
+            this.contentRepository = null;
             this.data.bankStatus = "error";
             this.runtimeNotice =
                 `Nao foi possivel carregar o banco escolar do modulo de questoes. ${error?.message || ""}`.trim();
@@ -183,6 +251,295 @@ window.QuestionsPage = {
                 error
             );
         }
+    },
+
+    async ensureSessionUseCases() {
+        if (this.sessionUseCases) {
+            return this.sessionUseCases;
+        }
+
+        try {
+            const fallbackUrl =
+                new URL(
+                    "./questions/questions.js",
+                    window.location.href
+                ).href;
+            const baseUrl =
+                this.scriptUrl ||
+                fallbackUrl;
+            const applicationUrl =
+                new URL(
+                    "./app/application/sessionUseCases.mjs",
+                    baseUrl
+                ).href;
+            const {
+                createQuestionsSessionUseCases
+            } = await import(
+                applicationUrl
+            );
+
+            this.sessionUseCases =
+                createQuestionsSessionUseCases(
+                    {
+                        page: this,
+                        dependencies: {
+                            QuestionsState,
+                            QuestionsStore,
+                            QuestionsContext,
+                            QuestionsService,
+                            QuestionsUI,
+                            QuestionsContentRepository:
+                                this.contentRepository
+                        }
+                    }
+                );
+        } catch (error) {
+            this.sessionUseCases = null;
+            console.warn(
+                "[Questions] Falha ao carregar session use cases do v2. Mantendo fallback legado.",
+                error
+            );
+        }
+
+        return this.sessionUseCases;
+    },
+
+    async ensureLibraryUseCases() {
+        if (this.libraryUseCases) {
+            return this.libraryUseCases;
+        }
+
+        try {
+            const fallbackUrl =
+                new URL(
+                    "./questions/questions.js",
+                    window.location.href
+                ).href;
+            const baseUrl =
+                this.scriptUrl ||
+                fallbackUrl;
+            const applicationUrl =
+                new URL(
+                    "./app/application/libraryUseCases.mjs",
+                    baseUrl
+                ).href;
+            const {
+                createQuestionsLibraryUseCases
+            } = await import(
+                applicationUrl
+            );
+
+            this.libraryUseCases =
+                createQuestionsLibraryUseCases(
+                    {
+                        page: this,
+                        dependencies: {
+                            QuestionsStore,
+                            QuestionsContext,
+                            QuestionsService
+                        }
+                    }
+                );
+        } catch (error) {
+            this.libraryUseCases = null;
+            console.warn(
+                "[Questions] Falha ao carregar library use cases do v2. Mantendo fallback legado.",
+                error
+            );
+        }
+
+        return this.libraryUseCases;
+    },
+
+    async ensureRouteUseCases() {
+        if (this.routeUseCases) {
+            return this.routeUseCases;
+        }
+
+        try {
+            const fallbackUrl =
+                new URL(
+                    "./questions/questions.js",
+                    window.location.href
+                ).href;
+            const baseUrl =
+                this.scriptUrl ||
+                fallbackUrl;
+            const applicationUrl =
+                new URL(
+                    "./app/application/routeUseCases.mjs",
+                    baseUrl
+                ).href;
+            const {
+                createQuestionsRouteUseCases
+            } = await import(
+                applicationUrl
+            );
+
+            this.routeUseCases =
+                createQuestionsRouteUseCases(
+                    {
+                        page: this,
+                        dependencies: {
+                            QuestionsContext,
+                            QuestionsService
+                        }
+                    }
+                );
+        } catch (error) {
+            this.routeUseCases = null;
+            console.warn(
+                "[Questions] Falha ao carregar route use cases do v2. Mantendo fallback legado.",
+                error
+            );
+        }
+
+        return this.routeUseCases;
+    },
+
+    async ensureLauncherSelectors() {
+        if (this.launcherSelectors) {
+            return this.launcherSelectors;
+        }
+
+        try {
+            const fallbackUrl =
+                new URL(
+                    "./questions/questions.js",
+                    window.location.href
+                ).href;
+            const baseUrl =
+                this.scriptUrl ||
+                fallbackUrl;
+            const selectorsUrl =
+                new URL(
+                    "./app/application/launcherSelectors.mjs",
+                    baseUrl
+                ).href;
+            const {
+                createQuestionsLauncherSelectors
+            } = await import(
+                selectorsUrl
+            );
+
+            this.launcherSelectors =
+                createQuestionsLauncherSelectors(
+                    {
+                        page: this,
+                        dependencies: {
+                            QuestionsContext,
+                            QuestionsService
+                        }
+                    }
+                );
+        } catch (error) {
+            this.launcherSelectors =
+                null;
+            console.warn(
+                "[Questions] Falha ao carregar launcher selectors do v2. Mantendo fallback legado.",
+                error
+            );
+        }
+
+        return this.launcherSelectors;
+    },
+
+    async ensureContextSynchronization() {
+        if (
+            this.contextSynchronization
+        ) {
+            return this.contextSynchronization;
+        }
+
+        try {
+            const fallbackUrl =
+                new URL(
+                    "./questions/questions.js",
+                    window.location.href
+                ).href;
+            const baseUrl =
+                this.scriptUrl ||
+                fallbackUrl;
+            const applicationUrl =
+                new URL(
+                    "./app/application/contextSynchronization.mjs",
+                    baseUrl
+                ).href;
+            const {
+                createQuestionsContextSynchronization
+            } = await import(
+                applicationUrl
+            );
+
+            this.contextSynchronization =
+                createQuestionsContextSynchronization(
+                    {
+                        page: this,
+                        dependencies: {
+                            QuestionsContext,
+                            QuestionsService
+                        }
+                    }
+                );
+        } catch (error) {
+            this.contextSynchronization =
+                null;
+            console.warn(
+                "[Questions] Falha ao carregar context synchronization do v2. Mantendo fallback legado.",
+                error
+            );
+        }
+
+        return this.contextSynchronization;
+    },
+
+    async ensureLauncherViewModels() {
+        if (this.launcherViewModels) {
+            return this.launcherViewModels;
+        }
+
+        try {
+            const fallbackUrl =
+                new URL(
+                    "./questions/questions.js",
+                    window.location.href
+                ).href;
+            const baseUrl =
+                this.scriptUrl ||
+                fallbackUrl;
+            const applicationUrl =
+                new URL(
+                    "./app/application/launcherViewModels.mjs",
+                    baseUrl
+                ).href;
+            const {
+                createQuestionsLauncherViewModels
+            } = await import(
+                applicationUrl
+            );
+
+            this.launcherViewModels =
+                createQuestionsLauncherViewModels(
+                    {
+                        page: this,
+                        dependencies: {
+                            QuestionsState,
+                            QuestionsStore,
+                            QuestionsContext,
+                            QuestionsService
+                        }
+                    }
+                );
+        } catch (error) {
+            this.launcherViewModels =
+                null;
+            console.warn(
+                "[Questions] Falha ao carregar launcher view models do v2. Mantendo fallback legado.",
+                error
+            );
+        }
+
+        return this.launcherViewModels;
     },
 
     getModeConfig(modeKey = null) {
@@ -251,6 +608,15 @@ window.QuestionsPage = {
     queueExternalRoute(
         payload = {}
     ) {
+        if (
+            this.routeUseCases
+                ?.queueExternalRoute
+        ) {
+            return this.routeUseCases.queueExternalRoute(
+                payload
+            );
+        }
+
         QuestionsContext.setPendingSync(
             payload,
             true
@@ -282,6 +648,15 @@ window.QuestionsPage = {
     applyExternalRoute(
         payload = {}
     ) {
+        if (
+            this.routeUseCases
+                ?.applyExternalRoute
+        ) {
+            return this.routeUseCases.applyExternalRoute(
+                payload
+            );
+        }
+
         const normalized =
             QuestionsService.normalizeSyncPayload(
                 this,
@@ -323,6 +698,13 @@ window.QuestionsPage = {
     },
 
     syncContext() {
+        if (
+            this.contextSynchronization
+                ?.syncContext
+        ) {
+            return this.contextSynchronization.syncContext();
+        }
+
         const snapshot =
             QuestionsContext.get();
         const series =
@@ -345,12 +727,29 @@ window.QuestionsPage = {
             );
         const validSubjects =
             subjects.map((item) => item.key);
+        const selectedSubjectRecord =
+            subjects.find(
+                (item) =>
+                    item.key ===
+                    snapshot.materia
+            ) || null;
+        const firstReadySubject =
+            subjects.find(
+                (item) => item.hasQuestions
+            )?.key || "";
         const materia =
-            validSubjects.includes(
-                snapshot.materia
+            selectedSubjectRecord &&
+            (
+                selectedSubjectRecord
+                    .hasQuestions ||
+                !firstReadySubject
             )
                 ? snapshot.materia
-                : (validSubjects[0] || "");
+                : (
+                    firstReadySubject ||
+                    validSubjects[0] ||
+                    ""
+                );
 
         const topics =
             QuestionsService.getTopicOptions(
@@ -362,6 +761,13 @@ window.QuestionsPage = {
             );
         const validTopics =
             topics.map((item) => item.key);
+        const readyTopicKeys = topics
+            .filter((item) => item.hasQuestions)
+            .map((item) => item.key);
+        const firstReadyTopic =
+            topics.find(
+                (item) => item.hasQuestions
+            )?.key || "";
         let selectedTopics =
             Array.isArray(snapshot.topicos)
                 ? snapshot.topicos.filter(
@@ -369,8 +775,28 @@ window.QuestionsPage = {
                         validTopics.includes(
                             topicKey
                         )
-                )
+                    )
                 : [];
+
+        if (
+            readyTopicKeys.length &&
+            selectedTopics.length
+        ) {
+            const selectedReadyTopics =
+                selectedTopics.filter(
+                    (topicKey) =>
+                        readyTopicKeys.includes(
+                            topicKey
+                        )
+                );
+
+            if (selectedReadyTopics.length) {
+                selectedTopics =
+                    selectedReadyTopics;
+            } else {
+                selectedTopics = [];
+            }
+        }
 
         const mode =
             this.data.modes[
@@ -394,7 +820,8 @@ window.QuestionsPage = {
             mode === "ASSUNTO_UNICO"
         ) {
             selectedTopics = [
-                validTopics[0]
+                firstReadyTopic ||
+                    validTopics[0]
             ];
         }
 
@@ -498,6 +925,15 @@ window.QuestionsPage = {
     },
 
     updateContext(patch = {}) {
+        if (
+            this.routeUseCases
+                ?.updateContext
+        ) {
+            return this.routeUseCases.updateContext(
+                patch
+            );
+        }
+
         const current =
             QuestionsContext.get();
         const next = {
@@ -579,7 +1015,60 @@ window.QuestionsPage = {
         );
     },
 
+    resolveQuestionList(
+        questionIds = [],
+        fallbackSnapshot = []
+    ) {
+        if (
+            this.contextSynchronization
+                ?.resolveQuestionList
+        ) {
+            return this.contextSynchronization.resolveQuestionList(
+                questionIds,
+                fallbackSnapshot
+            );
+        }
+
+        const ids = Array.isArray(questionIds)
+            ? questionIds.filter(Boolean)
+            : [];
+
+        if (
+            ids.length &&
+            this.contentRepository &&
+            typeof this.contentRepository
+                .findQuestionsByIds ===
+                "function"
+        ) {
+            const resolved =
+                this.contentRepository.findQuestionsByIds(
+                    ids
+                );
+
+            if (
+                Array.isArray(resolved) &&
+                resolved.length === ids.length
+            ) {
+                return [...resolved];
+            }
+        }
+
+        return Array.isArray(
+            fallbackSnapshot
+        ) && fallbackSnapshot.length
+            ? [...fallbackSnapshot]
+            : [];
+    },
+
     setBase(baseKey) {
+        if (
+            this.routeUseCases?.setBase
+        ) {
+            return this.routeUseCases.setBase(
+                baseKey
+            );
+        }
+
         const base =
             this.data.bases?.[baseKey];
 
@@ -600,6 +1089,15 @@ window.QuestionsPage = {
     },
 
     toggleTopic(topicKey) {
+        if (
+            this.routeUseCases
+                ?.toggleTopic
+        ) {
+            return this.routeUseCases.toggleTopic(
+                topicKey
+            );
+        }
+
         const ctx =
             QuestionsContext.get();
 
@@ -640,12 +1138,28 @@ window.QuestionsPage = {
     },
 
     setFocusPrincipal(topicKey) {
+        if (
+            this.routeUseCases
+                ?.setFocusPrincipal
+        ) {
+            return this.routeUseCases.setFocusPrincipal(
+                topicKey
+            );
+        }
+
         this.updateContext({
             focoPrincipal: topicKey
         });
     },
 
     selectAllTopics() {
+        if (
+            this.routeUseCases
+                ?.selectAllTopics
+        ) {
+            return this.routeUseCases.selectAllTopics();
+        }
+
         const ctx =
             QuestionsContext.get();
 
@@ -676,6 +1190,13 @@ window.QuestionsPage = {
     },
 
     clearTopics() {
+        if (
+            this.routeUseCases
+                ?.clearTopics
+        ) {
+            return this.routeUseCases.clearTopics();
+        }
+
         const ctx =
             QuestionsContext.get();
 
@@ -804,6 +1325,15 @@ window.QuestionsPage = {
     },
 
     setSmartConfig(patch = {}) {
+        if (
+            this.routeUseCases
+                ?.setSmartConfig
+        ) {
+            return this.routeUseCases.setSmartConfig(
+                patch
+            );
+        }
+
         QuestionsContext.replace(
             {
                 ...QuestionsContext.get(),
@@ -817,6 +1347,15 @@ window.QuestionsPage = {
     },
 
     setSmartGoal(goalKey) {
+        if (
+            this.routeUseCases
+                ?.setSmartGoal
+        ) {
+            return this.routeUseCases.setSmartGoal(
+                goalKey
+            );
+        }
+
         if (!this.data.smartGoals?.[goalKey]) {
             return;
         }
@@ -827,6 +1366,13 @@ window.QuestionsPage = {
     },
 
     getSmartStartOptions() {
+        if (
+            this.launcherSelectors
+                ?.getSmartStartOptions
+        ) {
+            return this.launcherSelectors.getSmartStartOptions();
+        }
+
         const ctx =
             QuestionsContext.get();
         const availableSeries =
@@ -876,6 +1422,13 @@ window.QuestionsPage = {
     },
 
     getSelectedSmartSeries() {
+        if (
+            this.launcherSelectors
+                ?.getSelectedSmartSeries
+        ) {
+            return this.launcherSelectors.getSelectedSmartSeries();
+        }
+
         return this.getSmartStartOptions()
             .filter(
                 (item) =>
@@ -892,6 +1445,13 @@ window.QuestionsPage = {
     },
 
     getSmartSubjectOptions() {
+        if (
+            this.launcherSelectors
+                ?.getSmartSubjectOptions
+        ) {
+            return this.launcherSelectors.getSmartSubjectOptions();
+        }
+
         const ctx =
             QuestionsContext.get();
         const selectedSeries =
@@ -910,7 +1470,10 @@ window.QuestionsPage = {
                         key: subject.key,
                         label: subject.label,
                         count: 0,
-                        topicCount: 0
+                        topicCount: 0,
+                        readyQuestionCount: 0,
+                        readyTopicCount: 0,
+                        hasQuestions: false
                     };
 
                 current.count +=
@@ -921,6 +1484,19 @@ window.QuestionsPage = {
                     Number(
                         subject.topicCount
                     ) || 0;
+                current.readyQuestionCount +=
+                    Number(
+                        subject.readyQuestionCount
+                    ) || 0;
+                current.readyTopicCount +=
+                    Number(
+                        subject.readyTopicCount
+                    ) || 0;
+                current.hasQuestions =
+                    current.hasQuestions ||
+                    Boolean(
+                        subject.hasQuestions
+                    );
 
                 grouped.set(
                     subject.key,
@@ -929,8 +1505,12 @@ window.QuestionsPage = {
             });
         });
 
-        return [...grouped.values()].map(
-            (subject) => ({
+        return [...grouped.values()]
+            .filter(
+                (subject) =>
+                    subject.hasQuestions
+            )
+            .map((subject) => ({
                 ...subject,
                 active:
                     (
@@ -938,11 +1518,19 @@ window.QuestionsPage = {
                         []
                     ).includes(subject.key),
                 disabled: false
-            })
-        );
+            }));
     },
 
     toggleSmartStartOption(optionKey) {
+        if (
+            this.routeUseCases
+                ?.toggleSmartStartOption
+        ) {
+            return this.routeUseCases.toggleSmartStartOption(
+                optionKey
+            );
+        }
+
         const cleanKey =
             String(optionKey || "")
                 .trim()
@@ -971,6 +1559,13 @@ window.QuestionsPage = {
     },
 
     selectAllSmartStartOptions() {
+        if (
+            this.routeUseCases
+                ?.selectAllSmartStartOptions
+        ) {
+            return this.routeUseCases.selectAllSmartStartOptions();
+        }
+
         this.dismissCoachHint(
             "smart_start"
         );
@@ -992,6 +1587,13 @@ window.QuestionsPage = {
     },
 
     continueSmartStart() {
+        if (
+            this.routeUseCases
+                ?.continueSmartStart
+        ) {
+            return this.routeUseCases.continueSmartStart();
+        }
+
         const activeOptions =
             this.getSmartStartOptions().filter(
                 (item) =>
@@ -1018,6 +1620,15 @@ window.QuestionsPage = {
     toggleSmartSubjectOption(
         subjectKey
     ) {
+        if (
+            this.routeUseCases
+                ?.toggleSmartSubjectOption
+        ) {
+            return this.routeUseCases.toggleSmartSubjectOption(
+                subjectKey
+            );
+        }
+
         this.dismissCoachHint(
             "smart_subjects"
         );
@@ -1027,6 +1638,13 @@ window.QuestionsPage = {
     },
 
     selectAllSmartSubjectOptions() {
+        if (
+            this.routeUseCases
+                ?.selectAllSmartSubjectOptions
+        ) {
+            return this.routeUseCases.selectAllSmartSubjectOptions();
+        }
+
         this.dismissCoachHint(
             "smart_subjects"
         );
@@ -1048,6 +1666,13 @@ window.QuestionsPage = {
     },
 
     continueSmartSubjects() {
+        if (
+            this.routeUseCases
+                ?.continueSmartSubjects
+        ) {
+            return this.routeUseCases.continueSmartSubjects();
+        }
+
         const selectedSeries =
             this.getSelectedSmartSeries();
 
@@ -1082,6 +1707,15 @@ window.QuestionsPage = {
     toggleSmartSeriesExclusion(
         serieKey
     ) {
+        if (
+            this.routeUseCases
+                ?.toggleSmartSeriesExclusion
+        ) {
+            return this.routeUseCases.toggleSmartSeriesExclusion(
+                serieKey
+            );
+        }
+
         const ctx =
             QuestionsContext.get();
         const serie =
@@ -1112,6 +1746,15 @@ window.QuestionsPage = {
     },
 
     toggleSmartBaseExclusion(baseKey) {
+        if (
+            this.routeUseCases
+                ?.toggleSmartBaseExclusion
+        ) {
+            return this.routeUseCases.toggleSmartBaseExclusion(
+                baseKey
+            );
+        }
+
         const base =
             this.data.bases?.[baseKey];
 
@@ -1145,6 +1788,15 @@ window.QuestionsPage = {
     toggleSmartSubjectExclusion(
         subjectKey
     ) {
+        if (
+            this.routeUseCases
+                ?.toggleSmartSubjectExclusion
+        ) {
+            return this.routeUseCases.toggleSmartSubjectExclusion(
+                subjectKey
+            );
+        }
+
         const key =
             String(subjectKey || "")
                 .trim()
@@ -1177,6 +1829,13 @@ window.QuestionsPage = {
     },
 
     clearSmartExclusions() {
+        if (
+            this.routeUseCases
+                ?.clearSmartExclusions
+        ) {
+            return this.routeUseCases.clearSmartExclusions();
+        }
+
         this.setSmartConfig({
             smartSelectedSeries: [],
             smartSelectedSubjects: [],
@@ -1189,6 +1848,15 @@ window.QuestionsPage = {
     buildSmartProfilePayload(
         overrides = {}
     ) {
+        if (
+            this.launcherSelectors
+                ?.buildSmartProfilePayload
+        ) {
+            return this.launcherSelectors.buildSmartProfilePayload(
+                overrides
+            );
+        }
+
         const ctx =
             QuestionsContext.get();
 
@@ -1225,6 +1893,13 @@ window.QuestionsPage = {
     },
 
     getSuggestedSmartProfileName() {
+        if (
+            this.launcherSelectors
+                ?.getSuggestedSmartProfileName
+        ) {
+            return this.launcherSelectors.getSuggestedSmartProfileName();
+        }
+
         const ctx =
             QuestionsContext.get();
         const goalLabel =
@@ -1276,6 +1951,13 @@ window.QuestionsPage = {
     },
 
     saveCurrentSmartProfile() {
+        if (
+            this.libraryUseCases
+                ?.saveCurrentSmartProfile
+        ) {
+            return this.libraryUseCases.saveCurrentSmartProfile();
+        }
+
         const suggestedName =
             this.getSuggestedSmartProfileName();
         const name = window.prompt(
@@ -1304,6 +1986,15 @@ window.QuestionsPage = {
     },
 
     applySmartProfile(profileId) {
+        if (
+            this.libraryUseCases
+                ?.applySmartProfile
+        ) {
+            return this.libraryUseCases.applySmartProfile(
+                profileId
+            );
+        }
+
         const profile =
             QuestionsStore.getSmartProfileById(
                 profileId
@@ -1358,6 +2049,15 @@ window.QuestionsPage = {
     },
 
     renameSmartProfile(profileId) {
+        if (
+            this.libraryUseCases
+                ?.renameSmartProfile
+        ) {
+            return this.libraryUseCases.renameSmartProfile(
+                profileId
+            );
+        }
+
         const profile =
             QuestionsStore.getSmartProfileById(
                 profileId
@@ -1405,6 +2105,15 @@ window.QuestionsPage = {
     },
 
     duplicateSmartProfile(profileId) {
+        if (
+            this.libraryUseCases
+                ?.duplicateSmartProfile
+        ) {
+            return this.libraryUseCases.duplicateSmartProfile(
+                profileId
+            );
+        }
+
         const profile =
             QuestionsStore.getSmartProfileById(
                 profileId
@@ -1450,6 +2159,15 @@ window.QuestionsPage = {
     },
 
     deleteSmartProfile(profileId) {
+        if (
+            this.libraryUseCases
+                ?.deleteSmartProfile
+        ) {
+            return this.libraryUseCases.deleteSmartProfile(
+                profileId
+            );
+        }
+
         const profile =
             QuestionsStore.getSmartProfileById(
                 profileId
@@ -1488,6 +2206,17 @@ window.QuestionsPage = {
         context = {},
         sourceMode = ""
     ) {
+        if (
+            this.launcherSelectors
+                ?.buildSavedBlockName
+        ) {
+            return this.launcherSelectors.buildSavedBlockName(
+                meta,
+                context,
+                sourceMode
+            );
+        }
+
         const modeLabel =
             sourceMode === "smart"
                 ? "Bloco inteligente"
@@ -1569,6 +2298,16 @@ window.QuestionsPage = {
         snapshot = {},
         options = {}
     ) {
+        if (
+            this.libraryUseCases
+                ?.saveBlockSnapshot
+        ) {
+            return this.libraryUseCases.saveBlockSnapshot(
+                snapshot,
+                options
+            );
+        }
+
         const list = Array.isArray(
             snapshot.list
         )
@@ -1660,6 +2399,13 @@ window.QuestionsPage = {
     },
 
     saveCurrentSpecificBlock() {
+        if (
+            this.libraryUseCases
+                ?.saveCurrentSpecificBlock
+        ) {
+            return this.libraryUseCases.saveCurrentSpecificBlock();
+        }
+
         const validation =
             QuestionsService.getLauncherValidation(
                 this
@@ -1699,6 +2445,13 @@ window.QuestionsPage = {
     },
 
     saveCurrentSmartBlock() {
+        if (
+            this.libraryUseCases
+                ?.saveCurrentSmartBlock
+        ) {
+            return this.libraryUseCases.saveCurrentSmartBlock();
+        }
+
         const current =
             QuestionsContext.get();
         const preview =
@@ -1731,6 +2484,15 @@ window.QuestionsPage = {
     },
 
     openSavedBlock(blockId) {
+        if (
+            this.libraryUseCases
+                ?.openSavedBlock
+        ) {
+            return this.libraryUseCases.openSavedBlock(
+                blockId
+            );
+        }
+
         const block =
             QuestionsStore.getSavedBlockById(
                 blockId
@@ -1770,6 +2532,15 @@ window.QuestionsPage = {
     },
 
     startSavedBlock(blockId) {
+        if (
+            this.libraryUseCases
+                ?.startSavedBlock
+        ) {
+            return this.libraryUseCases.startSavedBlock(
+                blockId
+            );
+        }
+
         const block =
             QuestionsStore.getSavedBlockById(
                 blockId
@@ -1783,10 +2554,10 @@ window.QuestionsPage = {
         }
 
         if (
-            !Array.isArray(
+            !this.resolveQuestionList(
+                block.questionIds,
                 block.sessionSnapshot
-            ) ||
-            !block.sessionSnapshot.length
+            ).length
         ) {
             this.runtimeNotice =
                 "Esse bloco nao tem questoes suficientes para ser refeito.";
@@ -1799,9 +2570,13 @@ window.QuestionsPage = {
         );
         this.clearRuntimeNotice();
         this.startSession({
-            sessionList: [
-                ...block.sessionSnapshot
-            ],
+            sessionList:
+                this.resolveQuestionList(
+                    block.questionIds,
+                    block.sessionSnapshot
+                ),
+            questionIds:
+                block.questionIds || [],
             meta: {
                 ...(block.routeSnapshot
                     ?.meta || {}),
@@ -1821,6 +2596,15 @@ window.QuestionsPage = {
     },
 
     renameSavedBlock(blockId) {
+        if (
+            this.libraryUseCases
+                ?.renameSavedBlock
+        ) {
+            return this.libraryUseCases.renameSavedBlock(
+                blockId
+            );
+        }
+
         const block =
             QuestionsStore.getSavedBlockById(
                 blockId
@@ -1862,6 +2646,15 @@ window.QuestionsPage = {
     },
 
     duplicateSavedBlock(blockId) {
+        if (
+            this.libraryUseCases
+                ?.duplicateSavedBlock
+        ) {
+            return this.libraryUseCases.duplicateSavedBlock(
+                blockId
+            );
+        }
+
         const block =
             QuestionsStore.getSavedBlockById(
                 blockId
@@ -1903,6 +2696,15 @@ window.QuestionsPage = {
     },
 
     deleteSavedBlock(blockId) {
+        if (
+            this.libraryUseCases
+                ?.deleteSavedBlock
+        ) {
+            return this.libraryUseCases.deleteSavedBlock(
+                blockId
+            );
+        }
+
         const block =
             QuestionsStore.getSavedBlockById(
                 blockId
@@ -1937,6 +2739,17 @@ window.QuestionsPage = {
         context = {},
         sourceMode = ""
     ) {
+        if (
+            this.launcherSelectors
+                ?.buildRunTitle
+        ) {
+            return this.launcherSelectors.buildRunTitle(
+                meta,
+                context,
+                sourceMode
+            );
+        }
+
         const modeLabel =
             sourceMode === "smart"
                 ? "Treino inteligente"
@@ -1968,6 +2781,17 @@ window.QuestionsPage = {
         meta = {},
         options = {}
     ) {
+        if (
+            this.sessionUseCases
+                ?.createRunFromSession
+        ) {
+            return this.sessionUseCases.createRunFromSession(
+                list,
+                meta,
+                options
+            );
+        }
+
         const ctx =
             QuestionsContext.get();
         const sourceMode =
@@ -2032,6 +2856,16 @@ window.QuestionsPage = {
         status = "in_progress",
         extra = {}
     ) {
+        if (
+            this.sessionUseCases
+                ?.persistActiveRun
+        ) {
+            return this.sessionUseCases.persistActiveRun(
+                status,
+                extra
+            );
+        }
+
         const runId =
             QuestionsState.getActiveRunId();
 
@@ -2118,6 +2952,13 @@ window.QuestionsPage = {
 
     pauseSession() {
         if (
+            this.sessionUseCases
+                ?.pauseSession
+        ) {
+            return this.sessionUseCases.pauseSession();
+        }
+
+        if (
             QuestionsState.getPhase() !==
             "session"
         ) {
@@ -2134,6 +2975,14 @@ window.QuestionsPage = {
     },
 
     resumeRun(runId) {
+        if (
+            this.sessionUseCases?.resumeRun
+        ) {
+            return this.sessionUseCases.resumeRun(
+                runId
+            );
+        }
+
         const run =
             QuestionsStore.getRunById(runId);
 
@@ -2145,16 +2994,14 @@ window.QuestionsPage = {
         }
 
         const list =
-            Array.isArray(
+            this.resolveQuestionList(
+                run.questionIds,
                 run.sessionSnapshot
-            ) &&
-            run.sessionSnapshot.length
-                ? [...run.sessionSnapshot]
-                : [];
+            );
 
         if (!list.length) {
             this.runtimeNotice =
-                "Essa sessao nao tem mais um snapshot valido para retomada.";
+                "Essa sessao nao tem mais uma lista valida para retomada.";
             this.openLauncher("resume");
             return;
         }
@@ -2162,6 +3009,8 @@ window.QuestionsPage = {
         this.clearRuntimeNotice();
         this.startSession({
             sessionList: list,
+            questionIds:
+                run.questionIds || [],
             meta:
                 run.routeSnapshot?.meta || {},
             routeContext:
@@ -2185,6 +3034,14 @@ window.QuestionsPage = {
     },
 
     restartRun(runId) {
+        if (
+            this.sessionUseCases?.restartRun
+        ) {
+            return this.sessionUseCases.restartRun(
+                runId
+            );
+        }
+
         const run =
             QuestionsStore.getRunById(runId);
 
@@ -2196,16 +3053,14 @@ window.QuestionsPage = {
         }
 
         const list =
-            Array.isArray(
+            this.resolveQuestionList(
+                run.questionIds,
                 run.sessionSnapshot
-            ) &&
-            run.sessionSnapshot.length
-                ? [...run.sessionSnapshot]
-                : [];
+            );
 
         if (!list.length) {
             this.runtimeNotice =
-                "Essa sessao nao pode ser reiniciada porque o snapshot esta vazio.";
+                "Essa sessao nao pode ser reiniciada porque a lista de questoes nao esta mais disponivel.";
             this.openLauncher("resume");
             return;
         }
@@ -2224,6 +3079,8 @@ window.QuestionsPage = {
         this.clearRuntimeNotice();
         this.startSession({
             sessionList: list,
+            questionIds:
+                run.questionIds || [],
             meta:
                 run.routeSnapshot?.meta || {},
             routeContext:
@@ -2278,6 +3135,13 @@ window.QuestionsPage = {
     },
 
     buildSmartRoutePreview() {
+        if (
+            this.sessionUseCases
+                ?.buildSmartRoutePreview
+        ) {
+            return this.sessionUseCases.buildSmartRoutePreview();
+        }
+
         const current =
             QuestionsContext.get();
         const validation =
@@ -2640,6 +3504,13 @@ window.QuestionsPage = {
     },
 
     startSmartSession() {
+        if (
+            this.sessionUseCases
+                ?.startSmartSession
+        ) {
+            return this.sessionUseCases.startSmartSession();
+        }
+
         const preview =
             this.buildSmartRoutePreview();
 
@@ -2783,6 +3654,13 @@ window.QuestionsPage = {
     },
 
     continueSession() {
+        if (
+            this.sessionUseCases
+                ?.continueSession
+        ) {
+            return this.sessionUseCases.continueSession();
+        }
+
         QuestionsState.next();
 
         if (
@@ -2895,6 +3773,15 @@ window.QuestionsPage = {
     },
 
     startFollowUp(intent) {
+        if (
+            this.sessionUseCases
+                ?.startFollowUp
+        ) {
+            return this.sessionUseCases.startFollowUp(
+                intent
+            );
+        }
+
         const summary =
             QuestionsService.summarizeSessionResults(
                 QuestionsState.getResults(),
@@ -2912,6 +3799,14 @@ window.QuestionsPage = {
     },
 
     startSession(options = {}) {
+        if (
+            this.sessionUseCases?.startSession
+        ) {
+            return this.sessionUseCases.startSession(
+                options
+            );
+        }
+
         const hasSnapshotList =
             Array.isArray(
                 options.sessionList

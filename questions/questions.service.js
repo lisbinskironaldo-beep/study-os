@@ -178,12 +178,19 @@ window.QuestionsService = {
 
             const subjectKey =
                 this.slugify(topic.materia);
+            const readyQuestionCount =
+                this.getTopicQuestionCount(
+                    topic
+                );
             const current =
                 grouped.get(subjectKey) || {
                     key: subjectKey,
                     label: topic.materia,
                     count: 0,
-                    topicCount: 0
+                    topicCount: 0,
+                    readyQuestionCount: 0,
+                    readyTopicCount: 0,
+                    hasQuestions: false
                 };
 
             current.count +=
@@ -191,17 +198,52 @@ window.QuestionsService = {
                     ? topic.questoes.length
                     : 0;
             current.topicCount += 1;
+            current.readyQuestionCount +=
+                readyQuestionCount;
+            current.readyTopicCount +=
+                readyQuestionCount > 0
+                    ? 1
+                    : 0;
+            current.hasQuestions =
+                current.readyQuestionCount >
+                0;
+
+            if (
+                readyQuestionCount > 0 &&
+                current.label !== topic.materia
+            ) {
+                current.label = topic.materia;
+            }
 
             grouped.set(subjectKey, current);
         });
 
         return [...grouped.values()]
-            .sort((left, right) =>
-                left.label.localeCompare(
+            .sort((left, right) => {
+                if (
+                    left.hasQuestions !==
+                    right.hasQuestions
+                ) {
+                    return left.hasQuestions
+                        ? -1
+                        : 1;
+                }
+
+                if (
+                    left.readyQuestionCount !==
+                    right.readyQuestionCount
+                ) {
+                    return (
+                        right.readyQuestionCount -
+                        left.readyQuestionCount
+                    );
+                }
+
+                return left.label.localeCompare(
                     right.label,
                     "pt-BR"
-                )
-            );
+                );
+            });
     },
 
     getTopicRecords(page, filters = {}) {
@@ -623,6 +665,36 @@ window.QuestionsService = {
                 topics.length -
                 readyTopics.length,
             totalQuestions
+        };
+    },
+
+    getCatalogHealth(page) {
+        const catalog =
+            this.getCatalog(page);
+        const readyTopics =
+            this.getTopicOptions(page).filter(
+                (topic) => topic.hasQuestions
+            );
+        const subjects =
+            this.getSubjectOptions(page);
+        const readySubjects =
+            subjects.filter(
+                (subject) =>
+                    subject.hasQuestions
+            );
+
+        return {
+            totalTopics: catalog.length,
+            readyTopics: readyTopics.length,
+            totalSubjects: subjects.length,
+            readySubjects:
+                readySubjects.length,
+            totalQuestions:
+                readyTopics.reduce(
+                    (acc, topic) =>
+                        acc + (topic.count || 0),
+                    0
+                )
         };
     },
 

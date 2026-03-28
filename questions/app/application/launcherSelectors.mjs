@@ -1,0 +1,307 @@
+export function createQuestionsLauncherSelectors(
+    {
+        page,
+        dependencies
+    } = {}
+) {
+    const {
+        QuestionsContext,
+        QuestionsService
+    } = dependencies || {};
+
+    function getSmartStartOptions() {
+        const ctx =
+            QuestionsContext.get();
+        const availableSeries =
+            QuestionsService.getSeriesOptions(
+                page
+            );
+        const selectedSeries =
+            Array.isArray(
+                ctx.smartSelectedSeries
+            )
+                ? ctx.smartSelectedSeries
+                : [];
+
+        return [
+            ...availableSeries.map((serie) => ({
+                key: String(serie.key),
+                label: serie.label.replace(
+                    " serie",
+                    ""
+                ),
+                type: "serie",
+                active:
+                    selectedSeries.includes(
+                        serie.key
+                    ),
+                disabled: false,
+                note:
+                    serie.key === 1
+                        ? "Base escolar"
+                        : "Escolar"
+            })),
+            {
+                key: "ENEM",
+                label: "ENEM",
+                type: "base",
+                active: false,
+                disabled:
+                    !page.data.bases.ENEM
+                        ?.available,
+                note:
+                    page.data.bases.ENEM
+                        ?.available
+                        ? "Base pronta"
+                        : "Em breve"
+            }
+        ];
+    }
+
+    function getSelectedSmartSeries() {
+        return getSmartStartOptions()
+            .filter(
+                (item) =>
+                    item.type === "serie" &&
+                    item.active &&
+                    !item.disabled
+            )
+            .map((item) =>
+                Number(item.key)
+            )
+            .filter((item) =>
+                Number.isFinite(item)
+            );
+    }
+
+    function getSmartSubjectOptions() {
+        const ctx =
+            QuestionsContext.get();
+        const selectedSeries =
+            getSelectedSmartSeries();
+        const grouped = new Map();
+
+        selectedSeries.forEach((serie) => {
+            QuestionsService.getSubjectOptions(
+                page,
+                serie
+            ).forEach((subject) => {
+                const current =
+                    grouped.get(
+                        subject.key
+                    ) || {
+                        key: subject.key,
+                        label: subject.label,
+                        count: 0,
+                        topicCount: 0,
+                        readyQuestionCount: 0,
+                        readyTopicCount: 0,
+                        hasQuestions: false
+                    };
+
+                current.count +=
+                    Number(
+                        subject.count
+                    ) || 0;
+                current.topicCount +=
+                    Number(
+                        subject.topicCount
+                    ) || 0;
+                current.readyQuestionCount +=
+                    Number(
+                        subject.readyQuestionCount
+                    ) || 0;
+                current.readyTopicCount +=
+                    Number(
+                        subject.readyTopicCount
+                    ) || 0;
+                current.hasQuestions =
+                    current.hasQuestions ||
+                    Boolean(
+                        subject.hasQuestions
+                    );
+
+                grouped.set(
+                    subject.key,
+                    current
+                );
+            });
+        });
+
+        return [...grouped.values()]
+            .filter(
+                (subject) =>
+                    subject.hasQuestions
+            )
+            .map((subject) => ({
+                ...subject,
+                active:
+                    (
+                        ctx.smartSelectedSubjects ||
+                        []
+                    ).includes(subject.key),
+                disabled: false
+            }));
+    }
+
+    function buildSmartProfilePayload(
+        overrides = {}
+    ) {
+        const ctx =
+            QuestionsContext.get();
+
+        return {
+            smartGoal:
+                ctx.smartGoal ||
+                "continue",
+            selectedSeries: [
+                ...(ctx.smartSelectedSeries ||
+                    [])
+            ],
+            selectedSubjects: [
+                ...(ctx.smartSelectedSubjects ||
+                    [])
+            ],
+            excludedSeries: [
+                ...(ctx.smartExcludedSeries ||
+                    [])
+            ],
+            excludedBases: [
+                ...(ctx.smartExcludedBases ||
+                    [])
+            ],
+            excludedSubjects: [
+                ...(ctx.smartExcludedSubjects ||
+                    [])
+            ],
+            preferredAmount:
+                Number(
+                    ctx.quantidadeQuestoes
+                ) || 5,
+            ...overrides
+        };
+    }
+
+    function getSuggestedSmartProfileName() {
+        const ctx =
+            QuestionsContext.get();
+        const goalLabel =
+            page.data.smartGoals?.[
+                ctx.smartGoal
+            ]?.label ||
+            "Continuar";
+        const subjects =
+            QuestionsService.getSubjectOptions(
+                page
+            );
+        const selectedSubjects =
+            (ctx.smartSelectedSubjects || [])
+                .map((subjectKey) =>
+                    subjects.find(
+                        (subject) =>
+                            subject.key ===
+                            subjectKey
+                    )?.label || ""
+                )
+                .filter(Boolean);
+        const selectedSeries =
+            (ctx.smartSelectedSeries || []).map(
+                (serie) => `${serie}a serie`
+            );
+        const pieces = [];
+
+        if (selectedSubjects.length) {
+            pieces.push(
+                selectedSubjects
+                    .slice(0, 2)
+                    .join(", ")
+            );
+        }
+
+        if (selectedSeries.length) {
+            pieces.push(
+                selectedSeries
+                    .slice(0, 2)
+                    .join(", ")
+            );
+        }
+
+        return [
+            "Treino inteligente",
+            goalLabel.toLowerCase(),
+            ...pieces
+        ].join(" - ");
+    }
+
+    function buildSavedBlockName(
+        meta = {},
+        context = {},
+        sourceMode = ""
+    ) {
+        const modeLabel =
+            sourceMode === "smart"
+                ? "Bloco inteligente"
+                : "Bloco especifico";
+        const materia =
+            meta.materiaLabel ||
+            context.materia ||
+            "Materia";
+        const topics =
+            Array.isArray(
+                meta.topicsLabel
+            )
+                ? meta.topicsLabel.filter(
+                    Boolean
+                )
+                : [];
+
+        if (topics.length) {
+            return `${modeLabel} - ${materia} - ${topics
+                .slice(0, 2)
+                .join(", ")}`;
+        }
+
+        return `${modeLabel} - ${materia}`;
+    }
+
+    function buildRunTitle(
+        meta = {},
+        context = {},
+        sourceMode = ""
+    ) {
+        const modeLabel =
+            sourceMode === "smart"
+                ? "Treino inteligente"
+                : "Treino especifico";
+        const materia =
+            meta.materiaLabel ||
+            context.materia ||
+            "Materia";
+        const topics =
+            Array.isArray(
+                meta.topicsLabel
+            )
+                ? meta.topicsLabel.filter(
+                    Boolean
+                )
+                : [];
+
+        if (topics.length) {
+            return `${modeLabel} - ${materia} - ${topics
+                .slice(0, 2)
+                .join(", ")}`;
+        }
+
+        return `${modeLabel} - ${materia}`;
+    }
+
+    return {
+        getSmartStartOptions,
+        getSelectedSmartSeries,
+        getSmartSubjectOptions,
+        buildSmartProfilePayload,
+        getSuggestedSmartProfileName,
+        buildSavedBlockName,
+        buildRunTitle
+    };
+}

@@ -657,24 +657,36 @@ window.QuestionsUI = {
     renderLauncherHome() {
         const page =
             this.page;
+        const model =
+            page.launcherViewModels
+                ?.buildLauncherHomeViewModel
+                ? page.launcherViewModels.buildLauncherHomeViewModel()
+                : null;
         const bankStatus =
+            model?.bankStatus ??
             page.data.bankStatus;
         const isLoading =
-            bankStatus === "loading";
+            model?.isLoading ??
+            (bankStatus === "loading");
         const isError =
-            bankStatus === "error";
+            model?.isError ??
+            (bankStatus === "error");
         const launcherNotice =
-            isError
-                ? page.getRuntimeNotice()
-                : isLoading
-                    ? "Preparando o banco escolar para liberar o treino."
-                    : page.getRuntimeNotice();
-
+            model?.launcherNotice ??
+            (
+                isError
+                    ? page.getRuntimeNotice()
+                    : isLoading
+                        ? "Preparando o banco escolar para liberar o treino."
+                        : page.getRuntimeNotice()
+            );
         const recentRuns =
+            model?.recentRuns ||
             QuestionsStore.getRuns({
                 status: "in_progress"
             });
         const savedBlocks =
+            model?.savedBlocks ||
             QuestionsStore.getSavedBlocks();
 
         return `
@@ -741,16 +753,23 @@ window.QuestionsUI = {
     renderSmartStart() {
         const page =
             this.page;
+        const model =
+            page.launcherViewModels
+                ?.buildSmartStartViewModel
+                ? page.launcherViewModels.buildSmartStartViewModel()
+                : null;
 
         if (
-            page.data.bankStatus ===
+            (model?.bankStatus ??
+                page.data.bankStatus) ===
             "loading"
         ) {
             return this.renderLoading();
         }
 
         if (
-            page.data.bankStatus ===
+            (model?.bankStatus ??
+                page.data.bankStatus) ===
             "error"
         ) {
             return `
@@ -763,33 +782,41 @@ window.QuestionsUI = {
         }
 
         const startOptions =
+            model?.startOptions ||
             page.getSmartStartOptions();
         const activeCount =
+            model?.activeCount ??
             startOptions.filter(
                 (item) =>
                     item.active &&
                     !item.disabled
             ).length;
         const allAvailableActive =
+            model?.allAvailableActive ??
             startOptions
                 .filter(
                     (item) => !item.disabled
                 )
                 .every((item) => item.active);
         const petalClasses = [
-            "questions-smart-petal-1",
-            "questions-smart-petal-2",
-            "questions-smart-petal-3",
-            "questions-smart-petal-4"
+            ...(model?.petalClasses || [
+                "questions-smart-petal-1",
+                "questions-smart-petal-2",
+                "questions-smart-petal-3",
+                "questions-smart-petal-4"
+            ])
         ];
         const coachHint =
-            page.shouldShowCoachHint(
-                "smart_start"
-            )
-                ? page.getCoachHintText(
+            model?.coachHint ??
+            (
+                page.shouldShowCoachHint(
                     "smart_start"
                 )
-                : "";
+                    ? page.getCoachHintText(
+                        "smart_start"
+                    )
+                    : ""
+            );
 
         return `
             <section class="questions-card questions-entry-subview questions-smart-start-card">
@@ -864,16 +891,23 @@ window.QuestionsUI = {
     renderSmartSubjects() {
         const page =
             this.page;
+        const model =
+            page.launcherViewModels
+                ?.buildSmartSubjectsViewModel
+                ? page.launcherViewModels.buildSmartSubjectsViewModel()
+                : null;
 
         if (
-            page.data.bankStatus ===
+            (model?.bankStatus ??
+                page.data.bankStatus) ===
             "loading"
         ) {
             return this.renderLoading();
         }
 
         if (
-            page.data.bankStatus ===
+            (model?.bankStatus ??
+                page.data.bankStatus) ===
             "error"
         ) {
             return `
@@ -886,20 +920,34 @@ window.QuestionsUI = {
         }
 
         const subjectOptions =
+            model?.subjectOptions ||
             page.getSmartSubjectOptions();
         const activeCount =
+            model?.activeCount ??
             subjectOptions.filter(
                 (item) => item.active
             ).length;
         const allActive =
-            subjectOptions.length > 0 &&
-            subjectOptions.every(
-                (item) => item.active
+            model?.allActive ??
+            (
+                subjectOptions.length > 0 &&
+                subjectOptions.every(
+                    (item) => item.active
+                )
             );
         const visibleSubjects =
+            model?.visibleSubjects ||
             subjectOptions.slice(0, 12);
         const totalSubjects =
-            visibleSubjects.length || 1;
+            model?.totalSubjects ??
+            (visibleSubjects.length || 1);
+        const hiddenSubjects =
+            model?.hiddenSubjects ??
+            Math.max(
+                subjectOptions.length -
+                    visibleSubjects.length,
+                0
+            );
 
         return `
             <section class="questions-card questions-entry-subview questions-smart-start-card questions-smart-subject-card">
@@ -938,7 +986,7 @@ window.QuestionsUI = {
                                     >
                                         <div class="questions-smart-node-copy">
                                             <strong>${item.label}</strong>
-                                            <span>${item.topicCount} assunto(s)</span>
+                                            <span>${item.readyTopicCount || item.topicCount} assunto(s) | ${item.readyQuestionCount || item.count} questoes</span>
                                         </div>
                                     </button>
                                 `).join("")}
@@ -949,6 +997,11 @@ window.QuestionsUI = {
                                 <span></span>
                             </button>
                         </div>
+                        ${hiddenSubjects ? `
+                            <div class="questions-inline-note questions-smart-subject-note">
+                                +${hiddenSubjects} materia(s) continuam disponiveis. Ajuste as series para refinar mais se quiser.
+                            </div>
+                        ` : ""}
                     </div>
                 ` : `
                     <div class="questions-empty-inline">
@@ -974,6 +1027,11 @@ window.QuestionsUI = {
     renderSmartLauncher() {
         const page =
             this.page;
+        const model =
+            page.launcherViewModels
+                ?.buildSmartLauncherViewModel
+                ? page.launcherViewModels.buildSmartLauncherViewModel()
+                : null;
 
         if (
             page.data.bankStatus ===
@@ -996,20 +1054,27 @@ window.QuestionsUI = {
         }
 
         const ctx =
+            model?.ctx ||
             QuestionsContext.get();
         const goalOptions =
+            model?.goalOptions ||
             QuestionsService.getSmartGoalOptions(
                 page
             );
         const preview =
+            model?.preview ||
             page.buildSmartRoutePreview();
         const amountOptions =
+            model?.amountOptions ||
             page.data.amountOptions;
         const smartProfiles =
+            model?.smartProfiles ||
             QuestionsStore.getSmartProfiles();
         const savedBlocks =
+            model?.savedBlocks ||
             QuestionsStore.getSavedBlocks();
         const activeSeries =
+            model?.activeSeries ||
             page.getSmartStartOptions()
                 .filter(
                     (item) =>
@@ -1018,38 +1083,49 @@ window.QuestionsUI = {
                         !item.disabled
                 );
         const activeSubjects =
+            model?.activeSubjects ||
             page.getSmartSubjectOptions().filter(
                 (item) => item.active
             );
         const hiddenSubjectCount =
+            model?.hiddenSubjectCount ??
             Math.max(
                 activeSubjects.length - 6,
                 0
             );
         const visibleTopics =
-            preview.isReady
-                ? preview.topics.slice(0, 5)
-                : [];
+            model?.visibleTopics ||
+            (
+                preview.isReady
+                    ? preview.topics.slice(
+                        0,
+                        5
+                    )
+                    : []
+            );
         const hiddenTopicCount =
-            preview.isReady
-                ? Math.max(
-                    preview.topics.length -
-                        visibleTopics.length,
-                    0
-                )
-                : 0;
+            model?.hiddenTopicCount ??
+            (
+                preview.isReady
+                    ? Math.max(
+                        preview.topics.length -
+                            visibleTopics.length,
+                        0
+                    )
+                    : 0
+            );
 
         return `
-            <section class="questions-card questions-entry-subview questions-smart-final-card">
+            <section class="questions-card questions-entry-subview questions-smart-final-card questions-smart-final-card-minimal">
                 <div class="questions-head questions-entry-head">
                     <div>
                         <div class="questions-kicker">Treino inteligente</div>
                         <div class="questions-smart-step">3/3</div>
-                        <h2>Pronto para comecar</h2>
+                        <h2>Revisar e iniciar</h2>
                     </div>
 
                     <div class="questions-entry-actions">
-                        <button class="questions-secondary-btn questions-review-btn" type="button" data-launcher-view="smart_subjects">Conferir</button>
+                        <button class="questions-secondary-btn questions-review-btn" type="button" data-launcher-view="smart_subjects">Materias</button>
                     </div>
                 </div>
 
@@ -1060,14 +1136,12 @@ window.QuestionsUI = {
                 ` : ""}
 
                 ${preview.isReady ? `
-                    <section class="questions-smart-final-launch">
+                    <section class="questions-smart-final-launch questions-smart-final-launch-minimal">
                         <div class="questions-smart-final-launch-head">
                             <span class="questions-panel-label">Bloco pronto</span>
                             <strong>${preview.goal?.label || "Treino inteligente"}</strong>
+                            <span>Recorte pronto para abrir sem remontar tudo.</span>
                         </div>
-                        <button id="questionsSmartStartBtn" class="questions-smart-start-hero-btn" type="button">
-                            Comecar agora
-                        </button>
                         <div class="questions-smart-final-stats">
                             <span>${activeSeries.length} serie(s)</span>
                             <span>${activeSubjects.length} materia(s)</span>
@@ -1075,9 +1149,12 @@ window.QuestionsUI = {
                             <span>${preview.eligibleQuestionCount || preview.availableCount || 0} questoes</span>
                             <span>${preview.estimatedDuration}</span>
                         </div>
+                        <button id="questionsSmartStartBtn" class="questions-primary-btn questions-smart-start-btn-minimal" type="button">
+                            Comecar treino
+                        </button>
                     </section>
 
-                    <article class="questions-route-card questions-smart-final-hero">
+                    <article class="questions-route-card questions-smart-final-summary-minimal">
                         <div class="questions-route-stack">
                             <div class="questions-summary-label">Recorte</div>
                             <div class="questions-static-tokens">
@@ -1115,7 +1192,7 @@ window.QuestionsUI = {
                     </div>
                 `}
 
-                <article class="questions-panel questions-smart-final-quick">
+                <article class="questions-panel questions-smart-final-quick questions-smart-final-quick-minimal">
                     <div class="questions-smart-final-quick-row">
                         <div class="questions-panel-label">Objetivo</div>
                         <div class="questions-inline-grid questions-smart-final-pills">
@@ -1139,15 +1216,15 @@ window.QuestionsUI = {
                     </div>
                 </article>
 
-                <div class="questions-smart-final-actions">
-                    <button id="questionsSmartClearExclusionsFooterBtn" class="questions-secondary-btn" type="button">
-                        Limpar recorte
-                    </button>
+                <div class="questions-smart-final-actions questions-smart-final-actions-minimal">
                     <button id="questionsSmartSaveProfileBtn" class="questions-secondary-btn" type="button">
                         Salvar perfil
                     </button>
                     <button id="questionsSmartSaveBlockBtn" class="questions-secondary-btn" type="button" ${preview.isReady ? "" : "disabled"}>
                         Guardar treino
+                    </button>
+                    <button id="questionsSmartClearExclusionsFooterBtn" class="questions-secondary-btn" type="button">
+                        Limpar recorte
                     </button>
                 </div>
 
@@ -1694,9 +1771,9 @@ window.QuestionsUI = {
                         <div class="questions-panel-label">Materia</div>
                         <div class="questions-inline-grid">
                             ${subjects.map((subject) => `
-                                <button class="questions-pill${ctx.materia === subject.key ? " is-active" : ""}" type="button" data-materia="${subject.key}">
+                                <button class="questions-pill${ctx.materia === subject.key ? " is-active" : ""}${subject.hasQuestions ? "" : " is-disabled"}" type="button" data-materia="${subject.key}" ${subject.hasQuestions ? "" : "disabled"}>
                                     ${subject.label}
-                                    <span>${subject.topicCount} assuntos</span>
+                                    <span>${subject.hasQuestions ? `${subject.readyTopicCount} assunto(s) | ${subject.readyQuestionCount} questoes` : "Sem questoes prontas"}</span>
                                 </button>
                             `).join("")}
                         </div>

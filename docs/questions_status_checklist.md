@@ -61,6 +61,14 @@ Esse arquivo agora serve como exemplo de preenchimento com:
 
 ## Proxima etapa sugerida
 
+Direcao estrutural oficial desta fase:
+
+- `docs/questions_v2_overview.md`
+- `docs/questions_v2_architecture.md`
+- `docs/questions_v2_execution_master_plan.md`
+- `docs/questions_v2_migration_plan.md`
+- `docs/questions_v2_handoff_checklist.md`
+
 No modulo `questions`, a etapa visual atual ficou assim:
 
 - [x] simplificar a home para `Treino inteligente`, `Especificar treino` e `Guardados`
@@ -82,3 +90,45 @@ Base ja pronta para sustentar essa etapa:
 - [x] perfis inteligentes
 - [x] blocos salvos
 - [x] runs com pausa e retomada
+
+---
+
+## Reorientacao estrutural fechada em 2026-03-27
+
+O modulo atual deixou de ser tratado apenas como extensao do relogio.
+
+Direcao fechada:
+
+- `questions` passa a ser tratado como dominio proprio
+- crescimento do banco deve migrar para manifesto + carregamento sob demanda
+- persistencia pesada deve sair de `localStorage`
+- a continuidade oficial desta frente passa a seguir o pacote `questions_v2`
+
+Primeira entrega estrutural iniciada nesta direcao:
+
+- [x] fundacao inicial de manifesto em `questions/app/infrastructure/content/catalogManifest.mjs`
+- [x] script gerador em `questions/scripts/generate-manifest.mjs`
+- [x] manifesto atual gerado em `questions/content/generated/catalog-manifest.json`
+- [x] bootstrap isolado iniciado em `questions/app/bootstrap/questionsModuleBootstrap.mjs`
+- [x] contratos iniciais definidos em `questions/app/domain/contracts.mjs`
+- [x] repositorio de catalogo iniciado em `questions/app/infrastructure/content/catalogRepository.mjs`
+- [x] repositorio inicial de runs iniciado em `questions/app/infrastructure/runs/localStorageRunsRepository.mjs`
+- [x] chaves de storage centralizadas em `questions/app/infrastructure/storage/storageKeys.mjs`
+- [x] auditoria inicial de storage registrada em `docs/questions_v2_storage_audit.md`
+- [x] schema inicial de `IndexedDB` registrado em `docs/questions_v2_indexeddb_schema.md`
+- [x] repositorio inicial de profile state iniciado em `questions/app/infrastructure/profile/localStorageProfileStateRepository.mjs`
+- [x] camada de aplicacao de sessao iniciada em `questions/app/application/sessionUseCases.mjs`
+- [x] engine inicial de selecao e preview inteligente iniciada em `questions/app/application/sessionEngine.mjs`
+- [x] reconstituicao inicial de runs por `questionIds` iniciada no bootstrap e nos use cases
+- [x] compactacao inicial de snapshots em runs e blocos salvos iniciada
+- [x] repositorio de `runs` em `IndexedDB` iniciado com fallback seguro para `localStorage`
+- [x] repositorios de `smartProfiles` e `savedBlocks` em `IndexedDB` iniciados e ligados na store
+- [x] repositorio de `profileState` em `IndexedDB` iniciado para `topics` e `sessions`
+- [x] camada de aplicacao para perfis inteligentes e guardados iniciada em `questions/app/application/libraryUseCases.mjs`
+- [x] camada de aplicacao para rota e launcher iniciada em `questions/app/application/routeUseCases.mjs`
+- [x] seletores e formatadores do launcher iniciados em `questions/app/application/launcherSelectors.mjs`
+- [x] sincronizacao de contexto e resolucao leve por ids iniciadas em `questions/app/application/contextSynchronization.mjs`
+- [x] view models do launcher iniciados em `questions/app/application/launcherViewModels.mjs`
+- [x] launcher legacy ajustado para priorizar materias com questoes prontas
+- [x] aba de materias do fluxo inteligente corrigida para voltar a listar materias prontas
+- [x] etapa final do fluxo inteligente simplificada para visual mais minimalista
