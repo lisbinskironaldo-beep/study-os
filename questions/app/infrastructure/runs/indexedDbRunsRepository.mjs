@@ -70,6 +70,8 @@ export async function createIndexedDbRunsRepository(
         options.storeName || "runs";
     const legacyStorage =
         options.legacyStorage || null;
+    const mirrorLegacyWrites =
+        options.mirrorLegacyWrites === true;
     const legacyKey =
         options.legacyKey ||
         QUESTIONS_STORAGE_KEYS.runs;
@@ -128,11 +130,13 @@ export async function createIndexedDbRunsRepository(
             state.persistChain
                 .catch(() => null)
                 .then(async () => {
-                    writeLegacyRuns(
-                        legacyStorage,
-                        legacyKey,
-                        snapshot
-                    );
+                    if (mirrorLegacyWrites) {
+                        writeLegacyRuns(
+                            legacyStorage,
+                            legacyKey,
+                            snapshot
+                        );
+                    }
 
                     return replaceStoreContents(
                         state.database,

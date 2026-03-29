@@ -1,5 +1,6 @@
 window.QuestionsUI = {
     page: null,
+    sessionEventsBound: false,
     floatingSessionState: {
         minimized: false,
         maximized: false,
@@ -51,6 +52,8 @@ window.QuestionsUI = {
             document.querySelector(
                 ".questions-root"
             );
+        const dialogMarkup =
+            this.renderDialog();
 
         launcher.hidden =
             phase !== "launcher";
@@ -61,18 +64,17 @@ window.QuestionsUI = {
 
         if (phase === "launcher") {
             launcher.innerHTML =
-                this.renderLauncher();
+                this.renderLauncher() +
+                dialogMarkup;
             session.innerHTML = "";
         } else {
             session.innerHTML =
-                this.renderSession();
+                this.renderSession() +
+                dialogMarkup;
             launcher.innerHTML = "";
         }
 
-        const shouldShowStats =
-            this.page.data.bankStatus ===
-                "ready" &&
-            launcherView === "specific";
+        const shouldShowStats = false;
 
         if (root) {
             root.classList.toggle(
@@ -88,8 +90,772 @@ window.QuestionsUI = {
                 ? this.renderStatsPanel()
                 : "";
 
-        this.bindLauncher();
-        this.bindSession();
+        if (phase === "launcher") {
+            this.bindLauncher();
+        } else {
+            this.bindSessionSurface(
+                session
+            );
+            this.bindSessionSurface(
+                document.getElementById(
+                    "questionsFloatingBody"
+                )
+            );
+            this.bindSession();
+        }
+
+        this.bindDialog();
+    },
+
+    renderDialog() {
+        const dialog =
+            this.page?.getActiveDialog?.();
+
+        if (!dialog) {
+            return "";
+        }
+
+        const dialogPosition =
+            dialog.position &&
+            dialog.position.anchored
+                ? ` style="top:${Number(dialog.position.top || 0)}px;left:${Number(dialog.position.left || 0)}px;width:min(calc(100vw - 32px), ${Number(dialog.position.width || 520)}px);"`
+                : "";
+        const dialogClasses =
+            dialog.position &&
+            dialog.position.anchored
+                ? "questions-dialog-card is-anchored"
+                : "questions-dialog-card";
+
+        return `
+            <div class="questions-dialog-backdrop">
+                <section class="${dialogClasses}" role="dialog" aria-modal="true" aria-labelledby="questionsDialogTitle"${dialogPosition}>
+                    <div class="questions-dialog-copy">
+                        <div id="questionsDialogTitle" class="questions-dialog-title">${this.escapeHtml(dialog.title)}</div>
+                        ${dialog.mode === "confirm" ? `
+                            <div class="questions-dialog-message">${this.escapeHtml(dialog.message || "")}</div>
+                        ` : `
+                            <label class="questions-dialog-label" for="questionsDialogInput">${this.escapeHtml(dialog.label)}</label>
+                            <input id="questionsDialogInput" class="questions-dialog-input" type="text" value="${this.escapeHtml(dialog.value || "")}" autocomplete="off" spellcheck="false">
+                        `}
+                    </div>
+                    <div class="questions-dialog-actions">
+                        <button id="questionsDialogCancelBtn" class="questions-secondary-btn" type="button">Cancelar</button>
+                        <button id="questionsDialogConfirmBtn" class="questions-primary-btn" type="button">${this.escapeHtml(dialog.confirmLabel || "Salvar")}</button>
+                    </div>
+                </section>
+            </div>
+        `;
+    },
+
+    bindDialog() {
+        const input =
+            document.getElementById(
+                "questionsDialogInput"
+            );
+
+        document.getElementById(
+            "questionsDialogCancelBtn"
+        )?.addEventListener(
+            "click",
+            () => {
+                this.page.closeDialog();
+            }
+        );
+
+        document.getElementById(
+            "questionsDialogConfirmBtn"
+        )?.addEventListener(
+            "click",
+            () => {
+                this.page.confirmDialog(
+                    input?.value || ""
+                );
+            }
+        );
+
+        if (!input) {
+            return;
+        }
+
+        requestAnimationFrame(() => {
+            input.focus();
+            input.select();
+        });
+
+        input.addEventListener(
+            "keydown",
+            (event) => {
+                if (event.key === "Enter") {
+                    event.preventDefault();
+                    this.page.confirmDialog(
+                        input.value
+                    );
+                    return;
+                }
+
+                if (event.key === "Escape") {
+                    event.preventDefault();
+                    this.page.closeDialog();
+                }
+            }
+        );
+    },
+
+    bindSessionSurface(surface) {
+        if (
+            !surface ||
+            surface.dataset
+                .questionsSessionBound ===
+                "true"
+        ) {
+            return;
+        }
+
+        surface.dataset.questionsSessionBound =
+            "true";
+        surface.addEventListener(
+            "click",
+            (event) => {
+                this.handleSessionSurfaceClick(
+                    event,
+                    surface
+                );
+            }
+        );
+        surface.addEventListener(
+            "submit",
+            (event) => {
+                this.handleSessionSurfaceSubmit(
+                    event,
+                    surface
+                );
+            }
+        );
+    },
+
+    handleSessionSurfaceClick(
+        event,
+        surface
+    ) {
+        const target =
+            event.target instanceof Element
+                ? event.target
+                : null;
+
+        if (!target) {
+            return;
+        }
+
+        const answerButton =
+            target.closest(
+                "[data-answer-select]"
+            );
+
+        if (answerButton) {
+            event.preventDefault();
+            this.selectChoice(
+                answerButton,
+                surface
+            );
+            return;
+        }
+
+        const choiceConfirmBtn =
+            target.closest(
+                "#questionsChoiceConfirmBtn"
+            );
+
+        if (choiceConfirmBtn) {
+            event.preventDefault();
+            this.submitSelectedChoice(
+                surface
+            );
+            return;
+        }
+
+        const inputConfirmBtn =
+            target.closest(
+                "#questionsInputConfirmBtn"
+            );
+
+        if (inputConfirmBtn) {
+            event.preventDefault();
+            this.page.submitAnswer({
+                index: null,
+                value:
+                    this.getActiveInputAnswerValue(
+                        surface
+                    )
+            });
+            return;
+        }
+
+        const orderingMoveBtn =
+            target.closest(
+                "[data-order-move]"
+            );
+
+        if (orderingMoveBtn) {
+            this.moveOrderItem(
+                orderingMoveBtn
+            );
+            return;
+        }
+
+        const orderingSubmitBtn =
+            target.closest(
+                "#questionsOrderingSubmitBtn"
+            );
+
+        if (orderingSubmitBtn) {
+            this.page.submitAnswer({
+                index: null,
+                value:
+                    this.getActiveOrderingAnswerValue(
+                        surface
+                    )
+            });
+            return;
+        }
+
+        const continueBtn =
+            target.closest(
+                "#questionsContinueBtn"
+            );
+
+        if (continueBtn) {
+            this.page.continueSession();
+            return;
+        }
+
+        const retryBtn =
+            target.closest(
+                "#questionsRetryBtn"
+            );
+
+        if (retryBtn) {
+            this.page.retryCurrentQuestion();
+            return;
+        }
+
+        const backBtn =
+            target.closest(
+                "#questionsBackBtn, #questionsInfoBackBtn"
+            );
+
+        if (backBtn) {
+            this.page.pauseSession();
+            return;
+        }
+    },
+
+    selectChoice(
+        answerButton,
+        surface = document
+    ) {
+        const group =
+            answerButton?.closest(
+                ".questions-options"
+            );
+
+        group
+            ?.querySelectorAll(
+                "[data-answer-select]"
+            )
+            .forEach((item) => {
+                item.classList.remove(
+                    "is-selected"
+                );
+                item.setAttribute(
+                    "aria-pressed",
+                    "false"
+                );
+            });
+
+        answerButton?.classList.add(
+            "is-selected"
+        );
+        answerButton?.setAttribute(
+            "aria-pressed",
+            "true"
+        );
+
+        const confirmBtn =
+            surface?.querySelector?.(
+                "#questionsChoiceConfirmBtn"
+            ) ||
+            document.getElementById(
+                "questionsChoiceConfirmBtn"
+            );
+
+        if (!confirmBtn) {
+            return;
+        }
+
+        confirmBtn.disabled = false;
+        confirmBtn.dataset.selectedIndex =
+            answerButton?.dataset
+                ?.answerSelect || "";
+    },
+
+    submitSelectedChoice(
+        surface = document
+    ) {
+        const confirmBtn =
+            surface?.querySelector?.(
+                "#questionsChoiceConfirmBtn"
+            ) ||
+            document.getElementById(
+                "questionsChoiceConfirmBtn"
+            );
+        const selectedIndex =
+            Number(
+                confirmBtn?.dataset
+                    ?.selectedIndex
+            );
+
+        if (
+            !Number.isFinite(
+                selectedIndex
+            )
+        ) {
+            return;
+        }
+
+        this.page.submitAnswer({
+            index: selectedIndex
+        });
+    },
+
+    handleSessionSurfaceSubmit(
+        event,
+        surface
+    ) {
+        const target =
+            event.target instanceof Element
+                ? event.target
+                : null;
+
+        if (!target) {
+            return;
+        }
+
+        if (
+            target.matches(
+                "#questionsInputForm"
+            )
+        ) {
+            event.preventDefault();
+            this.page.submitAnswer({
+                index: null,
+                value:
+                    this.getActiveInputAnswerValue(
+                        surface
+                    )
+            });
+            return;
+        }
+
+        if (
+            target.matches(
+                "#questionsContestForm"
+            )
+        ) {
+            event.preventDefault();
+            const field =
+                surface.querySelector(
+                    "#questionsContestInput"
+                ) ||
+                document.getElementById(
+                    "questionsContestInput"
+                );
+
+            this.page.submitQuestionContest(
+                String(
+                    field?.value || ""
+                )
+            );
+        }
+    },
+
+    isSessionEventTarget(target) {
+        return Boolean(
+            target?.closest(
+                "#questionsSession, #questionsFloatingWindow"
+            )
+        );
+    },
+
+    getActiveInputAnswerValue(
+        surface = document
+    ) {
+        const field =
+            surface?.querySelector?.(
+                "#questionsInputField"
+            ) ||
+            document.getElementById(
+                "questionsInputField"
+            );
+
+        return String(
+            field?.value || ""
+        ).trim();
+    },
+
+    getActiveOrderingAnswerValue(
+        surface = document
+    ) {
+        return [
+            ...(
+                surface?.querySelectorAll?.(
+                    "#questionsOrderingList [data-order-value]"
+                ) ||
+                document.querySelectorAll(
+                "#questionsOrderingList [data-order-value]"
+                )
+            )
+        ].map(
+            (item) => item.dataset.orderValue
+        );
+    },
+
+    bindSessionDelegation() {
+        if (this.sessionEventsBound) {
+            return;
+        }
+
+        this.sessionEventsBound = true;
+
+        document.addEventListener(
+            "click",
+            (event) => {
+                const target =
+                    event.target instanceof
+                    Element
+                        ? event.target
+                        : null;
+
+                if (!target) {
+                    return;
+                }
+
+                if (
+                    !this.isSessionEventTarget(
+                        target
+                    )
+                ) {
+                    return;
+                }
+
+                const answerButton =
+                    target.closest(
+                        "[data-answer-select]"
+                    );
+
+                if (answerButton) {
+                    const group =
+                        answerButton.closest(
+                            ".questions-options"
+                        );
+
+                    group
+                        ?.querySelectorAll(
+                            "[data-answer-select]"
+                        )
+                        .forEach((item) => {
+                            item.classList.remove(
+                                "is-selected"
+                            );
+                        });
+
+                    answerButton.classList.add(
+                        "is-selected"
+                    );
+
+                    const confirmBtn =
+                        document.getElementById(
+                            "questionsChoiceConfirmBtn"
+                        );
+
+                    if (confirmBtn) {
+                        confirmBtn.disabled =
+                            false;
+                        confirmBtn.dataset.selectedIndex =
+                            answerButton.dataset.answerSelect ||
+                            "";
+                    }
+
+                    return;
+                }
+
+                const choiceConfirmBtn =
+                    target.closest(
+                        "#questionsChoiceConfirmBtn"
+                    );
+
+                if (choiceConfirmBtn) {
+                    const selectedIndex =
+                        Number(
+                            choiceConfirmBtn
+                                ?.dataset
+                                ?.selectedIndex
+                        );
+
+                    if (
+                        Number.isFinite(
+                            selectedIndex
+                        )
+                    ) {
+                        this.page.submitAnswer({
+                            index: selectedIndex
+                        });
+                    }
+
+                    return;
+                }
+
+                const inputConfirmBtn =
+                    target.closest(
+                        "#questionsInputConfirmBtn"
+                    );
+
+                if (inputConfirmBtn) {
+                    event.preventDefault();
+                    this.page.submitAnswer({
+                        index: null,
+                        value:
+                            this.getActiveInputAnswerValue()
+                    });
+                    return;
+                }
+
+                const orderingMoveBtn =
+                    target.closest(
+                        "[data-order-move]"
+                    );
+
+                if (orderingMoveBtn) {
+                    this.moveOrderItem(
+                        orderingMoveBtn
+                    );
+                    return;
+                }
+
+                const orderingSubmitBtn =
+                    target.closest(
+                        "#questionsOrderingSubmitBtn"
+                    );
+
+                if (orderingSubmitBtn) {
+                    this.page.submitAnswer({
+                        index: null,
+                        value:
+                            this.getActiveOrderingAnswerValue()
+                    });
+                    return;
+                }
+
+                const continueBtn =
+                    target.closest(
+                        "#questionsContinueBtn"
+                    );
+
+                if (continueBtn) {
+                    this.page.continueSession();
+                    return;
+                }
+
+                const retryBtn =
+                    target.closest(
+                        "#questionsRetryBtn"
+                    );
+
+                if (retryBtn) {
+                    this.page.retryCurrentQuestion();
+                    return;
+                }
+
+                const backBtn =
+                    target.closest(
+                        "#questionsBackBtn"
+                    );
+
+                if (backBtn) {
+                    this.page.pauseSession();
+                    return;
+                }
+
+                const restartBtn =
+                    target.closest(
+                        "#questionsRestartBtn"
+                    );
+
+                if (restartBtn) {
+                    this.page.restartSession();
+                    return;
+                }
+
+                const sessionSaveProfileBtn =
+                    target.closest(
+                        "#questionsSessionSmartSaveProfileBtn"
+                    );
+
+                if (
+                    sessionSaveProfileBtn
+                ) {
+                    this.page.saveCurrentSmartProfile();
+                    return;
+                }
+
+                const sessionSaveBlockBtn =
+                    target.closest(
+                        "#questionsSessionSmartSaveBlockBtn"
+                    );
+
+                if (
+                    sessionSaveBlockBtn
+                ) {
+                    this.page.saveCurrentSmartBlock();
+                    return;
+                }
+
+                const sessionClearBtn =
+                    target.closest(
+                        "#questionsSessionSmartClearBtn"
+                    );
+
+                if (sessionClearBtn) {
+                    this.page.clearSmartExclusions();
+                    return;
+                }
+
+                const weakBtn =
+                    target.closest(
+                        "#questionsFocusWeakBtn"
+                    );
+
+                if (weakBtn) {
+                    this.page.startFollowUp(
+                        "weak_topic"
+                    );
+                    return;
+                }
+
+                const reviewErrorsBtn =
+                    target.closest(
+                        "#questionsReviewErrorsBtn"
+                    );
+
+                if (reviewErrorsBtn) {
+                    this.page.startFollowUp(
+                        "review_errors"
+                    );
+                    return;
+                }
+
+                const mixedReviewBtn =
+                    target.closest(
+                        "#questionsMixedReviewBtn"
+                    );
+
+                if (mixedReviewBtn) {
+                    this.page.startFollowUp(
+                        "mixed_review"
+                    );
+                    return;
+                }
+
+                const resultsBackBtn =
+                    target.closest(
+                        "#questionsResultsBackBtn"
+                    );
+
+                if (resultsBackBtn) {
+                    this.page.openLauncher();
+                    return;
+                }
+
+                const smartGoalBtn =
+                    target.closest(
+                        "[data-smart-goal]"
+                    );
+
+                if (smartGoalBtn) {
+                    this.page.setSmartGoal(
+                        smartGoalBtn.dataset
+                            .smartGoal
+                    );
+                    return;
+                }
+
+                const amountBtn =
+                    target.closest(
+                        "[data-amount]"
+                    );
+
+                if (amountBtn) {
+                    this.page.updateContext({
+                        quantidadeQuestoes:
+                            Number(
+                                amountBtn.dataset
+                                    .amount
+                            )
+                    });
+                }
+            }
+        );
+
+        document.addEventListener(
+            "submit",
+            (event) => {
+                const target =
+                    event.target instanceof
+                    Element
+                        ? event.target
+                        : null;
+
+                if (
+                    !target ||
+                    !this.isSessionEventTarget(
+                        target
+                    )
+                ) {
+                    return;
+                }
+
+                if (
+                    target.matches(
+                        "#questionsInputForm"
+                    )
+                ) {
+                    event.preventDefault();
+                    this.page.submitAnswer({
+                        index: null,
+                        value:
+                            this.getActiveInputAnswerValue()
+                    });
+                    return;
+                }
+
+                if (
+                    target.matches(
+                        "#questionsContestForm"
+                    )
+                ) {
+                    event.preventDefault();
+                    const field =
+                        document.getElementById(
+                            "questionsContestInput"
+                        );
+
+                    this.page.submitQuestionContest(
+                        String(
+                            field?.value || ""
+                        )
+                    );
+                }
+            }
+        );
     },
 
     renderFloatingSessionHint() {
@@ -127,6 +893,15 @@ window.QuestionsUI = {
                 </div>
             </section>
         `;
+    },
+
+    escapeHtml(value) {
+        return String(value ?? "")
+            .replace(/&/g, "&amp;")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;")
+            .replace(/"/g, "&quot;")
+            .replace(/'/g, "&#39;");
     },
 
     mountFloatingSession(content) {
@@ -720,17 +1495,17 @@ window.QuestionsUI = {
                         </button>
                     </article>
 
-                    <article class="questions-entry-option">
+                    <article class="questions-entry-option questions-entry-option-specific">
                         <div class="questions-entry-copy">
-                            <h3>Especificar treino</h3>
-                            <p>Voce escolhe exatamente o recorte da sessao.</p>
+                            <h3>Central de progresso</h3>
+                            <p>Seu mapa de desempenho, reforco e leitura da caminhada.</p>
                         </div>
                         <button class="questions-secondary-btn" type="button" data-launcher-view="specific" ${isLoading || isError ? "disabled" : ""}>
-                            ${isLoading ? "Preparando..." : isError ? "Indisponivel" : "Abrir"}
+                            ${isLoading ? "Preparando..." : isError ? "Indisponivel" : "Entrar"}
                         </button>
                     </article>
 
-                    <article class="questions-entry-option">
+                    <article class="questions-entry-option questions-entry-option-saved">
                         <div class="questions-entry-copy">
                             <h3>Guardados</h3>
                             <p>${savedBlocks.length ? `${savedBlocks.length} treino(s) salvo(s) para consultar, duplicar ou refazer.` : "Seus treinos guardados ficam aqui."}</p>
@@ -747,6 +1522,1072 @@ window.QuestionsUI = {
                     </button>
                 </div>
             </section>
+        `;
+    },
+
+    formatSerieLabel(serieValue) {
+        const numeric =
+            Number(serieValue);
+
+        if (
+            !Number.isFinite(numeric) ||
+            numeric <= 0
+        ) {
+            return "Serie";
+        }
+
+        return `${numeric}ª Série`;
+    },
+
+    formatHubHours(totalHours) {
+        const safeHours =
+            Number(totalHours) || 0;
+
+        if (safeHours <= 0) {
+            return "0 h";
+        }
+
+        if (safeHours < 1) {
+            return `${Math.max(1, Math.round(safeHours * 60))} min`;
+        }
+
+        return `${safeHours
+            .toFixed(safeHours >= 10 ? 0 : 1)
+            .replace(".", ",")} h`;
+    },
+
+    buildHubBreakdownBySubject(
+        entries = []
+    ) {
+        const grouped = new Map();
+
+        (entries || []).forEach((entry) => {
+            const key =
+                String(
+                    entry?.subjectKey || ""
+                ).trim() || "geral";
+            const current =
+                grouped.get(key) || {
+                    subjectKey: key,
+                    subjectLabel:
+                        String(
+                            entry?.subjectLabel ||
+                                "Materia"
+                        ).trim() ||
+                        "Materia",
+                    attempts: 0,
+                    hits: 0,
+                    errors: 0,
+                    totalTime: 0,
+                    topicCount: 0
+                };
+
+            current.attempts +=
+                Number(
+                    entry?.attempts || 0
+                );
+            current.hits += Number(
+                entry?.hits || 0
+            );
+            current.errors += Number(
+                entry?.errors || 0
+            );
+            current.totalTime +=
+                (Number(
+                    entry?.avgTime || 0
+                ) || 0) *
+                (Number(
+                    entry?.attempts || 0
+                ) || 0);
+            current.topicCount += 1;
+
+            grouped.set(key, current);
+        });
+
+        return [...grouped.values()]
+            .map((entry) => ({
+                ...entry,
+                accuracy:
+                    entry.attempts > 0
+                        ? Math.round(
+                            (entry.hits /
+                                entry.attempts) *
+                                100
+                        )
+                        : 0,
+                errorRate:
+                    entry.attempts > 0
+                        ? Math.round(
+                            (entry.errors /
+                                entry.attempts) *
+                                100
+                        )
+                        : 0,
+                avgTimeMs:
+                    entry.attempts > 0
+                        ? entry.totalTime /
+                          entry.attempts
+                        : 0
+            }))
+            .sort((left, right) =>
+                right.attempts -
+                    left.attempts ||
+                left.accuracy -
+                    right.accuracy
+            );
+    },
+
+    buildHubBreakdownBySerie(
+        sessions = []
+    ) {
+        const grouped = new Map();
+
+        (sessions || []).forEach((session) => {
+            const serieKey =
+                Number(session?.serie) || 0;
+            const current =
+                grouped.get(serieKey) || {
+                    serie: serieKey,
+                    label:
+                        this.formatSerieLabel(
+                            serieKey
+                        ),
+                    attempts: 0,
+                    hits: 0,
+                    errors: 0,
+                    sessions: 0,
+                    totalTime: 0
+                };
+
+            current.attempts +=
+                Number(
+                    session?.amount || 0
+                );
+            current.hits += Number(
+                session?.hits || 0
+            );
+            current.errors +=
+                Number(
+                    session?.errors || 0
+                );
+            current.sessions += 1;
+            current.totalTime +=
+                (Number(
+                    session?.avgTimeMs || 0
+                ) || 0) *
+                (Number(
+                    session?.amount || 0
+                ) || 0);
+
+            grouped.set(
+                serieKey,
+                current
+            );
+        });
+
+        return [...grouped.values()]
+            .map((entry) => ({
+                ...entry,
+                accuracy:
+                    entry.attempts > 0
+                        ? Math.round(
+                            (entry.hits /
+                                entry.attempts) *
+                                100
+                        )
+                        : 0,
+                avgTimeMs:
+                    entry.attempts > 0
+                        ? entry.totalTime /
+                          entry.attempts
+                        : 0
+            }))
+            .sort(
+                (left, right) =>
+                    left.serie -
+                    right.serie
+            );
+    },
+
+    buildProgressHubLevel(
+        dashboard = {}
+    ) {
+        const attempts =
+            Number(
+                dashboard?.attempts || 0
+            ) || 0;
+        const accuracy =
+            Math.round(
+                (Number(
+                    dashboard?.accuracy || 0
+                ) || 0) * 100
+            );
+        const level =
+            Math.max(
+                1,
+                Math.floor(attempts / 60) +
+                    1
+            );
+        const progress =
+            Math.round(
+                ((attempts % 60) / 60) *
+                    100
+            );
+        const titles = [
+            "Primeiros passos",
+            "Tracao",
+            "Consolidacao",
+            "Pulso firme",
+            "Leitura madura",
+            "Mapa avancado",
+            "Dominio em formacao"
+        ];
+        const tierLabel =
+            titles[
+                Math.min(
+                    titles.length - 1,
+                    Math.floor(
+                        (level - 1) / 2
+                    )
+                )
+            ];
+        let note =
+            "A central vai ficando mais precisa conforme voce responde blocos variados.";
+
+        if (accuracy >= 80) {
+            note =
+                "O ritmo ja esta forte. Vale misturar assuntos e puxar refinamento.";
+        } else if (attempts >= 40) {
+            note =
+                "Ja existe massa critica suficiente para sugerir reforcos com mais seguranca.";
+        }
+
+        return {
+            level,
+            progress,
+            tierLabel,
+            note
+        };
+    },
+
+    buildProgressHubRadarMetrics(
+        payload = {}
+    ) {
+        const attempts =
+            Number(
+                payload.attempts || 0
+            ) || 0;
+        const hits =
+            Number(payload.hits || 0) ||
+            0;
+        const errors =
+            Number(
+                payload.errors || 0
+            ) || 0;
+        const sessions =
+            Number(
+                payload.sessions || 0
+            ) || 0;
+        const avgTimeMs =
+            Number(
+                payload.avgTimeMs || 0
+            ) || 0;
+        const accuracy =
+            Number(
+                payload.accuracy || 0
+            ) || 0;
+        const coveredTopics =
+            Number(
+                payload.coveredTopics || 0
+            ) || 0;
+        const totalTopics =
+            Number(
+                payload.totalTopics || 0
+            ) || 0;
+        const clamp =
+            (value) =>
+                Math.max(
+                    0,
+                    Math.min(
+                        100,
+                        Math.round(value)
+                    )
+                );
+
+        return [
+            {
+                label: "Precisao",
+                value: clamp(accuracy)
+            },
+            {
+                label: "Cobertura",
+                value: totalTopics
+                    ? clamp(
+                        (coveredTopics /
+                            totalTopics) *
+                            100
+                    )
+                    : 0
+            },
+            {
+                label: "Ritmo",
+                value: avgTimeMs
+                    ? clamp(
+                        100 -
+                            ((avgTimeMs -
+                                12000) /
+                                26000) *
+                                100
+                    )
+                    : 36
+            },
+            {
+                label: "Constancia",
+                value: sessions
+                    ? clamp(
+                        (Math.min(
+                            sessions,
+                            10
+                        ) /
+                            10) *
+                            100
+                    )
+                    : 0
+            },
+            {
+                label: "Tracao",
+                value: clamp(
+                    (Math.min(
+                        attempts,
+                        120
+                    ) /
+                        120) *
+                        100
+                )
+            },
+            {
+                label: "Dominio",
+                value: attempts
+                    ? clamp(
+                        (((hits - errors) /
+                            attempts) +
+                            1) *
+                            50
+                    )
+                    : 0
+            }
+        ];
+    },
+
+    renderProgressHubRadar(
+        metrics = []
+    ) {
+        const safeMetrics =
+            Array.isArray(metrics) &&
+            metrics.length
+                ? metrics
+                : [];
+        const size = 280;
+        const center = 140;
+        const radius = 88;
+        const rings = [0.25, 0.5, 0.75, 1];
+        const total =
+            safeMetrics.length || 1;
+        const pointFor =
+            (
+                factor,
+                index,
+                extra = 0
+            ) => {
+                const angle =
+                    (-Math.PI / 2) +
+                    (Math.PI * 2 * index) /
+                        total;
+                const finalRadius =
+                    radius * factor + extra;
+
+                return {
+                    x:
+                        center +
+                        Math.cos(angle) *
+                            finalRadius,
+                    y:
+                        center +
+                        Math.sin(angle) *
+                            finalRadius
+                };
+            };
+
+        return `
+            <div class="questions-hub-radar-shell">
+                <svg class="questions-hub-radar-svg" viewBox="0 0 ${size} ${size}" role="img" aria-label="Radar de desempenho">
+                    ${rings.map((ring) => {
+                        const points =
+                            safeMetrics
+                                .map(
+                                    (
+                                        _metric,
+                                        index
+                                    ) => {
+                                        const point =
+                                            pointFor(
+                                                ring,
+                                                index
+                                            );
+
+                                        return `${point.x},${point.y}`;
+                                    }
+                                )
+                                .join(" ");
+
+                        return `<polygon class="questions-hub-radar-ring" points="${points}"></polygon>`;
+                    }).join("")}
+                    ${safeMetrics.map((_metric, index) => {
+                        const point =
+                            pointFor(
+                                1,
+                                index
+                            );
+
+                        return `<line class="questions-hub-radar-spoke" x1="${center}" y1="${center}" x2="${point.x}" y2="${point.y}"></line>`;
+                    }).join("")}
+                    <polygon class="questions-hub-radar-shape" points="${safeMetrics.map((metric, index) => {
+                        const point =
+                            pointFor(
+                                Math.max(
+                                    0,
+                                    Math.min(
+                                        1,
+                                        (Number(
+                                            metric?.value
+                                        ) || 0) /
+                                            100
+                                    )
+                                ),
+                                index
+                            );
+
+                        return `${point.x},${point.y}`;
+                    }).join(" ")}"></polygon>
+                    ${safeMetrics.map((metric, index) => {
+                        const point =
+                            pointFor(
+                                Math.max(
+                                    0,
+                                    Math.min(
+                                        1,
+                                        (Number(
+                                            metric?.value
+                                        ) || 0) /
+                                            100
+                                    )
+                                ),
+                                index
+                            );
+
+                        return `<circle class="questions-hub-radar-dot" cx="${point.x}" cy="${point.y}" r="4"></circle>`;
+                    }).join("")}
+                </svg>
+                ${safeMetrics.map((metric, index) => {
+                    const point =
+                        pointFor(
+                            1,
+                            index,
+                            26
+                        );
+
+                    return `
+                        <div class="questions-hub-radar-label" style="left:${point.x}px; top:${point.y}px;">
+                            <span>${this.escapeHtml(metric.label)}</span>
+                            <strong>${Number(metric.value) || 0}</strong>
+                        </div>
+                    `;
+                }).join("")}
+            </div>
+        `;
+    },
+
+    buildProgressHubModel() {
+        const page =
+            this.page;
+        const ctx =
+            QuestionsContext.get();
+        const baseKey = "ESCOLAR";
+        const allEntries =
+            QuestionsStore.getTopicEntries({
+                baseKey
+            });
+        const allSessions =
+            QuestionsStore.getRecentSessions({
+                baseKey
+            });
+        const series =
+            QuestionsService.getSeriesOptions(
+                page
+            ).map((item) => ({
+                ...item,
+                label:
+                    this.formatSerieLabel(
+                        item.key
+                    )
+            }));
+        const activeSerie =
+            series.find(
+                (item) =>
+                    Number(item.key) ===
+                    Number(ctx.serie)
+            )?.key ||
+            series[0]?.key ||
+            Number(ctx.serie) ||
+            1;
+        const subjects =
+            QuestionsService.getSubjectOptions(
+                page,
+                activeSerie
+            );
+        const activeSubject =
+            subjects.find(
+                (item) =>
+                    item.key === ctx.materia
+            )?.key ||
+            subjects[0]?.key ||
+            "";
+        const overallDashboard =
+            QuestionsStore.getDashboard({
+                baseKey
+            });
+        const activeSessions =
+            allSessions.filter(
+                (session) =>
+                    Number(
+                        session?.serie
+                    ) ===
+                        Number(
+                            activeSerie
+                        ) &&
+                    (!activeSubject ||
+                        session.subjectKey ===
+                            activeSubject)
+            );
+        const activeTotals =
+            activeSessions.reduce(
+                (acc, session) => {
+                    const amount =
+                        Number(
+                            session?.amount || 0
+                        ) || 0;
+
+                    acc.attempts += amount;
+                    acc.hits +=
+                        Number(
+                            session?.hits || 0
+                        ) || 0;
+                    acc.errors +=
+                        Number(
+                            session?.errors || 0
+                        ) || 0;
+                    acc.sessions += 1;
+                    acc.totalTime +=
+                        (Number(
+                            session?.avgTimeMs ||
+                                0
+                        ) || 0) * amount;
+
+                    (
+                        session?.topicKeys || []
+                    ).forEach((topicKey) => {
+                        if (topicKey) {
+                            acc.topicKeys.add(
+                                topicKey
+                            );
+                        }
+                    });
+
+                    return acc;
+                },
+                {
+                    attempts: 0,
+                    hits: 0,
+                    errors: 0,
+                    sessions: 0,
+                    totalTime: 0,
+                    topicKeys: new Set()
+                }
+            );
+        const activeAccuracy =
+            activeTotals.attempts > 0
+                ? Math.round(
+                    (activeTotals.hits /
+                        activeTotals.attempts) *
+                        100
+                )
+                : 0;
+        const activeAvgTimeMs =
+            activeTotals.attempts > 0
+                ? activeTotals.totalTime /
+                  activeTotals.attempts
+                : 0;
+        const availableTopics =
+            QuestionsService.getTopicOptions(
+                page,
+                {
+                    serie: activeSerie,
+                    materia: activeSubject
+                }
+            );
+        const weakOverall =
+            QuestionsStore.getWeakTopics({
+                baseKey,
+                minAttempts: 2,
+                minErrors: 1
+            }).slice(0, 6);
+        const weakSubject =
+            activeSubject
+                ? QuestionsStore.getWeakTopics(
+                    {
+                        baseKey,
+                        subjectKey:
+                            activeSubject,
+                        minAttempts: 2,
+                        minErrors: 1
+                    }
+                ).slice(0, 5)
+                : [];
+        const strongOverall =
+            QuestionsStore.getStrongTopics({
+                baseKey
+            }).slice(0, 5);
+        const strongSubject =
+            activeSubject
+                ? QuestionsStore.getStrongTopics(
+                    {
+                        baseKey,
+                        subjectKey:
+                            activeSubject
+                    }
+                ).slice(0, 4)
+                : [];
+        const subjectBreakdown =
+            this.buildHubBreakdownBySubject(
+                allEntries
+            );
+        const seriesBreakdown =
+            this.buildHubBreakdownBySerie(
+                allSessions
+            );
+        const strongestSubject =
+            subjectBreakdown
+                .filter(
+                    (item) =>
+                        item.attempts > 0
+                )
+                .sort((left, right) =>
+                    right.accuracy -
+                        left.accuracy ||
+                    right.attempts -
+                        left.attempts
+                )[0] || null;
+        const hardestSubject =
+            subjectBreakdown
+                .filter(
+                    (item) =>
+                        item.attempts > 0
+                )
+                .sort((left, right) =>
+                    right.errors -
+                        left.errors ||
+                    left.accuracy -
+                        right.accuracy
+                )[0] || null;
+        const overallHours =
+            ((Number(
+                overallDashboard.avgTimeMs ||
+                    0
+            ) || 0) *
+                (Number(
+                    overallDashboard.attempts ||
+                        0
+                ) || 0)) /
+            3600000;
+        const recommendations = [];
+
+        if (weakSubject[0]) {
+            recommendations.push({
+                kicker:
+                    "Reforco recomendado",
+                title:
+                    weakSubject[0]
+                        .topicLabel,
+                note: `${weakSubject[0].errors} erro(s) acumulados em ${weakSubject[0].attempts} tentativa(s).`
+            });
+        } else if (weakOverall[0]) {
+            recommendations.push({
+                kicker:
+                    "Primeiro ajuste",
+                title:
+                    weakOverall[0]
+                        .topicLabel,
+                note: "Esse assunto ja aparece como o mais sensivel na leitura geral."
+            });
+        }
+
+        if (hardestSubject) {
+            recommendations.push({
+                kicker:
+                    "Materia que pede cuidado",
+                title:
+                    hardestSubject.subjectLabel,
+                note: `${hardestSubject.errorRate}% de erro no acumulado recente.`
+            });
+        }
+
+        if (strongestSubject) {
+            recommendations.push({
+                kicker:
+                    "Ponto forte atual",
+                title:
+                    strongestSubject.subjectLabel,
+                note: `${strongestSubject.accuracy}% de acerto, bom para sustentar confianca e repertorio.`
+            });
+        }
+
+        if (!recommendations.length) {
+            recommendations.push({
+                kicker:
+                    "Painel em aquecimento",
+                title:
+                    "Seus sinais ainda vao nascer",
+                note: "Assim que as primeiras sessoes entrarem, a central mostra reforcos, radar e tendencia com mais nitidez."
+            });
+        }
+
+        return {
+            series,
+            subjects,
+            activeSerie,
+            activeSubject,
+            activeSubjectLabel:
+                subjects.find(
+                    (item) =>
+                        item.key ===
+                        activeSubject
+                )?.label || "Materia",
+            overallDashboard,
+            overallHours,
+            activeTotals,
+            activeAccuracy,
+            activeAvgTimeMs,
+            activeHours:
+                activeTotals.totalTime /
+                3600000,
+            activeTopicCoverage:
+                activeTotals.topicKeys
+                    .size,
+            availableTopicCount:
+                availableTopics.length,
+            weakOverall,
+            weakSubject,
+            strongOverall,
+            strongSubject,
+            subjectBreakdown,
+            seriesBreakdown,
+            strongestSubject,
+            hardestSubject,
+            level:
+                this.buildProgressHubLevel(
+                    overallDashboard
+                ),
+            radarMetrics:
+                this.buildProgressHubRadarMetrics(
+                    {
+                        attempts:
+                            activeTotals.attempts,
+                        hits: activeTotals.hits,
+                        errors:
+                            activeTotals.errors,
+                        sessions:
+                            activeTotals.sessions,
+                        avgTimeMs:
+                            activeAvgTimeMs,
+                        accuracy:
+                            activeAccuracy,
+                        coveredTopics:
+                            activeTotals
+                                .topicKeys.size,
+                        totalTopics:
+                            availableTopics.length
+                    }
+                ),
+            recommendations,
+            recentSessions:
+                allSessions.slice(0, 5)
+        };
+    },
+
+    renderProgressHubHero(
+        model,
+        overallAccuracy,
+        overallErrorRate,
+        leadingWeakTopic,
+        leadingStrongTopic
+    ) {
+        const highlightedSuggestion =
+            model.recommendations[0];
+
+        return `
+            <section class="questions-hub-hero">
+                <article class="questions-hub-hero-copy">
+                    <div class="questions-panel-label">Leitura geral</div>
+                    <h3>Um painel para entender, nao para confundir</h3>
+                    <p>O sistema concentra aqui o que voce ja respondeu, o que pede reforco, o que esta virando ponto forte e qual materia merece o proximo mergulho.</p>
+                    <div class="questions-hub-highlight">
+                        <span class="questions-hub-highlight-kicker">${this.escapeHtml(highlightedSuggestion.kicker)}</span>
+                        <strong>${this.escapeHtml(highlightedSuggestion.title)}</strong>
+                        <p>${this.escapeHtml(highlightedSuggestion.note)}</p>
+                    </div>
+                </article>
+
+                <article class="questions-hub-level-card">
+                    <div class="questions-panel-label">Progressao leve</div>
+                    <strong>Nivel ${model.level.level}</strong>
+                    <span>${this.escapeHtml(model.level.tierLabel)}</span>
+                    <div class="questions-hub-level-track">
+                        <div class="questions-hub-level-fill" style="width:${model.level.progress}%"></div>
+                    </div>
+                    <p>${this.escapeHtml(model.level.note)}</p>
+                </article>
+            </section>
+
+            <div class="questions-hub-stat-grid">
+                <article class="questions-hub-stat-card questions-hub-stat-card-cyan">
+                    <span>Total respondidas</span>
+                    <strong>${model.overallDashboard.attempts || 0}</strong>
+                    <small>questoes no acumulado</small>
+                </article>
+                <article class="questions-hub-stat-card questions-hub-stat-card-mint">
+                    <span>Horas de questoes</span>
+                    <strong>${this.formatHubHours(model.overallHours)}</strong>
+                    <small>tempo total estimado</small>
+                </article>
+                <article class="questions-hub-stat-card questions-hub-stat-card-rose">
+                    <span>Acerto geral</span>
+                    <strong>${overallAccuracy}%</strong>
+                    <small>${overallErrorRate}% de erro</small>
+                </article>
+                <article class="questions-hub-stat-card questions-hub-stat-card-gold">
+                    <span>Materia mais forte</span>
+                    <strong>${this.escapeHtml(model.strongestSubject?.subjectLabel || "Aguardando leitura")}</strong>
+                    <small>${model.strongestSubject ? `${model.strongestSubject.accuracy}% de acerto` : "responda para revelar"}</small>
+                </article>
+                <article class="questions-hub-stat-card questions-hub-stat-card-ink">
+                    <span>Ponto mais fragil</span>
+                    <strong>${this.escapeHtml(leadingWeakTopic?.topicLabel || "Ainda sem alerta")}</strong>
+                    <small>${leadingWeakTopic ? `${leadingWeakTopic.errors} erro(s)` : "sem concentracao de erro ainda"}</small>
+                </article>
+                <article class="questions-hub-stat-card questions-hub-stat-card-lilac">
+                    <span>Ponto mais forte</span>
+                    <strong>${this.escapeHtml(leadingStrongTopic?.topicLabel || "Ainda sem destaque")}</strong>
+                    <small>${leadingStrongTopic ? `${Math.round((leadingStrongTopic.accuracy || 0) * 100)}% de precisao` : "os acertos consistentes aparecem aqui"}</small>
+                </article>
+            </div>
+        `;
+    },
+
+    renderProgressHubMainColumn(
+        model
+    ) {
+        return `
+            <div class="questions-hub-main-column">
+                <details class="questions-hub-section questions-hub-section-radar" open>
+                    <summary class="questions-hub-summary">
+                        <span>Radar da materia</span>
+                        <strong>${this.escapeHtml(model.activeSubjectLabel)} · ${this.escapeHtml(this.formatSerieLabel(model.activeSerie))}</strong>
+                    </summary>
+                    <div class="questions-hub-radar-card">
+                        <div class="questions-hub-filter-block">
+                            <div class="questions-hub-filter-title">Serie em radar</div>
+                            <div class="questions-hub-filter-row">
+                                ${model.series.map((serie) => `
+                                    <button class="questions-hub-filter-pill${Number(model.activeSerie) === Number(serie.key) ? " is-active" : ""}" type="button" data-hub-serie="${serie.key}">
+                                        ${this.escapeHtml(serie.label)}
+                                    </button>
+                                `).join("")}
+                            </div>
+                        </div>
+
+                        <div class="questions-hub-filter-block">
+                            <div class="questions-hub-filter-title">Materia em radar</div>
+                            <div class="questions-hub-filter-row">
+                                ${model.subjects.length ? model.subjects.map((subject) => `
+                                    <button class="questions-hub-filter-pill questions-hub-filter-pill-subject${model.activeSubject === subject.key ? " is-active" : ""}" type="button" data-hub-subject="${this.escapeHtml(subject.key)}">
+                                        ${this.escapeHtml(subject.label)}
+                                    </button>
+                                `).join("") : `
+                                    <div class="questions-empty-inline">Nenhuma materia pronta para essa serie ainda.</div>
+                                `}
+                            </div>
+                        </div>
+
+                        <div class="questions-hub-radar-layout">
+                            ${this.renderProgressHubRadar(model.radarMetrics)}
+                            <div class="questions-hub-radar-meta">
+                                <article class="questions-hub-radar-note">
+                                    <span>Leitura ativa</span>
+                                    <strong>${model.activeAccuracy}% de acerto</strong>
+                                    <small>${model.activeTotals.attempts || 0} questoes · ${QuestionsService.formatTime(model.activeAvgTimeMs)}</small>
+                                </article>
+                                <article class="questions-hub-radar-note">
+                                    <span>Cobertura do assunto</span>
+                                    <strong>${model.activeTopicCoverage}/${model.availableTopicCount || 0}</strong>
+                                    <small>topico(s) ja apareceram nas sessoes</small>
+                                </article>
+                                <article class="questions-hub-radar-note">
+                                    <span>Tempo investido</span>
+                                    <strong>${this.formatHubHours(model.activeHours)}</strong>
+                                    <small>neste recorte de serie e materia</small>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+
+                <details class="questions-hub-section questions-hub-section-subjects" open>
+                    <summary class="questions-hub-summary">
+                        <span>Mapa por materia</span>
+                        <strong>${model.subjectBreakdown.length} frente(s) com historico</strong>
+                    </summary>
+                    <div class="questions-hub-bars">
+                        ${model.subjectBreakdown.length ? model.subjectBreakdown.map((subject) => `
+                            <article class="questions-hub-bar-card">
+                                <div class="questions-hub-bar-copy">
+                                    <strong>${this.escapeHtml(subject.subjectLabel)}</strong>
+                                    <span>${subject.attempts} questoes · ${subject.topicCount} assunto(s) · ${subject.accuracy}% de acerto</span>
+                                </div>
+                                <div class="questions-hub-bar-track">
+                                    <div class="questions-hub-bar-fill questions-hub-bar-fill-cyan" style="width:${Math.max(8, subject.accuracy)}%"></div>
+                                </div>
+                                <div class="questions-hub-bar-side">${subject.errorRate}% erro</div>
+                            </article>
+                        `).join("") : `
+                            <div class="questions-empty-inline questions-empty-inline-soft">
+                                As materias vao aparecer aqui conforme as sessoes entrarem.
+                            </div>
+                        `}
+                    </div>
+                </details>
+
+                <details class="questions-hub-section questions-hub-section-series">
+                    <summary class="questions-hub-summary">
+                        <span>Leitura por serie</span>
+                        <strong>${model.seriesBreakdown.length} serie(s) com historico</strong>
+                    </summary>
+                    <div class="questions-hub-bars">
+                        ${model.seriesBreakdown.length ? model.seriesBreakdown.map((serie) => `
+                            <article class="questions-hub-bar-card">
+                                <div class="questions-hub-bar-copy">
+                                    <strong>${this.escapeHtml(serie.label)}</strong>
+                                    <span>${serie.attempts} questoes · ${serie.sessions} sessao(oes) · ${QuestionsService.formatTime(serie.avgTimeMs)}</span>
+                                </div>
+                                <div class="questions-hub-bar-track">
+                                    <div class="questions-hub-bar-fill questions-hub-bar-fill-mint" style="width:${Math.max(8, serie.accuracy)}%"></div>
+                                </div>
+                                <div class="questions-hub-bar-side">${serie.accuracy}% acerto</div>
+                            </article>
+                        `).join("") : `
+                            <div class="questions-empty-inline questions-empty-inline-soft">
+                                Quando outras series entrarem em jogo, esse corte aparece aqui.
+                            </div>
+                        `}
+                    </div>
+                </details>
+            </div>
+        `;
+    },
+
+    renderProgressHubSideColumn(
+        model
+    ) {
+        return `
+            <aside class="questions-hub-side-column">
+                <details class="questions-hub-section questions-hub-section-weakness" open>
+                    <summary class="questions-hub-summary">
+                        <span>Pontos frageis e fortes</span>
+                        <strong>o retrato mais util agora</strong>
+                    </summary>
+                    <div class="questions-hub-dual-stack">
+                        <article class="questions-hub-focus-card questions-hub-focus-card-weak">
+                            <div class="questions-panel-label">Mais dificultadas</div>
+                            ${model.weakOverall.length ? model.weakOverall.map((topic) => `
+                                <div class="questions-hub-topic-row">
+                                    <strong>${this.escapeHtml(topic.topicLabel)}</strong>
+                                    <span>${topic.errors} erro(s) · ${Math.round((topic.accuracy || 0) * 100)}% de acerto</span>
+                                </div>
+                            `).join("") : `
+                                <div class="questions-empty-inline">Ainda nao ha erro suficiente para cravar um ponto fraco.</div>
+                            `}
+                        </article>
+
+                        <article class="questions-hub-focus-card questions-hub-focus-card-strong">
+                            <div class="questions-panel-label">Pontos fortes</div>
+                            ${model.strongOverall.length ? model.strongOverall.map((topic) => `
+                                <div class="questions-hub-topic-row">
+                                    <strong>${this.escapeHtml(topic.topicLabel)}</strong>
+                                    <span>${topic.hits} acerto(s) · ${Math.round((topic.accuracy || 0) * 100)}% de precisao</span>
+                                </div>
+                            `).join("") : `
+                                <div class="questions-empty-inline">Os pontos fortes vao ganhar nome assim que os acertos se acumularem.</div>
+                            `}
+                        </article>
+                    </div>
+                </details>
+
+                <details class="questions-hub-section questions-hub-section-recommendations" open>
+                    <summary class="questions-hub-summary">
+                        <span>Rotas sugeridas agora</span>
+                        <strong>o que vale reforcar</strong>
+                    </summary>
+                    <div class="questions-hub-recommendations">
+                        ${model.recommendations.map((item, index) => `
+                            <article class="questions-hub-recommendation questions-hub-recommendation-${index % 3}">
+                                <span>${this.escapeHtml(item.kicker)}</span>
+                                <strong>${this.escapeHtml(item.title)}</strong>
+                                <p>${this.escapeHtml(item.note)}</p>
+                            </article>
+                        `).join("")}
+                    </div>
+                    <div class="questions-hub-session-strip">
+                        ${model.recentSessions.length ? model.recentSessions.map((session) => `
+                            <div class="questions-hub-session-pill">
+                                <strong>${this.escapeHtml(session.subjectLabel || "Sessao")}</strong>
+                                <span>${session.accuracy || 0}% · ${session.amount || 0} questoes</span>
+                            </div>
+                        `).join("") : `
+                            <div class="questions-empty-inline questions-empty-inline-soft">
+                                As ultimas sessoes vao aparecer aqui para ajudar na leitura do ritmo.
+                            </div>
+                        `}
+                    </div>
+                </details>
+            </aside>
+        `;
+    },
+
+    renderProgressHubActions() {
+        return `
+            <div class="questions-hub-actions">
+                <button class="questions-hub-action questions-hub-action-back" type="button" data-launcher-view="home">
+                    Voltar
+                </button>
+                <button id="questionsHubSmartBtn" class="questions-hub-action questions-hub-action-smart" type="button">
+                    Treino inteligente
+                </button>
+                <button class="questions-hub-action questions-hub-action-saved" type="button" data-launcher-view="saved">
+                    Treinos salvos
+                </button>
+                <button id="questionsHubReinforceBtn" class="questions-hub-action questions-hub-action-reinforce" type="button">
+                    Treino de reforco
+                </button>
+            </div>
         `;
     },
 
@@ -806,18 +2647,6 @@ window.QuestionsUI = {
                 "questions-smart-petal-4"
             ])
         ];
-        const coachHint =
-            model?.coachHint ??
-            (
-                page.shouldShowCoachHint(
-                    "smart_start"
-                )
-                    ? page.getCoachHintText(
-                        "smart_start"
-                    )
-                    : ""
-            );
-
         return `
             <section class="questions-card questions-entry-subview questions-smart-start-card">
                 <div class="questions-head questions-entry-head">
@@ -827,19 +2656,13 @@ window.QuestionsUI = {
                     </div>
 
                     <div class="questions-entry-actions">
-                        <button class="questions-secondary-btn" type="button" data-launcher-view="home">Voltar</button>
+                        <button class="questions-secondary-btn" type="button" data-launcher-back="true">Voltar</button>
                     </div>
                 </div>
 
                 ${page.getRuntimeNotice() ? `
                     <div class="questions-inline-notice">
                         ${page.getRuntimeNotice()}
-                    </div>
-                ` : ""}
-
-                ${coachHint ? `
-                    <div class="questions-smart-coach" style="--coach-steps: ${Math.max(coachHint.length, 24)}">
-                        <span>${coachHint}</span>
                     </div>
                 ` : ""}
 
@@ -925,15 +2748,25 @@ window.QuestionsUI = {
         const activeCount =
             model?.activeCount ??
             subjectOptions.filter(
-                (item) => item.active
+                (item) =>
+                    item.active &&
+                    !item.disabled
             ).length;
         const allActive =
             model?.allActive ??
             (
-                subjectOptions.length > 0 &&
-                subjectOptions.every(
+                subjectOptions.some(
+                    (item) =>
+                        !item.disabled
+                ) &&
+                subjectOptions
+                    .filter(
+                        (item) =>
+                            !item.disabled
+                    )
+                    .every(
                     (item) => item.active
-                )
+                    )
             );
         const visibleSubjects =
             model?.visibleSubjects ||
@@ -958,7 +2791,7 @@ window.QuestionsUI = {
                     </div>
 
                     <div class="questions-entry-actions">
-                        <button class="questions-secondary-btn" type="button" data-launcher-view="smart_start">Voltar</button>
+                        <button class="questions-secondary-btn" type="button" data-launcher-back="true">Voltar</button>
                     </div>
                 </div>
 
@@ -979,14 +2812,15 @@ window.QuestionsUI = {
                             <div class="questions-smart-subject-grid">
                                 ${visibleSubjects.map((item, index) => `
                                     <button
-                                        class="questions-smart-node questions-smart-subject-node${item.active ? " is-active" : ""}"
+                                        class="questions-smart-node questions-smart-subject-node${item.active ? " is-active" : ""}${item.disabled ? " is-disabled" : ""}"
                                         type="button"
                                         style="--questions-smart-node-transform: translate(-50%, -50%) rotate(${(-90 + ((360 / totalSubjects) * index)).toFixed(2)}deg) translateY(calc(var(--questions-smart-subject-radius, 248px) * -1)) rotate(${(90 - ((360 / totalSubjects) * index)).toFixed(2)}deg);"
                                         data-smart-subject-option="${item.key}"
+                                        ${item.disabled ? "disabled" : ""}
                                     >
                                         <div class="questions-smart-node-copy">
                                             <strong>${item.label}</strong>
-                                            <span>${item.readyTopicCount || item.topicCount} assunto(s) | ${item.readyQuestionCount || item.count} questoes</span>
+                                            <span>${item.hasQuestions ? `${item.readyTopicCount || item.topicCount} assunto(s) | ${item.readyQuestionCount || item.count} questoes` : "Sem questoes prontas"}</span>
                                         </div>
                                     </button>
                                 `).join("")}
@@ -1027,11 +2861,6 @@ window.QuestionsUI = {
     renderSmartLauncher() {
         const page =
             this.page;
-        const model =
-            page.launcherViewModels
-                ?.buildSmartLauncherViewModel
-                ? page.launcherViewModels.buildSmartLauncherViewModel()
-                : null;
 
         if (
             page.data.bankStatus ===
@@ -1053,79 +2882,35 @@ window.QuestionsUI = {
             `;
         }
 
-        const ctx =
-            model?.ctx ||
+        const smartCtx =
             QuestionsContext.get();
-        const goalOptions =
-            model?.goalOptions ||
-            QuestionsService.getSmartGoalOptions(
-                page
-            );
-        const preview =
-            model?.preview ||
+        const smartPreview =
             page.buildSmartRoutePreview();
-        const amountOptions =
-            model?.amountOptions ||
-            page.data.amountOptions;
-        const smartProfiles =
-            model?.smartProfiles ||
-            QuestionsStore.getSmartProfiles();
-        const savedBlocks =
-            model?.savedBlocks ||
-            QuestionsStore.getSavedBlocks();
-        const activeSeries =
-            model?.activeSeries ||
-            page.getSmartStartOptions()
-                .filter(
-                    (item) =>
-                        item.type === "serie" &&
-                        item.active &&
-                        !item.disabled
+        const smartQuestionOptions =
+            page.data
+                .smartQuestionAmountOptions ||
+            [5, 15, 30, 50];
+        const smartSelectedQuestionCount =
+            smartCtx.smartQuestionCount === null
+                ? null
+                : Math.max(
+                    1,
+                    Number(
+                        smartCtx.smartQuestionCount ||
+                            smartCtx.quantidadeQuestoes
+                    ) || 5
                 );
-        const activeSubjects =
-            model?.activeSubjects ||
-            page.getSmartSubjectOptions().filter(
-                (item) => item.active
-            );
-        const hiddenSubjectCount =
-            model?.hiddenSubjectCount ??
-            Math.max(
-                activeSubjects.length - 6,
-                0
-            );
-        const visibleTopics =
-            model?.visibleTopics ||
-            (
-                preview.isReady
-                    ? preview.topics.slice(
-                        0,
-                        5
-                    )
-                    : []
-            );
-        const hiddenTopicCount =
-            model?.hiddenTopicCount ??
-            (
-                preview.isReady
-                    ? Math.max(
-                        preview.topics.length -
-                            visibleTopics.length,
-                        0
-                    )
-                    : 0
-            );
-
         return `
-            <section class="questions-card questions-entry-subview questions-smart-final-card questions-smart-final-card-minimal">
+            <section class="questions-card questions-entry-subview questions-smart-final-card questions-smart-final-card-minimal questions-smart-focus-stage">
                 <div class="questions-head questions-entry-head">
                     <div>
                         <div class="questions-kicker">Treino inteligente</div>
                         <div class="questions-smart-step">3/3</div>
-                        <h2>Revisar e iniciar</h2>
+                        <h2>Selecionar quantidade</h2>
                     </div>
 
                     <div class="questions-entry-actions">
-                        <button class="questions-secondary-btn questions-review-btn" type="button" data-launcher-view="smart_subjects">Materias</button>
+                        <button class="questions-secondary-btn questions-review-btn" type="button" data-launcher-back="true">Voltar</button>
                     </div>
                 </div>
 
@@ -1135,110 +2920,139 @@ window.QuestionsUI = {
                     </div>
                 ` : ""}
 
-                ${preview.isReady ? `
-                    <section class="questions-smart-final-launch questions-smart-final-launch-minimal">
-                        <div class="questions-smart-final-launch-head">
-                            <span class="questions-panel-label">Bloco pronto</span>
-                            <strong>${preview.goal?.label || "Treino inteligente"}</strong>
-                            <span>Recorte pronto para abrir sem remontar tudo.</span>
-                        </div>
-                        <div class="questions-smart-final-stats">
-                            <span>${activeSeries.length} serie(s)</span>
-                            <span>${activeSubjects.length} materia(s)</span>
-                            <span>${preview.topics.length} assunto(s)</span>
-                            <span>${preview.eligibleQuestionCount || preview.availableCount || 0} questoes</span>
-                            <span>${preview.estimatedDuration}</span>
-                        </div>
-                        <button id="questionsSmartStartBtn" class="questions-primary-btn questions-smart-start-btn-minimal" type="button">
-                            Comecar treino
-                        </button>
-                    </section>
-
-                    <article class="questions-route-card questions-smart-final-summary-minimal">
-                        <div class="questions-route-stack">
-                            <div class="questions-summary-label">Recorte</div>
-                            <div class="questions-static-tokens">
-                                ${activeSeries.map((item) => `
-                                    <span class="questions-static-token">${item.label}</span>
-                                `).join("")}
-                                ${activeSubjects.slice(0, 4).map((item) => `
-                                    <span class="questions-static-token">${item.label}</span>
-                                `).join("")}
-                                ${hiddenSubjectCount ? `
-                                    <span class="questions-static-token questions-static-token-muted">+${hiddenSubjectCount} materias</span>
-                                ` : ""}
-                            </div>
-                        </div>
-
-                        <div class="questions-route-stack">
-                            <div class="questions-summary-label">Assuntos</div>
-                            <div class="questions-static-tokens">
-                                ${visibleTopics.map((topic) => `
-                                    <span class="questions-static-token${preview.focusLabel === topic.label ? " is-focus" : ""}">
-                                        ${topic.label}
-                                    </span>
-                                `).join("")}
-                                ${hiddenTopicCount ? `
-                                    <span class="questions-static-token questions-static-token-muted">+${hiddenTopicCount}</span>
-                                ` : ""}
-                            </div>
-                        </div>
-                    </article>
-                ` : `
-                    <div class="questions-issue-list">
-                        ${(preview.issues || [preview.reason]).map((issue) => `
-                            <div class="questions-issue-item">${issue}</div>
-                        `).join("")}
-                    </div>
-                `}
-
-                <article class="questions-panel questions-smart-final-quick questions-smart-final-quick-minimal">
-                    <div class="questions-smart-final-quick-row">
-                        <div class="questions-panel-label">Objetivo</div>
-                        <div class="questions-inline-grid questions-smart-final-pills">
-                            ${goalOptions.map((goal) => `
-                                <button class="questions-pill${ctx.smartGoal === goal.key ? " is-active" : ""}" type="button" data-smart-goal="${goal.key}">
-                                    ${goal.label}
+                <section class="questions-smart-config-card">
+                    <div class="questions-smart-config-group questions-smart-config-group--solo">
+                        <div class="questions-panel-label">Quantidade de questoes</div>
+                        <div class="questions-smart-config-grid questions-smart-config-grid--quantity">
+                            ${smartQuestionOptions.map((amount) => `
+                                <button class="questions-pill${smartSelectedQuestionCount === amount ? " is-active" : ""}" type="button" data-smart-question-count="${amount}" aria-pressed="${smartSelectedQuestionCount === amount ? "true" : "false"}">
+                                    ${String(amount).padStart(2, "0")}
                                 </button>
                             `).join("")}
+                            <button class="questions-pill questions-pill-infinity questions-pill-infinity--large${smartSelectedQuestionCount === null ? " is-active" : ""}" type="button" data-smart-question-infinite="true" aria-label="Sem limite" aria-pressed="${smartSelectedQuestionCount === null ? "true" : "false"}"></button>
                         </div>
                     </div>
 
-                    <div class="questions-smart-final-quick-row">
-                        <div class="questions-panel-label">Quantidade</div>
-                        <div class="questions-inline-grid questions-smart-final-pills">
-                            ${amountOptions.map((amount) => `
-                                <button class="questions-pill${ctx.quantidadeQuestoes === amount ? " is-active" : ""}" type="button" data-amount="${amount}">
-                                    ${amount}
-                                </button>
+                    ${smartPreview.isReady ? `
+                        <div class="questions-smart-config-note">
+                            <span>${smartPreview.serieLabel} &middot; ${smartPreview.materiaLabel}</span>
+                        </div>
+                    ` : `
+                        <div class="questions-issue-list">
+                            ${(smartPreview.issues || [smartPreview.reason]).map((issue) => `
+                                <div class="questions-issue-item">${issue}</div>
                             `).join("")}
                         </div>
+                    `}
+
+                    <button id="questionsSmartSavePresetStartBtn" class="questions-primary-btn questions-smart-start-btn-minimal questions-smart-focus-start" type="button" ${smartPreview.isReady ? "" : "disabled"}>
+                        Salvar predefinicao
+                    </button>
+                </section>
+            </section>
+        `;
+
+        const ctx =
+            QuestionsContext.get();
+        const preview =
+            page.buildSmartRoutePreview();
+        const timeOptions = [];
+        const selectedTimeMinutes =
+            15;
+        const questionOptions =
+            page.data
+                .smartQuestionAmountOptions ||
+            [5, 15, 30];
+        const selectedQuestionCount =
+            ctx.smartQuestionCount === null
+                ? null
+                : Math.max(
+                    1,
+                    Number(
+                        ctx.smartQuestionCount
+                    ) || 5
+                );
+        const isCustomQuestionActive =
+            selectedQuestionCount !==
+                null &&
+            !questionOptions.includes(
+                selectedQuestionCount
+            );
+        const isCustomTimeActive =
+            false;
+
+        return `
+            <section class="questions-card questions-entry-subview questions-smart-final-card questions-smart-final-card-minimal questions-smart-focus-stage">
+                <div class="questions-head questions-entry-head">
+                    <div>
+                        <div class="questions-kicker">Treino inteligente</div>
+                        <div class="questions-smart-step">3/3</div>
+                        <h2>Selecionar quantidade</h2>
                     </div>
-                </article>
 
-                <div class="questions-smart-final-actions questions-smart-final-actions-minimal">
-                    <button id="questionsSmartSaveProfileBtn" class="questions-secondary-btn" type="button">
-                        Salvar perfil
-                    </button>
-                    <button id="questionsSmartSaveBlockBtn" class="questions-secondary-btn" type="button" ${preview.isReady ? "" : "disabled"}>
-                        Guardar treino
-                    </button>
-                    <button id="questionsSmartClearExclusionsFooterBtn" class="questions-secondary-btn" type="button">
-                        Limpar recorte
-                    </button>
+                    <div class="questions-entry-actions">
+                        <button class="questions-secondary-btn questions-review-btn" type="button" data-launcher-back="true">Voltar</button>
+                    </div>
                 </div>
 
-                <div class="questions-entry-footer">
-                    <button class="questions-secondary-btn" type="button" data-launcher-view="smart_profiles">
-                        Perfis salvos${smartProfiles.length ? ` (${smartProfiles.length})` : ""}
+                ${page.getRuntimeNotice() ? `
+                    <div class="questions-inline-notice">
+                        ${page.getRuntimeNotice()}
+                    </div>
+                ` : ""}
+
+                <section class="questions-smart-config-card">
+                    <div class="questions-smart-config-group">
+                        <div class="questions-panel-label">Quantidade de questoes</div>
+                        <div class="questions-smart-config-grid questions-smart-config-grid--quantity">
+                            ${timeOptions.map((minutes) => `
+                                <button class="questions-pill${ctx.smartSessionMetric === "tempo" && selectedTimeMinutes === minutes ? " is-active" : ""}" type="button" data-smart-time="${minutes}">
+                                    ${minutes}
+                                </button>
+                            `).join("")}
+                            <label class="questions-smart-custom-field${isCustomTimeActive ? " is-active" : ""}">
+                                <input id="questionsSmartTimeInput" type="number" min="1" step="1" inputmode="numeric" value="${isCustomTimeActive ? selectedTimeMinutes : ""}" placeholder="min">
+                            </label>
+                            <button class="questions-pill questions-pill-infinity${ctx.smartSessionMetric === "tempo" && selectedTimeMinutes === null ? " is-active" : ""}" type="button" data-smart-time-infinite="true">
+                                ∞
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="questions-smart-config-group">
+                        <div class="questions-panel-label">Quantidade de questoes</div>
+                        <div class="questions-smart-config-grid questions-smart-config-grid--quantity">
+                            ${questionOptions.map((amount) => `
+                                <button class="questions-pill${selectedQuestionCount === amount ? " is-active" : ""}" type="button" data-smart-question-count="${amount}">
+                                    ${String(amount).padStart(2, "0")}
+                                </button>
+                            `).join("")}
+                            <label class="questions-smart-custom-field questions-smart-custom-field--large${isCustomQuestionActive ? " is-active" : ""}">
+                                <input id="questionsSmartQuestionInput" type="number" min="1" step="1" inputmode="numeric" value="${isCustomQuestionActive ? selectedQuestionCount : ""}" placeholder="n">
+                            </label>
+                            <button class="questions-pill questions-pill-infinity questions-pill-infinity--large${selectedQuestionCount === null ? " is-active" : ""}" type="button" data-smart-question-infinite="true" aria-label="Sem limite">
+                                ∞
+                            </button>
+                        </div>
+                    </div>
+
+                    ${preview.isReady ? `
+                        <div class="questions-smart-config-note">
+                            <span>${preview.serieLabel} • ${preview.materiaLabel}</span>
+                            <strong>${preview.trainingValueLabel === "∞" ? "Todas as questoes disponiveis" : `${preview.amount || 0} questoes previstas`}</strong>
+                        </div>
+                    ` : `
+                        <div class="questions-issue-list">
+                            ${(preview.issues || [preview.reason]).map((issue) => `
+                                <div class="questions-issue-item">${issue}</div>
+                            `).join("")}
+                        </div>
+                    `}
+
+                    <button id="questionsSmartSavePresetStartBtn" class="questions-primary-btn questions-smart-start-btn-minimal questions-smart-focus-start" type="button" ${preview.isReady ? "" : "disabled"}>
+                        Salvar predefinicao
                     </button>
-                    <button class="questions-secondary-btn" type="button" data-launcher-view="saved">
-                        Blocos salvos${savedBlocks.length ? ` (${savedBlocks.length})` : ""}
-                    </button>
-                    <button class="questions-secondary-btn" type="button" data-launcher-view="specific">
-                        Ir para especificar treino
-                    </button>
-                </div>
+                </section>
             </section>
         `;
     },
@@ -1263,7 +3077,7 @@ window.QuestionsUI = {
                     </div>
 
                     <div class="questions-entry-actions">
-                        <button class="questions-secondary-btn" type="button" data-launcher-view="smart">Voltar</button>
+                        <button class="questions-secondary-btn" type="button" data-launcher-back="true">Voltar</button>
                     </div>
                 </div>
 
@@ -1358,7 +3172,7 @@ window.QuestionsUI = {
                     </div>
 
                     <div class="questions-entry-actions">
-                        <button class="questions-secondary-btn" type="button" data-launcher-view="home">Voltar</button>
+                        <button class="questions-secondary-btn" type="button" data-launcher-back="true">Voltar</button>
                     </div>
                 </div>
 
@@ -1450,7 +3264,7 @@ window.QuestionsUI = {
                     </div>
 
                     <div class="questions-entry-actions">
-                        <button class="questions-secondary-btn" type="button" data-launcher-view="home">Voltar</button>
+                        <button class="questions-secondary-btn" type="button" data-launcher-back="true">Voltar</button>
                     </div>
                 </div>
 
@@ -1562,103 +3376,44 @@ window.QuestionsUI = {
             `;
         }
 
-        const ctx =
-            QuestionsContext.get();
-        const baseOptions =
-            QuestionsService.getBaseOptions(
-                page
+        const model =
+            this.buildProgressHubModel();
+        const overallAccuracy =
+            Math.round(
+                (Number(
+                    model.overallDashboard
+                        .accuracy || 0
+                ) || 0) * 100
             );
-        const modes =
-            QuestionsService.getModeOptions(
-                page
-            );
-        const series =
-            QuestionsService.getSeriesOptions(
-                page
-            );
-        const subjects =
-            QuestionsService.getSubjectOptions(
-                page,
-                ctx.serie
-            );
-        const topics =
-            QuestionsService.getTopicOptions(
-                page,
-                {
-                    serie: ctx.serie,
-                    materia: ctx.materia
-                }
-            );
-        const filteredTopics =
-            QuestionsService.filterTopicOptions(
-                topics,
-                {
-                    search: ctx.topicSearch,
-                    readyOnly:
-                        ctx.onlyReadyTopics
-                }
-            );
-        const selectedTopics =
-            QuestionsService.getSelectedTopicOptions(
-                page
-            );
-        const coverage =
-            QuestionsService.getTopicCoverage(
-                topics
-            );
-        const suggestion =
-            QuestionsService.getSmartSuggestion(
-                page
-            );
-        const modeConfig =
-            page.getModeConfig(ctx.mode);
-        const mixStrategies =
-            QuestionsService.getMixStrategies(
-                page,
-                ctx.mode
-            );
-        const validation =
-            QuestionsService.getLauncherValidation(
-                page
-            );
-        const checklist =
-            QuestionsService.getLauncherChecklist(
-                page
-            );
-        const route =
-            QuestionsService.getRouteSummary(
-                page
-            );
-        const startLabel =
-            validation.isReady
-                ? "Iniciar treino"
-                : "Complete a rota";
-        const savedBlocks =
-            QuestionsStore.getSavedBlocks();
+        const overallErrorRate =
+            model.overallDashboard
+                .attempts > 0
+                ? Math.round(
+                    (model
+                        .overallDashboard
+                        .errors /
+                        model
+                            .overallDashboard
+                            .attempts) *
+                        100
+                )
+                : 0;
+        const leadingWeakTopic =
+            model.weakSubject[0] ||
+            model.weakOverall[0] ||
+            null;
+        const leadingStrongTopic =
+            model.strongSubject[0] ||
+            model.strongOverall[0] ||
+            null;
 
         return `
-            <section class="questions-card questions-launcher-card">
+            <section class="questions-card questions-launcher-card questions-progress-hub-card">
                 <div class="questions-head">
                     <div>
-                        <div class="questions-kicker">Especificar treino</div>
-                        <h2>Monte sua rota escolar</h2>
-                        <p>${modeConfig.note} Esse e o caminho para quem quer controlar o recorte completo.</p>
-                    </div>
-
-                    <div class="questions-head-cta">
-                        <button class="questions-secondary-btn" type="button" data-launcher-view="home">
-                            Voltar
-                        </button>
-                        <button id="questionsSpecificSaveBlockBtn" class="questions-secondary-btn" type="button" ${validation.isReady ? "" : "disabled"}>
-                            Salvar bloco
-                        </button>
-                        <div class="questions-readiness${validation.isReady ? " is-ready" : ""}">
-                            <strong>${validation.isReady ? "Rota pronta" : "Rota em montagem"}</strong>
-                            <span>${validation.readyCount}/${validation.requestedCount} questoes disponiveis</span>
-                        </div>
-                        <button id="questionsStartBtn" class="questions-primary-btn" type="button" ${validation.isReady ? "" : "disabled"}>
-                            ${startLabel}
-                        </button>
+                        <div class="questions-kicker">Central de progresso</div>
+                        <h2>Leia o que seu treino ja contou</h2>
+                        <p>Essa area vira a leitura principal do estudante: desempenho, reforco, sinais fortes, radar da materia e o que vale fazer a seguir.</p>
                     </div>
                 </div>
 
@@ -1668,240 +3423,24 @@ window.QuestionsUI = {
                     </div>
                 ` : ""}
 
-                <div class="questions-launcher-overview">
-                    <article class="questions-route-card">
-                        <div class="questions-panel-label">Resumo da rota</div>
-                        <div class="questions-route-grid">
-                            <article class="questions-route-stat">
-                                <strong>${route.baseLabel || "Escolar"}</strong>
-                                <span>Base</span>
-                            </article>
-                            <article class="questions-route-stat">
-                                <strong>${route.serieLabel}</strong>
-                                <span>Serie ativa</span>
-                            </article>
-                            <article class="questions-route-stat">
-                                <strong>${route.materiaLabel || "Materia"}</strong>
-                                <span>Materia</span>
-                            </article>
-                            <article class="questions-route-stat">
-                                <strong>${selectedTopics.length}</strong>
-                                <span>Assunto(s)</span>
-                            </article>
-                            <article class="questions-route-stat">
-                                <strong>${validation.estimatedDuration}</strong>
-                                <span>Tempo estimado</span>
-                            </article>
-                        </div>
+                ${this.renderProgressHubHero(
+                    model,
+                    overallAccuracy,
+                    overallErrorRate,
+                    leadingWeakTopic,
+                    leadingStrongTopic
+                )}
 
-                        <div class="questions-route-stack">
-                            <div class="questions-summary-label">Assuntos selecionados</div>
-                            ${selectedTopics.length ? `
-                                <div class="questions-badge-row">
-                                    ${selectedTopics.map((topic) => `
-                                        <span class="questions-badge${ctx.focoPrincipal === topic.key ? " is-focus" : ""}">
-                                            ${topic.label}
-                                        </span>
-                                    `).join("")}
-                                </div>
-                            ` : `
-                                <div class="questions-empty-inline">
-                                    Selecione os assuntos que vao entrar na sessao.
-                                </div>
-                            `}
-                        </div>
-
-                        ${validation.issues.length ? `
-                            <div class="questions-issue-list">
-                                ${validation.issues.map((issue) => `
-                                    <div class="questions-issue-item">${issue}</div>
-                                `).join("")}
-                            </div>
-                        ` : ""}
-                    </article>
-
-                    <article class="questions-route-card">
-                        <div class="questions-panel-label">Checklist de prontidao</div>
-                        ${this.renderChecklist(checklist)}
-                    </article>
+                <div class="questions-hub-main-grid">
+                    ${this.renderProgressHubMainColumn(
+                        model
+                    )}
+                    ${this.renderProgressHubSideColumn(
+                        model
+                    )}
                 </div>
 
-                <div class="questions-grid">
-                    <article class="questions-panel">
-                        <div class="questions-panel-head">
-                            <div>
-                                <div class="questions-panel-label">Base de treino</div>
-                                <div class="questions-panel-meta">Escolar ativa agora. ENEM fica em fluxo separado e ja esta preparado.</div>
-                            </div>
-                        </div>
-                        <div class="questions-chip-grid">
-                            ${baseOptions.map((base) => `
-                                <button class="questions-chip${ctx.base === base.key ? " is-active" : ""}${base.available ? "" : " is-disabled"}" type="button" data-base="${base.key}" ${base.available ? "" : "disabled"}>
-                                    <strong>${base.label}</strong>
-                                    <span>${base.note}</span>
-                                </button>
-                            `).join("")}
-                        </div>
-                    </article>
-
-                    <article class="questions-panel">
-                        <div class="questions-panel-label">Modo de treino</div>
-                        <div class="questions-chip-grid">
-                            ${modes.map((mode) => `
-                                <button class="questions-chip${ctx.mode === mode.key ? " is-active" : ""}" type="button" data-mode="${mode.key}">
-                                    <strong>${mode.label}</strong>
-                                    <span>${mode.note}</span>
-                                </button>
-                            `).join("")}
-                        </div>
-                    </article>
-
-                    <article class="questions-panel">
-                        <div class="questions-panel-label">Serie</div>
-                        <div class="questions-inline-grid">
-                            ${series.map((serie) => `
-                                <button class="questions-pill${ctx.serie === serie.key ? " is-active" : ""}" type="button" data-serie="${serie.key}">
-                                    ${serie.label}
-                                </button>
-                            `).join("")}
-                        </div>
-                    </article>
-
-                    <article class="questions-panel">
-                        <div class="questions-panel-label">Materia</div>
-                        <div class="questions-inline-grid">
-                            ${subjects.map((subject) => `
-                                <button class="questions-pill${ctx.materia === subject.key ? " is-active" : ""}${subject.hasQuestions ? "" : " is-disabled"}" type="button" data-materia="${subject.key}" ${subject.hasQuestions ? "" : "disabled"}>
-                                    ${subject.label}
-                                    <span>${subject.hasQuestions ? `${subject.readyTopicCount} assunto(s) | ${subject.readyQuestionCount} questoes` : "Sem questoes prontas"}</span>
-                                </button>
-                            `).join("")}
-                        </div>
-                    </article>
-
-                    <article class="questions-panel">
-                        <div class="questions-panel-head">
-                            <div>
-                                <div class="questions-panel-label">Assuntos</div>
-                                <div class="questions-panel-meta">${filteredTopics.length}/${topics.length} visiveis | ${coverage.readyTopics} prontos | ${coverage.totalQuestions} questoes</div>
-                            </div>
-                            ${ctx.mode !== "ASSUNTO_UNICO" ? `
-                                <div class="questions-inline-actions">
-                                    <button class="questions-link-btn" type="button" id="questionsSelectAllTopicsBtn">Selecionar todos</button>
-                                    <button class="questions-link-btn" type="button" id="questionsClearTopicsBtn">Limpar</button>
-                                </div>
-                            ` : ""}
-                        </div>
-
-                        ${topics.length ? `
-                            <div class="questions-filter-bar">
-                                <input id="questionsTopicSearchInput" class="questions-search-field" type="search" value="${String(ctx.topicSearch || "").replace(/"/g, "&quot;")}" placeholder="Buscar por assunto, subtopico ou eixo">
-                                <button id="questionsReadyTopicsBtn" class="questions-secondary-btn" type="button">
-                                    ${ctx.onlyReadyTopics ? "So prontos" : "Mostrar vazios"}
-                                </button>
-                            </div>
-
-                            ${ctx.onlyReadyTopics && coverage.emptyTopics ? `
-                                <div class="questions-inline-note">
-                                    ${coverage.emptyTopics} assunto(s) vazios ficaram ocultos para deixar a escolha mais limpa.
-                                </div>
-                            ` : ""}
-
-                            ${filteredTopics.length ? `
-                            <div class="questions-topic-grid">
-                                ${filteredTopics.map((topic) => `
-                                    <button class="questions-topic-card${ctx.topicos.includes(topic.key) ? " is-active" : ""}${ctx.focoPrincipal === topic.key ? " is-focus" : ""}${topic.hasQuestions ? "" : " is-empty"}" type="button" data-topic="${topic.key}">
-                                        <strong>${topic.label}</strong>
-                                        ${(topic.eixo || topic.frente || topic.subtopicsPreview.length) ? `
-                                            <div class="questions-topic-notes">
-                                                ${topic.eixo ? `<span>${topic.eixo}</span>` : ""}
-                                                ${topic.frente ? `<span>${topic.frente}</span>` : ""}
-                                                ${topic.subtopicCount ? `<span>${topic.subtopicCount} subtopicos</span>` : ""}
-                                            </div>
-                                        ` : ""}
-                                        ${topic.subtopicsPreview.length ? `
-                                            <div class="questions-topic-preview">
-                                                ${topic.subtopicsPreview.join(" | ")}
-                                            </div>
-                                        ` : ""}
-                                        <div class="questions-topic-foot">
-                                            <span>${topic.count} questoes</span>
-                                            <span class="questions-topic-badge${topic.hasQuestions ? " is-ready" : ""}">
-                                                ${topic.hasQuestions ? "pronto" : "vazio"}
-                                            </span>
-                                        </div>
-                                    </button>
-                                `).join("")}
-                            </div>
-                            ` : `
-                                <div class="questions-empty-inline">
-                                    Nenhum assunto bate com a busca atual. Ajuste o texto ou libere os vazios.
-                                </div>
-                            `}
-                        ` : `
-                            <div class="questions-empty-inline">
-                                Essa materia ainda nao tem assuntos mapeados.
-                            </div>
-                        `}
-                    </article>
-
-                    ${ctx.mode === "REFORCO_DIRECIONADO" && selectedTopics.length ? `
-                        <article class="questions-panel">
-                            <div class="questions-panel-label">Foco principal</div>
-                            <div class="questions-inline-grid">
-                                ${selectedTopics.map((topic) => `
-                                    <button class="questions-pill${ctx.focoPrincipal === topic.key ? " is-active" : ""}" type="button" data-focus-topic="${topic.key}">
-                                        ${topic.label}
-                                    </button>
-                                `).join("")}
-                            </div>
-                        </article>
-                    ` : ""}
-
-                    <article class="questions-panel">
-                        <div class="questions-panel-label">Quantidade de questoes</div>
-                        <div class="questions-inline-grid">
-                            ${page.data.amountOptions.map((amount) => `
-                                <button class="questions-pill${ctx.quantidadeQuestoes === amount ? " is-active" : ""}" type="button" data-amount="${amount}">
-                                    ${amount}
-                                </button>
-                            `).join("")}
-                        </div>
-                    </article>
-
-                    <article class="questions-panel">
-                        <div class="questions-panel-head">
-                            <div>
-                                <div class="questions-panel-label">Estrategia de mistura</div>
-                                <div class="questions-panel-meta">${route.strategyLabel || "Selecao automatica"}</div>
-                            </div>
-                        </div>
-                        <div class="questions-inline-grid">
-                            ${mixStrategies.map((strategy) => `
-                                <button class="questions-pill${ctx.estrategiaMistura === strategy.key ? " is-active" : ""}" type="button" data-mix="${strategy.key}">
-                                    ${strategy.label}
-                                </button>
-                            `).join("")}
-                        </div>
-                    </article>
-                </div>
-
-                <div class="questions-summary-band">
-                    <div>
-                        <div class="questions-summary-label">Sugestao inteligente</div>
-                        <strong>${suggestion.title}</strong>
-                        <span>${suggestion.note}</span>
-                    </div>
-                </div>
-
-                <div class="questions-entry-footer">
-                    <button class="questions-secondary-btn" type="button" data-launcher-view="saved">
-                        Blocos salvos${savedBlocks.length ? ` (${savedBlocks.length})` : ""}
-                    </button>
-                    <button class="questions-secondary-btn" type="button" data-launcher-view="smart">
-                        Ir para treino inteligente
-                    </button>
-                </div>
+                ${this.renderProgressHubActions()}
             </section>
         `;
     },
@@ -1949,6 +3488,171 @@ window.QuestionsUI = {
         `;
     },
 
+    buildSessionProgressModel(
+        question,
+        answer,
+        session = [],
+        meta = {}
+    ) {
+        const results =
+            QuestionsState.getResults();
+        const answeredCount =
+            results.length;
+        const hits =
+            results.filter(
+                (item) => item.correct
+            ).length;
+        const errors =
+            Math.max(
+                answeredCount - hits,
+                0
+            );
+        const remaining =
+            Math.max(
+                (session.length || 0) -
+                    answeredCount,
+                0
+            );
+        const elapsedAnsweredMs =
+            results.reduce(
+                (total, item) =>
+                    total +
+                    (Number(
+                        item?.timeMs
+                    ) || 0),
+                0
+            );
+        const activeElapsedMs =
+            answer
+                ? 0
+                : Math.max(
+                    Date.now() -
+                        QuestionsState.getStartTime(),
+                    0
+                );
+
+        return {
+            elapsedLabel:
+                QuestionsService.formatTime(
+                    elapsedAnsweredMs +
+                        activeElapsedMs
+                ),
+            totalCount:
+                session.length || 0,
+            answeredCount,
+            hits,
+            errors,
+            remaining,
+            subjectLabel:
+                question.subjectLabel ||
+                meta.materiaLabel ||
+                "Materia",
+            topicLabel:
+                question.topicLabel ||
+                "Assunto",
+            trainingModeLabel:
+                meta.sourceMode ===
+                    "smart"
+                    ? (
+                        meta.trainingModeLabel ||
+                        QuestionsService.getTrainingModeLabel()
+                    )
+                    : "Por quantidade",
+            trainingValueLabel:
+                meta.sourceMode ===
+                    "smart"
+                    ? (
+                        meta.trainingValueLabel ||
+                        QuestionsService.getTrainingValueLabel()
+                    )
+                    : String(
+                        Math.max(
+                            1,
+                            Number(
+                                meta.amount ||
+                                    session.length
+                            ) || 1
+                        )
+                    ).padStart(2, "0"),
+            serieLabel:
+                meta.serieLabel || "-",
+            modeLabel:
+                meta.modeLabel ||
+                "Treino"
+        };
+    },
+
+    renderSessionProgressBlocks(
+        model = {}
+    ) {
+        return `
+            <div class="questions-session-progress-grid">
+                <article class="questions-session-mini-card">
+                    <span>Feitas</span>
+                    <strong>${model.answeredCount}</strong>
+                    <small>${model.remaining} faltam</small>
+                </article>
+                <article class="questions-session-mini-card">
+                    <span>Resultado</span>
+                    <strong>${model.hits}</strong>
+                    <small>${model.errors} erro(s)</small>
+                </article>
+                <article class="questions-session-mini-card">
+                    <span>Materia</span>
+                    <strong>${model.subjectLabel}</strong>
+                </article>
+                <article class="questions-session-mini-card">
+                    <span>Assunto</span>
+                    <strong>${model.topicLabel}</strong>
+                </article>
+            </div>
+        `;
+    },
+
+    renderSessionInformation(
+        meta = {},
+        model = {}
+    ) {
+        return `
+            <section class="questions-session-info-panel">
+                <div class="questions-session-info-head">
+                    <div class="questions-panel-label">Informacoes da questao</div>
+                    <button id="questionsInfoBackBtn" class="questions-secondary-btn" type="button">Voltar</button>
+                </div>
+                <div class="questions-session-info-grid">
+                    <div>
+                        <span>Total</span>
+                        <strong>${model.totalCount}</strong>
+                    </div>
+                    <div>
+                        <span>Respondidas</span>
+                        <strong>${model.answeredCount}</strong>
+                    </div>
+                    <div>
+                        <span>Acertos</span>
+                        <strong>${model.hits}</strong>
+                    </div>
+                    <div>
+                        <span>Erros</span>
+                        <strong>${model.errors}</strong>
+                    </div>
+                    <div>
+                        <span>Serie</span>
+                        <strong>${model.serieLabel}</strong>
+                    </div>
+                    <div>
+                        <span>Categoria</span>
+                        <strong>${model.subjectLabel}</strong>
+                    </div>
+                    <div>
+                        <span>Assunto</span>
+                        <strong>${model.topicLabel}</strong>
+                    </div>
+                </div>
+            </section>
+        `;
+    },
+
     renderSession() {
         const session =
             QuestionsState.getSession();
@@ -1973,6 +3677,13 @@ window.QuestionsUI = {
                     (current / session.length) * 100
                 )
                 : 0;
+        const progressModel =
+            this.buildSessionProgressModel(
+                question,
+                answer,
+                session,
+                meta
+            );
 
         if (!question) {
             return `
@@ -1985,7 +3696,15 @@ window.QuestionsUI = {
 
         return `
             <section class="questions-card questions-session-card questions-session-card--minimal">
+                ${this.page.getRuntimeNotice() ? `
+                    <div class="questions-inline-notice questions-inline-notice-session">
+                        ${this.page.getRuntimeNotice()}
+                    </div>
+                ` : ""}
                 <article class="questions-question-card questions-question-card--minimal">
+                    <div class="questions-session-progress-bar" aria-hidden="true">
+                        <span style="width: ${Math.max(Math.min(progress, 100), 0)}%"></span>
+                    </div>
                     <h3>${question.prompt}</h3>
                     <div class="questions-answer-area">
                         ${this.renderAnswerBlock(question, answer)}
@@ -1995,33 +3714,10 @@ window.QuestionsUI = {
                         answer
                     )}
                 </article>
-
-                <details class="questions-session-drawer">
-                    <summary class="questions-session-drawer-toggle">Acompanhar progresso</summary>
-                    <div class="questions-session-drawer-body">
-                        <div class="questions-session-drawer-grid">
-                            <div>
-                                <strong>${current + 1}/${session.length}</strong>
-                                <span>Questao atual</span>
-                            </div>
-                            <div>
-                                <strong>${Math.round(progress)}%</strong>
-                                <span>Concluido</span>
-                            </div>
-                            <div>
-                                <strong>${meta.materiaLabel || "Materia"}</strong>
-                                <span>Materia</span>
-                            </div>
-                            <div>
-                                <strong>${meta.serieLabel || "-"}</strong>
-                                <span>Serie</span>
-                            </div>
-                        </div>
-                        <div class="questions-session-drawer-actions">
-                            <button id="questionsBackBtn" class="questions-secondary-btn" type="button">Pausar treino</button>
-                        </div>
-                    </div>
-                </details>
+                ${this.renderSessionInformation(
+                    meta,
+                    progressModel
+                )}
             </section>
         `;
     },
@@ -2036,10 +3732,60 @@ window.QuestionsUI = {
 
         return `
             <section class="questions-comment-panel${answer ? " is-ready" : ""}">
-                <div class="questions-panel-label">Comentario</div>
+                <div class="questions-panel-label">Comentario rapido</div>
                 <p>${question.explanation || "Comentario ainda nao preenchido para esta questao."}</p>
                 ${!answer.correct ? `
                     <div class="questions-comment-answer">Resposta esperada: ${answer.correctAnswerLabel || "Nao preenchida"}</div>
+                ` : ""}
+                ${this.renderQuestionContestPanel(
+                    question,
+                    answer
+                )}
+            </section>
+        `;
+    },
+
+    renderQuestionContestPanel(
+        question,
+        answer
+    ) {
+        if (!answer) {
+            return "";
+        }
+
+        const defaultText =
+            this.page.getQuestionContestDefaultText();
+        const latestReport =
+            this.page.getLatestQuestionContest(
+                question.id
+            );
+        const isOpen =
+            this.page.isContestComposerOpen?.(
+                question.id
+            );
+
+        return `
+            <section class="questions-contest-panel">
+                <div class="questions-contest-inline">
+                    <div class="questions-contest-copy">
+                        <span>Se notar algo ruim, ambiguo ou incorreto, envie uma observacao.</span>
+                    </div>
+                    <button id="questionsContestToggleBtn" class="questions-contest-toggle${isOpen ? " is-open" : ""}" type="button" data-question-contest-toggle="${this.escapeHtml(question.id || "")}">
+                        ${isOpen ? "Fechar contestacao" : "Contestar questao"}
+                    </button>
+                </div>
+                ${isOpen ? `
+                    <form id="questionsContestForm" class="questions-contest-form">
+                        <textarea id="questionsContestInput" class="questions-contest-field" rows="3" placeholder="${this.escapeHtml(defaultText)}"></textarea>
+                        <div class="questions-contest-actions">
+                            <button id="questionsContestSubmitBtn" class="questions-secondary-btn" type="submit">Enviar contestacao</button>
+                        </div>
+                    </form>
+                ` : ""}
+                ${latestReport ? `
+                    <div class="questions-contest-status">
+                        Ultimo envio registrado em ${this.formatDate(latestReport.createdAt)}.
+                    </div>
                 ` : ""}
             </section>
         `;
@@ -2081,20 +3827,24 @@ window.QuestionsUI = {
     renderChoiceBlock(question, answer) {
         const isLocked =
             Boolean(answer);
+        const correctIndex =
+            QuestionsService.getCorrectChoiceIndex(
+                question
+            );
 
         return `
             <div class="questions-options">
                 ${(question.options || []).map((option, index) => {
                     const isCorrect =
                         answer &&
-                        index === question.correct;
+                        index === correctIndex;
                     const isWrong =
                         answer &&
                         index === answer.selectedIndex &&
                         !answer.correct;
 
                     return `
-                        <button class="questions-option${isCorrect ? " is-correct" : ""}${isWrong ? " is-wrong" : ""}" type="button" data-answer-select="${index}" ${isLocked ? "disabled" : ""}>
+                        <button class="questions-option${isCorrect ? " is-correct" : ""}${isWrong ? " is-wrong" : ""}" type="button" data-answer-select="${index}" aria-pressed="false" ${isLocked ? "disabled" : ""}>
                             <span class="questions-option-index">${String.fromCharCode(65 + index)}</span>
                             <span>${option}</span>
                         </button>
@@ -2147,8 +3897,8 @@ window.QuestionsUI = {
     renderInputBlock(question, answer) {
         return `
             <form id="questionsInputForm" class="questions-input-form">
-                <input id="questionsInputField" class="questions-input-field" type="text" placeholder="Digite sua resposta" ${answer ? "disabled" : ""}>
-                <button class="questions-confirm-btn" type="submit" ${answer ? "disabled" : ""}>
+                <input id="questionsInputField" class="questions-input-field" type="text" placeholder="Digite sua resposta" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" ${answer ? "disabled" : ""}>
+                <button id="questionsInputConfirmBtn" class="questions-confirm-btn" type="submit" ${answer ? "disabled" : ""}>
                     <span class="questions-confirm-icon">✓</span>
                     Confirmar
                 </button>
@@ -2158,13 +3908,39 @@ window.QuestionsUI = {
     },
 
     renderFeedback(answer) {
+        const isLockedOutcome =
+            Boolean(
+                answer?.outcomeLocked
+            );
+        const scoredCorrect =
+            isLockedOutcome
+                ? Boolean(
+                    answer?.scoredCorrect
+                )
+                : Boolean(
+                    answer?.correct
+                );
+        const lockedNote =
+            scoredCorrect
+                ? "O acerto ja ficou registrado na primeira confirmacao. Esta nova resposta conta so como tentativa."
+                : "O erro ja ficou registrado na primeira confirmacao. Esta nova resposta nao altera o computo.";
+
         return `
             <div class="questions-feedback questions-feedback--minimal ${answer.correct ? "is-correct" : "is-wrong"}">
+                <div class="questions-feedback-summary">
+                    <strong>${answer.correct ? "Resposta confirmada." : "Vale revisar antes de seguir."}</strong>
+                </div>
                 <div class="questions-feedback-foot">
+                    <button id="questionsRetryBtn" class="questions-secondary-btn" type="button">
+                        Responder de novo
+                    </button>
                     <button id="questionsContinueBtn" class="questions-confirm-btn" type="button">
                         <span class="questions-confirm-icon">→</span>
                         Proxima
                     </button>
+                </div>
+                <div class="questions-feedback-note">
+                    ${isLockedOutcome ? lockedNote : "Responder de novo mantem o cronometro correndo e conta como nova tentativa."}
                 </div>
             </div>
         `;
@@ -2384,12 +4160,157 @@ window.QuestionsUI = {
                 );
             });
 
+        document
+            .querySelectorAll(
+                "[data-launcher-back]"
+            )
+            .forEach((button) => {
+                button.addEventListener(
+                    "click",
+                    () => {
+                        this.page.goBackLauncher();
+                    }
+                );
+            });
+
         document.getElementById(
             "questionsModuleBackBtn"
         )?.addEventListener(
             "click",
             () => {
                 this.page.exitModule();
+            }
+        );
+
+        document
+            .querySelectorAll(
+                "[data-hub-serie]"
+            )
+            .forEach((button) => {
+                button.addEventListener(
+                    "click",
+                    () => {
+                        const serieKey =
+                            Number(
+                                button.dataset
+                                    .hubSerie
+                            ) || 0;
+                        const current =
+                            QuestionsContext.get();
+                        const subjects =
+                            QuestionsService.getSubjectOptions(
+                                this.page,
+                                serieKey
+                            );
+                        const nextSubject =
+                            subjects.find(
+                                (item) =>
+                                    item.key ===
+                                    current.materia
+                            )?.key ||
+                            subjects[0]?.key ||
+                            "";
+
+                        this.page.updateContext(
+                            {
+                                serie: serieKey
+                            }
+                        );
+
+                        if (nextSubject) {
+                            this.page.updateContext(
+                                {
+                                    materia:
+                                        nextSubject
+                                }
+                            );
+                        }
+                    }
+                );
+            });
+
+        document
+            .querySelectorAll(
+                "[data-hub-subject]"
+            )
+            .forEach((button) => {
+                button.addEventListener(
+                    "click",
+                    () => {
+                        const subjectKey =
+                            String(
+                                button.dataset
+                                    .hubSubject ||
+                                    ""
+                            ).trim();
+
+                        if (!subjectKey) {
+                            return;
+                        }
+
+                        this.page.updateContext(
+                            {
+                                materia:
+                                    subjectKey
+                            }
+                        );
+                    }
+                );
+            });
+
+        document.getElementById(
+            "questionsHubSmartBtn"
+        )?.addEventListener(
+            "click",
+            () => {
+                const current =
+                    QuestionsContext.get();
+
+                this.page.setSmartConfig({
+                    smartSelectedSeries: [
+                        current.serie
+                    ],
+                    smartSelectedSubjects:
+                        current.materia
+                            ? [
+                                current.materia
+                            ]
+                            : []
+                });
+                this.page.setSmartGoal(
+                    "continue"
+                );
+                this.page.openLauncher(
+                    "smart_start"
+                );
+            }
+        );
+
+        document.getElementById(
+            "questionsHubReinforceBtn"
+        )?.addEventListener(
+            "click",
+            () => {
+                const current =
+                    QuestionsContext.get();
+
+                this.page.setSmartConfig({
+                    smartSelectedSeries: [
+                        current.serie
+                    ],
+                    smartSelectedSubjects:
+                        current.materia
+                            ? [
+                                current.materia
+                            ]
+                            : []
+                });
+                this.page.setSmartGoal(
+                    "reforcar"
+                );
+                this.page.openLauncher(
+                    "smart_start"
+                );
             }
         );
 
@@ -2469,6 +4390,293 @@ window.QuestionsUI = {
                 this.page.startSmartSession();
             }
         );
+
+        document.getElementById(
+            "questionsSmartSavePresetStartBtn"
+        )?.addEventListener(
+            "click",
+            () => {
+                this.page.saveSmartPresetAndStart();
+            }
+        );
+
+        document
+            .querySelectorAll(
+                "[data-smart-question-count]"
+            )
+            .forEach((button) => {
+                button.addEventListener(
+                    "click",
+                    () => {
+                        document
+                            .querySelectorAll(
+                                "[data-smart-question-count], [data-smart-question-infinite]"
+                            )
+                            .forEach(
+                                (item) => {
+                                    item.classList.remove(
+                                        "is-active"
+                                    );
+                                    item.setAttribute(
+                                        "aria-pressed",
+                                        "false"
+                                    );
+                                }
+                            );
+                        button.classList.add(
+                            "is-active"
+                        );
+                        button.setAttribute(
+                            "aria-pressed",
+                            "true"
+                        );
+                        this.page.setSmartQuestionCount(
+                            Number(
+                                button.dataset
+                                    .smartQuestionCount
+                            )
+                        );
+                    }
+                );
+            });
+
+        const smartQuestionInput =
+            document.getElementById(
+                "questionsSmartQuestionInput"
+            );
+        const smartQuestionCustomField =
+            smartQuestionInput?.closest(
+                "[data-smart-question-custom]"
+            ) || null;
+        const smartQuestionPresetButtons =
+            [
+                ...document.querySelectorAll(
+                    "[data-smart-question-count], [data-smart-question-infinite]"
+                )
+            ];
+
+        const setSmartQuestionEditingState =
+            (isEditing) => {
+                if (
+                    !smartQuestionCustomField
+                ) {
+                    return;
+                }
+
+                smartQuestionCustomField.classList.toggle(
+                    "is-editing",
+                    Boolean(isEditing)
+                );
+
+                if (!isEditing) {
+                    return;
+                }
+
+                smartQuestionPresetButtons.forEach(
+                    (button) => {
+                        button.classList.remove(
+                            "is-active"
+                        );
+                    }
+                );
+            };
+
+        smartQuestionCustomField?.addEventListener(
+            "click",
+            () => {
+                smartQuestionInput?.focus();
+                smartQuestionInput?.select();
+                setSmartQuestionEditingState(
+                    true
+                );
+            }
+        );
+
+        smartQuestionInput?.addEventListener(
+            "focus",
+            () => {
+                setSmartQuestionEditingState(
+                    true
+                );
+                smartQuestionInput.select();
+            }
+        );
+
+        smartQuestionInput?.addEventListener(
+            "click",
+            () => {
+                setSmartQuestionEditingState(
+                    true
+                );
+            }
+        );
+
+        smartQuestionInput?.addEventListener(
+            "input",
+            (event) => {
+                const value =
+                    String(
+                        event.target
+                            ?.value || ""
+                    )
+                        .replace(/\D+/g, "")
+                        .slice(0, 4);
+
+                event.target.value = value;
+                setSmartQuestionEditingState(
+                    true
+                );
+            }
+        );
+
+        smartQuestionInput?.addEventListener(
+            "change",
+            (event) => {
+                const value =
+                    String(
+                        event.target
+                            ?.value || ""
+                    )
+                        .replace(/\D+/g, "")
+                        .slice(0, 4);
+
+                event.target.value = value;
+
+                if (!value) {
+                    return;
+                }
+
+                this.page.setSmartQuestionCount(
+                    Number(value)
+                );
+            }
+        );
+
+        smartQuestionInput?.addEventListener(
+            "blur",
+            (event) => {
+                const value =
+                    String(
+                        event.target
+                            ?.value || ""
+                    )
+                        .replace(/\D+/g, "")
+                        .slice(0, 4);
+
+                event.target.value = value;
+
+                if (value) {
+                    this.page.setSmartQuestionCount(
+                        Number(value)
+                    );
+                }
+            }
+        );
+
+        smartQuestionInput?.addEventListener(
+            "keydown",
+            (event) => {
+                if (event.key !== "Enter") {
+                    return;
+                }
+
+                event.preventDefault();
+                const value =
+                    String(
+                        event.target
+                            ?.value || ""
+                    )
+                        .replace(/\D+/g, "")
+                        .slice(0, 4);
+
+                event.target.value = value;
+
+                if (!value) {
+                    return;
+                }
+
+                this.page.setSmartQuestionCount(
+                    Number(value)
+                );
+            }
+        );
+
+        smartQuestionInput?.addEventListener(
+            "blur",
+            () => {
+                window.setTimeout(() => {
+                    if (
+                        document.activeElement ===
+                        smartQuestionInput
+                    ) {
+                        return;
+                    }
+
+                    const currentValue =
+                        String(
+                            smartQuestionInput.value ||
+                                ""
+                        ).trim();
+                    const currentContext =
+                        QuestionsContext.get();
+                    const isCustomSelected =
+                        currentContext.smartQuestionCount !==
+                            null &&
+                        !(
+                            this.page.data.smartQuestionAmountOptions ||
+                            []
+                        ).includes(
+                            Number(
+                                currentContext.smartQuestionCount
+                            )
+                        );
+
+                    setSmartQuestionEditingState(
+                        Boolean(
+                            currentValue ||
+                            isCustomSelected
+                        )
+                    );
+                }, 0);
+            }
+        );
+
+        document
+            .querySelectorAll(
+                "[data-smart-question-infinite]"
+            )
+            .forEach((button) => {
+                button.addEventListener(
+                    "click",
+                    () => {
+                        document
+                            .querySelectorAll(
+                                "[data-smart-question-count], [data-smart-question-infinite]"
+                            )
+                            .forEach(
+                                (item) => {
+                                    item.classList.remove(
+                                        "is-active"
+                                    );
+                                    item.setAttribute(
+                                        "aria-pressed",
+                                        "false"
+                                    );
+                                }
+                            );
+                        button.classList.add(
+                            "is-active"
+                        );
+                        button.setAttribute(
+                            "aria-pressed",
+                            "true"
+                        );
+                        this.page.setSmartQuestionCount(
+                            null
+                        );
+                    }
+                );
+            });
 
         document.getElementById(
             "questionsSmartSaveProfileBtn"
@@ -2637,7 +4845,11 @@ window.QuestionsUI = {
                     () => {
                         this.page.deleteSmartProfile(
                             button.dataset
-                                .smartProfileDelete
+                                .smartProfileDelete,
+                            {
+                                anchorRect:
+                                    button.getBoundingClientRect()
+                            }
                         );
                     }
                 );
@@ -2685,7 +4897,11 @@ window.QuestionsUI = {
                     () => {
                         this.page.deleteRun(
                             button.dataset
-                                .runDelete
+                                .runDelete,
+                            {
+                                anchorRect:
+                                    button.getBoundingClientRect()
+                            }
                         );
                     }
                 );
@@ -2939,7 +5155,11 @@ window.QuestionsUI = {
                     () => {
                         this.page.deleteSavedBlock(
                             button.dataset
-                                .savedBlockDelete
+                                .savedBlockDelete,
+                            {
+                                anchorRect:
+                                    button.getBoundingClientRect()
+                            }
                         );
                     }
                 );
@@ -2979,188 +5199,300 @@ window.QuestionsUI = {
     },
 
     bindSession() {
-        document
-            .querySelectorAll("[data-answer-select]")
-            .forEach((button) => {
-                button.addEventListener(
+        const surfaces = [
+            document.getElementById(
+                "questionsSession"
+            ),
+            document.getElementById(
+                "questionsFloatingBody"
+            )
+        ].filter(Boolean);
+        const inputField =
+            document.getElementById(
+                "questionsInputField"
+            );
+
+        if (
+            inputField &&
+            !inputField.disabled
+        ) {
+            requestAnimationFrame(() => {
+                inputField.focus();
+                inputField.select();
+            });
+        }
+
+        surfaces.forEach((surface) => {
+            const contestField =
+                surface.querySelector(
+                    "#questionsContestInput"
+                );
+
+            if (contestField) {
+                requestAnimationFrame(() => {
+                    contestField.focus();
+                });
+            }
+
+            surface
+                .querySelectorAll(
+                    "[data-answer-select]"
+                )
+                .forEach((button) => {
+                    button.addEventListener(
+                        "click",
+                        (event) => {
+                            event.preventDefault();
+                            event.stopPropagation();
+                            this.selectChoice(
+                                button,
+                                surface
+                            );
+                        }
+                    );
+                });
+
+            surface
+                .querySelector(
+                    "#questionsChoiceConfirmBtn"
+                )
+                ?.addEventListener(
                     "click",
-                    () => {
-                        document
-                            .querySelectorAll(
-                                "[data-answer-select]"
-                            )
-                            .forEach((item) => {
-                                item.classList.remove(
-                                    "is-selected"
-                                );
-                            });
-
-                        button.classList.add(
-                            "is-selected"
+                    (event) => {
+                        event.preventDefault();
+                        event.stopPropagation();
+                        this.submitSelectedChoice(
+                            surface
                         );
+                    }
+                );
 
-                        const confirmBtn =
+            surface
+                .querySelector(
+                    "#questionsInputConfirmBtn"
+                )
+                ?.addEventListener(
+                    "click",
+                    (event) => {
+                        event.preventDefault();
+                        event.stopPropagation();
+                        this.page.submitAnswer({
+                            index: null,
+                            value:
+                                this.getActiveInputAnswerValue(
+                                    surface
+                                )
+                        });
+                    }
+                );
+
+            surface
+                .querySelector(
+                    "#questionsInputForm"
+                )
+                ?.addEventListener(
+                    "submit",
+                    (event) => {
+                        event.preventDefault();
+                        event.stopPropagation();
+                        this.page.submitAnswer({
+                            index: null,
+                            value:
+                                this.getActiveInputAnswerValue(
+                                    surface
+                                )
+                        });
+                    }
+                );
+
+            surface
+                .querySelectorAll(
+                    "[data-order-move]"
+                )
+                .forEach((button) => {
+                    button.addEventListener(
+                        "click",
+                        (event) => {
+                            event.preventDefault();
+                            event.stopPropagation();
+                            this.moveOrderItem(
+                                button
+                            );
+                        }
+                    );
+                });
+
+            surface
+                .querySelector(
+                    "#questionsOrderingSubmitBtn"
+                )
+                ?.addEventListener(
+                    "click",
+                    (event) => {
+                        event.preventDefault();
+                        event.stopPropagation();
+                        this.page.submitAnswer({
+                            index: null,
+                            value:
+                                this.getActiveOrderingAnswerValue(
+                                    surface
+                                )
+                        });
+                    }
+                );
+
+            surface
+                .querySelector(
+                    "#questionsContinueBtn"
+                )
+                ?.addEventListener(
+                    "click",
+                    (event) => {
+                        event.preventDefault();
+                        event.stopPropagation();
+                        this.page.continueSession();
+                    }
+                );
+
+            surface
+                .querySelector(
+                    "#questionsRetryBtn"
+                )
+                ?.addEventListener(
+                    "click",
+                    (event) => {
+                        event.preventDefault();
+                        event.stopPropagation();
+                        this.page.retryCurrentQuestion();
+                    }
+                );
+
+            surface
+                .querySelector(
+                    "#questionsBackBtn, #questionsInfoBackBtn"
+                )
+                ?.addEventListener(
+                    "click",
+                    (event) => {
+                        event.preventDefault();
+                        event.stopPropagation();
+                        this.page.pauseSession();
+                    }
+                );
+
+            surface
+                .querySelector(
+                    "#questionsContestToggleBtn"
+                )
+                ?.addEventListener(
+                    "click",
+                    (event) => {
+                        event.preventDefault();
+                        event.stopPropagation();
+                        this.page.toggleContestComposer(
+                            event.currentTarget
+                                ?.dataset
+                                ?.questionContestToggle
+                        );
+                    }
+                );
+
+            surface
+                .querySelector(
+                    "#questionsRestartBtn"
+                )
+                ?.addEventListener(
+                    "click",
+                    (event) => {
+                        event.preventDefault();
+                        event.stopPropagation();
+                        this.page.restartSession();
+                    }
+                );
+
+            surface
+                .querySelector(
+                    "#questionsFocusWeakBtn"
+                )
+                ?.addEventListener(
+                    "click",
+                    (event) => {
+                        event.preventDefault();
+                        event.stopPropagation();
+                        this.page.startFollowUp(
+                            "weak_topic"
+                        );
+                    }
+                );
+
+            surface
+                .querySelector(
+                    "#questionsReviewErrorsBtn"
+                )
+                ?.addEventListener(
+                    "click",
+                    (event) => {
+                        event.preventDefault();
+                        event.stopPropagation();
+                        this.page.startFollowUp(
+                            "review_errors"
+                        );
+                    }
+                );
+
+            surface
+                .querySelector(
+                    "#questionsMixedReviewBtn"
+                )
+                ?.addEventListener(
+                    "click",
+                    (event) => {
+                        event.preventDefault();
+                        event.stopPropagation();
+                        this.page.startFollowUp(
+                            "mixed_review"
+                        );
+                    }
+                );
+
+            surface
+                .querySelector(
+                    "#questionsResultsBackBtn"
+                )
+                ?.addEventListener(
+                    "click",
+                    (event) => {
+                        event.preventDefault();
+                        event.stopPropagation();
+                        this.page.openLauncher();
+                    }
+                );
+
+            surface
+                .querySelector(
+                    "#questionsContestForm"
+                )
+                ?.addEventListener(
+                    "submit",
+                    (event) => {
+                        event.preventDefault();
+                        event.stopPropagation();
+                        const field =
+                            surface.querySelector(
+                                "#questionsContestInput"
+                            ) ||
                             document.getElementById(
-                                "questionsChoiceConfirmBtn"
+                                "questionsContestInput"
                             );
 
-                        if (confirmBtn) {
-                            confirmBtn.disabled =
-                                false;
-                            confirmBtn.dataset.selectedIndex =
-                                button.dataset.answerSelect || "";
-                        }
-                    }
-                );
-            });
-
-        document.getElementById(
-            "questionsChoiceConfirmBtn"
-        )?.addEventListener(
-            "click",
-            (event) => {
-                const selectedIndex =
-                    Number(
-                        event.currentTarget
-                            ?.dataset
-                            ?.selectedIndex
-                    );
-
-                if (
-                    !Number.isFinite(
-                        selectedIndex
-                    )
-                ) {
-                    return;
-                }
-
-                this.page.submitAnswer({
-                    index: selectedIndex
-                });
-            }
-        );
-
-        document.getElementById(
-            "questionsInputForm"
-        )?.addEventListener(
-            "submit",
-            (event) => {
-                event.preventDefault();
-                const field =
-                    document.getElementById(
-                        "questionsInputField"
-                    );
-
-                this.page.submitAnswer({
-                    index: null,
-                    value: String(
-                        field?.value || ""
-                    ).trim()
-                });
-            }
-        );
-
-        document
-            .querySelectorAll("[data-order-move]")
-            .forEach((button) => {
-                button.addEventListener(
-                    "click",
-                    () => {
-                        this.moveOrderItem(
-                            button
+                        this.page.submitQuestionContest(
+                            String(
+                                field?.value || ""
+                            )
                         );
                     }
                 );
-            });
-
-        document.getElementById(
-            "questionsOrderingSubmitBtn"
-        )?.addEventListener(
-            "click",
-            () => {
-                const order = [
-                    ...document.querySelectorAll(
-                        "#questionsOrderingList [data-order-value]"
-                    )
-                ].map((item) =>
-                    item.dataset.orderValue
-                );
-
-                this.page.submitAnswer({
-                    index: null,
-                    value: order
-                });
-            }
-        );
-
-        document.getElementById(
-            "questionsContinueBtn"
-        )?.addEventListener(
-            "click",
-            () => {
-                this.page.continueSession();
-            }
-        );
-
-        document.getElementById(
-            "questionsBackBtn"
-        )?.addEventListener(
-            "click",
-            () => {
-                this.page.pauseSession();
-            }
-        );
-
-        document.getElementById(
-            "questionsRestartBtn"
-        )?.addEventListener(
-            "click",
-            () => {
-                this.page.restartSession();
-            }
-        );
-
-        document.getElementById(
-            "questionsFocusWeakBtn"
-        )?.addEventListener(
-            "click",
-            () => {
-                this.page.startFollowUp(
-                    "weak_topic"
-                );
-            }
-        );
-
-        document.getElementById(
-            "questionsReviewErrorsBtn"
-        )?.addEventListener(
-            "click",
-            () => {
-                this.page.startFollowUp(
-                    "review_errors"
-                );
-            }
-        );
-
-        document.getElementById(
-            "questionsMixedReviewBtn"
-        )?.addEventListener(
-            "click",
-            () => {
-                this.page.startFollowUp(
-                    "mixed_review"
-                );
-            }
-        );
-
-        document.getElementById(
-            "questionsResultsBackBtn"
-        )?.addEventListener(
-            "click",
-            () => {
-                this.page.openLauncher();
-            }
-        );
+        });
     },
 
     getTypeLabel(type) {

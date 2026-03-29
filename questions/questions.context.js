@@ -1,5 +1,5 @@
 window.QuestionsContext = {
-    key: "questions_context_v3",
+    key: "questions_context_v4",
     saveTimer: null,
 
     defaults: {
@@ -13,6 +13,9 @@ window.QuestionsContext = {
         topicSearch: "",
         onlyReadyTopics: true,
         quantidadeQuestoes: 5,
+        smartSessionMetric: "quantidade",
+        smartQuestionCount: 5,
+        smartTimeMinutes: 15,
         estrategiaMistura: "equilibrada",
         smartGoal: "continue",
         smartSelectedSeries: [],
@@ -104,6 +107,15 @@ window.QuestionsContext = {
             String(
                 next.topicSearch || ""
             ).trim();
+        next.smartSessionMetric =
+            String(
+                next.smartSessionMetric ||
+                    "quantidade"
+            )
+                .trim()
+                .toLowerCase() === "tempo"
+                ? "tempo"
+                : "quantidade";
         next.onlyReadyTopics =
             next.onlyReadyTopics !== false;
         next.smartExcludedSeries =
@@ -176,7 +188,31 @@ window.QuestionsContext = {
         next.serie =
             Number(next.serie) || 1;
         next.quantidadeQuestoes =
-            Number(next.quantidadeQuestoes) || 5;
+            Math.max(
+                1,
+                Number(
+                    next.quantidadeQuestoes
+                ) || 5
+            );
+        next.smartQuestionCount =
+            next.smartQuestionCount === null
+                ? null
+                : Math.max(
+                    1,
+                    Number(
+                        next.smartQuestionCount ||
+                            next.quantidadeQuestoes
+                    ) || 5
+                );
+        next.smartTimeMinutes =
+            next.smartTimeMinutes === null
+                ? null
+                : Math.max(
+                    1,
+                    Number(
+                        next.smartTimeMinutes
+                    ) || 15
+                );
 
         return next;
     },

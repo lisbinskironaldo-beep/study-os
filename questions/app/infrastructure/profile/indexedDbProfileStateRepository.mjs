@@ -131,6 +131,8 @@ export async function createIndexedDbProfileStateRepository(
     const legacyProfileStateRepository =
         options.legacyProfileStateRepository ||
         null;
+    const mirrorLegacyWrites =
+        options.mirrorLegacyWrites === true;
     const database =
         await openQuestionsIndexedDb(
             schema
@@ -214,10 +216,12 @@ export async function createIndexedDbProfileStateRepository(
             state.persistChain
                 .catch(() => null)
                 .then(async () => {
-                    writeLegacyProfileState(
-                        legacyProfileStateRepository,
-                        normalized
-                    );
+                    if (mirrorLegacyWrites) {
+                        writeLegacyProfileState(
+                            legacyProfileStateRepository,
+                            normalized
+                        );
+                    }
 
                     await Promise.all([
                         replaceStoreContents(

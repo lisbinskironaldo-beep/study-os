@@ -1,24 +1,31 @@
 window.QuestionsStore = {
-    key: "questions_profile_v3",
-    runsKey: "questions_runs_v1",
+    key: "questions_profile_v4",
+    runsKey: "questions_runs_v2",
+    questionReportsKey:
+        "questions_reports_v2",
     saveTimer: null,
     runsSaveTimer: null,
+    questionReportsSaveTimer: null,
     smartProfilesSaveTimer: null,
     savedBlocksSaveTimer: null,
     runsRepository: null,
     profileStateRepository: null,
     smartProfilesRepository: null,
     savedBlocksRepository: null,
+    profileStateDirty: false,
 
     data: {
         topics: {},
         sessions: [],
+        questionReports: [],
         smartProfiles: [],
         savedBlocks: [],
         runs: []
     },
 
     load() {
+        this.profileStateDirty = false;
+
         if (this.profileStateRepository) {
             const loaded =
                 this.profileStateRepository.load();
@@ -26,6 +33,7 @@ window.QuestionsStore = {
             this.data = {
                 topics: {},
                 sessions: [],
+                questionReports: [],
                 smartProfiles: [],
                 savedBlocks: [],
                 runs: [],
@@ -34,6 +42,7 @@ window.QuestionsStore = {
             this.loadSmartProfiles();
             this.loadSavedBlocks();
             this.loadRuns();
+            this.loadQuestionReports();
             return;
         }
 
@@ -44,6 +53,7 @@ window.QuestionsStore = {
             this.data = {
                 topics: {},
                 sessions: [],
+                questionReports: [],
                 smartProfiles: [],
                 savedBlocks: [],
                 runs: []
@@ -51,6 +61,7 @@ window.QuestionsStore = {
             this.loadSmartProfiles();
             this.loadSavedBlocks();
             this.loadRuns();
+            this.loadQuestionReports();
             return;
         }
 
@@ -61,6 +72,7 @@ window.QuestionsStore = {
             this.data = {
                 topics: {},
                 sessions: [],
+                questionReports: [],
                 smartProfiles: [],
                 savedBlocks: [],
                 runs: [],
@@ -70,6 +82,7 @@ window.QuestionsStore = {
             this.data = {
                 topics: {},
                 sessions: [],
+                questionReports: [],
                 smartProfiles: [],
                 savedBlocks: [],
                 runs: []
@@ -93,6 +106,14 @@ window.QuestionsStore = {
 
         if (
             !Array.isArray(
+                this.data.questionReports
+            )
+        ) {
+            this.data.questionReports = [];
+        }
+
+        if (
+            !Array.isArray(
                 this.data.smartProfiles
             )
         ) {
@@ -110,9 +131,12 @@ window.QuestionsStore = {
         this.loadSmartProfiles();
         this.loadSavedBlocks();
         this.loadRuns();
+        this.loadQuestionReports();
     },
 
     save(immediate = false) {
+        this.profileStateDirty = false;
+
         if (this.profileStateRepository) {
             if (this.saveTimer) {
                 clearTimeout(this.saveTimer);
@@ -196,6 +220,19 @@ window.QuestionsStore = {
         }, 80);
     },
 
+    markProfileStateDirty() {
+        this.profileStateDirty = true;
+    },
+
+    flushProfileState(immediate = false) {
+        if (!this.profileStateDirty) {
+            return false;
+        }
+
+        this.save(immediate);
+        return true;
+    },
+
     loadRuns() {
         if (this.runsRepository) {
             this.data.runs =
@@ -219,7 +256,30 @@ window.QuestionsStore = {
             this.data.runs = Array.isArray(
                 parsed
             )
-                ? parsed
+                ? parsed.map((run) => {
+                    const questionIds =
+                        this.normalizeQuestionIds(
+                            run?.questionIds
+                        );
+
+                    return {
+                        ...(run || {}),
+                        questionIds,
+                        sessionSnapshot:
+                            this.compactSessionSnapshot(
+                                questionIds,
+                                run?.sessionSnapshot
+                            ),
+                        answers:
+                            this.compactAnswerList(
+                                run?.answers
+                            ),
+                        lastAnswer:
+                            this.compactAnswerRecord(
+                                run?.lastAnswer
+                            )
+                    };
+                })
                 : [];
         } catch (_error) {
             this.data.runs = [];
@@ -278,6 +338,92 @@ window.QuestionsStore = {
             this.runsSaveTimer = null;
             write();
         }, 80);
+    },
+
+    loadQuestionReports() {
+        if (
+            typeof localStorage === "undefined"
+        ) {
+            if (
+                !Array.isArray(
+                    this.data.questionReports
+                )
+            ) {
+                this.data.questionReports = [];
+            }
+            return;
+        }
+
+        try {
+            const saved =
+                localStorage.getItem(
+                    this.questionReportsKey
+                );
+
+            if (saved) {
+                const parsed =
+                    JSON.parse(saved);
+                this.data.questionReports =
+                    Array.isArray(parsed)
+                        ? parsed
+                        : [];
+                return;
+            }
+        } catch (_error) {
+            this.data.questionReports = [];
+            return;
+        }
+
+        this.data.questionReports =
+            Array.isArray(
+                this.data.questionReports
+            )
+                ? this.data.questionReports
+                : [];
+    },
+
+    saveQuestionReports(
+        immediate = false
+    ) {
+        if (
+            typeof localStorage === "undefined"
+        ) {
+            return;
+        }
+
+        if (this.questionReportsSaveTimer) {
+            clearTimeout(
+                this.questionReportsSaveTimer
+            );
+            this.questionReportsSaveTimer =
+                null;
+        }
+
+        const write = () => {
+            try {
+                localStorage.setItem(
+                    this.questionReportsKey,
+                    JSON.stringify(
+                        this.data
+                            .questionReports || []
+                    )
+                );
+            } catch (_error) {
+                return;
+            }
+        };
+
+        if (immediate) {
+            write();
+            return;
+        }
+
+        this.questionReportsSaveTimer =
+            setTimeout(() => {
+                this.questionReportsSaveTimer =
+                    null;
+                write();
+            }, 80);
     },
 
     loadSmartProfiles() {
@@ -461,6 +607,101 @@ window.QuestionsStore = {
             : [];
     },
 
+    compactAnswerRecord(answer = null) {
+        if (
+            !answer ||
+            typeof answer !== "object"
+        ) {
+            return null;
+        }
+
+        const question =
+            answer.question &&
+            typeof answer.question === "object"
+                ? answer.question
+                : {};
+
+        return {
+            correct: Boolean(answer.correct),
+            selectedIndex:
+                answer.selectedIndex ??
+                null,
+            selectedValue:
+                Object.prototype.hasOwnProperty.call(
+                    answer,
+                    "selectedValue"
+                )
+                    ? answer.selectedValue
+                    : null,
+            selectedAnswerLabel:
+                String(
+                    answer.selectedAnswerLabel ||
+                        ""
+                ).trim(),
+            correctAnswerLabel:
+                String(
+                    answer.correctAnswerLabel ||
+                        ""
+                ).trim(),
+            timeMs:
+                Number(answer.timeMs) || 0,
+            questionId:
+                String(
+                    answer.questionId ||
+                        question.id ||
+                        ""
+                ).trim(),
+            baseKey:
+                String(
+                    answer.baseKey ||
+                        question.baseKey ||
+                        ""
+                ).trim(),
+            baseLabel:
+                String(
+                    answer.baseLabel ||
+                        question.baseLabel ||
+                        ""
+                ).trim(),
+            subjectKey:
+                String(
+                    answer.subjectKey ||
+                        question.subjectKey ||
+                        ""
+                ).trim(),
+            subjectLabel:
+                String(
+                    answer.subjectLabel ||
+                        question.subjectLabel ||
+                        ""
+                ).trim(),
+            topicKey:
+                String(
+                    answer.topicKey ||
+                        question.topicKey ||
+                        ""
+                ).trim(),
+            topicLabel:
+                String(
+                    answer.topicLabel ||
+                        question.topicLabel ||
+                        ""
+                ).trim()
+        };
+    },
+
+    compactAnswerList(answers = []) {
+        return Array.isArray(answers)
+            ? answers
+                .map((answer) =>
+                    this.compactAnswerRecord(
+                        answer
+                    )
+                )
+                .filter(Boolean)
+            : [];
+    },
+
     getTopicStorageKey(meta) {
         return [
             meta.baseKey,
@@ -508,7 +749,7 @@ window.QuestionsStore = {
 
         current.lastSeen = Date.now();
         this.data.topics[key] = current;
-        this.save();
+        this.markProfileStateDirty();
     },
 
     registerSession(session = {}) {
@@ -527,7 +768,101 @@ window.QuestionsStore = {
             ...(this.data.sessions || [])
         ].slice(0, 40);
 
-        this.save();
+        this.markProfileStateDirty();
+    },
+
+    getQuestionReports(
+        questionId = ""
+    ) {
+        const cleanQuestionId =
+            String(questionId || "").trim();
+
+        return [
+            ...(this.data.questionReports ||
+                [])
+        ]
+            .filter((report) =>
+                cleanQuestionId
+                    ? String(
+                        report.questionId
+                    ) === cleanQuestionId
+                    : true
+            )
+            .sort(
+                (left, right) =>
+                    (right.createdAt || 0) -
+                    (left.createdAt || 0)
+            );
+    },
+
+    getLatestQuestionReport(
+        questionId = ""
+    ) {
+        return (
+            this.getQuestionReports(
+                questionId
+            )[0] || null
+        );
+    },
+
+    saveQuestionReport(
+        report = {}
+    ) {
+        const now = Date.now();
+        const next = {
+            id:
+                report.id ||
+                `question_report_${now}`,
+            questionId: String(
+                report.questionId || ""
+            ).trim(),
+            prompt: String(
+                report.prompt || ""
+            ).trim(),
+            explanation: String(
+                report.explanation || ""
+            ).trim(),
+            message: String(
+                report.message || ""
+            ).trim(),
+            status:
+                String(
+                    report.status || "sent"
+                ).trim() || "sent",
+            createdAt:
+                Number(
+                    report.createdAt
+                ) || now,
+            updatedAt: now,
+            meta:
+                report.meta &&
+                typeof report.meta ===
+                    "object"
+                    ? {
+                        ...report.meta
+                    }
+                    : {}
+        };
+
+        if (!next.questionId) {
+            return null;
+        }
+
+        this.data.questionReports = [
+            next,
+            ...(
+                this.data
+                    .questionReports || []
+            ).filter(
+                (entry) =>
+                    String(entry.id) !==
+                    String(next.id)
+            )
+        ].slice(0, 200);
+
+        this.saveQuestionReports();
+
+        return next;
     },
 
     getSmartProfiles() {
@@ -570,6 +905,42 @@ window.QuestionsStore = {
                     profile.smartGoal ||
                         "continue"
                 ).trim() || "continue",
+            selectedSeries:
+                Array.isArray(
+                    profile.selectedSeries
+                )
+                    ? [
+                        ...new Set(
+                            profile.selectedSeries
+                                .map((item) =>
+                                    Number(item)
+                                )
+                                .filter((item) =>
+                                    Number.isFinite(
+                                        item
+                                    )
+                                )
+                        )
+                    ]
+                    : [],
+            selectedSubjects:
+                Array.isArray(
+                    profile.selectedSubjects
+                )
+                    ? [
+                        ...new Set(
+                            profile.selectedSubjects
+                                .map((item) =>
+                                    String(
+                                        item || ""
+                                    )
+                                        .trim()
+                                        .toLowerCase()
+                                )
+                                .filter(Boolean)
+                        )
+                    ]
+                    : [],
             excludedSeries:
                 Array.isArray(
                     profile.excludedSeries
@@ -628,6 +999,33 @@ window.QuestionsStore = {
                 Number(
                     profile.preferredAmount
                 ) || null,
+            sessionMetric:
+                String(
+                    profile.sessionMetric ||
+                        "quantidade"
+                )
+                    .trim()
+                    .toLowerCase() === "tempo"
+                    ? "tempo"
+                    : "quantidade",
+            questionCount:
+                profile.questionCount === null
+                    ? null
+                    : Math.max(
+                        1,
+                        Number(
+                            profile.questionCount
+                        ) || 5
+                    ),
+            timeMinutes:
+                profile.timeMinutes === null
+                    ? null
+                    : Math.max(
+                        1,
+                        Number(
+                            profile.timeMinutes
+                        ) || 15
+                    ),
             notes:
                 String(
                     profile.notes || ""
@@ -900,6 +1298,14 @@ window.QuestionsStore = {
             this.normalizeQuestionIds(
                 run.questionIds
             );
+        const answers =
+            this.compactAnswerList(
+                run.answers
+            );
+        const lastAnswer =
+            this.compactAnswerRecord(
+                run.lastAnswer
+            );
         const next = {
             id:
                 run.id ||
@@ -945,12 +1351,8 @@ window.QuestionsStore = {
                 Number(
                     run.currentIndex
                 ) || 0,
-            answers:
-                Array.isArray(run.answers)
-                    ? [...run.answers]
-                    : [],
-            lastAnswer:
-                run.lastAnswer || null,
+            answers,
+            lastAnswer,
             summary:
                 run.summary &&
                 typeof run.summary ===
@@ -1047,7 +1449,35 @@ window.QuestionsStore = {
     },
 
     getWeakTopics(filters = {}) {
+        const minAttempts = Math.max(
+            Number(filters.minAttempts) || 0,
+            0
+        );
+        const minErrors = Math.max(
+            Number(filters.minErrors) || 0,
+            0
+        );
+
         return this.getTopicEntries(filters)
+            .filter((entry) => {
+                if (
+                    minAttempts > 0 &&
+                    (entry.attempts || 0) <
+                        minAttempts
+                ) {
+                    return false;
+                }
+
+                if (
+                    minErrors > 0 &&
+                    (entry.errors || 0) <
+                        minErrors
+                ) {
+                    return false;
+                }
+
+                return true;
+            })
             .map((entry) => ({
                 ...entry,
                 accuracy:

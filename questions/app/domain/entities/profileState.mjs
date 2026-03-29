@@ -4,6 +4,7 @@ export function normalizeProfileState(
     const next = {
         topics: {},
         sessions: [],
+        questionReports: [],
         smartProfiles: [],
         savedBlocks: [],
         ...(value || {})
@@ -18,6 +19,14 @@ export function normalizeProfileState(
 
     if (!Array.isArray(next.sessions)) {
         next.sessions = [];
+    }
+
+    if (
+        !Array.isArray(
+            next.questionReports
+        )
+    ) {
+        next.questionReports = [];
     }
 
     if (

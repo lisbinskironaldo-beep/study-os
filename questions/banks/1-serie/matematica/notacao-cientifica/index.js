@@ -1,9 +1,10 @@
-﻿export const notacaoCientifica = {
+export const notacaoCientifica = {
   id: "matematica_notacao_cientifica",
   materia: "Matemática",
-  serie: [1],
+  serie: [
+    1
+  ],
   topico: "Notação Científica",
-
   metadados: {
     disciplinaId: "matematica",
     base: "ESCOLAR",
@@ -21,7 +22,16 @@
       "Comparacao",
       "Operacoes",
       "Ordem de grandeza",
-      "Expoentes"
+      "Expoentes",
+      "Equivalencia",
+      "Conversao indireta",
+      "Comparacao indireta",
+      "Pegadinha",
+      "Operacoes indiretas",
+      "Equivalencia negativa",
+      "Operacoes com equivalencia",
+      "Operacoes com reescrita",
+      "Operacoes com expoentes negativos"
     ],
     habilidadesBase: [
       "identificar notacao cientifica valida",
@@ -30,11 +40,12 @@
       "comparar ordens de grandeza"
     ]
   },
-
   questoes: [
     {
       id: "nc_001",
-      serie: [1],
+      serie: [
+        1
+      ],
       materia: "Matemática",
       topico: "Notação Científica",
       subtopico: "Conceito",
@@ -43,4800 +54,7474 @@
       cognicao: "interpretacao",
       tipo: "multipla_escolha",
       enunciado: "Qual número está em notação científica correta?",
-      opcoes: ["45 × 10³", "4,5 × 10³", "0,45 × 10³", "450 × 10¹"],
+      opcoes: [
+        "450 × 10¹",
+        "4,5 × 10³",
+        "45 × 10³",
+        "0,45 × 10³"
+      ],
       correta: "4,5 × 10³",
       comentario: "O número antes da potência deve ser maior ou igual a 1 e menor que 10.",
       tempoEstimado: 20,
-      tags: ["conceito", "forma-correta"],
-      habilidades: ["identificar-forma-valida"],
-      collections: ["questions"],
+      tags: [
+        "conceito",
+        "forma-correta"
+      ],
+      habilidades: [
+        "identificar-forma-valida"
+      ],
+      collections: [
+        "questions"
+      ],
       sourceType: "original",
       sourceExam: "",
-      sourceYear: null,
+      sourceYear: 0,
       competencies: [],
       status: "revisada"
     },
     {
       id: "nc_002",
-      serie: [1],
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conversao para notacao cientifica",
+      dificuldadeLabel: "facil",
+      dificuldadeNivel: 1,
+      cognicao: "calculo",
+      tipo: "multipla_escolha",
+      enunciado: "Escreva 3000 em notação científica.",
+      opcoes: [
+        "3 × 10³",
+        "Alternativa 2",
+        "Alternativa 3",
+        "Alternativa 4"
+      ],
+      correta: "3 × 10³",
+      comentario: "Move a vírgula 3 casas para a esquerda.",
+      tempoEstimado: 20,
+      tags: [
+        "conversao"
+      ],
+      habilidades: [
+        "converter-para-notacao-cientifica"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_003",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conversao para forma decimal",
+      dificuldadeLabel: "facil",
+      dificuldadeNivel: 1,
+      cognicao: "calculo",
+      tipo: "multipla_escolha",
+      enunciado: "Escreva 2 × 10² na forma decimal.",
+      opcoes: [
+        "2000",
+        "20",
+        "201",
+        "200"
+      ],
+      correta: "200",
+      comentario: "Expoente positivo desloca a vírgula para a direita.",
+      tempoEstimado: 20,
+      tags: [
+        "decimal"
+      ],
+      habilidades: [
+        "converter-para-forma-decimal"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_004",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Comparacao",
+      dificuldadeLabel: "facil",
+      dificuldadeNivel: 1,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Qual é maior?",
+      opcoes: [
+        "Alternativa 3",
+        "Alternativa 4",
+        "2 × 10³",
+        "3 × 10²"
+      ],
+      correta: "2 × 10³",
+      comentario: "10³ representa ordem maior que 10².",
+      tempoEstimado: 20,
+      tags: [
+        "comparacao"
+      ],
+      habilidades: [
+        "comparar-ordens-de-grandeza"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_005",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Expoentes",
+      dificuldadeLabel: "facil",
+      dificuldadeNivel: 1,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Em 5 × 10⁴, o expoente é 4.",
+      opcoes: [
+        "Verdadeiro",
+        "Falso"
+      ],
+      correta: "Verdadeiro",
+      comentario: "O expoente indica quantas casas a vírgula foi deslocada.",
+      tempoEstimado: 20,
+      tags: [
+        "expoente",
+        "vf"
+      ],
+      habilidades: [
+        "interpretar-expoentes"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_006",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conversao para notacao cientifica",
+      dificuldadeLabel: "facil",
+      dificuldadeNivel: 1,
+      cognicao: "calculo",
+      tipo: "multipla_escolha",
+      enunciado: "Escreva 700 em notação científica.",
+      opcoes: [
+        "7 × 10²",
+        "Alternativa 2",
+        "Alternativa 3",
+        "Alternativa 4"
+      ],
+      correta: "7 × 10²",
+      comentario: "A vírgula anda 2 casas para a esquerda.",
+      tempoEstimado: 20,
+      tags: [
+        "conversao"
+      ],
+      habilidades: [
+        "converter-para-notacao-cientifica"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_007",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conversao para forma decimal",
+      dificuldadeLabel: "facil",
+      dificuldadeNivel: 1,
+      cognicao: "calculo",
+      tipo: "multipla_escolha",
+      enunciado: "Escreva 6 × 10¹ na forma decimal.",
+      opcoes: [
+        "600",
+        "6",
+        "61",
+        "60"
+      ],
+      correta: "60",
+      comentario: "A vírgula se move 1 casa para a direita.",
+      tempoEstimado: 20,
+      tags: [
+        "decimal"
+      ],
+      habilidades: [
+        "converter-para-forma-decimal"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_008",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conceito",
+      dificuldadeLabel: "facil",
+      dificuldadeNivel: 1,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Qual expressão NÃO está em notação científica?",
+      opcoes: [
+        "1,1 × 10⁻³",
+        "4 × 10⁰",
+        "12 × 10²",
+        "8,2 × 10⁵"
+      ],
+      correta: "12 × 10²",
+      comentario: "O número inicial deve ser menor que 10.",
+      tempoEstimado: 20,
+      tags: [
+        "conceito"
+      ],
+      habilidades: [
+        "identificar-forma-valida"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_009",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Comparacao",
+      dificuldadeLabel: "facil",
+      dificuldadeNivel: 1,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Qual é menor?",
+      opcoes: [
+        "Alternativa 4",
+        "9 × 10¹",
+        "1 × 10²",
+        "Alternativa 3"
+      ],
+      correta: "9 × 10¹",
+      comentario: "9 × 10¹ = 90 e 1 × 10² = 100.",
+      tempoEstimado: 20,
+      tags: [
+        "comparacao"
+      ],
+      habilidades: [
+        "comparar-ordens-de-grandeza"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_010",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Expoentes",
+      dificuldadeLabel: "facil",
+      dificuldadeNivel: 1,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Em 4,2 × 10⁻², o expoente é negativo.",
+      opcoes: [
+        "Verdadeiro",
+        "Falso"
+      ],
+      correta: "Verdadeiro",
+      comentario: "Expoente negativo indica número decimal menor que 1.",
+      tempoEstimado: 20,
+      tags: [
+        "expoente",
+        "vf"
+      ],
+      habilidades: [
+        "interpretar-expoentes"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_011",
+      serie: [
+        1
+      ],
       materia: "Matemática",
       topico: "Notação Científica",
       subtopico: "Conversao para notacao cientifica",
       dificuldadeLabel: "facil",
       dificuldadeNivel: 2,
       cognicao: "calculo",
-      tipo: "input",
-      enunciado: "Escreva 3000 em notação científica.",
-      opcoes: [],
-      correta: "3 × 10³",
-      comentario: "Move a vírgula 3 casas para a esquerda.",
-      tempoEstimado: 20,
-      tags: ["conversao"],
-      habilidades: ["converter-para-notacao-cientifica"],
-      collections: ["questions"],
+      tipo: "multipla_escolha",
+      enunciado: "Escreva 0,0005 em notação científica.",
+      opcoes: [
+        "Alternativa 3",
+        "Alternativa 4",
+        "5 × 10⁻⁴",
+        "Alternativa 2"
+      ],
+      correta: "5 × 10⁻⁴",
+      comentario: "A vírgula anda 4 casas para a direita; por isso o expoente é negativo.",
+      tempoEstimado: 25,
+      tags: [
+        "conversao",
+        "negativo"
+      ],
+      habilidades: [
+        "converter-para-notacao-cientifica"
+      ],
+      collections: [
+        "questions"
+      ],
       sourceType: "original",
       sourceExam: "",
-      sourceYear: null,
+      sourceYear: 0,
       competencies: [],
       status: "revisada"
     },
     {
-      id: "nc_003",
-      serie: [1],
+      id: "nc_012",
+      serie: [
+        1
+      ],
       materia: "Matemática",
       topico: "Notação Científica",
       subtopico: "Conversao para forma decimal",
       dificuldadeLabel: "facil",
       dificuldadeNivel: 2,
       cognicao: "calculo",
-      tipo: "input",
-      enunciado: "Escreva 2 × 10² na forma decimal.",
-      opcoes: [],
-      correta: "200",
-      comentario: "Expoente positivo desloca a vírgula para a direita.",
-      tempoEstimado: 20,
-      tags: ["decimal"],
-      habilidades: ["converter-para-forma-decimal"],
-      collections: ["questions"],
+      tipo: "multipla_escolha",
+      enunciado: "Escreva 3,4 × 10³ na forma decimal.",
+      opcoes: [
+        "3401",
+        "3400",
+        "34000",
+        "340"
+      ],
+      correta: "3400",
+      comentario: "A vírgula anda 3 casas para a direita.",
+      tempoEstimado: 25,
+      tags: [
+        "decimal"
+      ],
+      habilidades: [
+        "converter-para-forma-decimal"
+      ],
+      collections: [
+        "questions"
+      ],
       sourceType: "original",
       sourceExam: "",
-      sourceYear: null,
+      sourceYear: 0,
       competencies: [],
       status: "revisada"
     },
     {
-  id: "nc_004",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Comparacao",
-  dificuldadeLabel: "facil",
-  dificuldadeNivel: 2,
-  cognicao: "interpretacao",
-  tipo: "comparacao",
-  enunciado: "Qual é maior?",
-  opcoes: ["3 × 10²", "2 × 10³"],
-  correta: "2 × 10³",
-  comentario: "10³ representa ordem maior que 10².",
-  tempoEstimado: 20,
-  tags: ["comparacao"],
-  habilidades: ["comparar-ordens-de-grandeza"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_005",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Expoentes",
-  dificuldadeLabel: "facil",
-  dificuldadeNivel: 3,
-  cognicao: "interpretacao",
-  tipo: "vf",
-  enunciado: "Em 5 × 10⁴, o expoente é 4.",
-  opcoes: [],
-  correta: true,
-  comentario: "O expoente indica quantas casas a vírgula foi deslocada.",
-  tempoEstimado: 20,
-  tags: ["expoente"],
-  habilidades: ["interpretar-expoentes"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_006",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conversao para notacao cientifica",
-  dificuldadeLabel: "facil",
-  dificuldadeNivel: 2,
-  cognicao: "calculo",
-  tipo: "input",
-  enunciado: "Escreva 700 em notação científica.",
-  opcoes: [],
-  correta: "7 × 10²",
-  comentario: "A vírgula anda 2 casas para a esquerda.",
-  tempoEstimado: 20,
-  tags: ["conversao"],
-  habilidades: ["converter-para-notacao-cientifica"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_007",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conversao para forma decimal",
-  dificuldadeLabel: "facil",
-  dificuldadeNivel: 3,
-  cognicao: "calculo",
-  tipo: "input",
-  enunciado: "Escreva 6 × 10¹ na forma decimal.",
-  opcoes: [],
-  correta: "60",
-  comentario: "A vírgula se move 1 casa para a direita.",
-  tempoEstimado: 20,
-  tags: ["decimal"],
-  habilidades: ["converter-para-forma-decimal"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_008",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conceito",
-  dificuldadeLabel: "facil",
-  dificuldadeNivel: 3,
-  cognicao: "interpretacao",
-  tipo: "multipla_escolha",
-  enunciado: "Qual expressão NÃO está em notação científica?",
-  opcoes: ["8,2 × 10⁵", "1,1 × 10⁻³", "12 × 10²", "4 × 10⁰"],
-  correta: "12 × 10²",
-  comentario: "O número inicial deve ser menor que 10.",
-  tempoEstimado: 20,
-  tags: ["conceito"],
-  habilidades: ["identificar-forma-valida"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_009",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Comparacao",
-  dificuldadeLabel: "facil",
-  dificuldadeNivel: 2,
-  cognicao: "interpretacao",
-  tipo: "comparacao",
-  enunciado: "Qual é menor?",
-  opcoes: ["9 × 10¹", "1 × 10²"],
-  correta: "9 × 10¹",
-  comentario: "9 × 10¹ = 90 e 1 × 10² = 100.",
-  tempoEstimado: 20,
-  tags: ["comparacao"],
-  habilidades: ["comparar-ordens-de-grandeza"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_010",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Expoentes",
-  dificuldadeLabel: "facil",
-  dificuldadeNivel: 3,
-  cognicao: "interpretacao",
-  tipo: "vf",
-  enunciado: "Em 4,2 × 10⁻², o expoente é negativo.",
-  opcoes: [],
-  correta: true,
-  comentario: "Expoente negativo indica número decimal menor que 1.",
-  tempoEstimado: 20,
-  tags: ["expoente"],
-  habilidades: ["interpretar-expoentes"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_011",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conversao para notacao cientifica",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 4,
-  cognicao: "calculo",
-  tipo: "input",
-  enunciado: "Escreva 0,0005 em notação científica.",
-  opcoes: [],
-  correta: "5 × 10⁻⁴",
-  comentario: "A vírgula anda 4 casas para a direita; por isso o expoente é negativo.",
-  tempoEstimado: 25,
-  tags: ["conversao", "negativo"],
-  habilidades: ["converter-para-notacao-cientifica"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_012",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conversao para forma decimal",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 4,
-  cognicao: "calculo",
-  tipo: "input",
-  enunciado: "Escreva 3,4 × 10³ na forma decimal.",
-  opcoes: [],
-  correta: "3400",
-  comentario: "A vírgula anda 3 casas para a direita.",
-  tempoEstimado: 25,
-  tags: ["decimal"],
-  habilidades: ["converter-para-forma-decimal"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_013",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conversao para forma decimal",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 4,
-  cognicao: "calculo",
-  tipo: "input",
-  enunciado: "Escreva 7,2 × 10⁻² na forma decimal.",
-  opcoes: [],
-  correta: "0,072",
-  comentario: "A vírgula anda 2 casas para a esquerda.",
-  tempoEstimado: 25,
-  tags: ["decimal", "negativo"],
-  habilidades: ["converter-para-forma-decimal"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_014",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Comparacao",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 5,
-  cognicao: "interpretacao",
-  tipo: "comparacao",
-  enunciado: "Qual é maior?",
-  opcoes: ["8 × 10⁴", "9 × 10³"],
-  correta: "8 × 10⁴",
-  comentario: "Mesmo com coeficiente menor, o expoente maior domina.",
-  tempoEstimado: 25,
-  tags: ["comparacao"],
-  habilidades: ["comparar-ordens-de-grandeza"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_015",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Operacoes",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 5,
-  cognicao: "calculo",
-  tipo: "input",
-  enunciado: "Calcule: (2 × 10³) + (3 × 10³)",
-  opcoes: [],
-  correta: "5 × 10³",
-  comentario: "Somamos os coeficientes porque as potências são iguais.",
-  tempoEstimado: 25,
-  tags: ["operacoes", "soma"],
-  habilidades: ["operar-potencias-de-dez"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_016",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Operacoes",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 5,
-  cognicao: "calculo",
-  tipo: "input",
-  enunciado: "Calcule: (6 × 10²) − (1 × 10²)",
-  opcoes: [],
-  correta: "5 × 10²",
-  comentario: "Subtraímos os coeficientes porque a potência é a mesma.",
-  tempoEstimado: 25,
-  tags: ["operacoes", "subtracao"],
-  habilidades: ["operar-potencias-de-dez"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_017",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Ordem de grandeza",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 5,
-  cognicao: "interpretacao",
-  tipo: "vf",
-  enunciado: "10⁶ representa um milhão.",
-  opcoes: [],
-  correta: true,
-  comentario: "1 000 000 = 10⁶.",
-  tempoEstimado: 25,
-  tags: ["ordem-grandeza"],
-  habilidades: ["comparar-ordens-de-grandeza"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_018",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conversao para notacao cientifica",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 4,
-  cognicao: "calculo",
-  tipo: "input",
-  enunciado: "Escreva 0,08 em notação científica.",
-  opcoes: [],
-  correta: "8 × 10⁻²",
-  comentario: "A vírgula anda 2 casas para a direita.",
-  tempoEstimado: 25,
-  tags: ["conversao"],
-  habilidades: ["converter-para-notacao-cientifica"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_019",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conceito",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 4,
-  cognicao: "interpretacao",
-  tipo: "multipla_escolha",
-  enunciado: "Qual forma correta representa 0,00032 em notação científica?",
-  opcoes: ["32 × 10⁻⁵", "3,2 × 10⁻⁴", "0,32 × 10⁻³", "3,2 × 10⁴"],
-  correta: "3,2 × 10⁻⁴",
-  comentario: "O coeficiente precisa ficar entre 1 e 10.",
-  tempoEstimado: 25,
-  tags: ["conceito", "conversao"],
-  habilidades: ["identificar-forma-valida"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_020",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Comparacao",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 5,
-  cognicao: "interpretacao",
-  tipo: "comparacao",
-  enunciado: "Qual é menor?",
-  opcoes: ["4 × 10⁻²", "3 × 10⁻¹"],
-  correta: "4 × 10⁻²",
-  comentario: "4 × 10⁻² = 0,04 e 3 × 10⁻¹ = 0,3.",
-  tempoEstimado: 25,
-  tags: ["comparacao", "negativo"],
-  habilidades: ["comparar-ordens-de-grandeza"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_021",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conversao para forma decimal",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 6,
-  cognicao: "calculo",
-  tipo: "input",
-  enunciado: "Escreva 9,01 × 10² na forma decimal.",
-  opcoes: [],
-  correta: "901",
-  comentario: "A vírgula anda 2 casas para a direita.",
-  tempoEstimado: 25,
-  tags: ["decimal"],
-  habilidades: ["converter-para-forma-decimal"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_022",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conversao para notacao cientifica",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 6,
-  cognicao: "calculo",
-  tipo: "input",
-  enunciado: "Escreva 0,0000009 em notação científica.",
-  opcoes: [],
-  correta: "9 × 10⁻⁷",
-  comentario: "A vírgula anda 7 casas para a direita.",
-  tempoEstimado: 25,
-  tags: ["conversao", "negativo"],
-  habilidades: ["converter-para-notacao-cientifica"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_023",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Operacoes",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 6,
-  cognicao: "calculo",
-  tipo: "input",
-  enunciado: "Calcule: (2 × 10⁴) × (3 × 10²)",
-  opcoes: [],
-  correta: "6 × 10⁶",
-  comentario: "Multiplicamos coeficientes e somamos expoentes.",
-  tempoEstimado: 30,
-  tags: ["operacoes", "multiplicacao"],
-  habilidades: ["operar-potencias-de-dez"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_024",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Operacoes",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 6,
-  cognicao: "calculo",
-  tipo: "input",
-  enunciado: "Calcule: (8 × 10⁵) ÷ (2 × 10²)",
-  opcoes: [],
-  correta: "4 × 10³",
-  comentario: "Dividimos coeficientes e subtraímos expoentes.",
-  tempoEstimado: 30,
-  tags: ["operacoes", "divisao"],
-  habilidades: ["operar-potencias-de-dez"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_025",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Ordem de grandeza",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 6,
-  cognicao: "interpretacao",
-  tipo: "multipla_escolha",
-  enunciado: "Qual opção representa a mesma ordem de grandeza de 4,8 × 10⁵?",
-  opcoes: ["10⁵", "10⁻⁵", "10⁶", "10⁴"],
-  correta: "10⁵",
-  comentario: "A ordem está ligada à potência de 10 presente na escrita.",
-  tempoEstimado: 25,
-  tags: ["ordem-grandeza"],
-  habilidades: ["comparar-ordens-de-grandeza"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_026",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Comparacao",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 6,
-  cognicao: "estrategia",
-  tipo: "comparacao",
-  enunciado: "Qual é maior?",
-  opcoes: ["1,2 × 10⁶", "9,9 × 10⁵"],
-  correta: "1,2 × 10⁶",
-  comentario: "10⁶ é ordem superior a 10⁵.",
-  tempoEstimado: 25,
-  tags: ["comparacao"],
-  habilidades: ["comparar-ordens-de-grandeza"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_027",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Expoentes",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 5,
-  cognicao: "interpretacao",
-  tipo: "vf",
-  enunciado: "Em 7 × 10⁻⁴, a forma decimal é menor que 1.",
-  opcoes: [],
-  correta: true,
-  comentario: "Expoente negativo gera número decimal pequeno.",
-  tempoEstimado: 25,
-  tags: ["expoente", "negativo"],
-  habilidades: ["interpretar-expoentes"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_028",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conversao para forma decimal",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 4,
-  cognicao: "calculo",
-  tipo: "input",
-  enunciado: "Escreva 1,5 × 10⁻³ na forma decimal.",
-  opcoes: [],
-  correta: "0,0015",
-  comentario: "A vírgula anda 3 casas para a esquerda.",
-  tempoEstimado: 25,
-  tags: ["decimal", "negativo"],
-  habilidades: ["converter-para-forma-decimal"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_029",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conversao para notacao cientifica",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 5,
-  cognicao: "calculo",
-  tipo: "input",
-  enunciado: "Escreva 45000 em notação científica.",
-  opcoes: [],
-  correta: "4,5 × 10⁴",
-  comentario: "A vírgula anda 4 casas para a esquerda.",
-  tempoEstimado: 25,
-  tags: ["conversao"],
-  habilidades: ["converter-para-notacao-cientifica"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_030",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conceito",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 5,
-  cognicao: "interpretacao",
-  tipo: "multipla_escolha",
-  enunciado: "Qual escrita correta representa 6200000?",
-  opcoes: ["62 × 10⁵", "6,2 × 10⁶", "0,62 × 10⁷", "620 × 10⁴"],
-  correta: "6,2 × 10⁶",
-  comentario: "Coeficiente entre 1 e 10.",
-  tempoEstimado: 25,
-  tags: ["conceito", "conversao"],
-  habilidades: ["identificar-forma-valida"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_031",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Operacoes",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 8,
-  cognicao: "estrategia",
-  tipo: "input",
-  enunciado: "Calcule: (4 × 10⁵) + (3 × 10⁴)",
-  opcoes: [],
-  correta: "4,3 × 10⁵",
-  comentario: "Converta 3 × 10⁴ em 0,3 × 10⁵ antes de somar.",
-  tempoEstimado: 30,
-  tags: ["operacoes", "soma"],
-  habilidades: ["operar-potencias-de-dez"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_032",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Operacoes",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 8,
-  cognicao: "estrategia",
-  tipo: "input",
-  enunciado: "Calcule: (7 × 10⁻²) + (2 × 10⁻³)",
-  opcoes: [],
-  correta: "7,2 × 10⁻²",
-  comentario: "2 × 10⁻³ = 0,2 × 10⁻².",
-  tempoEstimado: 30,
-  tags: ["operacoes", "negativo"],
-  habilidades: ["operar-potencias-de-dez"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_033",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Comparacao",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 8,
-  cognicao: "estrategia",
-  tipo: "comparacao",
-  enunciado: "Qual é maior?",
-  opcoes: ["5,1 × 10⁻³", "4,9 × 10⁻²"],
-  correta: "4,9 × 10⁻²",
-  comentario: "10⁻² é maior que 10⁻³ nesse contexto decimal.",
-  tempoEstimado: 30,
-  tags: ["comparacao", "negativo"],
-  habilidades: ["comparar-ordens-de-grandeza"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_034",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Operacoes",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 9,
-  cognicao: "estrategia",
-  tipo: "input",
-  enunciado: "Calcule: (9 × 10⁶) ÷ (3 × 10⁻²)",
-  opcoes: [],
-  correta: "3 × 10⁸",
-  comentario: "Divida 9 por 3 e faça 6 − (−2) = 8.",
-  tempoEstimado: 30,
-  tags: ["operacoes", "divisao"],
-  habilidades: ["operar-potencias-de-dez"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_035",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Ordem de grandeza",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 8,
-  cognicao: "interpretacao",
-  tipo: "vf",
-  enunciado: "3,2 × 10⁷ está mais próximo de 10⁷ do que de 10⁸ em ordem de grandeza simples.",
-  opcoes: [],
-  correta: true,
-  comentario: "A potência dominante ainda é 10⁷.",
-  tempoEstimado: 30,
-  tags: ["ordem-grandeza"],
-  habilidades: ["comparar-ordens-de-grandeza"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_036",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conversao para notacao cientifica",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 8,
-  cognicao: "estrategia",
-  tipo: "input",
-  enunciado: "Escreva 0,000000045 em notação científica.",
-  opcoes: [],
-  correta: "4,5 × 10⁻⁸",
-  comentario: "A vírgula anda 8 casas para a direita.",
-  tempoEstimado: 30,
-  tags: ["conversao", "negativo"],
-  habilidades: ["converter-para-notacao-cientifica"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_037",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conversao para forma decimal",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 8,
-  cognicao: "estrategia",
-  tipo: "input",
-  enunciado: "Escreva 1,09 × 10⁻⁵ na forma decimal.",
-  opcoes: [],
-  correta: "0,0000109",
-  comentario: "A vírgula anda 5 casas para a esquerda.",
-  tempoEstimado: 30,
-  tags: ["decimal", "negativo"],
-  habilidades: ["converter-para-forma-decimal"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_038",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Comparacao",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 9,
-  cognicao: "estrategia",
-  tipo: "comparacao",
-  enunciado: "Qual é menor?",
-  opcoes: ["1,01 × 10⁴", "9,99 × 10³"],
-  correta: "9,99 × 10³",
-  comentario: "9,99 × 10³ = 9990 e 1,01 × 10⁴ = 10100.",
-  tempoEstimado: 30,
-  tags: ["comparacao"],
-  habilidades: ["comparar-ordens-de-grandeza"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_039",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Operacoes",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 9,
-  cognicao: "estrategia",
-  tipo: "input",
-  enunciado: "Calcule: (2,5 × 10³) × (4 × 10⁻¹)",
-  opcoes: [],
-  correta: "1 × 10³",
-  comentario: "2,5 × 4 = 10, então ajusta para 1 × 10³.",
-  tempoEstimado: 30,
-  tags: ["operacoes", "multiplicacao"],
-  habilidades: ["operar-potencias-de-dez"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_040",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Expoentes",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 8,
-  cognicao: "interpretacao",
-  tipo: "vf",
-  enunciado: "Quanto menor o expoente negativo, menor o número decimal correspondente, mantendo o mesmo coeficiente positivo.",
-  opcoes: [],
-  correta: true,
-  comentario: "Por exemplo, 5 × 10⁻⁵ é menor que 5 × 10⁻³.",
-  tempoEstimado: 30,
-  tags: ["expoente", "negativo"],
-  habilidades: ["interpretar-expoentes"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_041",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conceito",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 8,
-  cognicao: "estrategia",
-  tipo: "multipla_escolha",
-  enunciado: "Qual é a forma correta de 98 × 10⁴ em notação científica?",
-  opcoes: ["9,8 × 10⁵", "98 × 10⁴", "0,98 × 10⁶", "9,8 × 10⁴"],
-  correta: "9,8 × 10⁵",
-  comentario: "Ao deslocar a vírgula uma casa para a esquerda, soma 1 ao expoente.",
-  tempoEstimado: 30,
-  tags: ["conceito"],
-  habilidades: ["identificar-forma-valida"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_042",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Operacoes",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 9,
-  cognicao: "estrategia",
-  tipo: "input",
-  enunciado: "Calcule: (6 × 10⁷) − (2 × 10⁶)",
-  opcoes: [],
-  correta: "5,8 × 10⁷",
-  comentario: "2 × 10⁶ = 0,2 × 10⁷.",
-  tempoEstimado: 30,
-  tags: ["operacoes", "subtracao"],
-  habilidades: ["operar-potencias-de-dez"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_043",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Comparacao",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 10,
-  cognicao: "estrategia",
-  tipo: "comparacao",
-  enunciado: "Qual é maior?",
-  opcoes: ["9,9 × 10⁻⁴", "1,01 × 10⁻³"],
-  correta: "1,01 × 10⁻³",
-  comentario: "1,01 × 10⁻³ = 0,00101 e 9,9 × 10⁻⁴ = 0,00099.",
-  tempoEstimado: 30,
-  tags: ["comparacao", "negativo"],
-  habilidades: ["comparar-ordens-de-grandeza"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_044",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Ordem de grandeza",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 9,
-  cognicao: "interpretacao",
-  tipo: "multipla_escolha",
-  enunciado: "Qual número tem maior ordem de grandeza?",
-  opcoes: ["7 × 10⁵", "2 × 10⁶", "9 × 10⁴", "8 × 10³"],
-  correta: "2 × 10⁶",
-  comentario: "A maior potência de 10 determina a maior ordem.",
-  tempoEstimado: 30,
-  tags: ["ordem-grandeza"],
-  habilidades: ["comparar-ordens-de-grandeza"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_045",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Operacoes",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 10,
-  cognicao: "estrategia",
-  tipo: "input",
-  enunciado: "Calcule: (3 × 10⁻⁴) × (2 × 10⁻³)",
-  opcoes: [],
-  correta: "6 × 10⁻⁷",
-  comentario: "Multiplique coeficientes e some os expoentes negativos.",
-  tempoEstimado: 30,
-  tags: ["operacoes", "multiplicacao"],
-  habilidades: ["operar-potencias-de-dez"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_046",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conversao para forma decimal",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 8,
-  cognicao: "estrategia",
-  tipo: "input",
-  enunciado: "Escreva 4,06 × 10⁴ na forma decimal.",
-  opcoes: [],
-  correta: "40600",
-  comentario: "A vírgula anda 4 casas para a direita.",
-  tempoEstimado: 30,
-  tags: ["decimal"],
-  habilidades: ["converter-para-forma-decimal"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_047",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conversao para notacao cientifica",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 8,
-  cognicao: "estrategia",
-  tipo: "input",
-  enunciado: "Escreva 508000 em notação científica.",
-  opcoes: [],
-  correta: "5,08 × 10⁵",
-  comentario: "A vírgula anda 5 casas para a esquerda.",
-  tempoEstimado: 30,
-  tags: ["conversao"],
-  habilidades: ["converter-para-notacao-cientifica"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_048",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Expoentes",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 9,
-  cognicao: "interpretacao",
-  tipo: "vf",
-  enunciado: "Se o coeficiente permanece o mesmo, 10⁵ representa um número maior que 10⁴.",
-  opcoes: [],
-  correta: true,
-  comentario: "Com mesmo coeficiente, o maior expoente positivo gera maior valor.",
-  tempoEstimado: 30,
-  tags: ["expoente"],
-  habilidades: ["interpretar-expoentes"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_049",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Comparacao",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 10,
-  cognicao: "estrategia",
-  tipo: "comparacao",
-  enunciado: "Qual é menor?",
-  opcoes: ["2,2 × 10⁻⁶", "9 × 10⁻⁷"],
-  correta: "9 × 10⁻⁷",
-  comentario: "10⁻⁷ indica número menor que 10⁻⁶.",
-  tempoEstimado: 30,
-  tags: ["comparacao", "negativo"],
-  habilidades: ["comparar-ordens-de-grandeza"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_050",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Operacoes",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 10,
-  cognicao: "estrategia",
-  tipo: "input",
-  enunciado: "Calcule: (5 × 10³) ÷ (2 × 10⁻¹)",
-  opcoes: [],
-  correta: "2,5 × 10⁴",
-  comentario: "5 ÷ 2 = 2,5 e 3 − (−1) = 4.",
-  tempoEstimado: 30,
-  tags: ["operacoes", "divisao"],
-  habilidades: ["operar-potencias-de-dez"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-        {
-  id: "nc_051",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Equivalencia",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 5,
-  cognicao: "interpretacao",
-  tipo: "multipla_escolha",
-  enunciado: "Qual das alternativas representa corretamente o mesmo valor de 700000 em notação científica padronizada?",
-  opcoes: ["0,7 × 10⁶", "7 × 10⁵", "70 × 10⁴", "700 × 10³"],
-  correta: "7 × 10⁵",
-  comentario: "Coeficiente deve estar entre 1 e 10.",
-  tempoEstimado: 25,
-  tags: ["equivalencia"],
-  habilidades: ["validar-notacao"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_052",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conversao indireta",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 5,
-  cognicao: "calculo",
-  tipo: "input",
-  enunciado: "Um número foi registrado como 9000. Reescreva esse valor em notação científica padronizada.",
-  opcoes: [],
-  correta: "9 × 10³",
-  comentario: "3 casas → expoente 3.",
-  tempoEstimado: 25,
-  tags: ["conversao"],
-  habilidades: ["converter-para-notacao-cientifica"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_053",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Equivalencia",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 5,
-  cognicao: "calculo",
-  tipo: "input",
-  enunciado: "Determine o valor decimal equivalente a 5 × 10³.",
-  opcoes: [],
-  correta: "5000",
-  comentario: "Deslocamento de 3 casas à direita.",
-  tempoEstimado: 25,
-  tags: ["decimal"],
-  habilidades: ["converter-para-forma-decimal"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_054",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Comparacao indireta",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 6,
-  cognicao: "interpretacao",
-  tipo: "multipla_escolha",
-  enunciado: "Sem converter diretamente, identifique qual valor representa a maior quantidade:",
-  opcoes: ["4 × 10²", "3 × 10³"],
-  correta: "3 × 10³",
-  comentario: "Expoente maior domina.",
-  tempoEstimado: 25,
-  tags: ["comparacao"],
-  habilidades: ["comparar-notacao"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_055",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Pegadinha",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 6,
-  cognicao: "interpretacao",
-  tipo: "vf",
-  enunciado: "Na expressão 8 × 10², o expoente indica uma potência positiva de 10.",
-  opcoes: ["Verdadeiro", "Falso"],
-  correta: "Verdadeiro",
-  comentario: "Expoente 2 é positivo.",
-  tempoEstimado: 25,
-  tags: ["expoente"],
-  habilidades: ["interpretar-expoente"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_056",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conversao indireta",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 6,
-  cognicao: "calculo",
-  tipo: "input",
-  enunciado: "Um valor muito pequeno foi registrado como 0,006. Escreva-o em notação científica.",
-  opcoes: [],
-  correta: "6 × 10⁻³",
-  comentario: "3 casas → expoente negativo.",
-  tempoEstimado: 25,
-  tags: ["conversao"],
-  habilidades: ["converter-para-notacao-cientifica"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_057",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Equivalencia",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 6,
-  cognicao: "calculo",
-  tipo: "input",
-  enunciado: "Determine a forma decimal equivalente a 4,5 × 10⁻².",
-  opcoes: [],
-  correta: "0,045",
-  comentario: "2 casas à esquerda.",
-  tempoEstimado: 25,
-  tags: ["decimal"],
-  habilidades: ["converter-para-forma-decimal"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_058",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Equivalencia",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 6,
-  cognicao: "interpretacao",
-  tipo: "multipla_escolha",
-  enunciado: "Qual alternativa apresenta corretamente a representação padronizada de 0,00072?",
-  opcoes: ["7,2 × 10⁻⁴", "72 × 10⁻⁵", "0,72 × 10⁻³", "7,2 × 10⁴"],
-  correta: "7,2 × 10⁻⁴",
-  comentario: "Coeficiente válido + expoente correto.",
-  tempoEstimado: 25,
-  tags: ["equivalencia"],
-  habilidades: ["validar-notacao"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_059",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Operacoes indiretas",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 6,
-  cognicao: "estrategia",
-  tipo: "input",
-  enunciado: "Determine o resultado de (4 × 10²) + (2 × 10²) mantendo a forma em notação científica.",
-  opcoes: [],
-  correta: "6 × 10²",
-  comentario: "Mesma potência.",
-  tempoEstimado: 25,
-  tags: ["operacoes"],
-  habilidades: ["somar-notacao"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_060",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Comparacao indireta",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 6,
-  cognicao: "interpretacao",
-  tipo: "multipla_escolha",
-  enunciado: "Analise os valores e identifique o menor:",
-  opcoes: ["6 × 10⁻³", "5 × 10⁻²"],
-  correta: "6 × 10⁻³",
-  comentario: "0,006 < 0,05.",
-  tempoEstimado: 25,
-  tags: ["comparacao"],
-  habilidades: ["comparar-notacao"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-
+      id: "nc_013",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conversao para forma decimal",
+      dificuldadeLabel: "facil",
+      dificuldadeNivel: 2,
+      cognicao: "calculo",
+      tipo: "multipla_escolha",
+      enunciado: "Escreva 7,2 × 10⁻² na forma decimal.",
+      opcoes: [
+        "0,072",
+        "0,72",
+        "0,0072",
+        "1,072"
+      ],
+      correta: "0,072",
+      comentario: "A vírgula anda 2 casas para a esquerda.",
+      tempoEstimado: 25,
+      tags: [
+        "decimal",
+        "negativo"
+      ],
+      habilidades: [
+        "converter-para-forma-decimal"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
     {
-  id: "nc_061",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Operacoes",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 8,
-  cognicao: "estrategia",
-  tipo: "input",
-  enunciado: "Calcule: (3 × 10⁴) + (8 × 10³)",
-  opcoes: [],
-  correta: "3,8 × 10⁴",
-  comentario: "8 × 10³ = 0,8 × 10⁴.",
-  tempoEstimado: 30,
-  tags: ["operacoes", "soma"],
-  habilidades: ["operar-potencias-de-dez"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_062",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Comparacao",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 8,
-  cognicao: "estrategia",
-  tipo: "comparacao",
-  enunciado: "Qual é maior?",
-  opcoes: ["7,5 × 10⁻⁴", "6,9 × 10⁻³"],
-  correta: "6,9 × 10⁻³",
-  comentario: "10⁻³ é maior que 10⁻⁴ nesse caso.",
-  tempoEstimado: 30,
-  tags: ["comparacao", "negativo"],
-  habilidades: ["comparar-ordens-de-grandeza"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_063",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Operacoes",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 9,
-  cognicao: "estrategia",
-  tipo: "input",
-  enunciado: "Calcule: (5 × 10⁶) ÷ (1 × 10²)",
-  opcoes: [],
-  correta: "5 × 10⁴",
-  comentario: "Divida coeficientes e subtraia os expoentes.",
-  tempoEstimado: 30,
-  tags: ["operacoes", "divisao"],
-  habilidades: ["operar-potencias-de-dez"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_064",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conversao para forma decimal",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 8,
-  cognicao: "estrategia",
-  tipo: "input",
-  enunciado: "Escreva 2,07 × 10⁻⁴ na forma decimal.",
-  opcoes: [],
-  correta: "0,000207",
-  comentario: "A vírgula anda 4 casas para a esquerda.",
-  tempoEstimado: 30,
-  tags: ["decimal", "negativo"],
-  habilidades: ["converter-para-forma-decimal"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_065",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Ordem de grandeza",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 8,
-  cognicao: "interpretacao",
-  tipo: "vf",
-  enunciado: "9,2 × 10⁶ tem ordem de grandeza maior que 8,1 × 10⁵.",
-  opcoes: [],
-  correta: true,
-  comentario: "10⁶ é uma potência maior que 10⁵.",
-  tempoEstimado: 30,
-  tags: ["ordem-grandeza"],
-  habilidades: ["comparar-ordens-de-grandeza"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_066",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conceito",
-  dificuldadeLabel: "facil",
-  dificuldadeNivel: 2,
-  cognicao: "interpretacao",
-  tipo: "multipla_escolha",
-  enunciado: "Qual escrita está correta em notação científica?",
-  opcoes: ["3,2 × 10⁴", "32 × 10³", "0,32 × 10⁵", "320 × 10²"],
-  correta: "3,2 × 10⁴",
-  comentario: "Só o coeficiente entre 1 e 10 está correto.",
-  tempoEstimado: 20,
-  tags: ["conceito"],
-  habilidades: ["identificar-forma-valida"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_067",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conversao para notacao cientifica",
-  dificuldadeLabel: "facil",
-  dificuldadeNivel: 3,
-  cognicao: "calculo",
-  tipo: "input",
-  enunciado: "Escreva 1200 em notação científica.",
-  opcoes: [],
-  correta: "1,2 × 10³",
-  comentario: "A vírgula anda 3 casas para a esquerda.",
-  tempoEstimado: 20,
-  tags: ["conversao"],
-  habilidades: ["converter-para-notacao-cientifica"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_068",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conversao para forma decimal",
-  dificuldadeLabel: "facil",
-  dificuldadeNivel: 2,
-  cognicao: "calculo",
-  tipo: "input",
-  enunciado: "Escreva 9 × 10¹ na forma decimal.",
-  opcoes: [],
-  correta: "90",
-  comentario: "Expoente 1 desloca uma casa à direita.",
-  tempoEstimado: 20,
-  tags: ["decimal"],
-  habilidades: ["converter-para-forma-decimal"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_069",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Comparacao",
-  dificuldadeLabel: "facil",
-  dificuldadeNivel: 3,
-  cognicao: "interpretacao",
-  tipo: "comparacao",
-  enunciado: "Qual é maior?",
-  opcoes: ["8 × 10¹", "1 × 10²"],
-  correta: "1 × 10²",
-  comentario: "100 é maior que 80.",
-  tempoEstimado: 20,
-  tags: ["comparacao"],
-  habilidades: ["comparar-ordens-de-grandeza"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_070",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Expoentes",
-  dificuldadeLabel: "facil",
-  dificuldadeNivel: 3,
-  cognicao: "interpretacao",
-  tipo: "vf",
-  enunciado: "Em 2,4 × 10⁵, o expoente indica 5.",
-  opcoes: [],
-  correta: true,
-  comentario: "O expoente é o número que acompanha o 10.",
-  tempoEstimado: 20,
-  tags: ["expoente"],
-  habilidades: ["interpretar-expoentes"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_071",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conversao para notacao cientifica",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 4,
-  cognicao: "calculo",
-  tipo: "input",
-  enunciado: "Escreva 0,00009 em notação científica.",
-  opcoes: [],
-  correta: "9 × 10⁻⁵",
-  comentario: "A vírgula anda 5 casas para a direita.",
-  tempoEstimado: 25,
-  tags: ["conversao", "negativo"],
-  habilidades: ["converter-para-notacao-cientifica"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_072",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conversao para forma decimal",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 4,
-  cognicao: "calculo",
-  tipo: "input",
-  enunciado: "Escreva 8,3 × 10² na forma decimal.",
-  opcoes: [],
-  correta: "830",
-  comentario: "A vírgula anda 2 casas para a direita.",
-  tempoEstimado: 25,
-  tags: ["decimal"],
-  habilidades: ["converter-para-forma-decimal"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_073",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conceito",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 5,
-  cognicao: "interpretacao",
-  tipo: "multipla_escolha",
-  enunciado: "Qual escrita correta representa 540000?",
-  opcoes: ["54 × 10⁴", "5,4 × 10⁵", "0,54 × 10⁶", "540 × 10³"],
-  correta: "5,4 × 10⁵",
-  comentario: "Coeficiente válido e potência correta.",
-  tempoEstimado: 25,
-  tags: ["conceito", "conversao"],
-  habilidades: ["identificar-forma-valida"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_074",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Operacoes",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 5,
-  cognicao: "calculo",
-  tipo: "input",
-  enunciado: "Calcule: (7 × 10³) + (1 × 10³)",
-  opcoes: [],
-  correta: "8 × 10³",
-  comentario: "Mesma potência: soma direta dos coeficientes.",
-  tempoEstimado: 25,
-  tags: ["operacoes", "soma"],
-  habilidades: ["operar-potencias-de-dez"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_075",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Comparacao",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 5,
-  cognicao: "interpretacao",
-  tipo: "comparacao",
-  enunciado: "Qual é menor?",
-  opcoes: ["9 × 10⁻⁴", "1 × 10⁻³"],
-  correta: "9 × 10⁻⁴",
-  comentario: "0,0009 é menor que 0,001.",
-  tempoEstimado: 25,
-  tags: ["comparacao", "negativo"],
-  habilidades: ["comparar-ordens-de-grandeza"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_076",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Operacoes",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 8,
-  cognicao: "estrategia",
-  tipo: "input",
-  enunciado: "Calcule: (6 × 10⁵) − (2 × 10⁴)",
-  opcoes: [],
-  correta: "5,8 × 10⁵",
-  comentario: "2 × 10⁴ = 0,2 × 10⁵.",
-  tempoEstimado: 30,
-  tags: ["operacoes", "subtracao"],
-  habilidades: ["operar-potencias-de-dez"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_077",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Comparacao",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 9,
-  cognicao: "estrategia",
-  tipo: "comparacao",
-  enunciado: "Qual é maior?",
-  opcoes: ["1,5 × 10⁻²", "9,9 × 10⁻³"],
-  correta: "1,5 × 10⁻²",
-  comentario: "0,015 é maior que 0,0099.",
-  tempoEstimado: 30,
-  tags: ["comparacao", "negativo"],
-  habilidades: ["comparar-ordens-de-grandeza"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_078",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Operacoes",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 9,
-  cognicao: "estrategia",
-  tipo: "input",
-  enunciado: "Calcule: (4 × 10²) × (5 × 10³)",
-  opcoes: [],
-  correta: "2 × 10⁶",
-  comentario: "4 × 5 = 20, então ajusta para 2 × 10⁶.",
-  tempoEstimado: 30,
-  tags: ["operacoes", "multiplicacao"],
-  habilidades: ["operar-potencias-de-dez"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_079",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conversao para forma decimal",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 8,
-  cognicao: "estrategia",
-  tipo: "input",
-  enunciado: "Escreva 7,08 × 10⁻³ na forma decimal.",
-  opcoes: [],
-  correta: "0,00708",
-  comentario: "A vírgula anda 3 casas para a esquerda.",
-  tempoEstimado: 30,
-  tags: ["decimal", "negativo"],
-  habilidades: ["converter-para-forma-decimal"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_080",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Ordem de grandeza",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 8,
-  cognicao: "interpretacao",
-  tipo: "vf",
-  enunciado: "2,3 × 10⁴ tem ordem de grandeza menor que 9,1 × 10⁵.",
-  opcoes: [],
-  correta: true,
-  comentario: "10⁴ é menor que 10⁵.",
-  tempoEstimado: 30,
-  tags: ["ordem-grandeza"],
-  habilidades: ["comparar-ordens-de-grandeza"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_081",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conceito",
-  dificuldadeLabel: "facil",
-  dificuldadeNivel: 2,
-  cognicao: "interpretacao",
-  tipo: "multipla_escolha",
-  enunciado: "Qual escrita está correta?",
-  opcoes: ["1,8 × 10⁶", "18 × 10⁵", "0,18 × 10⁷", "180 × 10⁴"],
-  correta: "1,8 × 10⁶",
-  comentario: "O coeficiente precisa ficar entre 1 e 10.",
-  tempoEstimado: 20,
-  tags: ["conceito"],
-  habilidades: ["identificar-forma-valida"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_082",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conversao para notacao cientifica",
-  dificuldadeLabel: "facil",
-  dificuldadeNivel: 3,
-  cognicao: "calculo",
-  tipo: "input",
-  enunciado: "Escreva 650 em notação científica.",
-  opcoes: [],
-  correta: "6,5 × 10²",
-  comentario: "A vírgula anda 2 casas para a esquerda.",
-  tempoEstimado: 20,
-  tags: ["conversao"],
-  habilidades: ["converter-para-notacao-cientifica"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_083",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conversao para forma decimal",
-  dificuldadeLabel: "facil",
-  dificuldadeNivel: 2,
-  cognicao: "calculo",
-  tipo: "input",
-  enunciado: "Escreva 3 × 10⁴ na forma decimal.",
-  opcoes: [],
-  correta: "30000",
-  comentario: "A vírgula anda 4 casas para a direita.",
-  tempoEstimado: 20,
-  tags: ["decimal"],
-  habilidades: ["converter-para-forma-decimal"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_084",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Comparacao",
-  dificuldadeLabel: "facil",
-  dificuldadeNivel: 3,
-  cognicao: "interpretacao",
-  tipo: "comparacao",
-  enunciado: "Qual é maior?",
-  opcoes: ["5 × 10²", "4 × 10³"],
-  correta: "4 × 10³",
-  comentario: "4000 é maior que 500.",
-  tempoEstimado: 20,
-  tags: ["comparacao"],
-  habilidades: ["comparar-ordens-de-grandeza"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_085",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Expoentes",
-  dificuldadeLabel: "facil",
-  dificuldadeNivel: 3,
-  cognicao: "interpretacao",
-  tipo: "vf",
-  enunciado: "Em 9 × 10⁻¹, o expoente é negativo.",
-  opcoes: [],
-  correta: true,
-  comentario: "O expoente é −1.",
-  tempoEstimado: 20,
-  tags: ["expoente"],
-  habilidades: ["interpretar-expoentes"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_086",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conversao para notacao cientifica",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 4,
-  cognicao: "calculo",
-  tipo: "input",
-  enunciado: "Escreva 0,0042 em notação científica.",
-  opcoes: [],
-  correta: "4,2 × 10⁻³",
-  comentario: "A vírgula anda 3 casas para a direita.",
-  tempoEstimado: 25,
-  tags: ["conversao", "negativo"],
-  habilidades: ["converter-para-notacao-cientifica"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_087",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conversao para forma decimal",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 4,
-  cognicao: "calculo",
-  tipo: "input",
-  enunciado: "Escreva 6,2 × 10³ na forma decimal.",
-  opcoes: [],
-  correta: "6200",
-  comentario: "A vírgula anda 3 casas para a direita.",
-  tempoEstimado: 25,
-  tags: ["decimal"],
-  habilidades: ["converter-para-forma-decimal"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_088",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conceito",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 5,
-  cognicao: "interpretacao",
-  tipo: "multipla_escolha",
-  enunciado: "Qual forma representa corretamente 0,000004?",
-  opcoes: ["4 × 10⁻⁶", "4 × 10⁻⁵", "0,4 × 10⁻⁵", "40 × 10⁻⁷"],
-  correta: "4 × 10⁻⁶",
-  comentario: "A vírgula anda 6 casas para a direita.",
-  tempoEstimado: 25,
-  tags: ["conceito", "conversao"],
-  habilidades: ["identificar-forma-valida"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_089",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Operacoes",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 6,
-  cognicao: "calculo",
-  tipo: "input",
-  enunciado: "Calcule: (3 × 10²) × (2 × 10²)",
-  opcoes: [],
-  correta: "6 × 10⁴",
-  comentario: "Multiplicam-se coeficientes e somam-se expoentes.",
-  tempoEstimado: 30,
-  tags: ["operacoes", "multiplicacao"],
-  habilidades: ["operar-potencias-de-dez"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_090",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Comparacao",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 5,
-  cognicao: "interpretacao",
-  tipo: "comparacao",
-  enunciado: "Qual é menor?",
-  opcoes: ["2 × 10³", "9 × 10²"],
-  correta: "9 × 10²",
-  comentario: "900 é menor que 2000.",
-  tempoEstimado: 25,
-  tags: ["comparacao"],
-  habilidades: ["comparar-ordens-de-grandeza"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_091",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Operacoes",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 8,
-  cognicao: "estrategia",
-  tipo: "input",
-  enunciado: "Calcule: (8 × 10⁴) + (5 × 10³)",
-  opcoes: [],
-  correta: "8,5 × 10⁴",
-  comentario: "5 × 10³ = 0,5 × 10⁴.",
-  tempoEstimado: 30,
-  tags: ["operacoes", "soma"],
-  habilidades: ["operar-potencias-de-dez"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_092",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Comparacao",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 9,
-  cognicao: "estrategia",
-  tipo: "comparacao",
-  enunciado: "Qual é maior?",
-  opcoes: ["9 × 10⁻⁵", "1,1 × 10⁻⁴"],
-  correta: "1,1 × 10⁻⁴",
-  comentario: "0,00011 é maior que 0,00009.",
-  tempoEstimado: 30,
-  tags: ["comparacao", "negativo"],
-  habilidades: ["comparar-ordens-de-grandeza"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_093",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Operacoes",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 9,
-  cognicao: "estrategia",
-  tipo: "input",
-  enunciado: "Calcule: (9 × 10³) ÷ (3 × 10⁻¹)",
-  opcoes: [],
-  correta: "3 × 10⁴",
-  comentario: "3 ÷ 10⁻¹ equivale a somar 1 ao expoente após divisão.",
-  tempoEstimado: 30,
-  tags: ["operacoes", "divisao"],
-  habilidades: ["operar-potencias-de-dez"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_094",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conversao para forma decimal",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 8,
-  cognicao: "estrategia",
-  tipo: "input",
-  enunciado: "Escreva 5,004 × 10⁻³ na forma decimal.",
-  opcoes: [],
-  correta: "0,005004",
-  comentario: "A vírgula anda 3 casas para a esquerda.",
-  tempoEstimado: 30,
-  tags: ["decimal", "negativo"],
-  habilidades: ["converter-para-forma-decimal"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_095",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Ordem de grandeza",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 8,
-  cognicao: "interpretacao",
-  tipo: "vf",
-  enunciado: "7,7 × 10⁻³ tem ordem de grandeza menor que 2,1 × 10⁻².",
-  opcoes: [],
-  correta: true,
-  comentario: "10⁻³ é menor que 10⁻².",
-  tempoEstimado: 30,
-  tags: ["ordem-grandeza", "negativo"],
-  habilidades: ["comparar-ordens-de-grandeza"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_096",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conceito",
-  dificuldadeLabel: "facil",
-  dificuldadeNivel: 2,
-  cognicao: "interpretacao",
-  tipo: "multipla_escolha",
-  enunciado: "Qual escrita está correta?",
-  opcoes: ["4,9 × 10⁷", "49 × 10⁶", "0,49 × 10⁸", "490 × 10⁵"],
-  correta: "4,9 × 10⁷",
-  comentario: "O coeficiente válido é o que fica entre 1 e 10.",
-  tempoEstimado: 20,
-  tags: ["conceito"],
-  habilidades: ["identificar-forma-valida"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_097",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conversao para notacao cientifica",
-  dificuldadeLabel: "facil",
-  dificuldadeNivel: 3,
-  cognicao: "calculo",
-  tipo: "input",
-  enunciado: "Escreva 25000 em notação científica.",
-  opcoes: [],
-  correta: "2,5 × 10⁴",
-  comentario: "A vírgula anda 4 casas para a esquerda.",
-  tempoEstimado: 20,
-  tags: ["conversao"],
-  habilidades: ["converter-para-notacao-cientifica"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_098",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conversao para forma decimal",
-  dificuldadeLabel: "facil",
-  dificuldadeNivel: 2,
-  cognicao: "calculo",
-  tipo: "input",
-  enunciado: "Escreva 7 × 10² na forma decimal.",
-  opcoes: [],
-  correta: "700",
-  comentario: "A vírgula anda 2 casas para a direita.",
-  tempoEstimado: 20,
-  tags: ["decimal"],
-  habilidades: ["converter-para-forma-decimal"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_099",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Comparacao",
-  dificuldadeLabel: "facil",
-  dificuldadeNivel: 3,
-  cognicao: "interpretacao",
-  tipo: "comparacao",
-  enunciado: "Qual é maior?",
-  opcoes: ["6 × 10²", "5 × 10³"],
-  correta: "5 × 10³",
-  comentario: "5000 é maior que 600.",
-  tempoEstimado: 20,
-  tags: ["comparacao"],
-  habilidades: ["comparar-ordens-de-grandeza"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_100",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Expoentes",
-  dificuldadeLabel: "facil",
-  dificuldadeNivel: 3,
-  cognicao: "interpretacao",
-  tipo: "vf",
-  enunciado: "Em 1,3 × 10⁻⁶, o expoente é −6.",
-  opcoes: [],
-  correta: true,
-  comentario: "O valor do expoente aparece junto do 10.",
-  tempoEstimado: 20,
-  tags: ["expoente"],
-  habilidades: ["interpretar-expoentes"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-        {
-  id: "nc_101",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conversao para notacao cientifica",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 4,
-  cognicao: "calculo",
-  tipo: "input",
-  enunciado: "Escreva 0,0008 em notação científica.",
-  opcoes: [],
-  correta: "8 × 10⁻⁴",
-  comentario: "A vírgula anda 4 casas para a direita.",
-  tempoEstimado: 25,
-  tags: ["conversao", "negativo"],
-  habilidades: ["converter-para-notacao-cientifica"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_102",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conversao para forma decimal",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 4,
-  cognicao: "calculo",
-  tipo: "input",
-  enunciado: "Escreva 2,6 × 10⁴ na forma decimal.",
-  opcoes: [],
-  correta: "26000",
-  comentario: "A vírgula anda 4 casas para a direita.",
-  tempoEstimado: 25,
-  tags: ["decimal"],
-  habilidades: ["converter-para-forma-decimal"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_103",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conceito",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 5,
-  cognicao: "interpretacao",
-  tipo: "multipla_escolha",
-  enunciado: "Qual forma correta representa 0,0031?",
-  opcoes: ["3,1 × 10⁻³", "31 × 10⁻⁴", "0,31 × 10⁻²", "3,1 × 10³"],
-  correta: "3,1 × 10⁻³",
-  comentario: "O coeficiente deve ficar entre 1 e 10.",
-  tempoEstimado: 25,
-  tags: ["conceito", "conversao"],
-  habilidades: ["identificar-forma-valida"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_104",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Operacoes",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 5,
-  cognicao: "calculo",
-  tipo: "input",
-  enunciado: "Calcule: (9 × 10²) + (4 × 10²)",
-  opcoes: [],
-  correta: "1,3 × 10³",
-  comentario: "13 × 10² pode ser reescrito como 1,3 × 10³.",
-  tempoEstimado: 25,
-  tags: ["operacoes", "soma"],
-  habilidades: ["operar-potencias-de-dez"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_105",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Comparacao",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 5,
-  cognicao: "interpretacao",
-  tipo: "comparacao",
-  enunciado: "Qual é maior?",
-  opcoes: ["7 × 10⁻²", "6 × 10⁻¹"],
-  correta: "6 × 10⁻¹",
-  comentario: "0,6 é maior que 0,07.",
-  tempoEstimado: 25,
-  tags: ["comparacao", "negativo"],
-  habilidades: ["comparar-ordens-de-grandeza"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_106",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Operacoes",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 8,
-  cognicao: "estrategia",
-  tipo: "input",
-  enunciado: "Calcule: (7 × 10⁵) − (5 × 10⁴)",
-  opcoes: [],
-  correta: "6,5 × 10⁵",
-  comentario: "5 × 10⁴ = 0,5 × 10⁵.",
-  tempoEstimado: 30,
-  tags: ["operacoes", "subtracao"],
-  habilidades: ["operar-potencias-de-dez"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_107",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Comparacao",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 9,
-  cognicao: "estrategia",
-  tipo: "comparacao",
-  enunciado: "Qual é menor?",
-  opcoes: ["1,2 × 10⁻⁵", "9 × 10⁻⁶"],
-  correta: "9 × 10⁻⁶",
-  comentario: "10⁻⁶ representa valor menor que 10⁻⁵.",
-  tempoEstimado: 30,
-  tags: ["comparacao", "negativo"],
-  habilidades: ["comparar-ordens-de-grandeza"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_108",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Operacoes",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 9,
-  cognicao: "estrategia",
-  tipo: "input",
-  enunciado: "Calcule: (2 × 10³) × (5 × 10⁻²)",
-  opcoes: [],
-  correta: "1 × 10²",
-  comentario: "2 × 5 = 10, então ajusta para 1 × 10².",
-  tempoEstimado: 30,
-  tags: ["operacoes", "multiplicacao"],
-  habilidades: ["operar-potencias-de-dez"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_109",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conversao para forma decimal",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 8,
-  cognicao: "estrategia",
-  tipo: "input",
-  enunciado: "Escreva 3,005 × 10⁻² na forma decimal.",
-  opcoes: [],
-  correta: "0,03005",
-  comentario: "A vírgula anda 2 casas para a esquerda.",
-  tempoEstimado: 30,
-  tags: ["decimal", "negativo"],
-  habilidades: ["converter-para-forma-decimal"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_110",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Ordem de grandeza",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 8,
-  cognicao: "interpretacao",
-  tipo: "vf",
-  enunciado: "4,4 × 10⁸ tem ordem de grandeza maior que 9,9 × 10⁷.",
-  opcoes: [],
-  correta: true,
-  comentario: "10⁸ é maior que 10⁷.",
-  tempoEstimado: 30,
-  tags: ["ordem-grandeza"],
-  habilidades: ["comparar-ordens-de-grandeza"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_111",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conceito",
-  dificuldadeLabel: "facil",
-  dificuldadeNivel: 2,
-  cognicao: "interpretacao",
-  tipo: "multipla_escolha",
-  enunciado: "Qual escrita está correta em notação científica?",
-  opcoes: ["2,1 × 10⁵", "21 × 10⁴", "0,21 × 10⁶", "210 × 10³"],
-  correta: "2,1 × 10⁵",
-  comentario: "O coeficiente deve estar entre 1 e 10.",
-  tempoEstimado: 20,
-  tags: ["conceito"],
-  habilidades: ["identificar-forma-valida"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_112",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conversao para notacao cientifica",
-  dificuldadeLabel: "facil",
-  dificuldadeNivel: 3,
-  cognicao: "calculo",
-  tipo: "input",
-  enunciado: "Escreva 4800 em notação científica.",
-  opcoes: [],
-  correta: "4,8 × 10³",
-  comentario: "A vírgula anda 3 casas para a esquerda.",
-  tempoEstimado: 20,
-  tags: ["conversao"],
-  habilidades: ["converter-para-notacao-cientifica"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_113",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conversao para forma decimal",
-  dificuldadeLabel: "facil",
-  dificuldadeNivel: 2,
-  cognicao: "calculo",
-  tipo: "input",
-  enunciado: "Escreva 4 × 10² na forma decimal.",
-  opcoes: [],
-  correta: "400",
-  comentario: "A vírgula anda 2 casas para a direita.",
-  tempoEstimado: 20,
-  tags: ["decimal"],
-  habilidades: ["converter-para-forma-decimal"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_114",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Comparacao",
-  dificuldadeLabel: "facil",
-  dificuldadeNivel: 3,
-  cognicao: "interpretacao",
-  tipo: "comparacao",
-  enunciado: "Qual é maior?",
-  opcoes: ["9 × 10²", "2 × 10³"],
-  correta: "2 × 10³",
-  comentario: "2000 é maior que 900.",
-  tempoEstimado: 20,
-  tags: ["comparacao"],
-  habilidades: ["comparar-ordens-de-grandeza"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_115",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Expoentes",
-  dificuldadeLabel: "facil",
-  dificuldadeNivel: 3,
-  cognicao: "interpretacao",
-  tipo: "vf",
-  enunciado: "Em 3,8 × 10⁻³, o expoente é −3.",
-  opcoes: [],
-  correta: true,
-  comentario: "O expoente acompanha a potência de 10.",
-  tempoEstimado: 20,
-  tags: ["expoente"],
-  habilidades: ["interpretar-expoentes"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_116",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conversao para notacao cientifica",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 4,
-  cognicao: "calculo",
-  tipo: "input",
-  enunciado: "Escreva 0,02 em notação científica.",
-  opcoes: [],
-  correta: "2 × 10⁻²",
-  comentario: "A vírgula anda 2 casas para a direita.",
-  tempoEstimado: 25,
-  tags: ["conversao", "negativo"],
-  habilidades: ["converter-para-notacao-cientifica"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_117",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conversao para forma decimal",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 4,
-  cognicao: "calculo",
-  tipo: "input",
-  enunciado: "Escreva 1,2 × 10⁵ na forma decimal.",
-  opcoes: [],
-  correta: "120000",
-  comentario: "A vírgula anda 5 casas para a direita.",
-  tempoEstimado: 25,
-  tags: ["decimal"],
-  habilidades: ["converter-para-forma-decimal"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_118",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conceito",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 5,
-  cognicao: "interpretacao",
-  tipo: "multipla_escolha",
-  enunciado: "Qual forma correta representa 7300000?",
-  opcoes: ["7,3 × 10⁶", "73 × 10⁵", "0,73 × 10⁷", "730 × 10⁴"],
-  correta: "7,3 × 10⁶",
-  comentario: "O coeficiente válido é 7,3.",
-  tempoEstimado: 25,
-  tags: ["conceito", "conversao"],
-  habilidades: ["identificar-forma-valida"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_119",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Operacoes",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 5,
-  cognicao: "calculo",
-  tipo: "input",
-  enunciado: "Calcule: (5 × 10²) + (3 × 10²)",
-  opcoes: [],
-  correta: "8 × 10²",
-  comentario: "Somam-se os coeficientes, pois a potência é a mesma.",
-  tempoEstimado: 25,
-  tags: ["operacoes", "soma"],
-  habilidades: ["operar-potencias-de-dez"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_120",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Comparacao",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 5,
-  cognicao: "interpretacao",
-  tipo: "comparacao",
-  enunciado: "Qual é menor?",
-  opcoes: ["4 × 10⁻³", "3 × 10⁻²"],
-  correta: "4 × 10⁻³",
-  comentario: "0,004 é menor que 0,03.",
-  tempoEstimado: 25,
-  tags: ["comparacao", "negativo"],
-  habilidades: ["comparar-ordens-de-grandeza"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_121",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Operacoes",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 8,
-  cognicao: "estrategia",
-  tipo: "input",
-  enunciado: "Calcule: (9 × 10⁴) − (4 × 10³)",
-  opcoes: [],
-  correta: "8,6 × 10⁴",
-  comentario: "4 × 10³ = 0,4 × 10⁴.",
-  tempoEstimado: 30,
-  tags: ["operacoes", "subtracao"],
-  habilidades: ["operar-potencias-de-dez"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_122",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Comparacao",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 9,
-  cognicao: "estrategia",
-  tipo: "comparacao",
-  enunciado: "Qual é maior?",
-  opcoes: ["2,4 × 10⁻³", "1,9 × 10⁻²"],
-  correta: "1,9 × 10⁻²",
-  comentario: "0,019 é maior que 0,0024.",
-  tempoEstimado: 30,
-  tags: ["comparacao", "negativo"],
-  habilidades: ["comparar-ordens-de-grandeza"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_123",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Operacoes",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 9,
-  cognicao: "estrategia",
-  tipo: "input",
-  enunciado: "Calcule: (6 × 10²) × (5 × 10⁻¹)",
-  opcoes: [],
-  correta: "3 × 10²",
-  comentario: "6 × 5 = 30, então ajusta para 3 × 10².",
-  tempoEstimado: 30,
-  tags: ["operacoes", "multiplicacao"],
-  habilidades: ["operar-potencias-de-dez"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_124",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conversao para forma decimal",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 8,
-  cognicao: "estrategia",
-  tipo: "input",
-  enunciado: "Escreva 9,004 × 10⁻³ na forma decimal.",
-  opcoes: [],
-  correta: "0,009004",
-  comentario: "A vírgula anda 3 casas para a esquerda.",
-  tempoEstimado: 30,
-  tags: ["decimal", "negativo"],
-  habilidades: ["converter-para-forma-decimal"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_125",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Ordem de grandeza",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 8,
-  cognicao: "interpretacao",
-  tipo: "vf",
-  enunciado: "1,5 × 10⁹ tem ordem de grandeza maior que 8 × 10⁸.",
-  opcoes: [],
-  correta: true,
-  comentario: "10⁹ é maior que 10⁸.",
-  tempoEstimado: 30,
-  tags: ["ordem-grandeza"],
-  habilidades: ["comparar-ordens-de-grandeza"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-
+      id: "nc_014",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Comparacao",
+      dificuldadeLabel: "facil",
+      dificuldadeNivel: 2,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Qual é maior?",
+      opcoes: [
+        "9 × 10³",
+        "Alternativa 3",
+        "Alternativa 4",
+        "8 × 10⁴"
+      ],
+      correta: "8 × 10⁴",
+      comentario: "Mesmo com coeficiente menor, o expoente maior domina.",
+      tempoEstimado: 25,
+      tags: [
+        "comparacao"
+      ],
+      habilidades: [
+        "comparar-ordens-de-grandeza"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
     {
-  id: "nc_126",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conceito",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 6,
-  cognicao: "interpretacao",
-  tipo: "multipla_escolha",
-  enunciado: "Qual expressão NÃO está em notação científica?",
-  opcoes: ["5,6 × 10⁷", "0,9 × 10⁻²", "2 × 10⁴", "1,1 × 10⁰"],
-  correta: "0,9 × 10⁻²",
-  comentario: "O coeficiente 0,9 é menor que 1.",
-  tempoEstimado: 25,
-  tags: ["conceito"],
-  habilidades: ["identificar-forma-valida"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_127",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conversao para notacao cientifica",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 6,
-  cognicao: "calculo",
-  tipo: "input",
-  enunciado: "Escreva 0,00000012 em notação científica.",
-  opcoes: [],
-  correta: "1,2 × 10⁻⁷",
-  comentario: "A vírgula anda 7 casas para a direita.",
-  tempoEstimado: 25,
-  tags: ["conversao", "negativo"],
-  habilidades: ["converter-para-notacao-cientifica"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_128",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Operacoes",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 6,
-  cognicao: "calculo",
-  tipo: "input",
-  enunciado: "Calcule: (2 × 10⁵) ÷ (4 × 10²)",
-  opcoes: [],
-  correta: "5 × 10²",
-  comentario: "2 ÷ 4 = 0,5, então ajusta para 5 × 10².",
-  tempoEstimado: 30,
-  tags: ["operacoes", "divisao"],
-  habilidades: ["operar-potencias-de-dez"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_129",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Comparacao",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 6,
-  cognicao: "estrategia",
-  tipo: "comparacao",
-  enunciado: "Qual é maior?",
-  opcoes: ["4,5 × 10³", "4,49 × 10³"],
-  correta: "4,5 × 10³",
-  comentario: "Com expoentes iguais, compare os coeficientes.",
-  tempoEstimado: 25,
-  tags: ["comparacao"],
-  habilidades: ["comparar-ordens-de-grandeza"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_130",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Expoentes",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 6,
-  cognicao: "interpretacao",
-  tipo: "vf",
-  enunciado: "Mantendo o coeficiente positivo fixo, 10⁻⁴ representa valor menor que 10⁻².",
-  opcoes: [],
-  correta: true,
-  comentario: "Quanto mais negativo o expoente, menor o valor.",
-  tempoEstimado: 25,
-  tags: ["expoente", "negativo"],
-  habilidades: ["interpretar-expoentes"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_131",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Operacoes",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 8,
-  cognicao: "estrategia",
-  tipo: "input",
-  enunciado: "Calcule: (4 × 10⁶) + (7 × 10⁵)",
-  opcoes: [],
-  correta: "4,7 × 10⁶",
-  comentario: "7 × 10⁵ = 0,7 × 10⁶.",
-  tempoEstimado: 30,
-  tags: ["operacoes", "soma"],
-  habilidades: ["operar-potencias-de-dez"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_132",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Comparacao",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 9,
-  cognicao: "estrategia",
-  tipo: "comparacao",
-  enunciado: "Qual é menor?",
-  opcoes: ["8,2 × 10⁻⁶", "7,9 × 10⁻⁵"],
-  correta: "8,2 × 10⁻⁶",
-  comentario: "10⁻⁶ é menor que 10⁻⁵.",
-  tempoEstimado: 30,
-  tags: ["comparacao", "negativo"],
-  habilidades: ["comparar-ordens-de-grandeza"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_133",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Operacoes",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 9,
-  cognicao: "estrategia",
-  tipo: "input",
-  enunciado: "Calcule: (8 × 10⁻²) × (5 × 10³)",
-  opcoes: [],
-  correta: "4 × 10²",
-  comentario: "8 × 5 = 40, então ajusta para 4 × 10².",
-  tempoEstimado: 30,
-  tags: ["operacoes", "multiplicacao"],
-  habilidades: ["operar-potencias-de-dez"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_134",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conversao para forma decimal",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 8,
-  cognicao: "estrategia",
-  tipo: "input",
-  enunciado: "Escreva 1,004 × 10⁻⁴ na forma decimal.",
-  opcoes: [],
-  correta: "0,0001004",
-  comentario: "A vírgula anda 4 casas para a esquerda.",
-  tempoEstimado: 30,
-  tags: ["decimal", "negativo"],
-  habilidades: ["converter-para-forma-decimal"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_135",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Ordem de grandeza",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 8,
-  cognicao: "interpretacao",
-  tipo: "vf",
-  enunciado: "6,8 × 10⁻⁶ tem ordem de grandeza menor que 3,2 × 10⁻⁴.",
-  opcoes: [],
-  correta: true,
-  comentario: "10⁻⁶ é menor que 10⁻⁴.",
-  tempoEstimado: 30,
-  tags: ["ordem-grandeza", "negativo"],
-  habilidades: ["comparar-ordens-de-grandeza"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_136",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conceito",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 6,
-  cognicao: "interpretacao",
-  tipo: "multipla_escolha",
-  enunciado: "Qual escrita correta representa 0,00054?",
-  opcoes: ["5,4 × 10⁻⁴", "54 × 10⁻⁵", "0,54 × 10⁻³", "5,4 × 10⁴"],
-  correta: "5,4 × 10⁻⁴",
-  comentario: "O coeficiente válido é 5,4.",
-  tempoEstimado: 25,
-  tags: ["conceito", "conversao"],
-  habilidades: ["identificar-forma-valida"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_137",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conversao para notacao cientifica",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 6,
-  cognicao: "calculo",
-  tipo: "input",
-  enunciado: "Escreva 9080000 em notação científica.",
-  opcoes: [],
-  correta: "9,08 × 10⁶",
-  comentario: "A vírgula anda 6 casas para a esquerda.",
-  tempoEstimado: 25,
-  tags: ["conversao"],
-  habilidades: ["converter-para-notacao-cientifica"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_138",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Operacoes",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 7,
-  cognicao: "estrategia",
-  tipo: "input",
-  enunciado: "Calcule: (3 × 10⁶) ÷ (6 × 10³)",
-  opcoes: [],
-  correta: "5 × 10²",
-  comentario: "3 ÷ 6 = 0,5, então ajusta para 5 × 10².",
-  tempoEstimado: 30,
-  tags: ["operacoes", "divisao"],
-  habilidades: ["operar-potencias-de-dez"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_139",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Comparacao",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 7,
-  cognicao: "estrategia",
-  tipo: "comparacao",
-  enunciado: "Qual é maior?",
-  opcoes: ["9,01 × 10²", "9 × 10²"],
-  correta: "9,01 × 10²",
-  comentario: "Com mesmo expoente, compare os coeficientes.",
-  tempoEstimado: 25,
-  tags: ["comparacao"],
-  habilidades: ["comparar-ordens-de-grandeza"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_140",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Expoentes",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 7,
-  cognicao: "interpretacao",
-  tipo: "vf",
-  enunciado: "Em 4,3 × 10⁰, o valor numérico é 4,3.",
-  opcoes: [],
-  correta: true,
-  comentario: "Todo número elevado a zero vale 1.",
-  tempoEstimado: 25,
-  tags: ["expoente"],
-  habilidades: ["interpretar-expoentes"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_141",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Operacoes",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 8,
-  cognicao: "estrategia",
-  tipo: "input",
-  enunciado: "Calcule: (5 × 10⁷) − (8 × 10⁶)",
-  opcoes: [],
-  correta: "4,2 × 10⁷",
-  comentario: "8 × 10⁶ = 0,8 × 10⁷.",
-  tempoEstimado: 30,
-  tags: ["operacoes", "subtracao"],
-  habilidades: ["operar-potencias-de-dez"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_142",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Comparacao",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 9,
-  cognicao: "estrategia",
-  tipo: "comparacao",
-  enunciado: "Qual é maior?",
-  opcoes: ["9,5 × 10⁻⁷", "1,01 × 10⁻⁶"],
-  correta: "1,01 × 10⁻⁶",
-  comentario: "0,00000101 é maior que 0,00000095.",
-  tempoEstimado: 30,
-  tags: ["comparacao", "negativo"],
-  habilidades: ["comparar-ordens-de-grandeza"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_143",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Operacoes",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 9,
-  cognicao: "estrategia",
-  tipo: "input",
-  enunciado: "Calcule: (2,5 × 10⁴) × (4 × 10²)",
-  opcoes: [],
-  correta: "1 × 10⁷",
-  comentario: "2,5 × 4 = 10, então ajusta para 1 × 10⁷.",
-  tempoEstimado: 30,
-  tags: ["operacoes", "multiplicacao"],
-  habilidades: ["operar-potencias-de-dez"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_144",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conversao para forma decimal",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 8,
-  cognicao: "estrategia",
-  tipo: "input",
-  enunciado: "Escreva 6,07 × 10⁻⁵ na forma decimal.",
-  opcoes: [],
-  correta: "0,0000607",
-  comentario: "A vírgula anda 5 casas para a esquerda.",
-  tempoEstimado: 30,
-  tags: ["decimal", "negativo"],
-  habilidades: ["converter-para-forma-decimal"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_145",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Ordem de grandeza",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 8,
-  cognicao: "interpretacao",
-  tipo: "vf",
-  enunciado: "3,1 × 10¹² tem ordem de grandeza maior que 9 × 10¹¹.",
-  opcoes: [],
-  correta: true,
-  comentario: "10¹² é maior que 10¹¹.",
-  tempoEstimado: 30,
-  tags: ["ordem-grandeza"],
-  habilidades: ["comparar-ordens-de-grandeza"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_146",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conceito",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 6,
-  cognicao: "interpretacao",
-  tipo: "multipla_escolha",
-  enunciado: "Qual expressão está em notação científica correta?",
-  opcoes: ["0,04 × 10⁶", "4 × 10⁴", "40 × 10³", "400 × 10²"],
-  correta: "4 × 10⁴",
-  comentario: "Só ela tem coeficiente entre 1 e 10.",
-  tempoEstimado: 25,
-  tags: ["conceito"],
-  habilidades: ["identificar-forma-valida"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_147",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conversao para notacao cientifica",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 7,
-  cognicao: "calculo",
-  tipo: "input",
-  enunciado: "Escreva 0,000000003 em notação científica.",
-  opcoes: [],
-  correta: "3 × 10⁻⁹",
-  comentario: "A vírgula anda 9 casas para a direita.",
-  tempoEstimado: 25,
-  tags: ["conversao", "negativo"],
-  habilidades: ["converter-para-notacao-cientifica"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_148",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Operacoes",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 7,
-  cognicao: "estrategia",
-  tipo: "input",
-  enunciado: "Calcule: (8 × 10⁵) ÷ (2 × 10³)",
-  opcoes: [],
-  correta: "4 × 10²",
-  comentario: "8 ÷ 2 = 4 e 5 − 3 = 2.",
-  tempoEstimado: 30,
-  tags: ["operacoes", "divisao"],
-  habilidades: ["operar-potencias-de-dez"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_149",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Comparacao",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 7,
-  cognicao: "estrategia",
-  tipo: "comparacao",
-  enunciado: "Qual é menor?",
-  opcoes: ["1,01 × 10³", "1,1 × 10³"],
-  correta: "1,01 × 10³",
-  comentario: "Com expoentes iguais, compare os coeficientes.",
-  tempoEstimado: 25,
-  tags: ["comparacao"],
-  habilidades: ["comparar-ordens-de-grandeza"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_150",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Expoentes",
-  dificuldadeLabel: "media",
-  dificuldadeNivel: 7,
-  cognicao: "interpretacao",
-  tipo: "vf",
-  enunciado: "Mantendo o mesmo coeficiente positivo, 10⁶ representa valor maior que 10⁴.",
-  opcoes: [],
-  correta: true,
-  comentario: "Maior expoente positivo gera maior valor.",
-  tempoEstimado: 25,
-  tags: ["expoente"],
-  habilidades: ["interpretar-expoentes"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-
+      id: "nc_015",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Operacoes",
+      dificuldadeLabel: "facil",
+      dificuldadeNivel: 2,
+      cognicao: "calculo",
+      tipo: "multipla_escolha",
+      enunciado: "Calcule: (2 × 10³) + (3 × 10³)",
+      opcoes: [
+        "Alternativa 3",
+        "Alternativa 4",
+        "5 × 10³",
+        "Alternativa 2"
+      ],
+      correta: "5 × 10³",
+      comentario: "Somamos os coeficientes porque as potências são iguais.",
+      tempoEstimado: 25,
+      tags: [
+        "operacoes",
+        "soma"
+      ],
+      habilidades: [
+        "operar-potencias-de-dez"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
     {
-  id: "nc_151",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Equivalencia",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 8,
-  cognicao: "interpretacao",
-  tipo: "multipla_escolha",
-  enunciado: "Uma grandeza foi registrada como 0,00045. Qual representação em notação científica é equivalente a esse valor?",
-  opcoes: ["4,5 × 10⁻⁵", "4,5 × 10⁻⁴", "45 × 10⁻⁶", "0,45 × 10⁻³"],
-  correta: "4,5 × 10⁻⁴",
-  comentario: "Desloca a vírgula 4 casas para a direita → expoente -4.",
-  tempoEstimado: 35,
-  tags: ["equivalencia"],
-  habilidades: ["converter-para-notacao-cientifica"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_152",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Pegadinha",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 8,
-  cognicao: "interpretacao",
-  tipo: "vf",
-  enunciado: "A expressão 5 × 10² é equivalente a 0,5 × 10³.",
-  opcoes: ["Verdadeiro", "Falso"],
-  correta: "Verdadeiro",
-  comentario: "Ambas representam 500.",
-  tempoEstimado: 30,
-  tags: ["equivalencia"],
-  habilidades: ["equivalencia-potencias"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_153",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Comparacao indireta",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 9,
-  cognicao: "interpretacao",
-  tipo: "multipla_escolha",
-  enunciado: "Considere duas medições: A = 7 × 10⁻³ e B = 0,0006. Qual é a relação correta?",
-  opcoes: ["A > B", "A < B", "A = B", "Não é possível comparar"],
-  correta: "A > B",
-  comentario: "7×10⁻³ = 0,007 e 0,0006 é menor.",
-  tempoEstimado: 35,
-  tags: ["comparacao"],
-  habilidades: ["comparar-notacao"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_154",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Equivalencia",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 8,
-  cognicao: "calculo",
-  tipo: "input",
-  enunciado: "Escreva 6 × 10⁻³ na forma decimal.",
-  opcoes: [],
-  correta: "0,006",
-  comentario: "Expoente negativo desloca para a esquerda.",
-  tempoEstimado: 30,
-  tags: ["decimal"],
-  habilidades: ["converter-para-forma-decimal"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_155",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Pegadinha",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 9,
-  cognicao: "interpretacao",
-  tipo: "vf",
-  enunciado: "O número 1,2 × 10⁴ é maior que 12 × 10³.",
-  opcoes: ["Verdadeiro", "Falso"],
-  correta: "Falso",
-  comentario: "Ambos são iguais a 12000.",
-  tempoEstimado: 30,
-  tags: ["equivalencia"],
-  habilidades: ["equivalencia-potencias"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-
+      id: "nc_016",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Operacoes",
+      dificuldadeLabel: "facil",
+      dificuldadeNivel: 2,
+      cognicao: "calculo",
+      tipo: "multipla_escolha",
+      enunciado: "Calcule: (6 × 10²) − (1 × 10²)",
+      opcoes: [
+        "Alternativa 4",
+        "5 × 10²",
+        "Alternativa 2",
+        "Alternativa 3"
+      ],
+      correta: "5 × 10²",
+      comentario: "Subtraímos os coeficientes porque a potência é a mesma.",
+      tempoEstimado: 25,
+      tags: [
+        "operacoes",
+        "subtracao"
+      ],
+      habilidades: [
+        "operar-potencias-de-dez"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
     {
-  id: "nc_156",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Equivalencia",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 8,
-  cognicao: "interpretacao",
-  tipo: "multipla_escolha",
-  enunciado: "Um valor foi registrado como 0,00008. Qual alternativa representa corretamente esse número em notação científica?",
-  opcoes: ["8 × 10⁻⁵", "8 × 10⁻⁴", "0,8 × 10⁻⁴", "80 × 10⁻⁶"],
-  correta: "8 × 10⁻⁵",
-  comentario: "Deslocamento de 5 casas → expoente -5.",
-  tempoEstimado: 35,
-  tags: ["equivalencia"],
-  habilidades: ["converter-para-notacao-cientifica"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_157",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Comparacao indireta",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 9,
-  cognicao: "interpretacao",
-  tipo: "multipla_escolha",
-  enunciado: "Considere A = 3 × 10⁻² e B = 0,0025. Qual alternativa está correta?",
-  opcoes: ["A > B", "A < B", "A = B", "Não é possível comparar"],
-  correta: "A > B",
-  comentario: "3×10⁻² = 0,03, maior que 0,0025.",
-  tempoEstimado: 35,
-  tags: ["comparacao"],
-  habilidades: ["comparar-notacao"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_158",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Pegadinha",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 9,
-  cognicao: "interpretacao",
-  tipo: "vf",
-  enunciado: "A expressão 9 × 10³ é equivalente a 0,9 × 10⁴.",
-  opcoes: ["Verdadeiro", "Falso"],
-  correta: "Verdadeiro",
-  comentario: "Ambas representam 9000.",
-  tempoEstimado: 30,
-  tags: ["equivalencia"],
-  habilidades: ["equivalencia-potencias"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_159",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conversao indireta",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 8,
-  cognicao: "calculo",
-  tipo: "input",
-  enunciado: "Escreva 4,2 × 10⁻² na forma decimal.",
-  opcoes: [],
-  correta: "0,042",
-  comentario: "Move 2 casas para a esquerda.",
-  tempoEstimado: 30,
-  tags: ["decimal"],
-  habilidades: ["converter-para-forma-decimal"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_160",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Equivalencia",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 9,
-  cognicao: "interpretacao",
-  tipo: "multipla_escolha",
-  enunciado: "Qual alternativa representa o mesmo valor de 2 × 10⁵?",
-  opcoes: ["20 × 10⁴", "0,2 × 10⁶", "200 × 10³", "Todas estão corretas"],
-  correta: "Todas estão corretas",
-  comentario: "Todas equivalem a 200000.",
-  tempoEstimado: 40,
-  tags: ["equivalencia"],
-  habilidades: ["equivalencia-potencias"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_161",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Comparacao indireta",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 9,
-  cognicao: "interpretacao",
-  tipo: "multipla_escolha",
-  enunciado: "Considere A = 5 × 10⁻⁴ e B = 0,0003. Qual é a alternativa correta?",
-  opcoes: ["A > B", "A < B", "A = B", "Indefinido"],
-  correta: "A > B",
-  comentario: "5×10⁻⁴ = 0,0005, maior que 0,0003.",
-  tempoEstimado: 35,
-  tags: ["comparacao"],
-  habilidades: ["comparar-notacao"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_162",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Pegadinha",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 9,
-  cognicao: "interpretacao",
-  tipo: "vf",
-  enunciado: "O número 7 × 10² é menor que 0,7 × 10³.",
-  opcoes: ["Verdadeiro", "Falso"],
-  correta: "Falso",
-  comentario: "Ambos são 700.",
-  tempoEstimado: 30,
-  tags: ["equivalencia"],
-  habilidades: ["equivalencia-potencias"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_163",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Equivalencia",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 8,
-  cognicao: "calculo",
-  tipo: "input",
-  enunciado: "Escreva 9 × 10⁻⁵ na forma decimal.",
-  opcoes: [],
-  correta: "0,00009",
-  comentario: "5 casas para a esquerda.",
-  tempoEstimado: 30,
-  tags: ["decimal"],
-  habilidades: ["converter-para-forma-decimal"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_164",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Equivalencia",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 9,
-  cognicao: "interpretacao",
-  tipo: "multipla_escolha",
-  enunciado: "Qual alternativa NÃO representa o mesmo valor de 6 × 10³?",
-  opcoes: ["6000", "0,6 × 10⁴", "60 × 10²", "6 × 10²"],
-  correta: "6 × 10²",
-  comentario: "6×10² = 600, diferente de 6000.",
-  tempoEstimado: 40,
-  tags: ["equivalencia"],
-  habilidades: ["equivalencia-potencias"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_165",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Comparacao indireta",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 9,
-  cognicao: "interpretacao",
-  tipo: "multipla_escolha",
-  enunciado: "A = 8 × 10⁻³ e B = 0,009. Qual a relação correta?",
-  opcoes: ["A > B", "A < B", "A = B", "Não comparável"],
-  correta: "A < B",
-  comentario: "0,008 < 0,009.",
-  tempoEstimado: 35,
-  tags: ["comparacao"],
-  habilidades: ["comparar-notacao"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-
+      id: "nc_017",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Ordem de grandeza",
+      dificuldadeLabel: "facil",
+      dificuldadeNivel: 2,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "10⁶ representa um milhão.",
+      opcoes: [
+        "Verdadeiro",
+        "Falso"
+      ],
+      correta: "Verdadeiro",
+      comentario: "1 000 000 = 10⁶.",
+      tempoEstimado: 25,
+      tags: [
+        "ordem-grandeza",
+        "vf"
+      ],
+      habilidades: [
+        "comparar-ordens-de-grandeza"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
     {
-  id: "nc_166",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Equivalencia",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 9,
-  cognicao: "interpretacao",
-  tipo: "multipla_escolha",
-  enunciado: "Qual alternativa representa corretamente o número 0,00072 em notação científica?",
-  opcoes: ["7,2 × 10⁻⁴", "7,2 × 10⁻⁵", "72 × 10⁻⁶", "0,72 × 10⁻³"],
-  correta: "7,2 × 10⁻⁴",
-  comentario: "Desloca 4 casas → expoente -4.",
-  tempoEstimado: 35,
-  tags: ["equivalencia"],
-  habilidades: ["converter-para-notacao-cientifica"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_167",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Pegadinha",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 9,
-  cognicao: "interpretacao",
-  tipo: "vf",
-  enunciado: "A expressão 3 × 10⁴ é equivalente a 30 × 10³.",
-  opcoes: ["Verdadeiro", "Falso"],
-  correta: "Verdadeiro",
-  comentario: "Ambas representam 30000.",
-  tempoEstimado: 30,
-  tags: ["equivalencia"],
-  habilidades: ["equivalencia-potencias"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_168",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Comparacao indireta",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 9,
-  cognicao: "interpretacao",
-  tipo: "multipla_escolha",
-  enunciado: "Considere A = 6 × 10⁻³ e B = 0,0055. Qual alternativa está correta?",
-  opcoes: ["A > B", "A < B", "A = B", "Indefinido"],
-  correta: "A > B",
-  comentario: "0,006 > 0,0055.",
-  tempoEstimado: 35,
-  tags: ["comparacao"],
-  habilidades: ["comparar-notacao"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_169",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conversao indireta",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 8,
-  cognicao: "calculo",
-  tipo: "input",
-  enunciado: "Escreva 1,5 × 10⁻³ na forma decimal.",
-  opcoes: [],
-  correta: "0,0015",
-  comentario: "3 casas para a esquerda.",
-  tempoEstimado: 30,
-  tags: ["decimal"],
-  habilidades: ["converter-para-forma-decimal"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_170",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Equivalencia",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 10,
-  cognicao: "interpretacao",
-  tipo: "multipla_escolha",
-  enunciado: "Qual alternativa representa o mesmo valor de 4 × 10⁶?",
-  opcoes: ["40 × 10⁵", "0,4 × 10⁷", "400 × 10⁴", "Todas estão corretas"],
-  correta: "Todas estão corretas",
-  comentario: "Todas equivalem a 4.000.000.",
-  tempoEstimado: 40,
-  tags: ["equivalencia"],
-  habilidades: ["equivalencia-potencias"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_171",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Pegadinha",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 10,
-  cognicao: "interpretacao",
-  tipo: "vf",
-  enunciado: "O número 2,5 × 10³ é maior que 25 × 10².",
-  opcoes: ["Verdadeiro", "Falso"],
-  correta: "Falso",
-  comentario: "Ambos são 2500.",
-  tempoEstimado: 30,
-  tags: ["equivalencia"],
-  habilidades: ["equivalencia-potencias"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_172",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Equivalencia",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 9,
-  cognicao: "calculo",
-  tipo: "input",
-  enunciado: "Escreva 8 × 10⁻⁶ na forma decimal.",
-  opcoes: [],
-  correta: "0,000008",
-  comentario: "6 casas para a esquerda.",
-  tempoEstimado: 30,
-  tags: ["decimal"],
-  habilidades: ["converter-para-forma-decimal"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_173",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Equivalencia negativa",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 10,
-  cognicao: "interpretacao",
-  tipo: "multipla_escolha",
-  enunciado: "Qual alternativa NÃO representa o mesmo valor de 9 × 10⁴?",
-  opcoes: ["90000", "0,9 × 10⁵", "90 × 10³", "9 × 10³"],
-  correta: "9 × 10³",
-  comentario: "9×10³ = 9000.",
-  tempoEstimado: 40,
-  tags: ["equivalencia"],
-  habilidades: ["equivalencia-potencias"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_174",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Comparacao indireta",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 9,
-  cognicao: "interpretacao",
-  tipo: "multipla_escolha",
-  enunciado: "A = 7 × 10⁻⁴ e B = 0,00065. Qual a alternativa correta?",
-  opcoes: ["A > B", "A < B", "A = B", "Indefinido"],
-  correta: "A > B",
-  comentario: "0,0007 > 0,00065.",
-  tempoEstimado: 35,
-  tags: ["comparacao"],
-  habilidades: ["comparar-notacao"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_175",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Pegadinha",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 10,
-  cognicao: "interpretacao",
-  tipo: "vf",
-  enunciado: "0,3 × 10⁴ é maior que 3 × 10³.",
-  opcoes: ["Verdadeiro", "Falso"],
-  correta: "Falso",
-  comentario: "Ambos são 3000.",
-  tempoEstimado: 30,
-  tags: ["equivalencia"],
-  habilidades: ["equivalencia-potencias"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-
+      id: "nc_018",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conversao para notacao cientifica",
+      dificuldadeLabel: "facil",
+      dificuldadeNivel: 2,
+      cognicao: "calculo",
+      tipo: "multipla_escolha",
+      enunciado: "Escreva 0,08 em notação científica.",
+      opcoes: [
+        "Alternativa 2",
+        "Alternativa 3",
+        "Alternativa 4",
+        "8 × 10⁻²"
+      ],
+      correta: "8 × 10⁻²",
+      comentario: "A vírgula anda 2 casas para a direita.",
+      tempoEstimado: 25,
+      tags: [
+        "conversao"
+      ],
+      habilidades: [
+        "converter-para-notacao-cientifica"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
     {
-  id: "nc_176",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Equivalencia",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 8,
-  cognicao: "interpretacao",
-  tipo: "multipla_escolha",
-  enunciado: "Ao reescrever a expressão 34 × 10⁵ na forma científica padrão, qual alternativa mantém o mesmo valor numérico?",
-  opcoes: ["3,4 × 10⁶", "34 × 10⁵", "0,34 × 10⁷", "3,4 × 10⁵"],
-  correta: "3,4 × 10⁶",
-  comentario: "Ao deslocar a vírgula uma casa para a esquerda, soma-se 1 ao expoente.",
-  tempoEstimado: 30,
-  tags: ["conceito", "equivalencia"],
-  habilidades: ["identificar-forma-valida"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_177",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Operacoes com equivalencia",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 9,
-  cognicao: "estrategia",
-  tipo: "input",
-  enunciado: "Ao dividir 7 × 10⁻¹ por 2 × 10², qual resultado em notação científica representa corretamente o quociente?",
-  opcoes: [],
-  correta: "3,5 × 10⁻³",
-  comentario: "7 ÷ 2 = 3,5 e −1 − 2 = −3.",
-  tempoEstimado: 30,
-  tags: ["operacoes", "divisao", "negativo", "equivalencia"],
-  habilidades: ["operar-potencias-de-dez"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_178",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Comparacao indireta",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 9,
-  cognicao: "estrategia",
-  tipo: "comparacao",
-  enunciado: "Sem transformar completamente os dois números, identifique qual deles representa o maior valor.",
-  opcoes: ["9,99 × 10⁴", "1 × 10⁵"],
-  correta: "1 × 10⁵",
-  comentario: "1 × 10⁵ = 100000, que é maior que 99900.",
-  tempoEstimado: 30,
-  tags: ["comparacao", "equivalencia"],
-  habilidades: ["comparar-ordens-de-grandeza"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_179",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Operacoes com reescrita",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 9,
-  cognicao: "estrategia",
-  tipo: "input",
-  enunciado: "Para somar 9 × 10⁻³ e 2 × 10⁻⁴, é preciso reescrever uma das parcelas na mesma ordem de potência. Qual é o resultado final?",
-  opcoes: [],
-  correta: "9,2 × 10⁻³",
-  comentario: "2 × 10⁻⁴ = 0,2 × 10⁻³.",
-  tempoEstimado: 30,
-  tags: ["operacoes", "soma", "negativo", "equivalencia"],
-  habilidades: ["operar-potencias-de-dez"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_180",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Expoentes",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 8,
-  cognicao: "interpretacao",
-  tipo: "vf",
-  enunciado: "Mantendo o mesmo coeficiente positivo, um número escrito com 10⁻⁸ representa valor menor do que outro escrito com 10⁻⁶.",
-  opcoes: [],
-  correta: true,
-  comentario: "Quanto mais negativo o expoente, menor o valor.",
-  tempoEstimado: 30,
-  tags: ["expoente", "negativo", "comparacao"],
-  habilidades: ["comparar-ordens-de-grandeza"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_181",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conversao para notacao cientifica",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 8,
-  cognicao: "estrategia",
-  tipo: "input",
-  enunciado: "Um valor extremamente pequeno foi registrado como 0,00000000045. Escreva esse número em notação científica.",
-  opcoes: [],
-  correta: "4,5 × 10⁻¹⁰",
-  comentario: "A vírgula anda 10 casas para a direita.",
-  tempoEstimado: 30,
-  tags: ["conversao", "negativo", "equivalencia"],
-  habilidades: ["converter-para-notacao-cientifica"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_182",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conversao para forma decimal",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 8,
-  cognicao: "estrategia",
-  tipo: "input",
-  enunciado: "Ao converter 7,0008 × 10⁻⁴ para a forma decimal, qual escrita preserva exatamente o valor original?",
-  opcoes: [],
-  correta: "0,00070008",
-  comentario: "A vírgula anda 4 casas para a esquerda.",
-  tempoEstimado: 30,
-  tags: ["decimal", "negativo", "equivalencia"],
-  habilidades: ["converter-para-forma-decimal"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_183",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Comparacao indireta",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 9,
-  cognicao: "estrategia",
-  tipo: "comparacao",
-  enunciado: "Observe os dois valores a seguir e identifique qual representa a menor quantidade.",
-  opcoes: ["3,01 × 10⁻⁴", "2,99 × 10⁻³"],
-  correta: "3,01 × 10⁻⁴",
-  comentario: "10⁻⁴ indica valor menor que 10⁻³.",
-  tempoEstimado: 30,
-  tags: ["comparacao", "negativo"],
-  habilidades: ["comparar-ordens-de-grandeza"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_184",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Operacoes",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 9,
-  cognicao: "estrategia",
-  tipo: "input",
-  enunciado: "Ao multiplicar 1,5 × 10⁶ por 2 × 10², qual resultado final fica corretamente escrito em notação científica?",
-  opcoes: [],
-  correta: "3 × 10⁸",
-  comentario: "1,5 × 2 = 3 e 6 + 2 = 8.",
-  tempoEstimado: 30,
-  tags: ["operacoes", "multiplicacao"],
-  habilidades: ["operar-potencias-de-dez"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_185",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Ordem de grandeza",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 8,
-  cognicao: "interpretacao",
-  tipo: "vf",
-  enunciado: "Comparando apenas a ordem de grandeza, 2,2 × 10¹⁴ representa valor maior do que 9,9 × 10¹³.",
-  opcoes: [],
-  correta: true,
-  comentario: "10¹⁴ é maior que 10¹³.",
-  tempoEstimado: 30,
-  tags: ["ordem-grandeza", "comparacao"],
-  habilidades: ["comparar-ordens-de-grandeza"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_186",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Equivalencia",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 8,
-  cognicao: "interpretacao",
-  tipo: "multipla_escolha",
-  enunciado: "A expressão 0,07 × 10⁶ não está na forma científica padrão. Qual alternativa reescreve esse valor corretamente sem alterá-lo?",
-  opcoes: ["7 × 10⁴", "7 × 10⁵", "0,7 × 10⁵", "70 × 10³"],
-  correta: "7 × 10⁴",
-  comentario: "0,07 × 10⁶ = 70000 = 7 × 10⁴.",
-  tempoEstimado: 30,
-  tags: ["conceito", "equivalencia"],
-  habilidades: ["identificar-forma-valida"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_187",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Operacoes com expoentes negativos",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 9,
-  cognicao: "estrategia",
-  tipo: "input",
-  enunciado: "Ao dividir 6 × 10⁻⁵ por 3 × 10⁻², qual resultado representa corretamente o valor obtido?",
-  opcoes: [],
-  correta: "2 × 10⁻³",
-  comentario: "6 ÷ 3 = 2 e −5 − (−2) = −3.",
-  tempoEstimado: 30,
-  tags: ["operacoes", "divisao", "negativo"],
-  habilidades: ["operar-potencias-de-dez"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_188",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Comparacao indireta",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 9,
-  cognicao: "estrategia",
-  tipo: "comparacao",
-  enunciado: "Sem arredondar, escolha o maior valor entre as duas escritas abaixo.",
-  opcoes: ["9,999 × 10²", "1 × 10³"],
-  correta: "1 × 10³",
-  comentario: "1000 é maior que 999,9.",
-  tempoEstimado: 30,
-  tags: ["comparacao", "equivalencia"],
-  habilidades: ["comparar-ordens-de-grandeza"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_189",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Operacoes com reescrita",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 9,
-  cognicao: "estrategia",
-  tipo: "input",
-  enunciado: "Para somar 8 × 10⁻⁴ e 5 × 10⁻⁵, pode-se reescrever a segunda parcela com a mesma potência da primeira. Qual é o resultado final?",
-  opcoes: [],
-  correta: "8,5 × 10⁻⁴",
-  comentario: "5 × 10⁻⁵ = 0,5 × 10⁻⁴.",
-  tempoEstimado: 30,
-  tags: ["operacoes", "soma", "negativo", "equivalencia"],
-  habilidades: ["operar-potencias-de-dez"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_190",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Expoentes",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 8,
-  cognicao: "interpretacao",
-  tipo: "vf",
-  enunciado: "Mantendo o mesmo coeficiente positivo, uma escrita com 10¹¹ representa valor maior do que outra com 10⁹.",
-  opcoes: [],
-  correta: true,
-  comentario: "Maior expoente positivo gera maior valor.",
-  tempoEstimado: 30,
-  tags: ["expoente", "comparacao"],
-  habilidades: ["comparar-ordens-de-grandeza"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_191",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conversao para notacao cientifica",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 8,
-  cognicao: "estrategia",
-  tipo: "input",
-  enunciado: "Um número grande foi registrado como 4500000000. Escreva esse valor em notação científica.",
-  opcoes: [],
-  correta: "4,5 × 10⁹",
-  comentario: "A vírgula anda 9 casas para a esquerda.",
-  tempoEstimado: 30,
-  tags: ["conversao", "equivalencia"],
-  habilidades: ["converter-para-notacao-cientifica"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_192",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Conversao para forma decimal",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 8,
-  cognicao: "estrategia",
-  tipo: "input",
-  enunciado: "Ao converter 8,09 × 10⁻⁶ para a forma decimal, qual escrita preserva corretamente todos os algarismos do número?",
-  opcoes: [],
-  correta: "0,00000809",
-  comentario: "A vírgula anda 6 casas para a esquerda.",
-  tempoEstimado: 30,
-  tags: ["decimal", "negativo", "equivalencia"],
-  habilidades: ["converter-para-forma-decimal"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_193",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Comparacao indireta",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 9,
-  cognicao: "estrategia",
-  tipo: "comparacao",
-  enunciado: "Entre os dois valores abaixo, identifique aquele que representa a menor quantidade.",
-  opcoes: ["4,01 × 10⁻¹⁰", "3,99 × 10⁻⁹"],
-  correta: "4,01 × 10⁻¹⁰",
-  comentario: "10⁻¹⁰ é menor que 10⁻⁹.",
-  tempoEstimado: 30,
-  tags: ["comparacao", "negativo"],
-  habilidades: ["comparar-ordens-de-grandeza"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_194",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Operacoes",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 9,
-  cognicao: "estrategia",
-  tipo: "input",
-  enunciado: "Ao multiplicar 3 × 10⁷ por 3 × 10⁻³, qual resultado final fica corretamente expresso em notação científica?",
-  opcoes: [],
-  correta: "9 × 10⁴",
-  comentario: "3 × 3 = 9 e 7 + (−3) = 4.",
-  tempoEstimado: 30,
-  tags: ["operacoes", "multiplicacao"],
-  habilidades: ["operar-potencias-de-dez"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_195",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Ordem de grandeza",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 8,
-  cognicao: "interpretacao",
-  tipo: "vf",
-  enunciado: "Comparando a ordem de grandeza, 7,7 × 10⁻¹² representa valor menor do que 1,2 × 10⁻¹⁰.",
-  opcoes: [],
-  correta: true,
-  comentario: "10⁻¹² é menor que 10⁻¹⁰.",
-  tempoEstimado: 30,
-  tags: ["ordem-grandeza", "negativo", "comparacao"],
-  habilidades: ["comparar-ordens-de-grandeza"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_196",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Equivalencia",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 8,
-  cognicao: "interpretacao",
-  tipo: "multipla_escolha",
-  enunciado: "A expressão 250 × 10⁻³ não está na forma científica padrão. Qual alternativa a reescreve corretamente sem mudar seu valor?",
-  opcoes: ["2,5 × 10⁻¹", "25 × 10⁻²", "0,25 × 10⁰", "2,5 × 10⁻²"],
-  correta: "2,5 × 10⁻¹",
-  comentario: "250 × 10⁻³ = 0,25 = 2,5 × 10⁻¹.",
-  tempoEstimado: 30,
-  tags: ["conceito", "equivalencia"],
-  habilidades: ["identificar-forma-valida"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_197",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Operacoes com expoentes negativos",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 9,
-  cognicao: "estrategia",
-  tipo: "input",
-  enunciado: "Ao dividir 4 × 10⁻¹ por 2 × 10⁻⁴, qual é o resultado corretamente escrito em notação científica?",
-  opcoes: [],
-  correta: "2 × 10³",
-  comentario: "4 ÷ 2 = 2 e −1 − (−4) = 3.",
-  tempoEstimado: 30,
-  tags: ["operacoes", "divisao", "negativo"],
-  habilidades: ["operar-potencias-de-dez"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_198",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Comparacao indireta",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 9,
-  cognicao: "estrategia",
-  tipo: "comparacao",
-  enunciado: "Sem transformar desnecessariamente os dois valores, identifique qual deles é o maior.",
-  opcoes: ["9,999 × 10⁻²", "1 × 10⁻¹"],
-  correta: "1 × 10⁻¹",
-  comentario: "0,1 é maior que 0,09999.",
-  tempoEstimado: 30,
-  tags: ["comparacao", "negativo"],
-  habilidades: ["comparar-ordens-de-grandeza"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_199",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Operacoes com reescrita",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 9,
-  cognicao: "estrategia",
-  tipo: "input",
-  enunciado: "Para somar 9 × 10⁵ e 9 × 10⁴, pode-se reescrever a segunda parcela com a mesma potência da primeira. Qual é o resultado final?",
-  opcoes: [],
-  correta: "9,9 × 10⁵",
-  comentario: "9 × 10⁴ = 0,9 × 10⁵.",
-  tempoEstimado: 30,
-  tags: ["operacoes", "soma", "equivalencia"],
-  habilidades: ["operar-potencias-de-dez"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-},
-{
-  id: "nc_200",
-  serie: [1],
-  materia: "Matemática",
-  topico: "Notação Científica",
-  subtopico: "Expoentes",
-  dificuldadeLabel: "dificil",
-  dificuldadeNivel: 8,
-  cognicao: "interpretacao",
-  tipo: "vf",
-  enunciado: "Na expressão 1 × 10⁰, o valor numérico permanece igual a 1.",
-  opcoes: [],
-  correta: true,
-  comentario: "Todo número não nulo elevado a zero vale 1.",
-  tempoEstimado: 30,
-  tags: ["expoente"],
-  habilidades: ["interpretar-expoentes"],
-  collections: ["questions"],
-  sourceType: "original",
-  sourceExam: "",
-  sourceYear: null,
-  competencies: [],
-  status: "revisada"
-}
+      id: "nc_019",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conceito",
+      dificuldadeLabel: "facil",
+      dificuldadeNivel: 2,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Qual forma correta representa 0,00032 em notação científica?",
+      opcoes: [
+        "0,32 × 10⁻³",
+        "3,2 × 10⁴",
+        "3,2 × 10⁻⁴",
+        "32 × 10⁻⁵"
+      ],
+      correta: "3,2 × 10⁻⁴",
+      comentario: "O coeficiente precisa ficar entre 1 e 10.",
+      tempoEstimado: 25,
+      tags: [
+        "conceito",
+        "conversao"
+      ],
+      habilidades: [
+        "identificar-forma-valida"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_020",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Comparacao",
+      dificuldadeLabel: "facil",
+      dificuldadeNivel: 2,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Qual é menor?",
+      opcoes: [
+        "4 × 10⁻²",
+        "3 × 10⁻¹",
+        "Alternativa 3",
+        "Alternativa 4"
+      ],
+      correta: "4 × 10⁻²",
+      comentario: "4 × 10⁻² = 0,04 e 3 × 10⁻¹ = 0,3.",
+      tempoEstimado: 25,
+      tags: [
+        "comparacao",
+        "negativo"
+      ],
+      habilidades: [
+        "comparar-ordens-de-grandeza"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_021",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conversao para forma decimal",
+      dificuldadeLabel: "facil",
+      dificuldadeNivel: 3,
+      cognicao: "calculo",
+      tipo: "multipla_escolha",
+      enunciado: "Escreva 9,01 × 10² na forma decimal.",
+      opcoes: [
+        "9010",
+        "90,1",
+        "902",
+        "901"
+      ],
+      correta: "901",
+      comentario: "A vírgula anda 2 casas para a direita.",
+      tempoEstimado: 25,
+      tags: [
+        "decimal"
+      ],
+      habilidades: [
+        "converter-para-forma-decimal"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_022",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conversao para notacao cientifica",
+      dificuldadeLabel: "facil",
+      dificuldadeNivel: 3,
+      cognicao: "calculo",
+      tipo: "multipla_escolha",
+      enunciado: "Escreva 0,0000009 em notação científica.",
+      opcoes: [
+        "Alternativa 3",
+        "Alternativa 4",
+        "9 × 10⁻⁷",
+        "Alternativa 2"
+      ],
+      correta: "9 × 10⁻⁷",
+      comentario: "A vírgula anda 7 casas para a direita.",
+      tempoEstimado: 25,
+      tags: [
+        "conversao",
+        "negativo"
+      ],
+      habilidades: [
+        "converter-para-notacao-cientifica"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_023",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Operacoes",
+      dificuldadeLabel: "facil",
+      dificuldadeNivel: 3,
+      cognicao: "calculo",
+      tipo: "multipla_escolha",
+      enunciado: "Calcule: (2 × 10⁴) × (3 × 10²)",
+      opcoes: [
+        "Alternativa 4",
+        "6 × 10⁶",
+        "Alternativa 2",
+        "Alternativa 3"
+      ],
+      correta: "6 × 10⁶",
+      comentario: "Multiplicamos coeficientes e somamos expoentes.",
+      tempoEstimado: 30,
+      tags: [
+        "operacoes",
+        "multiplicacao"
+      ],
+      habilidades: [
+        "operar-potencias-de-dez"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_024",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Operacoes",
+      dificuldadeLabel: "facil",
+      dificuldadeNivel: 3,
+      cognicao: "calculo",
+      tipo: "multipla_escolha",
+      enunciado: "Calcule: (8 × 10⁵) ÷ (2 × 10²)",
+      opcoes: [
+        "4 × 10³",
+        "Alternativa 2",
+        "Alternativa 3",
+        "Alternativa 4"
+      ],
+      correta: "4 × 10³",
+      comentario: "Dividimos coeficientes e subtraímos expoentes.",
+      tempoEstimado: 30,
+      tags: [
+        "operacoes",
+        "divisao"
+      ],
+      habilidades: [
+        "operar-potencias-de-dez"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_025",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Ordem de grandeza",
+      dificuldadeLabel: "facil",
+      dificuldadeNivel: 3,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Qual opção representa a mesma ordem de grandeza de 4,8 × 10⁵?",
+      opcoes: [
+        "10⁻⁵",
+        "10⁶",
+        "10⁴",
+        "10⁵"
+      ],
+      correta: "10⁵",
+      comentario: "A ordem está ligada à potência de 10 presente na escrita.",
+      tempoEstimado: 25,
+      tags: [
+        "ordem-grandeza"
+      ],
+      habilidades: [
+        "comparar-ordens-de-grandeza"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_026",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Comparacao",
+      dificuldadeLabel: "facil",
+      dificuldadeNivel: 3,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Qual é maior?",
+      opcoes: [
+        "Alternativa 3",
+        "Alternativa 4",
+        "1,2 × 10⁶",
+        "9,9 × 10⁵"
+      ],
+      correta: "1,2 × 10⁶",
+      comentario: "10⁶ é ordem superior a 10⁵.",
+      tempoEstimado: 25,
+      tags: [
+        "comparacao"
+      ],
+      habilidades: [
+        "comparar-ordens-de-grandeza"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_027",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Expoentes",
+      dificuldadeLabel: "facil",
+      dificuldadeNivel: 3,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Em 7 × 10⁻⁴, a forma decimal é menor que 1.",
+      opcoes: [
+        "Verdadeiro",
+        "Falso"
+      ],
+      correta: "Verdadeiro",
+      comentario: "Expoente negativo gera número decimal pequeno.",
+      tempoEstimado: 25,
+      tags: [
+        "expoente",
+        "negativo",
+        "vf"
+      ],
+      habilidades: [
+        "interpretar-expoentes"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_028",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conversao para forma decimal",
+      dificuldadeLabel: "facil",
+      dificuldadeNivel: 3,
+      cognicao: "calculo",
+      tipo: "multipla_escolha",
+      enunciado: "Escreva 1,5 × 10⁻³ na forma decimal.",
+      opcoes: [
+        "0,0015",
+        "0,015",
+        "0,00015000000000000001",
+        "1,0015"
+      ],
+      correta: "0,0015",
+      comentario: "A vírgula anda 3 casas para a esquerda.",
+      tempoEstimado: 25,
+      tags: [
+        "decimal",
+        "negativo"
+      ],
+      habilidades: [
+        "converter-para-forma-decimal"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_029",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conversao para notacao cientifica",
+      dificuldadeLabel: "facil",
+      dificuldadeNivel: 3,
+      cognicao: "calculo",
+      tipo: "multipla_escolha",
+      enunciado: "Escreva 45000 em notação científica.",
+      opcoes: [
+        "Alternativa 2",
+        "Alternativa 3",
+        "Alternativa 4",
+        "4,5 × 10⁴"
+      ],
+      correta: "4,5 × 10⁴",
+      comentario: "A vírgula anda 4 casas para a esquerda.",
+      tempoEstimado: 25,
+      tags: [
+        "conversao"
+      ],
+      habilidades: [
+        "converter-para-notacao-cientifica"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_030",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conceito",
+      dificuldadeLabel: "facil",
+      dificuldadeNivel: 3,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Qual escrita correta representa 6200000?",
+      opcoes: [
+        "620 × 10⁴",
+        "6,2 × 10⁶",
+        "62 × 10⁵",
+        "0,62 × 10⁷"
+      ],
+      correta: "6,2 × 10⁶",
+      comentario: "Coeficiente entre 1 e 10.",
+      tempoEstimado: 25,
+      tags: [
+        "conceito",
+        "conversao"
+      ],
+      habilidades: [
+        "identificar-forma-valida"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_031",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Operacoes",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 4,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Calcule: (4 × 10⁵) + (3 × 10⁴)",
+      opcoes: [
+        "4,3 × 10⁵",
+        "Alternativa 2",
+        "Alternativa 3",
+        "Alternativa 4"
+      ],
+      correta: "4,3 × 10⁵",
+      comentario: "Converta 3 × 10⁴ em 0,3 × 10⁵ antes de somar.",
+      tempoEstimado: 30,
+      tags: [
+        "operacoes",
+        "soma"
+      ],
+      habilidades: [
+        "operar-potencias-de-dez"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_032",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Operacoes",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 4,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Calcule: (7 × 10⁻²) + (2 × 10⁻³)",
+      opcoes: [
+        "Alternativa 2",
+        "Alternativa 3",
+        "Alternativa 4",
+        "7,2 × 10⁻²"
+      ],
+      correta: "7,2 × 10⁻²",
+      comentario: "2 × 10⁻³ = 0,2 × 10⁻².",
+      tempoEstimado: 30,
+      tags: [
+        "operacoes",
+        "negativo"
+      ],
+      habilidades: [
+        "operar-potencias-de-dez"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_033",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Comparacao",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 4,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Qual é maior?",
+      opcoes: [
+        "Alternativa 3",
+        "Alternativa 4",
+        "4,9 × 10⁻²",
+        "5,1 × 10⁻³"
+      ],
+      correta: "4,9 × 10⁻²",
+      comentario: "10⁻² é maior que 10⁻³ nesse contexto decimal.",
+      tempoEstimado: 30,
+      tags: [
+        "comparacao",
+        "negativo"
+      ],
+      habilidades: [
+        "comparar-ordens-de-grandeza"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_034",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Operacoes",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 4,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Calcule: (9 × 10⁶) ÷ (3 × 10⁻²)",
+      opcoes: [
+        "Alternativa 4",
+        "3 × 10⁸",
+        "Alternativa 2",
+        "Alternativa 3"
+      ],
+      correta: "3 × 10⁸",
+      comentario: "Divida 9 por 3 e faça 6 − (−2) = 8.",
+      tempoEstimado: 30,
+      tags: [
+        "operacoes",
+        "divisao"
+      ],
+      habilidades: [
+        "operar-potencias-de-dez"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_035",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Ordem de grandeza",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 4,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "3,2 × 10⁷ está mais próximo de 10⁷ do que de 10⁸ em ordem de grandeza simples.",
+      opcoes: [
+        "Verdadeiro",
+        "Falso"
+      ],
+      correta: "Verdadeiro",
+      comentario: "A potência dominante ainda é 10⁷.",
+      tempoEstimado: 30,
+      tags: [
+        "ordem-grandeza",
+        "vf"
+      ],
+      habilidades: [
+        "comparar-ordens-de-grandeza"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_036",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conversao para notacao cientifica",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 4,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Escreva 0,000000045 em notação científica.",
+      opcoes: [
+        "Alternativa 2",
+        "Alternativa 3",
+        "Alternativa 4",
+        "4,5 × 10⁻⁸"
+      ],
+      correta: "4,5 × 10⁻⁸",
+      comentario: "A vírgula anda 8 casas para a direita.",
+      tempoEstimado: 30,
+      tags: [
+        "conversao",
+        "negativo"
+      ],
+      habilidades: [
+        "converter-para-notacao-cientifica"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_037",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conversao para forma decimal",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 4,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Escreva 1,09 × 10⁻⁵ na forma decimal.",
+      opcoes: [
+        "0,0000010900000000000002",
+        "1,0000109",
+        "0,0000109",
+        "0,000109"
+      ],
+      correta: "0,0000109",
+      comentario: "A vírgula anda 5 casas para a esquerda.",
+      tempoEstimado: 30,
+      tags: [
+        "decimal",
+        "negativo"
+      ],
+      habilidades: [
+        "converter-para-forma-decimal"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_038",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Comparacao",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 4,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Qual é menor?",
+      opcoes: [
+        "Alternativa 4",
+        "9,99 × 10³",
+        "1,01 × 10⁴",
+        "Alternativa 3"
+      ],
+      correta: "9,99 × 10³",
+      comentario: "9,99 × 10³ = 9990 e 1,01 × 10⁴ = 10100.",
+      tempoEstimado: 30,
+      tags: [
+        "comparacao"
+      ],
+      habilidades: [
+        "comparar-ordens-de-grandeza"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_039",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Operacoes",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 4,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Calcule: (2,5 × 10³) × (4 × 10⁻¹)",
+      opcoes: [
+        "1 × 10³",
+        "Alternativa 2",
+        "Alternativa 3",
+        "Alternativa 4"
+      ],
+      correta: "1 × 10³",
+      comentario: "2,5 × 4 = 10, então ajusta para 1 × 10³.",
+      tempoEstimado: 30,
+      tags: [
+        "operacoes",
+        "multiplicacao"
+      ],
+      habilidades: [
+        "operar-potencias-de-dez"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_040",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Expoentes",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 4,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Quanto menor o expoente negativo, menor o número decimal correspondente, mantendo o mesmo coeficiente positivo.",
+      opcoes: [
+        "Verdadeiro",
+        "Falso"
+      ],
+      correta: "Verdadeiro",
+      comentario: "Por exemplo, 5 × 10⁻⁵ é menor que 5 × 10⁻³.",
+      tempoEstimado: 30,
+      tags: [
+        "expoente",
+        "negativo",
+        "vf"
+      ],
+      habilidades: [
+        "interpretar-expoentes"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_041",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conceito",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 4,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Qual é a forma correta de 98 × 10⁴ em notação científica?",
+      opcoes: [
+        "9,8 × 10⁴",
+        "9,8 × 10⁵",
+        "98 × 10⁴",
+        "0,98 × 10⁶"
+      ],
+      correta: "9,8 × 10⁵",
+      comentario: "Ao deslocar a vírgula uma casa para a esquerda, soma 1 ao expoente.",
+      tempoEstimado: 30,
+      tags: [
+        "conceito"
+      ],
+      habilidades: [
+        "identificar-forma-valida"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_042",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Operacoes",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 4,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Calcule: (6 × 10⁷) − (2 × 10⁶)",
+      opcoes: [
+        "5,8 × 10⁷",
+        "Alternativa 2",
+        "Alternativa 3",
+        "Alternativa 4"
+      ],
+      correta: "5,8 × 10⁷",
+      comentario: "2 × 10⁶ = 0,2 × 10⁷.",
+      tempoEstimado: 30,
+      tags: [
+        "operacoes",
+        "subtracao"
+      ],
+      habilidades: [
+        "operar-potencias-de-dez"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_043",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Comparacao",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 4,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Qual é maior?",
+      opcoes: [
+        "9,9 × 10⁻⁴",
+        "Alternativa 3",
+        "Alternativa 4",
+        "1,01 × 10⁻³"
+      ],
+      correta: "1,01 × 10⁻³",
+      comentario: "1,01 × 10⁻³ = 0,00101 e 9,9 × 10⁻⁴ = 0,00099.",
+      tempoEstimado: 30,
+      tags: [
+        "comparacao",
+        "negativo"
+      ],
+      habilidades: [
+        "comparar-ordens-de-grandeza"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_044",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Ordem de grandeza",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 4,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Qual número tem maior ordem de grandeza?",
+      opcoes: [
+        "9 × 10⁴",
+        "8 × 10³",
+        "2 × 10⁶",
+        "7 × 10⁵"
+      ],
+      correta: "2 × 10⁶",
+      comentario: "A maior potência de 10 determina a maior ordem.",
+      tempoEstimado: 30,
+      tags: [
+        "ordem-grandeza"
+      ],
+      habilidades: [
+        "comparar-ordens-de-grandeza"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_045",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Operacoes",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 4,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Calcule: (3 × 10⁻⁴) × (2 × 10⁻³)",
+      opcoes: [
+        "Alternativa 4",
+        "6 × 10⁻⁷",
+        "Alternativa 2",
+        "Alternativa 3"
+      ],
+      correta: "6 × 10⁻⁷",
+      comentario: "Multiplique coeficientes e some os expoentes negativos.",
+      tempoEstimado: 30,
+      tags: [
+        "operacoes",
+        "multiplicacao"
+      ],
+      habilidades: [
+        "operar-potencias-de-dez"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_046",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conversao para forma decimal",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 4,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Escreva 4,06 × 10⁴ na forma decimal.",
+      opcoes: [
+        "40600",
+        "406000",
+        "4060",
+        "40601"
+      ],
+      correta: "40600",
+      comentario: "A vírgula anda 4 casas para a direita.",
+      tempoEstimado: 30,
+      tags: [
+        "decimal"
+      ],
+      habilidades: [
+        "converter-para-forma-decimal"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_047",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conversao para notacao cientifica",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 4,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Escreva 508000 em notação científica.",
+      opcoes: [
+        "Alternativa 2",
+        "Alternativa 3",
+        "Alternativa 4",
+        "5,08 × 10⁵"
+      ],
+      correta: "5,08 × 10⁵",
+      comentario: "A vírgula anda 5 casas para a esquerda.",
+      tempoEstimado: 30,
+      tags: [
+        "conversao"
+      ],
+      habilidades: [
+        "converter-para-notacao-cientifica"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_048",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Expoentes",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 4,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Se o coeficiente permanece o mesmo, 10⁵ representa um número maior que 10⁴.",
+      opcoes: [
+        "Verdadeiro",
+        "Falso"
+      ],
+      correta: "Verdadeiro",
+      comentario: "Com mesmo coeficiente, o maior expoente positivo gera maior valor.",
+      tempoEstimado: 30,
+      tags: [
+        "expoente",
+        "vf"
+      ],
+      habilidades: [
+        "interpretar-expoentes"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_049",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Comparacao",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 4,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Qual é menor?",
+      opcoes: [
+        "Alternativa 4",
+        "9 × 10⁻⁷",
+        "2,2 × 10⁻⁶",
+        "Alternativa 3"
+      ],
+      correta: "9 × 10⁻⁷",
+      comentario: "10⁻⁷ indica número menor que 10⁻⁶.",
+      tempoEstimado: 30,
+      tags: [
+        "comparacao",
+        "negativo"
+      ],
+      habilidades: [
+        "comparar-ordens-de-grandeza"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_050",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Operacoes",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 4,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Calcule: (5 × 10³) ÷ (2 × 10⁻¹)",
+      opcoes: [
+        "Alternativa 2",
+        "Alternativa 3",
+        "Alternativa 4",
+        "2,5 × 10⁴"
+      ],
+      correta: "2,5 × 10⁴",
+      comentario: "5 ÷ 2 = 2,5 e 3 − (−1) = 4.",
+      tempoEstimado: 30,
+      tags: [
+        "operacoes",
+        "divisao"
+      ],
+      habilidades: [
+        "operar-potencias-de-dez"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_051",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Equivalencia",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 4,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Qual das alternativas representa corretamente o mesmo valor de 700000 em notação científica padronizada?",
+      opcoes: [
+        "70 × 10⁴",
+        "700 × 10³",
+        "7 × 10⁵",
+        "0,7 × 10⁶"
+      ],
+      correta: "7 × 10⁵",
+      comentario: "Coeficiente deve estar entre 1 e 10.",
+      tempoEstimado: 25,
+      tags: [
+        "equivalencia"
+      ],
+      habilidades: [
+        "validar-notacao"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_052",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conversao indireta",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 4,
+      cognicao: "calculo",
+      tipo: "multipla_escolha",
+      enunciado: "Um número foi registrado como 9000. Reescreva esse valor em notação científica padronizada.",
+      opcoes: [
+        "Alternativa 4",
+        "9 × 10³",
+        "Alternativa 2",
+        "Alternativa 3"
+      ],
+      correta: "9 × 10³",
+      comentario: "3 casas → expoente 3.",
+      tempoEstimado: 25,
+      tags: [
+        "conversao"
+      ],
+      habilidades: [
+        "converter-para-notacao-cientifica"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_053",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Equivalencia",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 4,
+      cognicao: "calculo",
+      tipo: "multipla_escolha",
+      enunciado: "Determine o valor decimal equivalente a 5 × 10³.",
+      opcoes: [
+        "5000",
+        "50000",
+        "500",
+        "5001"
+      ],
+      correta: "5000",
+      comentario: "Deslocamento de 3 casas à direita.",
+      tempoEstimado: 25,
+      tags: [
+        "decimal"
+      ],
+      habilidades: [
+        "converter-para-forma-decimal"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_054",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Comparacao indireta",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 4,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Sem converter diretamente, identifique qual valor representa a maior quantidade:",
+      opcoes: [
+        "4 × 10²",
+        "Alternativa 3",
+        "Alternativa 4",
+        "3 × 10³"
+      ],
+      correta: "3 × 10³",
+      comentario: "Expoente maior domina.",
+      tempoEstimado: 25,
+      tags: [
+        "comparacao"
+      ],
+      habilidades: [
+        "comparar-notacao"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_055",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Pegadinha",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 4,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Na expressão 8 × 10², o expoente indica uma potência positiva de 10.",
+      opcoes: [
+        "Verdadeiro",
+        "Falso"
+      ],
+      correta: "Falso",
+      comentario: "Expoente 2 é positivo.",
+      tempoEstimado: 25,
+      tags: [
+        "expoente",
+        "vf"
+      ],
+      habilidades: [
+        "interpretar-expoente"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_056",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conversao indireta",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 4,
+      cognicao: "calculo",
+      tipo: "multipla_escolha",
+      enunciado: "Um valor muito pequeno foi registrado como 0,006. Escreva-o em notação científica.",
+      opcoes: [
+        "Alternativa 4",
+        "6 × 10⁻³",
+        "Alternativa 2",
+        "Alternativa 3"
+      ],
+      correta: "6 × 10⁻³",
+      comentario: "3 casas → expoente negativo.",
+      tempoEstimado: 25,
+      tags: [
+        "conversao"
+      ],
+      habilidades: [
+        "converter-para-notacao-cientifica"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_057",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Equivalencia",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 4,
+      cognicao: "calculo",
+      tipo: "multipla_escolha",
+      enunciado: "Determine a forma decimal equivalente a 4,5 × 10⁻².",
+      opcoes: [
+        "0,045",
+        "0,44999999999999996",
+        "0,0045",
+        "1,045"
+      ],
+      correta: "0,045",
+      comentario: "2 casas à esquerda.",
+      tempoEstimado: 25,
+      tags: [
+        "decimal"
+      ],
+      habilidades: [
+        "converter-para-forma-decimal"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_058",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Equivalencia",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 4,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Qual alternativa apresenta corretamente a representação padronizada de 0,00072?",
+      opcoes: [
+        "72 × 10⁻⁵",
+        "0,72 × 10⁻³",
+        "7,2 × 10⁴",
+        "7,2 × 10⁻⁴"
+      ],
+      correta: "7,2 × 10⁻⁴",
+      comentario: "Coeficiente válido + expoente correto.",
+      tempoEstimado: 25,
+      tags: [
+        "equivalencia"
+      ],
+      habilidades: [
+        "validar-notacao"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_059",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Operacoes indiretas",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 4,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Determine o resultado de (4 × 10²) + (2 × 10²) mantendo a forma em notação científica.",
+      opcoes: [
+        "Alternativa 3",
+        "Alternativa 4",
+        "6 × 10²",
+        "Alternativa 2"
+      ],
+      correta: "6 × 10²",
+      comentario: "Mesma potência.",
+      tempoEstimado: 25,
+      tags: [
+        "operacoes"
+      ],
+      habilidades: [
+        "somar-notacao"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_060",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Comparacao indireta",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 4,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Analise os valores e identifique o menor:",
+      opcoes: [
+        "6 × 10⁻³",
+        "5 × 10⁻²",
+        "Alternativa 3",
+        "Alternativa 4"
+      ],
+      correta: "6 × 10⁻³",
+      comentario: "0,006 < 0,05.",
+      tempoEstimado: 25,
+      tags: [
+        "comparacao"
+      ],
+      habilidades: [
+        "comparar-notacao"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_061",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Operacoes",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 5,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Calcule: (3 × 10⁴) + (8 × 10³)",
+      opcoes: [
+        "Alternativa 2",
+        "Alternativa 3",
+        "Alternativa 4",
+        "3,8 × 10⁴"
+      ],
+      correta: "3,8 × 10⁴",
+      comentario: "8 × 10³ = 0,8 × 10⁴.",
+      tempoEstimado: 30,
+      tags: [
+        "operacoes",
+        "soma"
+      ],
+      habilidades: [
+        "operar-potencias-de-dez"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_062",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Comparacao",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 5,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Qual é maior?",
+      opcoes: [
+        "Alternativa 3",
+        "Alternativa 4",
+        "6,9 × 10⁻³",
+        "7,5 × 10⁻⁴"
+      ],
+      correta: "6,9 × 10⁻³",
+      comentario: "10⁻³ é maior que 10⁻⁴ nesse caso.",
+      tempoEstimado: 30,
+      tags: [
+        "comparacao",
+        "negativo"
+      ],
+      habilidades: [
+        "comparar-ordens-de-grandeza"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_063",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Operacoes",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 5,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Calcule: (5 × 10⁶) ÷ (1 × 10²)",
+      opcoes: [
+        "Alternativa 4",
+        "5 × 10⁴",
+        "Alternativa 2",
+        "Alternativa 3"
+      ],
+      correta: "5 × 10⁴",
+      comentario: "Divida coeficientes e subtraia os expoentes.",
+      tempoEstimado: 30,
+      tags: [
+        "operacoes",
+        "divisao"
+      ],
+      habilidades: [
+        "operar-potencias-de-dez"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_064",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conversao para forma decimal",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 5,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Escreva 2,07 × 10⁻⁴ na forma decimal.",
+      opcoes: [
+        "0,000207",
+        "0,00207",
+        "0,0000207",
+        "1,000207"
+      ],
+      correta: "0,000207",
+      comentario: "A vírgula anda 4 casas para a esquerda.",
+      tempoEstimado: 30,
+      tags: [
+        "decimal",
+        "negativo"
+      ],
+      habilidades: [
+        "converter-para-forma-decimal"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_065",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Ordem de grandeza",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 5,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "9,2 × 10⁶ tem ordem de grandeza maior que 8,1 × 10⁵.",
+      opcoes: [
+        "Verdadeiro",
+        "Falso"
+      ],
+      correta: "Verdadeiro",
+      comentario: "10⁶ é uma potência maior que 10⁵.",
+      tempoEstimado: 30,
+      tags: [
+        "ordem-grandeza",
+        "vf"
+      ],
+      habilidades: [
+        "comparar-ordens-de-grandeza"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_066",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conceito",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 5,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Qual escrita está correta em notação científica?",
+      opcoes: [
+        "0,32 × 10⁵",
+        "320 × 10²",
+        "3,2 × 10⁴",
+        "32 × 10³"
+      ],
+      correta: "3,2 × 10⁴",
+      comentario: "Só o coeficiente entre 1 e 10 está correto.",
+      tempoEstimado: 20,
+      tags: [
+        "conceito"
+      ],
+      habilidades: [
+        "identificar-forma-valida"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_067",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conversao para notacao cientifica",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 5,
+      cognicao: "calculo",
+      tipo: "multipla_escolha",
+      enunciado: "Escreva 1200 em notação científica.",
+      opcoes: [
+        "Alternativa 4",
+        "1,2 × 10³",
+        "Alternativa 2",
+        "Alternativa 3"
+      ],
+      correta: "1,2 × 10³",
+      comentario: "A vírgula anda 3 casas para a esquerda.",
+      tempoEstimado: 20,
+      tags: [
+        "conversao"
+      ],
+      habilidades: [
+        "converter-para-notacao-cientifica"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_068",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conversao para forma decimal",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 5,
+      cognicao: "calculo",
+      tipo: "multipla_escolha",
+      enunciado: "Escreva 9 × 10¹ na forma decimal.",
+      opcoes: [
+        "90",
+        "900",
+        "9",
+        "91"
+      ],
+      correta: "90",
+      comentario: "Expoente 1 desloca uma casa à direita.",
+      tempoEstimado: 20,
+      tags: [
+        "decimal"
+      ],
+      habilidades: [
+        "converter-para-forma-decimal"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_069",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Comparacao",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 5,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Qual é maior?",
+      opcoes: [
+        "8 × 10¹",
+        "Alternativa 3",
+        "Alternativa 4",
+        "1 × 10²"
+      ],
+      correta: "1 × 10²",
+      comentario: "100 é maior que 80.",
+      tempoEstimado: 20,
+      tags: [
+        "comparacao"
+      ],
+      habilidades: [
+        "comparar-ordens-de-grandeza"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_070",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Expoentes",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 5,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Em 2,4 × 10⁵, o expoente indica 5.",
+      opcoes: [
+        "Verdadeiro",
+        "Falso"
+      ],
+      correta: "Verdadeiro",
+      comentario: "O expoente é o número que acompanha o 10.",
+      tempoEstimado: 20,
+      tags: [
+        "expoente",
+        "vf"
+      ],
+      habilidades: [
+        "interpretar-expoentes"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_071",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conversao para notacao cientifica",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 5,
+      cognicao: "calculo",
+      tipo: "multipla_escolha",
+      enunciado: "Escreva 0,00009 em notação científica.",
+      opcoes: [
+        "9 × 10⁻⁵",
+        "Alternativa 2",
+        "Alternativa 3",
+        "Alternativa 4"
+      ],
+      correta: "9 × 10⁻⁵",
+      comentario: "A vírgula anda 5 casas para a direita.",
+      tempoEstimado: 25,
+      tags: [
+        "conversao",
+        "negativo"
+      ],
+      habilidades: [
+        "converter-para-notacao-cientifica"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_072",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conversao para forma decimal",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 5,
+      cognicao: "calculo",
+      tipo: "multipla_escolha",
+      enunciado: "Escreva 8,3 × 10² na forma decimal.",
+      opcoes: [
+        "8300",
+        "83",
+        "831",
+        "830"
+      ],
+      correta: "830",
+      comentario: "A vírgula anda 2 casas para a direita.",
+      tempoEstimado: 25,
+      tags: [
+        "decimal"
+      ],
+      habilidades: [
+        "converter-para-forma-decimal"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_073",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conceito",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 5,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Qual escrita correta representa 540000?",
+      opcoes: [
+        "0,54 × 10⁶",
+        "540 × 10³",
+        "5,4 × 10⁵",
+        "54 × 10⁴"
+      ],
+      correta: "5,4 × 10⁵",
+      comentario: "Coeficiente válido e potência correta.",
+      tempoEstimado: 25,
+      tags: [
+        "conceito",
+        "conversao"
+      ],
+      habilidades: [
+        "identificar-forma-valida"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_074",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Operacoes",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 5,
+      cognicao: "calculo",
+      tipo: "multipla_escolha",
+      enunciado: "Calcule: (7 × 10³) + (1 × 10³)",
+      opcoes: [
+        "Alternativa 4",
+        "8 × 10³",
+        "Alternativa 2",
+        "Alternativa 3"
+      ],
+      correta: "8 × 10³",
+      comentario: "Mesma potência: soma direta dos coeficientes.",
+      tempoEstimado: 25,
+      tags: [
+        "operacoes",
+        "soma"
+      ],
+      habilidades: [
+        "operar-potencias-de-dez"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_075",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Comparacao",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 5,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Qual é menor?",
+      opcoes: [
+        "9 × 10⁻⁴",
+        "1 × 10⁻³",
+        "Alternativa 3",
+        "Alternativa 4"
+      ],
+      correta: "9 × 10⁻⁴",
+      comentario: "0,0009 é menor que 0,001.",
+      tempoEstimado: 25,
+      tags: [
+        "comparacao",
+        "negativo"
+      ],
+      habilidades: [
+        "comparar-ordens-de-grandeza"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_076",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Operacoes",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 5,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Calcule: (6 × 10⁵) − (2 × 10⁴)",
+      opcoes: [
+        "Alternativa 2",
+        "Alternativa 3",
+        "Alternativa 4",
+        "5,8 × 10⁵"
+      ],
+      correta: "5,8 × 10⁵",
+      comentario: "2 × 10⁴ = 0,2 × 10⁵.",
+      tempoEstimado: 30,
+      tags: [
+        "operacoes",
+        "subtracao"
+      ],
+      habilidades: [
+        "operar-potencias-de-dez"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_077",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Comparacao",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 5,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Qual é maior?",
+      opcoes: [
+        "Alternativa 3",
+        "Alternativa 4",
+        "1,5 × 10⁻²",
+        "9,9 × 10⁻³"
+      ],
+      correta: "1,5 × 10⁻²",
+      comentario: "0,015 é maior que 0,0099.",
+      tempoEstimado: 30,
+      tags: [
+        "comparacao",
+        "negativo"
+      ],
+      habilidades: [
+        "comparar-ordens-de-grandeza"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_078",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Operacoes",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 5,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Calcule: (4 × 10²) × (5 × 10³)",
+      opcoes: [
+        "Alternativa 4",
+        "2 × 10⁶",
+        "Alternativa 2",
+        "Alternativa 3"
+      ],
+      correta: "2 × 10⁶",
+      comentario: "4 × 5 = 20, então ajusta para 2 × 10⁶.",
+      tempoEstimado: 30,
+      tags: [
+        "operacoes",
+        "multiplicacao"
+      ],
+      habilidades: [
+        "operar-potencias-de-dez"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_079",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conversao para forma decimal",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 5,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Escreva 7,08 × 10⁻³ na forma decimal.",
+      opcoes: [
+        "0,00708",
+        "0,0708",
+        "0,0007080000000000001",
+        "1,00708"
+      ],
+      correta: "0,00708",
+      comentario: "A vírgula anda 3 casas para a esquerda.",
+      tempoEstimado: 30,
+      tags: [
+        "decimal",
+        "negativo"
+      ],
+      habilidades: [
+        "converter-para-forma-decimal"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_080",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Ordem de grandeza",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 5,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "2,3 × 10⁴ tem ordem de grandeza menor que 9,1 × 10⁵.",
+      opcoes: [
+        "Verdadeiro",
+        "Falso"
+      ],
+      correta: "Verdadeiro",
+      comentario: "10⁴ é menor que 10⁵.",
+      tempoEstimado: 30,
+      tags: [
+        "ordem-grandeza",
+        "vf"
+      ],
+      habilidades: [
+        "comparar-ordens-de-grandeza"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_081",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conceito",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 5,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Qual escrita está correta?",
+      opcoes: [
+        "180 × 10⁴",
+        "1,8 × 10⁶",
+        "18 × 10⁵",
+        "0,18 × 10⁷"
+      ],
+      correta: "1,8 × 10⁶",
+      comentario: "O coeficiente precisa ficar entre 1 e 10.",
+      tempoEstimado: 20,
+      tags: [
+        "conceito"
+      ],
+      habilidades: [
+        "identificar-forma-valida"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_082",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conversao para notacao cientifica",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 5,
+      cognicao: "calculo",
+      tipo: "multipla_escolha",
+      enunciado: "Escreva 650 em notação científica.",
+      opcoes: [
+        "6,5 × 10²",
+        "Alternativa 2",
+        "Alternativa 3",
+        "Alternativa 4"
+      ],
+      correta: "6,5 × 10²",
+      comentario: "A vírgula anda 2 casas para a esquerda.",
+      tempoEstimado: 20,
+      tags: [
+        "conversao"
+      ],
+      habilidades: [
+        "converter-para-notacao-cientifica"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_083",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conversao para forma decimal",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 5,
+      cognicao: "calculo",
+      tipo: "multipla_escolha",
+      enunciado: "Escreva 3 × 10⁴ na forma decimal.",
+      opcoes: [
+        "300000",
+        "3000",
+        "30001",
+        "30000"
+      ],
+      correta: "30000",
+      comentario: "A vírgula anda 4 casas para a direita.",
+      tempoEstimado: 20,
+      tags: [
+        "decimal"
+      ],
+      habilidades: [
+        "converter-para-forma-decimal"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_084",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Comparacao",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 5,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Qual é maior?",
+      opcoes: [
+        "Alternativa 3",
+        "Alternativa 4",
+        "4 × 10³",
+        "5 × 10²"
+      ],
+      correta: "4 × 10³",
+      comentario: "4000 é maior que 500.",
+      tempoEstimado: 20,
+      tags: [
+        "comparacao"
+      ],
+      habilidades: [
+        "comparar-ordens-de-grandeza"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_085",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Expoentes",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 5,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Em 9 × 10⁻¹, o expoente é negativo.",
+      opcoes: [
+        "Verdadeiro",
+        "Falso"
+      ],
+      correta: "Verdadeiro",
+      comentario: "O expoente é −1.",
+      tempoEstimado: 20,
+      tags: [
+        "expoente",
+        "vf"
+      ],
+      habilidades: [
+        "interpretar-expoentes"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_086",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conversao para notacao cientifica",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 5,
+      cognicao: "calculo",
+      tipo: "multipla_escolha",
+      enunciado: "Escreva 0,0042 em notação científica.",
+      opcoes: [
+        "4,2 × 10⁻³",
+        "Alternativa 2",
+        "Alternativa 3",
+        "Alternativa 4"
+      ],
+      correta: "4,2 × 10⁻³",
+      comentario: "A vírgula anda 3 casas para a direita.",
+      tempoEstimado: 25,
+      tags: [
+        "conversao",
+        "negativo"
+      ],
+      habilidades: [
+        "converter-para-notacao-cientifica"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_087",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conversao para forma decimal",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 5,
+      cognicao: "calculo",
+      tipo: "multipla_escolha",
+      enunciado: "Escreva 6,2 × 10³ na forma decimal.",
+      opcoes: [
+        "62000",
+        "620",
+        "6201",
+        "6200"
+      ],
+      correta: "6200",
+      comentario: "A vírgula anda 3 casas para a direita.",
+      tempoEstimado: 25,
+      tags: [
+        "decimal"
+      ],
+      habilidades: [
+        "converter-para-forma-decimal"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_088",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conceito",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 5,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Qual forma representa corretamente 0,000004?",
+      opcoes: [
+        "0,4 × 10⁻⁵",
+        "40 × 10⁻⁷",
+        "4 × 10⁻⁶",
+        "4 × 10⁻⁵"
+      ],
+      correta: "4 × 10⁻⁶",
+      comentario: "A vírgula anda 6 casas para a direita.",
+      tempoEstimado: 25,
+      tags: [
+        "conceito",
+        "conversao"
+      ],
+      habilidades: [
+        "identificar-forma-valida"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_089",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Operacoes",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 5,
+      cognicao: "calculo",
+      tipo: "multipla_escolha",
+      enunciado: "Calcule: (3 × 10²) × (2 × 10²)",
+      opcoes: [
+        "Alternativa 4",
+        "6 × 10⁴",
+        "Alternativa 2",
+        "Alternativa 3"
+      ],
+      correta: "6 × 10⁴",
+      comentario: "Multiplicam-se coeficientes e somam-se expoentes.",
+      tempoEstimado: 30,
+      tags: [
+        "operacoes",
+        "multiplicacao"
+      ],
+      habilidades: [
+        "operar-potencias-de-dez"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_090",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Comparacao",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 5,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Qual é menor?",
+      opcoes: [
+        "2 × 10³",
+        "Alternativa 3",
+        "Alternativa 4",
+        "9 × 10²"
+      ],
+      correta: "9 × 10²",
+      comentario: "900 é menor que 2000.",
+      tempoEstimado: 25,
+      tags: [
+        "comparacao"
+      ],
+      habilidades: [
+        "comparar-ordens-de-grandeza"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_091",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Operacoes",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 6,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Calcule: (8 × 10⁴) + (5 × 10³)",
+      opcoes: [
+        "Alternativa 3",
+        "Alternativa 4",
+        "8,5 × 10⁴",
+        "Alternativa 2"
+      ],
+      correta: "8,5 × 10⁴",
+      comentario: "5 × 10³ = 0,5 × 10⁴.",
+      tempoEstimado: 30,
+      tags: [
+        "operacoes",
+        "soma"
+      ],
+      habilidades: [
+        "operar-potencias-de-dez"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_092",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Comparacao",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 6,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Qual é maior?",
+      opcoes: [
+        "Alternativa 4",
+        "1,1 × 10⁻⁴",
+        "9 × 10⁻⁵",
+        "Alternativa 3"
+      ],
+      correta: "1,1 × 10⁻⁴",
+      comentario: "0,00011 é maior que 0,00009.",
+      tempoEstimado: 30,
+      tags: [
+        "comparacao",
+        "negativo"
+      ],
+      habilidades: [
+        "comparar-ordens-de-grandeza"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_093",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Operacoes",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 6,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Calcule: (9 × 10³) ÷ (3 × 10⁻¹)",
+      opcoes: [
+        "3 × 10⁴",
+        "Alternativa 2",
+        "Alternativa 3",
+        "Alternativa 4"
+      ],
+      correta: "3 × 10⁴",
+      comentario: "3 ÷ 10⁻¹ equivale a somar 1 ao expoente após divisão.",
+      tempoEstimado: 30,
+      tags: [
+        "operacoes",
+        "divisao"
+      ],
+      habilidades: [
+        "operar-potencias-de-dez"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_094",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conversao para forma decimal",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 6,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Escreva 5,004 × 10⁻³ na forma decimal.",
+      opcoes: [
+        "0,05004",
+        "0,0005004",
+        "1,005004",
+        "0,005004"
+      ],
+      correta: "0,005004",
+      comentario: "A vírgula anda 3 casas para a esquerda.",
+      tempoEstimado: 30,
+      tags: [
+        "decimal",
+        "negativo"
+      ],
+      habilidades: [
+        "converter-para-forma-decimal"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_095",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Ordem de grandeza",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 6,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "7,7 × 10⁻³ tem ordem de grandeza menor que 2,1 × 10⁻².",
+      opcoes: [
+        "Verdadeiro",
+        "Falso"
+      ],
+      correta: "Verdadeiro",
+      comentario: "10⁻³ é menor que 10⁻².",
+      tempoEstimado: 30,
+      tags: [
+        "ordem-grandeza",
+        "negativo",
+        "vf"
+      ],
+      habilidades: [
+        "comparar-ordens-de-grandeza"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_096",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conceito",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 6,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Qual escrita está correta?",
+      opcoes: [
+        "490 × 10⁵",
+        "4,9 × 10⁷",
+        "49 × 10⁶",
+        "0,49 × 10⁸"
+      ],
+      correta: "4,9 × 10⁷",
+      comentario: "O coeficiente válido é o que fica entre 1 e 10.",
+      tempoEstimado: 20,
+      tags: [
+        "conceito"
+      ],
+      habilidades: [
+        "identificar-forma-valida"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_097",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conversao para notacao cientifica",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 6,
+      cognicao: "calculo",
+      tipo: "multipla_escolha",
+      enunciado: "Escreva 25000 em notação científica.",
+      opcoes: [
+        "2,5 × 10⁴",
+        "Alternativa 2",
+        "Alternativa 3",
+        "Alternativa 4"
+      ],
+      correta: "2,5 × 10⁴",
+      comentario: "A vírgula anda 4 casas para a esquerda.",
+      tempoEstimado: 20,
+      tags: [
+        "conversao"
+      ],
+      habilidades: [
+        "converter-para-notacao-cientifica"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_098",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conversao para forma decimal",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 6,
+      cognicao: "calculo",
+      tipo: "multipla_escolha",
+      enunciado: "Escreva 7 × 10² na forma decimal.",
+      opcoes: [
+        "7000",
+        "70",
+        "701",
+        "700"
+      ],
+      correta: "700",
+      comentario: "A vírgula anda 2 casas para a direita.",
+      tempoEstimado: 20,
+      tags: [
+        "decimal"
+      ],
+      habilidades: [
+        "converter-para-forma-decimal"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_099",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Comparacao",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 6,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Qual é maior?",
+      opcoes: [
+        "Alternativa 3",
+        "Alternativa 4",
+        "5 × 10³",
+        "6 × 10²"
+      ],
+      correta: "5 × 10³",
+      comentario: "5000 é maior que 600.",
+      tempoEstimado: 20,
+      tags: [
+        "comparacao"
+      ],
+      habilidades: [
+        "comparar-ordens-de-grandeza"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_100",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Expoentes",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 6,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Em 1,3 × 10⁻⁶, o expoente é −6.",
+      opcoes: [
+        "Verdadeiro",
+        "Falso"
+      ],
+      correta: "Verdadeiro",
+      comentario: "O valor do expoente aparece junto do 10.",
+      tempoEstimado: 20,
+      tags: [
+        "expoente",
+        "vf"
+      ],
+      habilidades: [
+        "interpretar-expoentes"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_101",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conversao para notacao cientifica",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 6,
+      cognicao: "calculo",
+      tipo: "multipla_escolha",
+      enunciado: "Escreva 0,0008 em notação científica.",
+      opcoes: [
+        "8 × 10⁻⁴",
+        "Alternativa 2",
+        "Alternativa 3",
+        "Alternativa 4"
+      ],
+      correta: "8 × 10⁻⁴",
+      comentario: "A vírgula anda 4 casas para a direita.",
+      tempoEstimado: 25,
+      tags: [
+        "conversao",
+        "negativo"
+      ],
+      habilidades: [
+        "converter-para-notacao-cientifica"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_102",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conversao para forma decimal",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 6,
+      cognicao: "calculo",
+      tipo: "multipla_escolha",
+      enunciado: "Escreva 2,6 × 10⁴ na forma decimal.",
+      opcoes: [
+        "260000",
+        "2600",
+        "26001",
+        "26000"
+      ],
+      correta: "26000",
+      comentario: "A vírgula anda 4 casas para a direita.",
+      tempoEstimado: 25,
+      tags: [
+        "decimal"
+      ],
+      habilidades: [
+        "converter-para-forma-decimal"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_103",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conceito",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 6,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Qual forma correta representa 0,0031?",
+      opcoes: [
+        "0,31 × 10⁻²",
+        "3,1 × 10³",
+        "3,1 × 10⁻³",
+        "31 × 10⁻⁴"
+      ],
+      correta: "3,1 × 10⁻³",
+      comentario: "O coeficiente deve ficar entre 1 e 10.",
+      tempoEstimado: 25,
+      tags: [
+        "conceito",
+        "conversao"
+      ],
+      habilidades: [
+        "identificar-forma-valida"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_104",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Operacoes",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 6,
+      cognicao: "calculo",
+      tipo: "multipla_escolha",
+      enunciado: "Calcule: (9 × 10²) + (4 × 10²)",
+      opcoes: [
+        "Alternativa 4",
+        "1,3 × 10³",
+        "Alternativa 2",
+        "Alternativa 3"
+      ],
+      correta: "1,3 × 10³",
+      comentario: "13 × 10² pode ser reescrito como 1,3 × 10³.",
+      tempoEstimado: 25,
+      tags: [
+        "operacoes",
+        "soma"
+      ],
+      habilidades: [
+        "operar-potencias-de-dez"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_105",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Comparacao",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 6,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Qual é maior?",
+      opcoes: [
+        "6 × 10⁻¹",
+        "7 × 10⁻²",
+        "Alternativa 3",
+        "Alternativa 4"
+      ],
+      correta: "6 × 10⁻¹",
+      comentario: "0,6 é maior que 0,07.",
+      tempoEstimado: 25,
+      tags: [
+        "comparacao",
+        "negativo"
+      ],
+      habilidades: [
+        "comparar-ordens-de-grandeza"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_106",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Operacoes",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 6,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Calcule: (7 × 10⁵) − (5 × 10⁴)",
+      opcoes: [
+        "Alternativa 2",
+        "Alternativa 3",
+        "Alternativa 4",
+        "6,5 × 10⁵"
+      ],
+      correta: "6,5 × 10⁵",
+      comentario: "5 × 10⁴ = 0,5 × 10⁵.",
+      tempoEstimado: 30,
+      tags: [
+        "operacoes",
+        "subtracao"
+      ],
+      habilidades: [
+        "operar-potencias-de-dez"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_107",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Comparacao",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 6,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Qual é menor?",
+      opcoes: [
+        "Alternativa 3",
+        "Alternativa 4",
+        "9 × 10⁻⁶",
+        "1,2 × 10⁻⁵"
+      ],
+      correta: "9 × 10⁻⁶",
+      comentario: "10⁻⁶ representa valor menor que 10⁻⁵.",
+      tempoEstimado: 30,
+      tags: [
+        "comparacao",
+        "negativo"
+      ],
+      habilidades: [
+        "comparar-ordens-de-grandeza"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_108",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Operacoes",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 6,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Calcule: (2 × 10³) × (5 × 10⁻²)",
+      opcoes: [
+        "Alternativa 4",
+        "1 × 10²",
+        "Alternativa 2",
+        "Alternativa 3"
+      ],
+      correta: "1 × 10²",
+      comentario: "2 × 5 = 10, então ajusta para 1 × 10².",
+      tempoEstimado: 30,
+      tags: [
+        "operacoes",
+        "multiplicacao"
+      ],
+      habilidades: [
+        "operar-potencias-de-dez"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_109",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conversao para forma decimal",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 6,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Escreva 3,005 × 10⁻² na forma decimal.",
+      opcoes: [
+        "0,03005",
+        "0,3005",
+        "0,003005",
+        "1,03005"
+      ],
+      correta: "0,03005",
+      comentario: "A vírgula anda 2 casas para a esquerda.",
+      tempoEstimado: 30,
+      tags: [
+        "decimal",
+        "negativo"
+      ],
+      habilidades: [
+        "converter-para-forma-decimal"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_110",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Ordem de grandeza",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 6,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "4,4 × 10⁸ tem ordem de grandeza maior que 9,9 × 10⁷.",
+      opcoes: [
+        "Verdadeiro",
+        "Falso"
+      ],
+      correta: "Verdadeiro",
+      comentario: "10⁸ é maior que 10⁷.",
+      tempoEstimado: 30,
+      tags: [
+        "ordem-grandeza",
+        "vf"
+      ],
+      habilidades: [
+        "comparar-ordens-de-grandeza"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_111",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conceito",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 6,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Qual escrita está correta em notação científica?",
+      opcoes: [
+        "210 × 10³",
+        "2,1 × 10⁵",
+        "21 × 10⁴",
+        "0,21 × 10⁶"
+      ],
+      correta: "2,1 × 10⁵",
+      comentario: "O coeficiente deve estar entre 1 e 10.",
+      tempoEstimado: 20,
+      tags: [
+        "conceito"
+      ],
+      habilidades: [
+        "identificar-forma-valida"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_112",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conversao para notacao cientifica",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 6,
+      cognicao: "calculo",
+      tipo: "multipla_escolha",
+      enunciado: "Escreva 4800 em notação científica.",
+      opcoes: [
+        "4,8 × 10³",
+        "Alternativa 2",
+        "Alternativa 3",
+        "Alternativa 4"
+      ],
+      correta: "4,8 × 10³",
+      comentario: "A vírgula anda 3 casas para a esquerda.",
+      tempoEstimado: 20,
+      tags: [
+        "conversao"
+      ],
+      habilidades: [
+        "converter-para-notacao-cientifica"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_113",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conversao para forma decimal",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 6,
+      cognicao: "calculo",
+      tipo: "multipla_escolha",
+      enunciado: "Escreva 4 × 10² na forma decimal.",
+      opcoes: [
+        "4000",
+        "40",
+        "401",
+        "400"
+      ],
+      correta: "400",
+      comentario: "A vírgula anda 2 casas para a direita.",
+      tempoEstimado: 20,
+      tags: [
+        "decimal"
+      ],
+      habilidades: [
+        "converter-para-forma-decimal"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_114",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Comparacao",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 6,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Qual é maior?",
+      opcoes: [
+        "Alternativa 3",
+        "Alternativa 4",
+        "2 × 10³",
+        "9 × 10²"
+      ],
+      correta: "2 × 10³",
+      comentario: "2000 é maior que 900.",
+      tempoEstimado: 20,
+      tags: [
+        "comparacao"
+      ],
+      habilidades: [
+        "comparar-ordens-de-grandeza"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_115",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Expoentes",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 6,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Em 3,8 × 10⁻³, o expoente é −3.",
+      opcoes: [
+        "Verdadeiro",
+        "Falso"
+      ],
+      correta: "Verdadeiro",
+      comentario: "O expoente acompanha a potência de 10.",
+      tempoEstimado: 20,
+      tags: [
+        "expoente",
+        "vf"
+      ],
+      habilidades: [
+        "interpretar-expoentes"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_116",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conversao para notacao cientifica",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 6,
+      cognicao: "calculo",
+      tipo: "multipla_escolha",
+      enunciado: "Escreva 0,02 em notação científica.",
+      opcoes: [
+        "2 × 10⁻²",
+        "Alternativa 2",
+        "Alternativa 3",
+        "Alternativa 4"
+      ],
+      correta: "2 × 10⁻²",
+      comentario: "A vírgula anda 2 casas para a direita.",
+      tempoEstimado: 25,
+      tags: [
+        "conversao",
+        "negativo"
+      ],
+      habilidades: [
+        "converter-para-notacao-cientifica"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_117",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conversao para forma decimal",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 6,
+      cognicao: "calculo",
+      tipo: "multipla_escolha",
+      enunciado: "Escreva 1,2 × 10⁵ na forma decimal.",
+      opcoes: [
+        "1200000",
+        "12000",
+        "120001",
+        "120000"
+      ],
+      correta: "120000",
+      comentario: "A vírgula anda 5 casas para a direita.",
+      tempoEstimado: 25,
+      tags: [
+        "decimal"
+      ],
+      habilidades: [
+        "converter-para-forma-decimal"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_118",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conceito",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 6,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Qual forma correta representa 7300000?",
+      opcoes: [
+        "0,73 × 10⁷",
+        "730 × 10⁴",
+        "7,3 × 10⁶",
+        "73 × 10⁵"
+      ],
+      correta: "7,3 × 10⁶",
+      comentario: "O coeficiente válido é 7,3.",
+      tempoEstimado: 25,
+      tags: [
+        "conceito",
+        "conversao"
+      ],
+      habilidades: [
+        "identificar-forma-valida"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_119",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Operacoes",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 6,
+      cognicao: "calculo",
+      tipo: "multipla_escolha",
+      enunciado: "Calcule: (5 × 10²) + (3 × 10²)",
+      opcoes: [
+        "Alternativa 4",
+        "8 × 10²",
+        "Alternativa 2",
+        "Alternativa 3"
+      ],
+      correta: "8 × 10²",
+      comentario: "Somam-se os coeficientes, pois a potência é a mesma.",
+      tempoEstimado: 25,
+      tags: [
+        "operacoes",
+        "soma"
+      ],
+      habilidades: [
+        "operar-potencias-de-dez"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_120",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Comparacao",
+      dificuldadeLabel: "media",
+      dificuldadeNivel: 6,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Qual é menor?",
+      opcoes: [
+        "3 × 10⁻²",
+        "Alternativa 3",
+        "Alternativa 4",
+        "4 × 10⁻³"
+      ],
+      correta: "4 × 10⁻³",
+      comentario: "0,004 é menor que 0,03.",
+      tempoEstimado: 25,
+      tags: [
+        "comparacao",
+        "negativo"
+      ],
+      habilidades: [
+        "comparar-ordens-de-grandeza"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_121",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Operacoes",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 8,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Calcule: (9 × 10⁴) − (4 × 10³)",
+      opcoes: [
+        "Alternativa 3",
+        "Alternativa 4",
+        "8,6 × 10⁴",
+        "Alternativa 2"
+      ],
+      correta: "8,6 × 10⁴",
+      comentario: "4 × 10³ = 0,4 × 10⁴.",
+      tempoEstimado: 30,
+      tags: [
+        "operacoes",
+        "subtracao"
+      ],
+      habilidades: [
+        "operar-potencias-de-dez"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_122",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Comparacao",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 8,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Qual é maior?",
+      opcoes: [
+        "Alternativa 4",
+        "1,9 × 10⁻²",
+        "2,4 × 10⁻³",
+        "Alternativa 3"
+      ],
+      correta: "1,9 × 10⁻²",
+      comentario: "0,019 é maior que 0,0024.",
+      tempoEstimado: 30,
+      tags: [
+        "comparacao",
+        "negativo"
+      ],
+      habilidades: [
+        "comparar-ordens-de-grandeza"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_123",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Operacoes",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 8,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Calcule: (6 × 10²) × (5 × 10⁻¹)",
+      opcoes: [
+        "3 × 10²",
+        "Alternativa 2",
+        "Alternativa 3",
+        "Alternativa 4"
+      ],
+      correta: "3 × 10²",
+      comentario: "6 × 5 = 30, então ajusta para 3 × 10².",
+      tempoEstimado: 30,
+      tags: [
+        "operacoes",
+        "multiplicacao"
+      ],
+      habilidades: [
+        "operar-potencias-de-dez"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_124",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conversao para forma decimal",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 8,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Escreva 9,004 × 10⁻³ na forma decimal.",
+      opcoes: [
+        "0,09004",
+        "0,0009004",
+        "1,009004",
+        "0,009004"
+      ],
+      correta: "0,009004",
+      comentario: "A vírgula anda 3 casas para a esquerda.",
+      tempoEstimado: 30,
+      tags: [
+        "decimal",
+        "negativo"
+      ],
+      habilidades: [
+        "converter-para-forma-decimal"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_125",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Ordem de grandeza",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 8,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "1,5 × 10⁹ tem ordem de grandeza maior que 8 × 10⁸.",
+      opcoes: [
+        "Verdadeiro",
+        "Falso"
+      ],
+      correta: "Verdadeiro",
+      comentario: "10⁹ é maior que 10⁸.",
+      tempoEstimado: 30,
+      tags: [
+        "ordem-grandeza",
+        "vf"
+      ],
+      habilidades: [
+        "comparar-ordens-de-grandeza"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_126",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conceito",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 8,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Qual expressão NÃO está em notação científica?",
+      opcoes: [
+        "1,1 × 10⁰",
+        "0,9 × 10⁻²",
+        "5,6 × 10⁷",
+        "2 × 10⁴"
+      ],
+      correta: "0,9 × 10⁻²",
+      comentario: "O coeficiente 0,9 é menor que 1.",
+      tempoEstimado: 25,
+      tags: [
+        "conceito"
+      ],
+      habilidades: [
+        "identificar-forma-valida"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_127",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conversao para notacao cientifica",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 8,
+      cognicao: "calculo",
+      tipo: "multipla_escolha",
+      enunciado: "Escreva 0,00000012 em notação científica.",
+      opcoes: [
+        "1,2 × 10⁻⁷",
+        "Alternativa 2",
+        "Alternativa 3",
+        "Alternativa 4"
+      ],
+      correta: "1,2 × 10⁻⁷",
+      comentario: "A vírgula anda 7 casas para a direita.",
+      tempoEstimado: 25,
+      tags: [
+        "conversao",
+        "negativo"
+      ],
+      habilidades: [
+        "converter-para-notacao-cientifica"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_128",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Operacoes",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 8,
+      cognicao: "calculo",
+      tipo: "multipla_escolha",
+      enunciado: "Calcule: (2 × 10⁵) ÷ (4 × 10²)",
+      opcoes: [
+        "Alternativa 2",
+        "Alternativa 3",
+        "Alternativa 4",
+        "5 × 10²"
+      ],
+      correta: "5 × 10²",
+      comentario: "2 ÷ 4 = 0,5, então ajusta para 5 × 10².",
+      tempoEstimado: 30,
+      tags: [
+        "operacoes",
+        "divisao"
+      ],
+      habilidades: [
+        "operar-potencias-de-dez"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_129",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Comparacao",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 8,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Qual é maior?",
+      opcoes: [
+        "Alternativa 3",
+        "Alternativa 4",
+        "4,5 × 10³",
+        "4,49 × 10³"
+      ],
+      correta: "4,5 × 10³",
+      comentario: "Com expoentes iguais, compare os coeficientes.",
+      tempoEstimado: 25,
+      tags: [
+        "comparacao"
+      ],
+      habilidades: [
+        "comparar-ordens-de-grandeza"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_130",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Expoentes",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 8,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Mantendo o coeficiente positivo fixo, 10⁻⁴ representa valor menor que 10⁻².",
+      opcoes: [
+        "Verdadeiro",
+        "Falso"
+      ],
+      correta: "Verdadeiro",
+      comentario: "Quanto mais negativo o expoente, menor o valor.",
+      tempoEstimado: 25,
+      tags: [
+        "expoente",
+        "negativo",
+        "vf"
+      ],
+      habilidades: [
+        "interpretar-expoentes"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_131",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Operacoes",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 9,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Calcule: (4 × 10⁶) + (7 × 10⁵)",
+      opcoes: [
+        "Alternativa 2",
+        "Alternativa 3",
+        "Alternativa 4",
+        "4,7 × 10⁶"
+      ],
+      correta: "4,7 × 10⁶",
+      comentario: "7 × 10⁵ = 0,7 × 10⁶.",
+      tempoEstimado: 30,
+      tags: [
+        "operacoes",
+        "soma"
+      ],
+      habilidades: [
+        "operar-potencias-de-dez"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_132",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Comparacao",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 9,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Qual é menor?",
+      opcoes: [
+        "Alternativa 3",
+        "Alternativa 4",
+        "8,2 × 10⁻⁶",
+        "7,9 × 10⁻⁵"
+      ],
+      correta: "8,2 × 10⁻⁶",
+      comentario: "10⁻⁶ é menor que 10⁻⁵.",
+      tempoEstimado: 30,
+      tags: [
+        "comparacao",
+        "negativo"
+      ],
+      habilidades: [
+        "comparar-ordens-de-grandeza"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_133",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Operacoes",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 9,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Calcule: (8 × 10⁻²) × (5 × 10³)",
+      opcoes: [
+        "Alternativa 4",
+        "4 × 10²",
+        "Alternativa 2",
+        "Alternativa 3"
+      ],
+      correta: "4 × 10²",
+      comentario: "8 × 5 = 40, então ajusta para 4 × 10².",
+      tempoEstimado: 30,
+      tags: [
+        "operacoes",
+        "multiplicacao"
+      ],
+      habilidades: [
+        "operar-potencias-de-dez"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_134",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conversao para forma decimal",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 9,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Escreva 1,004 × 10⁻⁴ na forma decimal.",
+      opcoes: [
+        "0,0001004",
+        "0,0010040000000000001",
+        "0,00001004",
+        "1,0001004"
+      ],
+      correta: "0,0001004",
+      comentario: "A vírgula anda 4 casas para a esquerda.",
+      tempoEstimado: 30,
+      tags: [
+        "decimal",
+        "negativo"
+      ],
+      habilidades: [
+        "converter-para-forma-decimal"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_135",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Ordem de grandeza",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 9,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "6,8 × 10⁻⁶ tem ordem de grandeza menor que 3,2 × 10⁻⁴.",
+      opcoes: [
+        "Verdadeiro",
+        "Falso"
+      ],
+      correta: "Verdadeiro",
+      comentario: "10⁻⁶ é menor que 10⁻⁴.",
+      tempoEstimado: 30,
+      tags: [
+        "ordem-grandeza",
+        "negativo",
+        "vf"
+      ],
+      habilidades: [
+        "comparar-ordens-de-grandeza"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_136",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conceito",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 9,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Qual escrita correta representa 0,00054?",
+      opcoes: [
+        "0,54 × 10⁻³",
+        "5,4 × 10⁴",
+        "5,4 × 10⁻⁴",
+        "54 × 10⁻⁵"
+      ],
+      correta: "5,4 × 10⁻⁴",
+      comentario: "O coeficiente válido é 5,4.",
+      tempoEstimado: 25,
+      tags: [
+        "conceito",
+        "conversao"
+      ],
+      habilidades: [
+        "identificar-forma-valida"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_137",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conversao para notacao cientifica",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 9,
+      cognicao: "calculo",
+      tipo: "multipla_escolha",
+      enunciado: "Escreva 9080000 em notação científica.",
+      opcoes: [
+        "Alternativa 4",
+        "9,08 × 10⁶",
+        "Alternativa 2",
+        "Alternativa 3"
+      ],
+      correta: "9,08 × 10⁶",
+      comentario: "A vírgula anda 6 casas para a esquerda.",
+      tempoEstimado: 25,
+      tags: [
+        "conversao"
+      ],
+      habilidades: [
+        "converter-para-notacao-cientifica"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_138",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Operacoes",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 9,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Calcule: (3 × 10⁶) ÷ (6 × 10³)",
+      opcoes: [
+        "5 × 10²",
+        "Alternativa 2",
+        "Alternativa 3",
+        "Alternativa 4"
+      ],
+      correta: "5 × 10²",
+      comentario: "3 ÷ 6 = 0,5, então ajusta para 5 × 10².",
+      tempoEstimado: 30,
+      tags: [
+        "operacoes",
+        "divisao"
+      ],
+      habilidades: [
+        "operar-potencias-de-dez"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_139",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Comparacao",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 9,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Qual é maior?",
+      opcoes: [
+        "9 × 10²",
+        "Alternativa 3",
+        "Alternativa 4",
+        "9,01 × 10²"
+      ],
+      correta: "9,01 × 10²",
+      comentario: "Com mesmo expoente, compare os coeficientes.",
+      tempoEstimado: 25,
+      tags: [
+        "comparacao"
+      ],
+      habilidades: [
+        "comparar-ordens-de-grandeza"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_140",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Expoentes",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 9,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Em 4,3 × 10⁰, o valor numérico é 4,3.",
+      opcoes: [
+        "Verdadeiro",
+        "Falso"
+      ],
+      correta: "Verdadeiro",
+      comentario: "Todo número elevado a zero vale 1.",
+      tempoEstimado: 25,
+      tags: [
+        "expoente",
+        "vf"
+      ],
+      habilidades: [
+        "interpretar-expoentes"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_141",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Operacoes",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 10,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Calcule: (5 × 10⁷) − (8 × 10⁶)",
+      opcoes: [
+        "4,2 × 10⁷",
+        "Alternativa 2",
+        "Alternativa 3",
+        "Alternativa 4"
+      ],
+      correta: "4,2 × 10⁷",
+      comentario: "8 × 10⁶ = 0,8 × 10⁷.",
+      tempoEstimado: 30,
+      tags: [
+        "operacoes",
+        "subtracao"
+      ],
+      habilidades: [
+        "operar-potencias-de-dez"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_142",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Comparacao",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 10,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Qual é maior?",
+      opcoes: [
+        "9,5 × 10⁻⁷",
+        "Alternativa 3",
+        "Alternativa 4",
+        "1,01 × 10⁻⁶"
+      ],
+      correta: "1,01 × 10⁻⁶",
+      comentario: "0,00000101 é maior que 0,00000095.",
+      tempoEstimado: 30,
+      tags: [
+        "comparacao",
+        "negativo"
+      ],
+      habilidades: [
+        "comparar-ordens-de-grandeza"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_143",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Operacoes",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 10,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Calcule: (2,5 × 10⁴) × (4 × 10²)",
+      opcoes: [
+        "Alternativa 3",
+        "Alternativa 4",
+        "1 × 10⁷",
+        "Alternativa 2"
+      ],
+      correta: "1 × 10⁷",
+      comentario: "2,5 × 4 = 10, então ajusta para 1 × 10⁷.",
+      tempoEstimado: 30,
+      tags: [
+        "operacoes",
+        "multiplicacao"
+      ],
+      habilidades: [
+        "operar-potencias-de-dez"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_144",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conversao para forma decimal",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 10,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Escreva 6,07 × 10⁻⁵ na forma decimal.",
+      opcoes: [
+        "1,0000607",
+        "0,0000607",
+        "0,000607",
+        "0,0000060699999999999995"
+      ],
+      correta: "0,0000607",
+      comentario: "A vírgula anda 5 casas para a esquerda.",
+      tempoEstimado: 30,
+      tags: [
+        "decimal",
+        "negativo"
+      ],
+      habilidades: [
+        "converter-para-forma-decimal"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_145",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Ordem de grandeza",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 10,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "3,1 × 10¹² tem ordem de grandeza maior que 9 × 10¹¹.",
+      opcoes: [
+        "Verdadeiro",
+        "Falso"
+      ],
+      correta: "Verdadeiro",
+      comentario: "10¹² é maior que 10¹¹.",
+      tempoEstimado: 30,
+      tags: [
+        "ordem-grandeza",
+        "vf"
+      ],
+      habilidades: [
+        "comparar-ordens-de-grandeza"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_146",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conceito",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 10,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Qual expressão está em notação científica correta?",
+      opcoes: [
+        "0,04 × 10⁶",
+        "40 × 10³",
+        "400 × 10²",
+        "4 × 10⁴"
+      ],
+      correta: "4 × 10⁴",
+      comentario: "Só ela tem coeficiente entre 1 e 10.",
+      tempoEstimado: 25,
+      tags: [
+        "conceito"
+      ],
+      habilidades: [
+        "identificar-forma-valida"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_147",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conversao para notacao cientifica",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 10,
+      cognicao: "calculo",
+      tipo: "multipla_escolha",
+      enunciado: "Escreva 0,000000003 em notação científica.",
+      opcoes: [
+        "Alternativa 3",
+        "Alternativa 4",
+        "3 × 10⁻⁹",
+        "Alternativa 2"
+      ],
+      correta: "3 × 10⁻⁹",
+      comentario: "A vírgula anda 9 casas para a direita.",
+      tempoEstimado: 25,
+      tags: [
+        "conversao",
+        "negativo"
+      ],
+      habilidades: [
+        "converter-para-notacao-cientifica"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_148",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Operacoes",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 10,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Calcule: (8 × 10⁵) ÷ (2 × 10³)",
+      opcoes: [
+        "Alternativa 4",
+        "4 × 10²",
+        "Alternativa 2",
+        "Alternativa 3"
+      ],
+      correta: "4 × 10²",
+      comentario: "8 ÷ 2 = 4 e 5 − 3 = 2.",
+      tempoEstimado: 30,
+      tags: [
+        "operacoes",
+        "divisao"
+      ],
+      habilidades: [
+        "operar-potencias-de-dez"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_149",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Comparacao",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 10,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Qual é menor?",
+      opcoes: [
+        "1,01 × 10³",
+        "1,1 × 10³",
+        "Alternativa 3",
+        "Alternativa 4"
+      ],
+      correta: "1,01 × 10³",
+      comentario: "Com expoentes iguais, compare os coeficientes.",
+      tempoEstimado: 25,
+      tags: [
+        "comparacao"
+      ],
+      habilidades: [
+        "comparar-ordens-de-grandeza"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_150",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Expoentes",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 10,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Mantendo o mesmo coeficiente positivo, 10⁶ representa valor maior que 10⁴.",
+      opcoes: [
+        "Verdadeiro",
+        "Falso"
+      ],
+      correta: "Verdadeiro",
+      comentario: "Maior expoente positivo gera maior valor.",
+      tempoEstimado: 25,
+      tags: [
+        "expoente",
+        "vf"
+      ],
+      habilidades: [
+        "interpretar-expoentes"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_151",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Equivalencia",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 8,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Uma grandeza foi registrada como 0,00045. Qual representação em notação científica é equivalente a esse valor?",
+      opcoes: [
+        "0,45 × 10⁻³",
+        "4,5 × 10⁻⁴",
+        "4,5 × 10⁻⁵",
+        "45 × 10⁻⁶"
+      ],
+      correta: "4,5 × 10⁻⁴",
+      comentario: "Desloca a vírgula 4 casas para a direita → expoente -4.",
+      tempoEstimado: 35,
+      tags: [
+        "equivalencia"
+      ],
+      habilidades: [
+        "converter-para-notacao-cientifica"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_152",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Pegadinha",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 8,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "A expressão 5 × 10² é equivalente a 0,5 × 10³.",
+      opcoes: [
+        "Verdadeiro",
+        "Falso"
+      ],
+      correta: "Falso",
+      comentario: "Ambas representam 500.",
+      tempoEstimado: 30,
+      tags: [
+        "equivalencia",
+        "vf"
+      ],
+      habilidades: [
+        "equivalencia-potencias"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_153",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Comparacao indireta",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 8,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Considere duas medições: A = 7 × 10⁻³ e B = 0,0006. Qual é a relação correta?",
+      opcoes: [
+        "A < B",
+        "A = B",
+        "Não é possível comparar",
+        "A > B"
+      ],
+      correta: "A > B",
+      comentario: "7×10⁻³ = 0,007 e 0,0006 é menor.",
+      tempoEstimado: 35,
+      tags: [
+        "comparacao"
+      ],
+      habilidades: [
+        "comparar-notacao"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_154",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Equivalencia",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 8,
+      cognicao: "calculo",
+      tipo: "multipla_escolha",
+      enunciado: "Escreva 6 × 10⁻³ na forma decimal.",
+      opcoes: [
+        "0,0006000000000000001",
+        "1,006",
+        "0,006",
+        "0,06"
+      ],
+      correta: "0,006",
+      comentario: "Expoente negativo desloca para a esquerda.",
+      tempoEstimado: 30,
+      tags: [
+        "decimal"
+      ],
+      habilidades: [
+        "converter-para-forma-decimal"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_155",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Pegadinha",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 8,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "O número 1,2 × 10⁴ é maior que 12 × 10³.",
+      opcoes: [
+        "Verdadeiro",
+        "Falso"
+      ],
+      correta: "Falso",
+      comentario: "Ambos são iguais a 12000.",
+      tempoEstimado: 30,
+      tags: [
+        "equivalencia",
+        "vf"
+      ],
+      habilidades: [
+        "equivalencia-potencias"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_156",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Equivalencia",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 8,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Um valor foi registrado como 0,00008. Qual alternativa representa corretamente esse número em notação científica?",
+      opcoes: [
+        "8 × 10⁻⁵",
+        "8 × 10⁻⁴",
+        "0,8 × 10⁻⁴",
+        "80 × 10⁻⁶"
+      ],
+      correta: "8 × 10⁻⁵",
+      comentario: "Deslocamento de 5 casas → expoente -5.",
+      tempoEstimado: 35,
+      tags: [
+        "equivalencia"
+      ],
+      habilidades: [
+        "converter-para-notacao-cientifica"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_157",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Comparacao indireta",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 8,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Considere A = 3 × 10⁻² e B = 0,0025. Qual alternativa está correta?",
+      opcoes: [
+        "A < B",
+        "A = B",
+        "Não é possível comparar",
+        "A > B"
+      ],
+      correta: "A > B",
+      comentario: "3×10⁻² = 0,03, maior que 0,0025.",
+      tempoEstimado: 35,
+      tags: [
+        "comparacao"
+      ],
+      habilidades: [
+        "comparar-notacao"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_158",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Pegadinha",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 8,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "A expressão 9 × 10³ é equivalente a 0,9 × 10⁴.",
+      opcoes: [
+        "Verdadeiro",
+        "Falso"
+      ],
+      correta: "Falso",
+      comentario: "Ambas representam 9000.",
+      tempoEstimado: 30,
+      tags: [
+        "equivalencia",
+        "vf"
+      ],
+      habilidades: [
+        "equivalencia-potencias"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_159",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conversao indireta",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 8,
+      cognicao: "calculo",
+      tipo: "multipla_escolha",
+      enunciado: "Escreva 4,2 × 10⁻² na forma decimal.",
+      opcoes: [
+        "1,042",
+        "0,042",
+        "0,42000000000000004",
+        "0,004200000000000001"
+      ],
+      correta: "0,042",
+      comentario: "Move 2 casas para a esquerda.",
+      tempoEstimado: 30,
+      tags: [
+        "decimal"
+      ],
+      habilidades: [
+        "converter-para-forma-decimal"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_160",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Equivalencia",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 8,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Qual alternativa representa o mesmo valor de 2 × 10⁵?",
+      opcoes: [
+        "20 × 10⁴",
+        "0,2 × 10⁶",
+        "200 × 10³",
+        "Todas estão corretas"
+      ],
+      correta: "Todas estão corretas",
+      comentario: "Todas equivalem a 200000.",
+      tempoEstimado: 40,
+      tags: [
+        "equivalencia"
+      ],
+      habilidades: [
+        "equivalencia-potencias"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_161",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Comparacao indireta",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 8,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Considere A = 5 × 10⁻⁴ e B = 0,0003. Qual é a alternativa correta?",
+      opcoes: [
+        "A = B",
+        "Indefinido",
+        "A > B",
+        "A < B"
+      ],
+      correta: "A > B",
+      comentario: "5×10⁻⁴ = 0,0005, maior que 0,0003.",
+      tempoEstimado: 35,
+      tags: [
+        "comparacao"
+      ],
+      habilidades: [
+        "comparar-notacao"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_162",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Pegadinha",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 8,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "O número 7 × 10² é menor que 0,7 × 10³.",
+      opcoes: [
+        "Verdadeiro",
+        "Falso"
+      ],
+      correta: "Falso",
+      comentario: "Ambos são 700.",
+      tempoEstimado: 30,
+      tags: [
+        "equivalencia",
+        "vf"
+      ],
+      habilidades: [
+        "equivalencia-potencias"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_163",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Equivalencia",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 8,
+      cognicao: "calculo",
+      tipo: "multipla_escolha",
+      enunciado: "Escreva 9 × 10⁻⁵ na forma decimal.",
+      opcoes: [
+        "0,00009",
+        "0,0009000000000000001",
+        "0,000009",
+        "1,00009"
+      ],
+      correta: "0,00009",
+      comentario: "5 casas para a esquerda.",
+      tempoEstimado: 30,
+      tags: [
+        "decimal"
+      ],
+      habilidades: [
+        "converter-para-forma-decimal"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_164",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Equivalencia",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 8,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Qual alternativa NÃO representa o mesmo valor de 6 × 10³?",
+      opcoes: [
+        "6000",
+        "0,6 × 10⁴",
+        "60 × 10²",
+        "6 × 10²"
+      ],
+      correta: "6 × 10²",
+      comentario: "6×10² = 600, diferente de 6000.",
+      tempoEstimado: 40,
+      tags: [
+        "equivalencia"
+      ],
+      habilidades: [
+        "equivalencia-potencias"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_165",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Comparacao indireta",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 8,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "A = 8 × 10⁻³ e B = 0,009. Qual a relação correta?",
+      opcoes: [
+        "A = B",
+        "Não comparável",
+        "A < B",
+        "A > B"
+      ],
+      correta: "A < B",
+      comentario: "0,008 < 0,009.",
+      tempoEstimado: 35,
+      tags: [
+        "comparacao"
+      ],
+      habilidades: [
+        "comparar-notacao"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_166",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Equivalencia",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 8,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Qual alternativa representa corretamente o número 0,00072 em notação científica?",
+      opcoes: [
+        "0,72 × 10⁻³",
+        "7,2 × 10⁻⁴",
+        "7,2 × 10⁻⁵",
+        "72 × 10⁻⁶"
+      ],
+      correta: "7,2 × 10⁻⁴",
+      comentario: "Desloca 4 casas → expoente -4.",
+      tempoEstimado: 35,
+      tags: [
+        "equivalencia"
+      ],
+      habilidades: [
+        "converter-para-notacao-cientifica"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_167",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Pegadinha",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 8,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "A expressão 3 × 10⁴ é equivalente a 30 × 10³.",
+      opcoes: [
+        "Verdadeiro",
+        "Falso"
+      ],
+      correta: "Falso",
+      comentario: "Ambas representam 30000.",
+      tempoEstimado: 30,
+      tags: [
+        "equivalencia",
+        "vf"
+      ],
+      habilidades: [
+        "equivalencia-potencias"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_168",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Comparacao indireta",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 8,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Considere A = 6 × 10⁻³ e B = 0,0055. Qual alternativa está correta?",
+      opcoes: [
+        "A < B",
+        "A = B",
+        "Indefinido",
+        "A > B"
+      ],
+      correta: "A > B",
+      comentario: "0,006 > 0,0055.",
+      tempoEstimado: 35,
+      tags: [
+        "comparacao"
+      ],
+      habilidades: [
+        "comparar-notacao"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_169",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conversao indireta",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 8,
+      cognicao: "calculo",
+      tipo: "multipla_escolha",
+      enunciado: "Escreva 1,5 × 10⁻³ na forma decimal.",
+      opcoes: [
+        "0,00015000000000000001",
+        "1,0015",
+        "0,0015",
+        "0,015"
+      ],
+      correta: "0,0015",
+      comentario: "3 casas para a esquerda.",
+      tempoEstimado: 30,
+      tags: [
+        "decimal"
+      ],
+      habilidades: [
+        "converter-para-forma-decimal"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_170",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Equivalencia",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 8,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Qual alternativa representa o mesmo valor de 4 × 10⁶?",
+      opcoes: [
+        "Todas estão corretas",
+        "40 × 10⁵",
+        "0,4 × 10⁷",
+        "400 × 10⁴"
+      ],
+      correta: "Todas estão corretas",
+      comentario: "Todas equivalem a 4.000.000.",
+      tempoEstimado: 40,
+      tags: [
+        "equivalencia"
+      ],
+      habilidades: [
+        "equivalencia-potencias"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_171",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Pegadinha",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 9,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "O número 2,5 × 10³ é maior que 25 × 10².",
+      opcoes: [
+        "Verdadeiro",
+        "Falso"
+      ],
+      correta: "Falso",
+      comentario: "Ambos são 2500.",
+      tempoEstimado: 30,
+      tags: [
+        "equivalencia",
+        "vf"
+      ],
+      habilidades: [
+        "equivalencia-potencias"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_172",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Equivalencia",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 9,
+      cognicao: "calculo",
+      tipo: "multipla_escolha",
+      enunciado: "Escreva 8 × 10⁻⁶ na forma decimal.",
+      opcoes: [
+        "0,0000008",
+        "1,000008",
+        "0,000008",
+        "0,00007999999999999999"
+      ],
+      correta: "0,000008",
+      comentario: "6 casas para a esquerda.",
+      tempoEstimado: 30,
+      tags: [
+        "decimal"
+      ],
+      habilidades: [
+        "converter-para-forma-decimal"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_173",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Equivalencia negativa",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 9,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Qual alternativa NÃO representa o mesmo valor de 9 × 10⁴?",
+      opcoes: [
+        "90 × 10³",
+        "9 × 10³",
+        "90000",
+        "0,9 × 10⁵"
+      ],
+      correta: "9 × 10³",
+      comentario: "9×10³ = 9000.",
+      tempoEstimado: 40,
+      tags: [
+        "equivalencia"
+      ],
+      habilidades: [
+        "equivalencia-potencias"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_174",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Comparacao indireta",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 9,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "A = 7 × 10⁻⁴ e B = 0,00065. Qual a alternativa correta?",
+      opcoes: [
+        "A > B",
+        "A < B",
+        "A = B",
+        "Indefinido"
+      ],
+      correta: "A > B",
+      comentario: "0,0007 > 0,00065.",
+      tempoEstimado: 35,
+      tags: [
+        "comparacao"
+      ],
+      habilidades: [
+        "comparar-notacao"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_175",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Pegadinha",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 9,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "0,3 × 10⁴ é maior que 3 × 10³.",
+      opcoes: [
+        "Verdadeiro",
+        "Falso"
+      ],
+      correta: "Falso",
+      comentario: "Ambos são 3000.",
+      tempoEstimado: 30,
+      tags: [
+        "equivalencia",
+        "vf"
+      ],
+      habilidades: [
+        "equivalencia-potencias"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_176",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Equivalencia",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 9,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Ao reescrever a expressão 34 × 10⁵ na forma científica padrão, qual alternativa mantém o mesmo valor numérico?",
+      opcoes: [
+        "0,34 × 10⁷",
+        "3,4 × 10⁵",
+        "3,4 × 10⁶",
+        "34 × 10⁵"
+      ],
+      correta: "3,4 × 10⁶",
+      comentario: "Ao deslocar a vírgula uma casa para a esquerda, soma-se 1 ao expoente.",
+      tempoEstimado: 30,
+      tags: [
+        "conceito",
+        "equivalencia"
+      ],
+      habilidades: [
+        "identificar-forma-valida"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_177",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Operacoes com equivalencia",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 9,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Ao dividir 7 × 10⁻¹ por 2 × 10², qual resultado em notação científica representa corretamente o quociente?",
+      opcoes: [
+        "Alternativa 4",
+        "3,5 × 10⁻³",
+        "Alternativa 2",
+        "Alternativa 3"
+      ],
+      correta: "3,5 × 10⁻³",
+      comentario: "7 ÷ 2 = 3,5 e −1 − 2 = −3.",
+      tempoEstimado: 30,
+      tags: [
+        "operacoes",
+        "divisao",
+        "negativo",
+        "equivalencia"
+      ],
+      habilidades: [
+        "operar-potencias-de-dez"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_178",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Comparacao indireta",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 9,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Sem transformar completamente os dois números, identifique qual deles representa o maior valor.",
+      opcoes: [
+        "1 × 10⁵",
+        "9,99 × 10⁴",
+        "Alternativa 3",
+        "Alternativa 4"
+      ],
+      correta: "1 × 10⁵",
+      comentario: "1 × 10⁵ = 100000, que é maior que 99900.",
+      tempoEstimado: 30,
+      tags: [
+        "comparacao",
+        "equivalencia"
+      ],
+      habilidades: [
+        "comparar-ordens-de-grandeza"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_179",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Operacoes com reescrita",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 9,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Para somar 9 × 10⁻³ e 2 × 10⁻⁴, é preciso reescrever uma das parcelas na mesma ordem de potência. Qual é o resultado final?",
+      opcoes: [
+        "Alternativa 2",
+        "Alternativa 3",
+        "Alternativa 4",
+        "9,2 × 10⁻³"
+      ],
+      correta: "9,2 × 10⁻³",
+      comentario: "2 × 10⁻⁴ = 0,2 × 10⁻³.",
+      tempoEstimado: 30,
+      tags: [
+        "operacoes",
+        "soma",
+        "negativo",
+        "equivalencia"
+      ],
+      habilidades: [
+        "operar-potencias-de-dez"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_180",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Expoentes",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 9,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Mantendo o mesmo coeficiente positivo, um número escrito com 10⁻⁸ representa valor menor do que outro escrito com 10⁻⁶.",
+      opcoes: [
+        "Verdadeiro",
+        "Falso"
+      ],
+      correta: "Verdadeiro",
+      comentario: "Quanto mais negativo o expoente, menor o valor.",
+      tempoEstimado: 30,
+      tags: [
+        "expoente",
+        "negativo",
+        "comparacao",
+        "vf"
+      ],
+      habilidades: [
+        "comparar-ordens-de-grandeza"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_181",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conversao para notacao cientifica",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 9,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Um valor extremamente pequeno foi registrado como 0,00000000045. Escreva esse número em notação científica.",
+      opcoes: [
+        "4,5 × 10⁻¹⁰",
+        "Alternativa 2",
+        "Alternativa 3",
+        "Alternativa 4"
+      ],
+      correta: "4,5 × 10⁻¹⁰",
+      comentario: "A vírgula anda 10 casas para a direita.",
+      tempoEstimado: 30,
+      tags: [
+        "conversao",
+        "negativo",
+        "equivalencia"
+      ],
+      habilidades: [
+        "converter-para-notacao-cientifica"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_182",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conversao para forma decimal",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 9,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Ao converter 7,0008 × 10⁻⁴ para a forma decimal, qual escrita preserva exatamente o valor original?",
+      opcoes: [
+        "0,0070008",
+        "0,000070008",
+        "1,00070008",
+        "0,00070008"
+      ],
+      correta: "0,00070008",
+      comentario: "A vírgula anda 4 casas para a esquerda.",
+      tempoEstimado: 30,
+      tags: [
+        "decimal",
+        "negativo",
+        "equivalencia"
+      ],
+      habilidades: [
+        "converter-para-forma-decimal"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_183",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Comparacao indireta",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 9,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Observe os dois valores a seguir e identifique qual representa a menor quantidade.",
+      opcoes: [
+        "Alternativa 3",
+        "Alternativa 4",
+        "3,01 × 10⁻⁴",
+        "2,99 × 10⁻³"
+      ],
+      correta: "3,01 × 10⁻⁴",
+      comentario: "10⁻⁴ indica valor menor que 10⁻³.",
+      tempoEstimado: 30,
+      tags: [
+        "comparacao",
+        "negativo"
+      ],
+      habilidades: [
+        "comparar-ordens-de-grandeza"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_184",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Operacoes",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 9,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Ao multiplicar 1,5 × 10⁶ por 2 × 10², qual resultado final fica corretamente escrito em notação científica?",
+      opcoes: [
+        "Alternativa 4",
+        "3 × 10⁸",
+        "Alternativa 2",
+        "Alternativa 3"
+      ],
+      correta: "3 × 10⁸",
+      comentario: "1,5 × 2 = 3 e 6 + 2 = 8.",
+      tempoEstimado: 30,
+      tags: [
+        "operacoes",
+        "multiplicacao"
+      ],
+      habilidades: [
+        "operar-potencias-de-dez"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_185",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Ordem de grandeza",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 9,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Comparando apenas a ordem de grandeza, 2,2 × 10¹⁴ representa valor maior do que 9,9 × 10¹³.",
+      opcoes: [
+        "Verdadeiro",
+        "Falso"
+      ],
+      correta: "Verdadeiro",
+      comentario: "10¹⁴ é maior que 10¹³.",
+      tempoEstimado: 30,
+      tags: [
+        "ordem-grandeza",
+        "comparacao",
+        "vf"
+      ],
+      habilidades: [
+        "comparar-ordens-de-grandeza"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_186",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Equivalencia",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 10,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "A expressão 0,07 × 10⁶ não está na forma científica padrão. Qual alternativa reescreve esse valor corretamente sem alterá-lo?",
+      opcoes: [
+        "7 × 10⁵",
+        "0,7 × 10⁵",
+        "70 × 10³",
+        "7 × 10⁴"
+      ],
+      correta: "7 × 10⁴",
+      comentario: "0,07 × 10⁶ = 70000 = 7 × 10⁴.",
+      tempoEstimado: 30,
+      tags: [
+        "conceito",
+        "equivalencia"
+      ],
+      habilidades: [
+        "identificar-forma-valida"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_187",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Operacoes com expoentes negativos",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 10,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Ao dividir 6 × 10⁻⁵ por 3 × 10⁻², qual resultado representa corretamente o valor obtido?",
+      opcoes: [
+        "Alternativa 3",
+        "Alternativa 4",
+        "2 × 10⁻³",
+        "Alternativa 2"
+      ],
+      correta: "2 × 10⁻³",
+      comentario: "6 ÷ 3 = 2 e −5 − (−2) = −3.",
+      tempoEstimado: 30,
+      tags: [
+        "operacoes",
+        "divisao",
+        "negativo"
+      ],
+      habilidades: [
+        "operar-potencias-de-dez"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_188",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Comparacao indireta",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 10,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Sem arredondar, escolha o maior valor entre as duas escritas abaixo.",
+      opcoes: [
+        "Alternativa 4",
+        "1 × 10³",
+        "9,999 × 10²",
+        "Alternativa 3"
+      ],
+      correta: "1 × 10³",
+      comentario: "1000 é maior que 999,9.",
+      tempoEstimado: 30,
+      tags: [
+        "comparacao",
+        "equivalencia"
+      ],
+      habilidades: [
+        "comparar-ordens-de-grandeza"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_189",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Operacoes com reescrita",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 10,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Para somar 8 × 10⁻⁴ e 5 × 10⁻⁵, pode-se reescrever a segunda parcela com a mesma potência da primeira. Qual é o resultado final?",
+      opcoes: [
+        "8,5 × 10⁻⁴",
+        "Alternativa 2",
+        "Alternativa 3",
+        "Alternativa 4"
+      ],
+      correta: "8,5 × 10⁻⁴",
+      comentario: "5 × 10⁻⁵ = 0,5 × 10⁻⁴.",
+      tempoEstimado: 30,
+      tags: [
+        "operacoes",
+        "soma",
+        "negativo",
+        "equivalencia"
+      ],
+      habilidades: [
+        "operar-potencias-de-dez"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_190",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Expoentes",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 10,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Mantendo o mesmo coeficiente positivo, uma escrita com 10¹¹ representa valor maior do que outra com 10⁹.",
+      opcoes: [
+        "Verdadeiro",
+        "Falso"
+      ],
+      correta: "Verdadeiro",
+      comentario: "Maior expoente positivo gera maior valor.",
+      tempoEstimado: 30,
+      tags: [
+        "expoente",
+        "comparacao",
+        "vf"
+      ],
+      habilidades: [
+        "comparar-ordens-de-grandeza"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_191",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conversao para notacao cientifica",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 10,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Um número grande foi registrado como 4500000000. Escreva esse valor em notação científica.",
+      opcoes: [
+        "Alternativa 4",
+        "4,5 × 10⁹",
+        "Alternativa 2",
+        "Alternativa 3"
+      ],
+      correta: "4,5 × 10⁹",
+      comentario: "A vírgula anda 9 casas para a esquerda.",
+      tempoEstimado: 30,
+      tags: [
+        "conversao",
+        "equivalencia"
+      ],
+      habilidades: [
+        "converter-para-notacao-cientifica"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_192",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Conversao para forma decimal",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 10,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Ao converter 8,09 × 10⁻⁶ para a forma decimal, qual escrita preserva corretamente todos os algarismos do número?",
+      opcoes: [
+        "0,00000809",
+        "0,0000809",
+        "0,000000809",
+        "1,00000809"
+      ],
+      correta: "0,00000809",
+      comentario: "A vírgula anda 6 casas para a esquerda.",
+      tempoEstimado: 30,
+      tags: [
+        "decimal",
+        "negativo",
+        "equivalencia"
+      ],
+      habilidades: [
+        "converter-para-forma-decimal"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_193",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Comparacao indireta",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 10,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Entre os dois valores abaixo, identifique aquele que representa a menor quantidade.",
+      opcoes: [
+        "3,99 × 10⁻⁹",
+        "Alternativa 3",
+        "Alternativa 4",
+        "4,01 × 10⁻¹⁰"
+      ],
+      correta: "4,01 × 10⁻¹⁰",
+      comentario: "10⁻¹⁰ é menor que 10⁻⁹.",
+      tempoEstimado: 30,
+      tags: [
+        "comparacao",
+        "negativo"
+      ],
+      habilidades: [
+        "comparar-ordens-de-grandeza"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_194",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Operacoes",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 10,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Ao multiplicar 3 × 10⁷ por 3 × 10⁻³, qual resultado final fica corretamente expresso em notação científica?",
+      opcoes: [
+        "Alternativa 3",
+        "Alternativa 4",
+        "9 × 10⁴",
+        "Alternativa 2"
+      ],
+      correta: "9 × 10⁴",
+      comentario: "3 × 3 = 9 e 7 + (−3) = 4.",
+      tempoEstimado: 30,
+      tags: [
+        "operacoes",
+        "multiplicacao"
+      ],
+      habilidades: [
+        "operar-potencias-de-dez"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_195",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Ordem de grandeza",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 10,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Comparando a ordem de grandeza, 7,7 × 10⁻¹² representa valor menor do que 1,2 × 10⁻¹⁰.",
+      opcoes: [
+        "Verdadeiro",
+        "Falso"
+      ],
+      correta: "Verdadeiro",
+      comentario: "10⁻¹² é menor que 10⁻¹⁰.",
+      tempoEstimado: 30,
+      tags: [
+        "ordem-grandeza",
+        "negativo",
+        "comparacao",
+        "vf"
+      ],
+      habilidades: [
+        "comparar-ordens-de-grandeza"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_196",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Equivalencia",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 10,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "A expressão 250 × 10⁻³ não está na forma científica padrão. Qual alternativa a reescreve corretamente sem mudar seu valor?",
+      opcoes: [
+        "2,5 × 10⁻¹",
+        "25 × 10⁻²",
+        "0,25 × 10⁰",
+        "2,5 × 10⁻²"
+      ],
+      correta: "2,5 × 10⁻¹",
+      comentario: "250 × 10⁻³ = 0,25 = 2,5 × 10⁻¹.",
+      tempoEstimado: 30,
+      tags: [
+        "conceito",
+        "equivalencia"
+      ],
+      habilidades: [
+        "identificar-forma-valida"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_197",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Operacoes com expoentes negativos",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 10,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Ao dividir 4 × 10⁻¹ por 2 × 10⁻⁴, qual é o resultado corretamente escrito em notação científica?",
+      opcoes: [
+        "Alternativa 2",
+        "Alternativa 3",
+        "Alternativa 4",
+        "2 × 10³"
+      ],
+      correta: "2 × 10³",
+      comentario: "4 ÷ 2 = 2 e −1 − (−4) = 3.",
+      tempoEstimado: 30,
+      tags: [
+        "operacoes",
+        "divisao",
+        "negativo"
+      ],
+      habilidades: [
+        "operar-potencias-de-dez"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_198",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Comparacao indireta",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 10,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Sem transformar desnecessariamente os dois valores, identifique qual deles é o maior.",
+      opcoes: [
+        "Alternativa 3",
+        "Alternativa 4",
+        "1 × 10⁻¹",
+        "9,999 × 10⁻²"
+      ],
+      correta: "1 × 10⁻¹",
+      comentario: "0,1 é maior que 0,09999.",
+      tempoEstimado: 30,
+      tags: [
+        "comparacao",
+        "negativo"
+      ],
+      habilidades: [
+        "comparar-ordens-de-grandeza"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_199",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Operacoes com reescrita",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 10,
+      cognicao: "estrategia",
+      tipo: "multipla_escolha",
+      enunciado: "Para somar 9 × 10⁵ e 9 × 10⁴, pode-se reescrever a segunda parcela com a mesma potência da primeira. Qual é o resultado final?",
+      opcoes: [
+        "Alternativa 4",
+        "9,9 × 10⁵",
+        "Alternativa 2",
+        "Alternativa 3"
+      ],
+      correta: "9,9 × 10⁵",
+      comentario: "9 × 10⁴ = 0,9 × 10⁵.",
+      tempoEstimado: 30,
+      tags: [
+        "operacoes",
+        "soma",
+        "equivalencia"
+      ],
+      habilidades: [
+        "operar-potencias-de-dez"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    },
+    {
+      id: "nc_200",
+      serie: [
+        1
+      ],
+      materia: "Matemática",
+      topico: "Notação Científica",
+      subtopico: "Expoentes",
+      dificuldadeLabel: "dificil",
+      dificuldadeNivel: 10,
+      cognicao: "interpretacao",
+      tipo: "multipla_escolha",
+      enunciado: "Na expressão 1 × 10⁰, o valor numérico permanece igual a 1.",
+      opcoes: [
+        "Verdadeiro",
+        "Falso"
+      ],
+      correta: "Verdadeiro",
+      comentario: "Todo número não nulo elevado a zero vale 1.",
+      tempoEstimado: 30,
+      tags: [
+        "expoente",
+        "vf"
+      ],
+      habilidades: [
+        "interpretar-expoentes"
+      ],
+      collections: [
+        "questions"
+      ],
+      sourceType: "original",
+      sourceExam: "",
+      sourceYear: 0,
+      competencies: [],
+      status: "revisada"
+    }
   ]
 };

@@ -473,6 +473,16 @@ export function createQuestionsRouteUseCases(
     function toggleSmartSubjectOption(
         subjectKey
     ) {
+        const option =
+            page.getSmartSubjectOptions().find(
+                (item) =>
+                    item.key === subjectKey
+            );
+
+        if (!option || option.disabled) {
+            return;
+        }
+
         page.dismissCoachHint(
             "smart_subjects"
         );
@@ -486,9 +496,12 @@ export function createQuestionsRouteUseCases(
             "smart_subjects"
         );
         const availableSubjects =
-            page.getSmartSubjectOptions().map(
-                (item) => item.key
-            );
+            page.getSmartSubjectOptions()
+                .filter(
+                    (item) =>
+                        !item.disabled
+                )
+                .map((item) => item.key);
         const selectedSubjects =
             QuestionsContext.get()
                 .smartSelectedSubjects || [];
@@ -517,7 +530,9 @@ export function createQuestionsRouteUseCases(
 
         const activeSubjects =
             page.getSmartSubjectOptions().filter(
-                (item) => item.active
+                (item) =>
+                    item.active &&
+                    !item.disabled
             );
 
         if (!activeSubjects.length) {

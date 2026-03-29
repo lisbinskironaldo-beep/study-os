@@ -10,6 +10,255 @@ export function createQuestionsLibraryUseCases(
         QuestionsService
     } = dependencies || {};
 
+    async function ensureDetailedCatalogLoaded() {
+        if (
+            typeof page
+                .ensureDetailedCatalogLoaded ===
+            "function"
+        ) {
+            await page.ensureDetailedCatalogLoaded();
+        }
+    }
+
+    async function ensureRouteCatalogLoaded(
+        routeContext = null
+    ) {
+        if (
+            typeof page
+                .ensureRouteCatalogLoaded ===
+            "function"
+        ) {
+            await page.ensureRouteCatalogLoaded(
+                routeContext
+            );
+            return;
+        }
+
+        await ensureDetailedCatalogLoaded();
+    }
+
+    function getRouteTopicIds(
+        routeContext = null
+    ) {
+        return Array.isArray(
+            routeContext?.topicos
+        )
+            ? routeContext.topicos.filter(
+                Boolean
+            )
+            : [];
+    }
+
+    function createListResolutionResult(
+        {
+            list = [],
+            source = "empty",
+            requestedCount = 0,
+            resolvedCount = 0
+        } = {}
+    ) {
+        return {
+            list: Array.isArray(list)
+                ? [...list]
+                : [],
+            source,
+            requestedCount:
+                Number(requestedCount) || 0,
+            resolvedCount:
+                Number(resolvedCount) || 0
+        };
+    }
+
+    function getSavedBlockResolutionNotice(
+        block = {},
+        resolution = {}
+    ) {
+        const requestedCount =
+            Number(
+                resolution.requestedCount
+            ) || 0;
+        const resolvedCount =
+            Number(
+                resolution.resolvedCount
+            ) || 0;
+        const hasSnapshot =
+            Array.isArray(
+                block.sessionSnapshot
+            ) &&
+            block.sessionSnapshot.length > 0;
+
+        if (
+            resolution.source === "snapshot"
+        ) {
+            if (
+                requestedCount > 0 &&
+                resolvedCount > 0 &&
+                resolvedCount < requestedCount
+            ) {
+                return "Esse bloco foi refeito pelo snapshot salvo porque parte das questoes por id nao esta mais disponivel.";
+            }
+
+            return "Esse bloco foi refeito pelo snapshot de compatibilidade.";
+        }
+
+        if (
+            requestedCount > 0 &&
+            resolvedCount > 0 &&
+            resolvedCount < requestedCount
+        ) {
+            return hasSnapshot
+                ? "Parte das questoes desse bloco nao esta mais disponivel e nem o snapshot de compatibilidade conseguiu reconstruir o treino."
+                : "Parte das questoes desse bloco nao esta mais disponivel para reconstruir o treino.";
+        }
+
+        if (requestedCount > 0) {
+            return hasSnapshot
+                ? "Nao foi possivel reconstruir esse bloco nem pelos ids salvos nem pelo snapshot de compatibilidade."
+                : "Nao foi possivel reconstruir esse bloco pelos ids salvos.";
+        }
+
+        return "Esse bloco nao tem questoes suficientes para ser refeito.";
+    }
+
+    async function resolveQuestionList(
+        questionIds = [],
+        fallbackSnapshot = [],
+        routeContext = null
+    ) {
+        const ids = Array.isArray(questionIds)
+            ? questionIds.filter(Boolean)
+            : [];
+        const fallbackList = Array.isArray(
+            fallbackSnapshot
+        ) && fallbackSnapshot.length
+            ? [...fallbackSnapshot]
+            : [];
+
+        if (
+            ids.length &&
+            page.contentRepository &&
+            typeof page.contentRepository
+                .findQuestionsByIdsAsync ===
+                "function"
+        ) {
+            const resolved =
+                await page.contentRepository.findQuestionsByIdsAsync(
+                    ids,
+                    {
+                        topicIds:
+                            getRouteTopicIds(
+                                routeContext
+                            )
+                    }
+                );
+
+            if (
+                typeof page
+                    .syncCatalogFromRepository ===
+                "function"
+            ) {
+                page.syncCatalogFromRepository();
+            }
+
+            if (
+                Array.isArray(resolved) &&
+                resolved.length === ids.length
+            ) {
+                return createListResolutionResult(
+                    {
+                        list: resolved,
+                        source: "ids",
+                        requestedCount:
+                            ids.length,
+                        resolvedCount:
+                            resolved.length
+                    }
+                );
+            }
+
+            if (fallbackList.length) {
+                return createListResolutionResult(
+                    {
+                        list: fallbackList,
+                        source: "snapshot",
+                        requestedCount:
+                            ids.length,
+                        resolvedCount:
+                            Array.isArray(
+                                resolved
+                            )
+                                ? resolved.length
+                                : 0
+                    }
+                );
+            }
+
+            return createListResolutionResult(
+                {
+                    requestedCount:
+                        ids.length,
+                    resolvedCount:
+                        Array.isArray(
+                            resolved
+                        )
+                            ? resolved.length
+                            : 0
+                }
+            );
+        }
+
+        if (
+            ids.length &&
+            page.contentRepository &&
+            typeof page.contentRepository
+                .findQuestionsByIds ===
+                "function"
+        ) {
+            const resolved =
+                page.contentRepository.findQuestionsByIds(
+                    ids
+                );
+
+            if (
+                typeof page
+                    .syncCatalogFromRepository ===
+                "function"
+            ) {
+                page.syncCatalogFromRepository();
+            }
+
+            if (
+                Array.isArray(resolved) &&
+                resolved.length === ids.length
+            ) {
+                return createListResolutionResult(
+                    {
+                        list: resolved,
+                        source: "ids",
+                        requestedCount:
+                            ids.length,
+                        resolvedCount:
+                            resolved.length
+                    }
+                );
+            }
+        }
+
+        if (fallbackList.length) {
+            return createListResolutionResult({
+                list: fallbackList,
+                source: "snapshot",
+                requestedCount: ids.length,
+                resolvedCount: 0
+            });
+        }
+
+        return createListResolutionResult({
+            requestedCount: ids.length,
+            resolvedCount: 0
+        });
+    }
+
     function saveCurrentSmartProfile() {
         const suggestedName =
             page.getSuggestedSmartProfileName();
@@ -61,7 +310,10 @@ export function createQuestionsLibraryUseCases(
         page.setSmartConfig({
             smartGoal:
                 profile.smartGoal ||
-                "continue",
+                    "continue",
+            smartSessionMetric:
+                profile.sessionMetric ||
+                "quantidade",
             smartSelectedSeries: [
                 ...(profile.selectedSeries ||
                     [])
@@ -82,6 +334,18 @@ export function createQuestionsLibraryUseCases(
                 ...(profile.excludedSubjects ||
                     [])
             ],
+            smartQuestionCount:
+                profile.questionCount === null
+                    ? null
+                    : Number(
+                        profile.questionCount
+                    ) || 5,
+            smartTimeMinutes:
+                profile.timeMinutes === null
+                    ? null
+                    : Number(
+                        profile.timeMinutes
+                    ) || 15,
             quantidadeQuestoes:
                 Number(
                     profile.preferredAmount
@@ -191,7 +455,8 @@ export function createQuestionsLibraryUseCases(
     }
 
     function deleteSmartProfile(
-        profileId
+        profileId,
+        options = {}
     ) {
         const profile =
             QuestionsStore.getSmartProfileById(
@@ -204,6 +469,32 @@ export function createQuestionsLibraryUseCases(
             page.openLauncher(
                 "smart_profiles"
             );
+            return;
+        }
+
+        if (
+            typeof page.openConfirmDialog ===
+            "function"
+        ) {
+            page.openConfirmDialog({
+                title: "Apagar perfil",
+                message:
+                    `Apagar o perfil "${profile.name}"?`,
+                confirmLabel: "Apagar",
+                anchorRect:
+                    options.anchorRect ||
+                    null,
+                onConfirm: () => {
+                    QuestionsStore.deleteSmartProfile(
+                        profileId
+                    );
+                    page.runtimeNotice =
+                        `Perfil apagado: ${profile.name}.`;
+                    page.openLauncher(
+                        "smart_profiles"
+                    );
+                }
+            });
             return;
         }
 
@@ -280,18 +571,26 @@ export function createQuestionsLibraryUseCases(
                 routeContext,
                 sourceMode
             );
-        const name = window.prompt(
-            "Nome do bloco salvo:",
-            options.defaultName ||
-                suggestedName
-        );
+        const requestedName =
+            options.skipPrompt === true
+                ? options.defaultName
+                : window.prompt(
+                    "Nome do bloco salvo:",
+                    options.defaultName ||
+                        suggestedName
+                );
 
-        if (name === null) {
+        if (
+            requestedName === null &&
+            options.skipPrompt !== true
+        ) {
             return null;
         }
 
         const cleanName =
-            String(name || "").trim() ||
+            String(
+                requestedName || ""
+            ).trim() ||
             suggestedName;
         const block =
             QuestionsStore.saveSavedBlock({
@@ -310,21 +609,29 @@ export function createQuestionsLibraryUseCases(
                     (question) =>
                         question?.id || ""
                 ),
-                sessionSnapshot: list
+                sessionSnapshot: list,
+                profileId:
+                    String(
+                        options.profileId || ""
+                    ).trim()
             });
 
-        page.runtimeNotice =
-            `Bloco salvo: ${cleanName}.`;
-        page.render();
+        if (options.silent !== true) {
+            page.runtimeNotice =
+                `Bloco salvo: ${cleanName}.`;
+            page.render();
+        }
 
         return block;
     }
 
-    function saveCurrentSpecificBlock() {
+    async function saveCurrentSpecificBlock() {
         const validation =
             QuestionsService.getLauncherValidation(
                 page
             );
+        const current =
+            QuestionsContext.get();
 
         if (!validation.isReady) {
             page.runtimeNotice =
@@ -336,8 +643,9 @@ export function createQuestionsLibraryUseCases(
             return;
         }
 
-        const current =
-            QuestionsContext.get();
+        await ensureRouteCatalogLoaded(
+            current
+        );
         const list =
             QuestionsService.buildSession(
                 page
@@ -361,7 +669,7 @@ export function createQuestionsLibraryUseCases(
         );
     }
 
-    function saveCurrentSmartBlock() {
+    async function saveCurrentSmartBlock() {
         const current =
             QuestionsContext.get();
         const preview =
@@ -378,6 +686,9 @@ export function createQuestionsLibraryUseCases(
             return;
         }
 
+        await ensureRouteCatalogLoaded(
+            preview.patch
+        );
         const snapshot =
             page.buildSessionSnapshotForBlock(
                 preview.patch,
@@ -432,7 +743,7 @@ export function createQuestionsLibraryUseCases(
         );
     }
 
-    function startSavedBlock(
+    async function startSavedBlock(
         blockId
     ) {
         const block =
@@ -447,15 +758,20 @@ export function createQuestionsLibraryUseCases(
             return;
         }
 
-        const resolvedList =
-            page.resolveQuestionList(
+        const resolution =
+            await resolveQuestionList(
                 block.questionIds,
-                block.sessionSnapshot
+                block.sessionSnapshot,
+                block.routeSnapshot?.context ||
+                    {}
             );
 
-        if (!resolvedList.length) {
+        if (!resolution.list.length) {
             page.runtimeNotice =
-                "Esse bloco nao tem questoes suficientes para ser refeito.";
+                getSavedBlockResolutionNotice(
+                    block,
+                    resolution
+                );
             page.openLauncher("saved");
             return;
         }
@@ -463,9 +779,19 @@ export function createQuestionsLibraryUseCases(
         QuestionsStore.markSavedBlockUsed(
             block.id
         );
+        const postStartNotice =
+            resolution.source ===
+            "snapshot"
+                ? getSavedBlockResolutionNotice(
+                    block,
+                    resolution
+                )
+                : "";
+
         page.clearRuntimeNotice();
-        page.startSession({
-            sessionList: resolvedList,
+        await page.startSession({
+            sessionList:
+                resolution.list,
             questionIds:
                 block.questionIds || [],
             meta: {
@@ -484,6 +810,15 @@ export function createQuestionsLibraryUseCases(
                 block.mode || "specific",
             savedBlockId: block.id
         });
+
+        if (
+            postStartNotice &&
+            typeof page.render === "function"
+        ) {
+            page.runtimeNotice =
+                postStartNotice;
+            page.render();
+        }
     }
 
     function renameSavedBlock(
@@ -573,7 +908,8 @@ export function createQuestionsLibraryUseCases(
     }
 
     function deleteSavedBlock(
-        blockId
+        blockId,
+        options = {}
     ) {
         const block =
             QuestionsStore.getSavedBlockById(
@@ -584,6 +920,32 @@ export function createQuestionsLibraryUseCases(
             page.runtimeNotice =
                 "Nao foi possivel encontrar esse bloco salvo.";
             page.openLauncher("saved");
+            return;
+        }
+
+        if (
+            typeof page.openConfirmDialog ===
+            "function"
+        ) {
+            page.openConfirmDialog({
+                title: "Apagar bloco",
+                message:
+                    `Apagar o bloco "${block.name}"?`,
+                confirmLabel: "Apagar",
+                anchorRect:
+                    options.anchorRect ||
+                    null,
+                onConfirm: () => {
+                    QuestionsStore.deleteSavedBlock(
+                        block.id
+                    );
+                    page.runtimeNotice =
+                        `Bloco apagado: ${block.name}.`;
+                    page.openLauncher(
+                        "saved"
+                    );
+                }
+            });
             return;
         }
 

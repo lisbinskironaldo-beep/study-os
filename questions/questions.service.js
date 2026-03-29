@@ -1,8 +1,75 @@
 window.QuestionsService = {
     shuffle(list) {
-        return [...(list || [])].sort(
-            () => Math.random() - 0.5
+        const items = [...(list || [])];
+
+        for (
+            let index = items.length - 1;
+            index > 0;
+            index -= 1
+        ) {
+            const swapIndex = Math.floor(
+                Math.random() * (index + 1)
+            );
+            const current = items[index];
+            items[index] = items[swapIndex];
+            items[swapIndex] = current;
+        }
+
+        return items;
+    },
+
+    pickTopicKeys(
+        topicOptions = [],
+        count = 1,
+        preferredKeys = []
+    ) {
+        const topics = Array.isArray(
+            topicOptions
+        )
+            ? topicOptions.filter(Boolean)
+            : [];
+        const desiredCount = Math.max(
+            Number(count) || 0,
+            0
         );
+
+        if (!desiredCount || !topics.length) {
+            return [];
+        }
+
+        const selected = [];
+        const availableKeys = new Set(
+            topics.map((topic) => topic.key)
+        );
+
+        (preferredKeys || []).forEach((key) => {
+            if (
+                availableKeys.has(key) &&
+                !selected.includes(key)
+            ) {
+                selected.push(key);
+            }
+        });
+
+        this.shuffle(
+            topics.filter(
+                (topic) =>
+                    !selected.includes(topic.key)
+            )
+        )
+            .slice(
+                0,
+                Math.max(
+                    desiredCount -
+                        selected.length,
+                    0
+                )
+            )
+            .forEach((topic) => {
+                selected.push(topic.key);
+            });
+
+        return selected.slice(0, desiredCount);
     },
 
     slugify(value) {
@@ -122,6 +189,89 @@ window.QuestionsService = {
             : [];
     },
 
+    hasDetailedCatalog(page) {
+        return this.getCatalog(page).length > 0;
+    },
+
+    isFullCatalogLoaded(page) {
+        return Boolean(
+            page?.contentRepository &&
+                typeof page.contentRepository
+                    .isCatalogLoaded ===
+                    "function" &&
+                page.contentRepository.isCatalogLoaded()
+        );
+    },
+
+    shouldUseDetailedQuestionPool(
+        page
+    ) {
+        return (
+            this.isFullCatalogLoaded(page) ||
+            (
+                !this.hasCatalogManifest(page) &&
+                this.hasDetailedCatalog(page)
+            )
+        );
+    },
+
+    getCatalogManifest(page) {
+        return page?.data
+            ?.schoolCatalogManifest &&
+            typeof page.data
+                .schoolCatalogManifest ===
+                "object"
+            ? page.data.schoolCatalogManifest
+            : null;
+    },
+
+    hasCatalogManifest(page) {
+        return Array.isArray(
+            this.getCatalogManifest(page)
+                ?.topics
+        );
+    },
+
+    getManifestTopicRecords(
+        page,
+        filters = {}
+    ) {
+        const manifest =
+            this.getCatalogManifest(page);
+        const topics = Array.isArray(
+            manifest?.topics
+        )
+            ? manifest.topics
+            : [];
+        const targetSerie =
+            Number(filters.serie) || null;
+        const targetMateria =
+            String(filters.materia || "").trim();
+
+        return topics.filter((topic) => {
+            if (
+                targetSerie &&
+                !topic?.serie?.includes(targetSerie)
+            ) {
+                return false;
+            }
+
+            if (
+                targetMateria &&
+                String(
+                    topic.subjectKey ||
+                        this.slugify(
+                            topic.materia
+                        )
+                ) !== targetMateria
+            ) {
+                return false;
+            }
+
+            return true;
+        });
+    },
+
     getTopicBaseKey(topicRecord) {
         return String(
             topicRecord?.metadados?.base ||
@@ -145,6 +295,38 @@ window.QuestionsService = {
     },
 
     getSeriesOptions(page) {
+        if (this.hasCatalogManifest(page)) {
+            const found = new Set();
+
+            this.getManifestTopicRecords(
+                page
+            ).forEach((topic) => {
+                (topic?.serie || []).forEach(
+                    (serie) => {
+                        if (
+                            Number.isFinite(
+                                Number(serie)
+                            )
+                        ) {
+                            found.add(
+                                Number(serie)
+                            );
+                        }
+                    }
+                );
+            });
+
+            return [...found]
+                .sort(
+                    (left, right) =>
+                        left - right
+                )
+                .map((serie) => ({
+                    key: serie,
+                    label: `${serie}a serie`
+                }));
+        }
+
         const found = new Set();
 
         this.getCatalog(page).forEach((topic) => {
@@ -164,6 +346,111 @@ window.QuestionsService = {
     },
 
     getSubjectOptions(page, serie = null) {
+        if (this.hasCatalogManifest(page)) {
+            const manifest =
+                this.getCatalogManifest(page);
+            const targetSerie =
+                Number(serie) || null;
+            const grouped = new Map();
+            const subjects = Array.isArray(
+                manifest?.subjects
+            )
+                ? manifest.subjects
+                : [];
+
+            subjects.forEach((subject) => {
+                if (
+                    targetSerie &&
+                    Number(subject?.serie) !==
+                        targetSerie
+                ) {
+                    return;
+                }
+
+                const subjectKey =
+                    String(
+                        subject?.subjectKey ||
+                            this.slugify(
+                                subject?.materia
+                            )
+                    );
+                const current =
+                    grouped.get(
+                        subjectKey
+                    ) || {
+                        key: subjectKey,
+                        label:
+                            subject?.materia ||
+                            "",
+                        count: 0,
+                        topicCount: 0,
+                        readyQuestionCount: 0,
+                        readyTopicCount: 0,
+                        hasQuestions: false
+                    };
+
+                current.count +=
+                    Number(
+                        subject?.readyQuestionCount
+                    ) || 0;
+                current.topicCount +=
+                    Number(
+                        subject?.topicCount
+                    ) || 0;
+                current.readyQuestionCount +=
+                    Number(
+                        subject?.readyQuestionCount
+                    ) || 0;
+                current.readyTopicCount +=
+                    Number(
+                        subject?.readyTopicCount
+                    ) || 0;
+                current.hasQuestions =
+                    current.readyQuestionCount >
+                    0;
+
+                if (
+                    current.hasQuestions &&
+                    subject?.materia
+                ) {
+                    current.label =
+                        subject.materia;
+                }
+
+                grouped.set(
+                    subjectKey,
+                    current
+                );
+            });
+
+            return [...grouped.values()]
+                .sort((left, right) => {
+                    if (
+                        left.hasQuestions !==
+                        right.hasQuestions
+                    ) {
+                        return left.hasQuestions
+                            ? -1
+                            : 1;
+                    }
+
+                    if (
+                        left.readyQuestionCount !==
+                        right.readyQuestionCount
+                    ) {
+                        return (
+                            right.readyQuestionCount -
+                            left.readyQuestionCount
+                        );
+                    }
+
+                    return left.label.localeCompare(
+                        right.label,
+                        "pt-BR"
+                    );
+                });
+        }
+
         const targetSerie =
             Number(serie) || null;
         const grouped = new Map();
@@ -247,6 +534,18 @@ window.QuestionsService = {
     },
 
     getTopicRecords(page, filters = {}) {
+        if (
+            !this.getCatalog(page).length &&
+            this.hasCatalogManifest(page)
+        ) {
+            return this.getManifestTopicRecords(
+                page,
+                filters
+            ).map((topic) => ({
+                ...topic
+            }));
+        }
+
         const targetSerie =
             Number(filters.serie) || null;
         const targetMateria =
@@ -273,6 +572,68 @@ window.QuestionsService = {
     },
 
     getTopicOptions(page, filters = {}) {
+        if (
+            !this.isFullCatalogLoaded(page) &&
+            this.hasCatalogManifest(page)
+        ) {
+            return this.getManifestTopicRecords(
+                page,
+                filters
+            ).map((topic) => {
+                const subjectKey =
+                    String(
+                        topic.subjectKey ||
+                            this.slugify(
+                                topic.materia
+                            )
+                    );
+                const baseKey = String(
+                    topic.base || "ESCOLAR"
+                )
+                    .trim()
+                    .toUpperCase();
+                const searchIndex =
+                    this.normalizeText(
+                        [
+                            topic.topico,
+                            topic.materia,
+                            baseKey
+                        ].join(" ")
+                    );
+                const count =
+                    Number(
+                        topic.readyQuestionCount
+                    ) || 0;
+
+                return {
+                    key:
+                        topic.id ||
+                        this.slugify(
+                            topic.topico
+                        ),
+                    label: topic.topico,
+                    serie: Array.isArray(
+                        topic.serie
+                    )
+                        ? [...topic.serie]
+                        : [],
+                    subjectKey,
+                    subjectLabel:
+                        topic.materia,
+                    baseKey,
+                    count,
+                    hasQuestions:
+                        Boolean(topic.hasQuestions) ||
+                        count > 0,
+                    subtopicCount: 0,
+                    subtopicsPreview: [],
+                    eixo: "",
+                    frente: "",
+                    searchIndex
+                };
+            });
+        }
+
         return this.getTopicRecords(
             page,
             filters
@@ -610,6 +971,113 @@ window.QuestionsService = {
         };
     },
 
+    getSmartLauncherRecovery(
+        page,
+        context = null
+    ) {
+        const ctx =
+            context ||
+            QuestionsContext.get();
+        const currentValidation =
+            this.getSmartLauncherValidation(
+                page,
+                ctx
+            );
+        const hasHiddenExclusions =
+            Boolean(
+                (ctx.smartExcludedSeries || [])
+                    .length ||
+                    (ctx.smartExcludedBases || [])
+                        .length ||
+                    (
+                        ctx.smartExcludedSubjects ||
+                        []
+                    ).length
+            );
+
+        if (
+            currentValidation.isReady ||
+            !hasHiddenExclusions
+        ) {
+            return {
+                isRecoverable: false,
+                currentValidation,
+                recoveredValidation: null,
+                recoveryPatch: null
+            };
+        }
+
+        const recoveryPatch = {
+            smartExcludedSeries: [],
+            smartExcludedBases: [],
+            smartExcludedSubjects: []
+        };
+        const recoveredValidation =
+            this.getSmartLauncherValidation(
+                page,
+                {
+                    ...ctx,
+                    ...recoveryPatch
+                }
+            );
+
+        if (
+            !recoveredValidation.isReady &&
+            !(
+                recoveredValidation
+                    ?.eligibleTopics?.length
+            )
+        ) {
+            return {
+                isRecoverable: false,
+                currentValidation,
+                recoveredValidation,
+                recoveryPatch: null
+            };
+        }
+
+        const hiddenFilters = [];
+
+        if (
+            (ctx.smartExcludedBases || [])
+                .length
+        ) {
+            hiddenFilters.push(
+                `${ctx.smartExcludedBases.length} base(s)`
+            );
+        }
+
+        if (
+            (ctx.smartExcludedSeries || [])
+                .length
+        ) {
+            hiddenFilters.push(
+                `${ctx.smartExcludedSeries.length} serie(s)`
+            );
+        }
+
+        if (
+            (ctx.smartExcludedSubjects || [])
+                .length
+        ) {
+            hiddenFilters.push(
+                `${ctx.smartExcludedSubjects.length} materia(s)`
+            );
+        }
+
+        return {
+            isRecoverable: true,
+            currentValidation,
+            recoveredValidation,
+            recoveryPatch,
+            hiddenFilters,
+            reason:
+                hiddenFilters.length
+                    ? `Havia exclusoes salvas (${hiddenFilters.join(", ")}) escondendo as questoes prontas. O recorte foi liberado automaticamente.`
+                    : "Havia exclusoes salvas escondendo as questoes prontas. O recorte foi liberado automaticamente."
+        };
+    },
+
     filterTopicOptions(
         topicOptions = [],
         filters = {}
@@ -669,10 +1137,10 @@ window.QuestionsService = {
     },
 
     getCatalogHealth(page) {
-        const catalog =
-            this.getCatalog(page);
+        const topics =
+            this.getTopicOptions(page);
         const readyTopics =
-            this.getTopicOptions(page).filter(
+            topics.filter(
                 (topic) => topic.hasQuestions
             );
         const subjects =
@@ -684,7 +1152,7 @@ window.QuestionsService = {
             );
 
         return {
-            totalTopics: catalog.length,
+            totalTopics: topics.length,
             readyTopics: readyTopics.length,
             totalSubjects: subjects.length,
             readySubjects:
@@ -712,14 +1180,71 @@ window.QuestionsService = {
         );
     },
 
+    resolveChoiceCorrectIndex(
+        correct,
+        options = []
+    ) {
+        if (
+            Number.isInteger(correct)
+        ) {
+            return correct;
+        }
+
+        const numericCorrect =
+            Number(correct);
+
+        if (
+            Number.isInteger(
+                numericCorrect
+            ) &&
+            String(correct).trim() !== ""
+        ) {
+            return numericCorrect;
+        }
+
+        const normalizedCorrect =
+            this.normalizeText(correct);
+
+        if (!normalizedCorrect) {
+            return correct;
+        }
+
+        const optionIndex =
+            (Array.isArray(options)
+                ? options
+                : []
+            ).findIndex(
+                (option) =>
+                    this.normalizeText(
+                        option
+                    ) ===
+                    normalizedCorrect
+            );
+
+        return optionIndex >= 0
+            ? optionIndex
+            : correct;
+    },
+
     resolveCorrectValue(
         type,
-        correct
+        correct,
+        options = []
     ) {
         if (type === "vf") {
             return correct === true
                 ? 0
                 : 1;
+        }
+
+        if (
+            type === "multipla_escolha" ||
+            type === "comparacao"
+        ) {
+            return this.resolveChoiceCorrectIndex(
+                correct,
+                options
+            );
         }
 
         return correct;
@@ -782,7 +1307,8 @@ window.QuestionsService = {
                 : [],
             correct: this.resolveCorrectValue(
                 type,
-                question.correta
+                question.correta,
+                question.opcoes
             ),
             explanation:
                 question.comentario || "",
@@ -866,9 +1392,113 @@ window.QuestionsService = {
         return questions;
     },
 
-    getQuestionPool(page) {
+    getWarmupExpandedTopicKeys(
+        page,
+        context = null,
+        preferredKeys = []
+    ) {
         const ctx =
+            context ||
             QuestionsContext.get();
+        const currentTopics =
+            Array.isArray(ctx.topicos)
+                ? ctx.topicos.filter(Boolean)
+                : [];
+        const selectedSmartSeries =
+            Array.isArray(
+                ctx.smartSelectedSeries
+            )
+                ? ctx.smartSelectedSeries
+                : [];
+        const selectedSmartSubjects =
+            Array.isArray(
+                ctx.smartSelectedSubjects
+            )
+                ? ctx.smartSelectedSubjects
+                : [];
+        const smartScoped =
+            selectedSmartSeries.length > 0 ||
+            selectedSmartSubjects.length >
+                0;
+
+        if (
+            currentTopics.length > 1 ||
+            (
+                ctx.mode ===
+                    "ASSUNTO_UNICO" &&
+                !smartScoped
+            )
+        ) {
+            return currentTopics;
+        }
+
+        const subjectTopics =
+            this.getTopicOptions(page, {
+                serie: ctx.serie,
+                materia: ctx.materia
+            }).filter(
+                (topic) =>
+                    Number(topic?.count || 0) >
+                    0
+            );
+
+        if (subjectTopics.length <= 1) {
+            return currentTopics;
+        }
+
+        const evidence =
+            this.getAdaptiveEvidenceProfile(
+                ctx,
+                this.getTopicPerformanceMap(
+                    ctx
+                )
+            );
+        const desiredCount =
+            Math.min(
+                evidence.totalAttempts < 100
+                    ? 3
+                    : 2,
+                subjectTopics.length,
+                Math.max(
+                    Number(
+                        ctx.quantidadeQuestoes
+                    ) || 1,
+                    1
+                )
+            );
+
+        if (
+            desiredCount <=
+            currentTopics.length
+        ) {
+            return currentTopics;
+        }
+
+        return this.pickTopicKeys(
+            subjectTopics,
+            desiredCount,
+            [
+                ...currentTopics,
+                ...(
+                    Array.isArray(
+                        preferredKeys
+                    )
+                        ? preferredKeys
+                        : []
+                )
+            ]
+        );
+    },
+
+    getQuestionPool(page, context = null) {
+        const ctx =
+            context ||
+            QuestionsContext.get();
+        const effectiveTopics =
+            this.getWarmupExpandedTopicKeys(
+                page,
+                ctx
+            );
         let pool =
             this.getAllQuestions(page, {
                 serie: ctx.serie,
@@ -876,14 +1506,13 @@ window.QuestionsService = {
             });
 
         if (
-            !Array.isArray(ctx.topicos) ||
-            !ctx.topicos.length
+            !effectiveTopics.length
         ) {
             return [];
         }
 
         pool = pool.filter((question) =>
-            ctx.topicos.includes(
+            effectiveTopics.includes(
                 question.topicKey
             )
         );
@@ -917,10 +1546,57 @@ window.QuestionsService = {
         );
     },
 
+    getAdaptiveEvidenceProfile(
+        ctx,
+        performanceMap = null
+    ) {
+        const sourceMap =
+            performanceMap ||
+            this.getTopicPerformanceMap(ctx);
+        const entries = [
+            ...(
+                sourceMap instanceof Map
+                    ? sourceMap.values()
+                    : []
+            )
+        ];
+        const totalAttempts =
+            entries.reduce(
+                (acc, entry) =>
+                    acc +
+                    (entry?.attempts || 0),
+                0
+            );
+        const warmupAttempts = 100;
+        const warmupProgress =
+            this.clamp(
+                totalAttempts /
+                    warmupAttempts,
+                0,
+                1
+            );
+
+        return {
+            totalAttempts,
+            warmupAttempts,
+            warmupProgress,
+            explorationWeight:
+                1 - warmupProgress,
+            reinforcementWeight:
+                0.35 +
+                warmupProgress * 0.65
+        };
+    },
+
     getTopicWeight(question, ctx, performanceMap) {
         const entry =
             performanceMap.get(
                 question.topicKey
+            );
+        const evidence =
+            this.getAdaptiveEvidenceProfile(
+                ctx,
+                performanceMap
             );
         const manualWeight =
             Number(
@@ -967,15 +1643,38 @@ window.QuestionsService = {
             question.topicKey
                 ? 2.5
                 : 0;
-        const noveltyWeight =
-            entry ? 0 : 1.4;
+        const topicEvidenceFactor =
+            entry
+                ? this.clamp(
+                    (entry.attempts || 0) /
+                        6,
+                    0.25,
+                    1
+                )
+                : 0.35;
+        const noveltyWeight = entry
+            ? 0.25 *
+              evidence.explorationWeight
+            : 1.2 +
+              evidence.explorationWeight *
+                  1.4;
 
         return (
-            manualWeight * 1.4 +
-            errorWeight +
+            manualWeight *
+                (1.1 +
+                    evidence
+                        .reinforcementWeight *
+                        0.5) +
+            errorWeight *
+                evidence.reinforcementWeight *
+                topicEvidenceFactor +
             recencyWeight +
-            reviewWeight +
-            focusWeight +
+            reviewWeight *
+                evidence.reinforcementWeight *
+                topicEvidenceFactor +
+            focusWeight *
+                evidence.reinforcementWeight *
+                topicEvidenceFactor +
             noveltyWeight
         );
     },
@@ -1040,9 +1739,30 @@ window.QuestionsService = {
                 },
                 {}
             );
+        const subtopicCountMap =
+            selected.reduce(
+                (acc, item) => {
+                    const key =
+                        item.subtopicKey ||
+                        item.topicKey ||
+                        item.id;
+                    acc[key] =
+                        (acc[key] || 0) + 1;
+                    return acc;
+                },
+                {}
+            );
         const seenTopics = new Set(
             selected.map(
                 (item) => item.topicKey
+            )
+        );
+        const seenSubtopics = new Set(
+            selected.map(
+                (item) =>
+                    item.subtopicKey ||
+                    item.topicKey ||
+                    item.id
             )
         );
         const lastTopic =
@@ -1051,12 +1771,33 @@ window.QuestionsService = {
                     selected.length - 1
                 ].topicKey
                 : null;
+        const questionSubtopicKey =
+            question.subtopicKey ||
+            question.topicKey ||
+            question.id;
+        const lastSubtopic =
+            selected.length
+                ? selected[
+                    selected.length - 1
+                ].subtopicKey ||
+                  selected[
+                      selected.length - 1
+                  ].topicKey ||
+                  selected[
+                      selected.length - 1
+                  ].id
+                : null;
         const difficultyTarget =
             this.getDifficultyTarget(
                 ctx,
                 selected.length,
                 size,
                 options
+            );
+        const evidence =
+            this.getAdaptiveEvidenceProfile(
+                ctx,
+                performanceMap
             );
         const difficultyScore =
             2.4 -
@@ -1071,7 +1812,17 @@ window.QuestionsService = {
             !seenTopics.has(
                 question.topicKey
             )
-                ? 2.2
+                ? 2.2 +
+                  evidence.explorationWeight *
+                      1.35
+                : 0;
+        const subtopicCoverageBoost =
+            !seenSubtopics.has(
+                questionSubtopicKey
+            )
+                ? 1.15 +
+                  evidence.explorationWeight *
+                      0.7
                 : 0;
         const focusBoost =
             options.focusMode &&
@@ -1085,10 +1836,19 @@ window.QuestionsService = {
             !options.focusMode
                 ? -2.1
                 : 0;
+        const subtopicRepeatPenalty =
+            lastSubtopic ===
+                questionSubtopicKey
+                ? -1.25
+                : 0;
         const saturationPenalty =
             (topicCountMap[
                 question.topicKey
             ] || 0) * 0.85;
+        const subtopicSaturationPenalty =
+            (subtopicCountMap[
+                questionSubtopicKey
+            ] || 0) * 0.4;
         const reviewBoost =
             options.reviewBias &&
             performanceMap.get(
@@ -1114,6 +1874,9 @@ window.QuestionsService = {
             proofBalanceBoost +
             repeatPenalty -
             saturationPenalty +
+            subtopicCoverageBoost +
+            subtopicRepeatPenalty -
+            subtopicSaturationPenalty +
             Math.random() * 0.15
         );
     },
@@ -1167,7 +1930,391 @@ window.QuestionsService = {
             );
         }
 
-        return selected;
+        return this.interleaveTopicsForWarmup(
+            this.ensureTopicDiversity(
+                selected,
+                pool,
+                ctx,
+                size,
+                options
+            ),
+            ctx
+        );
+    },
+
+    getDesiredTopicDiversity(
+        selected,
+        pool,
+        ctx,
+        size,
+        options = {}
+    ) {
+        if (
+            ctx.mode === "ASSUNTO_UNICO"
+        ) {
+            return 1;
+        }
+
+        const availableTopics = [
+            ...new Set(
+                (Array.isArray(pool)
+                    ? pool
+                    : []
+                )
+                    .map((question) =>
+                        question?.topicKey
+                    )
+                    .filter(Boolean)
+            )
+        ];
+        const availableCount =
+            availableTopics.length;
+
+        if (availableCount <= 1) {
+            return availableCount;
+        }
+
+        const performanceMap =
+            this.getTopicPerformanceMap(
+                ctx
+            );
+        const evidence =
+            this.getAdaptiveEvidenceProfile(
+                ctx,
+                performanceMap
+            );
+        const warmupStage =
+            evidence.totalAttempts < 100;
+
+        if (
+            options.focusMode ||
+            ctx.mode ===
+                "REFORCO_DIRECIONADO"
+        ) {
+            return Math.min(
+                2,
+                availableCount,
+                size
+            );
+        }
+
+        if (
+            warmupStage ||
+            options.profile ===
+                "alternating"
+        ) {
+            return Math.min(
+                3,
+                availableCount,
+                size
+            );
+        }
+
+        return Math.min(
+            2,
+            availableCount,
+            size
+        );
+    },
+
+    ensureTopicDiversity(
+        selected,
+        pool,
+        ctx,
+        size,
+        options = {}
+    ) {
+        const chosen = Array.isArray(
+            selected
+        )
+            ? [...selected]
+            : [];
+        const desiredTopics =
+            this.getDesiredTopicDiversity(
+                chosen,
+                pool,
+                ctx,
+                size,
+                options
+            );
+
+        if (desiredTopics <= 1) {
+            return chosen;
+        }
+
+        const currentTopics = new Set(
+            chosen
+                .map((question) =>
+                    question?.topicKey
+                )
+                .filter(Boolean)
+        );
+
+        if (
+            currentTopics.size >=
+            desiredTopics
+        ) {
+            return chosen;
+        }
+
+        const remainingPool =
+            this.shuffle(
+                (Array.isArray(pool)
+                    ? pool
+                    : []
+                ).filter(
+                    (candidate) =>
+                        candidate &&
+                        !chosen.some(
+                            (item) =>
+                                item.id ===
+                                candidate.id
+                        )
+                )
+            );
+
+        while (
+            currentTopics.size <
+                desiredTopics &&
+            remainingPool.length
+        ) {
+            const missingTopicQuestion =
+                remainingPool.find(
+                    (candidate) =>
+                        candidate?.topicKey &&
+                        !currentTopics.has(
+                            candidate.topicKey
+                        )
+                );
+
+            if (!missingTopicQuestion) {
+                break;
+            }
+
+            const topicCountMap =
+                chosen.reduce(
+                    (acc, question) => {
+                        if (
+                            question?.topicKey
+                        ) {
+                            acc[
+                                question.topicKey
+                            ] =
+                                (acc[
+                                    question
+                                        .topicKey
+                                ] || 0) + 1;
+                        }
+                        return acc;
+                    },
+                    {}
+                );
+            const replaceIndex =
+                chosen
+                    .map(
+                        (
+                            question,
+                            index
+                        ) => ({
+                            index,
+                            topicKey:
+                                question?.topicKey ||
+                                "",
+                            count:
+                                topicCountMap[
+                                    question
+                                        ?.topicKey
+                                ] || 0
+                        })
+                    )
+                    .filter(
+                        (entry) =>
+                            entry.count > 1 &&
+                            entry.topicKey !==
+                                ctx.focoPrincipal
+                    )
+                    .sort(
+                        (left, right) =>
+                            right.count -
+                                left.count ||
+                            right.index -
+                                left.index
+                    )[0]?.index;
+
+            const safeIndex =
+                Number.isInteger(
+                    replaceIndex
+                )
+                    ? replaceIndex
+                    : chosen.length - 1;
+
+            chosen.splice(
+                safeIndex,
+                1,
+                missingTopicQuestion
+            );
+            currentTopics.add(
+                missingTopicQuestion.topicKey
+            );
+
+            const usedIds = new Set(
+                chosen.map(
+                    (item) => item.id
+                )
+            );
+            const nextPoolIndex =
+                remainingPool.findIndex(
+                    (candidate) =>
+                        candidate.id ===
+                        missingTopicQuestion.id
+                );
+
+            if (nextPoolIndex >= 0) {
+                remainingPool.splice(
+                    nextPoolIndex,
+                    1
+                );
+            }
+
+            for (
+                let index =
+                    remainingPool.length - 1;
+                index >= 0;
+                index -= 1
+            ) {
+                if (
+                    usedIds.has(
+                        remainingPool[index]
+                            ?.id
+                    )
+                ) {
+                    remainingPool.splice(
+                        index,
+                        1
+                    );
+                }
+            }
+        }
+
+        return chosen;
+    },
+
+    interleaveTopicsForWarmup(
+        selected,
+        ctx
+    ) {
+        const chosen = Array.isArray(
+            selected
+        )
+            ? [...selected]
+            : [];
+
+        if (
+            ctx.mode === "ASSUNTO_UNICO"
+        ) {
+            return chosen;
+        }
+
+        const performanceMap =
+            this.getTopicPerformanceMap(
+                ctx
+            );
+        const evidence =
+            this.getAdaptiveEvidenceProfile(
+                ctx,
+                performanceMap
+            );
+        const distinctTopics = [
+            ...new Set(
+                chosen
+                    .map((question) =>
+                        question?.topicKey
+                    )
+                    .filter(Boolean)
+            )
+        ];
+
+        if (
+            evidence.totalAttempts >=
+                100 ||
+            distinctTopics.length <= 1
+        ) {
+            return chosen;
+        }
+
+        const buckets = new Map();
+
+        chosen.forEach((question) => {
+            const key =
+                question?.topicKey ||
+                question?.id ||
+                "";
+
+            if (!buckets.has(key)) {
+                buckets.set(key, []);
+            }
+
+            buckets.get(key).push(
+                question
+            );
+        });
+
+        const result = [];
+        let lastTopicKey = "";
+
+        while (
+            result.length < chosen.length
+        ) {
+            const nextKey =
+                [...buckets.entries()]
+                    .filter(
+                        ([, items]) =>
+                            items.length
+                    )
+                    .sort(
+                        (left, right) =>
+                            right[1].length -
+                                left[1].length ||
+                            left[0].localeCompare(
+                                right[0],
+                                "pt-BR"
+                            )
+                    )
+                    .find(
+                        ([topicKey]) =>
+                            topicKey !==
+                            lastTopicKey
+                    )?.[0] ||
+                [...buckets.entries()]
+                    .find(
+                        ([, items]) =>
+                            items.length
+                    )?.[0];
+
+            if (!nextKey) {
+                break;
+            }
+
+            const bucket =
+                buckets.get(nextKey) || [];
+            const nextQuestion =
+                bucket.shift();
+
+            if (!nextQuestion) {
+                continue;
+            }
+
+            result.push(nextQuestion);
+            lastTopicKey =
+                nextQuestion.topicKey ||
+                nextQuestion.id ||
+                "";
+        }
+
+        return result.length ===
+            chosen.length
+            ? result
+            : chosen;
     },
 
     buildCombinedSession(pool, size) {
@@ -1245,8 +2392,23 @@ window.QuestionsService = {
     buildSession(page) {
         const ctx =
             QuestionsContext.get();
+        const effectiveTopics =
+            this.getWarmupExpandedTopicKeys(
+                page,
+                ctx
+            );
+        const effectiveContext = {
+            ...ctx,
+            topicos:
+                effectiveTopics.length
+                    ? effectiveTopics
+                    : ctx.topicos
+        };
         const pool =
-            this.getQuestionPool(page);
+            this.getQuestionPool(
+                page,
+                effectiveContext
+            );
         const sessionSize =
             Math.min(
                 Number(
@@ -1262,7 +2424,7 @@ window.QuestionsService = {
         if (ctx.mode === "ASSUNTO_UNICO") {
             return this.buildEngineSession(
                 pool,
-                ctx,
+                effectiveContext,
                 sessionSize,
                 {
                     profile: "single",
@@ -1282,7 +2444,7 @@ window.QuestionsService = {
             ) {
                 return this.buildAdaptiveSession(
                     pool,
-                    ctx,
+                    effectiveContext,
                     sessionSize
                 );
             }
@@ -1293,14 +2455,14 @@ window.QuestionsService = {
             ) {
                 return this.buildAlternatingSession(
                     pool,
-                    ctx,
+                    effectiveContext,
                     sessionSize
                 );
             }
 
             return this.buildBalancedSession(
                 pool,
-                ctx,
+                effectiveContext,
                 sessionSize
             );
         }
@@ -1313,19 +2475,19 @@ window.QuestionsService = {
                 "adaptativa"
                 ? this.buildAdaptiveSession(
                     pool,
-                    ctx,
+                    effectiveContext,
                     sessionSize
                 )
                 : this.buildFocusedSession(
                     pool,
-                    ctx,
+                    effectiveContext,
                     sessionSize
                 );
         }
 
         return this.buildProofSession(
             pool,
-            ctx,
+            effectiveContext,
             sessionSize
         );
     },
@@ -1368,6 +2530,96 @@ window.QuestionsService = {
         return `${minutes} min`;
     },
 
+    getEstimatedDurationFromCount(
+        count = 0
+    ) {
+        const safeCount =
+            Math.max(
+                Number(count) || 0,
+                0
+            );
+
+        if (!safeCount) {
+            return "0 min";
+        }
+
+        const totalSeconds =
+            safeCount * 25;
+        const minutes =
+            Math.max(
+                1,
+                Math.ceil(totalSeconds / 60)
+            );
+
+        return `${minutes} min`;
+    },
+
+    getTrainingModeLabel(
+        context = null
+    ) {
+        return "Por quantidade";
+    },
+
+    getTrainingValueLabel(
+        context = null
+    ) {
+        const ctx =
+            context ||
+            QuestionsContext.get();
+
+        if (
+            ctx.smartQuestionCount === null
+        ) {
+            return "∞";
+        }
+
+        return String(
+            Math.max(
+                1,
+                Number(
+                    ctx.smartQuestionCount
+                ) || 5
+            )
+        ).padStart(2, "0");
+    },
+
+    getResolvedSessionAmount(
+        page,
+        context = null,
+        availableCount = 0
+    ) {
+        const ctx =
+            context ||
+            QuestionsContext.get();
+        const safeAvailableCount =
+            Math.max(
+                Number(availableCount) || 0,
+                0
+            );
+
+        if (
+            ctx.smartQuestionCount === null
+        ) {
+            return safeAvailableCount;
+        }
+
+        const requestedCount =
+            Math.max(
+                1,
+                Number(
+                    ctx.smartQuestionCount ||
+                        ctx.quantidadeQuestoes
+                ) || 5
+            );
+
+        return safeAvailableCount
+            ? Math.min(
+                requestedCount,
+                safeAvailableCount
+            )
+            : requestedCount;
+    },
+
     getLauncherValidation(page) {
         const ctx =
             QuestionsContext.get();
@@ -1384,12 +2636,28 @@ window.QuestionsService = {
             );
         const pool =
             this.getQuestionPool(page);
+        const canUseDetailedPool =
+            this.shouldUseDetailedQuestionPool(
+                page
+            );
         const requestedCount =
-            Number(
-                ctx.quantidadeQuestoes || 5
+            Math.max(
+                1,
+                Number(
+                    ctx.quantidadeQuestoes
+                ) || 5
             );
         const availableCount =
-            pool.length;
+            canUseDetailedPool
+                ? pool.length
+                : selectedTopics.reduce(
+                    (acc, topic) =>
+                        acc +
+                        (Number(
+                            topic.count
+                        ) || 0),
+                    0
+                );
         const readyCount =
             Math.min(
                 requestedCount,
@@ -1454,10 +2722,14 @@ window.QuestionsService = {
             subjectLabel:
                 subject?.label || "",
             estimatedDuration:
-                this.getEstimatedDurationLabel(
-                    pool,
-                    readyCount
-                )
+                canUseDetailedPool
+                    ? this.getEstimatedDurationLabel(
+                        pool,
+                        readyCount
+                    )
+                    : this.getEstimatedDurationFromCount(
+                        readyCount
+                    )
         };
     },
 
@@ -1611,10 +2883,40 @@ window.QuestionsService = {
             return "";
         }
 
-        if (question.type === "vf") {
-            return question.correct === 0
-                ? "Verdadeiro"
-                : "Falso";
+        if (
+            question.type === "vf" ||
+            question.type ===
+                "multipla_escolha" ||
+            question.type === "comparacao"
+        ) {
+            const correctIndex =
+                this.getCorrectChoiceIndex(
+                    question
+                );
+
+            if (
+                Number.isInteger(
+                    correctIndex
+                )
+            ) {
+                return (
+                    this.getChoiceLabel(
+                        question,
+                        correctIndex
+                    ) ||
+                    String(correctIndex)
+                );
+            }
+
+            if (question.type === "vf") {
+                return correctIndex === 0
+                    ? "Verdadeiro"
+                    : "Falso";
+            }
+
+            return String(
+                question.correct ?? ""
+            );
         }
 
         if (question.type === "ordenacao") {
@@ -1686,6 +2988,36 @@ window.QuestionsService = {
         return String(
             selectedValue ?? ""
         );
+    },
+
+    getCorrectChoiceIndex(question) {
+        if (!question) {
+            return null;
+        }
+
+        if (question.type === "vf") {
+            if (
+                question.correct === true
+            ) {
+                return 0;
+            }
+
+            if (
+                question.correct === false
+            ) {
+                return 1;
+            }
+        }
+
+        const resolved =
+            this.resolveChoiceCorrectIndex(
+                question.correct,
+                question.options
+            );
+
+        return Number.isInteger(resolved)
+            ? resolved
+            : null;
     },
 
     evaluateAnswer(
@@ -1771,13 +3103,17 @@ window.QuestionsService = {
         }
 
         let correct = false;
+        const correctIndex =
+            this.getCorrectChoiceIndex(
+                question
+            );
 
         if (
-            Number.isInteger(question.correct)
+            Number.isInteger(correctIndex)
         ) {
             correct =
                 Number(selectedIndex) ===
-                Number(question.correct);
+                Number(correctIndex);
         } else {
             correct =
                 this.normalizeText(
@@ -1830,25 +3166,6 @@ window.QuestionsService = {
             Date.now() -
             QuestionsState.getStartTime();
 
-        QuestionsStore.registerAnswer(
-            {
-                baseKey:
-                    question.baseKey,
-                baseLabel:
-                    question.baseLabel,
-                subjectKey:
-                    question.subjectKey,
-                subjectLabel:
-                    question.subjectLabel,
-                topicKey:
-                    question.topicKey,
-                topicLabel:
-                    question.topicLabel
-            },
-            evaluation.correct,
-            timeMs
-        );
-
         return {
             correct:
                 evaluation.correct,
@@ -1859,6 +3176,22 @@ window.QuestionsService = {
             correctAnswerLabel:
                 evaluation.correctAnswerLabel,
             timeMs,
+            questionId:
+                String(question.id || "").trim(),
+            baseKey:
+                String(question.baseKey || "").trim(),
+            baseLabel:
+                String(question.baseLabel || "").trim(),
+            subjectKey:
+                String(question.subjectKey || "").trim(),
+            subjectLabel:
+                String(
+                    question.subjectLabel || ""
+                ).trim(),
+            topicKey:
+                String(question.topicKey || "").trim(),
+            topicLabel:
+                String(question.topicLabel || "").trim(),
             question
         };
     },
@@ -1910,7 +3243,20 @@ window.QuestionsService = {
                 subject?.label || "",
             topicsLabel: topics,
             amount:
-                ctx.quantidadeQuestoes || 5,
+                Math.max(
+                    1,
+                    Number(
+                        ctx.quantidadeQuestoes
+                    ) || 5
+                ),
+            trainingModeLabel:
+                this.getTrainingModeLabel(
+                    ctx
+                ),
+            trainingValueLabel:
+                this.getTrainingValueLabel(
+                    ctx
+                ),
             focusLabel:
                 focusTopic?.label || "",
             strategyLabel:
@@ -2232,12 +3578,24 @@ window.QuestionsService = {
 
         safeResults.forEach((entry) => {
             const topicKey =
-                entry.question.topicKey;
+                String(
+                    entry?.topicKey ||
+                        entry?.question
+                            ?.topicKey ||
+                        ""
+                ).trim() || "geral";
+            const topicLabel =
+                String(
+                    entry?.topicLabel ||
+                        entry?.question
+                            ?.topicLabel ||
+                        ""
+                ).trim() ||
+                "Geral";
             const current =
                 grouped.get(topicKey) || {
                     topicKey,
-                    topicLabel:
-                        entry.question.topicLabel,
+                    topicLabel,
                     attempts: 0,
                     hits: 0,
                     errors: 0,
@@ -2379,20 +3737,64 @@ window.QuestionsService = {
             Array.isArray(ctx.topicos)
                 ? [...ctx.topicos]
                 : [];
+        const eligibleSubjectTopics =
+            this.getTopicOptions(page, {
+                serie: ctx.serie,
+                materia: ctx.materia
+            })
+                .filter((topic) =>
+                    Number(topic?.count || 0) > 0
+                )
+                .map((topic) => topic.key);
 
         if (
             intent === "weak_topic" &&
             sessionSummary.weakTopic
         ) {
+            const topicos =
+                this.getWarmupExpandedTopicKeys(
+                    page,
+                    {
+                        ...ctx,
+                        mode: "REFORCO_DIRECIONADO",
+                        topicos: [
+                            sessionSummary
+                                .weakTopic
+                                .topicKey
+                        ],
+                        focoPrincipal:
+                            sessionSummary
+                                .weakTopic
+                                .topicKey
+                    },
+                    [
+                        sessionSummary.weakTopic
+                            .topicKey
+                    ]
+                );
             return {
-                mode: "ASSUNTO_UNICO",
-                topicos: [
-                    sessionSummary.weakTopic
-                        .topicKey
-                ],
-                focoPrincipal: null,
+                mode:
+                    topicos.length > 1
+                        ? "REFORCO_DIRECIONADO"
+                        : "ASSUNTO_UNICO",
+                topicos:
+                    topicos.length
+                        ? topicos
+                        : [
+                            sessionSummary
+                                .weakTopic
+                                .topicKey
+                        ],
+                focoPrincipal:
+                    topicos.length > 1
+                        ? sessionSummary
+                              .weakTopic
+                              .topicKey
+                        : null,
                 estrategiaMistura:
-                    "equilibrada"
+                    topicos.length > 1
+                        ? "foco_principal"
+                        : "equilibrada"
             };
         }
 
@@ -2416,15 +3818,26 @@ window.QuestionsService = {
             };
         }
 
+        const mixedTopics = [
+            ...new Set([
+                ...uniqueReviewTopics,
+                ...currentTopics,
+                ...eligibleSubjectTopics
+            ])
+        ].slice(0, 4);
+
         return {
             mode:
-                currentTopics.length > 1
+                mixedTopics.length > 1
                     ? "TREINO_PARA_PROVA"
                     : "ASSUNTO_UNICO",
-            topicos: currentTopics,
+            topicos:
+                mixedTopics.length
+                    ? mixedTopics
+                    : currentTopics,
             focoPrincipal: null,
             estrategiaMistura:
-                currentTopics.length > 1
+                mixedTopics.length > 1
                     ? "equilibrada"
                     : "equilibrada"
         };

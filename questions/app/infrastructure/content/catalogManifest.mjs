@@ -82,6 +82,41 @@ export function buildQuestionsCatalogManifest(
         )
     );
     const subjectsMap = new Map();
+    const questionIndex = {};
+
+    (
+        Array.isArray(catalog) ? catalog : []
+    ).forEach((topic = {}) => {
+        const topicId = String(
+            topic.id || ""
+        ).trim();
+
+        if (!topicId) {
+            return;
+        }
+
+        (Array.isArray(topic.questoes)
+            ? topic.questoes
+            : []
+        ).forEach((question = {}) => {
+            const questionId = String(
+                question.id || ""
+            ).trim();
+            const hasPrompt = String(
+                question?.enunciado || ""
+            ).trim();
+
+            if (
+                !questionId ||
+                !hasPrompt
+            ) {
+                return;
+            }
+
+            questionIndex[questionId] =
+                topicId;
+        });
+    });
 
     topics.forEach((topic) => {
         topic.serie.forEach((serie) => {
@@ -140,6 +175,7 @@ export function buildQuestionsCatalogManifest(
                     "pt-BR"
                 )
         ),
+        questionIndex,
         topics: topics.sort(
             (left, right) =>
                 (left.serie[0] || 0) -

@@ -95,11 +95,18 @@ export function createQuestionsLauncherViewModels(
             page.getSmartSubjectOptions();
         const activeCount =
             subjectOptions.filter(
-                (item) => item.active
+                (item) =>
+                    item.active &&
+                    !item.disabled
             ).length;
+        const selectableSubjects =
+            subjectOptions.filter(
+                (item) =>
+                    !item.disabled
+            );
         const allActive =
-            subjectOptions.length > 0 &&
-            subjectOptions.every(
+            selectableSubjects.length > 0 &&
+            selectableSubjects.every(
                 (item) => item.active
             );
         const visibleSubjects =
@@ -151,7 +158,9 @@ export function createQuestionsLauncherViewModels(
                 );
         const activeSubjects =
             page.getSmartSubjectOptions().filter(
-                (item) => item.active
+                (item) =>
+                    item.active &&
+                    !item.disabled
             );
         const hiddenSubjectCount =
             Math.max(

@@ -143,7 +143,24 @@ export function createQuestionsSessionEngine(
         const recentSessions =
             QuestionsStore.getRecentSessions();
         const weakEntries =
-            QuestionsStore.getWeakTopics();
+            QuestionsStore.getWeakTopics({
+                minAttempts: 4,
+                minErrors: 2
+            });
+        const getGroupAttempts = (
+            group = null
+        ) =>
+            QuestionsStore.getTopicEntries({
+                baseKey: "ESCOLAR",
+                subjectKey:
+                    group?.materia ||
+                    current.materia
+            }).reduce(
+                (acc, entry) =>
+                    acc +
+                    (entry?.attempts || 0),
+                0
+            );
         const rankedGroups =
             [...groups.values()]
                 .map((group) => {
@@ -214,6 +231,14 @@ export function createQuestionsSessionEngine(
                             group.recentMatch
                         )
                 ) || defaultGroup;
+            const groupAttempts =
+                getGroupAttempts(
+                    chosenGroup
+                );
+            const isWarmupStage =
+                groupAttempts < 100;
+            const canReuseNarrowRoute =
+                groupAttempts >= 24;
 
             const reusedTopics =
                 (chosenGroup?.recentMatch
@@ -227,32 +252,36 @@ export function createQuestionsSessionEngine(
                 );
 
             topicos =
-                reusedTopics.length
+                reusedTopics.length &&
+                reusedTopics.length > 1 &&
+                canReuseNarrowRoute
                     ? reusedTopics
-                    : (
-                        chosenGroup?.topics || []
-                    )
-                        .slice(
-                            0,
-                            Math.min(
-                                2,
-                                chosenGroup?.topics
-                                    ?.length || 0
-                            )
-                        )
-                        .map((topic) =>
-                            topic.key
-                        );
+                    : QuestionsService.pickTopicKeys(
+                        chosenGroup?.topics ||
+                            [],
+                        Math.min(
+                            isWarmupStage
+                                ? 3
+                                : 2,
+                            chosenGroup?.topics
+                                ?.length || 0
+                        ),
+                        reusedTopics
+                    );
 
             if (topicos.length > 1) {
                 mode =
                     "ASSUNTOS_COMBINADOS";
                 estrategiaMistura =
-                    "adaptativa";
+                    isWarmupStage
+                        ? "alternada"
+                        : "adaptativa";
             }
 
             note =
-                chosenGroup?.recentMatch
+                isWarmupStage
+                    ? "No comeco, a rota mistura mais assuntos para entender melhor onde esta sua dificuldade real antes de apertar o reforco."
+                    : chosenGroup?.recentMatch
                     ? "A sugestao reaproveita o recorte mais recente ainda elegivel para voce continuar sem remontar tudo."
                     : "Sem historico forte no recorte atual, o sistema abre um bloco curto e seguro para continuar o ritmo.";
         } else if (
@@ -266,40 +295,54 @@ export function createQuestionsSessionEngine(
                             group.weakMatch
                         )
                 ) || defaultGroup;
+            const groupAttempts =
+                getGroupAttempts(
+                    chosenGroup
+                );
+            const canFocusHard =
+                groupAttempts >= 24;
             const weakTopic =
-                chosenGroup?.weakMatch
-                    ?.topicKey || "";
+                canFocusHard
+                    ? chosenGroup?.weakMatch
+                          ?.topicKey || ""
+                    : "";
             const supportTopics =
-                (chosenGroup?.topics || [])
-                    .filter(
+                QuestionsService.pickTopicKeys(
+                    (
+                        chosenGroup?.topics ||
+                        []
+                    ).filter(
                         (topic) =>
                             topic.key !==
                             weakTopic
+                    ),
+                    Math.min(
+                        2,
+                        (
+                            chosenGroup?.topics ||
+                            []
+                        ).filter(
+                            (topic) =>
+                                topic.key !==
+                                weakTopic
+                        ).length
                     )
-                    .slice(0, 2)
-                    .map((topic) =>
-                        topic.key
-                    );
+                );
 
             topicos = weakTopic
                 ? [
                     weakTopic,
                     ...supportTopics
                 ]
-                : (
-                    chosenGroup?.topics || []
-                )
-                    .slice(
-                        0,
-                        Math.min(
-                            2,
-                            chosenGroup?.topics
-                                ?.length || 0
-                        )
+                : QuestionsService.pickTopicKeys(
+                    chosenGroup?.topics ||
+                        [],
+                    Math.min(
+                        canFocusHard ? 2 : 3,
+                        chosenGroup?.topics
+                            ?.length || 0
                     )
-                    .map((topic) =>
-                        topic.key
-                    );
+                );
 
             focoPrincipal =
                 weakTopic || null;
@@ -312,24 +355,27 @@ export function createQuestionsSessionEngine(
             }
 
             note =
+                canFocusHard &&
                 chosenGroup?.weakMatch
                     ? `A rota vai puxar primeiro ${chosenGroup.weakMatch.topicLabel}, que concentra mais erro dentro do recorte liberado.`
-                    : "Como ainda nao ha um ponto fraco dominante, o sistema vai abrir um reforco curto com os primeiros assuntos prontos.";
+                    : "Ainda ha pouca evidencia para travar um unico ponto fraco, entao o sistema abre um reforco leve e misturado.";
         } else {
             chosenGroup = defaultGroup;
+            const groupAttempts =
+                getGroupAttempts(
+                    chosenGroup
+                );
             topicos =
-                (chosenGroup?.topics || [])
-                    .slice(
-                        0,
-                        Math.min(
-                            3,
-                            chosenGroup?.topics
-                                ?.length || 0
-                        )
+                QuestionsService.pickTopicKeys(
+                    chosenGroup?.topics || [],
+                    Math.min(
+                        groupAttempts < 100
+                            ? 3
+                            : 2,
+                        chosenGroup?.topics
+                            ?.length || 0
                     )
-                    .map((topic) =>
-                        topic.key
-                    );
+                );
 
             if (topicos.length > 1) {
                 mode =
@@ -380,13 +426,18 @@ export function createQuestionsSessionEngine(
                     topicos.includes(topic.key)
             );
         const amount =
-            Number(
-                current.quantidadeQuestoes
-            ) || 5;
-        const estimatedDuration =
-            QuestionsService.formatTime(
-                amount * 25000
+            QuestionsService.getResolvedSessionAmount(
+                page,
+                current,
+                validation.eligibleQuestionCount
             );
+        const estimatedDuration =
+            current.smartQuestionCount ===
+                null
+                ? "Livre"
+                : QuestionsService.getEstimatedDurationFromCount(
+                    amount
+                );
 
         return {
             isReady: true,
@@ -407,11 +458,22 @@ export function createQuestionsSessionEngine(
                 estrategiaMistura,
                 pesos,
                 topicSearch: "",
-                onlyReadyTopics: true
+                onlyReadyTopics: true,
+                quantidadeQuestoes:
+                    amount
             },
             mode,
             objectiveLabel,
             note,
+            amount,
+            trainingModeLabel:
+                QuestionsService.getTrainingModeLabel(
+                    current
+                ),
+            trainingValueLabel:
+                QuestionsService.getTrainingValueLabel(
+                    current
+                ),
             serieLabel: `${chosenGroup.serie}a serie`,
             materiaLabel:
                 chosenGroup.materiaLabel ||

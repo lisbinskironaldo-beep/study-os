@@ -149,15 +149,13 @@ export function createQuestionsContextSynchronization(
         }
 
         const quantidadeQuestoes =
-            page.data.amountOptions.includes(
+            Math.max(
+                1,
                 Number(
-                    snapshot.quantidadeQuestoes
-                )
-            )
-                ? Number(
-                    snapshot.quantidadeQuestoes
-                )
-                : 5;
+                    snapshot.quantidadeQuestoes ||
+                        snapshot.smartQuestionCount
+                ) || 5
+            );
 
         const allowedStrategies =
             QuestionsService.getMixStrategies(

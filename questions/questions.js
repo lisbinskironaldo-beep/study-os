@@ -1,13 +1,24 @@
 window.QuestionsPage = {
     runtimeNotice: "",
+    activeDialog: null,
+    activeContestQuestionId: "",
+    launcherHistory: [],
+    sessionReturnView: "home",
     syncBridgeBound: false,
     coachStorageKey:
-        "questions_ui_coach_v1",
+        "questions_ui_coach_v2",
     coachState: {},
     coachDismissedViews: {},
+    questionContestDefaultText:
+        "Enviar sem comentar",
+    renderFrameId: 0,
+    renderQueuedSync: false,
     sessionUseCases: null,
     libraryUseCases: null,
     routeUseCases: null,
+    legacySessionFallback: null,
+    legacyLibraryFallback: null,
+    legacyRecoveryFallback: null,
     launcherSelectors: null,
     contextSynchronization: null,
     launcherViewModels: null,
@@ -115,12 +126,21 @@ window.QuestionsPage = {
         },
 
         amountOptions: [3, 5, 8, 12],
+        smartQuestionAmountOptions: [
+            5, 15, 30, 50
+        ],
+        smartTimeAmountOptions: [
+            15, 30, 60
+        ],
         schoolCatalog: [],
         schoolCatalogManifest: null,
         bankStatus: "idle"
     },
 
     async init() {
+        this.launcherHistory = [];
+        this.sessionReturnView =
+            "home";
         QuestionsStore.load();
         QuestionsContext.load();
         QuestionsState.init();
@@ -129,7 +149,14 @@ window.QuestionsPage = {
         this.bindSyncBridge();
         this.clearRuntimeNotice();
         await this.ensureSessionUseCases();
+        if (!this.sessionUseCases) {
+            await this.ensureLegacySessionFallback();
+        }
         await this.ensureLibraryUseCases();
+        if (!this.libraryUseCases) {
+            await this.ensureLegacyLibraryFallback();
+            await this.ensureLegacyRecoveryFallback();
+        }
         await this.ensureRouteUseCases();
         await this.ensureLauncherSelectors();
         await this.ensureContextSynchronization();
@@ -138,7 +165,12 @@ window.QuestionsPage = {
         if (
             this.data.bankStatus ===
                 "ready" &&
-            this.data.schoolCatalog.length
+            (
+                this.data.schoolCatalog.length ||
+                this.data
+                    .schoolCatalogManifest
+                    ?.topics?.length
+            )
         ) {
             this.syncContext();
             if (this.consumePendingSync()) {
@@ -253,6 +285,98 @@ window.QuestionsPage = {
         }
     },
 
+    async ensureDetailedCatalogLoaded() {
+        if (
+            Array.isArray(
+                this.data.schoolCatalog
+            ) &&
+            this.data.schoolCatalog.length
+        ) {
+            return this.data.schoolCatalog;
+        }
+
+        if (
+            !this.contentRepository ||
+            typeof this.contentRepository
+                .ensureCatalogLoaded !==
+                "function"
+        ) {
+            return this.data.schoolCatalog;
+        }
+
+        const catalog =
+            await this.contentRepository.ensureCatalogLoaded();
+
+        this.data.schoolCatalog = Array.isArray(
+            catalog
+        )
+            ? [...catalog]
+            : [];
+
+        return this.data.schoolCatalog;
+    },
+
+    async ensureRouteCatalogLoaded(
+        routeContext = null
+    ) {
+        const context =
+            routeContext &&
+            typeof routeContext === "object"
+                ? routeContext
+                : QuestionsContext.get();
+        const topicIds = Array.isArray(
+            context?.topicos
+        )
+            ? context.topicos.filter(
+                Boolean
+            )
+            : [];
+
+        if (
+            !topicIds.length ||
+            !this.contentRepository ||
+            typeof this.contentRepository
+                .ensureTopicsLoaded !==
+                "function"
+        ) {
+            return this.ensureDetailedCatalogLoaded();
+        }
+
+        const catalog =
+            await this.contentRepository.ensureTopicsLoaded(
+                topicIds
+            );
+
+        this.data.schoolCatalog = Array.isArray(
+            catalog
+        )
+            ? [...catalog]
+            : [];
+
+        return this.data.schoolCatalog;
+    },
+
+    syncCatalogFromRepository() {
+        if (
+            !this.contentRepository ||
+            typeof this.contentRepository
+                .getCatalog !== "function"
+        ) {
+            return this.data.schoolCatalog;
+        }
+
+        const catalog =
+            this.contentRepository.getCatalog();
+
+        this.data.schoolCatalog = Array.isArray(
+            catalog
+        )
+            ? [...catalog]
+            : [];
+
+        return this.data.schoolCatalog;
+    },
+
     async ensureSessionUseCases() {
         if (this.sessionUseCases) {
             return this.sessionUseCases;
@@ -351,6 +475,104 @@ window.QuestionsPage = {
         return this.libraryUseCases;
     },
 
+    async ensureLegacySessionFallback() {
+        if (this.legacySessionFallback) {
+            return this.legacySessionFallback;
+        }
+
+        try {
+            const fallbackUrl =
+                new URL(
+                    "./questions/questions.js",
+                    window.location.href
+                ).href;
+            const baseUrl =
+                this.scriptUrl ||
+                fallbackUrl;
+            const applicationUrl =
+                new URL(
+                    "./app/application/legacySessionFallback.mjs",
+                    baseUrl
+                ).href;
+            const {
+                createQuestionsLegacySessionFallback
+            } = await import(
+                applicationUrl
+            );
+
+            this.legacySessionFallback =
+                createQuestionsLegacySessionFallback(
+                    {
+                        page: this,
+                        dependencies: {
+                            QuestionsState,
+                            QuestionsStore,
+                            QuestionsContext,
+                            QuestionsService,
+                            QuestionsUI
+                        }
+                    }
+                );
+        } catch (error) {
+            this.legacySessionFallback =
+                null;
+            console.warn(
+                "[Questions] Falha ao carregar fallback legado de session. Mantendo implementacao inline.",
+                error
+            );
+        }
+
+        return this.legacySessionFallback;
+    },
+
+    async ensureLegacyLibraryFallback() {
+        if (this.legacyLibraryFallback) {
+            return this.legacyLibraryFallback;
+        }
+
+        try {
+            const fallbackUrl =
+                new URL(
+                    "./questions/questions.js",
+                    window.location.href
+                ).href;
+            const baseUrl =
+                this.scriptUrl ||
+                fallbackUrl;
+            const applicationUrl =
+                new URL(
+                    "./app/application/legacyLibraryFallback.mjs",
+                    baseUrl
+                ).href;
+            const {
+                createQuestionsLegacyLibraryFallback
+            } = await import(
+                applicationUrl
+            );
+
+            this.legacyLibraryFallback =
+                createQuestionsLegacyLibraryFallback(
+                    {
+                        page: this,
+                        dependencies: {
+                            QuestionsStore,
+                            QuestionsContext,
+                            QuestionsService
+                        }
+                    }
+                );
+        } catch (error) {
+            this.legacyLibraryFallback =
+                null;
+            console.warn(
+                "[Questions] Falha ao carregar fallback legado de library. Mantendo implementacao inline.",
+                error
+            );
+        }
+
+        return this.legacyLibraryFallback;
+    },
+
     async ensureRouteUseCases() {
         if (this.routeUseCases) {
             return this.routeUseCases;
@@ -395,6 +617,54 @@ window.QuestionsPage = {
         }
 
         return this.routeUseCases;
+    },
+
+    async ensureLegacyRecoveryFallback() {
+        if (this.legacyRecoveryFallback) {
+            return this.legacyRecoveryFallback;
+        }
+
+        try {
+            const fallbackUrl =
+                new URL(
+                    "./questions/questions.js",
+                    window.location.href
+                ).href;
+            const baseUrl =
+                this.scriptUrl ||
+                fallbackUrl;
+            const applicationUrl =
+                new URL(
+                    "./app/application/legacyRecoveryFallback.mjs",
+                    baseUrl
+                ).href;
+            const {
+                createQuestionsLegacyRecoveryFallback
+            } = await import(
+                applicationUrl
+            );
+
+            this.legacyRecoveryFallback =
+                createQuestionsLegacyRecoveryFallback(
+                    {
+                        page: this,
+                        dependencies: {
+                            QuestionsStore,
+                            QuestionsState,
+                            QuestionsContext
+                        }
+                    }
+                );
+        } catch (error) {
+            this.legacyRecoveryFallback =
+                null;
+            console.warn(
+                "[Questions] Falha ao carregar fallback legado de recovery. Mantendo implementacao inline.",
+                error
+            );
+        }
+
+        return this.legacyRecoveryFallback;
     },
 
     async ensureLauncherSelectors() {
@@ -844,15 +1114,13 @@ window.QuestionsPage = {
         }
 
         const quantidadeQuestoes =
-            this.data.amountOptions.includes(
+            Math.max(
+                1,
                 Number(
-                    snapshot.quantidadeQuestoes
-                )
-            )
-                ? Number(
-                    snapshot.quantidadeQuestoes
-                )
-                : 5;
+                    snapshot.quantidadeQuestoes ||
+                        snapshot.smartQuestionCount
+                ) || 5
+            );
 
         const allowedStrategies =
             QuestionsService.getMixStrategies(
@@ -1220,6 +1488,397 @@ window.QuestionsPage = {
         this.runtimeNotice = "";
     },
 
+    getPreviousLauncherView(
+        fallback = "home"
+    ) {
+        const safeFallback =
+            QuestionsState.isValidLauncherView(
+                fallback
+            )
+                ? fallback
+                : "home";
+
+        while (
+            Array.isArray(
+                this.launcherHistory
+            ) &&
+            this.launcherHistory.length
+        ) {
+            const previousView =
+                this.launcherHistory.pop();
+
+            if (
+                QuestionsState.isValidLauncherView(
+                    previousView
+                ) &&
+                previousView !==
+                    QuestionsState.getLauncherView()
+            ) {
+                return previousView;
+            }
+        }
+
+        return safeFallback;
+    },
+
+    goBackLauncher(
+        fallback = "home"
+    ) {
+        this.openLauncher(
+            this.getPreviousLauncherView(
+                fallback
+            ),
+            {
+                fromBack: true,
+                preserveSmartState:
+                    true
+            }
+        );
+    },
+
+    getSessionReturnView(
+        fallback = "home"
+    ) {
+        const candidate =
+            String(
+                this.sessionReturnView || ""
+            ).trim();
+
+        if (
+            QuestionsState.isValidLauncherView(
+                candidate
+            )
+        ) {
+            return candidate;
+        }
+
+        return QuestionsState.isValidLauncherView(
+            fallback
+        )
+            ? fallback
+            : "home";
+    },
+
+    getActiveDialog() {
+        return this.activeDialog &&
+            typeof this.activeDialog ===
+                "object"
+            ? { ...this.activeDialog }
+            : null;
+    },
+
+    resolveDialogPosition(
+        anchorRect = null
+    ) {
+        if (
+            !anchorRect ||
+            typeof anchorRect !== "object"
+        ) {
+            return null;
+        }
+
+        const viewportWidth =
+            window.innerWidth || 1280;
+        const viewportHeight =
+            window.innerHeight || 720;
+        const cardWidth = Math.min(
+            Math.max(
+                viewportWidth - 32,
+                280
+            ),
+            520
+        );
+        const margin = 20;
+        const estimatedHeight =
+            240;
+        const left = Math.min(
+            Math.max(
+                Number(anchorRect.left || 0) +
+                    (
+                        Number(
+                            anchorRect.width ||
+                                0
+                        ) /
+                        2
+                    ) -
+                    cardWidth / 2,
+                margin
+            ),
+            Math.max(
+                viewportWidth -
+                    cardWidth -
+                    margin,
+                margin
+            )
+        );
+        const top = Math.min(
+            Math.max(
+                Number(
+                    anchorRect.bottom ||
+                        0
+                ) + 14,
+                margin
+            ),
+            Math.max(
+                viewportHeight -
+                    estimatedHeight -
+                    margin,
+                margin
+            )
+        );
+
+        return {
+            anchored: true,
+            top,
+            left,
+            width: cardWidth
+        };
+    },
+
+    openDialog(config = {}) {
+        this.activeDialog = {
+            mode:
+                String(
+                    config.mode || ""
+                ).trim() ||
+                "prompt",
+            title:
+                String(
+                    config.title || ""
+                ).trim() ||
+                "Confirmar",
+            label:
+                String(
+                    config.label || ""
+                ).trim() ||
+                "Digite um nome",
+            message:
+                String(
+                    config.message || ""
+                ).trim(),
+            value:
+                String(
+                    config.value || ""
+                ),
+            confirmLabel:
+                String(
+                    config.confirmLabel || ""
+                ).trim() ||
+                "Salvar",
+            position:
+                this.resolveDialogPosition(
+                    config.anchorRect ||
+                        null
+                ),
+            onConfirm:
+                typeof config.onConfirm ===
+                "function"
+                    ? config.onConfirm
+                    : null
+        };
+        this.render();
+    },
+
+    openConfirmDialog(config = {}) {
+        this.openDialog({
+            mode: "confirm",
+            title:
+                config.title ||
+                "Confirmar acao",
+            message:
+                config.message || "",
+            confirmLabel:
+                config.confirmLabel ||
+                "Confirmar",
+            onConfirm:
+                config.onConfirm
+        });
+    },
+
+    closeDialog(shouldRender = true) {
+        this.activeDialog = null;
+
+        if (shouldRender) {
+            this.render();
+        }
+    },
+
+    confirmDialog(rawValue = "") {
+        const dialog =
+            this.activeDialog;
+
+        if (!dialog) {
+            return;
+        }
+
+        if (
+            dialog.mode === "confirm"
+        ) {
+            const onConfirm =
+                dialog.onConfirm;
+
+            this.activeDialog = null;
+
+            if (
+                typeof onConfirm ===
+                "function"
+            ) {
+                onConfirm();
+                return;
+            }
+
+            this.render();
+            return;
+        }
+
+        const value = String(
+            rawValue || ""
+        ).trim();
+
+        if (!value) {
+            return;
+        }
+
+        const onConfirm =
+            dialog.onConfirm;
+
+        this.activeDialog = null;
+
+        if (typeof onConfirm === "function") {
+            onConfirm(value);
+            return;
+        }
+
+        this.render();
+    },
+
+    isContestComposerOpen(
+        questionId = ""
+    ) {
+        return (
+            String(
+                this.activeContestQuestionId ||
+                    ""
+            ) ===
+            String(questionId || "")
+        );
+    },
+
+    toggleContestComposer(
+        questionId = ""
+    ) {
+        const normalized =
+            String(questionId || "").trim();
+
+        this.activeContestQuestionId =
+            this.activeContestQuestionId ===
+            normalized
+                ? ""
+                : normalized;
+        this.render();
+    },
+
+    closeContestComposer() {
+        if (!this.activeContestQuestionId) {
+            return;
+        }
+
+        this.activeContestQuestionId =
+            "";
+        this.render();
+    },
+
+    getQuestionContestDefaultText() {
+        return String(
+            this.questionContestDefaultText ||
+                "Enviar sem comentar"
+        ).trim();
+    },
+
+    getLatestQuestionContest(
+        questionId = ""
+    ) {
+        if (
+            typeof QuestionsStore.getLatestQuestionReport !==
+            "function"
+        ) {
+            return null;
+        }
+
+        return QuestionsStore.getLatestQuestionReport(
+            questionId
+        );
+    },
+
+    commitLastAnswer() {
+        const answer =
+            QuestionsState.getCurrentRecordedAnswer() ||
+            QuestionsState.getLastAnswer();
+
+        if (
+            !answer ||
+            typeof answer !== "object"
+        ) {
+            return false;
+        }
+
+        const topicKey =
+            String(
+                answer.topicKey ||
+                    answer.question?.topicKey ||
+                    ""
+            ).trim();
+
+        if (!topicKey) {
+            return false;
+        }
+
+        QuestionsStore.registerAnswer(
+            {
+                baseKey:
+                    String(
+                        answer.baseKey ||
+                            answer.question
+                                ?.baseKey ||
+                            ""
+                    ).trim(),
+                baseLabel:
+                    String(
+                        answer.baseLabel ||
+                            answer.question
+                                ?.baseLabel ||
+                            ""
+                    ).trim(),
+                subjectKey:
+                    String(
+                        answer.subjectKey ||
+                            answer.question
+                                ?.subjectKey ||
+                            ""
+                    ).trim(),
+                subjectLabel:
+                    String(
+                        answer.subjectLabel ||
+                            answer.question
+                                ?.subjectLabel ||
+                            ""
+                    ).trim(),
+                topicKey,
+                topicLabel:
+                    String(
+                        answer.topicLabel ||
+                            answer.question
+                                ?.topicLabel ||
+                            ""
+                    ).trim()
+            },
+            Boolean(answer.correct),
+            Number(answer.timeMs) || 0
+        );
+
+        return true;
+    },
+
     loadCoachState() {
         try {
             const saved =
@@ -1365,6 +2024,57 @@ window.QuestionsPage = {
         });
     },
 
+    setSmartSessionMetric(metric) {
+        const normalized =
+            String(metric || "")
+                .trim()
+                .toLowerCase() === "tempo"
+                ? "tempo"
+                : "quantidade";
+
+        this.setSmartConfig({
+            smartSessionMetric:
+                normalized
+        });
+    },
+
+    setSmartTimeMinutes(
+        minutes
+    ) {
+        this.setSmartConfig({
+            smartSessionMetric: "tempo",
+            smartTimeMinutes:
+                minutes === null
+                    ? null
+                    : Math.max(
+                        1,
+                        Number(minutes) || 15
+                    )
+        });
+    },
+
+    setSmartQuestionCount(count) {
+        this.setSmartConfig({
+            smartSessionMetric:
+                "quantidade",
+            quantidadeQuestoes:
+                count === null
+                    ? QuestionsContext.get()
+                          .quantidadeQuestoes
+                    : Math.max(
+                        1,
+                        Number(count) || 5
+                    ),
+            smartQuestionCount:
+                count === null
+                    ? null
+                    : Math.max(
+                        1,
+                        Number(count) || 5
+                    )
+        });
+    },
+
     getSmartStartOptions() {
         if (
             this.launcherSelectors
@@ -1506,18 +2216,41 @@ window.QuestionsPage = {
         });
 
         return [...grouped.values()]
-            .filter(
-                (subject) =>
-                    subject.hasQuestions
-            )
+            .sort((left, right) => {
+                if (
+                    left.hasQuestions !==
+                    right.hasQuestions
+                ) {
+                    return left.hasQuestions
+                        ? -1
+                        : 1;
+                }
+
+                if (
+                    left.readyQuestionCount !==
+                    right.readyQuestionCount
+                ) {
+                    return (
+                        right.readyQuestionCount -
+                        left.readyQuestionCount
+                    );
+                }
+
+                return left.label.localeCompare(
+                    right.label,
+                    "pt-BR"
+                );
+            })
             .map((subject) => ({
                 ...subject,
                 active:
                     (
                         ctx.smartSelectedSubjects ||
                         []
-                    ).includes(subject.key),
-                disabled: false
+                    ).includes(subject.key) &&
+                    subject.hasQuestions,
+                disabled:
+                    !subject.hasQuestions
             }));
     },
 
@@ -1629,6 +2362,16 @@ window.QuestionsPage = {
             );
         }
 
+        const option =
+            this.getSmartSubjectOptions().find(
+                (item) =>
+                    item.key === subjectKey
+            );
+
+        if (!option || option.disabled) {
+            return;
+        }
+
         this.dismissCoachHint(
             "smart_subjects"
         );
@@ -1649,9 +2392,12 @@ window.QuestionsPage = {
             "smart_subjects"
         );
         const availableSubjects =
-            this.getSmartSubjectOptions().map(
-                (item) => item.key
-            );
+            this.getSmartSubjectOptions()
+                .filter(
+                    (item) =>
+                        !item.disabled
+                )
+                .map((item) => item.key);
         const selectedSubjects =
             QuestionsContext.get()
                 .smartSelectedSubjects || [];
@@ -1687,7 +2433,9 @@ window.QuestionsPage = {
 
         const activeSubjects =
             this.getSmartSubjectOptions().filter(
-                (item) => item.active
+                (item) =>
+                    item.active &&
+                    !item.disabled
             );
 
         if (!activeSubjects.length) {
@@ -1864,6 +2612,9 @@ window.QuestionsPage = {
             smartGoal:
                 ctx.smartGoal ||
                 "continue",
+            sessionMetric:
+                ctx.smartSessionMetric ||
+                "quantidade",
             selectedSeries: [
                 ...(ctx.smartSelectedSeries ||
                     [])
@@ -1888,6 +2639,18 @@ window.QuestionsPage = {
                 Number(
                     ctx.quantidadeQuestoes
                 ) || 5,
+            questionCount:
+                ctx.smartQuestionCount === null
+                    ? null
+                    : Number(
+                        ctx.smartQuestionCount
+                    ) || 5,
+            timeMinutes:
+                ctx.smartTimeMinutes === null
+                    ? null
+                    : Number(
+                        ctx.smartTimeMinutes
+                    ) || 15,
             ...overrides
         };
     },
@@ -2015,7 +2778,10 @@ window.QuestionsPage = {
         this.setSmartConfig({
             smartGoal:
                 profile.smartGoal ||
-                "continue",
+                    "continue",
+            smartSessionMetric:
+                profile.sessionMetric ||
+                "quantidade",
             smartSelectedSeries: [
                 ...(profile.selectedSeries ||
                     [])
@@ -2036,6 +2802,18 @@ window.QuestionsPage = {
                 ...(profile.excludedSubjects ||
                     [])
             ],
+            smartQuestionCount:
+                profile.questionCount === null
+                    ? null
+                    : Number(
+                        profile.questionCount
+                    ) || 5,
+            smartTimeMinutes:
+                profile.timeMinutes === null
+                    ? null
+                    : Number(
+                        profile.timeMinutes
+                    ) || 15,
             quantidadeQuestoes:
                 Number(
                     profile.preferredAmount
@@ -2046,6 +2824,102 @@ window.QuestionsPage = {
         this.runtimeNotice =
             `Perfil aplicado: ${profile.name}.`;
         this.openLauncher("smart");
+    },
+
+    saveSmartPresetAndStart() {
+        const preview =
+            this.buildSmartRoutePreview();
+
+        if (
+            !preview.isReady ||
+            !preview.patch
+        ) {
+            this.runtimeNotice =
+                preview.reason ||
+                "Nao foi possivel iniciar esse treino agora.";
+            this.render();
+            return;
+        }
+
+        const suggestedName =
+            this.getSuggestedSmartProfileName();
+        this.openDialog({
+            title:
+                "Salvar predefinicao",
+            label:
+                "Nome da predefinicao",
+            value: suggestedName,
+            confirmLabel: "Salvar e iniciar",
+            onConfirm: (name) => {
+                const cleanName =
+                    String(
+                        name || ""
+                    ).trim() ||
+                    suggestedName;
+                const savedProfile =
+                    QuestionsStore.saveSmartProfile(
+                        {
+                            name: cleanName,
+                            ...this.buildSmartProfilePayload(
+                                {
+                                    preferredAmount:
+                                        preview.amount
+                                }
+                            )
+                        }
+                    );
+                const snapshot =
+                    this.buildSessionSnapshotForBlock(
+                        preview.patch,
+                        {
+                            sourceMode:
+                                "smart",
+                            launcherContext:
+                                QuestionsContext.get(),
+                            meta: {
+                                customTitle:
+                                    cleanName
+                            }
+                        }
+                    );
+                const savedBlock =
+                    this.saveBlockSnapshot(
+                        snapshot,
+                        {
+                            sourceMode:
+                                "smart",
+                            defaultName:
+                                cleanName,
+                            note:
+                                preview.note ||
+                                "",
+                            profileId:
+                                savedProfile?.id ||
+                                "",
+                            skipPrompt:
+                                true,
+                            silent: true
+                        }
+                    );
+
+                this.runtimeNotice =
+                    `Predefinicao salva: ${cleanName}.`;
+                this.startSmartSession(
+                    {
+                        meta: {
+                            customTitle:
+                                cleanName
+                        },
+                        profileId:
+                            savedProfile?.id ||
+                            "",
+                        savedBlockId:
+                            savedBlock?.id ||
+                            ""
+                    }
+                );
+            }
+        });
     },
 
     renameSmartProfile(profileId) {
@@ -2158,13 +3032,17 @@ window.QuestionsPage = {
         );
     },
 
-    deleteSmartProfile(profileId) {
+    deleteSmartProfile(
+        profileId,
+        options = {}
+    ) {
         if (
             this.libraryUseCases
                 ?.deleteSmartProfile
         ) {
             return this.libraryUseCases.deleteSmartProfile(
-                profileId
+                profileId,
+                options
             );
         }
 
@@ -2182,23 +3060,25 @@ window.QuestionsPage = {
             return;
         }
 
-        const confirmed =
-            window.confirm(
-                `Apagar o perfil "${profile.name}"?`
-            );
-
-        if (!confirmed) {
-            return;
-        }
-
-        QuestionsStore.deleteSmartProfile(
-            profileId
-        );
-        this.runtimeNotice =
-            `Perfil apagado: ${profile.name}.`;
-        this.openLauncher(
-            "smart_profiles"
-        );
+        this.openConfirmDialog({
+            title: "Apagar perfil",
+            message:
+                `Apagar o perfil "${profile.name}"?`,
+            confirmLabel: "Apagar",
+            anchorRect:
+                options.anchorRect ||
+                null,
+            onConfirm: () => {
+                QuestionsStore.deleteSmartProfile(
+                    profileId
+                );
+                this.runtimeNotice =
+                    `Perfil apagado: ${profile.name}.`;
+                this.openLauncher(
+                    "smart_profiles"
+                );
+            }
+        });
     },
 
     buildSavedBlockName(
@@ -2206,6 +3086,15 @@ window.QuestionsPage = {
         context = {},
         sourceMode = ""
     ) {
+        const customTitle =
+            String(
+                meta.customTitle || ""
+            ).trim();
+
+        if (customTitle) {
+            return customTitle;
+        }
+
         if (
             this.launcherSelectors
                 ?.buildSavedBlockName
@@ -2268,6 +3157,13 @@ window.QuestionsPage = {
                 ...QuestionsService.getRouteSummary(
                     this
                 ),
+                ...(
+                    options.meta &&
+                    typeof options.meta ===
+                        "object"
+                        ? options.meta
+                        : {}
+                ),
                 sourceMode:
                     options.sourceMode ||
                     "specific"
@@ -2303,6 +3199,16 @@ window.QuestionsPage = {
                 ?.saveBlockSnapshot
         ) {
             return this.libraryUseCases.saveBlockSnapshot(
+                snapshot,
+                options
+            );
+        }
+
+        if (
+            this.legacyLibraryFallback
+                ?.saveBlockSnapshot
+        ) {
+            return this.legacyLibraryFallback.saveBlockSnapshot(
                 snapshot,
                 options
             );
@@ -2358,18 +3264,26 @@ window.QuestionsPage = {
                 routeContext,
                 sourceMode
             );
-        const name = window.prompt(
-            "Nome do bloco salvo:",
-            options.defaultName ||
-                suggestedName
-        );
+        const requestedName =
+            options.skipPrompt === true
+                ? options.defaultName
+                : window.prompt(
+                    "Nome do bloco salvo:",
+                    options.defaultName ||
+                        suggestedName
+                );
 
-        if (name === null) {
+        if (
+            requestedName === null &&
+            options.skipPrompt !== true
+        ) {
             return null;
         }
 
         const cleanName =
-            String(name || "").trim() ||
+            String(
+                requestedName || ""
+            ).trim() ||
             suggestedName;
         const block =
             QuestionsStore.saveSavedBlock({
@@ -2388,12 +3302,18 @@ window.QuestionsPage = {
                     (question) =>
                         question?.id || ""
                 ),
-                sessionSnapshot: list
+                sessionSnapshot: list,
+                profileId:
+                    String(
+                        options.profileId || ""
+                    ).trim()
             });
 
-        this.runtimeNotice =
-            `Bloco salvo: ${cleanName}.`;
-        this.render();
+        if (options.silent !== true) {
+            this.runtimeNotice =
+                `Bloco salvo: ${cleanName}.`;
+            this.render();
+        }
 
         return block;
     },
@@ -2404,6 +3324,13 @@ window.QuestionsPage = {
                 ?.saveCurrentSpecificBlock
         ) {
             return this.libraryUseCases.saveCurrentSpecificBlock();
+        }
+
+        if (
+            this.legacyLibraryFallback
+                ?.saveCurrentSpecificBlock
+        ) {
+            return this.legacyLibraryFallback.saveCurrentSpecificBlock();
         }
 
         const validation =
@@ -2452,6 +3379,13 @@ window.QuestionsPage = {
             return this.libraryUseCases.saveCurrentSmartBlock();
         }
 
+        if (
+            this.legacyLibraryFallback
+                ?.saveCurrentSmartBlock
+        ) {
+            return this.legacyLibraryFallback.saveCurrentSmartBlock();
+        }
+
         const current =
             QuestionsContext.get();
         const preview =
@@ -2489,6 +3423,15 @@ window.QuestionsPage = {
                 ?.openSavedBlock
         ) {
             return this.libraryUseCases.openSavedBlock(
+                blockId
+            );
+        }
+
+        if (
+            this.legacyLibraryFallback
+                ?.openSavedBlock
+        ) {
+            return this.legacyLibraryFallback.openSavedBlock(
                 blockId
             );
         }
@@ -2531,12 +3474,28 @@ window.QuestionsPage = {
         );
     },
 
-    startSavedBlock(blockId) {
+    async startSavedBlock(blockId) {
         if (
             this.libraryUseCases
                 ?.startSavedBlock
         ) {
             return this.libraryUseCases.startSavedBlock(
+                blockId
+            );
+        }
+
+        if (
+            !this.libraryUseCases &&
+            !this.legacyRecoveryFallback
+        ) {
+            await this.ensureLegacyRecoveryFallback();
+        }
+
+        if (
+            this.legacyRecoveryFallback
+                ?.startSavedBlock
+        ) {
+            return this.legacyRecoveryFallback.startSavedBlock(
                 blockId
             );
         }
@@ -2605,6 +3564,15 @@ window.QuestionsPage = {
             );
         }
 
+        if (
+            this.legacyLibraryFallback
+                ?.renameSavedBlock
+        ) {
+            return this.legacyLibraryFallback.renameSavedBlock(
+                blockId
+            );
+        }
+
         const block =
             QuestionsStore.getSavedBlockById(
                 blockId
@@ -2655,6 +3623,15 @@ window.QuestionsPage = {
             );
         }
 
+        if (
+            this.legacyLibraryFallback
+                ?.duplicateSavedBlock
+        ) {
+            return this.legacyLibraryFallback.duplicateSavedBlock(
+                blockId
+            );
+        }
+
         const block =
             QuestionsStore.getSavedBlockById(
                 blockId
@@ -2695,13 +3672,27 @@ window.QuestionsPage = {
         this.openLauncher("saved");
     },
 
-    deleteSavedBlock(blockId) {
+    deleteSavedBlock(
+        blockId,
+        options = {}
+    ) {
         if (
             this.libraryUseCases
                 ?.deleteSavedBlock
         ) {
             return this.libraryUseCases.deleteSavedBlock(
-                blockId
+                blockId,
+                options
+            );
+        }
+
+        if (
+            this.legacyLibraryFallback
+                ?.deleteSavedBlock
+        ) {
+            return this.legacyLibraryFallback.deleteSavedBlock(
+                blockId,
+                options
             );
         }
 
@@ -2717,21 +3708,23 @@ window.QuestionsPage = {
             return;
         }
 
-        const confirmed =
-            window.confirm(
-                `Apagar o bloco "${block.name}"?`
-            );
-
-        if (!confirmed) {
-            return;
-        }
-
-        QuestionsStore.deleteSavedBlock(
-            block.id
-        );
-        this.runtimeNotice =
-            `Bloco apagado: ${block.name}.`;
-        this.openLauncher("saved");
+        this.openConfirmDialog({
+            title: "Apagar bloco",
+            message:
+                `Apagar o bloco "${block.name}"?`,
+            confirmLabel: "Apagar",
+            anchorRect:
+                options.anchorRect ||
+                null,
+            onConfirm: () => {
+                QuestionsStore.deleteSavedBlock(
+                    block.id
+                );
+                this.runtimeNotice =
+                    `Bloco apagado: ${block.name}.`;
+                this.openLauncher("saved");
+            }
+        });
     },
 
     buildRunTitle(
@@ -2739,6 +3732,15 @@ window.QuestionsPage = {
         context = {},
         sourceMode = ""
     ) {
+        const customTitle =
+            String(
+                meta.customTitle || ""
+            ).trim();
+
+        if (customTitle) {
+            return customTitle;
+        }
+
         if (
             this.launcherSelectors
                 ?.buildRunTitle
@@ -2786,6 +3788,17 @@ window.QuestionsPage = {
                 ?.createRunFromSession
         ) {
             return this.sessionUseCases.createRunFromSession(
+                list,
+                meta,
+                options
+            );
+        }
+
+        if (
+            this.legacySessionFallback
+                ?.createRunFromSession
+        ) {
+            return this.legacySessionFallback.createRunFromSession(
                 list,
                 meta,
                 options
@@ -2861,6 +3874,16 @@ window.QuestionsPage = {
                 ?.persistActiveRun
         ) {
             return this.sessionUseCases.persistActiveRun(
+                status,
+                extra
+            );
+        }
+
+        if (
+            this.legacySessionFallback
+                ?.persistActiveRun
+        ) {
+            return this.legacySessionFallback.persistActiveRun(
                 status,
                 extra
             );
@@ -2959,26 +3982,58 @@ window.QuestionsPage = {
         }
 
         if (
+            this.legacySessionFallback
+                ?.pauseSession
+        ) {
+            return this.legacySessionFallback.pauseSession();
+        }
+
+        if (
             QuestionsState.getPhase() !==
             "session"
         ) {
-            this.openLauncher("resume");
+            this.openLauncher(
+                this.getSessionReturnView(
+                    "home"
+                )
+            );
             return;
         }
 
+        QuestionsStore.flushProfileState(true);
         this.persistActiveRun(
             "in_progress"
         );
         this.runtimeNotice =
             "Treino pausado. Voce pode retomar depois.";
-        this.openLauncher("resume");
+        this.openLauncher(
+            this.getSessionReturnView(
+                "home"
+            )
+        );
     },
 
-    resumeRun(runId) {
+    async resumeRun(runId) {
         if (
             this.sessionUseCases?.resumeRun
         ) {
             return this.sessionUseCases.resumeRun(
+                runId
+            );
+        }
+
+        if (
+            !this.sessionUseCases &&
+            !this.legacyRecoveryFallback
+        ) {
+            await this.ensureLegacyRecoveryFallback();
+        }
+
+        if (
+            this.legacyRecoveryFallback
+                ?.resumeRun
+        ) {
+            return this.legacyRecoveryFallback.resumeRun(
                 runId
             );
         }
@@ -3033,11 +4088,27 @@ window.QuestionsPage = {
         });
     },
 
-    restartRun(runId) {
+    async restartRun(runId) {
         if (
             this.sessionUseCases?.restartRun
         ) {
             return this.sessionUseCases.restartRun(
+                runId
+            );
+        }
+
+        if (
+            !this.sessionUseCases &&
+            !this.legacyRecoveryFallback
+        ) {
+            await this.ensureLegacyRecoveryFallback();
+        }
+
+        if (
+            this.legacyRecoveryFallback
+                ?.restartRun
+        ) {
+            return this.legacyRecoveryFallback.restartRun(
                 runId
             );
         }
@@ -3092,7 +4163,10 @@ window.QuestionsPage = {
         });
     },
 
-    deleteRun(runId) {
+    deleteRun(
+        runId,
+        options = {}
+    ) {
         const run =
             QuestionsStore.getRunById(runId);
 
@@ -3103,19 +4177,25 @@ window.QuestionsPage = {
             return;
         }
 
-        const confirmed =
-            window.confirm(
-                `Apagar a sessao "${run.title}"?`
-            );
-
-        if (!confirmed) {
-            return;
-        }
-
-        QuestionsStore.deleteRun(runId);
-        this.runtimeNotice =
-            `Sessao apagada: ${run.title}.`;
-        this.openLauncher("resume");
+        this.openConfirmDialog({
+            title: "Apagar sessao",
+            message:
+                `Apagar a sessao "${run.title}"?`,
+            confirmLabel: "Apagar",
+            anchorRect:
+                options.anchorRect ||
+                null,
+            onConfirm: () => {
+                QuestionsStore.deleteRun(
+                    runId
+                );
+                this.runtimeNotice =
+                    `Sessao apagada: ${run.title}.`;
+                this.openLauncher(
+                    "resume"
+                );
+            }
+        });
     },
 
     exitModule() {
@@ -3132,6 +4212,39 @@ window.QuestionsPage = {
         document.getElementById(
             "homeBtn"
         )?.click();
+
+        if (
+            typeof Core === "undefined" &&
+            !document.getElementById(
+                "homeBtn"
+            )
+        ) {
+            window.location.href =
+                "index.html";
+        }
+    },
+
+    prepareHomeExit() {
+        this.launcherHistory = [];
+
+        if (
+            QuestionsState.getPhase() ===
+                "session" &&
+            !QuestionsState.isComplete()
+        ) {
+            QuestionsStore.flushProfileState(
+                true
+            );
+            this.persistActiveRun(
+                "in_progress"
+            );
+            this.runtimeNotice =
+                "Treino pausado. Voce pode retomar depois.";
+        }
+
+        QuestionsState.openLauncher(
+            "home"
+        );
     },
 
     buildSmartRoutePreview() {
@@ -3140,6 +4253,13 @@ window.QuestionsPage = {
                 ?.buildSmartRoutePreview
         ) {
             return this.sessionUseCases.buildSmartRoutePreview();
+        }
+
+        if (
+            this.legacySessionFallback
+                ?.buildSmartRoutePreview
+        ) {
+            return this.legacySessionFallback.buildSmartRoutePreview();
         }
 
         const current =
@@ -3211,7 +4331,24 @@ window.QuestionsPage = {
         const recentSessions =
             QuestionsStore.getRecentSessions();
         const weakEntries =
-            QuestionsStore.getWeakTopics();
+            QuestionsStore.getWeakTopics({
+                minAttempts: 4,
+                minErrors: 2
+            });
+        const getGroupAttempts = (
+            group = null
+        ) =>
+            QuestionsStore.getTopicEntries({
+                baseKey: "ESCOLAR",
+                subjectKey:
+                    group?.materia ||
+                    current.materia
+            }).reduce(
+                (acc, entry) =>
+                    acc +
+                    (entry?.attempts || 0),
+                0
+            );
         const rankedGroups =
             [...groups.values()]
                 .map((group) => {
@@ -3282,6 +4419,14 @@ window.QuestionsPage = {
                             group.recentMatch
                         )
                 ) || defaultGroup;
+            const groupAttempts =
+                getGroupAttempts(
+                    chosenGroup
+                );
+            const isWarmupStage =
+                groupAttempts < 100;
+            const canReuseNarrowRoute =
+                groupAttempts >= 24;
 
             const reusedTopics =
                 (chosenGroup?.recentMatch
@@ -3295,32 +4440,36 @@ window.QuestionsPage = {
                 );
 
             topicos =
-                reusedTopics.length
+                reusedTopics.length &&
+                reusedTopics.length > 1 &&
+                canReuseNarrowRoute
                     ? reusedTopics
-                    : (
-                        chosenGroup?.topics || []
-                    )
-                        .slice(
-                            0,
-                            Math.min(
-                                2,
-                                chosenGroup?.topics
-                                    ?.length || 0
-                            )
-                        )
-                        .map((topic) =>
-                            topic.key
-                        );
+                    : QuestionsService.pickTopicKeys(
+                        chosenGroup?.topics ||
+                            [],
+                        Math.min(
+                            isWarmupStage
+                                ? 3
+                                : 2,
+                            chosenGroup?.topics
+                                ?.length || 0
+                        ),
+                        reusedTopics
+                    );
 
             if (topicos.length > 1) {
                 mode =
                     "ASSUNTOS_COMBINADOS";
                 estrategiaMistura =
-                    "adaptativa";
+                    isWarmupStage
+                        ? "alternada"
+                        : "adaptativa";
             }
 
             note =
-                chosenGroup?.recentMatch
+                isWarmupStage
+                    ? "No comeco, a rota mistura mais assuntos para entender melhor onde esta sua dificuldade real antes de apertar o reforco."
+                    : chosenGroup?.recentMatch
                     ? "A sugestao reaproveita o recorte mais recente ainda elegivel para voce continuar sem remontar tudo."
                     : "Sem historico forte no recorte atual, o sistema abre um bloco curto e seguro para continuar o ritmo.";
         } else if (
@@ -3334,40 +4483,54 @@ window.QuestionsPage = {
                             group.weakMatch
                         )
                 ) || defaultGroup;
+            const groupAttempts =
+                getGroupAttempts(
+                    chosenGroup
+                );
+            const canFocusHard =
+                groupAttempts >= 24;
             const weakTopic =
-                chosenGroup?.weakMatch
-                    ?.topicKey || "";
+                canFocusHard
+                    ? chosenGroup?.weakMatch
+                          ?.topicKey || ""
+                    : "";
             const supportTopics =
-                (chosenGroup?.topics || [])
-                    .filter(
+                QuestionsService.pickTopicKeys(
+                    (
+                        chosenGroup?.topics ||
+                        []
+                    ).filter(
                         (topic) =>
                             topic.key !==
                             weakTopic
+                    ),
+                    Math.min(
+                        2,
+                        (
+                            chosenGroup?.topics ||
+                            []
+                        ).filter(
+                            (topic) =>
+                                topic.key !==
+                                weakTopic
+                        ).length
                     )
-                    .slice(0, 2)
-                    .map((topic) =>
-                        topic.key
-                    );
+                );
 
             topicos = weakTopic
                 ? [
                     weakTopic,
                     ...supportTopics
                 ]
-                : (
-                    chosenGroup?.topics || []
-                )
-                    .slice(
-                        0,
-                        Math.min(
-                            2,
-                            chosenGroup?.topics
-                                ?.length || 0
-                        )
+                : QuestionsService.pickTopicKeys(
+                    chosenGroup?.topics ||
+                        [],
+                    Math.min(
+                        canFocusHard ? 2 : 3,
+                        chosenGroup?.topics
+                            ?.length || 0
                     )
-                    .map((topic) =>
-                        topic.key
-                    );
+                );
 
             focoPrincipal =
                 weakTopic || null;
@@ -3380,24 +4543,27 @@ window.QuestionsPage = {
             }
 
             note =
+                canFocusHard &&
                 chosenGroup?.weakMatch
                     ? `A rota vai puxar primeiro ${chosenGroup.weakMatch.topicLabel}, que concentra mais erro dentro do recorte liberado.`
-                    : "Como ainda nao ha um ponto fraco dominante, o sistema vai abrir um reforco curto com os primeiros assuntos prontos.";
+                    : "Ainda ha pouca evidencia para travar um unico ponto fraco, entao o sistema abre um reforco leve e misturado.";
         } else {
             chosenGroup = defaultGroup;
+            const groupAttempts =
+                getGroupAttempts(
+                    chosenGroup
+                );
             topicos =
-                (chosenGroup?.topics || [])
-                    .slice(
-                        0,
-                        Math.min(
-                            3,
-                            chosenGroup?.topics
-                                ?.length || 0
-                        )
+                QuestionsService.pickTopicKeys(
+                    chosenGroup?.topics || [],
+                    Math.min(
+                        groupAttempts < 100
+                            ? 3
+                            : 2,
+                        chosenGroup?.topics
+                            ?.length || 0
                     )
-                    .map((topic) =>
-                        topic.key
-                    );
+                );
 
             if (topicos.length > 1) {
                 mode =
@@ -3448,13 +4614,18 @@ window.QuestionsPage = {
                     topicos.includes(topic.key)
             );
         const amount =
-            Number(
-                current.quantidadeQuestoes
-            ) || 5;
-        const estimatedDuration =
-            QuestionsService.formatTime(
-                amount * 25000
+            QuestionsService.getResolvedSessionAmount(
+                this,
+                current,
+                validation.eligibleQuestionCount
             );
+        const estimatedDuration =
+            current.smartQuestionCount ===
+                null
+                ? "Livre"
+                : QuestionsService.getEstimatedDurationFromCount(
+                    amount
+                );
 
         return {
             isReady: true,
@@ -3475,11 +4646,22 @@ window.QuestionsPage = {
                 estrategiaMistura,
                 pesos,
                 topicSearch: "",
-                onlyReadyTopics: true
+                onlyReadyTopics: true,
+                quantidadeQuestoes:
+                    amount
             },
             mode,
             objectiveLabel,
             note,
+            amount,
+            trainingModeLabel:
+                QuestionsService.getTrainingModeLabel(
+                    current
+                ),
+            trainingValueLabel:
+                QuestionsService.getTrainingValueLabel(
+                    current
+                ),
             serieLabel: `${chosenGroup.serie}a serie`,
             materiaLabel:
                 chosenGroup.materiaLabel ||
@@ -3503,12 +4685,23 @@ window.QuestionsPage = {
         };
     },
 
-    startSmartSession() {
+    startSmartSession(options = {}) {
         if (
             this.sessionUseCases
                 ?.startSmartSession
         ) {
-            return this.sessionUseCases.startSmartSession();
+            return this.sessionUseCases.startSmartSession(
+                options
+            );
+        }
+
+        if (
+            this.legacySessionFallback
+                ?.startSmartSession
+        ) {
+            return this.legacySessionFallback.startSmartSession(
+                options
+            );
         }
 
         const preview =
@@ -3536,7 +4729,7 @@ window.QuestionsPage = {
         );
         this.clearRuntimeNotice();
         this.syncContext();
-        this.startSession();
+        this.startSession(options);
     },
 
     reuseSessionRoute(sessionId = "") {
@@ -3640,6 +4833,10 @@ window.QuestionsPage = {
             return;
         }
 
+        if (QuestionsState.getLastAnswer()) {
+            return;
+        }
+
         const result =
             QuestionsService.answer(
                 payload.index,
@@ -3647,9 +4844,78 @@ window.QuestionsPage = {
             );
 
         QuestionsState.setAnswer(result);
-        this.persistActiveRun(
-            "in_progress"
-        );
+        this.render();
+    },
+
+    retryCurrentQuestion() {
+        const answer =
+            QuestionsState.getLastAnswer();
+
+        if (!answer) {
+            return;
+        }
+
+        QuestionsState.retryCurrentQuestion();
+        this.clearRuntimeNotice();
+        this.render();
+    },
+
+    submitQuestionContest(
+        rawMessage = ""
+    ) {
+        const question =
+            QuestionsState.getCurrentQuestion();
+
+        if (!question) {
+            return;
+        }
+
+        const message =
+            String(rawMessage || "").trim() ||
+            this.getQuestionContestDefaultText();
+        const meta =
+            QuestionsState.getMeta();
+        const report =
+            QuestionsStore.saveQuestionReport({
+                questionId:
+                    question.id || "",
+                prompt:
+                    question.prompt || "",
+                explanation:
+                    question.explanation ||
+                    "",
+                message,
+                meta: {
+                    runId:
+                        QuestionsState.getActiveRunId(),
+                    sourceMode:
+                        meta.sourceMode ||
+                        "",
+                    subjectKey:
+                        question.subjectKey ||
+                        "",
+                    subjectLabel:
+                        question.subjectLabel ||
+                        "",
+                    topicKey:
+                        question.topicKey || "",
+                    topicLabel:
+                        question.topicLabel ||
+                        ""
+                }
+            });
+
+        if (!report) {
+            this.runtimeNotice =
+                "Nao foi possivel registrar a contestacao agora.";
+            this.render();
+            return;
+        }
+
+        this.runtimeNotice =
+            "Contestacao registrada para revisao.";
+        this.activeContestQuestionId =
+            "";
         this.render();
     },
 
@@ -3661,6 +4927,21 @@ window.QuestionsPage = {
             return this.sessionUseCases.continueSession();
         }
 
+        if (
+            this.legacySessionFallback
+                ?.continueSession
+        ) {
+            return this.legacySessionFallback.continueSession();
+        }
+
+        if (
+            !QuestionsState.getLastAnswer() &&
+            !QuestionsState.isComplete()
+        ) {
+            return;
+        }
+
+        this.commitLastAnswer();
         QuestionsState.next();
 
         if (
@@ -3732,6 +5013,9 @@ window.QuestionsPage = {
                     summary.strongTopic
                         ?.topicLabel || ""
             });
+            QuestionsStore.flushProfileState(
+                true
+            );
 
             this.persistActiveRun(
                 "completed",
@@ -3748,12 +5032,6 @@ window.QuestionsPage = {
                 {
                     summary
                 }
-            );
-        }
-
-        if (!QuestionsState.isComplete()) {
-            this.persistActiveRun(
-                "in_progress"
             );
         }
 
@@ -3782,6 +5060,15 @@ window.QuestionsPage = {
             );
         }
 
+        if (
+            this.legacySessionFallback
+                ?.startFollowUp
+        ) {
+            return this.legacySessionFallback.startFollowUp(
+                intent
+            );
+        }
+
         const summary =
             QuestionsService.summarizeSessionResults(
                 QuestionsState.getResults(),
@@ -3803,6 +5090,15 @@ window.QuestionsPage = {
             this.sessionUseCases?.startSession
         ) {
             return this.sessionUseCases.startSession(
+                options
+            );
+        }
+
+        if (
+            this.legacySessionFallback
+                ?.startSession
+        ) {
+            return this.legacySessionFallback.startSession(
                 options
             );
         }
@@ -3897,6 +5193,11 @@ window.QuestionsPage = {
                     meta,
                     {
                         sourceMode,
+                        profileId:
+                            String(
+                                options.profileId ||
+                                    ""
+                            ).trim(),
                         savedBlockId:
                             String(
                                 options.savedBlockId ||
@@ -3906,6 +5207,15 @@ window.QuestionsPage = {
                 );
             activeRunId = run?.id || "";
         }
+
+        this.sessionReturnView =
+            QuestionsState.isValidLauncherView(
+                QuestionsState.getLauncherView()
+            )
+                ? QuestionsState.getLauncherView()
+                : this.getSessionReturnView(
+                    "home"
+                );
 
         QuestionsState.startSession(
             list,
@@ -3922,12 +5232,6 @@ window.QuestionsPage = {
             }
         );
 
-        if (activeRunId) {
-            this.persistActiveRun(
-                "in_progress"
-            );
-        }
-
         this.dispatchSyncEvent(
             "questions:session-started",
             {
@@ -3935,11 +5239,214 @@ window.QuestionsPage = {
                     QuestionsState.getMeta()
             }
         );
-        QuestionsUI.render();
+        this.render({
+            sync: false,
+            immediate: true
+        });
     },
 
-    openLauncher(view = null) {
-        if (view === "smart_start") {
+    buildSmartBlockSnapshotFromProfile(
+        profile = {}
+    ) {
+        const previousContext =
+            QuestionsContext.get();
+        const profileContext = {
+            ...previousContext,
+            smartGoal:
+                profile.smartGoal ||
+                "continue",
+            smartSessionMetric:
+                profile.sessionMetric ||
+                "quantidade",
+            smartSelectedSeries: [
+                ...(profile.selectedSeries ||
+                    [])
+            ],
+            smartSelectedSubjects: [
+                ...(profile.selectedSubjects ||
+                    [])
+            ],
+            smartExcludedSeries: [
+                ...(profile.excludedSeries ||
+                    [])
+            ],
+            smartExcludedBases: [
+                ...(profile.excludedBases ||
+                    [])
+            ],
+            smartExcludedSubjects: [
+                ...(profile.excludedSubjects ||
+                    [])
+            ],
+            smartQuestionCount:
+                profile.questionCount ===
+                null
+                    ? null
+                    : Number(
+                        profile.questionCount
+                    ) || 5,
+            smartTimeMinutes:
+                profile.timeMinutes === null
+                    ? null
+                    : Number(
+                        profile.timeMinutes
+                    ) || 15,
+            quantidadeQuestoes:
+                Number(
+                    profile.preferredAmount
+                ) ||
+                previousContext.quantidadeQuestoes
+        };
+
+        QuestionsContext.replace(
+            profileContext,
+            false
+        );
+
+        try {
+            const preview =
+                this.buildSmartRoutePreview();
+
+            if (
+                !preview.isReady ||
+                !preview.patch
+            ) {
+                return null;
+            }
+
+            return {
+                preview,
+                snapshot:
+                    this.buildSessionSnapshotForBlock(
+                        preview.patch,
+                        {
+                            sourceMode:
+                                "smart",
+                            launcherContext:
+                                profileContext,
+                            meta: {
+                                customTitle:
+                                    profile.name ||
+                                    ""
+                            }
+                        }
+                    )
+            };
+        } finally {
+            QuestionsContext.replace(
+                previousContext,
+                false
+            );
+        }
+    },
+
+    syncSavedBlocksFromSmartProfiles() {
+        const profiles =
+            QuestionsStore.getSmartProfiles();
+
+        if (!profiles.length) {
+            return 0;
+        }
+
+        const existingProfileIds =
+            new Set(
+                QuestionsStore.getSavedBlocks()
+                    .map((block) =>
+                        String(
+                            block.profileId || ""
+                        ).trim()
+                    )
+                    .filter(Boolean)
+            );
+        let createdCount = 0;
+
+        profiles.forEach((profile) => {
+            if (
+                existingProfileIds.has(
+                    String(profile.id)
+                )
+            ) {
+                return;
+            }
+
+            const bundle =
+                this.buildSmartBlockSnapshotFromProfile(
+                    profile
+                );
+
+            if (!bundle?.snapshot) {
+                return;
+            }
+
+            const block =
+                this.saveBlockSnapshot(
+                    bundle.snapshot,
+                    {
+                        sourceMode:
+                            "smart",
+                        defaultName:
+                            profile.name ||
+                            "",
+                        note:
+                            bundle.preview
+                                ?.note || "",
+                        profileId:
+                            profile.id || "",
+                        skipPrompt:
+                            true,
+                        silent: true
+                    }
+                );
+
+            if (block?.id) {
+                existingProfileIds.add(
+                    String(profile.id)
+                );
+                createdCount += 1;
+            }
+        });
+
+        return createdCount;
+    },
+
+    openLauncher(
+        view = null,
+        options = {}
+    ) {
+        const currentView =
+            QuestionsState.getLauncherView();
+        const targetView =
+            QuestionsState.isValidLauncherView(
+                view
+            )
+                ? view
+                : currentView;
+
+        if (
+            options.fromBack !== true &&
+            options.trackHistory !==
+                false &&
+            QuestionsState.getPhase() ===
+                "launcher" &&
+            targetView !== currentView
+        ) {
+            this.launcherHistory = [
+                ...(
+                    Array.isArray(
+                        this.launcherHistory
+                    )
+                        ? this.launcherHistory
+                        : []
+                ),
+                currentView
+            ].slice(-24);
+        }
+
+        if (
+            targetView === "smart_start" &&
+            options.preserveSmartState !==
+                true
+        ) {
             QuestionsContext.replace(
                 {
                     ...QuestionsContext.get(),
@@ -3953,7 +5460,44 @@ window.QuestionsPage = {
             this.syncContext();
         }
 
-        QuestionsState.openLauncher(view);
+        if (
+            targetView === "smart" &&
+            this.data.bankStatus === "ready"
+        ) {
+            const recovery =
+                QuestionsService.getSmartLauncherRecovery(
+                    this
+                );
+
+            if (
+                recovery?.isRecoverable &&
+                recovery.recoveryPatch
+            ) {
+                QuestionsContext.replace(
+                    {
+                        ...QuestionsContext.get(),
+                        ...recovery.recoveryPatch
+                    },
+                    true
+                );
+                this.runtimeNotice =
+                    recovery.reason ||
+                    "As exclusoes salvas foram limpas para liberar o treino.";
+                this.syncContext();
+            }
+        }
+
+        if (
+            targetView === "saved" &&
+            this.data.bankStatus ===
+                "ready"
+        ) {
+            this.syncSavedBlocksFromSmartProfiles();
+        }
+
+        QuestionsState.openLauncher(
+            targetView
+        );
         this.registerCoachView(
             QuestionsState.getLauncherView()
         );
@@ -3967,8 +5511,55 @@ window.QuestionsPage = {
         );
     },
 
-    render() {
-        this.syncContext();
-        QuestionsUI.render();
+    render(options = {}) {
+        const shouldSync =
+            Object.prototype.hasOwnProperty.call(
+                options,
+                "sync"
+            )
+                ? options.sync === true
+                : QuestionsState.getPhase() !==
+                  "session";
+        const immediate =
+            options.immediate === true;
+
+        if (shouldSync) {
+            this.renderQueuedSync = true;
+        }
+
+        const flushRender = () => {
+            const queuedSync =
+                this.renderQueuedSync;
+
+            this.renderQueuedSync = false;
+
+            if (queuedSync) {
+                this.syncContext();
+            }
+
+            QuestionsUI.render();
+        };
+
+        if (immediate) {
+            if (this.renderFrameId) {
+                cancelAnimationFrame(
+                    this.renderFrameId
+                );
+                this.renderFrameId = 0;
+            }
+
+            flushRender();
+            return;
+        }
+
+        if (this.renderFrameId) {
+            return;
+        }
+
+        this.renderFrameId =
+            requestAnimationFrame(() => {
+                this.renderFrameId = 0;
+                flushRender();
+            });
     }
 };

@@ -29,15 +29,148 @@ export function createQuestionsSessionUseCases(
             repository || null;
     }
 
-    function resolveSessionListFromIds(
-        questionIds = []
+    async function ensureDetailedCatalogLoaded() {
+        if (
+            typeof page
+                .ensureDetailedCatalogLoaded ===
+            "function"
+        ) {
+            await page.ensureDetailedCatalogLoaded();
+        }
+    }
+
+    async function ensureRouteCatalogLoaded(
+        routeContext = null
+    ) {
+        if (
+            typeof page
+                .ensureRouteCatalogLoaded ===
+            "function"
+        ) {
+            await page.ensureRouteCatalogLoaded(
+                routeContext
+            );
+            return;
+        }
+
+        await ensureDetailedCatalogLoaded();
+    }
+
+    function getRouteTopicIds(
+        routeContext = null
+    ) {
+        const fallbackContext =
+            typeof QuestionsContext.get ===
+            "function"
+                ? QuestionsContext.get()
+                : {};
+        const sourceContext =
+            routeContext &&
+            typeof routeContext === "object"
+                ? routeContext
+                : fallbackContext;
+
+        return Array.isArray(
+            sourceContext?.topicos
+        )
+            ? sourceContext.topicos.filter(
+                Boolean
+            )
+            : [];
+    }
+
+    function createListResolutionResult(
+        {
+            list = [],
+            source = "empty",
+            requestedCount = 0,
+            resolvedCount = 0
+        } = {}
+    ) {
+        return {
+            list: Array.isArray(list)
+                ? [...list]
+                : [],
+            source,
+            requestedCount:
+                Number(requestedCount) || 0,
+            resolvedCount:
+                Number(resolvedCount) || 0
+        };
+    }
+
+    function getRunResolutionNotice(
+        run = {},
+        resolution = {},
+        mode = "resume"
+    ) {
+        const requestedCount =
+            Number(
+                resolution.requestedCount
+            ) || 0;
+        const resolvedCount =
+            Number(
+                resolution.resolvedCount
+            ) || 0;
+        const hasSnapshot =
+            Array.isArray(
+                run.sessionSnapshot
+            ) &&
+            run.sessionSnapshot.length > 0;
+
+        if (
+            resolution.source === "snapshot"
+        ) {
+            if (
+                requestedCount > 0 &&
+                resolvedCount > 0 &&
+                resolvedCount < requestedCount
+            ) {
+                return mode === "restart"
+                    ? "Essa sessao foi reiniciada pelo snapshot salvo porque parte das questoes por id nao esta mais disponivel."
+                    : "Essa sessao foi retomada pelo snapshot salvo porque parte das questoes por id nao esta mais disponivel.";
+            }
+
+            return mode === "restart"
+                ? "Essa sessao foi reiniciada pelo snapshot de compatibilidade."
+                : "Essa sessao foi retomada pelo snapshot de compatibilidade.";
+        }
+
+        if (
+            requestedCount > 0 &&
+            resolvedCount > 0 &&
+            resolvedCount < requestedCount
+        ) {
+            return hasSnapshot
+                ? "Parte das questoes salvas nao esta mais disponivel e nem o snapshot de compatibilidade conseguiu reconstruir a sessao."
+                : "Parte das questoes salvas nao esta mais disponivel para reconstruir essa sessao.";
+        }
+
+        if (requestedCount > 0) {
+            return hasSnapshot
+                ? "Nao foi possivel reconstruir essa sessao pelos ids salvos nem pelo snapshot de compatibilidade."
+                : "Nao foi possivel reconstruir essa sessao pelos ids salvos.";
+        }
+
+        return mode === "restart"
+            ? "Essa sessao nao pode ser reiniciada porque a lista de questoes nao esta mais disponivel."
+            : "Essa sessao nao tem mais uma lista valida para retomada.";
+    }
+
+    async function resolveSessionListFromIds(
+        questionIds = [],
+        routeContext = null
     ) {
         if (
             !contentRepository ||
-            typeof contentRepository.findQuestionsByIds !==
-                "function"
+            (
+                typeof contentRepository.findQuestionsByIds !==
+                    "function" &&
+                typeof contentRepository.findQuestionsByIdsAsync !==
+                    "function"
+            )
         ) {
-            return [];
+            return createListResolutionResult();
         }
 
         const ids = Array.isArray(
@@ -47,38 +180,94 @@ export function createQuestionsSessionUseCases(
             : [];
 
         if (!ids.length) {
-            return [];
+            return createListResolutionResult();
         }
 
         const resolved =
-            contentRepository.findQuestionsByIds(
-                ids
-            );
+            typeof contentRepository.findQuestionsByIdsAsync ===
+            "function"
+                ? await contentRepository.findQuestionsByIdsAsync(
+                    ids,
+                    {
+                        topicIds:
+                            getRouteTopicIds(
+                                routeContext
+                            )
+                    }
+                )
+                : contentRepository.findQuestionsByIds(
+                    ids
+                );
 
-        return Array.isArray(resolved) &&
-            resolved.length === ids.length
+        if (
+            typeof page
+                .syncCatalogFromRepository ===
+            "function"
+        ) {
+            page.syncCatalogFromRepository();
+        }
+
+        const resolvedList = Array.isArray(
+            resolved
+        )
             ? [...resolved]
             : [];
+
+        return createListResolutionResult({
+            list:
+                resolvedList.length ===
+                ids.length
+                    ? resolvedList
+                    : [],
+            source:
+                resolvedList.length ===
+                ids.length
+                    ? "ids"
+                    : "empty",
+            requestedCount: ids.length,
+            resolvedCount:
+                resolvedList.length
+        });
     }
 
-    function resolveRunSessionList(
+    async function resolveRunSessionList(
         run = {}
     ) {
         const listFromIds =
-            resolveSessionListFromIds(
-                run.questionIds
+            await resolveSessionListFromIds(
+                run.questionIds,
+                run.routeSnapshot?.context ||
+                    {}
             );
 
-        if (listFromIds.length) {
+        if (listFromIds.list.length) {
             return listFromIds;
         }
 
-        return Array.isArray(
+        const snapshotList = Array.isArray(
             run.sessionSnapshot
         ) &&
             run.sessionSnapshot.length
             ? [...run.sessionSnapshot]
             : [];
+
+        if (snapshotList.length) {
+            return createListResolutionResult({
+                list: snapshotList,
+                source: "snapshot",
+                requestedCount:
+                    listFromIds.requestedCount,
+                resolvedCount:
+                    listFromIds.resolvedCount
+            });
+        }
+
+        return createListResolutionResult({
+            requestedCount:
+                listFromIds.requestedCount,
+            resolvedCount:
+                listFromIds.resolvedCount
+        });
     }
 
     function createRunFromSession(
@@ -234,7 +423,7 @@ export function createQuestionsSessionUseCases(
         );
     }
 
-    function startSession(options = {}) {
+    async function startSession(options = {}) {
         const hasSnapshotList =
             Array.isArray(
                 options.sessionList
@@ -266,9 +455,13 @@ export function createQuestionsSessionUseCases(
             ? [...options.sessionList]
             : (
                 hasQuestionIds
-                    ? resolveSessionListFromIds(
-                        options.questionIds
+                    ? (
+                        await resolveSessionListFromIds(
+                        options.questionIds,
+                        options.routeContext ||
+                            QuestionsContext.get()
                     )
+                    ).list
                     : []
             );
         let meta = {};
@@ -278,6 +471,10 @@ export function createQuestionsSessionUseCases(
             !hasSnapshotList &&
             !hasQuestionIds
         ) {
+            await ensureRouteCatalogLoaded(
+                options.routeContext ||
+                    QuestionsContext.get()
+            );
             sessionPlan =
                 planner.buildSessionPlan();
             const validation =
@@ -351,6 +548,11 @@ export function createQuestionsSessionUseCases(
                     meta,
                     {
                         sourceMode,
+                        profileId:
+                            String(
+                                options.profileId ||
+                                    ""
+                            ).trim(),
                         savedBlockId:
                             String(
                                 options.savedBlockId ||
@@ -360,6 +562,15 @@ export function createQuestionsSessionUseCases(
                 );
             activeRunId = run?.id || "";
         }
+
+        page.sessionReturnView =
+            QuestionsState.isValidLauncherView(
+                QuestionsState.getLauncherView()
+            )
+                ? QuestionsState.getLauncherView()
+                : page.getSessionReturnView(
+                    "home"
+                );
 
         QuestionsState.startSession(
             list,
@@ -376,12 +587,6 @@ export function createQuestionsSessionUseCases(
             }
         );
 
-        if (activeRunId) {
-            persistActiveRun(
-                "in_progress"
-            );
-        }
-
         page.dispatchSyncEvent(
             "questions:session-started",
             {
@@ -389,7 +594,10 @@ export function createQuestionsSessionUseCases(
                     QuestionsState.getMeta()
             }
         );
-        QuestionsUI.render();
+        page.render({
+            sync: false,
+            immediate: true
+        });
     }
 
     function pauseSession() {
@@ -397,17 +605,26 @@ export function createQuestionsSessionUseCases(
             QuestionsState.getPhase() !==
             "session"
         ) {
-            page.openLauncher("resume");
+            page.openLauncher(
+                page.getSessionReturnView(
+                    "home"
+                )
+            );
             return;
         }
 
+        QuestionsStore.flushProfileState(true);
         persistActiveRun("in_progress");
         page.runtimeNotice =
             "Treino pausado. Voce pode retomar depois.";
-        page.openLauncher("resume");
+        page.openLauncher(
+            page.getSessionReturnView(
+                "home"
+            )
+        );
     }
 
-    function resumeRun(runId) {
+    async function resumeRun(runId) {
         const run =
             QuestionsStore.getRunById(runId);
 
@@ -418,19 +635,40 @@ export function createQuestionsSessionUseCases(
             return;
         }
 
-        const list =
-            resolveRunSessionList(run);
+        const resolution =
+            await resolveRunSessionList(run);
 
-        if (!list.length) {
+        if (!resolution.list.length) {
             page.runtimeNotice =
-                "Essa sessao nao tem mais uma lista valida para retomada.";
+                getRunResolutionNotice(
+                    run,
+                    resolution,
+                    "resume"
+                );
             page.openLauncher("resume");
             return;
         }
 
-        page.clearRuntimeNotice();
-        startSession({
-            sessionList: list,
+        const postStartNotice =
+            resolution.source ===
+            "snapshot"
+                ? getRunResolutionNotice(
+                    run,
+                    resolution,
+                    "resume"
+                )
+                : "";
+
+        if (
+            resolution.source ===
+            "snapshot"
+        ) {
+            page.clearRuntimeNotice();
+        }
+
+        await startSession({
+            sessionList:
+                resolution.list,
             questionIds:
                 run.questionIds || [],
             meta:
@@ -452,9 +690,22 @@ export function createQuestionsSessionUseCases(
                 run.mode || "specific",
             createRun: false
         });
+
+        if (
+            postStartNotice &&
+            QuestionsState.getPhase() ===
+                "session"
+        ) {
+            page.runtimeNotice =
+                postStartNotice;
+            page.render({
+                sync: false,
+                immediate: true
+            });
+        }
     }
 
-    function restartRun(runId) {
+    async function restartRun(runId) {
         const run =
             QuestionsStore.getRunById(runId);
 
@@ -465,12 +716,16 @@ export function createQuestionsSessionUseCases(
             return;
         }
 
-        const list =
-            resolveRunSessionList(run);
+        const resolution =
+            await resolveRunSessionList(run);
 
-        if (!list.length) {
+        if (!resolution.list.length) {
             page.runtimeNotice =
-                "Essa sessao nao pode ser reiniciada porque a lista de questoes nao esta mais disponivel.";
+                getRunResolutionNotice(
+                    run,
+                    resolution,
+                    "restart"
+                );
             page.openLauncher("resume");
             return;
         }
@@ -486,9 +741,25 @@ export function createQuestionsSessionUseCases(
             );
         }
 
-        page.clearRuntimeNotice();
-        startSession({
-            sessionList: list,
+        const postStartNotice =
+            resolution.source ===
+            "snapshot"
+                ? getRunResolutionNotice(
+                    run,
+                    resolution,
+                    "restart"
+                )
+                : "";
+
+        if (
+            resolution.source ===
+            "snapshot"
+        ) {
+            page.clearRuntimeNotice();
+        }
+        await startSession({
+            sessionList:
+                resolution.list,
             questionIds:
                 run.questionIds || [],
             meta:
@@ -500,9 +771,30 @@ export function createQuestionsSessionUseCases(
                 run.mode || "specific",
             createRun: true
         });
+
+        if (
+            postStartNotice &&
+            QuestionsState.getPhase() ===
+                "session"
+        ) {
+            page.runtimeNotice =
+                postStartNotice;
+            page.render({
+                sync: false,
+                immediate: true
+            });
+        }
     }
 
     function continueSession() {
+        if (
+            !QuestionsState.getLastAnswer() &&
+            !QuestionsState.isComplete()
+        ) {
+            return;
+        }
+
+        page.commitLastAnswer?.();
         QuestionsState.next();
 
         if (
@@ -573,6 +865,9 @@ export function createQuestionsSessionUseCases(
                     summary.strongTopic
                         ?.topicLabel || ""
             });
+            QuestionsStore.flushProfileState(
+                true
+            );
 
             persistActiveRun(
                 "completed",
@@ -592,12 +887,6 @@ export function createQuestionsSessionUseCases(
             );
         }
 
-        if (!QuestionsState.isComplete()) {
-            persistActiveRun(
-                "in_progress"
-            );
-        }
-
         page.render();
     }
 
@@ -605,7 +894,9 @@ export function createQuestionsSessionUseCases(
         return planner.buildSmartRoutePreview();
     }
 
-    function startSmartSession() {
+    async function startSmartSession(
+        options = {}
+    ) {
         const preview =
             buildSmartRoutePreview();
 
@@ -631,10 +922,10 @@ export function createQuestionsSessionUseCases(
         );
         page.clearRuntimeNotice();
         page.syncContext();
-        startSession();
+        await startSession(options);
     }
 
-    function startFollowUp(intent) {
+    async function startFollowUp(intent) {
         const summary =
             planner.summarizeResults(
                 QuestionsState.getResults(),
@@ -647,7 +938,7 @@ export function createQuestionsSessionUseCases(
             );
 
         page.updateContext(patch);
-        startSession();
+        await startSession();
     }
 
     return {

@@ -20,8 +20,90 @@ function normalizeSessionSnapshot(
     }
 
     return Array.isArray(sessionSnapshot)
-        ? [...sessionSnapshot]
-        : [];
+            ? [...sessionSnapshot]
+            : [];
+}
+
+function normalizeAnswerRecord(
+    answer = null
+) {
+    if (
+        !answer ||
+        typeof answer !== "object"
+    ) {
+        return null;
+    }
+
+    const question =
+        answer.question &&
+        typeof answer.question === "object"
+            ? answer.question
+            : {};
+
+    return {
+        correct: Boolean(answer.correct),
+        selectedIndex:
+            answer.selectedIndex ?? null,
+        selectedValue:
+            Object.prototype.hasOwnProperty.call(
+                answer,
+                "selectedValue"
+            )
+                ? answer.selectedValue
+                : null,
+        selectedAnswerLabel:
+            String(
+                answer.selectedAnswerLabel || ""
+            ).trim(),
+        correctAnswerLabel:
+            String(
+                answer.correctAnswerLabel || ""
+            ).trim(),
+        timeMs:
+            Number(answer.timeMs) || 0,
+        questionId:
+            String(
+                answer.questionId ||
+                    question.id ||
+                    ""
+            ).trim(),
+        baseKey:
+            String(
+                answer.baseKey ||
+                    question.baseKey ||
+                    ""
+            ).trim(),
+        baseLabel:
+            String(
+                answer.baseLabel ||
+                    question.baseLabel ||
+                    ""
+            ).trim(),
+        subjectKey:
+            String(
+                answer.subjectKey ||
+                    question.subjectKey ||
+                    ""
+            ).trim(),
+        subjectLabel:
+            String(
+                answer.subjectLabel ||
+                    question.subjectLabel ||
+                    ""
+            ).trim(),
+        topicKey:
+            String(
+                answer.topicKey ||
+                    question.topicKey ||
+                    ""
+            ).trim(),
+        topicLabel:
+            String(
+                answer.topicLabel ||
+                    question.topicLabel ||
+                    ""
+            ).trim()
+    };
 }
 
 export function normalizeRunRecord(
@@ -69,10 +151,18 @@ export function normalizeRunRecord(
         currentIndex:
             Number(run.currentIndex) || 0,
         answers: Array.isArray(run.answers)
-            ? [...run.answers]
+            ? run.answers
+                  .map((answer) =>
+                      normalizeAnswerRecord(
+                          answer
+                      )
+                  )
+                  .filter(Boolean)
             : [],
         lastAnswer:
-            run.lastAnswer || null,
+            normalizeAnswerRecord(
+                run.lastAnswer
+            ),
         summary:
             run.summary &&
             typeof run.summary === "object"

@@ -2,6 +2,8 @@
 
     maxTotalRows: 20,
     maxIntervals: 5,
+    defaultInitialRows: 4,
+    defaultInitialIntervals: 3,
     selection: {
         anchor: null,
         focus: null,
@@ -23,7 +25,7 @@
         summaryScope: "week",
         hiddenRows: [],
 
-        structure: Array.from({ length: 6 }, () => ({ type: "row" })),
+        structure: [],
         grid: {}
     },
 
@@ -96,7 +98,7 @@
 
         if (this.data.structure.length === 0)
             this.data.structure =
-                Array.from({ length: 6 }, () => ({ type: "row" }));
+                this.buildDefaultStructure();
 
         if (this.data.structure.length > this.maxTotalRows)
             this.data.structure =
@@ -1139,16 +1141,54 @@
         return hiddenValue || "07:00";
     },
 
-    buildRepeatingStructure(studyMinutes, breakMinutes) {
+    buildDefaultStructure() {
         const structure = [];
 
-        while (structure.length < this.maxTotalRows) {
+        for (
+            let rowIndex = 0;
+            rowIndex < this.defaultInitialRows;
+            rowIndex += 1
+        ) {
+            structure.push({
+                type: "row"
+            });
+
+            if (
+                rowIndex <
+                this.defaultInitialIntervals
+            ) {
+                structure.push({
+                    type: "interval"
+                });
+            }
+        }
+
+        return structure;
+    },
+
+    buildRepeatingStructure(studyMinutes, breakMinutes) {
+        const structure = [];
+        let rowCount = 0;
+        let intervalCount = 0;
+
+        while (
+            structure.length < this.maxTotalRows &&
+            rowCount < this.defaultInitialRows
+        ) {
             structure.push({
                 type: "row",
                 duration: studyMinutes
             });
+            rowCount += 1;
 
-            if (structure.length + 2 > this.maxTotalRows) {
+            if (
+                rowCount >=
+                    this.defaultInitialRows ||
+                intervalCount >=
+                    this.defaultInitialIntervals ||
+                structure.length + 1 >
+                    this.maxTotalRows
+            ) {
                 break;
             }
 
@@ -1156,6 +1196,7 @@
                 type: "interval",
                 duration: `Pausa ${breakMinutes}min`
             });
+            intervalCount += 1;
         }
 
         return structure;
@@ -1198,12 +1239,7 @@
                     { type: "interval", duration: "Pausa 10min" },
                     { type: "row", duration: 35 },
                     { type: "interval", duration: "Pausa 15min" },
-                    { type: "row", duration: 45 },
-                    { type: "interval", duration: "Pausa 20min" },
-                    { type: "row", duration: 55 },
-                    { type: "interval", duration: "Pausa 25min" },
-                    { type: "row", duration: 65 },
-                    { type: "interval", duration: "Pausa 30min" }
+                    { type: "row", duration: 45 }
                 ]
             }
         };

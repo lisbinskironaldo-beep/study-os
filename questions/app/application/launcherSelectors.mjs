@@ -26,20 +26,14 @@ export function createQuestionsLauncherSelectors(
         return [
             ...availableSeries.map((serie) => ({
                 key: String(serie.key),
-                label: serie.label.replace(
-                    " serie",
-                    ""
-                ),
+                label: `${serie.key}ª Série`,
                 type: "serie",
                 active:
                     selectedSeries.includes(
                         serie.key
                     ),
                 disabled: false,
-                note:
-                    serie.key === 1
-                        ? "Base escolar"
-                        : "Escolar"
+                note: ""
             })),
             {
                 key: "ENEM",
@@ -129,18 +123,41 @@ export function createQuestionsLauncherSelectors(
         });
 
         return [...grouped.values()]
-            .filter(
-                (subject) =>
-                    subject.hasQuestions
-            )
+            .sort((left, right) => {
+                if (
+                    left.hasQuestions !==
+                    right.hasQuestions
+                ) {
+                    return left.hasQuestions
+                        ? -1
+                        : 1;
+                }
+
+                if (
+                    left.readyQuestionCount !==
+                    right.readyQuestionCount
+                ) {
+                    return (
+                        right.readyQuestionCount -
+                        left.readyQuestionCount
+                    );
+                }
+
+                return left.label.localeCompare(
+                    right.label,
+                    "pt-BR"
+                );
+            })
             .map((subject) => ({
                 ...subject,
                 active:
                     (
                         ctx.smartSelectedSubjects ||
                         []
-                    ).includes(subject.key),
-                disabled: false
+                    ).includes(subject.key) &&
+                    subject.hasQuestions,
+                disabled:
+                    !subject.hasQuestions
             }));
     }
 
@@ -154,6 +171,9 @@ export function createQuestionsLauncherSelectors(
             smartGoal:
                 ctx.smartGoal ||
                 "continue",
+            sessionMetric:
+                ctx.smartSessionMetric ||
+                "quantidade",
             selectedSeries: [
                 ...(ctx.smartSelectedSeries ||
                     [])
@@ -178,6 +198,18 @@ export function createQuestionsLauncherSelectors(
                 Number(
                     ctx.quantidadeQuestoes
                 ) || 5,
+            questionCount:
+                ctx.smartQuestionCount === null
+                    ? null
+                    : Number(
+                        ctx.smartQuestionCount
+                    ) || 5,
+            timeMinutes:
+                ctx.smartTimeMinutes === null
+                    ? null
+                    : Number(
+                        ctx.smartTimeMinutes
+                    ) || 15,
             ...overrides
         };
     }
@@ -238,6 +270,15 @@ export function createQuestionsLauncherSelectors(
         context = {},
         sourceMode = ""
     ) {
+        const customTitle =
+            String(
+                meta.customTitle || ""
+            ).trim();
+
+        if (customTitle) {
+            return customTitle;
+        }
+
         const modeLabel =
             sourceMode === "smart"
                 ? "Bloco inteligente"
@@ -269,6 +310,15 @@ export function createQuestionsLauncherSelectors(
         context = {},
         sourceMode = ""
     ) {
+        const customTitle =
+            String(
+                meta.customTitle || ""
+            ).trim();
+
+        if (customTitle) {
+            return customTitle;
+        }
+
         const modeLabel =
             sourceMode === "smart"
                 ? "Treino inteligente"

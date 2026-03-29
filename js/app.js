@@ -127,6 +127,16 @@ const Core = {
 
         if (homeBtn) {
             homeBtn.addEventListener("click", () => {
+                if (
+                    this.state.mode ===
+                        "questions" &&
+                    window.QuestionsPage &&
+                    typeof QuestionsPage
+                        .prepareHomeExit ===
+                        "function"
+                ) {
+                    QuestionsPage.prepareHomeExit();
+                }
                 this.goHome();
             });
         }
@@ -298,15 +308,12 @@ document.body.appendChild(contextScript)
 if (window.QuestionsPage) {
 if (
 window.QuestionsState &&
-QuestionsState.getPhase() === "session"
+QuestionsState.getPhase() === "session" &&
+!QuestionsState.isComplete()
 ) {
 QuestionsPage.render()
-} else if (
-QuestionsPage.data?.bankStatus === "ready"
-) {
-QuestionsPage.openLauncher("home")
 } else {
-QuestionsPage.init()
+QuestionsPage.render()
 }
 }
 

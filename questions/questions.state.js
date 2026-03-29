@@ -134,16 +134,76 @@ window.QuestionsState = {
         return this.data.startTime || 0;
     },
 
-    setAnswer(result) {
-        this.data.lastAnswer =
-            result || null;
+    getRecordedAnswer(
+        questionId = ""
+    ) {
+        const safeQuestionId =
+            String(questionId || "").trim();
 
-        if (result) {
+        if (!safeQuestionId) {
+            return null;
+        }
+
+        return (
+            (this.data.results || []).find(
+                (entry) =>
+                    String(
+                        entry?.questionId || ""
+                    ).trim() ===
+                    safeQuestionId
+            ) || null
+        );
+    },
+
+    getCurrentRecordedAnswer() {
+        return this.getRecordedAnswer(
+            this.getCurrentQuestion()?.id ||
+                ""
+        );
+    },
+
+    setAnswer(result) {
+        if (!result) {
+            this.data.lastAnswer = null;
+            return;
+        }
+
+        const recorded =
+            this.getRecordedAnswer(
+                result.questionId
+            );
+
+        this.data.lastAnswer = {
+            ...result,
+            scoredCorrect:
+                recorded?.correct ??
+                result.correct,
+            outcomeLocked:
+                Boolean(recorded),
+            recordedAnswerLabel:
+                recorded
+                    ?.selectedAnswerLabel ||
+                "",
+            firstAttemptCorrect:
+                recorded?.correct ??
+                result.correct
+        };
+
+        if (!recorded) {
             this.data.results = [
                 ...(this.data.results || []),
                 result
             ];
         }
+    },
+
+    retryCurrentQuestion() {
+        if (!this.data.lastAnswer) {
+            return;
+        }
+
+        this.data.lastAnswer = null;
+        this.data.startTime = Date.now();
     },
 
     getLastAnswer() {

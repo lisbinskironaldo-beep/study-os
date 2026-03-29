@@ -1,6 +1,6 @@
 export const QUESTIONS_INDEXED_DB_SCHEMA =
     Object.freeze({
-        dbName: "study_os_questions_v2",
+        dbName: "study_os_questions_v3",
         version: 1,
         stores: {
             runs: {
