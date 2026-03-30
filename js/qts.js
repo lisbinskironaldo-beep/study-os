@@ -23,6 +23,7 @@
         showSaturday: true,
         activeTemplate: "manual",
         summaryScope: "week",
+        summaryVisible: false,
         summaryExpanded: false,
         hiddenRows: [],
 
@@ -67,6 +68,7 @@
 
         window.addEventListener("resize", () => {
             this.positionAutocomplete();
+            this.syncResponsiveGridLayout();
         });
     },
 
@@ -82,6 +84,10 @@
 
         if (!this.data.summaryScope) {
             this.data.summaryScope = "week";
+        }
+
+        if (typeof this.data.summaryVisible !== "boolean") {
+            this.data.summaryVisible = false;
         }
 
         if (typeof this.data.summaryExpanded !== "boolean") {
@@ -155,6 +161,88 @@
         })
             .format(date)
             .replace(".", "");
+    },
+
+    getResponsiveGridTemplate(
+        visibleDays = this.getVisibleDays()
+    ) {
+        const columns =
+            (this.data.showTimeColumn ? 1 : 0) +
+            visibleDays.length;
+
+        if (
+            window.innerWidth > 1100 ||
+            columns < 6
+        ) {
+            return `repeat(${columns}, 1fr)`;
+        }
+
+        const isTight =
+            window.innerWidth <= 980;
+        const isPhone =
+            window.innerWidth <= 760;
+        const tracks = [];
+
+        if (this.data.showTimeColumn) {
+            const min =
+                isPhone ? 58 : isTight ? 64 : 70;
+            const fr =
+                isPhone ? 0.8 : isTight ? 0.86 : 0.92;
+            tracks.push(
+                `minmax(${min}px, ${fr}fr)`
+            );
+        }
+
+        visibleDays.forEach((_, index) => {
+            const isFirstDay =
+                !this.data.showTimeColumn &&
+                index === 0;
+            const isLastDay =
+                index === visibleDays.length - 1;
+
+            if (isLastDay) {
+                const min =
+                    isPhone ? 52 : isTight ? 58 : 62;
+                const fr =
+                    isPhone ? 0.7 : isTight ? 0.76 : 0.82;
+                tracks.push(
+                    `minmax(${min}px, ${fr}fr)`
+                );
+                return;
+            }
+
+            if (isFirstDay) {
+                const min =
+                    isPhone ? 58 : isTight ? 62 : 66;
+                const fr =
+                    isPhone ? 0.82 : isTight ? 0.88 : 0.92;
+                tracks.push(
+                    `minmax(${min}px, ${fr}fr)`
+                );
+                return;
+            }
+
+            const min =
+                isPhone ? 62 : isTight ? 68 : 72;
+            tracks.push(`minmax(${min}px, 1fr)`);
+        });
+
+        return tracks.join(" ");
+    },
+
+    syncResponsiveGridLayout(visibleDays = null) {
+        const grid =
+            document.getElementById("qtsGrid");
+
+        if (!grid) {
+            return;
+        }
+
+        grid.style.gridTemplateColumns =
+            this.getResponsiveGridTemplate(
+                visibleDays ||
+                this.getVisibleDays()
+            );
     },
 
     getWeekContext(date = new Date()) {
@@ -981,6 +1069,14 @@
             return;
         }
 
+        if (!this.data.summaryVisible) {
+            container.hidden = true;
+            container.innerHTML = "";
+            return;
+        }
+
+        container.hidden = false;
+
         const summary =
             this.getPlannedSubjectSummary(
                 this.data.summaryScope || "week",
@@ -1255,22 +1351,6 @@
             document.getElementById("qtsModule");
         const viewedDate =
             this.getViewDate();
-        const currentWeek =
-            this.getWeekContext(new Date());
-        const previousWeek =
-            this.getWeekContext(
-                new Date(
-                    this.getWeekStart(new Date())
-                        .getTime() - (7 * 24 * 60 * 60 * 1000)
-                )
-            );
-        const nextWeek =
-            this.getWeekContext(
-                new Date(
-                    this.getWeekStart(new Date())
-                        .getTime() + (7 * 24 * 60 * 60 * 1000)
-                )
-            );
         const weekOffset =
             this.getWeekOffsetFromCurrent(viewedDate);
         const readOnly =
@@ -1281,25 +1361,9 @@
         container.innerHTML = `
             <div class="qts-stage-shell">
                 <div class="qts-stage-main">
-                    <div class="qts-week-rail">
-                        <button type="button" class="qts-week-context qts-week-context-nav${weekOffset === -1 ? " is-active" : ""}" data-week-nav="-1">
-                            <span class="qts-week-kicker">Semana anterior</span>
-                            <strong>${previousWeek.rangeLabel}</strong>
-                            <span>${previousWeek.monthLabel}</span>
-                        </button>
-                        <button type="button" class="qts-week-context${weekOffset === 0 ? " is-active" : ""}" data-week-nav="0">
-                            <span class="qts-week-kicker">Semana atual</span>
-                            <strong>${currentWeek.rangeLabel}</strong>
-                            <span>${currentWeek.monthLabel}</span>
-                        </button>
-                        <button type="button" class="qts-week-context qts-week-context-nav qts-week-context-future${weekOffset === 1 ? " is-active" : ""}" data-week-nav="1">
-                            <span class="qts-week-kicker">Proxima semana</span>
-                            <strong>${nextWeek.rangeLabel}</strong>
-                            <span>${nextWeek.monthLabel}</span>
-                        </button>
-                    </div>
-
-                    <div class="qts-templates">
+                    <div class="qts-template-strip">
+                        <div class="qts-template-label" aria-hidden="true">Metodo pomodoro</div>
+                        <div class="qts-templates">
                             <button type="button" ${readOnly ? "disabled" : ""} aria-pressed="${this.data.activeTemplate === "pomo25"}" class="${this.data.activeTemplate === "pomo25" ? "is-active" : ""}" data-template="pomo25">25/5</button>
                             <button type="button" ${readOnly ? "disabled" : ""} aria-pressed="${this.data.activeTemplate === "deep50"}" class="${this.data.activeTemplate === "deep50" ? "is-active" : ""}" data-template="deep50">50/15</button>
                             <button type="button" ${readOnly ? "disabled" : ""} aria-pressed="${this.data.activeTemplate === "flow52"}" class="${this.data.activeTemplate === "flow52" ? "is-active" : ""}" data-template="flow52">52/17</button>
@@ -1308,33 +1372,11 @@
                             <button type="button" ${readOnly ? "disabled" : ""} aria-pressed="${this.data.activeTemplate === "progressivo"}" class="${this.data.activeTemplate === "progressivo" ? "is-active" : ""}" data-template="progressivo">Progressivo</button>
                             <button type="button" ${readOnly ? "disabled" : ""} aria-pressed="${this.data.activeTemplate === "manual"}" class="${this.data.activeTemplate === "manual" ? "is-active" : ""}" data-template="manual">Manual</button>
                         </div>
-
-                    <div class="qts-toggle-bar">
-                        <label class="qts-toggle">
-                            <input type="checkbox" id="toggleTimeCol"
-                            ${this.data.showTimeColumn ? "checked" : ""}
-                            ${readOnly ? "disabled" : ""}>
-                            HORARIO
-                        </label>
-                        <label class="qts-toggle">
-                            <input type="checkbox" id="toggleSunday"
-                             ${this.data.showSunday ? "checked" : ""}
-                             ${readOnly ? "disabled" : ""}>
-                            Domingo
-                        </label>
-
-                        <label class="qts-toggle">
-                            <input type="checkbox" id="toggleSaturday"
-                            ${this.data.showSaturday ? "checked" : ""}
-                            ${readOnly ? "disabled" : ""}>
-                            Sabado
-                        </label>
                     </div>
 
                     <h2 class="qts-title">Quadro semanal</h2>
 
                     <div class="qts-grid-shell${readOnly ? " is-readonly" : ""}${futureWeek ? " is-future-week" : ""}">
-                        ${readOnly ? '<div class="qts-week-overlay qts-week-overlay-readonly">Semana anterior · somente visualizacao</div>' : ""}
                         ${futureWeek ? '<div class="qts-week-overlay qts-week-overlay-future">PROXIMA SEMANA</div>' : ""}
                         <div id="qtsGrid"></div>
                     </div>
@@ -1359,6 +1401,7 @@
         this.renderDetachedIndexRail();
 
         this.bindControls();
+        this.bindDetachedRailActions();
         this.buildGrid();
         this.renderSubjectSummary();
 
@@ -1376,24 +1419,18 @@
                 };
             });
 
-        document
-            .querySelectorAll("[data-week-nav]")
-            .forEach((button) => {
-                button.onclick = () => {
-                    const offset =
-                        parseInt(
-                            button.dataset.weekNav,
-                            10
-                        ) || 0;
-                    this.openWeekByOffset(offset);
-                };
-            });
     },
     renderDetachedIndexRail() {
         let rail =
             document.getElementById(
                 "qtsDetachedIndex"
             );
+        const weekOffset =
+            this.getWeekOffsetFromCurrent(
+                this.getViewDate()
+            );
+        const readOnly =
+            this.isReadonlyWeekView();
 
         if (!rail) {
             rail = document.createElement("aside");
@@ -1407,14 +1444,83 @@
         }
 
         rail.innerHTML = `
-            <div class="qts-detached-index-item">Semana atual</div>
+            <section class="qts-detached-block is-week" aria-label="Semanas">
+                <div class="qts-detached-block-label">Semanas</div>
+                <div class="qts-detached-week-nav" role="group" aria-label="Alternar semana">
+                    <button type="button" class="qts-detached-week-button${weekOffset === -1 ? " is-active" : ""}" data-week-nav="-1" aria-pressed="${weekOffset === -1}">
+                        Anterior
+                    </button>
+                    <button type="button" class="qts-detached-week-button${weekOffset === 0 ? " is-active" : ""}" data-week-nav="0" aria-pressed="${weekOffset === 0}">
+                        Atual
+                    </button>
+                    <button type="button" class="qts-detached-week-button${weekOffset === 1 ? " is-active" : ""}" data-week-nav="1" aria-pressed="${weekOffset === 1}">
+                        Proxima
+                    </button>
+                </div>
+            </section>
             <div class="qts-detached-index-divider" aria-hidden="true"></div>
-            <div class="qts-detached-index-item">Horario</div>
-            <div class="qts-detached-index-item">Domingo</div>
-            <div class="qts-detached-index-item">Sabado</div>
+            <section class="qts-detached-block is-toggle" aria-label="Dias e horario">
+                <div class="qts-detached-block-label">Dias e horario</div>
+                <div class="qts-detached-toggle-group" role="group" aria-label="Opcoes da tabela">
+                    <label class="qts-detached-toggle">
+                        <input type="checkbox" id="toggleTimeCol"
+                            ${this.data.showTimeColumn ? "checked" : ""}
+                            ${readOnly ? "disabled" : ""}>
+                        <span>Horario</span>
+                    </label>
+                    <label class="qts-detached-toggle">
+                        <input type="checkbox" id="toggleSunday"
+                            ${this.data.showSunday ? "checked" : ""}
+                            ${readOnly ? "disabled" : ""}>
+                        <span>Domingo</span>
+                    </label>
+                    <label class="qts-detached-toggle">
+                        <input type="checkbox" id="toggleSaturday"
+                            ${this.data.showSaturday ? "checked" : ""}
+                            ${readOnly ? "disabled" : ""}>
+                        <span>Sabado</span>
+                    </label>
+                </div>
+            </section>
             <div class="qts-detached-index-divider" aria-hidden="true"></div>
-            <div class="qts-detached-index-item">Planejamento por materia</div>
+            <section class="qts-detached-block is-summary" aria-label="Planejamento">
+                <div class="qts-detached-block-label">Planejamento</div>
+                <button type="button" class="qts-detached-summary-button${this.data.summaryVisible ? " is-active" : ""}" data-summary-toggle aria-pressed="${this.data.summaryVisible}">
+                    Por materia
+                </button>
+            </section>
         `;
+    },
+    bindDetachedRailActions() {
+        document
+            .querySelectorAll("[data-week-nav]")
+            .forEach((button) => {
+                button.onclick = () => {
+                    const offset =
+                        parseInt(
+                            button.dataset.weekNav,
+                            10
+                        ) || 0;
+                    this.openWeekByOffset(offset);
+                };
+            });
+
+        const summaryToggle =
+            document.querySelector(
+                "[data-summary-toggle]"
+            );
+
+        if (summaryToggle) {
+            summaryToggle.onclick = () => {
+                this.commitPendingEdits();
+                this.data.summaryVisible =
+                    !this.data.summaryVisible;
+                this.save();
+                this.renderDetachedIndexRail();
+                this.bindDetachedRailActions();
+                this.renderSubjectSummary();
+            };
+        }
     },
     bindControls() {
         const isReadonly =
@@ -1665,14 +1771,8 @@ document.getElementById("removeIntervalBtn").onclick = () => {
 
         document.querySelectorAll(".qts-now").forEach(el=>el.classList.remove("qts-now"));
 
-        const visibleDays = this.days.filter((d, i) => {
-
-if(i === 0 && !this.data.showSunday) return false
-if(i === 6 && !this.data.showSaturday) return false
-
-return true
-
-})
+        const visibleDays =
+            this.getVisibleDays();
 
 const columns =
     (this.data.showTimeColumn ? 1 : 0)
@@ -1680,7 +1780,9 @@ const columns =
 
         grid.style.display = "grid";
         grid.style.gridTemplateColumns =
-            `repeat(${columns}, 1fr)`;
+            this.getResponsiveGridTemplate(
+                visibleDays
+            );
 
         if (this.data.showTimeColumn)
             grid.appendChild(this.createHeader("HORARIO"));
@@ -2035,6 +2137,91 @@ visibleDays.forEach((day, colIndex) =>
         }
     },
 
+    selectSingleCell(cell) {
+        const coord =
+            this.getCellCoord(cell);
+
+        if (!coord) {
+            return;
+        }
+
+        this.selection.anchor = coord;
+        this.selection.focus = coord;
+        this.applyTableSelection();
+        window.getSelection()
+            ?.removeAllRanges();
+    },
+
+    enterCellEditMode(cell) {
+        if (!cell) {
+            return;
+        }
+
+        cell._qtsEditing = true;
+        cell.focus({ preventScroll: true });
+
+        requestAnimationFrame(() => {
+            this.setCellCaretToEnd(cell);
+        });
+    },
+
+    isPrintableCellKey(e) {
+        return (
+            e.key.length === 1 &&
+            !e.ctrlKey &&
+            !e.metaKey &&
+            !e.altKey
+        );
+    },
+
+    clearSelectedTableCells() {
+        const bounds =
+            this.getSelectionBounds();
+
+        if (!bounds) {
+            return false;
+        }
+
+        let didChange = false;
+
+        for (
+            let row = bounds.rowStart;
+            row <= bounds.rowEnd;
+            row++
+        ) {
+            for (
+                let col = bounds.colStart;
+                col <= bounds.colEnd;
+                col++
+            ) {
+                const cell =
+                    this.getSelectableCellAt(
+                        row,
+                        col
+                    );
+
+                if (!cell) {
+                    continue;
+                }
+
+                if (cell.textContent) {
+                    didChange = true;
+                }
+
+                cell.textContent = "";
+                this.commitEditableCell(
+                    cell,
+                    false
+                );
+            }
+        }
+
+        this.save();
+        this.renderSubjectSummary();
+        this.hideAutocomplete();
+        return didChange;
+    },
+
     wireSelectableCell(cell) {
         cell.classList.add("qts-selectable");
 
@@ -2043,10 +2230,15 @@ visibleDays.forEach((day, colIndex) =>
                 return;
             }
 
+            e.preventDefault();
+            cell._qtsEditing = false;
+
             this.startTableSelection(
                 cell,
                 e.shiftKey
             );
+
+            cell.focus({ preventScroll: true });
         });
 
         cell.addEventListener("pointerenter", (e) => {
@@ -2069,6 +2261,12 @@ visibleDays.forEach((day, colIndex) =>
             }
 
             this.extendTableSelection(cell);
+        });
+
+        cell.addEventListener("dblclick", (e) => {
+            e.preventDefault();
+            this.selectSingleCell(cell);
+            this.enterCellEditMode(cell);
         });
     },
 
@@ -2158,6 +2356,8 @@ visibleDays.forEach((day, colIndex) =>
         const nativeSelection =
             window.getSelection()
                 ?.toString() || "";
+        const hasTableSelection =
+            !!this.getSelectionBounds();
         const direction = {
             ArrowRight: "right",
             ArrowLeft: "left",
@@ -2168,7 +2368,7 @@ visibleDays.forEach((day, colIndex) =>
         if (
             (e.ctrlKey || e.metaKey) &&
             e.key.toLowerCase() === "c" &&
-            this.getSelectionBounds() &&
+            hasTableSelection &&
             !nativeSelection
         ) {
             e.preventDefault();
@@ -2178,10 +2378,23 @@ visibleDays.forEach((day, colIndex) =>
 
         if (
             e.key === "Escape" &&
-            this.getSelectionBounds()
+            hasTableSelection
         ) {
             e.preventDefault();
             this.clearTableSelection();
+            return true;
+        }
+
+        if (
+            (e.key === "Delete" ||
+                e.key === "Backspace") &&
+            hasTableSelection &&
+            !nativeSelection &&
+            !cell?._qtsEditing
+        ) {
+            e.preventDefault();
+            this.clearSelectedTableCells();
+            this.selectSingleCell(cell);
             return true;
         }
 
@@ -2459,10 +2672,7 @@ visibleDays.forEach((day, colIndex) =>
             return true;
         }
 
-        if (
-            e.key === "Tab" ||
-            e.key === "Enter"
-        ) {
+        if (e.key === "Enter") {
             const value =
                 this.autocomplete.items[
                     this.autocomplete.highlightIndex
@@ -2641,7 +2851,10 @@ visibleDays.forEach((day, colIndex) =>
             return cell;
         }
 
-        cell.textContent = text;
+        cell.classList.add("qts-header-single");
+        cell.innerHTML = `
+            <span class="qts-header-label">${text}</span>
+        `;
         return cell;
     },
 
@@ -2893,13 +3106,14 @@ e.stopPropagation()
             this.isReadonlyWeekView();
             this.wireSelectableCell(cell);
             cell.addEventListener("pointerdown", () => {
-                cell._pointerFocus = true;
-            });
-            cell.addEventListener("focus", () => {
-                if (cell._pointerFocus) {
-                    cell._pointerFocus = false;
-                    return;
-                }
+            cell._pointerFocus = true;
+        });
+        cell.addEventListener("focus", () => {
+            this.hideAutocomplete();
+            if (cell._pointerFocus) {
+                cell._pointerFocus = false;
+                return;
+            }
 
                 cell._leftOnce = false
 
@@ -3099,22 +3313,16 @@ this.renderSubjectSummary()
                 cell._pointerFocus = true;
             });
             cell.addEventListener("focus", () => {
-                if (cell._pointerFocus) {
-                    cell._pointerFocus = false;
+                this.hideAutocomplete();
+                cell._pointerFocus = false;
+                cell._leftOnce = false;
+
+                if (cell._qtsEditing) {
                     return;
                 }
 
-                cell._leftOnce = false
-
-const range = document.createRange()
-range.selectNodeContents(cell)
-range.collapse(false)
-
-const sel = window.getSelection()
-sel.removeAllRanges()
-sel.addRange(range)
-
-})
+                this.selectSingleCell(cell);
+            })
 
         cell.contentEditable = !readOnly;
 
@@ -3127,6 +3335,16 @@ sel.addRange(range)
     if(matrix.length > 1 || matrix[0]?.length > 1){
         this.handleCellPaste(cell, text);
         return;
+    }
+
+    if(!cell._qtsEditing){
+        this.clearSelectedTableCells()
+        this.selectSingleCell(cell)
+        cell.textContent = text
+        cell._qtsEditing = true
+        this.updateAutocomplete(cell)
+        this.setCellCaretToEnd(cell)
+        return
     }
 
     document.execCommand("insertText", false, text);
@@ -3149,15 +3367,44 @@ cell.addEventListener("keydown",(e)=>{
 if(this.handleAutocompleteHotkey(e, cell)) return
 if(this.handleSelectionHotkey(e, cell)) return
 
+if(
+    !cell._qtsEditing &&
+    this.isPrintableCellKey(e)
+){
+e.preventDefault()
+this.clearSelectedTableCells()
+this.selectSingleCell(cell)
+cell.textContent = e.key
+cell._qtsEditing = true
+this.updateAutocomplete(cell)
+this.setCellCaretToEnd(cell)
+return
+}
+
+if(e.key==="Tab"){
+e.preventDefault()
+cell._qtsEditing = false
+this.commitEditableCell(cell, false)
+this.hideAutocomplete()
+this.navigateCell(
+    parseInt(cell.dataset.row, 10),
+    parseInt(cell.dataset.col, 10),
+    e.shiftKey ? "left" : "right"
+)
+return
+}
+
 // ENTER = salva (blur)
 if(e.key==="Enter" && !e.shiftKey){
 e.preventDefault()
+cell._qtsEditing = false
 cell.blur()
 return
 }
 
 // SHIFT+ENTER = quebra de linha
 if(e.key==="Enter" && e.shiftKey){
+e.preventDefault()
 return
 }
 
@@ -3189,6 +3436,11 @@ const c = parseInt(cell.dataset.col)
 
 // DIREITA
 if(e.key==="ArrowRight"){
+if(!cell._qtsEditing){
+e.preventDefault()
+this.navigateCell(r, c, "right")
+return
+}
 if(!atEnd) return
 e.preventDefault()
 this.navigateCell(r, c, "right")
@@ -3196,6 +3448,11 @@ this.navigateCell(r, c, "right")
 
 // ESQUERDA
 if(e.key==="ArrowLeft"){
+if(!cell._qtsEditing){
+e.preventDefault()
+this.navigateCell(r, c, "left")
+return
+}
 if(!atStart) return
 e.preventDefault()
 this.navigateCell(r, c, "left")
@@ -3204,12 +3461,14 @@ this.navigateCell(r, c, "left")
 // BAIXO
 if(e.key==="ArrowDown"){
 e.preventDefault()
+cell._qtsEditing = false
 this.navigateCell(r, c, "down")
 }
 
 // CIMA
 if(e.key==="ArrowUp"){
 e.preventDefault()
+cell._qtsEditing = false
 this.navigateCell(r, c, "up")
 }
 })
@@ -3220,6 +3479,7 @@ this.navigateCell(r, c, "up")
 
         cell.onblur = () => {
             if(readOnly) return;
+            cell._qtsEditing = false;
             this.commitEditableCell(cell, false);
             this.save();
             this.renderSubjectSummary();

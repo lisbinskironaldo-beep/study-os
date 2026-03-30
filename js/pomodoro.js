@@ -183,7 +183,20 @@ const Pomodoro = {
         const container = document.getElementById("pomodoroPresets");
         if (!container) return;
 
-        container.innerHTML = "";
+        container.innerHTML = `
+            <div class="pomodoro-presets-heading">
+                <h2 class="pomodoro-presets-title">
+                    <span>Metodos de estudo</span>
+                    <em>Pomodoro</em>
+                </h2>
+            </div>
+            <div class="pomodoro-presets-grid"></div>
+        `;
+
+        const grid =
+            container.querySelector(".pomodoro-presets-grid");
+
+        if (!grid) return;
 
         Object.keys(this.presets).forEach((key) => {
             const preset = this.presets[key];
@@ -199,6 +212,8 @@ const Pomodoro = {
 
             if (this.syncEnabled) {
                 chip.classList.add("is-disabled");
+            } else {
+                chip.classList.add("is-clickable");
             }
 
             chip.onclick = () => {
@@ -215,7 +230,7 @@ const Pomodoro = {
                 this.renderPresets();
             };
 
-            container.appendChild(chip);
+            grid.appendChild(chip);
         });
     },
 
@@ -251,6 +266,12 @@ const Pomodoro = {
 
         if (this.currentPreset !== "progressivo") return;
 
+        const rail = document.createElement("div");
+        rail.className = "progressive-rail";
+
+        const bars = document.createElement("div");
+        bars.className = "cycle-progress";
+
         this.progressiveLevels.forEach((level, index) => {
             const bar = document.createElement("div");
             bar.className = "progressive-bar";
@@ -270,8 +291,31 @@ const Pomodoro = {
             }
 
             bar.title = `${Math.round(level.study / 60)}/${Math.round(level.break / 60)}`;
-            container.appendChild(bar);
+            bars.appendChild(bar);
         });
+
+        if (this.progressiveIndex > 0) {
+            const backBtn = document.createElement("button");
+            backBtn.type = "button";
+            backBtn.className = "progressive-back-btn";
+            backBtn.textContent = "Voltar";
+            backBtn.disabled = this.syncEnabled;
+            backBtn.onclick = () => {
+                if (this.syncEnabled) return;
+                this.progressiveIndex = Math.max(0, this.progressiveIndex - 1);
+                this.mode = "study";
+                this.remaining = this.progressiveLevels[this.progressiveIndex].study;
+                this.currentStudySessionSeconds = null;
+                this.pause();
+                this.updateDisplay();
+                this.renderPresets();
+                this.renderTodayFlow();
+            };
+            rail.appendChild(backBtn);
+        }
+
+        rail.appendChild(bars);
+        container.appendChild(rail);
     },
 
     updateCycleProgress() {
@@ -1082,8 +1126,17 @@ const Pomodoro = {
             ) || null;
 
         if (this.syncEnabled) {
+            const linkedPendingItem =
+                pendingItems.find((item) =>
+                    item.id === this.linkedTodayBlockId
+                ) || null;
+
             current =
-                liveItem || null;
+                liveItem ||
+                linkedPendingItem ||
+                upcomingItem ||
+                pendingItems[0] ||
+                null;
         } else if (!current || nowMinutes >= current.resetMinutes) {
             current = liveItem || upcomingItem || pendingItems[0] || null;
         }
@@ -1243,13 +1296,18 @@ const Pomodoro = {
     syncTodayFlowToPlan(options = {}) {
         const state =
             this.getTodayFlowState(new Date());
+        const targetBlock =
+            state.current ||
+            state.nextItem ||
+            state.pendingItems?.[0] ||
+            null;
 
-        if (!state.current) {
+        if (!targetBlock) {
             this.detachLinkedSchedule();
             return;
         }
 
-        this.attachTodayBlock(state.current, {
+        this.attachTodayBlock(targetBlock, {
             snapToCalendar: true,
             persistSelection: true
         });
@@ -1402,7 +1460,7 @@ const Pomodoro = {
                         <div class="today-flow-status">${status.title}</div>
                         <div class="today-flow-detail">${status.detail}</div>
                         <div class="today-flow-actions">
-                            <button id="todayFlowSyncBtn" class="today-flow-btn is-primary" type="button"${currentBlock ? "" : " disabled"}>Sincronizar agora</button>
+                            <button id="todayFlowSyncBtn" class="today-flow-btn is-primary" type="button"${currentBlock ? "" : " disabled"}>${this.syncEnabled ? "Sincronizado" : "Sincronizar com tabela"}</button>
                             <button id="todayFlowDoneBtn" class="today-flow-btn" type="button"${currentBlock ? "" : " disabled"}>Concluir bloco</button>
                             <button id="todayFlowOpenQtsBtn" class="today-flow-btn" type="button">Abrir quadro</button>
                         </div>
@@ -1616,7 +1674,7 @@ const Pomodoro = {
             <div class="today-flow-shell ${shellState}${isCollapsed ? " is-collapsed" : ""}">
                 <div class="today-flow-center">
                     <button id="todayFlowSyncBtn" class="today-flow-btn is-primary${this.syncEnabled ? " is-on" : ""}" type="button" aria-pressed="${this.syncEnabled ? "true" : "false"}"${referenceBlock ? "" : " disabled"}>
-                        Sincronizar com tabela
+                        ${this.syncEnabled ? "Sincronizado" : "Sincronizar com tabela"}
                     </button>
                     ${isCollapsed ? "" : `
                         <div class="today-flow-mode-wrap">

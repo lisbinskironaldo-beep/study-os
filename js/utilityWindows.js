@@ -29,7 +29,8 @@ const UtilityWindows = {
             title: "Calculadora",
             open: false,
             expression: "0",
-            justEvaluated: false
+            justEvaluated: false,
+            scientific: false
         }
     },
 
@@ -185,7 +186,24 @@ const UtilityWindows = {
     </div>
   </div>
   <div class="utility-window-body">
+    <div class="utility-calc-toolbar">
+      <button class="utility-calc-mode-toggle" data-calc-action="toggle-scientific" type="button" aria-pressed="false">
+        Cientifica
+      </button>
+    </div>
     <div id="utilityCalculatorDisplay" class="utility-calc-display">0</div>
+    <div class="utility-calc-science-grid" data-calc-science-grid hidden>
+      <button data-calc-value="pi" type="button">pi</button>
+      <button data-calc-value="e" type="button">e</button>
+      <button data-calc-value="^" type="button">x^y</button>
+      <button data-calc-value="^2" type="button">x^2</button>
+      <button data-calc-value="sqrt(" type="button">sqrt</button>
+      <button data-calc-value="sin(" type="button">sin</button>
+      <button data-calc-value="cos(" type="button">cos</button>
+      <button data-calc-value="tan(" type="button">tan</button>
+      <button data-calc-value="log(" type="button">log</button>
+      <button data-calc-value="ln(" type="button">ln</button>
+    </div>
     <div class="utility-calc-grid">
       <button data-calc-action="clear" type="button">C</button>
       <button data-calc-action="delete" type="button">DEL</button>
@@ -634,7 +652,7 @@ const UtilityWindows = {
         const tool = this.tools.calculator;
         if (!tool) return;
 
-        const operators = /[+\-*/]/;
+        const operators = /^[+\-*/^]/;
         const isOperator = operators.test(value);
 
         if (tool.justEvaluated && !isOperator) {
@@ -675,6 +693,13 @@ const UtilityWindows = {
             tool.justEvaluated = false;
         }
 
+        if (action === "toggle-scientific") {
+            tool.scientific = !tool.scientific;
+            this.updateCalculatorView();
+            this.constrainPanel("calculator");
+            return;
+        }
+
         if (action === "equals") {
             this.evaluateCalculator();
             return;
@@ -685,14 +710,31 @@ const UtilityWindows = {
 
     evaluateCalculator() {
         const tool = this.tools.calculator;
-        const expression = tool.expression.replace(/x/g, "*");
+        const normalizedExpression = String(tool.expression || "")
+            .replace(/π/g, "pi")
+            .replace(/\s+/g, "")
+            .replace(/÷/g, "/")
+            .replace(/×/g, "*");
+        const tokenPattern = /(sqrt|sin|cos|tan|log|ln|pi|e|\d+(?:\.\d+)?|[+\-*/^()])/g;
+        const matchedTokens = normalizedExpression.match(tokenPattern) || [];
 
-        if (!/^[0-9+\-*/().\s]+$/.test(expression)) {
+        if (!normalizedExpression || matchedTokens.join("") !== normalizedExpression) {
             tool.expression = "Erro";
             tool.justEvaluated = true;
             this.updateCalculatorView();
             return;
         }
+
+        const expression = normalizedExpression
+            .replace(/\^/g, "**")
+            .replace(/\bpi\b/g, "Math.PI")
+            .replace(/\be\b/g, "Math.E")
+            .replace(/\bsqrt\(/g, "Math.sqrt(")
+            .replace(/\bsin\(/g, "Math.sin(")
+            .replace(/\bcos\(/g, "Math.cos(")
+            .replace(/\btan\(/g, "Math.tan(")
+            .replace(/\blog\(/g, "Math.log10(")
+            .replace(/\bln\(/g, "Math.log(");
 
         try {
             const result = Function(`"use strict"; return (${expression})`)();
@@ -708,8 +750,24 @@ const UtilityWindows = {
 
     updateCalculatorView() {
         const display = document.getElementById("utilityCalculatorDisplay");
+        const panel = this.getPanel("calculator");
+        const modeToggle = panel?.querySelector(".utility-calc-mode-toggle");
+        const scienceGrid = panel?.querySelector("[data-calc-science-grid]");
         if (!display) return;
 
         display.textContent = this.tools.calculator.expression;
+
+        if (panel) {
+            panel.classList.toggle("is-scientific", Boolean(this.tools.calculator.scientific));
+        }
+
+        if (modeToggle) {
+            modeToggle.textContent = this.tools.calculator.scientific ? "Basica" : "Cientifica";
+            modeToggle.setAttribute("aria-pressed", this.tools.calculator.scientific ? "true" : "false");
+        }
+
+        if (scienceGrid) {
+            scienceGrid.hidden = !this.tools.calculator.scientific;
+        }
     }
 };

@@ -2847,6 +2847,9 @@ window.QuestionsUI = {
         return `
             <aside class="questions-hub-sidebar" aria-label="Tipos de estatistica">
                 <div class="questions-hub-sidebar-head">
+                    <button class="questions-hub-sidebar-back" type="button" data-launcher-back="true">
+                        Voltar
+                    </button>
                     <span class="questions-hub-sidebar-kicker">Estatisticas</span>
                 </div>
                 ${items.map((item) => `
@@ -4220,8 +4223,8 @@ window.QuestionsUI = {
                         <div class="questions-smart-step">1/3</div>
                     </div>
 
-                    <div class="questions-entry-actions">
-                        <button class="questions-secondary-btn" type="button" data-launcher-back="true">Voltar</button>
+                    <div class="questions-entry-actions questions-smart-entry-actions">
+                        <button class="questions-secondary-btn questions-smart-back-btn" type="button" data-launcher-back="true">Voltar</button>
                     </div>
                 </div>
 
@@ -4355,8 +4358,8 @@ window.QuestionsUI = {
                         <div class="questions-smart-step">2/3</div>
                     </div>
 
-                    <div class="questions-entry-actions">
-                        <button class="questions-secondary-btn" type="button" data-launcher-back="true">Voltar</button>
+                    <div class="questions-entry-actions questions-smart-entry-actions">
+                        <button class="questions-secondary-btn questions-smart-back-btn" type="button" data-launcher-back="true">Voltar</button>
                     </div>
                 </div>
 
@@ -4474,8 +4477,8 @@ window.QuestionsUI = {
                         <h2>Selecionar quantidade</h2>
                     </div>
 
-                    <div class="questions-entry-actions">
-                        <button class="questions-secondary-btn questions-review-btn" type="button" data-launcher-back="true">Voltar</button>
+                    <div class="questions-entry-actions questions-smart-entry-actions">
+                        <button class="questions-secondary-btn questions-review-btn questions-smart-back-btn" type="button" data-launcher-back="true">Voltar</button>
                     </div>
                 </div>
 
@@ -4555,8 +4558,8 @@ window.QuestionsUI = {
                         <h2>Selecionar quantidade</h2>
                     </div>
 
-                    <div class="questions-entry-actions">
-                        <button class="questions-secondary-btn questions-review-btn" type="button" data-launcher-back="true">Voltar</button>
+                    <div class="questions-entry-actions questions-smart-entry-actions">
+                        <button class="questions-secondary-btn questions-review-btn questions-smart-back-btn" type="button" data-launcher-back="true">Voltar</button>
                     </div>
                 </div>
 
@@ -5140,7 +5143,7 @@ window.QuestionsUI = {
             <section class="questions-session-info-panel">
                 <div class="questions-session-info-head">
                     <div class="questions-panel-label">Informacoes da questao</div>
-                    <button id="questionsInfoBackBtn" class="questions-secondary-btn" type="button">Voltar</button>
+                    <button id="questionsInfoBackBtn" class="questions-secondary-btn questions-session-info-back-btn" type="button">Voltar</button>
                 </div>
                 <div class="questions-session-info-grid">
                     <div>
