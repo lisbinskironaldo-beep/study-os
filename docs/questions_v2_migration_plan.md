@@ -3,7 +3,7 @@
 Documento interno de execucao.
 Nao deve aparecer na interface do produto.
 
-Atualizado em 2026-03-27.
+Atualizado em 2026-03-28.
 
 ---
 
@@ -76,6 +76,11 @@ Entregas esperadas:
 - indice navegavel sem abrir questoes completas
 - banco pronto para lazy loading
 
+Observacao de andamento:
+
+- o manifesto agora tambem carrega um indice leve `questionId -> topicId`
+- a resolucao por ids passa a conseguir inferir o topico necessario mesmo sem `routeSnapshot.context.topicos`
+
 ### Fase 3. Persistencia nova
 
 Objetivo:
@@ -129,6 +134,12 @@ Observacao de andamento:
 - `questions.js` passa a delegar esses fluxos com fallback legado
 - mutacoes principais de rota e launcher inteligente tambem ja contam com camada de aplicacao dedicada
 - sincronizacao de contexto e resolucao leve por ids tambem ja contam com camada dedicada
+- o bootstrap local do modulo ja pode subir com manifesto sem carregar o banco inteiro no primeiro frame
+- o carregamento detalhado do catalogo agora entra sob demanda antes de iniciar sessao, retomar run ou abrir bloco salvo
+- a validacao local no navegador confirmou `launcher` operando com manifesto e sessao iniciando depois do carregamento detalhado
+- o repositorio de conteudo agora tambem consegue carregar apenas os topicos da rota antes da sessao
+- a validacao local no navegador confirmou boot com `0` topicos carregados e sessao entrando com apenas `1` topico em memoria no recorte validado
+- `resume` e `saved` tambem passaram a reconstruir sessoes por ids carregando apenas o topico necessario no recorte validado
 
 ### Fase 5. Worker de processamento
 
@@ -145,6 +156,12 @@ Checklist:
 Entregas esperadas:
 - UI responsiva com banco maior
 - selecao de sessao desacoplada da renderizacao
+
+Observacao de andamento:
+
+- a bateria local de estabilidade validou `specific`, `smart`, `pause`, `resume`, `restart`, `saved` e `follow-up` no navegador
+- no caminho feliz validado, o modulo continuou operando com carga parcial do catalogo e sem reabrir o banco completo
+- os cenarios degradados criticos de `resume` e `saved` tambem seguiram funcionando via snapshot de compatibilidade
 
 ### Fase 6. Migracao de UI
 
@@ -173,6 +190,12 @@ Observacao de andamento:
 - seletores e formatadores principais do launcher tambem ja contam com camada dedicada
 - a sincronizacao de contexto tambem ja comeca a sair de `questions.js`
 - `home`, `smart_start`, `smart_subjects` e `smart` agora ja contam com view models dedicados para leitura de estado
+- series, materias e topicos do launcher agora ja preferem o manifesto mesmo sem catalogo detalhado em memoria
+- o launcher continua lendo topicos pelo manifesto mesmo depois de uma sessao carregar apenas um subconjunto do catalogo detalhado
+- `resume` e `saved` agora tambem exibem mensagens mais precisas para ids ausentes, snapshot de compatibilidade e registros degradados
+- os cenarios degradados seguem com fallback seguro para o catalogo completo quando o indice leve nao consegue localizar um `questionId`
+- o fallback legado de `resume`, `restart` e `saved` comecou a sair de `questions.js` para um modulo dedicado, sem cortar a ultima compatibilidade inline
+- fallback legado de sessao e guardados tambem passou a contar com modulos dedicados, deixando `questions.js` mais focado em orquestracao
 
 ### Fase 7. Desligamento do legado
 

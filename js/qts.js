@@ -23,6 +23,7 @@
         showSaturday: true,
         activeTemplate: "manual",
         summaryScope: "week",
+        summaryExpanded: false,
         hiddenRows: [],
 
         structure: [],
@@ -81,6 +82,10 @@
 
         if (!this.data.summaryScope) {
             this.data.summaryScope = "week";
+        }
+
+        if (typeof this.data.summaryExpanded !== "boolean") {
+            this.data.summaryExpanded = false;
         }
 
         if (!Array.isArray(this.data.hiddenRows)) {
@@ -998,15 +1003,9 @@
                             <strong>Sem materias distribuidas ainda.</strong>
                         </div>
                     </div>
-                    <div class="qts-summary-scopes">
-                        <button type="button" class="qts-summary-scope${scope === "week" ? " is-active" : ""}" data-scope="week">Semana</button>
-                        <button type="button" class="qts-summary-scope${scope === "month" ? " is-active" : ""}" data-scope="month">Mes</button>
-                        <button type="button" class="qts-summary-scope${scope === "year" ? " is-active" : ""}" data-scope="year">Ano</button>
-                    </div>
                     <p>Preencha os blocos da semana e o quadro mostra onde o seu tempo programado esta concentrado.</p>
                 </div>
             `;
-            this.bindSummaryScopeControls();
             return;
         }
 
@@ -1014,52 +1013,55 @@
             summary.reduce((acc, item) => acc + item.minutes, 0);
         const maxMinutes =
             summary[0]?.minutes || 1;
+        const expanded =
+            this.data.summaryExpanded === true;
 
         container.innerHTML = `
-            <div class="qts-summary-card">
-                <div class="qts-summary-head">
-                    <div>
+            <div class="qts-summary-card${expanded ? " is-expanded" : ""}">
+                <button type="button" class="qts-summary-toggle" aria-expanded="${expanded ? "true" : "false"}">
+                    <span class="qts-summary-toggle-copy">
                         <span class="qts-summary-kicker">Planejado por materia</span>
                         <strong>${summary.length} materias em ${scopeMeta}</strong>
+                    </span>
+                    <span class="qts-summary-total">${this.formatLoad(totalMinutes)}</span>
+                </button>
+                <div class="qts-summary-body"${expanded ? "" : " hidden"}>
+                    <div class="qts-summary-head">
+                    <div>
+                        <span class="qts-summary-kicker">Distribuicao atual</span>
+                        <strong>${summary.length} materias em ${scopeMeta}</strong>
                     </div>
-                    <div class="qts-summary-total">${this.formatLoad(totalMinutes)}</div>
-                </div>
-                <div class="qts-summary-scopes">
-                    <button type="button" class="qts-summary-scope${scope === "week" ? " is-active" : ""}" data-scope="week">Semana</button>
-                    <button type="button" class="qts-summary-scope${scope === "month" ? " is-active" : ""}" data-scope="month">Mes</button>
-                    <button type="button" class="qts-summary-scope${scope === "year" ? " is-active" : ""}" data-scope="year">Ano</button>
-                </div>
-                <div class="qts-summary-list">
-                    ${summary.map((item) => `
-                        <div class="qts-summary-item">
-                            <div class="qts-summary-copy">
-                                <strong>${item.label}</strong>
-                                <span>${item.blocks} bloco${item.blocks > 1 ? "s" : ""}</span>
+                        <div class="qts-summary-total">${this.formatLoad(totalMinutes)}</div>
+                    </div>
+                    <div class="qts-summary-list">
+                        ${summary.map((item) => `
+                            <div class="qts-summary-item">
+                                <div class="qts-summary-copy">
+                                    <strong>${item.label}</strong>
+                                    <span>${item.blocks} bloco${item.blocks > 1 ? "s" : ""}</span>
+                                </div>
+                                <div class="qts-summary-bar">
+                                    <div class="qts-summary-fill" style="width:${Math.max((item.minutes / maxMinutes) * 100, 8)}%"></div>
+                                </div>
+                                <div class="qts-summary-time">${this.formatLoad(item.minutes)}</div>
                             </div>
-                            <div class="qts-summary-bar">
-                                <div class="qts-summary-fill" style="width:${Math.max((item.minutes / maxMinutes) * 100, 8)}%"></div>
-                            </div>
-                            <div class="qts-summary-time">${this.formatLoad(item.minutes)}</div>
-                        </div>
-                    `).join("")}
+                        `).join("")}
+                    </div>
                 </div>
             </div>
         `;
 
-        this.bindSummaryScopeControls();
-    },
+        const toggle =
+            container.querySelector(".qts-summary-toggle");
 
-    bindSummaryScopeControls() {
-        document
-            .querySelectorAll(".qts-summary-scope")
-            .forEach((button) => {
-                button.onclick = () => {
-                    this.data.summaryScope =
-                        button.dataset.scope || "week";
-                    this.save();
-                    this.renderSubjectSummary();
-                };
-            });
+        if (toggle) {
+            toggle.onclick = () => {
+                this.data.summaryExpanded =
+                    !this.data.summaryExpanded;
+                this.save();
+                this.renderSubjectSummary();
+            };
+        }
     },
 
     getRowSnapshots() {
@@ -1277,79 +1279,84 @@
             this.isFutureWeekView();
 
         container.innerHTML = `
-            <div class="qts-week-rail">
-                <button type="button" class="qts-week-context qts-week-context-nav${weekOffset === -1 ? " is-active" : ""}" data-week-nav="-1">
-                    <span class="qts-week-kicker">Visualizar semana anterior</span>
-                    <strong>${previousWeek.rangeLabel}</strong>
-                    <span>${previousWeek.monthLabel}</span>
-                </button>
-                <button type="button" class="qts-week-context${weekOffset === 0 ? " is-active" : ""}" data-week-nav="0">
-                    <span class="qts-week-kicker">Semana atual</span>
-                    <strong>${currentWeek.rangeLabel}</strong>
-                    <span>${currentWeek.monthLabel}</span>
-                </button>
-                <button type="button" class="qts-week-context qts-week-context-nav qts-week-context-future${weekOffset === 1 ? " is-active" : ""}" data-week-nav="1">
-                    <span class="qts-week-kicker">Planejar proxima semana</span>
-                    <strong>${nextWeek.rangeLabel}</strong>
-                    <span>${nextWeek.monthLabel}</span>
-                </button>
-            </div>
-            <h2 style="text-align:center;margin-bottom:20px;">
-                Quadro Horario
-            </h2>
+            <div class="qts-stage-shell">
+                <div class="qts-stage-main">
+                    <div class="qts-week-rail">
+                        <button type="button" class="qts-week-context qts-week-context-nav${weekOffset === -1 ? " is-active" : ""}" data-week-nav="-1">
+                            <span class="qts-week-kicker">Semana anterior</span>
+                            <strong>${previousWeek.rangeLabel}</strong>
+                            <span>${previousWeek.monthLabel}</span>
+                        </button>
+                        <button type="button" class="qts-week-context${weekOffset === 0 ? " is-active" : ""}" data-week-nav="0">
+                            <span class="qts-week-kicker">Semana atual</span>
+                            <strong>${currentWeek.rangeLabel}</strong>
+                            <span>${currentWeek.monthLabel}</span>
+                        </button>
+                        <button type="button" class="qts-week-context qts-week-context-nav qts-week-context-future${weekOffset === 1 ? " is-active" : ""}" data-week-nav="1">
+                            <span class="qts-week-kicker">Proxima semana</span>
+                            <strong>${nextWeek.rangeLabel}</strong>
+                            <span>${nextWeek.monthLabel}</span>
+                        </button>
+                    </div>
 
-            <div class="qts-templates">
-                    <button type="button" ${readOnly ? "disabled" : ""} aria-pressed="${this.data.activeTemplate === "pomo25"}" class="${this.data.activeTemplate === "pomo25" ? "is-active" : ""}" data-template="pomo25">25/5</button>
-                    <button type="button" ${readOnly ? "disabled" : ""} aria-pressed="${this.data.activeTemplate === "deep50"}" class="${this.data.activeTemplate === "deep50" ? "is-active" : ""}" data-template="deep50">50/15</button>
-                    <button type="button" ${readOnly ? "disabled" : ""} aria-pressed="${this.data.activeTemplate === "flow52"}" class="${this.data.activeTemplate === "flow52" ? "is-active" : ""}" data-template="flow52">52/17</button>
-                    <button type="button" ${readOnly ? "disabled" : ""} aria-pressed="${this.data.activeTemplate === "ultra90"}" class="${this.data.activeTemplate === "ultra90" ? "is-active" : ""}" data-template="ultra90">90/30</button>
-                    <button type="button" ${readOnly ? "disabled" : ""} aria-pressed="${this.data.activeTemplate === "sprint15"}" class="${this.data.activeTemplate === "sprint15" ? "is-active" : ""}" data-template="sprint15">15/5</button>
-                    <button type="button" ${readOnly ? "disabled" : ""} aria-pressed="${this.data.activeTemplate === "progressivo"}" class="${this.data.activeTemplate === "progressivo" ? "is-active" : ""}" data-template="progressivo">Progressivo</button>
-                    <button type="button" ${readOnly ? "disabled" : ""} aria-pressed="${this.data.activeTemplate === "manual"}" class="${this.data.activeTemplate === "manual" ? "is-active" : ""}" data-template="manual">Manual</button>
+                    <div class="qts-templates">
+                            <button type="button" ${readOnly ? "disabled" : ""} aria-pressed="${this.data.activeTemplate === "pomo25"}" class="${this.data.activeTemplate === "pomo25" ? "is-active" : ""}" data-template="pomo25">25/5</button>
+                            <button type="button" ${readOnly ? "disabled" : ""} aria-pressed="${this.data.activeTemplate === "deep50"}" class="${this.data.activeTemplate === "deep50" ? "is-active" : ""}" data-template="deep50">50/15</button>
+                            <button type="button" ${readOnly ? "disabled" : ""} aria-pressed="${this.data.activeTemplate === "flow52"}" class="${this.data.activeTemplate === "flow52" ? "is-active" : ""}" data-template="flow52">52/17</button>
+                            <button type="button" ${readOnly ? "disabled" : ""} aria-pressed="${this.data.activeTemplate === "ultra90"}" class="${this.data.activeTemplate === "ultra90" ? "is-active" : ""}" data-template="ultra90">90/30</button>
+                            <button type="button" ${readOnly ? "disabled" : ""} aria-pressed="${this.data.activeTemplate === "sprint15"}" class="${this.data.activeTemplate === "sprint15" ? "is-active" : ""}" data-template="sprint15">15/5</button>
+                            <button type="button" ${readOnly ? "disabled" : ""} aria-pressed="${this.data.activeTemplate === "progressivo"}" class="${this.data.activeTemplate === "progressivo" ? "is-active" : ""}" data-template="progressivo">Progressivo</button>
+                            <button type="button" ${readOnly ? "disabled" : ""} aria-pressed="${this.data.activeTemplate === "manual"}" class="${this.data.activeTemplate === "manual" ? "is-active" : ""}" data-template="manual">Manual</button>
+                        </div>
+
+                    <div class="qts-toggle-bar">
+                        <label class="qts-toggle">
+                            <input type="checkbox" id="toggleTimeCol"
+                            ${this.data.showTimeColumn ? "checked" : ""}
+                            ${readOnly ? "disabled" : ""}>
+                            HORARIO
+                        </label>
+                        <label class="qts-toggle">
+                            <input type="checkbox" id="toggleSunday"
+                             ${this.data.showSunday ? "checked" : ""}
+                             ${readOnly ? "disabled" : ""}>
+                            Domingo
+                        </label>
+
+                        <label class="qts-toggle">
+                            <input type="checkbox" id="toggleSaturday"
+                            ${this.data.showSaturday ? "checked" : ""}
+                            ${readOnly ? "disabled" : ""}>
+                            Sabado
+                        </label>
+                    </div>
+
+                    <h2 class="qts-title">Quadro semanal</h2>
+
+                    <div class="qts-grid-shell${readOnly ? " is-readonly" : ""}${futureWeek ? " is-future-week" : ""}">
+                        ${readOnly ? '<div class="qts-week-overlay qts-week-overlay-readonly">Semana anterior · somente visualizacao</div>' : ""}
+                        ${futureWeek ? '<div class="qts-week-overlay qts-week-overlay-future">PROXIMA SEMANA</div>' : ""}
+                        <div id="qtsGrid"></div>
+                    </div>
+                    <div class="qts-controls">
+                        <div class="row-control">
+                            <button id="removeRowBtn" class="row-btn left" ${readOnly ? "disabled" : ""}>-</button>
+                            <div class="row-label">Linhas</div>
+                            <button id="addRowBtn" class="row-btn right" ${readOnly ? "disabled" : ""}>+</button>
+                        </div>
+                        <div class="row-control">
+                            <button id="removeIntervalBtn" class="row-btn left" ${readOnly ? "disabled" : ""}>-</button>
+                            <div class="row-label">Intervalos</div>
+                            <button id="addIntervalBtn" class="row-btn right" ${readOnly ? "disabled" : ""}>+</button>
+                        </div>
+                    </div>
+                    <div id="qtsAutocomplete" class="qts-autocomplete" hidden></div>
+                    <div id="qtsSubjectSummary" class="qts-subject-summary"></div>
                 </div>
-
-            <div style="text-align:center;margin-bottom:15px;">
-                <label>
-                    <input type="checkbox" id="toggleTimeCol"
-                    ${this.data.showTimeColumn ? "checked" : ""}
-                    ${readOnly ? "disabled" : ""}>
-                    HORARIO
-                </label>
-                <label style="margin-left:10px;">
-                    <input type="checkbox" id="toggleSunday"
-                     ${this.data.showSunday ? "checked" : ""}
-                     ${readOnly ? "disabled" : ""}>
-                    Domingo
-                </label>
-
-                <label style="margin-left:10px;">
-                    <input type="checkbox" id="toggleSaturday"
-                    ${this.data.showSaturday ? "checked" : ""}
-                    ${readOnly ? "disabled" : ""}>
-                    Sabado
-                </label>
             </div>
-
-            <div class="qts-grid-shell${readOnly ? " is-readonly" : ""}${futureWeek ? " is-future-week" : ""}">
-                ${readOnly ? '<div class="qts-week-overlay qts-week-overlay-readonly">Semana anterior · somente visualizacao</div>' : ""}
-                ${futureWeek ? '<div class="qts-week-overlay qts-week-overlay-future">PROXIMA SEMANA</div>' : ""}
-                <div id="qtsGrid"></div>
-            </div>
-            <div class="qts-controls">
-                <div class="row-control">
-                    <button id="removeRowBtn" class="row-btn left" ${readOnly ? "disabled" : ""}>-</button>
-                    <div class="row-label">Linhas</div>
-                    <button id="addRowBtn" class="row-btn right" ${readOnly ? "disabled" : ""}>+</button>
-                </div>
-                <div class="row-control">
-                    <button id="removeIntervalBtn" class="row-btn left" ${readOnly ? "disabled" : ""}>-</button>
-                    <div class="row-label">Intervalos</div>
-                    <button id="addIntervalBtn" class="row-btn right" ${readOnly ? "disabled" : ""}>+</button>
-                </div>
-            </div>
-            <div id="qtsAutocomplete" class="qts-autocomplete" hidden></div>
-            <div id="qtsSubjectSummary" class="qts-subject-summary"></div>
         `;
+
+        this.renderDetachedIndexRail();
 
         this.bindControls();
         this.buildGrid();
@@ -1381,6 +1388,33 @@
                     this.openWeekByOffset(offset);
                 };
             });
+    },
+    renderDetachedIndexRail() {
+        let rail =
+            document.getElementById(
+                "qtsDetachedIndex"
+            );
+
+        if (!rail) {
+            rail = document.createElement("aside");
+            rail.id = "qtsDetachedIndex";
+            rail.className = "qts-detached-index";
+            rail.setAttribute(
+                "aria-label",
+                "Indice da tabela"
+            );
+            document.body.appendChild(rail);
+        }
+
+        rail.innerHTML = `
+            <div class="qts-detached-index-item">Semana atual</div>
+            <div class="qts-detached-index-divider" aria-hidden="true"></div>
+            <div class="qts-detached-index-item">Horario</div>
+            <div class="qts-detached-index-item">Domingo</div>
+            <div class="qts-detached-index-item">Sabado</div>
+            <div class="qts-detached-index-divider" aria-hidden="true"></div>
+            <div class="qts-detached-index-item">Planejamento por materia</div>
+        `;
     },
     bindControls() {
         const isReadonly =

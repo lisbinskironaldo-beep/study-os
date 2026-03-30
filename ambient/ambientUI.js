@@ -205,9 +205,9 @@ this.closeCategorySelector()
 
 this.updateShell()
 
-if (mode === 0) {
+if (mode !== 2) {
 requestAnimationFrame(() => {
-this.positionPanelNearMini()
+this.constrainFloatingUI()
 })
 }
 

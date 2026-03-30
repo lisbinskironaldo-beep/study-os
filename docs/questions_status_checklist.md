@@ -1,7 +1,7 @@
 # STUDY OS - STATUS DO MODULO DE QUESTOES
 
 Documento interno de acompanhamento.
-Atualizado em 2026-03-27.
+Atualizado em 2026-03-28.
 
 ---
 
@@ -132,3 +132,17 @@ Primeira entrega estrutural iniciada nesta direcao:
 - [x] launcher legacy ajustado para priorizar materias com questoes prontas
 - [x] aba de materias do fluxo inteligente corrigida para voltar a listar materias prontas
 - [x] etapa final do fluxo inteligente simplificada para visual mais minimalista
+- [x] preview local corrigido para servir `.mjs` e validar o `questions v2` no navegador
+- [x] launcher ajustado para operar pelo manifesto mesmo sem `schoolCatalog` carregado no boot
+- [x] bootstrap ajustado para adiar o catalogo detalhado e carregar sob demanda ao iniciar sessao ou retomar bloco
+- [x] repositorio ajustado para carregar apenas os topicos da rota antes da sessao, mantendo fallback seguro para o catalogo completo
+- [x] smoke local no Edge confirmou boot com `schoolCatalog` vazio e sessao entrando com apenas `1` topico carregado no recorte validado
+- [x] manifesto enriquecido com indice leve `questionId -> topicId` para reduzir fallback ao catalogo completo
+- [x] smoke local no Edge confirmou `resume` e `saved` reconstruindo sessoes por ids com apenas `1` topico carregado no recorte validado
+- [x] fluxos degradados de `resume` e `saved` agora exibem mensagens especificas para ids ausentes e snapshot de compatibilidade
+- [x] smoke local confirmou `resume` por snapshot no mesmo ciclo da pagina e falha segura quando nao ha snapshot valido
+- [x] recuperacao legacy de `resume`, `restart` e `saved` iniciou extracao de `questions.js` para modulo dedicado
+- [x] fallback legacy de sessao e guardados tambem foi modularizado fora de `questions.js`, preservando compatibilidade inline como ultima rede de seguranca
+- [x] bateria local do bloco 2 validou `specific`, `smart`, `pause`, `resume`, `restart`, `saved` e `follow-up`
+- [x] caminho feliz do bloco 2 permaneceu com carga parcial do catalogo no navegador, sem reabrir o banco completo
+- [x] cenarios degradados criticos de `resume` e `saved` seguiram funcionando por snapshot de compatibilidade apos as extracoes do bloco 1

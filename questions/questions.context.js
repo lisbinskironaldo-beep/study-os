@@ -23,6 +23,12 @@ window.QuestionsContext = {
         smartExcludedSeries: [],
         smartExcludedBases: [],
         smartExcludedSubjects: [],
+        statsSection: "resumo",
+        statsBase: "ESCOLAR",
+        statsScope: "geral",
+        statsSerie: 1,
+        statsMateria: "matematica",
+        statsTopicKey: "",
         syncSource: "",
         syncIntent: "",
         pendingSync: null
@@ -170,6 +176,83 @@ window.QuestionsContext = {
                     )
                 ]
                 : [];
+        next.statsSection = [
+            "resumo",
+            "melhorar",
+            "evolucao",
+            "consistencia"
+        ].includes(
+            String(
+                next.statsSection ||
+                    "resumo"
+            )
+                .trim()
+                .toLowerCase()
+        )
+            ? String(
+                next.statsSection ||
+                    "resumo"
+            )
+                  .trim()
+                  .toLowerCase()
+            : "resumo";
+        next.statsBase = [
+            "ESCOLAR",
+            "ENEM",
+            "VESTIBULAR"
+        ].includes(
+            String(
+                next.statsBase ||
+                    next.base ||
+                    "ESCOLAR"
+            )
+                .trim()
+                .toUpperCase()
+        )
+            ? String(
+                next.statsBase ||
+                    next.base ||
+                    "ESCOLAR"
+            )
+                  .trim()
+                  .toUpperCase()
+            : "ESCOLAR";
+        next.statsScope = [
+            "geral",
+            "serie",
+            "materia",
+            "assunto"
+        ].includes(
+            String(
+                next.statsScope ||
+                    "geral"
+            )
+                .trim()
+                .toLowerCase()
+        )
+            ? String(
+                next.statsScope ||
+                    "geral"
+            )
+                  .trim()
+                  .toLowerCase()
+            : "geral";
+        next.statsSerie =
+            Number(next.statsSerie) ||
+            Number(next.serie) ||
+            1;
+        next.statsMateria =
+            String(
+                next.statsMateria ||
+                    next.materia ||
+                    ""
+            )
+                .trim()
+                .toLowerCase();
+        next.statsTopicKey =
+            String(
+                next.statsTopicKey || ""
+            ).trim();
 
         next.pesos =
             next.pesos &&

@@ -1470,7 +1470,6 @@ window.QuestionsUI = {
                     <div>
                         <div class="questions-kicker">Questions</div>
                         <h2>Escolha o caminho</h2>
-                        <p>Entre rapido e deixe o detalhe para depois.</p>
                     </div>
 
                     <div class="questions-entry-actions">
@@ -1488,7 +1487,6 @@ window.QuestionsUI = {
                     <article class="questions-entry-option questions-entry-option-smart">
                         <div class="questions-entry-copy">
                             <h3>Treino inteligente</h3>
-                            <p>O sistema organiza o bloco com poucas escolhas.</p>
                         </div>
                         <button class="questions-primary-btn" type="button" data-launcher-view="smart_start" ${isLoading || isError ? "disabled" : ""}>
                             ${isLoading ? "Preparando..." : isError ? "Indisponivel" : "Comecar"}
@@ -1497,8 +1495,7 @@ window.QuestionsUI = {
 
                     <article class="questions-entry-option questions-entry-option-specific">
                         <div class="questions-entry-copy">
-                            <h3>Central de progresso</h3>
-                            <p>Seu mapa de desempenho, reforco e leitura da caminhada.</p>
+                            <h3>Progresso</h3>
                         </div>
                         <button class="questions-secondary-btn" type="button" data-launcher-view="specific" ${isLoading || isError ? "disabled" : ""}>
                             ${isLoading ? "Preparando..." : isError ? "Indisponivel" : "Entrar"}
@@ -1508,7 +1505,6 @@ window.QuestionsUI = {
                     <article class="questions-entry-option questions-entry-option-saved">
                         <div class="questions-entry-copy">
                             <h3>Guardados</h3>
-                            <p>${savedBlocks.length ? `${savedBlocks.length} treino(s) salvo(s) para consultar, duplicar ou refazer.` : "Seus treinos guardados ficam aqui."}</p>
                         </div>
                         <button class="questions-secondary-btn" type="button" data-launcher-view="saved">
                             Abrir
@@ -1706,6 +1702,170 @@ window.QuestionsUI = {
                 (left, right) =>
                     left.serie -
                     right.serie
+            );
+    },
+
+    buildHubBreakdownBySubjectFromSessions(
+        sessions = []
+    ) {
+        const grouped = new Map();
+
+        (sessions || []).forEach((session) => {
+            const key =
+                String(
+                    session?.subjectKey || ""
+                ).trim() || "geral";
+            const current =
+                grouped.get(key) || {
+                    subjectKey: key,
+                    subjectLabel:
+                        String(
+                            session?.subjectLabel ||
+                                "Materia"
+                        ).trim() ||
+                        "Materia",
+                    attempts: 0,
+                    hits: 0,
+                    errors: 0,
+                    sessions: 0,
+                    totalTime: 0,
+                    topicCount: 0,
+                    topicKeys: new Set()
+                };
+
+            const amount =
+                Number(
+                    session?.amount || 0
+                ) || 0;
+
+            current.attempts += amount;
+            current.hits +=
+                Number(
+                    session?.hits || 0
+                ) || 0;
+            current.errors +=
+                Number(
+                    session?.errors || 0
+                ) || 0;
+            current.sessions += 1;
+            current.totalTime +=
+                (Number(
+                    session?.avgTimeMs || 0
+                ) || 0) * amount;
+
+            (
+                session?.topicKeys || []
+            ).forEach((topicKey) => {
+                if (topicKey) {
+                    current.topicKeys.add(
+                        topicKey
+                    );
+                }
+            });
+
+            grouped.set(key, current);
+        });
+
+        return [...grouped.values()]
+            .map((entry) => ({
+                ...entry,
+                topicCount:
+                    entry.topicKeys.size,
+                accuracy:
+                    entry.attempts > 0
+                        ? Math.round(
+                            (entry.hits /
+                                entry.attempts) *
+                                100
+                        )
+                        : 0,
+                errorRate:
+                    entry.attempts > 0
+                        ? Math.round(
+                            (entry.errors /
+                                entry.attempts) *
+                                100
+                        )
+                        : 0,
+                avgTimeMs:
+                    entry.attempts > 0
+                        ? entry.totalTime /
+                          entry.attempts
+                        : 0,
+                totalTimeMs:
+                    entry.totalTime
+            }))
+            .sort((left, right) =>
+                right.attempts -
+                    left.attempts ||
+                left.accuracy -
+                    right.accuracy
+            );
+    },
+
+    buildHubTopicBreakdown(
+        entries = []
+    ) {
+        return (entries || [])
+            .map((entry) => ({
+                topicKey:
+                    String(
+                        entry?.topicKey || ""
+                    ).trim(),
+                topicLabel:
+                    String(
+                        entry?.topicLabel ||
+                            "Assunto"
+                    ).trim() ||
+                    "Assunto",
+                attempts:
+                    Number(
+                        entry?.attempts || 0
+                    ) || 0,
+                hits:
+                    Number(
+                        entry?.hits || 0
+                    ) || 0,
+                errors:
+                    Number(
+                        entry?.errors || 0
+                    ) || 0,
+                avgTimeMs:
+                    Number(
+                        entry?.avgTime || 0
+                    ) || 0,
+                totalTimeMs:
+                    (Number(
+                        entry?.avgTime || 0
+                    ) || 0) *
+                    (Number(
+                        entry?.attempts || 0
+                    ) || 0)
+            }))
+            .map((entry) => ({
+                ...entry,
+                accuracy:
+                    entry.attempts > 0
+                        ? Math.round(
+                            (entry.hits /
+                                entry.attempts) *
+                                100
+                        )
+                        : 0,
+                errorRate:
+                    entry.attempts > 0
+                        ? Math.round(
+                            (entry.errors /
+                                entry.attempts) *
+                                100
+                        )
+                        : 0
+            }))
+            .sort((left, right) =>
+                right.attempts -
+                    left.attempts ||
+                left.accuracy -
+                    right.accuracy
             );
     },
 
@@ -2012,7 +2172,39 @@ window.QuestionsUI = {
             this.page;
         const ctx =
             QuestionsContext.get();
-        const baseKey = "ESCOLAR";
+        const baseOptions = [
+            {
+                key: "ESCOLAR",
+                label: "Escolar"
+            },
+            {
+                key: "ENEM",
+                label: "ENEM"
+            },
+            {
+                key: "VESTIBULAR",
+                label: "Vestibulares"
+            }
+        ];
+        const statsSection =
+            String(
+                ctx.statsSection ||
+                    "resumo"
+            )
+                .trim()
+                .toLowerCase() || "resumo";
+        const baseKey =
+            baseOptions.find(
+                (item) =>
+                    item.key ===
+                    String(
+                        ctx.statsBase ||
+                            ctx.base ||
+                            "ESCOLAR"
+                    )
+                        .trim()
+                        .toUpperCase()
+            )?.key || "ESCOLAR";
         const allEntries =
             QuestionsStore.getTopicEntries({
                 baseKey
@@ -2031,14 +2223,26 @@ window.QuestionsUI = {
                         item.key
                     )
             }));
+        const statsScope =
+            String(
+                ctx.statsScope || "geral"
+            )
+                .trim()
+                .toLowerCase() || "geral";
         const activeSerie =
             series.find(
                 (item) =>
                     Number(item.key) ===
-                    Number(ctx.serie)
+                    Number(
+                        ctx.statsSerie ||
+                            ctx.serie
+                    )
             )?.key ||
             series[0]?.key ||
-            Number(ctx.serie) ||
+            Number(
+                ctx.statsSerie ||
+                    ctx.serie
+            ) ||
             1;
         const subjects =
             QuestionsService.getSubjectOptions(
@@ -2048,23 +2252,48 @@ window.QuestionsUI = {
         const activeSubject =
             subjects.find(
                 (item) =>
-                    item.key === ctx.materia
+                    item.key ===
+                    String(
+                        ctx.statsMateria ||
+                            ctx.materia
+                    )
             )?.key ||
             subjects[0]?.key ||
+            "";
+        const topicOptions =
+            QuestionsService.getTopicOptions(
+                page,
+                {
+                    serie: activeSerie,
+                    materia: activeSubject
+                }
+            );
+        const activeTopicKey =
+            topicOptions.find(
+                (item) =>
+                    item.key ===
+                    String(
+                        ctx.statsTopicKey ||
+                            ""
+                    )
+            )?.key ||
+            topicOptions[0]?.key ||
             "";
         const overallDashboard =
             QuestionsStore.getDashboard({
                 baseKey
             });
-        const activeSessions =
+        const serieSessions =
             allSessions.filter(
                 (session) =>
                     Number(
                         session?.serie
                     ) ===
-                        Number(
-                            activeSerie
-                        ) &&
+                    Number(activeSerie)
+            );
+        const activeSessions =
+            serieSessions.filter(
+                (session) =>
                     (!activeSubject ||
                         session.subjectKey ===
                             activeSubject)
@@ -2127,18 +2356,48 @@ window.QuestionsUI = {
                 ? activeTotals.totalTime /
                   activeTotals.attempts
                 : 0;
-        const availableTopics =
-            QuestionsService.getTopicOptions(
-                page,
-                {
-                    serie: activeSerie,
-                    materia: activeSubject
-                }
+        const subjectBreakdown =
+            this.buildHubBreakdownBySubject(
+                allEntries
             );
+        const serieSubjectBreakdown =
+            this.buildHubBreakdownBySubjectFromSessions(
+                serieSessions
+            );
+        const topicBreakdown =
+            this.buildHubTopicBreakdown(
+                activeSubject
+                    ? QuestionsStore.getTopicEntries(
+                        {
+                            baseKey,
+                            subjectKey:
+                                activeSubject
+                        }
+                    )
+                    : []
+            );
+        const selectedTopicEntry =
+            topicBreakdown.find(
+                (item) =>
+                    item.topicKey ===
+                    activeTopicKey
+            ) || null;
+        const topicSessionCount =
+            activeTopicKey
+                ? activeSessions.filter(
+                    (session) =>
+                        Array.isArray(
+                            session?.topicKeys
+                        ) &&
+                        session.topicKeys.includes(
+                            activeTopicKey
+                        )
+                ).length
+                : 0;
         const weakOverall =
             QuestionsStore.getWeakTopics({
                 baseKey,
-                minAttempts: 2,
+                minAttempts: 1,
                 minErrors: 1
             }).slice(0, 6);
         const weakSubject =
@@ -2148,7 +2407,7 @@ window.QuestionsUI = {
                         baseKey,
                         subjectKey:
                             activeSubject,
-                        minAttempts: 2,
+                        minAttempts: 1,
                         minErrors: 1
                     }
                 ).slice(0, 5)
@@ -2167,10 +2426,6 @@ window.QuestionsUI = {
                     }
                 ).slice(0, 4)
                 : [];
-        const subjectBreakdown =
-            this.buildHubBreakdownBySubject(
-                allEntries
-            );
         const seriesBreakdown =
             this.buildHubBreakdownBySerie(
                 allSessions
@@ -2209,16 +2464,259 @@ window.QuestionsUI = {
                         0
                 ) || 0)) /
             3600000;
+        const scopeOptions = [
+            {
+                key: "geral",
+                label: "Tudo"
+            },
+            {
+                key: "serie",
+                label: "Serie"
+            },
+            {
+                key: "materia",
+                label: "Materia"
+            },
+            {
+                key: "assunto",
+                label: "Assunto"
+            }
+        ];
+        let scopeLabel =
+            "Visao geral";
+        let scopeSummary =
+            "Panorama completo do historico";
+        let radarSource = {
+            attempts:
+                overallDashboard.attempts,
+            hits: overallDashboard.hits,
+            errors:
+                overallDashboard.errors,
+            sessions:
+                overallDashboard.totalSessions,
+            avgTimeMs:
+                overallDashboard.avgTimeMs,
+            accuracy: Math.round(
+                (overallDashboard.accuracy ||
+                    0) * 100
+            ),
+            coveredTopics:
+                overallDashboard.entries
+                    ?.filter(
+                        (item) =>
+                            item.attempts > 0
+                    ).length || 0,
+            totalTopics:
+                overallDashboard.entries
+                    ?.length || 0
+        };
+        let focusWeakTopics =
+            weakOverall;
+        let focusStrongTopics =
+            strongOverall;
+        let timeChartItems =
+            subjectBreakdown.map(
+                (item) => ({
+                    key: item.subjectKey,
+                    label:
+                        item.subjectLabel,
+                    avgTimeMs:
+                        item.avgTimeMs,
+                    totalTimeMs:
+                        item.totalTime,
+                    attempts:
+                        item.attempts
+                })
+            );
+
+        if (statsScope === "serie") {
+            scopeLabel =
+                this.formatSerieLabel(
+                    activeSerie
+                );
+            scopeSummary =
+                `Leitura apenas da ${scopeLabel}`;
+            radarSource = {
+                attempts:
+                    activeTotals.attempts,
+                hits: activeTotals.hits,
+                errors:
+                    activeTotals.errors,
+                sessions:
+                    activeTotals.sessions,
+                avgTimeMs:
+                    activeAvgTimeMs,
+                accuracy:
+                    activeAccuracy,
+                coveredTopics:
+                    activeTotals.topicKeys
+                        .size,
+                totalTopics:
+                    serieSubjectBreakdown.reduce(
+                        (acc, item) =>
+                            acc +
+                            (item.topicCount ||
+                                0),
+                        0
+                    )
+            };
+            focusWeakTopics =
+                weakOverall.filter(
+                    (item) =>
+                        serieSubjectBreakdown.some(
+                            (subject) =>
+                                subject.subjectKey ===
+                                item.subjectKey
+                        )
+                );
+            focusStrongTopics =
+                strongOverall.filter(
+                    (item) =>
+                        serieSubjectBreakdown.some(
+                            (subject) =>
+                                subject.subjectKey ===
+                                item.subjectKey
+                        )
+                );
+            timeChartItems =
+                serieSubjectBreakdown.map(
+                    (item) => ({
+                        key: item.subjectKey,
+                        label:
+                            item.subjectLabel,
+                        avgTimeMs:
+                            item.avgTimeMs,
+                        totalTimeMs:
+                            item.totalTimeMs,
+                        attempts:
+                            item.attempts
+                    })
+                );
+        }
+
+        if (statsScope === "materia") {
+            scopeLabel =
+                subjects.find(
+                    (item) =>
+                        item.key ===
+                        activeSubject
+                )?.label ||
+                "Materia";
+            scopeSummary =
+                `${scopeLabel} na ${this.formatSerieLabel(activeSerie)}`;
+            radarSource = {
+                attempts:
+                    activeTotals.attempts,
+                hits: activeTotals.hits,
+                errors:
+                    activeTotals.errors,
+                sessions:
+                    activeTotals.sessions,
+                avgTimeMs:
+                    activeAvgTimeMs,
+                accuracy:
+                    activeAccuracy,
+                coveredTopics:
+                    topicBreakdown.filter(
+                        (item) =>
+                            item.attempts > 0
+                    ).length,
+                totalTopics:
+                    topicOptions.length
+            };
+            focusWeakTopics =
+                weakSubject;
+            focusStrongTopics =
+                strongSubject;
+            timeChartItems =
+                topicBreakdown.map(
+                    (item) => ({
+                        key: item.topicKey,
+                        label:
+                            item.topicLabel,
+                        avgTimeMs:
+                            item.avgTimeMs,
+                        totalTimeMs:
+                            item.totalTimeMs,
+                        attempts:
+                            item.attempts
+                    })
+                );
+        }
+
+        if (statsScope === "assunto") {
+            scopeLabel =
+                topicOptions.find(
+                    (item) =>
+                        item.key ===
+                        activeTopicKey
+                )?.label ||
+                "Assunto";
+            scopeSummary =
+                `${scopeLabel} em ${subjects.find((item) => item.key === activeSubject)?.label || "Materia"}`;
+            radarSource = {
+                attempts:
+                    selectedTopicEntry
+                        ?.attempts || 0,
+                hits:
+                    selectedTopicEntry?.hits ||
+                    0,
+                errors:
+                    selectedTopicEntry
+                        ?.errors || 0,
+                sessions:
+                    topicSessionCount,
+                avgTimeMs:
+                    selectedTopicEntry
+                        ?.avgTimeMs || 0,
+                accuracy:
+                    selectedTopicEntry
+                        ?.accuracy || 0,
+                coveredTopics:
+                    selectedTopicEntry
+                        ?.attempts
+                        ? 1
+                        : 0,
+                totalTopics: 1
+            };
+            focusWeakTopics =
+                selectedTopicEntry &&
+                selectedTopicEntry.errors >
+                    0
+                    ? [selectedTopicEntry]
+                    : [];
+            focusStrongTopics =
+                selectedTopicEntry &&
+                selectedTopicEntry.hits > 0
+                    ? [selectedTopicEntry]
+                    : [];
+            timeChartItems = selectedTopicEntry
+                ? [
+                    {
+                        key:
+                            selectedTopicEntry.topicKey,
+                        label:
+                            selectedTopicEntry.topicLabel,
+                        avgTimeMs:
+                            selectedTopicEntry.avgTimeMs,
+                        totalTimeMs:
+                            selectedTopicEntry.totalTimeMs,
+                        attempts:
+                            selectedTopicEntry.attempts
+                    }
+                ]
+                : [];
+        }
         const recommendations = [];
 
-        if (weakSubject[0]) {
+        if (focusWeakTopics[0]) {
             recommendations.push({
                 kicker:
                     "Reforco recomendado",
                 title:
-                    weakSubject[0]
+                    focusWeakTopics[0]
                         .topicLabel,
-                note: `${weakSubject[0].errors} erro(s) acumulados em ${weakSubject[0].attempts} tentativa(s).`
+                note: `${focusWeakTopics[0].errors} erro(s) acumulados em ${focusWeakTopics[0].attempts} tentativa(s).`
             });
         } else if (weakOverall[0]) {
             recommendations.push({
@@ -2262,10 +2760,21 @@ window.QuestionsUI = {
         }
 
         return {
+            statsSection,
+            baseOptions,
+            activeBase: baseKey,
+            showSeriesFilters:
+                baseKey === "ESCOLAR",
+            scopeOptions,
+            statsScope,
             series,
             subjects,
+            topicOptions,
+            activeTopicKey,
             activeSerie,
             activeSubject,
+            scopeLabel,
+            scopeSummary,
             activeSubjectLabel:
                 subjects.find(
                     (item) =>
@@ -2284,13 +2793,19 @@ window.QuestionsUI = {
                 activeTotals.topicKeys
                     .size,
             availableTopicCount:
-                availableTopics.length,
-            weakOverall,
-            weakSubject,
-            strongOverall,
-            strongSubject,
+                topicOptions.length,
+            weakOverall:
+                focusWeakTopics,
+            weakSubject:
+                focusWeakTopics,
+            strongOverall:
+                focusStrongTopics,
+            strongSubject:
+                focusStrongTopics,
             subjectBreakdown,
             seriesBreakdown,
+            serieSubjectBreakdown,
+            topicBreakdown,
             strongestSubject,
             hardestSubject,
             level:
@@ -2299,98 +2814,901 @@ window.QuestionsUI = {
                 ),
             radarMetrics:
                 this.buildProgressHubRadarMetrics(
-                    {
-                        attempts:
-                            activeTotals.attempts,
-                        hits: activeTotals.hits,
-                        errors:
-                            activeTotals.errors,
-                        sessions:
-                            activeTotals.sessions,
-                        avgTimeMs:
-                            activeAvgTimeMs,
-                        accuracy:
-                            activeAccuracy,
-                        coveredTopics:
-                            activeTotals
-                                .topicKeys.size,
-                        totalTopics:
-                            availableTopics.length
-                    }
+                    radarSource
                 ),
+            timeChartItems:
+                timeChartItems.slice(0, 8),
             recommendations,
             recentSessions:
                 allSessions.slice(0, 5)
         };
     },
 
-    renderProgressHubHero(
-        model,
-        overallAccuracy,
-        overallErrorRate,
-        leadingWeakTopic,
-        leadingStrongTopic
-    ) {
-        const highlightedSuggestion =
-            model.recommendations[0];
+    renderProgressHubSidebar(model) {
+        const items = [
+            {
+                key: "resumo",
+                label: "Resumo"
+            },
+            {
+                key: "melhorar",
+                label: "Onde melhorar"
+            },
+            {
+                key: "evolucao",
+                label: "Evolucao"
+            },
+            {
+                key: "consistencia",
+                label: "Consistencia"
+            }
+        ];
 
         return `
-            <section class="questions-hub-hero">
-                <article class="questions-hub-hero-copy">
-                    <div class="questions-panel-label">Leitura geral</div>
-                    <h3>Um painel para entender, nao para confundir</h3>
-                    <p>O sistema concentra aqui o que voce ja respondeu, o que pede reforco, o que esta virando ponto forte e qual materia merece o proximo mergulho.</p>
-                    <div class="questions-hub-highlight">
-                        <span class="questions-hub-highlight-kicker">${this.escapeHtml(highlightedSuggestion.kicker)}</span>
-                        <strong>${this.escapeHtml(highlightedSuggestion.title)}</strong>
-                        <p>${this.escapeHtml(highlightedSuggestion.note)}</p>
-                    </div>
-                </article>
+            <aside class="questions-hub-sidebar" aria-label="Tipos de estatistica">
+                <div class="questions-hub-sidebar-head">
+                    <span class="questions-hub-sidebar-kicker">Estatisticas</span>
+                </div>
+                ${items.map((item) => `
+                    <button
+                        class="questions-hub-nav-btn${model.statsSection === item.key ? " is-active" : ""}"
+                        type="button"
+                        data-hub-section="${item.key}">
+                        ${this.escapeHtml(item.label)}
+                    </button>
+                `).join("")}
+            </aside>
+        `;
+    },
 
-                <article class="questions-hub-level-card">
-                    <div class="questions-panel-label">Progressao leve</div>
-                    <strong>Nivel ${model.level.level}</strong>
-                    <span>${this.escapeHtml(model.level.tierLabel)}</span>
-                    <div class="questions-hub-level-track">
-                        <div class="questions-hub-level-fill" style="width:${model.level.progress}%"></div>
-                    </div>
-                    <p>${this.escapeHtml(model.level.note)}</p>
+    renderProgressHubContextBar(model) {
+        return `
+            <section class="questions-hub-toolbar" aria-label="Filtros de contexto">
+                <div class="questions-hub-toolbar-group">
+                    ${model.showSeriesFilters ? `
+                        <label class="questions-hub-toolbar-field">
+                            <span class="questions-hub-toolbar-label">Serie</span>
+                            <span class="questions-hub-select-shell">
+                                <select class="questions-hub-select" data-hub-serie-select>
+                                    ${model.series.map((serie) => `
+                                        <option value="${serie.key}"${Number(model.activeSerie) === Number(serie.key) ? " selected" : ""}>
+                                            ${this.escapeHtml(serie.label)}
+                                        </option>
+                                    `).join("")}
+                                </select>
+                            </span>
+                        </label>
+                    ` : ""}
+                </div>
+                <div class="questions-hub-toolbar-meta">
+                    ${this.escapeHtml(
+                        model.statsSection === "resumo"
+                            ? "Resumo"
+                            : model.statsSection === "melhorar"
+                                ? "Onde melhorar"
+                                : model.statsSection === "evolucao"
+                                    ? "Evolucao"
+                                    : "Consistencia"
+                    )}
+                </div>
+            </section>
+        `;
+    },
+
+    renderProgressHubHero(model) {
+        const accuracy =
+            Math.round(
+                (Number(
+                    model?.overallDashboard
+                        ?.accuracy || 0
+                ) || 0) * 100
+            );
+        const avgTime =
+            QuestionsService.formatTime(
+                Number(
+                    model?.overallDashboard
+                        ?.avgTimeMs || 0
+                ) || 0
+            );
+        const accuracyTone =
+            accuracy >= 70
+                ? "good"
+                : accuracy >= 40
+                    ? "warning"
+                    : "danger";
+        const timeTone =
+            (Number(
+                model?.overallDashboard
+                    ?.avgTimeMs || 0
+            ) || 0) <= 20000
+                ? "good"
+                : (Number(
+                    model?.overallDashboard
+                        ?.avgTimeMs || 0
+                ) || 0) <= 40000
+                    ? "warning"
+                    : "danger";
+        const levelTone =
+            model?.level?.progress >= 70
+                ? "good"
+                : model?.level?.progress >= 35
+                    ? "warning"
+                    : "danger";
+        return `
+            <section class="questions-hub-summary-block" aria-label="Resumo essencial">
+                <article class="questions-hub-summary-card questions-hub-summary-card--${accuracyTone}">
+                    <span class="questions-hub-summary-label">Acerto geral</span>
+                    <strong class="questions-hub-summary-value">${accuracy}%</strong>
+                </article>
+                <article class="questions-hub-summary-card questions-hub-summary-card--${timeTone}">
+                    <span class="questions-hub-summary-label">Tempo medio</span>
+                    <strong class="questions-hub-summary-value">${avgTime}</strong>
+                </article>
+                <article class="questions-hub-summary-card questions-hub-summary-card--${levelTone}">
+                    <span class="questions-hub-summary-label">Nivel atual</span>
+                    <strong class="questions-hub-summary-value">${model.level.level}</strong>
                 </article>
             </section>
-
-            <div class="questions-hub-stat-grid">
-                <article class="questions-hub-stat-card questions-hub-stat-card-cyan">
-                    <span>Total respondidas</span>
-                    <strong>${model.overallDashboard.attempts || 0}</strong>
-                    <small>questoes no acumulado</small>
-                </article>
-                <article class="questions-hub-stat-card questions-hub-stat-card-mint">
-                    <span>Horas de questoes</span>
-                    <strong>${this.formatHubHours(model.overallHours)}</strong>
-                    <small>tempo total estimado</small>
-                </article>
-                <article class="questions-hub-stat-card questions-hub-stat-card-rose">
-                    <span>Acerto geral</span>
-                    <strong>${overallAccuracy}%</strong>
-                    <small>${overallErrorRate}% de erro</small>
-                </article>
-                <article class="questions-hub-stat-card questions-hub-stat-card-gold">
-                    <span>Materia mais forte</span>
-                    <strong>${this.escapeHtml(model.strongestSubject?.subjectLabel || "Aguardando leitura")}</strong>
-                    <small>${model.strongestSubject ? `${model.strongestSubject.accuracy}% de acerto` : "responda para revelar"}</small>
-                </article>
-                <article class="questions-hub-stat-card questions-hub-stat-card-ink">
-                    <span>Ponto mais fragil</span>
-                    <strong>${this.escapeHtml(leadingWeakTopic?.topicLabel || "Ainda sem alerta")}</strong>
-                    <small>${leadingWeakTopic ? `${leadingWeakTopic.errors} erro(s)` : "sem concentracao de erro ainda"}</small>
-                </article>
-                <article class="questions-hub-stat-card questions-hub-stat-card-lilac">
-                    <span>Ponto mais forte</span>
-                    <strong>${this.escapeHtml(leadingStrongTopic?.topicLabel || "Ainda sem destaque")}</strong>
-                    <small>${leadingStrongTopic ? `${Math.round((leadingStrongTopic.accuracy || 0) * 100)}% de precisao` : "os acertos consistentes aparecem aqui"}</small>
-                </article>
-            </div>
         `;
+    },
+
+    buildProgressHubImproveItems(
+        model
+    ) {
+        const scopedItems =
+            Array.isArray(
+                model?.topicBreakdown
+            )
+                ? model.topicBreakdown
+                    .filter(
+                        (item) =>
+                            Number(
+                                item?.attempts || 0
+                            ) > 0 &&
+                            Number(
+                                item?.errors || 0
+                            ) > 0
+                    )
+                    .sort(
+                        (left, right) =>
+                            (Number(
+                                right?.errors || 0
+                            ) || 0) -
+                                (Number(
+                                    left?.errors || 0
+                                ) || 0) ||
+                            (Number(
+                                right?.errorRate ||
+                                    0
+                            ) || 0) -
+                                (Number(
+                                    left?.errorRate ||
+                                        0
+                                ) || 0) ||
+                            (Number(
+                                right?.attempts ||
+                                    0
+                            ) || 0) -
+                                (Number(
+                                    left?.attempts ||
+                                        0
+                                ) || 0)
+                    )
+                : [];
+
+        if (scopedItems.length) {
+            return scopedItems
+                .slice(0, 3)
+                .map((item) => ({
+                    topicKey: String(
+                        item?.topicKey || ""
+                    ).trim(),
+                    topicLabel:
+                        String(
+                            item?.topicLabel ||
+                                "Assunto"
+                        ).trim() ||
+                        "Assunto",
+                    subjectKey:
+                        String(
+                            model?.activeSubject ||
+                                ""
+                        ).trim(),
+                    serie:
+                        Number(
+                            model?.activeSerie || 0
+                        ) || 1,
+                    errors:
+                        Number(
+                            item?.errors || 0
+                        ) || 0,
+                    attempts:
+                        Number(
+                            item?.attempts || 0
+                        ) || 0,
+                    errorRate:
+                        Number(
+                            item?.errorRate || 0
+                        ) || 0
+                }));
+        }
+
+        const dashboardItems =
+            Array.isArray(
+                model?.overallDashboard
+                    ?.weakTopics
+            )
+                ? model.overallDashboard
+                    .weakTopics
+                : [];
+
+        if (dashboardItems.length) {
+            return dashboardItems
+                .filter(
+                    (item) =>
+                        Number(
+                            item?.attempts || 0
+                        ) > 0 &&
+                        Number(
+                            item?.errors || 0
+                        ) > 0 &&
+                        (!model?.activeSubject ||
+                            String(
+                                item?.subjectKey ||
+                                    ""
+                            ).trim() ===
+                                String(
+                                    model.activeSubject ||
+                                        ""
+                                ).trim())
+                )
+                .slice(0, 3)
+                .map((item) => {
+                    const attempts =
+                        Number(
+                            item?.attempts || 0
+                        ) || 0;
+                    const errors =
+                        Number(
+                            item?.errors || 0
+                        ) || 0;
+                    const ratio =
+                        attempts > 0
+                            ? errors /
+                              attempts
+                            : 0;
+
+                    return {
+                        topicKey: String(
+                            item?.topicKey || ""
+                        ).trim(),
+                        topicLabel:
+                            String(
+                                item?.topicLabel ||
+                                    "Assunto"
+                            ).trim() ||
+                            "Assunto",
+                        subjectKey:
+                            String(
+                                item?.subjectKey ||
+                                    model?.activeSubject ||
+                                    ""
+                            ).trim(),
+                        serie:
+                            Number(
+                                model?.activeSerie || 0
+                            ) || 1,
+                        errors,
+                        attempts,
+                        errorRate:
+                            Math.round(
+                                ratio * 100
+                            )
+                    };
+                });
+        }
+
+        const fallbackItems =
+            Array.isArray(
+                model?.weakOverall
+            )
+                ? model.weakOverall
+                : [];
+
+        return fallbackItems
+            .filter(
+                (item) =>
+                    Number(
+                        item?.attempts || 0
+                    ) > 0 &&
+                    Number(
+                        item?.errors || 0
+                    ) > 0
+            )
+            .slice(0, 3)
+            .map((item) => {
+                const attempts =
+                    Number(
+                        item?.attempts || 0
+                    ) || 0;
+                const errors =
+                    Number(
+                        item?.errors || 0
+                    ) || 0;
+                const ratio =
+                    attempts > 0
+                        ? errors / attempts
+                        : 0;
+
+                return {
+                    topicKey: String(
+                        item?.topicKey || ""
+                    ).trim(),
+                    topicLabel:
+                        String(
+                            item?.topicLabel ||
+                                "Assunto"
+                        ).trim() ||
+                        "Assunto",
+                    subjectKey:
+                        String(
+                            item?.subjectKey ||
+                                model?.activeSubject ||
+                                ""
+                        ).trim(),
+                    serie:
+                        Number(
+                            model?.activeSerie || 0
+                        ) || 1,
+                    errors,
+                    attempts,
+                    errorRate:
+                        Math.round(
+                            ratio * 100
+                        )
+                };
+            });
+    },
+
+    getProgressHubImproveTone(
+        errorRate
+    ) {
+        const value =
+            Number(errorRate || 0) || 0;
+
+        if (value > 70) {
+            return "danger";
+        }
+
+        if (value >= 40) {
+            return "warning";
+        }
+
+        return "good";
+    },
+
+    renderProgressHubImproveBlock(
+        model
+    ) {
+        const items =
+            this.buildProgressHubImproveItems(
+                model
+            );
+
+        if (!items.length) {
+            return `
+                <section class="questions-hub-improve-block" aria-label="Onde melhorar agora">
+                    <div class="questions-hub-improve-empty">
+                        <span class="questions-hub-summary-label">Onde melhorar</span>
+                        <strong class="questions-hub-improve-empty-value">Sem alerta forte por enquanto</strong>
+                    </div>
+                </section>
+            `;
+        }
+
+        return `
+            <section class="questions-hub-improve-block" aria-label="Onde melhorar agora">
+                ${items.map((item, index) => {
+                    const tone =
+                        this.getProgressHubImproveTone(
+                            item.errorRate
+                        );
+
+                    return `
+                        <article class="questions-hub-improve-row questions-hub-improve-row--${tone}" style="--questions-hub-improve-width:${Math.max(10, item.errorRate)}%">
+                            <div class="questions-hub-improve-rank">
+                                0${index + 1}
+                            </div>
+                            <div class="questions-hub-improve-copy">
+                                <strong class="questions-hub-improve-title">${this.escapeHtml(item.topicLabel)}</strong>
+                                <div class="questions-hub-improve-bar" aria-hidden="true">
+                                    <div class="questions-hub-improve-fill"></div>
+                                </div>
+                            </div>
+                            <div class="questions-hub-improve-metric">
+                                <span>${item.errorRate}% erro</span>
+                                <strong>${item.errors}</strong>
+                            </div>
+                            <button
+                                class="questions-hub-improve-train"
+                                type="button"
+                                data-hub-train-topic="${this.escapeHtml(item.topicKey)}"
+                                data-hub-train-subject="${this.escapeHtml(item.subjectKey)}"
+                                data-hub-train-serie="${item.serie}">
+                                Treinar
+                            </button>
+                        </article>
+                    `;
+                }).join("")}
+            </section>
+        `;
+    },
+
+    buildProgressHubEvolutionModel(
+        model
+    ) {
+        const baseKey =
+            String(
+                model?.activeBase || ""
+            ).trim() ||
+            "ESCOLAR";
+        const runs =
+            QuestionsStore.getRuns()
+                .slice()
+                .reverse();
+        const answers = [];
+
+        runs.forEach((run) => {
+            (
+                Array.isArray(
+                    run?.answers
+                )
+                    ? run.answers
+                    : []
+            ).forEach((answer) => {
+                if (
+                    baseKey &&
+                    String(
+                        answer?.baseKey || ""
+                    ).trim() !== baseKey
+                ) {
+                    return;
+                }
+
+                answers.push({
+                    correct: Boolean(
+                        answer?.correct
+                    ),
+                    timeMs:
+                        Number(
+                            answer?.timeMs || 0
+                        ) || 0
+                });
+            });
+        });
+
+        const recentAnswers =
+            answers.slice(-30);
+
+        if (!recentAnswers.length) {
+            return {
+                hasData: false,
+                label: "Sem historico recente",
+                tone: "neutral",
+                points: "",
+                total: 0
+            };
+        }
+
+        const smoothed =
+            recentAnswers.map(
+                (_entry, index, list) => {
+                    const start =
+                        Math.max(
+                            0,
+                            index - 3
+                        );
+                    const chunk =
+                        list.slice(
+                            start,
+                            index + 1
+                        );
+                    const accuracy =
+                        chunk.reduce(
+                            (total, item) =>
+                                total +
+                                (item.correct
+                                    ? 100
+                                    : 0),
+                            0
+                        ) / chunk.length;
+
+                    return Math.round(
+                        accuracy
+                    );
+                }
+            );
+
+        const maxValue =
+            Math.max(
+                100,
+                ...smoothed
+            );
+        const minValue =
+            Math.min(
+                0,
+                ...smoothed
+            );
+        const width = 760;
+        const height = 148;
+        const paddingX = 10;
+        const paddingY = 12;
+        const usableWidth =
+            width - paddingX * 2;
+        const usableHeight =
+            height - paddingY * 2;
+        const span =
+            Math.max(
+                1,
+                maxValue - minValue
+            );
+        const points =
+            smoothed
+                .map(
+                    (
+                        value,
+                        index,
+                        list
+                    ) => {
+                        const x =
+                            paddingX +
+                            (list.length ===
+                            1
+                                ? usableWidth /
+                                  2
+                                : (usableWidth /
+                                      (list.length -
+                                          1)) *
+                                  index);
+                        const y =
+                            paddingY +
+                            usableHeight -
+                            ((value -
+                                minValue) /
+                                span) *
+                                usableHeight;
+
+                        return `${x.toFixed(
+                            2
+                        )},${y.toFixed(
+                            2
+                        )}`;
+                    }
+                )
+                .join(" ");
+        const half =
+            Math.max(
+                1,
+                Math.floor(
+                    smoothed.length / 2
+                )
+            );
+        const firstHalf =
+            smoothed.slice(0, half);
+        const secondHalf =
+            smoothed.slice(half);
+        const firstAvg =
+            firstHalf.reduce(
+                (total, value) =>
+                    total + value,
+                0
+            ) / firstHalf.length;
+        const secondAvg =
+            (secondHalf.length
+                ? secondHalf
+                : firstHalf
+            ).reduce(
+                (total, value) =>
+                    total + value,
+                0
+            ) /
+            (secondHalf.length ||
+                firstHalf.length);
+        const delta = Math.round(
+            secondAvg - firstAvg
+        );
+
+        let tone = "neutral";
+        let label = "Estavel";
+
+        if (delta >= 8) {
+            tone = "up";
+            label = "Melhorando";
+        } else if (delta <= -8) {
+            tone = "down";
+            label = "Piorando";
+        }
+
+        return {
+            hasData: true,
+            tone,
+            label,
+            points,
+            total: recentAnswers.length,
+            latest:
+                smoothed[
+                    smoothed.length - 1
+                ] || 0
+        };
+    },
+
+    renderProgressHubEvolutionBlock(
+        model
+    ) {
+        const trend =
+            this.buildProgressHubEvolutionModel(
+                model
+            );
+
+        if (!trend.hasData) {
+            return `
+                <section class="questions-hub-evolution-block" aria-label="Evolucao recente">
+                    <div class="questions-hub-improve-empty">
+                        <span class="questions-hub-summary-label">Evolucao</span>
+                        <strong class="questions-hub-improve-empty-value">Sem historico recente</strong>
+                    </div>
+                </section>
+            `;
+        }
+
+        return `
+            <section class="questions-hub-evolution-block" aria-label="Evolucao recente">
+                <div class="questions-hub-evolution-head">
+                    <span class="questions-hub-summary-label">Evolucao</span>
+                    <strong class="questions-hub-evolution-trend questions-hub-evolution-trend--${trend.tone}">
+                        ${this.escapeHtml(trend.label)}
+                    </strong>
+                </div>
+
+                <div class="questions-hub-evolution-chart questions-hub-evolution-chart--${trend.tone}">
+                    <svg class="questions-hub-evolution-svg" viewBox="0 0 760 148" preserveAspectRatio="none" role="img" aria-label="Tendencia das ultimas respostas">
+                        <polyline
+                            class="questions-hub-evolution-line"
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="5"
+                            points="${trend.points}">
+                        </polyline>
+                    </svg>
+                </div>
+
+                <div class="questions-hub-evolution-foot">
+                    <span>ultimas ${trend.total} questoes</span>
+                    <strong>${trend.latest}%</strong>
+                </div>
+            </section>
+        `;
+    },
+
+    formatProgressHubDayKey(
+        timestamp
+    ) {
+        const value =
+            Number(timestamp || 0) || 0;
+
+        if (!value) {
+            return "";
+        }
+
+        const date =
+            new Date(value);
+        const year =
+            date.getFullYear();
+        const month = String(
+            date.getMonth() + 1
+        ).padStart(2, "0");
+        const day = String(
+            date.getDate()
+        ).padStart(2, "0");
+
+        return `${year}-${month}-${day}`;
+    },
+
+    buildProgressHubConsistencyModel(
+        model
+    ) {
+        const baseKey =
+            String(
+                model?.activeBase || ""
+            ).trim() ||
+            "ESCOLAR";
+        const activeSerie =
+            Number(
+                model?.activeSerie || 0
+            ) || 1;
+        const sessions =
+            QuestionsStore.getRecentSessions(
+                {
+                    baseKey
+                }
+            ).filter(
+                (session) =>
+                    Number(
+                        session?.serie || 0
+                    ) === activeSerie
+            );
+        const activeDays =
+            new Set();
+
+        sessions.forEach((session) => {
+            const key =
+                this.formatProgressHubDayKey(
+                    session?.createdAt
+                );
+
+            if (key) {
+                activeDays.add(key);
+            }
+        });
+
+        const cells = [];
+        const today =
+            new Date();
+
+        for (
+            let offset = 27;
+            offset >= 0;
+            offset -= 1
+        ) {
+            const date =
+                new Date(
+                    today.getFullYear(),
+                    today.getMonth(),
+                    today.getDate() -
+                        offset
+                );
+            const key =
+                this.formatProgressHubDayKey(
+                    date.getTime()
+                );
+
+            cells.push({
+                key,
+                active:
+                    activeDays.has(key)
+            });
+        }
+
+        const todayKey =
+            this.formatProgressHubDayKey(
+                today.getTime()
+            );
+        const yesterday =
+            new Date(
+                today.getFullYear(),
+                today.getMonth(),
+                today.getDate() - 1
+            );
+        const yesterdayKey =
+            this.formatProgressHubDayKey(
+                yesterday.getTime()
+            );
+        let anchorKey =
+            activeDays.has(todayKey)
+                ? todayKey
+                : activeDays.has(
+                    yesterdayKey
+                )
+                    ? yesterdayKey
+                    : [...activeDays]
+                        .sort()
+                        .slice(-1)[0] ||
+                        "";
+        let streak = 0;
+
+        while (anchorKey) {
+            if (
+                !activeDays.has(
+                    anchorKey
+                )
+            ) {
+                break;
+            }
+
+            streak += 1;
+            const [year, month, day] =
+                anchorKey
+                    .split("-")
+                    .map((part) =>
+                        Number(part)
+                    );
+            const previous =
+                new Date(
+                    year,
+                    month - 1,
+                    day - 1
+                );
+            anchorKey =
+                this.formatProgressHubDayKey(
+                    previous.getTime()
+                );
+        }
+
+        return {
+            cells,
+            streak
+        };
+    },
+
+    renderProgressHubConsistencyBlock(
+        model
+    ) {
+        const consistency =
+            this.buildProgressHubConsistencyModel(
+                model
+            );
+
+        return `
+            <section class="questions-hub-consistency-block" aria-label="Consistencia recente">
+                <div class="questions-hub-consistency-head">
+                    <span class="questions-hub-summary-label">Consistencia</span>
+                    <strong class="questions-hub-consistency-streak">${consistency.streak} dia${consistency.streak === 1 ? "" : "s"}</strong>
+                </div>
+
+                <div class="questions-hub-consistency-grid" aria-hidden="true">
+                    ${consistency.cells.map((cell) => `
+                        <span class="questions-hub-consistency-cell${cell.active ? " is-active" : ""}"></span>
+                    `).join("")}
+                </div>
+            </section>
+        `;
+    },
+
+    renderProgressHubPlaceholder(
+        title,
+        note
+    ) {
+        return `
+            <section class="questions-hub-placeholder">
+                <span class="questions-hub-summary-label">${this.escapeHtml(title)}</span>
+                <strong class="questions-hub-placeholder-title">${this.escapeHtml(title)}</strong>
+                <p class="questions-hub-placeholder-note">${this.escapeHtml(note)}</p>
+            </section>
+        `;
+    },
+
+    renderProgressHubCurrentBlock(model) {
+        if (
+            model.statsSection ===
+            "resumo"
+        ) {
+            return this.renderProgressHubHero(
+                model
+            );
+        }
+
+        if (
+            model.statsSection ===
+            "melhorar"
+        ) {
+            return this.renderProgressHubImproveBlock(
+                model
+            );
+        }
+
+        if (
+            model.statsSection ===
+            "evolucao"
+        ) {
+            return this.renderProgressHubEvolutionBlock(
+                model
+            );
+        }
+
+        return this.renderProgressHubConsistencyBlock(
+            model
+        );
     },
 
     renderProgressHubMainColumn(
@@ -2477,6 +3795,253 @@ window.QuestionsUI = {
                 </details>
 
                 <details class="questions-hub-section questions-hub-section-series">
+                    <summary class="questions-hub-summary">
+                        <span>Leitura por serie</span>
+                        <strong>${model.seriesBreakdown.length} serie(s) com historico</strong>
+                    </summary>
+                    <div class="questions-hub-bars">
+                        ${model.seriesBreakdown.length ? model.seriesBreakdown.map((serie) => `
+                            <article class="questions-hub-bar-card">
+                                <div class="questions-hub-bar-copy">
+                                    <strong>${this.escapeHtml(serie.label)}</strong>
+                                    <span>${serie.attempts} questoes · ${serie.sessions} sessao(oes) · ${QuestionsService.formatTime(serie.avgTimeMs)}</span>
+                                </div>
+                                <div class="questions-hub-bar-track">
+                                    <div class="questions-hub-bar-fill questions-hub-bar-fill-mint" style="width:${Math.max(8, serie.accuracy)}%"></div>
+                                </div>
+                                <div class="questions-hub-bar-side">${serie.accuracy}% acerto</div>
+                            </article>
+                        `).join("") : `
+                            <div class="questions-empty-inline questions-empty-inline-soft">
+                                Quando outras series entrarem em jogo, esse corte aparece aqui.
+                            </div>
+                        `}
+                    </div>
+                </details>
+            </div>
+        `;
+    },
+
+    renderProgressHubTimeChartsV2(
+        model
+    ) {
+        const items =
+            Array.isArray(
+                model.timeChartItems
+            )
+                ? model.timeChartItems
+                : [];
+        const maxAvg =
+            Math.max(
+                1,
+                ...items.map((item) =>
+                    Number(
+                        item.avgTimeMs || 0
+                    )
+                )
+            );
+        const maxTotal =
+            Math.max(
+                1,
+                ...items.map((item) =>
+                    Number(
+                        item.totalTimeMs || 0
+                    )
+                )
+            );
+
+        return `
+            <details class="questions-hub-section questions-hub-section-time" open>
+                <summary class="questions-hub-summary">
+                    <span>Tempo no recorte</span>
+                    <strong>${this.escapeHtml(model.scopeSummary)}</strong>
+                </summary>
+                <div class="questions-hub-time-grid">
+                    <article class="questions-hub-time-card">
+                        <div class="questions-panel-label">Tempo medio por resposta</div>
+                        <div class="questions-hub-time-bars">
+                            ${items.length ? items.map((item) => `
+                                <div class="questions-hub-time-row">
+                                    <div class="questions-hub-time-copy">
+                                        <strong>${this.escapeHtml(item.label)}</strong>
+                                        <span>${item.attempts || 0} tentativa(s)</span>
+                                    </div>
+                                    <div class="questions-hub-time-track">
+                                        <div class="questions-hub-time-fill questions-hub-time-fill-avg" style="width:${Math.max(8, Math.round(((item.avgTimeMs || 0) / maxAvg) * 100))}%"></div>
+                                    </div>
+                                    <div class="questions-hub-time-value">${QuestionsService.formatTime(item.avgTimeMs || 0)}</div>
+                                </div>
+                            `).join("") : `
+                                <div class="questions-empty-inline questions-empty-inline-soft">
+                                    Ainda nao ha tempo medio suficiente para esse recorte.
+                                </div>
+                            `}
+                        </div>
+                    </article>
+
+                    <article class="questions-hub-time-card">
+                        <div class="questions-panel-label">Tempo total acumulado</div>
+                        <div class="questions-hub-time-bars">
+                            ${items.length ? items.map((item) => `
+                                <div class="questions-hub-time-row">
+                                    <div class="questions-hub-time-copy">
+                                        <strong>${this.escapeHtml(item.label)}</strong>
+                                        <span>${item.attempts || 0} tentativa(s)</span>
+                                    </div>
+                                    <div class="questions-hub-time-track">
+                                        <div class="questions-hub-time-fill questions-hub-time-fill-total" style="width:${Math.max(8, Math.round(((item.totalTimeMs || 0) / maxTotal) * 100))}%"></div>
+                                    </div>
+                                    <div class="questions-hub-time-value">${QuestionsService.formatTime(item.totalTimeMs || 0)}</div>
+                                </div>
+                            `).join("") : `
+                                <div class="questions-empty-inline questions-empty-inline-soft">
+                                    Ainda nao ha tempo total suficiente para esse recorte.
+                                </div>
+                            `}
+                        </div>
+                    </article>
+                </div>
+            </details>
+        `;
+    },
+
+    renderProgressHubMainColumnV2(
+        model
+    ) {
+        const comparisonItems =
+            model.statsScope === "geral"
+                ? model.subjectBreakdown
+                : model.statsScope ===
+                    "serie"
+                    ? model.serieSubjectBreakdown
+                    : model.statsScope ===
+                        "assunto"
+                        ? model.topicBreakdown.filter(
+                            (item) =>
+                                item.topicKey ===
+                                model.activeTopicKey
+                        )
+                        : model.topicBreakdown;
+
+        return `
+            <div class="questions-hub-main-column">
+                <details class="questions-hub-section questions-hub-section-radar" open>
+                    <summary class="questions-hub-summary">
+                        <span>Radar do recorte</span>
+                        <strong>${this.escapeHtml(model.scopeLabel)}</strong>
+                    </summary>
+                    <div class="questions-hub-radar-card">
+                        <div class="questions-hub-filter-block">
+                            <div class="questions-hub-filter-title">Quero ver estatisticas de</div>
+                            <div class="questions-hub-filter-row">
+                                ${model.scopeOptions.map((scope) => `
+                                    <button class="questions-hub-filter-pill questions-hub-filter-pill-scope${model.statsScope === scope.key ? " is-active" : ""}" type="button" data-hub-scope="${scope.key}">
+                                        ${this.escapeHtml(scope.label)}
+                                    </button>
+                                `).join("")}
+                            </div>
+                        </div>
+
+                        ${model.statsScope !== "geral" ? `
+                            <div class="questions-hub-filter-block">
+                                <div class="questions-hub-filter-title">Passo 1 · Serie</div>
+                                <div class="questions-hub-filter-row">
+                                    ${model.series.map((serie) => `
+                                        <button class="questions-hub-filter-pill${Number(model.activeSerie) === Number(serie.key) ? " is-active" : ""}" type="button" data-hub-serie="${serie.key}">
+                                            ${this.escapeHtml(serie.label)}
+                                        </button>
+                                    `).join("")}
+                                </div>
+                            </div>
+                        ` : ""}
+
+                        ${model.statsScope === "materia" || model.statsScope === "assunto" ? `
+                            <div class="questions-hub-filter-block">
+                                <div class="questions-hub-filter-title">Passo 2 · Materia</div>
+                                <div class="questions-hub-filter-row">
+                                    ${model.subjects.length ? model.subjects.map((subject) => `
+                                        <button class="questions-hub-filter-pill questions-hub-filter-pill-subject${model.activeSubject === subject.key ? " is-active" : ""}" type="button" data-hub-subject="${this.escapeHtml(subject.key)}">
+                                            ${this.escapeHtml(subject.label)}
+                                        </button>
+                                    `).join("") : `
+                                        <div class="questions-empty-inline">Nenhuma materia pronta para essa serie ainda.</div>
+                                    `}
+                                </div>
+                            </div>
+                        ` : ""}
+
+                        ${model.statsScope === "assunto" ? `
+                            <div class="questions-hub-filter-block">
+                                <div class="questions-hub-filter-title">Passo 3 · Assunto</div>
+                                <div class="questions-hub-filter-row">
+                                    ${model.topicOptions.length ? model.topicOptions.map((topic) => `
+                                        <button class="questions-hub-filter-pill questions-hub-filter-pill-topic${model.activeTopicKey === topic.key ? " is-active" : ""}" type="button" data-hub-topic="${this.escapeHtml(topic.key)}">
+                                            ${this.escapeHtml(topic.label)}
+                                        </button>
+                                    `).join("") : `
+                                        <div class="questions-empty-inline">Nenhum assunto pronto para esse recorte.</div>
+                                    `}
+                                </div>
+                            </div>
+                        ` : ""}
+
+                        <div class="questions-hub-radar-layout questions-hub-radar-layout--expanded">
+                            ${this.renderProgressHubRadar(model.radarMetrics)}
+                            <div class="questions-hub-radar-meta">
+                                <article class="questions-hub-radar-note">
+                                    <span>Precisao do recorte</span>
+                                    <strong>${Math.round(model.radarMetrics.find((item) => item.label === "Precisao")?.value || 0)}%</strong>
+                                    <small>${this.escapeHtml(model.scopeSummary)}</small>
+                                </article>
+                                <article class="questions-hub-radar-note">
+                                    <span>Tempo medio</span>
+                                    <strong>${QuestionsService.formatTime(model.timeChartItems.length === 1 ? (model.timeChartItems[0]?.avgTimeMs || 0) : model.activeAvgTimeMs)}</strong>
+                                    <small>por resposta dentro do recorte</small>
+                                </article>
+                                <article class="questions-hub-radar-note">
+                                    <span>Tempo total</span>
+                                    <strong>${QuestionsService.formatTime(model.timeChartItems.reduce((total, item) => total + (item.totalTimeMs || 0), 0))}</strong>
+                                    <small>acumulado no recorte atual</small>
+                                </article>
+                                <article class="questions-hub-radar-note">
+                                    <span>Indicadores do radar</span>
+                                    <small>Precisao = acerto, Cobertura = quanto do recorte ja apareceu, Ritmo = tempo medio, Constancia = quantidade de sessoes, Tracao = volume respondido, Dominio = saldo entre acertos e erros.</small>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+
+                ${this.renderProgressHubTimeChartsV2(
+                    model
+                )}
+
+                <details class="questions-hub-section questions-hub-section-subjects" open>
+                    <summary class="questions-hub-summary">
+                        <span>Comparacao do recorte</span>
+                        <strong>${comparisonItems.length} item(ns) visiveis</strong>
+                    </summary>
+                    <div class="questions-hub-bars">
+                        ${comparisonItems.length ? comparisonItems.map((item) => `
+                            <article class="questions-hub-bar-card">
+                                <div class="questions-hub-bar-copy">
+                                    <strong>${this.escapeHtml(item.subjectLabel || item.topicLabel || item.label)}</strong>
+                                    <span>${item.attempts} questoes · ${(item.topicCount || 1)} item(ns) · ${item.accuracy}% de acerto</span>
+                                </div>
+                                <div class="questions-hub-bar-track">
+                                    <div class="questions-hub-bar-fill questions-hub-bar-fill-cyan" style="width:${Math.max(8, item.accuracy || 0)}%"></div>
+                                </div>
+                                <div class="questions-hub-bar-side">${item.errorRate || 0}% erro</div>
+                            </article>
+                        `).join("") : `
+                            <div class="questions-empty-inline questions-empty-inline-soft">
+                                Ainda nao ha comparacao suficiente para esse recorte.
+                            </div>
+                        `}
+                    </div>
+                </details>
+
+                <details class="questions-hub-section questions-hub-section-series" open>
                     <summary class="questions-hub-summary">
                         <span>Leitura por serie</span>
                         <strong>${model.seriesBreakdown.length} serie(s) com historico</strong>
@@ -3378,69 +4943,27 @@ window.QuestionsUI = {
 
         const model =
             this.buildProgressHubModel();
-        const overallAccuracy =
-            Math.round(
-                (Number(
-                    model.overallDashboard
-                        .accuracy || 0
-                ) || 0) * 100
-            );
-        const overallErrorRate =
-            model.overallDashboard
-                .attempts > 0
-                ? Math.round(
-                    (model
-                        .overallDashboard
-                        .errors /
-                        model
-                            .overallDashboard
-                            .attempts) *
-                        100
-                )
-                : 0;
-        const leadingWeakTopic =
-            model.weakSubject[0] ||
-            model.weakOverall[0] ||
-            null;
-        const leadingStrongTopic =
-            model.strongSubject[0] ||
-            model.strongOverall[0] ||
-            null;
-
         return `
-            <section class="questions-card questions-launcher-card questions-progress-hub-card">
-                <div class="questions-head">
-                    <div>
-                        <div class="questions-kicker">Central de progresso</div>
-                        <h2>Leia o que seu treino ja contou</h2>
-                        <p>Essa area vira a leitura principal do estudante: desempenho, reforco, sinais fortes, radar da materia e o que vale fazer a seguir.</p>
-                    </div>
-                </div>
-
-                ${page.getRuntimeNotice() ? `
-                    <div class="questions-inline-notice">
-                        ${page.getRuntimeNotice()}
-                    </div>
-                ` : ""}
-
-                ${this.renderProgressHubHero(
-                    model,
-                    overallAccuracy,
-                    overallErrorRate,
-                    leadingWeakTopic,
-                    leadingStrongTopic
-                )}
-
-                <div class="questions-hub-main-grid">
-                    ${this.renderProgressHubMainColumn(
+            <section class="questions-hub-layout questions-hub-layout--detached">
+                <aside class="questions-hub-sidebar-panel">
+                    ${this.renderProgressHubSidebar(
                         model
                     )}
-                    ${this.renderProgressHubSideColumn(
-                        model
-                    )}
-                </div>
+                </aside>
 
-                ${this.renderProgressHubActions()}
+                <section class="questions-card questions-launcher-card questions-progress-hub-card questions-hub-main-panel">
+                    ${page.getRuntimeNotice() ? `
+                        <div class="questions-inline-notice">
+                            ${page.getRuntimeNotice()}
+                        </div>
+                    ` : ""}
+
+                    <div class="questions-hub-stage">
+                        ${this.renderProgressHubCurrentBlock(
+                            model
+                        )}
+                    </div>
+                </section>
             </section>
         `;
     },
@@ -4184,6 +5707,190 @@ window.QuestionsUI = {
 
         document
             .querySelectorAll(
+                "[data-hub-section]"
+            )
+            .forEach((button) => {
+                button.addEventListener(
+                    "click",
+                    () => {
+                        const sectionKey =
+                            String(
+                                button.dataset
+                                    .hubSection ||
+                                    ""
+                            )
+                                .trim()
+                                .toLowerCase();
+
+                        if (!sectionKey) {
+                            return;
+                        }
+
+                        this.page.updateContext({
+                            statsSection:
+                                sectionKey
+                        });
+                    }
+                );
+            });
+
+        document
+            .querySelectorAll(
+                "[data-hub-train-topic]"
+            )
+            .forEach((button) => {
+                button.addEventListener(
+                    "click",
+                    () => {
+                        const topicKey =
+                            String(
+                                button.dataset
+                                    .hubTrainTopic ||
+                                    ""
+                            ).trim();
+                        const subjectKey =
+                            String(
+                                button.dataset
+                                    .hubTrainSubject ||
+                                    ""
+                            ).trim();
+                        const serieKey =
+                            Number(
+                                button.dataset
+                                    .hubTrainSerie
+                            ) ||
+                            Number(
+                                QuestionsContext
+                                    .get()
+                                    ?.statsSerie || 0
+                            ) ||
+                            Number(
+                                QuestionsContext
+                                    .get()?.serie || 0
+                            ) ||
+                            1;
+                        const current =
+                            QuestionsContext.get();
+
+                        if (
+                            !topicKey ||
+                            !subjectKey
+                        ) {
+                            return;
+                        }
+
+                        this.page.startSession(
+                            {
+                                routeContext:
+                                    {
+                                        ...current,
+                                        mode: "ASSUNTO_UNICO",
+                                        base:
+                                            current
+                                                .statsBase ||
+                                            current.base ||
+                                            "ESCOLAR",
+                                        serie:
+                                            serieKey,
+                                        materia:
+                                            subjectKey,
+                                        topicos:
+                                            [
+                                                topicKey
+                                            ],
+                                        focoPrincipal:
+                                            topicKey
+                                    }
+                            }
+                        );
+                    }
+                );
+            });
+
+        document
+            .querySelectorAll(
+                "[data-hub-serie-select]"
+            )
+            .forEach((select) => {
+                select.addEventListener(
+                    "change",
+                    () => {
+                        const serieKey =
+                            Number(
+                                select.value
+                            ) || 0;
+                        const current =
+                            QuestionsContext.get();
+                        const subjects =
+                            QuestionsService.getSubjectOptions(
+                                this.page,
+                                serieKey
+                            );
+                        const nextSubject =
+                            subjects.find(
+                                (item) =>
+                                    item.key ===
+                                    current
+                                        .statsMateria
+                            )?.key ||
+                            subjects[0]?.key ||
+                            "";
+
+                        if (!serieKey) {
+                            return;
+                        }
+
+                        this.page.updateContext({
+                            statsSerie:
+                                serieKey,
+                            statsMateria:
+                                nextSubject ||
+                                "",
+                            statsTopicKey:
+                                ""
+                        });
+                    }
+                );
+            });
+
+        document
+            .querySelectorAll(
+                "[data-hub-scope]"
+            )
+            .forEach((button) => {
+                button.addEventListener(
+                    "click",
+                    () => {
+                        const scopeKey =
+                            String(
+                                button.dataset
+                                    .hubScope ||
+                                    ""
+                            ).trim();
+
+                        if (!scopeKey) {
+                            return;
+                        }
+
+                        this.page.updateContext(
+                            {
+                                statsScope:
+                                    scopeKey,
+                                ...(scopeKey !==
+                                "assunto"
+                                    ? {
+                                        statsTopicKey:
+                                            ""
+                                    }
+                                    : {})
+                            }
+                        );
+                    }
+                );
+            });
+
+        document
+            .querySelectorAll(
                 "[data-hub-serie]"
             )
             .forEach((button) => {
@@ -4211,20 +5918,15 @@ window.QuestionsUI = {
                             subjects[0]?.key ||
                             "";
 
-                        this.page.updateContext(
-                            {
-                                serie: serieKey
-                            }
-                        );
-
-                        if (nextSubject) {
-                            this.page.updateContext(
-                                {
-                                    materia:
-                                        nextSubject
-                                }
-                            );
-                        }
+                        this.page.updateContext({
+                            statsSerie:
+                                serieKey,
+                            statsMateria:
+                                nextSubject ||
+                                "",
+                            statsTopicKey:
+                                ""
+                        });
                     }
                 );
             });
@@ -4248,12 +5950,39 @@ window.QuestionsUI = {
                             return;
                         }
 
-                        this.page.updateContext(
-                            {
-                                materia:
-                                    subjectKey
-                            }
-                        );
+                        this.page.updateContext({
+                            statsMateria:
+                                subjectKey,
+                            statsTopicKey:
+                                ""
+                        });
+                    }
+                );
+            });
+
+        document
+            .querySelectorAll(
+                "[data-hub-topic]"
+            )
+            .forEach((button) => {
+                button.addEventListener(
+                    "click",
+                    () => {
+                        const topicKey =
+                            String(
+                                button.dataset
+                                    .hubTopic ||
+                                    ""
+                            ).trim();
+
+                        if (!topicKey) {
+                            return;
+                        }
+
+                        this.page.updateContext({
+                            statsTopicKey:
+                                topicKey
+                        });
                     }
                 );
             });

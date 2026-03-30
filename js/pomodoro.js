@@ -16,6 +16,7 @@ const Pomodoro = {
     todayProgressStorageKey: "study_today_flow_v1",
     syncStorageKey: "study_pomodoro_sync_v1",
     syncEnabled: false,
+    todayFlowExpanded: false,
 
     presets: {
         tradicional: {
@@ -845,6 +846,8 @@ const Pomodoro = {
     loadSyncPreference() {
         this.syncEnabled =
             localStorage.getItem(this.syncStorageKey) === "1";
+        this.todayFlowExpanded =
+            this.syncEnabled;
     },
 
     saveSyncPreference() {
@@ -1080,17 +1083,19 @@ const Pomodoro = {
 
         if (this.syncEnabled) {
             current =
-                liveItem ||
-                upcomingItem ||
-                pendingItems.find((item) =>
-                    nowMinutes < item.resetMinutes
-                ) ||
-                null;
+                liveItem || null;
         } else if (!current || nowMinutes >= current.resetMinutes) {
             current = liveItem || upcomingItem || pendingItems[0] || null;
         }
 
-        if (linkedBlock && this.linkedScheduleConfig) {
+        if (
+            linkedBlock &&
+            this.linkedScheduleConfig &&
+            nowMinutes >=
+                linkedBlock.startMinutes &&
+            nowMinutes <
+                linkedBlock.resetMinutes
+        ) {
             current = linkedBlock;
         }
 
@@ -1464,6 +1469,10 @@ const Pomodoro = {
     },
 
     toggleTodaySync() {
+        if (!this.syncEnabled) {
+            this.todayFlowExpanded = true;
+        }
+
         this.syncEnabled = !this.syncEnabled;
         this.saveSyncPreference();
 
@@ -1472,6 +1481,7 @@ const Pomodoro = {
             return;
         }
 
+        this.todayFlowExpanded = false;
         this.pause();
         this.detachLinkedSchedule();
         this.applyDefaultState();
@@ -1540,8 +1550,16 @@ const Pomodoro = {
             this.getTodayFlowState(new Date());
 
         const currentBlock = state.current;
-        const previousBlock = state.previousItem;
-        const nextBlock = state.nextItem;
+        const previousBlock =
+            this.syncEnabled &&
+            !currentBlock
+                ? null
+                : state.previousItem;
+        const nextBlock =
+            this.syncEnabled &&
+            !currentBlock
+                ? null
+                : state.nextItem;
         const status =
             this.resolveTodayStatus(currentBlock, state);
         const referenceBlock =
@@ -1579,16 +1597,9 @@ const Pomodoro = {
             this.syncEnabled
                 ? "is-linked"
                 : "is-idle";
-        const stateLabel =
-            this.syncEnabled
-                ? "Ligado ao quadro"
-                : "Painel desligado";
-        const stateDetail =
-            this.syncEnabled
-                ? (breakRange
-                    ? `Intervalo previsto ${breakRange}`
-                    : "Acompanhando a janela atual da tabela.")
-                : "Ative para travar o relogio no ritmo da tabela.";
+        const isCollapsed =
+            !this.syncEnabled &&
+            !this.todayFlowExpanded;
 
         document.body.classList.toggle(
             "pomodoro-table-sync-on",
@@ -1602,26 +1613,25 @@ const Pomodoro = {
         container.classList.remove("hidden");
 
         container.innerHTML = `
-            <div class="today-flow-shell ${shellState}">
+            <div class="today-flow-shell ${shellState}${isCollapsed ? " is-collapsed" : ""}">
                 <div class="today-flow-center">
                     <button id="todayFlowSyncBtn" class="today-flow-btn is-primary${this.syncEnabled ? " is-on" : ""}" type="button" aria-pressed="${this.syncEnabled ? "true" : "false"}"${referenceBlock ? "" : " disabled"}>
                         Sincronizar com tabela
                     </button>
-                    <div class="today-flow-mode-wrap">
-                        <span class="today-flow-mode-label">Ritmo da tabela</span>
-                        <div class="today-flow-mode">${activeMode}</div>
+                    ${isCollapsed ? "" : `
+                        <div class="today-flow-mode-wrap">
+                            <span class="today-flow-mode-label">Ritmo da tabela</span>
+                            <div class="today-flow-mode">${activeMode}</div>
+                        </div>
+                    `}
+                </div>
+                ${isCollapsed ? "" : `
+                    <div class="today-flow-track ${this.syncEnabled ? "is-live" : "is-muted"}">
+                        ${this.renderFlowSlot("Antes", beforeItem, "previous")}
+                        ${this.renderFlowSlot("Agora", middleItem, isBreakLive ? "break" : (this.syncEnabled ? "current" : "idle"))}
+                        ${this.renderFlowSlot("Proxima", nextBlock, "next")}
                     </div>
-                    <button id="todayFlowOpenQtsBtn" class="today-flow-btn today-flow-btn-secondary" type="button">Abrir quadro</button>
-                </div>
-                <div class="today-flow-track ${this.syncEnabled ? "is-live" : "is-muted"}">
-                    ${this.renderFlowSlot("Antes", beforeItem, "previous")}
-                    ${this.renderFlowSlot("Agora", middleItem, isBreakLive ? "break" : (this.syncEnabled ? "current" : "idle"))}
-                    ${this.renderFlowSlot("Proxima", nextBlock, "next")}
-                </div>
-                <div class="today-flow-breakline">
-                    <strong>${stateLabel}</strong>
-                    <span>${stateDetail}</span>
-                </div>
+                `}
             </div>
         `;
 

@@ -3,7 +3,7 @@
 Documento interno de execucao.
 Nao deve aparecer na interface do produto.
 
-Atualizado em 2026-03-27.
+Atualizado em 2026-03-28.
 
 ---
 
@@ -70,14 +70,24 @@ Ja existe base concreta para seguir:
 - camada de aplicacao de perfis e guardados
 - camada de aplicacao de rota e launcher
 - fallback legado preservado nos pontos criticos
+- boot local validado no navegador com manifesto sem carregar o banco inteiro no primeiro frame
+- carga detalhada do catalogo adiada para sessao, retomada e guardados
+- indice leve `questionId -> topicId` no manifesto para `resume` e `saved`
+- fluxos degradados de `resume` e `saved` com aviso especifico e fallback seguro por snapshot
+- parte critica do legado extraida de `questions.js` para modulos dedicados
+- bateria local de estabilidade fechada para `specific`, `smart`, `pause`, `resume`, `restart`, `saved` e `follow-up`
 
 O que ainda nao esta terminado:
 
-- a UI ainda depende demais de `questions.js`
-- a pagina global ainda concentra seletores e orquestracao
-- o navegador ainda nao foi usado como validacao final desta migracao
+- a UI ainda depende demais de `questions.js` em alguns pontos de orquestracao
+- o corte final do legado ainda nao foi feito
 - o worker de processamento ainda nao entrou
-- o desligamento do legado ainda nao aconteceu
+- a migracao completa de UI ainda nao terminou
+
+Leitura correta deste estado:
+
+- o ciclo atual de estabilizacao e entrega local pode ser tratado como fechado
+- o que sobra agora e continuidade estrutural de medio prazo, nao mais destravamento imediato do modulo
 
 ---
 
@@ -232,19 +242,20 @@ Um bloco so fica marcado como fechado quando:
 
 ## 11. Proxima execucao imediata
 
-A partir deste documento, o proximo ciclo recomendado e:
+A partir deste documento, o ciclo atual pode ser considerado fechado para entrega local.
 
-1. terminar o Bloco A
-2. continuar o Bloco B em paralelo
-3. registrar em cada rodada o que ja saiu de `questions.js`
+Se a frente continuar depois desta entrega, o proximo ciclo recomendado e:
+
+1. abrir o Bloco D e medir gargalos reais antes de introduzir `worker`
+2. revisar o que ainda resta de legado inline em `questions.js`
+3. preparar o Bloco E so depois de nova rodada de validacao no navegador
 
 Objetivos imediatos:
 
-- fechar a sessao nova como trilha dominante
-- reduzir o que ainda depende de objeto completo de questao
-- mover mais seletores, sincronizacao e resumos para camada de aplicacao
-- preparar a UI para consumir contratos novos sem trocar tudo de uma vez
-- espalhar o padrao de view model para o restante do launcher
+- confirmar se ainda existe gargalo real que justifique `worker`
+- manter a abertura por manifesto e a carga parcial como padrao
+- evitar reintroduzir regra pesada em `questions.js`
+- planejar o corte final do legado so quando a validacao estiver novamente fechada
 
 ---
 
