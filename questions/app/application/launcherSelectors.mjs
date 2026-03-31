@@ -238,7 +238,7 @@ export function createQuestionsLauncherSelectors(
                 .filter(Boolean);
         const selectedSeries =
             (ctx.smartSelectedSeries || []).map(
-                (serie) => `${serie}a serie`
+                (serie) => `${serie}ª série`
             );
         const pieces = [];
 
@@ -282,11 +282,11 @@ export function createQuestionsLauncherSelectors(
         const modeLabel =
             sourceMode === "smart"
                 ? "Bloco inteligente"
-                : "Bloco especifico";
+                : "Bloco específico";
         const materia =
             meta.materiaLabel ||
             context.materia ||
-            "Materia";
+            "Matéria";
         const topics =
             Array.isArray(
                 meta.topicsLabel
@@ -322,11 +322,11 @@ export function createQuestionsLauncherSelectors(
         const modeLabel =
             sourceMode === "smart"
                 ? "Treino inteligente"
-                : "Treino especifico";
+                : "Treino específico";
         const materia =
             meta.materiaLabel ||
             context.materia ||
-            "Materia";
+            "Matéria";
         const topics =
             Array.isArray(
                 meta.topicsLabel

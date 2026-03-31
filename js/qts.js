@@ -181,13 +181,15 @@
             window.innerWidth <= 980;
         const isPhone =
             window.innerWidth <= 760;
+        const isCompact =
+            window.innerWidth <= 1280;
         const tracks = [];
 
         if (this.data.showTimeColumn) {
             const min =
-                isPhone ? 58 : isTight ? 64 : 70;
+                isPhone ? 56 : isTight ? 60 : isCompact ? 68 : 92;
             const fr =
-                isPhone ? 0.8 : isTight ? 0.86 : 0.92;
+                isPhone ? 0.82 : isTight ? 0.88 : isCompact ? 0.94 : 1;
             tracks.push(
                 `minmax(${min}px, ${fr}fr)`
             );
@@ -202,9 +204,9 @@
 
             if (isLastDay) {
                 const min =
-                    isPhone ? 52 : isTight ? 58 : 62;
+                    isPhone ? 54 : isTight ? 58 : isCompact ? 66 : 90;
                 const fr =
-                    isPhone ? 0.7 : isTight ? 0.76 : 0.82;
+                    isPhone ? 0.82 : isTight ? 0.88 : isCompact ? 0.94 : 1;
                 tracks.push(
                     `minmax(${min}px, ${fr}fr)`
                 );
@@ -213,9 +215,9 @@
 
             if (isFirstDay) {
                 const min =
-                    isPhone ? 58 : isTight ? 62 : 66;
+                    isPhone ? 58 : isTight ? 62 : isCompact ? 70 : 94;
                 const fr =
-                    isPhone ? 0.82 : isTight ? 0.88 : 0.92;
+                    isPhone ? 0.86 : isTight ? 0.92 : isCompact ? 0.96 : 1;
                 tracks.push(
                     `minmax(${min}px, ${fr}fr)`
                 );
@@ -223,11 +225,21 @@
             }
 
             const min =
-                isPhone ? 62 : isTight ? 68 : 72;
+                isPhone ? 60 : isTight ? 64 : isCompact ? 72 : 96;
             tracks.push(`minmax(${min}px, 1fr)`);
         });
 
         return tracks.join(" ");
+    },
+
+    getDayDisplayName(dayName = "") {
+        const labels = {
+            HORARIO: "Hor\u00e1rio",
+            Terca: "Ter\u00e7a",
+            Sabado: "S\u00e1bado"
+        };
+
+        return labels[dayName] || dayName;
     },
 
     syncResponsiveGridLayout(visibleDays = null) {
@@ -649,21 +661,21 @@
 
     getSubjectDisplayMap() {
         return {
-            matematica: "Matematica",
-            portugues: "Portugues",
+            matematica: "Matemática",
+            portugues: "Português",
             geografia: "Geografia",
-            historia: "Historia",
+            historia: "História",
             biologia: "Biologia",
-            quimica: "Quimica",
-            fisica: "Fisica",
-            ingles: "Ingles",
-            japones: "Japones",
+            quimica: "Química",
+            fisica: "Física",
+            ingles: "Inglês",
+            japones: "Japonês",
             literatura: "Literatura",
-            redacao: "Redacao",
+            redacao: "Redação",
             filosofia: "Filosofia",
             sociologia: "Sociologia",
-            ciencias: "Ciencias",
-            educacaofisica: "Educacao Fisica"
+            ciencias: "Ciências",
+            educacaofisica: "Educação Física"
         };
     },
 
@@ -678,6 +690,22 @@
         }
 
         return compact;
+    },
+
+    formatSubjectCellLabel(value) {
+        const label =
+            String(value || "").trim();
+
+        if (!label) {
+            return "";
+        }
+
+        const alias =
+            this.getSubjectAliasKey(label);
+        const display =
+            this.getSubjectDisplayMap()[alias];
+
+        return display || label;
     },
 
     getSubjectTokens(value) {
@@ -1095,8 +1123,8 @@
                 <div class="qts-summary-card is-empty">
                     <div class="qts-summary-head">
                         <div>
-                            <span class="qts-summary-kicker">Planejado por materia</span>
-                            <strong>Sem materias distribuidas ainda.</strong>
+                            <span class="qts-summary-kicker">Planejado por matéria</span>
+                            <strong>Sem matérias distribuídas ainda.</strong>
                         </div>
                     </div>
                     <p>Preencha os blocos da semana e o quadro mostra onde o seu tempo programado esta concentrado.</p>
@@ -1116,16 +1144,16 @@
             <div class="qts-summary-card${expanded ? " is-expanded" : ""}">
                 <button type="button" class="qts-summary-toggle" aria-expanded="${expanded ? "true" : "false"}">
                     <span class="qts-summary-toggle-copy">
-                        <span class="qts-summary-kicker">Planejado por materia</span>
-                        <strong>${summary.length} materias em ${scopeMeta}</strong>
+                        <span class="qts-summary-kicker">Planejado por matéria</span>
+                        <strong>${summary.length} matérias em ${scopeMeta}</strong>
                     </span>
                     <span class="qts-summary-total">${this.formatLoad(totalMinutes)}</span>
                 </button>
                 <div class="qts-summary-body"${expanded ? "" : " hidden"}>
                     <div class="qts-summary-head">
                     <div>
-                        <span class="qts-summary-kicker">Distribuicao atual</span>
-                        <strong>${summary.length} materias em ${scopeMeta}</strong>
+                        <span class="qts-summary-kicker">Distribuição atual</span>
+                        <strong>${summary.length} matérias em ${scopeMeta}</strong>
                     </div>
                         <div class="qts-summary-total">${this.formatLoad(totalMinutes)}</div>
                     </div>
@@ -1362,7 +1390,7 @@
             <div class="qts-stage-shell">
                 <div class="qts-stage-main">
                     <div class="qts-template-strip">
-                        <div class="qts-template-label" aria-hidden="true">Metodo pomodoro</div>
+                        <div class="qts-template-label" aria-hidden="true">Método pomodoro</div>
                         <div class="qts-templates">
                             <button type="button" ${readOnly ? "disabled" : ""} aria-pressed="${this.data.activeTemplate === "pomo25"}" class="${this.data.activeTemplate === "pomo25" ? "is-active" : ""}" data-template="pomo25">25/5</button>
                             <button type="button" ${readOnly ? "disabled" : ""} aria-pressed="${this.data.activeTemplate === "deep50"}" class="${this.data.activeTemplate === "deep50" ? "is-active" : ""}" data-template="deep50">50/15</button>
@@ -1377,7 +1405,7 @@
                     <h2 class="qts-title">Quadro semanal</h2>
 
                     <div class="qts-grid-shell${readOnly ? " is-readonly" : ""}${futureWeek ? " is-future-week" : ""}">
-                        ${futureWeek ? '<div class="qts-week-overlay qts-week-overlay-future">PROXIMA SEMANA</div>' : ""}
+                        ${futureWeek ? '<div class="qts-week-overlay qts-week-overlay-future">PR\u00d3XIMA SEMANA</div>' : ""}
                         <div id="qtsGrid"></div>
                     </div>
                     <div class="qts-controls">
@@ -1438,7 +1466,7 @@
             rail.className = "qts-detached-index";
             rail.setAttribute(
                 "aria-label",
-                "Indice da tabela"
+                "Índice da tabela"
             );
             document.body.appendChild(rail);
         }
@@ -1447,46 +1475,53 @@
             <section class="qts-detached-block is-week" aria-label="Semanas">
                 <div class="qts-detached-block-label">Semanas</div>
                 <div class="qts-detached-week-nav" role="group" aria-label="Alternar semana">
-                    <button type="button" class="qts-detached-week-button${weekOffset === -1 ? " is-active" : ""}" data-week-nav="-1" aria-pressed="${weekOffset === -1}">
-                        Anterior
+                    <button type="button" class="qts-detached-week-button${weekOffset === -1 ? " is-active" : ""}" data-week-nav="-1" data-compact-icon="←" aria-label="Semana anterior" title="Semana anterior" aria-pressed="${weekOffset === -1}">
+                        <span class="qts-detached-icon" aria-hidden="true">←</span>
+                        <span class="qts-detached-text">Anterior</span>
                     </button>
-                    <button type="button" class="qts-detached-week-button${weekOffset === 0 ? " is-active" : ""}" data-week-nav="0" aria-pressed="${weekOffset === 0}">
-                        Atual
+                    <button type="button" class="qts-detached-week-button${weekOffset === 0 ? " is-active" : ""}" data-week-nav="0" data-compact-icon="•" aria-label="Semana atual" title="Semana atual" aria-pressed="${weekOffset === 0}">
+                        <span class="qts-detached-icon" aria-hidden="true">•</span>
+                        <span class="qts-detached-text">Atual</span>
                     </button>
-                    <button type="button" class="qts-detached-week-button${weekOffset === 1 ? " is-active" : ""}" data-week-nav="1" aria-pressed="${weekOffset === 1}">
-                        Proxima
+                    <button type="button" class="qts-detached-week-button${weekOffset === 1 ? " is-active" : ""}" data-week-nav="1" data-compact-icon="→" aria-label="Próxima semana" title="Próxima semana" aria-pressed="${weekOffset === 1}">
+                        <span class="qts-detached-icon" aria-hidden="true">→</span>
+                        <span class="qts-detached-text">Próxima</span>
                     </button>
                 </div>
             </section>
             <div class="qts-detached-index-divider" aria-hidden="true"></div>
-            <section class="qts-detached-block is-toggle" aria-label="Dias e horario">
-                <div class="qts-detached-block-label">Dias e horario</div>
+            <section class="qts-detached-block is-toggle" aria-label="Dias e horário">
+                <div class="qts-detached-block-label">Dias e horário</div>
                 <div class="qts-detached-toggle-group" role="group" aria-label="Opcoes da tabela">
-                    <label class="qts-detached-toggle">
+                    <label class="qts-detached-toggle" data-compact-icon="◷" aria-label="Mostrar horário" title="Mostrar horário">
                         <input type="checkbox" id="toggleTimeCol"
                             ${this.data.showTimeColumn ? "checked" : ""}
                             ${readOnly ? "disabled" : ""}>
-                        <span>Horario</span>
+                        <span class="qts-detached-icon" aria-hidden="true">◷</span>
+                        <span>Horário</span>
                     </label>
-                    <label class="qts-detached-toggle">
+                    <label class="qts-detached-toggle" data-compact-icon="☀" aria-label="Mostrar domingo" title="Mostrar domingo">
                         <input type="checkbox" id="toggleSunday"
                             ${this.data.showSunday ? "checked" : ""}
                             ${readOnly ? "disabled" : ""}>
+                        <span class="qts-detached-icon" aria-hidden="true">☀</span>
                         <span>Domingo</span>
                     </label>
-                    <label class="qts-detached-toggle">
+                    <label class="qts-detached-toggle" data-compact-icon="★" aria-label="Mostrar sábado" title="Mostrar sábado">
                         <input type="checkbox" id="toggleSaturday"
                             ${this.data.showSaturday ? "checked" : ""}
                             ${readOnly ? "disabled" : ""}>
-                        <span>Sabado</span>
+                        <span class="qts-detached-icon" aria-hidden="true">★</span>
+                        <span>Sábado</span>
                     </label>
                 </div>
             </section>
             <div class="qts-detached-index-divider" aria-hidden="true"></div>
             <section class="qts-detached-block is-summary" aria-label="Planejamento">
                 <div class="qts-detached-block-label">Planejamento</div>
-                <button type="button" class="qts-detached-summary-button${this.data.summaryVisible ? " is-active" : ""}" data-summary-toggle aria-pressed="${this.data.summaryVisible}">
-                    Por materia
+                <button type="button" class="qts-detached-summary-button${this.data.summaryVisible ? " is-active" : ""}" data-summary-toggle data-compact-icon="▤" aria-label="Mostrar planejamento por matéria" title="Mostrar planejamento por matéria" aria-pressed="${this.data.summaryVisible}">
+                    <span class="qts-detached-icon" aria-hidden="true">▤</span>
+                    <span class="qts-detached-text">Por matéria</span>
                 </button>
             </section>
         `;
@@ -1542,7 +1577,7 @@ if(i>0) el.remove()
         win.document.write(`
             <html>
             <head>
-                <title>Quadro HorÃ¡rio</title>
+                <title>Quadro Horário</title>
                 <style>
 
 
@@ -1625,7 +1660,7 @@ backdrop-filter:none !important;
 </style>
             </head>
             <body>
-                <h2>Quadro HorÃ¡rio</h2>
+                <h2>Quadro Horário</h2>
                 ${printContent}
             </body>
             </html>
@@ -2630,7 +2665,9 @@ visibleDays.forEach((day, colIndex) =>
         this.data.grid[row] =
             this.data.grid[row] || {};
         this.data.grid[row][day] =
-            String(cell.textContent || "").trim();
+            this.formatSubjectCellLabel(
+                cell.textContent
+            );
         cell.textContent =
             this.data.grid[row][day];
 
@@ -2645,7 +2682,8 @@ visibleDays.forEach((day, colIndex) =>
             return;
         }
 
-        cell.textContent = value;
+        cell.textContent =
+            this.formatSubjectCellLabel(value);
         this.commitEditableCell(cell);
         this.hideAutocomplete();
         cell.focus();
@@ -2774,7 +2812,7 @@ visibleDays.forEach((day, colIndex) =>
         }
 
         const label =
-            String(value || "").trim();
+            this.formatSubjectCellLabel(value);
         this.data.grid[coord.row][day] =
             label;
         cell.textContent = label;
@@ -2842,10 +2880,12 @@ visibleDays.forEach((day, colIndex) =>
     createHeader(text, meta = "") {
         const cell = document.createElement("div");
         cell.classList.add("qts-header");
+        const displayText =
+            this.getDayDisplayName(text);
 
         if (meta) {
             cell.innerHTML = `
-                <span class="qts-header-day">${text}</span>
+                <span class="qts-header-day">${displayText}</span>
                 <span class="qts-header-date">${meta}</span>
             `;
             return cell;
@@ -2853,7 +2893,7 @@ visibleDays.forEach((day, colIndex) =>
 
         cell.classList.add("qts-header-single");
         cell.innerHTML = `
-            <span class="qts-header-label">${text}</span>
+            <span class="qts-header-label">${displayText}</span>
         `;
         return cell;
     },
@@ -3845,7 +3885,7 @@ const startMinutes = this.parseTimeToMinutes(timeLabel)
 if(startMinutes === null) return
 
 const rawTitle = String(rowData[dayName] || "").trim()
-const title = rawTitle || "Bloco sem titulo"
+const title = rawTitle || "Bloco sem título"
 const studyMinutes =
     this.getStudyDurationFromPlan(
         planState,

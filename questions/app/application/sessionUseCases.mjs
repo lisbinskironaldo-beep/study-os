@@ -127,13 +127,13 @@ export function createQuestionsSessionUseCases(
                 resolvedCount < requestedCount
             ) {
                 return mode === "restart"
-                    ? "Essa sessao foi reiniciada pelo snapshot salvo porque parte das questoes por id nao esta mais disponivel."
-                    : "Essa sessao foi retomada pelo snapshot salvo porque parte das questoes por id nao esta mais disponivel.";
+                    ? "Essa sessão foi reiniciada pelo snapshot salvo porque parte das questões por id não está mais disponível."
+                    : "Essa sessão foi retomada pelo snapshot salvo porque parte das questões por id não está mais disponível.";
             }
 
             return mode === "restart"
-                ? "Essa sessao foi reiniciada pelo snapshot de compatibilidade."
-                : "Essa sessao foi retomada pelo snapshot de compatibilidade.";
+                ? "Essa sessão foi reiniciada pelo snapshot de compatibilidade."
+                : "Essa sessão foi retomada pelo snapshot de compatibilidade.";
         }
 
         if (
@@ -142,19 +142,19 @@ export function createQuestionsSessionUseCases(
             resolvedCount < requestedCount
         ) {
             return hasSnapshot
-                ? "Parte das questoes salvas nao esta mais disponivel e nem o snapshot de compatibilidade conseguiu reconstruir a sessao."
-                : "Parte das questoes salvas nao esta mais disponivel para reconstruir essa sessao.";
+                ? "Parte das questões salvas não está mais disponível e nem o snapshot de compatibilidade conseguiu reconstruir a sessão."
+                : "Parte das questões salvas não está mais disponível para reconstruir essa sessão.";
         }
 
         if (requestedCount > 0) {
             return hasSnapshot
-                ? "Nao foi possivel reconstruir essa sessao pelos ids salvos nem pelo snapshot de compatibilidade."
-                : "Nao foi possivel reconstruir essa sessao pelos ids salvos.";
+                ? "Não foi possível reconstruir essa sessão pelos ids salvos nem pelo snapshot de compatibilidade."
+                : "Não foi possível reconstruir essa sessão pelos ids salvos.";
         }
 
         return mode === "restart"
-            ? "Essa sessao nao pode ser reiniciada porque a lista de questoes nao esta mais disponivel."
-            : "Essa sessao nao tem mais uma lista valida para retomada.";
+            ? "Essa sessão não pode ser reiniciada porque a lista de questões não está mais disponível."
+            : "Essa sessão não tem mais uma lista válida para retomada.";
     }
 
     async function resolveSessionListFromIds(
@@ -496,7 +496,7 @@ export function createQuestionsSessionUseCases(
 
             if (!list.length) {
                 page.runtimeNotice =
-                    "Ainda nao ha questoes preenchidas nesse recorte. Continue alimentando o banco e tente de novo.";
+                    "Ainda não há questões preenchidas nesse recorte. Continue alimentando o banco e tente de novo.";
                 page.openLauncher();
                 return;
             }
@@ -505,8 +505,8 @@ export function createQuestionsSessionUseCases(
         if (!list.length) {
             page.runtimeNotice =
                 hasQuestionIds
-                    ? "Nao foi possivel reconstruir essa sessao pelos ids salvos."
-                    : "Ainda nao ha questoes preenchidas nesse recorte. Continue alimentando o banco e tente de novo.";
+                    ? "Não foi possível reconstruir essa sessão pelos ids salvos."
+                    : "Ainda não há questões preenchidas nesse recorte. Continue alimentando o banco e tente de novo.";
             page.openLauncher();
             return;
         }
@@ -616,7 +616,7 @@ export function createQuestionsSessionUseCases(
         QuestionsStore.flushProfileState(true);
         persistActiveRun("in_progress");
         page.runtimeNotice =
-            "Treino pausado. Voce pode retomar depois.";
+            "Treino pausado. Você pode retomar depois.";
         page.openLauncher(
             page.getSessionReturnView(
                 "home"
@@ -630,7 +630,7 @@ export function createQuestionsSessionUseCases(
 
         if (!run) {
             page.runtimeNotice =
-                "Nao foi possivel reencontrar essa sessao.";
+                "Não foi possível reencontrar essa sessão.";
             page.openLauncher("resume");
             return;
         }
@@ -711,7 +711,7 @@ export function createQuestionsSessionUseCases(
 
         if (!run) {
             page.runtimeNotice =
-                "Nao foi possivel reencontrar essa sessao.";
+                "Não foi possível reencontrar essa sessão.";
             page.openLauncher("resume");
             return;
         }

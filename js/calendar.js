@@ -359,13 +359,13 @@ const Calendar = {
   <input type="hidden" name="eventKey" value="${key}">
 
   <label class="planner-field">
-    <span>Titulo</span>
-    <input name="title" type="text" maxlength="80" placeholder="Ex.: Revisar bioquimica" value="${this.escapeHtml(current.title)}">
+    <span>Título</span>
+    <input name="title" type="text" maxlength="80" placeholder="Ex.: Revisar bioquímica" value="${this.escapeHtml(current.title)}">
   </label>
 
   <div class="planner-field-row">
     <label class="planner-field">
-      <span>Horario</span>
+      <span>Horário</span>
       <input name="time" type="time" value="${current.hour}:${current.minute}">
     </label>
 
@@ -409,7 +409,7 @@ const Calendar = {
 
   <div class="planner-modal-actions">
     <button class="planner-btn planner-btn-ghost" type="button" id="plannerDeleteEventBtn">${this.data[key] ? "Apagar dia" : "Limpar"}</button>
-    <button class="planner-btn planner-btn-ghost" type="button" id="plannerRequestPermissionBtn">Permitir notificacoes</button>
+    <button class="planner-btn planner-btn-ghost" type="button" id="plannerRequestPermissionBtn">Permitir notificações</button>
     <button class="planner-btn planner-btn-primary" type="submit">Salvar</button>
   </div>
 </form>
@@ -499,7 +499,7 @@ const Calendar = {
 
   <div class="planner-field-row">
     <label class="planner-field">
-      <span>Horario</span>
+      <span>Horário</span>
       <input name="time" type="time" value="${current.hour}:${current.minute}">
     </label>
 
@@ -630,7 +630,7 @@ const Calendar = {
 
     requestNotificationPermission() {
         if (!("Notification" in window)) {
-            this.showToast("Seu navegador nao suporta notificacoes.");
+            this.showToast("Seu navegador não suporta notificações.");
             return;
         }
 
@@ -641,10 +641,10 @@ const Calendar = {
     },
 
     getNotificationButtonLabel() {
-        if (!("Notification" in window)) return "Notificacoes indisponiveis";
-        if (Notification.permission === "granted") return "Notificacoes ativas";
-        if (Notification.permission === "denied") return "Notificacoes bloqueadas";
-        return "Permitir notificacoes";
+        if (!("Notification" in window)) return "Notificações indisponíveis";
+        if (Notification.permission === "granted") return "Notificações ativas";
+        if (Notification.permission === "denied") return "Notificações bloqueadas";
+        return "Permitir notificações";
     },
 
     getNotificationPillLabel() {

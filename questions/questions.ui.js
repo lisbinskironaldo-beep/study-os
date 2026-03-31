@@ -861,9 +861,9 @@ window.QuestionsUI = {
     renderFloatingSessionHint() {
         return `
             <section class="questions-card questions-floating-hint">
-                <div class="questions-kicker">Sessao ativa</div>
+                <div class="questions-kicker">Sessão ativa</div>
                 <h2>Janela flutuante aberta</h2>
-                <p>As questoes continuam em uma janela livre para arrastar, minimizar, redimensionar ou maximizar enquanto voce usa o resto do site.</p>
+                <p>As questões continuam em uma janela livre para arrastar, minimizar, redimensionar ou maximizar enquanto você usa o resto do site.</p>
                 <div class="questions-entry-actions">
                     <button id="questionsFloatingFocusBtn" class="questions-secondary-btn" type="button">Trazer para frente</button>
                     <button id="questionsFloatingPauseBtn" class="questions-secondary-btn" type="button">Pausar treino</button>
@@ -876,11 +876,11 @@ window.QuestionsUI = {
         content = ""
     ) {
         return `
-            <section id="questionsFloatingWindow" class="questions-floating-window" aria-label="Janela flutuante de questoes">
+            <section id="questionsFloatingWindow" class="questions-floating-window" aria-label="Janela flutuante de questões">
                 <div class="questions-floating-header" data-questions-float-drag="true">
                     <div class="questions-floating-copy">
                         <div class="questions-floating-kicker">Treino ativo</div>
-                        <div class="questions-floating-title">Questoes</div>
+                        <div class="questions-floating-title">Questões</div>
                     </div>
                     <div class="questions-floating-actions">
                         <button id="questionsFloatingMinBtn" type="button" title="Minimizar">_</button>
@@ -1529,12 +1529,41 @@ window.QuestionsUI = {
             !Number.isFinite(numeric) ||
             numeric <= 0
         ) {
-            return "Serie";
+            return "S\u00e9rie";
         }
 
         return `${numeric}ª Série`;
     },
 
+    normalizeSerieLabel(label) {
+        const text =
+            String(label || "").trim();
+
+        if (!text) {
+            return "S\u00e9rie";
+        }
+
+        const compact =
+            text
+                .normalize("NFD")
+                .replace(/[\u0300-\u036f]/g, "")
+                .toLowerCase()
+                .replace(/\s+/g, " ")
+                .trim();
+        const match =
+            compact.match(
+                /^(\d+)\s*a?\s*serie$/
+            );
+
+        if (match) {
+            return `${match[1]}\u00aa S\u00e9rie`;
+        }
+
+        return text.replace(
+            /\bserie\b/gi,
+            "S\u00e9rie"
+        );
+    },
     formatHubHours(totalHours) {
         const safeHours =
             Number(totalHours) || 0;
@@ -1568,9 +1597,9 @@ window.QuestionsUI = {
                     subjectLabel:
                         String(
                             entry?.subjectLabel ||
-                                "Materia"
+                                "Matéria"
                         ).trim() ||
-                        "Materia",
+                        "Matéria",
                     attempts: 0,
                     hits: 0,
                     errors: 0,
@@ -1721,9 +1750,9 @@ window.QuestionsUI = {
                     subjectLabel:
                         String(
                             session?.subjectLabel ||
-                                "Materia"
+                                "Matéria"
                         ).trim() ||
-                        "Materia",
+                        "Matéria",
                     attempts: 0,
                     hits: 0,
                     errors: 0,
@@ -1900,7 +1929,7 @@ window.QuestionsUI = {
             "Pulso firme",
             "Leitura madura",
             "Mapa avancado",
-            "Dominio em formacao"
+            "Domínio em formação"
         ];
         const tierLabel =
             titles[
@@ -1912,14 +1941,14 @@ window.QuestionsUI = {
                 )
             ];
         let note =
-            "A central vai ficando mais precisa conforme voce responde blocos variados.";
+            "A central vai ficando mais precisa conforme você responde blocos variados.";
 
         if (accuracy >= 80) {
             note =
-                "O ritmo ja esta forte. Vale misturar assuntos e puxar refinamento.";
+                "O ritmo j\u00e1 est\u00e1 forte. Vale misturar assuntos e puxar refinamento.";
         } else if (attempts >= 40) {
             note =
-                "Ja existe massa critica suficiente para sugerir reforcos com mais seguranca.";
+                "J\u00e1 existe massa cr\u00edtica suficiente para sugerir refor\u00e7os com mais seguran\u00e7a.";
         }
 
         return {
@@ -1976,7 +2005,7 @@ window.QuestionsUI = {
 
         return [
             {
-                label: "Precisao",
+                label: "Precisão",
                 value: clamp(accuracy)
             },
             {
@@ -2002,7 +2031,7 @@ window.QuestionsUI = {
                     : 36
             },
             {
-                label: "Constancia",
+                label: "Constância",
                 value: sessions
                     ? clamp(
                         (Math.min(
@@ -2026,7 +2055,7 @@ window.QuestionsUI = {
                 )
             },
             {
-                label: "Dominio",
+                label: "Domínio",
                 value: attempts
                     ? clamp(
                         (((hits - errors) /
@@ -2471,11 +2500,11 @@ window.QuestionsUI = {
             },
             {
                 key: "serie",
-                label: "Serie"
+                label: "S\u00e9rie"
             },
             {
                 key: "materia",
-                label: "Materia"
+                label: "Matéria"
             },
             {
                 key: "assunto",
@@ -2483,9 +2512,9 @@ window.QuestionsUI = {
             }
         ];
         let scopeLabel =
-            "Visao geral";
+            "Vis\u00e3o geral";
         let scopeSummary =
-            "Panorama completo do historico";
+            "Panorama completo do hist\u00f3rico";
         let radarSource = {
             attempts:
                 overallDashboard.attempts,
@@ -2601,7 +2630,7 @@ window.QuestionsUI = {
                         item.key ===
                         activeSubject
                 )?.label ||
-                "Materia";
+                    "Matéria";
             scopeSummary =
                 `${scopeLabel} na ${this.formatSerieLabel(activeSerie)}`;
             radarSource = {
@@ -2653,7 +2682,7 @@ window.QuestionsUI = {
                 )?.label ||
                 "Assunto";
             scopeSummary =
-                `${scopeLabel} em ${subjects.find((item) => item.key === activeSubject)?.label || "Materia"}`;
+                `${scopeLabel} em ${subjects.find((item) => item.key === activeSubject)?.label || "Matéria"}`;
             radarSource = {
                 attempts:
                     selectedTopicEntry
@@ -2732,7 +2761,7 @@ window.QuestionsUI = {
         if (hardestSubject) {
             recommendations.push({
                 kicker:
-                    "Materia que pede cuidado",
+                    "Matéria que pede cuidado",
                 title:
                     hardestSubject.subjectLabel,
                 note: `${hardestSubject.errorRate}% de erro no acumulado recente.`
@@ -2755,7 +2784,7 @@ window.QuestionsUI = {
                     "Painel em aquecimento",
                 title:
                     "Seus sinais ainda vao nascer",
-                note: "Assim que as primeiras sessoes entrarem, a central mostra reforcos, radar e tendencia com mais nitidez."
+                note: "Assim que as primeiras sessões entrarem, a central mostra reforços, radar e tendência com mais nitidez."
             });
         }
 
@@ -2780,7 +2809,7 @@ window.QuestionsUI = {
                     (item) =>
                         item.key ===
                         activeSubject
-                )?.label || "Materia",
+                )?.label || "Matéria",
             overallDashboard,
             overallHours,
             activeTotals,
@@ -2836,21 +2865,21 @@ window.QuestionsUI = {
             },
             {
                 key: "evolucao",
-                label: "Evolucao"
+                label: "Evolu\u00e7\u00e3o"
             },
             {
                 key: "consistencia",
-                label: "Consistencia"
+                label: "Consist\u00eancia"
             }
         ];
 
         return `
-            <aside class="questions-hub-sidebar" aria-label="Tipos de estatistica">
+            <aside class="questions-hub-sidebar" aria-label="Tipos de estat\u00edstica">
                 <div class="questions-hub-sidebar-head">
                     <button class="questions-hub-sidebar-back" type="button" data-launcher-back="true">
                         Voltar
                     </button>
-                    <span class="questions-hub-sidebar-kicker">Estatisticas</span>
+                    <span class="questions-hub-sidebar-kicker">Estat\u00edsticas</span>
                 </div>
                 ${items.map((item) => `
                     <button
@@ -2870,7 +2899,7 @@ window.QuestionsUI = {
                 <div class="questions-hub-toolbar-group">
                     ${model.showSeriesFilters ? `
                         <label class="questions-hub-toolbar-field">
-                            <span class="questions-hub-toolbar-label">Serie</span>
+                            <span class="questions-hub-toolbar-label">S\u00e9rie</span>
                             <span class="questions-hub-select-shell">
                                 <select class="questions-hub-select" data-hub-serie-select>
                                     ${model.series.map((serie) => `
@@ -2890,8 +2919,8 @@ window.QuestionsUI = {
                             : model.statsSection === "melhorar"
                                 ? "Onde melhorar"
                                 : model.statsSection === "evolucao"
-                                    ? "Evolucao"
-                                    : "Consistencia"
+                                    ? "Evolu\u00e7\u00e3o"
+                                    : "Consist\u00eancia"
                     )}
                 </div>
             </section>
@@ -2944,11 +2973,11 @@ window.QuestionsUI = {
                     <strong class="questions-hub-summary-value">${accuracy}%</strong>
                 </article>
                 <article class="questions-hub-summary-card questions-hub-summary-card--${timeTone}">
-                    <span class="questions-hub-summary-label">Tempo medio</span>
+                    <span class="questions-hub-summary-label">Tempo médio</span>
                     <strong class="questions-hub-summary-value">${avgTime}</strong>
                 </article>
                 <article class="questions-hub-summary-card questions-hub-summary-card--${levelTone}">
-                    <span class="questions-hub-summary-label">Nivel atual</span>
+                    <span class="questions-hub-summary-label">N\u00edvel atual</span>
                     <strong class="questions-hub-summary-value">${model.level.level}</strong>
                 </article>
             </section>
@@ -3296,7 +3325,7 @@ window.QuestionsUI = {
         if (!recentAnswers.length) {
             return {
                 hasData: false,
-                label: "Sem historico recente",
+                label: "Sem hist\u00f3rico recente",
                 tone: "neutral",
                 points: "",
                 total: 0
@@ -3455,26 +3484,26 @@ window.QuestionsUI = {
 
         if (!trend.hasData) {
             return `
-                <section class="questions-hub-evolution-block" aria-label="Evolucao recente">
+                <section class="questions-hub-evolution-block" aria-label="Evolu\u00e7\u00e3o recente">
                     <div class="questions-hub-improve-empty">
-                        <span class="questions-hub-summary-label">Evolucao</span>
-                        <strong class="questions-hub-improve-empty-value">Sem historico recente</strong>
+                        <span class="questions-hub-summary-label">Evolu\u00e7\u00e3o</span>
+                        <strong class="questions-hub-improve-empty-value">Sem hist\u00f3rico recente</strong>
                     </div>
                 </section>
             `;
         }
 
         return `
-            <section class="questions-hub-evolution-block" aria-label="Evolucao recente">
+            <section class="questions-hub-evolution-block" aria-label="Evolu\u00e7\u00e3o recente">
                 <div class="questions-hub-evolution-head">
-                    <span class="questions-hub-summary-label">Evolucao</span>
+                    <span class="questions-hub-summary-label">Evolu\u00e7\u00e3o</span>
                     <strong class="questions-hub-evolution-trend questions-hub-evolution-trend--${trend.tone}">
                         ${this.escapeHtml(trend.label)}
                     </strong>
                 </div>
 
                 <div class="questions-hub-evolution-chart questions-hub-evolution-chart--${trend.tone}">
-                    <svg class="questions-hub-evolution-svg" viewBox="0 0 760 148" preserveAspectRatio="none" role="img" aria-label="Tendencia das ultimas respostas">
+                    <svg class="questions-hub-evolution-svg" viewBox="0 0 760 148" preserveAspectRatio="none" role="img" aria-label="Tendência das últimas respostas">
                         <polyline
                             class="questions-hub-evolution-line"
                             fill="none"
@@ -3487,7 +3516,7 @@ window.QuestionsUI = {
                 </div>
 
                 <div class="questions-hub-evolution-foot">
-                    <span>ultimas ${trend.total} questoes</span>
+                    <span>últimas ${trend.total} questões</span>
                     <strong>${trend.latest}%</strong>
                 </div>
             </section>
@@ -3653,9 +3682,9 @@ window.QuestionsUI = {
             );
 
         return `
-            <section class="questions-hub-consistency-block" aria-label="Consistencia recente">
+            <section class="questions-hub-consistency-block" aria-label="Consist\u00eancia recente">
                 <div class="questions-hub-consistency-head">
-                    <span class="questions-hub-summary-label">Consistencia</span>
+                    <span class="questions-hub-summary-label">Consist\u00eancia</span>
                     <strong class="questions-hub-consistency-streak">${consistency.streak} dia${consistency.streak === 1 ? "" : "s"}</strong>
                 </div>
 
@@ -3721,12 +3750,12 @@ window.QuestionsUI = {
             <div class="questions-hub-main-column">
                 <details class="questions-hub-section questions-hub-section-radar" open>
                     <summary class="questions-hub-summary">
-                        <span>Radar da materia</span>
+                        <span>Radar da matéria</span>
                         <strong>${this.escapeHtml(model.activeSubjectLabel)} · ${this.escapeHtml(this.formatSerieLabel(model.activeSerie))}</strong>
                     </summary>
                     <div class="questions-hub-radar-card">
                         <div class="questions-hub-filter-block">
-                            <div class="questions-hub-filter-title">Serie em radar</div>
+                            <div class="questions-hub-filter-title">S\u00e9rie em radar</div>
                             <div class="questions-hub-filter-row">
                                 ${model.series.map((serie) => `
                                     <button class="questions-hub-filter-pill${Number(model.activeSerie) === Number(serie.key) ? " is-active" : ""}" type="button" data-hub-serie="${serie.key}">
@@ -3737,14 +3766,14 @@ window.QuestionsUI = {
                         </div>
 
                         <div class="questions-hub-filter-block">
-                            <div class="questions-hub-filter-title">Materia em radar</div>
+                            <div class="questions-hub-filter-title">Matéria em radar</div>
                             <div class="questions-hub-filter-row">
                                 ${model.subjects.length ? model.subjects.map((subject) => `
                                     <button class="questions-hub-filter-pill questions-hub-filter-pill-subject${model.activeSubject === subject.key ? " is-active" : ""}" type="button" data-hub-subject="${this.escapeHtml(subject.key)}">
                                         ${this.escapeHtml(subject.label)}
                                     </button>
                                 `).join("") : `
-                                    <div class="questions-empty-inline">Nenhuma materia pronta para essa serie ainda.</div>
+                                    <div class="questions-empty-inline">Nenhuma matéria pronta para essa série ainda.</div>
                                 `}
                             </div>
                         </div>
@@ -3755,17 +3784,17 @@ window.QuestionsUI = {
                                 <article class="questions-hub-radar-note">
                                     <span>Leitura ativa</span>
                                     <strong>${model.activeAccuracy}% de acerto</strong>
-                                    <small>${model.activeTotals.attempts || 0} questoes · ${QuestionsService.formatTime(model.activeAvgTimeMs)}</small>
+                                    <small>${model.activeTotals.attempts || 0} questões · ${QuestionsService.formatTime(model.activeAvgTimeMs)}</small>
                                 </article>
                                 <article class="questions-hub-radar-note">
                                     <span>Cobertura do assunto</span>
                                     <strong>${model.activeTopicCoverage}/${model.availableTopicCount || 0}</strong>
-                                    <small>topico(s) ja apareceram nas sessoes</small>
+                                    <small>tópico(s) já apareceram nas sessões</small>
                                 </article>
                                 <article class="questions-hub-radar-note">
                                     <span>Tempo investido</span>
                                     <strong>${this.formatHubHours(model.activeHours)}</strong>
-                                    <small>neste recorte de serie e materia</small>
+                                    <small>neste recorte de série e matéria</small>
                                 </article>
                             </div>
                         </div>
@@ -3774,15 +3803,15 @@ window.QuestionsUI = {
 
                 <details class="questions-hub-section questions-hub-section-subjects" open>
                     <summary class="questions-hub-summary">
-                        <span>Mapa por materia</span>
-                        <strong>${model.subjectBreakdown.length} frente(s) com historico</strong>
+                        <span>Mapa por matéria</span>
+                        <strong>${model.subjectBreakdown.length} frente(s) com hist\u00f3rico</strong>
                     </summary>
                     <div class="questions-hub-bars">
                         ${model.subjectBreakdown.length ? model.subjectBreakdown.map((subject) => `
                             <article class="questions-hub-bar-card">
                                 <div class="questions-hub-bar-copy">
                                     <strong>${this.escapeHtml(subject.subjectLabel)}</strong>
-                                    <span>${subject.attempts} questoes · ${subject.topicCount} assunto(s) · ${subject.accuracy}% de acerto</span>
+                                    <span>${subject.attempts} questões · ${subject.topicCount} assunto(s) · ${subject.accuracy}% de acerto</span>
                                 </div>
                                 <div class="questions-hub-bar-track">
                                     <div class="questions-hub-bar-fill questions-hub-bar-fill-cyan" style="width:${Math.max(8, subject.accuracy)}%"></div>
@@ -3791,7 +3820,7 @@ window.QuestionsUI = {
                             </article>
                         `).join("") : `
                             <div class="questions-empty-inline questions-empty-inline-soft">
-                                As materias vao aparecer aqui conforme as sessoes entrarem.
+                                As matérias vão aparecer aqui conforme as sessões entrarem.
                             </div>
                         `}
                     </div>
@@ -3799,15 +3828,15 @@ window.QuestionsUI = {
 
                 <details class="questions-hub-section questions-hub-section-series">
                     <summary class="questions-hub-summary">
-                        <span>Leitura por serie</span>
-                        <strong>${model.seriesBreakdown.length} serie(s) com historico</strong>
+                        <span>Leitura por s\u00e9rie</span>
+                        <strong>${model.seriesBreakdown.length} s\u00e9rie(s) com hist\u00f3rico</strong>
                     </summary>
                     <div class="questions-hub-bars">
                         ${model.seriesBreakdown.length ? model.seriesBreakdown.map((serie) => `
                             <article class="questions-hub-bar-card">
                                 <div class="questions-hub-bar-copy">
                                     <strong>${this.escapeHtml(serie.label)}</strong>
-                                    <span>${serie.attempts} questoes · ${serie.sessions} sessao(oes) · ${QuestionsService.formatTime(serie.avgTimeMs)}</span>
+                                    <span>${serie.attempts} questões · ${serie.sessions} sessão(ões) · ${QuestionsService.formatTime(serie.avgTimeMs)}</span>
                                 </div>
                                 <div class="questions-hub-bar-track">
                                     <div class="questions-hub-bar-fill questions-hub-bar-fill-mint" style="width:${Math.max(8, serie.accuracy)}%"></div>
@@ -3816,7 +3845,7 @@ window.QuestionsUI = {
                             </article>
                         `).join("") : `
                             <div class="questions-empty-inline questions-empty-inline-soft">
-                                Quando outras series entrarem em jogo, esse corte aparece aqui.
+                                Quando outras s\u00e9ries entrarem em jogo, esse corte aparece aqui.
                             </div>
                         `}
                     </div>
@@ -3861,7 +3890,7 @@ window.QuestionsUI = {
                 </summary>
                 <div class="questions-hub-time-grid">
                     <article class="questions-hub-time-card">
-                        <div class="questions-panel-label">Tempo medio por resposta</div>
+                        <div class="questions-panel-label">Tempo médio por resposta</div>
                         <div class="questions-hub-time-bars">
                             ${items.length ? items.map((item) => `
                                 <div class="questions-hub-time-row">
@@ -3876,7 +3905,7 @@ window.QuestionsUI = {
                                 </div>
                             `).join("") : `
                                 <div class="questions-empty-inline questions-empty-inline-soft">
-                                    Ainda nao ha tempo medio suficiente para esse recorte.
+                                    Ainda não há tempo médio suficiente para esse recorte.
                                 </div>
                             `}
                         </div>
@@ -3898,7 +3927,7 @@ window.QuestionsUI = {
                                 </div>
                             `).join("") : `
                                 <div class="questions-empty-inline questions-empty-inline-soft">
-                                    Ainda nao ha tempo total suficiente para esse recorte.
+                                    Ainda não há tempo total suficiente para esse recorte.
                                 </div>
                             `}
                         </div>
@@ -3960,14 +3989,14 @@ window.QuestionsUI = {
 
                         ${model.statsScope === "materia" || model.statsScope === "assunto" ? `
                             <div class="questions-hub-filter-block">
-                                <div class="questions-hub-filter-title">Passo 2 · Materia</div>
+                                <div class="questions-hub-filter-title">Passo 2 · Matéria</div>
                                 <div class="questions-hub-filter-row">
                                     ${model.subjects.length ? model.subjects.map((subject) => `
                                         <button class="questions-hub-filter-pill questions-hub-filter-pill-subject${model.activeSubject === subject.key ? " is-active" : ""}" type="button" data-hub-subject="${this.escapeHtml(subject.key)}">
                                             ${this.escapeHtml(subject.label)}
                                         </button>
                                     `).join("") : `
-                                        <div class="questions-empty-inline">Nenhuma materia pronta para essa serie ainda.</div>
+                                        <div class="questions-empty-inline">Nenhuma matéria pronta para essa série ainda.</div>
                                     `}
                                 </div>
                             </div>
@@ -3992,12 +4021,12 @@ window.QuestionsUI = {
                             ${this.renderProgressHubRadar(model.radarMetrics)}
                             <div class="questions-hub-radar-meta">
                                 <article class="questions-hub-radar-note">
-                                    <span>Precisao do recorte</span>
-                                    <strong>${Math.round(model.radarMetrics.find((item) => item.label === "Precisao")?.value || 0)}%</strong>
+                                    <span>Precisão do recorte</span>
+                                    <strong>${Math.round(model.radarMetrics.find((item) => item.label === "Precisão")?.value || 0)}%</strong>
                                     <small>${this.escapeHtml(model.scopeSummary)}</small>
                                 </article>
                                 <article class="questions-hub-radar-note">
-                                    <span>Tempo medio</span>
+                                    <span>Tempo médio</span>
                                     <strong>${QuestionsService.formatTime(model.timeChartItems.length === 1 ? (model.timeChartItems[0]?.avgTimeMs || 0) : model.activeAvgTimeMs)}</strong>
                                     <small>por resposta dentro do recorte</small>
                                 </article>
@@ -4008,7 +4037,7 @@ window.QuestionsUI = {
                                 </article>
                                 <article class="questions-hub-radar-note">
                                     <span>Indicadores do radar</span>
-                                    <small>Precisao = acerto, Cobertura = quanto do recorte ja apareceu, Ritmo = tempo medio, Constancia = quantidade de sessoes, Tracao = volume respondido, Dominio = saldo entre acertos e erros.</small>
+                                    <small>Precisão = acerto, Cobertura = quanto do recorte já apareceu, Ritmo = tempo médio, Constância = quantidade de sessões, Tração = volume respondido, Domínio = saldo entre acertos e erros.</small>
                                 </article>
                             </div>
                         </div>
@@ -4029,7 +4058,7 @@ window.QuestionsUI = {
                             <article class="questions-hub-bar-card">
                                 <div class="questions-hub-bar-copy">
                                     <strong>${this.escapeHtml(item.subjectLabel || item.topicLabel || item.label)}</strong>
-                                    <span>${item.attempts} questoes · ${(item.topicCount || 1)} item(ns) · ${item.accuracy}% de acerto</span>
+                                    <span>${item.attempts} questões · ${(item.topicCount || 1)} item(ns) · ${item.accuracy}% de acerto</span>
                                 </div>
                                 <div class="questions-hub-bar-track">
                                     <div class="questions-hub-bar-fill questions-hub-bar-fill-cyan" style="width:${Math.max(8, item.accuracy || 0)}%"></div>
@@ -4038,7 +4067,7 @@ window.QuestionsUI = {
                             </article>
                         `).join("") : `
                             <div class="questions-empty-inline questions-empty-inline-soft">
-                                Ainda nao ha comparacao suficiente para esse recorte.
+                                Ainda não há comparação suficiente para esse recorte.
                             </div>
                         `}
                     </div>
@@ -4046,15 +4075,15 @@ window.QuestionsUI = {
 
                 <details class="questions-hub-section questions-hub-section-series" open>
                     <summary class="questions-hub-summary">
-                        <span>Leitura por serie</span>
-                        <strong>${model.seriesBreakdown.length} serie(s) com historico</strong>
+                        <span>Leitura por s\u00e9rie</span>
+                        <strong>${model.seriesBreakdown.length} s\u00e9rie(s) com hist\u00f3rico</strong>
                     </summary>
                     <div class="questions-hub-bars">
                         ${model.seriesBreakdown.length ? model.seriesBreakdown.map((serie) => `
                             <article class="questions-hub-bar-card">
                                 <div class="questions-hub-bar-copy">
                                     <strong>${this.escapeHtml(serie.label)}</strong>
-                                    <span>${serie.attempts} questoes · ${serie.sessions} sessao(oes) · ${QuestionsService.formatTime(serie.avgTimeMs)}</span>
+                                    <span>${serie.attempts} questões · ${serie.sessions} sessão(ões) · ${QuestionsService.formatTime(serie.avgTimeMs)}</span>
                                 </div>
                                 <div class="questions-hub-bar-track">
                                     <div class="questions-hub-bar-fill questions-hub-bar-fill-mint" style="width:${Math.max(8, serie.accuracy)}%"></div>
@@ -4063,7 +4092,7 @@ window.QuestionsUI = {
                             </article>
                         `).join("") : `
                             <div class="questions-empty-inline questions-empty-inline-soft">
-                                Quando outras series entrarem em jogo, esse corte aparece aqui.
+                                Quando outras s\u00e9ries entrarem em jogo, esse corte aparece aqui.
                             </div>
                         `}
                     </div>
@@ -4091,7 +4120,7 @@ window.QuestionsUI = {
                                     <span>${topic.errors} erro(s) · ${Math.round((topic.accuracy || 0) * 100)}% de acerto</span>
                                 </div>
                             `).join("") : `
-                                <div class="questions-empty-inline">Ainda nao ha erro suficiente para cravar um ponto fraco.</div>
+                                <div class="questions-empty-inline">Ainda não há erro suficiente para cravar um ponto fraco.</div>
                             `}
                         </article>
 
@@ -4100,10 +4129,10 @@ window.QuestionsUI = {
                             ${model.strongOverall.length ? model.strongOverall.map((topic) => `
                                 <div class="questions-hub-topic-row">
                                     <strong>${this.escapeHtml(topic.topicLabel)}</strong>
-                                    <span>${topic.hits} acerto(s) · ${Math.round((topic.accuracy || 0) * 100)}% de precisao</span>
+                                    <span>${topic.hits} acerto(s) · ${Math.round((topic.accuracy || 0) * 100)}% de precis\u00e3o</span>
                                 </div>
                             `).join("") : `
-                                <div class="questions-empty-inline">Os pontos fortes vao ganhar nome assim que os acertos se acumularem.</div>
+                                <div class="questions-empty-inline">Os pontos fortes v\u00e3o ganhar nome assim que os acertos se acumularem.</div>
                             `}
                         </article>
                     </div>
@@ -4112,7 +4141,7 @@ window.QuestionsUI = {
                 <details class="questions-hub-section questions-hub-section-recommendations" open>
                     <summary class="questions-hub-summary">
                         <span>Rotas sugeridas agora</span>
-                        <strong>o que vale reforcar</strong>
+                        <strong>o que vale refor\u00e7ar</strong>
                     </summary>
                     <div class="questions-hub-recommendations">
                         ${model.recommendations.map((item, index) => `
@@ -4126,12 +4155,12 @@ window.QuestionsUI = {
                     <div class="questions-hub-session-strip">
                         ${model.recentSessions.length ? model.recentSessions.map((session) => `
                             <div class="questions-hub-session-pill">
-                                <strong>${this.escapeHtml(session.subjectLabel || "Sessao")}</strong>
-                                <span>${session.accuracy || 0}% · ${session.amount || 0} questoes</span>
+                                <strong>${this.escapeHtml(session.subjectLabel || "Sess\u00e3o")}</strong>
+                                <span>${session.accuracy || 0}% · ${session.amount || 0} questões</span>
                             </div>
                         `).join("") : `
                             <div class="questions-empty-inline questions-empty-inline-soft">
-                                As ultimas sessoes vao aparecer aqui para ajudar na leitura do ritmo.
+                                As últimas sessões vão aparecer aqui para ajudar na leitura do ritmo.
                             </div>
                         `}
                     </div>
@@ -4153,7 +4182,7 @@ window.QuestionsUI = {
                     Treinos salvos
                 </button>
                 <button id="questionsHubReinforceBtn" class="questions-hub-action questions-hub-action-reinforce" type="button">
-                    Treino de reforco
+                    Treino de refor\u00e7o
                 </button>
             </div>
         `;
@@ -4388,7 +4417,7 @@ window.QuestionsUI = {
                                     >
                                         <div class="questions-smart-node-copy">
                                             <strong>${item.label}</strong>
-                                            <span>${item.hasQuestions ? `${item.readyTopicCount || item.topicCount} assunto(s) | ${item.readyQuestionCount || item.count} questoes` : "Sem questoes prontas"}</span>
+                                            <span>${item.hasQuestions ? `${item.readyTopicCount || item.topicCount} assunto(s) | ${item.readyQuestionCount || item.count} questões` : "Sem questões prontas"}</span>
                                         </div>
                                     </button>
                                 `).join("")}
@@ -4401,13 +4430,13 @@ window.QuestionsUI = {
                         </div>
                         ${hiddenSubjects ? `
                             <div class="questions-inline-note questions-smart-subject-note">
-                                +${hiddenSubjects} materia(s) continuam disponiveis. Ajuste as series para refinar mais se quiser.
+                                +${hiddenSubjects} matéria(s) continuam disponíveis. Ajuste as séries para refinar mais se quiser.
                             </div>
                         ` : ""}
                     </div>
                 ` : `
                     <div class="questions-empty-inline">
-                        Nenhuma materia ficou disponivel com as series ativas. Volte e ajuste a selecao.
+                        Nenhuma matéria ficou disponível com as séries ativas. Volte e ajuste a seleção.
                     </div>
                 `}
 
@@ -4490,7 +4519,7 @@ window.QuestionsUI = {
 
                 <section class="questions-smart-config-card">
                     <div class="questions-smart-config-group questions-smart-config-group--solo">
-                        <div class="questions-panel-label">Quantidade de questoes</div>
+                        <div class="questions-panel-label">Quantidade de questões</div>
                         <div class="questions-smart-config-grid questions-smart-config-grid--quantity">
                             ${smartQuestionOptions.map((amount) => `
                                 <button class="questions-pill${smartSelectedQuestionCount === amount ? " is-active" : ""}" type="button" data-smart-question-count="${amount}" aria-pressed="${smartSelectedQuestionCount === amount ? "true" : "false"}">
@@ -4571,7 +4600,7 @@ window.QuestionsUI = {
 
                 <section class="questions-smart-config-card">
                     <div class="questions-smart-config-group">
-                        <div class="questions-panel-label">Quantidade de questoes</div>
+                        <div class="questions-panel-label">Quantidade de questões</div>
                         <div class="questions-smart-config-grid questions-smart-config-grid--quantity">
                             ${timeOptions.map((minutes) => `
                                 <button class="questions-pill${ctx.smartSessionMetric === "tempo" && selectedTimeMinutes === minutes ? " is-active" : ""}" type="button" data-smart-time="${minutes}">
@@ -4588,7 +4617,7 @@ window.QuestionsUI = {
                     </div>
 
                     <div class="questions-smart-config-group">
-                        <div class="questions-panel-label">Quantidade de questoes</div>
+                        <div class="questions-panel-label">Quantidade de questões</div>
                         <div class="questions-smart-config-grid questions-smart-config-grid--quantity">
                             ${questionOptions.map((amount) => `
                                 <button class="questions-pill${selectedQuestionCount === amount ? " is-active" : ""}" type="button" data-smart-question-count="${amount}">
@@ -4607,7 +4636,7 @@ window.QuestionsUI = {
                     ${preview.isReady ? `
                         <div class="questions-smart-config-note">
                             <span>${preview.serieLabel} • ${preview.materiaLabel}</span>
-                            <strong>${preview.trainingValueLabel === "∞" ? "Todas as questoes disponiveis" : `${preview.amount || 0} questoes previstas`}</strong>
+                            <strong>${preview.trainingValueLabel === "∞" ? "Todas as questões disponíveis" : `${preview.amount || 0} questões previstas`}</strong>
                         </div>
                     ` : `
                         <div class="questions-issue-list">
@@ -4677,9 +4706,9 @@ window.QuestionsUI = {
                                     profile.smartGoal
                                 ]?.label || "Continuar",
                                 profile.preferredAmount
-                                    ? `${profile.preferredAmount} questoes`
+                                    ? `${profile.preferredAmount} questões`
                                     : "",
-                                ...(profile.excludedSeries || []).map((serie) => `${serie}a serie fora`),
+                                ...(profile.excludedSeries || []).map((serie) => `${serie}a s\u00e9rie fora`),
                                 ...(profile.excludedBases || []).map((base) => `${base} fora`),
                                 ...excludedSubjects.map((label) => `${label} fora`)
                             ].filter(Boolean);
@@ -4769,8 +4798,8 @@ window.QuestionsUI = {
                                 <article class="questions-profile-item">
                                     <div class="questions-profile-copy">
                                         <strong>${block.name}</strong>
-                                        <span>${block.mode === "smart" ? "Treino inteligente" : "Treino especifico"} | ${meta.amount || block.questionIds?.length || 0} questoes</span>
-                                        <span>${meta.materiaLabel || "Materia"}${topicLabels.length ? ` | ${topicLabels.join(", ")}` : ""}</span>
+                                        <span>${block.mode === "smart" ? "Treino inteligente" : "Treino específico"} | ${meta.amount || block.questionIds?.length || 0} questões</span>
+                                        <span>${meta.materiaLabel || "Matéria"}${topicLabels.length ? ` | ${topicLabels.join(", ")}` : ""}</span>
                                         <span>${block.lastUsedAt ? `Usado por ultimo em ${this.formatDate(block.lastUsedAt)}` : `Salvo em ${this.formatDate(block.updatedAt)}`}</span>
                                     </div>
                                     <div class="questions-profile-actions">
@@ -4828,7 +4857,7 @@ window.QuestionsUI = {
                     <div>
                         <div class="questions-kicker">Retomar treino</div>
                         <h2>Reaproveite rotas recentes</h2>
-                        <p>As sessoes em andamento ficam salvas com progresso. As concluidas continuam disponiveis para reiniciar sem remontar a rota.</p>
+                        <p>As sessões em andamento ficam salvas com progresso. As concluídas continuam disponíveis para reiniciar sem remontar a rota.</p>
                     </div>
 
                     <div class="questions-entry-actions">
@@ -4838,7 +4867,7 @@ window.QuestionsUI = {
 
                 ${!inProgressRuns.length && !completedRuns.length ? `
                     <div class="questions-empty-inline">
-                        Nenhuma sessao salva ainda. Quando voce iniciar um treino, o progresso vai aparecer aqui automaticamente.
+                        Nenhuma sessão salva ainda. Quando você iniciar um treino, o progresso vai aparecer aqui automaticamente.
                     </div>
                 ` : `
                     <div class="questions-run-sections">
@@ -4856,7 +4885,7 @@ window.QuestionsUI = {
                                         <article class="questions-run-item">
                                             <div class="questions-run-copy">
                                                 <strong>${run.title}</strong>
-                                                <span>${run.mode === "smart" ? "Treino inteligente" : "Treino especifico"} | ${run.routeSnapshot?.meta?.amount || run.questionIds?.length || 0} questoes</span>
+                                                <span>${run.mode === "smart" ? "Treino inteligente" : "Treino específico"} | ${run.routeSnapshot?.meta?.amount || run.questionIds?.length || 0} questões</span>
                                                 <span>${run.answers?.length || 0}/${run.questionIds?.length || 0} respondidas | atualizada em ${this.formatDate(run.updatedAt)}</span>
                                             </div>
                                             <div class="questions-run-actions">
@@ -4894,7 +4923,7 @@ window.QuestionsUI = {
                                         <article class="questions-run-item">
                                             <div class="questions-run-copy">
                                                 <strong>${run.title}</strong>
-                                                <span>${run.summary?.accuracy || 0}% de acerto | ${run.summary?.total || run.questionIds?.length || 0} questoes</span>
+                                                <span>${run.summary?.accuracy || 0}% de acerto | ${run.summary?.total || run.questionIds?.length || 0} questões</span>
                                                 <span>Concluida em ${this.formatDate(run.completedAt || run.updatedAt)}</span>
                                             </div>
                                             <div class="questions-run-actions">
@@ -4910,7 +4939,7 @@ window.QuestionsUI = {
                                 </div>
                             ` : `
                                 <div class="questions-empty-inline questions-empty-inline-soft">
-                                    As sessoes concluidas vao aparecer aqui depois dos primeiros treinos.
+                                    As sessões concluídas vão aparecer aqui depois dos primeiros treinos.
                                 </div>
                             `}
                         </article>
@@ -4995,12 +5024,12 @@ window.QuestionsUI = {
         return `
             <div class="questions-session-overview">
                 <article class="questions-session-stat">
-                    <strong>${meta.materiaLabel || "Materia"}</strong>
-                    <span>Materia ativa</span>
+                    <strong>${meta.materiaLabel || "Matéria"}</strong>
+                    <span>Matéria ativa</span>
                 </article>
                 <article class="questions-session-stat">
                     <strong>${meta.amount || total}</strong>
-                    <span>Questoes na rota</span>
+                    <span>Questões na rota</span>
                 </article>
                 <article class="questions-session-stat">
                     <strong>${meta.estimatedDuration || "0 min"}</strong>
@@ -5072,7 +5101,7 @@ window.QuestionsUI = {
             subjectLabel:
                 question.subjectLabel ||
                 meta.materiaLabel ||
-                "Materia",
+                "Matéria",
             topicLabel:
                 question.topicLabel ||
                 "Assunto",
@@ -5124,7 +5153,7 @@ window.QuestionsUI = {
                     <small>${model.errors} erro(s)</small>
                 </article>
                 <article class="questions-session-mini-card">
-                    <span>Materia</span>
+                    <span>Matéria</span>
                     <strong>${model.subjectLabel}</strong>
                 </article>
                 <article class="questions-session-mini-card">
@@ -5142,7 +5171,7 @@ window.QuestionsUI = {
         return `
             <section class="questions-session-info-panel">
                 <div class="questions-session-info-head">
-                    <div class="questions-panel-label">Informacoes da questao</div>
+                    <div class="questions-panel-label">Informações da questão</div>
                     <button id="questionsInfoBackBtn" class="questions-secondary-btn questions-session-info-back-btn" type="button">Voltar</button>
                 </div>
                 <div class="questions-session-info-grid">
@@ -5163,8 +5192,8 @@ window.QuestionsUI = {
                         <strong>${model.errors}</strong>
                     </div>
                     <div>
-                        <span>Serie</span>
-                        <strong>${model.serieLabel}</strong>
+                        <span>S\u00e9rie</span>
+                        <strong>${this.escapeHtml(this.normalizeSerieLabel(model.serieLabel))}</strong>
                     </div>
                     <div>
                         <span>Categoria</span>
@@ -5258,8 +5287,8 @@ window.QuestionsUI = {
 
         return `
             <section class="questions-comment-panel${answer ? " is-ready" : ""}">
-                <div class="questions-panel-label">Comentario rapido</div>
-                <p>${question.explanation || "Comentario ainda nao preenchido para esta questao."}</p>
+                <div class="questions-panel-label">Comentário rápido</div>
+                <p>${question.explanation || "Comentário ainda não preenchido para esta questão."}</p>
                 ${!answer.correct ? `
                     <div class="questions-comment-answer">Resposta esperada: ${answer.correctAnswerLabel || "Nao preenchida"}</div>
                 ` : ""}
@@ -5297,14 +5326,14 @@ window.QuestionsUI = {
                         <span>Se notar algo ruim, ambiguo ou incorreto, envie uma observacao.</span>
                     </div>
                     <button id="questionsContestToggleBtn" class="questions-contest-toggle${isOpen ? " is-open" : ""}" type="button" data-question-contest-toggle="${this.escapeHtml(question.id || "")}">
-                        ${isOpen ? "Fechar contestacao" : "Contestar questao"}
+                        ${isOpen ? "Fechar contestação" : "Contestar questão"}
                     </button>
                 </div>
                 ${isOpen ? `
                     <form id="questionsContestForm" class="questions-contest-form">
                         <textarea id="questionsContestInput" class="questions-contest-field" rows="3" placeholder="${this.escapeHtml(defaultText)}"></textarea>
                         <div class="questions-contest-actions">
-                            <button id="questionsContestSubmitBtn" class="questions-secondary-btn" type="submit">Enviar contestacao</button>
+                            <button id="questionsContestSubmitBtn" class="questions-secondary-btn" type="submit">Enviar contestação</button>
                         </div>
                     </form>
                 ` : ""}
@@ -5448,8 +5477,8 @@ window.QuestionsUI = {
                 );
         const lockedNote =
             scoredCorrect
-                ? "O acerto ja ficou registrado na primeira confirmacao. Esta nova resposta conta so como tentativa."
-                : "O erro ja ficou registrado na primeira confirmacao. Esta nova resposta nao altera o computo.";
+                ? "O acerto j\u00e1 ficou registrado na primeira confirma\u00e7\u00e3o. Esta nova resposta conta s\u00f3 como tentativa."
+                : "O erro já ficou registrado na primeira confirmação. Esta nova resposta não altera o cômputo.";
 
         return `
             <div class="questions-feedback questions-feedback--minimal ${answer.correct ? "is-correct" : "is-wrong"}">
@@ -5462,11 +5491,11 @@ window.QuestionsUI = {
                     </button>
                     <button id="questionsContinueBtn" class="questions-confirm-btn" type="button">
                         <span class="questions-confirm-icon">→</span>
-                        Proxima
+                        Próxima
                     </button>
                 </div>
                 <div class="questions-feedback-note">
-                    ${isLockedOutcome ? lockedNote : "Responder de novo mantem o cronometro correndo e conta como nova tentativa."}
+                    ${isLockedOutcome ? lockedNote : "Responder de novo mant\u00e9m o cron\u00f4metro correndo e conta como nova tentativa."}
                 </div>
             </div>
         `;
@@ -5485,7 +5514,7 @@ window.QuestionsUI = {
 
         return `
             <section class="questions-card questions-results-card">
-                <div class="questions-kicker">Sessao concluida</div>
+                <div class="questions-kicker">Sessão concluída</div>
                 <h2>${summary.accuracy}% de acerto</h2>
                 <p>${summary.headline}. ${summary.nextStep}</p>
 
@@ -5500,7 +5529,7 @@ window.QuestionsUI = {
                     </article>
                     <article class="questions-result-stat">
                         <strong>${QuestionsService.formatTime(summary.avgTimeMs)}</strong>
-                        <span>tempo medio</span>
+                        <span>tempo médio</span>
                     </article>
                     <article class="questions-result-stat">
                         <strong>${summary.topicCount}</strong>
@@ -5510,15 +5539,15 @@ window.QuestionsUI = {
 
                 <div class="questions-results-insights">
                     <article class="questions-result-panel">
-                        <div class="questions-panel-label">Leitura da sessao</div>
+                        <div class="questions-panel-label">Leitura da sessão</div>
                         <div class="questions-result-callouts">
                             <div class="questions-result-callout">
                                 <strong>Ponto forte</strong>
                                 <span>${summary.strongTopic?.topicLabel || "Ainda sem destaque claro nesta rodada."}</span>
                             </div>
                             <div class="questions-result-callout is-warning">
-                                <strong>Ponto para reforco</strong>
-                                <span>${summary.weakTopic?.topicLabel || "Nenhum topico concentrou erro relevante."}</span>
+                                <strong>Ponto para refor\u00e7o</strong>
+                                <span>${summary.weakTopic?.topicLabel || "Nenhum t\u00f3pico concentrou erro relevante."}</span>
                             </div>
                         </div>
                     </article>
@@ -5538,10 +5567,10 @@ window.QuestionsUI = {
 
                 <div class="questions-results-actions">
                     ${summary.weakTopic ? `
-                        <button id="questionsFocusWeakBtn" class="questions-secondary-btn" type="button">Reforcar ponto fraco</button>
+                        <button id="questionsFocusWeakBtn" class="questions-secondary-btn" type="button">Reforçar ponto fraco</button>
                     ` : ""}
                     <button id="questionsReviewErrorsBtn" class="questions-secondary-btn" type="button">Revisar erros</button>
-                    <button id="questionsMixedReviewBtn" class="questions-secondary-btn" type="button">Misturar revisao</button>
+                    <button id="questionsMixedReviewBtn" class="questions-secondary-btn" type="button">Misturar revisão</button>
                     <button id="questionsRestartBtn" class="questions-primary-btn" type="button">Treinar de novo</button>
                     <button id="questionsResultsBackBtn" class="questions-secondary-btn" type="button">Voltar ao launcher</button>
                 </div>
@@ -5577,8 +5606,8 @@ window.QuestionsUI = {
 
         return `
             <section class="questions-stats-card">
-                <div class="questions-panel-label">Radar da materia</div>
-                <h3>${subject?.label || "Materia"}</h3>
+                <div class="questions-panel-label">Radar da matéria</div>
+                <h3>${subject?.label || "Matéria"}</h3>
                 <div class="questions-stats-grid">
                     <article>
                         <strong>${dashboard.attempts}</strong>
@@ -5586,20 +5615,20 @@ window.QuestionsUI = {
                     </article>
                     <article>
                         <strong>${Math.round((dashboard.accuracy || 0) * 100)}%</strong>
-                        <span>precisao</span>
+                        <span>precis\u00e3o</span>
                     </article>
                     <article>
                         <strong>${QuestionsService.formatTime(dashboard.avgTimeMs)}</strong>
-                        <span>tempo medio</span>
+                        <span>tempo médio</span>
                     </article>
                     <article>
                         <strong>${dashboard.totalSessions || 0}</strong>
-                        <span>sessoes</span>
+                        <span>sessões</span>
                     </article>
                 </div>
 
                 <div class="questions-weak-list">
-                    <div class="questions-panel-label">Pontos sensiveis</div>
+                    <div class="questions-panel-label">Pontos sens\u00edveis</div>
                     ${(dashboard.weakTopics || []).length ? dashboard.weakTopics.map((topic) => `
                         <div class="questions-weak-item">
                             <strong>${topic.topicLabel}</strong>
@@ -5607,7 +5636,7 @@ window.QuestionsUI = {
                         </div>
                     `).join("") : `
                         <div class="questions-empty-inline">
-                            O painel vai ganhar vida conforme voce responder questoes.
+                            O painel vai ganhar vida conforme você responder questões.
                         </div>
                     `}
                 </div>
@@ -5617,11 +5646,11 @@ window.QuestionsUI = {
                     ${(dashboard.strongTopics || []).length ? dashboard.strongTopics.slice(0, 3).map((topic) => `
                         <div class="questions-weak-item questions-weak-item-positive">
                             <strong>${topic.topicLabel}</strong>
-                            <span>${Math.round((topic.accuracy || 0) * 100)}% de precisao</span>
+                            <span>${Math.round((topic.accuracy || 0) * 100)}% de precis\u00e3o</span>
                         </div>
                     `).join("") : `
                         <div class="questions-empty-inline">
-                            Os destaques positivos vao aparecer conforme voce acumular acertos.
+                            Os destaques positivos vão aparecer conforme você acumular acertos.
                         </div>
                     `}
                 </div>
@@ -5631,38 +5660,38 @@ window.QuestionsUI = {
                     ${(dashboard.modeBreakdown || []).length ? dashboard.modeBreakdown.map((mode) => `
                         <div class="questions-weak-item">
                             <strong>${mode.modeLabel}</strong>
-                            <span>${mode.sessions} sessao(oes) | ${mode.avgAccuracy}% medio</span>
+                            <span>${mode.sessions} sessão(ões) | ${mode.avgAccuracy}% médio</span>
                         </div>
                     `).join("") : `
                         <div class="questions-empty-inline">
-                            O painel de modos vai ganhar vida conforme voce variar os treinos.
+                            O painel de modos vai ganhar vida conforme você variar os treinos.
                         </div>
                     `}
                 </div>
 
                 <div class="questions-stats-section">
-                    <div class="questions-panel-label">Sessoes focadas</div>
+                    <div class="questions-panel-label">Sessões focadas</div>
                     ${(dashboard.focusedSessions || []).length ? dashboard.focusedSessions.slice(0, 3).map((session) => `
                         <div class="questions-session-log">
-                            <strong>${session.topicLabels?.[0] || session.weakTopicLabel || session.subjectLabel || "Sessao focada"}</strong>
-                            <span>${session.accuracy || 0}% | ${session.amount || 0} questoes</span>
+                            <strong>${session.topicLabels?.[0] || session.weakTopicLabel || session.subjectLabel || "Sess\u00e3o focada"}</strong>
+                            <span>${session.accuracy || 0}% | ${session.amount || 0} questões</span>
                         </div>
                     `).join("") : `
                         <div class="questions-empty-inline">
-                            Quando voce fizer sessoes mais focadas, elas aparecem aqui.
+                            Quando você fizer sessões mais focadas, elas aparecem aqui.
                         </div>
                     `}
                 </div>
 
                 <div class="questions-stats-section">
-                    <div class="questions-panel-label">Resumo rapido</div>
+                    <div class="questions-panel-label">Resumo r\u00e1pido</div>
                     <div class="questions-session-log">
                         <strong>Assunto mais treinado</strong>
-                        <span>${dashboard.mostTrainedTopic?.topicLabel || "Ainda sem lideranca clara"}</span>
+                        <span>${dashboard.mostTrainedTopic?.topicLabel || "Ainda sem lideran\u00e7a clara"}</span>
                     </div>
                     <div class="questions-session-log">
-                        <strong>Ultima leitura</strong>
-                        <span>${dashboard.sessions?.[0]?.accuracy ?? 0}% na sessao mais recente</span>
+                        <strong>Última leitura</strong>
+                        <span>${dashboard.sessions?.[0]?.accuracy ?? 0}% na sessão mais recente</span>
                     </div>
                 </div>
             </section>

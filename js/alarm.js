@@ -39,8 +39,8 @@ const Alarm = {
 `).join("")
         : `
 <div class="planner-empty-state">
-  <div class="planner-empty-title">Nenhum lembrete rapido ativo.</div>
-  <div class="planner-empty-text">Crie um na agenda e ele aparece aqui tambem.</div>
+  <div class="planner-empty-title">Nenhum lembrete rápido ativo.</div>
+  <div class="planner-empty-text">Crie um na agenda e ele aparece aqui também.</div>
 </div>
 `}
   </div>

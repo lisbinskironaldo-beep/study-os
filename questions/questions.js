@@ -31,7 +31,7 @@ window.QuestionsPage = {
             ESCOLAR: {
                 key: "ESCOLAR",
                 label: "Escolar",
-                note: "Treino curricular por serie, materia e assunto.",
+                note: "Treino curricular por s\u00e9rie, mat\u00e9ria e assunto.",
                 available: true
             },
             ENEM: {
@@ -1973,11 +1973,11 @@ window.QuestionsPage = {
             String(view || "").trim();
 
         if (key === "smart_start") {
-            return "Selecione as series para filtrar as questoes e depois toque em Ir.";
+            return "Selecione as s\u00e9ries para filtrar as quest\u00f5es e depois toque em Ir.";
         }
 
         if (key === "smart_subjects") {
-            return "Toque nas materias que quer manter no treino e depois toque em Ir.";
+            return "Toque nas mat\u00e9rias que quer manter no treino e depois toque em Ir.";
         }
 
         return "";
@@ -2277,7 +2277,7 @@ window.QuestionsPage = {
             this.runtimeNotice =
                 this.data.bases.ENEM
                     ?.available
-                    ? "A base ENEM entra na proxima etapa do treino inteligente."
+                    ? "A base ENEM entra na pr\u00f3xima etapa do treino inteligente."
                     : "ENEM continua visivel aqui, mas ainda esta em preparacao.";
             this.render();
             return;
@@ -2336,7 +2336,7 @@ window.QuestionsPage = {
 
         if (!activeOptions.length) {
             this.runtimeNotice =
-                "Selecione pelo menos uma serie para continuar.";
+                "Selecione pelo menos uma s\u00e9rie para continuar.";
             this.render();
             return;
         }
@@ -2424,7 +2424,7 @@ window.QuestionsPage = {
 
         if (!selectedSeries.length) {
             this.runtimeNotice =
-                "Selecione ao menos uma serie antes de escolher as materias.";
+                "Selecione ao menos uma s\u00e9rie antes de escolher as mat\u00e9rias.";
             this.openLauncher(
                 "smart_start"
             );
@@ -2686,7 +2686,7 @@ window.QuestionsPage = {
                 .filter(Boolean);
         const selectedSeries =
             (ctx.smartSelectedSeries || []).map(
-                (serie) => `${serie}a serie`
+                (serie) => `${serie}\u00aa s\u00e9rie`
             );
         const pieces = [];
 
@@ -3113,7 +3113,7 @@ window.QuestionsPage = {
         const materia =
             meta.materiaLabel ||
             context.materia ||
-            "Materia";
+            "Mat\u00e9ria";
         const topics =
             Array.isArray(
                 meta.topicsLabel
@@ -3519,7 +3519,7 @@ window.QuestionsPage = {
             ).length
         ) {
             this.runtimeNotice =
-                "Esse bloco nao tem questoes suficientes para ser refeito.";
+                "Esse bloco n\u00e3o tem quest\u00f5es suficientes para ser refeito.";
             this.openLauncher("saved");
             return;
         }
@@ -3759,7 +3759,7 @@ window.QuestionsPage = {
         const materia =
             meta.materiaLabel ||
             context.materia ||
-            "Materia";
+            "Mat\u00e9ria";
         const topics =
             Array.isArray(
                 meta.topicsLabel
@@ -4043,7 +4043,7 @@ window.QuestionsPage = {
 
         if (!run) {
             this.runtimeNotice =
-                "Nao foi possivel reencontrar essa sessao.";
+                "N\u00e3o foi poss\u00edvel reencontrar essa sess\u00e3o.";
             this.openLauncher("resume");
             return;
         }
@@ -4056,7 +4056,7 @@ window.QuestionsPage = {
 
         if (!list.length) {
             this.runtimeNotice =
-                "Essa sessao nao tem mais uma lista valida para retomada.";
+                "Essa sess\u00e3o n\u00e3o tem mais uma lista v\u00e1lida para retomada.";
             this.openLauncher("resume");
             return;
         }
@@ -4118,7 +4118,7 @@ window.QuestionsPage = {
 
         if (!run) {
             this.runtimeNotice =
-                "Nao foi possivel reencontrar essa sessao.";
+                "N\u00e3o foi poss\u00edvel reencontrar essa sess\u00e3o.";
             this.openLauncher("resume");
             return;
         }
@@ -4131,7 +4131,7 @@ window.QuestionsPage = {
 
         if (!list.length) {
             this.runtimeNotice =
-                "Essa sessao nao pode ser reiniciada porque a lista de questoes nao esta mais disponivel.";
+                "Essa sess\u00e3o n\u00e3o pode ser reiniciada porque a lista de quest\u00f5es n\u00e3o est\u00e1 mais dispon\u00edvel.";
             this.openLauncher("resume");
             return;
         }
@@ -4172,15 +4172,15 @@ window.QuestionsPage = {
 
         if (!run) {
             this.runtimeNotice =
-                "Nao foi possivel encontrar essa sessao.";
+                "N\u00e3o foi poss\u00edvel encontrar essa sess\u00e3o.";
             this.openLauncher("resume");
             return;
         }
 
         this.openConfirmDialog({
-            title: "Apagar sessao",
+            title: "Apagar sess\u00e3o",
             message:
-                `Apagar a sessao "${run.title}"?`,
+                `Apagar a sess\u00e3o "${run.title}"?`,
             confirmLabel: "Apagar",
             anchorRect:
                 options.anchorRect ||
@@ -4662,10 +4662,10 @@ window.QuestionsPage = {
                 QuestionsService.getTrainingValueLabel(
                     current
                 ),
-            serieLabel: `${chosenGroup.serie}a serie`,
+            serieLabel: `${chosenGroup.serie}\u00aa S\u00e9rie`,
             materiaLabel:
                 chosenGroup.materiaLabel ||
-                "Materia",
+                "Mat\u00e9ria",
             focusLabel:
                 selectedTopics.find(
                     (topic) =>
@@ -5151,7 +5151,7 @@ window.QuestionsPage = {
 
             if (!list.length) {
                 this.runtimeNotice =
-                    "Ainda nao ha questoes preenchidas nesse recorte. Continue alimentando o banco e tente de novo.";
+                    "Ainda n\u00e3o h\u00e1 quest\u00f5es preenchidas nesse recorte. Continue alimentando o banco e tente de novo.";
                 this.openLauncher();
                 return;
             }

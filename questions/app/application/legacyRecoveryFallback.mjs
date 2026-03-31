@@ -15,7 +15,7 @@ export function createQuestionsLegacyRecoveryFallback(
 
         if (!run) {
             page.runtimeNotice =
-                "Nao foi possivel reencontrar essa sessao.";
+                "Não foi possível reencontrar essa sessão.";
             page.openLauncher("resume");
             return;
         }
@@ -28,7 +28,7 @@ export function createQuestionsLegacyRecoveryFallback(
 
         if (!list.length) {
             page.runtimeNotice =
-                "Essa sessao nao tem mais uma lista valida para retomada.";
+                "Essa sessão não tem mais uma lista válida para retomada.";
             page.openLauncher("resume");
             return;
         }
@@ -65,7 +65,7 @@ export function createQuestionsLegacyRecoveryFallback(
 
         if (!run) {
             page.runtimeNotice =
-                "Nao foi possivel reencontrar essa sessao.";
+                "Não foi possível reencontrar essa sessão.";
             page.openLauncher("resume");
             return;
         }
@@ -78,7 +78,7 @@ export function createQuestionsLegacyRecoveryFallback(
 
         if (!list.length) {
             page.runtimeNotice =
-                "Essa sessao nao pode ser reiniciada porque a lista de questoes nao esta mais disponivel.";
+                "Essa sessão não pode ser reiniciada porque a lista de questões não está mais disponível.";
             page.openLauncher("resume");
             return;
         }
@@ -131,7 +131,7 @@ export function createQuestionsLegacyRecoveryFallback(
 
         if (!resolvedList.length) {
             page.runtimeNotice =
-                "Esse bloco nao tem questoes suficientes para ser refeito.";
+                "Esse bloco não tem questões suficientes para ser refeito.";
             page.openLauncher("saved");
             return;
         }
