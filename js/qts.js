@@ -177,19 +177,29 @@
             return `repeat(${columns}, 1fr)`;
         }
 
-        const isTight =
-            window.innerWidth <= 980;
         const isPhone =
             window.innerWidth <= 760;
-        const isCompact =
-            window.innerWidth <= 1280;
+        const isVeryTight =
+            window.innerWidth <= 900;
+        const isTight =
+            window.innerWidth <= 980;
+        const isNarrow =
+            window.innerWidth <= 1100;
         const tracks = [];
 
         if (this.data.showTimeColumn) {
             const min =
-                isPhone ? 56 : isTight ? 60 : isCompact ? 68 : 92;
+                isPhone
+                    ? 40
+                    : isVeryTight
+                        ? 44
+                        : isTight
+                            ? 48
+                            : isNarrow
+                                ? 54
+                                : 60;
             const fr =
-                isPhone ? 0.82 : isTight ? 0.88 : isCompact ? 0.94 : 1;
+                isPhone ? 0.72 : isVeryTight ? 0.76 : isTight ? 0.82 : 0.88;
             tracks.push(
                 `minmax(${min}px, ${fr}fr)`
             );
@@ -204,9 +214,17 @@
 
             if (isLastDay) {
                 const min =
-                    isPhone ? 54 : isTight ? 58 : isCompact ? 66 : 90;
+                    isPhone
+                        ? 38
+                        : isVeryTight
+                            ? 42
+                            : isTight
+                                ? 46
+                                : isNarrow
+                                    ? 50
+                                    : 56;
                 const fr =
-                    isPhone ? 0.82 : isTight ? 0.88 : isCompact ? 0.94 : 1;
+                    isPhone ? 0.72 : isVeryTight ? 0.76 : isTight ? 0.82 : 0.88;
                 tracks.push(
                     `minmax(${min}px, ${fr}fr)`
                 );
@@ -215,9 +233,17 @@
 
             if (isFirstDay) {
                 const min =
-                    isPhone ? 58 : isTight ? 62 : isCompact ? 70 : 94;
+                    isPhone
+                        ? 40
+                        : isVeryTight
+                            ? 44
+                            : isTight
+                                ? 48
+                                : isNarrow
+                                    ? 52
+                                    : 58;
                 const fr =
-                    isPhone ? 0.86 : isTight ? 0.92 : isCompact ? 0.96 : 1;
+                    isPhone ? 0.76 : isVeryTight ? 0.8 : isTight ? 0.86 : 0.9;
                 tracks.push(
                     `minmax(${min}px, ${fr}fr)`
                 );
@@ -225,8 +251,18 @@
             }
 
             const min =
-                isPhone ? 60 : isTight ? 64 : isCompact ? 72 : 96;
-            tracks.push(`minmax(${min}px, 1fr)`);
+                isPhone
+                    ? 40
+                    : isVeryTight
+                        ? 44
+                        : isTight
+                            ? 48
+                            : isNarrow
+                                ? 52
+                                : 58;
+            const fr =
+                isPhone ? 0.76 : isVeryTight ? 0.8 : isTight ? 0.86 : 0.9;
+            tracks.push(`minmax(${min}px, ${fr}fr)`);
         });
 
         return tracks.join(" ");
