@@ -97,7 +97,9 @@ export function createQuestionsLauncherViewModels(
             subjectOptions.filter(
                 (item) =>
                     item.active &&
-                    !item.disabled
+                    !item.disabled &&
+                    item.selectedTopicCount !==
+                        0
             ).length;
         const selectableSubjects =
             subjectOptions.filter(

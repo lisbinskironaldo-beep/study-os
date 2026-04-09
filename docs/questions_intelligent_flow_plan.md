@@ -8,6 +8,11 @@ Baseado na decisao de simplificar a entrada do modulo em dois caminhos:
 
 Atualizado em 2026-03-27.
 
+Atualizacao complementar em 2026-04-09:
+
+- a home passa a considerar tambem a entrada `Treino por assunto`
+- esse novo fluxo fica documentado em `docs/questions_topic_training_plan.md`
+
 ---
 
 ## 1. Direcao fechada

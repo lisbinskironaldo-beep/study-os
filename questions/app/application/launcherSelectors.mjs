@@ -148,17 +148,44 @@ export function createQuestionsLauncherSelectors(
                     "pt-BR"
                 );
             })
-            .map((subject) => ({
-                ...subject,
-                active:
-                    (
-                        ctx.smartSelectedSubjects ||
-                        []
-                    ).includes(subject.key) &&
-                    subject.hasQuestions,
-                disabled:
-                    !subject.hasQuestions
-            }));
+            .map((subject) => {
+                const topicOptions =
+                    QuestionsService.getSmartSubjectTopicOptions(
+                        page,
+                        subject.key,
+                        ctx
+                    );
+                const selectedTopicCount =
+                    topicOptions.filter(
+                        (topic) =>
+                            topic.active
+                    ).length;
+                const excludedTopicCount =
+                    Math.max(
+                        topicOptions.length -
+                            selectedTopicCount,
+                        0
+                    );
+
+                return {
+                    ...subject,
+                    active:
+                        (
+                            ctx.smartSelectedSubjects ||
+                            []
+                        ).includes(subject.key) &&
+                        subject.hasQuestions,
+                    disabled:
+                        !subject.hasQuestions,
+                    topicOptions,
+                    selectedTopicCount,
+                    excludedTopicCount,
+                    hasTopicEditor:
+                        topicOptions.length > 1,
+                    hasTopicOverrides:
+                        excludedTopicCount > 0
+                };
+            });
     }
 
     function buildSmartProfilePayload(
@@ -194,6 +221,12 @@ export function createQuestionsLauncherSelectors(
                 ...(ctx.smartExcludedSubjects ||
                     [])
             ],
+            excludedTopicsBySubject: {
+                ...(
+                    ctx.smartExcludedTopicsBySubject ||
+                    {}
+                )
+            },
             preferredAmount:
                 Number(
                     ctx.quantidadeQuestoes

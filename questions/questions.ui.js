@@ -4347,7 +4347,9 @@ window.QuestionsUI = {
             subjectOptions.filter(
                 (item) =>
                     item.active &&
-                    !item.disabled
+                    !item.disabled &&
+                    item.selectedTopicCount !==
+                        0
             ).length;
         const allActive =
             model?.allActive ??
@@ -4378,6 +4380,74 @@ window.QuestionsUI = {
                     visibleSubjects.length,
                 0
             );
+        const editorSubject =
+            subjectOptions.find(
+                (item) =>
+                    item.key ===
+                        page.smartSubjectEditorKey &&
+                    item.active &&
+                    !item.disabled &&
+                    item.hasTopicEditor
+            ) || null;
+        const editorTopics =
+            editorSubject?.topicOptions
+                ?.length
+                ? editorSubject.topicOptions
+                : editorSubject
+                    ? page.getSmartSubjectTopicOptions(
+                        editorSubject.key
+                    )
+                    : [];
+        const editorSelectedCount =
+            editorTopics.filter(
+                (topic) => topic.active
+            ).length;
+        const visibleSubjectCards =
+            visibleSubjects.map(
+                (item, index) => {
+                    const readyQuestionCount =
+                        item.readyQuestionCount ||
+                        item.count ||
+                        0;
+                    const totalTopicCount =
+                        item.topicOptions
+                            ?.length ||
+                        item.readyTopicCount ||
+                        item.topicCount ||
+                        0;
+                    let summary =
+                        item.hasQuestions
+                            ? `${item.readyTopicCount || item.topicCount} assunto(s) | ${readyQuestionCount} questoes`
+                            : "Sem questoes prontas";
+                    let note = "";
+
+                    if (
+                        item.active &&
+                        item.hasTopicEditor &&
+                        item.hasTopicOverrides
+                    ) {
+                        summary = `${item.selectedTopicCount} de ${totalTopicCount} assunto(s) | ${readyQuestionCount} questoes`;
+                        note = `${item.excludedTopicCount} excluido(s)`;
+                    } else if (
+                        item.active &&
+                        item.hasTopicEditor &&
+                        item.selectedTopicCount ===
+                            0
+                    ) {
+                        summary =
+                            "Nenhum assunto ativo";
+                        note =
+                            "Revise as exclusoes";
+                    }
+
+                    return {
+                        ...item,
+                        transform: `translate(-50%, -50%) rotate(${(-90 + ((360 / totalSubjects) * index)).toFixed(2)}deg) translateY(calc(var(--questions-smart-subject-radius, 248px) * -1)) rotate(${(90 - ((360 / totalSubjects) * index)).toFixed(2)}deg)`,
+                        summary,
+                        note
+                    };
+                }
+            );
 
         return `
             <section class="questions-card questions-entry-subview questions-smart-start-card questions-smart-subject-card">
@@ -4399,27 +4469,100 @@ window.QuestionsUI = {
                 ` : ""}
 
                 ${subjectOptions.length ? `
-                    <div class="questions-smart-start-shell">
+                    <div class="questions-smart-start-shell${editorSubject ? " is-topic-editor-open" : ""}">
                         <div class="questions-smart-ring${allActive ? " is-active" : ""}"></div>
                         <button id="questionsSmartSubjectsSelectAllBtn" class="questions-smart-ring-toggle${allActive ? " is-active" : ""}" type="button">
                             ${allActive ? "Desmarcar" : "Marcar todas"}
                         </button>
 
+                        ${editorSubject ? `
+                            <div class="questions-smart-topic-editor" data-smart-topic-editor-panel="true">
+                                <div class="questions-smart-topic-editor-head">
+                                    <div class="questions-smart-topic-editor-copy">
+                                        <span class="questions-kicker">Assuntos da materia</span>
+                                        <strong>${this.escapeHtml(editorSubject.label)}</strong>
+                                        <p>Desmarque o que voce nao quer levar para este treino inteligente.</p>
+                                    </div>
+
+                                    <div class="questions-smart-topic-editor-actions">
+                                        <button class="questions-smart-topic-editor-btn" type="button" data-smart-topic-editor-close="true">
+                                            Fechar
+                                        </button>
+                                        <button class="questions-smart-topic-editor-btn" type="button" data-smart-topic-editor-select-all="${this.escapeHtml(editorSubject.key)}">
+                                            Marcar todos
+                                        </button>
+                                        <button class="questions-smart-topic-editor-btn" type="button" data-smart-topic-editor-clear-all="${this.escapeHtml(editorSubject.key)}">
+                                            Desmarcar todos
+                                        </button>
+                                        <button class="questions-smart-topic-editor-btn is-primary" type="button" data-smart-topic-editor-apply="${this.escapeHtml(editorSubject.key)}">
+                                            Aplicar
+                                        </button>
+                                    </div>
+                                </div>
+
+                                ${editorTopics.length ? `
+                                    <div class="questions-smart-topic-editor-list">
+                                        ${editorTopics.map((topic) => `
+                                            <button
+                                                class="questions-smart-topic-row${topic.active ? " is-active" : " is-excluded"}"
+                                                type="button"
+                                                data-smart-topic-subject="${this.escapeHtml(editorSubject.key)}"
+                                                data-smart-topic-toggle="${this.escapeHtml(topic.key)}"
+                                            >
+                                                <span class="questions-smart-topic-row-check" aria-hidden="true"></span>
+                                                <span class="questions-smart-topic-row-copy">
+                                                    <strong>${this.escapeHtml(topic.label)}</strong>
+                                                    <small>${topic.count || 0} questoes prontas</small>
+                                                </span>
+                                            </button>
+                                        `).join("")}
+                                    </div>
+                                ` : `
+                                    <div class="questions-empty-inline questions-empty-inline-soft">
+                                        Nenhum assunto pronto ficou disponivel para essa materia com o recorte atual.
+                                    </div>
+                                `}
+
+                                <div class="questions-smart-topic-editor-foot">
+                                    <span>${editorSelectedCount} assunto(s) ativo(s)</span>
+                                </div>
+                            </div>
+                        ` : ""}
+
                         <div class="questions-smart-subject-orbit" style="--questions-smart-subject-count: ${totalSubjects};">
                             <div class="questions-smart-subject-grid">
-                                ${visibleSubjects.map((item, index) => `
-                                    <button
-                                        class="questions-smart-node questions-smart-subject-node${item.active ? " is-active" : ""}${item.disabled ? " is-disabled" : ""}"
-                                        type="button"
-                                        style="--questions-smart-node-transform: translate(-50%, -50%) rotate(${(-90 + ((360 / totalSubjects) * index)).toFixed(2)}deg) translateY(calc(var(--questions-smart-subject-radius, 248px) * -1)) rotate(${(90 - ((360 / totalSubjects) * index)).toFixed(2)}deg);"
-                                        data-smart-subject-option="${item.key}"
-                                        ${item.disabled ? "disabled" : ""}
+                                ${visibleSubjectCards.map((item) => `
+                                    <article
+                                        class="questions-smart-node questions-smart-subject-node${item.active ? " is-active" : ""}${item.disabled ? " is-disabled" : ""}${item.hasTopicOverrides ? " has-topic-overrides" : ""}${editorSubject?.key === item.key ? " is-editor-open" : ""}"
+                                        style="--questions-smart-node-transform: ${item.transform};"
                                     >
-                                        <div class="questions-smart-node-copy">
-                                            <strong>${item.label}</strong>
-                                            <span>${item.hasQuestions ? `${item.readyTopicCount || item.topicCount} assunto(s) | ${item.readyQuestionCount || item.count} questões` : "Sem questões prontas"}</span>
-                                        </div>
-                                    </button>
+                                        <button
+                                            class="questions-smart-subject-toggle"
+                                            type="button"
+                                            data-smart-subject-option="${this.escapeHtml(item.key)}"
+                                            ${item.disabled ? "disabled" : ""}
+                                        >
+                                            <div class="questions-smart-node-copy">
+                                                <strong>${this.escapeHtml(item.label)}</strong>
+                                                <span>${this.escapeHtml(item.summary)}</span>
+                                                ${item.note ? `
+                                                    <small class="questions-smart-subject-inline-note">
+                                                        ${this.escapeHtml(item.note)}
+                                                    </small>
+                                                ` : ""}
+                                            </div>
+                                        </button>
+
+                                        ${item.active && !item.disabled && item.hasTopicEditor ? `
+                                            <button
+                                                class="questions-smart-subject-editor-btn${editorSubject?.key === item.key ? " is-active" : ""}"
+                                                type="button"
+                                                data-smart-subject-editor="${this.escapeHtml(item.key)}"
+                                            >
+                                                Excluir assuntos
+                                            </button>
+                                        ` : ""}
+                                    </article>
                                 `).join("")}
                             </div>
 
@@ -6142,6 +6285,108 @@ window.QuestionsUI = {
                     }
                 );
             });
+
+        document
+            .querySelectorAll(
+                "[data-smart-subject-editor]"
+            )
+            .forEach((button) => {
+                button.addEventListener(
+                    "click",
+                    (event) => {
+                        event.preventDefault();
+                        event.stopPropagation();
+                        const subjectKey =
+                            button.dataset
+                                .smartSubjectEditor;
+
+                        if (
+                            this.page
+                                .smartSubjectEditorKey ===
+                            subjectKey
+                        ) {
+                            this.page.closeSmartSubjectEditor();
+                            return;
+                        }
+
+                        this.page.openSmartSubjectEditor(
+                            subjectKey
+                        );
+                    }
+                );
+            });
+
+        document
+            .querySelectorAll(
+                "[data-smart-topic-toggle]"
+            )
+            .forEach((button) => {
+                button.addEventListener(
+                    "click",
+                    () => {
+                        this.page.toggleSmartSubjectTopic(
+                            button.dataset
+                                .smartTopicSubject,
+                            button.dataset
+                                .smartTopicToggle
+                        );
+                    }
+                );
+            });
+
+        document
+            .querySelector(
+                "[data-smart-topic-editor-close]"
+            )
+            ?.addEventListener(
+                "click",
+                () => {
+                    this.page.closeSmartSubjectEditor();
+                }
+            );
+
+        document
+            .querySelector(
+                "[data-smart-topic-editor-apply]"
+            )
+            ?.addEventListener(
+                "click",
+                () => {
+                    this.page.closeSmartSubjectEditor();
+                }
+            );
+
+        document
+            .querySelector(
+                "[data-smart-topic-editor-select-all]"
+            )
+            ?.addEventListener(
+                "click",
+                (event) => {
+                    this.page.setAllSmartSubjectTopics(
+                        event.currentTarget
+                            .dataset
+                            .smartTopicEditorSelectAll,
+                        true
+                    );
+                }
+            );
+
+        document
+            .querySelector(
+                "[data-smart-topic-editor-clear-all]"
+            )
+            ?.addEventListener(
+                "click",
+                (event) => {
+                    this.page.setAllSmartSubjectTopics(
+                        event.currentTarget
+                            .dataset
+                            .smartTopicEditorClearAll,
+                        false
+                    );
+                }
+            );
 
         document.getElementById(
             "questionsSmartStartBtn"

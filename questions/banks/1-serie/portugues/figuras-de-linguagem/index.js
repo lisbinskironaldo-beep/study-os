@@ -1,6 +1,6 @@
 export const figurasDeLinguagem = {
   "id": "portugues_figuras_de_linguagem",
-  "materia": "Portugues",
+  "materia": "Português",
   "serie": [
     1
   ],
@@ -18,30 +18,30 @@ export const figurasDeLinguagem = {
     ],
     "subtopicosBase": [
       "Conceito geral",
-      "Metafora",
-      "Comparacao",
-      "Metonimia",
-      "Personificacao",
-      "Hiperbole",
+      "Metáfora",
+      "Comparação",
+      "Metonímia",
+      "Personificação",
+      "Hipérbole",
       "Eufemismo",
       "Ironia",
-      "Antitese",
+      "Antítese",
       "Onomatopeia",
-      "Aliteracao",
+      "Aliteração",
       "Pleonasmo",
       "Sinestesia",
-      "Identificacao em contexto",
+      "Identificação em contexto",
       "Efeito de sentido",
-      "Diferenciacao entre figuras",
-      "Interpretacao indireta",
+      "Diferenciação entre figuras",
+      "Interpretação indireta",
       "Pegadinha",
-      "Equivalencia de formas"
+      "Equivalência de formas"
     ],
     "habilidadesBase": [
       "identificar figuras de linguagem em enunciados curtos",
       "distinguir figuras de linguagem semelhantes",
       "interpretar efeitos de sentido produzidos por figuras de linguagem",
-      "relacionar exemplos e definicoes de figuras de linguagem",
+      "relacionar exemplos e definições de figuras de linguagem",
       "analisar usos de figuras de linguagem em pequenos textos"
     ]
   },
@@ -51,22 +51,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Metafora",
+      "subtopico": "Metáfora",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
       "enunciado": "Na frase \"A vida e um sopro.\", qual figura de linguagem aparece?",
       "opcoes": [
-        "Metafora",
-        "Comparacao",
-        "Metonimia",
-        "Personificacao"
+        "Metáfora",
+        "Comparação",
+        "Metonímia",
+        "Personificação"
       ],
-      "correta": "Metafora",
-      "comentario": "Metafora aproxima dois sentidos sem conectivo comparativo explicito.",
+      "correta": "Metáfora",
+      "comentario": "Metáfora aproxima dois sentidos sem conectivo comparativo explícito.",
       "tempoEstimado": 20,
       "tags": [
         "metafora",
@@ -89,22 +89,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta um exemplo de Comparacao?",
+      "enunciado": "Qual alternativa apresenta um exemplo de Comparação?",
       "opcoes": [
         "A voz dele soa suave como veludo.",
         "O vento cantava na janela.",
-        "Ja te falei isso mil vezes.",
-        "A paciente nao resistiu."
+        "Já te falei isso mil vezes.",
+        "A paciente não resistiu."
       ],
       "correta": "A voz dele soa suave como veludo.",
-      "comentario": "A alternativa correta apresenta Comparacao, pois aproxima elementos por meio de conectivos como tal qual como parece.",
+      "comentario": "A alternativa correta apresenta Comparação, pois aproxima elementos por meio de conectivos como tal qual como parece.",
       "tempoEstimado": 20,
       "tags": [
         "comparacao",
@@ -127,20 +127,20 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Metonimia",
+      "subtopico": "Metonímia",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A afirmacao \"Na frase Li Machado de Assis nas ferias., a figura de linguagem e Metonimia\" esta correta?",
+      "enunciado": "A afirmação \"Na frase Li Machado de Assis nas férias., a figura de linguagem é Metonímia\" está correta?",
       "opcoes": [
         "Verdadeiro",
         "Falso"
       ],
       "correta": "Verdadeiro",
-      "comentario": "Esta correta porque Metonimia substitui um termo por outro com relacao de proximidade.",
+      "comentario": "Está correta porque Metonímia substitui um termo por outro com relação de proximidade.",
       "tempoEstimado": 20,
       "tags": [
         "metonimia",
@@ -163,22 +163,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Personificacao",
+      "subtopico": "Personificação",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
       "enunciado": "Na frase \"O vento cantava na janela.\", qual figura de linguagem aparece?",
       "opcoes": [
-        "Personificacao",
-        "Metafora",
-        "Metonimia",
+        "Personificação",
+        "Metáfora",
+        "Metonímia",
         "Onomatopeia"
       ],
-      "correta": "Personificacao",
-      "comentario": "Personificacao atribui caracteristicas humanas a seres inanimados ou abstratos.",
+      "correta": "Personificação",
+      "comentario": "Personificação atribui características humanas a seres inanimados ou abstratos.",
       "tempoEstimado": 20,
       "tags": [
         "personificacao",
@@ -201,22 +201,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta um exemplo de Hiperbole?",
+      "enunciado": "Qual alternativa apresenta um exemplo de Hipérbole?",
       "opcoes": [
-        "Esperei uma eternidade pelo onibus.",
+        "Esperei uma eternidade pelo ônibus.",
         "O rato roeu a roupa do rei de Roma.",
         "Subiu para cima sem olhar para tras.",
-        "Havia um silencio amargo na despedida."
+        "Havia um silêncio amargo na despedida."
       ],
-      "correta": "Esperei uma eternidade pelo onibus.",
-      "comentario": "A alternativa correta apresenta Hiperbole, pois exagera intencionalmente uma ideia para produzir enfase.",
+      "correta": "Esperei uma eternidade pelo ônibus.",
+      "comentario": "A alternativa correta apresenta Hipérbole, pois exagera intencionalmente uma ideia para produzir ênfase.",
       "tempoEstimado": 20,
       "tags": [
         "hiperbole",
@@ -239,20 +239,20 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Eufemismo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A afirmacao \"Na frase Ele partiu ontem., a figura de linguagem e Eufemismo\" esta correta?",
+      "enunciado": "A afirmação \"Na frase Ele partiu ontem., a figura de linguagem é Eufemismo\" está correta?",
       "opcoes": [
         "Verdadeiro",
         "Falso"
       ],
       "correta": "Verdadeiro",
-      "comentario": "Esta correta porque Eufemismo suaviza uma ideia dura desagradavel ou delicada.",
+      "comentario": "Está correta porque Eufemismo suaviza uma ideia dura desagradavel ou delicada.",
       "tempoEstimado": 20,
       "tags": [
         "eufemismo",
@@ -275,7 +275,7 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Ironia",
       "dificuldadeLabel": "facil",
@@ -286,8 +286,8 @@ export const figurasDeLinguagem = {
       "opcoes": [
         "Ironia",
         "Eufemismo",
-        "Hiperbole",
-        "Antitese"
+        "Hipérbole",
+        "Antítese"
       ],
       "correta": "Ironia",
       "comentario": "Ironia expressa um sentido contrario ao literal para criticar ou provocar humor.",
@@ -313,22 +313,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta um exemplo de Antitese?",
+      "enunciado": "Qual alternativa apresenta um exemplo de Antítese?",
       "opcoes": [
         "O jovem carregava calma e pressa ao mesmo tempo.",
         "O vento cantava na janela.",
-        "Ja te falei isso mil vezes.",
-        "A paciente nao resistiu."
+        "Já te falei isso mil vezes.",
+        "A paciente não resistiu."
       ],
       "correta": "O jovem carregava calma e pressa ao mesmo tempo.",
-      "comentario": "A alternativa correta apresenta Antitese, pois aproxima palavras ou ideias de sentido oposto.",
+      "comentario": "A alternativa correta apresenta Antítese, pois aproxima palavras ou ideias de sentido oposto.",
       "tempoEstimado": 20,
       "tags": [
         "antitese",
@@ -351,20 +351,20 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Onomatopeia",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A afirmacao \"Na frase O tic tac do relogio dominava a sala., a figura de linguagem e Onomatopeia\" esta correta?",
+      "enunciado": "A afirmação \"Na frase O tic tac do relogio dominava a sala., a figura de linguagem é Onomatopeia\" está correta?",
       "opcoes": [
         "Verdadeiro",
         "Falso"
       ],
       "correta": "Verdadeiro",
-      "comentario": "Esta correta porque Onomatopeia imita ou sugere sons por meio de palavras.",
+      "comentario": "Está correta porque Onomatopeia imita ou sugere sons por meio de palavras.",
       "tempoEstimado": 20,
       "tags": [
         "onomatopeia",
@@ -387,22 +387,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Aliteracao",
+      "subtopico": "Aliteração",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
       "enunciado": "Na frase \"O rato roeu a roupa do rei de Roma.\", qual figura de linguagem aparece?",
       "opcoes": [
-        "Aliteracao",
+        "Aliteração",
         "Onomatopeia",
         "Sinestesia",
-        "Comparacao"
+        "Comparação"
       ],
-      "correta": "Aliteracao",
-      "comentario": "Aliteracao repete sons consonantais para produzir efeito sonoro.",
+      "correta": "Aliteração",
+      "comentario": "Aliteração repete sons consonantais para produzir efeito sonoro.",
       "tempoEstimado": 20,
       "tags": [
         "aliteracao",
@@ -425,22 +425,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta um exemplo de Metafora?",
+      "enunciado": "Qual alternativa apresenta um exemplo de Metáfora?",
       "opcoes": [
         "Seu olhar era gelo.",
         "A voz doce da cantora acalmou a plateia.",
         "O menino ficou branco como papel.",
-        "Tomei duas xicaras antes da prova."
+        "Tomei duas xícaras antes da prova."
       ],
       "correta": "Seu olhar era gelo.",
-      "comentario": "A alternativa correta apresenta Metafora, pois aproxima dois sentidos sem conectivo comparativo explicito.",
+      "comentario": "A alternativa correta apresenta Metáfora, pois aproxima dois sentidos sem conectivo comparativo explícito.",
       "tempoEstimado": 20,
       "tags": [
         "metafora",
@@ -463,20 +463,20 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Comparacao",
+      "subtopico": "Comparação",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A afirmacao \"Na frase O menino ficou branco como papel., a figura de linguagem e Comparacao\" esta correta?",
+      "enunciado": "A afirmação \"Na frase O menino ficou branco como papel., a figura de linguagem é Comparação\" está correta?",
       "opcoes": [
         "Verdadeiro",
         "Falso"
       ],
       "correta": "Verdadeiro",
-      "comentario": "Esta correta porque Comparacao aproxima elementos por meio de conectivos como tal qual como parece.",
+      "comentario": "Está correta porque Comparação aproxima elementos por meio de conectivos como tal qual como parece.",
       "tempoEstimado": 20,
       "tags": [
         "comparacao",
@@ -499,22 +499,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Metonimia",
+      "subtopico": "Metonímia",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Na frase \"A sala aplaudiu de pe o palestrante.\", qual figura de linguagem aparece?",
+      "enunciado": "Na frase \"A sala aplaudiu de pé o palestrante.\", qual figura de linguagem aparece?",
       "opcoes": [
-        "Metonimia",
-        "Metafora",
+        "Metonímia",
+        "Metáfora",
         "Ironia",
-        "Personificacao"
+        "Personificação"
       ],
-      "correta": "Metonimia",
-      "comentario": "Metonimia substitui um termo por outro com relacao de proximidade.",
+      "correta": "Metonímia",
+      "comentario": "Metonímia substitui um termo por outro com relação de proximidade.",
       "tempoEstimado": 20,
       "tags": [
         "metonimia",
@@ -537,22 +537,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta um exemplo de Personificacao?",
+      "enunciado": "Qual alternativa apresenta um exemplo de Personificação?",
       "opcoes": [
         "O sol sorriu cedo no horizonte.",
         "Ele partiu ontem.",
-        "Nossa, estudar na vespera e mesmo um plano genial.",
+        "Nossa, estudar na véspera e mesmo um plano genial.",
         "No mesmo gesto havia amor e odio."
       ],
       "correta": "O sol sorriu cedo no horizonte.",
-      "comentario": "A alternativa correta apresenta Personificacao, pois atribui caracteristicas humanas a seres inanimados ou abstratos.",
+      "comentario": "A alternativa correta apresenta Personificação, pois atribui características humanas a seres inanimados ou abstratos.",
       "tempoEstimado": 20,
       "tags": [
         "personificacao",
@@ -575,20 +575,20 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Hiperbole",
+      "subtopico": "Hipérbole",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A afirmacao \"Na frase Ja te falei isso mil vezes., a figura de linguagem e Hiperbole\" esta correta?",
+      "enunciado": "A afirmação \"Na frase Já te falei isso mil vezes., a figura de linguagem é Hipérbole\" está correta?",
       "opcoes": [
         "Verdadeiro",
         "Falso"
       ],
       "correta": "Verdadeiro",
-      "comentario": "Esta correta porque Hiperbole exagera intencionalmente uma ideia para produzir enfase.",
+      "comentario": "Está correta porque Hipérbole exagera intencionalmente uma ideia para produzir ênfase.",
       "tempoEstimado": 20,
       "tags": [
         "hiperbole",
@@ -611,7 +611,7 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Eufemismo",
       "dificuldadeLabel": "facil",
@@ -622,8 +622,8 @@ export const figurasDeLinguagem = {
       "opcoes": [
         "Eufemismo",
         "Ironia",
-        "Hiperbole",
-        "Metonimia"
+        "Hipérbole",
+        "Metonímia"
       ],
       "correta": "Eufemismo",
       "comentario": "Eufemismo suaviza uma ideia dura desagradavel ou delicada.",
@@ -649,7 +649,7 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "facil",
@@ -658,12 +658,12 @@ export const figurasDeLinguagem = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual alternativa apresenta um exemplo de Ironia?",
       "opcoes": [
-        "Parabens pela organizacao, falou diante do quarto em caos.",
+        "Parabéns pela organização, falou diante do quarto em caos.",
         "A voz doce da cantora acalmou a plateia.",
         "Seu olhar era gelo.",
         "A voz dele soa suave como veludo."
       ],
-      "correta": "Parabens pela organizacao, falou diante do quarto em caos.",
+      "correta": "Parabéns pela organização, falou diante do quarto em caos.",
       "comentario": "A alternativa correta apresenta Ironia, pois expressa um sentido contrario ao literal para criticar ou provocar humor.",
       "tempoEstimado": 20,
       "tags": [
@@ -687,20 +687,20 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Antitese",
+      "subtopico": "Antítese",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A afirmacao \"Na frase A cidade vivia entre luz e sombra., a figura de linguagem e Antitese\" esta correta?",
+      "enunciado": "A afirmação \"Na frase A cidade vivia entre luz e sombra., a figura de linguagem é Antítese\" está correta?",
       "opcoes": [
         "Verdadeiro",
         "Falso"
       ],
       "correta": "Verdadeiro",
-      "comentario": "Esta correta porque Antitese aproxima palavras ou ideias de sentido oposto.",
+      "comentario": "Está correta porque Antítese aproxima palavras ou ideias de sentido oposto.",
       "tempoEstimado": 20,
       "tags": [
         "antitese",
@@ -723,7 +723,7 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Onomatopeia",
       "dificuldadeLabel": "facil",
@@ -733,8 +733,8 @@ export const figurasDeLinguagem = {
       "enunciado": "Na frase \"A porta fez bum com o vento.\", qual figura de linguagem aparece?",
       "opcoes": [
         "Onomatopeia",
-        "Aliteracao",
-        "Personificacao",
+        "Aliteração",
+        "Personificação",
         "Sinestesia"
       ],
       "correta": "Onomatopeia",
@@ -761,22 +761,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta um exemplo de Aliteracao?",
+      "enunciado": "Qual alternativa apresenta um exemplo de Aliteração?",
       "opcoes": [
         "O rato roeu a roupa do rei de Roma.",
         "Ele partiu ontem.",
-        "Nossa, estudar na vespera e mesmo um plano genial.",
+        "Nossa, estudar na véspera e mesmo um plano genial.",
         "No mesmo gesto havia amor e odio."
       ],
       "correta": "O rato roeu a roupa do rei de Roma.",
-      "comentario": "A alternativa correta apresenta Aliteracao, pois repete sons consonantais para produzir efeito sonoro.",
+      "comentario": "A alternativa correta apresenta Aliteração, pois repete sons consonantais para produzir efeito sonoro.",
       "tempoEstimado": 20,
       "tags": [
         "aliteracao",
@@ -799,20 +799,20 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Metafora",
+      "subtopico": "Metáfora",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A afirmacao \"Na frase Aquela menina e uma estrela na sala., a figura de linguagem e Metafora\" esta correta?",
+      "enunciado": "A afirmação \"Na frase Aquela menina e uma estrela na sala., a figura de linguagem é Metáfora\" está correta?",
       "opcoes": [
         "Verdadeiro",
         "Falso"
       ],
       "correta": "Verdadeiro",
-      "comentario": "Esta correta porque Metafora aproxima dois sentidos sem conectivo comparativo explicito.",
+      "comentario": "Está correta porque Metáfora aproxima dois sentidos sem conectivo comparativo explícito.",
       "tempoEstimado": 20,
       "tags": [
         "metafora",
@@ -835,22 +835,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Comparacao",
+      "subtopico": "Comparação",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
       "enunciado": "Na frase \"A voz dele soa suave como veludo.\", qual figura de linguagem aparece?",
       "opcoes": [
-        "Comparacao",
-        "Metafora",
-        "Antitese",
+        "Comparação",
+        "Metáfora",
+        "Antítese",
         "Sinestesia"
       ],
-      "correta": "Comparacao",
-      "comentario": "Comparacao aproxima elementos por meio de conectivos como tal qual como parece.",
+      "correta": "Comparação",
+      "comentario": "Comparação aproxima elementos por meio de conectivos como tal qual como parece.",
       "tempoEstimado": 20,
       "tags": [
         "comparacao",
@@ -873,22 +873,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta um exemplo de Metonimia?",
+      "enunciado": "Qual alternativa apresenta um exemplo de Metonímia?",
       "opcoes": [
         "Brasilia anunciou novas medidas.",
         "Ela corre como o vento.",
-        "A cidade dormia em silencio.",
+        "A cidade dormia em silêncio.",
         "Estou morrendo de fome."
       ],
       "correta": "Brasilia anunciou novas medidas.",
-      "comentario": "A alternativa correta apresenta Metonimia, pois substitui um termo por outro com relacao de proximidade.",
+      "comentario": "A alternativa correta apresenta Metonímia, pois substitui um termo por outro com relação de proximidade.",
       "tempoEstimado": 20,
       "tags": [
         "metonimia",
@@ -911,20 +911,20 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Personificacao",
+      "subtopico": "Personificação",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A afirmacao \"Na frase O relogio correu naquela tarde., a figura de linguagem e Personificacao\" esta correta?",
+      "enunciado": "A afirmação \"Na frase O relogio correu naquela tarde., a figura de linguagem é Personificação\" está correta?",
       "opcoes": [
         "Verdadeiro",
         "Falso"
       ],
       "correta": "Verdadeiro",
-      "comentario": "Esta correta porque Personificacao atribui caracteristicas humanas a seres inanimados ou abstratos.",
+      "comentario": "Está correta porque Personificação atribui características humanas a seres inanimados ou abstratos.",
       "tempoEstimado": 20,
       "tags": [
         "personificacao",
@@ -947,22 +947,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Hiperbole",
+      "subtopico": "Hipérbole",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
       "enunciado": "Na frase \"Estou morrendo de fome.\", qual figura de linguagem aparece?",
       "opcoes": [
-        "Hiperbole",
+        "Hipérbole",
         "Ironia",
         "Eufemismo",
-        "Metafora"
+        "Metáfora"
       ],
-      "correta": "Hiperbole",
-      "comentario": "Hiperbole exagera intencionalmente uma ideia para produzir enfase.",
+      "correta": "Hipérbole",
+      "comentario": "Hipérbole exagera intencionalmente uma ideia para produzir ênfase.",
       "tempoEstimado": 20,
       "tags": [
         "hiperbole",
@@ -985,7 +985,7 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "facil",
@@ -995,7 +995,7 @@ export const figurasDeLinguagem = {
       "enunciado": "Qual alternativa apresenta um exemplo de Eufemismo?",
       "opcoes": [
         "A empresa vai enxugar o quadro de funcionarios.",
-        "Entre o riso e o choro, escolheu o silencio.",
+        "Entre o riso e o choro, escolheu o silêncio.",
         "A porta fez bum com o vento.",
         "Batem brisas brandas no bosque."
       ],
@@ -1023,20 +1023,20 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Ironia",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A afirmacao \"Na frase Parabens pela organizacao, falou diante do quarto em caos., a figura de linguagem e Ironia\" esta correta?",
+      "enunciado": "A afirmação \"Na frase Parabéns pela organização, falou diante do quarto em caos., a figura de linguagem é Ironia\" está correta?",
       "opcoes": [
         "Verdadeiro",
         "Falso"
       ],
       "correta": "Verdadeiro",
-      "comentario": "Esta correta porque Ironia expressa um sentido contrario ao literal para criticar ou provocar humor.",
+      "comentario": "Está correta porque Ironia expressa um sentido contrario ao literal para criticar ou provocar humor.",
       "tempoEstimado": 20,
       "tags": [
         "ironia",
@@ -1059,22 +1059,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Antitese",
+      "subtopico": "Antítese",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
       "enunciado": "Na frase \"No mesmo gesto havia amor e odio.\", qual figura de linguagem aparece?",
       "opcoes": [
-        "Antitese",
+        "Antítese",
         "Ironia",
-        "Comparacao",
+        "Comparação",
         "Pleonasmo"
       ],
-      "correta": "Antitese",
-      "comentario": "Antitese aproxima palavras ou ideias de sentido oposto.",
+      "correta": "Antítese",
+      "comentario": "Antítese aproxima palavras ou ideias de sentido oposto.",
       "tempoEstimado": 20,
       "tags": [
         "antitese",
@@ -1097,7 +1097,7 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "facil",
@@ -1108,7 +1108,7 @@ export const figurasDeLinguagem = {
       "opcoes": [
         "O pingo fazia ploc ploc na lata.",
         "Ela corre como o vento.",
-        "A sala aplaudiu de pe o palestrante.",
+        "A sala aplaudiu de pé o palestrante.",
         "O relogio correu naquela tarde."
       ],
       "correta": "O pingo fazia ploc ploc na lata.",
@@ -1135,20 +1135,20 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Aliteracao",
+      "subtopico": "Aliteração",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A afirmacao \"Na frase Batem brisas brandas no bosque., a figura de linguagem e Aliteracao\" esta correta?",
+      "enunciado": "A afirmação \"Na frase Batem brisas brandas no bosque., a figura de linguagem é Aliteração\" está correta?",
       "opcoes": [
         "Verdadeiro",
         "Falso"
       ],
       "correta": "Verdadeiro",
-      "comentario": "Esta correta porque Aliteracao repete sons consonantais para produzir efeito sonoro.",
+      "comentario": "Está correta porque Aliteração repete sons consonantais para produzir efeito sonoro.",
       "tempoEstimado": 20,
       "tags": [
         "aliteracao",
@@ -1171,9 +1171,9 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Identificacao em contexto",
+      "subtopico": "Identificação em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
@@ -1181,12 +1181,12 @@ export const figurasDeLinguagem = {
       "enunciado": "Observe o trecho \"A vida e um sopro.\". Qual alternativa traz outra frase com a mesma figura de linguagem?",
       "opcoes": [
         "Seu olhar era gelo.",
-        "Li Machado de Assis nas ferias.",
-        "A cidade dormia em silencio.",
+        "Li Machado de Assis nas férias.",
+        "A cidade dormia em silêncio.",
         "Estou morrendo de fome."
       ],
       "correta": "Seu olhar era gelo.",
-      "comentario": "As duas frases usam Metafora.",
+      "comentario": "As duas frases usam Metáfora.",
       "tempoEstimado": 30,
       "tags": [
         "metafora",
@@ -1210,22 +1210,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No enunciado \"O menino ficou branco como papel.\", o uso de Comparacao produz principalmente qual efeito de sentido?",
+      "enunciado": "No enunciado \"O menino ficou branco como papel.\", o uso de Comparação produz principalmente qual efeito de sentido?",
       "opcoes": [
-        "explicita uma semelhanca entre elementos",
-        "apresenta uma informacao objetiva e neutra",
+        "explícita uma semelhança entre elementos",
+        "apresenta uma informação objetiva e neutra",
         "organiza o texto em ordem cronologica",
         "indica apenas localizacao espacial"
       ],
-      "correta": "explicita uma semelhanca entre elementos",
-      "comentario": "Nesse caso, Comparacao explicita uma semelhanca entre elementos.",
+      "correta": "explícita uma semelhança entre elementos",
+      "comentario": "Nesse caso, Comparação explícita uma semelhança entre elementos.",
       "tempoEstimado": 35,
       "tags": [
         "comparacao",
@@ -1248,22 +1248,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Diferenciacao entre figuras",
+      "subtopico": "Diferenciação entre figuras",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em \"Tomei duas xicaras antes da prova.\", a classificacao correta e Metonimia, e nao Metafora, porque:",
+      "enunciado": "Em \"Tomei duas xícaras antes da prova.\", a classificação correta é Metonímia, e não Metáfora, porque:",
       "opcoes": [
-        "Metonimia substitui um termo por outro com relacao de proximidade.",
-        "Metafora depende sempre de uma imitacao de som.",
-        "Metafora elimina qualquer valor expressivo da frase.",
-        "Metafora ocorre apenas em frases literais e objetivas."
+        "Metonímia substitui um termo por outro com relação de proximidade.",
+        "Metáfora depende sempre de uma imitacao de som.",
+        "Metáfora elimina qualquer valor expressivo da frase.",
+        "Metáfora ocorre apenas em frases literais e objetivas."
       ],
-      "correta": "Metonimia substitui um termo por outro com relacao de proximidade.",
-      "comentario": "A justificativa correta recupera a caracteristica central de Metonimia.",
+      "correta": "Metonímia substitui um termo por outro com relação de proximidade.",
+      "comentario": "A justificativa correta recupera a característica central de Metonímia.",
       "tempoEstimado": 35,
       "tags": [
         "metonimia",
@@ -1286,22 +1286,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Personificacao",
+      "subtopico": "Personificação",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
       "enunciado": "Qual alternativa classifica corretamente a frase \"A chuva insistia em bater na porta.\"?",
       "opcoes": [
-        "Personificacao",
+        "Personificação",
         "Onomatopeia",
-        "Aliteracao",
+        "Aliteração",
         "Pleonasmo"
       ],
-      "correta": "Personificacao",
-      "comentario": "A frase exemplifica Personificacao.",
+      "correta": "Personificação",
+      "comentario": "A frase exemplifica Personificação.",
       "tempoEstimado": 30,
       "tags": [
         "personificacao",
@@ -1324,21 +1324,21 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Identificacao em contexto",
+      "subtopico": "Identificação em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO apresenta Hiperbole?",
+      "enunciado": "Qual alternativa NÃO apresenta Hipérbole?",
       "opcoes": [
-        "Vi com meus proprios olhos.",
-        "Ja te falei isso mil vezes.",
+        "Vi com meus próprios olhos.",
+        "Já te falei isso mil vezes.",
         "Estou morrendo de fome.",
         "Chorei um rio inteiro com aquele filme."
       ],
-      "correta": "Vi com meus proprios olhos.",
+      "correta": "Vi com meus próprios olhos.",
       "comentario": "A alternativa correta pertence a outra figura de linguagem.",
       "tempoEstimado": 35,
       "tags": [
@@ -1363,19 +1363,19 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definicao corresponde melhor ao uso de Eufemismo no trecho \"Ele partiu ontem.\"?",
+      "enunciado": "Qual definição corresponde melhor ao uso de Eufemismo no trecho \"Ele partiu ontem.\"?",
       "opcoes": [
         "suaviza uma ideia dura desagradavel ou delicada",
-        "aproxima dois sentidos sem conectivo comparativo explicito",
+        "aproxima dois sentidos sem conectivo comparativo explícito",
         "aproxima elementos por meio de conectivos como tal qual como parece",
-        "substitui um termo por outro com relacao de proximidade"
+        "substitui um termo por outro com relação de proximidade"
       ],
       "correta": "suaviza uma ideia dura desagradavel ou delicada",
       "comentario": "A frase foi construida para exemplificar Eufemismo.",
@@ -1401,21 +1401,21 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Identificacao em contexto",
+      "subtopico": "Identificação em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe o trecho \"Nossa, estudar na vespera e mesmo um plano genial.\". Qual alternativa traz outra frase com a mesma figura de linguagem?",
+      "enunciado": "Observe o trecho \"Nossa, estudar na véspera e mesmo um plano genial.\". Qual alternativa traz outra frase com a mesma figura de linguagem?",
       "opcoes": [
-        "Parabens pela organizacao, falou diante do quarto em caos.",
-        "Li Machado de Assis nas ferias.",
-        "A cidade dormia em silencio.",
+        "Parabéns pela organização, falou diante do quarto em caos.",
+        "Li Machado de Assis nas férias.",
+        "A cidade dormia em silêncio.",
         "Estou morrendo de fome."
       ],
-      "correta": "Parabens pela organizacao, falou diante do quarto em caos.",
+      "correta": "Parabéns pela organização, falou diante do quarto em caos.",
       "comentario": "As duas frases usam Ironia.",
       "tempoEstimado": 30,
       "tags": [
@@ -1440,22 +1440,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No enunciado \"No mesmo gesto havia amor e odio.\", o uso de Antitese produz principalmente qual efeito de sentido?",
+      "enunciado": "No enunciado \"No mesmo gesto havia amor e odio.\", o uso de Antítese produz principalmente qual efeito de sentido?",
       "opcoes": [
         "destaca um contraste de ideias",
-        "apresenta uma informacao objetiva e neutra",
+        "apresenta uma informação objetiva e neutra",
         "organiza o texto em ordem cronologica",
         "indica apenas localizacao espacial"
       ],
       "correta": "destaca um contraste de ideias",
-      "comentario": "Nesse caso, Antitese destaca um contraste de ideias.",
+      "comentario": "Nesse caso, Antítese destaca um contraste de ideias.",
       "tempoEstimado": 35,
       "tags": [
         "antitese",
@@ -1478,22 +1478,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Diferenciacao entre figuras",
+      "subtopico": "Diferenciação entre figuras",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em \"Veio um trim trim do celular na biblioteca.\", a classificacao correta e Onomatopeia, e nao Aliteracao, porque:",
+      "enunciado": "Em \"Veio um trim trim do celular na biblioteca.\", a classificação correta é Onomatopeia, e não Aliteração, porque:",
       "opcoes": [
         "Onomatopeia imita ou sugere sons por meio de palavras.",
-        "Aliteracao depende sempre de uma imitacao de som.",
-        "Aliteracao elimina qualquer valor expressivo da frase.",
-        "Aliteracao ocorre apenas em frases literais e objetivas."
+        "Aliteração depende sempre de uma imitacao de som.",
+        "Aliteração elimina qualquer valor expressivo da frase.",
+        "Aliteração ocorre apenas em frases literais e objetivas."
       ],
       "correta": "Onomatopeia imita ou sugere sons por meio de palavras.",
-      "comentario": "A justificativa correta recupera a caracteristica central de Onomatopeia.",
+      "comentario": "A justificativa correta recupera a característica central de Onomatopeia.",
       "tempoEstimado": 35,
       "tags": [
         "onomatopeia",
@@ -1516,22 +1516,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Aliteracao",
+      "subtopico": "Aliteração",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
       "enunciado": "Qual alternativa classifica corretamente a frase \"Sopra suave o som da serra.\"?",
       "opcoes": [
-        "Aliteracao",
+        "Aliteração",
         "Onomatopeia",
         "Pleonasmo",
         "Sinestesia"
       ],
-      "correta": "Aliteracao",
-      "comentario": "A frase exemplifica Aliteracao.",
+      "correta": "Aliteração",
+      "comentario": "A frase exemplifica Aliteração.",
       "tempoEstimado": 30,
       "tags": [
         "aliteracao",
@@ -1554,19 +1554,19 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Identificacao em contexto",
+      "subtopico": "Identificação em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO apresenta Pleonasmo?",
+      "enunciado": "Qual alternativa NÃO apresenta Pleonasmo?",
       "opcoes": [
         "A voz doce da cantora acalmou a plateia.",
         "Entrou para dentro correndo.",
         "Saiu para fora em disparada.",
-        "Ouvi isso com meus proprios ouvidos."
+        "Ouvi isso com meus próprios ouvidos."
       ],
       "correta": "A voz doce da cantora acalmou a plateia.",
       "comentario": "A alternativa correta pertence a outra figura de linguagem.",
@@ -1593,21 +1593,21 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definicao corresponde melhor ao uso de Sinestesia no trecho \"O perfume quente da tarde tomou a sala.\"?",
+      "enunciado": "Qual definição corresponde melhor ao uso de Sinestesia no trecho \"O perfume quente da tarde tomou a sala.\"?",
       "opcoes": [
-        "mistura sensacoes de sentidos diferentes",
-        "aproxima dois sentidos sem conectivo comparativo explicito",
+        "mistura sensações de sentidos diferentes",
+        "aproxima dois sentidos sem conectivo comparativo explícito",
         "aproxima elementos por meio de conectivos como tal qual como parece",
-        "substitui um termo por outro com relacao de proximidade"
+        "substitui um termo por outro com relação de proximidade"
       ],
-      "correta": "mistura sensacoes de sentidos diferentes",
+      "correta": "mistura sensações de sentidos diferentes",
       "comentario": "A frase foi construida para exemplificar Sinestesia.",
       "tempoEstimado": 30,
       "tags": [
@@ -1631,9 +1631,9 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Identificacao em contexto",
+      "subtopico": "Identificação em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
@@ -1641,12 +1641,12 @@ export const figurasDeLinguagem = {
       "enunciado": "Observe o trecho \"Aquela menina e uma estrela na sala.\". Qual alternativa traz outra frase com a mesma figura de linguagem?",
       "opcoes": [
         "O tempo e um ladrao silencioso.",
-        "Li Machado de Assis nas ferias.",
-        "A cidade dormia em silencio.",
+        "Li Machado de Assis nas férias.",
+        "A cidade dormia em silêncio.",
         "Estou morrendo de fome."
       ],
       "correta": "O tempo e um ladrao silencioso.",
-      "comentario": "As duas frases usam Metafora.",
+      "comentario": "As duas frases usam Metáfora.",
       "tempoEstimado": 30,
       "tags": [
         "metafora",
@@ -1670,22 +1670,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No enunciado \"O patio estava quente como um forno.\", o uso de Comparacao produz principalmente qual efeito de sentido?",
+      "enunciado": "No enunciado \"O pátio estava quente como um forno.\", o uso de Comparação produz principalmente qual efeito de sentido?",
       "opcoes": [
-        "explicita uma semelhanca entre elementos",
-        "apresenta uma informacao objetiva e neutra",
+        "explícita uma semelhança entre elementos",
+        "apresenta uma informação objetiva e neutra",
         "organiza o texto em ordem cronologica",
         "indica apenas localizacao espacial"
       ],
-      "correta": "explicita uma semelhanca entre elementos",
-      "comentario": "Nesse caso, Comparacao explicita uma semelhanca entre elementos.",
+      "correta": "explícita uma semelhança entre elementos",
+      "comentario": "Nesse caso, Comparação explícita uma semelhança entre elementos.",
       "tempoEstimado": 35,
       "tags": [
         "comparacao",
@@ -1708,22 +1708,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Diferenciacao entre figuras",
+      "subtopico": "Diferenciação entre figuras",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em \"A escola inteira participou da campanha.\", a classificacao correta e Metonimia, e nao Metafora, porque:",
+      "enunciado": "Em \"A escola inteira participou da campanha.\", a classificação correta é Metonímia, e não Metáfora, porque:",
       "opcoes": [
-        "Metonimia substitui um termo por outro com relacao de proximidade.",
-        "Metafora depende sempre de uma imitacao de som.",
-        "Metafora elimina qualquer valor expressivo da frase.",
-        "Metafora ocorre apenas em frases literais e objetivas."
+        "Metonímia substitui um termo por outro com relação de proximidade.",
+        "Metáfora depende sempre de uma imitacao de som.",
+        "Metáfora elimina qualquer valor expressivo da frase.",
+        "Metáfora ocorre apenas em frases literais e objetivas."
       ],
-      "correta": "Metonimia substitui um termo por outro com relacao de proximidade.",
-      "comentario": "A justificativa correta recupera a caracteristica central de Metonimia.",
+      "correta": "Metonímia substitui um termo por outro com relação de proximidade.",
+      "comentario": "A justificativa correta recupera a característica central de Metonímia.",
       "tempoEstimado": 35,
       "tags": [
         "metonimia",
@@ -1746,22 +1746,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Personificacao",
+      "subtopico": "Personificação",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
       "enunciado": "Qual alternativa classifica corretamente a frase \"O vento cantava na janela.\"?",
       "opcoes": [
-        "Personificacao",
+        "Personificação",
         "Onomatopeia",
-        "Aliteracao",
+        "Aliteração",
         "Pleonasmo"
       ],
-      "correta": "Personificacao",
-      "comentario": "A frase exemplifica Personificacao.",
+      "correta": "Personificação",
+      "comentario": "A frase exemplifica Personificação.",
       "tempoEstimado": 30,
       "tags": [
         "personificacao",
@@ -1784,21 +1784,21 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Identificacao em contexto",
+      "subtopico": "Identificação em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO apresenta Hiperbole?",
+      "enunciado": "Qual alternativa NÃO apresenta Hipérbole?",
       "opcoes": [
-        "Vi com meus proprios olhos.",
+        "Vi com meus próprios olhos.",
         "Chorei um rio inteiro com aquele filme.",
         "Carrego o mundo nas costas nesta semana.",
-        "Esperei uma eternidade pelo onibus."
+        "Esperei uma eternidade pelo ônibus."
       ],
-      "correta": "Vi com meus proprios olhos.",
+      "correta": "Vi com meus próprios olhos.",
       "comentario": "A alternativa correta pertence a outra figura de linguagem.",
       "tempoEstimado": 35,
       "tags": [
@@ -1823,19 +1823,19 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definicao corresponde melhor ao uso de Eufemismo no trecho \"A paciente nao resistiu.\"?",
+      "enunciado": "Qual definição corresponde melhor ao uso de Eufemismo no trecho \"A paciente não resistiu.\"?",
       "opcoes": [
         "suaviza uma ideia dura desagradavel ou delicada",
-        "aproxima dois sentidos sem conectivo comparativo explicito",
+        "aproxima dois sentidos sem conectivo comparativo explícito",
         "aproxima elementos por meio de conectivos como tal qual como parece",
-        "substitui um termo por outro com relacao de proximidade"
+        "substitui um termo por outro com relação de proximidade"
       ],
       "correta": "suaviza uma ideia dura desagradavel ou delicada",
       "comentario": "A frase foi construida para exemplificar Eufemismo.",
@@ -1861,21 +1861,21 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Identificacao em contexto",
+      "subtopico": "Identificação em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe o trecho \"Como voce foi discreto, comentou apos o grito no corredor.\". Qual alternativa traz outra frase com a mesma figura de linguagem?",
+      "enunciado": "Observe o trecho \"Como você foi discreto, comentou após o grito no corredor.\". Qual alternativa traz outra frase com a mesma figura de linguagem?",
       "opcoes": [
-        "Adorei ficar preso no transito por duas horas.",
-        "Li Machado de Assis nas ferias.",
-        "A cidade dormia em silencio.",
+        "Adorei ficar preso no trânsito por duas horas.",
+        "Li Machado de Assis nas férias.",
+        "A cidade dormia em silêncio.",
         "Estou morrendo de fome."
       ],
-      "correta": "Adorei ficar preso no transito por duas horas.",
+      "correta": "Adorei ficar preso no trânsito por duas horas.",
       "comentario": "As duas frases usam Ironia.",
       "tempoEstimado": 30,
       "tags": [
@@ -1900,22 +1900,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No enunciado \"Era um discurso de paz em meio a guerra.\", o uso de Antitese produz principalmente qual efeito de sentido?",
+      "enunciado": "No enunciado \"Era um discurso de paz em meio a guerra.\", o uso de Antítese produz principalmente qual efeito de sentido?",
       "opcoes": [
         "destaca um contraste de ideias",
-        "apresenta uma informacao objetiva e neutra",
+        "apresenta uma informação objetiva e neutra",
         "organiza o texto em ordem cronologica",
         "indica apenas localizacao espacial"
       ],
       "correta": "destaca um contraste de ideias",
-      "comentario": "Nesse caso, Antitese destaca um contraste de ideias.",
+      "comentario": "Nesse caso, Antítese destaca um contraste de ideias.",
       "tempoEstimado": 35,
       "tags": [
         "antitese",
@@ -1938,22 +1938,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Diferenciacao entre figuras",
+      "subtopico": "Diferenciação entre figuras",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em \"O tic tac do relogio dominava a sala.\", a classificacao correta e Onomatopeia, e nao Aliteracao, porque:",
+      "enunciado": "Em \"O tic tac do relogio dominava a sala.\", a classificação correta é Onomatopeia, e não Aliteração, porque:",
       "opcoes": [
         "Onomatopeia imita ou sugere sons por meio de palavras.",
-        "Aliteracao depende sempre de uma imitacao de som.",
-        "Aliteracao elimina qualquer valor expressivo da frase.",
-        "Aliteracao ocorre apenas em frases literais e objetivas."
+        "Aliteração depende sempre de uma imitacao de som.",
+        "Aliteração elimina qualquer valor expressivo da frase.",
+        "Aliteração ocorre apenas em frases literais e objetivas."
       ],
       "correta": "Onomatopeia imita ou sugere sons por meio de palavras.",
-      "comentario": "A justificativa correta recupera a caracteristica central de Onomatopeia.",
+      "comentario": "A justificativa correta recupera a característica central de Onomatopeia.",
       "tempoEstimado": 35,
       "tags": [
         "onomatopeia",
@@ -1976,22 +1976,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Aliteracao",
+      "subtopico": "Aliteração",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
       "enunciado": "Qual alternativa classifica corretamente a frase \"Vozes vagas varavam o vento.\"?",
       "opcoes": [
-        "Aliteracao",
+        "Aliteração",
         "Onomatopeia",
         "Pleonasmo",
         "Sinestesia"
       ],
-      "correta": "Aliteracao",
-      "comentario": "A frase exemplifica Aliteracao.",
+      "correta": "Aliteração",
+      "comentario": "A frase exemplifica Aliteração.",
       "tempoEstimado": 30,
       "tags": [
         "aliteracao",
@@ -2014,18 +2014,18 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Identificacao em contexto",
+      "subtopico": "Identificação em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO apresenta Pleonasmo?",
+      "enunciado": "Qual alternativa NÃO apresenta Pleonasmo?",
       "opcoes": [
         "A voz doce da cantora acalmou a plateia.",
-        "Ouvi isso com meus proprios ouvidos.",
-        "Vi com meus proprios olhos.",
+        "Ouvi isso com meus próprios ouvidos.",
+        "Vi com meus próprios olhos.",
         "Subiu para cima sem olhar para tras."
       ],
       "correta": "A voz doce da cantora acalmou a plateia.",
@@ -2053,21 +2053,21 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definicao corresponde melhor ao uso de Sinestesia no trecho \"A luz fria do corredor incomodava.\"?",
+      "enunciado": "Qual definição corresponde melhor ao uso de Sinestesia no trecho \"A luz fria do corredor incomodava.\"?",
       "opcoes": [
-        "mistura sensacoes de sentidos diferentes",
-        "aproxima dois sentidos sem conectivo comparativo explicito",
+        "mistura sensações de sentidos diferentes",
+        "aproxima dois sentidos sem conectivo comparativo explícito",
         "aproxima elementos por meio de conectivos como tal qual como parece",
-        "substitui um termo por outro com relacao de proximidade"
+        "substitui um termo por outro com relação de proximidade"
       ],
-      "correta": "mistura sensacoes de sentidos diferentes",
+      "correta": "mistura sensações de sentidos diferentes",
       "comentario": "A frase foi construida para exemplificar Sinestesia.",
       "tempoEstimado": 30,
       "tags": [
@@ -2091,9 +2091,9 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Identificacao em contexto",
+      "subtopico": "Identificação em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
@@ -2101,12 +2101,12 @@ export const figurasDeLinguagem = {
       "enunciado": "Observe o trecho \"O bairro acordou coberto por um tapete branco de neblina.\". Qual alternativa traz outra frase com a mesma figura de linguagem?",
       "opcoes": [
         "A vida e um sopro.",
-        "Li Machado de Assis nas ferias.",
-        "A cidade dormia em silencio.",
+        "Li Machado de Assis nas férias.",
+        "A cidade dormia em silêncio.",
         "Estou morrendo de fome."
       ],
       "correta": "A vida e um sopro.",
-      "comentario": "As duas frases usam Metafora.",
+      "comentario": "As duas frases usam Metáfora.",
       "tempoEstimado": 30,
       "tags": [
         "metafora",
@@ -2130,22 +2130,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No enunciado \"Ela corre como o vento.\", o uso de Comparacao produz principalmente qual efeito de sentido?",
+      "enunciado": "No enunciado \"Ela corre como o vento.\", o uso de Comparação produz principalmente qual efeito de sentido?",
       "opcoes": [
-        "explicita uma semelhanca entre elementos",
-        "apresenta uma informacao objetiva e neutra",
+        "explícita uma semelhança entre elementos",
+        "apresenta uma informação objetiva e neutra",
         "organiza o texto em ordem cronologica",
         "indica apenas localizacao espacial"
       ],
-      "correta": "explicita uma semelhanca entre elementos",
-      "comentario": "Nesse caso, Comparacao explicita uma semelhanca entre elementos.",
+      "correta": "explícita uma semelhança entre elementos",
+      "comentario": "Nesse caso, Comparação explícita uma semelhança entre elementos.",
       "tempoEstimado": 35,
       "tags": [
         "comparacao",
@@ -2168,22 +2168,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Diferenciacao entre figuras",
+      "subtopico": "Diferenciação entre figuras",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em \"A sala aplaudiu de pe o palestrante.\", a classificacao correta e Metonimia, e nao Metafora, porque:",
+      "enunciado": "Em \"A sala aplaudiu de pé o palestrante.\", a classificação correta é Metonímia, e não Metáfora, porque:",
       "opcoes": [
-        "Metonimia substitui um termo por outro com relacao de proximidade.",
-        "Metafora depende sempre de uma imitacao de som.",
-        "Metafora elimina qualquer valor expressivo da frase.",
-        "Metafora ocorre apenas em frases literais e objetivas."
+        "Metonímia substitui um termo por outro com relação de proximidade.",
+        "Metáfora depende sempre de uma imitacao de som.",
+        "Metáfora elimina qualquer valor expressivo da frase.",
+        "Metáfora ocorre apenas em frases literais e objetivas."
       ],
-      "correta": "Metonimia substitui um termo por outro com relacao de proximidade.",
-      "comentario": "A justificativa correta recupera a caracteristica central de Metonimia.",
+      "correta": "Metonímia substitui um termo por outro com relação de proximidade.",
+      "comentario": "A justificativa correta recupera a característica central de Metonímia.",
       "tempoEstimado": 35,
       "tags": [
         "metonimia",
@@ -2206,22 +2206,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Personificacao",
+      "subtopico": "Personificação",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
       "enunciado": "Qual alternativa classifica corretamente a frase \"O relogio correu naquela tarde.\"?",
       "opcoes": [
-        "Personificacao",
+        "Personificação",
         "Onomatopeia",
-        "Aliteracao",
+        "Aliteração",
         "Pleonasmo"
       ],
-      "correta": "Personificacao",
-      "comentario": "A frase exemplifica Personificacao.",
+      "correta": "Personificação",
+      "comentario": "A frase exemplifica Personificação.",
       "tempoEstimado": 30,
       "tags": [
         "personificacao",
@@ -2244,21 +2244,21 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Identificacao em contexto",
+      "subtopico": "Identificação em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO apresenta Hiperbole?",
+      "enunciado": "Qual alternativa NÃO apresenta Hipérbole?",
       "opcoes": [
-        "Vi com meus proprios olhos.",
-        "Esperei uma eternidade pelo onibus.",
-        "Ja te falei isso mil vezes.",
+        "Vi com meus próprios olhos.",
+        "Esperei uma eternidade pelo ônibus.",
+        "Já te falei isso mil vezes.",
         "Estou morrendo de fome."
       ],
-      "correta": "Vi com meus proprios olhos.",
+      "correta": "Vi com meus próprios olhos.",
       "comentario": "A alternativa correta pertence a outra figura de linguagem.",
       "tempoEstimado": 35,
       "tags": [
@@ -2283,19 +2283,19 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definicao corresponde melhor ao uso de Eufemismo no trecho \"Ela nos deixou no inicio do inverno.\"?",
+      "enunciado": "Qual definição corresponde melhor ao uso de Eufemismo no trecho \"Ela nos deixou no inicio do inverno.\"?",
       "opcoes": [
         "suaviza uma ideia dura desagradavel ou delicada",
-        "aproxima dois sentidos sem conectivo comparativo explicito",
+        "aproxima dois sentidos sem conectivo comparativo explícito",
         "aproxima elementos por meio de conectivos como tal qual como parece",
-        "substitui um termo por outro com relacao de proximidade"
+        "substitui um termo por outro com relação de proximidade"
       ],
       "correta": "suaviza uma ideia dura desagradavel ou delicada",
       "comentario": "A frase foi construida para exemplificar Eufemismo.",
@@ -2321,21 +2321,21 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Identificacao em contexto",
+      "subtopico": "Identificação em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
       "enunciado": "Observe o trecho \"Que pontualidade exemplar, disse ao amigo que chegou uma hora atrasado.\". Qual alternativa traz outra frase com a mesma figura de linguagem?",
       "opcoes": [
-        "Nossa, estudar na vespera e mesmo um plano genial.",
-        "Li Machado de Assis nas ferias.",
-        "A cidade dormia em silencio.",
+        "Nossa, estudar na véspera e mesmo um plano genial.",
+        "Li Machado de Assis nas férias.",
+        "A cidade dormia em silêncio.",
         "Estou morrendo de fome."
       ],
-      "correta": "Nossa, estudar na vespera e mesmo um plano genial.",
+      "correta": "Nossa, estudar na véspera e mesmo um plano genial.",
       "comentario": "As duas frases usam Ironia.",
       "tempoEstimado": 30,
       "tags": [
@@ -2360,22 +2360,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No enunciado \"A cidade vivia entre luz e sombra.\", o uso de Antitese produz principalmente qual efeito de sentido?",
+      "enunciado": "No enunciado \"A cidade vivia entre luz e sombra.\", o uso de Antítese produz principalmente qual efeito de sentido?",
       "opcoes": [
         "destaca um contraste de ideias",
-        "apresenta uma informacao objetiva e neutra",
+        "apresenta uma informação objetiva e neutra",
         "organiza o texto em ordem cronologica",
         "indica apenas localizacao espacial"
       ],
       "correta": "destaca um contraste de ideias",
-      "comentario": "Nesse caso, Antitese destaca um contraste de ideias.",
+      "comentario": "Nesse caso, Antítese destaca um contraste de ideias.",
       "tempoEstimado": 35,
       "tags": [
         "antitese",
@@ -2398,22 +2398,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Diferenciacao entre figuras",
+      "subtopico": "Diferenciação entre figuras",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em \"O gato saiu em miau pela varanda.\", a classificacao correta e Onomatopeia, e nao Aliteracao, porque:",
+      "enunciado": "Em \"O gato saiu em miau pela varanda.\", a classificação correta é Onomatopeia, e não Aliteração, porque:",
       "opcoes": [
         "Onomatopeia imita ou sugere sons por meio de palavras.",
-        "Aliteracao depende sempre de uma imitacao de som.",
-        "Aliteracao elimina qualquer valor expressivo da frase.",
-        "Aliteracao ocorre apenas em frases literais e objetivas."
+        "Aliteração depende sempre de uma imitacao de som.",
+        "Aliteração elimina qualquer valor expressivo da frase.",
+        "Aliteração ocorre apenas em frases literais e objetivas."
       ],
       "correta": "Onomatopeia imita ou sugere sons por meio de palavras.",
-      "comentario": "A justificativa correta recupera a caracteristica central de Onomatopeia.",
+      "comentario": "A justificativa correta recupera a característica central de Onomatopeia.",
       "tempoEstimado": 35,
       "tags": [
         "onomatopeia",
@@ -2436,22 +2436,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Aliteracao",
+      "subtopico": "Aliteração",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
       "enunciado": "Qual alternativa classifica corretamente a frase \"Fia fino o fio da faca.\"?",
       "opcoes": [
-        "Aliteracao",
+        "Aliteração",
         "Onomatopeia",
         "Pleonasmo",
         "Sinestesia"
       ],
-      "correta": "Aliteracao",
-      "comentario": "A frase exemplifica Aliteracao.",
+      "correta": "Aliteração",
+      "comentario": "A frase exemplifica Aliteração.",
       "tempoEstimado": 30,
       "tags": [
         "aliteracao",
@@ -2474,14 +2474,14 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Identificacao em contexto",
+      "subtopico": "Identificação em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO apresenta Pleonasmo?",
+      "enunciado": "Qual alternativa NÃO apresenta Pleonasmo?",
       "opcoes": [
         "A voz doce da cantora acalmou a plateia.",
         "Subiu para cima sem olhar para tras.",
@@ -2513,21 +2513,21 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definicao corresponde melhor ao uso de Sinestesia no trecho \"A voz doce da cantora acalmou a plateia.\"?",
+      "enunciado": "Qual definição corresponde melhor ao uso de Sinestesia no trecho \"A voz doce da cantora acalmou a plateia.\"?",
       "opcoes": [
-        "mistura sensacoes de sentidos diferentes",
-        "aproxima dois sentidos sem conectivo comparativo explicito",
+        "mistura sensações de sentidos diferentes",
+        "aproxima dois sentidos sem conectivo comparativo explícito",
         "aproxima elementos por meio de conectivos como tal qual como parece",
-        "substitui um termo por outro com relacao de proximidade"
+        "substitui um termo por outro com relação de proximidade"
       ],
-      "correta": "mistura sensacoes de sentidos diferentes",
+      "correta": "mistura sensações de sentidos diferentes",
       "comentario": "A frase foi construida para exemplificar Sinestesia.",
       "tempoEstimado": 30,
       "tags": [
@@ -2551,9 +2551,9 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Identificacao em contexto",
+      "subtopico": "Identificação em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
@@ -2561,12 +2561,12 @@ export const figurasDeLinguagem = {
       "enunciado": "Observe o trecho \"Seu olhar era gelo.\". Qual alternativa traz outra frase com a mesma figura de linguagem?",
       "opcoes": [
         "Aquela menina e uma estrela na sala.",
-        "Li Machado de Assis nas ferias.",
-        "A cidade dormia em silencio.",
+        "Li Machado de Assis nas férias.",
+        "A cidade dormia em silêncio.",
         "Estou morrendo de fome."
       ],
       "correta": "Aquela menina e uma estrela na sala.",
-      "comentario": "As duas frases usam Metafora.",
+      "comentario": "As duas frases usam Metáfora.",
       "tempoEstimado": 30,
       "tags": [
         "metafora",
@@ -2590,22 +2590,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No enunciado \"A voz dele soa suave como veludo.\", o uso de Comparacao produz principalmente qual efeito de sentido?",
+      "enunciado": "No enunciado \"A voz dele soa suave como veludo.\", o uso de Comparação produz principalmente qual efeito de sentido?",
       "opcoes": [
-        "explicita uma semelhanca entre elementos",
-        "apresenta uma informacao objetiva e neutra",
+        "explícita uma semelhança entre elementos",
+        "apresenta uma informação objetiva e neutra",
         "organiza o texto em ordem cronologica",
         "indica apenas localizacao espacial"
       ],
-      "correta": "explicita uma semelhanca entre elementos",
-      "comentario": "Nesse caso, Comparacao explicita uma semelhanca entre elementos.",
+      "correta": "explícita uma semelhança entre elementos",
+      "comentario": "Nesse caso, Comparação explícita uma semelhança entre elementos.",
       "tempoEstimado": 35,
       "tags": [
         "comparacao",
@@ -2628,22 +2628,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Diferenciacao entre figuras",
+      "subtopico": "Diferenciação entre figuras",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em \"Brasilia anunciou novas medidas.\", a classificacao correta e Metonimia, e nao Metafora, porque:",
+      "enunciado": "Em \"Brasilia anunciou novas medidas.\", a classificação correta é Metonímia, e não Metáfora, porque:",
       "opcoes": [
-        "Metonimia substitui um termo por outro com relacao de proximidade.",
-        "Metafora depende sempre de uma imitacao de som.",
-        "Metafora elimina qualquer valor expressivo da frase.",
-        "Metafora ocorre apenas em frases literais e objetivas."
+        "Metonímia substitui um termo por outro com relação de proximidade.",
+        "Metáfora depende sempre de uma imitacao de som.",
+        "Metáfora elimina qualquer valor expressivo da frase.",
+        "Metáfora ocorre apenas em frases literais e objetivas."
       ],
-      "correta": "Metonimia substitui um termo por outro com relacao de proximidade.",
-      "comentario": "A justificativa correta recupera a caracteristica central de Metonimia.",
+      "correta": "Metonímia substitui um termo por outro com relação de proximidade.",
+      "comentario": "A justificativa correta recupera a característica central de Metonímia.",
       "tempoEstimado": 35,
       "tags": [
         "metonimia",
@@ -2666,22 +2666,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Personificacao",
+      "subtopico": "Personificação",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
       "enunciado": "Qual alternativa classifica corretamente a frase \"O sol sorriu cedo no horizonte.\"?",
       "opcoes": [
-        "Personificacao",
+        "Personificação",
         "Onomatopeia",
-        "Aliteracao",
+        "Aliteração",
         "Pleonasmo"
       ],
-      "correta": "Personificacao",
-      "comentario": "A frase exemplifica Personificacao.",
+      "correta": "Personificação",
+      "comentario": "A frase exemplifica Personificação.",
       "tempoEstimado": 30,
       "tags": [
         "personificacao",
@@ -2704,21 +2704,21 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Identificacao em contexto",
+      "subtopico": "Identificação em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO apresenta Hiperbole?",
+      "enunciado": "Qual alternativa NÃO apresenta Hipérbole?",
       "opcoes": [
-        "Vi com meus proprios olhos.",
+        "Vi com meus próprios olhos.",
         "Estou morrendo de fome.",
         "Chorei um rio inteiro com aquele filme.",
         "Carrego o mundo nas costas nesta semana."
       ],
-      "correta": "Vi com meus proprios olhos.",
+      "correta": "Vi com meus próprios olhos.",
       "comentario": "A alternativa correta pertence a outra figura de linguagem.",
       "tempoEstimado": 35,
       "tags": [
@@ -2743,19 +2743,19 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definicao corresponde melhor ao uso de Eufemismo no trecho \"A empresa vai enxugar o quadro de funcionarios.\"?",
+      "enunciado": "Qual definição corresponde melhor ao uso de Eufemismo no trecho \"A empresa vai enxugar o quadro de funcionarios.\"?",
       "opcoes": [
         "suaviza uma ideia dura desagradavel ou delicada",
-        "aproxima dois sentidos sem conectivo comparativo explicito",
+        "aproxima dois sentidos sem conectivo comparativo explícito",
         "aproxima elementos por meio de conectivos como tal qual como parece",
-        "substitui um termo por outro com relacao de proximidade"
+        "substitui um termo por outro com relação de proximidade"
       ],
       "correta": "suaviza uma ideia dura desagradavel ou delicada",
       "comentario": "A frase foi construida para exemplificar Eufemismo.",
@@ -2781,21 +2781,21 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Identificacao em contexto",
+      "subtopico": "Identificação em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe o trecho \"Parabens pela organizacao, falou diante do quarto em caos.\". Qual alternativa traz outra frase com a mesma figura de linguagem?",
+      "enunciado": "Observe o trecho \"Parabéns pela organização, falou diante do quarto em caos.\". Qual alternativa traz outra frase com a mesma figura de linguagem?",
       "opcoes": [
-        "Como voce foi discreto, comentou apos o grito no corredor.",
-        "Li Machado de Assis nas ferias.",
-        "A cidade dormia em silencio.",
+        "Como você foi discreto, comentou após o grito no corredor.",
+        "Li Machado de Assis nas férias.",
+        "A cidade dormia em silêncio.",
         "Estou morrendo de fome."
       ],
-      "correta": "Como voce foi discreto, comentou apos o grito no corredor.",
+      "correta": "Como você foi discreto, comentou após o grito no corredor.",
       "comentario": "As duas frases usam Ironia.",
       "tempoEstimado": 30,
       "tags": [
@@ -2820,22 +2820,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No enunciado \"O jovem carregava calma e pressa ao mesmo tempo.\", o uso de Antitese produz principalmente qual efeito de sentido?",
+      "enunciado": "No enunciado \"O jovem carregava calma e pressa ao mesmo tempo.\", o uso de Antítese produz principalmente qual efeito de sentido?",
       "opcoes": [
         "destaca um contraste de ideias",
-        "apresenta uma informacao objetiva e neutra",
+        "apresenta uma informação objetiva e neutra",
         "organiza o texto em ordem cronologica",
         "indica apenas localizacao espacial"
       ],
       "correta": "destaca um contraste de ideias",
-      "comentario": "Nesse caso, Antitese destaca um contraste de ideias.",
+      "comentario": "Nesse caso, Antítese destaca um contraste de ideias.",
       "tempoEstimado": 35,
       "tags": [
         "antitese",
@@ -2858,22 +2858,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Diferenciacao entre figuras",
+      "subtopico": "Diferenciação entre figuras",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em \"O pingo fazia ploc ploc na lata.\", a classificacao correta e Onomatopeia, e nao Aliteracao, porque:",
+      "enunciado": "Em \"O pingo fazia ploc ploc na lata.\", a classificação correta é Onomatopeia, e não Aliteração, porque:",
       "opcoes": [
         "Onomatopeia imita ou sugere sons por meio de palavras.",
-        "Aliteracao depende sempre de uma imitacao de som.",
-        "Aliteracao elimina qualquer valor expressivo da frase.",
-        "Aliteracao ocorre apenas em frases literais e objetivas."
+        "Aliteração depende sempre de uma imitacao de som.",
+        "Aliteração elimina qualquer valor expressivo da frase.",
+        "Aliteração ocorre apenas em frases literais e objetivas."
       ],
       "correta": "Onomatopeia imita ou sugere sons por meio de palavras.",
-      "comentario": "A justificativa correta recupera a caracteristica central de Onomatopeia.",
+      "comentario": "A justificativa correta recupera a característica central de Onomatopeia.",
       "tempoEstimado": 35,
       "tags": [
         "onomatopeia",
@@ -2896,22 +2896,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Aliteracao",
+      "subtopico": "Aliteração",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
       "enunciado": "Qual alternativa classifica corretamente a frase \"O rato roeu a roupa do rei de Roma.\"?",
       "opcoes": [
-        "Aliteracao",
+        "Aliteração",
         "Onomatopeia",
         "Pleonasmo",
         "Sinestesia"
       ],
-      "correta": "Aliteracao",
-      "comentario": "A frase exemplifica Aliteracao.",
+      "correta": "Aliteração",
+      "comentario": "A frase exemplifica Aliteração.",
       "tempoEstimado": 30,
       "tags": [
         "aliteracao",
@@ -2934,19 +2934,19 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Identificacao em contexto",
+      "subtopico": "Identificação em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO apresenta Pleonasmo?",
+      "enunciado": "Qual alternativa NÃO apresenta Pleonasmo?",
       "opcoes": [
         "A voz doce da cantora acalmou a plateia.",
         "Saiu para fora em disparada.",
-        "Ouvi isso com meus proprios ouvidos.",
-        "Vi com meus proprios olhos."
+        "Ouvi isso com meus próprios ouvidos.",
+        "Vi com meus próprios olhos."
       ],
       "correta": "A voz doce da cantora acalmou a plateia.",
       "comentario": "A alternativa correta pertence a outra figura de linguagem.",
@@ -2973,21 +2973,21 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definicao corresponde melhor ao uso de Sinestesia no trecho \"Havia um silencio amargo na despedida.\"?",
+      "enunciado": "Qual definição corresponde melhor ao uso de Sinestesia no trecho \"Havia um silêncio amargo na despedida.\"?",
       "opcoes": [
-        "mistura sensacoes de sentidos diferentes",
-        "aproxima dois sentidos sem conectivo comparativo explicito",
+        "mistura sensações de sentidos diferentes",
+        "aproxima dois sentidos sem conectivo comparativo explícito",
         "aproxima elementos por meio de conectivos como tal qual como parece",
-        "substitui um termo por outro com relacao de proximidade"
+        "substitui um termo por outro com relação de proximidade"
       ],
-      "correta": "mistura sensacoes de sentidos diferentes",
+      "correta": "mistura sensações de sentidos diferentes",
       "comentario": "A frase foi construida para exemplificar Sinestesia.",
       "tempoEstimado": 30,
       "tags": [
@@ -3011,9 +3011,9 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Identificacao em contexto",
+      "subtopico": "Identificação em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
@@ -3021,12 +3021,12 @@ export const figurasDeLinguagem = {
       "enunciado": "Observe o trecho \"O tempo e um ladrao silencioso.\". Qual alternativa traz outra frase com a mesma figura de linguagem?",
       "opcoes": [
         "O bairro acordou coberto por um tapete branco de neblina.",
-        "Li Machado de Assis nas ferias.",
-        "A cidade dormia em silencio.",
+        "Li Machado de Assis nas férias.",
+        "A cidade dormia em silêncio.",
         "Estou morrendo de fome."
       ],
       "correta": "O bairro acordou coberto por um tapete branco de neblina.",
-      "comentario": "As duas frases usam Metafora.",
+      "comentario": "As duas frases usam Metáfora.",
       "tempoEstimado": 30,
       "tags": [
         "metafora",
@@ -3050,22 +3050,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No enunciado \"A noticia caiu sobre todos como uma pedra.\", o uso de Comparacao produz principalmente qual efeito de sentido?",
+      "enunciado": "No enunciado \"A notícia caiu sobre todos como uma pedra.\", o uso de Comparação produz principalmente qual efeito de sentido?",
       "opcoes": [
-        "explicita uma semelhanca entre elementos",
-        "apresenta uma informacao objetiva e neutra",
+        "explícita uma semelhança entre elementos",
+        "apresenta uma informação objetiva e neutra",
         "organiza o texto em ordem cronologica",
         "indica apenas localizacao espacial"
       ],
-      "correta": "explicita uma semelhanca entre elementos",
-      "comentario": "Nesse caso, Comparacao explicita uma semelhanca entre elementos.",
+      "correta": "explícita uma semelhança entre elementos",
+      "comentario": "Nesse caso, Comparação explícita uma semelhança entre elementos.",
       "tempoEstimado": 35,
       "tags": [
         "comparacao",
@@ -3088,22 +3088,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Diferenciacao entre figuras",
+      "subtopico": "Diferenciação entre figuras",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em \"Li Machado de Assis nas ferias.\", a classificacao correta e Metonimia, e nao Metafora, porque:",
+      "enunciado": "Em \"Li Machado de Assis nas férias.\", a classificação correta é Metonímia, e não Metáfora, porque:",
       "opcoes": [
-        "Metonimia substitui um termo por outro com relacao de proximidade.",
-        "Metafora depende sempre de uma imitacao de som.",
-        "Metafora elimina qualquer valor expressivo da frase.",
-        "Metafora ocorre apenas em frases literais e objetivas."
+        "Metonímia substitui um termo por outro com relação de proximidade.",
+        "Metáfora depende sempre de uma imitacao de som.",
+        "Metáfora elimina qualquer valor expressivo da frase.",
+        "Metáfora ocorre apenas em frases literais e objetivas."
       ],
-      "correta": "Metonimia substitui um termo por outro com relacao de proximidade.",
-      "comentario": "A justificativa correta recupera a caracteristica central de Metonimia.",
+      "correta": "Metonímia substitui um termo por outro com relação de proximidade.",
+      "comentario": "A justificativa correta recupera a característica central de Metonímia.",
       "tempoEstimado": 35,
       "tags": [
         "metonimia",
@@ -3126,22 +3126,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Personificacao",
+      "subtopico": "Personificação",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa classifica corretamente a frase \"A cidade dormia em silencio.\"?",
+      "enunciado": "Qual alternativa classifica corretamente a frase \"A cidade dormia em silêncio.\"?",
       "opcoes": [
-        "Personificacao",
+        "Personificação",
         "Onomatopeia",
-        "Aliteracao",
+        "Aliteração",
         "Pleonasmo"
       ],
-      "correta": "Personificacao",
-      "comentario": "A frase exemplifica Personificacao.",
+      "correta": "Personificação",
+      "comentario": "A frase exemplifica Personificação.",
       "tempoEstimado": 30,
       "tags": [
         "personificacao",
@@ -3164,21 +3164,21 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Identificacao em contexto",
+      "subtopico": "Identificação em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO apresenta Hiperbole?",
+      "enunciado": "Qual alternativa NÃO apresenta Hipérbole?",
       "opcoes": [
-        "Vi com meus proprios olhos.",
+        "Vi com meus próprios olhos.",
         "Carrego o mundo nas costas nesta semana.",
-        "Esperei uma eternidade pelo onibus.",
-        "Ja te falei isso mil vezes."
+        "Esperei uma eternidade pelo ônibus.",
+        "Já te falei isso mil vezes."
       ],
-      "correta": "Vi com meus proprios olhos.",
+      "correta": "Vi com meus próprios olhos.",
       "comentario": "A alternativa correta pertence a outra figura de linguagem.",
       "tempoEstimado": 35,
       "tags": [
@@ -3203,19 +3203,19 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definicao corresponde melhor ao uso de Eufemismo no trecho \"O aluno nao foi feliz na resposta.\"?",
+      "enunciado": "Qual definição corresponde melhor ao uso de Eufemismo no trecho \"O aluno não foi feliz na resposta.\"?",
       "opcoes": [
         "suaviza uma ideia dura desagradavel ou delicada",
-        "aproxima dois sentidos sem conectivo comparativo explicito",
+        "aproxima dois sentidos sem conectivo comparativo explícito",
         "aproxima elementos por meio de conectivos como tal qual como parece",
-        "substitui um termo por outro com relacao de proximidade"
+        "substitui um termo por outro com relação de proximidade"
       ],
       "correta": "suaviza uma ideia dura desagradavel ou delicada",
       "comentario": "A frase foi construida para exemplificar Eufemismo.",
@@ -3241,18 +3241,18 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Identificacao em contexto",
+      "subtopico": "Identificação em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe o trecho \"Adorei ficar preso no transito por duas horas.\". Qual alternativa traz outra frase com a mesma figura de linguagem?",
+      "enunciado": "Observe o trecho \"Adorei ficar preso no trânsito por duas horas.\". Qual alternativa traz outra frase com a mesma figura de linguagem?",
       "opcoes": [
         "Que pontualidade exemplar, disse ao amigo que chegou uma hora atrasado.",
-        "Li Machado de Assis nas ferias.",
-        "A cidade dormia em silencio.",
+        "Li Machado de Assis nas férias.",
+        "A cidade dormia em silêncio.",
         "Estou morrendo de fome."
       ],
       "correta": "Que pontualidade exemplar, disse ao amigo que chegou uma hora atrasado.",
@@ -3280,22 +3280,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No enunciado \"Entre o riso e o choro, escolheu o silencio.\", o uso de Antitese produz principalmente qual efeito de sentido?",
+      "enunciado": "No enunciado \"Entre o riso e o choro, escolheu o silêncio.\", o uso de Antítese produz principalmente qual efeito de sentido?",
       "opcoes": [
         "destaca um contraste de ideias",
-        "apresenta uma informacao objetiva e neutra",
+        "apresenta uma informação objetiva e neutra",
         "organiza o texto em ordem cronologica",
         "indica apenas localizacao espacial"
       ],
       "correta": "destaca um contraste de ideias",
-      "comentario": "Nesse caso, Antitese destaca um contraste de ideias.",
+      "comentario": "Nesse caso, Antítese destaca um contraste de ideias.",
       "tempoEstimado": 35,
       "tags": [
         "antitese",
@@ -3318,22 +3318,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Diferenciacao entre figuras",
+      "subtopico": "Diferenciação entre figuras",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em \"A porta fez bum com o vento.\", a classificacao correta e Onomatopeia, e nao Aliteracao, porque:",
+      "enunciado": "Em \"A porta fez bum com o vento.\", a classificação correta é Onomatopeia, e não Aliteração, porque:",
       "opcoes": [
         "Onomatopeia imita ou sugere sons por meio de palavras.",
-        "Aliteracao depende sempre de uma imitacao de som.",
-        "Aliteracao elimina qualquer valor expressivo da frase.",
-        "Aliteracao ocorre apenas em frases literais e objetivas."
+        "Aliteração depende sempre de uma imitacao de som.",
+        "Aliteração elimina qualquer valor expressivo da frase.",
+        "Aliteração ocorre apenas em frases literais e objetivas."
       ],
       "correta": "Onomatopeia imita ou sugere sons por meio de palavras.",
-      "comentario": "A justificativa correta recupera a caracteristica central de Onomatopeia.",
+      "comentario": "A justificativa correta recupera a característica central de Onomatopeia.",
       "tempoEstimado": 35,
       "tags": [
         "onomatopeia",
@@ -3356,22 +3356,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Aliteracao",
+      "subtopico": "Aliteração",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
       "enunciado": "Qual alternativa classifica corretamente a frase \"Batem brisas brandas no bosque.\"?",
       "opcoes": [
-        "Aliteracao",
+        "Aliteração",
         "Onomatopeia",
         "Pleonasmo",
         "Sinestesia"
       ],
-      "correta": "Aliteracao",
-      "comentario": "A frase exemplifica Aliteracao.",
+      "correta": "Aliteração",
+      "comentario": "A frase exemplifica Aliteração.",
       "tempoEstimado": 30,
       "tags": [
         "aliteracao",
@@ -3394,17 +3394,17 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Identificacao em contexto",
+      "subtopico": "Identificação em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO apresenta Pleonasmo?",
+      "enunciado": "Qual alternativa NÃO apresenta Pleonasmo?",
       "opcoes": [
         "A voz doce da cantora acalmou a plateia.",
-        "Vi com meus proprios olhos.",
+        "Vi com meus próprios olhos.",
         "Subiu para cima sem olhar para tras.",
         "Entrou para dentro correndo."
       ],
@@ -3433,21 +3433,21 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definicao corresponde melhor ao uso de Sinestesia no trecho \"Era um som aveludado e lento.\"?",
+      "enunciado": "Qual definição corresponde melhor ao uso de Sinestesia no trecho \"Era um som aveludado e lento.\"?",
       "opcoes": [
-        "mistura sensacoes de sentidos diferentes",
-        "aproxima dois sentidos sem conectivo comparativo explicito",
+        "mistura sensações de sentidos diferentes",
+        "aproxima dois sentidos sem conectivo comparativo explícito",
         "aproxima elementos por meio de conectivos como tal qual como parece",
-        "substitui um termo por outro com relacao de proximidade"
+        "substitui um termo por outro com relação de proximidade"
       ],
-      "correta": "mistura sensacoes de sentidos diferentes",
+      "correta": "mistura sensações de sentidos diferentes",
       "comentario": "A frase foi construida para exemplificar Sinestesia.",
       "tempoEstimado": 30,
       "tags": [
@@ -3471,9 +3471,9 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Identificacao em contexto",
+      "subtopico": "Identificação em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
@@ -3481,12 +3481,12 @@ export const figurasDeLinguagem = {
       "enunciado": "Observe o trecho \"A vida e um sopro.\". Qual alternativa traz outra frase com a mesma figura de linguagem?",
       "opcoes": [
         "Seu olhar era gelo.",
-        "Li Machado de Assis nas ferias.",
-        "A cidade dormia em silencio.",
+        "Li Machado de Assis nas férias.",
+        "A cidade dormia em silêncio.",
         "Estou morrendo de fome."
       ],
       "correta": "Seu olhar era gelo.",
-      "comentario": "As duas frases usam Metafora.",
+      "comentario": "As duas frases usam Metáfora.",
       "tempoEstimado": 30,
       "tags": [
         "metafora",
@@ -3510,22 +3510,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No enunciado \"O menino ficou branco como papel.\", o uso de Comparacao produz principalmente qual efeito de sentido?",
+      "enunciado": "No enunciado \"O menino ficou branco como papel.\", o uso de Comparação produz principalmente qual efeito de sentido?",
       "opcoes": [
-        "explicita uma semelhanca entre elementos",
-        "apresenta uma informacao objetiva e neutra",
+        "explícita uma semelhança entre elementos",
+        "apresenta uma informação objetiva e neutra",
         "organiza o texto em ordem cronologica",
         "indica apenas localizacao espacial"
       ],
-      "correta": "explicita uma semelhanca entre elementos",
-      "comentario": "Nesse caso, Comparacao explicita uma semelhanca entre elementos.",
+      "correta": "explícita uma semelhança entre elementos",
+      "comentario": "Nesse caso, Comparação explícita uma semelhança entre elementos.",
       "tempoEstimado": 35,
       "tags": [
         "comparacao",
@@ -3548,22 +3548,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Diferenciacao entre figuras",
+      "subtopico": "Diferenciação entre figuras",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em \"Tomei duas xicaras antes da prova.\", a classificacao correta e Metonimia, e nao Metafora, porque:",
+      "enunciado": "Em \"Tomei duas xícaras antes da prova.\", a classificação correta é Metonímia, e não Metáfora, porque:",
       "opcoes": [
-        "Metonimia substitui um termo por outro com relacao de proximidade.",
-        "Metafora depende sempre de uma imitacao de som.",
-        "Metafora elimina qualquer valor expressivo da frase.",
-        "Metafora ocorre apenas em frases literais e objetivas."
+        "Metonímia substitui um termo por outro com relação de proximidade.",
+        "Metáfora depende sempre de uma imitacao de som.",
+        "Metáfora elimina qualquer valor expressivo da frase.",
+        "Metáfora ocorre apenas em frases literais e objetivas."
       ],
-      "correta": "Metonimia substitui um termo por outro com relacao de proximidade.",
-      "comentario": "A justificativa correta recupera a caracteristica central de Metonimia.",
+      "correta": "Metonímia substitui um termo por outro com relação de proximidade.",
+      "comentario": "A justificativa correta recupera a característica central de Metonímia.",
       "tempoEstimado": 35,
       "tags": [
         "metonimia",
@@ -3586,22 +3586,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Personificacao",
+      "subtopico": "Personificação",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
       "enunciado": "Qual alternativa classifica corretamente a frase \"A chuva insistia em bater na porta.\"?",
       "opcoes": [
-        "Personificacao",
+        "Personificação",
         "Onomatopeia",
-        "Aliteracao",
+        "Aliteração",
         "Pleonasmo"
       ],
-      "correta": "Personificacao",
-      "comentario": "A frase exemplifica Personificacao.",
+      "correta": "Personificação",
+      "comentario": "A frase exemplifica Personificação.",
       "tempoEstimado": 30,
       "tags": [
         "personificacao",
@@ -3624,21 +3624,21 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Identificacao em contexto",
+      "subtopico": "Identificação em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO apresenta Hiperbole?",
+      "enunciado": "Qual alternativa NÃO apresenta Hipérbole?",
       "opcoes": [
-        "Vi com meus proprios olhos.",
-        "Ja te falei isso mil vezes.",
+        "Vi com meus próprios olhos.",
+        "Já te falei isso mil vezes.",
         "Estou morrendo de fome.",
         "Chorei um rio inteiro com aquele filme."
       ],
-      "correta": "Vi com meus proprios olhos.",
+      "correta": "Vi com meus próprios olhos.",
       "comentario": "A alternativa correta pertence a outra figura de linguagem.",
       "tempoEstimado": 35,
       "tags": [
@@ -3663,19 +3663,19 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definicao corresponde melhor ao uso de Eufemismo no trecho \"Ele partiu ontem.\"?",
+      "enunciado": "Qual definição corresponde melhor ao uso de Eufemismo no trecho \"Ele partiu ontem.\"?",
       "opcoes": [
         "suaviza uma ideia dura desagradavel ou delicada",
-        "aproxima dois sentidos sem conectivo comparativo explicito",
+        "aproxima dois sentidos sem conectivo comparativo explícito",
         "aproxima elementos por meio de conectivos como tal qual como parece",
-        "substitui um termo por outro com relacao de proximidade"
+        "substitui um termo por outro com relação de proximidade"
       ],
       "correta": "suaviza uma ideia dura desagradavel ou delicada",
       "comentario": "A frase foi construida para exemplificar Eufemismo.",
@@ -3701,21 +3701,21 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Identificacao em contexto",
+      "subtopico": "Identificação em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe o trecho \"Nossa, estudar na vespera e mesmo um plano genial.\". Qual alternativa traz outra frase com a mesma figura de linguagem?",
+      "enunciado": "Observe o trecho \"Nossa, estudar na véspera e mesmo um plano genial.\". Qual alternativa traz outra frase com a mesma figura de linguagem?",
       "opcoes": [
-        "Parabens pela organizacao, falou diante do quarto em caos.",
-        "Li Machado de Assis nas ferias.",
-        "A cidade dormia em silencio.",
+        "Parabéns pela organização, falou diante do quarto em caos.",
+        "Li Machado de Assis nas férias.",
+        "A cidade dormia em silêncio.",
         "Estou morrendo de fome."
       ],
-      "correta": "Parabens pela organizacao, falou diante do quarto em caos.",
+      "correta": "Parabéns pela organização, falou diante do quarto em caos.",
       "comentario": "As duas frases usam Ironia.",
       "tempoEstimado": 30,
       "tags": [
@@ -3740,22 +3740,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No enunciado \"No mesmo gesto havia amor e odio.\", o uso de Antitese produz principalmente qual efeito de sentido?",
+      "enunciado": "No enunciado \"No mesmo gesto havia amor e odio.\", o uso de Antítese produz principalmente qual efeito de sentido?",
       "opcoes": [
         "destaca um contraste de ideias",
-        "apresenta uma informacao objetiva e neutra",
+        "apresenta uma informação objetiva e neutra",
         "organiza o texto em ordem cronologica",
         "indica apenas localizacao espacial"
       ],
       "correta": "destaca um contraste de ideias",
-      "comentario": "Nesse caso, Antitese destaca um contraste de ideias.",
+      "comentario": "Nesse caso, Antítese destaca um contraste de ideias.",
       "tempoEstimado": 35,
       "tags": [
         "antitese",
@@ -3778,22 +3778,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Diferenciacao entre figuras",
+      "subtopico": "Diferenciação entre figuras",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em \"Veio um trim trim do celular na biblioteca.\", a classificacao correta e Onomatopeia, e nao Aliteracao, porque:",
+      "enunciado": "Em \"Veio um trim trim do celular na biblioteca.\", a classificação correta é Onomatopeia, e não Aliteração, porque:",
       "opcoes": [
         "Onomatopeia imita ou sugere sons por meio de palavras.",
-        "Aliteracao depende sempre de uma imitacao de som.",
-        "Aliteracao elimina qualquer valor expressivo da frase.",
-        "Aliteracao ocorre apenas em frases literais e objetivas."
+        "Aliteração depende sempre de uma imitacao de som.",
+        "Aliteração elimina qualquer valor expressivo da frase.",
+        "Aliteração ocorre apenas em frases literais e objetivas."
       ],
       "correta": "Onomatopeia imita ou sugere sons por meio de palavras.",
-      "comentario": "A justificativa correta recupera a caracteristica central de Onomatopeia.",
+      "comentario": "A justificativa correta recupera a característica central de Onomatopeia.",
       "tempoEstimado": 35,
       "tags": [
         "onomatopeia",
@@ -3816,22 +3816,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Aliteracao",
+      "subtopico": "Aliteração",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
       "enunciado": "Qual alternativa classifica corretamente a frase \"Sopra suave o som da serra.\"?",
       "opcoes": [
-        "Aliteracao",
+        "Aliteração",
         "Onomatopeia",
         "Pleonasmo",
         "Sinestesia"
       ],
-      "correta": "Aliteracao",
-      "comentario": "A frase exemplifica Aliteracao.",
+      "correta": "Aliteração",
+      "comentario": "A frase exemplifica Aliteração.",
       "tempoEstimado": 30,
       "tags": [
         "aliteracao",
@@ -3854,19 +3854,19 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Identificacao em contexto",
+      "subtopico": "Identificação em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO apresenta Pleonasmo?",
+      "enunciado": "Qual alternativa NÃO apresenta Pleonasmo?",
       "opcoes": [
         "A voz doce da cantora acalmou a plateia.",
         "Entrou para dentro correndo.",
         "Saiu para fora em disparada.",
-        "Ouvi isso com meus proprios ouvidos."
+        "Ouvi isso com meus próprios ouvidos."
       ],
       "correta": "A voz doce da cantora acalmou a plateia.",
       "comentario": "A alternativa correta pertence a outra figura de linguagem.",
@@ -3893,21 +3893,21 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definicao corresponde melhor ao uso de Sinestesia no trecho \"O perfume quente da tarde tomou a sala.\"?",
+      "enunciado": "Qual definição corresponde melhor ao uso de Sinestesia no trecho \"O perfume quente da tarde tomou a sala.\"?",
       "opcoes": [
-        "mistura sensacoes de sentidos diferentes",
-        "aproxima dois sentidos sem conectivo comparativo explicito",
+        "mistura sensações de sentidos diferentes",
+        "aproxima dois sentidos sem conectivo comparativo explícito",
         "aproxima elementos por meio de conectivos como tal qual como parece",
-        "substitui um termo por outro com relacao de proximidade"
+        "substitui um termo por outro com relação de proximidade"
       ],
-      "correta": "mistura sensacoes de sentidos diferentes",
+      "correta": "mistura sensações de sentidos diferentes",
       "comentario": "A frase foi construida para exemplificar Sinestesia.",
       "tempoEstimado": 30,
       "tags": [
@@ -3931,9 +3931,9 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Identificacao em contexto",
+      "subtopico": "Identificação em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
@@ -3941,12 +3941,12 @@ export const figurasDeLinguagem = {
       "enunciado": "Observe o trecho \"Aquela menina e uma estrela na sala.\". Qual alternativa traz outra frase com a mesma figura de linguagem?",
       "opcoes": [
         "O tempo e um ladrao silencioso.",
-        "Li Machado de Assis nas ferias.",
-        "A cidade dormia em silencio.",
+        "Li Machado de Assis nas férias.",
+        "A cidade dormia em silêncio.",
         "Estou morrendo de fome."
       ],
       "correta": "O tempo e um ladrao silencioso.",
-      "comentario": "As duas frases usam Metafora.",
+      "comentario": "As duas frases usam Metáfora.",
       "tempoEstimado": 30,
       "tags": [
         "metafora",
@@ -3970,22 +3970,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No enunciado \"O patio estava quente como um forno.\", o uso de Comparacao produz principalmente qual efeito de sentido?",
+      "enunciado": "No enunciado \"O pátio estava quente como um forno.\", o uso de Comparação produz principalmente qual efeito de sentido?",
       "opcoes": [
-        "explicita uma semelhanca entre elementos",
-        "apresenta uma informacao objetiva e neutra",
+        "explícita uma semelhança entre elementos",
+        "apresenta uma informação objetiva e neutra",
         "organiza o texto em ordem cronologica",
         "indica apenas localizacao espacial"
       ],
-      "correta": "explicita uma semelhanca entre elementos",
-      "comentario": "Nesse caso, Comparacao explicita uma semelhanca entre elementos.",
+      "correta": "explícita uma semelhança entre elementos",
+      "comentario": "Nesse caso, Comparação explícita uma semelhança entre elementos.",
       "tempoEstimado": 35,
       "tags": [
         "comparacao",
@@ -4008,22 +4008,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Diferenciacao entre figuras",
+      "subtopico": "Diferenciação entre figuras",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em \"A escola inteira participou da campanha.\", a classificacao correta e Metonimia, e nao Metafora, porque:",
+      "enunciado": "Em \"A escola inteira participou da campanha.\", a classificação correta é Metonímia, e não Metáfora, porque:",
       "opcoes": [
-        "Metonimia substitui um termo por outro com relacao de proximidade.",
-        "Metafora depende sempre de uma imitacao de som.",
-        "Metafora elimina qualquer valor expressivo da frase.",
-        "Metafora ocorre apenas em frases literais e objetivas."
+        "Metonímia substitui um termo por outro com relação de proximidade.",
+        "Metáfora depende sempre de uma imitacao de som.",
+        "Metáfora elimina qualquer valor expressivo da frase.",
+        "Metáfora ocorre apenas em frases literais e objetivas."
       ],
-      "correta": "Metonimia substitui um termo por outro com relacao de proximidade.",
-      "comentario": "A justificativa correta recupera a caracteristica central de Metonimia.",
+      "correta": "Metonímia substitui um termo por outro com relação de proximidade.",
+      "comentario": "A justificativa correta recupera a característica central de Metonímia.",
       "tempoEstimado": 35,
       "tags": [
         "metonimia",
@@ -4046,22 +4046,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Personificacao",
+      "subtopico": "Personificação",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
       "enunciado": "Qual alternativa classifica corretamente a frase \"O vento cantava na janela.\"?",
       "opcoes": [
-        "Personificacao",
+        "Personificação",
         "Onomatopeia",
-        "Aliteracao",
+        "Aliteração",
         "Pleonasmo"
       ],
-      "correta": "Personificacao",
-      "comentario": "A frase exemplifica Personificacao.",
+      "correta": "Personificação",
+      "comentario": "A frase exemplifica Personificação.",
       "tempoEstimado": 30,
       "tags": [
         "personificacao",
@@ -4084,21 +4084,21 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Identificacao em contexto",
+      "subtopico": "Identificação em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO apresenta Hiperbole?",
+      "enunciado": "Qual alternativa NÃO apresenta Hipérbole?",
       "opcoes": [
-        "Vi com meus proprios olhos.",
+        "Vi com meus próprios olhos.",
         "Chorei um rio inteiro com aquele filme.",
         "Carrego o mundo nas costas nesta semana.",
-        "Esperei uma eternidade pelo onibus."
+        "Esperei uma eternidade pelo ônibus."
       ],
-      "correta": "Vi com meus proprios olhos.",
+      "correta": "Vi com meus próprios olhos.",
       "comentario": "A alternativa correta pertence a outra figura de linguagem.",
       "tempoEstimado": 35,
       "tags": [
@@ -4123,19 +4123,19 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definicao corresponde melhor ao uso de Eufemismo no trecho \"A paciente nao resistiu.\"?",
+      "enunciado": "Qual definição corresponde melhor ao uso de Eufemismo no trecho \"A paciente não resistiu.\"?",
       "opcoes": [
         "suaviza uma ideia dura desagradavel ou delicada",
-        "aproxima dois sentidos sem conectivo comparativo explicito",
+        "aproxima dois sentidos sem conectivo comparativo explícito",
         "aproxima elementos por meio de conectivos como tal qual como parece",
-        "substitui um termo por outro com relacao de proximidade"
+        "substitui um termo por outro com relação de proximidade"
       ],
       "correta": "suaviza uma ideia dura desagradavel ou delicada",
       "comentario": "A frase foi construida para exemplificar Eufemismo.",
@@ -4161,21 +4161,21 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Identificacao em contexto",
+      "subtopico": "Identificação em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe o trecho \"Como voce foi discreto, comentou apos o grito no corredor.\". Qual alternativa traz outra frase com a mesma figura de linguagem?",
+      "enunciado": "Observe o trecho \"Como você foi discreto, comentou após o grito no corredor.\". Qual alternativa traz outra frase com a mesma figura de linguagem?",
       "opcoes": [
-        "Adorei ficar preso no transito por duas horas.",
-        "Li Machado de Assis nas ferias.",
-        "A cidade dormia em silencio.",
+        "Adorei ficar preso no trânsito por duas horas.",
+        "Li Machado de Assis nas férias.",
+        "A cidade dormia em silêncio.",
         "Estou morrendo de fome."
       ],
-      "correta": "Adorei ficar preso no transito por duas horas.",
+      "correta": "Adorei ficar preso no trânsito por duas horas.",
       "comentario": "As duas frases usam Ironia.",
       "tempoEstimado": 30,
       "tags": [
@@ -4200,22 +4200,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No enunciado \"Era um discurso de paz em meio a guerra.\", o uso de Antitese produz principalmente qual efeito de sentido?",
+      "enunciado": "No enunciado \"Era um discurso de paz em meio a guerra.\", o uso de Antítese produz principalmente qual efeito de sentido?",
       "opcoes": [
         "destaca um contraste de ideias",
-        "apresenta uma informacao objetiva e neutra",
+        "apresenta uma informação objetiva e neutra",
         "organiza o texto em ordem cronologica",
         "indica apenas localizacao espacial"
       ],
       "correta": "destaca um contraste de ideias",
-      "comentario": "Nesse caso, Antitese destaca um contraste de ideias.",
+      "comentario": "Nesse caso, Antítese destaca um contraste de ideias.",
       "tempoEstimado": 35,
       "tags": [
         "antitese",
@@ -4238,22 +4238,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Diferenciacao entre figuras",
+      "subtopico": "Diferenciação entre figuras",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em \"O tic tac do relogio dominava a sala.\", a classificacao correta e Onomatopeia, e nao Aliteracao, porque:",
+      "enunciado": "Em \"O tic tac do relogio dominava a sala.\", a classificação correta é Onomatopeia, e não Aliteração, porque:",
       "opcoes": [
         "Onomatopeia imita ou sugere sons por meio de palavras.",
-        "Aliteracao depende sempre de uma imitacao de som.",
-        "Aliteracao elimina qualquer valor expressivo da frase.",
-        "Aliteracao ocorre apenas em frases literais e objetivas."
+        "Aliteração depende sempre de uma imitacao de som.",
+        "Aliteração elimina qualquer valor expressivo da frase.",
+        "Aliteração ocorre apenas em frases literais e objetivas."
       ],
       "correta": "Onomatopeia imita ou sugere sons por meio de palavras.",
-      "comentario": "A justificativa correta recupera a caracteristica central de Onomatopeia.",
+      "comentario": "A justificativa correta recupera a característica central de Onomatopeia.",
       "tempoEstimado": 35,
       "tags": [
         "onomatopeia",
@@ -4276,22 +4276,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Aliteracao",
+      "subtopico": "Aliteração",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
       "enunciado": "Qual alternativa classifica corretamente a frase \"Vozes vagas varavam o vento.\"?",
       "opcoes": [
-        "Aliteracao",
+        "Aliteração",
         "Onomatopeia",
         "Pleonasmo",
         "Sinestesia"
       ],
-      "correta": "Aliteracao",
-      "comentario": "A frase exemplifica Aliteracao.",
+      "correta": "Aliteração",
+      "comentario": "A frase exemplifica Aliteração.",
       "tempoEstimado": 30,
       "tags": [
         "aliteracao",
@@ -4314,18 +4314,18 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Identificacao em contexto",
+      "subtopico": "Identificação em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO apresenta Pleonasmo?",
+      "enunciado": "Qual alternativa NÃO apresenta Pleonasmo?",
       "opcoes": [
         "A voz doce da cantora acalmou a plateia.",
-        "Ouvi isso com meus proprios ouvidos.",
-        "Vi com meus proprios olhos.",
+        "Ouvi isso com meus próprios ouvidos.",
+        "Vi com meus próprios olhos.",
         "Subiu para cima sem olhar para tras."
       ],
       "correta": "A voz doce da cantora acalmou a plateia.",
@@ -4353,21 +4353,21 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definicao corresponde melhor ao uso de Sinestesia no trecho \"A luz fria do corredor incomodava.\"?",
+      "enunciado": "Qual definição corresponde melhor ao uso de Sinestesia no trecho \"A luz fria do corredor incomodava.\"?",
       "opcoes": [
-        "mistura sensacoes de sentidos diferentes",
-        "aproxima dois sentidos sem conectivo comparativo explicito",
+        "mistura sensações de sentidos diferentes",
+        "aproxima dois sentidos sem conectivo comparativo explícito",
         "aproxima elementos por meio de conectivos como tal qual como parece",
-        "substitui um termo por outro com relacao de proximidade"
+        "substitui um termo por outro com relação de proximidade"
       ],
-      "correta": "mistura sensacoes de sentidos diferentes",
+      "correta": "mistura sensações de sentidos diferentes",
       "comentario": "A frase foi construida para exemplificar Sinestesia.",
       "tempoEstimado": 30,
       "tags": [
@@ -4391,9 +4391,9 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Identificacao em contexto",
+      "subtopico": "Identificação em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
@@ -4401,12 +4401,12 @@ export const figurasDeLinguagem = {
       "enunciado": "Observe o trecho \"O bairro acordou coberto por um tapete branco de neblina.\". Qual alternativa traz outra frase com a mesma figura de linguagem?",
       "opcoes": [
         "A vida e um sopro.",
-        "Li Machado de Assis nas ferias.",
-        "A cidade dormia em silencio.",
+        "Li Machado de Assis nas férias.",
+        "A cidade dormia em silêncio.",
         "Estou morrendo de fome."
       ],
       "correta": "A vida e um sopro.",
-      "comentario": "As duas frases usam Metafora.",
+      "comentario": "As duas frases usam Metáfora.",
       "tempoEstimado": 30,
       "tags": [
         "metafora",
@@ -4430,22 +4430,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No enunciado \"Ela corre como o vento.\", o uso de Comparacao produz principalmente qual efeito de sentido?",
+      "enunciado": "No enunciado \"Ela corre como o vento.\", o uso de Comparação produz principalmente qual efeito de sentido?",
       "opcoes": [
-        "explicita uma semelhanca entre elementos",
-        "apresenta uma informacao objetiva e neutra",
+        "explícita uma semelhança entre elementos",
+        "apresenta uma informação objetiva e neutra",
         "organiza o texto em ordem cronologica",
         "indica apenas localizacao espacial"
       ],
-      "correta": "explicita uma semelhanca entre elementos",
-      "comentario": "Nesse caso, Comparacao explicita uma semelhanca entre elementos.",
+      "correta": "explícita uma semelhança entre elementos",
+      "comentario": "Nesse caso, Comparação explícita uma semelhança entre elementos.",
       "tempoEstimado": 35,
       "tags": [
         "comparacao",
@@ -4468,22 +4468,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Diferenciacao entre figuras",
+      "subtopico": "Diferenciação entre figuras",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em \"A sala aplaudiu de pe o palestrante.\", a classificacao correta e Metonimia, e nao Metafora, porque:",
+      "enunciado": "Em \"A sala aplaudiu de pé o palestrante.\", a classificação correta é Metonímia, e não Metáfora, porque:",
       "opcoes": [
-        "Metonimia substitui um termo por outro com relacao de proximidade.",
-        "Metafora depende sempre de uma imitacao de som.",
-        "Metafora elimina qualquer valor expressivo da frase.",
-        "Metafora ocorre apenas em frases literais e objetivas."
+        "Metonímia substitui um termo por outro com relação de proximidade.",
+        "Metáfora depende sempre de uma imitacao de som.",
+        "Metáfora elimina qualquer valor expressivo da frase.",
+        "Metáfora ocorre apenas em frases literais e objetivas."
       ],
-      "correta": "Metonimia substitui um termo por outro com relacao de proximidade.",
-      "comentario": "A justificativa correta recupera a caracteristica central de Metonimia.",
+      "correta": "Metonímia substitui um termo por outro com relação de proximidade.",
+      "comentario": "A justificativa correta recupera a característica central de Metonímia.",
       "tempoEstimado": 35,
       "tags": [
         "metonimia",
@@ -4506,22 +4506,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Personificacao",
+      "subtopico": "Personificação",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
       "enunciado": "Qual alternativa classifica corretamente a frase \"O relogio correu naquela tarde.\"?",
       "opcoes": [
-        "Personificacao",
+        "Personificação",
         "Onomatopeia",
-        "Aliteracao",
+        "Aliteração",
         "Pleonasmo"
       ],
-      "correta": "Personificacao",
-      "comentario": "A frase exemplifica Personificacao.",
+      "correta": "Personificação",
+      "comentario": "A frase exemplifica Personificação.",
       "tempoEstimado": 30,
       "tags": [
         "personificacao",
@@ -4544,21 +4544,21 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Identificacao em contexto",
+      "subtopico": "Identificação em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO apresenta Hiperbole?",
+      "enunciado": "Qual alternativa NÃO apresenta Hipérbole?",
       "opcoes": [
-        "Vi com meus proprios olhos.",
-        "Esperei uma eternidade pelo onibus.",
-        "Ja te falei isso mil vezes.",
+        "Vi com meus próprios olhos.",
+        "Esperei uma eternidade pelo ônibus.",
+        "Já te falei isso mil vezes.",
         "Estou morrendo de fome."
       ],
-      "correta": "Vi com meus proprios olhos.",
+      "correta": "Vi com meus próprios olhos.",
       "comentario": "A alternativa correta pertence a outra figura de linguagem.",
       "tempoEstimado": 35,
       "tags": [
@@ -4583,19 +4583,19 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definicao corresponde melhor ao uso de Eufemismo no trecho \"Ela nos deixou no inicio do inverno.\"?",
+      "enunciado": "Qual definição corresponde melhor ao uso de Eufemismo no trecho \"Ela nos deixou no inicio do inverno.\"?",
       "opcoes": [
         "suaviza uma ideia dura desagradavel ou delicada",
-        "aproxima dois sentidos sem conectivo comparativo explicito",
+        "aproxima dois sentidos sem conectivo comparativo explícito",
         "aproxima elementos por meio de conectivos como tal qual como parece",
-        "substitui um termo por outro com relacao de proximidade"
+        "substitui um termo por outro com relação de proximidade"
       ],
       "correta": "suaviza uma ideia dura desagradavel ou delicada",
       "comentario": "A frase foi construida para exemplificar Eufemismo.",
@@ -4621,22 +4621,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: \"A vida e um sopro. A cidade dormia em silencio.\". Considerando o primeiro nucleo expressivo do trecho, qual figura predomina?",
+      "enunciado": "Leia: \"A vida e um sopro. A cidade dormia em silêncio.\". Considerando o primeiro nucleo expressivo do trecho, qual figura predomina?",
       "opcoes": [
-        "Metafora",
-        "Personificacao",
+        "Metáfora",
+        "Personificação",
         "Eufemismo",
-        "Antitese"
+        "Antítese"
       ],
-      "correta": "Metafora",
-      "comentario": "O primeiro nucleo expressivo se organiza principalmente por Metafora.",
+      "correta": "Metáfora",
+      "comentario": "O primeiro nucleo expressivo se organiza principalmente por Metáfora.",
       "tempoEstimado": 45,
       "tags": [
         "metafora",
@@ -4659,21 +4659,21 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Diferenciacao entre figuras",
+      "subtopico": "Diferenciação entre figuras",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante leu a frase \"O patio estava quente como um forno.\" e disse que se trata de Hiperbole. Qual avaliacao esta correta?",
+      "enunciado": "Um estudante leu a frase \"O pátio estava quente como um forno.\" e disse que se trata de Hipérbole. Qual avaliação está correta?",
       "opcoes": [
-        "O estudante errou, porque a frase exemplifica Comparacao.",
-        "O estudante acertou, porque toda frase expressiva e Hiperbole.",
-        "O estudante acertou, porque Comparacao e Hiperbole sao a mesma figura.",
-        "Nao e possivel classificar a frase."
+        "O estudante errou, porque a frase exemplifica Comparação.",
+        "O estudante acertou, porque toda frase expressiva e Hipérbole.",
+        "O estudante acertou, porque Comparação e Hipérbole são a mesma figura.",
+        "Não e possivel classificar a frase."
       ],
-      "correta": "O estudante errou, porque a frase exemplifica Comparacao.",
+      "correta": "O estudante errou, porque a frase exemplifica Comparação.",
       "comentario": "A leitura correta depende do mecanismo central da figura usada no trecho.",
       "tempoEstimado": 45,
       "tags": [
@@ -4697,22 +4697,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No trecho \"Li Machado de Assis nas ferias.\", qual interpretacao explica melhor o efeito expressivo criado?",
+      "enunciado": "No trecho \"Li Machado de Assis nas férias.\", qual interpretação explica melhor o efeito expressivo criado?",
       "opcoes": [
-        "condensa a ideia por associacao entre termos proximos",
+        "condensa a ideia por associacao entre termos próximos",
         "elimina qualquer subjetividade da linguagem",
-        "apresenta apenas uma informacao tecnica",
-        "substitui o sentido figurado por um dado estatistico"
+        "apresenta apenas uma informação técnica",
+        "substitui o sentido figurado por um dado estatístico"
       ],
-      "correta": "condensa a ideia por associacao entre termos proximos",
-      "comentario": "A interpretacao correta reconhece o efeito caracteristico de Metonimia.",
+      "correta": "condensa a ideia por associacao entre termos próximos",
+      "comentario": "A interpretação correta reconhece o efeito caracteristico de Metonímia.",
       "tempoEstimado": 40,
       "tags": [
         "metonimia",
@@ -4735,22 +4735,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: \"A chuva insistia em bater na porta. Adorei ficar preso no transito por duas horas.\". Considerando o primeiro nucleo expressivo do trecho, qual figura predomina?",
+      "enunciado": "Leia: \"A chuva insistia em bater na porta. Adorei ficar preso no trânsito por duas horas.\". Considerando o primeiro nucleo expressivo do trecho, qual figura predomina?",
       "opcoes": [
-        "Personificacao",
+        "Personificação",
         "Ironia",
         "Onomatopeia",
         "Pleonasmo"
       ],
-      "correta": "Personificacao",
-      "comentario": "O primeiro nucleo expressivo se organiza principalmente por Personificacao.",
+      "correta": "Personificação",
+      "comentario": "O primeiro nucleo expressivo se organiza principalmente por Personificação.",
       "tempoEstimado": 45,
       "tags": [
         "personificacao",
@@ -4773,21 +4773,21 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Diferenciacao entre figuras",
+      "subtopico": "Diferenciação entre figuras",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante leu a frase \"Ja te falei isso mil vezes.\" e disse que se trata de Antitese. Qual avaliacao esta correta?",
+      "enunciado": "Um estudante leu a frase \"Já te falei isso mil vezes.\" e disse que se trata de Antítese. Qual avaliação está correta?",
       "opcoes": [
-        "O estudante errou, porque a frase exemplifica Hiperbole.",
-        "O estudante acertou, porque toda frase expressiva e Antitese.",
-        "O estudante acertou, porque Hiperbole e Antitese sao a mesma figura.",
-        "Nao e possivel classificar a frase."
+        "O estudante errou, porque a frase exemplifica Hipérbole.",
+        "O estudante acertou, porque toda frase expressiva e Antítese.",
+        "O estudante acertou, porque Hipérbole e Antítese são a mesma figura.",
+        "Não e possivel classificar a frase."
       ],
-      "correta": "O estudante errou, porque a frase exemplifica Hiperbole.",
+      "correta": "O estudante errou, porque a frase exemplifica Hipérbole.",
       "comentario": "A leitura correta depende do mecanismo central da figura usada no trecho.",
       "tempoEstimado": 45,
       "tags": [
@@ -4811,22 +4811,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No trecho \"O aluno nao foi feliz na resposta.\", qual interpretacao explica melhor o efeito expressivo criado?",
+      "enunciado": "No trecho \"O aluno não foi feliz na resposta.\", qual interpretação explica melhor o efeito expressivo criado?",
       "opcoes": [
-        "ameniza o impacto da informacao",
+        "ameniza o impacto da informação",
         "elimina qualquer subjetividade da linguagem",
-        "apresenta apenas uma informacao tecnica",
-        "substitui o sentido figurado por um dado estatistico"
+        "apresenta apenas uma informação técnica",
+        "substitui o sentido figurado por um dado estatístico"
       ],
-      "correta": "ameniza o impacto da informacao",
-      "comentario": "A interpretacao correta reconhece o efeito caracteristico de Eufemismo.",
+      "correta": "ameniza o impacto da informação",
+      "comentario": "A interpretação correta reconhece o efeito caracteristico de Eufemismo.",
       "tempoEstimado": 40,
       "tags": [
         "eufemismo",
@@ -4849,19 +4849,19 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: \"Nossa, estudar na vespera e mesmo um plano genial. Batem brisas brandas no bosque.\". Considerando o primeiro nucleo expressivo do trecho, qual figura predomina?",
+      "enunciado": "Leia: \"Nossa, estudar na véspera e mesmo um plano genial. Batem brisas brandas no bosque.\". Considerando o primeiro nucleo expressivo do trecho, qual figura predomina?",
       "opcoes": [
         "Ironia",
-        "Aliteracao",
+        "Aliteração",
         "Sinestesia",
-        "Comparacao"
+        "Comparação"
       ],
       "correta": "Ironia",
       "comentario": "O primeiro nucleo expressivo se organiza principalmente por Ironia.",
@@ -4887,21 +4887,21 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Diferenciacao entre figuras",
+      "subtopico": "Diferenciação entre figuras",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante leu a frase \"Era um discurso de paz em meio a guerra.\" e disse que se trata de Pleonasmo. Qual avaliacao esta correta?",
+      "enunciado": "Um estudante leu a frase \"Era um discurso de paz em meio a guerra.\" e disse que se trata de Pleonasmo. Qual avaliação está correta?",
       "opcoes": [
-        "O estudante errou, porque a frase exemplifica Antitese.",
+        "O estudante errou, porque a frase exemplifica Antítese.",
         "O estudante acertou, porque toda frase expressiva e Pleonasmo.",
-        "O estudante acertou, porque Antitese e Pleonasmo sao a mesma figura.",
-        "Nao e possivel classificar a frase."
+        "O estudante acertou, porque Antítese e Pleonasmo são a mesma figura.",
+        "Não e possivel classificar a frase."
       ],
-      "correta": "O estudante errou, porque a frase exemplifica Antitese.",
+      "correta": "O estudante errou, porque a frase exemplifica Antítese.",
       "comentario": "A leitura correta depende do mecanismo central da figura usada no trecho.",
       "tempoEstimado": 45,
       "tags": [
@@ -4925,22 +4925,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No trecho \"A porta fez bum com o vento.\", qual interpretacao explica melhor o efeito expressivo criado?",
+      "enunciado": "No trecho \"A porta fez bum com o vento.\", qual interpretação explica melhor o efeito expressivo criado?",
       "opcoes": [
-        "reproduz sonoramente uma acao ou ruido",
+        "reproduz sonoramente uma ação ou ruido",
         "elimina qualquer subjetividade da linguagem",
-        "apresenta apenas uma informacao tecnica",
-        "substitui o sentido figurado por um dado estatistico"
+        "apresenta apenas uma informação técnica",
+        "substitui o sentido figurado por um dado estatístico"
       ],
-      "correta": "reproduz sonoramente uma acao ou ruido",
-      "comentario": "A interpretacao correta reconhece o efeito caracteristico de Onomatopeia.",
+      "correta": "reproduz sonoramente uma ação ou ruido",
+      "comentario": "A interpretação correta reconhece o efeito caracteristico de Onomatopeia.",
       "tempoEstimado": 40,
       "tags": [
         "onomatopeia",
@@ -4963,7 +4963,7 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
@@ -4972,13 +4972,13 @@ export const figurasDeLinguagem = {
       "tipo": "multipla_escolha",
       "enunciado": "Leia: \"Sopra suave o som da serra. A vida e um sopro.\". Considerando o primeiro nucleo expressivo do trecho, qual figura predomina?",
       "opcoes": [
-        "Aliteracao",
-        "Metafora",
-        "Metonimia",
-        "Hiperbole"
+        "Aliteração",
+        "Metáfora",
+        "Metonímia",
+        "Hipérbole"
       ],
-      "correta": "Aliteracao",
-      "comentario": "O primeiro nucleo expressivo se organiza principalmente por Aliteracao.",
+      "correta": "Aliteração",
+      "comentario": "O primeiro nucleo expressivo se organiza principalmente por Aliteração.",
       "tempoEstimado": 45,
       "tags": [
         "aliteracao",
@@ -5001,21 +5001,21 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Diferenciacao entre figuras",
+      "subtopico": "Diferenciação entre figuras",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante leu a frase \"Aquela menina e uma estrela na sala.\" e disse que se trata de Comparacao. Qual avaliacao esta correta?",
+      "enunciado": "Um estudante leu a frase \"Aquela menina e uma estrela na sala.\" e disse que se trata de Comparação. Qual avaliação está correta?",
       "opcoes": [
-        "O estudante errou, porque a frase exemplifica Metafora.",
-        "O estudante acertou, porque toda frase expressiva e Comparacao.",
-        "O estudante acertou, porque Metafora e Comparacao sao a mesma figura.",
-        "Nao e possivel classificar a frase."
+        "O estudante errou, porque a frase exemplifica Metáfora.",
+        "O estudante acertou, porque toda frase expressiva e Comparação.",
+        "O estudante acertou, porque Metáfora e Comparação são a mesma figura.",
+        "Não e possivel classificar a frase."
       ],
-      "correta": "O estudante errou, porque a frase exemplifica Metafora.",
+      "correta": "O estudante errou, porque a frase exemplifica Metáfora.",
       "comentario": "A leitura correta depende do mecanismo central da figura usada no trecho.",
       "tempoEstimado": 45,
       "tags": [
@@ -5039,22 +5039,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No trecho \"A noticia caiu sobre todos como uma pedra.\", qual interpretacao explica melhor o efeito expressivo criado?",
+      "enunciado": "No trecho \"A notícia caiu sobre todos como uma pedra.\", qual interpretação explica melhor o efeito expressivo criado?",
       "opcoes": [
-        "explicita uma semelhanca entre elementos",
+        "explícita uma semelhança entre elementos",
         "elimina qualquer subjetividade da linguagem",
-        "apresenta apenas uma informacao tecnica",
-        "substitui o sentido figurado por um dado estatistico"
+        "apresenta apenas uma informação técnica",
+        "substitui o sentido figurado por um dado estatístico"
       ],
-      "correta": "explicita uma semelhanca entre elementos",
-      "comentario": "A interpretacao correta reconhece o efeito caracteristico de Comparacao.",
+      "correta": "explícita uma semelhança entre elementos",
+      "comentario": "A interpretação correta reconhece o efeito caracteristico de Comparação.",
       "tempoEstimado": 40,
       "tags": [
         "comparacao",
@@ -5077,22 +5077,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: \"Tomei duas xicaras antes da prova. A chuva insistia em bater na porta.\". Considerando o primeiro nucleo expressivo do trecho, qual figura predomina?",
+      "enunciado": "Leia: \"Tomei duas xícaras antes da prova. A chuva insistia em bater na porta.\". Considerando o primeiro nucleo expressivo do trecho, qual figura predomina?",
       "opcoes": [
-        "Metonimia",
-        "Personificacao",
+        "Metonímia",
+        "Personificação",
         "Eufemismo",
-        "Antitese"
+        "Antítese"
       ],
-      "correta": "Metonimia",
-      "comentario": "O primeiro nucleo expressivo se organiza principalmente por Metonimia.",
+      "correta": "Metonímia",
+      "comentario": "O primeiro nucleo expressivo se organiza principalmente por Metonímia.",
       "tempoEstimado": 45,
       "tags": [
         "metonimia",
@@ -5115,21 +5115,21 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Diferenciacao entre figuras",
+      "subtopico": "Diferenciação entre figuras",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante leu a frase \"O vento cantava na janela.\" e disse que se trata de Hiperbole. Qual avaliacao esta correta?",
+      "enunciado": "Um estudante leu a frase \"O vento cantava na janela.\" e disse que se trata de Hipérbole. Qual avaliação está correta?",
       "opcoes": [
-        "O estudante errou, porque a frase exemplifica Personificacao.",
-        "O estudante acertou, porque toda frase expressiva e Hiperbole.",
-        "O estudante acertou, porque Personificacao e Hiperbole sao a mesma figura.",
-        "Nao e possivel classificar a frase."
+        "O estudante errou, porque a frase exemplifica Personificação.",
+        "O estudante acertou, porque toda frase expressiva e Hipérbole.",
+        "O estudante acertou, porque Personificação e Hipérbole são a mesma figura.",
+        "Não e possivel classificar a frase."
       ],
-      "correta": "O estudante errou, porque a frase exemplifica Personificacao.",
+      "correta": "O estudante errou, porque a frase exemplifica Personificação.",
       "comentario": "A leitura correta depende do mecanismo central da figura usada no trecho.",
       "tempoEstimado": 45,
       "tags": [
@@ -5153,22 +5153,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No trecho \"Estou morrendo de fome.\", qual interpretacao explica melhor o efeito expressivo criado?",
+      "enunciado": "No trecho \"Estou morrendo de fome.\", qual interpretação explica melhor o efeito expressivo criado?",
       "opcoes": [
         "intensifica a mensagem por exagero expressivo",
         "elimina qualquer subjetividade da linguagem",
-        "apresenta apenas uma informacao tecnica",
-        "substitui o sentido figurado por um dado estatistico"
+        "apresenta apenas uma informação técnica",
+        "substitui o sentido figurado por um dado estatístico"
       ],
       "correta": "intensifica a mensagem por exagero expressivo",
-      "comentario": "A interpretacao correta reconhece o efeito caracteristico de Hiperbole.",
+      "comentario": "A interpretação correta reconhece o efeito caracteristico de Hipérbole.",
       "tempoEstimado": 40,
       "tags": [
         "hiperbole",
@@ -5191,14 +5191,14 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: \"Ele partiu ontem. Nossa, estudar na vespera e mesmo um plano genial.\". Considerando o primeiro nucleo expressivo do trecho, qual figura predomina?",
+      "enunciado": "Leia: \"Ele partiu ontem. Nossa, estudar na véspera e mesmo um plano genial.\". Considerando o primeiro nucleo expressivo do trecho, qual figura predomina?",
       "opcoes": [
         "Eufemismo",
         "Ironia",
@@ -5229,19 +5229,19 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Diferenciacao entre figuras",
+      "subtopico": "Diferenciação entre figuras",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante leu a frase \"Como voce foi discreto, comentou apos o grito no corredor.\" e disse que se trata de Antitese. Qual avaliacao esta correta?",
+      "enunciado": "Um estudante leu a frase \"Como você foi discreto, comentou após o grito no corredor.\" e disse que se trata de Antítese. Qual avaliação está correta?",
       "opcoes": [
         "O estudante errou, porque a frase exemplifica Ironia.",
-        "O estudante acertou, porque toda frase expressiva e Antitese.",
-        "O estudante acertou, porque Ironia e Antitese sao a mesma figura.",
-        "Nao e possivel classificar a frase."
+        "O estudante acertou, porque toda frase expressiva e Antítese.",
+        "O estudante acertou, porque Ironia e Antítese são a mesma figura.",
+        "Não e possivel classificar a frase."
       ],
       "correta": "O estudante errou, porque a frase exemplifica Ironia.",
       "comentario": "A leitura correta depende do mecanismo central da figura usada no trecho.",
@@ -5267,22 +5267,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No trecho \"Entre o riso e o choro, escolheu o silencio.\", qual interpretacao explica melhor o efeito expressivo criado?",
+      "enunciado": "No trecho \"Entre o riso e o choro, escolheu o silêncio.\", qual interpretação explica melhor o efeito expressivo criado?",
       "opcoes": [
         "destaca um contraste de ideias",
         "elimina qualquer subjetividade da linguagem",
-        "apresenta apenas uma informacao tecnica",
-        "substitui o sentido figurado por um dado estatistico"
+        "apresenta apenas uma informação técnica",
+        "substitui o sentido figurado por um dado estatístico"
       ],
       "correta": "destaca um contraste de ideias",
-      "comentario": "A interpretacao correta reconhece o efeito caracteristico de Antitese.",
+      "comentario": "A interpretação correta reconhece o efeito caracteristico de Antítese.",
       "tempoEstimado": 40,
       "tags": [
         "antitese",
@@ -5305,7 +5305,7 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
@@ -5315,9 +5315,9 @@ export const figurasDeLinguagem = {
       "enunciado": "Leia: \"Veio um trim trim do celular na biblioteca. Sopra suave o som da serra.\". Considerando o primeiro nucleo expressivo do trecho, qual figura predomina?",
       "opcoes": [
         "Onomatopeia",
-        "Aliteracao",
+        "Aliteração",
         "Sinestesia",
-        "Comparacao"
+        "Comparação"
       ],
       "correta": "Onomatopeia",
       "comentario": "O primeiro nucleo expressivo se organiza principalmente por Onomatopeia.",
@@ -5343,21 +5343,21 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Diferenciacao entre figuras",
+      "subtopico": "Diferenciação entre figuras",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante leu a frase \"Vozes vagas varavam o vento.\" e disse que se trata de Pleonasmo. Qual avaliacao esta correta?",
+      "enunciado": "Um estudante leu a frase \"Vozes vagas varavam o vento.\" e disse que se trata de Pleonasmo. Qual avaliação está correta?",
       "opcoes": [
-        "O estudante errou, porque a frase exemplifica Aliteracao.",
+        "O estudante errou, porque a frase exemplifica Aliteração.",
         "O estudante acertou, porque toda frase expressiva e Pleonasmo.",
-        "O estudante acertou, porque Aliteracao e Pleonasmo sao a mesma figura.",
-        "Nao e possivel classificar a frase."
+        "O estudante acertou, porque Aliteração e Pleonasmo são a mesma figura.",
+        "Não e possivel classificar a frase."
       ],
-      "correta": "O estudante errou, porque a frase exemplifica Aliteracao.",
+      "correta": "O estudante errou, porque a frase exemplifica Aliteração.",
       "comentario": "A leitura correta depende do mecanismo central da figura usada no trecho.",
       "tempoEstimado": 45,
       "tags": [
@@ -5381,22 +5381,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No trecho \"O tempo e um ladrao silencioso.\", qual interpretacao explica melhor o efeito expressivo criado?",
+      "enunciado": "No trecho \"O tempo e um ladrao silencioso.\", qual interpretação explica melhor o efeito expressivo criado?",
       "opcoes": [
         "cria uma imagem subjetiva e aproximativa",
         "elimina qualquer subjetividade da linguagem",
-        "apresenta apenas uma informacao tecnica",
-        "substitui o sentido figurado por um dado estatistico"
+        "apresenta apenas uma informação técnica",
+        "substitui o sentido figurado por um dado estatístico"
       ],
       "correta": "cria uma imagem subjetiva e aproximativa",
-      "comentario": "A interpretacao correta reconhece o efeito caracteristico de Metafora.",
+      "comentario": "A interpretação correta reconhece o efeito caracteristico de Metáfora.",
       "tempoEstimado": 40,
       "tags": [
         "metafora",
@@ -5419,7 +5419,7 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
@@ -5428,13 +5428,13 @@ export const figurasDeLinguagem = {
       "tipo": "multipla_escolha",
       "enunciado": "Leia: \"O menino ficou branco como papel. Aquela menina e uma estrela na sala.\". Considerando o primeiro nucleo expressivo do trecho, qual figura predomina?",
       "opcoes": [
-        "Comparacao",
-        "Metafora",
-        "Metonimia",
-        "Hiperbole"
+        "Comparação",
+        "Metáfora",
+        "Metonímia",
+        "Hipérbole"
       ],
-      "correta": "Comparacao",
-      "comentario": "O primeiro nucleo expressivo se organiza principalmente por Comparacao.",
+      "correta": "Comparação",
+      "comentario": "O primeiro nucleo expressivo se organiza principalmente por Comparação.",
       "tempoEstimado": 45,
       "tags": [
         "comparacao",
@@ -5457,21 +5457,21 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Diferenciacao entre figuras",
+      "subtopico": "Diferenciação entre figuras",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante leu a frase \"A escola inteira participou da campanha.\" e disse que se trata de Comparacao. Qual avaliacao esta correta?",
+      "enunciado": "Um estudante leu a frase \"A escola inteira participou da campanha.\" e disse que se trata de Comparação. Qual avaliação está correta?",
       "opcoes": [
-        "O estudante errou, porque a frase exemplifica Metonimia.",
-        "O estudante acertou, porque toda frase expressiva e Comparacao.",
-        "O estudante acertou, porque Metonimia e Comparacao sao a mesma figura.",
-        "Nao e possivel classificar a frase."
+        "O estudante errou, porque a frase exemplifica Metonímia.",
+        "O estudante acertou, porque toda frase expressiva e Comparação.",
+        "O estudante acertou, porque Metonímia e Comparação são a mesma figura.",
+        "Não e possivel classificar a frase."
       ],
-      "correta": "O estudante errou, porque a frase exemplifica Metonimia.",
+      "correta": "O estudante errou, porque a frase exemplifica Metonímia.",
       "comentario": "A leitura correta depende do mecanismo central da figura usada no trecho.",
       "tempoEstimado": 45,
       "tags": [
@@ -5495,22 +5495,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No trecho \"A cidade dormia em silencio.\", qual interpretacao explica melhor o efeito expressivo criado?",
+      "enunciado": "No trecho \"A cidade dormia em silêncio.\", qual interpretação explica melhor o efeito expressivo criado?",
       "opcoes": [
-        "humaniza elementos nao humanos para intensificar a expressao",
+        "humaniza elementos não humanos para intensificar a expressão",
         "elimina qualquer subjetividade da linguagem",
-        "apresenta apenas uma informacao tecnica",
-        "substitui o sentido figurado por um dado estatistico"
+        "apresenta apenas uma informação técnica",
+        "substitui o sentido figurado por um dado estatístico"
       ],
-      "correta": "humaniza elementos nao humanos para intensificar a expressao",
-      "comentario": "A interpretacao correta reconhece o efeito caracteristico de Personificacao.",
+      "correta": "humaniza elementos não humanos para intensificar a expressão",
+      "comentario": "A interpretação correta reconhece o efeito caracteristico de Personificação.",
       "tempoEstimado": 40,
       "tags": [
         "personificacao",
@@ -5533,7 +5533,7 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
@@ -5542,13 +5542,13 @@ export const figurasDeLinguagem = {
       "tipo": "multipla_escolha",
       "enunciado": "Leia: \"Carrego o mundo nas costas nesta semana. O vento cantava na janela.\". Considerando o primeiro nucleo expressivo do trecho, qual figura predomina?",
       "opcoes": [
-        "Hiperbole",
-        "Personificacao",
+        "Hipérbole",
+        "Personificação",
         "Eufemismo",
-        "Antitese"
+        "Antítese"
       ],
-      "correta": "Hiperbole",
-      "comentario": "O primeiro nucleo expressivo se organiza principalmente por Hiperbole.",
+      "correta": "Hipérbole",
+      "comentario": "O primeiro nucleo expressivo se organiza principalmente por Hipérbole.",
       "tempoEstimado": 45,
       "tags": [
         "hiperbole",
@@ -5571,19 +5571,19 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Diferenciacao entre figuras",
+      "subtopico": "Diferenciação entre figuras",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante leu a frase \"A paciente nao resistiu.\" e disse que se trata de Hiperbole. Qual avaliacao esta correta?",
+      "enunciado": "Um estudante leu a frase \"A paciente não resistiu.\" e disse que se trata de Hipérbole. Qual avaliação está correta?",
       "opcoes": [
         "O estudante errou, porque a frase exemplifica Eufemismo.",
-        "O estudante acertou, porque toda frase expressiva e Hiperbole.",
-        "O estudante acertou, porque Eufemismo e Hiperbole sao a mesma figura.",
-        "Nao e possivel classificar a frase."
+        "O estudante acertou, porque toda frase expressiva e Hipérbole.",
+        "O estudante acertou, porque Eufemismo e Hipérbole são a mesma figura.",
+        "Não e possivel classificar a frase."
       ],
       "correta": "O estudante errou, porque a frase exemplifica Eufemismo.",
       "comentario": "A leitura correta depende do mecanismo central da figura usada no trecho.",
@@ -5609,22 +5609,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No trecho \"Adorei ficar preso no transito por duas horas.\", qual interpretacao explica melhor o efeito expressivo criado?",
+      "enunciado": "No trecho \"Adorei ficar preso no trânsito por duas horas.\", qual interpretação explica melhor o efeito expressivo criado?",
       "opcoes": [
-        "produz critica ou humor por contraste entre o dito e o pretendido",
+        "produz crítica ou humor por contraste entre o dito e o pretendido",
         "elimina qualquer subjetividade da linguagem",
-        "apresenta apenas uma informacao tecnica",
-        "substitui o sentido figurado por um dado estatistico"
+        "apresenta apenas uma informação técnica",
+        "substitui o sentido figurado por um dado estatístico"
       ],
-      "correta": "produz critica ou humor por contraste entre o dito e o pretendido",
-      "comentario": "A interpretacao correta reconhece o efeito caracteristico de Ironia.",
+      "correta": "produz crítica ou humor por contraste entre o dito e o pretendido",
+      "comentario": "A interpretação correta reconhece o efeito caracteristico de Ironia.",
       "tempoEstimado": 40,
       "tags": [
         "ironia",
@@ -5647,22 +5647,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: \"No mesmo gesto havia amor e odio. Como voce foi discreto, comentou apos o grito no corredor.\". Considerando o primeiro nucleo expressivo do trecho, qual figura predomina?",
+      "enunciado": "Leia: \"No mesmo gesto havia amor e odio. Como você foi discreto, comentou após o grito no corredor.\". Considerando o primeiro nucleo expressivo do trecho, qual figura predomina?",
       "opcoes": [
-        "Antitese",
+        "Antítese",
         "Ironia",
         "Onomatopeia",
         "Pleonasmo"
       ],
-      "correta": "Antitese",
-      "comentario": "O primeiro nucleo expressivo se organiza principalmente por Antitese.",
+      "correta": "Antítese",
+      "comentario": "O primeiro nucleo expressivo se organiza principalmente por Antítese.",
       "tempoEstimado": 45,
       "tags": [
         "antitese",
@@ -5685,19 +5685,19 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Diferenciacao entre figuras",
+      "subtopico": "Diferenciação entre figuras",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante leu a frase \"O tic tac do relogio dominava a sala.\" e disse que se trata de Antitese. Qual avaliacao esta correta?",
+      "enunciado": "Um estudante leu a frase \"O tic tac do relogio dominava a sala.\" e disse que se trata de Antítese. Qual avaliação está correta?",
       "opcoes": [
         "O estudante errou, porque a frase exemplifica Onomatopeia.",
-        "O estudante acertou, porque toda frase expressiva e Antitese.",
-        "O estudante acertou, porque Onomatopeia e Antitese sao a mesma figura.",
-        "Nao e possivel classificar a frase."
+        "O estudante acertou, porque toda frase expressiva e Antítese.",
+        "O estudante acertou, porque Onomatopeia e Antítese são a mesma figura.",
+        "Não e possivel classificar a frase."
       ],
       "correta": "O estudante errou, porque a frase exemplifica Onomatopeia.",
       "comentario": "A leitura correta depende do mecanismo central da figura usada no trecho.",
@@ -5723,22 +5723,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No trecho \"Batem brisas brandas no bosque.\", qual interpretacao explica melhor o efeito expressivo criado?",
+      "enunciado": "No trecho \"Batem brisas brandas no bosque.\", qual interpretação explica melhor o efeito expressivo criado?",
       "opcoes": [
-        "cria musicalidade pela repeticao de consoantes",
+        "cria musicalidade pela repetição de consoantes",
         "elimina qualquer subjetividade da linguagem",
-        "apresenta apenas uma informacao tecnica",
-        "substitui o sentido figurado por um dado estatistico"
+        "apresenta apenas uma informação técnica",
+        "substitui o sentido figurado por um dado estatístico"
       ],
-      "correta": "cria musicalidade pela repeticao de consoantes",
-      "comentario": "A interpretacao correta reconhece o efeito caracteristico de Aliteracao.",
+      "correta": "cria musicalidade pela repetição de consoantes",
+      "comentario": "A interpretação correta reconhece o efeito caracteristico de Aliteração.",
       "tempoEstimado": 40,
       "tags": [
         "aliteracao",
@@ -5761,21 +5761,21 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
       "enunciado": "Em um cartaz escolar aparece a frase \"A vida e um sopro.\". Qual leitura melhor justifica o uso dessa linguagem?",
       "opcoes": [
-        "O cartaz recorre a Metafora para tornar a mensagem mais expressiva.",
-        "O cartaz tenta eliminar qualquer interpretacao figurada.",
-        "O cartaz usa apenas uma definicao de dicionario.",
+        "O cartaz recorre a Metáfora para tornar a mensagem mais expressiva.",
+        "O cartaz tenta eliminar qualquer interpretação figurada.",
+        "O cartaz usa apenas uma definição de dicionário.",
         "O cartaz evita qualquer efeito de sentido."
       ],
-      "correta": "O cartaz recorre a Metafora para tornar a mensagem mais expressiva.",
+      "correta": "O cartaz recorre a Metáfora para tornar a mensagem mais expressiva.",
       "comentario": "Em contexto de campanha ou cartaz, a figura reforca o impacto da mensagem.",
       "tempoEstimado": 50,
       "tags": [
@@ -5799,22 +5799,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia a analise: \"A frase O menino ficou branco como papel. e literal, portanto nao traz figura de linguagem\". Qual alternativa avalia melhor essa afirmacao?",
+      "enunciado": "Leia a análise: \"A frase O menino ficou branco como papel. e literal, portanto não traz figura de linguagem\". Qual alternativa avalia melhor essa afirmação?",
       "opcoes": [
-        "A afirmacao esta errada, porque a frase usa Comparacao.",
-        "A afirmacao esta certa, porque toda figura de linguagem precisa rimar.",
-        "A afirmacao esta certa, porque linguagem figurada so aparece em poemas longos.",
-        "A afirmacao esta errada apenas se houver verbos no passado."
+        "A afirmação está errada, porque a frase usa Comparação.",
+        "A afirmação está certa, porque toda figura de linguagem precisa rimar.",
+        "A afirmação está certa, porque linguagem figurada só aparece em poemas longos.",
+        "A afirmação está errada apenas se houver verbos no passado."
       ],
-      "correta": "A afirmacao esta errada, porque a frase usa Comparacao.",
-      "comentario": "A pegadinha esta em tratar linguagem figurada como se fosse sempre literal.",
+      "correta": "A afirmação está errada, porque a frase usa Comparação.",
+      "comentario": "A pegadinha está em tratar linguagem figurada como se fosse sempre literal.",
       "tempoEstimado": 50,
       "tags": [
         "comparacao",
@@ -5837,22 +5837,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Equivalencia de formas",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa preserva melhor o mesmo tipo de figura de linguagem usado em \"Tomei duas xicaras antes da prova.\"?",
+      "enunciado": "Qual alternativa preserva melhor o mesmo tipo de figura de linguagem usado em \"Tomei duas xícaras antes da prova.\"?",
       "opcoes": [
         "Brasilia anunciou novas medidas.",
         "Ele partiu ontem.",
-        "Nossa, estudar na vespera e mesmo um plano genial.",
+        "Nossa, estudar na véspera e mesmo um plano genial.",
         "No mesmo gesto havia amor e odio."
       ],
       "correta": "Brasilia anunciou novas medidas.",
-      "comentario": "A resposta correta mantem o mesmo procedimento expressivo de Metonimia.",
+      "comentario": "A resposta correta mantem o mesmo procedimento expressivo de Metonímia.",
       "tempoEstimado": 55,
       "tags": [
         "metonimia",
@@ -5875,22 +5875,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia o microtexto: \"Na reuniao, alguem comentou: A chuva insistia em bater na porta.\". Nesse contexto, o uso da figura serve principalmente para:",
+      "enunciado": "Leia o microtexto: \"Na reunião, alguem comentou: A chuva insistia em bater na porta.\". Nesse contexto, o uso da figura serve principalmente para:",
       "opcoes": [
-        "humaniza elementos nao humanos para intensificar a expressao",
-        "substituir o texto por um calculo matematico",
-        "apresentar somente uma informacao burocratica",
+        "humaniza elementos não humanos para intensificar a expressão",
+        "substituir o texto por um cálculo matemático",
+        "apresentar somente uma informação burocratica",
         "eliminar marcas de subjetividade"
       ],
-      "correta": "humaniza elementos nao humanos para intensificar a expressao",
-      "comentario": "Mesmo em microtextos, a figura orienta a interpretacao do leitor.",
+      "correta": "humaniza elementos não humanos para intensificar a expressão",
+      "comentario": "Mesmo em microtextos, a figura orienta a interpretação do leitor.",
       "tempoEstimado": 55,
       "tags": [
         "personificacao",
@@ -5913,22 +5913,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"Carrego o mundo nas costas nesta semana.\", evitando um erro comum de classificacao?",
+      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"Carrego o mundo nas costas nesta semana.\", evitando um erro comum de classificação?",
       "opcoes": [
-        "Reconhecer que o trecho exemplifica Hiperbole.",
-        "Classificar o trecho automaticamente como Aliteracao.",
-        "Afirmar que nao ha sentido figurado porque a frase e curta.",
+        "Reconhecer que o trecho exemplifica Hipérbole.",
+        "Classificar o trecho automaticamente como Aliteração.",
+        "Afirmar que não há sentido figurado porque a frase e curta.",
         "Dizer que toda linguagem expressiva pertence a mesma figura."
       ],
-      "correta": "Reconhecer que o trecho exemplifica Hiperbole.",
-      "comentario": "O erro comum esta em ignorar a marca especifica da figura presente.",
+      "correta": "Reconhecer que o trecho exemplifica Hipérbole.",
+      "comentario": "O erro comum está em ignorar a marca especifica da figura presente.",
       "tempoEstimado": 50,
       "tags": [
         "hiperbole",
@@ -5951,9 +5951,9 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
@@ -5961,8 +5961,8 @@ export const figurasDeLinguagem = {
       "enunciado": "Em um cartaz escolar aparece a frase \"Ele partiu ontem.\". Qual leitura melhor justifica o uso dessa linguagem?",
       "opcoes": [
         "O cartaz recorre a Eufemismo para tornar a mensagem mais expressiva.",
-        "O cartaz tenta eliminar qualquer interpretacao figurada.",
-        "O cartaz usa apenas uma definicao de dicionario.",
+        "O cartaz tenta eliminar qualquer interpretação figurada.",
+        "O cartaz usa apenas uma definição de dicionário.",
         "O cartaz evita qualquer efeito de sentido."
       ],
       "correta": "O cartaz recorre a Eufemismo para tornar a mensagem mais expressiva.",
@@ -5989,22 +5989,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia a analise: \"A frase Nossa, estudar na vespera e mesmo um plano genial. e literal, portanto nao traz figura de linguagem\". Qual alternativa avalia melhor essa afirmacao?",
+      "enunciado": "Leia a análise: \"A frase Nossa, estudar na véspera e mesmo um plano genial. e literal, portanto não traz figura de linguagem\". Qual alternativa avalia melhor essa afirmação?",
       "opcoes": [
-        "A afirmacao esta errada, porque a frase usa Ironia.",
-        "A afirmacao esta certa, porque toda figura de linguagem precisa rimar.",
-        "A afirmacao esta certa, porque linguagem figurada so aparece em poemas longos.",
-        "A afirmacao esta errada apenas se houver verbos no passado."
+        "A afirmação está errada, porque a frase usa Ironia.",
+        "A afirmação está certa, porque toda figura de linguagem precisa rimar.",
+        "A afirmação está certa, porque linguagem figurada só aparece em poemas longos.",
+        "A afirmação está errada apenas se houver verbos no passado."
       ],
-      "correta": "A afirmacao esta errada, porque a frase usa Ironia.",
-      "comentario": "A pegadinha esta em tratar linguagem figurada como se fosse sempre literal.",
+      "correta": "A afirmação está errada, porque a frase usa Ironia.",
+      "comentario": "A pegadinha está em tratar linguagem figurada como se fosse sempre literal.",
       "tempoEstimado": 50,
       "tags": [
         "ironia",
@@ -6027,9 +6027,9 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Equivalencia de formas",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
@@ -6038,11 +6038,11 @@ export const figurasDeLinguagem = {
       "opcoes": [
         "O jovem carregava calma e pressa ao mesmo tempo.",
         "O vento cantava na janela.",
-        "Ja te falei isso mil vezes.",
-        "A paciente nao resistiu."
+        "Já te falei isso mil vezes.",
+        "A paciente não resistiu."
       ],
       "correta": "O jovem carregava calma e pressa ao mesmo tempo.",
-      "comentario": "A resposta correta mantem o mesmo procedimento expressivo de Antitese.",
+      "comentario": "A resposta correta mantem o mesmo procedimento expressivo de Antítese.",
       "tempoEstimado": 55,
       "tags": [
         "antitese",
@@ -6065,22 +6065,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia o microtexto: \"Na reuniao, alguem comentou: Veio um trim trim do celular na biblioteca.\". Nesse contexto, o uso da figura serve principalmente para:",
+      "enunciado": "Leia o microtexto: \"Na reunião, alguem comentou: Veio um trim trim do celular na biblioteca.\". Nesse contexto, o uso da figura serve principalmente para:",
       "opcoes": [
-        "reproduz sonoramente uma acao ou ruido",
-        "substituir o texto por um calculo matematico",
-        "apresentar somente uma informacao burocratica",
+        "reproduz sonoramente uma ação ou ruido",
+        "substituir o texto por um cálculo matemático",
+        "apresentar somente uma informação burocratica",
         "eliminar marcas de subjetividade"
       ],
-      "correta": "reproduz sonoramente uma acao ou ruido",
-      "comentario": "Mesmo em microtextos, a figura orienta a interpretacao do leitor.",
+      "correta": "reproduz sonoramente uma ação ou ruido",
+      "comentario": "Mesmo em microtextos, a figura orienta a interpretação do leitor.",
       "tempoEstimado": 55,
       "tags": [
         "onomatopeia",
@@ -6103,22 +6103,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"Sopra suave o som da serra.\", evitando um erro comum de classificacao?",
+      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"Sopra suave o som da serra.\", evitando um erro comum de classificação?",
       "opcoes": [
-        "Reconhecer que o trecho exemplifica Aliteracao.",
-        "Classificar o trecho automaticamente como Antitese.",
-        "Afirmar que nao ha sentido figurado porque a frase e curta.",
+        "Reconhecer que o trecho exemplifica Aliteração.",
+        "Classificar o trecho automaticamente como Antítese.",
+        "Afirmar que não há sentido figurado porque a frase e curta.",
         "Dizer que toda linguagem expressiva pertence a mesma figura."
       ],
-      "correta": "Reconhecer que o trecho exemplifica Aliteracao.",
-      "comentario": "O erro comum esta em ignorar a marca especifica da figura presente.",
+      "correta": "Reconhecer que o trecho exemplifica Aliteração.",
+      "comentario": "O erro comum está em ignorar a marca especifica da figura presente.",
       "tempoEstimado": 50,
       "tags": [
         "aliteracao",
@@ -6141,21 +6141,21 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
       "enunciado": "Em um cartaz escolar aparece a frase \"A vida e um sopro.\". Qual leitura melhor justifica o uso dessa linguagem?",
       "opcoes": [
-        "O cartaz recorre a Metafora para tornar a mensagem mais expressiva.",
-        "O cartaz tenta eliminar qualquer interpretacao figurada.",
-        "O cartaz usa apenas uma definicao de dicionario.",
+        "O cartaz recorre a Metáfora para tornar a mensagem mais expressiva.",
+        "O cartaz tenta eliminar qualquer interpretação figurada.",
+        "O cartaz usa apenas uma definição de dicionário.",
         "O cartaz evita qualquer efeito de sentido."
       ],
-      "correta": "O cartaz recorre a Metafora para tornar a mensagem mais expressiva.",
+      "correta": "O cartaz recorre a Metáfora para tornar a mensagem mais expressiva.",
       "comentario": "Em contexto de campanha ou cartaz, a figura reforca o impacto da mensagem.",
       "tempoEstimado": 50,
       "tags": [
@@ -6179,22 +6179,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia a analise: \"A frase O menino ficou branco como papel. e literal, portanto nao traz figura de linguagem\". Qual alternativa avalia melhor essa afirmacao?",
+      "enunciado": "Leia a análise: \"A frase O menino ficou branco como papel. e literal, portanto não traz figura de linguagem\". Qual alternativa avalia melhor essa afirmação?",
       "opcoes": [
-        "A afirmacao esta errada, porque a frase usa Comparacao.",
-        "A afirmacao esta certa, porque toda figura de linguagem precisa rimar.",
-        "A afirmacao esta certa, porque linguagem figurada so aparece em poemas longos.",
-        "A afirmacao esta errada apenas se houver verbos no passado."
+        "A afirmação está errada, porque a frase usa Comparação.",
+        "A afirmação está certa, porque toda figura de linguagem precisa rimar.",
+        "A afirmação está certa, porque linguagem figurada só aparece em poemas longos.",
+        "A afirmação está errada apenas se houver verbos no passado."
       ],
-      "correta": "A afirmacao esta errada, porque a frase usa Comparacao.",
-      "comentario": "A pegadinha esta em tratar linguagem figurada como se fosse sempre literal.",
+      "correta": "A afirmação está errada, porque a frase usa Comparação.",
+      "comentario": "A pegadinha está em tratar linguagem figurada como se fosse sempre literal.",
       "tempoEstimado": 50,
       "tags": [
         "comparacao",
@@ -6217,22 +6217,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Equivalencia de formas",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa preserva melhor o mesmo tipo de figura de linguagem usado em \"Tomei duas xicaras antes da prova.\"?",
+      "enunciado": "Qual alternativa preserva melhor o mesmo tipo de figura de linguagem usado em \"Tomei duas xícaras antes da prova.\"?",
       "opcoes": [
         "Brasilia anunciou novas medidas.",
         "O vento cantava na janela.",
-        "Ja te falei isso mil vezes.",
-        "A paciente nao resistiu."
+        "Já te falei isso mil vezes.",
+        "A paciente não resistiu."
       ],
       "correta": "Brasilia anunciou novas medidas.",
-      "comentario": "A resposta correta mantem o mesmo procedimento expressivo de Metonimia.",
+      "comentario": "A resposta correta mantem o mesmo procedimento expressivo de Metonímia.",
       "tempoEstimado": 55,
       "tags": [
         "metonimia",
@@ -6255,22 +6255,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia o microtexto: \"Na reuniao, alguem comentou: A chuva insistia em bater na porta.\". Nesse contexto, o uso da figura serve principalmente para:",
+      "enunciado": "Leia o microtexto: \"Na reunião, alguem comentou: A chuva insistia em bater na porta.\". Nesse contexto, o uso da figura serve principalmente para:",
       "opcoes": [
-        "humaniza elementos nao humanos para intensificar a expressao",
-        "substituir o texto por um calculo matematico",
-        "apresentar somente uma informacao burocratica",
+        "humaniza elementos não humanos para intensificar a expressão",
+        "substituir o texto por um cálculo matemático",
+        "apresentar somente uma informação burocratica",
         "eliminar marcas de subjetividade"
       ],
-      "correta": "humaniza elementos nao humanos para intensificar a expressao",
-      "comentario": "Mesmo em microtextos, a figura orienta a interpretacao do leitor.",
+      "correta": "humaniza elementos não humanos para intensificar a expressão",
+      "comentario": "Mesmo em microtextos, a figura orienta a interpretação do leitor.",
       "tempoEstimado": 55,
       "tags": [
         "personificacao",
@@ -6293,22 +6293,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"Carrego o mundo nas costas nesta semana.\", evitando um erro comum de classificacao?",
+      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"Carrego o mundo nas costas nesta semana.\", evitando um erro comum de classificação?",
       "opcoes": [
-        "Reconhecer que o trecho exemplifica Hiperbole.",
-        "Classificar o trecho automaticamente como Antitese.",
-        "Afirmar que nao ha sentido figurado porque a frase e curta.",
+        "Reconhecer que o trecho exemplifica Hipérbole.",
+        "Classificar o trecho automaticamente como Antítese.",
+        "Afirmar que não há sentido figurado porque a frase e curta.",
         "Dizer que toda linguagem expressiva pertence a mesma figura."
       ],
-      "correta": "Reconhecer que o trecho exemplifica Hiperbole.",
-      "comentario": "O erro comum esta em ignorar a marca especifica da figura presente.",
+      "correta": "Reconhecer que o trecho exemplifica Hipérbole.",
+      "comentario": "O erro comum está em ignorar a marca especifica da figura presente.",
       "tempoEstimado": 50,
       "tags": [
         "hiperbole",
@@ -6331,9 +6331,9 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
@@ -6341,8 +6341,8 @@ export const figurasDeLinguagem = {
       "enunciado": "Em um cartaz escolar aparece a frase \"Ele partiu ontem.\". Qual leitura melhor justifica o uso dessa linguagem?",
       "opcoes": [
         "O cartaz recorre a Eufemismo para tornar a mensagem mais expressiva.",
-        "O cartaz tenta eliminar qualquer interpretacao figurada.",
-        "O cartaz usa apenas uma definicao de dicionario.",
+        "O cartaz tenta eliminar qualquer interpretação figurada.",
+        "O cartaz usa apenas uma definição de dicionário.",
         "O cartaz evita qualquer efeito de sentido."
       ],
       "correta": "O cartaz recorre a Eufemismo para tornar a mensagem mais expressiva.",
@@ -6369,22 +6369,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia a analise: \"A frase Nossa, estudar na vespera e mesmo um plano genial. e literal, portanto nao traz figura de linguagem\". Qual alternativa avalia melhor essa afirmacao?",
+      "enunciado": "Leia a análise: \"A frase Nossa, estudar na véspera e mesmo um plano genial. e literal, portanto não traz figura de linguagem\". Qual alternativa avalia melhor essa afirmação?",
       "opcoes": [
-        "A afirmacao esta errada, porque a frase usa Ironia.",
-        "A afirmacao esta certa, porque toda figura de linguagem precisa rimar.",
-        "A afirmacao esta certa, porque linguagem figurada so aparece em poemas longos.",
-        "A afirmacao esta errada apenas se houver verbos no passado."
+        "A afirmação está errada, porque a frase usa Ironia.",
+        "A afirmação está certa, porque toda figura de linguagem precisa rimar.",
+        "A afirmação está certa, porque linguagem figurada só aparece em poemas longos.",
+        "A afirmação está errada apenas se houver verbos no passado."
       ],
-      "correta": "A afirmacao esta errada, porque a frase usa Ironia.",
-      "comentario": "A pegadinha esta em tratar linguagem figurada como se fosse sempre literal.",
+      "correta": "A afirmação está errada, porque a frase usa Ironia.",
+      "comentario": "A pegadinha está em tratar linguagem figurada como se fosse sempre literal.",
       "tempoEstimado": 50,
       "tags": [
         "ironia",
@@ -6407,9 +6407,9 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Equivalencia de formas",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
@@ -6418,11 +6418,11 @@ export const figurasDeLinguagem = {
       "opcoes": [
         "O jovem carregava calma e pressa ao mesmo tempo.",
         "Ela corre como o vento.",
-        "A sala aplaudiu de pe o palestrante.",
+        "A sala aplaudiu de pé o palestrante.",
         "O relogio correu naquela tarde."
       ],
       "correta": "O jovem carregava calma e pressa ao mesmo tempo.",
-      "comentario": "A resposta correta mantem o mesmo procedimento expressivo de Antitese.",
+      "comentario": "A resposta correta mantem o mesmo procedimento expressivo de Antítese.",
       "tempoEstimado": 55,
       "tags": [
         "antitese",
@@ -6445,22 +6445,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia o microtexto: \"Na reuniao, alguem comentou: Veio um trim trim do celular na biblioteca.\". Nesse contexto, o uso da figura serve principalmente para:",
+      "enunciado": "Leia o microtexto: \"Na reunião, alguem comentou: Veio um trim trim do celular na biblioteca.\". Nesse contexto, o uso da figura serve principalmente para:",
       "opcoes": [
-        "reproduz sonoramente uma acao ou ruido",
-        "substituir o texto por um calculo matematico",
-        "apresentar somente uma informacao burocratica",
+        "reproduz sonoramente uma ação ou ruido",
+        "substituir o texto por um cálculo matemático",
+        "apresentar somente uma informação burocratica",
         "eliminar marcas de subjetividade"
       ],
-      "correta": "reproduz sonoramente uma acao ou ruido",
-      "comentario": "Mesmo em microtextos, a figura orienta a interpretacao do leitor.",
+      "correta": "reproduz sonoramente uma ação ou ruido",
+      "comentario": "Mesmo em microtextos, a figura orienta a interpretação do leitor.",
       "tempoEstimado": 55,
       "tags": [
         "onomatopeia",
@@ -6483,22 +6483,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"Sopra suave o som da serra.\", evitando um erro comum de classificacao?",
+      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"Sopra suave o som da serra.\", evitando um erro comum de classificação?",
       "opcoes": [
-        "Reconhecer que o trecho exemplifica Aliteracao.",
+        "Reconhecer que o trecho exemplifica Aliteração.",
         "Classificar o trecho automaticamente como Eufemismo.",
-        "Afirmar que nao ha sentido figurado porque a frase e curta.",
+        "Afirmar que não há sentido figurado porque a frase e curta.",
         "Dizer que toda linguagem expressiva pertence a mesma figura."
       ],
-      "correta": "Reconhecer que o trecho exemplifica Aliteracao.",
-      "comentario": "O erro comum esta em ignorar a marca especifica da figura presente.",
+      "correta": "Reconhecer que o trecho exemplifica Aliteração.",
+      "comentario": "O erro comum está em ignorar a marca especifica da figura presente.",
       "tempoEstimado": 50,
       "tags": [
         "aliteracao",
@@ -6521,21 +6521,21 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
       "enunciado": "Em um cartaz escolar aparece a frase \"A vida e um sopro.\". Qual leitura melhor justifica o uso dessa linguagem?",
       "opcoes": [
-        "O cartaz recorre a Metafora para tornar a mensagem mais expressiva.",
-        "O cartaz tenta eliminar qualquer interpretacao figurada.",
-        "O cartaz usa apenas uma definicao de dicionario.",
+        "O cartaz recorre a Metáfora para tornar a mensagem mais expressiva.",
+        "O cartaz tenta eliminar qualquer interpretação figurada.",
+        "O cartaz usa apenas uma definição de dicionário.",
         "O cartaz evita qualquer efeito de sentido."
       ],
-      "correta": "O cartaz recorre a Metafora para tornar a mensagem mais expressiva.",
+      "correta": "O cartaz recorre a Metáfora para tornar a mensagem mais expressiva.",
       "comentario": "Em contexto de campanha ou cartaz, a figura reforca o impacto da mensagem.",
       "tempoEstimado": 50,
       "tags": [
@@ -6559,22 +6559,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia a analise: \"A frase O menino ficou branco como papel. e literal, portanto nao traz figura de linguagem\". Qual alternativa avalia melhor essa afirmacao?",
+      "enunciado": "Leia a análise: \"A frase O menino ficou branco como papel. e literal, portanto não traz figura de linguagem\". Qual alternativa avalia melhor essa afirmação?",
       "opcoes": [
-        "A afirmacao esta errada, porque a frase usa Comparacao.",
-        "A afirmacao esta certa, porque toda figura de linguagem precisa rimar.",
-        "A afirmacao esta certa, porque linguagem figurada so aparece em poemas longos.",
-        "A afirmacao esta errada apenas se houver verbos no passado."
+        "A afirmação está errada, porque a frase usa Comparação.",
+        "A afirmação está certa, porque toda figura de linguagem precisa rimar.",
+        "A afirmação está certa, porque linguagem figurada só aparece em poemas longos.",
+        "A afirmação está errada apenas se houver verbos no passado."
       ],
-      "correta": "A afirmacao esta errada, porque a frase usa Comparacao.",
-      "comentario": "A pegadinha esta em tratar linguagem figurada como se fosse sempre literal.",
+      "correta": "A afirmação está errada, porque a frase usa Comparação.",
+      "comentario": "A pegadinha está em tratar linguagem figurada como se fosse sempre literal.",
       "tempoEstimado": 50,
       "tags": [
         "comparacao",
@@ -6597,22 +6597,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Equivalencia de formas",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa preserva melhor o mesmo tipo de figura de linguagem usado em \"Tomei duas xicaras antes da prova.\"?",
+      "enunciado": "Qual alternativa preserva melhor o mesmo tipo de figura de linguagem usado em \"Tomei duas xícaras antes da prova.\"?",
       "opcoes": [
         "Brasilia anunciou novas medidas.",
         "Ela corre como o vento.",
-        "A cidade dormia em silencio.",
+        "A cidade dormia em silêncio.",
         "Estou morrendo de fome."
       ],
       "correta": "Brasilia anunciou novas medidas.",
-      "comentario": "A resposta correta mantem o mesmo procedimento expressivo de Metonimia.",
+      "comentario": "A resposta correta mantem o mesmo procedimento expressivo de Metonímia.",
       "tempoEstimado": 55,
       "tags": [
         "metonimia",
@@ -6635,22 +6635,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia o microtexto: \"Na reuniao, alguem comentou: A chuva insistia em bater na porta.\". Nesse contexto, o uso da figura serve principalmente para:",
+      "enunciado": "Leia o microtexto: \"Na reunião, alguem comentou: A chuva insistia em bater na porta.\". Nesse contexto, o uso da figura serve principalmente para:",
       "opcoes": [
-        "humaniza elementos nao humanos para intensificar a expressao",
-        "substituir o texto por um calculo matematico",
-        "apresentar somente uma informacao burocratica",
+        "humaniza elementos não humanos para intensificar a expressão",
+        "substituir o texto por um cálculo matemático",
+        "apresentar somente uma informação burocratica",
         "eliminar marcas de subjetividade"
       ],
-      "correta": "humaniza elementos nao humanos para intensificar a expressao",
-      "comentario": "Mesmo em microtextos, a figura orienta a interpretacao do leitor.",
+      "correta": "humaniza elementos não humanos para intensificar a expressão",
+      "comentario": "Mesmo em microtextos, a figura orienta a interpretação do leitor.",
       "tempoEstimado": 55,
       "tags": [
         "personificacao",
@@ -6673,22 +6673,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"Carrego o mundo nas costas nesta semana.\", evitando um erro comum de classificacao?",
+      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"Carrego o mundo nas costas nesta semana.\", evitando um erro comum de classificação?",
       "opcoes": [
-        "Reconhecer que o trecho exemplifica Hiperbole.",
+        "Reconhecer que o trecho exemplifica Hipérbole.",
         "Classificar o trecho automaticamente como Eufemismo.",
-        "Afirmar que nao ha sentido figurado porque a frase e curta.",
+        "Afirmar que não há sentido figurado porque a frase e curta.",
         "Dizer que toda linguagem expressiva pertence a mesma figura."
       ],
-      "correta": "Reconhecer que o trecho exemplifica Hiperbole.",
-      "comentario": "O erro comum esta em ignorar a marca especifica da figura presente.",
+      "correta": "Reconhecer que o trecho exemplifica Hipérbole.",
+      "comentario": "O erro comum está em ignorar a marca especifica da figura presente.",
       "tempoEstimado": 50,
       "tags": [
         "hiperbole",
@@ -6711,9 +6711,9 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
@@ -6721,8 +6721,8 @@ export const figurasDeLinguagem = {
       "enunciado": "Em um cartaz escolar aparece a frase \"Ele partiu ontem.\". Qual leitura melhor justifica o uso dessa linguagem?",
       "opcoes": [
         "O cartaz recorre a Eufemismo para tornar a mensagem mais expressiva.",
-        "O cartaz tenta eliminar qualquer interpretacao figurada.",
-        "O cartaz usa apenas uma definicao de dicionario.",
+        "O cartaz tenta eliminar qualquer interpretação figurada.",
+        "O cartaz usa apenas uma definição de dicionário.",
         "O cartaz evita qualquer efeito de sentido."
       ],
       "correta": "O cartaz recorre a Eufemismo para tornar a mensagem mais expressiva.",
@@ -6749,22 +6749,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia a analise: \"A frase Nossa, estudar na vespera e mesmo um plano genial. e literal, portanto nao traz figura de linguagem\". Qual alternativa avalia melhor essa afirmacao?",
+      "enunciado": "Leia a análise: \"A frase Nossa, estudar na véspera e mesmo um plano genial. e literal, portanto não traz figura de linguagem\". Qual alternativa avalia melhor essa afirmação?",
       "opcoes": [
-        "A afirmacao esta errada, porque a frase usa Ironia.",
-        "A afirmacao esta certa, porque toda figura de linguagem precisa rimar.",
-        "A afirmacao esta certa, porque linguagem figurada so aparece em poemas longos.",
-        "A afirmacao esta errada apenas se houver verbos no passado."
+        "A afirmação está errada, porque a frase usa Ironia.",
+        "A afirmação está certa, porque toda figura de linguagem precisa rimar.",
+        "A afirmação está certa, porque linguagem figurada só aparece em poemas longos.",
+        "A afirmação está errada apenas se houver verbos no passado."
       ],
-      "correta": "A afirmacao esta errada, porque a frase usa Ironia.",
-      "comentario": "A pegadinha esta em tratar linguagem figurada como se fosse sempre literal.",
+      "correta": "A afirmação está errada, porque a frase usa Ironia.",
+      "comentario": "A pegadinha está em tratar linguagem figurada como se fosse sempre literal.",
       "tempoEstimado": 50,
       "tags": [
         "ironia",
@@ -6787,9 +6787,9 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Equivalencia de formas",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
@@ -6802,7 +6802,7 @@ export const figurasDeLinguagem = {
         "A voz dele soa suave como veludo."
       ],
       "correta": "O jovem carregava calma e pressa ao mesmo tempo.",
-      "comentario": "A resposta correta mantem o mesmo procedimento expressivo de Antitese.",
+      "comentario": "A resposta correta mantem o mesmo procedimento expressivo de Antítese.",
       "tempoEstimado": 55,
       "tags": [
         "antitese",
@@ -6825,22 +6825,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia o microtexto: \"Na reuniao, alguem comentou: Veio um trim trim do celular na biblioteca.\". Nesse contexto, o uso da figura serve principalmente para:",
+      "enunciado": "Leia o microtexto: \"Na reunião, alguem comentou: Veio um trim trim do celular na biblioteca.\". Nesse contexto, o uso da figura serve principalmente para:",
       "opcoes": [
-        "reproduz sonoramente uma acao ou ruido",
-        "substituir o texto por um calculo matematico",
-        "apresentar somente uma informacao burocratica",
+        "reproduz sonoramente uma ação ou ruido",
+        "substituir o texto por um cálculo matemático",
+        "apresentar somente uma informação burocratica",
         "eliminar marcas de subjetividade"
       ],
-      "correta": "reproduz sonoramente uma acao ou ruido",
-      "comentario": "Mesmo em microtextos, a figura orienta a interpretacao do leitor.",
+      "correta": "reproduz sonoramente uma ação ou ruido",
+      "comentario": "Mesmo em microtextos, a figura orienta a interpretação do leitor.",
       "tempoEstimado": 55,
       "tags": [
         "onomatopeia",
@@ -6863,22 +6863,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"Sopra suave o som da serra.\", evitando um erro comum de classificacao?",
+      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"Sopra suave o som da serra.\", evitando um erro comum de classificação?",
       "opcoes": [
-        "Reconhecer que o trecho exemplifica Aliteracao.",
-        "Classificar o trecho automaticamente como Personificacao.",
-        "Afirmar que nao ha sentido figurado porque a frase e curta.",
+        "Reconhecer que o trecho exemplifica Aliteração.",
+        "Classificar o trecho automaticamente como Personificação.",
+        "Afirmar que não há sentido figurado porque a frase e curta.",
         "Dizer que toda linguagem expressiva pertence a mesma figura."
       ],
-      "correta": "Reconhecer que o trecho exemplifica Aliteracao.",
-      "comentario": "O erro comum esta em ignorar a marca especifica da figura presente.",
+      "correta": "Reconhecer que o trecho exemplifica Aliteração.",
+      "comentario": "O erro comum está em ignorar a marca especifica da figura presente.",
       "tempoEstimado": 50,
       "tags": [
         "aliteracao",
@@ -6901,21 +6901,21 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
       "enunciado": "Em um cartaz escolar aparece a frase \"A vida e um sopro.\". Qual leitura melhor justifica o uso dessa linguagem?",
       "opcoes": [
-        "O cartaz recorre a Metafora para tornar a mensagem mais expressiva.",
-        "O cartaz tenta eliminar qualquer interpretacao figurada.",
-        "O cartaz usa apenas uma definicao de dicionario.",
+        "O cartaz recorre a Metáfora para tornar a mensagem mais expressiva.",
+        "O cartaz tenta eliminar qualquer interpretação figurada.",
+        "O cartaz usa apenas uma definição de dicionário.",
         "O cartaz evita qualquer efeito de sentido."
       ],
-      "correta": "O cartaz recorre a Metafora para tornar a mensagem mais expressiva.",
+      "correta": "O cartaz recorre a Metáfora para tornar a mensagem mais expressiva.",
       "comentario": "Em contexto de campanha ou cartaz, a figura reforca o impacto da mensagem.",
       "tempoEstimado": 50,
       "tags": [
@@ -6939,22 +6939,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia a analise: \"A frase O menino ficou branco como papel. e literal, portanto nao traz figura de linguagem\". Qual alternativa avalia melhor essa afirmacao?",
+      "enunciado": "Leia a análise: \"A frase O menino ficou branco como papel. e literal, portanto não traz figura de linguagem\". Qual alternativa avalia melhor essa afirmação?",
       "opcoes": [
-        "A afirmacao esta errada, porque a frase usa Comparacao.",
-        "A afirmacao esta certa, porque toda figura de linguagem precisa rimar.",
-        "A afirmacao esta certa, porque linguagem figurada so aparece em poemas longos.",
-        "A afirmacao esta errada apenas se houver verbos no passado."
+        "A afirmação está errada, porque a frase usa Comparação.",
+        "A afirmação está certa, porque toda figura de linguagem precisa rimar.",
+        "A afirmação está certa, porque linguagem figurada só aparece em poemas longos.",
+        "A afirmação está errada apenas se houver verbos no passado."
       ],
-      "correta": "A afirmacao esta errada, porque a frase usa Comparacao.",
-      "comentario": "A pegadinha esta em tratar linguagem figurada como se fosse sempre literal.",
+      "correta": "A afirmação está errada, porque a frase usa Comparação.",
+      "comentario": "A pegadinha está em tratar linguagem figurada como se fosse sempre literal.",
       "tempoEstimado": 50,
       "tags": [
         "comparacao",
@@ -6977,14 +6977,14 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Equivalencia de formas",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa preserva melhor o mesmo tipo de figura de linguagem usado em \"Tomei duas xicaras antes da prova.\"?",
+      "enunciado": "Qual alternativa preserva melhor o mesmo tipo de figura de linguagem usado em \"Tomei duas xícaras antes da prova.\"?",
       "opcoes": [
         "Brasilia anunciou novas medidas.",
         "A voz doce da cantora acalmou a plateia.",
@@ -6992,7 +6992,7 @@ export const figurasDeLinguagem = {
         "A voz dele soa suave como veludo."
       ],
       "correta": "Brasilia anunciou novas medidas.",
-      "comentario": "A resposta correta mantem o mesmo procedimento expressivo de Metonimia.",
+      "comentario": "A resposta correta mantem o mesmo procedimento expressivo de Metonímia.",
       "tempoEstimado": 55,
       "tags": [
         "metonimia",
@@ -7015,22 +7015,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia o microtexto: \"Na reuniao, alguem comentou: A chuva insistia em bater na porta.\". Nesse contexto, o uso da figura serve principalmente para:",
+      "enunciado": "Leia o microtexto: \"Na reunião, alguem comentou: A chuva insistia em bater na porta.\". Nesse contexto, o uso da figura serve principalmente para:",
       "opcoes": [
-        "humaniza elementos nao humanos para intensificar a expressao",
-        "substituir o texto por um calculo matematico",
-        "apresentar somente uma informacao burocratica",
+        "humaniza elementos não humanos para intensificar a expressão",
+        "substituir o texto por um cálculo matemático",
+        "apresentar somente uma informação burocratica",
         "eliminar marcas de subjetividade"
       ],
-      "correta": "humaniza elementos nao humanos para intensificar a expressao",
-      "comentario": "Mesmo em microtextos, a figura orienta a interpretacao do leitor.",
+      "correta": "humaniza elementos não humanos para intensificar a expressão",
+      "comentario": "Mesmo em microtextos, a figura orienta a interpretação do leitor.",
       "tempoEstimado": 55,
       "tags": [
         "personificacao",
@@ -7053,22 +7053,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"Carrego o mundo nas costas nesta semana.\", evitando um erro comum de classificacao?",
+      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"Carrego o mundo nas costas nesta semana.\", evitando um erro comum de classificação?",
       "opcoes": [
-        "Reconhecer que o trecho exemplifica Hiperbole.",
-        "Classificar o trecho automaticamente como Personificacao.",
-        "Afirmar que nao ha sentido figurado porque a frase e curta.",
+        "Reconhecer que o trecho exemplifica Hipérbole.",
+        "Classificar o trecho automaticamente como Personificação.",
+        "Afirmar que não há sentido figurado porque a frase e curta.",
         "Dizer que toda linguagem expressiva pertence a mesma figura."
       ],
-      "correta": "Reconhecer que o trecho exemplifica Hiperbole.",
-      "comentario": "O erro comum esta em ignorar a marca especifica da figura presente.",
+      "correta": "Reconhecer que o trecho exemplifica Hipérbole.",
+      "comentario": "O erro comum está em ignorar a marca especifica da figura presente.",
       "tempoEstimado": 50,
       "tags": [
         "hiperbole",
@@ -7091,9 +7091,9 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
@@ -7101,8 +7101,8 @@ export const figurasDeLinguagem = {
       "enunciado": "Em um cartaz escolar aparece a frase \"Ele partiu ontem.\". Qual leitura melhor justifica o uso dessa linguagem?",
       "opcoes": [
         "O cartaz recorre a Eufemismo para tornar a mensagem mais expressiva.",
-        "O cartaz tenta eliminar qualquer interpretacao figurada.",
-        "O cartaz usa apenas uma definicao de dicionario.",
+        "O cartaz tenta eliminar qualquer interpretação figurada.",
+        "O cartaz usa apenas uma definição de dicionário.",
         "O cartaz evita qualquer efeito de sentido."
       ],
       "correta": "O cartaz recorre a Eufemismo para tornar a mensagem mais expressiva.",
@@ -7129,22 +7129,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia a analise: \"A frase Nossa, estudar na vespera e mesmo um plano genial. e literal, portanto nao traz figura de linguagem\". Qual alternativa avalia melhor essa afirmacao?",
+      "enunciado": "Leia a análise: \"A frase Nossa, estudar na véspera e mesmo um plano genial. e literal, portanto não traz figura de linguagem\". Qual alternativa avalia melhor essa afirmação?",
       "opcoes": [
-        "A afirmacao esta errada, porque a frase usa Ironia.",
-        "A afirmacao esta certa, porque toda figura de linguagem precisa rimar.",
-        "A afirmacao esta certa, porque linguagem figurada so aparece em poemas longos.",
-        "A afirmacao esta errada apenas se houver verbos no passado."
+        "A afirmação está errada, porque a frase usa Ironia.",
+        "A afirmação está certa, porque toda figura de linguagem precisa rimar.",
+        "A afirmação está certa, porque linguagem figurada só aparece em poemas longos.",
+        "A afirmação está errada apenas se houver verbos no passado."
       ],
-      "correta": "A afirmacao esta errada, porque a frase usa Ironia.",
-      "comentario": "A pegadinha esta em tratar linguagem figurada como se fosse sempre literal.",
+      "correta": "A afirmação está errada, porque a frase usa Ironia.",
+      "comentario": "A pegadinha está em tratar linguagem figurada como se fosse sempre literal.",
       "tempoEstimado": 50,
       "tags": [
         "ironia",
@@ -7167,9 +7167,9 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Equivalencia de formas",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
@@ -7179,10 +7179,10 @@ export const figurasDeLinguagem = {
         "O jovem carregava calma e pressa ao mesmo tempo.",
         "O rato roeu a roupa do rei de Roma.",
         "Subiu para cima sem olhar para tras.",
-        "Havia um silencio amargo na despedida."
+        "Havia um silêncio amargo na despedida."
       ],
       "correta": "O jovem carregava calma e pressa ao mesmo tempo.",
-      "comentario": "A resposta correta mantem o mesmo procedimento expressivo de Antitese.",
+      "comentario": "A resposta correta mantem o mesmo procedimento expressivo de Antítese.",
       "tempoEstimado": 55,
       "tags": [
         "antitese",
@@ -7205,22 +7205,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia o microtexto: \"Na reuniao, alguem comentou: Veio um trim trim do celular na biblioteca.\". Nesse contexto, o uso da figura serve principalmente para:",
+      "enunciado": "Leia o microtexto: \"Na reunião, alguem comentou: Veio um trim trim do celular na biblioteca.\". Nesse contexto, o uso da figura serve principalmente para:",
       "opcoes": [
-        "reproduz sonoramente uma acao ou ruido",
-        "substituir o texto por um calculo matematico",
-        "apresentar somente uma informacao burocratica",
+        "reproduz sonoramente uma ação ou ruido",
+        "substituir o texto por um cálculo matemático",
+        "apresentar somente uma informação burocratica",
         "eliminar marcas de subjetividade"
       ],
-      "correta": "reproduz sonoramente uma acao ou ruido",
-      "comentario": "Mesmo em microtextos, a figura orienta a interpretacao do leitor.",
+      "correta": "reproduz sonoramente uma ação ou ruido",
+      "comentario": "Mesmo em microtextos, a figura orienta a interpretação do leitor.",
       "tempoEstimado": 55,
       "tags": [
         "onomatopeia",
@@ -7243,22 +7243,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"Sopra suave o som da serra.\", evitando um erro comum de classificacao?",
+      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"Sopra suave o som da serra.\", evitando um erro comum de classificação?",
       "opcoes": [
-        "Reconhecer que o trecho exemplifica Aliteracao.",
-        "Classificar o trecho automaticamente como Comparacao.",
-        "Afirmar que nao ha sentido figurado porque a frase e curta.",
+        "Reconhecer que o trecho exemplifica Aliteração.",
+        "Classificar o trecho automaticamente como Comparação.",
+        "Afirmar que não há sentido figurado porque a frase e curta.",
         "Dizer que toda linguagem expressiva pertence a mesma figura."
       ],
-      "correta": "Reconhecer que o trecho exemplifica Aliteracao.",
-      "comentario": "O erro comum esta em ignorar a marca especifica da figura presente.",
+      "correta": "Reconhecer que o trecho exemplifica Aliteração.",
+      "comentario": "O erro comum está em ignorar a marca especifica da figura presente.",
       "tempoEstimado": 50,
       "tags": [
         "aliteracao",
@@ -7281,21 +7281,21 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
       "enunciado": "Em um cartaz escolar aparece a frase \"A vida e um sopro.\". Qual leitura melhor justifica o uso dessa linguagem?",
       "opcoes": [
-        "O cartaz recorre a Metafora para tornar a mensagem mais expressiva.",
-        "O cartaz tenta eliminar qualquer interpretacao figurada.",
-        "O cartaz usa apenas uma definicao de dicionario.",
+        "O cartaz recorre a Metáfora para tornar a mensagem mais expressiva.",
+        "O cartaz tenta eliminar qualquer interpretação figurada.",
+        "O cartaz usa apenas uma definição de dicionário.",
         "O cartaz evita qualquer efeito de sentido."
       ],
-      "correta": "O cartaz recorre a Metafora para tornar a mensagem mais expressiva.",
+      "correta": "O cartaz recorre a Metáfora para tornar a mensagem mais expressiva.",
       "comentario": "Em contexto de campanha ou cartaz, a figura reforca o impacto da mensagem.",
       "tempoEstimado": 50,
       "tags": [
@@ -7319,22 +7319,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia a analise: \"A frase O menino ficou branco como papel. e literal, portanto nao traz figura de linguagem\". Qual alternativa avalia melhor essa afirmacao?",
+      "enunciado": "Leia a análise: \"A frase O menino ficou branco como papel. e literal, portanto não traz figura de linguagem\". Qual alternativa avalia melhor essa afirmação?",
       "opcoes": [
-        "A afirmacao esta errada, porque a frase usa Comparacao.",
-        "A afirmacao esta certa, porque toda figura de linguagem precisa rimar.",
-        "A afirmacao esta certa, porque linguagem figurada so aparece em poemas longos.",
-        "A afirmacao esta errada apenas se houver verbos no passado."
+        "A afirmação está errada, porque a frase usa Comparação.",
+        "A afirmação está certa, porque toda figura de linguagem precisa rimar.",
+        "A afirmação está certa, porque linguagem figurada só aparece em poemas longos.",
+        "A afirmação está errada apenas se houver verbos no passado."
       ],
-      "correta": "A afirmacao esta errada, porque a frase usa Comparacao.",
-      "comentario": "A pegadinha esta em tratar linguagem figurada como se fosse sempre literal.",
+      "correta": "A afirmação está errada, porque a frase usa Comparação.",
+      "comentario": "A pegadinha está em tratar linguagem figurada como se fosse sempre literal.",
       "tempoEstimado": 50,
       "tags": [
         "comparacao",
@@ -7357,22 +7357,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Equivalencia de formas",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa preserva melhor o mesmo tipo de figura de linguagem usado em \"Tomei duas xicaras antes da prova.\"?",
+      "enunciado": "Qual alternativa preserva melhor o mesmo tipo de figura de linguagem usado em \"Tomei duas xícaras antes da prova.\"?",
       "opcoes": [
         "Brasilia anunciou novas medidas.",
         "O rato roeu a roupa do rei de Roma.",
         "Subiu para cima sem olhar para tras.",
-        "Havia um silencio amargo na despedida."
+        "Havia um silêncio amargo na despedida."
       ],
       "correta": "Brasilia anunciou novas medidas.",
-      "comentario": "A resposta correta mantem o mesmo procedimento expressivo de Metonimia.",
+      "comentario": "A resposta correta mantem o mesmo procedimento expressivo de Metonímia.",
       "tempoEstimado": 55,
       "tags": [
         "metonimia",
@@ -7395,22 +7395,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia o microtexto: \"Na reuniao, alguem comentou: A chuva insistia em bater na porta.\". Nesse contexto, o uso da figura serve principalmente para:",
+      "enunciado": "Leia o microtexto: \"Na reunião, alguem comentou: A chuva insistia em bater na porta.\". Nesse contexto, o uso da figura serve principalmente para:",
       "opcoes": [
-        "humaniza elementos nao humanos para intensificar a expressao",
-        "substituir o texto por um calculo matematico",
-        "apresentar somente uma informacao burocratica",
+        "humaniza elementos não humanos para intensificar a expressão",
+        "substituir o texto por um cálculo matemático",
+        "apresentar somente uma informação burocratica",
         "eliminar marcas de subjetividade"
       ],
-      "correta": "humaniza elementos nao humanos para intensificar a expressao",
-      "comentario": "Mesmo em microtextos, a figura orienta a interpretacao do leitor.",
+      "correta": "humaniza elementos não humanos para intensificar a expressão",
+      "comentario": "Mesmo em microtextos, a figura orienta a interpretação do leitor.",
       "tempoEstimado": 55,
       "tags": [
         "personificacao",
@@ -7433,22 +7433,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"Carrego o mundo nas costas nesta semana.\", evitando um erro comum de classificacao?",
+      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"Carrego o mundo nas costas nesta semana.\", evitando um erro comum de classificação?",
       "opcoes": [
-        "Reconhecer que o trecho exemplifica Hiperbole.",
-        "Classificar o trecho automaticamente como Comparacao.",
-        "Afirmar que nao ha sentido figurado porque a frase e curta.",
+        "Reconhecer que o trecho exemplifica Hipérbole.",
+        "Classificar o trecho automaticamente como Comparação.",
+        "Afirmar que não há sentido figurado porque a frase e curta.",
         "Dizer que toda linguagem expressiva pertence a mesma figura."
       ],
-      "correta": "Reconhecer que o trecho exemplifica Hiperbole.",
-      "comentario": "O erro comum esta em ignorar a marca especifica da figura presente.",
+      "correta": "Reconhecer que o trecho exemplifica Hipérbole.",
+      "comentario": "O erro comum está em ignorar a marca especifica da figura presente.",
       "tempoEstimado": 50,
       "tags": [
         "hiperbole",
@@ -7471,9 +7471,9 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
@@ -7481,8 +7481,8 @@ export const figurasDeLinguagem = {
       "enunciado": "Em um cartaz escolar aparece a frase \"Ele partiu ontem.\". Qual leitura melhor justifica o uso dessa linguagem?",
       "opcoes": [
         "O cartaz recorre a Eufemismo para tornar a mensagem mais expressiva.",
-        "O cartaz tenta eliminar qualquer interpretacao figurada.",
-        "O cartaz usa apenas uma definicao de dicionario.",
+        "O cartaz tenta eliminar qualquer interpretação figurada.",
+        "O cartaz usa apenas uma definição de dicionário.",
         "O cartaz evita qualquer efeito de sentido."
       ],
       "correta": "O cartaz recorre a Eufemismo para tornar a mensagem mais expressiva.",
@@ -7509,22 +7509,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia a analise: \"A frase Nossa, estudar na vespera e mesmo um plano genial. e literal, portanto nao traz figura de linguagem\". Qual alternativa avalia melhor essa afirmacao?",
+      "enunciado": "Leia a análise: \"A frase Nossa, estudar na véspera e mesmo um plano genial. e literal, portanto não traz figura de linguagem\". Qual alternativa avalia melhor essa afirmação?",
       "opcoes": [
-        "A afirmacao esta errada, porque a frase usa Ironia.",
-        "A afirmacao esta certa, porque toda figura de linguagem precisa rimar.",
-        "A afirmacao esta certa, porque linguagem figurada so aparece em poemas longos.",
-        "A afirmacao esta errada apenas se houver verbos no passado."
+        "A afirmação está errada, porque a frase usa Ironia.",
+        "A afirmação está certa, porque toda figura de linguagem precisa rimar.",
+        "A afirmação está certa, porque linguagem figurada só aparece em poemas longos.",
+        "A afirmação está errada apenas se houver verbos no passado."
       ],
-      "correta": "A afirmacao esta errada, porque a frase usa Ironia.",
-      "comentario": "A pegadinha esta em tratar linguagem figurada como se fosse sempre literal.",
+      "correta": "A afirmação está errada, porque a frase usa Ironia.",
+      "comentario": "A pegadinha está em tratar linguagem figurada como se fosse sempre literal.",
       "tempoEstimado": 50,
       "tags": [
         "ironia",
@@ -7547,9 +7547,9 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Equivalencia de formas",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
@@ -7562,7 +7562,7 @@ export const figurasDeLinguagem = {
         "Entrou para dentro correndo."
       ],
       "correta": "O jovem carregava calma e pressa ao mesmo tempo.",
-      "comentario": "A resposta correta mantem o mesmo procedimento expressivo de Antitese.",
+      "comentario": "A resposta correta mantem o mesmo procedimento expressivo de Antítese.",
       "tempoEstimado": 55,
       "tags": [
         "antitese",
@@ -7585,22 +7585,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia o microtexto: \"Na reuniao, alguem comentou: Veio um trim trim do celular na biblioteca.\". Nesse contexto, o uso da figura serve principalmente para:",
+      "enunciado": "Leia o microtexto: \"Na reunião, alguem comentou: Veio um trim trim do celular na biblioteca.\". Nesse contexto, o uso da figura serve principalmente para:",
       "opcoes": [
-        "reproduz sonoramente uma acao ou ruido",
-        "substituir o texto por um calculo matematico",
-        "apresentar somente uma informacao burocratica",
+        "reproduz sonoramente uma ação ou ruido",
+        "substituir o texto por um cálculo matemático",
+        "apresentar somente uma informação burocratica",
         "eliminar marcas de subjetividade"
       ],
-      "correta": "reproduz sonoramente uma acao ou ruido",
-      "comentario": "Mesmo em microtextos, a figura orienta a interpretacao do leitor.",
+      "correta": "reproduz sonoramente uma ação ou ruido",
+      "comentario": "Mesmo em microtextos, a figura orienta a interpretação do leitor.",
       "tempoEstimado": 55,
       "tags": [
         "onomatopeia",
@@ -7623,22 +7623,22 @@ export const figurasDeLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Figuras de Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"Sopra suave o som da serra.\", evitando um erro comum de classificacao?",
+      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"Sopra suave o som da serra.\", evitando um erro comum de classificação?",
       "opcoes": [
-        "Reconhecer que o trecho exemplifica Aliteracao.",
+        "Reconhecer que o trecho exemplifica Aliteração.",
         "Classificar o trecho automaticamente como Sinestesia.",
-        "Afirmar que nao ha sentido figurado porque a frase e curta.",
+        "Afirmar que não há sentido figurado porque a frase e curta.",
         "Dizer que toda linguagem expressiva pertence a mesma figura."
       ],
-      "correta": "Reconhecer que o trecho exemplifica Aliteracao.",
-      "comentario": "O erro comum esta em ignorar a marca especifica da figura presente.",
+      "correta": "Reconhecer que o trecho exemplifica Aliteração.",
+      "comentario": "O erro comum está em ignorar a marca especifica da figura presente.",
       "tempoEstimado": 50,
       "tags": [
         "aliteracao",

@@ -171,7 +171,7 @@
             visibleDays.length;
 
         if (
-            window.innerWidth > 1100 ||
+            window.innerWidth > 1360 ||
             columns < 6
         ) {
             return `repeat(${columns}, 1fr)`;
@@ -183,13 +183,15 @@
             window.innerWidth <= 760;
         const isCompact =
             window.innerWidth <= 1280;
+        const isNarrowDesktop =
+            window.innerWidth <= 1180;
         const tracks = [];
 
         if (this.data.showTimeColumn) {
             const min =
-                isPhone ? 56 : isTight ? 60 : isCompact ? 68 : 92;
+                isPhone ? 48 : isTight ? 52 : isNarrowDesktop ? 56 : isCompact ? 62 : 72;
             const fr =
-                isPhone ? 0.82 : isTight ? 0.88 : isCompact ? 0.94 : 1;
+                isPhone ? 0.76 : isTight ? 0.8 : isNarrowDesktop ? 0.84 : isCompact ? 0.9 : 0.96;
             tracks.push(
                 `minmax(${min}px, ${fr}fr)`
             );
@@ -204,9 +206,9 @@
 
             if (isLastDay) {
                 const min =
-                    isPhone ? 54 : isTight ? 58 : isCompact ? 66 : 90;
+                    isPhone ? 42 : isTight ? 46 : isNarrowDesktop ? 50 : isCompact ? 56 : 66;
                 const fr =
-                    isPhone ? 0.82 : isTight ? 0.88 : isCompact ? 0.94 : 1;
+                    isPhone ? 0.72 : isTight ? 0.76 : isNarrowDesktop ? 0.8 : isCompact ? 0.86 : 0.92;
                 tracks.push(
                     `minmax(${min}px, ${fr}fr)`
                 );
@@ -215,9 +217,9 @@
 
             if (isFirstDay) {
                 const min =
-                    isPhone ? 58 : isTight ? 62 : isCompact ? 70 : 94;
+                    isPhone ? 46 : isTight ? 50 : isNarrowDesktop ? 54 : isCompact ? 60 : 70;
                 const fr =
-                    isPhone ? 0.86 : isTight ? 0.92 : isCompact ? 0.96 : 1;
+                    isPhone ? 0.78 : isTight ? 0.82 : isNarrowDesktop ? 0.86 : isCompact ? 0.92 : 0.98;
                 tracks.push(
                     `minmax(${min}px, ${fr}fr)`
                 );
@@ -225,8 +227,10 @@
             }
 
             const min =
-                isPhone ? 60 : isTight ? 64 : isCompact ? 72 : 96;
-            tracks.push(`minmax(${min}px, 1fr)`);
+                isPhone ? 46 : isTight ? 50 : isNarrowDesktop ? 54 : isCompact ? 60 : 70;
+            const fr =
+                isPhone ? 0.82 : isTight ? 0.88 : isNarrowDesktop ? 0.94 : isCompact ? 0.98 : 1;
+            tracks.push(`minmax(${min}px, ${fr}fr)`);
         });
 
         return tracks.join(" ");

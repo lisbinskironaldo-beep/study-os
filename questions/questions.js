@@ -11,6 +11,7 @@ window.QuestionsPage = {
     coachDismissedViews: {},
     questionContestDefaultText:
         "Enviar sem comentar",
+    smartSubjectEditorKey: "",
     renderFrameId: 0,
     renderQueuedSync: false,
     sessionUseCases: null,
@@ -2241,17 +2242,237 @@ window.QuestionsPage = {
                     "pt-BR"
                 );
             })
-            .map((subject) => ({
-                ...subject,
-                active:
-                    (
-                        ctx.smartSelectedSubjects ||
-                        []
-                    ).includes(subject.key) &&
-                    subject.hasQuestions,
-                disabled:
-                    !subject.hasQuestions
-            }));
+            .map((subject) => {
+                const topicOptions =
+                    QuestionsService.getSmartSubjectTopicOptions(
+                        this,
+                        subject.key,
+                        ctx
+                    );
+                const selectedTopicCount =
+                    topicOptions.filter(
+                        (topic) =>
+                            topic.active
+                    ).length;
+                const excludedTopicCount =
+                    Math.max(
+                        topicOptions.length -
+                            selectedTopicCount,
+                        0
+                    );
+
+                return {
+                    ...subject,
+                    active:
+                        (
+                            ctx.smartSelectedSubjects ||
+                            []
+                        ).includes(subject.key) &&
+                        subject.hasQuestions,
+                    disabled:
+                        !subject.hasQuestions,
+                    topicOptions,
+                    selectedTopicCount,
+                    excludedTopicCount,
+                    hasTopicEditor:
+                        topicOptions.length > 1,
+                    hasTopicOverrides:
+                        excludedTopicCount > 0
+                };
+            });
+    },
+
+    getSmartSubjectTopicOptions(
+        subjectKey,
+        context = null
+    ) {
+        const cleanKey =
+            String(subjectKey || "")
+                .trim()
+                .toLowerCase();
+
+        if (!cleanKey) {
+            return [];
+        }
+
+        return QuestionsService.getSmartSubjectTopicOptions(
+            this,
+            cleanKey,
+            context
+        );
+    },
+
+    toggleSmartSubjectTopic(
+        subjectKey,
+        topicKey
+    ) {
+        const cleanSubjectKey =
+            String(subjectKey || "")
+                .trim()
+                .toLowerCase();
+        const cleanTopicKey =
+            String(topicKey || "").trim();
+
+        if (
+            !cleanSubjectKey ||
+            !cleanTopicKey
+        ) {
+            return;
+        }
+
+        const topicOptions =
+            this.getSmartSubjectTopicOptions(
+                cleanSubjectKey
+            );
+
+        if (
+            !topicOptions.some(
+                (topic) =>
+                    topic.key === cleanTopicKey
+            )
+        ) {
+            return;
+        }
+
+        const ctx =
+            QuestionsContext.get();
+        const nextMap = {
+            ...(
+                ctx.smartExcludedTopicsBySubject ||
+                {}
+            )
+        };
+        const currentExcluded =
+            new Set(
+                (
+                    nextMap[
+                        cleanSubjectKey
+                    ] || []
+                )
+                    .map((item) =>
+                        String(item || "").trim()
+                    )
+                    .filter(Boolean)
+            );
+
+        if (
+            currentExcluded.has(
+                cleanTopicKey
+            )
+        ) {
+            currentExcluded.delete(
+                cleanTopicKey
+            );
+        } else {
+            currentExcluded.add(
+                cleanTopicKey
+            );
+        }
+
+        if (currentExcluded.size) {
+            nextMap[cleanSubjectKey] = [
+                ...currentExcluded
+            ];
+        } else {
+            delete nextMap[
+                cleanSubjectKey
+            ];
+        }
+
+        this.dismissCoachHint(
+            "smart_subjects"
+        );
+        this.setSmartConfig({
+            smartExcludedTopicsBySubject:
+                nextMap
+        });
+    },
+
+    setAllSmartSubjectTopics(
+        subjectKey,
+        includeAll = true
+    ) {
+        const cleanSubjectKey =
+            String(subjectKey || "")
+                .trim()
+                .toLowerCase();
+
+        if (!cleanSubjectKey) {
+            return;
+        }
+
+        const topicOptions =
+            this.getSmartSubjectTopicOptions(
+                cleanSubjectKey
+            );
+
+        if (!topicOptions.length) {
+            return;
+        }
+
+        const ctx =
+            QuestionsContext.get();
+        const nextMap = {
+            ...(
+                ctx.smartExcludedTopicsBySubject ||
+                {}
+            )
+        };
+
+        if (includeAll) {
+            delete nextMap[
+                cleanSubjectKey
+            ];
+        } else {
+            nextMap[cleanSubjectKey] =
+                topicOptions.map(
+                    (topic) => topic.key
+                );
+        }
+
+        this.dismissCoachHint(
+            "smart_subjects"
+        );
+        this.setSmartConfig({
+            smartExcludedTopicsBySubject:
+                nextMap
+        });
+    },
+
+    openSmartSubjectEditor(
+        subjectKey
+    ) {
+        const cleanSubjectKey =
+            String(subjectKey || "")
+                .trim()
+                .toLowerCase();
+        const option =
+            this.getSmartSubjectOptions().find(
+                (item) =>
+                    item.key ===
+                        cleanSubjectKey &&
+                    item.active &&
+                    !item.disabled &&
+                    item.hasTopicEditor
+            );
+
+        if (!option) {
+            return;
+        }
+
+        this.smartSubjectEditorKey =
+            cleanSubjectKey;
+        this.clearRuntimeNotice();
+        this.render();
+    },
+
+    closeSmartSubjectEditor() {
+        if (!this.smartSubjectEditorKey) {
+            return;
+        }
+
+        this.smartSubjectEditorKey = "";
+        this.render();
     },
 
     toggleSmartStartOption(optionKey) {
@@ -2391,6 +2612,7 @@ window.QuestionsPage = {
         this.dismissCoachHint(
             "smart_subjects"
         );
+        this.smartSubjectEditorKey = "";
         const availableSubjects =
             this.getSmartSubjectOptions()
                 .filter(
@@ -2435,12 +2657,14 @@ window.QuestionsPage = {
             this.getSmartSubjectOptions().filter(
                 (item) =>
                     item.active &&
-                    !item.disabled
+                    !item.disabled &&
+                    item.selectedTopicCount !==
+                        0
             );
 
         if (!activeSubjects.length) {
             this.runtimeNotice =
-                "Selecione pelo menos uma materia para continuar.";
+                "Mantenha pelo menos uma materia com assuntos ativos para continuar.";
             this.render();
             return;
         }
@@ -2448,6 +2672,7 @@ window.QuestionsPage = {
         this.dismissCoachHint(
             "smart_subjects"
         );
+        this.smartSubjectEditorKey = "";
         this.clearRuntimeNotice();
         this.openLauncher("smart");
     },
@@ -2571,6 +2796,15 @@ window.QuestionsPage = {
                 )
                 : [...selected, key];
 
+        if (
+            selected.includes(key) &&
+            this.smartSubjectEditorKey ===
+                key
+        ) {
+            this.smartSubjectEditorKey =
+                "";
+        }
+
         this.setSmartConfig({
             smartSelectedSubjects: next
         });
@@ -2589,7 +2823,9 @@ window.QuestionsPage = {
             smartSelectedSubjects: [],
             smartExcludedSeries: [],
             smartExcludedBases: [],
-            smartExcludedSubjects: []
+            smartExcludedSubjects: [],
+            smartExcludedTopicsBySubject:
+                {}
         });
     },
 
@@ -2635,6 +2871,12 @@ window.QuestionsPage = {
                 ...(ctx.smartExcludedSubjects ||
                     [])
             ],
+            excludedTopicsBySubject: {
+                ...(
+                    ctx.smartExcludedTopicsBySubject ||
+                    {}
+                )
+            },
             preferredAmount:
                 Number(
                     ctx.quantidadeQuestoes
@@ -2802,6 +3044,13 @@ window.QuestionsPage = {
                 ...(profile.excludedSubjects ||
                     [])
             ],
+            smartExcludedTopicsBySubject:
+                {
+                    ...(
+                        profile.excludedTopicsBySubject ||
+                        {}
+                    )
+                },
             smartQuestionCount:
                 profile.questionCount === null
                     ? null
@@ -5254,7 +5503,7 @@ window.QuestionsPage = {
             ...previousContext,
             smartGoal:
                 profile.smartGoal ||
-                "continue",
+                    "continue",
             smartSessionMetric:
                 profile.sessionMetric ||
                 "quantidade",
@@ -5278,6 +5527,13 @@ window.QuestionsPage = {
                 ...(profile.excludedSubjects ||
                     [])
             ],
+            smartExcludedTopicsBySubject:
+                {
+                    ...(
+                        profile.excludedTopicsBySubject ||
+                        {}
+                    )
+                },
             smartQuestionCount:
                 profile.questionCount ===
                 null
@@ -5453,11 +5709,21 @@ window.QuestionsPage = {
                     smartSelectedSeries: [],
                     smartSelectedSubjects: [],
                     smartExcludedSubjects: [],
-                    smartExcludedBases: []
+                    smartExcludedBases: [],
+                    smartExcludedTopicsBySubject:
+                        {}
                 },
                 false
             );
             this.syncContext();
+        }
+
+        if (
+            targetView !==
+            "smart_subjects"
+        ) {
+            this.smartSubjectEditorKey =
+                "";
         }
 
         if (

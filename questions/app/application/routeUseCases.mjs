@@ -390,6 +390,15 @@ export function createQuestionsRouteUseCases(
                 )
                 : [...selected, key];
 
+        if (
+            selected.includes(key) &&
+            page.smartSubjectEditorKey ===
+                key
+        ) {
+            page.smartSubjectEditorKey =
+                "";
+        }
+
         setSmartConfig({
             smartSelectedSubjects: next
         });
@@ -495,6 +504,7 @@ export function createQuestionsRouteUseCases(
         page.dismissCoachHint(
             "smart_subjects"
         );
+        page.smartSubjectEditorKey = "";
         const availableSubjects =
             page.getSmartSubjectOptions()
                 .filter(
@@ -532,12 +542,14 @@ export function createQuestionsRouteUseCases(
             page.getSmartSubjectOptions().filter(
                 (item) =>
                     item.active &&
-                    !item.disabled
+                    !item.disabled &&
+                    item.selectedTopicCount !==
+                        0
             );
 
         if (!activeSubjects.length) {
             page.runtimeNotice =
-                "Selecione pelo menos uma materia para continuar.";
+                "Mantenha pelo menos uma materia com assuntos ativos para continuar.";
             page.render();
             return;
         }
@@ -545,6 +557,7 @@ export function createQuestionsRouteUseCases(
         page.dismissCoachHint(
             "smart_subjects"
         );
+        page.smartSubjectEditorKey = "";
         page.clearRuntimeNotice();
         page.openLauncher("smart");
     }
@@ -555,7 +568,9 @@ export function createQuestionsRouteUseCases(
             smartSelectedSubjects: [],
             smartExcludedSeries: [],
             smartExcludedBases: [],
-            smartExcludedSubjects: []
+            smartExcludedSubjects: [],
+            smartExcludedTopicsBySubject:
+                {}
         });
     }
 

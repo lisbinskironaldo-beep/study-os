@@ -334,6 +334,13 @@ export function createQuestionsLibraryUseCases(
                 ...(profile.excludedSubjects ||
                     [])
             ],
+            smartExcludedTopicsBySubject:
+                {
+                    ...(
+                        profile.excludedTopicsBySubject ||
+                        {}
+                    )
+                },
             smartQuestionCount:
                 profile.questionCount === null
                     ? null

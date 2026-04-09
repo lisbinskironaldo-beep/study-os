@@ -19,6 +19,14 @@ Atualizado em 2026-03-28.
 - [ ] Criar o modulo separado de simulado ENEM
 - [ ] Conectar `sourceYear`, `sourceExam` e `competencies` aos filtros da interface
 - [ ] Criar ingestao guiada para lote de questoes revisadas
+- [x] Revisar `1ª série > Português` em texto
+- [ ] Revisar o restante da `1ª série` em texto
+- [ ] Planejar e implementar `Treino por assunto`
+
+Documentos mais recentes desta frente:
+
+- `docs/questions_2026-04-09_handoff.md`
+- `docs/questions_topic_training_plan.md`
 
 ---
 

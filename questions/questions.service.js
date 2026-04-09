@@ -717,6 +717,161 @@ window.QuestionsService = {
         });
     },
 
+    getSmartSubjectTopicOptions(
+        page,
+        subjectKey,
+        context = null
+    ) {
+        const ctx =
+            context ||
+            QuestionsContext.get();
+        const cleanSubjectKey =
+            String(subjectKey || "")
+                .trim()
+                .toLowerCase();
+
+        if (!cleanSubjectKey) {
+            return [];
+        }
+
+        const selectedSeries =
+            new Set(
+                (ctx.smartSelectedSeries || [])
+                    .map((item) =>
+                        Number(item)
+                    )
+                    .filter((item) =>
+                        Number.isFinite(item)
+                    )
+            );
+        const excludedSeries =
+            new Set(
+                (ctx.smartExcludedSeries || [])
+                    .map((item) =>
+                        Number(item)
+                    )
+                    .filter((item) =>
+                        Number.isFinite(item)
+                    )
+            );
+        const excludedBases =
+            new Set(
+                (ctx.smartExcludedBases || [])
+                    .map((item) =>
+                        String(item || "")
+                            .trim()
+                            .toUpperCase()
+                    )
+                    .filter(Boolean)
+            );
+        const excludedTopics =
+            new Set(
+                (
+                    ctx
+                        .smartExcludedTopicsBySubject?.[
+                        cleanSubjectKey
+                    ] || []
+                )
+                    .map((item) =>
+                        String(item || "").trim()
+                    )
+                    .filter(Boolean)
+            );
+        const availableBases =
+            new Set(
+                this.getBaseOptions(page)
+                    .filter(
+                        (base) =>
+                            base.available
+                    )
+                    .map((base) => base.key)
+            );
+
+        return this.getTopicOptions(page, {
+            materia: cleanSubjectKey
+        })
+            .filter((topic) => {
+                if (
+                    topic.subjectKey !==
+                    cleanSubjectKey
+                ) {
+                    return false;
+                }
+
+                if (!topic.hasQuestions) {
+                    return false;
+                }
+
+                if (
+                    !availableBases.has(
+                        topic.baseKey
+                    )
+                ) {
+                    return false;
+                }
+
+                if (
+                    excludedBases.has(
+                        topic.baseKey
+                    )
+                ) {
+                    return false;
+                }
+
+                if (
+                    selectedSeries.size &&
+                    !topic.serie.some((serie) =>
+                        selectedSeries.has(
+                            Number(serie)
+                        )
+                    )
+                ) {
+                    return false;
+                }
+
+                const topicSeries =
+                    Array.isArray(topic.serie)
+                        ? topic.serie
+                        : [];
+
+                if (
+                    topicSeries.length &&
+                    !topicSeries.some(
+                        (serie) =>
+                            !excludedSeries.has(
+                                Number(serie)
+                            )
+                    )
+                ) {
+                    return false;
+                }
+
+                return true;
+            })
+            .sort((left, right) => {
+                if (
+                    left.count !==
+                    right.count
+                ) {
+                    return (
+                        right.count - left.count
+                    );
+                }
+
+                return left.label.localeCompare(
+                    right.label,
+                    "pt-BR"
+                );
+            })
+            .map((topic) => ({
+                ...topic,
+                active:
+                    !excludedTopics.has(
+                        topic.key
+                    )
+            }));
+    },
+
     getSmartEligibleTopicOptions(
         page,
         context = null
@@ -774,6 +929,43 @@ window.QuestionsService = {
                     )
                     .filter(Boolean)
             );
+        const excludedTopicsBySubject =
+            ctx
+                .smartExcludedTopicsBySubject &&
+            typeof ctx
+                .smartExcludedTopicsBySubject ===
+                "object"
+                ? ctx.smartExcludedTopicsBySubject
+                : {};
+        const excludedTopicLookup =
+            new Map(
+                Object.entries(
+                    excludedTopicsBySubject
+                ).map(
+                    ([subjectKey, topicKeys]) => [
+                        String(
+                            subjectKey || ""
+                        )
+                            .trim()
+                            .toLowerCase(),
+                        new Set(
+                            (
+                                Array.isArray(
+                                    topicKeys
+                                )
+                                    ? topicKeys
+                                    : []
+                            )
+                                .map((item) =>
+                                    String(
+                                        item || ""
+                                    ).trim()
+                                )
+                                .filter(Boolean)
+                        )
+                    ]
+                )
+            );
         const availableBases =
             new Set(
                 this.getBaseOptions(page)
@@ -829,6 +1021,19 @@ window.QuestionsService = {
                 if (
                     excludedSubjects.has(
                         topic.subjectKey
+                    )
+                ) {
+                    return false;
+                }
+
+                const excludedTopics =
+                    excludedTopicLookup.get(
+                        topic.subjectKey
+                    );
+
+                if (
+                    excludedTopics?.has(
+                        topic.key
                     )
                 ) {
                     return false;
@@ -992,6 +1197,11 @@ window.QuestionsService = {
                     (
                         ctx.smartExcludedSubjects ||
                         []
+                    ).length ||
+                    Object.keys(
+                        ctx
+                            .smartExcludedTopicsBySubject ||
+                            {}
                     ).length
             );
 
@@ -1010,7 +1220,9 @@ window.QuestionsService = {
         const recoveryPatch = {
             smartExcludedSeries: [],
             smartExcludedBases: [],
-            smartExcludedSubjects: []
+            smartExcludedSubjects: [],
+            smartExcludedTopicsBySubject:
+                {}
         };
         const recoveredValidation =
             this.getSmartLauncherValidation(
@@ -1062,6 +1274,28 @@ window.QuestionsService = {
         ) {
             hiddenFilters.push(
                 `${ctx.smartExcludedSubjects.length} materia(s)`
+            );
+        }
+
+        const topicExcludedCount =
+            Object.values(
+                ctx
+                    .smartExcludedTopicsBySubject ||
+                    {}
+            ).reduce(
+                (acc, topicKeys) =>
+                    acc +
+                    (
+                        Array.isArray(topicKeys)
+                            ? topicKeys.length
+                            : 0
+                    ),
+                0
+            );
+
+        if (topicExcludedCount) {
+            hiddenFilters.push(
+                `${topicExcludedCount} assunto(s)`
             );
         }
 

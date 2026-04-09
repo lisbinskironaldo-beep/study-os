@@ -23,6 +23,7 @@ window.QuestionsContext = {
         smartExcludedSeries: [],
         smartExcludedBases: [],
         smartExcludedSubjects: [],
+        smartExcludedTopicsBySubject: {},
         statsSection: "resumo",
         statsBase: "ESCOLAR",
         statsScope: "geral",
@@ -176,6 +177,52 @@ window.QuestionsContext = {
                     )
                 ]
                 : [];
+        next.smartExcludedTopicsBySubject =
+            next
+                .smartExcludedTopicsBySubject &&
+            typeof next
+                .smartExcludedTopicsBySubject ===
+                "object"
+                ? Object.fromEntries(
+                    Object.entries(
+                        next.smartExcludedTopicsBySubject
+                    )
+                        .map(
+                            ([subjectKey, topicKeys]) => {
+                                const cleanSubjectKey =
+                                    String(
+                                        subjectKey || ""
+                                    )
+                                        .trim()
+                                        .toLowerCase();
+                                const cleanTopicKeys =
+                                    Array.isArray(topicKeys)
+                                        ? [
+                                            ...new Set(
+                                                topicKeys
+                                                    .map((item) =>
+                                                        String(
+                                                            item || ""
+                                                        ).trim()
+                                                    )
+                                                    .filter(Boolean)
+                                            )
+                                        ]
+                                        : [];
+
+                                return [
+                                    cleanSubjectKey,
+                                    cleanTopicKeys
+                                ];
+                            }
+                        )
+                        .filter(
+                            ([subjectKey, topicKeys]) =>
+                                subjectKey &&
+                                topicKeys.length
+                        )
+                )
+                : {};
         next.statsSection = [
             "resumo",
             "melhorar",
