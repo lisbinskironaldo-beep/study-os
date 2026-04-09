@@ -6374,22 +6374,34 @@ body.focus-mode #shortcutHint.is-visible {
     }
 
     .side-modules {
-        width: calc(100vw - 24px);
-        justify-content: center;
-        padding: 10px;
-        border-radius: 20px;
-        gap: 8px;
+        top: 50%;
+        right: 10px;
+        left: auto;
+        width: 60px;
+        max-width: 60px;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 8px 6px;
+        border-radius: 0;
+        gap: 6px;
+        transform: translateY(-50%);
+    }
+
+    .side-group,
+    .side-group-buttons {
+        justify-items: center;
+        gap: 6px;
     }
 
     .side-modules .icon-circle {
-        width: 42px;
-        height: 42px;
+        width: 40px;
+        height: 40px;
     }
 
     .side-group[data-nav-group="primary"] .icon-circle,
     .side-group[data-nav-group="utility"] .icon-circle {
-        width: 42px;
-        height: 42px;
+        width: 40px;
+        height: 40px;
     }
 
     #ambientRoot .ambient-mini {
