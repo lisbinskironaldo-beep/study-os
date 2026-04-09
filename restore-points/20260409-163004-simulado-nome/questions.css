@@ -229,32 +229,6 @@ clip-path: polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 100% calc(100% - 20px
 box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.72), 0 14px 28px rgba(15, 23, 42, 0.05);
 }
 
-.questions-entry-grid > .questions-entry-option {
-grid-template-rows: 1fr auto;
-justify-items: center;
-text-align: center;
-}
-
-.questions-entry-grid > .questions-entry-option .questions-entry-copy {
-width: 100%;
-display: grid;
-align-content: center;
-justify-items: center;
-text-align: center;
-gap: 10px;
-}
-
-.questions-entry-grid > .questions-entry-option .questions-entry-copy p {
-max-width: 30ch;
-margin: 0 auto;
-}
-
-.questions-entry-grid > .questions-entry-option .questions-primary-btn,
-.questions-entry-grid > .questions-entry-option .questions-secondary-btn {
-width: min(100%, 220px);
-justify-self: center;
-}
-
 .questions-entry-option::before {
 content: "";
 position: absolute;
@@ -1838,11 +1812,6 @@ justify-content: center;
 display: grid;
 grid-template-columns: repeat(2, minmax(0, 1fr));
 gap: 12px;
-}
-
-.questions-simulado-summary-name {
-display: grid;
-gap: 8px;
 }
 
 .questions-simulado-summary-stat {
@@ -5577,18 +5546,6 @@ appearance: none;
 font: inherit;
 }
 
-.questions-simulado-panel-form .questions-hub-filter-pill {
-padding-top: 7px;
-padding-bottom: 7px;
-}
-
-.questions-simulado-panel-form .questions-smart-config-grid--quantity .questions-pill {
-min-height: 44px;
-padding-top: 4px;
-padding-bottom: 4px;
-line-height: 1;
-}
-
 .questions-simulado-serie-pill.is-active,
 .questions-simulado-serie-pill[aria-pressed="true"] {
 border-color: var(--questions-smart-toggle-active-border) !important;
@@ -5603,12 +5560,6 @@ transform: translateY(-1px);
 border-color: var(--questions-smart-toggle-active-border) !important;
 background: var(--questions-smart-toggle-active-bg) !important;
 box-shadow: 0 16px 30px rgba(15, 23, 42, 0.08), 0 0 0 2px rgba(255, 255, 255, 0.26) !important;
-}
-
-.questions-simulado-panel-form .questions-simulado-choice {
-padding-top: 9px;
-padding-bottom: 9px;
-gap: 2px;
 }
 
 .questions-simulado-choice-topic.is-active,

@@ -3,7 +3,7 @@
 Documento interno de produto e execucao.
 Nao deve aparecer na interface do produto.
 
-Atualizado em 2026-03-31.
+Atualizado em 2026-04-09.
 
 ---
 
@@ -42,19 +42,18 @@ O modulo deixa de parecer uma tela de filtros e passa a parecer um motor de estu
 
 ### Modos principais de estudo
 
-Estes passam a ser os 4 caminhos centrais:
+Estes passam a ser os 3 caminhos centrais:
 
 - `Rapido`
 - `Inteligente`
-- `Por assunto`
 - `Simulado`
 
 ### Acoes secundarias
 
 Estas continuam existindo, mas nao devem competir com o inicio do treino:
 
-- `Guardados`
 - `Progresso`
+- `Guardados`
 - `Retomar treino`
 
 ### Hierarquia real de uso esperada
@@ -63,16 +62,15 @@ Ordem de uso mais provavel:
 
 1. `Rapido`
 2. `Inteligente`
-3. `Por assunto`
-4. `Simulado`
+3. `Simulado`
 
 Leitura de produto:
 
 - `Rapido` vira o core do modulo
 - `Inteligente` vira o fluxo adaptativo principal
-- `Por assunto` vira o caminho manual direto
 - `Simulado` fica como modo estruturado de avaliacao
-- `Guardados` e `Progresso` servem como apoio e continuidade
+- `Progresso` vira hub de estatisticas
+- `Guardados` e `Retomar treino` passam a viver dentro do `Rapido`
 
 ---
 
@@ -81,7 +79,6 @@ Leitura de produto:
 ### O que ja existe
 
 - `Treino inteligente`
-- `Especificar treino`
 - `Guardados`
 - `Retomar treino`
 - hub de `Progresso`
@@ -89,10 +86,11 @@ Leitura de produto:
 
 ### O que muda
 
-- `Especificar treino` passa a ser tratado como `Por assunto`
 - `Rapido` entra como novo launcher principal
 - `Simulado` sobe para a home principal como modo oficial
-- `Guardados` e `Progresso` saem da area principal de inicio
+- `Por assunto` deixa de ser modo principal e vira o fluxo de montagem dentro de `Simulado`
+- `Guardados` e `Retomar treino` passam a morar dentro do `Rapido`
+- `Progresso` fica isolado como leitura estatistica
 
 ### Decisao de nomenclatura
 
@@ -100,14 +98,12 @@ Home principal recomendada:
 
 - `Rapido`
 - `Inteligente`
-- `Por assunto`
 - `Simulado`
 
 Area secundaria:
 
-- `Guardados`
 - `Progresso`
-- `Retomar treino`
+- voltar
 
 ---
 
@@ -131,12 +127,12 @@ Fontes permitidas:
 - ultima sessao
 - desempenho por assunto
 
-Cards oficiais do modo rapido:
+Entradas oficiais do modo rapido:
 
 1. `Continuar de onde parou`
-2. `Revisar erros`
-3. `Foco no ponto fraco`
-4. `Misto inteligente`
+2. `Guardados`
+3. `Revisar erros`
+4. `Foco no ponto fraco`
 
 Regras obrigatorias:
 
@@ -147,9 +143,9 @@ Regras obrigatorias:
 Exemplos de copy:
 
 - `Voce parou aqui`
+- `Seus blocos guardados`
 - `Voce errou 5 nesse assunto`
 - `Seu ponto mais fraco`
-- `Recomendado agora`
 
 Leitura tecnica:
 
@@ -180,11 +176,11 @@ Diferenca para o modo rapido:
 
 - aqui o sistema pode introduzir conteudo novo
 
-### 5.3. Modo Por Assunto
+### 5.3. Por Assunto dentro do Simulado
 
 Objetivo:
 
-- treino especifico e direto
+- montagem direta de blocos dentro do simulado
 
 Fluxo oficial:
 
@@ -203,8 +199,8 @@ Melhorias obrigatorias:
 
 Leitura tecnica:
 
-- este modo nasce da tela atual de `Especificar treino`
-- a melhoria principal e simplificar e aproximar da busca real por topico
+- este fluxo deixa de competir como modo principal da home
+- ele passa a existir como subfluxo de `Montar simulado`
 
 ### 5.4. Modo Simulado
 
@@ -249,6 +245,7 @@ Regra arquitetural:
 
 - `simulado` continua separado de `questions`
 - a home de `questions` pode apontar para esse fluxo sem fundir os modulos
+- `Montar simulado` absorve a logica de `por assunto`
 
 ---
 

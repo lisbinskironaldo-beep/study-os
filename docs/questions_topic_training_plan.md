@@ -1,44 +1,45 @@
-# STUDY OS - PLANO DO TREINO POR ASSUNTO
+# STUDY OS - PLANO DO MONTAR SIMULADO
 
-Documento de produto e execução.
+Documento de produto e execucao.
 Atualizado em 2026-04-09.
 
 ---
 
-## 1. Direção fechada
+## 1. Direcao fechada
 
-Além do `Treino inteligente`, o launcher passa a ter uma nova entrada:
+O antigo fluxo de `Treino por assunto` deixa de ser tratado como modo principal da home.
 
-- `Treino por assunto`
+Ele passa a ser a base de montagem dentro de:
+
+- `Simulado > Montar simulado`
 
 Objetivo:
 
-- permitir montagem rápida e visual de um treino sem cair no formulário completo do `Especificar treino`
+- permitir montagem rapida e visual de blocos de simulado sem cair num configurador pesado
 
 Regra:
 
 ```txt
-mais direto que o especificar treino
+mais direto que um configurador completo
 mais controlado que o treino inteligente
 ```
 
 ---
 
-## 2. Posição no launcher
+## 2. Posicao no produto
 
-O `Treino por assunto` deve aparecer no mesmo local dos modos principais.
+Estrutura recomendada:
 
-Estrutura recomendada da home:
+- `Home`
+  - `Rapido`
+  - `Inteligente`
+  - `Simulado`
+  - `Progresso`
+- `Simulado`
+  - `Montar simulado`
+  - `Prova pronta (em breve)`
 
-- `Treino inteligente`
-- `Treino por assunto`
-- `Especificar treino`
-- `Guardados`
-
-Se o espaço visual ficar carregado:
-
-- manter `Guardados` e `Retomar treino` como ações secundárias
-- priorizar visualmente `Treino inteligente` e `Treino por assunto`
+Dentro de `Montar simulado`, entra a logica deste documento.
 
 ---
 
@@ -48,37 +49,37 @@ Tudo acontece na mesma aba, com layout dividido verticalmente.
 
 ### Lado esquerdo
 
-Área de seleção guiada:
+Area de selecao guiada:
 
-1. escolher `matéria`
+1. escolher `materia`
 2. escolher `assunto`
 3. escolher `dificuldade`
 4. escolher `quantidade`
 5. clicar em `Aplicar`
 
-Essa área deve ser escalonável:
+Essa area deve ser escalonavel:
 
-- começa simples
-- libera o próximo passo somente depois da escolha anterior
+- comeca simples
+- libera o proximo passo somente depois da escolha anterior
 
 ### Lado direito
 
-Área de montagem do treino:
+Area de montagem do simulado:
 
-- lista das seleções já aplicadas
+- lista das selecoes ja aplicadas
 - cada item mostra:
-  - matéria
+  - materia
   - assunto
   - dificuldade
   - quantidade
-- ações por item:
+- acoes por item:
   - `Alterar`
   - `Excluir`
 
 Ao final da lista:
 
-- botão `Incluir mais`
-- botão `Consolidar treino`
+- botao `Incluir mais`
+- botao `Consolidar simulado`
 
 ---
 
@@ -86,9 +87,9 @@ Ao final da lista:
 
 ### Primeiro bloco
 
-O usuário escolhe:
+O usuario escolhe:
 
-- matéria
+- materia
 - assunto
 - dificuldade
 - quantidade
@@ -100,45 +101,45 @@ Depois clica:
 Resultado:
 
 - o bloco entra na lista lateral de montagem
-- a área de seleção continua disponível para incluir outro bloco
+- a area de selecao continua disponivel para incluir outro bloco
 
-### Inclusão de mais blocos
+### Inclusao de mais blocos
 
-O usuário pode repetir o processo quantas vezes quiser.
+O usuario pode repetir o processo quantas vezes quiser.
 
 Exemplo:
 
-- Português > Interpretação de Texto > médio > 15
-- Matemática > Razão e Proporção > difícil > 10
-- História > Brasil Colônia > fácil > 8
+- Portugues > Interpretacao de Texto > medio > 15
+- Matematica > Razao e Proporcao > dificil > 10
+- Historia > Brasil Colonia > facil > 8
 
-### Edição
+### Edicao
 
-Cada item incluído precisa permitir:
+Cada item incluido precisa permitir:
 
 - `Alterar assunto`
 - `Excluir assunto`
 
-Recomendação:
+Recomendacao:
 
-- ao clicar em `Alterar`, reabrir o seletor do lado esquerdo já preenchido com os dados daquele item
+- ao clicar em `Alterar`, reabrir o seletor do lado esquerdo ja preenchido com os dados daquele item
 - ao clicar em `Excluir`, remover diretamente com feedback visual leve
 
 ---
 
-## 5. Consolidação do treino
+## 5. Consolidacao do simulado
 
-Quando o usuário terminar a montagem:
+Quando o usuario terminar a montagem:
 
-- clica em `Consolidar treino`
+- clica em `Consolidar simulado`
 
 Ao consolidar:
 
-- trava a composição da lista
-- abre a etapa final de sessão
+- trava a composicao da lista
+- abre a etapa final de sessao
 - permite adicionar temporizador
 
-Opções recomendadas:
+Opcoes recomendadas:
 
 - `Sem temporizador`
 - `5 min`
@@ -150,69 +151,69 @@ Opções recomendadas:
 
 Depois:
 
-- `Começar treino`
+- `Comecar simulado`
 
 ---
 
 ## 6. Layout recomendado
 
-Direção visual obrigatória:
+Direcao visual obrigatoria:
 
-- usar o layout já existente
+- usar o layout ja existente
 - manter linguagem minimalista
-- evitar poluição visual
-- evitar excesso de bordas, textos auxiliares e painéis pesados
+- evitar poluicao visual
+- evitar excesso de bordas, textos auxiliares e paineis pesados
 
 ### Estrutura visual sugerida
 
 - tela dividida ao meio na vertical
 - lado esquerdo com o seletor escalonado
-- lado direito com a composição do treino
+- lado direito com a composicao do simulado
 
-### Princípios de interface
+### Principios de interface
 
-- poucos campos visíveis por vez
-- botões pequenos e claros
+- poucos campos visiveis por vez
+- botoes pequenos e claros
 - feedback visual discreto
-- tipografia e espaçamento coerentes com o launcher atual
-- nada de aparência de formulário corporativo
+- tipografia e espacamento coerentes com o launcher atual
+- nada de aparencia de formulario corporativo
 
 ### Comportamento visual
 
-- seleção precisa parecer leve e progressiva
-- a pessoa deve enxergar tudo o que está montando sem trocar de tela
-- os botões de ação devem ser minimalistas:
+- a selecao precisa parecer leve e progressiva
+- a pessoa deve enxergar tudo o que esta montando sem trocar de tela
+- os botoes de acao devem ser minimalistas:
   - `Aplicar`
   - `Incluir mais`
   - `Alterar`
   - `Excluir`
-  - `Consolidar treino`
+  - `Consolidar simulado`
 
 ---
 
 ## 7. Regras funcionais
 
-### Matéria
+### Materia
 
-- só mostrar matérias com questões prontas
+- so mostrar materias com questoes prontas
 
 ### Assunto
 
-- depende da matéria escolhida
-- só mostrar assuntos válidos e com questões prontas
+- depende da materia escolhida
+- so mostrar assuntos validos e com questoes prontas
 
 ### Dificuldade
 
 Faixas sugeridas:
 
-- `Fácil`
-- `Médio`
-- `Difícil`
+- `Facil`
+- `Medio`
+- `Dificil`
 - `Misturar`
 
 ### Quantidade
 
-Opções sugeridas:
+Opcoes sugeridas:
 
 - `5`
 - `10`
@@ -221,67 +222,64 @@ Opções sugeridas:
 - `30`
 - `50`
 
-### Aplicação
+### Aplicacao
 
-`Aplicar` só habilita quando os quatro pontos estiverem definidos:
+`Aplicar` so habilita quando os quatro pontos estiverem definidos:
 
-- matéria
+- materia
 - assunto
 - dificuldade
 - quantidade
 
-### Consolidação
+### Consolidacao
 
-`Consolidar treino` só habilita se houver pelo menos um item montado.
-
----
-
-## 8. Relação com os modos já existentes
-
-### Treino inteligente
-
-- continua sendo o modo de automação principal
-
-### Treino por assunto
-
-- entra como modo intermediário
-- atende quem quer escolher foco sem abrir filtros avançados
-
-### Especificar treino
-
-- continua existindo como modo completo e manual
-
-Regra de produto:
-
-```txt
-inteligente = o sistema decide mais
-por assunto = o usuário escolhe o foco rápido
-especificar = o usuário controla tudo
-```
+`Consolidar simulado` so habilita se houver pelo menos um item montado.
 
 ---
 
-## 9. Direção técnica sugerida
+## 8. Relacao com os modos principais
+
+### Rapido
+
+- continua sendo a entrada mais curta do produto
+
+### Inteligente
+
+- continua sendo o modo de automacao principal
+
+### Simulado
+
+- vira o lugar oficial da montagem manual por assunto
+- concentra `Montar simulado` e `Prova pronta`
+
+### Progresso
+
+- fica como hub de estatisticas
+- nao compete com o inicio de treino
+
+---
+
+## 9. Direcao tecnica sugerida
 
 Implementar em blocos curtos:
 
 ### Bloco 1
 
-- adicionar entrada `Treino por assunto` no launcher
-- criar rota e estado base
-- renderizar layout dividido ao meio
+- adicionar entrada `Simulado` no launcher
+- criar tela inicial com `Montar simulado` e `Prova pronta (em breve)`
+- criar rota e estado base do builder
 
 ### Bloco 2
 
 - implementar seletor escalonado:
-  - matéria
+  - materia
   - assunto
   - dificuldade
   - quantidade
 
 ### Bloco 3
 
-- implementar painel de composição:
+- implementar painel de composicao:
   - aplicar item
   - incluir mais
   - excluir
@@ -289,18 +287,18 @@ Implementar em blocos curtos:
 
 ### Bloco 4
 
-- implementar `Consolidar treino`
+- implementar `Consolidar simulado`
 - montar preview final
 - acoplar temporizador embutido
 
 ### Bloco 5
 
 - integrar com guardados e runs
-- validar consistência com `resume` e `saved`
+- validar consistencia com `resume` e `saved`
 
 ---
 
-## 10. Arquivos que provavelmente serão tocados
+## 10. Arquivos que provavelmente serao tocados
 
 - `questions/questions.js`
 - `questions/questions.ui.js`
@@ -314,15 +312,15 @@ Implementar em blocos curtos:
 
 Se a frente crescer:
 
-- criar módulo próprio para o novo fluxo em vez de concentrar tudo em `questions.js`
+- criar modulo proprio para o novo fluxo em vez de concentrar tudo em `questions.js`
 
 ---
 
-## 11. Próximo passo recomendado
+## 11. Proximo passo recomendado
 
 Quando retomar esta frente:
 
-1. encaixar o card `Treino por assunto` no launcher sem quebrar o visual atual
-2. criar apenas a estrutura visual dividida ao meio
+1. encaixar o card `Simulado` no launcher sem quebrar o visual atual
+2. criar a estrutura visual dividida ao meio para `Montar simulado`
 3. fazer primeiro a montagem local sem temporizador
-4. só depois ligar `Consolidar treino` e o timer
+4. so depois ligar `Consolidar simulado` e o timer

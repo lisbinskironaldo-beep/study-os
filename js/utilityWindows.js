@@ -575,6 +575,83 @@ const UtilityWindows = {
         );
     },
 
+    setTimerFieldsFromSeconds(totalSeconds = 0) {
+        const tool = this.tools.timer;
+        if (!tool) return;
+
+        const safeTotal = Math.max(
+            Math.floor(Number(totalSeconds) || 0),
+            0
+        );
+        const hours = Math.floor(
+            safeTotal / 3600
+        );
+        const minutes = Math.floor(
+            (safeTotal % 3600) / 60
+        );
+        const seconds =
+            safeTotal % 60;
+
+        tool.fields.hours = String(
+            Math.min(hours, 99)
+        ).padStart(2, "0");
+        tool.fields.minutes = String(
+            minutes
+        ).padStart(2, "0");
+        tool.fields.seconds = String(
+            seconds
+        ).padStart(2, "0");
+    },
+
+    setTimerDuration(
+        totalSeconds = 0,
+        options = {}
+    ) {
+        const tool = this.tools.timer;
+        if (!tool) return false;
+
+        const safeTotal = Math.max(
+            Math.floor(Number(totalSeconds) || 0),
+            0
+        );
+
+        clearInterval(tool.interval);
+        tool.interval = null;
+        tool.total = safeTotal;
+        tool.remaining = safeTotal;
+        this.setTimerFieldsFromSeconds(
+            safeTotal
+        );
+
+        if (options.open !== false) {
+            this.open("timer");
+        } else {
+            this.updateTimerView();
+        }
+
+        this.syncTriggerState();
+
+        if (
+            options.autostart === true &&
+            safeTotal > 0
+        ) {
+            this.handleTimerAction("play");
+        }
+
+        return true;
+    },
+
+    pauseTimer() {
+        const tool = this.tools.timer;
+        if (!tool) return false;
+
+        clearInterval(tool.interval);
+        tool.interval = null;
+        this.updateTimerView();
+        this.syncTriggerState();
+        return true;
+    },
+
     handleTimerAction(action) {
         const tool = this.tools.timer;
         if (!tool) return;

@@ -1,6 +1,10 @@
 window.QuestionsState = {
     launcherViews: new Set([
         "home",
+        "quick",
+        "simulado",
+        "simulado_build",
+        "progress",
         "smart_start",
         "smart_subjects",
         "smart",

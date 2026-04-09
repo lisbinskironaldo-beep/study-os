@@ -330,41 +330,6 @@ export function createQuestionsLegacyLibraryFallback(
             return;
         }
 
-        if (
-            typeof page.openConfirmDialog ===
-            "function"
-        ) {
-            page.openConfirmDialog({
-                title: "Apagar bloco",
-                message:
-                    `Apagar o bloco "${block.name}"?`,
-                confirmLabel: "Apagar",
-                anchorRect:
-                    options.anchorRect ||
-                    null,
-                onConfirm: () => {
-                    QuestionsStore.deleteSavedBlock(
-                        block.id
-                    );
-                    page.runtimeNotice =
-                        `Bloco apagado: ${block.name}.`;
-                    page.openLauncher(
-                        "saved"
-                    );
-                }
-            });
-            return;
-        }
-
-        const confirmed =
-            window.confirm(
-                `Apagar o bloco "${block.name}"?`
-            );
-
-        if (!confirmed) {
-            return;
-        }
-
         QuestionsStore.deleteSavedBlock(
             block.id
         );

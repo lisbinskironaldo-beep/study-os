@@ -2185,12 +2185,6 @@ window.QuestionsPage = {
             return;
         }
 
-        const resolvedCustomTitle =
-            String(
-                preview.meta?.customTitle || ""
-            ).trim() ||
-            `Simulado - ${Number(preview.totalQuestions) || preview.sessionList.length || 0} questoes`;
-
         this.setSimuladoTimeLimitMinutes(
             preview.timeLimitMinutes
         );
@@ -2204,55 +2198,12 @@ window.QuestionsPage = {
             sourceMode: "simulado",
             meta: {
                 ...(preview.meta || {}),
-                customTitle:
-                    resolvedCustomTitle,
                 simuladoTimeLimitMinutes:
                     preview.timeLimitMinutes,
                 simuladoTimeLimitLabel:
                     preview.timeLimitLabel
             }
         });
-    },
-
-    setActiveSimuladoPreviewTitle(
-        title = ""
-    ) {
-        if (
-            !this.activeDialog ||
-            this.activeDialog.mode !==
-                "simulado_summary"
-        ) {
-            return;
-        }
-
-        const preview =
-            this.activeDialog.data?.preview;
-
-        if (
-            !preview ||
-            typeof preview !== "object"
-        ) {
-            return;
-        }
-
-        this.activeDialog = {
-            ...this.activeDialog,
-            data: {
-                ...(
-                    this.activeDialog
-                        .data || {}
-                ),
-                preview: {
-                    ...preview,
-                    meta: {
-                        ...(preview.meta || {}),
-                        customTitle: String(
-                            title || ""
-                        )
-                    }
-                }
-            }
-        };
     },
 
     activateSimuladoTimer(
@@ -5335,12 +5286,23 @@ window.QuestionsPage = {
             return;
         }
 
-        QuestionsStore.deleteSavedBlock(
-            block.id
-        );
-        this.runtimeNotice =
-            `Bloco apagado: ${block.name}.`;
-        this.openLauncher("saved");
+        this.openConfirmDialog({
+            title: "Apagar bloco",
+            message:
+                `Apagar o bloco "${block.name}"?`,
+            confirmLabel: "Apagar",
+            anchorRect:
+                options.anchorRect ||
+                null,
+            onConfirm: () => {
+                QuestionsStore.deleteSavedBlock(
+                    block.id
+                );
+                this.runtimeNotice =
+                    `Bloco apagado: ${block.name}.`;
+                this.openLauncher("saved");
+            }
+        });
     },
 
     buildRunTitle(
@@ -5794,14 +5756,25 @@ window.QuestionsPage = {
             return;
         }
 
-        QuestionsStore.deleteRun(
-            runId
-        );
-        this.runtimeNotice =
-            `Sessao apagada: ${run.title}.`;
-        this.openLauncher(
-            "resume"
-        );
+        this.openConfirmDialog({
+            title: "Apagar sess\u00e3o",
+            message:
+                `Apagar a sess\u00e3o "${run.title}"?`,
+            confirmLabel: "Apagar",
+            anchorRect:
+                options.anchorRect ||
+                null,
+            onConfirm: () => {
+                QuestionsStore.deleteRun(
+                    runId
+                );
+                this.runtimeNotice =
+                    `Sessao apagada: ${run.title}.`;
+                this.openLauncher(
+                    "resume"
+                );
+            }
+        });
     },
 
     exitModule() {

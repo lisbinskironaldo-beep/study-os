@@ -587,6 +587,15 @@ export function createQuestionsSessionUseCases(
             }
         );
 
+        page.activateSimuladoTimer?.(
+            meta,
+            {
+                ...options,
+                sourceMode,
+                activeRunId
+            }
+        );
+
         page.dispatchSyncEvent(
             "questions:session-started",
             {
@@ -614,6 +623,7 @@ export function createQuestionsSessionUseCases(
         }
 
         QuestionsStore.flushProfileState(true);
+        page.pauseSimuladoTimer?.();
         persistActiveRun("in_progress");
         page.runtimeNotice =
             "Treino pausado. Você pode retomar depois.";
@@ -801,6 +811,7 @@ export function createQuestionsSessionUseCases(
             QuestionsState.isComplete() &&
             !QuestionsState.isSessionRecorded()
         ) {
+            page.pauseSimuladoTimer?.();
             const summary =
                 planner.summarizeResults(
                     QuestionsState.getResults(),

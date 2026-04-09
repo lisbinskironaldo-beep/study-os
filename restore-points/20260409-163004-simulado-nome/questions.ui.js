@@ -206,19 +206,10 @@ window.QuestionsUI = {
         )
             ? preview.blocks
             : [];
-        const suggestedTitle =
-            String(
-                preview.meta?.customTitle || ""
-            ).trim() ||
-            `Simulado - ${String(preview.totalQuestions || 0)} questoes`;
 
         return `
             <div class="questions-dialog-message">
                 Revise o fechamento do simulado antes de iniciar.
-            </div>
-            <div class="questions-simulado-summary-name">
-                <label class="questions-dialog-label" for="questionsSimuladoSummaryTitleInput">Nome do simulado</label>
-                <input id="questionsSimuladoSummaryTitleInput" class="questions-dialog-input" type="text" value="${this.escapeHtml(suggestedTitle)}" maxlength="80" autocomplete="off" spellcheck="false" placeholder="Ex.: Simulado de Matemática - Abril">
             </div>
             <div class="questions-simulado-summary-grid">
                 <article class="questions-simulado-summary-stat">
@@ -260,10 +251,6 @@ window.QuestionsUI = {
         const input =
             document.getElementById(
                 "questionsDialogInput"
-            );
-        const simuladoSummaryTitleInput =
-            document.getElementById(
-                "questionsSimuladoSummaryTitleInput"
             );
 
         document.getElementById(
@@ -326,52 +313,13 @@ window.QuestionsUI = {
                 );
         }
 
-        if (
-            dialog?.mode ===
-            "simulado_summary"
-        ) {
-            simuladoSummaryTitleInput
-                ?.addEventListener(
-                    "input",
-                    () => {
-                        this.page.setActiveSimuladoPreviewTitle(
-                            simuladoSummaryTitleInput.value
-                        );
-                    }
-                );
-
-            simuladoSummaryTitleInput
-                ?.addEventListener(
-                    "keydown",
-                    (event) => {
-                        if (event.key === "Enter") {
-                            event.preventDefault();
-                            this.page.confirmDialog();
-                            return;
-                        }
-
-                        if (event.key === "Escape") {
-                            event.preventDefault();
-                            this.page.closeDialog();
-                        }
-                    }
-                );
-        }
-
-        if (
-            !input &&
-            !simuladoSummaryTitleInput
-        ) {
+        if (!input) {
             return;
         }
 
         requestAnimationFrame(() => {
-            const focusTarget =
-                simuladoSummaryTitleInput ||
-                input;
-
-            focusTarget?.focus();
-            focusTarget?.select?.();
+            input.focus();
+            input.select();
         });
 
         input?.addEventListener(
@@ -1716,7 +1664,7 @@ window.QuestionsUI = {
 
                     <article class="questions-entry-option questions-entry-option-smart">
                         <div class="questions-entry-copy">
-                            <h3>Inteligente</h3>
+                            <h3>Treino inteligente</h3>
                             <p>Fluxo adaptativo com etapa de assuntos e fechamento mais enxuto.</p>
                         </div>
                         <button class="questions-primary-btn" type="button" data-launcher-view="smart_start" ${isLoading || isError ? "disabled" : ""}>

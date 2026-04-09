@@ -185,6 +185,7 @@ export function createQuestionsLegacySessionFallback(
         }
 
         QuestionsStore.flushProfileState(true);
+        page.pauseSimuladoTimer?.();
         persistActiveRun(
             "in_progress"
         );
@@ -247,6 +248,7 @@ export function createQuestionsLegacySessionFallback(
             QuestionsState.isComplete() &&
             !QuestionsState.isSessionRecorded()
         ) {
+            page.pauseSimuladoTimer?.();
             const summary =
                 planner.summarizeResults(
                     QuestionsState.getResults(),
@@ -483,6 +485,15 @@ export function createQuestionsLegacySessionFallback(
                     options.lastAnswer,
                 startTime:
                     Date.now()
+            }
+        );
+
+        page.activateSimuladoTimer?.(
+            meta,
+            {
+                ...options,
+                sourceMode,
+                activeRunId
             }
         );
 

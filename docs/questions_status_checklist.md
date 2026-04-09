@@ -21,12 +21,13 @@ Atualizado em 2026-03-28.
 - [ ] Criar ingestao guiada para lote de questoes revisadas
 - [x] Revisar `1ª série > Português` em texto
 - [ ] Revisar o restante da `1ª série` em texto
-- [ ] Planejar e implementar `Treino por assunto`
+- [ ] Implementar `Montar simulado`
 
 Documentos mais recentes desta frente:
 
 - `docs/questions_2026-04-09_handoff.md`
 - `docs/questions_topic_training_plan.md`
+- `docs/questions_modes_expansion_plan.md`
 
 ---
 
@@ -79,9 +80,10 @@ Direcao estrutural oficial desta fase:
 
 No modulo `questions`, a etapa visual atual ficou assim:
 
-- [x] simplificar a home para `Treino inteligente`, `Especificar treino` e `Guardados`
-- [x] rebaixar `Retomar treino` para acao secundaria
-- [x] manter `Especificar treino` abrindo a tela detalhada atual
+- [x] simplificar a home para `Treino inteligente` e acessos mais diretos ao estudo
+- [ ] subir `Rapido` como modo principal
+- [ ] subir `Simulado` para a home principal
+- [ ] separar `Progresso` como hub de estatisticas
 - [x] manter a entrada circular do `Treino inteligente`
 - [x] reduzir a tela final do treino inteligente para uma revisao curta com `objetivo`, `quantidade`, `guardar` e `comecar`
 
@@ -90,7 +92,7 @@ Proxima rodada sugerida:
 - [ ] transformar a etapa de materias em uma selecao ainda mais direta, com menos leitura auxiliar
 - [ ] trocar a etapa atual de assuntos por um fluxo por materia, uma aberta por vez
 - [ ] adicionar a tela curta de limites da sessao com quantidade e tempo
-- [ ] refinar `Guardados` e `Retomar treino` para consulta, duplicacao e reinicio mais rapidos
+- [ ] absorver `Guardados` e `Retomar treino` dentro do `Rapido`
 - [ ] manter o mini player fechado por padrao e evitar flashes de tela ao abrir `questions`
 
 Base ja pronta para sustentar essa etapa:
@@ -107,9 +109,10 @@ Essa frente fecha a proxima reorganizacao do produto:
 
 - [ ] subir `Rapido` como modo principal
 - [ ] manter `Inteligente` como fluxo adaptativo com etapa de assuntos
-- [ ] converter `Especificar treino` em `Por assunto`
+- [ ] mover `Por assunto` para dentro de `Simulado > Montar simulado`
 - [ ] subir `Simulado` para a home como modo oficial
-- [ ] rebaixar `Guardados`, `Progresso` e `Retomar treino` para a camada secundaria
+- [ ] separar `Progresso` como hub de estatisticas, e nao como modo de treino
+- [ ] rebaixar `Guardados` e `Retomar treino` para dentro do `Rapido`
 - [ ] executar a melhoria em blocos, sem misturar todos os modos ao mesmo tempo
 
 ---
