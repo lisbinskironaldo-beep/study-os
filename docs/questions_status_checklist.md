@@ -99,6 +99,19 @@ Base ja pronta para sustentar essa etapa:
 - [x] blocos salvos
 - [x] runs com pausa e retomada
 
+Nova frente oficial aberta em 2026-03-31:
+
+- `docs/questions_modes_expansion_plan.md`
+
+Essa frente fecha a proxima reorganizacao do produto:
+
+- [ ] subir `Rapido` como modo principal
+- [ ] manter `Inteligente` como fluxo adaptativo com etapa de assuntos
+- [ ] converter `Especificar treino` em `Por assunto`
+- [ ] subir `Simulado` para a home como modo oficial
+- [ ] rebaixar `Guardados`, `Progresso` e `Retomar treino` para a camada secundaria
+- [ ] executar a melhoria em blocos, sem misturar todos os modos ao mesmo tempo
+
 ---
 
 ## Reorientacao estrutural fechada em 2026-03-27

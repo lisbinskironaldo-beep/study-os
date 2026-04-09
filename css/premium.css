@@ -1318,6 +1318,7 @@ body.dark[data-style="pulse"] .time-display::before {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     gap: 10px;
     width: 100%;
     max-width: 820px;
@@ -1326,6 +1327,8 @@ body.dark[data-style="pulse"] .time-display::before {
 .preset-chip {
     position: relative;
     overflow: hidden;
+    flex: 0 1 auto;
+    max-width: 100%;
     min-height: 40px;
     padding: 6px 15px;
     border-radius: 0;
@@ -1392,11 +1395,13 @@ body.dark[data-style="pulse"] .time-display::before {
 }
 
 @media (max-width: 980px) {
+    #pomodoroPresets {
+        width: min(100%, 100%);
+    }
+
     .pomodoro-presets-grid {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        max-width: 640px;
+        max-width: min(100%, 720px);
+        gap: 8px;
     }
 
     .preset-chip {
@@ -1405,6 +1410,7 @@ body.dark[data-style="pulse"] .time-display::before {
         justify-content: center;
         min-height: 36px;
         padding: 5px 13px;
+        font-size: 0.74rem;
     }
 }
 
@@ -1419,14 +1425,63 @@ body.dark[data-style="pulse"] .time-display::before {
     }
 
     .pomodoro-presets-grid {
-        max-width: 420px;
+        max-width: 100%;
         gap: 7px;
     }
 
     .preset-chip {
+        min-width: 0;
         min-height: 34px;
         padding: 4px 12px;
-        font-size: 0.75rem;
+        font-size: 0.72rem;
+    }
+}
+
+@media (max-width: 860px) {
+    .pomodoro-presets-title {
+        font-size: clamp(0.82rem, 1.8vw, 1rem);
+        letter-spacing: 0.18em;
+    }
+
+    .pomodoro-presets-title em {
+        font-size: clamp(1.3rem, 4vw, 1.9rem);
+    }
+
+    .pomodoro-presets-grid {
+        gap: 7px 8px;
+    }
+
+    .preset-chip {
+        min-height: 34px;
+        padding: 4px 11px;
+        font-size: 0.71rem;
+    }
+}
+
+@media (max-width: 520px) {
+    #pomodoroPresets {
+        gap: 8px;
+    }
+
+    .pomodoro-presets-title {
+        gap: 0.18rem;
+        font-size: 0.76rem;
+        letter-spacing: 0.14em;
+    }
+
+    .pomodoro-presets-title em {
+        font-size: 1.16rem;
+        line-height: 0.92;
+    }
+
+    .pomodoro-presets-grid {
+        gap: 6px;
+    }
+
+    .preset-chip {
+        min-height: 32px;
+        padding: 4px 9px;
+        font-size: 0.66rem;
     }
 }
 
@@ -3096,8 +3151,19 @@ body.dark .custom-row input {
     color: var(--ink);
 }
 
+body[data-mode="qts"] {
+    --qts-detached-rail-width: clamp(86px, 8.8vw, 126px);
+    --qts-detached-rail-gap: clamp(1px, 0.2vw, 3px);
+}
+
 #qtsModule {
     overflow: visible;
+    --qts-content-max: min(100%, 1180px);
+    --qts-inline-gutter: clamp(1px, 0.35vw, 6px);
+    --qts-left-rail-space: var(--qts-detached-rail-width, 0px);
+    --qts-left-clearance: var(--qts-detached-rail-gap, 0px);
+    --qts-right-tools-space: 0px;
+    --qts-right-edge-gap: 1px;
 }
 
 .calendar-header {
@@ -3743,16 +3809,22 @@ body.dark .planner-empty-state {
 .qts-stage-main {
     min-width: 0;
     width: 100%;
+    margin-left: 0;
     padding-left: 0;
+    padding-right: 0;
     display: grid;
     justify-items: center;
+    --qts-safe-inline-size: min(
+        100%,
+        var(--qts-content-max)
+    );
 }
 
 .qts-detached-index {
     position: fixed;
     top: 124px;
     left: 18px;
-    width: 126px;
+    width: var(--qts-detached-rail-width, 126px);
     display: none;
     gap: 8px;
     align-content: start;
@@ -3777,13 +3849,12 @@ body[data-mode="qts"] .qts-detached-index {
     --qts-rail-accent-rgb: 183, 215, 240;
     display: grid;
     gap: 6px;
-    padding: 8px 6px 6px;
+    padding: 2px 0;
     border-radius: 0;
-    background: var(--ui-informative-surface);
-    border: 1px solid transparent;
-    box-shadow: var(--ui-informative-shadow);
-    clip-path:
-        polygon(var(--ui-cut-md) 0, calc(100% - var(--ui-cut-md)) 0, 100% var(--ui-cut-md), 100% calc(100% - var(--ui-cut-md)), calc(100% - var(--ui-cut-md)) 100%, var(--ui-cut-md) 100%, 0 calc(100% - var(--ui-cut-md)), 0 var(--ui-cut-md));
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    clip-path: none;
 }
 
 .qts-detached-block.is-week {
@@ -3995,21 +4066,30 @@ body.dark .qts-detached-summary-button.is-active {
 }
 
 body[data-mode="qts"] #qtsModule.module.active {
-    margin-left: clamp(28px, 4vw, 54px);
-    width: calc(100% - clamp(28px, 4vw, 54px) + 42px);
-    padding-left: 0;
-    padding-right: 18px;
+    box-sizing: border-box;
+    margin-left: calc(var(--qts-left-rail-space, 0px) + var(--qts-left-clearance, 0px));
+    margin-right: calc(var(--qts-right-tools-space, 0px) + var(--qts-right-edge-gap, 0px));
+    width: calc(100% - var(--qts-left-rail-space, 0px) - var(--qts-left-clearance, 0px) - var(--qts-right-tools-space, 0px) - var(--qts-right-edge-gap, 0px));
+    max-width: 100%;
+    padding-left: var(--qts-inline-gutter, 18px);
+    padding-right: var(--qts-inline-gutter, 18px);
 }
 
 @media (max-width: 1480px) and (min-width: 761px) {
     body[data-mode="qts"] #qtsModule {
-        --qts-safe-inline-size: min(100%, calc(100vw - 300px));
+        --qts-inline-gutter: 4px;
+        --qts-right-tools-space: 60px;
+        --qts-content-max: 1120px;
+    }
+
+    body[data-mode="qts"] {
+        --qts-detached-rail-width: 112px;
+        --qts-detached-rail-gap: 2px;
     }
 
     .qts-detached-index {
         left: 10px;
         top: 116px;
-        width: 108px;
         gap: 8px;
     }
 
@@ -4067,10 +4147,10 @@ body[data-mode="qts"] #qtsModule.module.active {
     }
 
     body[data-mode="qts"] #qtsModule.module.active {
-        margin-left: 98px;
-        width: calc(100% - 98px + 18px);
-        padding-left: 10px;
-        padding-right: 74px;
+        margin-left: calc(var(--qts-left-rail-space, 0px) + var(--qts-left-clearance, 0px));
+        width: calc(100% - var(--qts-left-rail-space, 0px) - var(--qts-left-clearance, 0px));
+        padding-left: var(--qts-inline-gutter);
+        padding-right: var(--qts-inline-gutter);
     }
 
     .qts-grid-shell {
@@ -4117,20 +4197,27 @@ body[data-mode="qts"] #qtsModule.module.active {
 @media (max-width: 1220px) and (min-width: 761px) {
     body[data-mode="qts"] #qtsModule {
         --qts-safe-inline-size: min(100%, calc(100vw - 176px));
+        --qts-inline-gutter: 3px;
+        --qts-right-tools-space: 58px;
+        --qts-content-max: none;
+    }
+
+    body[data-mode="qts"] {
+        --qts-detached-rail-width: 100px;
+        --qts-detached-rail-gap: 2px;
     }
 
     .qts-detached-index {
         top: 112px;
         left: 10px;
-        width: 100px;
         gap: 8px;
     }
 
     body[data-mode="qts"] #qtsModule.module.active {
-        margin-left: 92px;
-        width: calc(100% - 92px + 56px);
-        padding-left: 4px;
-        padding-right: 12px;
+        margin-left: calc(var(--qts-left-rail-space, 0px) + var(--qts-left-clearance, 0px));
+        width: calc(100% - var(--qts-left-rail-space, 0px) - var(--qts-left-clearance, 0px));
+        padding-left: var(--qts-inline-gutter);
+        padding-right: var(--qts-inline-gutter);
     }
 
     .qts-grid-shell {
@@ -4180,6 +4267,203 @@ body[data-mode="qts"] #qtsModule.module.active {
     .qts-interval {
         min-height: 12px !important;
         font-size: 0.68rem;
+    }
+}
+
+@media (max-width: 1080px) and (min-width: 761px) {
+    body[data-mode="qts"] #qtsModule {
+        --qts-inline-gutter: 2px;
+        --qts-right-tools-space: 56px;
+    }
+
+    body[data-mode="qts"] {
+        --qts-detached-rail-width: 92px;
+        --qts-detached-rail-gap: 1px;
+    }
+
+    body[data-mode="qts"] .side-modules {
+        right: 2px;
+        width: auto;
+        padding: 0;
+        background: transparent;
+        backdrop-filter: none;
+        border: 0;
+        box-shadow: none;
+        clip-path: none;
+        transform: translateY(-50%);
+        transition: opacity 0.18s ease, right 0.18s ease;
+    }
+
+    body[data-mode="qts"] .side-modules::after {
+        display: none;
+    }
+
+    body[data-mode="qts"] .side-group {
+        gap: 6px;
+    }
+
+    body[data-mode="qts"] .side-group-buttons {
+        gap: 6px;
+    }
+
+    body[data-mode="qts"] .side-group[data-nav-group="utility"] {
+        padding-top: 6px;
+        border-top: 0;
+    }
+
+    body[data-mode="qts"] .side-modules .icon-circle,
+    body[data-mode="qts"] .side-group[data-nav-group="primary"] .icon-circle,
+    body[data-mode="qts"] .side-group[data-nav-group="utility"] .icon-circle {
+        width: 40px;
+        height: 40px;
+    }
+
+    body[data-mode="qts"] #qtsModule .qts-stage-main {
+        justify-items: center;
+    }
+
+    body[data-mode="qts"] #qtsModule .qts-template-strip,
+    body[data-mode="qts"] #qtsModule .qts-title {
+        justify-self: center;
+        max-width: calc(100% - 12px);
+    }
+
+    body[data-mode="qts"] #qtsModule .qts-grid-shell,
+    body[data-mode="qts"] #qtsModule .qts-controls,
+    body[data-mode="qts"] #qtsModule .qts-subject-summary {
+        width: var(--qts-safe-inline-size);
+        max-width: var(--qts-safe-inline-size);
+        justify-self: center;
+    }
+
+    .qts-detached-block {
+        gap: 6px;
+        padding: 6px 4px 4px;
+    }
+
+    .qts-detached-block-label {
+        font-size: 0.5rem;
+        letter-spacing: 0.16em;
+    }
+
+    .qts-detached-week-button,
+    .qts-detached-toggle,
+    .qts-detached-summary-button {
+        min-height: 32px;
+        padding: 5px 6px;
+        font-size: 0.58rem;
+    }
+}
+
+@media (max-width: 980px) and (min-width: 761px) {
+    body[data-mode="qts"] #qtsModule {
+        --qts-inline-gutter: 1px;
+        --qts-right-tools-space: 54px;
+    }
+
+    body[data-mode="qts"] {
+        --qts-detached-rail-width: 86px;
+        --qts-detached-rail-gap: 1px;
+    }
+
+    .qts-template-strip {
+        gap: 8px;
+        margin-bottom: 12px;
+    }
+
+    .qts-template-strip::after {
+        width: min(100%, 440px);
+    }
+
+    .qts-template-label {
+        min-height: 32px;
+        padding: 0 14px;
+        font-size: 0.64rem;
+        letter-spacing: 0.12em;
+    }
+
+    .qts-templates {
+        gap: 6px;
+    }
+
+    .qts-templates button {
+        min-height: 32px;
+        padding: 0 10px;
+        font-size: 0.74rem;
+    }
+
+    .qts-title {
+        padding: 7px 16px;
+        font-size: clamp(1.16rem, 2vw, 1.42rem);
+    }
+
+    .qts-grid-shell {
+        padding: 2px 4px 5px;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.97), rgba(248, 247, 243, 0.95));
+        box-shadow: 0 12px 24px rgba(15, 23, 42, 0.07);
+    }
+
+    #qtsGrid {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(248, 247, 243, 0.96));
+    }
+
+    .qts-controls {
+        gap: 12px;
+    }
+
+    .row-control {
+        min-width: 132px;
+        padding: 5px 8px;
+        grid-template-columns: 26px 1fr 26px;
+        gap: 6px;
+    }
+
+    .row-btn {
+        width: 26px;
+        height: 22px;
+    }
+
+    .row-label {
+        font-size: 0.54rem;
+        letter-spacing: 0.13em;
+    }
+
+    .qts-detached-block {
+        gap: 5px;
+        padding: 6px 4px 4px;
+    }
+
+    .qts-detached-block-label {
+        font-size: 0.5rem;
+        letter-spacing: 0.16em;
+    }
+
+    .qts-detached-week-button,
+    .qts-detached-toggle,
+    .qts-detached-summary-button {
+        min-height: 30px;
+        padding: 4px 5px;
+        font-size: 0.56rem;
+    }
+
+    #qtsGrid > div {
+        color: #202632;
+    }
+
+    #qtsGrid div[contenteditable="true"] {
+        font-size: 0.7rem;
+    }
+
+    .qts-header {
+        background: linear-gradient(180deg, rgba(222, 229, 244, 0.98), rgba(214, 223, 241, 0.96));
+    }
+
+    .qts-time {
+        background: linear-gradient(180deg, rgba(236, 244, 255, 0.98), rgba(225, 237, 252, 0.96));
+    }
+
+    .qts-interval {
+        background: linear-gradient(90deg, rgba(218, 240, 230, 0.92), rgba(227, 245, 237, 0.94));
     }
 }
 
@@ -4293,10 +4577,11 @@ body.dark .qts-week-context {
 
 .qts-grid-shell {
     position: relative;
-    width: min(100%, 1180px);
-    justify-self: start;
+    width: var(--qts-safe-inline-size);
+    max-width: var(--qts-safe-inline-size);
+    justify-self: center;
     margin: 0;
-    padding: 2px 6px 6px;
+    padding: 1px 2px 3px;
     border-radius: 0;
     background: var(--ui-informative-surface);
     border: 1px solid transparent;
@@ -4355,6 +4640,7 @@ body.dark .qts-week-overlay-future {
 #qtsGrid > div {
     min-height: 32px;
     border-radius: 0;
+    overflow: hidden;
 }
 
 #qtsGrid div[contenteditable="true"] {
@@ -4365,10 +4651,10 @@ body.dark .qts-week-overlay-future {
     text-align: left;
     font-size: 0.84rem;
     line-height: 1.08;
-    overflow-wrap: break-word;
-    word-break: normal;
-    white-space: normal;
-    hyphens: auto;
+    overflow-wrap: normal;
+    word-break: keep-all;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .qts-header {
@@ -4569,10 +4855,12 @@ body.dark .qts-template-label {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: min(100%, 1120px);
-    justify-self: start;
+    width: var(--qts-safe-inline-size);
+    max-width: var(--qts-safe-inline-size);
+    justify-self: center;
     margin-top: 10px;
     gap: 16px;
+    flex-wrap: wrap;
 }
 
 .row-control {
@@ -6220,7 +6508,13 @@ body.focus-mode #shortcutHint.is-visible {
     }
 
     body[data-mode="qts"] .side-modules {
-        right: 10px;
+        right: 2px;
+    }
+
+    body[data-mode="qts"] #qtsModule.module.active {
+        width: calc(100% - var(--qts-left-rail-space, 0px) - var(--qts-left-clearance, 0px) - var(--qts-right-tools-space, 0px) - var(--qts-right-edge-gap, 0px));
+        margin-left: calc(var(--qts-left-rail-space, 0px) + var(--qts-left-clearance, 0px));
+        margin-right: calc(var(--qts-right-tools-space, 0px) + var(--qts-right-edge-gap, 0px));
     }
 
     .side-group {
@@ -6254,6 +6548,16 @@ body.focus-mode #shortcutHint.is-visible {
 
     #ambientRoot .ambient-mini-meta {
         gap: 6px;
+    }
+}
+
+@media (max-width: 1100px) {
+    body[data-mode="qts"] .topbar,
+    body[data-mode="qts"] #moduleArea,
+    body[data-mode="qts"] .footer {
+        width: var(--content-width);
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -6308,6 +6612,147 @@ body.focus-mode #shortcutHint.is-visible {
     .footer {
         border-radius: 0;
         padding: 18px;
+    }
+
+    body[data-mode="qts"] #qtsModule {
+        --qts-inline-gutter: 0px;
+        --qts-left-rail-space: 0px;
+        --qts-right-tools-space: 0px;
+        --qts-content-max: 100%;
+    }
+
+    body[data-mode="qts"] #qtsModule.module.active {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #qtsModule .qts-stage-main {
+        width: 100%;
+        margin-left: 0;
+        padding-left: 0;
+        padding-right: 0;
+        justify-items: stretch;
+    }
+
+    #qtsModule .qts-grid-shell,
+    #qtsModule .qts-controls,
+    #qtsModule .qts-subject-summary {
+        width: 100%;
+        max-width: 100%;
+        justify-self: stretch;
+    }
+
+    .qts-template-strip {
+        gap: 8px;
+        margin-bottom: 12px;
+        width: min(100%, 100%);
+        justify-self: center;
+    }
+
+    .qts-template-strip::after {
+        width: min(100%, 360px);
+    }
+
+    .qts-template-label {
+        min-height: 30px;
+        padding: 0 12px;
+        font-size: 0.6rem;
+        letter-spacing: 0.1em;
+    }
+
+    .qts-templates {
+        gap: 6px;
+    }
+
+    .qts-templates button {
+        min-height: 30px;
+        padding: 0 9px;
+        font-size: 0.68rem;
+    }
+
+    .qts-title {
+        width: fit-content;
+        max-width: calc(100% - 10px);
+        justify-self: center;
+        margin-bottom: 4px;
+        padding: 7px 14px;
+        font-size: clamp(1.02rem, 4.8vw, 1.34rem);
+        text-align: center;
+    }
+
+    .qts-grid-shell {
+        padding: 2px 3px 4px;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.985), rgba(248, 247, 243, 0.97));
+        box-shadow: 0 10px 20px rgba(15, 23, 42, 0.06);
+    }
+
+    #qtsGrid {
+        padding: 1px;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.99), rgba(248, 247, 243, 0.975));
+    }
+
+    #qtsGrid > div {
+        min-height: 26px;
+        color: #1d2430;
+    }
+
+    #qtsGrid div[contenteditable="true"] {
+        padding: 3px 4px;
+        font-size: 0.64rem;
+        line-height: 1;
+    }
+
+    .qts-header {
+        min-height: 34px;
+        padding: 3px 3px 2px;
+        background: linear-gradient(180deg, rgba(223, 230, 245, 0.99), rgba(214, 223, 241, 0.97));
+    }
+
+    .qts-header-day {
+        font-size: 0.64rem;
+    }
+
+    .qts-header-date {
+        font-size: 0.48rem;
+    }
+
+    .qts-time {
+        min-height: 26px;
+        background: linear-gradient(180deg, rgba(236, 244, 255, 0.99), rgba(226, 237, 252, 0.97));
+    }
+
+    #qtsGrid .qts-time[contenteditable="true"] {
+        padding: 3px 3px;
+        font-size: 0.7rem;
+    }
+
+    .qts-interval {
+        min-height: 11px !important;
+        font-size: 0.56rem;
+        background: linear-gradient(90deg, rgba(220, 241, 232, 0.94), rgba(228, 245, 237, 0.96));
+    }
+
+    .qts-controls {
+        margin-top: 8px;
+        gap: 8px;
+    }
+
+    .row-control {
+        flex: 1 1 180px;
+        min-width: min(180px, calc(50% - 4px));
+        padding: 5px 8px;
+        grid-template-columns: 24px 1fr 24px;
+        gap: 6px;
+    }
+
+    .row-label {
+        font-size: 0.52rem;
+        letter-spacing: 0.12em;
+    }
+
+    .row-btn {
+        width: 24px;
+        height: 22px;
     }
 
     .time-display {
@@ -6493,5 +6938,69 @@ body.focus-mode #shortcutHint.is-visible {
         bottom: 160px;
         width: 92px;
         height: 92px;
+    }
+}
+
+@media (max-width: 520px) {
+    .qts-template-strip {
+        max-width: 100%;
+    }
+
+    .qts-templates {
+        gap: 5px;
+    }
+
+    .qts-templates button {
+        min-height: 28px;
+        padding: 0 8px;
+        font-size: 0.62rem;
+    }
+
+    .qts-template-label {
+        min-height: 28px;
+        padding: 0 10px;
+        font-size: 0.56rem;
+    }
+
+    .qts-title {
+        width: fit-content;
+        max-width: calc(100% - 8px);
+        justify-self: center;
+        font-size: clamp(0.94rem, 4.4vw, 1.14rem);
+        padding: 6px 12px;
+    }
+
+    #qtsGrid > div {
+        min-height: 24px;
+    }
+
+    #qtsGrid div[contenteditable="true"] {
+        font-size: 0.56rem;
+        padding: 2px 3px;
+    }
+
+    .qts-header {
+        min-height: 31px;
+        padding: 2px 2px 1px;
+    }
+
+    .qts-header-day {
+        font-size: 0.52rem;
+    }
+
+    .qts-header-date {
+        font-size: 0.38rem;
+    }
+
+    #qtsGrid .qts-time[contenteditable="true"] {
+        font-size: 0.56rem;
+    }
+
+    .qts-interval {
+        font-size: 0.5rem;
+    }
+
+    .row-control {
+        min-width: 100%;
     }
 }
