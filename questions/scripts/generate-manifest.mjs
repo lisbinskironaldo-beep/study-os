@@ -75,7 +75,7 @@ async function buildTopicMetaById() {
             "utf8"
         );
         const match = source.match(
-            /\bid\s*:\s*["'`]([^"'`]+)["'`]/
+            /(?:^|[\s{,])["'`]?id["'`]?\s*:\s*["'`]([^"'`]+)["'`]/m
         );
 
         if (!match) {

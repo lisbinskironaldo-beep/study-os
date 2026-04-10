@@ -1,4 +1,4 @@
-﻿export const matematicaAplicadaEnem = {
+export const matematicaAplicadaEnem = {
   id: "matematica_matematica_aplicada_enem",
   materia: "Matematica",
   serie: [3],
