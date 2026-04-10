@@ -41,7 +41,10 @@ export const gramaticaClassesDePalavras = {
       "distinguir classes de palavras com comportamento semelhante",
       "analisar o valor da palavra de acordo com o contexto",
       "relacionar exemplos e definições das classes de palavras"
-    ]
+    ],
+    "auditado": true,
+    "auditadoEm": "2026-04-10",
+    "auditoriaTipo": "varredura-mais-profunda"
   },
   "questoes": [
     {
@@ -4649,7 +4652,7 @@ export const gramaticaClassesDePalavras = {
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante leu \"Comi meia ma?a no intervalo.\" e disse que a palavra \"meia\" é Substantivo. Qual avaliação está correta?",
+      "enunciado": "Um estudante leu \"Comi meia maçã no intervalo.\" e disse que a palavra \"meia\" é Substantivo. Qual avaliação está correta?",
       "opcoes": [
         "O estudante errou, porque o contexto mostra que a palavra é Numeral.",
         "O estudante acertou, porque Numeral e Substantivo são equivalentes.",
@@ -5029,7 +5032,7 @@ export const gramaticaClassesDePalavras = {
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual interpretação explica melhor a classificação de \"meia\" em \"Comi meia ma?a no intervalo.\"?",
+      "enunciado": "Qual interpretação explica melhor a classificação de \"meia\" em \"Comi meia maçã no intervalo.\"?",
       "opcoes": [
         "Aqui meia indica fracao, portanto funciona como numeral.",
         "A palavra mantem sempre a mesma classe, independentemente do uso.",
@@ -5409,7 +5412,7 @@ export const gramaticaClassesDePalavras = {
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Na frase \"Comi meia ma?a no intervalo.\", a palavra \"meia\" pertence a qual classe gramatical?",
+      "enunciado": "Na frase \"Comi meia maçã no intervalo.\", a palavra \"meia\" pertence a qual classe gramatical?",
       "opcoes": [
         "Numeral",
         "Substantivo",

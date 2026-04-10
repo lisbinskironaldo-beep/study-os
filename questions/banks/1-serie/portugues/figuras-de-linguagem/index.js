@@ -43,7 +43,10 @@ export const figurasDeLinguagem = {
       "interpretar efeitos de sentido produzidos por figuras de linguagem",
       "relacionar exemplos e definições de figuras de linguagem",
       "analisar usos de figuras de linguagem em pequenos textos"
-    ]
+    ],
+    "auditado": true,
+    "auditadoEm": "2026-04-10",
+    "auditoriaTipo": "varredura-rapida"
   },
   "questoes": [
     {

@@ -1,22 +1,22 @@
 export const analiseCombinatoria = {
-  id: "matematica_analise_combinatoria",
-  materia: "Matemática",
-  serie: [
+  "id": "matematica_analise_combinatoria",
+  "materia": "Matemática",
+  "serie": [
     3
   ],
-  topico: "Análise combinatória",
-  metadados: {
-    disciplinaId: "matematica",
-    base: "ESCOLAR",
-    eixo: "Combinatoria",
-    frente: "Contagem",
-    searchAliases: [
+  "topico": "Análise combinatória",
+  "metadados": {
+    "disciplinaId": "matematica",
+    "base": "ESCOLAR",
+    "eixo": "Combinatoria",
+    "frente": "Contagem",
+    "searchAliases": [
       "principio fundamental da contagem",
       "fatorial",
       "arranjos e combinacoes",
       "permutacoes"
     ],
-    subtopicosBase: [
+    "subtopicosBase": [
       "PFC",
       "Fatorial",
       "Permutacao simples",
@@ -34,7573 +34,7576 @@ export const analiseCombinatoria = {
       "Erro comum",
       "Interpretacao indireta"
     ],
-    habilidadesBase: [
+    "habilidadesBase": [
       "aplicar principio fundamental da contagem",
       "calcular fatorial",
       "interpretar problemas de contagem simples"
-    ]
+    ],
+    "auditado": true,
+    "auditadoEm": "2026-04-10",
+    "auditoriaTipo": "varredura-mais-profunda"
   },
-  questoes: [
+  "questoes": [
     {
-      id: "ac_001",
-      serie: [
+      "id": "ac_001",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "PFC",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 1,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Uma pessoa tem 3 camisetas e 2 calças. Quantas combinações diferentes de roupas ela pode formar?",
-      opcoes: [
-        "5",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "PFC",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 1,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma pessoa tem 3 camisetas e 2 calças. Quantas combinações diferentes de roupas ela pode formar?",
+      "opcoes": [
         "6",
+        "5",
         "3",
         "2"
       ],
-      correta: "6",
-      comentario: "Multiplica-se as opções: 3 × 2 = 6.",
-      tempoEstimado: 20,
-      tags: [
+      "correta": "6",
+      "comentario": "Multiplica-se as opções: 3 × 2 = 6.",
+      "tempoEstimado": 20,
+      "tags": [
         "pfc",
         "basico"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_002",
-      serie: [
+      "id": "ac_002",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "PFC",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 1,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Um sorvete pode ser montado com 4 sabores e 3 tipos de cobertura. Quantas opções diferentes existem?",
-      opcoes: [
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "PFC",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 1,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Um sorvete pode ser montado com 4 sabores e 3 tipos de cobertura. Quantas opções diferentes existem?",
+      "opcoes": [
         "7",
         "12",
         "4",
         "3"
       ],
-      correta: "12",
-      comentario: "Multiplica-se: 4 × 3 = 12 combinações.",
-      tempoEstimado: 20,
-      tags: [
+      "correta": "12",
+      "comentario": "Multiplica-se: 4 × 3 = 12 combinações.",
+      "tempoEstimado": 20,
+      "tags": [
         "pfc"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_003",
-      serie: [
+      "id": "ac_003",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Fatorial",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 1,
-      cognicao: "memorizacao",
-      tipo: "multipla_escolha",
-      enunciado: "Qual é o valor de 4! ?",
-      opcoes: [
-        "24",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Fatorial",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 1,
+      "cognicao": "memorizacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual é o valor de 4! ?",
+      "opcoes": [
         "16",
         "8",
+        "24",
         "12"
       ],
-      correta: "24",
-      comentario: "4! = 4 × 3 × 2 × 1 = 24.",
-      tempoEstimado: 15,
-      tags: [
+      "correta": "24",
+      "comentario": "4! = 4 × 3 × 2 × 1 = 24.",
+      "tempoEstimado": 15,
+      "tags": [
         "fatorial"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular fatorial"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_004",
-      serie: [
+      "id": "ac_004",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Fatorial",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 1,
-      cognicao: "memorizacao",
-      tipo: "multipla_escolha",
-      enunciado: "Qual é o valor de 5! ?",
-      opcoes: [
-        "120",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Fatorial",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 1,
+      "cognicao": "memorizacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual é o valor de 5! ?",
+      "opcoes": [
         "60",
         "20",
-        "25"
+        "25",
+        "120"
       ],
-      correta: "120",
-      comentario: "5! = 5 × 4 × 3 × 2 × 1 = 120.",
-      tempoEstimado: 15,
-      tags: [
+      "correta": "120",
+      "comentario": "5! = 5 × 4 × 3 × 2 × 1 = 120.",
+      "tempoEstimado": 15,
+      "tags": [
         "fatorial"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular fatorial"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_005",
-      serie: [
+      "id": "ac_005",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "PFC",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 1,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Uma senha é formada por 2 letras e 3 números. Sabendo que há 26 letras e 10 números, quantas senhas podem ser formadas?",
-      opcoes: [
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "PFC",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 1,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma senha é formada por 2 letras e 3 números. Sabendo que há 26 letras e 10 números, quantas senhas podem ser formadas?",
+      "opcoes": [
+        "67600",
         "26000",
         "52000",
-        "67600",
         "78000"
       ],
-      correta: "67600",
-      comentario: "26² × 10³ = 676 × 1000 = 67600.",
-      tempoEstimado: 25,
-      tags: [
+      "correta": "67600",
+      "comentario": "26² × 10³ = 676 × 1000 = 67600.",
+      "tempoEstimado": 25,
+      "tags": [
         "pfc",
         "senha"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_006",
-      serie: [
+      "id": "ac_006",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "PFC",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 1,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Uma pessoa pode escolher entre 2 entradas e 3 pratos principais. Quantas refeições diferentes pode montar?",
-      opcoes: [
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "PFC",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 1,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma pessoa pode escolher entre 2 entradas e 3 pratos principais. Quantas refeições diferentes pode montar?",
+      "opcoes": [
         "5",
         "6",
         "3",
         "2"
       ],
-      correta: "6",
-      comentario: "2 × 3 = 6 possibilidades.",
-      tempoEstimado: 20,
-      tags: [
+      "correta": "6",
+      "comentario": "2 × 3 = 6 possibilidades.",
+      "tempoEstimado": 20,
+      "tags": [
         "pfc"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_007",
-      serie: [
+      "id": "ac_007",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "PFC",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 1,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Uma placa possui 2 letras seguidas de 2 números. Quantas placas podem ser formadas?",
-      opcoes: [
-        "67600",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "PFC",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 1,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma placa possui 2 letras seguidas de 2 números. Quantas placas podem ser formadas?",
+      "opcoes": [
         "6760",
         "2600",
+        "67600",
         "26000"
       ],
-      correta: "67600",
-      comentario: "26² × 10² = 676 × 100 = 67600.",
-      tempoEstimado: 25,
-      tags: [
+      "correta": "67600",
+      "comentario": "26² × 10² = 676 × 100 = 67600.",
+      "tempoEstimado": 25,
+      "tags": [
         "pfc",
         "placas"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_008",
-      serie: [
+      "id": "ac_008",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Fatorial",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 1,
-      cognicao: "memorizacao",
-      tipo: "multipla_escolha",
-      enunciado: "Qual é o valor de 3! ?",
-      opcoes: [
-        "6",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Fatorial",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 1,
+      "cognicao": "memorizacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual é o valor de 3! ?",
+      "opcoes": [
         "3",
         "9",
-        "12"
+        "12",
+        "6"
       ],
-      correta: "6",
-      comentario: "3! = 3 × 2 × 1 = 6.",
-      tempoEstimado: 15,
-      tags: [
+      "correta": "6",
+      "comentario": "3! = 3 × 2 × 1 = 6. Assim, a resposta correta ? 6.",
+      "tempoEstimado": 15,
+      "tags": [
         "fatorial"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular fatorial"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_009",
-      serie: [
+      "id": "ac_009",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Fatorial",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 1,
-      cognicao: "memorizacao",
-      tipo: "multipla_escolha",
-      enunciado: "Qual é o valor de 6! ?",
-      opcoes: [
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Fatorial",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 1,
+      "cognicao": "memorizacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual é o valor de 6! ?",
+      "opcoes": [
         "720",
         "360",
         "120",
         "60"
       ],
-      correta: "720",
-      comentario: "6! = 6 × 5 × 4 × 3 × 2 × 1 = 720.",
-      tempoEstimado: 15,
-      tags: [
+      "correta": "720",
+      "comentario": "6! = 6 × 5 × 4 × 3 × 2 × 1 = 720.",
+      "tempoEstimado": 15,
+      "tags": [
         "fatorial"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular fatorial"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_010",
-      serie: [
+      "id": "ac_010",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "PFC",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 1,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Uma senha tem 1 letra e 2 números. Quantas senhas diferentes podem ser formadas?",
-      opcoes: [
-        "2600",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "PFC",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 1,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma senha tem 1 letra e 2 números. Quantas senhas diferentes podem ser formadas?",
+      "opcoes": [
         "520",
+        "2600",
         "100",
         "200"
       ],
-      correta: "2600",
-      comentario: "Há 26 escolhas para a letra e 10 para cada algarismo: 26 × 10 × 10 = 2600.",
-      tempoEstimado: 25,
-      tags: [
+      "correta": "2600",
+      "comentario": "Há 26 escolhas para a letra e 10 para cada algarismo: 26 × 10 × 10 = 2600.",
+      "tempoEstimado": 25,
+      "tags": [
         "pfc"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_011",
-      serie: [
+      "id": "ac_011",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "PFC",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 2,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Uma pessoa tem 4 camisetas, 3 calças e 2 sapatos. Quantos looks diferentes pode formar?",
-      opcoes: [
-        "24",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "PFC",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 2,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma pessoa tem 4 camisetas, 3 calças e 2 sapatos. Quantos looks diferentes pode formar?",
+      "opcoes": [
         "12",
         "9",
+        "24",
         "6"
       ],
-      correta: "24",
-      comentario: "4 × 3 × 2 = 24.",
-      tempoEstimado: 20,
-      tags: [
+      "correta": "24",
+      "comentario": "4 × 3 × 2 = 24. Assim, a resposta correta ? 24.",
+      "tempoEstimado": 20,
+      "tags": [
         "pfc"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_012",
-      serie: [
+      "id": "ac_012",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Fatorial",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 2,
-      cognicao: "memorizacao",
-      tipo: "multipla_escolha",
-      enunciado: "Qual é o valor de 2! ?",
-      opcoes: [
-        "2",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Fatorial",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 2,
+      "cognicao": "memorizacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual é o valor de 2! ?",
+      "opcoes": [
         "1",
         "4",
-        "3"
+        "3",
+        "2"
       ],
-      correta: "2",
-      comentario: "2! = 2 × 1 = 2.",
-      tempoEstimado: 10,
-      tags: [
+      "correta": "2",
+      "comentario": "2! = 2 × 1 = 2. Assim, a resposta correta ? 2.",
+      "tempoEstimado": 10,
+      "tags": [
         "fatorial"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular fatorial"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_013",
-      serie: [
+      "id": "ac_013",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "PFC",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 2,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Um restaurante oferece 3 tipos de suco e 4 sobremesas. Quantas combinações são possíveis?",
-      opcoes: [
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "PFC",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 2,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Um restaurante oferece 3 tipos de suco e 4 sobremesas. Quantas combinações são possíveis?",
+      "opcoes": [
         "12",
         "7",
         "3",
         "4"
       ],
-      correta: "12",
-      comentario: "3 × 4 = 12.",
-      tempoEstimado: 20,
-      tags: [
+      "correta": "12",
+      "comentario": "3 × 4 = 12. Assim, a resposta correta ? 12.",
+      "tempoEstimado": 20,
+      "tags": [
         "pfc"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_014",
-      serie: [
+      "id": "ac_014",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Fatorial",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 2,
-      cognicao: "memorizacao",
-      tipo: "multipla_escolha",
-      enunciado: "Qual é o valor de 7! ?",
-      opcoes: [
-        "5040",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Fatorial",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 2,
+      "cognicao": "memorizacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual é o valor de 7! ?",
+      "opcoes": [
         "720",
+        "5040",
         "840",
         "120"
       ],
-      correta: "5040",
-      comentario: "7! = 5040.",
-      tempoEstimado: 15,
-      tags: [
+      "correta": "5040",
+      "comentario": "7! = 5040. Assim, a resposta correta ? 5040.",
+      "tempoEstimado": 15,
+      "tags": [
         "fatorial"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular fatorial"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_015",
-      serie: [
+      "id": "ac_015",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "PFC",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 2,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Uma pessoa pode escolher 5 sabores de pizza e 2 tamanhos. Quantas opções existem?",
-      opcoes: [
-        "10",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "PFC",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 2,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma pessoa pode escolher 5 sabores de pizza e 2 tamanhos. Quantas opções existem?",
+      "opcoes": [
         "7",
         "5",
+        "10",
         "2"
       ],
-      correta: "10",
-      comentario: "5 × 2 = 10.",
-      tempoEstimado: 20,
-      tags: [
+      "correta": "10",
+      "comentario": "5 × 2 = 10. Assim, a resposta correta ? 10.",
+      "tempoEstimado": 20,
+      "tags": [
         "pfc"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_016",
-      serie: [
+      "id": "ac_016",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "PFC",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 2,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Uma senha tem 3 letras. Quantas senhas diferentes podem ser formadas?",
-      opcoes: [
-        "17576",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "PFC",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 2,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma senha tem 3 letras. Quantas senhas diferentes podem ser formadas?",
+      "opcoes": [
         "676",
         "15600",
-        "26000"
+        "26000",
+        "17576"
       ],
-      correta: "17576",
-      comentario: "26³ = 17576.",
-      tempoEstimado: 25,
-      tags: [
+      "correta": "17576",
+      "comentario": "26³ = 17576. Assim, a resposta correta ? 17576.",
+      "tempoEstimado": 25,
+      "tags": [
         "pfc"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_017",
-      serie: [
+      "id": "ac_017",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Fatorial",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 2,
-      cognicao: "memorizacao",
-      tipo: "multipla_escolha",
-      enunciado: "Qual é o valor de 1! ?",
-      opcoes: [
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Fatorial",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 2,
+      "cognicao": "memorizacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual é o valor de 1! ?",
+      "opcoes": [
         "1",
         "0",
         "2",
         "10"
       ],
-      correta: "1",
-      comentario: "Por definição, 1! = 1.",
-      tempoEstimado: 10,
-      tags: [
+      "correta": "1",
+      "comentario": "Por definição, 1! = 1.",
+      "tempoEstimado": 10,
+      "tags": [
         "fatorial"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular fatorial"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_018",
-      serie: [
+      "id": "ac_018",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "PFC",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 2,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Uma placa tem 3 letras e 1 número. Quantas combinações são possíveis?",
-      opcoes: [
-        "175760",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "PFC",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 2,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma placa tem 3 letras e 1 número. Quantas combinações são possíveis?",
+      "opcoes": [
         "17576",
+        "175760",
         "26000",
         "2600"
       ],
-      correta: "175760",
-      comentario: "26³ × 10 = 17576 × 10 = 175760.",
-      tempoEstimado: 25,
-      tags: [
+      "correta": "175760",
+      "comentario": "26³ × 10 = 17576 × 10 = 175760.",
+      "tempoEstimado": 25,
+      "tags": [
         "pfc"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_019",
-      serie: [
+      "id": "ac_019",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "PFC",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 2,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Uma refeição possui 2 bebidas, 3 pratos e 2 sobremesas. Quantas combinações existem?",
-      opcoes: [
-        "12",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "PFC",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 2,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma refeição possui 2 bebidas, 3 pratos e 2 sobremesas. Quantas combinações existem?",
+      "opcoes": [
         "7",
         "10",
+        "12",
         "6"
       ],
-      correta: "12",
-      comentario: "2 × 3 × 2 = 12.",
-      tempoEstimado: 20,
-      tags: [
+      "correta": "12",
+      "comentario": "2 × 3 × 2 = 12. Assim, a resposta correta ? 12.",
+      "tempoEstimado": 20,
+      "tags": [
         "pfc"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_020",
-      serie: [
+      "id": "ac_020",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Fatorial",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 2,
-      cognicao: "memorizacao",
-      tipo: "multipla_escolha",
-      enunciado: "Qual é o valor de 0! ?",
-      opcoes: [
-        "1",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Fatorial",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 2,
+      "cognicao": "memorizacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual é o valor de 0! ?",
+      "opcoes": [
         "0",
         "2",
-        "indefinido"
+        "indefinido",
+        "1"
       ],
-      correta: "1",
-      comentario: "Por definição, 0! = 1.",
-      tempoEstimado: 10,
-      tags: [
+      "correta": "1",
+      "comentario": "Por definição, 0! = 1.",
+      "tempoEstimado": 10,
+      "tags": [
         "fatorial"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular fatorial"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_021",
-      serie: [
+      "id": "ac_021",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "PFC",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 3,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Uma senha tem 2 letras e 1 número. Quantas possibilidades existem?",
-      opcoes: [
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "PFC",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 3,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma senha tem 2 letras e 1 número. Quantas possibilidades existem?",
+      "opcoes": [
         "6760",
         "260",
         "520",
         "1000"
       ],
-      correta: "6760",
-      comentario: "26² × 10 = 676 × 10 = 6760.",
-      tempoEstimado: 25,
-      tags: [
+      "correta": "6760",
+      "comentario": "26² × 10 = 676 × 10 = 6760.",
+      "tempoEstimado": 25,
+      "tags": [
         "pfc"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_022",
-      serie: [
+      "id": "ac_022",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "PFC",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 3,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Uma pessoa pode escolher entre 3 chapéus e 4 camisetas. Quantas combinações são possíveis?",
-      opcoes: [
-        "12",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "PFC",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 3,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma pessoa pode escolher entre 3 chapéus e 4 camisetas. Quantas combinações são possíveis?",
+      "opcoes": [
         "7",
+        "12",
         "3",
         "4"
       ],
-      correta: "12",
-      comentario: "3 × 4 = 12.",
-      tempoEstimado: 20,
-      tags: [
+      "correta": "12",
+      "comentario": "3 × 4 = 12. Assim, a resposta correta ? 12.",
+      "tempoEstimado": 20,
+      "tags": [
         "pfc"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_023",
-      serie: [
+      "id": "ac_023",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Fatorial",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 3,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Qual é o valor de 3! + 2! ?",
-      opcoes: [
-        "8",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Fatorial",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 3,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual é o valor de 3! + 2! ?",
+      "opcoes": [
         "6",
         "5",
+        "8",
         "10"
       ],
-      correta: "8",
-      comentario: "3! = 6 e 2! = 2, então soma = 8.",
-      tempoEstimado: 20,
-      tags: [
+      "correta": "8",
+      "comentario": "3! = 6 e 2! = 2, então soma = 8.",
+      "tempoEstimado": 20,
+      "tags": [
         "fatorial"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular fatorial"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_024",
-      serie: [
+      "id": "ac_024",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "PFC",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 3,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Uma senha possui 1 letra, 1 número e 1 símbolo (5 opções). Quantas senhas podem ser formadas?",
-      opcoes: [
-        "1300",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "PFC",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 3,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma senha possui 1 letra, 1 número e 1 símbolo (5 opções). Quantas senhas podem ser formadas?",
+      "opcoes": [
         "260",
         "500",
-        "650"
+        "650",
+        "1300"
       ],
-      correta: "1300",
-      comentario: "26 × 10 × 5 = 1300.",
-      tempoEstimado: 25,
-      tags: [
+      "correta": "1300",
+      "comentario": "26 × 10 × 5 = 1300. Assim, a resposta correta ? 1300.",
+      "tempoEstimado": 25,
+      "tags": [
         "pfc"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_025",
-      serie: [
+      "id": "ac_025",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "PFC",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 3,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Uma refeição inclui 3 entradas, 2 pratos e 4 sobremesas. Quantas combinações são possíveis?",
-      opcoes: [
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "PFC",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 3,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma refeição inclui 3 entradas, 2 pratos e 4 sobremesas. Quantas combinações são possíveis?",
+      "opcoes": [
         "24",
         "9",
         "12",
         "6"
       ],
-      correta: "24",
-      comentario: "3 × 2 × 4 = 24.",
-      tempoEstimado: 20,
-      tags: [
+      "correta": "24",
+      "comentario": "3 × 2 × 4 = 24. Assim, a resposta correta ? 24.",
+      "tempoEstimado": 20,
+      "tags": [
         "pfc"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_026",
-      serie: [
+      "id": "ac_026",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "PFC",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 3,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Uma pessoa pode escolher 2 tipos de pão e 3 recheios. Quantos sanduíches diferentes pode montar?",
-      opcoes: [
-        "6",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "PFC",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 3,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma pessoa pode escolher 2 tipos de pão e 3 recheios. Quantos sanduíches diferentes pode montar?",
+      "opcoes": [
         "5",
+        "6",
         "3",
         "2"
       ],
-      correta: "6",
-      comentario: "2 × 3 = 6 combinações.",
-      tempoEstimado: 20,
-      tags: [
+      "correta": "6",
+      "comentario": "2 × 3 = 6 combinações.",
+      "tempoEstimado": 20,
+      "tags": [
         "pfc"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_027",
-      serie: [
+      "id": "ac_027",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Fatorial",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 3,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Qual é o valor de 4! + 3! ?",
-      opcoes: [
-        "30",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Fatorial",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 3,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual é o valor de 4! + 3! ?",
+      "opcoes": [
         "24",
         "18",
+        "30",
         "36"
       ],
-      correta: "30",
-      comentario: "4! = 24 e 3! = 6 → 30.",
-      tempoEstimado: 20,
-      tags: [
+      "correta": "30",
+      "comentario": "4! = 24 e 3! = 6 → 30.",
+      "tempoEstimado": 20,
+      "tags": [
         "fatorial"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular fatorial"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_028",
-      serie: [
+      "id": "ac_028",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "PFC",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 3,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Uma senha é formada por 2 letras diferentes seguidas de 1 número. Quantas senhas podem ser formadas?",
-      opcoes: [
-        "6500",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "PFC",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 3,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma senha é formada por 2 letras diferentes seguidas de 1 número. Quantas senhas podem ser formadas?",
+      "opcoes": [
         "6760",
         "2600",
-        "5200"
+        "5200",
+        "6500"
       ],
-      correta: "6500",
-      comentario: "26 × 25 × 10 = 6500.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "6500",
+      "comentario": "26 × 25 × 10 = 6500. Assim, a resposta correta ? 6500.",
+      "tempoEstimado": 30,
+      "tags": [
         "pfc",
         "restricao"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_029",
-      serie: [
+      "id": "ac_029",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "PFC",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 3,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Uma senha tem 3 números distintos. Quantas possibilidades existem?",
-      opcoes: [
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "PFC",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 3,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma senha tem 3 números distintos. Quantas possibilidades existem?",
+      "opcoes": [
         "720",
         "1000",
         "900",
         "840"
       ],
-      correta: "720",
-      comentario: "10 × 9 × 8 = 720.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "720",
+      "comentario": "10 × 9 × 8 = 720. Assim, a resposta correta ? 720.",
+      "tempoEstimado": 30,
+      "tags": [
         "pfc",
         "restricao"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_030",
-      serie: [
+      "id": "ac_030",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Permutacao simples",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 3,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "De quantas formas diferentes 3 pessoas podem se sentar em uma fila?",
-      opcoes: [
-        "6",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Permutacao simples",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 3,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "De quantas formas diferentes 3 pessoas podem se sentar em uma fila?",
+      "opcoes": [
         "3",
+        "6",
         "9",
         "12"
       ],
-      correta: "6",
-      comentario: "3! = 6.",
-      tempoEstimado: 25,
-      tags: [
+      "correta": "6",
+      "comentario": "3! = 6. Assim, a resposta correta ? 6.",
+      "tempoEstimado": 25,
+      "tags": [
         "permutacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_031",
-      serie: [
+      "id": "ac_031",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Permutacao simples",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas formas diferentes 4 pessoas podem se organizar em fila?",
-      opcoes: [
-        "24",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Permutacao simples",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas formas diferentes 4 pessoas podem se organizar em fila?",
+      "opcoes": [
         "16",
         "12",
+        "24",
         "20"
       ],
-      correta: "24",
-      comentario: "4! = 24.",
-      tempoEstimado: 25,
-      tags: [
+      "correta": "24",
+      "comentario": "4! = 24. Assim, a resposta correta ? 24.",
+      "tempoEstimado": 25,
+      "tags": [
         "permutacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_032",
-      serie: [
+      "id": "ac_032",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Permutacao simples",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas maneiras diferentes 5 livros distintos podem ser organizados em uma estante?",
-      opcoes: [
-        "120",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Permutacao simples",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas maneiras diferentes 5 livros distintos podem ser organizados em uma estante?",
+      "opcoes": [
         "60",
         "25",
-        "100"
+        "100",
+        "120"
       ],
-      correta: "120",
-      comentario: "5! = 120.",
-      tempoEstimado: 25,
-      tags: [
+      "correta": "120",
+      "comentario": "5! = 120. Assim, a resposta correta ? 120.",
+      "tempoEstimado": 25,
+      "tags": [
         "permutacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_033",
-      serie: [
+      "id": "ac_033",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "PFC",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Uma placa tem 2 letras distintas e 2 números distintos. Quantas placas são possíveis?",
-      opcoes: [
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "PFC",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma placa tem 2 letras distintas e 2 números distintos. Quantas placas são possíveis?",
+      "opcoes": [
         "58500",
         "67600",
         "65000",
         "54000"
       ],
-      correta: "58500",
-      comentario: "26 × 25 × 10 × 9 = 58500.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "58500",
+      "comentario": "26 × 25 × 10 × 9 = 58500.",
+      "tempoEstimado": 35,
+      "tags": [
         "pfc"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_034",
-      serie: [
+      "id": "ac_034",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Permutacao simples",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas palavras distintas podem ser formadas com as letras ABC?",
-      opcoes: [
-        "6",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Permutacao simples",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas palavras distintas podem ser formadas com as letras ABC?",
+      "opcoes": [
         "3",
+        "6",
         "9",
         "12"
       ],
-      correta: "6",
-      comentario: "3! = 6.",
-      tempoEstimado: 20,
-      tags: [
+      "correta": "6",
+      "comentario": "3! = 6. Assim, a resposta correta ? 6.",
+      "tempoEstimado": 20,
+      "tags": [
         "permutacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_035",
-      serie: [
+      "id": "ac_035",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Permutacao simples",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas palavras diferentes podem ser formadas com as letras ABCD?",
-      opcoes: [
-        "24",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Permutacao simples",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas palavras diferentes podem ser formadas com as letras ABCD?",
+      "opcoes": [
         "12",
         "16",
+        "24",
         "20"
       ],
-      correta: "24",
-      comentario: "4! = 24.",
-      tempoEstimado: 25,
-      tags: [
+      "correta": "24",
+      "comentario": "4! = 24. Assim, a resposta correta ? 24.",
+      "tempoEstimado": 25,
+      "tags": [
         "permutacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_036",
-      serie: [
+      "id": "ac_036",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Permutacao simples",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas formas diferentes 5 pessoas podem se sentar em uma fila?",
-      opcoes: [
-        "120",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Permutacao simples",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas formas diferentes 5 pessoas podem se sentar em uma fila?",
+      "opcoes": [
         "60",
         "25",
-        "100"
+        "100",
+        "120"
       ],
-      correta: "120",
-      comentario: "5! = 120.",
-      tempoEstimado: 25,
-      tags: [
+      "correta": "120",
+      "comentario": "5! = 120. Assim, a resposta correta ? 120.",
+      "tempoEstimado": 25,
+      "tags": [
         "permutacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_037",
-      serie: [
+      "id": "ac_037",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Permutacao simples",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas formas diferentes as letras XYZ podem ser organizadas?",
-      opcoes: [
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Permutacao simples",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas formas diferentes as letras XYZ podem ser organizadas?",
+      "opcoes": [
         "6",
         "3",
         "9",
         "12"
       ],
-      correta: "6",
-      comentario: "3! = 6.",
-      tempoEstimado: 20,
-      tags: [
+      "correta": "6",
+      "comentario": "3! = 6. Assim, a resposta correta ? 6.",
+      "tempoEstimado": 20,
+      "tags": [
         "permutacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_038",
-      serie: [
+      "id": "ac_038",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Permutacao simples",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas maneiras diferentes 6 pessoas podem formar uma fila?",
-      opcoes: [
-        "720",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Permutacao simples",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas maneiras diferentes 6 pessoas podem formar uma fila?",
+      "opcoes": [
         "360",
+        "720",
         "120",
         "600"
       ],
-      correta: "720",
-      comentario: "6! = 720.",
-      tempoEstimado: 25,
-      tags: [
+      "correta": "720",
+      "comentario": "6! = 720. Assim, a resposta correta ? 720.",
+      "tempoEstimado": 25,
+      "tags": [
         "permutacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_039",
-      serie: [
+      "id": "ac_039",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "PFC",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Uma senha possui 2 letras distintas e 2 números com repetição permitida. Quantas senhas são possíveis?",
-      opcoes: [
-        "65000",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "PFC",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma senha possui 2 letras distintas e 2 números com repetição permitida. Quantas senhas são possíveis?",
+      "opcoes": [
         "67600",
         "58500",
+        "65000",
         "52000"
       ],
-      correta: "65000",
-      comentario: "26 × 25 × 10 × 10 = 65000.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "65000",
+      "comentario": "26 × 25 × 10 × 10 = 65000.",
+      "tempoEstimado": 35,
+      "tags": [
         "pfc"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_040",
-      serie: [
+      "id": "ac_040",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "PFC",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Uma pessoa quer montar um prato com 2 escolhas entre 4 opções diferentes (com ordem). Quantas possibilidades existem?",
-      opcoes: [
-        "12",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "PFC",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma pessoa quer montar um prato com 2 escolhas entre 4 opções diferentes (com ordem). Quantas possibilidades existem?",
+      "opcoes": [
         "16",
         "8",
-        "20"
+        "20",
+        "12"
       ],
-      correta: "12",
-      comentario: "4 × 3 = 12 (ordem importa).",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "12",
+      "comentario": "4 × 3 = 12 (ordem importa).",
+      "tempoEstimado": 30,
+      "tags": [
         "pfc",
         "ordem"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_041",
-      serie: [
+      "id": "ac_041",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Permutacao simples",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas palavras diferentes podem ser formadas com as letras PQRS?",
-      opcoes: [
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Permutacao simples",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas palavras diferentes podem ser formadas com as letras PQRS?",
+      "opcoes": [
         "24",
         "16",
         "12",
         "20"
       ],
-      correta: "24",
-      comentario: "4! = 24.",
-      tempoEstimado: 25,
-      tags: [
+      "correta": "24",
+      "comentario": "4! = 24. Assim, a resposta correta ? 24.",
+      "tempoEstimado": 25,
+      "tags": [
         "permutacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_042",
-      serie: [
+      "id": "ac_042",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "PFC",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Uma senha possui 3 letras distintas e 1 número. Quantas possibilidades existem?",
-      opcoes: [
-        "156000",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "PFC",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma senha possui 3 letras distintas e 1 número. Quantas possibilidades existem?",
+      "opcoes": [
         "175760",
+        "156000",
         "140000",
         "130000"
       ],
-      correta: "156000",
-      comentario: "26 × 25 × 24 × 10 = 156000.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "156000",
+      "comentario": "26 × 25 × 24 × 10 = 156000.",
+      "tempoEstimado": 35,
+      "tags": [
         "pfc"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_043",
-      serie: [
+      "id": "ac_043",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "PFC",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas sequências de 3 números distintos podem ser formadas com os dígitos de 1 a 5?",
-      opcoes: [
-        "60",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "PFC",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas sequências de 3 números distintos podem ser formadas com os dígitos de 1 a 5?",
+      "opcoes": [
         "125",
         "30",
+        "60",
         "100"
       ],
-      correta: "60",
-      comentario: "5 × 4 × 3 = 60.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "60",
+      "comentario": "5 × 4 × 3 = 60. Assim, a resposta correta ? 60.",
+      "tempoEstimado": 30,
+      "tags": [
         "pfc"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_044",
-      serie: [
+      "id": "ac_044",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Permutacao simples",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas formas diferentes 4 pessoas podem ocupar 4 cadeiras?",
-      opcoes: [
-        "24",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Permutacao simples",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas formas diferentes 4 pessoas podem ocupar 4 cadeiras?",
+      "opcoes": [
         "16",
         "8",
-        "32"
+        "32",
+        "24"
       ],
-      correta: "24",
-      comentario: "4! = 24.",
-      tempoEstimado: 25,
-      tags: [
+      "correta": "24",
+      "comentario": "4! = 24. Assim, a resposta correta ? 24.",
+      "tempoEstimado": 25,
+      "tags": [
         "permutacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_045",
-      serie: [
+      "id": "ac_045",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "PFC",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Uma senha tem 4 letras, sendo que exatamente uma se repete e as outras são distintas. Quantas senhas existem?",
-      opcoes: [
-        "456976",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "PFC",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma senha tem 4 letras, sendo que exatamente uma se repete e as outras são distintas. Quantas senhas existem?",
+      "opcoes": [
         "405600",
+        "456976",
         "439400",
         "390000"
       ],
-      correta: "405600",
-      comentario: "Escolhe letra repetida (26), posição (4), e duas distintas: 25 × 24 → 26×4×25×24 = 405600.",
-      tempoEstimado: 45,
-      tags: [
+      "correta": "405600",
+      "comentario": "Escolhe letra repetida (26), posição (4), e duas distintas: 25 × 24 → 26×4×25×24 = 405600.",
+      "tempoEstimado": 45,
+      "tags": [
         "pfc",
         "restricao"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_046",
-      serie: [
+      "id": "ac_046",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Permutacao simples",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas maneiras 5 pessoas podem ocupar 3 cadeiras em fila?",
-      opcoes: [
-        "60",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Permutacao simples",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas maneiras 5 pessoas podem ocupar 3 cadeiras em fila?",
+      "opcoes": [
         "120",
+        "60",
         "20",
         "30"
       ],
-      correta: "60",
-      comentario: "5 × 4 × 3 = 60.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "60",
+      "comentario": "5 × 4 × 3 = 60. Assim, a resposta correta ? 60.",
+      "tempoEstimado": 35,
+      "tags": [
         "arranjo"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_047",
-      serie: [
+      "id": "ac_047",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "PFC",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas sequências de 4 dígitos distintos podem ser formadas com os números de 0 a 9?",
-      opcoes: [
-        "5040",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "PFC",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas sequências de 4 dígitos distintos podem ser formadas com os números de 0 a 9?",
+      "opcoes": [
         "504",
         "10000",
+        "5040",
         "3024"
       ],
-      correta: "5040",
-      comentario: "10 × 9 × 8 × 7 = 5040.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "5040",
+      "comentario": "10 × 9 × 8 × 7 = 5040.",
+      "tempoEstimado": 35,
+      "tags": [
         "pfc"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_048",
-      serie: [
+      "id": "ac_048",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Permutacao simples",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas palavras podem ser formadas com as letras ABCDE em que A sempre aparece na primeira posição?",
-      opcoes: [
-        "24",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Permutacao simples",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas palavras podem ser formadas com as letras ABCDE em que A sempre aparece na primeira posição?",
+      "opcoes": [
         "120",
         "60",
-        "20"
+        "20",
+        "24"
       ],
-      correta: "24",
-      comentario: "Fixando A → permuta 4! = 24.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "24",
+      "comentario": "Fixando A → permuta 4! = 24.",
+      "tempoEstimado": 40,
+      "tags": [
         "restricao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_049",
-      serie: [
+      "id": "ac_049",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Permutacao simples",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas formas diferentes 6 objetos distintos podem ser organizados em fila?",
-      opcoes: [
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Permutacao simples",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas formas diferentes 6 objetos distintos podem ser organizados em fila?",
+      "opcoes": [
         "720",
         "360",
         "120",
         "600"
       ],
-      correta: "720",
-      comentario: "6! = 720.",
-      tempoEstimado: 25,
-      tags: [
+      "correta": "720",
+      "comentario": "6! = 720. Assim, a resposta correta ? 720.",
+      "tempoEstimado": 25,
+      "tags": [
         "permutacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_050",
-      serie: [
+      "id": "ac_050",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "PFC",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas senhas de 4 letras distintas podem ser formadas de modo que nenhuma vogal seja utilizada?",
-      opcoes: [
-        "143640",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "PFC",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas senhas de 4 letras distintas podem ser formadas de modo que nenhuma vogal seja utilizada?",
+      "opcoes": [
         "302400",
+        "143640",
         "456976",
         "200000"
       ],
-      correta: "143640",
-      comentario: "Há 21 consoantes disponíveis. Como as 4 letras devem ser distintas, o total é 21 × 20 × 19 × 18 = 143640.",
-      tempoEstimado: 45,
-      tags: [
+      "correta": "143640",
+      "comentario": "Há 21 consoantes disponíveis. Como as 4 letras devem ser distintas, o total é 21 × 20 × 19 × 18 = 143640.",
+      "tempoEstimado": 45,
+      "tags": [
         "pfc",
         "restricao"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_051",
-      serie: [
+      "id": "ac_051",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Permutacao simples",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas formas diferentes as letras ABC podem ser organizadas?",
-      opcoes: [
-        "6",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Permutacao simples",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas formas diferentes as letras ABC podem ser organizadas?",
+      "opcoes": [
         "3",
         "9",
+        "6",
         "12"
       ],
-      correta: "6",
-      comentario: "3! = 6.",
-      tempoEstimado: 20,
-      tags: [
+      "correta": "6",
+      "comentario": "3! = 6. Assim, a resposta correta ? 6.",
+      "tempoEstimado": 20,
+      "tags": [
         "permutacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_052",
-      serie: [
+      "id": "ac_052",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Permutacao com repeticao",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas palavras diferentes podem ser formadas com as letras da palavra ANA?",
-      opcoes: [
-        "3",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Permutacao com repeticao",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas palavras diferentes podem ser formadas com as letras da palavra ANA?",
+      "opcoes": [
         "6",
         "2",
-        "4"
+        "4",
+        "3"
       ],
-      correta: "3",
-      comentario: "3! / 2! = 3.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "3",
+      "comentario": "3! / 2! = 3. Assim, a resposta correta ? 3.",
+      "tempoEstimado": 30,
+      "tags": [
         "repeticao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_053",
-      serie: [
+      "id": "ac_053",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Permutacao com repeticao",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas palavras distintas podem ser formadas com as letras da palavra BOLA?",
-      opcoes: [
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Permutacao com repeticao",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas palavras distintas podem ser formadas com as letras da palavra BOLA?",
+      "opcoes": [
         "24",
         "12",
         "6",
         "4"
       ],
-      correta: "24",
-      comentario: "Todas distintas → 4! = 24.",
-      tempoEstimado: 25,
-      tags: [
+      "correta": "24",
+      "comentario": "Todas distintas → 4! = 24.",
+      "tempoEstimado": 25,
+      "tags": [
         "permutacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_054",
-      serie: [
+      "id": "ac_054",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Permutacao com repeticao",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas palavras distintas podem ser formadas com as letras da palavra MALA?",
-      opcoes: [
-        "12",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Permutacao com repeticao",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas palavras distintas podem ser formadas com as letras da palavra MALA?",
+      "opcoes": [
         "24",
+        "12",
         "6",
         "8"
       ],
-      correta: "12",
-      comentario: "4! / 2! = 12.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "12",
+      "comentario": "4! / 2! = 12. Assim, a resposta correta ? 12.",
+      "tempoEstimado": 30,
+      "tags": [
         "repeticao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_055",
-      serie: [
+      "id": "ac_055",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Permutacao com repeticao",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas palavras distintas podem ser formadas com as letras da palavra BANANA?",
-      opcoes: [
-        "60",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Permutacao com repeticao",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas palavras distintas podem ser formadas com as letras da palavra BANANA?",
+      "opcoes": [
         "120",
         "720",
+        "60",
         "90"
       ],
-      correta: "60",
-      comentario: "6! / (3!×2!) = 60.",
-      tempoEstimado: 45,
-      tags: [
+      "correta": "60",
+      "comentario": "6! / (3!×2!) = 60. Assim, a resposta correta ? 60.",
+      "tempoEstimado": 45,
+      "tags": [
         "repeticao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_056",
-      serie: [
+      "id": "ac_056",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Permutacao simples",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas maneiras diferentes 4 pessoas podem formar uma fila?",
-      opcoes: [
-        "24",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Permutacao simples",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas maneiras diferentes 4 pessoas podem formar uma fila?",
+      "opcoes": [
         "16",
         "8",
-        "32"
+        "32",
+        "24"
       ],
-      correta: "24",
-      comentario: "4! = 24.",
-      tempoEstimado: 25,
-      tags: [
+      "correta": "24",
+      "comentario": "4! = 24. Assim, a resposta correta ? 24.",
+      "tempoEstimado": 25,
+      "tags": [
         "permutacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_057",
-      serie: [
+      "id": "ac_057",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Permutacao com repeticao",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas palavras distintas podem ser formadas com as letras da palavra ARARA?",
-      opcoes: [
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Permutacao com repeticao",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas palavras distintas podem ser formadas com as letras da palavra ARARA?",
+      "opcoes": [
         "20",
         "60",
         "120",
         "30"
       ],
-      correta: "20",
-      comentario: "5! / (3!×2!) = 20.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "20",
+      "comentario": "5! / (3!×2!) = 20. Assim, a resposta correta ? 20.",
+      "tempoEstimado": 35,
+      "tags": [
         "repeticao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_058",
-      serie: [
+      "id": "ac_058",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Permutacao simples",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas formas diferentes as letras XY podem ser organizadas?",
-      opcoes: [
-        "2",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Permutacao simples",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas formas diferentes as letras XY podem ser organizadas?",
+      "opcoes": [
         "1",
+        "2",
         "4",
         "3"
       ],
-      correta: "2",
-      comentario: "2! = 2.",
-      tempoEstimado: 15,
-      tags: [
+      "correta": "2",
+      "comentario": "2! = 2. Assim, a resposta correta ? 2.",
+      "tempoEstimado": 15,
+      "tags": [
         "permutacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_059",
-      serie: [
+      "id": "ac_059",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Permutacao com repeticao",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas palavras distintas podem ser formadas com as letras da palavra TETO?",
-      opcoes: [
-        "12",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Permutacao com repeticao",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas palavras distintas podem ser formadas com as letras da palavra TETO?",
+      "opcoes": [
         "24",
         "6",
+        "12",
         "8"
       ],
-      correta: "12",
-      comentario: "4! / 2! = 12.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "12",
+      "comentario": "4! / 2! = 12. Assim, a resposta correta ? 12.",
+      "tempoEstimado": 30,
+      "tags": [
         "repeticao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_060",
-      serie: [
+      "id": "ac_060",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Permutacao com repeticao",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas palavras distintas podem ser formadas com as letras da palavra OSSO?",
-      opcoes: [
-        "6",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Permutacao com repeticao",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas palavras distintas podem ser formadas com as letras da palavra OSSO?",
+      "opcoes": [
         "12",
         "24",
-        "8"
+        "8",
+        "6"
       ],
-      correta: "6",
-      comentario: "Como há 4 letras com repetição de 2 S e 2 O, o total é 4! / (2! × 2!) = 6.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "6",
+      "comentario": "Como há 4 letras com repetição de 2 S e 2 O, o total é 4! / (2! × 2!) = 6.",
+      "tempoEstimado": 35,
+      "tags": [
         "repeticao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_061",
-      serie: [
+      "id": "ac_061",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Permutacao com repeticao",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas palavras distintas podem ser formadas com as letras da palavra PAPEL?",
-      opcoes: [
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Permutacao com repeticao",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas palavras distintas podem ser formadas com as letras da palavra PAPEL?",
+      "opcoes": [
         "60",
         "120",
         "30",
         "24"
       ],
-      correta: "60",
-      comentario: "5! / 2! = 60.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "60",
+      "comentario": "5! / 2! = 60. Assim, a resposta correta ? 60.",
+      "tempoEstimado": 35,
+      "tags": [
         "repeticao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_062",
-      serie: [
+      "id": "ac_062",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Permutacao simples",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas formas diferentes 2 pessoas podem se sentar?",
-      opcoes: [
-        "2",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Permutacao simples",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas formas diferentes 2 pessoas podem se sentar?",
+      "opcoes": [
         "1",
+        "2",
         "4",
         "3"
       ],
-      correta: "2",
-      comentario: "2! = 2.",
-      tempoEstimado: 15,
-      tags: [
+      "correta": "2",
+      "comentario": "2! = 2. Assim, a resposta correta ? 2.",
+      "tempoEstimado": 15,
+      "tags": [
         "permutacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_063",
-      serie: [
+      "id": "ac_063",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Permutacao com repeticao",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas palavras distintas podem ser formadas com as letras da palavra CASA?",
-      opcoes: [
-        "12",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Permutacao com repeticao",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas palavras distintas podem ser formadas com as letras da palavra CASA?",
+      "opcoes": [
         "24",
         "6",
+        "12",
         "8"
       ],
-      correta: "12",
-      comentario: "4! / 2! = 12.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "12",
+      "comentario": "4! / 2! = 12. Assim, a resposta correta ? 12.",
+      "tempoEstimado": 30,
+      "tags": [
         "repeticao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_064",
-      serie: [
+      "id": "ac_064",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Permutacao simples",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas maneiras diferentes 7 pessoas podem formar uma fila?",
-      opcoes: [
-        "5040",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Permutacao simples",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas maneiras diferentes 7 pessoas podem formar uma fila?",
+      "opcoes": [
         "720",
         "840",
-        "360"
+        "360",
+        "5040"
       ],
-      correta: "5040",
-      comentario: "7! = 5040.",
-      tempoEstimado: 25,
-      tags: [
+      "correta": "5040",
+      "comentario": "7! = 5040. Assim, a resposta correta ? 5040.",
+      "tempoEstimado": 25,
+      "tags": [
         "permutacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_065",
-      serie: [
+      "id": "ac_065",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Permutacao com repeticao",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas palavras distintas podem ser formadas com as letras da palavra MISSISSIPPI?",
-      opcoes: [
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Permutacao com repeticao",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas palavras distintas podem ser formadas com as letras da palavra MISSISSIPPI?",
+      "opcoes": [
         "34650",
         "69300",
         "27720",
         "3465"
       ],
-      correta: "34650",
-      comentario: "11! / (4!×4!×2!) = 34650.",
-      tempoEstimado: 50,
-      tags: [
+      "correta": "34650",
+      "comentario": "11! / (4!×4!×2!) = 34650.",
+      "tempoEstimado": 50,
+      "tags": [
         "repeticao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_066",
-      serie: [
+      "id": "ac_066",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Permutacao simples",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas formas diferentes 3 pessoas podem ocupar 3 cadeiras?",
-      opcoes: [
-        "6",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Permutacao simples",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas formas diferentes 3 pessoas podem ocupar 3 cadeiras?",
+      "opcoes": [
         "9",
+        "6",
         "3",
         "12"
       ],
-      correta: "6",
-      comentario: "3! = 6.",
-      tempoEstimado: 20,
-      tags: [
+      "correta": "6",
+      "comentario": "3! = 6. Assim, a resposta correta ? 6.",
+      "tempoEstimado": 20,
+      "tags": [
         "permutacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_067",
-      serie: [
+      "id": "ac_067",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Permutacao com repeticao",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas palavras distintas podem ser formadas com as letras da palavra LEVEL?",
-      opcoes: [
-        "30",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Permutacao com repeticao",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas palavras distintas podem ser formadas com as letras da palavra LEVEL?",
+      "opcoes": [
         "60",
         "120",
+        "30",
         "20"
       ],
-      correta: "30",
-      comentario: "5! / (2!×2!) = 30.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "30",
+      "comentario": "5! / (2!×2!) = 30. Assim, a resposta correta ? 30.",
+      "tempoEstimado": 35,
+      "tags": [
         "repeticao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_068",
-      serie: [
+      "id": "ac_068",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Permutacao simples",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas formas diferentes 1 pessoa pode se posicionar?",
-      opcoes: [
-        "1",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Permutacao simples",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas formas diferentes 1 pessoa pode se posicionar?",
+      "opcoes": [
         "0",
         "2",
-        "3"
+        "3",
+        "1"
       ],
-      correta: "1",
-      comentario: "1! = 1.",
-      tempoEstimado: 10,
-      tags: [
+      "correta": "1",
+      "comentario": "1! = 1. Assim, a resposta correta ? 1.",
+      "tempoEstimado": 10,
+      "tags": [
         "permutacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_069",
-      serie: [
+      "id": "ac_069",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Permutacao com repeticao",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas palavras distintas podem ser formadas com as letras da palavra DADO?",
-      opcoes: [
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Permutacao com repeticao",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas palavras distintas podem ser formadas com as letras da palavra DADO?",
+      "opcoes": [
         "12",
         "24",
         "6",
         "8"
       ],
-      correta: "12",
-      comentario: "4! / 2! = 12.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "12",
+      "comentario": "4! / 2! = 12. Assim, a resposta correta ? 12.",
+      "tempoEstimado": 30,
+      "tags": [
         "repeticao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_070",
-      serie: [
+      "id": "ac_070",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Permutacao com repeticao",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas palavras distintas podem ser formadas com as letras da palavra BALLOON?",
-      opcoes: [
-        "1260",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Permutacao com repeticao",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas palavras distintas podem ser formadas com as letras da palavra BALLOON?",
+      "opcoes": [
         "2520",
+        "1260",
         "5040",
         "630"
       ],
-      correta: "1260",
-      comentario: "7! / (2!×2!) = 1260.",
-      tempoEstimado: 45,
-      tags: [
+      "correta": "1260",
+      "comentario": "7! / (2!×2!) = 1260. Assim, a resposta correta ? 1260.",
+      "tempoEstimado": 45,
+      "tags": [
         "repeticao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_071",
-      serie: [
+      "id": "ac_071",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Permutacao simples",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas formas diferentes 5 objetos podem ser organizados?",
-      opcoes: [
-        "120",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Permutacao simples",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas formas diferentes 5 objetos podem ser organizados?",
+      "opcoes": [
         "60",
         "25",
+        "120",
         "100"
       ],
-      correta: "120",
-      comentario: "5! = 120.",
-      tempoEstimado: 25,
-      tags: [
+      "correta": "120",
+      "comentario": "5! = 120. Assim, a resposta correta ? 120.",
+      "tempoEstimado": 25,
+      "tags": [
         "permutacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_072",
-      serie: [
+      "id": "ac_072",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Permutacao com repeticao",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas palavras distintas podem ser formadas com as letras da palavra COCO?",
-      opcoes: [
-        "6",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Permutacao com repeticao",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas palavras distintas podem ser formadas com as letras da palavra COCO?",
+      "opcoes": [
         "12",
         "24",
-        "4"
+        "4",
+        "6"
       ],
-      correta: "6",
-      comentario: "4! / (2!×2!) = 6.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "6",
+      "comentario": "4! / (2!×2!) = 6. Assim, a resposta correta ? 6.",
+      "tempoEstimado": 30,
+      "tags": [
         "repeticao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_073",
-      serie: [
+      "id": "ac_073",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Permutacao simples",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas maneiras diferentes 4 objetos podem ocupar 4 posições?",
-      opcoes: [
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Permutacao simples",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas maneiras diferentes 4 objetos podem ocupar 4 posições?",
+      "opcoes": [
         "24",
         "16",
         "8",
         "32"
       ],
-      correta: "24",
-      comentario: "4! = 24.",
-      tempoEstimado: 25,
-      tags: [
+      "correta": "24",
+      "comentario": "4! = 24. Assim, a resposta correta ? 24.",
+      "tempoEstimado": 25,
+      "tags": [
         "permutacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_074",
-      serie: [
+      "id": "ac_074",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Permutacao com repeticao",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas palavras distintas podem ser formadas com as letras da palavra LILIA?",
-      opcoes: [
-        "20",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Permutacao com repeticao",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas palavras distintas podem ser formadas com as letras da palavra LILIA?",
+      "opcoes": [
         "30",
+        "20",
         "60",
         "120"
       ],
-      correta: "20",
-      comentario: "5! / (2!×2!) = 20.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "20",
+      "comentario": "5! / (2!×2!) = 20. Assim, a resposta correta ? 20.",
+      "tempoEstimado": 35,
+      "tags": [
         "repeticao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_075",
-      serie: [
+      "id": "ac_075",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Permutacao com repeticao",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas palavras distintas podem ser formadas com as letras da palavra PARALELO?",
-      opcoes: [
-        "10080",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Permutacao com repeticao",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas palavras distintas podem ser formadas com as letras da palavra PARALELO?",
+      "opcoes": [
         "5040",
         "20160",
+        "10080",
         "40320"
       ],
-      correta: "10080",
-      comentario: "8! / (2!×2!×2!) = 10080.",
-      tempoEstimado: 50,
-      tags: [
+      "correta": "10080",
+      "comentario": "8! / (2!×2!×2!) = 10080.",
+      "tempoEstimado": 50,
+      "tags": [
         "repeticao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_076",
-      serie: [
+      "id": "ac_076",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Arranjo simples",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas formas diferentes podemos escolher 2 pessoas entre 5, considerando a ordem?",
-      opcoes: [
-        "20",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Arranjo simples",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas formas diferentes podemos escolher 2 pessoas entre 5, considerando a ordem?",
+      "opcoes": [
         "10",
         "25",
-        "5"
+        "5",
+        "20"
       ],
-      correta: "20",
-      comentario: "A(5,2) = 5 × 4 = 20.",
-      tempoEstimado: 25,
-      tags: [
+      "correta": "20",
+      "comentario": "A(5,2) = 5 × 4 = 20. Assim, a resposta correta ? 20.",
+      "tempoEstimado": 25,
+      "tags": [
         "arranjo"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_077",
-      serie: [
+      "id": "ac_077",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Combinacao simples",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas formas diferentes podemos escolher 2 pessoas entre 5, sem considerar a ordem?",
-      opcoes: [
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Combinacao simples",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas formas diferentes podemos escolher 2 pessoas entre 5, sem considerar a ordem?",
+      "opcoes": [
         "10",
         "20",
         "5",
         "15"
       ],
-      correta: "10",
-      comentario: "C(5,2) = 10.",
-      tempoEstimado: 25,
-      tags: [
+      "correta": "10",
+      "comentario": "C(5,2) = 10. Assim, a resposta correta ? 10.",
+      "tempoEstimado": 25,
+      "tags": [
         "combinacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_078",
-      serie: [
+      "id": "ac_078",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Arranjo simples",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas placas de 3 letras distintas podem ser formadas?",
-      opcoes: [
-        "15600",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Arranjo simples",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas placas de 3 letras distintas podem ser formadas?",
+      "opcoes": [
         "17576",
+        "15600",
         "26000",
         "14000"
       ],
-      correta: "15600",
-      comentario: "A(26,3) = 26×25×24 = 15600.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "15600",
+      "comentario": "A(26,3) = 26×25×24 = 15600.",
+      "tempoEstimado": 35,
+      "tags": [
         "arranjo"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_079",
-      serie: [
+      "id": "ac_079",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Combinacao simples",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "De quantas formas podemos escolher 3 alunos entre 6?",
-      opcoes: [
-        "20",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Combinacao simples",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "De quantas formas podemos escolher 3 alunos entre 6?",
+      "opcoes": [
         "120",
         "60",
+        "20",
         "15"
       ],
-      correta: "20",
-      comentario: "C(6,3) = 20.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "20",
+      "comentario": "C(6,3) = 20. Assim, a resposta correta ? 20.",
+      "tempoEstimado": 30,
+      "tags": [
         "combinacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_080",
-      serie: [
+      "id": "ac_080",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Arranjo simples",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas sequências de 2 letras distintas podem ser formadas?",
-      opcoes: [
-        "650",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Arranjo simples",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas sequências de 2 letras distintas podem ser formadas?",
+      "opcoes": [
         "676",
         "600",
-        "520"
+        "520",
+        "650"
       ],
-      correta: "650",
-      comentario: "A(26,2) = 26×25 = 650.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "650",
+      "comentario": "A(26,2) = 26×25 = 650.",
+      "tempoEstimado": 30,
+      "tags": [
         "arranjo"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_081",
-      serie: [
+      "id": "ac_081",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Combinacao simples",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas comissões de 2 pessoas podem ser formadas a partir de 8 pessoas?",
-      opcoes: [
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Combinacao simples",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas comissões de 2 pessoas podem ser formadas a partir de 8 pessoas?",
+      "opcoes": [
         "28",
         "56",
         "16",
         "64"
       ],
-      correta: "28",
-      comentario: "C(8,2) = 28.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "28",
+      "comentario": "C(8,2) = 28. Assim, a resposta correta ? 28.",
+      "tempoEstimado": 30,
+      "tags": [
         "combinacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_082",
-      serie: [
+      "id": "ac_082",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Arranjo simples",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas sequências de 3 números distintos podem ser formadas com os dígitos de 1 a 9?",
-      opcoes: [
-        "504",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Arranjo simples",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas sequências de 3 números distintos podem ser formadas com os dígitos de 1 a 9?",
+      "opcoes": [
         "720",
+        "504",
         "729",
         "1000"
       ],
-      correta: "504",
-      comentario: "9×8×7 = 504.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "504",
+      "comentario": "9×8×7 = 504. Assim, a resposta correta ? 504.",
+      "tempoEstimado": 35,
+      "tags": [
         "arranjo"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_083",
-      serie: [
+      "id": "ac_083",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Combinacao simples",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "De quantas formas podemos escolher 4 pessoas entre 7?",
-      opcoes: [
-        "35",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Combinacao simples",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "De quantas formas podemos escolher 4 pessoas entre 7?",
+      "opcoes": [
         "70",
         "140",
+        "35",
         "21"
       ],
-      correta: "35",
-      comentario: "C(7,4) = 35.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "35",
+      "comentario": "C(7,4) = 35. Assim, a resposta correta ? 35.",
+      "tempoEstimado": 35,
+      "tags": [
         "combinacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_084",
-      serie: [
+      "id": "ac_084",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Arranjo simples",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas formas diferentes 3 alunos podem ocupar 3 lugares entre 6 disponíveis?",
-      opcoes: [
-        "120",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Arranjo simples",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas formas diferentes 3 alunos podem ocupar 3 lugares entre 6 disponíveis?",
+      "opcoes": [
         "60",
         "216",
-        "36"
+        "36",
+        "120"
       ],
-      correta: "120",
-      comentario: "A(6,3) = 6×5×4 = 120.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "120",
+      "comentario": "A(6,3) = 6×5×4 = 120. Assim, a resposta correta ? 120.",
+      "tempoEstimado": 35,
+      "tags": [
         "arranjo"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_085",
-      serie: [
+      "id": "ac_085",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Combinacao simples",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "De quantas formas podemos escolher 5 pessoas entre 10?",
-      opcoes: [
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Combinacao simples",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "De quantas formas podemos escolher 5 pessoas entre 10?",
+      "opcoes": [
         "252",
         "120",
         "210",
         "300"
       ],
-      correta: "252",
-      comentario: "C(10,5) = 252.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "252",
+      "comentario": "C(10,5) = 252. Assim, a resposta correta ? 252.",
+      "tempoEstimado": 40,
+      "tags": [
         "combinacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_086",
-      serie: [
+      "id": "ac_086",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Arranjo simples",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas palavras de 3 letras distintas podem ser formadas com 5 letras diferentes?",
-      opcoes: [
-        "60",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Arranjo simples",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas palavras de 3 letras distintas podem ser formadas com 5 letras diferentes?",
+      "opcoes": [
         "125",
+        "60",
         "20",
         "30"
       ],
-      correta: "60",
-      comentario: "A(5,3) = 5×4×3 = 60.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "60",
+      "comentario": "A(5,3) = 5×4×3 = 60. Assim, a resposta correta ? 60.",
+      "tempoEstimado": 35,
+      "tags": [
         "arranjo"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_087",
-      serie: [
+      "id": "ac_087",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Combinacao simples",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "De quantas formas podemos escolher 2 bolas entre 6 diferentes?",
-      opcoes: [
-        "15",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Combinacao simples",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "De quantas formas podemos escolher 2 bolas entre 6 diferentes?",
+      "opcoes": [
         "30",
         "12",
+        "15",
         "20"
       ],
-      correta: "15",
-      comentario: "C(6,2) = 15.",
-      tempoEstimado: 25,
-      tags: [
+      "correta": "15",
+      "comentario": "C(6,2) = 15. Assim, a resposta correta ? 15.",
+      "tempoEstimado": 25,
+      "tags": [
         "combinacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_088",
-      serie: [
+      "id": "ac_088",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Arranjo simples",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas sequências de 4 letras distintas podem ser formadas com 6 letras diferentes?",
-      opcoes: [
-        "360",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Arranjo simples",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas sequências de 4 letras distintas podem ser formadas com 6 letras diferentes?",
+      "opcoes": [
         "720",
         "120",
-        "240"
+        "240",
+        "360"
       ],
-      correta: "360",
-      comentario: "A(6,4) = 6×5×4×3 = 360.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "360",
+      "comentario": "A(6,4) = 6×5×4×3 = 360.",
+      "tempoEstimado": 35,
+      "tags": [
         "arranjo"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_089",
-      serie: [
+      "id": "ac_089",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Combinacao simples",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "De quantas formas podemos escolher 3 frutas entre 7 diferentes?",
-      opcoes: [
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Combinacao simples",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "De quantas formas podemos escolher 3 frutas entre 7 diferentes?",
+      "opcoes": [
         "35",
         "21",
         "42",
         "70"
       ],
-      correta: "35",
-      comentario: "C(7,3) = 35.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "35",
+      "comentario": "C(7,3) = 35. Assim, a resposta correta ? 35.",
+      "tempoEstimado": 30,
+      "tags": [
         "combinacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_090",
-      serie: [
+      "id": "ac_090",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Arranjo simples",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas palavras de 5 letras distintas podem ser formadas com 7 letras diferentes?",
-      opcoes: [
-        "2520",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Arranjo simples",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas palavras de 5 letras distintas podem ser formadas com 7 letras diferentes?",
+      "opcoes": [
         "5040",
+        "2520",
         "720",
         "210"
       ],
-      correta: "2520",
-      comentario: "A(7,5) = 7×6×5×4×3 = 2520.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "2520",
+      "comentario": "A(7,5) = 7×6×5×4×3 = 2520.",
+      "tempoEstimado": 40,
+      "tags": [
         "arranjo"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_091",
-      serie: [
+      "id": "ac_091",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Combinacao simples",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "De quantas formas podemos escolher 6 pessoas entre 9?",
-      opcoes: [
-        "84",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Combinacao simples",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "De quantas formas podemos escolher 6 pessoas entre 9?",
+      "opcoes": [
         "126",
         "36",
+        "84",
         "72"
       ],
-      correta: "84",
-      comentario: "C(9,6) = C(9,3) = 84.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "84",
+      "comentario": "C(9,6) = C(9,3) = 84. Assim, a resposta correta ? 84.",
+      "tempoEstimado": 40,
+      "tags": [
         "combinacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_092",
-      serie: [
+      "id": "ac_092",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Arranjo simples",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas sequências de 3 letras distintas podem ser formadas com 8 letras?",
-      opcoes: [
-        "336",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Arranjo simples",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas sequências de 3 letras distintas podem ser formadas com 8 letras?",
+      "opcoes": [
         "512",
         "720",
-        "64"
+        "64",
+        "336"
       ],
-      correta: "336",
-      comentario: "A(8,3) = 8×7×6 = 336.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "336",
+      "comentario": "A(8,3) = 8×7×6 = 336. Assim, a resposta correta ? 336.",
+      "tempoEstimado": 30,
+      "tags": [
         "arranjo"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_093",
-      serie: [
+      "id": "ac_093",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Combinacao simples",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas comissões de 4 pessoas podem ser formadas a partir de 8?",
-      opcoes: [
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Combinacao simples",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas comissões de 4 pessoas podem ser formadas a partir de 8?",
+      "opcoes": [
         "70",
         "56",
         "28",
         "84"
       ],
-      correta: "70",
-      comentario: "C(8,4) = 70.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "70",
+      "comentario": "C(8,4) = 70. Assim, a resposta correta ? 70.",
+      "tempoEstimado": 30,
+      "tags": [
         "combinacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_094",
-      serie: [
+      "id": "ac_094",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Arranjo simples",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas sequências de 2 elementos podem ser formadas com 9 diferentes?",
-      opcoes: [
-        "72",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Arranjo simples",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas sequências de 2 elementos podem ser formadas com 9 diferentes?",
+      "opcoes": [
         "81",
+        "72",
         "36",
         "18"
       ],
-      correta: "72",
-      comentario: "A(9,2) = 9×8 = 72.",
-      tempoEstimado: 25,
-      tags: [
+      "correta": "72",
+      "comentario": "A(9,2) = 9×8 = 72. Assim, a resposta correta ? 72.",
+      "tempoEstimado": 25,
+      "tags": [
         "arranjo"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_095",
-      serie: [
+      "id": "ac_095",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Combinacao simples",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas formas diferentes escolher 2 elementos entre 10?",
-      opcoes: [
-        "45",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Combinacao simples",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas formas diferentes escolher 2 elementos entre 10?",
+      "opcoes": [
         "90",
         "20",
+        "45",
         "100"
       ],
-      correta: "45",
-      comentario: "C(10,2) = 45.",
-      tempoEstimado: 25,
-      tags: [
+      "correta": "45",
+      "comentario": "C(10,2) = 45. Assim, a resposta correta ? 45.",
+      "tempoEstimado": 25,
+      "tags": [
         "combinacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_096",
-      serie: [
+      "id": "ac_096",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Arranjo simples",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas palavras de 4 letras distintas podem ser formadas com 8 letras?",
-      opcoes: [
-        "1680",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Arranjo simples",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas palavras de 4 letras distintas podem ser formadas com 8 letras?",
+      "opcoes": [
         "4096",
         "3360",
-        "720"
+        "720",
+        "1680"
       ],
-      correta: "1680",
-      comentario: "A(8,4) = 8×7×6×5 = 1680.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "1680",
+      "comentario": "A(8,4) = 8×7×6×5 = 1680.",
+      "tempoEstimado": 35,
+      "tags": [
         "arranjo"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_097",
-      serie: [
+      "id": "ac_097",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Combinacao simples",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas formas escolher 5 entre 8?",
-      opcoes: [
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Combinacao simples",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas formas escolher 5 entre 8?",
+      "opcoes": [
         "56",
         "70",
         "28",
         "120"
       ],
-      correta: "56",
-      comentario: "C(8,5) = C(8,3) = 56.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "56",
+      "comentario": "C(8,5) = C(8,3) = 56. Assim, a resposta correta ? 56.",
+      "tempoEstimado": 30,
+      "tags": [
         "combinacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_098",
-      serie: [
+      "id": "ac_098",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Arranjo simples",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas sequências de 5 números distintos podem ser formadas com 9 dígitos?",
-      opcoes: [
-        "15120",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Arranjo simples",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas sequências de 5 números distintos podem ser formadas com 9 dígitos?",
+      "opcoes": [
         "30240",
+        "15120",
         "59049",
         "720"
       ],
-      correta: "15120",
-      comentario: "A(9,5) = 9×8×7×6×5 = 15120.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "15120",
+      "comentario": "A(9,5) = 9×8×7×6×5 = 15120.",
+      "tempoEstimado": 40,
+      "tags": [
         "arranjo"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_099",
-      serie: [
+      "id": "ac_099",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Combinacao simples",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "De quantas formas escolher 4 entre 9?",
-      opcoes: [
-        "126",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Combinacao simples",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "De quantas formas escolher 4 entre 9?",
+      "opcoes": [
         "84",
         "36",
+        "126",
         "45"
       ],
-      correta: "126",
-      comentario: "C(9,4) = 126.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "126",
+      "comentario": "C(9,4) = 126. Assim, a resposta correta ? 126.",
+      "tempoEstimado": 35,
+      "tags": [
         "combinacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_100",
-      serie: [
+      "id": "ac_100",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Comparacao tecnicas",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Qual das situações abaixo deve ser resolvida por combinação e não por arranjo?",
-      opcoes: [
-        "Escolher 3 alunos para formar um grupo",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Comparacao tecnicas",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual das situações abaixo deve ser resolvida por combinação e não por arranjo?",
+      "opcoes": [
         "Organizar 3 alunos em fila",
         "Criar senha com ordem",
-        "Ordenar livros"
+        "Ordenar livros",
+        "Escolher 3 alunos para formar um grupo"
       ],
-      correta: "Escolher 3 alunos para formar um grupo",
-      comentario: "Combinação: ordem não importa.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "Escolher 3 alunos para formar um grupo",
+      "comentario": "Combinação: ordem não importa.",
+      "tempoEstimado": 40,
+      "tags": [
         "conceito"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_101",
-      serie: [
+      "id": "ac_101",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Problemas com restricao",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas palavras de 4 letras distintas podem ser formadas com as letras A, B, C e D, sabendo que a letra A deve ficar na primeira posição?",
-      opcoes: [
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Problemas com restricao",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas palavras de 4 letras distintas podem ser formadas com as letras A, B, C e D, sabendo que a letra A deve ficar na primeira posição?",
+      "opcoes": [
         "6",
         "24",
         "12",
         "4"
       ],
-      correta: "6",
-      comentario: "Fixando A na primeira posição, restam 3 letras para permutar: 3! = 6.",
-      tempoEstimado: 25,
-      tags: [
+      "correta": "6",
+      "comentario": "Fixando A na primeira posição, restam 3 letras para permutar: 3! = 6.",
+      "tempoEstimado": 25,
+      "tags": [
         "restricao",
         "permutacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_102",
-      serie: [
+      "id": "ac_102",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Problemas com restricao",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "De quantas formas podemos escolher 2 alunos entre 5, sabendo que um aluno específico deve participar do grupo?",
-      opcoes: [
-        "4",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Problemas com restricao",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "De quantas formas podemos escolher 2 alunos entre 5, sabendo que um aluno específico deve participar do grupo?",
+      "opcoes": [
         "5",
+        "4",
         "10",
         "20"
       ],
-      correta: "4",
-      comentario: "Fixando o aluno específico, basta escolher mais 1 entre os 4 restantes: C(4,1) = 4.",
-      tempoEstimado: 25,
-      tags: [
+      "correta": "4",
+      "comentario": "Fixando o aluno específico, basta escolher mais 1 entre os 4 restantes: C(4,1) = 4.",
+      "tempoEstimado": 25,
+      "tags": [
         "restricao",
         "combinacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_103",
-      serie: [
+      "id": "ac_103",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Problemas com restricao",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas senhas de 3 algarismos distintos podem ser formadas sem usar o algarismo 0?",
-      opcoes: [
-        "504",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Problemas com restricao",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas senhas de 3 algarismos distintos podem ser formadas sem usar o algarismo 0?",
+      "opcoes": [
         "720",
         "729",
+        "504",
         "210"
       ],
-      correta: "504",
-      comentario: "Usando os dígitos de 1 a 9: 9 × 8 × 7 = 504.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "504",
+      "comentario": "Usando os dígitos de 1 a 9: 9 × 8 × 7 = 504.",
+      "tempoEstimado": 30,
+      "tags": [
         "restricao",
         "pfc"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_104",
-      serie: [
+      "id": "ac_104",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Problemas com restricao",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "De quantas formas 4 pessoas podem sentar-se em fila, sabendo que uma pessoa específica deve ocupar a primeira cadeira?",
-      opcoes: [
-        "6",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Problemas com restricao",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "De quantas formas 4 pessoas podem sentar-se em fila, sabendo que uma pessoa específica deve ocupar a primeira cadeira?",
+      "opcoes": [
         "24",
         "12",
-        "4"
+        "4",
+        "6"
       ],
-      correta: "6",
-      comentario: "Fixando a pessoa na primeira posição, restam 3 pessoas: 3! = 6.",
-      tempoEstimado: 25,
-      tags: [
+      "correta": "6",
+      "comentario": "Fixando a pessoa na primeira posição, restam 3 pessoas: 3! = 6.",
+      "tempoEstimado": 25,
+      "tags": [
         "restricao",
         "permutacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_105",
-      serie: [
+      "id": "ac_105",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Problemas com restricao",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas comissões de 3 alunos podem ser formadas a partir de 6, sabendo que um aluno específico não pode participar?",
-      opcoes: [
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Problemas com restricao",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas comissões de 3 alunos podem ser formadas a partir de 6, sabendo que um aluno específico não pode participar?",
+      "opcoes": [
         "10",
         "20",
         "15",
         "5"
       ],
-      correta: "10",
-      comentario: "Excluindo o aluno, restam 5. Então: C(5,3) = 10.",
-      tempoEstimado: 25,
-      tags: [
+      "correta": "10",
+      "comentario": "Excluindo o aluno, restam 5. Então: C(5,3) = 10.",
+      "tempoEstimado": 25,
+      "tags": [
         "restricao",
         "combinacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_106",
-      serie: [
+      "id": "ac_106",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Problemas com restricao",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas palavras distintas de 5 letras podem ser formadas com as letras A, B, C, D e E, sabendo que as vogais A e E devem ficar juntas?",
-      opcoes: [
-        "48",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Problemas com restricao",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas palavras distintas de 5 letras podem ser formadas com as letras A, B, C, D e E, sabendo que as vogais A e E devem ficar juntas?",
+      "opcoes": [
         "120",
+        "48",
         "24",
         "60"
       ],
-      correta: "48",
-      comentario: "Considerando AE ou EA como bloco, temos 4 elementos para permutar: 4! = 24. Como o bloco pode ser AE ou EA, multiplica-se por 2: 48.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "48",
+      "comentario": "Considerando AE ou EA como bloco, temos 4 elementos para permutar: 4! = 24. Como o bloco pode ser AE ou EA, multiplica-se por 2: 48.",
+      "tempoEstimado": 40,
+      "tags": [
         "restricao",
         "permutacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_107",
-      serie: [
+      "id": "ac_107",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Problemas com restricao",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "De quantas formas podemos formar uma comissão de 4 pessoas a partir de 7, sabendo que duas pessoas específicas não podem ficar juntas na comissão?",
-      opcoes: [
-        "25",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Problemas com restricao",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "De quantas formas podemos formar uma comissão de 4 pessoas a partir de 7, sabendo que duas pessoas específicas não podem ficar juntas na comissão?",
+      "opcoes": [
         "30",
         "35",
+        "25",
         "20"
       ],
-      correta: "25",
-      comentario: "Total: C(7,4) = 35. Com as duas pessoas juntas, escolhem-se mais 2 entre 5: C(5,2) = 10. Logo, 35 - 10 = 25.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "25",
+      "comentario": "Total: C(7,4) = 35. Com as duas pessoas juntas, escolhem-se mais 2 entre 5: C(5,2) = 10. Logo, 35 - 10 = 25.",
+      "tempoEstimado": 40,
+      "tags": [
         "restricao",
         "combinacao",
         "complementar"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_108",
-      serie: [
+      "id": "ac_108",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Problemas com restricao",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas senhas de 4 dígitos distintos podem ser formadas com os algarismos de 0 a 9, sabendo que o primeiro não pode ser 0?",
-      opcoes: [
-        "4536",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Problemas com restricao",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas senhas de 4 dígitos distintos podem ser formadas com os algarismos de 0 a 9, sabendo que o primeiro não pode ser 0?",
+      "opcoes": [
         "5040",
         "4000",
-        "3024"
+        "3024",
+        "4536"
       ],
-      correta: "4536",
-      comentario: "Para o primeiro dígito, há 9 opções (1 a 9). Depois: 9, 8 e 7 opções. Total: 9 × 9 × 8 × 7 = 4536.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "4536",
+      "comentario": "Para o primeiro dígito, há 9 opções (1 a 9). Depois: 9, 8 e 7 opções. Total: 9 × 9 × 8 × 7 = 4536.",
+      "tempoEstimado": 40,
+      "tags": [
         "restricao",
         "pfc"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_109",
-      serie: [
+      "id": "ac_109",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Problemas com restricao",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "De quantas formas 5 pessoas podem sentar-se em fila, sabendo que duas pessoas específicas devem ficar lado a lado?",
-      opcoes: [
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Problemas com restricao",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "De quantas formas 5 pessoas podem sentar-se em fila, sabendo que duas pessoas específicas devem ficar lado a lado?",
+      "opcoes": [
         "48",
         "24",
         "120",
         "60"
       ],
-      correta: "48",
-      comentario: "As duas pessoas formam um bloco. Assim, temos 4 elementos para permutar: 4! = 24. Dentro do bloco, podem trocar de posição: 2! = 2. Total: 48.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "48",
+      "comentario": "As duas pessoas formam um bloco. Assim, temos 4 elementos para permutar: 4! = 24. Dentro do bloco, podem trocar de posição: 2! = 2. Total: 48.",
+      "tempoEstimado": 35,
+      "tags": [
         "restricao",
         "permutacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_110",
-      serie: [
+      "id": "ac_110",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Problemas com restricao",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas comissões de 3 pessoas podem ser formadas a partir de 8, sabendo que duas pessoas específicas devem participar?",
-      opcoes: [
-        "6",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Problemas com restricao",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas comissões de 3 pessoas podem ser formadas a partir de 8, sabendo que duas pessoas específicas devem participar?",
+      "opcoes": [
         "15",
+        "6",
         "21",
         "28"
       ],
-      correta: "6",
-      comentario: "Fixando as duas pessoas, escolhe-se mais 1 entre os 6 restantes: C(6,1) = 6.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "6",
+      "comentario": "Fixando as duas pessoas, escolhe-se mais 1 entre os 6 restantes: C(6,1) = 6.",
+      "tempoEstimado": 30,
+      "tags": [
         "restricao",
         "combinacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_111",
-      serie: [
+      "id": "ac_111",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Problemas com restricao",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas palavras distintas podem ser formadas com as letras da palavra LIVRO, sabendo que a letra L deve aparecer antes da letra O?",
-      opcoes: [
-        "60",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Problemas com restricao",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas palavras distintas podem ser formadas com as letras da palavra LIVRO, sabendo que a letra L deve aparecer antes da letra O?",
+      "opcoes": [
         "120",
         "24",
+        "60",
         "48"
       ],
-      correta: "60",
-      comentario: "Total de permutações: 5! = 120. Metade terá L antes de O, então 120/2 = 60.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "60",
+      "comentario": "Total de permutações: 5! = 120. Metade terá L antes de O, então 120/2 = 60.",
+      "tempoEstimado": 35,
+      "tags": [
         "restricao",
         "permutacao",
         "simetria"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_112",
-      serie: [
+      "id": "ac_112",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Problemas com restricao",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas senhas de 3 letras distintas podem ser formadas usando apenas consoantes do alfabeto?",
-      opcoes: [
-        "7980",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Problemas com restricao",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas senhas de 3 letras distintas podem ser formadas usando apenas consoantes do alfabeto?",
+      "opcoes": [
         "9261",
         "10626",
-        "1330"
+        "1330",
+        "7980"
       ],
-      correta: "7980",
-      comentario: "Há 21 consoantes. Então: 21 × 20 × 19 = 7980.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "7980",
+      "comentario": "Há 21 consoantes. Então: 21 × 20 × 19 = 7980.",
+      "tempoEstimado": 35,
+      "tags": [
         "restricao",
         "pfc"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_113",
-      serie: [
+      "id": "ac_113",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Problemas com restricao",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "De quantas formas podemos escolher 4 alunos entre 9, sabendo que pelo menos um de dois alunos específicos deve estar no grupo?",
-      opcoes: [
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Problemas com restricao",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "De quantas formas podemos escolher 4 alunos entre 9, sabendo que pelo menos um de dois alunos específicos deve estar no grupo?",
+      "opcoes": [
         "91",
         "84",
         "70",
         "63"
       ],
-      correta: "91",
-      comentario: "Total: C(9,4) = 126. Sem os dois alunos específicos, escolhe-se 4 entre os outros 7: C(7,4) = 35. Logo, 126 - 35 = 91.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "91",
+      "comentario": "Total: C(9,4) = 126. Sem os dois alunos específicos, escolhe-se 4 entre os outros 7: C(7,4) = 35. Logo, 126 - 35 = 91.",
+      "tempoEstimado": 40,
+      "tags": [
         "restricao",
         "combinacao",
         "complementar"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_114",
-      serie: [
+      "id": "ac_114",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Problemas com restricao",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas formas diferentes 6 pessoas podem sentar-se em fila, sabendo que duas pessoas específicas não podem ficar juntas?",
-      opcoes: [
-        "480",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Problemas com restricao",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas formas diferentes 6 pessoas podem sentar-se em fila, sabendo que duas pessoas específicas não podem ficar juntas?",
+      "opcoes": [
         "720",
+        "480",
         "360",
         "240"
       ],
-      correta: "480",
-      comentario: "Total: 6! = 720. Com as duas juntas: 5! × 2 = 240. Logo, 720 - 240 = 480.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "480",
+      "comentario": "Total: 6! = 720. Com as duas juntas: 5! × 2 = 240. Logo, 720 - 240 = 480.",
+      "tempoEstimado": 40,
+      "tags": [
         "restricao",
         "permutacao",
         "complementar"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_115",
-      serie: [
+      "id": "ac_115",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Problemas com restricao",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas senhas de 5 dígitos distintos podem ser formadas com os algarismos de 0 a 9, sabendo que o primeiro é par e diferente de 0?",
-      opcoes: [
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Problemas com restricao",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas senhas de 5 dígitos distintos podem ser formadas com os algarismos de 0 a 9, sabendo que o primeiro é par e diferente de 0?",
+      "opcoes": [
         "1344",
         "1200",
         "2688",
         "2520"
       ],
-      correta: "2688",
-      comentario: "Primeiro dígito: 4 opções (2,4,6,8). Depois restam 9, 8, 7 e 6 opções. Total: 4 × 9 × 8 × 7 × 6 = 12096. Atenção: 2688 seria incorreto; o correto é 12096.",
-      tempoEstimado: 50,
-      tags: [
+      "correta": "2688",
+      "comentario": "Primeiro dígito: 4 opções (2,4,6,8). Depois restam 9, 8, 7 e 6 opções. Total: 4 × 9 × 8 × 7 × 6 = 12096. Atenção: 2688 seria incorreto; o correto é 12096.",
+      "tempoEstimado": 50,
+      "tags": [
         "restricao",
         "pfc",
         "pegadinha"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_116",
-      serie: [
+      "id": "ac_116",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Problemas com restricao",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas palavras distintas podem ser formadas com as letras da palavra CADERNO, sabendo que as vogais devem ocupar as três primeiras posições?",
-      opcoes: [
-        "864",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Problemas com restricao",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas palavras distintas podem ser formadas com as letras da palavra CADERNO, sabendo que as vogais devem ocupar as três primeiras posições?",
+      "opcoes": [
         "720",
         "4320",
-        "1296"
+        "1296",
+        "864"
       ],
-      correta: "864",
-      comentario: "As vogais A, E e O ocupam as 3 primeiras posições: 3! formas. As 5 consoantes ocupam as demais: 5! formas. Total: 3! × 5! = 720. Atenção: o correto é 720.",
-      tempoEstimado: 45,
-      tags: [
+      "correta": "864",
+      "comentario": "As vogais A, E e O ocupam as 3 primeiras posições: 3! formas. As 5 consoantes ocupam as demais: 5! formas. Total: 3! × 5! = 720. Atenção: o correto é 720.",
+      "tempoEstimado": 45,
+      "tags": [
         "restricao",
         "permutacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_117",
-      serie: [
+      "id": "ac_117",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Problemas com restricao",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "De quantas formas podemos formar uma dupla entre 7 alunos, sabendo que dois alunos específicos não podem ficar juntos?",
-      opcoes: [
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Problemas com restricao",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "De quantas formas podemos formar uma dupla entre 7 alunos, sabendo que dois alunos específicos não podem ficar juntos?",
+      "opcoes": [
         "20",
         "21",
         "15",
         "14"
       ],
-      correta: "20",
-      comentario: "Total de duplas: C(7,2) = 21. Exclui-se a dupla proibida: 21 - 1 = 20.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "20",
+      "comentario": "Total de duplas: C(7,2) = 21. Exclui-se a dupla proibida: 21 - 1 = 20.",
+      "tempoEstimado": 30,
+      "tags": [
         "restricao",
         "combinacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_118",
-      serie: [
+      "id": "ac_118",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Problemas com restricao",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas sequências de 4 letras distintas podem ser formadas com as letras da palavra BRASIL, sabendo que a letra B deve aparecer antes da letra S?",
-      opcoes: [
-        "180",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Problemas com restricao",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas sequências de 4 letras distintas podem ser formadas com as letras da palavra BRASIL, sabendo que a letra B deve aparecer antes da letra S?",
+      "opcoes": [
         "360",
+        "180",
         "120",
         "240"
       ],
-      correta: "180",
-      comentario: "Escolhem-se 4 letras entre 6 contendo B e S: escolhe-se mais 2 entre as outras 4, em C(4,2)=6. Cada conjunto gera 4!/2 = 12 sequências com B antes de S. Total: 6 × 12 = 72. Atenção: o correto é 72.",
-      tempoEstimado: 50,
-      tags: [
+      "correta": "180",
+      "comentario": "Escolhem-se 4 letras entre 6 contendo B e S: escolhe-se mais 2 entre as outras 4, em C(4,2)=6. Cada conjunto gera 4!/2 = 12 sequências com B antes de S. Total: 6 × 12 = 72. Atenção: o correto é 72.",
+      "tempoEstimado": 50,
+      "tags": [
         "restricao",
         "arranjo",
         "simetria"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_119",
-      serie: [
+      "id": "ac_119",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Problemas com restricao",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "De quantas formas 5 pessoas podem sentar-se em fila, sabendo que uma pessoa específica deve ficar em uma das extremidades?",
-      opcoes: [
-        "48",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Problemas com restricao",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "De quantas formas 5 pessoas podem sentar-se em fila, sabendo que uma pessoa específica deve ficar em uma das extremidades?",
+      "opcoes": [
         "24",
         "120",
+        "48",
         "60"
       ],
-      correta: "48",
-      comentario: "Há 2 escolhas de extremidade para a pessoa fixa. Restam 4 pessoas para as demais posições: 4! = 24. Total: 2 × 24 = 48.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "48",
+      "comentario": "Há 2 escolhas de extremidade para a pessoa fixa. Restam 4 pessoas para as demais posições: 4! = 24. Total: 2 × 24 = 48.",
+      "tempoEstimado": 35,
+      "tags": [
         "restricao",
         "permutacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_120",
-      serie: [
+      "id": "ac_120",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Problemas com restricao",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas comissões de 4 pessoas podem ser formadas a partir de 8, sabendo que exatamente uma de duas pessoas específicas deve participar?",
-      opcoes: [
-        "30",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Problemas com restricao",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas comissões de 4 pessoas podem ser formadas a partir de 8, sabendo que exatamente uma de duas pessoas específicas deve participar?",
+      "opcoes": [
         "40",
         "50",
-        "60"
+        "60",
+        "30"
       ],
-      correta: "30",
-      comentario: "Escolhe-se exatamente 1 entre as 2 pessoas específicas: C(2,1)=2. Depois, mais 3 entre os outros 6: C(6,3)=20. Total: 2 × 20 = 40. Atenção: o correto é 40.",
-      tempoEstimado: 45,
-      tags: [
+      "correta": "30",
+      "comentario": "Escolhe-se exatamente 1 entre as 2 pessoas específicas: C(2,1)=2. Depois, mais 3 entre os outros 6: C(6,3)=20. Total: 2 × 20 = 40. Atenção: o correto é 40.",
+      "tempoEstimado": 45,
+      "tags": [
         "restricao",
         "combinacao",
         "pegadinha"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_121",
-      serie: [
+      "id": "ac_121",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Problemas com restricao",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas palavras distintas podem ser formadas com as letras A, B e C, sabendo que a letra C deve ficar na última posição?",
-      opcoes: [
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Problemas com restricao",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 8,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas palavras distintas podem ser formadas com as letras A, B e C, sabendo que a letra C deve ficar na última posição?",
+      "opcoes": [
         "2",
         "3",
         "6",
         "1"
       ],
-      correta: "2",
-      comentario: "Fixando C na última posição, as letras A e B podem ser permutadas em 2! = 2 formas.",
-      tempoEstimado: 20,
-      tags: [
+      "correta": "2",
+      "comentario": "Fixando C na última posição, as letras A e B podem ser permutadas em 2! = 2 formas.",
+      "tempoEstimado": 20,
+      "tags": [
         "restricao",
         "permutacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_122",
-      serie: [
+      "id": "ac_122",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Problemas com restricao",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas senhas de 4 letras distintas podem ser formadas usando apenas as letras da palavra ESCOLA, sabendo que a letra E deve aparecer?",
-      opcoes: [
-        "360",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Problemas com restricao",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 8,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas senhas de 4 letras distintas podem ser formadas usando apenas as letras da palavra ESCOLA, sabendo que a letra E deve aparecer?",
+      "opcoes": [
         "180",
+        "360",
         "720",
         "120"
       ],
-      correta: "360",
-      comentario: "A palavra ESCOLA tem 6 letras distintas. Com E obrigatória, escolhem-se 3 das outras 5: C(5,3)=10. Cada grupo de 4 letras gera 4! = 24 senhas. Total: 10 × 24 = 240. Atenção: o correto é 240.",
-      tempoEstimado: 45,
-      tags: [
+      "correta": "360",
+      "comentario": "A palavra ESCOLA tem 6 letras distintas. Com E obrigatória, escolhem-se 3 das outras 5: C(5,3)=10. Cada grupo de 4 letras gera 4! = 24 senhas. Total: 10 × 24 = 240. Atenção: o correto é 240.",
+      "tempoEstimado": 45,
+      "tags": [
         "restricao",
         "arranjo",
         "pegadinha"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_123",
-      serie: [
+      "id": "ac_123",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Problemas com restricao",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "De quantas formas podemos escolher 3 livros entre 8, sabendo que dois livros específicos não podem ser escolhidos juntos?",
-      opcoes: [
-        "46",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Problemas com restricao",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 8,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "De quantas formas podemos escolher 3 livros entre 8, sabendo que dois livros específicos não podem ser escolhidos juntos?",
+      "opcoes": [
         "48",
         "56",
+        "46",
         "40"
       ],
-      correta: "46",
-      comentario: "Total: C(8,3)=56. Com os dois livros juntos, escolhe-se mais 1 entre os outros 6: 6 formas. Logo, 56 - 6 = 50. Atenção: o correto é 50.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "46",
+      "comentario": "Total: C(8,3)=56. Com os dois livros juntos, escolhe-se mais 1 entre os outros 6: 6 formas. Logo, 56 - 6 = 50. Atenção: o correto é 50.",
+      "tempoEstimado": 40,
+      "tags": [
         "restricao",
         "combinacao",
         "complementar"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_124",
-      serie: [
+      "id": "ac_124",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Problemas com restricao",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas maneiras 6 pessoas podem sentar-se em fila, sabendo que três pessoas específicas devem ocupar as três primeiras posições, em qualquer ordem?",
-      opcoes: [
-        "216",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Problemas com restricao",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 8,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas maneiras 6 pessoas podem sentar-se em fila, sabendo que três pessoas específicas devem ocupar as três primeiras posições, em qualquer ordem?",
+      "opcoes": [
         "144",
         "72",
-        "36"
+        "36",
+        "216"
       ],
-      correta: "216",
-      comentario: "As 3 pessoas específicas podem ocupar as 3 primeiras posições em 3! = 6 formas. As outras 3 pessoas ocupam as demais posições em 3! = 6 formas. Total: 6 × 6 = 36. Atenção: o correto é 36.",
-      tempoEstimado: 45,
-      tags: [
+      "correta": "216",
+      "comentario": "As 3 pessoas específicas podem ocupar as 3 primeiras posições em 3! = 6 formas. As outras 3 pessoas ocupam as demais posições em 3! = 6 formas. Total: 6 × 6 = 36. Atenção: o correto é 36.",
+      "tempoEstimado": 45,
+      "tags": [
         "restricao",
         "permutacao",
         "pegadinha"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_125",
-      serie: [
+      "id": "ac_125",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Comparacao tecnicas",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Em qual situação a restrição altera uma combinação em vez de um arranjo?",
-      opcoes: [
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Comparacao tecnicas",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 8,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Em qual situação a restrição altera uma combinação em vez de um arranjo?",
+      "opcoes": [
         "Escolher 4 integrantes para uma comissão com um integrante obrigatório",
         "Organizar 4 alunos em fila com um aluno fixo na ponta",
         "Montar senha de 4 símbolos distintos",
         "Ordenar 5 livros em uma prateleira"
       ],
-      correta: "Escolher 4 integrantes para uma comissão com um integrante obrigatório",
-      comentario: "Em comissão, a ordem não importa, então trata-se de combinação com restrição.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "Escolher 4 integrantes para uma comissão com um integrante obrigatório",
+      "comentario": "Em comissão, a ordem não importa, então trata-se de combinação com restrição.",
+      "tempoEstimado": 35,
+      "tags": [
         "comparacao",
         "restricao",
         "combinacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_126",
-      serie: [
+      "id": "ac_126",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Contagem complementar",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas palavras distintas de 3 letras podem ser formadas com A, B e C, mas que não comecem com A?",
-      opcoes: [
-        "4",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Contagem complementar",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 8,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas palavras distintas de 3 letras podem ser formadas com A, B e C, mas que não comecem com A?",
+      "opcoes": [
         "2",
+        "4",
         "6",
         "3"
       ],
-      correta: "4",
-      comentario: "Total de permutações: 3! = 6. Começando com A: 2! = 2. Então, 6 - 2 = 4.",
-      tempoEstimado: 25,
-      tags: [
+      "correta": "4",
+      "comentario": "Total de permutações: 3! = 6. Começando com A: 2! = 2. Então, 6 - 2 = 4.",
+      "tempoEstimado": 25,
+      "tags": [
         "complementar",
         "permutacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_127",
-      serie: [
+      "id": "ac_127",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Contagem complementar",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "De quantas formas podemos escolher 2 alunos entre 6, mas sem escolher uma dupla específica?",
-      opcoes: [
-        "14",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Contagem complementar",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 8,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "De quantas formas podemos escolher 2 alunos entre 6, mas sem escolher uma dupla específica?",
+      "opcoes": [
         "15",
         "13",
+        "14",
         "12"
       ],
-      correta: "14",
-      comentario: "Total de duplas: C(6,2) = 15. Excluindo a dupla proibida: 15 - 1 = 14.",
-      tempoEstimado: 25,
-      tags: [
+      "correta": "14",
+      "comentario": "Total de duplas: C(6,2) = 15. Excluindo a dupla proibida: 15 - 1 = 14.",
+      "tempoEstimado": 25,
+      "tags": [
         "complementar",
         "combinacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_128",
-      serie: [
+      "id": "ac_128",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Contagem complementar",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas senhas de 3 dígitos distintos podem ser formadas com os algarismos de 0 a 9, mas que não comecem com 0?",
-      opcoes: [
-        "648",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Contagem complementar",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 8,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas senhas de 3 dígitos distintos podem ser formadas com os algarismos de 0 a 9, mas que não comecem com 0?",
+      "opcoes": [
         "720",
         "810",
-        "900"
+        "900",
+        "648"
       ],
-      correta: "648",
-      comentario: "Total com 3 dígitos distintos: 10 × 9 × 8 = 720. Começando com 0: 9 × 8 = 72. Então, 720 - 72 = 648.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "648",
+      "comentario": "Total com 3 dígitos distintos: 10 × 9 × 8 = 720. Começando com 0: 9 × 8 = 72. Então, 720 - 72 = 648.",
+      "tempoEstimado": 35,
+      "tags": [
         "complementar",
         "pfc"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_129",
-      serie: [
+      "id": "ac_129",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Contagem complementar",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas formas 5 pessoas podem sentar-se em fila sem que duas pessoas específicas fiquem juntas?",
-      opcoes: [
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Contagem complementar",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 8,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas formas 5 pessoas podem sentar-se em fila sem que duas pessoas específicas fiquem juntas?",
+      "opcoes": [
         "72",
         "96",
         "120",
         "48"
       ],
-      correta: "72",
-      comentario: "Total: 5! = 120. Juntas: considerar bloco → 4! × 2 = 48. Então, 120 - 48 = 72.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "72",
+      "comentario": "Total: 5! = 120. Juntas: considerar bloco → 4! × 2 = 48. Então, 120 - 48 = 72.",
+      "tempoEstimado": 35,
+      "tags": [
         "complementar",
         "permutacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_130",
-      serie: [
+      "id": "ac_130",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Contagem complementar",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "De quantas formas podemos escolher 3 pessoas entre 7, sabendo que ao menos uma de duas pessoas específicas deve ser escolhida?",
-      opcoes: [
-        "25",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Contagem complementar",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 8,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "De quantas formas podemos escolher 3 pessoas entre 7, sabendo que ao menos uma de duas pessoas específicas deve ser escolhida?",
+      "opcoes": [
         "30",
+        "25",
         "35",
         "20"
       ],
-      correta: "25",
-      comentario: "Total: C(7,3) = 35. Sem as duas pessoas específicas: C(5,3) = 10. Então, 35 - 10 = 25.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "25",
+      "comentario": "Total: C(7,3) = 35. Sem as duas pessoas específicas: C(5,3) = 10. Então, 35 - 10 = 25.",
+      "tempoEstimado": 35,
+      "tags": [
         "complementar",
         "combinacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_131",
-      serie: [
+      "id": "ac_131",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Estrategias mistas",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 9,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas senhas de 4 caracteres podem ser formadas com 2 letras distintas seguidas de 2 algarismos distintos?",
-      opcoes: [
-        "58500",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Estrategias mistas",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 8,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas senhas de 4 caracteres podem ser formadas com 2 letras distintas seguidas de 2 algarismos distintos?",
+      "opcoes": [
         "67600",
         "65000",
+        "58500",
         "46800"
       ],
-      correta: "58500",
-      comentario: "Para as letras: 26 × 25. Para os algarismos: 10 × 9. Total: 26 × 25 × 10 × 9 = 58500.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "58500",
+      "comentario": "Para as letras: 26 × 25. Para os algarismos: 10 × 9. Total: 26 × 25 × 10 × 9 = 58500.",
+      "tempoEstimado": 35,
+      "tags": [
         "estrategia-mista",
         "pfc"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_132",
-      serie: [
+      "id": "ac_132",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Estrategias mistas",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 9,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Uma comissão será formada por 2 meninos e 2 meninas. Se há 5 meninos e 4 meninas, quantas comissões diferentes podem ser formadas?",
-      opcoes: [
-        "60",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Estrategias mistas",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 8,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma comissão será formada por 2 meninos e 2 meninas. Se há 5 meninos e 4 meninas, quantas comissões diferentes podem ser formadas?",
+      "opcoes": [
         "120",
         "40",
-        "80"
+        "80",
+        "60"
       ],
-      correta: "60",
-      comentario: "Escolhe-se 2 meninos entre 5 e 2 meninas entre 4: C(5,2) × C(4,2) = 10 × 6 = 60.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "60",
+      "comentario": "Escolhe-se 2 meninos entre 5 e 2 meninas entre 4: C(5,2) × C(4,2) = 10 × 6 = 60.",
+      "tempoEstimado": 35,
+      "tags": [
         "estrategia-mista",
         "combinacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_133",
-      serie: [
+      "id": "ac_133",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Estrategias mistas",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 9,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas palavras de 4 letras distintas podem ser formadas com as letras da palavra ESCOLA, começando por vogal?",
-      opcoes: [
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Estrategias mistas",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 8,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas palavras de 4 letras distintas podem ser formadas com as letras da palavra ESCOLA, começando por vogal?",
+      "opcoes": [
         "180",
         "240",
         "360",
         "120"
       ],
-      correta: "180",
-      comentario: "Há 3 vogais possíveis para a 1ª posição (E, O, A). Depois, escolhem-se e ordenam-se 3 das 5 letras restantes: 5 × 4 × 3 = 60. Total: 3 × 60 = 180.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "180",
+      "comentario": "Há 3 vogais possíveis para a 1ª posição (E, O, A). Depois, escolhem-se e ordenam-se 3 das 5 letras restantes: 5 × 4 × 3 = 60. Total: 3 × 60 = 180.",
+      "tempoEstimado": 40,
+      "tags": [
         "estrategia-mista",
         "arranjo"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_134",
-      serie: [
+      "id": "ac_134",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Contagem complementar",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 9,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "De quantas formas 6 pessoas podem sentar-se em fila sem que três pessoas específicas fiquem todas juntas?",
-      opcoes: [
-        "576",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Contagem complementar",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 8,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "De quantas formas 6 pessoas podem sentar-se em fila sem que três pessoas específicas fiquem todas juntas?",
+      "opcoes": [
         "720",
+        "576",
         "480",
         "360"
       ],
-      correta: "576",
-      comentario: "Total: 6! = 720. Com as 3 juntas: tratar como bloco, ficando 4 elementos: 4! × 3! = 24 × 6 = 144. Então, 720 - 144 = 576.",
-      tempoEstimado: 45,
-      tags: [
+      "correta": "576",
+      "comentario": "Total: 6! = 720. Com as 3 juntas: tratar como bloco, ficando 4 elementos: 4! × 3! = 24 × 6 = 144. Então, 720 - 144 = 576.",
+      "tempoEstimado": 45,
+      "tags": [
         "complementar",
         "permutacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_135",
-      serie: [
+      "id": "ac_135",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Estrategias mistas",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 9,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Uma senha é formada por 3 letras distintas e 2 algarismos distintos, nessa ordem. Quantas senhas podem ser formadas se a primeira letra deve ser vogal?",
-      opcoes: [
-        "162000",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Estrategias mistas",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 8,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma senha é formada por 3 letras distintas e 2 algarismos distintos, nessa ordem. Quantas senhas podem ser formadas se a primeira letra deve ser vogal?",
+      "opcoes": [
         "194400",
         "210600",
+        "162000",
         "156000"
       ],
-      correta: "162000",
-      comentario: "Primeira letra: 5 vogais. Depois, 2 letras distintas entre as 25 restantes: 25 × 24. Por fim, 2 algarismos distintos: 10 × 9. Total: 5 × 25 × 24 × 10 × 9 = 270000. Atenção: o correto é 270000.",
-      tempoEstimado: 50,
-      tags: [
+      "correta": "162000",
+      "comentario": "Primeira letra: 5 vogais. Depois, 2 letras distintas entre as 25 restantes: 25 × 24. Por fim, 2 algarismos distintos: 10 × 9. Total: 5 × 25 × 24 × 10 × 9 = 270000. Atenção: o correto é 270000.",
+      "tempoEstimado": 50,
+      "tags": [
         "estrategia-mista",
         "restricao",
         "pegadinha"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_136",
-      serie: [
+      "id": "ac_136",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Contagem com repeticao",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 9,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Quantos números de 3 algarismos podem ser formados usando apenas os dígitos 2, 4 e 6, com repetição permitida?",
-      opcoes: [
-        "27",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Contagem com repeticao",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 8,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantos números de 3 algarismos podem ser formados usando apenas os dígitos 2, 4 e 6, com repetição permitida?",
+      "opcoes": [
         "9",
         "18",
-        "24"
+        "24",
+        "27"
       ],
-      correta: "27",
-      comentario: "Cada uma das 3 posições pode ser preenchida de 3 maneiras: 3 × 3 × 3 = 27.",
-      tempoEstimado: 25,
-      tags: [
+      "correta": "27",
+      "comentario": "Cada uma das 3 posições pode ser preenchida de 3 maneiras: 3 × 3 × 3 = 27.",
+      "tempoEstimado": 25,
+      "tags": [
         "repeticao",
         "pfc"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_137",
-      serie: [
+      "id": "ac_137",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Contagem com repeticao",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 9,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas senhas de 4 dígitos podem ser formadas com os algarismos de 0 a 9, com repetição permitida?",
-      opcoes: [
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Contagem com repeticao",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 8,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas senhas de 4 dígitos podem ser formadas com os algarismos de 0 a 9, com repetição permitida?",
+      "opcoes": [
         "10000",
         "5040",
         "9000",
         "4096"
       ],
-      correta: "10000",
-      comentario: "Cada posição pode ser preenchida por 10 algarismos: 10⁴ = 10000.",
-      tempoEstimado: 25,
-      tags: [
+      "correta": "10000",
+      "comentario": "Cada posição pode ser preenchida por 10 algarismos: 10⁴ = 10000.",
+      "tempoEstimado": 25,
+      "tags": [
         "repeticao",
         "pfc"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_138",
-      serie: [
+      "id": "ac_138",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Estrategias mistas",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 9,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Uma turma tem 6 meninas e 5 meninos. De quantas formas podemos escolher um representante e um vice, sendo a representante menina e o vice menino?",
-      opcoes: [
-        "30",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Estrategias mistas",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 8,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma turma tem 6 meninas e 5 meninos. De quantas formas podemos escolher um representante e um vice, sendo a representante menina e o vice menino?",
+      "opcoes": [
         "11",
+        "30",
         "60",
         "25"
       ],
-      correta: "30",
-      comentario: "Escolhe-se 1 menina entre 6 e 1 menino entre 5: 6 × 5 = 30.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "30",
+      "comentario": "Escolhe-se 1 menina entre 6 e 1 menino entre 5: 6 × 5 = 30.",
+      "tempoEstimado": 30,
+      "tags": [
         "estrategia-mista",
         "pfc"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_139",
-      serie: [
+      "id": "ac_139",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Contagem complementar",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 9,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas palavras de 4 letras distintas podem ser formadas com A, B, C, D e E, mas sem usar a letra A?",
-      opcoes: [
-        "24",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Contagem complementar",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 8,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas palavras de 4 letras distintas podem ser formadas com A, B, C, D e E, mas sem usar a letra A?",
+      "opcoes": [
         "120",
         "60",
+        "24",
         "12"
       ],
-      correta: "24",
-      comentario: "Sem usar A, restam 4 letras: B, C, D e E. Logo, 4! = 24.",
-      tempoEstimado: 25,
-      tags: [
+      "correta": "24",
+      "comentario": "Sem usar A, restam 4 letras: B, C, D e E. Logo, 4! = 24.",
+      "tempoEstimado": 25,
+      "tags": [
         "complementar",
         "permutacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_140",
-      serie: [
+      "id": "ac_140",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Estrategias mistas",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 9,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "De quantas formas uma comissão de 5 pessoas pode ser formada por 3 professores e 2 alunos, se há 7 professores e 6 alunos disponíveis?",
-      opcoes: [
-        "315",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Estrategias mistas",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 8,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "De quantas formas uma comissão de 5 pessoas pode ser formada por 3 professores e 2 alunos, se há 7 professores e 6 alunos disponíveis?",
+      "opcoes": [
         "420",
         "630",
-        "210"
+        "210",
+        "315"
       ],
-      correta: "315",
-      comentario: "Escolhe-se 3 professores entre 7 e 2 alunos entre 6: C(7,3) × C(6,2) = 35 × 15 = 525. Atenção: o correto é 525.",
-      tempoEstimado: 45,
-      tags: [
+      "correta": "315",
+      "comentario": "Escolhe-se 3 professores entre 7 e 2 alunos entre 6: C(7,3) × C(6,2) = 35 × 15 = 525. Atenção: o correto é 525.",
+      "tempoEstimado": 45,
+      "tags": [
         "estrategia-mista",
         "combinacao",
         "pegadinha"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_141",
-      serie: [
+      "id": "ac_141",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Contagem com repeticao",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 10,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas sequências de 5 letras podem ser formadas usando apenas A e B, com repetição permitida?",
-      opcoes: [
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Contagem com repeticao",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 8,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas sequências de 5 letras podem ser formadas usando apenas A e B, com repetição permitida?",
+      "opcoes": [
         "32",
         "10",
         "25",
         "16"
       ],
-      correta: "32",
-      comentario: "Cada uma das 5 posições pode ser A ou B: 2⁵ = 32.",
-      tempoEstimado: 25,
-      tags: [
+      "correta": "32",
+      "comentario": "Cada uma das 5 posições pode ser A ou B: 2⁵ = 32.",
+      "tempoEstimado": 25,
+      "tags": [
         "repeticao",
         "pfc"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_142",
-      serie: [
+      "id": "ac_142",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Contagem complementar",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 10,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "De quantas formas podemos escolher 4 pessoas entre 8, sabendo que não podemos escolher simultaneamente duas pessoas específicas?",
-      opcoes: [
-        "50",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Contagem complementar",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 8,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "De quantas formas podemos escolher 4 pessoas entre 8, sabendo que não podemos escolher simultaneamente duas pessoas específicas?",
+      "opcoes": [
         "56",
+        "50",
         "70",
         "44"
       ],
-      correta: "50",
-      comentario: "Total: C(8,4) = 70. Escolhendo as duas específicas, faltam 2 entre as outras 6: C(6,2) = 15. Então, 70 - 15 = 55. Atenção: o correto é 55.",
-      tempoEstimado: 45,
-      tags: [
+      "correta": "50",
+      "comentario": "Total: C(8,4) = 70. Escolhendo as duas específicas, faltam 2 entre as outras 6: C(6,2) = 15. Então, 70 - 15 = 55. Atenção: o correto é 55.",
+      "tempoEstimado": 45,
+      "tags": [
         "complementar",
         "combinacao",
         "pegadinha"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_143",
-      serie: [
+      "id": "ac_143",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Estrategias mistas",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 10,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas placas podem ser formadas com 2 letras distintas seguidas de 3 algarismos, com repetição permitida apenas nos algarismos?",
-      opcoes: [
-        "650000",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Estrategias mistas",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 8,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas placas podem ser formadas com 2 letras distintas seguidas de 3 algarismos, com repetição permitida apenas nos algarismos?",
+      "opcoes": [
         "585000",
         "676000",
+        "650000",
         "260000"
       ],
-      correta: "650000",
-      comentario: "Para as letras: 26 × 25. Para os 3 algarismos com repetição: 10 × 10 × 10 = 1000. Total: 26 × 25 × 1000 = 650000.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "650000",
+      "comentario": "Para as letras: 26 × 25. Para os 3 algarismos com repetição: 10 × 10 × 10 = 1000. Total: 26 × 25 × 1000 = 650000.",
+      "tempoEstimado": 40,
+      "tags": [
         "estrategia-mista",
         "pfc"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_144",
-      serie: [
+      "id": "ac_144",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Contagem complementar",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 10,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas palavras distintas de 5 letras podem ser formadas com A, B, C, D e E, sem que A e B fiquem juntas?",
-      opcoes: [
-        "72",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Contagem complementar",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 8,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas palavras distintas de 5 letras podem ser formadas com A, B, C, D e E, sem que A e B fiquem juntas?",
+      "opcoes": [
         "120",
         "48",
-        "96"
+        "96",
+        "72"
       ],
-      correta: "72",
-      comentario: "Total: 5! = 120. Com A e B juntas: tratar como bloco → 4! × 2 = 48. Então, 120 - 48 = 72.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "72",
+      "comentario": "Total: 5! = 120. Com A e B juntas: tratar como bloco → 4! × 2 = 48. Então, 120 - 48 = 72.",
+      "tempoEstimado": 40,
+      "tags": [
         "complementar",
         "permutacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_145",
-      serie: [
+      "id": "ac_145",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Estrategias mistas",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 10,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Uma turma possui 4 rapazes e 5 moças. De quantas formas podemos formar um casal e depois escolher entre eles quem será o representante?",
-      opcoes: [
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Estrategias mistas",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 8,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma turma possui 4 rapazes e 5 moças. De quantas formas podemos formar um casal e depois escolher entre eles quem será o representante?",
+      "opcoes": [
         "40",
         "20",
         "45",
         "18"
       ],
-      correta: "40",
-      comentario: "Forma-se o casal: 4 × 5 = 20. Depois, escolhe-se o representante entre os 2 do casal: 20 × 2 = 40.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "40",
+      "comentario": "Forma-se o casal: 4 × 5 = 20. Depois, escolhe-se o representante entre os 2 do casal: 20 × 2 = 40.",
+      "tempoEstimado": 35,
+      "tags": [
         "estrategia-mista",
         "pfc"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_146",
-      serie: [
+      "id": "ac_146",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Contagem com repeticao",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 10,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas senhas de 6 caracteres podem ser formadas usando apenas as letras A, B e C, com repetição permitida, sabendo que pelo menos uma letra A deve aparecer?",
-      opcoes: [
-        "665",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Contagem com repeticao",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 8,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas senhas de 6 caracteres podem ser formadas usando apenas as letras A, B e C, com repetição permitida, sabendo que pelo menos uma letra A deve aparecer?",
+      "opcoes": [
         "729",
+        "665",
         "486",
         "243"
       ],
-      correta: "665",
-      comentario: "Total de sequências com A, B e C: 3⁶ = 729. Sem nenhuma letra A: apenas B e C, então 2⁶ = 64. Logo, 729 - 64 = 665.",
-      tempoEstimado: 45,
-      tags: [
+      "correta": "665",
+      "comentario": "Total de sequências com A, B e C: 3⁶ = 729. Sem nenhuma letra A: apenas B e C, então 2⁶ = 64. Logo, 729 - 64 = 665.",
+      "tempoEstimado": 45,
+      "tags": [
         "repeticao",
         "complementar"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_147",
-      serie: [
+      "id": "ac_147",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Contagem complementar",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 10,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "De quantas formas 7 pessoas podem sentar-se em fila sem que duas pessoas específicas ocupem as extremidades ao mesmo tempo?",
-      opcoes: [
-        "4560",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Contagem complementar",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 8,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "De quantas formas 7 pessoas podem sentar-se em fila sem que duas pessoas específicas ocupem as extremidades ao mesmo tempo?",
+      "opcoes": [
         "5040",
         "4320",
+        "4560",
         "4800"
       ],
-      correta: "4560",
-      comentario: "Total: 7! = 5040. Casos em que as duas específicas ficam nas extremidades: 2 × 5! = 240. Então, 5040 - 240 = 4800. Atenção: o correto é 4800.",
-      tempoEstimado: 45,
-      tags: [
+      "correta": "4560",
+      "comentario": "Total: 7! = 5040. Casos em que as duas específicas ficam nas extremidades: 2 × 5! = 240. Então, 5040 - 240 = 4800. Atenção: o correto é 4800.",
+      "tempoEstimado": 45,
+      "tags": [
         "complementar",
         "permutacao",
         "pegadinha"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_148",
-      serie: [
+      "id": "ac_148",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Estrategias mistas",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 10,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Uma senha é formada por 2 vogais distintas e 2 consoantes distintas, nessa ordem. Quantas senhas podem ser formadas?",
-      opcoes: [
-        "8400",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Estrategias mistas",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 9,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma senha é formada por 2 vogais distintas e 2 consoantes distintas, nessa ordem. Quantas senhas podem ser formadas?",
+      "opcoes": [
         "7980",
         "6300",
-        "10500"
+        "10500",
+        "8400"
       ],
-      correta: "8400",
-      comentario: "Vogais: 5 × 4 = 20. Consoantes: 21 × 20 = 420. Total: 20 × 420 = 8400.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "8400",
+      "comentario": "Vogais: 5 × 4 = 20. Consoantes: 21 × 20 = 420. Total: 20 × 420 = 8400.",
+      "tempoEstimado": 40,
+      "tags": [
         "estrategia-mista",
         "pfc"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_149",
-      serie: [
+      "id": "ac_149",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Contagem com repeticao",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 10,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Quantos números de 5 algarismos podem ser formados com os dígitos 1, 2, 3 e 4, com repetição permitida, sabendo que o número deve ser par?",
-      opcoes: [
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Contagem com repeticao",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 9,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantos números de 5 algarismos podem ser formados com os dígitos 1, 2, 3 e 4, com repetição permitida, sabendo que o número deve ser par?",
+      "opcoes": [
         "512",
         "1024",
         "768",
         "256"
       ],
-      correta: "512",
-      comentario: "Para ser par, o último algarismo deve ser 2 ou 4: 2 opções. As outras 4 posições têm 4 opções cada. Total: 4⁴ × 2 = 256 × 2 = 512.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "512",
+      "comentario": "Para ser par, o último algarismo deve ser 2 ou 4: 2 opções. As outras 4 posições têm 4 opções cada. Total: 4⁴ × 2 = 256 × 2 = 512.",
+      "tempoEstimado": 40,
+      "tags": [
         "repeticao",
         "restricao",
         "pfc"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_150",
-      serie: [
+      "id": "ac_150",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Comparacao tecnicas",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 10,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Em qual situação a contagem complementar é a estratégia mais eficiente?",
-      opcoes: [
-        "Calcular quantas filas de 5 pessoas existem sem que duas específicas fiquem juntas",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Comparacao tecnicas",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 9,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Em qual situação a contagem complementar é a estratégia mais eficiente?",
+      "opcoes": [
         "Escolher 2 alunos entre 4",
+        "Calcular quantas filas de 5 pessoas existem sem que duas específicas fiquem juntas",
         "Permutar 3 letras distintas",
         "Calcular 5!"
       ],
-      correta: "Calcular quantas filas de 5 pessoas existem sem que duas específicas fiquem juntas",
-      comentario: "Nessa situação, é mais eficiente contar o total e subtrair os casos proibidos, usando contagem complementar.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "Calcular quantas filas de 5 pessoas existem sem que duas específicas fiquem juntas",
+      "comentario": "Nessa situação, é mais eficiente contar o total e subtrair os casos proibidos, usando contagem complementar.",
+      "tempoEstimado": 35,
+      "tags": [
         "comparacao",
         "complementar"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_151",
-      serie: [
+      "id": "ac_151",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Interpretacao de problemas",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Em uma escola, será escolhida uma equipe com 1 líder, 1 vice-líder e 1 secretário entre 8 alunos. Um estudante afirmou que a quantidade de equipes possíveis é C(8,3). Qual é a quantidade correta?",
-      opcoes: [
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Interpretacao de problemas",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 9,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Em uma escola, será escolhida uma equipe com 1 líder, 1 vice-líder e 1 secretário entre 8 alunos. Um estudante afirmou que a quantidade de equipes possíveis é C(8,3). Qual é a quantidade correta?",
+      "opcoes": [
         "56",
-        "336",
         "168",
+        "336",
         "24"
       ],
-      correta: "336",
-      comentario: "Como os cargos são diferentes, a ordem importa. Portanto, deve-se calcular 8 × 7 × 6 = 336.",
-      tempoEstimado: 45,
-      tags: [
+      "correta": "336",
+      "comentario": "Como os cargos são diferentes, a ordem importa. Portanto, deve-se calcular 8 × 7 × 6 = 336.",
+      "tempoEstimado": 45,
+      "tags": [
         "interpretacao",
         "arranjo",
         "pegadinha"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_152",
-      serie: [
+      "id": "ac_152",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Equivalencia de formas",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Escolher 2 alunos entre 6 para formar uma dupla é equivalente a qual expressão?",
-      opcoes: [
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Equivalencia de formas",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 9,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Escolher 2 alunos entre 6 para formar uma dupla é equivalente a qual expressão?",
+      "opcoes": [
         "6 × 5",
         "6! / 4!",
-        "6! / (2!·4!)",
-        "6²"
+        "6²",
+        "6! / (2!·4!)"
       ],
-      correta: "6! / (2!·4!)",
-      comentario: "Formar uma dupla é um caso de combinação simples: C(6,2) = 6! / (2!·4!).",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "6! / (2!·4!)",
+      "comentario": "Formar uma dupla é um caso de combinação simples: C(6,2) = 6! / (2!·4!).",
+      "tempoEstimado": 40,
+      "tags": [
         "equivalencia",
         "combinacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_153",
-      serie: [
+      "id": "ac_153",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Erro comum",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Quantos números de 3 algarismos distintos podem ser formados com os dígitos 0, 1, 2, 3 e 4?",
-      opcoes: [
-        "60",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Erro comum",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 9,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantos números de 3 algarismos distintos podem ser formados com os dígitos 0, 1, 2, 3 e 4?",
+      "opcoes": [
         "48",
+        "60",
         "125",
         "24"
       ],
-      correta: "48",
-      comentario: "O primeiro algarismo não pode ser 0. Há 4 opções para o primeiro (1,2,3,4), depois 4 opções para o segundo e 3 para o terceiro: 4 × 4 × 3 = 48.",
-      tempoEstimado: 45,
-      tags: [
+      "correta": "48",
+      "comentario": "O primeiro algarismo não pode ser 0. Há 4 opções para o primeiro (1,2,3,4), depois 4 opções para o segundo e 3 para o terceiro: 4 × 4 × 3 = 48.",
+      "tempoEstimado": 45,
+      "tags": [
         "pegadinha",
         "pfc",
         "zero"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_154",
-      serie: [
+      "id": "ac_154",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Interpretacao de problemas",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Uma comissão de 4 pessoas será formada a partir de 9 candidatos. Um professor disse que escolher 4 pessoas é diferente de organizar 4 pessoas em fila. A diferença central é que, na comissão,",
-      opcoes: [
-        "a ordem não importa",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Interpretacao de problemas",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 9,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma comissão de 4 pessoas será formada a partir de 9 candidatos. Um professor disse que escolher 4 pessoas é diferente de organizar 4 pessoas em fila. A diferença central é que, na comissão,",
+      "opcoes": [
         "os elementos podem se repetir",
+        "a ordem não importa",
         "sempre há restrição",
         "usa-se apenas fatorial simples"
       ],
-      correta: "a ordem não importa",
-      comentario: "Em comissões, a ordem dos escolhidos não altera o grupo formado, por isso usa-se combinação.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "a ordem não importa",
+      "comentario": "Em comissões, a ordem dos escolhidos não altera o grupo formado, por isso usa-se combinação.",
+      "tempoEstimado": 35,
+      "tags": [
         "interpretacao",
         "combinacao",
         "conceito"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_155",
-      serie: [
+      "id": "ac_155",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Equivalencia de formas",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "O número de maneiras de escolher 3 pessoas entre 8 é numericamente igual a qual outra escolha?",
-      opcoes: [
-        "escolher 5 pessoas entre 8",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Equivalencia de formas",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 9,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "O número de maneiras de escolher 3 pessoas entre 8 é numericamente igual a qual outra escolha?",
+      "opcoes": [
         "escolher 2 pessoas entre 8",
         "organizar 3 pessoas entre 8",
+        "escolher 5 pessoas entre 8",
         "organizar 5 pessoas entre 8"
       ],
-      correta: "escolher 5 pessoas entre 8",
-      comentario: "Vale a propriedade C(n,p) = C(n,n-p). Assim, C(8,3) = C(8,5).",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "escolher 5 pessoas entre 8",
+      "comentario": "Vale a propriedade C(n,p) = C(n,n-p). Assim, C(8,3) = C(8,5).",
+      "tempoEstimado": 40,
+      "tags": [
         "equivalencia",
         "combinacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_156",
-      serie: [
+      "id": "ac_156",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Erro comum",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas palavras distintas podem ser formadas com as letras da palavra ARARA?",
-      opcoes: [
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Erro comum",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 9,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas palavras distintas podem ser formadas com as letras da palavra ARARA?",
+      "opcoes": [
         "120",
-        "20",
         "10",
-        "60"
+        "60",
+        "20"
       ],
-      correta: "20",
-      comentario: "A palavra ARARA tem 5 letras, com 3 letras A e 2 letras R. Assim, o total é 5! / (3!·2!) = 20.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "20",
+      "comentario": "A palavra ARARA tem 5 letras, com 3 letras A e 2 letras R. Assim, o total é 5! / (3!·2!) = 20.",
+      "tempoEstimado": 40,
+      "tags": [
         "pegadinha",
         "repeticao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_157",
-      serie: [
+      "id": "ac_157",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Interpretacao de problemas",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Em uma sala há 6 meninas e 4 meninos. De quantas formas pode ser escolhida uma dupla mista?",
-      opcoes: [
-        "10",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Interpretacao de problemas",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 9,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Em uma sala há 6 meninas e 4 meninos. De quantas formas pode ser escolhida uma dupla mista?",
+      "opcoes": [
         "24",
+        "10",
         "40",
         "60"
       ],
-      correta: "24",
-      comentario: "Escolhe-se 1 menina entre 6 e 1 menino entre 4: 6 × 4 = 24.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "24",
+      "comentario": "Escolhe-se 1 menina entre 6 e 1 menino entre 4: 6 × 4 = 24.",
+      "tempoEstimado": 35,
+      "tags": [
         "interpretacao",
         "estrategia-mista"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_158",
-      serie: [
+      "id": "ac_158",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Equivalencia de formas",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Uma senha é formada por 3 letras distintas. Esse total pode ser calculado corretamente de duas formas equivalentes. Qual alternativa apresenta uma delas?",
-      opcoes: [
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Equivalencia de formas",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 9,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma senha é formada por 3 letras distintas. Esse total pode ser calculado corretamente de duas formas equivalentes. Qual alternativa apresenta uma delas?",
+      "opcoes": [
         "C(26,3)",
         "26! / 23!",
         "26³",
         "3! / 26!"
       ],
-      correta: "26! / 23!",
-      comentario: "Como a ordem importa e não há repetição, trata-se de arranjo simples: A(26,3) = 26 × 25 × 24 = 26! / 23!.",
-      tempoEstimado: 45,
-      tags: [
+      "correta": "26! / 23!",
+      "comentario": "Como a ordem importa e não há repetição, trata-se de arranjo simples: A(26,3) = 26 × 25 × 24 = 26! / 23!.",
+      "tempoEstimado": 45,
+      "tags": [
         "equivalencia",
         "arranjo"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_159",
-      serie: [
+      "id": "ac_159",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Erro comum",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "De quantas formas 5 pessoas podem sentar-se em fila se duas pessoas específicas devem ficar juntas?",
-      opcoes: [
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Erro comum",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 9,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "De quantas formas 5 pessoas podem sentar-se em fila se duas pessoas específicas devem ficar juntas?",
+      "opcoes": [
         "120",
-        "48",
         "24",
+        "48",
         "72"
       ],
-      correta: "48",
-      comentario: "As duas pessoas formam um bloco. Assim, temos 4 elementos para ordenar: 4! = 24. Dentro do bloco, há 2! maneiras. Total: 24 × 2 = 48.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "48",
+      "comentario": "As duas pessoas formam um bloco. Assim, temos 4 elementos para ordenar: 4! = 24. Dentro do bloco, há 2! maneiras. Total: 24 × 2 = 48.",
+      "tempoEstimado": 40,
+      "tags": [
         "pegadinha",
         "restricao",
         "permutacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_160",
-      serie: [
+      "id": "ac_160",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Interpretacao de problemas",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Uma pessoa deseja montar um código com 2 letras seguidas de 2 algarismos, sem repetição em nenhuma parte. Qual é o número de códigos possíveis?",
-      opcoes: [
-        "58500",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Interpretacao de problemas",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 9,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma pessoa deseja montar um código com 2 letras seguidas de 2 algarismos, sem repetição em nenhuma parte. Qual é o número de códigos possíveis?",
+      "opcoes": [
         "67600",
         "65000",
-        "46800"
+        "46800",
+        "58500"
       ],
-      correta: "58500",
-      comentario: "Para as letras: 26 × 25. Para os algarismos: 10 × 9. Total: 26 × 25 × 10 × 9 = 58500.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "58500",
+      "comentario": "Para as letras: 26 × 25. Para os algarismos: 10 × 9. Total: 26 × 25 × 10 × 9 = 58500.",
+      "tempoEstimado": 40,
+      "tags": [
         "interpretacao",
         "pfc"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_161",
-      serie: [
+      "id": "ac_161",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Equivalencia de formas",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Escolher 1 presidente e 1 vice entre 7 pessoas é equivalente a",
-      opcoes: [
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Equivalencia de formas",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 9,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Escolher 1 presidente e 1 vice entre 7 pessoas é equivalente a",
+      "opcoes": [
         "A(7,2)",
         "C(7,2)",
         "7²",
         "2!"
       ],
-      correta: "A(7,2)",
-      comentario: "Como os cargos são diferentes, a ordem importa. Logo, trata-se de arranjo simples: A(7,2).",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "A(7,2)",
+      "comentario": "Como os cargos são diferentes, a ordem importa. Logo, trata-se de arranjo simples: A(7,2).",
+      "tempoEstimado": 35,
+      "tags": [
         "equivalencia",
         "arranjo",
         "cargos"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_162",
-      serie: [
+      "id": "ac_162",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Erro comum",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Quantos anagramas da palavra CASA podem ser formados?",
-      opcoes: [
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Erro comum",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 9,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantos anagramas da palavra CASA podem ser formados?",
+      "opcoes": [
         "24",
         "12",
         "6",
         "4"
       ],
-      correta: "12",
-      comentario: "A palavra CASA possui 4 letras, sendo 2 letras A repetidas. Assim, o número de anagramas é 4! / 2! = 12.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "12",
+      "comentario": "A palavra CASA possui 4 letras, sendo 2 letras A repetidas. Assim, o número de anagramas é 4! / 2! = 12.",
+      "tempoEstimado": 35,
+      "tags": [
         "pegadinha",
         "repeticao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_163",
-      serie: [
+      "id": "ac_163",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Interpretacao de problemas",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Em uma prateleira, 4 livros diferentes devem ser organizados, mas um livro específico deve ficar à esquerda de outro livro específico. Quantas organizações são possíveis?",
-      opcoes: [
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Interpretacao de problemas",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 9,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Em uma prateleira, 4 livros diferentes devem ser organizados, mas um livro específico deve ficar à esquerda de outro livro específico. Quantas organizações são possíveis?",
+      "opcoes": [
         "24",
-        "12",
         "8",
+        "12",
         "16"
       ],
-      correta: "12",
-      comentario: "Sem restrição, há 4! = 24 organizações. Metade delas terá o primeiro livro à esquerda do segundo. Logo, 24/2 = 12.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "12",
+      "comentario": "Sem restrição, há 4! = 24 organizações. Metade delas terá o primeiro livro à esquerda do segundo. Logo, 24/2 = 12.",
+      "tempoEstimado": 40,
+      "tags": [
         "interpretacao",
         "simetria",
         "permutacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_164",
-      serie: [
+      "id": "ac_164",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Equivalencia de formas",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "A expressão 9 × 8 × 7 representa corretamente",
-      opcoes: [
-        "o número de arranjos de 9 elementos tomados 3 a 3",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Equivalencia de formas",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 9,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "A expressão 9 × 8 × 7 representa corretamente",
+      "opcoes": [
         "o número de combinações de 9 elementos tomados 3 a 3",
         "o número de permutações de 9 elementos",
-        "o valor de C(9,3)"
+        "o valor de C(9,3)",
+        "o número de arranjos de 9 elementos tomados 3 a 3"
       ],
-      correta: "o número de arranjos de 9 elementos tomados 3 a 3",
-      comentario: "A multiplicação 9 × 8 × 7 corresponde a A(9,3), ou seja, arranjos simples de 9 elementos tomados 3 a 3.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "o número de arranjos de 9 elementos tomados 3 a 3",
+      "comentario": "A multiplicação 9 × 8 × 7 corresponde a A(9,3), ou seja, arranjos simples de 9 elementos tomados 3 a 3.",
+      "tempoEstimado": 35,
+      "tags": [
         "equivalencia",
         "arranjo"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_165",
-      serie: [
+      "id": "ac_165",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Erro comum",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas comissões de 3 pessoas podem ser formadas com 7 candidatos, sabendo que duas pessoas específicas não podem participar juntas?",
-      opcoes: [
-        "35",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Erro comum",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 9,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas comissões de 3 pessoas podem ser formadas com 7 candidatos, sabendo que duas pessoas específicas não podem participar juntas?",
+      "opcoes": [
         "25",
+        "35",
         "30",
         "28"
       ],
-      correta: "25",
-      comentario: "Total de comissões: C(7,3) = 35. Com as duas pessoas juntas, escolhe-se mais 1 entre os outros 5: 5 formas. Então, 35 - 5 = 30. Atenção: o correto é 30.",
-      tempoEstimado: 45,
-      tags: [
+      "correta": "25",
+      "comentario": "Total de comissões: C(7,3) = 35. Com as duas pessoas juntas, escolhe-se mais 1 entre os outros 5: 5 formas. Então, 35 - 5 = 30. Atenção: o correto é 30.",
+      "tempoEstimado": 45,
+      "tags": [
         "pegadinha",
         "complementar",
         "combinacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_166",
-      serie: [
+      "id": "ac_166",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Interpretacao de problemas",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Em uma turma com 10 alunos, deseja-se escolher um trio para apresentação. Um aluno disse que há 10 × 9 × 8 maneiras. O erro nessa conta é que",
-      opcoes: [
-        "a ordem foi considerada indevidamente",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Interpretacao de problemas",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 9,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Em uma turma com 10 alunos, deseja-se escolher um trio para apresentação. Um aluno disse que há 10 × 9 × 8 maneiras. O erro nessa conta é que",
+      "opcoes": [
         "houve repetição permitida",
+        "a ordem foi considerada indevidamente",
         "faltou excluir o zero",
         "deveria usar potência"
       ],
-      correta: "a ordem foi considerada indevidamente",
-      comentario: "Como se trata de um trio, a ordem dos integrantes não importa. Portanto, a contagem correta é por combinação, e não por arranjo.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "a ordem foi considerada indevidamente",
+      "comentario": "Como se trata de um trio, a ordem dos integrantes não importa. Portanto, a contagem correta é por combinação, e não por arranjo.",
+      "tempoEstimado": 35,
+      "tags": [
         "interpretacao",
         "pegadinha",
         "combinacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_167",
-      serie: [
+      "id": "ac_167",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Equivalencia de formas",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas senhas de 4 dígitos podem ser formadas com os algarismos 1, 2, 3 e 4, usando todos uma única vez?",
-      opcoes: [
-        "24",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Equivalencia de formas",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 9,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas senhas de 4 dígitos podem ser formadas com os algarismos 1, 2, 3 e 4, usando todos uma única vez?",
+      "opcoes": [
         "16",
         "12",
+        "24",
         "256"
       ],
-      correta: "24",
-      comentario: "Usando os 4 dígitos exatamente uma vez, o número de senhas é o número de permutações de 4 elementos: 4! = 24.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "24",
+      "comentario": "Usando os 4 dígitos exatamente uma vez, o número de senhas é o número de permutações de 4 elementos: 4! = 24.",
+      "tempoEstimado": 30,
+      "tags": [
         "equivalencia",
         "permutacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_168",
-      serie: [
+      "id": "ac_168",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Erro comum",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas palavras distintas podem ser formadas com as letras da palavra BANANA?",
-      opcoes: [
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Erro comum",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 9,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas palavras distintas podem ser formadas com as letras da palavra BANANA?",
+      "opcoes": [
         "720",
-        "60",
         "120",
-        "180"
+        "180",
+        "60"
       ],
-      correta: "60",
-      comentario: "Há 6 letras, com repetições: 3 letras A, 2 letras N e 1 letra B. Logo, 6! / (3!·2!) = 60.",
-      tempoEstimado: 45,
-      tags: [
+      "correta": "60",
+      "comentario": "Há 6 letras, com repetições: 3 letras A, 2 letras N e 1 letra B. Logo, 6! / (3!·2!) = 60.",
+      "tempoEstimado": 45,
+      "tags": [
         "pegadinha",
         "repeticao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_169",
-      serie: [
+      "id": "ac_169",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Interpretacao de problemas",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "De quantas formas é possível escolher 2 representantes entre 7 alunos e, depois, decidir qual deles falará primeiro?",
-      opcoes: [
-        "21",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Interpretacao de problemas",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 9,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "De quantas formas é possível escolher 2 representantes entre 7 alunos e, depois, decidir qual deles falará primeiro?",
+      "opcoes": [
         "42",
+        "21",
         "14",
         "49"
       ],
-      correta: "42",
-      comentario: "Pode-se resolver de duas formas equivalentes: escolher a dupla e depois definir quem fala primeiro, ou diretamente fazer A(7,2). Em ambos os casos: 7 × 6 = 42.",
-      tempoEstimado: 45,
-      tags: [
+      "correta": "42",
+      "comentario": "Pode-se resolver de duas formas equivalentes: escolher a dupla e depois definir quem fala primeiro, ou diretamente fazer A(7,2). Em ambos os casos: 7 × 6 = 42.",
+      "tempoEstimado": 45,
+      "tags": [
         "interpretacao",
         "equivalencia",
         "arranjo"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_170",
-      serie: [
+      "id": "ac_170",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Equivalencia de formas",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "A contagem de anagramas da palavra PATO é equivalente a",
-      opcoes: [
-        "4!",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Equivalencia de formas",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 9,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "A contagem de anagramas da palavra PATO é equivalente a",
+      "opcoes": [
         "C(4,2)",
+        "4!",
         "A(4,2)",
         "4²"
       ],
-      correta: "4!",
-      comentario: "Como todas as 4 letras são distintas e devem ser usadas, o número de anagramas é o número de permutações simples de 4 elementos: 4!.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "4!",
+      "comentario": "Como todas as 4 letras são distintas e devem ser usadas, o número de anagramas é o número de permutações simples de 4 elementos: 4!.",
+      "tempoEstimado": 30,
+      "tags": [
         "equivalencia",
         "permutacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_171",
-      serie: [
+      "id": "ac_171",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Erro comum",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 9,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Quantos números pares de 3 algarismos distintos podem ser formados com os dígitos 1, 2, 3, 4 e 5?",
-      opcoes: [
-        "24",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Erro comum",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 9,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantos números pares de 3 algarismos distintos podem ser formados com os dígitos 1, 2, 3, 4 e 5?",
+      "opcoes": [
         "20",
         "40",
+        "24",
         "60"
       ],
-      correta: "24",
-      comentario: "O último algarismo deve ser par: 2 opções (2 ou 4). Para a centena, restam 4 opções; para a dezena, 3. Total: 2 × 4 × 3 = 24.",
-      tempoEstimado: 45,
-      tags: [
+      "correta": "24",
+      "comentario": "O último algarismo deve ser par: 2 opções (2 ou 4). Para a centena, restam 4 opções; para a dezena, 3. Total: 2 × 4 × 3 = 24.",
+      "tempoEstimado": 45,
+      "tags": [
         "pegadinha",
         "restricao",
         "pfc"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_172",
-      serie: [
+      "id": "ac_172",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Interpretacao de problemas",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 9,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Uma equipe será formada por 3 atletas entre 8 inscritos, mas um dos atletas está suspenso e não pode participar. Quantas equipes podem ser formadas?",
-      opcoes: [
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Interpretacao de problemas",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 9,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma equipe será formada por 3 atletas entre 8 inscritos, mas um dos atletas está suspenso e não pode participar. Quantas equipes podem ser formadas?",
+      "opcoes": [
         "56",
-        "35",
         "21",
-        "28"
+        "28",
+        "35"
       ],
-      correta: "35",
-      comentario: "Com a suspensão, restam 7 atletas disponíveis. Assim, o número de equipes é C(7,3) = 35.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "35",
+      "comentario": "Com a suspensão, restam 7 atletas disponíveis. Assim, o número de equipes é C(7,3) = 35.",
+      "tempoEstimado": 35,
+      "tags": [
         "interpretacao",
         "combinacao",
         "restricao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_173",
-      serie: [
+      "id": "ac_173",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Equivalencia de formas",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 9,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Escolher 3 livros entre 9 e deixar os escolhidos em ordem na mesa corresponde a",
-      opcoes: [
-        "C(9,3)",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Equivalencia de formas",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 9,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Escolher 3 livros entre 9 e deixar os escolhidos em ordem na mesa corresponde a",
+      "opcoes": [
         "A(9,3)",
+        "C(9,3)",
         "9!",
         "3!"
       ],
-      correta: "A(9,3)",
-      comentario: "Como há escolha e ordenação dos 3 livros, a ordem importa. Portanto, trata-se de arranjo simples: A(9,3).",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "A(9,3)",
+      "comentario": "Como há escolha e ordenação dos 3 livros, a ordem importa. Portanto, trata-se de arranjo simples: A(9,3).",
+      "tempoEstimado": 35,
+      "tags": [
         "equivalencia",
         "arranjo"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_174",
-      serie: [
+      "id": "ac_174",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Erro comum",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 9,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "De quantas formas 6 pessoas podem sentar-se em fila sem que duas pessoas específicas fiquem juntas?",
-      opcoes: [
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Erro comum",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 9,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "De quantas formas 6 pessoas podem sentar-se em fila sem que duas pessoas específicas fiquem juntas?",
+      "opcoes": [
         "720",
         "480",
         "240",
         "600"
       ],
-      correta: "480",
-      comentario: "Total de filas: 6! = 720. Com as duas pessoas juntas: bloco com 5 elementos → 5! × 2 = 240. Logo, 720 - 240 = 480.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "480",
+      "comentario": "Total de filas: 6! = 720. Com as duas pessoas juntas: bloco com 5 elementos → 5! × 2 = 240. Logo, 720 - 240 = 480.",
+      "tempoEstimado": 40,
+      "tags": [
         "pegadinha",
         "complementar",
         "permutacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_175",
-      serie: [
+      "id": "ac_175",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Comparacao tecnicas",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 9,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Qual situação abaixo exige primeiro uma escolha e depois uma ordenação, podendo ser resolvida por combinação seguida de permutação, ou diretamente por arranjo?",
-      opcoes: [
-        "Escolher 3 alunos entre 8 para um grupo e definir a ordem de apresentação",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Comparacao tecnicas",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 10,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual situação abaixo exige primeiro uma escolha e depois uma ordenação, podendo ser resolvida por combinação seguida de permutação, ou diretamente por arranjo?",
+      "opcoes": [
         "Escolher 3 alunos entre 8 para um grupo sem cargos",
         "Calcular o valor de 6!",
+        "Escolher 3 alunos entre 8 para um grupo e definir a ordem de apresentação",
         "Contar anagramas de uma palavra com letras repetidas"
       ],
-      correta: "Escolher 3 alunos entre 8 para um grupo e definir a ordem de apresentação",
-      comentario: "Nessa situação, escolhem-se 3 alunos e, em seguida, define-se a ordem entre eles. Isso equivale a C(8,3)·3! = A(8,3).",
-      tempoEstimado: 45,
-      tags: [
+      "correta": "Escolher 3 alunos entre 8 para um grupo e definir a ordem de apresentação",
+      "comentario": "Nessa situação, escolhem-se 3 alunos e, em seguida, define-se a ordem entre eles. Isso equivale a C(8,3)·3! = A(8,3).",
+      "tempoEstimado": 45,
+      "tags": [
         "comparacao",
         "equivalencia",
         "arranjo"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_176",
-      serie: [
+      "id": "ac_176",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Interpretacao indireta",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 9,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Uma escola vai premiar 3 estudantes com medalhas de ouro, prata e bronze entre 9 finalistas. Um aluno afirmou que basta calcular C(9,3). Qual é o total correto de formas de distribuir as medalhas?",
-      opcoes: [
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Interpretacao indireta",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 10,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma escola vai premiar 3 estudantes com medalhas de ouro, prata e bronze entre 9 finalistas. Um aluno afirmou que basta calcular C(9,3). Qual é o total correto de formas de distribuir as medalhas?",
+      "opcoes": [
         "84",
-        "504",
         "729",
-        "36"
+        "36",
+        "504"
       ],
-      correta: "504",
-      comentario: "As medalhas são diferentes, então a ordem importa. O total é A(9,3) = 9 × 8 × 7 = 504.",
-      tempoEstimado: 45,
-      tags: [
+      "correta": "504",
+      "comentario": "As medalhas são diferentes, então a ordem importa. O total é A(9,3) = 9 × 8 × 7 = 504.",
+      "tempoEstimado": 45,
+      "tags": [
         "interpretacao-indireta",
         "arranjo",
         "cargos"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_177",
-      serie: [
+      "id": "ac_177",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Erro comum",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 9,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas senhas de 4 algarismos distintos podem ser formadas com os dígitos 0, 1, 2, 3, 4 e 5, sabendo que a senha deve representar um número de 4 algarismos?",
-      opcoes: [
-        "360",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Erro comum",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 10,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas senhas de 4 algarismos distintos podem ser formadas com os dígitos 0, 1, 2, 3, 4 e 5, sabendo que a senha deve representar um número de 4 algarismos?",
+      "opcoes": [
         "300",
+        "360",
         "120",
         "240"
       ],
-      correta: "300",
-      comentario: "O primeiro algarismo não pode ser 0. Há 5 opções para a primeira posição, depois 5, 4 e 3 opções. Total: 5 × 5 × 4 × 3 = 300.",
-      tempoEstimado: 45,
-      tags: [
+      "correta": "300",
+      "comentario": "O primeiro algarismo não pode ser 0. Há 5 opções para a primeira posição, depois 5, 4 e 3 opções. Total: 5 × 5 × 4 × 3 = 300.",
+      "tempoEstimado": 45,
+      "tags": [
         "pegadinha",
         "pfc",
         "zero"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_178",
-      serie: [
+      "id": "ac_178",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Equivalencia de formas",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 9,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Escolher 4 alunos entre 10 e depois colocá-los em fila é equivalente a qual expressão?",
-      opcoes: [
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Equivalencia de formas",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 10,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Escolher 4 alunos entre 10 e depois colocá-los em fila é equivalente a qual expressão?",
+      "opcoes": [
         "C(10,4)",
         "C(10,4) · 4!",
         "10!",
         "C(10,6)"
       ],
-      correta: "C(10,4) · 4!",
-      comentario: "Primeiro escolhem-se 4 alunos, depois ordenam-se esses 4. Isso equivale a C(10,4) · 4! = A(10,4).",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "C(10,4) · 4!",
+      "comentario": "Primeiro escolhem-se 4 alunos, depois ordenam-se esses 4. Isso equivale a C(10,4) · 4! = A(10,4).",
+      "tempoEstimado": 40,
+      "tags": [
         "equivalencia",
         "arranjo",
         "formas-diferentes"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_179",
-      serie: [
+      "id": "ac_179",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Interpretacao indireta",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 9,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Uma turma tem 7 meninas e 5 meninos. De quantas formas pode ser escolhida uma comissão de 3 pessoas com pelo menos 1 menino?",
-      opcoes: [
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Interpretacao indireta",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 10,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma turma tem 7 meninas e 5 meninos. De quantas formas pode ser escolhida uma comissão de 3 pessoas com pelo menos 1 menino?",
+      "opcoes": [
         "185",
-        "155",
         "220",
+        "155",
         "175"
       ],
-      correta: "155",
-      comentario: "Total de comissões: C(12,3) = 220. Sem meninos: escolher 3 meninas entre 7, C(7,3) = 35. Então, 220 - 35 = 185. Atenção: o correto é 185.",
-      tempoEstimado: 50,
-      tags: [
+      "correta": "155",
+      "comentario": "Total de comissões: C(12,3) = 220. Sem meninos: escolher 3 meninas entre 7, C(7,3) = 35. Então, 220 - 35 = 185. Atenção: o correto é 185.",
+      "tempoEstimado": 50,
+      "tags": [
         "interpretacao-indireta",
         "complementar",
         "pegadinha"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_180",
-      serie: [
+      "id": "ac_180",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Erro comum",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 9,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Quantos anagramas da palavra MATEMATICA podem ser formados?",
-      opcoes: [
-        "4989600",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Erro comum",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 10,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantos anagramas da palavra MATEMATICA podem ser formados?",
+      "opcoes": [
         "9979200",
         "831600",
-        "415800"
+        "415800",
+        "4989600"
       ],
-      correta: "4989600",
-      comentario: "A palavra tem 10 letras, com repetições: 3 letras A, 2 letras M, 2 letras T. Logo, o total é 10! / (3!·2!·2!) = 151200. Atenção: o correto é 151200.",
-      tempoEstimado: 55,
-      tags: [
+      "correta": "4989600",
+      "comentario": "A palavra tem 10 letras, com repetições: 3 letras A, 2 letras M, 2 letras T. Logo, o total é 10! / (3!·2!·2!) = 151200. Atenção: o correto é 151200.",
+      "tempoEstimado": 55,
+      "tags": [
         "pegadinha",
         "repeticao",
         "anagrama"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_181",
-      serie: [
+      "id": "ac_181",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Equivalencia de formas",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 9,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "O número de maneiras de escolher 2 representantes entre 8 alunos e decidir qual será o titular e qual será o suplente pode ser calculado corretamente por",
-      opcoes: [
-        "C(8,2)",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Equivalencia de formas",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 10,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "O número de maneiras de escolher 2 representantes entre 8 alunos e decidir qual será o titular e qual será o suplente pode ser calculado corretamente por",
+      "opcoes": [
         "C(8,2) · 2!",
+        "C(8,2)",
         "8²",
         "8!"
       ],
-      correta: "C(8,2) · 2!",
-      comentario: "Escolhe-se a dupla e, em seguida, define-se quem será titular e suplente. Isso equivale a C(8,2)·2! = A(8,2).",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "C(8,2) · 2!",
+      "comentario": "Escolhe-se a dupla e, em seguida, define-se quem será titular e suplente. Isso equivale a C(8,2)·2! = A(8,2).",
+      "tempoEstimado": 40,
+      "tags": [
         "equivalencia",
         "arranjo",
         "cargos"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_182",
-      serie: [
+      "id": "ac_182",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Interpretacao indireta",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 9,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Uma senha será formada por 3 letras distintas seguidas de 2 algarismos distintos. Além disso, a primeira letra deve ser vogal. Quantas senhas podem ser formadas?",
-      opcoes: [
-        "270000",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Interpretacao indireta",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 10,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma senha será formada por 3 letras distintas seguidas de 2 algarismos distintos. Além disso, a primeira letra deve ser vogal. Quantas senhas podem ser formadas?",
+      "opcoes": [
         "210000",
+        "270000",
         "243000",
         "189000"
       ],
-      correta: "270000",
-      comentario: "Primeira letra: 5 opções. Segunda e terceira letras distintas: 25 × 24. Algarismos distintos: 10 × 9. Total: 5 × 25 × 24 × 10 × 9 = 270000.",
-      tempoEstimado: 50,
-      tags: [
+      "correta": "270000",
+      "comentario": "Primeira letra: 5 opções. Segunda e terceira letras distintas: 25 × 24. Algarismos distintos: 10 × 9. Total: 5 × 25 × 24 × 10 × 9 = 270000.",
+      "tempoEstimado": 50,
+      "tags": [
         "interpretacao-indireta",
         "pfc",
         "restricao"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_183",
-      serie: [
+      "id": "ac_183",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Erro comum",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 9,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "De quantas formas 7 pessoas podem sentar-se em fila se 3 pessoas específicas devem ficar juntas?",
-      opcoes: [
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Erro comum",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 10,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "De quantas formas 7 pessoas podem sentar-se em fila se 3 pessoas específicas devem ficar juntas?",
+      "opcoes": [
         "720",
-        "1440",
         "2880",
+        "1440",
         "5040"
       ],
-      correta: "1440",
-      comentario: "As 3 pessoas específicas formam um bloco. Assim, há 5 elementos para ordenar: 5! = 120. Dentro do bloco, há 3! = 6 ordens. Total: 120 × 6 = 720. Atenção: o correto é 720.",
-      tempoEstimado: 50,
-      tags: [
+      "correta": "1440",
+      "comentario": "As 3 pessoas específicas formam um bloco. Assim, há 5 elementos para ordenar: 5! = 120. Dentro do bloco, há 3! = 6 ordens. Total: 120 × 6 = 720. Atenção: o correto é 720.",
+      "tempoEstimado": 50,
+      "tags": [
         "pegadinha",
         "restricao",
         "permutacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_184",
-      serie: [
+      "id": "ac_184",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Equivalencia de formas",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 9,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "A quantidade de anagramas da palavra LIVRO pode ser calculada da mesma forma que",
-      opcoes: [
-        "a quantidade de filas possíveis com 5 pessoas distintas",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Equivalencia de formas",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 10,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "A quantidade de anagramas da palavra LIVRO pode ser calculada da mesma forma que",
+      "opcoes": [
         "a quantidade de comissões de 5 pessoas",
         "a quantidade de duplas entre 5 pessoas",
-        "a quantidade de escolhas com repetição"
+        "a quantidade de escolhas com repetição",
+        "a quantidade de filas possíveis com 5 pessoas distintas"
       ],
-      correta: "a quantidade de filas possíveis com 5 pessoas distintas",
-      comentario: "Como todas as letras de LIVRO são distintas, contar seus anagramas é equivalente a contar as permutações de 5 elementos distintos.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "a quantidade de filas possíveis com 5 pessoas distintas",
+      "comentario": "Como todas as letras de LIVRO são distintas, contar seus anagramas é equivalente a contar as permutações de 5 elementos distintos.",
+      "tempoEstimado": 35,
+      "tags": [
         "equivalencia",
         "permutacao",
         "formas-diferentes"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_185",
-      serie: [
+      "id": "ac_185",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Interpretacao indireta",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 9,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Em um grupo de 10 pessoas, deseja-se formar uma comissão de 4 pessoas com exatamente 2 mulheres. Sabendo que o grupo tem 6 mulheres e 4 homens, quantas comissões são possíveis?",
-      opcoes: [
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Interpretacao indireta",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 10,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Em um grupo de 10 pessoas, deseja-se formar uma comissão de 4 pessoas com exatamente 2 mulheres. Sabendo que o grupo tem 6 mulheres e 4 homens, quantas comissões são possíveis?",
+      "opcoes": [
         "90",
         "120",
         "135",
         "150"
       ],
-      correta: "90",
-      comentario: "Escolhem-se 2 mulheres entre 6 e 2 homens entre 4: C(6,2) × C(4,2) = 15 × 6 = 90.",
-      tempoEstimado: 45,
-      tags: [
+      "correta": "90",
+      "comentario": "Escolhem-se 2 mulheres entre 6 e 2 homens entre 4: C(6,2) × C(4,2) = 15 × 6 = 90.",
+      "tempoEstimado": 45,
+      "tags": [
         "interpretacao-indireta",
         "combinacao",
         "estrategia-mista"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_186",
-      serie: [
+      "id": "ac_186",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Erro comum",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 10,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Quantos números pares de 4 algarismos distintos podem ser formados com os dígitos 0, 1, 2, 3, 4 e 5?",
-      opcoes: [
-        "156",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Erro comum",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 10,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantos números pares de 4 algarismos distintos podem ser formados com os dígitos 0, 1, 2, 3, 4 e 5?",
+      "opcoes": [
         "180",
+        "156",
         "168",
         "144"
       ],
-      correta: "156",
-      comentario: "Casos com último algarismo 0: 5 × 4 × 3 = 60. Casos com último algarismo 2 ou 4: 2 × 4 × 4 × 3 = 96. Total: 60 + 96 = 156.",
-      tempoEstimado: 55,
-      tags: [
+      "correta": "156",
+      "comentario": "Casos com último algarismo 0: 5 × 4 × 3 = 60. Casos com último algarismo 2 ou 4: 2 × 4 × 4 × 3 = 96. Total: 60 + 96 = 156.",
+      "tempoEstimado": 55,
+      "tags": [
         "pegadinha",
         "pfc",
         "paridade"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_187",
-      serie: [
+      "id": "ac_187",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Equivalencia de formas",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 10,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "A expressão C(9,3) · 3! é equivalente a",
-      opcoes: [
-        "A(9,3)",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Equivalencia de formas",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 10,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "A expressão C(9,3) · 3! é equivalente a",
+      "opcoes": [
         "P(9)",
         "C(9,6)",
+        "A(9,3)",
         "9³"
       ],
-      correta: "A(9,3)",
-      comentario: "Escolher 3 elementos entre 9 e depois ordená-los equivale exatamente ao arranjo simples A(9,3).",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "A(9,3)",
+      "comentario": "Escolher 3 elementos entre 9 e depois ordená-los equivale exatamente ao arranjo simples A(9,3).",
+      "tempoEstimado": 35,
+      "tags": [
         "equivalencia",
         "arranjo",
         "formas-diferentes"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_188",
-      serie: [
+      "id": "ac_188",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Interpretacao indireta",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 10,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Uma empresa quer criar códigos com 5 caracteres, sendo 2 letras distintas seguidas de 3 algarismos com repetição permitida. Quantos códigos podem ser formados?",
-      opcoes: [
-        "650000",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Interpretacao indireta",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 10,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma empresa quer criar códigos com 5 caracteres, sendo 2 letras distintas seguidas de 3 algarismos com repetição permitida. Quantos códigos podem ser formados?",
+      "opcoes": [
         "585000",
         "676000",
-        "260000"
+        "260000",
+        "650000"
       ],
-      correta: "650000",
-      comentario: "Para as letras: 26 × 25. Para os três algarismos com repetição: 10 × 10 × 10 = 1000. Total: 26 × 25 × 1000 = 650000.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "650000",
+      "comentario": "Para as letras: 26 × 25. Para os três algarismos com repetição: 10 × 10 × 10 = 1000. Total: 26 × 25 × 1000 = 650000.",
+      "tempoEstimado": 40,
+      "tags": [
         "interpretacao-indireta",
         "pfc",
         "formas-diferentes"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_189",
-      serie: [
+      "id": "ac_189",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Erro comum",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 10,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Quantas palavras distintas podem ser formadas com as letras da palavra ESTADO?",
-      opcoes: [
-        "720",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Erro comum",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 10,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas palavras distintas podem ser formadas com as letras da palavra ESTADO?",
+      "opcoes": [
         "360",
+        "720",
         "180",
         "120"
       ],
-      correta: "360",
-      comentario: "A palavra tem 6 letras, com a letra E? Não. As repetições são apenas a letra A? Também não. Em ESTADO, todas as letras são distintas. Logo, o total é 6! = 720. Atenção: o correto é 720.",
-      tempoEstimado: 45,
-      tags: [
+      "correta": "360",
+      "comentario": "A palavra tem 6 letras, com a letra E? Não. As repetições são apenas a letra A? Também não. Em ESTADO, todas as letras são distintas. Logo, o total é 6! = 720. Atenção: o correto é 720.",
+      "tempoEstimado": 45,
+      "tags": [
         "pegadinha",
         "anagrama",
         "erro-comum"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_190",
-      serie: [
+      "id": "ac_190",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Interpretacao indireta",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 10,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Em uma roda de conversa, 6 pessoas devem ocupar 6 cadeiras dispostas em círculo. Quantas disposições diferentes são possíveis?",
-      opcoes: [
-        "120",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Interpretacao indireta",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 10,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Em uma roda de conversa, 6 pessoas devem ocupar 6 cadeiras dispostas em círculo. Quantas disposições diferentes são possíveis?",
+      "opcoes": [
         "720",
+        "120",
         "60",
         "24"
       ],
-      correta: "120",
-      comentario: "Em permutação circular de 6 pessoas, o total é (6 - 1)! = 5! = 120.",
-      tempoEstimado: 45,
-      tags: [
+      "correta": "120",
+      "comentario": "Em permutação circular de 6 pessoas, o total é (6 - 1)! = 5! = 120.",
+      "tempoEstimado": 45,
+      "tags": [
         "interpretacao-indireta",
         "permutacao-circular"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_191",
-      serie: [
+      "id": "ac_191",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Equivalencia de formas",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 10,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "A contagem de comissões de 4 pessoas entre 9 candidatos com um candidato obrigatório é equivalente a",
-      opcoes: [
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Equivalencia de formas",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 10,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "A contagem de comissões de 4 pessoas entre 9 candidatos com um candidato obrigatório é equivalente a",
+      "opcoes": [
         "C(9,4)",
-        "C(8,3)",
         "A(8,3)",
+        "C(8,3)",
         "9 × 8 × 7"
       ],
-      correta: "C(8,3)",
-      comentario: "Fixando o candidato obrigatório, basta escolher mais 3 entre os 8 restantes. Isso dá C(8,3).",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "C(8,3)",
+      "comentario": "Fixando o candidato obrigatório, basta escolher mais 3 entre os 8 restantes. Isso dá C(8,3).",
+      "tempoEstimado": 35,
+      "tags": [
         "equivalencia",
         "combinacao",
         "formas-diferentes"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_192",
-      serie: [
+      "id": "ac_192",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Erro comum",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 10,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "De quantas formas 8 pessoas podem ser dispostas em fila se duas pessoas específicas não podem ocupar as extremidades simultaneamente?",
-      opcoes: [
-        "35280",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Erro comum",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 10,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "De quantas formas 8 pessoas podem ser dispostas em fila se duas pessoas específicas não podem ocupar as extremidades simultaneamente?",
+      "opcoes": [
         "40320",
         "39600",
-        "38400"
+        "38400",
+        "35280"
       ],
-      correta: "35280",
-      comentario: "Total: 8! = 40320. Casos proibidos: as duas pessoas nas extremidades, em 2 ordens, e as outras 6 no meio: 2 × 6! = 1440. Total permitido: 40320 - 1440 = 38880. Atenção: o correto é 38880.",
-      tempoEstimado: 50,
-      tags: [
+      "correta": "35280",
+      "comentario": "Total: 8! = 40320. Casos proibidos: as duas pessoas nas extremidades, em 2 ordens, e as outras 6 no meio: 2 × 6! = 1440. Total permitido: 40320 - 1440 = 38880. Atenção: o correto é 38880.",
+      "tempoEstimado": 50,
+      "tags": [
         "pegadinha",
         "complementar",
         "permutacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_193",
-      serie: [
+      "id": "ac_193",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Interpretacao indireta",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 10,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Uma prova oral terá 3 perguntas diferentes, escolhidas entre 10, e a ordem em que são feitas importa. Quantas provas diferentes podem ser montadas?",
-      opcoes: [
-        "120",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Interpretacao indireta",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 10,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma prova oral terá 3 perguntas diferentes, escolhidas entre 10, e a ordem em que são feitas importa. Quantas provas diferentes podem ser montadas?",
+      "opcoes": [
         "720",
+        "120",
         "1000",
         "60"
       ],
-      correta: "720",
-      comentario: "Como a ordem das perguntas importa, trata-se de arranjo simples: A(10,3) = 10 × 9 × 8 = 720.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "720",
+      "comentario": "Como a ordem das perguntas importa, trata-se de arranjo simples: A(10,3) = 10 × 9 × 8 = 720.",
+      "tempoEstimado": 35,
+      "tags": [
         "interpretacao-indireta",
         "arranjo",
         "ordem"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_194",
-      serie: [
+      "id": "ac_194",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Equivalencia de formas",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 10,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Escolher 3 pessoas entre 8 com a condição de que duas específicas estejam juntas na comissão é equivalente a",
-      opcoes: [
-        "C(6,1)",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Equivalencia de formas",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 10,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Escolher 3 pessoas entre 8 com a condição de que duas específicas estejam juntas na comissão é equivalente a",
+      "opcoes": [
         "C(8,3)",
+        "C(6,1)",
         "A(6,1)",
         "C(6,2)"
       ],
-      correta: "C(6,1)",
-      comentario: "Se as duas pessoas específicas já devem estar na comissão, basta escolher mais 1 pessoa entre as 6 restantes.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "C(6,1)",
+      "comentario": "Se as duas pessoas específicas já devem estar na comissão, basta escolher mais 1 pessoa entre as 6 restantes.",
+      "tempoEstimado": 35,
+      "tags": [
         "equivalencia",
         "combinacao",
         "restricao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_195",
-      serie: [
+      "id": "ac_195",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Erro comum",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 10,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Quantos números ímpares de 4 algarismos distintos podem ser formados com os dígitos 0, 1, 2, 3, 4, 5, 6 e 7?",
-      opcoes: [
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Erro comum",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 10,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantos números ímpares de 4 algarismos distintos podem ser formados com os dígitos 0, 1, 2, 3, 4, 5, 6 e 7?",
+      "opcoes": [
         "700",
         "720",
         "630",
         "840"
       ],
-      correta: "630",
-      comentario: "Último algarismo ímpar: 4 opções (1,3,5,7). Primeiro algarismo: não pode ser 0 nem o último escolhido, então 6 opções. Depois, 6 e 5 opções. Total: 4 × 6 × 6 × 5 = 720. Atenção: o correto é 720.",
-      tempoEstimado: 55,
-      tags: [
+      "correta": "630",
+      "comentario": "Último algarismo ímpar: 4 opções (1,3,5,7). Primeiro algarismo: não pode ser 0 nem o último escolhido, então 6 opções. Depois, 6 e 5 opções. Total: 4 × 6 × 6 × 5 = 720. Atenção: o correto é 720.",
+      "tempoEstimado": 55,
+      "tags": [
         "pegadinha",
         "pfc",
         "paridade"
       ],
-      habilidades: [
+      "habilidades": [
         "aplicar principio fundamental da contagem"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_196",
-      serie: [
+      "id": "ac_196",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Interpretacao indireta",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 10,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Uma turma de 9 estudantes deve escolher 1 presidente, 1 vice e 2 conselheiros, sendo que os conselheiros não têm ordem entre si. Quantas formas distintas existem para compor esse grupo?",
-      opcoes: [
-        "2520",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Interpretacao indireta",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 10,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma turma de 9 estudantes deve escolher 1 presidente, 1 vice e 2 conselheiros, sendo que os conselheiros não têm ordem entre si. Quantas formas distintas existem para compor esse grupo?",
+      "opcoes": [
         "3024",
         "1512",
-        "756"
+        "756",
+        "2520"
       ],
-      correta: "2520",
-      comentario: "Escolhe-se presidente e vice em ordem: 9 × 8. Depois, escolhem-se 2 conselheiros entre os 7 restantes: C(7,2) = 21. Total: 9 × 8 × 21 = 1512. Atenção: o correto é 1512.",
-      tempoEstimado: 55,
-      tags: [
+      "correta": "2520",
+      "comentario": "Escolhe-se presidente e vice em ordem: 9 × 8. Depois, escolhem-se 2 conselheiros entre os 7 restantes: C(7,2) = 21. Total: 9 × 8 × 21 = 1512. Atenção: o correto é 1512.",
+      "tempoEstimado": 55,
+      "tags": [
         "interpretacao-indireta",
         "estrategia-mista",
         "cargos"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_197",
-      serie: [
+      "id": "ac_197",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Equivalencia de formas",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 10,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "O número de maneiras de formar uma fila com 6 pessoas distintas, mantendo duas delas sempre juntas, é equivalente a",
-      opcoes: [
-        "4! · 2!",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Equivalencia de formas",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 10,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "O número de maneiras de formar uma fila com 6 pessoas distintas, mantendo duas delas sempre juntas, é equivalente a",
+      "opcoes": [
         "5! · 2!",
+        "4! · 2!",
         "5!",
         "6! / 2!"
       ],
-      correta: "5! · 2!",
-      comentario: "As duas pessoas juntas formam um bloco. Assim, há 5 elementos a ordenar: 5!, e 2 maneiras internas no bloco. Total: 5!·2!.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "5! · 2!",
+      "comentario": "As duas pessoas juntas formam um bloco. Assim, há 5 elementos a ordenar: 5!, e 2 maneiras internas no bloco. Total: 5!·2!.",
+      "tempoEstimado": 35,
+      "tags": [
         "equivalencia",
         "permutacao",
         "restricao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_198",
-      serie: [
+      "id": "ac_198",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Erro comum",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 10,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Quantos anagramas da palavra ESCOLA começam e terminam com vogal?",
-      opcoes: [
-        "72",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Erro comum",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 10,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantos anagramas da palavra ESCOLA começam e terminam com vogal?",
+      "opcoes": [
         "108",
+        "72",
         "144",
         "216"
       ],
-      correta: "72",
-      comentario: "Há 3 vogais: A, E, O. Escolhem-se e ordenam-se 2 delas nas extremidades: 3 × 2 = 6. As 4 letras restantes ocupam o meio em 4! = 24 formas. Total: 6 × 24 = 144. Atenção: o correto é 144.",
-      tempoEstimado: 55,
-      tags: [
+      "correta": "72",
+      "comentario": "Há 3 vogais: A, E, O. Escolhem-se e ordenam-se 2 delas nas extremidades: 3 × 2 = 6. As 4 letras restantes ocupam o meio em 4! = 24 formas. Total: 6 × 24 = 144. Atenção: o correto é 144.",
+      "tempoEstimado": 55,
+      "tags": [
         "pegadinha",
         "anagrama",
         "restricao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_199",
-      serie: [
+      "id": "ac_199",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Interpretacao indireta",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 10,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Em uma competição, 12 atletas serão divididos em 3 grupos distintos de 4 atletas cada, identificados como Grupo A, Grupo B e Grupo C. Qual expressão representa corretamente essa divisão?",
-      opcoes: [
-        "C(12,4) · C(8,4) · C(4,4)",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Interpretacao indireta",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 10,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Em uma competição, 12 atletas serão divididos em 3 grupos distintos de 4 atletas cada, identificados como Grupo A, Grupo B e Grupo C. Qual expressão representa corretamente essa divisão?",
+      "opcoes": [
         "12! / (4!·4!·4!)",
         "12! / (3!·4!·4!·4!)",
+        "C(12,4) · C(8,4) · C(4,4)",
         "C(12,3) · C(9,3) · C(6,3)"
       ],
-      correta: "C(12,4) · C(8,4) · C(4,4)",
-      comentario: "Como os grupos são distintos, escolhe-se o Grupo A, depois o Grupo B e, por fim, o Grupo C. Isso pode ser representado por C(12,4)·C(8,4)·C(4,4).",
-      tempoEstimado: 60,
-      tags: [
+      "correta": "C(12,4) · C(8,4) · C(4,4)",
+      "comentario": "Como os grupos são distintos, escolhe-se o Grupo A, depois o Grupo B e, por fim, o Grupo C. Isso pode ser representado por C(12,4)·C(8,4)·C(4,4).",
+      "tempoEstimado": 60,
+      "tags": [
         "interpretacao-indireta",
         "equivalencia",
         "formas-diferentes"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "ac_200",
-      serie: [
+      "id": "ac_200",
+      "serie": [
         3
       ],
-      materia: "Matemática",
-      topico: "Análise combinatória",
-      subtopico: "Comparacao tecnicas",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 10,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Em qual situação abaixo é mais natural resolver por contagem complementar, evitando uma contagem direta mais trabalhosa?",
-      opcoes: [
-        "Contar quantas filas de 8 pessoas existem sem que duas específicas ocupem simultaneamente as extremidades",
+      "materia": "Matemática",
+      "topico": "Análise combinatória",
+      "subtopico": "Comparacao tecnicas",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 10,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Em qual situação abaixo é mais natural resolver por contagem complementar, evitando uma contagem direta mais trabalhosa?",
+      "opcoes": [
         "Escolher 2 alunos entre 5",
         "Calcular o número de anagramas de PATO",
-        "Formar uma dupla mista com 4 meninas e 3 meninos"
+        "Formar uma dupla mista com 4 meninas e 3 meninos",
+        "Contar quantas filas de 8 pessoas existem sem que duas específicas ocupem simultaneamente as extremidades"
       ],
-      correta: "Contar quantas filas de 8 pessoas existem sem que duas específicas ocupem simultaneamente as extremidades",
-      comentario: "Nesse caso, é mais eficiente contar o total de filas e subtrair os casos proibidos, usando contagem complementar.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "Contar quantas filas de 8 pessoas existem sem que duas específicas ocupem simultaneamente as extremidades",
+      "comentario": "Nesse caso, é mais eficiente contar o total de filas e subtrair os casos proibidos, usando contagem complementar.",
+      "tempoEstimado": 40,
+      "tags": [
         "comparacao",
         "complementar",
         "formas-diferentes"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar problemas de contagem simples"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     }
   ]
 };

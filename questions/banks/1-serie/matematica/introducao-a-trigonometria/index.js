@@ -1,23 +1,23 @@
 export const introducaoATrigonometria = {
-  id: "matematica_introducao_a_trigonometria",
-  materia: "Matematica",
-  serie: [
+  "id": "matematica_introducao_a_trigonometria",
+  "materia": "Matematica",
+  "serie": [
     1
   ],
-  topico: "Introducao a Trigonometria",
-  metadados: {
-    disciplinaId: "matematica",
-    base: "ESCOLAR",
-    eixo: "Geometria",
-    frente: "Trigonometria",
-    searchAliases: [
+  "topico": "Introducao a Trigonometria",
+  "metadados": {
+    "disciplinaId": "matematica",
+    "base": "ESCOLAR",
+    "eixo": "Geometria",
+    "frente": "Trigonometria",
+    "searchAliases": [
       "seno",
       "cosseno",
       "tangente",
       "triangulo retangulo",
       "angulos notaveis"
     ],
-    subtopicosBase: [
+    "subtopicosBase": [
       "Conceitos iniciais",
       "Triangulo retangulo",
       "Hipotenusa e catetos",
@@ -32,7 +32,7 @@ export const introducaoATrigonometria = {
       "Pegadinha",
       "Equivalencia de formas"
     ],
-    habilidadesBase: [
+    "habilidadesBase": [
       "identificar elementos da trigonometria no triangulo retangulo",
       "relacionar hipotenusa e catetos",
       "calcular seno cosseno e tangente",
@@ -40,7606 +40,7609 @@ export const introducaoATrigonometria = {
       "resolver problemas basicos com trigonometria",
       "relacionar razoes trigonometricas equivalentes",
       "evitar erros comuns em trigonometria introdutoria"
-    ]
+    ],
+    "auditado": true,
+    "auditadoEm": "2026-04-10",
+    "auditoriaTipo": "varredura-mais-profunda"
   },
-  questoes: [
+  "questoes": [
     {
-      id: "trig_001",
-      serie: [
+      "id": "trig_001",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Conceitos iniciais",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 1,
-      cognicao: "interpretacao",
-      tipo: "multipla_escolha",
-      enunciado: "A trigonometria introdutoria estuda relacoes entre lados e angulos principalmente em:",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Conceitos iniciais",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 1,
+      "cognicao": "interpretacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "A trigonometria introdutoria estuda relacoes entre lados e angulos principalmente em:",
+      "opcoes": [
         "triangulos retangulos",
         "circunferencias quaisquer",
         "retangulos",
         "poligonos regulares"
       ],
-      correta: "triangulos retangulos",
-      comentario: "No nivel introdutorio, a base e o triangulo retangulo.",
-      tempoEstimado: 20,
-      tags: [
+      "correta": "triangulos retangulos",
+      "comentario": "No nivel introdutorio, a base e o triangulo retangulo.",
+      "tempoEstimado": 20,
+      "tags": [
         "conceito",
         "trigonometria"
       ],
-      habilidades: [
+      "habilidades": [
         "identificar-elementos-da-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_002",
-      serie: [
+      "id": "trig_002",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Triangulo retangulo",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 1,
-      cognicao: "interpretacao",
-      tipo: "multipla_escolha",
-      enunciado: "Qual triangulo possui um angulo de 90 graus?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Triangulo retangulo",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 1,
+      "cognicao": "interpretacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual triangulo possui um angulo de 90 graus?",
+      "opcoes": [
         "equilatero",
-        "isosceles",
         "retangulo",
+        "isosceles",
         "escaleno"
       ],
-      correta: "retangulo",
-      comentario: "O triangulo retangulo possui um angulo reto.",
-      tempoEstimado: 20,
-      tags: [
+      "correta": "retangulo",
+      "comentario": "O triangulo retangulo possui um angulo reto.",
+      "tempoEstimado": 20,
+      "tags": [
         "triangulo-retangulo",
         "conceito"
       ],
-      habilidades: [
+      "habilidades": [
         "identificar-triangulo-retangulo"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_003",
-      serie: [
+      "id": "trig_003",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Hipotenusa e catetos",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 1,
-      cognicao: "interpretacao",
-      tipo: "multipla_escolha",
-      enunciado: "Em um triangulo retangulo, o lado oposto ao angulo de 90 graus e a:",
-      opcoes: [
-        "hipotenusa",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Hipotenusa e catetos",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 1,
+      "cognicao": "interpretacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Em um triangulo retangulo, o lado oposto ao angulo de 90 graus e a:",
+      "opcoes": [
         "cateto adjacente",
         "base",
+        "hipotenusa",
         "altura"
       ],
-      correta: "hipotenusa",
-      comentario: "A hipotenusa e sempre o maior lado do triangulo retangulo.",
-      tempoEstimado: 20,
-      tags: [
+      "correta": "hipotenusa",
+      "comentario": "A hipotenusa e sempre o maior lado do triangulo retangulo.",
+      "tempoEstimado": 20,
+      "tags": [
         "hipotenusa",
         "conceito"
       ],
-      habilidades: [
+      "habilidades": [
         "relacionar-hipotenusa-e-catetos"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_004",
-      serie: [
+      "id": "trig_004",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Hipotenusa e catetos",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 1,
-      cognicao: "interpretacao",
-      tipo: "multipla_escolha",
-      enunciado: "Os dois lados que formam o angulo reto sao chamados de:",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Hipotenusa e catetos",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 1,
+      "cognicao": "interpretacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Os dois lados que formam o angulo reto sao chamados de:",
+      "opcoes": [
         "hipotenusas",
-        "catetos",
         "diagonais",
-        "alturas"
+        "alturas",
+        "catetos"
       ],
-      correta: "catetos",
-      comentario: "Os lados que se encontram no angulo de 90 graus sao os catetos.",
-      tempoEstimado: 20,
-      tags: [
+      "correta": "catetos",
+      "comentario": "Os lados que se encontram no angulo de 90 graus sao os catetos.",
+      "tempoEstimado": 20,
+      "tags": [
         "catetos",
         "conceito"
       ],
-      habilidades: [
+      "habilidades": [
         "relacionar-hipotenusa-e-catetos"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_005",
-      serie: [
+      "id": "trig_005",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Razoes trigonometricas",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 1,
-      cognicao: "interpretacao",
-      tipo: "multipla_escolha",
-      enunciado: "A razao entre cateto oposto e hipotenusa recebe o nome de:",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Razoes trigonometricas",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 1,
+      "cognicao": "interpretacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "A razao entre cateto oposto e hipotenusa recebe o nome de:",
+      "opcoes": [
+        "seno",
         "cosseno",
         "tangente",
-        "seno",
         "secante"
       ],
-      correta: "seno",
-      comentario: "Seno = cateto oposto / hipotenusa.",
-      tempoEstimado: 20,
-      tags: [
+      "correta": "seno",
+      "comentario": "Seno = cateto oposto / hipotenusa.",
+      "tempoEstimado": 20,
+      "tags": [
         "seno",
         "conceito"
       ],
-      habilidades: [
+      "habilidades": [
         "identificar-razoes-trigonometricas"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_006",
-      serie: [
+      "id": "trig_006",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Razoes trigonometricas",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 1,
-      cognicao: "interpretacao",
-      tipo: "multipla_escolha",
-      enunciado: "A razao entre cateto adjacente e hipotenusa recebe o nome de:",
-      opcoes: [
-        "cosseno",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Razoes trigonometricas",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 1,
+      "cognicao": "interpretacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "A razao entre cateto adjacente e hipotenusa recebe o nome de:",
+      "opcoes": [
         "tangente",
+        "cosseno",
         "seno",
         "cotangente"
       ],
-      correta: "cosseno",
-      comentario: "Cosseno = cateto adjacente / hipotenusa.",
-      tempoEstimado: 20,
-      tags: [
+      "correta": "cosseno",
+      "comentario": "Cosseno = cateto adjacente / hipotenusa.",
+      "tempoEstimado": 20,
+      "tags": [
         "cosseno",
         "conceito"
       ],
-      habilidades: [
+      "habilidades": [
         "identificar-razoes-trigonometricas"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_007",
-      serie: [
+      "id": "trig_007",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Razoes trigonometricas",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 1,
-      cognicao: "interpretacao",
-      tipo: "multipla_escolha",
-      enunciado: "A razao entre cateto oposto e cateto adjacente recebe o nome de:",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Razoes trigonometricas",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 1,
+      "cognicao": "interpretacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "A razao entre cateto oposto e cateto adjacente recebe o nome de:",
+      "opcoes": [
         "seno",
         "cosseno",
         "tangente",
         "hipotenusa"
       ],
-      correta: "tangente",
-      comentario: "Tangente = cateto oposto / cateto adjacente.",
-      tempoEstimado: 20,
-      tags: [
+      "correta": "tangente",
+      "comentario": "Tangente = cateto oposto / cateto adjacente.",
+      "tempoEstimado": 20,
+      "tags": [
         "tangente",
         "conceito"
       ],
-      habilidades: [
+      "habilidades": [
         "identificar-razoes-trigonometricas"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_008",
-      serie: [
+      "id": "trig_008",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Triangulo retangulo",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 1,
-      cognicao: "interpretacao",
-      tipo: "multipla_escolha",
-      enunciado: "Se um triangulo tem angulos 30 graus, 60 graus e 90 graus, ele e:",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Triangulo retangulo",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 1,
+      "cognicao": "interpretacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Se um triangulo tem angulos 30 graus, 60 graus e 90 graus, ele e:",
+      "opcoes": [
         "obtusangulo",
-        "retangulo",
         "acutangulo",
-        "impossivel"
+        "impossivel",
+        "retangulo"
       ],
-      correta: "retangulo",
-      comentario: "A presenca de um angulo de 90 graus o torna retangulo.",
-      tempoEstimado: 20,
-      tags: [
+      "correta": "retangulo",
+      "comentario": "A presenca de um angulo de 90 graus o torna retangulo.",
+      "tempoEstimado": 20,
+      "tags": [
         "triangulo-retangulo",
         "angulos"
       ],
-      habilidades: [
+      "habilidades": [
         "identificar-triangulo-retangulo"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_009",
-      serie: [
+      "id": "trig_009",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Hipotenusa e catetos",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 1,
-      cognicao: "interpretacao",
-      tipo: "multipla_escolha",
-      enunciado: "Em relacao a um angulo agudo de referencia, o cateto que fica em frente a ele e o:",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Hipotenusa e catetos",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 1,
+      "cognicao": "interpretacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Em relacao a um angulo agudo de referencia, o cateto que fica em frente a ele e o:",
+      "opcoes": [
         "cateto oposto",
         "cateto adjacente",
         "hipotenusa",
         "diametro"
       ],
-      correta: "cateto oposto",
-      comentario: "O cateto oposto fica de frente para o angulo escolhido.",
-      tempoEstimado: 20,
-      tags: [
+      "correta": "cateto oposto",
+      "comentario": "O cateto oposto fica de frente para o angulo escolhido.",
+      "tempoEstimado": 20,
+      "tags": [
         "cateto-oposto",
         "conceito"
       ],
-      habilidades: [
+      "habilidades": [
         "relacionar-hipotenusa-e-catetos"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_010",
-      serie: [
+      "id": "trig_010",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Hipotenusa e catetos",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 1,
-      cognicao: "interpretacao",
-      tipo: "multipla_escolha",
-      enunciado: "Em relacao a um angulo agudo de referencia, o cateto que toca esse angulo e nao e hipotenusa e o:",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Hipotenusa e catetos",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 1,
+      "cognicao": "interpretacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Em relacao a um angulo agudo de referencia, o cateto que toca esse angulo e nao e hipotenusa e o:",
+      "opcoes": [
         "cateto oposto",
         "cateto adjacente",
         "diametro",
         "raio"
       ],
-      correta: "cateto adjacente",
-      comentario: "O cateto adjacente toca o angulo e nao e a hipotenusa.",
-      tempoEstimado: 20,
-      tags: [
+      "correta": "cateto adjacente",
+      "comentario": "O cateto adjacente toca o angulo e nao e a hipotenusa.",
+      "tempoEstimado": 20,
+      "tags": [
         "cateto-adjacente",
         "conceito"
       ],
-      habilidades: [
+      "habilidades": [
         "relacionar-hipotenusa-e-catetos"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_011",
-      serie: [
+      "id": "trig_011",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Seno",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 2,
-      cognicao: "interpretacao",
-      tipo: "multipla_escolha",
-      enunciado: "Se sen(theta) = cateto oposto / hipotenusa, qual grandeza fica no denominador?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Seno",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 2,
+      "cognicao": "interpretacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Se sen(theta) = cateto oposto / hipotenusa, qual grandeza fica no denominador?",
+      "opcoes": [
         "cateto oposto",
         "cateto adjacente",
         "hipotenusa",
         "angulo"
       ],
-      correta: "hipotenusa",
-      comentario: "No seno, a hipotenusa fica no denominador.",
-      tempoEstimado: 20,
-      tags: [
+      "correta": "hipotenusa",
+      "comentario": "No seno, a hipotenusa fica no denominador.",
+      "tempoEstimado": 20,
+      "tags": [
         "seno",
         "estrutura"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-seno"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_012",
-      serie: [
+      "id": "trig_012",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Cosseno",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 2,
-      cognicao: "interpretacao",
-      tipo: "multipla_escolha",
-      enunciado: "Se cos(theta) = cateto adjacente / hipotenusa, qual grandeza fica no numerador?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Cosseno",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 2,
+      "cognicao": "interpretacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Se cos(theta) = cateto adjacente / hipotenusa, qual grandeza fica no numerador?",
+      "opcoes": [
         "hipotenusa",
-        "cateto adjacente",
         "cateto oposto",
-        "angulo"
+        "angulo",
+        "cateto adjacente"
       ],
-      correta: "cateto adjacente",
-      comentario: "No cosseno, o numerador e o cateto adjacente.",
-      tempoEstimado: 20,
-      tags: [
+      "correta": "cateto adjacente",
+      "comentario": "No cosseno, o numerador e o cateto adjacente.",
+      "tempoEstimado": 20,
+      "tags": [
         "cosseno",
         "estrutura"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-cosseno"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_013",
-      serie: [
+      "id": "trig_013",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Tangente",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 2,
-      cognicao: "interpretacao",
-      tipo: "multipla_escolha",
-      enunciado: "Na tangente de um angulo agudo em triangulo retangulo nao aparece a:",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Tangente",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 2,
+      "cognicao": "interpretacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Na tangente de um angulo agudo em triangulo retangulo nao aparece a:",
+      "opcoes": [
         "hipotenusa",
         "cateto oposto",
         "cateto adjacente",
         "razao"
       ],
-      correta: "hipotenusa",
-      comentario: "A tangente relaciona apenas os dois catetos.",
-      tempoEstimado: 20,
-      tags: [
+      "correta": "hipotenusa",
+      "comentario": "A tangente relaciona apenas os dois catetos.",
+      "tempoEstimado": 20,
+      "tags": [
         "tangente",
         "estrutura"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-tangente"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_014",
-      serie: [
+      "id": "trig_014",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Angulos notaveis",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 2,
-      cognicao: "interpretacao",
-      tipo: "multipla_escolha",
-      enunciado: "Qual destes e um angulo notavel basico da trigonometria introdutoria?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Angulos notaveis",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 2,
+      "cognicao": "interpretacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual destes e um angulo notavel basico da trigonometria introdutoria?",
+      "opcoes": [
         "15 graus",
         "30 graus",
         "75 graus",
         "105 graus"
       ],
-      correta: "30 graus",
-      comentario: "No nivel introdutorio, os mais usados sao 30, 45 e 60 graus.",
-      tempoEstimado: 20,
-      tags: [
+      "correta": "30 graus",
+      "comentario": "No nivel introdutorio, os mais usados sao 30, 45 e 60 graus.",
+      "tempoEstimado": 20,
+      "tags": [
         "angulos-notaveis",
         "conceito"
       ],
-      habilidades: [
+      "habilidades": [
         "usar-angulos-notaveis"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_015",
-      serie: [
+      "id": "trig_015",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Angulos notaveis",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 2,
-      cognicao: "interpretacao",
-      tipo: "multipla_escolha",
-      enunciado: "O valor de sen 30 graus e:",
-      opcoes: [
-        "1/2",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Angulos notaveis",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 2,
+      "cognicao": "interpretacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "O valor de sen 30 graus e:",
+      "opcoes": [
         "sqrt(2)/2",
         "sqrt(3)/2",
+        "1/2",
         "1"
       ],
-      correta: "1/2",
-      comentario: "Esse e um valor notavel classico.",
-      tempoEstimado: 20,
-      tags: [
+      "correta": "1/2",
+      "comentario": "Esse e um valor notavel classico.",
+      "tempoEstimado": 20,
+      "tags": [
         "angulos-notaveis",
         "seno"
       ],
-      habilidades: [
+      "habilidades": [
         "usar-angulos-notaveis"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_016",
-      serie: [
+      "id": "trig_016",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Angulos notaveis",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 2,
-      cognicao: "interpretacao",
-      tipo: "multipla_escolha",
-      enunciado: "O valor de cos 60 graus e:",
-      opcoes: [
-        "1/2",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Angulos notaveis",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 2,
+      "cognicao": "interpretacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "O valor de cos 60 graus e:",
+      "opcoes": [
         "sqrt(2)/2",
         "sqrt(3)/2",
-        "1"
+        "1",
+        "1/2"
       ],
-      correta: "1/2",
-      comentario: "Cos 60 graus = 1/2.",
-      tempoEstimado: 20,
-      tags: [
+      "correta": "1/2",
+      "comentario": "Cos 60 graus = 1/2. Assim, a resposta correta ? 1/2.",
+      "tempoEstimado": 20,
+      "tags": [
         "angulos-notaveis",
         "cosseno"
       ],
-      habilidades: [
+      "habilidades": [
         "usar-angulos-notaveis"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_017",
-      serie: [
+      "id": "trig_017",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Angulos notaveis",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 2,
-      cognicao: "interpretacao",
-      tipo: "multipla_escolha",
-      enunciado: "O valor de sen 45 graus e:",
-      opcoes: [
-        "1/2",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Angulos notaveis",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 2,
+      "cognicao": "interpretacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "O valor de sen 45 graus e:",
+      "opcoes": [
         "sqrt(2)/2",
+        "1/2",
         "sqrt(3)/2",
         "sqrt(3)/3"
       ],
-      correta: "sqrt(2)/2",
-      comentario: "Sen 45 graus = sqrt(2)/2.",
-      tempoEstimado: 20,
-      tags: [
+      "correta": "sqrt(2)/2",
+      "comentario": "Sen 45 graus = sqrt(2)/2.",
+      "tempoEstimado": 20,
+      "tags": [
         "angulos-notaveis",
         "seno"
       ],
-      habilidades: [
+      "habilidades": [
         "usar-angulos-notaveis"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_018",
-      serie: [
+      "id": "trig_018",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Angulos notaveis",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 2,
-      cognicao: "interpretacao",
-      tipo: "multipla_escolha",
-      enunciado: "O valor de cos 45 graus e:",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Angulos notaveis",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 2,
+      "cognicao": "interpretacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "O valor de cos 45 graus e:",
+      "opcoes": [
         "1/2",
         "sqrt(2)/2",
         "sqrt(3)/2",
         "1"
       ],
-      correta: "sqrt(2)/2",
-      comentario: "Cos 45 graus = sqrt(2)/2.",
-      tempoEstimado: 20,
-      tags: [
+      "correta": "sqrt(2)/2",
+      "comentario": "Cos 45 graus = sqrt(2)/2.",
+      "tempoEstimado": 20,
+      "tags": [
         "angulos-notaveis",
         "cosseno"
       ],
-      habilidades: [
+      "habilidades": [
         "usar-angulos-notaveis"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_019",
-      serie: [
+      "id": "trig_019",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Angulos notaveis",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 2,
-      cognicao: "interpretacao",
-      tipo: "multipla_escolha",
-      enunciado: "O valor de tan 45 graus e:",
-      opcoes: [
-        "1",
-        "sqrt(3)",
-        "sqrt(3)/3",
-        "1/2"
-      ],
-      correta: "1",
-      comentario: "Tan 45 graus = 1.",
-      tempoEstimado: 20,
-      tags: [
-        "angulos-notaveis",
-        "tangente"
-      ],
-      habilidades: [
-        "usar-angulos-notaveis"
-      ],
-      collections: [
-        "questions"
-      ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
-    },
-    {
-      id: "trig_020",
-      serie: [
-        1
-      ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Angulos notaveis",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 2,
-      cognicao: "interpretacao",
-      tipo: "multipla_escolha",
-      enunciado: "O valor de tan 30 graus e:",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Angulos notaveis",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 2,
+      "cognicao": "interpretacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "O valor de tan 45 graus e:",
+      "opcoes": [
         "sqrt(3)",
         "sqrt(3)/3",
         "1",
         "1/2"
       ],
-      correta: "sqrt(3)/3",
-      comentario: "Tan 30 graus = sqrt(3)/3.",
-      tempoEstimado: 20,
-      tags: [
+      "correta": "1",
+      "comentario": "Tan 45 graus = 1. Assim, a resposta correta ? 1.",
+      "tempoEstimado": 20,
+      "tags": [
         "angulos-notaveis",
         "tangente"
       ],
-      habilidades: [
+      "habilidades": [
         "usar-angulos-notaveis"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_021",
-      serie: [
+      "id": "trig_020",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Conceitos iniciais",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 3,
-      cognicao: "interpretacao",
-      tipo: "multipla_escolha",
-      enunciado: "Trigonometria introdutoria e muito usada para calcular:",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Angulos notaveis",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 2,
+      "cognicao": "interpretacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "O valor de tan 30 graus e:",
+      "opcoes": [
+        "sqrt(3)",
+        "1",
+        "1/2",
+        "sqrt(3)/3"
+      ],
+      "correta": "sqrt(3)/3",
+      "comentario": "Tan 30 graus = sqrt(3)/3.",
+      "tempoEstimado": 20,
+      "tags": [
+        "angulos-notaveis",
+        "tangente"
+      ],
+      "habilidades": [
+        "usar-angulos-notaveis"
+      ],
+      "collections": [
+        "questions"
+      ],
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
+    },
+    {
+      "id": "trig_021",
+      "serie": [
+        1
+      ],
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Conceitos iniciais",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 3,
+      "cognicao": "interpretacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Trigonometria introdutoria e muito usada para calcular:",
+      "opcoes": [
         "relacoes entre lados e angulos",
         "apenas perimetros de circulos",
         "equacoes do terceiro grau",
         "probabilidades"
       ],
-      correta: "relacoes entre lados e angulos",
-      comentario: "Esse e o foco central da trigonometria basica.",
-      tempoEstimado: 20,
-      tags: [
+      "correta": "relacoes entre lados e angulos",
+      "comentario": "Esse e o foco central da trigonometria basica.",
+      "tempoEstimado": 20,
+      "tags": [
         "conceito",
         "aplicacao"
       ],
-      habilidades: [
+      "habilidades": [
         "identificar-elementos-da-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_022",
-      serie: [
+      "id": "trig_022",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Triangulo retangulo",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 3,
-      cognicao: "interpretacao",
-      tipo: "multipla_escolha",
-      enunciado: "Todo triangulo retangulo possui quantos angulos agudos?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Triangulo retangulo",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 3,
+      "cognicao": "interpretacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Todo triangulo retangulo possui quantos angulos agudos?",
+      "opcoes": [
         "0",
-        "1",
         "2",
+        "1",
         "3"
       ],
-      correta: "2",
-      comentario: "Se um angulo e reto, os outros dois sao agudos.",
-      tempoEstimado: 20,
-      tags: [
+      "correta": "2",
+      "comentario": "Se um angulo e reto, os outros dois sao agudos.",
+      "tempoEstimado": 20,
+      "tags": [
         "triangulo-retangulo",
         "angulos"
       ],
-      habilidades: [
+      "habilidades": [
         "identificar-triangulo-retangulo"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_023",
-      serie: [
+      "id": "trig_023",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Hipotenusa e catetos",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 3,
-      cognicao: "interpretacao",
-      tipo: "multipla_escolha",
-      enunciado: "A hipotenusa e sempre:",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Hipotenusa e catetos",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 3,
+      "cognicao": "interpretacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "A hipotenusa e sempre:",
+      "opcoes": [
         "o menor lado",
         "um dos catetos",
         "o maior lado",
         "um angulo"
       ],
-      correta: "o maior lado",
-      comentario: "No triangulo retangulo, a hipotenusa e o maior lado.",
-      tempoEstimado: 20,
-      tags: [
+      "correta": "o maior lado",
+      "comentario": "No triangulo retangulo, a hipotenusa e o maior lado.",
+      "tempoEstimado": 20,
+      "tags": [
         "hipotenusa",
         "propriedade"
       ],
-      habilidades: [
+      "habilidades": [
         "relacionar-hipotenusa-e-catetos"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_024",
-      serie: [
+      "id": "trig_024",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Razoes trigonometricas",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 3,
-      cognicao: "interpretacao",
-      tipo: "multipla_escolha",
-      enunciado: "Qual razao usa hipotenusa no denominador e cateto oposto no numerador?",
-      opcoes: [
-        "seno",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Razoes trigonometricas",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 3,
+      "cognicao": "interpretacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual razao usa hipotenusa no denominador e cateto oposto no numerador?",
+      "opcoes": [
         "cosseno",
         "tangente",
-        "secante"
+        "secante",
+        "seno"
       ],
-      correta: "seno",
-      comentario: "Essa e a definicao de seno.",
-      tempoEstimado: 20,
-      tags: [
+      "correta": "seno",
+      "comentario": "Essa e a definicao de seno.",
+      "tempoEstimado": 20,
+      "tags": [
         "seno",
         "conceito"
       ],
-      habilidades: [
+      "habilidades": [
         "identificar-razoes-trigonometricas"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_025",
-      serie: [
+      "id": "trig_025",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Razoes trigonometricas",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 3,
-      cognicao: "interpretacao",
-      tipo: "multipla_escolha",
-      enunciado: "Qual razao usa hipotenusa no denominador e cateto adjacente no numerador?",
-      opcoes: [
-        "seno",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Razoes trigonometricas",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 3,
+      "cognicao": "interpretacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual razao usa hipotenusa no denominador e cateto adjacente no numerador?",
+      "opcoes": [
         "cosseno",
+        "seno",
         "tangente",
         "cotangente"
       ],
-      correta: "cosseno",
-      comentario: "Essa e a definicao de cosseno.",
-      tempoEstimado: 20,
-      tags: [
+      "correta": "cosseno",
+      "comentario": "Essa e a definicao de cosseno.",
+      "tempoEstimado": 20,
+      "tags": [
         "cosseno",
         "conceito"
       ],
-      habilidades: [
+      "habilidades": [
         "identificar-razoes-trigonometricas"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_026",
-      serie: [
+      "id": "trig_026",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Razoes trigonometricas",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 3,
-      cognicao: "interpretacao",
-      tipo: "multipla_escolha",
-      enunciado: "Qual razao compara os dois catetos?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Razoes trigonometricas",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 3,
+      "cognicao": "interpretacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual razao compara os dois catetos?",
+      "opcoes": [
         "seno",
-        "cosseno",
         "tangente",
+        "cosseno",
         "raio"
       ],
-      correta: "tangente",
-      comentario: "Tangente = oposto / adjacente.",
-      tempoEstimado: 20,
-      tags: [
+      "correta": "tangente",
+      "comentario": "Tangente = oposto / adjacente.",
+      "tempoEstimado": 20,
+      "tags": [
         "tangente",
         "conceito"
       ],
-      habilidades: [
+      "habilidades": [
         "identificar-razoes-trigonometricas"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_027",
-      serie: [
+      "id": "trig_027",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Angulos notaveis",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 3,
-      cognicao: "interpretacao",
-      tipo: "multipla_escolha",
-      enunciado: "Qual dos valores abaixo corresponde a cos 30 graus?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Angulos notaveis",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 3,
+      "cognicao": "interpretacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual dos valores abaixo corresponde a cos 30 graus?",
+      "opcoes": [
         "1/2",
         "sqrt(2)/2",
         "sqrt(3)/2",
         "1"
       ],
-      correta: "sqrt(3)/2",
-      comentario: "Cos 30 graus = sqrt(3)/2.",
-      tempoEstimado: 20,
-      tags: [
+      "correta": "sqrt(3)/2",
+      "comentario": "Cos 30 graus = sqrt(3)/2.",
+      "tempoEstimado": 20,
+      "tags": [
         "angulos-notaveis",
         "cosseno"
       ],
-      habilidades: [
+      "habilidades": [
         "usar-angulos-notaveis"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_028",
-      serie: [
+      "id": "trig_028",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Angulos notaveis",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 3,
-      cognicao: "interpretacao",
-      tipo: "multipla_escolha",
-      enunciado: "Qual dos valores abaixo corresponde a sen 60 graus?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Angulos notaveis",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 3,
+      "cognicao": "interpretacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual dos valores abaixo corresponde a sen 60 graus?",
+      "opcoes": [
         "1/2",
         "sqrt(2)/2",
-        "sqrt(3)/2",
-        "sqrt(3)/3"
+        "sqrt(3)/3",
+        "sqrt(3)/2"
       ],
-      correta: "sqrt(3)/2",
-      comentario: "Sen 60 graus = sqrt(3)/2.",
-      tempoEstimado: 20,
-      tags: [
+      "correta": "sqrt(3)/2",
+      "comentario": "Sen 60 graus = sqrt(3)/2.",
+      "tempoEstimado": 20,
+      "tags": [
         "angulos-notaveis",
         "seno"
       ],
-      habilidades: [
+      "habilidades": [
         "usar-angulos-notaveis"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_029",
-      serie: [
+      "id": "trig_029",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Angulos notaveis",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 3,
-      cognicao: "interpretacao",
-      tipo: "multipla_escolha",
-      enunciado: "Qual dos valores abaixo corresponde a tan 60 graus?",
-      opcoes: [
-        "1",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Angulos notaveis",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 3,
+      "cognicao": "interpretacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual dos valores abaixo corresponde a tan 60 graus?",
+      "opcoes": [
         "sqrt(3)",
+        "1",
         "sqrt(3)/3",
         "1/2"
       ],
-      correta: "sqrt(3)",
-      comentario: "Tan 60 graus = sqrt(3).",
-      tempoEstimado: 20,
-      tags: [
+      "correta": "sqrt(3)",
+      "comentario": "Tan 60 graus = sqrt(3).",
+      "tempoEstimado": 20,
+      "tags": [
         "angulos-notaveis",
         "tangente"
       ],
-      habilidades: [
+      "habilidades": [
         "usar-angulos-notaveis"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_030",
-      serie: [
+      "id": "trig_030",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Conceitos iniciais",
-      dificuldadeLabel: "facil",
-      dificuldadeNivel: 3,
-      cognicao: "interpretacao",
-      tipo: "multipla_escolha",
-      enunciado: "No estudo inicial da trigonometria, a escolha de um angulo agudo serve para definir:",
-      opcoes: [
-        "cateto oposto e adjacente",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Conceitos iniciais",
+      "dificuldadeLabel": "facil",
+      "dificuldadeNivel": 3,
+      "cognicao": "interpretacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "No estudo inicial da trigonometria, a escolha de um angulo agudo serve para definir:",
+      "opcoes": [
         "a existencia da hipotenusa",
+        "cateto oposto e adjacente",
         "o numero de lados",
         "a area do circulo"
       ],
-      correta: "cateto oposto e adjacente",
-      comentario: "Esses nomes dependem do angulo de referencia.",
-      tempoEstimado: 20,
-      tags: [
+      "correta": "cateto oposto e adjacente",
+      "comentario": "Esses nomes dependem do angulo de referencia.",
+      "tempoEstimado": 20,
+      "tags": [
         "conceito",
         "referencia"
       ],
-      habilidades: [
+      "habilidades": [
         "identificar-elementos-da-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_031",
-      serie: [
+      "id": "trig_031",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Seno",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 3, o adjacente mede 4 e a hipotenusa mede 5. Qual e o valor de sen(theta)?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Seno",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 3, o adjacente mede 4 e a hipotenusa mede 5. Qual e o valor de sen(theta)?",
+      "opcoes": [
+        "1/2",
+        "3/4",
         "3/5",
-        "1/2",
-        "3/4",
         "4/5"
       ],
-      correta: "3/5",
-      comentario: "Seno = cateto oposto / hipotenusa.",
-      tempoEstimado: 28,
-      tags: [
+      "correta": "3/5",
+      "comentario": "Seno = cateto oposto / hipotenusa.",
+      "tempoEstimado": 28,
+      "tags": [
         "seno",
         "triangulo-retangulo"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-seno"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_032",
-      serie: [
+      "id": "trig_032",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Seno",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 5, o adjacente mede 12 e a hipotenusa mede 13. Qual e o valor de sen(theta)?",
-      opcoes: [
-        "5/13",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Seno",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 5, o adjacente mede 12 e a hipotenusa mede 13. Qual e o valor de sen(theta)?",
+      "opcoes": [
         "1/2",
         "3/4",
-        "4/5"
+        "4/5",
+        "5/13"
       ],
-      correta: "5/13",
-      comentario: "Seno = cateto oposto / hipotenusa.",
-      tempoEstimado: 28,
-      tags: [
+      "correta": "5/13",
+      "comentario": "Seno = cateto oposto / hipotenusa.",
+      "tempoEstimado": 28,
+      "tags": [
         "seno",
         "triangulo-retangulo"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-seno"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_033",
-      serie: [
+      "id": "trig_033",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Seno",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 8, o adjacente mede 15 e a hipotenusa mede 17. Qual e o valor de sen(theta)?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Seno",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 8, o adjacente mede 15 e a hipotenusa mede 17. Qual e o valor de sen(theta)?",
+      "opcoes": [
         "8/17",
         "1/2",
         "3/4",
         "4/5"
       ],
-      correta: "8/17",
-      comentario: "Seno = cateto oposto / hipotenusa.",
-      tempoEstimado: 28,
-      tags: [
+      "correta": "8/17",
+      "comentario": "Seno = cateto oposto / hipotenusa.",
+      "tempoEstimado": 28,
+      "tags": [
         "seno",
         "triangulo-retangulo"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-seno"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_034",
-      serie: [
+      "id": "trig_034",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Seno",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 7, o adjacente mede 24 e a hipotenusa mede 25. Qual e o valor de sen(theta)?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Seno",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 7, o adjacente mede 24 e a hipotenusa mede 25. Qual e o valor de sen(theta)?",
+      "opcoes": [
+        "1/2",
         "7/25",
-        "1/2",
         "3/4",
         "4/5"
       ],
-      correta: "7/25",
-      comentario: "Seno = cateto oposto / hipotenusa.",
-      tempoEstimado: 28,
-      tags: [
+      "correta": "7/25",
+      "comentario": "Seno = cateto oposto / hipotenusa.",
+      "tempoEstimado": 28,
+      "tags": [
         "seno",
         "triangulo-retangulo"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-seno"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_035",
-      serie: [
+      "id": "trig_035",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Seno",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 9, o adjacente mede 12 e a hipotenusa mede 15. Qual e o valor de sen(theta)?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Seno",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 9, o adjacente mede 12 e a hipotenusa mede 15. Qual e o valor de sen(theta)?",
+      "opcoes": [
+        "1/2",
+        "3/4",
         "3/5",
-        "1/2",
-        "3/4",
         "4/5"
       ],
-      correta: "3/5",
-      comentario: "Seno = cateto oposto / hipotenusa.",
-      tempoEstimado: 28,
-      tags: [
+      "correta": "3/5",
+      "comentario": "Seno = cateto oposto / hipotenusa.",
+      "tempoEstimado": 28,
+      "tags": [
         "seno",
         "triangulo-retangulo"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-seno"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_036",
-      serie: [
+      "id": "trig_036",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Seno",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 12, o adjacente mede 16 e a hipotenusa mede 20. Qual e o valor de sen(theta)?",
-      opcoes: [
-        "3/5",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Seno",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 12, o adjacente mede 16 e a hipotenusa mede 20. Qual e o valor de sen(theta)?",
+      "opcoes": [
         "1/2",
         "3/4",
-        "4/5"
+        "4/5",
+        "3/5"
       ],
-      correta: "3/5",
-      comentario: "Seno = cateto oposto / hipotenusa.",
-      tempoEstimado: 28,
-      tags: [
+      "correta": "3/5",
+      "comentario": "Seno = cateto oposto / hipotenusa.",
+      "tempoEstimado": 28,
+      "tags": [
         "seno",
         "triangulo-retangulo"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-seno"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_037",
-      serie: [
+      "id": "trig_037",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Seno",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 20, o adjacente mede 21 e a hipotenusa mede 29. Qual e o valor de sen(theta)?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Seno",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 20, o adjacente mede 21 e a hipotenusa mede 29. Qual e o valor de sen(theta)?",
+      "opcoes": [
         "20/29",
         "1/2",
         "3/4",
         "4/5"
       ],
-      correta: "20/29",
-      comentario: "Seno = cateto oposto / hipotenusa.",
-      tempoEstimado: 28,
-      tags: [
+      "correta": "20/29",
+      "comentario": "Seno = cateto oposto / hipotenusa.",
+      "tempoEstimado": 28,
+      "tags": [
         "seno",
         "triangulo-retangulo"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-seno"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_038",
-      serie: [
+      "id": "trig_038",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Seno",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 11, o adjacente mede 60 e a hipotenusa mede 61. Qual e o valor de sen(theta)?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Seno",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 11, o adjacente mede 60 e a hipotenusa mede 61. Qual e o valor de sen(theta)?",
+      "opcoes": [
+        "1/2",
         "11/61",
-        "1/2",
         "3/4",
         "4/5"
       ],
-      correta: "11/61",
-      comentario: "Seno = cateto oposto / hipotenusa.",
-      tempoEstimado: 28,
-      tags: [
+      "correta": "11/61",
+      "comentario": "Seno = cateto oposto / hipotenusa.",
+      "tempoEstimado": 28,
+      "tags": [
         "seno",
         "triangulo-retangulo"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-seno"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_039",
-      serie: [
+      "id": "trig_039",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Seno",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 16, o adjacente mede 30 e a hipotenusa mede 34. Qual e o valor de sen(theta)?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Seno",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 16, o adjacente mede 30 e a hipotenusa mede 34. Qual e o valor de sen(theta)?",
+      "opcoes": [
+        "1/2",
+        "3/4",
         "8/17",
-        "1/2",
-        "3/4",
         "4/5"
       ],
-      correta: "8/17",
-      comentario: "Seno = cateto oposto / hipotenusa.",
-      tempoEstimado: 28,
-      tags: [
+      "correta": "8/17",
+      "comentario": "Seno = cateto oposto / hipotenusa.",
+      "tempoEstimado": 28,
+      "tags": [
         "seno",
         "triangulo-retangulo"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-seno"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_040",
-      serie: [
+      "id": "trig_040",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Seno",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 10, o adjacente mede 24 e a hipotenusa mede 26. Qual e o valor de sen(theta)?",
-      opcoes: [
-        "5/13",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Seno",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 10, o adjacente mede 24 e a hipotenusa mede 26. Qual e o valor de sen(theta)?",
+      "opcoes": [
         "1/2",
         "3/4",
-        "4/5"
+        "4/5",
+        "5/13"
       ],
-      correta: "5/13",
-      comentario: "Seno = cateto oposto / hipotenusa.",
-      tempoEstimado: 28,
-      tags: [
+      "correta": "5/13",
+      "comentario": "Seno = cateto oposto / hipotenusa.",
+      "tempoEstimado": 28,
+      "tags": [
         "seno",
         "triangulo-retangulo"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-seno"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_041",
-      serie: [
+      "id": "trig_041",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Cosseno",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 3, o adjacente mede 4 e a hipotenusa mede 5. Qual e o valor de cos(theta)?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Cosseno",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 3, o adjacente mede 4 e a hipotenusa mede 5. Qual e o valor de cos(theta)?",
+      "opcoes": [
         "4/5",
         "1/2",
         "3/5",
         "5/6"
       ],
-      correta: "4/5",
-      comentario: "Cosseno = cateto adjacente / hipotenusa.",
-      tempoEstimado: 28,
-      tags: [
+      "correta": "4/5",
+      "comentario": "Cosseno = cateto adjacente / hipotenusa.",
+      "tempoEstimado": 28,
+      "tags": [
         "cosseno",
         "triangulo-retangulo"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-cosseno"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_042",
-      serie: [
+      "id": "trig_042",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Cosseno",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 5, o adjacente mede 12 e a hipotenusa mede 13. Qual e o valor de cos(theta)?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Cosseno",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 5, o adjacente mede 12 e a hipotenusa mede 13. Qual e o valor de cos(theta)?",
+      "opcoes": [
+        "1/2",
         "12/13",
-        "1/2",
         "3/5",
         "5/6"
       ],
-      correta: "12/13",
-      comentario: "Cosseno = cateto adjacente / hipotenusa.",
-      tempoEstimado: 28,
-      tags: [
+      "correta": "12/13",
+      "comentario": "Cosseno = cateto adjacente / hipotenusa.",
+      "tempoEstimado": 28,
+      "tags": [
         "cosseno",
         "triangulo-retangulo"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-cosseno"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_043",
-      serie: [
+      "id": "trig_043",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Cosseno",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 8, o adjacente mede 15 e a hipotenusa mede 17. Qual e o valor de cos(theta)?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Cosseno",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 8, o adjacente mede 15 e a hipotenusa mede 17. Qual e o valor de cos(theta)?",
+      "opcoes": [
+        "1/2",
+        "3/5",
         "15/17",
-        "1/2",
-        "3/5",
         "5/6"
       ],
-      correta: "15/17",
-      comentario: "Cosseno = cateto adjacente / hipotenusa.",
-      tempoEstimado: 28,
-      tags: [
+      "correta": "15/17",
+      "comentario": "Cosseno = cateto adjacente / hipotenusa.",
+      "tempoEstimado": 28,
+      "tags": [
         "cosseno",
         "triangulo-retangulo"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-cosseno"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_044",
-      serie: [
+      "id": "trig_044",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Cosseno",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 7, o adjacente mede 24 e a hipotenusa mede 25. Qual e o valor de cos(theta)?",
-      opcoes: [
-        "24/25",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Cosseno",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 7, o adjacente mede 24 e a hipotenusa mede 25. Qual e o valor de cos(theta)?",
+      "opcoes": [
         "1/2",
         "3/5",
-        "5/6"
+        "5/6",
+        "24/25"
       ],
-      correta: "24/25",
-      comentario: "Cosseno = cateto adjacente / hipotenusa.",
-      tempoEstimado: 28,
-      tags: [
+      "correta": "24/25",
+      "comentario": "Cosseno = cateto adjacente / hipotenusa.",
+      "tempoEstimado": 28,
+      "tags": [
         "cosseno",
         "triangulo-retangulo"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-cosseno"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_045",
-      serie: [
+      "id": "trig_045",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Cosseno",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 9, o adjacente mede 12 e a hipotenusa mede 15. Qual e o valor de cos(theta)?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Cosseno",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 9, o adjacente mede 12 e a hipotenusa mede 15. Qual e o valor de cos(theta)?",
+      "opcoes": [
         "4/5",
         "1/2",
         "3/5",
         "5/6"
       ],
-      correta: "4/5",
-      comentario: "Cosseno = cateto adjacente / hipotenusa.",
-      tempoEstimado: 28,
-      tags: [
+      "correta": "4/5",
+      "comentario": "Cosseno = cateto adjacente / hipotenusa.",
+      "tempoEstimado": 28,
+      "tags": [
         "cosseno",
         "triangulo-retangulo"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-cosseno"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_046",
-      serie: [
+      "id": "trig_046",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Cosseno",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 12, o adjacente mede 16 e a hipotenusa mede 20. Qual e o valor de cos(theta)?",
-      opcoes: [
-        "4/5",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Cosseno",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 12, o adjacente mede 16 e a hipotenusa mede 20. Qual e o valor de cos(theta)?",
+      "opcoes": [
         "1/2",
+        "4/5",
         "3/5",
         "5/6"
       ],
-      correta: "4/5",
-      comentario: "Cosseno = cateto adjacente / hipotenusa.",
-      tempoEstimado: 28,
-      tags: [
+      "correta": "4/5",
+      "comentario": "Cosseno = cateto adjacente / hipotenusa.",
+      "tempoEstimado": 28,
+      "tags": [
         "cosseno",
         "triangulo-retangulo"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-cosseno"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_047",
-      serie: [
+      "id": "trig_047",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Cosseno",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 20, o adjacente mede 21 e a hipotenusa mede 29. Qual e o valor de cos(theta)?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Cosseno",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 20, o adjacente mede 21 e a hipotenusa mede 29. Qual e o valor de cos(theta)?",
+      "opcoes": [
+        "1/2",
+        "3/5",
         "21/29",
-        "1/2",
-        "3/5",
         "5/6"
       ],
-      correta: "21/29",
-      comentario: "Cosseno = cateto adjacente / hipotenusa.",
-      tempoEstimado: 28,
-      tags: [
+      "correta": "21/29",
+      "comentario": "Cosseno = cateto adjacente / hipotenusa.",
+      "tempoEstimado": 28,
+      "tags": [
         "cosseno",
         "triangulo-retangulo"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-cosseno"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_048",
-      serie: [
+      "id": "trig_048",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Cosseno",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 11, o adjacente mede 60 e a hipotenusa mede 61. Qual e o valor de cos(theta)?",
-      opcoes: [
-        "60/61",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Cosseno",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 11, o adjacente mede 60 e a hipotenusa mede 61. Qual e o valor de cos(theta)?",
+      "opcoes": [
         "1/2",
         "3/5",
-        "5/6"
+        "5/6",
+        "60/61"
       ],
-      correta: "60/61",
-      comentario: "Cosseno = cateto adjacente / hipotenusa.",
-      tempoEstimado: 28,
-      tags: [
+      "correta": "60/61",
+      "comentario": "Cosseno = cateto adjacente / hipotenusa.",
+      "tempoEstimado": 28,
+      "tags": [
         "cosseno",
         "triangulo-retangulo"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-cosseno"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_049",
-      serie: [
+      "id": "trig_049",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Cosseno",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 16, o adjacente mede 30 e a hipotenusa mede 34. Qual e o valor de cos(theta)?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Cosseno",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 16, o adjacente mede 30 e a hipotenusa mede 34. Qual e o valor de cos(theta)?",
+      "opcoes": [
         "15/17",
         "1/2",
         "3/5",
         "5/6"
       ],
-      correta: "15/17",
-      comentario: "Cosseno = cateto adjacente / hipotenusa.",
-      tempoEstimado: 28,
-      tags: [
+      "correta": "15/17",
+      "comentario": "Cosseno = cateto adjacente / hipotenusa.",
+      "tempoEstimado": 28,
+      "tags": [
         "cosseno",
         "triangulo-retangulo"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-cosseno"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_050",
-      serie: [
+      "id": "trig_050",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Cosseno",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 10, o adjacente mede 24 e a hipotenusa mede 26. Qual e o valor de cos(theta)?",
-      opcoes: [
-        "12/13",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Cosseno",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 10, o adjacente mede 24 e a hipotenusa mede 26. Qual e o valor de cos(theta)?",
+      "opcoes": [
         "1/2",
+        "12/13",
         "3/5",
         "5/6"
       ],
-      correta: "12/13",
-      comentario: "Cosseno = cateto adjacente / hipotenusa.",
-      tempoEstimado: 28,
-      tags: [
+      "correta": "12/13",
+      "comentario": "Cosseno = cateto adjacente / hipotenusa.",
+      "tempoEstimado": 28,
+      "tags": [
         "cosseno",
         "triangulo-retangulo"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-cosseno"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_051",
-      serie: [
+      "id": "trig_051",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Tangente",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 3 e o adjacente mede 4. Qual e o valor de tan(theta)?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Tangente",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 3 e o adjacente mede 4. Qual e o valor de tan(theta)?",
+      "opcoes": [
+        "1/2",
+        "2/3",
         "3/4",
-        "1/2",
-        "2/3",
         "3/2"
       ],
-      correta: "3/4",
-      comentario: "Tangente = cateto oposto / cateto adjacente.",
-      tempoEstimado: 28,
-      tags: [
+      "correta": "3/4",
+      "comentario": "Tangente = cateto oposto / cateto adjacente.",
+      "tempoEstimado": 28,
+      "tags": [
         "tangente",
         "triangulo-retangulo"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-tangente"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_052",
-      serie: [
+      "id": "trig_052",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Tangente",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 5 e o adjacente mede 12. Qual e o valor de tan(theta)?",
-      opcoes: [
-        "5/12",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Tangente",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 5 e o adjacente mede 12. Qual e o valor de tan(theta)?",
+      "opcoes": [
         "1/2",
         "2/3",
-        "3/2"
+        "3/2",
+        "5/12"
       ],
-      correta: "5/12",
-      comentario: "Tangente = cateto oposto / cateto adjacente.",
-      tempoEstimado: 28,
-      tags: [
+      "correta": "5/12",
+      "comentario": "Tangente = cateto oposto / cateto adjacente.",
+      "tempoEstimado": 28,
+      "tags": [
         "tangente",
         "triangulo-retangulo"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-tangente"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_053",
-      serie: [
+      "id": "trig_053",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Tangente",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 8 e o adjacente mede 15. Qual e o valor de tan(theta)?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Tangente",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 8 e o adjacente mede 15. Qual e o valor de tan(theta)?",
+      "opcoes": [
         "8/15",
         "1/2",
         "2/3",
         "3/2"
       ],
-      correta: "8/15",
-      comentario: "Tangente = cateto oposto / cateto adjacente.",
-      tempoEstimado: 28,
-      tags: [
+      "correta": "8/15",
+      "comentario": "Tangente = cateto oposto / cateto adjacente.",
+      "tempoEstimado": 28,
+      "tags": [
         "tangente",
         "triangulo-retangulo"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-tangente"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_054",
-      serie: [
+      "id": "trig_054",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Tangente",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 7 e o adjacente mede 24. Qual e o valor de tan(theta)?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Tangente",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 7 e o adjacente mede 24. Qual e o valor de tan(theta)?",
+      "opcoes": [
+        "1/2",
         "7/24",
-        "1/2",
         "2/3",
         "3/2"
       ],
-      correta: "7/24",
-      comentario: "Tangente = cateto oposto / cateto adjacente.",
-      tempoEstimado: 28,
-      tags: [
+      "correta": "7/24",
+      "comentario": "Tangente = cateto oposto / cateto adjacente.",
+      "tempoEstimado": 28,
+      "tags": [
         "tangente",
         "triangulo-retangulo"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-tangente"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_055",
-      serie: [
+      "id": "trig_055",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Tangente",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 9 e o adjacente mede 12. Qual e o valor de tan(theta)?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Tangente",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 9 e o adjacente mede 12. Qual e o valor de tan(theta)?",
+      "opcoes": [
+        "1/2",
+        "2/3",
         "3/4",
-        "1/2",
-        "2/3",
         "3/2"
       ],
-      correta: "3/4",
-      comentario: "Tangente = cateto oposto / cateto adjacente.",
-      tempoEstimado: 28,
-      tags: [
+      "correta": "3/4",
+      "comentario": "Tangente = cateto oposto / cateto adjacente.",
+      "tempoEstimado": 28,
+      "tags": [
         "tangente",
         "triangulo-retangulo"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-tangente"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_056",
-      serie: [
+      "id": "trig_056",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Tangente",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 12 e o adjacente mede 16. Qual e o valor de tan(theta)?",
-      opcoes: [
-        "3/4",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Tangente",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 12 e o adjacente mede 16. Qual e o valor de tan(theta)?",
+      "opcoes": [
         "1/2",
         "2/3",
-        "3/2"
+        "3/2",
+        "3/4"
       ],
-      correta: "3/4",
-      comentario: "Tangente = cateto oposto / cateto adjacente.",
-      tempoEstimado: 28,
-      tags: [
+      "correta": "3/4",
+      "comentario": "Tangente = cateto oposto / cateto adjacente.",
+      "tempoEstimado": 28,
+      "tags": [
         "tangente",
         "triangulo-retangulo"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-tangente"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_057",
-      serie: [
+      "id": "trig_057",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Tangente",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 20 e o adjacente mede 21. Qual e o valor de tan(theta)?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Tangente",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 20 e o adjacente mede 21. Qual e o valor de tan(theta)?",
+      "opcoes": [
         "20/21",
         "1/2",
         "2/3",
         "3/2"
       ],
-      correta: "20/21",
-      comentario: "Tangente = cateto oposto / cateto adjacente.",
-      tempoEstimado: 28,
-      tags: [
+      "correta": "20/21",
+      "comentario": "Tangente = cateto oposto / cateto adjacente.",
+      "tempoEstimado": 28,
+      "tags": [
         "tangente",
         "triangulo-retangulo"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-tangente"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_058",
-      serie: [
+      "id": "trig_058",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Tangente",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 11 e o adjacente mede 60. Qual e o valor de tan(theta)?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Tangente",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 11 e o adjacente mede 60. Qual e o valor de tan(theta)?",
+      "opcoes": [
+        "1/2",
         "11/60",
-        "1/2",
         "2/3",
         "3/2"
       ],
-      correta: "11/60",
-      comentario: "Tangente = cateto oposto / cateto adjacente.",
-      tempoEstimado: 28,
-      tags: [
+      "correta": "11/60",
+      "comentario": "Tangente = cateto oposto / cateto adjacente.",
+      "tempoEstimado": 28,
+      "tags": [
         "tangente",
         "triangulo-retangulo"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-tangente"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_059",
-      serie: [
+      "id": "trig_059",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Tangente",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 16 e o adjacente mede 30. Qual e o valor de tan(theta)?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Tangente",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 16 e o adjacente mede 30. Qual e o valor de tan(theta)?",
+      "opcoes": [
+        "1/2",
+        "2/3",
         "8/15",
-        "1/2",
-        "2/3",
         "3/2"
       ],
-      correta: "8/15",
-      comentario: "Tangente = cateto oposto / cateto adjacente.",
-      tempoEstimado: 28,
-      tags: [
+      "correta": "8/15",
+      "comentario": "Tangente = cateto oposto / cateto adjacente.",
+      "tempoEstimado": 28,
+      "tags": [
         "tangente",
         "triangulo-retangulo"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-tangente"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_060",
-      serie: [
+      "id": "trig_060",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Tangente",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 4,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 10 e o adjacente mede 24. Qual e o valor de tan(theta)?",
-      opcoes: [
-        "5/12",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Tangente",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 4,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 10 e o adjacente mede 24. Qual e o valor de tan(theta)?",
+      "opcoes": [
         "1/2",
         "2/3",
-        "3/2"
+        "3/2",
+        "5/12"
       ],
-      correta: "5/12",
-      comentario: "Tangente = cateto oposto / cateto adjacente.",
-      tempoEstimado: 28,
-      tags: [
+      "correta": "5/12",
+      "comentario": "Tangente = cateto oposto / cateto adjacente.",
+      "tempoEstimado": 28,
+      "tags": [
         "tangente",
         "triangulo-retangulo"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-tangente"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_061",
-      serie: [
+      "id": "trig_061",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Seno",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Se sen(theta) = 3/5 e a hipotenusa de um triangulo retangulo mede 10, quanto mede o cateto oposto?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Seno",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Se sen(theta) = 3/5 e a hipotenusa de um triangulo retangulo mede 10, quanto mede o cateto oposto?",
+      "opcoes": [
         "6",
         "8",
         "4",
         "10"
       ],
-      correta: "6",
-      comentario: "No seno, cateto oposto = seno x hipotenusa.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "6",
+      "comentario": "No seno, cateto oposto = seno x hipotenusa.",
+      "tempoEstimado": 30,
+      "tags": [
         "seno",
         "aplicacao-direta"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-seno"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_062",
-      serie: [
+      "id": "trig_062",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Seno",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Se sen(theta) = 5/13 e a hipotenusa de um triangulo retangulo mede 26, quanto mede o cateto oposto?",
-      opcoes: [
-        "10",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Seno",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Se sen(theta) = 5/13 e a hipotenusa de um triangulo retangulo mede 26, quanto mede o cateto oposto?",
+      "opcoes": [
         "12",
+        "10",
         "8",
         "14"
       ],
-      correta: "10",
-      comentario: "No seno, cateto oposto = seno x hipotenusa.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "10",
+      "comentario": "No seno, cateto oposto = seno x hipotenusa.",
+      "tempoEstimado": 30,
+      "tags": [
         "seno",
         "aplicacao-direta"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-seno"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_063",
-      serie: [
+      "id": "trig_063",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Seno",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Se sen(theta) = 1/2 e a hipotenusa de um triangulo retangulo mede 18, quanto mede o cateto oposto?",
-      opcoes: [
-        "9",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Seno",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Se sen(theta) = 1/2 e a hipotenusa de um triangulo retangulo mede 18, quanto mede o cateto oposto?",
+      "opcoes": [
         "11",
         "7",
+        "9",
         "13"
       ],
-      correta: "9",
-      comentario: "No seno, cateto oposto = seno x hipotenusa.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "9",
+      "comentario": "No seno, cateto oposto = seno x hipotenusa.",
+      "tempoEstimado": 30,
+      "tags": [
         "seno",
         "aplicacao-direta"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-seno"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_064",
-      serie: [
+      "id": "trig_064",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Seno",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Se sen(theta) = 8/17 e a hipotenusa de um triangulo retangulo mede 34, quanto mede o cateto oposto?",
-      opcoes: [
-        "16",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Seno",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Se sen(theta) = 8/17 e a hipotenusa de um triangulo retangulo mede 34, quanto mede o cateto oposto?",
+      "opcoes": [
         "18",
         "14",
-        "20"
+        "20",
+        "16"
       ],
-      correta: "16",
-      comentario: "No seno, cateto oposto = seno x hipotenusa.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "16",
+      "comentario": "No seno, cateto oposto = seno x hipotenusa.",
+      "tempoEstimado": 30,
+      "tags": [
         "seno",
         "aplicacao-direta"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-seno"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_065",
-      serie: [
+      "id": "trig_065",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Seno",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Se sen(theta) = 7/25 e a hipotenusa de um triangulo retangulo mede 50, quanto mede o cateto oposto?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Seno",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Se sen(theta) = 7/25 e a hipotenusa de um triangulo retangulo mede 50, quanto mede o cateto oposto?",
+      "opcoes": [
         "14",
         "16",
         "12",
         "18"
       ],
-      correta: "14",
-      comentario: "No seno, cateto oposto = seno x hipotenusa.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "14",
+      "comentario": "No seno, cateto oposto = seno x hipotenusa.",
+      "tempoEstimado": 30,
+      "tags": [
         "seno",
         "aplicacao-direta"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-seno"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_066",
-      serie: [
+      "id": "trig_066",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Seno",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Se sen(theta) = 3/5 e a hipotenusa de um triangulo retangulo mede 25, quanto mede o cateto oposto?",
-      opcoes: [
-        "15",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Seno",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Se sen(theta) = 3/5 e a hipotenusa de um triangulo retangulo mede 25, quanto mede o cateto oposto?",
+      "opcoes": [
         "17",
+        "15",
         "13",
         "19"
       ],
-      correta: "15",
-      comentario: "No seno, cateto oposto = seno x hipotenusa.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "15",
+      "comentario": "No seno, cateto oposto = seno x hipotenusa.",
+      "tempoEstimado": 30,
+      "tags": [
         "seno",
         "aplicacao-direta"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-seno"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_067",
-      serie: [
+      "id": "trig_067",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Seno",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Se sen(theta) = 5/13 e a hipotenusa de um triangulo retangulo mede 39, quanto mede o cateto oposto?",
-      opcoes: [
-        "15",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Seno",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Se sen(theta) = 5/13 e a hipotenusa de um triangulo retangulo mede 39, quanto mede o cateto oposto?",
+      "opcoes": [
         "17",
         "13",
+        "15",
         "19"
       ],
-      correta: "15",
-      comentario: "No seno, cateto oposto = seno x hipotenusa.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "15",
+      "comentario": "No seno, cateto oposto = seno x hipotenusa.",
+      "tempoEstimado": 30,
+      "tags": [
         "seno",
         "aplicacao-direta"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-seno"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_068",
-      serie: [
+      "id": "trig_068",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Seno",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Se sen(theta) = 1/2 e a hipotenusa de um triangulo retangulo mede 30, quanto mede o cateto oposto?",
-      opcoes: [
-        "15",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Seno",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Se sen(theta) = 1/2 e a hipotenusa de um triangulo retangulo mede 30, quanto mede o cateto oposto?",
+      "opcoes": [
         "17",
         "13",
-        "19"
+        "19",
+        "15"
       ],
-      correta: "15",
-      comentario: "No seno, cateto oposto = seno x hipotenusa.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "15",
+      "comentario": "No seno, cateto oposto = seno x hipotenusa.",
+      "tempoEstimado": 30,
+      "tags": [
         "seno",
         "aplicacao-direta"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-seno"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_069",
-      serie: [
+      "id": "trig_069",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Seno",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Se sen(theta) = 8/17 e a hipotenusa de um triangulo retangulo mede 51, quanto mede o cateto oposto?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Seno",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Se sen(theta) = 8/17 e a hipotenusa de um triangulo retangulo mede 51, quanto mede o cateto oposto?",
+      "opcoes": [
         "24",
         "26",
         "22",
         "28"
       ],
-      correta: "24",
-      comentario: "No seno, cateto oposto = seno x hipotenusa.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "24",
+      "comentario": "No seno, cateto oposto = seno x hipotenusa.",
+      "tempoEstimado": 30,
+      "tags": [
         "seno",
         "aplicacao-direta"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-seno"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_070",
-      serie: [
+      "id": "trig_070",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Seno",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Se sen(theta) = 7/25 e a hipotenusa de um triangulo retangulo mede 75, quanto mede o cateto oposto?",
-      opcoes: [
-        "21",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Seno",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Se sen(theta) = 7/25 e a hipotenusa de um triangulo retangulo mede 75, quanto mede o cateto oposto?",
+      "opcoes": [
         "23",
+        "21",
         "19",
         "25"
       ],
-      correta: "21",
-      comentario: "No seno, cateto oposto = seno x hipotenusa.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "21",
+      "comentario": "No seno, cateto oposto = seno x hipotenusa.",
+      "tempoEstimado": 30,
+      "tags": [
         "seno",
         "aplicacao-direta"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-seno"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_071",
-      serie: [
+      "id": "trig_071",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Cosseno",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Se cos(theta) = 4/5 e a hipotenusa de um triangulo retangulo mede 10, quanto mede o cateto adjacente?",
-      opcoes: [
-        "8",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Cosseno",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Se cos(theta) = 4/5 e a hipotenusa de um triangulo retangulo mede 10, quanto mede o cateto adjacente?",
+      "opcoes": [
         "10",
         "6",
+        "8",
         "12"
       ],
-      correta: "8",
-      comentario: "No cosseno, cateto adjacente = cosseno x hipotenusa.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "8",
+      "comentario": "No cosseno, cateto adjacente = cosseno x hipotenusa.",
+      "tempoEstimado": 30,
+      "tags": [
         "cosseno",
         "aplicacao-direta"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-cosseno"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_072",
-      serie: [
+      "id": "trig_072",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Cosseno",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Se cos(theta) = 12/13 e a hipotenusa de um triangulo retangulo mede 26, quanto mede o cateto adjacente?",
-      opcoes: [
-        "24",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Cosseno",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Se cos(theta) = 12/13 e a hipotenusa de um triangulo retangulo mede 26, quanto mede o cateto adjacente?",
+      "opcoes": [
         "26",
         "22",
-        "28"
+        "28",
+        "24"
       ],
-      correta: "24",
-      comentario: "No cosseno, cateto adjacente = cosseno x hipotenusa.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "24",
+      "comentario": "No cosseno, cateto adjacente = cosseno x hipotenusa.",
+      "tempoEstimado": 30,
+      "tags": [
         "cosseno",
         "aplicacao-direta"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-cosseno"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_073",
-      serie: [
+      "id": "trig_073",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Cosseno",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Se cos(theta) = 1/2 e a hipotenusa de um triangulo retangulo mede 18, quanto mede o cateto adjacente?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Cosseno",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Se cos(theta) = 1/2 e a hipotenusa de um triangulo retangulo mede 18, quanto mede o cateto adjacente?",
+      "opcoes": [
         "9",
         "11",
         "7",
         "13"
       ],
-      correta: "9",
-      comentario: "No cosseno, cateto adjacente = cosseno x hipotenusa.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "9",
+      "comentario": "No cosseno, cateto adjacente = cosseno x hipotenusa.",
+      "tempoEstimado": 30,
+      "tags": [
         "cosseno",
         "aplicacao-direta"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-cosseno"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_074",
-      serie: [
+      "id": "trig_074",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Cosseno",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Se cos(theta) = 15/17 e a hipotenusa de um triangulo retangulo mede 34, quanto mede o cateto adjacente?",
-      opcoes: [
-        "30",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Cosseno",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Se cos(theta) = 15/17 e a hipotenusa de um triangulo retangulo mede 34, quanto mede o cateto adjacente?",
+      "opcoes": [
         "32",
+        "30",
         "28",
         "34"
       ],
-      correta: "30",
-      comentario: "No cosseno, cateto adjacente = cosseno x hipotenusa.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "30",
+      "comentario": "No cosseno, cateto adjacente = cosseno x hipotenusa.",
+      "tempoEstimado": 30,
+      "tags": [
         "cosseno",
         "aplicacao-direta"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-cosseno"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_075",
-      serie: [
+      "id": "trig_075",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Cosseno",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Se cos(theta) = 24/25 e a hipotenusa de um triangulo retangulo mede 50, quanto mede o cateto adjacente?",
-      opcoes: [
-        "48",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Cosseno",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Se cos(theta) = 24/25 e a hipotenusa de um triangulo retangulo mede 50, quanto mede o cateto adjacente?",
+      "opcoes": [
         "50",
         "46",
+        "48",
         "52"
       ],
-      correta: "48",
-      comentario: "No cosseno, cateto adjacente = cosseno x hipotenusa.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "48",
+      "comentario": "No cosseno, cateto adjacente = cosseno x hipotenusa.",
+      "tempoEstimado": 30,
+      "tags": [
         "cosseno",
         "aplicacao-direta"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-cosseno"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_076",
-      serie: [
+      "id": "trig_076",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Cosseno",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Se cos(theta) = 4/5 e a hipotenusa de um triangulo retangulo mede 25, quanto mede o cateto adjacente?",
-      opcoes: [
-        "20",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Cosseno",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Se cos(theta) = 4/5 e a hipotenusa de um triangulo retangulo mede 25, quanto mede o cateto adjacente?",
+      "opcoes": [
         "22",
         "18",
-        "24"
+        "24",
+        "20"
       ],
-      correta: "20",
-      comentario: "No cosseno, cateto adjacente = cosseno x hipotenusa.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "20",
+      "comentario": "No cosseno, cateto adjacente = cosseno x hipotenusa.",
+      "tempoEstimado": 30,
+      "tags": [
         "cosseno",
         "aplicacao-direta"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-cosseno"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_077",
-      serie: [
+      "id": "trig_077",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Cosseno",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Se cos(theta) = 12/13 e a hipotenusa de um triangulo retangulo mede 39, quanto mede o cateto adjacente?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Cosseno",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Se cos(theta) = 12/13 e a hipotenusa de um triangulo retangulo mede 39, quanto mede o cateto adjacente?",
+      "opcoes": [
         "36",
         "38",
         "34",
         "40"
       ],
-      correta: "36",
-      comentario: "No cosseno, cateto adjacente = cosseno x hipotenusa.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "36",
+      "comentario": "No cosseno, cateto adjacente = cosseno x hipotenusa.",
+      "tempoEstimado": 30,
+      "tags": [
         "cosseno",
         "aplicacao-direta"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-cosseno"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_078",
-      serie: [
+      "id": "trig_078",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Cosseno",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Se cos(theta) = 1/2 e a hipotenusa de um triangulo retangulo mede 30, quanto mede o cateto adjacente?",
-      opcoes: [
-        "15",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Cosseno",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Se cos(theta) = 1/2 e a hipotenusa de um triangulo retangulo mede 30, quanto mede o cateto adjacente?",
+      "opcoes": [
         "17",
+        "15",
         "13",
         "19"
       ],
-      correta: "15",
-      comentario: "No cosseno, cateto adjacente = cosseno x hipotenusa.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "15",
+      "comentario": "No cosseno, cateto adjacente = cosseno x hipotenusa.",
+      "tempoEstimado": 30,
+      "tags": [
         "cosseno",
         "aplicacao-direta"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-cosseno"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_079",
-      serie: [
+      "id": "trig_079",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Cosseno",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Se cos(theta) = 15/17 e a hipotenusa de um triangulo retangulo mede 51, quanto mede o cateto adjacente?",
-      opcoes: [
-        "45",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Cosseno",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Se cos(theta) = 15/17 e a hipotenusa de um triangulo retangulo mede 51, quanto mede o cateto adjacente?",
+      "opcoes": [
         "47",
         "43",
+        "45",
         "49"
       ],
-      correta: "45",
-      comentario: "No cosseno, cateto adjacente = cosseno x hipotenusa.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "45",
+      "comentario": "No cosseno, cateto adjacente = cosseno x hipotenusa.",
+      "tempoEstimado": 30,
+      "tags": [
         "cosseno",
         "aplicacao-direta"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-cosseno"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_080",
-      serie: [
+      "id": "trig_080",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Cosseno",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Se cos(theta) = 24/25 e a hipotenusa de um triangulo retangulo mede 75, quanto mede o cateto adjacente?",
-      opcoes: [
-        "72",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Cosseno",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Se cos(theta) = 24/25 e a hipotenusa de um triangulo retangulo mede 75, quanto mede o cateto adjacente?",
+      "opcoes": [
         "74",
         "70",
-        "76"
+        "76",
+        "72"
       ],
-      correta: "72",
-      comentario: "No cosseno, cateto adjacente = cosseno x hipotenusa.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "72",
+      "comentario": "No cosseno, cateto adjacente = cosseno x hipotenusa.",
+      "tempoEstimado": 30,
+      "tags": [
         "cosseno",
         "aplicacao-direta"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-cosseno"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_081",
-      serie: [
+      "id": "trig_081",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Tangente",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Se tan(theta) = 3/4 e o cateto adjacente mede 8, quanto mede o cateto oposto?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Tangente",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Se tan(theta) = 3/4 e o cateto adjacente mede 8, quanto mede o cateto oposto?",
+      "opcoes": [
         "6",
         "8",
         "12",
         "15sqrt(3)"
       ],
-      correta: "6",
-      comentario: "Na tangente, cateto oposto = tangente x cateto adjacente.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "6",
+      "comentario": "Na tangente, cateto oposto = tangente x cateto adjacente.",
+      "tempoEstimado": 30,
+      "tags": [
         "tangente",
         "aplicacao-direta"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-tangente"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_082",
-      serie: [
+      "id": "trig_082",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Tangente",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Se tan(theta) = 5/12 e o cateto adjacente mede 24, quanto mede o cateto oposto?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Tangente",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Se tan(theta) = 5/12 e o cateto adjacente mede 24, quanto mede o cateto oposto?",
+      "opcoes": [
+        "6",
         "10",
-        "6",
         "8",
         "12"
       ],
-      correta: "10",
-      comentario: "Na tangente, cateto oposto = tangente x cateto adjacente.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "10",
+      "comentario": "Na tangente, cateto oposto = tangente x cateto adjacente.",
+      "tempoEstimado": 30,
+      "tags": [
         "tangente",
         "aplicacao-direta"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-tangente"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_083",
-      serie: [
+      "id": "trig_083",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Tangente",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Se tan(theta) = 1 e o cateto adjacente mede 9, quanto mede o cateto oposto?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Tangente",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Se tan(theta) = 1 e o cateto adjacente mede 9, quanto mede o cateto oposto?",
+      "opcoes": [
+        "6",
+        "8",
         "9",
-        "6",
-        "8",
         "12"
       ],
-      correta: "9",
-      comentario: "Na tangente, cateto oposto = tangente x cateto adjacente.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "9",
+      "comentario": "Na tangente, cateto oposto = tangente x cateto adjacente.",
+      "tempoEstimado": 30,
+      "tags": [
         "tangente",
         "aplicacao-direta"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-tangente"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_084",
-      serie: [
+      "id": "trig_084",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Tangente",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Se tan(theta) = sqrt(3)/3 e o cateto adjacente mede 12, quanto mede o cateto oposto?",
-      opcoes: [
-        "4sqrt(3)",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Tangente",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Se tan(theta) = sqrt(3)/3 e o cateto adjacente mede 12, quanto mede o cateto oposto?",
+      "opcoes": [
         "6",
         "8",
-        "12"
+        "12",
+        "4sqrt(3)"
       ],
-      correta: "4sqrt(3)",
-      comentario: "Na tangente, cateto oposto = tangente x cateto adjacente.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "4sqrt(3)",
+      "comentario": "Na tangente, cateto oposto = tangente x cateto adjacente.",
+      "tempoEstimado": 30,
+      "tags": [
         "tangente",
         "aplicacao-direta"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-tangente"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_085",
-      serie: [
+      "id": "trig_085",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Tangente",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Se tan(theta) = sqrt(3) e o cateto adjacente mede 5, quanto mede o cateto oposto?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Tangente",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Se tan(theta) = sqrt(3) e o cateto adjacente mede 5, quanto mede o cateto oposto?",
+      "opcoes": [
         "5sqrt(3)",
         "6",
         "8",
         "12"
       ],
-      correta: "5sqrt(3)",
-      comentario: "Na tangente, cateto oposto = tangente x cateto adjacente.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "5sqrt(3)",
+      "comentario": "Na tangente, cateto oposto = tangente x cateto adjacente.",
+      "tempoEstimado": 30,
+      "tags": [
         "tangente",
         "aplicacao-direta"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-tangente"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_086",
-      serie: [
+      "id": "trig_086",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Tangente",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Se tan(theta) = 3/4 e o cateto adjacente mede 20, quanto mede o cateto oposto?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Tangente",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Se tan(theta) = 3/4 e o cateto adjacente mede 20, quanto mede o cateto oposto?",
+      "opcoes": [
+        "6",
         "15",
-        "6",
         "8",
         "12"
       ],
-      correta: "15",
-      comentario: "Na tangente, cateto oposto = tangente x cateto adjacente.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "15",
+      "comentario": "Na tangente, cateto oposto = tangente x cateto adjacente.",
+      "tempoEstimado": 30,
+      "tags": [
         "tangente",
         "aplicacao-direta"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-tangente"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_087",
-      serie: [
+      "id": "trig_087",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Tangente",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Se tan(theta) = 5/12 e o cateto adjacente mede 36, quanto mede o cateto oposto?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Tangente",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Se tan(theta) = 5/12 e o cateto adjacente mede 36, quanto mede o cateto oposto?",
+      "opcoes": [
+        "6",
+        "8",
         "15",
-        "6",
-        "8",
         "12"
       ],
-      correta: "15",
-      comentario: "Na tangente, cateto oposto = tangente x cateto adjacente.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "15",
+      "comentario": "Na tangente, cateto oposto = tangente x cateto adjacente.",
+      "tempoEstimado": 30,
+      "tags": [
         "tangente",
         "aplicacao-direta"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-tangente"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_088",
-      serie: [
+      "id": "trig_088",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Tangente",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Se tan(theta) = 1 e o cateto adjacente mede 14, quanto mede o cateto oposto?",
-      opcoes: [
-        "14",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Tangente",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Se tan(theta) = 1 e o cateto adjacente mede 14, quanto mede o cateto oposto?",
+      "opcoes": [
         "6",
         "8",
-        "12"
+        "12",
+        "14"
       ],
-      correta: "14",
-      comentario: "Na tangente, cateto oposto = tangente x cateto adjacente.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "14",
+      "comentario": "Na tangente, cateto oposto = tangente x cateto adjacente.",
+      "tempoEstimado": 30,
+      "tags": [
         "tangente",
         "aplicacao-direta"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-tangente"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_089",
-      serie: [
+      "id": "trig_089",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Tangente",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Se tan(theta) = sqrt(3)/3 e o cateto adjacente mede 9, quanto mede o cateto oposto?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Tangente",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Se tan(theta) = sqrt(3)/3 e o cateto adjacente mede 9, quanto mede o cateto oposto?",
+      "opcoes": [
         "3sqrt(3)",
         "6",
         "8",
         "12"
       ],
-      correta: "3sqrt(3)",
-      comentario: "Na tangente, cateto oposto = tangente x cateto adjacente.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "3sqrt(3)",
+      "comentario": "Na tangente, cateto oposto = tangente x cateto adjacente.",
+      "tempoEstimado": 30,
+      "tags": [
         "tangente",
         "aplicacao-direta"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-tangente"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_090",
-      serie: [
+      "id": "trig_090",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Tangente",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 5,
-      cognicao: "calculo",
-      tipo: "multipla_escolha",
-      enunciado: "Se tan(theta) = sqrt(3) e o cateto adjacente mede 8, quanto mede o cateto oposto?",
-      opcoes: [
-        "8sqrt(3)",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Tangente",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 5,
+      "cognicao": "calculo",
+      "tipo": "multipla_escolha",
+      "enunciado": "Se tan(theta) = sqrt(3) e o cateto adjacente mede 8, quanto mede o cateto oposto?",
+      "opcoes": [
         "6",
+        "8sqrt(3)",
         "8",
         "12"
       ],
-      correta: "8sqrt(3)",
-      comentario: "Na tangente, cateto oposto = tangente x cateto adjacente.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "8sqrt(3)",
+      "comentario": "Na tangente, cateto oposto = tangente x cateto adjacente.",
+      "tempoEstimado": 30,
+      "tags": [
         "tangente",
         "aplicacao-direta"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-tangente"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_091",
-      serie: [
+      "id": "trig_091",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Angulos notaveis",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Qual e o valor de sen 30 graus?",
-      opcoes: [
-        "1/2",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Angulos notaveis",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual e o valor de sen 30 graus?",
+      "opcoes": [
         "sqrt(2)/2",
         "sqrt(3)/2",
+        "1/2",
         "1"
       ],
-      correta: "1/2",
-      comentario: "Esse e um valor notavel basico.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "1/2",
+      "comentario": "Esse e um valor notavel basico.",
+      "tempoEstimado": 30,
+      "tags": [
         "angulos-notaveis",
         "valores"
       ],
-      habilidades: [
+      "habilidades": [
         "usar-angulos-notaveis"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_092",
-      serie: [
+      "id": "trig_092",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Angulos notaveis",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Qual e o valor de cos 30 graus?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Angulos notaveis",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual e o valor de cos 30 graus?",
+      "opcoes": [
         "1/2",
         "sqrt(2)/2",
-        "sqrt(3)/2",
-        "1"
-      ],
-      correta: "sqrt(3)/2",
-      comentario: "Cos 30 graus = sqrt(3)/2.",
-      tempoEstimado: 30,
-      tags: [
-        "angulos-notaveis",
-        "valores"
-      ],
-      habilidades: [
-        "usar-angulos-notaveis"
-      ],
-      collections: [
-        "questions"
-      ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
-    },
-    {
-      id: "trig_093",
-      serie: [
-        1
-      ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Angulos notaveis",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Qual e o valor de sen 60 graus?",
-      opcoes: [
-        "1/2",
-        "sqrt(2)/2",
-        "sqrt(3)/2",
-        "1"
-      ],
-      correta: "sqrt(3)/2",
-      comentario: "Sen 60 graus = sqrt(3)/2.",
-      tempoEstimado: 30,
-      tags: [
-        "angulos-notaveis",
-        "valores"
-      ],
-      habilidades: [
-        "usar-angulos-notaveis"
-      ],
-      collections: [
-        "questions"
-      ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
-    },
-    {
-      id: "trig_094",
-      serie: [
-        1
-      ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Angulos notaveis",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Qual e o valor de cos 60 graus?",
-      opcoes: [
-        "1/2",
-        "sqrt(2)/2",
-        "sqrt(3)/2",
-        "1"
-      ],
-      correta: "1/2",
-      comentario: "Cos 60 graus = 1/2.",
-      tempoEstimado: 30,
-      tags: [
-        "angulos-notaveis",
-        "valores"
-      ],
-      habilidades: [
-        "usar-angulos-notaveis"
-      ],
-      collections: [
-        "questions"
-      ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
-    },
-    {
-      id: "trig_095",
-      serie: [
-        1
-      ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Angulos notaveis",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Qual e o valor de tan 30 graus?",
-      opcoes: [
-        "sqrt(3)",
-        "sqrt(3)/3",
         "1",
+        "sqrt(3)/2"
+      ],
+      "correta": "sqrt(3)/2",
+      "comentario": "Cos 30 graus = sqrt(3)/2.",
+      "tempoEstimado": 30,
+      "tags": [
+        "angulos-notaveis",
+        "valores"
+      ],
+      "habilidades": [
+        "usar-angulos-notaveis"
+      ],
+      "collections": [
+        "questions"
+      ],
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
+    },
+    {
+      "id": "trig_093",
+      "serie": [
+        1
+      ],
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Angulos notaveis",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual e o valor de sen 60 graus?",
+      "opcoes": [
+        "sqrt(3)/2",
+        "1/2",
+        "sqrt(2)/2",
+        "1"
+      ],
+      "correta": "sqrt(3)/2",
+      "comentario": "Sen 60 graus = sqrt(3)/2.",
+      "tempoEstimado": 30,
+      "tags": [
+        "angulos-notaveis",
+        "valores"
+      ],
+      "habilidades": [
+        "usar-angulos-notaveis"
+      ],
+      "collections": [
+        "questions"
+      ],
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
+    },
+    {
+      "id": "trig_094",
+      "serie": [
+        1
+      ],
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Angulos notaveis",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual e o valor de cos 60 graus?",
+      "opcoes": [
+        "sqrt(2)/2",
+        "1/2",
+        "sqrt(3)/2",
+        "1"
+      ],
+      "correta": "1/2",
+      "comentario": "Cos 60 graus = 1/2. Assim, a resposta correta ? 1/2.",
+      "tempoEstimado": 30,
+      "tags": [
+        "angulos-notaveis",
+        "valores"
+      ],
+      "habilidades": [
+        "usar-angulos-notaveis"
+      ],
+      "collections": [
+        "questions"
+      ],
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
+    },
+    {
+      "id": "trig_095",
+      "serie": [
+        1
+      ],
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Angulos notaveis",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual e o valor de tan 30 graus?",
+      "opcoes": [
+        "sqrt(3)",
+        "1",
+        "sqrt(3)/3",
         "1/2"
       ],
-      correta: "sqrt(3)/3",
-      comentario: "Tan 30 graus = sqrt(3)/3.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "sqrt(3)/3",
+      "comentario": "Tan 30 graus = sqrt(3)/3.",
+      "tempoEstimado": 30,
+      "tags": [
         "angulos-notaveis",
         "valores"
       ],
-      habilidades: [
+      "habilidades": [
         "usar-angulos-notaveis"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_096",
-      serie: [
+      "id": "trig_096",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Angulos notaveis",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Qual e o valor de tan 60 graus?",
-      opcoes: [
-        "sqrt(3)",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Angulos notaveis",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual e o valor de tan 60 graus?",
+      "opcoes": [
         "sqrt(3)/3",
         "1",
-        "1/2"
+        "1/2",
+        "sqrt(3)"
       ],
-      correta: "sqrt(3)",
-      comentario: "Tan 60 graus = sqrt(3).",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "sqrt(3)",
+      "comentario": "Tan 60 graus = sqrt(3).",
+      "tempoEstimado": 30,
+      "tags": [
         "angulos-notaveis",
         "valores"
       ],
-      habilidades: [
+      "habilidades": [
         "usar-angulos-notaveis"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_097",
-      serie: [
+      "id": "trig_097",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Angulos notaveis",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Qual angulo possui seno igual a sqrt(2)/2?",
-      opcoes: [
-        "30 graus",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Angulos notaveis",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual angulo possui seno igual a sqrt(2)/2?",
+      "opcoes": [
         "45 graus",
+        "30 graus",
         "60 graus",
         "90 graus"
       ],
-      correta: "45 graus",
-      comentario: "Sen 45 graus = sqrt(2)/2.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "45 graus",
+      "comentario": "Sen 45 graus = sqrt(2)/2.",
+      "tempoEstimado": 30,
+      "tags": [
         "angulos-notaveis",
         "valores"
       ],
-      habilidades: [
+      "habilidades": [
         "usar-angulos-notaveis"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_098",
-      serie: [
+      "id": "trig_098",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Angulos notaveis",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Qual angulo possui cosseno igual a 1/2?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Angulos notaveis",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual angulo possui cosseno igual a 1/2?",
+      "opcoes": [
         "30 graus",
-        "45 graus",
         "60 graus",
+        "45 graus",
         "90 graus"
       ],
-      correta: "60 graus",
-      comentario: "Cos 60 graus = 1/2.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "60 graus",
+      "comentario": "Cos 60 graus = 1/2. Assim, a resposta correta ? 60 graus.",
+      "tempoEstimado": 30,
+      "tags": [
         "angulos-notaveis",
         "valores"
       ],
-      habilidades: [
+      "habilidades": [
         "usar-angulos-notaveis"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_099",
-      serie: [
+      "id": "trig_099",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Angulos notaveis",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Qual angulo possui tangente igual a 1?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Angulos notaveis",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual angulo possui tangente igual a 1?",
+      "opcoes": [
         "30 graus",
-        "45 graus",
         "60 graus",
+        "45 graus",
         "90 graus"
       ],
-      correta: "45 graus",
-      comentario: "Tan 45 graus = 1.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "45 graus",
+      "comentario": "Tan 45 graus = 1. Assim, a resposta correta ? 45 graus.",
+      "tempoEstimado": 30,
+      "tags": [
         "angulos-notaveis",
         "valores"
       ],
-      habilidades: [
+      "habilidades": [
         "usar-angulos-notaveis"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_100",
-      serie: [
+      "id": "trig_100",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Angulos notaveis",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Qual par de valores esta correto?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Angulos notaveis",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual par de valores esta correto?",
+      "opcoes": [
         "sen 60 = 1/2",
         "cos 30 = 1/2",
-        "sen 45 = sqrt(2)/2",
-        "tan 30 = sqrt(3)"
+        "tan 30 = sqrt(3)",
+        "sen 45 = sqrt(2)/2"
       ],
-      correta: "sen 45 = sqrt(2)/2",
-      comentario: "Esse e um valor notavel correto.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "sen 45 = sqrt(2)/2",
+      "comentario": "Esse e um valor notavel correto.",
+      "tempoEstimado": 30,
+      "tags": [
         "angulos-notaveis",
         "valores"
       ],
-      habilidades: [
+      "habilidades": [
         "usar-angulos-notaveis"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_101",
-      serie: [
+      "id": "trig_101",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Complementares e equivalencias",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Se alpha e agudo, sen(alpha) e igual a:",
-      opcoes: [
-        "sen(90 - alpha)",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Complementares e equivalencias",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Se alpha e agudo, sen(alpha) e igual a:",
+      "opcoes": [
         "cos(90 - alpha)",
+        "sen(90 - alpha)",
         "tan(90 - alpha)",
         "1 - cos(alpha)"
       ],
-      correta: "cos(90 - alpha)",
-      comentario: "Seno e cosseno de angulos complementares se correspondem.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "cos(90 - alpha)",
+      "comentario": "Seno e cosseno de angulos complementares se correspondem.",
+      "tempoEstimado": 30,
+      "tags": [
         "complementares",
         "equivalencia"
       ],
-      habilidades: [
+      "habilidades": [
         "relacionar-razoes-trigonometricas-equivalentes"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_102",
-      serie: [
+      "id": "trig_102",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Complementares e equivalencias",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Se alpha e agudo, cos(alpha) e igual a:",
-      opcoes: [
-        "sen(90 - alpha)",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Complementares e equivalencias",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Se alpha e agudo, cos(alpha) e igual a:",
+      "opcoes": [
         "cos(90 - alpha)",
+        "sen(90 - alpha)",
         "tan(90 - alpha)",
         "1 - sen(alpha)"
       ],
-      correta: "sen(90 - alpha)",
-      comentario: "Cosseno de alpha e seno do complementar.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "sen(90 - alpha)",
+      "comentario": "Cosseno de alpha e seno do complementar.",
+      "tempoEstimado": 30,
+      "tags": [
         "complementares",
         "equivalencia"
       ],
-      habilidades: [
+      "habilidades": [
         "relacionar-razoes-trigonometricas-equivalentes"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_103",
-      serie: [
+      "id": "trig_103",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Complementares e equivalencias",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Qual igualdade e verdadeira?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Complementares e equivalencias",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual igualdade e verdadeira?",
+      "opcoes": [
         "sen 30 = cos 30",
-        "sen 30 = cos 60",
         "tan 30 = tan 60",
+        "sen 30 = cos 60",
         "cos 45 = 1/2"
       ],
-      correta: "sen 30 = cos 60",
-      comentario: "Angulos complementares no par 30 e 60.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "sen 30 = cos 60",
+      "comentario": "Angulos complementares no par 30 e 60.",
+      "tempoEstimado": 30,
+      "tags": [
         "complementares",
         "equivalencia"
       ],
-      habilidades: [
+      "habilidades": [
         "relacionar-razoes-trigonometricas-equivalentes"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_104",
-      serie: [
+      "id": "trig_104",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Complementares e equivalencias",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Qual igualdade e verdadeira?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Complementares e equivalencias",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual igualdade e verdadeira?",
+      "opcoes": [
         "sen 60 = cos 60",
-        "sen 60 = cos 30",
         "tan 30 = 1",
-        "cos 45 = 1"
+        "cos 45 = 1",
+        "sen 60 = cos 30"
       ],
-      correta: "sen 60 = cos 30",
-      comentario: "Seno de 60 e cosseno de 30.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "sen 60 = cos 30",
+      "comentario": "Seno de 60 e cosseno de 30.",
+      "tempoEstimado": 30,
+      "tags": [
         "complementares",
         "equivalencia"
       ],
-      habilidades: [
+      "habilidades": [
         "relacionar-razoes-trigonometricas-equivalentes"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_105",
-      serie: [
+      "id": "trig_105",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Complementares e equivalencias",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Se um angulo mede 20 graus, seu complementar mede:",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Complementares e equivalencias",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Se um angulo mede 20 graus, seu complementar mede:",
+      "opcoes": [
         "70 graus",
         "80 graus",
         "90 graus",
         "110 graus"
       ],
-      correta: "70 graus",
-      comentario: "Angulos complementares somam 90 graus.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "70 graus",
+      "comentario": "Angulos complementares somam 90 graus.",
+      "tempoEstimado": 30,
+      "tags": [
         "complementares",
         "equivalencia"
       ],
-      habilidades: [
+      "habilidades": [
         "relacionar-razoes-trigonometricas-equivalentes"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_106",
-      serie: [
+      "id": "trig_106",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Complementares e equivalencias",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Se um angulo mede 35 graus, seu complementar mede:",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Complementares e equivalencias",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Se um angulo mede 35 graus, seu complementar mede:",
+      "opcoes": [
         "45 graus",
         "55 graus",
         "65 graus",
         "75 graus"
       ],
-      correta: "55 graus",
-      comentario: "Basta calcular 90 - 35.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "55 graus",
+      "comentario": "Basta calcular 90 - 35.",
+      "tempoEstimado": 30,
+      "tags": [
         "complementares",
         "equivalencia"
       ],
-      habilidades: [
+      "habilidades": [
         "relacionar-razoes-trigonometricas-equivalentes"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_107",
-      serie: [
+      "id": "trig_107",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Complementares e equivalencias",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Qual expressao representa o mesmo valor de cos 25 graus?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Complementares e equivalencias",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual expressao representa o mesmo valor de cos 25 graus?",
+      "opcoes": [
         "sen 25 graus",
-        "sen 65 graus",
         "tan 65 graus",
+        "sen 65 graus",
         "cos 65 graus"
       ],
-      correta: "sen 65 graus",
-      comentario: "O complementar de 25 e 65.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "sen 65 graus",
+      "comentario": "O complementar de 25 e 65.",
+      "tempoEstimado": 30,
+      "tags": [
         "complementares",
         "equivalencia"
       ],
-      habilidades: [
+      "habilidades": [
         "relacionar-razoes-trigonometricas-equivalentes"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_108",
-      serie: [
+      "id": "trig_108",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Complementares e equivalencias",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Qual expressao representa o mesmo valor de sen 15 graus?",
-      opcoes: [
-        "cos 75 graus",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Complementares e equivalencias",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual expressao representa o mesmo valor de sen 15 graus?",
+      "opcoes": [
         "sen 75 graus",
         "tan 75 graus",
-        "cos 15 graus"
+        "cos 15 graus",
+        "cos 75 graus"
       ],
-      correta: "cos 75 graus",
-      comentario: "Seno de 15 e cosseno do complementar 75.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "cos 75 graus",
+      "comentario": "Seno de 15 e cosseno do complementar 75.",
+      "tempoEstimado": 30,
+      "tags": [
         "complementares",
         "equivalencia"
       ],
-      habilidades: [
+      "habilidades": [
         "relacionar-razoes-trigonometricas-equivalentes"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_109",
-      serie: [
+      "id": "trig_109",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Complementares e equivalencias",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Qual dupla contem apenas angulos complementares?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Complementares e equivalencias",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual dupla contem apenas angulos complementares?",
+      "opcoes": [
+        "35 e 55",
         "30 e 45",
         "20 e 60",
-        "35 e 55",
         "40 e 70"
       ],
-      correta: "35 e 55",
-      comentario: "35 + 55 = 90.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "35 e 55",
+      "comentario": "35 + 55 = 90. Assim, a resposta correta ? 35 e 55.",
+      "tempoEstimado": 30,
+      "tags": [
         "complementares",
         "equivalencia"
       ],
-      habilidades: [
+      "habilidades": [
         "relacionar-razoes-trigonometricas-equivalentes"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_110",
-      serie: [
+      "id": "trig_110",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Complementares e equivalencias",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Se sen(theta) = cos(50 graus), theta pode ser:",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Complementares e equivalencias",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Se sen(theta) = cos(50 graus), theta pode ser:",
+      "opcoes": [
         "20 graus",
-        "30 graus",
         "40 graus",
+        "30 graus",
         "50 graus"
       ],
-      correta: "40 graus",
-      comentario: "Theta e o complementar de 50 graus.",
-      tempoEstimado: 30,
-      tags: [
+      "correta": "40 graus",
+      "comentario": "Theta e o complementar de 50 graus.",
+      "tempoEstimado": 30,
+      "tags": [
         "complementares",
         "equivalencia"
       ],
-      habilidades: [
+      "habilidades": [
         "relacionar-razoes-trigonometricas-equivalentes"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_111",
-      serie: [
+      "id": "trig_111",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Aplicacoes em problemas",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Uma escada encostada na parede forma um angulo de 30 graus com o chao. Se a escada mede 10 m, qual e a altura alcancada na parede?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Aplicacoes em problemas",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma escada encostada na parede forma um angulo de 30 graus com o chao. Se a escada mede 10 m, qual e a altura alcancada na parede?",
+      "opcoes": [
         "4 m",
-        "5 m",
         "8 m",
+        "5 m",
         "10 m"
       ],
-      correta: "5 m",
-      comentario: "Usamos sen 30 = altura/10.",
-      tempoEstimado: 32,
-      tags: [
+      "correta": "5 m",
+      "comentario": "Usamos sen 30 = altura/10.",
+      "tempoEstimado": 32,
+      "tags": [
         "aplicacao",
         "trigonometria"
       ],
-      habilidades: [
+      "habilidades": [
         "resolver-problemas-basicos-com-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_112",
-      serie: [
+      "id": "trig_112",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Aplicacoes em problemas",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Uma escada encostada na parede forma um angulo de 60 graus com o chao. Se a escada mede 10 m, qual e a altura alcancada na parede?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Aplicacoes em problemas",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma escada encostada na parede forma um angulo de 60 graus com o chao. Se a escada mede 10 m, qual e a altura alcancada na parede?",
+      "opcoes": [
         "5 m",
-        "5sqrt(3) m",
         "10 m",
-        "10sqrt(3) m"
+        "10sqrt(3) m",
+        "5sqrt(3) m"
       ],
-      correta: "5sqrt(3) m",
-      comentario: "Usamos sen 60 = altura/10.",
-      tempoEstimado: 32,
-      tags: [
+      "correta": "5sqrt(3) m",
+      "comentario": "Usamos sen 60 = altura/10.",
+      "tempoEstimado": 32,
+      "tags": [
         "aplicacao",
         "trigonometria"
       ],
-      habilidades: [
+      "habilidades": [
         "resolver-problemas-basicos-com-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_113",
-      serie: [
+      "id": "trig_113",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Aplicacoes em problemas",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Uma rampa forma 45 graus com o solo. Se sua projecao horizontal mede 6 m, qual e sua altura?",
-      opcoes: [
-        "3 m",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Aplicacoes em problemas",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma rampa forma 45 graus com o solo. Se sua projecao horizontal mede 6 m, qual e sua altura?",
+      "opcoes": [
         "6 m",
+        "3 m",
         "6sqrt(2) m",
         "12 m"
       ],
-      correta: "6 m",
-      comentario: "Tan 45 = altura/6 = 1.",
-      tempoEstimado: 32,
-      tags: [
+      "correta": "6 m",
+      "comentario": "Tan 45 = altura/6 = 1.",
+      "tempoEstimado": 32,
+      "tags": [
         "aplicacao",
         "trigonometria"
       ],
-      habilidades: [
+      "habilidades": [
         "resolver-problemas-basicos-com-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_114",
-      serie: [
+      "id": "trig_114",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Aplicacoes em problemas",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Um poste projeta sombra de 4 m e o raio solar forma 45 graus com o solo. Qual e a altura do poste?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Aplicacoes em problemas",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Um poste projeta sombra de 4 m e o raio solar forma 45 graus com o solo. Qual e a altura do poste?",
+      "opcoes": [
         "2 m",
         "4 m",
         "4sqrt(2) m",
         "8 m"
       ],
-      correta: "4 m",
-      comentario: "Tan 45 = altura/4.",
-      tempoEstimado: 32,
-      tags: [
+      "correta": "4 m",
+      "comentario": "Tan 45 = altura/4. Assim, a resposta correta ? 4 m.",
+      "tempoEstimado": 32,
+      "tags": [
         "aplicacao",
         "trigonometria"
       ],
-      habilidades: [
+      "habilidades": [
         "resolver-problemas-basicos-com-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_115",
-      serie: [
+      "id": "trig_115",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Aplicacoes em problemas",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Um observador ve o topo de um predio sob angulo de 30 graus. Estando a 12 m da base, a altura observada e:",
-      opcoes: [
-        "4sqrt(3) m",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Aplicacoes em problemas",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Um observador ve o topo de um predio sob angulo de 30 graus. Estando a 12 m da base, a altura observada e:",
+      "opcoes": [
         "12/sqrt(3) m",
         "6 m",
+        "4sqrt(3) m",
         "12 m"
       ],
-      correta: "4sqrt(3) m",
-      comentario: "Tan 30 = altura/12 = sqrt(3)/3.",
-      tempoEstimado: 32,
-      tags: [
+      "correta": "4sqrt(3) m",
+      "comentario": "Tan 30 = altura/12 = sqrt(3)/3.",
+      "tempoEstimado": 32,
+      "tags": [
         "aplicacao",
         "trigonometria"
       ],
-      habilidades: [
+      "habilidades": [
         "resolver-problemas-basicos-com-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_116",
-      serie: [
+      "id": "trig_116",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Aplicacoes em problemas",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Uma escada de 8 m forma 60 graus com o solo. Qual e a medida aproximada do cateto adjacente ao angulo com o solo?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Aplicacoes em problemas",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma escada de 8 m forma 60 graus com o solo. Qual e a medida aproximada do cateto adjacente ao angulo com o solo?",
+      "opcoes": [
         "2 m",
-        "4 m",
         "4sqrt(3) m",
-        "8 m"
+        "8 m",
+        "4 m"
       ],
-      correta: "4 m",
-      comentario: "Cos 60 = adjacente/8 = 1/2.",
-      tempoEstimado: 32,
-      tags: [
+      "correta": "4 m",
+      "comentario": "Cos 60 = adjacente/8 = 1/2.",
+      "tempoEstimado": 32,
+      "tags": [
         "aplicacao",
         "trigonometria"
       ],
-      habilidades: [
+      "habilidades": [
         "resolver-problemas-basicos-com-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_117",
-      serie: [
+      "id": "trig_117",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Aplicacoes em problemas",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Um telhado faz 30 graus com a horizontal. Se a metade da largura horizontal mede 6 m, a altura desse lado do telhado e:",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Aplicacoes em problemas",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Um telhado faz 30 graus com a horizontal. Se a metade da largura horizontal mede 6 m, a altura desse lado do telhado e:",
+      "opcoes": [
         "2sqrt(3) m",
         "3 m",
         "6 m",
         "6sqrt(3) m"
       ],
-      correta: "2sqrt(3) m",
-      comentario: "Tan 30 = altura/6.",
-      tempoEstimado: 32,
-      tags: [
+      "correta": "2sqrt(3) m",
+      "comentario": "Tan 30 = altura/6. Assim, a resposta correta ? 2sqrt(3) m.",
+      "tempoEstimado": 32,
+      "tags": [
         "aplicacao",
         "trigonometria"
       ],
-      habilidades: [
+      "habilidades": [
         "resolver-problemas-basicos-com-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_118",
-      serie: [
+      "id": "trig_118",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Aplicacoes em problemas",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Uma pessoa esta a 5 m da base de um muro e enxerga o topo sob 45 graus. Desprezando a altura dos olhos, o muro mede:",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Aplicacoes em problemas",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma pessoa esta a 5 m da base de um muro e enxerga o topo sob 45 graus. Desprezando a altura dos olhos, o muro mede:",
+      "opcoes": [
         "2,5 m",
         "5 m",
         "5sqrt(2) m",
         "10 m"
       ],
-      correta: "5 m",
-      comentario: "Tan 45 = altura/5.",
-      tempoEstimado: 32,
-      tags: [
+      "correta": "5 m",
+      "comentario": "Tan 45 = altura/5. Assim, a resposta correta ? 5 m.",
+      "tempoEstimado": 32,
+      "tags": [
         "aplicacao",
         "trigonometria"
       ],
-      habilidades: [
+      "habilidades": [
         "resolver-problemas-basicos-com-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_119",
-      serie: [
+      "id": "trig_119",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Aplicacoes em problemas",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Se uma rampa sobe 3 m a cada 4 m na horizontal, sua tangente em relacao ao solo e:",
-      opcoes: [
-        "3/4",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Aplicacoes em problemas",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Se uma rampa sobe 3 m a cada 4 m na horizontal, sua tangente em relacao ao solo e:",
+      "opcoes": [
         "4/3",
         "3/5",
+        "3/4",
         "4/5"
       ],
-      correta: "3/4",
-      comentario: "Tangente = subida / horizontal.",
-      tempoEstimado: 32,
-      tags: [
+      "correta": "3/4",
+      "comentario": "Tangente = subida / horizontal.",
+      "tempoEstimado": 32,
+      "tags": [
         "aplicacao",
         "trigonometria"
       ],
-      habilidades: [
+      "habilidades": [
         "resolver-problemas-basicos-com-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_120",
-      serie: [
+      "id": "trig_120",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Aplicacoes em problemas",
-      dificuldadeLabel: "media",
-      dificuldadeNivel: 6,
-      cognicao: "aplicacao",
-      tipo: "multipla_escolha",
-      enunciado: "Um cabo de 20 m preso ao topo de um poste faz 30 graus com o solo. Qual e a altura do poste?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Aplicacoes em problemas",
+      "dificuldadeLabel": "medio",
+      "dificuldadeNivel": 6,
+      "cognicao": "aplicacao",
+      "tipo": "multipla_escolha",
+      "enunciado": "Um cabo de 20 m preso ao topo de um poste faz 30 graus com o solo. Qual e a altura do poste?",
+      "opcoes": [
         "5 m",
-        "10 m",
         "10sqrt(3) m",
-        "20 m"
+        "20 m",
+        "10 m"
       ],
-      correta: "10 m",
-      comentario: "A altura e o cateto oposto: sen 30 x 20.",
-      tempoEstimado: 32,
-      tags: [
+      "correta": "10 m",
+      "comentario": "A altura e o cateto oposto: sen 30 x 20.",
+      "tempoEstimado": 32,
+      "tags": [
         "aplicacao",
         "trigonometria"
       ],
-      habilidades: [
+      "habilidades": [
         "resolver-problemas-basicos-com-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_121",
-      serie: [
+      "id": "trig_121",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Aplicacoes em problemas",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Uma escada de 13 m encostada na parede forma um triangulo retangulo com distancia de 5 m da parede. Qual e a altura alcancada?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Aplicacoes em problemas",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 8,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma escada de 13 m encostada na parede forma um triangulo retangulo com distancia de 5 m da parede. Qual e a altura alcancada?",
+      "opcoes": [
+        "12 m",
         "8 m",
         "10 m",
-        "12 m",
         "13 m"
       ],
-      correta: "12 m",
-      comentario: "Usamos o trio pitagorico 5-12-13 e, em trigonometria, reconhecemos os lados do triangulo.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "12 m",
+      "comentario": "Usamos o trio pitagorico 5-12-13 e, em trigonometria, reconhecemos os lados do triangulo.",
+      "tempoEstimado": 35,
+      "tags": [
         "aplicacao",
         "triangulo-retangulo"
       ],
-      habilidades: [
+      "habilidades": [
         "resolver-problemas-basicos-com-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_122",
-      serie: [
+      "id": "trig_122",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Seno",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Em um triangulo retangulo, sen(theta) = 12/13. Qual trio de lados pode representar oposto, adjacente e hipotenusa em relacao a theta?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Seno",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 8,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Em um triangulo retangulo, sen(theta) = 12/13. Qual trio de lados pode representar oposto, adjacente e hipotenusa em relacao a theta?",
+      "opcoes": [
         "5, 12, 13",
         "12, 5, 13",
         "13, 12, 5",
         "12, 13, 5"
       ],
-      correta: "12, 5, 13",
-      comentario: "Se sen = oposto/hipotenusa = 12/13, o oposto e 12 e a hipotenusa e 13.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "12, 5, 13",
+      "comentario": "Se sen = oposto/hipotenusa = 12/13, o oposto e 12 e a hipotenusa e 13.",
+      "tempoEstimado": 35,
+      "tags": [
         "seno",
         "identificacao"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-seno"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_123",
-      serie: [
+      "id": "trig_123",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Cosseno",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Em um triangulo retangulo, cos(theta) = 5/13. Qual trio de lados pode representar oposto, adjacente e hipotenusa em relacao a theta?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Cosseno",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 8,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Em um triangulo retangulo, cos(theta) = 5/13. Qual trio de lados pode representar oposto, adjacente e hipotenusa em relacao a theta?",
+      "opcoes": [
         "5, 12, 13",
-        "12, 5, 13",
         "13, 5, 12",
+        "12, 5, 13",
         "5, 13, 12"
       ],
-      correta: "12, 5, 13",
-      comentario: "Se cos = adjacente/hipotenusa = 5/13, o adjacente e 5 e a hipotenusa e 13.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "12, 5, 13",
+      "comentario": "Se cos = adjacente/hipotenusa = 5/13, o adjacente e 5 e a hipotenusa e 13.",
+      "tempoEstimado": 35,
+      "tags": [
         "cosseno",
         "identificacao"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-cosseno"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_124",
-      serie: [
+      "id": "trig_124",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Tangente",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Se tan(theta) = 3/4 em um triangulo retangulo, uma possibilidade para os catetos oposto e adjacente e:",
-      opcoes: [
-        "3 e 4",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Tangente",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 8,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Se tan(theta) = 3/4 em um triangulo retangulo, uma possibilidade para os catetos oposto e adjacente e:",
+      "opcoes": [
         "4 e 3",
         "3 e 5",
-        "4 e 5"
+        "4 e 5",
+        "3 e 4"
       ],
-      correta: "3 e 4",
-      comentario: "Tangente = oposto/adjacente.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "3 e 4",
+      "comentario": "Tangente = oposto/adjacente.",
+      "tempoEstimado": 35,
+      "tags": [
         "tangente",
         "identificacao"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-tangente"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_125",
-      serie: [
+      "id": "trig_125",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Angulos notaveis",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Qual par de valores esta todo correto?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Angulos notaveis",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 8,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual par de valores esta todo correto?",
+      "opcoes": [
         "sen 30 = 1/2 e cos 60 = 1/2",
         "sen 30 = sqrt(3)/2 e tan 45 = sqrt(2)/2",
         "cos 30 = 1/2 e tan 60 = 1",
         "sen 45 = 1/2 e cos 45 = 1/2"
       ],
-      correta: "sen 30 = 1/2 e cos 60 = 1/2",
-      comentario: "Ambos sao valores notaveis corretos.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "sen 30 = 1/2 e cos 60 = 1/2",
+      "comentario": "Ambos sao valores notaveis corretos.",
+      "tempoEstimado": 35,
+      "tags": [
         "angulos-notaveis",
         "comparacao"
       ],
-      habilidades: [
+      "habilidades": [
         "usar-angulos-notaveis"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_126",
-      serie: [
+      "id": "trig_126",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Complementares e equivalencias",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Qual igualdade esta incorreta?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Complementares e equivalencias",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 8,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual igualdade esta incorreta?",
+      "opcoes": [
         "sen 20 = cos 70",
+        "tan 30 = tan 60",
         "cos 35 = sen 55",
-        "sen 40 = cos 50",
-        "tan 30 = tan 60"
+        "sen 40 = cos 50"
       ],
-      correta: "tan 30 = tan 60",
-      comentario: "Tangentes de 30 e 60 sao diferentes.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "tan 30 = tan 60",
+      "comentario": "Tangentes de 30 e 60 sao diferentes.",
+      "tempoEstimado": 35,
+      "tags": [
         "equivalencia",
         "comparacao"
       ],
-      habilidades: [
+      "habilidades": [
         "relacionar-razoes-trigonometricas-equivalentes"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_127",
-      serie: [
+      "id": "trig_127",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Aplicacoes em problemas",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Uma rampa sobe 4 m a cada 4 m na horizontal. Qual razao trigonometrica em relacao ao solo vale 1?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Aplicacoes em problemas",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 8,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma rampa sobe 4 m a cada 4 m na horizontal. Qual razao trigonometrica em relacao ao solo vale 1?",
+      "opcoes": [
         "seno",
         "cosseno",
         "tangente",
         "secante"
       ],
-      correta: "tangente",
-      comentario: "Se oposto e adjacente sao iguais, a tangente vale 1.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "tangente",
+      "comentario": "Se oposto e adjacente sao iguais, a tangente vale 1.",
+      "tempoEstimado": 35,
+      "tags": [
         "aplicacao",
         "tangente"
       ],
-      habilidades: [
+      "habilidades": [
         "resolver-problemas-basicos-com-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_128",
-      serie: [
+      "id": "trig_128",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Aplicacoes em problemas",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Um cabo de 26 m prende o topo de um poste e sua base esta a 10 m do poste. Qual e a altura do poste?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Aplicacoes em problemas",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 8,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Um cabo de 26 m prende o topo de um poste e sua base esta a 10 m do poste. Qual e a altura do poste?",
+      "opcoes": [
         "10 m",
         "12 m",
-        "24 m",
-        "26 m"
+        "26 m",
+        "24 m"
       ],
-      correta: "24 m",
-      comentario: "Reconhecemos o triangulo 10-24-26.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "24 m",
+      "comentario": "Reconhecemos o triangulo 10-24-26.",
+      "tempoEstimado": 35,
+      "tags": [
         "aplicacao",
         "triangulo-retangulo"
       ],
-      habilidades: [
+      "habilidades": [
         "resolver-problemas-basicos-com-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_129",
-      serie: [
+      "id": "trig_129",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Hipotenusa e catetos",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Em um triangulo retangulo, qual lado jamais pode ser cateto em relacao a qualquer angulo agudo?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Hipotenusa e catetos",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 8,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Em um triangulo retangulo, qual lado jamais pode ser cateto em relacao a qualquer angulo agudo?",
+      "opcoes": [
         "o maior lado",
         "o lado oposto ao angulo de referencia",
         "o lado adjacente ao angulo de referencia",
         "um lado que toca o angulo reto"
       ],
-      correta: "o maior lado",
-      comentario: "O maior lado e sempre a hipotenusa.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "o maior lado",
+      "comentario": "O maior lado e sempre a hipotenusa.",
+      "tempoEstimado": 35,
+      "tags": [
         "hipotenusa",
         "propriedade"
       ],
-      habilidades: [
+      "habilidades": [
         "relacionar-hipotenusa-e-catetos"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_130",
-      serie: [
+      "id": "trig_130",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Angulos notaveis",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Qual valor e maior?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Angulos notaveis",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 8,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual valor e maior?",
+      "opcoes": [
         "sen 30",
-        "cos 60",
         "tan 45",
+        "cos 60",
         "tan 30"
       ],
-      correta: "tan 45",
-      comentario: "Sen 30 e cos 60 valem 1/2, tan 30 vale sqrt(3)/3 e tan 45 vale 1.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "tan 45",
+      "comentario": "Sen 30 e cos 60 valem 1/2, tan 30 vale sqrt(3)/3 e tan 45 vale 1.",
+      "tempoEstimado": 35,
+      "tags": [
         "angulos-notaveis",
         "comparacao"
       ],
-      habilidades: [
+      "habilidades": [
         "usar-angulos-notaveis"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_131",
-      serie: [
+      "id": "trig_131",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Seno",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 9,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Se sen(theta) = 1/2 e a hipotenusa mede 14, qual e o cateto oposto?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Seno",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 8,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Se sen(theta) = 1/2 e a hipotenusa mede 14, qual e o cateto oposto?",
+      "opcoes": [
         "5",
-        "7",
         "14",
+        "7",
         "28"
       ],
-      correta: "7",
-      comentario: "O cateto oposto e metade da hipotenusa.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "7",
+      "comentario": "O cateto oposto e metade da hipotenusa.",
+      "tempoEstimado": 35,
+      "tags": [
         "seno",
         "aplicacao-direta"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-seno"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_132",
-      serie: [
+      "id": "trig_132",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Cosseno",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 9,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Se cos(theta) = 1/2 e a hipotenusa mede 18, qual e o cateto adjacente?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Cosseno",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 8,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Se cos(theta) = 1/2 e a hipotenusa mede 18, qual e o cateto adjacente?",
+      "opcoes": [
         "6",
         "8",
-        "9",
-        "12"
+        "12",
+        "9"
       ],
-      correta: "9",
-      comentario: "Metade de 18 e 9.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "9",
+      "comentario": "Metade de 18 e 9. Assim, a resposta correta ? 9.",
+      "tempoEstimado": 35,
+      "tags": [
         "cosseno",
         "aplicacao-direta"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-cosseno"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_133",
-      serie: [
+      "id": "trig_133",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Tangente",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 9,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Se tan(theta) = 5/12 e o cateto adjacente mede 24, qual e o cateto oposto?",
-      opcoes: [
-        "5",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Tangente",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 8,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Se tan(theta) = 5/12 e o cateto adjacente mede 24, qual e o cateto oposto?",
+      "opcoes": [
         "10",
+        "5",
         "12",
         "20"
       ],
-      correta: "10",
-      comentario: "Oposto = 5/12 x 24.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "10",
+      "comentario": "Oposto = 5/12 x 24. Assim, a resposta correta ? 10.",
+      "tempoEstimado": 35,
+      "tags": [
         "tangente",
         "aplicacao-direta"
       ],
-      habilidades: [
+      "habilidades": [
         "calcular-tangente"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_134",
-      serie: [
+      "id": "trig_134",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Aplicacoes em problemas",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 9,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Uma sombra mede 12 m e o angulo de elevacao do Sol e de 45 graus. A altura do objeto e:",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Aplicacoes em problemas",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 8,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma sombra mede 12 m e o angulo de elevacao do Sol e de 45 graus. A altura do objeto e:",
+      "opcoes": [
         "6 m",
         "12 m",
         "12sqrt(2) m",
         "24 m"
       ],
-      correta: "12 m",
-      comentario: "Com tan 45 = 1, altura e sombra tem a mesma medida.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "12 m",
+      "comentario": "Com tan 45 = 1, altura e sombra tem a mesma medida.",
+      "tempoEstimado": 35,
+      "tags": [
         "aplicacao",
         "tangente"
       ],
-      habilidades: [
+      "habilidades": [
         "resolver-problemas-basicos-com-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_135",
-      serie: [
+      "id": "trig_135",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Aplicacoes em problemas",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 9,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Uma escada de 14 m faz 60 graus com o solo. O cateto adjacente mede:",
-      opcoes: [
-        "7 m",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Aplicacoes em problemas",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 8,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma escada de 14 m faz 60 graus com o solo. O cateto adjacente mede:",
+      "opcoes": [
         "7sqrt(3) m",
         "14 m",
+        "7 m",
         "14sqrt(3) m"
       ],
-      correta: "7 m",
-      comentario: "Cos 60 = 1/2.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "7 m",
+      "comentario": "Cos 60 = 1/2. Assim, a resposta correta ? 7 m.",
+      "tempoEstimado": 35,
+      "tags": [
         "aplicacao",
         "cosseno"
       ],
-      habilidades: [
+      "habilidades": [
         "resolver-problemas-basicos-com-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_136",
-      serie: [
+      "id": "trig_136",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Angulos notaveis",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 9,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Qual alternativa contem apenas valores iguais?",
-      opcoes: [
-        "sen 30 e cos 60",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Angulos notaveis",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 8,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual alternativa contem apenas valores iguais?",
+      "opcoes": [
         "sen 30 e sen 60",
         "tan 30 e tan 60",
-        "cos 30 e cos 60"
+        "cos 30 e cos 60",
+        "sen 30 e cos 60"
       ],
-      correta: "sen 30 e cos 60",
-      comentario: "Ambos valem 1/2.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "sen 30 e cos 60",
+      "comentario": "Ambos valem 1/2. Assim, a resposta correta ? sen 30 e cos 60.",
+      "tempoEstimado": 35,
+      "tags": [
         "angulos-notaveis",
         "equivalencia"
       ],
-      habilidades: [
+      "habilidades": [
         "usar-angulos-notaveis"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_137",
-      serie: [
+      "id": "trig_137",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Complementares e equivalencias",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 9,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Se cos(theta) = sen(25 graus), theta pode medir:",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Complementares e equivalencias",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 8,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Se cos(theta) = sen(25 graus), theta pode medir:",
+      "opcoes": [
+        "65 graus",
         "25 graus",
         "35 graus",
-        "55 graus",
-        "65 graus"
+        "55 graus"
       ],
-      correta: "65 graus",
-      comentario: "Cosseno de theta e seno do complementar.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "65 graus",
+      "comentario": "Cosseno de theta e seno do complementar.",
+      "tempoEstimado": 35,
+      "tags": [
         "complementares",
         "equivalencia"
       ],
-      habilidades: [
+      "habilidades": [
         "relacionar-razoes-trigonometricas-equivalentes"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_138",
-      serie: [
+      "id": "trig_138",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Aplicacoes em problemas",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 9,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Um observador esta a 9 m da base de um muro e ve o topo sob 30 graus. Qual expressao representa corretamente a altura do muro?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Aplicacoes em problemas",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 8,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Um observador esta a 9 m da base de um muro e ve o topo sob 30 graus. Qual expressao representa corretamente a altura do muro?",
+      "opcoes": [
         "9 x sqrt(3)",
-        "3sqrt(3)",
         "9/sqrt(3)",
+        "3sqrt(3)",
         "18"
       ],
-      correta: "9/sqrt(3)",
-      comentario: "Tan 30 = altura/9 = sqrt(3)/3.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "9/sqrt(3)",
+      "comentario": "Tan 30 = altura/9 = sqrt(3)/3.",
+      "tempoEstimado": 35,
+      "tags": [
         "aplicacao",
         "tangente"
       ],
-      habilidades: [
+      "habilidades": [
         "resolver-problemas-basicos-com-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_139",
-      serie: [
+      "id": "trig_139",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Triangulo retangulo",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 9,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Um triangulo retangulo tem angulos agudos de 25 graus e 65 graus. Em relacao ao angulo de 25 graus, o que ocorre com o cateto oposto quando se considera o angulo de 65 graus?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Triangulo retangulo",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 8,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Um triangulo retangulo tem angulos agudos de 25 graus e 65 graus. Em relacao ao angulo de 25 graus, o que ocorre com o cateto oposto quando se considera o angulo de 65 graus?",
+      "opcoes": [
         "Passa a ser hipotenusa",
-        "Passa a ser cateto adjacente",
         "Permanece cateto oposto",
+        "Passa a ser cateto adjacente",
         "Deixa de existir"
       ],
-      correta: "Passa a ser cateto adjacente",
-      comentario: "O nome dos catetos depende do angulo de referencia.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "Passa a ser cateto adjacente",
+      "comentario": "O nome dos catetos depende do angulo de referencia.",
+      "tempoEstimado": 35,
+      "tags": [
         "triangulo-retangulo",
         "referencia"
       ],
-      habilidades: [
+      "habilidades": [
         "identificar-triangulo-retangulo"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_140",
-      serie: [
+      "id": "trig_140",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Aplicacoes em problemas",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 9,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Uma rampa tem inclinacao tal que tan(theta) = 3/5. Se a base horizontal mede 20 m, a altura mede:",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Aplicacoes em problemas",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 8,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma rampa tem inclinacao tal que tan(theta) = 3/5. Se a base horizontal mede 20 m, a altura mede:",
+      "opcoes": [
         "8 m",
         "10 m",
-        "12 m",
-        "15 m"
+        "15 m",
+        "12 m"
       ],
-      correta: "12 m",
-      comentario: "Oposto = 3/5 x 20.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "12 m",
+      "comentario": "Oposto = 3/5 x 20. Assim, a resposta correta ? 12 m.",
+      "tempoEstimado": 35,
+      "tags": [
         "aplicacao",
         "tangente"
       ],
-      habilidades: [
+      "habilidades": [
         "resolver-problemas-basicos-com-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_141",
-      serie: [
+      "id": "trig_141",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Pegadinha",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 10,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Qual afirmacao esta correta?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Pegadinha",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 8,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual afirmacao esta correta?",
+      "opcoes": [
+        "Cosseno usa cateto adjacente e hipotenusa.",
         "Seno usa os dois catetos.",
         "Tangente usa hipotenusa no denominador.",
-        "Cosseno usa cateto adjacente e hipotenusa.",
         "Hipotenusa depende do angulo de referencia."
       ],
-      correta: "Cosseno usa cateto adjacente e hipotenusa.",
-      comentario: "Essa e a definicao correta de cosseno.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "Cosseno usa cateto adjacente e hipotenusa.",
+      "comentario": "Essa e a definicao correta de cosseno.",
+      "tempoEstimado": 35,
+      "tags": [
         "pegadinha",
         "definicoes"
       ],
-      habilidades: [
+      "habilidades": [
         "evitar-erros-comuns-em-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_142",
-      serie: [
+      "id": "trig_142",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Pegadinha",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 10,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Um aluno trocou cateto oposto por adjacente ao calcular seno. Qual razao ele calculou sem perceber?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Pegadinha",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 8,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Um aluno trocou cateto oposto por adjacente ao calcular seno. Qual razao ele calculou sem perceber?",
+      "opcoes": [
         "tangente",
         "cosseno",
         "secante",
         "cotangente"
       ],
-      correta: "cosseno",
-      comentario: "Se usar adjacente/hipotenusa, ele calcula cosseno.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "cosseno",
+      "comentario": "Se usar adjacente/hipotenusa, ele calcula cosseno.",
+      "tempoEstimado": 35,
+      "tags": [
         "pegadinha",
         "erro-comum"
       ],
-      habilidades: [
+      "habilidades": [
         "evitar-erros-comuns-em-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_143",
-      serie: [
+      "id": "trig_143",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Equivalencia de formas",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 10,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Qual frase e equivalente a dizer que tan(theta) = 1?",
-      opcoes: [
-        "Os catetos sao iguais.",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Equivalencia de formas",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 8,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual frase e equivalente a dizer que tan(theta) = 1?",
+      "opcoes": [
         "A hipotenusa e o dobro do oposto.",
         "O angulo e necessariamente 30 graus.",
+        "Os catetos sao iguais.",
         "O cosseno vale 1."
       ],
-      correta: "Os catetos sao iguais.",
-      comentario: "Se oposto/adjacente = 1, entao oposto = adjacente.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "Os catetos sao iguais.",
+      "comentario": "Se oposto/adjacente = 1, entao oposto = adjacente.",
+      "tempoEstimado": 35,
+      "tags": [
         "equivalencia",
         "tangente"
       ],
-      habilidades: [
+      "habilidades": [
         "relacionar-formas-equivalentes"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_144",
-      serie: [
+      "id": "trig_144",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Equivalencia de formas",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 10,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Dizer que sen(theta) = 1/2 equivale a dizer que:",
-      opcoes: [
-        "o cateto oposto e metade da hipotenusa",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Equivalencia de formas",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 8,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Dizer que sen(theta) = 1/2 equivale a dizer que:",
+      "opcoes": [
         "o cateto adjacente e metade da hipotenusa",
         "a tangente vale 1/2",
-        "o angulo e 45 graus"
+        "o angulo e 45 graus",
+        "o cateto oposto e metade da hipotenusa"
       ],
-      correta: "o cateto oposto e metade da hipotenusa",
-      comentario: "Essa e a leitura direta da razao seno.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "o cateto oposto e metade da hipotenusa",
+      "comentario": "Essa e a leitura direta da razao seno.",
+      "tempoEstimado": 35,
+      "tags": [
         "equivalencia",
         "seno"
       ],
-      habilidades: [
+      "habilidades": [
         "relacionar-formas-equivalentes"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_145",
-      serie: [
+      "id": "trig_145",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Complementares e equivalencias",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 10,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Qual valor e igual a cos 30 graus?",
-      opcoes: [
-        "sen 30 graus",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Complementares e equivalencias",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 8,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual valor e igual a cos 30 graus?",
+      "opcoes": [
         "sen 60 graus",
+        "sen 30 graus",
         "cos 60 graus",
         "tan 45 graus"
       ],
-      correta: "sen 60 graus",
-      comentario: "Cos 30 = sen 60.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "sen 60 graus",
+      "comentario": "Cos 30 = sen 60. Assim, a resposta correta ? sen 60 graus.",
+      "tempoEstimado": 35,
+      "tags": [
         "complementares",
         "angulos-notaveis"
       ],
-      habilidades: [
+      "habilidades": [
         "relacionar-razoes-trigonometricas-equivalentes"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_146",
-      serie: [
+      "id": "trig_146",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Aplicacoes em problemas",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 10,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Uma escada de 10 m forma 30 graus com o solo. A distancia da base da escada ate a parede e:",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Aplicacoes em problemas",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 8,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma escada de 10 m forma 30 graus com o solo. A distancia da base da escada ate a parede e:",
+      "opcoes": [
         "5 m",
         "5sqrt(3) m",
         "10 m",
         "10sqrt(3) m"
       ],
-      correta: "5sqrt(3) m",
-      comentario: "Usamos cos 30 = adjacente/10.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "5sqrt(3) m",
+      "comentario": "Usamos cos 30 = adjacente/10.",
+      "tempoEstimado": 35,
+      "tags": [
         "aplicacao",
         "cosseno"
       ],
-      habilidades: [
+      "habilidades": [
         "resolver-problemas-basicos-com-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_147",
-      serie: [
+      "id": "trig_147",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Aplicacoes em problemas",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 10,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Um cabo de sustentacao faz 45 graus com o solo e alcanca 7 m de altura. Qual e a distancia horizontal da base ao ponto de apoio?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Aplicacoes em problemas",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 8,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Um cabo de sustentacao faz 45 graus com o solo e alcanca 7 m de altura. Qual e a distancia horizontal da base ao ponto de apoio?",
+      "opcoes": [
         "3,5 m",
-        "7 m",
         "7sqrt(2) m",
+        "7 m",
         "14 m"
       ],
-      correta: "7 m",
-      comentario: "Com tan 45 = 1, oposto = adjacente.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "7 m",
+      "comentario": "Com tan 45 = 1, oposto = adjacente.",
+      "tempoEstimado": 35,
+      "tags": [
         "aplicacao",
         "tangente"
       ],
-      habilidades: [
+      "habilidades": [
         "resolver-problemas-basicos-com-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_148",
-      serie: [
+      "id": "trig_148",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Angulos notaveis",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 10,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Qual alternativa ordena corretamente do menor para o maior?",
-      opcoes: [
-        "sen 30, tan 30, tan 45",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Angulos notaveis",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 9,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual alternativa ordena corretamente do menor para o maior?",
+      "opcoes": [
         "tan 45, sen 30, tan 30",
         "tan 30, sen 30, tan 45",
-        "sen 30, tan 45, tan 30"
+        "sen 30, tan 45, tan 30",
+        "sen 30, tan 30, tan 45"
       ],
-      correta: "sen 30, tan 30, tan 45",
-      comentario: "1/2 < sqrt(3)/3 < 1.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "sen 30, tan 30, tan 45",
+      "comentario": "1/2 < sqrt(3)/3 < 1. Assim, a resposta correta ? sen 30, tan 30, tan 45.",
+      "tempoEstimado": 35,
+      "tags": [
         "angulos-notaveis",
         "comparacao"
       ],
-      habilidades: [
+      "habilidades": [
         "usar-angulos-notaveis"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_149",
-      serie: [
+      "id": "trig_149",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Pegadinha",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 10,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Qual afirmacao e falsa?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Pegadinha",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 9,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual afirmacao e falsa?",
+      "opcoes": [
+        "cos 45 = 1/2",
         "sen 30 = 1/2",
         "cos 60 = 1/2",
-        "tan 45 = 1",
-        "cos 45 = 1/2"
+        "tan 45 = 1"
       ],
-      correta: "cos 45 = 1/2",
-      comentario: "Na verdade, cos 45 = sqrt(2)/2.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "cos 45 = 1/2",
+      "comentario": "Na verdade, cos 45 = sqrt(2)/2.",
+      "tempoEstimado": 35,
+      "tags": [
         "pegadinha",
         "angulos-notaveis"
       ],
-      habilidades: [
+      "habilidades": [
         "evitar-erros-comuns-em-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_150",
-      serie: [
+      "id": "trig_150",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Equivalencia de formas",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 10,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Qual alternativa traduz corretamente cos(theta) = 4/5?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Equivalencia de formas",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 9,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual alternativa traduz corretamente cos(theta) = 4/5?",
+      "opcoes": [
         "cateto oposto = 4 e hipotenusa = 5",
         "cateto adjacente = 4 e hipotenusa = 5",
         "cateto oposto = 5 e adjacente = 4",
         "cateto adjacente = 5 e hipotenusa = 4"
       ],
-      correta: "cateto adjacente = 4 e hipotenusa = 5",
-      comentario: "Essa e a leitura direta de cosseno.",
-      tempoEstimado: 35,
-      tags: [
+      "correta": "cateto adjacente = 4 e hipotenusa = 5",
+      "comentario": "Essa e a leitura direta de cosseno.",
+      "tempoEstimado": 35,
+      "tags": [
         "equivalencia",
         "cosseno"
       ],
-      habilidades: [
+      "habilidades": [
         "relacionar-formas-equivalentes"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_151",
-      serie: [
+      "id": "trig_151",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Interpretacao indireta",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Uma escada de 12 m foi apoiada em uma parede e forma 30 graus com o solo. Qual interpretacao esta correta sobre a altura alcancada?",
-      opcoes: [
-        "Ela alcanca 6 m de altura.",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Interpretacao indireta",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 9,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma escada de 12 m foi apoiada em uma parede e forma 30 graus com o solo. Qual interpretacao esta correta sobre a altura alcancada?",
+      "opcoes": [
         "Ela alcanca 12 m de altura.",
         "Ela alcanca 6sqrt(3) m de altura.",
+        "Ela alcanca 6 m de altura.",
         "Ela alcanca 3 m de altura."
       ],
-      correta: "Ela alcanca 6 m de altura.",
-      comentario: "A altura e o cateto oposto: sen 30 x 12.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "Ela alcanca 6 m de altura.",
+      "comentario": "A altura e o cateto oposto: sen 30 x 12.",
+      "tempoEstimado": 40,
+      "tags": [
         "aplicacao",
         "interpretacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar-situacoes-de-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_152",
-      serie: [
+      "id": "trig_152",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Interpretacao indireta",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Uma rampa tem 10 m de comprimento e sobe 5 m. Qual afirmacao descreve melhor a situacao?",
-      opcoes: [
-        "Seu seno em relacao ao solo e 1/2.",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Interpretacao indireta",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 9,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma rampa tem 10 m de comprimento e sobe 5 m. Qual afirmacao descreve melhor a situacao?",
+      "opcoes": [
         "Seu cosseno em relacao ao solo e 1/2.",
         "Sua tangente e 2.",
-        "Ela forma 45 graus obrigatoriamente."
+        "Ela forma 45 graus obrigatoriamente.",
+        "Seu seno em relacao ao solo e 1/2."
       ],
-      correta: "Seu seno em relacao ao solo e 1/2.",
-      comentario: "Seno = altura/comprimento = 5/10.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "Seu seno em relacao ao solo e 1/2.",
+      "comentario": "Seno = altura/comprimento = 5/10.",
+      "tempoEstimado": 40,
+      "tags": [
         "seno",
         "interpretacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar-situacoes-de-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_153",
-      serie: [
+      "id": "trig_153",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Interpretacao indireta",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Se a tangente de um angulo em uma rampa e menor que 1, o que isso sugere?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Interpretacao indireta",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 9,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Se a tangente de um angulo em uma rampa e menor que 1, o que isso sugere?",
+      "opcoes": [
         "A subida e menor que a horizontal.",
         "A subida e maior que a horizontal.",
         "A hipotenusa e menor que o cateto oposto.",
         "O angulo e maior que 90 graus."
       ],
-      correta: "A subida e menor que a horizontal.",
-      comentario: "Tangente < 1 indica oposto < adjacente.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "A subida e menor que a horizontal.",
+      "comentario": "Tangente < 1 indica oposto < adjacente.",
+      "tempoEstimado": 40,
+      "tags": [
         "tangente",
         "interpretacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar-situacoes-de-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_154",
-      serie: [
+      "id": "trig_154",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Interpretacao indireta",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Um poste projeta sombra de 8 m e o angulo de elevacao do Sol e 30 graus. Qual expressao representa corretamente a altura do poste?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Interpretacao indireta",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 9,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Um poste projeta sombra de 8 m e o angulo de elevacao do Sol e 30 graus. Qual expressao representa corretamente a altura do poste?",
+      "opcoes": [
         "8sqrt(3)",
         "8/sqrt(3)",
         "4sqrt(3)",
         "4"
       ],
-      correta: "8/sqrt(3)",
-      comentario: "Tan 30 = altura/8.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "8/sqrt(3)",
+      "comentario": "Tan 30 = altura/8. Assim, a resposta correta ? 8/sqrt(3).",
+      "tempoEstimado": 40,
+      "tags": [
         "aplicacao",
         "tangente"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar-situacoes-de-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_155",
-      serie: [
+      "id": "trig_155",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Interpretacao indireta",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Uma torre vista sob 45 graus a partir de um ponto a 20 m da base tem altura:",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Interpretacao indireta",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 9,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma torre vista sob 45 graus a partir de um ponto a 20 m da base tem altura:",
+      "opcoes": [
         "10 m",
-        "20 m",
         "20sqrt(2) m",
+        "20 m",
         "40 m"
       ],
-      correta: "20 m",
-      comentario: "Tan 45 = 1, entao altura = distancia horizontal.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "20 m",
+      "comentario": "Tan 45 = 1, entao altura = distancia horizontal.",
+      "tempoEstimado": 40,
+      "tags": [
         "aplicacao",
         "tangente"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar-situacoes-de-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_156",
-      serie: [
+      "id": "trig_156",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Interpretacao indireta",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Um triangulo retangulo tem hipotenusa 20 e seno de um angulo igual a 3/5. Qual leitura e correta?",
-      opcoes: [
-        "O cateto oposto mede 12.",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Interpretacao indireta",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 9,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Um triangulo retangulo tem hipotenusa 20 e seno de um angulo igual a 3/5. Qual leitura e correta?",
+      "opcoes": [
         "O cateto adjacente mede 12.",
         "O cateto oposto mede 8.",
-        "A tangente mede 3/5."
+        "A tangente mede 3/5.",
+        "O cateto oposto mede 12."
       ],
-      correta: "O cateto oposto mede 12.",
-      comentario: "Se sen = 3/5, o oposto e 3/5 da hipotenusa.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "O cateto oposto mede 12.",
+      "comentario": "Se sen = 3/5, o oposto e 3/5 da hipotenusa.",
+      "tempoEstimado": 40,
+      "tags": [
         "seno",
         "interpretacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar-situacoes-de-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_157",
-      serie: [
+      "id": "trig_157",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Interpretacao indireta",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Uma escada faz 60 graus com o solo. Comparada a outra de mesmo comprimento que faz 30 graus, ela alcanca:",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Interpretacao indireta",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 9,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma escada faz 60 graus com o solo. Comparada a outra de mesmo comprimento que faz 30 graus, ela alcanca:",
+      "opcoes": [
         "maior altura",
         "menor altura",
         "a mesma altura",
         "altura nula"
       ],
-      correta: "maior altura",
-      comentario: "Quanto maior o seno do angulo com o solo, maior a altura para o mesmo comprimento.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "maior altura",
+      "comentario": "Quanto maior o seno do angulo com o solo, maior a altura para o mesmo comprimento.",
+      "tempoEstimado": 40,
+      "tags": [
         "aplicacao",
         "comparacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar-situacoes-de-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_158",
-      serie: [
+      "id": "trig_158",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Interpretacao indireta",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Se cos(theta) = 1/2 em um triangulo retangulo, qual afirmacao pode ser concluida?",
-      opcoes: [
-        "O cateto adjacente e metade da hipotenusa.",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Interpretacao indireta",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 9,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Se cos(theta) = 1/2 em um triangulo retangulo, qual afirmacao pode ser concluida?",
+      "opcoes": [
         "O cateto oposto e metade da hipotenusa.",
+        "O cateto adjacente e metade da hipotenusa.",
         "Os catetos sao iguais.",
         "A tangente vale 1/2."
       ],
-      correta: "O cateto adjacente e metade da hipotenusa.",
-      comentario: "Essa e a interpretacao direta de cosseno.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "O cateto adjacente e metade da hipotenusa.",
+      "comentario": "Essa e a interpretacao direta de cosseno.",
+      "tempoEstimado": 40,
+      "tags": [
         "cosseno",
         "interpretacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar-situacoes-de-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_159",
-      serie: [
+      "id": "trig_159",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Interpretacao indireta",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Em um triangulo retangulo, se um angulo agudo aumenta, o que tende a acontecer com seu seno?",
-      opcoes: [
-        "Tende a aumentar.",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Interpretacao indireta",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 9,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Em um triangulo retangulo, se um angulo agudo aumenta, o que tende a acontecer com seu seno?",
+      "opcoes": [
         "Tende a diminuir sempre.",
         "Permanece sempre igual.",
+        "Tende a aumentar.",
         "Zera automaticamente."
       ],
-      correta: "Tende a aumentar.",
-      comentario: "Nos angulos agudos basicos, o seno cresce quando o angulo cresce.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "Tende a aumentar.",
+      "comentario": "Nos angulos agudos basicos, o seno cresce quando o angulo cresce.",
+      "tempoEstimado": 40,
+      "tags": [
         "seno",
         "comparacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar-situacoes-de-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_160",
-      serie: [
+      "id": "trig_160",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Interpretacao indireta",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Qual triangulo combina melhor com tan(theta) = 1?",
-      opcoes: [
-        "Catetos 5 e 5",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Interpretacao indireta",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 9,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual triangulo combina melhor com tan(theta) = 1?",
+      "opcoes": [
         "Catetos 3 e 4",
         "Catetos 5 e 10",
-        "Catetos 2 e 6"
+        "Catetos 2 e 6",
+        "Catetos 5 e 5"
       ],
-      correta: "Catetos 5 e 5",
-      comentario: "Tangente 1 significa oposto = adjacente.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "Catetos 5 e 5",
+      "comentario": "Tangente 1 significa oposto = adjacente.",
+      "tempoEstimado": 40,
+      "tags": [
         "tangente",
         "interpretacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar-situacoes-de-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_161",
-      serie: [
+      "id": "trig_161",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Pegadinha",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Um aluno usou cateto oposto dividido por hipotenusa para calcular cosseno. Qual erro houve?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Pegadinha",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 9,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Um aluno usou cateto oposto dividido por hipotenusa para calcular cosseno. Qual erro houve?",
+      "opcoes": [
         "Ele calculou seno em vez de cosseno.",
         "Ele calculou tangente em vez de cosseno.",
         "Ele calculou secante.",
         "Nao houve erro."
       ],
-      correta: "Ele calculou seno em vez de cosseno.",
-      comentario: "Oposto/hipotenusa e definicao de seno.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "Ele calculou seno em vez de cosseno.",
+      "comentario": "Oposto/hipotenusa e definicao de seno.",
+      "tempoEstimado": 40,
+      "tags": [
         "pegadinha",
         "erro-comum"
       ],
-      habilidades: [
+      "habilidades": [
         "evitar-erros-comuns-em-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_162",
-      serie: [
+      "id": "trig_162",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Pegadinha",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Qual afirmacao esta incorreta?",
-      opcoes: [
-        "A hipotenusa depende do angulo escolhido.",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Pegadinha",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 9,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual afirmacao esta incorreta?",
+      "opcoes": [
         "Cateto oposto depende do angulo escolhido.",
+        "A hipotenusa depende do angulo escolhido.",
         "Cateto adjacente depende do angulo escolhido.",
         "A hipotenusa e o maior lado."
       ],
-      correta: "A hipotenusa depende do angulo escolhido.",
-      comentario: "A hipotenusa nao muda com o angulo de referencia.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "A hipotenusa depende do angulo escolhido.",
+      "comentario": "A hipotenusa nao muda com o angulo de referencia.",
+      "tempoEstimado": 40,
+      "tags": [
         "pegadinha",
         "hipotenusa"
       ],
-      habilidades: [
+      "habilidades": [
         "evitar-erros-comuns-em-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_163",
-      serie: [
+      "id": "trig_163",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Pegadinha",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Um estudante afirmou que sen 60 e menor que sen 30 porque 60 e maior que 30. Qual alternativa corrige o erro?",
-      opcoes: [
-        "Sen 60 e maior que sen 30.",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Pegadinha",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 9,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Um estudante afirmou que sen 60 e menor que sen 30 porque 60 e maior que 30. Qual alternativa corrige o erro?",
+      "opcoes": [
         "Sen 60 e igual a sen 30.",
         "Sen 60 e negativo.",
+        "Sen 60 e maior que sen 30.",
         "Nao e possivel comparar."
       ],
-      correta: "Sen 60 e maior que sen 30.",
-      comentario: "Os valores notaveis mostram sqrt(3)/2 > 1/2.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "Sen 60 e maior que sen 30.",
+      "comentario": "Os valores notaveis mostram sqrt(3)/2 > 1/2.",
+      "tempoEstimado": 40,
+      "tags": [
         "pegadinha",
         "angulos-notaveis"
       ],
-      habilidades: [
+      "habilidades": [
         "evitar-erros-comuns-em-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_164",
-      serie: [
+      "id": "trig_164",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Pegadinha",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Qual confusao e mais comum ao usar tangente em problemas?",
-      opcoes: [
-        "Trocar hipotenusa por cateto adjacente.",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Pegadinha",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 9,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual confusao e mais comum ao usar tangente em problemas?",
+      "opcoes": [
         "Trocar area por perimetro.",
         "Somar angulos internos.",
-        "Usar pi em vez de graus."
+        "Usar pi em vez de graus.",
+        "Trocar hipotenusa por cateto adjacente."
       ],
-      correta: "Trocar hipotenusa por cateto adjacente.",
-      comentario: "Tangente envolve apenas oposto e adjacente.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "Trocar hipotenusa por cateto adjacente.",
+      "comentario": "Tangente envolve apenas oposto e adjacente.",
+      "tempoEstimado": 40,
+      "tags": [
         "pegadinha",
         "tangente"
       ],
-      habilidades: [
+      "habilidades": [
         "evitar-erros-comuns-em-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_165",
-      serie: [
+      "id": "trig_165",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Pegadinha",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Um aluno viu cos 30 = sqrt(3)/2 e concluiu que sen 30 tambem vale sqrt(3)/2. O que faltou observar?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Pegadinha",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 9,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Um aluno viu cos 30 = sqrt(3)/2 e concluiu que sen 30 tambem vale sqrt(3)/2. O que faltou observar?",
+      "opcoes": [
         "Seno e cosseno trocam de valor em 30 e 60 graus.",
         "Seno so existe em triangulos obtusos.",
         "Cosseno sempre vale 1/2.",
         "Tangente e quem troca com o seno."
       ],
-      correta: "Seno e cosseno trocam de valor em 30 e 60 graus.",
-      comentario: "Sen 30 = cos 60 e cos 30 = sen 60.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "Seno e cosseno trocam de valor em 30 e 60 graus.",
+      "comentario": "Sen 30 = cos 60 e cos 30 = sen 60.",
+      "tempoEstimado": 40,
+      "tags": [
         "pegadinha",
         "complementares"
       ],
-      habilidades: [
+      "habilidades": [
         "evitar-erros-comuns-em-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_166",
-      serie: [
+      "id": "trig_166",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Equivalencia de formas",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Qual frase e equivalente a dizer que sen(theta) = 3/5?",
-      opcoes: [
-        "A cada 5 partes da hipotenusa, 3 estao no cateto oposto.",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Equivalencia de formas",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 9,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual frase e equivalente a dizer que sen(theta) = 3/5?",
+      "opcoes": [
         "A cada 5 partes do cateto adjacente, 3 estao na hipotenusa.",
+        "A cada 5 partes da hipotenusa, 3 estao no cateto oposto.",
         "A tangente vale 5/3.",
         "O angulo e necessariamente 30 graus."
       ],
-      correta: "A cada 5 partes da hipotenusa, 3 estao no cateto oposto.",
-      comentario: "Essa e a leitura proporcional do seno.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "A cada 5 partes da hipotenusa, 3 estao no cateto oposto.",
+      "comentario": "Essa e a leitura proporcional do seno.",
+      "tempoEstimado": 40,
+      "tags": [
         "equivalencia",
         "seno"
       ],
-      habilidades: [
+      "habilidades": [
         "relacionar-formas-equivalentes"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_167",
-      serie: [
+      "id": "trig_167",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Equivalencia de formas",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Qual frase e equivalente a dizer que cos(theta) = 4/5?",
-      opcoes: [
-        "O cateto adjacente corresponde a 4/5 da hipotenusa.",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Equivalencia de formas",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 9,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual frase e equivalente a dizer que cos(theta) = 4/5?",
+      "opcoes": [
         "O cateto oposto corresponde a 4/5 da hipotenusa.",
         "A tangente vale 4/5.",
+        "O cateto adjacente corresponde a 4/5 da hipotenusa.",
         "O angulo e 45 graus."
       ],
-      correta: "O cateto adjacente corresponde a 4/5 da hipotenusa.",
-      comentario: "Essa e a leitura proporcional do cosseno.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "O cateto adjacente corresponde a 4/5 da hipotenusa.",
+      "comentario": "Essa e a leitura proporcional do cosseno.",
+      "tempoEstimado": 40,
+      "tags": [
         "equivalencia",
         "cosseno"
       ],
-      habilidades: [
+      "habilidades": [
         "relacionar-formas-equivalentes"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_168",
-      serie: [
+      "id": "trig_168",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Equivalencia de formas",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Qual afirmacao equivale a tan(theta) = 1?",
-      opcoes: [
-        "Os dois catetos tem a mesma medida.",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Equivalencia de formas",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 9,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual afirmacao equivale a tan(theta) = 1?",
+      "opcoes": [
         "A hipotenusa e metade do cateto oposto.",
         "O seno vale zero.",
-        "O cosseno vale zero."
+        "O cosseno vale zero.",
+        "Os dois catetos tem a mesma medida."
       ],
-      correta: "Os dois catetos tem a mesma medida.",
-      comentario: "Tangente 1 significa oposto = adjacente.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "Os dois catetos tem a mesma medida.",
+      "comentario": "Tangente 1 significa oposto = adjacente.",
+      "tempoEstimado": 40,
+      "tags": [
         "equivalencia",
         "tangente"
       ],
-      habilidades: [
+      "habilidades": [
         "relacionar-formas-equivalentes"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_169",
-      serie: [
+      "id": "trig_169",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Equivalencia de formas",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Dizer que sen(alpha) = cos(beta) com alpha e beta agudos equivale a dizer que:",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Equivalencia de formas",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 9,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Dizer que sen(alpha) = cos(beta) com alpha e beta agudos equivale a dizer que:",
+      "opcoes": [
         "alpha + beta = 90 graus",
         "alpha = beta",
         "alpha + beta = 180 graus",
         "alpha - beta = 90 graus"
       ],
-      correta: "alpha + beta = 90 graus",
-      comentario: "Seno e cosseno se igualam em angulos complementares.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "alpha + beta = 90 graus",
+      "comentario": "Seno e cosseno se igualam em angulos complementares.",
+      "tempoEstimado": 40,
+      "tags": [
         "equivalencia",
         "complementares"
       ],
-      habilidades: [
+      "habilidades": [
         "relacionar-formas-equivalentes"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_170",
-      serie: [
+      "id": "trig_170",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Interpretacao indireta",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 8,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Uma janela esta a 9 m do chao. Se um cabo de manutencao forma 30 graus com a horizontal e vai da janela ate o solo, qual medida esta sendo representada pelo cabo?",
-      opcoes: [
-        "hipotenusa do triangulo",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Interpretacao indireta",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 9,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma janela esta a 9 m do chao. Se um cabo de manutencao forma 30 graus com a horizontal e vai da janela ate o solo, qual medida esta sendo representada pelo cabo?",
+      "opcoes": [
         "cateto oposto",
+        "hipotenusa do triangulo",
         "cateto adjacente",
         "tangente"
       ],
-      correta: "hipotenusa do triangulo",
-      comentario: "O cabo liga o solo ao topo, formando o maior lado.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "hipotenusa do triangulo",
+      "comentario": "O cabo liga o solo ao topo, formando o maior lado.",
+      "tempoEstimado": 40,
+      "tags": [
         "interpretacao",
         "triangulo-retangulo"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar-situacoes-de-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_171",
-      serie: [
+      "id": "trig_171",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Interpretacao indireta",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 9,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Em uma rampa, diminuir o angulo com o solo mantendo o mesmo comprimento faz a altura:",
-      opcoes: [
-        "diminuir",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Interpretacao indireta",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 9,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Em uma rampa, diminuir o angulo com o solo mantendo o mesmo comprimento faz a altura:",
+      "opcoes": [
         "aumentar",
         "permanecer igual",
+        "diminuir",
         "virar negativa"
       ],
-      correta: "diminuir",
-      comentario: "A altura depende do seno do angulo.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "diminuir",
+      "comentario": "A altura depende do seno do angulo.",
+      "tempoEstimado": 40,
+      "tags": [
         "interpretacao",
         "comparacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar-situacoes-de-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_172",
-      serie: [
+      "id": "trig_172",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Pegadinha",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 9,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Qual afirmacao e falsa?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Pegadinha",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 9,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual afirmacao e falsa?",
+      "opcoes": [
         "Tan 45 = 1",
         "Sen 30 = 1/2",
         "Cos 60 = 1/2",
         "Tan 60 = sqrt(3)/3"
       ],
-      correta: "Tan 60 = sqrt(3)/3",
-      comentario: "Na verdade, tan 60 = sqrt(3).",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "Tan 60 = sqrt(3)/3",
+      "comentario": "Na verdade, tan 60 = sqrt(3).",
+      "tempoEstimado": 40,
+      "tags": [
         "pegadinha",
         "angulos-notaveis"
       ],
-      habilidades: [
+      "habilidades": [
         "evitar-erros-comuns-em-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_173",
-      serie: [
+      "id": "trig_173",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Equivalencia de formas",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 9,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Qual alternativa diz a mesma coisa que cos 60 = 1/2?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Equivalencia de formas",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 9,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual alternativa diz a mesma coisa que cos 60 = 1/2?",
+      "opcoes": [
         "Em 60 graus, o cateto adjacente e metade da hipotenusa.",
         "Em 60 graus, o cateto oposto e metade da hipotenusa.",
         "Em 60 graus, os catetos sao iguais.",
         "Em 60 graus, a hipotenusa e metade do adjacente."
       ],
-      correta: "Em 60 graus, o cateto adjacente e metade da hipotenusa.",
-      comentario: "Essa e a leitura correta do cosseno.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "Em 60 graus, o cateto adjacente e metade da hipotenusa.",
+      "comentario": "Essa e a leitura correta do cosseno.",
+      "tempoEstimado": 40,
+      "tags": [
         "equivalencia",
         "cosseno"
       ],
-      habilidades: [
+      "habilidades": [
         "relacionar-formas-equivalentes"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_174",
-      serie: [
+      "id": "trig_174",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Interpretacao indireta",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 9,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Se uma escada mantem o mesmo comprimento, qual posicao deixa sua base mais perto da parede?",
-      opcoes: [
-        "Quando forma 60 graus com o solo",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Interpretacao indireta",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 9,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Se uma escada mantem o mesmo comprimento, qual posicao deixa sua base mais perto da parede?",
+      "opcoes": [
         "Quando forma 30 graus com o solo",
+        "Quando forma 60 graus com o solo",
         "As duas deixam igual",
         "Nao depende do angulo"
       ],
-      correta: "Quando forma 60 graus com o solo",
-      comentario: "Quanto maior o angulo com o solo, menor o cateto adjacente.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "Quando forma 60 graus com o solo",
+      "comentario": "Quanto maior o angulo com o solo, menor o cateto adjacente.",
+      "tempoEstimado": 40,
+      "tags": [
         "interpretacao",
         "cosseno"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar-situacoes-de-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_175",
-      serie: [
+      "id": "trig_175",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Pegadinha",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 9,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Ao escolher o outro angulo agudo de um triangulo retangulo como referencia, o que muda?",
-      opcoes: [
-        "Os nomes dos catetos oposto e adjacente.",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Pegadinha",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 10,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Ao escolher o outro angulo agudo de um triangulo retangulo como referencia, o que muda?",
+      "opcoes": [
         "A hipotenusa.",
         "O valor do angulo reto.",
+        "Os nomes dos catetos oposto e adjacente.",
         "O numero de lados."
       ],
-      correta: "Os nomes dos catetos oposto e adjacente.",
-      comentario: "Esses nomes dependem do angulo escolhido.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "Os nomes dos catetos oposto e adjacente.",
+      "comentario": "Esses nomes dependem do angulo escolhido.",
+      "tempoEstimado": 40,
+      "tags": [
         "pegadinha",
         "referencia"
       ],
-      habilidades: [
+      "habilidades": [
         "evitar-erros-comuns-em-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_176",
-      serie: [
+      "id": "trig_176",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Interpretacao indireta",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 9,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Uma escada de 15 m encostada em uma parede alcanca 9 m de altura. Qual e o valor de sen(theta), sendo theta o angulo com o solo?",
-      opcoes: [
-        "3/5",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Interpretacao indireta",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 10,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma escada de 15 m encostada em uma parede alcanca 9 m de altura. Qual e o valor de sen(theta), sendo theta o angulo com o solo?",
+      "opcoes": [
         "4/5",
         "5/3",
-        "9/15"
+        "9/15",
+        "3/5"
       ],
-      correta: "3/5",
-      comentario: "Seno = altura/comprimento = 9/15 = 3/5.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "3/5",
+      "comentario": "Seno = altura/comprimento = 9/15 = 3/5.",
+      "tempoEstimado": 40,
+      "tags": [
         "interpretacao",
         "seno"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar-situacoes-de-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_177",
-      serie: [
+      "id": "trig_177",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Interpretacao indireta",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 9,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Uma rampa sobe 6 m em 8 m na horizontal. Qual razao representa corretamente sua tangente?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Interpretacao indireta",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 10,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma rampa sobe 6 m em 8 m na horizontal. Qual razao representa corretamente sua tangente?",
+      "opcoes": [
         "3/4",
         "4/3",
         "6/10",
         "8/10"
       ],
-      correta: "3/4",
-      comentario: "Tangente = subida/horizontal = 6/8 = 3/4.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "3/4",
+      "comentario": "Tangente = subida/horizontal = 6/8 = 3/4.",
+      "tempoEstimado": 40,
+      "tags": [
         "interpretacao",
         "tangente"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar-situacoes-de-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_178",
-      serie: [
+      "id": "trig_178",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Interpretacao indireta",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 9,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Um triangulo retangulo possui cateto oposto 12 e hipotenusa 24 em relacao a theta. Qual angulo notavel e mais compativel com theta?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Interpretacao indireta",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 10,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Um triangulo retangulo possui cateto oposto 12 e hipotenusa 24 em relacao a theta. Qual angulo notavel e mais compativel com theta?",
+      "opcoes": [
+        "45 graus",
+        "30 graus",
+        "60 graus",
+        "90 graus"
+      ],
+      "correta": "30 graus",
+      "comentario": "Sen(theta) = 12/24 = 1/2.",
+      "tempoEstimado": 40,
+      "tags": [
+        "interpretacao",
+        "angulos-notaveis"
+      ],
+      "habilidades": [
+        "interpretar-situacoes-de-trigonometria"
+      ],
+      "collections": [
+        "questions"
+      ],
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
+    },
+    {
+      "id": "trig_179",
+      "serie": [
+        1
+      ],
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Interpretacao indireta",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 10,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Um triangulo retangulo possui cateto adjacente 9 e hipotenusa 18 em relacao a theta. Qual angulo notavel e mais compativel com theta?",
+      "opcoes": [
         "30 graus",
         "45 graus",
         "60 graus",
         "90 graus"
       ],
-      correta: "30 graus",
-      comentario: "Sen(theta) = 12/24 = 1/2.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "60 graus",
+      "comentario": "Cos(theta) = 9/18 = 1/2.",
+      "tempoEstimado": 40,
+      "tags": [
         "interpretacao",
         "angulos-notaveis"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar-situacoes-de-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_179",
-      serie: [
+      "id": "trig_180",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Interpretacao indireta",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 9,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Um triangulo retangulo possui cateto adjacente 9 e hipotenusa 18 em relacao a theta. Qual angulo notavel e mais compativel com theta?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Interpretacao indireta",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 10,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Se um telhado sobe 5 m a cada 5 m na horizontal, qual angulo notavel melhor descreve sua inclinacao?",
+      "opcoes": [
         "30 graus",
-        "45 graus",
         "60 graus",
-        "90 graus"
+        "75 graus",
+        "45 graus"
       ],
-      correta: "60 graus",
-      comentario: "Cos(theta) = 9/18 = 1/2.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "45 graus",
+      "comentario": "Tangente 1 corresponde a 45 graus.",
+      "tempoEstimado": 40,
+      "tags": [
         "interpretacao",
         "angulos-notaveis"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar-situacoes-de-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_180",
-      serie: [
+      "id": "trig_181",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Interpretacao indireta",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 9,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Se um telhado sobe 5 m a cada 5 m na horizontal, qual angulo notavel melhor descreve sua inclinacao?",
-      opcoes: [
-        "30 graus",
-        "45 graus",
-        "60 graus",
-        "75 graus"
-      ],
-      correta: "45 graus",
-      comentario: "Tangente 1 corresponde a 45 graus.",
-      tempoEstimado: 40,
-      tags: [
-        "interpretacao",
-        "angulos-notaveis"
-      ],
-      habilidades: [
-        "interpretar-situacoes-de-trigonometria"
-      ],
-      collections: [
-        "questions"
-      ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
-    },
-    {
-      id: "trig_181",
-      serie: [
-        1
-      ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Pegadinha",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 9,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Um aluno viu sen(theta) = 4/5 e concluiu que o cateto adjacente vale 4 quando a hipotenusa vale 5. Qual foi a confusao?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Pegadinha",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 10,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Um aluno viu sen(theta) = 4/5 e concluiu que o cateto adjacente vale 4 quando a hipotenusa vale 5. Qual foi a confusao?",
+      "opcoes": [
         "Ele leu seno como cosseno.",
         "Ele leu seno como tangente.",
         "Ele trocou o angulo por seu suplemento.",
         "Ele confundiu graos com radianos."
       ],
-      correta: "Ele leu seno como cosseno.",
-      comentario: "No seno, 4 estaria no cateto oposto, nao no adjacente.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "Ele leu seno como cosseno.",
+      "comentario": "No seno, 4 estaria no cateto oposto, nao no adjacente.",
+      "tempoEstimado": 40,
+      "tags": [
         "pegadinha",
         "erro-comum"
       ],
-      habilidades: [
+      "habilidades": [
         "evitar-erros-comuns-em-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_182",
-      serie: [
+      "id": "trig_182",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Pegadinha",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 9,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Qual afirmacao engana por parecer plausivel, mas esta errada?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Pegadinha",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 10,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual afirmacao engana por parecer plausivel, mas esta errada?",
+      "opcoes": [
         "Se tan(theta) = 1, os catetos podem ser iguais.",
-        "Se cos(theta) = 1/2, o adjacente pode ser metade da hipotenusa.",
         "Se sen(theta) = 1/2, o angulo agudo so pode ser 60 graus.",
+        "Se cos(theta) = 1/2, o adjacente pode ser metade da hipotenusa.",
         "Se sen(theta) = cos(90 - theta), ha complementaridade."
       ],
-      correta: "Se sen(theta) = 1/2, o angulo agudo so pode ser 60 graus.",
-      comentario: "No nivel introdutorio, o angulo notavel correspondente e 30 graus.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "Se sen(theta) = 1/2, o angulo agudo so pode ser 60 graus.",
+      "comentario": "No nivel introdutorio, o angulo notavel correspondente e 30 graus.",
+      "tempoEstimado": 40,
+      "tags": [
         "pegadinha",
         "angulos-notaveis"
       ],
-      habilidades: [
+      "habilidades": [
         "evitar-erros-comuns-em-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_183",
-      serie: [
+      "id": "trig_183",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Pegadinha",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 9,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Qual erro existe em dizer que a tangente compara um cateto com a hipotenusa?",
-      opcoes: [
-        "Tangente compara os dois catetos.",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Pegadinha",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 10,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual erro existe em dizer que a tangente compara um cateto com a hipotenusa?",
+      "opcoes": [
         "Tangente compara angulo com area.",
         "Tangente so existe em triangulos equilateros.",
+        "Tangente compara os dois catetos.",
         "Tangente usa graus no denominador."
       ],
-      correta: "Tangente compara os dois catetos.",
-      comentario: "Oposto dividido por adjacente.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "Tangente compara os dois catetos.",
+      "comentario": "Oposto dividido por adjacente.",
+      "tempoEstimado": 40,
+      "tags": [
         "pegadinha",
         "tangente"
       ],
-      habilidades: [
+      "habilidades": [
         "evitar-erros-comuns-em-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_184",
-      serie: [
+      "id": "trig_184",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Pegadinha",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 9,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Um estudante concluiu que cos 45 = 1 porque o angulo e \"muito aberto\". Qual correcao esta certa?",
-      opcoes: [
-        "Cos 45 = sqrt(2)/2.",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Pegadinha",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 10,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Um estudante concluiu que cos 45 = 1 porque o angulo e \"muito aberto\". Qual correcao esta certa?",
+      "opcoes": [
         "Cos 45 = 1/2.",
         "Cos 45 = sqrt(3)/2.",
-        "Cos 45 = 0."
+        "Cos 45 = 0.",
+        "Cos 45 = sqrt(2)/2."
       ],
-      correta: "Cos 45 = sqrt(2)/2.",
-      comentario: "Esse e o valor notavel correto.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "Cos 45 = sqrt(2)/2.",
+      "comentario": "Esse e o valor notavel correto.",
+      "tempoEstimado": 40,
+      "tags": [
         "pegadinha",
         "angulos-notaveis"
       ],
-      habilidades: [
+      "habilidades": [
         "evitar-erros-comuns-em-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_185",
-      serie: [
+      "id": "trig_185",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Pegadinha",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 9,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Qual erro ha em afirmar que o cateto oposto de um angulo continua oposto quando trocamos para o outro angulo agudo?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Pegadinha",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 10,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual erro ha em afirmar que o cateto oposto de um angulo continua oposto quando trocamos para o outro angulo agudo?",
+      "opcoes": [
         "Os papeis de oposto e adjacente se invertem.",
         "A hipotenusa troca de nome.",
         "O triangulo deixa de ser retangulo.",
         "A tangente vira seno."
       ],
-      correta: "Os papeis de oposto e adjacente se invertem.",
-      comentario: "A nomeacao depende do angulo de referencia.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "Os papeis de oposto e adjacente se invertem.",
+      "comentario": "A nomeacao depende do angulo de referencia.",
+      "tempoEstimado": 40,
+      "tags": [
         "pegadinha",
         "referencia"
       ],
-      habilidades: [
+      "habilidades": [
         "evitar-erros-comuns-em-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_186",
-      serie: [
+      "id": "trig_186",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Equivalencia de formas",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 10,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Qual alternativa reescreve corretamente sen(theta) = 1/2?",
-      opcoes: [
-        "oposto = hipotenusa/2",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Equivalencia de formas",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 10,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual alternativa reescreve corretamente sen(theta) = 1/2?",
+      "opcoes": [
         "adjacente = hipotenusa/2",
+        "oposto = hipotenusa/2",
         "oposto = 2 x hipotenusa",
         "adjacente = 2 x oposto"
       ],
-      correta: "oposto = hipotenusa/2",
-      comentario: "Essa e uma reescrita equivalente do seno dado.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "oposto = hipotenusa/2",
+      "comentario": "Essa e uma reescrita equivalente do seno dado.",
+      "tempoEstimado": 40,
+      "tags": [
         "equivalencia",
         "seno"
       ],
-      habilidades: [
+      "habilidades": [
         "relacionar-formas-equivalentes"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_187",
-      serie: [
+      "id": "trig_187",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Equivalencia de formas",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 10,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Qual alternativa reescreve corretamente cos(theta) = 3/5?",
-      opcoes: [
-        "adjacente = 3/5 da hipotenusa",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Equivalencia de formas",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 10,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual alternativa reescreve corretamente cos(theta) = 3/5?",
+      "opcoes": [
         "oposto = 3/5 da hipotenusa",
         "adjacente = 5/3 da hipotenusa",
+        "adjacente = 3/5 da hipotenusa",
         "tan(theta) = 3/5 obrigatoriamente"
       ],
-      correta: "adjacente = 3/5 da hipotenusa",
-      comentario: "Essa e a leitura equivalente do cosseno.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "adjacente = 3/5 da hipotenusa",
+      "comentario": "Essa e a leitura equivalente do cosseno.",
+      "tempoEstimado": 40,
+      "tags": [
         "equivalencia",
         "cosseno"
       ],
-      habilidades: [
+      "habilidades": [
         "relacionar-formas-equivalentes"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_188",
-      serie: [
+      "id": "trig_188",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Equivalencia de formas",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 10,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Qual alternativa reescreve corretamente tan(theta) = 2?",
-      opcoes: [
-        "oposto = 2 x adjacente",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Equivalencia de formas",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 10,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual alternativa reescreve corretamente tan(theta) = 2?",
+      "opcoes": [
         "adjacente = 2 x oposto",
         "hipotenusa = 2 x oposto",
-        "cosseno = 2"
+        "cosseno = 2",
+        "oposto = 2 x adjacente"
       ],
-      correta: "oposto = 2 x adjacente",
-      comentario: "Tangente 2 significa oposto/adjacente = 2.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "oposto = 2 x adjacente",
+      "comentario": "Tangente 2 significa oposto/adjacente = 2.",
+      "tempoEstimado": 40,
+      "tags": [
         "equivalencia",
         "tangente"
       ],
-      habilidades: [
+      "habilidades": [
         "relacionar-formas-equivalentes"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_189",
-      serie: [
+      "id": "trig_189",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Equivalencia de formas",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 10,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Qual igualdade traduz corretamente a complementaridade entre 30 e 60 graus?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Equivalencia de formas",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 10,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual igualdade traduz corretamente a complementaridade entre 30 e 60 graus?",
+      "opcoes": [
         "sen 30 = cos 60",
         "sen 30 = sen 60",
         "cos 30 = cos 60",
         "tan 30 = tan 60"
       ],
-      correta: "sen 30 = cos 60",
-      comentario: "Esse e um par de valores complementares.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "sen 30 = cos 60",
+      "comentario": "Esse e um par de valores complementares.",
+      "tempoEstimado": 40,
+      "tags": [
         "equivalencia",
         "complementares"
       ],
-      habilidades: [
+      "habilidades": [
         "relacionar-formas-equivalentes"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_190",
-      serie: [
+      "id": "trig_190",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Interpretacao indireta",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 10,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Um observador ve o topo de uma torre sob 60 graus e esta a 6 m da base. Qual expressao representa corretamente a altura?",
-      opcoes: [
-        "6sqrt(3)",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Interpretacao indireta",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 10,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Um observador ve o topo de uma torre sob 60 graus e esta a 6 m da base. Qual expressao representa corretamente a altura?",
+      "opcoes": [
         "6/sqrt(3)",
+        "6sqrt(3)",
         "3",
         "12"
       ],
-      correta: "6sqrt(3)",
-      comentario: "Tan 60 = altura/6.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "6sqrt(3)",
+      "comentario": "Tan 60 = altura/6. Assim, a resposta correta ? 6sqrt(3).",
+      "tempoEstimado": 40,
+      "tags": [
         "interpretacao",
         "tangente"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar-situacoes-de-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_191",
-      serie: [
+      "id": "trig_191",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Interpretacao indireta",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 10,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Uma escada de 20 m forma 60 graus com o solo. Qual afirmacao descreve corretamente a distancia da base ate a parede?",
-      opcoes: [
-        "Vale 10 m.",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Interpretacao indireta",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 10,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma escada de 20 m forma 60 graus com o solo. Qual afirmacao descreve corretamente a distancia da base ate a parede?",
+      "opcoes": [
         "Vale 10sqrt(3) m.",
         "Vale 20 m.",
+        "Vale 10 m.",
         "Vale 20sqrt(3) m."
       ],
-      correta: "Vale 10 m.",
-      comentario: "Cos 60 = adjacente/20.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "Vale 10 m.",
+      "comentario": "Cos 60 = adjacente/20.",
+      "tempoEstimado": 40,
+      "tags": [
         "interpretacao",
         "cosseno"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar-situacoes-de-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_192",
-      serie: [
+      "id": "trig_192",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Interpretacao indireta",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 10,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Uma sombra de 10 m e um angulo de elevacao de 30 graus produzem que altura aproximada?",
-      opcoes: [
-        "10/sqrt(3)",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Interpretacao indireta",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 10,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma sombra de 10 m e um angulo de elevacao de 30 graus produzem que altura aproximada?",
+      "opcoes": [
         "10sqrt(3)",
         "5",
-        "20"
+        "20",
+        "10/sqrt(3)"
       ],
-      correta: "10/sqrt(3)",
-      comentario: "Tan 30 = altura/10.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "10/sqrt(3)",
+      "comentario": "Tan 30 = altura/10. Assim, a resposta correta ? 10/sqrt(3).",
+      "tempoEstimado": 40,
+      "tags": [
         "interpretacao",
         "tangente"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar-situacoes-de-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_193",
-      serie: [
+      "id": "trig_193",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Interpretacao indireta",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 10,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Se sen(theta) = sqrt(3)/2, qual comparacao e correta?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Interpretacao indireta",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 10,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Se sen(theta) = sqrt(3)/2, qual comparacao e correta?",
+      "opcoes": [
         "theta e maior que 45 graus",
         "theta e menor que 30 graus",
         "theta e igual a 30 graus",
         "theta e reto"
       ],
-      correta: "theta e maior que 45 graus",
-      comentario: "No conjunto notavel, esse valor corresponde a 60 graus.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "theta e maior que 45 graus",
+      "comentario": "No conjunto notavel, esse valor corresponde a 60 graus.",
+      "tempoEstimado": 40,
+      "tags": [
         "interpretacao",
         "comparacao"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar-situacoes-de-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_194",
-      serie: [
+      "id": "trig_194",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Interpretacao indireta",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 10,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Se cos(theta) = sqrt(2)/2, qual angulo notavel se encaixa melhor?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Interpretacao indireta",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 10,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Se cos(theta) = sqrt(2)/2, qual angulo notavel se encaixa melhor?",
+      "opcoes": [
         "30 graus",
         "45 graus",
         "60 graus",
         "90 graus"
       ],
-      correta: "45 graus",
-      comentario: "Cos 45 = sqrt(2)/2.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "45 graus",
+      "comentario": "Cos 45 = sqrt(2)/2. Assim, a resposta correta ? 45 graus.",
+      "tempoEstimado": 40,
+      "tags": [
         "interpretacao",
         "angulos-notaveis"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar-situacoes-de-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_195",
-      serie: [
+      "id": "trig_195",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Interpretacao indireta",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 10,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Uma rampa com tangente 1/2 sobe menos do que avanca na horizontal. Essa afirmacao e:",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Interpretacao indireta",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 10,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma rampa com tangente 1/2 sobe menos do que avanca na horizontal. Essa afirmacao e:",
+      "opcoes": [
         "Verdadeiro",
         "Falso"
       ],
-      correta: "Verdadeiro",
-      comentario: "Se oposto/adjacente = 1/2, a subida e menor.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "Verdadeiro",
+      "comentario": "Se oposto/adjacente = 1/2, a subida e menor.",
+      "tempoEstimado": 40,
+      "tags": [
         "interpretacao",
         "tangente"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar-situacoes-de-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_196",
-      serie: [
+      "id": "trig_196",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Pegadinha",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 10,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Qual afirmacao e falsa?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Pegadinha",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 10,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual afirmacao e falsa?",
+      "opcoes": [
         "Sen 60 = sqrt(3)/2",
         "Cos 30 = sqrt(3)/2",
-        "Tan 30 = 1",
-        "Sen 45 = sqrt(2)/2"
+        "Sen 45 = sqrt(2)/2",
+        "Tan 30 = 1"
       ],
-      correta: "Tan 30 = 1",
-      comentario: "Na verdade, tan 30 = sqrt(3)/3.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "Tan 30 = 1",
+      "comentario": "Na verdade, tan 30 = sqrt(3)/3.",
+      "tempoEstimado": 40,
+      "tags": [
         "pegadinha",
         "angulos-notaveis"
       ],
-      habilidades: [
+      "habilidades": [
         "evitar-erros-comuns-em-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_197",
-      serie: [
+      "id": "trig_197",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Pegadinha",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 10,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Um aluno disse que sen e cos de um mesmo angulo agudo sempre sao iguais. Qual contraexemplo basico corrige isso?",
-      opcoes: [
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Pegadinha",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 10,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Um aluno disse que sen e cos de um mesmo angulo agudo sempre sao iguais. Qual contraexemplo basico corrige isso?",
+      "opcoes": [
         "30 graus",
         "45 graus",
         "90 graus",
         "0 grau"
       ],
-      correta: "30 graus",
-      comentario: "Em 30 graus, seno e 1/2, mas cosseno e sqrt(3)/2.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "30 graus",
+      "comentario": "Em 30 graus, seno e 1/2, mas cosseno e sqrt(3)/2.",
+      "tempoEstimado": 40,
+      "tags": [
         "pegadinha",
         "comparacao"
       ],
-      habilidades: [
+      "habilidades": [
         "evitar-erros-comuns-em-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_198",
-      serie: [
+      "id": "trig_198",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Equivalencia de formas",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 10,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Qual leitura e equivalente a cos(theta) = 1/2?",
-      opcoes: [
-        "O lado ao lado do angulo e metade da hipotenusa.",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Equivalencia de formas",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 10,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual leitura e equivalente a cos(theta) = 1/2?",
+      "opcoes": [
         "O lado em frente ao angulo e metade da hipotenusa.",
+        "O lado ao lado do angulo e metade da hipotenusa.",
         "Os dois catetos sao iguais.",
         "A tangente vale 1/2."
       ],
-      correta: "O lado ao lado do angulo e metade da hipotenusa.",
-      comentario: "Cateto ao lado do angulo = cateto adjacente.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "O lado ao lado do angulo e metade da hipotenusa.",
+      "comentario": "Cateto ao lado do angulo = cateto adjacente.",
+      "tempoEstimado": 40,
+      "tags": [
         "equivalencia",
         "cosseno"
       ],
-      habilidades: [
+      "habilidades": [
         "relacionar-formas-equivalentes"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_199",
-      serie: [
+      "id": "trig_199",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Equivalencia de formas",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 10,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Qual leitura e equivalente a sen(theta) = cos(40 graus)?",
-      opcoes: [
-        "theta = 50 graus",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Equivalencia de formas",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 10,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual leitura e equivalente a sen(theta) = cos(40 graus)?",
+      "opcoes": [
         "theta = 40 graus",
         "theta = 90 graus",
+        "theta = 50 graus",
         "theta = 130 graus"
       ],
-      correta: "theta = 50 graus",
-      comentario: "Theta e complementar de 40 graus.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "theta = 50 graus",
+      "comentario": "Theta e complementar de 40 graus.",
+      "tempoEstimado": 40,
+      "tags": [
         "equivalencia",
         "complementares"
       ],
-      habilidades: [
+      "habilidades": [
         "relacionar-formas-equivalentes"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     },
     {
-      id: "trig_200",
-      serie: [
+      "id": "trig_200",
+      "serie": [
         1
       ],
-      materia: "Matematica",
-      topico: "Introducao a Trigonometria",
-      subtopico: "Interpretacao indireta",
-      dificuldadeLabel: "dificil",
-      dificuldadeNivel: 10,
-      cognicao: "analise",
-      tipo: "multipla_escolha",
-      enunciado: "Se dois triangulos retangulos tem o mesmo angulo agudo theta, o que acontece com a razao seno de theta?",
-      opcoes: [
-        "Permanece a mesma.",
+      "materia": "Matematica",
+      "topico": "Introducao a Trigonometria",
+      "subtopico": "Interpretacao indireta",
+      "dificuldadeLabel": "dificil",
+      "dificuldadeNivel": 10,
+      "cognicao": "analise",
+      "tipo": "multipla_escolha",
+      "enunciado": "Se dois triangulos retangulos tem o mesmo angulo agudo theta, o que acontece com a razao seno de theta?",
+      "opcoes": [
         "Muda conforme o tamanho.",
         "Vira tangente.",
-        "Depende apenas da hipotenusa."
+        "Depende apenas da hipotenusa.",
+        "Permanece a mesma."
       ],
-      correta: "Permanece a mesma.",
-      comentario: "Triangulos semelhantes preservam as razoes trigonometricas.",
-      tempoEstimado: 40,
-      tags: [
+      "correta": "Permanece a mesma.",
+      "comentario": "Triangulos semelhantes preservam as razoes trigonometricas.",
+      "tempoEstimado": 40,
+      "tags": [
         "interpretacao",
         "semelhanca"
       ],
-      habilidades: [
+      "habilidades": [
         "interpretar-situacoes-de-trigonometria"
       ],
-      collections: [
+      "collections": [
         "questions"
       ],
-      sourceType: "original",
-      sourceExam: "",
-      sourceYear: null,
-      competencies: [],
-      status: "revisada"
+      "sourceType": "original",
+      "sourceExam": "",
+      "sourceYear": null,
+      "competencies": [],
+      "status": "revisada"
     }
   ]
 };

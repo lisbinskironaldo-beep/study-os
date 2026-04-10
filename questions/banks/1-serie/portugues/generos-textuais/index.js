@@ -41,7 +41,10 @@ export const generosTextuais = {
       "distinguir gêneros textuais com características próximas",
       "interpretar usos de gêneros textuais em contextos sociais",
       "relacionar exemplos e definições de gêneros textuais"
-    ]
+    ],
+    "auditado": true,
+    "auditadoEm": "2026-04-10",
+    "auditoriaTipo": "varredura-mais-profunda"
   },
   "questoes": [
     {
@@ -356,7 +359,7 @@ export const generosTextuais = {
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A afirmação \"O texto Tres quadrinhos mostram diálogo engra?ado entre amigos. pode ser classificado como Tirinha\" está correta?",
+      "enunciado": "A afirmação \"O texto Tres quadrinhos mostram diálogo engraçado entre amigos. pode ser classificado como Tirinha\" está correta?",
       "opcoes": [
         "Verdadeiro",
         "Falso"
@@ -544,12 +547,12 @@ export const generosTextuais = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual alternativa apresenta um exemplo mais compatível com o gênero crônica?",
       "opcoes": [
-        "Cen?rio comum ganha humor e sensibilidade no olhar do narrador.",
+        "Cenário comum ganha humor e sensibilidade no olhar do narrador.",
         "Desenho ironiza promessa politica recente.",
         "Sequencia curta termina em surpresa humorística.",
         "Glossario esclarece o conceito de cidadania."
       ],
-      "correta": "Cen?rio comum ganha humor e sensibilidade no olhar do narrador.",
+      "correta": "Cenário comum ganha humor e sensibilidade no olhar do narrador.",
       "comentario": "A resposta correta corresponde a Crônica, pois sua finalidade e refletir sobre cenas do dia a dia com olhar pessoal.",
       "tempoEstimado": 20,
       "tags": [
@@ -692,7 +695,7 @@ export const generosTextuais = {
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A afirmação \"O texto Cena crítica aumento de pre?os com humor. pode ser classificado como Charge\" está correta?",
+      "enunciado": "A afirmação \"O texto Cena crítica aumento de preços com humor. pode ser classificado como Charge\" está correta?",
       "opcoes": [
         "Verdadeiro",
         "Falso"
@@ -1294,7 +1297,7 @@ export const generosTextuais = {
       "enunciado": "Qual alternativa apresenta outro exemplo compatível com o gênero crônica?",
       "opcoes": [
         "Narrador observa a pressa das pessoas no ponto de ônibus.",
-        "Tres quadrinhos mostram diálogo engra?ado entre amigos.",
+        "Tres quadrinhos mostram diálogo engraçado entre amigos.",
         "Texto define o termo narrador em poucas linhas.",
         "Temporal interrompe aulas em tres municipios da regiao."
       ],
@@ -1829,7 +1832,7 @@ export const generosTextuais = {
       "opcoes": [
         "Banner apresenta serviço e pede que o leitor participe.",
         "Quadro usa exagero para criticar problema urbano.",
-        "Imagem e fala breve apontam contradi??o social do momento.",
+        "Imagem e fala breve apontam contradição social do momento.",
         "Desenho ironiza promessa politica recente."
       ],
       "correta": "Banner apresenta serviço e pede que o leitor participe.",
@@ -2057,7 +2060,7 @@ export const generosTextuais = {
       "enunciado": "Qual alternativa NÃO combina com o gênero crônica?",
       "opcoes": [
         "Quadrinhos exploram ironia em uma cena cotidiana.",
-        "Cen?rio comum ganha humor e sensibilidade no olhar do narrador.",
+        "Cenário comum ganha humor e sensibilidade no olhar do narrador.",
         "Narrador observa a pressa das pessoas no ponto de ônibus.",
         "Texto comenta o silêncio estranho de uma tarde chuvosa."
       ],
@@ -2209,12 +2212,12 @@ export const generosTextuais = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual alternativa apresenta outro exemplo compatível com o gênero charge?",
       "opcoes": [
-        "Imagem e fala breve apontam contradi??o social do momento.",
+        "Imagem e fala breve apontam contradição social do momento.",
         "Cartaz convida o público para a feira cultural da escola.",
         "Sequencia curta termina em surpresa humorística.",
         "Glossario esclarece o conceito de cidadania."
       ],
-      "correta": "Imagem e fala breve apontam contradi??o social do momento.",
+      "correta": "Imagem e fala breve apontam contradição social do momento.",
       "comentario": "A resposta correta mantem a mesma finalidade comunicativa e o mesmo tipo de circulação.",
       "tempoEstimado": 30,
       "tags": [
@@ -2439,7 +2442,7 @@ export const generosTextuais = {
       "enunciado": "Qual alternativa apresenta outro exemplo compatível com o gênero crônica?",
       "opcoes": [
         "Narrador observa a pressa das pessoas no ponto de ônibus.",
-        "Tres quadrinhos mostram diálogo engra?ado entre amigos.",
+        "Tres quadrinhos mostram diálogo engraçado entre amigos.",
         "Texto define o termo narrador em poucas linhas.",
         "Temporal interrompe aulas em tres municipios da regiao."
       ],
@@ -2974,7 +2977,7 @@ export const generosTextuais = {
       "opcoes": [
         "Banner apresenta serviço e pede que o leitor participe.",
         "Quadro usa exagero para criticar problema urbano.",
-        "Imagem e fala breve apontam contradi??o social do momento.",
+        "Imagem e fala breve apontam contradição social do momento.",
         "Desenho ironiza promessa politica recente."
       ],
       "correta": "Banner apresenta serviço e pede que o leitor participe.",
@@ -3202,7 +3205,7 @@ export const generosTextuais = {
       "enunciado": "Qual alternativa NÃO combina com o gênero crônica?",
       "opcoes": [
         "Quadrinhos exploram ironia em uma cena cotidiana.",
-        "Cen?rio comum ganha humor e sensibilidade no olhar do narrador.",
+        "Cenário comum ganha humor e sensibilidade no olhar do narrador.",
         "Narrador observa a pressa das pessoas no ponto de ônibus.",
         "Texto comenta o silêncio estranho de uma tarde chuvosa."
       ],
@@ -3354,12 +3357,12 @@ export const generosTextuais = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual alternativa apresenta outro exemplo compatível com o gênero charge?",
       "opcoes": [
-        "Imagem e fala breve apontam contradi??o social do momento.",
+        "Imagem e fala breve apontam contradição social do momento.",
         "Cartaz convida o público para a feira cultural da escola.",
         "Sequencia curta termina em surpresa humorística.",
         "Glossario esclarece o conceito de cidadania."
       ],
-      "correta": "Imagem e fala breve apontam contradi??o social do momento.",
+      "correta": "Imagem e fala breve apontam contradição social do momento.",
       "comentario": "A resposta correta mantem a mesma finalidade comunicativa e o mesmo tipo de circulação.",
       "tempoEstimado": 30,
       "tags": [
@@ -3584,7 +3587,7 @@ export const generosTextuais = {
       "enunciado": "Qual alternativa apresenta outro exemplo compatível com o gênero crônica?",
       "opcoes": [
         "Narrador observa a pressa das pessoas no ponto de ônibus.",
-        "Tres quadrinhos mostram diálogo engra?ado entre amigos.",
+        "Tres quadrinhos mostram diálogo engraçado entre amigos.",
         "Texto define o termo narrador em poucas linhas.",
         "Temporal interrompe aulas em tres municipios da regiao."
       ],
@@ -4119,7 +4122,7 @@ export const generosTextuais = {
       "opcoes": [
         "Banner apresenta serviço e pede que o leitor participe.",
         "Quadro usa exagero para criticar problema urbano.",
-        "Imagem e fala breve apontam contradi??o social do momento.",
+        "Imagem e fala breve apontam contradição social do momento.",
         "Desenho ironiza promessa politica recente."
       ],
       "correta": "Banner apresenta serviço e pede que o leitor participe.",
@@ -4347,7 +4350,7 @@ export const generosTextuais = {
       "enunciado": "Qual alternativa NÃO combina com o gênero crônica?",
       "opcoes": [
         "Quadrinhos exploram ironia em uma cena cotidiana.",
-        "Cen?rio comum ganha humor e sensibilidade no olhar do narrador.",
+        "Cenário comum ganha humor e sensibilidade no olhar do narrador.",
         "Narrador observa a pressa das pessoas no ponto de ônibus.",
         "Texto comenta o silêncio estranho de uma tarde chuvosa."
       ],
@@ -4499,12 +4502,12 @@ export const generosTextuais = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual alternativa apresenta outro exemplo compatível com o gênero charge?",
       "opcoes": [
-        "Imagem e fala breve apontam contradi??o social do momento.",
+        "Imagem e fala breve apontam contradição social do momento.",
         "Cartaz convida o público para a feira cultural da escola.",
         "Sequencia curta termina em surpresa humorística.",
         "Glossario esclarece o conceito de cidadania."
       ],
-      "correta": "Imagem e fala breve apontam contradi??o social do momento.",
+      "correta": "Imagem e fala breve apontam contradição social do momento.",
       "comentario": "A resposta correta mantem a mesma finalidade comunicativa e o mesmo tipo de circulação.",
       "tempoEstimado": 30,
       "tags": [
@@ -4877,7 +4880,7 @@ export const generosTextuais = {
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante leu \"Imagem e fala breve apontam contradi??o social do momento.\" e afirmou que o gênero e Notícia. Qual avaliação está correta?",
+      "enunciado": "Um estudante leu \"Imagem e fala breve apontam contradição social do momento.\" e afirmou que o gênero e Notícia. Qual avaliação está correta?",
       "opcoes": [
         "O estudante errou, porque o trecho se aproxima de Charge.",
         "O estudante acertou, porque Charge e Notícia são equivalentes.",
@@ -5675,7 +5678,7 @@ export const generosTextuais = {
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante leu \"Tres quadrinhos mostram diálogo engra?ado entre amigos.\" e afirmou que o gênero e Reportagem. Qual avaliação está correta?",
+      "enunciado": "Um estudante leu \"Tres quadrinhos mostram diálogo engraçado entre amigos.\" e afirmou que o gênero e Reportagem. Qual avaliação está correta?",
       "opcoes": [
         "O estudante errou, porque o trecho se aproxima de Tirinha.",
         "O estudante acertou, porque Tirinha e Reportagem são equivalentes.",

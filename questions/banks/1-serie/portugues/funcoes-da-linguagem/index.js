@@ -37,7 +37,10 @@ export const funcoesDaLinguagem = {
       "distinguir funções da linguagem com características semelhantes",
       "interpretar efeitos de sentido associados as funções da linguagem",
       "analisar usos das funções da linguagem em pequenos textos"
-    ]
+    ],
+    "auditado": true,
+    "auditadoEm": "2026-04-10",
+    "auditoriaTipo": "varredura-rapida"
   },
   "questoes": [
     {

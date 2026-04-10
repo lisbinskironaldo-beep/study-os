@@ -51,7 +51,10 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "identificar traços temáticos e formais das cantigas e da poesia clássica",
       "distinguir autores, formas e valores estéticos de diferentes períodos literários",
       "comparar escolas literárias sem perder o recorte histórico de cada uma"
-    ]
+    ],
+    "auditado": true,
+    "auditadoEm": "2026-04-10",
+    "auditoriaTipo": "varredura-rapida"
   },
   "questoes": [
     {
