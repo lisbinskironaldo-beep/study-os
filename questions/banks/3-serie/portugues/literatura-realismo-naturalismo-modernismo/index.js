@@ -1,6 +1,6 @@
 export const literaturaRealismoNaturalismoModernismo = {
   "id": "portugues_literatura_realismo_naturalismo_modernismo",
-  "materia": "Português",
+  "materia": "Portugues",
   "serie": [
     3
   ],
@@ -8,41 +8,42 @@ export const literaturaRealismoNaturalismoModernismo = {
   "metadados": {
     "disciplinaId": "portugues",
     "base": "ESCOLAR",
+    "seloEditorial": "VERIFICADA",
     "eixo": "Literatura",
-    "frente": "Escolas Literárias",
+    "frente": "Escolas Literarias",
     "searchAliases": [
       "realismo",
       "naturalismo",
       "modernismo",
       "machado de assis",
-      "aluísio azevedo",
-      "mário de andrade",
+      "aluasio azevedo",
+      "mario de andrade",
       "oswald de andrade",
       "drummond"
     ],
     "subtopicosBase": [
-      "Realismo - contexto histórico",
-      "Realismo - características",
+      "Realismo - contexto historico",
+      "Realismo - caracteristicas",
       "Realismo - linguagem e estilo",
       "Realismo - autores e obras",
-      "Naturalismo - contexto histórico",
-      "Naturalismo - características",
+      "Naturalismo - contexto historico",
+      "Naturalismo - caracteristicas",
       "Naturalismo - determinismo e cientificismo",
       "Naturalismo - autores e obras",
       "Modernismo - primeira fase",
       "Modernismo - segunda fase",
       "Modernismo - terceira fase",
       "Modernismo - linguagem e ruptura",
-      "Comparação entre escolas literárias",
-      "Análise de fragmento literário",
-      "Interpretação indireta",
+      "Comparacao entre escolas literarias",
+      "Analise de fragmento literario",
+      "Interpretacao indireta",
       "Pegadinha",
-      "Equivalência de formas"
+      "Equivalencia de formas"
     ],
     "habilidadesBase": [
-      "identificar-características-do-realismo",
-      "identificar-características-do-naturalismo",
-      "identificar-características-do-modernismo",
+      "identificar-caracteristicas-do-realismo",
+      "identificar-caracteristicas-do-naturalismo",
+      "identificar-caracteristicas-do-modernismo",
       "comparar-escolas-literarias",
       "relacionar-contexto-historico-e-producao-literaria",
       "analisar-linguagem-literaria",
@@ -50,7 +51,7 @@ export const literaturaRealismoNaturalismoModernismo = {
       "interpretar-fragmentos-literarios"
     ],
     "auditado": true,
-    "auditadoEm": "2026-04-10",
+    "auditadoEm": "2026-04-12",
     "auditoriaTipo": "varredura-rapida"
   },
   "questoes": [
@@ -59,22 +60,22 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Realismo - contexto histórico",
+      "subtopico": "Realismo - contexto historico",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "O surgimento do Realismo no Brasil está associado a mudanças sociais e intelectuais que privilegiaram",
+      "enunciado": "O surgimento do Realismo no Brasil esta associado a mudancas sociais e intelectuais que privilegiaram",
       "opcoes": [
-        "a observação objetiva da realidade social",
-        "a valorização da imaginação e do sentimentalismo",
+        "a observacao objetiva da realidade social",
+        "a valorizacao da imaginacao e do sentimentalismo",
         "o retorno aos ideais medievais",
-        "a predominância da religiosidade na literatura"
+        "a predominancia da religiosidade na literatura"
       ],
-      "correta": "a observação objetiva da realidade social",
-      "comentario": "O Realismo rompe com o sentimentalismo romântico e passa a observar a realidade de forma crítica e objetiva.",
+      "correta": "a observacao objetiva da realidade social",
+      "comentario": "O Realismo rompe com o sentimentalismo romantico e passa a observar a realidade de forma critica e objetiva.",
       "tempoEstimado": 25,
       "tags": [
         "realismo",
@@ -97,29 +98,29 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Realismo - características",
+      "subtopico": "Realismo - caracteristicas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma característica fundamental do Realismo é",
+      "enunciado": "Uma caracteristica fundamental do Realismo e",
       "opcoes": [
-        "a idealização do herói",
-        "a análise psicológica das personagens",
-        "o uso intenso de metáforas religiosas",
-        "a valorização do fantástico"
+        "a idealizacao do heroi",
+        "a analise psicologica das personagens",
+        "o uso intenso de metaforas religiosas",
+        "a valorizacao do fantastico"
       ],
-      "correta": "a análise psicológica das personagens",
-      "comentario": "O Realismo investiga profundamente a psicologia das personagens e suas relações sociais.",
+      "correta": "a analise psicologica das personagens",
+      "comentario": "O Realismo investiga profundamente a psicologia das personagens e suas relacoes sociais.",
       "tempoEstimado": 25,
       "tags": [
         "realismo",
-        "características"
+        "caracteristicas"
       ],
       "habilidades": [
-        "identificar-características-do-realismo"
+        "identificar-caracteristicas-do-realismo"
       ],
       "collections": [
         "questions"
@@ -135,7 +136,7 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Realismo - linguagem e estilo",
       "dificuldadeLabel": "facil",
@@ -145,12 +146,12 @@ export const literaturaRealismoNaturalismoModernismo = {
       "enunciado": "A linguagem realista tende a ser",
       "opcoes": [
         "subjetiva e emocional",
-        "mística e simbólica",
+        "mastica e simbolica",
         "objetiva e direta",
         "rebuscada e ornamental"
       ],
       "correta": "objetiva e direta",
-      "comentario": "A linguagem realista busca clareza e objetividade para representar a realidade com precisão.",
+      "comentario": "A linguagem realista busca clareza e objetividade para representar a realidade com precisao.",
       "tempoEstimado": 35,
       "tags": [
         "realismo",
@@ -173,22 +174,22 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Realismo - autores e obras",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um dos principais autores do Realismo brasileiro é",
+      "enunciado": "Um dos principais autores do Realismo brasileiro e",
       "opcoes": [
-        "José de Alencar",
+        "Joso de Alencar",
         "Castro Alves",
-        "Gonçalves Dias",
+        "Goncalves Dias",
         "Machado de Assis"
       ],
       "correta": "Machado de Assis",
-      "comentario": "Machado de Assis é o principal representante do Realismo no Brasil.",
+      "comentario": "Machado de Assis e o principal representante do Realismo no Brasil.",
       "tempoEstimado": 30,
       "tags": [
         "realismo",
@@ -211,22 +212,22 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Naturalismo - contexto histórico",
+      "subtopico": "Naturalismo - contexto historico",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
       "enunciado": "O Naturalismo surge influenciado principalmente por teorias",
       "opcoes": [
-        "científicas",
-        "românticas",
+        "cientificas",
+        "romanticas",
         "religiosas",
-        "mitológicas"
+        "mitologicas"
       ],
-      "correta": "científicas",
-      "comentario": "O Naturalismo é influenciado por teorias científicas como o determinismo e o evolucionismo.",
+      "correta": "cientificas",
+      "comentario": "O Naturalismo e influenciado por teorias cientificas como o determinismo e o evolucionismo.",
       "tempoEstimado": 25,
       "tags": [
         "naturalismo",
@@ -249,29 +250,29 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Naturalismo - características",
+      "subtopico": "Naturalismo - caracteristicas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma característica do Naturalismo é",
+      "enunciado": "Uma caracteristica do Naturalismo e",
       "opcoes": [
-        "a idealização da natureza",
-        "a análise científica do comportamento humano",
-        "o foco em heróis nacionais",
-        "a linguagem simbólica"
+        "a idealizacao da natureza",
+        "a analise cientifica do comportamento humano",
+        "o foco em herois nacionais",
+        "a linguagem simbolica"
       ],
-      "correta": "a análise científica do comportamento humano",
-      "comentario": "O Naturalismo busca explicar o comportamento humano com base em fatores científicos.",
+      "correta": "a analise cientifica do comportamento humano",
+      "comentario": "O Naturalismo busca explicar o comportamento humano com base em fatores cientificos.",
       "tempoEstimado": 35,
       "tags": [
         "naturalismo",
-        "características"
+        "caracteristicas"
       ],
       "habilidades": [
-        "identificar-características-do-naturalismo"
+        "identificar-caracteristicas-do-naturalismo"
       ],
       "collections": [
         "questions"
@@ -287,29 +288,29 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Naturalismo - determinismo e cientificismo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "No Naturalismo, o comportamento humano é frequentemente explicado por",
+      "enunciado": "No Naturalismo, o comportamento humano e frequentemente explicado por",
       "opcoes": [
-        "livre-arbítrio absoluto",
-        "inspiração divina",
-        "fatores biológicos e sociais",
-        "imaginação criativa"
+        "livre-arbitrio absoluto",
+        "inspiracao divina",
+        "fatores biologicos e sociais",
+        "imaginacao criativa"
       ],
-      "correta": "fatores biológicos e sociais",
-      "comentario": "O Naturalismo adota uma visão determinista, considerando hereditariedade e meio como fatores decisivos.",
+      "correta": "fatores biologicos e sociais",
+      "comentario": "O Naturalismo adota uma visao determinista, considerando hereditariedade e meio como fatores decisivos.",
       "tempoEstimado": 40,
       "tags": [
         "naturalismo",
         "determinismo"
       ],
       "habilidades": [
-        "identificar-características-do-naturalismo"
+        "identificar-caracteristicas-do-naturalismo"
       ],
       "collections": [
         "questions"
@@ -325,22 +326,22 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Naturalismo - autores e obras",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Aluísio Azevedo é autor de qual obra naturalista?",
+      "enunciado": "Aluisio Azevedo e autor de qual obra naturalista?",
       "opcoes": [
         "Dom Casmurro",
         "Iracema",
-        "Memórias Póstumas de Brás Cubas",
-        "O Cortiço"
+        "Memorias Postumas de Bras Cubas",
+        "O Cortico"
       ],
-      "correta": "O Cortiço",
-      "comentario": "O Cortiço é uma das principais obras do Naturalismo brasileiro.",
+      "correta": "O Cortico",
+      "comentario": "O Cortico e uma das principais obras do Naturalismo brasileiro.",
       "tempoEstimado": 30,
       "tags": [
         "naturalismo",
@@ -363,29 +364,29 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Modernismo - linguagem e ruptura",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "O Modernismo rompe com tradições ao",
+      "enunciado": "O Modernismo rompe com tradicoes ao",
       "opcoes": [
         "inovar na linguagem",
-        "seguir padrões europeus",
-        "manter regras clássicas",
+        "seguir padroes europeus",
+        "manter regras classicas",
         "evitar temas nacionais"
       ],
       "correta": "inovar na linguagem",
-      "comentario": "O Modernismo valoriza a liberdade linguística e temática.",
+      "comentario": "O Modernismo valoriza a liberdade linguastica e tematica.",
       "tempoEstimado": 40,
       "tags": [
         "modernismo",
         "linguagem"
       ],
       "habilidades": [
-        "identificar-características-do-modernismo"
+        "identificar-caracteristicas-do-modernismo"
       ],
       "collections": [
         "questions"
@@ -401,22 +402,22 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Comparação entre escolas literárias",
+      "subtopico": "Comparacao entre escolas literarias",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma diferença entre Realismo e Naturalismo é que o Naturalismo",
+      "enunciado": "Uma diferenca entre Realismo e Naturalismo e que o Naturalismo",
       "opcoes": [
         "foca mais na psicologia",
-        "é mais científico",
-        "é mais subjetivo",
-        "é mais religioso"
+        "e mais cientifico",
+        "e mais subjetivo",
+        "e mais religioso"
       ],
-      "correta": "é mais científico",
-      "comentario": "O Naturalismo radicaliza o Realismo com base científica.",
+      "correta": "e mais cientifico",
+      "comentario": "O Naturalismo radicaliza o Realismo com base cientifica.",
       "tempoEstimado": 45,
       "tags": [
         "comparacao",
@@ -439,29 +440,29 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Modernismo - segunda fase",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A segunda fase do Modernismo brasileiro é caracterizada por",
+      "enunciado": "A segunda fase do Modernismo brasileiro e caracterizada por",
       "opcoes": [
         "experimentalismo radical",
         "retorno ao medievalismo",
-        "maior equilíbrio entre forma e conteúdo",
+        "maior equilibrio entre forma e conteudo",
         "uso exclusivo de linguagem coloquial"
       ],
-      "correta": "maior equilíbrio entre forma e conteúdo",
-      "comentario": "A segunda fase modernista apresenta maturidade estática e aprofundamento temático.",
+      "correta": "maior equilibrio entre forma e conteudo",
+      "comentario": "A segunda fase modernista apresenta maturidade estatica e aprofundamento tematico.",
       "tempoEstimado": 40,
       "tags": [
         "modernismo",
         "segunda-fase"
       ],
       "habilidades": [
-        "identificar-características-do-modernismo"
+        "identificar-caracteristicas-do-modernismo"
       ],
       "collections": [
         "questions"
@@ -477,29 +478,29 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Modernismo - terceira fase",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A terceira fase do Modernismo também é conhecida como",
+      "enunciado": "A terceira fase do Modernismo tambem e conhecida como",
       "opcoes": [
         "fase heroica",
-        "fase romântica",
+        "fase romantica",
         "fase simbolista",
-        "geração de 45"
+        "geracao de 45"
       ],
-      "correta": "geração de 45",
-      "comentario": "A terceira fase modernista retoma certo rigor formal e é chamada de Geração de 45.",
+      "correta": "geracao de 45",
+      "comentario": "A terceira fase modernista retoma certo rigor formal e recebe o nome de Geracao de 45.",
       "tempoEstimado": 40,
       "tags": [
         "modernismo",
         "terceira-fase"
       ],
       "habilidades": [
-        "identificar-características-do-modernismo"
+        "identificar-caracteristicas-do-modernismo"
       ],
       "collections": [
         "questions"
@@ -515,22 +516,22 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Comparação entre escolas literárias",
+      "subtopico": "Comparacao entre escolas literarias",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
       "enunciado": "Enquanto o Realismo critica a sociedade, o Modernismo busca",
       "opcoes": [
-        "romper padrões e inovar",
+        "romper padroes e inovar",
         "reproduzir modelos antigos",
         "valorizar o misticismo",
         "exaltar o passado medieval"
       ],
-      "correta": "romper padrões e inovar",
-      "comentario": "O Modernismo propõe ruptura estática e inovação, diferentemente do Realismo.",
+      "correta": "romper padroes e inovar",
+      "comentario": "O Modernismo propoe ruptura estetica e inovacao, diferentemente do Realismo.",
       "tempoEstimado": 40,
       "tags": [
         "comparacao",
@@ -553,9 +554,9 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Análise de fragmento literário",
+      "subtopico": "Analise de fragmento literario",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "analise",
@@ -591,14 +592,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Interpretação indireta",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao apresentar personagens guiados por instintos e impulsos, o texto sugere influência do",
+      "enunciado": "Ao apresentar personagens guiados por instintos e impulsos, o texto sugere influencia do",
       "opcoes": [
         "Simbolismo",
         "Romantismo",
@@ -629,29 +630,29 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa que NÃO corresponde ao Realismo",
+      "enunciado": "Assinale a alternativa que NAO corresponde ao Realismo",
       "opcoes": [
-        "Análise crítica da sociedade",
-        "Observação objetiva",
+        "Analise critica da sociedade",
+        "Observacao objetiva",
         "Foco na realidade social",
-        "Idealização do amor"
+        "Idealizacao do amor"
       ],
-      "correta": "Idealização do amor",
-      "comentario": "A idealização do amor é típica do Romantismo, não do Realismo.",
+      "correta": "Idealizacao do amor",
+      "comentario": "A idealizacao do amor e tepica do Romantismo, nao do Realismo.",
       "tempoEstimado": 40,
       "tags": [
         "pegadinha",
         "realismo"
       ],
       "habilidades": [
-        "identificar-características-do-realismo"
+        "identificar-caracteristicas-do-realismo"
       ],
       "collections": [
         "questions"
@@ -667,22 +668,22 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Equivalência de formas",
+      "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Dizer que o Modernismo rompe com tradições equivale a afirmar que ele",
+      "enunciado": "Dizer que o Modernismo rompe com tradicoes equivale a afirmar que ele",
       "opcoes": [
-        "inova nas formas de expressão",
+        "inova nas formas de expressao",
         "repete modelos antigos",
-        "mantém regras fixas",
-        "valoriza o passado clássico"
+        "mantem regras fixas",
+        "valoriza o passado classico"
       ],
-      "correta": "inova nas formas de expressão",
-      "comentario": "Ruptura significa abandono de padrões anteriores e inovação.",
+      "correta": "inova nas formas de expressao",
+      "comentario": "Ruptura significa abandono de padroes anteriores e inovacao.",
       "tempoEstimado": 35,
       "tags": [
         "equivalencia",
@@ -705,9 +706,9 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Realismo - características",
+      "subtopico": "Realismo - caracteristicas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "analise",
@@ -715,11 +716,11 @@ export const literaturaRealismoNaturalismoModernismo = {
       "enunciado": "O narrador realista costuma adotar uma postura",
       "opcoes": [
         "emocional",
-        "crítica",
+        "critica",
         "fantasiosa",
         "religiosa"
       ],
-      "correta": "crítica",
+      "correta": "critica",
       "comentario": "O narrador realista observa e analisa criticamente os fatos.",
       "tempoEstimado": 35,
       "tags": [
@@ -727,7 +728,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "narrador"
       ],
       "habilidades": [
-        "identificar-características-do-realismo"
+        "identificar-caracteristicas-do-realismo"
       ],
       "collections": [
         "questions"
@@ -743,14 +744,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Naturalismo - características",
+      "subtopico": "Naturalismo - caracteristicas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A animalização das personagens é típica do",
+      "enunciado": "A animalizacao das personagens e tepica do",
       "opcoes": [
         "Realismo",
         "Modernismo",
@@ -762,10 +763,10 @@ export const literaturaRealismoNaturalismoModernismo = {
       "tempoEstimado": 40,
       "tags": [
         "naturalismo",
-        "características"
+        "caracteristicas"
       ],
       "habilidades": [
-        "identificar-características-do-naturalismo"
+        "identificar-caracteristicas-do-naturalismo"
       ],
       "collections": [
         "questions"
@@ -781,17 +782,17 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Modernismo - linguagem e ruptura",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A linguagem modernista é marcada por",
+      "enunciado": "A linguagem modernista e marcada por",
       "opcoes": [
         "rigidez formal",
-        "padronização clássica",
+        "padronizacao classica",
         "uso exclusivo de linguagem erudita",
         "liberdade expressiva"
       ],
@@ -819,7 +820,7 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Realismo - linguagem e estilo",
       "dificuldadeLabel": "facil",
@@ -829,12 +830,12 @@ export const literaturaRealismoNaturalismoModernismo = {
       "enunciado": "No Realismo, a linguagem busca evitar excessos, privilegiando",
       "opcoes": [
         "objetividade e clareza",
-        "ornamentação exagerada",
-        "expressões místicas",
-        "figuras mitológicas"
+        "ornamentacao exagerada",
+        "expressoes masticas",
+        "figuras mitologicas"
       ],
       "correta": "objetividade e clareza",
-      "comentario": "O estilo realista preza pela clareza e pela representação fiel da realidade.",
+      "comentario": "O estilo realista preza pela clareza e pela representacao fiel da realidade.",
       "tempoEstimado": 35,
       "tags": [
         "realismo",
@@ -857,29 +858,29 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Naturalismo - determinismo e cientificismo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A ideia de que o indivíduo é condicionado pelo meio social e pela hereditariedade está diretamente ligada ao",
+      "enunciado": "A ideia de que o individuo e condicionado pelo meio social e pela hereditariedade esta diretamente ligada ao",
       "opcoes": [
-        "subjetivismo romântico",
+        "subjetivismo romantico",
         "determinismo naturalista",
         "idealismo simbolista",
         "formalismo parnasiano"
       ],
       "correta": "determinismo naturalista",
-      "comentario": "O Naturalismo se baseia no determinismo, que afirma que o comportamento humano é condicionado por fatores biológicos e sociais.",
+      "comentario": "O Naturalismo se baseia no determinismo, que afirma que o comportamento humano e condicionado por fatores biologicos e sociais.",
       "tempoEstimado": 40,
       "tags": [
         "naturalismo",
         "determinismo"
       ],
       "habilidades": [
-        "identificar-características-do-naturalismo"
+        "identificar-caracteristicas-do-naturalismo"
       ],
       "collections": [
         "questions"
@@ -895,7 +896,7 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Modernismo - primeira fase",
       "dificuldadeLabel": "facil",
@@ -904,12 +905,12 @@ export const literaturaRealismoNaturalismoModernismo = {
       "tipo": "multipla_escolha",
       "enunciado": "A Semana de Arte Moderna de 1922 marcou principalmente",
       "opcoes": [
-        "o retorno ao estilo clássico",
+        "o retorno ao estilo classico",
         "o fortalecimento do Romantismo",
-        "o início do Modernismo no Brasil",
-        "a valorização do simbolismo"
+        "o inicio do Modernismo no Brasil",
+        "a valorizacao do simbolismo"
       ],
-      "correta": "o início do Modernismo no Brasil",
+      "correta": "o inicio do Modernismo no Brasil",
       "comentario": "A Semana de 1922 simboliza o marco inicial do Modernismo brasileiro.",
       "tempoEstimado": 35,
       "tags": [
@@ -933,9 +934,9 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Comparação entre escolas literárias",
+      "subtopico": "Comparacao entre escolas literarias",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
@@ -948,7 +949,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "analisar criticamente a sociedade"
       ],
       "correta": "analisar criticamente a sociedade",
-      "comentario": "O Realismo rompe com a idealização romântica e passa a analisar criticamente a sociedade.",
+      "comentario": "O Realismo rompe com a idealizacao romantica e passa a analisar criticamente a sociedade.",
       "tempoEstimado": 45,
       "tags": [
         "comparacao",
@@ -971,7 +972,7 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "facil",
@@ -980,20 +981,20 @@ export const literaturaRealismoNaturalismoModernismo = {
       "tipo": "multipla_escolha",
       "enunciado": "Assinale a alternativa correta sobre o Naturalismo",
       "opcoes": [
-        "Baseia-se em explicações científicas do comportamento humano",
+        "Baseia-se em explicacoes cientificas do comportamento humano",
         "Valoriza o sentimentalismo exagerado",
-        "Defende a idealização do amor",
-        "Utiliza linguagem exclusivamente simbólica"
+        "Defende a idealizacao do amor",
+        "Utiliza linguagem exclusivamente simbolica"
       ],
-      "correta": "Baseia-se em explicações científicas do comportamento humano",
-      "comentario": "O Naturalismo se fundamenta em teorias científicas para explicar o comportamento humano.",
+      "correta": "Baseia-se em explicacoes cientificas do comportamento humano",
+      "comentario": "O Naturalismo se fundamenta em teorias cientificas para explicar o comportamento humano.",
       "tempoEstimado": 45,
       "tags": [
         "naturalismo",
         "pegadinha"
       ],
       "habilidades": [
-        "identificar-características-do-naturalismo"
+        "identificar-caracteristicas-do-naturalismo"
       ],
       "collections": [
         "questions"
@@ -1009,22 +1010,22 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Realismo - autores e obras",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A obra \"Memórias Póstumas de Brás Cubas\" é considerada marco do Realismo porque",
+      "enunciado": "A obra \"Memorias Postumas de Bras Cubas\" e considerada marco do Realismo porque",
       "opcoes": [
         "retoma valores medievais",
-        "apresenta visão crítica e irônica da sociedade",
-        "valoriza o heroísmo nacional",
+        "apresenta visao critica e irunica da sociedade",
+        "valoriza o heroasmo nacional",
         "explora elementos sobrenaturais"
       ],
-      "correta": "apresenta visão crítica e irônica da sociedade",
-      "comentario": "A obra de Machado de Assis inaugura o Realismo no Brasil com forte crítica social e ironia.",
+      "correta": "apresenta visao critica e irunica da sociedade",
+      "comentario": "A obra de Machado de Assis inaugura o Realismo no Brasil com forte critica social e ironia.",
       "tempoEstimado": 40,
       "tags": [
         "realismo",
@@ -1047,29 +1048,29 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Realismo - características",
+      "subtopico": "Realismo - caracteristicas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A ironia no Realismo é utilizada principalmente para",
+      "enunciado": "A ironia no Realismo e utilizada principalmente para",
       "opcoes": [
-        "reforçar o sentimentalismo",
+        "reforcar o sentimentalismo",
         "valorizar o misticismo",
         "criticar comportamentos sociais",
-        "criar efeitos fantásticos"
+        "criar efeitos fantasticos"
       ],
       "correta": "criticar comportamentos sociais",
-      "comentario": "A ironia é uma ferramenta crítica importante na literatura realista.",
+      "comentario": "A ironia e uma ferramenta critica importante na literatura realista.",
       "tempoEstimado": 40,
       "tags": [
         "realismo",
         "ironia"
       ],
       "habilidades": [
-        "identificar-características-do-realismo"
+        "identificar-caracteristicas-do-realismo"
       ],
       "collections": [
         "questions"
@@ -1085,22 +1086,22 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Naturalismo - contexto histórico",
+      "subtopico": "Naturalismo - contexto historico",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "O Naturalismo se desenvolve em um contexto marcado pelo avanço",
+      "enunciado": "O Naturalismo se desenvolve em um contexto marcado pelo avanao",
       "opcoes": [
         "religioso",
-        "mitológico",
+        "mitologico",
         "medieval",
-        "científico"
+        "cientifico"
       ],
-      "correta": "científico",
-      "comentario": "O avanço das ciências influenciou diretamente o Naturalismo.",
+      "correta": "cientifico",
+      "comentario": "O avanao das ciencias influenciou diretamente o Naturalismo.",
       "tempoEstimado": 35,
       "tags": [
         "naturalismo",
@@ -1123,14 +1124,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Naturalismo - características",
+      "subtopico": "Naturalismo - caracteristicas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "O foco em ambientes degradados e marginalizados é típico do",
+      "enunciado": "O foco em ambientes degradados e marginalizados e tepico do",
       "opcoes": [
         "Naturalismo",
         "Realismo",
@@ -1145,7 +1146,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "ambiente"
       ],
       "habilidades": [
-        "identificar-características-do-naturalismo"
+        "identificar-caracteristicas-do-naturalismo"
       ],
       "collections": [
         "questions"
@@ -1161,29 +1162,29 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Modernismo - primeira fase",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A primeira fase modernista é também chamada de fase",
+      "enunciado": "A primeira fase modernista e tambem chamada de fase",
       "opcoes": [
         "equilibrada",
         "heroica",
-        "científica",
-        "clássica"
+        "cientifica",
+        "classica"
       ],
       "correta": "heroica",
-      "comentario": "A primeira fase do Modernismo é conhecida como fase heroica pela ruptura com o passado.",
+      "comentario": "A primeira fase do Modernismo e conhecida como fase heroica pela ruptura com o passado.",
       "tempoEstimado": 35,
       "tags": [
         "modernismo",
         "primeira-fase"
       ],
       "habilidades": [
-        "identificar-características-do-modernismo"
+        "identificar-caracteristicas-do-modernismo"
       ],
       "collections": [
         "questions"
@@ -1199,7 +1200,7 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Modernismo - segunda fase",
       "dificuldadeLabel": "medio",
@@ -1210,18 +1211,18 @@ export const literaturaRealismoNaturalismoModernismo = {
       "opcoes": [
         "excesso de experimentalismo",
         "retorno ao romantismo",
-        "amadurecimento literário",
+        "amadurecimento literario",
         "uso exclusivo da norma culta"
       ],
-      "correta": "amadurecimento literário",
-      "comentario": "A segunda fase apresenta maior equilíbrio e aprofundamento temático.",
+      "correta": "amadurecimento literario",
+      "comentario": "A segunda fase apresenta maior equilibrio e aprofundamento tematico.",
       "tempoEstimado": 40,
       "tags": [
         "modernismo",
         "segunda-fase"
       ],
       "habilidades": [
-        "identificar-características-do-modernismo"
+        "identificar-caracteristicas-do-modernismo"
       ],
       "collections": [
         "questions"
@@ -1237,7 +1238,7 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Modernismo - terceira fase",
       "dificuldadeLabel": "medio",
@@ -1248,18 +1249,18 @@ export const literaturaRealismoNaturalismoModernismo = {
       "opcoes": [
         "a informalidade total",
         "a linguagem medieval",
-        "o sentimentalismo romântico",
+        "o sentimentalismo romantico",
         "o rigor formal"
       ],
       "correta": "o rigor formal",
-      "comentario": "A Geração de 45 retoma certos aspectos formais na literatura.",
+      "comentario": "A Geracao de 45 retoma certos aspectos formais na literatura.",
       "tempoEstimado": 45,
       "tags": [
         "modernismo",
         "terceira-fase"
       ],
       "habilidades": [
-        "identificar-características-do-modernismo"
+        "identificar-caracteristicas-do-modernismo"
       ],
       "collections": [
         "questions"
@@ -1275,22 +1276,22 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Comparação entre escolas literárias",
+      "subtopico": "Comparacao entre escolas literarias",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
       "enunciado": "O Naturalismo diferencia-se do Realismo por",
       "opcoes": [
-        "ser mais científico",
-        "ser menos crítico",
+        "ser mais cientifico",
+        "ser menos critico",
         "ser mais subjetivo",
         "ser mais religioso"
       ],
-      "correta": "ser mais científico",
-      "comentario": "O Naturalismo intensifica o caráter científico presente no Realismo.",
+      "correta": "ser mais cientifico",
+      "comentario": "O Naturalismo intensifica o carater cientifico presente no Realismo.",
       "tempoEstimado": 45,
       "tags": [
         "comparacao",
@@ -1313,14 +1314,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Análise de fragmento literário",
+      "subtopico": "Analise de fragmento literario",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um texto que apresenta crítica é hipocrisia social está mais próximo do",
+      "enunciado": "Um texto que apresenta critica a hipocrisia social esta mais próximo do",
       "opcoes": [
         "Simbolismo",
         "Realismo",
@@ -1328,7 +1329,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "Parnasianismo"
       ],
       "correta": "Realismo",
-      "comentario": "A crítica é sociedade é característica central do Realismo.",
+      "comentario": "A critica a sociedade e caracteristica central do Realismo.",
       "tempoEstimado": 45,
       "tags": [
         "analise",
@@ -1351,22 +1352,22 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Equivalência de formas",
+      "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Dizer que o Naturalismo é determinista equivale a afirmar que ele",
+      "enunciado": "Dizer que o Naturalismo e determinista equivale a afirmar que ele",
       "opcoes": [
         "valoriza a liberdade total",
-        "nega influências externas",
-        "considera o indivíduo condicionado",
+        "nega influencias externas",
+        "considera o individuo condicionado",
         "defende o idealismo"
       ],
-      "correta": "considera o indivíduo condicionado",
-      "comentario": "Determinismo indica que o comportamento humano é condicionado por fatores externos e biológicos.",
+      "correta": "considera o individuo condicionado",
+      "comentario": "Determinismo indica que o comportamento humano e condicionado por fatores externos e biologicos.",
       "tempoEstimado": 40,
       "tags": [
         "equivalencia",
@@ -1389,22 +1390,22 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Realismo - contexto histórico",
+      "subtopico": "Realismo - contexto historico",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "O Realismo surge em um contexto de transformações sociais associadas ao",
+      "enunciado": "O Realismo surge em um contexto de transformacoes sociais associadas ao",
       "opcoes": [
         "retorno ao feudalismo",
-        "domínio religioso absoluto",
+        "dominio religioso absoluto",
         "isolamento cultural europeu",
-        "avanço científico e urbano"
+        "avanao cientifico e urbano"
       ],
-      "correta": "avanço científico e urbano",
-      "comentario": "O Realismo está ligado às transformações sociais e ao avanço científico do século XIX.",
+      "correta": "avanao cientifico e urbano",
+      "comentario": "O Realismo esta ligado as transformacoes sociais e ao avanao cientifico do soculo XIX.",
       "tempoEstimado": 40,
       "tags": [
         "realismo",
@@ -1427,14 +1428,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Realismo - características",
+      "subtopico": "Realismo - caracteristicas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A crítica às instituições sociais é uma marca do",
+      "enunciado": "A critica as instituicoes sociais e uma marca do",
       "opcoes": [
         "Realismo",
         "Romantismo",
@@ -1442,14 +1443,14 @@ export const literaturaRealismoNaturalismoModernismo = {
         "Arcadismo"
       ],
       "correta": "Realismo",
-      "comentario": "O Realismo analisa criticamente a sociedade e suas instituições.",
+      "comentario": "O Realismo analisa criticamente a sociedade e suas instituicoes.",
       "tempoEstimado": 40,
       "tags": [
         "realismo",
         "critica-social"
       ],
       "habilidades": [
-        "identificar-características-do-realismo"
+        "identificar-caracteristicas-do-realismo"
       ],
       "collections": [
         "questions"
@@ -1465,29 +1466,29 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Naturalismo - características",
+      "subtopico": "Naturalismo - caracteristicas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A descrição detalhada de ambientes degradados tem como objetivo no Naturalismo",
+      "enunciado": "A descricao detalhada de ambientes degradados tem como objetivo no Naturalismo",
       "opcoes": [
         "embelezar a narrativa",
         "evidenciar o meio como determinante",
-        "reforçar o sentimentalismo",
-        "valorizar o fantástico"
+        "reforcar o sentimentalismo",
+        "valorizar o fantastico"
       ],
       "correta": "evidenciar o meio como determinante",
-      "comentario": "O ambiente é determinante no Naturalismo, influenciando diretamente o comportamento das personagens.",
+      "comentario": "O ambiente e determinante no Naturalismo, influenciando diretamente o comportamento das personagens.",
       "tempoEstimado": 45,
       "tags": [
         "naturalismo",
         "ambiente"
       ],
       "habilidades": [
-        "identificar-características-do-naturalismo"
+        "identificar-caracteristicas-do-naturalismo"
       ],
       "collections": [
         "questions"
@@ -1503,14 +1504,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Naturalismo - determinismo e cientificismo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando um texto apresenta personagens dominados por impulsos instintivos, evidencia-se a influência do",
+      "enunciado": "Quando um texto apresenta personagens dominados por impulsos instintivos, evidencia-se a influencia do",
       "opcoes": [
         "idealismo",
         "subjetivismo",
@@ -1518,7 +1519,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "classicismo"
       ],
       "correta": "determinismo",
-      "comentario": "O determinismo naturalista explica ações humanas por instintos e fatores biológicos.",
+      "comentario": "O determinismo naturalista explica acoes humanas por instintos e fatores biologicos.",
       "tempoEstimado": 45,
       "tags": [
         "naturalismo",
@@ -1541,7 +1542,7 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Modernismo - linguagem e ruptura",
       "dificuldadeLabel": "medio",
@@ -1550,13 +1551,13 @@ export const literaturaRealismoNaturalismoModernismo = {
       "tipo": "multipla_escolha",
       "enunciado": "A quebra de regras gramaticais no Modernismo tem como objetivo",
       "opcoes": [
-        "erro linguístico",
-        "retorno ao clássico",
-        "padronização formal",
-        "liberdade de expressão"
+        "erro linguastico",
+        "retorno ao classico",
+        "padronizacao formal",
+        "liberdade de expressao"
       ],
-      "correta": "liberdade de expressão",
-      "comentario": "O Modernismo rompe com normas rígidas para ampliar a expressividade.",
+      "correta": "liberdade de expressao",
+      "comentario": "O Modernismo rompe com normas rigidas para ampliar a expressividade.",
       "tempoEstimado": 40,
       "tags": [
         "modernismo",
@@ -1579,29 +1580,29 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Modernismo - primeira fase",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A irreverência e a crítica cultural marcam a fase",
+      "enunciado": "A irreverencia e a critica cultural marcam a fase",
       "opcoes": [
         "modernista inicial",
-        "romântica",
+        "romantica",
         "parnasiana",
         "arcadista"
       ],
       "correta": "modernista inicial",
-      "comentario": "A primeira fase modernista é marcada por irreverência e crítica aos padrões culturais.",
+      "comentario": "A primeira fase modernista e marcada por irreverencia e critica aos padroes culturais.",
       "tempoEstimado": 35,
       "tags": [
         "modernismo",
         "primeira-fase"
       ],
       "habilidades": [
-        "identificar-características-do-modernismo"
+        "identificar-caracteristicas-do-modernismo"
       ],
       "collections": [
         "questions"
@@ -1617,19 +1618,19 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Modernismo - segunda fase",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A valorização de temas sociais e regionais intensifica-se na",
+      "enunciado": "A valorizacao de temas sociais e regionais intensifica-se na",
       "opcoes": [
         "primeira fase",
         "segunda fase",
         "terceira fase",
-        "fase clássica"
+        "fase classica"
       ],
       "correta": "segunda fase",
       "comentario": "A segunda fase modernista amplia o enfoque social e regional.",
@@ -1639,7 +1640,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "segunda-fase"
       ],
       "habilidades": [
-        "identificar-características-do-modernismo"
+        "identificar-caracteristicas-do-modernismo"
       ],
       "collections": [
         "questions"
@@ -1655,22 +1656,22 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Comparação entre escolas literárias",
+      "subtopico": "Comparacao entre escolas literarias",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
       "enunciado": "Enquanto o Naturalismo enfatiza o meio, o Realismo enfatiza",
       "opcoes": [
-        "o fantástico",
+        "o fantastico",
         "o misticismo",
-        "a análise psicológica",
-        "a idealização"
+        "a analise psicologica",
+        "a idealizacao"
       ],
-      "correta": "a análise psicológica",
-      "comentario": "O Realismo privilegia a análise psicológica, enquanto o Naturalismo enfatiza o meio e a biologia.",
+      "correta": "a analise psicologica",
+      "comentario": "O Realismo privilegia a analise psicologica, enquanto o Naturalismo enfatiza o meio e a biologia.",
       "tempoEstimado": 45,
       "tags": [
         "comparacao",
@@ -1693,14 +1694,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Interpretação indireta",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um texto que critica a hipocrisia social e analisa personagens com ironia sugere características do",
+      "enunciado": "Um texto que critica a hipocrisia social e analisa personagens com ironia sugere caracteristicas do",
       "opcoes": [
         "Simbolismo",
         "Arcadismo",
@@ -1708,7 +1709,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "Realismo"
       ],
       "correta": "Realismo",
-      "comentario": "A crítica social e a ironia são marcas típicas do Realismo.",
+      "comentario": "A critica social e a ironia sao marcas tepicas do Realismo.",
       "tempoEstimado": 45,
       "tags": [
         "interpretacao",
@@ -1731,22 +1732,22 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Equivalência de formas",
+      "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
       "enunciado": "Afirmar que o Modernismo rompe com o passado equivale a dizer que ele",
       "opcoes": [
-        "inova e transforma padrões",
-        "mantém tradições",
+        "inova e transforma padroes",
+        "mantem tradicoes",
         "reproduz modelos antigos",
         "valoriza o classicismo"
       ],
-      "correta": "inova e transforma padrões",
-      "comentario": "Ruptura modernista implica inovação e transformação das formas tradicionais.",
+      "correta": "inova e transforma padroes",
+      "comentario": "Ruptura modernista implica inovacao e transformacao das formas tradicionais.",
       "tempoEstimado": 40,
       "tags": [
         "equivalencia",
@@ -1769,22 +1770,22 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Realismo - autores e obras",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A ironia machadiana, presente em obras realistas, tem como função principal",
+      "enunciado": "A ironia machadiana, presente em obras realistas, tem como funcao principal",
       "opcoes": [
         "valorizar o sentimentalismo",
         "criticar comportamentos sociais",
-        "reforçar o ideal romântico",
+        "reforcar o ideal romantico",
         "exaltar o nacionalismo"
       ],
       "correta": "criticar comportamentos sociais",
-      "comentario": "Machado de Assis utiliza a ironia como instrumento de crítica social e psicológica.",
+      "comentario": "Machado de Assis utiliza a ironia como instrumento de critica social e psicologica.",
       "tempoEstimado": 40,
       "tags": [
         "realismo",
@@ -1807,7 +1808,7 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Realismo - linguagem e estilo",
       "dificuldadeLabel": "medio",
@@ -1818,10 +1819,10 @@ export const literaturaRealismoNaturalismoModernismo = {
       "opcoes": [
         "linguagem subjetiva",
         "descrições fantasiosas",
-        "observação direta da realidade",
-        "uso constante de símbolos"
+        "observacao direta da realidade",
+        "uso constante de sombolos"
       ],
-      "correta": "observação direta da realidade",
+      "correta": "observacao direta da realidade",
       "comentario": "O Realismo busca representar a realidade de forma direta e objetiva.",
       "tempoEstimado": 35,
       "tags": [
@@ -1845,21 +1846,21 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Naturalismo - características",
+      "subtopico": "Naturalismo - caracteristicas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A presença de personagens dominadas por instintos revela no Naturalismo",
+      "enunciado": "A presenca de personagens dominadas por instintos revela no Naturalismo",
       "opcoes": [
-        "idealização romântica",
-        "subjetivismo simbólico",
-        "equilíbrio clássico",
-        "visão determinista"
+        "idealizacao romantica",
+        "subjetivismo simbolico",
+        "equilibrio classico",
+        "visao determinista"
       ],
-      "correta": "visão determinista",
+      "correta": "visao determinista",
       "comentario": "O Naturalismo explica o comportamento humano a partir de instintos e condicionamentos.",
       "tempoEstimado": 45,
       "tags": [
@@ -1867,7 +1868,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "determinismo"
       ],
       "habilidades": [
-        "identificar-características-do-naturalismo"
+        "identificar-caracteristicas-do-naturalismo"
       ],
       "collections": [
         "questions"
@@ -1883,14 +1884,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Naturalismo - determinismo e cientificismo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando o comportamento humano é explicado por fatores biológicos, o texto se aproxima do",
+      "enunciado": "Quando o comportamento humano e explicado por fatores biologicos, o texto se aproxima do",
       "opcoes": [
         "Naturalismo",
         "Simbolismo",
@@ -1898,7 +1899,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "Romantismo"
       ],
       "correta": "Naturalismo",
-      "comentario": "O Naturalismo utiliza explicações científicas para compreender o comportamento humano.",
+      "comentario": "O Naturalismo utiliza explicacoes cientificas para compreender o comportamento humano.",
       "tempoEstimado": 45,
       "tags": [
         "naturalismo",
@@ -1921,7 +1922,7 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Modernismo - linguagem e ruptura",
       "dificuldadeLabel": "medio",
@@ -1930,13 +1931,13 @@ export const literaturaRealismoNaturalismoModernismo = {
       "tipo": "multipla_escolha",
       "enunciado": "O uso de linguagem coloquial no Modernismo tem como objetivo",
       "opcoes": [
-        "seguir padrões clássicos",
+        "seguir padroes classicos",
         "aproximar a linguagem da realidade",
-        "evitar inovação",
+        "evitar inovacao",
         "manter o formalismo rígido"
       ],
       "correta": "aproximar a linguagem da realidade",
-      "comentario": "O Modernismo aproxima a linguagem literária do cotidiano.",
+      "comentario": "O Modernismo aproxima a linguagem literaria do cotidiano.",
       "tempoEstimado": 40,
       "tags": [
         "modernismo",
@@ -1959,7 +1960,7 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Modernismo - primeira fase",
       "dificuldadeLabel": "medio",
@@ -1968,12 +1969,12 @@ export const literaturaRealismoNaturalismoModernismo = {
       "tipo": "multipla_escolha",
       "enunciado": "A primeira fase do Modernismo brasileiro buscou principalmente",
       "opcoes": [
-        "manter padrões europeus",
+        "manter padroes europeus",
         "valorizar o misticismo",
-        "romper com tradições acadêmicas",
+        "romper com tradicoes academicas",
         "retomar o Romantismo"
       ],
-      "correta": "romper com tradições acadêmicas",
+      "correta": "romper com tradicoes academicas",
       "comentario": "A fase inicial do Modernismo foi marcada pela ruptura com modelos tradicionais.",
       "tempoEstimado": 40,
       "tags": [
@@ -1981,7 +1982,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "primeira-fase"
       ],
       "habilidades": [
-        "identificar-características-do-modernismo"
+        "identificar-caracteristicas-do-modernismo"
       ],
       "collections": [
         "questions"
@@ -1997,29 +1998,29 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Modernismo - segunda fase",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Na segunda fase modernista, destaca-se a presença de",
+      "enunciado": "Na segunda fase modernista, destaca-se a presenca de",
       "opcoes": [
-        "idealização romântica",
+        "idealizacao romantica",
         "linguagem exclusivamente formal",
-        "ausência de crítica social",
+        "ausencia de critica social",
         "temas sociais e regionais"
       ],
       "correta": "temas sociais e regionais",
-      "comentario": "A segunda fase valoriza questáes sociais e regionais, ampliando o alcance da literatura.",
+      "comentario": "A segunda fase valoriza questaes sociais e regionais, ampliando o alcance da literatura.",
       "tempoEstimado": 40,
       "tags": [
         "modernismo",
         "segunda-fase"
       ],
       "habilidades": [
-        "identificar-características-do-modernismo"
+        "identificar-caracteristicas-do-modernismo"
       ],
       "collections": [
         "questions"
@@ -2035,29 +2036,29 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Modernismo - terceira fase",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A terceira fase do Modernismo brasileiro é marcada por",
+      "enunciado": "A terceira fase do Modernismo brasileiro e marcada por",
       "opcoes": [
         "retomada do rigor formal",
         "radical experimentalismo",
-        "predomínio do sentimentalismo",
-        "valorização do fantástico"
+        "predominio do sentimentalismo",
+        "valorizacao do fantastico"
       ],
       "correta": "retomada do rigor formal",
-      "comentario": "A Geração de 45 retoma aspectos formais da tradição literária.",
+      "comentario": "A Geracao de 45 retoma aspectos formais da tradicao literaria.",
       "tempoEstimado": 45,
       "tags": [
         "modernismo",
         "terceira-fase"
       ],
       "habilidades": [
-        "identificar-características-do-modernismo"
+        "identificar-caracteristicas-do-modernismo"
       ],
       "collections": [
         "questions"
@@ -2073,22 +2074,22 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Comparação entre escolas literárias",
+      "subtopico": "Comparacao entre escolas literarias",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao contrário do Modernismo, o Realismo não se caracteriza por",
+      "enunciado": "Ao contrario do Modernismo, o Realismo nao se caracteriza por",
       "opcoes": [
-        "crítica social",
-        "ruptura estática radical",
-        "análise psicológica",
-        "observação da realidade"
+        "critica social",
+        "ruptura estetica radical",
+        "analise psicologica",
+        "observacao da realidade"
       ],
-      "correta": "ruptura estática radical",
-      "comentario": "A ruptura estática radical é marca do Modernismo, não do Realismo.",
+      "correta": "ruptura estetica radical",
+      "comentario": "A ruptura estetica radical e marca do Modernismo, nao do Realismo.",
       "tempoEstimado": 45,
       "tags": [
         "comparacao",
@@ -2111,14 +2112,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Análise de fragmento literário",
+      "subtopico": "Analise de fragmento literario",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um texto que apresenta crítica irônica é sociedade e análise psicológica das personagens pode ser associado ao",
+      "enunciado": "Um texto que apresenta critica irunica a sociedade e analise psicologica das personagens pode ser associado ao",
       "opcoes": [
         "Simbolismo",
         "Arcadismo",
@@ -2126,7 +2127,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "Parnasianismo"
       ],
       "correta": "Realismo",
-      "comentario": "A ironia e a análise psicológica são marcas do Realismo.",
+      "comentario": "A ironia e a analise psicologica sao marcas do Realismo.",
       "tempoEstimado": 45,
       "tags": [
         "analise",
@@ -2149,14 +2150,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Interpretação indireta",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um texto que enfatiza o papel do meio na formação do indivíduo sugere influência do",
+      "enunciado": "Um texto que enfatiza o papel do meio na formacao do individuo sugere influencia do",
       "opcoes": [
         "Romantismo",
         "Simbolismo",
@@ -2187,29 +2188,29 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa que NÃO corresponde ao Naturalismo",
+      "enunciado": "Assinale a alternativa que NAO corresponde ao Naturalismo",
       "opcoes": [
-        "Idealização amorosa",
+        "Idealizacao amorosa",
         "Determinismo",
         "Cientificismo",
-        "Análise do meio social"
+        "Analise do meio social"
       ],
-      "correta": "Idealização amorosa",
-      "comentario": "A idealização amorosa é típica do Romantismo, não do Naturalismo.",
+      "correta": "Idealizacao amorosa",
+      "comentario": "A idealizacao amorosa e tepica do Romantismo, nao do Naturalismo.",
       "tempoEstimado": 45,
       "tags": [
         "pegadinha",
         "naturalismo"
       ],
       "habilidades": [
-        "identificar-características-do-naturalismo"
+        "identificar-caracteristicas-do-naturalismo"
       ],
       "collections": [
         "questions"
@@ -2225,22 +2226,22 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Equivalência de formas",
+      "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Dizer que o Realismo é objetivo equivale a afirmar que ele",
+      "enunciado": "Dizer que o Realismo e objetivo equivale a afirmar que ele",
       "opcoes": [
-        "valoriza emoções intensas",
+        "valoriza emocoes intensas",
         "representa a realidade com clareza",
         "explora o sobrenatural",
         "idealiza personagens"
       ],
       "correta": "representa a realidade com clareza",
-      "comentario": "A objetividade realista está ligada é representação clara e direta da realidade.",
+      "comentario": "A objetividade realista esta ligada a representacao clara e direta da realidade.",
       "tempoEstimado": 40,
       "tags": [
         "equivalencia",
@@ -2263,14 +2264,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Realismo - características",
+      "subtopico": "Realismo - caracteristicas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "O foco na crítica é burguesia é uma marca do",
+      "enunciado": "O foco na critica a burguesia e uma marca do",
       "opcoes": [
         "Simbolismo",
         "Arcadismo",
@@ -2285,7 +2286,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "critica-social"
       ],
       "habilidades": [
-        "identificar-características-do-realismo"
+        "identificar-caracteristicas-do-realismo"
       ],
       "collections": [
         "questions"
@@ -2301,14 +2302,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Naturalismo - características",
+      "subtopico": "Naturalismo - caracteristicas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A abordagem científica da literatura caracteriza o",
+      "enunciado": "A abordagem cientifica da literatura caracteriza o",
       "opcoes": [
         "Realismo",
         "Modernismo",
@@ -2316,14 +2317,14 @@ export const literaturaRealismoNaturalismoModernismo = {
         "Naturalismo"
       ],
       "correta": "Naturalismo",
-      "comentario": "O Naturalismo aplica princípios científicos é análise literária.",
+      "comentario": "O Naturalismo aplica principios cientificos a analise literaria.",
       "tempoEstimado": 45,
       "tags": [
         "naturalismo",
         "cientificismo"
       ],
       "habilidades": [
-        "identificar-características-do-naturalismo"
+        "identificar-caracteristicas-do-naturalismo"
       ],
       "collections": [
         "questions"
@@ -2339,22 +2340,22 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Modernismo - linguagem e ruptura",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A valorização da linguagem coloquial no Modernismo contribui para",
+      "enunciado": "A valorizacao da linguagem coloquial no Modernismo contribui para",
       "opcoes": [
         "aproximar a literatura do cotidiano",
         "afastar o leitor da realidade",
-        "reforçar o formalismo clássico",
-        "retomar padrões europeus"
+        "reforcar o formalismo classico",
+        "retomar padroes europeus"
       ],
       "correta": "aproximar a literatura do cotidiano",
-      "comentario": "O uso da linguagem coloquial aproxima o texto literário da fala cotidiana.",
+      "comentario": "O uso da linguagem coloquial aproxima o texto literario da fala cotidiana.",
       "tempoEstimado": 40,
       "tags": [
         "modernismo",
@@ -2377,29 +2378,29 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Modernismo - primeira fase",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A irreverência presente na primeira fase modernista tem como objetivo",
+      "enunciado": "A irreverencia presente na primeira fase modernista tem como objetivo",
       "opcoes": [
-        "manter tradições literárias",
-        "criticar padrões estabelecidos",
-        "reforçar o sentimentalismo",
+        "manter tradicoes literarias",
+        "criticar padroes estabelecidos",
+        "reforcar o sentimentalismo",
         "valorizar o misticismo"
       ],
-      "correta": "criticar padrões estabelecidos",
-      "comentario": "A irreverência modernista rompe com tradições e critica padrões antigos.",
+      "correta": "criticar padroes estabelecidos",
+      "comentario": "A irreverencia modernista rompe com tradicoes e critica padroes antigos.",
       "tempoEstimado": 40,
       "tags": [
         "modernismo",
         "primeira-fase"
       ],
       "habilidades": [
-        "identificar-características-do-modernismo"
+        "identificar-caracteristicas-do-modernismo"
       ],
       "collections": [
         "questions"
@@ -2415,7 +2416,7 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Modernismo - segunda fase",
       "dificuldadeLabel": "medio",
@@ -2426,10 +2427,10 @@ export const literaturaRealismoNaturalismoModernismo = {
       "opcoes": [
         "evitar temas sociais",
         "retomar o misticismo",
-        "valorizar questáes sociais",
+        "valorizar questaes sociais",
         "negar a realidade"
       ],
-      "correta": "valorizar questáes sociais",
+      "correta": "valorizar questaes sociais",
       "comentario": "A segunda fase modernista destaca temas sociais e humanos.",
       "tempoEstimado": 45,
       "tags": [
@@ -2437,7 +2438,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "segunda-fase"
       ],
       "habilidades": [
-        "identificar-características-do-modernismo"
+        "identificar-caracteristicas-do-modernismo"
       ],
       "collections": [
         "questions"
@@ -2453,7 +2454,7 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Modernismo - terceira fase",
       "dificuldadeLabel": "medio",
@@ -2464,18 +2465,18 @@ export const literaturaRealismoNaturalismoModernismo = {
       "opcoes": [
         "abandonar totalmente a forma",
         "utilizar linguagem coloquial extrema",
-        "negar a tradição literária",
+        "negar a tradicao literaria",
         "retomar aspectos formais"
       ],
       "correta": "retomar aspectos formais",
-      "comentario": "A Geração de 45 retoma elementos formais da tradição literária.",
+      "comentario": "A Geracao de 45 retoma elementos formais da tradicao literaria.",
       "tempoEstimado": 45,
       "tags": [
         "modernismo",
         "terceira-fase"
       ],
       "habilidades": [
-        "identificar-características-do-modernismo"
+        "identificar-caracteristicas-do-modernismo"
       ],
       "collections": [
         "questions"
@@ -2491,17 +2492,17 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Comparação entre escolas literárias",
+      "subtopico": "Comparacao entre escolas literarias",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto o Modernismo rompe com padrões, o Realismo",
+      "enunciado": "Enquanto o Modernismo rompe com padroes, o Realismo",
       "opcoes": [
         "observa criticamente a realidade",
-        "valoriza o fantástico",
+        "valoriza o fantastico",
         "retoma o misticismo",
         "prioriza o idealismo"
       ],
@@ -2529,14 +2530,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Análise de fragmento literário",
+      "subtopico": "Analise de fragmento literario",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um texto que enfatiza a crítica social e o comportamento humano pode ser associado ao",
+      "enunciado": "Um texto que enfatiza a critica social e o comportamento humano pode ser associado ao",
       "opcoes": [
         "Simbolismo",
         "Realismo",
@@ -2544,7 +2545,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "Parnasianismo"
       ],
       "correta": "Realismo",
-      "comentario": "A crítica social e a análise do comportamento são típicas do Realismo.",
+      "comentario": "A critica social e a analise do comportamento sao tepicas do Realismo.",
       "tempoEstimado": 45,
       "tags": [
         "analise",
@@ -2567,14 +2568,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Interpretação indireta",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando um texto sugere que o meio influencia o comportamento humano, está implícita a ideia de",
+      "enunciado": "Quando um texto sugere que o meio influencia o comportamento humano, esta implicita a ideia de",
       "opcoes": [
         "idealismo",
         "subjetivismo",
@@ -2582,7 +2583,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "fantasia"
       ],
       "correta": "determinismo",
-      "comentario": "A influência do meio sobre o indivíduo é uma característica do determinismo naturalista.",
+      "comentario": "A influencia do meio sobre o individuo e uma caracteristica do determinismo naturalista.",
       "tempoEstimado": 45,
       "tags": [
         "interpretacao",
@@ -2605,18 +2606,18 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa que NÃO corresponde ao Modernismo",
+      "enunciado": "Assinale a alternativa que NAO corresponde ao Modernismo",
       "opcoes": [
-        "Ruptura estática",
+        "Ruptura estatica",
         "Liberdade de linguagem",
-        "Inovação",
+        "Inovacao",
         "Rigidez formal absoluta"
       ],
       "correta": "Rigidez formal absoluta",
@@ -2627,7 +2628,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "modernismo"
       ],
       "habilidades": [
-        "identificar-características-do-modernismo"
+        "identificar-caracteristicas-do-modernismo"
       ],
       "collections": [
         "questions"
@@ -2643,22 +2644,22 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Equivalência de formas",
+      "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Dizer que o Naturalismo é cientificista equivale a afirmar que ele",
+      "enunciado": "Dizer que o Naturalismo e cientificista equivale a afirmar que ele",
       "opcoes": [
-        "explica a realidade com base científica",
+        "explica a realidade com base cientifica",
         "valoriza o misticismo",
         "prioriza a subjetividade",
         "idealiza o comportamento humano"
       ],
-      "correta": "explica a realidade com base científica",
-      "comentario": "O cientificismo naturalista busca explicações baseadas na ciência.",
+      "correta": "explica a realidade com base cientifica",
+      "comentario": "O cientificismo naturalista busca explicacoes baseadas na ciencia.",
       "tempoEstimado": 40,
       "tags": [
         "equivalencia",
@@ -2681,14 +2682,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Realismo - características",
+      "subtopico": "Realismo - caracteristicas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A objetividade e a crítica social são elementos centrais do",
+      "enunciado": "A objetividade e a critica social sao elementos centrais do",
       "opcoes": [
         "Simbolismo",
         "Realismo",
@@ -2696,14 +2697,14 @@ export const literaturaRealismoNaturalismoModernismo = {
         "Romantismo"
       ],
       "correta": "Realismo",
-      "comentario": "Essas características definem a estática realista.",
+      "comentario": "Essas caracteristicas definem a estatica realista.",
       "tempoEstimado": 40,
       "tags": [
         "realismo",
-        "características"
+        "caracteristicas"
       ],
       "habilidades": [
-        "identificar-características-do-realismo"
+        "identificar-caracteristicas-do-realismo"
       ],
       "collections": [
         "questions"
@@ -2719,14 +2720,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Naturalismo - características",
+      "subtopico": "Naturalismo - caracteristicas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A presença de linguagem direta e descritiva no Naturalismo tem como função",
+      "enunciado": "A presenca de linguagem direta e descritiva no Naturalismo tem como funcao",
       "opcoes": [
         "embelezar a narrativa",
         "ocultar a realidade",
@@ -2741,7 +2742,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "linguagem"
       ],
       "habilidades": [
-        "identificar-características-do-naturalismo"
+        "identificar-caracteristicas-do-naturalismo"
       ],
       "collections": [
         "questions"
@@ -2757,22 +2758,22 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Naturalismo - autores e obras",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "O romance \"O Cortiço\" destaca-se por retratar",
+      "enunciado": "O romance \"O Cortico\" destaca-se por retratar",
       "opcoes": [
-        "heróis idealizados",
-        "cenários medievais",
-        "elementos fantásticos",
+        "herois idealizados",
+        "cenarios medievais",
+        "elementos fantasticos",
         "ambientes urbanos degradados"
       ],
       "correta": "ambientes urbanos degradados",
-      "comentario": "A obra de Aluísio Azevedo retrata a vida em cortiços, enfatizando o meio social.",
+      "comentario": "A obra de Aluisio Azevedo retrata a vida em corticos, enfatizando o meio social.",
       "tempoEstimado": 40,
       "tags": [
         "naturalismo",
@@ -2795,29 +2796,29 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Modernismo - linguagem e ruptura",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A experimentação linguística no Modernismo indica",
+      "enunciado": "A experimentacao linguastica no Modernismo indica",
       "opcoes": [
-        "ruptura com padrões tradicionais",
+        "ruptura com padroes tradicionais",
         "rigidez formal",
         "retorno ao classicismo",
-        "valorização do formalismo"
+        "valorizacao do formalismo"
       ],
-      "correta": "ruptura com padrões tradicionais",
-      "comentario": "O Modernismo rompe com normas rígidas e propõe novas formas de expressão.",
+      "correta": "ruptura com padroes tradicionais",
+      "comentario": "O Modernismo rompe com normas rigidas e propoe novas formas de expressao.",
       "tempoEstimado": 45,
       "tags": [
         "modernismo",
         "linguagem"
       ],
       "habilidades": [
-        "identificar-características-do-modernismo"
+        "identificar-caracteristicas-do-modernismo"
       ],
       "collections": [
         "questions"
@@ -2833,18 +2834,18 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Modernismo - primeira fase",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A crítica aos padrões europeus na primeira fase modernista evidencia",
+      "enunciado": "A critica aos padroes europeus na primeira fase modernista evidencia",
       "opcoes": [
-        "dependência cultural",
+        "dependencia cultural",
         "busca por identidade nacional",
-        "valorização do passado clássico",
+        "valorizacao do passado classico",
         "retorno ao simbolismo"
       ],
       "correta": "busca por identidade nacional",
@@ -2871,19 +2872,19 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Modernismo - segunda fase",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A consolidação da prosa regionalista ocorre principalmente na",
+      "enunciado": "A consolidacao da prosa regionalista ocorre principalmente na",
       "opcoes": [
         "primeira fase modernista",
         "terceira fase modernista",
         "segunda fase modernista",
-        "fase romântica"
+        "fase romantica"
       ],
       "correta": "segunda fase modernista",
       "comentario": "A segunda fase valoriza a literatura regionalista e social.",
@@ -2893,7 +2894,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "regionalismo"
       ],
       "habilidades": [
-        "identificar-características-do-modernismo"
+        "identificar-caracteristicas-do-modernismo"
       ],
       "collections": [
         "questions"
@@ -2909,9 +2910,9 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Comparação entre escolas literárias",
+      "subtopico": "Comparacao entre escolas literarias",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
@@ -2921,10 +2922,10 @@ export const literaturaRealismoNaturalismoModernismo = {
         "valorizar o cientificismo",
         "explicar o comportamento biologicamente",
         "focar no determinismo",
-        "buscar liberdade estática"
+        "buscar liberdade estatica"
       ],
-      "correta": "buscar liberdade estática",
-      "comentario": "O Modernismo prioriza a liberdade criativa, ao contrário do Naturalismo científico.",
+      "correta": "buscar liberdade estatica",
+      "comentario": "O Modernismo prioriza a liberdade criativa, ao contrario do Naturalismo cientifico.",
       "tempoEstimado": 45,
       "tags": [
         "comparacao",
@@ -2947,14 +2948,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Análise de fragmento literário",
+      "subtopico": "Analise de fragmento literario",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um texto que apresenta linguagem simples e crítica social pode ser associado ao",
+      "enunciado": "Um texto que apresenta linguagem simples e critica social pode ser associado ao",
       "opcoes": [
         "Modernismo",
         "Simbolismo",
@@ -2962,7 +2963,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "Parnasianismo"
       ],
       "correta": "Modernismo",
-      "comentario": "A linguagem simples e crítica social são características do Modernismo.",
+      "comentario": "A linguagem simples e critica social sao caracteristicas do Modernismo.",
       "tempoEstimado": 45,
       "tags": [
         "analise",
@@ -2985,14 +2986,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Interpretação indireta",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao sugerir que o homem é produto do meio, o texto indica influência do",
+      "enunciado": "Ao sugerir que o homem e produto do meio, o texto indica influencia do",
       "opcoes": [
         "Romantismo",
         "Naturalismo",
@@ -3000,7 +3001,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "Arcadismo"
       ],
       "correta": "Naturalismo",
-      "comentario": "A ideia de que o homem é produto do meio é central no Naturalismo.",
+      "comentario": "A ideia de que o homem e produto do meio e central no Naturalismo.",
       "tempoEstimado": 45,
       "tags": [
         "interpretacao",
@@ -3023,29 +3024,29 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa que NÃO corresponde ao Realismo",
+      "enunciado": "Assinale a alternativa que NAO corresponde ao Realismo",
       "opcoes": [
-        "Análise psicológica",
-        "Crítica social",
-        "Idealização exagerada",
+        "Analise psicologica",
+        "Cretica social",
+        "Idealizacao exagerada",
         "Objetividade"
       ],
-      "correta": "Idealização exagerada",
-      "comentario": "A idealização é típica do Romantismo, não do Realismo.",
+      "correta": "Idealizacao exagerada",
+      "comentario": "A idealizacao e tepica do Romantismo, nao do Realismo.",
       "tempoEstimado": 45,
       "tags": [
         "pegadinha",
         "realismo"
       ],
       "habilidades": [
-        "identificar-características-do-realismo"
+        "identificar-caracteristicas-do-realismo"
       ],
       "collections": [
         "questions"
@@ -3061,22 +3062,22 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Equivalência de formas",
+      "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Afirmar que o Modernismo valoriza a inovação equivale a dizer que ele",
+      "enunciado": "Afirmar que o Modernismo valoriza a inovacao equivale a dizer que ele",
       "opcoes": [
-        "mantém tradições rígidas",
-        "valoriza o passado clássico",
-        "evita mudanças",
-        "rompe com padrões estabelecidos"
+        "mantem tradicoes rigidas",
+        "valoriza o passado classico",
+        "evita mudancas",
+        "rompe com padroes estabelecidos"
       ],
-      "correta": "rompe com padrões estabelecidos",
-      "comentario": "A inovação modernista implica ruptura com modelos anteriores.",
+      "correta": "rompe com padroes estabelecidos",
+      "comentario": "A inovacao modernista implica ruptura com modelos anteriores.",
       "tempoEstimado": 40,
       "tags": [
         "equivalencia",
@@ -3099,22 +3100,22 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Realismo - contexto histórico",
+      "subtopico": "Realismo - contexto historico",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "O Realismo se consolida em um período marcado pela ascensão",
+      "enunciado": "O Realismo se consolida em um periodo marcado pela ascensao",
       "opcoes": [
         "da burguesia",
         "do feudalismo",
         "da nobreza medieval",
-        "da cultura mística"
+        "da cultura mastica"
       ],
       "correta": "da burguesia",
-      "comentario": "O Realismo está ligado ao crescimento da burguesia e às transformações sociais do século XIX.",
+      "comentario": "O Realismo esta ligado ao crescimento da burguesia e as transformacoes sociais do soculo XIX.",
       "tempoEstimado": 40,
       "tags": [
         "realismo",
@@ -3137,9 +3138,9 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Realismo - características",
+      "subtopico": "Realismo - caracteristicas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
@@ -3149,17 +3150,17 @@ export const literaturaRealismoNaturalismoModernismo = {
         "idealizar personagens",
         "manter objetividade narrativa",
         "valorizar o sentimentalismo",
-        "criar efeitos místicos"
+        "criar efeitos masticos"
       ],
       "correta": "manter objetividade narrativa",
-      "comentario": "O narrador realista evita envolvimento emocional para garantir análise crítica.",
+      "comentario": "O narrador realista evita envolvimento emocional para garantir analise critica.",
       "tempoEstimado": 40,
       "tags": [
         "realismo",
         "narrador"
       ],
       "habilidades": [
-        "identificar-características-do-realismo"
+        "identificar-caracteristicas-do-realismo"
       ],
       "collections": [
         "questions"
@@ -3175,9 +3176,9 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Naturalismo - características",
+      "subtopico": "Naturalismo - caracteristicas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
@@ -3185,19 +3186,19 @@ export const literaturaRealismoNaturalismoModernismo = {
       "enunciado": "A objetividade no Naturalismo se intensifica por meio da",
       "opcoes": [
         "subjetividade extrema",
-        "idealização romântica",
-        "descrição científica",
-        "linguagem simbólica"
+        "idealizacao romantica",
+        "descricao cientifica",
+        "linguagem simbolica"
       ],
-      "correta": "descrição científica",
-      "comentario": "O Naturalismo utiliza descrições detalhadas com base científica.",
+      "correta": "descricao cientifica",
+      "comentario": "O Naturalismo utiliza descrições detalhadas com base cientifica.",
       "tempoEstimado": 45,
       "tags": [
         "naturalismo",
         "cientificismo"
       ],
       "habilidades": [
-        "identificar-características-do-naturalismo"
+        "identificar-caracteristicas-do-naturalismo"
       ],
       "collections": [
         "questions"
@@ -3213,14 +3214,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Naturalismo - determinismo e cientificismo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A influência da hereditariedade no comportamento humano evidencia o",
+      "enunciado": "A influencia da hereditariedade no comportamento humano evidencia o",
       "opcoes": [
         "idealismo",
         "subjetivismo",
@@ -3228,7 +3229,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "determinismo"
       ],
       "correta": "determinismo",
-      "comentario": "A hereditariedade é um dos pilares do determinismo naturalista.",
+      "comentario": "A hereditariedade e um dos pilares do determinismo naturalista.",
       "tempoEstimado": 45,
       "tags": [
         "naturalismo",
@@ -3251,7 +3252,7 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Modernismo - linguagem e ruptura",
       "dificuldadeLabel": "medio",
@@ -3261,19 +3262,19 @@ export const literaturaRealismoNaturalismoModernismo = {
       "enunciado": "A quebra de normas no Modernismo reflete",
       "opcoes": [
         "liberdade criativa",
-        "rigidez estática",
+        "rigidez estatica",
         "retorno ao passado",
-        "formalismo clássico"
+        "formalismo classico"
       ],
       "correta": "liberdade criativa",
-      "comentario": "O Modernismo valoriza a liberdade e a experimentação artística.",
+      "comentario": "O Modernismo valoriza a liberdade e a experimentacao artistica.",
       "tempoEstimado": 40,
       "tags": [
         "modernismo",
         "ruptura"
       ],
       "habilidades": [
-        "identificar-características-do-modernismo"
+        "identificar-caracteristicas-do-modernismo"
       ],
       "collections": [
         "questions"
@@ -3289,22 +3290,22 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Modernismo - primeira fase",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A valorização da cultura brasileira na primeira fase modernista evidencia",
+      "enunciado": "A valorizacao da cultura brasileira na primeira fase modernista evidencia",
       "opcoes": [
-        "dependência europeia",
+        "dependencia europeia",
         "busca por identidade nacional",
         "retorno ao medievalismo",
-        "formalismo clássico"
+        "formalismo classico"
       ],
       "correta": "busca por identidade nacional",
-      "comentario": "O Modernismo busca construir uma identidade cultural própria.",
+      "comentario": "O Modernismo busca construir uma identidade cultural propria.",
       "tempoEstimado": 40,
       "tags": [
         "modernismo",
@@ -3327,29 +3328,29 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Modernismo - segunda fase",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "O aprofundamento psicológico na segunda fase modernista ocorre juntamente com",
+      "enunciado": "O aprofundamento psicologico na segunda fase modernista ocorre juntamente com",
       "opcoes": [
         "abandono de temas sociais",
         "retorno ao simbolismo",
-        "exploração de questáes humanas",
+        "exploracao de questaes humanas",
         "uso exclusivo de linguagem formal"
       ],
-      "correta": "exploração de questáes humanas",
-      "comentario": "A segunda fase amplia a abordagem temática e psicológica.",
+      "correta": "exploracao de questaes humanas",
+      "comentario": "A segunda fase amplia a abordagem tematica e psicologica.",
       "tempoEstimado": 45,
       "tags": [
         "modernismo",
         "segunda-fase"
       ],
       "habilidades": [
-        "identificar-características-do-modernismo"
+        "identificar-caracteristicas-do-modernismo"
       ],
       "collections": [
         "questions"
@@ -3365,22 +3366,22 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Comparação entre escolas literárias",
+      "subtopico": "Comparacao entre escolas literarias",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "O Realismo difere do Modernismo por não apresentar",
+      "enunciado": "O Realismo difere do Modernismo por nao apresentar",
       "opcoes": [
-        "crítica social",
-        "análise psicológica",
-        "observação da realidade",
+        "critica social",
+        "analise psicologica",
+        "observacao da realidade",
         "ruptura radical"
       ],
       "correta": "ruptura radical",
-      "comentario": "A ruptura estática radical é característica do Modernismo.",
+      "comentario": "A ruptura estetica radical e caracteristica do Modernismo.",
       "tempoEstimado": 45,
       "tags": [
         "comparacao",
@@ -3403,14 +3404,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Interpretação indireta",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao sugerir que o comportamento humano é resultado de fatores externos, o texto remete ao",
+      "enunciado": "Ao sugerir que o comportamento humano e resultado de fatores externos, o texto remete ao",
       "opcoes": [
         "Naturalismo",
         "Romantismo",
@@ -3441,7 +3442,7 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "medio",
@@ -3451,19 +3452,19 @@ export const literaturaRealismoNaturalismoModernismo = {
       "enunciado": "Assinale a alternativa correta sobre o Modernismo",
       "opcoes": [
         "Defende rigidez formal",
-        "Valoriza a experimentação",
-        "Evita inovação",
+        "Valoriza a experimentacao",
+        "Evita inovacao",
         "Retoma o classicismo"
       ],
-      "correta": "Valoriza a experimentação",
-      "comentario": "A experimentação é uma das principais características do Modernismo.",
+      "correta": "Valoriza a experimentacao",
+      "comentario": "A experimentacao e uma das principais caracteristicas do Modernismo.",
       "tempoEstimado": 45,
       "tags": [
         "pegadinha",
         "modernismo"
       ],
       "habilidades": [
-        "identificar-características-do-modernismo"
+        "identificar-caracteristicas-do-modernismo"
       ],
       "collections": [
         "questions"
@@ -3479,9 +3480,9 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Equivalência de formas",
+      "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "comparacao",
@@ -3491,10 +3492,10 @@ export const literaturaRealismoNaturalismoModernismo = {
         "idealiza comportamentos",
         "valoriza o misticismo",
         "observa e questiona a realidade social",
-        "prioriza o fantástico"
+        "prioriza o fantastico"
       ],
       "correta": "observa e questiona a realidade social",
-      "comentario": "O Realismo se caracteriza pela observação crítica da sociedade.",
+      "comentario": "O Realismo se caracteriza pela observacao critica da sociedade.",
       "tempoEstimado": 40,
       "tags": [
         "equivalencia",
@@ -3517,22 +3518,22 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Realismo - linguagem e estilo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A linguagem irônica no Realismo contribui para",
+      "enunciado": "A linguagem irunica no Realismo contribui para",
       "opcoes": [
-        "reforçar o sentimentalismo",
+        "reforcar o sentimentalismo",
         "idealizar personagens",
-        "criar atmosfera fantástica",
+        "criar atmosfera fantastica",
         "criticar comportamentos sociais"
       ],
       "correta": "criticar comportamentos sociais",
-      "comentario": "A ironia é utilizada como recurso de crítica social no Realismo.",
+      "comentario": "A ironia e utilizada como recurso de critica social no Realismo.",
       "tempoEstimado": 40,
       "tags": [
         "realismo",
@@ -3555,22 +3556,22 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Naturalismo - contexto histórico",
+      "subtopico": "Naturalismo - contexto historico",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "O Naturalismo se desenvolve sob forte influência de teorias",
+      "enunciado": "O Naturalismo se desenvolve sob forte influencia de teorias",
       "opcoes": [
-        "científicas",
+        "cientificas",
         "religiosas",
-        "mitológicas",
-        "românticas"
+        "mitologicas",
+        "romanticas"
       ],
-      "correta": "científicas",
-      "comentario": "O Naturalismo baseia-se em teorias científicas como o determinismo.",
+      "correta": "cientificas",
+      "comentario": "O Naturalismo baseia-se em teorias cientificas como o determinismo.",
       "tempoEstimado": 40,
       "tags": [
         "naturalismo",
@@ -3593,29 +3594,29 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Naturalismo - características",
+      "subtopico": "Naturalismo - caracteristicas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A animalização das personagens no Naturalismo indica",
+      "enunciado": "A animalizacao das personagens no Naturalismo indica",
       "opcoes": [
-        "idealização",
+        "idealizacao",
         "instinto e determinismo",
         "espiritualidade",
         "subjetivismo"
       ],
       "correta": "instinto e determinismo",
-      "comentario": "A animalização reflete a visão de que o homem é guiado por instintos.",
+      "comentario": "A animalizacao reflete a visao de que o homem e guiado por instintos.",
       "tempoEstimado": 45,
       "tags": [
         "naturalismo",
         "determinismo"
       ],
       "habilidades": [
-        "identificar-características-do-naturalismo"
+        "identificar-caracteristicas-do-naturalismo"
       ],
       "collections": [
         "questions"
@@ -3631,7 +3632,7 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Modernismo - linguagem e ruptura",
       "dificuldadeLabel": "medio",
@@ -3640,20 +3641,20 @@ export const literaturaRealismoNaturalismoModernismo = {
       "tipo": "multipla_escolha",
       "enunciado": "A liberdade formal no Modernismo permite",
       "opcoes": [
-        "rigidez estática",
-        "retorno ao clássico",
-        "experimentação artística",
+        "rigidez estatica",
+        "retorno ao classico",
+        "experimentacao artistica",
         "uso exclusivo da norma culta"
       ],
-      "correta": "experimentação artística",
-      "comentario": "O Modernismo valoriza a experimentação e a inovação estática.",
+      "correta": "experimentacao artistica",
+      "comentario": "O Modernismo valoriza a experimentacao e a inovacao estatica.",
       "tempoEstimado": 40,
       "tags": [
         "modernismo",
         "ruptura"
       ],
       "habilidades": [
-        "identificar-características-do-modernismo"
+        "identificar-caracteristicas-do-modernismo"
       ],
       "collections": [
         "questions"
@@ -3669,22 +3670,22 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Modernismo - primeira fase",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A crítica é cultura europeia na primeira fase modernista revela",
+      "enunciado": "A critica e cultura europeia na primeira fase modernista revela",
       "opcoes": [
-        "dependência cultural",
+        "dependencia cultural",
         "retorno ao medievalismo",
-        "valorização do simbolismo",
+        "valorizacao do simbolismo",
         "busca por autonomia cultural"
       ],
       "correta": "busca por autonomia cultural",
-      "comentario": "Os modernistas buscavam afirmar uma identidade cultural própria.",
+      "comentario": "Os modernistas buscavam afirmar uma identidade cultural propria.",
       "tempoEstimado": 40,
       "tags": [
         "modernismo",
@@ -3707,29 +3708,29 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Modernismo - segunda fase",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A ampliação temática na segunda fase modernista inclui",
+      "enunciado": "A ampliacao tematica na segunda fase modernista inclui",
       "opcoes": [
-        "questáes sociais e humanas",
+        "questaes sociais e humanas",
         "temas exclusivamente fantasiosos",
         "valores medievais",
-        "idealização romântica"
+        "idealizacao romantica"
       ],
-      "correta": "questáes sociais e humanas",
-      "comentario": "A segunda fase amplia a abordagem temática com foco social e humano.",
+      "correta": "questaes sociais e humanas",
+      "comentario": "A segunda fase amplia a abordagem tematica com foco social e humano.",
       "tempoEstimado": 45,
       "tags": [
         "modernismo",
         "temas"
       ],
       "habilidades": [
-        "identificar-características-do-modernismo"
+        "identificar-caracteristicas-do-modernismo"
       ],
       "collections": [
         "questions"
@@ -3745,22 +3746,22 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Comparação entre escolas literárias",
+      "subtopico": "Comparacao entre escolas literarias",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
       "enunciado": "O Naturalismo difere do Modernismo por",
       "opcoes": [
-        "valorizar a experimentação",
-        "utilizar explicações científicas",
-        "romper com padrões",
+        "valorizar a experimentacao",
+        "utilizar explicacoes cientificas",
+        "romper com padroes",
         "priorizar a linguagem coloquial"
       ],
-      "correta": "utilizar explicações científicas",
-      "comentario": "O Naturalismo baseia-se em explicações científicas, ao contrário do Modernismo.",
+      "correta": "utilizar explicacoes cientificas",
+      "comentario": "O Naturalismo baseia-se em explicacoes cientificas, ao contrario do Modernismo.",
       "tempoEstimado": 45,
       "tags": [
         "comparacao",
@@ -3783,14 +3784,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Interpretação indireta",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao sugerir crítica social e análise psicológica, o texto aproxima-se do",
+      "enunciado": "Ao sugerir critica social e analise psicologica, o texto aproxima-se do",
       "opcoes": [
         "Simbolismo",
         "Arcadismo",
@@ -3798,7 +3799,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "Parnasianismo"
       ],
       "correta": "Realismo",
-      "comentario": "Essas características são típicas da literatura realista.",
+      "comentario": "Essas caracteristicas sao tepicas da literatura realista.",
       "tempoEstimado": 45,
       "tags": [
         "interpretacao",
@@ -3821,29 +3822,29 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa que NÃO corresponde ao Naturalismo",
+      "enunciado": "Assinale a alternativa que NAO corresponde ao Naturalismo",
       "opcoes": [
         "Determinismo",
         "Cientificismo",
-        "Descrição detalhada do meio",
-        "Idealização romântica"
+        "Descricao detalhada do meio",
+        "Idealizacao romantica"
       ],
-      "correta": "Idealização romântica",
-      "comentario": "A idealização romântica é característica do Romantismo, não do Naturalismo.",
+      "correta": "Idealizacao romantica",
+      "comentario": "A idealizacao romantica e caracteristica do Romantismo, nao do Naturalismo.",
       "tempoEstimado": 45,
       "tags": [
         "pegadinha",
         "naturalismo"
       ],
       "habilidades": [
-        "identificar-características-do-naturalismo"
+        "identificar-caracteristicas-do-naturalismo"
       ],
       "collections": [
         "questions"
@@ -3859,9 +3860,9 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Análise de fragmento literário",
+      "subtopico": "Analise de fragmento literario",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
@@ -3874,7 +3875,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "Parnasianismo"
       ],
       "correta": "Naturalismo",
-      "comentario": "A descrição detalhada do meio e sua influência sobre o indivíduo são características do Naturalismo.",
+      "comentario": "A descricao detalhada do meio e sua influencia sobre o individuo sao caracteristicas do Naturalismo.",
       "tempoEstimado": 45,
       "tags": [
         "analise",
@@ -3897,14 +3898,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Interpretação indireta",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao criticar costumes sociais com ironia e distanciamento, o texto sugere características do",
+      "enunciado": "Ao criticar costumes sociais com ironia e distanciamento, o texto sugere caracteristicas do",
       "opcoes": [
         "Simbolismo",
         "Realismo",
@@ -3912,7 +3913,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "Romantismo"
       ],
       "correta": "Realismo",
-      "comentario": "A crítica social com ironia é uma marca do Realismo.",
+      "comentario": "A critica social com ironia e uma marca do Realismo.",
       "tempoEstimado": 45,
       "tags": [
         "interpretacao",
@@ -3935,22 +3936,22 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Comparação entre escolas literárias",
+      "subtopico": "Comparacao entre escolas literarias",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
       "enunciado": "O Modernismo diferencia-se do Realismo por apresentar",
       "opcoes": [
-        "análise psicológica",
-        "crítica social",
-        "ruptura estática",
-        "observação da realidade"
+        "analise psicologica",
+        "critica social",
+        "ruptura estetica",
+        "observacao da realidade"
       ],
-      "correta": "ruptura estática",
-      "comentario": "A ruptura estática é característica central do Modernismo.",
+      "correta": "ruptura estetica",
+      "comentario": "A ruptura estetica e caracteristica central do Modernismo.",
       "tempoEstimado": 45,
       "tags": [
         "comparacao",
@@ -3973,9 +3974,9 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Equivalência de formas",
+      "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "comparacao",
@@ -3984,11 +3985,11 @@ export const literaturaRealismoNaturalismoModernismo = {
       "opcoes": [
         "valoriza o subjetivismo",
         "idealiza personagens",
-        "explora o fantástico",
+        "explora o fantastico",
         "considera o ambiente determinante"
       ],
       "correta": "considera o ambiente determinante",
-      "comentario": "O Naturalismo vê o meio como fator determinante do comportamento humano.",
+      "comentario": "O Naturalismo ve o meio como fator determinante do comportamento humano.",
       "tempoEstimado": 40,
       "tags": [
         "equivalencia",
@@ -4011,7 +4012,7 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "medio",
@@ -4020,20 +4021,20 @@ export const literaturaRealismoNaturalismoModernismo = {
       "tipo": "multipla_escolha",
       "enunciado": "Assinale a alternativa que corresponde ao Modernismo",
       "opcoes": [
-        "Liberdade estática",
+        "Liberdade estatica",
         "Rigidez formal",
-        "Idealização romântica",
-        "Valorização do misticismo"
+        "Idealizacao romantica",
+        "Valorizacao do misticismo"
       ],
-      "correta": "Liberdade estática",
-      "comentario": "O Modernismo valoriza a liberdade estática e a inovação.",
+      "correta": "Liberdade estatica",
+      "comentario": "O Modernismo valoriza a liberdade estatica e a inovacao.",
       "tempoEstimado": 45,
       "tags": [
         "pegadinha",
         "modernismo"
       ],
       "habilidades": [
-        "identificar-características-do-modernismo"
+        "identificar-caracteristicas-do-modernismo"
       ],
       "collections": [
         "questions"
@@ -4049,7 +4050,7 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Realismo - linguagem e estilo",
       "dificuldadeLabel": "medio",
@@ -4058,13 +4059,13 @@ export const literaturaRealismoNaturalismoModernismo = {
       "tipo": "multipla_escolha",
       "enunciado": "A linguagem direta no Realismo contribui para",
       "opcoes": [
-        "reforçar o sentimentalismo",
+        "reforcar o sentimentalismo",
         "representar a realidade com clareza",
-        "criar efeitos fantásticos",
+        "criar efeitos fantasticos",
         "valorizar o simbolismo"
       ],
       "correta": "representar a realidade com clareza",
-      "comentario": "A objetividade é fundamental na linguagem realista.",
+      "comentario": "A objetividade e fundamental na linguagem realista.",
       "tempoEstimado": 40,
       "tags": [
         "realismo",
@@ -4087,14 +4088,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Naturalismo - características",
+      "subtopico": "Naturalismo - caracteristicas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A associação entre comportamento humano e instinto caracteriza o",
+      "enunciado": "A associacao entre comportamento humano e instinto caracteriza o",
       "opcoes": [
         "Realismo",
         "Modernismo",
@@ -4109,7 +4110,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "instinto"
       ],
       "habilidades": [
-        "identificar-características-do-naturalismo"
+        "identificar-caracteristicas-do-naturalismo"
       ],
       "collections": [
         "questions"
@@ -4125,29 +4126,29 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Modernismo - linguagem e ruptura",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A quebra de padrões linguísticos no Modernismo revela",
+      "enunciado": "A quebra de padroes linguasticos no Modernismo revela",
       "opcoes": [
         "rigidez formal",
-        "retorno ao clássico",
-        "idealização romântica",
-        "liberdade de expressão"
+        "retorno ao classico",
+        "idealizacao romantica",
+        "liberdade de expressao"
       ],
-      "correta": "liberdade de expressão",
-      "comentario": "O Modernismo rompe com normas para ampliar a expressão artística.",
+      "correta": "liberdade de expressao",
+      "comentario": "O Modernismo rompe com normas para ampliar a expressao artistica.",
       "tempoEstimado": 40,
       "tags": [
         "modernismo",
         "ruptura"
       ],
       "habilidades": [
-        "identificar-características-do-modernismo"
+        "identificar-caracteristicas-do-modernismo"
       ],
       "collections": [
         "questions"
@@ -4163,22 +4164,22 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Comparação entre escolas literárias",
+      "subtopico": "Comparacao entre escolas literarias",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
       "enunciado": "O Naturalismo diferencia-se do Realismo por enfatizar",
       "opcoes": [
-        "o determinismo biológico",
-        "a análise psicológica",
-        "a crítica social",
+        "o determinismo biologico",
+        "a analise psicologica",
+        "a critica social",
         "a objetividade narrativa"
       ],
-      "correta": "o determinismo biológico",
-      "comentario": "O Naturalismo intensifica a visão determinista baseada em fatores biológicos.",
+      "correta": "o determinismo biologico",
+      "comentario": "O Naturalismo intensifica a visao determinista baseada em fatores biologicos.",
       "tempoEstimado": 45,
       "tags": [
         "comparacao",
@@ -4201,14 +4202,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Interpretação indireta",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um texto que rompe com normas e valoriza inovação indica influência do",
+      "enunciado": "Um texto que rompe com normas e valoriza inovacao indica influencia do",
       "opcoes": [
         "Realismo",
         "Modernismo",
@@ -4216,7 +4217,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "Arcadismo"
       ],
       "correta": "Modernismo",
-      "comentario": "A inovação e ruptura são marcas do Modernismo.",
+      "comentario": "A inovacao e ruptura sao marcas do Modernismo.",
       "tempoEstimado": 45,
       "tags": [
         "interpretacao",
@@ -4239,29 +4240,29 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa que NÃO corresponde ao Realismo",
+      "enunciado": "Assinale a alternativa que NAO corresponde ao Realismo",
       "opcoes": [
         "Objetividade",
-        "Crítica social",
-        "Idealização sentimental",
-        "Análise psicológica"
+        "Cretica social",
+        "Idealizacao sentimental",
+        "Analise psicologica"
       ],
-      "correta": "Idealização sentimental",
-      "comentario": "A idealização sentimental é característica do Romantismo, não do Realismo.",
+      "correta": "Idealizacao sentimental",
+      "comentario": "A idealizacao sentimental e caracteristica do Romantismo, nao do Realismo.",
       "tempoEstimado": 45,
       "tags": [
         "pegadinha",
         "realismo"
       ],
       "habilidades": [
-        "identificar-características-do-realismo"
+        "identificar-caracteristicas-do-realismo"
       ],
       "collections": [
         "questions"
@@ -4277,22 +4278,22 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Equivalência de formas",
+      "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Afirmar que o Naturalismo é determinista equivale a dizer que ele",
+      "enunciado": "Afirmar que o Naturalismo e determinista equivale a dizer que ele",
       "opcoes": [
         "valoriza o acaso",
-        "prioriza a imaginação",
+        "prioriza a imaginacao",
         "idealiza personagens",
         "explica o comportamento por fatores externos"
       ],
       "correta": "explica o comportamento por fatores externos",
-      "comentario": "O determinismo naturalista explica o comportamento humano com base em fatores externos e biológicos.",
+      "comentario": "O determinismo naturalista explica o comportamento humano com base em fatores externos e biologicos.",
       "tempoEstimado": 40,
       "tags": [
         "equivalencia",
@@ -4315,7 +4316,7 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Realismo - autores e obras",
       "dificuldadeLabel": "medio",
@@ -4324,13 +4325,13 @@ export const literaturaRealismoNaturalismoModernismo = {
       "tipo": "multipla_escolha",
       "enunciado": "Machado de Assis utiliza frequentemente narradores que",
       "opcoes": [
-        "questionam a própria narrativa",
+        "questionam a propria narrativa",
         "idealizam a realidade",
-        "seguem padrões clássicos",
+        "seguem padroes classicos",
         "evitam ironia"
       ],
-      "correta": "questionam a própria narrativa",
-      "comentario": "A metalinguagem e a ironia são recursos comuns em Machado de Assis.",
+      "correta": "questionam a propria narrativa",
+      "comentario": "A metalinguagem e a ironia sao recursos comuns em Machado de Assis.",
       "tempoEstimado": 40,
       "tags": [
         "realismo",
@@ -4353,22 +4354,22 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Naturalismo - autores e obras",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em \"O Cortiço\", o coletivo tem mais destaque do que o indivíduo, o que reforça",
+      "enunciado": "Em \"O Cortico\", o coletivo tem mais destaque do que o individuo, o que reforca",
       "opcoes": [
-        "a idealização romântica",
-        "a visão determinista do meio",
+        "a idealizacao romantica",
+        "a visao determinista do meio",
         "o simbolismo espiritual",
         "a linguagem subjetiva"
       ],
-      "correta": "a visão determinista do meio",
-      "comentario": "O foco no coletivo evidencia a influência do meio sobre os indivíduos.",
+      "correta": "a visao determinista do meio",
+      "comentario": "O foco no coletivo evidencia a influencia do meio sobre os individuos.",
       "tempoEstimado": 40,
       "tags": [
         "naturalismo",
@@ -4391,29 +4392,29 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Modernismo - linguagem e ruptura",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A fragmentação textual no Modernismo indica",
+      "enunciado": "A fragmentacao textual no Modernismo indica",
       "opcoes": [
-        "organização clássica",
+        "organizacao classica",
         "rigidez formal",
         "liberdade estrutural",
-        "padronização narrativa"
+        "padronizacao narrativa"
       ],
       "correta": "liberdade estrutural",
-      "comentario": "A fragmentação rompe com estruturas tradicionais e amplia a expressividade.",
+      "comentario": "A fragmentacao rompe com estruturas tradicionais e amplia a expressividade.",
       "tempoEstimado": 40,
       "tags": [
         "modernismo",
         "estrutura"
       ],
       "habilidades": [
-        "identificar-características-do-modernismo"
+        "identificar-caracteristicas-do-modernismo"
       ],
       "collections": [
         "questions"
@@ -4429,21 +4430,21 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Modernismo - primeira fase",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A valorização do cotidiano na primeira fase modernista representa",
+      "enunciado": "A valorizacao do cotidiano na primeira fase modernista representa",
       "opcoes": [
-        "rejeição da realidade",
+        "rejeicao da realidade",
         "retorno ao simbolismo",
-        "idealização estática",
-        "aproximação com a vida comum"
+        "idealizacao estatica",
+        "aproximacao com a vida comum"
       ],
-      "correta": "aproximação com a vida comum",
+      "correta": "aproximacao com a vida comum",
       "comentario": "O Modernismo aproxima a literatura do cotidiano e da realidade brasileira.",
       "tempoEstimado": 40,
       "tags": [
@@ -4451,7 +4452,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "cotidiano"
       ],
       "habilidades": [
-        "identificar-características-do-modernismo"
+        "identificar-caracteristicas-do-modernismo"
       ],
       "collections": [
         "questions"
@@ -4467,7 +4468,7 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Modernismo - segunda fase",
       "dificuldadeLabel": "medio",
@@ -4476,12 +4477,12 @@ export const literaturaRealismoNaturalismoModernismo = {
       "tipo": "multipla_escolha",
       "enunciado": "A literatura da segunda fase modernista frequentemente aborda",
       "opcoes": [
-        "questáes sociais profundas",
+        "questaes sociais profundas",
         "temas fantasiosos",
-        "valores clássicos",
+        "valores classicos",
         "mitologia grega"
       ],
-      "correta": "questáes sociais profundas",
+      "correta": "questaes sociais profundas",
       "comentario": "A segunda fase amplia a abordagem social e humana.",
       "tempoEstimado": 45,
       "tags": [
@@ -4489,7 +4490,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "temas-sociais"
       ],
       "habilidades": [
-        "identificar-características-do-modernismo"
+        "identificar-caracteristicas-do-modernismo"
       ],
       "collections": [
         "questions"
@@ -4505,29 +4506,29 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Modernismo - terceira fase",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A terceira fase modernista busca equilíbrio entre",
+      "enunciado": "A terceira fase modernista busca equilibrio entre",
       "opcoes": [
         "fantasia e realidade",
-        "forma e conteúdo",
-        "misticismo e ciência",
-        "tradição e medievalismo"
+        "forma e conteudo",
+        "misticismo e ciencia",
+        "tradicao e medievalismo"
       ],
-      "correta": "forma e conteúdo",
-      "comentario": "A Geração de 45 retoma o equilíbrio formal sem abandonar a modernidade.",
+      "correta": "forma e conteudo",
+      "comentario": "A Geracao de 45 retoma o equilibrio formal sem abandonar a modernidade.",
       "tempoEstimado": 45,
       "tags": [
         "modernismo",
         "geracao-45"
       ],
       "habilidades": [
-        "identificar-características-do-modernismo"
+        "identificar-caracteristicas-do-modernismo"
       ],
       "collections": [
         "questions"
@@ -4543,22 +4544,22 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Comparação entre escolas literárias",
+      "subtopico": "Comparacao entre escolas literarias",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
       "enunciado": "Enquanto o Naturalismo enfatiza o meio, o Modernismo enfatiza",
       "opcoes": [
-        "a tradição",
-        "o determinismo biológico",
-        "a inovação estática",
+        "a tradicao",
+        "o determinismo biologico",
+        "a inovacao estatica",
         "a rigidez formal"
       ],
-      "correta": "a inovação estática",
-      "comentario": "O Modernismo valoriza a inovação, ao contrário do Naturalismo científico.",
+      "correta": "a inovacao estatica",
+      "comentario": "O Modernismo valoriza a inovacao, ao contrario do Naturalismo cientifico.",
       "tempoEstimado": 45,
       "tags": [
         "comparacao",
@@ -4581,14 +4582,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Interpretação indireta",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um texto que rompe com padrões e valoriza experimentação indica influência do",
+      "enunciado": "Um texto que rompe com padroes e valoriza experimentacao indica influencia do",
       "opcoes": [
         "Realismo",
         "Naturalismo",
@@ -4596,7 +4597,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "Modernismo"
       ],
       "correta": "Modernismo",
-      "comentario": "A experimentação é característica marcante do Modernismo.",
+      "comentario": "A experimentacao e caracteristica marcante do Modernismo.",
       "tempoEstimado": 45,
       "tags": [
         "interpretacao",
@@ -4619,14 +4620,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Análise de fragmento literário",
+      "subtopico": "Analise de fragmento literario",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um texto que apresenta descrição objetiva da realidade e crítica social pode ser associado ao",
+      "enunciado": "Um texto que apresenta descricao objetiva da realidade e critica social pode ser associado ao",
       "opcoes": [
         "Realismo",
         "Simbolismo",
@@ -4634,7 +4635,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "Parnasianismo"
       ],
       "correta": "Realismo",
-      "comentario": "A objetividade e a crítica social são marcas do Realismo.",
+      "comentario": "A objetividade e a critica social sao marcas do Realismo.",
       "tempoEstimado": 45,
       "tags": [
         "analise",
@@ -4657,14 +4658,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Interpretação indireta",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao sugerir que o comportamento humano é guiado por instintos, o texto indica influência do",
+      "enunciado": "Ao sugerir que o comportamento humano e guiado por instintos, o texto indica influencia do",
       "opcoes": [
         "Romantismo",
         "Naturalismo",
@@ -4695,22 +4696,22 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Comparação entre escolas literárias",
+      "subtopico": "Comparacao entre escolas literarias",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
       "enunciado": "O Realismo e o Naturalismo se aproximam por apresentarem",
       "opcoes": [
-        "idealização romântica",
-        "linguagem simbólica",
-        "objetividade e crítica social",
-        "valorização do misticismo"
+        "idealizacao romantica",
+        "linguagem simbolica",
+        "objetividade e critica social",
+        "valorizacao do misticismo"
       ],
-      "correta": "objetividade e crítica social",
-      "comentario": "Ambos valorizam a observação da realidade e a crítica social.",
+      "correta": "objetividade e critica social",
+      "comentario": "Ambos valorizam a observacao da realidade e a critica social.",
       "tempoEstimado": 45,
       "tags": [
         "comparacao",
@@ -4734,22 +4735,22 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Equivalência de formas",
+      "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Dizer que o Modernismo rompe com padrões equivale a afirmar que ele",
+      "enunciado": "Dizer que o Modernismo rompe com padroes equivale a afirmar que ele",
       "opcoes": [
-        "segue tradições rígidas",
-        "valoriza o passado clássico",
-        "mantém regras fixas",
+        "segue tradicoes rigidas",
+        "valoriza o passado classico",
+        "mantem regras fixas",
         "inova e transforma formas"
       ],
       "correta": "inova e transforma formas",
-      "comentario": "O Modernismo se caracteriza pela inovação e ruptura com modelos anteriores.",
+      "comentario": "O Modernismo se caracteriza pela inovacao e ruptura com modelos anteriores.",
       "tempoEstimado": 40,
       "tags": [
         "equivalencia",
@@ -4772,7 +4773,7 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
@@ -4781,20 +4782,20 @@ export const literaturaRealismoNaturalismoModernismo = {
       "tipo": "multipla_escolha",
       "enunciado": "Assinale a alternativa correta sobre o Realismo",
       "opcoes": [
-        "Apresenta crítica social",
+        "Apresenta critica social",
         "Valoriza o sentimentalismo",
         "Explora o sobrenatural",
         "Idealiza personagens"
       ],
-      "correta": "Apresenta crítica social",
-      "comentario": "A crítica social é uma das principais características do Realismo.",
+      "correta": "Apresenta critica social",
+      "comentario": "A critica social e uma das principais caracteristicas do Realismo.",
       "tempoEstimado": 45,
       "tags": [
         "pegadinha",
         "realismo"
       ],
       "habilidades": [
-        "identificar-características-do-realismo"
+        "identificar-caracteristicas-do-realismo"
       ],
       "collections": [
         "questions"
@@ -4810,9 +4811,9 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Realismo - características",
+      "subtopico": "Realismo - caracteristicas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
@@ -4820,11 +4821,11 @@ export const literaturaRealismoNaturalismoModernismo = {
       "enunciado": "O foco na realidade objetiva no Realismo implica",
       "opcoes": [
         "uso de fantasia",
-        "análise crítica dos fatos",
-        "valorização do misticismo",
-        "idealização amorosa"
+        "analise critica dos fatos",
+        "valorizacao do misticismo",
+        "idealizacao amorosa"
       ],
-      "correta": "análise crítica dos fatos",
+      "correta": "analise critica dos fatos",
       "comentario": "O Realismo observa e analisa criticamente a realidade.",
       "tempoEstimado": 40,
       "tags": [
@@ -4832,7 +4833,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "objetividade"
       ],
       "habilidades": [
-        "identificar-características-do-realismo"
+        "identificar-caracteristicas-do-realismo"
       ],
       "collections": [
         "questions"
@@ -4848,29 +4849,29 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Naturalismo - características",
+      "subtopico": "Naturalismo - caracteristicas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A descrição minuciosa no Naturalismo serve para",
+      "enunciado": "A descricao minuciosa no Naturalismo serve para",
       "opcoes": [
         "embelezar o texto",
         "valorizar o subjetivismo",
-        "reforçar o determinismo",
+        "reforcar o determinismo",
         "criar fantasia"
       ],
-      "correta": "reforçar o determinismo",
-      "comentario": "A descrição detalhada evidencia a influência do meio sobre o indivíduo.",
+      "correta": "reforcar o determinismo",
+      "comentario": "A descricao detalhada evidencia a influencia do meio sobre o individuo.",
       "tempoEstimado": 45,
       "tags": [
         "naturalismo",
         "descricao"
       ],
       "habilidades": [
-        "identificar-características-do-naturalismo"
+        "identificar-caracteristicas-do-naturalismo"
       ],
       "collections": [
         "questions"
@@ -4886,29 +4887,29 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Modernismo - linguagem e ruptura",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A quebra de regras no Modernismo está associada à",
+      "enunciado": "A quebra de regras no Modernismo esta associada a",
       "opcoes": [
         "rigidez formal",
-        "tradição clássica",
-        "idealização romântica",
+        "tradicao classica",
+        "idealizacao romantica",
         "liberdade criativa"
       ],
       "correta": "liberdade criativa",
-      "comentario": "O Modernismo rompe com normas para ampliar a liberdade artística.",
+      "comentario": "O Modernismo rompe com normas para ampliar a liberdade artistica.",
       "tempoEstimado": 40,
       "tags": [
         "modernismo",
         "ruptura"
       ],
       "habilidades": [
-        "identificar-características-do-modernismo"
+        "identificar-caracteristicas-do-modernismo"
       ],
       "collections": [
         "questions"
@@ -4924,22 +4925,22 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Comparação entre escolas literárias",
+      "subtopico": "Comparacao entre escolas literarias",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
       "enunciado": "O Modernismo e o Realismo se diferenciam principalmente pela",
       "opcoes": [
-        "ruptura estática",
-        "crítica social",
-        "observação da realidade",
-        "análise psicológica"
+        "ruptura estetica",
+        "critica social",
+        "observacao da realidade",
+        "analise psicologica"
       ],
-      "correta": "ruptura estática",
-      "comentario": "A ruptura estática é característica marcante do Modernismo.",
+      "correta": "ruptura estetica",
+      "comentario": "A ruptura estetica e caracteristica marcante do Modernismo.",
       "tempoEstimado": 45,
       "tags": [
         "comparacao",
@@ -4962,14 +4963,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Interpretação indireta",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um texto que valoriza a inovação e rompe com padrões sugere influência do",
+      "enunciado": "Um texto que valoriza a inovacao e rompe com padroes sugere influencia do",
       "opcoes": [
         "Realismo",
         "Modernismo",
@@ -4977,7 +4978,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "Arcadismo"
       ],
       "correta": "Modernismo",
-      "comentario": "A inovação e ruptura são características centrais do Modernismo.",
+      "comentario": "A inovacao e ruptura sao caracteristicas centrais do Modernismo.",
       "tempoEstimado": 45,
       "tags": [
         "interpretacao",
@@ -5000,22 +5001,22 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Realismo - linguagem e estilo",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A presença de um narrador irônico e crítico no Realismo contribui para",
+      "enunciado": "A presenca de um narrador irunico e critico no Realismo contribui para",
       "opcoes": [
         "idealizar personagens",
         "valorizar o misticismo",
-        "aprofundar a crítica social",
-        "reforçar o sentimentalismo"
+        "aprofundar a critica social",
+        "reforcar o sentimentalismo"
       ],
-      "correta": "aprofundar a crítica social",
-      "comentario": "A ironia no Realismo serve para intensificar a crítica é sociedade.",
+      "correta": "aprofundar a critica social",
+      "comentario": "A ironia no Realismo serve para intensificar a critica a sociedade.",
       "tempoEstimado": 40,
       "tags": [
         "realismo",
@@ -5038,22 +5039,22 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Realismo - contexto histórico",
+      "subtopico": "Realismo - contexto historico",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "O Realismo surge em um momento histórico marcado pela",
+      "enunciado": "O Realismo surge em um momento historico marcado pela",
       "opcoes": [
-        "valorização da fantasia",
-        "predominância religiosa",
+        "valorizacao da fantasia",
+        "predominancia religiosa",
         "retomada medieval",
-        "consolidação da ciência"
+        "consolidacao da ciencia"
       ],
-      "correta": "consolidação da ciência",
-      "comentario": "O avanço científico influencia a visão objetiva do Realismo.",
+      "correta": "consolidacao da ciencia",
+      "comentario": "O avanao cientifico influencia a visao objetiva do Realismo.",
       "tempoEstimado": 40,
       "tags": [
         "realismo",
@@ -5076,14 +5077,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Naturalismo - determinismo e cientificismo",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A ideia de que o comportamento humano é previsível a partir de fatores externos está ligada ao",
+      "enunciado": "A ideia de que o comportamento humano e previsovel a partir de fatores externos esta ligada ao",
       "opcoes": [
         "determinismo",
         "idealismo",
@@ -5091,7 +5092,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "simbolismo"
       ],
       "correta": "determinismo",
-      "comentario": "O determinismo sustenta que o comportamento humano é condicionado por fatores externos.",
+      "comentario": "O determinismo sustenta que o comportamento humano e condicionado por fatores externos.",
       "tempoEstimado": 45,
       "tags": [
         "naturalismo",
@@ -5114,14 +5115,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Naturalismo - características",
+      "subtopico": "Naturalismo - caracteristicas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A redução do comportamento humano a impulsos biológicos é típica do",
+      "enunciado": "A reducao do comportamento humano a impulsos biologicos e tepica do",
       "opcoes": [
         "Realismo",
         "Naturalismo",
@@ -5136,7 +5137,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "instinto"
       ],
       "habilidades": [
-        "identificar-características-do-naturalismo"
+        "identificar-caracteristicas-do-naturalismo"
       ],
       "collections": [
         "questions"
@@ -5152,7 +5153,7 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Modernismo - linguagem e ruptura",
       "dificuldadeLabel": "dificil",
@@ -5161,20 +5162,20 @@ export const literaturaRealismoNaturalismoModernismo = {
       "tipo": "multipla_escolha",
       "enunciado": "A linguagem fragmentada no Modernismo revela",
       "opcoes": [
-        "organização clássica",
+        "organizacao classica",
         "retorno ao passado",
         "ruptura com linearidade",
         "rigidez formal"
       ],
       "correta": "ruptura com linearidade",
-      "comentario": "A fragmentação rompe com estruturas narrativas tradicionais.",
+      "comentario": "A fragmentacao rompe com estruturas narrativas tradicionais.",
       "tempoEstimado": 40,
       "tags": [
         "modernismo",
         "linguagem"
       ],
       "habilidades": [
-        "identificar-características-do-modernismo"
+        "identificar-caracteristicas-do-modernismo"
       ],
       "collections": [
         "questions"
@@ -5190,29 +5191,29 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Modernismo - primeira fase",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A irreverência da primeira fase modernista expressa",
+      "enunciado": "A irreverencia da primeira fase modernista expressa",
       "opcoes": [
-        "respeito é tradição",
-        "idealização romântica",
-        "formalismo clássico",
-        "contestação cultural"
+        "respeito e tradicao",
+        "idealizacao romantica",
+        "formalismo classico",
+        "contestacao cultural"
       ],
-      "correta": "contestação cultural",
-      "comentario": "A irreverência questiona padrões culturais estabelecidos.",
+      "correta": "contestacao cultural",
+      "comentario": "A irreverencia questiona padroes culturais estabelecidos.",
       "tempoEstimado": 40,
       "tags": [
         "modernismo",
         "primeira-fase"
       ],
       "habilidades": [
-        "identificar-características-do-modernismo"
+        "identificar-caracteristicas-do-modernismo"
       ],
       "collections": [
         "questions"
@@ -5228,7 +5229,7 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Modernismo - segunda fase",
       "dificuldadeLabel": "dificil",
@@ -5239,8 +5240,8 @@ export const literaturaRealismoNaturalismoModernismo = {
       "opcoes": [
         "realidade brasileira",
         "temas universais abstratos",
-        "mitologia clássica",
-        "fantasia simbólica"
+        "mitologia classica",
+        "fantasia simbolica"
       ],
       "correta": "realidade brasileira",
       "comentario": "O regionalismo retrata aspectos sociais e culturais do Brasil.",
@@ -5250,7 +5251,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "regionalismo"
       ],
       "habilidades": [
-        "identificar-características-do-modernismo"
+        "identificar-caracteristicas-do-modernismo"
       ],
       "collections": [
         "questions"
@@ -5266,22 +5267,22 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Comparação entre escolas literárias",
+      "subtopico": "Comparacao entre escolas literarias",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
       "enunciado": "O Naturalismo aproxima-se do Realismo por",
       "opcoes": [
-        "valorizar o fantástico",
-        "apresentar crítica social",
+        "valorizar o fantastico",
+        "apresentar critica social",
         "idealizar personagens",
         "explorar o misticismo"
       ],
-      "correta": "apresentar crítica social",
-      "comentario": "Ambos apresentam crítica social e observação da realidade.",
+      "correta": "apresentar critica social",
+      "comentario": "Ambos apresentam critica social e observacao da realidade.",
       "tempoEstimado": 45,
       "tags": [
         "comparacao",
@@ -5304,14 +5305,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Interpretação indireta",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um texto que rompe com normas e valoriza inovação estática indica influência do",
+      "enunciado": "Um texto que rompe com normas e valoriza inovacao estatica indica influencia do",
       "opcoes": [
         "Realismo",
         "Naturalismo",
@@ -5319,7 +5320,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "Arcadismo"
       ],
       "correta": "Modernismo",
-      "comentario": "A inovação estática é característica do Modernismo.",
+      "comentario": "A inovacao estatica e caracteristica do Modernismo.",
       "tempoEstimado": 45,
       "tags": [
         "interpretacao",
@@ -5342,18 +5343,18 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Equivalência de formas",
+      "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Dizer que o Realismo é crítico equivale a afirmar que ele",
+      "enunciado": "Dizer que o Realismo e critico equivale a afirmar que ele",
       "opcoes": [
         "idealiza a sociedade",
         "valoriza o misticismo",
-        "prioriza o fantástico",
+        "prioriza o fantastico",
         "analisa e questiona a realidade"
       ],
       "correta": "analisa e questiona a realidade",
@@ -5380,29 +5381,29 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa que NÃO corresponde ao Naturalismo",
+      "enunciado": "Assinale a alternativa que NAO corresponde ao Naturalismo",
       "opcoes": [
         "Subjetivismo extremo",
         "Determinismo",
         "Cientificismo",
-        "Análise do meio social"
+        "Analise do meio social"
       ],
       "correta": "Subjetivismo extremo",
-      "comentario": "O Naturalismo é objetivo e científico, não subjetivo como o Simbolismo.",
+      "comentario": "O Naturalismo e objetivo e cientifico, nao subjetivo como o Simbolismo.",
       "tempoEstimado": 45,
       "tags": [
         "pegadinha",
         "naturalismo"
       ],
       "habilidades": [
-        "identificar-características-do-naturalismo"
+        "identificar-caracteristicas-do-naturalismo"
       ],
       "collections": [
         "questions"
@@ -5418,21 +5419,21 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Equivalência de formas",
+      "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
       "enunciado": "Afirmar que o Modernismo valoriza a liberdade equivale a dizer que ele",
       "opcoes": [
-        "segue regras rígidas",
-        "rompe com padrões tradicionais",
+        "segue regras rigidas",
+        "rompe com padroes tradicionais",
         "retoma o classicismo",
-        "evita inovação"
+        "evita inovacao"
       ],
-      "correta": "rompe com padrões tradicionais",
+      "correta": "rompe com padroes tradicionais",
       "comentario": "A liberdade modernista implica ruptura com normas estabelecidas.",
       "tempoEstimado": 40,
       "tags": [
@@ -5456,14 +5457,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Análise de fragmento literário",
+      "subtopico": "Analise de fragmento literario",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um texto que apresenta crítica é hipocrisia social e análise psicológica detalhada é típico do",
+      "enunciado": "Um texto que apresenta critica a hipocrisia social e analise psicologica detalhada e tepico do",
       "opcoes": [
         "Simbolismo",
         "Arcadismo",
@@ -5471,7 +5472,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "Parnasianismo"
       ],
       "correta": "Realismo",
-      "comentario": "Essas são características centrais da estática realista.",
+      "comentario": "Essas sao caracteristicas centrais da estatica realista.",
       "tempoEstimado": 45,
       "tags": [
         "analise",
@@ -5494,14 +5495,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Interpretação indireta",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um texto que associa comportamento humano ao ambiente sugere influência do",
+      "enunciado": "Um texto que associa comportamento humano ao ambiente sugere influencia do",
       "opcoes": [
         "Romantismo",
         "Simbolismo",
@@ -5509,7 +5510,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "Naturalismo"
       ],
       "correta": "Naturalismo",
-      "comentario": "A influência do meio sobre o indivíduo é base do Naturalismo.",
+      "comentario": "A influencia do meio sobre o individuo e base do Naturalismo.",
       "tempoEstimado": 45,
       "tags": [
         "interpretacao",
@@ -5532,22 +5533,22 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Comparação entre escolas literárias",
+      "subtopico": "Comparacao entre escolas literarias",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "O Modernismo difere do Naturalismo por não apresentar",
+      "enunciado": "O Modernismo difere do Naturalismo por nao apresentar",
       "opcoes": [
-        "explicações científicas",
-        "crítica social",
-        "inovação estática",
+        "explicacoes cientificas",
+        "critica social",
+        "inovacao estatica",
         "liberdade de linguagem"
       ],
-      "correta": "explicações científicas",
-      "comentario": "O cientificismo é característico do Naturalismo, não do Modernismo.",
+      "correta": "explicacoes cientificas",
+      "comentario": "O cientificismo e caracterastico do Naturalismo, nao do Modernismo.",
       "tempoEstimado": 45,
       "tags": [
         "comparacao",
@@ -5570,14 +5571,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Realismo - características",
+      "subtopico": "Realismo - caracteristicas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "O foco na análise das relações sociais é típico do",
+      "enunciado": "O foco na analise das relacoes sociais e tepico do",
       "opcoes": [
         "Simbolismo",
         "Realismo",
@@ -5585,14 +5586,14 @@ export const literaturaRealismoNaturalismoModernismo = {
         "Romantismo"
       ],
       "correta": "Realismo",
-      "comentario": "O Realismo analisa criticamente as relações sociais.",
+      "comentario": "O Realismo analisa criticamente as relacoes sociais.",
       "tempoEstimado": 40,
       "tags": [
         "realismo",
         "sociedade"
       ],
       "habilidades": [
-        "identificar-características-do-realismo"
+        "identificar-caracteristicas-do-realismo"
       ],
       "collections": [
         "questions"
@@ -5608,29 +5609,29 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Naturalismo - características",
+      "subtopico": "Naturalismo - caracteristicas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A objetividade no Naturalismo está associada à",
+      "enunciado": "A objetividade no Naturalismo esta associada a",
       "opcoes": [
         "subjetividade",
         "fantasia",
-        "descrição científica",
+        "descricao cientifica",
         "misticismo"
       ],
-      "correta": "descrição científica",
-      "comentario": "O Naturalismo utiliza uma abordagem científica e objetiva.",
+      "correta": "descricao cientifica",
+      "comentario": "O Naturalismo utiliza uma abordagem cientifica e objetiva.",
       "tempoEstimado": 45,
       "tags": [
         "naturalismo",
         "cientificismo"
       ],
       "habilidades": [
-        "identificar-características-do-naturalismo"
+        "identificar-caracteristicas-do-naturalismo"
       ],
       "collections": [
         "questions"
@@ -5646,7 +5647,7 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Modernismo - linguagem e ruptura",
       "dificuldadeLabel": "dificil",
@@ -5655,20 +5656,20 @@ export const literaturaRealismoNaturalismoModernismo = {
       "tipo": "multipla_escolha",
       "enunciado": "A liberdade formal no Modernismo permite ao autor",
       "opcoes": [
-        "seguir padrões rígidos",
+        "seguir padroes rígidos",
         "retomar o classicismo",
-        "evitar inovação",
+        "evitar inovacao",
         "experimentar novas formas"
       ],
       "correta": "experimentar novas formas",
-      "comentario": "O Modernismo rompe com padrões para inovar na forma e no conteúdo.",
+      "comentario": "O Modernismo rompe com padroes para inovar na forma e no conteudo.",
       "tempoEstimado": 40,
       "tags": [
         "modernismo",
         "forma"
       ],
       "habilidades": [
-        "identificar-características-do-modernismo"
+        "identificar-caracteristicas-do-modernismo"
       ],
       "collections": [
         "questions"
@@ -5684,14 +5685,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Interpretação indireta",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um texto que critica costumes sociais com ironia indica influência do",
+      "enunciado": "Um texto que critica costumes sociais com ironia indica influencia do",
       "opcoes": [
         "Realismo",
         "Naturalismo",
@@ -5699,7 +5700,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "Arcadismo"
       ],
       "correta": "Realismo",
-      "comentario": "A crítica irônica da sociedade é típica do Realismo.",
+      "comentario": "A critica irunica da sociedade e tepica do Realismo.",
       "tempoEstimado": 45,
       "tags": [
         "interpretacao",
@@ -5722,21 +5723,21 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Equivalência de formas",
+      "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
       "enunciado": "Dizer que o Naturalismo enfatiza o instinto equivale a afirmar que ele",
       "opcoes": [
-        "valoriza a razão",
-        "prioriza impulsos biológicos",
+        "valoriza a razao",
+        "prioriza impulsos biologicos",
         "idealiza comportamentos",
         "explora o misticismo"
       ],
-      "correta": "prioriza impulsos biológicos",
+      "correta": "prioriza impulsos biologicos",
       "comentario": "O Naturalismo associa o comportamento humano aos instintos.",
       "tempoEstimado": 40,
       "tags": [
@@ -5760,22 +5761,22 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Interpretação indireta",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um texto descreve um personagem que age de forma impulsiva, condicionado pelo ambiente miserável em que vive, sem espaço para escolhas individuais. Essa abordagem sugere",
+      "enunciado": "Um texto descreve um personagem que age de forma impulsiva, condicionado pelo ambiente miseravel em que vive, sem espaco para escolhas individuais. Essa abordagem sugere",
       "opcoes": [
-        "valorização da subjetividade",
-        "idealização romântica",
-        "predomínio do determinismo naturalista",
-        "ruptura estática modernista"
+        "valorizacao da subjetividade",
+        "idealizacao romantica",
+        "predominio do determinismo naturalista",
+        "ruptura estetica modernista"
       ],
-      "correta": "predomínio do determinismo naturalista",
-      "comentario": "A ausência de liberdade individual e a influência do meio indicam determinismo naturalista.",
+      "correta": "predominio do determinismo naturalista",
+      "comentario": "A ausencia de liberdade individual e a influencia do meio indicam determinismo naturalista.",
       "tempoEstimado": 70,
       "tags": [
         "interpretacao",
@@ -5799,14 +5800,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um texto apresenta crítica social, mas com linguagem fragmentada e experimental. Assinale a alternativa correta",
+      "enunciado": "Um texto apresenta critica social, mas com linguagem fragmentada e experimental. Assinale a alternativa correta",
       "opcoes": [
         "Trata-se de Realismo",
         "Trata-se de Naturalismo",
@@ -5814,14 +5815,14 @@ export const literaturaRealismoNaturalismoModernismo = {
         "Trata-se de Modernismo"
       ],
       "correta": "Trata-se de Modernismo",
-      "comentario": "Apesar da crítica social também existir no Realismo, a linguagem experimental indica Modernismo.",
+      "comentario": "Apesar da critica social tambem existir no Realismo, a linguagem experimental indica Modernismo.",
       "tempoEstimado": 70,
       "tags": [
         "pegadinha",
         "modernismo"
       ],
       "habilidades": [
-        "identificar-características-do-modernismo"
+        "identificar-caracteristicas-do-modernismo"
       ],
       "collections": [
         "questions"
@@ -5837,22 +5838,22 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Equivalência de formas",
+      "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Dizer que o Realismo rejeita a idealização equivale a afirmar que ele",
+      "enunciado": "Dizer que o Realismo rejeita a idealizacao equivale a afirmar que ele",
       "opcoes": [
-        "analisa a realidade de forma crítica",
+        "analisa a realidade de forma critica",
         "constrói personagens heroicos",
         "valoriza o subjetivismo",
-        "explora o fantástico"
+        "explora o fantastico"
       ],
-      "correta": "analisa a realidade de forma crítica",
-      "comentario": "A rejeição da idealização implica análise crítica e objetiva da realidade.",
+      "correta": "analisa a realidade de forma critica",
+      "comentario": "A rejeicao da idealizacao implica analise critica e objetiva da realidade.",
       "tempoEstimado": 70,
       "tags": [
         "equivalencia",
@@ -5875,14 +5876,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Comparação entre escolas literárias",
+      "subtopico": "Comparacao entre escolas literarias",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um texto que apresenta análise psicológica profunda, mas sem explicações biológicas ou deterministas, aproxima-se do",
+      "enunciado": "Um texto que apresenta analise psicologica profunda, mas sem explicacoes biologicas ou deterministas, aproxima-se do",
       "opcoes": [
         "Naturalismo",
         "Realismo",
@@ -5890,7 +5891,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "Simbolismo"
       ],
       "correta": "Realismo",
-      "comentario": "O Realismo foca na psicologia sem recorrer ao determinismo científico do Naturalismo.",
+      "comentario": "O Realismo foca na psicologia sem recorrer ao determinismo cientifico do Naturalismo.",
       "tempoEstimado": 80,
       "tags": [
         "comparacao",
@@ -5913,22 +5914,22 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Análise de fragmento literário",
+      "subtopico": "Analise de fragmento literario",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um fragmento, o narrador ironiza a própria narrativa e questiona sua veracidade. Esse recurso indica",
+      "enunciado": "Em um fragmento, o narrador ironiza a propria narrativa e questiona sua veracidade. Esse recurso indica",
       "opcoes": [
         "determinismo naturalista",
-        "idealização romântica",
+        "idealizacao romantica",
         "metalinguagem realista",
         "simbolismo subjetivo"
       ],
       "correta": "metalinguagem realista",
-      "comentario": "A ironia e o questionamento da narrativa são comuns em autores realistas como Machado de Assis.",
+      "comentario": "A ironia e o questionamento da narrativa sao comuns em autores realistas como Machado de Assis.",
       "tempoEstimado": 80,
       "tags": [
         "analise",
@@ -5952,14 +5953,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Interpretação indireta",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao sugerir que o homem é condicionado por herança genética e ambiente, o texto se alinha ao",
+      "enunciado": "Ao sugerir que o homem e condicionado por heranca genetica e ambiente, o texto se alinha ao",
       "opcoes": [
         "Realismo",
         "Modernismo",
@@ -5967,7 +5968,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "Naturalismo"
       ],
       "correta": "Naturalismo",
-      "comentario": "A combinação de hereditariedade e meio caracteriza o Naturalismo.",
+      "comentario": "A combinacao de hereditariedade e meio caracteriza o Naturalismo.",
       "tempoEstimado": 70,
       "tags": [
         "interpretacao",
@@ -5990,14 +5991,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um texto apresenta crítica social e linguagem objetiva. Contudo, também explica o comportamento humano por fatores biológicos. Assinale a alternativa correta",
+      "enunciado": "Um texto apresenta critica social e linguagem objetiva. Contudo, tambem explica o comportamento humano por fatores biologicos. Assinale a alternativa correta",
       "opcoes": [
         "Naturalismo",
         "Realismo",
@@ -6005,7 +6006,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "Simbolismo"
       ],
       "correta": "Naturalismo",
-      "comentario": "A explicação biológica é o diferencial do Naturalismo em relação ao Realismo.",
+      "comentario": "A explicacao biologica e o diferencial do Naturalismo em relacao ao Realismo.",
       "tempoEstimado": 70,
       "tags": [
         "pegadinha",
@@ -6028,22 +6029,22 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Equivalência de formas",
+      "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
       "enunciado": "Dizer que o Modernismo rompe com a linearidade narrativa equivale a afirmar que ele",
       "opcoes": [
-        "mantém sequência tradicional",
+        "mantem sequencia tradicional",
         "fragmenta a estrutura textual",
-        "valoriza o equilíbrio clássico",
+        "valoriza o equilibrio classico",
         "idealiza personagens"
       ],
       "correta": "fragmenta a estrutura textual",
-      "comentario": "A fragmentação é uma forma de romper com a linearidade tradicional.",
+      "comentario": "A fragmentacao e uma forma de romper com a linearidade tradicional.",
       "tempoEstimado": 70,
       "tags": [
         "equivalencia",
@@ -6066,22 +6067,22 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Comparação entre escolas literárias",
+      "subtopico": "Comparacao entre escolas literarias",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferença entre Naturalismo e Realismo está na",
+      "enunciado": "A principal diferenca entre Naturalismo e Realismo esta na",
       "opcoes": [
-        "crítica social",
+        "critica social",
         "linguagem objetiva",
-        "ênfase no determinismo científico",
-        "análise psicológica"
+        "enfase no determinismo cientifico",
+        "analise psicologica"
       ],
-      "correta": "ênfase no determinismo científico",
-      "comentario": "O Naturalismo se diferencia pelo uso do determinismo científico.",
+      "correta": "enfase no determinismo cientifico",
+      "comentario": "O Naturalismo se diferencia pelo uso do determinismo cientifico.",
       "tempoEstimado": 80,
       "tags": [
         "comparacao",
@@ -6104,14 +6105,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Interpretação indireta",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um texto que critica padrões sociais e rompe com normas formais indica simultaneamente influência de",
+      "enunciado": "Um texto que critica padroes sociais e rompe com normas formais indica simultaneamente influencia de",
       "opcoes": [
         "Realismo e Naturalismo",
         "Naturalismo e Arcadismo",
@@ -6119,7 +6120,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "Realismo e Modernismo"
       ],
       "correta": "Realismo e Modernismo",
-      "comentario": "A crítica social é do Realismo, enquanto a ruptura formal é do Modernismo.",
+      "comentario": "A critica social e do Realismo, enquanto a ruptura formal e do Modernismo.",
       "tempoEstimado": 70,
       "tags": [
         "interpretacao",
@@ -6142,22 +6143,22 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Análise de fragmento literário",
+      "subtopico": "Analise de fragmento literario",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um fragmento, o narrador descreve um ambiente degradado e associa diretamente esse espaço ao comportamento das personagens, sem considerar escolhas individuais. Essa construção evidencia",
+      "enunciado": "Em um fragmento, o narrador descreve um ambiente degradado e associa diretamente esse espaco ao comportamento das personagens, sem considerar escolhas individuais. Essa construcao evidencia",
       "opcoes": [
         "determinismo naturalista",
-        "subjetivismo simbólico",
-        "idealização romântica",
+        "subjetivismo simbolico",
+        "idealizacao romantica",
         "ruptura modernista"
       ],
       "correta": "determinismo naturalista",
-      "comentario": "A relação direta entre ambiente e comportamento, sem autonomia individual, caracteriza o determinismo naturalista.",
+      "comentario": "A relacao direta entre ambiente e comportamento, sem autonomia individual, caracteriza o determinismo naturalista.",
       "tempoEstimado": 80,
       "tags": [
         "analise",
@@ -6181,14 +6182,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Interpretação indireta",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao apresentar personagens que se comportam de forma contraditória e complexa, analisadas sob um olhar crítico, o texto aproxima-se do",
+      "enunciado": "Ao apresentar personagens que se comportam de forma contraditória e complexa, analisadas sob um olhar critico, o texto aproxima-se do",
       "opcoes": [
         "Naturalismo",
         "Realismo",
@@ -6196,7 +6197,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "Simbolismo"
       ],
       "correta": "Realismo",
-      "comentario": "A complexidade psicológica e a análise crítica são características do Realismo.",
+      "comentario": "A complexidade psicologica e a analise critica sao caracteristicas do Realismo.",
       "tempoEstimado": 70,
       "tags": [
         "interpretacao",
@@ -6219,14 +6220,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um texto apresenta linguagem objetiva e crítica social, mas não utiliza explicações científicas nem determinismo. Assinale a alternativa correta",
+      "enunciado": "Um texto apresenta linguagem objetiva e critica social, mas nao utiliza explicacoes cientificas nem determinismo. Assinale a alternativa correta",
       "opcoes": [
         "Naturalismo",
         "Modernismo",
@@ -6234,7 +6235,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "Simbolismo"
       ],
       "correta": "Realismo",
-      "comentario": "A ausência de determinismo científico diferencia o Realismo do Naturalismo.",
+      "comentario": "A ausencia de determinismo cientifico diferencia o Realismo do Naturalismo.",
       "tempoEstimado": 70,
       "tags": [
         "pegadinha",
@@ -6257,22 +6258,22 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Equivalência de formas",
+      "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Dizer que o Naturalismo reduz o homem a fatores biológicos equivale a afirmar que ele",
+      "enunciado": "Dizer que o Naturalismo reduz o homem a fatores biologicos equivale a afirmar que ele",
       "opcoes": [
-        "valoriza o livre-arbítrio",
+        "valoriza o livre-arbitrio",
         "prioriza a subjetividade",
         "idealiza a realidade",
         "explica o comportamento por instintos e hereditariedade"
       ],
       "correta": "explica o comportamento por instintos e hereditariedade",
-      "comentario": "O Naturalismo interpreta o comportamento humano com base em fatores biológicos e hereditários.",
+      "comentario": "O Naturalismo interpreta o comportamento humano com base em fatores biologicos e hereditários.",
       "tempoEstimado": 70,
       "tags": [
         "equivalencia",
@@ -6295,14 +6296,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Comparação entre escolas literárias",
+      "subtopico": "Comparacao entre escolas literarias",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um texto que apresenta crítica social, análise psicológica e linguagem objetiva, sem ruptura formal, pode ser classificado como",
+      "enunciado": "Um texto que apresenta critica social, analise psicologica e linguagem objetiva, sem ruptura formal, pode ser classificado como",
       "opcoes": [
         "Realismo",
         "Modernismo",
@@ -6310,7 +6311,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "Simbolismo"
       ],
       "correta": "Realismo",
-      "comentario": "A ausência de ruptura formal e a presença de análise psicológica indicam o Realismo.",
+      "comentario": "A ausencia de ruptura formal e a presenca de analise psicologica indicam o Realismo.",
       "tempoEstimado": 80,
       "tags": [
         "comparacao",
@@ -6333,22 +6334,22 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Análise de fragmento literário",
+      "subtopico": "Analise de fragmento literario",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um fragmento modernista, a quebra de sequência lógica e o uso de linguagem coloquial indicam",
+      "enunciado": "Em um fragmento modernista, a quebra de sequencia logica e o uso de linguagem coloquial indicam",
       "opcoes": [
         "rigidez formal",
-        "experimentação estática",
+        "experimentacao estatica",
         "retorno ao classicismo",
-        "idealização romântica"
+        "idealizacao romantica"
       ],
-      "correta": "experimentação estática",
-      "comentario": "A ruptura com a linearidade e a linguagem coloquial evidenciam a experimentação modernista.",
+      "correta": "experimentacao estatica",
+      "comentario": "A ruptura com a linearidade e a linguagem coloquial evidenciam a experimentacao modernista.",
       "tempoEstimado": 80,
       "tags": [
         "analise",
@@ -6371,14 +6372,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Interpretação indireta",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao sugerir que o comportamento humano é resultado de forças externas e internas, o texto combina elementos de",
+      "enunciado": "Ao sugerir que o comportamento humano e resultado de forças externas e internas, o texto combina elementos de",
       "opcoes": [
         "Modernismo e Simbolismo",
         "Arcadismo e Romantismo",
@@ -6386,7 +6387,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "Parnasianismo e Simbolismo"
       ],
       "correta": "Realismo e Naturalismo",
-      "comentario": "A análise psicológica (Realismo) combinada ao determinismo (Naturalismo) indica essa relação.",
+      "comentario": "A analise psicologica (Realismo) combinada ao determinismo (Naturalismo) indica essa relacao.",
       "tempoEstimado": 70,
       "tags": [
         "interpretacao",
@@ -6409,14 +6410,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um texto rompe com normas formais, utiliza linguagem coloquial e apresenta crítica social. Assinale a alternativa correta",
+      "enunciado": "Um texto rompe com normas formais, utiliza linguagem coloquial e apresenta critica social. Assinale a alternativa correta",
       "opcoes": [
         "Realismo",
         "Naturalismo",
@@ -6424,14 +6425,14 @@ export const literaturaRealismoNaturalismoModernismo = {
         "Modernismo"
       ],
       "correta": "Modernismo",
-      "comentario": "A ruptura formal e a linguagem coloquial são marcas do Modernismo.",
+      "comentario": "A ruptura formal e a linguagem coloquial sao marcas do Modernismo.",
       "tempoEstimado": 70,
       "tags": [
         "pegadinha",
         "modernismo"
       ],
       "habilidades": [
-        "identificar-características-do-modernismo"
+        "identificar-caracteristicas-do-modernismo"
       ],
       "collections": [
         "questions"
@@ -6447,22 +6448,22 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Equivalência de formas",
+      "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Afirmar que o Modernismo rompe com a tradição equivale a dizer que ele",
+      "enunciado": "Afirmar que o Modernismo rompe com a tradicao equivale a dizer que ele",
       "opcoes": [
         "inova e transforma estruturas",
-        "mantém padrões clássicos",
+        "mantem padroes classicos",
         "valoriza o passado",
-        "evita experimentação"
+        "evita experimentacao"
       ],
       "correta": "inova e transforma estruturas",
-      "comentario": "A ruptura com a tradição implica inovação estrutural e estática.",
+      "comentario": "A ruptura com a tradicao implica inovacao estrutural e estatica.",
       "tempoEstimado": 70,
       "tags": [
         "equivalencia",
@@ -6485,22 +6486,22 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Comparação entre escolas literárias",
+      "subtopico": "Comparacao entre escolas literarias",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal distinção entre Realismo e Modernismo está na",
+      "enunciado": "A principal distincao entre Realismo e Modernismo esta na",
       "opcoes": [
-        "crítica social",
+        "critica social",
         "ruptura formal",
-        "análise psicológica",
-        "observação da realidade"
+        "analise psicologica",
+        "observacao da realidade"
       ],
       "correta": "ruptura formal",
-      "comentario": "O Modernismo se distingue pela ruptura formal em relação ao Realismo.",
+      "comentario": "O Modernismo se distingue pela ruptura formal em relacao ao Realismo.",
       "tempoEstimado": 80,
       "tags": [
         "comparacao",
@@ -6523,22 +6524,22 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Interpretação indireta",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um texto apresenta personagens condicionadas pelo ambiente, mas também explora suas contradições internas. Essa combinação indica",
+      "enunciado": "Um texto apresenta personagens condicionadas pelo ambiente, mas tambem explora suas contradicoes internas. Essa combinacao indica",
       "opcoes": [
         "exclusivamente Naturalismo",
         "exclusivamente Realismo",
-        "aproximação entre Realismo e Naturalismo",
-        "influência do Simbolismo"
+        "aproximacao entre Realismo e Naturalismo",
+        "influencia do Simbolismo"
       ],
-      "correta": "aproximação entre Realismo e Naturalismo",
-      "comentario": "A análise psicológica (Realismo) somada ao determinismo do meio (Naturalismo) revela essa combinação.",
+      "correta": "aproximacao entre Realismo e Naturalismo",
+      "comentario": "A analise psicologica (Realismo) somada ao determinismo do meio (Naturalismo) revela essa combinacao.",
       "tempoEstimado": 70,
       "tags": [
         "interpretacao",
@@ -6561,14 +6562,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um texto apresenta linguagem objetiva e crítica social, mas também rompe com a estrutura tradicional. Assinale a alternativa correta",
+      "enunciado": "Um texto apresenta linguagem objetiva e critica social, mas tambem rompe com a estrutura tradicional. Assinale a alternativa correta",
       "opcoes": [
         "Realismo",
         "Naturalismo",
@@ -6576,14 +6577,14 @@ export const literaturaRealismoNaturalismoModernismo = {
         "Modernismo"
       ],
       "correta": "Modernismo",
-      "comentario": "Apesar da crítica social, a ruptura estrutural é característica do Modernismo.",
+      "comentario": "Apesar da critica social, a ruptura estrutural e caracteristica do Modernismo.",
       "tempoEstimado": 70,
       "tags": [
         "pegadinha",
         "modernismo"
       ],
       "habilidades": [
-        "identificar-características-do-modernismo"
+        "identificar-caracteristicas-do-modernismo"
       ],
       "collections": [
         "questions"
@@ -6599,22 +6600,22 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Equivalência de formas",
+      "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
       "enunciado": "Dizer que o Realismo rejeita o idealismo equivale a afirmar que ele",
       "opcoes": [
-        "representa a realidade de forma crítica",
+        "representa a realidade de forma critica",
         "valoriza a fantasia",
         "explora o misticismo",
         "idealiza personagens"
       ],
-      "correta": "representa a realidade de forma crítica",
-      "comentario": "A rejeição do idealismo implica representação crítica e objetiva da realidade.",
+      "correta": "representa a realidade de forma critica",
+      "comentario": "A rejeicao do idealismo implica representacao critica e objetiva da realidade.",
       "tempoEstimado": 70,
       "tags": [
         "equivalencia",
@@ -6637,14 +6638,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Comparação entre escolas literárias",
+      "subtopico": "Comparacao entre escolas literarias",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um texto que apresenta linguagem inovadora e fragmentada, mas sem abandonar totalmente a crítica social, aproxima-se do",
+      "enunciado": "Um texto que apresenta linguagem inovadora e fragmentada, mas sem abandonar totalmente a critica social, aproxima-se do",
       "opcoes": [
         "Realismo",
         "Modernismo",
@@ -6652,7 +6653,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "Arcadismo"
       ],
       "correta": "Modernismo",
-      "comentario": "A inovação formal e a fragmentação são características do Modernismo.",
+      "comentario": "A inovacao formal e a fragmentacao sao caracteristicas do Modernismo.",
       "tempoEstimado": 80,
       "tags": [
         "comparacao",
@@ -6675,22 +6676,22 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Análise de fragmento literário",
+      "subtopico": "Analise de fragmento literario",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um fragmento, a narrativa apresenta múltiplas vozes, quebra de linearidade e crítica cultural. Esses elementos indicam",
+      "enunciado": "Em um fragmento, a narrativa apresenta maltiplas vozes, quebra de linearidade e critica cultural. Esses elementos indicam",
       "opcoes": [
         "determinismo naturalista",
-        "idealização romântica",
+        "idealizacao romantica",
         "ruptura modernista",
-        "equilíbrio clássico"
+        "equilibrio classico"
       ],
       "correta": "ruptura modernista",
-      "comentario": "A multiplicidade de vozes e a quebra da linearidade são marcas do Modernismo.",
+      "comentario": "A multiplicidade de vozes e a quebra da linearidade sao marcas do Modernismo.",
       "tempoEstimado": 80,
       "tags": [
         "analise",
@@ -6713,14 +6714,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Interpretação indireta",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao sugerir que o indivíduo é influenciado por fatores externos, mas também possui conflitos internos, o texto combina",
+      "enunciado": "Ao sugerir que o individuo e influenciado por fatores externos, mas tambem possui conflitos internos, o texto combina",
       "opcoes": [
         "Modernismo e Simbolismo",
         "Arcadismo e Romantismo",
@@ -6728,7 +6729,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "Realismo e Naturalismo"
       ],
       "correta": "Realismo e Naturalismo",
-      "comentario": "A combinação de fatores externos (Naturalismo) e conflitos internos (Realismo) evidencia essa relação.",
+      "comentario": "A combinacao de fatores externos (Naturalismo) e conflitos internos (Realismo) evidencia essa relacao.",
       "tempoEstimado": 70,
       "tags": [
         "interpretacao",
@@ -6751,14 +6752,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um texto apresenta análise psicológica e crítica social, mas também utiliza linguagem coloquial e fragmentada. Assinale a alternativa correta",
+      "enunciado": "Um texto apresenta analise psicologica e critica social, mas tambem utiliza linguagem coloquial e fragmentada. Assinale a alternativa correta",
       "opcoes": [
         "Modernismo",
         "Realismo",
@@ -6766,14 +6767,14 @@ export const literaturaRealismoNaturalismoModernismo = {
         "Simbolismo"
       ],
       "correta": "Modernismo",
-      "comentario": "A linguagem fragmentada e coloquial é característica do Modernismo, mesmo com traços de outras escolas.",
+      "comentario": "A linguagem fragmentada e coloquial e caracteristica do Modernismo, mesmo com tracos de outras escolas.",
       "tempoEstimado": 70,
       "tags": [
         "pegadinha",
         "modernismo"
       ],
       "habilidades": [
-        "identificar-características-do-modernismo"
+        "identificar-caracteristicas-do-modernismo"
       ],
       "collections": [
         "questions"
@@ -6789,9 +6790,9 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Equivalência de formas",
+      "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "comparacao",
@@ -6804,7 +6805,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "idealiza a realidade"
       ],
       "correta": "explica o comportamento por fatores determinantes",
-      "comentario": "O Naturalismo baseia-se na influência do meio e da hereditariedade.",
+      "comentario": "O Naturalismo baseia-se na influencia do meio e da hereditariedade.",
       "tempoEstimado": 70,
       "tags": [
         "equivalencia",
@@ -6827,14 +6828,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Comparação entre escolas literárias",
+      "subtopico": "Comparacao entre escolas literarias",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A presença de crítica social, sem explicações científicas e sem ruptura formal, caracteriza o",
+      "enunciado": "A presenca de critica social, sem explicacoes cientificas e sem ruptura formal, caracteriza o",
       "opcoes": [
         "Modernismo",
         "Naturalismo",
@@ -6842,7 +6843,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "Simbolismo"
       ],
       "correta": "Realismo",
-      "comentario": "O Realismo apresenta crítica social com linguagem objetiva, sem cientificismo ou ruptura formal.",
+      "comentario": "O Realismo apresenta critica social com linguagem objetiva, sem cientificismo ou ruptura formal.",
       "tempoEstimado": 80,
       "tags": [
         "comparacao",
@@ -6865,14 +6866,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Interpretação indireta",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um texto que rompe com padrões formais e utiliza linguagem inovadora, mas mantém crítica social, sugere predominância do",
+      "enunciado": "Um texto que rompe com padroes formais e utiliza linguagem inovadora, mas mantem critica social, sugere predominancia do",
       "opcoes": [
         "Realismo",
         "Naturalismo",
@@ -6880,7 +6881,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "Modernismo"
       ],
       "correta": "Modernismo",
-      "comentario": "A ruptura formal e a inovação linguística são características centrais do Modernismo.",
+      "comentario": "A ruptura formal e a inovacao linguastica sao caracteristicas centrais do Modernismo.",
       "tempoEstimado": 70,
       "tags": [
         "interpretacao",
@@ -6903,22 +6904,22 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Análise de fragmento literário",
+      "subtopico": "Analise de fragmento literario",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um fragmento apresenta narrador que expõe contradições sociais com ironia e distanciamento crítico, sem recorrer a explicações científicas. Esse procedimento indica",
+      "enunciado": "Um fragmento apresenta narrador que expoe contradicoes sociais com ironia e distanciamento critico, sem recorrer a explicacoes cientificas. Esse procedimento indica",
       "opcoes": [
-        "Realismo crítico",
+        "Realismo critico",
         "Naturalismo determinista",
         "Modernismo experimental",
         "Simbolismo subjetivo"
       ],
-      "correta": "Realismo crítico",
-      "comentario": "A ironia e a crítica social, sem cientificismo, são características do Realismo.",
+      "correta": "Realismo critico",
+      "comentario": "A ironia e a critica social, sem cientificismo, sao caracteristicas do Realismo.",
       "tempoEstimado": 80,
       "tags": [
         "analise",
@@ -6941,14 +6942,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Interpretação indireta",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao apresentar personagens moldadas por fatores biológicos e sociais, sem autonomia plena, o texto evidencia predominância do",
+      "enunciado": "Ao apresentar personagens moldadas por fatores biologicos e sociais, sem autonomia plena, o texto evidencia predominancia do",
       "opcoes": [
         "Realismo",
         "Naturalismo",
@@ -6956,7 +6957,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "Arcadismo"
       ],
       "correta": "Naturalismo",
-      "comentario": "A ausência de autonomia e a influência de fatores biológicos indicam determinismo naturalista.",
+      "comentario": "A ausencia de autonomia e a influencia de fatores biologicos indicam determinismo naturalista.",
       "tempoEstimado": 70,
       "tags": [
         "interpretacao",
@@ -6979,14 +6980,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um texto apresenta crítica social e análise psicológica, mas também rompe com a linearidade narrativa. Assinale a alternativa correta",
+      "enunciado": "Um texto apresenta critica social e analise psicologica, mas tambem rompe com a linearidade narrativa. Assinale a alternativa correta",
       "opcoes": [
         "Realismo",
         "Naturalismo",
@@ -6994,14 +6995,14 @@ export const literaturaRealismoNaturalismoModernismo = {
         "Simbolismo"
       ],
       "correta": "Modernismo",
-      "comentario": "A quebra da linearidade narrativa é característica do Modernismo.",
+      "comentario": "A quebra da linearidade narrativa e caracteristica do Modernismo.",
       "tempoEstimado": 70,
       "tags": [
         "pegadinha",
         "modernismo"
       ],
       "habilidades": [
-        "identificar-características-do-modernismo"
+        "identificar-caracteristicas-do-modernismo"
       ],
       "collections": [
         "questions"
@@ -7017,22 +7018,22 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Equivalência de formas",
+      "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
       "enunciado": "Dizer que o Modernismo rompe com a linearidade equivale a afirmar que ele",
       "opcoes": [
-        "mantém sequência tradicional",
-        "valoriza o equilíbrio clássico",
+        "mantem sequencia tradicional",
+        "valoriza o equilibrio classico",
         "idealiza personagens",
         "fragmenta a narrativa"
       ],
       "correta": "fragmenta a narrativa",
-      "comentario": "A fragmentação é um dos principais recursos modernistas.",
+      "comentario": "A fragmentacao e um dos principais recursos modernistas.",
       "tempoEstimado": 70,
       "tags": [
         "equivalencia",
@@ -7055,14 +7056,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Comparação entre escolas literárias",
+      "subtopico": "Comparacao entre escolas literarias",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A presença de cientificismo, determinismo e descrição minuciosa caracteriza o",
+      "enunciado": "A presenca de cientificismo, determinismo e descricao minuciosa caracteriza o",
       "opcoes": [
         "Naturalismo",
         "Realismo",
@@ -7070,7 +7071,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "Simbolismo"
       ],
       "correta": "Naturalismo",
-      "comentario": "Esses três elementos são característicos centrais do Naturalismo.",
+      "comentario": "Esses tras elementos sao caracterasticos centrais do Naturalismo.",
       "tempoEstimado": 80,
       "tags": [
         "comparacao",
@@ -7093,22 +7094,22 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Análise de fragmento literário",
+      "subtopico": "Analise de fragmento literario",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um texto modernista, a ausência de pontuação convencional e a quebra de sintaxe indicam",
+      "enunciado": "Em um texto modernista, a ausencia de pontuacao convencional e a quebra de sintaxe indicam",
       "opcoes": [
         "rigidez formal",
-        "experimentação linguística",
+        "experimentacao linguastica",
         "retorno ao classicismo",
-        "idealização romântica"
+        "idealizacao romantica"
       ],
-      "correta": "experimentação linguística",
-      "comentario": "A quebra de normas gramaticais é típica da experimentação modernista.",
+      "correta": "experimentacao linguastica",
+      "comentario": "A quebra de normas gramaticais e tepica da experimentacao modernista.",
       "tempoEstimado": 80,
       "tags": [
         "analise",
@@ -7131,14 +7132,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Interpretação indireta",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um texto que apresenta crítica social, mas também enfatiza hereditariedade e ambiente, sugere predominância do",
+      "enunciado": "Um texto que apresenta critica social, mas tambem enfatiza hereditariedade e ambiente, sugere predominancia do",
       "opcoes": [
         "Realismo",
         "Modernismo",
@@ -7146,7 +7147,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "Arcadismo"
       ],
       "correta": "Naturalismo",
-      "comentario": "A presença de hereditariedade e ambiente indica Naturalismo.",
+      "comentario": "A presenca de hereditariedade e ambiente indica Naturalismo.",
       "tempoEstimado": 70,
       "tags": [
         "interpretacao",
@@ -7169,14 +7170,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um texto apresenta linguagem simples e crítica social, mas também forte experimentação formal. Assinale a alternativa correta",
+      "enunciado": "Um texto apresenta linguagem simples e critica social, mas tambem forte experimentacao formal. Assinale a alternativa correta",
       "opcoes": [
         "Realismo",
         "Naturalismo",
@@ -7184,14 +7185,14 @@ export const literaturaRealismoNaturalismoModernismo = {
         "Modernismo"
       ],
       "correta": "Modernismo",
-      "comentario": "A experimentação formal é decisiva para identificar o Modernismo.",
+      "comentario": "A experimentacao formal e decisiva para identificar o Modernismo.",
       "tempoEstimado": 70,
       "tags": [
         "pegadinha",
         "modernismo"
       ],
       "habilidades": [
-        "identificar-características-do-modernismo"
+        "identificar-caracteristicas-do-modernismo"
       ],
       "collections": [
         "questions"
@@ -7207,9 +7208,9 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Equivalência de formas",
+      "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "comparacao",
@@ -7222,7 +7223,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "idealiza a realidade"
       ],
       "correta": "explica o comportamento por fatores genéticos",
-      "comentario": "A hereditariedade é um dos pilares do determinismo naturalista.",
+      "comentario": "A hereditariedade e um dos pilares do determinismo naturalista.",
       "tempoEstimado": 70,
       "tags": [
         "equivalencia",
@@ -7245,14 +7246,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Comparação entre escolas literárias",
+      "subtopico": "Comparacao entre escolas literarias",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A combinação de crítica social, análise psicológica e ausência de ruptura formal caracteriza o",
+      "enunciado": "A combinacao de critica social, analise psicologica e ausencia de ruptura formal caracteriza o",
       "opcoes": [
         "Modernismo",
         "Realismo",
@@ -7260,7 +7261,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "Simbolismo"
       ],
       "correta": "Realismo",
-      "comentario": "Esses elementos são próprios do Realismo, sem ruptura formal.",
+      "comentario": "Esses elementos sao proprios do Realismo, sem ruptura formal.",
       "tempoEstimado": 80,
       "tags": [
         "comparacao",
@@ -7283,14 +7284,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Interpretação indireta",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um texto apresenta crítica social com linguagem objetiva, mas também utiliza explicações baseadas em hereditariedade e ambiente. Essa combinação indica predominância do",
+      "enunciado": "Um texto apresenta critica social com linguagem objetiva, mas tambem utiliza explicacoes baseadas em hereditariedade e ambiente. Essa combinacao indica predominancia do",
       "opcoes": [
         "Realismo",
         "Modernismo",
@@ -7298,7 +7299,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "Simbolismo"
       ],
       "correta": "Naturalismo",
-      "comentario": "A presença de hereditariedade e ambiente como explicação caracteriza o Naturalismo.",
+      "comentario": "A presenca de hereditariedade e ambiente como explicacao caracteriza o Naturalismo.",
       "tempoEstimado": 70,
       "tags": [
         "interpretacao",
@@ -7321,14 +7322,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um texto apresenta linguagem inovadora, fragmentação e crítica cultural. No entanto, também possui análise psicológica. Assinale a alternativa correta",
+      "enunciado": "Um texto apresenta linguagem inovadora, fragmentacao e critica cultural. No entanto, tambem possui analise psicologica. Assinale a alternativa correta",
       "opcoes": [
         "Realismo",
         "Naturalismo",
@@ -7336,14 +7337,14 @@ export const literaturaRealismoNaturalismoModernismo = {
         "Modernismo"
       ],
       "correta": "Modernismo",
-      "comentario": "A fragmentação e inovação formal prevalecem, caracterizando o Modernismo.",
+      "comentario": "A fragmentacao e inovacao formal prevalecem, caracterizando o Modernismo.",
       "tempoEstimado": 70,
       "tags": [
         "pegadinha",
         "modernismo"
       ],
       "habilidades": [
-        "identificar-características-do-modernismo"
+        "identificar-caracteristicas-do-modernismo"
       ],
       "collections": [
         "questions"
@@ -7359,9 +7360,9 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Equivalência de formas",
+      "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "comparacao",
@@ -7370,11 +7371,11 @@ export const literaturaRealismoNaturalismoModernismo = {
       "opcoes": [
         "representa a realidade de forma direta",
         "valoriza o subjetivismo",
-        "explora o fantástico",
+        "explora o fantastico",
         "idealiza personagens"
       ],
       "correta": "representa a realidade de forma direta",
-      "comentario": "A objetividade realista implica representação direta e crítica da realidade.",
+      "comentario": "A objetividade realista implica representacao direta e critica da realidade.",
       "tempoEstimado": 70,
       "tags": [
         "equivalencia",
@@ -7397,14 +7398,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Comparação entre escolas literárias",
+      "subtopico": "Comparacao entre escolas literarias",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um texto que apresenta ruptura formal, linguagem inovadora e crítica social pode ser classificado como",
+      "enunciado": "Um texto que apresenta ruptura formal, linguagem inovadora e critica social pode ser classificado como",
       "opcoes": [
         "Realismo",
         "Modernismo",
@@ -7412,7 +7413,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "Simbolismo"
       ],
       "correta": "Modernismo",
-      "comentario": "A combinação de ruptura formal e inovação caracteriza o Modernismo.",
+      "comentario": "A combinacao de ruptura formal e inovacao caracteriza o Modernismo.",
       "tempoEstimado": 80,
       "tags": [
         "comparacao",
@@ -7435,14 +7436,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Análise de fragmento literário",
+      "subtopico": "Analise de fragmento literario",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um fragmento, o narrador expõe contradições sociais e utiliza linguagem objetiva, sem fragmentação estrutural. Isso indica",
+      "enunciado": "Em um fragmento, o narrador expoe contradicoes sociais e utiliza linguagem objetiva, sem fragmentacao estrutural. Isso indica",
       "opcoes": [
         "Naturalismo",
         "Modernismo",
@@ -7450,7 +7451,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "Simbolismo"
       ],
       "correta": "Realismo",
-      "comentario": "A linguagem objetiva e a crítica social sem ruptura formal indicam o Realismo.",
+      "comentario": "A linguagem objetiva e a critica social sem ruptura formal indicam o Realismo.",
       "tempoEstimado": 80,
       "tags": [
         "analise",
@@ -7473,14 +7474,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Interpretação indireta",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao sugerir que o indivíduo é condicionado por fatores externos e internos, o texto indica uma aproximação entre",
+      "enunciado": "Ao sugerir que o individuo e condicionado por fatores externos e internos, o texto indica uma aproximacao entre",
       "opcoes": [
         "Modernismo e Simbolismo",
         "Arcadismo e Romantismo",
@@ -7488,7 +7489,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "Realismo e Naturalismo"
       ],
       "correta": "Realismo e Naturalismo",
-      "comentario": "A análise interna (Realismo) e a influência externa (Naturalismo) indicam essa aproximação.",
+      "comentario": "A analise interna (Realismo) e a influencia externa (Naturalismo) indicam essa aproximacao.",
       "tempoEstimado": 70,
       "tags": [
         "interpretacao",
@@ -7511,14 +7512,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um texto apresenta análise psicológica, crítica social e linguagem inovadora. Assinale a alternativa correta",
+      "enunciado": "Um texto apresenta analise psicologica, critica social e linguagem inovadora. Assinale a alternativa correta",
       "opcoes": [
         "Modernismo",
         "Realismo",
@@ -7526,14 +7527,14 @@ export const literaturaRealismoNaturalismoModernismo = {
         "Arcadismo"
       ],
       "correta": "Modernismo",
-      "comentario": "A linguagem inovadora é determinante para identificar o Modernismo.",
+      "comentario": "A linguagem inovadora e determinante para identificar o Modernismo.",
       "tempoEstimado": 70,
       "tags": [
         "pegadinha",
         "modernismo"
       ],
       "habilidades": [
-        "identificar-características-do-modernismo"
+        "identificar-caracteristicas-do-modernismo"
       ],
       "collections": [
         "questions"
@@ -7549,22 +7550,22 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Equivalência de formas",
+      "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
       "enunciado": "Afirmar que o Naturalismo enfatiza o determinismo equivale a dizer que ele",
       "opcoes": [
-        "valoriza o livre-arbítrio",
+        "valoriza o livre-arbitrio",
         "explica o comportamento por fatores condicionantes",
         "prioriza a subjetividade",
         "idealiza a realidade"
       ],
       "correta": "explica o comportamento por fatores condicionantes",
-      "comentario": "O determinismo naturalista explica o comportamento por fatores externos e biológicos.",
+      "comentario": "O determinismo naturalista explica o comportamento por fatores externos e biologicos.",
       "tempoEstimado": 70,
       "tags": [
         "equivalencia",
@@ -7587,14 +7588,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Comparação entre escolas literárias",
+      "subtopico": "Comparacao entre escolas literarias",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A presença de crítica social e análise psicológica, sem cientificismo e sem ruptura formal, caracteriza o",
+      "enunciado": "A presenca de critica social e analise psicologica, sem cientificismo e sem ruptura formal, caracteriza o",
       "opcoes": [
         "Modernismo",
         "Naturalismo",
@@ -7602,7 +7603,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "Simbolismo"
       ],
       "correta": "Realismo",
-      "comentario": "Essas características definem o Realismo.",
+      "comentario": "Essas caracteristicas definem o Realismo.",
       "tempoEstimado": 80,
       "tags": [
         "comparacao",
@@ -7625,14 +7626,14 @@ export const literaturaRealismoNaturalismoModernismo = {
       "serie": [
         3
       ],
-      "materia": "Português",
+      "materia": "Portugues",
       "topico": "Literatura: Realismo, Naturalismo e Modernismo",
-      "subtopico": "Interpretação indireta",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um texto que combina ruptura formal, linguagem experimental e crítica social sofisticada indica predominância do",
+      "enunciado": "Um texto que combina ruptura formal, linguagem experimental e critica social sofisticada indica predominancia do",
       "opcoes": [
         "Realismo",
         "Naturalismo",
@@ -7640,7 +7641,7 @@ export const literaturaRealismoNaturalismoModernismo = {
         "Modernismo"
       ],
       "correta": "Modernismo",
-      "comentario": "A combinação de experimentação formal e crítica social é típica do Modernismo.",
+      "comentario": "A combinacao de experimentacao formal e critica social e tepica do Modernismo.",
       "tempoEstimado": 80,
       "tags": [
         "interpretacao",

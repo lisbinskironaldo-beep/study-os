@@ -4,9 +4,9 @@ import { energia } from "./energia/index.js";
 import { brasilAtual } from "./brasil-atual/index.js";
 
 export const geografia3Serie = [
-  geopolitica,
-  meioAmbiente,
+  brasilAtual,
   energia,
-  brasilAtual
+  geopolitica,
+  meioAmbiente
 ];
 

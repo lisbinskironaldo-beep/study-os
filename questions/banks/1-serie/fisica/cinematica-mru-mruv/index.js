@@ -1,45 +1,46 @@
-export const cinematicaMruMruv = {
+﻿export const cinematicaMruMruv = {
   "id": "fisica_cinematica_mru_mruv",
-  "materia": "Física",
+  "materia": "F�sica",
   "serie": [
     1
   ],
-  "topico": "Cinemática: MRU e MRUV",
+  "topico": "Cinem�tica: MRU e MRUV",
   "metadados": {
     "disciplinaId": "fisica",
     "base": "ESCOLAR",
-    "eixo": "Cinemática e descrição do movimento",
+    "seloEditorial": "VERIFICADA",
+    "eixo": "Cinem�tica e descri��o do movimento",
     "frente": "Conceitos iniciais de movimento uniforme e uniformemente variado",
     "searchAliases": [
-      "cinemática",
+      "cinem�tica",
       "mru",
       "mruv",
-      "velocidade média",
-      "aceleração média",
-      "gráficos do movimento"
+      "velocidade m�dia",
+      "acelera��o m�dia",
+      "gr�ficos do movimento"
     ],
     "subtopicosBase": [
       "Referencial, repouso e movimento",
-      "Trajetória, distância e deslocamento",
-      "Velocidade escalar média",
-      "Aceleração média",
-      "Movimento progressivo e retrógrado",
+      "Trajet�ria, dist�ncia e deslocamento",
+      "Velocidade escalar m�dia",
+      "Acelera��o m�dia",
+      "Movimento progressivo e retr�grado",
       "Movimento acelerado e retardado",
       "Grandezas escalares e vetoriais no movimento",
-      "Leitura de gráficos cinemáticos",
-      "Modelagem de situações cotidianas",
-      "Introdução ao MRU e ao MRUV"
+      "Leitura de gr�ficos cinem�ticos",
+      "Modelagem de situa��es cotidianas",
+      "Introdu��o ao MRU e ao MRUV"
     ],
     "habilidadesBase": [
       "identificar referenciais e descrever movimentos",
-      "diferenciar distância percorrida e deslocamento",
-      "calcular velocidade e aceleração médias",
-      "interpretar movimentos progressivos, retrógrados, acelerados e retardados",
-      "ler gráficos da cinemática",
-      "modelar situações de MRU e MRUV"
+      "diferenciar dist�ncia percorrida e deslocamento",
+      "calcular velocidade e acelera��o m�dias",
+      "interpretar movimentos progressivos, retr�grados, acelerados e retardados",
+      "ler gr�ficos da cinem�tica",
+      "modelar situa��es de MRU e MRUV"
     ],
     "auditado": true,
-    "auditadoEm": "2026-04-11",
+    "auditadoEm": "2026-04-12",
     "auditoriaTipo": "varredura-mais-profunda"
   },
   "questoes": [
@@ -48,22 +49,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
       "subtopico": "Referencial, repouso e movimento",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Física, Referencial, repouso e movimento pode ser definido(a) como:",
+      "enunciado": "Em F�sica, Referencial, repouso e movimento pode ser definido(a) como:",
       "opcoes": [
-        "a descrição de repouso ou movimento de um corpo em relação a um referencial adotado",
-        "a diferenciação entre caminho percorrido, comprimento total do percurso e variação entre posição inicial e final",
-        "a razão entre a distância percorrida e o intervalo de tempo gasto no percurso",
-        "a razão entre a variação da velocidade e o intervalo de tempo em que essa variação ocorre"
+        "a descri��o de repouso ou movimento de um corpo em rela��o a um referencial adotado",
+        "a diferencia��o entre caminho percorrido, comprimento total do percurso e varia��o entre posi��o inicial e final",
+        "a raz�o entre a dist�ncia percorrida e o intervalo de tempo gasto no percurso",
+        "a raz�o entre a varia��o da velocidade e o intervalo de tempo em que essa varia��o ocorre"
       ],
-      "correta": "a descrição de repouso ou movimento de um corpo em relação a um referencial adotado",
-      "comentario": "Referencial, repouso e movimento refere-se à descrição de repouso ou movimento de um corpo em relação a um referencial adotado.",
+      "correta": "a descri��o de repouso ou movimento de um corpo em rela��o a um referencial adotado",
+      "comentario": "Referencial, repouso e movimento refere-se � descri��o de repouso ou movimento de um corpo em rela��o a um referencial adotado.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -87,22 +88,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
       "subtopico": "Referencial, repouso e movimento",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: para um passageiro sentado, a mochila ao lado está em repouso; para uma pessoa na calçada, passageiro e mochila se movem com o ônibus Esse caso exemplifica melhor qual subtópico?",
+      "enunciado": "Observe a situa��o: para um passageiro sentado, a mochila ao lado est� em repouso; para uma pessoa na cal�ada, passageiro e mochila se movem com o �nibus Esse caso exemplifica melhor qual subt�pico?",
       "opcoes": [
         "Referencial, repouso e movimento",
-        "Trajetória, distância e deslocamento",
-        "Velocidade escalar média",
-        "Aceleração média"
+        "Trajet�ria, dist�ncia e deslocamento",
+        "Velocidade escalar m�dia",
+        "Acelera��o m�dia"
       ],
       "correta": "Referencial, repouso e movimento",
-      "comentario": "A situação apresentada é um exemplo de referencial, repouso e movimento.",
+      "comentario": "A situa��o apresentada � um exemplo de referencial, repouso e movimento.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -126,22 +127,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
       "subtopico": "Referencial, repouso e movimento",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmação descreve corretamente referencial, repouso e movimento?",
+      "enunciado": "Qual afirma��o descreve corretamente referencial, repouso e movimento?",
       "opcoes": [
-        "A descrição de repouso ou movimento de um corpo em relação a um referencial adotado.",
-        "A diferenciação entre caminho percorrido, comprimento total do percurso e variação entre posição inicial e final.",
-        "A razão entre a distância percorrida e o intervalo de tempo gasto no percurso.",
-        "A razão entre a variação da velocidade e o intervalo de tempo em que essa variação ocorre."
+        "A descri��o de repouso ou movimento de um corpo em rela��o a um referencial adotado.",
+        "A diferencia��o entre caminho percorrido, comprimento total do percurso e varia��o entre posi��o inicial e final.",
+        "A raz�o entre a dist�ncia percorrida e o intervalo de tempo gasto no percurso.",
+        "A raz�o entre a varia��o da velocidade e o intervalo de tempo em que essa varia��o ocorre."
       ],
-      "correta": "A descrição de repouso ou movimento de um corpo em relação a um referencial adotado.",
-      "comentario": "A afirmação correta retoma o sentido central de referencial, repouso e movimento.",
+      "correta": "A descri��o de repouso ou movimento de um corpo em rela��o a um referencial adotado.",
+      "comentario": "A afirma��o correta retoma o sentido central de referencial, repouso e movimento.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -165,22 +166,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
       "subtopico": "Referencial, repouso e movimento",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa incompatível com referencial, repouso e movimento.",
+      "enunciado": "Assinale a alternativa incompat�vel com referencial, repouso e movimento.",
       "opcoes": [
-        "afirmar que um corpo está sempre em repouso ou sempre em movimento sem indicar qualquer referencial.",
-        "a dependência da descrição do movimento em relação ao referencial escolhido.",
-        "movimento e repouso são conceitos relativos ao referencial adotado.",
-        "a descrição de repouso ou movimento de um corpo em relação a um referencial adotado."
+        "afirmar que um corpo est� sempre em repouso ou sempre em movimento sem indicar qualquer referencial.",
+        "a depend�ncia da descri��o do movimento em rela��o ao referencial escolhido.",
+        "movimento e repouso s�o conceitos relativos ao referencial adotado.",
+        "a descri��o de repouso ou movimento de um corpo em rela��o a um referencial adotado."
       ],
-      "correta": "afirmar que um corpo está sempre em repouso ou sempre em movimento sem indicar qualquer referencial.",
-      "comentario": "Afirmar que um corpo está sempre em repouso ou sempre em movimento sem indicar qualquer referencial não representa referencial, repouso e movimento, enquanto as demais alternativas se relacionam com esse subtópico.",
+      "correta": "afirmar que um corpo est� sempre em repouso ou sempre em movimento sem indicar qualquer referencial.",
+      "comentario": "Afirmar que um corpo est� sempre em repouso ou sempre em movimento sem indicar qualquer referencial n�o representa referencial, repouso e movimento, enquanto as demais alternativas se relacionam com esse subt�pico.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -204,22 +205,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
       "subtopico": "Referencial, repouso e movimento",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando se estuda referencial, repouso e movimento, o foco principal está em:",
+      "enunciado": "Quando se estuda referencial, repouso e movimento, o foco principal est� em:",
       "opcoes": [
-        "a dependência da descrição do movimento em relação ao referencial escolhido",
-        "a distinção entre o caminho seguido, a distância percorrida e o deslocamento resultante",
-        "a relação entre percurso realizado e tempo decorrido",
+        "a depend�ncia da descri��o do movimento em rela��o ao referencial escolhido",
+        "a distin��o entre o caminho seguido, a dist�ncia percorrida e o deslocamento resultante",
+        "a rela��o entre percurso realizado e tempo decorrido",
         "a medida da rapidez com que a velocidade varia ao longo do tempo"
       ],
-      "correta": "a dependência da descrição do movimento em relação ao referencial escolhido",
-      "comentario": "Referencial, repouso e movimento volta a atenção para a dependência da descrição do movimento em relação ao referencial escolhido.",
+      "correta": "a depend�ncia da descri��o do movimento em rela��o ao referencial escolhido",
+      "comentario": "Referencial, repouso e movimento volta a aten��o para a depend�ncia da descri��o do movimento em rela��o ao referencial escolhido.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -243,22 +244,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
       "subtopico": "Referencial, repouso e movimento",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferença entre referencial, repouso e movimento e trajetória, distância e deslocamento é que:",
+      "enunciado": "A principal diferen�a entre referencial, repouso e movimento e trajet�ria, dist�ncia e deslocamento � que:",
       "opcoes": [
-        "referencial define o ponto de vista da observação, enquanto trajetória, distância e deslocamento descrevem o caminho e a variação de posição do corpo",
-        "Referencial, repouso e movimento e Trajetória, distância e deslocamento são exatamente a mesma ideia física em qualquer situação.",
-        "Trajetória, distância e deslocamento elimina a necessidade de observar referencial, repouso e movimento.",
-        "Referencial, repouso e movimento depende apenas de opinião pessoal, sem relação com grandezas, modelos ou medidas."
+        "referencial define o ponto de vista da observa��o, enquanto trajet�ria, dist�ncia e deslocamento descrevem o caminho e a varia��o de posi��o do corpo",
+        "Referencial, repouso e movimento e Trajet�ria, dist�ncia e deslocamento s�o exatamente a mesma ideia f�sica em qualquer situa��o.",
+        "Trajet�ria, dist�ncia e deslocamento elimina a necessidade de observar referencial, repouso e movimento.",
+        "Referencial, repouso e movimento depende apenas de opini�o pessoal, sem rela��o com grandezas, modelos ou medidas."
       ],
-      "correta": "referencial define o ponto de vista da observação, enquanto trajetória, distância e deslocamento descrevem o caminho e a variação de posição do corpo",
-      "comentario": "A comparação correta distingue os dois subtópicos sem confundir seus objetos de estudo.",
+      "correta": "referencial define o ponto de vista da observa��o, enquanto trajet�ria, dist�ncia e deslocamento descrevem o caminho e a varia��o de posi��o do corpo",
+      "comentario": "A compara��o correta distingue os dois subt�picos sem confundir seus objetos de estudo.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -282,21 +283,21 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
       "subtopico": "Referencial, repouso e movimento",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma observação experimental, registrou-se o seguinte caso: para um passageiro sentado, a mochila ao lado está em repouso; para uma pessoa na calçada, passageiro e mochila se movem com o ônibus A leitura física mais adequada aponta para:",
+      "enunciado": "Em uma observa��o experimental, registrou-se o seguinte caso: para um passageiro sentado, a mochila ao lado est� em repouso; para uma pessoa na cal�ada, passageiro e mochila se movem com o �nibus A leitura f�sica mais adequada aponta para:",
       "opcoes": [
-        "o caso mostra que a condição de repouso ou movimento depende do referencial escolhido",
-        "Referencial, repouso e movimento mostra que as grandezas envolvidas não precisam ser relacionadas para interpretar o caso.",
-        "Referencial, repouso e movimento prova que a situação dispensa qualquer leitura física ou quantitativa.",
-        "Referencial, repouso e movimento significa que o fenômeno não pode ser descrito por variáveis físicas."
+        "o caso mostra que a condi��o de repouso ou movimento depende do referencial escolhido",
+        "Referencial, repouso e movimento mostra que as grandezas envolvidas n�o precisam ser relacionadas para interpretar o caso.",
+        "Referencial, repouso e movimento prova que a situa��o dispensa qualquer leitura f�sica ou quantitativa.",
+        "Referencial, repouso e movimento significa que o fen�meno n�o pode ser descrito por vari�veis f�sicas."
       ],
-      "correta": "o caso mostra que a condição de repouso ou movimento depende do referencial escolhido",
+      "correta": "o caso mostra que a condi��o de repouso ou movimento depende do referencial escolhido",
       "comentario": "Referencial, repouso e movimento permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
       "tempoEstimado": 25,
       "tags": [
@@ -321,22 +322,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
       "subtopico": "Referencial, repouso e movimento",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação abaixo evidencia referencial, repouso e movimento de maneira mais clara?",
+      "enunciado": "Qual situa��o abaixo evidencia referencial, repouso e movimento de maneira mais clara?",
       "opcoes": [
-        "comparar o movimento de um ônibus do ponto de vista de um passageiro e de um pedestre",
+        "comparar o movimento de um �nibus do ponto de vista de um passageiro e de um pedestre",
         "analisar voltas em uma pista distinguindo percurso total e deslocamento final",
-        "estimar a velocidade média de uma van escolar comparando distância e duração do trajeto",
-        "estimar a aceleração média de uma bicicleta ao sair do repouso em uma rua plana"
+        "estimar a velocidade m�dia de uma van escolar comparando dist�ncia e dura��o do trajeto",
+        "estimar a acelera��o m�dia de uma bicicleta ao sair do repouso em uma rua plana"
       ],
-      "correta": "comparar o movimento de um ônibus do ponto de vista de um passageiro e de um pedestre",
-      "comentario": "A alternativa correta aproxima referencial, repouso e movimento de uma situação concreta.",
+      "correta": "comparar o movimento de um �nibus do ponto de vista de um passageiro e de um pedestre",
+      "comentario": "A alternativa correta aproxima referencial, repouso e movimento de uma situa��o concreta.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -360,22 +361,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
       "subtopico": "Referencial, repouso e movimento",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"para um passageiro sentado, a mochila ao lado está em repouso; para uma pessoa na calçada, passageiro e mochila se movem com o ônibus\", qual conclusão é mais adequada?",
+      "enunciado": "Ao analisar o caso \"para um passageiro sentado, a mochila ao lado est� em repouso; para uma pessoa na cal�ada, passageiro e mochila se movem com o �nibus\", qual conclus�o � mais adequada?",
       "opcoes": [
-        "o caso mostra que a condição de repouso ou movimento depende do referencial escolhido",
-        "A situação indica que referencial, repouso e movimento não possui relação com medidas, variáveis ou interpretação física.",
-        "A situação prova que referencial, repouso e movimento só existe em exemplos teóricos sem uso cotidiano.",
-        "A situação mostra que referencial, repouso e movimento torna desnecessário comparar dados e modelos."
+        "o caso mostra que a condi��o de repouso ou movimento depende do referencial escolhido",
+        "A situa��o indica que referencial, repouso e movimento n�o possui rela��o com medidas, vari�veis ou interpreta��o f�sica.",
+        "A situa��o prova que referencial, repouso e movimento s� existe em exemplos te�ricos sem uso cotidiano.",
+        "A situa��o mostra que referencial, repouso e movimento torna desnecess�rio comparar dados e modelos."
       ],
-      "correta": "o caso mostra que a condição de repouso ou movimento depende do referencial escolhido",
-      "comentario": "A conclusão correta mantém coerência com os dados apresentados e com referencial, repouso e movimento.",
+      "correta": "o caso mostra que a condi��o de repouso ou movimento depende do referencial escolhido",
+      "comentario": "A conclus�o correta mant�m coer�ncia com os dados apresentados e com referencial, repouso e movimento.",
       "tempoEstimado": 35,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -399,8 +400,8 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
       "subtopico": "Referencial, repouso e movimento",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
@@ -408,12 +409,12 @@ export const cinematicaMruMruv = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual pergunta de pesquisa se relaciona melhor com referencial, repouso e movimento?",
       "opcoes": [
-        "como a mudança de referencial altera a descrição do movimento de um mesmo corpo?",
-        "como diferenciar distância percorrida e deslocamento em um percurso de ida e volta?",
-        "como calcular a velocidade escalar média a partir de dados de distância e tempo?",
-        "como a variação da velocidade em certo intervalo de tempo determina a aceleração média?"
+        "como a mudan�a de referencial altera a descri��o do movimento de um mesmo corpo?",
+        "como diferenciar dist�ncia percorrida e deslocamento em um percurso de ida e volta?",
+        "como calcular a velocidade escalar m�dia a partir de dados de dist�ncia e tempo?",
+        "como a varia��o da velocidade em certo intervalo de tempo determina a acelera��o m�dia?"
       ],
-      "correta": "como a mudança de referencial altera a descrição do movimento de um mesmo corpo?",
+      "correta": "como a mudan�a de referencial altera a descri��o do movimento de um mesmo corpo?",
       "comentario": "A pergunta correta investiga referencial, repouso e movimento de forma direta e coerente.",
       "tempoEstimado": 35,
       "tags": [
@@ -438,22 +439,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
       "subtopico": "Referencial, repouso e movimento",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a afirmação que revela compreensão inadequada de referencial, repouso e movimento.",
+      "enunciado": "Assinale a afirma��o que revela compreens�o inadequada de referencial, repouso e movimento.",
       "opcoes": [
-        "A descrição de repouso ou movimento de um corpo em relação a um referencial adotado.",
-        "A dependência da descrição do movimento em relação ao referencial escolhido.",
-        "Movimento e repouso são conceitos relativos ao referencial adotado.",
-        "Repouso e movimento são absolutos e independem do observador."
+        "A descri��o de repouso ou movimento de um corpo em rela��o a um referencial adotado.",
+        "A depend�ncia da descri��o do movimento em rela��o ao referencial escolhido.",
+        "Movimento e repouso s�o conceitos relativos ao referencial adotado.",
+        "Repouso e movimento s�o absolutos e independem do observador."
       ],
-      "correta": "Repouso e movimento são absolutos e independem do observador.",
-      "comentario": "A alternativa incorreta expressa um equívoco comum sobre referencial, repouso e movimento.",
+      "correta": "Repouso e movimento s�o absolutos e independem do observador.",
+      "comentario": "A alternativa incorreta expressa um equ�voco comum sobre referencial, repouso e movimento.",
       "tempoEstimado": 45,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -477,22 +478,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
       "subtopico": "Referencial, repouso e movimento",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre Física, um estudante afirmou: \"um mesmo corpo pode estar em repouso em um referencial e em movimento em outro\". Qual avaliação é mais consistente?",
+      "enunciado": "Em um debate sobre F�sica, um estudante afirmou: \"um mesmo corpo pode estar em repouso em um referencial e em movimento em outro\". Qual avalia��o � mais consistente?",
       "opcoes": [
-        "A afirmação está correta, porque repouso e movimento são conceitos relativos ao referencial usado na observação",
-        "A afirmação está incorreta, porque referencial, repouso e movimento nunca pode ser usada na Física escolar.",
-        "A afirmação é irrelevante, porque referencial, repouso e movimento não se relaciona com interpretação de fenômenos.",
-        "A afirmação está incorreta, porque referencial, repouso e movimento elimina a necessidade de medir e comparar grandezas."
+        "A afirma��o est� correta, porque repouso e movimento s�o conceitos relativos ao referencial usado na observa��o",
+        "A afirma��o est� incorreta, porque referencial, repouso e movimento nunca pode ser usada na F�sica escolar.",
+        "A afirma��o � irrelevante, porque referencial, repouso e movimento n�o se relaciona com interpreta��o de fen�menos.",
+        "A afirma��o est� incorreta, porque referencial, repouso e movimento elimina a necessidade de medir e comparar grandezas."
       ],
-      "correta": "A afirmação está correta, porque repouso e movimento são conceitos relativos ao referencial usado na observação",
-      "comentario": "A avaliação correta recupera o núcleo conceitual de referencial, repouso e movimento.",
+      "correta": "A afirma��o est� correta, porque repouso e movimento s�o conceitos relativos ao referencial usado na observa��o",
+      "comentario": "A avalia��o correta recupera o n�cleo conceitual de referencial, repouso e movimento.",
       "tempoEstimado": 45,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -516,22 +517,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
       "subtopico": "Referencial, repouso e movimento",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se referencial, repouso e movimento fosse ignorado(a) na análise de um problema físico, o resultado mais provável seria:",
+      "enunciado": "Se referencial, repouso e movimento fosse ignorado(a) na an�lise de um problema f�sico, o resultado mais prov�vel seria:",
       "opcoes": [
-        "a descrição do fenômeno ficaria incoerente, porque não seria possível dizer em relação a quem o corpo se move ou permanece em repouso",
-        "o problema continuaria exatamente igual, porque referencial, repouso e movimento não interfere na análise física",
-        "seria possível resolver a situação sem observar nenhuma grandeza, relação ou modelo",
-        "a interpretação ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
+        "a descri��o do fen�meno ficaria incoerente, porque n�o seria poss�vel dizer em rela��o a quem o corpo se move ou permanece em repouso",
+        "o problema continuaria exatamente igual, porque referencial, repouso e movimento n�o interfere na an�lise f�sica",
+        "seria poss�vel resolver a situa��o sem observar nenhuma grandeza, rela��o ou modelo",
+        "a interpreta��o ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
       ],
-      "correta": "a descrição do fenômeno ficaria incoerente, porque não seria possível dizer em relação a quem o corpo se move ou permanece em repouso",
-      "comentario": "Ignorar referencial, repouso e movimento compromete a leitura física e a qualidade da solução.",
+      "correta": "a descri��o do fen�meno ficaria incoerente, porque n�o seria poss�vel dizer em rela��o a quem o corpo se move ou permanece em repouso",
+      "comentario": "Ignorar referencial, repouso e movimento compromete a leitura f�sica e a qualidade da solu��o.",
       "tempoEstimado": 55,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -555,22 +556,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
       "subtopico": "Referencial, repouso e movimento",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente referencial, repouso e movimento a uma situação escolar ou cotidiana?",
+      "enunciado": "Qual alternativa aplica corretamente referencial, repouso e movimento a uma situa��o escolar ou cotidiana?",
       "opcoes": [
-        "comparar o movimento de um ônibus do ponto de vista de um passageiro e de um pedestre",
+        "comparar o movimento de um �nibus do ponto de vista de um passageiro e de um pedestre",
         "comparar uma escada rolante em regime constante com um corpo em queda livre",
-        "prever o tempo de deslocamento entre casa e escola usando distância, velocidade e intervalo de tempo",
-        "interpretar gráficos produzidos em um experimento escolar com carrinho em trilho"
+        "prever o tempo de deslocamento entre casa e escola usando dist�ncia, velocidade e intervalo de tempo",
+        "interpretar gr�ficos produzidos em um experimento escolar com carrinho em trilho"
       ],
-      "correta": "comparar o movimento de um ônibus do ponto de vista de um passageiro e de um pedestre",
-      "comentario": "A aplicação correta mostra como referencial, repouso e movimento aparece em contextos próximos do cotidiano.",
+      "correta": "comparar o movimento de um �nibus do ponto de vista de um passageiro e de um pedestre",
+      "comentario": "A aplica��o correta mostra como referencial, repouso e movimento aparece em contextos pr�ximos do cotidiano.",
       "tempoEstimado": 55,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -594,22 +595,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
       "subtopico": "Referencial, repouso e movimento",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual síntese final representa melhor referencial, repouso e movimento?",
+      "enunciado": "Qual s�ntese final representa melhor referencial, repouso e movimento?",
       "opcoes": [
-        "movimento e repouso são conceitos relativos ao referencial adotado",
-        "trajetória indica o caminho, distância soma o percurso e deslocamento compara posição inicial e final",
-        "velocidade escalar média indica quanto percurso, em média, é realizado por unidade de tempo",
-        "aceleração média expressa quanto a velocidade muda, em média, por unidade de tempo"
+        "movimento e repouso s�o conceitos relativos ao referencial adotado",
+        "trajet�ria indica o caminho, dist�ncia soma o percurso e deslocamento compara posi��o inicial e final",
+        "velocidade escalar m�dia indica quanto percurso, em m�dia, � realizado por unidade de tempo",
+        "acelera��o m�dia expressa quanto a velocidade muda, em m�dia, por unidade de tempo"
       ],
-      "correta": "movimento e repouso são conceitos relativos ao referencial adotado",
-      "comentario": "A síntese correta preserva a definição, o foco e o uso analítico de referencial, repouso e movimento.",
+      "correta": "movimento e repouso s�o conceitos relativos ao referencial adotado",
+      "comentario": "A s�ntese correta preserva a defini��o, o foco e o uso anal�tico de referencial, repouso e movimento.",
       "tempoEstimado": 55,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -633,22 +634,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Trajetória, distância e deslocamento",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Trajet�ria, dist�ncia e deslocamento",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Física, Trajetória, distância e deslocamento pode ser definido(a) como:",
+      "enunciado": "Em F�sica, Trajet�ria, dist�ncia e deslocamento pode ser definido(a) como:",
       "opcoes": [
-        "a diferenciação entre caminho percorrido, comprimento total do percurso e variação entre posição inicial e final",
-        "a descrição de repouso ou movimento de um corpo em relação a um referencial adotado",
-        "a razão entre a distância percorrida e o intervalo de tempo gasto no percurso",
-        "a razão entre a variação da velocidade e o intervalo de tempo em que essa variação ocorre"
+        "a diferencia��o entre caminho percorrido, comprimento total do percurso e varia��o entre posi��o inicial e final",
+        "a descri��o de repouso ou movimento de um corpo em rela��o a um referencial adotado",
+        "a raz�o entre a dist�ncia percorrida e o intervalo de tempo gasto no percurso",
+        "a raz�o entre a varia��o da velocidade e o intervalo de tempo em que essa varia��o ocorre"
       ],
-      "correta": "a diferenciação entre caminho percorrido, comprimento total do percurso e variação entre posição inicial e final",
-      "comentario": "Trajetória, distância e deslocamento refere-se à diferenciação entre caminho percorrido, comprimento total do percurso e variação entre posição inicial e final.",
+      "correta": "a diferencia��o entre caminho percorrido, comprimento total do percurso e varia��o entre posi��o inicial e final",
+      "comentario": "Trajet�ria, dist�ncia e deslocamento refere-se � diferencia��o entre caminho percorrido, comprimento total do percurso e varia��o entre posi��o inicial e final.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -672,22 +673,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Trajetória, distância e deslocamento",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Trajet�ria, dist�ncia e deslocamento",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: um estudante anda 3 metros para leste e depois 3 metros para oeste, voltando ao ponto de partida Esse caso exemplifica melhor qual subtópico?",
+      "enunciado": "Observe a situa��o: um estudante anda 3 metros para leste e depois 3 metros para oeste, voltando ao ponto de partida Esse caso exemplifica melhor qual subt�pico?",
       "opcoes": [
-        "Trajetória, distância e deslocamento",
+        "Trajet�ria, dist�ncia e deslocamento",
         "Referencial, repouso e movimento",
-        "Velocidade escalar média",
-        "Aceleração média"
+        "Velocidade escalar m�dia",
+        "Acelera��o m�dia"
       ],
-      "correta": "Trajetória, distância e deslocamento",
-      "comentario": "A situação apresentada é um exemplo de trajetória, distância e deslocamento.",
+      "correta": "Trajet�ria, dist�ncia e deslocamento",
+      "comentario": "A situa��o apresentada � um exemplo de trajet�ria, dist�ncia e deslocamento.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -711,22 +712,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Trajetória, distância e deslocamento",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Trajet�ria, dist�ncia e deslocamento",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmação descreve corretamente trajetória, distância e deslocamento?",
+      "enunciado": "Qual afirma��o descreve corretamente trajet�ria, dist�ncia e deslocamento?",
       "opcoes": [
-        "A diferenciação entre caminho percorrido, comprimento total do percurso e variação entre posição inicial e final.",
-        "A descrição de repouso ou movimento de um corpo em relação a um referencial adotado.",
-        "A razão entre a distância percorrida e o intervalo de tempo gasto no percurso.",
-        "A razão entre a variação da velocidade e o intervalo de tempo em que essa variação ocorre."
+        "A diferencia��o entre caminho percorrido, comprimento total do percurso e varia��o entre posi��o inicial e final.",
+        "A descri��o de repouso ou movimento de um corpo em rela��o a um referencial adotado.",
+        "A raz�o entre a dist�ncia percorrida e o intervalo de tempo gasto no percurso.",
+        "A raz�o entre a varia��o da velocidade e o intervalo de tempo em que essa varia��o ocorre."
       ],
-      "correta": "A diferenciação entre caminho percorrido, comprimento total do percurso e variação entre posição inicial e final.",
-      "comentario": "A afirmação correta retoma o sentido central de trajetória, distância e deslocamento.",
+      "correta": "A diferencia��o entre caminho percorrido, comprimento total do percurso e varia��o entre posi��o inicial e final.",
+      "comentario": "A afirma��o correta retoma o sentido central de trajet�ria, dist�ncia e deslocamento.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -750,22 +751,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Trajetória, distância e deslocamento",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Trajet�ria, dist�ncia e deslocamento",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa incompatível com trajetória, distância e deslocamento.",
+      "enunciado": "Assinale a alternativa incompat�vel com trajet�ria, dist�ncia e deslocamento.",
       "opcoes": [
-        "tratar deslocamento como simples soma do caminho percorrido em qualquer trajetória.",
-        "a distinção entre o caminho seguido, a distância percorrida e o deslocamento resultante.",
-        "trajetória indica o caminho, distância soma o percurso e deslocamento compara posição inicial e final.",
-        "a diferenciação entre caminho percorrido, comprimento total do percurso e variação entre posição inicial e final."
+        "tratar deslocamento como simples soma do caminho percorrido em qualquer trajet�ria.",
+        "a distin��o entre o caminho seguido, a dist�ncia percorrida e o deslocamento resultante.",
+        "trajet�ria indica o caminho, dist�ncia soma o percurso e deslocamento compara posi��o inicial e final.",
+        "a diferencia��o entre caminho percorrido, comprimento total do percurso e varia��o entre posi��o inicial e final."
       ],
-      "correta": "tratar deslocamento como simples soma do caminho percorrido em qualquer trajetória.",
-      "comentario": "Tratar deslocamento como simples soma do caminho percorrido em qualquer trajetória não representa trajetória, distância e deslocamento, enquanto as demais alternativas se relacionam com esse subtópico.",
+      "correta": "tratar deslocamento como simples soma do caminho percorrido em qualquer trajet�ria.",
+      "comentario": "Tratar deslocamento como simples soma do caminho percorrido em qualquer trajet�ria n�o representa trajet�ria, dist�ncia e deslocamento, enquanto as demais alternativas se relacionam com esse subt�pico.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -789,22 +790,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Trajetória, distância e deslocamento",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Trajet�ria, dist�ncia e deslocamento",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando se estuda trajetória, distância e deslocamento, o foco principal está em:",
+      "enunciado": "Quando se estuda trajet�ria, dist�ncia e deslocamento, o foco principal est� em:",
       "opcoes": [
-        "a distinção entre o caminho seguido, a distância percorrida e o deslocamento resultante",
-        "a dependência da descrição do movimento em relação ao referencial escolhido",
-        "a relação entre percurso realizado e tempo decorrido",
+        "a distin��o entre o caminho seguido, a dist�ncia percorrida e o deslocamento resultante",
+        "a depend�ncia da descri��o do movimento em rela��o ao referencial escolhido",
+        "a rela��o entre percurso realizado e tempo decorrido",
         "a medida da rapidez com que a velocidade varia ao longo do tempo"
       ],
-      "correta": "a distinção entre o caminho seguido, a distância percorrida e o deslocamento resultante",
-      "comentario": "Trajetória, distância e deslocamento volta a atenção para a distinção entre o caminho seguido, a distância percorrida e o deslocamento resultante.",
+      "correta": "a distin��o entre o caminho seguido, a dist�ncia percorrida e o deslocamento resultante",
+      "comentario": "Trajet�ria, dist�ncia e deslocamento volta a aten��o para a distin��o entre o caminho seguido, a dist�ncia percorrida e o deslocamento resultante.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -828,22 +829,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Trajetória, distância e deslocamento",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Trajet�ria, dist�ncia e deslocamento",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferença entre trajetória, distância e deslocamento e velocidade escalar média é que:",
+      "enunciado": "A principal diferen�a entre trajet�ria, dist�ncia e deslocamento e velocidade escalar m�dia � que:",
       "opcoes": [
-        "trajetória, distância e deslocamento descrevem o percurso e a mudança de posição, enquanto velocidade escalar média relaciona percurso e tempo gasto",
-        "Trajetória, distância e deslocamento e Velocidade escalar média são exatamente a mesma ideia física em qualquer situação.",
-        "Velocidade escalar média elimina a necessidade de observar trajetória, distância e deslocamento.",
-        "Trajetória, distância e deslocamento depende apenas de opinião pessoal, sem relação com grandezas, modelos ou medidas."
+        "trajet�ria, dist�ncia e deslocamento descrevem o percurso e a mudan�a de posi��o, enquanto velocidade escalar m�dia relaciona percurso e tempo gasto",
+        "Trajet�ria, dist�ncia e deslocamento e Velocidade escalar m�dia s�o exatamente a mesma ideia f�sica em qualquer situa��o.",
+        "Velocidade escalar m�dia elimina a necessidade de observar trajet�ria, dist�ncia e deslocamento.",
+        "Trajet�ria, dist�ncia e deslocamento depende apenas de opini�o pessoal, sem rela��o com grandezas, modelos ou medidas."
       ],
-      "correta": "trajetória, distância e deslocamento descrevem o percurso e a mudança de posição, enquanto velocidade escalar média relaciona percurso e tempo gasto",
-      "comentario": "A comparação correta distingue os dois subtópicos sem confundir seus objetos de estudo.",
+      "correta": "trajet�ria, dist�ncia e deslocamento descrevem o percurso e a mudan�a de posi��o, enquanto velocidade escalar m�dia relaciona percurso e tempo gasto",
+      "comentario": "A compara��o correta distingue os dois subt�picos sem confundir seus objetos de estudo.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -867,22 +868,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Trajetória, distância e deslocamento",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Trajet�ria, dist�ncia e deslocamento",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma observação experimental, registrou-se o seguinte caso: um estudante anda 3 metros para leste e depois 3 metros para oeste, voltando ao ponto de partida A leitura física mais adequada aponta para:",
+      "enunciado": "Em uma observa��o experimental, registrou-se o seguinte caso: um estudante anda 3 metros para leste e depois 3 metros para oeste, voltando ao ponto de partida A leitura f�sica mais adequada aponta para:",
       "opcoes": [
-        "o caso mostra que é possível percorrer uma distância diferente de zero e terminar com deslocamento nulo",
-        "Trajetória, distância e deslocamento mostra que as grandezas envolvidas não precisam ser relacionadas para interpretar o caso.",
-        "Trajetória, distância e deslocamento prova que a situação dispensa qualquer leitura física ou quantitativa.",
-        "Trajetória, distância e deslocamento significa que o fenômeno não pode ser descrito por variáveis físicas."
+        "o caso mostra que � poss�vel percorrer uma dist�ncia diferente de zero e terminar com deslocamento nulo",
+        "Trajet�ria, dist�ncia e deslocamento mostra que as grandezas envolvidas n�o precisam ser relacionadas para interpretar o caso.",
+        "Trajet�ria, dist�ncia e deslocamento prova que a situa��o dispensa qualquer leitura f�sica ou quantitativa.",
+        "Trajet�ria, dist�ncia e deslocamento significa que o fen�meno n�o pode ser descrito por vari�veis f�sicas."
       ],
-      "correta": "o caso mostra que é possível percorrer uma distância diferente de zero e terminar com deslocamento nulo",
-      "comentario": "Trajetória, distância e deslocamento permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
+      "correta": "o caso mostra que � poss�vel percorrer uma dist�ncia diferente de zero e terminar com deslocamento nulo",
+      "comentario": "Trajet�ria, dist�ncia e deslocamento permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -906,22 +907,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Trajetória, distância e deslocamento",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Trajet�ria, dist�ncia e deslocamento",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação abaixo evidencia trajetória, distância e deslocamento de maneira mais clara?",
+      "enunciado": "Qual situa��o abaixo evidencia trajet�ria, dist�ncia e deslocamento de maneira mais clara?",
       "opcoes": [
         "analisar voltas em uma pista distinguindo percurso total e deslocamento final",
-        "comparar o movimento de um ônibus do ponto de vista de um passageiro e de um pedestre",
-        "estimar a velocidade média de uma van escolar comparando distância e duração do trajeto",
-        "estimar a aceleração média de uma bicicleta ao sair do repouso em uma rua plana"
+        "comparar o movimento de um �nibus do ponto de vista de um passageiro e de um pedestre",
+        "estimar a velocidade m�dia de uma van escolar comparando dist�ncia e dura��o do trajeto",
+        "estimar a acelera��o m�dia de uma bicicleta ao sair do repouso em uma rua plana"
       ],
       "correta": "analisar voltas em uma pista distinguindo percurso total e deslocamento final",
-      "comentario": "A alternativa correta aproxima trajetória, distância e deslocamento de uma situação concreta.",
+      "comentario": "A alternativa correta aproxima trajet�ria, dist�ncia e deslocamento de uma situa��o concreta.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -945,22 +946,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Trajetória, distância e deslocamento",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Trajet�ria, dist�ncia e deslocamento",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"um estudante anda 3 metros para leste e depois 3 metros para oeste, voltando ao ponto de partida\", qual conclusão é mais adequada?",
+      "enunciado": "Ao analisar o caso \"um estudante anda 3 metros para leste e depois 3 metros para oeste, voltando ao ponto de partida\", qual conclus�o � mais adequada?",
       "opcoes": [
-        "o caso mostra que é possível percorrer uma distância diferente de zero e terminar com deslocamento nulo",
-        "A situação indica que trajetória, distância e deslocamento não possui relação com medidas, variáveis ou interpretação física.",
-        "A situação prova que trajetória, distância e deslocamento só existe em exemplos teóricos sem uso cotidiano.",
-        "A situação mostra que trajetória, distância e deslocamento torna desnecessário comparar dados e modelos."
+        "o caso mostra que � poss�vel percorrer uma dist�ncia diferente de zero e terminar com deslocamento nulo",
+        "A situa��o indica que trajet�ria, dist�ncia e deslocamento n�o possui rela��o com medidas, vari�veis ou interpreta��o f�sica.",
+        "A situa��o prova que trajet�ria, dist�ncia e deslocamento s� existe em exemplos te�ricos sem uso cotidiano.",
+        "A situa��o mostra que trajet�ria, dist�ncia e deslocamento torna desnecess�rio comparar dados e modelos."
       ],
-      "correta": "o caso mostra que é possível percorrer uma distância diferente de zero e terminar com deslocamento nulo",
-      "comentario": "A conclusão correta mantém coerência com os dados apresentados e com trajetória, distância e deslocamento.",
+      "correta": "o caso mostra que � poss�vel percorrer uma dist�ncia diferente de zero e terminar com deslocamento nulo",
+      "comentario": "A conclus�o correta mant�m coer�ncia com os dados apresentados e com trajet�ria, dist�ncia e deslocamento.",
       "tempoEstimado": 35,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -984,22 +985,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Trajetória, distância e deslocamento",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Trajet�ria, dist�ncia e deslocamento",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com trajetória, distância e deslocamento?",
+      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com trajet�ria, dist�ncia e deslocamento?",
       "opcoes": [
-        "como diferenciar distância percorrida e deslocamento em um percurso de ida e volta?",
-        "como a mudança de referencial altera a descrição do movimento de um mesmo corpo?",
-        "como calcular a velocidade escalar média a partir de dados de distância e tempo?",
-        "como a variação da velocidade em certo intervalo de tempo determina a aceleração média?"
+        "como diferenciar dist�ncia percorrida e deslocamento em um percurso de ida e volta?",
+        "como a mudan�a de referencial altera a descri��o do movimento de um mesmo corpo?",
+        "como calcular a velocidade escalar m�dia a partir de dados de dist�ncia e tempo?",
+        "como a varia��o da velocidade em certo intervalo de tempo determina a acelera��o m�dia?"
       ],
-      "correta": "como diferenciar distância percorrida e deslocamento em um percurso de ida e volta?",
-      "comentario": "A pergunta correta investiga trajetória, distância e deslocamento de forma direta e coerente.",
+      "correta": "como diferenciar dist�ncia percorrida e deslocamento em um percurso de ida e volta?",
+      "comentario": "A pergunta correta investiga trajet�ria, dist�ncia e deslocamento de forma direta e coerente.",
       "tempoEstimado": 35,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -1023,22 +1024,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Trajetória, distância e deslocamento",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Trajet�ria, dist�ncia e deslocamento",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a afirmação que revela compreensão inadequada de trajetória, distância e deslocamento.",
+      "enunciado": "Assinale a afirma��o que revela compreens�o inadequada de trajet�ria, dist�ncia e deslocamento.",
       "opcoes": [
-        "A diferenciação entre caminho percorrido, comprimento total do percurso e variação entre posição inicial e final.",
-        "A distinção entre o caminho seguido, a distância percorrida e o deslocamento resultante.",
-        "Trajetória indica o caminho, distância soma o percurso e deslocamento compara posição inicial e final.",
-        "Distância percorrida e deslocamento têm sempre o mesmo valor."
+        "A diferencia��o entre caminho percorrido, comprimento total do percurso e varia��o entre posi��o inicial e final.",
+        "A distin��o entre o caminho seguido, a dist�ncia percorrida e o deslocamento resultante.",
+        "Trajet�ria indica o caminho, dist�ncia soma o percurso e deslocamento compara posi��o inicial e final.",
+        "Dist�ncia percorrida e deslocamento t�m sempre o mesmo valor."
       ],
-      "correta": "Distância percorrida e deslocamento têm sempre o mesmo valor.",
-      "comentario": "A alternativa incorreta expressa um equívoco comum sobre trajetória, distância e deslocamento.",
+      "correta": "Dist�ncia percorrida e deslocamento t�m sempre o mesmo valor.",
+      "comentario": "A alternativa incorreta expressa um equ�voco comum sobre trajet�ria, dist�ncia e deslocamento.",
       "tempoEstimado": 45,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -1062,22 +1063,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Trajetória, distância e deslocamento",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Trajet�ria, dist�ncia e deslocamento",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre Física, um estudante afirmou: \"ao retornar ao ponto inicial, a distância pode ser diferente de zero e o deslocamento ser nulo\". Qual avaliação é mais consistente?",
+      "enunciado": "Em um debate sobre F�sica, um estudante afirmou: \"ao retornar ao ponto inicial, a dist�ncia pode ser diferente de zero e o deslocamento ser nulo\". Qual avalia��o � mais consistente?",
       "opcoes": [
-        "A afirmação está correta, porque distância soma o caminho total, enquanto deslocamento depende apenas das posições inicial e final",
-        "A afirmação está incorreta, porque trajetória, distância e deslocamento nunca pode ser usada na Física escolar.",
-        "A afirmação é irrelevante, porque trajetória, distância e deslocamento não se relaciona com interpretação de fenômenos.",
-        "A afirmação está incorreta, porque trajetória, distância e deslocamento elimina a necessidade de medir e comparar grandezas."
+        "A afirma��o est� correta, porque dist�ncia soma o caminho total, enquanto deslocamento depende apenas das posi��es inicial e final",
+        "A afirma��o est� incorreta, porque trajet�ria, dist�ncia e deslocamento nunca pode ser usada na F�sica escolar.",
+        "A afirma��o � irrelevante, porque trajet�ria, dist�ncia e deslocamento n�o se relaciona com interpreta��o de fen�menos.",
+        "A afirma��o est� incorreta, porque trajet�ria, dist�ncia e deslocamento elimina a necessidade de medir e comparar grandezas."
       ],
-      "correta": "A afirmação está correta, porque distância soma o caminho total, enquanto deslocamento depende apenas das posições inicial e final",
-      "comentario": "A avaliação correta recupera o núcleo conceitual de trajetória, distância e deslocamento.",
+      "correta": "A afirma��o est� correta, porque dist�ncia soma o caminho total, enquanto deslocamento depende apenas das posi��es inicial e final",
+      "comentario": "A avalia��o correta recupera o n�cleo conceitual de trajet�ria, dist�ncia e deslocamento.",
       "tempoEstimado": 45,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -1101,22 +1102,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Trajetória, distância e deslocamento",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Trajet�ria, dist�ncia e deslocamento",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se trajetória, distância e deslocamento fosse ignorado(a) na análise de um problema físico, o resultado mais provável seria:",
+      "enunciado": "Se trajet�ria, dist�ncia e deslocamento fosse ignorado(a) na an�lise de um problema f�sico, o resultado mais prov�vel seria:",
       "opcoes": [
-        "a interpretação do percurso ficaria errada, confundindo retorno ao ponto inicial com ausência de movimento",
-        "o problema continuaria exatamente igual, porque trajetória, distância e deslocamento não interfere na análise física",
-        "seria possível resolver a situação sem observar nenhuma grandeza, relação ou modelo",
-        "a interpretação ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
+        "a interpreta��o do percurso ficaria errada, confundindo retorno ao ponto inicial com aus�ncia de movimento",
+        "o problema continuaria exatamente igual, porque trajet�ria, dist�ncia e deslocamento n�o interfere na an�lise f�sica",
+        "seria poss�vel resolver a situa��o sem observar nenhuma grandeza, rela��o ou modelo",
+        "a interpreta��o ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
       ],
-      "correta": "a interpretação do percurso ficaria errada, confundindo retorno ao ponto inicial com ausência de movimento",
-      "comentario": "Ignorar trajetória, distância e deslocamento compromete a leitura física e a qualidade da solução.",
+      "correta": "a interpreta��o do percurso ficaria errada, confundindo retorno ao ponto inicial com aus�ncia de movimento",
+      "comentario": "Ignorar trajet�ria, dist�ncia e deslocamento compromete a leitura f�sica e a qualidade da solu��o.",
       "tempoEstimado": 55,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -1140,22 +1141,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Trajetória, distância e deslocamento",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Trajet�ria, dist�ncia e deslocamento",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente trajetória, distância e deslocamento a uma situação escolar ou cotidiana?",
+      "enunciado": "Qual alternativa aplica corretamente trajet�ria, dist�ncia e deslocamento a uma situa��o escolar ou cotidiana?",
       "opcoes": [
         "analisar voltas em uma pista distinguindo percurso total e deslocamento final",
         "comparar uma escada rolante em regime constante com um corpo em queda livre",
-        "prever o tempo de deslocamento entre casa e escola usando distância, velocidade e intervalo de tempo",
-        "interpretar gráficos produzidos em um experimento escolar com carrinho em trilho"
+        "prever o tempo de deslocamento entre casa e escola usando dist�ncia, velocidade e intervalo de tempo",
+        "interpretar gr�ficos produzidos em um experimento escolar com carrinho em trilho"
       ],
       "correta": "analisar voltas em uma pista distinguindo percurso total e deslocamento final",
-      "comentario": "A aplicação correta mostra como trajetória, distância e deslocamento aparece em contextos próximos do cotidiano.",
+      "comentario": "A aplica��o correta mostra como trajet�ria, dist�ncia e deslocamento aparece em contextos pr�ximos do cotidiano.",
       "tempoEstimado": 55,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -1179,22 +1180,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Trajetória, distância e deslocamento",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Trajet�ria, dist�ncia e deslocamento",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual síntese final representa melhor trajetória, distância e deslocamento?",
+      "enunciado": "Qual s�ntese final representa melhor trajet�ria, dist�ncia e deslocamento?",
       "opcoes": [
-        "trajetória indica o caminho, distância soma o percurso e deslocamento compara posição inicial e final",
-        "movimento e repouso são conceitos relativos ao referencial adotado",
-        "velocidade escalar média indica quanto percurso, em média, é realizado por unidade de tempo",
-        "aceleração média expressa quanto a velocidade muda, em média, por unidade de tempo"
+        "trajet�ria indica o caminho, dist�ncia soma o percurso e deslocamento compara posi��o inicial e final",
+        "movimento e repouso s�o conceitos relativos ao referencial adotado",
+        "velocidade escalar m�dia indica quanto percurso, em m�dia, � realizado por unidade de tempo",
+        "acelera��o m�dia expressa quanto a velocidade muda, em m�dia, por unidade de tempo"
       ],
-      "correta": "trajetória indica o caminho, distância soma o percurso e deslocamento compara posição inicial e final",
-      "comentario": "A síntese correta preserva a definição, o foco e o uso analítico de trajetória, distância e deslocamento.",
+      "correta": "trajet�ria indica o caminho, dist�ncia soma o percurso e deslocamento compara posi��o inicial e final",
+      "comentario": "A s�ntese correta preserva a defini��o, o foco e o uso anal�tico de trajet�ria, dist�ncia e deslocamento.",
       "tempoEstimado": 55,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -1218,22 +1219,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Velocidade escalar média",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Velocidade escalar m�dia",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Física, Velocidade escalar média pode ser definido(a) como:",
+      "enunciado": "Em F�sica, Velocidade escalar m�dia pode ser definido(a) como:",
       "opcoes": [
-        "a razão entre a distância percorrida e o intervalo de tempo gasto no percurso",
-        "a descrição de repouso ou movimento de um corpo em relação a um referencial adotado",
-        "a diferenciação entre caminho percorrido, comprimento total do percurso e variação entre posição inicial e final",
-        "a razão entre a variação da velocidade e o intervalo de tempo em que essa variação ocorre"
+        "a raz�o entre a dist�ncia percorrida e o intervalo de tempo gasto no percurso",
+        "a descri��o de repouso ou movimento de um corpo em rela��o a um referencial adotado",
+        "a diferencia��o entre caminho percorrido, comprimento total do percurso e varia��o entre posi��o inicial e final",
+        "a raz�o entre a varia��o da velocidade e o intervalo de tempo em que essa varia��o ocorre"
       ],
-      "correta": "a razão entre a distância percorrida e o intervalo de tempo gasto no percurso",
-      "comentario": "Velocidade escalar média refere-se à razão entre a distância percorrida e o intervalo de tempo gasto no percurso.",
+      "correta": "a raz�o entre a dist�ncia percorrida e o intervalo de tempo gasto no percurso",
+      "comentario": "Velocidade escalar m�dia refere-se � raz�o entre a dist�ncia percorrida e o intervalo de tempo gasto no percurso.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -1257,22 +1258,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Velocidade escalar média",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Velocidade escalar m�dia",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: um carro percorre 120 quilômetros em 2 horas durante uma viagem Esse caso exemplifica melhor qual subtópico?",
+      "enunciado": "Observe a situa��o: um carro percorre 120 quil�metros em 2 horas durante uma viagem Esse caso exemplifica melhor qual subt�pico?",
       "opcoes": [
-        "Velocidade escalar média",
+        "Velocidade escalar m�dia",
         "Referencial, repouso e movimento",
-        "Trajetória, distância e deslocamento",
-        "Aceleração média"
+        "Trajet�ria, dist�ncia e deslocamento",
+        "Acelera��o m�dia"
       ],
-      "correta": "Velocidade escalar média",
-      "comentario": "A situação apresentada é um exemplo de velocidade escalar média.",
+      "correta": "Velocidade escalar m�dia",
+      "comentario": "A situa��o apresentada � um exemplo de velocidade escalar m�dia.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -1296,22 +1297,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Velocidade escalar média",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Velocidade escalar m�dia",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmação descreve corretamente velocidade escalar média?",
+      "enunciado": "Qual afirma��o descreve corretamente velocidade escalar m�dia?",
       "opcoes": [
-        "A razão entre a distância percorrida e o intervalo de tempo gasto no percurso.",
-        "A descrição de repouso ou movimento de um corpo em relação a um referencial adotado.",
-        "A diferenciação entre caminho percorrido, comprimento total do percurso e variação entre posição inicial e final.",
-        "A razão entre a variação da velocidade e o intervalo de tempo em que essa variação ocorre."
+        "A raz�o entre a dist�ncia percorrida e o intervalo de tempo gasto no percurso.",
+        "A descri��o de repouso ou movimento de um corpo em rela��o a um referencial adotado.",
+        "A diferencia��o entre caminho percorrido, comprimento total do percurso e varia��o entre posi��o inicial e final.",
+        "A raz�o entre a varia��o da velocidade e o intervalo de tempo em que essa varia��o ocorre."
       ],
-      "correta": "A razão entre a distância percorrida e o intervalo de tempo gasto no percurso.",
-      "comentario": "A afirmação correta retoma o sentido central de velocidade escalar média.",
+      "correta": "A raz�o entre a dist�ncia percorrida e o intervalo de tempo gasto no percurso.",
+      "comentario": "A afirma��o correta retoma o sentido central de velocidade escalar m�dia.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -1335,22 +1336,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Velocidade escalar média",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Velocidade escalar m�dia",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa incompatível com velocidade escalar média.",
+      "enunciado": "Assinale a alternativa incompat�vel com velocidade escalar m�dia.",
       "opcoes": [
-        "somar distâncias e tempos sem estabelecer a razão entre essas grandezas.",
-        "a relação entre percurso realizado e tempo decorrido.",
-        "velocidade escalar média indica quanto percurso, em média, é realizado por unidade de tempo.",
-        "a razão entre a distância percorrida e o intervalo de tempo gasto no percurso."
+        "somar dist�ncias e tempos sem estabelecer a raz�o entre essas grandezas.",
+        "a rela��o entre percurso realizado e tempo decorrido.",
+        "velocidade escalar m�dia indica quanto percurso, em m�dia, � realizado por unidade de tempo.",
+        "a raz�o entre a dist�ncia percorrida e o intervalo de tempo gasto no percurso."
       ],
-      "correta": "somar distâncias e tempos sem estabelecer a razão entre essas grandezas.",
-      "comentario": "Somar distâncias e tempos sem estabelecer a razão entre essas grandezas não representa velocidade escalar média, enquanto as demais alternativas se relacionam com esse subtópico.",
+      "correta": "somar dist�ncias e tempos sem estabelecer a raz�o entre essas grandezas.",
+      "comentario": "Somar dist�ncias e tempos sem estabelecer a raz�o entre essas grandezas n�o representa velocidade escalar m�dia, enquanto as demais alternativas se relacionam com esse subt�pico.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -1374,22 +1375,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Velocidade escalar média",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Velocidade escalar m�dia",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando se estuda velocidade escalar média, o foco principal está em:",
+      "enunciado": "Quando se estuda velocidade escalar m�dia, o foco principal est� em:",
       "opcoes": [
-        "a relação entre percurso realizado e tempo decorrido",
-        "a dependência da descrição do movimento em relação ao referencial escolhido",
-        "a distinção entre o caminho seguido, a distância percorrida e o deslocamento resultante",
+        "a rela��o entre percurso realizado e tempo decorrido",
+        "a depend�ncia da descri��o do movimento em rela��o ao referencial escolhido",
+        "a distin��o entre o caminho seguido, a dist�ncia percorrida e o deslocamento resultante",
         "a medida da rapidez com que a velocidade varia ao longo do tempo"
       ],
-      "correta": "a relação entre percurso realizado e tempo decorrido",
-      "comentario": "Velocidade escalar média volta a atenção para a relação entre percurso realizado e tempo decorrido.",
+      "correta": "a rela��o entre percurso realizado e tempo decorrido",
+      "comentario": "Velocidade escalar m�dia volta a aten��o para a rela��o entre percurso realizado e tempo decorrido.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -1413,22 +1414,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Velocidade escalar média",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Velocidade escalar m�dia",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferença entre velocidade escalar média e aceleração média é que:",
+      "enunciado": "A principal diferen�a entre velocidade escalar m�dia e acelera��o m�dia � que:",
       "opcoes": [
-        "velocidade escalar média relaciona distância e tempo, enquanto aceleração média relaciona variação de velocidade e tempo",
-        "Velocidade escalar média e Aceleração média são exatamente a mesma ideia física em qualquer situação.",
-        "Aceleração média elimina a necessidade de observar velocidade escalar média.",
-        "Velocidade escalar média depende apenas de opinião pessoal, sem relação com grandezas, modelos ou medidas."
+        "velocidade escalar m�dia relaciona dist�ncia e tempo, enquanto acelera��o m�dia relaciona varia��o de velocidade e tempo",
+        "Velocidade escalar m�dia e Acelera��o m�dia s�o exatamente a mesma ideia f�sica em qualquer situa��o.",
+        "Acelera��o m�dia elimina a necessidade de observar velocidade escalar m�dia.",
+        "Velocidade escalar m�dia depende apenas de opini�o pessoal, sem rela��o com grandezas, modelos ou medidas."
       ],
-      "correta": "velocidade escalar média relaciona distância e tempo, enquanto aceleração média relaciona variação de velocidade e tempo",
-      "comentario": "A comparação correta distingue os dois subtópicos sem confundir seus objetos de estudo.",
+      "correta": "velocidade escalar m�dia relaciona dist�ncia e tempo, enquanto acelera��o m�dia relaciona varia��o de velocidade e tempo",
+      "comentario": "A compara��o correta distingue os dois subt�picos sem confundir seus objetos de estudo.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -1452,22 +1453,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Velocidade escalar média",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Velocidade escalar m�dia",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma observação experimental, registrou-se o seguinte caso: um carro percorre 120 quilômetros em 2 horas durante uma viagem A leitura física mais adequada aponta para:",
+      "enunciado": "Em uma observa��o experimental, registrou-se o seguinte caso: um carro percorre 120 quil�metros em 2 horas durante uma viagem A leitura f�sica mais adequada aponta para:",
       "opcoes": [
-        "o caso indica que a velocidade média é determinada pela divisão entre distância percorrida e tempo gasto",
-        "Velocidade escalar média mostra que as grandezas envolvidas não precisam ser relacionadas para interpretar o caso.",
-        "Velocidade escalar média prova que a situação dispensa qualquer leitura física ou quantitativa.",
-        "Velocidade escalar média significa que o fenômeno não pode ser descrito por variáveis físicas."
+        "o caso indica que a velocidade m�dia � determinada pela divis�o entre dist�ncia percorrida e tempo gasto",
+        "Velocidade escalar m�dia mostra que as grandezas envolvidas n�o precisam ser relacionadas para interpretar o caso.",
+        "Velocidade escalar m�dia prova que a situa��o dispensa qualquer leitura f�sica ou quantitativa.",
+        "Velocidade escalar m�dia significa que o fen�meno n�o pode ser descrito por vari�veis f�sicas."
       ],
-      "correta": "o caso indica que a velocidade média é determinada pela divisão entre distância percorrida e tempo gasto",
-      "comentario": "Velocidade escalar média permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
+      "correta": "o caso indica que a velocidade m�dia � determinada pela divis�o entre dist�ncia percorrida e tempo gasto",
+      "comentario": "Velocidade escalar m�dia permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -1491,22 +1492,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Velocidade escalar média",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Velocidade escalar m�dia",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação abaixo evidencia velocidade escalar média de maneira mais clara?",
+      "enunciado": "Qual situa��o abaixo evidencia velocidade escalar m�dia de maneira mais clara?",
       "opcoes": [
-        "estimar a velocidade média de uma van escolar comparando distância e duração do trajeto",
-        "comparar o movimento de um ônibus do ponto de vista de um passageiro e de um pedestre",
+        "estimar a velocidade m�dia de uma van escolar comparando dist�ncia e dura��o do trajeto",
+        "comparar o movimento de um �nibus do ponto de vista de um passageiro e de um pedestre",
         "analisar voltas em uma pista distinguindo percurso total e deslocamento final",
-        "estimar a aceleração média de uma bicicleta ao sair do repouso em uma rua plana"
+        "estimar a acelera��o m�dia de uma bicicleta ao sair do repouso em uma rua plana"
       ],
-      "correta": "estimar a velocidade média de uma van escolar comparando distância e duração do trajeto",
-      "comentario": "A alternativa correta aproxima velocidade escalar média de uma situação concreta.",
+      "correta": "estimar a velocidade m�dia de uma van escolar comparando dist�ncia e dura��o do trajeto",
+      "comentario": "A alternativa correta aproxima velocidade escalar m�dia de uma situa��o concreta.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -1530,22 +1531,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Velocidade escalar média",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Velocidade escalar m�dia",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"um carro percorre 120 quilômetros em 2 horas durante uma viagem\", qual conclusão é mais adequada?",
+      "enunciado": "Ao analisar o caso \"um carro percorre 120 quil�metros em 2 horas durante uma viagem\", qual conclus�o � mais adequada?",
       "opcoes": [
-        "o caso indica que a velocidade média é determinada pela divisão entre distância percorrida e tempo gasto",
-        "A situação indica que velocidade escalar média não possui relação com medidas, variáveis ou interpretação física.",
-        "A situação prova que velocidade escalar média só existe em exemplos teóricos sem uso cotidiano.",
-        "A situação mostra que velocidade escalar média torna desnecessário comparar dados e modelos."
+        "o caso indica que a velocidade m�dia � determinada pela divis�o entre dist�ncia percorrida e tempo gasto",
+        "A situa��o indica que velocidade escalar m�dia n�o possui rela��o com medidas, vari�veis ou interpreta��o f�sica.",
+        "A situa��o prova que velocidade escalar m�dia s� existe em exemplos te�ricos sem uso cotidiano.",
+        "A situa��o mostra que velocidade escalar m�dia torna desnecess�rio comparar dados e modelos."
       ],
-      "correta": "o caso indica que a velocidade média é determinada pela divisão entre distância percorrida e tempo gasto",
-      "comentario": "A conclusão correta mantém coerência com os dados apresentados e com velocidade escalar média.",
+      "correta": "o caso indica que a velocidade m�dia � determinada pela divis�o entre dist�ncia percorrida e tempo gasto",
+      "comentario": "A conclus�o correta mant�m coer�ncia com os dados apresentados e com velocidade escalar m�dia.",
       "tempoEstimado": 35,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -1569,22 +1570,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Velocidade escalar média",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Velocidade escalar m�dia",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com velocidade escalar média?",
+      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com velocidade escalar m�dia?",
       "opcoes": [
-        "como calcular a velocidade escalar média a partir de dados de distância e tempo?",
-        "como a mudança de referencial altera a descrição do movimento de um mesmo corpo?",
-        "como diferenciar distância percorrida e deslocamento em um percurso de ida e volta?",
-        "como a variação da velocidade em certo intervalo de tempo determina a aceleração média?"
+        "como calcular a velocidade escalar m�dia a partir de dados de dist�ncia e tempo?",
+        "como a mudan�a de referencial altera a descri��o do movimento de um mesmo corpo?",
+        "como diferenciar dist�ncia percorrida e deslocamento em um percurso de ida e volta?",
+        "como a varia��o da velocidade em certo intervalo de tempo determina a acelera��o m�dia?"
       ],
-      "correta": "como calcular a velocidade escalar média a partir de dados de distância e tempo?",
-      "comentario": "A pergunta correta investiga velocidade escalar média de forma direta e coerente.",
+      "correta": "como calcular a velocidade escalar m�dia a partir de dados de dist�ncia e tempo?",
+      "comentario": "A pergunta correta investiga velocidade escalar m�dia de forma direta e coerente.",
       "tempoEstimado": 35,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -1608,22 +1609,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Velocidade escalar média",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Velocidade escalar m�dia",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a afirmação que revela compreensão inadequada de velocidade escalar média.",
+      "enunciado": "Assinale a afirma��o que revela compreens�o inadequada de velocidade escalar m�dia.",
       "opcoes": [
-        "A razão entre a distância percorrida e o intervalo de tempo gasto no percurso.",
-        "A relação entre percurso realizado e tempo decorrido.",
-        "Velocidade escalar média indica quanto percurso, em média, é realizado por unidade de tempo.",
-        "Velocidade média depende apenas da velocidade final do móvel."
+        "A raz�o entre a dist�ncia percorrida e o intervalo de tempo gasto no percurso.",
+        "A rela��o entre percurso realizado e tempo decorrido.",
+        "Velocidade escalar m�dia indica quanto percurso, em m�dia, � realizado por unidade de tempo.",
+        "Velocidade m�dia depende apenas da velocidade final do m�vel."
       ],
-      "correta": "Velocidade média depende apenas da velocidade final do móvel.",
-      "comentario": "A alternativa incorreta expressa um equívoco comum sobre velocidade escalar média.",
+      "correta": "Velocidade m�dia depende apenas da velocidade final do m�vel.",
+      "comentario": "A alternativa incorreta expressa um equ�voco comum sobre velocidade escalar m�dia.",
       "tempoEstimado": 45,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -1647,22 +1648,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Velocidade escalar média",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Velocidade escalar m�dia",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre Física, um estudante afirmou: \"se um móvel percorre 120 quilômetros em 2 horas, sua velocidade escalar média é 60 quilômetros por hora\". Qual avaliação é mais consistente?",
+      "enunciado": "Em um debate sobre F�sica, um estudante afirmou: \"se um m�vel percorre 120 quil�metros em 2 horas, sua velocidade escalar m�dia � 60 quil�metros por hora\". Qual avalia��o � mais consistente?",
       "opcoes": [
-        "A afirmação está correta, porque a velocidade média é obtida dividindo a distância total pelo tempo total do percurso",
-        "A afirmação está incorreta, porque velocidade escalar média nunca pode ser usada na Física escolar.",
-        "A afirmação é irrelevante, porque velocidade escalar média não se relaciona com interpretação de fenômenos.",
-        "A afirmação está incorreta, porque velocidade escalar média elimina a necessidade de medir e comparar grandezas."
+        "A afirma��o est� correta, porque a velocidade m�dia � obtida dividindo a dist�ncia total pelo tempo total do percurso",
+        "A afirma��o est� incorreta, porque velocidade escalar m�dia nunca pode ser usada na F�sica escolar.",
+        "A afirma��o � irrelevante, porque velocidade escalar m�dia n�o se relaciona com interpreta��o de fen�menos.",
+        "A afirma��o est� incorreta, porque velocidade escalar m�dia elimina a necessidade de medir e comparar grandezas."
       ],
-      "correta": "A afirmação está correta, porque a velocidade média é obtida dividindo a distância total pelo tempo total do percurso",
-      "comentario": "A avaliação correta recupera o núcleo conceitual de velocidade escalar média.",
+      "correta": "A afirma��o est� correta, porque a velocidade m�dia � obtida dividindo a dist�ncia total pelo tempo total do percurso",
+      "comentario": "A avalia��o correta recupera o n�cleo conceitual de velocidade escalar m�dia.",
       "tempoEstimado": 45,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -1686,22 +1687,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Velocidade escalar média",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Velocidade escalar m�dia",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se velocidade escalar média fosse ignorado(a) na análise de um problema físico, o resultado mais provável seria:",
+      "enunciado": "Se velocidade escalar m�dia fosse ignorado(a) na an�lise de um problema f�sico, o resultado mais prov�vel seria:",
       "opcoes": [
-        "a análise do movimento perderia uma medida central para comparar percursos realizados em tempos diferentes",
-        "o problema continuaria exatamente igual, porque velocidade escalar média não interfere na análise física",
-        "seria possível resolver a situação sem observar nenhuma grandeza, relação ou modelo",
-        "a interpretação ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
+        "a an�lise do movimento perderia uma medida central para comparar percursos realizados em tempos diferentes",
+        "o problema continuaria exatamente igual, porque velocidade escalar m�dia n�o interfere na an�lise f�sica",
+        "seria poss�vel resolver a situa��o sem observar nenhuma grandeza, rela��o ou modelo",
+        "a interpreta��o ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
       ],
-      "correta": "a análise do movimento perderia uma medida central para comparar percursos realizados em tempos diferentes",
-      "comentario": "Ignorar velocidade escalar média compromete a leitura física e a qualidade da solução.",
+      "correta": "a an�lise do movimento perderia uma medida central para comparar percursos realizados em tempos diferentes",
+      "comentario": "Ignorar velocidade escalar m�dia compromete a leitura f�sica e a qualidade da solu��o.",
       "tempoEstimado": 55,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -1725,22 +1726,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Velocidade escalar média",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Velocidade escalar m�dia",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente velocidade escalar média a uma situação escolar ou cotidiana?",
+      "enunciado": "Qual alternativa aplica corretamente velocidade escalar m�dia a uma situa��o escolar ou cotidiana?",
       "opcoes": [
-        "estimar a velocidade média de uma van escolar comparando distância e duração do trajeto",
+        "estimar a velocidade m�dia de uma van escolar comparando dist�ncia e dura��o do trajeto",
         "comparar uma escada rolante em regime constante com um corpo em queda livre",
-        "prever o tempo de deslocamento entre casa e escola usando distância, velocidade e intervalo de tempo",
-        "interpretar gráficos produzidos em um experimento escolar com carrinho em trilho"
+        "prever o tempo de deslocamento entre casa e escola usando dist�ncia, velocidade e intervalo de tempo",
+        "interpretar gr�ficos produzidos em um experimento escolar com carrinho em trilho"
       ],
-      "correta": "estimar a velocidade média de uma van escolar comparando distância e duração do trajeto",
-      "comentario": "A aplicação correta mostra como velocidade escalar média aparece em contextos próximos do cotidiano.",
+      "correta": "estimar a velocidade m�dia de uma van escolar comparando dist�ncia e dura��o do trajeto",
+      "comentario": "A aplica��o correta mostra como velocidade escalar m�dia aparece em contextos pr�ximos do cotidiano.",
       "tempoEstimado": 55,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -1764,22 +1765,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Velocidade escalar média",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Velocidade escalar m�dia",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual síntese final representa melhor velocidade escalar média?",
+      "enunciado": "Qual s�ntese final representa melhor velocidade escalar m�dia?",
       "opcoes": [
-        "velocidade escalar média indica quanto percurso, em média, é realizado por unidade de tempo",
-        "movimento e repouso são conceitos relativos ao referencial adotado",
-        "trajetória indica o caminho, distância soma o percurso e deslocamento compara posição inicial e final",
-        "aceleração média expressa quanto a velocidade muda, em média, por unidade de tempo"
+        "velocidade escalar m�dia indica quanto percurso, em m�dia, � realizado por unidade de tempo",
+        "movimento e repouso s�o conceitos relativos ao referencial adotado",
+        "trajet�ria indica o caminho, dist�ncia soma o percurso e deslocamento compara posi��o inicial e final",
+        "acelera��o m�dia expressa quanto a velocidade muda, em m�dia, por unidade de tempo"
       ],
-      "correta": "velocidade escalar média indica quanto percurso, em média, é realizado por unidade de tempo",
-      "comentario": "A síntese correta preserva a definição, o foco e o uso analítico de velocidade escalar média.",
+      "correta": "velocidade escalar m�dia indica quanto percurso, em m�dia, � realizado por unidade de tempo",
+      "comentario": "A s�ntese correta preserva a defini��o, o foco e o uso anal�tico de velocidade escalar m�dia.",
       "tempoEstimado": 55,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -1803,22 +1804,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Aceleração média",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Acelera��o m�dia",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Física, Aceleração média pode ser definido(a) como:",
+      "enunciado": "Em F�sica, Acelera��o m�dia pode ser definido(a) como:",
       "opcoes": [
-        "a razão entre a variação da velocidade e o intervalo de tempo em que essa variação ocorre",
-        "a descrição de repouso ou movimento de um corpo em relação a um referencial adotado",
-        "a diferenciação entre caminho percorrido, comprimento total do percurso e variação entre posição inicial e final",
-        "a razão entre a distância percorrida e o intervalo de tempo gasto no percurso"
+        "a raz�o entre a varia��o da velocidade e o intervalo de tempo em que essa varia��o ocorre",
+        "a descri��o de repouso ou movimento de um corpo em rela��o a um referencial adotado",
+        "a diferencia��o entre caminho percorrido, comprimento total do percurso e varia��o entre posi��o inicial e final",
+        "a raz�o entre a dist�ncia percorrida e o intervalo de tempo gasto no percurso"
       ],
-      "correta": "a razão entre a variação da velocidade e o intervalo de tempo em que essa variação ocorre",
-      "comentario": "Aceleração média refere-se à razão entre a variação da velocidade e o intervalo de tempo em que essa variação ocorre.",
+      "correta": "a raz�o entre a varia��o da velocidade e o intervalo de tempo em que essa varia��o ocorre",
+      "comentario": "Acelera��o m�dia refere-se � raz�o entre a varia��o da velocidade e o intervalo de tempo em que essa varia��o ocorre.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -1842,22 +1843,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Aceleração média",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Acelera��o m�dia",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: um ciclista aumenta sua velocidade de 2 metros por segundo para 8 metros por segundo em 3 segundos Esse caso exemplifica melhor qual subtópico?",
+      "enunciado": "Observe a situa��o: um ciclista aumenta sua velocidade de 2 metros por segundo para 8 metros por segundo em 3 segundos Esse caso exemplifica melhor qual subt�pico?",
       "opcoes": [
-        "Aceleração média",
+        "Acelera��o m�dia",
         "Referencial, repouso e movimento",
-        "Trajetória, distância e deslocamento",
-        "Velocidade escalar média"
+        "Trajet�ria, dist�ncia e deslocamento",
+        "Velocidade escalar m�dia"
       ],
-      "correta": "Aceleração média",
-      "comentario": "A situação apresentada é um exemplo de aceleração média.",
+      "correta": "Acelera��o m�dia",
+      "comentario": "A situa��o apresentada � um exemplo de acelera��o m�dia.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -1881,22 +1882,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Aceleração média",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Acelera��o m�dia",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmação descreve corretamente aceleração média?",
+      "enunciado": "Qual afirma��o descreve corretamente acelera��o m�dia?",
       "opcoes": [
-        "A razão entre a variação da velocidade e o intervalo de tempo em que essa variação ocorre.",
-        "A descrição de repouso ou movimento de um corpo em relação a um referencial adotado.",
-        "A diferenciação entre caminho percorrido, comprimento total do percurso e variação entre posição inicial e final.",
-        "A razão entre a distância percorrida e o intervalo de tempo gasto no percurso."
+        "A raz�o entre a varia��o da velocidade e o intervalo de tempo em que essa varia��o ocorre.",
+        "A descri��o de repouso ou movimento de um corpo em rela��o a um referencial adotado.",
+        "A diferencia��o entre caminho percorrido, comprimento total do percurso e varia��o entre posi��o inicial e final.",
+        "A raz�o entre a dist�ncia percorrida e o intervalo de tempo gasto no percurso."
       ],
-      "correta": "A razão entre a variação da velocidade e o intervalo de tempo em que essa variação ocorre.",
-      "comentario": "A afirmação correta retoma o sentido central de aceleração média.",
+      "correta": "A raz�o entre a varia��o da velocidade e o intervalo de tempo em que essa varia��o ocorre.",
+      "comentario": "A afirma��o correta retoma o sentido central de acelera��o m�dia.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -1920,22 +1921,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Aceleração média",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Acelera��o m�dia",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa incompatível com aceleração média.",
+      "enunciado": "Assinale a alternativa incompat�vel com acelera��o m�dia.",
       "opcoes": [
-        "associar aceleração apenas a corpos muito rápidos, sem verificar se houve variação de velocidade.",
+        "associar acelera��o apenas a corpos muito r�pidos, sem verificar se houve varia��o de velocidade.",
         "a medida da rapidez com que a velocidade varia ao longo do tempo.",
-        "aceleração média expressa quanto a velocidade muda, em média, por unidade de tempo.",
-        "a razão entre a variação da velocidade e o intervalo de tempo em que essa variação ocorre."
+        "acelera��o m�dia expressa quanto a velocidade muda, em m�dia, por unidade de tempo.",
+        "a raz�o entre a varia��o da velocidade e o intervalo de tempo em que essa varia��o ocorre."
       ],
-      "correta": "associar aceleração apenas a corpos muito rápidos, sem verificar se houve variação de velocidade.",
-      "comentario": "Associar aceleração apenas a corpos muito rápidos, sem verificar se houve variação de velocidade não representa aceleração média, enquanto as demais alternativas se relacionam com esse subtópico.",
+      "correta": "associar acelera��o apenas a corpos muito r�pidos, sem verificar se houve varia��o de velocidade.",
+      "comentario": "Associar acelera��o apenas a corpos muito r�pidos, sem verificar se houve varia��o de velocidade n�o representa acelera��o m�dia, enquanto as demais alternativas se relacionam com esse subt�pico.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -1959,22 +1960,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Aceleração média",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Acelera��o m�dia",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando se estuda aceleração média, o foco principal está em:",
+      "enunciado": "Quando se estuda acelera��o m�dia, o foco principal est� em:",
       "opcoes": [
         "a medida da rapidez com que a velocidade varia ao longo do tempo",
-        "a dependência da descrição do movimento em relação ao referencial escolhido",
-        "a distinção entre o caminho seguido, a distância percorrida e o deslocamento resultante",
-        "a relação entre percurso realizado e tempo decorrido"
+        "a depend�ncia da descri��o do movimento em rela��o ao referencial escolhido",
+        "a distin��o entre o caminho seguido, a dist�ncia percorrida e o deslocamento resultante",
+        "a rela��o entre percurso realizado e tempo decorrido"
       ],
       "correta": "a medida da rapidez com que a velocidade varia ao longo do tempo",
-      "comentario": "Aceleração média volta a atenção para a medida da rapidez com que a velocidade varia ao longo do tempo.",
+      "comentario": "Acelera��o m�dia volta a aten��o para a medida da rapidez com que a velocidade varia ao longo do tempo.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -1998,22 +1999,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Aceleração média",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Acelera��o m�dia",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferença entre aceleração média e velocidade escalar média é que:",
+      "enunciado": "A principal diferen�a entre acelera��o m�dia e velocidade escalar m�dia � que:",
       "opcoes": [
-        "aceleração média mede a mudança da velocidade no tempo, enquanto velocidade média mede o percurso realizado por unidade de tempo",
-        "Aceleração média e Velocidade escalar média são exatamente a mesma ideia física em qualquer situação.",
-        "Velocidade escalar média elimina a necessidade de observar aceleração média.",
-        "Aceleração média depende apenas de opinião pessoal, sem relação com grandezas, modelos ou medidas."
+        "acelera��o m�dia mede a mudan�a da velocidade no tempo, enquanto velocidade m�dia mede o percurso realizado por unidade de tempo",
+        "Acelera��o m�dia e Velocidade escalar m�dia s�o exatamente a mesma ideia f�sica em qualquer situa��o.",
+        "Velocidade escalar m�dia elimina a necessidade de observar acelera��o m�dia.",
+        "Acelera��o m�dia depende apenas de opini�o pessoal, sem rela��o com grandezas, modelos ou medidas."
       ],
-      "correta": "aceleração média mede a mudança da velocidade no tempo, enquanto velocidade média mede o percurso realizado por unidade de tempo",
-      "comentario": "A comparação correta distingue os dois subtópicos sem confundir seus objetos de estudo.",
+      "correta": "acelera��o m�dia mede a mudan�a da velocidade no tempo, enquanto velocidade m�dia mede o percurso realizado por unidade de tempo",
+      "comentario": "A compara��o correta distingue os dois subt�picos sem confundir seus objetos de estudo.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -2037,22 +2038,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Aceleração média",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Acelera��o m�dia",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma observação experimental, registrou-se o seguinte caso: um ciclista aumenta sua velocidade de 2 metros por segundo para 8 metros por segundo em 3 segundos A leitura física mais adequada aponta para:",
+      "enunciado": "Em uma observa��o experimental, registrou-se o seguinte caso: um ciclista aumenta sua velocidade de 2 metros por segundo para 8 metros por segundo em 3 segundos A leitura f�sica mais adequada aponta para:",
       "opcoes": [
-        "o caso mostra que a aceleração média depende da variação de velocidade dividida pelo tempo correspondente",
-        "Aceleração média mostra que as grandezas envolvidas não precisam ser relacionadas para interpretar o caso.",
-        "Aceleração média prova que a situação dispensa qualquer leitura física ou quantitativa.",
-        "Aceleração média significa que o fenômeno não pode ser descrito por variáveis físicas."
+        "o caso mostra que a acelera��o m�dia depende da varia��o de velocidade dividida pelo tempo correspondente",
+        "Acelera��o m�dia mostra que as grandezas envolvidas n�o precisam ser relacionadas para interpretar o caso.",
+        "Acelera��o m�dia prova que a situa��o dispensa qualquer leitura f�sica ou quantitativa.",
+        "Acelera��o m�dia significa que o fen�meno n�o pode ser descrito por vari�veis f�sicas."
       ],
-      "correta": "o caso mostra que a aceleração média depende da variação de velocidade dividida pelo tempo correspondente",
-      "comentario": "Aceleração média permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
+      "correta": "o caso mostra que a acelera��o m�dia depende da varia��o de velocidade dividida pelo tempo correspondente",
+      "comentario": "Acelera��o m�dia permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -2076,22 +2077,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Aceleração média",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Acelera��o m�dia",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação abaixo evidencia aceleração média de maneira mais clara?",
+      "enunciado": "Qual situa��o abaixo evidencia acelera��o m�dia de maneira mais clara?",
       "opcoes": [
-        "estimar a aceleração média de uma bicicleta ao sair do repouso em uma rua plana",
-        "comparar o movimento de um ônibus do ponto de vista de um passageiro e de um pedestre",
+        "estimar a acelera��o m�dia de uma bicicleta ao sair do repouso em uma rua plana",
+        "comparar o movimento de um �nibus do ponto de vista de um passageiro e de um pedestre",
         "analisar voltas em uma pista distinguindo percurso total e deslocamento final",
-        "estimar a velocidade média de uma van escolar comparando distância e duração do trajeto"
+        "estimar a velocidade m�dia de uma van escolar comparando dist�ncia e dura��o do trajeto"
       ],
-      "correta": "estimar a aceleração média de uma bicicleta ao sair do repouso em uma rua plana",
-      "comentario": "A alternativa correta aproxima aceleração média de uma situação concreta.",
+      "correta": "estimar a acelera��o m�dia de uma bicicleta ao sair do repouso em uma rua plana",
+      "comentario": "A alternativa correta aproxima acelera��o m�dia de uma situa��o concreta.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -2115,22 +2116,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Aceleração média",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Acelera��o m�dia",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"um ciclista aumenta sua velocidade de 2 metros por segundo para 8 metros por segundo em 3 segundos\", qual conclusão é mais adequada?",
+      "enunciado": "Ao analisar o caso \"um ciclista aumenta sua velocidade de 2 metros por segundo para 8 metros por segundo em 3 segundos\", qual conclus�o � mais adequada?",
       "opcoes": [
-        "o caso mostra que a aceleração média depende da variação de velocidade dividida pelo tempo correspondente",
-        "A situação indica que aceleração média não possui relação com medidas, variáveis ou interpretação física.",
-        "A situação prova que aceleração média só existe em exemplos teóricos sem uso cotidiano.",
-        "A situação mostra que aceleração média torna desnecessário comparar dados e modelos."
+        "o caso mostra que a acelera��o m�dia depende da varia��o de velocidade dividida pelo tempo correspondente",
+        "A situa��o indica que acelera��o m�dia n�o possui rela��o com medidas, vari�veis ou interpreta��o f�sica.",
+        "A situa��o prova que acelera��o m�dia s� existe em exemplos te�ricos sem uso cotidiano.",
+        "A situa��o mostra que acelera��o m�dia torna desnecess�rio comparar dados e modelos."
       ],
-      "correta": "o caso mostra que a aceleração média depende da variação de velocidade dividida pelo tempo correspondente",
-      "comentario": "A conclusão correta mantém coerência com os dados apresentados e com aceleração média.",
+      "correta": "o caso mostra que a acelera��o m�dia depende da varia��o de velocidade dividida pelo tempo correspondente",
+      "comentario": "A conclus�o correta mant�m coer�ncia com os dados apresentados e com acelera��o m�dia.",
       "tempoEstimado": 35,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -2154,22 +2155,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Aceleração média",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Acelera��o m�dia",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com aceleração média?",
+      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com acelera��o m�dia?",
       "opcoes": [
-        "como a variação da velocidade em certo intervalo de tempo determina a aceleração média?",
-        "como a mudança de referencial altera a descrição do movimento de um mesmo corpo?",
-        "como diferenciar distância percorrida e deslocamento em um percurso de ida e volta?",
-        "como calcular a velocidade escalar média a partir de dados de distância e tempo?"
+        "como a varia��o da velocidade em certo intervalo de tempo determina a acelera��o m�dia?",
+        "como a mudan�a de referencial altera a descri��o do movimento de um mesmo corpo?",
+        "como diferenciar dist�ncia percorrida e deslocamento em um percurso de ida e volta?",
+        "como calcular a velocidade escalar m�dia a partir de dados de dist�ncia e tempo?"
       ],
-      "correta": "como a variação da velocidade em certo intervalo de tempo determina a aceleração média?",
-      "comentario": "A pergunta correta investiga aceleração média de forma direta e coerente.",
+      "correta": "como a varia��o da velocidade em certo intervalo de tempo determina a acelera��o m�dia?",
+      "comentario": "A pergunta correta investiga acelera��o m�dia de forma direta e coerente.",
       "tempoEstimado": 35,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -2193,22 +2194,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Aceleração média",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Acelera��o m�dia",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a afirmação que revela compreensão inadequada de aceleração média.",
+      "enunciado": "Assinale a afirma��o que revela compreens�o inadequada de acelera��o m�dia.",
       "opcoes": [
-        "A razão entre a variação da velocidade e o intervalo de tempo em que essa variação ocorre.",
+        "A raz�o entre a varia��o da velocidade e o intervalo de tempo em que essa varia��o ocorre.",
         "A medida da rapidez com que a velocidade varia ao longo do tempo.",
-        "Aceleração média expressa quanto a velocidade muda, em média, por unidade de tempo.",
-        "Aceleração só existe quando a velocidade do corpo é muito alta."
+        "Acelera��o m�dia expressa quanto a velocidade muda, em m�dia, por unidade de tempo.",
+        "Acelera��o s� existe quando a velocidade do corpo � muito alta."
       ],
-      "correta": "Aceleração só existe quando a velocidade do corpo é muito alta.",
-      "comentario": "A alternativa incorreta expressa um equívoco comum sobre aceleração média.",
+      "correta": "Acelera��o s� existe quando a velocidade do corpo � muito alta.",
+      "comentario": "A alternativa incorreta expressa um equ�voco comum sobre acelera��o m�dia.",
       "tempoEstimado": 45,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -2232,22 +2233,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Aceleração média",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Acelera��o m�dia",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre Física, um estudante afirmou: \"mesmo com velocidades baixas, há aceleração quando a velocidade varia ao longo do tempo\". Qual avaliação é mais consistente?",
+      "enunciado": "Em um debate sobre F�sica, um estudante afirmou: \"mesmo com velocidades baixas, h� acelera��o quando a velocidade varia ao longo do tempo\". Qual avalia��o � mais consistente?",
       "opcoes": [
-        "A afirmação está correta, porque a existência de aceleração depende da variação da velocidade, e não do fato de a velocidade ser alta ou baixa",
-        "A afirmação está incorreta, porque aceleração média nunca pode ser usada na Física escolar.",
-        "A afirmação é irrelevante, porque aceleração média não se relaciona com interpretação de fenômenos.",
-        "A afirmação está incorreta, porque aceleração média elimina a necessidade de medir e comparar grandezas."
+        "A afirma��o est� correta, porque a exist�ncia de acelera��o depende da varia��o da velocidade, e n�o do fato de a velocidade ser alta ou baixa",
+        "A afirma��o est� incorreta, porque acelera��o m�dia nunca pode ser usada na F�sica escolar.",
+        "A afirma��o � irrelevante, porque acelera��o m�dia n�o se relaciona com interpreta��o de fen�menos.",
+        "A afirma��o est� incorreta, porque acelera��o m�dia elimina a necessidade de medir e comparar grandezas."
       ],
-      "correta": "A afirmação está correta, porque a existência de aceleração depende da variação da velocidade, e não do fato de a velocidade ser alta ou baixa",
-      "comentario": "A avaliação correta recupera o núcleo conceitual de aceleração média.",
+      "correta": "A afirma��o est� correta, porque a exist�ncia de acelera��o depende da varia��o da velocidade, e n�o do fato de a velocidade ser alta ou baixa",
+      "comentario": "A avalia��o correta recupera o n�cleo conceitual de acelera��o m�dia.",
       "tempoEstimado": 45,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -2271,22 +2272,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Aceleração média",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Acelera��o m�dia",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se aceleração média fosse ignorado(a) na análise de um problema físico, o resultado mais provável seria:",
+      "enunciado": "Se acelera��o m�dia fosse ignorado(a) na an�lise de um problema f�sico, o resultado mais prov�vel seria:",
       "opcoes": [
-        "seria impossível avaliar corretamente arrancadas, freadas e mudanças de ritmo em um movimento",
-        "o problema continuaria exatamente igual, porque aceleração média não interfere na análise física",
-        "seria possível resolver a situação sem observar nenhuma grandeza, relação ou modelo",
-        "a interpretação ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
+        "seria imposs�vel avaliar corretamente arrancadas, freadas e mudan�as de ritmo em um movimento",
+        "o problema continuaria exatamente igual, porque acelera��o m�dia n�o interfere na an�lise f�sica",
+        "seria poss�vel resolver a situa��o sem observar nenhuma grandeza, rela��o ou modelo",
+        "a interpreta��o ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
       ],
-      "correta": "seria impossível avaliar corretamente arrancadas, freadas e mudanças de ritmo em um movimento",
-      "comentario": "Ignorar aceleração média compromete a leitura física e a qualidade da solução.",
+      "correta": "seria imposs�vel avaliar corretamente arrancadas, freadas e mudan�as de ritmo em um movimento",
+      "comentario": "Ignorar acelera��o m�dia compromete a leitura f�sica e a qualidade da solu��o.",
       "tempoEstimado": 55,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -2310,22 +2311,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Aceleração média",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Acelera��o m�dia",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente aceleração média a uma situação escolar ou cotidiana?",
+      "enunciado": "Qual alternativa aplica corretamente acelera��o m�dia a uma situa��o escolar ou cotidiana?",
       "opcoes": [
-        "estimar a aceleração média de uma bicicleta ao sair do repouso em uma rua plana",
+        "estimar a acelera��o m�dia de uma bicicleta ao sair do repouso em uma rua plana",
         "comparar uma escada rolante em regime constante com um corpo em queda livre",
-        "prever o tempo de deslocamento entre casa e escola usando distância, velocidade e intervalo de tempo",
-        "interpretar gráficos produzidos em um experimento escolar com carrinho em trilho"
+        "prever o tempo de deslocamento entre casa e escola usando dist�ncia, velocidade e intervalo de tempo",
+        "interpretar gr�ficos produzidos em um experimento escolar com carrinho em trilho"
       ],
-      "correta": "estimar a aceleração média de uma bicicleta ao sair do repouso em uma rua plana",
-      "comentario": "A aplicação correta mostra como aceleração média aparece em contextos próximos do cotidiano.",
+      "correta": "estimar a acelera��o m�dia de uma bicicleta ao sair do repouso em uma rua plana",
+      "comentario": "A aplica��o correta mostra como acelera��o m�dia aparece em contextos pr�ximos do cotidiano.",
       "tempoEstimado": 55,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -2349,22 +2350,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Aceleração média",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Acelera��o m�dia",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual síntese final representa melhor aceleração média?",
+      "enunciado": "Qual s�ntese final representa melhor acelera��o m�dia?",
       "opcoes": [
-        "aceleração média expressa quanto a velocidade muda, em média, por unidade de tempo",
-        "movimento e repouso são conceitos relativos ao referencial adotado",
-        "trajetória indica o caminho, distância soma o percurso e deslocamento compara posição inicial e final",
-        "velocidade escalar média indica quanto percurso, em média, é realizado por unidade de tempo"
+        "acelera��o m�dia expressa quanto a velocidade muda, em m�dia, por unidade de tempo",
+        "movimento e repouso s�o conceitos relativos ao referencial adotado",
+        "trajet�ria indica o caminho, dist�ncia soma o percurso e deslocamento compara posi��o inicial e final",
+        "velocidade escalar m�dia indica quanto percurso, em m�dia, � realizado por unidade de tempo"
       ],
-      "correta": "aceleração média expressa quanto a velocidade muda, em média, por unidade de tempo",
-      "comentario": "A síntese correta preserva a definição, o foco e o uso analítico de aceleração média.",
+      "correta": "acelera��o m�dia expressa quanto a velocidade muda, em m�dia, por unidade de tempo",
+      "comentario": "A s�ntese correta preserva a defini��o, o foco e o uso anal�tico de acelera��o m�dia.",
       "tempoEstimado": 55,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -2388,22 +2389,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Movimento progressivo e retrógrado",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Movimento progressivo e retr�grado",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Física, Movimento progressivo e retrógrado pode ser definido(a) como:",
+      "enunciado": "Em F�sica, Movimento progressivo e retr�grado pode ser definido(a) como:",
       "opcoes": [
-        "a classificação do movimento conforme a posição aumenta ou diminui em relação ao eixo orientado adotado",
-        "a descrição de repouso ou movimento de um corpo em relação a um referencial adotado",
-        "a diferenciação entre caminho percorrido, comprimento total do percurso e variação entre posição inicial e final",
-        "a razão entre a distância percorrida e o intervalo de tempo gasto no percurso"
+        "a classifica��o do movimento conforme a posi��o aumenta ou diminui em rela��o ao eixo orientado adotado",
+        "a descri��o de repouso ou movimento de um corpo em rela��o a um referencial adotado",
+        "a diferencia��o entre caminho percorrido, comprimento total do percurso e varia��o entre posi��o inicial e final",
+        "a raz�o entre a dist�ncia percorrida e o intervalo de tempo gasto no percurso"
       ],
-      "correta": "a classificação do movimento conforme a posição aumenta ou diminui em relação ao eixo orientado adotado",
-      "comentario": "Movimento progressivo e retrógrado refere-se à classificação do movimento conforme a posição aumenta ou diminui em relação ao eixo orientado adotado.",
+      "correta": "a classifica��o do movimento conforme a posi��o aumenta ou diminui em rela��o ao eixo orientado adotado",
+      "comentario": "Movimento progressivo e retr�grado refere-se � classifica��o do movimento conforme a posi��o aumenta ou diminui em rela��o ao eixo orientado adotado.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -2427,22 +2428,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Movimento progressivo e retrógrado",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Movimento progressivo e retr�grado",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: em uma reta orientada para a direita, um móvel passa de 5 metros para 12 metros; em outro trecho, passa de 12 metros para 5 metros Esse caso exemplifica melhor qual subtópico?",
+      "enunciado": "Observe a situa��o: em uma reta orientada para a direita, um m�vel passa de 5 metros para 12 metros; em outro trecho, passa de 12 metros para 5 metros Esse caso exemplifica melhor qual subt�pico?",
       "opcoes": [
-        "Movimento progressivo e retrógrado",
+        "Movimento progressivo e retr�grado",
         "Referencial, repouso e movimento",
-        "Trajetória, distância e deslocamento",
-        "Velocidade escalar média"
+        "Trajet�ria, dist�ncia e deslocamento",
+        "Velocidade escalar m�dia"
       ],
-      "correta": "Movimento progressivo e retrógrado",
-      "comentario": "A situação apresentada é um exemplo de movimento progressivo e retrógrado.",
+      "correta": "Movimento progressivo e retr�grado",
+      "comentario": "A situa��o apresentada � um exemplo de movimento progressivo e retr�grado.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -2466,22 +2467,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Movimento progressivo e retrógrado",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Movimento progressivo e retr�grado",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmação descreve corretamente movimento progressivo e retrógrado?",
+      "enunciado": "Qual afirma��o descreve corretamente movimento progressivo e retr�grado?",
       "opcoes": [
-        "A classificação do movimento conforme a posição aumenta ou diminui em relação ao eixo orientado adotado.",
-        "A descrição de repouso ou movimento de um corpo em relação a um referencial adotado.",
-        "A diferenciação entre caminho percorrido, comprimento total do percurso e variação entre posição inicial e final.",
-        "A razão entre a distância percorrida e o intervalo de tempo gasto no percurso."
+        "A classifica��o do movimento conforme a posi��o aumenta ou diminui em rela��o ao eixo orientado adotado.",
+        "A descri��o de repouso ou movimento de um corpo em rela��o a um referencial adotado.",
+        "A diferencia��o entre caminho percorrido, comprimento total do percurso e varia��o entre posi��o inicial e final.",
+        "A raz�o entre a dist�ncia percorrida e o intervalo de tempo gasto no percurso."
       ],
-      "correta": "A classificação do movimento conforme a posição aumenta ou diminui em relação ao eixo orientado adotado.",
-      "comentario": "A afirmação correta retoma o sentido central de movimento progressivo e retrógrado.",
+      "correta": "A classifica��o do movimento conforme a posi��o aumenta ou diminui em rela��o ao eixo orientado adotado.",
+      "comentario": "A afirma��o correta retoma o sentido central de movimento progressivo e retr�grado.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -2505,22 +2506,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Movimento progressivo e retrógrado",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Movimento progressivo e retr�grado",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa incompatível com movimento progressivo e retrógrado.",
+      "enunciado": "Assinale a alternativa incompat�vel com movimento progressivo e retr�grado.",
       "opcoes": [
-        "definir movimento progressivo apenas pela rapidez do corpo, sem observar o sinal da posição.",
-        "o sentido da variação da posição em relação a um eixo orientado.",
-        "movimento progressivo e retrógrado depende do sinal da variação da posição no eixo adotado.",
-        "a classificação do movimento conforme a posição aumenta ou diminui em relação ao eixo orientado adotado."
+        "definir movimento progressivo apenas pela rapidez do corpo, sem observar o sinal da posi��o.",
+        "o sentido da varia��o da posi��o em rela��o a um eixo orientado.",
+        "movimento progressivo e retr�grado depende do sinal da varia��o da posi��o no eixo adotado.",
+        "a classifica��o do movimento conforme a posi��o aumenta ou diminui em rela��o ao eixo orientado adotado."
       ],
-      "correta": "definir movimento progressivo apenas pela rapidez do corpo, sem observar o sinal da posição.",
-      "comentario": "Definir movimento progressivo apenas pela rapidez do corpo, sem observar o sinal da posição não representa movimento progressivo e retrógrado, enquanto as demais alternativas se relacionam com esse subtópico.",
+      "correta": "definir movimento progressivo apenas pela rapidez do corpo, sem observar o sinal da posi��o.",
+      "comentario": "Definir movimento progressivo apenas pela rapidez do corpo, sem observar o sinal da posi��o n�o representa movimento progressivo e retr�grado, enquanto as demais alternativas se relacionam com esse subt�pico.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -2544,22 +2545,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Movimento progressivo e retrógrado",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Movimento progressivo e retr�grado",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando se estuda movimento progressivo e retrógrado, o foco principal está em:",
+      "enunciado": "Quando se estuda movimento progressivo e retr�grado, o foco principal est� em:",
       "opcoes": [
-        "o sentido da variação da posição em relação a um eixo orientado",
-        "a dependência da descrição do movimento em relação ao referencial escolhido",
-        "a distinção entre o caminho seguido, a distância percorrida e o deslocamento resultante",
-        "a relação entre percurso realizado e tempo decorrido"
+        "o sentido da varia��o da posi��o em rela��o a um eixo orientado",
+        "a depend�ncia da descri��o do movimento em rela��o ao referencial escolhido",
+        "a distin��o entre o caminho seguido, a dist�ncia percorrida e o deslocamento resultante",
+        "a rela��o entre percurso realizado e tempo decorrido"
       ],
-      "correta": "o sentido da variação da posição em relação a um eixo orientado",
-      "comentario": "Movimento progressivo e retrógrado volta a atenção para o sentido da variação da posição em relação a um eixo orientado.",
+      "correta": "o sentido da varia��o da posi��o em rela��o a um eixo orientado",
+      "comentario": "Movimento progressivo e retr�grado volta a aten��o para o sentido da varia��o da posi��o em rela��o a um eixo orientado.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -2583,22 +2584,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Movimento progressivo e retrógrado",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Movimento progressivo e retr�grado",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferença entre movimento progressivo e retrógrado e movimento acelerado e retardado é que:",
+      "enunciado": "A principal diferen�a entre movimento progressivo e retr�grado e movimento acelerado e retardado � que:",
       "opcoes": [
-        "movimento progressivo e retrógrado trata do sentido da variação da posição, enquanto acelerado e retardado trata do aumento ou diminuição do módulo da velocidade",
-        "Movimento progressivo e retrógrado e Movimento acelerado e retardado são exatamente a mesma ideia física em qualquer situação.",
-        "Movimento acelerado e retardado elimina a necessidade de observar movimento progressivo e retrógrado.",
-        "Movimento progressivo e retrógrado depende apenas de opinião pessoal, sem relação com grandezas, modelos ou medidas."
+        "movimento progressivo e retr�grado trata do sentido da varia��o da posi��o, enquanto acelerado e retardado trata do aumento ou diminui��o do m�dulo da velocidade",
+        "Movimento progressivo e retr�grado e Movimento acelerado e retardado s�o exatamente a mesma ideia f�sica em qualquer situa��o.",
+        "Movimento acelerado e retardado elimina a necessidade de observar movimento progressivo e retr�grado.",
+        "Movimento progressivo e retr�grado depende apenas de opini�o pessoal, sem rela��o com grandezas, modelos ou medidas."
       ],
-      "correta": "movimento progressivo e retrógrado trata do sentido da variação da posição, enquanto acelerado e retardado trata do aumento ou diminuição do módulo da velocidade",
-      "comentario": "A comparação correta distingue os dois subtópicos sem confundir seus objetos de estudo.",
+      "correta": "movimento progressivo e retr�grado trata do sentido da varia��o da posi��o, enquanto acelerado e retardado trata do aumento ou diminui��o do m�dulo da velocidade",
+      "comentario": "A compara��o correta distingue os dois subt�picos sem confundir seus objetos de estudo.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -2622,22 +2623,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Movimento progressivo e retrógrado",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Movimento progressivo e retr�grado",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma observação experimental, registrou-se o seguinte caso: em uma reta orientada para a direita, um móvel passa de 5 metros para 12 metros; em outro trecho, passa de 12 metros para 5 metros A leitura física mais adequada aponta para:",
+      "enunciado": "Em uma observa��o experimental, registrou-se o seguinte caso: em uma reta orientada para a direita, um m�vel passa de 5 metros para 12 metros; em outro trecho, passa de 12 metros para 5 metros A leitura f�sica mais adequada aponta para:",
       "opcoes": [
-        "o caso mostra que a classificação progressiva ou retrógrada depende da orientação escolhida para o eixo",
-        "Movimento progressivo e retrógrado mostra que as grandezas envolvidas não precisam ser relacionadas para interpretar o caso.",
-        "Movimento progressivo e retrógrado prova que a situação dispensa qualquer leitura física ou quantitativa.",
-        "Movimento progressivo e retrógrado significa que o fenômeno não pode ser descrito por variáveis físicas."
+        "o caso mostra que a classifica��o progressiva ou retr�grada depende da orienta��o escolhida para o eixo",
+        "Movimento progressivo e retr�grado mostra que as grandezas envolvidas n�o precisam ser relacionadas para interpretar o caso.",
+        "Movimento progressivo e retr�grado prova que a situa��o dispensa qualquer leitura f�sica ou quantitativa.",
+        "Movimento progressivo e retr�grado significa que o fen�meno n�o pode ser descrito por vari�veis f�sicas."
       ],
-      "correta": "o caso mostra que a classificação progressiva ou retrógrada depende da orientação escolhida para o eixo",
-      "comentario": "Movimento progressivo e retrógrado permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
+      "correta": "o caso mostra que a classifica��o progressiva ou retr�grada depende da orienta��o escolhida para o eixo",
+      "comentario": "Movimento progressivo e retr�grado permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -2661,22 +2662,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Movimento progressivo e retrógrado",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Movimento progressivo e retr�grado",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação abaixo evidencia movimento progressivo e retrógrado de maneira mais clara?",
+      "enunciado": "Qual situa��o abaixo evidencia movimento progressivo e retr�grado de maneira mais clara?",
       "opcoes": [
         "interpretar a subida e a descida de um elevador usando um eixo vertical orientado",
-        "comparar o movimento de um ônibus do ponto de vista de um passageiro e de um pedestre",
+        "comparar o movimento de um �nibus do ponto de vista de um passageiro e de um pedestre",
         "analisar voltas em uma pista distinguindo percurso total e deslocamento final",
-        "estimar a velocidade média de uma van escolar comparando distância e duração do trajeto"
+        "estimar a velocidade m�dia de uma van escolar comparando dist�ncia e dura��o do trajeto"
       ],
       "correta": "interpretar a subida e a descida de um elevador usando um eixo vertical orientado",
-      "comentario": "A alternativa correta aproxima movimento progressivo e retrógrado de uma situação concreta.",
+      "comentario": "A alternativa correta aproxima movimento progressivo e retr�grado de uma situa��o concreta.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -2700,22 +2701,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Movimento progressivo e retrógrado",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Movimento progressivo e retr�grado",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"em uma reta orientada para a direita, um móvel passa de 5 metros para 12 metros; em outro trecho, passa de 12 metros para 5 metros\", qual conclusão é mais adequada?",
+      "enunciado": "Ao analisar o caso \"em uma reta orientada para a direita, um m�vel passa de 5 metros para 12 metros; em outro trecho, passa de 12 metros para 5 metros\", qual conclus�o � mais adequada?",
       "opcoes": [
-        "o caso mostra que a classificação progressiva ou retrógrada depende da orientação escolhida para o eixo",
-        "A situação indica que movimento progressivo e retrógrado não possui relação com medidas, variáveis ou interpretação física.",
-        "A situação prova que movimento progressivo e retrógrado só existe em exemplos teóricos sem uso cotidiano.",
-        "A situação mostra que movimento progressivo e retrógrado torna desnecessário comparar dados e modelos."
+        "o caso mostra que a classifica��o progressiva ou retr�grada depende da orienta��o escolhida para o eixo",
+        "A situa��o indica que movimento progressivo e retr�grado n�o possui rela��o com medidas, vari�veis ou interpreta��o f�sica.",
+        "A situa��o prova que movimento progressivo e retr�grado s� existe em exemplos te�ricos sem uso cotidiano.",
+        "A situa��o mostra que movimento progressivo e retr�grado torna desnecess�rio comparar dados e modelos."
       ],
-      "correta": "o caso mostra que a classificação progressiva ou retrógrada depende da orientação escolhida para o eixo",
-      "comentario": "A conclusão correta mantém coerência com os dados apresentados e com movimento progressivo e retrógrado.",
+      "correta": "o caso mostra que a classifica��o progressiva ou retr�grada depende da orienta��o escolhida para o eixo",
+      "comentario": "A conclus�o correta mant�m coer�ncia com os dados apresentados e com movimento progressivo e retr�grado.",
       "tempoEstimado": 35,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -2739,22 +2740,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Movimento progressivo e retrógrado",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Movimento progressivo e retr�grado",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com movimento progressivo e retrógrado?",
+      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com movimento progressivo e retr�grado?",
       "opcoes": [
-        "como a orientação do eixo permite distinguir movimentos progressivos e retrógrados?",
-        "como a mudança de referencial altera a descrição do movimento de um mesmo corpo?",
-        "como diferenciar distância percorrida e deslocamento em um percurso de ida e volta?",
-        "como calcular a velocidade escalar média a partir de dados de distância e tempo?"
+        "como a orienta��o do eixo permite distinguir movimentos progressivos e retr�grados?",
+        "como a mudan�a de referencial altera a descri��o do movimento de um mesmo corpo?",
+        "como diferenciar dist�ncia percorrida e deslocamento em um percurso de ida e volta?",
+        "como calcular a velocidade escalar m�dia a partir de dados de dist�ncia e tempo?"
       ],
-      "correta": "como a orientação do eixo permite distinguir movimentos progressivos e retrógrados?",
-      "comentario": "A pergunta correta investiga movimento progressivo e retrógrado de forma direta e coerente.",
+      "correta": "como a orienta��o do eixo permite distinguir movimentos progressivos e retr�grados?",
+      "comentario": "A pergunta correta investiga movimento progressivo e retr�grado de forma direta e coerente.",
       "tempoEstimado": 35,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -2778,22 +2779,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Movimento progressivo e retrógrado",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Movimento progressivo e retr�grado",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a afirmação que revela compreensão inadequada de movimento progressivo e retrógrado.",
+      "enunciado": "Assinale a afirma��o que revela compreens�o inadequada de movimento progressivo e retr�grado.",
       "opcoes": [
-        "A classificação do movimento conforme a posição aumenta ou diminui em relação ao eixo orientado adotado.",
-        "O sentido da variação da posição em relação a um eixo orientado.",
-        "Movimento progressivo e retrógrado depende do sinal da variação da posição no eixo adotado.",
-        "Movimento retrógrado significa necessariamente voltar ao ponto inicial."
+        "A classifica��o do movimento conforme a posi��o aumenta ou diminui em rela��o ao eixo orientado adotado.",
+        "O sentido da varia��o da posi��o em rela��o a um eixo orientado.",
+        "Movimento progressivo e retr�grado depende do sinal da varia��o da posi��o no eixo adotado.",
+        "Movimento retr�grado significa necessariamente voltar ao ponto inicial."
       ],
-      "correta": "Movimento retrógrado significa necessariamente voltar ao ponto inicial.",
-      "comentario": "A alternativa incorreta expressa um equívoco comum sobre movimento progressivo e retrógrado.",
+      "correta": "Movimento retr�grado significa necessariamente voltar ao ponto inicial.",
+      "comentario": "A alternativa incorreta expressa um equ�voco comum sobre movimento progressivo e retr�grado.",
       "tempoEstimado": 45,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -2817,22 +2818,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Movimento progressivo e retrógrado",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Movimento progressivo e retr�grado",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre Física, um estudante afirmou: \"o caráter progressivo ou retrógrado depende da orientação adotada para a trajetória\". Qual avaliação é mais consistente?",
+      "enunciado": "Em um debate sobre F�sica, um estudante afirmou: \"o car�ter progressivo ou retr�grado depende da orienta��o adotada para a trajet�ria\". Qual avalia��o � mais consistente?",
       "opcoes": [
-        "A afirmação está correta, porque a classificação usa o sinal da variação da posição em relação ao eixo escolhido",
-        "A afirmação está incorreta, porque movimento progressivo e retrógrado nunca pode ser usada na Física escolar.",
-        "A afirmação é irrelevante, porque movimento progressivo e retrógrado não se relaciona com interpretação de fenômenos.",
-        "A afirmação está incorreta, porque movimento progressivo e retrógrado elimina a necessidade de medir e comparar grandezas."
+        "A afirma��o est� correta, porque a classifica��o usa o sinal da varia��o da posi��o em rela��o ao eixo escolhido",
+        "A afirma��o est� incorreta, porque movimento progressivo e retr�grado nunca pode ser usada na F�sica escolar.",
+        "A afirma��o � irrelevante, porque movimento progressivo e retr�grado n�o se relaciona com interpreta��o de fen�menos.",
+        "A afirma��o est� incorreta, porque movimento progressivo e retr�grado elimina a necessidade de medir e comparar grandezas."
       ],
-      "correta": "A afirmação está correta, porque a classificação usa o sinal da variação da posição em relação ao eixo escolhido",
-      "comentario": "A avaliação correta recupera o núcleo conceitual de movimento progressivo e retrógrado.",
+      "correta": "A afirma��o est� correta, porque a classifica��o usa o sinal da varia��o da posi��o em rela��o ao eixo escolhido",
+      "comentario": "A avalia��o correta recupera o n�cleo conceitual de movimento progressivo e retr�grado.",
       "tempoEstimado": 45,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -2856,22 +2857,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Movimento progressivo e retrógrado",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Movimento progressivo e retr�grado",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se movimento progressivo e retrógrado fosse ignorado(a) na análise de um problema físico, o resultado mais provável seria:",
+      "enunciado": "Se movimento progressivo e retr�grado fosse ignorado(a) na an�lise de um problema f�sico, o resultado mais prov�vel seria:",
       "opcoes": [
-        "a análise do sentido do movimento ficaria confusa e poderia trocar avanço por recuo no referencial adotado",
-        "o problema continuaria exatamente igual, porque movimento progressivo e retrógrado não interfere na análise física",
-        "seria possível resolver a situação sem observar nenhuma grandeza, relação ou modelo",
-        "a interpretação ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
+        "a an�lise do sentido do movimento ficaria confusa e poderia trocar avan�o por recuo no referencial adotado",
+        "o problema continuaria exatamente igual, porque movimento progressivo e retr�grado n�o interfere na an�lise f�sica",
+        "seria poss�vel resolver a situa��o sem observar nenhuma grandeza, rela��o ou modelo",
+        "a interpreta��o ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
       ],
-      "correta": "a análise do sentido do movimento ficaria confusa e poderia trocar avanço por recuo no referencial adotado",
-      "comentario": "Ignorar movimento progressivo e retrógrado compromete a leitura física e a qualidade da solução.",
+      "correta": "a an�lise do sentido do movimento ficaria confusa e poderia trocar avan�o por recuo no referencial adotado",
+      "comentario": "Ignorar movimento progressivo e retr�grado compromete a leitura f�sica e a qualidade da solu��o.",
       "tempoEstimado": 55,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -2895,22 +2896,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Movimento progressivo e retrógrado",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Movimento progressivo e retr�grado",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente movimento progressivo e retrógrado a uma situação escolar ou cotidiana?",
+      "enunciado": "Qual alternativa aplica corretamente movimento progressivo e retr�grado a uma situa��o escolar ou cotidiana?",
       "opcoes": [
         "interpretar a subida e a descida de um elevador usando um eixo vertical orientado",
         "comparar uma escada rolante em regime constante com um corpo em queda livre",
-        "prever o tempo de deslocamento entre casa e escola usando distância, velocidade e intervalo de tempo",
-        "interpretar gráficos produzidos em um experimento escolar com carrinho em trilho"
+        "prever o tempo de deslocamento entre casa e escola usando dist�ncia, velocidade e intervalo de tempo",
+        "interpretar gr�ficos produzidos em um experimento escolar com carrinho em trilho"
       ],
       "correta": "interpretar a subida e a descida de um elevador usando um eixo vertical orientado",
-      "comentario": "A aplicação correta mostra como movimento progressivo e retrógrado aparece em contextos próximos do cotidiano.",
+      "comentario": "A aplica��o correta mostra como movimento progressivo e retr�grado aparece em contextos pr�ximos do cotidiano.",
       "tempoEstimado": 55,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -2934,22 +2935,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Movimento progressivo e retrógrado",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Movimento progressivo e retr�grado",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual síntese final representa melhor movimento progressivo e retrógrado?",
+      "enunciado": "Qual s�ntese final representa melhor movimento progressivo e retr�grado?",
       "opcoes": [
-        "movimento progressivo e retrógrado depende do sinal da variação da posição no eixo adotado",
-        "movimento e repouso são conceitos relativos ao referencial adotado",
-        "trajetória indica o caminho, distância soma o percurso e deslocamento compara posição inicial e final",
-        "velocidade escalar média indica quanto percurso, em média, é realizado por unidade de tempo"
+        "movimento progressivo e retr�grado depende do sinal da varia��o da posi��o no eixo adotado",
+        "movimento e repouso s�o conceitos relativos ao referencial adotado",
+        "trajet�ria indica o caminho, dist�ncia soma o percurso e deslocamento compara posi��o inicial e final",
+        "velocidade escalar m�dia indica quanto percurso, em m�dia, � realizado por unidade de tempo"
       ],
-      "correta": "movimento progressivo e retrógrado depende do sinal da variação da posição no eixo adotado",
-      "comentario": "A síntese correta preserva a definição, o foco e o uso analítico de movimento progressivo e retrógrado.",
+      "correta": "movimento progressivo e retr�grado depende do sinal da varia��o da posi��o no eixo adotado",
+      "comentario": "A s�ntese correta preserva a defini��o, o foco e o uso anal�tico de movimento progressivo e retr�grado.",
       "tempoEstimado": 55,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -2973,22 +2974,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
       "subtopico": "Movimento acelerado e retardado",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Física, Movimento acelerado e retardado pode ser definido(a) como:",
+      "enunciado": "Em F�sica, Movimento acelerado e retardado pode ser definido(a) como:",
       "opcoes": [
-        "a classificação do movimento conforme o módulo da velocidade aumenta ou diminui com o tempo",
-        "a descrição de repouso ou movimento de um corpo em relação a um referencial adotado",
-        "a diferenciação entre caminho percorrido, comprimento total do percurso e variação entre posição inicial e final",
-        "a razão entre a distância percorrida e o intervalo de tempo gasto no percurso"
+        "a classifica��o do movimento conforme o m�dulo da velocidade aumenta ou diminui com o tempo",
+        "a descri��o de repouso ou movimento de um corpo em rela��o a um referencial adotado",
+        "a diferencia��o entre caminho percorrido, comprimento total do percurso e varia��o entre posi��o inicial e final",
+        "a raz�o entre a dist�ncia percorrida e o intervalo de tempo gasto no percurso"
       ],
-      "correta": "a classificação do movimento conforme o módulo da velocidade aumenta ou diminui com o tempo",
-      "comentario": "Movimento acelerado e retardado refere-se à classificação do movimento conforme o módulo da velocidade aumenta ou diminui com o tempo.",
+      "correta": "a classifica��o do movimento conforme o m�dulo da velocidade aumenta ou diminui com o tempo",
+      "comentario": "Movimento acelerado e retardado refere-se � classifica��o do movimento conforme o m�dulo da velocidade aumenta ou diminui com o tempo.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -3012,22 +3013,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
       "subtopico": "Movimento acelerado e retardado",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: um carro passa de 10 metros por segundo para 18 metros por segundo; em outro trecho, diminui de 18 para 10 metros por segundo Esse caso exemplifica melhor qual subtópico?",
+      "enunciado": "Observe a situa��o: um carro passa de 10 metros por segundo para 18 metros por segundo; em outro trecho, diminui de 18 para 10 metros por segundo Esse caso exemplifica melhor qual subt�pico?",
       "opcoes": [
         "Movimento acelerado e retardado",
         "Referencial, repouso e movimento",
-        "Trajetória, distância e deslocamento",
-        "Velocidade escalar média"
+        "Trajet�ria, dist�ncia e deslocamento",
+        "Velocidade escalar m�dia"
       ],
       "correta": "Movimento acelerado e retardado",
-      "comentario": "A situação apresentada é um exemplo de movimento acelerado e retardado.",
+      "comentario": "A situa��o apresentada � um exemplo de movimento acelerado e retardado.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -3051,22 +3052,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
       "subtopico": "Movimento acelerado e retardado",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmação descreve corretamente movimento acelerado e retardado?",
+      "enunciado": "Qual afirma��o descreve corretamente movimento acelerado e retardado?",
       "opcoes": [
-        "A classificação do movimento conforme o módulo da velocidade aumenta ou diminui com o tempo.",
-        "A descrição de repouso ou movimento de um corpo em relação a um referencial adotado.",
-        "A diferenciação entre caminho percorrido, comprimento total do percurso e variação entre posição inicial e final.",
-        "A razão entre a distância percorrida e o intervalo de tempo gasto no percurso."
+        "A classifica��o do movimento conforme o m�dulo da velocidade aumenta ou diminui com o tempo.",
+        "A descri��o de repouso ou movimento de um corpo em rela��o a um referencial adotado.",
+        "A diferencia��o entre caminho percorrido, comprimento total do percurso e varia��o entre posi��o inicial e final.",
+        "A raz�o entre a dist�ncia percorrida e o intervalo de tempo gasto no percurso."
       ],
-      "correta": "A classificação do movimento conforme o módulo da velocidade aumenta ou diminui com o tempo.",
-      "comentario": "A afirmação correta retoma o sentido central de movimento acelerado e retardado.",
+      "correta": "A classifica��o do movimento conforme o m�dulo da velocidade aumenta ou diminui com o tempo.",
+      "comentario": "A afirma��o correta retoma o sentido central de movimento acelerado e retardado.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -3090,22 +3091,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
       "subtopico": "Movimento acelerado e retardado",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa incompatível com movimento acelerado e retardado.",
+      "enunciado": "Assinale a alternativa incompat�vel com movimento acelerado e retardado.",
       "opcoes": [
-        "julgar que um movimento é acelerado apenas porque o corpo se move no sentido positivo do eixo.",
-        "a análise do aumento ou da diminuição do módulo da velocidade.",
-        "movimento acelerado ou retardado depende do aumento ou da diminuição do módulo da velocidade.",
-        "a classificação do movimento conforme o módulo da velocidade aumenta ou diminui com o tempo."
+        "julgar que um movimento � acelerado apenas porque o corpo se move no sentido positivo do eixo.",
+        "a an�lise do aumento ou da diminui��o do m�dulo da velocidade.",
+        "movimento acelerado ou retardado depende do aumento ou da diminui��o do m�dulo da velocidade.",
+        "a classifica��o do movimento conforme o m�dulo da velocidade aumenta ou diminui com o tempo."
       ],
-      "correta": "julgar que um movimento é acelerado apenas porque o corpo se move no sentido positivo do eixo.",
-      "comentario": "Julgar que um movimento é acelerado apenas porque o corpo se move no sentido positivo do eixo não representa movimento acelerado e retardado, enquanto as demais alternativas se relacionam com esse subtópico.",
+      "correta": "julgar que um movimento � acelerado apenas porque o corpo se move no sentido positivo do eixo.",
+      "comentario": "Julgar que um movimento � acelerado apenas porque o corpo se move no sentido positivo do eixo n�o representa movimento acelerado e retardado, enquanto as demais alternativas se relacionam com esse subt�pico.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -3129,22 +3130,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
       "subtopico": "Movimento acelerado e retardado",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando se estuda movimento acelerado e retardado, o foco principal está em:",
+      "enunciado": "Quando se estuda movimento acelerado e retardado, o foco principal est� em:",
       "opcoes": [
-        "a análise do aumento ou da diminuição do módulo da velocidade",
-        "a dependência da descrição do movimento em relação ao referencial escolhido",
-        "a distinção entre o caminho seguido, a distância percorrida e o deslocamento resultante",
-        "a relação entre percurso realizado e tempo decorrido"
+        "a an�lise do aumento ou da diminui��o do m�dulo da velocidade",
+        "a depend�ncia da descri��o do movimento em rela��o ao referencial escolhido",
+        "a distin��o entre o caminho seguido, a dist�ncia percorrida e o deslocamento resultante",
+        "a rela��o entre percurso realizado e tempo decorrido"
       ],
-      "correta": "a análise do aumento ou da diminuição do módulo da velocidade",
-      "comentario": "Movimento acelerado e retardado volta a atenção para a análise do aumento ou da diminuição do módulo da velocidade.",
+      "correta": "a an�lise do aumento ou da diminui��o do m�dulo da velocidade",
+      "comentario": "Movimento acelerado e retardado volta a aten��o para a an�lise do aumento ou da diminui��o do m�dulo da velocidade.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -3168,22 +3169,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
       "subtopico": "Movimento acelerado e retardado",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferença entre movimento acelerado e retardado e movimento progressivo e retrógrado é que:",
+      "enunciado": "A principal diferen�a entre movimento acelerado e retardado e movimento progressivo e retr�grado � que:",
       "opcoes": [
-        "movimento acelerado e retardado analisa a variação do módulo da velocidade, enquanto progressivo e retrógrado analisa o sentido do movimento em relação ao eixo",
-        "Movimento acelerado e retardado e Movimento progressivo e retrógrado são exatamente a mesma ideia física em qualquer situação.",
-        "Movimento progressivo e retrógrado elimina a necessidade de observar movimento acelerado e retardado.",
-        "Movimento acelerado e retardado depende apenas de opinião pessoal, sem relação com grandezas, modelos ou medidas."
+        "movimento acelerado e retardado analisa a varia��o do m�dulo da velocidade, enquanto progressivo e retr�grado analisa o sentido do movimento em rela��o ao eixo",
+        "Movimento acelerado e retardado e Movimento progressivo e retr�grado s�o exatamente a mesma ideia f�sica em qualquer situa��o.",
+        "Movimento progressivo e retr�grado elimina a necessidade de observar movimento acelerado e retardado.",
+        "Movimento acelerado e retardado depende apenas de opini�o pessoal, sem rela��o com grandezas, modelos ou medidas."
       ],
-      "correta": "movimento acelerado e retardado analisa a variação do módulo da velocidade, enquanto progressivo e retrógrado analisa o sentido do movimento em relação ao eixo",
-      "comentario": "A comparação correta distingue os dois subtópicos sem confundir seus objetos de estudo.",
+      "correta": "movimento acelerado e retardado analisa a varia��o do m�dulo da velocidade, enquanto progressivo e retr�grado analisa o sentido do movimento em rela��o ao eixo",
+      "comentario": "A compara��o correta distingue os dois subt�picos sem confundir seus objetos de estudo.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -3207,21 +3208,21 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
       "subtopico": "Movimento acelerado e retardado",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma observação experimental, registrou-se o seguinte caso: um carro passa de 10 metros por segundo para 18 metros por segundo; em outro trecho, diminui de 18 para 10 metros por segundo A leitura física mais adequada aponta para:",
+      "enunciado": "Em uma observa��o experimental, registrou-se o seguinte caso: um carro passa de 10 metros por segundo para 18 metros por segundo; em outro trecho, diminui de 18 para 10 metros por segundo A leitura f�sica mais adequada aponta para:",
       "opcoes": [
-        "o caso mostra que acelerar ou retardar significa mudar o módulo da velocidade ao longo do tempo",
-        "Movimento acelerado e retardado mostra que as grandezas envolvidas não precisam ser relacionadas para interpretar o caso.",
-        "Movimento acelerado e retardado prova que a situação dispensa qualquer leitura física ou quantitativa.",
-        "Movimento acelerado e retardado significa que o fenômeno não pode ser descrito por variáveis físicas."
+        "o caso mostra que acelerar ou retardar significa mudar o m�dulo da velocidade ao longo do tempo",
+        "Movimento acelerado e retardado mostra que as grandezas envolvidas n�o precisam ser relacionadas para interpretar o caso.",
+        "Movimento acelerado e retardado prova que a situa��o dispensa qualquer leitura f�sica ou quantitativa.",
+        "Movimento acelerado e retardado significa que o fen�meno n�o pode ser descrito por vari�veis f�sicas."
       ],
-      "correta": "o caso mostra que acelerar ou retardar significa mudar o módulo da velocidade ao longo do tempo",
+      "correta": "o caso mostra que acelerar ou retardar significa mudar o m�dulo da velocidade ao longo do tempo",
       "comentario": "Movimento acelerado e retardado permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
       "tempoEstimado": 25,
       "tags": [
@@ -3246,22 +3247,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
       "subtopico": "Movimento acelerado e retardado",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação abaixo evidencia movimento acelerado e retardado de maneira mais clara?",
+      "enunciado": "Qual situa��o abaixo evidencia movimento acelerado e retardado de maneira mais clara?",
       "opcoes": [
         "comparar o comportamento de um carro ao arrancar e ao frear em uma avenida",
-        "comparar o movimento de um ônibus do ponto de vista de um passageiro e de um pedestre",
+        "comparar o movimento de um �nibus do ponto de vista de um passageiro e de um pedestre",
         "analisar voltas em uma pista distinguindo percurso total e deslocamento final",
-        "estimar a velocidade média de uma van escolar comparando distância e duração do trajeto"
+        "estimar a velocidade m�dia de uma van escolar comparando dist�ncia e dura��o do trajeto"
       ],
       "correta": "comparar o comportamento de um carro ao arrancar e ao frear em uma avenida",
-      "comentario": "A alternativa correta aproxima movimento acelerado e retardado de uma situação concreta.",
+      "comentario": "A alternativa correta aproxima movimento acelerado e retardado de uma situa��o concreta.",
       "tempoEstimado": 35,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -3285,22 +3286,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
       "subtopico": "Movimento acelerado e retardado",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"um carro passa de 10 metros por segundo para 18 metros por segundo; em outro trecho, diminui de 18 para 10 metros por segundo\", qual conclusão é mais adequada?",
+      "enunciado": "Ao analisar o caso \"um carro passa de 10 metros por segundo para 18 metros por segundo; em outro trecho, diminui de 18 para 10 metros por segundo\", qual conclus�o � mais adequada?",
       "opcoes": [
-        "o caso mostra que acelerar ou retardar significa mudar o módulo da velocidade ao longo do tempo",
-        "A situação indica que movimento acelerado e retardado não possui relação com medidas, variáveis ou interpretação física.",
-        "A situação prova que movimento acelerado e retardado só existe em exemplos teóricos sem uso cotidiano.",
-        "A situação mostra que movimento acelerado e retardado torna desnecessário comparar dados e modelos."
+        "o caso mostra que acelerar ou retardar significa mudar o m�dulo da velocidade ao longo do tempo",
+        "A situa��o indica que movimento acelerado e retardado n�o possui rela��o com medidas, vari�veis ou interpreta��o f�sica.",
+        "A situa��o prova que movimento acelerado e retardado s� existe em exemplos te�ricos sem uso cotidiano.",
+        "A situa��o mostra que movimento acelerado e retardado torna desnecess�rio comparar dados e modelos."
       ],
-      "correta": "o caso mostra que acelerar ou retardar significa mudar o módulo da velocidade ao longo do tempo",
-      "comentario": "A conclusão correta mantém coerência com os dados apresentados e com movimento acelerado e retardado.",
+      "correta": "o caso mostra que acelerar ou retardar significa mudar o m�dulo da velocidade ao longo do tempo",
+      "comentario": "A conclus�o correta mant�m coer�ncia com os dados apresentados e com movimento acelerado e retardado.",
       "tempoEstimado": 35,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -3324,8 +3325,8 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
       "subtopico": "Movimento acelerado e retardado",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
@@ -3333,12 +3334,12 @@ export const cinematicaMruMruv = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual pergunta de pesquisa se relaciona melhor com movimento acelerado e retardado?",
       "opcoes": [
-        "como identificar se o módulo da velocidade cresce ou diminui ao longo do tempo?",
-        "como a mudança de referencial altera a descrição do movimento de um mesmo corpo?",
-        "como diferenciar distância percorrida e deslocamento em um percurso de ida e volta?",
-        "como calcular a velocidade escalar média a partir de dados de distância e tempo?"
+        "como identificar se o m�dulo da velocidade cresce ou diminui ao longo do tempo?",
+        "como a mudan�a de referencial altera a descri��o do movimento de um mesmo corpo?",
+        "como diferenciar dist�ncia percorrida e deslocamento em um percurso de ida e volta?",
+        "como calcular a velocidade escalar m�dia a partir de dados de dist�ncia e tempo?"
       ],
-      "correta": "como identificar se o módulo da velocidade cresce ou diminui ao longo do tempo?",
+      "correta": "como identificar se o m�dulo da velocidade cresce ou diminui ao longo do tempo?",
       "comentario": "A pergunta correta investiga movimento acelerado e retardado de forma direta e coerente.",
       "tempoEstimado": 35,
       "tags": [
@@ -3363,22 +3364,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
       "subtopico": "Movimento acelerado e retardado",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a afirmação que revela compreensão inadequada de movimento acelerado e retardado.",
+      "enunciado": "Assinale a afirma��o que revela compreens�o inadequada de movimento acelerado e retardado.",
       "opcoes": [
-        "A classificação do movimento conforme o módulo da velocidade aumenta ou diminui com o tempo.",
-        "A análise do aumento ou da diminuição do módulo da velocidade.",
-        "Movimento acelerado ou retardado depende do aumento ou da diminuição do módulo da velocidade.",
-        "Movimento acelerado é sempre progressivo."
+        "A classifica��o do movimento conforme o m�dulo da velocidade aumenta ou diminui com o tempo.",
+        "A an�lise do aumento ou da diminui��o do m�dulo da velocidade.",
+        "Movimento acelerado ou retardado depende do aumento ou da diminui��o do m�dulo da velocidade.",
+        "Movimento acelerado � sempre progressivo."
       ],
-      "correta": "Movimento acelerado é sempre progressivo.",
-      "comentario": "A alternativa incorreta expressa um equívoco comum sobre movimento acelerado e retardado.",
+      "correta": "Movimento acelerado � sempre progressivo.",
+      "comentario": "A alternativa incorreta expressa um equ�voco comum sobre movimento acelerado e retardado.",
       "tempoEstimado": 45,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -3402,22 +3403,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
       "subtopico": "Movimento acelerado e retardado",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre Física, um estudante afirmou: \"um movimento pode ser retrógrado e ainda assim acelerado, se o módulo da velocidade aumentar\". Qual avaliação é mais consistente?",
+      "enunciado": "Em um debate sobre F�sica, um estudante afirmou: \"um movimento pode ser retr�grado e ainda assim acelerado, se o m�dulo da velocidade aumentar\". Qual avalia��o � mais consistente?",
       "opcoes": [
-        "A afirmação está correta, porque a classificação acelerado ou retardado depende do módulo da velocidade, e não do sentido do movimento",
-        "A afirmação está incorreta, porque movimento acelerado e retardado nunca pode ser usada na Física escolar.",
-        "A afirmação é irrelevante, porque movimento acelerado e retardado não se relaciona com interpretação de fenômenos.",
-        "A afirmação está incorreta, porque movimento acelerado e retardado elimina a necessidade de medir e comparar grandezas."
+        "A afirma��o est� correta, porque a classifica��o acelerado ou retardado depende do m�dulo da velocidade, e n�o do sentido do movimento",
+        "A afirma��o est� incorreta, porque movimento acelerado e retardado nunca pode ser usada na F�sica escolar.",
+        "A afirma��o � irrelevante, porque movimento acelerado e retardado n�o se relaciona com interpreta��o de fen�menos.",
+        "A afirma��o est� incorreta, porque movimento acelerado e retardado elimina a necessidade de medir e comparar grandezas."
       ],
-      "correta": "A afirmação está correta, porque a classificação acelerado ou retardado depende do módulo da velocidade, e não do sentido do movimento",
-      "comentario": "A avaliação correta recupera o núcleo conceitual de movimento acelerado e retardado.",
+      "correta": "A afirma��o est� correta, porque a classifica��o acelerado ou retardado depende do m�dulo da velocidade, e n�o do sentido do movimento",
+      "comentario": "A avalia��o correta recupera o n�cleo conceitual de movimento acelerado e retardado.",
       "tempoEstimado": 45,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -3441,22 +3442,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
       "subtopico": "Movimento acelerado e retardado",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se movimento acelerado e retardado fosse ignorado(a) na análise de um problema físico, o resultado mais provável seria:",
+      "enunciado": "Se movimento acelerado e retardado fosse ignorado(a) na an�lise de um problema f�sico, o resultado mais prov�vel seria:",
       "opcoes": [
-        "seriam confundidas situações de aumento de rapidez com simples mudança de sentido da trajetória",
-        "o problema continuaria exatamente igual, porque movimento acelerado e retardado não interfere na análise física",
-        "seria possível resolver a situação sem observar nenhuma grandeza, relação ou modelo",
-        "a interpretação ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
+        "seriam confundidas situa��es de aumento de rapidez com simples mudan�a de sentido da trajet�ria",
+        "o problema continuaria exatamente igual, porque movimento acelerado e retardado n�o interfere na an�lise f�sica",
+        "seria poss�vel resolver a situa��o sem observar nenhuma grandeza, rela��o ou modelo",
+        "a interpreta��o ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
       ],
-      "correta": "seriam confundidas situações de aumento de rapidez com simples mudança de sentido da trajetória",
-      "comentario": "Ignorar movimento acelerado e retardado compromete a leitura física e a qualidade da solução.",
+      "correta": "seriam confundidas situa��es de aumento de rapidez com simples mudan�a de sentido da trajet�ria",
+      "comentario": "Ignorar movimento acelerado e retardado compromete a leitura f�sica e a qualidade da solu��o.",
       "tempoEstimado": 55,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -3480,22 +3481,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
       "subtopico": "Movimento acelerado e retardado",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente movimento acelerado e retardado a uma situação escolar ou cotidiana?",
+      "enunciado": "Qual alternativa aplica corretamente movimento acelerado e retardado a uma situa��o escolar ou cotidiana?",
       "opcoes": [
         "comparar o comportamento de um carro ao arrancar e ao frear em uma avenida",
         "comparar uma escada rolante em regime constante com um corpo em queda livre",
-        "prever o tempo de deslocamento entre casa e escola usando distância, velocidade e intervalo de tempo",
-        "interpretar gráficos produzidos em um experimento escolar com carrinho em trilho"
+        "prever o tempo de deslocamento entre casa e escola usando dist�ncia, velocidade e intervalo de tempo",
+        "interpretar gr�ficos produzidos em um experimento escolar com carrinho em trilho"
       ],
       "correta": "comparar o comportamento de um carro ao arrancar e ao frear em uma avenida",
-      "comentario": "A aplicação correta mostra como movimento acelerado e retardado aparece em contextos próximos do cotidiano.",
+      "comentario": "A aplica��o correta mostra como movimento acelerado e retardado aparece em contextos pr�ximos do cotidiano.",
       "tempoEstimado": 55,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -3519,22 +3520,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
       "subtopico": "Movimento acelerado e retardado",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual síntese final representa melhor movimento acelerado e retardado?",
+      "enunciado": "Qual s�ntese final representa melhor movimento acelerado e retardado?",
       "opcoes": [
-        "movimento acelerado ou retardado depende do aumento ou da diminuição do módulo da velocidade",
-        "movimento e repouso são conceitos relativos ao referencial adotado",
-        "trajetória indica o caminho, distância soma o percurso e deslocamento compara posição inicial e final",
-        "velocidade escalar média indica quanto percurso, em média, é realizado por unidade de tempo"
+        "movimento acelerado ou retardado depende do aumento ou da diminui��o do m�dulo da velocidade",
+        "movimento e repouso s�o conceitos relativos ao referencial adotado",
+        "trajet�ria indica o caminho, dist�ncia soma o percurso e deslocamento compara posi��o inicial e final",
+        "velocidade escalar m�dia indica quanto percurso, em m�dia, � realizado por unidade de tempo"
       ],
-      "correta": "movimento acelerado ou retardado depende do aumento ou da diminuição do módulo da velocidade",
-      "comentario": "A síntese correta preserva a definição, o foco e o uso analítico de movimento acelerado e retardado.",
+      "correta": "movimento acelerado ou retardado depende do aumento ou da diminui��o do m�dulo da velocidade",
+      "comentario": "A s�ntese correta preserva a defini��o, o foco e o uso anal�tico de movimento acelerado e retardado.",
       "tempoEstimado": 55,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -3558,22 +3559,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
       "subtopico": "Grandezas escalares e vetoriais no movimento",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Física, Grandezas escalares e vetoriais no movimento pode ser definido(a) como:",
+      "enunciado": "Em F�sica, Grandezas escalares e vetoriais no movimento pode ser definido(a) como:",
       "opcoes": [
-        "a distinção entre grandezas descritas apenas por valor numérico e unidade e grandezas que também exigem direção e sentido",
-        "a descrição de repouso ou movimento de um corpo em relação a um referencial adotado",
-        "a diferenciação entre caminho percorrido, comprimento total do percurso e variação entre posição inicial e final",
-        "a razão entre a distância percorrida e o intervalo de tempo gasto no percurso"
+        "a distin��o entre grandezas descritas apenas por valor num�rico e unidade e grandezas que tamb�m exigem dire��o e sentido",
+        "a descri��o de repouso ou movimento de um corpo em rela��o a um referencial adotado",
+        "a diferencia��o entre caminho percorrido, comprimento total do percurso e varia��o entre posi��o inicial e final",
+        "a raz�o entre a dist�ncia percorrida e o intervalo de tempo gasto no percurso"
       ],
-      "correta": "a distinção entre grandezas descritas apenas por valor numérico e unidade e grandezas que também exigem direção e sentido",
-      "comentario": "Grandezas escalares e vetoriais no movimento refere-se à distinção entre grandezas descritas apenas por valor numérico e unidade e grandezas que também exigem direção e sentido.",
+      "correta": "a distin��o entre grandezas descritas apenas por valor num�rico e unidade e grandezas que tamb�m exigem dire��o e sentido",
+      "comentario": "Grandezas escalares e vetoriais no movimento refere-se � distin��o entre grandezas descritas apenas por valor num�rico e unidade e grandezas que tamb�m exigem dire��o e sentido.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -3597,22 +3598,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
       "subtopico": "Grandezas escalares e vetoriais no movimento",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: a distância percorrida é informada em quilômetros, enquanto o deslocamento precisa de valor, direção e sentido para ser completamente descrito Esse caso exemplifica melhor qual subtópico?",
+      "enunciado": "Observe a situa��o: a dist�ncia percorrida � informada em quil�metros, enquanto o deslocamento precisa de valor, dire��o e sentido para ser completamente descrito Esse caso exemplifica melhor qual subt�pico?",
       "opcoes": [
         "Grandezas escalares e vetoriais no movimento",
         "Referencial, repouso e movimento",
-        "Trajetória, distância e deslocamento",
-        "Velocidade escalar média"
+        "Trajet�ria, dist�ncia e deslocamento",
+        "Velocidade escalar m�dia"
       ],
       "correta": "Grandezas escalares e vetoriais no movimento",
-      "comentario": "A situação apresentada é um exemplo de grandezas escalares e vetoriais no movimento.",
+      "comentario": "A situa��o apresentada � um exemplo de grandezas escalares e vetoriais no movimento.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -3636,22 +3637,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
       "subtopico": "Grandezas escalares e vetoriais no movimento",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmação descreve corretamente grandezas escalares e vetoriais no movimento?",
+      "enunciado": "Qual afirma��o descreve corretamente grandezas escalares e vetoriais no movimento?",
       "opcoes": [
-        "A distinção entre grandezas descritas apenas por valor numérico e unidade e grandezas que também exigem direção e sentido.",
-        "A descrição de repouso ou movimento de um corpo em relação a um referencial adotado.",
-        "A diferenciação entre caminho percorrido, comprimento total do percurso e variação entre posição inicial e final.",
-        "A razão entre a distância percorrida e o intervalo de tempo gasto no percurso."
+        "A distin��o entre grandezas descritas apenas por valor num�rico e unidade e grandezas que tamb�m exigem dire��o e sentido.",
+        "A descri��o de repouso ou movimento de um corpo em rela��o a um referencial adotado.",
+        "A diferencia��o entre caminho percorrido, comprimento total do percurso e varia��o entre posi��o inicial e final.",
+        "A raz�o entre a dist�ncia percorrida e o intervalo de tempo gasto no percurso."
       ],
-      "correta": "A distinção entre grandezas descritas apenas por valor numérico e unidade e grandezas que também exigem direção e sentido.",
-      "comentario": "A afirmação correta retoma o sentido central de grandezas escalares e vetoriais no movimento.",
+      "correta": "A distin��o entre grandezas descritas apenas por valor num�rico e unidade e grandezas que tamb�m exigem dire��o e sentido.",
+      "comentario": "A afirma��o correta retoma o sentido central de grandezas escalares e vetoriais no movimento.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -3675,22 +3676,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
       "subtopico": "Grandezas escalares e vetoriais no movimento",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa incompatível com grandezas escalares e vetoriais no movimento.",
+      "enunciado": "Assinale a alternativa incompat�vel com grandezas escalares e vetoriais no movimento.",
       "opcoes": [
-        "tratar deslocamento e distância como grandezas idênticas apenas porque podem usar a mesma unidade.",
-        "a classificação das grandezas do movimento em escalares e vetoriais.",
-        "grandezas escalares usam apenas valor e unidade, enquanto vetoriais exigem também direção e sentido.",
-        "a distinção entre grandezas descritas apenas por valor numérico e unidade e grandezas que também exigem direção e sentido."
+        "tratar deslocamento e dist�ncia como grandezas id�nticas apenas porque podem usar a mesma unidade.",
+        "a classifica��o das grandezas do movimento em escalares e vetoriais.",
+        "grandezas escalares usam apenas valor e unidade, enquanto vetoriais exigem tamb�m dire��o e sentido.",
+        "a distin��o entre grandezas descritas apenas por valor num�rico e unidade e grandezas que tamb�m exigem dire��o e sentido."
       ],
-      "correta": "tratar deslocamento e distância como grandezas idênticas apenas porque podem usar a mesma unidade.",
-      "comentario": "Tratar deslocamento e distância como grandezas idênticas apenas porque podem usar a mesma unidade não representa grandezas escalares e vetoriais no movimento, enquanto as demais alternativas se relacionam com esse subtópico.",
+      "correta": "tratar deslocamento e dist�ncia como grandezas id�nticas apenas porque podem usar a mesma unidade.",
+      "comentario": "Tratar deslocamento e dist�ncia como grandezas id�nticas apenas porque podem usar a mesma unidade n�o representa grandezas escalares e vetoriais no movimento, enquanto as demais alternativas se relacionam com esse subt�pico.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -3714,22 +3715,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
       "subtopico": "Grandezas escalares e vetoriais no movimento",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando se estuda grandezas escalares e vetoriais no movimento, o foco principal está em:",
+      "enunciado": "Quando se estuda grandezas escalares e vetoriais no movimento, o foco principal est� em:",
       "opcoes": [
-        "a classificação das grandezas do movimento em escalares e vetoriais",
-        "a dependência da descrição do movimento em relação ao referencial escolhido",
-        "a distinção entre o caminho seguido, a distância percorrida e o deslocamento resultante",
-        "a relação entre percurso realizado e tempo decorrido"
+        "a classifica��o das grandezas do movimento em escalares e vetoriais",
+        "a depend�ncia da descri��o do movimento em rela��o ao referencial escolhido",
+        "a distin��o entre o caminho seguido, a dist�ncia percorrida e o deslocamento resultante",
+        "a rela��o entre percurso realizado e tempo decorrido"
       ],
-      "correta": "a classificação das grandezas do movimento em escalares e vetoriais",
-      "comentario": "Grandezas escalares e vetoriais no movimento volta a atenção para a classificação das grandezas do movimento em escalares e vetoriais.",
+      "correta": "a classifica��o das grandezas do movimento em escalares e vetoriais",
+      "comentario": "Grandezas escalares e vetoriais no movimento volta a aten��o para a classifica��o das grandezas do movimento em escalares e vetoriais.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -3753,22 +3754,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
       "subtopico": "Grandezas escalares e vetoriais no movimento",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferença entre grandezas escalares e vetoriais no movimento e referencial, repouso e movimento é que:",
+      "enunciado": "A principal diferen�a entre grandezas escalares e vetoriais no movimento e referencial, repouso e movimento � que:",
       "opcoes": [
-        "grandezas escalares e vetoriais classificam o tipo de informação física necessária, enquanto referencial define de onde o movimento é observado",
-        "Grandezas escalares e vetoriais no movimento e Referencial, repouso e movimento são exatamente a mesma ideia física em qualquer situação.",
+        "grandezas escalares e vetoriais classificam o tipo de informa��o f�sica necess�ria, enquanto referencial define de onde o movimento � observado",
+        "Grandezas escalares e vetoriais no movimento e Referencial, repouso e movimento s�o exatamente a mesma ideia f�sica em qualquer situa��o.",
         "Referencial, repouso e movimento elimina a necessidade de observar grandezas escalares e vetoriais no movimento.",
-        "Grandezas escalares e vetoriais no movimento depende apenas de opinião pessoal, sem relação com grandezas, modelos ou medidas."
+        "Grandezas escalares e vetoriais no movimento depende apenas de opini�o pessoal, sem rela��o com grandezas, modelos ou medidas."
       ],
-      "correta": "grandezas escalares e vetoriais classificam o tipo de informação física necessária, enquanto referencial define de onde o movimento é observado",
-      "comentario": "A comparação correta distingue os dois subtópicos sem confundir seus objetos de estudo.",
+      "correta": "grandezas escalares e vetoriais classificam o tipo de informa��o f�sica necess�ria, enquanto referencial define de onde o movimento � observado",
+      "comentario": "A compara��o correta distingue os dois subt�picos sem confundir seus objetos de estudo.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -3792,21 +3793,21 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
       "subtopico": "Grandezas escalares e vetoriais no movimento",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma observação experimental, registrou-se o seguinte caso: a distância percorrida é informada em quilômetros, enquanto o deslocamento precisa de valor, direção e sentido para ser completamente descrito A leitura física mais adequada aponta para:",
+      "enunciado": "Em uma observa��o experimental, registrou-se o seguinte caso: a dist�ncia percorrida � informada em quil�metros, enquanto o deslocamento precisa de valor, dire��o e sentido para ser completamente descrito A leitura f�sica mais adequada aponta para:",
       "opcoes": [
-        "o caso mostra que nem toda grandeza do movimento é descrita da mesma maneira",
-        "Grandezas escalares e vetoriais no movimento mostra que as grandezas envolvidas não precisam ser relacionadas para interpretar o caso.",
-        "Grandezas escalares e vetoriais no movimento prova que a situação dispensa qualquer leitura física ou quantitativa.",
-        "Grandezas escalares e vetoriais no movimento significa que o fenômeno não pode ser descrito por variáveis físicas."
+        "o caso mostra que nem toda grandeza do movimento � descrita da mesma maneira",
+        "Grandezas escalares e vetoriais no movimento mostra que as grandezas envolvidas n�o precisam ser relacionadas para interpretar o caso.",
+        "Grandezas escalares e vetoriais no movimento prova que a situa��o dispensa qualquer leitura f�sica ou quantitativa.",
+        "Grandezas escalares e vetoriais no movimento significa que o fen�meno n�o pode ser descrito por vari�veis f�sicas."
       ],
-      "correta": "o caso mostra que nem toda grandeza do movimento é descrita da mesma maneira",
+      "correta": "o caso mostra que nem toda grandeza do movimento � descrita da mesma maneira",
       "comentario": "Grandezas escalares e vetoriais no movimento permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
       "tempoEstimado": 25,
       "tags": [
@@ -3831,22 +3832,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
       "subtopico": "Grandezas escalares e vetoriais no movimento",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação abaixo evidencia grandezas escalares e vetoriais no movimento de maneira mais clara?",
+      "enunciado": "Qual situa��o abaixo evidencia grandezas escalares e vetoriais no movimento de maneira mais clara?",
       "opcoes": [
-        "classificar os dados de um mapa de percurso entre distância total e deslocamento final",
-        "comparar o movimento de um ônibus do ponto de vista de um passageiro e de um pedestre",
+        "classificar os dados de um mapa de percurso entre dist�ncia total e deslocamento final",
+        "comparar o movimento de um �nibus do ponto de vista de um passageiro e de um pedestre",
         "analisar voltas em uma pista distinguindo percurso total e deslocamento final",
-        "estimar a velocidade média de uma van escolar comparando distância e duração do trajeto"
+        "estimar a velocidade m�dia de uma van escolar comparando dist�ncia e dura��o do trajeto"
       ],
-      "correta": "classificar os dados de um mapa de percurso entre distância total e deslocamento final",
-      "comentario": "A alternativa correta aproxima grandezas escalares e vetoriais no movimento de uma situação concreta.",
+      "correta": "classificar os dados de um mapa de percurso entre dist�ncia total e deslocamento final",
+      "comentario": "A alternativa correta aproxima grandezas escalares e vetoriais no movimento de uma situa��o concreta.",
       "tempoEstimado": 35,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -3870,22 +3871,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
       "subtopico": "Grandezas escalares e vetoriais no movimento",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"a distância percorrida é informada em quilômetros, enquanto o deslocamento precisa de valor, direção e sentido para ser completamente descrito\", qual conclusão é mais adequada?",
+      "enunciado": "Ao analisar o caso \"a dist�ncia percorrida � informada em quil�metros, enquanto o deslocamento precisa de valor, dire��o e sentido para ser completamente descrito\", qual conclus�o � mais adequada?",
       "opcoes": [
-        "o caso mostra que nem toda grandeza do movimento é descrita da mesma maneira",
-        "A situação indica que grandezas escalares e vetoriais no movimento não possui relação com medidas, variáveis ou interpretação física.",
-        "A situação prova que grandezas escalares e vetoriais no movimento só existe em exemplos teóricos sem uso cotidiano.",
-        "A situação mostra que grandezas escalares e vetoriais no movimento torna desnecessário comparar dados e modelos."
+        "o caso mostra que nem toda grandeza do movimento � descrita da mesma maneira",
+        "A situa��o indica que grandezas escalares e vetoriais no movimento n�o possui rela��o com medidas, vari�veis ou interpreta��o f�sica.",
+        "A situa��o prova que grandezas escalares e vetoriais no movimento s� existe em exemplos te�ricos sem uso cotidiano.",
+        "A situa��o mostra que grandezas escalares e vetoriais no movimento torna desnecess�rio comparar dados e modelos."
       ],
-      "correta": "o caso mostra que nem toda grandeza do movimento é descrita da mesma maneira",
-      "comentario": "A conclusão correta mantém coerência com os dados apresentados e com grandezas escalares e vetoriais no movimento.",
+      "correta": "o caso mostra que nem toda grandeza do movimento � descrita da mesma maneira",
+      "comentario": "A conclus�o correta mant�m coer�ncia com os dados apresentados e com grandezas escalares e vetoriais no movimento.",
       "tempoEstimado": 35,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -3909,8 +3910,8 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
       "subtopico": "Grandezas escalares e vetoriais no movimento",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
@@ -3918,12 +3919,12 @@ export const cinematicaMruMruv = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual pergunta de pesquisa se relaciona melhor com grandezas escalares e vetoriais no movimento?",
       "opcoes": [
-        "quais grandezas do movimento exigem direção e sentido para serem totalmente descritas?",
-        "como a mudança de referencial altera a descrição do movimento de um mesmo corpo?",
-        "como diferenciar distância percorrida e deslocamento em um percurso de ida e volta?",
-        "como calcular a velocidade escalar média a partir de dados de distância e tempo?"
+        "quais grandezas do movimento exigem dire��o e sentido para serem totalmente descritas?",
+        "como a mudan�a de referencial altera a descri��o do movimento de um mesmo corpo?",
+        "como diferenciar dist�ncia percorrida e deslocamento em um percurso de ida e volta?",
+        "como calcular a velocidade escalar m�dia a partir de dados de dist�ncia e tempo?"
       ],
-      "correta": "quais grandezas do movimento exigem direção e sentido para serem totalmente descritas?",
+      "correta": "quais grandezas do movimento exigem dire��o e sentido para serem totalmente descritas?",
       "comentario": "A pergunta correta investiga grandezas escalares e vetoriais no movimento de forma direta e coerente.",
       "tempoEstimado": 35,
       "tags": [
@@ -3948,22 +3949,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
       "subtopico": "Grandezas escalares e vetoriais no movimento",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a afirmação que revela compreensão inadequada de grandezas escalares e vetoriais no movimento.",
+      "enunciado": "Assinale a afirma��o que revela compreens�o inadequada de grandezas escalares e vetoriais no movimento.",
       "opcoes": [
-        "A distinção entre grandezas descritas apenas por valor numérico e unidade e grandezas que também exigem direção e sentido.",
-        "A classificação das grandezas do movimento em escalares e vetoriais.",
-        "Grandezas escalares usam apenas valor e unidade, enquanto vetoriais exigem também direção e sentido.",
-        "Toda grandeza usada na cinemática é vetorial."
+        "A distin��o entre grandezas descritas apenas por valor num�rico e unidade e grandezas que tamb�m exigem dire��o e sentido.",
+        "A classifica��o das grandezas do movimento em escalares e vetoriais.",
+        "Grandezas escalares usam apenas valor e unidade, enquanto vetoriais exigem tamb�m dire��o e sentido.",
+        "Toda grandeza usada na cinem�tica � vetorial."
       ],
-      "correta": "Toda grandeza usada na cinemática é vetorial.",
-      "comentario": "A alternativa incorreta expressa um equívoco comum sobre grandezas escalares e vetoriais no movimento.",
+      "correta": "Toda grandeza usada na cinem�tica � vetorial.",
+      "comentario": "A alternativa incorreta expressa um equ�voco comum sobre grandezas escalares e vetoriais no movimento.",
       "tempoEstimado": 45,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -3987,22 +3988,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
       "subtopico": "Grandezas escalares e vetoriais no movimento",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre Física, um estudante afirmou: \"distância é escalar, enquanto deslocamento e velocidade vetorial são grandezas vetoriais\". Qual avaliação é mais consistente?",
+      "enunciado": "Em um debate sobre F�sica, um estudante afirmou: \"dist�ncia � escalar, enquanto deslocamento e velocidade vetorial s�o grandezas vetoriais\". Qual avalia��o � mais consistente?",
       "opcoes": [
-        "A afirmação está correta, porque algumas grandezas precisam apenas de módulo, enquanto outras exigem também direção e sentido",
-        "A afirmação está incorreta, porque grandezas escalares e vetoriais no movimento nunca pode ser usada na Física escolar.",
-        "A afirmação é irrelevante, porque grandezas escalares e vetoriais no movimento não se relaciona com interpretação de fenômenos.",
-        "A afirmação está incorreta, porque grandezas escalares e vetoriais no movimento elimina a necessidade de medir e comparar grandezas."
+        "A afirma��o est� correta, porque algumas grandezas precisam apenas de m�dulo, enquanto outras exigem tamb�m dire��o e sentido",
+        "A afirma��o est� incorreta, porque grandezas escalares e vetoriais no movimento nunca pode ser usada na F�sica escolar.",
+        "A afirma��o � irrelevante, porque grandezas escalares e vetoriais no movimento n�o se relaciona com interpreta��o de fen�menos.",
+        "A afirma��o est� incorreta, porque grandezas escalares e vetoriais no movimento elimina a necessidade de medir e comparar grandezas."
       ],
-      "correta": "A afirmação está correta, porque algumas grandezas precisam apenas de módulo, enquanto outras exigem também direção e sentido",
-      "comentario": "A avaliação correta recupera o núcleo conceitual de grandezas escalares e vetoriais no movimento.",
+      "correta": "A afirma��o est� correta, porque algumas grandezas precisam apenas de m�dulo, enquanto outras exigem tamb�m dire��o e sentido",
+      "comentario": "A avalia��o correta recupera o n�cleo conceitual de grandezas escalares e vetoriais no movimento.",
       "tempoEstimado": 45,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -4026,22 +4027,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
       "subtopico": "Grandezas escalares e vetoriais no movimento",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se grandezas escalares e vetoriais no movimento fosse ignorado(a) na análise de um problema físico, o resultado mais provável seria:",
+      "enunciado": "Se grandezas escalares e vetoriais no movimento fosse ignorado(a) na an�lise de um problema f�sico, o resultado mais prov�vel seria:",
       "opcoes": [
-        "seriam misturadas informações escalares e vetoriais, comprometendo a interpretação correta do movimento",
-        "o problema continuaria exatamente igual, porque grandezas escalares e vetoriais no movimento não interfere na análise física",
-        "seria possível resolver a situação sem observar nenhuma grandeza, relação ou modelo",
-        "a interpretação ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
+        "seriam misturadas informa��es escalares e vetoriais, comprometendo a interpreta��o correta do movimento",
+        "o problema continuaria exatamente igual, porque grandezas escalares e vetoriais no movimento n�o interfere na an�lise f�sica",
+        "seria poss�vel resolver a situa��o sem observar nenhuma grandeza, rela��o ou modelo",
+        "a interpreta��o ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
       ],
-      "correta": "seriam misturadas informações escalares e vetoriais, comprometendo a interpretação correta do movimento",
-      "comentario": "Ignorar grandezas escalares e vetoriais no movimento compromete a leitura física e a qualidade da solução.",
+      "correta": "seriam misturadas informa��es escalares e vetoriais, comprometendo a interpreta��o correta do movimento",
+      "comentario": "Ignorar grandezas escalares e vetoriais no movimento compromete a leitura f�sica e a qualidade da solu��o.",
       "tempoEstimado": 55,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -4065,22 +4066,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
       "subtopico": "Grandezas escalares e vetoriais no movimento",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente grandezas escalares e vetoriais no movimento a uma situação escolar ou cotidiana?",
+      "enunciado": "Qual alternativa aplica corretamente grandezas escalares e vetoriais no movimento a uma situa��o escolar ou cotidiana?",
       "opcoes": [
-        "classificar os dados de um mapa de percurso entre distância total e deslocamento final",
+        "classificar os dados de um mapa de percurso entre dist�ncia total e deslocamento final",
         "comparar uma escada rolante em regime constante com um corpo em queda livre",
-        "prever o tempo de deslocamento entre casa e escola usando distância, velocidade e intervalo de tempo",
-        "interpretar gráficos produzidos em um experimento escolar com carrinho em trilho"
+        "prever o tempo de deslocamento entre casa e escola usando dist�ncia, velocidade e intervalo de tempo",
+        "interpretar gr�ficos produzidos em um experimento escolar com carrinho em trilho"
       ],
-      "correta": "classificar os dados de um mapa de percurso entre distância total e deslocamento final",
-      "comentario": "A aplicação correta mostra como grandezas escalares e vetoriais no movimento aparece em contextos próximos do cotidiano.",
+      "correta": "classificar os dados de um mapa de percurso entre dist�ncia total e deslocamento final",
+      "comentario": "A aplica��o correta mostra como grandezas escalares e vetoriais no movimento aparece em contextos pr�ximos do cotidiano.",
       "tempoEstimado": 55,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -4104,22 +4105,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
       "subtopico": "Grandezas escalares e vetoriais no movimento",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual síntese final representa melhor grandezas escalares e vetoriais no movimento?",
+      "enunciado": "Qual s�ntese final representa melhor grandezas escalares e vetoriais no movimento?",
       "opcoes": [
-        "grandezas escalares usam apenas valor e unidade, enquanto vetoriais exigem também direção e sentido",
-        "movimento e repouso são conceitos relativos ao referencial adotado",
-        "trajetória indica o caminho, distância soma o percurso e deslocamento compara posição inicial e final",
-        "velocidade escalar média indica quanto percurso, em média, é realizado por unidade de tempo"
+        "grandezas escalares usam apenas valor e unidade, enquanto vetoriais exigem tamb�m dire��o e sentido",
+        "movimento e repouso s�o conceitos relativos ao referencial adotado",
+        "trajet�ria indica o caminho, dist�ncia soma o percurso e deslocamento compara posi��o inicial e final",
+        "velocidade escalar m�dia indica quanto percurso, em m�dia, � realizado por unidade de tempo"
       ],
-      "correta": "grandezas escalares usam apenas valor e unidade, enquanto vetoriais exigem também direção e sentido",
-      "comentario": "A síntese correta preserva a definição, o foco e o uso analítico de grandezas escalares e vetoriais no movimento.",
+      "correta": "grandezas escalares usam apenas valor e unidade, enquanto vetoriais exigem tamb�m dire��o e sentido",
+      "comentario": "A s�ntese correta preserva a defini��o, o foco e o uso anal�tico de grandezas escalares e vetoriais no movimento.",
       "tempoEstimado": 55,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -4143,22 +4144,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Leitura de gráficos cinemáticos",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Leitura de gr�ficos cinem�ticos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Física, Leitura de gráficos cinemáticos pode ser definido(a) como:",
+      "enunciado": "Em F�sica, Leitura de gr�ficos cinem�ticos pode ser definido(a) como:",
       "opcoes": [
-        "a interpretação física de gráficos de posição, velocidade e aceleração em função do tempo",
-        "a descrição de repouso ou movimento de um corpo em relação a um referencial adotado",
-        "a diferenciação entre caminho percorrido, comprimento total do percurso e variação entre posição inicial e final",
-        "a razão entre a distância percorrida e o intervalo de tempo gasto no percurso"
+        "a interpreta��o f�sica de gr�ficos de posi��o, velocidade e acelera��o em fun��o do tempo",
+        "a descri��o de repouso ou movimento de um corpo em rela��o a um referencial adotado",
+        "a diferencia��o entre caminho percorrido, comprimento total do percurso e varia��o entre posi��o inicial e final",
+        "a raz�o entre a dist�ncia percorrida e o intervalo de tempo gasto no percurso"
       ],
-      "correta": "a interpretação física de gráficos de posição, velocidade e aceleração em função do tempo",
-      "comentario": "Leitura de gráficos cinemáticos refere-se à interpretação física de gráficos de posição, velocidade e aceleração em função do tempo.",
+      "correta": "a interpreta��o f�sica de gr�ficos de posi��o, velocidade e acelera��o em fun��o do tempo",
+      "comentario": "Leitura de gr�ficos cinem�ticos refere-se � interpreta��o f�sica de gr�ficos de posi��o, velocidade e acelera��o em fun��o do tempo.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -4182,22 +4183,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Leitura de gráficos cinemáticos",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Leitura de gr�ficos cinem�ticos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: um gráfico posição por tempo aparece como reta crescente, enquanto um gráfico velocidade por tempo aparece como reta inclinada Esse caso exemplifica melhor qual subtópico?",
+      "enunciado": "Observe a situa��o: um gr�fico posi��o por tempo aparece como reta crescente, enquanto um gr�fico velocidade por tempo aparece como reta inclinada Esse caso exemplifica melhor qual subt�pico?",
       "opcoes": [
-        "Leitura de gráficos cinemáticos",
+        "Leitura de gr�ficos cinem�ticos",
         "Referencial, repouso e movimento",
-        "Trajetória, distância e deslocamento",
-        "Velocidade escalar média"
+        "Trajet�ria, dist�ncia e deslocamento",
+        "Velocidade escalar m�dia"
       ],
-      "correta": "Leitura de gráficos cinemáticos",
-      "comentario": "A situação apresentada é um exemplo de leitura de gráficos cinemáticos.",
+      "correta": "Leitura de gr�ficos cinem�ticos",
+      "comentario": "A situa��o apresentada � um exemplo de leitura de gr�ficos cinem�ticos.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -4221,22 +4222,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Leitura de gráficos cinemáticos",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Leitura de gr�ficos cinem�ticos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmação descreve corretamente leitura de gráficos cinemáticos?",
+      "enunciado": "Qual afirma��o descreve corretamente leitura de gr�ficos cinem�ticos?",
       "opcoes": [
-        "A interpretação física de gráficos de posição, velocidade e aceleração em função do tempo.",
-        "A descrição de repouso ou movimento de um corpo em relação a um referencial adotado.",
-        "A diferenciação entre caminho percorrido, comprimento total do percurso e variação entre posição inicial e final.",
-        "A razão entre a distância percorrida e o intervalo de tempo gasto no percurso."
+        "A interpreta��o f�sica de gr�ficos de posi��o, velocidade e acelera��o em fun��o do tempo.",
+        "A descri��o de repouso ou movimento de um corpo em rela��o a um referencial adotado.",
+        "A diferencia��o entre caminho percorrido, comprimento total do percurso e varia��o entre posi��o inicial e final.",
+        "A raz�o entre a dist�ncia percorrida e o intervalo de tempo gasto no percurso."
       ],
-      "correta": "A interpretação física de gráficos de posição, velocidade e aceleração em função do tempo.",
-      "comentario": "A afirmação correta retoma o sentido central de leitura de gráficos cinemáticos.",
+      "correta": "A interpreta��o f�sica de gr�ficos de posi��o, velocidade e acelera��o em fun��o do tempo.",
+      "comentario": "A afirma��o correta retoma o sentido central de leitura de gr�ficos cinem�ticos.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -4260,22 +4261,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Leitura de gráficos cinemáticos",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Leitura de gr�ficos cinem�ticos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa incompatível com leitura de gráficos cinemáticos.",
+      "enunciado": "Assinale a alternativa incompat�vel com leitura de gr�ficos cinem�ticos.",
       "opcoes": [
-        "olhar um gráfico de posição por tempo como se ele mostrasse diretamente a aceleração em qualquer situação.",
-        "a relação entre a forma do gráfico e o comportamento do movimento representado.",
-        "gráficos cinemáticos permitem inferir velocidades, acelerações e comportamentos do movimento a partir de suas formas.",
-        "a interpretação física de gráficos de posição, velocidade e aceleração em função do tempo."
+        "olhar um gr�fico de posi��o por tempo como se ele mostrasse diretamente a acelera��o em qualquer situa��o.",
+        "a rela��o entre a forma do gr�fico e o comportamento do movimento representado.",
+        "gr�ficos cinem�ticos permitem inferir velocidades, acelera��es e comportamentos do movimento a partir de suas formas.",
+        "a interpreta��o f�sica de gr�ficos de posi��o, velocidade e acelera��o em fun��o do tempo."
       ],
-      "correta": "olhar um gráfico de posição por tempo como se ele mostrasse diretamente a aceleração em qualquer situação.",
-      "comentario": "Olhar um gráfico de posição por tempo como se ele mostrasse diretamente a aceleração em qualquer situação não representa leitura de gráficos cinemáticos, enquanto as demais alternativas se relacionam com esse subtópico.",
+      "correta": "olhar um gr�fico de posi��o por tempo como se ele mostrasse diretamente a acelera��o em qualquer situa��o.",
+      "comentario": "Olhar um gr�fico de posi��o por tempo como se ele mostrasse diretamente a acelera��o em qualquer situa��o n�o representa leitura de gr�ficos cinem�ticos, enquanto as demais alternativas se relacionam com esse subt�pico.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -4299,22 +4300,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Leitura de gráficos cinemáticos",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Leitura de gr�ficos cinem�ticos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando se estuda leitura de gráficos cinemáticos, o foco principal está em:",
+      "enunciado": "Quando se estuda leitura de gr�ficos cinem�ticos, o foco principal est� em:",
       "opcoes": [
-        "a relação entre a forma do gráfico e o comportamento do movimento representado",
-        "a dependência da descrição do movimento em relação ao referencial escolhido",
-        "a distinção entre o caminho seguido, a distância percorrida e o deslocamento resultante",
-        "a relação entre percurso realizado e tempo decorrido"
+        "a rela��o entre a forma do gr�fico e o comportamento do movimento representado",
+        "a depend�ncia da descri��o do movimento em rela��o ao referencial escolhido",
+        "a distin��o entre o caminho seguido, a dist�ncia percorrida e o deslocamento resultante",
+        "a rela��o entre percurso realizado e tempo decorrido"
       ],
-      "correta": "a relação entre a forma do gráfico e o comportamento do movimento representado",
-      "comentario": "Leitura de gráficos cinemáticos volta a atenção para a relação entre a forma do gráfico e o comportamento do movimento representado.",
+      "correta": "a rela��o entre a forma do gr�fico e o comportamento do movimento representado",
+      "comentario": "Leitura de gr�ficos cinem�ticos volta a aten��o para a rela��o entre a forma do gr�fico e o comportamento do movimento representado.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -4338,22 +4339,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Leitura de gráficos cinemáticos",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Leitura de gr�ficos cinem�ticos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferença entre leitura de gráficos cinemáticos e modelagem de situações cotidianas é que:",
+      "enunciado": "A principal diferen�a entre leitura de gr�ficos cinem�ticos e modelagem de situa��es cotidianas � que:",
       "opcoes": [
-        "leitura de gráficos cinemáticos interpreta representações já construídas, enquanto modelagem de situações cotidianas transforma o problema real em variáveis, relações e representações",
-        "Leitura de gráficos cinemáticos e Modelagem de situações cotidianas são exatamente a mesma ideia física em qualquer situação.",
-        "Modelagem de situações cotidianas elimina a necessidade de observar leitura de gráficos cinemáticos.",
-        "Leitura de gráficos cinemáticos depende apenas de opinião pessoal, sem relação com grandezas, modelos ou medidas."
+        "leitura de gr�ficos cinem�ticos interpreta representa��es j� constru�das, enquanto modelagem de situa��es cotidianas transforma o problema real em vari�veis, rela��es e representa��es",
+        "Leitura de gr�ficos cinem�ticos e Modelagem de situa��es cotidianas s�o exatamente a mesma ideia f�sica em qualquer situa��o.",
+        "Modelagem de situa��es cotidianas elimina a necessidade de observar leitura de gr�ficos cinem�ticos.",
+        "Leitura de gr�ficos cinem�ticos depende apenas de opini�o pessoal, sem rela��o com grandezas, modelos ou medidas."
       ],
-      "correta": "leitura de gráficos cinemáticos interpreta representações já construídas, enquanto modelagem de situações cotidianas transforma o problema real em variáveis, relações e representações",
-      "comentario": "A comparação correta distingue os dois subtópicos sem confundir seus objetos de estudo.",
+      "correta": "leitura de gr�ficos cinem�ticos interpreta representa��es j� constru�das, enquanto modelagem de situa��es cotidianas transforma o problema real em vari�veis, rela��es e representa��es",
+      "comentario": "A compara��o correta distingue os dois subt�picos sem confundir seus objetos de estudo.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -4377,22 +4378,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Leitura de gráficos cinemáticos",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Leitura de gr�ficos cinem�ticos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma observação experimental, registrou-se o seguinte caso: um gráfico posição por tempo aparece como reta crescente, enquanto um gráfico velocidade por tempo aparece como reta inclinada A leitura física mais adequada aponta para:",
+      "enunciado": "Em uma observa��o experimental, registrou-se o seguinte caso: um gr�fico posi��o por tempo aparece como reta crescente, enquanto um gr�fico velocidade por tempo aparece como reta inclinada A leitura f�sica mais adequada aponta para:",
       "opcoes": [
-        "o caso mostra que a leitura do gráfico depende de associar sua forma às grandezas físicas representadas",
-        "Leitura de gráficos cinemáticos mostra que as grandezas envolvidas não precisam ser relacionadas para interpretar o caso.",
-        "Leitura de gráficos cinemáticos prova que a situação dispensa qualquer leitura física ou quantitativa.",
-        "Leitura de gráficos cinemáticos significa que o fenômeno não pode ser descrito por variáveis físicas."
+        "o caso mostra que a leitura do gr�fico depende de associar sua forma �s grandezas f�sicas representadas",
+        "Leitura de gr�ficos cinem�ticos mostra que as grandezas envolvidas n�o precisam ser relacionadas para interpretar o caso.",
+        "Leitura de gr�ficos cinem�ticos prova que a situa��o dispensa qualquer leitura f�sica ou quantitativa.",
+        "Leitura de gr�ficos cinem�ticos significa que o fen�meno n�o pode ser descrito por vari�veis f�sicas."
       ],
-      "correta": "o caso mostra que a leitura do gráfico depende de associar sua forma às grandezas físicas representadas",
-      "comentario": "Leitura de gráficos cinemáticos permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
+      "correta": "o caso mostra que a leitura do gr�fico depende de associar sua forma �s grandezas f�sicas representadas",
+      "comentario": "Leitura de gr�ficos cinem�ticos permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -4416,22 +4417,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Leitura de gráficos cinemáticos",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Leitura de gr�ficos cinem�ticos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação abaixo evidencia leitura de gráficos cinemáticos de maneira mais clara?",
+      "enunciado": "Qual situa��o abaixo evidencia leitura de gr�ficos cinem�ticos de maneira mais clara?",
       "opcoes": [
-        "interpretar gráficos produzidos em um experimento escolar com carrinho em trilho",
-        "comparar o movimento de um ônibus do ponto de vista de um passageiro e de um pedestre",
+        "interpretar gr�ficos produzidos em um experimento escolar com carrinho em trilho",
+        "comparar o movimento de um �nibus do ponto de vista de um passageiro e de um pedestre",
         "analisar voltas em uma pista distinguindo percurso total e deslocamento final",
-        "estimar a velocidade média de uma van escolar comparando distância e duração do trajeto"
+        "estimar a velocidade m�dia de uma van escolar comparando dist�ncia e dura��o do trajeto"
       ],
-      "correta": "interpretar gráficos produzidos em um experimento escolar com carrinho em trilho",
-      "comentario": "A alternativa correta aproxima leitura de gráficos cinemáticos de uma situação concreta.",
+      "correta": "interpretar gr�ficos produzidos em um experimento escolar com carrinho em trilho",
+      "comentario": "A alternativa correta aproxima leitura de gr�ficos cinem�ticos de uma situa��o concreta.",
       "tempoEstimado": 35,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -4455,22 +4456,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Leitura de gráficos cinemáticos",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Leitura de gr�ficos cinem�ticos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"um gráfico posição por tempo aparece como reta crescente, enquanto um gráfico velocidade por tempo aparece como reta inclinada\", qual conclusão é mais adequada?",
+      "enunciado": "Ao analisar o caso \"um gr�fico posi��o por tempo aparece como reta crescente, enquanto um gr�fico velocidade por tempo aparece como reta inclinada\", qual conclus�o � mais adequada?",
       "opcoes": [
-        "o caso mostra que a leitura do gráfico depende de associar sua forma às grandezas físicas representadas",
-        "A situação indica que leitura de gráficos cinemáticos não possui relação com medidas, variáveis ou interpretação física.",
-        "A situação prova que leitura de gráficos cinemáticos só existe em exemplos teóricos sem uso cotidiano.",
-        "A situação mostra que leitura de gráficos cinemáticos torna desnecessário comparar dados e modelos."
+        "o caso mostra que a leitura do gr�fico depende de associar sua forma �s grandezas f�sicas representadas",
+        "A situa��o indica que leitura de gr�ficos cinem�ticos n�o possui rela��o com medidas, vari�veis ou interpreta��o f�sica.",
+        "A situa��o prova que leitura de gr�ficos cinem�ticos s� existe em exemplos te�ricos sem uso cotidiano.",
+        "A situa��o mostra que leitura de gr�ficos cinem�ticos torna desnecess�rio comparar dados e modelos."
       ],
-      "correta": "o caso mostra que a leitura do gráfico depende de associar sua forma às grandezas físicas representadas",
-      "comentario": "A conclusão correta mantém coerência com os dados apresentados e com leitura de gráficos cinemáticos.",
+      "correta": "o caso mostra que a leitura do gr�fico depende de associar sua forma �s grandezas f�sicas representadas",
+      "comentario": "A conclus�o correta mant�m coer�ncia com os dados apresentados e com leitura de gr�ficos cinem�ticos.",
       "tempoEstimado": 35,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -4494,22 +4495,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Leitura de gráficos cinemáticos",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Leitura de gr�ficos cinem�ticos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com leitura de gráficos cinemáticos?",
+      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com leitura de gr�ficos cinem�ticos?",
       "opcoes": [
-        "o que inclinação e áreas em gráficos podem indicar em problemas de cinemática?",
-        "como a mudança de referencial altera a descrição do movimento de um mesmo corpo?",
-        "como diferenciar distância percorrida e deslocamento em um percurso de ida e volta?",
-        "como calcular a velocidade escalar média a partir de dados de distância e tempo?"
+        "o que inclina��o e �reas em gr�ficos podem indicar em problemas de cinem�tica?",
+        "como a mudan�a de referencial altera a descri��o do movimento de um mesmo corpo?",
+        "como diferenciar dist�ncia percorrida e deslocamento em um percurso de ida e volta?",
+        "como calcular a velocidade escalar m�dia a partir de dados de dist�ncia e tempo?"
       ],
-      "correta": "o que inclinação e áreas em gráficos podem indicar em problemas de cinemática?",
-      "comentario": "A pergunta correta investiga leitura de gráficos cinemáticos de forma direta e coerente.",
+      "correta": "o que inclina��o e �reas em gr�ficos podem indicar em problemas de cinem�tica?",
+      "comentario": "A pergunta correta investiga leitura de gr�ficos cinem�ticos de forma direta e coerente.",
       "tempoEstimado": 35,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -4533,22 +4534,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Leitura de gráficos cinemáticos",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Leitura de gr�ficos cinem�ticos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a afirmação que revela compreensão inadequada de leitura de gráficos cinemáticos.",
+      "enunciado": "Assinale a afirma��o que revela compreens�o inadequada de leitura de gr�ficos cinem�ticos.",
       "opcoes": [
-        "A interpretação física de gráficos de posição, velocidade e aceleração em função do tempo.",
-        "A relação entre a forma do gráfico e o comportamento do movimento representado.",
-        "Gráficos cinemáticos permitem inferir velocidades, acelerações e comportamentos do movimento a partir de suas formas.",
-        "Qualquer gráfico crescente indica aceleração positiva."
+        "A interpreta��o f�sica de gr�ficos de posi��o, velocidade e acelera��o em fun��o do tempo.",
+        "A rela��o entre a forma do gr�fico e o comportamento do movimento representado.",
+        "Gr�ficos cinem�ticos permitem inferir velocidades, acelera��es e comportamentos do movimento a partir de suas formas.",
+        "Qualquer gr�fico crescente indica acelera��o positiva."
       ],
-      "correta": "Qualquer gráfico crescente indica aceleração positiva.",
-      "comentario": "A alternativa incorreta expressa um equívoco comum sobre leitura de gráficos cinemáticos.",
+      "correta": "Qualquer gr�fico crescente indica acelera��o positiva.",
+      "comentario": "A alternativa incorreta expressa um equ�voco comum sobre leitura de gr�ficos cinem�ticos.",
       "tempoEstimado": 45,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -4572,22 +4573,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Leitura de gráficos cinemáticos",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Leitura de gr�ficos cinem�ticos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre Física, um estudante afirmou: \"em um gráfico posição por tempo, a inclinação está associada à velocidade do móvel\". Qual avaliação é mais consistente?",
+      "enunciado": "Em um debate sobre F�sica, um estudante afirmou: \"em um gr�fico posi��o por tempo, a inclina��o est� associada � velocidade do m�vel\". Qual avalia��o � mais consistente?",
       "opcoes": [
-        "A afirmação está correta, porque a taxa de variação da posição em relação ao tempo corresponde à velocidade",
-        "A afirmação está incorreta, porque leitura de gráficos cinemáticos nunca pode ser usada na Física escolar.",
-        "A afirmação é irrelevante, porque leitura de gráficos cinemáticos não se relaciona com interpretação de fenômenos.",
-        "A afirmação está incorreta, porque leitura de gráficos cinemáticos elimina a necessidade de medir e comparar grandezas."
+        "A afirma��o est� correta, porque a taxa de varia��o da posi��o em rela��o ao tempo corresponde � velocidade",
+        "A afirma��o est� incorreta, porque leitura de gr�ficos cinem�ticos nunca pode ser usada na F�sica escolar.",
+        "A afirma��o � irrelevante, porque leitura de gr�ficos cinem�ticos n�o se relaciona com interpreta��o de fen�menos.",
+        "A afirma��o est� incorreta, porque leitura de gr�ficos cinem�ticos elimina a necessidade de medir e comparar grandezas."
       ],
-      "correta": "A afirmação está correta, porque a taxa de variação da posição em relação ao tempo corresponde à velocidade",
-      "comentario": "A avaliação correta recupera o núcleo conceitual de leitura de gráficos cinemáticos.",
+      "correta": "A afirma��o est� correta, porque a taxa de varia��o da posi��o em rela��o ao tempo corresponde � velocidade",
+      "comentario": "A avalia��o correta recupera o n�cleo conceitual de leitura de gr�ficos cinem�ticos.",
       "tempoEstimado": 45,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -4611,22 +4612,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Leitura de gráficos cinemáticos",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Leitura de gr�ficos cinem�ticos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se leitura de gráficos cinemáticos fosse ignorado(a) na análise de um problema físico, o resultado mais provável seria:",
+      "enunciado": "Se leitura de gr�ficos cinem�ticos fosse ignorado(a) na an�lise de um problema f�sico, o resultado mais prov�vel seria:",
       "opcoes": [
-        "seriam tiradas conclusões erradas sobre velocidade e aceleração a partir da forma dos gráficos",
-        "o problema continuaria exatamente igual, porque leitura de gráficos cinemáticos não interfere na análise física",
-        "seria possível resolver a situação sem observar nenhuma grandeza, relação ou modelo",
-        "a interpretação ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
+        "seriam tiradas conclus�es erradas sobre velocidade e acelera��o a partir da forma dos gr�ficos",
+        "o problema continuaria exatamente igual, porque leitura de gr�ficos cinem�ticos n�o interfere na an�lise f�sica",
+        "seria poss�vel resolver a situa��o sem observar nenhuma grandeza, rela��o ou modelo",
+        "a interpreta��o ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
       ],
-      "correta": "seriam tiradas conclusões erradas sobre velocidade e aceleração a partir da forma dos gráficos",
-      "comentario": "Ignorar leitura de gráficos cinemáticos compromete a leitura física e a qualidade da solução.",
+      "correta": "seriam tiradas conclus�es erradas sobre velocidade e acelera��o a partir da forma dos gr�ficos",
+      "comentario": "Ignorar leitura de gr�ficos cinem�ticos compromete a leitura f�sica e a qualidade da solu��o.",
       "tempoEstimado": 55,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -4650,22 +4651,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Leitura de gráficos cinemáticos",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Leitura de gr�ficos cinem�ticos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente leitura de gráficos cinemáticos a uma situação escolar ou cotidiana?",
+      "enunciado": "Qual alternativa aplica corretamente leitura de gr�ficos cinem�ticos a uma situa��o escolar ou cotidiana?",
       "opcoes": [
-        "interpretar gráficos produzidos em um experimento escolar com carrinho em trilho",
+        "interpretar gr�ficos produzidos em um experimento escolar com carrinho em trilho",
         "comparar uma escada rolante em regime constante com um corpo em queda livre",
-        "prever o tempo de deslocamento entre casa e escola usando distância, velocidade e intervalo de tempo",
-        "classificar os dados de um mapa de percurso entre distância total e deslocamento final"
+        "prever o tempo de deslocamento entre casa e escola usando dist�ncia, velocidade e intervalo de tempo",
+        "classificar os dados de um mapa de percurso entre dist�ncia total e deslocamento final"
       ],
-      "correta": "interpretar gráficos produzidos em um experimento escolar com carrinho em trilho",
-      "comentario": "A aplicação correta mostra como leitura de gráficos cinemáticos aparece em contextos próximos do cotidiano.",
+      "correta": "interpretar gr�ficos produzidos em um experimento escolar com carrinho em trilho",
+      "comentario": "A aplica��o correta mostra como leitura de gr�ficos cinem�ticos aparece em contextos pr�ximos do cotidiano.",
       "tempoEstimado": 55,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -4689,22 +4690,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Leitura de gráficos cinemáticos",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Leitura de gr�ficos cinem�ticos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual síntese final representa melhor leitura de gráficos cinemáticos?",
+      "enunciado": "Qual s�ntese final representa melhor leitura de gr�ficos cinem�ticos?",
       "opcoes": [
-        "gráficos cinemáticos permitem inferir velocidades, acelerações e comportamentos do movimento a partir de suas formas",
-        "movimento e repouso são conceitos relativos ao referencial adotado",
-        "trajetória indica o caminho, distância soma o percurso e deslocamento compara posição inicial e final",
-        "velocidade escalar média indica quanto percurso, em média, é realizado por unidade de tempo"
+        "gr�ficos cinem�ticos permitem inferir velocidades, acelera��es e comportamentos do movimento a partir de suas formas",
+        "movimento e repouso s�o conceitos relativos ao referencial adotado",
+        "trajet�ria indica o caminho, dist�ncia soma o percurso e deslocamento compara posi��o inicial e final",
+        "velocidade escalar m�dia indica quanto percurso, em m�dia, � realizado por unidade de tempo"
       ],
-      "correta": "gráficos cinemáticos permitem inferir velocidades, acelerações e comportamentos do movimento a partir de suas formas",
-      "comentario": "A síntese correta preserva a definição, o foco e o uso analítico de leitura de gráficos cinemáticos.",
+      "correta": "gr�ficos cinem�ticos permitem inferir velocidades, acelera��es e comportamentos do movimento a partir de suas formas",
+      "comentario": "A s�ntese correta preserva a defini��o, o foco e o uso anal�tico de leitura de gr�ficos cinem�ticos.",
       "tempoEstimado": 55,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -4728,22 +4729,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Modelagem de situações cotidianas",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Modelagem de situa��es cotidianas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Física, Modelagem de situações cotidianas pode ser definido(a) como:",
+      "enunciado": "Em F�sica, Modelagem de situa��es cotidianas pode ser definido(a) como:",
       "opcoes": [
-        "a tradução de um problema real de movimento em variáveis, relações físicas, gráficos ou equações simplificadas",
-        "a descrição de repouso ou movimento de um corpo em relação a um referencial adotado",
-        "a diferenciação entre caminho percorrido, comprimento total do percurso e variação entre posição inicial e final",
-        "a razão entre a distância percorrida e o intervalo de tempo gasto no percurso"
+        "a tradu��o de um problema real de movimento em vari�veis, rela��es f�sicas, gr�ficos ou equa��es simplificadas",
+        "a descri��o de repouso ou movimento de um corpo em rela��o a um referencial adotado",
+        "a diferencia��o entre caminho percorrido, comprimento total do percurso e varia��o entre posi��o inicial e final",
+        "a raz�o entre a dist�ncia percorrida e o intervalo de tempo gasto no percurso"
       ],
-      "correta": "a tradução de um problema real de movimento em variáveis, relações físicas, gráficos ou equações simplificadas",
-      "comentario": "Modelagem de situações cotidianas refere-se à tradução de um problema real de movimento em variáveis, relações físicas, gráficos ou equações simplificadas.",
+      "correta": "a tradu��o de um problema real de movimento em vari�veis, rela��es f�sicas, gr�ficos ou equa��es simplificadas",
+      "comentario": "Modelagem de situa��es cotidianas refere-se � tradu��o de um problema real de movimento em vari�veis, rela��es f�sicas, gr�ficos ou equa��es simplificadas.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -4767,22 +4768,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Modelagem de situações cotidianas",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Modelagem de situa��es cotidianas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: um estudante estima o tempo de chegada do ônibus usando a distância até a escola e a velocidade média informada Esse caso exemplifica melhor qual subtópico?",
+      "enunciado": "Observe a situa��o: um estudante estima o tempo de chegada do �nibus usando a dist�ncia at� a escola e a velocidade m�dia informada Esse caso exemplifica melhor qual subt�pico?",
       "opcoes": [
-        "Modelagem de situações cotidianas",
+        "Modelagem de situa��es cotidianas",
         "Referencial, repouso e movimento",
-        "Trajetória, distância e deslocamento",
-        "Velocidade escalar média"
+        "Trajet�ria, dist�ncia e deslocamento",
+        "Velocidade escalar m�dia"
       ],
-      "correta": "Modelagem de situações cotidianas",
-      "comentario": "A situação apresentada é um exemplo de modelagem de situações cotidianas.",
+      "correta": "Modelagem de situa��es cotidianas",
+      "comentario": "A situa��o apresentada � um exemplo de modelagem de situa��es cotidianas.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -4806,22 +4807,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Modelagem de situações cotidianas",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Modelagem de situa��es cotidianas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmação descreve corretamente modelagem de situações cotidianas?",
+      "enunciado": "Qual afirma��o descreve corretamente modelagem de situa��es cotidianas?",
       "opcoes": [
-        "A tradução de um problema real de movimento em variáveis, relações físicas, gráficos ou equações simplificadas.",
-        "A descrição de repouso ou movimento de um corpo em relação a um referencial adotado.",
-        "A diferenciação entre caminho percorrido, comprimento total do percurso e variação entre posição inicial e final.",
-        "A razão entre a distância percorrida e o intervalo de tempo gasto no percurso."
+        "A tradu��o de um problema real de movimento em vari�veis, rela��es f�sicas, gr�ficos ou equa��es simplificadas.",
+        "A descri��o de repouso ou movimento de um corpo em rela��o a um referencial adotado.",
+        "A diferencia��o entre caminho percorrido, comprimento total do percurso e varia��o entre posi��o inicial e final.",
+        "A raz�o entre a dist�ncia percorrida e o intervalo de tempo gasto no percurso."
       ],
-      "correta": "A tradução de um problema real de movimento em variáveis, relações físicas, gráficos ou equações simplificadas.",
-      "comentario": "A afirmação correta retoma o sentido central de modelagem de situações cotidianas.",
+      "correta": "A tradu��o de um problema real de movimento em vari�veis, rela��es f�sicas, gr�ficos ou equa��es simplificadas.",
+      "comentario": "A afirma��o correta retoma o sentido central de modelagem de situa��es cotidianas.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -4845,22 +4846,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Modelagem de situações cotidianas",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Modelagem de situa��es cotidianas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa incompatível com modelagem de situações cotidianas.",
+      "enunciado": "Assinale a alternativa incompat�vel com modelagem de situa��es cotidianas.",
       "opcoes": [
-        "insistir em usar todas as informações do cotidiano, mesmo as que não interferem no movimento analisado.",
-        "a seleção das grandezas relevantes para representar fisicamente uma situação real.",
-        "modelar uma situação cotidiana em Física significa selecionar variáveis importantes e representar o fenômeno de forma simplificada.",
-        "a tradução de um problema real de movimento em variáveis, relações físicas, gráficos ou equações simplificadas."
+        "insistir em usar todas as informa��es do cotidiano, mesmo as que n�o interferem no movimento analisado.",
+        "a sele��o das grandezas relevantes para representar fisicamente uma situa��o real.",
+        "modelar uma situa��o cotidiana em F�sica significa selecionar vari�veis importantes e representar o fen�meno de forma simplificada.",
+        "a tradu��o de um problema real de movimento em vari�veis, rela��es f�sicas, gr�ficos ou equa��es simplificadas."
       ],
-      "correta": "insistir em usar todas as informações do cotidiano, mesmo as que não interferem no movimento analisado.",
-      "comentario": "Insistir em usar todas as informações do cotidiano, mesmo as que não interferem no movimento analisado não representa modelagem de situações cotidianas, enquanto as demais alternativas se relacionam com esse subtópico.",
+      "correta": "insistir em usar todas as informa��es do cotidiano, mesmo as que n�o interferem no movimento analisado.",
+      "comentario": "Insistir em usar todas as informa��es do cotidiano, mesmo as que n�o interferem no movimento analisado n�o representa modelagem de situa��es cotidianas, enquanto as demais alternativas se relacionam com esse subt�pico.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -4884,22 +4885,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Modelagem de situações cotidianas",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Modelagem de situa��es cotidianas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando se estuda modelagem de situações cotidianas, o foco principal está em:",
+      "enunciado": "Quando se estuda modelagem de situa��es cotidianas, o foco principal est� em:",
       "opcoes": [
-        "a seleção das grandezas relevantes para representar fisicamente uma situação real",
-        "a dependência da descrição do movimento em relação ao referencial escolhido",
-        "a distinção entre o caminho seguido, a distância percorrida e o deslocamento resultante",
-        "a relação entre percurso realizado e tempo decorrido"
+        "a sele��o das grandezas relevantes para representar fisicamente uma situa��o real",
+        "a depend�ncia da descri��o do movimento em rela��o ao referencial escolhido",
+        "a distin��o entre o caminho seguido, a dist�ncia percorrida e o deslocamento resultante",
+        "a rela��o entre percurso realizado e tempo decorrido"
       ],
-      "correta": "a seleção das grandezas relevantes para representar fisicamente uma situação real",
-      "comentario": "Modelagem de situações cotidianas volta a atenção para a seleção das grandezas relevantes para representar fisicamente uma situação real.",
+      "correta": "a sele��o das grandezas relevantes para representar fisicamente uma situa��o real",
+      "comentario": "Modelagem de situa��es cotidianas volta a aten��o para a sele��o das grandezas relevantes para representar fisicamente uma situa��o real.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -4923,22 +4924,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Modelagem de situações cotidianas",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Modelagem de situa��es cotidianas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferença entre modelagem de situações cotidianas e introdução ao MRU e ao MRUV é que:",
+      "enunciado": "A principal diferen�a entre modelagem de situa��es cotidianas e introdu��o ao MRU e ao MRUV � que:",
       "opcoes": [
-        "modelagem transforma situações reais em representações físicas, enquanto a introdução ao MRU e ao MRUV apresenta modelos-padrão de movimento para essas representações",
-        "Modelagem de situações cotidianas e Introdução ao MRU e ao MRUV são exatamente a mesma ideia física em qualquer situação.",
-        "Introdução ao MRU e ao MRUV elimina a necessidade de observar modelagem de situações cotidianas.",
-        "Modelagem de situações cotidianas depende apenas de opinião pessoal, sem relação com grandezas, modelos ou medidas."
+        "modelagem transforma situa��es reais em representa��es f�sicas, enquanto a introdu��o ao MRU e ao MRUV apresenta modelos-padr�o de movimento para essas representa��es",
+        "Modelagem de situa��es cotidianas e Introdu��o ao MRU e ao MRUV s�o exatamente a mesma ideia f�sica em qualquer situa��o.",
+        "Introdu��o ao MRU e ao MRUV elimina a necessidade de observar modelagem de situa��es cotidianas.",
+        "Modelagem de situa��es cotidianas depende apenas de opini�o pessoal, sem rela��o com grandezas, modelos ou medidas."
       ],
-      "correta": "modelagem transforma situações reais em representações físicas, enquanto a introdução ao MRU e ao MRUV apresenta modelos-padrão de movimento para essas representações",
-      "comentario": "A comparação correta distingue os dois subtópicos sem confundir seus objetos de estudo.",
+      "correta": "modelagem transforma situa��es reais em representa��es f�sicas, enquanto a introdu��o ao MRU e ao MRUV apresenta modelos-padr�o de movimento para essas representa��es",
+      "comentario": "A compara��o correta distingue os dois subt�picos sem confundir seus objetos de estudo.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -4962,22 +4963,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Modelagem de situações cotidianas",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Modelagem de situa��es cotidianas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma observação experimental, registrou-se o seguinte caso: um estudante estima o tempo de chegada do ônibus usando a distância até a escola e a velocidade média informada A leitura física mais adequada aponta para:",
+      "enunciado": "Em uma observa��o experimental, registrou-se o seguinte caso: um estudante estima o tempo de chegada do �nibus usando a dist�ncia at� a escola e a velocidade m�dia informada A leitura f�sica mais adequada aponta para:",
       "opcoes": [
-        "o caso mostra que uma boa modelagem depende de escolher grandezas relevantes e relacioná-las de forma coerente",
-        "Modelagem de situações cotidianas mostra que as grandezas envolvidas não precisam ser relacionadas para interpretar o caso.",
-        "Modelagem de situações cotidianas prova que a situação dispensa qualquer leitura física ou quantitativa.",
-        "Modelagem de situações cotidianas significa que o fenômeno não pode ser descrito por variáveis físicas."
+        "o caso mostra que uma boa modelagem depende de escolher grandezas relevantes e relacion�-las de forma coerente",
+        "Modelagem de situa��es cotidianas mostra que as grandezas envolvidas n�o precisam ser relacionadas para interpretar o caso.",
+        "Modelagem de situa��es cotidianas prova que a situa��o dispensa qualquer leitura f�sica ou quantitativa.",
+        "Modelagem de situa��es cotidianas significa que o fen�meno n�o pode ser descrito por vari�veis f�sicas."
       ],
-      "correta": "o caso mostra que uma boa modelagem depende de escolher grandezas relevantes e relacioná-las de forma coerente",
-      "comentario": "Modelagem de situações cotidianas permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
+      "correta": "o caso mostra que uma boa modelagem depende de escolher grandezas relevantes e relacion�-las de forma coerente",
+      "comentario": "Modelagem de situa��es cotidianas permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -5001,22 +5002,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Modelagem de situações cotidianas",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Modelagem de situa��es cotidianas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação abaixo evidencia modelagem de situações cotidianas de maneira mais clara?",
+      "enunciado": "Qual situa��o abaixo evidencia modelagem de situa��es cotidianas de maneira mais clara?",
       "opcoes": [
-        "prever o tempo de deslocamento entre casa e escola usando distância, velocidade e intervalo de tempo",
-        "comparar o movimento de um ônibus do ponto de vista de um passageiro e de um pedestre",
+        "prever o tempo de deslocamento entre casa e escola usando dist�ncia, velocidade e intervalo de tempo",
+        "comparar o movimento de um �nibus do ponto de vista de um passageiro e de um pedestre",
         "analisar voltas em uma pista distinguindo percurso total e deslocamento final",
-        "estimar a velocidade média de uma van escolar comparando distância e duração do trajeto"
+        "estimar a velocidade m�dia de uma van escolar comparando dist�ncia e dura��o do trajeto"
       ],
-      "correta": "prever o tempo de deslocamento entre casa e escola usando distância, velocidade e intervalo de tempo",
-      "comentario": "A alternativa correta aproxima modelagem de situações cotidianas de uma situação concreta.",
+      "correta": "prever o tempo de deslocamento entre casa e escola usando dist�ncia, velocidade e intervalo de tempo",
+      "comentario": "A alternativa correta aproxima modelagem de situa��es cotidianas de uma situa��o concreta.",
       "tempoEstimado": 35,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -5040,22 +5041,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Modelagem de situações cotidianas",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Modelagem de situa��es cotidianas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"um estudante estima o tempo de chegada do ônibus usando a distância até a escola e a velocidade média informada\", qual conclusão é mais adequada?",
+      "enunciado": "Ao analisar o caso \"um estudante estima o tempo de chegada do �nibus usando a dist�ncia at� a escola e a velocidade m�dia informada\", qual conclus�o � mais adequada?",
       "opcoes": [
-        "o caso mostra que uma boa modelagem depende de escolher grandezas relevantes e relacioná-las de forma coerente",
-        "A situação indica que modelagem de situações cotidianas não possui relação com medidas, variáveis ou interpretação física.",
-        "A situação prova que modelagem de situações cotidianas só existe em exemplos teóricos sem uso cotidiano.",
-        "A situação mostra que modelagem de situações cotidianas torna desnecessário comparar dados e modelos."
+        "o caso mostra que uma boa modelagem depende de escolher grandezas relevantes e relacion�-las de forma coerente",
+        "A situa��o indica que modelagem de situa��es cotidianas n�o possui rela��o com medidas, vari�veis ou interpreta��o f�sica.",
+        "A situa��o prova que modelagem de situa��es cotidianas s� existe em exemplos te�ricos sem uso cotidiano.",
+        "A situa��o mostra que modelagem de situa��es cotidianas torna desnecess�rio comparar dados e modelos."
       ],
-      "correta": "o caso mostra que uma boa modelagem depende de escolher grandezas relevantes e relacioná-las de forma coerente",
-      "comentario": "A conclusão correta mantém coerência com os dados apresentados e com modelagem de situações cotidianas.",
+      "correta": "o caso mostra que uma boa modelagem depende de escolher grandezas relevantes e relacion�-las de forma coerente",
+      "comentario": "A conclus�o correta mant�m coer�ncia com os dados apresentados e com modelagem de situa��es cotidianas.",
       "tempoEstimado": 35,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -5079,22 +5080,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Modelagem de situações cotidianas",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Modelagem de situa��es cotidianas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com modelagem de situações cotidianas?",
+      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com modelagem de situa��es cotidianas?",
       "opcoes": [
-        "como transformar um problema cotidiano de deslocamento em variáveis físicas relevantes?",
-        "como a mudança de referencial altera a descrição do movimento de um mesmo corpo?",
-        "como diferenciar distância percorrida e deslocamento em um percurso de ida e volta?",
-        "como calcular a velocidade escalar média a partir de dados de distância e tempo?"
+        "como transformar um problema cotidiano de deslocamento em vari�veis f�sicas relevantes?",
+        "como a mudan�a de referencial altera a descri��o do movimento de um mesmo corpo?",
+        "como diferenciar dist�ncia percorrida e deslocamento em um percurso de ida e volta?",
+        "como calcular a velocidade escalar m�dia a partir de dados de dist�ncia e tempo?"
       ],
-      "correta": "como transformar um problema cotidiano de deslocamento em variáveis físicas relevantes?",
-      "comentario": "A pergunta correta investiga modelagem de situações cotidianas de forma direta e coerente.",
+      "correta": "como transformar um problema cotidiano de deslocamento em vari�veis f�sicas relevantes?",
+      "comentario": "A pergunta correta investiga modelagem de situa��es cotidianas de forma direta e coerente.",
       "tempoEstimado": 35,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -5118,22 +5119,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Modelagem de situações cotidianas",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Modelagem de situa��es cotidianas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a afirmação que revela compreensão inadequada de modelagem de situações cotidianas.",
+      "enunciado": "Assinale a afirma��o que revela compreens�o inadequada de modelagem de situa��es cotidianas.",
       "opcoes": [
-        "A tradução de um problema real de movimento em variáveis, relações físicas, gráficos ou equações simplificadas.",
-        "A seleção das grandezas relevantes para representar fisicamente uma situação real.",
-        "Modelar uma situação cotidiana em Física significa selecionar variáveis importantes e representar o fenômeno de forma simplificada.",
-        "Modelar uma situação real significa copiar todos os detalhes do mundo real sem simplificações."
+        "A tradu��o de um problema real de movimento em vari�veis, rela��es f�sicas, gr�ficos ou equa��es simplificadas.",
+        "A sele��o das grandezas relevantes para representar fisicamente uma situa��o real.",
+        "Modelar uma situa��o cotidiana em F�sica significa selecionar vari�veis importantes e representar o fen�meno de forma simplificada.",
+        "Modelar uma situa��o real significa copiar todos os detalhes do mundo real sem simplifica��es."
       ],
-      "correta": "Modelar uma situação real significa copiar todos os detalhes do mundo real sem simplificações.",
-      "comentario": "A alternativa incorreta expressa um equívoco comum sobre modelagem de situações cotidianas.",
+      "correta": "Modelar uma situa��o real significa copiar todos os detalhes do mundo real sem simplifica��es.",
+      "comentario": "A alternativa incorreta expressa um equ�voco comum sobre modelagem de situa��es cotidianas.",
       "tempoEstimado": 45,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -5157,22 +5158,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Modelagem de situações cotidianas",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Modelagem de situa��es cotidianas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre Física, um estudante afirmou: \"modelar um movimento exige selecionar as grandezas relevantes e simplificar o contexto\". Qual avaliação é mais consistente?",
+      "enunciado": "Em um debate sobre F�sica, um estudante afirmou: \"modelar um movimento exige selecionar as grandezas relevantes e simplificar o contexto\". Qual avalia��o � mais consistente?",
       "opcoes": [
-        "A afirmação está correta, porque um modelo físico útil destaca os elementos essenciais do fenômeno e deixa de lado detalhes irrelevantes",
-        "A afirmação está incorreta, porque modelagem de situações cotidianas nunca pode ser usada na Física escolar.",
-        "A afirmação é irrelevante, porque modelagem de situações cotidianas não se relaciona com interpretação de fenômenos.",
-        "A afirmação está incorreta, porque modelagem de situações cotidianas elimina a necessidade de medir e comparar grandezas."
+        "A afirma��o est� correta, porque um modelo f�sico �til destaca os elementos essenciais do fen�meno e deixa de lado detalhes irrelevantes",
+        "A afirma��o est� incorreta, porque modelagem de situa��es cotidianas nunca pode ser usada na F�sica escolar.",
+        "A afirma��o � irrelevante, porque modelagem de situa��es cotidianas n�o se relaciona com interpreta��o de fen�menos.",
+        "A afirma��o est� incorreta, porque modelagem de situa��es cotidianas elimina a necessidade de medir e comparar grandezas."
       ],
-      "correta": "A afirmação está correta, porque um modelo físico útil destaca os elementos essenciais do fenômeno e deixa de lado detalhes irrelevantes",
-      "comentario": "A avaliação correta recupera o núcleo conceitual de modelagem de situações cotidianas.",
+      "correta": "A afirma��o est� correta, porque um modelo f�sico �til destaca os elementos essenciais do fen�meno e deixa de lado detalhes irrelevantes",
+      "comentario": "A avalia��o correta recupera o n�cleo conceitual de modelagem de situa��es cotidianas.",
       "tempoEstimado": 45,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -5196,22 +5197,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Modelagem de situações cotidianas",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Modelagem de situa��es cotidianas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se modelagem de situações cotidianas fosse ignorado(a) na análise de um problema físico, o resultado mais provável seria:",
+      "enunciado": "Se modelagem de situa��es cotidianas fosse ignorado(a) na an�lise de um problema f�sico, o resultado mais prov�vel seria:",
       "opcoes": [
-        "o problema ficaria excessivamente confuso ou mal representado, sem uma tradução física adequada da situação",
-        "o problema continuaria exatamente igual, porque modelagem de situações cotidianas não interfere na análise física",
-        "seria possível resolver a situação sem observar nenhuma grandeza, relação ou modelo",
-        "a interpretação ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
+        "o problema ficaria excessivamente confuso ou mal representado, sem uma tradu��o f�sica adequada da situa��o",
+        "o problema continuaria exatamente igual, porque modelagem de situa��es cotidianas n�o interfere na an�lise f�sica",
+        "seria poss�vel resolver a situa��o sem observar nenhuma grandeza, rela��o ou modelo",
+        "a interpreta��o ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
       ],
-      "correta": "o problema ficaria excessivamente confuso ou mal representado, sem uma tradução física adequada da situação",
-      "comentario": "Ignorar modelagem de situações cotidianas compromete a leitura física e a qualidade da solução.",
+      "correta": "o problema ficaria excessivamente confuso ou mal representado, sem uma tradu��o f�sica adequada da situa��o",
+      "comentario": "Ignorar modelagem de situa��es cotidianas compromete a leitura f�sica e a qualidade da solu��o.",
       "tempoEstimado": 55,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -5235,22 +5236,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Modelagem de situações cotidianas",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Modelagem de situa��es cotidianas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente modelagem de situações cotidianas a uma situação escolar ou cotidiana?",
+      "enunciado": "Qual alternativa aplica corretamente modelagem de situa��es cotidianas a uma situa��o escolar ou cotidiana?",
       "opcoes": [
-        "prever o tempo de deslocamento entre casa e escola usando distância, velocidade e intervalo de tempo",
+        "prever o tempo de deslocamento entre casa e escola usando dist�ncia, velocidade e intervalo de tempo",
         "comparar uma escada rolante em regime constante com um corpo em queda livre",
-        "interpretar gráficos produzidos em um experimento escolar com carrinho em trilho",
-        "classificar os dados de um mapa de percurso entre distância total e deslocamento final"
+        "interpretar gr�ficos produzidos em um experimento escolar com carrinho em trilho",
+        "classificar os dados de um mapa de percurso entre dist�ncia total e deslocamento final"
       ],
-      "correta": "prever o tempo de deslocamento entre casa e escola usando distância, velocidade e intervalo de tempo",
-      "comentario": "A aplicação correta mostra como modelagem de situações cotidianas aparece em contextos próximos do cotidiano.",
+      "correta": "prever o tempo de deslocamento entre casa e escola usando dist�ncia, velocidade e intervalo de tempo",
+      "comentario": "A aplica��o correta mostra como modelagem de situa��es cotidianas aparece em contextos pr�ximos do cotidiano.",
       "tempoEstimado": 55,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -5274,22 +5275,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Modelagem de situações cotidianas",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Modelagem de situa��es cotidianas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual síntese final representa melhor modelagem de situações cotidianas?",
+      "enunciado": "Qual s�ntese final representa melhor modelagem de situa��es cotidianas?",
       "opcoes": [
-        "modelar uma situação cotidiana em Física significa selecionar variáveis importantes e representar o fenômeno de forma simplificada",
-        "movimento e repouso são conceitos relativos ao referencial adotado",
-        "trajetória indica o caminho, distância soma o percurso e deslocamento compara posição inicial e final",
-        "velocidade escalar média indica quanto percurso, em média, é realizado por unidade de tempo"
+        "modelar uma situa��o cotidiana em F�sica significa selecionar vari�veis importantes e representar o fen�meno de forma simplificada",
+        "movimento e repouso s�o conceitos relativos ao referencial adotado",
+        "trajet�ria indica o caminho, dist�ncia soma o percurso e deslocamento compara posi��o inicial e final",
+        "velocidade escalar m�dia indica quanto percurso, em m�dia, � realizado por unidade de tempo"
       ],
-      "correta": "modelar uma situação cotidiana em Física significa selecionar variáveis importantes e representar o fenômeno de forma simplificada",
-      "comentario": "A síntese correta preserva a definição, o foco e o uso analítico de modelagem de situações cotidianas.",
+      "correta": "modelar uma situa��o cotidiana em F�sica significa selecionar vari�veis importantes e representar o fen�meno de forma simplificada",
+      "comentario": "A s�ntese correta preserva a defini��o, o foco e o uso anal�tico de modelagem de situa��es cotidianas.",
       "tempoEstimado": 55,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -5313,22 +5314,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Introdução ao MRU e ao MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Introdu��o ao MRU e ao MRUV",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Física, Introdução ao MRU e ao MRUV pode ser definido(a) como:",
+      "enunciado": "Em F�sica, Introdu��o ao MRU e ao MRUV pode ser definido(a) como:",
       "opcoes": [
-        "a distinção entre movimento com velocidade constante e movimento com aceleração constante",
-        "a descrição de repouso ou movimento de um corpo em relação a um referencial adotado",
-        "a diferenciação entre caminho percorrido, comprimento total do percurso e variação entre posição inicial e final",
-        "a razão entre a distância percorrida e o intervalo de tempo gasto no percurso"
+        "a distin��o entre movimento com velocidade constante e movimento com acelera��o constante",
+        "a descri��o de repouso ou movimento de um corpo em rela��o a um referencial adotado",
+        "a diferencia��o entre caminho percorrido, comprimento total do percurso e varia��o entre posi��o inicial e final",
+        "a raz�o entre a dist�ncia percorrida e o intervalo de tempo gasto no percurso"
       ],
-      "correta": "a distinção entre movimento com velocidade constante e movimento com aceleração constante",
-      "comentario": "Introdução ao MRU e ao MRUV refere-se à distinção entre movimento com velocidade constante e movimento com aceleração constante.",
+      "correta": "a distin��o entre movimento com velocidade constante e movimento com acelera��o constante",
+      "comentario": "Introdu��o ao MRU e ao MRUV refere-se � distin��o entre movimento com velocidade constante e movimento com acelera��o constante.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -5352,22 +5353,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Introdução ao MRU e ao MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Introdu��o ao MRU e ao MRUV",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: uma esteira move caixas com velocidade constante, enquanto uma bola em queda livre aumenta sua velocidade com o tempo Esse caso exemplifica melhor qual subtópico?",
+      "enunciado": "Observe a situa��o: uma esteira move caixas com velocidade constante, enquanto uma bola em queda livre aumenta sua velocidade com o tempo Esse caso exemplifica melhor qual subt�pico?",
       "opcoes": [
-        "Introdução ao MRU e ao MRUV",
+        "Introdu��o ao MRU e ao MRUV",
         "Referencial, repouso e movimento",
-        "Trajetória, distância e deslocamento",
-        "Velocidade escalar média"
+        "Trajet�ria, dist�ncia e deslocamento",
+        "Velocidade escalar m�dia"
       ],
-      "correta": "Introdução ao MRU e ao MRUV",
-      "comentario": "A situação apresentada é um exemplo de introdução ao MRU e ao MRUV.",
+      "correta": "Introdu��o ao MRU e ao MRUV",
+      "comentario": "A situa��o apresentada � um exemplo de introdu��o ao MRU e ao MRUV.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -5391,22 +5392,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Introdução ao MRU e ao MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Introdu��o ao MRU e ao MRUV",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmação descreve corretamente introdução ao MRU e ao MRUV?",
+      "enunciado": "Qual afirma��o descreve corretamente introdu��o ao MRU e ao MRUV?",
       "opcoes": [
-        "A distinção entre movimento com velocidade constante e movimento com aceleração constante.",
-        "A descrição de repouso ou movimento de um corpo em relação a um referencial adotado.",
-        "A diferenciação entre caminho percorrido, comprimento total do percurso e variação entre posição inicial e final.",
-        "A razão entre a distância percorrida e o intervalo de tempo gasto no percurso."
+        "A distin��o entre movimento com velocidade constante e movimento com acelera��o constante.",
+        "A descri��o de repouso ou movimento de um corpo em rela��o a um referencial adotado.",
+        "A diferencia��o entre caminho percorrido, comprimento total do percurso e varia��o entre posi��o inicial e final.",
+        "A raz�o entre a dist�ncia percorrida e o intervalo de tempo gasto no percurso."
       ],
-      "correta": "A distinção entre movimento com velocidade constante e movimento com aceleração constante.",
-      "comentario": "A afirmação correta retoma o sentido central de introdução ao MRU e ao MRUV.",
+      "correta": "A distin��o entre movimento com velocidade constante e movimento com acelera��o constante.",
+      "comentario": "A afirma��o correta retoma o sentido central de introdu��o ao MRU e ao MRUV.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -5430,22 +5431,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Introdução ao MRU e ao MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Introdu��o ao MRU e ao MRUV",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa incompatível com introdução ao MRU e ao MRUV.",
+      "enunciado": "Assinale a alternativa incompat�vel com introdu��o ao MRU e ao MRUV.",
       "opcoes": [
-        "classificar qualquer movimento não nulo como MRUV sem verificar o comportamento da aceleração.",
-        "as características que permitem classificar um movimento como uniforme ou uniformemente variado.",
-        "MRU tem velocidade constante, e MRUV tem aceleração constante com variação regular da velocidade.",
-        "a distinção entre movimento com velocidade constante e movimento com aceleração constante."
+        "classificar qualquer movimento n�o nulo como MRUV sem verificar o comportamento da acelera��o.",
+        "as caracter�sticas que permitem classificar um movimento como uniforme ou uniformemente variado.",
+        "MRU tem velocidade constante, e MRUV tem acelera��o constante com varia��o regular da velocidade.",
+        "a distin��o entre movimento com velocidade constante e movimento com acelera��o constante."
       ],
-      "correta": "classificar qualquer movimento não nulo como MRUV sem verificar o comportamento da aceleração.",
-      "comentario": "Classificar qualquer movimento não nulo como MRUV sem verificar o comportamento da aceleração não representa introdução ao MRU e ao MRUV, enquanto as demais alternativas se relacionam com esse subtópico.",
+      "correta": "classificar qualquer movimento n�o nulo como MRUV sem verificar o comportamento da acelera��o.",
+      "comentario": "Classificar qualquer movimento n�o nulo como MRUV sem verificar o comportamento da acelera��o n�o representa introdu��o ao MRU e ao MRUV, enquanto as demais alternativas se relacionam com esse subt�pico.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -5469,22 +5470,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Introdução ao MRU e ao MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Introdu��o ao MRU e ao MRUV",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando se estuda introdução ao MRU e ao MRUV, o foco principal está em:",
+      "enunciado": "Quando se estuda introdu��o ao MRU e ao MRUV, o foco principal est� em:",
       "opcoes": [
-        "as características que permitem classificar um movimento como uniforme ou uniformemente variado",
-        "a dependência da descrição do movimento em relação ao referencial escolhido",
-        "a distinção entre o caminho seguido, a distância percorrida e o deslocamento resultante",
-        "a relação entre percurso realizado e tempo decorrido"
+        "as caracter�sticas que permitem classificar um movimento como uniforme ou uniformemente variado",
+        "a depend�ncia da descri��o do movimento em rela��o ao referencial escolhido",
+        "a distin��o entre o caminho seguido, a dist�ncia percorrida e o deslocamento resultante",
+        "a rela��o entre percurso realizado e tempo decorrido"
       ],
-      "correta": "as características que permitem classificar um movimento como uniforme ou uniformemente variado",
-      "comentario": "Introdução ao MRU e ao MRUV volta a atenção para as características que permitem classificar um movimento como uniforme ou uniformemente variado.",
+      "correta": "as caracter�sticas que permitem classificar um movimento como uniforme ou uniformemente variado",
+      "comentario": "Introdu��o ao MRU e ao MRUV volta a aten��o para as caracter�sticas que permitem classificar um movimento como uniforme ou uniformemente variado.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -5508,22 +5509,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Introdução ao MRU e ao MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Introdu��o ao MRU e ao MRUV",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferença entre introdução ao MRU e ao MRUV e velocidade escalar média é que:",
+      "enunciado": "A principal diferen�a entre introdu��o ao MRU e ao MRUV e velocidade escalar m�dia � que:",
       "opcoes": [
-        "introdução ao MRU e ao MRUV classifica modelos de movimento, enquanto velocidade escalar média expressa uma grandeza que pode descrever diferentes movimentos",
-        "Introdução ao MRU e ao MRUV e Velocidade escalar média são exatamente a mesma ideia física em qualquer situação.",
-        "Velocidade escalar média elimina a necessidade de observar introdução ao MRU e ao MRUV.",
-        "Introdução ao MRU e ao MRUV depende apenas de opinião pessoal, sem relação com grandezas, modelos ou medidas."
+        "introdu��o ao MRU e ao MRUV classifica modelos de movimento, enquanto velocidade escalar m�dia expressa uma grandeza que pode descrever diferentes movimentos",
+        "Introdu��o ao MRU e ao MRUV e Velocidade escalar m�dia s�o exatamente a mesma ideia f�sica em qualquer situa��o.",
+        "Velocidade escalar m�dia elimina a necessidade de observar introdu��o ao MRU e ao MRUV.",
+        "Introdu��o ao MRU e ao MRUV depende apenas de opini�o pessoal, sem rela��o com grandezas, modelos ou medidas."
       ],
-      "correta": "introdução ao MRU e ao MRUV classifica modelos de movimento, enquanto velocidade escalar média expressa uma grandeza que pode descrever diferentes movimentos",
-      "comentario": "A comparação correta distingue os dois subtópicos sem confundir seus objetos de estudo.",
+      "correta": "introdu��o ao MRU e ao MRUV classifica modelos de movimento, enquanto velocidade escalar m�dia expressa uma grandeza que pode descrever diferentes movimentos",
+      "comentario": "A compara��o correta distingue os dois subt�picos sem confundir seus objetos de estudo.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -5547,22 +5548,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Introdução ao MRU e ao MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Introdu��o ao MRU e ao MRUV",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma observação experimental, registrou-se o seguinte caso: uma esteira move caixas com velocidade constante, enquanto uma bola em queda livre aumenta sua velocidade com o tempo A leitura física mais adequada aponta para:",
+      "enunciado": "Em uma observa��o experimental, registrou-se o seguinte caso: uma esteira move caixas com velocidade constante, enquanto uma bola em queda livre aumenta sua velocidade com o tempo A leitura f�sica mais adequada aponta para:",
       "opcoes": [
-        "o caso mostra que a classificação entre MRU e MRUV depende de observar como a velocidade muda no tempo",
-        "Introdução ao MRU e ao MRUV mostra que as grandezas envolvidas não precisam ser relacionadas para interpretar o caso.",
-        "Introdução ao MRU e ao MRUV prova que a situação dispensa qualquer leitura física ou quantitativa.",
-        "Introdução ao MRU e ao MRUV significa que o fenômeno não pode ser descrito por variáveis físicas."
+        "o caso mostra que a classifica��o entre MRU e MRUV depende de observar como a velocidade muda no tempo",
+        "Introdu��o ao MRU e ao MRUV mostra que as grandezas envolvidas n�o precisam ser relacionadas para interpretar o caso.",
+        "Introdu��o ao MRU e ao MRUV prova que a situa��o dispensa qualquer leitura f�sica ou quantitativa.",
+        "Introdu��o ao MRU e ao MRUV significa que o fen�meno n�o pode ser descrito por vari�veis f�sicas."
       ],
-      "correta": "o caso mostra que a classificação entre MRU e MRUV depende de observar como a velocidade muda no tempo",
-      "comentario": "Introdução ao MRU e ao MRUV permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
+      "correta": "o caso mostra que a classifica��o entre MRU e MRUV depende de observar como a velocidade muda no tempo",
+      "comentario": "Introdu��o ao MRU e ao MRUV permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
       "tempoEstimado": 25,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -5586,22 +5587,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Introdução ao MRU e ao MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Introdu��o ao MRU e ao MRUV",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação abaixo evidencia introdução ao MRU e ao MRUV de maneira mais clara?",
+      "enunciado": "Qual situa��o abaixo evidencia introdu��o ao MRU e ao MRUV de maneira mais clara?",
       "opcoes": [
         "comparar uma escada rolante em regime constante com um corpo em queda livre",
-        "comparar o movimento de um ônibus do ponto de vista de um passageiro e de um pedestre",
+        "comparar o movimento de um �nibus do ponto de vista de um passageiro e de um pedestre",
         "analisar voltas em uma pista distinguindo percurso total e deslocamento final",
-        "estimar a velocidade média de uma van escolar comparando distância e duração do trajeto"
+        "estimar a velocidade m�dia de uma van escolar comparando dist�ncia e dura��o do trajeto"
       ],
       "correta": "comparar uma escada rolante em regime constante com um corpo em queda livre",
-      "comentario": "A alternativa correta aproxima introdução ao MRU e ao MRUV de uma situação concreta.",
+      "comentario": "A alternativa correta aproxima introdu��o ao MRU e ao MRUV de uma situa��o concreta.",
       "tempoEstimado": 35,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -5625,22 +5626,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Introdução ao MRU e ao MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Introdu��o ao MRU e ao MRUV",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"uma esteira move caixas com velocidade constante, enquanto uma bola em queda livre aumenta sua velocidade com o tempo\", qual conclusão é mais adequada?",
+      "enunciado": "Ao analisar o caso \"uma esteira move caixas com velocidade constante, enquanto uma bola em queda livre aumenta sua velocidade com o tempo\", qual conclus�o � mais adequada?",
       "opcoes": [
-        "o caso mostra que a classificação entre MRU e MRUV depende de observar como a velocidade muda no tempo",
-        "A situação indica que introdução ao MRU e ao MRUV não possui relação com medidas, variáveis ou interpretação física.",
-        "A situação prova que introdução ao MRU e ao MRUV só existe em exemplos teóricos sem uso cotidiano.",
-        "A situação mostra que introdução ao MRU e ao MRUV torna desnecessário comparar dados e modelos."
+        "o caso mostra que a classifica��o entre MRU e MRUV depende de observar como a velocidade muda no tempo",
+        "A situa��o indica que introdu��o ao MRU e ao MRUV n�o possui rela��o com medidas, vari�veis ou interpreta��o f�sica.",
+        "A situa��o prova que introdu��o ao MRU e ao MRUV s� existe em exemplos te�ricos sem uso cotidiano.",
+        "A situa��o mostra que introdu��o ao MRU e ao MRUV torna desnecess�rio comparar dados e modelos."
       ],
-      "correta": "o caso mostra que a classificação entre MRU e MRUV depende de observar como a velocidade muda no tempo",
-      "comentario": "A conclusão correta mantém coerência com os dados apresentados e com introdução ao MRU e ao MRUV.",
+      "correta": "o caso mostra que a classifica��o entre MRU e MRUV depende de observar como a velocidade muda no tempo",
+      "comentario": "A conclus�o correta mant�m coer�ncia com os dados apresentados e com introdu��o ao MRU e ao MRUV.",
       "tempoEstimado": 35,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -5664,22 +5665,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Introdução ao MRU e ao MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Introdu��o ao MRU e ao MRUV",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com introdução ao MRU e ao MRUV?",
+      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com introdu��o ao MRU e ao MRUV?",
       "opcoes": [
-        "quais características permitem classificar um movimento como MRU ou MRUV?",
-        "como a mudança de referencial altera a descrição do movimento de um mesmo corpo?",
-        "como diferenciar distância percorrida e deslocamento em um percurso de ida e volta?",
-        "como calcular a velocidade escalar média a partir de dados de distância e tempo?"
+        "quais caracter�sticas permitem classificar um movimento como MRU ou MRUV?",
+        "como a mudan�a de referencial altera a descri��o do movimento de um mesmo corpo?",
+        "como diferenciar dist�ncia percorrida e deslocamento em um percurso de ida e volta?",
+        "como calcular a velocidade escalar m�dia a partir de dados de dist�ncia e tempo?"
       ],
-      "correta": "quais características permitem classificar um movimento como MRU ou MRUV?",
-      "comentario": "A pergunta correta investiga introdução ao MRU e ao MRUV de forma direta e coerente.",
+      "correta": "quais caracter�sticas permitem classificar um movimento como MRU ou MRUV?",
+      "comentario": "A pergunta correta investiga introdu��o ao MRU e ao MRUV de forma direta e coerente.",
       "tempoEstimado": 35,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -5703,22 +5704,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Introdução ao MRU e ao MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Introdu��o ao MRU e ao MRUV",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a afirmação que revela compreensão inadequada de introdução ao MRU e ao MRUV.",
+      "enunciado": "Assinale a afirma��o que revela compreens�o inadequada de introdu��o ao MRU e ao MRUV.",
       "opcoes": [
-        "A distinção entre movimento com velocidade constante e movimento com aceleração constante.",
-        "As características que permitem classificar um movimento como uniforme ou uniformemente variado.",
-        "MRU tem velocidade constante, e MRUV tem aceleração constante com variação regular da velocidade.",
-        "Todo movimento com velocidade diferente de zero é MRUV."
+        "A distin��o entre movimento com velocidade constante e movimento com acelera��o constante.",
+        "As caracter�sticas que permitem classificar um movimento como uniforme ou uniformemente variado.",
+        "MRU tem velocidade constante, e MRUV tem acelera��o constante com varia��o regular da velocidade.",
+        "Todo movimento com velocidade diferente de zero � MRUV."
       ],
-      "correta": "Todo movimento com velocidade diferente de zero é MRUV.",
-      "comentario": "A alternativa incorreta expressa um equívoco comum sobre introdução ao MRU e ao MRUV.",
+      "correta": "Todo movimento com velocidade diferente de zero � MRUV.",
+      "comentario": "A alternativa incorreta expressa um equ�voco comum sobre introdu��o ao MRU e ao MRUV.",
       "tempoEstimado": 45,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -5742,22 +5743,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Introdução ao MRU e ao MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Introdu��o ao MRU e ao MRUV",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre Física, um estudante afirmou: \"MRU tem velocidade constante, enquanto MRUV tem aceleração constante\". Qual avaliação é mais consistente?",
+      "enunciado": "Em um debate sobre F�sica, um estudante afirmou: \"MRU tem velocidade constante, enquanto MRUV tem acelera��o constante\". Qual avalia��o � mais consistente?",
       "opcoes": [
-        "A afirmação está correta, porque os dois modelos se distinguem pelo comportamento temporal da velocidade e da aceleração",
-        "A afirmação está incorreta, porque introdução ao MRU e ao MRUV nunca pode ser usada na Física escolar.",
-        "A afirmação é irrelevante, porque introdução ao MRU e ao MRUV não se relaciona com interpretação de fenômenos.",
-        "A afirmação está incorreta, porque introdução ao MRU e ao MRUV elimina a necessidade de medir e comparar grandezas."
+        "A afirma��o est� correta, porque os dois modelos se distinguem pelo comportamento temporal da velocidade e da acelera��o",
+        "A afirma��o est� incorreta, porque introdu��o ao MRU e ao MRUV nunca pode ser usada na F�sica escolar.",
+        "A afirma��o � irrelevante, porque introdu��o ao MRU e ao MRUV n�o se relaciona com interpreta��o de fen�menos.",
+        "A afirma��o est� incorreta, porque introdu��o ao MRU e ao MRUV elimina a necessidade de medir e comparar grandezas."
       ],
-      "correta": "A afirmação está correta, porque os dois modelos se distinguem pelo comportamento temporal da velocidade e da aceleração",
-      "comentario": "A avaliação correta recupera o núcleo conceitual de introdução ao MRU e ao MRUV.",
+      "correta": "A afirma��o est� correta, porque os dois modelos se distinguem pelo comportamento temporal da velocidade e da acelera��o",
+      "comentario": "A avalia��o correta recupera o n�cleo conceitual de introdu��o ao MRU e ao MRUV.",
       "tempoEstimado": 45,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -5781,22 +5782,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Introdução ao MRU e ao MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Introdu��o ao MRU e ao MRUV",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se introdução ao MRU e ao MRUV fosse ignorado(a) na análise de um problema físico, o resultado mais provável seria:",
+      "enunciado": "Se introdu��o ao MRU e ao MRUV fosse ignorado(a) na an�lise de um problema f�sico, o resultado mais prov�vel seria:",
       "opcoes": [
         "seriam confundidos movimentos de velocidade constante com movimentos em que a velocidade varia regularmente",
-        "o problema continuaria exatamente igual, porque introdução ao MRU e ao MRUV não interfere na análise física",
-        "seria possível resolver a situação sem observar nenhuma grandeza, relação ou modelo",
-        "a interpretação ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
+        "o problema continuaria exatamente igual, porque introdu��o ao MRU e ao MRUV n�o interfere na an�lise f�sica",
+        "seria poss�vel resolver a situa��o sem observar nenhuma grandeza, rela��o ou modelo",
+        "a interpreta��o ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
       ],
       "correta": "seriam confundidos movimentos de velocidade constante com movimentos em que a velocidade varia regularmente",
-      "comentario": "Ignorar introdução ao MRU e ao MRUV compromete a leitura física e a qualidade da solução.",
+      "comentario": "Ignorar introdu��o ao MRU e ao MRUV compromete a leitura f�sica e a qualidade da solu��o.",
       "tempoEstimado": 55,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -5820,22 +5821,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Introdução ao MRU e ao MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Introdu��o ao MRU e ao MRUV",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente introdução ao MRU e ao MRUV a uma situação escolar ou cotidiana?",
+      "enunciado": "Qual alternativa aplica corretamente introdu��o ao MRU e ao MRUV a uma situa��o escolar ou cotidiana?",
       "opcoes": [
         "comparar uma escada rolante em regime constante com um corpo em queda livre",
-        "prever o tempo de deslocamento entre casa e escola usando distância, velocidade e intervalo de tempo",
-        "interpretar gráficos produzidos em um experimento escolar com carrinho em trilho",
-        "classificar os dados de um mapa de percurso entre distância total e deslocamento final"
+        "prever o tempo de deslocamento entre casa e escola usando dist�ncia, velocidade e intervalo de tempo",
+        "interpretar gr�ficos produzidos em um experimento escolar com carrinho em trilho",
+        "classificar os dados de um mapa de percurso entre dist�ncia total e deslocamento final"
       ],
       "correta": "comparar uma escada rolante em regime constante com um corpo em queda livre",
-      "comentario": "A aplicação correta mostra como introdução ao MRU e ao MRUV aparece em contextos próximos do cotidiano.",
+      "comentario": "A aplica��o correta mostra como introdu��o ao MRU e ao MRUV aparece em contextos pr�ximos do cotidiano.",
       "tempoEstimado": 55,
       "tags": [
         "cinematica-mru-e-mruv",
@@ -5859,22 +5860,22 @@ export const cinematicaMruMruv = {
       "serie": [
         1
       ],
-      "materia": "Física",
-      "topico": "Cinemática: MRU e MRUV",
-      "subtopico": "Introdução ao MRU e ao MRUV",
+      "materia": "F�sica",
+      "topico": "Cinem�tica: MRU e MRUV",
+      "subtopico": "Introdu��o ao MRU e ao MRUV",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual síntese final representa melhor introdução ao MRU e ao MRUV?",
+      "enunciado": "Qual s�ntese final representa melhor introdu��o ao MRU e ao MRUV?",
       "opcoes": [
-        "MRU tem velocidade constante, e MRUV tem aceleração constante com variação regular da velocidade",
-        "movimento e repouso são conceitos relativos ao referencial adotado",
-        "trajetória indica o caminho, distância soma o percurso e deslocamento compara posição inicial e final",
-        "velocidade escalar média indica quanto percurso, em média, é realizado por unidade de tempo"
+        "MRU tem velocidade constante, e MRUV tem acelera��o constante com varia��o regular da velocidade",
+        "movimento e repouso s�o conceitos relativos ao referencial adotado",
+        "trajet�ria indica o caminho, dist�ncia soma o percurso e deslocamento compara posi��o inicial e final",
+        "velocidade escalar m�dia indica quanto percurso, em m�dia, � realizado por unidade de tempo"
       ],
-      "correta": "MRU tem velocidade constante, e MRUV tem aceleração constante com variação regular da velocidade",
-      "comentario": "A síntese correta preserva a definição, o foco e o uso analítico de introdução ao MRU e ao MRUV.",
+      "correta": "MRU tem velocidade constante, e MRUV tem acelera��o constante com varia��o regular da velocidade",
+      "comentario": "A s�ntese correta preserva a defini��o, o foco e o uso anal�tico de introdu��o ao MRU e ao MRUV.",
       "tempoEstimado": 55,
       "tags": [
         "cinematica-mru-e-mruv",

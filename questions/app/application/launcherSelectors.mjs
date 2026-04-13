@@ -1,3 +1,5 @@
+import { formatSerieLabel } from "../domain/subjectMetadata.mjs";
+
 export function createQuestionsLauncherSelectors(
     {
         page,
@@ -26,7 +28,9 @@ export function createQuestionsLauncherSelectors(
         return [
             ...availableSeries.map((serie) => ({
                 key: String(serie.key),
-                label: `${serie.key}ª Série`,
+                label: formatSerieLabel(
+                    serie.key
+                ),
                 type: "serie",
                 active:
                     selectedSeries.includes(
@@ -271,7 +275,10 @@ export function createQuestionsLauncherSelectors(
                 .filter(Boolean);
         const selectedSeries =
             (ctx.smartSelectedSeries || []).map(
-                (serie) => `${serie}ª série`
+                (serie) =>
+                    formatSerieLabel(
+                        serie
+                    ).toLowerCase()
             );
         const pieces = [];
 

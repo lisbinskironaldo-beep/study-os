@@ -1,6 +1,6 @@
-export const textosLongos = {
+﻿export const textosLongos = {
   "id": "ingles_textos_longos",
-  "materia": "Inglês",
+  "materia": "Ingles",
   "serie": [
     3
   ],
@@ -8,8 +8,9 @@ export const textosLongos = {
   "metadados": {
     "disciplinaId": "ingles",
     "base": "ESCOLAR",
-    "eixo": "Leitura aprofundada em inglês",
-    "frente": "Compreensão global e localizada em textos extensos e mais densos",
+    "seloEditorial": "VERIFICADA",
+    "eixo": "Leitura aprofundada em ingles",
+    "frente": "Compreensao global e localizada em textos extensos e mais densos",
     "searchAliases": [
       "textos longos ingles",
       "long texts",
@@ -19,27 +20,27 @@ export const textosLongos = {
       "long passages"
     ],
     "subtopicosBase": [
-      "Organização em parágrafos",
+      "Organizacao em paragrafos",
       "Tese e argumento central",
-      "Informações explícitas em texto longo",
-      "Referências e coesão",
+      "Informacoes explicitas em texto longo",
+      "Referencias e coesao",
       "Tom e posicionamento do autor",
-      "Síntese por seção",
-      "Comparação de pontos de vista",
-      "Textos jornalísticos e acadêmicos",
+      "Sintese por secao",
+      "Comparacao de pontos de vista",
+      "Textos jornalisticos e academicos",
       "Trechos narrativos e descritivos",
       "Skimming and scanning em textos longos"
     ],
     "habilidadesBase": [
-      "acompanhar a progressão de ideias em textos extensos",
+      "acompanhar a progressao de ideias em textos extensos",
       "identificar tese, argumentos e exemplos de apoio",
-      "localizar informações específicas sem perder a visão global",
-      "reconhecer mecanismos de coesão e retomada",
-      "comparar seções e posicionamentos em textos longos",
-      "sintetizar informações relevantes para resolução de questões"
+      "localizar informacoes especificas sem perder a visao global",
+      "reconhecer mecanismos de coesao e retomada",
+      "comparar secoes e posicionamentos em textos longos",
+      "sintetizar informacoes relevantes para resolucao de questoes"
     ],
     "auditado": true,
-    "auditadoEm": "2026-04-11",
+    "auditadoEm": "2026-04-12",
     "auditoriaTipo": "varredura-mais-profunda"
   },
   "questoes": [
@@ -48,22 +49,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Organização em parágrafos",
+      "subtopico": "Organizacao em paragrafos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Inglês, Organização em parágrafos refere-se a:",
+      "enunciado": "Em Ingles, Organizacao em paragrafos refere-se a:",
       "opcoes": [
-        "a compreensão de como as ideias se distribuem e avançam ao longo dos parágrafos do texto",
-        "a identificação da posição principal defendida pelo texto e do argumento que sustenta essa posição",
-        "a localização de dados literais dentro de um texto mais extenso e com maior volume de informação",
-        "a análise dos elementos que retomam ideias e mantêm a ligação entre frases e parágrafos"
+        "a compreensao de como as ideias se distribuem e avancam ao longo dos paragrafos do texto",
+        "a identificacao da posicao principal defendida pelo texto e do argumento que sustenta essa posicao",
+        "a localizacao de dados literais dentro de um texto mais extenso e com maior volume de informacao",
+        "a analise dos elementos que retomam ideias e mantem a ligacao entre frases e paragrafos"
       ],
-      "correta": "a compreensão de como as ideias se distribuem e avançam ao longo dos parágrafos do texto",
-      "comentario": "Organização em parágrafos refere-se à compreensão de como as ideias se distribuem e avançam ao longo dos parágrafos do texto.",
+      "correta": "a compreensao de como as ideias se distribuem e avancam ao longo dos paragrafos do texto",
+      "comentario": "Organizacao em paragrafos refere-se a compreensao de como as ideias se distribuem e avancam ao longo dos paragrafos do texto.",
       "tempoEstimado": 20,
       "tags": [
         "textos-longos",
@@ -87,22 +88,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Organização em parágrafos",
+      "subtopico": "Organizacao em paragrafos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: um artigo apresenta introdução do problema, desenvolvimento com exemplos e fechamento conclusivo. Esse caso está mais ligado a qual subtópico?",
+      "enunciado": "Observe a situacao: um artigo apresenta introducao do problema, desenvolvimento com exemplos e fechamento conclusivo. Esse caso esta mais ligado a qual subtopico?",
       "opcoes": [
-        "Organização em parágrafos",
+        "Organizacao em paragrafos",
         "Tese e argumento central",
-        "Informações explícitas em texto longo",
-        "Referências e coesão"
+        "Informacoes explicitas em texto longo",
+        "Referencias e coesao"
       ],
-      "correta": "Organização em parágrafos",
-      "comentario": "A situação apresentada é melhor compreendida por meio de organização em parágrafos.",
+      "correta": "Organizacao em paragrafos",
+      "comentario": "A situacao apresentada e melhor compreendida por meio de organizacao em paragrafos.",
       "tempoEstimado": 20,
       "tags": [
         "textos-longos",
@@ -126,14 +127,14 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Organização em parágrafos",
+      "subtopico": "Organizacao em paragrafos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual exemplo combina melhor com organização em parágrafos?",
+      "enunciado": "Qual exemplo combina melhor com organizacao em paragrafos?",
       "opcoes": [
         "The second paragraph develops the problem introduced in the first one.",
         "The author argues that cities should invest in public transportation.",
@@ -141,7 +142,7 @@ export const textosLongos = {
         "This issue refers to the lack of access described earlier."
       ],
       "correta": "The second paragraph develops the problem introduced in the first one.",
-      "comentario": "O exemplo correto ilustra o uso de organização em parágrafos.",
+      "comentario": "O exemplo correto ilustra o uso de organizacao em paragrafos.",
       "tempoEstimado": 25,
       "tags": [
         "textos-longos",
@@ -165,22 +166,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Organização em parágrafos",
+      "subtopico": "Organizacao em paragrafos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO representa corretamente organização em parágrafos?",
+      "enunciado": "Qual alternativa NAO representa corretamente organizacao em paragrafos?",
       "opcoes": [
         "The author argues that cities should invest in public transportation.",
         "The second paragraph develops the problem introduced in the first one.",
-        "identificar papel de cada parágrafo dentro do texto.",
+        "identificar papel de cada paragrafo dentro do texto.",
         "entender a estrutura global de textos longos."
       ],
       "correta": "The author argues that cities should invest in public transportation.",
-      "comentario": "A opção incompatível ilustra outro subtópico, e não organização em parágrafos.",
+      "comentario": "A opcao incompativel ilustra outro subtopico, e nao organizacao em paragrafos.",
       "tempoEstimado": 25,
       "tags": [
         "textos-longos",
@@ -204,22 +205,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Organização em parágrafos",
+      "subtopico": "Organizacao em paragrafos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar organização em parágrafos, o foco principal é:",
+      "enunciado": "Ao estudar organizacao em paragrafos, o foco principal e:",
       "opcoes": [
-        "acompanhar a progressão temática em textos extensos",
+        "acompanhar a progressao tematica em textos extensos",
         "reconhecer a tese e o fio argumentativo principal",
-        "encontrar trechos específicos sem perder a visão do conjunto",
+        "encontrar trechos especificos sem perder a visao do conjunto",
         "acompanhar mecanismos de retomada em textos longos"
       ],
-      "correta": "acompanhar a progressão temática em textos extensos",
-      "comentario": "Organização em parágrafos concentra-se em acompanhar a progressão temática em textos extensos.",
+      "correta": "acompanhar a progressao tematica em textos extensos",
+      "comentario": "Organizacao em paragrafos concentra-se em acompanhar a progressao tematica em textos extensos.",
       "tempoEstimado": 30,
       "tags": [
         "textos-longos",
@@ -243,22 +244,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Organização em parágrafos",
+      "subtopico": "Organizacao em paragrafos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Tese e argumento central trata de a identificação da posição principal defendida pelo texto e do argumento que sustenta essa posição, Organização em parágrafos destaca:",
+      "enunciado": "Enquanto Tese e argumento central trata de a identificacao da posicao principal defendida pelo texto e do argumento que sustenta essa posicao, Organizacao em paragrafos destaca:",
       "opcoes": [
-        "A compreensão de como as ideias se distribuem e avançam ao longo dos parágrafos do texto.",
-        "A identificação da posição principal defendida pelo texto e do argumento que sustenta essa posição.",
-        "A localização de dados literais dentro de um texto mais extenso e com maior volume de informação.",
-        "A análise dos elementos que retomam ideias e mantêm a ligação entre frases e parágrafos."
+        "A compreensao de como as ideias se distribuem e avancam ao longo dos paragrafos do texto.",
+        "A identificacao da posicao principal defendida pelo texto e do argumento que sustenta essa posicao.",
+        "A localizacao de dados literais dentro de um texto mais extenso e com maior volume de informacao.",
+        "A analise dos elementos que retomam ideias e mantem a ligacao entre frases e paragrafos."
       ],
-      "correta": "A compreensão de como as ideias se distribuem e avançam ao longo dos parágrafos do texto.",
-      "comentario": "A comparação correta mostra a especificidade de organização em parágrafos.",
+      "correta": "A compreensao de como as ideias se distribuem e avancam ao longo dos paragrafos do texto.",
+      "comentario": "A comparacao correta mostra a especificidade de organizacao em paragrafos.",
       "tempoEstimado": 30,
       "tags": [
         "textos-longos",
@@ -282,22 +283,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Organização em parágrafos",
+      "subtopico": "Organizacao em paragrafos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma atividade de sala, um artigo apresenta introdução do problema, desenvolvimento com exemplos e fechamento conclusivo. Para responder bem, o estudante deve mobilizar principalmente:",
+      "enunciado": "Em uma atividade de sala, um artigo apresenta introducao do problema, desenvolvimento com exemplos e fechamento conclusivo. Para responder bem, o estudante deve mobilizar principalmente:",
       "opcoes": [
-        "Organização em parágrafos",
+        "Organizacao em paragrafos",
         "Tese e argumento central",
-        "Referências e coesão",
+        "Referencias e coesao",
         "Tom e posicionamento do autor"
       ],
-      "correta": "Organização em parágrafos",
-      "comentario": "Esse tipo de tarefa exige domínio de organização em parágrafos.",
+      "correta": "Organizacao em paragrafos",
+      "comentario": "Esse tipo de tarefa exige dominio de organizacao em paragrafos.",
       "tempoEstimado": 35,
       "tags": [
         "textos-longos",
@@ -321,14 +322,14 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Organização em parágrafos",
+      "subtopico": "Organizacao em paragrafos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação prática depende mais diretamente de Organização em parágrafos?",
+      "enunciado": "Qual situacao pratica depende mais diretamente de Organizacao em paragrafos?",
       "opcoes": [
         "entender a estrutura global de textos longos",
         "responder itens sobre posicionamento e linha argumentativa",
@@ -336,7 +337,7 @@ export const textosLongos = {
         "interpretar o posicionamento autoral em textos mais densos"
       ],
       "correta": "entender a estrutura global de textos longos",
-      "comentario": "Organização em parágrafos aparece de forma direta em entender a estrutura global de textos longos.",
+      "comentario": "Organizacao em paragrafos aparece de forma direta em entender a estrutura global de textos longos.",
       "tempoEstimado": 35,
       "tags": [
         "textos-longos",
@@ -360,22 +361,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Organização em parágrafos",
+      "subtopico": "Organizacao em paragrafos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre organização em parágrafos?",
+      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre organizacao em paragrafos?",
       "opcoes": [
-        "o caso é resolvido com foco em organização em parágrafos.",
-        "o caso é melhor resolvido por tese e argumento central.",
-        "o caso elimina a necessidade de informações explícitas em texto longo.",
-        "o caso impede qualquer uso de referências e coesão."
+        "o caso e resolvido com foco em organizacao em paragrafos.",
+        "o caso e melhor resolvido por tese e argumento central.",
+        "o caso elimina a necessidade de informacoes explicitas em texto longo.",
+        "o caso impede qualquer uso de referencias e coesao."
       ],
-      "correta": "o caso é resolvido com foco em organização em parágrafos.",
-      "comentario": "A conclusão correta retoma a função central de organização em parágrafos.",
+      "correta": "o caso e resolvido com foco em organizacao em paragrafos.",
+      "comentario": "A conclusao correta retoma a funcao central de organizacao em paragrafos.",
       "tempoEstimado": 40,
       "tags": [
         "textos-longos",
@@ -399,22 +400,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Organização em parágrafos",
+      "subtopico": "Organizacao em paragrafos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Se a turma fosse revisar organização em parágrafos, qual pergunta de estudo seria a mais adequada?",
+      "enunciado": "Se a turma fosse revisar organizacao em paragrafos, qual pergunta de estudo seria a mais adequada?",
       "opcoes": [
-        "Como organização em parágrafos aparece em entender a estrutura global de textos longos?",
+        "Como organizacao em paragrafos aparece em entender a estrutura global de textos longos?",
         "Como tese e argumento central substitui totalmente entender a estrutura global de textos longos?",
-        "Por que informações explícitas em texto longo torna desnecessário estudar Organização em parágrafos?",
-        "De que modo referências e coesão elimina toda leitura de contexto?"
+        "Por que informacoes explicitas em texto longo torna desnecessario estudar Organizacao em paragrafos?",
+        "De que modo referencias e coesao elimina toda leitura de contexto?"
       ],
-      "correta": "Como organização em parágrafos aparece em entender a estrutura global de textos longos?",
-      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de organização em parágrafos.",
+      "correta": "Como organizacao em paragrafos aparece em entender a estrutura global de textos longos?",
+      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de organizacao em paragrafos.",
       "tempoEstimado": 40,
       "tags": [
         "textos-longos",
@@ -438,22 +439,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Organização em parágrafos",
+      "subtopico": "Organizacao em paragrafos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em organização em parágrafos é pensar que:",
+      "enunciado": "Um erro comum em organizacao em paragrafos e pensar que:",
       "opcoes": [
-        "cada parágrafo de um texto longo traz uma ideia totalmente isolada das demais",
-        "tese e argumento central são apenas opinião solta do autor",
-        "em textos longos não vale a pena procurar informação literal porque tudo é inferência",
-        "expressões referenciais sempre retomam a frase imediatamente anterior"
+        "cada paragrafo de um texto longo traz uma ideia totalmente isolada das demais",
+        "tese e argumento central sao apenas opiniao solta do autor",
+        "em textos longos nao vale a pena procurar informacao literal porque tudo e inferencia",
+        "expressoes referenciais sempre retomam a frase imediatamente anterior"
       ],
-      "correta": "cada parágrafo de um texto longo traz uma ideia totalmente isolada das demais",
-      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de organização em parágrafos.",
+      "correta": "cada paragrafo de um texto longo traz uma ideia totalmente isolada das demais",
+      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de organizacao em paragrafos.",
       "tempoEstimado": 45,
       "tags": [
         "textos-longos",
@@ -477,22 +478,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Organização em parágrafos",
+      "subtopico": "Organizacao em paragrafos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"basta ler um único parágrafo para entender todo o texto longo\". A avaliação mais adequada é:",
+      "enunciado": "Um estudante afirma: \"basta ler um unico paragrafo para entender todo o texto longo\". A avaliacao mais adequada e:",
       "opcoes": [
-        "A afirmação está incorreta, porque a compreensão de como as ideias se distribuem e avançam ao longo dos parágrafos do texto.",
-        "A afirmação está correta, pois resume integralmente organização em parágrafos.",
-        "A afirmação está correta, porque basta decorar a tradução do exemplo.",
-        "A afirmação está incorreta apenas por não citar uma regra gramatical."
+        "A afirmacao esta incorreta, porque a compreensao de como as ideias se distribuem e avancam ao longo dos paragrafos do texto.",
+        "A afirmacao esta correta, pois resume integralmente organizacao em paragrafos.",
+        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
+        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
       ],
-      "correta": "A afirmação está incorreta, porque a compreensão de como as ideias se distribuem e avançam ao longo dos parágrafos do texto.",
-      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre organização em parágrafos.",
+      "correta": "A afirmacao esta incorreta, porque a compreensao de como as ideias se distribuem e avancam ao longo dos paragrafos do texto.",
+      "comentario": "A fala do estudante apresenta um equivoco conceitual sobre organizacao em paragrafos.",
       "tempoEstimado": 45,
       "tags": [
         "textos-longos",
@@ -516,22 +517,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Organização em parágrafos",
+      "subtopico": "Organizacao em paragrafos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se organização em parágrafos fosse ignorado(a) em entender a estrutura global de textos longos, o resultado mais provável seria:",
+      "enunciado": "Se organizacao em paragrafos fosse ignorado(a) em entender a estrutura global de textos longos, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretação ficaria incompleta e aumentaria a chance de erro em entender a estrutura global de textos longos.",
-        "a questão seria resolvida automaticamente por tese e argumento central.",
-        "nenhuma interpretação seria alterada, porque Organização em parágrafos não interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
+        "a interpretacao ficaria incompleta e aumentaria a chance de erro em entender a estrutura global de textos longos.",
+        "a questao seria resolvida automaticamente por tese e argumento central.",
+        "nenhuma interpretacao seria alterada, porque Organizacao em paragrafos nao interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
       ],
-      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em entender a estrutura global de textos longos.",
-      "comentario": "Ignorar organização em parágrafos compromete a resolução correta da atividade.",
+      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em entender a estrutura global de textos longos.",
+      "comentario": "Ignorar organizacao em paragrafos compromete a resolucao correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "textos-longos",
@@ -555,14 +556,14 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Organização em parágrafos",
+      "subtopico": "Organizacao em paragrafos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou ação ilustra melhor Organização em parágrafos?",
+      "enunciado": "Qual trecho ou acao ilustra melhor Organizacao em paragrafos?",
       "opcoes": [
         "The second paragraph develops the problem introduced in the first one.",
         "The author argues that cities should invest in public transportation.",
@@ -570,7 +571,7 @@ export const textosLongos = {
         "This issue refers to the lack of access described earlier."
       ],
       "correta": "The second paragraph develops the problem introduced in the first one.",
-      "comentario": "O item correto é o que melhor exemplifica organização em parágrafos.",
+      "comentario": "O item correto e o que melhor exemplifica organizacao em paragrafos.",
       "tempoEstimado": 50,
       "tags": [
         "textos-longos",
@@ -594,22 +595,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Organização em parágrafos",
+      "subtopico": "Organizacao em paragrafos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao encontrar o exemplo \"The second paragraph develops the problem introduced in the first one.\", a leitura mais adequada é:",
+      "enunciado": "Ao encontrar o exemplo \"The second paragraph develops the problem introduced in the first one.\", a leitura mais adequada e:",
       "opcoes": [
-        "cada parágrafo cumpre uma função dentro da organização global",
-        "a frase resume a posição principal defendida",
+        "cada paragrafo cumpre uma funcao dentro da organizacao global",
+        "a frase resume a posicao principal defendida",
         "a resposta pode ser localizada diretamente em um trecho do texto",
-        "a expressão retoma uma ideia anterior e mantém a coesão do texto"
+        "a expressao retoma uma ideia anterior e mantem a coesao do texto"
       ],
-      "correta": "cada parágrafo cumpre uma função dentro da organização global",
-      "comentario": "A leitura correta do exemplo revela o papel de organização em parágrafos.",
+      "correta": "cada paragrafo cumpre uma funcao dentro da organizacao global",
+      "comentario": "A leitura correta do exemplo revela o papel de organizacao em paragrafos.",
       "tempoEstimado": 55,
       "tags": [
         "textos-longos",
@@ -633,22 +634,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Organização em parágrafos",
+      "subtopico": "Organizacao em paragrafos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estratégia ajuda mais a estudar organização em parágrafos?",
+      "enunciado": "Qual estrategia ajuda mais a estudar organizacao em paragrafos?",
       "opcoes": [
-        "identificar papel de cada parágrafo dentro do texto",
+        "identificar papel de cada paragrafo dentro do texto",
         "procurar a ideia defendida e os argumentos que a sustentam",
-        "usar palavra-chave da pergunta e rastrear o parágrafo relevante",
+        "usar palavra-chave da pergunta e rastrear o paragrafo relevante",
         "voltar ao trecho anterior e verificar o referente mais coerente"
       ],
-      "correta": "identificar papel de cada parágrafo dentro do texto",
-      "comentario": "A estratégia correta fortalece o domínio de organização em parágrafos.",
+      "correta": "identificar papel de cada paragrafo dentro do texto",
+      "comentario": "A estrategia correta fortalece o dominio de organizacao em paragrafos.",
       "tempoEstimado": 55,
       "tags": [
         "textos-longos",
@@ -672,22 +673,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Organização em parágrafos",
+      "subtopico": "Organizacao em paragrafos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Organização em parágrafos é mais cobrado quando:",
+      "enunciado": "Em uma prova, Organizacao em paragrafos e mais cobrado quando:",
       "opcoes": [
-        "a questão pede localizar função ou contribuição de um parágrafo",
-        "o item pede identificar a posição central do texto",
-        "a questão cobra dado explícito em meio a texto extenso",
-        "o item pede a que ideia um pronome ou expressão se refere"
+        "a questao pede localizar funcao ou contribuicao de um paragrafo",
+        "o item pede identificar a posicao central do texto",
+        "a questao cobra dado explicito em meio a texto extenso",
+        "o item pede a que ideia um pronome ou expressao se refere"
       ],
-      "correta": "a questão pede localizar função ou contribuição de um parágrafo",
-      "comentario": "Esse é o tipo de demanda em que organização em parágrafos aparece com mais frequência.",
+      "correta": "a questao pede localizar funcao ou contribuicao de um paragrafo",
+      "comentario": "Esse e o tipo de demanda em que organizacao em paragrafos aparece com mais frequencia.",
       "tempoEstimado": 60,
       "tags": [
         "textos-longos",
@@ -711,22 +712,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Organização em parágrafos",
+      "subtopico": "Organizacao em paragrafos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual resumo sintetiza melhor a ideia de Organização em parágrafos?",
+      "enunciado": "Qual resumo sintetiza melhor a ideia de Organizacao em paragrafos?",
       "opcoes": [
-        "Em síntese, a compreensão de como as ideias se distribuem e avançam ao longo dos parágrafos do texto.",
-        "Em síntese, a identificação da posição principal defendida pelo texto e do argumento que sustenta essa posição.",
-        "Em síntese, a localização de dados literais dentro de um texto mais extenso e com maior volume de informação.",
-        "Em síntese, a análise dos elementos que retomam ideias e mantêm a ligação entre frases e parágrafos."
+        "Em sintese, a compreensao de como as ideias se distribuem e avancam ao longo dos paragrafos do texto.",
+        "Em sintese, a identificacao da posicao principal defendida pelo texto e do argumento que sustenta essa posicao.",
+        "Em sintese, a localizacao de dados literais dentro de um texto mais extenso e com maior volume de informacao.",
+        "Em sintese, a analise dos elementos que retomam ideias e mantem a ligacao entre frases e paragrafos."
       ],
-      "correta": "Em síntese, a compreensão de como as ideias se distribuem e avançam ao longo dos parágrafos do texto.",
-      "comentario": "O resumo correto recupera o núcleo de organização em parágrafos.",
+      "correta": "Em sintese, a compreensao de como as ideias se distribuem e avancam ao longo dos paragrafos do texto.",
+      "comentario": "O resumo correto recupera o nucleo de organizacao em paragrafos.",
       "tempoEstimado": 60,
       "tags": [
         "textos-longos",
@@ -750,22 +751,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Organização em parágrafos",
+      "subtopico": "Organizacao em paragrafos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associação entre exemplo e interpretação está correta em Organização em parágrafos?",
+      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Organizacao em paragrafos?",
       "opcoes": [
-        "The second paragraph develops the problem introduced in the first one. -> cada parágrafo cumpre uma função dentro da organização global",
-        "The author argues that cities should invest in public transportation. -> cada parágrafo cumpre uma função dentro da organização global",
-        "The survey mentioned in the text involved 500 students. -> a expressão retoma uma ideia anterior e mantém a coesão do texto",
-        "This issue refers to the lack of access described earlier. -> a frase resume a posição principal defendida"
+        "The second paragraph develops the problem introduced in the first one. -> cada paragrafo cumpre uma funcao dentro da organizacao global",
+        "The author argues that cities should invest in public transportation. -> cada paragrafo cumpre uma funcao dentro da organizacao global",
+        "The survey mentioned in the text involved 500 students. -> a expressao retoma uma ideia anterior e mantem a coesao do texto",
+        "This issue refers to the lack of access described earlier. -> a frase resume a posicao principal defendida"
       ],
-      "correta": "The second paragraph develops the problem introduced in the first one. -> cada parágrafo cumpre uma função dentro da organização global",
-      "comentario": "A associação correta mantém coerência entre exemplo e interpretação em organização em parágrafos.",
+      "correta": "The second paragraph develops the problem introduced in the first one. -> cada paragrafo cumpre uma funcao dentro da organizacao global",
+      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em organizacao em paragrafos.",
       "tempoEstimado": 65,
       "tags": [
         "textos-longos",
@@ -789,22 +790,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Organização em parágrafos",
+      "subtopico": "Organizacao em paragrafos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao resolver uma atividade sobre organização em parágrafos, o estudante deve principalmente:",
+      "enunciado": "Ao resolver uma atividade sobre organizacao em paragrafos, o estudante deve principalmente:",
       "opcoes": [
-        "acompanhar a progressão temática em textos extensos",
-        "identificar papel de cada parágrafo dentro do texto",
+        "acompanhar a progressao tematica em textos extensos",
+        "identificar papel de cada paragrafo dentro do texto",
         "entender a estrutura global de textos longos",
-        "a questão pede localizar função ou contribuição de um parágrafo"
+        "a questao pede localizar funcao ou contribuicao de um paragrafo"
       ],
-      "correta": "acompanhar a progressão temática em textos extensos",
-      "comentario": "O objetivo central de organização em parágrafos é acompanhar a progressão temática em textos extensos.",
+      "correta": "acompanhar a progressao tematica em textos extensos",
+      "comentario": "O objetivo central de organizacao em paragrafos e acompanhar a progressao tematica em textos extensos.",
       "tempoEstimado": 70,
       "tags": [
         "textos-longos",
@@ -828,22 +829,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Tese e argumento central",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Inglês, Tese e argumento central refere-se a:",
+      "enunciado": "Em Ingles, Tese e argumento central refere-se a:",
       "opcoes": [
-        "a identificação da posição principal defendida pelo texto e do argumento que sustenta essa posição",
-        "a localização de dados literais dentro de um texto mais extenso e com maior volume de informação",
-        "a análise dos elementos que retomam ideias e mantêm a ligação entre frases e parágrafos",
-        "a percepção do modo como o autor trata o tema ao longo do texto e da postura assumida"
+        "a identificacao da posicao principal defendida pelo texto e do argumento que sustenta essa posicao",
+        "a localizacao de dados literais dentro de um texto mais extenso e com maior volume de informacao",
+        "a analise dos elementos que retomam ideias e mantem a ligacao entre frases e paragrafos",
+        "a percepcao do modo como o autor trata o tema ao longo do texto e da postura assumida"
       ],
-      "correta": "a identificação da posição principal defendida pelo texto e do argumento que sustenta essa posição",
-      "comentario": "Tese e argumento central refere-se à identificação da posição principal defendida pelo texto e do argumento que sustenta essa posição.",
+      "correta": "a identificacao da posicao principal defendida pelo texto e do argumento que sustenta essa posicao",
+      "comentario": "Tese e argumento central refere-se a identificacao da posicao principal defendida pelo texto e do argumento que sustenta essa posicao.",
       "tempoEstimado": 20,
       "tags": [
         "textos-longos",
@@ -867,22 +868,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Tese e argumento central",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: um texto defende transporte público sustentável e usa dados para justificar essa defesa. Esse caso está mais ligado a qual subtópico?",
+      "enunciado": "Observe a situacao: um texto defende transporte publico sustentavel e usa dados para justificar essa defesa. Esse caso esta mais ligado a qual subtopico?",
       "opcoes": [
         "Tese e argumento central",
-        "Informações explícitas em texto longo",
-        "Referências e coesão",
+        "Informacoes explicitas em texto longo",
+        "Referencias e coesao",
         "Tom e posicionamento do autor"
       ],
       "correta": "Tese e argumento central",
-      "comentario": "A situação apresentada é melhor compreendida por meio de tese e argumento central.",
+      "comentario": "A situacao apresentada e melhor compreendida por meio de tese e argumento central.",
       "tempoEstimado": 20,
       "tags": [
         "textos-longos",
@@ -906,7 +907,7 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Tese e argumento central",
       "dificuldadeLabel": "facil",
@@ -945,14 +946,14 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Tese e argumento central",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO representa corretamente tese e argumento central?",
+      "enunciado": "Qual alternativa NAO representa corretamente tese e argumento central?",
       "opcoes": [
         "The survey mentioned in the text involved 500 students.",
         "The author argues that cities should invest in public transportation.",
@@ -960,7 +961,7 @@ export const textosLongos = {
         "responder itens sobre posicionamento e linha argumentativa."
       ],
       "correta": "The survey mentioned in the text involved 500 students.",
-      "comentario": "A opção incompatível ilustra outro subtópico, e não tese e argumento central.",
+      "comentario": "A opcao incompativel ilustra outro subtopico, e nao tese e argumento central.",
       "tempoEstimado": 25,
       "tags": [
         "textos-longos",
@@ -984,19 +985,19 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Tese e argumento central",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar tese e argumento central, o foco principal é:",
+      "enunciado": "Ao estudar tese e argumento central, o foco principal e:",
       "opcoes": [
         "reconhecer a tese e o fio argumentativo principal",
-        "encontrar trechos específicos sem perder a visão do conjunto",
+        "encontrar trechos especificos sem perder a visao do conjunto",
         "acompanhar mecanismos de retomada em textos longos",
-        "reconhecer se o texto adota tom crítico, reflexivo, otimista ou de alerta"
+        "reconhecer se o texto adota tom critico, reflexivo, otimista ou de alerta"
       ],
       "correta": "reconhecer a tese e o fio argumentativo principal",
       "comentario": "Tese e argumento central concentra-se em reconhecer a tese e o fio argumentativo principal.",
@@ -1023,22 +1024,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Tese e argumento central",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Informações explícitas em texto longo trata de a localização de dados literais dentro de um texto mais extenso e com maior volume de informação, Tese e argumento central destaca:",
+      "enunciado": "Enquanto Informacoes explicitas em texto longo trata de a localizacao de dados literais dentro de um texto mais extenso e com maior volume de informacao, Tese e argumento central destaca:",
       "opcoes": [
-        "A identificação da posição principal defendida pelo texto e do argumento que sustenta essa posição.",
-        "A localização de dados literais dentro de um texto mais extenso e com maior volume de informação.",
-        "A análise dos elementos que retomam ideias e mantêm a ligação entre frases e parágrafos.",
-        "A percepção do modo como o autor trata o tema ao longo do texto e da postura assumida."
+        "A identificacao da posicao principal defendida pelo texto e do argumento que sustenta essa posicao.",
+        "A localizacao de dados literais dentro de um texto mais extenso e com maior volume de informacao.",
+        "A analise dos elementos que retomam ideias e mantem a ligacao entre frases e paragrafos.",
+        "A percepcao do modo como o autor trata o tema ao longo do texto e da postura assumida."
       ],
-      "correta": "A identificação da posição principal defendida pelo texto e do argumento que sustenta essa posição.",
-      "comentario": "A comparação correta mostra a especificidade de tese e argumento central.",
+      "correta": "A identificacao da posicao principal defendida pelo texto e do argumento que sustenta essa posicao.",
+      "comentario": "A comparacao correta mostra a especificidade de tese e argumento central.",
       "tempoEstimado": 30,
       "tags": [
         "textos-longos",
@@ -1062,22 +1063,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Tese e argumento central",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma atividade de sala, um texto defende transporte público sustentável e usa dados para justificar essa defesa. Para responder bem, o estudante deve mobilizar principalmente:",
+      "enunciado": "Em uma atividade de sala, um texto defende transporte publico sustentavel e usa dados para justificar essa defesa. Para responder bem, o estudante deve mobilizar principalmente:",
       "opcoes": [
         "Tese e argumento central",
-        "Informações explícitas em texto longo",
+        "Informacoes explicitas em texto longo",
         "Tom e posicionamento do autor",
-        "Síntese por seção"
+        "Sintese por secao"
       ],
       "correta": "Tese e argumento central",
-      "comentario": "Esse tipo de tarefa exige domínio de tese e argumento central.",
+      "comentario": "Esse tipo de tarefa exige dominio de tese e argumento central.",
       "tempoEstimado": 35,
       "tags": [
         "textos-longos",
@@ -1101,19 +1102,19 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Tese e argumento central",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação prática depende mais diretamente de Tese e argumento central?",
+      "enunciado": "Qual situacao pratica depende mais diretamente de Tese e argumento central?",
       "opcoes": [
         "responder itens sobre posicionamento e linha argumentativa",
         "retirar dados diretos de textos longos sem se perder na leitura",
-        "resolver itens sobre pronomes, expressões referenciais e coesão textual",
-        "resumir trechos sem perder sua função no conjunto do texto"
+        "resolver itens sobre pronomes, expressoes referenciais e coesao textual",
+        "resumir trechos sem perder sua funcao no conjunto do texto"
       ],
       "correta": "responder itens sobre posicionamento e linha argumentativa",
       "comentario": "Tese e argumento central aparece de forma direta em responder itens sobre posicionamento e linha argumentativa.",
@@ -1140,22 +1141,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Tese e argumento central",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre tese e argumento central?",
+      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre tese e argumento central?",
       "opcoes": [
-        "o caso é resolvido com foco em tese e argumento central.",
-        "o caso é melhor resolvido por informações explícitas em texto longo.",
-        "o caso elimina a necessidade de referências e coesão.",
+        "o caso e resolvido com foco em tese e argumento central.",
+        "o caso e melhor resolvido por informacoes explicitas em texto longo.",
+        "o caso elimina a necessidade de referencias e coesao.",
         "o caso impede qualquer uso de tom e posicionamento do autor."
       ],
-      "correta": "o caso é resolvido com foco em tese e argumento central.",
-      "comentario": "A conclusão correta retoma a função central de tese e argumento central.",
+      "correta": "o caso e resolvido com foco em tese e argumento central.",
+      "comentario": "A conclusao correta retoma a funcao central de tese e argumento central.",
       "tempoEstimado": 40,
       "tags": [
         "textos-longos",
@@ -1179,7 +1180,7 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Tese e argumento central",
       "dificuldadeLabel": "facil",
@@ -1189,8 +1190,8 @@ export const textosLongos = {
       "enunciado": "Se a turma fosse revisar tese e argumento central, qual pergunta de estudo seria a mais adequada?",
       "opcoes": [
         "Como tese e argumento central aparece em responder itens sobre posicionamento e linha argumentativa?",
-        "Como informações explícitas em texto longo substitui totalmente responder itens sobre posicionamento e linha argumentativa?",
-        "Por que referências e coesão torna desnecessário estudar Tese e argumento central?",
+        "Como informacoes explicitas em texto longo substitui totalmente responder itens sobre posicionamento e linha argumentativa?",
+        "Por que referencias e coesao torna desnecessario estudar Tese e argumento central?",
         "De que modo tom e posicionamento do autor elimina toda leitura de contexto?"
       ],
       "correta": "Como tese e argumento central aparece em responder itens sobre posicionamento e linha argumentativa?",
@@ -1218,22 +1219,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Tese e argumento central",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em tese e argumento central é pensar que:",
+      "enunciado": "Um erro comum em tese e argumento central e pensar que:",
       "opcoes": [
-        "tese e argumento central são apenas opinião solta do autor",
-        "em textos longos não vale a pena procurar informação literal porque tudo é inferência",
-        "expressões referenciais sempre retomam a frase imediatamente anterior",
-        "o tom do autor muda a cada frase e não pode ser percebido no conjunto"
+        "tese e argumento central sao apenas opiniao solta do autor",
+        "em textos longos nao vale a pena procurar informacao literal porque tudo e inferencia",
+        "expressoes referenciais sempre retomam a frase imediatamente anterior",
+        "o tom do autor muda a cada frase e nao pode ser percebido no conjunto"
       ],
-      "correta": "tese e argumento central são apenas opinião solta do autor",
-      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de tese e argumento central.",
+      "correta": "tese e argumento central sao apenas opiniao solta do autor",
+      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de tese e argumento central.",
       "tempoEstimado": 45,
       "tags": [
         "textos-longos",
@@ -1257,22 +1258,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Tese e argumento central",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"se o texto traz exemplos, então não há uma tese principal\". A avaliação mais adequada é:",
+      "enunciado": "Um estudante afirma: \"se o texto traz exemplos, entao nao ha uma tese principal\". A avaliacao mais adequada e:",
       "opcoes": [
-        "A afirmação está incorreta, porque a identificação da posição principal defendida pelo texto e do argumento que sustenta essa posição.",
-        "A afirmação está correta, pois resume integralmente tese e argumento central.",
-        "A afirmação está correta, porque basta decorar a tradução do exemplo.",
-        "A afirmação está incorreta apenas por não citar uma regra gramatical."
+        "A afirmacao esta incorreta, porque a identificacao da posicao principal defendida pelo texto e do argumento que sustenta essa posicao.",
+        "A afirmacao esta correta, pois resume integralmente tese e argumento central.",
+        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
+        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
       ],
-      "correta": "A afirmação está incorreta, porque a identificação da posição principal defendida pelo texto e do argumento que sustenta essa posição.",
-      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre tese e argumento central.",
+      "correta": "A afirmacao esta incorreta, porque a identificacao da posicao principal defendida pelo texto e do argumento que sustenta essa posicao.",
+      "comentario": "A fala do estudante apresenta um equivoco conceitual sobre tese e argumento central.",
       "tempoEstimado": 45,
       "tags": [
         "textos-longos",
@@ -1296,22 +1297,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Tese e argumento central",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se tese e argumento central fosse ignorado(a) em responder itens sobre posicionamento e linha argumentativa, o resultado mais provável seria:",
+      "enunciado": "Se tese e argumento central fosse ignorado(a) em responder itens sobre posicionamento e linha argumentativa, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretação ficaria incompleta e aumentaria a chance de erro em responder itens sobre posicionamento e linha argumentativa.",
-        "a questão seria resolvida automaticamente por informações explícitas em texto longo.",
-        "nenhuma interpretação seria alterada, porque Tese e argumento central não interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
+        "a interpretacao ficaria incompleta e aumentaria a chance de erro em responder itens sobre posicionamento e linha argumentativa.",
+        "a questao seria resolvida automaticamente por informacoes explicitas em texto longo.",
+        "nenhuma interpretacao seria alterada, porque Tese e argumento central nao interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
       ],
-      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em responder itens sobre posicionamento e linha argumentativa.",
-      "comentario": "Ignorar tese e argumento central compromete a resolução correta da atividade.",
+      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em responder itens sobre posicionamento e linha argumentativa.",
+      "comentario": "Ignorar tese e argumento central compromete a resolucao correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "textos-longos",
@@ -1335,14 +1336,14 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Tese e argumento central",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou ação ilustra melhor Tese e argumento central?",
+      "enunciado": "Qual trecho ou acao ilustra melhor Tese e argumento central?",
       "opcoes": [
         "The author argues that cities should invest in public transportation.",
         "The survey mentioned in the text involved 500 students.",
@@ -1350,7 +1351,7 @@ export const textosLongos = {
         "The author adopts a critical tone when discussing waste."
       ],
       "correta": "The author argues that cities should invest in public transportation.",
-      "comentario": "O item correto é o que melhor exemplifica tese e argumento central.",
+      "comentario": "O item correto e o que melhor exemplifica tese e argumento central.",
       "tempoEstimado": 50,
       "tags": [
         "textos-longos",
@@ -1374,21 +1375,21 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Tese e argumento central",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao encontrar o exemplo \"The author argues that cities should invest in public transportation.\", a leitura mais adequada é:",
+      "enunciado": "Ao encontrar o exemplo \"The author argues that cities should invest in public transportation.\", a leitura mais adequada e:",
       "opcoes": [
-        "a frase resume a posição principal defendida",
+        "a frase resume a posicao principal defendida",
         "a resposta pode ser localizada diretamente em um trecho do texto",
-        "a expressão retoma uma ideia anterior e mantém a coesão do texto",
-        "o texto não apenas informa, mas assume uma postura diante do tema"
+        "a expressao retoma uma ideia anterior e mantem a coesao do texto",
+        "o texto nao apenas informa, mas assume uma postura diante do tema"
       ],
-      "correta": "a frase resume a posição principal defendida",
+      "correta": "a frase resume a posicao principal defendida",
       "comentario": "A leitura correta do exemplo revela o papel de tese e argumento central.",
       "tempoEstimado": 55,
       "tags": [
@@ -1413,22 +1414,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Tese e argumento central",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estratégia ajuda mais a estudar tese e argumento central?",
+      "enunciado": "Qual estrategia ajuda mais a estudar tese e argumento central?",
       "opcoes": [
         "procurar a ideia defendida e os argumentos que a sustentam",
-        "usar palavra-chave da pergunta e rastrear o parágrafo relevante",
+        "usar palavra-chave da pergunta e rastrear o paragrafo relevante",
         "voltar ao trecho anterior e verificar o referente mais coerente",
-        "observar adjetivos avaliativos, modalização e efeito global do texto"
+        "observar adjetivos avaliativos, modalizacao e efeito global do texto"
       ],
       "correta": "procurar a ideia defendida e os argumentos que a sustentam",
-      "comentario": "A estratégia correta fortalece o domínio de tese e argumento central.",
+      "comentario": "A estrategia correta fortalece o dominio de tese e argumento central.",
       "tempoEstimado": 55,
       "tags": [
         "textos-longos",
@@ -1452,22 +1453,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Tese e argumento central",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Tese e argumento central é mais cobrado quando:",
+      "enunciado": "Em uma prova, Tese e argumento central e mais cobrado quando:",
       "opcoes": [
-        "o item pede identificar a posição central do texto",
-        "a questão cobra dado explícito em meio a texto extenso",
-        "o item pede a que ideia um pronome ou expressão se refere",
-        "a questão pede o tom ou a postura do autor"
+        "o item pede identificar a posicao central do texto",
+        "a questao cobra dado explicito em meio a texto extenso",
+        "o item pede a que ideia um pronome ou expressao se refere",
+        "a questao pede o tom ou a postura do autor"
       ],
-      "correta": "o item pede identificar a posição central do texto",
-      "comentario": "Esse é o tipo de demanda em que tese e argumento central aparece com mais frequência.",
+      "correta": "o item pede identificar a posicao central do texto",
+      "comentario": "Esse e o tipo de demanda em que tese e argumento central aparece com mais frequencia.",
       "tempoEstimado": 60,
       "tags": [
         "textos-longos",
@@ -1491,7 +1492,7 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Tese e argumento central",
       "dificuldadeLabel": "dificil",
@@ -1500,13 +1501,13 @@ export const textosLongos = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual resumo sintetiza melhor a ideia de Tese e argumento central?",
       "opcoes": [
-        "Em síntese, a identificação da posição principal defendida pelo texto e do argumento que sustenta essa posição.",
-        "Em síntese, a localização de dados literais dentro de um texto mais extenso e com maior volume de informação.",
-        "Em síntese, a análise dos elementos que retomam ideias e mantêm a ligação entre frases e parágrafos.",
-        "Em síntese, a percepção do modo como o autor trata o tema ao longo do texto e da postura assumida."
+        "Em sintese, a identificacao da posicao principal defendida pelo texto e do argumento que sustenta essa posicao.",
+        "Em sintese, a localizacao de dados literais dentro de um texto mais extenso e com maior volume de informacao.",
+        "Em sintese, a analise dos elementos que retomam ideias e mantem a ligacao entre frases e paragrafos.",
+        "Em sintese, a percepcao do modo como o autor trata o tema ao longo do texto e da postura assumida."
       ],
-      "correta": "Em síntese, a identificação da posição principal defendida pelo texto e do argumento que sustenta essa posição.",
-      "comentario": "O resumo correto recupera o núcleo de tese e argumento central.",
+      "correta": "Em sintese, a identificacao da posicao principal defendida pelo texto e do argumento que sustenta essa posicao.",
+      "comentario": "O resumo correto recupera o nucleo de tese e argumento central.",
       "tempoEstimado": 60,
       "tags": [
         "textos-longos",
@@ -1530,22 +1531,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Tese e argumento central",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associação entre exemplo e interpretação está correta em Tese e argumento central?",
+      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Tese e argumento central?",
       "opcoes": [
-        "The author argues that cities should invest in public transportation. -> a frase resume a posição principal defendida",
-        "The survey mentioned in the text involved 500 students. -> a frase resume a posição principal defendida",
-        "This issue refers to the lack of access described earlier. -> o texto não apenas informa, mas assume uma postura diante do tema",
+        "The author argues that cities should invest in public transportation. -> a frase resume a posicao principal defendida",
+        "The survey mentioned in the text involved 500 students. -> a frase resume a posicao principal defendida",
+        "This issue refers to the lack of access described earlier. -> o texto nao apenas informa, mas assume uma postura diante do tema",
         "The author adopts a critical tone when discussing waste. -> a resposta pode ser localizada diretamente em um trecho do texto"
       ],
-      "correta": "The author argues that cities should invest in public transportation. -> a frase resume a posição principal defendida",
-      "comentario": "A associação correta mantém coerência entre exemplo e interpretação em tese e argumento central.",
+      "correta": "The author argues that cities should invest in public transportation. -> a frase resume a posicao principal defendida",
+      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em tese e argumento central.",
       "tempoEstimado": 65,
       "tags": [
         "textos-longos",
@@ -1569,7 +1570,7 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Tese e argumento central",
       "dificuldadeLabel": "dificil",
@@ -1581,10 +1582,10 @@ export const textosLongos = {
         "reconhecer a tese e o fio argumentativo principal",
         "procurar a ideia defendida e os argumentos que a sustentam",
         "responder itens sobre posicionamento e linha argumentativa",
-        "o item pede identificar a posição central do texto"
+        "o item pede identificar a posicao central do texto"
       ],
       "correta": "reconhecer a tese e o fio argumentativo principal",
-      "comentario": "O objetivo central de tese e argumento central é reconhecer a tese e o fio argumentativo principal.",
+      "comentario": "O objetivo central de tese e argumento central e reconhecer a tese e o fio argumentativo principal.",
       "tempoEstimado": 70,
       "tags": [
         "textos-longos",
@@ -1608,22 +1609,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Informações explícitas em texto longo",
+      "subtopico": "Informacoes explicitas em texto longo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Inglês, Informações explícitas em texto longo refere-se a:",
+      "enunciado": "Em Ingles, Informacoes explicitas em texto longo refere-se a:",
       "opcoes": [
-        "a localização de dados literais dentro de um texto mais extenso e com maior volume de informação",
-        "a análise dos elementos que retomam ideias e mantêm a ligação entre frases e parágrafos",
-        "a percepção do modo como o autor trata o tema ao longo do texto e da postura assumida",
-        "a capacidade de resumir a função de partes específicas do texto dentro do argumento geral"
+        "a localizacao de dados literais dentro de um texto mais extenso e com maior volume de informacao",
+        "a analise dos elementos que retomam ideias e mantem a ligacao entre frases e paragrafos",
+        "a percepcao do modo como o autor trata o tema ao longo do texto e da postura assumida",
+        "a capacidade de resumir a funcao de partes especificas do texto dentro do argumento geral"
       ],
-      "correta": "a localização de dados literais dentro de um texto mais extenso e com maior volume de informação",
-      "comentario": "Informações explícitas em texto longo refere-se à localização de dados literais dentro de um texto mais extenso e com maior volume de informação.",
+      "correta": "a localizacao de dados literais dentro de um texto mais extenso e com maior volume de informacao",
+      "comentario": "Informacoes explicitas em texto longo refere-se a localizacao de dados literais dentro de um texto mais extenso e com maior volume de informacao.",
       "tempoEstimado": 20,
       "tags": [
         "textos-longos",
@@ -1647,22 +1648,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Informações explícitas em texto longo",
+      "subtopico": "Informacoes explicitas em texto longo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: em um artigo de vários parágrafos, o aluno precisa localizar onde o autor cita uma pesquisa específica. Esse caso está mais ligado a qual subtópico?",
+      "enunciado": "Observe a situacao: em um artigo de varios paragrafos, o aluno precisa localizar onde o autor cita uma pesquisa especifica. Esse caso esta mais ligado a qual subtopico?",
       "opcoes": [
-        "Informações explícitas em texto longo",
-        "Referências e coesão",
+        "Informacoes explicitas em texto longo",
+        "Referencias e coesao",
         "Tom e posicionamento do autor",
-        "Síntese por seção"
+        "Sintese por secao"
       ],
-      "correta": "Informações explícitas em texto longo",
-      "comentario": "A situação apresentada é melhor compreendida por meio de informações explícitas em texto longo.",
+      "correta": "Informacoes explicitas em texto longo",
+      "comentario": "A situacao apresentada e melhor compreendida por meio de informacoes explicitas em texto longo.",
       "tempoEstimado": 20,
       "tags": [
         "textos-longos",
@@ -1686,14 +1687,14 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Informações explícitas em texto longo",
+      "subtopico": "Informacoes explicitas em texto longo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual exemplo combina melhor com informações explícitas em texto longo?",
+      "enunciado": "Qual exemplo combina melhor com informacoes explicitas em texto longo?",
       "opcoes": [
         "The survey mentioned in the text involved 500 students.",
         "This issue refers to the lack of access described earlier.",
@@ -1701,7 +1702,7 @@ export const textosLongos = {
         "This section presents examples to support the main claim."
       ],
       "correta": "The survey mentioned in the text involved 500 students.",
-      "comentario": "O exemplo correto ilustra o uso de informações explícitas em texto longo.",
+      "comentario": "O exemplo correto ilustra o uso de informacoes explicitas em texto longo.",
       "tempoEstimado": 25,
       "tags": [
         "textos-longos",
@@ -1725,22 +1726,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Informações explícitas em texto longo",
+      "subtopico": "Informacoes explicitas em texto longo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO representa corretamente informações explícitas em texto longo?",
+      "enunciado": "Qual alternativa NAO representa corretamente informacoes explicitas em texto longo?",
       "opcoes": [
         "This issue refers to the lack of access described earlier.",
         "The survey mentioned in the text involved 500 students.",
-        "usar palavra-chave da pergunta e rastrear o parágrafo relevante.",
+        "usar palavra-chave da pergunta e rastrear o paragrafo relevante.",
         "retirar dados diretos de textos longos sem se perder na leitura."
       ],
       "correta": "This issue refers to the lack of access described earlier.",
-      "comentario": "A opção incompatível ilustra outro subtópico, e não informações explícitas em texto longo.",
+      "comentario": "A opcao incompativel ilustra outro subtopico, e nao informacoes explicitas em texto longo.",
       "tempoEstimado": 25,
       "tags": [
         "textos-longos",
@@ -1764,22 +1765,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Informações explícitas em texto longo",
+      "subtopico": "Informacoes explicitas em texto longo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar informações explícitas em texto longo, o foco principal é:",
+      "enunciado": "Ao estudar informacoes explicitas em texto longo, o foco principal e:",
       "opcoes": [
-        "encontrar trechos específicos sem perder a visão do conjunto",
+        "encontrar trechos especificos sem perder a visao do conjunto",
         "acompanhar mecanismos de retomada em textos longos",
-        "reconhecer se o texto adota tom crítico, reflexivo, otimista ou de alerta",
-        "entender o papel de cada bloco argumentativo na construção do sentido"
+        "reconhecer se o texto adota tom critico, reflexivo, otimista ou de alerta",
+        "entender o papel de cada bloco argumentativo na construcao do sentido"
       ],
-      "correta": "encontrar trechos específicos sem perder a visão do conjunto",
-      "comentario": "Informações explícitas em texto longo concentra-se em encontrar trechos específicos sem perder a visão do conjunto.",
+      "correta": "encontrar trechos especificos sem perder a visao do conjunto",
+      "comentario": "Informacoes explicitas em texto longo concentra-se em encontrar trechos especificos sem perder a visao do conjunto.",
       "tempoEstimado": 30,
       "tags": [
         "textos-longos",
@@ -1803,22 +1804,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Informações explícitas em texto longo",
+      "subtopico": "Informacoes explicitas em texto longo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Referências e coesão trata de a análise dos elementos que retomam ideias e mantêm a ligação entre frases e parágrafos, Informações explícitas em texto longo destaca:",
+      "enunciado": "Enquanto Referencias e coesao trata de a analise dos elementos que retomam ideias e mantem a ligacao entre frases e paragrafos, Informacoes explicitas em texto longo destaca:",
       "opcoes": [
-        "A localização de dados literais dentro de um texto mais extenso e com maior volume de informação.",
-        "A análise dos elementos que retomam ideias e mantêm a ligação entre frases e parágrafos.",
-        "A percepção do modo como o autor trata o tema ao longo do texto e da postura assumida.",
-        "A capacidade de resumir a função de partes específicas do texto dentro do argumento geral."
+        "A localizacao de dados literais dentro de um texto mais extenso e com maior volume de informacao.",
+        "A analise dos elementos que retomam ideias e mantem a ligacao entre frases e paragrafos.",
+        "A percepcao do modo como o autor trata o tema ao longo do texto e da postura assumida.",
+        "A capacidade de resumir a funcao de partes especificas do texto dentro do argumento geral."
       ],
-      "correta": "A localização de dados literais dentro de um texto mais extenso e com maior volume de informação.",
-      "comentario": "A comparação correta mostra a especificidade de informações explícitas em texto longo.",
+      "correta": "A localizacao de dados literais dentro de um texto mais extenso e com maior volume de informacao.",
+      "comentario": "A comparacao correta mostra a especificidade de informacoes explicitas em texto longo.",
       "tempoEstimado": 30,
       "tags": [
         "textos-longos",
@@ -1842,22 +1843,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Informações explícitas em texto longo",
+      "subtopico": "Informacoes explicitas em texto longo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma atividade de sala, em um artigo de vários parágrafos, o aluno precisa localizar onde o autor cita uma pesquisa específica. Para responder bem, o estudante deve mobilizar principalmente:",
+      "enunciado": "Em uma atividade de sala, em um artigo de varios paragrafos, o aluno precisa localizar onde o autor cita uma pesquisa especifica. Para responder bem, o estudante deve mobilizar principalmente:",
       "opcoes": [
-        "Informações explícitas em texto longo",
-        "Referências e coesão",
-        "Síntese por seção",
-        "Comparação de pontos de vista"
+        "Informacoes explicitas em texto longo",
+        "Referencias e coesao",
+        "Sintese por secao",
+        "Comparacao de pontos de vista"
       ],
-      "correta": "Informações explícitas em texto longo",
-      "comentario": "Esse tipo de tarefa exige domínio de informações explícitas em texto longo.",
+      "correta": "Informacoes explicitas em texto longo",
+      "comentario": "Esse tipo de tarefa exige dominio de informacoes explicitas em texto longo.",
       "tempoEstimado": 35,
       "tags": [
         "textos-longos",
@@ -1881,22 +1882,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Informações explícitas em texto longo",
+      "subtopico": "Informacoes explicitas em texto longo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação prática depende mais diretamente de Informações explícitas em texto longo?",
+      "enunciado": "Qual situacao pratica depende mais diretamente de Informacoes explicitas em texto longo?",
       "opcoes": [
         "retirar dados diretos de textos longos sem se perder na leitura",
-        "resolver itens sobre pronomes, expressões referenciais e coesão textual",
+        "resolver itens sobre pronomes, expressoes referenciais e coesao textual",
         "interpretar o posicionamento autoral em textos mais densos",
-        "resolver itens com contraste de posições em textos extensos"
+        "resolver itens com contraste de posicoes em textos extensos"
       ],
       "correta": "retirar dados diretos de textos longos sem se perder na leitura",
-      "comentario": "Informações explícitas em texto longo aparece de forma direta em retirar dados diretos de textos longos sem se perder na leitura.",
+      "comentario": "Informacoes explicitas em texto longo aparece de forma direta em retirar dados diretos de textos longos sem se perder na leitura.",
       "tempoEstimado": 35,
       "tags": [
         "textos-longos",
@@ -1920,22 +1921,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Informações explícitas em texto longo",
+      "subtopico": "Informacoes explicitas em texto longo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre informações explícitas em texto longo?",
+      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre informacoes explicitas em texto longo?",
       "opcoes": [
-        "o caso é resolvido com foco em informações explícitas em texto longo.",
-        "o caso é melhor resolvido por referências e coesão.",
+        "o caso e resolvido com foco em informacoes explicitas em texto longo.",
+        "o caso e melhor resolvido por referencias e coesao.",
         "o caso elimina a necessidade de tom e posicionamento do autor.",
-        "o caso impede qualquer uso de síntese por seção."
+        "o caso impede qualquer uso de sintese por secao."
       ],
-      "correta": "o caso é resolvido com foco em informações explícitas em texto longo.",
-      "comentario": "A conclusão correta retoma a função central de informações explícitas em texto longo.",
+      "correta": "o caso e resolvido com foco em informacoes explicitas em texto longo.",
+      "comentario": "A conclusao correta retoma a funcao central de informacoes explicitas em texto longo.",
       "tempoEstimado": 40,
       "tags": [
         "textos-longos",
@@ -1959,22 +1960,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Informações explícitas em texto longo",
+      "subtopico": "Informacoes explicitas em texto longo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Se a turma fosse revisar informações explícitas em texto longo, qual pergunta de estudo seria a mais adequada?",
+      "enunciado": "Se a turma fosse revisar informacoes explicitas em texto longo, qual pergunta de estudo seria a mais adequada?",
       "opcoes": [
-        "Como informações explícitas em texto longo aparece em retirar dados diretos de textos longos sem se perder na leitura?",
-        "Como referências e coesão substitui totalmente retirar dados diretos de textos longos sem se perder na leitura?",
-        "Por que tom e posicionamento do autor torna desnecessário estudar Informações explícitas em texto longo?",
-        "De que modo síntese por seção elimina toda leitura de contexto?"
+        "Como informacoes explicitas em texto longo aparece em retirar dados diretos de textos longos sem se perder na leitura?",
+        "Como referencias e coesao substitui totalmente retirar dados diretos de textos longos sem se perder na leitura?",
+        "Por que tom e posicionamento do autor torna desnecessario estudar Informacoes explicitas em texto longo?",
+        "De que modo sintese por secao elimina toda leitura de contexto?"
       ],
-      "correta": "Como informações explícitas em texto longo aparece em retirar dados diretos de textos longos sem se perder na leitura?",
-      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de informações explícitas em texto longo.",
+      "correta": "Como informacoes explicitas em texto longo aparece em retirar dados diretos de textos longos sem se perder na leitura?",
+      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de informacoes explicitas em texto longo.",
       "tempoEstimado": 40,
       "tags": [
         "textos-longos",
@@ -1998,22 +1999,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Informações explícitas em texto longo",
+      "subtopico": "Informacoes explicitas em texto longo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em informações explícitas em texto longo é pensar que:",
+      "enunciado": "Um erro comum em informacoes explicitas em texto longo e pensar que:",
       "opcoes": [
-        "em textos longos não vale a pena procurar informação literal porque tudo é inferência",
-        "expressões referenciais sempre retomam a frase imediatamente anterior",
-        "o tom do autor muda a cada frase e não pode ser percebido no conjunto",
-        "sintetizar seção é traduzir todas as frases com menos palavras"
+        "em textos longos nao vale a pena procurar informacao literal porque tudo e inferencia",
+        "expressoes referenciais sempre retomam a frase imediatamente anterior",
+        "o tom do autor muda a cada frase e nao pode ser percebido no conjunto",
+        "sintetizar secao e traduzir todas as frases com menos palavras"
       ],
-      "correta": "em textos longos não vale a pena procurar informação literal porque tudo é inferência",
-      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de informações explícitas em texto longo.",
+      "correta": "em textos longos nao vale a pena procurar informacao literal porque tudo e inferencia",
+      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de informacoes explicitas em texto longo.",
       "tempoEstimado": 45,
       "tags": [
         "textos-longos",
@@ -2037,22 +2038,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Informações explícitas em texto longo",
+      "subtopico": "Informacoes explicitas em texto longo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"se o texto é extenso, nenhuma resposta pode estar explícita\". A avaliação mais adequada é:",
+      "enunciado": "Um estudante afirma: \"se o texto e extenso, nenhuma resposta pode estar explicita\". A avaliacao mais adequada e:",
       "opcoes": [
-        "A afirmação está incorreta, porque a localização de dados literais dentro de um texto mais extenso e com maior volume de informação.",
-        "A afirmação está correta, pois resume integralmente informações explícitas em texto longo.",
-        "A afirmação está correta, porque basta decorar a tradução do exemplo.",
-        "A afirmação está incorreta apenas por não citar uma regra gramatical."
+        "A afirmacao esta incorreta, porque a localizacao de dados literais dentro de um texto mais extenso e com maior volume de informacao.",
+        "A afirmacao esta correta, pois resume integralmente informacoes explicitas em texto longo.",
+        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
+        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
       ],
-      "correta": "A afirmação está incorreta, porque a localização de dados literais dentro de um texto mais extenso e com maior volume de informação.",
-      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre informações explícitas em texto longo.",
+      "correta": "A afirmacao esta incorreta, porque a localizacao de dados literais dentro de um texto mais extenso e com maior volume de informacao.",
+      "comentario": "A fala do estudante apresenta um equivoco conceitual sobre informacoes explicitas em texto longo.",
       "tempoEstimado": 45,
       "tags": [
         "textos-longos",
@@ -2076,22 +2077,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Informações explícitas em texto longo",
+      "subtopico": "Informacoes explicitas em texto longo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se informações explícitas em texto longo fosse ignorado(a) em retirar dados diretos de textos longos sem se perder na leitura, o resultado mais provável seria:",
+      "enunciado": "Se informacoes explicitas em texto longo fosse ignorado(a) em retirar dados diretos de textos longos sem se perder na leitura, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretação ficaria incompleta e aumentaria a chance de erro em retirar dados diretos de textos longos sem se perder na leitura.",
-        "a questão seria resolvida automaticamente por referências e coesão.",
-        "nenhuma interpretação seria alterada, porque Informações explícitas em texto longo não interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
+        "a interpretacao ficaria incompleta e aumentaria a chance de erro em retirar dados diretos de textos longos sem se perder na leitura.",
+        "a questao seria resolvida automaticamente por referencias e coesao.",
+        "nenhuma interpretacao seria alterada, porque Informacoes explicitas em texto longo nao interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
       ],
-      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em retirar dados diretos de textos longos sem se perder na leitura.",
-      "comentario": "Ignorar informações explícitas em texto longo compromete a resolução correta da atividade.",
+      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em retirar dados diretos de textos longos sem se perder na leitura.",
+      "comentario": "Ignorar informacoes explicitas em texto longo compromete a resolucao correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "textos-longos",
@@ -2115,14 +2116,14 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Informações explícitas em texto longo",
+      "subtopico": "Informacoes explicitas em texto longo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou ação ilustra melhor Informações explícitas em texto longo?",
+      "enunciado": "Qual trecho ou acao ilustra melhor Informacoes explicitas em texto longo?",
       "opcoes": [
         "The survey mentioned in the text involved 500 students.",
         "This issue refers to the lack of access described earlier.",
@@ -2130,7 +2131,7 @@ export const textosLongos = {
         "This section presents examples to support the main claim."
       ],
       "correta": "The survey mentioned in the text involved 500 students.",
-      "comentario": "O item correto é o que melhor exemplifica informações explícitas em texto longo.",
+      "comentario": "O item correto e o que melhor exemplifica informacoes explicitas em texto longo.",
       "tempoEstimado": 50,
       "tags": [
         "textos-longos",
@@ -2154,22 +2155,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Informações explícitas em texto longo",
+      "subtopico": "Informacoes explicitas em texto longo",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao encontrar o exemplo \"The survey mentioned in the text involved 500 students.\", a leitura mais adequada é:",
+      "enunciado": "Ao encontrar o exemplo \"The survey mentioned in the text involved 500 students.\", a leitura mais adequada e:",
       "opcoes": [
         "a resposta pode ser localizada diretamente em um trecho do texto",
-        "a expressão retoma uma ideia anterior e mantém a coesão do texto",
-        "o texto não apenas informa, mas assume uma postura diante do tema",
-        "cada parte cumpre uma função clara na organização do texto"
+        "a expressao retoma uma ideia anterior e mantem a coesao do texto",
+        "o texto nao apenas informa, mas assume uma postura diante do tema",
+        "cada parte cumpre uma funcao clara na organizacao do texto"
       ],
       "correta": "a resposta pode ser localizada diretamente em um trecho do texto",
-      "comentario": "A leitura correta do exemplo revela o papel de informações explícitas em texto longo.",
+      "comentario": "A leitura correta do exemplo revela o papel de informacoes explicitas em texto longo.",
       "tempoEstimado": 55,
       "tags": [
         "textos-longos",
@@ -2193,22 +2194,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Informações explícitas em texto longo",
+      "subtopico": "Informacoes explicitas em texto longo",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estratégia ajuda mais a estudar informações explícitas em texto longo?",
+      "enunciado": "Qual estrategia ajuda mais a estudar informacoes explicitas em texto longo?",
       "opcoes": [
-        "usar palavra-chave da pergunta e rastrear o parágrafo relevante",
+        "usar palavra-chave da pergunta e rastrear o paragrafo relevante",
         "voltar ao trecho anterior e verificar o referente mais coerente",
-        "observar adjetivos avaliativos, modalização e efeito global do texto",
+        "observar adjetivos avaliativos, modalizacao e efeito global do texto",
         "perguntar o que aquela parte faz dentro do argumento geral"
       ],
-      "correta": "usar palavra-chave da pergunta e rastrear o parágrafo relevante",
-      "comentario": "A estratégia correta fortalece o domínio de informações explícitas em texto longo.",
+      "correta": "usar palavra-chave da pergunta e rastrear o paragrafo relevante",
+      "comentario": "A estrategia correta fortalece o dominio de informacoes explicitas em texto longo.",
       "tempoEstimado": 55,
       "tags": [
         "textos-longos",
@@ -2232,22 +2233,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Informações explícitas em texto longo",
+      "subtopico": "Informacoes explicitas em texto longo",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Informações explícitas em texto longo é mais cobrado quando:",
+      "enunciado": "Em uma prova, Informacoes explicitas em texto longo e mais cobrado quando:",
       "opcoes": [
-        "a questão cobra dado explícito em meio a texto extenso",
-        "o item pede a que ideia um pronome ou expressão se refere",
-        "a questão pede o tom ou a postura do autor",
-        "o item cobra função ou síntese de uma seção específica"
+        "a questao cobra dado explicito em meio a texto extenso",
+        "o item pede a que ideia um pronome ou expressao se refere",
+        "a questao pede o tom ou a postura do autor",
+        "o item cobra funcao ou sintese de uma secao especifica"
       ],
-      "correta": "a questão cobra dado explícito em meio a texto extenso",
-      "comentario": "Esse é o tipo de demanda em que informações explícitas em texto longo aparece com mais frequência.",
+      "correta": "a questao cobra dado explicito em meio a texto extenso",
+      "comentario": "Esse e o tipo de demanda em que informacoes explicitas em texto longo aparece com mais frequencia.",
       "tempoEstimado": 60,
       "tags": [
         "textos-longos",
@@ -2271,22 +2272,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Informações explícitas em texto longo",
+      "subtopico": "Informacoes explicitas em texto longo",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual resumo sintetiza melhor a ideia de Informações explícitas em texto longo?",
+      "enunciado": "Qual resumo sintetiza melhor a ideia de Informacoes explicitas em texto longo?",
       "opcoes": [
-        "Em síntese, a localização de dados literais dentro de um texto mais extenso e com maior volume de informação.",
-        "Em síntese, a análise dos elementos que retomam ideias e mantêm a ligação entre frases e parágrafos.",
-        "Em síntese, a percepção do modo como o autor trata o tema ao longo do texto e da postura assumida.",
-        "Em síntese, a capacidade de resumir a função de partes específicas do texto dentro do argumento geral."
+        "Em sintese, a localizacao de dados literais dentro de um texto mais extenso e com maior volume de informacao.",
+        "Em sintese, a analise dos elementos que retomam ideias e mantem a ligacao entre frases e paragrafos.",
+        "Em sintese, a percepcao do modo como o autor trata o tema ao longo do texto e da postura assumida.",
+        "Em sintese, a capacidade de resumir a funcao de partes especificas do texto dentro do argumento geral."
       ],
-      "correta": "Em síntese, a localização de dados literais dentro de um texto mais extenso e com maior volume de informação.",
-      "comentario": "O resumo correto recupera o núcleo de informações explícitas em texto longo.",
+      "correta": "Em sintese, a localizacao de dados literais dentro de um texto mais extenso e com maior volume de informacao.",
+      "comentario": "O resumo correto recupera o nucleo de informacoes explicitas em texto longo.",
       "tempoEstimado": 60,
       "tags": [
         "textos-longos",
@@ -2310,22 +2311,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Informações explícitas em texto longo",
+      "subtopico": "Informacoes explicitas em texto longo",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associação entre exemplo e interpretação está correta em Informações explícitas em texto longo?",
+      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Informacoes explicitas em texto longo?",
       "opcoes": [
         "The survey mentioned in the text involved 500 students. -> a resposta pode ser localizada diretamente em um trecho do texto",
         "This issue refers to the lack of access described earlier. -> a resposta pode ser localizada diretamente em um trecho do texto",
-        "The author adopts a critical tone when discussing waste. -> cada parte cumpre uma função clara na organização do texto",
-        "This section presents examples to support the main claim. -> a expressão retoma uma ideia anterior e mantém a coesão do texto"
+        "The author adopts a critical tone when discussing waste. -> cada parte cumpre uma funcao clara na organizacao do texto",
+        "This section presents examples to support the main claim. -> a expressao retoma uma ideia anterior e mantem a coesao do texto"
       ],
       "correta": "The survey mentioned in the text involved 500 students. -> a resposta pode ser localizada diretamente em um trecho do texto",
-      "comentario": "A associação correta mantém coerência entre exemplo e interpretação em informações explícitas em texto longo.",
+      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em informacoes explicitas em texto longo.",
       "tempoEstimado": 65,
       "tags": [
         "textos-longos",
@@ -2349,22 +2350,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Informações explícitas em texto longo",
+      "subtopico": "Informacoes explicitas em texto longo",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao resolver uma atividade sobre informações explícitas em texto longo, o estudante deve principalmente:",
+      "enunciado": "Ao resolver uma atividade sobre informacoes explicitas em texto longo, o estudante deve principalmente:",
       "opcoes": [
-        "encontrar trechos específicos sem perder a visão do conjunto",
-        "usar palavra-chave da pergunta e rastrear o parágrafo relevante",
+        "encontrar trechos especificos sem perder a visao do conjunto",
+        "usar palavra-chave da pergunta e rastrear o paragrafo relevante",
         "retirar dados diretos de textos longos sem se perder na leitura",
-        "a questão cobra dado explícito em meio a texto extenso"
+        "a questao cobra dado explicito em meio a texto extenso"
       ],
-      "correta": "encontrar trechos específicos sem perder a visão do conjunto",
-      "comentario": "O objetivo central de informações explícitas em texto longo é encontrar trechos específicos sem perder a visão do conjunto.",
+      "correta": "encontrar trechos especificos sem perder a visao do conjunto",
+      "comentario": "O objetivo central de informacoes explicitas em texto longo e encontrar trechos especificos sem perder a visao do conjunto.",
       "tempoEstimado": 70,
       "tags": [
         "textos-longos",
@@ -2388,22 +2389,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Referências e coesão",
+      "subtopico": "Referencias e coesao",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Inglês, Referências e coesão refere-se a:",
+      "enunciado": "Em Ingles, Referencias e coesao refere-se a:",
       "opcoes": [
-        "a análise dos elementos que retomam ideias e mantêm a ligação entre frases e parágrafos",
-        "a percepção do modo como o autor trata o tema ao longo do texto e da postura assumida",
-        "a capacidade de resumir a função de partes específicas do texto dentro do argumento geral",
-        "a análise de semelhanças e contrastes entre perspectivas presentes no texto longo"
+        "a analise dos elementos que retomam ideias e mantem a ligacao entre frases e paragrafos",
+        "a percepcao do modo como o autor trata o tema ao longo do texto e da postura assumida",
+        "a capacidade de resumir a funcao de partes especificas do texto dentro do argumento geral",
+        "a analise de semelhancas e contrastes entre perspectivas presentes no texto longo"
       ],
-      "correta": "a análise dos elementos que retomam ideias e mantêm a ligação entre frases e parágrafos",
-      "comentario": "Referências e coesão refere-se à análise dos elementos que retomam ideias e mantêm a ligação entre frases e parágrafos.",
+      "correta": "a analise dos elementos que retomam ideias e mantem a ligacao entre frases e paragrafos",
+      "comentario": "Referencias e coesao refere-se a analise dos elementos que retomam ideias e mantem a ligacao entre frases e paragrafos.",
       "tempoEstimado": 20,
       "tags": [
         "textos-longos",
@@ -2427,22 +2428,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Referências e coesão",
+      "subtopico": "Referencias e coesao",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: o texto usa this issue, these results e it para retomar ideias apresentadas antes. Esse caso está mais ligado a qual subtópico?",
+      "enunciado": "Observe a situacao: o texto usa this issue, these results e it para retomar ideias apresentadas antes. Esse caso esta mais ligado a qual subtopico?",
       "opcoes": [
-        "Referências e coesão",
+        "Referencias e coesao",
         "Tom e posicionamento do autor",
-        "Síntese por seção",
-        "Comparação de pontos de vista"
+        "Sintese por secao",
+        "Comparacao de pontos de vista"
       ],
-      "correta": "Referências e coesão",
-      "comentario": "A situação apresentada é melhor compreendida por meio de referências e coesão.",
+      "correta": "Referencias e coesao",
+      "comentario": "A situacao apresentada e melhor compreendida por meio de referencias e coesao.",
       "tempoEstimado": 20,
       "tags": [
         "textos-longos",
@@ -2466,14 +2467,14 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Referências e coesão",
+      "subtopico": "Referencias e coesao",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual exemplo combina melhor com referências e coesão?",
+      "enunciado": "Qual exemplo combina melhor com referencias e coesao?",
       "opcoes": [
         "This issue refers to the lack of access described earlier.",
         "The author adopts a critical tone when discussing waste.",
@@ -2481,7 +2482,7 @@ export const textosLongos = {
         "Experts support regulation, while companies defend flexibility."
       ],
       "correta": "This issue refers to the lack of access described earlier.",
-      "comentario": "O exemplo correto ilustra o uso de referências e coesão.",
+      "comentario": "O exemplo correto ilustra o uso de referencias e coesao.",
       "tempoEstimado": 25,
       "tags": [
         "textos-longos",
@@ -2505,22 +2506,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Referências e coesão",
+      "subtopico": "Referencias e coesao",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO representa corretamente referências e coesão?",
+      "enunciado": "Qual alternativa NAO representa corretamente referencias e coesao?",
       "opcoes": [
         "The author adopts a critical tone when discussing waste.",
         "This issue refers to the lack of access described earlier.",
         "voltar ao trecho anterior e verificar o referente mais coerente.",
-        "resolver itens sobre pronomes, expressões referenciais e coesão textual."
+        "resolver itens sobre pronomes, expressoes referenciais e coesao textual."
       ],
       "correta": "The author adopts a critical tone when discussing waste.",
-      "comentario": "A opção incompatível ilustra outro subtópico, e não referências e coesão.",
+      "comentario": "A opcao incompativel ilustra outro subtopico, e nao referencias e coesao.",
       "tempoEstimado": 25,
       "tags": [
         "textos-longos",
@@ -2544,22 +2545,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Referências e coesão",
+      "subtopico": "Referencias e coesao",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar referências e coesão, o foco principal é:",
+      "enunciado": "Ao estudar referencias e coesao, o foco principal e:",
       "opcoes": [
         "acompanhar mecanismos de retomada em textos longos",
-        "reconhecer se o texto adota tom crítico, reflexivo, otimista ou de alerta",
-        "entender o papel de cada bloco argumentativo na construção do sentido",
-        "comparar vozes, opiniões e argumentos em textos complexos"
+        "reconhecer se o texto adota tom critico, reflexivo, otimista ou de alerta",
+        "entender o papel de cada bloco argumentativo na construcao do sentido",
+        "comparar vozes, opinioes e argumentos em textos complexos"
       ],
       "correta": "acompanhar mecanismos de retomada em textos longos",
-      "comentario": "Referências e coesão concentra-se em acompanhar mecanismos de retomada em textos longos.",
+      "comentario": "Referencias e coesao concentra-se em acompanhar mecanismos de retomada em textos longos.",
       "tempoEstimado": 30,
       "tags": [
         "textos-longos",
@@ -2583,22 +2584,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Referências e coesão",
+      "subtopico": "Referencias e coesao",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Tom e posicionamento do autor trata de a percepção do modo como o autor trata o tema ao longo do texto e da postura assumida, Referências e coesão destaca:",
+      "enunciado": "Enquanto Tom e posicionamento do autor trata de a percepcao do modo como o autor trata o tema ao longo do texto e da postura assumida, Referencias e coesao destaca:",
       "opcoes": [
-        "A análise dos elementos que retomam ideias e mantêm a ligação entre frases e parágrafos.",
-        "A percepção do modo como o autor trata o tema ao longo do texto e da postura assumida.",
-        "A capacidade de resumir a função de partes específicas do texto dentro do argumento geral.",
-        "A análise de semelhanças e contrastes entre perspectivas presentes no texto longo."
+        "A analise dos elementos que retomam ideias e mantem a ligacao entre frases e paragrafos.",
+        "A percepcao do modo como o autor trata o tema ao longo do texto e da postura assumida.",
+        "A capacidade de resumir a funcao de partes especificas do texto dentro do argumento geral.",
+        "A analise de semelhancas e contrastes entre perspectivas presentes no texto longo."
       ],
-      "correta": "A análise dos elementos que retomam ideias e mantêm a ligação entre frases e parágrafos.",
-      "comentario": "A comparação correta mostra a especificidade de referências e coesão.",
+      "correta": "A analise dos elementos que retomam ideias e mantem a ligacao entre frases e paragrafos.",
+      "comentario": "A comparacao correta mostra a especificidade de referencias e coesao.",
       "tempoEstimado": 30,
       "tags": [
         "textos-longos",
@@ -2622,22 +2623,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Referências e coesão",
+      "subtopico": "Referencias e coesao",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
       "enunciado": "Em uma atividade de sala, o texto usa this issue, these results e it para retomar ideias apresentadas antes. Para responder bem, o estudante deve mobilizar principalmente:",
       "opcoes": [
-        "Referências e coesão",
+        "Referencias e coesao",
         "Tom e posicionamento do autor",
-        "Comparação de pontos de vista",
-        "Textos jornalísticos e acadêmicos"
+        "Comparacao de pontos de vista",
+        "Textos jornalisticos e academicos"
       ],
-      "correta": "Referências e coesão",
-      "comentario": "Esse tipo de tarefa exige domínio de referências e coesão.",
+      "correta": "Referencias e coesao",
+      "comentario": "Esse tipo de tarefa exige dominio de referencias e coesao.",
       "tempoEstimado": 35,
       "tags": [
         "textos-longos",
@@ -2661,22 +2662,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Referências e coesão",
+      "subtopico": "Referencias e coesao",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação prática depende mais diretamente de Referências e coesão?",
+      "enunciado": "Qual situacao pratica depende mais diretamente de Referencias e coesao?",
       "opcoes": [
-        "resolver itens sobre pronomes, expressões referenciais e coesão textual",
+        "resolver itens sobre pronomes, expressoes referenciais e coesao textual",
         "interpretar o posicionamento autoral em textos mais densos",
-        "resumir trechos sem perder sua função no conjunto do texto",
-        "interpretar artigos, reportagens analíticas e textos de divulgação"
+        "resumir trechos sem perder sua funcao no conjunto do texto",
+        "interpretar artigos, reportagens analiticas e textos de divulgacao"
       ],
-      "correta": "resolver itens sobre pronomes, expressões referenciais e coesão textual",
-      "comentario": "Referências e coesão aparece de forma direta em resolver itens sobre pronomes, expressões referenciais e coesão textual.",
+      "correta": "resolver itens sobre pronomes, expressoes referenciais e coesao textual",
+      "comentario": "Referencias e coesao aparece de forma direta em resolver itens sobre pronomes, expressoes referenciais e coesao textual.",
       "tempoEstimado": 35,
       "tags": [
         "textos-longos",
@@ -2700,22 +2701,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Referências e coesão",
+      "subtopico": "Referencias e coesao",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre referências e coesão?",
+      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre referencias e coesao?",
       "opcoes": [
-        "o caso é resolvido com foco em referências e coesão.",
-        "o caso é melhor resolvido por tom e posicionamento do autor.",
-        "o caso elimina a necessidade de síntese por seção.",
-        "o caso impede qualquer uso de comparação de pontos de vista."
+        "o caso e resolvido com foco em referencias e coesao.",
+        "o caso e melhor resolvido por tom e posicionamento do autor.",
+        "o caso elimina a necessidade de sintese por secao.",
+        "o caso impede qualquer uso de comparacao de pontos de vista."
       ],
-      "correta": "o caso é resolvido com foco em referências e coesão.",
-      "comentario": "A conclusão correta retoma a função central de referências e coesão.",
+      "correta": "o caso e resolvido com foco em referencias e coesao.",
+      "comentario": "A conclusao correta retoma a funcao central de referencias e coesao.",
       "tempoEstimado": 40,
       "tags": [
         "textos-longos",
@@ -2739,22 +2740,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Referências e coesão",
+      "subtopico": "Referencias e coesao",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Se a turma fosse revisar referências e coesão, qual pergunta de estudo seria a mais adequada?",
+      "enunciado": "Se a turma fosse revisar referencias e coesao, qual pergunta de estudo seria a mais adequada?",
       "opcoes": [
-        "Como referências e coesão aparece em resolver itens sobre pronomes, expressões referenciais e coesão textual?",
-        "Como tom e posicionamento do autor substitui totalmente resolver itens sobre pronomes, expressões referenciais e coesão textual?",
-        "Por que síntese por seção torna desnecessário estudar Referências e coesão?",
-        "De que modo comparação de pontos de vista elimina toda leitura de contexto?"
+        "Como referencias e coesao aparece em resolver itens sobre pronomes, expressoes referenciais e coesao textual?",
+        "Como tom e posicionamento do autor substitui totalmente resolver itens sobre pronomes, expressoes referenciais e coesao textual?",
+        "Por que sintese por secao torna desnecessario estudar Referencias e coesao?",
+        "De que modo comparacao de pontos de vista elimina toda leitura de contexto?"
       ],
-      "correta": "Como referências e coesão aparece em resolver itens sobre pronomes, expressões referenciais e coesão textual?",
-      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de referências e coesão.",
+      "correta": "Como referencias e coesao aparece em resolver itens sobre pronomes, expressoes referenciais e coesao textual?",
+      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de referencias e coesao.",
       "tempoEstimado": 40,
       "tags": [
         "textos-longos",
@@ -2778,22 +2779,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Referências e coesão",
+      "subtopico": "Referencias e coesao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em referências e coesão é pensar que:",
+      "enunciado": "Um erro comum em referencias e coesao e pensar que:",
       "opcoes": [
-        "expressões referenciais sempre retomam a frase imediatamente anterior",
-        "o tom do autor muda a cada frase e não pode ser percebido no conjunto",
-        "sintetizar seção é traduzir todas as frases com menos palavras",
-        "comparar viewpoints é escolher um lado e ignorar o outro"
+        "expressoes referenciais sempre retomam a frase imediatamente anterior",
+        "o tom do autor muda a cada frase e nao pode ser percebido no conjunto",
+        "sintetizar secao e traduzir todas as frases com menos palavras",
+        "comparar viewpoints e escolher um lado e ignorar o outro"
       ],
-      "correta": "expressões referenciais sempre retomam a frase imediatamente anterior",
-      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de referências e coesão.",
+      "correta": "expressoes referenciais sempre retomam a frase imediatamente anterior",
+      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de referencias e coesao.",
       "tempoEstimado": 45,
       "tags": [
         "textos-longos",
@@ -2817,22 +2818,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Referências e coesão",
+      "subtopico": "Referencias e coesao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"qualquer pronome em texto longo aponta para o substantivo mais próximo\". A avaliação mais adequada é:",
+      "enunciado": "Um estudante afirma: \"qualquer pronome em texto longo aponta para o substantivo mais proximo\". A avaliacao mais adequada e:",
       "opcoes": [
-        "A afirmação está incorreta, porque a análise dos elementos que retomam ideias e mantêm a ligação entre frases e parágrafos.",
-        "A afirmação está correta, pois resume integralmente referências e coesão.",
-        "A afirmação está correta, porque basta decorar a tradução do exemplo.",
-        "A afirmação está incorreta apenas por não citar uma regra gramatical."
+        "A afirmacao esta incorreta, porque a analise dos elementos que retomam ideias e mantem a ligacao entre frases e paragrafos.",
+        "A afirmacao esta correta, pois resume integralmente referencias e coesao.",
+        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
+        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
       ],
-      "correta": "A afirmação está incorreta, porque a análise dos elementos que retomam ideias e mantêm a ligação entre frases e parágrafos.",
-      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre referências e coesão.",
+      "correta": "A afirmacao esta incorreta, porque a analise dos elementos que retomam ideias e mantem a ligacao entre frases e paragrafos.",
+      "comentario": "A fala do estudante apresenta um equivoco conceitual sobre referencias e coesao.",
       "tempoEstimado": 45,
       "tags": [
         "textos-longos",
@@ -2856,22 +2857,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Referências e coesão",
+      "subtopico": "Referencias e coesao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se referências e coesão fosse ignorado(a) em resolver itens sobre pronomes, expressões referenciais e coesão textual, o resultado mais provável seria:",
+      "enunciado": "Se referencias e coesao fosse ignorado(a) em resolver itens sobre pronomes, expressoes referenciais e coesao textual, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretação ficaria incompleta e aumentaria a chance de erro em resolver itens sobre pronomes, expressões referenciais e coesão textual.",
-        "a questão seria resolvida automaticamente por tom e posicionamento do autor.",
-        "nenhuma interpretação seria alterada, porque Referências e coesão não interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
+        "a interpretacao ficaria incompleta e aumentaria a chance de erro em resolver itens sobre pronomes, expressoes referenciais e coesao textual.",
+        "a questao seria resolvida automaticamente por tom e posicionamento do autor.",
+        "nenhuma interpretacao seria alterada, porque Referencias e coesao nao interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
       ],
-      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em resolver itens sobre pronomes, expressões referenciais e coesão textual.",
-      "comentario": "Ignorar referências e coesão compromete a resolução correta da atividade.",
+      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em resolver itens sobre pronomes, expressoes referenciais e coesao textual.",
+      "comentario": "Ignorar referencias e coesao compromete a resolucao correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "textos-longos",
@@ -2895,14 +2896,14 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Referências e coesão",
+      "subtopico": "Referencias e coesao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou ação ilustra melhor Referências e coesão?",
+      "enunciado": "Qual trecho ou acao ilustra melhor Referencias e coesao?",
       "opcoes": [
         "This issue refers to the lack of access described earlier.",
         "The author adopts a critical tone when discussing waste.",
@@ -2910,7 +2911,7 @@ export const textosLongos = {
         "Experts support regulation, while companies defend flexibility."
       ],
       "correta": "This issue refers to the lack of access described earlier.",
-      "comentario": "O item correto é o que melhor exemplifica referências e coesão.",
+      "comentario": "O item correto e o que melhor exemplifica referencias e coesao.",
       "tempoEstimado": 50,
       "tags": [
         "textos-longos",
@@ -2934,22 +2935,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Referências e coesão",
+      "subtopico": "Referencias e coesao",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao encontrar o exemplo \"This issue refers to the lack of access described earlier.\", a leitura mais adequada é:",
+      "enunciado": "Ao encontrar o exemplo \"This issue refers to the lack of access described earlier.\", a leitura mais adequada e:",
       "opcoes": [
-        "a expressão retoma uma ideia anterior e mantém a coesão do texto",
-        "o texto não apenas informa, mas assume uma postura diante do tema",
-        "cada parte cumpre uma função clara na organização do texto",
+        "a expressao retoma uma ideia anterior e mantem a coesao do texto",
+        "o texto nao apenas informa, mas assume uma postura diante do tema",
+        "cada parte cumpre uma funcao clara na organizacao do texto",
         "o texto apresenta pontos de vista distintos sobre o tema"
       ],
-      "correta": "a expressão retoma uma ideia anterior e mantém a coesão do texto",
-      "comentario": "A leitura correta do exemplo revela o papel de referências e coesão.",
+      "correta": "a expressao retoma uma ideia anterior e mantem a coesao do texto",
+      "comentario": "A leitura correta do exemplo revela o papel de referencias e coesao.",
       "tempoEstimado": 55,
       "tags": [
         "textos-longos",
@@ -2973,22 +2974,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Referências e coesão",
+      "subtopico": "Referencias e coesao",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estratégia ajuda mais a estudar referências e coesão?",
+      "enunciado": "Qual estrategia ajuda mais a estudar referencias e coesao?",
       "opcoes": [
         "voltar ao trecho anterior e verificar o referente mais coerente",
-        "observar adjetivos avaliativos, modalização e efeito global do texto",
+        "observar adjetivos avaliativos, modalizacao e efeito global do texto",
         "perguntar o que aquela parte faz dentro do argumento geral",
-        "mapear quem defende o quê e em que o contraste aparece"
+        "mapear quem defende o que e em que o contraste aparece"
       ],
       "correta": "voltar ao trecho anterior e verificar o referente mais coerente",
-      "comentario": "A estratégia correta fortalece o domínio de referências e coesão.",
+      "comentario": "A estrategia correta fortalece o dominio de referencias e coesao.",
       "tempoEstimado": 55,
       "tags": [
         "textos-longos",
@@ -3012,22 +3013,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Referências e coesão",
+      "subtopico": "Referencias e coesao",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Referências e coesão é mais cobrado quando:",
+      "enunciado": "Em uma prova, Referencias e coesao e mais cobrado quando:",
       "opcoes": [
-        "o item pede a que ideia um pronome ou expressão se refere",
-        "a questão pede o tom ou a postura do autor",
-        "o item cobra função ou síntese de uma seção específica",
-        "a questão pede confronto entre perspectivas ou argumentos"
+        "o item pede a que ideia um pronome ou expressao se refere",
+        "a questao pede o tom ou a postura do autor",
+        "o item cobra funcao ou sintese de uma secao especifica",
+        "a questao pede confronto entre perspectivas ou argumentos"
       ],
-      "correta": "o item pede a que ideia um pronome ou expressão se refere",
-      "comentario": "Esse é o tipo de demanda em que referências e coesão aparece com mais frequência.",
+      "correta": "o item pede a que ideia um pronome ou expressao se refere",
+      "comentario": "Esse e o tipo de demanda em que referencias e coesao aparece com mais frequencia.",
       "tempoEstimado": 60,
       "tags": [
         "textos-longos",
@@ -3051,22 +3052,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Referências e coesão",
+      "subtopico": "Referencias e coesao",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual resumo sintetiza melhor a ideia de Referências e coesão?",
+      "enunciado": "Qual resumo sintetiza melhor a ideia de Referencias e coesao?",
       "opcoes": [
-        "Em síntese, a análise dos elementos que retomam ideias e mantêm a ligação entre frases e parágrafos.",
-        "Em síntese, a percepção do modo como o autor trata o tema ao longo do texto e da postura assumida.",
-        "Em síntese, a capacidade de resumir a função de partes específicas do texto dentro do argumento geral.",
-        "Em síntese, a análise de semelhanças e contrastes entre perspectivas presentes no texto longo."
+        "Em sintese, a analise dos elementos que retomam ideias e mantem a ligacao entre frases e paragrafos.",
+        "Em sintese, a percepcao do modo como o autor trata o tema ao longo do texto e da postura assumida.",
+        "Em sintese, a capacidade de resumir a funcao de partes especificas do texto dentro do argumento geral.",
+        "Em sintese, a analise de semelhancas e contrastes entre perspectivas presentes no texto longo."
       ],
-      "correta": "Em síntese, a análise dos elementos que retomam ideias e mantêm a ligação entre frases e parágrafos.",
-      "comentario": "O resumo correto recupera o núcleo de referências e coesão.",
+      "correta": "Em sintese, a analise dos elementos que retomam ideias e mantem a ligacao entre frases e paragrafos.",
+      "comentario": "O resumo correto recupera o nucleo de referencias e coesao.",
       "tempoEstimado": 60,
       "tags": [
         "textos-longos",
@@ -3090,22 +3091,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Referências e coesão",
+      "subtopico": "Referencias e coesao",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associação entre exemplo e interpretação está correta em Referências e coesão?",
+      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Referencias e coesao?",
       "opcoes": [
-        "This issue refers to the lack of access described earlier. -> a expressão retoma uma ideia anterior e mantém a coesão do texto",
-        "The author adopts a critical tone when discussing waste. -> a expressão retoma uma ideia anterior e mantém a coesão do texto",
+        "This issue refers to the lack of access described earlier. -> a expressao retoma uma ideia anterior e mantem a coesao do texto",
+        "The author adopts a critical tone when discussing waste. -> a expressao retoma uma ideia anterior e mantem a coesao do texto",
         "This section presents examples to support the main claim. -> o texto apresenta pontos de vista distintos sobre o tema",
-        "Experts support regulation, while companies defend flexibility. -> o texto não apenas informa, mas assume uma postura diante do tema"
+        "Experts support regulation, while companies defend flexibility. -> o texto nao apenas informa, mas assume uma postura diante do tema"
       ],
-      "correta": "This issue refers to the lack of access described earlier. -> a expressão retoma uma ideia anterior e mantém a coesão do texto",
-      "comentario": "A associação correta mantém coerência entre exemplo e interpretação em referências e coesão.",
+      "correta": "This issue refers to the lack of access described earlier. -> a expressao retoma uma ideia anterior e mantem a coesao do texto",
+      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em referencias e coesao.",
       "tempoEstimado": 65,
       "tags": [
         "textos-longos",
@@ -3129,22 +3130,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Referências e coesão",
+      "subtopico": "Referencias e coesao",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao resolver uma atividade sobre referências e coesão, o estudante deve principalmente:",
+      "enunciado": "Ao resolver uma atividade sobre referencias e coesao, o estudante deve principalmente:",
       "opcoes": [
         "acompanhar mecanismos de retomada em textos longos",
         "voltar ao trecho anterior e verificar o referente mais coerente",
-        "resolver itens sobre pronomes, expressões referenciais e coesão textual",
-        "o item pede a que ideia um pronome ou expressão se refere"
+        "resolver itens sobre pronomes, expressoes referenciais e coesao textual",
+        "o item pede a que ideia um pronome ou expressao se refere"
       ],
       "correta": "acompanhar mecanismos de retomada em textos longos",
-      "comentario": "O objetivo central de referências e coesão é acompanhar mecanismos de retomada em textos longos.",
+      "comentario": "O objetivo central de referencias e coesao e acompanhar mecanismos de retomada em textos longos.",
       "tempoEstimado": 70,
       "tags": [
         "textos-longos",
@@ -3168,22 +3169,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Tom e posicionamento do autor",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Inglês, Tom e posicionamento do autor refere-se a:",
+      "enunciado": "Em Ingles, Tom e posicionamento do autor refere-se a:",
       "opcoes": [
-        "a percepção do modo como o autor trata o tema ao longo do texto e da postura assumida",
-        "a capacidade de resumir a função de partes específicas do texto dentro do argumento geral",
-        "a análise de semelhanças e contrastes entre perspectivas presentes no texto longo",
-        "o reconhecimento de características de textos informativos, analíticos e expositivos mais formais"
+        "a percepcao do modo como o autor trata o tema ao longo do texto e da postura assumida",
+        "a capacidade de resumir a funcao de partes especificas do texto dentro do argumento geral",
+        "a analise de semelhancas e contrastes entre perspectivas presentes no texto longo",
+        "o reconhecimento de caracteristicas de textos informativos, analiticos e expositivos mais formais"
       ],
-      "correta": "a percepção do modo como o autor trata o tema ao longo do texto e da postura assumida",
-      "comentario": "Tom e posicionamento do autor refere-se à percepção do modo como o autor trata o tema ao longo do texto e da postura assumida.",
+      "correta": "a percepcao do modo como o autor trata o tema ao longo do texto e da postura assumida",
+      "comentario": "Tom e posicionamento do autor refere-se a percepcao do modo como o autor trata o tema ao longo do texto e da postura assumida.",
       "tempoEstimado": 20,
       "tags": [
         "textos-longos",
@@ -3207,22 +3208,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Tom e posicionamento do autor",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: um artigo combina dados e comentários para criticar padrões de consumo exagerado. Esse caso está mais ligado a qual subtópico?",
+      "enunciado": "Observe a situacao: um artigo combina dados e comentarios para criticar padroes de consumo exagerado. Esse caso esta mais ligado a qual subtopico?",
       "opcoes": [
         "Tom e posicionamento do autor",
-        "Síntese por seção",
-        "Comparação de pontos de vista",
-        "Textos jornalísticos e acadêmicos"
+        "Sintese por secao",
+        "Comparacao de pontos de vista",
+        "Textos jornalisticos e academicos"
       ],
       "correta": "Tom e posicionamento do autor",
-      "comentario": "A situação apresentada é melhor compreendida por meio de tom e posicionamento do autor.",
+      "comentario": "A situacao apresentada e melhor compreendida por meio de tom e posicionamento do autor.",
       "tempoEstimado": 20,
       "tags": [
         "textos-longos",
@@ -3246,7 +3247,7 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Tom e posicionamento do autor",
       "dificuldadeLabel": "facil",
@@ -3285,22 +3286,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Tom e posicionamento do autor",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO representa corretamente tom e posicionamento do autor?",
+      "enunciado": "Qual alternativa NAO representa corretamente tom e posicionamento do autor?",
       "opcoes": [
         "This section presents examples to support the main claim.",
         "The author adopts a critical tone when discussing waste.",
-        "observar adjetivos avaliativos, modalização e efeito global do texto.",
+        "observar adjetivos avaliativos, modalizacao e efeito global do texto.",
         "interpretar o posicionamento autoral em textos mais densos."
       ],
       "correta": "This section presents examples to support the main claim.",
-      "comentario": "A opção incompatível ilustra outro subtópico, e não tom e posicionamento do autor.",
+      "comentario": "A opcao incompativel ilustra outro subtopico, e nao tom e posicionamento do autor.",
       "tempoEstimado": 25,
       "tags": [
         "textos-longos",
@@ -3324,22 +3325,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Tom e posicionamento do autor",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar tom e posicionamento do autor, o foco principal é:",
+      "enunciado": "Ao estudar tom e posicionamento do autor, o foco principal e:",
       "opcoes": [
-        "reconhecer se o texto adota tom crítico, reflexivo, otimista ou de alerta",
-        "entender o papel de cada bloco argumentativo na construção do sentido",
-        "comparar vozes, opiniões e argumentos em textos complexos",
-        "identificar marcas de linguagem de gêneros mais densos"
+        "reconhecer se o texto adota tom critico, reflexivo, otimista ou de alerta",
+        "entender o papel de cada bloco argumentativo na construcao do sentido",
+        "comparar vozes, opinioes e argumentos em textos complexos",
+        "identificar marcas de linguagem de generos mais densos"
       ],
-      "correta": "reconhecer se o texto adota tom crítico, reflexivo, otimista ou de alerta",
-      "comentario": "Tom e posicionamento do autor concentra-se em reconhecer se o texto adota tom crítico, reflexivo, otimista ou de alerta.",
+      "correta": "reconhecer se o texto adota tom critico, reflexivo, otimista ou de alerta",
+      "comentario": "Tom e posicionamento do autor concentra-se em reconhecer se o texto adota tom critico, reflexivo, otimista ou de alerta.",
       "tempoEstimado": 30,
       "tags": [
         "textos-longos",
@@ -3363,22 +3364,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Tom e posicionamento do autor",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Síntese por seção trata de a capacidade de resumir a função de partes específicas do texto dentro do argumento geral, Tom e posicionamento do autor destaca:",
+      "enunciado": "Enquanto Sintese por secao trata de a capacidade de resumir a funcao de partes especificas do texto dentro do argumento geral, Tom e posicionamento do autor destaca:",
       "opcoes": [
-        "A percepção do modo como o autor trata o tema ao longo do texto e da postura assumida.",
-        "A capacidade de resumir a função de partes específicas do texto dentro do argumento geral.",
-        "A análise de semelhanças e contrastes entre perspectivas presentes no texto longo.",
-        "O reconhecimento de características de textos informativos, analíticos e expositivos mais formais."
+        "A percepcao do modo como o autor trata o tema ao longo do texto e da postura assumida.",
+        "A capacidade de resumir a funcao de partes especificas do texto dentro do argumento geral.",
+        "A analise de semelhancas e contrastes entre perspectivas presentes no texto longo.",
+        "O reconhecimento de caracteristicas de textos informativos, analiticos e expositivos mais formais."
       ],
-      "correta": "A percepção do modo como o autor trata o tema ao longo do texto e da postura assumida.",
-      "comentario": "A comparação correta mostra a especificidade de tom e posicionamento do autor.",
+      "correta": "A percepcao do modo como o autor trata o tema ao longo do texto e da postura assumida.",
+      "comentario": "A comparacao correta mostra a especificidade de tom e posicionamento do autor.",
       "tempoEstimado": 30,
       "tags": [
         "textos-longos",
@@ -3402,22 +3403,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Tom e posicionamento do autor",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma atividade de sala, um artigo combina dados e comentários para criticar padrões de consumo exagerado. Para responder bem, o estudante deve mobilizar principalmente:",
+      "enunciado": "Em uma atividade de sala, um artigo combina dados e comentarios para criticar padroes de consumo exagerado. Para responder bem, o estudante deve mobilizar principalmente:",
       "opcoes": [
         "Tom e posicionamento do autor",
-        "Síntese por seção",
-        "Textos jornalísticos e acadêmicos",
+        "Sintese por secao",
+        "Textos jornalisticos e academicos",
         "Trechos narrativos e descritivos"
       ],
       "correta": "Tom e posicionamento do autor",
-      "comentario": "Esse tipo de tarefa exige domínio de tom e posicionamento do autor.",
+      "comentario": "Esse tipo de tarefa exige dominio de tom e posicionamento do autor.",
       "tempoEstimado": 35,
       "tags": [
         "textos-longos",
@@ -3441,19 +3442,19 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Tom e posicionamento do autor",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação prática depende mais diretamente de Tom e posicionamento do autor?",
+      "enunciado": "Qual situacao pratica depende mais diretamente de Tom e posicionamento do autor?",
       "opcoes": [
         "interpretar o posicionamento autoral em textos mais densos",
-        "resumir trechos sem perder sua função no conjunto do texto",
-        "resolver itens com contraste de posições em textos extensos",
-        "interpretar cenas, sequências e caracterizações em textos longos"
+        "resumir trechos sem perder sua funcao no conjunto do texto",
+        "resolver itens com contraste de posicoes em textos extensos",
+        "interpretar cenas, sequencias e caracterizacoes em textos longos"
       ],
       "correta": "interpretar o posicionamento autoral em textos mais densos",
       "comentario": "Tom e posicionamento do autor aparece de forma direta em interpretar o posicionamento autoral em textos mais densos.",
@@ -3480,22 +3481,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Tom e posicionamento do autor",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre tom e posicionamento do autor?",
+      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre tom e posicionamento do autor?",
       "opcoes": [
-        "o caso é resolvido com foco em tom e posicionamento do autor.",
-        "o caso é melhor resolvido por síntese por seção.",
-        "o caso elimina a necessidade de comparação de pontos de vista.",
-        "o caso impede qualquer uso de textos jornalísticos e acadêmicos."
+        "o caso e resolvido com foco em tom e posicionamento do autor.",
+        "o caso e melhor resolvido por sintese por secao.",
+        "o caso elimina a necessidade de comparacao de pontos de vista.",
+        "o caso impede qualquer uso de textos jornalisticos e academicos."
       ],
-      "correta": "o caso é resolvido com foco em tom e posicionamento do autor.",
-      "comentario": "A conclusão correta retoma a função central de tom e posicionamento do autor.",
+      "correta": "o caso e resolvido com foco em tom e posicionamento do autor.",
+      "comentario": "A conclusao correta retoma a funcao central de tom e posicionamento do autor.",
       "tempoEstimado": 40,
       "tags": [
         "textos-longos",
@@ -3519,7 +3520,7 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Tom e posicionamento do autor",
       "dificuldadeLabel": "facil",
@@ -3529,9 +3530,9 @@ export const textosLongos = {
       "enunciado": "Se a turma fosse revisar tom e posicionamento do autor, qual pergunta de estudo seria a mais adequada?",
       "opcoes": [
         "Como tom e posicionamento do autor aparece em interpretar o posicionamento autoral em textos mais densos?",
-        "Como síntese por seção substitui totalmente interpretar o posicionamento autoral em textos mais densos?",
-        "Por que comparação de pontos de vista torna desnecessário estudar Tom e posicionamento do autor?",
-        "De que modo textos jornalísticos e acadêmicos elimina toda leitura de contexto?"
+        "Como sintese por secao substitui totalmente interpretar o posicionamento autoral em textos mais densos?",
+        "Por que comparacao de pontos de vista torna desnecessario estudar Tom e posicionamento do autor?",
+        "De que modo textos jornalisticos e academicos elimina toda leitura de contexto?"
       ],
       "correta": "Como tom e posicionamento do autor aparece em interpretar o posicionamento autoral em textos mais densos?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de tom e posicionamento do autor.",
@@ -3558,22 +3559,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Tom e posicionamento do autor",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em tom e posicionamento do autor é pensar que:",
+      "enunciado": "Um erro comum em tom e posicionamento do autor e pensar que:",
       "opcoes": [
-        "o tom do autor muda a cada frase e não pode ser percebido no conjunto",
-        "sintetizar seção é traduzir todas as frases com menos palavras",
-        "comparar viewpoints é escolher um lado e ignorar o outro",
-        "todo texto jornalístico e acadêmico é neutro e sem posicionamento"
+        "o tom do autor muda a cada frase e nao pode ser percebido no conjunto",
+        "sintetizar secao e traduzir todas as frases com menos palavras",
+        "comparar viewpoints e escolher um lado e ignorar o outro",
+        "todo texto jornalistico e academico e neutro e sem posicionamento"
       ],
-      "correta": "o tom do autor muda a cada frase e não pode ser percebido no conjunto",
-      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de tom e posicionamento do autor.",
+      "correta": "o tom do autor muda a cada frase e nao pode ser percebido no conjunto",
+      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de tom e posicionamento do autor.",
       "tempoEstimado": 45,
       "tags": [
         "textos-longos",
@@ -3597,22 +3598,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Tom e posicionamento do autor",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"não é possível identificar posicionamento em texto informativo\". A avaliação mais adequada é:",
+      "enunciado": "Um estudante afirma: \"nao e possivel identificar posicionamento em texto informativo\". A avaliacao mais adequada e:",
       "opcoes": [
-        "A afirmação está incorreta, porque a percepção do modo como o autor trata o tema ao longo do texto e da postura assumida.",
-        "A afirmação está correta, pois resume integralmente tom e posicionamento do autor.",
-        "A afirmação está correta, porque basta decorar a tradução do exemplo.",
-        "A afirmação está incorreta apenas por não citar uma regra gramatical."
+        "A afirmacao esta incorreta, porque a percepcao do modo como o autor trata o tema ao longo do texto e da postura assumida.",
+        "A afirmacao esta correta, pois resume integralmente tom e posicionamento do autor.",
+        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
+        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
       ],
-      "correta": "A afirmação está incorreta, porque a percepção do modo como o autor trata o tema ao longo do texto e da postura assumida.",
-      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre tom e posicionamento do autor.",
+      "correta": "A afirmacao esta incorreta, porque a percepcao do modo como o autor trata o tema ao longo do texto e da postura assumida.",
+      "comentario": "A fala do estudante apresenta um equivoco conceitual sobre tom e posicionamento do autor.",
       "tempoEstimado": 45,
       "tags": [
         "textos-longos",
@@ -3636,22 +3637,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Tom e posicionamento do autor",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se tom e posicionamento do autor fosse ignorado(a) em interpretar o posicionamento autoral em textos mais densos, o resultado mais provável seria:",
+      "enunciado": "Se tom e posicionamento do autor fosse ignorado(a) em interpretar o posicionamento autoral em textos mais densos, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretação ficaria incompleta e aumentaria a chance de erro em interpretar o posicionamento autoral em textos mais densos.",
-        "a questão seria resolvida automaticamente por síntese por seção.",
-        "nenhuma interpretação seria alterada, porque Tom e posicionamento do autor não interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
+        "a interpretacao ficaria incompleta e aumentaria a chance de erro em interpretar o posicionamento autoral em textos mais densos.",
+        "a questao seria resolvida automaticamente por sintese por secao.",
+        "nenhuma interpretacao seria alterada, porque Tom e posicionamento do autor nao interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
       ],
-      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em interpretar o posicionamento autoral em textos mais densos.",
-      "comentario": "Ignorar tom e posicionamento do autor compromete a resolução correta da atividade.",
+      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em interpretar o posicionamento autoral em textos mais densos.",
+      "comentario": "Ignorar tom e posicionamento do autor compromete a resolucao correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "textos-longos",
@@ -3675,14 +3676,14 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Tom e posicionamento do autor",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou ação ilustra melhor Tom e posicionamento do autor?",
+      "enunciado": "Qual trecho ou acao ilustra melhor Tom e posicionamento do autor?",
       "opcoes": [
         "The author adopts a critical tone when discussing waste.",
         "This section presents examples to support the main claim.",
@@ -3690,7 +3691,7 @@ export const textosLongos = {
         "The article reports findings from a recent university study."
       ],
       "correta": "The author adopts a critical tone when discussing waste.",
-      "comentario": "O item correto é o que melhor exemplifica tom e posicionamento do autor.",
+      "comentario": "O item correto e o que melhor exemplifica tom e posicionamento do autor.",
       "tempoEstimado": 50,
       "tags": [
         "textos-longos",
@@ -3714,21 +3715,21 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Tom e posicionamento do autor",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao encontrar o exemplo \"The author adopts a critical tone when discussing waste.\", a leitura mais adequada é:",
+      "enunciado": "Ao encontrar o exemplo \"The author adopts a critical tone when discussing waste.\", a leitura mais adequada e:",
       "opcoes": [
-        "o texto não apenas informa, mas assume uma postura diante do tema",
-        "cada parte cumpre uma função clara na organização do texto",
+        "o texto nao apenas informa, mas assume uma postura diante do tema",
+        "cada parte cumpre uma funcao clara na organizacao do texto",
         "o texto apresenta pontos de vista distintos sobre o tema",
-        "o texto usa traços típicos de gêneros informativos e analíticos"
+        "o texto usa tracos tipicos de generos informativos e analiticos"
       ],
-      "correta": "o texto não apenas informa, mas assume uma postura diante do tema",
+      "correta": "o texto nao apenas informa, mas assume uma postura diante do tema",
       "comentario": "A leitura correta do exemplo revela o papel de tom e posicionamento do autor.",
       "tempoEstimado": 55,
       "tags": [
@@ -3753,22 +3754,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Tom e posicionamento do autor",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estratégia ajuda mais a estudar tom e posicionamento do autor?",
+      "enunciado": "Qual estrategia ajuda mais a estudar tom e posicionamento do autor?",
       "opcoes": [
-        "observar adjetivos avaliativos, modalização e efeito global do texto",
+        "observar adjetivos avaliativos, modalizacao e efeito global do texto",
         "perguntar o que aquela parte faz dentro do argumento geral",
-        "mapear quem defende o quê e em que o contraste aparece",
-        "observar formalidade, uso de dados e modo de exposição"
+        "mapear quem defende o que e em que o contraste aparece",
+        "observar formalidade, uso de dados e modo de exposicao"
       ],
-      "correta": "observar adjetivos avaliativos, modalização e efeito global do texto",
-      "comentario": "A estratégia correta fortalece o domínio de tom e posicionamento do autor.",
+      "correta": "observar adjetivos avaliativos, modalizacao e efeito global do texto",
+      "comentario": "A estrategia correta fortalece o dominio de tom e posicionamento do autor.",
       "tempoEstimado": 55,
       "tags": [
         "textos-longos",
@@ -3792,22 +3793,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Tom e posicionamento do autor",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Tom e posicionamento do autor é mais cobrado quando:",
+      "enunciado": "Em uma prova, Tom e posicionamento do autor e mais cobrado quando:",
       "opcoes": [
-        "a questão pede o tom ou a postura do autor",
-        "o item cobra função ou síntese de uma seção específica",
-        "a questão pede confronto entre perspectivas ou argumentos",
-        "o item cobra reconhecimento de gênero e sua função"
+        "a questao pede o tom ou a postura do autor",
+        "o item cobra funcao ou sintese de uma secao especifica",
+        "a questao pede confronto entre perspectivas ou argumentos",
+        "o item cobra reconhecimento de genero e sua funcao"
       ],
-      "correta": "a questão pede o tom ou a postura do autor",
-      "comentario": "Esse é o tipo de demanda em que tom e posicionamento do autor aparece com mais frequência.",
+      "correta": "a questao pede o tom ou a postura do autor",
+      "comentario": "Esse e o tipo de demanda em que tom e posicionamento do autor aparece com mais frequencia.",
       "tempoEstimado": 60,
       "tags": [
         "textos-longos",
@@ -3831,7 +3832,7 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Tom e posicionamento do autor",
       "dificuldadeLabel": "dificil",
@@ -3840,13 +3841,13 @@ export const textosLongos = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual resumo sintetiza melhor a ideia de Tom e posicionamento do autor?",
       "opcoes": [
-        "Em síntese, a percepção do modo como o autor trata o tema ao longo do texto e da postura assumida.",
-        "Em síntese, a capacidade de resumir a função de partes específicas do texto dentro do argumento geral.",
-        "Em síntese, a análise de semelhanças e contrastes entre perspectivas presentes no texto longo.",
-        "Em síntese, o reconhecimento de características de textos informativos, analíticos e expositivos mais formais."
+        "Em sintese, a percepcao do modo como o autor trata o tema ao longo do texto e da postura assumida.",
+        "Em sintese, a capacidade de resumir a funcao de partes especificas do texto dentro do argumento geral.",
+        "Em sintese, a analise de semelhancas e contrastes entre perspectivas presentes no texto longo.",
+        "Em sintese, o reconhecimento de caracteristicas de textos informativos, analiticos e expositivos mais formais."
       ],
-      "correta": "Em síntese, a percepção do modo como o autor trata o tema ao longo do texto e da postura assumida.",
-      "comentario": "O resumo correto recupera o núcleo de tom e posicionamento do autor.",
+      "correta": "Em sintese, a percepcao do modo como o autor trata o tema ao longo do texto e da postura assumida.",
+      "comentario": "O resumo correto recupera o nucleo de tom e posicionamento do autor.",
       "tempoEstimado": 60,
       "tags": [
         "textos-longos",
@@ -3870,22 +3871,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Tom e posicionamento do autor",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associação entre exemplo e interpretação está correta em Tom e posicionamento do autor?",
+      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Tom e posicionamento do autor?",
       "opcoes": [
-        "The author adopts a critical tone when discussing waste. -> o texto não apenas informa, mas assume uma postura diante do tema",
-        "This section presents examples to support the main claim. -> o texto não apenas informa, mas assume uma postura diante do tema",
-        "Experts support regulation, while companies defend flexibility. -> o texto usa traços típicos de gêneros informativos e analíticos",
-        "The article reports findings from a recent university study. -> cada parte cumpre uma função clara na organização do texto"
+        "The author adopts a critical tone when discussing waste. -> o texto nao apenas informa, mas assume uma postura diante do tema",
+        "This section presents examples to support the main claim. -> o texto nao apenas informa, mas assume uma postura diante do tema",
+        "Experts support regulation, while companies defend flexibility. -> o texto usa tracos tipicos de generos informativos e analiticos",
+        "The article reports findings from a recent university study. -> cada parte cumpre uma funcao clara na organizacao do texto"
       ],
-      "correta": "The author adopts a critical tone when discussing waste. -> o texto não apenas informa, mas assume uma postura diante do tema",
-      "comentario": "A associação correta mantém coerência entre exemplo e interpretação em tom e posicionamento do autor.",
+      "correta": "The author adopts a critical tone when discussing waste. -> o texto nao apenas informa, mas assume uma postura diante do tema",
+      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em tom e posicionamento do autor.",
       "tempoEstimado": 65,
       "tags": [
         "textos-longos",
@@ -3909,7 +3910,7 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Tom e posicionamento do autor",
       "dificuldadeLabel": "dificil",
@@ -3918,13 +3919,13 @@ export const textosLongos = {
       "tipo": "multipla_escolha",
       "enunciado": "Ao resolver uma atividade sobre tom e posicionamento do autor, o estudante deve principalmente:",
       "opcoes": [
-        "reconhecer se o texto adota tom crítico, reflexivo, otimista ou de alerta",
-        "observar adjetivos avaliativos, modalização e efeito global do texto",
+        "reconhecer se o texto adota tom critico, reflexivo, otimista ou de alerta",
+        "observar adjetivos avaliativos, modalizacao e efeito global do texto",
         "interpretar o posicionamento autoral em textos mais densos",
-        "a questão pede o tom ou a postura do autor"
+        "a questao pede o tom ou a postura do autor"
       ],
-      "correta": "reconhecer se o texto adota tom crítico, reflexivo, otimista ou de alerta",
-      "comentario": "O objetivo central de tom e posicionamento do autor é reconhecer se o texto adota tom crítico, reflexivo, otimista ou de alerta.",
+      "correta": "reconhecer se o texto adota tom critico, reflexivo, otimista ou de alerta",
+      "comentario": "O objetivo central de tom e posicionamento do autor e reconhecer se o texto adota tom critico, reflexivo, otimista ou de alerta.",
       "tempoEstimado": 70,
       "tags": [
         "textos-longos",
@@ -3948,22 +3949,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Síntese por seção",
+      "subtopico": "Sintese por secao",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Inglês, Síntese por seção refere-se a:",
+      "enunciado": "Em Ingles, Sintese por secao refere-se a:",
       "opcoes": [
-        "a capacidade de resumir a função de partes específicas do texto dentro do argumento geral",
-        "a análise de semelhanças e contrastes entre perspectivas presentes no texto longo",
-        "o reconhecimento de características de textos informativos, analíticos e expositivos mais formais",
-        "a leitura de partes do texto em que o autor narra acontecimentos ou descreve cenários e situações"
+        "a capacidade de resumir a funcao de partes especificas do texto dentro do argumento geral",
+        "a analise de semelhancas e contrastes entre perspectivas presentes no texto longo",
+        "o reconhecimento de caracteristicas de textos informativos, analiticos e expositivos mais formais",
+        "a leitura de partes do texto em que o autor narra acontecimentos ou descreve cenarios e situacoes"
       ],
-      "correta": "a capacidade de resumir a função de partes específicas do texto dentro do argumento geral",
-      "comentario": "Síntese por seção refere-se à capacidade de resumir a função de partes específicas do texto dentro do argumento geral.",
+      "correta": "a capacidade de resumir a funcao de partes especificas do texto dentro do argumento geral",
+      "comentario": "Sintese por secao refere-se a capacidade de resumir a funcao de partes especificas do texto dentro do argumento geral.",
       "tempoEstimado": 20,
       "tags": [
         "textos-longos",
@@ -3987,22 +3988,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Síntese por seção",
+      "subtopico": "Sintese por secao",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: uma seção apresenta problema, outra traz dados e a última aponta solução. Esse caso está mais ligado a qual subtópico?",
+      "enunciado": "Observe a situacao: uma secao apresenta problema, outra traz dados e a ultima aponta solucao. Esse caso esta mais ligado a qual subtopico?",
       "opcoes": [
-        "Síntese por seção",
-        "Comparação de pontos de vista",
-        "Textos jornalísticos e acadêmicos",
+        "Sintese por secao",
+        "Comparacao de pontos de vista",
+        "Textos jornalisticos e academicos",
         "Trechos narrativos e descritivos"
       ],
-      "correta": "Síntese por seção",
-      "comentario": "A situação apresentada é melhor compreendida por meio de síntese por seção.",
+      "correta": "Sintese por secao",
+      "comentario": "A situacao apresentada e melhor compreendida por meio de sintese por secao.",
       "tempoEstimado": 20,
       "tags": [
         "textos-longos",
@@ -4026,14 +4027,14 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Síntese por seção",
+      "subtopico": "Sintese por secao",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual exemplo combina melhor com síntese por seção?",
+      "enunciado": "Qual exemplo combina melhor com sintese por secao?",
       "opcoes": [
         "This section presents examples to support the main claim.",
         "Experts support regulation, while companies defend flexibility.",
@@ -4041,7 +4042,7 @@ export const textosLongos = {
         "The author describes the crowded city before presenting the argument."
       ],
       "correta": "This section presents examples to support the main claim.",
-      "comentario": "O exemplo correto ilustra o uso de síntese por seção.",
+      "comentario": "O exemplo correto ilustra o uso de sintese por secao.",
       "tempoEstimado": 25,
       "tags": [
         "textos-longos",
@@ -4065,22 +4066,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Síntese por seção",
+      "subtopico": "Sintese por secao",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO representa corretamente síntese por seção?",
+      "enunciado": "Qual alternativa NAO representa corretamente sintese por secao?",
       "opcoes": [
         "Experts support regulation, while companies defend flexibility.",
         "This section presents examples to support the main claim.",
         "perguntar o que aquela parte faz dentro do argumento geral.",
-        "resumir trechos sem perder sua função no conjunto do texto."
+        "resumir trechos sem perder sua funcao no conjunto do texto."
       ],
       "correta": "Experts support regulation, while companies defend flexibility.",
-      "comentario": "A opção incompatível ilustra outro subtópico, e não síntese por seção.",
+      "comentario": "A opcao incompativel ilustra outro subtopico, e nao sintese por secao.",
       "tempoEstimado": 25,
       "tags": [
         "textos-longos",
@@ -4104,22 +4105,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Síntese por seção",
+      "subtopico": "Sintese por secao",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar síntese por seção, o foco principal é:",
+      "enunciado": "Ao estudar sintese por secao, o foco principal e:",
       "opcoes": [
-        "entender o papel de cada bloco argumentativo na construção do sentido",
-        "comparar vozes, opiniões e argumentos em textos complexos",
-        "identificar marcas de linguagem de gêneros mais densos",
-        "distinguir narração e descrição dentro de textos mais extensos"
+        "entender o papel de cada bloco argumentativo na construcao do sentido",
+        "comparar vozes, opinioes e argumentos em textos complexos",
+        "identificar marcas de linguagem de generos mais densos",
+        "distinguir narracao e descricao dentro de textos mais extensos"
       ],
-      "correta": "entender o papel de cada bloco argumentativo na construção do sentido",
-      "comentario": "Síntese por seção concentra-se em entender o papel de cada bloco argumentativo na construção do sentido.",
+      "correta": "entender o papel de cada bloco argumentativo na construcao do sentido",
+      "comentario": "Sintese por secao concentra-se em entender o papel de cada bloco argumentativo na construcao do sentido.",
       "tempoEstimado": 30,
       "tags": [
         "textos-longos",
@@ -4143,22 +4144,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Síntese por seção",
+      "subtopico": "Sintese por secao",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Comparação de pontos de vista trata de a análise de semelhanças e contrastes entre perspectivas presentes no texto longo, Síntese por seção destaca:",
+      "enunciado": "Enquanto Comparacao de pontos de vista trata de a analise de semelhancas e contrastes entre perspectivas presentes no texto longo, Sintese por secao destaca:",
       "opcoes": [
-        "A capacidade de resumir a função de partes específicas do texto dentro do argumento geral.",
-        "A análise de semelhanças e contrastes entre perspectivas presentes no texto longo.",
-        "O reconhecimento de características de textos informativos, analíticos e expositivos mais formais.",
-        "A leitura de partes do texto em que o autor narra acontecimentos ou descreve cenários e situações."
+        "A capacidade de resumir a funcao de partes especificas do texto dentro do argumento geral.",
+        "A analise de semelhancas e contrastes entre perspectivas presentes no texto longo.",
+        "O reconhecimento de caracteristicas de textos informativos, analiticos e expositivos mais formais.",
+        "A leitura de partes do texto em que o autor narra acontecimentos ou descreve cenarios e situacoes."
       ],
-      "correta": "A capacidade de resumir a função de partes específicas do texto dentro do argumento geral.",
-      "comentario": "A comparação correta mostra a especificidade de síntese por seção.",
+      "correta": "A capacidade de resumir a funcao de partes especificas do texto dentro do argumento geral.",
+      "comentario": "A comparacao correta mostra a especificidade de sintese por secao.",
       "tempoEstimado": 30,
       "tags": [
         "textos-longos",
@@ -4182,22 +4183,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Síntese por seção",
+      "subtopico": "Sintese por secao",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma atividade de sala, uma seção apresenta problema, outra traz dados e a última aponta solução. Para responder bem, o estudante deve mobilizar principalmente:",
+      "enunciado": "Em uma atividade de sala, uma secao apresenta problema, outra traz dados e a ultima aponta solucao. Para responder bem, o estudante deve mobilizar principalmente:",
       "opcoes": [
-        "Síntese por seção",
-        "Comparação de pontos de vista",
+        "Sintese por secao",
+        "Comparacao de pontos de vista",
         "Trechos narrativos e descritivos",
         "Skimming and scanning em textos longos"
       ],
-      "correta": "Síntese por seção",
-      "comentario": "Esse tipo de tarefa exige domínio de síntese por seção.",
+      "correta": "Sintese por secao",
+      "comentario": "Esse tipo de tarefa exige dominio de sintese por secao.",
       "tempoEstimado": 35,
       "tags": [
         "textos-longos",
@@ -4221,22 +4222,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Síntese por seção",
+      "subtopico": "Sintese por secao",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação prática depende mais diretamente de Síntese por seção?",
+      "enunciado": "Qual situacao pratica depende mais diretamente de Sintese por secao?",
       "opcoes": [
-        "resumir trechos sem perder sua função no conjunto do texto",
-        "resolver itens com contraste de posições em textos extensos",
-        "interpretar artigos, reportagens analíticas e textos de divulgação",
-        "ganhar tempo e precisão em textos longos de prova"
+        "resumir trechos sem perder sua funcao no conjunto do texto",
+        "resolver itens com contraste de posicoes em textos extensos",
+        "interpretar artigos, reportagens analiticas e textos de divulgacao",
+        "ganhar tempo e precisao em textos longos de prova"
       ],
-      "correta": "resumir trechos sem perder sua função no conjunto do texto",
-      "comentario": "Síntese por seção aparece de forma direta em resumir trechos sem perder sua função no conjunto do texto.",
+      "correta": "resumir trechos sem perder sua funcao no conjunto do texto",
+      "comentario": "Sintese por secao aparece de forma direta em resumir trechos sem perder sua funcao no conjunto do texto.",
       "tempoEstimado": 35,
       "tags": [
         "textos-longos",
@@ -4260,22 +4261,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Síntese por seção",
+      "subtopico": "Sintese por secao",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre síntese por seção?",
+      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre sintese por secao?",
       "opcoes": [
-        "o caso é resolvido com foco em síntese por seção.",
-        "o caso é melhor resolvido por comparação de pontos de vista.",
-        "o caso elimina a necessidade de textos jornalísticos e acadêmicos.",
+        "o caso e resolvido com foco em sintese por secao.",
+        "o caso e melhor resolvido por comparacao de pontos de vista.",
+        "o caso elimina a necessidade de textos jornalisticos e academicos.",
         "o caso impede qualquer uso de trechos narrativos e descritivos."
       ],
-      "correta": "o caso é resolvido com foco em síntese por seção.",
-      "comentario": "A conclusão correta retoma a função central de síntese por seção.",
+      "correta": "o caso e resolvido com foco em sintese por secao.",
+      "comentario": "A conclusao correta retoma a funcao central de sintese por secao.",
       "tempoEstimado": 40,
       "tags": [
         "textos-longos",
@@ -4299,22 +4300,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Síntese por seção",
+      "subtopico": "Sintese por secao",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Se a turma fosse revisar síntese por seção, qual pergunta de estudo seria a mais adequada?",
+      "enunciado": "Se a turma fosse revisar sintese por secao, qual pergunta de estudo seria a mais adequada?",
       "opcoes": [
-        "Como síntese por seção aparece em resumir trechos sem perder sua função no conjunto do texto?",
-        "Como comparação de pontos de vista substitui totalmente resumir trechos sem perder sua função no conjunto do texto?",
-        "Por que textos jornalísticos e acadêmicos torna desnecessário estudar Síntese por seção?",
+        "Como sintese por secao aparece em resumir trechos sem perder sua funcao no conjunto do texto?",
+        "Como comparacao de pontos de vista substitui totalmente resumir trechos sem perder sua funcao no conjunto do texto?",
+        "Por que textos jornalisticos e academicos torna desnecessario estudar Sintese por secao?",
         "De que modo trechos narrativos e descritivos elimina toda leitura de contexto?"
       ],
-      "correta": "Como síntese por seção aparece em resumir trechos sem perder sua função no conjunto do texto?",
-      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de síntese por seção.",
+      "correta": "Como sintese por secao aparece em resumir trechos sem perder sua funcao no conjunto do texto?",
+      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de sintese por secao.",
       "tempoEstimado": 40,
       "tags": [
         "textos-longos",
@@ -4338,22 +4339,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Síntese por seção",
+      "subtopico": "Sintese por secao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em síntese por seção é pensar que:",
+      "enunciado": "Um erro comum em sintese por secao e pensar que:",
       "opcoes": [
-        "sintetizar seção é traduzir todas as frases com menos palavras",
-        "comparar viewpoints é escolher um lado e ignorar o outro",
-        "todo texto jornalístico e acadêmico é neutro e sem posicionamento",
-        "todo texto longo é apenas argumentativo e nunca traz narração ou descrição"
+        "sintetizar secao e traduzir todas as frases com menos palavras",
+        "comparar viewpoints e escolher um lado e ignorar o outro",
+        "todo texto jornalistico e academico e neutro e sem posicionamento",
+        "todo texto longo e apenas argumentativo e nunca traz narracao ou descricao"
       ],
-      "correta": "sintetizar seção é traduzir todas as frases com menos palavras",
-      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de síntese por seção.",
+      "correta": "sintetizar secao e traduzir todas as frases com menos palavras",
+      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de sintese por secao.",
       "tempoEstimado": 45,
       "tags": [
         "textos-longos",
@@ -4377,22 +4378,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Síntese por seção",
+      "subtopico": "Sintese por secao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"não é possível resumir uma parte do texto sem repetir o parágrafo inteiro\". A avaliação mais adequada é:",
+      "enunciado": "Um estudante afirma: \"nao e possivel resumir uma parte do texto sem repetir o paragrafo inteiro\". A avaliacao mais adequada e:",
       "opcoes": [
-        "A afirmação está incorreta, porque a capacidade de resumir a função de partes específicas do texto dentro do argumento geral.",
-        "A afirmação está correta, pois resume integralmente síntese por seção.",
-        "A afirmação está correta, porque basta decorar a tradução do exemplo.",
-        "A afirmação está incorreta apenas por não citar uma regra gramatical."
+        "A afirmacao esta incorreta, porque a capacidade de resumir a funcao de partes especificas do texto dentro do argumento geral.",
+        "A afirmacao esta correta, pois resume integralmente sintese por secao.",
+        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
+        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
       ],
-      "correta": "A afirmação está incorreta, porque a capacidade de resumir a função de partes específicas do texto dentro do argumento geral.",
-      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre síntese por seção.",
+      "correta": "A afirmacao esta incorreta, porque a capacidade de resumir a funcao de partes especificas do texto dentro do argumento geral.",
+      "comentario": "A fala do estudante apresenta um equivoco conceitual sobre sintese por secao.",
       "tempoEstimado": 45,
       "tags": [
         "textos-longos",
@@ -4416,22 +4417,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Síntese por seção",
+      "subtopico": "Sintese por secao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se síntese por seção fosse ignorado(a) em resumir trechos sem perder sua função no conjunto do texto, o resultado mais provável seria:",
+      "enunciado": "Se sintese por secao fosse ignorado(a) em resumir trechos sem perder sua funcao no conjunto do texto, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretação ficaria incompleta e aumentaria a chance de erro em resumir trechos sem perder sua função no conjunto do texto.",
-        "a questão seria resolvida automaticamente por comparação de pontos de vista.",
-        "nenhuma interpretação seria alterada, porque Síntese por seção não interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
+        "a interpretacao ficaria incompleta e aumentaria a chance de erro em resumir trechos sem perder sua funcao no conjunto do texto.",
+        "a questao seria resolvida automaticamente por comparacao de pontos de vista.",
+        "nenhuma interpretacao seria alterada, porque Sintese por secao nao interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
       ],
-      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em resumir trechos sem perder sua função no conjunto do texto.",
-      "comentario": "Ignorar síntese por seção compromete a resolução correta da atividade.",
+      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em resumir trechos sem perder sua funcao no conjunto do texto.",
+      "comentario": "Ignorar sintese por secao compromete a resolucao correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "textos-longos",
@@ -4455,14 +4456,14 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Síntese por seção",
+      "subtopico": "Sintese por secao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou ação ilustra melhor Síntese por seção?",
+      "enunciado": "Qual trecho ou acao ilustra melhor Sintese por secao?",
       "opcoes": [
         "This section presents examples to support the main claim.",
         "Experts support regulation, while companies defend flexibility.",
@@ -4470,7 +4471,7 @@ export const textosLongos = {
         "The author describes the crowded city before presenting the argument."
       ],
       "correta": "This section presents examples to support the main claim.",
-      "comentario": "O item correto é o que melhor exemplifica síntese por seção.",
+      "comentario": "O item correto e o que melhor exemplifica sintese por secao.",
       "tempoEstimado": 50,
       "tags": [
         "textos-longos",
@@ -4494,22 +4495,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Síntese por seção",
+      "subtopico": "Sintese por secao",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao encontrar o exemplo \"This section presents examples to support the main claim.\", a leitura mais adequada é:",
+      "enunciado": "Ao encontrar o exemplo \"This section presents examples to support the main claim.\", a leitura mais adequada e:",
       "opcoes": [
-        "cada parte cumpre uma função clara na organização do texto",
+        "cada parte cumpre uma funcao clara na organizacao do texto",
         "o texto apresenta pontos de vista distintos sobre o tema",
-        "o texto usa traços típicos de gêneros informativos e analíticos",
-        "trechos descritivos e narrativos também ajudam a construir o sentido global"
+        "o texto usa tracos tipicos de generos informativos e analiticos",
+        "trechos descritivos e narrativos tambem ajudam a construir o sentido global"
       ],
-      "correta": "cada parte cumpre uma função clara na organização do texto",
-      "comentario": "A leitura correta do exemplo revela o papel de síntese por seção.",
+      "correta": "cada parte cumpre uma funcao clara na organizacao do texto",
+      "comentario": "A leitura correta do exemplo revela o papel de sintese por secao.",
       "tempoEstimado": 55,
       "tags": [
         "textos-longos",
@@ -4533,22 +4534,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Síntese por seção",
+      "subtopico": "Sintese por secao",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estratégia ajuda mais a estudar síntese por seção?",
+      "enunciado": "Qual estrategia ajuda mais a estudar sintese por secao?",
       "opcoes": [
         "perguntar o que aquela parte faz dentro do argumento geral",
-        "mapear quem defende o quê e em que o contraste aparece",
-        "observar formalidade, uso de dados e modo de exposição",
-        "observar se o trecho relata ações, caracteriza cenário ou desenvolve argumento"
+        "mapear quem defende o que e em que o contraste aparece",
+        "observar formalidade, uso de dados e modo de exposicao",
+        "observar se o trecho relata acoes, caracteriza cenario ou desenvolve argumento"
       ],
       "correta": "perguntar o que aquela parte faz dentro do argumento geral",
-      "comentario": "A estratégia correta fortalece o domínio de síntese por seção.",
+      "comentario": "A estrategia correta fortalece o dominio de sintese por secao.",
       "tempoEstimado": 55,
       "tags": [
         "textos-longos",
@@ -4572,22 +4573,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Síntese por seção",
+      "subtopico": "Sintese por secao",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Síntese por seção é mais cobrado quando:",
+      "enunciado": "Em uma prova, Sintese por secao e mais cobrado quando:",
       "opcoes": [
-        "o item cobra função ou síntese de uma seção específica",
-        "a questão pede confronto entre perspectivas ou argumentos",
-        "o item cobra reconhecimento de gênero e sua função",
-        "a questão pede a função de um trecho narrativo ou descritivo"
+        "o item cobra funcao ou sintese de uma secao especifica",
+        "a questao pede confronto entre perspectivas ou argumentos",
+        "o item cobra reconhecimento de genero e sua funcao",
+        "a questao pede a funcao de um trecho narrativo ou descritivo"
       ],
-      "correta": "o item cobra função ou síntese de uma seção específica",
-      "comentario": "Esse é o tipo de demanda em que síntese por seção aparece com mais frequência.",
+      "correta": "o item cobra funcao ou sintese de uma secao especifica",
+      "comentario": "Esse e o tipo de demanda em que sintese por secao aparece com mais frequencia.",
       "tempoEstimado": 60,
       "tags": [
         "textos-longos",
@@ -4611,22 +4612,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Síntese por seção",
+      "subtopico": "Sintese por secao",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual resumo sintetiza melhor a ideia de Síntese por seção?",
+      "enunciado": "Qual resumo sintetiza melhor a ideia de Sintese por secao?",
       "opcoes": [
-        "Em síntese, a capacidade de resumir a função de partes específicas do texto dentro do argumento geral.",
-        "Em síntese, a análise de semelhanças e contrastes entre perspectivas presentes no texto longo.",
-        "Em síntese, o reconhecimento de características de textos informativos, analíticos e expositivos mais formais.",
-        "Em síntese, a leitura de partes do texto em que o autor narra acontecimentos ou descreve cenários e situações."
+        "Em sintese, a capacidade de resumir a funcao de partes especificas do texto dentro do argumento geral.",
+        "Em sintese, a analise de semelhancas e contrastes entre perspectivas presentes no texto longo.",
+        "Em sintese, o reconhecimento de caracteristicas de textos informativos, analiticos e expositivos mais formais.",
+        "Em sintese, a leitura de partes do texto em que o autor narra acontecimentos ou descreve cenarios e situacoes."
       ],
-      "correta": "Em síntese, a capacidade de resumir a função de partes específicas do texto dentro do argumento geral.",
-      "comentario": "O resumo correto recupera o núcleo de síntese por seção.",
+      "correta": "Em sintese, a capacidade de resumir a funcao de partes especificas do texto dentro do argumento geral.",
+      "comentario": "O resumo correto recupera o nucleo de sintese por secao.",
       "tempoEstimado": 60,
       "tags": [
         "textos-longos",
@@ -4650,22 +4651,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Síntese por seção",
+      "subtopico": "Sintese por secao",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associação entre exemplo e interpretação está correta em Síntese por seção?",
+      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Sintese por secao?",
       "opcoes": [
-        "This section presents examples to support the main claim. -> cada parte cumpre uma função clara na organização do texto",
-        "Experts support regulation, while companies defend flexibility. -> cada parte cumpre uma função clara na organização do texto",
-        "The article reports findings from a recent university study. -> trechos descritivos e narrativos também ajudam a construir o sentido global",
+        "This section presents examples to support the main claim. -> cada parte cumpre uma funcao clara na organizacao do texto",
+        "Experts support regulation, while companies defend flexibility. -> cada parte cumpre uma funcao clara na organizacao do texto",
+        "The article reports findings from a recent university study. -> trechos descritivos e narrativos tambem ajudam a construir o sentido global",
         "The author describes the crowded city before presenting the argument. -> o texto apresenta pontos de vista distintos sobre o tema"
       ],
-      "correta": "This section presents examples to support the main claim. -> cada parte cumpre uma função clara na organização do texto",
-      "comentario": "A associação correta mantém coerência entre exemplo e interpretação em síntese por seção.",
+      "correta": "This section presents examples to support the main claim. -> cada parte cumpre uma funcao clara na organizacao do texto",
+      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em sintese por secao.",
       "tempoEstimado": 65,
       "tags": [
         "textos-longos",
@@ -4689,22 +4690,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Síntese por seção",
+      "subtopico": "Sintese por secao",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao resolver uma atividade sobre síntese por seção, o estudante deve principalmente:",
+      "enunciado": "Ao resolver uma atividade sobre sintese por secao, o estudante deve principalmente:",
       "opcoes": [
-        "entender o papel de cada bloco argumentativo na construção do sentido",
+        "entender o papel de cada bloco argumentativo na construcao do sentido",
         "perguntar o que aquela parte faz dentro do argumento geral",
-        "resumir trechos sem perder sua função no conjunto do texto",
-        "o item cobra função ou síntese de uma seção específica"
+        "resumir trechos sem perder sua funcao no conjunto do texto",
+        "o item cobra funcao ou sintese de uma secao especifica"
       ],
-      "correta": "entender o papel de cada bloco argumentativo na construção do sentido",
-      "comentario": "O objetivo central de síntese por seção é entender o papel de cada bloco argumentativo na construção do sentido.",
+      "correta": "entender o papel de cada bloco argumentativo na construcao do sentido",
+      "comentario": "O objetivo central de sintese por secao e entender o papel de cada bloco argumentativo na construcao do sentido.",
       "tempoEstimado": 70,
       "tags": [
         "textos-longos",
@@ -4728,22 +4729,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Comparação de pontos de vista",
+      "subtopico": "Comparacao de pontos de vista",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Inglês, Comparação de pontos de vista refere-se a:",
+      "enunciado": "Em Ingles, Comparacao de pontos de vista refere-se a:",
       "opcoes": [
-        "a análise de semelhanças e contrastes entre perspectivas presentes no texto longo",
-        "o reconhecimento de características de textos informativos, analíticos e expositivos mais formais",
-        "a leitura de partes do texto em que o autor narra acontecimentos ou descreve cenários e situações",
+        "a analise de semelhancas e contrastes entre perspectivas presentes no texto longo",
+        "o reconhecimento de caracteristicas de textos informativos, analiticos e expositivos mais formais",
+        "a leitura de partes do texto em que o autor narra acontecimentos ou descreve cenarios e situacoes",
         "o uso combinado de leitura global e busca seletiva para lidar com textos extensos de forma eficiente"
       ],
-      "correta": "a análise de semelhanças e contrastes entre perspectivas presentes no texto longo",
-      "comentario": "Comparação de pontos de vista refere-se à análise de semelhanças e contrastes entre perspectivas presentes no texto longo.",
+      "correta": "a analise de semelhancas e contrastes entre perspectivas presentes no texto longo",
+      "comentario": "Comparacao de pontos de vista refere-se a analise de semelhancas e contrastes entre perspectivas presentes no texto longo.",
       "tempoEstimado": 20,
       "tags": [
         "textos-longos",
@@ -4767,22 +4768,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Comparação de pontos de vista",
+      "subtopico": "Comparacao de pontos de vista",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: o artigo contrapõe visões de especialistas, consumidores e governo sobre o mesmo tema. Esse caso está mais ligado a qual subtópico?",
+      "enunciado": "Observe a situacao: o artigo contrapoe visoes de especialistas, consumidores e governo sobre o mesmo tema. Esse caso esta mais ligado a qual subtopico?",
       "opcoes": [
-        "Comparação de pontos de vista",
-        "Textos jornalísticos e acadêmicos",
+        "Comparacao de pontos de vista",
+        "Textos jornalisticos e academicos",
         "Trechos narrativos e descritivos",
         "Skimming and scanning em textos longos"
       ],
-      "correta": "Comparação de pontos de vista",
-      "comentario": "A situação apresentada é melhor compreendida por meio de comparação de pontos de vista.",
+      "correta": "Comparacao de pontos de vista",
+      "comentario": "A situacao apresentada e melhor compreendida por meio de comparacao de pontos de vista.",
       "tempoEstimado": 20,
       "tags": [
         "textos-longos",
@@ -4806,14 +4807,14 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Comparação de pontos de vista",
+      "subtopico": "Comparacao de pontos de vista",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual exemplo combina melhor com comparação de pontos de vista?",
+      "enunciado": "Qual exemplo combina melhor com comparacao de pontos de vista?",
       "opcoes": [
         "Experts support regulation, while companies defend flexibility.",
         "The article reports findings from a recent university study.",
@@ -4821,7 +4822,7 @@ export const textosLongos = {
         "First, the student skims the article; then, he scans for the requested detail."
       ],
       "correta": "Experts support regulation, while companies defend flexibility.",
-      "comentario": "O exemplo correto ilustra o uso de comparação de pontos de vista.",
+      "comentario": "O exemplo correto ilustra o uso de comparacao de pontos de vista.",
       "tempoEstimado": 25,
       "tags": [
         "textos-longos",
@@ -4845,22 +4846,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Comparação de pontos de vista",
+      "subtopico": "Comparacao de pontos de vista",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO representa corretamente comparação de pontos de vista?",
+      "enunciado": "Qual alternativa NAO representa corretamente comparacao de pontos de vista?",
       "opcoes": [
         "The article reports findings from a recent university study.",
         "Experts support regulation, while companies defend flexibility.",
-        "mapear quem defende o quê e em que o contraste aparece.",
-        "resolver itens com contraste de posições em textos extensos."
+        "mapear quem defende o que e em que o contraste aparece.",
+        "resolver itens com contraste de posicoes em textos extensos."
       ],
       "correta": "The article reports findings from a recent university study.",
-      "comentario": "A opção incompatível ilustra outro subtópico, e não comparação de pontos de vista.",
+      "comentario": "A opcao incompativel ilustra outro subtopico, e nao comparacao de pontos de vista.",
       "tempoEstimado": 25,
       "tags": [
         "textos-longos",
@@ -4884,22 +4885,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Comparação de pontos de vista",
+      "subtopico": "Comparacao de pontos de vista",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar comparação de pontos de vista, o foco principal é:",
+      "enunciado": "Ao estudar comparacao de pontos de vista, o foco principal e:",
       "opcoes": [
-        "comparar vozes, opiniões e argumentos em textos complexos",
-        "identificar marcas de linguagem de gêneros mais densos",
-        "distinguir narração e descrição dentro de textos mais extensos",
-        "alternar visão geral e procura pontual em leitura longa"
+        "comparar vozes, opinioes e argumentos em textos complexos",
+        "identificar marcas de linguagem de generos mais densos",
+        "distinguir narracao e descricao dentro de textos mais extensos",
+        "alternar visao geral e procura pontual em leitura longa"
       ],
-      "correta": "comparar vozes, opiniões e argumentos em textos complexos",
-      "comentario": "Comparação de pontos de vista concentra-se em comparar vozes, opiniões e argumentos em textos complexos.",
+      "correta": "comparar vozes, opinioes e argumentos em textos complexos",
+      "comentario": "Comparacao de pontos de vista concentra-se em comparar vozes, opinioes e argumentos em textos complexos.",
       "tempoEstimado": 30,
       "tags": [
         "textos-longos",
@@ -4923,22 +4924,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Comparação de pontos de vista",
+      "subtopico": "Comparacao de pontos de vista",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Textos jornalísticos e acadêmicos trata de o reconhecimento de características de textos informativos, analíticos e expositivos mais formais, Comparação de pontos de vista destaca:",
+      "enunciado": "Enquanto Textos jornalisticos e academicos trata de o reconhecimento de caracteristicas de textos informativos, analiticos e expositivos mais formais, Comparacao de pontos de vista destaca:",
       "opcoes": [
-        "A análise de semelhanças e contrastes entre perspectivas presentes no texto longo.",
-        "O reconhecimento de características de textos informativos, analíticos e expositivos mais formais.",
-        "A leitura de partes do texto em que o autor narra acontecimentos ou descreve cenários e situações.",
+        "A analise de semelhancas e contrastes entre perspectivas presentes no texto longo.",
+        "O reconhecimento de caracteristicas de textos informativos, analiticos e expositivos mais formais.",
+        "A leitura de partes do texto em que o autor narra acontecimentos ou descreve cenarios e situacoes.",
         "O uso combinado de leitura global e busca seletiva para lidar com textos extensos de forma eficiente."
       ],
-      "correta": "A análise de semelhanças e contrastes entre perspectivas presentes no texto longo.",
-      "comentario": "A comparação correta mostra a especificidade de comparação de pontos de vista.",
+      "correta": "A analise de semelhancas e contrastes entre perspectivas presentes no texto longo.",
+      "comentario": "A comparacao correta mostra a especificidade de comparacao de pontos de vista.",
       "tempoEstimado": 30,
       "tags": [
         "textos-longos",
@@ -4962,22 +4963,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Comparação de pontos de vista",
+      "subtopico": "Comparacao de pontos de vista",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma atividade de sala, o artigo contrapõe visões de especialistas, consumidores e governo sobre o mesmo tema. Para responder bem, o estudante deve mobilizar principalmente:",
+      "enunciado": "Em uma atividade de sala, o artigo contrapoe visoes de especialistas, consumidores e governo sobre o mesmo tema. Para responder bem, o estudante deve mobilizar principalmente:",
       "opcoes": [
-        "Comparação de pontos de vista",
-        "Textos jornalísticos e acadêmicos",
+        "Comparacao de pontos de vista",
+        "Textos jornalisticos e academicos",
         "Skimming and scanning em textos longos",
-        "Organização em parágrafos"
+        "Organizacao em paragrafos"
       ],
-      "correta": "Comparação de pontos de vista",
-      "comentario": "Esse tipo de tarefa exige domínio de comparação de pontos de vista.",
+      "correta": "Comparacao de pontos de vista",
+      "comentario": "Esse tipo de tarefa exige dominio de comparacao de pontos de vista.",
       "tempoEstimado": 35,
       "tags": [
         "textos-longos",
@@ -5001,22 +5002,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Comparação de pontos de vista",
+      "subtopico": "Comparacao de pontos de vista",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação prática depende mais diretamente de Comparação de pontos de vista?",
+      "enunciado": "Qual situacao pratica depende mais diretamente de Comparacao de pontos de vista?",
       "opcoes": [
-        "resolver itens com contraste de posições em textos extensos",
-        "interpretar artigos, reportagens analíticas e textos de divulgação",
-        "interpretar cenas, sequências e caracterizações em textos longos",
+        "resolver itens com contraste de posicoes em textos extensos",
+        "interpretar artigos, reportagens analiticas e textos de divulgacao",
+        "interpretar cenas, sequencias e caracterizacoes em textos longos",
         "entender a estrutura global de textos longos"
       ],
-      "correta": "resolver itens com contraste de posições em textos extensos",
-      "comentario": "Comparação de pontos de vista aparece de forma direta em resolver itens com contraste de posições em textos extensos.",
+      "correta": "resolver itens com contraste de posicoes em textos extensos",
+      "comentario": "Comparacao de pontos de vista aparece de forma direta em resolver itens com contraste de posicoes em textos extensos.",
       "tempoEstimado": 35,
       "tags": [
         "textos-longos",
@@ -5040,22 +5041,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Comparação de pontos de vista",
+      "subtopico": "Comparacao de pontos de vista",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre comparação de pontos de vista?",
+      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre comparacao de pontos de vista?",
       "opcoes": [
-        "o caso é resolvido com foco em comparação de pontos de vista.",
-        "o caso é melhor resolvido por textos jornalísticos e acadêmicos.",
+        "o caso e resolvido com foco em comparacao de pontos de vista.",
+        "o caso e melhor resolvido por textos jornalisticos e academicos.",
         "o caso elimina a necessidade de trechos narrativos e descritivos.",
         "o caso impede qualquer uso de skimming and scanning em textos longos."
       ],
-      "correta": "o caso é resolvido com foco em comparação de pontos de vista.",
-      "comentario": "A conclusão correta retoma a função central de comparação de pontos de vista.",
+      "correta": "o caso e resolvido com foco em comparacao de pontos de vista.",
+      "comentario": "A conclusao correta retoma a funcao central de comparacao de pontos de vista.",
       "tempoEstimado": 40,
       "tags": [
         "textos-longos",
@@ -5079,22 +5080,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Comparação de pontos de vista",
+      "subtopico": "Comparacao de pontos de vista",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Se a turma fosse revisar comparação de pontos de vista, qual pergunta de estudo seria a mais adequada?",
+      "enunciado": "Se a turma fosse revisar comparacao de pontos de vista, qual pergunta de estudo seria a mais adequada?",
       "opcoes": [
-        "Como comparação de pontos de vista aparece em resolver itens com contraste de posições em textos extensos?",
-        "Como textos jornalísticos e acadêmicos substitui totalmente resolver itens com contraste de posições em textos extensos?",
-        "Por que trechos narrativos e descritivos torna desnecessário estudar Comparação de pontos de vista?",
+        "Como comparacao de pontos de vista aparece em resolver itens com contraste de posicoes em textos extensos?",
+        "Como textos jornalisticos e academicos substitui totalmente resolver itens com contraste de posicoes em textos extensos?",
+        "Por que trechos narrativos e descritivos torna desnecessario estudar Comparacao de pontos de vista?",
         "De que modo skimming and scanning em textos longos elimina toda leitura de contexto?"
       ],
-      "correta": "Como comparação de pontos de vista aparece em resolver itens com contraste de posições em textos extensos?",
-      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de comparação de pontos de vista.",
+      "correta": "Como comparacao de pontos de vista aparece em resolver itens com contraste de posicoes em textos extensos?",
+      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de comparacao de pontos de vista.",
       "tempoEstimado": 40,
       "tags": [
         "textos-longos",
@@ -5118,22 +5119,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Comparação de pontos de vista",
+      "subtopico": "Comparacao de pontos de vista",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em comparação de pontos de vista é pensar que:",
+      "enunciado": "Um erro comum em comparacao de pontos de vista e pensar que:",
       "opcoes": [
-        "comparar viewpoints é escolher um lado e ignorar o outro",
-        "todo texto jornalístico e acadêmico é neutro e sem posicionamento",
-        "todo texto longo é apenas argumentativo e nunca traz narração ou descrição",
-        "textos longos exigem leitura linear e completa antes de qualquer questão"
+        "comparar viewpoints e escolher um lado e ignorar o outro",
+        "todo texto jornalistico e academico e neutro e sem posicionamento",
+        "todo texto longo e apenas argumentativo e nunca traz narracao ou descricao",
+        "textos longos exigem leitura linear e completa antes de qualquer questao"
       ],
-      "correta": "comparar viewpoints é escolher um lado e ignorar o outro",
-      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de comparação de pontos de vista.",
+      "correta": "comparar viewpoints e escolher um lado e ignorar o outro",
+      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de comparacao de pontos de vista.",
       "tempoEstimado": 45,
       "tags": [
         "textos-longos",
@@ -5157,22 +5158,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Comparação de pontos de vista",
+      "subtopico": "Comparacao de pontos de vista",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"se duas opiniões aparecem no texto, uma delas precisa estar totalmente errada\". A avaliação mais adequada é:",
+      "enunciado": "Um estudante afirma: \"se duas opinioes aparecem no texto, uma delas precisa estar totalmente errada\". A avaliacao mais adequada e:",
       "opcoes": [
-        "A afirmação está incorreta, porque a análise de semelhanças e contrastes entre perspectivas presentes no texto longo.",
-        "A afirmação está correta, pois resume integralmente comparação de pontos de vista.",
-        "A afirmação está correta, porque basta decorar a tradução do exemplo.",
-        "A afirmação está incorreta apenas por não citar uma regra gramatical."
+        "A afirmacao esta incorreta, porque a analise de semelhancas e contrastes entre perspectivas presentes no texto longo.",
+        "A afirmacao esta correta, pois resume integralmente comparacao de pontos de vista.",
+        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
+        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
       ],
-      "correta": "A afirmação está incorreta, porque a análise de semelhanças e contrastes entre perspectivas presentes no texto longo.",
-      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre comparação de pontos de vista.",
+      "correta": "A afirmacao esta incorreta, porque a analise de semelhancas e contrastes entre perspectivas presentes no texto longo.",
+      "comentario": "A fala do estudante apresenta um equivoco conceitual sobre comparacao de pontos de vista.",
       "tempoEstimado": 45,
       "tags": [
         "textos-longos",
@@ -5196,22 +5197,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Comparação de pontos de vista",
+      "subtopico": "Comparacao de pontos de vista",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se comparação de pontos de vista fosse ignorado(a) em resolver itens com contraste de posições em textos extensos, o resultado mais provável seria:",
+      "enunciado": "Se comparacao de pontos de vista fosse ignorado(a) em resolver itens com contraste de posicoes em textos extensos, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretação ficaria incompleta e aumentaria a chance de erro em resolver itens com contraste de posições em textos extensos.",
-        "a questão seria resolvida automaticamente por textos jornalísticos e acadêmicos.",
-        "nenhuma interpretação seria alterada, porque Comparação de pontos de vista não interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
+        "a interpretacao ficaria incompleta e aumentaria a chance de erro em resolver itens com contraste de posicoes em textos extensos.",
+        "a questao seria resolvida automaticamente por textos jornalisticos e academicos.",
+        "nenhuma interpretacao seria alterada, porque Comparacao de pontos de vista nao interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
       ],
-      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em resolver itens com contraste de posições em textos extensos.",
-      "comentario": "Ignorar comparação de pontos de vista compromete a resolução correta da atividade.",
+      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em resolver itens com contraste de posicoes em textos extensos.",
+      "comentario": "Ignorar comparacao de pontos de vista compromete a resolucao correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "textos-longos",
@@ -5235,14 +5236,14 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Comparação de pontos de vista",
+      "subtopico": "Comparacao de pontos de vista",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou ação ilustra melhor Comparação de pontos de vista?",
+      "enunciado": "Qual trecho ou acao ilustra melhor Comparacao de pontos de vista?",
       "opcoes": [
         "Experts support regulation, while companies defend flexibility.",
         "The article reports findings from a recent university study.",
@@ -5250,7 +5251,7 @@ export const textosLongos = {
         "First, the student skims the article; then, he scans for the requested detail."
       ],
       "correta": "Experts support regulation, while companies defend flexibility.",
-      "comentario": "O item correto é o que melhor exemplifica comparação de pontos de vista.",
+      "comentario": "O item correto e o que melhor exemplifica comparacao de pontos de vista.",
       "tempoEstimado": 50,
       "tags": [
         "textos-longos",
@@ -5274,22 +5275,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Comparação de pontos de vista",
+      "subtopico": "Comparacao de pontos de vista",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao encontrar o exemplo \"Experts support regulation, while companies defend flexibility.\", a leitura mais adequada é:",
+      "enunciado": "Ao encontrar o exemplo \"Experts support regulation, while companies defend flexibility.\", a leitura mais adequada e:",
       "opcoes": [
         "o texto apresenta pontos de vista distintos sobre o tema",
-        "o texto usa traços típicos de gêneros informativos e analíticos",
-        "trechos descritivos e narrativos também ajudam a construir o sentido global",
-        "a combinação das duas estratégias melhora eficiência e controle de leitura"
+        "o texto usa tracos tipicos de generos informativos e analiticos",
+        "trechos descritivos e narrativos tambem ajudam a construir o sentido global",
+        "a combinacao das duas estrategias melhora eficiencia e controle de leitura"
       ],
       "correta": "o texto apresenta pontos de vista distintos sobre o tema",
-      "comentario": "A leitura correta do exemplo revela o papel de comparação de pontos de vista.",
+      "comentario": "A leitura correta do exemplo revela o papel de comparacao de pontos de vista.",
       "tempoEstimado": 55,
       "tags": [
         "textos-longos",
@@ -5313,22 +5314,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Comparação de pontos de vista",
+      "subtopico": "Comparacao de pontos de vista",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estratégia ajuda mais a estudar comparação de pontos de vista?",
+      "enunciado": "Qual estrategia ajuda mais a estudar comparacao de pontos de vista?",
       "opcoes": [
-        "mapear quem defende o quê e em que o contraste aparece",
-        "observar formalidade, uso de dados e modo de exposição",
-        "observar se o trecho relata ações, caracteriza cenário ou desenvolve argumento",
+        "mapear quem defende o que e em que o contraste aparece",
+        "observar formalidade, uso de dados e modo de exposicao",
+        "observar se o trecho relata acoes, caracteriza cenario ou desenvolve argumento",
         "mapear a estrutura geral e voltar ao ponto certo quando a pergunta exigir detalhe"
       ],
-      "correta": "mapear quem defende o quê e em que o contraste aparece",
-      "comentario": "A estratégia correta fortalece o domínio de comparação de pontos de vista.",
+      "correta": "mapear quem defende o que e em que o contraste aparece",
+      "comentario": "A estrategia correta fortalece o dominio de comparacao de pontos de vista.",
       "tempoEstimado": 55,
       "tags": [
         "textos-longos",
@@ -5352,22 +5353,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Comparação de pontos de vista",
+      "subtopico": "Comparacao de pontos de vista",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Comparação de pontos de vista é mais cobrado quando:",
+      "enunciado": "Em uma prova, Comparacao de pontos de vista e mais cobrado quando:",
       "opcoes": [
-        "a questão pede confronto entre perspectivas ou argumentos",
-        "o item cobra reconhecimento de gênero e sua função",
-        "a questão pede a função de um trecho narrativo ou descritivo",
-        "a questão cobra estratégia de leitura adequada a texto extenso"
+        "a questao pede confronto entre perspectivas ou argumentos",
+        "o item cobra reconhecimento de genero e sua funcao",
+        "a questao pede a funcao de um trecho narrativo ou descritivo",
+        "a questao cobra estrategia de leitura adequada a texto extenso"
       ],
-      "correta": "a questão pede confronto entre perspectivas ou argumentos",
-      "comentario": "Esse é o tipo de demanda em que comparação de pontos de vista aparece com mais frequência.",
+      "correta": "a questao pede confronto entre perspectivas ou argumentos",
+      "comentario": "Esse e o tipo de demanda em que comparacao de pontos de vista aparece com mais frequencia.",
       "tempoEstimado": 60,
       "tags": [
         "textos-longos",
@@ -5391,22 +5392,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Comparação de pontos de vista",
+      "subtopico": "Comparacao de pontos de vista",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual resumo sintetiza melhor a ideia de Comparação de pontos de vista?",
+      "enunciado": "Qual resumo sintetiza melhor a ideia de Comparacao de pontos de vista?",
       "opcoes": [
-        "Em síntese, a análise de semelhanças e contrastes entre perspectivas presentes no texto longo.",
-        "Em síntese, o reconhecimento de características de textos informativos, analíticos e expositivos mais formais.",
-        "Em síntese, a leitura de partes do texto em que o autor narra acontecimentos ou descreve cenários e situações.",
-        "Em síntese, o uso combinado de leitura global e busca seletiva para lidar com textos extensos de forma eficiente."
+        "Em sintese, a analise de semelhancas e contrastes entre perspectivas presentes no texto longo.",
+        "Em sintese, o reconhecimento de caracteristicas de textos informativos, analiticos e expositivos mais formais.",
+        "Em sintese, a leitura de partes do texto em que o autor narra acontecimentos ou descreve cenarios e situacoes.",
+        "Em sintese, o uso combinado de leitura global e busca seletiva para lidar com textos extensos de forma eficiente."
       ],
-      "correta": "Em síntese, a análise de semelhanças e contrastes entre perspectivas presentes no texto longo.",
-      "comentario": "O resumo correto recupera o núcleo de comparação de pontos de vista.",
+      "correta": "Em sintese, a analise de semelhancas e contrastes entre perspectivas presentes no texto longo.",
+      "comentario": "O resumo correto recupera o nucleo de comparacao de pontos de vista.",
       "tempoEstimado": 60,
       "tags": [
         "textos-longos",
@@ -5430,22 +5431,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Comparação de pontos de vista",
+      "subtopico": "Comparacao de pontos de vista",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associação entre exemplo e interpretação está correta em Comparação de pontos de vista?",
+      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Comparacao de pontos de vista?",
       "opcoes": [
         "Experts support regulation, while companies defend flexibility. -> o texto apresenta pontos de vista distintos sobre o tema",
         "The article reports findings from a recent university study. -> o texto apresenta pontos de vista distintos sobre o tema",
-        "The author describes the crowded city before presenting the argument. -> a combinação das duas estratégias melhora eficiência e controle de leitura",
-        "First, the student skims the article; then, he scans for the requested detail. -> o texto usa traços típicos de gêneros informativos e analíticos"
+        "The author describes the crowded city before presenting the argument. -> a combinacao das duas estrategias melhora eficiencia e controle de leitura",
+        "First, the student skims the article; then, he scans for the requested detail. -> o texto usa tracos tipicos de generos informativos e analiticos"
       ],
       "correta": "Experts support regulation, while companies defend flexibility. -> o texto apresenta pontos de vista distintos sobre o tema",
-      "comentario": "A associação correta mantém coerência entre exemplo e interpretação em comparação de pontos de vista.",
+      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em comparacao de pontos de vista.",
       "tempoEstimado": 65,
       "tags": [
         "textos-longos",
@@ -5469,22 +5470,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Comparação de pontos de vista",
+      "subtopico": "Comparacao de pontos de vista",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao resolver uma atividade sobre comparação de pontos de vista, o estudante deve principalmente:",
+      "enunciado": "Ao resolver uma atividade sobre comparacao de pontos de vista, o estudante deve principalmente:",
       "opcoes": [
-        "comparar vozes, opiniões e argumentos em textos complexos",
-        "mapear quem defende o quê e em que o contraste aparece",
-        "resolver itens com contraste de posições em textos extensos",
-        "a questão pede confronto entre perspectivas ou argumentos"
+        "comparar vozes, opinioes e argumentos em textos complexos",
+        "mapear quem defende o que e em que o contraste aparece",
+        "resolver itens com contraste de posicoes em textos extensos",
+        "a questao pede confronto entre perspectivas ou argumentos"
       ],
-      "correta": "comparar vozes, opiniões e argumentos em textos complexos",
-      "comentario": "O objetivo central de comparação de pontos de vista é comparar vozes, opiniões e argumentos em textos complexos.",
+      "correta": "comparar vozes, opinioes e argumentos em textos complexos",
+      "comentario": "O objetivo central de comparacao de pontos de vista e comparar vozes, opinioes e argumentos em textos complexos.",
       "tempoEstimado": 70,
       "tags": [
         "textos-longos",
@@ -5508,22 +5509,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Textos jornalísticos e acadêmicos",
+      "subtopico": "Textos jornalisticos e academicos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Inglês, Textos jornalísticos e acadêmicos refere-se a:",
+      "enunciado": "Em Ingles, Textos jornalisticos e academicos refere-se a:",
       "opcoes": [
-        "o reconhecimento de características de textos informativos, analíticos e expositivos mais formais",
-        "a leitura de partes do texto em que o autor narra acontecimentos ou descreve cenários e situações",
+        "o reconhecimento de caracteristicas de textos informativos, analiticos e expositivos mais formais",
+        "a leitura de partes do texto em que o autor narra acontecimentos ou descreve cenarios e situacoes",
         "o uso combinado de leitura global e busca seletiva para lidar com textos extensos de forma eficiente",
-        "a compreensão de como as ideias se distribuem e avançam ao longo dos parágrafos do texto"
+        "a compreensao de como as ideias se distribuem e avancam ao longo dos paragrafos do texto"
       ],
-      "correta": "o reconhecimento de características de textos informativos, analíticos e expositivos mais formais",
-      "comentario": "Textos jornalísticos e acadêmicos refere-se ao reconhecimento de características de textos informativos, analíticos e expositivos mais formais.",
+      "correta": "o reconhecimento de caracteristicas de textos informativos, analiticos e expositivos mais formais",
+      "comentario": "Textos jornalisticos e academicos refere-se ao reconhecimento de caracteristicas de textos informativos, analiticos e expositivos mais formais.",
       "tempoEstimado": 20,
       "tags": [
         "textos-longos",
@@ -5547,22 +5548,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Textos jornalísticos e acadêmicos",
+      "subtopico": "Textos jornalisticos e academicos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: um texto apresenta dados de pesquisa, linguagem formal e estrutura expositiva. Esse caso está mais ligado a qual subtópico?",
+      "enunciado": "Observe a situacao: um texto apresenta dados de pesquisa, linguagem formal e estrutura expositiva. Esse caso esta mais ligado a qual subtopico?",
       "opcoes": [
-        "Textos jornalísticos e acadêmicos",
+        "Textos jornalisticos e academicos",
         "Trechos narrativos e descritivos",
         "Skimming and scanning em textos longos",
-        "Organização em parágrafos"
+        "Organizacao em paragrafos"
       ],
-      "correta": "Textos jornalísticos e acadêmicos",
-      "comentario": "A situação apresentada é melhor compreendida por meio de textos jornalísticos e acadêmicos.",
+      "correta": "Textos jornalisticos e academicos",
+      "comentario": "A situacao apresentada e melhor compreendida por meio de textos jornalisticos e academicos.",
       "tempoEstimado": 20,
       "tags": [
         "textos-longos",
@@ -5586,14 +5587,14 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Textos jornalísticos e acadêmicos",
+      "subtopico": "Textos jornalisticos e academicos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual exemplo combina melhor com textos jornalísticos e acadêmicos?",
+      "enunciado": "Qual exemplo combina melhor com textos jornalisticos e academicos?",
       "opcoes": [
         "The article reports findings from a recent university study.",
         "The author describes the crowded city before presenting the argument.",
@@ -5601,7 +5602,7 @@ export const textosLongos = {
         "The second paragraph develops the problem introduced in the first one."
       ],
       "correta": "The article reports findings from a recent university study.",
-      "comentario": "O exemplo correto ilustra o uso de textos jornalísticos e acadêmicos.",
+      "comentario": "O exemplo correto ilustra o uso de textos jornalisticos e academicos.",
       "tempoEstimado": 25,
       "tags": [
         "textos-longos",
@@ -5625,22 +5626,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Textos jornalísticos e acadêmicos",
+      "subtopico": "Textos jornalisticos e academicos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO representa corretamente textos jornalísticos e acadêmicos?",
+      "enunciado": "Qual alternativa NAO representa corretamente textos jornalisticos e academicos?",
       "opcoes": [
         "The author describes the crowded city before presenting the argument.",
         "The article reports findings from a recent university study.",
-        "observar formalidade, uso de dados e modo de exposição.",
-        "interpretar artigos, reportagens analíticas e textos de divulgação."
+        "observar formalidade, uso de dados e modo de exposicao.",
+        "interpretar artigos, reportagens analiticas e textos de divulgacao."
       ],
       "correta": "The author describes the crowded city before presenting the argument.",
-      "comentario": "A opção incompatível ilustra outro subtópico, e não textos jornalísticos e acadêmicos.",
+      "comentario": "A opcao incompativel ilustra outro subtopico, e nao textos jornalisticos e academicos.",
       "tempoEstimado": 25,
       "tags": [
         "textos-longos",
@@ -5664,22 +5665,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Textos jornalísticos e acadêmicos",
+      "subtopico": "Textos jornalisticos e academicos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar textos jornalísticos e acadêmicos, o foco principal é:",
+      "enunciado": "Ao estudar textos jornalisticos e academicos, o foco principal e:",
       "opcoes": [
-        "identificar marcas de linguagem de gêneros mais densos",
-        "distinguir narração e descrição dentro de textos mais extensos",
-        "alternar visão geral e procura pontual em leitura longa",
-        "acompanhar a progressão temática em textos extensos"
+        "identificar marcas de linguagem de generos mais densos",
+        "distinguir narracao e descricao dentro de textos mais extensos",
+        "alternar visao geral e procura pontual em leitura longa",
+        "acompanhar a progressao tematica em textos extensos"
       ],
-      "correta": "identificar marcas de linguagem de gêneros mais densos",
-      "comentario": "Textos jornalísticos e acadêmicos concentra-se em identificar marcas de linguagem de gêneros mais densos.",
+      "correta": "identificar marcas de linguagem de generos mais densos",
+      "comentario": "Textos jornalisticos e academicos concentra-se em identificar marcas de linguagem de generos mais densos.",
       "tempoEstimado": 30,
       "tags": [
         "textos-longos",
@@ -5703,22 +5704,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Textos jornalísticos e acadêmicos",
+      "subtopico": "Textos jornalisticos e academicos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Trechos narrativos e descritivos trata de a leitura de partes do texto em que o autor narra acontecimentos ou descreve cenários e situações, Textos jornalísticos e acadêmicos destaca:",
+      "enunciado": "Enquanto Trechos narrativos e descritivos trata de a leitura de partes do texto em que o autor narra acontecimentos ou descreve cenarios e situacoes, Textos jornalisticos e academicos destaca:",
       "opcoes": [
-        "O reconhecimento de características de textos informativos, analíticos e expositivos mais formais.",
-        "A leitura de partes do texto em que o autor narra acontecimentos ou descreve cenários e situações.",
+        "O reconhecimento de caracteristicas de textos informativos, analiticos e expositivos mais formais.",
+        "A leitura de partes do texto em que o autor narra acontecimentos ou descreve cenarios e situacoes.",
         "O uso combinado de leitura global e busca seletiva para lidar com textos extensos de forma eficiente.",
-        "A compreensão de como as ideias se distribuem e avançam ao longo dos parágrafos do texto."
+        "A compreensao de como as ideias se distribuem e avancam ao longo dos paragrafos do texto."
       ],
-      "correta": "O reconhecimento de características de textos informativos, analíticos e expositivos mais formais.",
-      "comentario": "A comparação correta mostra a especificidade de textos jornalísticos e acadêmicos.",
+      "correta": "O reconhecimento de caracteristicas de textos informativos, analiticos e expositivos mais formais.",
+      "comentario": "A comparacao correta mostra a especificidade de textos jornalisticos e academicos.",
       "tempoEstimado": 30,
       "tags": [
         "textos-longos",
@@ -5742,22 +5743,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Textos jornalísticos e acadêmicos",
+      "subtopico": "Textos jornalisticos e academicos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
       "enunciado": "Em uma atividade de sala, um texto apresenta dados de pesquisa, linguagem formal e estrutura expositiva. Para responder bem, o estudante deve mobilizar principalmente:",
       "opcoes": [
-        "Textos jornalísticos e acadêmicos",
+        "Textos jornalisticos e academicos",
         "Trechos narrativos e descritivos",
-        "Organização em parágrafos",
+        "Organizacao em paragrafos",
         "Tese e argumento central"
       ],
-      "correta": "Textos jornalísticos e acadêmicos",
-      "comentario": "Esse tipo de tarefa exige domínio de textos jornalísticos e acadêmicos.",
+      "correta": "Textos jornalisticos e academicos",
+      "comentario": "Esse tipo de tarefa exige dominio de textos jornalisticos e academicos.",
       "tempoEstimado": 35,
       "tags": [
         "textos-longos",
@@ -5781,22 +5782,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Textos jornalísticos e acadêmicos",
+      "subtopico": "Textos jornalisticos e academicos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação prática depende mais diretamente de Textos jornalísticos e acadêmicos?",
+      "enunciado": "Qual situacao pratica depende mais diretamente de Textos jornalisticos e academicos?",
       "opcoes": [
-        "interpretar artigos, reportagens analíticas e textos de divulgação",
-        "interpretar cenas, sequências e caracterizações em textos longos",
-        "ganhar tempo e precisão em textos longos de prova",
+        "interpretar artigos, reportagens analiticas e textos de divulgacao",
+        "interpretar cenas, sequencias e caracterizacoes em textos longos",
+        "ganhar tempo e precisao em textos longos de prova",
         "responder itens sobre posicionamento e linha argumentativa"
       ],
-      "correta": "interpretar artigos, reportagens analíticas e textos de divulgação",
-      "comentario": "Textos jornalísticos e acadêmicos aparece de forma direta em interpretar artigos, reportagens analíticas e textos de divulgação.",
+      "correta": "interpretar artigos, reportagens analiticas e textos de divulgacao",
+      "comentario": "Textos jornalisticos e academicos aparece de forma direta em interpretar artigos, reportagens analiticas e textos de divulgacao.",
       "tempoEstimado": 35,
       "tags": [
         "textos-longos",
@@ -5820,22 +5821,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Textos jornalísticos e acadêmicos",
+      "subtopico": "Textos jornalisticos e academicos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre textos jornalísticos e acadêmicos?",
+      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre textos jornalisticos e academicos?",
       "opcoes": [
-        "o caso é resolvido com foco em textos jornalísticos e acadêmicos.",
-        "o caso é melhor resolvido por trechos narrativos e descritivos.",
+        "o caso e resolvido com foco em textos jornalisticos e academicos.",
+        "o caso e melhor resolvido por trechos narrativos e descritivos.",
         "o caso elimina a necessidade de skimming and scanning em textos longos.",
-        "o caso impede qualquer uso de organização em parágrafos."
+        "o caso impede qualquer uso de organizacao em paragrafos."
       ],
-      "correta": "o caso é resolvido com foco em textos jornalísticos e acadêmicos.",
-      "comentario": "A conclusão correta retoma a função central de textos jornalísticos e acadêmicos.",
+      "correta": "o caso e resolvido com foco em textos jornalisticos e academicos.",
+      "comentario": "A conclusao correta retoma a funcao central de textos jornalisticos e academicos.",
       "tempoEstimado": 40,
       "tags": [
         "textos-longos",
@@ -5859,22 +5860,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Textos jornalísticos e acadêmicos",
+      "subtopico": "Textos jornalisticos e academicos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Se a turma fosse revisar textos jornalísticos e acadêmicos, qual pergunta de estudo seria a mais adequada?",
+      "enunciado": "Se a turma fosse revisar textos jornalisticos e academicos, qual pergunta de estudo seria a mais adequada?",
       "opcoes": [
-        "Como textos jornalísticos e acadêmicos aparece em interpretar artigos, reportagens analíticas e textos de divulgação?",
-        "Como trechos narrativos e descritivos substitui totalmente interpretar artigos, reportagens analíticas e textos de divulgação?",
-        "Por que skimming and scanning em textos longos torna desnecessário estudar Textos jornalísticos e acadêmicos?",
-        "De que modo organização em parágrafos elimina toda leitura de contexto?"
+        "Como textos jornalisticos e academicos aparece em interpretar artigos, reportagens analiticas e textos de divulgacao?",
+        "Como trechos narrativos e descritivos substitui totalmente interpretar artigos, reportagens analiticas e textos de divulgacao?",
+        "Por que skimming and scanning em textos longos torna desnecessario estudar Textos jornalisticos e academicos?",
+        "De que modo organizacao em paragrafos elimina toda leitura de contexto?"
       ],
-      "correta": "Como textos jornalísticos e acadêmicos aparece em interpretar artigos, reportagens analíticas e textos de divulgação?",
-      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de textos jornalísticos e acadêmicos.",
+      "correta": "Como textos jornalisticos e academicos aparece em interpretar artigos, reportagens analiticas e textos de divulgacao?",
+      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de textos jornalisticos e academicos.",
       "tempoEstimado": 40,
       "tags": [
         "textos-longos",
@@ -5898,22 +5899,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Textos jornalísticos e acadêmicos",
+      "subtopico": "Textos jornalisticos e academicos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em textos jornalísticos e acadêmicos é pensar que:",
+      "enunciado": "Um erro comum em textos jornalisticos e academicos e pensar que:",
       "opcoes": [
-        "todo texto jornalístico e acadêmico é neutro e sem posicionamento",
-        "todo texto longo é apenas argumentativo e nunca traz narração ou descrição",
-        "textos longos exigem leitura linear e completa antes de qualquer questão",
-        "cada parágrafo de um texto longo traz uma ideia totalmente isolada das demais"
+        "todo texto jornalistico e academico e neutro e sem posicionamento",
+        "todo texto longo e apenas argumentativo e nunca traz narracao ou descricao",
+        "textos longos exigem leitura linear e completa antes de qualquer questao",
+        "cada paragrafo de um texto longo traz uma ideia totalmente isolada das demais"
       ],
-      "correta": "todo texto jornalístico e acadêmico é neutro e sem posicionamento",
-      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de textos jornalísticos e acadêmicos.",
+      "correta": "todo texto jornalistico e academico e neutro e sem posicionamento",
+      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de textos jornalisticos e academicos.",
       "tempoEstimado": 45,
       "tags": [
         "textos-longos",
@@ -5937,22 +5938,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Textos jornalísticos e acadêmicos",
+      "subtopico": "Textos jornalisticos e academicos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"se o texto traz pesquisa, ele não pode defender nenhuma ideia\". A avaliação mais adequada é:",
+      "enunciado": "Um estudante afirma: \"se o texto traz pesquisa, ele nao pode defender nenhuma ideia\". A avaliacao mais adequada e:",
       "opcoes": [
-        "A afirmação está incorreta, porque o reconhecimento de características de textos informativos, analíticos e expositivos mais formais.",
-        "A afirmação está correta, pois resume integralmente textos jornalísticos e acadêmicos.",
-        "A afirmação está correta, porque basta decorar a tradução do exemplo.",
-        "A afirmação está incorreta apenas por não citar uma regra gramatical."
+        "A afirmacao esta incorreta, porque o reconhecimento de caracteristicas de textos informativos, analiticos e expositivos mais formais.",
+        "A afirmacao esta correta, pois resume integralmente textos jornalisticos e academicos.",
+        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
+        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
       ],
-      "correta": "A afirmação está incorreta, porque o reconhecimento de características de textos informativos, analíticos e expositivos mais formais.",
-      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre textos jornalísticos e acadêmicos.",
+      "correta": "A afirmacao esta incorreta, porque o reconhecimento de caracteristicas de textos informativos, analiticos e expositivos mais formais.",
+      "comentario": "A fala do estudante apresenta um equivoco conceitual sobre textos jornalisticos e academicos.",
       "tempoEstimado": 45,
       "tags": [
         "textos-longos",
@@ -5976,22 +5977,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Textos jornalísticos e acadêmicos",
+      "subtopico": "Textos jornalisticos e academicos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se textos jornalísticos e acadêmicos fosse ignorado(a) em interpretar artigos, reportagens analíticas e textos de divulgação, o resultado mais provável seria:",
+      "enunciado": "Se textos jornalisticos e academicos fosse ignorado(a) em interpretar artigos, reportagens analiticas e textos de divulgacao, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretação ficaria incompleta e aumentaria a chance de erro em interpretar artigos, reportagens analíticas e textos de divulgação.",
-        "a questão seria resolvida automaticamente por trechos narrativos e descritivos.",
-        "nenhuma interpretação seria alterada, porque Textos jornalísticos e acadêmicos não interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
+        "a interpretacao ficaria incompleta e aumentaria a chance de erro em interpretar artigos, reportagens analiticas e textos de divulgacao.",
+        "a questao seria resolvida automaticamente por trechos narrativos e descritivos.",
+        "nenhuma interpretacao seria alterada, porque Textos jornalisticos e academicos nao interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
       ],
-      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em interpretar artigos, reportagens analíticas e textos de divulgação.",
-      "comentario": "Ignorar textos jornalísticos e acadêmicos compromete a resolução correta da atividade.",
+      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em interpretar artigos, reportagens analiticas e textos de divulgacao.",
+      "comentario": "Ignorar textos jornalisticos e academicos compromete a resolucao correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "textos-longos",
@@ -6015,14 +6016,14 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Textos jornalísticos e acadêmicos",
+      "subtopico": "Textos jornalisticos e academicos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou ação ilustra melhor Textos jornalísticos e acadêmicos?",
+      "enunciado": "Qual trecho ou acao ilustra melhor Textos jornalisticos e academicos?",
       "opcoes": [
         "The article reports findings from a recent university study.",
         "The author describes the crowded city before presenting the argument.",
@@ -6030,7 +6031,7 @@ export const textosLongos = {
         "The second paragraph develops the problem introduced in the first one."
       ],
       "correta": "The article reports findings from a recent university study.",
-      "comentario": "O item correto é o que melhor exemplifica textos jornalísticos e acadêmicos.",
+      "comentario": "O item correto e o que melhor exemplifica textos jornalisticos e academicos.",
       "tempoEstimado": 50,
       "tags": [
         "textos-longos",
@@ -6054,22 +6055,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Textos jornalísticos e acadêmicos",
+      "subtopico": "Textos jornalisticos e academicos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao encontrar o exemplo \"The article reports findings from a recent university study.\", a leitura mais adequada é:",
+      "enunciado": "Ao encontrar o exemplo \"The article reports findings from a recent university study.\", a leitura mais adequada e:",
       "opcoes": [
-        "o texto usa traços típicos de gêneros informativos e analíticos",
-        "trechos descritivos e narrativos também ajudam a construir o sentido global",
-        "a combinação das duas estratégias melhora eficiência e controle de leitura",
-        "cada parágrafo cumpre uma função dentro da organização global"
+        "o texto usa tracos tipicos de generos informativos e analiticos",
+        "trechos descritivos e narrativos tambem ajudam a construir o sentido global",
+        "a combinacao das duas estrategias melhora eficiencia e controle de leitura",
+        "cada paragrafo cumpre uma funcao dentro da organizacao global"
       ],
-      "correta": "o texto usa traços típicos de gêneros informativos e analíticos",
-      "comentario": "A leitura correta do exemplo revela o papel de textos jornalísticos e acadêmicos.",
+      "correta": "o texto usa tracos tipicos de generos informativos e analiticos",
+      "comentario": "A leitura correta do exemplo revela o papel de textos jornalisticos e academicos.",
       "tempoEstimado": 55,
       "tags": [
         "textos-longos",
@@ -6093,22 +6094,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Textos jornalísticos e acadêmicos",
+      "subtopico": "Textos jornalisticos e academicos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estratégia ajuda mais a estudar textos jornalísticos e acadêmicos?",
+      "enunciado": "Qual estrategia ajuda mais a estudar textos jornalisticos e academicos?",
       "opcoes": [
-        "observar formalidade, uso de dados e modo de exposição",
-        "observar se o trecho relata ações, caracteriza cenário ou desenvolve argumento",
+        "observar formalidade, uso de dados e modo de exposicao",
+        "observar se o trecho relata acoes, caracteriza cenario ou desenvolve argumento",
         "mapear a estrutura geral e voltar ao ponto certo quando a pergunta exigir detalhe",
-        "identificar papel de cada parágrafo dentro do texto"
+        "identificar papel de cada paragrafo dentro do texto"
       ],
-      "correta": "observar formalidade, uso de dados e modo de exposição",
-      "comentario": "A estratégia correta fortalece o domínio de textos jornalísticos e acadêmicos.",
+      "correta": "observar formalidade, uso de dados e modo de exposicao",
+      "comentario": "A estrategia correta fortalece o dominio de textos jornalisticos e academicos.",
       "tempoEstimado": 55,
       "tags": [
         "textos-longos",
@@ -6132,22 +6133,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Textos jornalísticos e acadêmicos",
+      "subtopico": "Textos jornalisticos e academicos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Textos jornalísticos e acadêmicos é mais cobrado quando:",
+      "enunciado": "Em uma prova, Textos jornalisticos e academicos e mais cobrado quando:",
       "opcoes": [
-        "o item cobra reconhecimento de gênero e sua função",
-        "a questão pede a função de um trecho narrativo ou descritivo",
-        "a questão cobra estratégia de leitura adequada a texto extenso",
-        "a questão pede localizar função ou contribuição de um parágrafo"
+        "o item cobra reconhecimento de genero e sua funcao",
+        "a questao pede a funcao de um trecho narrativo ou descritivo",
+        "a questao cobra estrategia de leitura adequada a texto extenso",
+        "a questao pede localizar funcao ou contribuicao de um paragrafo"
       ],
-      "correta": "o item cobra reconhecimento de gênero e sua função",
-      "comentario": "Esse é o tipo de demanda em que textos jornalísticos e acadêmicos aparece com mais frequência.",
+      "correta": "o item cobra reconhecimento de genero e sua funcao",
+      "comentario": "Esse e o tipo de demanda em que textos jornalisticos e academicos aparece com mais frequencia.",
       "tempoEstimado": 60,
       "tags": [
         "textos-longos",
@@ -6171,22 +6172,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Textos jornalísticos e acadêmicos",
+      "subtopico": "Textos jornalisticos e academicos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual resumo sintetiza melhor a ideia de Textos jornalísticos e acadêmicos?",
+      "enunciado": "Qual resumo sintetiza melhor a ideia de Textos jornalisticos e academicos?",
       "opcoes": [
-        "Em síntese, o reconhecimento de características de textos informativos, analíticos e expositivos mais formais.",
-        "Em síntese, a leitura de partes do texto em que o autor narra acontecimentos ou descreve cenários e situações.",
-        "Em síntese, o uso combinado de leitura global e busca seletiva para lidar com textos extensos de forma eficiente.",
-        "Em síntese, a compreensão de como as ideias se distribuem e avançam ao longo dos parágrafos do texto."
+        "Em sintese, o reconhecimento de caracteristicas de textos informativos, analiticos e expositivos mais formais.",
+        "Em sintese, a leitura de partes do texto em que o autor narra acontecimentos ou descreve cenarios e situacoes.",
+        "Em sintese, o uso combinado de leitura global e busca seletiva para lidar com textos extensos de forma eficiente.",
+        "Em sintese, a compreensao de como as ideias se distribuem e avancam ao longo dos paragrafos do texto."
       ],
-      "correta": "Em síntese, o reconhecimento de características de textos informativos, analíticos e expositivos mais formais.",
-      "comentario": "O resumo correto recupera o núcleo de textos jornalísticos e acadêmicos.",
+      "correta": "Em sintese, o reconhecimento de caracteristicas de textos informativos, analiticos e expositivos mais formais.",
+      "comentario": "O resumo correto recupera o nucleo de textos jornalisticos e academicos.",
       "tempoEstimado": 60,
       "tags": [
         "textos-longos",
@@ -6210,22 +6211,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Textos jornalísticos e acadêmicos",
+      "subtopico": "Textos jornalisticos e academicos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associação entre exemplo e interpretação está correta em Textos jornalísticos e acadêmicos?",
+      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Textos jornalisticos e academicos?",
       "opcoes": [
-        "The article reports findings from a recent university study. -> o texto usa traços típicos de gêneros informativos e analíticos",
-        "The author describes the crowded city before presenting the argument. -> o texto usa traços típicos de gêneros informativos e analíticos",
-        "First, the student skims the article; then, he scans for the requested detail. -> cada parágrafo cumpre uma função dentro da organização global",
-        "The second paragraph develops the problem introduced in the first one. -> trechos descritivos e narrativos também ajudam a construir o sentido global"
+        "The article reports findings from a recent university study. -> o texto usa tracos tipicos de generos informativos e analiticos",
+        "The author describes the crowded city before presenting the argument. -> o texto usa tracos tipicos de generos informativos e analiticos",
+        "First, the student skims the article; then, he scans for the requested detail. -> cada paragrafo cumpre uma funcao dentro da organizacao global",
+        "The second paragraph develops the problem introduced in the first one. -> trechos descritivos e narrativos tambem ajudam a construir o sentido global"
       ],
-      "correta": "The article reports findings from a recent university study. -> o texto usa traços típicos de gêneros informativos e analíticos",
-      "comentario": "A associação correta mantém coerência entre exemplo e interpretação em textos jornalísticos e acadêmicos.",
+      "correta": "The article reports findings from a recent university study. -> o texto usa tracos tipicos de generos informativos e analiticos",
+      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em textos jornalisticos e academicos.",
       "tempoEstimado": 65,
       "tags": [
         "textos-longos",
@@ -6249,22 +6250,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
-      "subtopico": "Textos jornalísticos e acadêmicos",
+      "subtopico": "Textos jornalisticos e academicos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao resolver uma atividade sobre textos jornalísticos e acadêmicos, o estudante deve principalmente:",
+      "enunciado": "Ao resolver uma atividade sobre textos jornalisticos e academicos, o estudante deve principalmente:",
       "opcoes": [
-        "identificar marcas de linguagem de gêneros mais densos",
-        "observar formalidade, uso de dados e modo de exposição",
-        "interpretar artigos, reportagens analíticas e textos de divulgação",
-        "o item cobra reconhecimento de gênero e sua função"
+        "identificar marcas de linguagem de generos mais densos",
+        "observar formalidade, uso de dados e modo de exposicao",
+        "interpretar artigos, reportagens analiticas e textos de divulgacao",
+        "o item cobra reconhecimento de genero e sua funcao"
       ],
-      "correta": "identificar marcas de linguagem de gêneros mais densos",
-      "comentario": "O objetivo central de textos jornalísticos e acadêmicos é identificar marcas de linguagem de gêneros mais densos.",
+      "correta": "identificar marcas de linguagem de generos mais densos",
+      "comentario": "O objetivo central de textos jornalisticos e academicos e identificar marcas de linguagem de generos mais densos.",
       "tempoEstimado": 70,
       "tags": [
         "textos-longos",
@@ -6288,22 +6289,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Trechos narrativos e descritivos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Inglês, Trechos narrativos e descritivos refere-se a:",
+      "enunciado": "Em Ingles, Trechos narrativos e descritivos refere-se a:",
       "opcoes": [
-        "a leitura de partes do texto em que o autor narra acontecimentos ou descreve cenários e situações",
+        "a leitura de partes do texto em que o autor narra acontecimentos ou descreve cenarios e situacoes",
         "o uso combinado de leitura global e busca seletiva para lidar com textos extensos de forma eficiente",
-        "a compreensão de como as ideias se distribuem e avançam ao longo dos parágrafos do texto",
-        "a identificação da posição principal defendida pelo texto e do argumento que sustenta essa posição"
+        "a compreensao de como as ideias se distribuem e avancam ao longo dos paragrafos do texto",
+        "a identificacao da posicao principal defendida pelo texto e do argumento que sustenta essa posicao"
       ],
-      "correta": "a leitura de partes do texto em que o autor narra acontecimentos ou descreve cenários e situações",
-      "comentario": "Trechos narrativos e descritivos refere-se à leitura de partes do texto em que o autor narra acontecimentos ou descreve cenários e situações.",
+      "correta": "a leitura de partes do texto em que o autor narra acontecimentos ou descreve cenarios e situacoes",
+      "comentario": "Trechos narrativos e descritivos refere-se a leitura de partes do texto em que o autor narra acontecimentos ou descreve cenarios e situacoes.",
       "tempoEstimado": 20,
       "tags": [
         "textos-longos",
@@ -6327,22 +6328,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Trechos narrativos e descritivos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: um texto alterna relato de experiência com descrição do ambiente em que ela ocorreu. Esse caso está mais ligado a qual subtópico?",
+      "enunciado": "Observe a situacao: um texto alterna relato de experiencia com descricao do ambiente em que ela ocorreu. Esse caso esta mais ligado a qual subtopico?",
       "opcoes": [
         "Trechos narrativos e descritivos",
         "Skimming and scanning em textos longos",
-        "Organização em parágrafos",
+        "Organizacao em paragrafos",
         "Tese e argumento central"
       ],
       "correta": "Trechos narrativos e descritivos",
-      "comentario": "A situação apresentada é melhor compreendida por meio de trechos narrativos e descritivos.",
+      "comentario": "A situacao apresentada e melhor compreendida por meio de trechos narrativos e descritivos.",
       "tempoEstimado": 20,
       "tags": [
         "textos-longos",
@@ -6366,7 +6367,7 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Trechos narrativos e descritivos",
       "dificuldadeLabel": "facil",
@@ -6405,22 +6406,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Trechos narrativos e descritivos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO representa corretamente trechos narrativos e descritivos?",
+      "enunciado": "Qual alternativa NAO representa corretamente trechos narrativos e descritivos?",
       "opcoes": [
         "First, the student skims the article; then, he scans for the requested detail.",
         "The author describes the crowded city before presenting the argument.",
-        "observar se o trecho relata ações, caracteriza cenário ou desenvolve argumento.",
-        "interpretar cenas, sequências e caracterizações em textos longos."
+        "observar se o trecho relata acoes, caracteriza cenario ou desenvolve argumento.",
+        "interpretar cenas, sequencias e caracterizacoes em textos longos."
       ],
       "correta": "First, the student skims the article; then, he scans for the requested detail.",
-      "comentario": "A opção incompatível ilustra outro subtópico, e não trechos narrativos e descritivos.",
+      "comentario": "A opcao incompativel ilustra outro subtopico, e nao trechos narrativos e descritivos.",
       "tempoEstimado": 25,
       "tags": [
         "textos-longos",
@@ -6444,22 +6445,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Trechos narrativos e descritivos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar trechos narrativos e descritivos, o foco principal é:",
+      "enunciado": "Ao estudar trechos narrativos e descritivos, o foco principal e:",
       "opcoes": [
-        "distinguir narração e descrição dentro de textos mais extensos",
-        "alternar visão geral e procura pontual em leitura longa",
-        "acompanhar a progressão temática em textos extensos",
+        "distinguir narracao e descricao dentro de textos mais extensos",
+        "alternar visao geral e procura pontual em leitura longa",
+        "acompanhar a progressao tematica em textos extensos",
         "reconhecer a tese e o fio argumentativo principal"
       ],
-      "correta": "distinguir narração e descrição dentro de textos mais extensos",
-      "comentario": "Trechos narrativos e descritivos concentra-se em distinguir narração e descrição dentro de textos mais extensos.",
+      "correta": "distinguir narracao e descricao dentro de textos mais extensos",
+      "comentario": "Trechos narrativos e descritivos concentra-se em distinguir narracao e descricao dentro de textos mais extensos.",
       "tempoEstimado": 30,
       "tags": [
         "textos-longos",
@@ -6483,7 +6484,7 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Trechos narrativos e descritivos",
       "dificuldadeLabel": "facil",
@@ -6492,13 +6493,13 @@ export const textosLongos = {
       "tipo": "multipla_escolha",
       "enunciado": "Enquanto Skimming and scanning em textos longos trata de o uso combinado de leitura global e busca seletiva para lidar com textos extensos de forma eficiente, Trechos narrativos e descritivos destaca:",
       "opcoes": [
-        "A leitura de partes do texto em que o autor narra acontecimentos ou descreve cenários e situações.",
+        "A leitura de partes do texto em que o autor narra acontecimentos ou descreve cenarios e situacoes.",
         "O uso combinado de leitura global e busca seletiva para lidar com textos extensos de forma eficiente.",
-        "A compreensão de como as ideias se distribuem e avançam ao longo dos parágrafos do texto.",
-        "A identificação da posição principal defendida pelo texto e do argumento que sustenta essa posição."
+        "A compreensao de como as ideias se distribuem e avancam ao longo dos paragrafos do texto.",
+        "A identificacao da posicao principal defendida pelo texto e do argumento que sustenta essa posicao."
       ],
-      "correta": "A leitura de partes do texto em que o autor narra acontecimentos ou descreve cenários e situações.",
-      "comentario": "A comparação correta mostra a especificidade de trechos narrativos e descritivos.",
+      "correta": "A leitura de partes do texto em que o autor narra acontecimentos ou descreve cenarios e situacoes.",
+      "comentario": "A comparacao correta mostra a especificidade de trechos narrativos e descritivos.",
       "tempoEstimado": 30,
       "tags": [
         "textos-longos",
@@ -6522,22 +6523,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Trechos narrativos e descritivos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma atividade de sala, um texto alterna relato de experiência com descrição do ambiente em que ela ocorreu. Para responder bem, o estudante deve mobilizar principalmente:",
+      "enunciado": "Em uma atividade de sala, um texto alterna relato de experiencia com descricao do ambiente em que ela ocorreu. Para responder bem, o estudante deve mobilizar principalmente:",
       "opcoes": [
         "Trechos narrativos e descritivos",
         "Skimming and scanning em textos longos",
         "Tese e argumento central",
-        "Informações explícitas em texto longo"
+        "Informacoes explicitas em texto longo"
       ],
       "correta": "Trechos narrativos e descritivos",
-      "comentario": "Esse tipo de tarefa exige domínio de trechos narrativos e descritivos.",
+      "comentario": "Esse tipo de tarefa exige dominio de trechos narrativos e descritivos.",
       "tempoEstimado": 35,
       "tags": [
         "textos-longos",
@@ -6561,22 +6562,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Trechos narrativos e descritivos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação prática depende mais diretamente de Trechos narrativos e descritivos?",
+      "enunciado": "Qual situacao pratica depende mais diretamente de Trechos narrativos e descritivos?",
       "opcoes": [
-        "interpretar cenas, sequências e caracterizações em textos longos",
-        "ganhar tempo e precisão em textos longos de prova",
+        "interpretar cenas, sequencias e caracterizacoes em textos longos",
+        "ganhar tempo e precisao em textos longos de prova",
         "entender a estrutura global de textos longos",
         "retirar dados diretos de textos longos sem se perder na leitura"
       ],
-      "correta": "interpretar cenas, sequências e caracterizações em textos longos",
-      "comentario": "Trechos narrativos e descritivos aparece de forma direta em interpretar cenas, sequências e caracterizações em textos longos.",
+      "correta": "interpretar cenas, sequencias e caracterizacoes em textos longos",
+      "comentario": "Trechos narrativos e descritivos aparece de forma direta em interpretar cenas, sequencias e caracterizacoes em textos longos.",
       "tempoEstimado": 35,
       "tags": [
         "textos-longos",
@@ -6600,22 +6601,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Trechos narrativos e descritivos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre trechos narrativos e descritivos?",
+      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre trechos narrativos e descritivos?",
       "opcoes": [
-        "o caso é resolvido com foco em trechos narrativos e descritivos.",
-        "o caso é melhor resolvido por skimming and scanning em textos longos.",
-        "o caso elimina a necessidade de organização em parágrafos.",
+        "o caso e resolvido com foco em trechos narrativos e descritivos.",
+        "o caso e melhor resolvido por skimming and scanning em textos longos.",
+        "o caso elimina a necessidade de organizacao em paragrafos.",
         "o caso impede qualquer uso de tese e argumento central."
       ],
-      "correta": "o caso é resolvido com foco em trechos narrativos e descritivos.",
-      "comentario": "A conclusão correta retoma a função central de trechos narrativos e descritivos.",
+      "correta": "o caso e resolvido com foco em trechos narrativos e descritivos.",
+      "comentario": "A conclusao correta retoma a funcao central de trechos narrativos e descritivos.",
       "tempoEstimado": 40,
       "tags": [
         "textos-longos",
@@ -6639,7 +6640,7 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Trechos narrativos e descritivos",
       "dificuldadeLabel": "facil",
@@ -6648,12 +6649,12 @@ export const textosLongos = {
       "tipo": "multipla_escolha",
       "enunciado": "Se a turma fosse revisar trechos narrativos e descritivos, qual pergunta de estudo seria a mais adequada?",
       "opcoes": [
-        "Como trechos narrativos e descritivos aparece em interpretar cenas, sequências e caracterizações em textos longos?",
-        "Como skimming and scanning em textos longos substitui totalmente interpretar cenas, sequências e caracterizações em textos longos?",
-        "Por que organização em parágrafos torna desnecessário estudar Trechos narrativos e descritivos?",
+        "Como trechos narrativos e descritivos aparece em interpretar cenas, sequencias e caracterizacoes em textos longos?",
+        "Como skimming and scanning em textos longos substitui totalmente interpretar cenas, sequencias e caracterizacoes em textos longos?",
+        "Por que organizacao em paragrafos torna desnecessario estudar Trechos narrativos e descritivos?",
         "De que modo tese e argumento central elimina toda leitura de contexto?"
       ],
-      "correta": "Como trechos narrativos e descritivos aparece em interpretar cenas, sequências e caracterizações em textos longos?",
+      "correta": "Como trechos narrativos e descritivos aparece em interpretar cenas, sequencias e caracterizacoes em textos longos?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de trechos narrativos e descritivos.",
       "tempoEstimado": 40,
       "tags": [
@@ -6678,22 +6679,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Trechos narrativos e descritivos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em trechos narrativos e descritivos é pensar que:",
+      "enunciado": "Um erro comum em trechos narrativos e descritivos e pensar que:",
       "opcoes": [
-        "todo texto longo é apenas argumentativo e nunca traz narração ou descrição",
-        "textos longos exigem leitura linear e completa antes de qualquer questão",
-        "cada parágrafo de um texto longo traz uma ideia totalmente isolada das demais",
-        "tese e argumento central são apenas opinião solta do autor"
+        "todo texto longo e apenas argumentativo e nunca traz narracao ou descricao",
+        "textos longos exigem leitura linear e completa antes de qualquer questao",
+        "cada paragrafo de um texto longo traz uma ideia totalmente isolada das demais",
+        "tese e argumento central sao apenas opiniao solta do autor"
       ],
-      "correta": "todo texto longo é apenas argumentativo e nunca traz narração ou descrição",
-      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de trechos narrativos e descritivos.",
+      "correta": "todo texto longo e apenas argumentativo e nunca traz narracao ou descricao",
+      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de trechos narrativos e descritivos.",
       "tempoEstimado": 45,
       "tags": [
         "textos-longos",
@@ -6717,22 +6718,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Trechos narrativos e descritivos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"se há descrição no texto, então não existe análise ou argumentação\". A avaliação mais adequada é:",
+      "enunciado": "Um estudante afirma: \"se ha descricao no texto, entao nao existe analise ou argumentacao\". A avaliacao mais adequada e:",
       "opcoes": [
-        "A afirmação está incorreta, porque a leitura de partes do texto em que o autor narra acontecimentos ou descreve cenários e situações.",
-        "A afirmação está correta, pois resume integralmente trechos narrativos e descritivos.",
-        "A afirmação está correta, porque basta decorar a tradução do exemplo.",
-        "A afirmação está incorreta apenas por não citar uma regra gramatical."
+        "A afirmacao esta incorreta, porque a leitura de partes do texto em que o autor narra acontecimentos ou descreve cenarios e situacoes.",
+        "A afirmacao esta correta, pois resume integralmente trechos narrativos e descritivos.",
+        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
+        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
       ],
-      "correta": "A afirmação está incorreta, porque a leitura de partes do texto em que o autor narra acontecimentos ou descreve cenários e situações.",
-      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre trechos narrativos e descritivos.",
+      "correta": "A afirmacao esta incorreta, porque a leitura de partes do texto em que o autor narra acontecimentos ou descreve cenarios e situacoes.",
+      "comentario": "A fala do estudante apresenta um equivoco conceitual sobre trechos narrativos e descritivos.",
       "tempoEstimado": 45,
       "tags": [
         "textos-longos",
@@ -6756,22 +6757,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Trechos narrativos e descritivos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se trechos narrativos e descritivos fosse ignorado(a) em interpretar cenas, sequências e caracterizações em textos longos, o resultado mais provável seria:",
+      "enunciado": "Se trechos narrativos e descritivos fosse ignorado(a) em interpretar cenas, sequencias e caracterizacoes em textos longos, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretação ficaria incompleta e aumentaria a chance de erro em interpretar cenas, sequências e caracterizações em textos longos.",
-        "a questão seria resolvida automaticamente por skimming and scanning em textos longos.",
-        "nenhuma interpretação seria alterada, porque Trechos narrativos e descritivos não interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
+        "a interpretacao ficaria incompleta e aumentaria a chance de erro em interpretar cenas, sequencias e caracterizacoes em textos longos.",
+        "a questao seria resolvida automaticamente por skimming and scanning em textos longos.",
+        "nenhuma interpretacao seria alterada, porque Trechos narrativos e descritivos nao interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
       ],
-      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em interpretar cenas, sequências e caracterizações em textos longos.",
-      "comentario": "Ignorar trechos narrativos e descritivos compromete a resolução correta da atividade.",
+      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em interpretar cenas, sequencias e caracterizacoes em textos longos.",
+      "comentario": "Ignorar trechos narrativos e descritivos compromete a resolucao correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "textos-longos",
@@ -6795,14 +6796,14 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Trechos narrativos e descritivos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou ação ilustra melhor Trechos narrativos e descritivos?",
+      "enunciado": "Qual trecho ou acao ilustra melhor Trechos narrativos e descritivos?",
       "opcoes": [
         "The author describes the crowded city before presenting the argument.",
         "First, the student skims the article; then, he scans for the requested detail.",
@@ -6810,7 +6811,7 @@ export const textosLongos = {
         "The author argues that cities should invest in public transportation."
       ],
       "correta": "The author describes the crowded city before presenting the argument.",
-      "comentario": "O item correto é o que melhor exemplifica trechos narrativos e descritivos.",
+      "comentario": "O item correto e o que melhor exemplifica trechos narrativos e descritivos.",
       "tempoEstimado": 50,
       "tags": [
         "textos-longos",
@@ -6834,21 +6835,21 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Trechos narrativos e descritivos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao encontrar o exemplo \"The author describes the crowded city before presenting the argument.\", a leitura mais adequada é:",
+      "enunciado": "Ao encontrar o exemplo \"The author describes the crowded city before presenting the argument.\", a leitura mais adequada e:",
       "opcoes": [
-        "trechos descritivos e narrativos também ajudam a construir o sentido global",
-        "a combinação das duas estratégias melhora eficiência e controle de leitura",
-        "cada parágrafo cumpre uma função dentro da organização global",
-        "a frase resume a posição principal defendida"
+        "trechos descritivos e narrativos tambem ajudam a construir o sentido global",
+        "a combinacao das duas estrategias melhora eficiencia e controle de leitura",
+        "cada paragrafo cumpre uma funcao dentro da organizacao global",
+        "a frase resume a posicao principal defendida"
       ],
-      "correta": "trechos descritivos e narrativos também ajudam a construir o sentido global",
+      "correta": "trechos descritivos e narrativos tambem ajudam a construir o sentido global",
       "comentario": "A leitura correta do exemplo revela o papel de trechos narrativos e descritivos.",
       "tempoEstimado": 55,
       "tags": [
@@ -6873,22 +6874,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Trechos narrativos e descritivos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estratégia ajuda mais a estudar trechos narrativos e descritivos?",
+      "enunciado": "Qual estrategia ajuda mais a estudar trechos narrativos e descritivos?",
       "opcoes": [
-        "observar se o trecho relata ações, caracteriza cenário ou desenvolve argumento",
+        "observar se o trecho relata acoes, caracteriza cenario ou desenvolve argumento",
         "mapear a estrutura geral e voltar ao ponto certo quando a pergunta exigir detalhe",
-        "identificar papel de cada parágrafo dentro do texto",
+        "identificar papel de cada paragrafo dentro do texto",
         "procurar a ideia defendida e os argumentos que a sustentam"
       ],
-      "correta": "observar se o trecho relata ações, caracteriza cenário ou desenvolve argumento",
-      "comentario": "A estratégia correta fortalece o domínio de trechos narrativos e descritivos.",
+      "correta": "observar se o trecho relata acoes, caracteriza cenario ou desenvolve argumento",
+      "comentario": "A estrategia correta fortalece o dominio de trechos narrativos e descritivos.",
       "tempoEstimado": 55,
       "tags": [
         "textos-longos",
@@ -6912,22 +6913,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Trechos narrativos e descritivos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Trechos narrativos e descritivos é mais cobrado quando:",
+      "enunciado": "Em uma prova, Trechos narrativos e descritivos e mais cobrado quando:",
       "opcoes": [
-        "a questão pede a função de um trecho narrativo ou descritivo",
-        "a questão cobra estratégia de leitura adequada a texto extenso",
-        "a questão pede localizar função ou contribuição de um parágrafo",
-        "o item pede identificar a posição central do texto"
+        "a questao pede a funcao de um trecho narrativo ou descritivo",
+        "a questao cobra estrategia de leitura adequada a texto extenso",
+        "a questao pede localizar funcao ou contribuicao de um paragrafo",
+        "o item pede identificar a posicao central do texto"
       ],
-      "correta": "a questão pede a função de um trecho narrativo ou descritivo",
-      "comentario": "Esse é o tipo de demanda em que trechos narrativos e descritivos aparece com mais frequência.",
+      "correta": "a questao pede a funcao de um trecho narrativo ou descritivo",
+      "comentario": "Esse e o tipo de demanda em que trechos narrativos e descritivos aparece com mais frequencia.",
       "tempoEstimado": 60,
       "tags": [
         "textos-longos",
@@ -6951,7 +6952,7 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Trechos narrativos e descritivos",
       "dificuldadeLabel": "dificil",
@@ -6960,13 +6961,13 @@ export const textosLongos = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual resumo sintetiza melhor a ideia de Trechos narrativos e descritivos?",
       "opcoes": [
-        "Em síntese, a leitura de partes do texto em que o autor narra acontecimentos ou descreve cenários e situações.",
-        "Em síntese, o uso combinado de leitura global e busca seletiva para lidar com textos extensos de forma eficiente.",
-        "Em síntese, a compreensão de como as ideias se distribuem e avançam ao longo dos parágrafos do texto.",
-        "Em síntese, a identificação da posição principal defendida pelo texto e do argumento que sustenta essa posição."
+        "Em sintese, a leitura de partes do texto em que o autor narra acontecimentos ou descreve cenarios e situacoes.",
+        "Em sintese, o uso combinado de leitura global e busca seletiva para lidar com textos extensos de forma eficiente.",
+        "Em sintese, a compreensao de como as ideias se distribuem e avancam ao longo dos paragrafos do texto.",
+        "Em sintese, a identificacao da posicao principal defendida pelo texto e do argumento que sustenta essa posicao."
       ],
-      "correta": "Em síntese, a leitura de partes do texto em que o autor narra acontecimentos ou descreve cenários e situações.",
-      "comentario": "O resumo correto recupera o núcleo de trechos narrativos e descritivos.",
+      "correta": "Em sintese, a leitura de partes do texto em que o autor narra acontecimentos ou descreve cenarios e situacoes.",
+      "comentario": "O resumo correto recupera o nucleo de trechos narrativos e descritivos.",
       "tempoEstimado": 60,
       "tags": [
         "textos-longos",
@@ -6990,22 +6991,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Trechos narrativos e descritivos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associação entre exemplo e interpretação está correta em Trechos narrativos e descritivos?",
+      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Trechos narrativos e descritivos?",
       "opcoes": [
-        "The author describes the crowded city before presenting the argument. -> trechos descritivos e narrativos também ajudam a construir o sentido global",
-        "First, the student skims the article; then, he scans for the requested detail. -> trechos descritivos e narrativos também ajudam a construir o sentido global",
-        "The second paragraph develops the problem introduced in the first one. -> a frase resume a posição principal defendida",
-        "The author argues that cities should invest in public transportation. -> a combinação das duas estratégias melhora eficiência e controle de leitura"
+        "The author describes the crowded city before presenting the argument. -> trechos descritivos e narrativos tambem ajudam a construir o sentido global",
+        "First, the student skims the article; then, he scans for the requested detail. -> trechos descritivos e narrativos tambem ajudam a construir o sentido global",
+        "The second paragraph develops the problem introduced in the first one. -> a frase resume a posicao principal defendida",
+        "The author argues that cities should invest in public transportation. -> a combinacao das duas estrategias melhora eficiencia e controle de leitura"
       ],
-      "correta": "The author describes the crowded city before presenting the argument. -> trechos descritivos e narrativos também ajudam a construir o sentido global",
-      "comentario": "A associação correta mantém coerência entre exemplo e interpretação em trechos narrativos e descritivos.",
+      "correta": "The author describes the crowded city before presenting the argument. -> trechos descritivos e narrativos tambem ajudam a construir o sentido global",
+      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em trechos narrativos e descritivos.",
       "tempoEstimado": 65,
       "tags": [
         "textos-longos",
@@ -7029,7 +7030,7 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Trechos narrativos e descritivos",
       "dificuldadeLabel": "dificil",
@@ -7038,13 +7039,13 @@ export const textosLongos = {
       "tipo": "multipla_escolha",
       "enunciado": "Ao resolver uma atividade sobre trechos narrativos e descritivos, o estudante deve principalmente:",
       "opcoes": [
-        "distinguir narração e descrição dentro de textos mais extensos",
-        "observar se o trecho relata ações, caracteriza cenário ou desenvolve argumento",
-        "interpretar cenas, sequências e caracterizações em textos longos",
-        "a questão pede a função de um trecho narrativo ou descritivo"
+        "distinguir narracao e descricao dentro de textos mais extensos",
+        "observar se o trecho relata acoes, caracteriza cenario ou desenvolve argumento",
+        "interpretar cenas, sequencias e caracterizacoes em textos longos",
+        "a questao pede a funcao de um trecho narrativo ou descritivo"
       ],
-      "correta": "distinguir narração e descrição dentro de textos mais extensos",
-      "comentario": "O objetivo central de trechos narrativos e descritivos é distinguir narração e descrição dentro de textos mais extensos.",
+      "correta": "distinguir narracao e descricao dentro de textos mais extensos",
+      "comentario": "O objetivo central de trechos narrativos e descritivos e distinguir narracao e descricao dentro de textos mais extensos.",
       "tempoEstimado": 70,
       "tags": [
         "textos-longos",
@@ -7068,19 +7069,19 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Skimming and scanning em textos longos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Inglês, Skimming and scanning em textos longos refere-se a:",
+      "enunciado": "Em Ingles, Skimming and scanning em textos longos refere-se a:",
       "opcoes": [
         "o uso combinado de leitura global e busca seletiva para lidar com textos extensos de forma eficiente",
-        "a compreensão de como as ideias se distribuem e avançam ao longo dos parágrafos do texto",
-        "a identificação da posição principal defendida pelo texto e do argumento que sustenta essa posição",
-        "a localização de dados literais dentro de um texto mais extenso e com maior volume de informação"
+        "a compreensao de como as ideias se distribuem e avancam ao longo dos paragrafos do texto",
+        "a identificacao da posicao principal defendida pelo texto e do argumento que sustenta essa posicao",
+        "a localizacao de dados literais dentro de um texto mais extenso e com maior volume de informacao"
       ],
       "correta": "o uso combinado de leitura global e busca seletiva para lidar com textos extensos de forma eficiente",
       "comentario": "Skimming and scanning em textos longos refere-se ao uso combinado de leitura global e busca seletiva para lidar com textos extensos de forma eficiente.",
@@ -7107,22 +7108,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Skimming and scanning em textos longos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: o estudante lê rapidamente o texto para mapear seções e depois retorna ao parágrafo relevante para achar um dado específico. Esse caso está mais ligado a qual subtópico?",
+      "enunciado": "Observe a situacao: o estudante le rapidamente o texto para mapear secoes e depois retorna ao paragrafo relevante para achar um dado especifico. Esse caso esta mais ligado a qual subtopico?",
       "opcoes": [
         "Skimming and scanning em textos longos",
-        "Organização em parágrafos",
+        "Organizacao em paragrafos",
         "Tese e argumento central",
-        "Informações explícitas em texto longo"
+        "Informacoes explicitas em texto longo"
       ],
       "correta": "Skimming and scanning em textos longos",
-      "comentario": "A situação apresentada é melhor compreendida por meio de skimming and scanning em textos longos.",
+      "comentario": "A situacao apresentada e melhor compreendida por meio de skimming and scanning em textos longos.",
       "tempoEstimado": 20,
       "tags": [
         "textos-longos",
@@ -7146,7 +7147,7 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Skimming and scanning em textos longos",
       "dificuldadeLabel": "facil",
@@ -7185,22 +7186,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Skimming and scanning em textos longos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO representa corretamente skimming and scanning em textos longos?",
+      "enunciado": "Qual alternativa NAO representa corretamente skimming and scanning em textos longos?",
       "opcoes": [
         "The second paragraph develops the problem introduced in the first one.",
         "First, the student skims the article; then, he scans for the requested detail.",
         "mapear a estrutura geral e voltar ao ponto certo quando a pergunta exigir detalhe.",
-        "ganhar tempo e precisão em textos longos de prova."
+        "ganhar tempo e precisao em textos longos de prova."
       ],
       "correta": "The second paragraph develops the problem introduced in the first one.",
-      "comentario": "A opção incompatível ilustra outro subtópico, e não skimming and scanning em textos longos.",
+      "comentario": "A opcao incompativel ilustra outro subtopico, e nao skimming and scanning em textos longos.",
       "tempoEstimado": 25,
       "tags": [
         "textos-longos",
@@ -7224,22 +7225,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Skimming and scanning em textos longos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar skimming and scanning em textos longos, o foco principal é:",
+      "enunciado": "Ao estudar skimming and scanning em textos longos, o foco principal e:",
       "opcoes": [
-        "alternar visão geral e procura pontual em leitura longa",
-        "acompanhar a progressão temática em textos extensos",
+        "alternar visao geral e procura pontual em leitura longa",
+        "acompanhar a progressao tematica em textos extensos",
         "reconhecer a tese e o fio argumentativo principal",
-        "encontrar trechos específicos sem perder a visão do conjunto"
+        "encontrar trechos especificos sem perder a visao do conjunto"
       ],
-      "correta": "alternar visão geral e procura pontual em leitura longa",
-      "comentario": "Skimming and scanning em textos longos concentra-se em alternar visão geral e procura pontual em leitura longa.",
+      "correta": "alternar visao geral e procura pontual em leitura longa",
+      "comentario": "Skimming and scanning em textos longos concentra-se em alternar visao geral e procura pontual em leitura longa.",
       "tempoEstimado": 30,
       "tags": [
         "textos-longos",
@@ -7263,22 +7264,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Skimming and scanning em textos longos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Organização em parágrafos trata de a compreensão de como as ideias se distribuem e avançam ao longo dos parágrafos do texto, Skimming and scanning em textos longos destaca:",
+      "enunciado": "Enquanto Organizacao em paragrafos trata de a compreensao de como as ideias se distribuem e avancam ao longo dos paragrafos do texto, Skimming and scanning em textos longos destaca:",
       "opcoes": [
         "O uso combinado de leitura global e busca seletiva para lidar com textos extensos de forma eficiente.",
-        "A compreensão de como as ideias se distribuem e avançam ao longo dos parágrafos do texto.",
-        "A identificação da posição principal defendida pelo texto e do argumento que sustenta essa posição.",
-        "A localização de dados literais dentro de um texto mais extenso e com maior volume de informação."
+        "A compreensao de como as ideias se distribuem e avancam ao longo dos paragrafos do texto.",
+        "A identificacao da posicao principal defendida pelo texto e do argumento que sustenta essa posicao.",
+        "A localizacao de dados literais dentro de um texto mais extenso e com maior volume de informacao."
       ],
       "correta": "O uso combinado de leitura global e busca seletiva para lidar com textos extensos de forma eficiente.",
-      "comentario": "A comparação correta mostra a especificidade de skimming and scanning em textos longos.",
+      "comentario": "A comparacao correta mostra a especificidade de skimming and scanning em textos longos.",
       "tempoEstimado": 30,
       "tags": [
         "textos-longos",
@@ -7302,22 +7303,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Skimming and scanning em textos longos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma atividade de sala, o estudante lê rapidamente o texto para mapear seções e depois retorna ao parágrafo relevante para achar um dado específico. Para responder bem, o estudante deve mobilizar principalmente:",
+      "enunciado": "Em uma atividade de sala, o estudante le rapidamente o texto para mapear secoes e depois retorna ao paragrafo relevante para achar um dado especifico. Para responder bem, o estudante deve mobilizar principalmente:",
       "opcoes": [
         "Skimming and scanning em textos longos",
-        "Organização em parágrafos",
-        "Informações explícitas em texto longo",
-        "Referências e coesão"
+        "Organizacao em paragrafos",
+        "Informacoes explicitas em texto longo",
+        "Referencias e coesao"
       ],
       "correta": "Skimming and scanning em textos longos",
-      "comentario": "Esse tipo de tarefa exige domínio de skimming and scanning em textos longos.",
+      "comentario": "Esse tipo de tarefa exige dominio de skimming and scanning em textos longos.",
       "tempoEstimado": 35,
       "tags": [
         "textos-longos",
@@ -7341,22 +7342,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Skimming and scanning em textos longos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação prática depende mais diretamente de Skimming and scanning em textos longos?",
+      "enunciado": "Qual situacao pratica depende mais diretamente de Skimming and scanning em textos longos?",
       "opcoes": [
-        "ganhar tempo e precisão em textos longos de prova",
+        "ganhar tempo e precisao em textos longos de prova",
         "entender a estrutura global de textos longos",
         "responder itens sobre posicionamento e linha argumentativa",
-        "resolver itens sobre pronomes, expressões referenciais e coesão textual"
+        "resolver itens sobre pronomes, expressoes referenciais e coesao textual"
       ],
-      "correta": "ganhar tempo e precisão em textos longos de prova",
-      "comentario": "Skimming and scanning em textos longos aparece de forma direta em ganhar tempo e precisão em textos longos de prova.",
+      "correta": "ganhar tempo e precisao em textos longos de prova",
+      "comentario": "Skimming and scanning em textos longos aparece de forma direta em ganhar tempo e precisao em textos longos de prova.",
       "tempoEstimado": 35,
       "tags": [
         "textos-longos",
@@ -7380,22 +7381,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Skimming and scanning em textos longos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre skimming and scanning em textos longos?",
+      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre skimming and scanning em textos longos?",
       "opcoes": [
-        "o caso é resolvido com foco em skimming and scanning em textos longos.",
-        "o caso é melhor resolvido por organização em parágrafos.",
+        "o caso e resolvido com foco em skimming and scanning em textos longos.",
+        "o caso e melhor resolvido por organizacao em paragrafos.",
         "o caso elimina a necessidade de tese e argumento central.",
-        "o caso impede qualquer uso de informações explícitas em texto longo."
+        "o caso impede qualquer uso de informacoes explicitas em texto longo."
       ],
-      "correta": "o caso é resolvido com foco em skimming and scanning em textos longos.",
-      "comentario": "A conclusão correta retoma a função central de skimming and scanning em textos longos.",
+      "correta": "o caso e resolvido com foco em skimming and scanning em textos longos.",
+      "comentario": "A conclusao correta retoma a funcao central de skimming and scanning em textos longos.",
       "tempoEstimado": 40,
       "tags": [
         "textos-longos",
@@ -7419,7 +7420,7 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Skimming and scanning em textos longos",
       "dificuldadeLabel": "facil",
@@ -7428,12 +7429,12 @@ export const textosLongos = {
       "tipo": "multipla_escolha",
       "enunciado": "Se a turma fosse revisar skimming and scanning em textos longos, qual pergunta de estudo seria a mais adequada?",
       "opcoes": [
-        "Como skimming and scanning em textos longos aparece em ganhar tempo e precisão em textos longos de prova?",
-        "Como organização em parágrafos substitui totalmente ganhar tempo e precisão em textos longos de prova?",
-        "Por que tese e argumento central torna desnecessário estudar Skimming and scanning em textos longos?",
-        "De que modo informações explícitas em texto longo elimina toda leitura de contexto?"
+        "Como skimming and scanning em textos longos aparece em ganhar tempo e precisao em textos longos de prova?",
+        "Como organizacao em paragrafos substitui totalmente ganhar tempo e precisao em textos longos de prova?",
+        "Por que tese e argumento central torna desnecessario estudar Skimming and scanning em textos longos?",
+        "De que modo informacoes explicitas em texto longo elimina toda leitura de contexto?"
       ],
-      "correta": "Como skimming and scanning em textos longos aparece em ganhar tempo e precisão em textos longos de prova?",
+      "correta": "Como skimming and scanning em textos longos aparece em ganhar tempo e precisao em textos longos de prova?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de skimming and scanning em textos longos.",
       "tempoEstimado": 40,
       "tags": [
@@ -7458,22 +7459,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Skimming and scanning em textos longos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em skimming and scanning em textos longos é pensar que:",
+      "enunciado": "Um erro comum em skimming and scanning em textos longos e pensar que:",
       "opcoes": [
-        "textos longos exigem leitura linear e completa antes de qualquer questão",
-        "cada parágrafo de um texto longo traz uma ideia totalmente isolada das demais",
-        "tese e argumento central são apenas opinião solta do autor",
-        "em textos longos não vale a pena procurar informação literal porque tudo é inferência"
+        "textos longos exigem leitura linear e completa antes de qualquer questao",
+        "cada paragrafo de um texto longo traz uma ideia totalmente isolada das demais",
+        "tese e argumento central sao apenas opiniao solta do autor",
+        "em textos longos nao vale a pena procurar informacao literal porque tudo e inferencia"
       ],
-      "correta": "textos longos exigem leitura linear e completa antes de qualquer questão",
-      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de skimming and scanning em textos longos.",
+      "correta": "textos longos exigem leitura linear e completa antes de qualquer questao",
+      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de skimming and scanning em textos longos.",
       "tempoEstimado": 45,
       "tags": [
         "textos-longos",
@@ -7497,22 +7498,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Skimming and scanning em textos longos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"em texto longo, skimming and scanning atrapalham porque sempre deixam algo importante passar\". A avaliação mais adequada é:",
+      "enunciado": "Um estudante afirma: \"em texto longo, skimming and scanning atrapalham porque sempre deixam algo importante passar\". A avaliacao mais adequada e:",
       "opcoes": [
-        "A afirmação está incorreta, porque o uso combinado de leitura global e busca seletiva para lidar com textos extensos de forma eficiente.",
-        "A afirmação está correta, pois resume integralmente skimming and scanning em textos longos.",
-        "A afirmação está correta, porque basta decorar a tradução do exemplo.",
-        "A afirmação está incorreta apenas por não citar uma regra gramatical."
+        "A afirmacao esta incorreta, porque o uso combinado de leitura global e busca seletiva para lidar com textos extensos de forma eficiente.",
+        "A afirmacao esta correta, pois resume integralmente skimming and scanning em textos longos.",
+        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
+        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
       ],
-      "correta": "A afirmação está incorreta, porque o uso combinado de leitura global e busca seletiva para lidar com textos extensos de forma eficiente.",
-      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre skimming and scanning em textos longos.",
+      "correta": "A afirmacao esta incorreta, porque o uso combinado de leitura global e busca seletiva para lidar com textos extensos de forma eficiente.",
+      "comentario": "A fala do estudante apresenta um equivoco conceitual sobre skimming and scanning em textos longos.",
       "tempoEstimado": 45,
       "tags": [
         "textos-longos",
@@ -7536,22 +7537,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Skimming and scanning em textos longos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se skimming and scanning em textos longos fosse ignorado(a) em ganhar tempo e precisão em textos longos de prova, o resultado mais provável seria:",
+      "enunciado": "Se skimming and scanning em textos longos fosse ignorado(a) em ganhar tempo e precisao em textos longos de prova, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretação ficaria incompleta e aumentaria a chance de erro em ganhar tempo e precisão em textos longos de prova.",
-        "a questão seria resolvida automaticamente por organização em parágrafos.",
-        "nenhuma interpretação seria alterada, porque Skimming and scanning em textos longos não interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
+        "a interpretacao ficaria incompleta e aumentaria a chance de erro em ganhar tempo e precisao em textos longos de prova.",
+        "a questao seria resolvida automaticamente por organizacao em paragrafos.",
+        "nenhuma interpretacao seria alterada, porque Skimming and scanning em textos longos nao interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
       ],
-      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em ganhar tempo e precisão em textos longos de prova.",
-      "comentario": "Ignorar skimming and scanning em textos longos compromete a resolução correta da atividade.",
+      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em ganhar tempo e precisao em textos longos de prova.",
+      "comentario": "Ignorar skimming and scanning em textos longos compromete a resolucao correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "textos-longos",
@@ -7575,14 +7576,14 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Skimming and scanning em textos longos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou ação ilustra melhor Skimming and scanning em textos longos?",
+      "enunciado": "Qual trecho ou acao ilustra melhor Skimming and scanning em textos longos?",
       "opcoes": [
         "First, the student skims the article; then, he scans for the requested detail.",
         "The second paragraph develops the problem introduced in the first one.",
@@ -7590,7 +7591,7 @@ export const textosLongos = {
         "The survey mentioned in the text involved 500 students."
       ],
       "correta": "First, the student skims the article; then, he scans for the requested detail.",
-      "comentario": "O item correto é o que melhor exemplifica skimming and scanning em textos longos.",
+      "comentario": "O item correto e o que melhor exemplifica skimming and scanning em textos longos.",
       "tempoEstimado": 50,
       "tags": [
         "textos-longos",
@@ -7614,21 +7615,21 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Skimming and scanning em textos longos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao encontrar o exemplo \"First, the student skims the article; then, he scans for the requested detail.\", a leitura mais adequada é:",
+      "enunciado": "Ao encontrar o exemplo \"First, the student skims the article; then, he scans for the requested detail.\", a leitura mais adequada e:",
       "opcoes": [
-        "a combinação das duas estratégias melhora eficiência e controle de leitura",
-        "cada parágrafo cumpre uma função dentro da organização global",
-        "a frase resume a posição principal defendida",
+        "a combinacao das duas estrategias melhora eficiencia e controle de leitura",
+        "cada paragrafo cumpre uma funcao dentro da organizacao global",
+        "a frase resume a posicao principal defendida",
         "a resposta pode ser localizada diretamente em um trecho do texto"
       ],
-      "correta": "a combinação das duas estratégias melhora eficiência e controle de leitura",
+      "correta": "a combinacao das duas estrategias melhora eficiencia e controle de leitura",
       "comentario": "A leitura correta do exemplo revela o papel de skimming and scanning em textos longos.",
       "tempoEstimado": 55,
       "tags": [
@@ -7653,22 +7654,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Skimming and scanning em textos longos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estratégia ajuda mais a estudar skimming and scanning em textos longos?",
+      "enunciado": "Qual estrategia ajuda mais a estudar skimming and scanning em textos longos?",
       "opcoes": [
         "mapear a estrutura geral e voltar ao ponto certo quando a pergunta exigir detalhe",
-        "identificar papel de cada parágrafo dentro do texto",
+        "identificar papel de cada paragrafo dentro do texto",
         "procurar a ideia defendida e os argumentos que a sustentam",
-        "usar palavra-chave da pergunta e rastrear o parágrafo relevante"
+        "usar palavra-chave da pergunta e rastrear o paragrafo relevante"
       ],
       "correta": "mapear a estrutura geral e voltar ao ponto certo quando a pergunta exigir detalhe",
-      "comentario": "A estratégia correta fortalece o domínio de skimming and scanning em textos longos.",
+      "comentario": "A estrategia correta fortalece o dominio de skimming and scanning em textos longos.",
       "tempoEstimado": 55,
       "tags": [
         "textos-longos",
@@ -7692,22 +7693,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Skimming and scanning em textos longos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Skimming and scanning em textos longos é mais cobrado quando:",
+      "enunciado": "Em uma prova, Skimming and scanning em textos longos e mais cobrado quando:",
       "opcoes": [
-        "a questão cobra estratégia de leitura adequada a texto extenso",
-        "a questão pede localizar função ou contribuição de um parágrafo",
-        "o item pede identificar a posição central do texto",
-        "a questão cobra dado explícito em meio a texto extenso"
+        "a questao cobra estrategia de leitura adequada a texto extenso",
+        "a questao pede localizar funcao ou contribuicao de um paragrafo",
+        "o item pede identificar a posicao central do texto",
+        "a questao cobra dado explicito em meio a texto extenso"
       ],
-      "correta": "a questão cobra estratégia de leitura adequada a texto extenso",
-      "comentario": "Esse é o tipo de demanda em que skimming and scanning em textos longos aparece com mais frequência.",
+      "correta": "a questao cobra estrategia de leitura adequada a texto extenso",
+      "comentario": "Esse e o tipo de demanda em que skimming and scanning em textos longos aparece com mais frequencia.",
       "tempoEstimado": 60,
       "tags": [
         "textos-longos",
@@ -7731,7 +7732,7 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Skimming and scanning em textos longos",
       "dificuldadeLabel": "dificil",
@@ -7740,13 +7741,13 @@ export const textosLongos = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual resumo sintetiza melhor a ideia de Skimming and scanning em textos longos?",
       "opcoes": [
-        "Em síntese, o uso combinado de leitura global e busca seletiva para lidar com textos extensos de forma eficiente.",
-        "Em síntese, a compreensão de como as ideias se distribuem e avançam ao longo dos parágrafos do texto.",
-        "Em síntese, a identificação da posição principal defendida pelo texto e do argumento que sustenta essa posição.",
-        "Em síntese, a localização de dados literais dentro de um texto mais extenso e com maior volume de informação."
+        "Em sintese, o uso combinado de leitura global e busca seletiva para lidar com textos extensos de forma eficiente.",
+        "Em sintese, a compreensao de como as ideias se distribuem e avancam ao longo dos paragrafos do texto.",
+        "Em sintese, a identificacao da posicao principal defendida pelo texto e do argumento que sustenta essa posicao.",
+        "Em sintese, a localizacao de dados literais dentro de um texto mais extenso e com maior volume de informacao."
       ],
-      "correta": "Em síntese, o uso combinado de leitura global e busca seletiva para lidar com textos extensos de forma eficiente.",
-      "comentario": "O resumo correto recupera o núcleo de skimming and scanning em textos longos.",
+      "correta": "Em sintese, o uso combinado de leitura global e busca seletiva para lidar com textos extensos de forma eficiente.",
+      "comentario": "O resumo correto recupera o nucleo de skimming and scanning em textos longos.",
       "tempoEstimado": 60,
       "tags": [
         "textos-longos",
@@ -7770,22 +7771,22 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Skimming and scanning em textos longos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associação entre exemplo e interpretação está correta em Skimming and scanning em textos longos?",
+      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Skimming and scanning em textos longos?",
       "opcoes": [
-        "First, the student skims the article; then, he scans for the requested detail. -> a combinação das duas estratégias melhora eficiência e controle de leitura",
-        "The second paragraph develops the problem introduced in the first one. -> a combinação das duas estratégias melhora eficiência e controle de leitura",
+        "First, the student skims the article; then, he scans for the requested detail. -> a combinacao das duas estrategias melhora eficiencia e controle de leitura",
+        "The second paragraph develops the problem introduced in the first one. -> a combinacao das duas estrategias melhora eficiencia e controle de leitura",
         "The author argues that cities should invest in public transportation. -> a resposta pode ser localizada diretamente em um trecho do texto",
-        "The survey mentioned in the text involved 500 students. -> cada parágrafo cumpre uma função dentro da organização global"
+        "The survey mentioned in the text involved 500 students. -> cada paragrafo cumpre uma funcao dentro da organizacao global"
       ],
-      "correta": "First, the student skims the article; then, he scans for the requested detail. -> a combinação das duas estratégias melhora eficiência e controle de leitura",
-      "comentario": "A associação correta mantém coerência entre exemplo e interpretação em skimming and scanning em textos longos.",
+      "correta": "First, the student skims the article; then, he scans for the requested detail. -> a combinacao das duas estrategias melhora eficiencia e controle de leitura",
+      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em skimming and scanning em textos longos.",
       "tempoEstimado": 65,
       "tags": [
         "textos-longos",
@@ -7809,7 +7810,7 @@ export const textosLongos = {
       "serie": [
         3
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Textos Longos",
       "subtopico": "Skimming and scanning em textos longos",
       "dificuldadeLabel": "dificil",
@@ -7818,13 +7819,13 @@ export const textosLongos = {
       "tipo": "multipla_escolha",
       "enunciado": "Ao resolver uma atividade sobre skimming and scanning em textos longos, o estudante deve principalmente:",
       "opcoes": [
-        "alternar visão geral e procura pontual em leitura longa",
+        "alternar visao geral e procura pontual em leitura longa",
         "mapear a estrutura geral e voltar ao ponto certo quando a pergunta exigir detalhe",
-        "ganhar tempo e precisão em textos longos de prova",
-        "a questão cobra estratégia de leitura adequada a texto extenso"
+        "ganhar tempo e precisao em textos longos de prova",
+        "a questao cobra estrategia de leitura adequada a texto extenso"
       ],
-      "correta": "alternar visão geral e procura pontual em leitura longa",
-      "comentario": "O objetivo central de skimming and scanning em textos longos é alternar visão geral e procura pontual em leitura longa.",
+      "correta": "alternar visao geral e procura pontual em leitura longa",
+      "comentario": "O objetivo central de skimming and scanning em textos longos e alternar visao geral e procura pontual em leitura longa.",
       "tempoEstimado": 70,
       "tags": [
         "textos-longos",

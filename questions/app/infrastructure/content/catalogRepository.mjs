@@ -1,3 +1,8 @@
+import {
+    getCanonicalSubjectMetadata,
+    slugify
+} from "../../domain/subjectMetadata.mjs";
+
 function buildRuntimeUrl(
     runtimeBaseUrl,
     relativePath
@@ -164,15 +169,6 @@ function cloneValue(value) {
     );
 }
 
-function slugify(value) {
-    return String(value || "")
-        .normalize("NFD")
-        .replace(/[\u0300-\u036f]/g, "")
-        .toLowerCase()
-        .replace(/[^a-z0-9]+/g, "_")
-        .replace(/^_+|_+$/g, "");
-}
-
 function normalizeText(value) {
     return String(value || "")
         .normalize("NFD")
@@ -254,8 +250,12 @@ function mapQuestionRecord(
     question = {},
     index = 0
 ) {
+    const subjectMeta =
+        getCanonicalSubjectMetadata(
+            topicRecord.materia
+        );
     const subjectKey =
-        slugify(topicRecord.materia);
+        subjectMeta.key;
     const topicKey =
         topicRecord.id ||
         slugify(topicRecord.topico);
@@ -287,7 +287,8 @@ function mapQuestionRecord(
                 ? [...question.serie]
                 : [...(topicRecord.serie || [])],
         subjectKey,
-        subjectLabel: topicRecord.materia,
+        subjectLabel:
+            subjectMeta.label,
         topicKey,
         topicLabel: topicRecord.topico,
         subtopicKey:

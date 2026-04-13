@@ -1,15 +1,16 @@
-export const vocabularioBasico = {
+﻿export const vocabularioBasico = {
   "id": "ingles_vocabulario_basico",
-  "materia": "Inglês",
+  "materia": "Ingles",
   "serie": [
     1
   ],
-  "topico": "Vocabulário Básico",
+  "topico": "Vocabulario Basico",
   "metadados": {
     "disciplinaId": "ingles",
     "base": "ESCOLAR",
-    "eixo": "Fundamentos de comunicação em Inglês",
-    "frente": "Léxico inicial e compreensão de contextos do cotidiano",
+    "seloEditorial": "VERIFICADA",
+    "eixo": "Fundamentos de comunicacao em Ingles",
+    "frente": "Lexico inicial e compreensao de contextos do cotidiano",
     "searchAliases": [
       "ingles basico",
       "vocabulario basico",
@@ -19,27 +20,27 @@ export const vocabularioBasico = {
       "daily vocabulary"
     ],
     "subtopicosBase": [
-      "Saudações e apresentações",
-      "Informações pessoais",
-      "Família e relações",
+      "Saudacoes e apresentacoes",
+      "Informacoes pessoais",
+      "Familia e relacoes",
       "Objetos escolares",
-      "Números, datas e horas",
-      "Cores, roupas e aparência",
+      "Numeros, datas e horas",
+      "Cores, roupas e aparencia",
       "Comidas e bebidas",
       "Lugares da cidade",
-      "Rotina e ações cotidianas",
-      "Cognatos e falsos cognatos básicos"
+      "Rotina e acoes cotidianas",
+      "Cognatos e falsos cognatos basicos"
     ],
     "habilidadesBase": [
-      "reconhecer vocabulário essencial de uso cotidiano",
+      "reconhecer vocabulario essencial de uso cotidiano",
       "associar palavras a imagens e contextos imediatos",
       "identificar cognatos e evitar falso cognatos comuns",
-      "relacionar vocabulário a situações escolares e pessoais",
-      "interpretar expressões simples em frases curtas",
-      "construir repertório inicial para leitura em inglês"
+      "relacionar vocabulario a situacoes escolares e pessoais",
+      "interpretar expressoes simples em frases curtas",
+      "construir repertorio inicial para leitura em ingles"
     ],
     "auditado": true,
-    "auditadoEm": "2026-04-11",
+    "auditadoEm": "2026-04-12",
     "auditoriaTipo": "varredura-mais-profunda"
   },
   "questoes": [
@@ -48,22 +49,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Saudações e apresentações",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Saudacoes e apresentacoes",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Inglês, Saudações e apresentações refere-se a:",
+      "enunciado": "Em Ingles, Saudacoes e apresentacoes refere-se a:",
       "opcoes": [
-        "o vocabulário usado para cumprimentar, apresentar-se e iniciar interações simples",
-        "o vocabulário relacionado a nome, idade, nacionalidade, endereço e dados básicos",
-        "o conjunto de palavras usado para nomear membros da família e vínculos simples",
-        "o vocabulário ligado a materiais e itens presentes no ambiente escolar"
+        "o vocabulario usado para cumprimentar, apresentar-se e iniciar interacoes simples",
+        "o vocabulario relacionado a nome, idade, nacionalidade, endereco e dados basicos",
+        "o conjunto de palavras usado para nomear membros da familia e vinculos simples",
+        "o vocabulario ligado a materiais e itens presentes no ambiente escolar"
       ],
-      "correta": "o vocabulário usado para cumprimentar, apresentar-se e iniciar interações simples",
-      "comentario": "Saudações e apresentações refere-se ao vocabulário usado para cumprimentar, apresentar-se e iniciar interações simples.",
+      "correta": "o vocabulario usado para cumprimentar, apresentar-se e iniciar interacoes simples",
+      "comentario": "Saudacoes e apresentacoes refere-se ao vocabulario usado para cumprimentar, apresentar-se e iniciar interacoes simples.",
       "tempoEstimado": 20,
       "tags": [
         "vocabulario-basico",
@@ -87,22 +88,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Saudações e apresentações",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Saudacoes e apresentacoes",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: duas pessoas se encontram pela manhã e trocam nomes. Esse caso está mais ligado a qual subtópico?",
+      "enunciado": "Observe a situacao: duas pessoas se encontram pela manha e trocam nomes. Esse caso esta mais ligado a qual subtopico?",
       "opcoes": [
-        "Saudações e apresentações",
-        "Informações pessoais",
-        "Família e relações",
+        "Saudacoes e apresentacoes",
+        "Informacoes pessoais",
+        "Familia e relacoes",
         "Objetos escolares"
       ],
-      "correta": "Saudações e apresentações",
-      "comentario": "A situação apresentada é melhor compreendida por meio de saudações e apresentações.",
+      "correta": "Saudacoes e apresentacoes",
+      "comentario": "A situacao apresentada e melhor compreendida por meio de saudacoes e apresentacoes.",
       "tempoEstimado": 20,
       "tags": [
         "vocabulario-basico",
@@ -126,14 +127,14 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Saudações e apresentações",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Saudacoes e apresentacoes",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual exemplo combina melhor com saudações e apresentações?",
+      "enunciado": "Qual exemplo combina melhor com saudacoes e apresentacoes?",
       "opcoes": [
         "Good morning! My name is Anna.",
         "I am thirteen years old and I am from Brazil.",
@@ -141,7 +142,7 @@ export const vocabularioBasico = {
         "There is a pencil case in my backpack."
       ],
       "correta": "Good morning! My name is Anna.",
-      "comentario": "O exemplo correto ilustra o uso de saudações e apresentações.",
+      "comentario": "O exemplo correto ilustra o uso de saudacoes e apresentacoes.",
       "tempoEstimado": 25,
       "tags": [
         "vocabulario-basico",
@@ -165,22 +166,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Saudações e apresentações",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Saudacoes e apresentacoes",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO representa corretamente saudações e apresentações?",
+      "enunciado": "Qual alternativa NAO representa corretamente saudacoes e apresentacoes?",
       "opcoes": [
         "I am thirteen years old and I am from Brazil.",
         "Good morning! My name is Anna.",
-        "observar o momento da interação e a intenção de iniciar o contato.",
-        "entender diálogos iniciais e apresentações pessoais."
+        "observar o momento da interacao e a intencao de iniciar o contato.",
+        "entender dialogos iniciais e apresentacoes pessoais."
       ],
       "correta": "I am thirteen years old and I am from Brazil.",
-      "comentario": "A opção incompatível ilustra outro subtópico, e não saudações e apresentações.",
+      "comentario": "A opcao incompativel ilustra outro subtopico, e nao saudacoes e apresentacoes.",
       "tempoEstimado": 25,
       "tags": [
         "vocabulario-basico",
@@ -204,22 +205,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Saudações e apresentações",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Saudacoes e apresentacoes",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar saudações e apresentações, o foco principal é:",
+      "enunciado": "Ao estudar saudacoes e apresentacoes, o foco principal e:",
       "opcoes": [
-        "reconhecer fórmulas básicas de cumprimento e apresentação",
-        "identificar dados pessoais em frases curtas e formulários simples",
-        "reconhecer parentesco e relações pessoais em inglês",
-        "associar palavras em inglês a objetos usados na escola"
+        "reconhecer formulas basicas de cumprimento e apresentacao",
+        "identificar dados pessoais em frases curtas e formularios simples",
+        "reconhecer parentesco e relacoes pessoais em ingles",
+        "associar palavras em ingles a objetos usados na escola"
       ],
-      "correta": "reconhecer fórmulas básicas de cumprimento e apresentação",
-      "comentario": "Saudações e apresentações concentra-se em reconhecer fórmulas básicas de cumprimento e apresentação.",
+      "correta": "reconhecer formulas basicas de cumprimento e apresentacao",
+      "comentario": "Saudacoes e apresentacoes concentra-se em reconhecer formulas basicas de cumprimento e apresentacao.",
       "tempoEstimado": 30,
       "tags": [
         "vocabulario-basico",
@@ -243,22 +244,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Saudações e apresentações",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Saudacoes e apresentacoes",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Informações pessoais trata de o vocabulário relacionado a nome, idade, nacionalidade, endereço e dados básicos, Saudações e apresentações destaca:",
+      "enunciado": "Enquanto Informacoes pessoais trata de o vocabulario relacionado a nome, idade, nacionalidade, endereco e dados basicos, Saudacoes e apresentacoes destaca:",
       "opcoes": [
-        "O vocabulário usado para cumprimentar, apresentar-se e iniciar interações simples.",
-        "O vocabulário relacionado a nome, idade, nacionalidade, endereço e dados básicos.",
-        "O conjunto de palavras usado para nomear membros da família e vínculos simples.",
-        "O vocabulário ligado a materiais e itens presentes no ambiente escolar."
+        "O vocabulario usado para cumprimentar, apresentar-se e iniciar interacoes simples.",
+        "O vocabulario relacionado a nome, idade, nacionalidade, endereco e dados basicos.",
+        "O conjunto de palavras usado para nomear membros da familia e vinculos simples.",
+        "O vocabulario ligado a materiais e itens presentes no ambiente escolar."
       ],
-      "correta": "O vocabulário usado para cumprimentar, apresentar-se e iniciar interações simples.",
-      "comentario": "A comparação correta mostra a especificidade de saudações e apresentações.",
+      "correta": "O vocabulario usado para cumprimentar, apresentar-se e iniciar interacoes simples.",
+      "comentario": "A comparacao correta mostra a especificidade de saudacoes e apresentacoes.",
       "tempoEstimado": 30,
       "tags": [
         "vocabulario-basico",
@@ -282,22 +283,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Saudações e apresentações",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Saudacoes e apresentacoes",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma atividade de sala, duas pessoas se encontram pela manhã e trocam nomes. Para responder bem, o estudante deve mobilizar principalmente:",
+      "enunciado": "Em uma atividade de sala, duas pessoas se encontram pela manha e trocam nomes. Para responder bem, o estudante deve mobilizar principalmente:",
       "opcoes": [
-        "Saudações e apresentações",
-        "Informações pessoais",
+        "Saudacoes e apresentacoes",
+        "Informacoes pessoais",
         "Objetos escolares",
-        "Números, datas e horas"
+        "Numeros, datas e horas"
       ],
-      "correta": "Saudações e apresentações",
-      "comentario": "Esse tipo de tarefa exige domínio de saudações e apresentações.",
+      "correta": "Saudacoes e apresentacoes",
+      "comentario": "Esse tipo de tarefa exige dominio de saudacoes e apresentacoes.",
       "tempoEstimado": 35,
       "tags": [
         "vocabulario-basico",
@@ -321,22 +322,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Saudações e apresentações",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Saudacoes e apresentacoes",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação prática depende mais diretamente de Saudações e apresentações?",
+      "enunciado": "Qual situacao pratica depende mais diretamente de Saudacoes e apresentacoes?",
       "opcoes": [
-        "entender diálogos iniciais e apresentações pessoais",
-        "preencher ou interpretar fichas e apresentações pessoais",
-        "interpretar descrições familiares e relações de parentesco",
-        "interpretar horários, datas e números em avisos simples"
+        "entender dialogos iniciais e apresentacoes pessoais",
+        "preencher ou interpretar fichas e apresentacoes pessoais",
+        "interpretar descricoes familiares e relacoes de parentesco",
+        "interpretar horarios, datas e numeros em avisos simples"
       ],
-      "correta": "entender diálogos iniciais e apresentações pessoais",
-      "comentario": "Saudações e apresentações aparece de forma direta em entender diálogos iniciais e apresentações pessoais.",
+      "correta": "entender dialogos iniciais e apresentacoes pessoais",
+      "comentario": "Saudacoes e apresentacoes aparece de forma direta em entender dialogos iniciais e apresentacoes pessoais.",
       "tempoEstimado": 35,
       "tags": [
         "vocabulario-basico",
@@ -360,22 +361,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Saudações e apresentações",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Saudacoes e apresentacoes",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre saudações e apresentações?",
+      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre saudacoes e apresentacoes?",
       "opcoes": [
-        "o caso é resolvido com foco em saudações e apresentações.",
-        "o caso é melhor resolvido por informações pessoais.",
-        "o caso elimina a necessidade de família e relações.",
+        "o caso e resolvido com foco em saudacoes e apresentacoes.",
+        "o caso e melhor resolvido por informacoes pessoais.",
+        "o caso elimina a necessidade de familia e relacoes.",
         "o caso impede qualquer uso de objetos escolares."
       ],
-      "correta": "o caso é resolvido com foco em saudações e apresentações.",
-      "comentario": "A conclusão correta retoma a função central de saudações e apresentações.",
+      "correta": "o caso e resolvido com foco em saudacoes e apresentacoes.",
+      "comentario": "A conclusao correta retoma a funcao central de saudacoes e apresentacoes.",
       "tempoEstimado": 40,
       "tags": [
         "vocabulario-basico",
@@ -399,22 +400,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Saudações e apresentações",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Saudacoes e apresentacoes",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Se a turma fosse revisar saudações e apresentações, qual pergunta de estudo seria a mais adequada?",
+      "enunciado": "Se a turma fosse revisar saudacoes e apresentacoes, qual pergunta de estudo seria a mais adequada?",
       "opcoes": [
-        "Como saudações e apresentações aparece em entender diálogos iniciais e apresentações pessoais?",
-        "Como informações pessoais substitui totalmente entender diálogos iniciais e apresentações pessoais?",
-        "Por que família e relações torna desnecessário estudar Saudações e apresentações?",
+        "Como saudacoes e apresentacoes aparece em entender dialogos iniciais e apresentacoes pessoais?",
+        "Como informacoes pessoais substitui totalmente entender dialogos iniciais e apresentacoes pessoais?",
+        "Por que familia e relacoes torna desnecessario estudar Saudacoes e apresentacoes?",
         "De que modo objetos escolares elimina toda leitura de contexto?"
       ],
-      "correta": "Como saudações e apresentações aparece em entender diálogos iniciais e apresentações pessoais?",
-      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de saudações e apresentações.",
+      "correta": "Como saudacoes e apresentacoes aparece em entender dialogos iniciais e apresentacoes pessoais?",
+      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de saudacoes e apresentacoes.",
       "tempoEstimado": 40,
       "tags": [
         "vocabulario-basico",
@@ -438,22 +439,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Saudações e apresentações",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Saudacoes e apresentacoes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em saudações e apresentações é pensar que:",
+      "enunciado": "Um erro comum em saudacoes e apresentacoes e pensar que:",
       "opcoes": [
-        "good morning e good night podem ser usados da mesma forma em qualquer horário",
-        "informações pessoais em inglês aparecem sempre na mesma ordem e com as mesmas palavras",
-        "mother e father significam parentes em geral, sem diferença específica",
-        "todo objeto escolar pode ser entendido apenas pela semelhança sonora com o português"
+        "good morning e good night podem ser usados da mesma forma em qualquer horario",
+        "informacoes pessoais em ingles aparecem sempre na mesma ordem e com as mesmas palavras",
+        "mother e father significam parentes em geral, sem diferenca especifica",
+        "todo objeto escolar pode ser entendido apenas pela semelhanca sonora com o portugues"
       ],
-      "correta": "good morning e good night podem ser usados da mesma forma em qualquer horário",
-      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de saudações e apresentações.",
+      "correta": "good morning e good night podem ser usados da mesma forma em qualquer horario",
+      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de saudacoes e apresentacoes.",
       "tempoEstimado": 45,
       "tags": [
         "vocabulario-basico",
@@ -477,22 +478,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Saudações e apresentações",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Saudacoes e apresentacoes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"good night é a melhor saudação para começar uma conversa de manhã\". A avaliação mais adequada é:",
+      "enunciado": "Um estudante afirma: \"good night e a melhor saudacao para comecar uma conversa de manha\". A avaliacao mais adequada e:",
       "opcoes": [
-        "A afirmação está incorreta, porque o vocabulário usado para cumprimentar, apresentar-se e iniciar interações simples.",
-        "A afirmação está correta, pois resume integralmente saudações e apresentações.",
-        "A afirmação está correta, porque basta decorar a tradução do exemplo.",
-        "A afirmação está incorreta apenas por não citar uma regra gramatical."
+        "A afirmacao esta incorreta, porque o vocabulario usado para cumprimentar, apresentar-se e iniciar interacoes simples.",
+        "A afirmacao esta correta, pois resume integralmente saudacoes e apresentacoes.",
+        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
+        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
       ],
-      "correta": "A afirmação está incorreta, porque o vocabulário usado para cumprimentar, apresentar-se e iniciar interações simples.",
-      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre saudações e apresentações.",
+      "correta": "A afirmacao esta incorreta, porque o vocabulario usado para cumprimentar, apresentar-se e iniciar interacoes simples.",
+      "comentario": "A fala do estudante apresenta um equivoco conceitual sobre saudacoes e apresentacoes.",
       "tempoEstimado": 45,
       "tags": [
         "vocabulario-basico",
@@ -516,22 +517,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Saudações e apresentações",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Saudacoes e apresentacoes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se saudações e apresentações fosse ignorado(a) em entender diálogos iniciais e apresentações pessoais, o resultado mais provável seria:",
+      "enunciado": "Se saudacoes e apresentacoes fosse ignorado(a) em entender dialogos iniciais e apresentacoes pessoais, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretação ficaria incompleta e aumentaria a chance de erro em entender diálogos iniciais e apresentações pessoais.",
-        "a questão seria resolvida automaticamente por informações pessoais.",
-        "nenhuma interpretação seria alterada, porque Saudações e apresentações não interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
+        "a interpretacao ficaria incompleta e aumentaria a chance de erro em entender dialogos iniciais e apresentacoes pessoais.",
+        "a questao seria resolvida automaticamente por informacoes pessoais.",
+        "nenhuma interpretacao seria alterada, porque Saudacoes e apresentacoes nao interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
       ],
-      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em entender diálogos iniciais e apresentações pessoais.",
-      "comentario": "Ignorar saudações e apresentações compromete a resolução correta da atividade.",
+      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em entender dialogos iniciais e apresentacoes pessoais.",
+      "comentario": "Ignorar saudacoes e apresentacoes compromete a resolucao correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "vocabulario-basico",
@@ -555,14 +556,14 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Saudações e apresentações",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Saudacoes e apresentacoes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou ação ilustra melhor Saudações e apresentações?",
+      "enunciado": "Qual trecho ou acao ilustra melhor Saudacoes e apresentacoes?",
       "opcoes": [
         "Good morning! My name is Anna.",
         "I am thirteen years old and I am from Brazil.",
@@ -570,7 +571,7 @@ export const vocabularioBasico = {
         "There is a pencil case in my backpack."
       ],
       "correta": "Good morning! My name is Anna.",
-      "comentario": "O item correto é o que melhor exemplifica saudações e apresentações.",
+      "comentario": "O item correto e o que melhor exemplifica saudacoes e apresentacoes.",
       "tempoEstimado": 50,
       "tags": [
         "vocabulario-basico",
@@ -594,22 +595,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Saudações e apresentações",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Saudacoes e apresentacoes",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao encontrar o exemplo \"Good morning! My name is Anna.\", a leitura mais adequada é:",
+      "enunciado": "Ao encontrar o exemplo \"Good morning! My name is Anna.\", a leitura mais adequada e:",
       "opcoes": [
-        "a frase apresenta uma saudação e uma apresentação simples",
+        "a frase apresenta uma saudacao e uma apresentacao simples",
         "a frase apresenta idade e origem de forma direta",
-        "a frase indica um vínculo familiar específico",
+        "a frase indica um vinculo familiar especifico",
         "a frase apresenta itens comuns do cotidiano escolar"
       ],
-      "correta": "a frase apresenta uma saudação e uma apresentação simples",
-      "comentario": "A leitura correta do exemplo revela o papel de saudações e apresentações.",
+      "correta": "a frase apresenta uma saudacao e uma apresentacao simples",
+      "comentario": "A leitura correta do exemplo revela o papel de saudacoes e apresentacoes.",
       "tempoEstimado": 55,
       "tags": [
         "vocabulario-basico",
@@ -633,22 +634,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Saudações e apresentações",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Saudacoes e apresentacoes",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estratégia ajuda mais a estudar saudações e apresentações?",
+      "enunciado": "Qual estrategia ajuda mais a estudar saudacoes e apresentacoes?",
       "opcoes": [
-        "observar o momento da interação e a intenção de iniciar o contato",
+        "observar o momento da interacao e a intencao de iniciar o contato",
         "procurar palavras ligadas a identidade, idade e origem",
         "relacionar cada palavra ao grau de parentesco indicado no contexto",
-        "associar o vocabulário ao objeto e ao ambiente em que ele aparece"
+        "associar o vocabulario ao objeto e ao ambiente em que ele aparece"
       ],
-      "correta": "observar o momento da interação e a intenção de iniciar o contato",
-      "comentario": "A estratégia correta fortalece o domínio de saudações e apresentações.",
+      "correta": "observar o momento da interacao e a intencao de iniciar o contato",
+      "comentario": "A estrategia correta fortalece o dominio de saudacoes e apresentacoes.",
       "tempoEstimado": 55,
       "tags": [
         "vocabulario-basico",
@@ -672,22 +673,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Saudações e apresentações",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Saudacoes e apresentacoes",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Saudações e apresentações é mais cobrado quando:",
+      "enunciado": "Em uma prova, Saudacoes e apresentacoes e mais cobrado quando:",
       "opcoes": [
-        "a questão pede identificar ou completar uma saudação adequada ao contexto",
-        "o item pede localizar ou relacionar dados pessoais básicos",
-        "a questão cobra identificação de vocabulário de família",
+        "a questao pede identificar ou completar uma saudacao adequada ao contexto",
+        "o item pede localizar ou relacionar dados pessoais basicos",
+        "a questao cobra identificacao de vocabulario de familia",
         "o item pede reconhecer ou relacionar nomes de materiais escolares"
       ],
-      "correta": "a questão pede identificar ou completar uma saudação adequada ao contexto",
-      "comentario": "Esse é o tipo de demanda em que saudações e apresentações aparece com mais frequência.",
+      "correta": "a questao pede identificar ou completar uma saudacao adequada ao contexto",
+      "comentario": "Esse e o tipo de demanda em que saudacoes e apresentacoes aparece com mais frequencia.",
       "tempoEstimado": 60,
       "tags": [
         "vocabulario-basico",
@@ -711,22 +712,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Saudações e apresentações",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Saudacoes e apresentacoes",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual resumo sintetiza melhor a ideia de Saudações e apresentações?",
+      "enunciado": "Qual resumo sintetiza melhor a ideia de Saudacoes e apresentacoes?",
       "opcoes": [
-        "Em síntese, o vocabulário usado para cumprimentar, apresentar-se e iniciar interações simples.",
-        "Em síntese, o vocabulário relacionado a nome, idade, nacionalidade, endereço e dados básicos.",
-        "Em síntese, o conjunto de palavras usado para nomear membros da família e vínculos simples.",
-        "Em síntese, o vocabulário ligado a materiais e itens presentes no ambiente escolar."
+        "Em sintese, o vocabulario usado para cumprimentar, apresentar-se e iniciar interacoes simples.",
+        "Em sintese, o vocabulario relacionado a nome, idade, nacionalidade, endereco e dados basicos.",
+        "Em sintese, o conjunto de palavras usado para nomear membros da familia e vinculos simples.",
+        "Em sintese, o vocabulario ligado a materiais e itens presentes no ambiente escolar."
       ],
-      "correta": "Em síntese, o vocabulário usado para cumprimentar, apresentar-se e iniciar interações simples.",
-      "comentario": "O resumo correto recupera o núcleo de saudações e apresentações.",
+      "correta": "Em sintese, o vocabulario usado para cumprimentar, apresentar-se e iniciar interacoes simples.",
+      "comentario": "O resumo correto recupera o nucleo de saudacoes e apresentacoes.",
       "tempoEstimado": 60,
       "tags": [
         "vocabulario-basico",
@@ -750,22 +751,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Saudações e apresentações",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Saudacoes e apresentacoes",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associação entre exemplo e interpretação está correta em Saudações e apresentações?",
+      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Saudacoes e apresentacoes?",
       "opcoes": [
-        "Good morning! My name is Anna. -> a frase apresenta uma saudação e uma apresentação simples",
-        "I am thirteen years old and I am from Brazil. -> a frase apresenta uma saudação e uma apresentação simples",
+        "Good morning! My name is Anna. -> a frase apresenta uma saudacao e uma apresentacao simples",
+        "I am thirteen years old and I am from Brazil. -> a frase apresenta uma saudacao e uma apresentacao simples",
         "My cousin lives with my grandparents. -> a frase apresenta itens comuns do cotidiano escolar",
         "There is a pencil case in my backpack. -> a frase apresenta idade e origem de forma direta"
       ],
-      "correta": "Good morning! My name is Anna. -> a frase apresenta uma saudação e uma apresentação simples",
-      "comentario": "A associação correta mantém coerência entre exemplo e interpretação em saudações e apresentações.",
+      "correta": "Good morning! My name is Anna. -> a frase apresenta uma saudacao e uma apresentacao simples",
+      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em saudacoes e apresentacoes.",
       "tempoEstimado": 65,
       "tags": [
         "vocabulario-basico",
@@ -789,22 +790,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Saudações e apresentações",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Saudacoes e apresentacoes",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao resolver uma atividade sobre saudações e apresentações, o estudante deve principalmente:",
+      "enunciado": "Ao resolver uma atividade sobre saudacoes e apresentacoes, o estudante deve principalmente:",
       "opcoes": [
-        "reconhecer fórmulas básicas de cumprimento e apresentação",
-        "observar o momento da interação e a intenção de iniciar o contato",
-        "entender diálogos iniciais e apresentações pessoais",
-        "a questão pede identificar ou completar uma saudação adequada ao contexto"
+        "reconhecer formulas basicas de cumprimento e apresentacao",
+        "observar o momento da interacao e a intencao de iniciar o contato",
+        "entender dialogos iniciais e apresentacoes pessoais",
+        "a questao pede identificar ou completar uma saudacao adequada ao contexto"
       ],
-      "correta": "reconhecer fórmulas básicas de cumprimento e apresentação",
-      "comentario": "O objetivo central de saudações e apresentações é reconhecer fórmulas básicas de cumprimento e apresentação.",
+      "correta": "reconhecer formulas basicas de cumprimento e apresentacao",
+      "comentario": "O objetivo central de saudacoes e apresentacoes e reconhecer formulas basicas de cumprimento e apresentacao.",
       "tempoEstimado": 70,
       "tags": [
         "vocabulario-basico",
@@ -828,22 +829,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Informações pessoais",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Informacoes pessoais",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Inglês, Informações pessoais refere-se a:",
+      "enunciado": "Em Ingles, Informacoes pessoais refere-se a:",
       "opcoes": [
-        "o vocabulário relacionado a nome, idade, nacionalidade, endereço e dados básicos",
-        "o conjunto de palavras usado para nomear membros da família e vínculos simples",
-        "o vocabulário ligado a materiais e itens presentes no ambiente escolar",
-        "o repertório lexical usado para contar, indicar datas, idades, horários e sequências"
+        "o vocabulario relacionado a nome, idade, nacionalidade, endereco e dados basicos",
+        "o conjunto de palavras usado para nomear membros da familia e vinculos simples",
+        "o vocabulario ligado a materiais e itens presentes no ambiente escolar",
+        "o repertorio lexical usado para contar, indicar datas, idades, horarios e sequencias"
       ],
-      "correta": "o vocabulário relacionado a nome, idade, nacionalidade, endereço e dados básicos",
-      "comentario": "Informações pessoais refere-se ao vocabulário relacionado a nome, idade, nacionalidade, endereço e dados básicos.",
+      "correta": "o vocabulario relacionado a nome, idade, nacionalidade, endereco e dados basicos",
+      "comentario": "Informacoes pessoais refere-se ao vocabulario relacionado a nome, idade, nacionalidade, endereco e dados basicos.",
       "tempoEstimado": 20,
       "tags": [
         "vocabulario-basico",
@@ -867,22 +868,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Informações pessoais",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Informacoes pessoais",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: um perfil escolar informa name, age, country e city. Esse caso está mais ligado a qual subtópico?",
+      "enunciado": "Observe a situacao: um perfil escolar informa name, age, country e city. Esse caso esta mais ligado a qual subtopico?",
       "opcoes": [
-        "Informações pessoais",
-        "Família e relações",
+        "Informacoes pessoais",
+        "Familia e relacoes",
         "Objetos escolares",
-        "Números, datas e horas"
+        "Numeros, datas e horas"
       ],
-      "correta": "Informações pessoais",
-      "comentario": "A situação apresentada é melhor compreendida por meio de informações pessoais.",
+      "correta": "Informacoes pessoais",
+      "comentario": "A situacao apresentada e melhor compreendida por meio de informacoes pessoais.",
       "tempoEstimado": 20,
       "tags": [
         "vocabulario-basico",
@@ -906,14 +907,14 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Informações pessoais",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Informacoes pessoais",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual exemplo combina melhor com informações pessoais?",
+      "enunciado": "Qual exemplo combina melhor com informacoes pessoais?",
       "opcoes": [
         "I am thirteen years old and I am from Brazil.",
         "My cousin lives with my grandparents.",
@@ -921,7 +922,7 @@ export const vocabularioBasico = {
         "The test is on July 10 at nine o'clock."
       ],
       "correta": "I am thirteen years old and I am from Brazil.",
-      "comentario": "O exemplo correto ilustra o uso de informações pessoais.",
+      "comentario": "O exemplo correto ilustra o uso de informacoes pessoais.",
       "tempoEstimado": 25,
       "tags": [
         "vocabulario-basico",
@@ -945,22 +946,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Informações pessoais",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Informacoes pessoais",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO representa corretamente informações pessoais?",
+      "enunciado": "Qual alternativa NAO representa corretamente informacoes pessoais?",
       "opcoes": [
         "My cousin lives with my grandparents.",
         "I am thirteen years old and I am from Brazil.",
         "procurar palavras ligadas a identidade, idade e origem.",
-        "preencher ou interpretar fichas e apresentações pessoais."
+        "preencher ou interpretar fichas e apresentacoes pessoais."
       ],
       "correta": "My cousin lives with my grandparents.",
-      "comentario": "A opção incompatível ilustra outro subtópico, e não informações pessoais.",
+      "comentario": "A opcao incompativel ilustra outro subtopico, e nao informacoes pessoais.",
       "tempoEstimado": 25,
       "tags": [
         "vocabulario-basico",
@@ -984,22 +985,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Informações pessoais",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Informacoes pessoais",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar informações pessoais, o foco principal é:",
+      "enunciado": "Ao estudar informacoes pessoais, o foco principal e:",
       "opcoes": [
-        "identificar dados pessoais em frases curtas e formulários simples",
-        "reconhecer parentesco e relações pessoais em inglês",
-        "associar palavras em inglês a objetos usados na escola",
-        "ler números e marcar referências básicas de tempo"
+        "identificar dados pessoais em frases curtas e formularios simples",
+        "reconhecer parentesco e relacoes pessoais em ingles",
+        "associar palavras em ingles a objetos usados na escola",
+        "ler numeros e marcar referencias basicas de tempo"
       ],
-      "correta": "identificar dados pessoais em frases curtas e formulários simples",
-      "comentario": "Informações pessoais concentra-se em identificar dados pessoais em frases curtas e formulários simples.",
+      "correta": "identificar dados pessoais em frases curtas e formularios simples",
+      "comentario": "Informacoes pessoais concentra-se em identificar dados pessoais em frases curtas e formularios simples.",
       "tempoEstimado": 30,
       "tags": [
         "vocabulario-basico",
@@ -1023,22 +1024,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Informações pessoais",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Informacoes pessoais",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Família e relações trata de o conjunto de palavras usado para nomear membros da família e vínculos simples, Informações pessoais destaca:",
+      "enunciado": "Enquanto Familia e relacoes trata de o conjunto de palavras usado para nomear membros da familia e vinculos simples, Informacoes pessoais destaca:",
       "opcoes": [
-        "O vocabulário relacionado a nome, idade, nacionalidade, endereço e dados básicos.",
-        "O conjunto de palavras usado para nomear membros da família e vínculos simples.",
-        "O vocabulário ligado a materiais e itens presentes no ambiente escolar.",
-        "O repertório lexical usado para contar, indicar datas, idades, horários e sequências."
+        "O vocabulario relacionado a nome, idade, nacionalidade, endereco e dados basicos.",
+        "O conjunto de palavras usado para nomear membros da familia e vinculos simples.",
+        "O vocabulario ligado a materiais e itens presentes no ambiente escolar.",
+        "O repertorio lexical usado para contar, indicar datas, idades, horarios e sequencias."
       ],
-      "correta": "O vocabulário relacionado a nome, idade, nacionalidade, endereço e dados básicos.",
-      "comentario": "A comparação correta mostra a especificidade de informações pessoais.",
+      "correta": "O vocabulario relacionado a nome, idade, nacionalidade, endereco e dados basicos.",
+      "comentario": "A comparacao correta mostra a especificidade de informacoes pessoais.",
       "tempoEstimado": 30,
       "tags": [
         "vocabulario-basico",
@@ -1062,22 +1063,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Informações pessoais",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Informacoes pessoais",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
       "enunciado": "Em uma atividade de sala, um perfil escolar informa name, age, country e city. Para responder bem, o estudante deve mobilizar principalmente:",
       "opcoes": [
-        "Informações pessoais",
-        "Família e relações",
-        "Números, datas e horas",
-        "Cores, roupas e aparência"
+        "Informacoes pessoais",
+        "Familia e relacoes",
+        "Numeros, datas e horas",
+        "Cores, roupas e aparencia"
       ],
-      "correta": "Informações pessoais",
-      "comentario": "Esse tipo de tarefa exige domínio de informações pessoais.",
+      "correta": "Informacoes pessoais",
+      "comentario": "Esse tipo de tarefa exige dominio de informacoes pessoais.",
       "tempoEstimado": 35,
       "tags": [
         "vocabulario-basico",
@@ -1101,22 +1102,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Informações pessoais",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Informacoes pessoais",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação prática depende mais diretamente de Informações pessoais?",
+      "enunciado": "Qual situacao pratica depende mais diretamente de Informacoes pessoais?",
       "opcoes": [
-        "preencher ou interpretar fichas e apresentações pessoais",
-        "interpretar descrições familiares e relações de parentesco",
-        "compreender listas e descrições simples do ambiente escolar",
-        "identificar pessoas, roupas e cores em descrições básicas"
+        "preencher ou interpretar fichas e apresentacoes pessoais",
+        "interpretar descricoes familiares e relacoes de parentesco",
+        "compreender listas e descricoes simples do ambiente escolar",
+        "identificar pessoas, roupas e cores em descricoes basicas"
       ],
-      "correta": "preencher ou interpretar fichas e apresentações pessoais",
-      "comentario": "Informações pessoais aparece de forma direta em preencher ou interpretar fichas e apresentações pessoais.",
+      "correta": "preencher ou interpretar fichas e apresentacoes pessoais",
+      "comentario": "Informacoes pessoais aparece de forma direta em preencher ou interpretar fichas e apresentacoes pessoais.",
       "tempoEstimado": 35,
       "tags": [
         "vocabulario-basico",
@@ -1140,22 +1141,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Informações pessoais",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Informacoes pessoais",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre informações pessoais?",
+      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre informacoes pessoais?",
       "opcoes": [
-        "o caso é resolvido com foco em informações pessoais.",
-        "o caso é melhor resolvido por família e relações.",
+        "o caso e resolvido com foco em informacoes pessoais.",
+        "o caso e melhor resolvido por familia e relacoes.",
         "o caso elimina a necessidade de objetos escolares.",
-        "o caso impede qualquer uso de números, datas e horas."
+        "o caso impede qualquer uso de numeros, datas e horas."
       ],
-      "correta": "o caso é resolvido com foco em informações pessoais.",
-      "comentario": "A conclusão correta retoma a função central de informações pessoais.",
+      "correta": "o caso e resolvido com foco em informacoes pessoais.",
+      "comentario": "A conclusao correta retoma a funcao central de informacoes pessoais.",
       "tempoEstimado": 40,
       "tags": [
         "vocabulario-basico",
@@ -1179,22 +1180,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Informações pessoais",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Informacoes pessoais",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Se a turma fosse revisar informações pessoais, qual pergunta de estudo seria a mais adequada?",
+      "enunciado": "Se a turma fosse revisar informacoes pessoais, qual pergunta de estudo seria a mais adequada?",
       "opcoes": [
-        "Como informações pessoais aparece em preencher ou interpretar fichas e apresentações pessoais?",
-        "Como família e relações substitui totalmente preencher ou interpretar fichas e apresentações pessoais?",
-        "Por que objetos escolares torna desnecessário estudar Informações pessoais?",
-        "De que modo números, datas e horas elimina toda leitura de contexto?"
+        "Como informacoes pessoais aparece em preencher ou interpretar fichas e apresentacoes pessoais?",
+        "Como familia e relacoes substitui totalmente preencher ou interpretar fichas e apresentacoes pessoais?",
+        "Por que objetos escolares torna desnecessario estudar Informacoes pessoais?",
+        "De que modo numeros, datas e horas elimina toda leitura de contexto?"
       ],
-      "correta": "Como informações pessoais aparece em preencher ou interpretar fichas e apresentações pessoais?",
-      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de informações pessoais.",
+      "correta": "Como informacoes pessoais aparece em preencher ou interpretar fichas e apresentacoes pessoais?",
+      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de informacoes pessoais.",
       "tempoEstimado": 40,
       "tags": [
         "vocabulario-basico",
@@ -1218,22 +1219,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Informações pessoais",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Informacoes pessoais",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em informações pessoais é pensar que:",
+      "enunciado": "Um erro comum em informacoes pessoais e pensar que:",
       "opcoes": [
-        "informações pessoais em inglês aparecem sempre na mesma ordem e com as mesmas palavras",
-        "mother e father significam parentes em geral, sem diferença específica",
-        "todo objeto escolar pode ser entendido apenas pela semelhança sonora com o português",
-        "horas e datas em inglês seguem sempre a mesma lógica gráfica do português"
+        "informacoes pessoais em ingles aparecem sempre na mesma ordem e com as mesmas palavras",
+        "mother e father significam parentes em geral, sem diferenca especifica",
+        "todo objeto escolar pode ser entendido apenas pela semelhanca sonora com o portugues",
+        "horas e datas em ingles seguem sempre a mesma logica grafica do portugues"
       ],
-      "correta": "informações pessoais em inglês aparecem sempre na mesma ordem e com as mesmas palavras",
-      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de informações pessoais.",
+      "correta": "informacoes pessoais em ingles aparecem sempre na mesma ordem e com as mesmas palavras",
+      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de informacoes pessoais.",
       "tempoEstimado": 45,
       "tags": [
         "vocabulario-basico",
@@ -1257,22 +1258,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Informações pessoais",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Informacoes pessoais",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"para entender dados pessoais basta localizar qualquer número no texto\". A avaliação mais adequada é:",
+      "enunciado": "Um estudante afirma: \"para entender dados pessoais basta localizar qualquer numero no texto\". A avaliacao mais adequada e:",
       "opcoes": [
-        "A afirmação está incorreta, porque o vocabulário relacionado a nome, idade, nacionalidade, endereço e dados básicos.",
-        "A afirmação está correta, pois resume integralmente informações pessoais.",
-        "A afirmação está correta, porque basta decorar a tradução do exemplo.",
-        "A afirmação está incorreta apenas por não citar uma regra gramatical."
+        "A afirmacao esta incorreta, porque o vocabulario relacionado a nome, idade, nacionalidade, endereco e dados basicos.",
+        "A afirmacao esta correta, pois resume integralmente informacoes pessoais.",
+        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
+        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
       ],
-      "correta": "A afirmação está incorreta, porque o vocabulário relacionado a nome, idade, nacionalidade, endereço e dados básicos.",
-      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre informações pessoais.",
+      "correta": "A afirmacao esta incorreta, porque o vocabulario relacionado a nome, idade, nacionalidade, endereco e dados basicos.",
+      "comentario": "A fala do estudante apresenta um equivoco conceitual sobre informacoes pessoais.",
       "tempoEstimado": 45,
       "tags": [
         "vocabulario-basico",
@@ -1296,22 +1297,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Informações pessoais",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Informacoes pessoais",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se informações pessoais fosse ignorado(a) em preencher ou interpretar fichas e apresentações pessoais, o resultado mais provável seria:",
+      "enunciado": "Se informacoes pessoais fosse ignorado(a) em preencher ou interpretar fichas e apresentacoes pessoais, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretação ficaria incompleta e aumentaria a chance de erro em preencher ou interpretar fichas e apresentações pessoais.",
-        "a questão seria resolvida automaticamente por família e relações.",
-        "nenhuma interpretação seria alterada, porque Informações pessoais não interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
+        "a interpretacao ficaria incompleta e aumentaria a chance de erro em preencher ou interpretar fichas e apresentacoes pessoais.",
+        "a questao seria resolvida automaticamente por familia e relacoes.",
+        "nenhuma interpretacao seria alterada, porque Informacoes pessoais nao interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
       ],
-      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em preencher ou interpretar fichas e apresentações pessoais.",
-      "comentario": "Ignorar informações pessoais compromete a resolução correta da atividade.",
+      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em preencher ou interpretar fichas e apresentacoes pessoais.",
+      "comentario": "Ignorar informacoes pessoais compromete a resolucao correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "vocabulario-basico",
@@ -1335,14 +1336,14 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Informações pessoais",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Informacoes pessoais",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou ação ilustra melhor Informações pessoais?",
+      "enunciado": "Qual trecho ou acao ilustra melhor Informacoes pessoais?",
       "opcoes": [
         "I am thirteen years old and I am from Brazil.",
         "My cousin lives with my grandparents.",
@@ -1350,7 +1351,7 @@ export const vocabularioBasico = {
         "The test is on July 10 at nine o'clock."
       ],
       "correta": "I am thirteen years old and I am from Brazil.",
-      "comentario": "O item correto é o que melhor exemplifica informações pessoais.",
+      "comentario": "O item correto e o que melhor exemplifica informacoes pessoais.",
       "tempoEstimado": 50,
       "tags": [
         "vocabulario-basico",
@@ -1374,22 +1375,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Informações pessoais",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Informacoes pessoais",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao encontrar o exemplo \"I am thirteen years old and I am from Brazil.\", a leitura mais adequada é:",
+      "enunciado": "Ao encontrar o exemplo \"I am thirteen years old and I am from Brazil.\", a leitura mais adequada e:",
       "opcoes": [
         "a frase apresenta idade e origem de forma direta",
-        "a frase indica um vínculo familiar específico",
+        "a frase indica um vinculo familiar especifico",
         "a frase apresenta itens comuns do cotidiano escolar",
-        "a frase combina data e horário em um contexto escolar"
+        "a frase combina data e horario em um contexto escolar"
       ],
       "correta": "a frase apresenta idade e origem de forma direta",
-      "comentario": "A leitura correta do exemplo revela o papel de informações pessoais.",
+      "comentario": "A leitura correta do exemplo revela o papel de informacoes pessoais.",
       "tempoEstimado": 55,
       "tags": [
         "vocabulario-basico",
@@ -1413,22 +1414,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Informações pessoais",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Informacoes pessoais",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estratégia ajuda mais a estudar informações pessoais?",
+      "enunciado": "Qual estrategia ajuda mais a estudar informacoes pessoais?",
       "opcoes": [
         "procurar palavras ligadas a identidade, idade e origem",
         "relacionar cada palavra ao grau de parentesco indicado no contexto",
-        "associar o vocabulário ao objeto e ao ambiente em que ele aparece",
-        "observar números e palavras que indicam mês, dia e hora"
+        "associar o vocabulario ao objeto e ao ambiente em que ele aparece",
+        "observar numeros e palavras que indicam mes, dia e hora"
       ],
       "correta": "procurar palavras ligadas a identidade, idade e origem",
-      "comentario": "A estratégia correta fortalece o domínio de informações pessoais.",
+      "comentario": "A estrategia correta fortalece o dominio de informacoes pessoais.",
       "tempoEstimado": 55,
       "tags": [
         "vocabulario-basico",
@@ -1452,22 +1453,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Informações pessoais",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Informacoes pessoais",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Informações pessoais é mais cobrado quando:",
+      "enunciado": "Em uma prova, Informacoes pessoais e mais cobrado quando:",
       "opcoes": [
-        "o item pede localizar ou relacionar dados pessoais básicos",
-        "a questão cobra identificação de vocabulário de família",
+        "o item pede localizar ou relacionar dados pessoais basicos",
+        "a questao cobra identificacao de vocabulario de familia",
         "o item pede reconhecer ou relacionar nomes de materiais escolares",
-        "a questão exige localizar ou interpretar referências de tempo"
+        "a questao exige localizar ou interpretar referencias de tempo"
       ],
-      "correta": "o item pede localizar ou relacionar dados pessoais básicos",
-      "comentario": "Esse é o tipo de demanda em que informações pessoais aparece com mais frequência.",
+      "correta": "o item pede localizar ou relacionar dados pessoais basicos",
+      "comentario": "Esse e o tipo de demanda em que informacoes pessoais aparece com mais frequencia.",
       "tempoEstimado": 60,
       "tags": [
         "vocabulario-basico",
@@ -1491,22 +1492,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Informações pessoais",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Informacoes pessoais",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual resumo sintetiza melhor a ideia de Informações pessoais?",
+      "enunciado": "Qual resumo sintetiza melhor a ideia de Informacoes pessoais?",
       "opcoes": [
-        "Em síntese, o vocabulário relacionado a nome, idade, nacionalidade, endereço e dados básicos.",
-        "Em síntese, o conjunto de palavras usado para nomear membros da família e vínculos simples.",
-        "Em síntese, o vocabulário ligado a materiais e itens presentes no ambiente escolar.",
-        "Em síntese, o repertório lexical usado para contar, indicar datas, idades, horários e sequências."
+        "Em sintese, o vocabulario relacionado a nome, idade, nacionalidade, endereco e dados basicos.",
+        "Em sintese, o conjunto de palavras usado para nomear membros da familia e vinculos simples.",
+        "Em sintese, o vocabulario ligado a materiais e itens presentes no ambiente escolar.",
+        "Em sintese, o repertorio lexical usado para contar, indicar datas, idades, horarios e sequencias."
       ],
-      "correta": "Em síntese, o vocabulário relacionado a nome, idade, nacionalidade, endereço e dados básicos.",
-      "comentario": "O resumo correto recupera o núcleo de informações pessoais.",
+      "correta": "Em sintese, o vocabulario relacionado a nome, idade, nacionalidade, endereco e dados basicos.",
+      "comentario": "O resumo correto recupera o nucleo de informacoes pessoais.",
       "tempoEstimado": 60,
       "tags": [
         "vocabulario-basico",
@@ -1530,22 +1531,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Informações pessoais",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Informacoes pessoais",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associação entre exemplo e interpretação está correta em Informações pessoais?",
+      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Informacoes pessoais?",
       "opcoes": [
         "I am thirteen years old and I am from Brazil. -> a frase apresenta idade e origem de forma direta",
         "My cousin lives with my grandparents. -> a frase apresenta idade e origem de forma direta",
-        "There is a pencil case in my backpack. -> a frase combina data e horário em um contexto escolar",
-        "The test is on July 10 at nine o'clock. -> a frase indica um vínculo familiar específico"
+        "There is a pencil case in my backpack. -> a frase combina data e horario em um contexto escolar",
+        "The test is on July 10 at nine o'clock. -> a frase indica um vinculo familiar especifico"
       ],
       "correta": "I am thirteen years old and I am from Brazil. -> a frase apresenta idade e origem de forma direta",
-      "comentario": "A associação correta mantém coerência entre exemplo e interpretação em informações pessoais.",
+      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em informacoes pessoais.",
       "tempoEstimado": 65,
       "tags": [
         "vocabulario-basico",
@@ -1569,22 +1570,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Informações pessoais",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Informacoes pessoais",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao resolver uma atividade sobre informações pessoais, o estudante deve principalmente:",
+      "enunciado": "Ao resolver uma atividade sobre informacoes pessoais, o estudante deve principalmente:",
       "opcoes": [
-        "identificar dados pessoais em frases curtas e formulários simples",
+        "identificar dados pessoais em frases curtas e formularios simples",
         "procurar palavras ligadas a identidade, idade e origem",
-        "preencher ou interpretar fichas e apresentações pessoais",
-        "o item pede localizar ou relacionar dados pessoais básicos"
+        "preencher ou interpretar fichas e apresentacoes pessoais",
+        "o item pede localizar ou relacionar dados pessoais basicos"
       ],
-      "correta": "identificar dados pessoais em frases curtas e formulários simples",
-      "comentario": "O objetivo central de informações pessoais é identificar dados pessoais em frases curtas e formulários simples.",
+      "correta": "identificar dados pessoais em frases curtas e formularios simples",
+      "comentario": "O objetivo central de informacoes pessoais e identificar dados pessoais em frases curtas e formularios simples.",
       "tempoEstimado": 70,
       "tags": [
         "vocabulario-basico",
@@ -1608,22 +1609,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Família e relações",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Familia e relacoes",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Inglês, Família e relações refere-se a:",
+      "enunciado": "Em Ingles, Familia e relacoes refere-se a:",
       "opcoes": [
-        "o conjunto de palavras usado para nomear membros da família e vínculos simples",
-        "o vocabulário ligado a materiais e itens presentes no ambiente escolar",
-        "o repertório lexical usado para contar, indicar datas, idades, horários e sequências",
-        "o vocabulário usado para descrever cores, vestuário e características visuais simples"
+        "o conjunto de palavras usado para nomear membros da familia e vinculos simples",
+        "o vocabulario ligado a materiais e itens presentes no ambiente escolar",
+        "o repertorio lexical usado para contar, indicar datas, idades, horarios e sequencias",
+        "o vocabulario usado para descrever cores, vestuario e caracteristicas visuais simples"
       ],
-      "correta": "o conjunto de palavras usado para nomear membros da família e vínculos simples",
-      "comentario": "Família e relações refere-se ao conjunto de palavras usado para nomear membros da família e vínculos simples.",
+      "correta": "o conjunto de palavras usado para nomear membros da familia e vinculos simples",
+      "comentario": "Familia e relacoes refere-se ao conjunto de palavras usado para nomear membros da familia e vinculos simples.",
       "tempoEstimado": 20,
       "tags": [
         "vocabulario-basico",
@@ -1647,22 +1648,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Família e relações",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Familia e relacoes",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: um estudante descreve mother, father, sister e cousin em um pequeno texto. Esse caso está mais ligado a qual subtópico?",
+      "enunciado": "Observe a situacao: um estudante descreve mother, father, sister e cousin em um pequeno texto. Esse caso esta mais ligado a qual subtopico?",
       "opcoes": [
-        "Família e relações",
+        "Familia e relacoes",
         "Objetos escolares",
-        "Números, datas e horas",
-        "Cores, roupas e aparência"
+        "Numeros, datas e horas",
+        "Cores, roupas e aparencia"
       ],
-      "correta": "Família e relações",
-      "comentario": "A situação apresentada é melhor compreendida por meio de família e relações.",
+      "correta": "Familia e relacoes",
+      "comentario": "A situacao apresentada e melhor compreendida por meio de familia e relacoes.",
       "tempoEstimado": 20,
       "tags": [
         "vocabulario-basico",
@@ -1686,14 +1687,14 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Família e relações",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Familia e relacoes",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual exemplo combina melhor com família e relações?",
+      "enunciado": "Qual exemplo combina melhor com familia e relacoes?",
       "opcoes": [
         "My cousin lives with my grandparents.",
         "There is a pencil case in my backpack.",
@@ -1701,7 +1702,7 @@ export const vocabularioBasico = {
         "He is wearing a red jacket."
       ],
       "correta": "My cousin lives with my grandparents.",
-      "comentario": "O exemplo correto ilustra o uso de família e relações.",
+      "comentario": "O exemplo correto ilustra o uso de familia e relacoes.",
       "tempoEstimado": 25,
       "tags": [
         "vocabulario-basico",
@@ -1725,22 +1726,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Família e relações",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Familia e relacoes",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO representa corretamente família e relações?",
+      "enunciado": "Qual alternativa NAO representa corretamente familia e relacoes?",
       "opcoes": [
         "There is a pencil case in my backpack.",
         "My cousin lives with my grandparents.",
         "relacionar cada palavra ao grau de parentesco indicado no contexto.",
-        "interpretar descrições familiares e relações de parentesco."
+        "interpretar descricoes familiares e relacoes de parentesco."
       ],
       "correta": "There is a pencil case in my backpack.",
-      "comentario": "A opção incompatível ilustra outro subtópico, e não família e relações.",
+      "comentario": "A opcao incompativel ilustra outro subtopico, e nao familia e relacoes.",
       "tempoEstimado": 25,
       "tags": [
         "vocabulario-basico",
@@ -1764,22 +1765,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Família e relações",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Familia e relacoes",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar família e relações, o foco principal é:",
+      "enunciado": "Ao estudar familia e relacoes, o foco principal e:",
       "opcoes": [
-        "reconhecer parentesco e relações pessoais em inglês",
-        "associar palavras em inglês a objetos usados na escola",
-        "ler números e marcar referências básicas de tempo",
-        "relacionar palavras a descrição física e visual"
+        "reconhecer parentesco e relacoes pessoais em ingles",
+        "associar palavras em ingles a objetos usados na escola",
+        "ler numeros e marcar referencias basicas de tempo",
+        "relacionar palavras a descricao fisica e visual"
       ],
-      "correta": "reconhecer parentesco e relações pessoais em inglês",
-      "comentario": "Família e relações concentra-se em reconhecer parentesco e relações pessoais em inglês.",
+      "correta": "reconhecer parentesco e relacoes pessoais em ingles",
+      "comentario": "Familia e relacoes concentra-se em reconhecer parentesco e relacoes pessoais em ingles.",
       "tempoEstimado": 30,
       "tags": [
         "vocabulario-basico",
@@ -1803,22 +1804,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Família e relações",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Familia e relacoes",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Objetos escolares trata de o vocabulário ligado a materiais e itens presentes no ambiente escolar, Família e relações destaca:",
+      "enunciado": "Enquanto Objetos escolares trata de o vocabulario ligado a materiais e itens presentes no ambiente escolar, Familia e relacoes destaca:",
       "opcoes": [
-        "O conjunto de palavras usado para nomear membros da família e vínculos simples.",
-        "O vocabulário ligado a materiais e itens presentes no ambiente escolar.",
-        "O repertório lexical usado para contar, indicar datas, idades, horários e sequências.",
-        "O vocabulário usado para descrever cores, vestuário e características visuais simples."
+        "O conjunto de palavras usado para nomear membros da familia e vinculos simples.",
+        "O vocabulario ligado a materiais e itens presentes no ambiente escolar.",
+        "O repertorio lexical usado para contar, indicar datas, idades, horarios e sequencias.",
+        "O vocabulario usado para descrever cores, vestuario e caracteristicas visuais simples."
       ],
-      "correta": "O conjunto de palavras usado para nomear membros da família e vínculos simples.",
-      "comentario": "A comparação correta mostra a especificidade de família e relações.",
+      "correta": "O conjunto de palavras usado para nomear membros da familia e vinculos simples.",
+      "comentario": "A comparacao correta mostra a especificidade de familia e relacoes.",
       "tempoEstimado": 30,
       "tags": [
         "vocabulario-basico",
@@ -1842,22 +1843,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Família e relações",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Familia e relacoes",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
       "enunciado": "Em uma atividade de sala, um estudante descreve mother, father, sister e cousin em um pequeno texto. Para responder bem, o estudante deve mobilizar principalmente:",
       "opcoes": [
-        "Família e relações",
+        "Familia e relacoes",
         "Objetos escolares",
-        "Cores, roupas e aparência",
+        "Cores, roupas e aparencia",
         "Comidas e bebidas"
       ],
-      "correta": "Família e relações",
-      "comentario": "Esse tipo de tarefa exige domínio de família e relações.",
+      "correta": "Familia e relacoes",
+      "comentario": "Esse tipo de tarefa exige dominio de familia e relacoes.",
       "tempoEstimado": 35,
       "tags": [
         "vocabulario-basico",
@@ -1881,22 +1882,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Família e relações",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Familia e relacoes",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação prática depende mais diretamente de Família e relações?",
+      "enunciado": "Qual situacao pratica depende mais diretamente de Familia e relacoes?",
       "opcoes": [
-        "interpretar descrições familiares e relações de parentesco",
-        "compreender listas e descrições simples do ambiente escolar",
-        "interpretar horários, datas e números em avisos simples",
-        "interpretar menus, preferências e hábitos alimentares simples"
+        "interpretar descricoes familiares e relacoes de parentesco",
+        "compreender listas e descricoes simples do ambiente escolar",
+        "interpretar horarios, datas e numeros em avisos simples",
+        "interpretar menus, preferencias e habitos alimentares simples"
       ],
-      "correta": "interpretar descrições familiares e relações de parentesco",
-      "comentario": "Família e relações aparece de forma direta em interpretar descrições familiares e relações de parentesco.",
+      "correta": "interpretar descricoes familiares e relacoes de parentesco",
+      "comentario": "Familia e relacoes aparece de forma direta em interpretar descricoes familiares e relacoes de parentesco.",
       "tempoEstimado": 35,
       "tags": [
         "vocabulario-basico",
@@ -1920,22 +1921,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Família e relações",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Familia e relacoes",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre família e relações?",
+      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre familia e relacoes?",
       "opcoes": [
-        "o caso é resolvido com foco em família e relações.",
-        "o caso é melhor resolvido por objetos escolares.",
-        "o caso elimina a necessidade de números, datas e horas.",
-        "o caso impede qualquer uso de cores, roupas e aparência."
+        "o caso e resolvido com foco em familia e relacoes.",
+        "o caso e melhor resolvido por objetos escolares.",
+        "o caso elimina a necessidade de numeros, datas e horas.",
+        "o caso impede qualquer uso de cores, roupas e aparencia."
       ],
-      "correta": "o caso é resolvido com foco em família e relações.",
-      "comentario": "A conclusão correta retoma a função central de família e relações.",
+      "correta": "o caso e resolvido com foco em familia e relacoes.",
+      "comentario": "A conclusao correta retoma a funcao central de familia e relacoes.",
       "tempoEstimado": 40,
       "tags": [
         "vocabulario-basico",
@@ -1959,22 +1960,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Família e relações",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Familia e relacoes",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Se a turma fosse revisar família e relações, qual pergunta de estudo seria a mais adequada?",
+      "enunciado": "Se a turma fosse revisar familia e relacoes, qual pergunta de estudo seria a mais adequada?",
       "opcoes": [
-        "Como família e relações aparece em interpretar descrições familiares e relações de parentesco?",
-        "Como objetos escolares substitui totalmente interpretar descrições familiares e relações de parentesco?",
-        "Por que números, datas e horas torna desnecessário estudar Família e relações?",
-        "De que modo cores, roupas e aparência elimina toda leitura de contexto?"
+        "Como familia e relacoes aparece em interpretar descricoes familiares e relacoes de parentesco?",
+        "Como objetos escolares substitui totalmente interpretar descricoes familiares e relacoes de parentesco?",
+        "Por que numeros, datas e horas torna desnecessario estudar Familia e relacoes?",
+        "De que modo cores, roupas e aparencia elimina toda leitura de contexto?"
       ],
-      "correta": "Como família e relações aparece em interpretar descrições familiares e relações de parentesco?",
-      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de família e relações.",
+      "correta": "Como familia e relacoes aparece em interpretar descricoes familiares e relacoes de parentesco?",
+      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de familia e relacoes.",
       "tempoEstimado": 40,
       "tags": [
         "vocabulario-basico",
@@ -1998,22 +1999,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Família e relações",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Familia e relacoes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em família e relações é pensar que:",
+      "enunciado": "Um erro comum em familia e relacoes e pensar que:",
       "opcoes": [
-        "mother e father significam parentes em geral, sem diferença específica",
-        "todo objeto escolar pode ser entendido apenas pela semelhança sonora com o português",
-        "horas e datas em inglês seguem sempre a mesma lógica gráfica do português",
-        "a cor sempre aparece depois do substantivo em inglês, como no português informal"
+        "mother e father significam parentes em geral, sem diferenca especifica",
+        "todo objeto escolar pode ser entendido apenas pela semelhanca sonora com o portugues",
+        "horas e datas em ingles seguem sempre a mesma logica grafica do portugues",
+        "a cor sempre aparece depois do substantivo em ingles, como no portugues informal"
       ],
-      "correta": "mother e father significam parentes em geral, sem diferença específica",
-      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de família e relações.",
+      "correta": "mother e father significam parentes em geral, sem diferenca especifica",
+      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de familia e relacoes.",
       "tempoEstimado": 45,
       "tags": [
         "vocabulario-basico",
@@ -2037,22 +2038,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Família e relações",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Familia e relacoes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"cousin quer dizer irmã porque faz parte da família\". A avaliação mais adequada é:",
+      "enunciado": "Um estudante afirma: \"cousin quer dizer irma porque faz parte da familia\". A avaliacao mais adequada e:",
       "opcoes": [
-        "A afirmação está incorreta, porque o conjunto de palavras usado para nomear membros da família e vínculos simples.",
-        "A afirmação está correta, pois resume integralmente família e relações.",
-        "A afirmação está correta, porque basta decorar a tradução do exemplo.",
-        "A afirmação está incorreta apenas por não citar uma regra gramatical."
+        "A afirmacao esta incorreta, porque o conjunto de palavras usado para nomear membros da familia e vinculos simples.",
+        "A afirmacao esta correta, pois resume integralmente familia e relacoes.",
+        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
+        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
       ],
-      "correta": "A afirmação está incorreta, porque o conjunto de palavras usado para nomear membros da família e vínculos simples.",
-      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre família e relações.",
+      "correta": "A afirmacao esta incorreta, porque o conjunto de palavras usado para nomear membros da familia e vinculos simples.",
+      "comentario": "A fala do estudante apresenta um equivoco conceitual sobre familia e relacoes.",
       "tempoEstimado": 45,
       "tags": [
         "vocabulario-basico",
@@ -2076,22 +2077,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Família e relações",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Familia e relacoes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se família e relações fosse ignorado(a) em interpretar descrições familiares e relações de parentesco, o resultado mais provável seria:",
+      "enunciado": "Se familia e relacoes fosse ignorado(a) em interpretar descricoes familiares e relacoes de parentesco, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretação ficaria incompleta e aumentaria a chance de erro em interpretar descrições familiares e relações de parentesco.",
-        "a questão seria resolvida automaticamente por objetos escolares.",
-        "nenhuma interpretação seria alterada, porque Família e relações não interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
+        "a interpretacao ficaria incompleta e aumentaria a chance de erro em interpretar descricoes familiares e relacoes de parentesco.",
+        "a questao seria resolvida automaticamente por objetos escolares.",
+        "nenhuma interpretacao seria alterada, porque Familia e relacoes nao interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
       ],
-      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em interpretar descrições familiares e relações de parentesco.",
-      "comentario": "Ignorar família e relações compromete a resolução correta da atividade.",
+      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em interpretar descricoes familiares e relacoes de parentesco.",
+      "comentario": "Ignorar familia e relacoes compromete a resolucao correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "vocabulario-basico",
@@ -2115,14 +2116,14 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Família e relações",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Familia e relacoes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou ação ilustra melhor Família e relações?",
+      "enunciado": "Qual trecho ou acao ilustra melhor Familia e relacoes?",
       "opcoes": [
         "My cousin lives with my grandparents.",
         "There is a pencil case in my backpack.",
@@ -2130,7 +2131,7 @@ export const vocabularioBasico = {
         "He is wearing a red jacket."
       ],
       "correta": "My cousin lives with my grandparents.",
-      "comentario": "O item correto é o que melhor exemplifica família e relações.",
+      "comentario": "O item correto e o que melhor exemplifica familia e relacoes.",
       "tempoEstimado": 50,
       "tags": [
         "vocabulario-basico",
@@ -2154,22 +2155,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Família e relações",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Familia e relacoes",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao encontrar o exemplo \"My cousin lives with my grandparents.\", a leitura mais adequada é:",
+      "enunciado": "Ao encontrar o exemplo \"My cousin lives with my grandparents.\", a leitura mais adequada e:",
       "opcoes": [
-        "a frase indica um vínculo familiar específico",
+        "a frase indica um vinculo familiar especifico",
         "a frase apresenta itens comuns do cotidiano escolar",
-        "a frase combina data e horário em um contexto escolar",
+        "a frase combina data e horario em um contexto escolar",
         "a frase descreve roupa e cor em uma estrutura comum"
       ],
-      "correta": "a frase indica um vínculo familiar específico",
-      "comentario": "A leitura correta do exemplo revela o papel de família e relações.",
+      "correta": "a frase indica um vinculo familiar especifico",
+      "comentario": "A leitura correta do exemplo revela o papel de familia e relacoes.",
       "tempoEstimado": 55,
       "tags": [
         "vocabulario-basico",
@@ -2193,22 +2194,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Família e relações",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Familia e relacoes",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estratégia ajuda mais a estudar família e relações?",
+      "enunciado": "Qual estrategia ajuda mais a estudar familia e relacoes?",
       "opcoes": [
         "relacionar cada palavra ao grau de parentesco indicado no contexto",
-        "associar o vocabulário ao objeto e ao ambiente em que ele aparece",
-        "observar números e palavras que indicam mês, dia e hora",
+        "associar o vocabulario ao objeto e ao ambiente em que ele aparece",
+        "observar numeros e palavras que indicam mes, dia e hora",
         "observar a ordem das palavras e o elemento visual descrito"
       ],
       "correta": "relacionar cada palavra ao grau de parentesco indicado no contexto",
-      "comentario": "A estratégia correta fortalece o domínio de família e relações.",
+      "comentario": "A estrategia correta fortalece o dominio de familia e relacoes.",
       "tempoEstimado": 55,
       "tags": [
         "vocabulario-basico",
@@ -2232,22 +2233,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Família e relações",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Familia e relacoes",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Família e relações é mais cobrado quando:",
+      "enunciado": "Em uma prova, Familia e relacoes e mais cobrado quando:",
       "opcoes": [
-        "a questão cobra identificação de vocabulário de família",
+        "a questao cobra identificacao de vocabulario de familia",
         "o item pede reconhecer ou relacionar nomes de materiais escolares",
-        "a questão exige localizar ou interpretar referências de tempo",
-        "o item pede reconhecer descrição de aparência ou vestuário"
+        "a questao exige localizar ou interpretar referencias de tempo",
+        "o item pede reconhecer descricao de aparencia ou vestuario"
       ],
-      "correta": "a questão cobra identificação de vocabulário de família",
-      "comentario": "Esse é o tipo de demanda em que família e relações aparece com mais frequência.",
+      "correta": "a questao cobra identificacao de vocabulario de familia",
+      "comentario": "Esse e o tipo de demanda em que familia e relacoes aparece com mais frequencia.",
       "tempoEstimado": 60,
       "tags": [
         "vocabulario-basico",
@@ -2271,22 +2272,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Família e relações",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Familia e relacoes",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual resumo sintetiza melhor a ideia de Família e relações?",
+      "enunciado": "Qual resumo sintetiza melhor a ideia de Familia e relacoes?",
       "opcoes": [
-        "Em síntese, o conjunto de palavras usado para nomear membros da família e vínculos simples.",
-        "Em síntese, o vocabulário ligado a materiais e itens presentes no ambiente escolar.",
-        "Em síntese, o repertório lexical usado para contar, indicar datas, idades, horários e sequências.",
-        "Em síntese, o vocabulário usado para descrever cores, vestuário e características visuais simples."
+        "Em sintese, o conjunto de palavras usado para nomear membros da familia e vinculos simples.",
+        "Em sintese, o vocabulario ligado a materiais e itens presentes no ambiente escolar.",
+        "Em sintese, o repertorio lexical usado para contar, indicar datas, idades, horarios e sequencias.",
+        "Em sintese, o vocabulario usado para descrever cores, vestuario e caracteristicas visuais simples."
       ],
-      "correta": "Em síntese, o conjunto de palavras usado para nomear membros da família e vínculos simples.",
-      "comentario": "O resumo correto recupera o núcleo de família e relações.",
+      "correta": "Em sintese, o conjunto de palavras usado para nomear membros da familia e vinculos simples.",
+      "comentario": "O resumo correto recupera o nucleo de familia e relacoes.",
       "tempoEstimado": 60,
       "tags": [
         "vocabulario-basico",
@@ -2310,22 +2311,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Família e relações",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Familia e relacoes",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associação entre exemplo e interpretação está correta em Família e relações?",
+      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Familia e relacoes?",
       "opcoes": [
-        "My cousin lives with my grandparents. -> a frase indica um vínculo familiar específico",
-        "There is a pencil case in my backpack. -> a frase indica um vínculo familiar específico",
+        "My cousin lives with my grandparents. -> a frase indica um vinculo familiar especifico",
+        "There is a pencil case in my backpack. -> a frase indica um vinculo familiar especifico",
         "The test is on July 10 at nine o'clock. -> a frase descreve roupa e cor em uma estrutura comum",
         "He is wearing a red jacket. -> a frase apresenta itens comuns do cotidiano escolar"
       ],
-      "correta": "My cousin lives with my grandparents. -> a frase indica um vínculo familiar específico",
-      "comentario": "A associação correta mantém coerência entre exemplo e interpretação em família e relações.",
+      "correta": "My cousin lives with my grandparents. -> a frase indica um vinculo familiar especifico",
+      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em familia e relacoes.",
       "tempoEstimado": 65,
       "tags": [
         "vocabulario-basico",
@@ -2349,22 +2350,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Família e relações",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Familia e relacoes",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao resolver uma atividade sobre família e relações, o estudante deve principalmente:",
+      "enunciado": "Ao resolver uma atividade sobre familia e relacoes, o estudante deve principalmente:",
       "opcoes": [
-        "reconhecer parentesco e relações pessoais em inglês",
+        "reconhecer parentesco e relacoes pessoais em ingles",
         "relacionar cada palavra ao grau de parentesco indicado no contexto",
-        "interpretar descrições familiares e relações de parentesco",
-        "a questão cobra identificação de vocabulário de família"
+        "interpretar descricoes familiares e relacoes de parentesco",
+        "a questao cobra identificacao de vocabulario de familia"
       ],
-      "correta": "reconhecer parentesco e relações pessoais em inglês",
-      "comentario": "O objetivo central de família e relações é reconhecer parentesco e relações pessoais em inglês.",
+      "correta": "reconhecer parentesco e relacoes pessoais em ingles",
+      "comentario": "O objetivo central de familia e relacoes e reconhecer parentesco e relacoes pessoais em ingles.",
       "tempoEstimado": 70,
       "tags": [
         "vocabulario-basico",
@@ -2388,22 +2389,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Objetos escolares",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Inglês, Objetos escolares refere-se a:",
+      "enunciado": "Em Ingles, Objetos escolares refere-se a:",
       "opcoes": [
-        "o vocabulário ligado a materiais e itens presentes no ambiente escolar",
-        "o repertório lexical usado para contar, indicar datas, idades, horários e sequências",
-        "o vocabulário usado para descrever cores, vestuário e características visuais simples",
-        "o vocabulário relacionado a alimentos, refeições e bebidas do cotidiano"
+        "o vocabulario ligado a materiais e itens presentes no ambiente escolar",
+        "o repertorio lexical usado para contar, indicar datas, idades, horarios e sequencias",
+        "o vocabulario usado para descrever cores, vestuario e caracteristicas visuais simples",
+        "o vocabulario relacionado a alimentos, refeicoes e bebidas do cotidiano"
       ],
-      "correta": "o vocabulário ligado a materiais e itens presentes no ambiente escolar",
-      "comentario": "Objetos escolares refere-se ao vocabulário ligado a materiais e itens presentes no ambiente escolar.",
+      "correta": "o vocabulario ligado a materiais e itens presentes no ambiente escolar",
+      "comentario": "Objetos escolares refere-se ao vocabulario ligado a materiais e itens presentes no ambiente escolar.",
       "tempoEstimado": 20,
       "tags": [
         "vocabulario-basico",
@@ -2427,22 +2428,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Objetos escolares",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: na sala de aula aparecem backpack, notebook, pencil e ruler. Esse caso está mais ligado a qual subtópico?",
+      "enunciado": "Observe a situacao: na sala de aula aparecem backpack, notebook, pencil e ruler. Esse caso esta mais ligado a qual subtopico?",
       "opcoes": [
         "Objetos escolares",
-        "Números, datas e horas",
-        "Cores, roupas e aparência",
+        "Numeros, datas e horas",
+        "Cores, roupas e aparencia",
         "Comidas e bebidas"
       ],
       "correta": "Objetos escolares",
-      "comentario": "A situação apresentada é melhor compreendida por meio de objetos escolares.",
+      "comentario": "A situacao apresentada e melhor compreendida por meio de objetos escolares.",
       "tempoEstimado": 20,
       "tags": [
         "vocabulario-basico",
@@ -2466,8 +2467,8 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Objetos escolares",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
@@ -2505,22 +2506,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Objetos escolares",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO representa corretamente objetos escolares?",
+      "enunciado": "Qual alternativa NAO representa corretamente objetos escolares?",
       "opcoes": [
         "The test is on July 10 at nine o'clock.",
         "There is a pencil case in my backpack.",
-        "associar o vocabulário ao objeto e ao ambiente em que ele aparece.",
-        "compreender listas e descrições simples do ambiente escolar."
+        "associar o vocabulario ao objeto e ao ambiente em que ele aparece.",
+        "compreender listas e descricoes simples do ambiente escolar."
       ],
       "correta": "The test is on July 10 at nine o'clock.",
-      "comentario": "A opção incompatível ilustra outro subtópico, e não objetos escolares.",
+      "comentario": "A opcao incompativel ilustra outro subtopico, e nao objetos escolares.",
       "tempoEstimado": 25,
       "tags": [
         "vocabulario-basico",
@@ -2544,22 +2545,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Objetos escolares",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar objetos escolares, o foco principal é:",
+      "enunciado": "Ao estudar objetos escolares, o foco principal e:",
       "opcoes": [
-        "associar palavras em inglês a objetos usados na escola",
-        "ler números e marcar referências básicas de tempo",
-        "relacionar palavras a descrição física e visual",
-        "identificar itens de alimentação em frases e pequenos diálogos"
+        "associar palavras em ingles a objetos usados na escola",
+        "ler numeros e marcar referencias basicas de tempo",
+        "relacionar palavras a descricao fisica e visual",
+        "identificar itens de alimentacao em frases e pequenos dialogos"
       ],
-      "correta": "associar palavras em inglês a objetos usados na escola",
-      "comentario": "Objetos escolares concentra-se em associar palavras em inglês a objetos usados na escola.",
+      "correta": "associar palavras em ingles a objetos usados na escola",
+      "comentario": "Objetos escolares concentra-se em associar palavras em ingles a objetos usados na escola.",
       "tempoEstimado": 30,
       "tags": [
         "vocabulario-basico",
@@ -2583,22 +2584,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Objetos escolares",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Números, datas e horas trata de o repertório lexical usado para contar, indicar datas, idades, horários e sequências, Objetos escolares destaca:",
+      "enunciado": "Enquanto Numeros, datas e horas trata de o repertorio lexical usado para contar, indicar datas, idades, horarios e sequencias, Objetos escolares destaca:",
       "opcoes": [
-        "O vocabulário ligado a materiais e itens presentes no ambiente escolar.",
-        "O repertório lexical usado para contar, indicar datas, idades, horários e sequências.",
-        "O vocabulário usado para descrever cores, vestuário e características visuais simples.",
-        "O vocabulário relacionado a alimentos, refeições e bebidas do cotidiano."
+        "O vocabulario ligado a materiais e itens presentes no ambiente escolar.",
+        "O repertorio lexical usado para contar, indicar datas, idades, horarios e sequencias.",
+        "O vocabulario usado para descrever cores, vestuario e caracteristicas visuais simples.",
+        "O vocabulario relacionado a alimentos, refeicoes e bebidas do cotidiano."
       ],
-      "correta": "O vocabulário ligado a materiais e itens presentes no ambiente escolar.",
-      "comentario": "A comparação correta mostra a especificidade de objetos escolares.",
+      "correta": "O vocabulario ligado a materiais e itens presentes no ambiente escolar.",
+      "comentario": "A comparacao correta mostra a especificidade de objetos escolares.",
       "tempoEstimado": 30,
       "tags": [
         "vocabulario-basico",
@@ -2622,8 +2623,8 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Objetos escolares",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
@@ -2632,12 +2633,12 @@ export const vocabularioBasico = {
       "enunciado": "Em uma atividade de sala, na sala de aula aparecem backpack, notebook, pencil e ruler. Para responder bem, o estudante deve mobilizar principalmente:",
       "opcoes": [
         "Objetos escolares",
-        "Números, datas e horas",
+        "Numeros, datas e horas",
         "Comidas e bebidas",
         "Lugares da cidade"
       ],
       "correta": "Objetos escolares",
-      "comentario": "Esse tipo de tarefa exige domínio de objetos escolares.",
+      "comentario": "Esse tipo de tarefa exige dominio de objetos escolares.",
       "tempoEstimado": 35,
       "tags": [
         "vocabulario-basico",
@@ -2661,22 +2662,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Objetos escolares",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação prática depende mais diretamente de Objetos escolares?",
+      "enunciado": "Qual situacao pratica depende mais diretamente de Objetos escolares?",
       "opcoes": [
-        "compreender listas e descrições simples do ambiente escolar",
-        "interpretar horários, datas e números em avisos simples",
-        "identificar pessoas, roupas e cores em descrições básicas",
-        "interpretar direções, mapas e descrições de lugares"
+        "compreender listas e descricoes simples do ambiente escolar",
+        "interpretar horarios, datas e numeros em avisos simples",
+        "identificar pessoas, roupas e cores em descricoes basicas",
+        "interpretar direcoes, mapas e descricoes de lugares"
       ],
-      "correta": "compreender listas e descrições simples do ambiente escolar",
-      "comentario": "Objetos escolares aparece de forma direta em compreender listas e descrições simples do ambiente escolar.",
+      "correta": "compreender listas e descricoes simples do ambiente escolar",
+      "comentario": "Objetos escolares aparece de forma direta em compreender listas e descricoes simples do ambiente escolar.",
       "tempoEstimado": 35,
       "tags": [
         "vocabulario-basico",
@@ -2700,22 +2701,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Objetos escolares",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre objetos escolares?",
+      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre objetos escolares?",
       "opcoes": [
-        "o caso é resolvido com foco em objetos escolares.",
-        "o caso é melhor resolvido por números, datas e horas.",
-        "o caso elimina a necessidade de cores, roupas e aparência.",
+        "o caso e resolvido com foco em objetos escolares.",
+        "o caso e melhor resolvido por numeros, datas e horas.",
+        "o caso elimina a necessidade de cores, roupas e aparencia.",
         "o caso impede qualquer uso de comidas e bebidas."
       ],
-      "correta": "o caso é resolvido com foco em objetos escolares.",
-      "comentario": "A conclusão correta retoma a função central de objetos escolares.",
+      "correta": "o caso e resolvido com foco em objetos escolares.",
+      "comentario": "A conclusao correta retoma a funcao central de objetos escolares.",
       "tempoEstimado": 40,
       "tags": [
         "vocabulario-basico",
@@ -2739,8 +2740,8 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Objetos escolares",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
@@ -2748,12 +2749,12 @@ export const vocabularioBasico = {
       "tipo": "multipla_escolha",
       "enunciado": "Se a turma fosse revisar objetos escolares, qual pergunta de estudo seria a mais adequada?",
       "opcoes": [
-        "Como objetos escolares aparece em compreender listas e descrições simples do ambiente escolar?",
-        "Como números, datas e horas substitui totalmente compreender listas e descrições simples do ambiente escolar?",
-        "Por que cores, roupas e aparência torna desnecessário estudar Objetos escolares?",
+        "Como objetos escolares aparece em compreender listas e descricoes simples do ambiente escolar?",
+        "Como numeros, datas e horas substitui totalmente compreender listas e descricoes simples do ambiente escolar?",
+        "Por que cores, roupas e aparencia torna desnecessario estudar Objetos escolares?",
         "De que modo comidas e bebidas elimina toda leitura de contexto?"
       ],
-      "correta": "Como objetos escolares aparece em compreender listas e descrições simples do ambiente escolar?",
+      "correta": "Como objetos escolares aparece em compreender listas e descricoes simples do ambiente escolar?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de objetos escolares.",
       "tempoEstimado": 40,
       "tags": [
@@ -2778,22 +2779,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Objetos escolares",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em objetos escolares é pensar que:",
+      "enunciado": "Um erro comum em objetos escolares e pensar que:",
       "opcoes": [
-        "todo objeto escolar pode ser entendido apenas pela semelhança sonora com o português",
-        "horas e datas em inglês seguem sempre a mesma lógica gráfica do português",
-        "a cor sempre aparece depois do substantivo em inglês, como no português informal",
-        "toda palavra de comida em inglês é cognata e fácil de reconhecer"
+        "todo objeto escolar pode ser entendido apenas pela semelhanca sonora com o portugues",
+        "horas e datas em ingles seguem sempre a mesma logica grafica do portugues",
+        "a cor sempre aparece depois do substantivo em ingles, como no portugues informal",
+        "toda palavra de comida em ingles e cognata e facil de reconhecer"
       ],
-      "correta": "todo objeto escolar pode ser entendido apenas pela semelhança sonora com o português",
-      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de objetos escolares.",
+      "correta": "todo objeto escolar pode ser entendido apenas pela semelhanca sonora com o portugues",
+      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de objetos escolares.",
       "tempoEstimado": 45,
       "tags": [
         "vocabulario-basico",
@@ -2817,22 +2818,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Objetos escolares",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"notebook em inglês escolar sempre significa caderno em qualquer contexto\". A avaliação mais adequada é:",
+      "enunciado": "Um estudante afirma: \"notebook em ingles escolar sempre significa caderno em qualquer contexto\". A avaliacao mais adequada e:",
       "opcoes": [
-        "A afirmação está incorreta, porque o vocabulário ligado a materiais e itens presentes no ambiente escolar.",
-        "A afirmação está correta, pois resume integralmente objetos escolares.",
-        "A afirmação está correta, porque basta decorar a tradução do exemplo.",
-        "A afirmação está incorreta apenas por não citar uma regra gramatical."
+        "A afirmacao esta incorreta, porque o vocabulario ligado a materiais e itens presentes no ambiente escolar.",
+        "A afirmacao esta correta, pois resume integralmente objetos escolares.",
+        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
+        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
       ],
-      "correta": "A afirmação está incorreta, porque o vocabulário ligado a materiais e itens presentes no ambiente escolar.",
-      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre objetos escolares.",
+      "correta": "A afirmacao esta incorreta, porque o vocabulario ligado a materiais e itens presentes no ambiente escolar.",
+      "comentario": "A fala do estudante apresenta um equivoco conceitual sobre objetos escolares.",
       "tempoEstimado": 45,
       "tags": [
         "vocabulario-basico",
@@ -2856,22 +2857,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Objetos escolares",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se objetos escolares fosse ignorado(a) em compreender listas e descrições simples do ambiente escolar, o resultado mais provável seria:",
+      "enunciado": "Se objetos escolares fosse ignorado(a) em compreender listas e descricoes simples do ambiente escolar, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretação ficaria incompleta e aumentaria a chance de erro em compreender listas e descrições simples do ambiente escolar.",
-        "a questão seria resolvida automaticamente por números, datas e horas.",
-        "nenhuma interpretação seria alterada, porque Objetos escolares não interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
+        "a interpretacao ficaria incompleta e aumentaria a chance de erro em compreender listas e descricoes simples do ambiente escolar.",
+        "a questao seria resolvida automaticamente por numeros, datas e horas.",
+        "nenhuma interpretacao seria alterada, porque Objetos escolares nao interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
       ],
-      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em compreender listas e descrições simples do ambiente escolar.",
-      "comentario": "Ignorar objetos escolares compromete a resolução correta da atividade.",
+      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em compreender listas e descricoes simples do ambiente escolar.",
+      "comentario": "Ignorar objetos escolares compromete a resolucao correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "vocabulario-basico",
@@ -2895,14 +2896,14 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Objetos escolares",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou ação ilustra melhor Objetos escolares?",
+      "enunciado": "Qual trecho ou acao ilustra melhor Objetos escolares?",
       "opcoes": [
         "There is a pencil case in my backpack.",
         "The test is on July 10 at nine o'clock.",
@@ -2910,7 +2911,7 @@ export const vocabularioBasico = {
         "She drinks milk and eats bread for breakfast."
       ],
       "correta": "There is a pencil case in my backpack.",
-      "comentario": "O item correto é o que melhor exemplifica objetos escolares.",
+      "comentario": "O item correto e o que melhor exemplifica objetos escolares.",
       "tempoEstimado": 50,
       "tags": [
         "vocabulario-basico",
@@ -2934,19 +2935,19 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Objetos escolares",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao encontrar o exemplo \"There is a pencil case in my backpack.\", a leitura mais adequada é:",
+      "enunciado": "Ao encontrar o exemplo \"There is a pencil case in my backpack.\", a leitura mais adequada e:",
       "opcoes": [
         "a frase apresenta itens comuns do cotidiano escolar",
-        "a frase combina data e horário em um contexto escolar",
+        "a frase combina data e horario em um contexto escolar",
         "a frase descreve roupa e cor em uma estrutura comum",
-        "a frase apresenta vocabulário básico de alimentação"
+        "a frase apresenta vocabulario basico de alimentacao"
       ],
       "correta": "a frase apresenta itens comuns do cotidiano escolar",
       "comentario": "A leitura correta do exemplo revela o papel de objetos escolares.",
@@ -2973,22 +2974,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Objetos escolares",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estratégia ajuda mais a estudar objetos escolares?",
+      "enunciado": "Qual estrategia ajuda mais a estudar objetos escolares?",
       "opcoes": [
-        "associar o vocabulário ao objeto e ao ambiente em que ele aparece",
-        "observar números e palavras que indicam mês, dia e hora",
+        "associar o vocabulario ao objeto e ao ambiente em que ele aparece",
+        "observar numeros e palavras que indicam mes, dia e hora",
         "observar a ordem das palavras e o elemento visual descrito",
-        "relacionar a palavra ao momento da refeição e ao alimento citado"
+        "relacionar a palavra ao momento da refeicao e ao alimento citado"
       ],
-      "correta": "associar o vocabulário ao objeto e ao ambiente em que ele aparece",
-      "comentario": "A estratégia correta fortalece o domínio de objetos escolares.",
+      "correta": "associar o vocabulario ao objeto e ao ambiente em que ele aparece",
+      "comentario": "A estrategia correta fortalece o dominio de objetos escolares.",
       "tempoEstimado": 55,
       "tags": [
         "vocabulario-basico",
@@ -3012,22 +3013,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Objetos escolares",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Objetos escolares é mais cobrado quando:",
+      "enunciado": "Em uma prova, Objetos escolares e mais cobrado quando:",
       "opcoes": [
         "o item pede reconhecer ou relacionar nomes de materiais escolares",
-        "a questão exige localizar ou interpretar referências de tempo",
-        "o item pede reconhecer descrição de aparência ou vestuário",
-        "a questão cobra identificação de itens de comida e bebida"
+        "a questao exige localizar ou interpretar referencias de tempo",
+        "o item pede reconhecer descricao de aparencia ou vestuario",
+        "a questao cobra identificacao de itens de comida e bebida"
       ],
       "correta": "o item pede reconhecer ou relacionar nomes de materiais escolares",
-      "comentario": "Esse é o tipo de demanda em que objetos escolares aparece com mais frequência.",
+      "comentario": "Esse e o tipo de demanda em que objetos escolares aparece com mais frequencia.",
       "tempoEstimado": 60,
       "tags": [
         "vocabulario-basico",
@@ -3051,8 +3052,8 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Objetos escolares",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
@@ -3060,13 +3061,13 @@ export const vocabularioBasico = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual resumo sintetiza melhor a ideia de Objetos escolares?",
       "opcoes": [
-        "Em síntese, o vocabulário ligado a materiais e itens presentes no ambiente escolar.",
-        "Em síntese, o repertório lexical usado para contar, indicar datas, idades, horários e sequências.",
-        "Em síntese, o vocabulário usado para descrever cores, vestuário e características visuais simples.",
-        "Em síntese, o vocabulário relacionado a alimentos, refeições e bebidas do cotidiano."
+        "Em sintese, o vocabulario ligado a materiais e itens presentes no ambiente escolar.",
+        "Em sintese, o repertorio lexical usado para contar, indicar datas, idades, horarios e sequencias.",
+        "Em sintese, o vocabulario usado para descrever cores, vestuario e caracteristicas visuais simples.",
+        "Em sintese, o vocabulario relacionado a alimentos, refeicoes e bebidas do cotidiano."
       ],
-      "correta": "Em síntese, o vocabulário ligado a materiais e itens presentes no ambiente escolar.",
-      "comentario": "O resumo correto recupera o núcleo de objetos escolares.",
+      "correta": "Em sintese, o vocabulario ligado a materiais e itens presentes no ambiente escolar.",
+      "comentario": "O resumo correto recupera o nucleo de objetos escolares.",
       "tempoEstimado": 60,
       "tags": [
         "vocabulario-basico",
@@ -3090,22 +3091,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Objetos escolares",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associação entre exemplo e interpretação está correta em Objetos escolares?",
+      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Objetos escolares?",
       "opcoes": [
         "There is a pencil case in my backpack. -> a frase apresenta itens comuns do cotidiano escolar",
         "The test is on July 10 at nine o'clock. -> a frase apresenta itens comuns do cotidiano escolar",
-        "He is wearing a red jacket. -> a frase apresenta vocabulário básico de alimentação",
-        "She drinks milk and eats bread for breakfast. -> a frase combina data e horário em um contexto escolar"
+        "He is wearing a red jacket. -> a frase apresenta vocabulario basico de alimentacao",
+        "She drinks milk and eats bread for breakfast. -> a frase combina data e horario em um contexto escolar"
       ],
       "correta": "There is a pencil case in my backpack. -> a frase apresenta itens comuns do cotidiano escolar",
-      "comentario": "A associação correta mantém coerência entre exemplo e interpretação em objetos escolares.",
+      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em objetos escolares.",
       "tempoEstimado": 65,
       "tags": [
         "vocabulario-basico",
@@ -3129,8 +3130,8 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Objetos escolares",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
@@ -3138,13 +3139,13 @@ export const vocabularioBasico = {
       "tipo": "multipla_escolha",
       "enunciado": "Ao resolver uma atividade sobre objetos escolares, o estudante deve principalmente:",
       "opcoes": [
-        "associar palavras em inglês a objetos usados na escola",
-        "associar o vocabulário ao objeto e ao ambiente em que ele aparece",
-        "compreender listas e descrições simples do ambiente escolar",
+        "associar palavras em ingles a objetos usados na escola",
+        "associar o vocabulario ao objeto e ao ambiente em que ele aparece",
+        "compreender listas e descricoes simples do ambiente escolar",
         "o item pede reconhecer ou relacionar nomes de materiais escolares"
       ],
-      "correta": "associar palavras em inglês a objetos usados na escola",
-      "comentario": "O objetivo central de objetos escolares é associar palavras em inglês a objetos usados na escola.",
+      "correta": "associar palavras em ingles a objetos usados na escola",
+      "comentario": "O objetivo central de objetos escolares e associar palavras em ingles a objetos usados na escola.",
       "tempoEstimado": 70,
       "tags": [
         "vocabulario-basico",
@@ -3168,22 +3169,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Números, datas e horas",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Numeros, datas e horas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Inglês, Números, datas e horas refere-se a:",
+      "enunciado": "Em Ingles, Numeros, datas e horas refere-se a:",
       "opcoes": [
-        "o repertório lexical usado para contar, indicar datas, idades, horários e sequências",
-        "o vocabulário usado para descrever cores, vestuário e características visuais simples",
-        "o vocabulário relacionado a alimentos, refeições e bebidas do cotidiano",
-        "o vocabulário usado para nomear espaços comuns do bairro e da cidade"
+        "o repertorio lexical usado para contar, indicar datas, idades, horarios e sequencias",
+        "o vocabulario usado para descrever cores, vestuario e caracteristicas visuais simples",
+        "o vocabulario relacionado a alimentos, refeicoes e bebidas do cotidiano",
+        "o vocabulario usado para nomear espacos comuns do bairro e da cidade"
       ],
-      "correta": "o repertório lexical usado para contar, indicar datas, idades, horários e sequências",
-      "comentario": "Números, datas e horas refere-se ao repertório lexical usado para contar, indicar datas, idades, horários e sequências.",
+      "correta": "o repertorio lexical usado para contar, indicar datas, idades, horarios e sequencias",
+      "comentario": "Numeros, datas e horas refere-se ao repertorio lexical usado para contar, indicar datas, idades, horarios e sequencias.",
       "tempoEstimado": 20,
       "tags": [
         "vocabulario-basico",
@@ -3207,22 +3208,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Números, datas e horas",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Numeros, datas e horas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: um cartaz informa class starts at 8:15 on May 12. Esse caso está mais ligado a qual subtópico?",
+      "enunciado": "Observe a situacao: um cartaz informa class starts at 8:15 on May 12. Esse caso esta mais ligado a qual subtopico?",
       "opcoes": [
-        "Números, datas e horas",
-        "Cores, roupas e aparência",
+        "Numeros, datas e horas",
+        "Cores, roupas e aparencia",
         "Comidas e bebidas",
         "Lugares da cidade"
       ],
-      "correta": "Números, datas e horas",
-      "comentario": "A situação apresentada é melhor compreendida por meio de números, datas e horas.",
+      "correta": "Numeros, datas e horas",
+      "comentario": "A situacao apresentada e melhor compreendida por meio de numeros, datas e horas.",
       "tempoEstimado": 20,
       "tags": [
         "vocabulario-basico",
@@ -3246,14 +3247,14 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Números, datas e horas",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Numeros, datas e horas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual exemplo combina melhor com números, datas e horas?",
+      "enunciado": "Qual exemplo combina melhor com numeros, datas e horas?",
       "opcoes": [
         "The test is on July 10 at nine o'clock.",
         "He is wearing a red jacket.",
@@ -3261,7 +3262,7 @@ export const vocabularioBasico = {
         "The library is next to the park."
       ],
       "correta": "The test is on July 10 at nine o'clock.",
-      "comentario": "O exemplo correto ilustra o uso de números, datas e horas.",
+      "comentario": "O exemplo correto ilustra o uso de numeros, datas e horas.",
       "tempoEstimado": 25,
       "tags": [
         "vocabulario-basico",
@@ -3285,22 +3286,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Números, datas e horas",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Numeros, datas e horas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO representa corretamente números, datas e horas?",
+      "enunciado": "Qual alternativa NAO representa corretamente numeros, datas e horas?",
       "opcoes": [
         "He is wearing a red jacket.",
         "The test is on July 10 at nine o'clock.",
-        "observar números e palavras que indicam mês, dia e hora.",
-        "interpretar horários, datas e números em avisos simples."
+        "observar numeros e palavras que indicam mes, dia e hora.",
+        "interpretar horarios, datas e numeros em avisos simples."
       ],
       "correta": "He is wearing a red jacket.",
-      "comentario": "A opção incompatível ilustra outro subtópico, e não números, datas e horas.",
+      "comentario": "A opcao incompativel ilustra outro subtopico, e nao numeros, datas e horas.",
       "tempoEstimado": 25,
       "tags": [
         "vocabulario-basico",
@@ -3324,22 +3325,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Números, datas e horas",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Numeros, datas e horas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar números, datas e horas, o foco principal é:",
+      "enunciado": "Ao estudar numeros, datas e horas, o foco principal e:",
       "opcoes": [
-        "ler números e marcar referências básicas de tempo",
-        "relacionar palavras a descrição física e visual",
-        "identificar itens de alimentação em frases e pequenos diálogos",
-        "reconhecer locais públicos e sua função no contexto"
+        "ler numeros e marcar referencias basicas de tempo",
+        "relacionar palavras a descricao fisica e visual",
+        "identificar itens de alimentacao em frases e pequenos dialogos",
+        "reconhecer locais publicos e sua funcao no contexto"
       ],
-      "correta": "ler números e marcar referências básicas de tempo",
-      "comentario": "Números, datas e horas concentra-se em ler números e marcar referências básicas de tempo.",
+      "correta": "ler numeros e marcar referencias basicas de tempo",
+      "comentario": "Numeros, datas e horas concentra-se em ler numeros e marcar referencias basicas de tempo.",
       "tempoEstimado": 30,
       "tags": [
         "vocabulario-basico",
@@ -3363,22 +3364,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Números, datas e horas",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Numeros, datas e horas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Cores, roupas e aparência trata de o vocabulário usado para descrever cores, vestuário e características visuais simples, Números, datas e horas destaca:",
+      "enunciado": "Enquanto Cores, roupas e aparencia trata de o vocabulario usado para descrever cores, vestuario e caracteristicas visuais simples, Numeros, datas e horas destaca:",
       "opcoes": [
-        "O repertório lexical usado para contar, indicar datas, idades, horários e sequências.",
-        "O vocabulário usado para descrever cores, vestuário e características visuais simples.",
-        "O vocabulário relacionado a alimentos, refeições e bebidas do cotidiano.",
-        "O vocabulário usado para nomear espaços comuns do bairro e da cidade."
+        "O repertorio lexical usado para contar, indicar datas, idades, horarios e sequencias.",
+        "O vocabulario usado para descrever cores, vestuario e caracteristicas visuais simples.",
+        "O vocabulario relacionado a alimentos, refeicoes e bebidas do cotidiano.",
+        "O vocabulario usado para nomear espacos comuns do bairro e da cidade."
       ],
-      "correta": "O repertório lexical usado para contar, indicar datas, idades, horários e sequências.",
-      "comentario": "A comparação correta mostra a especificidade de números, datas e horas.",
+      "correta": "O repertorio lexical usado para contar, indicar datas, idades, horarios e sequencias.",
+      "comentario": "A comparacao correta mostra a especificidade de numeros, datas e horas.",
       "tempoEstimado": 30,
       "tags": [
         "vocabulario-basico",
@@ -3402,22 +3403,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Números, datas e horas",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Numeros, datas e horas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
       "enunciado": "Em uma atividade de sala, um cartaz informa class starts at 8:15 on May 12. Para responder bem, o estudante deve mobilizar principalmente:",
       "opcoes": [
-        "Números, datas e horas",
-        "Cores, roupas e aparência",
+        "Numeros, datas e horas",
+        "Cores, roupas e aparencia",
         "Lugares da cidade",
-        "Rotina e ações cotidianas"
+        "Rotina e acoes cotidianas"
       ],
-      "correta": "Números, datas e horas",
-      "comentario": "Esse tipo de tarefa exige domínio de números, datas e horas.",
+      "correta": "Numeros, datas e horas",
+      "comentario": "Esse tipo de tarefa exige dominio de numeros, datas e horas.",
       "tempoEstimado": 35,
       "tags": [
         "vocabulario-basico",
@@ -3441,22 +3442,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Números, datas e horas",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Numeros, datas e horas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação prática depende mais diretamente de Números, datas e horas?",
+      "enunciado": "Qual situacao pratica depende mais diretamente de Numeros, datas e horas?",
       "opcoes": [
-        "interpretar horários, datas e números em avisos simples",
-        "identificar pessoas, roupas e cores em descrições básicas",
-        "interpretar menus, preferências e hábitos alimentares simples",
-        "compreender sequências simples de ações da rotina"
+        "interpretar horarios, datas e numeros em avisos simples",
+        "identificar pessoas, roupas e cores em descricoes basicas",
+        "interpretar menus, preferencias e habitos alimentares simples",
+        "compreender sequencias simples de acoes da rotina"
       ],
-      "correta": "interpretar horários, datas e números em avisos simples",
-      "comentario": "Números, datas e horas aparece de forma direta em interpretar horários, datas e números em avisos simples.",
+      "correta": "interpretar horarios, datas e numeros em avisos simples",
+      "comentario": "Numeros, datas e horas aparece de forma direta em interpretar horarios, datas e numeros em avisos simples.",
       "tempoEstimado": 35,
       "tags": [
         "vocabulario-basico",
@@ -3480,22 +3481,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Números, datas e horas",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Numeros, datas e horas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre números, datas e horas?",
+      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre numeros, datas e horas?",
       "opcoes": [
-        "o caso é resolvido com foco em números, datas e horas.",
-        "o caso é melhor resolvido por cores, roupas e aparência.",
+        "o caso e resolvido com foco em numeros, datas e horas.",
+        "o caso e melhor resolvido por cores, roupas e aparencia.",
         "o caso elimina a necessidade de comidas e bebidas.",
         "o caso impede qualquer uso de lugares da cidade."
       ],
-      "correta": "o caso é resolvido com foco em números, datas e horas.",
-      "comentario": "A conclusão correta retoma a função central de números, datas e horas.",
+      "correta": "o caso e resolvido com foco em numeros, datas e horas.",
+      "comentario": "A conclusao correta retoma a funcao central de numeros, datas e horas.",
       "tempoEstimado": 40,
       "tags": [
         "vocabulario-basico",
@@ -3519,22 +3520,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Números, datas e horas",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Numeros, datas e horas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Se a turma fosse revisar números, datas e horas, qual pergunta de estudo seria a mais adequada?",
+      "enunciado": "Se a turma fosse revisar numeros, datas e horas, qual pergunta de estudo seria a mais adequada?",
       "opcoes": [
-        "Como números, datas e horas aparece em interpretar horários, datas e números em avisos simples?",
-        "Como cores, roupas e aparência substitui totalmente interpretar horários, datas e números em avisos simples?",
-        "Por que comidas e bebidas torna desnecessário estudar Números, datas e horas?",
+        "Como numeros, datas e horas aparece em interpretar horarios, datas e numeros em avisos simples?",
+        "Como cores, roupas e aparencia substitui totalmente interpretar horarios, datas e numeros em avisos simples?",
+        "Por que comidas e bebidas torna desnecessario estudar Numeros, datas e horas?",
         "De que modo lugares da cidade elimina toda leitura de contexto?"
       ],
-      "correta": "Como números, datas e horas aparece em interpretar horários, datas e números em avisos simples?",
-      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de números, datas e horas.",
+      "correta": "Como numeros, datas e horas aparece em interpretar horarios, datas e numeros em avisos simples?",
+      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de numeros, datas e horas.",
       "tempoEstimado": 40,
       "tags": [
         "vocabulario-basico",
@@ -3558,22 +3559,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Números, datas e horas",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Numeros, datas e horas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em números, datas e horas é pensar que:",
+      "enunciado": "Um erro comum em numeros, datas e horas e pensar que:",
       "opcoes": [
-        "horas e datas em inglês seguem sempre a mesma lógica gráfica do português",
-        "a cor sempre aparece depois do substantivo em inglês, como no português informal",
-        "toda palavra de comida em inglês é cognata e fácil de reconhecer",
-        "todo lugar da cidade pode ser identificado apenas pela primeira letra ou por semelhança"
+        "horas e datas em ingles seguem sempre a mesma logica grafica do portugues",
+        "a cor sempre aparece depois do substantivo em ingles, como no portugues informal",
+        "toda palavra de comida em ingles e cognata e facil de reconhecer",
+        "todo lugar da cidade pode ser identificado apenas pela primeira letra ou por semelhanca"
       ],
-      "correta": "horas e datas em inglês seguem sempre a mesma lógica gráfica do português",
-      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de números, datas e horas.",
+      "correta": "horas e datas em ingles seguem sempre a mesma logica grafica do portugues",
+      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de numeros, datas e horas.",
       "tempoEstimado": 45,
       "tags": [
         "vocabulario-basico",
@@ -3597,22 +3598,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Números, datas e horas",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Numeros, datas e horas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"8:15 só pode ser lido em inglês da mesma forma que em português\". A avaliação mais adequada é:",
+      "enunciado": "Um estudante afirma: \"8:15 so pode ser lido em ingles da mesma forma que em portugues\". A avaliacao mais adequada e:",
       "opcoes": [
-        "A afirmação está incorreta, porque o repertório lexical usado para contar, indicar datas, idades, horários e sequências.",
-        "A afirmação está correta, pois resume integralmente números, datas e horas.",
-        "A afirmação está correta, porque basta decorar a tradução do exemplo.",
-        "A afirmação está incorreta apenas por não citar uma regra gramatical."
+        "A afirmacao esta incorreta, porque o repertorio lexical usado para contar, indicar datas, idades, horarios e sequencias.",
+        "A afirmacao esta correta, pois resume integralmente numeros, datas e horas.",
+        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
+        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
       ],
-      "correta": "A afirmação está incorreta, porque o repertório lexical usado para contar, indicar datas, idades, horários e sequências.",
-      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre números, datas e horas.",
+      "correta": "A afirmacao esta incorreta, porque o repertorio lexical usado para contar, indicar datas, idades, horarios e sequencias.",
+      "comentario": "A fala do estudante apresenta um equivoco conceitual sobre numeros, datas e horas.",
       "tempoEstimado": 45,
       "tags": [
         "vocabulario-basico",
@@ -3636,22 +3637,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Números, datas e horas",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Numeros, datas e horas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se números, datas e horas fosse ignorado(a) em interpretar horários, datas e números em avisos simples, o resultado mais provável seria:",
+      "enunciado": "Se numeros, datas e horas fosse ignorado(a) em interpretar horarios, datas e numeros em avisos simples, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretação ficaria incompleta e aumentaria a chance de erro em interpretar horários, datas e números em avisos simples.",
-        "a questão seria resolvida automaticamente por cores, roupas e aparência.",
-        "nenhuma interpretação seria alterada, porque Números, datas e horas não interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
+        "a interpretacao ficaria incompleta e aumentaria a chance de erro em interpretar horarios, datas e numeros em avisos simples.",
+        "a questao seria resolvida automaticamente por cores, roupas e aparencia.",
+        "nenhuma interpretacao seria alterada, porque Numeros, datas e horas nao interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
       ],
-      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em interpretar horários, datas e números em avisos simples.",
-      "comentario": "Ignorar números, datas e horas compromete a resolução correta da atividade.",
+      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em interpretar horarios, datas e numeros em avisos simples.",
+      "comentario": "Ignorar numeros, datas e horas compromete a resolucao correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "vocabulario-basico",
@@ -3675,14 +3676,14 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Números, datas e horas",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Numeros, datas e horas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou ação ilustra melhor Números, datas e horas?",
+      "enunciado": "Qual trecho ou acao ilustra melhor Numeros, datas e horas?",
       "opcoes": [
         "The test is on July 10 at nine o'clock.",
         "He is wearing a red jacket.",
@@ -3690,7 +3691,7 @@ export const vocabularioBasico = {
         "The library is next to the park."
       ],
       "correta": "The test is on July 10 at nine o'clock.",
-      "comentario": "O item correto é o que melhor exemplifica números, datas e horas.",
+      "comentario": "O item correto e o que melhor exemplifica numeros, datas e horas.",
       "tempoEstimado": 50,
       "tags": [
         "vocabulario-basico",
@@ -3714,22 +3715,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Números, datas e horas",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Numeros, datas e horas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao encontrar o exemplo \"The test is on July 10 at nine o'clock.\", a leitura mais adequada é:",
+      "enunciado": "Ao encontrar o exemplo \"The test is on July 10 at nine o'clock.\", a leitura mais adequada e:",
       "opcoes": [
-        "a frase combina data e horário em um contexto escolar",
+        "a frase combina data e horario em um contexto escolar",
         "a frase descreve roupa e cor em uma estrutura comum",
-        "a frase apresenta vocabulário básico de alimentação",
-        "a frase indica um lugar da cidade e sua posição"
+        "a frase apresenta vocabulario basico de alimentacao",
+        "a frase indica um lugar da cidade e sua posicao"
       ],
-      "correta": "a frase combina data e horário em um contexto escolar",
-      "comentario": "A leitura correta do exemplo revela o papel de números, datas e horas.",
+      "correta": "a frase combina data e horario em um contexto escolar",
+      "comentario": "A leitura correta do exemplo revela o papel de numeros, datas e horas.",
       "tempoEstimado": 55,
       "tags": [
         "vocabulario-basico",
@@ -3753,22 +3754,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Números, datas e horas",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Numeros, datas e horas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estratégia ajuda mais a estudar números, datas e horas?",
+      "enunciado": "Qual estrategia ajuda mais a estudar numeros, datas e horas?",
       "opcoes": [
-        "observar números e palavras que indicam mês, dia e hora",
+        "observar numeros e palavras que indicam mes, dia e hora",
         "observar a ordem das palavras e o elemento visual descrito",
-        "relacionar a palavra ao momento da refeição e ao alimento citado",
-        "observar o nome do lugar e a relação espacial expressa no contexto"
+        "relacionar a palavra ao momento da refeicao e ao alimento citado",
+        "observar o nome do lugar e a relacao espacial expressa no contexto"
       ],
-      "correta": "observar números e palavras que indicam mês, dia e hora",
-      "comentario": "A estratégia correta fortalece o domínio de números, datas e horas.",
+      "correta": "observar numeros e palavras que indicam mes, dia e hora",
+      "comentario": "A estrategia correta fortalece o dominio de numeros, datas e horas.",
       "tempoEstimado": 55,
       "tags": [
         "vocabulario-basico",
@@ -3792,22 +3793,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Números, datas e horas",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Numeros, datas e horas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Números, datas e horas é mais cobrado quando:",
+      "enunciado": "Em uma prova, Numeros, datas e horas e mais cobrado quando:",
       "opcoes": [
-        "a questão exige localizar ou interpretar referências de tempo",
-        "o item pede reconhecer descrição de aparência ou vestuário",
-        "a questão cobra identificação de itens de comida e bebida",
-        "o item pede localizar ou reconhecer lugares urbanos em inglês"
+        "a questao exige localizar ou interpretar referencias de tempo",
+        "o item pede reconhecer descricao de aparencia ou vestuario",
+        "a questao cobra identificacao de itens de comida e bebida",
+        "o item pede localizar ou reconhecer lugares urbanos em ingles"
       ],
-      "correta": "a questão exige localizar ou interpretar referências de tempo",
-      "comentario": "Esse é o tipo de demanda em que números, datas e horas aparece com mais frequência.",
+      "correta": "a questao exige localizar ou interpretar referencias de tempo",
+      "comentario": "Esse e o tipo de demanda em que numeros, datas e horas aparece com mais frequencia.",
       "tempoEstimado": 60,
       "tags": [
         "vocabulario-basico",
@@ -3831,22 +3832,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Números, datas e horas",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Numeros, datas e horas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual resumo sintetiza melhor a ideia de Números, datas e horas?",
+      "enunciado": "Qual resumo sintetiza melhor a ideia de Numeros, datas e horas?",
       "opcoes": [
-        "Em síntese, o repertório lexical usado para contar, indicar datas, idades, horários e sequências.",
-        "Em síntese, o vocabulário usado para descrever cores, vestuário e características visuais simples.",
-        "Em síntese, o vocabulário relacionado a alimentos, refeições e bebidas do cotidiano.",
-        "Em síntese, o vocabulário usado para nomear espaços comuns do bairro e da cidade."
+        "Em sintese, o repertorio lexical usado para contar, indicar datas, idades, horarios e sequencias.",
+        "Em sintese, o vocabulario usado para descrever cores, vestuario e caracteristicas visuais simples.",
+        "Em sintese, o vocabulario relacionado a alimentos, refeicoes e bebidas do cotidiano.",
+        "Em sintese, o vocabulario usado para nomear espacos comuns do bairro e da cidade."
       ],
-      "correta": "Em síntese, o repertório lexical usado para contar, indicar datas, idades, horários e sequências.",
-      "comentario": "O resumo correto recupera o núcleo de números, datas e horas.",
+      "correta": "Em sintese, o repertorio lexical usado para contar, indicar datas, idades, horarios e sequencias.",
+      "comentario": "O resumo correto recupera o nucleo de numeros, datas e horas.",
       "tempoEstimado": 60,
       "tags": [
         "vocabulario-basico",
@@ -3870,22 +3871,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Números, datas e horas",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Numeros, datas e horas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associação entre exemplo e interpretação está correta em Números, datas e horas?",
+      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Numeros, datas e horas?",
       "opcoes": [
-        "The test is on July 10 at nine o'clock. -> a frase combina data e horário em um contexto escolar",
-        "He is wearing a red jacket. -> a frase combina data e horário em um contexto escolar",
-        "She drinks milk and eats bread for breakfast. -> a frase indica um lugar da cidade e sua posição",
+        "The test is on July 10 at nine o'clock. -> a frase combina data e horario em um contexto escolar",
+        "He is wearing a red jacket. -> a frase combina data e horario em um contexto escolar",
+        "She drinks milk and eats bread for breakfast. -> a frase indica um lugar da cidade e sua posicao",
         "The library is next to the park. -> a frase descreve roupa e cor em uma estrutura comum"
       ],
-      "correta": "The test is on July 10 at nine o'clock. -> a frase combina data e horário em um contexto escolar",
-      "comentario": "A associação correta mantém coerência entre exemplo e interpretação em números, datas e horas.",
+      "correta": "The test is on July 10 at nine o'clock. -> a frase combina data e horario em um contexto escolar",
+      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em numeros, datas e horas.",
       "tempoEstimado": 65,
       "tags": [
         "vocabulario-basico",
@@ -3909,22 +3910,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Números, datas e horas",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Numeros, datas e horas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao resolver uma atividade sobre números, datas e horas, o estudante deve principalmente:",
+      "enunciado": "Ao resolver uma atividade sobre numeros, datas e horas, o estudante deve principalmente:",
       "opcoes": [
-        "ler números e marcar referências básicas de tempo",
-        "observar números e palavras que indicam mês, dia e hora",
-        "interpretar horários, datas e números em avisos simples",
-        "a questão exige localizar ou interpretar referências de tempo"
+        "ler numeros e marcar referencias basicas de tempo",
+        "observar numeros e palavras que indicam mes, dia e hora",
+        "interpretar horarios, datas e numeros em avisos simples",
+        "a questao exige localizar ou interpretar referencias de tempo"
       ],
-      "correta": "ler números e marcar referências básicas de tempo",
-      "comentario": "O objetivo central de números, datas e horas é ler números e marcar referências básicas de tempo.",
+      "correta": "ler numeros e marcar referencias basicas de tempo",
+      "comentario": "O objetivo central de numeros, datas e horas e ler numeros e marcar referencias basicas de tempo.",
       "tempoEstimado": 70,
       "tags": [
         "vocabulario-basico",
@@ -3948,22 +3949,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Cores, roupas e aparência",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Cores, roupas e aparencia",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Inglês, Cores, roupas e aparência refere-se a:",
+      "enunciado": "Em Ingles, Cores, roupas e aparencia refere-se a:",
       "opcoes": [
-        "o vocabulário usado para descrever cores, vestuário e características visuais simples",
-        "o vocabulário relacionado a alimentos, refeições e bebidas do cotidiano",
-        "o vocabulário usado para nomear espaços comuns do bairro e da cidade",
-        "o vocabulário de verbos e expressões usado para falar de atividades do dia a dia"
+        "o vocabulario usado para descrever cores, vestuario e caracteristicas visuais simples",
+        "o vocabulario relacionado a alimentos, refeicoes e bebidas do cotidiano",
+        "o vocabulario usado para nomear espacos comuns do bairro e da cidade",
+        "o vocabulario de verbos e expressoes usado para falar de atividades do dia a dia"
       ],
-      "correta": "o vocabulário usado para descrever cores, vestuário e características visuais simples",
-      "comentario": "Cores, roupas e aparência refere-se ao vocabulário usado para descrever cores, vestuário e características visuais simples.",
+      "correta": "o vocabulario usado para descrever cores, vestuario e caracteristicas visuais simples",
+      "comentario": "Cores, roupas e aparencia refere-se ao vocabulario usado para descrever cores, vestuario e caracteristicas visuais simples.",
       "tempoEstimado": 20,
       "tags": [
         "vocabulario-basico",
@@ -3987,22 +3988,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Cores, roupas e aparência",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Cores, roupas e aparencia",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: um texto descreve a girl in a blue T-shirt and black shoes. Esse caso está mais ligado a qual subtópico?",
+      "enunciado": "Observe a situacao: um texto descreve a girl in a blue T-shirt and black shoes. Esse caso esta mais ligado a qual subtopico?",
       "opcoes": [
-        "Cores, roupas e aparência",
+        "Cores, roupas e aparencia",
         "Comidas e bebidas",
         "Lugares da cidade",
-        "Rotina e ações cotidianas"
+        "Rotina e acoes cotidianas"
       ],
-      "correta": "Cores, roupas e aparência",
-      "comentario": "A situação apresentada é melhor compreendida por meio de cores, roupas e aparência.",
+      "correta": "Cores, roupas e aparencia",
+      "comentario": "A situacao apresentada e melhor compreendida por meio de cores, roupas e aparencia.",
       "tempoEstimado": 20,
       "tags": [
         "vocabulario-basico",
@@ -4026,14 +4027,14 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Cores, roupas e aparência",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Cores, roupas e aparencia",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual exemplo combina melhor com cores, roupas e aparência?",
+      "enunciado": "Qual exemplo combina melhor com cores, roupas e aparencia?",
       "opcoes": [
         "He is wearing a red jacket.",
         "She drinks milk and eats bread for breakfast.",
@@ -4041,7 +4042,7 @@ export const vocabularioBasico = {
         "I study, play and sleep at regular times."
       ],
       "correta": "He is wearing a red jacket.",
-      "comentario": "O exemplo correto ilustra o uso de cores, roupas e aparência.",
+      "comentario": "O exemplo correto ilustra o uso de cores, roupas e aparencia.",
       "tempoEstimado": 25,
       "tags": [
         "vocabulario-basico",
@@ -4065,22 +4066,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Cores, roupas e aparência",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Cores, roupas e aparencia",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO representa corretamente cores, roupas e aparência?",
+      "enunciado": "Qual alternativa NAO representa corretamente cores, roupas e aparencia?",
       "opcoes": [
         "She drinks milk and eats bread for breakfast.",
         "He is wearing a red jacket.",
         "observar a ordem das palavras e o elemento visual descrito.",
-        "identificar pessoas, roupas e cores em descrições básicas."
+        "identificar pessoas, roupas e cores em descricoes basicas."
       ],
       "correta": "She drinks milk and eats bread for breakfast.",
-      "comentario": "A opção incompatível ilustra outro subtópico, e não cores, roupas e aparência.",
+      "comentario": "A opcao incompativel ilustra outro subtopico, e nao cores, roupas e aparencia.",
       "tempoEstimado": 25,
       "tags": [
         "vocabulario-basico",
@@ -4104,22 +4105,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Cores, roupas e aparência",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Cores, roupas e aparencia",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar cores, roupas e aparência, o foco principal é:",
+      "enunciado": "Ao estudar cores, roupas e aparencia, o foco principal e:",
       "opcoes": [
-        "relacionar palavras a descrição física e visual",
-        "identificar itens de alimentação em frases e pequenos diálogos",
-        "reconhecer locais públicos e sua função no contexto",
-        "associar ações comuns a hábitos pessoais e escolares"
+        "relacionar palavras a descricao fisica e visual",
+        "identificar itens de alimentacao em frases e pequenos dialogos",
+        "reconhecer locais publicos e sua funcao no contexto",
+        "associar acoes comuns a habitos pessoais e escolares"
       ],
-      "correta": "relacionar palavras a descrição física e visual",
-      "comentario": "Cores, roupas e aparência concentra-se em relacionar palavras a descrição física e visual.",
+      "correta": "relacionar palavras a descricao fisica e visual",
+      "comentario": "Cores, roupas e aparencia concentra-se em relacionar palavras a descricao fisica e visual.",
       "tempoEstimado": 30,
       "tags": [
         "vocabulario-basico",
@@ -4143,22 +4144,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Cores, roupas e aparência",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Cores, roupas e aparencia",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Comidas e bebidas trata de o vocabulário relacionado a alimentos, refeições e bebidas do cotidiano, Cores, roupas e aparência destaca:",
+      "enunciado": "Enquanto Comidas e bebidas trata de o vocabulario relacionado a alimentos, refeicoes e bebidas do cotidiano, Cores, roupas e aparencia destaca:",
       "opcoes": [
-        "O vocabulário usado para descrever cores, vestuário e características visuais simples.",
-        "O vocabulário relacionado a alimentos, refeições e bebidas do cotidiano.",
-        "O vocabulário usado para nomear espaços comuns do bairro e da cidade.",
-        "O vocabulário de verbos e expressões usado para falar de atividades do dia a dia."
+        "O vocabulario usado para descrever cores, vestuario e caracteristicas visuais simples.",
+        "O vocabulario relacionado a alimentos, refeicoes e bebidas do cotidiano.",
+        "O vocabulario usado para nomear espacos comuns do bairro e da cidade.",
+        "O vocabulario de verbos e expressoes usado para falar de atividades do dia a dia."
       ],
-      "correta": "O vocabulário usado para descrever cores, vestuário e características visuais simples.",
-      "comentario": "A comparação correta mostra a especificidade de cores, roupas e aparência.",
+      "correta": "O vocabulario usado para descrever cores, vestuario e caracteristicas visuais simples.",
+      "comentario": "A comparacao correta mostra a especificidade de cores, roupas e aparencia.",
       "tempoEstimado": 30,
       "tags": [
         "vocabulario-basico",
@@ -4182,22 +4183,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Cores, roupas e aparência",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Cores, roupas e aparencia",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
       "enunciado": "Em uma atividade de sala, um texto descreve a girl in a blue T-shirt and black shoes. Para responder bem, o estudante deve mobilizar principalmente:",
       "opcoes": [
-        "Cores, roupas e aparência",
+        "Cores, roupas e aparencia",
         "Comidas e bebidas",
-        "Rotina e ações cotidianas",
-        "Cognatos e falsos cognatos básicos"
+        "Rotina e acoes cotidianas",
+        "Cognatos e falsos cognatos basicos"
       ],
-      "correta": "Cores, roupas e aparência",
-      "comentario": "Esse tipo de tarefa exige domínio de cores, roupas e aparência.",
+      "correta": "Cores, roupas e aparencia",
+      "comentario": "Esse tipo de tarefa exige dominio de cores, roupas e aparencia.",
       "tempoEstimado": 35,
       "tags": [
         "vocabulario-basico",
@@ -4221,22 +4222,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Cores, roupas e aparência",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Cores, roupas e aparencia",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação prática depende mais diretamente de Cores, roupas e aparência?",
+      "enunciado": "Qual situacao pratica depende mais diretamente de Cores, roupas e aparencia?",
       "opcoes": [
-        "identificar pessoas, roupas e cores em descrições básicas",
-        "interpretar menus, preferências e hábitos alimentares simples",
-        "interpretar direções, mapas e descrições de lugares",
-        "melhorar a leitura inicial sem depender de tradução automática"
+        "identificar pessoas, roupas e cores em descricoes basicas",
+        "interpretar menus, preferencias e habitos alimentares simples",
+        "interpretar direcoes, mapas e descricoes de lugares",
+        "melhorar a leitura inicial sem depender de traducao automatica"
       ],
-      "correta": "identificar pessoas, roupas e cores em descrições básicas",
-      "comentario": "Cores, roupas e aparência aparece de forma direta em identificar pessoas, roupas e cores em descrições básicas.",
+      "correta": "identificar pessoas, roupas e cores em descricoes basicas",
+      "comentario": "Cores, roupas e aparencia aparece de forma direta em identificar pessoas, roupas e cores em descricoes basicas.",
       "tempoEstimado": 35,
       "tags": [
         "vocabulario-basico",
@@ -4260,22 +4261,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Cores, roupas e aparência",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Cores, roupas e aparencia",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre cores, roupas e aparência?",
+      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre cores, roupas e aparencia?",
       "opcoes": [
-        "o caso é resolvido com foco em cores, roupas e aparência.",
-        "o caso é melhor resolvido por comidas e bebidas.",
+        "o caso e resolvido com foco em cores, roupas e aparencia.",
+        "o caso e melhor resolvido por comidas e bebidas.",
         "o caso elimina a necessidade de lugares da cidade.",
-        "o caso impede qualquer uso de rotina e ações cotidianas."
+        "o caso impede qualquer uso de rotina e acoes cotidianas."
       ],
-      "correta": "o caso é resolvido com foco em cores, roupas e aparência.",
-      "comentario": "A conclusão correta retoma a função central de cores, roupas e aparência.",
+      "correta": "o caso e resolvido com foco em cores, roupas e aparencia.",
+      "comentario": "A conclusao correta retoma a funcao central de cores, roupas e aparencia.",
       "tempoEstimado": 40,
       "tags": [
         "vocabulario-basico",
@@ -4299,22 +4300,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Cores, roupas e aparência",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Cores, roupas e aparencia",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Se a turma fosse revisar cores, roupas e aparência, qual pergunta de estudo seria a mais adequada?",
+      "enunciado": "Se a turma fosse revisar cores, roupas e aparencia, qual pergunta de estudo seria a mais adequada?",
       "opcoes": [
-        "Como cores, roupas e aparência aparece em identificar pessoas, roupas e cores em descrições básicas?",
-        "Como comidas e bebidas substitui totalmente identificar pessoas, roupas e cores em descrições básicas?",
-        "Por que lugares da cidade torna desnecessário estudar Cores, roupas e aparência?",
-        "De que modo rotina e ações cotidianas elimina toda leitura de contexto?"
+        "Como cores, roupas e aparencia aparece em identificar pessoas, roupas e cores em descricoes basicas?",
+        "Como comidas e bebidas substitui totalmente identificar pessoas, roupas e cores em descricoes basicas?",
+        "Por que lugares da cidade torna desnecessario estudar Cores, roupas e aparencia?",
+        "De que modo rotina e acoes cotidianas elimina toda leitura de contexto?"
       ],
-      "correta": "Como cores, roupas e aparência aparece em identificar pessoas, roupas e cores em descrições básicas?",
-      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de cores, roupas e aparência.",
+      "correta": "Como cores, roupas e aparencia aparece em identificar pessoas, roupas e cores em descricoes basicas?",
+      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de cores, roupas e aparencia.",
       "tempoEstimado": 40,
       "tags": [
         "vocabulario-basico",
@@ -4338,22 +4339,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Cores, roupas e aparência",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Cores, roupas e aparencia",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em cores, roupas e aparência é pensar que:",
+      "enunciado": "Um erro comum em cores, roupas e aparencia e pensar que:",
       "opcoes": [
-        "a cor sempre aparece depois do substantivo em inglês, como no português informal",
-        "toda palavra de comida em inglês é cognata e fácil de reconhecer",
-        "todo lugar da cidade pode ser identificado apenas pela primeira letra ou por semelhança",
-        "ações de rotina são sempre escritas no infinitivo com to em qualquer frase"
+        "a cor sempre aparece depois do substantivo em ingles, como no portugues informal",
+        "toda palavra de comida em ingles e cognata e facil de reconhecer",
+        "todo lugar da cidade pode ser identificado apenas pela primeira letra ou por semelhanca",
+        "acoes de rotina sao sempre escritas no infinitivo com to em qualquer frase"
       ],
-      "correta": "a cor sempre aparece depois do substantivo em inglês, como no português informal",
-      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de cores, roupas e aparência.",
+      "correta": "a cor sempre aparece depois do substantivo em ingles, como no portugues informal",
+      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de cores, roupas e aparencia.",
       "tempoEstimado": 45,
       "tags": [
         "vocabulario-basico",
@@ -4377,22 +4378,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Cores, roupas e aparência",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Cores, roupas e aparencia",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"em inglês o correto é dizer shirt blue em vez de blue shirt\". A avaliação mais adequada é:",
+      "enunciado": "Um estudante afirma: \"em ingles o correto e dizer shirt blue em vez de blue shirt\". A avaliacao mais adequada e:",
       "opcoes": [
-        "A afirmação está incorreta, porque o vocabulário usado para descrever cores, vestuário e características visuais simples.",
-        "A afirmação está correta, pois resume integralmente cores, roupas e aparência.",
-        "A afirmação está correta, porque basta decorar a tradução do exemplo.",
-        "A afirmação está incorreta apenas por não citar uma regra gramatical."
+        "A afirmacao esta incorreta, porque o vocabulario usado para descrever cores, vestuario e caracteristicas visuais simples.",
+        "A afirmacao esta correta, pois resume integralmente cores, roupas e aparencia.",
+        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
+        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
       ],
-      "correta": "A afirmação está incorreta, porque o vocabulário usado para descrever cores, vestuário e características visuais simples.",
-      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre cores, roupas e aparência.",
+      "correta": "A afirmacao esta incorreta, porque o vocabulario usado para descrever cores, vestuario e caracteristicas visuais simples.",
+      "comentario": "A fala do estudante apresenta um equivoco conceitual sobre cores, roupas e aparencia.",
       "tempoEstimado": 45,
       "tags": [
         "vocabulario-basico",
@@ -4416,22 +4417,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Cores, roupas e aparência",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Cores, roupas e aparencia",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se cores, roupas e aparência fosse ignorado(a) em identificar pessoas, roupas e cores em descrições básicas, o resultado mais provável seria:",
+      "enunciado": "Se cores, roupas e aparencia fosse ignorado(a) em identificar pessoas, roupas e cores em descricoes basicas, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretação ficaria incompleta e aumentaria a chance de erro em identificar pessoas, roupas e cores em descrições básicas.",
-        "a questão seria resolvida automaticamente por comidas e bebidas.",
-        "nenhuma interpretação seria alterada, porque Cores, roupas e aparência não interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
+        "a interpretacao ficaria incompleta e aumentaria a chance de erro em identificar pessoas, roupas e cores em descricoes basicas.",
+        "a questao seria resolvida automaticamente por comidas e bebidas.",
+        "nenhuma interpretacao seria alterada, porque Cores, roupas e aparencia nao interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
       ],
-      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em identificar pessoas, roupas e cores em descrições básicas.",
-      "comentario": "Ignorar cores, roupas e aparência compromete a resolução correta da atividade.",
+      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em identificar pessoas, roupas e cores em descricoes basicas.",
+      "comentario": "Ignorar cores, roupas e aparencia compromete a resolucao correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "vocabulario-basico",
@@ -4455,14 +4456,14 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Cores, roupas e aparência",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Cores, roupas e aparencia",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou ação ilustra melhor Cores, roupas e aparência?",
+      "enunciado": "Qual trecho ou acao ilustra melhor Cores, roupas e aparencia?",
       "opcoes": [
         "He is wearing a red jacket.",
         "She drinks milk and eats bread for breakfast.",
@@ -4470,7 +4471,7 @@ export const vocabularioBasico = {
         "I study, play and sleep at regular times."
       ],
       "correta": "He is wearing a red jacket.",
-      "comentario": "O item correto é o que melhor exemplifica cores, roupas e aparência.",
+      "comentario": "O item correto e o que melhor exemplifica cores, roupas e aparencia.",
       "tempoEstimado": 50,
       "tags": [
         "vocabulario-basico",
@@ -4494,22 +4495,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Cores, roupas e aparência",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Cores, roupas e aparencia",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao encontrar o exemplo \"He is wearing a red jacket.\", a leitura mais adequada é:",
+      "enunciado": "Ao encontrar o exemplo \"He is wearing a red jacket.\", a leitura mais adequada e:",
       "opcoes": [
         "a frase descreve roupa e cor em uma estrutura comum",
-        "a frase apresenta vocabulário básico de alimentação",
-        "a frase indica um lugar da cidade e sua posição",
-        "a frase reúne ações comuns do cotidiano"
+        "a frase apresenta vocabulario basico de alimentacao",
+        "a frase indica um lugar da cidade e sua posicao",
+        "a frase reune acoes comuns do cotidiano"
       ],
       "correta": "a frase descreve roupa e cor em uma estrutura comum",
-      "comentario": "A leitura correta do exemplo revela o papel de cores, roupas e aparência.",
+      "comentario": "A leitura correta do exemplo revela o papel de cores, roupas e aparencia.",
       "tempoEstimado": 55,
       "tags": [
         "vocabulario-basico",
@@ -4533,22 +4534,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Cores, roupas e aparência",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Cores, roupas e aparencia",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estratégia ajuda mais a estudar cores, roupas e aparência?",
+      "enunciado": "Qual estrategia ajuda mais a estudar cores, roupas e aparencia?",
       "opcoes": [
         "observar a ordem das palavras e o elemento visual descrito",
-        "relacionar a palavra ao momento da refeição e ao alimento citado",
-        "observar o nome do lugar e a relação espacial expressa no contexto",
-        "identificar os verbos principais e a sequência natural das ações"
+        "relacionar a palavra ao momento da refeicao e ao alimento citado",
+        "observar o nome do lugar e a relacao espacial expressa no contexto",
+        "identificar os verbos principais e a sequencia natural das acoes"
       ],
       "correta": "observar a ordem das palavras e o elemento visual descrito",
-      "comentario": "A estratégia correta fortalece o domínio de cores, roupas e aparência.",
+      "comentario": "A estrategia correta fortalece o dominio de cores, roupas e aparencia.",
       "tempoEstimado": 55,
       "tags": [
         "vocabulario-basico",
@@ -4572,22 +4573,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Cores, roupas e aparência",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Cores, roupas e aparencia",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Cores, roupas e aparência é mais cobrado quando:",
+      "enunciado": "Em uma prova, Cores, roupas e aparencia e mais cobrado quando:",
       "opcoes": [
-        "o item pede reconhecer descrição de aparência ou vestuário",
-        "a questão cobra identificação de itens de comida e bebida",
-        "o item pede localizar ou reconhecer lugares urbanos em inglês",
-        "a questão exige reconhecer ações habituais do dia a dia"
+        "o item pede reconhecer descricao de aparencia ou vestuario",
+        "a questao cobra identificacao de itens de comida e bebida",
+        "o item pede localizar ou reconhecer lugares urbanos em ingles",
+        "a questao exige reconhecer acoes habituais do dia a dia"
       ],
-      "correta": "o item pede reconhecer descrição de aparência ou vestuário",
-      "comentario": "Esse é o tipo de demanda em que cores, roupas e aparência aparece com mais frequência.",
+      "correta": "o item pede reconhecer descricao de aparencia ou vestuario",
+      "comentario": "Esse e o tipo de demanda em que cores, roupas e aparencia aparece com mais frequencia.",
       "tempoEstimado": 60,
       "tags": [
         "vocabulario-basico",
@@ -4611,22 +4612,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Cores, roupas e aparência",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Cores, roupas e aparencia",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual resumo sintetiza melhor a ideia de Cores, roupas e aparência?",
+      "enunciado": "Qual resumo sintetiza melhor a ideia de Cores, roupas e aparencia?",
       "opcoes": [
-        "Em síntese, o vocabulário usado para descrever cores, vestuário e características visuais simples.",
-        "Em síntese, o vocabulário relacionado a alimentos, refeições e bebidas do cotidiano.",
-        "Em síntese, o vocabulário usado para nomear espaços comuns do bairro e da cidade.",
-        "Em síntese, o vocabulário de verbos e expressões usado para falar de atividades do dia a dia."
+        "Em sintese, o vocabulario usado para descrever cores, vestuario e caracteristicas visuais simples.",
+        "Em sintese, o vocabulario relacionado a alimentos, refeicoes e bebidas do cotidiano.",
+        "Em sintese, o vocabulario usado para nomear espacos comuns do bairro e da cidade.",
+        "Em sintese, o vocabulario de verbos e expressoes usado para falar de atividades do dia a dia."
       ],
-      "correta": "Em síntese, o vocabulário usado para descrever cores, vestuário e características visuais simples.",
-      "comentario": "O resumo correto recupera o núcleo de cores, roupas e aparência.",
+      "correta": "Em sintese, o vocabulario usado para descrever cores, vestuario e caracteristicas visuais simples.",
+      "comentario": "O resumo correto recupera o nucleo de cores, roupas e aparencia.",
       "tempoEstimado": 60,
       "tags": [
         "vocabulario-basico",
@@ -4650,22 +4651,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Cores, roupas e aparência",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Cores, roupas e aparencia",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associação entre exemplo e interpretação está correta em Cores, roupas e aparência?",
+      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Cores, roupas e aparencia?",
       "opcoes": [
         "He is wearing a red jacket. -> a frase descreve roupa e cor em uma estrutura comum",
         "She drinks milk and eats bread for breakfast. -> a frase descreve roupa e cor em uma estrutura comum",
-        "The library is next to the park. -> a frase reúne ações comuns do cotidiano",
-        "I study, play and sleep at regular times. -> a frase apresenta vocabulário básico de alimentação"
+        "The library is next to the park. -> a frase reune acoes comuns do cotidiano",
+        "I study, play and sleep at regular times. -> a frase apresenta vocabulario basico de alimentacao"
       ],
       "correta": "He is wearing a red jacket. -> a frase descreve roupa e cor em uma estrutura comum",
-      "comentario": "A associação correta mantém coerência entre exemplo e interpretação em cores, roupas e aparência.",
+      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em cores, roupas e aparencia.",
       "tempoEstimado": 65,
       "tags": [
         "vocabulario-basico",
@@ -4689,22 +4690,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Cores, roupas e aparência",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Cores, roupas e aparencia",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao resolver uma atividade sobre cores, roupas e aparência, o estudante deve principalmente:",
+      "enunciado": "Ao resolver uma atividade sobre cores, roupas e aparencia, o estudante deve principalmente:",
       "opcoes": [
-        "relacionar palavras a descrição física e visual",
+        "relacionar palavras a descricao fisica e visual",
         "observar a ordem das palavras e o elemento visual descrito",
-        "identificar pessoas, roupas e cores em descrições básicas",
-        "o item pede reconhecer descrição de aparência ou vestuário"
+        "identificar pessoas, roupas e cores em descricoes basicas",
+        "o item pede reconhecer descricao de aparencia ou vestuario"
       ],
-      "correta": "relacionar palavras a descrição física e visual",
-      "comentario": "O objetivo central de cores, roupas e aparência é relacionar palavras a descrição física e visual.",
+      "correta": "relacionar palavras a descricao fisica e visual",
+      "comentario": "O objetivo central de cores, roupas e aparencia e relacionar palavras a descricao fisica e visual.",
       "tempoEstimado": 70,
       "tags": [
         "vocabulario-basico",
@@ -4728,22 +4729,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Comidas e bebidas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Inglês, Comidas e bebidas refere-se a:",
+      "enunciado": "Em Ingles, Comidas e bebidas refere-se a:",
       "opcoes": [
-        "o vocabulário relacionado a alimentos, refeições e bebidas do cotidiano",
-        "o vocabulário usado para nomear espaços comuns do bairro e da cidade",
-        "o vocabulário de verbos e expressões usado para falar de atividades do dia a dia",
-        "o reconhecimento de palavras transparentes e de palavras enganosas no vocabulário inicial do inglês"
+        "o vocabulario relacionado a alimentos, refeicoes e bebidas do cotidiano",
+        "o vocabulario usado para nomear espacos comuns do bairro e da cidade",
+        "o vocabulario de verbos e expressoes usado para falar de atividades do dia a dia",
+        "o reconhecimento de palavras transparentes e de palavras enganosas no vocabulario inicial do ingles"
       ],
-      "correta": "o vocabulário relacionado a alimentos, refeições e bebidas do cotidiano",
-      "comentario": "Comidas e bebidas refere-se ao vocabulário relacionado a alimentos, refeições e bebidas do cotidiano.",
+      "correta": "o vocabulario relacionado a alimentos, refeicoes e bebidas do cotidiano",
+      "comentario": "Comidas e bebidas refere-se ao vocabulario relacionado a alimentos, refeicoes e bebidas do cotidiano.",
       "tempoEstimado": 20,
       "tags": [
         "vocabulario-basico",
@@ -4767,22 +4768,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Comidas e bebidas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: um cardápio escolar mostra juice, sandwich, milk e fruit. Esse caso está mais ligado a qual subtópico?",
+      "enunciado": "Observe a situacao: um cardapio escolar mostra juice, sandwich, milk e fruit. Esse caso esta mais ligado a qual subtopico?",
       "opcoes": [
         "Comidas e bebidas",
         "Lugares da cidade",
-        "Rotina e ações cotidianas",
-        "Cognatos e falsos cognatos básicos"
+        "Rotina e acoes cotidianas",
+        "Cognatos e falsos cognatos basicos"
       ],
       "correta": "Comidas e bebidas",
-      "comentario": "A situação apresentada é melhor compreendida por meio de comidas e bebidas.",
+      "comentario": "A situacao apresentada e melhor compreendida por meio de comidas e bebidas.",
       "tempoEstimado": 20,
       "tags": [
         "vocabulario-basico",
@@ -4806,8 +4807,8 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Comidas e bebidas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
@@ -4845,22 +4846,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Comidas e bebidas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO representa corretamente comidas e bebidas?",
+      "enunciado": "Qual alternativa NAO representa corretamente comidas e bebidas?",
       "opcoes": [
         "The library is next to the park.",
         "She drinks milk and eats bread for breakfast.",
-        "relacionar a palavra ao momento da refeição e ao alimento citado.",
-        "interpretar menus, preferências e hábitos alimentares simples."
+        "relacionar a palavra ao momento da refeicao e ao alimento citado.",
+        "interpretar menus, preferencias e habitos alimentares simples."
       ],
       "correta": "The library is next to the park.",
-      "comentario": "A opção incompatível ilustra outro subtópico, e não comidas e bebidas.",
+      "comentario": "A opcao incompativel ilustra outro subtopico, e nao comidas e bebidas.",
       "tempoEstimado": 25,
       "tags": [
         "vocabulario-basico",
@@ -4884,22 +4885,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Comidas e bebidas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar comidas e bebidas, o foco principal é:",
+      "enunciado": "Ao estudar comidas e bebidas, o foco principal e:",
       "opcoes": [
-        "identificar itens de alimentação em frases e pequenos diálogos",
-        "reconhecer locais públicos e sua função no contexto",
-        "associar ações comuns a hábitos pessoais e escolares",
-        "usar semelhanças úteis e evitar armadilhas de interpretação"
+        "identificar itens de alimentacao em frases e pequenos dialogos",
+        "reconhecer locais publicos e sua funcao no contexto",
+        "associar acoes comuns a habitos pessoais e escolares",
+        "usar semelhancas uteis e evitar armadilhas de interpretacao"
       ],
-      "correta": "identificar itens de alimentação em frases e pequenos diálogos",
-      "comentario": "Comidas e bebidas concentra-se em identificar itens de alimentação em frases e pequenos diálogos.",
+      "correta": "identificar itens de alimentacao em frases e pequenos dialogos",
+      "comentario": "Comidas e bebidas concentra-se em identificar itens de alimentacao em frases e pequenos dialogos.",
       "tempoEstimado": 30,
       "tags": [
         "vocabulario-basico",
@@ -4923,22 +4924,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Comidas e bebidas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Lugares da cidade trata de o vocabulário usado para nomear espaços comuns do bairro e da cidade, Comidas e bebidas destaca:",
+      "enunciado": "Enquanto Lugares da cidade trata de o vocabulario usado para nomear espacos comuns do bairro e da cidade, Comidas e bebidas destaca:",
       "opcoes": [
-        "O vocabulário relacionado a alimentos, refeições e bebidas do cotidiano.",
-        "O vocabulário usado para nomear espaços comuns do bairro e da cidade.",
-        "O vocabulário de verbos e expressões usado para falar de atividades do dia a dia.",
-        "O reconhecimento de palavras transparentes e de palavras enganosas no vocabulário inicial do inglês."
+        "O vocabulario relacionado a alimentos, refeicoes e bebidas do cotidiano.",
+        "O vocabulario usado para nomear espacos comuns do bairro e da cidade.",
+        "O vocabulario de verbos e expressoes usado para falar de atividades do dia a dia.",
+        "O reconhecimento de palavras transparentes e de palavras enganosas no vocabulario inicial do ingles."
       ],
-      "correta": "O vocabulário relacionado a alimentos, refeições e bebidas do cotidiano.",
-      "comentario": "A comparação correta mostra a especificidade de comidas e bebidas.",
+      "correta": "O vocabulario relacionado a alimentos, refeicoes e bebidas do cotidiano.",
+      "comentario": "A comparacao correta mostra a especificidade de comidas e bebidas.",
       "tempoEstimado": 30,
       "tags": [
         "vocabulario-basico",
@@ -4962,22 +4963,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Comidas e bebidas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma atividade de sala, um cardápio escolar mostra juice, sandwich, milk e fruit. Para responder bem, o estudante deve mobilizar principalmente:",
+      "enunciado": "Em uma atividade de sala, um cardapio escolar mostra juice, sandwich, milk e fruit. Para responder bem, o estudante deve mobilizar principalmente:",
       "opcoes": [
         "Comidas e bebidas",
         "Lugares da cidade",
-        "Cognatos e falsos cognatos básicos",
-        "Saudações e apresentações"
+        "Cognatos e falsos cognatos basicos",
+        "Saudacoes e apresentacoes"
       ],
       "correta": "Comidas e bebidas",
-      "comentario": "Esse tipo de tarefa exige domínio de comidas e bebidas.",
+      "comentario": "Esse tipo de tarefa exige dominio de comidas e bebidas.",
       "tempoEstimado": 35,
       "tags": [
         "vocabulario-basico",
@@ -5001,22 +5002,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Comidas e bebidas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação prática depende mais diretamente de Comidas e bebidas?",
+      "enunciado": "Qual situacao pratica depende mais diretamente de Comidas e bebidas?",
       "opcoes": [
-        "interpretar menus, preferências e hábitos alimentares simples",
-        "interpretar direções, mapas e descrições de lugares",
-        "compreender sequências simples de ações da rotina",
-        "entender diálogos iniciais e apresentações pessoais"
+        "interpretar menus, preferencias e habitos alimentares simples",
+        "interpretar direcoes, mapas e descricoes de lugares",
+        "compreender sequencias simples de acoes da rotina",
+        "entender dialogos iniciais e apresentacoes pessoais"
       ],
-      "correta": "interpretar menus, preferências e hábitos alimentares simples",
-      "comentario": "Comidas e bebidas aparece de forma direta em interpretar menus, preferências e hábitos alimentares simples.",
+      "correta": "interpretar menus, preferencias e habitos alimentares simples",
+      "comentario": "Comidas e bebidas aparece de forma direta em interpretar menus, preferencias e habitos alimentares simples.",
       "tempoEstimado": 35,
       "tags": [
         "vocabulario-basico",
@@ -5040,22 +5041,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Comidas e bebidas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre comidas e bebidas?",
+      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre comidas e bebidas?",
       "opcoes": [
-        "o caso é resolvido com foco em comidas e bebidas.",
-        "o caso é melhor resolvido por lugares da cidade.",
-        "o caso elimina a necessidade de rotina e ações cotidianas.",
-        "o caso impede qualquer uso de cognatos e falso cognatos básicos."
+        "o caso e resolvido com foco em comidas e bebidas.",
+        "o caso e melhor resolvido por lugares da cidade.",
+        "o caso elimina a necessidade de rotina e acoes cotidianas.",
+        "o caso impede qualquer uso de cognatos e falso cognatos basicos."
       ],
-      "correta": "o caso é resolvido com foco em comidas e bebidas.",
-      "comentario": "A conclusão correta retoma a função central de comidas e bebidas.",
+      "correta": "o caso e resolvido com foco em comidas e bebidas.",
+      "comentario": "A conclusao correta retoma a funcao central de comidas e bebidas.",
       "tempoEstimado": 40,
       "tags": [
         "vocabulario-basico",
@@ -5079,8 +5080,8 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Comidas e bebidas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
@@ -5088,12 +5089,12 @@ export const vocabularioBasico = {
       "tipo": "multipla_escolha",
       "enunciado": "Se a turma fosse revisar comidas e bebidas, qual pergunta de estudo seria a mais adequada?",
       "opcoes": [
-        "Como comidas e bebidas aparece em interpretar menus, preferências e hábitos alimentares simples?",
-        "Como lugares da cidade substitui totalmente interpretar menus, preferências e hábitos alimentares simples?",
-        "Por que rotina e ações cotidianas torna desnecessário estudar Comidas e bebidas?",
-        "De que modo cognatos e falso cognatos básicos elimina toda leitura de contexto?"
+        "Como comidas e bebidas aparece em interpretar menus, preferencias e habitos alimentares simples?",
+        "Como lugares da cidade substitui totalmente interpretar menus, preferencias e habitos alimentares simples?",
+        "Por que rotina e acoes cotidianas torna desnecessario estudar Comidas e bebidas?",
+        "De que modo cognatos e falso cognatos basicos elimina toda leitura de contexto?"
       ],
-      "correta": "Como comidas e bebidas aparece em interpretar menus, preferências e hábitos alimentares simples?",
+      "correta": "Como comidas e bebidas aparece em interpretar menus, preferencias e habitos alimentares simples?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de comidas e bebidas.",
       "tempoEstimado": 40,
       "tags": [
@@ -5118,22 +5119,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Comidas e bebidas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em comidas e bebidas é pensar que:",
+      "enunciado": "Um erro comum em comidas e bebidas e pensar que:",
       "opcoes": [
-        "toda palavra de comida em inglês é cognata e fácil de reconhecer",
-        "todo lugar da cidade pode ser identificado apenas pela primeira letra ou por semelhança",
-        "ações de rotina são sempre escritas no infinitivo com to em qualquer frase",
-        "qualquer palavra parecida com o português tem necessariamente o mesmo significado"
+        "toda palavra de comida em ingles e cognata e facil de reconhecer",
+        "todo lugar da cidade pode ser identificado apenas pela primeira letra ou por semelhanca",
+        "acoes de rotina sao sempre escritas no infinitivo com to em qualquer frase",
+        "qualquer palavra parecida com o portugues tem necessariamente o mesmo significado"
       ],
-      "correta": "toda palavra de comida em inglês é cognata e fácil de reconhecer",
-      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de comidas e bebidas.",
+      "correta": "toda palavra de comida em ingles e cognata e facil de reconhecer",
+      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de comidas e bebidas.",
       "tempoEstimado": 45,
       "tags": [
         "vocabulario-basico",
@@ -5157,22 +5158,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Comidas e bebidas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"breakfast significa almoço porque é uma refeição do dia\". A avaliação mais adequada é:",
+      "enunciado": "Um estudante afirma: \"breakfast significa almoco porque e uma refeicao do dia\". A avaliacao mais adequada e:",
       "opcoes": [
-        "A afirmação está incorreta, porque o vocabulário relacionado a alimentos, refeições e bebidas do cotidiano.",
-        "A afirmação está correta, pois resume integralmente comidas e bebidas.",
-        "A afirmação está correta, porque basta decorar a tradução do exemplo.",
-        "A afirmação está incorreta apenas por não citar uma regra gramatical."
+        "A afirmacao esta incorreta, porque o vocabulario relacionado a alimentos, refeicoes e bebidas do cotidiano.",
+        "A afirmacao esta correta, pois resume integralmente comidas e bebidas.",
+        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
+        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
       ],
-      "correta": "A afirmação está incorreta, porque o vocabulário relacionado a alimentos, refeições e bebidas do cotidiano.",
-      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre comidas e bebidas.",
+      "correta": "A afirmacao esta incorreta, porque o vocabulario relacionado a alimentos, refeicoes e bebidas do cotidiano.",
+      "comentario": "A fala do estudante apresenta um equivoco conceitual sobre comidas e bebidas.",
       "tempoEstimado": 45,
       "tags": [
         "vocabulario-basico",
@@ -5196,22 +5197,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Comidas e bebidas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se comidas e bebidas fosse ignorado(a) em interpretar menus, preferências e hábitos alimentares simples, o resultado mais provável seria:",
+      "enunciado": "Se comidas e bebidas fosse ignorado(a) em interpretar menus, preferencias e habitos alimentares simples, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretação ficaria incompleta e aumentaria a chance de erro em interpretar menus, preferências e hábitos alimentares simples.",
-        "a questão seria resolvida automaticamente por lugares da cidade.",
-        "nenhuma interpretação seria alterada, porque Comidas e bebidas não interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
+        "a interpretacao ficaria incompleta e aumentaria a chance de erro em interpretar menus, preferencias e habitos alimentares simples.",
+        "a questao seria resolvida automaticamente por lugares da cidade.",
+        "nenhuma interpretacao seria alterada, porque Comidas e bebidas nao interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
       ],
-      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em interpretar menus, preferências e hábitos alimentares simples.",
-      "comentario": "Ignorar comidas e bebidas compromete a resolução correta da atividade.",
+      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em interpretar menus, preferencias e habitos alimentares simples.",
+      "comentario": "Ignorar comidas e bebidas compromete a resolucao correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "vocabulario-basico",
@@ -5235,14 +5236,14 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Comidas e bebidas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou ação ilustra melhor Comidas e bebidas?",
+      "enunciado": "Qual trecho ou acao ilustra melhor Comidas e bebidas?",
       "opcoes": [
         "She drinks milk and eats bread for breakfast.",
         "The library is next to the park.",
@@ -5250,7 +5251,7 @@ export const vocabularioBasico = {
         "Animal is a cognate, but parents is a false friend."
       ],
       "correta": "She drinks milk and eats bread for breakfast.",
-      "comentario": "O item correto é o que melhor exemplifica comidas e bebidas.",
+      "comentario": "O item correto e o que melhor exemplifica comidas e bebidas.",
       "tempoEstimado": 50,
       "tags": [
         "vocabulario-basico",
@@ -5274,21 +5275,21 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Comidas e bebidas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao encontrar o exemplo \"She drinks milk and eats bread for breakfast.\", a leitura mais adequada é:",
+      "enunciado": "Ao encontrar o exemplo \"She drinks milk and eats bread for breakfast.\", a leitura mais adequada e:",
       "opcoes": [
-        "a frase apresenta vocabulário básico de alimentação",
-        "a frase indica um lugar da cidade e sua posição",
-        "a frase reúne ações comuns do cotidiano",
+        "a frase apresenta vocabulario basico de alimentacao",
+        "a frase indica um lugar da cidade e sua posicao",
+        "a frase reune acoes comuns do cotidiano",
         "algumas palavras ajudam a leitura, enquanto outras podem enganar"
       ],
-      "correta": "a frase apresenta vocabulário básico de alimentação",
+      "correta": "a frase apresenta vocabulario basico de alimentacao",
       "comentario": "A leitura correta do exemplo revela o papel de comidas e bebidas.",
       "tempoEstimado": 55,
       "tags": [
@@ -5313,22 +5314,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Comidas e bebidas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estratégia ajuda mais a estudar comidas e bebidas?",
+      "enunciado": "Qual estrategia ajuda mais a estudar comidas e bebidas?",
       "opcoes": [
-        "relacionar a palavra ao momento da refeição e ao alimento citado",
-        "observar o nome do lugar e a relação espacial expressa no contexto",
-        "identificar os verbos principais e a sequência natural das ações",
-        "confirmar pelo contexto se a semelhança com o português é realmente válida"
+        "relacionar a palavra ao momento da refeicao e ao alimento citado",
+        "observar o nome do lugar e a relacao espacial expressa no contexto",
+        "identificar os verbos principais e a sequencia natural das acoes",
+        "confirmar pelo contexto se a semelhanca com o portugues e realmente valida"
       ],
-      "correta": "relacionar a palavra ao momento da refeição e ao alimento citado",
-      "comentario": "A estratégia correta fortalece o domínio de comidas e bebidas.",
+      "correta": "relacionar a palavra ao momento da refeicao e ao alimento citado",
+      "comentario": "A estrategia correta fortalece o dominio de comidas e bebidas.",
       "tempoEstimado": 55,
       "tags": [
         "vocabulario-basico",
@@ -5352,22 +5353,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Comidas e bebidas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Comidas e bebidas é mais cobrado quando:",
+      "enunciado": "Em uma prova, Comidas e bebidas e mais cobrado quando:",
       "opcoes": [
-        "a questão cobra identificação de itens de comida e bebida",
-        "o item pede localizar ou reconhecer lugares urbanos em inglês",
-        "a questão exige reconhecer ações habituais do dia a dia",
+        "a questao cobra identificacao de itens de comida e bebida",
+        "o item pede localizar ou reconhecer lugares urbanos em ingles",
+        "a questao exige reconhecer acoes habituais do dia a dia",
         "o item pede diferenciar cognato verdadeiro de falso cognato"
       ],
-      "correta": "a questão cobra identificação de itens de comida e bebida",
-      "comentario": "Esse é o tipo de demanda em que comidas e bebidas aparece com mais frequência.",
+      "correta": "a questao cobra identificacao de itens de comida e bebida",
+      "comentario": "Esse e o tipo de demanda em que comidas e bebidas aparece com mais frequencia.",
       "tempoEstimado": 60,
       "tags": [
         "vocabulario-basico",
@@ -5391,8 +5392,8 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Comidas e bebidas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
@@ -5400,13 +5401,13 @@ export const vocabularioBasico = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual resumo sintetiza melhor a ideia de Comidas e bebidas?",
       "opcoes": [
-        "Em síntese, o vocabulário relacionado a alimentos, refeições e bebidas do cotidiano.",
-        "Em síntese, o vocabulário usado para nomear espaços comuns do bairro e da cidade.",
-        "Em síntese, o vocabulário de verbos e expressões usado para falar de atividades do dia a dia.",
-        "Em síntese, o reconhecimento de palavras transparentes e de palavras enganosas no vocabulário inicial do inglês."
+        "Em sintese, o vocabulario relacionado a alimentos, refeicoes e bebidas do cotidiano.",
+        "Em sintese, o vocabulario usado para nomear espacos comuns do bairro e da cidade.",
+        "Em sintese, o vocabulario de verbos e expressoes usado para falar de atividades do dia a dia.",
+        "Em sintese, o reconhecimento de palavras transparentes e de palavras enganosas no vocabulario inicial do ingles."
       ],
-      "correta": "Em síntese, o vocabulário relacionado a alimentos, refeições e bebidas do cotidiano.",
-      "comentario": "O resumo correto recupera o núcleo de comidas e bebidas.",
+      "correta": "Em sintese, o vocabulario relacionado a alimentos, refeicoes e bebidas do cotidiano.",
+      "comentario": "O resumo correto recupera o nucleo de comidas e bebidas.",
       "tempoEstimado": 60,
       "tags": [
         "vocabulario-basico",
@@ -5430,22 +5431,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Comidas e bebidas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associação entre exemplo e interpretação está correta em Comidas e bebidas?",
+      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Comidas e bebidas?",
       "opcoes": [
-        "She drinks milk and eats bread for breakfast. -> a frase apresenta vocabulário básico de alimentação",
-        "The library is next to the park. -> a frase apresenta vocabulário básico de alimentação",
+        "She drinks milk and eats bread for breakfast. -> a frase apresenta vocabulario basico de alimentacao",
+        "The library is next to the park. -> a frase apresenta vocabulario basico de alimentacao",
         "I study, play and sleep at regular times. -> algumas palavras ajudam a leitura, enquanto outras podem enganar",
-        "Animal is a cognate, but parents is a false friend. -> a frase indica um lugar da cidade e sua posição"
+        "Animal is a cognate, but parents is a false friend. -> a frase indica um lugar da cidade e sua posicao"
       ],
-      "correta": "She drinks milk and eats bread for breakfast. -> a frase apresenta vocabulário básico de alimentação",
-      "comentario": "A associação correta mantém coerência entre exemplo e interpretação em comidas e bebidas.",
+      "correta": "She drinks milk and eats bread for breakfast. -> a frase apresenta vocabulario basico de alimentacao",
+      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em comidas e bebidas.",
       "tempoEstimado": 65,
       "tags": [
         "vocabulario-basico",
@@ -5469,8 +5470,8 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Comidas e bebidas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
@@ -5478,13 +5479,13 @@ export const vocabularioBasico = {
       "tipo": "multipla_escolha",
       "enunciado": "Ao resolver uma atividade sobre comidas e bebidas, o estudante deve principalmente:",
       "opcoes": [
-        "identificar itens de alimentação em frases e pequenos diálogos",
-        "relacionar a palavra ao momento da refeição e ao alimento citado",
-        "interpretar menus, preferências e hábitos alimentares simples",
-        "a questão cobra identificação de itens de comida e bebida"
+        "identificar itens de alimentacao em frases e pequenos dialogos",
+        "relacionar a palavra ao momento da refeicao e ao alimento citado",
+        "interpretar menus, preferencias e habitos alimentares simples",
+        "a questao cobra identificacao de itens de comida e bebida"
       ],
-      "correta": "identificar itens de alimentação em frases e pequenos diálogos",
-      "comentario": "O objetivo central de comidas e bebidas é identificar itens de alimentação em frases e pequenos diálogos.",
+      "correta": "identificar itens de alimentacao em frases e pequenos dialogos",
+      "comentario": "O objetivo central de comidas e bebidas e identificar itens de alimentacao em frases e pequenos dialogos.",
       "tempoEstimado": 70,
       "tags": [
         "vocabulario-basico",
@@ -5508,22 +5509,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Lugares da cidade",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Inglês, Lugares da cidade refere-se a:",
+      "enunciado": "Em Ingles, Lugares da cidade refere-se a:",
       "opcoes": [
-        "o vocabulário usado para nomear espaços comuns do bairro e da cidade",
-        "o vocabulário de verbos e expressões usado para falar de atividades do dia a dia",
-        "o reconhecimento de palavras transparentes e de palavras enganosas no vocabulário inicial do inglês",
-        "o vocabulário usado para cumprimentar, apresentar-se e iniciar interações simples"
+        "o vocabulario usado para nomear espacos comuns do bairro e da cidade",
+        "o vocabulario de verbos e expressoes usado para falar de atividades do dia a dia",
+        "o reconhecimento de palavras transparentes e de palavras enganosas no vocabulario inicial do ingles",
+        "o vocabulario usado para cumprimentar, apresentar-se e iniciar interacoes simples"
       ],
-      "correta": "o vocabulário usado para nomear espaços comuns do bairro e da cidade",
-      "comentario": "Lugares da cidade refere-se ao vocabulário usado para nomear espaços comuns do bairro e da cidade.",
+      "correta": "o vocabulario usado para nomear espacos comuns do bairro e da cidade",
+      "comentario": "Lugares da cidade refere-se ao vocabulario usado para nomear espacos comuns do bairro e da cidade.",
       "tempoEstimado": 20,
       "tags": [
         "vocabulario-basico",
@@ -5547,22 +5548,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Lugares da cidade",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: um mapa simples mostra park, hospital, school e supermarket. Esse caso está mais ligado a qual subtópico?",
+      "enunciado": "Observe a situacao: um mapa simples mostra park, hospital, school e supermarket. Esse caso esta mais ligado a qual subtopico?",
       "opcoes": [
         "Lugares da cidade",
-        "Rotina e ações cotidianas",
-        "Cognatos e falsos cognatos básicos",
-        "Saudações e apresentações"
+        "Rotina e acoes cotidianas",
+        "Cognatos e falsos cognatos basicos",
+        "Saudacoes e apresentacoes"
       ],
       "correta": "Lugares da cidade",
-      "comentario": "A situação apresentada é melhor compreendida por meio de lugares da cidade.",
+      "comentario": "A situacao apresentada e melhor compreendida por meio de lugares da cidade.",
       "tempoEstimado": 20,
       "tags": [
         "vocabulario-basico",
@@ -5586,8 +5587,8 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Lugares da cidade",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
@@ -5625,22 +5626,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Lugares da cidade",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO representa corretamente lugares da cidade?",
+      "enunciado": "Qual alternativa NAO representa corretamente lugares da cidade?",
       "opcoes": [
         "I study, play and sleep at regular times.",
         "The library is next to the park.",
-        "observar o nome do lugar e a relação espacial expressa no contexto.",
-        "interpretar direções, mapas e descrições de lugares."
+        "observar o nome do lugar e a relacao espacial expressa no contexto.",
+        "interpretar direcoes, mapas e descricoes de lugares."
       ],
       "correta": "I study, play and sleep at regular times.",
-      "comentario": "A opção incompatível ilustra outro subtópico, e não lugares da cidade.",
+      "comentario": "A opcao incompativel ilustra outro subtopico, e nao lugares da cidade.",
       "tempoEstimado": 25,
       "tags": [
         "vocabulario-basico",
@@ -5664,22 +5665,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Lugares da cidade",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar lugares da cidade, o foco principal é:",
+      "enunciado": "Ao estudar lugares da cidade, o foco principal e:",
       "opcoes": [
-        "reconhecer locais públicos e sua função no contexto",
-        "associar ações comuns a hábitos pessoais e escolares",
-        "usar semelhanças úteis e evitar armadilhas de interpretação",
-        "reconhecer fórmulas básicas de cumprimento e apresentação"
+        "reconhecer locais publicos e sua funcao no contexto",
+        "associar acoes comuns a habitos pessoais e escolares",
+        "usar semelhancas uteis e evitar armadilhas de interpretacao",
+        "reconhecer formulas basicas de cumprimento e apresentacao"
       ],
-      "correta": "reconhecer locais públicos e sua função no contexto",
-      "comentario": "Lugares da cidade concentra-se em reconhecer locais públicos e sua função no contexto.",
+      "correta": "reconhecer locais publicos e sua funcao no contexto",
+      "comentario": "Lugares da cidade concentra-se em reconhecer locais publicos e sua funcao no contexto.",
       "tempoEstimado": 30,
       "tags": [
         "vocabulario-basico",
@@ -5703,22 +5704,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Lugares da cidade",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Rotina e ações cotidianas trata de o vocabulário de verbos e expressões usado para falar de atividades do dia a dia, Lugares da cidade destaca:",
+      "enunciado": "Enquanto Rotina e acoes cotidianas trata de o vocabulario de verbos e expressoes usado para falar de atividades do dia a dia, Lugares da cidade destaca:",
       "opcoes": [
-        "O vocabulário usado para nomear espaços comuns do bairro e da cidade.",
-        "O vocabulário de verbos e expressões usado para falar de atividades do dia a dia.",
-        "O reconhecimento de palavras transparentes e de palavras enganosas no vocabulário inicial do inglês.",
-        "O vocabulário usado para cumprimentar, apresentar-se e iniciar interações simples."
+        "O vocabulario usado para nomear espacos comuns do bairro e da cidade.",
+        "O vocabulario de verbos e expressoes usado para falar de atividades do dia a dia.",
+        "O reconhecimento de palavras transparentes e de palavras enganosas no vocabulario inicial do ingles.",
+        "O vocabulario usado para cumprimentar, apresentar-se e iniciar interacoes simples."
       ],
-      "correta": "O vocabulário usado para nomear espaços comuns do bairro e da cidade.",
-      "comentario": "A comparação correta mostra a especificidade de lugares da cidade.",
+      "correta": "O vocabulario usado para nomear espacos comuns do bairro e da cidade.",
+      "comentario": "A comparacao correta mostra a especificidade de lugares da cidade.",
       "tempoEstimado": 30,
       "tags": [
         "vocabulario-basico",
@@ -5742,8 +5743,8 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Lugares da cidade",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
@@ -5752,12 +5753,12 @@ export const vocabularioBasico = {
       "enunciado": "Em uma atividade de sala, um mapa simples mostra park, hospital, school e supermarket. Para responder bem, o estudante deve mobilizar principalmente:",
       "opcoes": [
         "Lugares da cidade",
-        "Rotina e ações cotidianas",
-        "Saudações e apresentações",
-        "Informações pessoais"
+        "Rotina e acoes cotidianas",
+        "Saudacoes e apresentacoes",
+        "Informacoes pessoais"
       ],
       "correta": "Lugares da cidade",
-      "comentario": "Esse tipo de tarefa exige domínio de lugares da cidade.",
+      "comentario": "Esse tipo de tarefa exige dominio de lugares da cidade.",
       "tempoEstimado": 35,
       "tags": [
         "vocabulario-basico",
@@ -5781,22 +5782,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Lugares da cidade",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação prática depende mais diretamente de Lugares da cidade?",
+      "enunciado": "Qual situacao pratica depende mais diretamente de Lugares da cidade?",
       "opcoes": [
-        "interpretar direções, mapas e descrições de lugares",
-        "compreender sequências simples de ações da rotina",
-        "melhorar a leitura inicial sem depender de tradução automática",
-        "preencher ou interpretar fichas e apresentações pessoais"
+        "interpretar direcoes, mapas e descricoes de lugares",
+        "compreender sequencias simples de acoes da rotina",
+        "melhorar a leitura inicial sem depender de traducao automatica",
+        "preencher ou interpretar fichas e apresentacoes pessoais"
       ],
-      "correta": "interpretar direções, mapas e descrições de lugares",
-      "comentario": "Lugares da cidade aparece de forma direta em interpretar direções, mapas e descrições de lugares.",
+      "correta": "interpretar direcoes, mapas e descricoes de lugares",
+      "comentario": "Lugares da cidade aparece de forma direta em interpretar direcoes, mapas e descricoes de lugares.",
       "tempoEstimado": 35,
       "tags": [
         "vocabulario-basico",
@@ -5820,22 +5821,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Lugares da cidade",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre lugares da cidade?",
+      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre lugares da cidade?",
       "opcoes": [
-        "o caso é resolvido com foco em lugares da cidade.",
-        "o caso é melhor resolvido por rotina e ações cotidianas.",
-        "o caso elimina a necessidade de cognatos e falso cognatos básicos.",
-        "o caso impede qualquer uso de saudações e apresentações."
+        "o caso e resolvido com foco em lugares da cidade.",
+        "o caso e melhor resolvido por rotina e acoes cotidianas.",
+        "o caso elimina a necessidade de cognatos e falso cognatos basicos.",
+        "o caso impede qualquer uso de saudacoes e apresentacoes."
       ],
-      "correta": "o caso é resolvido com foco em lugares da cidade.",
-      "comentario": "A conclusão correta retoma a função central de lugares da cidade.",
+      "correta": "o caso e resolvido com foco em lugares da cidade.",
+      "comentario": "A conclusao correta retoma a funcao central de lugares da cidade.",
       "tempoEstimado": 40,
       "tags": [
         "vocabulario-basico",
@@ -5859,8 +5860,8 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Lugares da cidade",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
@@ -5868,12 +5869,12 @@ export const vocabularioBasico = {
       "tipo": "multipla_escolha",
       "enunciado": "Se a turma fosse revisar lugares da cidade, qual pergunta de estudo seria a mais adequada?",
       "opcoes": [
-        "Como lugares da cidade aparece em interpretar direções, mapas e descrições de lugares?",
-        "Como rotina e ações cotidianas substitui totalmente interpretar direções, mapas e descrições de lugares?",
-        "Por que cognatos e falso cognatos básicos torna desnecessário estudar Lugares da cidade?",
-        "De que modo saudações e apresentações elimina toda leitura de contexto?"
+        "Como lugares da cidade aparece em interpretar direcoes, mapas e descricoes de lugares?",
+        "Como rotina e acoes cotidianas substitui totalmente interpretar direcoes, mapas e descricoes de lugares?",
+        "Por que cognatos e falso cognatos basicos torna desnecessario estudar Lugares da cidade?",
+        "De que modo saudacoes e apresentacoes elimina toda leitura de contexto?"
       ],
-      "correta": "Como lugares da cidade aparece em interpretar direções, mapas e descrições de lugares?",
+      "correta": "Como lugares da cidade aparece em interpretar direcoes, mapas e descricoes de lugares?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de lugares da cidade.",
       "tempoEstimado": 40,
       "tags": [
@@ -5898,22 +5899,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Lugares da cidade",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em lugares da cidade é pensar que:",
+      "enunciado": "Um erro comum em lugares da cidade e pensar que:",
       "opcoes": [
-        "todo lugar da cidade pode ser identificado apenas pela primeira letra ou por semelhança",
-        "ações de rotina são sempre escritas no infinitivo com to em qualquer frase",
-        "qualquer palavra parecida com o português tem necessariamente o mesmo significado",
-        "good morning e good night podem ser usados da mesma forma em qualquer horário"
+        "todo lugar da cidade pode ser identificado apenas pela primeira letra ou por semelhanca",
+        "acoes de rotina sao sempre escritas no infinitivo com to em qualquer frase",
+        "qualquer palavra parecida com o portugues tem necessariamente o mesmo significado",
+        "good morning e good night podem ser usados da mesma forma em qualquer horario"
       ],
-      "correta": "todo lugar da cidade pode ser identificado apenas pela primeira letra ou por semelhança",
-      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de lugares da cidade.",
+      "correta": "todo lugar da cidade pode ser identificado apenas pela primeira letra ou por semelhanca",
+      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de lugares da cidade.",
       "tempoEstimado": 45,
       "tags": [
         "vocabulario-basico",
@@ -5937,22 +5938,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Lugares da cidade",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"library e livraria significam exatamente o mesmo lugar\". A avaliação mais adequada é:",
+      "enunciado": "Um estudante afirma: \"library e livraria significam exatamente o mesmo lugar\". A avaliacao mais adequada e:",
       "opcoes": [
-        "A afirmação está incorreta, porque o vocabulário usado para nomear espaços comuns do bairro e da cidade.",
-        "A afirmação está correta, pois resume integralmente lugares da cidade.",
-        "A afirmação está correta, porque basta decorar a tradução do exemplo.",
-        "A afirmação está incorreta apenas por não citar uma regra gramatical."
+        "A afirmacao esta incorreta, porque o vocabulario usado para nomear espacos comuns do bairro e da cidade.",
+        "A afirmacao esta correta, pois resume integralmente lugares da cidade.",
+        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
+        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
       ],
-      "correta": "A afirmação está incorreta, porque o vocabulário usado para nomear espaços comuns do bairro e da cidade.",
-      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre lugares da cidade.",
+      "correta": "A afirmacao esta incorreta, porque o vocabulario usado para nomear espacos comuns do bairro e da cidade.",
+      "comentario": "A fala do estudante apresenta um equivoco conceitual sobre lugares da cidade.",
       "tempoEstimado": 45,
       "tags": [
         "vocabulario-basico",
@@ -5976,22 +5977,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Lugares da cidade",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se lugares da cidade fosse ignorado(a) em interpretar direções, mapas e descrições de lugares, o resultado mais provável seria:",
+      "enunciado": "Se lugares da cidade fosse ignorado(a) em interpretar direcoes, mapas e descricoes de lugares, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretação ficaria incompleta e aumentaria a chance de erro em interpretar direções, mapas e descrições de lugares.",
-        "a questão seria resolvida automaticamente por rotina e ações cotidianas.",
-        "nenhuma interpretação seria alterada, porque Lugares da cidade não interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
+        "a interpretacao ficaria incompleta e aumentaria a chance de erro em interpretar direcoes, mapas e descricoes de lugares.",
+        "a questao seria resolvida automaticamente por rotina e acoes cotidianas.",
+        "nenhuma interpretacao seria alterada, porque Lugares da cidade nao interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
       ],
-      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em interpretar direções, mapas e descrições de lugares.",
-      "comentario": "Ignorar lugares da cidade compromete a resolução correta da atividade.",
+      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em interpretar direcoes, mapas e descricoes de lugares.",
+      "comentario": "Ignorar lugares da cidade compromete a resolucao correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "vocabulario-basico",
@@ -6015,14 +6016,14 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Lugares da cidade",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou ação ilustra melhor Lugares da cidade?",
+      "enunciado": "Qual trecho ou acao ilustra melhor Lugares da cidade?",
       "opcoes": [
         "The library is next to the park.",
         "I study, play and sleep at regular times.",
@@ -6030,7 +6031,7 @@ export const vocabularioBasico = {
         "Good morning! My name is Anna."
       ],
       "correta": "The library is next to the park.",
-      "comentario": "O item correto é o que melhor exemplifica lugares da cidade.",
+      "comentario": "O item correto e o que melhor exemplifica lugares da cidade.",
       "tempoEstimado": 50,
       "tags": [
         "vocabulario-basico",
@@ -6054,21 +6055,21 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Lugares da cidade",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao encontrar o exemplo \"The library is next to the park.\", a leitura mais adequada é:",
+      "enunciado": "Ao encontrar o exemplo \"The library is next to the park.\", a leitura mais adequada e:",
       "opcoes": [
-        "a frase indica um lugar da cidade e sua posição",
-        "a frase reúne ações comuns do cotidiano",
+        "a frase indica um lugar da cidade e sua posicao",
+        "a frase reune acoes comuns do cotidiano",
         "algumas palavras ajudam a leitura, enquanto outras podem enganar",
-        "a frase apresenta uma saudação e uma apresentação simples"
+        "a frase apresenta uma saudacao e uma apresentacao simples"
       ],
-      "correta": "a frase indica um lugar da cidade e sua posição",
+      "correta": "a frase indica um lugar da cidade e sua posicao",
       "comentario": "A leitura correta do exemplo revela o papel de lugares da cidade.",
       "tempoEstimado": 55,
       "tags": [
@@ -6093,22 +6094,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Lugares da cidade",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estratégia ajuda mais a estudar lugares da cidade?",
+      "enunciado": "Qual estrategia ajuda mais a estudar lugares da cidade?",
       "opcoes": [
-        "observar o nome do lugar e a relação espacial expressa no contexto",
-        "identificar os verbos principais e a sequência natural das ações",
-        "confirmar pelo contexto se a semelhança com o português é realmente válida",
-        "observar o momento da interação e a intenção de iniciar o contato"
+        "observar o nome do lugar e a relacao espacial expressa no contexto",
+        "identificar os verbos principais e a sequencia natural das acoes",
+        "confirmar pelo contexto se a semelhanca com o portugues e realmente valida",
+        "observar o momento da interacao e a intencao de iniciar o contato"
       ],
-      "correta": "observar o nome do lugar e a relação espacial expressa no contexto",
-      "comentario": "A estratégia correta fortalece o domínio de lugares da cidade.",
+      "correta": "observar o nome do lugar e a relacao espacial expressa no contexto",
+      "comentario": "A estrategia correta fortalece o dominio de lugares da cidade.",
       "tempoEstimado": 55,
       "tags": [
         "vocabulario-basico",
@@ -6132,22 +6133,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Lugares da cidade",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Lugares da cidade é mais cobrado quando:",
+      "enunciado": "Em uma prova, Lugares da cidade e mais cobrado quando:",
       "opcoes": [
-        "o item pede localizar ou reconhecer lugares urbanos em inglês",
-        "a questão exige reconhecer ações habituais do dia a dia",
+        "o item pede localizar ou reconhecer lugares urbanos em ingles",
+        "a questao exige reconhecer acoes habituais do dia a dia",
         "o item pede diferenciar cognato verdadeiro de falso cognato",
-        "a questão pede identificar ou completar uma saudação adequada ao contexto"
+        "a questao pede identificar ou completar uma saudacao adequada ao contexto"
       ],
-      "correta": "o item pede localizar ou reconhecer lugares urbanos em inglês",
-      "comentario": "Esse é o tipo de demanda em que lugares da cidade aparece com mais frequência.",
+      "correta": "o item pede localizar ou reconhecer lugares urbanos em ingles",
+      "comentario": "Esse e o tipo de demanda em que lugares da cidade aparece com mais frequencia.",
       "tempoEstimado": 60,
       "tags": [
         "vocabulario-basico",
@@ -6171,8 +6172,8 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Lugares da cidade",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
@@ -6180,13 +6181,13 @@ export const vocabularioBasico = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual resumo sintetiza melhor a ideia de Lugares da cidade?",
       "opcoes": [
-        "Em síntese, o vocabulário usado para nomear espaços comuns do bairro e da cidade.",
-        "Em síntese, o vocabulário de verbos e expressões usado para falar de atividades do dia a dia.",
-        "Em síntese, o reconhecimento de palavras transparentes e de palavras enganosas no vocabulário inicial do inglês.",
-        "Em síntese, o vocabulário usado para cumprimentar, apresentar-se e iniciar interações simples."
+        "Em sintese, o vocabulario usado para nomear espacos comuns do bairro e da cidade.",
+        "Em sintese, o vocabulario de verbos e expressoes usado para falar de atividades do dia a dia.",
+        "Em sintese, o reconhecimento de palavras transparentes e de palavras enganosas no vocabulario inicial do ingles.",
+        "Em sintese, o vocabulario usado para cumprimentar, apresentar-se e iniciar interacoes simples."
       ],
-      "correta": "Em síntese, o vocabulário usado para nomear espaços comuns do bairro e da cidade.",
-      "comentario": "O resumo correto recupera o núcleo de lugares da cidade.",
+      "correta": "Em sintese, o vocabulario usado para nomear espacos comuns do bairro e da cidade.",
+      "comentario": "O resumo correto recupera o nucleo de lugares da cidade.",
       "tempoEstimado": 60,
       "tags": [
         "vocabulario-basico",
@@ -6210,22 +6211,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Lugares da cidade",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associação entre exemplo e interpretação está correta em Lugares da cidade?",
+      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Lugares da cidade?",
       "opcoes": [
-        "The library is next to the park. -> a frase indica um lugar da cidade e sua posição",
-        "I study, play and sleep at regular times. -> a frase indica um lugar da cidade e sua posição",
-        "Animal is a cognate, but parents is a false friend. -> a frase apresenta uma saudação e uma apresentação simples",
-        "Good morning! My name is Anna. -> a frase reúne ações comuns do cotidiano"
+        "The library is next to the park. -> a frase indica um lugar da cidade e sua posicao",
+        "I study, play and sleep at regular times. -> a frase indica um lugar da cidade e sua posicao",
+        "Animal is a cognate, but parents is a false friend. -> a frase apresenta uma saudacao e uma apresentacao simples",
+        "Good morning! My name is Anna. -> a frase reune acoes comuns do cotidiano"
       ],
-      "correta": "The library is next to the park. -> a frase indica um lugar da cidade e sua posição",
-      "comentario": "A associação correta mantém coerência entre exemplo e interpretação em lugares da cidade.",
+      "correta": "The library is next to the park. -> a frase indica um lugar da cidade e sua posicao",
+      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em lugares da cidade.",
       "tempoEstimado": 65,
       "tags": [
         "vocabulario-basico",
@@ -6249,8 +6250,8 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
       "subtopico": "Lugares da cidade",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
@@ -6258,13 +6259,13 @@ export const vocabularioBasico = {
       "tipo": "multipla_escolha",
       "enunciado": "Ao resolver uma atividade sobre lugares da cidade, o estudante deve principalmente:",
       "opcoes": [
-        "reconhecer locais públicos e sua função no contexto",
-        "observar o nome do lugar e a relação espacial expressa no contexto",
-        "interpretar direções, mapas e descrições de lugares",
-        "o item pede localizar ou reconhecer lugares urbanos em inglês"
+        "reconhecer locais publicos e sua funcao no contexto",
+        "observar o nome do lugar e a relacao espacial expressa no contexto",
+        "interpretar direcoes, mapas e descricoes de lugares",
+        "o item pede localizar ou reconhecer lugares urbanos em ingles"
       ],
-      "correta": "reconhecer locais públicos e sua função no contexto",
-      "comentario": "O objetivo central de lugares da cidade é reconhecer locais públicos e sua função no contexto.",
+      "correta": "reconhecer locais publicos e sua funcao no contexto",
+      "comentario": "O objetivo central de lugares da cidade e reconhecer locais publicos e sua funcao no contexto.",
       "tempoEstimado": 70,
       "tags": [
         "vocabulario-basico",
@@ -6288,22 +6289,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Rotina e ações cotidianas",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Rotina e acoes cotidianas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Inglês, Rotina e ações cotidianas refere-se a:",
+      "enunciado": "Em Ingles, Rotina e acoes cotidianas refere-se a:",
       "opcoes": [
-        "o vocabulário de verbos e expressões usado para falar de atividades do dia a dia",
-        "o reconhecimento de palavras transparentes e de palavras enganosas no vocabulário inicial do inglês",
-        "o vocabulário usado para cumprimentar, apresentar-se e iniciar interações simples",
-        "o vocabulário relacionado a nome, idade, nacionalidade, endereço e dados básicos"
+        "o vocabulario de verbos e expressoes usado para falar de atividades do dia a dia",
+        "o reconhecimento de palavras transparentes e de palavras enganosas no vocabulario inicial do ingles",
+        "o vocabulario usado para cumprimentar, apresentar-se e iniciar interacoes simples",
+        "o vocabulario relacionado a nome, idade, nacionalidade, endereco e dados basicos"
       ],
-      "correta": "o vocabulário de verbos e expressões usado para falar de atividades do dia a dia",
-      "comentario": "Rotina e ações cotidianas refere-se ao vocabulário de verbos e expressões usado para falar de atividades do dia a dia.",
+      "correta": "o vocabulario de verbos e expressoes usado para falar de atividades do dia a dia",
+      "comentario": "Rotina e acoes cotidianas refere-se ao vocabulario de verbos e expressoes usado para falar de atividades do dia a dia.",
       "tempoEstimado": 20,
       "tags": [
         "vocabulario-basico",
@@ -6327,22 +6328,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Rotina e ações cotidianas",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Rotina e acoes cotidianas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: um pequeno texto apresenta wake up, brush my teeth, study and sleep. Esse caso está mais ligado a qual subtópico?",
+      "enunciado": "Observe a situacao: um pequeno texto apresenta wake up, brush my teeth, study and sleep. Esse caso esta mais ligado a qual subtopico?",
       "opcoes": [
-        "Rotina e ações cotidianas",
-        "Cognatos e falsos cognatos básicos",
-        "Saudações e apresentações",
-        "Informações pessoais"
+        "Rotina e acoes cotidianas",
+        "Cognatos e falsos cognatos basicos",
+        "Saudacoes e apresentacoes",
+        "Informacoes pessoais"
       ],
-      "correta": "Rotina e ações cotidianas",
-      "comentario": "A situação apresentada é melhor compreendida por meio de rotina e ações cotidianas.",
+      "correta": "Rotina e acoes cotidianas",
+      "comentario": "A situacao apresentada e melhor compreendida por meio de rotina e acoes cotidianas.",
       "tempoEstimado": 20,
       "tags": [
         "vocabulario-basico",
@@ -6366,14 +6367,14 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Rotina e ações cotidianas",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Rotina e acoes cotidianas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual exemplo combina melhor com rotina e ações cotidianas?",
+      "enunciado": "Qual exemplo combina melhor com rotina e acoes cotidianas?",
       "opcoes": [
         "I study, play and sleep at regular times.",
         "Animal is a cognate, but parents is a false friend.",
@@ -6381,7 +6382,7 @@ export const vocabularioBasico = {
         "I am thirteen years old and I am from Brazil."
       ],
       "correta": "I study, play and sleep at regular times.",
-      "comentario": "O exemplo correto ilustra o uso de rotina e ações cotidianas.",
+      "comentario": "O exemplo correto ilustra o uso de rotina e acoes cotidianas.",
       "tempoEstimado": 25,
       "tags": [
         "vocabulario-basico",
@@ -6405,22 +6406,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Rotina e ações cotidianas",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Rotina e acoes cotidianas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO representa corretamente rotina e ações cotidianas?",
+      "enunciado": "Qual alternativa NAO representa corretamente rotina e acoes cotidianas?",
       "opcoes": [
         "Animal is a cognate, but parents is a false friend.",
         "I study, play and sleep at regular times.",
-        "identificar os verbos principais e a sequência natural das ações.",
-        "compreender sequências simples de ações da rotina."
+        "identificar os verbos principais e a sequencia natural das acoes.",
+        "compreender sequencias simples de acoes da rotina."
       ],
       "correta": "Animal is a cognate, but parents is a false friend.",
-      "comentario": "A opção incompatível ilustra outro subtópico, e não rotina e ações cotidianas.",
+      "comentario": "A opcao incompativel ilustra outro subtopico, e nao rotina e acoes cotidianas.",
       "tempoEstimado": 25,
       "tags": [
         "vocabulario-basico",
@@ -6444,22 +6445,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Rotina e ações cotidianas",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Rotina e acoes cotidianas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar rotina e ações cotidianas, o foco principal é:",
+      "enunciado": "Ao estudar rotina e acoes cotidianas, o foco principal e:",
       "opcoes": [
-        "associar ações comuns a hábitos pessoais e escolares",
-        "usar semelhanças úteis e evitar armadilhas de interpretação",
-        "reconhecer fórmulas básicas de cumprimento e apresentação",
-        "identificar dados pessoais em frases curtas e formulários simples"
+        "associar acoes comuns a habitos pessoais e escolares",
+        "usar semelhancas uteis e evitar armadilhas de interpretacao",
+        "reconhecer formulas basicas de cumprimento e apresentacao",
+        "identificar dados pessoais em frases curtas e formularios simples"
       ],
-      "correta": "associar ações comuns a hábitos pessoais e escolares",
-      "comentario": "Rotina e ações cotidianas concentra-se em associar ações comuns a hábitos pessoais e escolares.",
+      "correta": "associar acoes comuns a habitos pessoais e escolares",
+      "comentario": "Rotina e acoes cotidianas concentra-se em associar acoes comuns a habitos pessoais e escolares.",
       "tempoEstimado": 30,
       "tags": [
         "vocabulario-basico",
@@ -6483,22 +6484,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Rotina e ações cotidianas",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Rotina e acoes cotidianas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Cognatos e falsos cognatos básicos trata de o reconhecimento de palavras transparentes e de palavras enganosas no vocabulário inicial do inglês, Rotina e ações cotidianas destaca:",
+      "enunciado": "Enquanto Cognatos e falsos cognatos basicos trata de o reconhecimento de palavras transparentes e de palavras enganosas no vocabulario inicial do ingles, Rotina e acoes cotidianas destaca:",
       "opcoes": [
-        "O vocabulário de verbos e expressões usado para falar de atividades do dia a dia.",
-        "O reconhecimento de palavras transparentes e de palavras enganosas no vocabulário inicial do inglês.",
-        "O vocabulário usado para cumprimentar, apresentar-se e iniciar interações simples.",
-        "O vocabulário relacionado a nome, idade, nacionalidade, endereço e dados básicos."
+        "O vocabulario de verbos e expressoes usado para falar de atividades do dia a dia.",
+        "O reconhecimento de palavras transparentes e de palavras enganosas no vocabulario inicial do ingles.",
+        "O vocabulario usado para cumprimentar, apresentar-se e iniciar interacoes simples.",
+        "O vocabulario relacionado a nome, idade, nacionalidade, endereco e dados basicos."
       ],
-      "correta": "O vocabulário de verbos e expressões usado para falar de atividades do dia a dia.",
-      "comentario": "A comparação correta mostra a especificidade de rotina e ações cotidianas.",
+      "correta": "O vocabulario de verbos e expressoes usado para falar de atividades do dia a dia.",
+      "comentario": "A comparacao correta mostra a especificidade de rotina e acoes cotidianas.",
       "tempoEstimado": 30,
       "tags": [
         "vocabulario-basico",
@@ -6522,22 +6523,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Rotina e ações cotidianas",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Rotina e acoes cotidianas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
       "enunciado": "Em uma atividade de sala, um pequeno texto apresenta wake up, brush my teeth, study and sleep. Para responder bem, o estudante deve mobilizar principalmente:",
       "opcoes": [
-        "Rotina e ações cotidianas",
-        "Cognatos e falsos cognatos básicos",
-        "Informações pessoais",
-        "Família e relações"
+        "Rotina e acoes cotidianas",
+        "Cognatos e falsos cognatos basicos",
+        "Informacoes pessoais",
+        "Familia e relacoes"
       ],
-      "correta": "Rotina e ações cotidianas",
-      "comentario": "Esse tipo de tarefa exige domínio de rotina e ações cotidianas.",
+      "correta": "Rotina e acoes cotidianas",
+      "comentario": "Esse tipo de tarefa exige dominio de rotina e acoes cotidianas.",
       "tempoEstimado": 35,
       "tags": [
         "vocabulario-basico",
@@ -6561,22 +6562,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Rotina e ações cotidianas",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Rotina e acoes cotidianas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação prática depende mais diretamente de Rotina e ações cotidianas?",
+      "enunciado": "Qual situacao pratica depende mais diretamente de Rotina e acoes cotidianas?",
       "opcoes": [
-        "compreender sequências simples de ações da rotina",
-        "melhorar a leitura inicial sem depender de tradução automática",
-        "entender diálogos iniciais e apresentações pessoais",
-        "interpretar descrições familiares e relações de parentesco"
+        "compreender sequencias simples de acoes da rotina",
+        "melhorar a leitura inicial sem depender de traducao automatica",
+        "entender dialogos iniciais e apresentacoes pessoais",
+        "interpretar descricoes familiares e relacoes de parentesco"
       ],
-      "correta": "compreender sequências simples de ações da rotina",
-      "comentario": "Rotina e ações cotidianas aparece de forma direta em compreender sequências simples de ações da rotina.",
+      "correta": "compreender sequencias simples de acoes da rotina",
+      "comentario": "Rotina e acoes cotidianas aparece de forma direta em compreender sequencias simples de acoes da rotina.",
       "tempoEstimado": 35,
       "tags": [
         "vocabulario-basico",
@@ -6600,22 +6601,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Rotina e ações cotidianas",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Rotina e acoes cotidianas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre rotina e ações cotidianas?",
+      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre rotina e acoes cotidianas?",
       "opcoes": [
-        "o caso é resolvido com foco em rotina e ações cotidianas.",
-        "o caso é melhor resolvido por cognatos e falso cognatos básicos.",
-        "o caso elimina a necessidade de saudações e apresentações.",
-        "o caso impede qualquer uso de informações pessoais."
+        "o caso e resolvido com foco em rotina e acoes cotidianas.",
+        "o caso e melhor resolvido por cognatos e falso cognatos basicos.",
+        "o caso elimina a necessidade de saudacoes e apresentacoes.",
+        "o caso impede qualquer uso de informacoes pessoais."
       ],
-      "correta": "o caso é resolvido com foco em rotina e ações cotidianas.",
-      "comentario": "A conclusão correta retoma a função central de rotina e ações cotidianas.",
+      "correta": "o caso e resolvido com foco em rotina e acoes cotidianas.",
+      "comentario": "A conclusao correta retoma a funcao central de rotina e acoes cotidianas.",
       "tempoEstimado": 40,
       "tags": [
         "vocabulario-basico",
@@ -6639,22 +6640,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Rotina e ações cotidianas",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Rotina e acoes cotidianas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Se a turma fosse revisar rotina e ações cotidianas, qual pergunta de estudo seria a mais adequada?",
+      "enunciado": "Se a turma fosse revisar rotina e acoes cotidianas, qual pergunta de estudo seria a mais adequada?",
       "opcoes": [
-        "Como rotina e ações cotidianas aparece em compreender sequências simples de ações da rotina?",
-        "Como cognatos e falso cognatos básicos substitui totalmente compreender sequências simples de ações da rotina?",
-        "Por que saudações e apresentações torna desnecessário estudar Rotina e ações cotidianas?",
-        "De que modo informações pessoais elimina toda leitura de contexto?"
+        "Como rotina e acoes cotidianas aparece em compreender sequencias simples de acoes da rotina?",
+        "Como cognatos e falso cognatos basicos substitui totalmente compreender sequencias simples de acoes da rotina?",
+        "Por que saudacoes e apresentacoes torna desnecessario estudar Rotina e acoes cotidianas?",
+        "De que modo informacoes pessoais elimina toda leitura de contexto?"
       ],
-      "correta": "Como rotina e ações cotidianas aparece em compreender sequências simples de ações da rotina?",
-      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de rotina e ações cotidianas.",
+      "correta": "Como rotina e acoes cotidianas aparece em compreender sequencias simples de acoes da rotina?",
+      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de rotina e acoes cotidianas.",
       "tempoEstimado": 40,
       "tags": [
         "vocabulario-basico",
@@ -6678,22 +6679,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Rotina e ações cotidianas",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Rotina e acoes cotidianas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em rotina e ações cotidianas é pensar que:",
+      "enunciado": "Um erro comum em rotina e acoes cotidianas e pensar que:",
       "opcoes": [
-        "ações de rotina são sempre escritas no infinitivo com to em qualquer frase",
-        "qualquer palavra parecida com o português tem necessariamente o mesmo significado",
-        "good morning e good night podem ser usados da mesma forma em qualquer horário",
-        "informações pessoais em inglês aparecem sempre na mesma ordem e com as mesmas palavras"
+        "acoes de rotina sao sempre escritas no infinitivo com to em qualquer frase",
+        "qualquer palavra parecida com o portugues tem necessariamente o mesmo significado",
+        "good morning e good night podem ser usados da mesma forma em qualquer horario",
+        "informacoes pessoais em ingles aparecem sempre na mesma ordem e com as mesmas palavras"
       ],
-      "correta": "ações de rotina são sempre escritas no infinitivo com to em qualquer frase",
-      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de rotina e ações cotidianas.",
+      "correta": "acoes de rotina sao sempre escritas no infinitivo com to em qualquer frase",
+      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de rotina e acoes cotidianas.",
       "tempoEstimado": 45,
       "tags": [
         "vocabulario-basico",
@@ -6717,22 +6718,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Rotina e ações cotidianas",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Rotina e acoes cotidianas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"para falar de rotina em inglês é obrigatório usar to antes de todos os verbos\". A avaliação mais adequada é:",
+      "enunciado": "Um estudante afirma: \"para falar de rotina em ingles e obrigatorio usar to antes de todos os verbos\". A avaliacao mais adequada e:",
       "opcoes": [
-        "A afirmação está incorreta, porque o vocabulário de verbos e expressões usado para falar de atividades do dia a dia.",
-        "A afirmação está correta, pois resume integralmente rotina e ações cotidianas.",
-        "A afirmação está correta, porque basta decorar a tradução do exemplo.",
-        "A afirmação está incorreta apenas por não citar uma regra gramatical."
+        "A afirmacao esta incorreta, porque o vocabulario de verbos e expressoes usado para falar de atividades do dia a dia.",
+        "A afirmacao esta correta, pois resume integralmente rotina e acoes cotidianas.",
+        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
+        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
       ],
-      "correta": "A afirmação está incorreta, porque o vocabulário de verbos e expressões usado para falar de atividades do dia a dia.",
-      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre rotina e ações cotidianas.",
+      "correta": "A afirmacao esta incorreta, porque o vocabulario de verbos e expressoes usado para falar de atividades do dia a dia.",
+      "comentario": "A fala do estudante apresenta um equivoco conceitual sobre rotina e acoes cotidianas.",
       "tempoEstimado": 45,
       "tags": [
         "vocabulario-basico",
@@ -6756,22 +6757,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Rotina e ações cotidianas",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Rotina e acoes cotidianas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se rotina e ações cotidianas fosse ignorado(a) em compreender sequências simples de ações da rotina, o resultado mais provável seria:",
+      "enunciado": "Se rotina e acoes cotidianas fosse ignorado(a) em compreender sequencias simples de acoes da rotina, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretação ficaria incompleta e aumentaria a chance de erro em compreender sequências simples de ações da rotina.",
-        "a questão seria resolvida automaticamente por cognatos e falso cognatos básicos.",
-        "nenhuma interpretação seria alterada, porque Rotina e ações cotidianas não interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
+        "a interpretacao ficaria incompleta e aumentaria a chance de erro em compreender sequencias simples de acoes da rotina.",
+        "a questao seria resolvida automaticamente por cognatos e falso cognatos basicos.",
+        "nenhuma interpretacao seria alterada, porque Rotina e acoes cotidianas nao interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
       ],
-      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em compreender sequências simples de ações da rotina.",
-      "comentario": "Ignorar rotina e ações cotidianas compromete a resolução correta da atividade.",
+      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em compreender sequencias simples de acoes da rotina.",
+      "comentario": "Ignorar rotina e acoes cotidianas compromete a resolucao correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "vocabulario-basico",
@@ -6795,14 +6796,14 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Rotina e ações cotidianas",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Rotina e acoes cotidianas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou ação ilustra melhor Rotina e ações cotidianas?",
+      "enunciado": "Qual trecho ou acao ilustra melhor Rotina e acoes cotidianas?",
       "opcoes": [
         "I study, play and sleep at regular times.",
         "Animal is a cognate, but parents is a false friend.",
@@ -6810,7 +6811,7 @@ export const vocabularioBasico = {
         "I am thirteen years old and I am from Brazil."
       ],
       "correta": "I study, play and sleep at regular times.",
-      "comentario": "O item correto é o que melhor exemplifica rotina e ações cotidianas.",
+      "comentario": "O item correto e o que melhor exemplifica rotina e acoes cotidianas.",
       "tempoEstimado": 50,
       "tags": [
         "vocabulario-basico",
@@ -6834,22 +6835,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Rotina e ações cotidianas",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Rotina e acoes cotidianas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao encontrar o exemplo \"I study, play and sleep at regular times.\", a leitura mais adequada é:",
+      "enunciado": "Ao encontrar o exemplo \"I study, play and sleep at regular times.\", a leitura mais adequada e:",
       "opcoes": [
-        "a frase reúne ações comuns do cotidiano",
+        "a frase reune acoes comuns do cotidiano",
         "algumas palavras ajudam a leitura, enquanto outras podem enganar",
-        "a frase apresenta uma saudação e uma apresentação simples",
+        "a frase apresenta uma saudacao e uma apresentacao simples",
         "a frase apresenta idade e origem de forma direta"
       ],
-      "correta": "a frase reúne ações comuns do cotidiano",
-      "comentario": "A leitura correta do exemplo revela o papel de rotina e ações cotidianas.",
+      "correta": "a frase reune acoes comuns do cotidiano",
+      "comentario": "A leitura correta do exemplo revela o papel de rotina e acoes cotidianas.",
       "tempoEstimado": 55,
       "tags": [
         "vocabulario-basico",
@@ -6873,22 +6874,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Rotina e ações cotidianas",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Rotina e acoes cotidianas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estratégia ajuda mais a estudar rotina e ações cotidianas?",
+      "enunciado": "Qual estrategia ajuda mais a estudar rotina e acoes cotidianas?",
       "opcoes": [
-        "identificar os verbos principais e a sequência natural das ações",
-        "confirmar pelo contexto se a semelhança com o português é realmente válida",
-        "observar o momento da interação e a intenção de iniciar o contato",
+        "identificar os verbos principais e a sequencia natural das acoes",
+        "confirmar pelo contexto se a semelhanca com o portugues e realmente valida",
+        "observar o momento da interacao e a intencao de iniciar o contato",
         "procurar palavras ligadas a identidade, idade e origem"
       ],
-      "correta": "identificar os verbos principais e a sequência natural das ações",
-      "comentario": "A estratégia correta fortalece o domínio de rotina e ações cotidianas.",
+      "correta": "identificar os verbos principais e a sequencia natural das acoes",
+      "comentario": "A estrategia correta fortalece o dominio de rotina e acoes cotidianas.",
       "tempoEstimado": 55,
       "tags": [
         "vocabulario-basico",
@@ -6912,22 +6913,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Rotina e ações cotidianas",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Rotina e acoes cotidianas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Rotina e ações cotidianas é mais cobrado quando:",
+      "enunciado": "Em uma prova, Rotina e acoes cotidianas e mais cobrado quando:",
       "opcoes": [
-        "a questão exige reconhecer ações habituais do dia a dia",
+        "a questao exige reconhecer acoes habituais do dia a dia",
         "o item pede diferenciar cognato verdadeiro de falso cognato",
-        "a questão pede identificar ou completar uma saudação adequada ao contexto",
-        "o item pede localizar ou relacionar dados pessoais básicos"
+        "a questao pede identificar ou completar uma saudacao adequada ao contexto",
+        "o item pede localizar ou relacionar dados pessoais basicos"
       ],
-      "correta": "a questão exige reconhecer ações habituais do dia a dia",
-      "comentario": "Esse é o tipo de demanda em que rotina e ações cotidianas aparece com mais frequência.",
+      "correta": "a questao exige reconhecer acoes habituais do dia a dia",
+      "comentario": "Esse e o tipo de demanda em que rotina e acoes cotidianas aparece com mais frequencia.",
       "tempoEstimado": 60,
       "tags": [
         "vocabulario-basico",
@@ -6951,22 +6952,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Rotina e ações cotidianas",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Rotina e acoes cotidianas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual resumo sintetiza melhor a ideia de Rotina e ações cotidianas?",
+      "enunciado": "Qual resumo sintetiza melhor a ideia de Rotina e acoes cotidianas?",
       "opcoes": [
-        "Em síntese, o vocabulário de verbos e expressões usado para falar de atividades do dia a dia.",
-        "Em síntese, o reconhecimento de palavras transparentes e de palavras enganosas no vocabulário inicial do inglês.",
-        "Em síntese, o vocabulário usado para cumprimentar, apresentar-se e iniciar interações simples.",
-        "Em síntese, o vocabulário relacionado a nome, idade, nacionalidade, endereço e dados básicos."
+        "Em sintese, o vocabulario de verbos e expressoes usado para falar de atividades do dia a dia.",
+        "Em sintese, o reconhecimento de palavras transparentes e de palavras enganosas no vocabulario inicial do ingles.",
+        "Em sintese, o vocabulario usado para cumprimentar, apresentar-se e iniciar interacoes simples.",
+        "Em sintese, o vocabulario relacionado a nome, idade, nacionalidade, endereco e dados basicos."
       ],
-      "correta": "Em síntese, o vocabulário de verbos e expressões usado para falar de atividades do dia a dia.",
-      "comentario": "O resumo correto recupera o núcleo de rotina e ações cotidianas.",
+      "correta": "Em sintese, o vocabulario de verbos e expressoes usado para falar de atividades do dia a dia.",
+      "comentario": "O resumo correto recupera o nucleo de rotina e acoes cotidianas.",
       "tempoEstimado": 60,
       "tags": [
         "vocabulario-basico",
@@ -6990,22 +6991,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Rotina e ações cotidianas",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Rotina e acoes cotidianas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associação entre exemplo e interpretação está correta em Rotina e ações cotidianas?",
+      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Rotina e acoes cotidianas?",
       "opcoes": [
-        "I study, play and sleep at regular times. -> a frase reúne ações comuns do cotidiano",
-        "Animal is a cognate, but parents is a false friend. -> a frase reúne ações comuns do cotidiano",
+        "I study, play and sleep at regular times. -> a frase reune acoes comuns do cotidiano",
+        "Animal is a cognate, but parents is a false friend. -> a frase reune acoes comuns do cotidiano",
         "Good morning! My name is Anna. -> a frase apresenta idade e origem de forma direta",
         "I am thirteen years old and I am from Brazil. -> algumas palavras ajudam a leitura, enquanto outras podem enganar"
       ],
-      "correta": "I study, play and sleep at regular times. -> a frase reúne ações comuns do cotidiano",
-      "comentario": "A associação correta mantém coerência entre exemplo e interpretação em rotina e ações cotidianas.",
+      "correta": "I study, play and sleep at regular times. -> a frase reune acoes comuns do cotidiano",
+      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em rotina e acoes cotidianas.",
       "tempoEstimado": 65,
       "tags": [
         "vocabulario-basico",
@@ -7029,22 +7030,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Rotina e ações cotidianas",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Rotina e acoes cotidianas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao resolver uma atividade sobre rotina e ações cotidianas, o estudante deve principalmente:",
+      "enunciado": "Ao resolver uma atividade sobre rotina e acoes cotidianas, o estudante deve principalmente:",
       "opcoes": [
-        "associar ações comuns a hábitos pessoais e escolares",
-        "identificar os verbos principais e a sequência natural das ações",
-        "compreender sequências simples de ações da rotina",
-        "a questão exige reconhecer ações habituais do dia a dia"
+        "associar acoes comuns a habitos pessoais e escolares",
+        "identificar os verbos principais e a sequencia natural das acoes",
+        "compreender sequencias simples de acoes da rotina",
+        "a questao exige reconhecer acoes habituais do dia a dia"
       ],
-      "correta": "associar ações comuns a hábitos pessoais e escolares",
-      "comentario": "O objetivo central de rotina e ações cotidianas é associar ações comuns a hábitos pessoais e escolares.",
+      "correta": "associar acoes comuns a habitos pessoais e escolares",
+      "comentario": "O objetivo central de rotina e acoes cotidianas e associar acoes comuns a habitos pessoais e escolares.",
       "tempoEstimado": 70,
       "tags": [
         "vocabulario-basico",
@@ -7068,22 +7069,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Cognatos e falsos cognatos básicos",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Cognatos e falsos cognatos basicos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Inglês, Cognatos e falsos cognatos básicos refere-se a:",
+      "enunciado": "Em Ingles, Cognatos e falsos cognatos basicos refere-se a:",
       "opcoes": [
-        "o reconhecimento de palavras transparentes e de palavras enganosas no vocabulário inicial do inglês",
-        "o vocabulário usado para cumprimentar, apresentar-se e iniciar interações simples",
-        "o vocabulário relacionado a nome, idade, nacionalidade, endereço e dados básicos",
-        "o conjunto de palavras usado para nomear membros da família e vínculos simples"
+        "o reconhecimento de palavras transparentes e de palavras enganosas no vocabulario inicial do ingles",
+        "o vocabulario usado para cumprimentar, apresentar-se e iniciar interacoes simples",
+        "o vocabulario relacionado a nome, idade, nacionalidade, endereco e dados basicos",
+        "o conjunto de palavras usado para nomear membros da familia e vinculos simples"
       ],
-      "correta": "o reconhecimento de palavras transparentes e de palavras enganosas no vocabulário inicial do inglês",
-      "comentario": "Cognatos e falsos cognatos básicos refere-se ao reconhecimento de palavras transparentes e de palavras enganosas no vocabulário inicial do inglês.",
+      "correta": "o reconhecimento de palavras transparentes e de palavras enganosas no vocabulario inicial do ingles",
+      "comentario": "Cognatos e falsos cognatos basicos refere-se ao reconhecimento de palavras transparentes e de palavras enganosas no vocabulario inicial do ingles.",
       "tempoEstimado": 20,
       "tags": [
         "vocabulario-basico",
@@ -7107,22 +7108,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Cognatos e falsos cognatos básicos",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Cognatos e falsos cognatos basicos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: em um texto aparecem animal, music, parents e lunch, exigindo atenção ao sentido real. Esse caso está mais ligado a qual subtópico?",
+      "enunciado": "Observe a situacao: em um texto aparecem animal, music, parents e lunch, exigindo atencao ao sentido real. Esse caso esta mais ligado a qual subtopico?",
       "opcoes": [
-        "Cognatos e falsos cognatos básicos",
-        "Saudações e apresentações",
-        "Informações pessoais",
-        "Família e relações"
+        "Cognatos e falsos cognatos basicos",
+        "Saudacoes e apresentacoes",
+        "Informacoes pessoais",
+        "Familia e relacoes"
       ],
-      "correta": "Cognatos e falsos cognatos básicos",
-      "comentario": "A situação apresentada é melhor compreendida por meio de cognatos e falso cognatos básicos.",
+      "correta": "Cognatos e falsos cognatos basicos",
+      "comentario": "A situacao apresentada e melhor compreendida por meio de cognatos e falso cognatos basicos.",
       "tempoEstimado": 20,
       "tags": [
         "vocabulario-basico",
@@ -7146,14 +7147,14 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Cognatos e falsos cognatos básicos",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Cognatos e falsos cognatos basicos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual exemplo combina melhor com cognatos e falso cognatos básicos?",
+      "enunciado": "Qual exemplo combina melhor com cognatos e falso cognatos basicos?",
       "opcoes": [
         "Animal is a cognate, but parents is a false friend.",
         "Good morning! My name is Anna.",
@@ -7161,7 +7162,7 @@ export const vocabularioBasico = {
         "My cousin lives with my grandparents."
       ],
       "correta": "Animal is a cognate, but parents is a false friend.",
-      "comentario": "O exemplo correto ilustra o uso de cognatos e falso cognatos básicos.",
+      "comentario": "O exemplo correto ilustra o uso de cognatos e falso cognatos basicos.",
       "tempoEstimado": 25,
       "tags": [
         "vocabulario-basico",
@@ -7185,22 +7186,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Cognatos e falsos cognatos básicos",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Cognatos e falsos cognatos basicos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO representa corretamente cognatos e falso cognatos básicos?",
+      "enunciado": "Qual alternativa NAO representa corretamente cognatos e falso cognatos basicos?",
       "opcoes": [
         "Good morning! My name is Anna.",
         "Animal is a cognate, but parents is a false friend.",
-        "confirmar pelo contexto se a semelhança com o português é realmente válida.",
-        "melhorar a leitura inicial sem depender de tradução automática."
+        "confirmar pelo contexto se a semelhanca com o portugues e realmente valida.",
+        "melhorar a leitura inicial sem depender de traducao automatica."
       ],
       "correta": "Good morning! My name is Anna.",
-      "comentario": "A opção incompatível ilustra outro subtópico, e não cognatos e falso cognatos básicos.",
+      "comentario": "A opcao incompativel ilustra outro subtopico, e nao cognatos e falso cognatos basicos.",
       "tempoEstimado": 25,
       "tags": [
         "vocabulario-basico",
@@ -7224,22 +7225,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Cognatos e falsos cognatos básicos",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Cognatos e falsos cognatos basicos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar cognatos e falso cognatos básicos, o foco principal é:",
+      "enunciado": "Ao estudar cognatos e falso cognatos basicos, o foco principal e:",
       "opcoes": [
-        "usar semelhanças úteis e evitar armadilhas de interpretação",
-        "reconhecer fórmulas básicas de cumprimento e apresentação",
-        "identificar dados pessoais em frases curtas e formulários simples",
-        "reconhecer parentesco e relações pessoais em inglês"
+        "usar semelhancas uteis e evitar armadilhas de interpretacao",
+        "reconhecer formulas basicas de cumprimento e apresentacao",
+        "identificar dados pessoais em frases curtas e formularios simples",
+        "reconhecer parentesco e relacoes pessoais em ingles"
       ],
-      "correta": "usar semelhanças úteis e evitar armadilhas de interpretação",
-      "comentario": "Cognatos e falsos cognatos básicos concentra-se em usar semelhanças úteis e evitar armadilhas de interpretação.",
+      "correta": "usar semelhancas uteis e evitar armadilhas de interpretacao",
+      "comentario": "Cognatos e falsos cognatos basicos concentra-se em usar semelhancas uteis e evitar armadilhas de interpretacao.",
       "tempoEstimado": 30,
       "tags": [
         "vocabulario-basico",
@@ -7263,22 +7264,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Cognatos e falsos cognatos básicos",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Cognatos e falsos cognatos basicos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Saudações e apresentações trata de o vocabulário usado para cumprimentar, apresentar-se e iniciar interações simples, Cognatos e falsos cognatos básicos destaca:",
+      "enunciado": "Enquanto Saudacoes e apresentacoes trata de o vocabulario usado para cumprimentar, apresentar-se e iniciar interacoes simples, Cognatos e falsos cognatos basicos destaca:",
       "opcoes": [
-        "O reconhecimento de palavras transparentes e de palavras enganosas no vocabulário inicial do inglês.",
-        "O vocabulário usado para cumprimentar, apresentar-se e iniciar interações simples.",
-        "O vocabulário relacionado a nome, idade, nacionalidade, endereço e dados básicos.",
-        "O conjunto de palavras usado para nomear membros da família e vínculos simples."
+        "O reconhecimento de palavras transparentes e de palavras enganosas no vocabulario inicial do ingles.",
+        "O vocabulario usado para cumprimentar, apresentar-se e iniciar interacoes simples.",
+        "O vocabulario relacionado a nome, idade, nacionalidade, endereco e dados basicos.",
+        "O conjunto de palavras usado para nomear membros da familia e vinculos simples."
       ],
-      "correta": "O reconhecimento de palavras transparentes e de palavras enganosas no vocabulário inicial do inglês.",
-      "comentario": "A comparação correta mostra a especificidade de cognatos e falso cognatos básicos.",
+      "correta": "O reconhecimento de palavras transparentes e de palavras enganosas no vocabulario inicial do ingles.",
+      "comentario": "A comparacao correta mostra a especificidade de cognatos e falso cognatos basicos.",
       "tempoEstimado": 30,
       "tags": [
         "vocabulario-basico",
@@ -7302,22 +7303,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Cognatos e falsos cognatos básicos",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Cognatos e falsos cognatos basicos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma atividade de sala, em um texto aparecem animal, music, parents e lunch, exigindo atenção ao sentido real. Para responder bem, o estudante deve mobilizar principalmente:",
+      "enunciado": "Em uma atividade de sala, em um texto aparecem animal, music, parents e lunch, exigindo atencao ao sentido real. Para responder bem, o estudante deve mobilizar principalmente:",
       "opcoes": [
-        "Cognatos e falsos cognatos básicos",
-        "Saudações e apresentações",
-        "Família e relações",
+        "Cognatos e falsos cognatos basicos",
+        "Saudacoes e apresentacoes",
+        "Familia e relacoes",
         "Objetos escolares"
       ],
-      "correta": "Cognatos e falsos cognatos básicos",
-      "comentario": "Esse tipo de tarefa exige domínio de cognatos e falso cognatos básicos.",
+      "correta": "Cognatos e falsos cognatos basicos",
+      "comentario": "Esse tipo de tarefa exige dominio de cognatos e falso cognatos basicos.",
       "tempoEstimado": 35,
       "tags": [
         "vocabulario-basico",
@@ -7341,22 +7342,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Cognatos e falsos cognatos básicos",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Cognatos e falsos cognatos basicos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação prática depende mais diretamente de Cognatos e falsos cognatos básicos?",
+      "enunciado": "Qual situacao pratica depende mais diretamente de Cognatos e falsos cognatos basicos?",
       "opcoes": [
-        "melhorar a leitura inicial sem depender de tradução automática",
-        "entender diálogos iniciais e apresentações pessoais",
-        "preencher ou interpretar fichas e apresentações pessoais",
-        "compreender listas e descrições simples do ambiente escolar"
+        "melhorar a leitura inicial sem depender de traducao automatica",
+        "entender dialogos iniciais e apresentacoes pessoais",
+        "preencher ou interpretar fichas e apresentacoes pessoais",
+        "compreender listas e descricoes simples do ambiente escolar"
       ],
-      "correta": "melhorar a leitura inicial sem depender de tradução automática",
-      "comentario": "Cognatos e falsos cognatos básicos aparece de forma direta em melhorar a leitura inicial sem depender de tradução automática.",
+      "correta": "melhorar a leitura inicial sem depender de traducao automatica",
+      "comentario": "Cognatos e falsos cognatos basicos aparece de forma direta em melhorar a leitura inicial sem depender de traducao automatica.",
       "tempoEstimado": 35,
       "tags": [
         "vocabulario-basico",
@@ -7380,22 +7381,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Cognatos e falsos cognatos básicos",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Cognatos e falsos cognatos basicos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre cognatos e falso cognatos básicos?",
+      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre cognatos e falso cognatos basicos?",
       "opcoes": [
-        "o caso é resolvido com foco em cognatos e falso cognatos básicos.",
-        "o caso é melhor resolvido por saudações e apresentações.",
-        "o caso elimina a necessidade de informações pessoais.",
-        "o caso impede qualquer uso de família e relações."
+        "o caso e resolvido com foco em cognatos e falso cognatos basicos.",
+        "o caso e melhor resolvido por saudacoes e apresentacoes.",
+        "o caso elimina a necessidade de informacoes pessoais.",
+        "o caso impede qualquer uso de familia e relacoes."
       ],
-      "correta": "o caso é resolvido com foco em cognatos e falso cognatos básicos.",
-      "comentario": "A conclusão correta retoma a função central de cognatos e falso cognatos básicos.",
+      "correta": "o caso e resolvido com foco em cognatos e falso cognatos basicos.",
+      "comentario": "A conclusao correta retoma a funcao central de cognatos e falso cognatos basicos.",
       "tempoEstimado": 40,
       "tags": [
         "vocabulario-basico",
@@ -7419,22 +7420,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Cognatos e falsos cognatos básicos",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Cognatos e falsos cognatos basicos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Se a turma fosse revisar cognatos e falso cognatos básicos, qual pergunta de estudo seria a mais adequada?",
+      "enunciado": "Se a turma fosse revisar cognatos e falso cognatos basicos, qual pergunta de estudo seria a mais adequada?",
       "opcoes": [
-        "Como cognatos e falso cognatos básicos aparece em melhorar a leitura inicial sem depender de tradução automática?",
-        "Como saudações e apresentações substitui totalmente melhorar a leitura inicial sem depender de tradução automática?",
-        "Por que informações pessoais torna desnecessário estudar Cognatos e falsos cognatos básicos?",
-        "De que modo família e relações elimina toda leitura de contexto?"
+        "Como cognatos e falso cognatos basicos aparece em melhorar a leitura inicial sem depender de traducao automatica?",
+        "Como saudacoes e apresentacoes substitui totalmente melhorar a leitura inicial sem depender de traducao automatica?",
+        "Por que informacoes pessoais torna desnecessario estudar Cognatos e falsos cognatos basicos?",
+        "De que modo familia e relacoes elimina toda leitura de contexto?"
       ],
-      "correta": "Como cognatos e falso cognatos básicos aparece em melhorar a leitura inicial sem depender de tradução automática?",
-      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de cognatos e falso cognatos básicos.",
+      "correta": "Como cognatos e falso cognatos basicos aparece em melhorar a leitura inicial sem depender de traducao automatica?",
+      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de cognatos e falso cognatos basicos.",
       "tempoEstimado": 40,
       "tags": [
         "vocabulario-basico",
@@ -7458,22 +7459,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Cognatos e falsos cognatos básicos",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Cognatos e falsos cognatos basicos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em cognatos e falso cognatos básicos é pensar que:",
+      "enunciado": "Um erro comum em cognatos e falso cognatos basicos e pensar que:",
       "opcoes": [
-        "qualquer palavra parecida com o português tem necessariamente o mesmo significado",
-        "good morning e good night podem ser usados da mesma forma em qualquer horário",
-        "informações pessoais em inglês aparecem sempre na mesma ordem e com as mesmas palavras",
-        "mother e father significam parentes em geral, sem diferença específica"
+        "qualquer palavra parecida com o portugues tem necessariamente o mesmo significado",
+        "good morning e good night podem ser usados da mesma forma em qualquer horario",
+        "informacoes pessoais em ingles aparecem sempre na mesma ordem e com as mesmas palavras",
+        "mother e father significam parentes em geral, sem diferenca especifica"
       ],
-      "correta": "qualquer palavra parecida com o português tem necessariamente o mesmo significado",
-      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de cognatos e falso cognatos básicos.",
+      "correta": "qualquer palavra parecida com o portugues tem necessariamente o mesmo significado",
+      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de cognatos e falso cognatos basicos.",
       "tempoEstimado": 45,
       "tags": [
         "vocabulario-basico",
@@ -7497,22 +7498,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Cognatos e falsos cognatos básicos",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Cognatos e falsos cognatos basicos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"parents significa parentes porque as duas palavras são parecidas\". A avaliação mais adequada é:",
+      "enunciado": "Um estudante afirma: \"parents significa parentes porque as duas palavras sao parecidas\". A avaliacao mais adequada e:",
       "opcoes": [
-        "A afirmação está incorreta, porque o reconhecimento de palavras transparentes e de palavras enganosas no vocabulário inicial do inglês.",
-        "A afirmação está correta, pois resume integralmente cognatos e falso cognatos básicos.",
-        "A afirmação está correta, porque basta decorar a tradução do exemplo.",
-        "A afirmação está incorreta apenas por não citar uma regra gramatical."
+        "A afirmacao esta incorreta, porque o reconhecimento de palavras transparentes e de palavras enganosas no vocabulario inicial do ingles.",
+        "A afirmacao esta correta, pois resume integralmente cognatos e falso cognatos basicos.",
+        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
+        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
       ],
-      "correta": "A afirmação está incorreta, porque o reconhecimento de palavras transparentes e de palavras enganosas no vocabulário inicial do inglês.",
-      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre cognatos e falso cognatos básicos.",
+      "correta": "A afirmacao esta incorreta, porque o reconhecimento de palavras transparentes e de palavras enganosas no vocabulario inicial do ingles.",
+      "comentario": "A fala do estudante apresenta um equivoco conceitual sobre cognatos e falso cognatos basicos.",
       "tempoEstimado": 45,
       "tags": [
         "vocabulario-basico",
@@ -7536,22 +7537,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Cognatos e falsos cognatos básicos",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Cognatos e falsos cognatos basicos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se cognatos e falso cognatos básicos fosse ignorado(a) em melhorar a leitura inicial sem depender de tradução automática, o resultado mais provável seria:",
+      "enunciado": "Se cognatos e falso cognatos basicos fosse ignorado(a) em melhorar a leitura inicial sem depender de traducao automatica, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretação ficaria incompleta e aumentaria a chance de erro em melhorar a leitura inicial sem depender de tradução automática.",
-        "a questão seria resolvida automaticamente por saudações e apresentações.",
-        "nenhuma interpretação seria alterada, porque Cognatos e falsos cognatos básicos não interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
+        "a interpretacao ficaria incompleta e aumentaria a chance de erro em melhorar a leitura inicial sem depender de traducao automatica.",
+        "a questao seria resolvida automaticamente por saudacoes e apresentacoes.",
+        "nenhuma interpretacao seria alterada, porque Cognatos e falsos cognatos basicos nao interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
       ],
-      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em melhorar a leitura inicial sem depender de tradução automática.",
-      "comentario": "Ignorar cognatos e falso cognatos básicos compromete a resolução correta da atividade.",
+      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em melhorar a leitura inicial sem depender de traducao automatica.",
+      "comentario": "Ignorar cognatos e falso cognatos basicos compromete a resolucao correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "vocabulario-basico",
@@ -7575,14 +7576,14 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Cognatos e falsos cognatos básicos",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Cognatos e falsos cognatos basicos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou ação ilustra melhor Cognatos e falsos cognatos básicos?",
+      "enunciado": "Qual trecho ou acao ilustra melhor Cognatos e falsos cognatos basicos?",
       "opcoes": [
         "Animal is a cognate, but parents is a false friend.",
         "Good morning! My name is Anna.",
@@ -7590,7 +7591,7 @@ export const vocabularioBasico = {
         "My cousin lives with my grandparents."
       ],
       "correta": "Animal is a cognate, but parents is a false friend.",
-      "comentario": "O item correto é o que melhor exemplifica cognatos e falso cognatos básicos.",
+      "comentario": "O item correto e o que melhor exemplifica cognatos e falso cognatos basicos.",
       "tempoEstimado": 50,
       "tags": [
         "vocabulario-basico",
@@ -7614,22 +7615,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Cognatos e falsos cognatos básicos",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Cognatos e falsos cognatos basicos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao encontrar o exemplo \"Animal is a cognate, but parents is a false friend.\", a leitura mais adequada é:",
+      "enunciado": "Ao encontrar o exemplo \"Animal is a cognate, but parents is a false friend.\", a leitura mais adequada e:",
       "opcoes": [
         "algumas palavras ajudam a leitura, enquanto outras podem enganar",
-        "a frase apresenta uma saudação e uma apresentação simples",
+        "a frase apresenta uma saudacao e uma apresentacao simples",
         "a frase apresenta idade e origem de forma direta",
-        "a frase indica um vínculo familiar específico"
+        "a frase indica um vinculo familiar especifico"
       ],
       "correta": "algumas palavras ajudam a leitura, enquanto outras podem enganar",
-      "comentario": "A leitura correta do exemplo revela o papel de cognatos e falso cognatos básicos.",
+      "comentario": "A leitura correta do exemplo revela o papel de cognatos e falso cognatos basicos.",
       "tempoEstimado": 55,
       "tags": [
         "vocabulario-basico",
@@ -7653,22 +7654,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Cognatos e falsos cognatos básicos",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Cognatos e falsos cognatos basicos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estratégia ajuda mais a estudar cognatos e falso cognatos básicos?",
+      "enunciado": "Qual estrategia ajuda mais a estudar cognatos e falso cognatos basicos?",
       "opcoes": [
-        "confirmar pelo contexto se a semelhança com o português é realmente válida",
-        "observar o momento da interação e a intenção de iniciar o contato",
+        "confirmar pelo contexto se a semelhanca com o portugues e realmente valida",
+        "observar o momento da interacao e a intencao de iniciar o contato",
         "procurar palavras ligadas a identidade, idade e origem",
         "relacionar cada palavra ao grau de parentesco indicado no contexto"
       ],
-      "correta": "confirmar pelo contexto se a semelhança com o português é realmente válida",
-      "comentario": "A estratégia correta fortalece o domínio de cognatos e falso cognatos básicos.",
+      "correta": "confirmar pelo contexto se a semelhanca com o portugues e realmente valida",
+      "comentario": "A estrategia correta fortalece o dominio de cognatos e falso cognatos basicos.",
       "tempoEstimado": 55,
       "tags": [
         "vocabulario-basico",
@@ -7692,22 +7693,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Cognatos e falsos cognatos básicos",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Cognatos e falsos cognatos basicos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Cognatos e falsos cognatos básicos é mais cobrado quando:",
+      "enunciado": "Em uma prova, Cognatos e falsos cognatos basicos e mais cobrado quando:",
       "opcoes": [
         "o item pede diferenciar cognato verdadeiro de falso cognato",
-        "a questão pede identificar ou completar uma saudação adequada ao contexto",
-        "o item pede localizar ou relacionar dados pessoais básicos",
-        "a questão cobra identificação de vocabulário de família"
+        "a questao pede identificar ou completar uma saudacao adequada ao contexto",
+        "o item pede localizar ou relacionar dados pessoais basicos",
+        "a questao cobra identificacao de vocabulario de familia"
       ],
       "correta": "o item pede diferenciar cognato verdadeiro de falso cognato",
-      "comentario": "Esse é o tipo de demanda em que cognatos e falso cognatos básicos aparece com mais frequência.",
+      "comentario": "Esse e o tipo de demanda em que cognatos e falso cognatos basicos aparece com mais frequencia.",
       "tempoEstimado": 60,
       "tags": [
         "vocabulario-basico",
@@ -7731,22 +7732,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Cognatos e falsos cognatos básicos",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Cognatos e falsos cognatos basicos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual resumo sintetiza melhor a ideia de Cognatos e falsos cognatos básicos?",
+      "enunciado": "Qual resumo sintetiza melhor a ideia de Cognatos e falsos cognatos basicos?",
       "opcoes": [
-        "Em síntese, o reconhecimento de palavras transparentes e de palavras enganosas no vocabulário inicial do inglês.",
-        "Em síntese, o vocabulário usado para cumprimentar, apresentar-se e iniciar interações simples.",
-        "Em síntese, o vocabulário relacionado a nome, idade, nacionalidade, endereço e dados básicos.",
-        "Em síntese, o conjunto de palavras usado para nomear membros da família e vínculos simples."
+        "Em sintese, o reconhecimento de palavras transparentes e de palavras enganosas no vocabulario inicial do ingles.",
+        "Em sintese, o vocabulario usado para cumprimentar, apresentar-se e iniciar interacoes simples.",
+        "Em sintese, o vocabulario relacionado a nome, idade, nacionalidade, endereco e dados basicos.",
+        "Em sintese, o conjunto de palavras usado para nomear membros da familia e vinculos simples."
       ],
-      "correta": "Em síntese, o reconhecimento de palavras transparentes e de palavras enganosas no vocabulário inicial do inglês.",
-      "comentario": "O resumo correto recupera o núcleo de cognatos e falso cognatos básicos.",
+      "correta": "Em sintese, o reconhecimento de palavras transparentes e de palavras enganosas no vocabulario inicial do ingles.",
+      "comentario": "O resumo correto recupera o nucleo de cognatos e falso cognatos basicos.",
       "tempoEstimado": 60,
       "tags": [
         "vocabulario-basico",
@@ -7770,22 +7771,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Cognatos e falsos cognatos básicos",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Cognatos e falsos cognatos basicos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associação entre exemplo e interpretação está correta em Cognatos e falsos cognatos básicos?",
+      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Cognatos e falsos cognatos basicos?",
       "opcoes": [
         "Animal is a cognate, but parents is a false friend. -> algumas palavras ajudam a leitura, enquanto outras podem enganar",
         "Good morning! My name is Anna. -> algumas palavras ajudam a leitura, enquanto outras podem enganar",
-        "I am thirteen years old and I am from Brazil. -> a frase indica um vínculo familiar específico",
-        "My cousin lives with my grandparents. -> a frase apresenta uma saudação e uma apresentação simples"
+        "I am thirteen years old and I am from Brazil. -> a frase indica um vinculo familiar especifico",
+        "My cousin lives with my grandparents. -> a frase apresenta uma saudacao e uma apresentacao simples"
       ],
       "correta": "Animal is a cognate, but parents is a false friend. -> algumas palavras ajudam a leitura, enquanto outras podem enganar",
-      "comentario": "A associação correta mantém coerência entre exemplo e interpretação em cognatos e falso cognatos básicos.",
+      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em cognatos e falso cognatos basicos.",
       "tempoEstimado": 65,
       "tags": [
         "vocabulario-basico",
@@ -7809,22 +7810,22 @@ export const vocabularioBasico = {
       "serie": [
         1
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Básico",
-      "subtopico": "Cognatos e falsos cognatos básicos",
+      "materia": "Ingles",
+      "topico": "Vocabulario Basico",
+      "subtopico": "Cognatos e falsos cognatos basicos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao resolver uma atividade sobre cognatos e falso cognatos básicos, o estudante deve principalmente:",
+      "enunciado": "Ao resolver uma atividade sobre cognatos e falso cognatos basicos, o estudante deve principalmente:",
       "opcoes": [
-        "usar semelhanças úteis e evitar armadilhas de interpretação",
-        "confirmar pelo contexto se a semelhança com o português é realmente válida",
-        "melhorar a leitura inicial sem depender de tradução automática",
+        "usar semelhancas uteis e evitar armadilhas de interpretacao",
+        "confirmar pelo contexto se a semelhanca com o portugues e realmente valida",
+        "melhorar a leitura inicial sem depender de traducao automatica",
         "o item pede diferenciar cognato verdadeiro de falso cognato"
       ],
-      "correta": "usar semelhanças úteis e evitar armadilhas de interpretação",
-      "comentario": "O objetivo central de cognatos e falso cognatos básicos é usar semelhanças úteis e evitar armadilhas de interpretação.",
+      "correta": "usar semelhancas uteis e evitar armadilhas de interpretacao",
+      "comentario": "O objetivo central de cognatos e falso cognatos basicos e usar semelhancas uteis e evitar armadilhas de interpretacao.",
       "tempoEstimado": 70,
       "tags": [
         "vocabulario-basico",

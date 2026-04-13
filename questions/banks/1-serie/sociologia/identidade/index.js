@@ -8,8 +8,9 @@ export const identidade = {
   "metadados": {
     "disciplinaId": "sociologia",
     "base": "ESCOLAR",
-    "eixo": "Identidade e diferença",
-    "frente": "Formação social do sujeito e pertencimento",
+    "seloEditorial": "VERIFICADA",
+    "eixo": "Identidade e diferenca",
+    "frente": "Formacao social do sujeito e pertencimento",
     "searchAliases": [
       "identidade",
       "pertencimento",
@@ -17,7 +18,7 @@ export const identidade = {
       "estereotipos",
       "preconceito",
       "juventude",
-      "gênero",
+      "genero",
       "identidade racial"
     ],
     "subtopicosBase": [
@@ -25,23 +26,23 @@ export const identidade = {
       "Identidade individual",
       "Identidade coletiva",
       "Pertencimento social",
-      "Diferença e diversidade",
-      "Estereótipos",
+      "Diferenca e diversidade",
+      "Estereotipos",
       "Preconceito",
-      "Juventude e construção de si",
-      "Identidade de gênero",
-      "Identidade étnico-racial e digital"
+      "Juventude e construcao de si",
+      "Identidade de genero",
+      "Identidade etnico-racial e digital"
     ],
     "habilidadesBase": [
-      "identificar a identidade como construção social",
+      "identificar a identidade como construcao social",
       "diferenciar identidade individual e coletiva",
       "relacionar pertencimento e formacao de grupos",
-      "reconhecer estereotipos e preconceitos em situações sociais",
-      "interpretar conflitos e afirmações identitárias em contextos escolares e cotidianos",
-      "analisar diversidade e representação social"
+      "reconhecer estereotipos e preconceitos em situacoes sociais",
+      "interpretar conflitos e afirmacoes identitarias em contextos escolares e cotidianos",
+      "analisar diversidade e representacao social"
     ],
     "auditado": true,
-    "auditadoEm": "2026-04-10",
+    "auditadoEm": "2026-04-13",
     "auditoriaTipo": "varredura-mais-profunda"
   },
   "questoes": [
@@ -59,13 +60,13 @@ export const identidade = {
       "tipo": "multipla_escolha",
       "enunciado": "Em Sociologia, conceito de identidade pode ser definido(a) como:",
       "opcoes": [
-        "a construção social pela qual indivíduos e grupos elaboram sentidos sobre quem são e como se reconhecem",
-        "o processo pelo qual jovens elaboram identidades, projetos e autoimagens em interação com grupos, instituições e referências culturais",
-        "a forma como uma pessoa se reconhece e se posiciona em relação ao gênero, em interação com normas e expectativas sociais",
-        "as formas de construção de si ligadas ao pertencimento étnico-racial e as representações produzidas e disputadas também em ambientes digitais"
+        "a construcao social pela qual individuos e grupos elaboram sentidos sobre quem sao e como se reconhecem",
+        "o processo pelo qual jovens elaboram identidades, projetos e autoimagens em interacao com grupos, instituicoes e referencias culturais",
+        "a forma como uma pessoa se reconhece e se posiciona em relacao ao genero, em interacao com normas e expectativas sociais",
+        "as formas de construcao de si ligadas ao pertencimento etnico-racial e as representacoes produzidas e disputadas tambem em ambientes digitais"
       ],
-      "correta": "a construção social pela qual indivíduos e grupos elaboram sentidos sobre quem são e como se reconhecem",
-      "comentario": "Conceito de identidade refere-se a construção social pela qual indivíduos e grupos elaboram sentidos sobre quem são e como se reconhecem.",
+      "correta": "a construcao social pela qual individuos e grupos elaboram sentidos sobre quem sao e como se reconhecem",
+      "comentario": "Conceito de identidade refere-se a construcao social pela qual individuos e grupos elaboram sentidos sobre quem sao e como se reconhecem.",
       "tempoEstimado": 20,
       "tags": [
         "identidade",
@@ -96,15 +97,15 @@ export const identidade = {
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: uma pessoa se define a partir de suas experiências, referências culturais e pertencimentos sociais Esse caso exemplifica melhor qual subtopico?",
+      "enunciado": "Observe a situacao: uma pessoa se define a partir de suas experiencias, referencias culturais e pertencimentos sociais Esse caso exemplifica melhor qual subtopico?",
       "opcoes": [
         "Conceito de identidade",
-        "Juventude e construção de si",
-        "Identidade de gênero",
-        "Identidade étnico-racial e digital"
+        "Juventude e construcao de si",
+        "Identidade de genero",
+        "Identidade etnico-racial e digital"
       ],
       "correta": "Conceito de identidade",
-      "comentario": "A situação apresentada é um exemplo de conceito de identidade.",
+      "comentario": "A situacao apresentada e um exemplo de conceito de identidade.",
       "tempoEstimado": 25,
       "tags": [
         "identidade",
@@ -135,15 +136,15 @@ export const identidade = {
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmação descreve corretamente conceito de identidade?",
+      "enunciado": "Qual afirmacao descreve corretamente conceito de identidade?",
       "opcoes": [
-        "A construção social pela qual indivíduos e grupos elaboram sentidos sobre quem são e como se reconhecem.",
-        "Uma característica biológica imutavel que explica completamente o sujeito.",
-        "Identidade individual significa a dimensão da identidade ligada a trajetória singular de cada pessoa, articulando experiência propria, memoria e autoimagem.",
-        "Identidade trata apenas de características biológicas fixas."
+        "A construcao social pela qual individuos e grupos elaboram sentidos sobre quem sao e como se reconhecem.",
+        "Uma caracteristica biologica imutavel que explica completamente o sujeito.",
+        "Identidade individual significa a dimensao da identidade ligada a trajetoria singular de cada pessoa, articulando experiencia propria, memoria e autoimagem.",
+        "Identidade trata apenas de caracteristicas biologicas fixas."
       ],
-      "correta": "A construção social pela qual indivíduos e grupos elaboram sentidos sobre quem são e como se reconhecem.",
-      "comentario": "A afirmação correta retoma o sentido central de conceito de identidade.",
+      "correta": "A construcao social pela qual individuos e grupos elaboram sentidos sobre quem sao e como se reconhecem.",
+      "comentario": "A afirmacao correta retoma o sentido central de conceito de identidade.",
       "tempoEstimado": 30,
       "tags": [
         "identidade",
@@ -177,12 +178,12 @@ export const identidade = {
       "enunciado": "Assinale a alternativa em que o exemplo NAO corresponde a conceito de identidade.",
       "opcoes": [
         "a ideia de que a identidade nasce pronta e nunca se relaciona com a vida em sociedade",
-        "uma pessoa se define a partir de suas experiências, referências culturais e pertencimentos sociais",
-        "estudantes constroem modos de se apresentar relacionando história pessoal, grupo e contexto social",
-        "um jovem reelabora sua forma de se identificar ao entrar em novos grupos e espaços sociais"
+        "uma pessoa se define a partir de suas experiencias, referencias culturais e pertencimentos sociais",
+        "estudantes constroem modos de se apresentar relacionando historia pessoal, grupo e contexto social",
+        "um jovem reelabora sua forma de se identificar ao entrar em novos grupos e espacos sociais"
       ],
       "correta": "a ideia de que a identidade nasce pronta e nunca se relaciona com a vida em sociedade",
-      "comentario": "a ideia de que a identidade nasce pronta e nunca se relaciona com a vida em sociedade não expressa conceito de identidade, enquanto as demais alternativas se relacionam com esse subtopico.",
+      "comentario": "a ideia de que a identidade nasce pronta e nunca se relaciona com a vida em sociedade nao expressa conceito de identidade, enquanto as demais alternativas se relacionam com esse subtopico.",
       "tempoEstimado": 30,
       "tags": [
         "identidade",
@@ -216,12 +217,12 @@ export const identidade = {
       "enunciado": "Quando se estuda conceito de identidade, o foco principal esta em:",
       "opcoes": [
         "os processos pelos quais sujeitos e grupos constroem reconhecimento sobre si",
-        "a formacao identitária dos jovens em meio a relações e expectativas sociais",
-        "o reconhecimento de si em relação ao gênero e as normas sociais que o atravessam",
-        "os processos de pertencimento, representação e reconhecimento ligados a dimensoes étnico-raciais e digitais"
+        "a formacao identitaria dos jovens em meio a relacoes e expectativas sociais",
+        "o reconhecimento de si em relacao ao genero e as normas sociais que o atravessam",
+        "os processos de pertencimento, representacao e reconhecimento ligados a dimensoes etnico-raciais e digitais"
       ],
       "correta": "os processos pelos quais sujeitos e grupos constroem reconhecimento sobre si",
-      "comentario": "Conceito de identidade volta a atenção para os processos pelos quais sujeitos e grupos constroem reconhecimento sobre si.",
+      "comentario": "Conceito de identidade volta a atencao para os processos pelos quais sujeitos e grupos constroem reconhecimento sobre si.",
       "tempoEstimado": 35,
       "tags": [
         "identidade",
@@ -252,15 +253,15 @@ export const identidade = {
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferença entre conceito de identidade e identidade individual e que:",
+      "enunciado": "A principal diferenca entre conceito de identidade e identidade individual e que:",
       "opcoes": [
-        "conceito de identidade apresenta a ideia geral, enquanto identidade individual destaca a experiência singular de cada sujeito",
-        "Conceito de identidade e Identidade individual são exatamente o mesmo fenomeno social.",
-        "Identidade individual depende apenas da biologia, enquanto Conceito de identidade depende só da economia.",
-        "Conceito de identidade elimina a necessidade de observar contextos e relações sociais."
+        "conceito de identidade apresenta a ideia geral, enquanto identidade individual destaca a experiencia singular de cada sujeito",
+        "Conceito de identidade e Identidade individual sao exatamente o mesmo fenomeno social.",
+        "Identidade individual depende apenas da biologia, enquanto Conceito de identidade depende so da economia.",
+        "Conceito de identidade elimina a necessidade de observar contextos e relacoes sociais."
       ],
-      "correta": "conceito de identidade apresenta a ideia geral, enquanto identidade individual destaca a experiência singular de cada sujeito",
-      "comentario": "A diferença correta ajuda a separar dois conceitos próximos sem misturar seus significados.",
+      "correta": "conceito de identidade apresenta a ideia geral, enquanto identidade individual destaca a experiencia singular de cada sujeito",
+      "comentario": "A diferenca correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
       "tempoEstimado": 35,
       "tags": [
         "identidade",
@@ -291,15 +292,15 @@ export const identidade = {
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: estudantes constroem modos de se apresentar relacionando história pessoal, grupo e contexto social A leitura sociológica mais adequada aponta para:",
+      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: estudantes constroem modos de se apresentar relacionando historia pessoal, grupo e contexto social A leitura sociologica mais adequada aponta para:",
       "opcoes": [
-        "identidade envolve trajetórias, interações sociais e referências culturais compartilhadas",
-        "Conceito de identidade mostra que a vida social não interfere nas formas de reconhecimento.",
+        "identidade envolve trajetorias, interacoes sociais e referencias culturais compartilhadas",
+        "Conceito de identidade mostra que a vida social nao interfere nas formas de reconhecimento.",
         "Conceito de identidade prova que todos os grupos agem da mesma forma em qualquer contexto.",
-        "Conceito de identidade significa ausencia completa de conflitos e diferenças."
+        "Conceito de identidade significa ausencia completa de conflitos e diferencas."
       ],
-      "correta": "identidade envolve trajetórias, interações sociais e referências culturais compartilhadas",
-      "comentario": "Conceito de identidade permite interpretar o caso a partir de relações, reconhecimento e pertencimento.",
+      "correta": "identidade envolve trajetorias, interacoes sociais e referencias culturais compartilhadas",
+      "comentario": "Conceito de identidade permite interpretar o caso a partir de relacoes, reconhecimento e pertencimento.",
       "tempoEstimado": 40,
       "tags": [
         "identidade",
@@ -330,15 +331,15 @@ export const identidade = {
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação abaixo evidencia conceito de identidade de maneira mais clara?",
+      "enunciado": "Qual situacao abaixo evidencia conceito de identidade de maneira mais clara?",
       "opcoes": [
-        "um jovem reelabora sua forma de se identificar ao entrar em novos grupos e espaços sociais",
-        "trajetórias juvenis mostram negociacoes entre expectativas sociais e afirmação de si",
-        "o reconhecimento da identidade de gênero impacta acesso a respeito, pertencimento e direitos",
-        "a identidade ganha visibilidade quando memorias, pertencimentos e representações circulam no espaço fisico e online"
+        "um jovem reelabora sua forma de se identificar ao entrar em novos grupos e espacos sociais",
+        "trajetorias juvenis mostram negociacoes entre expectativas sociais e afirmacao de si",
+        "o reconhecimento da identidade de genero impacta acesso a respeito, pertencimento e direitos",
+        "a identidade ganha visibilidade quando memorias, pertencimentos e representacoes circulam no espaco fisico e online"
       ],
-      "correta": "um jovem reelabora sua forma de se identificar ao entrar em novos grupos e espaços sociais",
-      "comentario": "A alternativa correta traduz conceito de identidade em uma situação concreta de vida social.",
+      "correta": "um jovem reelabora sua forma de se identificar ao entrar em novos grupos e espacos sociais",
+      "comentario": "A alternativa correta traduz conceito de identidade em uma situacao concreta de vida social.",
       "tempoEstimado": 40,
       "tags": [
         "identidade",
@@ -369,15 +370,15 @@ export const identidade = {
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"uma pessoa se define a partir de suas experiências, referências culturais e pertencimentos sociais\", qual conclusão e mais adequada?",
+      "enunciado": "Ao analisar o caso \"uma pessoa se define a partir de suas experiencias, referencias culturais e pertencimentos sociais\", qual conclusao e mais adequada?",
       "opcoes": [
-        "identidade não e um dado natural fixo, mas uma construção social e historica",
+        "identidade nao e um dado natural fixo, mas uma construcao social e historica",
         "Conceito de identidade indica que valores sociais nunca mudam.",
-        "Conceito de identidade só pode ser explicado por fatores biológicos.",
-        "Conceito de identidade dispensa comparação entre grupos e contextos."
+        "Conceito de identidade so pode ser explicado por fatores biologicos.",
+        "Conceito de identidade dispensa comparacao entre grupos e contextos."
       ],
-      "correta": "identidade não e um dado natural fixo, mas uma construção social e historica",
-      "comentario": "A conclusão correta mantém o foco no sentido sociológico do caso apresentado.",
+      "correta": "identidade nao e um dado natural fixo, mas uma construcao social e historica",
+      "comentario": "A conclusao correta mantem o foco no sentido sociologico do caso apresentado.",
       "tempoEstimado": 45,
       "tags": [
         "identidade",
@@ -410,12 +411,12 @@ export const identidade = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual pergunta de pesquisa se relaciona melhor com conceito de identidade?",
       "opcoes": [
-        "como pessoas e grupos constroem sentidos sobre quem são?",
-        "como o reconhecimento de um grupo influencia a experiência de pertencer?",
-        "como instituições podem lidar com a pluralidade de identidades e experiências?",
-        "de que modo imagens simplificadas sobre grupos influenciam relações sociais?"
+        "como pessoas e grupos constroem sentidos sobre quem sao?",
+        "como o reconhecimento de um grupo influencia a experiencia de pertencer?",
+        "como instituicoes podem lidar com a pluralidade de identidades e experiencias?",
+        "de que modo imagens simplificadas sobre grupos influenciam relacoes sociais?"
       ],
-      "correta": "como pessoas e grupos constroem sentidos sobre quem são?",
+      "correta": "como pessoas e grupos constroem sentidos sobre quem sao?",
       "comentario": "A pergunta correta ajuda a investigar conceito de identidade de forma coerente com o subtopico.",
       "tempoEstimado": 45,
       "tags": [
@@ -447,15 +448,15 @@ export const identidade = {
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a afirmação que revela compreensão inadequada de conceito de identidade.",
+      "enunciado": "Assinale a afirmacao que revela compreensao inadequada de conceito de identidade.",
       "opcoes": [
-        "Uma característica biológica imutavel que explica completamente o sujeito.",
-        "Conceito de identidade pode ser observado em contextos de reconhecimento e convivência social.",
-        "Conceito de identidade ajuda a analisar pertencimentos, diferenças e trajetórias.",
-        "Conceito de identidade depende da interação entre indivíduos, grupos e instituições."
+        "Uma caracteristica biologica imutavel que explica completamente o sujeito.",
+        "Conceito de identidade pode ser observado em contextos de reconhecimento e convivencia social.",
+        "Conceito de identidade ajuda a analisar pertencimentos, diferencas e trajetorias.",
+        "Conceito de identidade depende da interacao entre individuos, grupos e instituicoes."
       ],
-      "correta": "Uma característica biológica imutavel que explica completamente o sujeito.",
-      "comentario": "A alternativa incorreta expressa uma confusão comum sobre conceito de identidade.",
+      "correta": "Uma caracteristica biologica imutavel que explica completamente o sujeito.",
+      "comentario": "A alternativa incorreta expressa uma confusao comum sobre conceito de identidade.",
       "tempoEstimado": 45,
       "tags": [
         "identidade",
@@ -486,15 +487,15 @@ export const identidade = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre identidade, um estudante afirmou: \"identidade se forma nas relações entre experiência pessoal e vida social\". Qual avaliacao e mais consistente?",
+      "enunciado": "Em um debate sobre identidade, um estudante afirmou: \"identidade se forma nas relacoes entre experiencia pessoal e vida social\". Qual avaliacao e mais consistente?",
       "opcoes": [
-        "a afirmação esta correta, porque identidade articula dimensão individual e social",
-        "Conceito de identidade não pode ser observado em situações do cotidiano.",
+        "a afirmacao esta correta, porque identidade articula dimensao individual e social",
+        "Conceito de identidade nao pode ser observado em situacoes do cotidiano.",
         "Conceito de identidade depende apenas da vontade individual, sem contexto social.",
-        "Conceito de identidade torna desnecessario comparar grupos e referências coletivas."
+        "Conceito de identidade torna desnecessario comparar grupos e referencias coletivas."
       ],
-      "correta": "a afirmação esta correta, porque identidade articula dimensão individual e social",
-      "comentario": "A avaliação correta recupera o núcleo teórico de conceito de identidade.",
+      "correta": "a afirmacao esta correta, porque identidade articula dimensao individual e social",
+      "comentario": "A avaliacao correta recupera o nucleo teorico de conceito de identidade.",
       "tempoEstimado": 50,
       "tags": [
         "identidade",
@@ -525,15 +526,15 @@ export const identidade = {
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando um sujeito não encontra referências, reconhecimento nem espaços de pertencimento, a melhor interpretação sociológica e que:",
+      "enunciado": "Quando um sujeito nao encontra referencias, reconhecimento nem espacos de pertencimento, a melhor interpretacao sociologica e que:",
       "opcoes": [
-        "o processo de construção identitária tende a ficar mais frágil e conflituoso",
-        "Conceito de identidade desaparece porque a sociedade não produz reconhecimento nem expectativas.",
+        "o processo de construcao identitaria tende a ficar mais fragil e conflituoso",
+        "Conceito de identidade desaparece porque a sociedade nao produz reconhecimento nem expectativas.",
         "Conceito de identidade deixa de existir sempre que surgem conflitos entre grupos.",
-        "Conceito de identidade só importa em sociedades antigas, não no presente."
+        "Conceito de identidade so importa em sociedades antigas, nao no presente."
       ],
-      "correta": "o processo de construção identitária tende a ficar mais frágil e conflituoso",
-      "comentario": "A conclusão correta mostra como a ausencia ou a fragilidade do fenomeno afeta a vida social.",
+      "correta": "o processo de construcao identitaria tende a ficar mais fragil e conflituoso",
+      "comentario": "A conclusao correta mostra como a ausencia ou a fragilidade do fenomeno afeta a vida social.",
       "tempoEstimado": 50,
       "tags": [
         "identidade",
@@ -564,14 +565,14 @@ export const identidade = {
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente conceito de identidade a uma situação de comunidade escolar?",
+      "enunciado": "Qual alternativa aplica corretamente conceito de identidade a uma situacao de comunidade escolar?",
       "opcoes": [
-        "a escola promove atividades em que estudantes refletem sobre suas trajetórias e referências sociais",
-        "a turma debate práticas que ampliam pertencimento entre estudantes recem-chegados",
-        "a escola adota estrategias para acolher linguagens, referências e experiências diversas entre os estudantes",
+        "a escola promove atividades em que estudantes refletem sobre suas trajetorias e referencias sociais",
+        "a turma debate praticas que ampliam pertencimento entre estudantes recem-chegados",
+        "a escola adota estrategias para acolher linguagens, referencias e experiencias diversas entre os estudantes",
         "a escola discute como piadas e comentarios generalizantes reproduzem estereotipos"
       ],
-      "correta": "a escola promove atividades em que estudantes refletem sobre suas trajetórias e referências sociais",
+      "correta": "a escola promove atividades em que estudantes refletem sobre suas trajetorias e referencias sociais",
       "comentario": "A alternativa correta aproxima conceito de identidade de um contexto escolar concreto.",
       "tempoEstimado": 55,
       "tags": [
@@ -605,13 +606,13 @@ export const identidade = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual sintese final representa melhor conceito de identidade?",
       "opcoes": [
-        "identidade e a construção social de sentidos sobre si e sobre o pertencimento a grupos",
-        "Conceito de identidade é um fator biológico fixo, sem relação com aprendizagem e grupos sociais.",
-        "Conceito de identidade explica apenas escolhas privadas e ignora a dimensão coletiva.",
-        "Conceito de identidade impede qualquer mudança historica ou social."
+        "identidade e a construcao social de sentidos sobre si e sobre o pertencimento a grupos",
+        "Conceito de identidade e um fator biologico fixo, sem relacao com aprendizagem e grupos sociais.",
+        "Conceito de identidade explica apenas escolhas privadas e ignora a dimensao coletiva.",
+        "Conceito de identidade impede qualquer mudanca historica ou social."
       ],
-      "correta": "identidade e a construção social de sentidos sobre si e sobre o pertencimento a grupos",
-      "comentario": "A síntese correta preserva a definição, o alcance e o uso analítico de conceito de identidade.",
+      "correta": "identidade e a construcao social de sentidos sobre si e sobre o pertencimento a grupos",
+      "comentario": "A sintese correta preserva a definicao, o alcance e o uso analitico de conceito de identidade.",
       "tempoEstimado": 60,
       "tags": [
         "identidade",
@@ -644,13 +645,13 @@ export const identidade = {
       "tipo": "multipla_escolha",
       "enunciado": "Em Sociologia, identidade individual pode ser definido(a) como:",
       "opcoes": [
-        "a dimensão da identidade ligada a trajetória singular de cada pessoa, articulando experiência propria, memoria e autoimagem",
-        "o reconhecimento compartilhado por um grupo em torno de historias, símbolos, interesses e referências comuns",
-        "o sentimento e a experiência de fazer parte de grupos, redes e espaços sociais reconhecidos como significativos",
-        "a presença de multiplas formas de existir, agir e se identificar na vida social, sem reduzir a sociedade a um único padrao"
+        "a dimensao da identidade ligada a trajetoria singular de cada pessoa, articulando experiencia propria, memoria e autoimagem",
+        "o reconhecimento compartilhado por um grupo em torno de historias, simbolos, interesses e referencias comuns",
+        "o sentimento e a experiencia de fazer parte de grupos, redes e espacos sociais reconhecidos como significativos",
+        "a presenca de multiplas formas de existir, agir e se identificar na vida social, sem reduzir a sociedade a um unico padrao"
       ],
-      "correta": "a dimensão da identidade ligada a trajetória singular de cada pessoa, articulando experiência propria, memoria e autoimagem",
-      "comentario": "Identidade individual refere-se a dimensão da identidade ligada a trajetória singular de cada pessoa, articulando experiência propria, memoria e autoimagem.",
+      "correta": "a dimensao da identidade ligada a trajetoria singular de cada pessoa, articulando experiencia propria, memoria e autoimagem",
+      "comentario": "Identidade individual refere-se a dimensao da identidade ligada a trajetoria singular de cada pessoa, articulando experiencia propria, memoria e autoimagem.",
       "tempoEstimado": 20,
       "tags": [
         "identidade",
@@ -681,15 +682,15 @@ export const identidade = {
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: duas pessoas do mesmo grupo social constroem modos diferentes de se perceber e de agir Esse caso exemplifica melhor qual subtopico?",
+      "enunciado": "Observe a situacao: duas pessoas do mesmo grupo social constroem modos diferentes de se perceber e de agir Esse caso exemplifica melhor qual subtopico?",
       "opcoes": [
         "Identidade individual",
         "Identidade coletiva",
         "Pertencimento social",
-        "Diferença e diversidade"
+        "Diferenca e diversidade"
       ],
       "correta": "Identidade individual",
-      "comentario": "A situação apresentada é um exemplo de identidade individual.",
+      "comentario": "A situacao apresentada e um exemplo de identidade individual.",
       "tempoEstimado": 25,
       "tags": [
         "identidade",
@@ -720,15 +721,15 @@ export const identidade = {
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmação descreve corretamente identidade individual?",
+      "enunciado": "Qual afirmacao descreve corretamente identidade individual?",
       "opcoes": [
-        "A dimensão da identidade ligada a trajetória singular de cada pessoa, articulando experiência propria, memoria e autoimagem.",
+        "A dimensao da identidade ligada a trajetoria singular de cada pessoa, articulando experiencia propria, memoria e autoimagem.",
         "Uma copia exata da identidade do grupo ao qual a pessoa pertence.",
-        "Identidade coletiva significa o reconhecimento compartilhado por um grupo em torno de historias, símbolos, interesses e referências comuns.",
-        "Identidade trata apenas de características biológicas fixas."
+        "Identidade coletiva significa o reconhecimento compartilhado por um grupo em torno de historias, simbolos, interesses e referencias comuns.",
+        "Identidade trata apenas de caracteristicas biologicas fixas."
       ],
-      "correta": "A dimensão da identidade ligada a trajetória singular de cada pessoa, articulando experiência propria, memoria e autoimagem.",
-      "comentario": "A afirmação correta retoma o sentido central de identidade individual.",
+      "correta": "A dimensao da identidade ligada a trajetoria singular de cada pessoa, articulando experiencia propria, memoria e autoimagem.",
+      "comentario": "A afirmacao correta retoma o sentido central de identidade individual.",
       "tempoEstimado": 30,
       "tags": [
         "identidade",
@@ -761,13 +762,13 @@ export const identidade = {
       "tipo": "multipla_escolha",
       "enunciado": "Assinale a alternativa em que o exemplo NAO corresponde a identidade individual.",
       "opcoes": [
-        "a afirmação de que todos os membros de um grupo possuem exatamente a mesma identidade",
+        "a afirmacao de que todos os membros de um grupo possuem exatamente a mesma identidade",
         "duas pessoas do mesmo grupo social constroem modos diferentes de se perceber e de agir",
-        "um estudante combina gostos, história famíliar e experiências pessoais ao falar sobre si",
-        "alguem se reconhece por escolhas, memoria e vivencias que não se repetem exatamente em outros indivíduos"
+        "um estudante combina gostos, historia familiar e experiencias pessoais ao falar sobre si",
+        "alguem se reconhece por escolhas, memoria e vivencias que nao se repetem exatamente em outros individuos"
       ],
-      "correta": "a afirmação de que todos os membros de um grupo possuem exatamente a mesma identidade",
-      "comentario": "a afirmação de que todos os membros de um grupo possuem exatamente a mesma identidade não expressa identidade individual, enquanto as demais alternativas se relacionam com esse subtopico.",
+      "correta": "a afirmacao de que todos os membros de um grupo possuem exatamente a mesma identidade",
+      "comentario": "a afirmacao de que todos os membros de um grupo possuem exatamente a mesma identidade nao expressa identidade individual, enquanto as demais alternativas se relacionam com esse subtopico.",
       "tempoEstimado": 30,
       "tags": [
         "identidade",
@@ -800,13 +801,13 @@ export const identidade = {
       "tipo": "multipla_escolha",
       "enunciado": "Quando se estuda identidade individual, o foco principal esta em:",
       "opcoes": [
-        "a singularidade da experiência do sujeito em relação a sua propria autoimagem",
+        "a singularidade da experiencia do sujeito em relacao a sua propria autoimagem",
         "os elementos comuns que produzem pertencimento e reconhecimento grupal",
-        "o vinculo subjetivo e social que conecta indivíduos a grupos e espaços coletivos",
-        "a pluralidade de sujeitos e referências presentes na vida social"
+        "o vinculo subjetivo e social que conecta individuos a grupos e espacos coletivos",
+        "a pluralidade de sujeitos e referencias presentes na vida social"
       ],
-      "correta": "a singularidade da experiência do sujeito em relação a sua propria autoimagem",
-      "comentario": "Identidade individual volta a atenção para a singularidade da experiência do sujeito em relação a sua propria autoimagem.",
+      "correta": "a singularidade da experiencia do sujeito em relacao a sua propria autoimagem",
+      "comentario": "Identidade individual volta a atencao para a singularidade da experiencia do sujeito em relacao a sua propria autoimagem.",
       "tempoEstimado": 35,
       "tags": [
         "identidade",
@@ -837,15 +838,15 @@ export const identidade = {
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferença entre identidade individual e identidade coletiva e que:",
+      "enunciado": "A principal diferenca entre identidade individual e identidade coletiva e que:",
       "opcoes": [
-        "identidade individual destaca a singularidade do sujeito, enquanto identidade coletiva enfatiza referências compartilhadas por um grupo",
-        "Identidade individual e Identidade coletiva são exatamente o mesmo fenomeno social.",
-        "Identidade coletiva depende apenas da biologia, enquanto Identidade individual depende só da economia.",
-        "Identidade individual elimina a necessidade de observar contextos e relações sociais."
+        "identidade individual destaca a singularidade do sujeito, enquanto identidade coletiva enfatiza referencias compartilhadas por um grupo",
+        "Identidade individual e Identidade coletiva sao exatamente o mesmo fenomeno social.",
+        "Identidade coletiva depende apenas da biologia, enquanto Identidade individual depende so da economia.",
+        "Identidade individual elimina a necessidade de observar contextos e relacoes sociais."
       ],
-      "correta": "identidade individual destaca a singularidade do sujeito, enquanto identidade coletiva enfatiza referências compartilhadas por um grupo",
-      "comentario": "A diferença correta ajuda a separar dois conceitos próximos sem misturar seus significados.",
+      "correta": "identidade individual destaca a singularidade do sujeito, enquanto identidade coletiva enfatiza referencias compartilhadas por um grupo",
+      "comentario": "A diferenca correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
       "tempoEstimado": 35,
       "tags": [
         "identidade",
@@ -876,15 +877,15 @@ export const identidade = {
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: um estudante combina gostos, história famíliar e experiências pessoais ao falar sobre si A leitura sociológica mais adequada aponta para:",
+      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: um estudante combina gostos, historia familiar e experiencias pessoais ao falar sobre si A leitura sociologica mais adequada aponta para:",
       "opcoes": [
-        "identidade individual mostra que pertencimento coletivo não elimina trajetórias pessoais distintas",
-        "Identidade individual mostra que a vida social não interfere nas formas de reconhecimento.",
+        "identidade individual mostra que pertencimento coletivo nao elimina trajetorias pessoais distintas",
+        "Identidade individual mostra que a vida social nao interfere nas formas de reconhecimento.",
         "Identidade individual prova que todos os grupos agem da mesma forma em qualquer contexto.",
-        "Identidade individual significa ausencia completa de conflitos e diferenças."
+        "Identidade individual significa ausencia completa de conflitos e diferencas."
       ],
-      "correta": "identidade individual mostra que pertencimento coletivo não elimina trajetórias pessoais distintas",
-      "comentario": "Identidade individual permite interpretar o caso a partir de relações, reconhecimento e pertencimento.",
+      "correta": "identidade individual mostra que pertencimento coletivo nao elimina trajetorias pessoais distintas",
+      "comentario": "Identidade individual permite interpretar o caso a partir de relacoes, reconhecimento e pertencimento.",
       "tempoEstimado": 40,
       "tags": [
         "identidade",
@@ -915,15 +916,15 @@ export const identidade = {
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação abaixo evidencia identidade individual de maneira mais clara?",
+      "enunciado": "Qual situacao abaixo evidencia identidade individual de maneira mais clara?",
       "opcoes": [
-        "alguem se reconhece por escolhas, memoria e vivencias que não se repetem exatamente em outros indivíduos",
-        "uma comunidade fortalece pertencimento ao valorizar sua história, seus símbolos e suas lutas",
+        "alguem se reconhece por escolhas, memoria e vivencias que nao se repetem exatamente em outros individuos",
+        "uma comunidade fortalece pertencimento ao valorizar sua historia, seus simbolos e suas lutas",
         "participar de um coletivo reforca o sentimento de fazer parte de algo maior que o individuo",
-        "uma instituição reve práticas para acolher estudantes com diferentes trajetórias e identidades"
+        "uma instituicao reve praticas para acolher estudantes com diferentes trajetorias e identidades"
       ],
-      "correta": "alguem se reconhece por escolhas, memoria e vivencias que não se repetem exatamente em outros indivíduos",
-      "comentario": "A alternativa correta traduz identidade individual em uma situação concreta de vida social.",
+      "correta": "alguem se reconhece por escolhas, memoria e vivencias que nao se repetem exatamente em outros individuos",
+      "comentario": "A alternativa correta traduz identidade individual em uma situacao concreta de vida social.",
       "tempoEstimado": 40,
       "tags": [
         "identidade",
@@ -954,15 +955,15 @@ export const identidade = {
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"duas pessoas do mesmo grupo social constroem modos diferentes de se perceber e de agir\", qual conclusão e mais adequada?",
+      "enunciado": "Ao analisar o caso \"duas pessoas do mesmo grupo social constroem modos diferentes de se perceber e de agir\", qual conclusao e mais adequada?",
       "opcoes": [
-        "mesmo em grupos semelhantes, indivíduos constroem autoimagens e trajetórias particulares",
+        "mesmo em grupos semelhantes, individuos constroem autoimagens e trajetorias particulares",
         "Identidade individual indica que valores sociais nunca mudam.",
-        "Identidade individual só pode ser explicado por fatores biológicos.",
-        "Identidade individual dispensa comparação entre grupos e contextos."
+        "Identidade individual so pode ser explicado por fatores biologicos.",
+        "Identidade individual dispensa comparacao entre grupos e contextos."
       ],
-      "correta": "mesmo em grupos semelhantes, indivíduos constroem autoimagens e trajetórias particulares",
-      "comentario": "A conclusão correta mantém o foco no sentido sociológico do caso apresentado.",
+      "correta": "mesmo em grupos semelhantes, individuos constroem autoimagens e trajetorias particulares",
+      "comentario": "A conclusao correta mantem o foco no sentido sociologico do caso apresentado.",
       "tempoEstimado": 45,
       "tags": [
         "identidade",
@@ -995,12 +996,12 @@ export const identidade = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual pergunta de pesquisa se relaciona melhor com identidade individual?",
       "opcoes": [
-        "de que modo uma pessoa organiza memoria e experiência para falar de si?",
-        "de que modo imagens simplificadas sobre grupos influenciam relações sociais?",
-        "como julgamentos prévios negativos afetam a vida de grupos sociais?",
-        "como jovens negociam expectativas sociais e afirmação de si em seus cotidianos?"
+        "de que modo uma pessoa organiza memoria e experiencia para falar de si?",
+        "de que modo imagens simplificadas sobre grupos influenciam relacoes sociais?",
+        "como julgamentos previos negativos afetam a vida de grupos sociais?",
+        "como jovens negociam expectativas sociais e afirmacao de si em seus cotidianos?"
       ],
-      "correta": "de que modo uma pessoa organiza memoria e experiência para falar de si?",
+      "correta": "de que modo uma pessoa organiza memoria e experiencia para falar de si?",
       "comentario": "A pergunta correta ajuda a investigar identidade individual de forma coerente com o subtopico.",
       "tempoEstimado": 45,
       "tags": [
@@ -1032,15 +1033,15 @@ export const identidade = {
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a afirmação que revela compreensão inadequada de identidade individual.",
+      "enunciado": "Assinale a afirmacao que revela compreensao inadequada de identidade individual.",
       "opcoes": [
         "Uma copia exata da identidade do grupo ao qual a pessoa pertence.",
-        "Identidade individual pode ser observado em contextos de reconhecimento e convivência social.",
-        "Identidade individual ajuda a analisar pertencimentos, diferenças e trajetórias.",
-        "Identidade individual depende da interação entre indivíduos, grupos e instituições."
+        "Identidade individual pode ser observado em contextos de reconhecimento e convivencia social.",
+        "Identidade individual ajuda a analisar pertencimentos, diferencas e trajetorias.",
+        "Identidade individual depende da interacao entre individuos, grupos e instituicoes."
       ],
       "correta": "Uma copia exata da identidade do grupo ao qual a pessoa pertence.",
-      "comentario": "A alternativa incorreta expressa uma confusão comum sobre identidade individual.",
+      "comentario": "A alternativa incorreta expressa uma confusao comum sobre identidade individual.",
       "tempoEstimado": 45,
       "tags": [
         "identidade",
@@ -1071,15 +1072,15 @@ export const identidade = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre identidade, um estudante afirmou: \"identidade individual não se separa totalmente da sociedade, mas tampouco se reduz ao grupo\". Qual avaliacao e mais consistente?",
+      "enunciado": "Em um debate sobre identidade, um estudante afirmou: \"identidade individual nao se separa totalmente da sociedade, mas tampouco se reduz ao grupo\". Qual avaliacao e mais consistente?",
       "opcoes": [
-        "a afirmação esta correta, porque a singularidade do sujeito convive com influencias sociais",
-        "Identidade individual não pode ser observado em situações do cotidiano.",
+        "a afirmacao esta correta, porque a singularidade do sujeito convive com influencias sociais",
+        "Identidade individual nao pode ser observado em situacoes do cotidiano.",
         "Identidade individual depende apenas da vontade individual, sem contexto social.",
-        "Identidade individual torna desnecessario comparar grupos e referências coletivas."
+        "Identidade individual torna desnecessario comparar grupos e referencias coletivas."
       ],
-      "correta": "a afirmação esta correta, porque a singularidade do sujeito convive com influencias sociais",
-      "comentario": "A avaliação correta recupera o núcleo teórico de identidade individual.",
+      "correta": "a afirmacao esta correta, porque a singularidade do sujeito convive com influencias sociais",
+      "comentario": "A avaliacao correta recupera o nucleo teorico de identidade individual.",
       "tempoEstimado": 50,
       "tags": [
         "identidade",
@@ -1110,15 +1111,15 @@ export const identidade = {
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando uma análise ignora trajetórias pessoais e trata todos os sujeitos como identicos, a melhor interpretação sociológica e que:",
+      "enunciado": "Quando uma analise ignora trajetorias pessoais e trata todos os sujeitos como identicos, a melhor interpretacao sociologica e que:",
       "opcoes": [
-        "desaparece a dimensão individual da construção identitária",
-        "Identidade individual desaparece porque a sociedade não produz reconhecimento nem expectativas.",
+        "desaparece a dimensao individual da construcao identitaria",
+        "Identidade individual desaparece porque a sociedade nao produz reconhecimento nem expectativas.",
         "Identidade individual deixa de existir sempre que surgem conflitos entre grupos.",
-        "Identidade individual só importa em sociedades antigas, não no presente."
+        "Identidade individual so importa em sociedades antigas, nao no presente."
       ],
-      "correta": "desaparece a dimensão individual da construção identitária",
-      "comentario": "A conclusão correta mostra como a ausencia ou a fragilidade do fenomeno afeta a vida social.",
+      "correta": "desaparece a dimensao individual da construcao identitaria",
+      "comentario": "A conclusao correta mostra como a ausencia ou a fragilidade do fenomeno afeta a vida social.",
       "tempoEstimado": 50,
       "tags": [
         "identidade",
@@ -1149,12 +1150,12 @@ export const identidade = {
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente identidade individual a uma situação de comunidade escolar?",
+      "enunciado": "Qual alternativa aplica corretamente identidade individual a uma situacao de comunidade escolar?",
       "opcoes": [
         "a turma discute como colegas do mesmo bairro podem construir autoimagens diferentes",
         "a escola discute como piadas e comentarios generalizantes reproduzem estereotipos",
-        "a turma analisa por que insultos dirigidos a origem, gênero ou cor expressam preconceito",
-        "a escola discute como diferentes trajetórias juvenis influenciam projetos de vida e autoestima"
+        "a turma analisa por que insultos dirigidos a origem, genero ou cor expressam preconceito",
+        "a escola discute como diferentes trajetorias juvenis influenciam projetos de vida e autoestima"
       ],
       "correta": "a turma discute como colegas do mesmo bairro podem construir autoimagens diferentes",
       "comentario": "A alternativa correta aproxima identidade individual de um contexto escolar concreto.",
@@ -1190,13 +1191,13 @@ export const identidade = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual sintese final representa melhor identidade individual?",
       "opcoes": [
-        "identidade individual e a dimensão singular da construção de si em meio a relações sociais",
-        "Identidade individual é um fator biológico fixo, sem relação com aprendizagem e grupos sociais.",
-        "Identidade individual explica apenas escolhas privadas e ignora a dimensão coletiva.",
-        "Identidade individual impede qualquer mudança historica ou social."
+        "identidade individual e a dimensao singular da construcao de si em meio a relacoes sociais",
+        "Identidade individual e um fator biologico fixo, sem relacao com aprendizagem e grupos sociais.",
+        "Identidade individual explica apenas escolhas privadas e ignora a dimensao coletiva.",
+        "Identidade individual impede qualquer mudanca historica ou social."
       ],
-      "correta": "identidade individual e a dimensão singular da construção de si em meio a relações sociais",
-      "comentario": "A síntese correta preserva a definição, o alcance e o uso analítico de identidade individual.",
+      "correta": "identidade individual e a dimensao singular da construcao de si em meio a relacoes sociais",
+      "comentario": "A sintese correta preserva a definicao, o alcance e o uso analitico de identidade individual.",
       "tempoEstimado": 60,
       "tags": [
         "identidade",
@@ -1229,13 +1230,13 @@ export const identidade = {
       "tipo": "multipla_escolha",
       "enunciado": "Em Sociologia, identidade coletiva pode ser definido(a) como:",
       "opcoes": [
-        "o reconhecimento compartilhado por um grupo em torno de historias, símbolos, interesses e referências comuns",
-        "a forma como uma pessoa se reconhece e se posiciona em relação ao gênero, em interação com normas e expectativas sociais",
-        "as formas de construção de si ligadas ao pertencimento étnico-racial e as representações produzidas e disputadas também em ambientes digitais",
-        "a construção social pela qual indivíduos e grupos elaboram sentidos sobre quem são e como se reconhecem"
+        "o reconhecimento compartilhado por um grupo em torno de historias, simbolos, interesses e referencias comuns",
+        "a forma como uma pessoa se reconhece e se posiciona em relacao ao genero, em interacao com normas e expectativas sociais",
+        "as formas de construcao de si ligadas ao pertencimento etnico-racial e as representacoes produzidas e disputadas tambem em ambientes digitais",
+        "a construcao social pela qual individuos e grupos elaboram sentidos sobre quem sao e como se reconhecem"
       ],
-      "correta": "o reconhecimento compartilhado por um grupo em torno de historias, símbolos, interesses e referências comuns",
-      "comentario": "Identidade coletiva refere-se ao reconhecimento compartilhado por um grupo em torno de historias, símbolos, interesses e referências comuns.",
+      "correta": "o reconhecimento compartilhado por um grupo em torno de historias, simbolos, interesses e referencias comuns",
+      "comentario": "Identidade coletiva refere-se ao reconhecimento compartilhado por um grupo em torno de historias, simbolos, interesses e referencias comuns.",
       "tempoEstimado": 20,
       "tags": [
         "identidade",
@@ -1266,15 +1267,15 @@ export const identidade = {
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: um grupo social se reconhece por memoria, linguagem, símbolos e objetivos compartilhados Esse caso exemplifica melhor qual subtopico?",
+      "enunciado": "Observe a situacao: um grupo social se reconhece por memoria, linguagem, simbolos e objetivos compartilhados Esse caso exemplifica melhor qual subtopico?",
       "opcoes": [
         "Identidade coletiva",
-        "Identidade de gênero",
-        "Identidade étnico-racial e digital",
+        "Identidade de genero",
+        "Identidade etnico-racial e digital",
         "Conceito de identidade"
       ],
       "correta": "Identidade coletiva",
-      "comentario": "A situação apresentada é um exemplo de identidade coletiva.",
+      "comentario": "A situacao apresentada e um exemplo de identidade coletiva.",
       "tempoEstimado": 25,
       "tags": [
         "identidade",
@@ -1305,15 +1306,15 @@ export const identidade = {
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmação descreve corretamente identidade coletiva?",
+      "enunciado": "Qual afirmacao descreve corretamente identidade coletiva?",
       "opcoes": [
-        "O reconhecimento compartilhado por um grupo em torno de historias, símbolos, interesses e referências comuns.",
-        "Uma soma aleatoria de indivíduos sem memoria ou referência compartilhada.",
-        "Pertencimento social significa o sentimento e a experiência de fazer parte de grupos, redes e espaços sociais reconhecidos como significativos.",
-        "Identidade trata apenas de características biológicas fixas."
+        "O reconhecimento compartilhado por um grupo em torno de historias, simbolos, interesses e referencias comuns.",
+        "Uma soma aleatoria de individuos sem memoria ou referencia compartilhada.",
+        "Pertencimento social significa o sentimento e a experiencia de fazer parte de grupos, redes e espacos sociais reconhecidos como significativos.",
+        "Identidade trata apenas de caracteristicas biologicas fixas."
       ],
-      "correta": "O reconhecimento compartilhado por um grupo em torno de historias, símbolos, interesses e referências comuns.",
-      "comentario": "A afirmação correta retoma o sentido central de identidade coletiva.",
+      "correta": "O reconhecimento compartilhado por um grupo em torno de historias, simbolos, interesses e referencias comuns.",
+      "comentario": "A afirmacao correta retoma o sentido central de identidade coletiva.",
       "tempoEstimado": 30,
       "tags": [
         "identidade",
@@ -1346,13 +1347,13 @@ export const identidade = {
       "tipo": "multipla_escolha",
       "enunciado": "Assinale a alternativa em que o exemplo NAO corresponde a identidade coletiva.",
       "opcoes": [
-        "a ideia de identidade restrita apenas a experiências privadas de cada individuo",
-        "um grupo social se reconhece por memoria, linguagem, símbolos e objetivos compartilhados",
+        "a ideia de identidade restrita apenas a experiencias privadas de cada individuo",
+        "um grupo social se reconhece por memoria, linguagem, simbolos e objetivos compartilhados",
         "uma turma cria sinais, narrativas e valores que reforcam o sentimento de ser parte do grupo",
-        "uma comunidade fortalece pertencimento ao valorizar sua história, seus símbolos e suas lutas"
+        "uma comunidade fortalece pertencimento ao valorizar sua historia, seus simbolos e suas lutas"
       ],
-      "correta": "a ideia de identidade restrita apenas a experiências privadas de cada individuo",
-      "comentario": "a ideia de identidade restrita apenas a experiências privadas de cada individuo não expressa identidade coletiva, enquanto as demais alternativas se relacionam com esse subtopico.",
+      "correta": "a ideia de identidade restrita apenas a experiencias privadas de cada individuo",
+      "comentario": "a ideia de identidade restrita apenas a experiencias privadas de cada individuo nao expressa identidade coletiva, enquanto as demais alternativas se relacionam com esse subtopico.",
       "tempoEstimado": 30,
       "tags": [
         "identidade",
@@ -1386,12 +1387,12 @@ export const identidade = {
       "enunciado": "Quando se estuda identidade coletiva, o foco principal esta em:",
       "opcoes": [
         "os elementos comuns que produzem pertencimento e reconhecimento grupal",
-        "o reconhecimento de si em relação ao gênero e as normas sociais que o atravessam",
-        "os processos de pertencimento, representação e reconhecimento ligados a dimensoes étnico-raciais e digitais",
+        "o reconhecimento de si em relacao ao genero e as normas sociais que o atravessam",
+        "os processos de pertencimento, representacao e reconhecimento ligados a dimensoes etnico-raciais e digitais",
         "os processos pelos quais sujeitos e grupos constroem reconhecimento sobre si"
       ],
       "correta": "os elementos comuns que produzem pertencimento e reconhecimento grupal",
-      "comentario": "Identidade coletiva volta a atenção para os elementos comuns que produzem pertencimento e reconhecimento grupal.",
+      "comentario": "Identidade coletiva volta a atencao para os elementos comuns que produzem pertencimento e reconhecimento grupal.",
       "tempoEstimado": 35,
       "tags": [
         "identidade",
@@ -1422,15 +1423,15 @@ export const identidade = {
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferença entre identidade coletiva e pertencimento social e que:",
+      "enunciado": "A principal diferenca entre identidade coletiva e pertencimento social e que:",
       "opcoes": [
-        "identidade coletiva destaca referências compartilhadas do grupo, enquanto pertencimento social enfatiza o vinculo é o reconhecimento de fazer parte dele",
-        "Identidade coletiva e Pertencimento social são exatamente o mesmo fenomeno social.",
-        "Pertencimento social depende apenas da biologia, enquanto Identidade coletiva depende só da economia.",
-        "Identidade coletiva elimina a necessidade de observar contextos e relações sociais."
+        "identidade coletiva destaca referencias compartilhadas do grupo, enquanto pertencimento social enfatiza o vinculo e o reconhecimento de fazer parte dele",
+        "Identidade coletiva e Pertencimento social sao exatamente o mesmo fenomeno social.",
+        "Pertencimento social depende apenas da biologia, enquanto Identidade coletiva depende so da economia.",
+        "Identidade coletiva elimina a necessidade de observar contextos e relacoes sociais."
       ],
-      "correta": "identidade coletiva destaca referências compartilhadas do grupo, enquanto pertencimento social enfatiza o vinculo é o reconhecimento de fazer parte dele",
-      "comentario": "A diferença correta ajuda a separar dois conceitos próximos sem misturar seus significados.",
+      "correta": "identidade coletiva destaca referencias compartilhadas do grupo, enquanto pertencimento social enfatiza o vinculo e o reconhecimento de fazer parte dele",
+      "comentario": "A diferenca correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
       "tempoEstimado": 35,
       "tags": [
         "identidade",
@@ -1461,15 +1462,15 @@ export const identidade = {
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: uma turma cria sinais, narrativas e valores que reforcam o sentimento de ser parte do grupo A leitura sociológica mais adequada aponta para:",
+      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: uma turma cria sinais, narrativas e valores que reforcam o sentimento de ser parte do grupo A leitura sociologica mais adequada aponta para:",
       "opcoes": [
-        "identidade coletiva ajuda a entender solidariedades, mobilizações e fronteiras simbólicas entre grupos",
-        "Identidade coletiva mostra que a vida social não interfere nas formas de reconhecimento.",
+        "identidade coletiva ajuda a entender solidariedades, mobilizacoes e fronteiras simbolicas entre grupos",
+        "Identidade coletiva mostra que a vida social nao interfere nas formas de reconhecimento.",
         "Identidade coletiva prova que todos os grupos agem da mesma forma em qualquer contexto.",
-        "Identidade coletiva significa ausencia completa de conflitos e diferenças."
+        "Identidade coletiva significa ausencia completa de conflitos e diferencas."
       ],
-      "correta": "identidade coletiva ajuda a entender solidariedades, mobilizações e fronteiras simbólicas entre grupos",
-      "comentario": "Identidade coletiva permite interpretar o caso a partir de relações, reconhecimento e pertencimento.",
+      "correta": "identidade coletiva ajuda a entender solidariedades, mobilizacoes e fronteiras simbolicas entre grupos",
+      "comentario": "Identidade coletiva permite interpretar o caso a partir de relacoes, reconhecimento e pertencimento.",
       "tempoEstimado": 40,
       "tags": [
         "identidade",
@@ -1500,15 +1501,15 @@ export const identidade = {
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação abaixo evidencia identidade coletiva de maneira mais clara?",
+      "enunciado": "Qual situacao abaixo evidencia identidade coletiva de maneira mais clara?",
       "opcoes": [
-        "uma comunidade fortalece pertencimento ao valorizar sua história, seus símbolos e suas lutas",
-        "o reconhecimento da identidade de gênero impacta acesso a respeito, pertencimento e direitos",
-        "a identidade ganha visibilidade quando memorias, pertencimentos e representações circulam no espaço fisico e online",
-        "um jovem reelabora sua forma de se identificar ao entrar em novos grupos e espaços sociais"
+        "uma comunidade fortalece pertencimento ao valorizar sua historia, seus simbolos e suas lutas",
+        "o reconhecimento da identidade de genero impacta acesso a respeito, pertencimento e direitos",
+        "a identidade ganha visibilidade quando memorias, pertencimentos e representacoes circulam no espaco fisico e online",
+        "um jovem reelabora sua forma de se identificar ao entrar em novos grupos e espacos sociais"
       ],
-      "correta": "uma comunidade fortalece pertencimento ao valorizar sua história, seus símbolos e suas lutas",
-      "comentario": "A alternativa correta traduz identidade coletiva em uma situação concreta de vida social.",
+      "correta": "uma comunidade fortalece pertencimento ao valorizar sua historia, seus simbolos e suas lutas",
+      "comentario": "A alternativa correta traduz identidade coletiva em uma situacao concreta de vida social.",
       "tempoEstimado": 40,
       "tags": [
         "identidade",
@@ -1539,15 +1540,15 @@ export const identidade = {
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"um grupo social se reconhece por memoria, linguagem, símbolos e objetivos compartilhados\", qual conclusão e mais adequada?",
+      "enunciado": "Ao analisar o caso \"um grupo social se reconhece por memoria, linguagem, simbolos e objetivos compartilhados\", qual conclusao e mais adequada?",
       "opcoes": [
-        "grupos constroem identidades quando elaboram símbolos, memorias e referências comuns",
+        "grupos constroem identidades quando elaboram simbolos, memorias e referencias comuns",
         "Identidade coletiva indica que valores sociais nunca mudam.",
-        "Identidade coletiva só pode ser explicado por fatores biológicos.",
-        "Identidade coletiva dispensa comparação entre grupos e contextos."
+        "Identidade coletiva so pode ser explicado por fatores biologicos.",
+        "Identidade coletiva dispensa comparacao entre grupos e contextos."
       ],
-      "correta": "grupos constroem identidades quando elaboram símbolos, memorias e referências comuns",
-      "comentario": "A conclusão correta mantém o foco no sentido sociológico do caso apresentado.",
+      "correta": "grupos constroem identidades quando elaboram simbolos, memorias e referencias comuns",
+      "comentario": "A conclusao correta mantem o foco no sentido sociologico do caso apresentado.",
       "tempoEstimado": 45,
       "tags": [
         "identidade",
@@ -1580,12 +1581,12 @@ export const identidade = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual pergunta de pesquisa se relaciona melhor com identidade coletiva?",
       "opcoes": [
-        "como um grupo fortalece o reconhecimento de sua história e de seus símbolos comuns?",
-        "como pessoas e grupos constroem sentidos sobre quem são?",
-        "de que modo uma pessoa organiza memoria e experiência para falar de si?",
-        "como o reconhecimento de um grupo influencia a experiência de pertencer?"
+        "como um grupo fortalece o reconhecimento de sua historia e de seus simbolos comuns?",
+        "como pessoas e grupos constroem sentidos sobre quem sao?",
+        "de que modo uma pessoa organiza memoria e experiencia para falar de si?",
+        "como o reconhecimento de um grupo influencia a experiencia de pertencer?"
       ],
-      "correta": "como um grupo fortalece o reconhecimento de sua história e de seus símbolos comuns?",
+      "correta": "como um grupo fortalece o reconhecimento de sua historia e de seus simbolos comuns?",
       "comentario": "A pergunta correta ajuda a investigar identidade coletiva de forma coerente com o subtopico.",
       "tempoEstimado": 45,
       "tags": [
@@ -1617,15 +1618,15 @@ export const identidade = {
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a afirmação que revela compreensão inadequada de identidade coletiva.",
+      "enunciado": "Assinale a afirmacao que revela compreensao inadequada de identidade coletiva.",
       "opcoes": [
-        "Uma soma aleatoria de indivíduos sem memoria ou referência compartilhada.",
-        "Identidade coletiva pode ser observado em contextos de reconhecimento e convivência social.",
-        "Identidade coletiva ajuda a analisar pertencimentos, diferenças e trajetórias.",
-        "Identidade coletiva depende da interação entre indivíduos, grupos e instituições."
+        "Uma soma aleatoria de individuos sem memoria ou referencia compartilhada.",
+        "Identidade coletiva pode ser observado em contextos de reconhecimento e convivencia social.",
+        "Identidade coletiva ajuda a analisar pertencimentos, diferencas e trajetorias.",
+        "Identidade coletiva depende da interacao entre individuos, grupos e instituicoes."
       ],
-      "correta": "Uma soma aleatoria de indivíduos sem memoria ou referência compartilhada.",
-      "comentario": "A alternativa incorreta expressa uma confusão comum sobre identidade coletiva.",
+      "correta": "Uma soma aleatoria de individuos sem memoria ou referencia compartilhada.",
+      "comentario": "A alternativa incorreta expressa uma confusao comum sobre identidade coletiva.",
       "tempoEstimado": 45,
       "tags": [
         "identidade",
@@ -1656,15 +1657,15 @@ export const identidade = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre identidade, um estudante afirmou: \"identidade coletiva se forma quando um grupo se reconhece em experiências e significados comuns\". Qual avaliacao e mais consistente?",
+      "enunciado": "Em um debate sobre identidade, um estudante afirmou: \"identidade coletiva se forma quando um grupo se reconhece em experiencias e significados comuns\". Qual avaliacao e mais consistente?",
       "opcoes": [
-        "a afirmação esta correta, porque o reconhecimento compartilhado e central nesse processo",
-        "Identidade coletiva não pode ser observado em situações do cotidiano.",
+        "a afirmacao esta correta, porque o reconhecimento compartilhado e central nesse processo",
+        "Identidade coletiva nao pode ser observado em situacoes do cotidiano.",
         "Identidade coletiva depende apenas da vontade individual, sem contexto social.",
-        "Identidade coletiva torna desnecessario comparar grupos e referências coletivas."
+        "Identidade coletiva torna desnecessario comparar grupos e referencias coletivas."
       ],
-      "correta": "a afirmação esta correta, porque o reconhecimento compartilhado e central nesse processo",
-      "comentario": "A avaliação correta recupera o núcleo teórico de identidade coletiva.",
+      "correta": "a afirmacao esta correta, porque o reconhecimento compartilhado e central nesse processo",
+      "comentario": "A avaliacao correta recupera o nucleo teorico de identidade coletiva.",
       "tempoEstimado": 50,
       "tags": [
         "identidade",
@@ -1695,15 +1696,15 @@ export const identidade = {
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando um grupo perde memoria comum e referências simbólicas que o articulavam, a melhor interpretação sociológica e que:",
+      "enunciado": "Quando um grupo perde memoria comum e referencias simbolicas que o articulavam, a melhor interpretacao sociologica e que:",
       "opcoes": [
         "o sentimento de identidade coletiva tende a enfraquecer",
-        "Identidade coletiva desaparece porque a sociedade não produz reconhecimento nem expectativas.",
+        "Identidade coletiva desaparece porque a sociedade nao produz reconhecimento nem expectativas.",
         "Identidade coletiva deixa de existir sempre que surgem conflitos entre grupos.",
-        "Identidade coletiva só importa em sociedades antigas, não no presente."
+        "Identidade coletiva so importa em sociedades antigas, nao no presente."
       ],
       "correta": "o sentimento de identidade coletiva tende a enfraquecer",
-      "comentario": "A conclusão correta mostra como a ausencia ou a fragilidade do fenomeno afeta a vida social.",
+      "comentario": "A conclusao correta mostra como a ausencia ou a fragilidade do fenomeno afeta a vida social.",
       "tempoEstimado": 50,
       "tags": [
         "identidade",
@@ -1734,14 +1735,14 @@ export const identidade = {
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente identidade coletiva a uma situação de comunidade escolar?",
+      "enunciado": "Qual alternativa aplica corretamente identidade coletiva a uma situacao de comunidade escolar?",
       "opcoes": [
-        "a escola analisa como grêmios, equipes e coletivos constroem identidade coletiva",
-        "a escola promove atividades em que estudantes refletem sobre suas trajetórias e referências sociais",
+        "a escola analisa como gremios, equipes e coletivos constroem identidade coletiva",
+        "a escola promove atividades em que estudantes refletem sobre suas trajetorias e referencias sociais",
         "a turma discute como colegas do mesmo bairro podem construir autoimagens diferentes",
-        "a turma debate práticas que ampliam pertencimento entre estudantes recem-chegados"
+        "a turma debate praticas que ampliam pertencimento entre estudantes recem-chegados"
       ],
-      "correta": "a escola analisa como grêmios, equipes e coletivos constroem identidade coletiva",
+      "correta": "a escola analisa como gremios, equipes e coletivos constroem identidade coletiva",
       "comentario": "A alternativa correta aproxima identidade coletiva de um contexto escolar concreto.",
       "tempoEstimado": 55,
       "tags": [
@@ -1775,13 +1776,13 @@ export const identidade = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual sintese final representa melhor identidade coletiva?",
       "opcoes": [
-        "identidade coletiva é o reconhecimento compartilhado que une um grupo por referências comuns",
-        "Identidade coletiva é um fator biológico fixo, sem relação com aprendizagem e grupos sociais.",
-        "Identidade coletiva explica apenas escolhas privadas e ignora a dimensão coletiva.",
-        "Identidade coletiva impede qualquer mudança historica ou social."
+        "identidade coletiva e o reconhecimento compartilhado que une um grupo por referencias comuns",
+        "Identidade coletiva e um fator biologico fixo, sem relacao com aprendizagem e grupos sociais.",
+        "Identidade coletiva explica apenas escolhas privadas e ignora a dimensao coletiva.",
+        "Identidade coletiva impede qualquer mudanca historica ou social."
       ],
-      "correta": "identidade coletiva é o reconhecimento compartilhado que une um grupo por referências comuns",
-      "comentario": "A síntese correta preserva a definição, o alcance e o uso analítico de identidade coletiva.",
+      "correta": "identidade coletiva e o reconhecimento compartilhado que une um grupo por referencias comuns",
+      "comentario": "A sintese correta preserva a definicao, o alcance e o uso analitico de identidade coletiva.",
       "tempoEstimado": 60,
       "tags": [
         "identidade",
@@ -1814,13 +1815,13 @@ export const identidade = {
       "tipo": "multipla_escolha",
       "enunciado": "Em Sociologia, pertencimento social pode ser definido(a) como:",
       "opcoes": [
-        "o sentimento e a experiência de fazer parte de grupos, redes e espaços sociais reconhecidos como significativos",
-        "a construção social pela qual indivíduos e grupos elaboram sentidos sobre quem são e como se reconhecem",
-        "a dimensão da identidade ligada a trajetória singular de cada pessoa, articulando experiência propria, memoria e autoimagem",
-        "o reconhecimento compartilhado por um grupo em torno de historias, símbolos, interesses e referências comuns"
+        "o sentimento e a experiencia de fazer parte de grupos, redes e espacos sociais reconhecidos como significativos",
+        "a construcao social pela qual individuos e grupos elaboram sentidos sobre quem sao e como se reconhecem",
+        "a dimensao da identidade ligada a trajetoria singular de cada pessoa, articulando experiencia propria, memoria e autoimagem",
+        "o reconhecimento compartilhado por um grupo em torno de historias, simbolos, interesses e referencias comuns"
       ],
-      "correta": "o sentimento e a experiência de fazer parte de grupos, redes e espaços sociais reconhecidos como significativos",
-      "comentario": "Pertencimento social refere-se ao sentimento e a experiência de fazer parte de grupos, redes e espaços sociais reconhecidos como significativos.",
+      "correta": "o sentimento e a experiencia de fazer parte de grupos, redes e espacos sociais reconhecidos como significativos",
+      "comentario": "Pertencimento social refere-se ao sentimento e a experiencia de fazer parte de grupos, redes e espacos sociais reconhecidos como significativos.",
       "tempoEstimado": 20,
       "tags": [
         "identidade",
@@ -1851,7 +1852,7 @@ export const identidade = {
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: uma pessoa sente que pertence a um grupo porque compartilha referências, apoio e reconhecimento Esse caso exemplifica melhor qual subtopico?",
+      "enunciado": "Observe a situacao: uma pessoa sente que pertence a um grupo porque compartilha referencias, apoio e reconhecimento Esse caso exemplifica melhor qual subtopico?",
       "opcoes": [
         "Pertencimento social",
         "Conceito de identidade",
@@ -1859,7 +1860,7 @@ export const identidade = {
         "Identidade coletiva"
       ],
       "correta": "Pertencimento social",
-      "comentario": "A situação apresentada é um exemplo de pertencimento social.",
+      "comentario": "A situacao apresentada e um exemplo de pertencimento social.",
       "tempoEstimado": 25,
       "tags": [
         "identidade",
@@ -1890,15 +1891,15 @@ export const identidade = {
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmação descreve corretamente pertencimento social?",
+      "enunciado": "Qual afirmacao descreve corretamente pertencimento social?",
       "opcoes": [
-        "O sentimento e a experiência de fazer parte de grupos, redes e espaços sociais reconhecidos como significativos.",
-        "Uma característica puramente individual sem relação com reconhecimento coletivo.",
-        "Diferença e diversidade significa a presença de multiplas formas de existir, agir e se identificar na vida social, sem reduzir a sociedade a um único padrao.",
-        "Identidade trata apenas de características biológicas fixas."
+        "O sentimento e a experiencia de fazer parte de grupos, redes e espacos sociais reconhecidos como significativos.",
+        "Uma caracteristica puramente individual sem relacao com reconhecimento coletivo.",
+        "Diferenca e diversidade significa a presenca de multiplas formas de existir, agir e se identificar na vida social, sem reduzir a sociedade a um unico padrao.",
+        "Identidade trata apenas de caracteristicas biologicas fixas."
       ],
-      "correta": "O sentimento e a experiência de fazer parte de grupos, redes e espaços sociais reconhecidos como significativos.",
-      "comentario": "A afirmação correta retoma o sentido central de pertencimento social.",
+      "correta": "O sentimento e a experiencia de fazer parte de grupos, redes e espacos sociais reconhecidos como significativos.",
+      "comentario": "A afirmacao correta retoma o sentido central de pertencimento social.",
       "tempoEstimado": 30,
       "tags": [
         "identidade",
@@ -1931,13 +1932,13 @@ export const identidade = {
       "tipo": "multipla_escolha",
       "enunciado": "Assinale a alternativa em que o exemplo NAO corresponde a pertencimento social.",
       "opcoes": [
-        "a situação em que o sujeito e tratado como estranho em todos os espaços de convívio",
-        "uma pessoa sente que pertence a um grupo porque compartilha referências, apoio e reconhecimento",
-        "um estudante se sente acolhido quando sua turma reconhece sua participação e sua forma de expressão",
+        "a situacao em que o sujeito e tratado como estranho em todos os espacos de convivio",
+        "uma pessoa sente que pertence a um grupo porque compartilha referencias, apoio e reconhecimento",
+        "um estudante se sente acolhido quando sua turma reconhece sua participacao e sua forma de expressao",
         "participar de um coletivo reforca o sentimento de fazer parte de algo maior que o individuo"
       ],
-      "correta": "a situação em que o sujeito e tratado como estranho em todos os espaços de convívio",
-      "comentario": "a situação em que o sujeito e tratado como estranho em todos os espaços de convívio não expressa pertencimento social, enquanto as demais alternativas se relacionam com esse subtopico.",
+      "correta": "a situacao em que o sujeito e tratado como estranho em todos os espacos de convivio",
+      "comentario": "a situacao em que o sujeito e tratado como estranho em todos os espacos de convivio nao expressa pertencimento social, enquanto as demais alternativas se relacionam com esse subtopico.",
       "tempoEstimado": 30,
       "tags": [
         "identidade",
@@ -1970,13 +1971,13 @@ export const identidade = {
       "tipo": "multipla_escolha",
       "enunciado": "Quando se estuda pertencimento social, o foco principal esta em:",
       "opcoes": [
-        "o vinculo subjetivo e social que conecta indivíduos a grupos e espaços coletivos",
+        "o vinculo subjetivo e social que conecta individuos a grupos e espacos coletivos",
         "os processos pelos quais sujeitos e grupos constroem reconhecimento sobre si",
-        "a singularidade da experiência do sujeito em relação a sua propria autoimagem",
+        "a singularidade da experiencia do sujeito em relacao a sua propria autoimagem",
         "os elementos comuns que produzem pertencimento e reconhecimento grupal"
       ],
-      "correta": "o vinculo subjetivo e social que conecta indivíduos a grupos e espaços coletivos",
-      "comentario": "Pertencimento social volta a atenção para o vinculo subjetivo e social que conecta indivíduos a grupos e espaços coletivos.",
+      "correta": "o vinculo subjetivo e social que conecta individuos a grupos e espacos coletivos",
+      "comentario": "Pertencimento social volta a atencao para o vinculo subjetivo e social que conecta individuos a grupos e espacos coletivos.",
       "tempoEstimado": 35,
       "tags": [
         "identidade",
@@ -2007,15 +2008,15 @@ export const identidade = {
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferença entre pertencimento social e diferença e diversidade e que:",
+      "enunciado": "A principal diferenca entre pertencimento social e diferenca e diversidade e que:",
       "opcoes": [
-        "pertencimento social enfatiza vinculo com grupos, enquanto diferença e diversidade destacam pluralidade e distincoes entre sujeitos e coletividades",
-        "Pertencimento social e Diferença e diversidade são exatamente o mesmo fenomeno social.",
-        "Diferença e diversidade depende apenas da biologia, enquanto Pertencimento social depende só da economia.",
-        "Pertencimento social elimina a necessidade de observar contextos e relações sociais."
+        "pertencimento social enfatiza vinculo com grupos, enquanto diferenca e diversidade destacam pluralidade e distincoes entre sujeitos e coletividades",
+        "Pertencimento social e Diferenca e diversidade sao exatamente o mesmo fenomeno social.",
+        "Diferenca e diversidade depende apenas da biologia, enquanto Pertencimento social depende so da economia.",
+        "Pertencimento social elimina a necessidade de observar contextos e relacoes sociais."
       ],
-      "correta": "pertencimento social enfatiza vinculo com grupos, enquanto diferença e diversidade destacam pluralidade e distincoes entre sujeitos e coletividades",
-      "comentario": "A diferença correta ajuda a separar dois conceitos próximos sem misturar seus significados.",
+      "correta": "pertencimento social enfatiza vinculo com grupos, enquanto diferenca e diversidade destacam pluralidade e distincoes entre sujeitos e coletividades",
+      "comentario": "A diferenca correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
       "tempoEstimado": 35,
       "tags": [
         "identidade",
@@ -2046,15 +2047,15 @@ export const identidade = {
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: um estudante se sente acolhido quando sua turma reconhece sua participação e sua forma de expressão A leitura sociológica mais adequada aponta para:",
+      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: um estudante se sente acolhido quando sua turma reconhece sua participacao e sua forma de expressao A leitura sociologica mais adequada aponta para:",
       "opcoes": [
-        "pertencimento social influencia autoestima, participação e reconhecimento de si",
-        "Pertencimento social mostra que a vida social não interfere nas formas de reconhecimento.",
+        "pertencimento social influencia autoestima, participacao e reconhecimento de si",
+        "Pertencimento social mostra que a vida social nao interfere nas formas de reconhecimento.",
         "Pertencimento social prova que todos os grupos agem da mesma forma em qualquer contexto.",
-        "Pertencimento social significa ausencia completa de conflitos e diferenças."
+        "Pertencimento social significa ausencia completa de conflitos e diferencas."
       ],
-      "correta": "pertencimento social influencia autoestima, participação e reconhecimento de si",
-      "comentario": "Pertencimento social permite interpretar o caso a partir de relações, reconhecimento e pertencimento.",
+      "correta": "pertencimento social influencia autoestima, participacao e reconhecimento de si",
+      "comentario": "Pertencimento social permite interpretar o caso a partir de relacoes, reconhecimento e pertencimento.",
       "tempoEstimado": 40,
       "tags": [
         "identidade",
@@ -2085,15 +2086,15 @@ export const identidade = {
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação abaixo evidencia pertencimento social de maneira mais clara?",
+      "enunciado": "Qual situacao abaixo evidencia pertencimento social de maneira mais clara?",
       "opcoes": [
         "participar de um coletivo reforca o sentimento de fazer parte de algo maior que o individuo",
-        "um jovem reelabora sua forma de se identificar ao entrar em novos grupos e espaços sociais",
-        "alguem se reconhece por escolhas, memoria e vivencias que não se repetem exatamente em outros indivíduos",
-        "uma comunidade fortalece pertencimento ao valorizar sua história, seus símbolos e suas lutas"
+        "um jovem reelabora sua forma de se identificar ao entrar em novos grupos e espacos sociais",
+        "alguem se reconhece por escolhas, memoria e vivencias que nao se repetem exatamente em outros individuos",
+        "uma comunidade fortalece pertencimento ao valorizar sua historia, seus simbolos e suas lutas"
       ],
       "correta": "participar de um coletivo reforca o sentimento de fazer parte de algo maior que o individuo",
-      "comentario": "A alternativa correta traduz pertencimento social em uma situação concreta de vida social.",
+      "comentario": "A alternativa correta traduz pertencimento social em uma situacao concreta de vida social.",
       "tempoEstimado": 40,
       "tags": [
         "identidade",
@@ -2124,15 +2125,15 @@ export const identidade = {
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"uma pessoa sente que pertence a um grupo porque compartilha referências, apoio e reconhecimento\", qual conclusão e mais adequada?",
+      "enunciado": "Ao analisar o caso \"uma pessoa sente que pertence a um grupo porque compartilha referencias, apoio e reconhecimento\", qual conclusao e mais adequada?",
       "opcoes": [
-        "sentir-se parte de um grupo fortalece reconhecimento e participação social",
+        "sentir-se parte de um grupo fortalece reconhecimento e participacao social",
         "Pertencimento social indica que valores sociais nunca mudam.",
-        "Pertencimento social só pode ser explicado por fatores biológicos.",
-        "Pertencimento social dispensa comparação entre grupos e contextos."
+        "Pertencimento social so pode ser explicado por fatores biologicos.",
+        "Pertencimento social dispensa comparacao entre grupos e contextos."
       ],
-      "correta": "sentir-se parte de um grupo fortalece reconhecimento e participação social",
-      "comentario": "A conclusão correta mantém o foco no sentido sociológico do caso apresentado.",
+      "correta": "sentir-se parte de um grupo fortalece reconhecimento e participacao social",
+      "comentario": "A conclusao correta mantem o foco no sentido sociologico do caso apresentado.",
       "tempoEstimado": 45,
       "tags": [
         "identidade",
@@ -2165,12 +2166,12 @@ export const identidade = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual pergunta de pesquisa se relaciona melhor com pertencimento social?",
       "opcoes": [
-        "como o reconhecimento de um grupo influencia a experiência de pertencer?",
-        "como instituições podem lidar com a pluralidade de identidades e experiências?",
-        "de que modo imagens simplificadas sobre grupos influenciam relações sociais?",
-        "como julgamentos prévios negativos afetam a vida de grupos sociais?"
+        "como o reconhecimento de um grupo influencia a experiencia de pertencer?",
+        "como instituicoes podem lidar com a pluralidade de identidades e experiencias?",
+        "de que modo imagens simplificadas sobre grupos influenciam relacoes sociais?",
+        "como julgamentos previos negativos afetam a vida de grupos sociais?"
       ],
-      "correta": "como o reconhecimento de um grupo influencia a experiência de pertencer?",
+      "correta": "como o reconhecimento de um grupo influencia a experiencia de pertencer?",
       "comentario": "A pergunta correta ajuda a investigar pertencimento social de forma coerente com o subtopico.",
       "tempoEstimado": 45,
       "tags": [
@@ -2202,15 +2203,15 @@ export const identidade = {
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a afirmação que revela compreensão inadequada de pertencimento social.",
+      "enunciado": "Assinale a afirmacao que revela compreensao inadequada de pertencimento social.",
       "opcoes": [
-        "Uma característica puramente individual sem relação com reconhecimento coletivo.",
-        "Pertencimento social pode ser observado em contextos de reconhecimento e convivência social.",
-        "Pertencimento social ajuda a analisar pertencimentos, diferenças e trajetórias.",
-        "Pertencimento social depende da interação entre indivíduos, grupos e instituições."
+        "Uma caracteristica puramente individual sem relacao com reconhecimento coletivo.",
+        "Pertencimento social pode ser observado em contextos de reconhecimento e convivencia social.",
+        "Pertencimento social ajuda a analisar pertencimentos, diferencas e trajetorias.",
+        "Pertencimento social depende da interacao entre individuos, grupos e instituicoes."
       ],
-      "correta": "Uma característica puramente individual sem relação com reconhecimento coletivo.",
-      "comentario": "A alternativa incorreta expressa uma confusão comum sobre pertencimento social.",
+      "correta": "Uma caracteristica puramente individual sem relacao com reconhecimento coletivo.",
+      "comentario": "A alternativa incorreta expressa uma confusao comum sobre pertencimento social.",
       "tempoEstimado": 45,
       "tags": [
         "identidade",
@@ -2241,15 +2242,15 @@ export const identidade = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre identidade, um estudante afirmou: \"pertencer socialmente depende de relações de reconhecimento, acolhimento e referência compartilhada\". Qual avaliacao e mais consistente?",
+      "enunciado": "Em um debate sobre identidade, um estudante afirmou: \"pertencer socialmente depende de relacoes de reconhecimento, acolhimento e referencia compartilhada\". Qual avaliacao e mais consistente?",
       "opcoes": [
-        "a afirmação esta correta, porque pertencimento não se produz isoladamente",
-        "Pertencimento social não pode ser observado em situações do cotidiano.",
+        "a afirmacao esta correta, porque pertencimento nao se produz isoladamente",
+        "Pertencimento social nao pode ser observado em situacoes do cotidiano.",
         "Pertencimento social depende apenas da vontade individual, sem contexto social.",
-        "Pertencimento social torna desnecessario comparar grupos e referências coletivas."
+        "Pertencimento social torna desnecessario comparar grupos e referencias coletivas."
       ],
-      "correta": "a afirmação esta correta, porque pertencimento não se produz isoladamente",
-      "comentario": "A avaliação correta recupera o núcleo teórico de pertencimento social.",
+      "correta": "a afirmacao esta correta, porque pertencimento nao se produz isoladamente",
+      "comentario": "A avaliacao correta recupera o nucleo teorico de pertencimento social.",
       "tempoEstimado": 50,
       "tags": [
         "identidade",
@@ -2280,15 +2281,15 @@ export const identidade = {
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando um estudante e constantemente invisibilizado e não se ve reconhecido por nenhum grupo, a melhor interpretação sociológica e que:",
+      "enunciado": "Quando um estudante e constantemente invisibilizado e nao se ve reconhecido por nenhum grupo, a melhor interpretacao sociologica e que:",
       "opcoes": [
         "ha fragilizacao do sentimento de pertencimento social",
-        "Pertencimento social desaparece porque a sociedade não produz reconhecimento nem expectativas.",
+        "Pertencimento social desaparece porque a sociedade nao produz reconhecimento nem expectativas.",
         "Pertencimento social deixa de existir sempre que surgem conflitos entre grupos.",
-        "Pertencimento social só importa em sociedades antigas, não no presente."
+        "Pertencimento social so importa em sociedades antigas, nao no presente."
       ],
       "correta": "ha fragilizacao do sentimento de pertencimento social",
-      "comentario": "A conclusão correta mostra como a ausencia ou a fragilidade do fenomeno afeta a vida social.",
+      "comentario": "A conclusao correta mostra como a ausencia ou a fragilidade do fenomeno afeta a vida social.",
       "tempoEstimado": 50,
       "tags": [
         "identidade",
@@ -2319,14 +2320,14 @@ export const identidade = {
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente pertencimento social a uma situação de comunidade escolar?",
+      "enunciado": "Qual alternativa aplica corretamente pertencimento social a uma situacao de comunidade escolar?",
       "opcoes": [
-        "a turma debate práticas que ampliam pertencimento entre estudantes recem-chegados",
-        "a escola adota estrategias para acolher linguagens, referências e experiências diversas entre os estudantes",
+        "a turma debate praticas que ampliam pertencimento entre estudantes recem-chegados",
+        "a escola adota estrategias para acolher linguagens, referencias e experiencias diversas entre os estudantes",
         "a escola discute como piadas e comentarios generalizantes reproduzem estereotipos",
-        "a turma analisa por que insultos dirigidos a origem, gênero ou cor expressam preconceito"
+        "a turma analisa por que insultos dirigidos a origem, genero ou cor expressam preconceito"
       ],
-      "correta": "a turma debate práticas que ampliam pertencimento entre estudantes recem-chegados",
+      "correta": "a turma debate praticas que ampliam pertencimento entre estudantes recem-chegados",
       "comentario": "A alternativa correta aproxima pertencimento social de um contexto escolar concreto.",
       "tempoEstimado": 55,
       "tags": [
@@ -2360,13 +2361,13 @@ export const identidade = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual sintese final representa melhor pertencimento social?",
       "opcoes": [
-        "pertencimento social e a experiência de ser reconhecido como parte de grupos e espaços coletivos",
-        "Pertencimento social é um fator biológico fixo, sem relação com aprendizagem e grupos sociais.",
-        "Pertencimento social explica apenas escolhas privadas e ignora a dimensão coletiva.",
-        "Pertencimento social impede qualquer mudança historica ou social."
+        "pertencimento social e a experiencia de ser reconhecido como parte de grupos e espacos coletivos",
+        "Pertencimento social e um fator biologico fixo, sem relacao com aprendizagem e grupos sociais.",
+        "Pertencimento social explica apenas escolhas privadas e ignora a dimensao coletiva.",
+        "Pertencimento social impede qualquer mudanca historica ou social."
       ],
-      "correta": "pertencimento social e a experiência de ser reconhecido como parte de grupos e espaços coletivos",
-      "comentario": "A síntese correta preserva a definição, o alcance e o uso analítico de pertencimento social.",
+      "correta": "pertencimento social e a experiencia de ser reconhecido como parte de grupos e espacos coletivos",
+      "comentario": "A sintese correta preserva a definicao, o alcance e o uso analitico de pertencimento social.",
       "tempoEstimado": 60,
       "tags": [
         "identidade",
@@ -2392,20 +2393,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Diferença e diversidade",
+      "subtopico": "Diferenca e diversidade",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Sociologia, diferença e diversidade pode ser definido(a) como:",
+      "enunciado": "Em Sociologia, diferenca e diversidade pode ser definido(a) como:",
       "opcoes": [
-        "a presença de multiplas formas de existir, agir e se identificar na vida social, sem reduzir a sociedade a um único padrao",
-        "o reconhecimento compartilhado por um grupo em torno de historias, símbolos, interesses e referências comuns",
-        "o sentimento e a experiência de fazer parte de grupos, redes e espaços sociais reconhecidos como significativos",
+        "a presenca de multiplas formas de existir, agir e se identificar na vida social, sem reduzir a sociedade a um unico padrao",
+        "o reconhecimento compartilhado por um grupo em torno de historias, simbolos, interesses e referencias comuns",
+        "o sentimento e a experiencia de fazer parte de grupos, redes e espacos sociais reconhecidos como significativos",
         "imagens simplificadas e generalizantes atribuidas a grupos sociais, como se todos os seus membros fossem iguais"
       ],
-      "correta": "a presença de multiplas formas de existir, agir e se identificar na vida social, sem reduzir a sociedade a um único padrao",
-      "comentario": "Diferença e diversidade refere-se a presença de multiplas formas de existir, agir e se identificar na vida social, sem reduzir a sociedade a um único padrao.",
+      "correta": "a presenca de multiplas formas de existir, agir e se identificar na vida social, sem reduzir a sociedade a um unico padrao",
+      "comentario": "Diferenca e diversidade refere-se a presenca de multiplas formas de existir, agir e se identificar na vida social, sem reduzir a sociedade a um unico padrao.",
       "tempoEstimado": 20,
       "tags": [
         "identidade",
@@ -2431,20 +2432,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Diferença e diversidade",
+      "subtopico": "Diferenca e diversidade",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: na escola convivem formas distintas de falar, vestir, crer e participar da vida coletiva Esse caso exemplifica melhor qual subtopico?",
+      "enunciado": "Observe a situacao: na escola convivem formas distintas de falar, vestir, crer e participar da vida coletiva Esse caso exemplifica melhor qual subtopico?",
       "opcoes": [
-        "Diferença e diversidade",
+        "Diferenca e diversidade",
         "Identidade coletiva",
         "Pertencimento social",
-        "Estereótipos"
+        "Estereotipos"
       ],
-      "correta": "Diferença e diversidade",
-      "comentario": "A situação apresentada é um exemplo de diferença e diversidade.",
+      "correta": "Diferenca e diversidade",
+      "comentario": "A situacao apresentada e um exemplo de diferenca e diversidade.",
       "tempoEstimado": 25,
       "tags": [
         "identidade",
@@ -2470,20 +2471,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Diferença e diversidade",
+      "subtopico": "Diferenca e diversidade",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmação descreve corretamente diferença e diversidade?",
+      "enunciado": "Qual afirmacao descreve corretamente diferenca e diversidade?",
       "opcoes": [
-        "A presença de multiplas formas de existir, agir e se identificar na vida social, sem reduzir a sociedade a um único padrao.",
+        "A presenca de multiplas formas de existir, agir e se identificar na vida social, sem reduzir a sociedade a um unico padrao.",
         "Um problema que deve ser eliminado para haver ordem social.",
-        "Estereótipos significa imagens simplificadas e generalizantes atribuidas a grupos sociais, como se todos os seus membros fossem iguais.",
-        "Identidade trata apenas de características biológicas fixas."
+        "Estereotipos significa imagens simplificadas e generalizantes atribuidas a grupos sociais, como se todos os seus membros fossem iguais.",
+        "Identidade trata apenas de caracteristicas biologicas fixas."
       ],
-      "correta": "A presença de multiplas formas de existir, agir e se identificar na vida social, sem reduzir a sociedade a um único padrao.",
-      "comentario": "A afirmação correta retoma o sentido central de diferença e diversidade.",
+      "correta": "A presenca de multiplas formas de existir, agir e se identificar na vida social, sem reduzir a sociedade a um unico padrao.",
+      "comentario": "A afirmacao correta retoma o sentido central de diferenca e diversidade.",
       "tempoEstimado": 30,
       "tags": [
         "identidade",
@@ -2509,20 +2510,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Diferença e diversidade",
+      "subtopico": "Diferenca e diversidade",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que o exemplo NAO corresponde a diferença e diversidade.",
+      "enunciado": "Assinale a alternativa em que o exemplo NAO corresponde a diferenca e diversidade.",
       "opcoes": [
         "a expectativa de que todos devem se comportar e se expressar do mesmo modo",
         "na escola convivem formas distintas de falar, vestir, crer e participar da vida coletiva",
-        "um grupo reconhece que pessoas podem ter historias, referências e modos de vida diversos",
-        "uma instituição reve práticas para acolher estudantes com diferentes trajetórias e identidades"
+        "um grupo reconhece que pessoas podem ter historias, referencias e modos de vida diversos",
+        "uma instituicao reve praticas para acolher estudantes com diferentes trajetorias e identidades"
       ],
       "correta": "a expectativa de que todos devem se comportar e se expressar do mesmo modo",
-      "comentario": "a expectativa de que todos devem se comportar e se expressar do mesmo modo não expressa diferença e diversidade, enquanto as demais alternativas se relacionam com esse subtopico.",
+      "comentario": "a expectativa de que todos devem se comportar e se expressar do mesmo modo nao expressa diferenca e diversidade, enquanto as demais alternativas se relacionam com esse subtopico.",
       "tempoEstimado": 30,
       "tags": [
         "identidade",
@@ -2548,20 +2549,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Diferença e diversidade",
+      "subtopico": "Diferenca e diversidade",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando se estuda diferença e diversidade, o foco principal esta em:",
+      "enunciado": "Quando se estuda diferenca e diversidade, o foco principal esta em:",
       "opcoes": [
-        "a pluralidade de sujeitos e referências presentes na vida social",
+        "a pluralidade de sujeitos e referencias presentes na vida social",
         "os elementos comuns que produzem pertencimento e reconhecimento grupal",
-        "o vinculo subjetivo e social que conecta indivíduos a grupos e espaços coletivos",
+        "o vinculo subjetivo e social que conecta individuos a grupos e espacos coletivos",
         "as generalizacoes simplificadoras sobre grupos e identidades sociais"
       ],
-      "correta": "a pluralidade de sujeitos e referências presentes na vida social",
-      "comentario": "Diferença e diversidade volta a atenção para a pluralidade de sujeitos e referências presentes na vida social.",
+      "correta": "a pluralidade de sujeitos e referencias presentes na vida social",
+      "comentario": "Diferenca e diversidade volta a atencao para a pluralidade de sujeitos e referencias presentes na vida social.",
       "tempoEstimado": 35,
       "tags": [
         "identidade",
@@ -2587,20 +2588,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Diferença e diversidade",
+      "subtopico": "Diferenca e diversidade",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferença entre diferença e diversidade e estereotipos e que:",
+      "enunciado": "A principal diferenca entre diferenca e diversidade e estereotipos e que:",
       "opcoes": [
-        "diferença e diversidade reconhecem pluralidade real, enquanto estereotipos simplificam grupos em imagens reduzidas",
-        "Diferença e diversidade e Estereótipos são exatamente o mesmo fenomeno social.",
-        "Estereótipos depende apenas da biologia, enquanto Diferença e diversidade depende só da economia.",
-        "Diferença e diversidade elimina a necessidade de observar contextos e relações sociais."
+        "diferenca e diversidade reconhecem pluralidade real, enquanto estereotipos simplificam grupos em imagens reduzidas",
+        "Diferenca e diversidade e Estereotipos sao exatamente o mesmo fenomeno social.",
+        "Estereotipos depende apenas da biologia, enquanto Diferenca e diversidade depende so da economia.",
+        "Diferenca e diversidade elimina a necessidade de observar contextos e relacoes sociais."
       ],
-      "correta": "diferença e diversidade reconhecem pluralidade real, enquanto estereotipos simplificam grupos em imagens reduzidas",
-      "comentario": "A diferença correta ajuda a separar dois conceitos próximos sem misturar seus significados.",
+      "correta": "diferenca e diversidade reconhecem pluralidade real, enquanto estereotipos simplificam grupos em imagens reduzidas",
+      "comentario": "A diferenca correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
       "tempoEstimado": 35,
       "tags": [
         "identidade",
@@ -2626,20 +2627,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Diferença e diversidade",
+      "subtopico": "Diferenca e diversidade",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: um grupo reconhece que pessoas podem ter historias, referências e modos de vida diversos A leitura sociológica mais adequada aponta para:",
+      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: um grupo reconhece que pessoas podem ter historias, referencias e modos de vida diversos A leitura sociologica mais adequada aponta para:",
       "opcoes": [
-        "diversidade exige reconhecimento das diferenças sem transforma-las em desigualdade ou exclusão",
-        "Diferença e diversidade mostra que a vida social não interfere nas formas de reconhecimento.",
-        "Diferença e diversidade prova que todos os grupos agem da mesma forma em qualquer contexto.",
-        "Diferença e diversidade significa ausencia completa de conflitos e diferenças."
+        "diversidade exige reconhecimento das diferencas sem transforma-las em desigualdade ou exclusao",
+        "Diferenca e diversidade mostra que a vida social nao interfere nas formas de reconhecimento.",
+        "Diferenca e diversidade prova que todos os grupos agem da mesma forma em qualquer contexto.",
+        "Diferenca e diversidade significa ausencia completa de conflitos e diferencas."
       ],
-      "correta": "diversidade exige reconhecimento das diferenças sem transforma-las em desigualdade ou exclusão",
-      "comentario": "Diferença e diversidade permite interpretar o caso a partir de relações, reconhecimento e pertencimento.",
+      "correta": "diversidade exige reconhecimento das diferencas sem transforma-las em desigualdade ou exclusao",
+      "comentario": "Diferenca e diversidade permite interpretar o caso a partir de relacoes, reconhecimento e pertencimento.",
       "tempoEstimado": 40,
       "tags": [
         "identidade",
@@ -2665,20 +2666,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Diferença e diversidade",
+      "subtopico": "Diferenca e diversidade",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação abaixo evidencia diferença e diversidade de maneira mais clara?",
+      "enunciado": "Qual situacao abaixo evidencia diferenca e diversidade de maneira mais clara?",
       "opcoes": [
-        "uma instituição reve práticas para acolher estudantes com diferentes trajetórias e identidades",
-        "uma comunidade fortalece pertencimento ao valorizar sua história, seus símbolos e suas lutas",
+        "uma instituicao reve praticas para acolher estudantes com diferentes trajetorias e identidades",
+        "uma comunidade fortalece pertencimento ao valorizar sua historia, seus simbolos e suas lutas",
         "participar de um coletivo reforca o sentimento de fazer parte de algo maior que o individuo",
-        "uma turma questiona imagens prontas que simplificam grupos sociais em rótulos repetidos"
+        "uma turma questiona imagens prontas que simplificam grupos sociais em rotulos repetidos"
       ],
-      "correta": "uma instituição reve práticas para acolher estudantes com diferentes trajetórias e identidades",
-      "comentario": "A alternativa correta traduz diferença e diversidade em uma situação concreta de vida social.",
+      "correta": "uma instituicao reve praticas para acolher estudantes com diferentes trajetorias e identidades",
+      "comentario": "A alternativa correta traduz diferenca e diversidade em uma situacao concreta de vida social.",
       "tempoEstimado": 40,
       "tags": [
         "identidade",
@@ -2704,20 +2705,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Diferença e diversidade",
+      "subtopico": "Diferenca e diversidade",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"na escola convivem formas distintas de falar, vestir, crer e participar da vida coletiva\", qual conclusão e mais adequada?",
+      "enunciado": "Ao analisar o caso \"na escola convivem formas distintas de falar, vestir, crer e participar da vida coletiva\", qual conclusao e mais adequada?",
       "opcoes": [
-        "a diversidade amplia a necessidade de reconhecimento e de convivência com o diferente",
-        "Diferença e diversidade indica que valores sociais nunca mudam.",
-        "Diferença e diversidade só pode ser explicado por fatores biológicos.",
-        "Diferença e diversidade dispensa comparação entre grupos e contextos."
+        "a diversidade amplia a necessidade de reconhecimento e de convivencia com o diferente",
+        "Diferenca e diversidade indica que valores sociais nunca mudam.",
+        "Diferenca e diversidade so pode ser explicado por fatores biologicos.",
+        "Diferenca e diversidade dispensa comparacao entre grupos e contextos."
       ],
-      "correta": "a diversidade amplia a necessidade de reconhecimento e de convivência com o diferente",
-      "comentario": "A conclusão correta mantém o foco no sentido sociológico do caso apresentado.",
+      "correta": "a diversidade amplia a necessidade de reconhecimento e de convivencia com o diferente",
+      "comentario": "A conclusao correta mantem o foco no sentido sociologico do caso apresentado.",
       "tempoEstimado": 45,
       "tags": [
         "identidade",
@@ -2743,20 +2744,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Diferença e diversidade",
+      "subtopico": "Diferenca e diversidade",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 7,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com diferença e diversidade?",
+      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com diferenca e diversidade?",
       "opcoes": [
-        "como instituições podem lidar com a pluralidade de identidades e experiências?",
-        "como o reconhecimento de um grupo influencia a experiência de pertencer?",
-        "de que modo imagens simplificadas sobre grupos influenciam relações sociais?",
-        "como julgamentos prévios negativos afetam a vida de grupos sociais?"
+        "como instituicoes podem lidar com a pluralidade de identidades e experiencias?",
+        "como o reconhecimento de um grupo influencia a experiencia de pertencer?",
+        "de que modo imagens simplificadas sobre grupos influenciam relacoes sociais?",
+        "como julgamentos previos negativos afetam a vida de grupos sociais?"
       ],
-      "correta": "como instituições podem lidar com a pluralidade de identidades e experiências?",
-      "comentario": "A pergunta correta ajuda a investigar diferença e diversidade de forma coerente com o subtopico.",
+      "correta": "como instituicoes podem lidar com a pluralidade de identidades e experiencias?",
+      "comentario": "A pergunta correta ajuda a investigar diferenca e diversidade de forma coerente com o subtopico.",
       "tempoEstimado": 45,
       "tags": [
         "identidade",
@@ -2782,20 +2783,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Diferença e diversidade",
+      "subtopico": "Diferenca e diversidade",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a afirmação que revela compreensão inadequada de diferença e diversidade.",
+      "enunciado": "Assinale a afirmacao que revela compreensao inadequada de diferenca e diversidade.",
       "opcoes": [
         "Um problema que deve ser eliminado para haver ordem social.",
-        "Diferença e diversidade pode ser observado em contextos de reconhecimento e convivência social.",
-        "Diferença e diversidade ajuda a analisar pertencimentos, diferenças e trajetórias.",
-        "Diferença e diversidade depende da interação entre indivíduos, grupos e instituições."
+        "Diferenca e diversidade pode ser observado em contextos de reconhecimento e convivencia social.",
+        "Diferenca e diversidade ajuda a analisar pertencimentos, diferencas e trajetorias.",
+        "Diferenca e diversidade depende da interacao entre individuos, grupos e instituicoes."
       ],
       "correta": "Um problema que deve ser eliminado para haver ordem social.",
-      "comentario": "A alternativa incorreta expressa uma confusão comum sobre diferença e diversidade.",
+      "comentario": "A alternativa incorreta expressa uma confusao comum sobre diferenca e diversidade.",
       "tempoEstimado": 45,
       "tags": [
         "identidade",
@@ -2821,20 +2822,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Diferença e diversidade",
+      "subtopico": "Diferenca e diversidade",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre identidade, um estudante afirmou: \"reconhecer diversidade não significa apagar conflitos, mas enfrentar desigualdades sem negar diferenças\". Qual avaliacao e mais consistente?",
+      "enunciado": "Em um debate sobre identidade, um estudante afirmou: \"reconhecer diversidade nao significa apagar conflitos, mas enfrentar desigualdades sem negar diferencas\". Qual avaliacao e mais consistente?",
       "opcoes": [
-        "a afirmação esta correta, porque diversidade envolve pluralidade e disputa por reconhecimento",
-        "Diferença e diversidade não pode ser observado em situações do cotidiano.",
-        "Diferença e diversidade depende apenas da vontade individual, sem contexto social.",
-        "Diferença e diversidade torna desnecessario comparar grupos e referências coletivas."
+        "a afirmacao esta correta, porque diversidade envolve pluralidade e disputa por reconhecimento",
+        "Diferenca e diversidade nao pode ser observado em situacoes do cotidiano.",
+        "Diferenca e diversidade depende apenas da vontade individual, sem contexto social.",
+        "Diferenca e diversidade torna desnecessario comparar grupos e referencias coletivas."
       ],
-      "correta": "a afirmação esta correta, porque diversidade envolve pluralidade e disputa por reconhecimento",
-      "comentario": "A avaliação correta recupera o núcleo teórico de diferença e diversidade.",
+      "correta": "a afirmacao esta correta, porque diversidade envolve pluralidade e disputa por reconhecimento",
+      "comentario": "A avaliacao correta recupera o nucleo teorico de diferenca e diversidade.",
       "tempoEstimado": 50,
       "tags": [
         "identidade",
@@ -2860,20 +2861,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Diferença e diversidade",
+      "subtopico": "Diferenca e diversidade",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando um espaço impõe um único modelo de identidade e comportamento como legitimo, a melhor interpretação sociológica e que:",
+      "enunciado": "Quando um espaco impoe um unico modelo de identidade e comportamento como legitimo, a melhor interpretacao sociologica e que:",
       "opcoes": [
-        "as diferenças tendem a ser silenciadas e transformadas em exclusão",
-        "Diferença e diversidade desaparece porque a sociedade não produz reconhecimento nem expectativas.",
-        "Diferença e diversidade deixa de existir sempre que surgem conflitos entre grupos.",
-        "Diferença e diversidade só importa em sociedades antigas, não no presente."
+        "as diferencas tendem a ser silenciadas e transformadas em exclusao",
+        "Diferenca e diversidade desaparece porque a sociedade nao produz reconhecimento nem expectativas.",
+        "Diferenca e diversidade deixa de existir sempre que surgem conflitos entre grupos.",
+        "Diferenca e diversidade so importa em sociedades antigas, nao no presente."
       ],
-      "correta": "as diferenças tendem a ser silenciadas e transformadas em exclusão",
-      "comentario": "A conclusão correta mostra como a ausencia ou a fragilidade do fenomeno afeta a vida social.",
+      "correta": "as diferencas tendem a ser silenciadas e transformadas em exclusao",
+      "comentario": "A conclusao correta mostra como a ausencia ou a fragilidade do fenomeno afeta a vida social.",
       "tempoEstimado": 50,
       "tags": [
         "identidade",
@@ -2899,20 +2900,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Diferença e diversidade",
+      "subtopico": "Diferenca e diversidade",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente diferença e diversidade a uma situação de comunidade escolar?",
+      "enunciado": "Qual alternativa aplica corretamente diferenca e diversidade a uma situacao de comunidade escolar?",
       "opcoes": [
-        "a escola adota estrategias para acolher linguagens, referências e experiências diversas entre os estudantes",
-        "a turma debate práticas que ampliam pertencimento entre estudantes recem-chegados",
+        "a escola adota estrategias para acolher linguagens, referencias e experiencias diversas entre os estudantes",
+        "a turma debate praticas que ampliam pertencimento entre estudantes recem-chegados",
         "a escola discute como piadas e comentarios generalizantes reproduzem estereotipos",
-        "a turma analisa por que insultos dirigidos a origem, gênero ou cor expressam preconceito"
+        "a turma analisa por que insultos dirigidos a origem, genero ou cor expressam preconceito"
       ],
-      "correta": "a escola adota estrategias para acolher linguagens, referências e experiências diversas entre os estudantes",
-      "comentario": "A alternativa correta aproxima diferença e diversidade de um contexto escolar concreto.",
+      "correta": "a escola adota estrategias para acolher linguagens, referencias e experiencias diversas entre os estudantes",
+      "comentario": "A alternativa correta aproxima diferenca e diversidade de um contexto escolar concreto.",
       "tempoEstimado": 55,
       "tags": [
         "identidade",
@@ -2938,20 +2939,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Diferença e diversidade",
+      "subtopico": "Diferenca e diversidade",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual sintese final representa melhor diferença e diversidade?",
+      "enunciado": "Qual sintese final representa melhor diferenca e diversidade?",
       "opcoes": [
-        "diferença e diversidade dizem respeito a pluralidade de modos de ser e viver presentes na sociedade",
-        "Diferença e diversidade é um fator biológico fixo, sem relação com aprendizagem e grupos sociais.",
-        "Diferença e diversidade explica apenas escolhas privadas e ignora a dimensão coletiva.",
-        "Diferença e diversidade impede qualquer mudança historica ou social."
+        "diferenca e diversidade dizem respeito a pluralidade de modos de ser e viver presentes na sociedade",
+        "Diferenca e diversidade e um fator biologico fixo, sem relacao com aprendizagem e grupos sociais.",
+        "Diferenca e diversidade explica apenas escolhas privadas e ignora a dimensao coletiva.",
+        "Diferenca e diversidade impede qualquer mudanca historica ou social."
       ],
-      "correta": "diferença e diversidade dizem respeito a pluralidade de modos de ser e viver presentes na sociedade",
-      "comentario": "A síntese correta preserva a definição, o alcance e o uso analítico de diferença e diversidade.",
+      "correta": "diferenca e diversidade dizem respeito a pluralidade de modos de ser e viver presentes na sociedade",
+      "comentario": "A sintese correta preserva a definicao, o alcance e o uso analitico de diferenca e diversidade.",
       "tempoEstimado": 60,
       "tags": [
         "identidade",
@@ -2977,7 +2978,7 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Estereótipos",
+      "subtopico": "Estereotipos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
@@ -2985,12 +2986,12 @@ export const identidade = {
       "enunciado": "Em Sociologia, estereotipos pode ser definido(a) como:",
       "opcoes": [
         "imagens simplificadas e generalizantes atribuidas a grupos sociais, como se todos os seus membros fossem iguais",
-        "o sentimento e a experiência de fazer parte de grupos, redes e espaços sociais reconhecidos como significativos",
-        "a presença de multiplas formas de existir, agir e se identificar na vida social, sem reduzir a sociedade a um único padrao",
-        "o julgamento prévio e negativo dirigido a pessoas ou grupos com base em características sociais, culturais, raciais, de gênero ou outras"
+        "o sentimento e a experiencia de fazer parte de grupos, redes e espacos sociais reconhecidos como significativos",
+        "a presenca de multiplas formas de existir, agir e se identificar na vida social, sem reduzir a sociedade a um unico padrao",
+        "o julgamento previo e negativo dirigido a pessoas ou grupos com base em caracteristicas sociais, culturais, raciais, de genero ou outras"
       ],
       "correta": "imagens simplificadas e generalizantes atribuidas a grupos sociais, como se todos os seus membros fossem iguais",
-      "comentario": "Estereótipos refere-se a imagens simplificadas e generalizantes atribuidas a grupos sociais, como se todos os seus membros fossem iguais.",
+      "comentario": "Estereotipos refere-se a imagens simplificadas e generalizantes atribuidas a grupos sociais, como se todos os seus membros fossem iguais.",
       "tempoEstimado": 20,
       "tags": [
         "identidade",
@@ -3016,20 +3017,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Estereótipos",
+      "subtopico": "Estereotipos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: alguem afirma que todos os jovens, todos os moradores de uma regiao ou todo grupo social tem o mesmo comportamento Esse caso exemplifica melhor qual subtopico?",
+      "enunciado": "Observe a situacao: alguem afirma que todos os jovens, todos os moradores de uma regiao ou todo grupo social tem o mesmo comportamento Esse caso exemplifica melhor qual subtopico?",
       "opcoes": [
-        "Estereótipos",
+        "Estereotipos",
         "Pertencimento social",
-        "Diferença e diversidade",
+        "Diferenca e diversidade",
         "Preconceito"
       ],
-      "correta": "Estereótipos",
-      "comentario": "A situação apresentada é um exemplo de estereotipos.",
+      "correta": "Estereotipos",
+      "comentario": "A situacao apresentada e um exemplo de estereotipos.",
       "tempoEstimado": 25,
       "tags": [
         "identidade",
@@ -3055,20 +3056,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Estereótipos",
+      "subtopico": "Estereotipos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmação descreve corretamente estereotipos?",
+      "enunciado": "Qual afirmacao descreve corretamente estereotipos?",
       "opcoes": [
         "Imagens simplificadas e generalizantes atribuidas a grupos sociais, como se todos os seus membros fossem iguais.",
         "Descricoes neutras e completas da realidade social.",
-        "Preconceito significa o julgamento prévio e negativo dirigido a pessoas ou grupos com base em características sociais, culturais, raciais, de gênero ou outras.",
-        "Identidade trata apenas de características biológicas fixas."
+        "Preconceito significa o julgamento previo e negativo dirigido a pessoas ou grupos com base em caracteristicas sociais, culturais, raciais, de genero ou outras.",
+        "Identidade trata apenas de caracteristicas biologicas fixas."
       ],
       "correta": "Imagens simplificadas e generalizantes atribuidas a grupos sociais, como se todos os seus membros fossem iguais.",
-      "comentario": "A afirmação correta retoma o sentido central de estereotipos.",
+      "comentario": "A afirmacao correta retoma o sentido central de estereotipos.",
       "tempoEstimado": 30,
       "tags": [
         "identidade",
@@ -3094,20 +3095,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Estereótipos",
+      "subtopico": "Estereotipos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
       "enunciado": "Assinale a alternativa em que o exemplo NAO corresponde a estereotipos.",
       "opcoes": [
-        "a análise que reconhece diversidade interna e trajetórias diferentes dentro de um grupo",
+        "a analise que reconhece diversidade interna e trajetorias diferentes dentro de um grupo",
         "alguem afirma que todos os jovens, todos os moradores de uma regiao ou todo grupo social tem o mesmo comportamento",
-        "um comentario reduz colegas de um bairro a uma única característica e ignora suas diferenças internas",
-        "uma turma questiona imagens prontas que simplificam grupos sociais em rótulos repetidos"
+        "um comentario reduz colegas de um bairro a uma unica caracteristica e ignora suas diferencas internas",
+        "uma turma questiona imagens prontas que simplificam grupos sociais em rotulos repetidos"
       ],
-      "correta": "a análise que reconhece diversidade interna e trajetórias diferentes dentro de um grupo",
-      "comentario": "a análise que reconhece diversidade interna e trajetórias diferentes dentro de um grupo não expressa estereotipos, enquanto as demais alternativas se relacionam com esse subtopico.",
+      "correta": "a analise que reconhece diversidade interna e trajetorias diferentes dentro de um grupo",
+      "comentario": "a analise que reconhece diversidade interna e trajetorias diferentes dentro de um grupo nao expressa estereotipos, enquanto as demais alternativas se relacionam com esse subtopico.",
       "tempoEstimado": 30,
       "tags": [
         "identidade",
@@ -3133,7 +3134,7 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Estereótipos",
+      "subtopico": "Estereotipos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
@@ -3141,12 +3142,12 @@ export const identidade = {
       "enunciado": "Quando se estuda estereotipos, o foco principal esta em:",
       "opcoes": [
         "as generalizacoes simplificadoras sobre grupos e identidades sociais",
-        "o vinculo subjetivo e social que conecta indivíduos a grupos e espaços coletivos",
-        "a pluralidade de sujeitos e referências presentes na vida social",
+        "o vinculo subjetivo e social que conecta individuos a grupos e espacos coletivos",
+        "a pluralidade de sujeitos e referencias presentes na vida social",
         "os julgamentos negativos antecipados que recaem sobre grupos e identidades"
       ],
       "correta": "as generalizacoes simplificadoras sobre grupos e identidades sociais",
-      "comentario": "Estereótipos volta a atenção para as generalizacoes simplificadoras sobre grupos e identidades sociais.",
+      "comentario": "Estereotipos volta a atencao para as generalizacoes simplificadoras sobre grupos e identidades sociais.",
       "tempoEstimado": 35,
       "tags": [
         "identidade",
@@ -3172,20 +3173,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Estereótipos",
+      "subtopico": "Estereotipos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferença entre estereotipos e preconceito e que:",
+      "enunciado": "A principal diferenca entre estereotipos e preconceito e que:",
       "opcoes": [
-        "estereotipos são imagens simplificadas sobre grupos, enquanto preconceito envolve julgamento negativo ou discriminatorio com base nessas imagens",
-        "Estereótipos e Preconceito são exatamente o mesmo fenomeno social.",
-        "Preconceito depende apenas da biologia, enquanto Estereótipos depende só da economia.",
-        "Estereótipos elimina a necessidade de observar contextos e relações sociais."
+        "estereotipos sao imagens simplificadas sobre grupos, enquanto preconceito envolve julgamento negativo ou discriminatorio com base nessas imagens",
+        "Estereotipos e Preconceito sao exatamente o mesmo fenomeno social.",
+        "Preconceito depende apenas da biologia, enquanto Estereotipos depende so da economia.",
+        "Estereotipos elimina a necessidade de observar contextos e relacoes sociais."
       ],
-      "correta": "estereotipos são imagens simplificadas sobre grupos, enquanto preconceito envolve julgamento negativo ou discriminatorio com base nessas imagens",
-      "comentario": "A diferença correta ajuda a separar dois conceitos próximos sem misturar seus significados.",
+      "correta": "estereotipos sao imagens simplificadas sobre grupos, enquanto preconceito envolve julgamento negativo ou discriminatorio com base nessas imagens",
+      "comentario": "A diferenca correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
       "tempoEstimado": 35,
       "tags": [
         "identidade",
@@ -3211,20 +3212,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Estereótipos",
+      "subtopico": "Estereotipos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: um comentario reduz colegas de um bairro a uma única característica e ignora suas diferenças internas A leitura sociológica mais adequada aponta para:",
+      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: um comentario reduz colegas de um bairro a uma unica caracteristica e ignora suas diferencas internas A leitura sociologica mais adequada aponta para:",
       "opcoes": [
         "estereotipos facilitam preconceitos e obscurecem a diversidade real existente nos grupos",
-        "Estereótipos mostra que a vida social não interfere nas formas de reconhecimento.",
-        "Estereótipos prova que todos os grupos agem da mesma forma em qualquer contexto.",
-        "Estereótipos significa ausencia completa de conflitos e diferenças."
+        "Estereotipos mostra que a vida social nao interfere nas formas de reconhecimento.",
+        "Estereotipos prova que todos os grupos agem da mesma forma em qualquer contexto.",
+        "Estereotipos significa ausencia completa de conflitos e diferencas."
       ],
       "correta": "estereotipos facilitam preconceitos e obscurecem a diversidade real existente nos grupos",
-      "comentario": "Estereótipos permite interpretar o caso a partir de relações, reconhecimento e pertencimento.",
+      "comentario": "Estereotipos permite interpretar o caso a partir de relacoes, reconhecimento e pertencimento.",
       "tempoEstimado": 40,
       "tags": [
         "identidade",
@@ -3250,20 +3251,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Estereótipos",
+      "subtopico": "Estereotipos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação abaixo evidencia estereotipos de maneira mais clara?",
+      "enunciado": "Qual situacao abaixo evidencia estereotipos de maneira mais clara?",
       "opcoes": [
-        "uma turma questiona imagens prontas que simplificam grupos sociais em rótulos repetidos",
+        "uma turma questiona imagens prontas que simplificam grupos sociais em rotulos repetidos",
         "participar de um coletivo reforca o sentimento de fazer parte de algo maior que o individuo",
-        "uma instituição reve práticas para acolher estudantes com diferentes trajetórias e identidades",
-        "uma situação de exclusão se apoia em juízos negativos anteriores ao contato real com a pessoa"
+        "uma instituicao reve praticas para acolher estudantes com diferentes trajetorias e identidades",
+        "uma situacao de exclusao se apoia em juizos negativos anteriores ao contato real com a pessoa"
       ],
-      "correta": "uma turma questiona imagens prontas que simplificam grupos sociais em rótulos repetidos",
-      "comentario": "A alternativa correta traduz estereotipos em uma situação concreta de vida social.",
+      "correta": "uma turma questiona imagens prontas que simplificam grupos sociais em rotulos repetidos",
+      "comentario": "A alternativa correta traduz estereotipos em uma situacao concreta de vida social.",
       "tempoEstimado": 40,
       "tags": [
         "identidade",
@@ -3289,20 +3290,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Estereótipos",
+      "subtopico": "Estereotipos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"alguem afirma que todos os jovens, todos os moradores de uma regiao ou todo grupo social tem o mesmo comportamento\", qual conclusão e mais adequada?",
+      "enunciado": "Ao analisar o caso \"alguem afirma que todos os jovens, todos os moradores de uma regiao ou todo grupo social tem o mesmo comportamento\", qual conclusao e mais adequada?",
       "opcoes": [
-        "reduzir um grupo a um único traço apaga complexidade e diversidade social",
-        "Estereótipos indica que valores sociais nunca mudam.",
-        "Estereótipos só pode ser explicado por fatores biológicos.",
-        "Estereótipos dispensa comparação entre grupos e contextos."
+        "reduzir um grupo a um unico traco apaga complexidade e diversidade social",
+        "Estereotipos indica que valores sociais nunca mudam.",
+        "Estereotipos so pode ser explicado por fatores biologicos.",
+        "Estereotipos dispensa comparacao entre grupos e contextos."
       ],
-      "correta": "reduzir um grupo a um único traço apaga complexidade e diversidade social",
-      "comentario": "A conclusão correta mantém o foco no sentido sociológico do caso apresentado.",
+      "correta": "reduzir um grupo a um unico traco apaga complexidade e diversidade social",
+      "comentario": "A conclusao correta mantem o foco no sentido sociologico do caso apresentado.",
       "tempoEstimado": 45,
       "tags": [
         "identidade",
@@ -3328,19 +3329,19 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Estereótipos",
+      "subtopico": "Estereotipos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 7,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
       "enunciado": "Qual pergunta de pesquisa se relaciona melhor com estereotipos?",
       "opcoes": [
-        "de que modo imagens simplificadas sobre grupos influenciam relações sociais?",
-        "como normas sociais de gênero afetam reconhecimento e pertencimento?",
-        "como pertencimentos étnico-raciais se articulam com formas de representação em ambientes digitais?",
-        "como pessoas e grupos constroem sentidos sobre quem são?"
+        "de que modo imagens simplificadas sobre grupos influenciam relacoes sociais?",
+        "como normas sociais de genero afetam reconhecimento e pertencimento?",
+        "como pertencimentos etnico-raciais se articulam com formas de representacao em ambientes digitais?",
+        "como pessoas e grupos constroem sentidos sobre quem sao?"
       ],
-      "correta": "de que modo imagens simplificadas sobre grupos influenciam relações sociais?",
+      "correta": "de que modo imagens simplificadas sobre grupos influenciam relacoes sociais?",
       "comentario": "A pergunta correta ajuda a investigar estereotipos de forma coerente com o subtopico.",
       "tempoEstimado": 45,
       "tags": [
@@ -3367,20 +3368,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Estereótipos",
+      "subtopico": "Estereotipos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a afirmação que revela compreensão inadequada de estereotipos.",
+      "enunciado": "Assinale a afirmacao que revela compreensao inadequada de estereotipos.",
       "opcoes": [
         "Descricoes neutras e completas da realidade social.",
-        "Estereótipos pode ser observado em contextos de reconhecimento e convivência social.",
-        "Estereótipos ajuda a analisar pertencimentos, diferenças e trajetórias.",
-        "Estereótipos depende da interação entre indivíduos, grupos e instituições."
+        "Estereotipos pode ser observado em contextos de reconhecimento e convivencia social.",
+        "Estereotipos ajuda a analisar pertencimentos, diferencas e trajetorias.",
+        "Estereotipos depende da interacao entre individuos, grupos e instituicoes."
       ],
       "correta": "Descricoes neutras e completas da realidade social.",
-      "comentario": "A alternativa incorreta expressa uma confusão comum sobre estereotipos.",
+      "comentario": "A alternativa incorreta expressa uma confusao comum sobre estereotipos.",
       "tempoEstimado": 45,
       "tags": [
         "identidade",
@@ -3406,20 +3407,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Estereótipos",
+      "subtopico": "Estereotipos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
       "enunciado": "Em um debate sobre identidade, um estudante afirmou: \"estereotipos simplificam grupos e podem sustentar tratamentos injustos\". Qual avaliacao e mais consistente?",
       "opcoes": [
-        "a afirmação esta correta, porque generalizacoes tendem a apoiar exclusoes e julgamentos",
-        "Estereótipos não pode ser observado em situações do cotidiano.",
-        "Estereótipos depende apenas da vontade individual, sem contexto social.",
-        "Estereótipos torna desnecessario comparar grupos e referências coletivas."
+        "a afirmacao esta correta, porque generalizacoes tendem a apoiar exclusoes e julgamentos",
+        "Estereotipos nao pode ser observado em situacoes do cotidiano.",
+        "Estereotipos depende apenas da vontade individual, sem contexto social.",
+        "Estereotipos torna desnecessario comparar grupos e referencias coletivas."
       ],
-      "correta": "a afirmação esta correta, porque generalizacoes tendem a apoiar exclusoes e julgamentos",
-      "comentario": "A avaliação correta recupera o núcleo teórico de estereotipos.",
+      "correta": "a afirmacao esta correta, porque generalizacoes tendem a apoiar exclusoes e julgamentos",
+      "comentario": "A avaliacao correta recupera o nucleo teorico de estereotipos.",
       "tempoEstimado": 50,
       "tags": [
         "identidade",
@@ -3445,20 +3446,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Estereótipos",
+      "subtopico": "Estereotipos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando uma análise considera diferenças internas e rejeita imagens prontas sobre um grupo, a melhor interpretação sociológica e que:",
+      "enunciado": "Quando uma analise considera diferencas internas e rejeita imagens prontas sobre um grupo, a melhor interpretacao sociologica e que:",
       "opcoes": [
         "reduz-se a leitura estereotipada da realidade social",
-        "Estereótipos desaparece porque a sociedade não produz reconhecimento nem expectativas.",
-        "Estereótipos deixa de existir sempre que surgem conflitos entre grupos.",
-        "Estereótipos só importa em sociedades antigas, não no presente."
+        "Estereotipos desaparece porque a sociedade nao produz reconhecimento nem expectativas.",
+        "Estereotipos deixa de existir sempre que surgem conflitos entre grupos.",
+        "Estereotipos so importa em sociedades antigas, nao no presente."
       ],
       "correta": "reduz-se a leitura estereotipada da realidade social",
-      "comentario": "A conclusão correta mostra como a ausencia ou a fragilidade do fenomeno afeta a vida social.",
+      "comentario": "A conclusao correta mostra como a ausencia ou a fragilidade do fenomeno afeta a vida social.",
       "tempoEstimado": 50,
       "tags": [
         "identidade",
@@ -3484,17 +3485,17 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Estereótipos",
+      "subtopico": "Estereotipos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente estereotipos a uma situação de comunidade escolar?",
+      "enunciado": "Qual alternativa aplica corretamente estereotipos a uma situacao de comunidade escolar?",
       "opcoes": [
         "a escola discute como piadas e comentarios generalizantes reproduzem estereotipos",
-        "a escola discute como o respeito ao nome, ao pronome e a autoidentificacao afeta o convívio",
-        "a turma analisa campanhas digitais de afirmação racial e de combate a discursos discriminatorios",
-        "a escola promove atividades em que estudantes refletem sobre suas trajetórias e referências sociais"
+        "a escola discute como o respeito ao nome, ao pronome e a autoidentificacao afeta o convivio",
+        "a turma analisa campanhas digitais de afirmacao racial e de combate a discursos discriminatorios",
+        "a escola promove atividades em que estudantes refletem sobre suas trajetorias e referencias sociais"
       ],
       "correta": "a escola discute como piadas e comentarios generalizantes reproduzem estereotipos",
       "comentario": "A alternativa correta aproxima estereotipos de um contexto escolar concreto.",
@@ -3523,20 +3524,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Estereótipos",
+      "subtopico": "Estereotipos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
       "enunciado": "Qual sintese final representa melhor estereotipos?",
       "opcoes": [
-        "estereotipos são generalizacoes simplificadoras que reduzem grupos a imagens prontas",
-        "Estereótipos é um fator biológico fixo, sem relação com aprendizagem e grupos sociais.",
-        "Estereótipos explica apenas escolhas privadas e ignora a dimensão coletiva.",
-        "Estereótipos impede qualquer mudança historica ou social."
+        "estereotipos sao generalizacoes simplificadoras que reduzem grupos a imagens prontas",
+        "Estereotipos e um fator biologico fixo, sem relacao com aprendizagem e grupos sociais.",
+        "Estereotipos explica apenas escolhas privadas e ignora a dimensao coletiva.",
+        "Estereotipos impede qualquer mudanca historica ou social."
       ],
-      "correta": "estereotipos são generalizacoes simplificadoras que reduzem grupos a imagens prontas",
-      "comentario": "A síntese correta preserva a definição, o alcance e o uso analítico de estereotipos.",
+      "correta": "estereotipos sao generalizacoes simplificadoras que reduzem grupos a imagens prontas",
+      "comentario": "A sintese correta preserva a definicao, o alcance e o uso analitico de estereotipos.",
       "tempoEstimado": 60,
       "tags": [
         "identidade",
@@ -3569,13 +3570,13 @@ export const identidade = {
       "tipo": "multipla_escolha",
       "enunciado": "Em Sociologia, preconceito pode ser definido(a) como:",
       "opcoes": [
-        "o julgamento prévio e negativo dirigido a pessoas ou grupos com base em características sociais, culturais, raciais, de gênero ou outras",
-        "a construção social pela qual indivíduos e grupos elaboram sentidos sobre quem são e como se reconhecem",
-        "a dimensão da identidade ligada a trajetória singular de cada pessoa, articulando experiência propria, memoria e autoimagem",
-        "o reconhecimento compartilhado por um grupo em torno de historias, símbolos, interesses e referências comuns"
+        "o julgamento previo e negativo dirigido a pessoas ou grupos com base em caracteristicas sociais, culturais, raciais, de genero ou outras",
+        "a construcao social pela qual individuos e grupos elaboram sentidos sobre quem sao e como se reconhecem",
+        "a dimensao da identidade ligada a trajetoria singular de cada pessoa, articulando experiencia propria, memoria e autoimagem",
+        "o reconhecimento compartilhado por um grupo em torno de historias, simbolos, interesses e referencias comuns"
       ],
-      "correta": "o julgamento prévio e negativo dirigido a pessoas ou grupos com base em características sociais, culturais, raciais, de gênero ou outras",
-      "comentario": "Preconceito refere-se ao julgamento prévio e negativo dirigido a pessoas ou grupos com base em características sociais, culturais, raciais, de gênero ou outras.",
+      "correta": "o julgamento previo e negativo dirigido a pessoas ou grupos com base em caracteristicas sociais, culturais, raciais, de genero ou outras",
+      "comentario": "Preconceito refere-se ao julgamento previo e negativo dirigido a pessoas ou grupos com base em caracteristicas sociais, culturais, raciais, de genero ou outras.",
       "tempoEstimado": 20,
       "tags": [
         "identidade",
@@ -3606,7 +3607,7 @@ export const identidade = {
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: alguem desqualifica uma pessoa antes de conhece-la por causa do grupo ao qual ela pertence Esse caso exemplifica melhor qual subtopico?",
+      "enunciado": "Observe a situacao: alguem desqualifica uma pessoa antes de conhece-la por causa do grupo ao qual ela pertence Esse caso exemplifica melhor qual subtopico?",
       "opcoes": [
         "Preconceito",
         "Conceito de identidade",
@@ -3614,7 +3615,7 @@ export const identidade = {
         "Identidade coletiva"
       ],
       "correta": "Preconceito",
-      "comentario": "A situação apresentada é um exemplo de preconceito.",
+      "comentario": "A situacao apresentada e um exemplo de preconceito.",
       "tempoEstimado": 25,
       "tags": [
         "identidade",
@@ -3645,15 +3646,15 @@ export const identidade = {
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmação descreve corretamente preconceito?",
+      "enunciado": "Qual afirmacao descreve corretamente preconceito?",
       "opcoes": [
-        "O julgamento prévio e negativo dirigido a pessoas ou grupos com base em características sociais, culturais, raciais, de gênero ou outras.",
-        "Uma opiniao pessoal sem impacto nas relações sociais.",
-        "Estereótipos significa imagens simplificadas e generalizantes atribuidas a grupos sociais, como se todos os seus membros fossem iguais.",
-        "Identidade trata apenas de características biológicas fixas."
+        "O julgamento previo e negativo dirigido a pessoas ou grupos com base em caracteristicas sociais, culturais, raciais, de genero ou outras.",
+        "Uma opiniao pessoal sem impacto nas relacoes sociais.",
+        "Estereotipos significa imagens simplificadas e generalizantes atribuidas a grupos sociais, como se todos os seus membros fossem iguais.",
+        "Identidade trata apenas de caracteristicas biologicas fixas."
       ],
-      "correta": "O julgamento prévio e negativo dirigido a pessoas ou grupos com base em características sociais, culturais, raciais, de gênero ou outras.",
-      "comentario": "A afirmação correta retoma o sentido central de preconceito.",
+      "correta": "O julgamento previo e negativo dirigido a pessoas ou grupos com base em caracteristicas sociais, culturais, raciais, de genero ou outras.",
+      "comentario": "A afirmacao correta retoma o sentido central de preconceito.",
       "tempoEstimado": 30,
       "tags": [
         "identidade",
@@ -3686,13 +3687,13 @@ export const identidade = {
       "tipo": "multipla_escolha",
       "enunciado": "Assinale a alternativa em que o exemplo NAO corresponde a preconceito.",
       "opcoes": [
-        "avaliar uma situação concreta sem generalizar nem desqualificar grupos de antemao",
+        "avaliar uma situacao concreta sem generalizar nem desqualificar grupos de antemao",
         "alguem desqualifica uma pessoa antes de conhece-la por causa do grupo ao qual ela pertence",
         "um estudante e tratado como inferior por causa de sua origem social ou de sua identidade",
-        "uma situação de exclusão se apoia em juízos negativos anteriores ao contato real com a pessoa"
+        "uma situacao de exclusao se apoia em juizos negativos anteriores ao contato real com a pessoa"
       ],
-      "correta": "avaliar uma situação concreta sem generalizar nem desqualificar grupos de antemao",
-      "comentario": "avaliar uma situação concreta sem generalizar nem desqualificar grupos de antemao não expressa preconceito, enquanto as demais alternativas se relacionam com esse subtopico.",
+      "correta": "avaliar uma situacao concreta sem generalizar nem desqualificar grupos de antemao",
+      "comentario": "avaliar uma situacao concreta sem generalizar nem desqualificar grupos de antemao nao expressa preconceito, enquanto as demais alternativas se relacionam com esse subtopico.",
       "tempoEstimado": 30,
       "tags": [
         "identidade",
@@ -3727,11 +3728,11 @@ export const identidade = {
       "opcoes": [
         "os julgamentos negativos antecipados que recaem sobre grupos e identidades",
         "os processos pelos quais sujeitos e grupos constroem reconhecimento sobre si",
-        "a singularidade da experiência do sujeito em relação a sua propria autoimagem",
+        "a singularidade da experiencia do sujeito em relacao a sua propria autoimagem",
         "os elementos comuns que produzem pertencimento e reconhecimento grupal"
       ],
       "correta": "os julgamentos negativos antecipados que recaem sobre grupos e identidades",
-      "comentario": "Preconceito volta a atenção para os julgamentos negativos antecipados que recaem sobre grupos e identidades.",
+      "comentario": "Preconceito volta a atencao para os julgamentos negativos antecipados que recaem sobre grupos e identidades.",
       "tempoEstimado": 35,
       "tags": [
         "identidade",
@@ -3762,15 +3763,15 @@ export const identidade = {
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferença entre preconceito e estereotipos e que:",
+      "enunciado": "A principal diferenca entre preconceito e estereotipos e que:",
       "opcoes": [
-        "preconceito envolve julgamento negativo e discriminacao, enquanto estereotipos são imagens simplificadas que podem sustentar esse julgamento",
-        "Preconceito e Estereótipos são exatamente o mesmo fenomeno social.",
-        "Estereótipos depende apenas da biologia, enquanto Preconceito depende só da economia.",
-        "Preconceito elimina a necessidade de observar contextos e relações sociais."
+        "preconceito envolve julgamento negativo e discriminacao, enquanto estereotipos sao imagens simplificadas que podem sustentar esse julgamento",
+        "Preconceito e Estereotipos sao exatamente o mesmo fenomeno social.",
+        "Estereotipos depende apenas da biologia, enquanto Preconceito depende so da economia.",
+        "Preconceito elimina a necessidade de observar contextos e relacoes sociais."
       ],
-      "correta": "preconceito envolve julgamento negativo e discriminacao, enquanto estereotipos são imagens simplificadas que podem sustentar esse julgamento",
-      "comentario": "A diferença correta ajuda a separar dois conceitos próximos sem misturar seus significados.",
+      "correta": "preconceito envolve julgamento negativo e discriminacao, enquanto estereotipos sao imagens simplificadas que podem sustentar esse julgamento",
+      "comentario": "A diferenca correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
       "tempoEstimado": 35,
       "tags": [
         "identidade",
@@ -3801,15 +3802,15 @@ export const identidade = {
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: um estudante e tratado como inferior por causa de sua origem social ou de sua identidade A leitura sociológica mais adequada aponta para:",
+      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: um estudante e tratado como inferior por causa de sua origem social ou de sua identidade A leitura sociologica mais adequada aponta para:",
       "opcoes": [
-        "preconceito legitima desigualdades e compromete relações de respeito e reconhecimento",
-        "Preconceito mostra que a vida social não interfere nas formas de reconhecimento.",
+        "preconceito legitima desigualdades e compromete relacoes de respeito e reconhecimento",
+        "Preconceito mostra que a vida social nao interfere nas formas de reconhecimento.",
         "Preconceito prova que todos os grupos agem da mesma forma em qualquer contexto.",
-        "Preconceito significa ausencia completa de conflitos e diferenças."
+        "Preconceito significa ausencia completa de conflitos e diferencas."
       ],
-      "correta": "preconceito legitima desigualdades e compromete relações de respeito e reconhecimento",
-      "comentario": "Preconceito permite interpretar o caso a partir de relações, reconhecimento e pertencimento.",
+      "correta": "preconceito legitima desigualdades e compromete relacoes de respeito e reconhecimento",
+      "comentario": "Preconceito permite interpretar o caso a partir de relacoes, reconhecimento e pertencimento.",
       "tempoEstimado": 40,
       "tags": [
         "identidade",
@@ -3840,15 +3841,15 @@ export const identidade = {
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação abaixo evidencia preconceito de maneira mais clara?",
+      "enunciado": "Qual situacao abaixo evidencia preconceito de maneira mais clara?",
       "opcoes": [
-        "uma situação de exclusão se apoia em juízos negativos anteriores ao contato real com a pessoa",
-        "um jovem reelabora sua forma de se identificar ao entrar em novos grupos e espaços sociais",
-        "alguem se reconhece por escolhas, memoria e vivencias que não se repetem exatamente em outros indivíduos",
-        "uma comunidade fortalece pertencimento ao valorizar sua história, seus símbolos e suas lutas"
+        "uma situacao de exclusao se apoia em juizos negativos anteriores ao contato real com a pessoa",
+        "um jovem reelabora sua forma de se identificar ao entrar em novos grupos e espacos sociais",
+        "alguem se reconhece por escolhas, memoria e vivencias que nao se repetem exatamente em outros individuos",
+        "uma comunidade fortalece pertencimento ao valorizar sua historia, seus simbolos e suas lutas"
       ],
-      "correta": "uma situação de exclusão se apoia em juízos negativos anteriores ao contato real com a pessoa",
-      "comentario": "A alternativa correta traduz preconceito em uma situação concreta de vida social.",
+      "correta": "uma situacao de exclusao se apoia em juizos negativos anteriores ao contato real com a pessoa",
+      "comentario": "A alternativa correta traduz preconceito em uma situacao concreta de vida social.",
       "tempoEstimado": 40,
       "tags": [
         "identidade",
@@ -3879,15 +3880,15 @@ export const identidade = {
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"alguem desqualifica uma pessoa antes de conhece-la por causa do grupo ao qual ela pertence\", qual conclusão e mais adequada?",
+      "enunciado": "Ao analisar o caso \"alguem desqualifica uma pessoa antes de conhece-la por causa do grupo ao qual ela pertence\", qual conclusao e mais adequada?",
       "opcoes": [
         "quando um grupo e inferiorizado antes do contato real, ha manifestacao de preconceito",
         "Preconceito indica que valores sociais nunca mudam.",
-        "Preconceito só pode ser explicado por fatores biológicos.",
-        "Preconceito dispensa comparação entre grupos e contextos."
+        "Preconceito so pode ser explicado por fatores biologicos.",
+        "Preconceito dispensa comparacao entre grupos e contextos."
       ],
       "correta": "quando um grupo e inferiorizado antes do contato real, ha manifestacao de preconceito",
-      "comentario": "A conclusão correta mantém o foco no sentido sociológico do caso apresentado.",
+      "comentario": "A conclusao correta mantem o foco no sentido sociologico do caso apresentado.",
       "tempoEstimado": 45,
       "tags": [
         "identidade",
@@ -3920,12 +3921,12 @@ export const identidade = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual pergunta de pesquisa se relaciona melhor com preconceito?",
       "opcoes": [
-        "como julgamentos prévios negativos afetam a vida de grupos sociais?",
-        "como pessoas e grupos constroem sentidos sobre quem são?",
-        "de que modo uma pessoa organiza memoria e experiência para falar de si?",
-        "como um grupo fortalece o reconhecimento de sua história e de seus símbolos comuns?"
+        "como julgamentos previos negativos afetam a vida de grupos sociais?",
+        "como pessoas e grupos constroem sentidos sobre quem sao?",
+        "de que modo uma pessoa organiza memoria e experiencia para falar de si?",
+        "como um grupo fortalece o reconhecimento de sua historia e de seus simbolos comuns?"
       ],
-      "correta": "como julgamentos prévios negativos afetam a vida de grupos sociais?",
+      "correta": "como julgamentos previos negativos afetam a vida de grupos sociais?",
       "comentario": "A pergunta correta ajuda a investigar preconceito de forma coerente com o subtopico.",
       "tempoEstimado": 45,
       "tags": [
@@ -3957,15 +3958,15 @@ export const identidade = {
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a afirmação que revela compreensão inadequada de preconceito.",
+      "enunciado": "Assinale a afirmacao que revela compreensao inadequada de preconceito.",
       "opcoes": [
-        "Uma opiniao pessoal sem impacto nas relações sociais.",
-        "Preconceito pode ser observado em contextos de reconhecimento e convivência social.",
-        "Preconceito ajuda a analisar pertencimentos, diferenças e trajetórias.",
-        "Preconceito depende da interação entre indivíduos, grupos e instituições."
+        "Uma opiniao pessoal sem impacto nas relacoes sociais.",
+        "Preconceito pode ser observado em contextos de reconhecimento e convivencia social.",
+        "Preconceito ajuda a analisar pertencimentos, diferencas e trajetorias.",
+        "Preconceito depende da interacao entre individuos, grupos e instituicoes."
       ],
-      "correta": "Uma opiniao pessoal sem impacto nas relações sociais.",
-      "comentario": "A alternativa incorreta expressa uma confusão comum sobre preconceito.",
+      "correta": "Uma opiniao pessoal sem impacto nas relacoes sociais.",
+      "comentario": "A alternativa incorreta expressa uma confusao comum sobre preconceito.",
       "tempoEstimado": 45,
       "tags": [
         "identidade",
@@ -3996,15 +3997,15 @@ export const identidade = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre identidade, um estudante afirmou: \"preconceito pode se apoiar em estereotipos, mas se expressa como julgamento e exclusão\". Qual avaliacao e mais consistente?",
+      "enunciado": "Em um debate sobre identidade, um estudante afirmou: \"preconceito pode se apoiar em estereotipos, mas se expressa como julgamento e exclusao\". Qual avaliacao e mais consistente?",
       "opcoes": [
-        "a afirmação esta correta, porque o preconceito ultrapassa a simples imagem estereotipada",
-        "Preconceito não pode ser observado em situações do cotidiano.",
+        "a afirmacao esta correta, porque o preconceito ultrapassa a simples imagem estereotipada",
+        "Preconceito nao pode ser observado em situacoes do cotidiano.",
         "Preconceito depende apenas da vontade individual, sem contexto social.",
-        "Preconceito torna desnecessario comparar grupos e referências coletivas."
+        "Preconceito torna desnecessario comparar grupos e referencias coletivas."
       ],
-      "correta": "a afirmação esta correta, porque o preconceito ultrapassa a simples imagem estereotipada",
-      "comentario": "A avaliação correta recupera o núcleo teórico de preconceito.",
+      "correta": "a afirmacao esta correta, porque o preconceito ultrapassa a simples imagem estereotipada",
+      "comentario": "A avaliacao correta recupera o nucleo teorico de preconceito.",
       "tempoEstimado": 50,
       "tags": [
         "identidade",
@@ -4035,15 +4036,15 @@ export const identidade = {
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando um grupo e tratado com abertura e sem juízos antecipados desqualificadores, a melhor interpretação sociológica e que:",
+      "enunciado": "Quando um grupo e tratado com abertura e sem juizos antecipados desqualificadores, a melhor interpretacao sociologica e que:",
       "opcoes": [
-        "ha menor presença de preconceito nessa relação",
-        "Preconceito desaparece porque a sociedade não produz reconhecimento nem expectativas.",
+        "ha menor presenca de preconceito nessa relacao",
+        "Preconceito desaparece porque a sociedade nao produz reconhecimento nem expectativas.",
         "Preconceito deixa de existir sempre que surgem conflitos entre grupos.",
-        "Preconceito só importa em sociedades antigas, não no presente."
+        "Preconceito so importa em sociedades antigas, nao no presente."
       ],
-      "correta": "ha menor presença de preconceito nessa relação",
-      "comentario": "A conclusão correta mostra como a ausencia ou a fragilidade do fenomeno afeta a vida social.",
+      "correta": "ha menor presenca de preconceito nessa relacao",
+      "comentario": "A conclusao correta mostra como a ausencia ou a fragilidade do fenomeno afeta a vida social.",
       "tempoEstimado": 50,
       "tags": [
         "identidade",
@@ -4074,14 +4075,14 @@ export const identidade = {
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente preconceito a uma situação de comunidade escolar?",
+      "enunciado": "Qual alternativa aplica corretamente preconceito a uma situacao de comunidade escolar?",
       "opcoes": [
-        "a turma analisa por que insultos dirigidos a origem, gênero ou cor expressam preconceito",
-        "a escola promove atividades em que estudantes refletem sobre suas trajetórias e referências sociais",
+        "a turma analisa por que insultos dirigidos a origem, genero ou cor expressam preconceito",
+        "a escola promove atividades em que estudantes refletem sobre suas trajetorias e referencias sociais",
         "a turma discute como colegas do mesmo bairro podem construir autoimagens diferentes",
-        "a escola analisa como grêmios, equipes e coletivos constroem identidade coletiva"
+        "a escola analisa como gremios, equipes e coletivos constroem identidade coletiva"
       ],
-      "correta": "a turma analisa por que insultos dirigidos a origem, gênero ou cor expressam preconceito",
+      "correta": "a turma analisa por que insultos dirigidos a origem, genero ou cor expressam preconceito",
       "comentario": "A alternativa correta aproxima preconceito de um contexto escolar concreto.",
       "tempoEstimado": 55,
       "tags": [
@@ -4115,13 +4116,13 @@ export const identidade = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual sintese final representa melhor preconceito?",
       "opcoes": [
-        "preconceito é o julgamento negativo prévio dirigido a pessoas e grupos sociais",
-        "Preconceito é um fator biológico fixo, sem relação com aprendizagem e grupos sociais.",
-        "Preconceito explica apenas escolhas privadas e ignora a dimensão coletiva.",
-        "Preconceito impede qualquer mudança historica ou social."
+        "preconceito e o julgamento negativo previo dirigido a pessoas e grupos sociais",
+        "Preconceito e um fator biologico fixo, sem relacao com aprendizagem e grupos sociais.",
+        "Preconceito explica apenas escolhas privadas e ignora a dimensao coletiva.",
+        "Preconceito impede qualquer mudanca historica ou social."
       ],
-      "correta": "preconceito é o julgamento negativo prévio dirigido a pessoas e grupos sociais",
-      "comentario": "A síntese correta preserva a definição, o alcance e o uso analítico de preconceito.",
+      "correta": "preconceito e o julgamento negativo previo dirigido a pessoas e grupos sociais",
+      "comentario": "A sintese correta preserva a definicao, o alcance e o uso analitico de preconceito.",
       "tempoEstimado": 60,
       "tags": [
         "identidade",
@@ -4147,20 +4148,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Juventude e construção de si",
+      "subtopico": "Juventude e construcao de si",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Sociologia, juventude e construção de si pode ser definido(a) como:",
+      "enunciado": "Em Sociologia, juventude e construcao de si pode ser definido(a) como:",
       "opcoes": [
-        "o processo pelo qual jovens elaboram identidades, projetos e autoimagens em interação com grupos, instituições e referências culturais",
-        "a forma como uma pessoa se reconhece e se posiciona em relação ao gênero, em interação com normas e expectativas sociais",
-        "as formas de construção de si ligadas ao pertencimento étnico-racial e as representações produzidas e disputadas também em ambientes digitais",
-        "a construção social pela qual indivíduos e grupos elaboram sentidos sobre quem são e como se reconhecem"
+        "o processo pelo qual jovens elaboram identidades, projetos e autoimagens em interacao com grupos, instituicoes e referencias culturais",
+        "a forma como uma pessoa se reconhece e se posiciona em relacao ao genero, em interacao com normas e expectativas sociais",
+        "as formas de construcao de si ligadas ao pertencimento etnico-racial e as representacoes produzidas e disputadas tambem em ambientes digitais",
+        "a construcao social pela qual individuos e grupos elaboram sentidos sobre quem sao e como se reconhecem"
       ],
-      "correta": "o processo pelo qual jovens elaboram identidades, projetos e autoimagens em interação com grupos, instituições e referências culturais",
-      "comentario": "Juventude e construção de si refere-se ao processo pelo qual jovens elaboram identidades, projetos e autoimagens em interação com grupos, instituições e referências culturais.",
+      "correta": "o processo pelo qual jovens elaboram identidades, projetos e autoimagens em interacao com grupos, instituicoes e referencias culturais",
+      "comentario": "Juventude e construcao de si refere-se ao processo pelo qual jovens elaboram identidades, projetos e autoimagens em interacao com grupos, instituicoes e referencias culturais.",
       "tempoEstimado": 20,
       "tags": [
         "identidade",
@@ -4186,20 +4187,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Juventude e construção de si",
+      "subtopico": "Juventude e construcao de si",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: adolescentes experimentam estilos, grupos e linguagens enquanto constroem referências sobre si Esse caso exemplifica melhor qual subtopico?",
+      "enunciado": "Observe a situacao: adolescentes experimentam estilos, grupos e linguagens enquanto constroem referencias sobre si Esse caso exemplifica melhor qual subtopico?",
       "opcoes": [
-        "Juventude e construção de si",
-        "Identidade de gênero",
-        "Identidade étnico-racial e digital",
+        "Juventude e construcao de si",
+        "Identidade de genero",
+        "Identidade etnico-racial e digital",
         "Conceito de identidade"
       ],
-      "correta": "Juventude e construção de si",
-      "comentario": "A situação apresentada é um exemplo de juventude e construção de si.",
+      "correta": "Juventude e construcao de si",
+      "comentario": "A situacao apresentada e um exemplo de juventude e construcao de si.",
       "tempoEstimado": 25,
       "tags": [
         "identidade",
@@ -4225,20 +4226,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Juventude e construção de si",
+      "subtopico": "Juventude e construcao de si",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmação descreve corretamente juventude e construção de si?",
+      "enunciado": "Qual afirmacao descreve corretamente juventude e construcao de si?",
       "opcoes": [
-        "O processo pelo qual jovens elaboram identidades, projetos e autoimagens em interação com grupos, instituições e referências culturais.",
-        "Uma etapa puramente biológica sem relação com cultura, classe, gênero ou instituições.",
-        "Pertencimento social significa o sentimento e a experiência de fazer parte de grupos, redes e espaços sociais reconhecidos como significativos.",
-        "Identidade trata apenas de características biológicas fixas."
+        "O processo pelo qual jovens elaboram identidades, projetos e autoimagens em interacao com grupos, instituicoes e referencias culturais.",
+        "Uma etapa puramente biologica sem relacao com cultura, classe, genero ou instituicoes.",
+        "Pertencimento social significa o sentimento e a experiencia de fazer parte de grupos, redes e espacos sociais reconhecidos como significativos.",
+        "Identidade trata apenas de caracteristicas biologicas fixas."
       ],
-      "correta": "O processo pelo qual jovens elaboram identidades, projetos e autoimagens em interação com grupos, instituições e referências culturais.",
-      "comentario": "A afirmação correta retoma o sentido central de juventude e construção de si.",
+      "correta": "O processo pelo qual jovens elaboram identidades, projetos e autoimagens em interacao com grupos, instituicoes e referencias culturais.",
+      "comentario": "A afirmacao correta retoma o sentido central de juventude e construcao de si.",
       "tempoEstimado": 30,
       "tags": [
         "identidade",
@@ -4264,20 +4265,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Juventude e construção de si",
+      "subtopico": "Juventude e construcao de si",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que o exemplo NAO corresponde a juventude e construção de si.",
+      "enunciado": "Assinale a alternativa em que o exemplo NAO corresponde a juventude e construcao de si.",
       "opcoes": [
-        "a ideia de que todos os jovens vivem a mesma experiência e constroem identidades do mesmo modo",
-        "adolescentes experimentam estilos, grupos e linguagens enquanto constroem referências sobre si",
-        "um jovem testa pertencimentos e faz escolhas influenciado por escola, amigos, família e mídia",
-        "trajetórias juvenis mostram negociacoes entre expectativas sociais e afirmação de si"
+        "a ideia de que todos os jovens vivem a mesma experiencia e constroem identidades do mesmo modo",
+        "adolescentes experimentam estilos, grupos e linguagens enquanto constroem referencias sobre si",
+        "um jovem testa pertencimentos e faz escolhas influenciado por escola, amigos, familia e midia",
+        "trajetorias juvenis mostram negociacoes entre expectativas sociais e afirmacao de si"
       ],
-      "correta": "a ideia de que todos os jovens vivem a mesma experiência e constroem identidades do mesmo modo",
-      "comentario": "a ideia de que todos os jovens vivem a mesma experiência e constroem identidades do mesmo modo não expressa juventude e construção de si, enquanto as demais alternativas se relacionam com esse subtopico.",
+      "correta": "a ideia de que todos os jovens vivem a mesma experiencia e constroem identidades do mesmo modo",
+      "comentario": "a ideia de que todos os jovens vivem a mesma experiencia e constroem identidades do mesmo modo nao expressa juventude e construcao de si, enquanto as demais alternativas se relacionam com esse subtopico.",
       "tempoEstimado": 30,
       "tags": [
         "identidade",
@@ -4303,20 +4304,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Juventude e construção de si",
+      "subtopico": "Juventude e construcao de si",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando se estuda juventude e construção de si, o foco principal esta em:",
+      "enunciado": "Quando se estuda juventude e construcao de si, o foco principal esta em:",
       "opcoes": [
-        "a formacao identitária dos jovens em meio a relações e expectativas sociais",
-        "o reconhecimento de si em relação ao gênero e as normas sociais que o atravessam",
-        "os processos de pertencimento, representação e reconhecimento ligados a dimensoes étnico-raciais e digitais",
+        "a formacao identitaria dos jovens em meio a relacoes e expectativas sociais",
+        "o reconhecimento de si em relacao ao genero e as normas sociais que o atravessam",
+        "os processos de pertencimento, representacao e reconhecimento ligados a dimensoes etnico-raciais e digitais",
         "os processos pelos quais sujeitos e grupos constroem reconhecimento sobre si"
       ],
-      "correta": "a formacao identitária dos jovens em meio a relações e expectativas sociais",
-      "comentario": "Juventude e construção de si volta a atenção para a formacao identitária dos jovens em meio a relações e expectativas sociais.",
+      "correta": "a formacao identitaria dos jovens em meio a relacoes e expectativas sociais",
+      "comentario": "Juventude e construcao de si volta a atencao para a formacao identitaria dos jovens em meio a relacoes e expectativas sociais.",
       "tempoEstimado": 35,
       "tags": [
         "identidade",
@@ -4342,20 +4343,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Juventude e construção de si",
+      "subtopico": "Juventude e construcao de si",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferença entre juventude e construção de si e pertencimento social e que:",
+      "enunciado": "A principal diferenca entre juventude e construcao de si e pertencimento social e que:",
       "opcoes": [
-        "juventude e construção de si enfatiza a fase e as trajetórias juvenis, enquanto pertencimento social destaca o vinculo com grupos e espaços coletivos",
-        "Juventude e construção de si e Pertencimento social são exatamente o mesmo fenomeno social.",
-        "Pertencimento social depende apenas da biologia, enquanto Juventude e construção de si depende só da economia.",
-        "Juventude e construção de si elimina a necessidade de observar contextos e relações sociais."
+        "juventude e construcao de si enfatiza a fase e as trajetorias juvenis, enquanto pertencimento social destaca o vinculo com grupos e espacos coletivos",
+        "Juventude e construcao de si e Pertencimento social sao exatamente o mesmo fenomeno social.",
+        "Pertencimento social depende apenas da biologia, enquanto Juventude e construcao de si depende so da economia.",
+        "Juventude e construcao de si elimina a necessidade de observar contextos e relacoes sociais."
       ],
-      "correta": "juventude e construção de si enfatiza a fase e as trajetórias juvenis, enquanto pertencimento social destaca o vinculo com grupos e espaços coletivos",
-      "comentario": "A diferença correta ajuda a separar dois conceitos próximos sem misturar seus significados.",
+      "correta": "juventude e construcao de si enfatiza a fase e as trajetorias juvenis, enquanto pertencimento social destaca o vinculo com grupos e espacos coletivos",
+      "comentario": "A diferenca correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
       "tempoEstimado": 35,
       "tags": [
         "identidade",
@@ -4381,20 +4382,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Juventude e construção de si",
+      "subtopico": "Juventude e construcao de si",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: um jovem testa pertencimentos e faz escolhas influenciado por escola, amigos, família e mídia A leitura sociológica mais adequada aponta para:",
+      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: um jovem testa pertencimentos e faz escolhas influenciado por escola, amigos, familia e midia A leitura sociologica mais adequada aponta para:",
       "opcoes": [
-        "juventude e uma experiência social marcada por experimentacao, conflitos e busca de reconhecimento",
-        "Juventude e construção de si mostra que a vida social não interfere nas formas de reconhecimento.",
-        "Juventude e construção de si prova que todos os grupos agem da mesma forma em qualquer contexto.",
-        "Juventude e construção de si significa ausencia completa de conflitos e diferenças."
+        "juventude e uma experiencia social marcada por experimentacao, conflitos e busca de reconhecimento",
+        "Juventude e construcao de si mostra que a vida social nao interfere nas formas de reconhecimento.",
+        "Juventude e construcao de si prova que todos os grupos agem da mesma forma em qualquer contexto.",
+        "Juventude e construcao de si significa ausencia completa de conflitos e diferencas."
       ],
-      "correta": "juventude e uma experiência social marcada por experimentacao, conflitos e busca de reconhecimento",
-      "comentario": "Juventude e construção de si permite interpretar o caso a partir de relações, reconhecimento e pertencimento.",
+      "correta": "juventude e uma experiencia social marcada por experimentacao, conflitos e busca de reconhecimento",
+      "comentario": "Juventude e construcao de si permite interpretar o caso a partir de relacoes, reconhecimento e pertencimento.",
       "tempoEstimado": 40,
       "tags": [
         "identidade",
@@ -4420,20 +4421,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Juventude e construção de si",
+      "subtopico": "Juventude e construcao de si",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação abaixo evidencia juventude e construção de si de maneira mais clara?",
+      "enunciado": "Qual situacao abaixo evidencia juventude e construcao de si de maneira mais clara?",
       "opcoes": [
-        "trajetórias juvenis mostram negociacoes entre expectativas sociais e afirmação de si",
-        "o reconhecimento da identidade de gênero impacta acesso a respeito, pertencimento e direitos",
-        "a identidade ganha visibilidade quando memorias, pertencimentos e representações circulam no espaço fisico e online",
-        "um jovem reelabora sua forma de se identificar ao entrar em novos grupos e espaços sociais"
+        "trajetorias juvenis mostram negociacoes entre expectativas sociais e afirmacao de si",
+        "o reconhecimento da identidade de genero impacta acesso a respeito, pertencimento e direitos",
+        "a identidade ganha visibilidade quando memorias, pertencimentos e representacoes circulam no espaco fisico e online",
+        "um jovem reelabora sua forma de se identificar ao entrar em novos grupos e espacos sociais"
       ],
-      "correta": "trajetórias juvenis mostram negociacoes entre expectativas sociais e afirmação de si",
-      "comentario": "A alternativa correta traduz juventude e construção de si em uma situação concreta de vida social.",
+      "correta": "trajetorias juvenis mostram negociacoes entre expectativas sociais e afirmacao de si",
+      "comentario": "A alternativa correta traduz juventude e construcao de si em uma situacao concreta de vida social.",
       "tempoEstimado": 40,
       "tags": [
         "identidade",
@@ -4459,20 +4460,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Juventude e construção de si",
+      "subtopico": "Juventude e construcao de si",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"adolescentes experimentam estilos, grupos e linguagens enquanto constroem referências sobre si\", qual conclusão e mais adequada?",
+      "enunciado": "Ao analisar o caso \"adolescentes experimentam estilos, grupos e linguagens enquanto constroem referencias sobre si\", qual conclusao e mais adequada?",
       "opcoes": [
-        "ser jovem envolve construir referências sobre si em contextos atravesados por relações sociais",
-        "Juventude e construção de si indica que valores sociais nunca mudam.",
-        "Juventude e construção de si só pode ser explicado por fatores biológicos.",
-        "Juventude e construção de si dispensa comparação entre grupos e contextos."
+        "ser jovem envolve construir referencias sobre si em contextos atravesados por relacoes sociais",
+        "Juventude e construcao de si indica que valores sociais nunca mudam.",
+        "Juventude e construcao de si so pode ser explicado por fatores biologicos.",
+        "Juventude e construcao de si dispensa comparacao entre grupos e contextos."
       ],
-      "correta": "ser jovem envolve construir referências sobre si em contextos atravesados por relações sociais",
-      "comentario": "A conclusão correta mantém o foco no sentido sociológico do caso apresentado.",
+      "correta": "ser jovem envolve construir referencias sobre si em contextos atravesados por relacoes sociais",
+      "comentario": "A conclusao correta mantem o foco no sentido sociologico do caso apresentado.",
       "tempoEstimado": 45,
       "tags": [
         "identidade",
@@ -4498,20 +4499,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Juventude e construção de si",
+      "subtopico": "Juventude e construcao de si",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 7,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com juventude e construção de si?",
+      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com juventude e construcao de si?",
       "opcoes": [
-        "como jovens negociam expectativas sociais e afirmação de si em seus cotidianos?",
-        "de que modo uma pessoa organiza memoria e experiência para falar de si?",
-        "como um grupo fortalece o reconhecimento de sua história e de seus símbolos comuns?",
-        "como o reconhecimento de um grupo influencia a experiência de pertencer?"
+        "como jovens negociam expectativas sociais e afirmacao de si em seus cotidianos?",
+        "de que modo uma pessoa organiza memoria e experiencia para falar de si?",
+        "como um grupo fortalece o reconhecimento de sua historia e de seus simbolos comuns?",
+        "como o reconhecimento de um grupo influencia a experiencia de pertencer?"
       ],
-      "correta": "como jovens negociam expectativas sociais e afirmação de si em seus cotidianos?",
-      "comentario": "A pergunta correta ajuda a investigar juventude e construção de si de forma coerente com o subtopico.",
+      "correta": "como jovens negociam expectativas sociais e afirmacao de si em seus cotidianos?",
+      "comentario": "A pergunta correta ajuda a investigar juventude e construcao de si de forma coerente com o subtopico.",
       "tempoEstimado": 45,
       "tags": [
         "identidade",
@@ -4537,20 +4538,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Juventude e construção de si",
+      "subtopico": "Juventude e construcao de si",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a afirmação que revela compreensão inadequada de juventude e construção de si.",
+      "enunciado": "Assinale a afirmacao que revela compreensao inadequada de juventude e construcao de si.",
       "opcoes": [
-        "Uma etapa puramente biológica sem relação com cultura, classe, gênero ou instituições.",
-        "Juventude e construção de si pode ser observado em contextos de reconhecimento e convivência social.",
-        "Juventude e construção de si ajuda a analisar pertencimentos, diferenças e trajetórias.",
-        "Juventude e construção de si depende da interação entre indivíduos, grupos e instituições."
+        "Uma etapa puramente biologica sem relacao com cultura, classe, genero ou instituicoes.",
+        "Juventude e construcao de si pode ser observado em contextos de reconhecimento e convivencia social.",
+        "Juventude e construcao de si ajuda a analisar pertencimentos, diferencas e trajetorias.",
+        "Juventude e construcao de si depende da interacao entre individuos, grupos e instituicoes."
       ],
-      "correta": "Uma etapa puramente biológica sem relação com cultura, classe, gênero ou instituições.",
-      "comentario": "A alternativa incorreta expressa uma confusão comum sobre juventude e construção de si.",
+      "correta": "Uma etapa puramente biologica sem relacao com cultura, classe, genero ou instituicoes.",
+      "comentario": "A alternativa incorreta expressa uma confusao comum sobre juventude e construcao de si.",
       "tempoEstimado": 45,
       "tags": [
         "identidade",
@@ -4576,20 +4577,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Juventude e construção de si",
+      "subtopico": "Juventude e construcao de si",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre identidade, um estudante afirmou: \"a experiência juvenil varia conforme contexto social, oportunidades e formas de reconhecimento\". Qual avaliacao e mais consistente?",
+      "enunciado": "Em um debate sobre identidade, um estudante afirmou: \"a experiencia juvenil varia conforme contexto social, oportunidades e formas de reconhecimento\". Qual avaliacao e mais consistente?",
       "opcoes": [
-        "a afirmação esta correta, porque juventude não e vivida de forma igual por todos",
-        "Juventude e construção de si não pode ser observado em situações do cotidiano.",
-        "Juventude e construção de si depende apenas da vontade individual, sem contexto social.",
-        "Juventude e construção de si torna desnecessario comparar grupos e referências coletivas."
+        "a afirmacao esta correta, porque juventude nao e vivida de forma igual por todos",
+        "Juventude e construcao de si nao pode ser observado em situacoes do cotidiano.",
+        "Juventude e construcao de si depende apenas da vontade individual, sem contexto social.",
+        "Juventude e construcao de si torna desnecessario comparar grupos e referencias coletivas."
       ],
-      "correta": "a afirmação esta correta, porque juventude não e vivida de forma igual por todos",
-      "comentario": "A avaliação correta recupera o núcleo teórico de juventude e construção de si.",
+      "correta": "a afirmacao esta correta, porque juventude nao e vivida de forma igual por todos",
+      "comentario": "A avaliacao correta recupera o nucleo teorico de juventude e construcao de si.",
       "tempoEstimado": 50,
       "tags": [
         "identidade",
@@ -4615,20 +4616,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Juventude e construção de si",
+      "subtopico": "Juventude e construcao de si",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando uma análise trata todos os jovens como se tivessem a mesma trajetória e os mesmos recursos, a melhor interpretação sociológica e que:",
+      "enunciado": "Quando uma analise trata todos os jovens como se tivessem a mesma trajetoria e os mesmos recursos, a melhor interpretacao sociologica e que:",
       "opcoes": [
-        "ela apaga as diferenças sociais que atravessam a construção de si na juventude",
-        "Juventude e construção de si desaparece porque a sociedade não produz reconhecimento nem expectativas.",
-        "Juventude e construção de si deixa de existir sempre que surgem conflitos entre grupos.",
-        "Juventude e construção de si só importa em sociedades antigas, não no presente."
+        "ela apaga as diferencas sociais que atravessam a construcao de si na juventude",
+        "Juventude e construcao de si desaparece porque a sociedade nao produz reconhecimento nem expectativas.",
+        "Juventude e construcao de si deixa de existir sempre que surgem conflitos entre grupos.",
+        "Juventude e construcao de si so importa em sociedades antigas, nao no presente."
       ],
-      "correta": "ela apaga as diferenças sociais que atravessam a construção de si na juventude",
-      "comentario": "A conclusão correta mostra como a ausencia ou a fragilidade do fenomeno afeta a vida social.",
+      "correta": "ela apaga as diferencas sociais que atravessam a construcao de si na juventude",
+      "comentario": "A conclusao correta mostra como a ausencia ou a fragilidade do fenomeno afeta a vida social.",
       "tempoEstimado": 50,
       "tags": [
         "identidade",
@@ -4654,20 +4655,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Juventude e construção de si",
+      "subtopico": "Juventude e construcao de si",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente juventude e construção de si a uma situação de comunidade escolar?",
+      "enunciado": "Qual alternativa aplica corretamente juventude e construcao de si a uma situacao de comunidade escolar?",
       "opcoes": [
-        "a escola discute como diferentes trajetórias juvenis influenciam projetos de vida e autoestima",
+        "a escola discute como diferentes trajetorias juvenis influenciam projetos de vida e autoestima",
         "a turma discute como colegas do mesmo bairro podem construir autoimagens diferentes",
-        "a escola analisa como grêmios, equipes e coletivos constroem identidade coletiva",
-        "a turma debate práticas que ampliam pertencimento entre estudantes recem-chegados"
+        "a escola analisa como gremios, equipes e coletivos constroem identidade coletiva",
+        "a turma debate praticas que ampliam pertencimento entre estudantes recem-chegados"
       ],
-      "correta": "a escola discute como diferentes trajetórias juvenis influenciam projetos de vida e autoestima",
-      "comentario": "A alternativa correta aproxima juventude e construção de si de um contexto escolar concreto.",
+      "correta": "a escola discute como diferentes trajetorias juvenis influenciam projetos de vida e autoestima",
+      "comentario": "A alternativa correta aproxima juventude e construcao de si de um contexto escolar concreto.",
       "tempoEstimado": 55,
       "tags": [
         "identidade",
@@ -4693,20 +4694,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Juventude e construção de si",
+      "subtopico": "Juventude e construcao de si",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual sintese final representa melhor juventude e construção de si?",
+      "enunciado": "Qual sintese final representa melhor juventude e construcao de si?",
       "opcoes": [
-        "juventude e construção de si refere-se a formacao identitária dos jovens em contextos sociais diversos",
-        "Juventude e construção de si é um fator biológico fixo, sem relação com aprendizagem e grupos sociais.",
-        "Juventude e construção de si explica apenas escolhas privadas e ignora a dimensão coletiva.",
-        "Juventude e construção de si impede qualquer mudança historica ou social."
+        "juventude e construcao de si refere-se a formacao identitaria dos jovens em contextos sociais diversos",
+        "Juventude e construcao de si e um fator biologico fixo, sem relacao com aprendizagem e grupos sociais.",
+        "Juventude e construcao de si explica apenas escolhas privadas e ignora a dimensao coletiva.",
+        "Juventude e construcao de si impede qualquer mudanca historica ou social."
       ],
-      "correta": "juventude e construção de si refere-se a formacao identitária dos jovens em contextos sociais diversos",
-      "comentario": "A síntese correta preserva a definição, o alcance e o uso analítico de juventude e construção de si.",
+      "correta": "juventude e construcao de si refere-se a formacao identitaria dos jovens em contextos sociais diversos",
+      "comentario": "A sintese correta preserva a definicao, o alcance e o uso analitico de juventude e construcao de si.",
       "tempoEstimado": 60,
       "tags": [
         "identidade",
@@ -4732,20 +4733,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Identidade de gênero",
+      "subtopico": "Identidade de genero",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Sociologia, identidade de gênero pode ser definido(a) como:",
+      "enunciado": "Em Sociologia, identidade de genero pode ser definido(a) como:",
       "opcoes": [
-        "a forma como uma pessoa se reconhece e se posiciona em relação ao gênero, em interação com normas e expectativas sociais",
-        "o processo pelo qual jovens elaboram identidades, projetos e autoimagens em interação com grupos, instituições e referências culturais",
-        "as formas de construção de si ligadas ao pertencimento étnico-racial e as representações produzidas e disputadas também em ambientes digitais",
-        "a construção social pela qual indivíduos e grupos elaboram sentidos sobre quem são e como se reconhecem"
+        "a forma como uma pessoa se reconhece e se posiciona em relacao ao genero, em interacao com normas e expectativas sociais",
+        "o processo pelo qual jovens elaboram identidades, projetos e autoimagens em interacao com grupos, instituicoes e referencias culturais",
+        "as formas de construcao de si ligadas ao pertencimento etnico-racial e as representacoes produzidas e disputadas tambem em ambientes digitais",
+        "a construcao social pela qual individuos e grupos elaboram sentidos sobre quem sao e como se reconhecem"
       ],
-      "correta": "a forma como uma pessoa se reconhece e se posiciona em relação ao gênero, em interação com normas e expectativas sociais",
-      "comentario": "Identidade de gênero refere-se a forma como uma pessoa se reconhece e se posiciona em relação ao gênero, em interação com normas e expectativas sociais.",
+      "correta": "a forma como uma pessoa se reconhece e se posiciona em relacao ao genero, em interacao com normas e expectativas sociais",
+      "comentario": "Identidade de genero refere-se a forma como uma pessoa se reconhece e se posiciona em relacao ao genero, em interacao com normas e expectativas sociais.",
       "tempoEstimado": 20,
       "tags": [
         "identidade",
@@ -4771,20 +4772,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Identidade de gênero",
+      "subtopico": "Identidade de genero",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: uma pessoa afirma sua identidade de gênero e busca ser reconhecida socialmente de acordo com ela Esse caso exemplifica melhor qual subtopico?",
+      "enunciado": "Observe a situacao: uma pessoa afirma sua identidade de genero e busca ser reconhecida socialmente de acordo com ela Esse caso exemplifica melhor qual subtopico?",
       "opcoes": [
-        "Identidade de gênero",
-        "Juventude e construção de si",
-        "Identidade étnico-racial e digital",
+        "Identidade de genero",
+        "Juventude e construcao de si",
+        "Identidade etnico-racial e digital",
         "Conceito de identidade"
       ],
-      "correta": "Identidade de gênero",
-      "comentario": "A situação apresentada é um exemplo de identidade de gênero.",
+      "correta": "Identidade de genero",
+      "comentario": "A situacao apresentada e um exemplo de identidade de genero.",
       "tempoEstimado": 25,
       "tags": [
         "identidade",
@@ -4810,20 +4811,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Identidade de gênero",
+      "subtopico": "Identidade de genero",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmação descreve corretamente identidade de gênero?",
+      "enunciado": "Qual afirmacao descreve corretamente identidade de genero?",
       "opcoes": [
-        "A forma como uma pessoa se reconhece e se posiciona em relação ao gênero, em interação com normas e expectativas sociais.",
-        "Uma escolha sem relação com vida social, reconhecimento ou direitos.",
-        "Conceito de identidade significa a construção social pela qual indivíduos e grupos elaboram sentidos sobre quem são e como se reconhecem.",
-        "Identidade trata apenas de características biológicas fixas."
+        "A forma como uma pessoa se reconhece e se posiciona em relacao ao genero, em interacao com normas e expectativas sociais.",
+        "Uma escolha sem relacao com vida social, reconhecimento ou direitos.",
+        "Conceito de identidade significa a construcao social pela qual individuos e grupos elaboram sentidos sobre quem sao e como se reconhecem.",
+        "Identidade trata apenas de caracteristicas biologicas fixas."
       ],
-      "correta": "A forma como uma pessoa se reconhece e se posiciona em relação ao gênero, em interação com normas e expectativas sociais.",
-      "comentario": "A afirmação correta retoma o sentido central de identidade de gênero.",
+      "correta": "A forma como uma pessoa se reconhece e se posiciona em relacao ao genero, em interacao com normas e expectativas sociais.",
+      "comentario": "A afirmacao correta retoma o sentido central de identidade de genero.",
       "tempoEstimado": 30,
       "tags": [
         "identidade",
@@ -4849,20 +4850,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Identidade de gênero",
+      "subtopico": "Identidade de genero",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que o exemplo NAO corresponde a identidade de gênero.",
+      "enunciado": "Assinale a alternativa em que o exemplo NAO corresponde a identidade de genero.",
       "opcoes": [
-        "reduzir gênero apenas a características biológicas fixas, sem considerar experiência social e reconhecimento",
-        "uma pessoa afirma sua identidade de gênero e busca ser reconhecida socialmente de acordo com ela",
-        "discussoes escolares mostram como regras e expectativas de gênero influenciam experiências cotidianas",
-        "o reconhecimento da identidade de gênero impacta acesso a respeito, pertencimento e direitos"
+        "reduzir genero apenas a caracteristicas biologicas fixas, sem considerar experiencia social e reconhecimento",
+        "uma pessoa afirma sua identidade de genero e busca ser reconhecida socialmente de acordo com ela",
+        "discussoes escolares mostram como regras e expectativas de genero influenciam experiencias cotidianas",
+        "o reconhecimento da identidade de genero impacta acesso a respeito, pertencimento e direitos"
       ],
-      "correta": "reduzir gênero apenas a características biológicas fixas, sem considerar experiência social e reconhecimento",
-      "comentario": "reduzir gênero apenas a características biológicas fixas, sem considerar experiência social e reconhecimento não expressa identidade de gênero, enquanto as demais alternativas se relacionam com esse subtopico.",
+      "correta": "reduzir genero apenas a caracteristicas biologicas fixas, sem considerar experiencia social e reconhecimento",
+      "comentario": "reduzir genero apenas a caracteristicas biologicas fixas, sem considerar experiencia social e reconhecimento nao expressa identidade de genero, enquanto as demais alternativas se relacionam com esse subtopico.",
       "tempoEstimado": 30,
       "tags": [
         "identidade",
@@ -4888,20 +4889,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Identidade de gênero",
+      "subtopico": "Identidade de genero",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando se estuda identidade de gênero, o foco principal esta em:",
+      "enunciado": "Quando se estuda identidade de genero, o foco principal esta em:",
       "opcoes": [
-        "o reconhecimento de si em relação ao gênero e as normas sociais que o atravessam",
-        "a formacao identitária dos jovens em meio a relações e expectativas sociais",
-        "os processos de pertencimento, representação e reconhecimento ligados a dimensoes étnico-raciais e digitais",
+        "o reconhecimento de si em relacao ao genero e as normas sociais que o atravessam",
+        "a formacao identitaria dos jovens em meio a relacoes e expectativas sociais",
+        "os processos de pertencimento, representacao e reconhecimento ligados a dimensoes etnico-raciais e digitais",
         "os processos pelos quais sujeitos e grupos constroem reconhecimento sobre si"
       ],
-      "correta": "o reconhecimento de si em relação ao gênero e as normas sociais que o atravessam",
-      "comentario": "Identidade de gênero volta a atenção para o reconhecimento de si em relação ao gênero e as normas sociais que o atravessam.",
+      "correta": "o reconhecimento de si em relacao ao genero e as normas sociais que o atravessam",
+      "comentario": "Identidade de genero volta a atencao para o reconhecimento de si em relacao ao genero e as normas sociais que o atravessam.",
       "tempoEstimado": 35,
       "tags": [
         "identidade",
@@ -4927,20 +4928,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Identidade de gênero",
+      "subtopico": "Identidade de genero",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferença entre identidade de gênero e conceito de identidade e que:",
+      "enunciado": "A principal diferenca entre identidade de genero e conceito de identidade e que:",
       "opcoes": [
-        "identidade de gênero recorta uma dimensão especifica da identidade, enquanto conceito de identidade apresenta a ideia geral de construção de si",
-        "Identidade de gênero e Conceito de identidade são exatamente o mesmo fenomeno social.",
-        "Conceito de identidade depende apenas da biologia, enquanto Identidade de gênero depende só da economia.",
-        "Identidade de gênero elimina a necessidade de observar contextos e relações sociais."
+        "identidade de genero recorta uma dimensao especifica da identidade, enquanto conceito de identidade apresenta a ideia geral de construcao de si",
+        "Identidade de genero e Conceito de identidade sao exatamente o mesmo fenomeno social.",
+        "Conceito de identidade depende apenas da biologia, enquanto Identidade de genero depende so da economia.",
+        "Identidade de genero elimina a necessidade de observar contextos e relacoes sociais."
       ],
-      "correta": "identidade de gênero recorta uma dimensão especifica da identidade, enquanto conceito de identidade apresenta a ideia geral de construção de si",
-      "comentario": "A diferença correta ajuda a separar dois conceitos próximos sem misturar seus significados.",
+      "correta": "identidade de genero recorta uma dimensao especifica da identidade, enquanto conceito de identidade apresenta a ideia geral de construcao de si",
+      "comentario": "A diferenca correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
       "tempoEstimado": 35,
       "tags": [
         "identidade",
@@ -4966,20 +4967,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Identidade de gênero",
+      "subtopico": "Identidade de genero",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: discussoes escolares mostram como regras e expectativas de gênero influenciam experiências cotidianas A leitura sociológica mais adequada aponta para:",
+      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: discussoes escolares mostram como regras e expectativas de genero influenciam experiencias cotidianas A leitura sociologica mais adequada aponta para:",
       "opcoes": [
-        "identidade de gênero mostra que reconhecimento e respeito são centrais para a vida social e escolar",
-        "Identidade de gênero mostra que a vida social não interfere nas formas de reconhecimento.",
-        "Identidade de gênero prova que todos os grupos agem da mesma forma em qualquer contexto.",
-        "Identidade de gênero significa ausencia completa de conflitos e diferenças."
+        "identidade de genero mostra que reconhecimento e respeito sao centrais para a vida social e escolar",
+        "Identidade de genero mostra que a vida social nao interfere nas formas de reconhecimento.",
+        "Identidade de genero prova que todos os grupos agem da mesma forma em qualquer contexto.",
+        "Identidade de genero significa ausencia completa de conflitos e diferencas."
       ],
-      "correta": "identidade de gênero mostra que reconhecimento e respeito são centrais para a vida social e escolar",
-      "comentario": "Identidade de gênero permite interpretar o caso a partir de relações, reconhecimento e pertencimento.",
+      "correta": "identidade de genero mostra que reconhecimento e respeito sao centrais para a vida social e escolar",
+      "comentario": "Identidade de genero permite interpretar o caso a partir de relacoes, reconhecimento e pertencimento.",
       "tempoEstimado": 40,
       "tags": [
         "identidade",
@@ -5005,20 +5006,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Identidade de gênero",
+      "subtopico": "Identidade de genero",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação abaixo evidencia identidade de gênero de maneira mais clara?",
+      "enunciado": "Qual situacao abaixo evidencia identidade de genero de maneira mais clara?",
       "opcoes": [
-        "o reconhecimento da identidade de gênero impacta acesso a respeito, pertencimento e direitos",
-        "trajetórias juvenis mostram negociacoes entre expectativas sociais e afirmação de si",
-        "a identidade ganha visibilidade quando memorias, pertencimentos e representações circulam no espaço fisico e online",
-        "um jovem reelabora sua forma de se identificar ao entrar em novos grupos e espaços sociais"
+        "o reconhecimento da identidade de genero impacta acesso a respeito, pertencimento e direitos",
+        "trajetorias juvenis mostram negociacoes entre expectativas sociais e afirmacao de si",
+        "a identidade ganha visibilidade quando memorias, pertencimentos e representacoes circulam no espaco fisico e online",
+        "um jovem reelabora sua forma de se identificar ao entrar em novos grupos e espacos sociais"
       ],
-      "correta": "o reconhecimento da identidade de gênero impacta acesso a respeito, pertencimento e direitos",
-      "comentario": "A alternativa correta traduz identidade de gênero em uma situação concreta de vida social.",
+      "correta": "o reconhecimento da identidade de genero impacta acesso a respeito, pertencimento e direitos",
+      "comentario": "A alternativa correta traduz identidade de genero em uma situacao concreta de vida social.",
       "tempoEstimado": 40,
       "tags": [
         "identidade",
@@ -5044,20 +5045,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Identidade de gênero",
+      "subtopico": "Identidade de genero",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"uma pessoa afirma sua identidade de gênero e busca ser reconhecida socialmente de acordo com ela\", qual conclusão e mais adequada?",
+      "enunciado": "Ao analisar o caso \"uma pessoa afirma sua identidade de genero e busca ser reconhecida socialmente de acordo com ela\", qual conclusao e mais adequada?",
       "opcoes": [
-        "o gênero envolve experiência social, reconhecimento e relações normativas, não apenas classificacoes biológicas",
-        "Identidade de gênero indica que valores sociais nunca mudam.",
-        "Identidade de gênero só pode ser explicado por fatores biológicos.",
-        "Identidade de gênero dispensa comparação entre grupos e contextos."
+        "o genero envolve experiencia social, reconhecimento e relacoes normativas, nao apenas classificacoes biologicas",
+        "Identidade de genero indica que valores sociais nunca mudam.",
+        "Identidade de genero so pode ser explicado por fatores biologicos.",
+        "Identidade de genero dispensa comparacao entre grupos e contextos."
       ],
-      "correta": "o gênero envolve experiência social, reconhecimento e relações normativas, não apenas classificacoes biológicas",
-      "comentario": "A conclusão correta mantém o foco no sentido sociológico do caso apresentado.",
+      "correta": "o genero envolve experiencia social, reconhecimento e relacoes normativas, nao apenas classificacoes biologicas",
+      "comentario": "A conclusao correta mantem o foco no sentido sociologico do caso apresentado.",
       "tempoEstimado": 45,
       "tags": [
         "identidade",
@@ -5083,20 +5084,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Identidade de gênero",
+      "subtopico": "Identidade de genero",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 7,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com identidade de gênero?",
+      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com identidade de genero?",
       "opcoes": [
-        "como normas sociais de gênero afetam reconhecimento e pertencimento?",
-        "como um grupo fortalece o reconhecimento de sua história e de seus símbolos comuns?",
-        "como o reconhecimento de um grupo influencia a experiência de pertencer?",
-        "como instituições podem lidar com a pluralidade de identidades e experiências?"
+        "como normas sociais de genero afetam reconhecimento e pertencimento?",
+        "como um grupo fortalece o reconhecimento de sua historia e de seus simbolos comuns?",
+        "como o reconhecimento de um grupo influencia a experiencia de pertencer?",
+        "como instituicoes podem lidar com a pluralidade de identidades e experiencias?"
       ],
-      "correta": "como normas sociais de gênero afetam reconhecimento e pertencimento?",
-      "comentario": "A pergunta correta ajuda a investigar identidade de gênero de forma coerente com o subtopico.",
+      "correta": "como normas sociais de genero afetam reconhecimento e pertencimento?",
+      "comentario": "A pergunta correta ajuda a investigar identidade de genero de forma coerente com o subtopico.",
       "tempoEstimado": 45,
       "tags": [
         "identidade",
@@ -5122,20 +5123,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Identidade de gênero",
+      "subtopico": "Identidade de genero",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a afirmação que revela compreensão inadequada de identidade de gênero.",
+      "enunciado": "Assinale a afirmacao que revela compreensao inadequada de identidade de genero.",
       "opcoes": [
-        "Uma escolha sem relação com vida social, reconhecimento ou direitos.",
-        "Identidade de gênero pode ser observado em contextos de reconhecimento e convivência social.",
-        "Identidade de gênero ajuda a analisar pertencimentos, diferenças e trajetórias.",
-        "Identidade de gênero depende da interação entre indivíduos, grupos e instituições."
+        "Uma escolha sem relacao com vida social, reconhecimento ou direitos.",
+        "Identidade de genero pode ser observado em contextos de reconhecimento e convivencia social.",
+        "Identidade de genero ajuda a analisar pertencimentos, diferencas e trajetorias.",
+        "Identidade de genero depende da interacao entre individuos, grupos e instituicoes."
       ],
-      "correta": "Uma escolha sem relação com vida social, reconhecimento ou direitos.",
-      "comentario": "A alternativa incorreta expressa uma confusão comum sobre identidade de gênero.",
+      "correta": "Uma escolha sem relacao com vida social, reconhecimento ou direitos.",
+      "comentario": "A alternativa incorreta expressa uma confusao comum sobre identidade de genero.",
       "tempoEstimado": 45,
       "tags": [
         "identidade",
@@ -5161,20 +5162,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Identidade de gênero",
+      "subtopico": "Identidade de genero",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre identidade, um estudante afirmou: \"tratar a identidade de gênero com respeito e uma condicao importante de reconhecimento social\". Qual avaliacao e mais consistente?",
+      "enunciado": "Em um debate sobre identidade, um estudante afirmou: \"tratar a identidade de genero com respeito e uma condicao importante de reconhecimento social\". Qual avaliacao e mais consistente?",
       "opcoes": [
-        "a afirmação esta correta, porque reconhecimento e central nas relações identitárias",
-        "Identidade de gênero não pode ser observado em situações do cotidiano.",
-        "Identidade de gênero depende apenas da vontade individual, sem contexto social.",
-        "Identidade de gênero torna desnecessario comparar grupos e referências coletivas."
+        "a afirmacao esta correta, porque reconhecimento e central nas relacoes identitarias",
+        "Identidade de genero nao pode ser observado em situacoes do cotidiano.",
+        "Identidade de genero depende apenas da vontade individual, sem contexto social.",
+        "Identidade de genero torna desnecessario comparar grupos e referencias coletivas."
       ],
-      "correta": "a afirmação esta correta, porque reconhecimento e central nas relações identitárias",
-      "comentario": "A avaliação correta recupera o núcleo teórico de identidade de gênero.",
+      "correta": "a afirmacao esta correta, porque reconhecimento e central nas relacoes identitarias",
+      "comentario": "A avaliacao correta recupera o nucleo teorico de identidade de genero.",
       "tempoEstimado": 50,
       "tags": [
         "identidade",
@@ -5200,20 +5201,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Identidade de gênero",
+      "subtopico": "Identidade de genero",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando uma instituição nega o reconhecimento da forma como a pessoa se identifica, a melhor interpretação sociológica e que:",
+      "enunciado": "Quando uma instituicao nega o reconhecimento da forma como a pessoa se identifica, a melhor interpretacao sociologica e que:",
       "opcoes": [
-        "produzem-se exclusão e fragilizacao do pertencimento",
-        "Identidade de gênero desaparece porque a sociedade não produz reconhecimento nem expectativas.",
-        "Identidade de gênero deixa de existir sempre que surgem conflitos entre grupos.",
-        "Identidade de gênero só importa em sociedades antigas, não no presente."
+        "produzem-se exclusao e fragilizacao do pertencimento",
+        "Identidade de genero desaparece porque a sociedade nao produz reconhecimento nem expectativas.",
+        "Identidade de genero deixa de existir sempre que surgem conflitos entre grupos.",
+        "Identidade de genero so importa em sociedades antigas, nao no presente."
       ],
-      "correta": "produzem-se exclusão e fragilizacao do pertencimento",
-      "comentario": "A conclusão correta mostra como a ausencia ou a fragilidade do fenomeno afeta a vida social.",
+      "correta": "produzem-se exclusao e fragilizacao do pertencimento",
+      "comentario": "A conclusao correta mostra como a ausencia ou a fragilidade do fenomeno afeta a vida social.",
       "tempoEstimado": 50,
       "tags": [
         "identidade",
@@ -5239,20 +5240,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Identidade de gênero",
+      "subtopico": "Identidade de genero",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente identidade de gênero a uma situação de comunidade escolar?",
+      "enunciado": "Qual alternativa aplica corretamente identidade de genero a uma situacao de comunidade escolar?",
       "opcoes": [
-        "a escola discute como o respeito ao nome, ao pronome e a autoidentificacao afeta o convívio",
-        "a escola analisa como grêmios, equipes e coletivos constroem identidade coletiva",
-        "a turma debate práticas que ampliam pertencimento entre estudantes recem-chegados",
-        "a escola adota estrategias para acolher linguagens, referências e experiências diversas entre os estudantes"
+        "a escola discute como o respeito ao nome, ao pronome e a autoidentificacao afeta o convivio",
+        "a escola analisa como gremios, equipes e coletivos constroem identidade coletiva",
+        "a turma debate praticas que ampliam pertencimento entre estudantes recem-chegados",
+        "a escola adota estrategias para acolher linguagens, referencias e experiencias diversas entre os estudantes"
       ],
-      "correta": "a escola discute como o respeito ao nome, ao pronome e a autoidentificacao afeta o convívio",
-      "comentario": "A alternativa correta aproxima identidade de gênero de um contexto escolar concreto.",
+      "correta": "a escola discute como o respeito ao nome, ao pronome e a autoidentificacao afeta o convivio",
+      "comentario": "A alternativa correta aproxima identidade de genero de um contexto escolar concreto.",
       "tempoEstimado": 55,
       "tags": [
         "identidade",
@@ -5278,20 +5279,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Identidade de gênero",
+      "subtopico": "Identidade de genero",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual sintese final representa melhor identidade de gênero?",
+      "enunciado": "Qual sintese final representa melhor identidade de genero?",
       "opcoes": [
-        "identidade de gênero é a forma como a pessoa se reconhece em relação ao gênero e busca reconhecimento social",
-        "Identidade de gênero é um fator biológico fixo, sem relação com aprendizagem e grupos sociais.",
-        "Identidade de gênero explica apenas escolhas privadas e ignora a dimensão coletiva.",
-        "Identidade de gênero impede qualquer mudança historica ou social."
+        "identidade de genero e a forma como a pessoa se reconhece em relacao ao genero e busca reconhecimento social",
+        "Identidade de genero e um fator biologico fixo, sem relacao com aprendizagem e grupos sociais.",
+        "Identidade de genero explica apenas escolhas privadas e ignora a dimensao coletiva.",
+        "Identidade de genero impede qualquer mudanca historica ou social."
       ],
-      "correta": "identidade de gênero é a forma como a pessoa se reconhece em relação ao gênero e busca reconhecimento social",
-      "comentario": "A síntese correta preserva a definição, o alcance e o uso analítico de identidade de gênero.",
+      "correta": "identidade de genero e a forma como a pessoa se reconhece em relacao ao genero e busca reconhecimento social",
+      "comentario": "A sintese correta preserva a definicao, o alcance e o uso analitico de identidade de genero.",
       "tempoEstimado": 60,
       "tags": [
         "identidade",
@@ -5317,20 +5318,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Identidade étnico-racial e digital",
+      "subtopico": "Identidade etnico-racial e digital",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Sociologia, identidade étnico-racial e digital pode ser definido(a) como:",
+      "enunciado": "Em Sociologia, identidade etnico-racial e digital pode ser definido(a) como:",
       "opcoes": [
-        "as formas de construção de si ligadas ao pertencimento étnico-racial e as representações produzidas e disputadas também em ambientes digitais",
-        "a construção social pela qual indivíduos e grupos elaboram sentidos sobre quem são e como se reconhecem",
-        "a dimensão da identidade ligada a trajetória singular de cada pessoa, articulando experiência propria, memoria e autoimagem",
-        "o reconhecimento compartilhado por um grupo em torno de historias, símbolos, interesses e referências comuns"
+        "as formas de construcao de si ligadas ao pertencimento etnico-racial e as representacoes produzidas e disputadas tambem em ambientes digitais",
+        "a construcao social pela qual individuos e grupos elaboram sentidos sobre quem sao e como se reconhecem",
+        "a dimensao da identidade ligada a trajetoria singular de cada pessoa, articulando experiencia propria, memoria e autoimagem",
+        "o reconhecimento compartilhado por um grupo em torno de historias, simbolos, interesses e referencias comuns"
       ],
-      "correta": "as formas de construção de si ligadas ao pertencimento étnico-racial e as representações produzidas e disputadas também em ambientes digitais",
-      "comentario": "Identidade étnico-racial e digital refere-se a as formas de construção de si ligadas ao pertencimento étnico-racial e as representações produzidas e disputadas também em ambientes digitais.",
+      "correta": "as formas de construcao de si ligadas ao pertencimento etnico-racial e as representacoes produzidas e disputadas tambem em ambientes digitais",
+      "comentario": "Identidade etnico-racial e digital refere-se a as formas de construcao de si ligadas ao pertencimento etnico-racial e as representacoes produzidas e disputadas tambem em ambientes digitais.",
       "tempoEstimado": 20,
       "tags": [
         "identidade",
@@ -5356,20 +5357,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Identidade étnico-racial e digital",
+      "subtopico": "Identidade etnico-racial e digital",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: uma pessoa fortalece reconhecimento racial e produz narrativas sobre si em redes e espaços coletivos Esse caso exemplifica melhor qual subtopico?",
+      "enunciado": "Observe a situacao: uma pessoa fortalece reconhecimento racial e produz narrativas sobre si em redes e espacos coletivos Esse caso exemplifica melhor qual subtopico?",
       "opcoes": [
-        "Identidade étnico-racial e digital",
+        "Identidade etnico-racial e digital",
         "Conceito de identidade",
         "Identidade individual",
         "Identidade coletiva"
       ],
-      "correta": "Identidade étnico-racial e digital",
-      "comentario": "A situação apresentada é um exemplo de identidade étnico-racial e digital.",
+      "correta": "Identidade etnico-racial e digital",
+      "comentario": "A situacao apresentada e um exemplo de identidade etnico-racial e digital.",
       "tempoEstimado": 25,
       "tags": [
         "identidade",
@@ -5395,20 +5396,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Identidade étnico-racial e digital",
+      "subtopico": "Identidade etnico-racial e digital",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmação descreve corretamente identidade étnico-racial e digital?",
+      "enunciado": "Qual afirmacao descreve corretamente identidade etnico-racial e digital?",
       "opcoes": [
-        "As formas de construção de si ligadas ao pertencimento étnico-racial e as representações produzidas e disputadas também em ambientes digitais.",
-        "Um tema restrito ao espaço virtual e sem relação com desigualdades e reconhecimento reais.",
-        "Juventude e construção de si significa o processo pelo qual jovens elaboram identidades, projetos e autoimagens em interação com grupos, instituições e referências culturais.",
-        "Identidade trata apenas de características biológicas fixas."
+        "As formas de construcao de si ligadas ao pertencimento etnico-racial e as representacoes produzidas e disputadas tambem em ambientes digitais.",
+        "Um tema restrito ao espaco virtual e sem relacao com desigualdades e reconhecimento reais.",
+        "Juventude e construcao de si significa o processo pelo qual jovens elaboram identidades, projetos e autoimagens em interacao com grupos, instituicoes e referencias culturais.",
+        "Identidade trata apenas de caracteristicas biologicas fixas."
       ],
-      "correta": "As formas de construção de si ligadas ao pertencimento étnico-racial e as representações produzidas e disputadas também em ambientes digitais.",
-      "comentario": "A afirmação correta retoma o sentido central de identidade étnico-racial e digital.",
+      "correta": "As formas de construcao de si ligadas ao pertencimento etnico-racial e as representacoes produzidas e disputadas tambem em ambientes digitais.",
+      "comentario": "A afirmacao correta retoma o sentido central de identidade etnico-racial e digital.",
       "tempoEstimado": 30,
       "tags": [
         "identidade",
@@ -5434,20 +5435,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Identidade étnico-racial e digital",
+      "subtopico": "Identidade etnico-racial e digital",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que o exemplo NAO corresponde a identidade étnico-racial e digital.",
+      "enunciado": "Assinale a alternativa em que o exemplo NAO corresponde a identidade etnico-racial e digital.",
       "opcoes": [
-        "a ideia de que experiências étnico-raciais e digitais não influenciam o reconhecimento social dos sujeitos",
-        "uma pessoa fortalece reconhecimento racial e produz narrativas sobre si em redes e espaços coletivos",
-        "grupos usam plataformas digitais para afirmar referências, denunciar racismo e compartilhar experiências",
-        "a identidade ganha visibilidade quando memorias, pertencimentos e representações circulam no espaço fisico e online"
+        "a ideia de que experiencias etnico-raciais e digitais nao influenciam o reconhecimento social dos sujeitos",
+        "uma pessoa fortalece reconhecimento racial e produz narrativas sobre si em redes e espacos coletivos",
+        "grupos usam plataformas digitais para afirmar referencias, denunciar racismo e compartilhar experiencias",
+        "a identidade ganha visibilidade quando memorias, pertencimentos e representacoes circulam no espaco fisico e online"
       ],
-      "correta": "a ideia de que experiências étnico-raciais e digitais não influenciam o reconhecimento social dos sujeitos",
-      "comentario": "a ideia de que experiências étnico-raciais e digitais não influenciam o reconhecimento social dos sujeitos não expressa identidade étnico-racial e digital, enquanto as demais alternativas se relacionam com esse subtopico.",
+      "correta": "a ideia de que experiencias etnico-raciais e digitais nao influenciam o reconhecimento social dos sujeitos",
+      "comentario": "a ideia de que experiencias etnico-raciais e digitais nao influenciam o reconhecimento social dos sujeitos nao expressa identidade etnico-racial e digital, enquanto as demais alternativas se relacionam com esse subtopico.",
       "tempoEstimado": 30,
       "tags": [
         "identidade",
@@ -5473,20 +5474,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Identidade étnico-racial e digital",
+      "subtopico": "Identidade etnico-racial e digital",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando se estuda identidade étnico-racial e digital, o foco principal esta em:",
+      "enunciado": "Quando se estuda identidade etnico-racial e digital, o foco principal esta em:",
       "opcoes": [
-        "os processos de pertencimento, representação e reconhecimento ligados a dimensoes étnico-raciais e digitais",
+        "os processos de pertencimento, representacao e reconhecimento ligados a dimensoes etnico-raciais e digitais",
         "os processos pelos quais sujeitos e grupos constroem reconhecimento sobre si",
-        "a singularidade da experiência do sujeito em relação a sua propria autoimagem",
+        "a singularidade da experiencia do sujeito em relacao a sua propria autoimagem",
         "os elementos comuns que produzem pertencimento e reconhecimento grupal"
       ],
-      "correta": "os processos de pertencimento, representação e reconhecimento ligados a dimensoes étnico-raciais e digitais",
-      "comentario": "Identidade étnico-racial e digital volta a atenção para os processos de pertencimento, representação e reconhecimento ligados a dimensoes étnico-raciais e digitais.",
+      "correta": "os processos de pertencimento, representacao e reconhecimento ligados a dimensoes etnico-raciais e digitais",
+      "comentario": "Identidade etnico-racial e digital volta a atencao para os processos de pertencimento, representacao e reconhecimento ligados a dimensoes etnico-raciais e digitais.",
       "tempoEstimado": 35,
       "tags": [
         "identidade",
@@ -5512,20 +5513,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Identidade étnico-racial e digital",
+      "subtopico": "Identidade etnico-racial e digital",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferença entre identidade étnico-racial e digital e juventude e construção de si e que:",
+      "enunciado": "A principal diferenca entre identidade etnico-racial e digital e juventude e construcao de si e que:",
       "opcoes": [
-        "identidade étnico-racial e digital destaca pertencimentos e representações específicas, enquanto juventude e construção de si aborda trajetórias juvenis de forma mais ampla",
-        "Identidade étnico-racial e digital e Juventude e construção de si são exatamente o mesmo fenomeno social.",
-        "Juventude e construção de si depende apenas da biologia, enquanto Identidade étnico-racial e digital depende só da economia.",
-        "Identidade étnico-racial e digital elimina a necessidade de observar contextos e relações sociais."
+        "identidade etnico-racial e digital destaca pertencimentos e representacoes especificas, enquanto juventude e construcao de si aborda trajetorias juvenis de forma mais ampla",
+        "Identidade etnico-racial e digital e Juventude e construcao de si sao exatamente o mesmo fenomeno social.",
+        "Juventude e construcao de si depende apenas da biologia, enquanto Identidade etnico-racial e digital depende so da economia.",
+        "Identidade etnico-racial e digital elimina a necessidade de observar contextos e relacoes sociais."
       ],
-      "correta": "identidade étnico-racial e digital destaca pertencimentos e representações específicas, enquanto juventude e construção de si aborda trajetórias juvenis de forma mais ampla",
-      "comentario": "A diferença correta ajuda a separar dois conceitos próximos sem misturar seus significados.",
+      "correta": "identidade etnico-racial e digital destaca pertencimentos e representacoes especificas, enquanto juventude e construcao de si aborda trajetorias juvenis de forma mais ampla",
+      "comentario": "A diferenca correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
       "tempoEstimado": 35,
       "tags": [
         "identidade",
@@ -5551,20 +5552,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Identidade étnico-racial e digital",
+      "subtopico": "Identidade etnico-racial e digital",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: grupos usam plataformas digitais para afirmar referências, denunciar racismo e compartilhar experiências A leitura sociológica mais adequada aponta para:",
+      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: grupos usam plataformas digitais para afirmar referencias, denunciar racismo e compartilhar experiencias A leitura sociologica mais adequada aponta para:",
       "opcoes": [
-        "identidade também se disputa em narrativas publicas, visibilidades e formas de representação online",
-        "Identidade étnico-racial e digital mostra que a vida social não interfere nas formas de reconhecimento.",
-        "Identidade étnico-racial e digital prova que todos os grupos agem da mesma forma em qualquer contexto.",
-        "Identidade étnico-racial e digital significa ausencia completa de conflitos e diferenças."
+        "identidade tambem se disputa em narrativas publicas, visibilidades e formas de representacao online",
+        "Identidade etnico-racial e digital mostra que a vida social nao interfere nas formas de reconhecimento.",
+        "Identidade etnico-racial e digital prova que todos os grupos agem da mesma forma em qualquer contexto.",
+        "Identidade etnico-racial e digital significa ausencia completa de conflitos e diferencas."
       ],
-      "correta": "identidade também se disputa em narrativas publicas, visibilidades e formas de representação online",
-      "comentario": "Identidade étnico-racial e digital permite interpretar o caso a partir de relações, reconhecimento e pertencimento.",
+      "correta": "identidade tambem se disputa em narrativas publicas, visibilidades e formas de representacao online",
+      "comentario": "Identidade etnico-racial e digital permite interpretar o caso a partir de relacoes, reconhecimento e pertencimento.",
       "tempoEstimado": 40,
       "tags": [
         "identidade",
@@ -5590,20 +5591,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Identidade étnico-racial e digital",
+      "subtopico": "Identidade etnico-racial e digital",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação abaixo evidencia identidade étnico-racial e digital de maneira mais clara?",
+      "enunciado": "Qual situacao abaixo evidencia identidade etnico-racial e digital de maneira mais clara?",
       "opcoes": [
-        "a identidade ganha visibilidade quando memorias, pertencimentos e representações circulam no espaço fisico e online",
-        "um jovem reelabora sua forma de se identificar ao entrar em novos grupos e espaços sociais",
-        "alguem se reconhece por escolhas, memoria e vivencias que não se repetem exatamente em outros indivíduos",
-        "uma comunidade fortalece pertencimento ao valorizar sua história, seus símbolos e suas lutas"
+        "a identidade ganha visibilidade quando memorias, pertencimentos e representacoes circulam no espaco fisico e online",
+        "um jovem reelabora sua forma de se identificar ao entrar em novos grupos e espacos sociais",
+        "alguem se reconhece por escolhas, memoria e vivencias que nao se repetem exatamente em outros individuos",
+        "uma comunidade fortalece pertencimento ao valorizar sua historia, seus simbolos e suas lutas"
       ],
-      "correta": "a identidade ganha visibilidade quando memorias, pertencimentos e representações circulam no espaço fisico e online",
-      "comentario": "A alternativa correta traduz identidade étnico-racial e digital em uma situação concreta de vida social.",
+      "correta": "a identidade ganha visibilidade quando memorias, pertencimentos e representacoes circulam no espaco fisico e online",
+      "comentario": "A alternativa correta traduz identidade etnico-racial e digital em uma situacao concreta de vida social.",
       "tempoEstimado": 40,
       "tags": [
         "identidade",
@@ -5629,20 +5630,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Identidade étnico-racial e digital",
+      "subtopico": "Identidade etnico-racial e digital",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"uma pessoa fortalece reconhecimento racial e produz narrativas sobre si em redes e espaços coletivos\", qual conclusão e mais adequada?",
+      "enunciado": "Ao analisar o caso \"uma pessoa fortalece reconhecimento racial e produz narrativas sobre si em redes e espacos coletivos\", qual conclusao e mais adequada?",
       "opcoes": [
-        "pertencimento racial e presença digital influenciam reconhecimento, autoestima e disputa por representação",
-        "Identidade étnico-racial e digital indica que valores sociais nunca mudam.",
-        "Identidade étnico-racial e digital só pode ser explicado por fatores biológicos.",
-        "Identidade étnico-racial e digital dispensa comparação entre grupos e contextos."
+        "pertencimento racial e presenca digital influenciam reconhecimento, autoestima e disputa por representacao",
+        "Identidade etnico-racial e digital indica que valores sociais nunca mudam.",
+        "Identidade etnico-racial e digital so pode ser explicado por fatores biologicos.",
+        "Identidade etnico-racial e digital dispensa comparacao entre grupos e contextos."
       ],
-      "correta": "pertencimento racial e presença digital influenciam reconhecimento, autoestima e disputa por representação",
-      "comentario": "A conclusão correta mantém o foco no sentido sociológico do caso apresentado.",
+      "correta": "pertencimento racial e presenca digital influenciam reconhecimento, autoestima e disputa por representacao",
+      "comentario": "A conclusao correta mantem o foco no sentido sociologico do caso apresentado.",
       "tempoEstimado": 45,
       "tags": [
         "identidade",
@@ -5668,20 +5669,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Identidade étnico-racial e digital",
+      "subtopico": "Identidade etnico-racial e digital",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 7,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com identidade étnico-racial e digital?",
+      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com identidade etnico-racial e digital?",
       "opcoes": [
-        "como pertencimentos étnico-raciais se articulam com formas de representação em ambientes digitais?",
-        "de que modo imagens simplificadas sobre grupos influenciam relações sociais?",
-        "como julgamentos prévios negativos afetam a vida de grupos sociais?",
-        "como jovens negociam expectativas sociais e afirmação de si em seus cotidianos?"
+        "como pertencimentos etnico-raciais se articulam com formas de representacao em ambientes digitais?",
+        "de que modo imagens simplificadas sobre grupos influenciam relacoes sociais?",
+        "como julgamentos previos negativos afetam a vida de grupos sociais?",
+        "como jovens negociam expectativas sociais e afirmacao de si em seus cotidianos?"
       ],
-      "correta": "como pertencimentos étnico-raciais se articulam com formas de representação em ambientes digitais?",
-      "comentario": "A pergunta correta ajuda a investigar identidade étnico-racial e digital de forma coerente com o subtopico.",
+      "correta": "como pertencimentos etnico-raciais se articulam com formas de representacao em ambientes digitais?",
+      "comentario": "A pergunta correta ajuda a investigar identidade etnico-racial e digital de forma coerente com o subtopico.",
       "tempoEstimado": 45,
       "tags": [
         "identidade",
@@ -5707,20 +5708,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Identidade étnico-racial e digital",
+      "subtopico": "Identidade etnico-racial e digital",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a afirmação que revela compreensão inadequada de identidade étnico-racial e digital.",
+      "enunciado": "Assinale a afirmacao que revela compreensao inadequada de identidade etnico-racial e digital.",
       "opcoes": [
-        "Um tema restrito ao espaço virtual e sem relação com desigualdades e reconhecimento reais.",
-        "Identidade étnico-racial e digital pode ser observado em contextos de reconhecimento e convivência social.",
-        "Identidade étnico-racial e digital ajuda a analisar pertencimentos, diferenças e trajetórias.",
-        "Identidade étnico-racial e digital depende da interação entre indivíduos, grupos e instituições."
+        "Um tema restrito ao espaco virtual e sem relacao com desigualdades e reconhecimento reais.",
+        "Identidade etnico-racial e digital pode ser observado em contextos de reconhecimento e convivencia social.",
+        "Identidade etnico-racial e digital ajuda a analisar pertencimentos, diferencas e trajetorias.",
+        "Identidade etnico-racial e digital depende da interacao entre individuos, grupos e instituicoes."
       ],
-      "correta": "Um tema restrito ao espaço virtual e sem relação com desigualdades e reconhecimento reais.",
-      "comentario": "A alternativa incorreta expressa uma confusão comum sobre identidade étnico-racial e digital.",
+      "correta": "Um tema restrito ao espaco virtual e sem relacao com desigualdades e reconhecimento reais.",
+      "comentario": "A alternativa incorreta expressa uma confusao comum sobre identidade etnico-racial e digital.",
       "tempoEstimado": 45,
       "tags": [
         "identidade",
@@ -5746,20 +5747,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Identidade étnico-racial e digital",
+      "subtopico": "Identidade etnico-racial e digital",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre identidade, um estudante afirmou: \"as redes podem reforcar exclusoes, mas também ampliar visibilidade e afirmação identitária\". Qual avaliacao e mais consistente?",
+      "enunciado": "Em um debate sobre identidade, um estudante afirmou: \"as redes podem reforcar exclusoes, mas tambem ampliar visibilidade e afirmacao identitaria\". Qual avaliacao e mais consistente?",
       "opcoes": [
-        "a afirmação esta correta, porque a esfera digital participa das disputas por reconhecimento",
-        "Identidade étnico-racial e digital não pode ser observado em situações do cotidiano.",
-        "Identidade étnico-racial e digital depende apenas da vontade individual, sem contexto social.",
-        "Identidade étnico-racial e digital torna desnecessario comparar grupos e referências coletivas."
+        "a afirmacao esta correta, porque a esfera digital participa das disputas por reconhecimento",
+        "Identidade etnico-racial e digital nao pode ser observado em situacoes do cotidiano.",
+        "Identidade etnico-racial e digital depende apenas da vontade individual, sem contexto social.",
+        "Identidade etnico-racial e digital torna desnecessario comparar grupos e referencias coletivas."
       ],
-      "correta": "a afirmação esta correta, porque a esfera digital participa das disputas por reconhecimento",
-      "comentario": "A avaliação correta recupera o núcleo teórico de identidade étnico-racial e digital.",
+      "correta": "a afirmacao esta correta, porque a esfera digital participa das disputas por reconhecimento",
+      "comentario": "A avaliacao correta recupera o nucleo teorico de identidade etnico-racial e digital.",
       "tempoEstimado": 50,
       "tags": [
         "identidade",
@@ -5785,20 +5786,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Identidade étnico-racial e digital",
+      "subtopico": "Identidade etnico-racial e digital",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando grupos não encontram espaço para se representar e combater narrativas discriminatorias, a melhor interpretação sociológica e que:",
+      "enunciado": "Quando grupos nao encontram espaco para se representar e combater narrativas discriminatorias, a melhor interpretacao sociologica e que:",
       "opcoes": [
-        "a disputa por reconhecimento identitário fica mais fragilizada",
-        "Identidade étnico-racial e digital desaparece porque a sociedade não produz reconhecimento nem expectativas.",
-        "Identidade étnico-racial e digital deixa de existir sempre que surgem conflitos entre grupos.",
-        "Identidade étnico-racial e digital só importa em sociedades antigas, não no presente."
+        "a disputa por reconhecimento identitario fica mais fragilizada",
+        "Identidade etnico-racial e digital desaparece porque a sociedade nao produz reconhecimento nem expectativas.",
+        "Identidade etnico-racial e digital deixa de existir sempre que surgem conflitos entre grupos.",
+        "Identidade etnico-racial e digital so importa em sociedades antigas, nao no presente."
       ],
-      "correta": "a disputa por reconhecimento identitário fica mais fragilizada",
-      "comentario": "A conclusão correta mostra como a ausencia ou a fragilidade do fenomeno afeta a vida social.",
+      "correta": "a disputa por reconhecimento identitario fica mais fragilizada",
+      "comentario": "A conclusao correta mostra como a ausencia ou a fragilidade do fenomeno afeta a vida social.",
       "tempoEstimado": 50,
       "tags": [
         "identidade",
@@ -5824,20 +5825,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Identidade étnico-racial e digital",
+      "subtopico": "Identidade etnico-racial e digital",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente identidade étnico-racial e digital a uma situação de comunidade escolar?",
+      "enunciado": "Qual alternativa aplica corretamente identidade etnico-racial e digital a uma situacao de comunidade escolar?",
       "opcoes": [
-        "a turma analisa campanhas digitais de afirmação racial e de combate a discursos discriminatorios",
+        "a turma analisa campanhas digitais de afirmacao racial e de combate a discursos discriminatorios",
         "a escola discute como piadas e comentarios generalizantes reproduzem estereotipos",
-        "a turma analisa por que insultos dirigidos a origem, gênero ou cor expressam preconceito",
-        "a escola discute como diferentes trajetórias juvenis influenciam projetos de vida e autoestima"
+        "a turma analisa por que insultos dirigidos a origem, genero ou cor expressam preconceito",
+        "a escola discute como diferentes trajetorias juvenis influenciam projetos de vida e autoestima"
       ],
-      "correta": "a turma analisa campanhas digitais de afirmação racial e de combate a discursos discriminatorios",
-      "comentario": "A alternativa correta aproxima identidade étnico-racial e digital de um contexto escolar concreto.",
+      "correta": "a turma analisa campanhas digitais de afirmacao racial e de combate a discursos discriminatorios",
+      "comentario": "A alternativa correta aproxima identidade etnico-racial e digital de um contexto escolar concreto.",
       "tempoEstimado": 55,
       "tags": [
         "identidade",
@@ -5863,20 +5864,20 @@ export const identidade = {
       ],
       "materia": "Sociologia",
       "topico": "Identidade",
-      "subtopico": "Identidade étnico-racial e digital",
+      "subtopico": "Identidade etnico-racial e digital",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual sintese final representa melhor identidade étnico-racial e digital?",
+      "enunciado": "Qual sintese final representa melhor identidade etnico-racial e digital?",
       "opcoes": [
-        "identidade étnico-racial e digital envolve pertencimento, representação e reconhecimento em contextos sociais e online",
-        "Identidade étnico-racial e digital é um fator biológico fixo, sem relação com aprendizagem e grupos sociais.",
-        "Identidade étnico-racial e digital explica apenas escolhas privadas e ignora a dimensão coletiva.",
-        "Identidade étnico-racial e digital impede qualquer mudança historica ou social."
+        "identidade etnico-racial e digital envolve pertencimento, representacao e reconhecimento em contextos sociais e online",
+        "Identidade etnico-racial e digital e um fator biologico fixo, sem relacao com aprendizagem e grupos sociais.",
+        "Identidade etnico-racial e digital explica apenas escolhas privadas e ignora a dimensao coletiva.",
+        "Identidade etnico-racial e digital impede qualquer mudanca historica ou social."
       ],
-      "correta": "identidade étnico-racial e digital envolve pertencimento, representação e reconhecimento em contextos sociais e online",
-      "comentario": "A síntese correta preserva a definição, o alcance e o uso analítico de identidade étnico-racial e digital.",
+      "correta": "identidade etnico-racial e digital envolve pertencimento, representacao e reconhecimento em contextos sociais e online",
+      "comentario": "A sintese correta preserva a definicao, o alcance e o uso analitico de identidade etnico-racial e digital.",
       "tempoEstimado": 60,
       "tags": [
         "identidade",

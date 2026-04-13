@@ -1,6 +1,6 @@
-export const temposVerbaisPastEFuture = {
+﻿export const temposVerbaisPastEFuture = {
   "id": "ingles_tempos_verbais_past_e_future",
-  "materia": "Inglês",
+  "materia": "Ingles",
   "serie": [
     2
   ],
@@ -8,7 +8,8 @@ export const temposVerbaisPastEFuture = {
   "metadados": {
     "disciplinaId": "ingles",
     "base": "ESCOLAR",
-    "eixo": "Gramática intermediária em inglês",
+    "seloEditorial": "VERIFICADA",
+    "eixo": "Gramatica intermediaria em ingles",
     "frente": "Leitura e uso de estruturas verbais para passado e futuro",
     "searchAliases": [
       "simple past",
@@ -33,13 +34,13 @@ export const temposVerbaisPastEFuture = {
     "habilidadesBase": [
       "identificar marcas verbais de passado e futuro",
       "distinguir usos de simple past, past continuous e used to",
-      "interpretar intenções expressas com will e going to",
+      "interpretar intencoes expressas com will e going to",
       "relacionar tempo verbal e contexto discursivo",
       "analisar cronologia e planejamento em textos curtos",
-      "aplicar tempos verbais em leitura e interpretação"
+      "aplicar tempos verbais em leitura e interpretacao"
     ],
     "auditado": true,
-    "auditadoEm": "2026-04-11",
+    "auditadoEm": "2026-04-12",
     "auditoriaTipo": "varredura-mais-profunda"
   },
   "questoes": [
@@ -48,22 +49,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Simple Past afirmativo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Inglês, Simple Past afirmativo refere-se a:",
+      "enunciado": "Em Ingles, Simple Past afirmativo refere-se a:",
       "opcoes": [
-        "o uso do passado simples para relatar ações concluídas em um momento passado",
+        "o uso do passado simples para relatar acoes concluidas em um momento passado",
         "o uso de did not e did para negar ou formular perguntas no passado simples",
-        "a distinção entre verbos que formam o passado com ed e verbos com formas irregulares",
-        "o tempo verbal usado para indicar ação em andamento em um momento passado"
+        "a distincao entre verbos que formam o passado com ed e verbos com formas irregulares",
+        "o tempo verbal usado para indicar acao em andamento em um momento passado"
       ],
-      "correta": "o uso do passado simples para relatar ações concluídas em um momento passado",
-      "comentario": "Simple Past afirmativo refere-se ao uso do passado simples para relatar ações concluídas em um momento passado.",
+      "correta": "o uso do passado simples para relatar acoes concluidas em um momento passado",
+      "comentario": "Simple Past afirmativo refere-se ao uso do passado simples para relatar acoes concluidas em um momento passado.",
       "tempoEstimado": 20,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -87,14 +88,14 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Simple Past afirmativo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: um diário conta o que um estudante did, visited and watched last weekend. Esse caso está mais ligado a qual subtópico?",
+      "enunciado": "Observe a situacao: um diario conta o que um estudante did, visited and watched last weekend. Esse caso esta mais ligado a qual subtopico?",
       "opcoes": [
         "Simple Past afirmativo",
         "Simple Past negativo e interrogativo",
@@ -102,7 +103,7 @@ export const temposVerbaisPastEFuture = {
         "Past Continuous"
       ],
       "correta": "Simple Past afirmativo",
-      "comentario": "A situação apresentada é melhor compreendida por meio de simple Past afirmativo.",
+      "comentario": "A situacao apresentada e melhor compreendida por meio de simple Past afirmativo.",
       "tempoEstimado": 20,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -126,7 +127,7 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Simple Past afirmativo",
       "dificuldadeLabel": "facil",
@@ -165,14 +166,14 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Simple Past afirmativo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO representa corretamente simple Past afirmativo?",
+      "enunciado": "Qual alternativa NAO representa corretamente simple Past afirmativo?",
       "opcoes": [
         "Did you study for the test?",
         "They visited the museum yesterday.",
@@ -180,7 +181,7 @@ export const temposVerbaisPastEFuture = {
         "interpretar relatos, biografias curtas e rotinas passadas."
       ],
       "correta": "Did you study for the test?",
-      "comentario": "A opção incompatível ilustra outro subtópico, e não simple Past afirmativo.",
+      "comentario": "A opcao incompativel ilustra outro subtopico, e nao simple Past afirmativo.",
       "tempoEstimado": 25,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -204,22 +205,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Simple Past afirmativo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar simple Past afirmativo, o foco principal é:",
+      "enunciado": "Ao estudar simple Past afirmativo, o foco principal e:",
       "opcoes": [
-        "reconhecer ações terminadas e marcas temporais do passado",
+        "reconhecer acoes terminadas e marcas temporais do passado",
         "montar negativas e perguntas corretas com auxiliar did",
-        "reconhecer padrões de formação verbal no passado",
-        "reconhecer ações passadas em progresso e seu contexto"
+        "reconhecer padroes de formacao verbal no passado",
+        "reconhecer acoes passadas em progresso e seu contexto"
       ],
-      "correta": "reconhecer ações terminadas e marcas temporais do passado",
-      "comentario": "Simple Past afirmativo concentra-se em reconhecer ações terminadas e marcas temporais do passado.",
+      "correta": "reconhecer acoes terminadas e marcas temporais do passado",
+      "comentario": "Simple Past afirmativo concentra-se em reconhecer acoes terminadas e marcas temporais do passado.",
       "tempoEstimado": 30,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -243,7 +244,7 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Simple Past afirmativo",
       "dificuldadeLabel": "facil",
@@ -252,13 +253,13 @@ export const temposVerbaisPastEFuture = {
       "tipo": "multipla_escolha",
       "enunciado": "Enquanto Simple Past negativo e interrogativo trata de o uso de did not e did para negar ou formular perguntas no passado simples, Simple Past afirmativo destaca:",
       "opcoes": [
-        "O uso do passado simples para relatar ações concluídas em um momento passado.",
+        "O uso do passado simples para relatar acoes concluidas em um momento passado.",
         "O uso de did not e did para negar ou formular perguntas no passado simples.",
-        "A distinção entre verbos que formam o passado com ed e verbos com formas irregulares.",
-        "O tempo verbal usado para indicar ação em andamento em um momento passado."
+        "A distincao entre verbos que formam o passado com ed e verbos com formas irregulares.",
+        "O tempo verbal usado para indicar acao em andamento em um momento passado."
       ],
-      "correta": "O uso do passado simples para relatar ações concluídas em um momento passado.",
-      "comentario": "A comparação correta mostra a especificidade de simple Past afirmativo.",
+      "correta": "O uso do passado simples para relatar acoes concluidas em um momento passado.",
+      "comentario": "A comparacao correta mostra a especificidade de simple Past afirmativo.",
       "tempoEstimado": 30,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -282,14 +283,14 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Simple Past afirmativo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma atividade de sala, um diário conta o que um estudante did, visited and watched last weekend. Para responder bem, o estudante deve mobilizar principalmente:",
+      "enunciado": "Em uma atividade de sala, um diario conta o que um estudante did, visited and watched last weekend. Para responder bem, o estudante deve mobilizar principalmente:",
       "opcoes": [
         "Simple Past afirmativo",
         "Simple Past negativo e interrogativo",
@@ -297,7 +298,7 @@ export const temposVerbaisPastEFuture = {
         "Used to"
       ],
       "correta": "Simple Past afirmativo",
-      "comentario": "Esse tipo de tarefa exige domínio de simple Past afirmativo.",
+      "comentario": "Esse tipo de tarefa exige dominio de simple Past afirmativo.",
       "tempoEstimado": 35,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -321,19 +322,19 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Simple Past afirmativo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação prática depende mais diretamente de Simple Past afirmativo?",
+      "enunciado": "Qual situacao pratica depende mais diretamente de Simple Past afirmativo?",
       "opcoes": [
         "interpretar relatos, biografias curtas e rotinas passadas",
         "alternar entre formas afirmativas, negativas e interrogativas no passado",
         "interpretar textos curtos com diferentes formas do simple past",
-        "interpretar mudanças de hábito ao longo do tempo"
+        "interpretar mudancas de habito ao longo do tempo"
       ],
       "correta": "interpretar relatos, biografias curtas e rotinas passadas",
       "comentario": "Simple Past afirmativo aparece de forma direta em interpretar relatos, biografias curtas e rotinas passadas.",
@@ -360,22 +361,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Simple Past afirmativo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre simple Past afirmativo?",
+      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre simple Past afirmativo?",
       "opcoes": [
-        "o caso é resolvido com foco em simple Past afirmativo.",
-        "o caso é melhor resolvido por simple Past negativo e interrogativo.",
+        "o caso e resolvido com foco em simple Past afirmativo.",
+        "o caso e melhor resolvido por simple Past negativo e interrogativo.",
         "o caso elimina a necessidade de regular and irregular verbs.",
         "o caso impede qualquer uso de past Continuous."
       ],
-      "correta": "o caso é resolvido com foco em simple Past afirmativo.",
-      "comentario": "A conclusão correta retoma a função central de simple Past afirmativo.",
+      "correta": "o caso e resolvido com foco em simple Past afirmativo.",
+      "comentario": "A conclusao correta retoma a funcao central de simple Past afirmativo.",
       "tempoEstimado": 40,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -399,7 +400,7 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Simple Past afirmativo",
       "dificuldadeLabel": "facil",
@@ -410,7 +411,7 @@ export const temposVerbaisPastEFuture = {
       "opcoes": [
         "Como simple Past afirmativo aparece em interpretar relatos, biografias curtas e rotinas passadas?",
         "Como simple Past negativo e interrogativo substitui totalmente interpretar relatos, biografias curtas e rotinas passadas?",
-        "Por que regular and irregular verbs torna desnecessário estudar Simple Past afirmativo?",
+        "Por que regular and irregular verbs torna desnecessario estudar Simple Past afirmativo?",
         "De que modo past Continuous elimina toda leitura de contexto?"
       ],
       "correta": "Como simple Past afirmativo aparece em interpretar relatos, biografias curtas e rotinas passadas?",
@@ -438,22 +439,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Simple Past afirmativo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em simple Past afirmativo é pensar que:",
+      "enunciado": "Um erro comum em simple Past afirmativo e pensar que:",
       "opcoes": [
         "todo verbo no passado precisa da palavra did junto na frase afirmativa",
-        "em negativas e perguntas o verbo principal também deve continuar no passado",
-        "todos os verbos em inglês fazem o passado apenas com ed",
-        "past continuous serve para qualquer ação passada, mesmo sem duração ou contexto"
+        "em negativas e perguntas o verbo principal tambem deve continuar no passado",
+        "todos os verbos em ingles fazem o passado apenas com ed",
+        "past continuous serve para qualquer acao passada, mesmo sem duracao ou contexto"
       ],
       "correta": "todo verbo no passado precisa da palavra did junto na frase afirmativa",
-      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de simple Past afirmativo.",
+      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de simple Past afirmativo.",
       "tempoEstimado": 45,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -477,22 +478,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Simple Past afirmativo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"a frase she did visited her grandmother yesterday está correta no simple past\". A avaliação mais adequada é:",
+      "enunciado": "Um estudante afirma: \"a frase she did visited her grandmother yesterday esta correta no simple past\". A avaliacao mais adequada e:",
       "opcoes": [
-        "A afirmação está incorreta, porque o uso do passado simples para relatar ações concluídas em um momento passado.",
-        "A afirmação está correta, pois resume integralmente simple Past afirmativo.",
-        "A afirmação está correta, porque basta decorar a tradução do exemplo.",
-        "A afirmação está incorreta apenas por não citar uma regra gramatical."
+        "A afirmacao esta incorreta, porque o uso do passado simples para relatar acoes concluidas em um momento passado.",
+        "A afirmacao esta correta, pois resume integralmente simple Past afirmativo.",
+        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
+        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
       ],
-      "correta": "A afirmação está incorreta, porque o uso do passado simples para relatar ações concluídas em um momento passado.",
-      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre simple Past afirmativo.",
+      "correta": "A afirmacao esta incorreta, porque o uso do passado simples para relatar acoes concluidas em um momento passado.",
+      "comentario": "A fala do estudante apresenta um equivoco conceitual sobre simple Past afirmativo.",
       "tempoEstimado": 45,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -516,22 +517,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Simple Past afirmativo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se simple Past afirmativo fosse ignorado(a) em interpretar relatos, biografias curtas e rotinas passadas, o resultado mais provável seria:",
+      "enunciado": "Se simple Past afirmativo fosse ignorado(a) em interpretar relatos, biografias curtas e rotinas passadas, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretação ficaria incompleta e aumentaria a chance de erro em interpretar relatos, biografias curtas e rotinas passadas.",
-        "a questão seria resolvida automaticamente por simple Past negativo e interrogativo.",
-        "nenhuma interpretação seria alterada, porque Simple Past afirmativo não interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
+        "a interpretacao ficaria incompleta e aumentaria a chance de erro em interpretar relatos, biografias curtas e rotinas passadas.",
+        "a questao seria resolvida automaticamente por simple Past negativo e interrogativo.",
+        "nenhuma interpretacao seria alterada, porque Simple Past afirmativo nao interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
       ],
-      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em interpretar relatos, biografias curtas e rotinas passadas.",
-      "comentario": "Ignorar simple Past afirmativo compromete a resolução correta da atividade.",
+      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em interpretar relatos, biografias curtas e rotinas passadas.",
+      "comentario": "Ignorar simple Past afirmativo compromete a resolucao correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -555,14 +556,14 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Simple Past afirmativo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou ação ilustra melhor Simple Past afirmativo?",
+      "enunciado": "Qual trecho ou acao ilustra melhor Simple Past afirmativo?",
       "opcoes": [
         "They visited the museum yesterday.",
         "Did you study for the test?",
@@ -570,7 +571,7 @@ export const temposVerbaisPastEFuture = {
         "She was reading when her friend called."
       ],
       "correta": "They visited the museum yesterday.",
-      "comentario": "O item correto é o que melhor exemplifica simple Past afirmativo.",
+      "comentario": "O item correto e o que melhor exemplifica simple Past afirmativo.",
       "tempoEstimado": 50,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -594,21 +595,21 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Simple Past afirmativo",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao encontrar o exemplo \"They visited the museum yesterday.\", a leitura mais adequada é:",
+      "enunciado": "Ao encontrar o exemplo \"They visited the museum yesterday.\", a leitura mais adequada e:",
       "opcoes": [
-        "a frase expressa uma ação concluída no passado",
+        "a frase expressa uma acao concluida no passado",
         "o auxiliar did carrega a marca temporal na pergunta",
         "o exemplo mostra verbo regular e irregular no passado",
-        "a ação estava em andamento quando outra ocorreu"
+        "a acao estava em andamento quando outra ocorreu"
       ],
-      "correta": "a frase expressa uma ação concluída no passado",
+      "correta": "a frase expressa uma acao concluida no passado",
       "comentario": "A leitura correta do exemplo revela o papel de simple Past afirmativo.",
       "tempoEstimado": 55,
       "tags": [
@@ -633,14 +634,14 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Simple Past afirmativo",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estratégia ajuda mais a estudar simple Past afirmativo?",
+      "enunciado": "Qual estrategia ajuda mais a estudar simple Past afirmativo?",
       "opcoes": [
         "observar verbos no passado e marcadores como yesterday, last week e ago",
         "usar did ou did not e manter o verbo principal na forma base",
@@ -648,7 +649,7 @@ export const temposVerbaisPastEFuture = {
         "observar a estrutura was or were mais verbo com ing e o contexto narrativo"
       ],
       "correta": "observar verbos no passado e marcadores como yesterday, last week e ago",
-      "comentario": "A estratégia correta fortalece o domínio de simple Past afirmativo.",
+      "comentario": "A estrategia correta fortalece o dominio de simple Past afirmativo.",
       "tempoEstimado": 55,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -672,22 +673,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Simple Past afirmativo",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Simple Past afirmativo é mais cobrado quando:",
+      "enunciado": "Em uma prova, Simple Past afirmativo e mais cobrado quando:",
       "opcoes": [
         "o item pede reconhecer ou completar frases afirmativas no simple past",
-        "a questão exige transformação estrutural no simple past",
-        "o item cobra identificação ou uso de formas verbais passadas",
-        "a questão pede identificar ação em curso no passado"
+        "a questao exige transformacao estrutural no simple past",
+        "o item cobra identificacao ou uso de formas verbais passadas",
+        "a questao pede identificar acao em curso no passado"
       ],
       "correta": "o item pede reconhecer ou completar frases afirmativas no simple past",
-      "comentario": "Esse é o tipo de demanda em que simple Past afirmativo aparece com mais frequência.",
+      "comentario": "Esse e o tipo de demanda em que simple Past afirmativo aparece com mais frequencia.",
       "tempoEstimado": 60,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -711,7 +712,7 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Simple Past afirmativo",
       "dificuldadeLabel": "dificil",
@@ -720,13 +721,13 @@ export const temposVerbaisPastEFuture = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual resumo sintetiza melhor a ideia de Simple Past afirmativo?",
       "opcoes": [
-        "Em síntese, o uso do passado simples para relatar ações concluídas em um momento passado.",
-        "Em síntese, o uso de did not e did para negar ou formular perguntas no passado simples.",
-        "Em síntese, a distinção entre verbos que formam o passado com ed e verbos com formas irregulares.",
-        "Em síntese, o tempo verbal usado para indicar ação em andamento em um momento passado."
+        "Em sintese, o uso do passado simples para relatar acoes concluidas em um momento passado.",
+        "Em sintese, o uso de did not e did para negar ou formular perguntas no passado simples.",
+        "Em sintese, a distincao entre verbos que formam o passado com ed e verbos com formas irregulares.",
+        "Em sintese, o tempo verbal usado para indicar acao em andamento em um momento passado."
       ],
-      "correta": "Em síntese, o uso do passado simples para relatar ações concluídas em um momento passado.",
-      "comentario": "O resumo correto recupera o núcleo de simple Past afirmativo.",
+      "correta": "Em sintese, o uso do passado simples para relatar acoes concluidas em um momento passado.",
+      "comentario": "O resumo correto recupera o nucleo de simple Past afirmativo.",
       "tempoEstimado": 60,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -750,22 +751,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Simple Past afirmativo",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associação entre exemplo e interpretação está correta em Simple Past afirmativo?",
+      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Simple Past afirmativo?",
       "opcoes": [
-        "They visited the museum yesterday. -> a frase expressa uma ação concluída no passado",
-        "Did you study for the test? -> a frase expressa uma ação concluída no passado",
-        "She played soccer and then went home. -> a ação estava em andamento quando outra ocorreu",
+        "They visited the museum yesterday. -> a frase expressa uma acao concluida no passado",
+        "Did you study for the test? -> a frase expressa uma acao concluida no passado",
+        "She played soccer and then went home. -> a acao estava em andamento quando outra ocorreu",
         "She was reading when her friend called. -> o auxiliar did carrega a marca temporal na pergunta"
       ],
-      "correta": "They visited the museum yesterday. -> a frase expressa uma ação concluída no passado",
-      "comentario": "A associação correta mantém coerência entre exemplo e interpretação em simple Past afirmativo.",
+      "correta": "They visited the museum yesterday. -> a frase expressa uma acao concluida no passado",
+      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em simple Past afirmativo.",
       "tempoEstimado": 65,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -789,7 +790,7 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Simple Past afirmativo",
       "dificuldadeLabel": "dificil",
@@ -798,13 +799,13 @@ export const temposVerbaisPastEFuture = {
       "tipo": "multipla_escolha",
       "enunciado": "Ao resolver uma atividade sobre simple Past afirmativo, o estudante deve principalmente:",
       "opcoes": [
-        "reconhecer ações terminadas e marcas temporais do passado",
+        "reconhecer acoes terminadas e marcas temporais do passado",
         "observar verbos no passado e marcadores como yesterday, last week e ago",
         "interpretar relatos, biografias curtas e rotinas passadas",
         "o item pede reconhecer ou completar frases afirmativas no simple past"
       ],
-      "correta": "reconhecer ações terminadas e marcas temporais do passado",
-      "comentario": "O objetivo central de simple Past afirmativo é reconhecer ações terminadas e marcas temporais do passado.",
+      "correta": "reconhecer acoes terminadas e marcas temporais do passado",
+      "comentario": "O objetivo central de simple Past afirmativo e reconhecer acoes terminadas e marcas temporais do passado.",
       "tempoEstimado": 70,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -828,19 +829,19 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Simple Past negativo e interrogativo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Inglês, Simple Past negativo e interrogativo refere-se a:",
+      "enunciado": "Em Ingles, Simple Past negativo e interrogativo refere-se a:",
       "opcoes": [
         "o uso de did not e did para negar ou formular perguntas no passado simples",
-        "a distinção entre verbos que formam o passado com ed e verbos com formas irregulares",
-        "o tempo verbal usado para indicar ação em andamento em um momento passado",
-        "a estrutura usada para falar de hábitos, costumes ou estados que existiam no passado"
+        "a distincao entre verbos que formam o passado com ed e verbos com formas irregulares",
+        "o tempo verbal usado para indicar acao em andamento em um momento passado",
+        "a estrutura usada para falar de habitos, costumes ou estados que existiam no passado"
       ],
       "correta": "o uso de did not e did para negar ou formular perguntas no passado simples",
       "comentario": "Simple Past negativo e interrogativo refere-se ao uso de did not e did para negar ou formular perguntas no passado simples.",
@@ -867,14 +868,14 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Simple Past negativo e interrogativo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: o aluno precisa transformar We watched the film em negativa e pergunta. Esse caso está mais ligado a qual subtópico?",
+      "enunciado": "Observe a situacao: o aluno precisa transformar We watched the film em negativa e pergunta. Esse caso esta mais ligado a qual subtopico?",
       "opcoes": [
         "Simple Past negativo e interrogativo",
         "Regular and irregular verbs",
@@ -882,7 +883,7 @@ export const temposVerbaisPastEFuture = {
         "Used to"
       ],
       "correta": "Simple Past negativo e interrogativo",
-      "comentario": "A situação apresentada é melhor compreendida por meio de simple Past negativo e interrogativo.",
+      "comentario": "A situacao apresentada e melhor compreendida por meio de simple Past negativo e interrogativo.",
       "tempoEstimado": 20,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -906,7 +907,7 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Simple Past negativo e interrogativo",
       "dificuldadeLabel": "facil",
@@ -945,14 +946,14 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Simple Past negativo e interrogativo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO representa corretamente simple Past negativo e interrogativo?",
+      "enunciado": "Qual alternativa NAO representa corretamente simple Past negativo e interrogativo?",
       "opcoes": [
         "She played soccer and then went home.",
         "Did you study for the test?",
@@ -960,7 +961,7 @@ export const temposVerbaisPastEFuture = {
         "alternar entre formas afirmativas, negativas e interrogativas no passado."
       ],
       "correta": "She played soccer and then went home.",
-      "comentario": "A opção incompatível ilustra outro subtópico, e não simple Past negativo e interrogativo.",
+      "comentario": "A opcao incompativel ilustra outro subtopico, e nao simple Past negativo e interrogativo.",
       "tempoEstimado": 25,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -984,19 +985,19 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Simple Past negativo e interrogativo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar simple Past negativo e interrogativo, o foco principal é:",
+      "enunciado": "Ao estudar simple Past negativo e interrogativo, o foco principal e:",
       "opcoes": [
         "montar negativas e perguntas corretas com auxiliar did",
-        "reconhecer padrões de formação verbal no passado",
-        "reconhecer ações passadas em progresso e seu contexto",
-        "distinguir hábito passado de ação única no passado"
+        "reconhecer padroes de formacao verbal no passado",
+        "reconhecer acoes passadas em progresso e seu contexto",
+        "distinguir habito passado de acao unica no passado"
       ],
       "correta": "montar negativas e perguntas corretas com auxiliar did",
       "comentario": "Simple Past negativo e interrogativo concentra-se em montar negativas e perguntas corretas com auxiliar did.",
@@ -1023,22 +1024,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Simple Past negativo e interrogativo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Regular and irregular verbs trata de a distinção entre verbos que formam o passado com ed e verbos com formas irregulares, Simple Past negativo e interrogativo destaca:",
+      "enunciado": "Enquanto Regular and irregular verbs trata de a distincao entre verbos que formam o passado com ed e verbos com formas irregulares, Simple Past negativo e interrogativo destaca:",
       "opcoes": [
         "O uso de did not e did para negar ou formular perguntas no passado simples.",
-        "A distinção entre verbos que formam o passado com ed e verbos com formas irregulares.",
-        "O tempo verbal usado para indicar ação em andamento em um momento passado.",
-        "A estrutura usada para falar de hábitos, costumes ou estados que existiam no passado."
+        "A distincao entre verbos que formam o passado com ed e verbos com formas irregulares.",
+        "O tempo verbal usado para indicar acao em andamento em um momento passado.",
+        "A estrutura usada para falar de habitos, costumes ou estados que existiam no passado."
       ],
       "correta": "O uso de did not e did para negar ou formular perguntas no passado simples.",
-      "comentario": "A comparação correta mostra a especificidade de simple Past negativo e interrogativo.",
+      "comentario": "A comparacao correta mostra a especificidade de simple Past negativo e interrogativo.",
       "tempoEstimado": 30,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -1062,7 +1063,7 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Simple Past negativo e interrogativo",
       "dificuldadeLabel": "facil",
@@ -1077,7 +1078,7 @@ export const temposVerbaisPastEFuture = {
         "Future with will"
       ],
       "correta": "Simple Past negativo e interrogativo",
-      "comentario": "Esse tipo de tarefa exige domínio de simple Past negativo e interrogativo.",
+      "comentario": "Esse tipo de tarefa exige dominio de simple Past negativo e interrogativo.",
       "tempoEstimado": 35,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -1101,19 +1102,19 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Simple Past negativo e interrogativo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação prática depende mais diretamente de Simple Past negativo e interrogativo?",
+      "enunciado": "Qual situacao pratica depende mais diretamente de Simple Past negativo e interrogativo?",
       "opcoes": [
         "alternar entre formas afirmativas, negativas e interrogativas no passado",
         "interpretar textos curtos com diferentes formas do simple past",
-        "interpretar interrupções e ações simultâneas no passado",
-        "interpretar promessas, previsões e decisões espontâneas"
+        "interpretar interrupcoes e acoes simultaneas no passado",
+        "interpretar promessas, previsoes e decisoes espontaneas"
       ],
       "correta": "alternar entre formas afirmativas, negativas e interrogativas no passado",
       "comentario": "Simple Past negativo e interrogativo aparece de forma direta em alternar entre formas afirmativas, negativas e interrogativas no passado.",
@@ -1140,22 +1141,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Simple Past negativo e interrogativo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre simple Past negativo e interrogativo?",
+      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre simple Past negativo e interrogativo?",
       "opcoes": [
-        "o caso é resolvido com foco em simple Past negativo e interrogativo.",
-        "o caso é melhor resolvido por regular and irregular verbs.",
+        "o caso e resolvido com foco em simple Past negativo e interrogativo.",
+        "o caso e melhor resolvido por regular and irregular verbs.",
         "o caso elimina a necessidade de past Continuous.",
         "o caso impede qualquer uso de used to."
       ],
-      "correta": "o caso é resolvido com foco em simple Past negativo e interrogativo.",
-      "comentario": "A conclusão correta retoma a função central de simple Past negativo e interrogativo.",
+      "correta": "o caso e resolvido com foco em simple Past negativo e interrogativo.",
+      "comentario": "A conclusao correta retoma a funcao central de simple Past negativo e interrogativo.",
       "tempoEstimado": 40,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -1179,7 +1180,7 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Simple Past negativo e interrogativo",
       "dificuldadeLabel": "facil",
@@ -1190,7 +1191,7 @@ export const temposVerbaisPastEFuture = {
       "opcoes": [
         "Como simple Past negativo e interrogativo aparece em alternar entre formas afirmativas, negativas e interrogativas no passado?",
         "Como regular and irregular verbs substitui totalmente alternar entre formas afirmativas, negativas e interrogativas no passado?",
-        "Por que past Continuous torna desnecessário estudar Simple Past negativo e interrogativo?",
+        "Por que past Continuous torna desnecessario estudar Simple Past negativo e interrogativo?",
         "De que modo used to elimina toda leitura de contexto?"
       ],
       "correta": "Como simple Past negativo e interrogativo aparece em alternar entre formas afirmativas, negativas e interrogativas no passado?",
@@ -1218,22 +1219,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Simple Past negativo e interrogativo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em simple Past negativo e interrogativo é pensar que:",
+      "enunciado": "Um erro comum em simple Past negativo e interrogativo e pensar que:",
       "opcoes": [
-        "em negativas e perguntas o verbo principal também deve continuar no passado",
-        "todos os verbos em inglês fazem o passado apenas com ed",
-        "past continuous serve para qualquer ação passada, mesmo sem duração ou contexto",
+        "em negativas e perguntas o verbo principal tambem deve continuar no passado",
+        "todos os verbos em ingles fazem o passado apenas com ed",
+        "past continuous serve para qualquer acao passada, mesmo sem duracao ou contexto",
         "used to significa apenas costume presente"
       ],
-      "correta": "em negativas e perguntas o verbo principal também deve continuar no passado",
-      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de simple Past negativo e interrogativo.",
+      "correta": "em negativas e perguntas o verbo principal tambem deve continuar no passado",
+      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de simple Past negativo e interrogativo.",
       "tempoEstimado": 45,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -1257,22 +1258,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Simple Past negativo e interrogativo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"a forma did she went home é correta porque a ação está no passado\". A avaliação mais adequada é:",
+      "enunciado": "Um estudante afirma: \"a forma did she went home e correta porque a acao esta no passado\". A avaliacao mais adequada e:",
       "opcoes": [
-        "A afirmação está incorreta, porque o uso de did not e did para negar ou formular perguntas no passado simples.",
-        "A afirmação está correta, pois resume integralmente simple Past negativo e interrogativo.",
-        "A afirmação está correta, porque basta decorar a tradução do exemplo.",
-        "A afirmação está incorreta apenas por não citar uma regra gramatical."
+        "A afirmacao esta incorreta, porque o uso de did not e did para negar ou formular perguntas no passado simples.",
+        "A afirmacao esta correta, pois resume integralmente simple Past negativo e interrogativo.",
+        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
+        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
       ],
-      "correta": "A afirmação está incorreta, porque o uso de did not e did para negar ou formular perguntas no passado simples.",
-      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre simple Past negativo e interrogativo.",
+      "correta": "A afirmacao esta incorreta, porque o uso de did not e did para negar ou formular perguntas no passado simples.",
+      "comentario": "A fala do estudante apresenta um equivoco conceitual sobre simple Past negativo e interrogativo.",
       "tempoEstimado": 45,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -1296,22 +1297,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Simple Past negativo e interrogativo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se simple Past negativo e interrogativo fosse ignorado(a) em alternar entre formas afirmativas, negativas e interrogativas no passado, o resultado mais provável seria:",
+      "enunciado": "Se simple Past negativo e interrogativo fosse ignorado(a) em alternar entre formas afirmativas, negativas e interrogativas no passado, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretação ficaria incompleta e aumentaria a chance de erro em alternar entre formas afirmativas, negativas e interrogativas no passado.",
-        "a questão seria resolvida automaticamente por regular and irregular verbs.",
-        "nenhuma interpretação seria alterada, porque Simple Past negativo e interrogativo não interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
+        "a interpretacao ficaria incompleta e aumentaria a chance de erro em alternar entre formas afirmativas, negativas e interrogativas no passado.",
+        "a questao seria resolvida automaticamente por regular and irregular verbs.",
+        "nenhuma interpretacao seria alterada, porque Simple Past negativo e interrogativo nao interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
       ],
-      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em alternar entre formas afirmativas, negativas e interrogativas no passado.",
-      "comentario": "Ignorar simple Past negativo e interrogativo compromete a resolução correta da atividade.",
+      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em alternar entre formas afirmativas, negativas e interrogativas no passado.",
+      "comentario": "Ignorar simple Past negativo e interrogativo compromete a resolucao correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -1335,14 +1336,14 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Simple Past negativo e interrogativo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou ação ilustra melhor Simple Past negativo e interrogativo?",
+      "enunciado": "Qual trecho ou acao ilustra melhor Simple Past negativo e interrogativo?",
       "opcoes": [
         "Did you study for the test?",
         "She played soccer and then went home.",
@@ -1350,7 +1351,7 @@ export const temposVerbaisPastEFuture = {
         "I used to play outside every afternoon."
       ],
       "correta": "Did you study for the test?",
-      "comentario": "O item correto é o que melhor exemplifica simple Past negativo e interrogativo.",
+      "comentario": "O item correto e o que melhor exemplifica simple Past negativo e interrogativo.",
       "tempoEstimado": 50,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -1374,19 +1375,19 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Simple Past negativo e interrogativo",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao encontrar o exemplo \"Did you study for the test?\", a leitura mais adequada é:",
+      "enunciado": "Ao encontrar o exemplo \"Did you study for the test?\", a leitura mais adequada e:",
       "opcoes": [
         "o auxiliar did carrega a marca temporal na pergunta",
         "o exemplo mostra verbo regular e irregular no passado",
-        "a ação estava em andamento quando outra ocorreu",
-        "a frase indica um hábito passado que não é mais necessariamente atual"
+        "a acao estava em andamento quando outra ocorreu",
+        "a frase indica um habito passado que nao e mais necessariamente atual"
       ],
       "correta": "o auxiliar did carrega a marca temporal na pergunta",
       "comentario": "A leitura correta do exemplo revela o papel de simple Past negativo e interrogativo.",
@@ -1413,22 +1414,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Simple Past negativo e interrogativo",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estratégia ajuda mais a estudar simple Past negativo e interrogativo?",
+      "enunciado": "Qual estrategia ajuda mais a estudar simple Past negativo e interrogativo?",
       "opcoes": [
         "usar did ou did not e manter o verbo principal na forma base",
         "separar verbos regulares de irregulares e observar a forma correta",
         "observar a estrutura was or were mais verbo com ing e o contexto narrativo",
-        "observar se o texto fala de hábito antigo ou estado que mudou"
+        "observar se o texto fala de habito antigo ou estado que mudou"
       ],
       "correta": "usar did ou did not e manter o verbo principal na forma base",
-      "comentario": "A estratégia correta fortalece o domínio de simple Past negativo e interrogativo.",
+      "comentario": "A estrategia correta fortalece o dominio de simple Past negativo e interrogativo.",
       "tempoEstimado": 55,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -1452,22 +1453,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Simple Past negativo e interrogativo",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Simple Past negativo e interrogativo é mais cobrado quando:",
+      "enunciado": "Em uma prova, Simple Past negativo e interrogativo e mais cobrado quando:",
       "opcoes": [
-        "a questão exige transformação estrutural no simple past",
-        "o item cobra identificação ou uso de formas verbais passadas",
-        "a questão pede identificar ação em curso no passado",
-        "o item cobra leitura de hábitos passados e contraste temporal"
+        "a questao exige transformacao estrutural no simple past",
+        "o item cobra identificacao ou uso de formas verbais passadas",
+        "a questao pede identificar acao em curso no passado",
+        "o item cobra leitura de habitos passados e contraste temporal"
       ],
-      "correta": "a questão exige transformação estrutural no simple past",
-      "comentario": "Esse é o tipo de demanda em que simple Past negativo e interrogativo aparece com mais frequência.",
+      "correta": "a questao exige transformacao estrutural no simple past",
+      "comentario": "Esse e o tipo de demanda em que simple Past negativo e interrogativo aparece com mais frequencia.",
       "tempoEstimado": 60,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -1491,7 +1492,7 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Simple Past negativo e interrogativo",
       "dificuldadeLabel": "dificil",
@@ -1500,13 +1501,13 @@ export const temposVerbaisPastEFuture = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual resumo sintetiza melhor a ideia de Simple Past negativo e interrogativo?",
       "opcoes": [
-        "Em síntese, o uso de did not e did para negar ou formular perguntas no passado simples.",
-        "Em síntese, a distinção entre verbos que formam o passado com ed e verbos com formas irregulares.",
-        "Em síntese, o tempo verbal usado para indicar ação em andamento em um momento passado.",
-        "Em síntese, a estrutura usada para falar de hábitos, costumes ou estados que existiam no passado."
+        "Em sintese, o uso de did not e did para negar ou formular perguntas no passado simples.",
+        "Em sintese, a distincao entre verbos que formam o passado com ed e verbos com formas irregulares.",
+        "Em sintese, o tempo verbal usado para indicar acao em andamento em um momento passado.",
+        "Em sintese, a estrutura usada para falar de habitos, costumes ou estados que existiam no passado."
       ],
-      "correta": "Em síntese, o uso de did not e did para negar ou formular perguntas no passado simples.",
-      "comentario": "O resumo correto recupera o núcleo de simple Past negativo e interrogativo.",
+      "correta": "Em sintese, o uso de did not e did para negar ou formular perguntas no passado simples.",
+      "comentario": "O resumo correto recupera o nucleo de simple Past negativo e interrogativo.",
       "tempoEstimado": 60,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -1530,22 +1531,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Simple Past negativo e interrogativo",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associação entre exemplo e interpretação está correta em Simple Past negativo e interrogativo?",
+      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Simple Past negativo e interrogativo?",
       "opcoes": [
         "Did you study for the test? -> o auxiliar did carrega a marca temporal na pergunta",
         "She played soccer and then went home. -> o auxiliar did carrega a marca temporal na pergunta",
-        "She was reading when her friend called. -> a frase indica um hábito passado que não é mais necessariamente atual",
+        "She was reading when her friend called. -> a frase indica um habito passado que nao e mais necessariamente atual",
         "I used to play outside every afternoon. -> o exemplo mostra verbo regular e irregular no passado"
       ],
       "correta": "Did you study for the test? -> o auxiliar did carrega a marca temporal na pergunta",
-      "comentario": "A associação correta mantém coerência entre exemplo e interpretação em simple Past negativo e interrogativo.",
+      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em simple Past negativo e interrogativo.",
       "tempoEstimado": 65,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -1569,7 +1570,7 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Simple Past negativo e interrogativo",
       "dificuldadeLabel": "dificil",
@@ -1581,10 +1582,10 @@ export const temposVerbaisPastEFuture = {
         "montar negativas e perguntas corretas com auxiliar did",
         "usar did ou did not e manter o verbo principal na forma base",
         "alternar entre formas afirmativas, negativas e interrogativas no passado",
-        "a questão exige transformação estrutural no simple past"
+        "a questao exige transformacao estrutural no simple past"
       ],
       "correta": "montar negativas e perguntas corretas com auxiliar did",
-      "comentario": "O objetivo central de simple Past negativo e interrogativo é montar negativas e perguntas corretas com auxiliar did.",
+      "comentario": "O objetivo central de simple Past negativo e interrogativo e montar negativas e perguntas corretas com auxiliar did.",
       "tempoEstimado": 70,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -1608,22 +1609,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Regular and irregular verbs",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Inglês, Regular and irregular verbs refere-se a:",
+      "enunciado": "Em Ingles, Regular and irregular verbs refere-se a:",
       "opcoes": [
-        "a distinção entre verbos que formam o passado com ed e verbos com formas irregulares",
-        "o tempo verbal usado para indicar ação em andamento em um momento passado",
-        "a estrutura usada para falar de hábitos, costumes ou estados que existiam no passado",
-        "a estrutura com will usada para previsões, decisões imediatas ou promessas"
+        "a distincao entre verbos que formam o passado com ed e verbos com formas irregulares",
+        "o tempo verbal usado para indicar acao em andamento em um momento passado",
+        "a estrutura usada para falar de habitos, costumes ou estados que existiam no passado",
+        "a estrutura com will usada para previsoes, decisoes imediatas ou promessas"
       ],
-      "correta": "a distinção entre verbos que formam o passado com ed e verbos com formas irregulares",
-      "comentario": "Regular and irregular verbs refere-se à distinção entre verbos que formam o passado com ed e verbos com formas irregulares.",
+      "correta": "a distincao entre verbos que formam o passado com ed e verbos com formas irregulares",
+      "comentario": "Regular and irregular verbs refere-se a distincao entre verbos que formam o passado com ed e verbos com formas irregulares.",
       "tempoEstimado": 20,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -1647,14 +1648,14 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Regular and irregular verbs",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: um exercício mistura played, watched, went e had em um mesmo texto. Esse caso está mais ligado a qual subtópico?",
+      "enunciado": "Observe a situacao: um exercicio mistura played, watched, went e had em um mesmo texto. Esse caso esta mais ligado a qual subtopico?",
       "opcoes": [
         "Regular and irregular verbs",
         "Past Continuous",
@@ -1662,7 +1663,7 @@ export const temposVerbaisPastEFuture = {
         "Future with will"
       ],
       "correta": "Regular and irregular verbs",
-      "comentario": "A situação apresentada é melhor compreendida por meio de regular and irregular verbs.",
+      "comentario": "A situacao apresentada e melhor compreendida por meio de regular and irregular verbs.",
       "tempoEstimado": 20,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -1686,7 +1687,7 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Regular and irregular verbs",
       "dificuldadeLabel": "facil",
@@ -1725,14 +1726,14 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Regular and irregular verbs",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO representa corretamente regular and irregular verbs?",
+      "enunciado": "Qual alternativa NAO representa corretamente regular and irregular verbs?",
       "opcoes": [
         "She was reading when her friend called.",
         "She played soccer and then went home.",
@@ -1740,7 +1741,7 @@ export const temposVerbaisPastEFuture = {
         "interpretar textos curtos com diferentes formas do simple past."
       ],
       "correta": "She was reading when her friend called.",
-      "comentario": "A opção incompatível ilustra outro subtópico, e não regular and irregular verbs.",
+      "comentario": "A opcao incompativel ilustra outro subtopico, e nao regular and irregular verbs.",
       "tempoEstimado": 25,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -1764,22 +1765,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Regular and irregular verbs",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar regular and irregular verbs, o foco principal é:",
+      "enunciado": "Ao estudar regular and irregular verbs, o foco principal e:",
       "opcoes": [
-        "reconhecer padrões de formação verbal no passado",
-        "reconhecer ações passadas em progresso e seu contexto",
-        "distinguir hábito passado de ação única no passado",
+        "reconhecer padroes de formacao verbal no passado",
+        "reconhecer acoes passadas em progresso e seu contexto",
+        "distinguir habito passado de acao unica no passado",
         "reconhecer usos de will em futuro"
       ],
-      "correta": "reconhecer padrões de formação verbal no passado",
-      "comentario": "Regular and irregular verbs concentra-se em reconhecer padrões de formação verbal no passado.",
+      "correta": "reconhecer padroes de formacao verbal no passado",
+      "comentario": "Regular and irregular verbs concentra-se em reconhecer padroes de formacao verbal no passado.",
       "tempoEstimado": 30,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -1803,22 +1804,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Regular and irregular verbs",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Past Continuous trata de o tempo verbal usado para indicar ação em andamento em um momento passado, Regular and irregular verbs destaca:",
+      "enunciado": "Enquanto Past Continuous trata de o tempo verbal usado para indicar acao em andamento em um momento passado, Regular and irregular verbs destaca:",
       "opcoes": [
-        "A distinção entre verbos que formam o passado com ed e verbos com formas irregulares.",
-        "O tempo verbal usado para indicar ação em andamento em um momento passado.",
-        "A estrutura usada para falar de hábitos, costumes ou estados que existiam no passado.",
-        "A estrutura com will usada para previsões, decisões imediatas ou promessas."
+        "A distincao entre verbos que formam o passado com ed e verbos com formas irregulares.",
+        "O tempo verbal usado para indicar acao em andamento em um momento passado.",
+        "A estrutura usada para falar de habitos, costumes ou estados que existiam no passado.",
+        "A estrutura com will usada para previsoes, decisoes imediatas ou promessas."
       ],
-      "correta": "A distinção entre verbos que formam o passado com ed e verbos com formas irregulares.",
-      "comentario": "A comparação correta mostra a especificidade de regular and irregular verbs.",
+      "correta": "A distincao entre verbos que formam o passado com ed e verbos com formas irregulares.",
+      "comentario": "A comparacao correta mostra a especificidade de regular and irregular verbs.",
       "tempoEstimado": 30,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -1842,14 +1843,14 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Regular and irregular verbs",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma atividade de sala, um exercício mistura played, watched, went e had em um mesmo texto. Para responder bem, o estudante deve mobilizar principalmente:",
+      "enunciado": "Em uma atividade de sala, um exercicio mistura played, watched, went e had em um mesmo texto. Para responder bem, o estudante deve mobilizar principalmente:",
       "opcoes": [
         "Regular and irregular verbs",
         "Past Continuous",
@@ -1857,7 +1858,7 @@ export const temposVerbaisPastEFuture = {
         "Going to"
       ],
       "correta": "Regular and irregular verbs",
-      "comentario": "Esse tipo de tarefa exige domínio de regular and irregular verbs.",
+      "comentario": "Esse tipo de tarefa exige dominio de regular and irregular verbs.",
       "tempoEstimado": 35,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -1881,19 +1882,19 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Regular and irregular verbs",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação prática depende mais diretamente de Regular and irregular verbs?",
+      "enunciado": "Qual situacao pratica depende mais diretamente de Regular and irregular verbs?",
       "opcoes": [
         "interpretar textos curtos com diferentes formas do simple past",
-        "interpretar interrupções e ações simultâneas no passado",
-        "interpretar mudanças de hábito ao longo do tempo",
-        "interpretar planos já pensados e previsões com indícios"
+        "interpretar interrupcoes e acoes simultaneas no passado",
+        "interpretar mudancas de habito ao longo do tempo",
+        "interpretar planos ja pensados e previsoes com indicios"
       ],
       "correta": "interpretar textos curtos com diferentes formas do simple past",
       "comentario": "Regular and irregular verbs aparece de forma direta em interpretar textos curtos com diferentes formas do simple past.",
@@ -1920,22 +1921,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Regular and irregular verbs",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre regular and irregular verbs?",
+      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre regular and irregular verbs?",
       "opcoes": [
-        "o caso é resolvido com foco em regular and irregular verbs.",
-        "o caso é melhor resolvido por past Continuous.",
+        "o caso e resolvido com foco em regular and irregular verbs.",
+        "o caso e melhor resolvido por past Continuous.",
         "o caso elimina a necessidade de used to.",
         "o caso impede qualquer uso de future with will."
       ],
-      "correta": "o caso é resolvido com foco em regular and irregular verbs.",
-      "comentario": "A conclusão correta retoma a função central de regular and irregular verbs.",
+      "correta": "o caso e resolvido com foco em regular and irregular verbs.",
+      "comentario": "A conclusao correta retoma a funcao central de regular and irregular verbs.",
       "tempoEstimado": 40,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -1959,7 +1960,7 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Regular and irregular verbs",
       "dificuldadeLabel": "facil",
@@ -1970,7 +1971,7 @@ export const temposVerbaisPastEFuture = {
       "opcoes": [
         "Como regular and irregular verbs aparece em interpretar textos curtos com diferentes formas do simple past?",
         "Como past Continuous substitui totalmente interpretar textos curtos com diferentes formas do simple past?",
-        "Por que used to torna desnecessário estudar Regular and irregular verbs?",
+        "Por que used to torna desnecessario estudar Regular and irregular verbs?",
         "De que modo future with will elimina toda leitura de contexto?"
       ],
       "correta": "Como regular and irregular verbs aparece em interpretar textos curtos com diferentes formas do simple past?",
@@ -1998,22 +1999,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Regular and irregular verbs",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em regular and irregular verbs é pensar que:",
+      "enunciado": "Um erro comum em regular and irregular verbs e pensar que:",
       "opcoes": [
-        "todos os verbos em inglês fazem o passado apenas com ed",
-        "past continuous serve para qualquer ação passada, mesmo sem duração ou contexto",
+        "todos os verbos em ingles fazem o passado apenas com ed",
+        "past continuous serve para qualquer acao passada, mesmo sem duracao ou contexto",
         "used to significa apenas costume presente",
-        "will é a única forma de expressar futuro em inglês"
+        "will e a unica forma de expressar futuro em ingles"
       ],
-      "correta": "todos os verbos em inglês fazem o passado apenas com ed",
-      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de regular and irregular verbs.",
+      "correta": "todos os verbos em ingles fazem o passado apenas com ed",
+      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de regular and irregular verbs.",
       "tempoEstimado": 45,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -2037,22 +2038,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Regular and irregular verbs",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"go-ed é uma forma regular possível porque segue o padrão geral\". A avaliação mais adequada é:",
+      "enunciado": "Um estudante afirma: \"go-ed e uma forma regular possivel porque segue o padrao geral\". A avaliacao mais adequada e:",
       "opcoes": [
-        "A afirmação está incorreta, porque a distinção entre verbos que formam o passado com ed e verbos com formas irregulares.",
-        "A afirmação está correta, pois resume integralmente regular and irregular verbs.",
-        "A afirmação está correta, porque basta decorar a tradução do exemplo.",
-        "A afirmação está incorreta apenas por não citar uma regra gramatical."
+        "A afirmacao esta incorreta, porque a distincao entre verbos que formam o passado com ed e verbos com formas irregulares.",
+        "A afirmacao esta correta, pois resume integralmente regular and irregular verbs.",
+        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
+        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
       ],
-      "correta": "A afirmação está incorreta, porque a distinção entre verbos que formam o passado com ed e verbos com formas irregulares.",
-      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre regular and irregular verbs.",
+      "correta": "A afirmacao esta incorreta, porque a distincao entre verbos que formam o passado com ed e verbos com formas irregulares.",
+      "comentario": "A fala do estudante apresenta um equivoco conceitual sobre regular and irregular verbs.",
       "tempoEstimado": 45,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -2076,22 +2077,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Regular and irregular verbs",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se regular and irregular verbs fosse ignorado(a) em interpretar textos curtos com diferentes formas do simple past, o resultado mais provável seria:",
+      "enunciado": "Se regular and irregular verbs fosse ignorado(a) em interpretar textos curtos com diferentes formas do simple past, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretação ficaria incompleta e aumentaria a chance de erro em interpretar textos curtos com diferentes formas do simple past.",
-        "a questão seria resolvida automaticamente por past Continuous.",
-        "nenhuma interpretação seria alterada, porque Regular and irregular verbs não interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
+        "a interpretacao ficaria incompleta e aumentaria a chance de erro em interpretar textos curtos com diferentes formas do simple past.",
+        "a questao seria resolvida automaticamente por past Continuous.",
+        "nenhuma interpretacao seria alterada, porque Regular and irregular verbs nao interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
       ],
-      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em interpretar textos curtos com diferentes formas do simple past.",
-      "comentario": "Ignorar regular and irregular verbs compromete a resolução correta da atividade.",
+      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em interpretar textos curtos com diferentes formas do simple past.",
+      "comentario": "Ignorar regular and irregular verbs compromete a resolucao correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -2115,14 +2116,14 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Regular and irregular verbs",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou ação ilustra melhor Regular and irregular verbs?",
+      "enunciado": "Qual trecho ou acao ilustra melhor Regular and irregular verbs?",
       "opcoes": [
         "She played soccer and then went home.",
         "She was reading when her friend called.",
@@ -2130,7 +2131,7 @@ export const temposVerbaisPastEFuture = {
         "I will call you later."
       ],
       "correta": "She played soccer and then went home.",
-      "comentario": "O item correto é o que melhor exemplifica regular and irregular verbs.",
+      "comentario": "O item correto e o que melhor exemplifica regular and irregular verbs.",
       "tempoEstimado": 50,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -2154,19 +2155,19 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Regular and irregular verbs",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao encontrar o exemplo \"She played soccer and then went home.\", a leitura mais adequada é:",
+      "enunciado": "Ao encontrar o exemplo \"She played soccer and then went home.\", a leitura mais adequada e:",
       "opcoes": [
         "o exemplo mostra verbo regular e irregular no passado",
-        "a ação estava em andamento quando outra ocorreu",
-        "a frase indica um hábito passado que não é mais necessariamente atual",
-        "a frase expressa uma decisão ou ação futura"
+        "a acao estava em andamento quando outra ocorreu",
+        "a frase indica um habito passado que nao e mais necessariamente atual",
+        "a frase expressa uma decisao ou acao futura"
       ],
       "correta": "o exemplo mostra verbo regular e irregular no passado",
       "comentario": "A leitura correta do exemplo revela o papel de regular and irregular verbs.",
@@ -2193,22 +2194,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Regular and irregular verbs",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estratégia ajuda mais a estudar regular and irregular verbs?",
+      "enunciado": "Qual estrategia ajuda mais a estudar regular and irregular verbs?",
       "opcoes": [
         "separar verbos regulares de irregulares e observar a forma correta",
         "observar a estrutura was or were mais verbo com ing e o contexto narrativo",
-        "observar se o texto fala de hábito antigo ou estado que mudou",
-        "observar intenção de promessa, previsão ou decisão tomada no momento"
+        "observar se o texto fala de habito antigo ou estado que mudou",
+        "observar intencao de promessa, previsao ou decisao tomada no momento"
       ],
       "correta": "separar verbos regulares de irregulares e observar a forma correta",
-      "comentario": "A estratégia correta fortalece o domínio de regular and irregular verbs.",
+      "comentario": "A estrategia correta fortalece o dominio de regular and irregular verbs.",
       "tempoEstimado": 55,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -2232,22 +2233,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Regular and irregular verbs",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Regular and irregular verbs é mais cobrado quando:",
+      "enunciado": "Em uma prova, Regular and irregular verbs e mais cobrado quando:",
       "opcoes": [
-        "o item cobra identificação ou uso de formas verbais passadas",
-        "a questão pede identificar ação em curso no passado",
-        "o item cobra leitura de hábitos passados e contraste temporal",
-        "a questão pede identificar o valor de will no contexto"
+        "o item cobra identificacao ou uso de formas verbais passadas",
+        "a questao pede identificar acao em curso no passado",
+        "o item cobra leitura de habitos passados e contraste temporal",
+        "a questao pede identificar o valor de will no contexto"
       ],
-      "correta": "o item cobra identificação ou uso de formas verbais passadas",
-      "comentario": "Esse é o tipo de demanda em que regular and irregular verbs aparece com mais frequência.",
+      "correta": "o item cobra identificacao ou uso de formas verbais passadas",
+      "comentario": "Esse e o tipo de demanda em que regular and irregular verbs aparece com mais frequencia.",
       "tempoEstimado": 60,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -2271,7 +2272,7 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Regular and irregular verbs",
       "dificuldadeLabel": "dificil",
@@ -2280,13 +2281,13 @@ export const temposVerbaisPastEFuture = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual resumo sintetiza melhor a ideia de Regular and irregular verbs?",
       "opcoes": [
-        "Em síntese, a distinção entre verbos que formam o passado com ed e verbos com formas irregulares.",
-        "Em síntese, o tempo verbal usado para indicar ação em andamento em um momento passado.",
-        "Em síntese, a estrutura usada para falar de hábitos, costumes ou estados que existiam no passado.",
-        "Em síntese, a estrutura com will usada para previsões, decisões imediatas ou promessas."
+        "Em sintese, a distincao entre verbos que formam o passado com ed e verbos com formas irregulares.",
+        "Em sintese, o tempo verbal usado para indicar acao em andamento em um momento passado.",
+        "Em sintese, a estrutura usada para falar de habitos, costumes ou estados que existiam no passado.",
+        "Em sintese, a estrutura com will usada para previsoes, decisoes imediatas ou promessas."
       ],
-      "correta": "Em síntese, a distinção entre verbos que formam o passado com ed e verbos com formas irregulares.",
-      "comentario": "O resumo correto recupera o núcleo de regular and irregular verbs.",
+      "correta": "Em sintese, a distincao entre verbos que formam o passado com ed e verbos com formas irregulares.",
+      "comentario": "O resumo correto recupera o nucleo de regular and irregular verbs.",
       "tempoEstimado": 60,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -2310,22 +2311,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Regular and irregular verbs",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associação entre exemplo e interpretação está correta em Regular and irregular verbs?",
+      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Regular and irregular verbs?",
       "opcoes": [
         "She played soccer and then went home. -> o exemplo mostra verbo regular e irregular no passado",
         "She was reading when her friend called. -> o exemplo mostra verbo regular e irregular no passado",
-        "I used to play outside every afternoon. -> a frase expressa uma decisão ou ação futura",
-        "I will call you later. -> a ação estava em andamento quando outra ocorreu"
+        "I used to play outside every afternoon. -> a frase expressa uma decisao ou acao futura",
+        "I will call you later. -> a acao estava em andamento quando outra ocorreu"
       ],
       "correta": "She played soccer and then went home. -> o exemplo mostra verbo regular e irregular no passado",
-      "comentario": "A associação correta mantém coerência entre exemplo e interpretação em regular and irregular verbs.",
+      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em regular and irregular verbs.",
       "tempoEstimado": 65,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -2349,7 +2350,7 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Regular and irregular verbs",
       "dificuldadeLabel": "dificil",
@@ -2358,13 +2359,13 @@ export const temposVerbaisPastEFuture = {
       "tipo": "multipla_escolha",
       "enunciado": "Ao resolver uma atividade sobre regular and irregular verbs, o estudante deve principalmente:",
       "opcoes": [
-        "reconhecer padrões de formação verbal no passado",
+        "reconhecer padroes de formacao verbal no passado",
         "separar verbos regulares de irregulares e observar a forma correta",
         "interpretar textos curtos com diferentes formas do simple past",
-        "o item cobra identificação ou uso de formas verbais passadas"
+        "o item cobra identificacao ou uso de formas verbais passadas"
       ],
-      "correta": "reconhecer padrões de formação verbal no passado",
-      "comentario": "O objetivo central de regular and irregular verbs é reconhecer padrões de formação verbal no passado.",
+      "correta": "reconhecer padroes de formacao verbal no passado",
+      "comentario": "O objetivo central de regular and irregular verbs e reconhecer padroes de formacao verbal no passado.",
       "tempoEstimado": 70,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -2388,22 +2389,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Past Continuous",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Inglês, Past Continuous refere-se a:",
+      "enunciado": "Em Ingles, Past Continuous refere-se a:",
       "opcoes": [
-        "o tempo verbal usado para indicar ação em andamento em um momento passado",
-        "a estrutura usada para falar de hábitos, costumes ou estados que existiam no passado",
-        "a estrutura com will usada para previsões, decisões imediatas ou promessas",
-        "a estrutura usada para indicar planos, intenções ou previsões baseadas em evidências"
+        "o tempo verbal usado para indicar acao em andamento em um momento passado",
+        "a estrutura usada para falar de habitos, costumes ou estados que existiam no passado",
+        "a estrutura com will usada para previsoes, decisoes imediatas ou promessas",
+        "a estrutura usada para indicar planos, intencoes ou previsoes baseadas em evidencias"
       ],
-      "correta": "o tempo verbal usado para indicar ação em andamento em um momento passado",
-      "comentario": "Past Continuous refere-se ao tempo verbal usado para indicar ação em andamento em um momento passado.",
+      "correta": "o tempo verbal usado para indicar acao em andamento em um momento passado",
+      "comentario": "Past Continuous refere-se ao tempo verbal usado para indicar acao em andamento em um momento passado.",
       "tempoEstimado": 20,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -2427,14 +2428,14 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Past Continuous",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: um texto diz that the students were studying when the lights went out. Esse caso está mais ligado a qual subtópico?",
+      "enunciado": "Observe a situacao: um texto diz that the students were studying when the lights went out. Esse caso esta mais ligado a qual subtopico?",
       "opcoes": [
         "Past Continuous",
         "Used to",
@@ -2442,7 +2443,7 @@ export const temposVerbaisPastEFuture = {
         "Going to"
       ],
       "correta": "Past Continuous",
-      "comentario": "A situação apresentada é melhor compreendida por meio de past Continuous.",
+      "comentario": "A situacao apresentada e melhor compreendida por meio de past Continuous.",
       "tempoEstimado": 20,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -2466,7 +2467,7 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Past Continuous",
       "dificuldadeLabel": "facil",
@@ -2505,22 +2506,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Past Continuous",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO representa corretamente past Continuous?",
+      "enunciado": "Qual alternativa NAO representa corretamente past Continuous?",
       "opcoes": [
         "I used to play outside every afternoon.",
         "She was reading when her friend called.",
         "observar a estrutura was or were mais verbo com ing e o contexto narrativo.",
-        "interpretar interrupções e ações simultâneas no passado."
+        "interpretar interrupcoes e acoes simultaneas no passado."
       ],
       "correta": "I used to play outside every afternoon.",
-      "comentario": "A opção incompatível ilustra outro subtópico, e não past Continuous.",
+      "comentario": "A opcao incompativel ilustra outro subtopico, e nao past Continuous.",
       "tempoEstimado": 25,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -2544,22 +2545,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Past Continuous",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar past Continuous, o foco principal é:",
+      "enunciado": "Ao estudar past Continuous, o foco principal e:",
       "opcoes": [
-        "reconhecer ações passadas em progresso e seu contexto",
-        "distinguir hábito passado de ação única no passado",
+        "reconhecer acoes passadas em progresso e seu contexto",
+        "distinguir habito passado de acao unica no passado",
         "reconhecer usos de will em futuro",
         "distinguir going to de outras formas de futuro"
       ],
-      "correta": "reconhecer ações passadas em progresso e seu contexto",
-      "comentario": "Past Continuous concentra-se em reconhecer ações passadas em progresso e seu contexto.",
+      "correta": "reconhecer acoes passadas em progresso e seu contexto",
+      "comentario": "Past Continuous concentra-se em reconhecer acoes passadas em progresso e seu contexto.",
       "tempoEstimado": 30,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -2583,22 +2584,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Past Continuous",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Used to trata de a estrutura usada para falar de hábitos, costumes ou estados que existiam no passado, Past Continuous destaca:",
+      "enunciado": "Enquanto Used to trata de a estrutura usada para falar de habitos, costumes ou estados que existiam no passado, Past Continuous destaca:",
       "opcoes": [
-        "O tempo verbal usado para indicar ação em andamento em um momento passado.",
-        "A estrutura usada para falar de hábitos, costumes ou estados que existiam no passado.",
-        "A estrutura com will usada para previsões, decisões imediatas ou promessas.",
-        "A estrutura usada para indicar planos, intenções ou previsões baseadas em evidências."
+        "O tempo verbal usado para indicar acao em andamento em um momento passado.",
+        "A estrutura usada para falar de habitos, costumes ou estados que existiam no passado.",
+        "A estrutura com will usada para previsoes, decisoes imediatas ou promessas.",
+        "A estrutura usada para indicar planos, intencoes ou previsoes baseadas em evidencias."
       ],
-      "correta": "O tempo verbal usado para indicar ação em andamento em um momento passado.",
-      "comentario": "A comparação correta mostra a especificidade de past Continuous.",
+      "correta": "O tempo verbal usado para indicar acao em andamento em um momento passado.",
+      "comentario": "A comparacao correta mostra a especificidade de past Continuous.",
       "tempoEstimado": 30,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -2622,7 +2623,7 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Past Continuous",
       "dificuldadeLabel": "facil",
@@ -2637,7 +2638,7 @@ export const temposVerbaisPastEFuture = {
         "Present Continuous for future"
       ],
       "correta": "Past Continuous",
-      "comentario": "Esse tipo de tarefa exige domínio de past Continuous.",
+      "comentario": "Esse tipo de tarefa exige dominio de past Continuous.",
       "tempoEstimado": 35,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -2661,22 +2662,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Past Continuous",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação prática depende mais diretamente de Past Continuous?",
+      "enunciado": "Qual situacao pratica depende mais diretamente de Past Continuous?",
       "opcoes": [
-        "interpretar interrupções e ações simultâneas no passado",
-        "interpretar mudanças de hábito ao longo do tempo",
-        "interpretar promessas, previsões e decisões espontâneas",
-        "interpretar agenda e compromissos futuros já organizados"
+        "interpretar interrupcoes e acoes simultaneas no passado",
+        "interpretar mudancas de habito ao longo do tempo",
+        "interpretar promessas, previsoes e decisoes espontaneas",
+        "interpretar agenda e compromissos futuros ja organizados"
       ],
-      "correta": "interpretar interrupções e ações simultâneas no passado",
-      "comentario": "Past Continuous aparece de forma direta em interpretar interrupções e ações simultâneas no passado.",
+      "correta": "interpretar interrupcoes e acoes simultaneas no passado",
+      "comentario": "Past Continuous aparece de forma direta em interpretar interrupcoes e acoes simultaneas no passado.",
       "tempoEstimado": 35,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -2700,22 +2701,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Past Continuous",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre past Continuous?",
+      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre past Continuous?",
       "opcoes": [
-        "o caso é resolvido com foco em past Continuous.",
-        "o caso é melhor resolvido por used to.",
+        "o caso e resolvido com foco em past Continuous.",
+        "o caso e melhor resolvido por used to.",
         "o caso elimina a necessidade de future with will.",
         "o caso impede qualquer uso de going to."
       ],
-      "correta": "o caso é resolvido com foco em past Continuous.",
-      "comentario": "A conclusão correta retoma a função central de past Continuous.",
+      "correta": "o caso e resolvido com foco em past Continuous.",
+      "comentario": "A conclusao correta retoma a funcao central de past Continuous.",
       "tempoEstimado": 40,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -2739,7 +2740,7 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Past Continuous",
       "dificuldadeLabel": "facil",
@@ -2748,12 +2749,12 @@ export const temposVerbaisPastEFuture = {
       "tipo": "multipla_escolha",
       "enunciado": "Se a turma fosse revisar past Continuous, qual pergunta de estudo seria a mais adequada?",
       "opcoes": [
-        "Como past Continuous aparece em interpretar interrupções e ações simultâneas no passado?",
-        "Como used to substitui totalmente interpretar interrupções e ações simultâneas no passado?",
-        "Por que future with will torna desnecessário estudar Past Continuous?",
+        "Como past Continuous aparece em interpretar interrupcoes e acoes simultaneas no passado?",
+        "Como used to substitui totalmente interpretar interrupcoes e acoes simultaneas no passado?",
+        "Por que future with will torna desnecessario estudar Past Continuous?",
         "De que modo going to elimina toda leitura de contexto?"
       ],
-      "correta": "Como past Continuous aparece em interpretar interrupções e ações simultâneas no passado?",
+      "correta": "Como past Continuous aparece em interpretar interrupcoes e acoes simultaneas no passado?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de past Continuous.",
       "tempoEstimado": 40,
       "tags": [
@@ -2778,22 +2779,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Past Continuous",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em past Continuous é pensar que:",
+      "enunciado": "Um erro comum em past Continuous e pensar que:",
       "opcoes": [
-        "past continuous serve para qualquer ação passada, mesmo sem duração ou contexto",
+        "past continuous serve para qualquer acao passada, mesmo sem duracao ou contexto",
         "used to significa apenas costume presente",
-        "will é a única forma de expressar futuro em inglês",
-        "going to sempre significa obrigação"
+        "will e a unica forma de expressar futuro em ingles",
+        "going to sempre significa obrigacao"
       ],
-      "correta": "past continuous serve para qualquer ação passada, mesmo sem duração ou contexto",
-      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de past Continuous.",
+      "correta": "past continuous serve para qualquer acao passada, mesmo sem duracao ou contexto",
+      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de past Continuous.",
       "tempoEstimado": 45,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -2817,22 +2818,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Past Continuous",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"I was visited my aunt yesterday é um uso correto de past continuous\". A avaliação mais adequada é:",
+      "enunciado": "Um estudante afirma: \"I was visited my aunt yesterday e um uso correto de past continuous\". A avaliacao mais adequada e:",
       "opcoes": [
-        "A afirmação está incorreta, porque o tempo verbal usado para indicar ação em andamento em um momento passado.",
-        "A afirmação está correta, pois resume integralmente past Continuous.",
-        "A afirmação está correta, porque basta decorar a tradução do exemplo.",
-        "A afirmação está incorreta apenas por não citar uma regra gramatical."
+        "A afirmacao esta incorreta, porque o tempo verbal usado para indicar acao em andamento em um momento passado.",
+        "A afirmacao esta correta, pois resume integralmente past Continuous.",
+        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
+        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
       ],
-      "correta": "A afirmação está incorreta, porque o tempo verbal usado para indicar ação em andamento em um momento passado.",
-      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre past Continuous.",
+      "correta": "A afirmacao esta incorreta, porque o tempo verbal usado para indicar acao em andamento em um momento passado.",
+      "comentario": "A fala do estudante apresenta um equivoco conceitual sobre past Continuous.",
       "tempoEstimado": 45,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -2856,22 +2857,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Past Continuous",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se past Continuous fosse ignorado(a) em interpretar interrupções e ações simultâneas no passado, o resultado mais provável seria:",
+      "enunciado": "Se past Continuous fosse ignorado(a) em interpretar interrupcoes e acoes simultaneas no passado, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretação ficaria incompleta e aumentaria a chance de erro em interpretar interrupções e ações simultâneas no passado.",
-        "a questão seria resolvida automaticamente por used to.",
-        "nenhuma interpretação seria alterada, porque Past Continuous não interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
+        "a interpretacao ficaria incompleta e aumentaria a chance de erro em interpretar interrupcoes e acoes simultaneas no passado.",
+        "a questao seria resolvida automaticamente por used to.",
+        "nenhuma interpretacao seria alterada, porque Past Continuous nao interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
       ],
-      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em interpretar interrupções e ações simultâneas no passado.",
-      "comentario": "Ignorar past Continuous compromete a resolução correta da atividade.",
+      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em interpretar interrupcoes e acoes simultaneas no passado.",
+      "comentario": "Ignorar past Continuous compromete a resolucao correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -2895,14 +2896,14 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Past Continuous",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou ação ilustra melhor Past Continuous?",
+      "enunciado": "Qual trecho ou acao ilustra melhor Past Continuous?",
       "opcoes": [
         "She was reading when her friend called.",
         "I used to play outside every afternoon.",
@@ -2910,7 +2911,7 @@ export const temposVerbaisPastEFuture = {
         "They are going to start a new project next month."
       ],
       "correta": "She was reading when her friend called.",
-      "comentario": "O item correto é o que melhor exemplifica past Continuous.",
+      "comentario": "O item correto e o que melhor exemplifica past Continuous.",
       "tempoEstimado": 50,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -2934,21 +2935,21 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Past Continuous",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao encontrar o exemplo \"She was reading when her friend called.\", a leitura mais adequada é:",
+      "enunciado": "Ao encontrar o exemplo \"She was reading when her friend called.\", a leitura mais adequada e:",
       "opcoes": [
-        "a ação estava em andamento quando outra ocorreu",
-        "a frase indica um hábito passado que não é mais necessariamente atual",
-        "a frase expressa uma decisão ou ação futura",
-        "a frase indica plano futuro já previsto"
+        "a acao estava em andamento quando outra ocorreu",
+        "a frase indica um habito passado que nao e mais necessariamente atual",
+        "a frase expressa uma decisao ou acao futura",
+        "a frase indica plano futuro ja previsto"
       ],
-      "correta": "a ação estava em andamento quando outra ocorreu",
+      "correta": "a acao estava em andamento quando outra ocorreu",
       "comentario": "A leitura correta do exemplo revela o papel de past Continuous.",
       "tempoEstimado": 55,
       "tags": [
@@ -2973,22 +2974,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Past Continuous",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estratégia ajuda mais a estudar past Continuous?",
+      "enunciado": "Qual estrategia ajuda mais a estudar past Continuous?",
       "opcoes": [
         "observar a estrutura was or were mais verbo com ing e o contexto narrativo",
-        "observar se o texto fala de hábito antigo ou estado que mudou",
-        "observar intenção de promessa, previsão ou decisão tomada no momento",
-        "verificar se há intenção planejada ou evidência para a previsão"
+        "observar se o texto fala de habito antigo ou estado que mudou",
+        "observar intencao de promessa, previsao ou decisao tomada no momento",
+        "verificar se ha intencao planejada ou evidencia para a previsao"
       ],
       "correta": "observar a estrutura was or were mais verbo com ing e o contexto narrativo",
-      "comentario": "A estratégia correta fortalece o domínio de past Continuous.",
+      "comentario": "A estrategia correta fortalece o dominio de past Continuous.",
       "tempoEstimado": 55,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -3012,22 +3013,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Past Continuous",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Past Continuous é mais cobrado quando:",
+      "enunciado": "Em uma prova, Past Continuous e mais cobrado quando:",
       "opcoes": [
-        "a questão pede identificar ação em curso no passado",
-        "o item cobra leitura de hábitos passados e contraste temporal",
-        "a questão pede identificar o valor de will no contexto",
-        "o item cobra leitura de planejamento ou intenção futura"
+        "a questao pede identificar acao em curso no passado",
+        "o item cobra leitura de habitos passados e contraste temporal",
+        "a questao pede identificar o valor de will no contexto",
+        "o item cobra leitura de planejamento ou intencao futura"
       ],
-      "correta": "a questão pede identificar ação em curso no passado",
-      "comentario": "Esse é o tipo de demanda em que past Continuous aparece com mais frequência.",
+      "correta": "a questao pede identificar acao em curso no passado",
+      "comentario": "Esse e o tipo de demanda em que past Continuous aparece com mais frequencia.",
       "tempoEstimado": 60,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -3051,7 +3052,7 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Past Continuous",
       "dificuldadeLabel": "dificil",
@@ -3060,13 +3061,13 @@ export const temposVerbaisPastEFuture = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual resumo sintetiza melhor a ideia de Past Continuous?",
       "opcoes": [
-        "Em síntese, o tempo verbal usado para indicar ação em andamento em um momento passado.",
-        "Em síntese, a estrutura usada para falar de hábitos, costumes ou estados que existiam no passado.",
-        "Em síntese, a estrutura com will usada para previsões, decisões imediatas ou promessas.",
-        "Em síntese, a estrutura usada para indicar planos, intenções ou previsões baseadas em evidências."
+        "Em sintese, o tempo verbal usado para indicar acao em andamento em um momento passado.",
+        "Em sintese, a estrutura usada para falar de habitos, costumes ou estados que existiam no passado.",
+        "Em sintese, a estrutura com will usada para previsoes, decisoes imediatas ou promessas.",
+        "Em sintese, a estrutura usada para indicar planos, intencoes ou previsoes baseadas em evidencias."
       ],
-      "correta": "Em síntese, o tempo verbal usado para indicar ação em andamento em um momento passado.",
-      "comentario": "O resumo correto recupera o núcleo de past Continuous.",
+      "correta": "Em sintese, o tempo verbal usado para indicar acao em andamento em um momento passado.",
+      "comentario": "O resumo correto recupera o nucleo de past Continuous.",
       "tempoEstimado": 60,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -3090,22 +3091,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Past Continuous",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associação entre exemplo e interpretação está correta em Past Continuous?",
+      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Past Continuous?",
       "opcoes": [
-        "She was reading when her friend called. -> a ação estava em andamento quando outra ocorreu",
-        "I used to play outside every afternoon. -> a ação estava em andamento quando outra ocorreu",
-        "I will call you later. -> a frase indica plano futuro já previsto",
-        "They are going to start a new project next month. -> a frase indica um hábito passado que não é mais necessariamente atual"
+        "She was reading when her friend called. -> a acao estava em andamento quando outra ocorreu",
+        "I used to play outside every afternoon. -> a acao estava em andamento quando outra ocorreu",
+        "I will call you later. -> a frase indica plano futuro ja previsto",
+        "They are going to start a new project next month. -> a frase indica um habito passado que nao e mais necessariamente atual"
       ],
-      "correta": "She was reading when her friend called. -> a ação estava em andamento quando outra ocorreu",
-      "comentario": "A associação correta mantém coerência entre exemplo e interpretação em past Continuous.",
+      "correta": "She was reading when her friend called. -> a acao estava em andamento quando outra ocorreu",
+      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em past Continuous.",
       "tempoEstimado": 65,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -3129,7 +3130,7 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Past Continuous",
       "dificuldadeLabel": "dificil",
@@ -3138,13 +3139,13 @@ export const temposVerbaisPastEFuture = {
       "tipo": "multipla_escolha",
       "enunciado": "Ao resolver uma atividade sobre past Continuous, o estudante deve principalmente:",
       "opcoes": [
-        "reconhecer ações passadas em progresso e seu contexto",
+        "reconhecer acoes passadas em progresso e seu contexto",
         "observar a estrutura was or were mais verbo com ing e o contexto narrativo",
-        "interpretar interrupções e ações simultâneas no passado",
-        "a questão pede identificar ação em curso no passado"
+        "interpretar interrupcoes e acoes simultaneas no passado",
+        "a questao pede identificar acao em curso no passado"
       ],
-      "correta": "reconhecer ações passadas em progresso e seu contexto",
-      "comentario": "O objetivo central de past Continuous é reconhecer ações passadas em progresso e seu contexto.",
+      "correta": "reconhecer acoes passadas em progresso e seu contexto",
+      "comentario": "O objetivo central de past Continuous e reconhecer acoes passadas em progresso e seu contexto.",
       "tempoEstimado": 70,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -3168,22 +3169,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Used to",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Inglês, Used to refere-se a:",
+      "enunciado": "Em Ingles, Used to refere-se a:",
       "opcoes": [
-        "a estrutura usada para falar de hábitos, costumes ou estados que existiam no passado",
-        "a estrutura com will usada para previsões, decisões imediatas ou promessas",
-        "a estrutura usada para indicar planos, intenções ou previsões baseadas em evidências",
-        "o uso do present continuous para marcar arranjos e compromissos futuros já combinados"
+        "a estrutura usada para falar de habitos, costumes ou estados que existiam no passado",
+        "a estrutura com will usada para previsoes, decisoes imediatas ou promessas",
+        "a estrutura usada para indicar planos, intencoes ou previsoes baseadas em evidencias",
+        "o uso do present continuous para marcar arranjos e compromissos futuros ja combinados"
       ],
-      "correta": "a estrutura usada para falar de hábitos, costumes ou estados que existiam no passado",
-      "comentario": "Used to refere-se à estrutura usada para falar de hábitos, costumes ou estados que existiam no passado.",
+      "correta": "a estrutura usada para falar de habitos, costumes ou estados que existiam no passado",
+      "comentario": "Used to refere-se a estrutura usada para falar de habitos, costumes ou estados que existiam no passado.",
       "tempoEstimado": 20,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -3207,14 +3208,14 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Used to",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: um texto compara a rotina de infância de um personagem com seus hábitos atuais. Esse caso está mais ligado a qual subtópico?",
+      "enunciado": "Observe a situacao: um texto compara a rotina de infancia de um personagem com seus habitos atuais. Esse caso esta mais ligado a qual subtopico?",
       "opcoes": [
         "Used to",
         "Future with will",
@@ -3222,7 +3223,7 @@ export const temposVerbaisPastEFuture = {
         "Present Continuous for future"
       ],
       "correta": "Used to",
-      "comentario": "A situação apresentada é melhor compreendida por meio de used to.",
+      "comentario": "A situacao apresentada e melhor compreendida por meio de used to.",
       "tempoEstimado": 20,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -3246,7 +3247,7 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Used to",
       "dificuldadeLabel": "facil",
@@ -3285,22 +3286,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Used to",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO representa corretamente used to?",
+      "enunciado": "Qual alternativa NAO representa corretamente used to?",
       "opcoes": [
         "I will call you later.",
         "I used to play outside every afternoon.",
-        "observar se o texto fala de hábito antigo ou estado que mudou.",
-        "interpretar mudanças de hábito ao longo do tempo."
+        "observar se o texto fala de habito antigo ou estado que mudou.",
+        "interpretar mudancas de habito ao longo do tempo."
       ],
       "correta": "I will call you later.",
-      "comentario": "A opção incompatível ilustra outro subtópico, e não used to.",
+      "comentario": "A opcao incompativel ilustra outro subtopico, e nao used to.",
       "tempoEstimado": 25,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -3324,22 +3325,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Used to",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar used to, o foco principal é:",
+      "enunciado": "Ao estudar used to, o foco principal e:",
       "opcoes": [
-        "distinguir hábito passado de ação única no passado",
+        "distinguir habito passado de acao unica no passado",
         "reconhecer usos de will em futuro",
         "distinguir going to de outras formas de futuro",
         "reconhecer futuro expresso por compromisso marcado"
       ],
-      "correta": "distinguir hábito passado de ação única no passado",
-      "comentario": "Used to concentra-se em distinguir hábito passado de ação única no passado.",
+      "correta": "distinguir habito passado de acao unica no passado",
+      "comentario": "Used to concentra-se em distinguir habito passado de acao unica no passado.",
       "tempoEstimado": 30,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -3363,22 +3364,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Used to",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Future with will trata de a estrutura com will usada para previsões, decisões imediatas ou promessas, Used to destaca:",
+      "enunciado": "Enquanto Future with will trata de a estrutura com will usada para previsoes, decisoes imediatas ou promessas, Used to destaca:",
       "opcoes": [
-        "A estrutura usada para falar de hábitos, costumes ou estados que existiam no passado.",
-        "A estrutura com will usada para previsões, decisões imediatas ou promessas.",
-        "A estrutura usada para indicar planos, intenções ou previsões baseadas em evidências.",
-        "O uso do present continuous para marcar arranjos e compromissos futuros já combinados."
+        "A estrutura usada para falar de habitos, costumes ou estados que existiam no passado.",
+        "A estrutura com will usada para previsoes, decisoes imediatas ou promessas.",
+        "A estrutura usada para indicar planos, intencoes ou previsoes baseadas em evidencias.",
+        "O uso do present continuous para marcar arranjos e compromissos futuros ja combinados."
       ],
-      "correta": "A estrutura usada para falar de hábitos, costumes ou estados que existiam no passado.",
-      "comentario": "A comparação correta mostra a especificidade de used to.",
+      "correta": "A estrutura usada para falar de habitos, costumes ou estados que existiam no passado.",
+      "comentario": "A comparacao correta mostra a especificidade de used to.",
       "tempoEstimado": 30,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -3402,14 +3403,14 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Used to",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma atividade de sala, um texto compara a rotina de infância de um personagem com seus hábitos atuais. Para responder bem, o estudante deve mobilizar principalmente:",
+      "enunciado": "Em uma atividade de sala, um texto compara a rotina de infancia de um personagem com seus habitos atuais. Para responder bem, o estudante deve mobilizar principalmente:",
       "opcoes": [
         "Used to",
         "Future with will",
@@ -3417,7 +3418,7 @@ export const temposVerbaisPastEFuture = {
         "Time expressions"
       ],
       "correta": "Used to",
-      "comentario": "Esse tipo de tarefa exige domínio de used to.",
+      "comentario": "Esse tipo de tarefa exige dominio de used to.",
       "tempoEstimado": 35,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -3441,22 +3442,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Used to",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação prática depende mais diretamente de Used to?",
+      "enunciado": "Qual situacao pratica depende mais diretamente de Used to?",
       "opcoes": [
-        "interpretar mudanças de hábito ao longo do tempo",
-        "interpretar promessas, previsões e decisões espontâneas",
-        "interpretar planos já pensados e previsões com indícios",
+        "interpretar mudancas de habito ao longo do tempo",
+        "interpretar promessas, previsoes e decisoes espontaneas",
+        "interpretar planos ja pensados e previsoes com indicios",
         "reconhecer pistas de tempo para interpretar ou escolher a estrutura correta"
       ],
-      "correta": "interpretar mudanças de hábito ao longo do tempo",
-      "comentario": "Used to aparece de forma direta em interpretar mudanças de hábito ao longo do tempo.",
+      "correta": "interpretar mudancas de habito ao longo do tempo",
+      "comentario": "Used to aparece de forma direta em interpretar mudancas de habito ao longo do tempo.",
       "tempoEstimado": 35,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -3480,22 +3481,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Used to",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre used to?",
+      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre used to?",
       "opcoes": [
-        "o caso é resolvido com foco em used to.",
-        "o caso é melhor resolvido por future with will.",
+        "o caso e resolvido com foco em used to.",
+        "o caso e melhor resolvido por future with will.",
         "o caso elimina a necessidade de going to.",
         "o caso impede qualquer uso de present Continuous for future."
       ],
-      "correta": "o caso é resolvido com foco em used to.",
-      "comentario": "A conclusão correta retoma a função central de used to.",
+      "correta": "o caso e resolvido com foco em used to.",
+      "comentario": "A conclusao correta retoma a funcao central de used to.",
       "tempoEstimado": 40,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -3519,7 +3520,7 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Used to",
       "dificuldadeLabel": "facil",
@@ -3528,12 +3529,12 @@ export const temposVerbaisPastEFuture = {
       "tipo": "multipla_escolha",
       "enunciado": "Se a turma fosse revisar used to, qual pergunta de estudo seria a mais adequada?",
       "opcoes": [
-        "Como used to aparece em interpretar mudanças de hábito ao longo do tempo?",
-        "Como future with will substitui totalmente interpretar mudanças de hábito ao longo do tempo?",
-        "Por que going to torna desnecessário estudar Used to?",
+        "Como used to aparece em interpretar mudancas de habito ao longo do tempo?",
+        "Como future with will substitui totalmente interpretar mudancas de habito ao longo do tempo?",
+        "Por que going to torna desnecessario estudar Used to?",
         "De que modo present Continuous for future elimina toda leitura de contexto?"
       ],
-      "correta": "Como used to aparece em interpretar mudanças de hábito ao longo do tempo?",
+      "correta": "Como used to aparece em interpretar mudancas de habito ao longo do tempo?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de used to.",
       "tempoEstimado": 40,
       "tags": [
@@ -3558,22 +3559,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Used to",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em used to é pensar que:",
+      "enunciado": "Um erro comum em used to e pensar que:",
       "opcoes": [
         "used to significa apenas costume presente",
-        "will é a única forma de expressar futuro em inglês",
-        "going to sempre significa obrigação",
-        "present continuous sempre fala apenas de ação acontecendo agora"
+        "will e a unica forma de expressar futuro em ingles",
+        "going to sempre significa obrigacao",
+        "present continuous sempre fala apenas de acao acontecendo agora"
       ],
       "correta": "used to significa apenas costume presente",
-      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de used to.",
+      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de used to.",
       "tempoEstimado": 45,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -3597,22 +3598,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Used to",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"used to e usually têm exatamente o mesmo valor temporal\". A avaliação mais adequada é:",
+      "enunciado": "Um estudante afirma: \"used to e usually tem exatamente o mesmo valor temporal\". A avaliacao mais adequada e:",
       "opcoes": [
-        "A afirmação está incorreta, porque a estrutura usada para falar de hábitos, costumes ou estados que existiam no passado.",
-        "A afirmação está correta, pois resume integralmente used to.",
-        "A afirmação está correta, porque basta decorar a tradução do exemplo.",
-        "A afirmação está incorreta apenas por não citar uma regra gramatical."
+        "A afirmacao esta incorreta, porque a estrutura usada para falar de habitos, costumes ou estados que existiam no passado.",
+        "A afirmacao esta correta, pois resume integralmente used to.",
+        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
+        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
       ],
-      "correta": "A afirmação está incorreta, porque a estrutura usada para falar de hábitos, costumes ou estados que existiam no passado.",
-      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre used to.",
+      "correta": "A afirmacao esta incorreta, porque a estrutura usada para falar de habitos, costumes ou estados que existiam no passado.",
+      "comentario": "A fala do estudante apresenta um equivoco conceitual sobre used to.",
       "tempoEstimado": 45,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -3636,22 +3637,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Used to",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se used to fosse ignorado(a) em interpretar mudanças de hábito ao longo do tempo, o resultado mais provável seria:",
+      "enunciado": "Se used to fosse ignorado(a) em interpretar mudancas de habito ao longo do tempo, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretação ficaria incompleta e aumentaria a chance de erro em interpretar mudanças de hábito ao longo do tempo.",
-        "a questão seria resolvida automaticamente por future with will.",
-        "nenhuma interpretação seria alterada, porque Used to não interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
+        "a interpretacao ficaria incompleta e aumentaria a chance de erro em interpretar mudancas de habito ao longo do tempo.",
+        "a questao seria resolvida automaticamente por future with will.",
+        "nenhuma interpretacao seria alterada, porque Used to nao interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
       ],
-      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em interpretar mudanças de hábito ao longo do tempo.",
-      "comentario": "Ignorar used to compromete a resolução correta da atividade.",
+      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em interpretar mudancas de habito ao longo do tempo.",
+      "comentario": "Ignorar used to compromete a resolucao correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -3675,14 +3676,14 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Used to",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou ação ilustra melhor Used to?",
+      "enunciado": "Qual trecho ou acao ilustra melhor Used to?",
       "opcoes": [
         "I used to play outside every afternoon.",
         "I will call you later.",
@@ -3690,7 +3691,7 @@ export const temposVerbaisPastEFuture = {
         "She is meeting her teacher after class."
       ],
       "correta": "I used to play outside every afternoon.",
-      "comentario": "O item correto é o que melhor exemplifica used to.",
+      "comentario": "O item correto e o que melhor exemplifica used to.",
       "tempoEstimado": 50,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -3714,21 +3715,21 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Used to",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao encontrar o exemplo \"I used to play outside every afternoon.\", a leitura mais adequada é:",
+      "enunciado": "Ao encontrar o exemplo \"I used to play outside every afternoon.\", a leitura mais adequada e:",
       "opcoes": [
-        "a frase indica um hábito passado que não é mais necessariamente atual",
-        "a frase expressa uma decisão ou ação futura",
-        "a frase indica plano futuro já previsto",
-        "a frase pode indicar um compromisso futuro já acertado"
+        "a frase indica um habito passado que nao e mais necessariamente atual",
+        "a frase expressa uma decisao ou acao futura",
+        "a frase indica plano futuro ja previsto",
+        "a frase pode indicar um compromisso futuro ja acertado"
       ],
-      "correta": "a frase indica um hábito passado que não é mais necessariamente atual",
+      "correta": "a frase indica um habito passado que nao e mais necessariamente atual",
       "comentario": "A leitura correta do exemplo revela o papel de used to.",
       "tempoEstimado": 55,
       "tags": [
@@ -3753,22 +3754,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Used to",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estratégia ajuda mais a estudar used to?",
+      "enunciado": "Qual estrategia ajuda mais a estudar used to?",
       "opcoes": [
-        "observar se o texto fala de hábito antigo ou estado que mudou",
-        "observar intenção de promessa, previsão ou decisão tomada no momento",
-        "verificar se há intenção planejada ou evidência para a previsão",
+        "observar se o texto fala de habito antigo ou estado que mudou",
+        "observar intencao de promessa, previsao ou decisao tomada no momento",
+        "verificar se ha intencao planejada ou evidencia para a previsao",
         "observar marcadores de futuro e a ideia de compromisso agendado"
       ],
-      "correta": "observar se o texto fala de hábito antigo ou estado que mudou",
-      "comentario": "A estratégia correta fortalece o domínio de used to.",
+      "correta": "observar se o texto fala de habito antigo ou estado que mudou",
+      "comentario": "A estrategia correta fortalece o dominio de used to.",
       "tempoEstimado": 55,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -3792,22 +3793,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Used to",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Used to é mais cobrado quando:",
+      "enunciado": "Em uma prova, Used to e mais cobrado quando:",
       "opcoes": [
-        "o item cobra leitura de hábitos passados e contraste temporal",
-        "a questão pede identificar o valor de will no contexto",
-        "o item cobra leitura de planejamento ou intenção futura",
-        "a questão pede perceber valor futuro em estrutura de presente contínuo"
+        "o item cobra leitura de habitos passados e contraste temporal",
+        "a questao pede identificar o valor de will no contexto",
+        "o item cobra leitura de planejamento ou intencao futura",
+        "a questao pede perceber valor futuro em estrutura de presente continuo"
       ],
-      "correta": "o item cobra leitura de hábitos passados e contraste temporal",
-      "comentario": "Esse é o tipo de demanda em que used to aparece com mais frequência.",
+      "correta": "o item cobra leitura de habitos passados e contraste temporal",
+      "comentario": "Esse e o tipo de demanda em que used to aparece com mais frequencia.",
       "tempoEstimado": 60,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -3831,7 +3832,7 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Used to",
       "dificuldadeLabel": "dificil",
@@ -3840,13 +3841,13 @@ export const temposVerbaisPastEFuture = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual resumo sintetiza melhor a ideia de Used to?",
       "opcoes": [
-        "Em síntese, a estrutura usada para falar de hábitos, costumes ou estados que existiam no passado.",
-        "Em síntese, a estrutura com will usada para previsões, decisões imediatas ou promessas.",
-        "Em síntese, a estrutura usada para indicar planos, intenções ou previsões baseadas em evidências.",
-        "Em síntese, o uso do present continuous para marcar arranjos e compromissos futuros já combinados."
+        "Em sintese, a estrutura usada para falar de habitos, costumes ou estados que existiam no passado.",
+        "Em sintese, a estrutura com will usada para previsoes, decisoes imediatas ou promessas.",
+        "Em sintese, a estrutura usada para indicar planos, intencoes ou previsoes baseadas em evidencias.",
+        "Em sintese, o uso do present continuous para marcar arranjos e compromissos futuros ja combinados."
       ],
-      "correta": "Em síntese, a estrutura usada para falar de hábitos, costumes ou estados que existiam no passado.",
-      "comentario": "O resumo correto recupera o núcleo de used to.",
+      "correta": "Em sintese, a estrutura usada para falar de habitos, costumes ou estados que existiam no passado.",
+      "comentario": "O resumo correto recupera o nucleo de used to.",
       "tempoEstimado": 60,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -3870,22 +3871,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Used to",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associação entre exemplo e interpretação está correta em Used to?",
+      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Used to?",
       "opcoes": [
-        "I used to play outside every afternoon. -> a frase indica um hábito passado que não é mais necessariamente atual",
-        "I will call you later. -> a frase indica um hábito passado que não é mais necessariamente atual",
-        "They are going to start a new project next month. -> a frase pode indicar um compromisso futuro já acertado",
-        "She is meeting her teacher after class. -> a frase expressa uma decisão ou ação futura"
+        "I used to play outside every afternoon. -> a frase indica um habito passado que nao e mais necessariamente atual",
+        "I will call you later. -> a frase indica um habito passado que nao e mais necessariamente atual",
+        "They are going to start a new project next month. -> a frase pode indicar um compromisso futuro ja acertado",
+        "She is meeting her teacher after class. -> a frase expressa uma decisao ou acao futura"
       ],
-      "correta": "I used to play outside every afternoon. -> a frase indica um hábito passado que não é mais necessariamente atual",
-      "comentario": "A associação correta mantém coerência entre exemplo e interpretação em used to.",
+      "correta": "I used to play outside every afternoon. -> a frase indica um habito passado que nao e mais necessariamente atual",
+      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em used to.",
       "tempoEstimado": 65,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -3909,7 +3910,7 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Used to",
       "dificuldadeLabel": "dificil",
@@ -3918,13 +3919,13 @@ export const temposVerbaisPastEFuture = {
       "tipo": "multipla_escolha",
       "enunciado": "Ao resolver uma atividade sobre used to, o estudante deve principalmente:",
       "opcoes": [
-        "distinguir hábito passado de ação única no passado",
-        "observar se o texto fala de hábito antigo ou estado que mudou",
-        "interpretar mudanças de hábito ao longo do tempo",
-        "o item cobra leitura de hábitos passados e contraste temporal"
+        "distinguir habito passado de acao unica no passado",
+        "observar se o texto fala de habito antigo ou estado que mudou",
+        "interpretar mudancas de habito ao longo do tempo",
+        "o item cobra leitura de habitos passados e contraste temporal"
       ],
-      "correta": "distinguir hábito passado de ação única no passado",
-      "comentario": "O objetivo central de used to é distinguir hábito passado de ação única no passado.",
+      "correta": "distinguir habito passado de acao unica no passado",
+      "comentario": "O objetivo central de used to e distinguir habito passado de acao unica no passado.",
       "tempoEstimado": 70,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -3948,22 +3949,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Future with will",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Inglês, Future with will refere-se a:",
+      "enunciado": "Em Ingles, Future with will refere-se a:",
       "opcoes": [
-        "a estrutura com will usada para previsões, decisões imediatas ou promessas",
-        "a estrutura usada para indicar planos, intenções ou previsões baseadas em evidências",
-        "o uso do present continuous para marcar arranjos e compromissos futuros já combinados",
-        "as expressões que ajudam a localizar eventos no passado ou no futuro, como yesterday, last year, tomorrow e next week"
+        "a estrutura com will usada para previsoes, decisoes imediatas ou promessas",
+        "a estrutura usada para indicar planos, intencoes ou previsoes baseadas em evidencias",
+        "o uso do present continuous para marcar arranjos e compromissos futuros ja combinados",
+        "as expressoes que ajudam a localizar eventos no passado ou no futuro, como yesterday, last year, tomorrow e next week"
       ],
-      "correta": "a estrutura com will usada para previsões, decisões imediatas ou promessas",
-      "comentario": "Future with will refere-se à estrutura com will usada para previsões, decisões imediatas ou promessas.",
+      "correta": "a estrutura com will usada para previsoes, decisoes imediatas ou promessas",
+      "comentario": "Future with will refere-se a estrutura com will usada para previsoes, decisoes imediatas ou promessas.",
       "tempoEstimado": 20,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -3987,14 +3988,14 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Future with will",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: durante uma conversa, um personagem decide na hora que will help his friend. Esse caso está mais ligado a qual subtópico?",
+      "enunciado": "Observe a situacao: durante uma conversa, um personagem decide na hora que will help his friend. Esse caso esta mais ligado a qual subtopico?",
       "opcoes": [
         "Future with will",
         "Going to",
@@ -4002,7 +4003,7 @@ export const temposVerbaisPastEFuture = {
         "Time expressions"
       ],
       "correta": "Future with will",
-      "comentario": "A situação apresentada é melhor compreendida por meio de future with will.",
+      "comentario": "A situacao apresentada e melhor compreendida por meio de future with will.",
       "tempoEstimado": 20,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -4026,7 +4027,7 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Future with will",
       "dificuldadeLabel": "facil",
@@ -4065,22 +4066,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Future with will",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO representa corretamente future with will?",
+      "enunciado": "Qual alternativa NAO representa corretamente future with will?",
       "opcoes": [
         "They are going to start a new project next month.",
         "I will call you later.",
-        "observar intenção de promessa, previsão ou decisão tomada no momento.",
-        "interpretar promessas, previsões e decisões espontâneas."
+        "observar intencao de promessa, previsao ou decisao tomada no momento.",
+        "interpretar promessas, previsoes e decisoes espontaneas."
       ],
       "correta": "They are going to start a new project next month.",
-      "comentario": "A opção incompatível ilustra outro subtópico, e não future with will.",
+      "comentario": "A opcao incompativel ilustra outro subtopico, e nao future with will.",
       "tempoEstimado": 25,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -4104,14 +4105,14 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Future with will",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar future with will, o foco principal é:",
+      "enunciado": "Ao estudar future with will, o foco principal e:",
       "opcoes": [
         "reconhecer usos de will em futuro",
         "distinguir going to de outras formas de futuro",
@@ -4143,22 +4144,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Future with will",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Going to trata de a estrutura usada para indicar planos, intenções ou previsões baseadas em evidências, Future with will destaca:",
+      "enunciado": "Enquanto Going to trata de a estrutura usada para indicar planos, intencoes ou previsoes baseadas em evidencias, Future with will destaca:",
       "opcoes": [
-        "A estrutura com will usada para previsões, decisões imediatas ou promessas.",
-        "A estrutura usada para indicar planos, intenções ou previsões baseadas em evidências.",
-        "O uso do present continuous para marcar arranjos e compromissos futuros já combinados.",
-        "As expressões que ajudam a localizar eventos no passado ou no futuro, como yesterday, last year, tomorrow e next week."
+        "A estrutura com will usada para previsoes, decisoes imediatas ou promessas.",
+        "A estrutura usada para indicar planos, intencoes ou previsoes baseadas em evidencias.",
+        "O uso do present continuous para marcar arranjos e compromissos futuros ja combinados.",
+        "As expressoes que ajudam a localizar eventos no passado ou no futuro, como yesterday, last year, tomorrow e next week."
       ],
-      "correta": "A estrutura com will usada para previsões, decisões imediatas ou promessas.",
-      "comentario": "A comparação correta mostra a especificidade de future with will.",
+      "correta": "A estrutura com will usada para previsoes, decisoes imediatas ou promessas.",
+      "comentario": "A comparacao correta mostra a especificidade de future with will.",
       "tempoEstimado": 30,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -4182,7 +4183,7 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Future with will",
       "dificuldadeLabel": "facil",
@@ -4197,7 +4198,7 @@ export const temposVerbaisPastEFuture = {
         "Past and future in context"
       ],
       "correta": "Future with will",
-      "comentario": "Esse tipo de tarefa exige domínio de future with will.",
+      "comentario": "Esse tipo de tarefa exige dominio de future with will.",
       "tempoEstimado": 35,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -4221,22 +4222,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Future with will",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação prática depende mais diretamente de Future with will?",
+      "enunciado": "Qual situacao pratica depende mais diretamente de Future with will?",
       "opcoes": [
-        "interpretar promessas, previsões e decisões espontâneas",
-        "interpretar planos já pensados e previsões com indícios",
-        "interpretar agenda e compromissos futuros já organizados",
-        "ler textos que contrastam experiências passadas com expectativas futuras"
+        "interpretar promessas, previsoes e decisoes espontaneas",
+        "interpretar planos ja pensados e previsoes com indicios",
+        "interpretar agenda e compromissos futuros ja organizados",
+        "ler textos que contrastam experiencias passadas com expectativas futuras"
       ],
-      "correta": "interpretar promessas, previsões e decisões espontâneas",
-      "comentario": "Future with will aparece de forma direta em interpretar promessas, previsões e decisões espontâneas.",
+      "correta": "interpretar promessas, previsoes e decisoes espontaneas",
+      "comentario": "Future with will aparece de forma direta em interpretar promessas, previsoes e decisoes espontaneas.",
       "tempoEstimado": 35,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -4260,22 +4261,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Future with will",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre future with will?",
+      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre future with will?",
       "opcoes": [
-        "o caso é resolvido com foco em future with will.",
-        "o caso é melhor resolvido por going to.",
+        "o caso e resolvido com foco em future with will.",
+        "o caso e melhor resolvido por going to.",
         "o caso elimina a necessidade de present Continuous for future.",
         "o caso impede qualquer uso de time expressions."
       ],
-      "correta": "o caso é resolvido com foco em future with will.",
-      "comentario": "A conclusão correta retoma a função central de future with will.",
+      "correta": "o caso e resolvido com foco em future with will.",
+      "comentario": "A conclusao correta retoma a funcao central de future with will.",
       "tempoEstimado": 40,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -4299,7 +4300,7 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Future with will",
       "dificuldadeLabel": "facil",
@@ -4308,12 +4309,12 @@ export const temposVerbaisPastEFuture = {
       "tipo": "multipla_escolha",
       "enunciado": "Se a turma fosse revisar future with will, qual pergunta de estudo seria a mais adequada?",
       "opcoes": [
-        "Como future with will aparece em interpretar promessas, previsões e decisões espontâneas?",
-        "Como going to substitui totalmente interpretar promessas, previsões e decisões espontâneas?",
-        "Por que present Continuous for future torna desnecessário estudar Future with will?",
+        "Como future with will aparece em interpretar promessas, previsoes e decisoes espontaneas?",
+        "Como going to substitui totalmente interpretar promessas, previsoes e decisoes espontaneas?",
+        "Por que present Continuous for future torna desnecessario estudar Future with will?",
         "De que modo time expressions elimina toda leitura de contexto?"
       ],
-      "correta": "Como future with will aparece em interpretar promessas, previsões e decisões espontâneas?",
+      "correta": "Como future with will aparece em interpretar promessas, previsoes e decisoes espontaneas?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de future with will.",
       "tempoEstimado": 40,
       "tags": [
@@ -4338,22 +4339,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Future with will",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em future with will é pensar que:",
+      "enunciado": "Um erro comum em future with will e pensar que:",
       "opcoes": [
-        "will é a única forma de expressar futuro em inglês",
-        "going to sempre significa obrigação",
-        "present continuous sempre fala apenas de ação acontecendo agora",
-        "as time expressions são detalhes acessórios e não mudam a interpretação verbal"
+        "will e a unica forma de expressar futuro em ingles",
+        "going to sempre significa obrigacao",
+        "present continuous sempre fala apenas de acao acontecendo agora",
+        "as time expressions sao detalhes acessorios e nao mudam a interpretacao verbal"
       ],
-      "correta": "will é a única forma de expressar futuro em inglês",
-      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de future with will.",
+      "correta": "will e a unica forma de expressar futuro em ingles",
+      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de future with will.",
       "tempoEstimado": 45,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -4377,22 +4378,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Future with will",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"toda frase sobre amanhã deve obrigatoriamente usar will\". A avaliação mais adequada é:",
+      "enunciado": "Um estudante afirma: \"toda frase sobre amanha deve obrigatoriamente usar will\". A avaliacao mais adequada e:",
       "opcoes": [
-        "A afirmação está incorreta, porque a estrutura com will usada para previsões, decisões imediatas ou promessas.",
-        "A afirmação está correta, pois resume integralmente future with will.",
-        "A afirmação está correta, porque basta decorar a tradução do exemplo.",
-        "A afirmação está incorreta apenas por não citar uma regra gramatical."
+        "A afirmacao esta incorreta, porque a estrutura com will usada para previsoes, decisoes imediatas ou promessas.",
+        "A afirmacao esta correta, pois resume integralmente future with will.",
+        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
+        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
       ],
-      "correta": "A afirmação está incorreta, porque a estrutura com will usada para previsões, decisões imediatas ou promessas.",
-      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre future with will.",
+      "correta": "A afirmacao esta incorreta, porque a estrutura com will usada para previsoes, decisoes imediatas ou promessas.",
+      "comentario": "A fala do estudante apresenta um equivoco conceitual sobre future with will.",
       "tempoEstimado": 45,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -4416,22 +4417,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Future with will",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se future with will fosse ignorado(a) em interpretar promessas, previsões e decisões espontâneas, o resultado mais provável seria:",
+      "enunciado": "Se future with will fosse ignorado(a) em interpretar promessas, previsoes e decisoes espontaneas, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretação ficaria incompleta e aumentaria a chance de erro em interpretar promessas, previsões e decisões espontâneas.",
-        "a questão seria resolvida automaticamente por going to.",
-        "nenhuma interpretação seria alterada, porque Future with will não interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
+        "a interpretacao ficaria incompleta e aumentaria a chance de erro em interpretar promessas, previsoes e decisoes espontaneas.",
+        "a questao seria resolvida automaticamente por going to.",
+        "nenhuma interpretacao seria alterada, porque Future with will nao interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
       ],
-      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em interpretar promessas, previsões e decisões espontâneas.",
-      "comentario": "Ignorar future with will compromete a resolução correta da atividade.",
+      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em interpretar promessas, previsoes e decisoes espontaneas.",
+      "comentario": "Ignorar future with will compromete a resolucao correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -4455,14 +4456,14 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Future with will",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou ação ilustra melhor Future with will?",
+      "enunciado": "Qual trecho ou acao ilustra melhor Future with will?",
       "opcoes": [
         "I will call you later.",
         "They are going to start a new project next month.",
@@ -4470,7 +4471,7 @@ export const temposVerbaisPastEFuture = {
         "Next month we will visit another city."
       ],
       "correta": "I will call you later.",
-      "comentario": "O item correto é o que melhor exemplifica future with will.",
+      "comentario": "O item correto e o que melhor exemplifica future with will.",
       "tempoEstimado": 50,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -4494,21 +4495,21 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Future with will",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao encontrar o exemplo \"I will call you later.\", a leitura mais adequada é:",
+      "enunciado": "Ao encontrar o exemplo \"I will call you later.\", a leitura mais adequada e:",
       "opcoes": [
-        "a frase expressa uma decisão ou ação futura",
-        "a frase indica plano futuro já previsto",
-        "a frase pode indicar um compromisso futuro já acertado",
-        "a expressão temporal ajuda a localizar a ação no futuro"
+        "a frase expressa uma decisao ou acao futura",
+        "a frase indica plano futuro ja previsto",
+        "a frase pode indicar um compromisso futuro ja acertado",
+        "a expressao temporal ajuda a localizar a acao no futuro"
       ],
-      "correta": "a frase expressa uma decisão ou ação futura",
+      "correta": "a frase expressa uma decisao ou acao futura",
       "comentario": "A leitura correta do exemplo revela o papel de future with will.",
       "tempoEstimado": 55,
       "tags": [
@@ -4533,22 +4534,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Future with will",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estratégia ajuda mais a estudar future with will?",
+      "enunciado": "Qual estrategia ajuda mais a estudar future with will?",
       "opcoes": [
-        "observar intenção de promessa, previsão ou decisão tomada no momento",
-        "verificar se há intenção planejada ou evidência para a previsão",
+        "observar intencao de promessa, previsao ou decisao tomada no momento",
+        "verificar se ha intencao planejada ou evidencia para a previsao",
         "observar marcadores de futuro e a ideia de compromisso agendado",
         "identificar o marcador temporal e conectar com o verbo usado"
       ],
-      "correta": "observar intenção de promessa, previsão ou decisão tomada no momento",
-      "comentario": "A estratégia correta fortalece o domínio de future with will.",
+      "correta": "observar intencao de promessa, previsao ou decisao tomada no momento",
+      "comentario": "A estrategia correta fortalece o dominio de future with will.",
       "tempoEstimado": 55,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -4572,22 +4573,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Future with will",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Future with will é mais cobrado quando:",
+      "enunciado": "Em uma prova, Future with will e mais cobrado quando:",
       "opcoes": [
-        "a questão pede identificar o valor de will no contexto",
-        "o item cobra leitura de planejamento ou intenção futura",
-        "a questão pede perceber valor futuro em estrutura de presente contínuo",
-        "o item exige compatibilizar tempo verbal e expressão temporal"
+        "a questao pede identificar o valor de will no contexto",
+        "o item cobra leitura de planejamento ou intencao futura",
+        "a questao pede perceber valor futuro em estrutura de presente continuo",
+        "o item exige compatibilizar tempo verbal e expressao temporal"
       ],
-      "correta": "a questão pede identificar o valor de will no contexto",
-      "comentario": "Esse é o tipo de demanda em que future with will aparece com mais frequência.",
+      "correta": "a questao pede identificar o valor de will no contexto",
+      "comentario": "Esse e o tipo de demanda em que future with will aparece com mais frequencia.",
       "tempoEstimado": 60,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -4611,7 +4612,7 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Future with will",
       "dificuldadeLabel": "dificil",
@@ -4620,13 +4621,13 @@ export const temposVerbaisPastEFuture = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual resumo sintetiza melhor a ideia de Future with will?",
       "opcoes": [
-        "Em síntese, a estrutura com will usada para previsões, decisões imediatas ou promessas.",
-        "Em síntese, a estrutura usada para indicar planos, intenções ou previsões baseadas em evidências.",
-        "Em síntese, o uso do present continuous para marcar arranjos e compromissos futuros já combinados.",
-        "Em síntese, as expressões que ajudam a localizar eventos no passado ou no futuro, como yesterday, last year, tomorrow e next week."
+        "Em sintese, a estrutura com will usada para previsoes, decisoes imediatas ou promessas.",
+        "Em sintese, a estrutura usada para indicar planos, intencoes ou previsoes baseadas em evidencias.",
+        "Em sintese, o uso do present continuous para marcar arranjos e compromissos futuros ja combinados.",
+        "Em sintese, as expressoes que ajudam a localizar eventos no passado ou no futuro, como yesterday, last year, tomorrow e next week."
       ],
-      "correta": "Em síntese, a estrutura com will usada para previsões, decisões imediatas ou promessas.",
-      "comentario": "O resumo correto recupera o núcleo de future with will.",
+      "correta": "Em sintese, a estrutura com will usada para previsoes, decisoes imediatas ou promessas.",
+      "comentario": "O resumo correto recupera o nucleo de future with will.",
       "tempoEstimado": 60,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -4650,22 +4651,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Future with will",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associação entre exemplo e interpretação está correta em Future with will?",
+      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Future with will?",
       "opcoes": [
-        "I will call you later. -> a frase expressa uma decisão ou ação futura",
-        "They are going to start a new project next month. -> a frase expressa uma decisão ou ação futura",
-        "She is meeting her teacher after class. -> a expressão temporal ajuda a localizar a ação no futuro",
-        "Next month we will visit another city. -> a frase indica plano futuro já previsto"
+        "I will call you later. -> a frase expressa uma decisao ou acao futura",
+        "They are going to start a new project next month. -> a frase expressa uma decisao ou acao futura",
+        "She is meeting her teacher after class. -> a expressao temporal ajuda a localizar a acao no futuro",
+        "Next month we will visit another city. -> a frase indica plano futuro ja previsto"
       ],
-      "correta": "I will call you later. -> a frase expressa uma decisão ou ação futura",
-      "comentario": "A associação correta mantém coerência entre exemplo e interpretação em future with will.",
+      "correta": "I will call you later. -> a frase expressa uma decisao ou acao futura",
+      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em future with will.",
       "tempoEstimado": 65,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -4689,7 +4690,7 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Future with will",
       "dificuldadeLabel": "dificil",
@@ -4699,12 +4700,12 @@ export const temposVerbaisPastEFuture = {
       "enunciado": "Ao resolver uma atividade sobre future with will, o estudante deve principalmente:",
       "opcoes": [
         "reconhecer usos de will em futuro",
-        "observar intenção de promessa, previsão ou decisão tomada no momento",
-        "interpretar promessas, previsões e decisões espontâneas",
-        "a questão pede identificar o valor de will no contexto"
+        "observar intencao de promessa, previsao ou decisao tomada no momento",
+        "interpretar promessas, previsoes e decisoes espontaneas",
+        "a questao pede identificar o valor de will no contexto"
       ],
       "correta": "reconhecer usos de will em futuro",
-      "comentario": "O objetivo central de future with will é reconhecer usos de will em futuro.",
+      "comentario": "O objetivo central de future with will e reconhecer usos de will em futuro.",
       "tempoEstimado": 70,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -4728,22 +4729,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Going to",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Inglês, Going to refere-se a:",
+      "enunciado": "Em Ingles, Going to refere-se a:",
       "opcoes": [
-        "a estrutura usada para indicar planos, intenções ou previsões baseadas em evidências",
-        "o uso do present continuous para marcar arranjos e compromissos futuros já combinados",
-        "as expressões que ajudam a localizar eventos no passado ou no futuro, como yesterday, last year, tomorrow e next week",
-        "a articulação entre tempos passados e futuros dentro de narrativas, planos ou comparações temporais"
+        "a estrutura usada para indicar planos, intencoes ou previsoes baseadas em evidencias",
+        "o uso do present continuous para marcar arranjos e compromissos futuros ja combinados",
+        "as expressoes que ajudam a localizar eventos no passado ou no futuro, como yesterday, last year, tomorrow e next week",
+        "a articulacao entre tempos passados e futuros dentro de narrativas, planos ou comparacoes temporais"
       ],
-      "correta": "a estrutura usada para indicar planos, intenções ou previsões baseadas em evidências",
-      "comentario": "Going to refere-se à estrutura usada para indicar planos, intenções ou previsões baseadas em evidências.",
+      "correta": "a estrutura usada para indicar planos, intencoes ou previsoes baseadas em evidencias",
+      "comentario": "Going to refere-se a estrutura usada para indicar planos, intencoes ou previsoes baseadas em evidencias.",
       "tempoEstimado": 20,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -4767,14 +4768,14 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Going to",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: um estudante já comprou a passagem e diz that he is going to travel in July. Esse caso está mais ligado a qual subtópico?",
+      "enunciado": "Observe a situacao: um estudante ja comprou a passagem e diz that he is going to travel in July. Esse caso esta mais ligado a qual subtopico?",
       "opcoes": [
         "Going to",
         "Present Continuous for future",
@@ -4782,7 +4783,7 @@ export const temposVerbaisPastEFuture = {
         "Past and future in context"
       ],
       "correta": "Going to",
-      "comentario": "A situação apresentada é melhor compreendida por meio de going to.",
+      "comentario": "A situacao apresentada e melhor compreendida por meio de going to.",
       "tempoEstimado": 20,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -4806,7 +4807,7 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Going to",
       "dificuldadeLabel": "facil",
@@ -4845,22 +4846,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Going to",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO representa corretamente going to?",
+      "enunciado": "Qual alternativa NAO representa corretamente going to?",
       "opcoes": [
         "She is meeting her teacher after class.",
         "They are going to start a new project next month.",
-        "verificar se há intenção planejada ou evidência para a previsão.",
-        "interpretar planos já pensados e previsões com indícios."
+        "verificar se ha intencao planejada ou evidencia para a previsao.",
+        "interpretar planos ja pensados e previsoes com indicios."
       ],
       "correta": "She is meeting her teacher after class.",
-      "comentario": "A opção incompatível ilustra outro subtópico, e não going to.",
+      "comentario": "A opcao incompativel ilustra outro subtopico, e nao going to.",
       "tempoEstimado": 25,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -4884,19 +4885,19 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Going to",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar going to, o foco principal é:",
+      "enunciado": "Ao estudar going to, o foco principal e:",
       "opcoes": [
         "distinguir going to de outras formas de futuro",
         "reconhecer futuro expresso por compromisso marcado",
         "relacionar marcadores temporais ao tempo verbal adequado",
-        "interpretar relações de anterioridade, sequência e projeção temporal"
+        "interpretar relacoes de anterioridade, sequencia e projecao temporal"
       ],
       "correta": "distinguir going to de outras formas de futuro",
       "comentario": "Going to concentra-se em distinguir going to de outras formas de futuro.",
@@ -4923,22 +4924,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Going to",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Present Continuous for future trata de o uso do present continuous para marcar arranjos e compromissos futuros já combinados, Going to destaca:",
+      "enunciado": "Enquanto Present Continuous for future trata de o uso do present continuous para marcar arranjos e compromissos futuros ja combinados, Going to destaca:",
       "opcoes": [
-        "A estrutura usada para indicar planos, intenções ou previsões baseadas em evidências.",
-        "O uso do present continuous para marcar arranjos e compromissos futuros já combinados.",
-        "As expressões que ajudam a localizar eventos no passado ou no futuro, como yesterday, last year, tomorrow e next week.",
-        "A articulação entre tempos passados e futuros dentro de narrativas, planos ou comparações temporais."
+        "A estrutura usada para indicar planos, intencoes ou previsoes baseadas em evidencias.",
+        "O uso do present continuous para marcar arranjos e compromissos futuros ja combinados.",
+        "As expressoes que ajudam a localizar eventos no passado ou no futuro, como yesterday, last year, tomorrow e next week.",
+        "A articulacao entre tempos passados e futuros dentro de narrativas, planos ou comparacoes temporais."
       ],
-      "correta": "A estrutura usada para indicar planos, intenções ou previsões baseadas em evidências.",
-      "comentario": "A comparação correta mostra a especificidade de going to.",
+      "correta": "A estrutura usada para indicar planos, intencoes ou previsoes baseadas em evidencias.",
+      "comentario": "A comparacao correta mostra a especificidade de going to.",
       "tempoEstimado": 30,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -4962,14 +4963,14 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Going to",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma atividade de sala, um estudante já comprou a passagem e diz that he is going to travel in July. Para responder bem, o estudante deve mobilizar principalmente:",
+      "enunciado": "Em uma atividade de sala, um estudante ja comprou a passagem e diz that he is going to travel in July. Para responder bem, o estudante deve mobilizar principalmente:",
       "opcoes": [
         "Going to",
         "Present Continuous for future",
@@ -4977,7 +4978,7 @@ export const temposVerbaisPastEFuture = {
         "Simple Past afirmativo"
       ],
       "correta": "Going to",
-      "comentario": "Esse tipo de tarefa exige domínio de going to.",
+      "comentario": "Esse tipo de tarefa exige dominio de going to.",
       "tempoEstimado": 35,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -5001,22 +5002,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Going to",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação prática depende mais diretamente de Going to?",
+      "enunciado": "Qual situacao pratica depende mais diretamente de Going to?",
       "opcoes": [
-        "interpretar planos já pensados e previsões com indícios",
-        "interpretar agenda e compromissos futuros já organizados",
+        "interpretar planos ja pensados e previsoes com indicios",
+        "interpretar agenda e compromissos futuros ja organizados",
         "reconhecer pistas de tempo para interpretar ou escolher a estrutura correta",
         "interpretar relatos, biografias curtas e rotinas passadas"
       ],
-      "correta": "interpretar planos já pensados e previsões com indícios",
-      "comentario": "Going to aparece de forma direta em interpretar planos já pensados e previsões com indícios.",
+      "correta": "interpretar planos ja pensados e previsoes com indicios",
+      "comentario": "Going to aparece de forma direta em interpretar planos ja pensados e previsoes com indicios.",
       "tempoEstimado": 35,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -5040,22 +5041,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Going to",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre going to?",
+      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre going to?",
       "opcoes": [
-        "o caso é resolvido com foco em going to.",
-        "o caso é melhor resolvido por present Continuous for future.",
+        "o caso e resolvido com foco em going to.",
+        "o caso e melhor resolvido por present Continuous for future.",
         "o caso elimina a necessidade de time expressions.",
         "o caso impede qualquer uso de past and future in context."
       ],
-      "correta": "o caso é resolvido com foco em going to.",
-      "comentario": "A conclusão correta retoma a função central de going to.",
+      "correta": "o caso e resolvido com foco em going to.",
+      "comentario": "A conclusao correta retoma a funcao central de going to.",
       "tempoEstimado": 40,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -5079,7 +5080,7 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Going to",
       "dificuldadeLabel": "facil",
@@ -5088,12 +5089,12 @@ export const temposVerbaisPastEFuture = {
       "tipo": "multipla_escolha",
       "enunciado": "Se a turma fosse revisar going to, qual pergunta de estudo seria a mais adequada?",
       "opcoes": [
-        "Como going to aparece em interpretar planos já pensados e previsões com indícios?",
-        "Como present Continuous for future substitui totalmente interpretar planos já pensados e previsões com indícios?",
-        "Por que time expressions torna desnecessário estudar Going to?",
+        "Como going to aparece em interpretar planos ja pensados e previsoes com indicios?",
+        "Como present Continuous for future substitui totalmente interpretar planos ja pensados e previsoes com indicios?",
+        "Por que time expressions torna desnecessario estudar Going to?",
         "De que modo past and future in context elimina toda leitura de contexto?"
       ],
-      "correta": "Como going to aparece em interpretar planos já pensados e previsões com indícios?",
+      "correta": "Como going to aparece em interpretar planos ja pensados e previsoes com indicios?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de going to.",
       "tempoEstimado": 40,
       "tags": [
@@ -5118,22 +5119,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Going to",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em going to é pensar que:",
+      "enunciado": "Um erro comum em going to e pensar que:",
       "opcoes": [
-        "going to sempre significa obrigação",
-        "present continuous sempre fala apenas de ação acontecendo agora",
-        "as time expressions são detalhes acessórios e não mudam a interpretação verbal",
+        "going to sempre significa obrigacao",
+        "present continuous sempre fala apenas de acao acontecendo agora",
+        "as time expressions sao detalhes acessorios e nao mudam a interpretacao verbal",
         "misturar passado e futuro no mesmo texto sempre indica erro gramatical"
       ],
-      "correta": "going to sempre significa obrigação",
-      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de going to.",
+      "correta": "going to sempre significa obrigacao",
+      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de going to.",
       "tempoEstimado": 45,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -5157,22 +5158,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Going to",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"I am going to study tomorrow só pode indicar ordem, nunca plano\". A avaliação mais adequada é:",
+      "enunciado": "Um estudante afirma: \"I am going to study tomorrow so pode indicar ordem, nunca plano\". A avaliacao mais adequada e:",
       "opcoes": [
-        "A afirmação está incorreta, porque a estrutura usada para indicar planos, intenções ou previsões baseadas em evidências.",
-        "A afirmação está correta, pois resume integralmente going to.",
-        "A afirmação está correta, porque basta decorar a tradução do exemplo.",
-        "A afirmação está incorreta apenas por não citar uma regra gramatical."
+        "A afirmacao esta incorreta, porque a estrutura usada para indicar planos, intencoes ou previsoes baseadas em evidencias.",
+        "A afirmacao esta correta, pois resume integralmente going to.",
+        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
+        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
       ],
-      "correta": "A afirmação está incorreta, porque a estrutura usada para indicar planos, intenções ou previsões baseadas em evidências.",
-      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre going to.",
+      "correta": "A afirmacao esta incorreta, porque a estrutura usada para indicar planos, intencoes ou previsoes baseadas em evidencias.",
+      "comentario": "A fala do estudante apresenta um equivoco conceitual sobre going to.",
       "tempoEstimado": 45,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -5196,22 +5197,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Going to",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se going to fosse ignorado(a) em interpretar planos já pensados e previsões com indícios, o resultado mais provável seria:",
+      "enunciado": "Se going to fosse ignorado(a) em interpretar planos ja pensados e previsoes com indicios, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretação ficaria incompleta e aumentaria a chance de erro em interpretar planos já pensados e previsões com indícios.",
-        "a questão seria resolvida automaticamente por present Continuous for future.",
-        "nenhuma interpretação seria alterada, porque Going to não interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
+        "a interpretacao ficaria incompleta e aumentaria a chance de erro em interpretar planos ja pensados e previsoes com indicios.",
+        "a questao seria resolvida automaticamente por present Continuous for future.",
+        "nenhuma interpretacao seria alterada, porque Going to nao interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
       ],
-      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em interpretar planos já pensados e previsões com indícios.",
-      "comentario": "Ignorar going to compromete a resolução correta da atividade.",
+      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em interpretar planos ja pensados e previsoes com indicios.",
+      "comentario": "Ignorar going to compromete a resolucao correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -5235,14 +5236,14 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Going to",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou ação ilustra melhor Going to?",
+      "enunciado": "Qual trecho ou acao ilustra melhor Going to?",
       "opcoes": [
         "They are going to start a new project next month.",
         "She is meeting her teacher after class.",
@@ -5250,7 +5251,7 @@ export const temposVerbaisPastEFuture = {
         "Last year they studied online, but next year they will return to the lab."
       ],
       "correta": "They are going to start a new project next month.",
-      "comentario": "O item correto é o que melhor exemplifica going to.",
+      "comentario": "O item correto e o que melhor exemplifica going to.",
       "tempoEstimado": 50,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -5274,21 +5275,21 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Going to",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao encontrar o exemplo \"They are going to start a new project next month.\", a leitura mais adequada é:",
+      "enunciado": "Ao encontrar o exemplo \"They are going to start a new project next month.\", a leitura mais adequada e:",
       "opcoes": [
-        "a frase indica plano futuro já previsto",
-        "a frase pode indicar um compromisso futuro já acertado",
-        "a expressão temporal ajuda a localizar a ação no futuro",
-        "o texto compara dois momentos temporais diferentes com coerência"
+        "a frase indica plano futuro ja previsto",
+        "a frase pode indicar um compromisso futuro ja acertado",
+        "a expressao temporal ajuda a localizar a acao no futuro",
+        "o texto compara dois momentos temporais diferentes com coerencia"
       ],
-      "correta": "a frase indica plano futuro já previsto",
+      "correta": "a frase indica plano futuro ja previsto",
       "comentario": "A leitura correta do exemplo revela o papel de going to.",
       "tempoEstimado": 55,
       "tags": [
@@ -5313,22 +5314,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Going to",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estratégia ajuda mais a estudar going to?",
+      "enunciado": "Qual estrategia ajuda mais a estudar going to?",
       "opcoes": [
-        "verificar se há intenção planejada ou evidência para a previsão",
+        "verificar se ha intencao planejada ou evidencia para a previsao",
         "observar marcadores de futuro e a ideia de compromisso agendado",
         "identificar o marcador temporal e conectar com o verbo usado",
-        "observar eixo temporal e separar o que já aconteceu do que ainda vai acontecer"
+        "observar eixo temporal e separar o que ja aconteceu do que ainda vai acontecer"
       ],
-      "correta": "verificar se há intenção planejada ou evidência para a previsão",
-      "comentario": "A estratégia correta fortalece o domínio de going to.",
+      "correta": "verificar se ha intencao planejada ou evidencia para a previsao",
+      "comentario": "A estrategia correta fortalece o dominio de going to.",
       "tempoEstimado": 55,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -5352,22 +5353,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Going to",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Going to é mais cobrado quando:",
+      "enunciado": "Em uma prova, Going to e mais cobrado quando:",
       "opcoes": [
-        "o item cobra leitura de planejamento ou intenção futura",
-        "a questão pede perceber valor futuro em estrutura de presente contínuo",
-        "o item exige compatibilizar tempo verbal e expressão temporal",
-        "a pergunta pede interpretar contraste ou sequência entre passado e futuro"
+        "o item cobra leitura de planejamento ou intencao futura",
+        "a questao pede perceber valor futuro em estrutura de presente continuo",
+        "o item exige compatibilizar tempo verbal e expressao temporal",
+        "a pergunta pede interpretar contraste ou sequencia entre passado e futuro"
       ],
-      "correta": "o item cobra leitura de planejamento ou intenção futura",
-      "comentario": "Esse é o tipo de demanda em que going to aparece com mais frequência.",
+      "correta": "o item cobra leitura de planejamento ou intencao futura",
+      "comentario": "Esse e o tipo de demanda em que going to aparece com mais frequencia.",
       "tempoEstimado": 60,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -5391,7 +5392,7 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Going to",
       "dificuldadeLabel": "dificil",
@@ -5400,13 +5401,13 @@ export const temposVerbaisPastEFuture = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual resumo sintetiza melhor a ideia de Going to?",
       "opcoes": [
-        "Em síntese, a estrutura usada para indicar planos, intenções ou previsões baseadas em evidências.",
-        "Em síntese, o uso do present continuous para marcar arranjos e compromissos futuros já combinados.",
-        "Em síntese, as expressões que ajudam a localizar eventos no passado ou no futuro, como yesterday, last year, tomorrow e next week.",
-        "Em síntese, a articulação entre tempos passados e futuros dentro de narrativas, planos ou comparações temporais."
+        "Em sintese, a estrutura usada para indicar planos, intencoes ou previsoes baseadas em evidencias.",
+        "Em sintese, o uso do present continuous para marcar arranjos e compromissos futuros ja combinados.",
+        "Em sintese, as expressoes que ajudam a localizar eventos no passado ou no futuro, como yesterday, last year, tomorrow e next week.",
+        "Em sintese, a articulacao entre tempos passados e futuros dentro de narrativas, planos ou comparacoes temporais."
       ],
-      "correta": "Em síntese, a estrutura usada para indicar planos, intenções ou previsões baseadas em evidências.",
-      "comentario": "O resumo correto recupera o núcleo de going to.",
+      "correta": "Em sintese, a estrutura usada para indicar planos, intencoes ou previsoes baseadas em evidencias.",
+      "comentario": "O resumo correto recupera o nucleo de going to.",
       "tempoEstimado": 60,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -5430,22 +5431,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Going to",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associação entre exemplo e interpretação está correta em Going to?",
+      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Going to?",
       "opcoes": [
-        "They are going to start a new project next month. -> a frase indica plano futuro já previsto",
-        "She is meeting her teacher after class. -> a frase indica plano futuro já previsto",
-        "Next month we will visit another city. -> o texto compara dois momentos temporais diferentes com coerência",
-        "Last year they studied online, but next year they will return to the lab. -> a frase pode indicar um compromisso futuro já acertado"
+        "They are going to start a new project next month. -> a frase indica plano futuro ja previsto",
+        "She is meeting her teacher after class. -> a frase indica plano futuro ja previsto",
+        "Next month we will visit another city. -> o texto compara dois momentos temporais diferentes com coerencia",
+        "Last year they studied online, but next year they will return to the lab. -> a frase pode indicar um compromisso futuro ja acertado"
       ],
-      "correta": "They are going to start a new project next month. -> a frase indica plano futuro já previsto",
-      "comentario": "A associação correta mantém coerência entre exemplo e interpretação em going to.",
+      "correta": "They are going to start a new project next month. -> a frase indica plano futuro ja previsto",
+      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em going to.",
       "tempoEstimado": 65,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -5469,7 +5470,7 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Going to",
       "dificuldadeLabel": "dificil",
@@ -5479,12 +5480,12 @@ export const temposVerbaisPastEFuture = {
       "enunciado": "Ao resolver uma atividade sobre going to, o estudante deve principalmente:",
       "opcoes": [
         "distinguir going to de outras formas de futuro",
-        "verificar se há intenção planejada ou evidência para a previsão",
-        "interpretar planos já pensados e previsões com indícios",
-        "o item cobra leitura de planejamento ou intenção futura"
+        "verificar se ha intencao planejada ou evidencia para a previsao",
+        "interpretar planos ja pensados e previsoes com indicios",
+        "o item cobra leitura de planejamento ou intencao futura"
       ],
       "correta": "distinguir going to de outras formas de futuro",
-      "comentario": "O objetivo central de going to é distinguir going to de outras formas de futuro.",
+      "comentario": "O objetivo central de going to e distinguir going to de outras formas de futuro.",
       "tempoEstimado": 70,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -5508,22 +5509,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Present Continuous for future",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Inglês, Present Continuous for future refere-se a:",
+      "enunciado": "Em Ingles, Present Continuous for future refere-se a:",
       "opcoes": [
-        "o uso do present continuous para marcar arranjos e compromissos futuros já combinados",
-        "as expressões que ajudam a localizar eventos no passado ou no futuro, como yesterday, last year, tomorrow e next week",
-        "a articulação entre tempos passados e futuros dentro de narrativas, planos ou comparações temporais",
-        "o uso do passado simples para relatar ações concluídas em um momento passado"
+        "o uso do present continuous para marcar arranjos e compromissos futuros ja combinados",
+        "as expressoes que ajudam a localizar eventos no passado ou no futuro, como yesterday, last year, tomorrow e next week",
+        "a articulacao entre tempos passados e futuros dentro de narrativas, planos ou comparacoes temporais",
+        "o uso do passado simples para relatar acoes concluidas em um momento passado"
       ],
-      "correta": "o uso do present continuous para marcar arranjos e compromissos futuros já combinados",
-      "comentario": "Present Continuous for future refere-se ao uso do present continuous para marcar arranjos e compromissos futuros já combinados.",
+      "correta": "o uso do present continuous para marcar arranjos e compromissos futuros ja combinados",
+      "comentario": "Present Continuous for future refere-se ao uso do present continuous para marcar arranjos e compromissos futuros ja combinados.",
       "tempoEstimado": 20,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -5547,14 +5548,14 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Present Continuous for future",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: um bilhete informa that the class is meeting the principal tomorrow morning. Esse caso está mais ligado a qual subtópico?",
+      "enunciado": "Observe a situacao: um bilhete informa that the class is meeting the principal tomorrow morning. Esse caso esta mais ligado a qual subtopico?",
       "opcoes": [
         "Present Continuous for future",
         "Time expressions",
@@ -5562,7 +5563,7 @@ export const temposVerbaisPastEFuture = {
         "Simple Past afirmativo"
       ],
       "correta": "Present Continuous for future",
-      "comentario": "A situação apresentada é melhor compreendida por meio de present Continuous for future.",
+      "comentario": "A situacao apresentada e melhor compreendida por meio de present Continuous for future.",
       "tempoEstimado": 20,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -5586,7 +5587,7 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Present Continuous for future",
       "dificuldadeLabel": "facil",
@@ -5625,22 +5626,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Present Continuous for future",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO representa corretamente present Continuous for future?",
+      "enunciado": "Qual alternativa NAO representa corretamente present Continuous for future?",
       "opcoes": [
         "Next month we will visit another city.",
         "She is meeting her teacher after class.",
         "observar marcadores de futuro e a ideia de compromisso agendado.",
-        "interpretar agenda e compromissos futuros já organizados."
+        "interpretar agenda e compromissos futuros ja organizados."
       ],
       "correta": "Next month we will visit another city.",
-      "comentario": "A opção incompatível ilustra outro subtópico, e não present Continuous for future.",
+      "comentario": "A opcao incompativel ilustra outro subtopico, e nao present Continuous for future.",
       "tempoEstimado": 25,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -5664,19 +5665,19 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Present Continuous for future",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar present Continuous for future, o foco principal é:",
+      "enunciado": "Ao estudar present Continuous for future, o foco principal e:",
       "opcoes": [
         "reconhecer futuro expresso por compromisso marcado",
         "relacionar marcadores temporais ao tempo verbal adequado",
-        "interpretar relações de anterioridade, sequência e projeção temporal",
-        "reconhecer ações terminadas e marcas temporais do passado"
+        "interpretar relacoes de anterioridade, sequencia e projecao temporal",
+        "reconhecer acoes terminadas e marcas temporais do passado"
       ],
       "correta": "reconhecer futuro expresso por compromisso marcado",
       "comentario": "Present Continuous for future concentra-se em reconhecer futuro expresso por compromisso marcado.",
@@ -5703,22 +5704,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Present Continuous for future",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Time expressions trata de as expressões que ajudam a localizar eventos no passado ou no futuro, como yesterday, last year, tomorrow e next week, Present Continuous for future destaca:",
+      "enunciado": "Enquanto Time expressions trata de as expressoes que ajudam a localizar eventos no passado ou no futuro, como yesterday, last year, tomorrow e next week, Present Continuous for future destaca:",
       "opcoes": [
-        "O uso do present continuous para marcar arranjos e compromissos futuros já combinados.",
-        "As expressões que ajudam a localizar eventos no passado ou no futuro, como yesterday, last year, tomorrow e next week.",
-        "A articulação entre tempos passados e futuros dentro de narrativas, planos ou comparações temporais.",
-        "O uso do passado simples para relatar ações concluídas em um momento passado."
+        "O uso do present continuous para marcar arranjos e compromissos futuros ja combinados.",
+        "As expressoes que ajudam a localizar eventos no passado ou no futuro, como yesterday, last year, tomorrow e next week.",
+        "A articulacao entre tempos passados e futuros dentro de narrativas, planos ou comparacoes temporais.",
+        "O uso do passado simples para relatar acoes concluidas em um momento passado."
       ],
-      "correta": "O uso do present continuous para marcar arranjos e compromissos futuros já combinados.",
-      "comentario": "A comparação correta mostra a especificidade de present Continuous for future.",
+      "correta": "O uso do present continuous para marcar arranjos e compromissos futuros ja combinados.",
+      "comentario": "A comparacao correta mostra a especificidade de present Continuous for future.",
       "tempoEstimado": 30,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -5742,7 +5743,7 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Present Continuous for future",
       "dificuldadeLabel": "facil",
@@ -5757,7 +5758,7 @@ export const temposVerbaisPastEFuture = {
         "Simple Past negativo e interrogativo"
       ],
       "correta": "Present Continuous for future",
-      "comentario": "Esse tipo de tarefa exige domínio de present Continuous for future.",
+      "comentario": "Esse tipo de tarefa exige dominio de present Continuous for future.",
       "tempoEstimado": 35,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -5781,22 +5782,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Present Continuous for future",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação prática depende mais diretamente de Present Continuous for future?",
+      "enunciado": "Qual situacao pratica depende mais diretamente de Present Continuous for future?",
       "opcoes": [
-        "interpretar agenda e compromissos futuros já organizados",
+        "interpretar agenda e compromissos futuros ja organizados",
         "reconhecer pistas de tempo para interpretar ou escolher a estrutura correta",
-        "ler textos que contrastam experiências passadas com expectativas futuras",
+        "ler textos que contrastam experiencias passadas com expectativas futuras",
         "alternar entre formas afirmativas, negativas e interrogativas no passado"
       ],
-      "correta": "interpretar agenda e compromissos futuros já organizados",
-      "comentario": "Present Continuous for future aparece de forma direta em interpretar agenda e compromissos futuros já organizados.",
+      "correta": "interpretar agenda e compromissos futuros ja organizados",
+      "comentario": "Present Continuous for future aparece de forma direta em interpretar agenda e compromissos futuros ja organizados.",
       "tempoEstimado": 35,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -5820,22 +5821,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Present Continuous for future",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre present Continuous for future?",
+      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre present Continuous for future?",
       "opcoes": [
-        "o caso é resolvido com foco em present Continuous for future.",
-        "o caso é melhor resolvido por time expressions.",
+        "o caso e resolvido com foco em present Continuous for future.",
+        "o caso e melhor resolvido por time expressions.",
         "o caso elimina a necessidade de past and future in context.",
         "o caso impede qualquer uso de simple Past afirmativo."
       ],
-      "correta": "o caso é resolvido com foco em present Continuous for future.",
-      "comentario": "A conclusão correta retoma a função central de present Continuous for future.",
+      "correta": "o caso e resolvido com foco em present Continuous for future.",
+      "comentario": "A conclusao correta retoma a funcao central de present Continuous for future.",
       "tempoEstimado": 40,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -5859,7 +5860,7 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Present Continuous for future",
       "dificuldadeLabel": "facil",
@@ -5868,12 +5869,12 @@ export const temposVerbaisPastEFuture = {
       "tipo": "multipla_escolha",
       "enunciado": "Se a turma fosse revisar present Continuous for future, qual pergunta de estudo seria a mais adequada?",
       "opcoes": [
-        "Como present Continuous for future aparece em interpretar agenda e compromissos futuros já organizados?",
-        "Como time expressions substitui totalmente interpretar agenda e compromissos futuros já organizados?",
-        "Por que past and future in context torna desnecessário estudar Present Continuous for future?",
+        "Como present Continuous for future aparece em interpretar agenda e compromissos futuros ja organizados?",
+        "Como time expressions substitui totalmente interpretar agenda e compromissos futuros ja organizados?",
+        "Por que past and future in context torna desnecessario estudar Present Continuous for future?",
         "De que modo simple Past afirmativo elimina toda leitura de contexto?"
       ],
-      "correta": "Como present Continuous for future aparece em interpretar agenda e compromissos futuros já organizados?",
+      "correta": "Como present Continuous for future aparece em interpretar agenda e compromissos futuros ja organizados?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de present Continuous for future.",
       "tempoEstimado": 40,
       "tags": [
@@ -5898,22 +5899,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Present Continuous for future",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em present Continuous for future é pensar que:",
+      "enunciado": "Um erro comum em present Continuous for future e pensar que:",
       "opcoes": [
-        "present continuous sempre fala apenas de ação acontecendo agora",
-        "as time expressions são detalhes acessórios e não mudam a interpretação verbal",
+        "present continuous sempre fala apenas de acao acontecendo agora",
+        "as time expressions sao detalhes acessorios e nao mudam a interpretacao verbal",
         "misturar passado e futuro no mesmo texto sempre indica erro gramatical",
         "todo verbo no passado precisa da palavra did junto na frase afirmativa"
       ],
-      "correta": "present continuous sempre fala apenas de ação acontecendo agora",
-      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de present Continuous for future.",
+      "correta": "present continuous sempre fala apenas de acao acontecendo agora",
+      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de present Continuous for future.",
       "tempoEstimado": 45,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -5937,22 +5938,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Present Continuous for future",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"we are visiting the museum tomorrow não pode indicar futuro porque está no present continuous\". A avaliação mais adequada é:",
+      "enunciado": "Um estudante afirma: \"we are visiting the museum tomorrow nao pode indicar futuro porque esta no present continuous\". A avaliacao mais adequada e:",
       "opcoes": [
-        "A afirmação está incorreta, porque o uso do present continuous para marcar arranjos e compromissos futuros já combinados.",
-        "A afirmação está correta, pois resume integralmente present Continuous for future.",
-        "A afirmação está correta, porque basta decorar a tradução do exemplo.",
-        "A afirmação está incorreta apenas por não citar uma regra gramatical."
+        "A afirmacao esta incorreta, porque o uso do present continuous para marcar arranjos e compromissos futuros ja combinados.",
+        "A afirmacao esta correta, pois resume integralmente present Continuous for future.",
+        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
+        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
       ],
-      "correta": "A afirmação está incorreta, porque o uso do present continuous para marcar arranjos e compromissos futuros já combinados.",
-      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre present Continuous for future.",
+      "correta": "A afirmacao esta incorreta, porque o uso do present continuous para marcar arranjos e compromissos futuros ja combinados.",
+      "comentario": "A fala do estudante apresenta um equivoco conceitual sobre present Continuous for future.",
       "tempoEstimado": 45,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -5976,22 +5977,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Present Continuous for future",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se present Continuous for future fosse ignorado(a) em interpretar agenda e compromissos futuros já organizados, o resultado mais provável seria:",
+      "enunciado": "Se present Continuous for future fosse ignorado(a) em interpretar agenda e compromissos futuros ja organizados, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretação ficaria incompleta e aumentaria a chance de erro em interpretar agenda e compromissos futuros já organizados.",
-        "a questão seria resolvida automaticamente por time expressions.",
-        "nenhuma interpretação seria alterada, porque Present Continuous for future não interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
+        "a interpretacao ficaria incompleta e aumentaria a chance de erro em interpretar agenda e compromissos futuros ja organizados.",
+        "a questao seria resolvida automaticamente por time expressions.",
+        "nenhuma interpretacao seria alterada, porque Present Continuous for future nao interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
       ],
-      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em interpretar agenda e compromissos futuros já organizados.",
-      "comentario": "Ignorar present Continuous for future compromete a resolução correta da atividade.",
+      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em interpretar agenda e compromissos futuros ja organizados.",
+      "comentario": "Ignorar present Continuous for future compromete a resolucao correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -6015,14 +6016,14 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Present Continuous for future",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou ação ilustra melhor Present Continuous for future?",
+      "enunciado": "Qual trecho ou acao ilustra melhor Present Continuous for future?",
       "opcoes": [
         "She is meeting her teacher after class.",
         "Next month we will visit another city.",
@@ -6030,7 +6031,7 @@ export const temposVerbaisPastEFuture = {
         "They visited the museum yesterday."
       ],
       "correta": "She is meeting her teacher after class.",
-      "comentario": "O item correto é o que melhor exemplifica present Continuous for future.",
+      "comentario": "O item correto e o que melhor exemplifica present Continuous for future.",
       "tempoEstimado": 50,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -6054,21 +6055,21 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Present Continuous for future",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao encontrar o exemplo \"She is meeting her teacher after class.\", a leitura mais adequada é:",
+      "enunciado": "Ao encontrar o exemplo \"She is meeting her teacher after class.\", a leitura mais adequada e:",
       "opcoes": [
-        "a frase pode indicar um compromisso futuro já acertado",
-        "a expressão temporal ajuda a localizar a ação no futuro",
-        "o texto compara dois momentos temporais diferentes com coerência",
-        "a frase expressa uma ação concluída no passado"
+        "a frase pode indicar um compromisso futuro ja acertado",
+        "a expressao temporal ajuda a localizar a acao no futuro",
+        "o texto compara dois momentos temporais diferentes com coerencia",
+        "a frase expressa uma acao concluida no passado"
       ],
-      "correta": "a frase pode indicar um compromisso futuro já acertado",
+      "correta": "a frase pode indicar um compromisso futuro ja acertado",
       "comentario": "A leitura correta do exemplo revela o papel de present Continuous for future.",
       "tempoEstimado": 55,
       "tags": [
@@ -6093,22 +6094,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Present Continuous for future",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estratégia ajuda mais a estudar present Continuous for future?",
+      "enunciado": "Qual estrategia ajuda mais a estudar present Continuous for future?",
       "opcoes": [
         "observar marcadores de futuro e a ideia de compromisso agendado",
         "identificar o marcador temporal e conectar com o verbo usado",
-        "observar eixo temporal e separar o que já aconteceu do que ainda vai acontecer",
+        "observar eixo temporal e separar o que ja aconteceu do que ainda vai acontecer",
         "observar verbos no passado e marcadores como yesterday, last week e ago"
       ],
       "correta": "observar marcadores de futuro e a ideia de compromisso agendado",
-      "comentario": "A estratégia correta fortalece o domínio de present Continuous for future.",
+      "comentario": "A estrategia correta fortalece o dominio de present Continuous for future.",
       "tempoEstimado": 55,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -6132,22 +6133,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Present Continuous for future",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Present Continuous for future é mais cobrado quando:",
+      "enunciado": "Em uma prova, Present Continuous for future e mais cobrado quando:",
       "opcoes": [
-        "a questão pede perceber valor futuro em estrutura de presente contínuo",
-        "o item exige compatibilizar tempo verbal e expressão temporal",
-        "a pergunta pede interpretar contraste ou sequência entre passado e futuro",
+        "a questao pede perceber valor futuro em estrutura de presente continuo",
+        "o item exige compatibilizar tempo verbal e expressao temporal",
+        "a pergunta pede interpretar contraste ou sequencia entre passado e futuro",
         "o item pede reconhecer ou completar frases afirmativas no simple past"
       ],
-      "correta": "a questão pede perceber valor futuro em estrutura de presente contínuo",
-      "comentario": "Esse é o tipo de demanda em que present Continuous for future aparece com mais frequência.",
+      "correta": "a questao pede perceber valor futuro em estrutura de presente continuo",
+      "comentario": "Esse e o tipo de demanda em que present Continuous for future aparece com mais frequencia.",
       "tempoEstimado": 60,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -6171,7 +6172,7 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Present Continuous for future",
       "dificuldadeLabel": "dificil",
@@ -6180,13 +6181,13 @@ export const temposVerbaisPastEFuture = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual resumo sintetiza melhor a ideia de Present Continuous for future?",
       "opcoes": [
-        "Em síntese, o uso do present continuous para marcar arranjos e compromissos futuros já combinados.",
-        "Em síntese, as expressões que ajudam a localizar eventos no passado ou no futuro, como yesterday, last year, tomorrow e next week.",
-        "Em síntese, a articulação entre tempos passados e futuros dentro de narrativas, planos ou comparações temporais.",
-        "Em síntese, o uso do passado simples para relatar ações concluídas em um momento passado."
+        "Em sintese, o uso do present continuous para marcar arranjos e compromissos futuros ja combinados.",
+        "Em sintese, as expressoes que ajudam a localizar eventos no passado ou no futuro, como yesterday, last year, tomorrow e next week.",
+        "Em sintese, a articulacao entre tempos passados e futuros dentro de narrativas, planos ou comparacoes temporais.",
+        "Em sintese, o uso do passado simples para relatar acoes concluidas em um momento passado."
       ],
-      "correta": "Em síntese, o uso do present continuous para marcar arranjos e compromissos futuros já combinados.",
-      "comentario": "O resumo correto recupera o núcleo de present Continuous for future.",
+      "correta": "Em sintese, o uso do present continuous para marcar arranjos e compromissos futuros ja combinados.",
+      "comentario": "O resumo correto recupera o nucleo de present Continuous for future.",
       "tempoEstimado": 60,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -6210,22 +6211,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Present Continuous for future",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associação entre exemplo e interpretação está correta em Present Continuous for future?",
+      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Present Continuous for future?",
       "opcoes": [
-        "She is meeting her teacher after class. -> a frase pode indicar um compromisso futuro já acertado",
-        "Next month we will visit another city. -> a frase pode indicar um compromisso futuro já acertado",
-        "Last year they studied online, but next year they will return to the lab. -> a frase expressa uma ação concluída no passado",
-        "They visited the museum yesterday. -> a expressão temporal ajuda a localizar a ação no futuro"
+        "She is meeting her teacher after class. -> a frase pode indicar um compromisso futuro ja acertado",
+        "Next month we will visit another city. -> a frase pode indicar um compromisso futuro ja acertado",
+        "Last year they studied online, but next year they will return to the lab. -> a frase expressa uma acao concluida no passado",
+        "They visited the museum yesterday. -> a expressao temporal ajuda a localizar a acao no futuro"
       ],
-      "correta": "She is meeting her teacher after class. -> a frase pode indicar um compromisso futuro já acertado",
-      "comentario": "A associação correta mantém coerência entre exemplo e interpretação em present Continuous for future.",
+      "correta": "She is meeting her teacher after class. -> a frase pode indicar um compromisso futuro ja acertado",
+      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em present Continuous for future.",
       "tempoEstimado": 65,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -6249,7 +6250,7 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Present Continuous for future",
       "dificuldadeLabel": "dificil",
@@ -6260,11 +6261,11 @@ export const temposVerbaisPastEFuture = {
       "opcoes": [
         "reconhecer futuro expresso por compromisso marcado",
         "observar marcadores de futuro e a ideia de compromisso agendado",
-        "interpretar agenda e compromissos futuros já organizados",
-        "a questão pede perceber valor futuro em estrutura de presente contínuo"
+        "interpretar agenda e compromissos futuros ja organizados",
+        "a questao pede perceber valor futuro em estrutura de presente continuo"
       ],
       "correta": "reconhecer futuro expresso por compromisso marcado",
-      "comentario": "O objetivo central de present Continuous for future é reconhecer futuro expresso por compromisso marcado.",
+      "comentario": "O objetivo central de present Continuous for future e reconhecer futuro expresso por compromisso marcado.",
       "tempoEstimado": 70,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -6288,22 +6289,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Time expressions",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Inglês, Time expressions refere-se a:",
+      "enunciado": "Em Ingles, Time expressions refere-se a:",
       "opcoes": [
-        "as expressões que ajudam a localizar eventos no passado ou no futuro, como yesterday, last year, tomorrow e next week",
-        "a articulação entre tempos passados e futuros dentro de narrativas, planos ou comparações temporais",
-        "o uso do passado simples para relatar ações concluídas em um momento passado",
+        "as expressoes que ajudam a localizar eventos no passado ou no futuro, como yesterday, last year, tomorrow e next week",
+        "a articulacao entre tempos passados e futuros dentro de narrativas, planos ou comparacoes temporais",
+        "o uso do passado simples para relatar acoes concluidas em um momento passado",
         "o uso de did not e did para negar ou formular perguntas no passado simples"
       ],
-      "correta": "as expressões que ajudam a localizar eventos no passado ou no futuro, como yesterday, last year, tomorrow e next week",
-      "comentario": "Time expressions refere-se às expressões que ajudam a localizar eventos no passado ou no futuro, como yesterday, last year, tomorrow e next week.",
+      "correta": "as expressoes que ajudam a localizar eventos no passado ou no futuro, como yesterday, last year, tomorrow e next week",
+      "comentario": "Time expressions refere-se as expressoes que ajudam a localizar eventos no passado ou no futuro, como yesterday, last year, tomorrow e next week.",
       "tempoEstimado": 20,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -6327,14 +6328,14 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Time expressions",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: um exercício mistura yesterday, now, next month e in 2019 em frases diferentes. Esse caso está mais ligado a qual subtópico?",
+      "enunciado": "Observe a situacao: um exercicio mistura yesterday, now, next month e in 2019 em frases diferentes. Esse caso esta mais ligado a qual subtopico?",
       "opcoes": [
         "Time expressions",
         "Past and future in context",
@@ -6342,7 +6343,7 @@ export const temposVerbaisPastEFuture = {
         "Simple Past negativo e interrogativo"
       ],
       "correta": "Time expressions",
-      "comentario": "A situação apresentada é melhor compreendida por meio de time expressions.",
+      "comentario": "A situacao apresentada e melhor compreendida por meio de time expressions.",
       "tempoEstimado": 20,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -6366,7 +6367,7 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Time expressions",
       "dificuldadeLabel": "facil",
@@ -6405,14 +6406,14 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Time expressions",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO representa corretamente time expressions?",
+      "enunciado": "Qual alternativa NAO representa corretamente time expressions?",
       "opcoes": [
         "Last year they studied online, but next year they will return to the lab.",
         "Next month we will visit another city.",
@@ -6420,7 +6421,7 @@ export const temposVerbaisPastEFuture = {
         "reconhecer pistas de tempo para interpretar ou escolher a estrutura correta."
       ],
       "correta": "Last year they studied online, but next year they will return to the lab.",
-      "comentario": "A opção incompatível ilustra outro subtópico, e não time expressions.",
+      "comentario": "A opcao incompativel ilustra outro subtopico, e nao time expressions.",
       "tempoEstimado": 25,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -6444,18 +6445,18 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Time expressions",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar time expressions, o foco principal é:",
+      "enunciado": "Ao estudar time expressions, o foco principal e:",
       "opcoes": [
         "relacionar marcadores temporais ao tempo verbal adequado",
-        "interpretar relações de anterioridade, sequência e projeção temporal",
-        "reconhecer ações terminadas e marcas temporais do passado",
+        "interpretar relacoes de anterioridade, sequencia e projecao temporal",
+        "reconhecer acoes terminadas e marcas temporais do passado",
         "montar negativas e perguntas corretas com auxiliar did"
       ],
       "correta": "relacionar marcadores temporais ao tempo verbal adequado",
@@ -6483,22 +6484,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Time expressions",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Past and future in context trata de a articulação entre tempos passados e futuros dentro de narrativas, planos ou comparações temporais, Time expressions destaca:",
+      "enunciado": "Enquanto Past and future in context trata de a articulacao entre tempos passados e futuros dentro de narrativas, planos ou comparacoes temporais, Time expressions destaca:",
       "opcoes": [
-        "As expressões que ajudam a localizar eventos no passado ou no futuro, como yesterday, last year, tomorrow e next week.",
-        "A articulação entre tempos passados e futuros dentro de narrativas, planos ou comparações temporais.",
-        "O uso do passado simples para relatar ações concluídas em um momento passado.",
+        "As expressoes que ajudam a localizar eventos no passado ou no futuro, como yesterday, last year, tomorrow e next week.",
+        "A articulacao entre tempos passados e futuros dentro de narrativas, planos ou comparacoes temporais.",
+        "O uso do passado simples para relatar acoes concluidas em um momento passado.",
         "O uso de did not e did para negar ou formular perguntas no passado simples."
       ],
-      "correta": "As expressões que ajudam a localizar eventos no passado ou no futuro, como yesterday, last year, tomorrow e next week.",
-      "comentario": "A comparação correta mostra a especificidade de time expressions.",
+      "correta": "As expressoes que ajudam a localizar eventos no passado ou no futuro, como yesterday, last year, tomorrow e next week.",
+      "comentario": "A comparacao correta mostra a especificidade de time expressions.",
       "tempoEstimado": 30,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -6522,14 +6523,14 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Time expressions",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma atividade de sala, um exercício mistura yesterday, now, next month e in 2019 em frases diferentes. Para responder bem, o estudante deve mobilizar principalmente:",
+      "enunciado": "Em uma atividade de sala, um exercicio mistura yesterday, now, next month e in 2019 em frases diferentes. Para responder bem, o estudante deve mobilizar principalmente:",
       "opcoes": [
         "Time expressions",
         "Past and future in context",
@@ -6537,7 +6538,7 @@ export const temposVerbaisPastEFuture = {
         "Regular and irregular verbs"
       ],
       "correta": "Time expressions",
-      "comentario": "Esse tipo de tarefa exige domínio de time expressions.",
+      "comentario": "Esse tipo de tarefa exige dominio de time expressions.",
       "tempoEstimado": 35,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -6561,17 +6562,17 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Time expressions",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação prática depende mais diretamente de Time expressions?",
+      "enunciado": "Qual situacao pratica depende mais diretamente de Time expressions?",
       "opcoes": [
         "reconhecer pistas de tempo para interpretar ou escolher a estrutura correta",
-        "ler textos que contrastam experiências passadas com expectativas futuras",
+        "ler textos que contrastam experiencias passadas com expectativas futuras",
         "interpretar relatos, biografias curtas e rotinas passadas",
         "interpretar textos curtos com diferentes formas do simple past"
       ],
@@ -6600,22 +6601,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Time expressions",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre time expressions?",
+      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre time expressions?",
       "opcoes": [
-        "o caso é resolvido com foco em time expressions.",
-        "o caso é melhor resolvido por past and future in context.",
+        "o caso e resolvido com foco em time expressions.",
+        "o caso e melhor resolvido por past and future in context.",
         "o caso elimina a necessidade de simple Past afirmativo.",
         "o caso impede qualquer uso de simple Past negativo e interrogativo."
       ],
-      "correta": "o caso é resolvido com foco em time expressions.",
-      "comentario": "A conclusão correta retoma a função central de time expressions.",
+      "correta": "o caso e resolvido com foco em time expressions.",
+      "comentario": "A conclusao correta retoma a funcao central de time expressions.",
       "tempoEstimado": 40,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -6639,7 +6640,7 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Time expressions",
       "dificuldadeLabel": "facil",
@@ -6650,7 +6651,7 @@ export const temposVerbaisPastEFuture = {
       "opcoes": [
         "Como time expressions aparece em reconhecer pistas de tempo para interpretar ou escolher a estrutura correta?",
         "Como past and future in context substitui totalmente reconhecer pistas de tempo para interpretar ou escolher a estrutura correta?",
-        "Por que simple Past afirmativo torna desnecessário estudar Time expressions?",
+        "Por que simple Past afirmativo torna desnecessario estudar Time expressions?",
         "De que modo simple Past negativo e interrogativo elimina toda leitura de contexto?"
       ],
       "correta": "Como time expressions aparece em reconhecer pistas de tempo para interpretar ou escolher a estrutura correta?",
@@ -6678,22 +6679,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Time expressions",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em time expressions é pensar que:",
+      "enunciado": "Um erro comum em time expressions e pensar que:",
       "opcoes": [
-        "as time expressions são detalhes acessórios e não mudam a interpretação verbal",
+        "as time expressions sao detalhes acessorios e nao mudam a interpretacao verbal",
         "misturar passado e futuro no mesmo texto sempre indica erro gramatical",
         "todo verbo no passado precisa da palavra did junto na frase afirmativa",
-        "em negativas e perguntas o verbo principal também deve continuar no passado"
+        "em negativas e perguntas o verbo principal tambem deve continuar no passado"
       ],
-      "correta": "as time expressions são detalhes acessórios e não mudam a interpretação verbal",
-      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de time expressions.",
+      "correta": "as time expressions sao detalhes acessorios e nao mudam a interpretacao verbal",
+      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de time expressions.",
       "tempoEstimado": 45,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -6717,22 +6718,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Time expressions",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"yesterday e tomorrow podem aparecer com a mesma leitura temporal na frase\". A avaliação mais adequada é:",
+      "enunciado": "Um estudante afirma: \"yesterday e tomorrow podem aparecer com a mesma leitura temporal na frase\". A avaliacao mais adequada e:",
       "opcoes": [
-        "A afirmação está incorreta, porque as expressões que ajudam a localizar eventos no passado ou no futuro, como yesterday, last year, tomorrow e next week.",
-        "A afirmação está correta, pois resume integralmente time expressions.",
-        "A afirmação está correta, porque basta decorar a tradução do exemplo.",
-        "A afirmação está incorreta apenas por não citar uma regra gramatical."
+        "A afirmacao esta incorreta, porque as expressoes que ajudam a localizar eventos no passado ou no futuro, como yesterday, last year, tomorrow e next week.",
+        "A afirmacao esta correta, pois resume integralmente time expressions.",
+        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
+        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
       ],
-      "correta": "A afirmação está incorreta, porque as expressões que ajudam a localizar eventos no passado ou no futuro, como yesterday, last year, tomorrow e next week.",
-      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre time expressions.",
+      "correta": "A afirmacao esta incorreta, porque as expressoes que ajudam a localizar eventos no passado ou no futuro, como yesterday, last year, tomorrow e next week.",
+      "comentario": "A fala do estudante apresenta um equivoco conceitual sobre time expressions.",
       "tempoEstimado": 45,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -6756,22 +6757,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Time expressions",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se time expressions fosse ignorado(a) em reconhecer pistas de tempo para interpretar ou escolher a estrutura correta, o resultado mais provável seria:",
+      "enunciado": "Se time expressions fosse ignorado(a) em reconhecer pistas de tempo para interpretar ou escolher a estrutura correta, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretação ficaria incompleta e aumentaria a chance de erro em reconhecer pistas de tempo para interpretar ou escolher a estrutura correta.",
-        "a questão seria resolvida automaticamente por past and future in context.",
-        "nenhuma interpretação seria alterada, porque Time expressions não interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
+        "a interpretacao ficaria incompleta e aumentaria a chance de erro em reconhecer pistas de tempo para interpretar ou escolher a estrutura correta.",
+        "a questao seria resolvida automaticamente por past and future in context.",
+        "nenhuma interpretacao seria alterada, porque Time expressions nao interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
       ],
-      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em reconhecer pistas de tempo para interpretar ou escolher a estrutura correta.",
-      "comentario": "Ignorar time expressions compromete a resolução correta da atividade.",
+      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em reconhecer pistas de tempo para interpretar ou escolher a estrutura correta.",
+      "comentario": "Ignorar time expressions compromete a resolucao correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -6795,14 +6796,14 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Time expressions",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou ação ilustra melhor Time expressions?",
+      "enunciado": "Qual trecho ou acao ilustra melhor Time expressions?",
       "opcoes": [
         "Next month we will visit another city.",
         "Last year they studied online, but next year they will return to the lab.",
@@ -6810,7 +6811,7 @@ export const temposVerbaisPastEFuture = {
         "Did you study for the test?"
       ],
       "correta": "Next month we will visit another city.",
-      "comentario": "O item correto é o que melhor exemplifica time expressions.",
+      "comentario": "O item correto e o que melhor exemplifica time expressions.",
       "tempoEstimado": 50,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -6834,21 +6835,21 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Time expressions",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao encontrar o exemplo \"Next month we will visit another city.\", a leitura mais adequada é:",
+      "enunciado": "Ao encontrar o exemplo \"Next month we will visit another city.\", a leitura mais adequada e:",
       "opcoes": [
-        "a expressão temporal ajuda a localizar a ação no futuro",
-        "o texto compara dois momentos temporais diferentes com coerência",
-        "a frase expressa uma ação concluída no passado",
+        "a expressao temporal ajuda a localizar a acao no futuro",
+        "o texto compara dois momentos temporais diferentes com coerencia",
+        "a frase expressa uma acao concluida no passado",
         "o auxiliar did carrega a marca temporal na pergunta"
       ],
-      "correta": "a expressão temporal ajuda a localizar a ação no futuro",
+      "correta": "a expressao temporal ajuda a localizar a acao no futuro",
       "comentario": "A leitura correta do exemplo revela o papel de time expressions.",
       "tempoEstimado": 55,
       "tags": [
@@ -6873,22 +6874,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Time expressions",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estratégia ajuda mais a estudar time expressions?",
+      "enunciado": "Qual estrategia ajuda mais a estudar time expressions?",
       "opcoes": [
         "identificar o marcador temporal e conectar com o verbo usado",
-        "observar eixo temporal e separar o que já aconteceu do que ainda vai acontecer",
+        "observar eixo temporal e separar o que ja aconteceu do que ainda vai acontecer",
         "observar verbos no passado e marcadores como yesterday, last week e ago",
         "usar did ou did not e manter o verbo principal na forma base"
       ],
       "correta": "identificar o marcador temporal e conectar com o verbo usado",
-      "comentario": "A estratégia correta fortalece o domínio de time expressions.",
+      "comentario": "A estrategia correta fortalece o dominio de time expressions.",
       "tempoEstimado": 55,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -6912,22 +6913,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Time expressions",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Time expressions é mais cobrado quando:",
+      "enunciado": "Em uma prova, Time expressions e mais cobrado quando:",
       "opcoes": [
-        "o item exige compatibilizar tempo verbal e expressão temporal",
-        "a pergunta pede interpretar contraste ou sequência entre passado e futuro",
+        "o item exige compatibilizar tempo verbal e expressao temporal",
+        "a pergunta pede interpretar contraste ou sequencia entre passado e futuro",
         "o item pede reconhecer ou completar frases afirmativas no simple past",
-        "a questão exige transformação estrutural no simple past"
+        "a questao exige transformacao estrutural no simple past"
       ],
-      "correta": "o item exige compatibilizar tempo verbal e expressão temporal",
-      "comentario": "Esse é o tipo de demanda em que time expressions aparece com mais frequência.",
+      "correta": "o item exige compatibilizar tempo verbal e expressao temporal",
+      "comentario": "Esse e o tipo de demanda em que time expressions aparece com mais frequencia.",
       "tempoEstimado": 60,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -6951,7 +6952,7 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Time expressions",
       "dificuldadeLabel": "dificil",
@@ -6960,13 +6961,13 @@ export const temposVerbaisPastEFuture = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual resumo sintetiza melhor a ideia de Time expressions?",
       "opcoes": [
-        "Em síntese, as expressões que ajudam a localizar eventos no passado ou no futuro, como yesterday, last year, tomorrow e next week.",
-        "Em síntese, a articulação entre tempos passados e futuros dentro de narrativas, planos ou comparações temporais.",
-        "Em síntese, o uso do passado simples para relatar ações concluídas em um momento passado.",
-        "Em síntese, o uso de did not e did para negar ou formular perguntas no passado simples."
+        "Em sintese, as expressoes que ajudam a localizar eventos no passado ou no futuro, como yesterday, last year, tomorrow e next week.",
+        "Em sintese, a articulacao entre tempos passados e futuros dentro de narrativas, planos ou comparacoes temporais.",
+        "Em sintese, o uso do passado simples para relatar acoes concluidas em um momento passado.",
+        "Em sintese, o uso de did not e did para negar ou formular perguntas no passado simples."
       ],
-      "correta": "Em síntese, as expressões que ajudam a localizar eventos no passado ou no futuro, como yesterday, last year, tomorrow e next week.",
-      "comentario": "O resumo correto recupera o núcleo de time expressions.",
+      "correta": "Em sintese, as expressoes que ajudam a localizar eventos no passado ou no futuro, como yesterday, last year, tomorrow e next week.",
+      "comentario": "O resumo correto recupera o nucleo de time expressions.",
       "tempoEstimado": 60,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -6990,22 +6991,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Time expressions",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associação entre exemplo e interpretação está correta em Time expressions?",
+      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Time expressions?",
       "opcoes": [
-        "Next month we will visit another city. -> a expressão temporal ajuda a localizar a ação no futuro",
-        "Last year they studied online, but next year they will return to the lab. -> a expressão temporal ajuda a localizar a ação no futuro",
+        "Next month we will visit another city. -> a expressao temporal ajuda a localizar a acao no futuro",
+        "Last year they studied online, but next year they will return to the lab. -> a expressao temporal ajuda a localizar a acao no futuro",
         "They visited the museum yesterday. -> o auxiliar did carrega a marca temporal na pergunta",
-        "Did you study for the test? -> o texto compara dois momentos temporais diferentes com coerência"
+        "Did you study for the test? -> o texto compara dois momentos temporais diferentes com coerencia"
       ],
-      "correta": "Next month we will visit another city. -> a expressão temporal ajuda a localizar a ação no futuro",
-      "comentario": "A associação correta mantém coerência entre exemplo e interpretação em time expressions.",
+      "correta": "Next month we will visit another city. -> a expressao temporal ajuda a localizar a acao no futuro",
+      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em time expressions.",
       "tempoEstimado": 65,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -7029,7 +7030,7 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Time expressions",
       "dificuldadeLabel": "dificil",
@@ -7041,10 +7042,10 @@ export const temposVerbaisPastEFuture = {
         "relacionar marcadores temporais ao tempo verbal adequado",
         "identificar o marcador temporal e conectar com o verbo usado",
         "reconhecer pistas de tempo para interpretar ou escolher a estrutura correta",
-        "o item exige compatibilizar tempo verbal e expressão temporal"
+        "o item exige compatibilizar tempo verbal e expressao temporal"
       ],
       "correta": "relacionar marcadores temporais ao tempo verbal adequado",
-      "comentario": "O objetivo central de time expressions é relacionar marcadores temporais ao tempo verbal adequado.",
+      "comentario": "O objetivo central de time expressions e relacionar marcadores temporais ao tempo verbal adequado.",
       "tempoEstimado": 70,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -7068,22 +7069,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Past and future in context",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Inglês, Past and future in context refere-se a:",
+      "enunciado": "Em Ingles, Past and future in context refere-se a:",
       "opcoes": [
-        "a articulação entre tempos passados e futuros dentro de narrativas, planos ou comparações temporais",
-        "o uso do passado simples para relatar ações concluídas em um momento passado",
+        "a articulacao entre tempos passados e futuros dentro de narrativas, planos ou comparacoes temporais",
+        "o uso do passado simples para relatar acoes concluidas em um momento passado",
         "o uso de did not e did para negar ou formular perguntas no passado simples",
-        "a distinção entre verbos que formam o passado com ed e verbos com formas irregulares"
+        "a distincao entre verbos que formam o passado com ed e verbos com formas irregulares"
       ],
-      "correta": "a articulação entre tempos passados e futuros dentro de narrativas, planos ou comparações temporais",
-      "comentario": "Past and future in context refere-se à articulação entre tempos passados e futuros dentro de narrativas, planos ou comparações temporais.",
+      "correta": "a articulacao entre tempos passados e futuros dentro de narrativas, planos ou comparacoes temporais",
+      "comentario": "Past and future in context refere-se a articulacao entre tempos passados e futuros dentro de narrativas, planos ou comparacoes temporais.",
       "tempoEstimado": 20,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -7107,14 +7108,14 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Past and future in context",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: um texto relata o que os estudantes did last semester and what they will do in the next project. Esse caso está mais ligado a qual subtópico?",
+      "enunciado": "Observe a situacao: um texto relata o que os estudantes did last semester and what they will do in the next project. Esse caso esta mais ligado a qual subtopico?",
       "opcoes": [
         "Past and future in context",
         "Simple Past afirmativo",
@@ -7122,7 +7123,7 @@ export const temposVerbaisPastEFuture = {
         "Regular and irregular verbs"
       ],
       "correta": "Past and future in context",
-      "comentario": "A situação apresentada é melhor compreendida por meio de past and future in context.",
+      "comentario": "A situacao apresentada e melhor compreendida por meio de past and future in context.",
       "tempoEstimado": 20,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -7146,7 +7147,7 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Past and future in context",
       "dificuldadeLabel": "facil",
@@ -7185,22 +7186,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Past and future in context",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO representa corretamente past and future in context?",
+      "enunciado": "Qual alternativa NAO representa corretamente past and future in context?",
       "opcoes": [
         "They visited the museum yesterday.",
         "Last year they studied online, but next year they will return to the lab.",
-        "observar eixo temporal e separar o que já aconteceu do que ainda vai acontecer.",
-        "ler textos que contrastam experiências passadas com expectativas futuras."
+        "observar eixo temporal e separar o que ja aconteceu do que ainda vai acontecer.",
+        "ler textos que contrastam experiencias passadas com expectativas futuras."
       ],
       "correta": "They visited the museum yesterday.",
-      "comentario": "A opção incompatível ilustra outro subtópico, e não past and future in context.",
+      "comentario": "A opcao incompativel ilustra outro subtopico, e nao past and future in context.",
       "tempoEstimado": 25,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -7224,22 +7225,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Past and future in context",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar past and future in context, o foco principal é:",
+      "enunciado": "Ao estudar past and future in context, o foco principal e:",
       "opcoes": [
-        "interpretar relações de anterioridade, sequência e projeção temporal",
-        "reconhecer ações terminadas e marcas temporais do passado",
+        "interpretar relacoes de anterioridade, sequencia e projecao temporal",
+        "reconhecer acoes terminadas e marcas temporais do passado",
         "montar negativas e perguntas corretas com auxiliar did",
-        "reconhecer padrões de formação verbal no passado"
+        "reconhecer padroes de formacao verbal no passado"
       ],
-      "correta": "interpretar relações de anterioridade, sequência e projeção temporal",
-      "comentario": "Past and future in context concentra-se em interpretar relações de anterioridade, sequência e projeção temporal.",
+      "correta": "interpretar relacoes de anterioridade, sequencia e projecao temporal",
+      "comentario": "Past and future in context concentra-se em interpretar relacoes de anterioridade, sequencia e projecao temporal.",
       "tempoEstimado": 30,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -7263,22 +7264,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Past and future in context",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Simple Past afirmativo trata de o uso do passado simples para relatar ações concluídas em um momento passado, Past and future in context destaca:",
+      "enunciado": "Enquanto Simple Past afirmativo trata de o uso do passado simples para relatar acoes concluidas em um momento passado, Past and future in context destaca:",
       "opcoes": [
-        "A articulação entre tempos passados e futuros dentro de narrativas, planos ou comparações temporais.",
-        "O uso do passado simples para relatar ações concluídas em um momento passado.",
+        "A articulacao entre tempos passados e futuros dentro de narrativas, planos ou comparacoes temporais.",
+        "O uso do passado simples para relatar acoes concluidas em um momento passado.",
         "O uso de did not e did para negar ou formular perguntas no passado simples.",
-        "A distinção entre verbos que formam o passado com ed e verbos com formas irregulares."
+        "A distincao entre verbos que formam o passado com ed e verbos com formas irregulares."
       ],
-      "correta": "A articulação entre tempos passados e futuros dentro de narrativas, planos ou comparações temporais.",
-      "comentario": "A comparação correta mostra a especificidade de past and future in context.",
+      "correta": "A articulacao entre tempos passados e futuros dentro de narrativas, planos ou comparacoes temporais.",
+      "comentario": "A comparacao correta mostra a especificidade de past and future in context.",
       "tempoEstimado": 30,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -7302,7 +7303,7 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Past and future in context",
       "dificuldadeLabel": "facil",
@@ -7317,7 +7318,7 @@ export const temposVerbaisPastEFuture = {
         "Past Continuous"
       ],
       "correta": "Past and future in context",
-      "comentario": "Esse tipo de tarefa exige domínio de past and future in context.",
+      "comentario": "Esse tipo de tarefa exige dominio de past and future in context.",
       "tempoEstimado": 35,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -7341,22 +7342,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Past and future in context",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação prática depende mais diretamente de Past and future in context?",
+      "enunciado": "Qual situacao pratica depende mais diretamente de Past and future in context?",
       "opcoes": [
-        "ler textos que contrastam experiências passadas com expectativas futuras",
+        "ler textos que contrastam experiencias passadas com expectativas futuras",
         "interpretar relatos, biografias curtas e rotinas passadas",
         "alternar entre formas afirmativas, negativas e interrogativas no passado",
-        "interpretar interrupções e ações simultâneas no passado"
+        "interpretar interrupcoes e acoes simultaneas no passado"
       ],
-      "correta": "ler textos que contrastam experiências passadas com expectativas futuras",
-      "comentario": "Past and future in context aparece de forma direta em ler textos que contrastam experiências passadas com expectativas futuras.",
+      "correta": "ler textos que contrastam experiencias passadas com expectativas futuras",
+      "comentario": "Past and future in context aparece de forma direta em ler textos que contrastam experiencias passadas com expectativas futuras.",
       "tempoEstimado": 35,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -7380,22 +7381,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Past and future in context",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre past and future in context?",
+      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre past and future in context?",
       "opcoes": [
-        "o caso é resolvido com foco em past and future in context.",
-        "o caso é melhor resolvido por simple Past afirmativo.",
+        "o caso e resolvido com foco em past and future in context.",
+        "o caso e melhor resolvido por simple Past afirmativo.",
         "o caso elimina a necessidade de simple Past negativo e interrogativo.",
         "o caso impede qualquer uso de regular and irregular verbs."
       ],
-      "correta": "o caso é resolvido com foco em past and future in context.",
-      "comentario": "A conclusão correta retoma a função central de past and future in context.",
+      "correta": "o caso e resolvido com foco em past and future in context.",
+      "comentario": "A conclusao correta retoma a funcao central de past and future in context.",
       "tempoEstimado": 40,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -7419,7 +7420,7 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Past and future in context",
       "dificuldadeLabel": "facil",
@@ -7428,12 +7429,12 @@ export const temposVerbaisPastEFuture = {
       "tipo": "multipla_escolha",
       "enunciado": "Se a turma fosse revisar past and future in context, qual pergunta de estudo seria a mais adequada?",
       "opcoes": [
-        "Como past and future in context aparece em ler textos que contrastam experiências passadas com expectativas futuras?",
-        "Como simple Past afirmativo substitui totalmente ler textos que contrastam experiências passadas com expectativas futuras?",
-        "Por que simple Past negativo e interrogativo torna desnecessário estudar Past and future in context?",
+        "Como past and future in context aparece em ler textos que contrastam experiencias passadas com expectativas futuras?",
+        "Como simple Past afirmativo substitui totalmente ler textos que contrastam experiencias passadas com expectativas futuras?",
+        "Por que simple Past negativo e interrogativo torna desnecessario estudar Past and future in context?",
         "De que modo regular and irregular verbs elimina toda leitura de contexto?"
       ],
-      "correta": "Como past and future in context aparece em ler textos que contrastam experiências passadas com expectativas futuras?",
+      "correta": "Como past and future in context aparece em ler textos que contrastam experiencias passadas com expectativas futuras?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de past and future in context.",
       "tempoEstimado": 40,
       "tags": [
@@ -7458,22 +7459,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Past and future in context",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em past and future in context é pensar que:",
+      "enunciado": "Um erro comum em past and future in context e pensar que:",
       "opcoes": [
         "misturar passado e futuro no mesmo texto sempre indica erro gramatical",
         "todo verbo no passado precisa da palavra did junto na frase afirmativa",
-        "em negativas e perguntas o verbo principal também deve continuar no passado",
-        "todos os verbos em inglês fazem o passado apenas com ed"
+        "em negativas e perguntas o verbo principal tambem deve continuar no passado",
+        "todos os verbos em ingles fazem o passado apenas com ed"
       ],
       "correta": "misturar passado e futuro no mesmo texto sempre indica erro gramatical",
-      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de past and future in context.",
+      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de past and future in context.",
       "tempoEstimado": 45,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -7497,22 +7498,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Past and future in context",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"um texto não pode usar past e future juntos sem ficar incoerente\". A avaliação mais adequada é:",
+      "enunciado": "Um estudante afirma: \"um texto nao pode usar past e future juntos sem ficar incoerente\". A avaliacao mais adequada e:",
       "opcoes": [
-        "A afirmação está incorreta, porque a articulação entre tempos passados e futuros dentro de narrativas, planos ou comparações temporais.",
-        "A afirmação está correta, pois resume integralmente past and future in context.",
-        "A afirmação está correta, porque basta decorar a tradução do exemplo.",
-        "A afirmação está incorreta apenas por não citar uma regra gramatical."
+        "A afirmacao esta incorreta, porque a articulacao entre tempos passados e futuros dentro de narrativas, planos ou comparacoes temporais.",
+        "A afirmacao esta correta, pois resume integralmente past and future in context.",
+        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
+        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
       ],
-      "correta": "A afirmação está incorreta, porque a articulação entre tempos passados e futuros dentro de narrativas, planos ou comparações temporais.",
-      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre past and future in context.",
+      "correta": "A afirmacao esta incorreta, porque a articulacao entre tempos passados e futuros dentro de narrativas, planos ou comparacoes temporais.",
+      "comentario": "A fala do estudante apresenta um equivoco conceitual sobre past and future in context.",
       "tempoEstimado": 45,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -7536,22 +7537,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Past and future in context",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se past and future in context fosse ignorado(a) em ler textos que contrastam experiências passadas com expectativas futuras, o resultado mais provável seria:",
+      "enunciado": "Se past and future in context fosse ignorado(a) em ler textos que contrastam experiencias passadas com expectativas futuras, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretação ficaria incompleta e aumentaria a chance de erro em ler textos que contrastam experiências passadas com expectativas futuras.",
-        "a questão seria resolvida automaticamente por simple Past afirmativo.",
-        "nenhuma interpretação seria alterada, porque Past and future in context não interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
+        "a interpretacao ficaria incompleta e aumentaria a chance de erro em ler textos que contrastam experiencias passadas com expectativas futuras.",
+        "a questao seria resolvida automaticamente por simple Past afirmativo.",
+        "nenhuma interpretacao seria alterada, porque Past and future in context nao interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
       ],
-      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em ler textos que contrastam experiências passadas com expectativas futuras.",
-      "comentario": "Ignorar past and future in context compromete a resolução correta da atividade.",
+      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em ler textos que contrastam experiencias passadas com expectativas futuras.",
+      "comentario": "Ignorar past and future in context compromete a resolucao correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -7575,14 +7576,14 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Past and future in context",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou ação ilustra melhor Past and future in context?",
+      "enunciado": "Qual trecho ou acao ilustra melhor Past and future in context?",
       "opcoes": [
         "Last year they studied online, but next year they will return to the lab.",
         "They visited the museum yesterday.",
@@ -7590,7 +7591,7 @@ export const temposVerbaisPastEFuture = {
         "She played soccer and then went home."
       ],
       "correta": "Last year they studied online, but next year they will return to the lab.",
-      "comentario": "O item correto é o que melhor exemplifica past and future in context.",
+      "comentario": "O item correto e o que melhor exemplifica past and future in context.",
       "tempoEstimado": 50,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -7614,21 +7615,21 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Past and future in context",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao encontrar o exemplo \"Last year they studied online, but next year they will return to the lab.\", a leitura mais adequada é:",
+      "enunciado": "Ao encontrar o exemplo \"Last year they studied online, but next year they will return to the lab.\", a leitura mais adequada e:",
       "opcoes": [
-        "o texto compara dois momentos temporais diferentes com coerência",
-        "a frase expressa uma ação concluída no passado",
+        "o texto compara dois momentos temporais diferentes com coerencia",
+        "a frase expressa uma acao concluida no passado",
         "o auxiliar did carrega a marca temporal na pergunta",
         "o exemplo mostra verbo regular e irregular no passado"
       ],
-      "correta": "o texto compara dois momentos temporais diferentes com coerência",
+      "correta": "o texto compara dois momentos temporais diferentes com coerencia",
       "comentario": "A leitura correta do exemplo revela o papel de past and future in context.",
       "tempoEstimado": 55,
       "tags": [
@@ -7653,22 +7654,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Past and future in context",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estratégia ajuda mais a estudar past and future in context?",
+      "enunciado": "Qual estrategia ajuda mais a estudar past and future in context?",
       "opcoes": [
-        "observar eixo temporal e separar o que já aconteceu do que ainda vai acontecer",
+        "observar eixo temporal e separar o que ja aconteceu do que ainda vai acontecer",
         "observar verbos no passado e marcadores como yesterday, last week e ago",
         "usar did ou did not e manter o verbo principal na forma base",
         "separar verbos regulares de irregulares e observar a forma correta"
       ],
-      "correta": "observar eixo temporal e separar o que já aconteceu do que ainda vai acontecer",
-      "comentario": "A estratégia correta fortalece o domínio de past and future in context.",
+      "correta": "observar eixo temporal e separar o que ja aconteceu do que ainda vai acontecer",
+      "comentario": "A estrategia correta fortalece o dominio de past and future in context.",
       "tempoEstimado": 55,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -7692,22 +7693,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Past and future in context",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Past and future in context é mais cobrado quando:",
+      "enunciado": "Em uma prova, Past and future in context e mais cobrado quando:",
       "opcoes": [
-        "a pergunta pede interpretar contraste ou sequência entre passado e futuro",
+        "a pergunta pede interpretar contraste ou sequencia entre passado e futuro",
         "o item pede reconhecer ou completar frases afirmativas no simple past",
-        "a questão exige transformação estrutural no simple past",
-        "o item cobra identificação ou uso de formas verbais passadas"
+        "a questao exige transformacao estrutural no simple past",
+        "o item cobra identificacao ou uso de formas verbais passadas"
       ],
-      "correta": "a pergunta pede interpretar contraste ou sequência entre passado e futuro",
-      "comentario": "Esse é o tipo de demanda em que past and future in context aparece com mais frequência.",
+      "correta": "a pergunta pede interpretar contraste ou sequencia entre passado e futuro",
+      "comentario": "Esse e o tipo de demanda em que past and future in context aparece com mais frequencia.",
       "tempoEstimado": 60,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -7731,7 +7732,7 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Past and future in context",
       "dificuldadeLabel": "dificil",
@@ -7740,13 +7741,13 @@ export const temposVerbaisPastEFuture = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual resumo sintetiza melhor a ideia de Past and future in context?",
       "opcoes": [
-        "Em síntese, a articulação entre tempos passados e futuros dentro de narrativas, planos ou comparações temporais.",
-        "Em síntese, o uso do passado simples para relatar ações concluídas em um momento passado.",
-        "Em síntese, o uso de did not e did para negar ou formular perguntas no passado simples.",
-        "Em síntese, a distinção entre verbos que formam o passado com ed e verbos com formas irregulares."
+        "Em sintese, a articulacao entre tempos passados e futuros dentro de narrativas, planos ou comparacoes temporais.",
+        "Em sintese, o uso do passado simples para relatar acoes concluidas em um momento passado.",
+        "Em sintese, o uso de did not e did para negar ou formular perguntas no passado simples.",
+        "Em sintese, a distincao entre verbos que formam o passado com ed e verbos com formas irregulares."
       ],
-      "correta": "Em síntese, a articulação entre tempos passados e futuros dentro de narrativas, planos ou comparações temporais.",
-      "comentario": "O resumo correto recupera o núcleo de past and future in context.",
+      "correta": "Em sintese, a articulacao entre tempos passados e futuros dentro de narrativas, planos ou comparacoes temporais.",
+      "comentario": "O resumo correto recupera o nucleo de past and future in context.",
       "tempoEstimado": 60,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -7770,22 +7771,22 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Past and future in context",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associação entre exemplo e interpretação está correta em Past and future in context?",
+      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Past and future in context?",
       "opcoes": [
-        "Last year they studied online, but next year they will return to the lab. -> o texto compara dois momentos temporais diferentes com coerência",
-        "They visited the museum yesterday. -> o texto compara dois momentos temporais diferentes com coerência",
+        "Last year they studied online, but next year they will return to the lab. -> o texto compara dois momentos temporais diferentes com coerencia",
+        "They visited the museum yesterday. -> o texto compara dois momentos temporais diferentes com coerencia",
         "Did you study for the test? -> o exemplo mostra verbo regular e irregular no passado",
-        "She played soccer and then went home. -> a frase expressa uma ação concluída no passado"
+        "She played soccer and then went home. -> a frase expressa uma acao concluida no passado"
       ],
-      "correta": "Last year they studied online, but next year they will return to the lab. -> o texto compara dois momentos temporais diferentes com coerência",
-      "comentario": "A associação correta mantém coerência entre exemplo e interpretação em past and future in context.",
+      "correta": "Last year they studied online, but next year they will return to the lab. -> o texto compara dois momentos temporais diferentes com coerencia",
+      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em past and future in context.",
       "tempoEstimado": 65,
       "tags": [
         "tempos-verbais-past-e-future",
@@ -7809,7 +7810,7 @@ export const temposVerbaisPastEFuture = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
+      "materia": "Ingles",
       "topico": "Tempos Verbais: Past e Future",
       "subtopico": "Past and future in context",
       "dificuldadeLabel": "dificil",
@@ -7818,13 +7819,13 @@ export const temposVerbaisPastEFuture = {
       "tipo": "multipla_escolha",
       "enunciado": "Ao resolver uma atividade sobre past and future in context, o estudante deve principalmente:",
       "opcoes": [
-        "interpretar relações de anterioridade, sequência e projeção temporal",
-        "observar eixo temporal e separar o que já aconteceu do que ainda vai acontecer",
-        "ler textos que contrastam experiências passadas com expectativas futuras",
-        "a pergunta pede interpretar contraste ou sequência entre passado e futuro"
+        "interpretar relacoes de anterioridade, sequencia e projecao temporal",
+        "observar eixo temporal e separar o que ja aconteceu do que ainda vai acontecer",
+        "ler textos que contrastam experiencias passadas com expectativas futuras",
+        "a pergunta pede interpretar contraste ou sequencia entre passado e futuro"
       ],
-      "correta": "interpretar relações de anterioridade, sequência e projeção temporal",
-      "comentario": "O objetivo central de past and future in context é interpretar relações de anterioridade, sequência e projeção temporal.",
+      "correta": "interpretar relacoes de anterioridade, sequencia e projecao temporal",
+      "comentario": "O objetivo central de past and future in context e interpretar relacoes de anterioridade, sequencia e projecao temporal.",
       "tempoEstimado": 70,
       "tags": [
         "tempos-verbais-past-e-future",

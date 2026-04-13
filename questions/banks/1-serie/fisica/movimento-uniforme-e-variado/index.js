@@ -1,6 +1,6 @@
-export const movimentoUniformeEVariado = {
+﻿export const movimentoUniformeEVariado = {
   "id": "fisica_movimento_uniforme_e_variado",
-  "materia": "Física",
+  "materia": "F�sica",
   "serie": [
     1
   ],
@@ -8,38 +8,39 @@ export const movimentoUniformeEVariado = {
   "metadados": {
     "disciplinaId": "fisica",
     "base": "ESCOLAR",
-    "eixo": "Modelagem e aplicações da cinemática",
-    "frente": "Equações, gráficos e problemas de movimento uniforme e variado",
+    "seloEditorial": "VERIFICADA",
+    "eixo": "Modelagem e aplica��es da cinem�tica",
+    "frente": "Equa��es, gr�ficos e problemas de movimento uniforme e variado",
     "searchAliases": [
       "movimento uniforme",
       "movimento variado",
-      "função horária",
+      "fun��o hor�ria",
       "torricelli",
       "queda livre",
-      "encontro de móveis"
+      "encontro de m�veis"
     ],
     "subtopicosBase": [
-      "Função horária do espaço no MRU",
+      "Fun��o hor�ria do espa�o no MRU",
       "Velocidade no movimento uniforme",
-      "Aceleração no movimento variado",
-      "Função horária da velocidade no MRUV",
-      "Função horária da posição no MRUV",
-      "Equação de Torricelli",
-      "Gráficos do movimento uniforme",
-      "Gráficos do movimento uniformemente variado",
-      "Encontro e ultrapassagem de móveis",
-      "Queda livre e lançamento vertical"
+      "Acelera��o no movimento variado",
+      "Fun��o hor�ria da velocidade no MRUV",
+      "Fun��o hor�ria da posi��o no MRUV",
+      "Equa��o de Torricelli",
+      "Gr�ficos do movimento uniforme",
+      "Gr�ficos do movimento uniformemente variado",
+      "Encontro e ultrapassagem de m�veis",
+      "Queda livre e lan�amento vertical"
     ],
     "habilidadesBase": [
-      "aplicar equações horárias do MRU e do MRUV",
-      "interpretar gráficos de posição, velocidade e aceleração",
+      "aplicar equa��es hor�rias do MRU e do MRUV",
+      "interpretar gr�ficos de posi��o, velocidade e acelera��o",
       "resolver problemas de encontro e ultrapassagem",
       "relacionar queda livre ao movimento uniformemente variado",
-      "usar a equação de Torricelli em situações físicas",
-      "comparar leituras algébricas e gráficas do movimento"
+      "usar a equa��o de Torricelli em situa��es f�sicas",
+      "comparar leituras alg�bricas e gr�ficas do movimento"
     ],
     "auditado": true,
-    "auditadoEm": "2026-04-11",
+    "auditadoEm": "2026-04-12",
     "auditoriaTipo": "varredura-mais-profunda"
   },
   "questoes": [
@@ -48,22 +49,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Função horária do espaço no MRU",
+      "subtopico": "Fun��o hor�ria do espa�o no MRU",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Física, Função horária do espaço no MRU pode ser definido(a) como:",
+      "enunciado": "Em F�sica, Fun��o hor�ria do espa�o no MRU pode ser definido(a) como:",
       "opcoes": [
-        "a equação que fornece a posição do móvel em função do tempo no movimento uniforme",
-        "a grandeza constante que indica a variação da posição por unidade de tempo no MRU",
+        "a equa��o que fornece a posi��o do m�vel em fun��o do tempo no movimento uniforme",
+        "a grandeza constante que indica a varia��o da posi��o por unidade de tempo no MRU",
         "a grandeza que indica como a velocidade se altera ao longo do tempo em um movimento variado",
-        "a equação que fornece a velocidade do móvel em função do tempo em um movimento uniformemente variado"
+        "a equa��o que fornece a velocidade do m�vel em fun��o do tempo em um movimento uniformemente variado"
       ],
-      "correta": "a equação que fornece a posição do móvel em função do tempo no movimento uniforme",
-      "comentario": "Função horária do espaço no MRU refere-se à equação que fornece a posição do móvel em função do tempo no movimento uniforme.",
+      "correta": "a equa��o que fornece a posi��o do m�vel em fun��o do tempo no movimento uniforme",
+      "comentario": "Fun��o hor�ria do espa�o no MRU refere-se � equa��o que fornece a posi��o do m�vel em fun��o do tempo no movimento uniforme.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -87,22 +88,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Função horária do espaço no MRU",
+      "subtopico": "Fun��o hor�ria do espa�o no MRU",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: um carrinho parte da posição 10 metros e se move com velocidade constante de 2 metros por segundo Esse caso exemplifica melhor qual subtópico?",
+      "enunciado": "Observe a situa��o: um carrinho parte da posi��o 10 metros e se move com velocidade constante de 2 metros por segundo Esse caso exemplifica melhor qual subt�pico?",
       "opcoes": [
-        "Função horária do espaço no MRU",
+        "Fun��o hor�ria do espa�o no MRU",
         "Velocidade no movimento uniforme",
-        "Aceleração no movimento variado",
-        "Função horária da velocidade no MRUV"
+        "Acelera��o no movimento variado",
+        "Fun��o hor�ria da velocidade no MRUV"
       ],
-      "correta": "Função horária do espaço no MRU",
-      "comentario": "A situação apresentada é um exemplo de função horária do espaço no MRU.",
+      "correta": "Fun��o hor�ria do espa�o no MRU",
+      "comentario": "A situa��o apresentada � um exemplo de fun��o hor�ria do espa�o no MRU.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -126,22 +127,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Função horária do espaço no MRU",
+      "subtopico": "Fun��o hor�ria do espa�o no MRU",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmação descreve corretamente função horária do espaço no MRU?",
+      "enunciado": "Qual afirma��o descreve corretamente fun��o hor�ria do espa�o no MRU?",
       "opcoes": [
-        "A equação que fornece a posição do móvel em função do tempo no movimento uniforme.",
-        "A grandeza constante que indica a variação da posição por unidade de tempo no MRU.",
+        "A equa��o que fornece a posi��o do m�vel em fun��o do tempo no movimento uniforme.",
+        "A grandeza constante que indica a varia��o da posi��o por unidade de tempo no MRU.",
         "A grandeza que indica como a velocidade se altera ao longo do tempo em um movimento variado.",
-        "A equação que fornece a velocidade do móvel em função do tempo em um movimento uniformemente variado."
+        "A equa��o que fornece a velocidade do m�vel em fun��o do tempo em um movimento uniformemente variado."
       ],
-      "correta": "A equação que fornece a posição do móvel em função do tempo no movimento uniforme.",
-      "comentario": "A afirmação correta retoma o sentido central de função horária do espaço no MRU.",
+      "correta": "A equa��o que fornece a posi��o do m�vel em fun��o do tempo no movimento uniforme.",
+      "comentario": "A afirma��o correta retoma o sentido central de fun��o hor�ria do espa�o no MRU.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -165,22 +166,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Função horária do espaço no MRU",
+      "subtopico": "Fun��o hor�ria do espa�o no MRU",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa incompatível com função horária do espaço no MRU.",
+      "enunciado": "Assinale a alternativa incompat�vel com fun��o hor�ria do espa�o no MRU.",
       "opcoes": [
-        "tratar a função horária do MRU como se dependesse de aceleração variável.",
-        "a previsão da posição ao longo do tempo em um movimento de velocidade constante.",
-        "a função horária do MRU relaciona posição inicial, velocidade constante e tempo para determinar a posição do móvel.",
-        "a equação que fornece a posição do móvel em função do tempo no movimento uniforme."
+        "tratar a fun��o hor�ria do MRU como se dependesse de acelera��o vari�vel.",
+        "a previs�o da posi��o ao longo do tempo em um movimento de velocidade constante.",
+        "a fun��o hor�ria do MRU relaciona posi��o inicial, velocidade constante e tempo para determinar a posi��o do m�vel.",
+        "a equa��o que fornece a posi��o do m�vel em fun��o do tempo no movimento uniforme."
       ],
-      "correta": "tratar a função horária do MRU como se dependesse de aceleração variável.",
-      "comentario": "Tratar a função horária do MRU como se dependesse de aceleração variável não representa função horária do espaço no MRU, enquanto as demais alternativas se relacionam com esse subtópico.",
+      "correta": "tratar a fun��o hor�ria do MRU como se dependesse de acelera��o vari�vel.",
+      "comentario": "Tratar a fun��o hor�ria do MRU como se dependesse de acelera��o vari�vel n�o representa fun��o hor�ria do espa�o no MRU, enquanto as demais alternativas se relacionam com esse subt�pico.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -204,22 +205,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Função horária do espaço no MRU",
+      "subtopico": "Fun��o hor�ria do espa�o no MRU",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando se estuda função horária do espaço no MRU, o foco principal está em:",
+      "enunciado": "Quando se estuda fun��o hor�ria do espa�o no MRU, o foco principal est� em:",
       "opcoes": [
-        "a previsão da posição ao longo do tempo em um movimento de velocidade constante",
-        "a constância da taxa de variação da posição no movimento uniforme",
-        "a descrição da variação da velocidade ao longo do tempo no movimento variado",
-        "a determinação da velocidade em qualquer instante quando a aceleração é constante"
+        "a previs�o da posi��o ao longo do tempo em um movimento de velocidade constante",
+        "a const�ncia da taxa de varia��o da posi��o no movimento uniforme",
+        "a descri��o da varia��o da velocidade ao longo do tempo no movimento variado",
+        "a determina��o da velocidade em qualquer instante quando a acelera��o � constante"
       ],
-      "correta": "a previsão da posição ao longo do tempo em um movimento de velocidade constante",
-      "comentario": "Função horária do espaço no MRU volta a atenção para a previsão da posição ao longo do tempo em um movimento de velocidade constante.",
+      "correta": "a previs�o da posi��o ao longo do tempo em um movimento de velocidade constante",
+      "comentario": "Fun��o hor�ria do espa�o no MRU volta a aten��o para a previs�o da posi��o ao longo do tempo em um movimento de velocidade constante.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -243,22 +244,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Função horária do espaço no MRU",
+      "subtopico": "Fun��o hor�ria do espa�o no MRU",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferença entre função horária do espaço no MRU e velocidade no movimento uniforme é que:",
+      "enunciado": "A principal diferen�a entre fun��o hor�ria do espa�o no MRU e velocidade no movimento uniforme � que:",
       "opcoes": [
-        "função horária do espaço no MRU permite calcular a posição em qualquer instante, enquanto velocidade no movimento uniforme destaca a constância da taxa de variação da posição",
-        "Função horária do espaço no MRU e Velocidade no movimento uniforme são exatamente a mesma ideia física em qualquer situação.",
-        "Velocidade no movimento uniforme elimina a necessidade de observar função horária do espaço no MRU.",
-        "Função horária do espaço no MRU depende apenas de opinião pessoal, sem relação com grandezas, modelos ou medidas."
+        "fun��o hor�ria do espa�o no MRU permite calcular a posi��o em qualquer instante, enquanto velocidade no movimento uniforme destaca a const�ncia da taxa de varia��o da posi��o",
+        "Fun��o hor�ria do espa�o no MRU e Velocidade no movimento uniforme s�o exatamente a mesma ideia f�sica em qualquer situa��o.",
+        "Velocidade no movimento uniforme elimina a necessidade de observar fun��o hor�ria do espa�o no MRU.",
+        "Fun��o hor�ria do espa�o no MRU depende apenas de opini�o pessoal, sem rela��o com grandezas, modelos ou medidas."
       ],
-      "correta": "função horária do espaço no MRU permite calcular a posição em qualquer instante, enquanto velocidade no movimento uniforme destaca a constância da taxa de variação da posição",
-      "comentario": "A comparação correta distingue os dois subtópicos sem confundir seus objetos de estudo.",
+      "correta": "fun��o hor�ria do espa�o no MRU permite calcular a posi��o em qualquer instante, enquanto velocidade no movimento uniforme destaca a const�ncia da taxa de varia��o da posi��o",
+      "comentario": "A compara��o correta distingue os dois subt�picos sem confundir seus objetos de estudo.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -282,22 +283,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Função horária do espaço no MRU",
+      "subtopico": "Fun��o hor�ria do espa�o no MRU",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma observação experimental, registrou-se o seguinte caso: um carrinho parte da posição 10 metros e se move com velocidade constante de 2 metros por segundo A leitura física mais adequada aponta para:",
+      "enunciado": "Em uma observa��o experimental, registrou-se o seguinte caso: um carrinho parte da posi��o 10 metros e se move com velocidade constante de 2 metros por segundo A leitura f�sica mais adequada aponta para:",
       "opcoes": [
-        "o caso mostra que a posição do móvel em MRU pode ser prevista por uma relação linear com o tempo",
-        "Função horária do espaço no MRU mostra que as grandezas envolvidas não precisam ser relacionadas para interpretar o caso.",
-        "Função horária do espaço no MRU prova que a situação dispensa qualquer leitura física ou quantitativa.",
-        "Função horária do espaço no MRU significa que o fenômeno não pode ser descrito por variáveis físicas."
+        "o caso mostra que a posi��o do m�vel em MRU pode ser prevista por uma rela��o linear com o tempo",
+        "Fun��o hor�ria do espa�o no MRU mostra que as grandezas envolvidas n�o precisam ser relacionadas para interpretar o caso.",
+        "Fun��o hor�ria do espa�o no MRU prova que a situa��o dispensa qualquer leitura f�sica ou quantitativa.",
+        "Fun��o hor�ria do espa�o no MRU significa que o fen�meno n�o pode ser descrito por vari�veis f�sicas."
       ],
-      "correta": "o caso mostra que a posição do móvel em MRU pode ser prevista por uma relação linear com o tempo",
-      "comentario": "Função horária do espaço no MRU permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
+      "correta": "o caso mostra que a posi��o do m�vel em MRU pode ser prevista por uma rela��o linear com o tempo",
+      "comentario": "Fun��o hor�ria do espa�o no MRU permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -321,22 +322,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Função horária do espaço no MRU",
+      "subtopico": "Fun��o hor�ria do espa�o no MRU",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação abaixo evidencia função horária do espaço no MRU de maneira mais clara?",
+      "enunciado": "Qual situa��o abaixo evidencia fun��o hor�ria do espa�o no MRU de maneira mais clara?",
       "opcoes": [
-        "calcular onde um estudante em patins estará após alguns segundos mantendo velocidade constante",
-        "analisar o deslocamento regular de uma esteira ou escada rolante em funcionamento contínuo",
-        "avaliar a variação de velocidade de uma bicicleta durante uma arrancada",
+        "calcular onde um estudante em patins estar� ap�s alguns segundos mantendo velocidade constante",
+        "analisar o deslocamento regular de uma esteira ou escada rolante em funcionamento cont�nuo",
+        "avaliar a varia��o de velocidade de uma bicicleta durante uma arrancada",
         "estimar a velocidade de um corredor que acelera regularmente ao sair da linha de partida"
       ],
-      "correta": "calcular onde um estudante em patins estará após alguns segundos mantendo velocidade constante",
-      "comentario": "A alternativa correta aproxima função horária do espaço no MRU de uma situação concreta.",
+      "correta": "calcular onde um estudante em patins estar� ap�s alguns segundos mantendo velocidade constante",
+      "comentario": "A alternativa correta aproxima fun��o hor�ria do espa�o no MRU de uma situa��o concreta.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -360,22 +361,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Função horária do espaço no MRU",
+      "subtopico": "Fun��o hor�ria do espa�o no MRU",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"um carrinho parte da posição 10 metros e se move com velocidade constante de 2 metros por segundo\", qual conclusão é mais adequada?",
+      "enunciado": "Ao analisar o caso \"um carrinho parte da posi��o 10 metros e se move com velocidade constante de 2 metros por segundo\", qual conclus�o � mais adequada?",
       "opcoes": [
-        "o caso mostra que a posição do móvel em MRU pode ser prevista por uma relação linear com o tempo",
-        "A situação indica que função horária do espaço no MRU não possui relação com medidas, variáveis ou interpretação física.",
-        "A situação prova que função horária do espaço no MRU só existe em exemplos teóricos sem uso cotidiano.",
-        "A situação mostra que função horária do espaço no MRU torna desnecessário comparar dados e modelos."
+        "o caso mostra que a posi��o do m�vel em MRU pode ser prevista por uma rela��o linear com o tempo",
+        "A situa��o indica que fun��o hor�ria do espa�o no MRU n�o possui rela��o com medidas, vari�veis ou interpreta��o f�sica.",
+        "A situa��o prova que fun��o hor�ria do espa�o no MRU s� existe em exemplos te�ricos sem uso cotidiano.",
+        "A situa��o mostra que fun��o hor�ria do espa�o no MRU torna desnecess�rio comparar dados e modelos."
       ],
-      "correta": "o caso mostra que a posição do móvel em MRU pode ser prevista por uma relação linear com o tempo",
-      "comentario": "A conclusão correta mantém coerência com os dados apresentados e com função horária do espaço no MRU.",
+      "correta": "o caso mostra que a posi��o do m�vel em MRU pode ser prevista por uma rela��o linear com o tempo",
+      "comentario": "A conclus�o correta mant�m coer�ncia com os dados apresentados e com fun��o hor�ria do espa�o no MRU.",
       "tempoEstimado": 35,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -399,22 +400,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Função horária do espaço no MRU",
+      "subtopico": "Fun��o hor�ria do espa�o no MRU",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com função horária do espaço no MRU?",
+      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com fun��o hor�ria do espa�o no MRU?",
       "opcoes": [
-        "como a equação do MRU permite prever a posição de um móvel em qualquer instante?",
-        "como reconhecer a velocidade constante característica de um movimento uniforme?",
-        "como a aceleração permite descrever a variação da velocidade em um movimento?",
-        "como calcular a velocidade de um móvel em MRUV depois de certo intervalo de tempo?"
+        "como a equa��o do MRU permite prever a posi��o de um m�vel em qualquer instante?",
+        "como reconhecer a velocidade constante caracter�stica de um movimento uniforme?",
+        "como a acelera��o permite descrever a varia��o da velocidade em um movimento?",
+        "como calcular a velocidade de um m�vel em MRUV depois de certo intervalo de tempo?"
       ],
-      "correta": "como a equação do MRU permite prever a posição de um móvel em qualquer instante?",
-      "comentario": "A pergunta correta investiga função horária do espaço no MRU de forma direta e coerente.",
+      "correta": "como a equa��o do MRU permite prever a posi��o de um m�vel em qualquer instante?",
+      "comentario": "A pergunta correta investiga fun��o hor�ria do espa�o no MRU de forma direta e coerente.",
       "tempoEstimado": 35,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -438,22 +439,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Função horária do espaço no MRU",
+      "subtopico": "Fun��o hor�ria do espa�o no MRU",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a afirmação que revela compreensão inadequada de função horária do espaço no MRU.",
+      "enunciado": "Assinale a afirma��o que revela compreens�o inadequada de fun��o hor�ria do espa�o no MRU.",
       "opcoes": [
-        "A equação que fornece a posição do móvel em função do tempo no movimento uniforme.",
-        "A previsão da posição ao longo do tempo em um movimento de velocidade constante.",
-        "A função horária do MRU relaciona posição inicial, velocidade constante e tempo para determinar a posição do móvel.",
-        "No MRU, a posição do móvel não muda com o tempo porque a velocidade é constante."
+        "A equa��o que fornece a posi��o do m�vel em fun��o do tempo no movimento uniforme.",
+        "A previs�o da posi��o ao longo do tempo em um movimento de velocidade constante.",
+        "A fun��o hor�ria do MRU relaciona posi��o inicial, velocidade constante e tempo para determinar a posi��o do m�vel.",
+        "No MRU, a posi��o do m�vel n�o muda com o tempo porque a velocidade � constante."
       ],
-      "correta": "No MRU, a posição do móvel não muda com o tempo porque a velocidade é constante.",
-      "comentario": "A alternativa incorreta expressa um equívoco comum sobre função horária do espaço no MRU.",
+      "correta": "No MRU, a posi��o do m�vel n�o muda com o tempo porque a velocidade � constante.",
+      "comentario": "A alternativa incorreta expressa um equ�voco comum sobre fun��o hor�ria do espa�o no MRU.",
       "tempoEstimado": 45,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -477,22 +478,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Função horária do espaço no MRU",
+      "subtopico": "Fun��o hor�ria do espa�o no MRU",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre Física, um estudante afirmou: \"no MRU, a posição pode ser calculada pela soma da posição inicial com o produto entre velocidade e tempo\". Qual avaliação é mais consistente?",
+      "enunciado": "Em um debate sobre F�sica, um estudante afirmou: \"no MRU, a posi��o pode ser calculada pela soma da posi��o inicial com o produto entre velocidade e tempo\". Qual avalia��o � mais consistente?",
       "opcoes": [
-        "A afirmação está correta, porque a função horária do MRU relaciona linearmente posição, velocidade constante e tempo",
-        "A afirmação está incorreta, porque função horária do espaço no MRU nunca pode ser usada na Física escolar.",
-        "A afirmação é irrelevante, porque função horária do espaço no MRU não se relaciona com interpretação de fenômenos.",
-        "A afirmação está incorreta, porque função horária do espaço no MRU elimina a necessidade de medir e comparar grandezas."
+        "A afirma��o est� correta, porque a fun��o hor�ria do MRU relaciona linearmente posi��o, velocidade constante e tempo",
+        "A afirma��o est� incorreta, porque fun��o hor�ria do espa�o no MRU nunca pode ser usada na F�sica escolar.",
+        "A afirma��o � irrelevante, porque fun��o hor�ria do espa�o no MRU n�o se relaciona com interpreta��o de fen�menos.",
+        "A afirma��o est� incorreta, porque fun��o hor�ria do espa�o no MRU elimina a necessidade de medir e comparar grandezas."
       ],
-      "correta": "A afirmação está correta, porque a função horária do MRU relaciona linearmente posição, velocidade constante e tempo",
-      "comentario": "A avaliação correta recupera o núcleo conceitual de função horária do espaço no MRU.",
+      "correta": "A afirma��o est� correta, porque a fun��o hor�ria do MRU relaciona linearmente posi��o, velocidade constante e tempo",
+      "comentario": "A avalia��o correta recupera o n�cleo conceitual de fun��o hor�ria do espa�o no MRU.",
       "tempoEstimado": 45,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -516,22 +517,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Função horária do espaço no MRU",
+      "subtopico": "Fun��o hor�ria do espa�o no MRU",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se função horária do espaço no MRU fosse ignorado(a) na análise de um problema físico, o resultado mais provável seria:",
+      "enunciado": "Se fun��o hor�ria do espa�o no MRU fosse ignorado(a) na an�lise de um problema f�sico, o resultado mais prov�vel seria:",
       "opcoes": [
-        "ficaria impossível determinar a posição do móvel em instantes diferentes sem reconstruir todo o percurso",
-        "o problema continuaria exatamente igual, porque função horária do espaço no MRU não interfere na análise física",
-        "seria possível resolver a situação sem observar nenhuma grandeza, relação ou modelo",
-        "a interpretação ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
+        "ficaria imposs�vel determinar a posi��o do m�vel em instantes diferentes sem reconstruir todo o percurso",
+        "o problema continuaria exatamente igual, porque fun��o hor�ria do espa�o no MRU n�o interfere na an�lise f�sica",
+        "seria poss�vel resolver a situa��o sem observar nenhuma grandeza, rela��o ou modelo",
+        "a interpreta��o ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
       ],
-      "correta": "ficaria impossível determinar a posição do móvel em instantes diferentes sem reconstruir todo o percurso",
-      "comentario": "Ignorar função horária do espaço no MRU compromete a leitura física e a qualidade da solução.",
+      "correta": "ficaria imposs�vel determinar a posi��o do m�vel em instantes diferentes sem reconstruir todo o percurso",
+      "comentario": "Ignorar fun��o hor�ria do espa�o no MRU compromete a leitura f�sica e a qualidade da solu��o.",
       "tempoEstimado": 55,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -555,22 +556,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Função horária do espaço no MRU",
+      "subtopico": "Fun��o hor�ria do espa�o no MRU",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente função horária do espaço no MRU a uma situação escolar ou cotidiana?",
+      "enunciado": "Qual alternativa aplica corretamente fun��o hor�ria do espa�o no MRU a uma situa��o escolar ou cotidiana?",
       "opcoes": [
-        "calcular onde um estudante em patins estará após alguns segundos mantendo velocidade constante",
-        "estimar o comportamento de uma bola lançada para cima no pátio da escola",
-        "calcular quando um corredor alcança outro em uma prova com velocidades diferentes",
-        "ler o gráfico de velocidade de um móvel que acelera regularmente em laboratório"
+        "calcular onde um estudante em patins estar� ap�s alguns segundos mantendo velocidade constante",
+        "estimar o comportamento de uma bola lan�ada para cima no p�tio da escola",
+        "calcular quando um corredor alcan�a outro em uma prova com velocidades diferentes",
+        "ler o gr�fico de velocidade de um m�vel que acelera regularmente em laborat�rio"
       ],
-      "correta": "calcular onde um estudante em patins estará após alguns segundos mantendo velocidade constante",
-      "comentario": "A aplicação correta mostra como função horária do espaço no MRU aparece em contextos próximos do cotidiano.",
+      "correta": "calcular onde um estudante em patins estar� ap�s alguns segundos mantendo velocidade constante",
+      "comentario": "A aplica��o correta mostra como fun��o hor�ria do espa�o no MRU aparece em contextos pr�ximos do cotidiano.",
       "tempoEstimado": 55,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -594,22 +595,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Função horária do espaço no MRU",
+      "subtopico": "Fun��o hor�ria do espa�o no MRU",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual síntese final representa melhor função horária do espaço no MRU?",
+      "enunciado": "Qual s�ntese final representa melhor fun��o hor�ria do espa�o no MRU?",
       "opcoes": [
-        "a função horária do MRU relaciona posição inicial, velocidade constante e tempo para determinar a posição do móvel",
-        "no movimento uniforme, a velocidade permanece constante e a posição varia regularmente com o tempo",
-        "a aceleração descreve como a velocidade varia ao longo do tempo em um movimento variado",
-        "a função horária da velocidade no MRUV relaciona velocidade inicial, aceleração constante e tempo"
+        "a fun��o hor�ria do MRU relaciona posi��o inicial, velocidade constante e tempo para determinar a posi��o do m�vel",
+        "no movimento uniforme, a velocidade permanece constante e a posi��o varia regularmente com o tempo",
+        "a acelera��o descreve como a velocidade varia ao longo do tempo em um movimento variado",
+        "a fun��o hor�ria da velocidade no MRUV relaciona velocidade inicial, acelera��o constante e tempo"
       ],
-      "correta": "a função horária do MRU relaciona posição inicial, velocidade constante e tempo para determinar a posição do móvel",
-      "comentario": "A síntese correta preserva a definição, o foco e o uso analítico de função horária do espaço no MRU.",
+      "correta": "a fun��o hor�ria do MRU relaciona posi��o inicial, velocidade constante e tempo para determinar a posi��o do m�vel",
+      "comentario": "A s�ntese correta preserva a defini��o, o foco e o uso anal�tico de fun��o hor�ria do espa�o no MRU.",
       "tempoEstimado": 55,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -633,22 +634,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
       "subtopico": "Velocidade no movimento uniforme",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Física, Velocidade no movimento uniforme pode ser definido(a) como:",
+      "enunciado": "Em F�sica, Velocidade no movimento uniforme pode ser definido(a) como:",
       "opcoes": [
-        "a grandeza constante que indica a variação da posição por unidade de tempo no MRU",
-        "a equação que fornece a posição do móvel em função do tempo no movimento uniforme",
+        "a grandeza constante que indica a varia��o da posi��o por unidade de tempo no MRU",
+        "a equa��o que fornece a posi��o do m�vel em fun��o do tempo no movimento uniforme",
         "a grandeza que indica como a velocidade se altera ao longo do tempo em um movimento variado",
-        "a equação que fornece a velocidade do móvel em função do tempo em um movimento uniformemente variado"
+        "a equa��o que fornece a velocidade do m�vel em fun��o do tempo em um movimento uniformemente variado"
       ],
-      "correta": "a grandeza constante que indica a variação da posição por unidade de tempo no MRU",
-      "comentario": "Velocidade no movimento uniforme refere-se à grandeza constante que indica a variação da posição por unidade de tempo no MRU.",
+      "correta": "a grandeza constante que indica a varia��o da posi��o por unidade de tempo no MRU",
+      "comentario": "Velocidade no movimento uniforme refere-se � grandeza constante que indica a varia��o da posi��o por unidade de tempo no MRU.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -672,22 +673,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
       "subtopico": "Velocidade no movimento uniforme",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: um móvel percorre sempre 30 metros a cada 2 segundos em uma trajetória retilínea Esse caso exemplifica melhor qual subtópico?",
+      "enunciado": "Observe a situa��o: um m�vel percorre sempre 30 metros a cada 2 segundos em uma trajet�ria retil�nea Esse caso exemplifica melhor qual subt�pico?",
       "opcoes": [
         "Velocidade no movimento uniforme",
-        "Função horária do espaço no MRU",
-        "Aceleração no movimento variado",
-        "Função horária da velocidade no MRUV"
+        "Fun��o hor�ria do espa�o no MRU",
+        "Acelera��o no movimento variado",
+        "Fun��o hor�ria da velocidade no MRUV"
       ],
       "correta": "Velocidade no movimento uniforme",
-      "comentario": "A situação apresentada é um exemplo de velocidade no movimento uniforme.",
+      "comentario": "A situa��o apresentada � um exemplo de velocidade no movimento uniforme.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -711,22 +712,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
       "subtopico": "Velocidade no movimento uniforme",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmação descreve corretamente velocidade no movimento uniforme?",
+      "enunciado": "Qual afirma��o descreve corretamente velocidade no movimento uniforme?",
       "opcoes": [
-        "A grandeza constante que indica a variação da posição por unidade de tempo no MRU.",
-        "A equação que fornece a posição do móvel em função do tempo no movimento uniforme.",
+        "A grandeza constante que indica a varia��o da posi��o por unidade de tempo no MRU.",
+        "A equa��o que fornece a posi��o do m�vel em fun��o do tempo no movimento uniforme.",
         "A grandeza que indica como a velocidade se altera ao longo do tempo em um movimento variado.",
-        "A equação que fornece a velocidade do móvel em função do tempo em um movimento uniformemente variado."
+        "A equa��o que fornece a velocidade do m�vel em fun��o do tempo em um movimento uniformemente variado."
       ],
-      "correta": "A grandeza constante que indica a variação da posição por unidade de tempo no MRU.",
-      "comentario": "A afirmação correta retoma o sentido central de velocidade no movimento uniforme.",
+      "correta": "A grandeza constante que indica a varia��o da posi��o por unidade de tempo no MRU.",
+      "comentario": "A afirma��o correta retoma o sentido central de velocidade no movimento uniforme.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -750,22 +751,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
       "subtopico": "Velocidade no movimento uniforme",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa incompatível com velocidade no movimento uniforme.",
+      "enunciado": "Assinale a alternativa incompat�vel com velocidade no movimento uniforme.",
       "opcoes": [
-        "afirmar que a velocidade no MRU aumenta a cada segundo por causa do deslocamento contínuo.",
-        "a constância da taxa de variação da posição no movimento uniforme.",
-        "no movimento uniforme, a velocidade permanece constante e a posição varia regularmente com o tempo.",
-        "a grandeza constante que indica a variação da posição por unidade de tempo no MRU."
+        "afirmar que a velocidade no MRU aumenta a cada segundo por causa do deslocamento cont�nuo.",
+        "a const�ncia da taxa de varia��o da posi��o no movimento uniforme.",
+        "no movimento uniforme, a velocidade permanece constante e a posi��o varia regularmente com o tempo.",
+        "a grandeza constante que indica a varia��o da posi��o por unidade de tempo no MRU."
       ],
-      "correta": "afirmar que a velocidade no MRU aumenta a cada segundo por causa do deslocamento contínuo.",
-      "comentario": "Afirmar que a velocidade no MRU aumenta a cada segundo por causa do deslocamento contínuo não representa velocidade no movimento uniforme, enquanto as demais alternativas se relacionam com esse subtópico.",
+      "correta": "afirmar que a velocidade no MRU aumenta a cada segundo por causa do deslocamento cont�nuo.",
+      "comentario": "Afirmar que a velocidade no MRU aumenta a cada segundo por causa do deslocamento cont�nuo n�o representa velocidade no movimento uniforme, enquanto as demais alternativas se relacionam com esse subt�pico.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -789,22 +790,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
       "subtopico": "Velocidade no movimento uniforme",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando se estuda velocidade no movimento uniforme, o foco principal está em:",
+      "enunciado": "Quando se estuda velocidade no movimento uniforme, o foco principal est� em:",
       "opcoes": [
-        "a constância da taxa de variação da posição no movimento uniforme",
-        "a previsão da posição ao longo do tempo em um movimento de velocidade constante",
-        "a descrição da variação da velocidade ao longo do tempo no movimento variado",
-        "a determinação da velocidade em qualquer instante quando a aceleração é constante"
+        "a const�ncia da taxa de varia��o da posi��o no movimento uniforme",
+        "a previs�o da posi��o ao longo do tempo em um movimento de velocidade constante",
+        "a descri��o da varia��o da velocidade ao longo do tempo no movimento variado",
+        "a determina��o da velocidade em qualquer instante quando a acelera��o � constante"
       ],
-      "correta": "a constância da taxa de variação da posição no movimento uniforme",
-      "comentario": "Velocidade no movimento uniforme volta a atenção para a constância da taxa de variação da posição no movimento uniforme.",
+      "correta": "a const�ncia da taxa de varia��o da posi��o no movimento uniforme",
+      "comentario": "Velocidade no movimento uniforme volta a aten��o para a const�ncia da taxa de varia��o da posi��o no movimento uniforme.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -828,22 +829,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
       "subtopico": "Velocidade no movimento uniforme",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferença entre velocidade no movimento uniforme e aceleração no movimento variado é que:",
+      "enunciado": "A principal diferen�a entre velocidade no movimento uniforme e acelera��o no movimento variado � que:",
       "opcoes": [
-        "velocidade no movimento uniforme permanece constante, enquanto aceleração no movimento variado expressa a mudança da velocidade ao longo do tempo",
-        "Velocidade no movimento uniforme e Aceleração no movimento variado são exatamente a mesma ideia física em qualquer situação.",
-        "Aceleração no movimento variado elimina a necessidade de observar velocidade no movimento uniforme.",
-        "Velocidade no movimento uniforme depende apenas de opinião pessoal, sem relação com grandezas, modelos ou medidas."
+        "velocidade no movimento uniforme permanece constante, enquanto acelera��o no movimento variado expressa a mudan�a da velocidade ao longo do tempo",
+        "Velocidade no movimento uniforme e Acelera��o no movimento variado s�o exatamente a mesma ideia f�sica em qualquer situa��o.",
+        "Acelera��o no movimento variado elimina a necessidade de observar velocidade no movimento uniforme.",
+        "Velocidade no movimento uniforme depende apenas de opini�o pessoal, sem rela��o com grandezas, modelos ou medidas."
       ],
-      "correta": "velocidade no movimento uniforme permanece constante, enquanto aceleração no movimento variado expressa a mudança da velocidade ao longo do tempo",
-      "comentario": "A comparação correta distingue os dois subtópicos sem confundir seus objetos de estudo.",
+      "correta": "velocidade no movimento uniforme permanece constante, enquanto acelera��o no movimento variado expressa a mudan�a da velocidade ao longo do tempo",
+      "comentario": "A compara��o correta distingue os dois subt�picos sem confundir seus objetos de estudo.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -867,21 +868,21 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
       "subtopico": "Velocidade no movimento uniforme",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma observação experimental, registrou-se o seguinte caso: um móvel percorre sempre 30 metros a cada 2 segundos em uma trajetória retilínea A leitura física mais adequada aponta para:",
+      "enunciado": "Em uma observa��o experimental, registrou-se o seguinte caso: um m�vel percorre sempre 30 metros a cada 2 segundos em uma trajet�ria retil�nea A leitura f�sica mais adequada aponta para:",
       "opcoes": [
-        "o caso mostra que a constância da velocidade caracteriza a regularidade do movimento uniforme",
-        "Velocidade no movimento uniforme mostra que as grandezas envolvidas não precisam ser relacionadas para interpretar o caso.",
-        "Velocidade no movimento uniforme prova que a situação dispensa qualquer leitura física ou quantitativa.",
-        "Velocidade no movimento uniforme significa que o fenômeno não pode ser descrito por variáveis físicas."
+        "o caso mostra que a const�ncia da velocidade caracteriza a regularidade do movimento uniforme",
+        "Velocidade no movimento uniforme mostra que as grandezas envolvidas n�o precisam ser relacionadas para interpretar o caso.",
+        "Velocidade no movimento uniforme prova que a situa��o dispensa qualquer leitura f�sica ou quantitativa.",
+        "Velocidade no movimento uniforme significa que o fen�meno n�o pode ser descrito por vari�veis f�sicas."
       ],
-      "correta": "o caso mostra que a constância da velocidade caracteriza a regularidade do movimento uniforme",
+      "correta": "o caso mostra que a const�ncia da velocidade caracteriza a regularidade do movimento uniforme",
       "comentario": "Velocidade no movimento uniforme permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
       "tempoEstimado": 25,
       "tags": [
@@ -906,22 +907,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
       "subtopico": "Velocidade no movimento uniforme",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação abaixo evidencia velocidade no movimento uniforme de maneira mais clara?",
+      "enunciado": "Qual situa��o abaixo evidencia velocidade no movimento uniforme de maneira mais clara?",
       "opcoes": [
-        "analisar o deslocamento regular de uma esteira ou escada rolante em funcionamento contínuo",
-        "calcular onde um estudante em patins estará após alguns segundos mantendo velocidade constante",
-        "avaliar a variação de velocidade de uma bicicleta durante uma arrancada",
+        "analisar o deslocamento regular de uma esteira ou escada rolante em funcionamento cont�nuo",
+        "calcular onde um estudante em patins estar� ap�s alguns segundos mantendo velocidade constante",
+        "avaliar a varia��o de velocidade de uma bicicleta durante uma arrancada",
         "estimar a velocidade de um corredor que acelera regularmente ao sair da linha de partida"
       ],
-      "correta": "analisar o deslocamento regular de uma esteira ou escada rolante em funcionamento contínuo",
-      "comentario": "A alternativa correta aproxima velocidade no movimento uniforme de uma situação concreta.",
+      "correta": "analisar o deslocamento regular de uma esteira ou escada rolante em funcionamento cont�nuo",
+      "comentario": "A alternativa correta aproxima velocidade no movimento uniforme de uma situa��o concreta.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -945,22 +946,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
       "subtopico": "Velocidade no movimento uniforme",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"um móvel percorre sempre 30 metros a cada 2 segundos em uma trajetória retilínea\", qual conclusão é mais adequada?",
+      "enunciado": "Ao analisar o caso \"um m�vel percorre sempre 30 metros a cada 2 segundos em uma trajet�ria retil�nea\", qual conclus�o � mais adequada?",
       "opcoes": [
-        "o caso mostra que a constância da velocidade caracteriza a regularidade do movimento uniforme",
-        "A situação indica que velocidade no movimento uniforme não possui relação com medidas, variáveis ou interpretação física.",
-        "A situação prova que velocidade no movimento uniforme só existe em exemplos teóricos sem uso cotidiano.",
-        "A situação mostra que velocidade no movimento uniforme torna desnecessário comparar dados e modelos."
+        "o caso mostra que a const�ncia da velocidade caracteriza a regularidade do movimento uniforme",
+        "A situa��o indica que velocidade no movimento uniforme n�o possui rela��o com medidas, vari�veis ou interpreta��o f�sica.",
+        "A situa��o prova que velocidade no movimento uniforme s� existe em exemplos te�ricos sem uso cotidiano.",
+        "A situa��o mostra que velocidade no movimento uniforme torna desnecess�rio comparar dados e modelos."
       ],
-      "correta": "o caso mostra que a constância da velocidade caracteriza a regularidade do movimento uniforme",
-      "comentario": "A conclusão correta mantém coerência com os dados apresentados e com velocidade no movimento uniforme.",
+      "correta": "o caso mostra que a const�ncia da velocidade caracteriza a regularidade do movimento uniforme",
+      "comentario": "A conclus�o correta mant�m coer�ncia com os dados apresentados e com velocidade no movimento uniforme.",
       "tempoEstimado": 35,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -984,7 +985,7 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
       "subtopico": "Velocidade no movimento uniforme",
       "dificuldadeLabel": "medio",
@@ -993,12 +994,12 @@ export const movimentoUniformeEVariado = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual pergunta de pesquisa se relaciona melhor com velocidade no movimento uniforme?",
       "opcoes": [
-        "como reconhecer a velocidade constante característica de um movimento uniforme?",
-        "como a equação do MRU permite prever a posição de um móvel em qualquer instante?",
-        "como a aceleração permite descrever a variação da velocidade em um movimento?",
-        "como calcular a velocidade de um móvel em MRUV depois de certo intervalo de tempo?"
+        "como reconhecer a velocidade constante caracter�stica de um movimento uniforme?",
+        "como a equa��o do MRU permite prever a posi��o de um m�vel em qualquer instante?",
+        "como a acelera��o permite descrever a varia��o da velocidade em um movimento?",
+        "como calcular a velocidade de um m�vel em MRUV depois de certo intervalo de tempo?"
       ],
-      "correta": "como reconhecer a velocidade constante característica de um movimento uniforme?",
+      "correta": "como reconhecer a velocidade constante caracter�stica de um movimento uniforme?",
       "comentario": "A pergunta correta investiga velocidade no movimento uniforme de forma direta e coerente.",
       "tempoEstimado": 35,
       "tags": [
@@ -1023,22 +1024,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
       "subtopico": "Velocidade no movimento uniforme",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a afirmação que revela compreensão inadequada de velocidade no movimento uniforme.",
+      "enunciado": "Assinale a afirma��o que revela compreens�o inadequada de velocidade no movimento uniforme.",
       "opcoes": [
-        "A grandeza constante que indica a variação da posição por unidade de tempo no MRU.",
-        "A constância da taxa de variação da posição no movimento uniforme.",
-        "No movimento uniforme, a velocidade permanece constante e a posição varia regularmente com o tempo.",
-        "Movimento uniforme é aquele em que o móvel fica parado na mesma posição."
+        "A grandeza constante que indica a varia��o da posi��o por unidade de tempo no MRU.",
+        "A const�ncia da taxa de varia��o da posi��o no movimento uniforme.",
+        "No movimento uniforme, a velocidade permanece constante e a posi��o varia regularmente com o tempo.",
+        "Movimento uniforme � aquele em que o m�vel fica parado na mesma posi��o."
       ],
-      "correta": "Movimento uniforme é aquele em que o móvel fica parado na mesma posição.",
-      "comentario": "A alternativa incorreta expressa um equívoco comum sobre velocidade no movimento uniforme.",
+      "correta": "Movimento uniforme � aquele em que o m�vel fica parado na mesma posi��o.",
+      "comentario": "A alternativa incorreta expressa um equ�voco comum sobre velocidade no movimento uniforme.",
       "tempoEstimado": 45,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -1062,22 +1063,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
       "subtopico": "Velocidade no movimento uniforme",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre Física, um estudante afirmou: \"em um movimento uniforme, iguais intervalos de tempo correspondem a iguais variações de posição\". Qual avaliação é mais consistente?",
+      "enunciado": "Em um debate sobre F�sica, um estudante afirmou: \"em um movimento uniforme, iguais intervalos de tempo correspondem a iguais varia��es de posi��o\". Qual avalia��o � mais consistente?",
       "opcoes": [
-        "A afirmação está correta, porque a velocidade constante faz com que a posição varie de maneira regular com o tempo",
-        "A afirmação está incorreta, porque velocidade no movimento uniforme nunca pode ser usada na Física escolar.",
-        "A afirmação é irrelevante, porque velocidade no movimento uniforme não se relaciona com interpretação de fenômenos.",
-        "A afirmação está incorreta, porque velocidade no movimento uniforme elimina a necessidade de medir e comparar grandezas."
+        "A afirma��o est� correta, porque a velocidade constante faz com que a posi��o varie de maneira regular com o tempo",
+        "A afirma��o est� incorreta, porque velocidade no movimento uniforme nunca pode ser usada na F�sica escolar.",
+        "A afirma��o � irrelevante, porque velocidade no movimento uniforme n�o se relaciona com interpreta��o de fen�menos.",
+        "A afirma��o est� incorreta, porque velocidade no movimento uniforme elimina a necessidade de medir e comparar grandezas."
       ],
-      "correta": "A afirmação está correta, porque a velocidade constante faz com que a posição varie de maneira regular com o tempo",
-      "comentario": "A avaliação correta recupera o núcleo conceitual de velocidade no movimento uniforme.",
+      "correta": "A afirma��o est� correta, porque a velocidade constante faz com que a posi��o varie de maneira regular com o tempo",
+      "comentario": "A avalia��o correta recupera o n�cleo conceitual de velocidade no movimento uniforme.",
       "tempoEstimado": 45,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -1101,22 +1102,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
       "subtopico": "Velocidade no movimento uniforme",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se velocidade no movimento uniforme fosse ignorado(a) na análise de um problema físico, o resultado mais provável seria:",
+      "enunciado": "Se velocidade no movimento uniforme fosse ignorado(a) na an�lise de um problema f�sico, o resultado mais prov�vel seria:",
       "opcoes": [
-        "seria comprometida a identificação de movimentos regulares e a aplicação correta das equações do MRU",
-        "o problema continuaria exatamente igual, porque velocidade no movimento uniforme não interfere na análise física",
-        "seria possível resolver a situação sem observar nenhuma grandeza, relação ou modelo",
-        "a interpretação ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
+        "seria comprometida a identifica��o de movimentos regulares e a aplica��o correta das equa��es do MRU",
+        "o problema continuaria exatamente igual, porque velocidade no movimento uniforme n�o interfere na an�lise f�sica",
+        "seria poss�vel resolver a situa��o sem observar nenhuma grandeza, rela��o ou modelo",
+        "a interpreta��o ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
       ],
-      "correta": "seria comprometida a identificação de movimentos regulares e a aplicação correta das equações do MRU",
-      "comentario": "Ignorar velocidade no movimento uniforme compromete a leitura física e a qualidade da solução.",
+      "correta": "seria comprometida a identifica��o de movimentos regulares e a aplica��o correta das equa��es do MRU",
+      "comentario": "Ignorar velocidade no movimento uniforme compromete a leitura f�sica e a qualidade da solu��o.",
       "tempoEstimado": 55,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -1140,22 +1141,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
       "subtopico": "Velocidade no movimento uniforme",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente velocidade no movimento uniforme a uma situação escolar ou cotidiana?",
+      "enunciado": "Qual alternativa aplica corretamente velocidade no movimento uniforme a uma situa��o escolar ou cotidiana?",
       "opcoes": [
-        "analisar o deslocamento regular de uma esteira ou escada rolante em funcionamento contínuo",
-        "estimar o comportamento de uma bola lançada para cima no pátio da escola",
-        "calcular quando um corredor alcança outro em uma prova com velocidades diferentes",
-        "ler o gráfico de velocidade de um móvel que acelera regularmente em laboratório"
+        "analisar o deslocamento regular de uma esteira ou escada rolante em funcionamento cont�nuo",
+        "estimar o comportamento de uma bola lan�ada para cima no p�tio da escola",
+        "calcular quando um corredor alcan�a outro em uma prova com velocidades diferentes",
+        "ler o gr�fico de velocidade de um m�vel que acelera regularmente em laborat�rio"
       ],
-      "correta": "analisar o deslocamento regular de uma esteira ou escada rolante em funcionamento contínuo",
-      "comentario": "A aplicação correta mostra como velocidade no movimento uniforme aparece em contextos próximos do cotidiano.",
+      "correta": "analisar o deslocamento regular de uma esteira ou escada rolante em funcionamento cont�nuo",
+      "comentario": "A aplica��o correta mostra como velocidade no movimento uniforme aparece em contextos pr�ximos do cotidiano.",
       "tempoEstimado": 55,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -1179,22 +1180,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
       "subtopico": "Velocidade no movimento uniforme",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual síntese final representa melhor velocidade no movimento uniforme?",
+      "enunciado": "Qual s�ntese final representa melhor velocidade no movimento uniforme?",
       "opcoes": [
-        "no movimento uniforme, a velocidade permanece constante e a posição varia regularmente com o tempo",
-        "a função horária do MRU relaciona posição inicial, velocidade constante e tempo para determinar a posição do móvel",
-        "a aceleração descreve como a velocidade varia ao longo do tempo em um movimento variado",
-        "a função horária da velocidade no MRUV relaciona velocidade inicial, aceleração constante e tempo"
+        "no movimento uniforme, a velocidade permanece constante e a posi��o varia regularmente com o tempo",
+        "a fun��o hor�ria do MRU relaciona posi��o inicial, velocidade constante e tempo para determinar a posi��o do m�vel",
+        "a acelera��o descreve como a velocidade varia ao longo do tempo em um movimento variado",
+        "a fun��o hor�ria da velocidade no MRUV relaciona velocidade inicial, acelera��o constante e tempo"
       ],
-      "correta": "no movimento uniforme, a velocidade permanece constante e a posição varia regularmente com o tempo",
-      "comentario": "A síntese correta preserva a definição, o foco e o uso analítico de velocidade no movimento uniforme.",
+      "correta": "no movimento uniforme, a velocidade permanece constante e a posi��o varia regularmente com o tempo",
+      "comentario": "A s�ntese correta preserva a defini��o, o foco e o uso anal�tico de velocidade no movimento uniforme.",
       "tempoEstimado": 55,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -1218,22 +1219,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Aceleração no movimento variado",
+      "subtopico": "Acelera��o no movimento variado",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Física, Aceleração no movimento variado pode ser definido(a) como:",
+      "enunciado": "Em F�sica, Acelera��o no movimento variado pode ser definido(a) como:",
       "opcoes": [
         "a grandeza que indica como a velocidade se altera ao longo do tempo em um movimento variado",
-        "a equação que fornece a posição do móvel em função do tempo no movimento uniforme",
-        "a grandeza constante que indica a variação da posição por unidade de tempo no MRU",
-        "a equação que fornece a velocidade do móvel em função do tempo em um movimento uniformemente variado"
+        "a equa��o que fornece a posi��o do m�vel em fun��o do tempo no movimento uniforme",
+        "a grandeza constante que indica a varia��o da posi��o por unidade de tempo no MRU",
+        "a equa��o que fornece a velocidade do m�vel em fun��o do tempo em um movimento uniformemente variado"
       ],
       "correta": "a grandeza que indica como a velocidade se altera ao longo do tempo em um movimento variado",
-      "comentario": "Aceleração no movimento variado refere-se à grandeza que indica como a velocidade se altera ao longo do tempo em um movimento variado.",
+      "comentario": "Acelera��o no movimento variado refere-se � grandeza que indica como a velocidade se altera ao longo do tempo em um movimento variado.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -1257,22 +1258,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Aceleração no movimento variado",
+      "subtopico": "Acelera��o no movimento variado",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: um carro aumenta sua velocidade em 4 metros por segundo a cada 2 segundos Esse caso exemplifica melhor qual subtópico?",
+      "enunciado": "Observe a situa��o: um carro aumenta sua velocidade em 4 metros por segundo a cada 2 segundos Esse caso exemplifica melhor qual subt�pico?",
       "opcoes": [
-        "Aceleração no movimento variado",
-        "Função horária do espaço no MRU",
+        "Acelera��o no movimento variado",
+        "Fun��o hor�ria do espa�o no MRU",
         "Velocidade no movimento uniforme",
-        "Função horária da velocidade no MRUV"
+        "Fun��o hor�ria da velocidade no MRUV"
       ],
-      "correta": "Aceleração no movimento variado",
-      "comentario": "A situação apresentada é um exemplo de aceleração no movimento variado.",
+      "correta": "Acelera��o no movimento variado",
+      "comentario": "A situa��o apresentada � um exemplo de acelera��o no movimento variado.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -1296,22 +1297,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Aceleração no movimento variado",
+      "subtopico": "Acelera��o no movimento variado",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmação descreve corretamente aceleração no movimento variado?",
+      "enunciado": "Qual afirma��o descreve corretamente acelera��o no movimento variado?",
       "opcoes": [
         "A grandeza que indica como a velocidade se altera ao longo do tempo em um movimento variado.",
-        "A equação que fornece a posição do móvel em função do tempo no movimento uniforme.",
-        "A grandeza constante que indica a variação da posição por unidade de tempo no MRU.",
-        "A equação que fornece a velocidade do móvel em função do tempo em um movimento uniformemente variado."
+        "A equa��o que fornece a posi��o do m�vel em fun��o do tempo no movimento uniforme.",
+        "A grandeza constante que indica a varia��o da posi��o por unidade de tempo no MRU.",
+        "A equa��o que fornece a velocidade do m�vel em fun��o do tempo em um movimento uniformemente variado."
       ],
       "correta": "A grandeza que indica como a velocidade se altera ao longo do tempo em um movimento variado.",
-      "comentario": "A afirmação correta retoma o sentido central de aceleração no movimento variado.",
+      "comentario": "A afirma��o correta retoma o sentido central de acelera��o no movimento variado.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -1335,22 +1336,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Aceleração no movimento variado",
+      "subtopico": "Acelera��o no movimento variado",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa incompatível com aceleração no movimento variado.",
+      "enunciado": "Assinale a alternativa incompat�vel com acelera��o no movimento variado.",
       "opcoes": [
-        "usar aceleração como sinônimo de velocidade constante.",
-        "a descrição da variação da velocidade ao longo do tempo no movimento variado.",
-        "a aceleração descreve como a velocidade varia ao longo do tempo em um movimento variado.",
+        "usar acelera��o como sin�nimo de velocidade constante.",
+        "a descri��o da varia��o da velocidade ao longo do tempo no movimento variado.",
+        "a acelera��o descreve como a velocidade varia ao longo do tempo em um movimento variado.",
         "a grandeza que indica como a velocidade se altera ao longo do tempo em um movimento variado."
       ],
-      "correta": "usar aceleração como sinônimo de velocidade constante.",
-      "comentario": "Usar aceleração como sinônimo de velocidade constante não representa aceleração no movimento variado, enquanto as demais alternativas se relacionam com esse subtópico.",
+      "correta": "usar acelera��o como sin�nimo de velocidade constante.",
+      "comentario": "Usar acelera��o como sin�nimo de velocidade constante n�o representa acelera��o no movimento variado, enquanto as demais alternativas se relacionam com esse subt�pico.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -1374,22 +1375,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Aceleração no movimento variado",
+      "subtopico": "Acelera��o no movimento variado",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando se estuda aceleração no movimento variado, o foco principal está em:",
+      "enunciado": "Quando se estuda acelera��o no movimento variado, o foco principal est� em:",
       "opcoes": [
-        "a descrição da variação da velocidade ao longo do tempo no movimento variado",
-        "a previsão da posição ao longo do tempo em um movimento de velocidade constante",
-        "a constância da taxa de variação da posição no movimento uniforme",
-        "a determinação da velocidade em qualquer instante quando a aceleração é constante"
+        "a descri��o da varia��o da velocidade ao longo do tempo no movimento variado",
+        "a previs�o da posi��o ao longo do tempo em um movimento de velocidade constante",
+        "a const�ncia da taxa de varia��o da posi��o no movimento uniforme",
+        "a determina��o da velocidade em qualquer instante quando a acelera��o � constante"
       ],
-      "correta": "a descrição da variação da velocidade ao longo do tempo no movimento variado",
-      "comentario": "Aceleração no movimento variado volta a atenção para a descrição da variação da velocidade ao longo do tempo no movimento variado.",
+      "correta": "a descri��o da varia��o da velocidade ao longo do tempo no movimento variado",
+      "comentario": "Acelera��o no movimento variado volta a aten��o para a descri��o da varia��o da velocidade ao longo do tempo no movimento variado.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -1413,22 +1414,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Aceleração no movimento variado",
+      "subtopico": "Acelera��o no movimento variado",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferença entre aceleração no movimento variado e velocidade no movimento uniforme é que:",
+      "enunciado": "A principal diferen�a entre acelera��o no movimento variado e velocidade no movimento uniforme � que:",
       "opcoes": [
-        "aceleração no movimento variado indica mudança de velocidade, enquanto velocidade no movimento uniforme permanece constante",
-        "Aceleração no movimento variado e Velocidade no movimento uniforme são exatamente a mesma ideia física em qualquer situação.",
-        "Velocidade no movimento uniforme elimina a necessidade de observar aceleração no movimento variado.",
-        "Aceleração no movimento variado depende apenas de opinião pessoal, sem relação com grandezas, modelos ou medidas."
+        "acelera��o no movimento variado indica mudan�a de velocidade, enquanto velocidade no movimento uniforme permanece constante",
+        "Acelera��o no movimento variado e Velocidade no movimento uniforme s�o exatamente a mesma ideia f�sica em qualquer situa��o.",
+        "Velocidade no movimento uniforme elimina a necessidade de observar acelera��o no movimento variado.",
+        "Acelera��o no movimento variado depende apenas de opini�o pessoal, sem rela��o com grandezas, modelos ou medidas."
       ],
-      "correta": "aceleração no movimento variado indica mudança de velocidade, enquanto velocidade no movimento uniforme permanece constante",
-      "comentario": "A comparação correta distingue os dois subtópicos sem confundir seus objetos de estudo.",
+      "correta": "acelera��o no movimento variado indica mudan�a de velocidade, enquanto velocidade no movimento uniforme permanece constante",
+      "comentario": "A compara��o correta distingue os dois subt�picos sem confundir seus objetos de estudo.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -1452,22 +1453,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Aceleração no movimento variado",
+      "subtopico": "Acelera��o no movimento variado",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma observação experimental, registrou-se o seguinte caso: um carro aumenta sua velocidade em 4 metros por segundo a cada 2 segundos A leitura física mais adequada aponta para:",
+      "enunciado": "Em uma observa��o experimental, registrou-se o seguinte caso: um carro aumenta sua velocidade em 4 metros por segundo a cada 2 segundos A leitura f�sica mais adequada aponta para:",
       "opcoes": [
-        "o caso mostra que a aceleração é indispensável para descrever movimentos com mudança de velocidade",
-        "Aceleração no movimento variado mostra que as grandezas envolvidas não precisam ser relacionadas para interpretar o caso.",
-        "Aceleração no movimento variado prova que a situação dispensa qualquer leitura física ou quantitativa.",
-        "Aceleração no movimento variado significa que o fenômeno não pode ser descrito por variáveis físicas."
+        "o caso mostra que a acelera��o � indispens�vel para descrever movimentos com mudan�a de velocidade",
+        "Acelera��o no movimento variado mostra que as grandezas envolvidas n�o precisam ser relacionadas para interpretar o caso.",
+        "Acelera��o no movimento variado prova que a situa��o dispensa qualquer leitura f�sica ou quantitativa.",
+        "Acelera��o no movimento variado significa que o fen�meno n�o pode ser descrito por vari�veis f�sicas."
       ],
-      "correta": "o caso mostra que a aceleração é indispensável para descrever movimentos com mudança de velocidade",
-      "comentario": "Aceleração no movimento variado permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
+      "correta": "o caso mostra que a acelera��o � indispens�vel para descrever movimentos com mudan�a de velocidade",
+      "comentario": "Acelera��o no movimento variado permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -1491,22 +1492,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Aceleração no movimento variado",
+      "subtopico": "Acelera��o no movimento variado",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação abaixo evidencia aceleração no movimento variado de maneira mais clara?",
+      "enunciado": "Qual situa��o abaixo evidencia acelera��o no movimento variado de maneira mais clara?",
       "opcoes": [
-        "avaliar a variação de velocidade de uma bicicleta durante uma arrancada",
-        "calcular onde um estudante em patins estará após alguns segundos mantendo velocidade constante",
-        "analisar o deslocamento regular de uma esteira ou escada rolante em funcionamento contínuo",
+        "avaliar a varia��o de velocidade de uma bicicleta durante uma arrancada",
+        "calcular onde um estudante em patins estar� ap�s alguns segundos mantendo velocidade constante",
+        "analisar o deslocamento regular de uma esteira ou escada rolante em funcionamento cont�nuo",
         "estimar a velocidade de um corredor que acelera regularmente ao sair da linha de partida"
       ],
-      "correta": "avaliar a variação de velocidade de uma bicicleta durante uma arrancada",
-      "comentario": "A alternativa correta aproxima aceleração no movimento variado de uma situação concreta.",
+      "correta": "avaliar a varia��o de velocidade de uma bicicleta durante uma arrancada",
+      "comentario": "A alternativa correta aproxima acelera��o no movimento variado de uma situa��o concreta.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -1530,22 +1531,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Aceleração no movimento variado",
+      "subtopico": "Acelera��o no movimento variado",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"um carro aumenta sua velocidade em 4 metros por segundo a cada 2 segundos\", qual conclusão é mais adequada?",
+      "enunciado": "Ao analisar o caso \"um carro aumenta sua velocidade em 4 metros por segundo a cada 2 segundos\", qual conclus�o � mais adequada?",
       "opcoes": [
-        "o caso mostra que a aceleração é indispensável para descrever movimentos com mudança de velocidade",
-        "A situação indica que aceleração no movimento variado não possui relação com medidas, variáveis ou interpretação física.",
-        "A situação prova que aceleração no movimento variado só existe em exemplos teóricos sem uso cotidiano.",
-        "A situação mostra que aceleração no movimento variado torna desnecessário comparar dados e modelos."
+        "o caso mostra que a acelera��o � indispens�vel para descrever movimentos com mudan�a de velocidade",
+        "A situa��o indica que acelera��o no movimento variado n�o possui rela��o com medidas, vari�veis ou interpreta��o f�sica.",
+        "A situa��o prova que acelera��o no movimento variado s� existe em exemplos te�ricos sem uso cotidiano.",
+        "A situa��o mostra que acelera��o no movimento variado torna desnecess�rio comparar dados e modelos."
       ],
-      "correta": "o caso mostra que a aceleração é indispensável para descrever movimentos com mudança de velocidade",
-      "comentario": "A conclusão correta mantém coerência com os dados apresentados e com aceleração no movimento variado.",
+      "correta": "o caso mostra que a acelera��o � indispens�vel para descrever movimentos com mudan�a de velocidade",
+      "comentario": "A conclus�o correta mant�m coer�ncia com os dados apresentados e com acelera��o no movimento variado.",
       "tempoEstimado": 35,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -1569,22 +1570,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Aceleração no movimento variado",
+      "subtopico": "Acelera��o no movimento variado",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com aceleração no movimento variado?",
+      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com acelera��o no movimento variado?",
       "opcoes": [
-        "como a aceleração permite descrever a variação da velocidade em um movimento?",
-        "como a equação do MRU permite prever a posição de um móvel em qualquer instante?",
-        "como reconhecer a velocidade constante característica de um movimento uniforme?",
-        "como calcular a velocidade de um móvel em MRUV depois de certo intervalo de tempo?"
+        "como a acelera��o permite descrever a varia��o da velocidade em um movimento?",
+        "como a equa��o do MRU permite prever a posi��o de um m�vel em qualquer instante?",
+        "como reconhecer a velocidade constante caracter�stica de um movimento uniforme?",
+        "como calcular a velocidade de um m�vel em MRUV depois de certo intervalo de tempo?"
       ],
-      "correta": "como a aceleração permite descrever a variação da velocidade em um movimento?",
-      "comentario": "A pergunta correta investiga aceleração no movimento variado de forma direta e coerente.",
+      "correta": "como a acelera��o permite descrever a varia��o da velocidade em um movimento?",
+      "comentario": "A pergunta correta investiga acelera��o no movimento variado de forma direta e coerente.",
       "tempoEstimado": 35,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -1608,22 +1609,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Aceleração no movimento variado",
+      "subtopico": "Acelera��o no movimento variado",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a afirmação que revela compreensão inadequada de aceleração no movimento variado.",
+      "enunciado": "Assinale a afirma��o que revela compreens�o inadequada de acelera��o no movimento variado.",
       "opcoes": [
         "A grandeza que indica como a velocidade se altera ao longo do tempo em um movimento variado.",
-        "A descrição da variação da velocidade ao longo do tempo no movimento variado.",
-        "A aceleração descreve como a velocidade varia ao longo do tempo em um movimento variado.",
-        "Um movimento variado pode ocorrer sem qualquer mudança de velocidade."
+        "A descri��o da varia��o da velocidade ao longo do tempo no movimento variado.",
+        "A acelera��o descreve como a velocidade varia ao longo do tempo em um movimento variado.",
+        "Um movimento variado pode ocorrer sem qualquer mudan�a de velocidade."
       ],
-      "correta": "Um movimento variado pode ocorrer sem qualquer mudança de velocidade.",
-      "comentario": "A alternativa incorreta expressa um equívoco comum sobre aceleração no movimento variado.",
+      "correta": "Um movimento variado pode ocorrer sem qualquer mudan�a de velocidade.",
+      "comentario": "A alternativa incorreta expressa um equ�voco comum sobre acelera��o no movimento variado.",
       "tempoEstimado": 45,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -1647,22 +1648,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Aceleração no movimento variado",
+      "subtopico": "Acelera��o no movimento variado",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre Física, um estudante afirmou: \"quando a velocidade muda com o tempo, a aceleração é uma grandeza necessária para descrever o movimento\". Qual avaliação é mais consistente?",
+      "enunciado": "Em um debate sobre F�sica, um estudante afirmou: \"quando a velocidade muda com o tempo, a acelera��o � uma grandeza necess�ria para descrever o movimento\". Qual avalia��o � mais consistente?",
       "opcoes": [
-        "A afirmação está correta, porque a aceleração relaciona a variação da velocidade ao intervalo de tempo correspondente",
-        "A afirmação está incorreta, porque aceleração no movimento variado nunca pode ser usada na Física escolar.",
-        "A afirmação é irrelevante, porque aceleração no movimento variado não se relaciona com interpretação de fenômenos.",
-        "A afirmação está incorreta, porque aceleração no movimento variado elimina a necessidade de medir e comparar grandezas."
+        "A afirma��o est� correta, porque a acelera��o relaciona a varia��o da velocidade ao intervalo de tempo correspondente",
+        "A afirma��o est� incorreta, porque acelera��o no movimento variado nunca pode ser usada na F�sica escolar.",
+        "A afirma��o � irrelevante, porque acelera��o no movimento variado n�o se relaciona com interpreta��o de fen�menos.",
+        "A afirma��o est� incorreta, porque acelera��o no movimento variado elimina a necessidade de medir e comparar grandezas."
       ],
-      "correta": "A afirmação está correta, porque a aceleração relaciona a variação da velocidade ao intervalo de tempo correspondente",
-      "comentario": "A avaliação correta recupera o núcleo conceitual de aceleração no movimento variado.",
+      "correta": "A afirma��o est� correta, porque a acelera��o relaciona a varia��o da velocidade ao intervalo de tempo correspondente",
+      "comentario": "A avalia��o correta recupera o n�cleo conceitual de acelera��o no movimento variado.",
       "tempoEstimado": 45,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -1686,22 +1687,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Aceleração no movimento variado",
+      "subtopico": "Acelera��o no movimento variado",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se aceleração no movimento variado fosse ignorado(a) na análise de um problema físico, o resultado mais provável seria:",
+      "enunciado": "Se acelera��o no movimento variado fosse ignorado(a) na an�lise de um problema f�sico, o resultado mais prov�vel seria:",
       "opcoes": [
-        "a análise perderia a capacidade de distinguir movimentos que aceleram, retardam ou mantêm velocidade constante",
-        "o problema continuaria exatamente igual, porque aceleração no movimento variado não interfere na análise física",
-        "seria possível resolver a situação sem observar nenhuma grandeza, relação ou modelo",
-        "a interpretação ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
+        "a an�lise perderia a capacidade de distinguir movimentos que aceleram, retardam ou mant�m velocidade constante",
+        "o problema continuaria exatamente igual, porque acelera��o no movimento variado n�o interfere na an�lise f�sica",
+        "seria poss�vel resolver a situa��o sem observar nenhuma grandeza, rela��o ou modelo",
+        "a interpreta��o ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
       ],
-      "correta": "a análise perderia a capacidade de distinguir movimentos que aceleram, retardam ou mantêm velocidade constante",
-      "comentario": "Ignorar aceleração no movimento variado compromete a leitura física e a qualidade da solução.",
+      "correta": "a an�lise perderia a capacidade de distinguir movimentos que aceleram, retardam ou mant�m velocidade constante",
+      "comentario": "Ignorar acelera��o no movimento variado compromete a leitura f�sica e a qualidade da solu��o.",
       "tempoEstimado": 55,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -1725,22 +1726,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Aceleração no movimento variado",
+      "subtopico": "Acelera��o no movimento variado",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente aceleração no movimento variado a uma situação escolar ou cotidiana?",
+      "enunciado": "Qual alternativa aplica corretamente acelera��o no movimento variado a uma situa��o escolar ou cotidiana?",
       "opcoes": [
-        "avaliar a variação de velocidade de uma bicicleta durante uma arrancada",
-        "estimar o comportamento de uma bola lançada para cima no pátio da escola",
-        "calcular quando um corredor alcança outro em uma prova com velocidades diferentes",
-        "ler o gráfico de velocidade de um móvel que acelera regularmente em laboratório"
+        "avaliar a varia��o de velocidade de uma bicicleta durante uma arrancada",
+        "estimar o comportamento de uma bola lan�ada para cima no p�tio da escola",
+        "calcular quando um corredor alcan�a outro em uma prova com velocidades diferentes",
+        "ler o gr�fico de velocidade de um m�vel que acelera regularmente em laborat�rio"
       ],
-      "correta": "avaliar a variação de velocidade de uma bicicleta durante uma arrancada",
-      "comentario": "A aplicação correta mostra como aceleração no movimento variado aparece em contextos próximos do cotidiano.",
+      "correta": "avaliar a varia��o de velocidade de uma bicicleta durante uma arrancada",
+      "comentario": "A aplica��o correta mostra como acelera��o no movimento variado aparece em contextos pr�ximos do cotidiano.",
       "tempoEstimado": 55,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -1764,22 +1765,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Aceleração no movimento variado",
+      "subtopico": "Acelera��o no movimento variado",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual síntese final representa melhor aceleração no movimento variado?",
+      "enunciado": "Qual s�ntese final representa melhor acelera��o no movimento variado?",
       "opcoes": [
-        "a aceleração descreve como a velocidade varia ao longo do tempo em um movimento variado",
-        "a função horária do MRU relaciona posição inicial, velocidade constante e tempo para determinar a posição do móvel",
-        "no movimento uniforme, a velocidade permanece constante e a posição varia regularmente com o tempo",
-        "a função horária da velocidade no MRUV relaciona velocidade inicial, aceleração constante e tempo"
+        "a acelera��o descreve como a velocidade varia ao longo do tempo em um movimento variado",
+        "a fun��o hor�ria do MRU relaciona posi��o inicial, velocidade constante e tempo para determinar a posi��o do m�vel",
+        "no movimento uniforme, a velocidade permanece constante e a posi��o varia regularmente com o tempo",
+        "a fun��o hor�ria da velocidade no MRUV relaciona velocidade inicial, acelera��o constante e tempo"
       ],
-      "correta": "a aceleração descreve como a velocidade varia ao longo do tempo em um movimento variado",
-      "comentario": "A síntese correta preserva a definição, o foco e o uso analítico de aceleração no movimento variado.",
+      "correta": "a acelera��o descreve como a velocidade varia ao longo do tempo em um movimento variado",
+      "comentario": "A s�ntese correta preserva a defini��o, o foco e o uso anal�tico de acelera��o no movimento variado.",
       "tempoEstimado": 55,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -1803,22 +1804,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Função horária da velocidade no MRUV",
+      "subtopico": "Fun��o hor�ria da velocidade no MRUV",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Física, Função horária da velocidade no MRUV pode ser definido(a) como:",
+      "enunciado": "Em F�sica, Fun��o hor�ria da velocidade no MRUV pode ser definido(a) como:",
       "opcoes": [
-        "a equação que fornece a velocidade do móvel em função do tempo em um movimento uniformemente variado",
-        "a equação que fornece a posição do móvel em função do tempo no movimento uniforme",
-        "a grandeza constante que indica a variação da posição por unidade de tempo no MRU",
+        "a equa��o que fornece a velocidade do m�vel em fun��o do tempo em um movimento uniformemente variado",
+        "a equa��o que fornece a posi��o do m�vel em fun��o do tempo no movimento uniforme",
+        "a grandeza constante que indica a varia��o da posi��o por unidade de tempo no MRU",
         "a grandeza que indica como a velocidade se altera ao longo do tempo em um movimento variado"
       ],
-      "correta": "a equação que fornece a velocidade do móvel em função do tempo em um movimento uniformemente variado",
-      "comentario": "Função horária da velocidade no MRUV refere-se à equação que fornece a velocidade do móvel em função do tempo em um movimento uniformemente variado.",
+      "correta": "a equa��o que fornece a velocidade do m�vel em fun��o do tempo em um movimento uniformemente variado",
+      "comentario": "Fun��o hor�ria da velocidade no MRUV refere-se � equa��o que fornece a velocidade do m�vel em fun��o do tempo em um movimento uniformemente variado.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -1842,22 +1843,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Função horária da velocidade no MRUV",
+      "subtopico": "Fun��o hor�ria da velocidade no MRUV",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: um móvel parte com velocidade inicial de 5 metros por segundo e aceleração constante de 2 metros por segundo ao quadrado Esse caso exemplifica melhor qual subtópico?",
+      "enunciado": "Observe a situa��o: um m�vel parte com velocidade inicial de 5 metros por segundo e acelera��o constante de 2 metros por segundo ao quadrado Esse caso exemplifica melhor qual subt�pico?",
       "opcoes": [
-        "Função horária da velocidade no MRUV",
-        "Função horária do espaço no MRU",
+        "Fun��o hor�ria da velocidade no MRUV",
+        "Fun��o hor�ria do espa�o no MRU",
         "Velocidade no movimento uniforme",
-        "Aceleração no movimento variado"
+        "Acelera��o no movimento variado"
       ],
-      "correta": "Função horária da velocidade no MRUV",
-      "comentario": "A situação apresentada é um exemplo de função horária da velocidade no MRUV.",
+      "correta": "Fun��o hor�ria da velocidade no MRUV",
+      "comentario": "A situa��o apresentada � um exemplo de fun��o hor�ria da velocidade no MRUV.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -1881,22 +1882,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Função horária da velocidade no MRUV",
+      "subtopico": "Fun��o hor�ria da velocidade no MRUV",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmação descreve corretamente função horária da velocidade no MRUV?",
+      "enunciado": "Qual afirma��o descreve corretamente fun��o hor�ria da velocidade no MRUV?",
       "opcoes": [
-        "A equação que fornece a velocidade do móvel em função do tempo em um movimento uniformemente variado.",
-        "A equação que fornece a posição do móvel em função do tempo no movimento uniforme.",
-        "A grandeza constante que indica a variação da posição por unidade de tempo no MRU.",
+        "A equa��o que fornece a velocidade do m�vel em fun��o do tempo em um movimento uniformemente variado.",
+        "A equa��o que fornece a posi��o do m�vel em fun��o do tempo no movimento uniforme.",
+        "A grandeza constante que indica a varia��o da posi��o por unidade de tempo no MRU.",
         "A grandeza que indica como a velocidade se altera ao longo do tempo em um movimento variado."
       ],
-      "correta": "A equação que fornece a velocidade do móvel em função do tempo em um movimento uniformemente variado.",
-      "comentario": "A afirmação correta retoma o sentido central de função horária da velocidade no MRUV.",
+      "correta": "A equa��o que fornece a velocidade do m�vel em fun��o do tempo em um movimento uniformemente variado.",
+      "comentario": "A afirma��o correta retoma o sentido central de fun��o hor�ria da velocidade no MRUV.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -1920,22 +1921,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Função horária da velocidade no MRUV",
+      "subtopico": "Fun��o hor�ria da velocidade no MRUV",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa incompatível com função horária da velocidade no MRUV.",
+      "enunciado": "Assinale a alternativa incompat�vel com fun��o hor�ria da velocidade no MRUV.",
       "opcoes": [
         "tratar a velocidade em MRUV como um valor fixo igual ao do instante inicial.",
-        "a determinação da velocidade em qualquer instante quando a aceleração é constante.",
-        "a função horária da velocidade no MRUV relaciona velocidade inicial, aceleração constante e tempo.",
-        "a equação que fornece a velocidade do móvel em função do tempo em um movimento uniformemente variado."
+        "a determina��o da velocidade em qualquer instante quando a acelera��o � constante.",
+        "a fun��o hor�ria da velocidade no MRUV relaciona velocidade inicial, acelera��o constante e tempo.",
+        "a equa��o que fornece a velocidade do m�vel em fun��o do tempo em um movimento uniformemente variado."
       ],
       "correta": "tratar a velocidade em MRUV como um valor fixo igual ao do instante inicial.",
-      "comentario": "Tratar a velocidade em MRUV como um valor fixo igual ao do instante inicial não representa função horária da velocidade no MRUV, enquanto as demais alternativas se relacionam com esse subtópico.",
+      "comentario": "Tratar a velocidade em MRUV como um valor fixo igual ao do instante inicial n�o representa fun��o hor�ria da velocidade no MRUV, enquanto as demais alternativas se relacionam com esse subt�pico.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -1959,22 +1960,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Função horária da velocidade no MRUV",
+      "subtopico": "Fun��o hor�ria da velocidade no MRUV",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando se estuda função horária da velocidade no MRUV, o foco principal está em:",
+      "enunciado": "Quando se estuda fun��o hor�ria da velocidade no MRUV, o foco principal est� em:",
       "opcoes": [
-        "a determinação da velocidade em qualquer instante quando a aceleração é constante",
-        "a previsão da posição ao longo do tempo em um movimento de velocidade constante",
-        "a constância da taxa de variação da posição no movimento uniforme",
-        "a descrição da variação da velocidade ao longo do tempo no movimento variado"
+        "a determina��o da velocidade em qualquer instante quando a acelera��o � constante",
+        "a previs�o da posi��o ao longo do tempo em um movimento de velocidade constante",
+        "a const�ncia da taxa de varia��o da posi��o no movimento uniforme",
+        "a descri��o da varia��o da velocidade ao longo do tempo no movimento variado"
       ],
-      "correta": "a determinação da velocidade em qualquer instante quando a aceleração é constante",
-      "comentario": "Função horária da velocidade no MRUV volta a atenção para a determinação da velocidade em qualquer instante quando a aceleração é constante.",
+      "correta": "a determina��o da velocidade em qualquer instante quando a acelera��o � constante",
+      "comentario": "Fun��o hor�ria da velocidade no MRUV volta a aten��o para a determina��o da velocidade em qualquer instante quando a acelera��o � constante.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -1998,22 +1999,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Função horária da velocidade no MRUV",
+      "subtopico": "Fun��o hor�ria da velocidade no MRUV",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferença entre função horária da velocidade no MRUV e função horária da posição no MRUV é que:",
+      "enunciado": "A principal diferen�a entre fun��o hor�ria da velocidade no MRUV e fun��o hor�ria da posi��o no MRUV � que:",
       "opcoes": [
-        "a função horária da velocidade no MRUV calcula a velocidade ao longo do tempo, enquanto a função horária da posição no MRUV determina a posição ocupada pelo móvel",
-        "Função horária da velocidade no MRUV e Função horária da posição no MRUV são exatamente a mesma ideia física em qualquer situação.",
-        "Função horária da posição no MRUV elimina a necessidade de observar função horária da velocidade no MRUV.",
-        "Função horária da velocidade no MRUV depende apenas de opinião pessoal, sem relação com grandezas, modelos ou medidas."
+        "a fun��o hor�ria da velocidade no MRUV calcula a velocidade ao longo do tempo, enquanto a fun��o hor�ria da posi��o no MRUV determina a posi��o ocupada pelo m�vel",
+        "Fun��o hor�ria da velocidade no MRUV e Fun��o hor�ria da posi��o no MRUV s�o exatamente a mesma ideia f�sica em qualquer situa��o.",
+        "Fun��o hor�ria da posi��o no MRUV elimina a necessidade de observar fun��o hor�ria da velocidade no MRUV.",
+        "Fun��o hor�ria da velocidade no MRUV depende apenas de opini�o pessoal, sem rela��o com grandezas, modelos ou medidas."
       ],
-      "correta": "a função horária da velocidade no MRUV calcula a velocidade ao longo do tempo, enquanto a função horária da posição no MRUV determina a posição ocupada pelo móvel",
-      "comentario": "A comparação correta distingue os dois subtópicos sem confundir seus objetos de estudo.",
+      "correta": "a fun��o hor�ria da velocidade no MRUV calcula a velocidade ao longo do tempo, enquanto a fun��o hor�ria da posi��o no MRUV determina a posi��o ocupada pelo m�vel",
+      "comentario": "A compara��o correta distingue os dois subt�picos sem confundir seus objetos de estudo.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -2037,22 +2038,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Função horária da velocidade no MRUV",
+      "subtopico": "Fun��o hor�ria da velocidade no MRUV",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma observação experimental, registrou-se o seguinte caso: um móvel parte com velocidade inicial de 5 metros por segundo e aceleração constante de 2 metros por segundo ao quadrado A leitura física mais adequada aponta para:",
+      "enunciado": "Em uma observa��o experimental, registrou-se o seguinte caso: um m�vel parte com velocidade inicial de 5 metros por segundo e acelera��o constante de 2 metros por segundo ao quadrado A leitura f�sica mais adequada aponta para:",
       "opcoes": [
-        "o caso mostra que a velocidade em MRUV varia linearmente com o tempo quando a aceleração é constante",
-        "Função horária da velocidade no MRUV mostra que as grandezas envolvidas não precisam ser relacionadas para interpretar o caso.",
-        "Função horária da velocidade no MRUV prova que a situação dispensa qualquer leitura física ou quantitativa.",
-        "Função horária da velocidade no MRUV significa que o fenômeno não pode ser descrito por variáveis físicas."
+        "o caso mostra que a velocidade em MRUV varia linearmente com o tempo quando a acelera��o � constante",
+        "Fun��o hor�ria da velocidade no MRUV mostra que as grandezas envolvidas n�o precisam ser relacionadas para interpretar o caso.",
+        "Fun��o hor�ria da velocidade no MRUV prova que a situa��o dispensa qualquer leitura f�sica ou quantitativa.",
+        "Fun��o hor�ria da velocidade no MRUV significa que o fen�meno n�o pode ser descrito por vari�veis f�sicas."
       ],
-      "correta": "o caso mostra que a velocidade em MRUV varia linearmente com o tempo quando a aceleração é constante",
-      "comentario": "Função horária da velocidade no MRUV permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
+      "correta": "o caso mostra que a velocidade em MRUV varia linearmente com o tempo quando a acelera��o � constante",
+      "comentario": "Fun��o hor�ria da velocidade no MRUV permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -2076,22 +2077,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Função horária da velocidade no MRUV",
+      "subtopico": "Fun��o hor�ria da velocidade no MRUV",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação abaixo evidencia função horária da velocidade no MRUV de maneira mais clara?",
+      "enunciado": "Qual situa��o abaixo evidencia fun��o hor�ria da velocidade no MRUV de maneira mais clara?",
       "opcoes": [
         "estimar a velocidade de um corredor que acelera regularmente ao sair da linha de partida",
-        "calcular onde um estudante em patins estará após alguns segundos mantendo velocidade constante",
-        "analisar o deslocamento regular de uma esteira ou escada rolante em funcionamento contínuo",
-        "avaliar a variação de velocidade de uma bicicleta durante uma arrancada"
+        "calcular onde um estudante em patins estar� ap�s alguns segundos mantendo velocidade constante",
+        "analisar o deslocamento regular de uma esteira ou escada rolante em funcionamento cont�nuo",
+        "avaliar a varia��o de velocidade de uma bicicleta durante uma arrancada"
       ],
       "correta": "estimar a velocidade de um corredor que acelera regularmente ao sair da linha de partida",
-      "comentario": "A alternativa correta aproxima função horária da velocidade no MRUV de uma situação concreta.",
+      "comentario": "A alternativa correta aproxima fun��o hor�ria da velocidade no MRUV de uma situa��o concreta.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -2115,22 +2116,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Função horária da velocidade no MRUV",
+      "subtopico": "Fun��o hor�ria da velocidade no MRUV",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"um móvel parte com velocidade inicial de 5 metros por segundo e aceleração constante de 2 metros por segundo ao quadrado\", qual conclusão é mais adequada?",
+      "enunciado": "Ao analisar o caso \"um m�vel parte com velocidade inicial de 5 metros por segundo e acelera��o constante de 2 metros por segundo ao quadrado\", qual conclus�o � mais adequada?",
       "opcoes": [
-        "o caso mostra que a velocidade em MRUV varia linearmente com o tempo quando a aceleração é constante",
-        "A situação indica que função horária da velocidade no MRUV não possui relação com medidas, variáveis ou interpretação física.",
-        "A situação prova que função horária da velocidade no MRUV só existe em exemplos teóricos sem uso cotidiano.",
-        "A situação mostra que função horária da velocidade no MRUV torna desnecessário comparar dados e modelos."
+        "o caso mostra que a velocidade em MRUV varia linearmente com o tempo quando a acelera��o � constante",
+        "A situa��o indica que fun��o hor�ria da velocidade no MRUV n�o possui rela��o com medidas, vari�veis ou interpreta��o f�sica.",
+        "A situa��o prova que fun��o hor�ria da velocidade no MRUV s� existe em exemplos te�ricos sem uso cotidiano.",
+        "A situa��o mostra que fun��o hor�ria da velocidade no MRUV torna desnecess�rio comparar dados e modelos."
       ],
-      "correta": "o caso mostra que a velocidade em MRUV varia linearmente com o tempo quando a aceleração é constante",
-      "comentario": "A conclusão correta mantém coerência com os dados apresentados e com função horária da velocidade no MRUV.",
+      "correta": "o caso mostra que a velocidade em MRUV varia linearmente com o tempo quando a acelera��o � constante",
+      "comentario": "A conclus�o correta mant�m coer�ncia com os dados apresentados e com fun��o hor�ria da velocidade no MRUV.",
       "tempoEstimado": 35,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -2154,22 +2155,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Função horária da velocidade no MRUV",
+      "subtopico": "Fun��o hor�ria da velocidade no MRUV",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com função horária da velocidade no MRUV?",
+      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com fun��o hor�ria da velocidade no MRUV?",
       "opcoes": [
-        "como calcular a velocidade de um móvel em MRUV depois de certo intervalo de tempo?",
-        "como a equação do MRU permite prever a posição de um móvel em qualquer instante?",
-        "como reconhecer a velocidade constante característica de um movimento uniforme?",
-        "como a aceleração permite descrever a variação da velocidade em um movimento?"
+        "como calcular a velocidade de um m�vel em MRUV depois de certo intervalo de tempo?",
+        "como a equa��o do MRU permite prever a posi��o de um m�vel em qualquer instante?",
+        "como reconhecer a velocidade constante caracter�stica de um movimento uniforme?",
+        "como a acelera��o permite descrever a varia��o da velocidade em um movimento?"
       ],
-      "correta": "como calcular a velocidade de um móvel em MRUV depois de certo intervalo de tempo?",
-      "comentario": "A pergunta correta investiga função horária da velocidade no MRUV de forma direta e coerente.",
+      "correta": "como calcular a velocidade de um m�vel em MRUV depois de certo intervalo de tempo?",
+      "comentario": "A pergunta correta investiga fun��o hor�ria da velocidade no MRUV de forma direta e coerente.",
       "tempoEstimado": 35,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -2193,22 +2194,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Função horária da velocidade no MRUV",
+      "subtopico": "Fun��o hor�ria da velocidade no MRUV",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a afirmação que revela compreensão inadequada de função horária da velocidade no MRUV.",
+      "enunciado": "Assinale a afirma��o que revela compreens�o inadequada de fun��o hor�ria da velocidade no MRUV.",
       "opcoes": [
-        "A equação que fornece a velocidade do móvel em função do tempo em um movimento uniformemente variado.",
-        "A determinação da velocidade em qualquer instante quando a aceleração é constante.",
-        "A função horária da velocidade no MRUV relaciona velocidade inicial, aceleração constante e tempo.",
-        "A função horária da velocidade no MRUV é igual à do MRU porque o tempo aparece nas duas."
+        "A equa��o que fornece a velocidade do m�vel em fun��o do tempo em um movimento uniformemente variado.",
+        "A determina��o da velocidade em qualquer instante quando a acelera��o � constante.",
+        "A fun��o hor�ria da velocidade no MRUV relaciona velocidade inicial, acelera��o constante e tempo.",
+        "A fun��o hor�ria da velocidade no MRUV � igual � do MRU porque o tempo aparece nas duas."
       ],
-      "correta": "A função horária da velocidade no MRUV é igual à do MRU porque o tempo aparece nas duas.",
-      "comentario": "A alternativa incorreta expressa um equívoco comum sobre função horária da velocidade no MRUV.",
+      "correta": "A fun��o hor�ria da velocidade no MRUV � igual � do MRU porque o tempo aparece nas duas.",
+      "comentario": "A alternativa incorreta expressa um equ�voco comum sobre fun��o hor�ria da velocidade no MRUV.",
       "tempoEstimado": 45,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -2232,22 +2233,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Função horária da velocidade no MRUV",
+      "subtopico": "Fun��o hor�ria da velocidade no MRUV",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre Física, um estudante afirmou: \"em MRUV, a velocidade em um instante depende da velocidade inicial somada ao produto entre aceleração e tempo\". Qual avaliação é mais consistente?",
+      "enunciado": "Em um debate sobre F�sica, um estudante afirmou: \"em MRUV, a velocidade em um instante depende da velocidade inicial somada ao produto entre acelera��o e tempo\". Qual avalia��o � mais consistente?",
       "opcoes": [
-        "A afirmação está correta, porque a aceleração constante produz uma variação regular da velocidade ao longo do tempo",
-        "A afirmação está incorreta, porque função horária da velocidade no MRUV nunca pode ser usada na Física escolar.",
-        "A afirmação é irrelevante, porque função horária da velocidade no MRUV não se relaciona com interpretação de fenômenos.",
-        "A afirmação está incorreta, porque função horária da velocidade no MRUV elimina a necessidade de medir e comparar grandezas."
+        "A afirma��o est� correta, porque a acelera��o constante produz uma varia��o regular da velocidade ao longo do tempo",
+        "A afirma��o est� incorreta, porque fun��o hor�ria da velocidade no MRUV nunca pode ser usada na F�sica escolar.",
+        "A afirma��o � irrelevante, porque fun��o hor�ria da velocidade no MRUV n�o se relaciona com interpreta��o de fen�menos.",
+        "A afirma��o est� incorreta, porque fun��o hor�ria da velocidade no MRUV elimina a necessidade de medir e comparar grandezas."
       ],
-      "correta": "A afirmação está correta, porque a aceleração constante produz uma variação regular da velocidade ao longo do tempo",
-      "comentario": "A avaliação correta recupera o núcleo conceitual de função horária da velocidade no MRUV.",
+      "correta": "A afirma��o est� correta, porque a acelera��o constante produz uma varia��o regular da velocidade ao longo do tempo",
+      "comentario": "A avalia��o correta recupera o n�cleo conceitual de fun��o hor�ria da velocidade no MRUV.",
       "tempoEstimado": 45,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -2271,22 +2272,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Função horária da velocidade no MRUV",
+      "subtopico": "Fun��o hor�ria da velocidade no MRUV",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se função horária da velocidade no MRUV fosse ignorado(a) na análise de um problema físico, o resultado mais provável seria:",
+      "enunciado": "Se fun��o hor�ria da velocidade no MRUV fosse ignorado(a) na an�lise de um problema f�sico, o resultado mais prov�vel seria:",
       "opcoes": [
-        "não seria possível prever a velocidade do móvel em instantes intermediários de um movimento uniformemente variado",
-        "o problema continuaria exatamente igual, porque função horária da velocidade no MRUV não interfere na análise física",
-        "seria possível resolver a situação sem observar nenhuma grandeza, relação ou modelo",
-        "a interpretação ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
+        "n�o seria poss�vel prever a velocidade do m�vel em instantes intermedi�rios de um movimento uniformemente variado",
+        "o problema continuaria exatamente igual, porque fun��o hor�ria da velocidade no MRUV n�o interfere na an�lise f�sica",
+        "seria poss�vel resolver a situa��o sem observar nenhuma grandeza, rela��o ou modelo",
+        "a interpreta��o ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
       ],
-      "correta": "não seria possível prever a velocidade do móvel em instantes intermediários de um movimento uniformemente variado",
-      "comentario": "Ignorar função horária da velocidade no MRUV compromete a leitura física e a qualidade da solução.",
+      "correta": "n�o seria poss�vel prever a velocidade do m�vel em instantes intermedi�rios de um movimento uniformemente variado",
+      "comentario": "Ignorar fun��o hor�ria da velocidade no MRUV compromete a leitura f�sica e a qualidade da solu��o.",
       "tempoEstimado": 55,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -2310,22 +2311,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Função horária da velocidade no MRUV",
+      "subtopico": "Fun��o hor�ria da velocidade no MRUV",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente função horária da velocidade no MRUV a uma situação escolar ou cotidiana?",
+      "enunciado": "Qual alternativa aplica corretamente fun��o hor�ria da velocidade no MRUV a uma situa��o escolar ou cotidiana?",
       "opcoes": [
         "estimar a velocidade de um corredor que acelera regularmente ao sair da linha de partida",
-        "estimar o comportamento de uma bola lançada para cima no pátio da escola",
-        "calcular quando um corredor alcança outro em uma prova com velocidades diferentes",
-        "ler o gráfico de velocidade de um móvel que acelera regularmente em laboratório"
+        "estimar o comportamento de uma bola lan�ada para cima no p�tio da escola",
+        "calcular quando um corredor alcan�a outro em uma prova com velocidades diferentes",
+        "ler o gr�fico de velocidade de um m�vel que acelera regularmente em laborat�rio"
       ],
       "correta": "estimar a velocidade de um corredor que acelera regularmente ao sair da linha de partida",
-      "comentario": "A aplicação correta mostra como função horária da velocidade no MRUV aparece em contextos próximos do cotidiano.",
+      "comentario": "A aplica��o correta mostra como fun��o hor�ria da velocidade no MRUV aparece em contextos pr�ximos do cotidiano.",
       "tempoEstimado": 55,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -2349,22 +2350,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Função horária da velocidade no MRUV",
+      "subtopico": "Fun��o hor�ria da velocidade no MRUV",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual síntese final representa melhor função horária da velocidade no MRUV?",
+      "enunciado": "Qual s�ntese final representa melhor fun��o hor�ria da velocidade no MRUV?",
       "opcoes": [
-        "a função horária da velocidade no MRUV relaciona velocidade inicial, aceleração constante e tempo",
-        "a função horária do MRU relaciona posição inicial, velocidade constante e tempo para determinar a posição do móvel",
-        "no movimento uniforme, a velocidade permanece constante e a posição varia regularmente com o tempo",
-        "a aceleração descreve como a velocidade varia ao longo do tempo em um movimento variado"
+        "a fun��o hor�ria da velocidade no MRUV relaciona velocidade inicial, acelera��o constante e tempo",
+        "a fun��o hor�ria do MRU relaciona posi��o inicial, velocidade constante e tempo para determinar a posi��o do m�vel",
+        "no movimento uniforme, a velocidade permanece constante e a posi��o varia regularmente com o tempo",
+        "a acelera��o descreve como a velocidade varia ao longo do tempo em um movimento variado"
       ],
-      "correta": "a função horária da velocidade no MRUV relaciona velocidade inicial, aceleração constante e tempo",
-      "comentario": "A síntese correta preserva a definição, o foco e o uso analítico de função horária da velocidade no MRUV.",
+      "correta": "a fun��o hor�ria da velocidade no MRUV relaciona velocidade inicial, acelera��o constante e tempo",
+      "comentario": "A s�ntese correta preserva a defini��o, o foco e o uso anal�tico de fun��o hor�ria da velocidade no MRUV.",
       "tempoEstimado": 55,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -2388,22 +2389,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Função horária da posição no MRUV",
+      "subtopico": "Fun��o hor�ria da posi��o no MRUV",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Física, Função horária da posição no MRUV pode ser definido(a) como:",
+      "enunciado": "Em F�sica, Fun��o hor�ria da posi��o no MRUV pode ser definido(a) como:",
       "opcoes": [
-        "a equação que relaciona posição, posição inicial, velocidade inicial, aceleração constante e tempo no MRUV",
-        "a equação que fornece a posição do móvel em função do tempo no movimento uniforme",
-        "a grandeza constante que indica a variação da posição por unidade de tempo no MRU",
+        "a equa��o que relaciona posi��o, posi��o inicial, velocidade inicial, acelera��o constante e tempo no MRUV",
+        "a equa��o que fornece a posi��o do m�vel em fun��o do tempo no movimento uniforme",
+        "a grandeza constante que indica a varia��o da posi��o por unidade de tempo no MRU",
         "a grandeza que indica como a velocidade se altera ao longo do tempo em um movimento variado"
       ],
-      "correta": "a equação que relaciona posição, posição inicial, velocidade inicial, aceleração constante e tempo no MRUV",
-      "comentario": "Função horária da posição no MRUV refere-se à equação que relaciona posição, posição inicial, velocidade inicial, aceleração constante e tempo no MRUV.",
+      "correta": "a equa��o que relaciona posi��o, posi��o inicial, velocidade inicial, acelera��o constante e tempo no MRUV",
+      "comentario": "Fun��o hor�ria da posi��o no MRUV refere-se � equa��o que relaciona posi��o, posi��o inicial, velocidade inicial, acelera��o constante e tempo no MRUV.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -2427,22 +2428,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Função horária da posição no MRUV",
+      "subtopico": "Fun��o hor�ria da posi��o no MRUV",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: uma esfera é lançada com velocidade inicial conhecida e sua posição precisa ser prevista após alguns segundos Esse caso exemplifica melhor qual subtópico?",
+      "enunciado": "Observe a situa��o: uma esfera � lan�ada com velocidade inicial conhecida e sua posi��o precisa ser prevista ap�s alguns segundos Esse caso exemplifica melhor qual subt�pico?",
       "opcoes": [
-        "Função horária da posição no MRUV",
-        "Função horária do espaço no MRU",
+        "Fun��o hor�ria da posi��o no MRUV",
+        "Fun��o hor�ria do espa�o no MRU",
         "Velocidade no movimento uniforme",
-        "Aceleração no movimento variado"
+        "Acelera��o no movimento variado"
       ],
-      "correta": "Função horária da posição no MRUV",
-      "comentario": "A situação apresentada é um exemplo de função horária da posição no MRUV.",
+      "correta": "Fun��o hor�ria da posi��o no MRUV",
+      "comentario": "A situa��o apresentada � um exemplo de fun��o hor�ria da posi��o no MRUV.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -2466,22 +2467,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Função horária da posição no MRUV",
+      "subtopico": "Fun��o hor�ria da posi��o no MRUV",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmação descreve corretamente função horária da posição no MRUV?",
+      "enunciado": "Qual afirma��o descreve corretamente fun��o hor�ria da posi��o no MRUV?",
       "opcoes": [
-        "A equação que relaciona posição, posição inicial, velocidade inicial, aceleração constante e tempo no MRUV.",
-        "A equação que fornece a posição do móvel em função do tempo no movimento uniforme.",
-        "A grandeza constante que indica a variação da posição por unidade de tempo no MRU.",
+        "A equa��o que relaciona posi��o, posi��o inicial, velocidade inicial, acelera��o constante e tempo no MRUV.",
+        "A equa��o que fornece a posi��o do m�vel em fun��o do tempo no movimento uniforme.",
+        "A grandeza constante que indica a varia��o da posi��o por unidade de tempo no MRU.",
         "A grandeza que indica como a velocidade se altera ao longo do tempo em um movimento variado."
       ],
-      "correta": "A equação que relaciona posição, posição inicial, velocidade inicial, aceleração constante e tempo no MRUV.",
-      "comentario": "A afirmação correta retoma o sentido central de função horária da posição no MRUV.",
+      "correta": "A equa��o que relaciona posi��o, posi��o inicial, velocidade inicial, acelera��o constante e tempo no MRUV.",
+      "comentario": "A afirma��o correta retoma o sentido central de fun��o hor�ria da posi��o no MRUV.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -2505,22 +2506,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Função horária da posição no MRUV",
+      "subtopico": "Fun��o hor�ria da posi��o no MRUV",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa incompatível com função horária da posição no MRUV.",
+      "enunciado": "Assinale a alternativa incompat�vel com fun��o hor�ria da posi��o no MRUV.",
       "opcoes": [
-        "aplicar a equação do MRU para prever posição em um movimento com aceleração constante diferente de zero.",
-        "o cálculo da posição em movimentos de aceleração constante.",
-        "a função horária da posição no MRUV reúne posição inicial, velocidade inicial, aceleração e tempo para localizar o móvel.",
-        "a equação que relaciona posição, posição inicial, velocidade inicial, aceleração constante e tempo no MRUV."
+        "aplicar a equa��o do MRU para prever posi��o em um movimento com acelera��o constante diferente de zero.",
+        "o c�lculo da posi��o em movimentos de acelera��o constante.",
+        "a fun��o hor�ria da posi��o no MRUV re�ne posi��o inicial, velocidade inicial, acelera��o e tempo para localizar o m�vel.",
+        "a equa��o que relaciona posi��o, posi��o inicial, velocidade inicial, acelera��o constante e tempo no MRUV."
       ],
-      "correta": "aplicar a equação do MRU para prever posição em um movimento com aceleração constante diferente de zero.",
-      "comentario": "Aplicar a equação do MRU para prever posição em um movimento com aceleração constante diferente de zero não representa função horária da posição no MRUV, enquanto as demais alternativas se relacionam com esse subtópico.",
+      "correta": "aplicar a equa��o do MRU para prever posi��o em um movimento com acelera��o constante diferente de zero.",
+      "comentario": "Aplicar a equa��o do MRU para prever posi��o em um movimento com acelera��o constante diferente de zero n�o representa fun��o hor�ria da posi��o no MRUV, enquanto as demais alternativas se relacionam com esse subt�pico.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -2544,22 +2545,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Função horária da posição no MRUV",
+      "subtopico": "Fun��o hor�ria da posi��o no MRUV",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando se estuda função horária da posição no MRUV, o foco principal está em:",
+      "enunciado": "Quando se estuda fun��o hor�ria da posi��o no MRUV, o foco principal est� em:",
       "opcoes": [
-        "o cálculo da posição em movimentos de aceleração constante",
-        "a previsão da posição ao longo do tempo em um movimento de velocidade constante",
-        "a constância da taxa de variação da posição no movimento uniforme",
-        "a descrição da variação da velocidade ao longo do tempo no movimento variado"
+        "o c�lculo da posi��o em movimentos de acelera��o constante",
+        "a previs�o da posi��o ao longo do tempo em um movimento de velocidade constante",
+        "a const�ncia da taxa de varia��o da posi��o no movimento uniforme",
+        "a descri��o da varia��o da velocidade ao longo do tempo no movimento variado"
       ],
-      "correta": "o cálculo da posição em movimentos de aceleração constante",
-      "comentario": "Função horária da posição no MRUV volta a atenção para o cálculo da posição em movimentos de aceleração constante.",
+      "correta": "o c�lculo da posi��o em movimentos de acelera��o constante",
+      "comentario": "Fun��o hor�ria da posi��o no MRUV volta a aten��o para o c�lculo da posi��o em movimentos de acelera��o constante.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -2583,22 +2584,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Função horária da posição no MRUV",
+      "subtopico": "Fun��o hor�ria da posi��o no MRUV",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferença entre função horária da posição no MRUV e função horária da velocidade no MRUV é que:",
+      "enunciado": "A principal diferen�a entre fun��o hor�ria da posi��o no MRUV e fun��o hor�ria da velocidade no MRUV � que:",
       "opcoes": [
-        "a função horária da posição no MRUV determina onde o móvel está em certo instante, enquanto a função horária da velocidade no MRUV informa com que velocidade ele se move nesse instante",
-        "Função horária da posição no MRUV e Função horária da velocidade no MRUV são exatamente a mesma ideia física em qualquer situação.",
-        "Função horária da velocidade no MRUV elimina a necessidade de observar função horária da posição no MRUV.",
-        "Função horária da posição no MRUV depende apenas de opinião pessoal, sem relação com grandezas, modelos ou medidas."
+        "a fun��o hor�ria da posi��o no MRUV determina onde o m�vel est� em certo instante, enquanto a fun��o hor�ria da velocidade no MRUV informa com que velocidade ele se move nesse instante",
+        "Fun��o hor�ria da posi��o no MRUV e Fun��o hor�ria da velocidade no MRUV s�o exatamente a mesma ideia f�sica em qualquer situa��o.",
+        "Fun��o hor�ria da velocidade no MRUV elimina a necessidade de observar fun��o hor�ria da posi��o no MRUV.",
+        "Fun��o hor�ria da posi��o no MRUV depende apenas de opini�o pessoal, sem rela��o com grandezas, modelos ou medidas."
       ],
-      "correta": "a função horária da posição no MRUV determina onde o móvel está em certo instante, enquanto a função horária da velocidade no MRUV informa com que velocidade ele se move nesse instante",
-      "comentario": "A comparação correta distingue os dois subtópicos sem confundir seus objetos de estudo.",
+      "correta": "a fun��o hor�ria da posi��o no MRUV determina onde o m�vel est� em certo instante, enquanto a fun��o hor�ria da velocidade no MRUV informa com que velocidade ele se move nesse instante",
+      "comentario": "A compara��o correta distingue os dois subt�picos sem confundir seus objetos de estudo.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -2622,22 +2623,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Função horária da posição no MRUV",
+      "subtopico": "Fun��o hor�ria da posi��o no MRUV",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma observação experimental, registrou-se o seguinte caso: uma esfera é lançada com velocidade inicial conhecida e sua posição precisa ser prevista após alguns segundos A leitura física mais adequada aponta para:",
+      "enunciado": "Em uma observa��o experimental, registrou-se o seguinte caso: uma esfera � lan�ada com velocidade inicial conhecida e sua posi��o precisa ser prevista ap�s alguns segundos A leitura f�sica mais adequada aponta para:",
       "opcoes": [
-        "o caso mostra que a posição em MRUV resulta da combinação entre movimento inicial e efeito acumulado da aceleração",
-        "Função horária da posição no MRUV mostra que as grandezas envolvidas não precisam ser relacionadas para interpretar o caso.",
-        "Função horária da posição no MRUV prova que a situação dispensa qualquer leitura física ou quantitativa.",
-        "Função horária da posição no MRUV significa que o fenômeno não pode ser descrito por variáveis físicas."
+        "o caso mostra que a posi��o em MRUV resulta da combina��o entre movimento inicial e efeito acumulado da acelera��o",
+        "Fun��o hor�ria da posi��o no MRUV mostra que as grandezas envolvidas n�o precisam ser relacionadas para interpretar o caso.",
+        "Fun��o hor�ria da posi��o no MRUV prova que a situa��o dispensa qualquer leitura f�sica ou quantitativa.",
+        "Fun��o hor�ria da posi��o no MRUV significa que o fen�meno n�o pode ser descrito por vari�veis f�sicas."
       ],
-      "correta": "o caso mostra que a posição em MRUV resulta da combinação entre movimento inicial e efeito acumulado da aceleração",
-      "comentario": "Função horária da posição no MRUV permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
+      "correta": "o caso mostra que a posi��o em MRUV resulta da combina��o entre movimento inicial e efeito acumulado da acelera��o",
+      "comentario": "Fun��o hor�ria da posi��o no MRUV permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -2661,22 +2662,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Função horária da posição no MRUV",
+      "subtopico": "Fun��o hor�ria da posi��o no MRUV",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação abaixo evidencia função horária da posição no MRUV de maneira mais clara?",
+      "enunciado": "Qual situa��o abaixo evidencia fun��o hor�ria da posi��o no MRUV de maneira mais clara?",
       "opcoes": [
-        "calcular a altura aproximada de um objeto lançado verticalmente após certo tempo",
-        "calcular onde um estudante em patins estará após alguns segundos mantendo velocidade constante",
-        "analisar o deslocamento regular de uma esteira ou escada rolante em funcionamento contínuo",
-        "avaliar a variação de velocidade de uma bicicleta durante uma arrancada"
+        "calcular a altura aproximada de um objeto lan�ado verticalmente ap�s certo tempo",
+        "calcular onde um estudante em patins estar� ap�s alguns segundos mantendo velocidade constante",
+        "analisar o deslocamento regular de uma esteira ou escada rolante em funcionamento cont�nuo",
+        "avaliar a varia��o de velocidade de uma bicicleta durante uma arrancada"
       ],
-      "correta": "calcular a altura aproximada de um objeto lançado verticalmente após certo tempo",
-      "comentario": "A alternativa correta aproxima função horária da posição no MRUV de uma situação concreta.",
+      "correta": "calcular a altura aproximada de um objeto lan�ado verticalmente ap�s certo tempo",
+      "comentario": "A alternativa correta aproxima fun��o hor�ria da posi��o no MRUV de uma situa��o concreta.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -2700,22 +2701,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Função horária da posição no MRUV",
+      "subtopico": "Fun��o hor�ria da posi��o no MRUV",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"uma esfera é lançada com velocidade inicial conhecida e sua posição precisa ser prevista após alguns segundos\", qual conclusão é mais adequada?",
+      "enunciado": "Ao analisar o caso \"uma esfera � lan�ada com velocidade inicial conhecida e sua posi��o precisa ser prevista ap�s alguns segundos\", qual conclus�o � mais adequada?",
       "opcoes": [
-        "o caso mostra que a posição em MRUV resulta da combinação entre movimento inicial e efeito acumulado da aceleração",
-        "A situação indica que função horária da posição no MRUV não possui relação com medidas, variáveis ou interpretação física.",
-        "A situação prova que função horária da posição no MRUV só existe em exemplos teóricos sem uso cotidiano.",
-        "A situação mostra que função horária da posição no MRUV torna desnecessário comparar dados e modelos."
+        "o caso mostra que a posi��o em MRUV resulta da combina��o entre movimento inicial e efeito acumulado da acelera��o",
+        "A situa��o indica que fun��o hor�ria da posi��o no MRUV n�o possui rela��o com medidas, vari�veis ou interpreta��o f�sica.",
+        "A situa��o prova que fun��o hor�ria da posi��o no MRUV s� existe em exemplos te�ricos sem uso cotidiano.",
+        "A situa��o mostra que fun��o hor�ria da posi��o no MRUV torna desnecess�rio comparar dados e modelos."
       ],
-      "correta": "o caso mostra que a posição em MRUV resulta da combinação entre movimento inicial e efeito acumulado da aceleração",
-      "comentario": "A conclusão correta mantém coerência com os dados apresentados e com função horária da posição no MRUV.",
+      "correta": "o caso mostra que a posi��o em MRUV resulta da combina��o entre movimento inicial e efeito acumulado da acelera��o",
+      "comentario": "A conclus�o correta mant�m coer�ncia com os dados apresentados e com fun��o hor�ria da posi��o no MRUV.",
       "tempoEstimado": 35,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -2739,22 +2740,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Função horária da posição no MRUV",
+      "subtopico": "Fun��o hor�ria da posi��o no MRUV",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com função horária da posição no MRUV?",
+      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com fun��o hor�ria da posi��o no MRUV?",
       "opcoes": [
-        "como determinar a posição de um móvel em MRUV usando tempo, velocidade inicial e aceleração?",
-        "como a equação do MRU permite prever a posição de um móvel em qualquer instante?",
-        "como reconhecer a velocidade constante característica de um movimento uniforme?",
-        "como a aceleração permite descrever a variação da velocidade em um movimento?"
+        "como determinar a posi��o de um m�vel em MRUV usando tempo, velocidade inicial e acelera��o?",
+        "como a equa��o do MRU permite prever a posi��o de um m�vel em qualquer instante?",
+        "como reconhecer a velocidade constante caracter�stica de um movimento uniforme?",
+        "como a acelera��o permite descrever a varia��o da velocidade em um movimento?"
       ],
-      "correta": "como determinar a posição de um móvel em MRUV usando tempo, velocidade inicial e aceleração?",
-      "comentario": "A pergunta correta investiga função horária da posição no MRUV de forma direta e coerente.",
+      "correta": "como determinar a posi��o de um m�vel em MRUV usando tempo, velocidade inicial e acelera��o?",
+      "comentario": "A pergunta correta investiga fun��o hor�ria da posi��o no MRUV de forma direta e coerente.",
       "tempoEstimado": 35,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -2778,22 +2779,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Função horária da posição no MRUV",
+      "subtopico": "Fun��o hor�ria da posi��o no MRUV",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a afirmação que revela compreensão inadequada de função horária da posição no MRUV.",
+      "enunciado": "Assinale a afirma��o que revela compreens�o inadequada de fun��o hor�ria da posi��o no MRUV.",
       "opcoes": [
-        "A equação que relaciona posição, posição inicial, velocidade inicial, aceleração constante e tempo no MRUV.",
-        "O cálculo da posição em movimentos de aceleração constante.",
-        "A função horária da posição no MRUV reúne posição inicial, velocidade inicial, aceleração e tempo para localizar o móvel.",
-        "A posição no MRUV depende apenas da velocidade final do móvel."
+        "A equa��o que relaciona posi��o, posi��o inicial, velocidade inicial, acelera��o constante e tempo no MRUV.",
+        "O c�lculo da posi��o em movimentos de acelera��o constante.",
+        "A fun��o hor�ria da posi��o no MRUV re�ne posi��o inicial, velocidade inicial, acelera��o e tempo para localizar o m�vel.",
+        "A posi��o no MRUV depende apenas da velocidade final do m�vel."
       ],
-      "correta": "A posição no MRUV depende apenas da velocidade final do móvel.",
-      "comentario": "A alternativa incorreta expressa um equívoco comum sobre função horária da posição no MRUV.",
+      "correta": "A posi��o no MRUV depende apenas da velocidade final do m�vel.",
+      "comentario": "A alternativa incorreta expressa um equ�voco comum sobre fun��o hor�ria da posi��o no MRUV.",
       "tempoEstimado": 45,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -2817,22 +2818,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Função horária da posição no MRUV",
+      "subtopico": "Fun��o hor�ria da posi��o no MRUV",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre Física, um estudante afirmou: \"a posição em MRUV depende da posição inicial, da velocidade inicial, da aceleração e do tempo\". Qual avaliação é mais consistente?",
+      "enunciado": "Em um debate sobre F�sica, um estudante afirmou: \"a posi��o em MRUV depende da posi��o inicial, da velocidade inicial, da acelera��o e do tempo\". Qual avalia��o � mais consistente?",
       "opcoes": [
-        "A afirmação está correta, porque o deslocamento acumulado em aceleração constante combina efeitos lineares e quadráticos do tempo",
-        "A afirmação está incorreta, porque função horária da posição no MRUV nunca pode ser usada na Física escolar.",
-        "A afirmação é irrelevante, porque função horária da posição no MRUV não se relaciona com interpretação de fenômenos.",
-        "A afirmação está incorreta, porque função horária da posição no MRUV elimina a necessidade de medir e comparar grandezas."
+        "A afirma��o est� correta, porque o deslocamento acumulado em acelera��o constante combina efeitos lineares e quadr�ticos do tempo",
+        "A afirma��o est� incorreta, porque fun��o hor�ria da posi��o no MRUV nunca pode ser usada na F�sica escolar.",
+        "A afirma��o � irrelevante, porque fun��o hor�ria da posi��o no MRUV n�o se relaciona com interpreta��o de fen�menos.",
+        "A afirma��o est� incorreta, porque fun��o hor�ria da posi��o no MRUV elimina a necessidade de medir e comparar grandezas."
       ],
-      "correta": "A afirmação está correta, porque o deslocamento acumulado em aceleração constante combina efeitos lineares e quadráticos do tempo",
-      "comentario": "A avaliação correta recupera o núcleo conceitual de função horária da posição no MRUV.",
+      "correta": "A afirma��o est� correta, porque o deslocamento acumulado em acelera��o constante combina efeitos lineares e quadr�ticos do tempo",
+      "comentario": "A avalia��o correta recupera o n�cleo conceitual de fun��o hor�ria da posi��o no MRUV.",
       "tempoEstimado": 45,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -2856,22 +2857,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Função horária da posição no MRUV",
+      "subtopico": "Fun��o hor�ria da posi��o no MRUV",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se função horária da posição no MRUV fosse ignorado(a) na análise de um problema físico, o resultado mais provável seria:",
+      "enunciado": "Se fun��o hor�ria da posi��o no MRUV fosse ignorado(a) na an�lise de um problema f�sico, o resultado mais prov�vel seria:",
       "opcoes": [
-        "a trajetória do móvel não poderia ser prevista corretamente em problemas de aceleração constante",
-        "o problema continuaria exatamente igual, porque função horária da posição no MRUV não interfere na análise física",
-        "seria possível resolver a situação sem observar nenhuma grandeza, relação ou modelo",
-        "a interpretação ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
+        "a trajet�ria do m�vel n�o poderia ser prevista corretamente em problemas de acelera��o constante",
+        "o problema continuaria exatamente igual, porque fun��o hor�ria da posi��o no MRUV n�o interfere na an�lise f�sica",
+        "seria poss�vel resolver a situa��o sem observar nenhuma grandeza, rela��o ou modelo",
+        "a interpreta��o ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
       ],
-      "correta": "a trajetória do móvel não poderia ser prevista corretamente em problemas de aceleração constante",
-      "comentario": "Ignorar função horária da posição no MRUV compromete a leitura física e a qualidade da solução.",
+      "correta": "a trajet�ria do m�vel n�o poderia ser prevista corretamente em problemas de acelera��o constante",
+      "comentario": "Ignorar fun��o hor�ria da posi��o no MRUV compromete a leitura f�sica e a qualidade da solu��o.",
       "tempoEstimado": 55,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -2895,22 +2896,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Função horária da posição no MRUV",
+      "subtopico": "Fun��o hor�ria da posi��o no MRUV",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente função horária da posição no MRUV a uma situação escolar ou cotidiana?",
+      "enunciado": "Qual alternativa aplica corretamente fun��o hor�ria da posi��o no MRUV a uma situa��o escolar ou cotidiana?",
       "opcoes": [
-        "calcular a altura aproximada de um objeto lançado verticalmente após certo tempo",
-        "estimar o comportamento de uma bola lançada para cima no pátio da escola",
-        "calcular quando um corredor alcança outro em uma prova com velocidades diferentes",
-        "ler o gráfico de velocidade de um móvel que acelera regularmente em laboratório"
+        "calcular a altura aproximada de um objeto lan�ado verticalmente ap�s certo tempo",
+        "estimar o comportamento de uma bola lan�ada para cima no p�tio da escola",
+        "calcular quando um corredor alcan�a outro em uma prova com velocidades diferentes",
+        "ler o gr�fico de velocidade de um m�vel que acelera regularmente em laborat�rio"
       ],
-      "correta": "calcular a altura aproximada de um objeto lançado verticalmente após certo tempo",
-      "comentario": "A aplicação correta mostra como função horária da posição no MRUV aparece em contextos próximos do cotidiano.",
+      "correta": "calcular a altura aproximada de um objeto lan�ado verticalmente ap�s certo tempo",
+      "comentario": "A aplica��o correta mostra como fun��o hor�ria da posi��o no MRUV aparece em contextos pr�ximos do cotidiano.",
       "tempoEstimado": 55,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -2934,22 +2935,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Função horária da posição no MRUV",
+      "subtopico": "Fun��o hor�ria da posi��o no MRUV",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual síntese final representa melhor função horária da posição no MRUV?",
+      "enunciado": "Qual s�ntese final representa melhor fun��o hor�ria da posi��o no MRUV?",
       "opcoes": [
-        "a função horária da posição no MRUV reúne posição inicial, velocidade inicial, aceleração e tempo para localizar o móvel",
-        "a função horária do MRU relaciona posição inicial, velocidade constante e tempo para determinar a posição do móvel",
-        "no movimento uniforme, a velocidade permanece constante e a posição varia regularmente com o tempo",
-        "a aceleração descreve como a velocidade varia ao longo do tempo em um movimento variado"
+        "a fun��o hor�ria da posi��o no MRUV re�ne posi��o inicial, velocidade inicial, acelera��o e tempo para localizar o m�vel",
+        "a fun��o hor�ria do MRU relaciona posi��o inicial, velocidade constante e tempo para determinar a posi��o do m�vel",
+        "no movimento uniforme, a velocidade permanece constante e a posi��o varia regularmente com o tempo",
+        "a acelera��o descreve como a velocidade varia ao longo do tempo em um movimento variado"
       ],
-      "correta": "a função horária da posição no MRUV reúne posição inicial, velocidade inicial, aceleração e tempo para localizar o móvel",
-      "comentario": "A síntese correta preserva a definição, o foco e o uso analítico de função horária da posição no MRUV.",
+      "correta": "a fun��o hor�ria da posi��o no MRUV re�ne posi��o inicial, velocidade inicial, acelera��o e tempo para localizar o m�vel",
+      "comentario": "A s�ntese correta preserva a defini��o, o foco e o uso anal�tico de fun��o hor�ria da posi��o no MRUV.",
       "tempoEstimado": 55,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -2973,22 +2974,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Equação de Torricelli",
+      "subtopico": "Equa��o de Torricelli",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Física, Equação de Torricelli pode ser definido(a) como:",
+      "enunciado": "Em F�sica, Equa��o de Torricelli pode ser definido(a) como:",
       "opcoes": [
-        "a relação entre velocidades, aceleração e deslocamento em MRUV sem uso explícito do tempo",
-        "a equação que fornece a posição do móvel em função do tempo no movimento uniforme",
-        "a grandeza constante que indica a variação da posição por unidade de tempo no MRU",
+        "a rela��o entre velocidades, acelera��o e deslocamento em MRUV sem uso expl�cito do tempo",
+        "a equa��o que fornece a posi��o do m�vel em fun��o do tempo no movimento uniforme",
+        "a grandeza constante que indica a varia��o da posi��o por unidade de tempo no MRU",
         "a grandeza que indica como a velocidade se altera ao longo do tempo em um movimento variado"
       ],
-      "correta": "a relação entre velocidades, aceleração e deslocamento em MRUV sem uso explícito do tempo",
-      "comentario": "Equação de Torricelli refere-se à relação entre velocidades, aceleração e deslocamento em MRUV sem uso explícito do tempo.",
+      "correta": "a rela��o entre velocidades, acelera��o e deslocamento em MRUV sem uso expl�cito do tempo",
+      "comentario": "Equa��o de Torricelli refere-se � rela��o entre velocidades, acelera��o e deslocamento em MRUV sem uso expl�cito do tempo.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -3012,22 +3013,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Equação de Torricelli",
+      "subtopico": "Equa��o de Torricelli",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: um veículo freia com desaceleração constante e se deseja relacionar sua velocidade inicial com a distância necessária para parar Esse caso exemplifica melhor qual subtópico?",
+      "enunciado": "Observe a situa��o: um ve�culo freia com desacelera��o constante e se deseja relacionar sua velocidade inicial com a dist�ncia necess�ria para parar Esse caso exemplifica melhor qual subt�pico?",
       "opcoes": [
-        "Equação de Torricelli",
-        "Função horária do espaço no MRU",
+        "Equa��o de Torricelli",
+        "Fun��o hor�ria do espa�o no MRU",
         "Velocidade no movimento uniforme",
-        "Aceleração no movimento variado"
+        "Acelera��o no movimento variado"
       ],
-      "correta": "Equação de Torricelli",
-      "comentario": "A situação apresentada é um exemplo de equação de Torricelli.",
+      "correta": "Equa��o de Torricelli",
+      "comentario": "A situa��o apresentada � um exemplo de equa��o de Torricelli.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -3051,22 +3052,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Equação de Torricelli",
+      "subtopico": "Equa��o de Torricelli",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmação descreve corretamente equação de Torricelli?",
+      "enunciado": "Qual afirma��o descreve corretamente equa��o de Torricelli?",
       "opcoes": [
-        "A relação entre velocidades, aceleração e deslocamento em MRUV sem uso explícito do tempo.",
-        "A equação que fornece a posição do móvel em função do tempo no movimento uniforme.",
-        "A grandeza constante que indica a variação da posição por unidade de tempo no MRU.",
+        "A rela��o entre velocidades, acelera��o e deslocamento em MRUV sem uso expl�cito do tempo.",
+        "A equa��o que fornece a posi��o do m�vel em fun��o do tempo no movimento uniforme.",
+        "A grandeza constante que indica a varia��o da posi��o por unidade de tempo no MRU.",
         "A grandeza que indica como a velocidade se altera ao longo do tempo em um movimento variado."
       ],
-      "correta": "A relação entre velocidades, aceleração e deslocamento em MRUV sem uso explícito do tempo.",
-      "comentario": "A afirmação correta retoma o sentido central de equação de Torricelli.",
+      "correta": "A rela��o entre velocidades, acelera��o e deslocamento em MRUV sem uso expl�cito do tempo.",
+      "comentario": "A afirma��o correta retoma o sentido central de equa��o de Torricelli.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -3090,22 +3091,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Equação de Torricelli",
+      "subtopico": "Equa��o de Torricelli",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa incompatível com equação de Torricelli.",
+      "enunciado": "Assinale a alternativa incompat�vel com equa��o de Torricelli.",
       "opcoes": [
-        "usar a equação de Torricelli em movimentos de velocidade constante sem aceleração.",
-        "a análise de movimentos uniformemente variados quando se quer evitar o uso direto do tempo.",
-        "a equação de Torricelli relaciona velocidades, aceleração e deslocamento em MRUV sem precisar explicitar o tempo.",
-        "a relação entre velocidades, aceleração e deslocamento em MRUV sem uso explícito do tempo."
+        "usar a equa��o de Torricelli em movimentos de velocidade constante sem acelera��o.",
+        "a an�lise de movimentos uniformemente variados quando se quer evitar o uso direto do tempo.",
+        "a equa��o de Torricelli relaciona velocidades, acelera��o e deslocamento em MRUV sem precisar explicitar o tempo.",
+        "a rela��o entre velocidades, acelera��o e deslocamento em MRUV sem uso expl�cito do tempo."
       ],
-      "correta": "usar a equação de Torricelli em movimentos de velocidade constante sem aceleração.",
-      "comentario": "Usar a equação de Torricelli em movimentos de velocidade constante sem aceleração não representa equação de Torricelli, enquanto as demais alternativas se relacionam com esse subtópico.",
+      "correta": "usar a equa��o de Torricelli em movimentos de velocidade constante sem acelera��o.",
+      "comentario": "Usar a equa��o de Torricelli em movimentos de velocidade constante sem acelera��o n�o representa equa��o de Torricelli, enquanto as demais alternativas se relacionam com esse subt�pico.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -3129,22 +3130,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Equação de Torricelli",
+      "subtopico": "Equa��o de Torricelli",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando se estuda equação de Torricelli, o foco principal está em:",
+      "enunciado": "Quando se estuda equa��o de Torricelli, o foco principal est� em:",
       "opcoes": [
-        "a análise de movimentos uniformemente variados quando se quer evitar o uso direto do tempo",
-        "a previsão da posição ao longo do tempo em um movimento de velocidade constante",
-        "a constância da taxa de variação da posição no movimento uniforme",
-        "a descrição da variação da velocidade ao longo do tempo no movimento variado"
+        "a an�lise de movimentos uniformemente variados quando se quer evitar o uso direto do tempo",
+        "a previs�o da posi��o ao longo do tempo em um movimento de velocidade constante",
+        "a const�ncia da taxa de varia��o da posi��o no movimento uniforme",
+        "a descri��o da varia��o da velocidade ao longo do tempo no movimento variado"
       ],
-      "correta": "a análise de movimentos uniformemente variados quando se quer evitar o uso direto do tempo",
-      "comentario": "Equação de Torricelli volta a atenção para a análise de movimentos uniformemente variados quando se quer evitar o uso direto do tempo.",
+      "correta": "a an�lise de movimentos uniformemente variados quando se quer evitar o uso direto do tempo",
+      "comentario": "Equa��o de Torricelli volta a aten��o para a an�lise de movimentos uniformemente variados quando se quer evitar o uso direto do tempo.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -3168,22 +3169,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Equação de Torricelli",
+      "subtopico": "Equa��o de Torricelli",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferença entre equação de Torricelli e função horária da velocidade no MRUV é que:",
+      "enunciado": "A principal diferen�a entre equa��o de Torricelli e fun��o hor�ria da velocidade no MRUV � que:",
       "opcoes": [
-        "a equação de Torricelli relaciona velocidade, aceleração e deslocamento sem usar diretamente o tempo, enquanto a função horária da velocidade no MRUV depende do tempo para calcular a velocidade",
-        "Equação de Torricelli e Função horária da velocidade no MRUV são exatamente a mesma ideia física em qualquer situação.",
-        "Função horária da velocidade no MRUV elimina a necessidade de observar equação de Torricelli.",
-        "Equação de Torricelli depende apenas de opinião pessoal, sem relação com grandezas, modelos ou medidas."
+        "a equa��o de Torricelli relaciona velocidade, acelera��o e deslocamento sem usar diretamente o tempo, enquanto a fun��o hor�ria da velocidade no MRUV depende do tempo para calcular a velocidade",
+        "Equa��o de Torricelli e Fun��o hor�ria da velocidade no MRUV s�o exatamente a mesma ideia f�sica em qualquer situa��o.",
+        "Fun��o hor�ria da velocidade no MRUV elimina a necessidade de observar equa��o de Torricelli.",
+        "Equa��o de Torricelli depende apenas de opini�o pessoal, sem rela��o com grandezas, modelos ou medidas."
       ],
-      "correta": "a equação de Torricelli relaciona velocidade, aceleração e deslocamento sem usar diretamente o tempo, enquanto a função horária da velocidade no MRUV depende do tempo para calcular a velocidade",
-      "comentario": "A comparação correta distingue os dois subtópicos sem confundir seus objetos de estudo.",
+      "correta": "a equa��o de Torricelli relaciona velocidade, acelera��o e deslocamento sem usar diretamente o tempo, enquanto a fun��o hor�ria da velocidade no MRUV depende do tempo para calcular a velocidade",
+      "comentario": "A compara��o correta distingue os dois subt�picos sem confundir seus objetos de estudo.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -3207,22 +3208,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Equação de Torricelli",
+      "subtopico": "Equa��o de Torricelli",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma observação experimental, registrou-se o seguinte caso: um veículo freia com desaceleração constante e se deseja relacionar sua velocidade inicial com a distância necessária para parar A leitura física mais adequada aponta para:",
+      "enunciado": "Em uma observa��o experimental, registrou-se o seguinte caso: um ve�culo freia com desacelera��o constante e se deseja relacionar sua velocidade inicial com a dist�ncia necess�ria para parar A leitura f�sica mais adequada aponta para:",
       "opcoes": [
-        "o caso mostra que Torricelli simplifica a resolução quando o tempo não é o dado central do problema",
-        "Equação de Torricelli mostra que as grandezas envolvidas não precisam ser relacionadas para interpretar o caso.",
-        "Equação de Torricelli prova que a situação dispensa qualquer leitura física ou quantitativa.",
-        "Equação de Torricelli significa que o fenômeno não pode ser descrito por variáveis físicas."
+        "o caso mostra que Torricelli simplifica a resolu��o quando o tempo n�o � o dado central do problema",
+        "Equa��o de Torricelli mostra que as grandezas envolvidas n�o precisam ser relacionadas para interpretar o caso.",
+        "Equa��o de Torricelli prova que a situa��o dispensa qualquer leitura f�sica ou quantitativa.",
+        "Equa��o de Torricelli significa que o fen�meno n�o pode ser descrito por vari�veis f�sicas."
       ],
-      "correta": "o caso mostra que Torricelli simplifica a resolução quando o tempo não é o dado central do problema",
-      "comentario": "Equação de Torricelli permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
+      "correta": "o caso mostra que Torricelli simplifica a resolu��o quando o tempo n�o � o dado central do problema",
+      "comentario": "Equa��o de Torricelli permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -3246,22 +3247,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Equação de Torricelli",
+      "subtopico": "Equa��o de Torricelli",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação abaixo evidencia equação de Torricelli de maneira mais clara?",
+      "enunciado": "Qual situa��o abaixo evidencia equa��o de Torricelli de maneira mais clara?",
       "opcoes": [
-        "estimar a velocidade de um ciclista após certo deslocamento mantendo aceleração constante",
-        "calcular onde um estudante em patins estará após alguns segundos mantendo velocidade constante",
-        "analisar o deslocamento regular de uma esteira ou escada rolante em funcionamento contínuo",
-        "avaliar a variação de velocidade de uma bicicleta durante uma arrancada"
+        "estimar a velocidade de um ciclista ap�s certo deslocamento mantendo acelera��o constante",
+        "calcular onde um estudante em patins estar� ap�s alguns segundos mantendo velocidade constante",
+        "analisar o deslocamento regular de uma esteira ou escada rolante em funcionamento cont�nuo",
+        "avaliar a varia��o de velocidade de uma bicicleta durante uma arrancada"
       ],
-      "correta": "estimar a velocidade de um ciclista após certo deslocamento mantendo aceleração constante",
-      "comentario": "A alternativa correta aproxima equação de Torricelli de uma situação concreta.",
+      "correta": "estimar a velocidade de um ciclista ap�s certo deslocamento mantendo acelera��o constante",
+      "comentario": "A alternativa correta aproxima equa��o de Torricelli de uma situa��o concreta.",
       "tempoEstimado": 35,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -3285,22 +3286,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Equação de Torricelli",
+      "subtopico": "Equa��o de Torricelli",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"um veículo freia com desaceleração constante e se deseja relacionar sua velocidade inicial com a distância necessária para parar\", qual conclusão é mais adequada?",
+      "enunciado": "Ao analisar o caso \"um ve�culo freia com desacelera��o constante e se deseja relacionar sua velocidade inicial com a dist�ncia necess�ria para parar\", qual conclus�o � mais adequada?",
       "opcoes": [
-        "o caso mostra que Torricelli simplifica a resolução quando o tempo não é o dado central do problema",
-        "A situação indica que equação de Torricelli não possui relação com medidas, variáveis ou interpretação física.",
-        "A situação prova que equação de Torricelli só existe em exemplos teóricos sem uso cotidiano.",
-        "A situação mostra que equação de Torricelli torna desnecessário comparar dados e modelos."
+        "o caso mostra que Torricelli simplifica a resolu��o quando o tempo n�o � o dado central do problema",
+        "A situa��o indica que equa��o de Torricelli n�o possui rela��o com medidas, vari�veis ou interpreta��o f�sica.",
+        "A situa��o prova que equa��o de Torricelli s� existe em exemplos te�ricos sem uso cotidiano.",
+        "A situa��o mostra que equa��o de Torricelli torna desnecess�rio comparar dados e modelos."
       ],
-      "correta": "o caso mostra que Torricelli simplifica a resolução quando o tempo não é o dado central do problema",
-      "comentario": "A conclusão correta mantém coerência com os dados apresentados e com equação de Torricelli.",
+      "correta": "o caso mostra que Torricelli simplifica a resolu��o quando o tempo n�o � o dado central do problema",
+      "comentario": "A conclus�o correta mant�m coer�ncia com os dados apresentados e com equa��o de Torricelli.",
       "tempoEstimado": 35,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -3324,22 +3325,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Equação de Torricelli",
+      "subtopico": "Equa��o de Torricelli",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com equação de Torricelli?",
+      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com equa��o de Torricelli?",
       "opcoes": [
-        "em quais situações a equação de Torricelli é mais útil do que as funções horárias com tempo?",
-        "como a equação do MRU permite prever a posição de um móvel em qualquer instante?",
-        "como reconhecer a velocidade constante característica de um movimento uniforme?",
-        "como a aceleração permite descrever a variação da velocidade em um movimento?"
+        "em quais situa��es a equa��o de Torricelli � mais �til do que as fun��es hor�rias com tempo?",
+        "como a equa��o do MRU permite prever a posi��o de um m�vel em qualquer instante?",
+        "como reconhecer a velocidade constante caracter�stica de um movimento uniforme?",
+        "como a acelera��o permite descrever a varia��o da velocidade em um movimento?"
       ],
-      "correta": "em quais situações a equação de Torricelli é mais útil do que as funções horárias com tempo?",
-      "comentario": "A pergunta correta investiga equação de Torricelli de forma direta e coerente.",
+      "correta": "em quais situa��es a equa��o de Torricelli � mais �til do que as fun��es hor�rias com tempo?",
+      "comentario": "A pergunta correta investiga equa��o de Torricelli de forma direta e coerente.",
       "tempoEstimado": 35,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -3363,22 +3364,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Equação de Torricelli",
+      "subtopico": "Equa��o de Torricelli",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a afirmação que revela compreensão inadequada de equação de Torricelli.",
+      "enunciado": "Assinale a afirma��o que revela compreens�o inadequada de equa��o de Torricelli.",
       "opcoes": [
-        "A relação entre velocidades, aceleração e deslocamento em MRUV sem uso explícito do tempo.",
-        "A análise de movimentos uniformemente variados quando se quer evitar o uso direto do tempo.",
-        "A equação de Torricelli relaciona velocidades, aceleração e deslocamento em MRUV sem precisar explicitar o tempo.",
-        "A equação de Torricelli só serve para movimentos de queda livre."
+        "A rela��o entre velocidades, acelera��o e deslocamento em MRUV sem uso expl�cito do tempo.",
+        "A an�lise de movimentos uniformemente variados quando se quer evitar o uso direto do tempo.",
+        "A equa��o de Torricelli relaciona velocidades, acelera��o e deslocamento em MRUV sem precisar explicitar o tempo.",
+        "A equa��o de Torricelli s� serve para movimentos de queda livre."
       ],
-      "correta": "A equação de Torricelli só serve para movimentos de queda livre.",
-      "comentario": "A alternativa incorreta expressa um equívoco comum sobre equação de Torricelli.",
+      "correta": "A equa��o de Torricelli s� serve para movimentos de queda livre.",
+      "comentario": "A alternativa incorreta expressa um equ�voco comum sobre equa��o de Torricelli.",
       "tempoEstimado": 45,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -3402,22 +3403,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Equação de Torricelli",
+      "subtopico": "Equa��o de Torricelli",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre Física, um estudante afirmou: \"a equação de Torricelli é útil quando se conhece deslocamento e aceleração, mas não se quer usar o tempo diretamente\". Qual avaliação é mais consistente?",
+      "enunciado": "Em um debate sobre F�sica, um estudante afirmou: \"a equa��o de Torricelli � �til quando se conhece deslocamento e acelera��o, mas n�o se quer usar o tempo diretamente\". Qual avalia��o � mais consistente?",
       "opcoes": [
-        "A afirmação está correta, porque ela conecta velocidades e deslocamento em aceleração constante sem exigir o intervalo de tempo como variável explícita",
-        "A afirmação está incorreta, porque equação de Torricelli nunca pode ser usada na Física escolar.",
-        "A afirmação é irrelevante, porque equação de Torricelli não se relaciona com interpretação de fenômenos.",
-        "A afirmação está incorreta, porque equação de Torricelli elimina a necessidade de medir e comparar grandezas."
+        "A afirma��o est� correta, porque ela conecta velocidades e deslocamento em acelera��o constante sem exigir o intervalo de tempo como vari�vel expl�cita",
+        "A afirma��o est� incorreta, porque equa��o de Torricelli nunca pode ser usada na F�sica escolar.",
+        "A afirma��o � irrelevante, porque equa��o de Torricelli n�o se relaciona com interpreta��o de fen�menos.",
+        "A afirma��o est� incorreta, porque equa��o de Torricelli elimina a necessidade de medir e comparar grandezas."
       ],
-      "correta": "A afirmação está correta, porque ela conecta velocidades e deslocamento em aceleração constante sem exigir o intervalo de tempo como variável explícita",
-      "comentario": "A avaliação correta recupera o núcleo conceitual de equação de Torricelli.",
+      "correta": "A afirma��o est� correta, porque ela conecta velocidades e deslocamento em acelera��o constante sem exigir o intervalo de tempo como vari�vel expl�cita",
+      "comentario": "A avalia��o correta recupera o n�cleo conceitual de equa��o de Torricelli.",
       "tempoEstimado": 45,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -3441,22 +3442,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Equação de Torricelli",
+      "subtopico": "Equa��o de Torricelli",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se equação de Torricelli fosse ignorado(a) na análise de um problema físico, o resultado mais provável seria:",
+      "enunciado": "Se equa��o de Torricelli fosse ignorado(a) na an�lise de um problema f�sico, o resultado mais prov�vel seria:",
       "opcoes": [
-        "problemas de frenagem, alcance ou variação de velocidade ficariam mais longos e menos diretos do que o necessário",
-        "o problema continuaria exatamente igual, porque equação de Torricelli não interfere na análise física",
-        "seria possível resolver a situação sem observar nenhuma grandeza, relação ou modelo",
-        "a interpretação ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
+        "problemas de frenagem, alcance ou varia��o de velocidade ficariam mais longos e menos diretos do que o necess�rio",
+        "o problema continuaria exatamente igual, porque equa��o de Torricelli n�o interfere na an�lise f�sica",
+        "seria poss�vel resolver a situa��o sem observar nenhuma grandeza, rela��o ou modelo",
+        "a interpreta��o ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
       ],
-      "correta": "problemas de frenagem, alcance ou variação de velocidade ficariam mais longos e menos diretos do que o necessário",
-      "comentario": "Ignorar equação de Torricelli compromete a leitura física e a qualidade da solução.",
+      "correta": "problemas de frenagem, alcance ou varia��o de velocidade ficariam mais longos e menos diretos do que o necess�rio",
+      "comentario": "Ignorar equa��o de Torricelli compromete a leitura f�sica e a qualidade da solu��o.",
       "tempoEstimado": 55,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -3480,22 +3481,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Equação de Torricelli",
+      "subtopico": "Equa��o de Torricelli",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente equação de Torricelli a uma situação escolar ou cotidiana?",
+      "enunciado": "Qual alternativa aplica corretamente equa��o de Torricelli a uma situa��o escolar ou cotidiana?",
       "opcoes": [
-        "estimar a velocidade de um ciclista após certo deslocamento mantendo aceleração constante",
-        "estimar o comportamento de uma bola lançada para cima no pátio da escola",
-        "calcular quando um corredor alcança outro em uma prova com velocidades diferentes",
-        "ler o gráfico de velocidade de um móvel que acelera regularmente em laboratório"
+        "estimar a velocidade de um ciclista ap�s certo deslocamento mantendo acelera��o constante",
+        "estimar o comportamento de uma bola lan�ada para cima no p�tio da escola",
+        "calcular quando um corredor alcan�a outro em uma prova com velocidades diferentes",
+        "ler o gr�fico de velocidade de um m�vel que acelera regularmente em laborat�rio"
       ],
-      "correta": "estimar a velocidade de um ciclista após certo deslocamento mantendo aceleração constante",
-      "comentario": "A aplicação correta mostra como equação de Torricelli aparece em contextos próximos do cotidiano.",
+      "correta": "estimar a velocidade de um ciclista ap�s certo deslocamento mantendo acelera��o constante",
+      "comentario": "A aplica��o correta mostra como equa��o de Torricelli aparece em contextos pr�ximos do cotidiano.",
       "tempoEstimado": 55,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -3519,22 +3520,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Equação de Torricelli",
+      "subtopico": "Equa��o de Torricelli",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual síntese final representa melhor equação de Torricelli?",
+      "enunciado": "Qual s�ntese final representa melhor equa��o de Torricelli?",
       "opcoes": [
-        "a equação de Torricelli relaciona velocidades, aceleração e deslocamento em MRUV sem precisar explicitar o tempo",
-        "a função horária do MRU relaciona posição inicial, velocidade constante e tempo para determinar a posição do móvel",
-        "no movimento uniforme, a velocidade permanece constante e a posição varia regularmente com o tempo",
-        "a aceleração descreve como a velocidade varia ao longo do tempo em um movimento variado"
+        "a equa��o de Torricelli relaciona velocidades, acelera��o e deslocamento em MRUV sem precisar explicitar o tempo",
+        "a fun��o hor�ria do MRU relaciona posi��o inicial, velocidade constante e tempo para determinar a posi��o do m�vel",
+        "no movimento uniforme, a velocidade permanece constante e a posi��o varia regularmente com o tempo",
+        "a acelera��o descreve como a velocidade varia ao longo do tempo em um movimento variado"
       ],
-      "correta": "a equação de Torricelli relaciona velocidades, aceleração e deslocamento em MRUV sem precisar explicitar o tempo",
-      "comentario": "A síntese correta preserva a definição, o foco e o uso analítico de equação de Torricelli.",
+      "correta": "a equa��o de Torricelli relaciona velocidades, acelera��o e deslocamento em MRUV sem precisar explicitar o tempo",
+      "comentario": "A s�ntese correta preserva a defini��o, o foco e o uso anal�tico de equa��o de Torricelli.",
       "tempoEstimado": 55,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -3558,22 +3559,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Gráficos do movimento uniforme",
+      "subtopico": "Gr�ficos do movimento uniforme",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Física, Gráficos do movimento uniforme pode ser definido(a) como:",
+      "enunciado": "Em F�sica, Gr�ficos do movimento uniforme pode ser definido(a) como:",
       "opcoes": [
-        "a interpretação de gráficos do MRU, nos quais posição varia linearmente com o tempo e velocidade permanece constante",
-        "a equação que fornece a posição do móvel em função do tempo no movimento uniforme",
-        "a grandeza constante que indica a variação da posição por unidade de tempo no MRU",
+        "a interpreta��o de gr�ficos do MRU, nos quais posi��o varia linearmente com o tempo e velocidade permanece constante",
+        "a equa��o que fornece a posi��o do m�vel em fun��o do tempo no movimento uniforme",
+        "a grandeza constante que indica a varia��o da posi��o por unidade de tempo no MRU",
         "a grandeza que indica como a velocidade se altera ao longo do tempo em um movimento variado"
       ],
-      "correta": "a interpretação de gráficos do MRU, nos quais posição varia linearmente com o tempo e velocidade permanece constante",
-      "comentario": "Gráficos do movimento uniforme refere-se à interpretação de gráficos do MRU, nos quais posição varia linearmente com o tempo e velocidade permanece constante.",
+      "correta": "a interpreta��o de gr�ficos do MRU, nos quais posi��o varia linearmente com o tempo e velocidade permanece constante",
+      "comentario": "Gr�ficos do movimento uniforme refere-se � interpreta��o de gr�ficos do MRU, nos quais posi��o varia linearmente com o tempo e velocidade permanece constante.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -3597,22 +3598,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Gráficos do movimento uniforme",
+      "subtopico": "Gr�ficos do movimento uniforme",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: um gráfico posição por tempo é uma reta e o gráfico velocidade por tempo é uma linha horizontal Esse caso exemplifica melhor qual subtópico?",
+      "enunciado": "Observe a situa��o: um gr�fico posi��o por tempo � uma reta e o gr�fico velocidade por tempo � uma linha horizontal Esse caso exemplifica melhor qual subt�pico?",
       "opcoes": [
-        "Gráficos do movimento uniforme",
-        "Função horária do espaço no MRU",
+        "Gr�ficos do movimento uniforme",
+        "Fun��o hor�ria do espa�o no MRU",
         "Velocidade no movimento uniforme",
-        "Aceleração no movimento variado"
+        "Acelera��o no movimento variado"
       ],
-      "correta": "Gráficos do movimento uniforme",
-      "comentario": "A situação apresentada é um exemplo de gráficos do movimento uniforme.",
+      "correta": "Gr�ficos do movimento uniforme",
+      "comentario": "A situa��o apresentada � um exemplo de gr�ficos do movimento uniforme.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -3636,22 +3637,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Gráficos do movimento uniforme",
+      "subtopico": "Gr�ficos do movimento uniforme",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmação descreve corretamente gráficos do movimento uniforme?",
+      "enunciado": "Qual afirma��o descreve corretamente gr�ficos do movimento uniforme?",
       "opcoes": [
-        "A interpretação de gráficos do MRU, nos quais posição varia linearmente com o tempo e velocidade permanece constante.",
-        "A equação que fornece a posição do móvel em função do tempo no movimento uniforme.",
-        "A grandeza constante que indica a variação da posição por unidade de tempo no MRU.",
+        "A interpreta��o de gr�ficos do MRU, nos quais posi��o varia linearmente com o tempo e velocidade permanece constante.",
+        "A equa��o que fornece a posi��o do m�vel em fun��o do tempo no movimento uniforme.",
+        "A grandeza constante que indica a varia��o da posi��o por unidade de tempo no MRU.",
         "A grandeza que indica como a velocidade se altera ao longo do tempo em um movimento variado."
       ],
-      "correta": "A interpretação de gráficos do MRU, nos quais posição varia linearmente com o tempo e velocidade permanece constante.",
-      "comentario": "A afirmação correta retoma o sentido central de gráficos do movimento uniforme.",
+      "correta": "A interpreta��o de gr�ficos do MRU, nos quais posi��o varia linearmente com o tempo e velocidade permanece constante.",
+      "comentario": "A afirma��o correta retoma o sentido central de gr�ficos do movimento uniforme.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -3675,22 +3676,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Gráficos do movimento uniforme",
+      "subtopico": "Gr�ficos do movimento uniforme",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa incompatível com gráficos do movimento uniforme.",
+      "enunciado": "Assinale a alternativa incompat�vel com gr�ficos do movimento uniforme.",
       "opcoes": [
-        "esperar um gráfico curvo de posição por tempo para um movimento de velocidade constante.",
-        "a leitura das representações gráficas associadas ao movimento uniforme.",
-        "gráficos do MRU revelam velocidade constante e variação linear da posição com o tempo.",
-        "a interpretação de gráficos do MRU, nos quais posição varia linearmente com o tempo e velocidade permanece constante."
+        "esperar um gr�fico curvo de posi��o por tempo para um movimento de velocidade constante.",
+        "a leitura das representa��es gr�ficas associadas ao movimento uniforme.",
+        "gr�ficos do MRU revelam velocidade constante e varia��o linear da posi��o com o tempo.",
+        "a interpreta��o de gr�ficos do MRU, nos quais posi��o varia linearmente com o tempo e velocidade permanece constante."
       ],
-      "correta": "esperar um gráfico curvo de posição por tempo para um movimento de velocidade constante.",
-      "comentario": "Esperar um gráfico curvo de posição por tempo para um movimento de velocidade constante não representa gráficos do movimento uniforme, enquanto as demais alternativas se relacionam com esse subtópico.",
+      "correta": "esperar um gr�fico curvo de posi��o por tempo para um movimento de velocidade constante.",
+      "comentario": "Esperar um gr�fico curvo de posi��o por tempo para um movimento de velocidade constante n�o representa gr�ficos do movimento uniforme, enquanto as demais alternativas se relacionam com esse subt�pico.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -3714,22 +3715,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Gráficos do movimento uniforme",
+      "subtopico": "Gr�ficos do movimento uniforme",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando se estuda gráficos do movimento uniforme, o foco principal está em:",
+      "enunciado": "Quando se estuda gr�ficos do movimento uniforme, o foco principal est� em:",
       "opcoes": [
-        "a leitura das representações gráficas associadas ao movimento uniforme",
-        "a previsão da posição ao longo do tempo em um movimento de velocidade constante",
-        "a constância da taxa de variação da posição no movimento uniforme",
-        "a descrição da variação da velocidade ao longo do tempo no movimento variado"
+        "a leitura das representa��es gr�ficas associadas ao movimento uniforme",
+        "a previs�o da posi��o ao longo do tempo em um movimento de velocidade constante",
+        "a const�ncia da taxa de varia��o da posi��o no movimento uniforme",
+        "a descri��o da varia��o da velocidade ao longo do tempo no movimento variado"
       ],
-      "correta": "a leitura das representações gráficas associadas ao movimento uniforme",
-      "comentario": "Gráficos do movimento uniforme volta a atenção para a leitura das representações gráficas associadas ao movimento uniforme.",
+      "correta": "a leitura das representa��es gr�ficas associadas ao movimento uniforme",
+      "comentario": "Gr�ficos do movimento uniforme volta a aten��o para a leitura das representa��es gr�ficas associadas ao movimento uniforme.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -3753,22 +3754,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Gráficos do movimento uniforme",
+      "subtopico": "Gr�ficos do movimento uniforme",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferença entre gráficos do movimento uniforme e gráficos do movimento uniformemente variado é que:",
+      "enunciado": "A principal diferen�a entre gr�ficos do movimento uniforme e gr�ficos do movimento uniformemente variado � que:",
       "opcoes": [
-        "gráficos do movimento uniforme mostram posição linear no tempo e velocidade constante, enquanto gráficos do movimento uniformemente variado mostram velocidade linear e posição curva no tempo",
-        "Gráficos do movimento uniforme e Gráficos do movimento uniformemente variado são exatamente a mesma ideia física em qualquer situação.",
-        "Gráficos do movimento uniformemente variado elimina a necessidade de observar gráficos do movimento uniforme.",
-        "Gráficos do movimento uniforme depende apenas de opinião pessoal, sem relação com grandezas, modelos ou medidas."
+        "gr�ficos do movimento uniforme mostram posi��o linear no tempo e velocidade constante, enquanto gr�ficos do movimento uniformemente variado mostram velocidade linear e posi��o curva no tempo",
+        "Gr�ficos do movimento uniforme e Gr�ficos do movimento uniformemente variado s�o exatamente a mesma ideia f�sica em qualquer situa��o.",
+        "Gr�ficos do movimento uniformemente variado elimina a necessidade de observar gr�ficos do movimento uniforme.",
+        "Gr�ficos do movimento uniforme depende apenas de opini�o pessoal, sem rela��o com grandezas, modelos ou medidas."
       ],
-      "correta": "gráficos do movimento uniforme mostram posição linear no tempo e velocidade constante, enquanto gráficos do movimento uniformemente variado mostram velocidade linear e posição curva no tempo",
-      "comentario": "A comparação correta distingue os dois subtópicos sem confundir seus objetos de estudo.",
+      "correta": "gr�ficos do movimento uniforme mostram posi��o linear no tempo e velocidade constante, enquanto gr�ficos do movimento uniformemente variado mostram velocidade linear e posi��o curva no tempo",
+      "comentario": "A compara��o correta distingue os dois subt�picos sem confundir seus objetos de estudo.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -3792,22 +3793,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Gráficos do movimento uniforme",
+      "subtopico": "Gr�ficos do movimento uniforme",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma observação experimental, registrou-se o seguinte caso: um gráfico posição por tempo é uma reta e o gráfico velocidade por tempo é uma linha horizontal A leitura física mais adequada aponta para:",
+      "enunciado": "Em uma observa��o experimental, registrou-se o seguinte caso: um gr�fico posi��o por tempo � uma reta e o gr�fico velocidade por tempo � uma linha horizontal A leitura f�sica mais adequada aponta para:",
       "opcoes": [
-        "o caso mostra que a forma dos gráficos ajuda a reconhecer a constância da velocidade no MRU",
-        "Gráficos do movimento uniforme mostra que as grandezas envolvidas não precisam ser relacionadas para interpretar o caso.",
-        "Gráficos do movimento uniforme prova que a situação dispensa qualquer leitura física ou quantitativa.",
-        "Gráficos do movimento uniforme significa que o fenômeno não pode ser descrito por variáveis físicas."
+        "o caso mostra que a forma dos gr�ficos ajuda a reconhecer a const�ncia da velocidade no MRU",
+        "Gr�ficos do movimento uniforme mostra que as grandezas envolvidas n�o precisam ser relacionadas para interpretar o caso.",
+        "Gr�ficos do movimento uniforme prova que a situa��o dispensa qualquer leitura f�sica ou quantitativa.",
+        "Gr�ficos do movimento uniforme significa que o fen�meno n�o pode ser descrito por vari�veis f�sicas."
       ],
-      "correta": "o caso mostra que a forma dos gráficos ajuda a reconhecer a constância da velocidade no MRU",
-      "comentario": "Gráficos do movimento uniforme permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
+      "correta": "o caso mostra que a forma dos gr�ficos ajuda a reconhecer a const�ncia da velocidade no MRU",
+      "comentario": "Gr�ficos do movimento uniforme permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -3831,22 +3832,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Gráficos do movimento uniforme",
+      "subtopico": "Gr�ficos do movimento uniforme",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação abaixo evidencia gráficos do movimento uniforme de maneira mais clara?",
+      "enunciado": "Qual situa��o abaixo evidencia gr�ficos do movimento uniforme de maneira mais clara?",
       "opcoes": [
-        "analisar o gráfico de um carrinho que percorre distâncias iguais em tempos iguais",
-        "calcular onde um estudante em patins estará após alguns segundos mantendo velocidade constante",
-        "analisar o deslocamento regular de uma esteira ou escada rolante em funcionamento contínuo",
-        "avaliar a variação de velocidade de uma bicicleta durante uma arrancada"
+        "analisar o gr�fico de um carrinho que percorre dist�ncias iguais em tempos iguais",
+        "calcular onde um estudante em patins estar� ap�s alguns segundos mantendo velocidade constante",
+        "analisar o deslocamento regular de uma esteira ou escada rolante em funcionamento cont�nuo",
+        "avaliar a varia��o de velocidade de uma bicicleta durante uma arrancada"
       ],
-      "correta": "analisar o gráfico de um carrinho que percorre distâncias iguais em tempos iguais",
-      "comentario": "A alternativa correta aproxima gráficos do movimento uniforme de uma situação concreta.",
+      "correta": "analisar o gr�fico de um carrinho que percorre dist�ncias iguais em tempos iguais",
+      "comentario": "A alternativa correta aproxima gr�ficos do movimento uniforme de uma situa��o concreta.",
       "tempoEstimado": 35,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -3870,22 +3871,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Gráficos do movimento uniforme",
+      "subtopico": "Gr�ficos do movimento uniforme",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"um gráfico posição por tempo é uma reta e o gráfico velocidade por tempo é uma linha horizontal\", qual conclusão é mais adequada?",
+      "enunciado": "Ao analisar o caso \"um gr�fico posi��o por tempo � uma reta e o gr�fico velocidade por tempo � uma linha horizontal\", qual conclus�o � mais adequada?",
       "opcoes": [
-        "o caso mostra que a forma dos gráficos ajuda a reconhecer a constância da velocidade no MRU",
-        "A situação indica que gráficos do movimento uniforme não possui relação com medidas, variáveis ou interpretação física.",
-        "A situação prova que gráficos do movimento uniforme só existe em exemplos teóricos sem uso cotidiano.",
-        "A situação mostra que gráficos do movimento uniforme torna desnecessário comparar dados e modelos."
+        "o caso mostra que a forma dos gr�ficos ajuda a reconhecer a const�ncia da velocidade no MRU",
+        "A situa��o indica que gr�ficos do movimento uniforme n�o possui rela��o com medidas, vari�veis ou interpreta��o f�sica.",
+        "A situa��o prova que gr�ficos do movimento uniforme s� existe em exemplos te�ricos sem uso cotidiano.",
+        "A situa��o mostra que gr�ficos do movimento uniforme torna desnecess�rio comparar dados e modelos."
       ],
-      "correta": "o caso mostra que a forma dos gráficos ajuda a reconhecer a constância da velocidade no MRU",
-      "comentario": "A conclusão correta mantém coerência com os dados apresentados e com gráficos do movimento uniforme.",
+      "correta": "o caso mostra que a forma dos gr�ficos ajuda a reconhecer a const�ncia da velocidade no MRU",
+      "comentario": "A conclus�o correta mant�m coer�ncia com os dados apresentados e com gr�ficos do movimento uniforme.",
       "tempoEstimado": 35,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -3909,22 +3910,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Gráficos do movimento uniforme",
+      "subtopico": "Gr�ficos do movimento uniforme",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com gráficos do movimento uniforme?",
+      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com gr�ficos do movimento uniforme?",
       "opcoes": [
-        "como identificar um movimento uniforme a partir de seus gráficos?",
-        "como a equação do MRU permite prever a posição de um móvel em qualquer instante?",
-        "como reconhecer a velocidade constante característica de um movimento uniforme?",
-        "como a aceleração permite descrever a variação da velocidade em um movimento?"
+        "como identificar um movimento uniforme a partir de seus gr�ficos?",
+        "como a equa��o do MRU permite prever a posi��o de um m�vel em qualquer instante?",
+        "como reconhecer a velocidade constante caracter�stica de um movimento uniforme?",
+        "como a acelera��o permite descrever a varia��o da velocidade em um movimento?"
       ],
-      "correta": "como identificar um movimento uniforme a partir de seus gráficos?",
-      "comentario": "A pergunta correta investiga gráficos do movimento uniforme de forma direta e coerente.",
+      "correta": "como identificar um movimento uniforme a partir de seus gr�ficos?",
+      "comentario": "A pergunta correta investiga gr�ficos do movimento uniforme de forma direta e coerente.",
       "tempoEstimado": 35,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -3948,22 +3949,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Gráficos do movimento uniforme",
+      "subtopico": "Gr�ficos do movimento uniforme",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a afirmação que revela compreensão inadequada de gráficos do movimento uniforme.",
+      "enunciado": "Assinale a afirma��o que revela compreens�o inadequada de gr�ficos do movimento uniforme.",
       "opcoes": [
-        "A interpretação de gráficos do MRU, nos quais posição varia linearmente com o tempo e velocidade permanece constante.",
-        "A leitura das representações gráficas associadas ao movimento uniforme.",
-        "Gráficos do MRU revelam velocidade constante e variação linear da posição com o tempo.",
-        "Qualquer gráfico com linha reta representa sempre aceleração constante diferente de zero."
+        "A interpreta��o de gr�ficos do MRU, nos quais posi��o varia linearmente com o tempo e velocidade permanece constante.",
+        "A leitura das representa��es gr�ficas associadas ao movimento uniforme.",
+        "Gr�ficos do MRU revelam velocidade constante e varia��o linear da posi��o com o tempo.",
+        "Qualquer gr�fico com linha reta representa sempre acelera��o constante diferente de zero."
       ],
-      "correta": "Qualquer gráfico com linha reta representa sempre aceleração constante diferente de zero.",
-      "comentario": "A alternativa incorreta expressa um equívoco comum sobre gráficos do movimento uniforme.",
+      "correta": "Qualquer gr�fico com linha reta representa sempre acelera��o constante diferente de zero.",
+      "comentario": "A alternativa incorreta expressa um equ�voco comum sobre gr�ficos do movimento uniforme.",
       "tempoEstimado": 45,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -3987,22 +3988,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Gráficos do movimento uniforme",
+      "subtopico": "Gr�ficos do movimento uniforme",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre Física, um estudante afirmou: \"em MRU, o gráfico posição por tempo é linear porque a velocidade é constante\". Qual avaliação é mais consistente?",
+      "enunciado": "Em um debate sobre F�sica, um estudante afirmou: \"em MRU, o gr�fico posi��o por tempo � linear porque a velocidade � constante\". Qual avalia��o � mais consistente?",
       "opcoes": [
-        "A afirmação está correta, porque a posição aumenta ou diminui de modo regular quando a velocidade não muda",
-        "A afirmação está incorreta, porque gráficos do movimento uniforme nunca pode ser usada na Física escolar.",
-        "A afirmação é irrelevante, porque gráficos do movimento uniforme não se relaciona com interpretação de fenômenos.",
-        "A afirmação está incorreta, porque gráficos do movimento uniforme elimina a necessidade de medir e comparar grandezas."
+        "A afirma��o est� correta, porque a posi��o aumenta ou diminui de modo regular quando a velocidade n�o muda",
+        "A afirma��o est� incorreta, porque gr�ficos do movimento uniforme nunca pode ser usada na F�sica escolar.",
+        "A afirma��o � irrelevante, porque gr�ficos do movimento uniforme n�o se relaciona com interpreta��o de fen�menos.",
+        "A afirma��o est� incorreta, porque gr�ficos do movimento uniforme elimina a necessidade de medir e comparar grandezas."
       ],
-      "correta": "A afirmação está correta, porque a posição aumenta ou diminui de modo regular quando a velocidade não muda",
-      "comentario": "A avaliação correta recupera o núcleo conceitual de gráficos do movimento uniforme.",
+      "correta": "A afirma��o est� correta, porque a posi��o aumenta ou diminui de modo regular quando a velocidade n�o muda",
+      "comentario": "A avalia��o correta recupera o n�cleo conceitual de gr�ficos do movimento uniforme.",
       "tempoEstimado": 45,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -4026,22 +4027,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Gráficos do movimento uniforme",
+      "subtopico": "Gr�ficos do movimento uniforme",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se gráficos do movimento uniforme fosse ignorado(a) na análise de um problema físico, o resultado mais provável seria:",
+      "enunciado": "Se gr�ficos do movimento uniforme fosse ignorado(a) na an�lise de um problema f�sico, o resultado mais prov�vel seria:",
       "opcoes": [
-        "a interpretação gráfica do movimento uniforme ficaria confusa, misturando regularidade com aceleração",
-        "o problema continuaria exatamente igual, porque gráficos do movimento uniforme não interfere na análise física",
-        "seria possível resolver a situação sem observar nenhuma grandeza, relação ou modelo",
-        "a interpretação ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
+        "a interpreta��o gr�fica do movimento uniforme ficaria confusa, misturando regularidade com acelera��o",
+        "o problema continuaria exatamente igual, porque gr�ficos do movimento uniforme n�o interfere na an�lise f�sica",
+        "seria poss�vel resolver a situa��o sem observar nenhuma grandeza, rela��o ou modelo",
+        "a interpreta��o ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
       ],
-      "correta": "a interpretação gráfica do movimento uniforme ficaria confusa, misturando regularidade com aceleração",
-      "comentario": "Ignorar gráficos do movimento uniforme compromete a leitura física e a qualidade da solução.",
+      "correta": "a interpreta��o gr�fica do movimento uniforme ficaria confusa, misturando regularidade com acelera��o",
+      "comentario": "Ignorar gr�ficos do movimento uniforme compromete a leitura f�sica e a qualidade da solu��o.",
       "tempoEstimado": 55,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -4065,22 +4066,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Gráficos do movimento uniforme",
+      "subtopico": "Gr�ficos do movimento uniforme",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente gráficos do movimento uniforme a uma situação escolar ou cotidiana?",
+      "enunciado": "Qual alternativa aplica corretamente gr�ficos do movimento uniforme a uma situa��o escolar ou cotidiana?",
       "opcoes": [
-        "analisar o gráfico de um carrinho que percorre distâncias iguais em tempos iguais",
-        "estimar o comportamento de uma bola lançada para cima no pátio da escola",
-        "calcular quando um corredor alcança outro em uma prova com velocidades diferentes",
-        "ler o gráfico de velocidade de um móvel que acelera regularmente em laboratório"
+        "analisar o gr�fico de um carrinho que percorre dist�ncias iguais em tempos iguais",
+        "estimar o comportamento de uma bola lan�ada para cima no p�tio da escola",
+        "calcular quando um corredor alcan�a outro em uma prova com velocidades diferentes",
+        "ler o gr�fico de velocidade de um m�vel que acelera regularmente em laborat�rio"
       ],
-      "correta": "analisar o gráfico de um carrinho que percorre distâncias iguais em tempos iguais",
-      "comentario": "A aplicação correta mostra como gráficos do movimento uniforme aparece em contextos próximos do cotidiano.",
+      "correta": "analisar o gr�fico de um carrinho que percorre dist�ncias iguais em tempos iguais",
+      "comentario": "A aplica��o correta mostra como gr�ficos do movimento uniforme aparece em contextos pr�ximos do cotidiano.",
       "tempoEstimado": 55,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -4104,22 +4105,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Gráficos do movimento uniforme",
+      "subtopico": "Gr�ficos do movimento uniforme",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual síntese final representa melhor gráficos do movimento uniforme?",
+      "enunciado": "Qual s�ntese final representa melhor gr�ficos do movimento uniforme?",
       "opcoes": [
-        "gráficos do MRU revelam velocidade constante e variação linear da posição com o tempo",
-        "a função horária do MRU relaciona posição inicial, velocidade constante e tempo para determinar a posição do móvel",
-        "no movimento uniforme, a velocidade permanece constante e a posição varia regularmente com o tempo",
-        "a aceleração descreve como a velocidade varia ao longo do tempo em um movimento variado"
+        "gr�ficos do MRU revelam velocidade constante e varia��o linear da posi��o com o tempo",
+        "a fun��o hor�ria do MRU relaciona posi��o inicial, velocidade constante e tempo para determinar a posi��o do m�vel",
+        "no movimento uniforme, a velocidade permanece constante e a posi��o varia regularmente com o tempo",
+        "a acelera��o descreve como a velocidade varia ao longo do tempo em um movimento variado"
       ],
-      "correta": "gráficos do MRU revelam velocidade constante e variação linear da posição com o tempo",
-      "comentario": "A síntese correta preserva a definição, o foco e o uso analítico de gráficos do movimento uniforme.",
+      "correta": "gr�ficos do MRU revelam velocidade constante e varia��o linear da posi��o com o tempo",
+      "comentario": "A s�ntese correta preserva a defini��o, o foco e o uso anal�tico de gr�ficos do movimento uniforme.",
       "tempoEstimado": 55,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -4143,22 +4144,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Gráficos do movimento uniformemente variado",
+      "subtopico": "Gr�ficos do movimento uniformemente variado",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Física, Gráficos do movimento uniformemente variado pode ser definido(a) como:",
+      "enunciado": "Em F�sica, Gr�ficos do movimento uniformemente variado pode ser definido(a) como:",
       "opcoes": [
-        "a interpretação de gráficos do MRUV, nos quais a velocidade varia linearmente com o tempo e a posição apresenta comportamento parabólico",
-        "a equação que fornece a posição do móvel em função do tempo no movimento uniforme",
-        "a grandeza constante que indica a variação da posição por unidade de tempo no MRU",
+        "a interpreta��o de gr�ficos do MRUV, nos quais a velocidade varia linearmente com o tempo e a posi��o apresenta comportamento parab�lico",
+        "a equa��o que fornece a posi��o do m�vel em fun��o do tempo no movimento uniforme",
+        "a grandeza constante que indica a varia��o da posi��o por unidade de tempo no MRU",
         "a grandeza que indica como a velocidade se altera ao longo do tempo em um movimento variado"
       ],
-      "correta": "a interpretação de gráficos do MRUV, nos quais a velocidade varia linearmente com o tempo e a posição apresenta comportamento parabólico",
-      "comentario": "Gráficos do movimento uniformemente variado refere-se à interpretação de gráficos do MRUV, nos quais a velocidade varia linearmente com o tempo e a posição apresenta comportamento parabólico.",
+      "correta": "a interpreta��o de gr�ficos do MRUV, nos quais a velocidade varia linearmente com o tempo e a posi��o apresenta comportamento parab�lico",
+      "comentario": "Gr�ficos do movimento uniformemente variado refere-se � interpreta��o de gr�ficos do MRUV, nos quais a velocidade varia linearmente com o tempo e a posi��o apresenta comportamento parab�lico.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -4182,22 +4183,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Gráficos do movimento uniformemente variado",
+      "subtopico": "Gr�ficos do movimento uniformemente variado",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: um gráfico velocidade por tempo aparece como reta inclinada e o gráfico posição por tempo apresenta curvatura Esse caso exemplifica melhor qual subtópico?",
+      "enunciado": "Observe a situa��o: um gr�fico velocidade por tempo aparece como reta inclinada e o gr�fico posi��o por tempo apresenta curvatura Esse caso exemplifica melhor qual subt�pico?",
       "opcoes": [
-        "Gráficos do movimento uniformemente variado",
-        "Função horária do espaço no MRU",
+        "Gr�ficos do movimento uniformemente variado",
+        "Fun��o hor�ria do espa�o no MRU",
         "Velocidade no movimento uniforme",
-        "Aceleração no movimento variado"
+        "Acelera��o no movimento variado"
       ],
-      "correta": "Gráficos do movimento uniformemente variado",
-      "comentario": "A situação apresentada é um exemplo de gráficos do movimento uniformemente variado.",
+      "correta": "Gr�ficos do movimento uniformemente variado",
+      "comentario": "A situa��o apresentada � um exemplo de gr�ficos do movimento uniformemente variado.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -4221,22 +4222,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Gráficos do movimento uniformemente variado",
+      "subtopico": "Gr�ficos do movimento uniformemente variado",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmação descreve corretamente gráficos do movimento uniformemente variado?",
+      "enunciado": "Qual afirma��o descreve corretamente gr�ficos do movimento uniformemente variado?",
       "opcoes": [
-        "A interpretação de gráficos do MRUV, nos quais a velocidade varia linearmente com o tempo e a posição apresenta comportamento parabólico.",
-        "A equação que fornece a posição do móvel em função do tempo no movimento uniforme.",
-        "A grandeza constante que indica a variação da posição por unidade de tempo no MRU.",
+        "A interpreta��o de gr�ficos do MRUV, nos quais a velocidade varia linearmente com o tempo e a posi��o apresenta comportamento parab�lico.",
+        "A equa��o que fornece a posi��o do m�vel em fun��o do tempo no movimento uniforme.",
+        "A grandeza constante que indica a varia��o da posi��o por unidade de tempo no MRU.",
         "A grandeza que indica como a velocidade se altera ao longo do tempo em um movimento variado."
       ],
-      "correta": "A interpretação de gráficos do MRUV, nos quais a velocidade varia linearmente com o tempo e a posição apresenta comportamento parabólico.",
-      "comentario": "A afirmação correta retoma o sentido central de gráficos do movimento uniformemente variado.",
+      "correta": "A interpreta��o de gr�ficos do MRUV, nos quais a velocidade varia linearmente com o tempo e a posi��o apresenta comportamento parab�lico.",
+      "comentario": "A afirma��o correta retoma o sentido central de gr�ficos do movimento uniformemente variado.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -4260,22 +4261,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Gráficos do movimento uniformemente variado",
+      "subtopico": "Gr�ficos do movimento uniformemente variado",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa incompatível com gráficos do movimento uniformemente variado.",
+      "enunciado": "Assinale a alternativa incompat�vel com gr�ficos do movimento uniformemente variado.",
       "opcoes": [
-        "interpretar um gráfico horizontal de velocidade como sinal de MRUV com aceleração diferente de zero.",
-        "a leitura das representações gráficas associadas a movimentos com aceleração constante.",
-        "gráficos do MRUV mostram velocidade linear no tempo e posição com curvatura característica.",
-        "a interpretação de gráficos do MRUV, nos quais a velocidade varia linearmente com o tempo e a posição apresenta comportamento parabólico."
+        "interpretar um gr�fico horizontal de velocidade como sinal de MRUV com acelera��o diferente de zero.",
+        "a leitura das representa��es gr�ficas associadas a movimentos com acelera��o constante.",
+        "gr�ficos do MRUV mostram velocidade linear no tempo e posi��o com curvatura caracter�stica.",
+        "a interpreta��o de gr�ficos do MRUV, nos quais a velocidade varia linearmente com o tempo e a posi��o apresenta comportamento parab�lico."
       ],
-      "correta": "interpretar um gráfico horizontal de velocidade como sinal de MRUV com aceleração diferente de zero.",
-      "comentario": "Interpretar um gráfico horizontal de velocidade como sinal de MRUV com aceleração diferente de zero não representa gráficos do movimento uniformemente variado, enquanto as demais alternativas se relacionam com esse subtópico.",
+      "correta": "interpretar um gr�fico horizontal de velocidade como sinal de MRUV com acelera��o diferente de zero.",
+      "comentario": "Interpretar um gr�fico horizontal de velocidade como sinal de MRUV com acelera��o diferente de zero n�o representa gr�ficos do movimento uniformemente variado, enquanto as demais alternativas se relacionam com esse subt�pico.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -4299,22 +4300,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Gráficos do movimento uniformemente variado",
+      "subtopico": "Gr�ficos do movimento uniformemente variado",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando se estuda gráficos do movimento uniformemente variado, o foco principal está em:",
+      "enunciado": "Quando se estuda gr�ficos do movimento uniformemente variado, o foco principal est� em:",
       "opcoes": [
-        "a leitura das representações gráficas associadas a movimentos com aceleração constante",
-        "a previsão da posição ao longo do tempo em um movimento de velocidade constante",
-        "a constância da taxa de variação da posição no movimento uniforme",
-        "a descrição da variação da velocidade ao longo do tempo no movimento variado"
+        "a leitura das representa��es gr�ficas associadas a movimentos com acelera��o constante",
+        "a previs�o da posi��o ao longo do tempo em um movimento de velocidade constante",
+        "a const�ncia da taxa de varia��o da posi��o no movimento uniforme",
+        "a descri��o da varia��o da velocidade ao longo do tempo no movimento variado"
       ],
-      "correta": "a leitura das representações gráficas associadas a movimentos com aceleração constante",
-      "comentario": "Gráficos do movimento uniformemente variado volta a atenção para a leitura das representações gráficas associadas a movimentos com aceleração constante.",
+      "correta": "a leitura das representa��es gr�ficas associadas a movimentos com acelera��o constante",
+      "comentario": "Gr�ficos do movimento uniformemente variado volta a aten��o para a leitura das representa��es gr�ficas associadas a movimentos com acelera��o constante.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -4338,22 +4339,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Gráficos do movimento uniformemente variado",
+      "subtopico": "Gr�ficos do movimento uniformemente variado",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferença entre gráficos do movimento uniformemente variado e gráficos do movimento uniforme é que:",
+      "enunciado": "A principal diferen�a entre gr�ficos do movimento uniformemente variado e gr�ficos do movimento uniforme � que:",
       "opcoes": [
-        "gráficos do movimento uniformemente variado mostram velocidade linear e posição não linear no tempo, enquanto gráficos do movimento uniforme mostram velocidade constante e posição linear",
-        "Gráficos do movimento uniformemente variado e Gráficos do movimento uniforme são exatamente a mesma ideia física em qualquer situação.",
-        "Gráficos do movimento uniforme elimina a necessidade de observar gráficos do movimento uniformemente variado.",
-        "Gráficos do movimento uniformemente variado depende apenas de opinião pessoal, sem relação com grandezas, modelos ou medidas."
+        "gr�ficos do movimento uniformemente variado mostram velocidade linear e posi��o n�o linear no tempo, enquanto gr�ficos do movimento uniforme mostram velocidade constante e posi��o linear",
+        "Gr�ficos do movimento uniformemente variado e Gr�ficos do movimento uniforme s�o exatamente a mesma ideia f�sica em qualquer situa��o.",
+        "Gr�ficos do movimento uniforme elimina a necessidade de observar gr�ficos do movimento uniformemente variado.",
+        "Gr�ficos do movimento uniformemente variado depende apenas de opini�o pessoal, sem rela��o com grandezas, modelos ou medidas."
       ],
-      "correta": "gráficos do movimento uniformemente variado mostram velocidade linear e posição não linear no tempo, enquanto gráficos do movimento uniforme mostram velocidade constante e posição linear",
-      "comentario": "A comparação correta distingue os dois subtópicos sem confundir seus objetos de estudo.",
+      "correta": "gr�ficos do movimento uniformemente variado mostram velocidade linear e posi��o n�o linear no tempo, enquanto gr�ficos do movimento uniforme mostram velocidade constante e posi��o linear",
+      "comentario": "A compara��o correta distingue os dois subt�picos sem confundir seus objetos de estudo.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -4377,22 +4378,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Gráficos do movimento uniformemente variado",
+      "subtopico": "Gr�ficos do movimento uniformemente variado",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma observação experimental, registrou-se o seguinte caso: um gráfico velocidade por tempo aparece como reta inclinada e o gráfico posição por tempo apresenta curvatura A leitura física mais adequada aponta para:",
+      "enunciado": "Em uma observa��o experimental, registrou-se o seguinte caso: um gr�fico velocidade por tempo aparece como reta inclinada e o gr�fico posi��o por tempo apresenta curvatura A leitura f�sica mais adequada aponta para:",
       "opcoes": [
-        "o caso mostra que a forma do gráfico permite distinguir aceleração constante de velocidade constante",
-        "Gráficos do movimento uniformemente variado mostra que as grandezas envolvidas não precisam ser relacionadas para interpretar o caso.",
-        "Gráficos do movimento uniformemente variado prova que a situação dispensa qualquer leitura física ou quantitativa.",
-        "Gráficos do movimento uniformemente variado significa que o fenômeno não pode ser descrito por variáveis físicas."
+        "o caso mostra que a forma do gr�fico permite distinguir acelera��o constante de velocidade constante",
+        "Gr�ficos do movimento uniformemente variado mostra que as grandezas envolvidas n�o precisam ser relacionadas para interpretar o caso.",
+        "Gr�ficos do movimento uniformemente variado prova que a situa��o dispensa qualquer leitura f�sica ou quantitativa.",
+        "Gr�ficos do movimento uniformemente variado significa que o fen�meno n�o pode ser descrito por vari�veis f�sicas."
       ],
-      "correta": "o caso mostra que a forma do gráfico permite distinguir aceleração constante de velocidade constante",
-      "comentario": "Gráficos do movimento uniformemente variado permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
+      "correta": "o caso mostra que a forma do gr�fico permite distinguir acelera��o constante de velocidade constante",
+      "comentario": "Gr�ficos do movimento uniformemente variado permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -4416,22 +4417,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Gráficos do movimento uniformemente variado",
+      "subtopico": "Gr�ficos do movimento uniformemente variado",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação abaixo evidencia gráficos do movimento uniformemente variado de maneira mais clara?",
+      "enunciado": "Qual situa��o abaixo evidencia gr�ficos do movimento uniformemente variado de maneira mais clara?",
       "opcoes": [
-        "ler o gráfico de velocidade de um móvel que acelera regularmente em laboratório",
-        "calcular onde um estudante em patins estará após alguns segundos mantendo velocidade constante",
-        "analisar o deslocamento regular de uma esteira ou escada rolante em funcionamento contínuo",
-        "avaliar a variação de velocidade de uma bicicleta durante uma arrancada"
+        "ler o gr�fico de velocidade de um m�vel que acelera regularmente em laborat�rio",
+        "calcular onde um estudante em patins estar� ap�s alguns segundos mantendo velocidade constante",
+        "analisar o deslocamento regular de uma esteira ou escada rolante em funcionamento cont�nuo",
+        "avaliar a varia��o de velocidade de uma bicicleta durante uma arrancada"
       ],
-      "correta": "ler o gráfico de velocidade de um móvel que acelera regularmente em laboratório",
-      "comentario": "A alternativa correta aproxima gráficos do movimento uniformemente variado de uma situação concreta.",
+      "correta": "ler o gr�fico de velocidade de um m�vel que acelera regularmente em laborat�rio",
+      "comentario": "A alternativa correta aproxima gr�ficos do movimento uniformemente variado de uma situa��o concreta.",
       "tempoEstimado": 35,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -4455,22 +4456,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Gráficos do movimento uniformemente variado",
+      "subtopico": "Gr�ficos do movimento uniformemente variado",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"um gráfico velocidade por tempo aparece como reta inclinada e o gráfico posição por tempo apresenta curvatura\", qual conclusão é mais adequada?",
+      "enunciado": "Ao analisar o caso \"um gr�fico velocidade por tempo aparece como reta inclinada e o gr�fico posi��o por tempo apresenta curvatura\", qual conclus�o � mais adequada?",
       "opcoes": [
-        "o caso mostra que a forma do gráfico permite distinguir aceleração constante de velocidade constante",
-        "A situação indica que gráficos do movimento uniformemente variado não possui relação com medidas, variáveis ou interpretação física.",
-        "A situação prova que gráficos do movimento uniformemente variado só existe em exemplos teóricos sem uso cotidiano.",
-        "A situação mostra que gráficos do movimento uniformemente variado torna desnecessário comparar dados e modelos."
+        "o caso mostra que a forma do gr�fico permite distinguir acelera��o constante de velocidade constante",
+        "A situa��o indica que gr�ficos do movimento uniformemente variado n�o possui rela��o com medidas, vari�veis ou interpreta��o f�sica.",
+        "A situa��o prova que gr�ficos do movimento uniformemente variado s� existe em exemplos te�ricos sem uso cotidiano.",
+        "A situa��o mostra que gr�ficos do movimento uniformemente variado torna desnecess�rio comparar dados e modelos."
       ],
-      "correta": "o caso mostra que a forma do gráfico permite distinguir aceleração constante de velocidade constante",
-      "comentario": "A conclusão correta mantém coerência com os dados apresentados e com gráficos do movimento uniformemente variado.",
+      "correta": "o caso mostra que a forma do gr�fico permite distinguir acelera��o constante de velocidade constante",
+      "comentario": "A conclus�o correta mant�m coer�ncia com os dados apresentados e com gr�ficos do movimento uniformemente variado.",
       "tempoEstimado": 35,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -4494,22 +4495,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Gráficos do movimento uniformemente variado",
+      "subtopico": "Gr�ficos do movimento uniformemente variado",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com gráficos do movimento uniformemente variado?",
+      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com gr�ficos do movimento uniformemente variado?",
       "opcoes": [
-        "como reconhecer um MRUV a partir dos gráficos de velocidade e posição?",
-        "como a equação do MRU permite prever a posição de um móvel em qualquer instante?",
-        "como reconhecer a velocidade constante característica de um movimento uniforme?",
-        "como a aceleração permite descrever a variação da velocidade em um movimento?"
+        "como reconhecer um MRUV a partir dos gr�ficos de velocidade e posi��o?",
+        "como a equa��o do MRU permite prever a posi��o de um m�vel em qualquer instante?",
+        "como reconhecer a velocidade constante caracter�stica de um movimento uniforme?",
+        "como a acelera��o permite descrever a varia��o da velocidade em um movimento?"
       ],
-      "correta": "como reconhecer um MRUV a partir dos gráficos de velocidade e posição?",
-      "comentario": "A pergunta correta investiga gráficos do movimento uniformemente variado de forma direta e coerente.",
+      "correta": "como reconhecer um MRUV a partir dos gr�ficos de velocidade e posi��o?",
+      "comentario": "A pergunta correta investiga gr�ficos do movimento uniformemente variado de forma direta e coerente.",
       "tempoEstimado": 35,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -4533,22 +4534,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Gráficos do movimento uniformemente variado",
+      "subtopico": "Gr�ficos do movimento uniformemente variado",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a afirmação que revela compreensão inadequada de gráficos do movimento uniformemente variado.",
+      "enunciado": "Assinale a afirma��o que revela compreens�o inadequada de gr�ficos do movimento uniformemente variado.",
       "opcoes": [
-        "A interpretação de gráficos do MRUV, nos quais a velocidade varia linearmente com o tempo e a posição apresenta comportamento parabólico.",
-        "A leitura das representações gráficas associadas a movimentos com aceleração constante.",
-        "Gráficos do MRUV mostram velocidade linear no tempo e posição com curvatura característica.",
-        "Em MRUV, o gráfico velocidade por tempo deve ser sempre horizontal."
+        "A interpreta��o de gr�ficos do MRUV, nos quais a velocidade varia linearmente com o tempo e a posi��o apresenta comportamento parab�lico.",
+        "A leitura das representa��es gr�ficas associadas a movimentos com acelera��o constante.",
+        "Gr�ficos do MRUV mostram velocidade linear no tempo e posi��o com curvatura caracter�stica.",
+        "Em MRUV, o gr�fico velocidade por tempo deve ser sempre horizontal."
       ],
-      "correta": "Em MRUV, o gráfico velocidade por tempo deve ser sempre horizontal.",
-      "comentario": "A alternativa incorreta expressa um equívoco comum sobre gráficos do movimento uniformemente variado.",
+      "correta": "Em MRUV, o gr�fico velocidade por tempo deve ser sempre horizontal.",
+      "comentario": "A alternativa incorreta expressa um equ�voco comum sobre gr�ficos do movimento uniformemente variado.",
       "tempoEstimado": 45,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -4572,22 +4573,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Gráficos do movimento uniformemente variado",
+      "subtopico": "Gr�ficos do movimento uniformemente variado",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre Física, um estudante afirmou: \"quando a aceleração é constante, a velocidade varia linearmente com o tempo\". Qual avaliação é mais consistente?",
+      "enunciado": "Em um debate sobre F�sica, um estudante afirmou: \"quando a acelera��o � constante, a velocidade varia linearmente com o tempo\". Qual avalia��o � mais consistente?",
       "opcoes": [
-        "A afirmação está correta, porque a aceleração constante produz variações iguais de velocidade em intervalos de tempo iguais",
-        "A afirmação está incorreta, porque gráficos do movimento uniformemente variado nunca pode ser usada na Física escolar.",
-        "A afirmação é irrelevante, porque gráficos do movimento uniformemente variado não se relaciona com interpretação de fenômenos.",
-        "A afirmação está incorreta, porque gráficos do movimento uniformemente variado elimina a necessidade de medir e comparar grandezas."
+        "A afirma��o est� correta, porque a acelera��o constante produz varia��es iguais de velocidade em intervalos de tempo iguais",
+        "A afirma��o est� incorreta, porque gr�ficos do movimento uniformemente variado nunca pode ser usada na F�sica escolar.",
+        "A afirma��o � irrelevante, porque gr�ficos do movimento uniformemente variado n�o se relaciona com interpreta��o de fen�menos.",
+        "A afirma��o est� incorreta, porque gr�ficos do movimento uniformemente variado elimina a necessidade de medir e comparar grandezas."
       ],
-      "correta": "A afirmação está correta, porque a aceleração constante produz variações iguais de velocidade em intervalos de tempo iguais",
-      "comentario": "A avaliação correta recupera o núcleo conceitual de gráficos do movimento uniformemente variado.",
+      "correta": "A afirma��o est� correta, porque a acelera��o constante produz varia��es iguais de velocidade em intervalos de tempo iguais",
+      "comentario": "A avalia��o correta recupera o n�cleo conceitual de gr�ficos do movimento uniformemente variado.",
       "tempoEstimado": 45,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -4611,22 +4612,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Gráficos do movimento uniformemente variado",
+      "subtopico": "Gr�ficos do movimento uniformemente variado",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se gráficos do movimento uniformemente variado fosse ignorado(a) na análise de um problema físico, o resultado mais provável seria:",
+      "enunciado": "Se gr�ficos do movimento uniformemente variado fosse ignorado(a) na an�lise de um problema f�sico, o resultado mais prov�vel seria:",
       "opcoes": [
-        "seria difícil identificar a presença de aceleração constante e interpretar corretamente a evolução do movimento",
-        "o problema continuaria exatamente igual, porque gráficos do movimento uniformemente variado não interfere na análise física",
-        "seria possível resolver a situação sem observar nenhuma grandeza, relação ou modelo",
-        "a interpretação ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
+        "seria dif�cil identificar a presen�a de acelera��o constante e interpretar corretamente a evolu��o do movimento",
+        "o problema continuaria exatamente igual, porque gr�ficos do movimento uniformemente variado n�o interfere na an�lise f�sica",
+        "seria poss�vel resolver a situa��o sem observar nenhuma grandeza, rela��o ou modelo",
+        "a interpreta��o ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
       ],
-      "correta": "seria difícil identificar a presença de aceleração constante e interpretar corretamente a evolução do movimento",
-      "comentario": "Ignorar gráficos do movimento uniformemente variado compromete a leitura física e a qualidade da solução.",
+      "correta": "seria dif�cil identificar a presen�a de acelera��o constante e interpretar corretamente a evolu��o do movimento",
+      "comentario": "Ignorar gr�ficos do movimento uniformemente variado compromete a leitura f�sica e a qualidade da solu��o.",
       "tempoEstimado": 55,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -4650,22 +4651,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Gráficos do movimento uniformemente variado",
+      "subtopico": "Gr�ficos do movimento uniformemente variado",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente gráficos do movimento uniformemente variado a uma situação escolar ou cotidiana?",
+      "enunciado": "Qual alternativa aplica corretamente gr�ficos do movimento uniformemente variado a uma situa��o escolar ou cotidiana?",
       "opcoes": [
-        "ler o gráfico de velocidade de um móvel que acelera regularmente em laboratório",
-        "estimar o comportamento de uma bola lançada para cima no pátio da escola",
-        "calcular quando um corredor alcança outro em uma prova com velocidades diferentes",
-        "analisar o gráfico de um carrinho que percorre distâncias iguais em tempos iguais"
+        "ler o gr�fico de velocidade de um m�vel que acelera regularmente em laborat�rio",
+        "estimar o comportamento de uma bola lan�ada para cima no p�tio da escola",
+        "calcular quando um corredor alcan�a outro em uma prova com velocidades diferentes",
+        "analisar o gr�fico de um carrinho que percorre dist�ncias iguais em tempos iguais"
       ],
-      "correta": "ler o gráfico de velocidade de um móvel que acelera regularmente em laboratório",
-      "comentario": "A aplicação correta mostra como gráficos do movimento uniformemente variado aparece em contextos próximos do cotidiano.",
+      "correta": "ler o gr�fico de velocidade de um m�vel que acelera regularmente em laborat�rio",
+      "comentario": "A aplica��o correta mostra como gr�ficos do movimento uniformemente variado aparece em contextos pr�ximos do cotidiano.",
       "tempoEstimado": 55,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -4689,22 +4690,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Gráficos do movimento uniformemente variado",
+      "subtopico": "Gr�ficos do movimento uniformemente variado",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual síntese final representa melhor gráficos do movimento uniformemente variado?",
+      "enunciado": "Qual s�ntese final representa melhor gr�ficos do movimento uniformemente variado?",
       "opcoes": [
-        "gráficos do MRUV mostram velocidade linear no tempo e posição com curvatura característica",
-        "a função horária do MRU relaciona posição inicial, velocidade constante e tempo para determinar a posição do móvel",
-        "no movimento uniforme, a velocidade permanece constante e a posição varia regularmente com o tempo",
-        "a aceleração descreve como a velocidade varia ao longo do tempo em um movimento variado"
+        "gr�ficos do MRUV mostram velocidade linear no tempo e posi��o com curvatura caracter�stica",
+        "a fun��o hor�ria do MRU relaciona posi��o inicial, velocidade constante e tempo para determinar a posi��o do m�vel",
+        "no movimento uniforme, a velocidade permanece constante e a posi��o varia regularmente com o tempo",
+        "a acelera��o descreve como a velocidade varia ao longo do tempo em um movimento variado"
       ],
-      "correta": "gráficos do MRUV mostram velocidade linear no tempo e posição com curvatura característica",
-      "comentario": "A síntese correta preserva a definição, o foco e o uso analítico de gráficos do movimento uniformemente variado.",
+      "correta": "gr�ficos do MRUV mostram velocidade linear no tempo e posi��o com curvatura caracter�stica",
+      "comentario": "A s�ntese correta preserva a defini��o, o foco e o uso anal�tico de gr�ficos do movimento uniformemente variado.",
       "tempoEstimado": 55,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -4728,22 +4729,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Encontro e ultrapassagem de móveis",
+      "subtopico": "Encontro e ultrapassagem de m�veis",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Física, Encontro e ultrapassagem de móveis pode ser definido(a) como:",
+      "enunciado": "Em F�sica, Encontro e ultrapassagem de m�veis pode ser definido(a) como:",
       "opcoes": [
-        "a análise do instante e da posição em que dois móveis se encontram ou um ultrapassa o outro em uma trajetória",
-        "a equação que fornece a posição do móvel em função do tempo no movimento uniforme",
-        "a grandeza constante que indica a variação da posição por unidade de tempo no MRU",
+        "a an�lise do instante e da posi��o em que dois m�veis se encontram ou um ultrapassa o outro em uma trajet�ria",
+        "a equa��o que fornece a posi��o do m�vel em fun��o do tempo no movimento uniforme",
+        "a grandeza constante que indica a varia��o da posi��o por unidade de tempo no MRU",
         "a grandeza que indica como a velocidade se altera ao longo do tempo em um movimento variado"
       ],
-      "correta": "a análise do instante e da posição em que dois móveis se encontram ou um ultrapassa o outro em uma trajetória",
-      "comentario": "Encontro e ultrapassagem de móveis refere-se à análise do instante e da posição em que dois móveis se encontram ou um ultrapassa o outro em uma trajetória.",
+      "correta": "a an�lise do instante e da posi��o em que dois m�veis se encontram ou um ultrapassa o outro em uma trajet�ria",
+      "comentario": "Encontro e ultrapassagem de m�veis refere-se � an�lise do instante e da posi��o em que dois m�veis se encontram ou um ultrapassa o outro em uma trajet�ria.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -4767,22 +4768,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Encontro e ultrapassagem de móveis",
+      "subtopico": "Encontro e ultrapassagem de m�veis",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: dois ciclistas partem de posições diferentes e com velocidades distintas na mesma pista Esse caso exemplifica melhor qual subtópico?",
+      "enunciado": "Observe a situa��o: dois ciclistas partem de posi��es diferentes e com velocidades distintas na mesma pista Esse caso exemplifica melhor qual subt�pico?",
       "opcoes": [
-        "Encontro e ultrapassagem de móveis",
-        "Função horária do espaço no MRU",
+        "Encontro e ultrapassagem de m�veis",
+        "Fun��o hor�ria do espa�o no MRU",
         "Velocidade no movimento uniforme",
-        "Aceleração no movimento variado"
+        "Acelera��o no movimento variado"
       ],
-      "correta": "Encontro e ultrapassagem de móveis",
-      "comentario": "A situação apresentada é um exemplo de encontro e ultrapassagem de móveis.",
+      "correta": "Encontro e ultrapassagem de m�veis",
+      "comentario": "A situa��o apresentada � um exemplo de encontro e ultrapassagem de m�veis.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -4806,22 +4807,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Encontro e ultrapassagem de móveis",
+      "subtopico": "Encontro e ultrapassagem de m�veis",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmação descreve corretamente encontro e ultrapassagem de móveis?",
+      "enunciado": "Qual afirma��o descreve corretamente encontro e ultrapassagem de m�veis?",
       "opcoes": [
-        "A análise do instante e da posição em que dois móveis se encontram ou um ultrapassa o outro em uma trajetória.",
-        "A equação que fornece a posição do móvel em função do tempo no movimento uniforme.",
-        "A grandeza constante que indica a variação da posição por unidade de tempo no MRU.",
+        "A an�lise do instante e da posi��o em que dois m�veis se encontram ou um ultrapassa o outro em uma trajet�ria.",
+        "A equa��o que fornece a posi��o do m�vel em fun��o do tempo no movimento uniforme.",
+        "A grandeza constante que indica a varia��o da posi��o por unidade de tempo no MRU.",
         "A grandeza que indica como a velocidade se altera ao longo do tempo em um movimento variado."
       ],
-      "correta": "A análise do instante e da posição em que dois móveis se encontram ou um ultrapassa o outro em uma trajetória.",
-      "comentario": "A afirmação correta retoma o sentido central de encontro e ultrapassagem de móveis.",
+      "correta": "A an�lise do instante e da posi��o em que dois m�veis se encontram ou um ultrapassa o outro em uma trajet�ria.",
+      "comentario": "A afirma��o correta retoma o sentido central de encontro e ultrapassagem de m�veis.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -4845,22 +4846,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Encontro e ultrapassagem de móveis",
+      "subtopico": "Encontro e ultrapassagem de m�veis",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa incompatível com encontro e ultrapassagem de móveis.",
+      "enunciado": "Assinale a alternativa incompat�vel com encontro e ultrapassagem de m�veis.",
       "opcoes": [
-        "considerar que basta comparar apenas as velocidades para decidir se haverá encontro entre dois móveis.",
-        "a comparação entre funções horárias para determinar quando e onde dois movimentos se igualam.",
-        "encontro e ultrapassagem exigem comparar posições em função do tempo até que elas coincidam.",
-        "a análise do instante e da posição em que dois móveis se encontram ou um ultrapassa o outro em uma trajetória."
+        "considerar que basta comparar apenas as velocidades para decidir se haver� encontro entre dois m�veis.",
+        "a compara��o entre fun��es hor�rias para determinar quando e onde dois movimentos se igualam.",
+        "encontro e ultrapassagem exigem comparar posi��es em fun��o do tempo at� que elas coincidam.",
+        "a an�lise do instante e da posi��o em que dois m�veis se encontram ou um ultrapassa o outro em uma trajet�ria."
       ],
-      "correta": "considerar que basta comparar apenas as velocidades para decidir se haverá encontro entre dois móveis.",
-      "comentario": "Considerar que basta comparar apenas as velocidades para decidir se haverá encontro entre dois móveis não representa encontro e ultrapassagem de móveis, enquanto as demais alternativas se relacionam com esse subtópico.",
+      "correta": "considerar que basta comparar apenas as velocidades para decidir se haver� encontro entre dois m�veis.",
+      "comentario": "Considerar que basta comparar apenas as velocidades para decidir se haver� encontro entre dois m�veis n�o representa encontro e ultrapassagem de m�veis, enquanto as demais alternativas se relacionam com esse subt�pico.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -4884,22 +4885,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Encontro e ultrapassagem de móveis",
+      "subtopico": "Encontro e ultrapassagem de m�veis",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando se estuda encontro e ultrapassagem de móveis, o foco principal está em:",
+      "enunciado": "Quando se estuda encontro e ultrapassagem de m�veis, o foco principal est� em:",
       "opcoes": [
-        "a comparação entre funções horárias para determinar quando e onde dois movimentos se igualam",
-        "a previsão da posição ao longo do tempo em um movimento de velocidade constante",
-        "a constância da taxa de variação da posição no movimento uniforme",
-        "a descrição da variação da velocidade ao longo do tempo no movimento variado"
+        "a compara��o entre fun��es hor�rias para determinar quando e onde dois movimentos se igualam",
+        "a previs�o da posi��o ao longo do tempo em um movimento de velocidade constante",
+        "a const�ncia da taxa de varia��o da posi��o no movimento uniforme",
+        "a descri��o da varia��o da velocidade ao longo do tempo no movimento variado"
       ],
-      "correta": "a comparação entre funções horárias para determinar quando e onde dois movimentos se igualam",
-      "comentario": "Encontro e ultrapassagem de móveis volta a atenção para a comparação entre funções horárias para determinar quando e onde dois movimentos se igualam.",
+      "correta": "a compara��o entre fun��es hor�rias para determinar quando e onde dois movimentos se igualam",
+      "comentario": "Encontro e ultrapassagem de m�veis volta a aten��o para a compara��o entre fun��es hor�rias para determinar quando e onde dois movimentos se igualam.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -4923,22 +4924,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Encontro e ultrapassagem de móveis",
+      "subtopico": "Encontro e ultrapassagem de m�veis",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferença entre encontro e ultrapassagem de móveis e função horária do espaço no MRU é que:",
+      "enunciado": "A principal diferen�a entre encontro e ultrapassagem de m�veis e fun��o hor�ria do espa�o no MRU � que:",
       "opcoes": [
-        "encontro e ultrapassagem de móveis usa a comparação entre duas funções horárias, enquanto a função horária do espaço no MRU descreve apenas um móvel isolado",
-        "Encontro e ultrapassagem de móveis e Função horária do espaço no MRU são exatamente a mesma ideia física em qualquer situação.",
-        "Função horária do espaço no MRU elimina a necessidade de observar encontro e ultrapassagem de móveis.",
-        "Encontro e ultrapassagem de móveis depende apenas de opinião pessoal, sem relação com grandezas, modelos ou medidas."
+        "encontro e ultrapassagem de m�veis usa a compara��o entre duas fun��es hor�rias, enquanto a fun��o hor�ria do espa�o no MRU descreve apenas um m�vel isolado",
+        "Encontro e ultrapassagem de m�veis e Fun��o hor�ria do espa�o no MRU s�o exatamente a mesma ideia f�sica em qualquer situa��o.",
+        "Fun��o hor�ria do espa�o no MRU elimina a necessidade de observar encontro e ultrapassagem de m�veis.",
+        "Encontro e ultrapassagem de m�veis depende apenas de opini�o pessoal, sem rela��o com grandezas, modelos ou medidas."
       ],
-      "correta": "encontro e ultrapassagem de móveis usa a comparação entre duas funções horárias, enquanto a função horária do espaço no MRU descreve apenas um móvel isolado",
-      "comentario": "A comparação correta distingue os dois subtópicos sem confundir seus objetos de estudo.",
+      "correta": "encontro e ultrapassagem de m�veis usa a compara��o entre duas fun��es hor�rias, enquanto a fun��o hor�ria do espa�o no MRU descreve apenas um m�vel isolado",
+      "comentario": "A compara��o correta distingue os dois subt�picos sem confundir seus objetos de estudo.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -4962,22 +4963,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Encontro e ultrapassagem de móveis",
+      "subtopico": "Encontro e ultrapassagem de m�veis",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma observação experimental, registrou-se o seguinte caso: dois ciclistas partem de posições diferentes e com velocidades distintas na mesma pista A leitura física mais adequada aponta para:",
+      "enunciado": "Em uma observa��o experimental, registrou-se o seguinte caso: dois ciclistas partem de posi��es diferentes e com velocidades distintas na mesma pista A leitura f�sica mais adequada aponta para:",
       "opcoes": [
-        "o caso mostra que a igualdade de posições no mesmo instante define encontro ou ultrapassagem",
-        "Encontro e ultrapassagem de móveis mostra que as grandezas envolvidas não precisam ser relacionadas para interpretar o caso.",
-        "Encontro e ultrapassagem de móveis prova que a situação dispensa qualquer leitura física ou quantitativa.",
-        "Encontro e ultrapassagem de móveis significa que o fenômeno não pode ser descrito por variáveis físicas."
+        "o caso mostra que a igualdade de posi��es no mesmo instante define encontro ou ultrapassagem",
+        "Encontro e ultrapassagem de m�veis mostra que as grandezas envolvidas n�o precisam ser relacionadas para interpretar o caso.",
+        "Encontro e ultrapassagem de m�veis prova que a situa��o dispensa qualquer leitura f�sica ou quantitativa.",
+        "Encontro e ultrapassagem de m�veis significa que o fen�meno n�o pode ser descrito por vari�veis f�sicas."
       ],
-      "correta": "o caso mostra que a igualdade de posições no mesmo instante define encontro ou ultrapassagem",
-      "comentario": "Encontro e ultrapassagem de móveis permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
+      "correta": "o caso mostra que a igualdade de posi��es no mesmo instante define encontro ou ultrapassagem",
+      "comentario": "Encontro e ultrapassagem de m�veis permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -5001,22 +5002,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Encontro e ultrapassagem de móveis",
+      "subtopico": "Encontro e ultrapassagem de m�veis",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação abaixo evidencia encontro e ultrapassagem de móveis de maneira mais clara?",
+      "enunciado": "Qual situa��o abaixo evidencia encontro e ultrapassagem de m�veis de maneira mais clara?",
       "opcoes": [
-        "calcular quando um corredor alcança outro em uma prova com velocidades diferentes",
-        "calcular onde um estudante em patins estará após alguns segundos mantendo velocidade constante",
-        "analisar o deslocamento regular de uma esteira ou escada rolante em funcionamento contínuo",
-        "avaliar a variação de velocidade de uma bicicleta durante uma arrancada"
+        "calcular quando um corredor alcan�a outro em uma prova com velocidades diferentes",
+        "calcular onde um estudante em patins estar� ap�s alguns segundos mantendo velocidade constante",
+        "analisar o deslocamento regular de uma esteira ou escada rolante em funcionamento cont�nuo",
+        "avaliar a varia��o de velocidade de uma bicicleta durante uma arrancada"
       ],
-      "correta": "calcular quando um corredor alcança outro em uma prova com velocidades diferentes",
-      "comentario": "A alternativa correta aproxima encontro e ultrapassagem de móveis de uma situação concreta.",
+      "correta": "calcular quando um corredor alcan�a outro em uma prova com velocidades diferentes",
+      "comentario": "A alternativa correta aproxima encontro e ultrapassagem de m�veis de uma situa��o concreta.",
       "tempoEstimado": 35,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -5040,22 +5041,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Encontro e ultrapassagem de móveis",
+      "subtopico": "Encontro e ultrapassagem de m�veis",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"dois ciclistas partem de posições diferentes e com velocidades distintas na mesma pista\", qual conclusão é mais adequada?",
+      "enunciado": "Ao analisar o caso \"dois ciclistas partem de posi��es diferentes e com velocidades distintas na mesma pista\", qual conclus�o � mais adequada?",
       "opcoes": [
-        "o caso mostra que a igualdade de posições no mesmo instante define encontro ou ultrapassagem",
-        "A situação indica que encontro e ultrapassagem de móveis não possui relação com medidas, variáveis ou interpretação física.",
-        "A situação prova que encontro e ultrapassagem de móveis só existe em exemplos teóricos sem uso cotidiano.",
-        "A situação mostra que encontro e ultrapassagem de móveis torna desnecessário comparar dados e modelos."
+        "o caso mostra que a igualdade de posi��es no mesmo instante define encontro ou ultrapassagem",
+        "A situa��o indica que encontro e ultrapassagem de m�veis n�o possui rela��o com medidas, vari�veis ou interpreta��o f�sica.",
+        "A situa��o prova que encontro e ultrapassagem de m�veis s� existe em exemplos te�ricos sem uso cotidiano.",
+        "A situa��o mostra que encontro e ultrapassagem de m�veis torna desnecess�rio comparar dados e modelos."
       ],
-      "correta": "o caso mostra que a igualdade de posições no mesmo instante define encontro ou ultrapassagem",
-      "comentario": "A conclusão correta mantém coerência com os dados apresentados e com encontro e ultrapassagem de móveis.",
+      "correta": "o caso mostra que a igualdade de posi��es no mesmo instante define encontro ou ultrapassagem",
+      "comentario": "A conclus�o correta mant�m coer�ncia com os dados apresentados e com encontro e ultrapassagem de m�veis.",
       "tempoEstimado": 35,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -5079,22 +5080,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Encontro e ultrapassagem de móveis",
+      "subtopico": "Encontro e ultrapassagem de m�veis",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com encontro e ultrapassagem de móveis?",
+      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com encontro e ultrapassagem de m�veis?",
       "opcoes": [
-        "como determinar o instante em que dois móveis ocupam a mesma posição?",
-        "como a equação do MRU permite prever a posição de um móvel em qualquer instante?",
-        "como reconhecer a velocidade constante característica de um movimento uniforme?",
-        "como a aceleração permite descrever a variação da velocidade em um movimento?"
+        "como determinar o instante em que dois m�veis ocupam a mesma posi��o?",
+        "como a equa��o do MRU permite prever a posi��o de um m�vel em qualquer instante?",
+        "como reconhecer a velocidade constante caracter�stica de um movimento uniforme?",
+        "como a acelera��o permite descrever a varia��o da velocidade em um movimento?"
       ],
-      "correta": "como determinar o instante em que dois móveis ocupam a mesma posição?",
-      "comentario": "A pergunta correta investiga encontro e ultrapassagem de móveis de forma direta e coerente.",
+      "correta": "como determinar o instante em que dois m�veis ocupam a mesma posi��o?",
+      "comentario": "A pergunta correta investiga encontro e ultrapassagem de m�veis de forma direta e coerente.",
       "tempoEstimado": 35,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -5118,22 +5119,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Encontro e ultrapassagem de móveis",
+      "subtopico": "Encontro e ultrapassagem de m�veis",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a afirmação que revela compreensão inadequada de encontro e ultrapassagem de móveis.",
+      "enunciado": "Assinale a afirma��o que revela compreens�o inadequada de encontro e ultrapassagem de m�veis.",
       "opcoes": [
-        "A análise do instante e da posição em que dois móveis se encontram ou um ultrapassa o outro em uma trajetória.",
-        "A comparação entre funções horárias para determinar quando e onde dois movimentos se igualam.",
-        "Encontro e ultrapassagem exigem comparar posições em função do tempo até que elas coincidam.",
-        "Dois móveis só se encontram se partirem do mesmo lugar e ao mesmo tempo."
+        "A an�lise do instante e da posi��o em que dois m�veis se encontram ou um ultrapassa o outro em uma trajet�ria.",
+        "A compara��o entre fun��es hor�rias para determinar quando e onde dois movimentos se igualam.",
+        "Encontro e ultrapassagem exigem comparar posi��es em fun��o do tempo at� que elas coincidam.",
+        "Dois m�veis s� se encontram se partirem do mesmo lugar e ao mesmo tempo."
       ],
-      "correta": "Dois móveis só se encontram se partirem do mesmo lugar e ao mesmo tempo.",
-      "comentario": "A alternativa incorreta expressa um equívoco comum sobre encontro e ultrapassagem de móveis.",
+      "correta": "Dois m�veis s� se encontram se partirem do mesmo lugar e ao mesmo tempo.",
+      "comentario": "A alternativa incorreta expressa um equ�voco comum sobre encontro e ultrapassagem de m�veis.",
       "tempoEstimado": 45,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -5157,22 +5158,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Encontro e ultrapassagem de móveis",
+      "subtopico": "Encontro e ultrapassagem de m�veis",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre Física, um estudante afirmou: \"o encontro ocorre quando as posições dos dois móveis se tornam iguais no mesmo instante\". Qual avaliação é mais consistente?",
+      "enunciado": "Em um debate sobre F�sica, um estudante afirmou: \"o encontro ocorre quando as posi��es dos dois m�veis se tornam iguais no mesmo instante\". Qual avalia��o � mais consistente?",
       "opcoes": [
-        "A afirmação está correta, porque comparar as funções horárias permite localizar o ponto em que ambos ocupam a mesma posição simultaneamente",
-        "A afirmação está incorreta, porque encontro e ultrapassagem de móveis nunca pode ser usada na Física escolar.",
-        "A afirmação é irrelevante, porque encontro e ultrapassagem de móveis não se relaciona com interpretação de fenômenos.",
-        "A afirmação está incorreta, porque encontro e ultrapassagem de móveis elimina a necessidade de medir e comparar grandezas."
+        "A afirma��o est� correta, porque comparar as fun��es hor�rias permite localizar o ponto em que ambos ocupam a mesma posi��o simultaneamente",
+        "A afirma��o est� incorreta, porque encontro e ultrapassagem de m�veis nunca pode ser usada na F�sica escolar.",
+        "A afirma��o � irrelevante, porque encontro e ultrapassagem de m�veis n�o se relaciona com interpreta��o de fen�menos.",
+        "A afirma��o est� incorreta, porque encontro e ultrapassagem de m�veis elimina a necessidade de medir e comparar grandezas."
       ],
-      "correta": "A afirmação está correta, porque comparar as funções horárias permite localizar o ponto em que ambos ocupam a mesma posição simultaneamente",
-      "comentario": "A avaliação correta recupera o núcleo conceitual de encontro e ultrapassagem de móveis.",
+      "correta": "A afirma��o est� correta, porque comparar as fun��es hor�rias permite localizar o ponto em que ambos ocupam a mesma posi��o simultaneamente",
+      "comentario": "A avalia��o correta recupera o n�cleo conceitual de encontro e ultrapassagem de m�veis.",
       "tempoEstimado": 45,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -5196,22 +5197,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Encontro e ultrapassagem de móveis",
+      "subtopico": "Encontro e ultrapassagem de m�veis",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se encontro e ultrapassagem de móveis fosse ignorado(a) na análise de um problema físico, o resultado mais provável seria:",
+      "enunciado": "Se encontro e ultrapassagem de m�veis fosse ignorado(a) na an�lise de um problema f�sico, o resultado mais prov�vel seria:",
       "opcoes": [
-        "problemas envolvendo perseguição, encontro ou ultrapassagem seriam resolvidos sem o critério central de igualdade de posições",
-        "o problema continuaria exatamente igual, porque encontro e ultrapassagem de móveis não interfere na análise física",
-        "seria possível resolver a situação sem observar nenhuma grandeza, relação ou modelo",
-        "a interpretação ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
+        "problemas envolvendo persegui��o, encontro ou ultrapassagem seriam resolvidos sem o crit�rio central de igualdade de posi��es",
+        "o problema continuaria exatamente igual, porque encontro e ultrapassagem de m�veis n�o interfere na an�lise f�sica",
+        "seria poss�vel resolver a situa��o sem observar nenhuma grandeza, rela��o ou modelo",
+        "a interpreta��o ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
       ],
-      "correta": "problemas envolvendo perseguição, encontro ou ultrapassagem seriam resolvidos sem o critério central de igualdade de posições",
-      "comentario": "Ignorar encontro e ultrapassagem de móveis compromete a leitura física e a qualidade da solução.",
+      "correta": "problemas envolvendo persegui��o, encontro ou ultrapassagem seriam resolvidos sem o crit�rio central de igualdade de posi��es",
+      "comentario": "Ignorar encontro e ultrapassagem de m�veis compromete a leitura f�sica e a qualidade da solu��o.",
       "tempoEstimado": 55,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -5235,22 +5236,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Encontro e ultrapassagem de móveis",
+      "subtopico": "Encontro e ultrapassagem de m�veis",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente encontro e ultrapassagem de móveis a uma situação escolar ou cotidiana?",
+      "enunciado": "Qual alternativa aplica corretamente encontro e ultrapassagem de m�veis a uma situa��o escolar ou cotidiana?",
       "opcoes": [
-        "calcular quando um corredor alcança outro em uma prova com velocidades diferentes",
-        "estimar o comportamento de uma bola lançada para cima no pátio da escola",
-        "ler o gráfico de velocidade de um móvel que acelera regularmente em laboratório",
-        "analisar o gráfico de um carrinho que percorre distâncias iguais em tempos iguais"
+        "calcular quando um corredor alcan�a outro em uma prova com velocidades diferentes",
+        "estimar o comportamento de uma bola lan�ada para cima no p�tio da escola",
+        "ler o gr�fico de velocidade de um m�vel que acelera regularmente em laborat�rio",
+        "analisar o gr�fico de um carrinho que percorre dist�ncias iguais em tempos iguais"
       ],
-      "correta": "calcular quando um corredor alcança outro em uma prova com velocidades diferentes",
-      "comentario": "A aplicação correta mostra como encontro e ultrapassagem de móveis aparece em contextos próximos do cotidiano.",
+      "correta": "calcular quando um corredor alcan�a outro em uma prova com velocidades diferentes",
+      "comentario": "A aplica��o correta mostra como encontro e ultrapassagem de m�veis aparece em contextos pr�ximos do cotidiano.",
       "tempoEstimado": 55,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -5274,22 +5275,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Encontro e ultrapassagem de móveis",
+      "subtopico": "Encontro e ultrapassagem de m�veis",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual síntese final representa melhor encontro e ultrapassagem de móveis?",
+      "enunciado": "Qual s�ntese final representa melhor encontro e ultrapassagem de m�veis?",
       "opcoes": [
-        "encontro e ultrapassagem exigem comparar posições em função do tempo até que elas coincidam",
-        "a função horária do MRU relaciona posição inicial, velocidade constante e tempo para determinar a posição do móvel",
-        "no movimento uniforme, a velocidade permanece constante e a posição varia regularmente com o tempo",
-        "a aceleração descreve como a velocidade varia ao longo do tempo em um movimento variado"
+        "encontro e ultrapassagem exigem comparar posi��es em fun��o do tempo at� que elas coincidam",
+        "a fun��o hor�ria do MRU relaciona posi��o inicial, velocidade constante e tempo para determinar a posi��o do m�vel",
+        "no movimento uniforme, a velocidade permanece constante e a posi��o varia regularmente com o tempo",
+        "a acelera��o descreve como a velocidade varia ao longo do tempo em um movimento variado"
       ],
-      "correta": "encontro e ultrapassagem exigem comparar posições em função do tempo até que elas coincidam",
-      "comentario": "A síntese correta preserva a definição, o foco e o uso analítico de encontro e ultrapassagem de móveis.",
+      "correta": "encontro e ultrapassagem exigem comparar posi��es em fun��o do tempo at� que elas coincidam",
+      "comentario": "A s�ntese correta preserva a defini��o, o foco e o uso anal�tico de encontro e ultrapassagem de m�veis.",
       "tempoEstimado": 55,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -5313,22 +5314,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Queda livre e lançamento vertical",
+      "subtopico": "Queda livre e lan�amento vertical",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Física, Queda livre e lançamento vertical pode ser definido(a) como:",
+      "enunciado": "Em F�sica, Queda livre e lan�amento vertical pode ser definido(a) como:",
       "opcoes": [
-        "a análise de movimentos verticais sob ação predominante da gravidade, com aceleração aproximadamente constante",
-        "a equação que fornece a posição do móvel em função do tempo no movimento uniforme",
-        "a grandeza constante que indica a variação da posição por unidade de tempo no MRU",
+        "a an�lise de movimentos verticais sob a��o predominante da gravidade, com acelera��o aproximadamente constante",
+        "a equa��o que fornece a posi��o do m�vel em fun��o do tempo no movimento uniforme",
+        "a grandeza constante que indica a varia��o da posi��o por unidade de tempo no MRU",
         "a grandeza que indica como a velocidade se altera ao longo do tempo em um movimento variado"
       ],
-      "correta": "a análise de movimentos verticais sob ação predominante da gravidade, com aceleração aproximadamente constante",
-      "comentario": "Queda livre e lançamento vertical refere-se à análise de movimentos verticais sob ação predominante da gravidade, com aceleração aproximadamente constante.",
+      "correta": "a an�lise de movimentos verticais sob a��o predominante da gravidade, com acelera��o aproximadamente constante",
+      "comentario": "Queda livre e lan�amento vertical refere-se � an�lise de movimentos verticais sob a��o predominante da gravidade, com acelera��o aproximadamente constante.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -5352,22 +5353,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Queda livre e lançamento vertical",
+      "subtopico": "Queda livre e lan�amento vertical",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: uma bola é solta de certa altura ou lançada para cima e depois retorna sob ação da gravidade Esse caso exemplifica melhor qual subtópico?",
+      "enunciado": "Observe a situa��o: uma bola � solta de certa altura ou lan�ada para cima e depois retorna sob a��o da gravidade Esse caso exemplifica melhor qual subt�pico?",
       "opcoes": [
-        "Queda livre e lançamento vertical",
-        "Função horária do espaço no MRU",
+        "Queda livre e lan�amento vertical",
+        "Fun��o hor�ria do espa�o no MRU",
         "Velocidade no movimento uniforme",
-        "Aceleração no movimento variado"
+        "Acelera��o no movimento variado"
       ],
-      "correta": "Queda livre e lançamento vertical",
-      "comentario": "A situação apresentada é um exemplo de queda livre e lançamento vertical.",
+      "correta": "Queda livre e lan�amento vertical",
+      "comentario": "A situa��o apresentada � um exemplo de queda livre e lan�amento vertical.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -5391,22 +5392,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Queda livre e lançamento vertical",
+      "subtopico": "Queda livre e lan�amento vertical",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmação descreve corretamente queda livre e lançamento vertical?",
+      "enunciado": "Qual afirma��o descreve corretamente queda livre e lan�amento vertical?",
       "opcoes": [
-        "A análise de movimentos verticais sob ação predominante da gravidade, com aceleração aproximadamente constante.",
-        "A equação que fornece a posição do móvel em função do tempo no movimento uniforme.",
-        "A grandeza constante que indica a variação da posição por unidade de tempo no MRU.",
+        "A an�lise de movimentos verticais sob a��o predominante da gravidade, com acelera��o aproximadamente constante.",
+        "A equa��o que fornece a posi��o do m�vel em fun��o do tempo no movimento uniforme.",
+        "A grandeza constante que indica a varia��o da posi��o por unidade de tempo no MRU.",
         "A grandeza que indica como a velocidade se altera ao longo do tempo em um movimento variado."
       ],
-      "correta": "A análise de movimentos verticais sob ação predominante da gravidade, com aceleração aproximadamente constante.",
-      "comentario": "A afirmação correta retoma o sentido central de queda livre e lançamento vertical.",
+      "correta": "A an�lise de movimentos verticais sob a��o predominante da gravidade, com acelera��o aproximadamente constante.",
+      "comentario": "A afirma��o correta retoma o sentido central de queda livre e lan�amento vertical.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -5430,22 +5431,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Queda livre e lançamento vertical",
+      "subtopico": "Queda livre e lan�amento vertical",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa incompatível com queda livre e lançamento vertical.",
+      "enunciado": "Assinale a alternativa incompat�vel com queda livre e lan�amento vertical.",
       "opcoes": [
-        "tratar o lançamento vertical como um MRU só porque o corpo se move em linha reta.",
-        "a aplicação do MRUV a movimentos verticais sob aceleração gravitacional.",
-        "queda livre e lançamento vertical são movimentos verticais com aceleração aproximadamente constante igual à da gravidade.",
-        "a análise de movimentos verticais sob ação predominante da gravidade, com aceleração aproximadamente constante."
+        "tratar o lan�amento vertical como um MRU s� porque o corpo se move em linha reta.",
+        "a aplica��o do MRUV a movimentos verticais sob acelera��o gravitacional.",
+        "queda livre e lan�amento vertical s�o movimentos verticais com acelera��o aproximadamente constante igual � da gravidade.",
+        "a an�lise de movimentos verticais sob a��o predominante da gravidade, com acelera��o aproximadamente constante."
       ],
-      "correta": "tratar o lançamento vertical como um MRU só porque o corpo se move em linha reta.",
-      "comentario": "Tratar o lançamento vertical como um MRU só porque o corpo se move em linha reta não representa queda livre e lançamento vertical, enquanto as demais alternativas se relacionam com esse subtópico.",
+      "correta": "tratar o lan�amento vertical como um MRU s� porque o corpo se move em linha reta.",
+      "comentario": "Tratar o lan�amento vertical como um MRU s� porque o corpo se move em linha reta n�o representa queda livre e lan�amento vertical, enquanto as demais alternativas se relacionam com esse subt�pico.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -5469,22 +5470,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Queda livre e lançamento vertical",
+      "subtopico": "Queda livre e lan�amento vertical",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando se estuda queda livre e lançamento vertical, o foco principal está em:",
+      "enunciado": "Quando se estuda queda livre e lan�amento vertical, o foco principal est� em:",
       "opcoes": [
-        "a aplicação do MRUV a movimentos verticais sob aceleração gravitacional",
-        "a previsão da posição ao longo do tempo em um movimento de velocidade constante",
-        "a constância da taxa de variação da posição no movimento uniforme",
-        "a descrição da variação da velocidade ao longo do tempo no movimento variado"
+        "a aplica��o do MRUV a movimentos verticais sob acelera��o gravitacional",
+        "a previs�o da posi��o ao longo do tempo em um movimento de velocidade constante",
+        "a const�ncia da taxa de varia��o da posi��o no movimento uniforme",
+        "a descri��o da varia��o da velocidade ao longo do tempo no movimento variado"
       ],
-      "correta": "a aplicação do MRUV a movimentos verticais sob aceleração gravitacional",
-      "comentario": "Queda livre e lançamento vertical volta a atenção para a aplicação do MRUV a movimentos verticais sob aceleração gravitacional.",
+      "correta": "a aplica��o do MRUV a movimentos verticais sob acelera��o gravitacional",
+      "comentario": "Queda livre e lan�amento vertical volta a aten��o para a aplica��o do MRUV a movimentos verticais sob acelera��o gravitacional.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -5508,22 +5509,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Queda livre e lançamento vertical",
+      "subtopico": "Queda livre e lan�amento vertical",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferença entre queda livre e lançamento vertical e função horária da posição no MRUV é que:",
+      "enunciado": "A principal diferen�a entre queda livre e lan�amento vertical e fun��o hor�ria da posi��o no MRUV � que:",
       "opcoes": [
-        "queda livre e lançamento vertical aplicam o MRUV ao eixo vertical sob ação da gravidade, enquanto a função horária da posição no MRUV é a expressão geral usada em qualquer contexto de aceleração constante",
-        "Queda livre e lançamento vertical e Função horária da posição no MRUV são exatamente a mesma ideia física em qualquer situação.",
-        "Função horária da posição no MRUV elimina a necessidade de observar queda livre e lançamento vertical.",
-        "Queda livre e lançamento vertical depende apenas de opinião pessoal, sem relação com grandezas, modelos ou medidas."
+        "queda livre e lan�amento vertical aplicam o MRUV ao eixo vertical sob a��o da gravidade, enquanto a fun��o hor�ria da posi��o no MRUV � a express�o geral usada em qualquer contexto de acelera��o constante",
+        "Queda livre e lan�amento vertical e Fun��o hor�ria da posi��o no MRUV s�o exatamente a mesma ideia f�sica em qualquer situa��o.",
+        "Fun��o hor�ria da posi��o no MRUV elimina a necessidade de observar queda livre e lan�amento vertical.",
+        "Queda livre e lan�amento vertical depende apenas de opini�o pessoal, sem rela��o com grandezas, modelos ou medidas."
       ],
-      "correta": "queda livre e lançamento vertical aplicam o MRUV ao eixo vertical sob ação da gravidade, enquanto a função horária da posição no MRUV é a expressão geral usada em qualquer contexto de aceleração constante",
-      "comentario": "A comparação correta distingue os dois subtópicos sem confundir seus objetos de estudo.",
+      "correta": "queda livre e lan�amento vertical aplicam o MRUV ao eixo vertical sob a��o da gravidade, enquanto a fun��o hor�ria da posi��o no MRUV � a express�o geral usada em qualquer contexto de acelera��o constante",
+      "comentario": "A compara��o correta distingue os dois subt�picos sem confundir seus objetos de estudo.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -5547,22 +5548,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Queda livre e lançamento vertical",
+      "subtopico": "Queda livre e lan�amento vertical",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma observação experimental, registrou-se o seguinte caso: uma bola é solta de certa altura ou lançada para cima e depois retorna sob ação da gravidade A leitura física mais adequada aponta para:",
+      "enunciado": "Em uma observa��o experimental, registrou-se o seguinte caso: uma bola � solta de certa altura ou lan�ada para cima e depois retorna sob a��o da gravidade A leitura f�sica mais adequada aponta para:",
       "opcoes": [
-        "o caso mostra que a gravidade controla a variação da velocidade durante todo o movimento vertical",
-        "Queda livre e lançamento vertical mostra que as grandezas envolvidas não precisam ser relacionadas para interpretar o caso.",
-        "Queda livre e lançamento vertical prova que a situação dispensa qualquer leitura física ou quantitativa.",
-        "Queda livre e lançamento vertical significa que o fenômeno não pode ser descrito por variáveis físicas."
+        "o caso mostra que a gravidade controla a varia��o da velocidade durante todo o movimento vertical",
+        "Queda livre e lan�amento vertical mostra que as grandezas envolvidas n�o precisam ser relacionadas para interpretar o caso.",
+        "Queda livre e lan�amento vertical prova que a situa��o dispensa qualquer leitura f�sica ou quantitativa.",
+        "Queda livre e lan�amento vertical significa que o fen�meno n�o pode ser descrito por vari�veis f�sicas."
       ],
-      "correta": "o caso mostra que a gravidade controla a variação da velocidade durante todo o movimento vertical",
-      "comentario": "Queda livre e lançamento vertical permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
+      "correta": "o caso mostra que a gravidade controla a varia��o da velocidade durante todo o movimento vertical",
+      "comentario": "Queda livre e lan�amento vertical permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
       "tempoEstimado": 25,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -5586,22 +5587,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Queda livre e lançamento vertical",
+      "subtopico": "Queda livre e lan�amento vertical",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação abaixo evidencia queda livre e lançamento vertical de maneira mais clara?",
+      "enunciado": "Qual situa��o abaixo evidencia queda livre e lan�amento vertical de maneira mais clara?",
       "opcoes": [
-        "estimar o comportamento de uma bola lançada para cima no pátio da escola",
-        "calcular onde um estudante em patins estará após alguns segundos mantendo velocidade constante",
-        "analisar o deslocamento regular de uma esteira ou escada rolante em funcionamento contínuo",
-        "avaliar a variação de velocidade de uma bicicleta durante uma arrancada"
+        "estimar o comportamento de uma bola lan�ada para cima no p�tio da escola",
+        "calcular onde um estudante em patins estar� ap�s alguns segundos mantendo velocidade constante",
+        "analisar o deslocamento regular de uma esteira ou escada rolante em funcionamento cont�nuo",
+        "avaliar a varia��o de velocidade de uma bicicleta durante uma arrancada"
       ],
-      "correta": "estimar o comportamento de uma bola lançada para cima no pátio da escola",
-      "comentario": "A alternativa correta aproxima queda livre e lançamento vertical de uma situação concreta.",
+      "correta": "estimar o comportamento de uma bola lan�ada para cima no p�tio da escola",
+      "comentario": "A alternativa correta aproxima queda livre e lan�amento vertical de uma situa��o concreta.",
       "tempoEstimado": 35,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -5625,22 +5626,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Queda livre e lançamento vertical",
+      "subtopico": "Queda livre e lan�amento vertical",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"uma bola é solta de certa altura ou lançada para cima e depois retorna sob ação da gravidade\", qual conclusão é mais adequada?",
+      "enunciado": "Ao analisar o caso \"uma bola � solta de certa altura ou lan�ada para cima e depois retorna sob a��o da gravidade\", qual conclus�o � mais adequada?",
       "opcoes": [
-        "o caso mostra que a gravidade controla a variação da velocidade durante todo o movimento vertical",
-        "A situação indica que queda livre e lançamento vertical não possui relação com medidas, variáveis ou interpretação física.",
-        "A situação prova que queda livre e lançamento vertical só existe em exemplos teóricos sem uso cotidiano.",
-        "A situação mostra que queda livre e lançamento vertical torna desnecessário comparar dados e modelos."
+        "o caso mostra que a gravidade controla a varia��o da velocidade durante todo o movimento vertical",
+        "A situa��o indica que queda livre e lan�amento vertical n�o possui rela��o com medidas, vari�veis ou interpreta��o f�sica.",
+        "A situa��o prova que queda livre e lan�amento vertical s� existe em exemplos te�ricos sem uso cotidiano.",
+        "A situa��o mostra que queda livre e lan�amento vertical torna desnecess�rio comparar dados e modelos."
       ],
-      "correta": "o caso mostra que a gravidade controla a variação da velocidade durante todo o movimento vertical",
-      "comentario": "A conclusão correta mantém coerência com os dados apresentados e com queda livre e lançamento vertical.",
+      "correta": "o caso mostra que a gravidade controla a varia��o da velocidade durante todo o movimento vertical",
+      "comentario": "A conclus�o correta mant�m coer�ncia com os dados apresentados e com queda livre e lan�amento vertical.",
       "tempoEstimado": 35,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -5664,22 +5665,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Queda livre e lançamento vertical",
+      "subtopico": "Queda livre e lan�amento vertical",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com queda livre e lançamento vertical?",
+      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com queda livre e lan�amento vertical?",
       "opcoes": [
-        "como a gravidade influencia a velocidade e a posição em uma queda livre ou em um lançamento vertical?",
-        "como a equação do MRU permite prever a posição de um móvel em qualquer instante?",
-        "como reconhecer a velocidade constante característica de um movimento uniforme?",
-        "como a aceleração permite descrever a variação da velocidade em um movimento?"
+        "como a gravidade influencia a velocidade e a posi��o em uma queda livre ou em um lan�amento vertical?",
+        "como a equa��o do MRU permite prever a posi��o de um m�vel em qualquer instante?",
+        "como reconhecer a velocidade constante caracter�stica de um movimento uniforme?",
+        "como a acelera��o permite descrever a varia��o da velocidade em um movimento?"
       ],
-      "correta": "como a gravidade influencia a velocidade e a posição em uma queda livre ou em um lançamento vertical?",
-      "comentario": "A pergunta correta investiga queda livre e lançamento vertical de forma direta e coerente.",
+      "correta": "como a gravidade influencia a velocidade e a posi��o em uma queda livre ou em um lan�amento vertical?",
+      "comentario": "A pergunta correta investiga queda livre e lan�amento vertical de forma direta e coerente.",
       "tempoEstimado": 35,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -5703,22 +5704,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Queda livre e lançamento vertical",
+      "subtopico": "Queda livre e lan�amento vertical",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a afirmação que revela compreensão inadequada de queda livre e lançamento vertical.",
+      "enunciado": "Assinale a afirma��o que revela compreens�o inadequada de queda livre e lan�amento vertical.",
       "opcoes": [
-        "A análise de movimentos verticais sob ação predominante da gravidade, com aceleração aproximadamente constante.",
-        "A aplicação do MRUV a movimentos verticais sob aceleração gravitacional.",
-        "Queda livre e lançamento vertical são movimentos verticais com aceleração aproximadamente constante igual à da gravidade.",
-        "Na subida de um lançamento vertical a gravidade deixa de atuar sobre o corpo."
+        "A an�lise de movimentos verticais sob a��o predominante da gravidade, com acelera��o aproximadamente constante.",
+        "A aplica��o do MRUV a movimentos verticais sob acelera��o gravitacional.",
+        "Queda livre e lan�amento vertical s�o movimentos verticais com acelera��o aproximadamente constante igual � da gravidade.",
+        "Na subida de um lan�amento vertical a gravidade deixa de atuar sobre o corpo."
       ],
-      "correta": "Na subida de um lançamento vertical a gravidade deixa de atuar sobre o corpo.",
-      "comentario": "A alternativa incorreta expressa um equívoco comum sobre queda livre e lançamento vertical.",
+      "correta": "Na subida de um lan�amento vertical a gravidade deixa de atuar sobre o corpo.",
+      "comentario": "A alternativa incorreta expressa um equ�voco comum sobre queda livre e lan�amento vertical.",
       "tempoEstimado": 45,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -5742,22 +5743,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Queda livre e lançamento vertical",
+      "subtopico": "Queda livre e lan�amento vertical",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre Física, um estudante afirmou: \"em queda livre e lançamento vertical, a aceleração da gravidade atua durante todo o movimento\". Qual avaliação é mais consistente?",
+      "enunciado": "Em um debate sobre F�sica, um estudante afirmou: \"em queda livre e lan�amento vertical, a acelera��o da gravidade atua durante todo o movimento\". Qual avalia��o � mais consistente?",
       "opcoes": [
-        "A afirmação está correta, porque a gravidade permanece agindo tanto na subida quanto na descida, alterando a velocidade do corpo continuamente",
-        "A afirmação está incorreta, porque queda livre e lançamento vertical nunca pode ser usada na Física escolar.",
-        "A afirmação é irrelevante, porque queda livre e lançamento vertical não se relaciona com interpretação de fenômenos.",
-        "A afirmação está incorreta, porque queda livre e lançamento vertical elimina a necessidade de medir e comparar grandezas."
+        "A afirma��o est� correta, porque a gravidade permanece agindo tanto na subida quanto na descida, alterando a velocidade do corpo continuamente",
+        "A afirma��o est� incorreta, porque queda livre e lan�amento vertical nunca pode ser usada na F�sica escolar.",
+        "A afirma��o � irrelevante, porque queda livre e lan�amento vertical n�o se relaciona com interpreta��o de fen�menos.",
+        "A afirma��o est� incorreta, porque queda livre e lan�amento vertical elimina a necessidade de medir e comparar grandezas."
       ],
-      "correta": "A afirmação está correta, porque a gravidade permanece agindo tanto na subida quanto na descida, alterando a velocidade do corpo continuamente",
-      "comentario": "A avaliação correta recupera o núcleo conceitual de queda livre e lançamento vertical.",
+      "correta": "A afirma��o est� correta, porque a gravidade permanece agindo tanto na subida quanto na descida, alterando a velocidade do corpo continuamente",
+      "comentario": "A avalia��o correta recupera o n�cleo conceitual de queda livre e lan�amento vertical.",
       "tempoEstimado": 45,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -5781,22 +5782,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Queda livre e lançamento vertical",
+      "subtopico": "Queda livre e lan�amento vertical",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se queda livre e lançamento vertical fosse ignorado(a) na análise de um problema físico, o resultado mais provável seria:",
+      "enunciado": "Se queda livre e lan�amento vertical fosse ignorado(a) na an�lise de um problema f�sico, o resultado mais prov�vel seria:",
       "opcoes": [
-        "a interpretação do movimento vertical ficaria incorreta, especialmente em relação à variação da velocidade na subida e na descida",
-        "o problema continuaria exatamente igual, porque queda livre e lançamento vertical não interfere na análise física",
-        "seria possível resolver a situação sem observar nenhuma grandeza, relação ou modelo",
-        "a interpretação ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
+        "a interpreta��o do movimento vertical ficaria incorreta, especialmente em rela��o � varia��o da velocidade na subida e na descida",
+        "o problema continuaria exatamente igual, porque queda livre e lan�amento vertical n�o interfere na an�lise f�sica",
+        "seria poss�vel resolver a situa��o sem observar nenhuma grandeza, rela��o ou modelo",
+        "a interpreta��o ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
       ],
-      "correta": "a interpretação do movimento vertical ficaria incorreta, especialmente em relação à variação da velocidade na subida e na descida",
-      "comentario": "Ignorar queda livre e lançamento vertical compromete a leitura física e a qualidade da solução.",
+      "correta": "a interpreta��o do movimento vertical ficaria incorreta, especialmente em rela��o � varia��o da velocidade na subida e na descida",
+      "comentario": "Ignorar queda livre e lan�amento vertical compromete a leitura f�sica e a qualidade da solu��o.",
       "tempoEstimado": 55,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -5820,22 +5821,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Queda livre e lançamento vertical",
+      "subtopico": "Queda livre e lan�amento vertical",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente queda livre e lançamento vertical a uma situação escolar ou cotidiana?",
+      "enunciado": "Qual alternativa aplica corretamente queda livre e lan�amento vertical a uma situa��o escolar ou cotidiana?",
       "opcoes": [
-        "estimar o comportamento de uma bola lançada para cima no pátio da escola",
-        "calcular quando um corredor alcança outro em uma prova com velocidades diferentes",
-        "ler o gráfico de velocidade de um móvel que acelera regularmente em laboratório",
-        "analisar o gráfico de um carrinho que percorre distâncias iguais em tempos iguais"
+        "estimar o comportamento de uma bola lan�ada para cima no p�tio da escola",
+        "calcular quando um corredor alcan�a outro em uma prova com velocidades diferentes",
+        "ler o gr�fico de velocidade de um m�vel que acelera regularmente em laborat�rio",
+        "analisar o gr�fico de um carrinho que percorre dist�ncias iguais em tempos iguais"
       ],
-      "correta": "estimar o comportamento de uma bola lançada para cima no pátio da escola",
-      "comentario": "A aplicação correta mostra como queda livre e lançamento vertical aparece em contextos próximos do cotidiano.",
+      "correta": "estimar o comportamento de uma bola lan�ada para cima no p�tio da escola",
+      "comentario": "A aplica��o correta mostra como queda livre e lan�amento vertical aparece em contextos pr�ximos do cotidiano.",
       "tempoEstimado": 55,
       "tags": [
         "movimento-uniforme-e-variado",
@@ -5859,22 +5860,22 @@ export const movimentoUniformeEVariado = {
       "serie": [
         1
       ],
-      "materia": "Física",
+      "materia": "F�sica",
       "topico": "Movimento Uniforme e Variado",
-      "subtopico": "Queda livre e lançamento vertical",
+      "subtopico": "Queda livre e lan�amento vertical",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual síntese final representa melhor queda livre e lançamento vertical?",
+      "enunciado": "Qual s�ntese final representa melhor queda livre e lan�amento vertical?",
       "opcoes": [
-        "queda livre e lançamento vertical são movimentos verticais com aceleração aproximadamente constante igual à da gravidade",
-        "a função horária do MRU relaciona posição inicial, velocidade constante e tempo para determinar a posição do móvel",
-        "no movimento uniforme, a velocidade permanece constante e a posição varia regularmente com o tempo",
-        "a aceleração descreve como a velocidade varia ao longo do tempo em um movimento variado"
+        "queda livre e lan�amento vertical s�o movimentos verticais com acelera��o aproximadamente constante igual � da gravidade",
+        "a fun��o hor�ria do MRU relaciona posi��o inicial, velocidade constante e tempo para determinar a posi��o do m�vel",
+        "no movimento uniforme, a velocidade permanece constante e a posi��o varia regularmente com o tempo",
+        "a acelera��o descreve como a velocidade varia ao longo do tempo em um movimento variado"
       ],
-      "correta": "queda livre e lançamento vertical são movimentos verticais com aceleração aproximadamente constante igual à da gravidade",
-      "comentario": "A síntese correta preserva a definição, o foco e o uso analítico de queda livre e lançamento vertical.",
+      "correta": "queda livre e lan�amento vertical s�o movimentos verticais com acelera��o aproximadamente constante igual � da gravidade",
+      "comentario": "A s�ntese correta preserva a defini��o, o foco e o uso anal�tico de queda livre e lan�amento vertical.",
       "tempoEstimado": 55,
       "tags": [
         "movimento-uniforme-e-variado",

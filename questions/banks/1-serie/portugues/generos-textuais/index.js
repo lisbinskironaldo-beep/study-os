@@ -1,49 +1,50 @@
 export const generosTextuais = {
   "id": "portugues_generos_textuais",
-  "materia": "Português",
+  "materia": "Portugues",
   "serie": [
     1
   ],
-  "topico": "Gêneros Textuais",
+  "topico": "Generos Textuais",
   "metadados": {
     "disciplinaId": "portugues",
     "base": "ESCOLAR",
+    "seloEditorial": "VERIFICADA",
     "eixo": "Leitura e linguagem",
-    "frente": "Práticas sociais de linguagem",
+    "frente": "Preticas sociais de linguagem",
     "searchAliases": [
       "tipos de texto em uso social",
-      "esferas de circulação",
+      "esferas de circulacao",
       "finalidade dos textos",
-      "gêneros do discurso"
+      "generos do discurso"
     ],
     "subtopicosBase": [
       "Conceito geral",
-      "Notícia",
+      "Noticia",
       "Reportagem",
-      "Artigo de opinião",
-      "Crônica",
+      "Artigo de opiniao",
+      "Cronica",
       "Poema",
       "Carta do leitor",
-      "Anúncio",
+      "Anuncio",
       "Charge",
       "Tirinha",
       "Verbete",
-      "Identificação em contexto",
-      "Finalidade e circulação",
-      "Diferenciação entre gêneros",
-      "Interpretação indireta",
+      "Identificacao em contexto",
+      "Finalidade e circulacao",
+      "Diferenciacao entre generos",
+      "Interpretacao indireta",
       "Pegadinha",
-      "Equivalência de formas"
+      "Equivalencia de formas"
     ],
     "habilidadesBase": [
-      "identificar gêneros textuais em enunciados curtos",
-      "reconhecer a finalidade e o suporte de diferentes gêneros textuais",
-      "distinguir gêneros textuais com características próximas",
-      "interpretar usos de gêneros textuais em contextos sociais",
-      "relacionar exemplos e definições de gêneros textuais"
+      "identificar generos textuais em enunciados curtos",
+      "reconhecer a finalidade e o suporte de diferentes generos textuais",
+      "distinguir generos textuais com caracteristicas pr?ximas",
+      "interpretar usos de generos textuais em contextos sociais",
+      "relacionar exemplos e definicoes de generos textuais"
     ],
     "auditado": true,
-    "auditadoEm": "2026-04-10",
+    "auditadoEm": "2026-04-12",
     "auditoriaTipo": "varredura-mais-profunda"
   },
   "questoes": [
@@ -52,22 +53,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Notícia",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Noticia",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "O trecho \"Escola do bairro inaugura nova biblioteca nesta segunda-feira.\" se relaciona mais diretamente a qual gênero textual?",
+      "enunciado": "O trecho \"Escola do bairro inaugura nova biblioteca nesta segunda-feira.\" se relaciona mais diretamente a qual genero textual?",
       "opcoes": [
-        "Notícia",
+        "Noticia",
         "Reportagem",
-        "Anúncio",
+        "Anuncio",
         "Carta do leitor"
       ],
-      "correta": "Notícia",
-      "comentario": "Notícia costuma relata fatos atuais de interesse público com linguagem objetiva.",
+      "correta": "Noticia",
+      "comentario": "Noticia costuma relata fatos atuais de interesse publico com linguagem objetiva.",
       "tempoEstimado": 20,
       "tags": [
         "noticia",
@@ -90,19 +91,19 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta um exemplo mais compatível com o gênero reportagem?",
+      "enunciado": "Qual alternativa apresenta um exemplo mais compativel com o genero reportagem?",
       "opcoes": [
         "Revista analisa os impactos do turismo na economia local.",
-        "Narrador observa a pressa das pessoas no ponto de ônibus.",
+        "Narrador observa a pressa das pessoas no ponto de onibus.",
         "Texto joga com sons e repeticoes para sugerir movimento.",
-        "Texto crítica problema do bairro citado no jornal."
+        "Texto critica problema do bairro citado no jornal."
       ],
       "correta": "Revista analisa os impactos do turismo na economia local.",
       "comentario": "A resposta correta corresponde a Reportagem, pois sua finalidade e aprofundar e contextualizar um assunto de interesse social.",
@@ -128,20 +129,20 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Artigo de opinião",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Artigo de opiniao",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A afirmação \"O texto Autor defende maior incentivo a leitura nas escolas. pode ser classificado como Artigo de opinião\" está correta?",
+      "enunciado": "A afirmacao \"O texto Autor defende maior incentivo a leitura nas escolas. pode ser classificado como Artigo de opiniao\" esta correta?",
       "opcoes": [
         "Verdadeiro",
         "Falso"
       ],
       "correta": "Verdadeiro",
-      "comentario": "Está correta porque esse exemplo apresenta marcas de artigo de opinião.",
+      "comentario": "Esta correta porque esse exemplo apresenta marcas de artigo de opiniao.",
       "tempoEstimado": 20,
       "tags": [
         "artigo-opiniao",
@@ -164,22 +165,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Crônica",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Cronica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "O trecho \"Narrador observa a pressa das pessoas no ponto de ônibus.\" se relaciona mais diretamente a qual gênero textual?",
+      "enunciado": "O trecho \"Narrador observa a pressa das pessoas no ponto de onibus.\" se relaciona mais diretamente a qual genero textual?",
       "opcoes": [
-        "Crônica",
+        "Cronica",
         "Conto",
-        "Notícia",
+        "Noticia",
         "Relato pessoal"
       ],
-      "correta": "Crônica",
-      "comentario": "Crônica costuma comentar o cotidiano com linguagem mais subjetiva e reflexiva.",
+      "correta": "Cronica",
+      "comentario": "Cronica costuma comentar o cotidiano com linguagem mais subjetiva e reflexiva.",
       "tempoEstimado": 20,
       "tags": [
         "cronica",
@@ -202,22 +203,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta um exemplo mais compatível com o gênero poema?",
+      "enunciado": "Qual alternativa apresenta um exemplo mais compativel com o genero poema?",
       "opcoes": [
         "Versos curtos constroem imagens de chuva e memoria.",
-        "Entrada de dicionário explica o significado de biodiversidade.",
-        "Prefeitura anuncia campanha de vacinação para adolescentes.",
+        "Entrada de dicionario explica o significado de biodiversidade.",
+        "Prefeitura anuncia campanha de vacinacao para adolescentes.",
         "Revista analisa os impactos do turismo na economia local."
       ],
       "correta": "Versos curtos constroem imagens de chuva e memoria.",
-      "comentario": "A resposta correta corresponde a Poema, pois sua finalidade e produzir efeito estético e expressivo.",
+      "comentario": "A resposta correta corresponde a Poema, pois sua finalidade e produzir efeito estatico e expressivo.",
       "tempoEstimado": 20,
       "tags": [
         "poema",
@@ -240,20 +241,20 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Carta do leitor",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A afirmação \"O texto Leitor comenta reportagem publicada na edição anterior. pode ser classificado como Carta do leitor\" está correta?",
+      "enunciado": "A afirmacao \"O texto Leitor comenta reportagem publicada na edicao anterior. pode ser classificado como Carta do leitor\" esta correta?",
       "opcoes": [
         "Verdadeiro",
         "Falso"
       ],
       "correta": "Verdadeiro",
-      "comentario": "Está correta porque esse exemplo apresenta marcas de carta do leitor.",
+      "comentario": "Esta correta porque esse exemplo apresenta marcas de carta do leitor.",
       "tempoEstimado": 20,
       "tags": [
         "carta-leitor",
@@ -276,22 +277,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Anúncio",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Anuncio",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "O trecho \"Cartaz convida o público para a feira cultural da escola.\" se relaciona mais diretamente a qual gênero textual?",
+      "enunciado": "O trecho \"Cartaz convida o publico para a feira cultural da escola.\" se relaciona mais diretamente a qual genero textual?",
       "opcoes": [
-        "Anúncio",
-        "Notícia",
+        "Anuncio",
+        "Noticia",
         "Aviso",
         "Reportagem"
       ],
-      "correta": "Anúncio",
-      "comentario": "Anúncio costuma divulgar produto, serviço, evento ou ideia com objetivo de persuadir.",
+      "correta": "Anuncio",
+      "comentario": "Anuncio costuma divulgar produto, servico, evento ou ideia com objetivo de persuadir.",
       "tempoEstimado": 20,
       "tags": [
         "anuncio",
@@ -314,19 +315,19 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta um exemplo mais compatível com o gênero charge?",
+      "enunciado": "Qual alternativa apresenta um exemplo mais compativel com o genero charge?",
       "opcoes": [
         "Quadro usa exagero para criticar problema urbano.",
-        "Leitor comenta reportagem publicada na edição anterior.",
-        "Peca divulga promoção com chamada direta ao consumidor.",
-        "Personagem comenta situação escolar em poucos quadros."
+        "Leitor comenta reportagem publicada na edicao anterior.",
+        "Peca divulga promocao com chamada direta ao consumidor.",
+        "Personagem comenta situacao escolar em poucos quadros."
       ],
       "correta": "Quadro usa exagero para criticar problema urbano.",
       "comentario": "A resposta correta corresponde a Charge, pois sua finalidade e criticar ou satirizar um fato atual.",
@@ -352,20 +353,20 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Tirinha",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A afirmação \"O texto Tres quadrinhos mostram diálogo engraçado entre amigos. pode ser classificado como Tirinha\" está correta?",
+      "enunciado": "A afirmacao \"O texto Tres quadrinhos mostram dialogo engracado entre amigos. pode ser classificado como Tirinha\" esta correta?",
       "opcoes": [
         "Verdadeiro",
         "Falso"
       ],
       "correta": "Verdadeiro",
-      "comentario": "Está correta porque esse exemplo apresenta marcas de tirinha.",
+      "comentario": "Esta correta porque esse exemplo apresenta marcas de tirinha.",
       "tempoEstimado": 20,
       "tags": [
         "tirinha",
@@ -388,18 +389,18 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Verbete",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "O trecho \"Entrada de dicionário explica o significado de biodiversidade.\" se relaciona mais diretamente a qual gênero textual?",
+      "enunciado": "O trecho \"Entrada de dicionario explica o significado de biodiversidade.\" se relaciona mais diretamente a qual genero textual?",
       "opcoes": [
         "Verbete",
         "Reportagem",
-        "Artigo de opinião",
+        "Artigo de opiniao",
         "Poema"
       ],
       "correta": "Verbete",
@@ -426,22 +427,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta um exemplo mais compatível com o gênero notícia?",
+      "enunciado": "Qual alternativa apresenta um exemplo mais compativel com o genero noticia?",
       "opcoes": [
-        "Prefeitura anuncia campanha de vacinação para adolescentes.",
-        "Matéria mostra como a seca afeta pequenos produtores da regiao.",
-        "Texto argumenta contra o desperdicio de água na cidade.",
-        "Autor relembra uma conversa simples que virou grande reflexão."
+        "Prefeitura anuncia campanha de vacinacao para adolescentes.",
+        "Materia mostra como a seca afeta pequenos produtores da regiao.",
+        "Texto argumenta contra o desperdicio de agua na cidade.",
+        "Autor relembra uma conversa simples que virou grande reflexao."
       ],
-      "correta": "Prefeitura anuncia campanha de vacinação para adolescentes.",
-      "comentario": "A resposta correta corresponde a Notícia, pois sua finalidade e informar o leitor sobre um acontecimento recente.",
+      "correta": "Prefeitura anuncia campanha de vacinacao para adolescentes.",
+      "comentario": "A resposta correta corresponde a Noticia, pois sua finalidade e informar o leitor sobre um acontecimento recente.",
       "tempoEstimado": 20,
       "tags": [
         "noticia",
@@ -464,20 +465,20 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Reportagem",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A afirmação \"O texto Texto apresenta entrevistas sobre o uso do celular em sala de aula. pode ser classificado como Reportagem\" está correta?",
+      "enunciado": "A afirmacao \"O texto Texto apresenta entrevistas sobre o uso do celular em sala de aula. pode ser classificado como Reportagem\" esta correta?",
       "opcoes": [
         "Verdadeiro",
         "Falso"
       ],
       "correta": "Verdadeiro",
-      "comentario": "Está correta porque esse exemplo apresenta marcas de reportagem.",
+      "comentario": "Esta correta porque esse exemplo apresenta marcas de reportagem.",
       "tempoEstimado": 20,
       "tags": [
         "reportagem",
@@ -500,22 +501,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Artigo de opinião",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Artigo de opiniao",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "O trecho \"Texto argumenta contra o desperdicio de água na cidade.\" se relaciona mais diretamente a qual gênero textual?",
+      "enunciado": "O trecho \"Texto argumenta contra o desperdicio de agua na cidade.\" se relaciona mais diretamente a qual genero textual?",
       "opcoes": [
-        "Artigo de opinião",
+        "Artigo de opiniao",
         "Editorial",
-        "Notícia",
+        "Noticia",
         "Carta aberta"
       ],
-      "correta": "Artigo de opinião",
-      "comentario": "Artigo de opinião costuma defender um ponto de vista sobre tema relevante com argumentos.",
+      "correta": "Artigo de opiniao",
+      "comentario": "Artigo de opiniao costuma defender um ponto de vista sobre tema relevante com argumentos.",
       "tempoEstimado": 20,
       "tags": [
         "artigo-opiniao",
@@ -538,22 +539,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta um exemplo mais compatível com o gênero crônica?",
+      "enunciado": "Qual alternativa apresenta um exemplo mais compativel com o genero cronica?",
       "opcoes": [
-        "Cenário comum ganha humor e sensibilidade no olhar do narrador.",
+        "Cenario comum ganha humor e sensibilidade no olhar do narrador.",
         "Desenho ironiza promessa politica recente.",
-        "Sequencia curta termina em surpresa humorística.",
+        "Sequencia curta termina em surpresa humorastica.",
         "Glossario esclarece o conceito de cidadania."
       ],
-      "correta": "Cenário comum ganha humor e sensibilidade no olhar do narrador.",
-      "comentario": "A resposta correta corresponde a Crônica, pois sua finalidade e refletir sobre cenas do dia a dia com olhar pessoal.",
+      "correta": "Cenario comum ganha humor e sensibilidade no olhar do narrador.",
+      "comentario": "A resposta correta corresponde a Cronica, pois sua finalidade e refletir sobre cenas do dia a dia com olhar pessoal.",
       "tempoEstimado": 20,
       "tags": [
         "cronica",
@@ -576,20 +577,20 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Poema",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A afirmação \"O texto Texto joga com sons e repeticoes para sugerir movimento. pode ser classificado como Poema\" está correta?",
+      "enunciado": "A afirmacao \"O texto Texto joga com sons e repeticoes para sugerir movimento. pode ser classificado como Poema\" esta correta?",
       "opcoes": [
         "Verdadeiro",
         "Falso"
       ],
       "correta": "Verdadeiro",
-      "comentario": "Está correta porque esse exemplo apresenta marcas de poema.",
+      "comentario": "Esta correta porque esse exemplo apresenta marcas de poema.",
       "tempoEstimado": 20,
       "tags": [
         "poema",
@@ -612,22 +613,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Carta do leitor",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "O trecho \"Mensagem elogia cobertura sobre mobilidade urbana.\" se relaciona mais diretamente a qual gênero textual?",
+      "enunciado": "O trecho \"Mensagem elogia cobertura sobre mobilidade urbana.\" se relaciona mais diretamente a qual genero textual?",
       "opcoes": [
         "Carta do leitor",
-        "Artigo de opinião",
+        "Artigo de opiniao",
         "Carta aberta",
-        "Anúncio"
+        "Anuncio"
       ],
       "correta": "Carta do leitor",
-      "comentario": "Carta do leitor costuma manifestar opinião do leitor sobre publicação, tema ou problema social.",
+      "comentario": "Carta do leitor costuma manifestar opiniao do leitor sobre publicacao, tema ou problema social.",
       "tempoEstimado": 20,
       "tags": [
         "carta-leitor",
@@ -650,22 +651,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta um exemplo mais compatível com o gênero anúncio?",
+      "enunciado": "Qual alternativa apresenta um exemplo mais compativel com o genero anuncio?",
       "opcoes": [
         "Mensagem incentiva a compra de um curso online.",
-        "Narrador observa a pressa das pessoas no ponto de ônibus.",
+        "Narrador observa a pressa das pessoas no ponto de onibus.",
         "Texto joga com sons e repeticoes para sugerir movimento.",
-        "Texto crítica problema do bairro citado no jornal."
+        "Texto critica problema do bairro citado no jornal."
       ],
       "correta": "Mensagem incentiva a compra de um curso online.",
-      "comentario": "A resposta correta corresponde a Anúncio, pois sua finalidade e convencer o público a aderir a uma proposta.",
+      "comentario": "A resposta correta corresponde a Anuncio, pois sua finalidade e convencer o publico a aderir a uma proposta.",
       "tempoEstimado": 20,
       "tags": [
         "anuncio",
@@ -688,20 +689,20 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Charge",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A afirmação \"O texto Cena crítica aumento de preços com humor. pode ser classificado como Charge\" está correta?",
+      "enunciado": "A afirmacao \"O texto Cena critica aumento de precos com humor. pode ser classificado como Charge\" esta correta?",
       "opcoes": [
         "Verdadeiro",
         "Falso"
       ],
       "correta": "Verdadeiro",
-      "comentario": "Está correta porque esse exemplo apresenta marcas de charge.",
+      "comentario": "Esta correta porque esse exemplo apresenta marcas de charge.",
       "tempoEstimado": 20,
       "tags": [
         "charge",
@@ -724,22 +725,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Tirinha",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "O trecho \"Sequencia curta termina em surpresa humorística.\" se relaciona mais diretamente a qual gênero textual?",
+      "enunciado": "O trecho \"Sequencia curta termina em surpresa humorastica.\" se relaciona mais diretamente a qual genero textual?",
       "opcoes": [
         "Tirinha",
         "Charge",
-        "Crônica",
+        "Cronica",
         "Poema"
       ],
       "correta": "Tirinha",
-      "comentario": "Tirinha costuma sequencia curta de quadrinhos com humor, narrativa breve ou crítica cotidiana.",
+      "comentario": "Tirinha costuma sequencia curta de quadrinhos com humor, narrativa breve ou critica cotidiana.",
       "tempoEstimado": 20,
       "tags": [
         "tirinha",
@@ -762,21 +763,21 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta um exemplo mais compatível com o gênero verbete?",
+      "enunciado": "Qual alternativa apresenta um exemplo mais compativel com o genero verbete?",
       "opcoes": [
-        "Entrada de dicionário explica o significado de biodiversidade.",
+        "Entrada de dicionario explica o significado de biodiversidade.",
         "Escola do bairro inaugura nova biblioteca nesta segunda-feira.",
         "Texto apresenta entrevistas sobre o uso do celular em sala de aula.",
         "Colunista avalia os efeitos do excesso de telas na rotina juvenil."
       ],
-      "correta": "Entrada de dicionário explica o significado de biodiversidade.",
+      "correta": "Entrada de dicionario explica o significado de biodiversidade.",
       "comentario": "A resposta correta corresponde a Verbete, pois sua finalidade e definir e esclarecer um termo.",
       "tempoEstimado": 20,
       "tags": [
@@ -800,20 +801,20 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Notícia",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Noticia",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A afirmação \"O texto Temporal interrompe aulas em tres municipios da regiao. pode ser classificado como Notícia\" está correta?",
+      "enunciado": "A afirmacao \"O texto Temporal interrompe aulas em tres municipios da regiao. pode ser classificado como Noticia\" esta correta?",
       "opcoes": [
         "Verdadeiro",
         "Falso"
       ],
       "correta": "Verdadeiro",
-      "comentario": "Está correta porque esse exemplo apresenta marcas de notícia.",
+      "comentario": "Esta correta porque esse exemplo apresenta marcas de noticia.",
       "tempoEstimado": 20,
       "tags": [
         "noticia",
@@ -836,18 +837,18 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Reportagem",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "O trecho \"Revista analisa os impactos do turismo na economia local.\" se relaciona mais diretamente a qual gênero textual?",
+      "enunciado": "O trecho \"Revista analisa os impactos do turismo na economia local.\" se relaciona mais diretamente a qual genero textual?",
       "opcoes": [
         "Reportagem",
-        "Notícia",
-        "Artigo de opinião",
+        "Noticia",
+        "Artigo de opiniao",
         "Resumo"
       ],
       "correta": "Reportagem",
@@ -874,22 +875,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta um exemplo mais compatível com o gênero artigo de opinião?",
+      "enunciado": "Qual alternativa apresenta um exemplo mais compativel com o genero artigo de opiniao?",
       "opcoes": [
-        "Articulista crítica a falta de espaços culturais no bairro.",
-        "Leitor comenta reportagem publicada na edição anterior.",
-        "Peca divulga promoção com chamada direta ao consumidor.",
-        "Personagens comentam notícia atual em tom satírico."
+        "Articulista critica a falta de espacos culturais no bairro.",
+        "Leitor comenta reportagem publicada na edicao anterior.",
+        "Peca divulga promocao com chamada direta ao consumidor.",
+        "Personagens comentam noticia atual em tom saterico."
       ],
-      "correta": "Articulista crítica a falta de espaços culturais no bairro.",
-      "comentario": "A resposta correta corresponde a Artigo de opinião, pois sua finalidade e convencer o leitor por meio de tese e argumentacao.",
+      "correta": "Articulista critica a falta de espacos culturais no bairro.",
+      "comentario": "A resposta correta corresponde a Artigo de opiniao, pois sua finalidade e convencer o leitor por meio de tese e argumentacao.",
       "tempoEstimado": 20,
       "tags": [
         "artigo-opiniao",
@@ -912,20 +913,20 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Crônica",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Cronica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A afirmação \"O texto Autor relembra uma conversa simples que virou grande reflexão. pode ser classificado como Crônica\" está correta?",
+      "enunciado": "A afirmacao \"O texto Autor relembra uma conversa simples que virou grande reflexao. pode ser classificado como Cronica\" esta correta?",
       "opcoes": [
         "Verdadeiro",
         "Falso"
       ],
       "correta": "Verdadeiro",
-      "comentario": "Está correta porque esse exemplo apresenta marcas de crônica.",
+      "comentario": "Esta correta porque esse exemplo apresenta marcas de cronica.",
       "tempoEstimado": 20,
       "tags": [
         "cronica",
@@ -948,22 +949,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Poema",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "O trecho \"Palavras se organizam em ritmo e imagens simbolicas.\" se relaciona mais diretamente a qual gênero textual?",
+      "enunciado": "O trecho \"Palavras se organizam em ritmo e imagens simbolicas.\" se relaciona mais diretamente a qual genero textual?",
       "opcoes": [
         "Poema",
-        "Crônica",
+        "Cronica",
         "Letra de campanha",
         "Verbete"
       ],
       "correta": "Poema",
-      "comentario": "Poema costuma explorar a linguagem de modo estético com ritmo, imagens e efeitos sonoros.",
+      "comentario": "Poema costuma explorar a linguagem de modo estatico com ritmo, imagens e efeitos sonoros.",
       "tempoEstimado": 20,
       "tags": [
         "poema",
@@ -986,22 +987,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta um exemplo mais compatível com o gênero carta do leitor?",
+      "enunciado": "Qual alternativa apresenta um exemplo mais compativel com o genero carta do leitor?",
       "opcoes": [
         "Mensagem elogia cobertura sobre mobilidade urbana.",
-        "Matéria mostra como a seca afeta pequenos produtores da regiao.",
-        "Texto argumenta contra o desperdicio de água na cidade.",
-        "Autor relembra uma conversa simples que virou grande reflexão."
+        "Materia mostra como a seca afeta pequenos produtores da regiao.",
+        "Texto argumenta contra o desperdicio de agua na cidade.",
+        "Autor relembra uma conversa simples que virou grande reflexao."
       ],
       "correta": "Mensagem elogia cobertura sobre mobilidade urbana.",
-      "comentario": "A resposta correta corresponde a Carta do leitor, pois sua finalidade e opinar e dialogar com um veículo ou assunto publicado.",
+      "comentario": "A resposta correta corresponde a Carta do leitor, pois sua finalidade e opinar e dialogar com um veiculo ou assunto publicado.",
       "tempoEstimado": 20,
       "tags": [
         "carta-leitor",
@@ -1024,20 +1025,20 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Anúncio",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Anuncio",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A afirmação \"O texto Mensagem incentiva a compra de um curso online. pode ser classificado como Anúncio\" está correta?",
+      "enunciado": "A afirmacao \"O texto Mensagem incentiva a compra de um curso online. pode ser classificado como Anuncio\" esta correta?",
       "opcoes": [
         "Verdadeiro",
         "Falso"
       ],
       "correta": "Verdadeiro",
-      "comentario": "Está correta porque esse exemplo apresenta marcas de anúncio.",
+      "comentario": "Esta correta porque esse exemplo apresenta marcas de anuncio.",
       "tempoEstimado": 20,
       "tags": [
         "anuncio",
@@ -1060,18 +1061,18 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Charge",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "O trecho \"Personagens comentam notícia atual em tom satírico.\" se relaciona mais diretamente a qual gênero textual?",
+      "enunciado": "O trecho \"Personagens comentam noticia atual em tom saterico.\" se relaciona mais diretamente a qual genero textual?",
       "opcoes": [
         "Charge",
         "Tirinha",
-        "Anúncio",
+        "Anuncio",
         "Cartum"
       ],
       "correta": "Charge",
@@ -1098,14 +1099,14 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta um exemplo mais compatível com o gênero tirinha?",
+      "enunciado": "Qual alternativa apresenta um exemplo mais compativel com o genero tirinha?",
       "opcoes": [
         "Quadrinhos exploram ironia em uma cena cotidiana.",
         "Desenho ironiza promessa politica recente.",
@@ -1113,7 +1114,7 @@ export const generosTextuais = {
         "Temporal interrompe aulas em tres municipios da regiao."
       ],
       "correta": "Quadrinhos exploram ironia em uma cena cotidiana.",
-      "comentario": "A resposta correta corresponde a Tirinha, pois sua finalidade e narrar rapidamente uma situação, muitas vezes humorística.",
+      "comentario": "A resposta correta corresponde a Tirinha, pois sua finalidade e narrar rapidamente uma situacao, muitas vezes humorastica.",
       "tempoEstimado": 20,
       "tags": [
         "tirinha",
@@ -1136,20 +1137,20 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Verbete",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A afirmação \"O texto Glossario esclarece o conceito de cidadania. pode ser classificado como Verbete\" está correta?",
+      "enunciado": "A afirmacao \"O texto Glossario esclarece o conceito de cidadania. pode ser classificado como Verbete\" esta correta?",
       "opcoes": [
         "Verdadeiro",
         "Falso"
       ],
       "correta": "Verdadeiro",
-      "comentario": "Está correta porque esse exemplo apresenta marcas de verbete.",
+      "comentario": "Esta correta porque esse exemplo apresenta marcas de verbete.",
       "tempoEstimado": 20,
       "tags": [
         "verbete",
@@ -1172,22 +1173,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um site de notícias, aparece o trecho \"Escola do bairro inaugura nova biblioteca nesta segunda-feira.\". Qual gênero textual melhor se ajusta a essa situação?",
+      "enunciado": "Em um site de noticias, aparece o trecho \"Escola do bairro inaugura nova biblioteca nesta segunda-feira.\". Qual genero textual melhor se ajusta a essa situacao?",
       "opcoes": [
-        "Notícia",
-        "Artigo de opinião",
-        "Crônica",
+        "Noticia",
+        "Artigo de opiniao",
+        "Cronica",
         "Poema"
       ],
-      "correta": "Notícia",
-      "comentario": "O contexto de circulação e as marcas do trecho apontam para Notícia.",
+      "correta": "Noticia",
+      "comentario": "O contexto de circulacao e as marcas do trecho apontam para Noticia.",
       "tempoEstimado": 30,
       "tags": [
         "noticia",
@@ -1211,17 +1212,17 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Finalidade e circulação",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Finalidade e circulacao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual finalidade aparece de modo mais caracteristico no gênero reportagem?",
+      "enunciado": "Qual finalidade aparece de modo mais caracteristico no genero reportagem?",
       "opcoes": [
         "aprofundar e contextualizar um assunto de interesse social",
-        "organizar dados sem indicar gênero específico",
+        "organizar dados sem indicar genero especifico",
         "eliminar qualquer finalidade comunicativa",
         "apresentar apenas palavras soltas sem contexto"
       ],
@@ -1249,29 +1250,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Diferenciação entre gêneros",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Diferenciacao entre generos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em \"Colunista avalia os efeitos do excesso de telas na rotina juvenil.\", a classificação correta é Artigo de opinião, e não Editorial, porque:",
+      "enunciado": "Em \"Colunista avalia os efeitos do excesso de telas na rotina juvenil.\", a classificacao correta e Artigo de opiniao, e nao Editorial, porque:",
       "opcoes": [
-        "Artigo de opinião apresenta tese, opinião explícita, argumentos e posicionamento do autor.",
-        "Editorial aparece sempre que há um título no texto.",
-        "Editorial dispensa qualquer relação com suporte ou finalidade.",
+        "Artigo de opiniao apresenta tese, opiniao explicita, argumentos e posicionamento do autor.",
+        "Editorial aparece sempre que ha um titulo no texto.",
+        "Editorial dispensa qualquer relacao com suporte ou finalidade.",
         "Editorial se reconhece apenas pelo tamanho do texto."
       ],
-      "correta": "Artigo de opinião apresenta tese, opinião explícita, argumentos e posicionamento do autor.",
-      "comentario": "A justificativa correta recupera a finalidade e as marcas do gênero.",
+      "correta": "Artigo de opiniao apresenta tese, opiniao explicita, argumentos e posicionamento do autor.",
+      "comentario": "A justificativa correta recupera a finalidade e as marcas do genero.",
       "tempoEstimado": 35,
       "tags": [
         "artigo-opiniao",
         "diferenciacao"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -1287,22 +1288,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Crônica",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Cronica",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta outro exemplo compatível com o gênero crônica?",
+      "enunciado": "Qual alternativa apresenta outro exemplo compativel com o genero cronica?",
       "opcoes": [
-        "Narrador observa a pressa das pessoas no ponto de ônibus.",
-        "Tres quadrinhos mostram diálogo engraçado entre amigos.",
+        "Narrador observa a pressa das pessoas no ponto de onibus.",
+        "Tres quadrinhos mostram dialogo engracado entre amigos.",
         "Texto define o termo narrador em poucas linhas.",
         "Temporal interrompe aulas em tres municipios da regiao."
       ],
-      "correta": "Narrador observa a pressa das pessoas no ponto de ônibus.",
-      "comentario": "A resposta correta mantem a mesma finalidade comunicativa e o mesmo tipo de circulação.",
+      "correta": "Narrador observa a pressa das pessoas no ponto de onibus.",
+      "comentario": "A resposta correta mantem a mesma finalidade comunicativa e o mesmo tipo de circulacao.",
       "tempoEstimado": 30,
       "tags": [
         "cronica",
@@ -1325,22 +1326,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definição corresponde melhor ao gênero sugerido pelo trecho \"O texto busca emocionar pela escolha expressiva das palavras.\"?",
+      "enunciado": "Qual definicao corresponde melhor ao genero sugerido pelo trecho \"O texto busca emocionar pela escolha expressiva das palavras.\"?",
       "opcoes": [
-        "explorar a linguagem de modo estético com ritmo, imagens e efeitos sonoros",
-        "relata fatos atuais de interesse público com linguagem objetiva",
+        "explorar a linguagem de modo estatico com ritmo, imagens e efeitos sonoros",
+        "relata fatos atuais de interesse publico com linguagem objetiva",
         "aprofundar um tema com dados, entrevistas e contextualizacao",
         "defender um ponto de vista sobre tema relevante com argumentos"
       ],
-      "correta": "explorar a linguagem de modo estético com ritmo, imagens e efeitos sonoros",
-      "comentario": "A definição correta recupera a finalidade principal do gênero.",
+      "correta": "explorar a linguagem de modo estatico com ritmo, imagens e efeitos sonoros",
+      "comentario": "A definicao correta recupera a finalidade principal do genero.",
       "tempoEstimado": 30,
       "tags": [
         "poema",
@@ -1363,29 +1364,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO combina com o gênero carta do leitor?",
+      "enunciado": "Qual alternativa NAO combina com o genero carta do leitor?",
       "opcoes": [
-        "Texto argumenta contra o desperdicio de água na cidade.",
+        "Texto argumenta contra o desperdicio de agua na cidade.",
         "Mensagem elogia cobertura sobre mobilidade urbana.",
-        "Texto crítica problema do bairro citado no jornal.",
-        "Autor da carta reage a matéria sobre educação publica."
+        "Texto critica problema do bairro citado no jornal.",
+        "Autor da carta reage a materia sobre educacao publica."
       ],
-      "correta": "Texto argumenta contra o desperdicio de água na cidade.",
-      "comentario": "A alternativa correta desloca a finalidade e as marcas para outro gênero textual.",
+      "correta": "Texto argumenta contra o desperdicio de agua na cidade.",
+      "comentario": "A alternativa correta desloca a finalidade e as marcas para outro genero textual.",
       "tempoEstimado": 35,
       "tags": [
         "carta-leitor",
         "nao-combina"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -1401,22 +1402,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um revista, aparece o trecho \"Peca divulga promoção com chamada direta ao consumidor.\". Qual gênero textual melhor se ajusta a essa situação?",
+      "enunciado": "Em um revista, aparece o trecho \"Peca divulga promocao com chamada direta ao consumidor.\". Qual genero textual melhor se ajusta a essa situacao?",
       "opcoes": [
-        "Anúncio",
+        "Anuncio",
         "Poema",
         "Carta do leitor",
         "Charge"
       ],
-      "correta": "Anúncio",
-      "comentario": "O contexto de circulação e as marcas do trecho apontam para Anúncio.",
+      "correta": "Anuncio",
+      "comentario": "O contexto de circulacao e as marcas do trecho apontam para Anuncio.",
       "tempoEstimado": 30,
       "tags": [
         "anuncio",
@@ -1440,17 +1441,17 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Finalidade e circulação",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Finalidade e circulacao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual finalidade aparece de modo mais caracteristico no gênero charge?",
+      "enunciado": "Qual finalidade aparece de modo mais caracteristico no genero charge?",
       "opcoes": [
         "criticar ou satirizar um fato atual",
-        "organizar dados sem indicar gênero específico",
+        "organizar dados sem indicar genero especifico",
         "eliminar qualquer finalidade comunicativa",
         "apresentar apenas palavras soltas sem contexto"
       ],
@@ -1478,29 +1479,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Diferenciação entre gêneros",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Diferenciacao entre generos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em \"Historinha breve apresenta conflito simples e fechamento rapido.\", a classificação correta é Tirinha, e não Charge, porque:",
+      "enunciado": "Em \"Historinha breve apresenta conflito simples e fechamento rapido.\", a classificacao correta e Tirinha, e nao Charge, porque:",
       "opcoes": [
         "Tirinha apresenta quadrinhos em sequencia, fala de personagens e desfecho curto.",
-        "Charge aparece sempre que há um título no texto.",
-        "Charge dispensa qualquer relação com suporte ou finalidade.",
+        "Charge aparece sempre que ha um titulo no texto.",
+        "Charge dispensa qualquer relacao com suporte ou finalidade.",
         "Charge se reconhece apenas pelo tamanho do texto."
       ],
       "correta": "Tirinha apresenta quadrinhos em sequencia, fala de personagens e desfecho curto.",
-      "comentario": "A justificativa correta recupera a finalidade e as marcas do gênero.",
+      "comentario": "A justificativa correta recupera a finalidade e as marcas do genero.",
       "tempoEstimado": 35,
       "tags": [
         "tirinha",
         "diferenciacao"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -1516,14 +1517,14 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Verbete",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta outro exemplo compatível com o gênero verbete?",
+      "enunciado": "Qual alternativa apresenta outro exemplo compativel com o genero verbete?",
       "opcoes": [
         "Texto define o termo narrador em poucas linhas.",
         "Escola do bairro inaugura nova biblioteca nesta segunda-feira.",
@@ -1531,7 +1532,7 @@ export const generosTextuais = {
         "Colunista avalia os efeitos do excesso de telas na rotina juvenil."
       ],
       "correta": "Texto define o termo narrador em poucas linhas.",
-      "comentario": "A resposta correta mantem a mesma finalidade comunicativa e o mesmo tipo de circulação.",
+      "comentario": "A resposta correta mantem a mesma finalidade comunicativa e o mesmo tipo de circulacao.",
       "tempoEstimado": 30,
       "tags": [
         "verbete",
@@ -1554,22 +1555,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definição corresponde melhor ao gênero sugerido pelo trecho \"Escola do bairro inaugura nova biblioteca nesta segunda-feira.\"?",
+      "enunciado": "Qual definicao corresponde melhor ao genero sugerido pelo trecho \"Escola do bairro inaugura nova biblioteca nesta segunda-feira.\"?",
       "opcoes": [
-        "relata fatos atuais de interesse público com linguagem objetiva",
+        "relata fatos atuais de interesse publico com linguagem objetiva",
         "defender um ponto de vista sobre tema relevante com argumentos",
         "comentar o cotidiano com linguagem mais subjetiva e reflexiva",
-        "explorar a linguagem de modo estético com ritmo, imagens e efeitos sonoros"
+        "explorar a linguagem de modo estatico com ritmo, imagens e efeitos sonoros"
       ],
-      "correta": "relata fatos atuais de interesse público com linguagem objetiva",
-      "comentario": "A definição correta recupera a finalidade principal do gênero.",
+      "correta": "relata fatos atuais de interesse publico com linguagem objetiva",
+      "comentario": "A definicao correta recupera a finalidade principal do genero.",
       "tempoEstimado": 30,
       "tags": [
         "noticia",
@@ -1592,14 +1593,14 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO combina com o gênero reportagem?",
+      "enunciado": "Qual alternativa NAO combina com o genero reportagem?",
       "opcoes": [
         "Palavras se organizam em ritmo e imagens simbolicas.",
         "Revista analisa os impactos do turismo na economia local.",
@@ -1607,14 +1608,14 @@ export const generosTextuais = {
         "Caderno cultural discute os bastidores de um festival estudantil."
       ],
       "correta": "Palavras se organizam em ritmo e imagens simbolicas.",
-      "comentario": "A alternativa correta desloca a finalidade e as marcas para outro gênero textual.",
+      "comentario": "A alternativa correta desloca a finalidade e as marcas para outro genero textual.",
       "tempoEstimado": 35,
       "tags": [
         "reportagem",
         "nao-combina"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -1630,22 +1631,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um revista, aparece o trecho \"Colunista avalia os efeitos do excesso de telas na rotina juvenil.\". Qual gênero textual melhor se ajusta a essa situação?",
+      "enunciado": "Em um revista, aparece o trecho \"Colunista avalia os efeitos do excesso de telas na rotina juvenil.\". Qual genero textual melhor se ajusta a essa situacao?",
       "opcoes": [
-        "Artigo de opinião",
-        "Anúncio",
+        "Artigo de opiniao",
+        "Anuncio",
         "Charge",
         "Tirinha"
       ],
-      "correta": "Artigo de opinião",
-      "comentario": "O contexto de circulação e as marcas do trecho apontam para Artigo de opinião.",
+      "correta": "Artigo de opiniao",
+      "comentario": "O contexto de circulacao e as marcas do trecho apontam para Artigo de opiniao.",
       "tempoEstimado": 30,
       "tags": [
         "artigo-opiniao",
@@ -1669,22 +1670,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Finalidade e circulação",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Finalidade e circulacao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual finalidade aparece de modo mais caracteristico no gênero crônica?",
+      "enunciado": "Qual finalidade aparece de modo mais caracteristico no genero cronica?",
       "opcoes": [
         "refletir sobre cenas do dia a dia com olhar pessoal",
-        "organizar dados sem indicar gênero específico",
+        "organizar dados sem indicar genero especifico",
         "eliminar qualquer finalidade comunicativa",
         "apresentar apenas palavras soltas sem contexto"
       ],
       "correta": "refletir sobre cenas do dia a dia com olhar pessoal",
-      "comentario": "Crônica costuma refletir sobre cenas do dia a dia com olhar pessoal.",
+      "comentario": "Cronica costuma refletir sobre cenas do dia a dia com olhar pessoal.",
       "tempoEstimado": 35,
       "tags": [
         "cronica",
@@ -1707,29 +1708,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Diferenciação entre gêneros",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Diferenciacao entre generos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em \"O texto busca emocionar pela escolha expressiva das palavras.\", a classificação correta é Poema, e não Crônica, porque:",
+      "enunciado": "Em \"O texto busca emocionar pela escolha expressiva das palavras.\", a classificacao correta e Poema, e nao Cronica, porque:",
       "opcoes": [
-        "Poema apresenta versos, sonoridade, imagens e organização estética da linguagem.",
-        "Crônica aparece sempre que há um título no texto.",
-        "Crônica dispensa qualquer relação com suporte ou finalidade.",
-        "Crônica se reconhece apenas pelo tamanho do texto."
+        "Poema apresenta versos, sonoridade, imagens e organizacao estatica da linguagem.",
+        "Cronica aparece sempre que ha um titulo no texto.",
+        "Cronica dispensa qualquer relacao com suporte ou finalidade.",
+        "Cronica se reconhece apenas pelo tamanho do texto."
       ],
-      "correta": "Poema apresenta versos, sonoridade, imagens e organização estética da linguagem.",
-      "comentario": "A justificativa correta recupera a finalidade e as marcas do gênero.",
+      "correta": "Poema apresenta versos, sonoridade, imagens e organizacao estatica da linguagem.",
+      "comentario": "A justificativa correta recupera a finalidade e as marcas do genero.",
       "tempoEstimado": 35,
       "tags": [
         "poema",
         "diferenciacao"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -1745,22 +1746,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Carta do leitor",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta outro exemplo compatível com o gênero carta do leitor?",
+      "enunciado": "Qual alternativa apresenta outro exemplo compativel com o genero carta do leitor?",
       "opcoes": [
-        "Texto crítica problema do bairro citado no jornal.",
+        "Texto critica problema do bairro citado no jornal.",
         "Autor defende maior incentivo a leitura nas escolas.",
-        "Texto comenta o silêncio estranho de uma tarde chuvosa.",
+        "Texto comenta o silencio estranho de uma tarde chuvosa.",
         "Palavras se organizam em ritmo e imagens simbolicas."
       ],
-      "correta": "Texto crítica problema do bairro citado no jornal.",
-      "comentario": "A resposta correta mantem a mesma finalidade comunicativa e o mesmo tipo de circulação.",
+      "correta": "Texto critica problema do bairro citado no jornal.",
+      "comentario": "A resposta correta mantem a mesma finalidade comunicativa e o mesmo tipo de circulacao.",
       "tempoEstimado": 30,
       "tags": [
         "carta-leitor",
@@ -1783,22 +1784,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definição corresponde melhor ao gênero sugerido pelo trecho \"Peca divulga promoção com chamada direta ao consumidor.\"?",
+      "enunciado": "Qual definicao corresponde melhor ao genero sugerido pelo trecho \"Peca divulga promocao com chamada direta ao consumidor.\"?",
       "opcoes": [
-        "divulgar produto, serviço, evento ou ideia com objetivo de persuadir",
-        "explorar a linguagem de modo estético com ritmo, imagens e efeitos sonoros",
-        "manifestar opinião do leitor sobre publicação, tema ou problema social",
+        "divulgar produto, servico, evento ou ideia com objetivo de persuadir",
+        "explorar a linguagem de modo estatico com ritmo, imagens e efeitos sonoros",
+        "manifestar opiniao do leitor sobre publicacao, tema ou problema social",
         "comentar criticamente fatos atuais por meio de humor e linguagem verbo-visual"
       ],
-      "correta": "divulgar produto, serviço, evento ou ideia com objetivo de persuadir",
-      "comentario": "A definição correta recupera a finalidade principal do gênero.",
+      "correta": "divulgar produto, servico, evento ou ideia com objetivo de persuadir",
+      "comentario": "A definicao correta recupera a finalidade principal do genero.",
       "tempoEstimado": 30,
       "tags": [
         "anuncio",
@@ -1821,29 +1822,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO combina com o gênero charge?",
+      "enunciado": "Qual alternativa NAO combina com o genero charge?",
       "opcoes": [
-        "Banner apresenta serviço e pede que o leitor participe.",
+        "Banner apresenta servico e pede que o leitor participe.",
         "Quadro usa exagero para criticar problema urbano.",
-        "Imagem e fala breve apontam contradição social do momento.",
+        "Imagem e fala breve apontam contradicao social do momento.",
         "Desenho ironiza promessa politica recente."
       ],
-      "correta": "Banner apresenta serviço e pede que o leitor participe.",
-      "comentario": "A alternativa correta desloca a finalidade e as marcas para outro gênero textual.",
+      "correta": "Banner apresenta servico e pede que o leitor participe.",
+      "comentario": "A alternativa correta desloca a finalidade e as marcas para outro genero textual.",
       "tempoEstimado": 35,
       "tags": [
         "charge",
         "nao-combina"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -1859,22 +1860,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um rede social, aparece o trecho \"Historinha breve apresenta conflito simples e fechamento rapido.\". Qual gênero textual melhor se ajusta a essa situação?",
+      "enunciado": "Em um rede social, aparece o trecho \"Historinha breve apresenta conflito simples e fechamento rapido.\". Qual genero textual melhor se ajusta a essa situacao?",
       "opcoes": [
         "Tirinha",
         "Verbete",
-        "Notícia",
+        "Noticia",
         "Reportagem"
       ],
       "correta": "Tirinha",
-      "comentario": "O contexto de circulação e as marcas do trecho apontam para Tirinha.",
+      "comentario": "O contexto de circulacao e as marcas do trecho apontam para Tirinha.",
       "tempoEstimado": 30,
       "tags": [
         "tirinha",
@@ -1898,17 +1899,17 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Finalidade e circulação",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Finalidade e circulacao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual finalidade aparece de modo mais caracteristico no gênero verbete?",
+      "enunciado": "Qual finalidade aparece de modo mais caracteristico no genero verbete?",
       "opcoes": [
         "definir e esclarecer um termo",
-        "organizar dados sem indicar gênero específico",
+        "organizar dados sem indicar genero especifico",
         "eliminar qualquer finalidade comunicativa",
         "apresentar apenas palavras soltas sem contexto"
       ],
@@ -1936,29 +1937,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Diferenciação entre gêneros",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Diferenciacao entre generos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em \"Escola do bairro inaugura nova biblioteca nesta segunda-feira.\", a classificação correta é Notícia, e não Reportagem, porque:",
+      "enunciado": "Em \"Escola do bairro inaugura nova biblioteca nesta segunda-feira.\", a classificacao correta e Noticia, e nao Reportagem, porque:",
       "opcoes": [
-        "Notícia apresenta título informativo, objetividade e apresentacao de fato recente.",
-        "Reportagem aparece sempre que há um título no texto.",
-        "Reportagem dispensa qualquer relação com suporte ou finalidade.",
+        "Noticia apresenta titulo informativo, objetividade e apresentacao de fato recente.",
+        "Reportagem aparece sempre que ha um titulo no texto.",
+        "Reportagem dispensa qualquer relacao com suporte ou finalidade.",
         "Reportagem se reconhece apenas pelo tamanho do texto."
       ],
-      "correta": "Notícia apresenta título informativo, objetividade e apresentacao de fato recente.",
-      "comentario": "A justificativa correta recupera a finalidade e as marcas do gênero.",
+      "correta": "Noticia apresenta titulo informativo, objetividade e apresentacao de fato recente.",
+      "comentario": "A justificativa correta recupera a finalidade e as marcas do genero.",
       "tempoEstimado": 35,
       "tags": [
         "noticia",
         "diferenciacao"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -1974,14 +1975,14 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Reportagem",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta outro exemplo compatível com o gênero reportagem?",
+      "enunciado": "Qual alternativa apresenta outro exemplo compativel com o genero reportagem?",
       "opcoes": [
         "Portal publica especial sobre alimentacao saudavel entre jovens.",
         "Versos curtos constroem imagens de chuva e memoria.",
@@ -1989,7 +1990,7 @@ export const generosTextuais = {
         "Mensagem incentiva a compra de um curso online."
       ],
       "correta": "Portal publica especial sobre alimentacao saudavel entre jovens.",
-      "comentario": "A resposta correta mantem a mesma finalidade comunicativa e o mesmo tipo de circulação.",
+      "comentario": "A resposta correta mantem a mesma finalidade comunicativa e o mesmo tipo de circulacao.",
       "tempoEstimado": 30,
       "tags": [
         "reportagem",
@@ -2012,22 +2013,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definição corresponde melhor ao gênero sugerido pelo trecho \"Colunista avalia os efeitos do excesso de telas na rotina juvenil.\"?",
+      "enunciado": "Qual definicao corresponde melhor ao genero sugerido pelo trecho \"Colunista avalia os efeitos do excesso de telas na rotina juvenil.\"?",
       "opcoes": [
         "defender um ponto de vista sobre tema relevante com argumentos",
-        "divulgar produto, serviço, evento ou ideia com objetivo de persuadir",
+        "divulgar produto, servico, evento ou ideia com objetivo de persuadir",
         "comentar criticamente fatos atuais por meio de humor e linguagem verbo-visual",
-        "sequencia curta de quadrinhos com humor, narrativa breve ou crítica cotidiana"
+        "sequencia curta de quadrinhos com humor, narrativa breve ou critica cotidiana"
       ],
       "correta": "defender um ponto de vista sobre tema relevante com argumentos",
-      "comentario": "A definição correta recupera a finalidade principal do gênero.",
+      "comentario": "A definicao correta recupera a finalidade principal do genero.",
       "tempoEstimado": 30,
       "tags": [
         "artigo-opiniao",
@@ -2050,29 +2051,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO combina com o gênero crônica?",
+      "enunciado": "Qual alternativa NAO combina com o genero cronica?",
       "opcoes": [
         "Quadrinhos exploram ironia em uma cena cotidiana.",
-        "Cenário comum ganha humor e sensibilidade no olhar do narrador.",
-        "Narrador observa a pressa das pessoas no ponto de ônibus.",
-        "Texto comenta o silêncio estranho de uma tarde chuvosa."
+        "Cenario comum ganha humor e sensibilidade no olhar do narrador.",
+        "Narrador observa a pressa das pessoas no ponto de onibus.",
+        "Texto comenta o silencio estranho de uma tarde chuvosa."
       ],
       "correta": "Quadrinhos exploram ironia em uma cena cotidiana.",
-      "comentario": "A alternativa correta desloca a finalidade e as marcas para outro gênero textual.",
+      "comentario": "A alternativa correta desloca a finalidade e as marcas para outro genero textual.",
       "tempoEstimado": 35,
       "tags": [
         "cronica",
         "nao-combina"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -2088,22 +2089,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um livro de poesia, aparece o trecho \"O texto busca emocionar pela escolha expressiva das palavras.\". Qual gênero textual melhor se ajusta a essa situação?",
+      "enunciado": "Em um livro de poesia, aparece o trecho \"O texto busca emocionar pela escolha expressiva das palavras.\". Qual genero textual melhor se ajusta a essa situacao?",
       "opcoes": [
         "Poema",
-        "Notícia",
+        "Noticia",
         "Reportagem",
-        "Artigo de opinião"
+        "Artigo de opiniao"
       ],
       "correta": "Poema",
-      "comentario": "O contexto de circulação e as marcas do trecho apontam para Poema.",
+      "comentario": "O contexto de circulacao e as marcas do trecho apontam para Poema.",
       "tempoEstimado": 30,
       "tags": [
         "poema",
@@ -2127,22 +2128,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Finalidade e circulação",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Finalidade e circulacao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual finalidade aparece de modo mais caracteristico no gênero carta do leitor?",
+      "enunciado": "Qual finalidade aparece de modo mais caracteristico no genero carta do leitor?",
       "opcoes": [
-        "opinar e dialogar com um veículo ou assunto publicado",
-        "organizar dados sem indicar gênero específico",
+        "opinar e dialogar com um veiculo ou assunto publicado",
+        "organizar dados sem indicar genero especifico",
         "eliminar qualquer finalidade comunicativa",
         "apresentar apenas palavras soltas sem contexto"
       ],
-      "correta": "opinar e dialogar com um veículo ou assunto publicado",
-      "comentario": "Carta do leitor costuma opinar e dialogar com um veículo ou assunto publicado.",
+      "correta": "opinar e dialogar com um veiculo ou assunto publicado",
+      "comentario": "Carta do leitor costuma opinar e dialogar com um veiculo ou assunto publicado.",
       "tempoEstimado": 35,
       "tags": [
         "carta-leitor",
@@ -2165,29 +2166,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Diferenciação entre gêneros",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Diferenciacao entre generos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em \"Peca divulga promoção com chamada direta ao consumidor.\", a classificação correta é Anúncio, e não Notícia, porque:",
+      "enunciado": "Em \"Peca divulga promocao com chamada direta ao consumidor.\", a classificacao correta e Anuncio, e nao Noticia, porque:",
       "opcoes": [
-        "Anúncio apresenta apelo ao leitor, linguagem persuasiva e convite a ação.",
-        "Notícia aparece sempre que há um título no texto.",
-        "Notícia dispensa qualquer relação com suporte ou finalidade.",
-        "Notícia se reconhece apenas pelo tamanho do texto."
+        "Anuncio apresenta apelo ao leitor, linguagem persuasiva e convite a acao.",
+        "Noticia aparece sempre que ha um titulo no texto.",
+        "Noticia dispensa qualquer relacao com suporte ou finalidade.",
+        "Noticia se reconhece apenas pelo tamanho do texto."
       ],
-      "correta": "Anúncio apresenta apelo ao leitor, linguagem persuasiva e convite a ação.",
-      "comentario": "A justificativa correta recupera a finalidade e as marcas do gênero.",
+      "correta": "Anuncio apresenta apelo ao leitor, linguagem persuasiva e convite a acao.",
+      "comentario": "A justificativa correta recupera a finalidade e as marcas do genero.",
       "tempoEstimado": 35,
       "tags": [
         "anuncio",
         "diferenciacao"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -2203,22 +2204,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Charge",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta outro exemplo compatível com o gênero charge?",
+      "enunciado": "Qual alternativa apresenta outro exemplo compativel com o genero charge?",
       "opcoes": [
-        "Imagem e fala breve apontam contradição social do momento.",
-        "Cartaz convida o público para a feira cultural da escola.",
-        "Sequencia curta termina em surpresa humorística.",
+        "Imagem e fala breve apontam contradicao social do momento.",
+        "Cartaz convida o publico para a feira cultural da escola.",
+        "Sequencia curta termina em surpresa humorastica.",
         "Glossario esclarece o conceito de cidadania."
       ],
-      "correta": "Imagem e fala breve apontam contradição social do momento.",
-      "comentario": "A resposta correta mantem a mesma finalidade comunicativa e o mesmo tipo de circulação.",
+      "correta": "Imagem e fala breve apontam contradicao social do momento.",
+      "comentario": "A resposta correta mantem a mesma finalidade comunicativa e o mesmo tipo de circulacao.",
       "tempoEstimado": 30,
       "tags": [
         "charge",
@@ -2241,22 +2242,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definição corresponde melhor ao gênero sugerido pelo trecho \"Historinha breve apresenta conflito simples e fechamento rapido.\"?",
+      "enunciado": "Qual definicao corresponde melhor ao genero sugerido pelo trecho \"Historinha breve apresenta conflito simples e fechamento rapido.\"?",
       "opcoes": [
-        "sequencia curta de quadrinhos com humor, narrativa breve ou crítica cotidiana",
+        "sequencia curta de quadrinhos com humor, narrativa breve ou critica cotidiana",
         "explicar de modo sintetico e objetivo o significado de um termo ou conceito",
-        "relata fatos atuais de interesse público com linguagem objetiva",
+        "relata fatos atuais de interesse publico com linguagem objetiva",
         "aprofundar um tema com dados, entrevistas e contextualizacao"
       ],
-      "correta": "sequencia curta de quadrinhos com humor, narrativa breve ou crítica cotidiana",
-      "comentario": "A definição correta recupera a finalidade principal do gênero.",
+      "correta": "sequencia curta de quadrinhos com humor, narrativa breve ou critica cotidiana",
+      "comentario": "A definicao correta recupera a finalidade principal do genero.",
       "tempoEstimado": 30,
       "tags": [
         "tirinha",
@@ -2279,29 +2280,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO combina com o gênero verbete?",
+      "enunciado": "Qual alternativa NAO combina com o genero verbete?",
       "opcoes": [
         "Escola do bairro inaugura nova biblioteca nesta segunda-feira.",
-        "Entrada de dicionário explica o significado de biodiversidade.",
+        "Entrada de dicionario explica o significado de biodiversidade.",
         "Texto define o termo narrador em poucas linhas.",
         "Glossario esclarece o conceito de cidadania."
       ],
       "correta": "Escola do bairro inaugura nova biblioteca nesta segunda-feira.",
-      "comentario": "A alternativa correta desloca a finalidade e as marcas para outro gênero textual.",
+      "comentario": "A alternativa correta desloca a finalidade e as marcas para outro genero textual.",
       "tempoEstimado": 35,
       "tags": [
         "verbete",
         "nao-combina"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -2317,22 +2318,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um site de notícias, aparece o trecho \"Escola do bairro inaugura nova biblioteca nesta segunda-feira.\". Qual gênero textual melhor se ajusta a essa situação?",
+      "enunciado": "Em um site de noticias, aparece o trecho \"Escola do bairro inaugura nova biblioteca nesta segunda-feira.\". Qual genero textual melhor se ajusta a essa situacao?",
       "opcoes": [
-        "Notícia",
-        "Artigo de opinião",
-        "Crônica",
+        "Noticia",
+        "Artigo de opiniao",
+        "Cronica",
         "Poema"
       ],
-      "correta": "Notícia",
-      "comentario": "O contexto de circulação e as marcas do trecho apontam para Notícia.",
+      "correta": "Noticia",
+      "comentario": "O contexto de circulacao e as marcas do trecho apontam para Noticia.",
       "tempoEstimado": 30,
       "tags": [
         "noticia",
@@ -2356,17 +2357,17 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Finalidade e circulação",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Finalidade e circulacao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual finalidade aparece de modo mais caracteristico no gênero reportagem?",
+      "enunciado": "Qual finalidade aparece de modo mais caracteristico no genero reportagem?",
       "opcoes": [
         "aprofundar e contextualizar um assunto de interesse social",
-        "organizar dados sem indicar gênero específico",
+        "organizar dados sem indicar genero especifico",
         "eliminar qualquer finalidade comunicativa",
         "apresentar apenas palavras soltas sem contexto"
       ],
@@ -2394,29 +2395,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Diferenciação entre gêneros",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Diferenciacao entre generos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em \"Colunista avalia os efeitos do excesso de telas na rotina juvenil.\", a classificação correta é Artigo de opinião, e não Editorial, porque:",
+      "enunciado": "Em \"Colunista avalia os efeitos do excesso de telas na rotina juvenil.\", a classificacao correta e Artigo de opiniao, e nao Editorial, porque:",
       "opcoes": [
-        "Artigo de opinião apresenta tese, opinião explícita, argumentos e posicionamento do autor.",
-        "Editorial aparece sempre que há um título no texto.",
-        "Editorial dispensa qualquer relação com suporte ou finalidade.",
+        "Artigo de opiniao apresenta tese, opiniao explicita, argumentos e posicionamento do autor.",
+        "Editorial aparece sempre que ha um titulo no texto.",
+        "Editorial dispensa qualquer relacao com suporte ou finalidade.",
         "Editorial se reconhece apenas pelo tamanho do texto."
       ],
-      "correta": "Artigo de opinião apresenta tese, opinião explícita, argumentos e posicionamento do autor.",
-      "comentario": "A justificativa correta recupera a finalidade e as marcas do gênero.",
+      "correta": "Artigo de opiniao apresenta tese, opiniao explicita, argumentos e posicionamento do autor.",
+      "comentario": "A justificativa correta recupera a finalidade e as marcas do genero.",
       "tempoEstimado": 35,
       "tags": [
         "artigo-opiniao",
         "diferenciacao"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -2432,22 +2433,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Crônica",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Cronica",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta outro exemplo compatível com o gênero crônica?",
+      "enunciado": "Qual alternativa apresenta outro exemplo compativel com o genero cronica?",
       "opcoes": [
-        "Narrador observa a pressa das pessoas no ponto de ônibus.",
-        "Tres quadrinhos mostram diálogo engraçado entre amigos.",
+        "Narrador observa a pressa das pessoas no ponto de onibus.",
+        "Tres quadrinhos mostram dialogo engracado entre amigos.",
         "Texto define o termo narrador em poucas linhas.",
         "Temporal interrompe aulas em tres municipios da regiao."
       ],
-      "correta": "Narrador observa a pressa das pessoas no ponto de ônibus.",
-      "comentario": "A resposta correta mantem a mesma finalidade comunicativa e o mesmo tipo de circulação.",
+      "correta": "Narrador observa a pressa das pessoas no ponto de onibus.",
+      "comentario": "A resposta correta mantem a mesma finalidade comunicativa e o mesmo tipo de circulacao.",
       "tempoEstimado": 30,
       "tags": [
         "cronica",
@@ -2470,22 +2471,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definição corresponde melhor ao gênero sugerido pelo trecho \"O texto busca emocionar pela escolha expressiva das palavras.\"?",
+      "enunciado": "Qual definicao corresponde melhor ao genero sugerido pelo trecho \"O texto busca emocionar pela escolha expressiva das palavras.\"?",
       "opcoes": [
-        "explorar a linguagem de modo estético com ritmo, imagens e efeitos sonoros",
-        "relata fatos atuais de interesse público com linguagem objetiva",
+        "explorar a linguagem de modo estatico com ritmo, imagens e efeitos sonoros",
+        "relata fatos atuais de interesse publico com linguagem objetiva",
         "aprofundar um tema com dados, entrevistas e contextualizacao",
         "defender um ponto de vista sobre tema relevante com argumentos"
       ],
-      "correta": "explorar a linguagem de modo estético com ritmo, imagens e efeitos sonoros",
-      "comentario": "A definição correta recupera a finalidade principal do gênero.",
+      "correta": "explorar a linguagem de modo estatico com ritmo, imagens e efeitos sonoros",
+      "comentario": "A definicao correta recupera a finalidade principal do genero.",
       "tempoEstimado": 30,
       "tags": [
         "poema",
@@ -2508,29 +2509,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO combina com o gênero carta do leitor?",
+      "enunciado": "Qual alternativa NAO combina com o genero carta do leitor?",
       "opcoes": [
-        "Texto argumenta contra o desperdicio de água na cidade.",
+        "Texto argumenta contra o desperdicio de agua na cidade.",
         "Mensagem elogia cobertura sobre mobilidade urbana.",
-        "Texto crítica problema do bairro citado no jornal.",
-        "Autor da carta reage a matéria sobre educação publica."
+        "Texto critica problema do bairro citado no jornal.",
+        "Autor da carta reage a materia sobre educacao publica."
       ],
-      "correta": "Texto argumenta contra o desperdicio de água na cidade.",
-      "comentario": "A alternativa correta desloca a finalidade e as marcas para outro gênero textual.",
+      "correta": "Texto argumenta contra o desperdicio de agua na cidade.",
+      "comentario": "A alternativa correta desloca a finalidade e as marcas para outro genero textual.",
       "tempoEstimado": 35,
       "tags": [
         "carta-leitor",
         "nao-combina"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -2546,22 +2547,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um revista, aparece o trecho \"Peca divulga promoção com chamada direta ao consumidor.\". Qual gênero textual melhor se ajusta a essa situação?",
+      "enunciado": "Em um revista, aparece o trecho \"Peca divulga promocao com chamada direta ao consumidor.\". Qual genero textual melhor se ajusta a essa situacao?",
       "opcoes": [
-        "Anúncio",
+        "Anuncio",
         "Poema",
         "Carta do leitor",
         "Charge"
       ],
-      "correta": "Anúncio",
-      "comentario": "O contexto de circulação e as marcas do trecho apontam para Anúncio.",
+      "correta": "Anuncio",
+      "comentario": "O contexto de circulacao e as marcas do trecho apontam para Anuncio.",
       "tempoEstimado": 30,
       "tags": [
         "anuncio",
@@ -2585,17 +2586,17 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Finalidade e circulação",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Finalidade e circulacao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual finalidade aparece de modo mais caracteristico no gênero charge?",
+      "enunciado": "Qual finalidade aparece de modo mais caracteristico no genero charge?",
       "opcoes": [
         "criticar ou satirizar um fato atual",
-        "organizar dados sem indicar gênero específico",
+        "organizar dados sem indicar genero especifico",
         "eliminar qualquer finalidade comunicativa",
         "apresentar apenas palavras soltas sem contexto"
       ],
@@ -2623,29 +2624,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Diferenciação entre gêneros",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Diferenciacao entre generos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em \"Historinha breve apresenta conflito simples e fechamento rapido.\", a classificação correta é Tirinha, e não Charge, porque:",
+      "enunciado": "Em \"Historinha breve apresenta conflito simples e fechamento rapido.\", a classificacao correta e Tirinha, e nao Charge, porque:",
       "opcoes": [
         "Tirinha apresenta quadrinhos em sequencia, fala de personagens e desfecho curto.",
-        "Charge aparece sempre que há um título no texto.",
-        "Charge dispensa qualquer relação com suporte ou finalidade.",
+        "Charge aparece sempre que ha um titulo no texto.",
+        "Charge dispensa qualquer relacao com suporte ou finalidade.",
         "Charge se reconhece apenas pelo tamanho do texto."
       ],
       "correta": "Tirinha apresenta quadrinhos em sequencia, fala de personagens e desfecho curto.",
-      "comentario": "A justificativa correta recupera a finalidade e as marcas do gênero.",
+      "comentario": "A justificativa correta recupera a finalidade e as marcas do genero.",
       "tempoEstimado": 35,
       "tags": [
         "tirinha",
         "diferenciacao"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -2661,14 +2662,14 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Verbete",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta outro exemplo compatível com o gênero verbete?",
+      "enunciado": "Qual alternativa apresenta outro exemplo compativel com o genero verbete?",
       "opcoes": [
         "Texto define o termo narrador em poucas linhas.",
         "Escola do bairro inaugura nova biblioteca nesta segunda-feira.",
@@ -2676,7 +2677,7 @@ export const generosTextuais = {
         "Colunista avalia os efeitos do excesso de telas na rotina juvenil."
       ],
       "correta": "Texto define o termo narrador em poucas linhas.",
-      "comentario": "A resposta correta mantem a mesma finalidade comunicativa e o mesmo tipo de circulação.",
+      "comentario": "A resposta correta mantem a mesma finalidade comunicativa e o mesmo tipo de circulacao.",
       "tempoEstimado": 30,
       "tags": [
         "verbete",
@@ -2699,22 +2700,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definição corresponde melhor ao gênero sugerido pelo trecho \"Escola do bairro inaugura nova biblioteca nesta segunda-feira.\"?",
+      "enunciado": "Qual definicao corresponde melhor ao genero sugerido pelo trecho \"Escola do bairro inaugura nova biblioteca nesta segunda-feira.\"?",
       "opcoes": [
-        "relata fatos atuais de interesse público com linguagem objetiva",
+        "relata fatos atuais de interesse publico com linguagem objetiva",
         "defender um ponto de vista sobre tema relevante com argumentos",
         "comentar o cotidiano com linguagem mais subjetiva e reflexiva",
-        "explorar a linguagem de modo estético com ritmo, imagens e efeitos sonoros"
+        "explorar a linguagem de modo estatico com ritmo, imagens e efeitos sonoros"
       ],
-      "correta": "relata fatos atuais de interesse público com linguagem objetiva",
-      "comentario": "A definição correta recupera a finalidade principal do gênero.",
+      "correta": "relata fatos atuais de interesse publico com linguagem objetiva",
+      "comentario": "A definicao correta recupera a finalidade principal do genero.",
       "tempoEstimado": 30,
       "tags": [
         "noticia",
@@ -2737,14 +2738,14 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO combina com o gênero reportagem?",
+      "enunciado": "Qual alternativa NAO combina com o genero reportagem?",
       "opcoes": [
         "Palavras se organizam em ritmo e imagens simbolicas.",
         "Revista analisa os impactos do turismo na economia local.",
@@ -2752,14 +2753,14 @@ export const generosTextuais = {
         "Caderno cultural discute os bastidores de um festival estudantil."
       ],
       "correta": "Palavras se organizam em ritmo e imagens simbolicas.",
-      "comentario": "A alternativa correta desloca a finalidade e as marcas para outro gênero textual.",
+      "comentario": "A alternativa correta desloca a finalidade e as marcas para outro genero textual.",
       "tempoEstimado": 35,
       "tags": [
         "reportagem",
         "nao-combina"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -2775,22 +2776,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um revista, aparece o trecho \"Colunista avalia os efeitos do excesso de telas na rotina juvenil.\". Qual gênero textual melhor se ajusta a essa situação?",
+      "enunciado": "Em um revista, aparece o trecho \"Colunista avalia os efeitos do excesso de telas na rotina juvenil.\". Qual genero textual melhor se ajusta a essa situacao?",
       "opcoes": [
-        "Artigo de opinião",
-        "Anúncio",
+        "Artigo de opiniao",
+        "Anuncio",
         "Charge",
         "Tirinha"
       ],
-      "correta": "Artigo de opinião",
-      "comentario": "O contexto de circulação e as marcas do trecho apontam para Artigo de opinião.",
+      "correta": "Artigo de opiniao",
+      "comentario": "O contexto de circulacao e as marcas do trecho apontam para Artigo de opiniao.",
       "tempoEstimado": 30,
       "tags": [
         "artigo-opiniao",
@@ -2814,22 +2815,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Finalidade e circulação",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Finalidade e circulacao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual finalidade aparece de modo mais caracteristico no gênero crônica?",
+      "enunciado": "Qual finalidade aparece de modo mais caracteristico no genero cronica?",
       "opcoes": [
         "refletir sobre cenas do dia a dia com olhar pessoal",
-        "organizar dados sem indicar gênero específico",
+        "organizar dados sem indicar genero especifico",
         "eliminar qualquer finalidade comunicativa",
         "apresentar apenas palavras soltas sem contexto"
       ],
       "correta": "refletir sobre cenas do dia a dia com olhar pessoal",
-      "comentario": "Crônica costuma refletir sobre cenas do dia a dia com olhar pessoal.",
+      "comentario": "Cronica costuma refletir sobre cenas do dia a dia com olhar pessoal.",
       "tempoEstimado": 35,
       "tags": [
         "cronica",
@@ -2852,29 +2853,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Diferenciação entre gêneros",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Diferenciacao entre generos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em \"O texto busca emocionar pela escolha expressiva das palavras.\", a classificação correta é Poema, e não Crônica, porque:",
+      "enunciado": "Em \"O texto busca emocionar pela escolha expressiva das palavras.\", a classificacao correta e Poema, e nao Cronica, porque:",
       "opcoes": [
-        "Poema apresenta versos, sonoridade, imagens e organização estética da linguagem.",
-        "Crônica aparece sempre que há um título no texto.",
-        "Crônica dispensa qualquer relação com suporte ou finalidade.",
-        "Crônica se reconhece apenas pelo tamanho do texto."
+        "Poema apresenta versos, sonoridade, imagens e organizacao estatica da linguagem.",
+        "Cronica aparece sempre que ha um titulo no texto.",
+        "Cronica dispensa qualquer relacao com suporte ou finalidade.",
+        "Cronica se reconhece apenas pelo tamanho do texto."
       ],
-      "correta": "Poema apresenta versos, sonoridade, imagens e organização estética da linguagem.",
-      "comentario": "A justificativa correta recupera a finalidade e as marcas do gênero.",
+      "correta": "Poema apresenta versos, sonoridade, imagens e organizacao estatica da linguagem.",
+      "comentario": "A justificativa correta recupera a finalidade e as marcas do genero.",
       "tempoEstimado": 35,
       "tags": [
         "poema",
         "diferenciacao"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -2890,22 +2891,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Carta do leitor",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta outro exemplo compatível com o gênero carta do leitor?",
+      "enunciado": "Qual alternativa apresenta outro exemplo compativel com o genero carta do leitor?",
       "opcoes": [
-        "Texto crítica problema do bairro citado no jornal.",
+        "Texto critica problema do bairro citado no jornal.",
         "Autor defende maior incentivo a leitura nas escolas.",
-        "Texto comenta o silêncio estranho de uma tarde chuvosa.",
+        "Texto comenta o silencio estranho de uma tarde chuvosa.",
         "Palavras se organizam em ritmo e imagens simbolicas."
       ],
-      "correta": "Texto crítica problema do bairro citado no jornal.",
-      "comentario": "A resposta correta mantem a mesma finalidade comunicativa e o mesmo tipo de circulação.",
+      "correta": "Texto critica problema do bairro citado no jornal.",
+      "comentario": "A resposta correta mantem a mesma finalidade comunicativa e o mesmo tipo de circulacao.",
       "tempoEstimado": 30,
       "tags": [
         "carta-leitor",
@@ -2928,22 +2929,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definição corresponde melhor ao gênero sugerido pelo trecho \"Peca divulga promoção com chamada direta ao consumidor.\"?",
+      "enunciado": "Qual definicao corresponde melhor ao genero sugerido pelo trecho \"Peca divulga promocao com chamada direta ao consumidor.\"?",
       "opcoes": [
-        "divulgar produto, serviço, evento ou ideia com objetivo de persuadir",
-        "explorar a linguagem de modo estético com ritmo, imagens e efeitos sonoros",
-        "manifestar opinião do leitor sobre publicação, tema ou problema social",
+        "divulgar produto, servico, evento ou ideia com objetivo de persuadir",
+        "explorar a linguagem de modo estatico com ritmo, imagens e efeitos sonoros",
+        "manifestar opiniao do leitor sobre publicacao, tema ou problema social",
         "comentar criticamente fatos atuais por meio de humor e linguagem verbo-visual"
       ],
-      "correta": "divulgar produto, serviço, evento ou ideia com objetivo de persuadir",
-      "comentario": "A definição correta recupera a finalidade principal do gênero.",
+      "correta": "divulgar produto, servico, evento ou ideia com objetivo de persuadir",
+      "comentario": "A definicao correta recupera a finalidade principal do genero.",
       "tempoEstimado": 30,
       "tags": [
         "anuncio",
@@ -2966,29 +2967,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO combina com o gênero charge?",
+      "enunciado": "Qual alternativa NAO combina com o genero charge?",
       "opcoes": [
-        "Banner apresenta serviço e pede que o leitor participe.",
+        "Banner apresenta servico e pede que o leitor participe.",
         "Quadro usa exagero para criticar problema urbano.",
-        "Imagem e fala breve apontam contradição social do momento.",
+        "Imagem e fala breve apontam contradicao social do momento.",
         "Desenho ironiza promessa politica recente."
       ],
-      "correta": "Banner apresenta serviço e pede que o leitor participe.",
-      "comentario": "A alternativa correta desloca a finalidade e as marcas para outro gênero textual.",
+      "correta": "Banner apresenta servico e pede que o leitor participe.",
+      "comentario": "A alternativa correta desloca a finalidade e as marcas para outro genero textual.",
       "tempoEstimado": 35,
       "tags": [
         "charge",
         "nao-combina"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -3004,22 +3005,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um rede social, aparece o trecho \"Historinha breve apresenta conflito simples e fechamento rapido.\". Qual gênero textual melhor se ajusta a essa situação?",
+      "enunciado": "Em um rede social, aparece o trecho \"Historinha breve apresenta conflito simples e fechamento rapido.\". Qual genero textual melhor se ajusta a essa situacao?",
       "opcoes": [
         "Tirinha",
         "Verbete",
-        "Notícia",
+        "Noticia",
         "Reportagem"
       ],
       "correta": "Tirinha",
-      "comentario": "O contexto de circulação e as marcas do trecho apontam para Tirinha.",
+      "comentario": "O contexto de circulacao e as marcas do trecho apontam para Tirinha.",
       "tempoEstimado": 30,
       "tags": [
         "tirinha",
@@ -3043,17 +3044,17 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Finalidade e circulação",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Finalidade e circulacao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual finalidade aparece de modo mais caracteristico no gênero verbete?",
+      "enunciado": "Qual finalidade aparece de modo mais caracteristico no genero verbete?",
       "opcoes": [
         "definir e esclarecer um termo",
-        "organizar dados sem indicar gênero específico",
+        "organizar dados sem indicar genero especifico",
         "eliminar qualquer finalidade comunicativa",
         "apresentar apenas palavras soltas sem contexto"
       ],
@@ -3081,29 +3082,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Diferenciação entre gêneros",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Diferenciacao entre generos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em \"Escola do bairro inaugura nova biblioteca nesta segunda-feira.\", a classificação correta é Notícia, e não Reportagem, porque:",
+      "enunciado": "Em \"Escola do bairro inaugura nova biblioteca nesta segunda-feira.\", a classificacao correta e Noticia, e nao Reportagem, porque:",
       "opcoes": [
-        "Notícia apresenta título informativo, objetividade e apresentacao de fato recente.",
-        "Reportagem aparece sempre que há um título no texto.",
-        "Reportagem dispensa qualquer relação com suporte ou finalidade.",
+        "Noticia apresenta titulo informativo, objetividade e apresentacao de fato recente.",
+        "Reportagem aparece sempre que ha um titulo no texto.",
+        "Reportagem dispensa qualquer relacao com suporte ou finalidade.",
         "Reportagem se reconhece apenas pelo tamanho do texto."
       ],
-      "correta": "Notícia apresenta título informativo, objetividade e apresentacao de fato recente.",
-      "comentario": "A justificativa correta recupera a finalidade e as marcas do gênero.",
+      "correta": "Noticia apresenta titulo informativo, objetividade e apresentacao de fato recente.",
+      "comentario": "A justificativa correta recupera a finalidade e as marcas do genero.",
       "tempoEstimado": 35,
       "tags": [
         "noticia",
         "diferenciacao"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -3119,14 +3120,14 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Reportagem",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta outro exemplo compatível com o gênero reportagem?",
+      "enunciado": "Qual alternativa apresenta outro exemplo compativel com o genero reportagem?",
       "opcoes": [
         "Portal publica especial sobre alimentacao saudavel entre jovens.",
         "Versos curtos constroem imagens de chuva e memoria.",
@@ -3134,7 +3135,7 @@ export const generosTextuais = {
         "Mensagem incentiva a compra de um curso online."
       ],
       "correta": "Portal publica especial sobre alimentacao saudavel entre jovens.",
-      "comentario": "A resposta correta mantem a mesma finalidade comunicativa e o mesmo tipo de circulação.",
+      "comentario": "A resposta correta mantem a mesma finalidade comunicativa e o mesmo tipo de circulacao.",
       "tempoEstimado": 30,
       "tags": [
         "reportagem",
@@ -3157,22 +3158,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definição corresponde melhor ao gênero sugerido pelo trecho \"Colunista avalia os efeitos do excesso de telas na rotina juvenil.\"?",
+      "enunciado": "Qual definicao corresponde melhor ao genero sugerido pelo trecho \"Colunista avalia os efeitos do excesso de telas na rotina juvenil.\"?",
       "opcoes": [
         "defender um ponto de vista sobre tema relevante com argumentos",
-        "divulgar produto, serviço, evento ou ideia com objetivo de persuadir",
+        "divulgar produto, servico, evento ou ideia com objetivo de persuadir",
         "comentar criticamente fatos atuais por meio de humor e linguagem verbo-visual",
-        "sequencia curta de quadrinhos com humor, narrativa breve ou crítica cotidiana"
+        "sequencia curta de quadrinhos com humor, narrativa breve ou critica cotidiana"
       ],
       "correta": "defender um ponto de vista sobre tema relevante com argumentos",
-      "comentario": "A definição correta recupera a finalidade principal do gênero.",
+      "comentario": "A definicao correta recupera a finalidade principal do genero.",
       "tempoEstimado": 30,
       "tags": [
         "artigo-opiniao",
@@ -3195,29 +3196,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO combina com o gênero crônica?",
+      "enunciado": "Qual alternativa NAO combina com o genero cronica?",
       "opcoes": [
         "Quadrinhos exploram ironia em uma cena cotidiana.",
-        "Cenário comum ganha humor e sensibilidade no olhar do narrador.",
-        "Narrador observa a pressa das pessoas no ponto de ônibus.",
-        "Texto comenta o silêncio estranho de uma tarde chuvosa."
+        "Cenario comum ganha humor e sensibilidade no olhar do narrador.",
+        "Narrador observa a pressa das pessoas no ponto de onibus.",
+        "Texto comenta o silencio estranho de uma tarde chuvosa."
       ],
       "correta": "Quadrinhos exploram ironia em uma cena cotidiana.",
-      "comentario": "A alternativa correta desloca a finalidade e as marcas para outro gênero textual.",
+      "comentario": "A alternativa correta desloca a finalidade e as marcas para outro genero textual.",
       "tempoEstimado": 35,
       "tags": [
         "cronica",
         "nao-combina"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -3233,22 +3234,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um livro de poesia, aparece o trecho \"O texto busca emocionar pela escolha expressiva das palavras.\". Qual gênero textual melhor se ajusta a essa situação?",
+      "enunciado": "Em um livro de poesia, aparece o trecho \"O texto busca emocionar pela escolha expressiva das palavras.\". Qual genero textual melhor se ajusta a essa situacao?",
       "opcoes": [
         "Poema",
-        "Notícia",
+        "Noticia",
         "Reportagem",
-        "Artigo de opinião"
+        "Artigo de opiniao"
       ],
       "correta": "Poema",
-      "comentario": "O contexto de circulação e as marcas do trecho apontam para Poema.",
+      "comentario": "O contexto de circulacao e as marcas do trecho apontam para Poema.",
       "tempoEstimado": 30,
       "tags": [
         "poema",
@@ -3272,22 +3273,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Finalidade e circulação",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Finalidade e circulacao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual finalidade aparece de modo mais caracteristico no gênero carta do leitor?",
+      "enunciado": "Qual finalidade aparece de modo mais caracteristico no genero carta do leitor?",
       "opcoes": [
-        "opinar e dialogar com um veículo ou assunto publicado",
-        "organizar dados sem indicar gênero específico",
+        "opinar e dialogar com um veiculo ou assunto publicado",
+        "organizar dados sem indicar genero especifico",
         "eliminar qualquer finalidade comunicativa",
         "apresentar apenas palavras soltas sem contexto"
       ],
-      "correta": "opinar e dialogar com um veículo ou assunto publicado",
-      "comentario": "Carta do leitor costuma opinar e dialogar com um veículo ou assunto publicado.",
+      "correta": "opinar e dialogar com um veiculo ou assunto publicado",
+      "comentario": "Carta do leitor costuma opinar e dialogar com um veiculo ou assunto publicado.",
       "tempoEstimado": 35,
       "tags": [
         "carta-leitor",
@@ -3310,29 +3311,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Diferenciação entre gêneros",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Diferenciacao entre generos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em \"Peca divulga promoção com chamada direta ao consumidor.\", a classificação correta é Anúncio, e não Notícia, porque:",
+      "enunciado": "Em \"Peca divulga promocao com chamada direta ao consumidor.\", a classificacao correta e Anuncio, e nao Noticia, porque:",
       "opcoes": [
-        "Anúncio apresenta apelo ao leitor, linguagem persuasiva e convite a ação.",
-        "Notícia aparece sempre que há um título no texto.",
-        "Notícia dispensa qualquer relação com suporte ou finalidade.",
-        "Notícia se reconhece apenas pelo tamanho do texto."
+        "Anuncio apresenta apelo ao leitor, linguagem persuasiva e convite a acao.",
+        "Noticia aparece sempre que ha um titulo no texto.",
+        "Noticia dispensa qualquer relacao com suporte ou finalidade.",
+        "Noticia se reconhece apenas pelo tamanho do texto."
       ],
-      "correta": "Anúncio apresenta apelo ao leitor, linguagem persuasiva e convite a ação.",
-      "comentario": "A justificativa correta recupera a finalidade e as marcas do gênero.",
+      "correta": "Anuncio apresenta apelo ao leitor, linguagem persuasiva e convite a acao.",
+      "comentario": "A justificativa correta recupera a finalidade e as marcas do genero.",
       "tempoEstimado": 35,
       "tags": [
         "anuncio",
         "diferenciacao"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -3348,22 +3349,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Charge",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta outro exemplo compatível com o gênero charge?",
+      "enunciado": "Qual alternativa apresenta outro exemplo compativel com o genero charge?",
       "opcoes": [
-        "Imagem e fala breve apontam contradição social do momento.",
-        "Cartaz convida o público para a feira cultural da escola.",
-        "Sequencia curta termina em surpresa humorística.",
+        "Imagem e fala breve apontam contradicao social do momento.",
+        "Cartaz convida o publico para a feira cultural da escola.",
+        "Sequencia curta termina em surpresa humorastica.",
         "Glossario esclarece o conceito de cidadania."
       ],
-      "correta": "Imagem e fala breve apontam contradição social do momento.",
-      "comentario": "A resposta correta mantem a mesma finalidade comunicativa e o mesmo tipo de circulação.",
+      "correta": "Imagem e fala breve apontam contradicao social do momento.",
+      "comentario": "A resposta correta mantem a mesma finalidade comunicativa e o mesmo tipo de circulacao.",
       "tempoEstimado": 30,
       "tags": [
         "charge",
@@ -3386,22 +3387,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definição corresponde melhor ao gênero sugerido pelo trecho \"Historinha breve apresenta conflito simples e fechamento rapido.\"?",
+      "enunciado": "Qual definicao corresponde melhor ao genero sugerido pelo trecho \"Historinha breve apresenta conflito simples e fechamento rapido.\"?",
       "opcoes": [
-        "sequencia curta de quadrinhos com humor, narrativa breve ou crítica cotidiana",
+        "sequencia curta de quadrinhos com humor, narrativa breve ou critica cotidiana",
         "explicar de modo sintetico e objetivo o significado de um termo ou conceito",
-        "relata fatos atuais de interesse público com linguagem objetiva",
+        "relata fatos atuais de interesse publico com linguagem objetiva",
         "aprofundar um tema com dados, entrevistas e contextualizacao"
       ],
-      "correta": "sequencia curta de quadrinhos com humor, narrativa breve ou crítica cotidiana",
-      "comentario": "A definição correta recupera a finalidade principal do gênero.",
+      "correta": "sequencia curta de quadrinhos com humor, narrativa breve ou critica cotidiana",
+      "comentario": "A definicao correta recupera a finalidade principal do genero.",
       "tempoEstimado": 30,
       "tags": [
         "tirinha",
@@ -3424,29 +3425,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO combina com o gênero verbete?",
+      "enunciado": "Qual alternativa NAO combina com o genero verbete?",
       "opcoes": [
         "Escola do bairro inaugura nova biblioteca nesta segunda-feira.",
-        "Entrada de dicionário explica o significado de biodiversidade.",
+        "Entrada de dicionario explica o significado de biodiversidade.",
         "Texto define o termo narrador em poucas linhas.",
         "Glossario esclarece o conceito de cidadania."
       ],
       "correta": "Escola do bairro inaugura nova biblioteca nesta segunda-feira.",
-      "comentario": "A alternativa correta desloca a finalidade e as marcas para outro gênero textual.",
+      "comentario": "A alternativa correta desloca a finalidade e as marcas para outro genero textual.",
       "tempoEstimado": 35,
       "tags": [
         "verbete",
         "nao-combina"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -3462,22 +3463,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um site de notícias, aparece o trecho \"Escola do bairro inaugura nova biblioteca nesta segunda-feira.\". Qual gênero textual melhor se ajusta a essa situação?",
+      "enunciado": "Em um site de noticias, aparece o trecho \"Escola do bairro inaugura nova biblioteca nesta segunda-feira.\". Qual genero textual melhor se ajusta a essa situacao?",
       "opcoes": [
-        "Notícia",
-        "Artigo de opinião",
-        "Crônica",
+        "Noticia",
+        "Artigo de opiniao",
+        "Cronica",
         "Poema"
       ],
-      "correta": "Notícia",
-      "comentario": "O contexto de circulação e as marcas do trecho apontam para Notícia.",
+      "correta": "Noticia",
+      "comentario": "O contexto de circulacao e as marcas do trecho apontam para Noticia.",
       "tempoEstimado": 30,
       "tags": [
         "noticia",
@@ -3501,17 +3502,17 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Finalidade e circulação",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Finalidade e circulacao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual finalidade aparece de modo mais caracteristico no gênero reportagem?",
+      "enunciado": "Qual finalidade aparece de modo mais caracteristico no genero reportagem?",
       "opcoes": [
         "aprofundar e contextualizar um assunto de interesse social",
-        "organizar dados sem indicar gênero específico",
+        "organizar dados sem indicar genero especifico",
         "eliminar qualquer finalidade comunicativa",
         "apresentar apenas palavras soltas sem contexto"
       ],
@@ -3539,29 +3540,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Diferenciação entre gêneros",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Diferenciacao entre generos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em \"Colunista avalia os efeitos do excesso de telas na rotina juvenil.\", a classificação correta é Artigo de opinião, e não Editorial, porque:",
+      "enunciado": "Em \"Colunista avalia os efeitos do excesso de telas na rotina juvenil.\", a classificacao correta e Artigo de opiniao, e nao Editorial, porque:",
       "opcoes": [
-        "Artigo de opinião apresenta tese, opinião explícita, argumentos e posicionamento do autor.",
-        "Editorial aparece sempre que há um título no texto.",
-        "Editorial dispensa qualquer relação com suporte ou finalidade.",
+        "Artigo de opiniao apresenta tese, opiniao explicita, argumentos e posicionamento do autor.",
+        "Editorial aparece sempre que ha um titulo no texto.",
+        "Editorial dispensa qualquer relacao com suporte ou finalidade.",
         "Editorial se reconhece apenas pelo tamanho do texto."
       ],
-      "correta": "Artigo de opinião apresenta tese, opinião explícita, argumentos e posicionamento do autor.",
-      "comentario": "A justificativa correta recupera a finalidade e as marcas do gênero.",
+      "correta": "Artigo de opiniao apresenta tese, opiniao explicita, argumentos e posicionamento do autor.",
+      "comentario": "A justificativa correta recupera a finalidade e as marcas do genero.",
       "tempoEstimado": 35,
       "tags": [
         "artigo-opiniao",
         "diferenciacao"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -3577,22 +3578,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Crônica",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Cronica",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta outro exemplo compatível com o gênero crônica?",
+      "enunciado": "Qual alternativa apresenta outro exemplo compativel com o genero cronica?",
       "opcoes": [
-        "Narrador observa a pressa das pessoas no ponto de ônibus.",
-        "Tres quadrinhos mostram diálogo engraçado entre amigos.",
+        "Narrador observa a pressa das pessoas no ponto de onibus.",
+        "Tres quadrinhos mostram dialogo engracado entre amigos.",
         "Texto define o termo narrador em poucas linhas.",
         "Temporal interrompe aulas em tres municipios da regiao."
       ],
-      "correta": "Narrador observa a pressa das pessoas no ponto de ônibus.",
-      "comentario": "A resposta correta mantem a mesma finalidade comunicativa e o mesmo tipo de circulação.",
+      "correta": "Narrador observa a pressa das pessoas no ponto de onibus.",
+      "comentario": "A resposta correta mantem a mesma finalidade comunicativa e o mesmo tipo de circulacao.",
       "tempoEstimado": 30,
       "tags": [
         "cronica",
@@ -3615,22 +3616,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definição corresponde melhor ao gênero sugerido pelo trecho \"O texto busca emocionar pela escolha expressiva das palavras.\"?",
+      "enunciado": "Qual definicao corresponde melhor ao genero sugerido pelo trecho \"O texto busca emocionar pela escolha expressiva das palavras.\"?",
       "opcoes": [
-        "explorar a linguagem de modo estético com ritmo, imagens e efeitos sonoros",
-        "relata fatos atuais de interesse público com linguagem objetiva",
+        "explorar a linguagem de modo estatico com ritmo, imagens e efeitos sonoros",
+        "relata fatos atuais de interesse publico com linguagem objetiva",
         "aprofundar um tema com dados, entrevistas e contextualizacao",
         "defender um ponto de vista sobre tema relevante com argumentos"
       ],
-      "correta": "explorar a linguagem de modo estético com ritmo, imagens e efeitos sonoros",
-      "comentario": "A definição correta recupera a finalidade principal do gênero.",
+      "correta": "explorar a linguagem de modo estatico com ritmo, imagens e efeitos sonoros",
+      "comentario": "A definicao correta recupera a finalidade principal do genero.",
       "tempoEstimado": 30,
       "tags": [
         "poema",
@@ -3653,29 +3654,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO combina com o gênero carta do leitor?",
+      "enunciado": "Qual alternativa NAO combina com o genero carta do leitor?",
       "opcoes": [
-        "Texto argumenta contra o desperdicio de água na cidade.",
+        "Texto argumenta contra o desperdicio de agua na cidade.",
         "Mensagem elogia cobertura sobre mobilidade urbana.",
-        "Texto crítica problema do bairro citado no jornal.",
-        "Autor da carta reage a matéria sobre educação publica."
+        "Texto critica problema do bairro citado no jornal.",
+        "Autor da carta reage a materia sobre educacao publica."
       ],
-      "correta": "Texto argumenta contra o desperdicio de água na cidade.",
-      "comentario": "A alternativa correta desloca a finalidade e as marcas para outro gênero textual.",
+      "correta": "Texto argumenta contra o desperdicio de agua na cidade.",
+      "comentario": "A alternativa correta desloca a finalidade e as marcas para outro genero textual.",
       "tempoEstimado": 35,
       "tags": [
         "carta-leitor",
         "nao-combina"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -3691,22 +3692,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um revista, aparece o trecho \"Peca divulga promoção com chamada direta ao consumidor.\". Qual gênero textual melhor se ajusta a essa situação?",
+      "enunciado": "Em um revista, aparece o trecho \"Peca divulga promocao com chamada direta ao consumidor.\". Qual genero textual melhor se ajusta a essa situacao?",
       "opcoes": [
-        "Anúncio",
+        "Anuncio",
         "Poema",
         "Carta do leitor",
         "Charge"
       ],
-      "correta": "Anúncio",
-      "comentario": "O contexto de circulação e as marcas do trecho apontam para Anúncio.",
+      "correta": "Anuncio",
+      "comentario": "O contexto de circulacao e as marcas do trecho apontam para Anuncio.",
       "tempoEstimado": 30,
       "tags": [
         "anuncio",
@@ -3730,17 +3731,17 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Finalidade e circulação",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Finalidade e circulacao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual finalidade aparece de modo mais caracteristico no gênero charge?",
+      "enunciado": "Qual finalidade aparece de modo mais caracteristico no genero charge?",
       "opcoes": [
         "criticar ou satirizar um fato atual",
-        "organizar dados sem indicar gênero específico",
+        "organizar dados sem indicar genero especifico",
         "eliminar qualquer finalidade comunicativa",
         "apresentar apenas palavras soltas sem contexto"
       ],
@@ -3768,29 +3769,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Diferenciação entre gêneros",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Diferenciacao entre generos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em \"Historinha breve apresenta conflito simples e fechamento rapido.\", a classificação correta é Tirinha, e não Charge, porque:",
+      "enunciado": "Em \"Historinha breve apresenta conflito simples e fechamento rapido.\", a classificacao correta e Tirinha, e nao Charge, porque:",
       "opcoes": [
         "Tirinha apresenta quadrinhos em sequencia, fala de personagens e desfecho curto.",
-        "Charge aparece sempre que há um título no texto.",
-        "Charge dispensa qualquer relação com suporte ou finalidade.",
+        "Charge aparece sempre que ha um titulo no texto.",
+        "Charge dispensa qualquer relacao com suporte ou finalidade.",
         "Charge se reconhece apenas pelo tamanho do texto."
       ],
       "correta": "Tirinha apresenta quadrinhos em sequencia, fala de personagens e desfecho curto.",
-      "comentario": "A justificativa correta recupera a finalidade e as marcas do gênero.",
+      "comentario": "A justificativa correta recupera a finalidade e as marcas do genero.",
       "tempoEstimado": 35,
       "tags": [
         "tirinha",
         "diferenciacao"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -3806,14 +3807,14 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Verbete",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta outro exemplo compatível com o gênero verbete?",
+      "enunciado": "Qual alternativa apresenta outro exemplo compativel com o genero verbete?",
       "opcoes": [
         "Texto define o termo narrador em poucas linhas.",
         "Escola do bairro inaugura nova biblioteca nesta segunda-feira.",
@@ -3821,7 +3822,7 @@ export const generosTextuais = {
         "Colunista avalia os efeitos do excesso de telas na rotina juvenil."
       ],
       "correta": "Texto define o termo narrador em poucas linhas.",
-      "comentario": "A resposta correta mantem a mesma finalidade comunicativa e o mesmo tipo de circulação.",
+      "comentario": "A resposta correta mantem a mesma finalidade comunicativa e o mesmo tipo de circulacao.",
       "tempoEstimado": 30,
       "tags": [
         "verbete",
@@ -3844,22 +3845,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definição corresponde melhor ao gênero sugerido pelo trecho \"Escola do bairro inaugura nova biblioteca nesta segunda-feira.\"?",
+      "enunciado": "Qual definicao corresponde melhor ao genero sugerido pelo trecho \"Escola do bairro inaugura nova biblioteca nesta segunda-feira.\"?",
       "opcoes": [
-        "relata fatos atuais de interesse público com linguagem objetiva",
+        "relata fatos atuais de interesse publico com linguagem objetiva",
         "defender um ponto de vista sobre tema relevante com argumentos",
         "comentar o cotidiano com linguagem mais subjetiva e reflexiva",
-        "explorar a linguagem de modo estético com ritmo, imagens e efeitos sonoros"
+        "explorar a linguagem de modo estatico com ritmo, imagens e efeitos sonoros"
       ],
-      "correta": "relata fatos atuais de interesse público com linguagem objetiva",
-      "comentario": "A definição correta recupera a finalidade principal do gênero.",
+      "correta": "relata fatos atuais de interesse publico com linguagem objetiva",
+      "comentario": "A definicao correta recupera a finalidade principal do genero.",
       "tempoEstimado": 30,
       "tags": [
         "noticia",
@@ -3882,14 +3883,14 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO combina com o gênero reportagem?",
+      "enunciado": "Qual alternativa NAO combina com o genero reportagem?",
       "opcoes": [
         "Palavras se organizam em ritmo e imagens simbolicas.",
         "Revista analisa os impactos do turismo na economia local.",
@@ -3897,14 +3898,14 @@ export const generosTextuais = {
         "Caderno cultural discute os bastidores de um festival estudantil."
       ],
       "correta": "Palavras se organizam em ritmo e imagens simbolicas.",
-      "comentario": "A alternativa correta desloca a finalidade e as marcas para outro gênero textual.",
+      "comentario": "A alternativa correta desloca a finalidade e as marcas para outro genero textual.",
       "tempoEstimado": 35,
       "tags": [
         "reportagem",
         "nao-combina"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -3920,22 +3921,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um revista, aparece o trecho \"Colunista avalia os efeitos do excesso de telas na rotina juvenil.\". Qual gênero textual melhor se ajusta a essa situação?",
+      "enunciado": "Em um revista, aparece o trecho \"Colunista avalia os efeitos do excesso de telas na rotina juvenil.\". Qual genero textual melhor se ajusta a essa situacao?",
       "opcoes": [
-        "Artigo de opinião",
-        "Anúncio",
+        "Artigo de opiniao",
+        "Anuncio",
         "Charge",
         "Tirinha"
       ],
-      "correta": "Artigo de opinião",
-      "comentario": "O contexto de circulação e as marcas do trecho apontam para Artigo de opinião.",
+      "correta": "Artigo de opiniao",
+      "comentario": "O contexto de circulacao e as marcas do trecho apontam para Artigo de opiniao.",
       "tempoEstimado": 30,
       "tags": [
         "artigo-opiniao",
@@ -3959,22 +3960,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Finalidade e circulação",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Finalidade e circulacao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual finalidade aparece de modo mais caracteristico no gênero crônica?",
+      "enunciado": "Qual finalidade aparece de modo mais caracteristico no genero cronica?",
       "opcoes": [
         "refletir sobre cenas do dia a dia com olhar pessoal",
-        "organizar dados sem indicar gênero específico",
+        "organizar dados sem indicar genero especifico",
         "eliminar qualquer finalidade comunicativa",
         "apresentar apenas palavras soltas sem contexto"
       ],
       "correta": "refletir sobre cenas do dia a dia com olhar pessoal",
-      "comentario": "Crônica costuma refletir sobre cenas do dia a dia com olhar pessoal.",
+      "comentario": "Cronica costuma refletir sobre cenas do dia a dia com olhar pessoal.",
       "tempoEstimado": 35,
       "tags": [
         "cronica",
@@ -3997,29 +3998,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Diferenciação entre gêneros",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Diferenciacao entre generos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em \"O texto busca emocionar pela escolha expressiva das palavras.\", a classificação correta é Poema, e não Crônica, porque:",
+      "enunciado": "Em \"O texto busca emocionar pela escolha expressiva das palavras.\", a classificacao correta e Poema, e nao Cronica, porque:",
       "opcoes": [
-        "Poema apresenta versos, sonoridade, imagens e organização estética da linguagem.",
-        "Crônica aparece sempre que há um título no texto.",
-        "Crônica dispensa qualquer relação com suporte ou finalidade.",
-        "Crônica se reconhece apenas pelo tamanho do texto."
+        "Poema apresenta versos, sonoridade, imagens e organizacao estatica da linguagem.",
+        "Cronica aparece sempre que ha um titulo no texto.",
+        "Cronica dispensa qualquer relacao com suporte ou finalidade.",
+        "Cronica se reconhece apenas pelo tamanho do texto."
       ],
-      "correta": "Poema apresenta versos, sonoridade, imagens e organização estética da linguagem.",
-      "comentario": "A justificativa correta recupera a finalidade e as marcas do gênero.",
+      "correta": "Poema apresenta versos, sonoridade, imagens e organizacao estatica da linguagem.",
+      "comentario": "A justificativa correta recupera a finalidade e as marcas do genero.",
       "tempoEstimado": 35,
       "tags": [
         "poema",
         "diferenciacao"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -4035,22 +4036,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Carta do leitor",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta outro exemplo compatível com o gênero carta do leitor?",
+      "enunciado": "Qual alternativa apresenta outro exemplo compativel com o genero carta do leitor?",
       "opcoes": [
-        "Texto crítica problema do bairro citado no jornal.",
+        "Texto critica problema do bairro citado no jornal.",
         "Autor defende maior incentivo a leitura nas escolas.",
-        "Texto comenta o silêncio estranho de uma tarde chuvosa.",
+        "Texto comenta o silencio estranho de uma tarde chuvosa.",
         "Palavras se organizam em ritmo e imagens simbolicas."
       ],
-      "correta": "Texto crítica problema do bairro citado no jornal.",
-      "comentario": "A resposta correta mantem a mesma finalidade comunicativa e o mesmo tipo de circulação.",
+      "correta": "Texto critica problema do bairro citado no jornal.",
+      "comentario": "A resposta correta mantem a mesma finalidade comunicativa e o mesmo tipo de circulacao.",
       "tempoEstimado": 30,
       "tags": [
         "carta-leitor",
@@ -4073,22 +4074,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definição corresponde melhor ao gênero sugerido pelo trecho \"Peca divulga promoção com chamada direta ao consumidor.\"?",
+      "enunciado": "Qual definicao corresponde melhor ao genero sugerido pelo trecho \"Peca divulga promocao com chamada direta ao consumidor.\"?",
       "opcoes": [
-        "divulgar produto, serviço, evento ou ideia com objetivo de persuadir",
-        "explorar a linguagem de modo estético com ritmo, imagens e efeitos sonoros",
-        "manifestar opinião do leitor sobre publicação, tema ou problema social",
+        "divulgar produto, servico, evento ou ideia com objetivo de persuadir",
+        "explorar a linguagem de modo estatico com ritmo, imagens e efeitos sonoros",
+        "manifestar opiniao do leitor sobre publicacao, tema ou problema social",
         "comentar criticamente fatos atuais por meio de humor e linguagem verbo-visual"
       ],
-      "correta": "divulgar produto, serviço, evento ou ideia com objetivo de persuadir",
-      "comentario": "A definição correta recupera a finalidade principal do gênero.",
+      "correta": "divulgar produto, servico, evento ou ideia com objetivo de persuadir",
+      "comentario": "A definicao correta recupera a finalidade principal do genero.",
       "tempoEstimado": 30,
       "tags": [
         "anuncio",
@@ -4111,29 +4112,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO combina com o gênero charge?",
+      "enunciado": "Qual alternativa NAO combina com o genero charge?",
       "opcoes": [
-        "Banner apresenta serviço e pede que o leitor participe.",
+        "Banner apresenta servico e pede que o leitor participe.",
         "Quadro usa exagero para criticar problema urbano.",
-        "Imagem e fala breve apontam contradição social do momento.",
+        "Imagem e fala breve apontam contradicao social do momento.",
         "Desenho ironiza promessa politica recente."
       ],
-      "correta": "Banner apresenta serviço e pede que o leitor participe.",
-      "comentario": "A alternativa correta desloca a finalidade e as marcas para outro gênero textual.",
+      "correta": "Banner apresenta servico e pede que o leitor participe.",
+      "comentario": "A alternativa correta desloca a finalidade e as marcas para outro genero textual.",
       "tempoEstimado": 35,
       "tags": [
         "charge",
         "nao-combina"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -4149,22 +4150,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um rede social, aparece o trecho \"Historinha breve apresenta conflito simples e fechamento rapido.\". Qual gênero textual melhor se ajusta a essa situação?",
+      "enunciado": "Em um rede social, aparece o trecho \"Historinha breve apresenta conflito simples e fechamento rapido.\". Qual genero textual melhor se ajusta a essa situacao?",
       "opcoes": [
         "Tirinha",
         "Verbete",
-        "Notícia",
+        "Noticia",
         "Reportagem"
       ],
       "correta": "Tirinha",
-      "comentario": "O contexto de circulação e as marcas do trecho apontam para Tirinha.",
+      "comentario": "O contexto de circulacao e as marcas do trecho apontam para Tirinha.",
       "tempoEstimado": 30,
       "tags": [
         "tirinha",
@@ -4188,17 +4189,17 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Finalidade e circulação",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Finalidade e circulacao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual finalidade aparece de modo mais caracteristico no gênero verbete?",
+      "enunciado": "Qual finalidade aparece de modo mais caracteristico no genero verbete?",
       "opcoes": [
         "definir e esclarecer um termo",
-        "organizar dados sem indicar gênero específico",
+        "organizar dados sem indicar genero especifico",
         "eliminar qualquer finalidade comunicativa",
         "apresentar apenas palavras soltas sem contexto"
       ],
@@ -4226,29 +4227,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Diferenciação entre gêneros",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Diferenciacao entre generos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em \"Escola do bairro inaugura nova biblioteca nesta segunda-feira.\", a classificação correta é Notícia, e não Reportagem, porque:",
+      "enunciado": "Em \"Escola do bairro inaugura nova biblioteca nesta segunda-feira.\", a classificacao correta e Noticia, e nao Reportagem, porque:",
       "opcoes": [
-        "Notícia apresenta título informativo, objetividade e apresentacao de fato recente.",
-        "Reportagem aparece sempre que há um título no texto.",
-        "Reportagem dispensa qualquer relação com suporte ou finalidade.",
+        "Noticia apresenta titulo informativo, objetividade e apresentacao de fato recente.",
+        "Reportagem aparece sempre que ha um titulo no texto.",
+        "Reportagem dispensa qualquer relacao com suporte ou finalidade.",
         "Reportagem se reconhece apenas pelo tamanho do texto."
       ],
-      "correta": "Notícia apresenta título informativo, objetividade e apresentacao de fato recente.",
-      "comentario": "A justificativa correta recupera a finalidade e as marcas do gênero.",
+      "correta": "Noticia apresenta titulo informativo, objetividade e apresentacao de fato recente.",
+      "comentario": "A justificativa correta recupera a finalidade e as marcas do genero.",
       "tempoEstimado": 35,
       "tags": [
         "noticia",
         "diferenciacao"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -4264,14 +4265,14 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Reportagem",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta outro exemplo compatível com o gênero reportagem?",
+      "enunciado": "Qual alternativa apresenta outro exemplo compativel com o genero reportagem?",
       "opcoes": [
         "Portal publica especial sobre alimentacao saudavel entre jovens.",
         "Versos curtos constroem imagens de chuva e memoria.",
@@ -4279,7 +4280,7 @@ export const generosTextuais = {
         "Mensagem incentiva a compra de um curso online."
       ],
       "correta": "Portal publica especial sobre alimentacao saudavel entre jovens.",
-      "comentario": "A resposta correta mantem a mesma finalidade comunicativa e o mesmo tipo de circulação.",
+      "comentario": "A resposta correta mantem a mesma finalidade comunicativa e o mesmo tipo de circulacao.",
       "tempoEstimado": 30,
       "tags": [
         "reportagem",
@@ -4302,22 +4303,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definição corresponde melhor ao gênero sugerido pelo trecho \"Colunista avalia os efeitos do excesso de telas na rotina juvenil.\"?",
+      "enunciado": "Qual definicao corresponde melhor ao genero sugerido pelo trecho \"Colunista avalia os efeitos do excesso de telas na rotina juvenil.\"?",
       "opcoes": [
         "defender um ponto de vista sobre tema relevante com argumentos",
-        "divulgar produto, serviço, evento ou ideia com objetivo de persuadir",
+        "divulgar produto, servico, evento ou ideia com objetivo de persuadir",
         "comentar criticamente fatos atuais por meio de humor e linguagem verbo-visual",
-        "sequencia curta de quadrinhos com humor, narrativa breve ou crítica cotidiana"
+        "sequencia curta de quadrinhos com humor, narrativa breve ou critica cotidiana"
       ],
       "correta": "defender um ponto de vista sobre tema relevante com argumentos",
-      "comentario": "A definição correta recupera a finalidade principal do gênero.",
+      "comentario": "A definicao correta recupera a finalidade principal do genero.",
       "tempoEstimado": 30,
       "tags": [
         "artigo-opiniao",
@@ -4340,29 +4341,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO combina com o gênero crônica?",
+      "enunciado": "Qual alternativa NAO combina com o genero cronica?",
       "opcoes": [
         "Quadrinhos exploram ironia em uma cena cotidiana.",
-        "Cenário comum ganha humor e sensibilidade no olhar do narrador.",
-        "Narrador observa a pressa das pessoas no ponto de ônibus.",
-        "Texto comenta o silêncio estranho de uma tarde chuvosa."
+        "Cenario comum ganha humor e sensibilidade no olhar do narrador.",
+        "Narrador observa a pressa das pessoas no ponto de onibus.",
+        "Texto comenta o silencio estranho de uma tarde chuvosa."
       ],
       "correta": "Quadrinhos exploram ironia em uma cena cotidiana.",
-      "comentario": "A alternativa correta desloca a finalidade e as marcas para outro gênero textual.",
+      "comentario": "A alternativa correta desloca a finalidade e as marcas para outro genero textual.",
       "tempoEstimado": 35,
       "tags": [
         "cronica",
         "nao-combina"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -4378,22 +4379,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um livro de poesia, aparece o trecho \"O texto busca emocionar pela escolha expressiva das palavras.\". Qual gênero textual melhor se ajusta a essa situação?",
+      "enunciado": "Em um livro de poesia, aparece o trecho \"O texto busca emocionar pela escolha expressiva das palavras.\". Qual genero textual melhor se ajusta a essa situacao?",
       "opcoes": [
         "Poema",
-        "Notícia",
+        "Noticia",
         "Reportagem",
-        "Artigo de opinião"
+        "Artigo de opiniao"
       ],
       "correta": "Poema",
-      "comentario": "O contexto de circulação e as marcas do trecho apontam para Poema.",
+      "comentario": "O contexto de circulacao e as marcas do trecho apontam para Poema.",
       "tempoEstimado": 30,
       "tags": [
         "poema",
@@ -4417,22 +4418,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Finalidade e circulação",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Finalidade e circulacao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual finalidade aparece de modo mais caracteristico no gênero carta do leitor?",
+      "enunciado": "Qual finalidade aparece de modo mais caracteristico no genero carta do leitor?",
       "opcoes": [
-        "opinar e dialogar com um veículo ou assunto publicado",
-        "organizar dados sem indicar gênero específico",
+        "opinar e dialogar com um veiculo ou assunto publicado",
+        "organizar dados sem indicar genero especifico",
         "eliminar qualquer finalidade comunicativa",
         "apresentar apenas palavras soltas sem contexto"
       ],
-      "correta": "opinar e dialogar com um veículo ou assunto publicado",
-      "comentario": "Carta do leitor costuma opinar e dialogar com um veículo ou assunto publicado.",
+      "correta": "opinar e dialogar com um veiculo ou assunto publicado",
+      "comentario": "Carta do leitor costuma opinar e dialogar com um veiculo ou assunto publicado.",
       "tempoEstimado": 35,
       "tags": [
         "carta-leitor",
@@ -4455,29 +4456,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Diferenciação entre gêneros",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Diferenciacao entre generos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em \"Peca divulga promoção com chamada direta ao consumidor.\", a classificação correta é Anúncio, e não Notícia, porque:",
+      "enunciado": "Em \"Peca divulga promocao com chamada direta ao consumidor.\", a classificacao correta e Anuncio, e nao Noticia, porque:",
       "opcoes": [
-        "Anúncio apresenta apelo ao leitor, linguagem persuasiva e convite a ação.",
-        "Notícia aparece sempre que há um título no texto.",
-        "Notícia dispensa qualquer relação com suporte ou finalidade.",
-        "Notícia se reconhece apenas pelo tamanho do texto."
+        "Anuncio apresenta apelo ao leitor, linguagem persuasiva e convite a acao.",
+        "Noticia aparece sempre que ha um titulo no texto.",
+        "Noticia dispensa qualquer relacao com suporte ou finalidade.",
+        "Noticia se reconhece apenas pelo tamanho do texto."
       ],
-      "correta": "Anúncio apresenta apelo ao leitor, linguagem persuasiva e convite a ação.",
-      "comentario": "A justificativa correta recupera a finalidade e as marcas do gênero.",
+      "correta": "Anuncio apresenta apelo ao leitor, linguagem persuasiva e convite a acao.",
+      "comentario": "A justificativa correta recupera a finalidade e as marcas do genero.",
       "tempoEstimado": 35,
       "tags": [
         "anuncio",
         "diferenciacao"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -4493,22 +4494,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Charge",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta outro exemplo compatível com o gênero charge?",
+      "enunciado": "Qual alternativa apresenta outro exemplo compativel com o genero charge?",
       "opcoes": [
-        "Imagem e fala breve apontam contradição social do momento.",
-        "Cartaz convida o público para a feira cultural da escola.",
-        "Sequencia curta termina em surpresa humorística.",
+        "Imagem e fala breve apontam contradicao social do momento.",
+        "Cartaz convida o publico para a feira cultural da escola.",
+        "Sequencia curta termina em surpresa humorastica.",
         "Glossario esclarece o conceito de cidadania."
       ],
-      "correta": "Imagem e fala breve apontam contradição social do momento.",
-      "comentario": "A resposta correta mantem a mesma finalidade comunicativa e o mesmo tipo de circulação.",
+      "correta": "Imagem e fala breve apontam contradicao social do momento.",
+      "comentario": "A resposta correta mantem a mesma finalidade comunicativa e o mesmo tipo de circulacao.",
       "tempoEstimado": 30,
       "tags": [
         "charge",
@@ -4531,22 +4532,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definição corresponde melhor ao gênero sugerido pelo trecho \"Historinha breve apresenta conflito simples e fechamento rapido.\"?",
+      "enunciado": "Qual definicao corresponde melhor ao genero sugerido pelo trecho \"Historinha breve apresenta conflito simples e fechamento rapido.\"?",
       "opcoes": [
-        "sequencia curta de quadrinhos com humor, narrativa breve ou crítica cotidiana",
+        "sequencia curta de quadrinhos com humor, narrativa breve ou critica cotidiana",
         "explicar de modo sintetico e objetivo o significado de um termo ou conceito",
-        "relata fatos atuais de interesse público com linguagem objetiva",
+        "relata fatos atuais de interesse publico com linguagem objetiva",
         "aprofundar um tema com dados, entrevistas e contextualizacao"
       ],
-      "correta": "sequencia curta de quadrinhos com humor, narrativa breve ou crítica cotidiana",
-      "comentario": "A definição correta recupera a finalidade principal do gênero.",
+      "correta": "sequencia curta de quadrinhos com humor, narrativa breve ou critica cotidiana",
+      "comentario": "A definicao correta recupera a finalidade principal do genero.",
       "tempoEstimado": 30,
       "tags": [
         "tirinha",
@@ -4569,29 +4570,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO combina com o gênero verbete?",
+      "enunciado": "Qual alternativa NAO combina com o genero verbete?",
       "opcoes": [
         "Escola do bairro inaugura nova biblioteca nesta segunda-feira.",
-        "Entrada de dicionário explica o significado de biodiversidade.",
+        "Entrada de dicionario explica o significado de biodiversidade.",
         "Texto define o termo narrador em poucas linhas.",
         "Glossario esclarece o conceito de cidadania."
       ],
       "correta": "Escola do bairro inaugura nova biblioteca nesta segunda-feira.",
-      "comentario": "A alternativa correta desloca a finalidade e as marcas para outro gênero textual.",
+      "comentario": "A alternativa correta desloca a finalidade e as marcas para outro genero textual.",
       "tempoEstimado": 35,
       "tags": [
         "verbete",
         "nao-combina"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -4607,29 +4608,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Diferenciação entre gêneros",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Diferenciacao entre generos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia os trechos: \"Escola do bairro inaugura nova biblioteca nesta segunda-feira. Texto comenta o silêncio estranho de uma tarde chuvosa.\". Considerando o primeiro como foco da análise, qual gênero textual predomina?",
+      "enunciado": "Leia os trechos: \"Escola do bairro inaugura nova biblioteca nesta segunda-feira. Texto comenta o silencio estranho de uma tarde chuvosa.\". Considerando o primeiro como foco da analise, qual genero textual predomina?",
       "opcoes": [
-        "Notícia",
-        "Crônica",
+        "Noticia",
+        "Cronica",
         "Poema",
         "Carta do leitor"
       ],
-      "correta": "Notícia",
-      "comentario": "Mesmo com outro trecho ao lado, o primeiro conserva as marcas do gênero pedido.",
+      "correta": "Noticia",
+      "comentario": "Mesmo com outro trecho ao lado, o primeiro conserva as marcas do genero pedido.",
       "tempoEstimado": 45,
       "tags": [
         "noticia",
         "predominio"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -4645,29 +4646,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante leu \"Portal publica especial sobre alimentacao saudavel entre jovens.\" e afirmou que o gênero e Poema. Qual avaliação está correta?",
+      "enunciado": "Um estudante leu \"Portal publica especial sobre alimentacao saudavel entre jovens.\" e afirmou que o genero e Poema. Qual avaliacao esta correta?",
       "opcoes": [
         "O estudante errou, porque o trecho se aproxima de Reportagem.",
-        "O estudante acertou, porque Reportagem e Poema são equivalentes.",
-        "O estudante acertou, porque todo texto curto pertence ao mesmo gênero.",
-        "Não e possivel classificar o texto sem saber o autor."
+        "O estudante acertou, porque Reportagem e Poema sao equivalentes.",
+        "O estudante acertou, porque todo texto curto pertence ao mesmo genero.",
+        "Nao e possivel classificar o texto sem saber o autor."
       ],
       "correta": "O estudante errou, porque o trecho se aproxima de Reportagem.",
-      "comentario": "A classificação depende da finalidade, do suporte e das marcas do gênero, não apenas do tema.",
+      "comentario": "A classificacao depende da finalidade, do suporte e das marcas do genero, nao apenas do tema.",
       "tempoEstimado": 45,
       "tags": [
         "reportagem",
         "erro-comum"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -4683,22 +4684,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Finalidade e circulação",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Finalidade e circulacao",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No trecho \"Autor defende maior incentivo a leitura nas escolas.\", qual leitura explica melhor por que esse texto circula como artigo de opinião?",
+      "enunciado": "No trecho \"Autor defende maior incentivo a leitura nas escolas.\", qual leitura explica melhor por que esse texto circula como artigo de opiniao?",
       "opcoes": [
         "Porque sua finalidade principal e convencer o leitor por meio de tese e argumentacao.",
-        "Porque qualquer texto em prosa e do mesmo gênero.",
-        "Porque o título sozinho define integralmente o gênero.",
-        "Porque o tamanho do texto basta para a classificação."
+        "Porque qualquer texto em prosa e do mesmo genero.",
+        "Porque o titulo sozinho define integralmente o genero.",
+        "Porque o tamanho do texto basta para a classificacao."
       ],
       "correta": "Porque sua finalidade principal e convencer o leitor por meio de tese e argumentacao.",
-      "comentario": "A resposta correta relaciona o gênero a sua função social de circulação.",
+      "comentario": "A resposta correta relaciona o genero a sua funcao social de circulacao.",
       "tempoEstimado": 40,
       "tags": [
         "artigo-opiniao",
@@ -4721,29 +4722,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Diferenciação entre gêneros",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Diferenciacao entre generos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia os trechos: \"Narrativa breve mostra a rotina de uma fila de padaria. Publicidade usa frase de impacto para atrair a atencao.\". Considerando o primeiro como foco da análise, qual gênero textual predomina?",
+      "enunciado": "Leia os trechos: \"Narrativa breve mostra a rotina de uma fila de padaria. Publicidade usa frase de impacto para atrair a atencao.\". Considerando o primeiro como foco da analise, qual genero textual predomina?",
       "opcoes": [
-        "Crônica",
-        "Anúncio",
+        "Cronica",
+        "Anuncio",
         "Charge",
         "Tirinha"
       ],
-      "correta": "Crônica",
-      "comentario": "Mesmo com outro trecho ao lado, o primeiro conserva as marcas do gênero pedido.",
+      "correta": "Cronica",
+      "comentario": "Mesmo com outro trecho ao lado, o primeiro conserva as marcas do genero pedido.",
       "tempoEstimado": 45,
       "tags": [
         "cronica",
         "predominio"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -4759,29 +4760,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante leu \"Texto joga com sons e repeticoes para sugerir movimento.\" e afirmou que o gênero e Charge. Qual avaliação está correta?",
+      "enunciado": "Um estudante leu \"Texto joga com sons e repeticoes para sugerir movimento.\" e afirmou que o genero e Charge. Qual avaliacao esta correta?",
       "opcoes": [
         "O estudante errou, porque o trecho se aproxima de Poema.",
-        "O estudante acertou, porque Poema e Charge são equivalentes.",
-        "O estudante acertou, porque todo texto curto pertence ao mesmo gênero.",
-        "Não e possivel classificar o texto sem saber o autor."
+        "O estudante acertou, porque Poema e Charge sao equivalentes.",
+        "O estudante acertou, porque todo texto curto pertence ao mesmo genero.",
+        "Nao e possivel classificar o texto sem saber o autor."
       ],
       "correta": "O estudante errou, porque o trecho se aproxima de Poema.",
-      "comentario": "A classificação depende da finalidade, do suporte e das marcas do gênero, não apenas do tema.",
+      "comentario": "A classificacao depende da finalidade, do suporte e das marcas do genero, nao apenas do tema.",
       "tempoEstimado": 45,
       "tags": [
         "poema",
         "erro-comum"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -4797,22 +4798,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Finalidade e circulação",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Finalidade e circulacao",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No trecho \"Autor da carta reage a matéria sobre educação publica.\", qual leitura explica melhor por que esse texto circula como carta do leitor?",
+      "enunciado": "No trecho \"Autor da carta reage a materia sobre educacao publica.\", qual leitura explica melhor por que esse texto circula como carta do leitor?",
       "opcoes": [
-        "Porque sua finalidade principal e opinar e dialogar com um veículo ou assunto publicado.",
-        "Porque qualquer texto em prosa e do mesmo gênero.",
-        "Porque o título sozinho define integralmente o gênero.",
-        "Porque o tamanho do texto basta para a classificação."
+        "Porque sua finalidade principal e opinar e dialogar com um veiculo ou assunto publicado.",
+        "Porque qualquer texto em prosa e do mesmo genero.",
+        "Porque o titulo sozinho define integralmente o genero.",
+        "Porque o tamanho do texto basta para a classificacao."
       ],
-      "correta": "Porque sua finalidade principal e opinar e dialogar com um veículo ou assunto publicado.",
-      "comentario": "A resposta correta relaciona o gênero a sua função social de circulação.",
+      "correta": "Porque sua finalidade principal e opinar e dialogar com um veiculo ou assunto publicado.",
+      "comentario": "A resposta correta relaciona o genero a sua funcao social de circulacao.",
       "tempoEstimado": 40,
       "tags": [
         "carta-leitor",
@@ -4835,29 +4836,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Diferenciação entre gêneros",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Diferenciacao entre generos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia os trechos: \"Peca divulga promoção com chamada direta ao consumidor. Glossario esclarece o conceito de cidadania.\". Considerando o primeiro como foco da análise, qual gênero textual predomina?",
+      "enunciado": "Leia os trechos: \"Peca divulga promocao com chamada direta ao consumidor. Glossario esclarece o conceito de cidadania.\". Considerando o primeiro como foco da analise, qual genero textual predomina?",
       "opcoes": [
-        "Anúncio",
+        "Anuncio",
         "Verbete",
-        "Notícia",
+        "Noticia",
         "Reportagem"
       ],
-      "correta": "Anúncio",
-      "comentario": "Mesmo com outro trecho ao lado, o primeiro conserva as marcas do gênero pedido.",
+      "correta": "Anuncio",
+      "comentario": "Mesmo com outro trecho ao lado, o primeiro conserva as marcas do genero pedido.",
       "tempoEstimado": 45,
       "tags": [
         "anuncio",
         "predominio"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -4873,29 +4874,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante leu \"Imagem e fala breve apontam contradição social do momento.\" e afirmou que o gênero e Notícia. Qual avaliação está correta?",
+      "enunciado": "Um estudante leu \"Imagem e fala breve apontam contradicao social do momento.\" e afirmou que o genero e Noticia. Qual avaliacao esta correta?",
       "opcoes": [
         "O estudante errou, porque o trecho se aproxima de Charge.",
-        "O estudante acertou, porque Charge e Notícia são equivalentes.",
-        "O estudante acertou, porque todo texto curto pertence ao mesmo gênero.",
-        "Não e possivel classificar o texto sem saber o autor."
+        "O estudante acertou, porque Charge e Noticia sao equivalentes.",
+        "O estudante acertou, porque todo texto curto pertence ao mesmo genero.",
+        "Nao e possivel classificar o texto sem saber o autor."
       ],
       "correta": "O estudante errou, porque o trecho se aproxima de Charge.",
-      "comentario": "A classificação depende da finalidade, do suporte e das marcas do gênero, não apenas do tema.",
+      "comentario": "A classificacao depende da finalidade, do suporte e das marcas do genero, nao apenas do tema.",
       "tempoEstimado": 45,
       "tags": [
         "charge",
         "erro-comum"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -4911,22 +4912,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Finalidade e circulação",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Finalidade e circulacao",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No trecho \"Sequencia curta termina em surpresa humorística.\", qual leitura explica melhor por que esse texto circula como tirinha?",
+      "enunciado": "No trecho \"Sequencia curta termina em surpresa humorastica.\", qual leitura explica melhor por que esse texto circula como tirinha?",
       "opcoes": [
-        "Porque sua finalidade principal e narrar rapidamente uma situação, muitas vezes humorística.",
-        "Porque qualquer texto em prosa e do mesmo gênero.",
-        "Porque o título sozinho define integralmente o gênero.",
-        "Porque o tamanho do texto basta para a classificação."
+        "Porque sua finalidade principal e narrar rapidamente uma situacao, muitas vezes humorastica.",
+        "Porque qualquer texto em prosa e do mesmo genero.",
+        "Porque o titulo sozinho define integralmente o genero.",
+        "Porque o tamanho do texto basta para a classificacao."
       ],
-      "correta": "Porque sua finalidade principal e narrar rapidamente uma situação, muitas vezes humorística.",
-      "comentario": "A resposta correta relaciona o gênero a sua função social de circulação.",
+      "correta": "Porque sua finalidade principal e narrar rapidamente uma situacao, muitas vezes humorastica.",
+      "comentario": "A resposta correta relaciona o genero a sua funcao social de circulacao.",
       "tempoEstimado": 40,
       "tags": [
         "tirinha",
@@ -4949,29 +4950,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Diferenciação entre gêneros",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Diferenciacao entre generos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia os trechos: \"Verbete descreve o significado e o uso de uma palavra. Autor defende maior incentivo a leitura nas escolas.\". Considerando o primeiro como foco da análise, qual gênero textual predomina?",
+      "enunciado": "Leia os trechos: \"Verbete descreve o significado e o uso de uma palavra. Autor defende maior incentivo a leitura nas escolas.\". Considerando o primeiro como foco da analise, qual genero textual predomina?",
       "opcoes": [
         "Verbete",
-        "Artigo de opinião",
-        "Crônica",
+        "Artigo de opiniao",
+        "Cronica",
         "Poema"
       ],
       "correta": "Verbete",
-      "comentario": "Mesmo com outro trecho ao lado, o primeiro conserva as marcas do gênero pedido.",
+      "comentario": "Mesmo com outro trecho ao lado, o primeiro conserva as marcas do genero pedido.",
       "tempoEstimado": 45,
       "tags": [
         "verbete",
         "predominio"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -4987,29 +4988,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante leu \"Temporal interrompe aulas em tres municipios da regiao.\" e afirmou que o gênero e Crônica. Qual avaliação está correta?",
+      "enunciado": "Um estudante leu \"Temporal interrompe aulas em tres municipios da regiao.\" e afirmou que o genero e Cronica. Qual avaliacao esta correta?",
       "opcoes": [
-        "O estudante errou, porque o trecho se aproxima de Notícia.",
-        "O estudante acertou, porque Notícia e Crônica são equivalentes.",
-        "O estudante acertou, porque todo texto curto pertence ao mesmo gênero.",
-        "Não e possivel classificar o texto sem saber o autor."
+        "O estudante errou, porque o trecho se aproxima de Noticia.",
+        "O estudante acertou, porque Noticia e Cronica sao equivalentes.",
+        "O estudante acertou, porque todo texto curto pertence ao mesmo genero.",
+        "Nao e possivel classificar o texto sem saber o autor."
       ],
-      "correta": "O estudante errou, porque o trecho se aproxima de Notícia.",
-      "comentario": "A classificação depende da finalidade, do suporte e das marcas do gênero, não apenas do tema.",
+      "correta": "O estudante errou, porque o trecho se aproxima de Noticia.",
+      "comentario": "A classificacao depende da finalidade, do suporte e das marcas do genero, nao apenas do tema.",
       "tempoEstimado": 45,
       "tags": [
         "noticia",
         "erro-comum"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -5025,9 +5026,9 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Finalidade e circulação",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Finalidade e circulacao",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
@@ -5035,12 +5036,12 @@ export const generosTextuais = {
       "enunciado": "No trecho \"Caderno cultural discute os bastidores de um festival estudantil.\", qual leitura explica melhor por que esse texto circula como reportagem?",
       "opcoes": [
         "Porque sua finalidade principal e aprofundar e contextualizar um assunto de interesse social.",
-        "Porque qualquer texto em prosa e do mesmo gênero.",
-        "Porque o título sozinho define integralmente o gênero.",
-        "Porque o tamanho do texto basta para a classificação."
+        "Porque qualquer texto em prosa e do mesmo genero.",
+        "Porque o titulo sozinho define integralmente o genero.",
+        "Porque o tamanho do texto basta para a classificacao."
       ],
       "correta": "Porque sua finalidade principal e aprofundar e contextualizar um assunto de interesse social.",
-      "comentario": "A resposta correta relaciona o gênero a sua função social de circulação.",
+      "comentario": "A resposta correta relaciona o genero a sua funcao social de circulacao.",
       "tempoEstimado": 40,
       "tags": [
         "reportagem",
@@ -5063,29 +5064,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Diferenciação entre gêneros",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Diferenciacao entre generos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia os trechos: \"Colunista avalia os efeitos do excesso de telas na rotina juvenil. Autor da carta reage a matéria sobre educação publica.\". Considerando o primeiro como foco da análise, qual gênero textual predomina?",
+      "enunciado": "Leia os trechos: \"Colunista avalia os efeitos do excesso de telas na rotina juvenil. Autor da carta reage a materia sobre educacao publica.\". Considerando o primeiro como foco da analise, qual genero textual predomina?",
       "opcoes": [
-        "Artigo de opinião",
+        "Artigo de opiniao",
         "Carta do leitor",
-        "Anúncio",
+        "Anuncio",
         "Charge"
       ],
-      "correta": "Artigo de opinião",
-      "comentario": "Mesmo com outro trecho ao lado, o primeiro conserva as marcas do gênero pedido.",
+      "correta": "Artigo de opiniao",
+      "comentario": "Mesmo com outro trecho ao lado, o primeiro conserva as marcas do genero pedido.",
       "tempoEstimado": 45,
       "tags": [
         "artigo-opiniao",
         "predominio"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -5101,29 +5102,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante leu \"Narrador observa a pressa das pessoas no ponto de ônibus.\" e afirmou que o gênero e Anúncio. Qual avaliação está correta?",
+      "enunciado": "Um estudante leu \"Narrador observa a pressa das pessoas no ponto de onibus.\" e afirmou que o genero e Anuncio. Qual avaliacao esta correta?",
       "opcoes": [
-        "O estudante errou, porque o trecho se aproxima de Crônica.",
-        "O estudante acertou, porque Crônica e Anúncio são equivalentes.",
-        "O estudante acertou, porque todo texto curto pertence ao mesmo gênero.",
-        "Não e possivel classificar o texto sem saber o autor."
+        "O estudante errou, porque o trecho se aproxima de Cronica.",
+        "O estudante acertou, porque Cronica e Anuncio sao equivalentes.",
+        "O estudante acertou, porque todo texto curto pertence ao mesmo genero.",
+        "Nao e possivel classificar o texto sem saber o autor."
       ],
-      "correta": "O estudante errou, porque o trecho se aproxima de Crônica.",
-      "comentario": "A classificação depende da finalidade, do suporte e das marcas do gênero, não apenas do tema.",
+      "correta": "O estudante errou, porque o trecho se aproxima de Cronica.",
+      "comentario": "A classificacao depende da finalidade, do suporte e das marcas do genero, nao apenas do tema.",
       "tempoEstimado": 45,
       "tags": [
         "cronica",
         "erro-comum"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -5139,22 +5140,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Finalidade e circulação",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Finalidade e circulacao",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
       "enunciado": "No trecho \"Palavras se organizam em ritmo e imagens simbolicas.\", qual leitura explica melhor por que esse texto circula como poema?",
       "opcoes": [
-        "Porque sua finalidade principal e produzir efeito estético e expressivo.",
-        "Porque qualquer texto em prosa e do mesmo gênero.",
-        "Porque o título sozinho define integralmente o gênero.",
-        "Porque o tamanho do texto basta para a classificação."
+        "Porque sua finalidade principal e produzir efeito estatico e expressivo.",
+        "Porque qualquer texto em prosa e do mesmo genero.",
+        "Porque o titulo sozinho define integralmente o genero.",
+        "Porque o tamanho do texto basta para a classificacao."
       ],
-      "correta": "Porque sua finalidade principal e produzir efeito estético e expressivo.",
-      "comentario": "A resposta correta relaciona o gênero a sua função social de circulação.",
+      "correta": "Porque sua finalidade principal e produzir efeito estatico e expressivo.",
+      "comentario": "A resposta correta relaciona o genero a sua funcao social de circulacao.",
       "tempoEstimado": 40,
       "tags": [
         "poema",
@@ -5177,29 +5178,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Diferenciação entre gêneros",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Diferenciacao entre generos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia os trechos: \"Leitor comenta reportagem publicada na edição anterior. Sequencia curta termina em surpresa humorística.\". Considerando o primeiro como foco da análise, qual gênero textual predomina?",
+      "enunciado": "Leia os trechos: \"Leitor comenta reportagem publicada na edicao anterior. Sequencia curta termina em surpresa humorastica.\". Considerando o primeiro como foco da analise, qual genero textual predomina?",
       "opcoes": [
         "Carta do leitor",
         "Tirinha",
         "Verbete",
-        "Notícia"
+        "Noticia"
       ],
       "correta": "Carta do leitor",
-      "comentario": "Mesmo com outro trecho ao lado, o primeiro conserva as marcas do gênero pedido.",
+      "comentario": "Mesmo com outro trecho ao lado, o primeiro conserva as marcas do genero pedido.",
       "tempoEstimado": 45,
       "tags": [
         "carta-leitor",
         "predominio"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -5215,29 +5216,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante leu \"Banner apresenta serviço e pede que o leitor participe.\" e afirmou que o gênero e Verbete. Qual avaliação está correta?",
+      "enunciado": "Um estudante leu \"Banner apresenta servico e pede que o leitor participe.\" e afirmou que o genero e Verbete. Qual avaliacao esta correta?",
       "opcoes": [
-        "O estudante errou, porque o trecho se aproxima de Anúncio.",
-        "O estudante acertou, porque Anúncio e Verbete são equivalentes.",
-        "O estudante acertou, porque todo texto curto pertence ao mesmo gênero.",
-        "Não e possivel classificar o texto sem saber o autor."
+        "O estudante errou, porque o trecho se aproxima de Anuncio.",
+        "O estudante acertou, porque Anuncio e Verbete sao equivalentes.",
+        "O estudante acertou, porque todo texto curto pertence ao mesmo genero.",
+        "Nao e possivel classificar o texto sem saber o autor."
       ],
-      "correta": "O estudante errou, porque o trecho se aproxima de Anúncio.",
-      "comentario": "A classificação depende da finalidade, do suporte e das marcas do gênero, não apenas do tema.",
+      "correta": "O estudante errou, porque o trecho se aproxima de Anuncio.",
+      "comentario": "A classificacao depende da finalidade, do suporte e das marcas do genero, nao apenas do tema.",
       "tempoEstimado": 45,
       "tags": [
         "anuncio",
         "erro-comum"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -5253,9 +5254,9 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Finalidade e circulação",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Finalidade e circulacao",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
@@ -5263,12 +5264,12 @@ export const generosTextuais = {
       "enunciado": "No trecho \"Desenho ironiza promessa politica recente.\", qual leitura explica melhor por que esse texto circula como charge?",
       "opcoes": [
         "Porque sua finalidade principal e criticar ou satirizar um fato atual.",
-        "Porque qualquer texto em prosa e do mesmo gênero.",
-        "Porque o título sozinho define integralmente o gênero.",
-        "Porque o tamanho do texto basta para a classificação."
+        "Porque qualquer texto em prosa e do mesmo genero.",
+        "Porque o titulo sozinho define integralmente o genero.",
+        "Porque o tamanho do texto basta para a classificacao."
       ],
       "correta": "Porque sua finalidade principal e criticar ou satirizar um fato atual.",
-      "comentario": "A resposta correta relaciona o gênero a sua função social de circulação.",
+      "comentario": "A resposta correta relaciona o genero a sua funcao social de circulacao.",
       "tempoEstimado": 40,
       "tags": [
         "charge",
@@ -5291,29 +5292,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Diferenciação entre gêneros",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Diferenciacao entre generos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia os trechos: \"Historinha breve apresenta conflito simples e fechamento rapido. Caderno cultural discute os bastidores de um festival estudantil.\". Considerando o primeiro como foco da análise, qual gênero textual predomina?",
+      "enunciado": "Leia os trechos: \"Historinha breve apresenta conflito simples e fechamento rapido. Caderno cultural discute os bastidores de um festival estudantil.\". Considerando o primeiro como foco da analise, qual genero textual predomina?",
       "opcoes": [
         "Tirinha",
         "Reportagem",
-        "Artigo de opinião",
-        "Crônica"
+        "Artigo de opiniao",
+        "Cronica"
       ],
       "correta": "Tirinha",
-      "comentario": "Mesmo com outro trecho ao lado, o primeiro conserva as marcas do gênero pedido.",
+      "comentario": "Mesmo com outro trecho ao lado, o primeiro conserva as marcas do genero pedido.",
       "tempoEstimado": 45,
       "tags": [
         "tirinha",
         "predominio"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -5329,29 +5330,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante leu \"Texto define o termo narrador em poucas linhas.\" e afirmou que o gênero e Artigo de opinião. Qual avaliação está correta?",
+      "enunciado": "Um estudante leu \"Texto define o termo narrador em poucas linhas.\" e afirmou que o genero e Artigo de opiniao. Qual avaliacao esta correta?",
       "opcoes": [
         "O estudante errou, porque o trecho se aproxima de Verbete.",
-        "O estudante acertou, porque Verbete e Artigo de opinião são equivalentes.",
-        "O estudante acertou, porque todo texto curto pertence ao mesmo gênero.",
-        "Não e possivel classificar o texto sem saber o autor."
+        "O estudante acertou, porque Verbete e Artigo de opiniao sao equivalentes.",
+        "O estudante acertou, porque todo texto curto pertence ao mesmo genero.",
+        "Nao e possivel classificar o texto sem saber o autor."
       ],
       "correta": "O estudante errou, porque o trecho se aproxima de Verbete.",
-      "comentario": "A classificação depende da finalidade, do suporte e das marcas do gênero, não apenas do tema.",
+      "comentario": "A classificacao depende da finalidade, do suporte e das marcas do genero, nao apenas do tema.",
       "tempoEstimado": 45,
       "tags": [
         "verbete",
         "erro-comum"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -5367,22 +5368,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Finalidade e circulação",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Finalidade e circulacao",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No trecho \"Feira de ciências reune projetos de estudantes no sábado.\", qual leitura explica melhor por que esse texto circula como notícia?",
+      "enunciado": "No trecho \"Feira de ciencias reune projetos de estudantes no sobado.\", qual leitura explica melhor por que esse texto circula como noticia?",
       "opcoes": [
         "Porque sua finalidade principal e informar o leitor sobre um acontecimento recente.",
-        "Porque qualquer texto em prosa e do mesmo gênero.",
-        "Porque o título sozinho define integralmente o gênero.",
-        "Porque o tamanho do texto basta para a classificação."
+        "Porque qualquer texto em prosa e do mesmo genero.",
+        "Porque o titulo sozinho define integralmente o genero.",
+        "Porque o tamanho do texto basta para a classificacao."
       ],
       "correta": "Porque sua finalidade principal e informar o leitor sobre um acontecimento recente.",
-      "comentario": "A resposta correta relaciona o gênero a sua função social de circulação.",
+      "comentario": "A resposta correta relaciona o genero a sua funcao social de circulacao.",
       "tempoEstimado": 40,
       "tags": [
         "noticia",
@@ -5405,29 +5406,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Diferenciação entre gêneros",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Diferenciacao entre generos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia os trechos: \"Texto apresenta entrevistas sobre o uso do celular em sala de aula. Palavras se organizam em ritmo e imagens simbolicas.\". Considerando o primeiro como foco da análise, qual gênero textual predomina?",
+      "enunciado": "Leia os trechos: \"Texto apresenta entrevistas sobre o uso do celular em sala de aula. Palavras se organizam em ritmo e imagens simbolicas.\". Considerando o primeiro como foco da analise, qual genero textual predomina?",
       "opcoes": [
         "Reportagem",
         "Poema",
         "Carta do leitor",
-        "Anúncio"
+        "Anuncio"
       ],
       "correta": "Reportagem",
-      "comentario": "Mesmo com outro trecho ao lado, o primeiro conserva as marcas do gênero pedido.",
+      "comentario": "Mesmo com outro trecho ao lado, o primeiro conserva as marcas do genero pedido.",
       "tempoEstimado": 45,
       "tags": [
         "reportagem",
         "predominio"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -5443,29 +5444,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante leu \"Professor escreve sobre a importância da educação ambiental.\" e afirmou que o gênero e Carta do leitor. Qual avaliação está correta?",
+      "enunciado": "Um estudante leu \"Professor escreve sobre a importancia da educacao ambiental.\" e afirmou que o genero e Carta do leitor. Qual avaliacao esta correta?",
       "opcoes": [
-        "O estudante errou, porque o trecho se aproxima de Artigo de opinião.",
-        "O estudante acertou, porque Artigo de opinião e Carta do leitor são equivalentes.",
-        "O estudante acertou, porque todo texto curto pertence ao mesmo gênero.",
-        "Não e possivel classificar o texto sem saber o autor."
+        "O estudante errou, porque o trecho se aproxima de Artigo de opiniao.",
+        "O estudante acertou, porque Artigo de opiniao e Carta do leitor sao equivalentes.",
+        "O estudante acertou, porque todo texto curto pertence ao mesmo genero.",
+        "Nao e possivel classificar o texto sem saber o autor."
       ],
-      "correta": "O estudante errou, porque o trecho se aproxima de Artigo de opinião.",
-      "comentario": "A classificação depende da finalidade, do suporte e das marcas do gênero, não apenas do tema.",
+      "correta": "O estudante errou, porque o trecho se aproxima de Artigo de opiniao.",
+      "comentario": "A classificacao depende da finalidade, do suporte e das marcas do genero, nao apenas do tema.",
       "tempoEstimado": 45,
       "tags": [
         "artigo-opiniao",
         "erro-comum"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -5481,22 +5482,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Finalidade e circulação",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Finalidade e circulacao",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No trecho \"Texto comenta o silêncio estranho de uma tarde chuvosa.\", qual leitura explica melhor por que esse texto circula como crônica?",
+      "enunciado": "No trecho \"Texto comenta o silencio estranho de uma tarde chuvosa.\", qual leitura explica melhor por que esse texto circula como cronica?",
       "opcoes": [
         "Porque sua finalidade principal e refletir sobre cenas do dia a dia com olhar pessoal.",
-        "Porque qualquer texto em prosa e do mesmo gênero.",
-        "Porque o título sozinho define integralmente o gênero.",
-        "Porque o tamanho do texto basta para a classificação."
+        "Porque qualquer texto em prosa e do mesmo genero.",
+        "Porque o titulo sozinho define integralmente o genero.",
+        "Porque o tamanho do texto basta para a classificacao."
       ],
       "correta": "Porque sua finalidade principal e refletir sobre cenas do dia a dia com olhar pessoal.",
-      "comentario": "A resposta correta relaciona o gênero a sua função social de circulação.",
+      "comentario": "A resposta correta relaciona o genero a sua funcao social de circulacao.",
       "tempoEstimado": 40,
       "tags": [
         "cronica",
@@ -5519,14 +5520,14 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Diferenciação entre gêneros",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Diferenciacao entre generos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia os trechos: \"O texto busca emocionar pela escolha expressiva das palavras. Desenho ironiza promessa politica recente.\". Considerando o primeiro como foco da análise, qual gênero textual predomina?",
+      "enunciado": "Leia os trechos: \"O texto busca emocionar pela escolha expressiva das palavras. Desenho ironiza promessa politica recente.\". Considerando o primeiro como foco da analise, qual genero textual predomina?",
       "opcoes": [
         "Poema",
         "Charge",
@@ -5534,14 +5535,14 @@ export const generosTextuais = {
         "Verbete"
       ],
       "correta": "Poema",
-      "comentario": "Mesmo com outro trecho ao lado, o primeiro conserva as marcas do gênero pedido.",
+      "comentario": "Mesmo com outro trecho ao lado, o primeiro conserva as marcas do genero pedido.",
       "tempoEstimado": 45,
       "tags": [
         "poema",
         "predominio"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -5557,29 +5558,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante leu \"Texto crítica problema do bairro citado no jornal.\" e afirmou que o gênero e Tirinha. Qual avaliação está correta?",
+      "enunciado": "Um estudante leu \"Texto critica problema do bairro citado no jornal.\" e afirmou que o genero e Tirinha. Qual avaliacao esta correta?",
       "opcoes": [
         "O estudante errou, porque o trecho se aproxima de Carta do leitor.",
-        "O estudante acertou, porque Carta do leitor e Tirinha são equivalentes.",
-        "O estudante acertou, porque todo texto curto pertence ao mesmo gênero.",
-        "Não e possivel classificar o texto sem saber o autor."
+        "O estudante acertou, porque Carta do leitor e Tirinha sao equivalentes.",
+        "O estudante acertou, porque todo texto curto pertence ao mesmo genero.",
+        "Nao e possivel classificar o texto sem saber o autor."
       ],
       "correta": "O estudante errou, porque o trecho se aproxima de Carta do leitor.",
-      "comentario": "A classificação depende da finalidade, do suporte e das marcas do gênero, não apenas do tema.",
+      "comentario": "A classificacao depende da finalidade, do suporte e das marcas do genero, nao apenas do tema.",
       "tempoEstimado": 45,
       "tags": [
         "carta-leitor",
         "erro-comum"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -5595,22 +5596,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Finalidade e circulação",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Finalidade e circulacao",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No trecho \"Publicidade usa frase de impacto para atrair a atencao.\", qual leitura explica melhor por que esse texto circula como anúncio?",
+      "enunciado": "No trecho \"Publicidade usa frase de impacto para atrair a atencao.\", qual leitura explica melhor por que esse texto circula como anuncio?",
       "opcoes": [
-        "Porque sua finalidade principal e convencer o público a aderir a uma proposta.",
-        "Porque qualquer texto em prosa e do mesmo gênero.",
-        "Porque o título sozinho define integralmente o gênero.",
-        "Porque o tamanho do texto basta para a classificação."
+        "Porque sua finalidade principal e convencer o publico a aderir a uma proposta.",
+        "Porque qualquer texto em prosa e do mesmo genero.",
+        "Porque o titulo sozinho define integralmente o genero.",
+        "Porque o tamanho do texto basta para a classificacao."
       ],
-      "correta": "Porque sua finalidade principal e convencer o público a aderir a uma proposta.",
-      "comentario": "A resposta correta relaciona o gênero a sua função social de circulação.",
+      "correta": "Porque sua finalidade principal e convencer o publico a aderir a uma proposta.",
+      "comentario": "A resposta correta relaciona o genero a sua funcao social de circulacao.",
       "tempoEstimado": 40,
       "tags": [
         "anuncio",
@@ -5633,29 +5634,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Diferenciação entre gêneros",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Diferenciacao entre generos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia os trechos: \"Personagens comentam notícia atual em tom satírico. Feira de ciências reune projetos de estudantes no sábado.\". Considerando o primeiro como foco da análise, qual gênero textual predomina?",
+      "enunciado": "Leia os trechos: \"Personagens comentam noticia atual em tom saterico. Feira de ciencias reune projetos de estudantes no sobado.\". Considerando o primeiro como foco da analise, qual genero textual predomina?",
       "opcoes": [
         "Charge",
-        "Notícia",
+        "Noticia",
         "Reportagem",
-        "Artigo de opinião"
+        "Artigo de opiniao"
       ],
       "correta": "Charge",
-      "comentario": "Mesmo com outro trecho ao lado, o primeiro conserva as marcas do gênero pedido.",
+      "comentario": "Mesmo com outro trecho ao lado, o primeiro conserva as marcas do genero pedido.",
       "tempoEstimado": 45,
       "tags": [
         "charge",
         "predominio"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -5671,29 +5672,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante leu \"Tres quadrinhos mostram diálogo engraçado entre amigos.\" e afirmou que o gênero e Reportagem. Qual avaliação está correta?",
+      "enunciado": "Um estudante leu \"Tres quadrinhos mostram dialogo engracado entre amigos.\" e afirmou que o genero e Reportagem. Qual avaliacao esta correta?",
       "opcoes": [
         "O estudante errou, porque o trecho se aproxima de Tirinha.",
-        "O estudante acertou, porque Tirinha e Reportagem são equivalentes.",
-        "O estudante acertou, porque todo texto curto pertence ao mesmo gênero.",
-        "Não e possivel classificar o texto sem saber o autor."
+        "O estudante acertou, porque Tirinha e Reportagem sao equivalentes.",
+        "O estudante acertou, porque todo texto curto pertence ao mesmo genero.",
+        "Nao e possivel classificar o texto sem saber o autor."
       ],
       "correta": "O estudante errou, porque o trecho se aproxima de Tirinha.",
-      "comentario": "A classificação depende da finalidade, do suporte e das marcas do gênero, não apenas do tema.",
+      "comentario": "A classificacao depende da finalidade, do suporte e das marcas do genero, nao apenas do tema.",
       "tempoEstimado": 45,
       "tags": [
         "tirinha",
         "erro-comum"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -5709,9 +5710,9 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Finalidade e circulação",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Finalidade e circulacao",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
@@ -5719,12 +5720,12 @@ export const generosTextuais = {
       "enunciado": "No trecho \"Glossario esclarece o conceito de cidadania.\", qual leitura explica melhor por que esse texto circula como verbete?",
       "opcoes": [
         "Porque sua finalidade principal e definir e esclarecer um termo.",
-        "Porque qualquer texto em prosa e do mesmo gênero.",
-        "Porque o título sozinho define integralmente o gênero.",
-        "Porque o tamanho do texto basta para a classificação."
+        "Porque qualquer texto em prosa e do mesmo genero.",
+        "Porque o titulo sozinho define integralmente o genero.",
+        "Porque o tamanho do texto basta para a classificacao."
       ],
       "correta": "Porque sua finalidade principal e definir e esclarecer um termo.",
-      "comentario": "A resposta correta relaciona o gênero a sua função social de circulação.",
+      "comentario": "A resposta correta relaciona o genero a sua funcao social de circulacao.",
       "tempoEstimado": 40,
       "tags": [
         "verbete",
@@ -5747,22 +5748,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Interpretação indireta",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um jornal impresso, aparece a formulacao \"Escola do bairro inaugura nova biblioteca nesta segunda-feira.\". Qual leitura melhor justifica a escolha desse gênero textual?",
+      "enunciado": "Em um jornal impresso, aparece a formulacao \"Escola do bairro inaugura nova biblioteca nesta segunda-feira.\". Qual leitura melhor justifica a escolha desse genero textual?",
       "opcoes": [
         "Porque o texto busca informar o leitor sobre um acontecimento recente.",
-        "Porque o texto não possui nenhuma função social definida.",
-        "Porque qualquer frase publicada pode pertencer a qualquer gênero.",
-        "Porque o gênero se define apenas pela quantidade de linhas."
+        "Porque o texto nao possui nenhuma funcao social definida.",
+        "Porque qualquer frase publicada pode pertencer a qualquer genero.",
+        "Porque o genero se define apenas pela quantidade de linhas."
       ],
       "correta": "Porque o texto busca informar o leitor sobre um acontecimento recente.",
-      "comentario": "A identificação do gênero depende da função social que ele exerce no contexto.",
+      "comentario": "A identificacao do genero depende da funcao social que ele exerce no contexto.",
       "tempoEstimado": 50,
       "tags": [
         "noticia",
@@ -5785,29 +5786,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia a análise: \"Como o trecho Texto apresenta entrevistas sobre o uso do celular em sala de aula. traz informação, ele só pode ser notícia\". Qual alternativa avalia melhor essa afirmação?",
+      "enunciado": "Leia a analise: \"Como o trecho Texto apresenta entrevistas sobre o uso do celular em sala de aula. traz informacao, ele so pode ser noticia\". Qual alternativa avalia melhor essa afirmacao?",
       "opcoes": [
-        "Ela está errada, porque informar não basta; o trecho se aproxima de Reportagem.",
-        "Ela está correta, porque todo texto informativo e notícia.",
-        "Ela está correta, porque qualquer texto publicado em site e notícia.",
-        "Ela está errada apenas se o texto tiver mais de um parágrafo."
+        "Ela esta errada, porque informar nao basta; o trecho se aproxima de Reportagem.",
+        "Ela esta correta, porque todo texto informativo e noticia.",
+        "Ela esta correta, porque qualquer texto publicado em site e noticia.",
+        "Ela esta errada apenas se o texto tiver mais de um paragrafo."
       ],
-      "correta": "Ela está errada, porque informar não basta; o trecho se aproxima de Reportagem.",
-      "comentario": "O erro comum está em reduzir a classificação a um único aspecto, ignorando finalidade e suporte.",
+      "correta": "Ela esta errada, porque informar nao basta; o trecho se aproxima de Reportagem.",
+      "comentario": "O erro comum esta em reduzir a classificacao a um unico aspecto, ignorando finalidade e suporte.",
       "tempoEstimado": 50,
       "tags": [
         "reportagem",
         "pegadinha"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -5823,22 +5824,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Equivalência de formas",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa preserva melhor o mesmo gênero textual sugerido por \"Colunista avalia os efeitos do excesso de telas na rotina juvenil.\"?",
+      "enunciado": "Qual alternativa preserva melhor o mesmo genero textual sugerido por \"Colunista avalia os efeitos do excesso de telas na rotina juvenil.\"?",
       "opcoes": [
-        "Articulista crítica a falta de espaços culturais no bairro.",
-        "Leitor comenta reportagem publicada na edição anterior.",
-        "Peca divulga promoção com chamada direta ao consumidor.",
-        "Personagens comentam notícia atual em tom satírico."
+        "Articulista critica a falta de espacos culturais no bairro.",
+        "Leitor comenta reportagem publicada na edicao anterior.",
+        "Peca divulga promocao com chamada direta ao consumidor.",
+        "Personagens comentam noticia atual em tom saterico."
       ],
-      "correta": "Articulista crítica a falta de espaços culturais no bairro.",
-      "comentario": "A resposta correta mantem a mesma função social e as mesmas marcas do gênero.",
+      "correta": "Articulista critica a falta de espacos culturais no bairro.",
+      "comentario": "A resposta correta mantem a mesma funcao social e as mesmas marcas do genero.",
       "tempoEstimado": 55,
       "tags": [
         "artigo-opiniao",
@@ -5861,22 +5862,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Interpretação indireta",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia o microtexto: \"Durante a atividade, apareceu o trecho Narrativa breve mostra a rotina de uma fila de padaria.\". Nesse caso, o gênero se define principalmente por:",
+      "enunciado": "Leia o microtexto: \"Durante a atividade, apareceu o trecho Narrativa breve mostra a rotina de uma fila de padaria.\". Nesse caso, o genero se define principalmente por:",
       "opcoes": [
-        "sua finalidade social e seu modo de circulação",
+        "sua finalidade social e seu modo de circulacao",
         "o numero exato de palavras usadas",
-        "a presenca obrigatoria de uma única frase",
+        "a presenca obrigatoria de uma unica frase",
         "a ausencia completa de interlocutores"
       ],
-      "correta": "sua finalidade social e seu modo de circulação",
-      "comentario": "Gênero textual se identifica pela função social, pelo suporte e pelas marcas recorrentes.",
+      "correta": "sua finalidade social e seu modo de circulacao",
+      "comentario": "Genero textual se identifica pela funcao social, pelo suporte e pelas marcas recorrentes.",
       "tempoEstimado": 55,
       "tags": [
         "cronica",
@@ -5899,29 +5900,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"O texto busca emocionar pela escolha expressiva das palavras.\", evitando um erro comum de classificação?",
+      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"O texto busca emocionar pela escolha expressiva das palavras.\", evitando um erro comum de classificacao?",
       "opcoes": [
         "Reconhecer que o texto se aproxima de Poema.",
         "Classificar automaticamente o trecho como Verbete apenas pelo assunto.",
-        "Afirmar que não existe gênero definido porque o texto é curto.",
-        "Dizer que suporte e finalidade não interferem na identificação."
+        "Afirmar que nao existe genero definido porque o texto e curto.",
+        "Dizer que suporte e finalidade nao interferem na identificacao."
       ],
       "correta": "Reconhecer que o texto se aproxima de Poema.",
-      "comentario": "A classificação correta exige observar finalidade, suporte e marcas linguistico-discursivas.",
+      "comentario": "A classificacao correta exige observar finalidade, suporte e marcas linguistico-discursivas.",
       "tempoEstimado": 50,
       "tags": [
         "poema",
         "erro-comum"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -5937,22 +5938,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Interpretação indireta",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um seção do leitor, aparece a formulacao \"Leitor comenta reportagem publicada na edição anterior.\". Qual leitura melhor justifica a escolha desse gênero textual?",
+      "enunciado": "Em um secao do leitor, aparece a formulacao \"Leitor comenta reportagem publicada na edicao anterior.\". Qual leitura melhor justifica a escolha desse genero textual?",
       "opcoes": [
-        "Porque o texto busca opinar e dialogar com um veículo ou assunto publicado.",
-        "Porque o texto não possui nenhuma função social definida.",
-        "Porque qualquer frase publicada pode pertencer a qualquer gênero.",
-        "Porque o gênero se define apenas pela quantidade de linhas."
+        "Porque o texto busca opinar e dialogar com um veiculo ou assunto publicado.",
+        "Porque o texto nao possui nenhuma funcao social definida.",
+        "Porque qualquer frase publicada pode pertencer a qualquer genero.",
+        "Porque o genero se define apenas pela quantidade de linhas."
       ],
-      "correta": "Porque o texto busca opinar e dialogar com um veículo ou assunto publicado.",
-      "comentario": "A identificação do gênero depende da função social que ele exerce no contexto.",
+      "correta": "Porque o texto busca opinar e dialogar com um veiculo ou assunto publicado.",
+      "comentario": "A identificacao do genero depende da funcao social que ele exerce no contexto.",
       "tempoEstimado": 50,
       "tags": [
         "carta-leitor",
@@ -5975,29 +5976,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia a análise: \"Como o trecho Peca divulga promoção com chamada direta ao consumidor. traz informação, ele só pode ser notícia\". Qual alternativa avalia melhor essa afirmação?",
+      "enunciado": "Leia a analise: \"Como o trecho Peca divulga promocao com chamada direta ao consumidor. traz informacao, ele so pode ser noticia\". Qual alternativa avalia melhor essa afirmacao?",
       "opcoes": [
-        "Ela está errada, porque informar não basta; o trecho se aproxima de Anúncio.",
-        "Ela está correta, porque todo texto informativo e notícia.",
-        "Ela está correta, porque qualquer texto publicado em site e notícia.",
-        "Ela está errada apenas se o texto tiver mais de um parágrafo."
+        "Ela esta errada, porque informar nao basta; o trecho se aproxima de Anuncio.",
+        "Ela esta correta, porque todo texto informativo e noticia.",
+        "Ela esta correta, porque qualquer texto publicado em site e noticia.",
+        "Ela esta errada apenas se o texto tiver mais de um paragrafo."
       ],
-      "correta": "Ela está errada, porque informar não basta; o trecho se aproxima de Anúncio.",
-      "comentario": "O erro comum está em reduzir a classificação a um único aspecto, ignorando finalidade e suporte.",
+      "correta": "Ela esta errada, porque informar nao basta; o trecho se aproxima de Anuncio.",
+      "comentario": "O erro comum esta em reduzir a classificacao a um unico aspecto, ignorando finalidade e suporte.",
       "tempoEstimado": 50,
       "tags": [
         "anuncio",
         "pegadinha"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -6013,22 +6014,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Equivalência de formas",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa preserva melhor o mesmo gênero textual sugerido por \"Personagens comentam notícia atual em tom satírico.\"?",
+      "enunciado": "Qual alternativa preserva melhor o mesmo genero textual sugerido por \"Personagens comentam noticia atual em tom saterico.\"?",
       "opcoes": [
         "Quadro usa exagero para criticar problema urbano.",
-        "Leitor comenta reportagem publicada na edição anterior.",
-        "Peca divulga promoção com chamada direta ao consumidor.",
-        "Personagem comenta situação escolar em poucos quadros."
+        "Leitor comenta reportagem publicada na edicao anterior.",
+        "Peca divulga promocao com chamada direta ao consumidor.",
+        "Personagem comenta situacao escolar em poucos quadros."
       ],
       "correta": "Quadro usa exagero para criticar problema urbano.",
-      "comentario": "A resposta correta mantem a mesma função social e as mesmas marcas do gênero.",
+      "comentario": "A resposta correta mantem a mesma funcao social e as mesmas marcas do genero.",
       "tempoEstimado": 55,
       "tags": [
         "charge",
@@ -6051,22 +6052,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Interpretação indireta",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia o microtexto: \"Durante a atividade, apareceu o trecho Historinha breve apresenta conflito simples e fechamento rapido.\". Nesse caso, o gênero se define principalmente por:",
+      "enunciado": "Leia o microtexto: \"Durante a atividade, apareceu o trecho Historinha breve apresenta conflito simples e fechamento rapido.\". Nesse caso, o genero se define principalmente por:",
       "opcoes": [
-        "sua finalidade social e seu modo de circulação",
+        "sua finalidade social e seu modo de circulacao",
         "o numero exato de palavras usadas",
-        "a presenca obrigatoria de uma única frase",
+        "a presenca obrigatoria de uma unica frase",
         "a ausencia completa de interlocutores"
       ],
-      "correta": "sua finalidade social e seu modo de circulação",
-      "comentario": "Gênero textual se identifica pela função social, pelo suporte e pelas marcas recorrentes.",
+      "correta": "sua finalidade social e seu modo de circulacao",
+      "comentario": "Genero textual se identifica pela funcao social, pelo suporte e pelas marcas recorrentes.",
       "tempoEstimado": 55,
       "tags": [
         "tirinha",
@@ -6089,29 +6090,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"Verbete descreve o significado e o uso de uma palavra.\", evitando um erro comum de classificação?",
+      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"Verbete descreve o significado e o uso de uma palavra.\", evitando um erro comum de classificacao?",
       "opcoes": [
         "Reconhecer que o texto se aproxima de Verbete.",
-        "Classificar automaticamente o trecho como Notícia apenas pelo assunto.",
-        "Afirmar que não existe gênero definido porque o texto é curto.",
-        "Dizer que suporte e finalidade não interferem na identificação."
+        "Classificar automaticamente o trecho como Noticia apenas pelo assunto.",
+        "Afirmar que nao existe genero definido porque o texto e curto.",
+        "Dizer que suporte e finalidade nao interferem na identificacao."
       ],
       "correta": "Reconhecer que o texto se aproxima de Verbete.",
-      "comentario": "A classificação correta exige observar finalidade, suporte e marcas linguistico-discursivas.",
+      "comentario": "A classificacao correta exige observar finalidade, suporte e marcas linguistico-discursivas.",
       "tempoEstimado": 50,
       "tags": [
         "verbete",
         "erro-comum"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -6127,22 +6128,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Interpretação indireta",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um jornal impresso, aparece a formulacao \"Escola do bairro inaugura nova biblioteca nesta segunda-feira.\". Qual leitura melhor justifica a escolha desse gênero textual?",
+      "enunciado": "Em um jornal impresso, aparece a formulacao \"Escola do bairro inaugura nova biblioteca nesta segunda-feira.\". Qual leitura melhor justifica a escolha desse genero textual?",
       "opcoes": [
         "Porque o texto busca informar o leitor sobre um acontecimento recente.",
-        "Porque o texto não possui nenhuma função social definida.",
-        "Porque qualquer frase publicada pode pertencer a qualquer gênero.",
-        "Porque o gênero se define apenas pela quantidade de linhas."
+        "Porque o texto nao possui nenhuma funcao social definida.",
+        "Porque qualquer frase publicada pode pertencer a qualquer genero.",
+        "Porque o genero se define apenas pela quantidade de linhas."
       ],
       "correta": "Porque o texto busca informar o leitor sobre um acontecimento recente.",
-      "comentario": "A identificação do gênero depende da função social que ele exerce no contexto.",
+      "comentario": "A identificacao do genero depende da funcao social que ele exerce no contexto.",
       "tempoEstimado": 50,
       "tags": [
         "noticia",
@@ -6165,29 +6166,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia a análise: \"Como o trecho Texto apresenta entrevistas sobre o uso do celular em sala de aula. traz informação, ele só pode ser notícia\". Qual alternativa avalia melhor essa afirmação?",
+      "enunciado": "Leia a analise: \"Como o trecho Texto apresenta entrevistas sobre o uso do celular em sala de aula. traz informacao, ele so pode ser noticia\". Qual alternativa avalia melhor essa afirmacao?",
       "opcoes": [
-        "Ela está errada, porque informar não basta; o trecho se aproxima de Reportagem.",
-        "Ela está correta, porque todo texto informativo e notícia.",
-        "Ela está correta, porque qualquer texto publicado em site e notícia.",
-        "Ela está errada apenas se o texto tiver mais de um parágrafo."
+        "Ela esta errada, porque informar nao basta; o trecho se aproxima de Reportagem.",
+        "Ela esta correta, porque todo texto informativo e noticia.",
+        "Ela esta correta, porque qualquer texto publicado em site e noticia.",
+        "Ela esta errada apenas se o texto tiver mais de um paragrafo."
       ],
-      "correta": "Ela está errada, porque informar não basta; o trecho se aproxima de Reportagem.",
-      "comentario": "O erro comum está em reduzir a classificação a um único aspecto, ignorando finalidade e suporte.",
+      "correta": "Ela esta errada, porque informar nao basta; o trecho se aproxima de Reportagem.",
+      "comentario": "O erro comum esta em reduzir a classificacao a um unico aspecto, ignorando finalidade e suporte.",
       "tempoEstimado": 50,
       "tags": [
         "reportagem",
         "pegadinha"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -6203,22 +6204,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Equivalência de formas",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa preserva melhor o mesmo gênero textual sugerido por \"Colunista avalia os efeitos do excesso de telas na rotina juvenil.\"?",
+      "enunciado": "Qual alternativa preserva melhor o mesmo genero textual sugerido por \"Colunista avalia os efeitos do excesso de telas na rotina juvenil.\"?",
       "opcoes": [
-        "Articulista crítica a falta de espaços culturais no bairro.",
-        "Leitor comenta reportagem publicada na edição anterior.",
-        "Peca divulga promoção com chamada direta ao consumidor.",
-        "Personagens comentam notícia atual em tom satírico."
+        "Articulista critica a falta de espacos culturais no bairro.",
+        "Leitor comenta reportagem publicada na edicao anterior.",
+        "Peca divulga promocao com chamada direta ao consumidor.",
+        "Personagens comentam noticia atual em tom saterico."
       ],
-      "correta": "Articulista crítica a falta de espaços culturais no bairro.",
-      "comentario": "A resposta correta mantem a mesma função social e as mesmas marcas do gênero.",
+      "correta": "Articulista critica a falta de espacos culturais no bairro.",
+      "comentario": "A resposta correta mantem a mesma funcao social e as mesmas marcas do genero.",
       "tempoEstimado": 55,
       "tags": [
         "artigo-opiniao",
@@ -6241,22 +6242,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Interpretação indireta",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia o microtexto: \"Durante a atividade, apareceu o trecho Narrativa breve mostra a rotina de uma fila de padaria.\". Nesse caso, o gênero se define principalmente por:",
+      "enunciado": "Leia o microtexto: \"Durante a atividade, apareceu o trecho Narrativa breve mostra a rotina de uma fila de padaria.\". Nesse caso, o genero se define principalmente por:",
       "opcoes": [
-        "sua finalidade social e seu modo de circulação",
+        "sua finalidade social e seu modo de circulacao",
         "o numero exato de palavras usadas",
-        "a presenca obrigatoria de uma única frase",
+        "a presenca obrigatoria de uma unica frase",
         "a ausencia completa de interlocutores"
       ],
-      "correta": "sua finalidade social e seu modo de circulação",
-      "comentario": "Gênero textual se identifica pela função social, pelo suporte e pelas marcas recorrentes.",
+      "correta": "sua finalidade social e seu modo de circulacao",
+      "comentario": "Genero textual se identifica pela funcao social, pelo suporte e pelas marcas recorrentes.",
       "tempoEstimado": 55,
       "tags": [
         "cronica",
@@ -6279,29 +6280,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"O texto busca emocionar pela escolha expressiva das palavras.\", evitando um erro comum de classificação?",
+      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"O texto busca emocionar pela escolha expressiva das palavras.\", evitando um erro comum de classificacao?",
       "opcoes": [
         "Reconhecer que o texto se aproxima de Poema.",
         "Classificar automaticamente o trecho como Verbete apenas pelo assunto.",
-        "Afirmar que não existe gênero definido porque o texto é curto.",
-        "Dizer que suporte e finalidade não interferem na identificação."
+        "Afirmar que nao existe genero definido porque o texto e curto.",
+        "Dizer que suporte e finalidade nao interferem na identificacao."
       ],
       "correta": "Reconhecer que o texto se aproxima de Poema.",
-      "comentario": "A classificação correta exige observar finalidade, suporte e marcas linguistico-discursivas.",
+      "comentario": "A classificacao correta exige observar finalidade, suporte e marcas linguistico-discursivas.",
       "tempoEstimado": 50,
       "tags": [
         "poema",
         "erro-comum"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -6317,22 +6318,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Interpretação indireta",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um seção do leitor, aparece a formulacao \"Leitor comenta reportagem publicada na edição anterior.\". Qual leitura melhor justifica a escolha desse gênero textual?",
+      "enunciado": "Em um secao do leitor, aparece a formulacao \"Leitor comenta reportagem publicada na edicao anterior.\". Qual leitura melhor justifica a escolha desse genero textual?",
       "opcoes": [
-        "Porque o texto busca opinar e dialogar com um veículo ou assunto publicado.",
-        "Porque o texto não possui nenhuma função social definida.",
-        "Porque qualquer frase publicada pode pertencer a qualquer gênero.",
-        "Porque o gênero se define apenas pela quantidade de linhas."
+        "Porque o texto busca opinar e dialogar com um veiculo ou assunto publicado.",
+        "Porque o texto nao possui nenhuma funcao social definida.",
+        "Porque qualquer frase publicada pode pertencer a qualquer genero.",
+        "Porque o genero se define apenas pela quantidade de linhas."
       ],
-      "correta": "Porque o texto busca opinar e dialogar com um veículo ou assunto publicado.",
-      "comentario": "A identificação do gênero depende da função social que ele exerce no contexto.",
+      "correta": "Porque o texto busca opinar e dialogar com um veiculo ou assunto publicado.",
+      "comentario": "A identificacao do genero depende da funcao social que ele exerce no contexto.",
       "tempoEstimado": 50,
       "tags": [
         "carta-leitor",
@@ -6355,29 +6356,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia a análise: \"Como o trecho Peca divulga promoção com chamada direta ao consumidor. traz informação, ele só pode ser notícia\". Qual alternativa avalia melhor essa afirmação?",
+      "enunciado": "Leia a analise: \"Como o trecho Peca divulga promocao com chamada direta ao consumidor. traz informacao, ele so pode ser noticia\". Qual alternativa avalia melhor essa afirmacao?",
       "opcoes": [
-        "Ela está errada, porque informar não basta; o trecho se aproxima de Anúncio.",
-        "Ela está correta, porque todo texto informativo e notícia.",
-        "Ela está correta, porque qualquer texto publicado em site e notícia.",
-        "Ela está errada apenas se o texto tiver mais de um parágrafo."
+        "Ela esta errada, porque informar nao basta; o trecho se aproxima de Anuncio.",
+        "Ela esta correta, porque todo texto informativo e noticia.",
+        "Ela esta correta, porque qualquer texto publicado em site e noticia.",
+        "Ela esta errada apenas se o texto tiver mais de um paragrafo."
       ],
-      "correta": "Ela está errada, porque informar não basta; o trecho se aproxima de Anúncio.",
-      "comentario": "O erro comum está em reduzir a classificação a um único aspecto, ignorando finalidade e suporte.",
+      "correta": "Ela esta errada, porque informar nao basta; o trecho se aproxima de Anuncio.",
+      "comentario": "O erro comum esta em reduzir a classificacao a um unico aspecto, ignorando finalidade e suporte.",
       "tempoEstimado": 50,
       "tags": [
         "anuncio",
         "pegadinha"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -6393,22 +6394,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Equivalência de formas",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa preserva melhor o mesmo gênero textual sugerido por \"Personagens comentam notícia atual em tom satírico.\"?",
+      "enunciado": "Qual alternativa preserva melhor o mesmo genero textual sugerido por \"Personagens comentam noticia atual em tom saterico.\"?",
       "opcoes": [
         "Quadro usa exagero para criticar problema urbano.",
-        "Leitor comenta reportagem publicada na edição anterior.",
-        "Peca divulga promoção com chamada direta ao consumidor.",
-        "Personagem comenta situação escolar em poucos quadros."
+        "Leitor comenta reportagem publicada na edicao anterior.",
+        "Peca divulga promocao com chamada direta ao consumidor.",
+        "Personagem comenta situacao escolar em poucos quadros."
       ],
       "correta": "Quadro usa exagero para criticar problema urbano.",
-      "comentario": "A resposta correta mantem a mesma função social e as mesmas marcas do gênero.",
+      "comentario": "A resposta correta mantem a mesma funcao social e as mesmas marcas do genero.",
       "tempoEstimado": 55,
       "tags": [
         "charge",
@@ -6431,22 +6432,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Interpretação indireta",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia o microtexto: \"Durante a atividade, apareceu o trecho Historinha breve apresenta conflito simples e fechamento rapido.\". Nesse caso, o gênero se define principalmente por:",
+      "enunciado": "Leia o microtexto: \"Durante a atividade, apareceu o trecho Historinha breve apresenta conflito simples e fechamento rapido.\". Nesse caso, o genero se define principalmente por:",
       "opcoes": [
-        "sua finalidade social e seu modo de circulação",
+        "sua finalidade social e seu modo de circulacao",
         "o numero exato de palavras usadas",
-        "a presenca obrigatoria de uma única frase",
+        "a presenca obrigatoria de uma unica frase",
         "a ausencia completa de interlocutores"
       ],
-      "correta": "sua finalidade social e seu modo de circulação",
-      "comentario": "Gênero textual se identifica pela função social, pelo suporte e pelas marcas recorrentes.",
+      "correta": "sua finalidade social e seu modo de circulacao",
+      "comentario": "Genero textual se identifica pela funcao social, pelo suporte e pelas marcas recorrentes.",
       "tempoEstimado": 55,
       "tags": [
         "tirinha",
@@ -6469,29 +6470,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"Verbete descreve o significado e o uso de uma palavra.\", evitando um erro comum de classificação?",
+      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"Verbete descreve o significado e o uso de uma palavra.\", evitando um erro comum de classificacao?",
       "opcoes": [
         "Reconhecer que o texto se aproxima de Verbete.",
-        "Classificar automaticamente o trecho como Notícia apenas pelo assunto.",
-        "Afirmar que não existe gênero definido porque o texto é curto.",
-        "Dizer que suporte e finalidade não interferem na identificação."
+        "Classificar automaticamente o trecho como Noticia apenas pelo assunto.",
+        "Afirmar que nao existe genero definido porque o texto e curto.",
+        "Dizer que suporte e finalidade nao interferem na identificacao."
       ],
       "correta": "Reconhecer que o texto se aproxima de Verbete.",
-      "comentario": "A classificação correta exige observar finalidade, suporte e marcas linguistico-discursivas.",
+      "comentario": "A classificacao correta exige observar finalidade, suporte e marcas linguistico-discursivas.",
       "tempoEstimado": 50,
       "tags": [
         "verbete",
         "erro-comum"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -6507,22 +6508,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Interpretação indireta",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um jornal impresso, aparece a formulacao \"Escola do bairro inaugura nova biblioteca nesta segunda-feira.\". Qual leitura melhor justifica a escolha desse gênero textual?",
+      "enunciado": "Em um jornal impresso, aparece a formulacao \"Escola do bairro inaugura nova biblioteca nesta segunda-feira.\". Qual leitura melhor justifica a escolha desse genero textual?",
       "opcoes": [
         "Porque o texto busca informar o leitor sobre um acontecimento recente.",
-        "Porque o texto não possui nenhuma função social definida.",
-        "Porque qualquer frase publicada pode pertencer a qualquer gênero.",
-        "Porque o gênero se define apenas pela quantidade de linhas."
+        "Porque o texto nao possui nenhuma funcao social definida.",
+        "Porque qualquer frase publicada pode pertencer a qualquer genero.",
+        "Porque o genero se define apenas pela quantidade de linhas."
       ],
       "correta": "Porque o texto busca informar o leitor sobre um acontecimento recente.",
-      "comentario": "A identificação do gênero depende da função social que ele exerce no contexto.",
+      "comentario": "A identificacao do genero depende da funcao social que ele exerce no contexto.",
       "tempoEstimado": 50,
       "tags": [
         "noticia",
@@ -6545,29 +6546,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia a análise: \"Como o trecho Texto apresenta entrevistas sobre o uso do celular em sala de aula. traz informação, ele só pode ser notícia\". Qual alternativa avalia melhor essa afirmação?",
+      "enunciado": "Leia a analise: \"Como o trecho Texto apresenta entrevistas sobre o uso do celular em sala de aula. traz informacao, ele so pode ser noticia\". Qual alternativa avalia melhor essa afirmacao?",
       "opcoes": [
-        "Ela está errada, porque informar não basta; o trecho se aproxima de Reportagem.",
-        "Ela está correta, porque todo texto informativo e notícia.",
-        "Ela está correta, porque qualquer texto publicado em site e notícia.",
-        "Ela está errada apenas se o texto tiver mais de um parágrafo."
+        "Ela esta errada, porque informar nao basta; o trecho se aproxima de Reportagem.",
+        "Ela esta correta, porque todo texto informativo e noticia.",
+        "Ela esta correta, porque qualquer texto publicado em site e noticia.",
+        "Ela esta errada apenas se o texto tiver mais de um paragrafo."
       ],
-      "correta": "Ela está errada, porque informar não basta; o trecho se aproxima de Reportagem.",
-      "comentario": "O erro comum está em reduzir a classificação a um único aspecto, ignorando finalidade e suporte.",
+      "correta": "Ela esta errada, porque informar nao basta; o trecho se aproxima de Reportagem.",
+      "comentario": "O erro comum esta em reduzir a classificacao a um unico aspecto, ignorando finalidade e suporte.",
       "tempoEstimado": 50,
       "tags": [
         "reportagem",
         "pegadinha"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -6583,22 +6584,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Equivalência de formas",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa preserva melhor o mesmo gênero textual sugerido por \"Colunista avalia os efeitos do excesso de telas na rotina juvenil.\"?",
+      "enunciado": "Qual alternativa preserva melhor o mesmo genero textual sugerido por \"Colunista avalia os efeitos do excesso de telas na rotina juvenil.\"?",
       "opcoes": [
-        "Articulista crítica a falta de espaços culturais no bairro.",
-        "Leitor comenta reportagem publicada na edição anterior.",
-        "Peca divulga promoção com chamada direta ao consumidor.",
-        "Personagens comentam notícia atual em tom satírico."
+        "Articulista critica a falta de espacos culturais no bairro.",
+        "Leitor comenta reportagem publicada na edicao anterior.",
+        "Peca divulga promocao com chamada direta ao consumidor.",
+        "Personagens comentam noticia atual em tom saterico."
       ],
-      "correta": "Articulista crítica a falta de espaços culturais no bairro.",
-      "comentario": "A resposta correta mantem a mesma função social e as mesmas marcas do gênero.",
+      "correta": "Articulista critica a falta de espacos culturais no bairro.",
+      "comentario": "A resposta correta mantem a mesma funcao social e as mesmas marcas do genero.",
       "tempoEstimado": 55,
       "tags": [
         "artigo-opiniao",
@@ -6621,22 +6622,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Interpretação indireta",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia o microtexto: \"Durante a atividade, apareceu o trecho Narrativa breve mostra a rotina de uma fila de padaria.\". Nesse caso, o gênero se define principalmente por:",
+      "enunciado": "Leia o microtexto: \"Durante a atividade, apareceu o trecho Narrativa breve mostra a rotina de uma fila de padaria.\". Nesse caso, o genero se define principalmente por:",
       "opcoes": [
-        "sua finalidade social e seu modo de circulação",
+        "sua finalidade social e seu modo de circulacao",
         "o numero exato de palavras usadas",
-        "a presenca obrigatoria de uma única frase",
+        "a presenca obrigatoria de uma unica frase",
         "a ausencia completa de interlocutores"
       ],
-      "correta": "sua finalidade social e seu modo de circulação",
-      "comentario": "Gênero textual se identifica pela função social, pelo suporte e pelas marcas recorrentes.",
+      "correta": "sua finalidade social e seu modo de circulacao",
+      "comentario": "Genero textual se identifica pela funcao social, pelo suporte e pelas marcas recorrentes.",
       "tempoEstimado": 55,
       "tags": [
         "cronica",
@@ -6659,29 +6660,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"O texto busca emocionar pela escolha expressiva das palavras.\", evitando um erro comum de classificação?",
+      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"O texto busca emocionar pela escolha expressiva das palavras.\", evitando um erro comum de classificacao?",
       "opcoes": [
         "Reconhecer que o texto se aproxima de Poema.",
         "Classificar automaticamente o trecho como Verbete apenas pelo assunto.",
-        "Afirmar que não existe gênero definido porque o texto é curto.",
-        "Dizer que suporte e finalidade não interferem na identificação."
+        "Afirmar que nao existe genero definido porque o texto e curto.",
+        "Dizer que suporte e finalidade nao interferem na identificacao."
       ],
       "correta": "Reconhecer que o texto se aproxima de Poema.",
-      "comentario": "A classificação correta exige observar finalidade, suporte e marcas linguistico-discursivas.",
+      "comentario": "A classificacao correta exige observar finalidade, suporte e marcas linguistico-discursivas.",
       "tempoEstimado": 50,
       "tags": [
         "poema",
         "erro-comum"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -6697,22 +6698,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Interpretação indireta",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um seção do leitor, aparece a formulacao \"Leitor comenta reportagem publicada na edição anterior.\". Qual leitura melhor justifica a escolha desse gênero textual?",
+      "enunciado": "Em um secao do leitor, aparece a formulacao \"Leitor comenta reportagem publicada na edicao anterior.\". Qual leitura melhor justifica a escolha desse genero textual?",
       "opcoes": [
-        "Porque o texto busca opinar e dialogar com um veículo ou assunto publicado.",
-        "Porque o texto não possui nenhuma função social definida.",
-        "Porque qualquer frase publicada pode pertencer a qualquer gênero.",
-        "Porque o gênero se define apenas pela quantidade de linhas."
+        "Porque o texto busca opinar e dialogar com um veiculo ou assunto publicado.",
+        "Porque o texto nao possui nenhuma funcao social definida.",
+        "Porque qualquer frase publicada pode pertencer a qualquer genero.",
+        "Porque o genero se define apenas pela quantidade de linhas."
       ],
-      "correta": "Porque o texto busca opinar e dialogar com um veículo ou assunto publicado.",
-      "comentario": "A identificação do gênero depende da função social que ele exerce no contexto.",
+      "correta": "Porque o texto busca opinar e dialogar com um veiculo ou assunto publicado.",
+      "comentario": "A identificacao do genero depende da funcao social que ele exerce no contexto.",
       "tempoEstimado": 50,
       "tags": [
         "carta-leitor",
@@ -6735,29 +6736,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia a análise: \"Como o trecho Peca divulga promoção com chamada direta ao consumidor. traz informação, ele só pode ser notícia\". Qual alternativa avalia melhor essa afirmação?",
+      "enunciado": "Leia a analise: \"Como o trecho Peca divulga promocao com chamada direta ao consumidor. traz informacao, ele so pode ser noticia\". Qual alternativa avalia melhor essa afirmacao?",
       "opcoes": [
-        "Ela está errada, porque informar não basta; o trecho se aproxima de Anúncio.",
-        "Ela está correta, porque todo texto informativo e notícia.",
-        "Ela está correta, porque qualquer texto publicado em site e notícia.",
-        "Ela está errada apenas se o texto tiver mais de um parágrafo."
+        "Ela esta errada, porque informar nao basta; o trecho se aproxima de Anuncio.",
+        "Ela esta correta, porque todo texto informativo e noticia.",
+        "Ela esta correta, porque qualquer texto publicado em site e noticia.",
+        "Ela esta errada apenas se o texto tiver mais de um paragrafo."
       ],
-      "correta": "Ela está errada, porque informar não basta; o trecho se aproxima de Anúncio.",
-      "comentario": "O erro comum está em reduzir a classificação a um único aspecto, ignorando finalidade e suporte.",
+      "correta": "Ela esta errada, porque informar nao basta; o trecho se aproxima de Anuncio.",
+      "comentario": "O erro comum esta em reduzir a classificacao a um unico aspecto, ignorando finalidade e suporte.",
       "tempoEstimado": 50,
       "tags": [
         "anuncio",
         "pegadinha"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -6773,22 +6774,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Equivalência de formas",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa preserva melhor o mesmo gênero textual sugerido por \"Personagens comentam notícia atual em tom satírico.\"?",
+      "enunciado": "Qual alternativa preserva melhor o mesmo genero textual sugerido por \"Personagens comentam noticia atual em tom saterico.\"?",
       "opcoes": [
         "Quadro usa exagero para criticar problema urbano.",
-        "Leitor comenta reportagem publicada na edição anterior.",
-        "Peca divulga promoção com chamada direta ao consumidor.",
-        "Personagem comenta situação escolar em poucos quadros."
+        "Leitor comenta reportagem publicada na edicao anterior.",
+        "Peca divulga promocao com chamada direta ao consumidor.",
+        "Personagem comenta situacao escolar em poucos quadros."
       ],
       "correta": "Quadro usa exagero para criticar problema urbano.",
-      "comentario": "A resposta correta mantem a mesma função social e as mesmas marcas do gênero.",
+      "comentario": "A resposta correta mantem a mesma funcao social e as mesmas marcas do genero.",
       "tempoEstimado": 55,
       "tags": [
         "charge",
@@ -6811,22 +6812,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Interpretação indireta",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia o microtexto: \"Durante a atividade, apareceu o trecho Historinha breve apresenta conflito simples e fechamento rapido.\". Nesse caso, o gênero se define principalmente por:",
+      "enunciado": "Leia o microtexto: \"Durante a atividade, apareceu o trecho Historinha breve apresenta conflito simples e fechamento rapido.\". Nesse caso, o genero se define principalmente por:",
       "opcoes": [
-        "sua finalidade social e seu modo de circulação",
+        "sua finalidade social e seu modo de circulacao",
         "o numero exato de palavras usadas",
-        "a presenca obrigatoria de uma única frase",
+        "a presenca obrigatoria de uma unica frase",
         "a ausencia completa de interlocutores"
       ],
-      "correta": "sua finalidade social e seu modo de circulação",
-      "comentario": "Gênero textual se identifica pela função social, pelo suporte e pelas marcas recorrentes.",
+      "correta": "sua finalidade social e seu modo de circulacao",
+      "comentario": "Genero textual se identifica pela funcao social, pelo suporte e pelas marcas recorrentes.",
       "tempoEstimado": 55,
       "tags": [
         "tirinha",
@@ -6849,29 +6850,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"Verbete descreve o significado e o uso de uma palavra.\", evitando um erro comum de classificação?",
+      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"Verbete descreve o significado e o uso de uma palavra.\", evitando um erro comum de classificacao?",
       "opcoes": [
         "Reconhecer que o texto se aproxima de Verbete.",
-        "Classificar automaticamente o trecho como Notícia apenas pelo assunto.",
-        "Afirmar que não existe gênero definido porque o texto é curto.",
-        "Dizer que suporte e finalidade não interferem na identificação."
+        "Classificar automaticamente o trecho como Noticia apenas pelo assunto.",
+        "Afirmar que nao existe genero definido porque o texto e curto.",
+        "Dizer que suporte e finalidade nao interferem na identificacao."
       ],
       "correta": "Reconhecer que o texto se aproxima de Verbete.",
-      "comentario": "A classificação correta exige observar finalidade, suporte e marcas linguistico-discursivas.",
+      "comentario": "A classificacao correta exige observar finalidade, suporte e marcas linguistico-discursivas.",
       "tempoEstimado": 50,
       "tags": [
         "verbete",
         "erro-comum"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -6887,22 +6888,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Interpretação indireta",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um jornal impresso, aparece a formulacao \"Escola do bairro inaugura nova biblioteca nesta segunda-feira.\". Qual leitura melhor justifica a escolha desse gênero textual?",
+      "enunciado": "Em um jornal impresso, aparece a formulacao \"Escola do bairro inaugura nova biblioteca nesta segunda-feira.\". Qual leitura melhor justifica a escolha desse genero textual?",
       "opcoes": [
         "Porque o texto busca informar o leitor sobre um acontecimento recente.",
-        "Porque o texto não possui nenhuma função social definida.",
-        "Porque qualquer frase publicada pode pertencer a qualquer gênero.",
-        "Porque o gênero se define apenas pela quantidade de linhas."
+        "Porque o texto nao possui nenhuma funcao social definida.",
+        "Porque qualquer frase publicada pode pertencer a qualquer genero.",
+        "Porque o genero se define apenas pela quantidade de linhas."
       ],
       "correta": "Porque o texto busca informar o leitor sobre um acontecimento recente.",
-      "comentario": "A identificação do gênero depende da função social que ele exerce no contexto.",
+      "comentario": "A identificacao do genero depende da funcao social que ele exerce no contexto.",
       "tempoEstimado": 50,
       "tags": [
         "noticia",
@@ -6925,29 +6926,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia a análise: \"Como o trecho Texto apresenta entrevistas sobre o uso do celular em sala de aula. traz informação, ele só pode ser notícia\". Qual alternativa avalia melhor essa afirmação?",
+      "enunciado": "Leia a analise: \"Como o trecho Texto apresenta entrevistas sobre o uso do celular em sala de aula. traz informacao, ele so pode ser noticia\". Qual alternativa avalia melhor essa afirmacao?",
       "opcoes": [
-        "Ela está errada, porque informar não basta; o trecho se aproxima de Reportagem.",
-        "Ela está correta, porque todo texto informativo e notícia.",
-        "Ela está correta, porque qualquer texto publicado em site e notícia.",
-        "Ela está errada apenas se o texto tiver mais de um parágrafo."
+        "Ela esta errada, porque informar nao basta; o trecho se aproxima de Reportagem.",
+        "Ela esta correta, porque todo texto informativo e noticia.",
+        "Ela esta correta, porque qualquer texto publicado em site e noticia.",
+        "Ela esta errada apenas se o texto tiver mais de um paragrafo."
       ],
-      "correta": "Ela está errada, porque informar não basta; o trecho se aproxima de Reportagem.",
-      "comentario": "O erro comum está em reduzir a classificação a um único aspecto, ignorando finalidade e suporte.",
+      "correta": "Ela esta errada, porque informar nao basta; o trecho se aproxima de Reportagem.",
+      "comentario": "O erro comum esta em reduzir a classificacao a um unico aspecto, ignorando finalidade e suporte.",
       "tempoEstimado": 50,
       "tags": [
         "reportagem",
         "pegadinha"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -6963,22 +6964,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Equivalência de formas",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa preserva melhor o mesmo gênero textual sugerido por \"Colunista avalia os efeitos do excesso de telas na rotina juvenil.\"?",
+      "enunciado": "Qual alternativa preserva melhor o mesmo genero textual sugerido por \"Colunista avalia os efeitos do excesso de telas na rotina juvenil.\"?",
       "opcoes": [
-        "Articulista crítica a falta de espaços culturais no bairro.",
-        "Leitor comenta reportagem publicada na edição anterior.",
-        "Peca divulga promoção com chamada direta ao consumidor.",
-        "Personagens comentam notícia atual em tom satírico."
+        "Articulista critica a falta de espacos culturais no bairro.",
+        "Leitor comenta reportagem publicada na edicao anterior.",
+        "Peca divulga promocao com chamada direta ao consumidor.",
+        "Personagens comentam noticia atual em tom saterico."
       ],
-      "correta": "Articulista crítica a falta de espaços culturais no bairro.",
-      "comentario": "A resposta correta mantem a mesma função social e as mesmas marcas do gênero.",
+      "correta": "Articulista critica a falta de espacos culturais no bairro.",
+      "comentario": "A resposta correta mantem a mesma funcao social e as mesmas marcas do genero.",
       "tempoEstimado": 55,
       "tags": [
         "artigo-opiniao",
@@ -7001,22 +7002,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Interpretação indireta",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia o microtexto: \"Durante a atividade, apareceu o trecho Narrativa breve mostra a rotina de uma fila de padaria.\". Nesse caso, o gênero se define principalmente por:",
+      "enunciado": "Leia o microtexto: \"Durante a atividade, apareceu o trecho Narrativa breve mostra a rotina de uma fila de padaria.\". Nesse caso, o genero se define principalmente por:",
       "opcoes": [
-        "sua finalidade social e seu modo de circulação",
+        "sua finalidade social e seu modo de circulacao",
         "o numero exato de palavras usadas",
-        "a presenca obrigatoria de uma única frase",
+        "a presenca obrigatoria de uma unica frase",
         "a ausencia completa de interlocutores"
       ],
-      "correta": "sua finalidade social e seu modo de circulação",
-      "comentario": "Gênero textual se identifica pela função social, pelo suporte e pelas marcas recorrentes.",
+      "correta": "sua finalidade social e seu modo de circulacao",
+      "comentario": "Genero textual se identifica pela funcao social, pelo suporte e pelas marcas recorrentes.",
       "tempoEstimado": 55,
       "tags": [
         "cronica",
@@ -7039,29 +7040,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"O texto busca emocionar pela escolha expressiva das palavras.\", evitando um erro comum de classificação?",
+      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"O texto busca emocionar pela escolha expressiva das palavras.\", evitando um erro comum de classificacao?",
       "opcoes": [
         "Reconhecer que o texto se aproxima de Poema.",
         "Classificar automaticamente o trecho como Verbete apenas pelo assunto.",
-        "Afirmar que não existe gênero definido porque o texto é curto.",
-        "Dizer que suporte e finalidade não interferem na identificação."
+        "Afirmar que nao existe genero definido porque o texto e curto.",
+        "Dizer que suporte e finalidade nao interferem na identificacao."
       ],
       "correta": "Reconhecer que o texto se aproxima de Poema.",
-      "comentario": "A classificação correta exige observar finalidade, suporte e marcas linguistico-discursivas.",
+      "comentario": "A classificacao correta exige observar finalidade, suporte e marcas linguistico-discursivas.",
       "tempoEstimado": 50,
       "tags": [
         "poema",
         "erro-comum"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -7077,22 +7078,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Interpretação indireta",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um seção do leitor, aparece a formulacao \"Leitor comenta reportagem publicada na edição anterior.\". Qual leitura melhor justifica a escolha desse gênero textual?",
+      "enunciado": "Em um secao do leitor, aparece a formulacao \"Leitor comenta reportagem publicada na edicao anterior.\". Qual leitura melhor justifica a escolha desse genero textual?",
       "opcoes": [
-        "Porque o texto busca opinar e dialogar com um veículo ou assunto publicado.",
-        "Porque o texto não possui nenhuma função social definida.",
-        "Porque qualquer frase publicada pode pertencer a qualquer gênero.",
-        "Porque o gênero se define apenas pela quantidade de linhas."
+        "Porque o texto busca opinar e dialogar com um veiculo ou assunto publicado.",
+        "Porque o texto nao possui nenhuma funcao social definida.",
+        "Porque qualquer frase publicada pode pertencer a qualquer genero.",
+        "Porque o genero se define apenas pela quantidade de linhas."
       ],
-      "correta": "Porque o texto busca opinar e dialogar com um veículo ou assunto publicado.",
-      "comentario": "A identificação do gênero depende da função social que ele exerce no contexto.",
+      "correta": "Porque o texto busca opinar e dialogar com um veiculo ou assunto publicado.",
+      "comentario": "A identificacao do genero depende da funcao social que ele exerce no contexto.",
       "tempoEstimado": 50,
       "tags": [
         "carta-leitor",
@@ -7115,29 +7116,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia a análise: \"Como o trecho Peca divulga promoção com chamada direta ao consumidor. traz informação, ele só pode ser notícia\". Qual alternativa avalia melhor essa afirmação?",
+      "enunciado": "Leia a analise: \"Como o trecho Peca divulga promocao com chamada direta ao consumidor. traz informacao, ele so pode ser noticia\". Qual alternativa avalia melhor essa afirmacao?",
       "opcoes": [
-        "Ela está errada, porque informar não basta; o trecho se aproxima de Anúncio.",
-        "Ela está correta, porque todo texto informativo e notícia.",
-        "Ela está correta, porque qualquer texto publicado em site e notícia.",
-        "Ela está errada apenas se o texto tiver mais de um parágrafo."
+        "Ela esta errada, porque informar nao basta; o trecho se aproxima de Anuncio.",
+        "Ela esta correta, porque todo texto informativo e noticia.",
+        "Ela esta correta, porque qualquer texto publicado em site e noticia.",
+        "Ela esta errada apenas se o texto tiver mais de um paragrafo."
       ],
-      "correta": "Ela está errada, porque informar não basta; o trecho se aproxima de Anúncio.",
-      "comentario": "O erro comum está em reduzir a classificação a um único aspecto, ignorando finalidade e suporte.",
+      "correta": "Ela esta errada, porque informar nao basta; o trecho se aproxima de Anuncio.",
+      "comentario": "O erro comum esta em reduzir a classificacao a um unico aspecto, ignorando finalidade e suporte.",
       "tempoEstimado": 50,
       "tags": [
         "anuncio",
         "pegadinha"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -7153,22 +7154,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Equivalência de formas",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa preserva melhor o mesmo gênero textual sugerido por \"Personagens comentam notícia atual em tom satírico.\"?",
+      "enunciado": "Qual alternativa preserva melhor o mesmo genero textual sugerido por \"Personagens comentam noticia atual em tom saterico.\"?",
       "opcoes": [
         "Quadro usa exagero para criticar problema urbano.",
-        "Leitor comenta reportagem publicada na edição anterior.",
-        "Peca divulga promoção com chamada direta ao consumidor.",
-        "Personagem comenta situação escolar em poucos quadros."
+        "Leitor comenta reportagem publicada na edicao anterior.",
+        "Peca divulga promocao com chamada direta ao consumidor.",
+        "Personagem comenta situacao escolar em poucos quadros."
       ],
       "correta": "Quadro usa exagero para criticar problema urbano.",
-      "comentario": "A resposta correta mantem a mesma função social e as mesmas marcas do gênero.",
+      "comentario": "A resposta correta mantem a mesma funcao social e as mesmas marcas do genero.",
       "tempoEstimado": 55,
       "tags": [
         "charge",
@@ -7191,22 +7192,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Interpretação indireta",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia o microtexto: \"Durante a atividade, apareceu o trecho Historinha breve apresenta conflito simples e fechamento rapido.\". Nesse caso, o gênero se define principalmente por:",
+      "enunciado": "Leia o microtexto: \"Durante a atividade, apareceu o trecho Historinha breve apresenta conflito simples e fechamento rapido.\". Nesse caso, o genero se define principalmente por:",
       "opcoes": [
-        "sua finalidade social e seu modo de circulação",
+        "sua finalidade social e seu modo de circulacao",
         "o numero exato de palavras usadas",
-        "a presenca obrigatoria de uma única frase",
+        "a presenca obrigatoria de uma unica frase",
         "a ausencia completa de interlocutores"
       ],
-      "correta": "sua finalidade social e seu modo de circulação",
-      "comentario": "Gênero textual se identifica pela função social, pelo suporte e pelas marcas recorrentes.",
+      "correta": "sua finalidade social e seu modo de circulacao",
+      "comentario": "Genero textual se identifica pela funcao social, pelo suporte e pelas marcas recorrentes.",
       "tempoEstimado": 55,
       "tags": [
         "tirinha",
@@ -7229,29 +7230,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"Verbete descreve o significado e o uso de uma palavra.\", evitando um erro comum de classificação?",
+      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"Verbete descreve o significado e o uso de uma palavra.\", evitando um erro comum de classificacao?",
       "opcoes": [
         "Reconhecer que o texto se aproxima de Verbete.",
-        "Classificar automaticamente o trecho como Notícia apenas pelo assunto.",
-        "Afirmar que não existe gênero definido porque o texto é curto.",
-        "Dizer que suporte e finalidade não interferem na identificação."
+        "Classificar automaticamente o trecho como Noticia apenas pelo assunto.",
+        "Afirmar que nao existe genero definido porque o texto e curto.",
+        "Dizer que suporte e finalidade nao interferem na identificacao."
       ],
       "correta": "Reconhecer que o texto se aproxima de Verbete.",
-      "comentario": "A classificação correta exige observar finalidade, suporte e marcas linguistico-discursivas.",
+      "comentario": "A classificacao correta exige observar finalidade, suporte e marcas linguistico-discursivas.",
       "tempoEstimado": 50,
       "tags": [
         "verbete",
         "erro-comum"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -7267,22 +7268,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Interpretação indireta",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um jornal impresso, aparece a formulacao \"Escola do bairro inaugura nova biblioteca nesta segunda-feira.\". Qual leitura melhor justifica a escolha desse gênero textual?",
+      "enunciado": "Em um jornal impresso, aparece a formulacao \"Escola do bairro inaugura nova biblioteca nesta segunda-feira.\". Qual leitura melhor justifica a escolha desse genero textual?",
       "opcoes": [
         "Porque o texto busca informar o leitor sobre um acontecimento recente.",
-        "Porque o texto não possui nenhuma função social definida.",
-        "Porque qualquer frase publicada pode pertencer a qualquer gênero.",
-        "Porque o gênero se define apenas pela quantidade de linhas."
+        "Porque o texto nao possui nenhuma funcao social definida.",
+        "Porque qualquer frase publicada pode pertencer a qualquer genero.",
+        "Porque o genero se define apenas pela quantidade de linhas."
       ],
       "correta": "Porque o texto busca informar o leitor sobre um acontecimento recente.",
-      "comentario": "A identificação do gênero depende da função social que ele exerce no contexto.",
+      "comentario": "A identificacao do genero depende da funcao social que ele exerce no contexto.",
       "tempoEstimado": 50,
       "tags": [
         "noticia",
@@ -7305,29 +7306,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia a análise: \"Como o trecho Texto apresenta entrevistas sobre o uso do celular em sala de aula. traz informação, ele só pode ser notícia\". Qual alternativa avalia melhor essa afirmação?",
+      "enunciado": "Leia a analise: \"Como o trecho Texto apresenta entrevistas sobre o uso do celular em sala de aula. traz informacao, ele so pode ser noticia\". Qual alternativa avalia melhor essa afirmacao?",
       "opcoes": [
-        "Ela está errada, porque informar não basta; o trecho se aproxima de Reportagem.",
-        "Ela está correta, porque todo texto informativo e notícia.",
-        "Ela está correta, porque qualquer texto publicado em site e notícia.",
-        "Ela está errada apenas se o texto tiver mais de um parágrafo."
+        "Ela esta errada, porque informar nao basta; o trecho se aproxima de Reportagem.",
+        "Ela esta correta, porque todo texto informativo e noticia.",
+        "Ela esta correta, porque qualquer texto publicado em site e noticia.",
+        "Ela esta errada apenas se o texto tiver mais de um paragrafo."
       ],
-      "correta": "Ela está errada, porque informar não basta; o trecho se aproxima de Reportagem.",
-      "comentario": "O erro comum está em reduzir a classificação a um único aspecto, ignorando finalidade e suporte.",
+      "correta": "Ela esta errada, porque informar nao basta; o trecho se aproxima de Reportagem.",
+      "comentario": "O erro comum esta em reduzir a classificacao a um unico aspecto, ignorando finalidade e suporte.",
       "tempoEstimado": 50,
       "tags": [
         "reportagem",
         "pegadinha"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -7343,22 +7344,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Equivalência de formas",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa preserva melhor o mesmo gênero textual sugerido por \"Colunista avalia os efeitos do excesso de telas na rotina juvenil.\"?",
+      "enunciado": "Qual alternativa preserva melhor o mesmo genero textual sugerido por \"Colunista avalia os efeitos do excesso de telas na rotina juvenil.\"?",
       "opcoes": [
-        "Articulista crítica a falta de espaços culturais no bairro.",
-        "Leitor comenta reportagem publicada na edição anterior.",
-        "Peca divulga promoção com chamada direta ao consumidor.",
-        "Personagens comentam notícia atual em tom satírico."
+        "Articulista critica a falta de espacos culturais no bairro.",
+        "Leitor comenta reportagem publicada na edicao anterior.",
+        "Peca divulga promocao com chamada direta ao consumidor.",
+        "Personagens comentam noticia atual em tom saterico."
       ],
-      "correta": "Articulista crítica a falta de espaços culturais no bairro.",
-      "comentario": "A resposta correta mantem a mesma função social e as mesmas marcas do gênero.",
+      "correta": "Articulista critica a falta de espacos culturais no bairro.",
+      "comentario": "A resposta correta mantem a mesma funcao social e as mesmas marcas do genero.",
       "tempoEstimado": 55,
       "tags": [
         "artigo-opiniao",
@@ -7381,22 +7382,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Interpretação indireta",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia o microtexto: \"Durante a atividade, apareceu o trecho Narrativa breve mostra a rotina de uma fila de padaria.\". Nesse caso, o gênero se define principalmente por:",
+      "enunciado": "Leia o microtexto: \"Durante a atividade, apareceu o trecho Narrativa breve mostra a rotina de uma fila de padaria.\". Nesse caso, o genero se define principalmente por:",
       "opcoes": [
-        "sua finalidade social e seu modo de circulação",
+        "sua finalidade social e seu modo de circulacao",
         "o numero exato de palavras usadas",
-        "a presenca obrigatoria de uma única frase",
+        "a presenca obrigatoria de uma unica frase",
         "a ausencia completa de interlocutores"
       ],
-      "correta": "sua finalidade social e seu modo de circulação",
-      "comentario": "Gênero textual se identifica pela função social, pelo suporte e pelas marcas recorrentes.",
+      "correta": "sua finalidade social e seu modo de circulacao",
+      "comentario": "Genero textual se identifica pela funcao social, pelo suporte e pelas marcas recorrentes.",
       "tempoEstimado": 55,
       "tags": [
         "cronica",
@@ -7419,29 +7420,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"O texto busca emocionar pela escolha expressiva das palavras.\", evitando um erro comum de classificação?",
+      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"O texto busca emocionar pela escolha expressiva das palavras.\", evitando um erro comum de classificacao?",
       "opcoes": [
         "Reconhecer que o texto se aproxima de Poema.",
         "Classificar automaticamente o trecho como Verbete apenas pelo assunto.",
-        "Afirmar que não existe gênero definido porque o texto é curto.",
-        "Dizer que suporte e finalidade não interferem na identificação."
+        "Afirmar que nao existe genero definido porque o texto e curto.",
+        "Dizer que suporte e finalidade nao interferem na identificacao."
       ],
       "correta": "Reconhecer que o texto se aproxima de Poema.",
-      "comentario": "A classificação correta exige observar finalidade, suporte e marcas linguistico-discursivas.",
+      "comentario": "A classificacao correta exige observar finalidade, suporte e marcas linguistico-discursivas.",
       "tempoEstimado": 50,
       "tags": [
         "poema",
         "erro-comum"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -7457,22 +7458,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Interpretação indireta",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um seção do leitor, aparece a formulacao \"Leitor comenta reportagem publicada na edição anterior.\". Qual leitura melhor justifica a escolha desse gênero textual?",
+      "enunciado": "Em um secao do leitor, aparece a formulacao \"Leitor comenta reportagem publicada na edicao anterior.\". Qual leitura melhor justifica a escolha desse genero textual?",
       "opcoes": [
-        "Porque o texto busca opinar e dialogar com um veículo ou assunto publicado.",
-        "Porque o texto não possui nenhuma função social definida.",
-        "Porque qualquer frase publicada pode pertencer a qualquer gênero.",
-        "Porque o gênero se define apenas pela quantidade de linhas."
+        "Porque o texto busca opinar e dialogar com um veiculo ou assunto publicado.",
+        "Porque o texto nao possui nenhuma funcao social definida.",
+        "Porque qualquer frase publicada pode pertencer a qualquer genero.",
+        "Porque o genero se define apenas pela quantidade de linhas."
       ],
-      "correta": "Porque o texto busca opinar e dialogar com um veículo ou assunto publicado.",
-      "comentario": "A identificação do gênero depende da função social que ele exerce no contexto.",
+      "correta": "Porque o texto busca opinar e dialogar com um veiculo ou assunto publicado.",
+      "comentario": "A identificacao do genero depende da funcao social que ele exerce no contexto.",
       "tempoEstimado": 50,
       "tags": [
         "carta-leitor",
@@ -7495,29 +7496,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia a análise: \"Como o trecho Peca divulga promoção com chamada direta ao consumidor. traz informação, ele só pode ser notícia\". Qual alternativa avalia melhor essa afirmação?",
+      "enunciado": "Leia a analise: \"Como o trecho Peca divulga promocao com chamada direta ao consumidor. traz informacao, ele so pode ser noticia\". Qual alternativa avalia melhor essa afirmacao?",
       "opcoes": [
-        "Ela está errada, porque informar não basta; o trecho se aproxima de Anúncio.",
-        "Ela está correta, porque todo texto informativo e notícia.",
-        "Ela está correta, porque qualquer texto publicado em site e notícia.",
-        "Ela está errada apenas se o texto tiver mais de um parágrafo."
+        "Ela esta errada, porque informar nao basta; o trecho se aproxima de Anuncio.",
+        "Ela esta correta, porque todo texto informativo e noticia.",
+        "Ela esta correta, porque qualquer texto publicado em site e noticia.",
+        "Ela esta errada apenas se o texto tiver mais de um paragrafo."
       ],
-      "correta": "Ela está errada, porque informar não basta; o trecho se aproxima de Anúncio.",
-      "comentario": "O erro comum está em reduzir a classificação a um único aspecto, ignorando finalidade e suporte.",
+      "correta": "Ela esta errada, porque informar nao basta; o trecho se aproxima de Anuncio.",
+      "comentario": "O erro comum esta em reduzir a classificacao a um unico aspecto, ignorando finalidade e suporte.",
       "tempoEstimado": 50,
       "tags": [
         "anuncio",
         "pegadinha"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"
@@ -7533,22 +7534,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Equivalência de formas",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa preserva melhor o mesmo gênero textual sugerido por \"Personagens comentam notícia atual em tom satírico.\"?",
+      "enunciado": "Qual alternativa preserva melhor o mesmo genero textual sugerido por \"Personagens comentam noticia atual em tom saterico.\"?",
       "opcoes": [
         "Quadro usa exagero para criticar problema urbano.",
-        "Leitor comenta reportagem publicada na edição anterior.",
-        "Peca divulga promoção com chamada direta ao consumidor.",
-        "Personagem comenta situação escolar em poucos quadros."
+        "Leitor comenta reportagem publicada na edicao anterior.",
+        "Peca divulga promocao com chamada direta ao consumidor.",
+        "Personagem comenta situacao escolar em poucos quadros."
       ],
       "correta": "Quadro usa exagero para criticar problema urbano.",
-      "comentario": "A resposta correta mantem a mesma função social e as mesmas marcas do gênero.",
+      "comentario": "A resposta correta mantem a mesma funcao social e as mesmas marcas do genero.",
       "tempoEstimado": 55,
       "tags": [
         "charge",
@@ -7571,22 +7572,22 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
-      "subtopico": "Interpretação indireta",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia o microtexto: \"Durante a atividade, apareceu o trecho Historinha breve apresenta conflito simples e fechamento rapido.\". Nesse caso, o gênero se define principalmente por:",
+      "enunciado": "Leia o microtexto: \"Durante a atividade, apareceu o trecho Historinha breve apresenta conflito simples e fechamento rapido.\". Nesse caso, o genero se define principalmente por:",
       "opcoes": [
-        "sua finalidade social e seu modo de circulação",
+        "sua finalidade social e seu modo de circulacao",
         "o numero exato de palavras usadas",
-        "a presenca obrigatoria de uma única frase",
+        "a presenca obrigatoria de uma unica frase",
         "a ausencia completa de interlocutores"
       ],
-      "correta": "sua finalidade social e seu modo de circulação",
-      "comentario": "Gênero textual se identifica pela função social, pelo suporte e pelas marcas recorrentes.",
+      "correta": "sua finalidade social e seu modo de circulacao",
+      "comentario": "Genero textual se identifica pela funcao social, pelo suporte e pelas marcas recorrentes.",
       "tempoEstimado": 55,
       "tags": [
         "tirinha",
@@ -7609,29 +7610,29 @@ export const generosTextuais = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Gêneros Textuais",
+      "materia": "Portugues",
+      "topico": "Generos Textuais",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"Verbete descreve o significado e o uso de uma palavra.\", evitando um erro comum de classificação?",
+      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"Verbete descreve o significado e o uso de uma palavra.\", evitando um erro comum de classificacao?",
       "opcoes": [
         "Reconhecer que o texto se aproxima de Verbete.",
-        "Classificar automaticamente o trecho como Notícia apenas pelo assunto.",
-        "Afirmar que não existe gênero definido porque o texto é curto.",
-        "Dizer que suporte e finalidade não interferem na identificação."
+        "Classificar automaticamente o trecho como Noticia apenas pelo assunto.",
+        "Afirmar que nao existe genero definido porque o texto e curto.",
+        "Dizer que suporte e finalidade nao interferem na identificacao."
       ],
       "correta": "Reconhecer que o texto se aproxima de Verbete.",
-      "comentario": "A classificação correta exige observar finalidade, suporte e marcas linguistico-discursivas.",
+      "comentario": "A classificacao correta exige observar finalidade, suporte e marcas linguistico-discursivas.",
       "tempoEstimado": 50,
       "tags": [
         "verbete",
         "erro-comum"
       ],
       "habilidades": [
-        "distinguir-generos-textuais-com-caracteristicas-proximas"
+        "distinguir-generos-textuais-com-caracteristicas-pr?ximas"
       ],
       "collections": [
         "questions"

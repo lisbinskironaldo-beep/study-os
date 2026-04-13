@@ -1,45 +1,46 @@
-export const ondulatoria = {
+﻿export const ondulatoria = {
   "id": "fisica_ondulatoria",
-  "materia": "Física",
+  "materia": "F�sica",
   "serie": [
     3
   ],
-  "topico": "Ondulatória",
+  "topico": "Ondulat�ria",
   "metadados": {
     "disciplinaId": "fisica",
     "base": "ESCOLAR",
-    "eixo": "Ondas e fenômenos ondulatórios",
-    "frente": "Propagação, interação e interpretação de ondas",
+    "seloEditorial": "VERIFICADA",
+    "eixo": "Ondas e fen�menos ondulat�rios",
+    "frente": "Propaga��o, intera��o e interpreta��o de ondas",
     "searchAliases": [
-      "ondulatória",
+      "ondulat�ria",
       "ondas",
-      "frequência",
-      "interferência",
-      "ressonância",
+      "frequ�ncia",
+      "interfer�ncia",
+      "resson�ncia",
       "efeito doppler"
     ],
     "subtopicosBase": [
       "Conceito de onda",
       "Grandezas da onda",
-      "Velocidade de propagação",
-      "Classificação das ondas",
-      "Reflexão de ondas",
-      "Refração de ondas",
-      "Difração",
-      "Interferência",
-      "Ressonância",
+      "Velocidade de propaga��o",
+      "Classifica��o das ondas",
+      "Reflex�o de ondas",
+      "Refra��o de ondas",
+      "Difra��o",
+      "Interfer�ncia",
+      "Resson�ncia",
       "Efeito Doppler"
     ],
     "habilidadesBase": [
       "identificar tipos e elementos das ondas",
-      "relacionar frequência, período, comprimento de onda e velocidade",
-      "classificar ondas quanto à natureza e propagação",
-      "interpretar reflexão, refração, difração e interferência",
-      "analisar ressonância e efeito Doppler",
-      "aplicar conceitos ondulatórios a situações cotidianas"
+      "relacionar frequ�ncia, per�odo, comprimento de onda e velocidade",
+      "classificar ondas quanto � natureza e propaga��o",
+      "interpretar reflex�o, refra��o, difra��o e interfer�ncia",
+      "analisar resson�ncia e efeito Doppler",
+      "aplicar conceitos ondulat�rios a situa��es cotidianas"
     ],
     "auditado": true,
-    "auditadoEm": "2026-04-11",
+    "auditadoEm": "2026-04-12",
     "auditoriaTipo": "varredura-mais-profunda"
   },
   "questoes": [
@@ -48,22 +49,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Conceito de onda",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Física, Conceito de onda pode ser definido(a) como:",
+      "enunciado": "Em F�sica, Conceito de onda pode ser definido(a) como:",
       "opcoes": [
-        "uma perturbação que se propaga transportando energia sem transportar matéria de forma permanente",
-        "os elementos que caracterizam uma onda, como amplitude, comprimento de onda, frequência e período",
-        "a grandeza que indica a rapidez com que a onda se desloca em um meio, relacionando comprimento de onda e frequência",
-        "a distinção das ondas quanto à natureza, a direção de vibração e a necessidade ou não de meio material"
+        "uma perturba��o que se propaga transportando energia sem transportar mat�ria de forma permanente",
+        "os elementos que caracterizam uma onda, como amplitude, comprimento de onda, frequ�ncia e per�odo",
+        "a grandeza que indica a rapidez com que a onda se desloca em um meio, relacionando comprimento de onda e frequ�ncia",
+        "a distin��o das ondas quanto � natureza, a dire��o de vibra��o e a necessidade ou n�o de meio material"
       ],
-      "correta": "uma perturbação que se propaga transportando energia sem transportar matéria de forma permanente",
-      "comentario": "Conceito de onda refere-se a uma perturbação que se propaga transportando energia sem transportar matéria de forma permanente.",
+      "correta": "uma perturba��o que se propaga transportando energia sem transportar mat�ria de forma permanente",
+      "comentario": "Conceito de onda refere-se a uma perturba��o que se propaga transportando energia sem transportar mat�ria de forma permanente.",
       "tempoEstimado": 25,
       "tags": [
         "ondulatoria",
@@ -87,22 +88,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Conceito de onda",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: um pulso se espalha por uma corda esticada depois de um movimento inicial Esse caso exemplifica melhor qual subtópico?",
+      "enunciado": "Observe a situa��o: um pulso se espalha por uma corda esticada depois de um movimento inicial Esse caso exemplifica melhor qual subt�pico?",
       "opcoes": [
         "Conceito de onda",
         "Grandezas da onda",
-        "Velocidade de propagação",
-        "Classificação das ondas"
+        "Velocidade de propaga��o",
+        "Classifica��o das ondas"
       ],
       "correta": "Conceito de onda",
-      "comentario": "A situação apresentada é um exemplo de Conceito de onda.",
+      "comentario": "A situa��o apresentada � um exemplo de Conceito de onda.",
       "tempoEstimado": 25,
       "tags": [
         "ondulatoria",
@@ -126,21 +127,21 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Conceito de onda",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmação descreve corretamente Conceito de onda?",
+      "enunciado": "Qual afirma��o descreve corretamente Conceito de onda?",
       "opcoes": [
-        "Uma perturbação que se propaga transportando energia sem transportar matéria de forma permanente.",
-        "Os elementos que caracterizam uma onda, como amplitude, comprimento de onda, frequência e período.",
-        "A grandeza que indica a rapidez com que a onda se desloca em um meio, relacionando comprimento de onda e frequência.",
-        "A distinção das ondas quanto à natureza, a direção de vibração e a necessidade ou não de meio material."
+        "Uma perturba��o que se propaga transportando energia sem transportar mat�ria de forma permanente.",
+        "Os elementos que caracterizam uma onda, como amplitude, comprimento de onda, frequ�ncia e per�odo.",
+        "A grandeza que indica a rapidez com que a onda se desloca em um meio, relacionando comprimento de onda e frequ�ncia.",
+        "A distin��o das ondas quanto � natureza, a dire��o de vibra��o e a necessidade ou n�o de meio material."
       ],
-      "correta": "Uma perturbação que se propaga transportando energia sem transportar matéria de forma permanente.",
+      "correta": "Uma perturba��o que se propaga transportando energia sem transportar mat�ria de forma permanente.",
       "comentario": "A alternativa correta resume o conceito de Conceito de onda.",
       "tempoEstimado": 30,
       "tags": [
@@ -165,22 +166,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Conceito de onda",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compatível com Conceito de onda?",
+      "enunciado": "Qual alternativa NAO esta compat�vel com Conceito de onda?",
       "opcoes": [
-        "Os elementos que caracterizam uma onda, como amplitude, comprimento de onda, frequência e período.",
-        "Uma perturbação que se propaga transportando energia sem transportar matéria de forma permanente.",
-        "Identificar a propagação de perturbacoes e o transporte de energia.",
-        "Ajuda a compreender a propagação de pulsos em cordas e superficies líquidas."
+        "Os elementos que caracterizam uma onda, como amplitude, comprimento de onda, frequ�ncia e per�odo.",
+        "Uma perturba��o que se propaga transportando energia sem transportar mat�ria de forma permanente.",
+        "Identificar a propaga��o de perturbacoes e o transporte de energia.",
+        "Ajuda a compreender a propaga��o de pulsos em cordas e superficies l�quidas."
       ],
-      "correta": "Os elementos que caracterizam uma onda, como amplitude, comprimento de onda, frequência e período.",
-      "comentario": "A opção incompativel descreve outro subtópico, não Conceito de onda.",
+      "correta": "Os elementos que caracterizam uma onda, como amplitude, comprimento de onda, frequ�ncia e per�odo.",
+      "comentario": "A op��o incompativel descreve outro subt�pico, n�o Conceito de onda.",
       "tempoEstimado": 30,
       "tags": [
         "ondulatoria",
@@ -204,8 +205,8 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Conceito de onda",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
@@ -213,13 +214,13 @@ export const ondulatoria = {
       "tipo": "multipla_escolha",
       "enunciado": "Ao estudar Conceito de onda, o foco principal e:",
       "opcoes": [
-        "identificar a propagação de perturbacoes e o transporte de energia",
-        "relacionar amplitude, frequência, período e comprimento de onda",
-        "calcular a rapidez de propagação de ondas em diferentes meios",
-        "classificar ondas como mecânicas ou eletromagnéticas, transversais ou longitudinais"
+        "identificar a propaga��o de perturbacoes e o transporte de energia",
+        "relacionar amplitude, frequ�ncia, per�odo e comprimento de onda",
+        "calcular a rapidez de propaga��o de ondas em diferentes meios",
+        "classificar ondas como mec�nicas ou eletromagn�ticas, transversais ou longitudinais"
       ],
-      "correta": "identificar a propagação de perturbacoes e o transporte de energia",
-      "comentario": "Conceito de onda concentra-se em identificar a propagação de perturbacoes e o transporte de energia.",
+      "correta": "identificar a propaga��o de perturbacoes e o transporte de energia",
+      "comentario": "Conceito de onda concentra-se em identificar a propaga��o de perturbacoes e o transporte de energia.",
       "tempoEstimado": 35,
       "tags": [
         "ondulatoria",
@@ -243,22 +244,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Conceito de onda",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Grandezas da onda trata de os elementos que caracterizam uma onda, como amplitude, comprimento de onda, frequência e período, Conceito de onda destaca:",
+      "enunciado": "Enquanto Grandezas da onda trata de os elementos que caracterizam uma onda, como amplitude, comprimento de onda, frequ�ncia e per�odo, Conceito de onda destaca:",
       "opcoes": [
-        "Uma perturbação que se propaga transportando energia sem transportar matéria de forma permanente.",
-        "Os elementos que caracterizam uma onda, como amplitude, comprimento de onda, frequência e período.",
-        "A grandeza que indica a rapidez com que a onda se desloca em um meio, relacionando comprimento de onda e frequência.",
-        "A distinção das ondas quanto à natureza, a direção de vibração e a necessidade ou não de meio material."
+        "Uma perturba��o que se propaga transportando energia sem transportar mat�ria de forma permanente.",
+        "Os elementos que caracterizam uma onda, como amplitude, comprimento de onda, frequ�ncia e per�odo.",
+        "A grandeza que indica a rapidez com que a onda se desloca em um meio, relacionando comprimento de onda e frequ�ncia.",
+        "A distin��o das ondas quanto � natureza, a dire��o de vibra��o e a necessidade ou n�o de meio material."
       ],
-      "correta": "Uma perturbação que se propaga transportando energia sem transportar matéria de forma permanente.",
-      "comentario": "A comparação correta mostra a especificidade de Conceito de onda.",
+      "correta": "Uma perturba��o que se propaga transportando energia sem transportar mat�ria de forma permanente.",
+      "comentario": "A compara��o correta mostra a especificidade de Conceito de onda.",
       "tempoEstimado": 35,
       "tags": [
         "ondulatoria",
@@ -282,22 +283,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Conceito de onda",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma análise de sala, considera-se que um pulso se espalha por uma corda esticada depois de um movimento inicial Para interpretar essa situação, é mais adequado mobilizar o conceito de:",
+      "enunciado": "Em uma an�lise de sala, considera-se que um pulso se espalha por uma corda esticada depois de um movimento inicial Para interpretar essa situa��o, � mais adequado mobilizar o conceito de:",
       "opcoes": [
         "Conceito de onda",
         "Grandezas da onda",
-        "Classificação das ondas",
-        "Reflexão de ondas"
+        "Classifica��o das ondas",
+        "Reflex�o de ondas"
       ],
       "correta": "Conceito de onda",
-      "comentario": "O caso descrito é interpretado adequadamente por meio de Conceito de onda.",
+      "comentario": "O caso descrito � interpretado adequadamente por meio de Conceito de onda.",
       "tempoEstimado": 40,
       "tags": [
         "ondulatoria",
@@ -321,22 +322,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Conceito de onda",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação prática depende mais diretamente de Conceito de onda?",
+      "enunciado": "Qual situa��o pr�tica depende mais diretamente de Conceito de onda?",
       "opcoes": [
-        "a propagação de pulsos em cordas e superficies líquidas",
+        "a propaga��o de pulsos em cordas e superficies l�quidas",
         "a leitura de graficos e tabelas sobre ondas em laboratorio",
-        "o cálculo da velocidade do som ou da luz em diferentes meios",
-        "a formacao de ecos e a reflexão de pulsos em cordas"
+        "o c�lculo da velocidade do som ou da luz em diferentes meios",
+        "a formacao de ecos e a reflex�o de pulsos em cordas"
       ],
-      "correta": "a propagação de pulsos em cordas e superficies líquidas",
-      "comentario": "Conceito de onda aparece de modo direto na propagação de pulsos em cordas e superficies líquidas.",
+      "correta": "a propaga��o de pulsos em cordas e superficies l�quidas",
+      "comentario": "Conceito de onda aparece de modo direto na propaga��o de pulsos em cordas e superficies l�quidas.",
       "tempoEstimado": 40,
       "tags": [
         "ondulatoria",
@@ -360,22 +361,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Conceito de onda",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir de um pulso se espalha por uma corda esticada depois de um movimento inicial, qual conclusão está mais correta?",
+      "enunciado": "A partir de um pulso se espalha por uma corda esticada depois de um movimento inicial, qual conclus�o est� mais correta?",
       "opcoes": [
         "o caso e explicado por Conceito de onda.",
         "o caso e mais bem entendido por Grandezas da onda.",
-        "a situação anula a importância de Velocidade de propagação.",
-        "o fenômeno exclui qualquer relação com Classificação das ondas."
+        "a situa��o anula a import�ncia de Velocidade de propaga��o.",
+        "o fen�meno exclui qualquer rela��o com Classifica��o das ondas."
       ],
       "correta": "o caso e explicado por Conceito de onda.",
-      "comentario": "A conclusão adequada retoma a ideia central de Conceito de onda.",
+      "comentario": "A conclus�o adequada retoma a ideia central de Conceito de onda.",
       "tempoEstimado": 45,
       "tags": [
         "ondulatoria",
@@ -399,8 +400,8 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Conceito de onda",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
@@ -408,12 +409,12 @@ export const ondulatoria = {
       "tipo": "multipla_escolha",
       "enunciado": "Se um grupo fosse pesquisar Conceito de onda, qual pergunta orientadora seria a mais adequada?",
       "opcoes": [
-        "Como Conceito de onda aparece na propagação de pulsos em cordas e superficies líquidas?",
-        "Como Grandezas da onda substitui totalmente a propagação de pulsos em cordas e superficies líquidas?",
-        "Por que Velocidade de propagação torna desnecessário estudar Conceito de onda?",
-        "De que modo Classificação das ondas elimina toda medida fisica envolvida?"
+        "Como Conceito de onda aparece na propaga��o de pulsos em cordas e superficies l�quidas?",
+        "Como Grandezas da onda substitui totalmente a propaga��o de pulsos em cordas e superficies l�quidas?",
+        "Por que Velocidade de propaga��o torna desnecess�rio estudar Conceito de onda?",
+        "De que modo Classifica��o das ondas elimina toda medida fisica envolvida?"
       ],
-      "correta": "Como Conceito de onda aparece na propagação de pulsos em cordas e superficies líquidas?",
+      "correta": "Como Conceito de onda aparece na propaga��o de pulsos em cordas e superficies l�quidas?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Conceito de onda.",
       "tempoEstimado": 45,
       "tags": [
@@ -438,8 +439,8 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Conceito de onda",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
@@ -447,13 +448,13 @@ export const ondulatoria = {
       "tipo": "multipla_escolha",
       "enunciado": "Um erro comum em Conceito de onda e pensar que:",
       "opcoes": [
-        "a onda carrega a matéria do meio ao longo de todo o percurso",
-        "amplitude, frequência e comprimento de onda representam exatamente a mesma grandeza",
+        "a onda carrega a mat�ria do meio ao longo de todo o percurso",
+        "amplitude, frequ�ncia e comprimento de onda representam exatamente a mesma grandeza",
         "a velocidade da onda depende apenas da amplitude do pulso produzido",
         "toda onda precisa de meio material para se propagar"
       ],
-      "correta": "a onda carrega a matéria do meio ao longo de todo o percurso",
-      "comentario": "Esse e um equívoco frequente porque contraria a definição correta de Conceito de onda.",
+      "correta": "a onda carrega a mat�ria do meio ao longo de todo o percurso",
+      "comentario": "Esse e um equ�voco frequente porque contraria a defini��o correta de Conceito de onda.",
       "tempoEstimado": 50,
       "tags": [
         "ondulatoria",
@@ -477,22 +478,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Conceito de onda",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"uma onda leva consigo a matéria do meio do ponto de partida ate o ponto de chegada\". A avaliação mais adequada e:",
+      "enunciado": "Um estudante afirma: \"uma onda leva consigo a mat�ria do meio do ponto de partida ate o ponto de chegada\". A avalia��o mais adequada e:",
       "opcoes": [
-        "A afirmação está incorreta, porque uma perturbação que se propaga transportando energia sem transportar matéria de forma permanente.",
-        "A afirmação está correta, pois resume integralmente Conceito de onda.",
-        "A afirmação está correta, porque toda situação do tema depende apenas dessa ideia.",
-        "A afirmação está incorreta apenas porque não apresenta uma unidade de medida."
+        "A afirma��o est� incorreta, porque uma perturba��o que se propaga transportando energia sem transportar mat�ria de forma permanente.",
+        "A afirma��o est� correta, pois resume integralmente Conceito de onda.",
+        "A afirma��o est� correta, porque toda situa��o do tema depende apenas dessa ideia.",
+        "A afirma��o est� incorreta apenas porque n�o apresenta uma unidade de medida."
       ],
-      "correta": "A afirmação está incorreta, porque uma perturbação que se propaga transportando energia sem transportar matéria de forma permanente.",
-      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre Conceito de onda.",
+      "correta": "A afirma��o est� incorreta, porque uma perturba��o que se propaga transportando energia sem transportar mat�ria de forma permanente.",
+      "comentario": "A fala do estudante apresenta um equ�voco conceitual sobre Conceito de onda.",
       "tempoEstimado": 55,
       "tags": [
         "ondulatoria",
@@ -516,22 +517,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Conceito de onda",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se Conceito de onda fosse ignorado(a) ao analisar a propagação de pulsos em cordas e superficies líquidas, o resultado mais provável seria:",
+      "enunciado": "Se Conceito de onda fosse ignorado(a) ao analisar a propaga��o de pulsos em cordas e superficies l�quidas, o resultado mais prov�vel seria:",
       "opcoes": [
-        "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a propagação de pulsos em cordas e superficies líquidas.",
-        "a situação seria explicada automaticamente por Grandezas da onda, sem necessidade de análise.",
-        "nenhuma interpretacao fisica seria alterada, porque Conceito de onda não interfere nesse tipo de problema.",
-        "o fenômeno deixaria de existir apenas por não ser nomeado."
+        "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre a propaga��o de pulsos em cordas e superficies l�quidas.",
+        "a situa��o seria explicada automaticamente por Grandezas da onda, sem necessidade de an�lise.",
+        "nenhuma interpretacao fisica seria alterada, porque Conceito de onda n�o interfere nesse tipo de problema.",
+        "o fen�meno deixaria de existir apenas por n�o ser nomeado."
       ],
-      "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a propagação de pulsos em cordas e superficies líquidas.",
-      "comentario": "Ignorar Conceito de onda compromete a leitura fisica da situação apresentada.",
+      "correta": "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre a propaga��o de pulsos em cordas e superficies l�quidas.",
+      "comentario": "Ignorar Conceito de onda compromete a leitura fisica da situa��o apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "ondulatoria",
@@ -555,22 +556,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Conceito de onda",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma aplicação cotidiana ou escolar, Conceito de onda ajuda principalmente a compreender:",
+      "enunciado": "Em uma aplica��o cotidiana ou escolar, Conceito de onda ajuda principalmente a compreender:",
       "opcoes": [
-        "a propagação de pulsos em cordas e superficies líquidas",
+        "a propaga��o de pulsos em cordas e superficies l�quidas",
         "a leitura de graficos e tabelas sobre ondas em laboratorio",
-        "o cálculo da velocidade do som ou da luz em diferentes meios",
-        "a comparação entre ondas mecânicas, eletromagnéticas, transversais e longitudinais"
+        "o c�lculo da velocidade do som ou da luz em diferentes meios",
+        "a compara��o entre ondas mec�nicas, eletromagn�ticas, transversais e longitudinais"
       ],
-      "correta": "a propagação de pulsos em cordas e superficies líquidas",
-      "comentario": "A aplicação escolhida e a que melhor representa Conceito de onda.",
+      "correta": "a propaga��o de pulsos em cordas e superficies l�quidas",
+      "comentario": "A aplica��o escolhida e a que melhor representa Conceito de onda.",
       "tempoEstimado": 60,
       "tags": [
         "ondulatoria",
@@ -594,8 +595,8 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Conceito de onda",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
@@ -603,13 +604,13 @@ export const ondulatoria = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual resumo sintetiza melhor a ideia central de Conceito de onda?",
       "opcoes": [
-        "Em síntese, uma perturbação que se propaga transportando energia sem transportar matéria de forma permanente.",
-        "Em síntese, os elementos que caracterizam uma onda, como amplitude, comprimento de onda, frequência e período.",
-        "Em síntese, a grandeza que indica a rapidez com que a onda se desloca em um meio, relacionando comprimento de onda e frequência.",
-        "Em síntese, a distinção das ondas quanto à natureza, a direção de vibração e a necessidade ou não de meio material."
+        "Em s�ntese, uma perturba��o que se propaga transportando energia sem transportar mat�ria de forma permanente.",
+        "Em s�ntese, os elementos que caracterizam uma onda, como amplitude, comprimento de onda, frequ�ncia e per�odo.",
+        "Em s�ntese, a grandeza que indica a rapidez com que a onda se desloca em um meio, relacionando comprimento de onda e frequ�ncia.",
+        "Em s�ntese, a distin��o das ondas quanto � natureza, a dire��o de vibra��o e a necessidade ou n�o de meio material."
       ],
-      "correta": "Em síntese, uma perturbação que se propaga transportando energia sem transportar matéria de forma permanente.",
-      "comentario": "O resumo correto recupera o núcleo conceitual de Conceito de onda.",
+      "correta": "Em s�ntese, uma perturba��o que se propaga transportando energia sem transportar mat�ria de forma permanente.",
+      "comentario": "O resumo correto recupera o n�cleo conceitual de Conceito de onda.",
       "tempoEstimado": 65,
       "tags": [
         "ondulatoria",
@@ -633,22 +634,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Grandezas da onda",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Física, Grandezas da onda pode ser definido(a) como:",
+      "enunciado": "Em F�sica, Grandezas da onda pode ser definido(a) como:",
       "opcoes": [
-        "os elementos que caracterizam uma onda, como amplitude, comprimento de onda, frequência e período",
-        "a grandeza que indica a rapidez com que a onda se desloca em um meio, relacionando comprimento de onda e frequência",
-        "a distinção das ondas quanto à natureza, a direção de vibração e a necessidade ou não de meio material",
+        "os elementos que caracterizam uma onda, como amplitude, comprimento de onda, frequ�ncia e per�odo",
+        "a grandeza que indica a rapidez com que a onda se desloca em um meio, relacionando comprimento de onda e frequ�ncia",
+        "a distin��o das ondas quanto � natureza, a dire��o de vibra��o e a necessidade ou n�o de meio material",
         "o retorno da onda ao meio de origem apos atingir uma superficie ou obstaculo"
       ],
-      "correta": "os elementos que caracterizam uma onda, como amplitude, comprimento de onda, frequência e período",
-      "comentario": "Grandezas da onda refere-se aos elementos que caracterizam uma onda, como amplitude, comprimento de onda, frequência e período.",
+      "correta": "os elementos que caracterizam uma onda, como amplitude, comprimento de onda, frequ�ncia e per�odo",
+      "comentario": "Grandezas da onda refere-se aos elementos que caracterizam uma onda, como amplitude, comprimento de onda, frequ�ncia e per�odo.",
       "tempoEstimado": 25,
       "tags": [
         "ondulatoria",
@@ -672,22 +673,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Grandezas da onda",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: um grafico de onda exibe a altura da crista, a distancia entre cristas e o número de oscilacoes por segundo Esse caso exemplifica melhor qual subtópico?",
+      "enunciado": "Observe a situa��o: um grafico de onda exibe a altura da crista, a distancia entre cristas e o n�mero de oscilacoes por segundo Esse caso exemplifica melhor qual subt�pico?",
       "opcoes": [
         "Grandezas da onda",
-        "Velocidade de propagação",
-        "Classificação das ondas",
-        "Reflexão de ondas"
+        "Velocidade de propaga��o",
+        "Classifica��o das ondas",
+        "Reflex�o de ondas"
       ],
       "correta": "Grandezas da onda",
-      "comentario": "A situação apresentada é um exemplo de Grandezas da onda.",
+      "comentario": "A situa��o apresentada � um exemplo de Grandezas da onda.",
       "tempoEstimado": 25,
       "tags": [
         "ondulatoria",
@@ -711,21 +712,21 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Grandezas da onda",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmação descreve corretamente Grandezas da onda?",
+      "enunciado": "Qual afirma��o descreve corretamente Grandezas da onda?",
       "opcoes": [
-        "Os elementos que caracterizam uma onda, como amplitude, comprimento de onda, frequência e período.",
-        "A grandeza que indica a rapidez com que a onda se desloca em um meio, relacionando comprimento de onda e frequência.",
-        "A distinção das ondas quanto à natureza, a direção de vibração e a necessidade ou não de meio material.",
+        "Os elementos que caracterizam uma onda, como amplitude, comprimento de onda, frequ�ncia e per�odo.",
+        "A grandeza que indica a rapidez com que a onda se desloca em um meio, relacionando comprimento de onda e frequ�ncia.",
+        "A distin��o das ondas quanto � natureza, a dire��o de vibra��o e a necessidade ou n�o de meio material.",
         "O retorno da onda ao meio de origem apos atingir uma superficie ou obstaculo."
       ],
-      "correta": "Os elementos que caracterizam uma onda, como amplitude, comprimento de onda, frequência e período.",
+      "correta": "Os elementos que caracterizam uma onda, como amplitude, comprimento de onda, frequ�ncia e per�odo.",
       "comentario": "A alternativa correta resume o conceito de Grandezas da onda.",
       "tempoEstimado": 30,
       "tags": [
@@ -750,22 +751,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Grandezas da onda",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compatível com Grandezas da onda?",
+      "enunciado": "Qual alternativa NAO esta compat�vel com Grandezas da onda?",
       "opcoes": [
-        "A grandeza que indica a rapidez com que a onda se desloca em um meio, relacionando comprimento de onda e frequência.",
-        "Os elementos que caracterizam uma onda, como amplitude, comprimento de onda, frequência e período.",
-        "Relacionar amplitude, frequência, período e comprimento de onda.",
+        "A grandeza que indica a rapidez com que a onda se desloca em um meio, relacionando comprimento de onda e frequ�ncia.",
+        "Os elementos que caracterizam uma onda, como amplitude, comprimento de onda, frequ�ncia e per�odo.",
+        "Relacionar amplitude, frequ�ncia, per�odo e comprimento de onda.",
         "Ajuda a compreender a leitura de graficos e tabelas sobre ondas em laboratorio."
       ],
-      "correta": "A grandeza que indica a rapidez com que a onda se desloca em um meio, relacionando comprimento de onda e frequência.",
-      "comentario": "A opção incompativel descreve outro subtópico, não Grandezas da onda.",
+      "correta": "A grandeza que indica a rapidez com que a onda se desloca em um meio, relacionando comprimento de onda e frequ�ncia.",
+      "comentario": "A op��o incompativel descreve outro subt�pico, n�o Grandezas da onda.",
       "tempoEstimado": 30,
       "tags": [
         "ondulatoria",
@@ -789,8 +790,8 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Grandezas da onda",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
@@ -798,13 +799,13 @@ export const ondulatoria = {
       "tipo": "multipla_escolha",
       "enunciado": "Ao estudar Grandezas da onda, o foco principal e:",
       "opcoes": [
-        "relacionar amplitude, frequência, período e comprimento de onda",
-        "calcular a rapidez de propagação de ondas em diferentes meios",
-        "classificar ondas como mecânicas ou eletromagnéticas, transversais ou longitudinais",
+        "relacionar amplitude, frequ�ncia, per�odo e comprimento de onda",
+        "calcular a rapidez de propaga��o de ondas em diferentes meios",
+        "classificar ondas como mec�nicas ou eletromagn�ticas, transversais ou longitudinais",
         "interpretar o retorno da onda e o comportamento do pulso refletido"
       ],
-      "correta": "relacionar amplitude, frequência, período e comprimento de onda",
-      "comentario": "Grandezas da onda concentra-se em relacionar amplitude, frequência, período e comprimento de onda.",
+      "correta": "relacionar amplitude, frequ�ncia, per�odo e comprimento de onda",
+      "comentario": "Grandezas da onda concentra-se em relacionar amplitude, frequ�ncia, per�odo e comprimento de onda.",
       "tempoEstimado": 35,
       "tags": [
         "ondulatoria",
@@ -828,22 +829,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Grandezas da onda",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Velocidade de propagação trata de a grandeza que indica a rapidez com que a onda se desloca em um meio, relacionando comprimento de onda e frequência, Grandezas da onda destaca:",
+      "enunciado": "Enquanto Velocidade de propaga��o trata de a grandeza que indica a rapidez com que a onda se desloca em um meio, relacionando comprimento de onda e frequ�ncia, Grandezas da onda destaca:",
       "opcoes": [
-        "Os elementos que caracterizam uma onda, como amplitude, comprimento de onda, frequência e período.",
-        "A grandeza que indica a rapidez com que a onda se desloca em um meio, relacionando comprimento de onda e frequência.",
-        "A distinção das ondas quanto à natureza, a direção de vibração e a necessidade ou não de meio material.",
+        "Os elementos que caracterizam uma onda, como amplitude, comprimento de onda, frequ�ncia e per�odo.",
+        "A grandeza que indica a rapidez com que a onda se desloca em um meio, relacionando comprimento de onda e frequ�ncia.",
+        "A distin��o das ondas quanto � natureza, a dire��o de vibra��o e a necessidade ou n�o de meio material.",
         "O retorno da onda ao meio de origem apos atingir uma superficie ou obstaculo."
       ],
-      "correta": "Os elementos que caracterizam uma onda, como amplitude, comprimento de onda, frequência e período.",
-      "comentario": "A comparação correta mostra a especificidade de Grandezas da onda.",
+      "correta": "Os elementos que caracterizam uma onda, como amplitude, comprimento de onda, frequ�ncia e per�odo.",
+      "comentario": "A compara��o correta mostra a especificidade de Grandezas da onda.",
       "tempoEstimado": 35,
       "tags": [
         "ondulatoria",
@@ -867,22 +868,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Grandezas da onda",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma análise de sala, considera-se que um grafico de onda exibe a altura da crista, a distancia entre cristas e o número de oscilacoes por segundo Para interpretar essa situação, é mais adequado mobilizar o conceito de:",
+      "enunciado": "Em uma an�lise de sala, considera-se que um grafico de onda exibe a altura da crista, a distancia entre cristas e o n�mero de oscilacoes por segundo Para interpretar essa situa��o, � mais adequado mobilizar o conceito de:",
       "opcoes": [
         "Grandezas da onda",
-        "Velocidade de propagação",
-        "Reflexão de ondas",
+        "Velocidade de propaga��o",
+        "Reflex�o de ondas",
         "Refracao de ondas"
       ],
       "correta": "Grandezas da onda",
-      "comentario": "O caso descrito é interpretado adequadamente por meio de Grandezas da onda.",
+      "comentario": "O caso descrito � interpretado adequadamente por meio de Grandezas da onda.",
       "tempoEstimado": 40,
       "tags": [
         "ondulatoria",
@@ -906,19 +907,19 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Grandezas da onda",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação prática depende mais diretamente de Grandezas da onda?",
+      "enunciado": "Qual situa��o pr�tica depende mais diretamente de Grandezas da onda?",
       "opcoes": [
         "a leitura de graficos e tabelas sobre ondas em laboratorio",
-        "o cálculo da velocidade do som ou da luz em diferentes meios",
-        "a comparação entre ondas mecânicas, eletromagnéticas, transversais e longitudinais",
-        "as mudancas de direção de ondas ao passarem entre meios distintos"
+        "o c�lculo da velocidade do som ou da luz em diferentes meios",
+        "a compara��o entre ondas mec�nicas, eletromagn�ticas, transversais e longitudinais",
+        "as mudancas de dire��o de ondas ao passarem entre meios distintos"
       ],
       "correta": "a leitura de graficos e tabelas sobre ondas em laboratorio",
       "comentario": "Grandezas da onda aparece de modo direto na leitura de graficos e tabelas sobre ondas em laboratorio.",
@@ -945,22 +946,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Grandezas da onda",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir de um grafico de onda exibe a altura da crista, a distancia entre cristas e o número de oscilacoes por segundo, qual conclusão está mais correta?",
+      "enunciado": "A partir de um grafico de onda exibe a altura da crista, a distancia entre cristas e o n�mero de oscilacoes por segundo, qual conclus�o est� mais correta?",
       "opcoes": [
         "o caso e explicado por Grandezas da onda.",
-        "o caso e mais bem entendido por Velocidade de propagação.",
-        "a situação anula a importância de Classificação das ondas.",
-        "o fenômeno exclui qualquer relação com Reflexão de ondas."
+        "o caso e mais bem entendido por Velocidade de propaga��o.",
+        "a situa��o anula a import�ncia de Classifica��o das ondas.",
+        "o fen�meno exclui qualquer rela��o com Reflex�o de ondas."
       ],
       "correta": "o caso e explicado por Grandezas da onda.",
-      "comentario": "A conclusão adequada retoma a ideia central de Grandezas da onda.",
+      "comentario": "A conclus�o adequada retoma a ideia central de Grandezas da onda.",
       "tempoEstimado": 45,
       "tags": [
         "ondulatoria",
@@ -984,8 +985,8 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Grandezas da onda",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
@@ -994,9 +995,9 @@ export const ondulatoria = {
       "enunciado": "Se um grupo fosse pesquisar Grandezas da onda, qual pergunta orientadora seria a mais adequada?",
       "opcoes": [
         "Como Grandezas da onda aparece na leitura de graficos e tabelas sobre ondas em laboratorio?",
-        "Como Velocidade de propagação substitui totalmente a leitura de graficos e tabelas sobre ondas em laboratorio?",
-        "Por que Classificação das ondas torna desnecessário estudar Grandezas da onda?",
-        "De que modo Reflexão de ondas elimina toda medida fisica envolvida?"
+        "Como Velocidade de propaga��o substitui totalmente a leitura de graficos e tabelas sobre ondas em laboratorio?",
+        "Por que Classifica��o das ondas torna desnecess�rio estudar Grandezas da onda?",
+        "De que modo Reflex�o de ondas elimina toda medida fisica envolvida?"
       ],
       "correta": "Como Grandezas da onda aparece na leitura de graficos e tabelas sobre ondas em laboratorio?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Grandezas da onda.",
@@ -1023,8 +1024,8 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Grandezas da onda",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
@@ -1032,13 +1033,13 @@ export const ondulatoria = {
       "tipo": "multipla_escolha",
       "enunciado": "Um erro comum em Grandezas da onda e pensar que:",
       "opcoes": [
-        "amplitude, frequência e comprimento de onda representam exatamente a mesma grandeza",
+        "amplitude, frequ�ncia e comprimento de onda representam exatamente a mesma grandeza",
         "a velocidade da onda depende apenas da amplitude do pulso produzido",
         "toda onda precisa de meio material para se propagar",
-        "na reflexão a onda necessariamente muda de meio de propagação"
+        "na reflex�o a onda necessariamente muda de meio de propaga��o"
       ],
-      "correta": "amplitude, frequência e comprimento de onda representam exatamente a mesma grandeza",
-      "comentario": "Esse e um equívoco frequente porque contraria a definição correta de Grandezas da onda.",
+      "correta": "amplitude, frequ�ncia e comprimento de onda representam exatamente a mesma grandeza",
+      "comentario": "Esse e um equ�voco frequente porque contraria a defini��o correta de Grandezas da onda.",
       "tempoEstimado": 50,
       "tags": [
         "ondulatoria",
@@ -1062,22 +1063,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Grandezas da onda",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"comprimento de onda, frequência e amplitude sao apenas nomes diferentes para a mesma medida\". A avaliação mais adequada e:",
+      "enunciado": "Um estudante afirma: \"comprimento de onda, frequ�ncia e amplitude sao apenas nomes diferentes para a mesma medida\". A avalia��o mais adequada e:",
       "opcoes": [
-        "A afirmação está incorreta, porque os elementos que caracterizam uma onda, como amplitude, comprimento de onda, frequência e período.",
-        "A afirmação está correta, pois resume integralmente Grandezas da onda.",
-        "A afirmação está correta, porque toda situação do tema depende apenas dessa ideia.",
-        "A afirmação está incorreta apenas porque não apresenta uma unidade de medida."
+        "A afirma��o est� incorreta, porque os elementos que caracterizam uma onda, como amplitude, comprimento de onda, frequ�ncia e per�odo.",
+        "A afirma��o est� correta, pois resume integralmente Grandezas da onda.",
+        "A afirma��o est� correta, porque toda situa��o do tema depende apenas dessa ideia.",
+        "A afirma��o est� incorreta apenas porque n�o apresenta uma unidade de medida."
       ],
-      "correta": "A afirmação está incorreta, porque os elementos que caracterizam uma onda, como amplitude, comprimento de onda, frequência e período.",
-      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre Grandezas da onda.",
+      "correta": "A afirma��o est� incorreta, porque os elementos que caracterizam uma onda, como amplitude, comprimento de onda, frequ�ncia e per�odo.",
+      "comentario": "A fala do estudante apresenta um equ�voco conceitual sobre Grandezas da onda.",
       "tempoEstimado": 55,
       "tags": [
         "ondulatoria",
@@ -1101,22 +1102,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Grandezas da onda",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se Grandezas da onda fosse ignorado(a) ao analisar a leitura de graficos e tabelas sobre ondas em laboratorio, o resultado mais provável seria:",
+      "enunciado": "Se Grandezas da onda fosse ignorado(a) ao analisar a leitura de graficos e tabelas sobre ondas em laboratorio, o resultado mais prov�vel seria:",
       "opcoes": [
-        "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a leitura de graficos e tabelas sobre ondas em laboratorio.",
-        "a situação seria explicada automaticamente por Velocidade de propagação, sem necessidade de análise.",
-        "nenhuma interpretacao fisica seria alterada, porque Grandezas da onda não interfere nesse tipo de problema.",
-        "o fenômeno deixaria de existir apenas por não ser nomeado."
+        "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre a leitura de graficos e tabelas sobre ondas em laboratorio.",
+        "a situa��o seria explicada automaticamente por Velocidade de propaga��o, sem necessidade de an�lise.",
+        "nenhuma interpretacao fisica seria alterada, porque Grandezas da onda n�o interfere nesse tipo de problema.",
+        "o fen�meno deixaria de existir apenas por n�o ser nomeado."
       ],
-      "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a leitura de graficos e tabelas sobre ondas em laboratorio.",
-      "comentario": "Ignorar Grandezas da onda compromete a leitura fisica da situação apresentada.",
+      "correta": "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre a leitura de graficos e tabelas sobre ondas em laboratorio.",
+      "comentario": "Ignorar Grandezas da onda compromete a leitura fisica da situa��o apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "ondulatoria",
@@ -1140,22 +1141,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Grandezas da onda",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma aplicação cotidiana ou escolar, Grandezas da onda ajuda principalmente a compreender:",
+      "enunciado": "Em uma aplica��o cotidiana ou escolar, Grandezas da onda ajuda principalmente a compreender:",
       "opcoes": [
         "a leitura de graficos e tabelas sobre ondas em laboratorio",
-        "o cálculo da velocidade do som ou da luz em diferentes meios",
-        "a comparação entre ondas mecânicas, eletromagnéticas, transversais e longitudinais",
-        "a formacao de ecos e a reflexão de pulsos em cordas"
+        "o c�lculo da velocidade do som ou da luz em diferentes meios",
+        "a compara��o entre ondas mec�nicas, eletromagn�ticas, transversais e longitudinais",
+        "a formacao de ecos e a reflex�o de pulsos em cordas"
       ],
       "correta": "a leitura de graficos e tabelas sobre ondas em laboratorio",
-      "comentario": "A aplicação escolhida e a que melhor representa Grandezas da onda.",
+      "comentario": "A aplica��o escolhida e a que melhor representa Grandezas da onda.",
       "tempoEstimado": 60,
       "tags": [
         "ondulatoria",
@@ -1179,8 +1180,8 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Grandezas da onda",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
@@ -1188,13 +1189,13 @@ export const ondulatoria = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual resumo sintetiza melhor a ideia central de Grandezas da onda?",
       "opcoes": [
-        "Em síntese, os elementos que caracterizam uma onda, como amplitude, comprimento de onda, frequência e período.",
-        "Em síntese, a grandeza que indica a rapidez com que a onda se desloca em um meio, relacionando comprimento de onda e frequência.",
-        "Em síntese, a distinção das ondas quanto à natureza, a direção de vibração e a necessidade ou não de meio material.",
-        "Em síntese, o retorno da onda ao meio de origem apos atingir uma superficie ou obstaculo."
+        "Em s�ntese, os elementos que caracterizam uma onda, como amplitude, comprimento de onda, frequ�ncia e per�odo.",
+        "Em s�ntese, a grandeza que indica a rapidez com que a onda se desloca em um meio, relacionando comprimento de onda e frequ�ncia.",
+        "Em s�ntese, a distin��o das ondas quanto � natureza, a dire��o de vibra��o e a necessidade ou n�o de meio material.",
+        "Em s�ntese, o retorno da onda ao meio de origem apos atingir uma superficie ou obstaculo."
       ],
-      "correta": "Em síntese, os elementos que caracterizam uma onda, como amplitude, comprimento de onda, frequência e período.",
-      "comentario": "O resumo correto recupera o núcleo conceitual de Grandezas da onda.",
+      "correta": "Em s�ntese, os elementos que caracterizam uma onda, como amplitude, comprimento de onda, frequ�ncia e per�odo.",
+      "comentario": "O resumo correto recupera o n�cleo conceitual de Grandezas da onda.",
       "tempoEstimado": 65,
       "tags": [
         "ondulatoria",
@@ -1218,22 +1219,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
-      "subtopico": "Velocidade de propagação",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
+      "subtopico": "Velocidade de propaga��o",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Física, Velocidade de propagação pode ser definido(a) como:",
+      "enunciado": "Em F�sica, Velocidade de propaga��o pode ser definido(a) como:",
       "opcoes": [
-        "a grandeza que indica a rapidez com que a onda se desloca em um meio, relacionando comprimento de onda e frequência",
-        "a distinção das ondas quanto à natureza, a direção de vibração e a necessidade ou não de meio material",
+        "a grandeza que indica a rapidez com que a onda se desloca em um meio, relacionando comprimento de onda e frequ�ncia",
+        "a distin��o das ondas quanto � natureza, a dire��o de vibra��o e a necessidade ou n�o de meio material",
         "o retorno da onda ao meio de origem apos atingir uma superficie ou obstaculo",
-        "a mudanca de velocidade e, em muitos casos, de direção de uma onda ao passar de um meio para outro"
+        "a mudanca de velocidade e, em muitos casos, de dire��o de uma onda ao passar de um meio para outro"
       ],
-      "correta": "a grandeza que indica a rapidez com que a onda se desloca em um meio, relacionando comprimento de onda e frequência",
-      "comentario": "Velocidade de propagação refere-se à grandeza que indica a rapidez com que a onda se desloca em um meio, relacionando comprimento de onda e frequência.",
+      "correta": "a grandeza que indica a rapidez com que a onda se desloca em um meio, relacionando comprimento de onda e frequ�ncia",
+      "comentario": "Velocidade de propaga��o refere-se � grandeza que indica a rapidez com que a onda se desloca em um meio, relacionando comprimento de onda e frequ�ncia.",
       "tempoEstimado": 25,
       "tags": [
         "ondulatoria",
@@ -1257,22 +1258,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
-      "subtopico": "Velocidade de propagação",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
+      "subtopico": "Velocidade de propaga��o",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: uma onda percorre uma distancia conhecida enquanto mantém frequência e comprimento de onda definidos Esse caso exemplifica melhor qual subtópico?",
+      "enunciado": "Observe a situa��o: uma onda percorre uma distancia conhecida enquanto mant�m frequ�ncia e comprimento de onda definidos Esse caso exemplifica melhor qual subt�pico?",
       "opcoes": [
-        "Velocidade de propagação",
-        "Classificação das ondas",
-        "Reflexão de ondas",
+        "Velocidade de propaga��o",
+        "Classifica��o das ondas",
+        "Reflex�o de ondas",
         "Refracao de ondas"
       ],
-      "correta": "Velocidade de propagação",
-      "comentario": "A situação apresentada é um exemplo de Velocidade de propagação.",
+      "correta": "Velocidade de propaga��o",
+      "comentario": "A situa��o apresentada � um exemplo de Velocidade de propaga��o.",
       "tempoEstimado": 25,
       "tags": [
         "ondulatoria",
@@ -1296,22 +1297,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
-      "subtopico": "Velocidade de propagação",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
+      "subtopico": "Velocidade de propaga��o",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmação descreve corretamente Velocidade de propagação?",
+      "enunciado": "Qual afirma��o descreve corretamente Velocidade de propaga��o?",
       "opcoes": [
-        "A grandeza que indica a rapidez com que a onda se desloca em um meio, relacionando comprimento de onda e frequência.",
-        "A distinção das ondas quanto à natureza, a direção de vibração e a necessidade ou não de meio material.",
+        "A grandeza que indica a rapidez com que a onda se desloca em um meio, relacionando comprimento de onda e frequ�ncia.",
+        "A distin��o das ondas quanto � natureza, a dire��o de vibra��o e a necessidade ou n�o de meio material.",
         "O retorno da onda ao meio de origem apos atingir uma superficie ou obstaculo.",
-        "A mudanca de velocidade e, em muitos casos, de direção de uma onda ao passar de um meio para outro."
+        "A mudanca de velocidade e, em muitos casos, de dire��o de uma onda ao passar de um meio para outro."
       ],
-      "correta": "A grandeza que indica a rapidez com que a onda se desloca em um meio, relacionando comprimento de onda e frequência.",
-      "comentario": "A alternativa correta resume o conceito de Velocidade de propagação.",
+      "correta": "A grandeza que indica a rapidez com que a onda se desloca em um meio, relacionando comprimento de onda e frequ�ncia.",
+      "comentario": "A alternativa correta resume o conceito de Velocidade de propaga��o.",
       "tempoEstimado": 30,
       "tags": [
         "ondulatoria",
@@ -1335,22 +1336,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
-      "subtopico": "Velocidade de propagação",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
+      "subtopico": "Velocidade de propaga��o",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compatível com Velocidade de propagação?",
+      "enunciado": "Qual alternativa NAO esta compat�vel com Velocidade de propaga��o?",
       "opcoes": [
-        "A distinção das ondas quanto à natureza, a direção de vibração e a necessidade ou não de meio material.",
-        "A grandeza que indica a rapidez com que a onda se desloca em um meio, relacionando comprimento de onda e frequência.",
-        "Calcular a rapidez de propagação de ondas em diferentes meios.",
-        "Ajuda a compreender o cálculo da velocidade do som ou da luz em diferentes meios."
+        "A distin��o das ondas quanto � natureza, a dire��o de vibra��o e a necessidade ou n�o de meio material.",
+        "A grandeza que indica a rapidez com que a onda se desloca em um meio, relacionando comprimento de onda e frequ�ncia.",
+        "Calcular a rapidez de propaga��o de ondas em diferentes meios.",
+        "Ajuda a compreender o c�lculo da velocidade do som ou da luz em diferentes meios."
       ],
-      "correta": "A distinção das ondas quanto à natureza, a direção de vibração e a necessidade ou não de meio material.",
-      "comentario": "A opção incompativel descreve outro subtópico, não Velocidade de propagação.",
+      "correta": "A distin��o das ondas quanto � natureza, a dire��o de vibra��o e a necessidade ou n�o de meio material.",
+      "comentario": "A op��o incompativel descreve outro subt�pico, n�o Velocidade de propaga��o.",
       "tempoEstimado": 30,
       "tags": [
         "ondulatoria",
@@ -1374,22 +1375,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
-      "subtopico": "Velocidade de propagação",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
+      "subtopico": "Velocidade de propaga��o",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar Velocidade de propagação, o foco principal e:",
+      "enunciado": "Ao estudar Velocidade de propaga��o, o foco principal e:",
       "opcoes": [
-        "calcular a rapidez de propagação de ondas em diferentes meios",
-        "classificar ondas como mecânicas ou eletromagnéticas, transversais ou longitudinais",
+        "calcular a rapidez de propaga��o de ondas em diferentes meios",
+        "classificar ondas como mec�nicas ou eletromagn�ticas, transversais ou longitudinais",
         "interpretar o retorno da onda e o comportamento do pulso refletido",
-        "analisar como a passagem entre meios altera a propagação da onda"
+        "analisar como a passagem entre meios altera a propaga��o da onda"
       ],
-      "correta": "calcular a rapidez de propagação de ondas em diferentes meios",
-      "comentario": "Velocidade de propagação concentra-se em calcular a rapidez de propagação de ondas em diferentes meios.",
+      "correta": "calcular a rapidez de propaga��o de ondas em diferentes meios",
+      "comentario": "Velocidade de propaga��o concentra-se em calcular a rapidez de propaga��o de ondas em diferentes meios.",
       "tempoEstimado": 35,
       "tags": [
         "ondulatoria",
@@ -1413,22 +1414,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
-      "subtopico": "Velocidade de propagação",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
+      "subtopico": "Velocidade de propaga��o",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Classificação das ondas trata de a distinção das ondas quanto à natureza, a direção de vibração e a necessidade ou não de meio material, Velocidade de propagação destaca:",
+      "enunciado": "Enquanto Classifica��o das ondas trata de a distin��o das ondas quanto � natureza, a dire��o de vibra��o e a necessidade ou n�o de meio material, Velocidade de propaga��o destaca:",
       "opcoes": [
-        "A grandeza que indica a rapidez com que a onda se desloca em um meio, relacionando comprimento de onda e frequência.",
-        "A distinção das ondas quanto à natureza, a direção de vibração e a necessidade ou não de meio material.",
+        "A grandeza que indica a rapidez com que a onda se desloca em um meio, relacionando comprimento de onda e frequ�ncia.",
+        "A distin��o das ondas quanto � natureza, a dire��o de vibra��o e a necessidade ou n�o de meio material.",
         "O retorno da onda ao meio de origem apos atingir uma superficie ou obstaculo.",
-        "A mudanca de velocidade e, em muitos casos, de direção de uma onda ao passar de um meio para outro."
+        "A mudanca de velocidade e, em muitos casos, de dire��o de uma onda ao passar de um meio para outro."
       ],
-      "correta": "A grandeza que indica a rapidez com que a onda se desloca em um meio, relacionando comprimento de onda e frequência.",
-      "comentario": "A comparação correta mostra a especificidade de Velocidade de propagação.",
+      "correta": "A grandeza que indica a rapidez com que a onda se desloca em um meio, relacionando comprimento de onda e frequ�ncia.",
+      "comentario": "A compara��o correta mostra a especificidade de Velocidade de propaga��o.",
       "tempoEstimado": 35,
       "tags": [
         "ondulatoria",
@@ -1452,22 +1453,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
-      "subtopico": "Velocidade de propagação",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
+      "subtopico": "Velocidade de propaga��o",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma análise de sala, considera-se que uma onda percorre uma distancia conhecida enquanto mantém frequência e comprimento de onda definidos Para interpretar essa situação, é mais adequado mobilizar o conceito de:",
+      "enunciado": "Em uma an�lise de sala, considera-se que uma onda percorre uma distancia conhecida enquanto mant�m frequ�ncia e comprimento de onda definidos Para interpretar essa situa��o, � mais adequado mobilizar o conceito de:",
       "opcoes": [
-        "Velocidade de propagação",
-        "Classificação das ondas",
+        "Velocidade de propaga��o",
+        "Classifica��o das ondas",
         "Refracao de ondas",
         "Difracao"
       ],
-      "correta": "Velocidade de propagação",
-      "comentario": "O caso descrito é interpretado adequadamente por meio de Velocidade de propagação.",
+      "correta": "Velocidade de propaga��o",
+      "comentario": "O caso descrito � interpretado adequadamente por meio de Velocidade de propaga��o.",
       "tempoEstimado": 40,
       "tags": [
         "ondulatoria",
@@ -1491,22 +1492,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
-      "subtopico": "Velocidade de propagação",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
+      "subtopico": "Velocidade de propaga��o",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação prática depende mais diretamente de Velocidade de propagação?",
+      "enunciado": "Qual situa��o pr�tica depende mais diretamente de Velocidade de propaga��o?",
       "opcoes": [
-        "o cálculo da velocidade do som ou da luz em diferentes meios",
-        "a comparação entre ondas mecânicas, eletromagnéticas, transversais e longitudinais",
-        "a formacao de ecos e a reflexão de pulsos em cordas",
-        "a audição em ambientes com obstáculos e pequenas aberturas"
+        "o c�lculo da velocidade do som ou da luz em diferentes meios",
+        "a compara��o entre ondas mec�nicas, eletromagn�ticas, transversais e longitudinais",
+        "a formacao de ecos e a reflex�o de pulsos em cordas",
+        "a audi��o em ambientes com obst�culos e pequenas aberturas"
       ],
-      "correta": "o cálculo da velocidade do som ou da luz em diferentes meios",
-      "comentario": "Velocidade de propagação aparece de modo direto no cálculo da velocidade do som ou da luz em diferentes meios.",
+      "correta": "o c�lculo da velocidade do som ou da luz em diferentes meios",
+      "comentario": "Velocidade de propaga��o aparece de modo direto no c�lculo da velocidade do som ou da luz em diferentes meios.",
       "tempoEstimado": 40,
       "tags": [
         "ondulatoria",
@@ -1530,22 +1531,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
-      "subtopico": "Velocidade de propagação",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
+      "subtopico": "Velocidade de propaga��o",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir de uma onda percorre uma distancia conhecida enquanto mantém frequência e comprimento de onda definidos, qual conclusão está mais correta?",
+      "enunciado": "A partir de uma onda percorre uma distancia conhecida enquanto mant�m frequ�ncia e comprimento de onda definidos, qual conclus�o est� mais correta?",
       "opcoes": [
-        "o caso e explicado por Velocidade de propagação.",
-        "o caso e mais bem entendido por Classificação das ondas.",
-        "a situação anula a importância de Reflexão de ondas.",
-        "o fenômeno exclui qualquer relação com Refração de ondas."
+        "o caso e explicado por Velocidade de propaga��o.",
+        "o caso e mais bem entendido por Classifica��o das ondas.",
+        "a situa��o anula a import�ncia de Reflex�o de ondas.",
+        "o fen�meno exclui qualquer rela��o com Refra��o de ondas."
       ],
-      "correta": "o caso e explicado por Velocidade de propagação.",
-      "comentario": "A conclusão adequada retoma a ideia central de Velocidade de propagação.",
+      "correta": "o caso e explicado por Velocidade de propaga��o.",
+      "comentario": "A conclus�o adequada retoma a ideia central de Velocidade de propaga��o.",
       "tempoEstimado": 45,
       "tags": [
         "ondulatoria",
@@ -1569,22 +1570,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
-      "subtopico": "Velocidade de propagação",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
+      "subtopico": "Velocidade de propaga��o",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Se um grupo fosse pesquisar Velocidade de propagação, qual pergunta orientadora seria a mais adequada?",
+      "enunciado": "Se um grupo fosse pesquisar Velocidade de propaga��o, qual pergunta orientadora seria a mais adequada?",
       "opcoes": [
-        "Como Velocidade de propagação aparece no cálculo da velocidade do som ou da luz em diferentes meios?",
-        "Como Classificação das ondas substitui totalmente o cálculo da velocidade do som ou da luz em diferentes meios?",
-        "Por que Reflexão de ondas torna desnecessário estudar Velocidade de propagação?",
-        "De que modo Refração de ondas elimina toda medida fisica envolvida?"
+        "Como Velocidade de propaga��o aparece no c�lculo da velocidade do som ou da luz em diferentes meios?",
+        "Como Classifica��o das ondas substitui totalmente o c�lculo da velocidade do som ou da luz em diferentes meios?",
+        "Por que Reflex�o de ondas torna desnecess�rio estudar Velocidade de propaga��o?",
+        "De que modo Refra��o de ondas elimina toda medida fisica envolvida?"
       ],
-      "correta": "Como Velocidade de propagação aparece no cálculo da velocidade do som ou da luz em diferentes meios?",
-      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Velocidade de propagação.",
+      "correta": "Como Velocidade de propaga��o aparece no c�lculo da velocidade do som ou da luz em diferentes meios?",
+      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Velocidade de propaga��o.",
       "tempoEstimado": 45,
       "tags": [
         "ondulatoria",
@@ -1608,22 +1609,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
-      "subtopico": "Velocidade de propagação",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
+      "subtopico": "Velocidade de propaga��o",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em Velocidade de propagação e pensar que:",
+      "enunciado": "Um erro comum em Velocidade de propaga��o e pensar que:",
       "opcoes": [
         "a velocidade da onda depende apenas da amplitude do pulso produzido",
         "toda onda precisa de meio material para se propagar",
-        "na reflexão a onda necessariamente muda de meio de propagação",
-        "a refração ocorre sem qualquer alteracao na Velocidade de propagação"
+        "na reflex�o a onda necessariamente muda de meio de propaga��o",
+        "a refra��o ocorre sem qualquer alteracao na Velocidade de propaga��o"
       ],
       "correta": "a velocidade da onda depende apenas da amplitude do pulso produzido",
-      "comentario": "Esse e um equívoco frequente porque contraria a definição correta de Velocidade de propagação.",
+      "comentario": "Esse e um equ�voco frequente porque contraria a defini��o correta de Velocidade de propaga��o.",
       "tempoEstimado": 50,
       "tags": [
         "ondulatoria",
@@ -1647,22 +1648,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
-      "subtopico": "Velocidade de propagação",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
+      "subtopico": "Velocidade de propaga��o",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"aumentar a amplitude de uma onda sempre aumenta sua Velocidade de propagação\". A avaliação mais adequada e:",
+      "enunciado": "Um estudante afirma: \"aumentar a amplitude de uma onda sempre aumenta sua Velocidade de propaga��o\". A avalia��o mais adequada e:",
       "opcoes": [
-        "A afirmação está incorreta, porque a grandeza que indica a rapidez com que a onda se desloca em um meio, relacionando comprimento de onda e frequência.",
-        "A afirmação está correta, pois resume integralmente Velocidade de propagação.",
-        "A afirmação está correta, porque toda situação do tema depende apenas dessa ideia.",
-        "A afirmação está incorreta apenas porque não apresenta uma unidade de medida."
+        "A afirma��o est� incorreta, porque a grandeza que indica a rapidez com que a onda se desloca em um meio, relacionando comprimento de onda e frequ�ncia.",
+        "A afirma��o est� correta, pois resume integralmente Velocidade de propaga��o.",
+        "A afirma��o est� correta, porque toda situa��o do tema depende apenas dessa ideia.",
+        "A afirma��o est� incorreta apenas porque n�o apresenta uma unidade de medida."
       ],
-      "correta": "A afirmação está incorreta, porque a grandeza que indica a rapidez com que a onda se desloca em um meio, relacionando comprimento de onda e frequência.",
-      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre Velocidade de propagação.",
+      "correta": "A afirma��o est� incorreta, porque a grandeza que indica a rapidez com que a onda se desloca em um meio, relacionando comprimento de onda e frequ�ncia.",
+      "comentario": "A fala do estudante apresenta um equ�voco conceitual sobre Velocidade de propaga��o.",
       "tempoEstimado": 55,
       "tags": [
         "ondulatoria",
@@ -1686,22 +1687,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
-      "subtopico": "Velocidade de propagação",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
+      "subtopico": "Velocidade de propaga��o",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se Velocidade de propagação fosse ignorado(a) ao analisar o cálculo da velocidade do som ou da luz em diferentes meios, o resultado mais provável seria:",
+      "enunciado": "Se Velocidade de propaga��o fosse ignorado(a) ao analisar o c�lculo da velocidade do som ou da luz em diferentes meios, o resultado mais prov�vel seria:",
       "opcoes": [
-        "a análise ficaria incompleta e poderia gerar interpretações erradas sobre o cálculo da velocidade do som ou da luz em diferentes meios.",
-        "a situação seria explicada automaticamente por Classificação das ondas, sem necessidade de análise.",
-        "nenhuma interpretacao fisica seria alterada, porque Velocidade de propagação não interfere nesse tipo de problema.",
-        "o fenômeno deixaria de existir apenas por não ser nomeado."
+        "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre o c�lculo da velocidade do som ou da luz em diferentes meios.",
+        "a situa��o seria explicada automaticamente por Classifica��o das ondas, sem necessidade de an�lise.",
+        "nenhuma interpretacao fisica seria alterada, porque Velocidade de propaga��o n�o interfere nesse tipo de problema.",
+        "o fen�meno deixaria de existir apenas por n�o ser nomeado."
       ],
-      "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre o cálculo da velocidade do som ou da luz em diferentes meios.",
-      "comentario": "Ignorar Velocidade de propagação compromete a leitura fisica da situação apresentada.",
+      "correta": "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre o c�lculo da velocidade do som ou da luz em diferentes meios.",
+      "comentario": "Ignorar Velocidade de propaga��o compromete a leitura fisica da situa��o apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "ondulatoria",
@@ -1725,22 +1726,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
-      "subtopico": "Velocidade de propagação",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
+      "subtopico": "Velocidade de propaga��o",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma aplicação cotidiana ou escolar, Velocidade de propagação ajuda principalmente a compreender:",
+      "enunciado": "Em uma aplica��o cotidiana ou escolar, Velocidade de propaga��o ajuda principalmente a compreender:",
       "opcoes": [
-        "o cálculo da velocidade do som ou da luz em diferentes meios",
-        "a comparação entre ondas mecânicas, eletromagnéticas, transversais e longitudinais",
-        "a formacao de ecos e a reflexão de pulsos em cordas",
-        "as mudancas de direção de ondas ao passarem entre meios distintos"
+        "o c�lculo da velocidade do som ou da luz em diferentes meios",
+        "a compara��o entre ondas mec�nicas, eletromagn�ticas, transversais e longitudinais",
+        "a formacao de ecos e a reflex�o de pulsos em cordas",
+        "as mudancas de dire��o de ondas ao passarem entre meios distintos"
       ],
-      "correta": "o cálculo da velocidade do som ou da luz em diferentes meios",
-      "comentario": "A aplicação escolhida e a que melhor representa Velocidade de propagação.",
+      "correta": "o c�lculo da velocidade do som ou da luz em diferentes meios",
+      "comentario": "A aplica��o escolhida e a que melhor representa Velocidade de propaga��o.",
       "tempoEstimado": 60,
       "tags": [
         "ondulatoria",
@@ -1764,22 +1765,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
-      "subtopico": "Velocidade de propagação",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
+      "subtopico": "Velocidade de propaga��o",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual resumo sintetiza melhor a ideia central de Velocidade de propagação?",
+      "enunciado": "Qual resumo sintetiza melhor a ideia central de Velocidade de propaga��o?",
       "opcoes": [
-        "Em síntese, a grandeza que indica a rapidez com que a onda se desloca em um meio, relacionando comprimento de onda e frequência.",
-        "Em síntese, a distinção das ondas quanto à natureza, a direção de vibração e a necessidade ou não de meio material.",
-        "Em síntese, o retorno da onda ao meio de origem apos atingir uma superficie ou obstaculo.",
-        "Em síntese, a mudanca de velocidade e, em muitos casos, de direção de uma onda ao passar de um meio para outro."
+        "Em s�ntese, a grandeza que indica a rapidez com que a onda se desloca em um meio, relacionando comprimento de onda e frequ�ncia.",
+        "Em s�ntese, a distin��o das ondas quanto � natureza, a dire��o de vibra��o e a necessidade ou n�o de meio material.",
+        "Em s�ntese, o retorno da onda ao meio de origem apos atingir uma superficie ou obstaculo.",
+        "Em s�ntese, a mudanca de velocidade e, em muitos casos, de dire��o de uma onda ao passar de um meio para outro."
       ],
-      "correta": "Em síntese, a grandeza que indica a rapidez com que a onda se desloca em um meio, relacionando comprimento de onda e frequência.",
-      "comentario": "O resumo correto recupera o núcleo conceitual de Velocidade de propagação.",
+      "correta": "Em s�ntese, a grandeza que indica a rapidez com que a onda se desloca em um meio, relacionando comprimento de onda e frequ�ncia.",
+      "comentario": "O resumo correto recupera o n�cleo conceitual de Velocidade de propaga��o.",
       "tempoEstimado": 65,
       "tags": [
         "ondulatoria",
@@ -1803,22 +1804,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
-      "subtopico": "Classificação das ondas",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
+      "subtopico": "Classifica��o das ondas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Física, Classificação das ondas pode ser definido(a) como:",
+      "enunciado": "Em F�sica, Classifica��o das ondas pode ser definido(a) como:",
       "opcoes": [
-        "a distinção das ondas quanto à natureza, a direção de vibração e a necessidade ou não de meio material",
+        "a distin��o das ondas quanto � natureza, a dire��o de vibra��o e a necessidade ou n�o de meio material",
         "o retorno da onda ao meio de origem apos atingir uma superficie ou obstaculo",
-        "a mudanca de velocidade e, em muitos casos, de direção de uma onda ao passar de um meio para outro",
-        "a capacidade de a onda contornar obstáculos ou espalhar-se ao atravessar fendas"
+        "a mudanca de velocidade e, em muitos casos, de dire��o de uma onda ao passar de um meio para outro",
+        "a capacidade de a onda contornar obst�culos ou espalhar-se ao atravessar fendas"
       ],
-      "correta": "a distinção das ondas quanto à natureza, a direção de vibração e a necessidade ou não de meio material",
-      "comentario": "Classificação das ondas refere-se à distinção das ondas quanto à natureza, a direção de vibração e a necessidade ou não de meio material.",
+      "correta": "a distin��o das ondas quanto � natureza, a dire��o de vibra��o e a necessidade ou n�o de meio material",
+      "comentario": "Classifica��o das ondas refere-se � distin��o das ondas quanto � natureza, a dire��o de vibra��o e a necessidade ou n�o de meio material.",
       "tempoEstimado": 25,
       "tags": [
         "ondulatoria",
@@ -1842,22 +1843,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
-      "subtopico": "Classificação das ondas",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
+      "subtopico": "Classifica��o das ondas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: uma turma compara som, luz e vibrações em uma corda para identificar semelhanças e diferenças Esse caso exemplifica melhor qual subtópico?",
+      "enunciado": "Observe a situa��o: uma turma compara som, luz e vibra��es em uma corda para identificar semelhan�as e diferen�as Esse caso exemplifica melhor qual subt�pico?",
       "opcoes": [
-        "Classificação das ondas",
-        "Reflexão de ondas",
+        "Classifica��o das ondas",
+        "Reflex�o de ondas",
         "Refracao de ondas",
         "Difracao"
       ],
-      "correta": "Classificação das ondas",
-      "comentario": "A situação apresentada é um exemplo de Classificação das ondas.",
+      "correta": "Classifica��o das ondas",
+      "comentario": "A situa��o apresentada � um exemplo de Classifica��o das ondas.",
       "tempoEstimado": 25,
       "tags": [
         "ondulatoria",
@@ -1881,22 +1882,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
-      "subtopico": "Classificação das ondas",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
+      "subtopico": "Classifica��o das ondas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmação descreve corretamente Classificação das ondas?",
+      "enunciado": "Qual afirma��o descreve corretamente Classifica��o das ondas?",
       "opcoes": [
-        "A distinção das ondas quanto à natureza, a direção de vibração e a necessidade ou não de meio material.",
+        "A distin��o das ondas quanto � natureza, a dire��o de vibra��o e a necessidade ou n�o de meio material.",
         "O retorno da onda ao meio de origem apos atingir uma superficie ou obstaculo.",
-        "A mudanca de velocidade e, em muitos casos, de direção de uma onda ao passar de um meio para outro.",
-        "A capacidade de a onda contornar obstáculos ou espalhar-se ao atravessar fendas."
+        "A mudanca de velocidade e, em muitos casos, de dire��o de uma onda ao passar de um meio para outro.",
+        "A capacidade de a onda contornar obst�culos ou espalhar-se ao atravessar fendas."
       ],
-      "correta": "A distinção das ondas quanto à natureza, a direção de vibração e a necessidade ou não de meio material.",
-      "comentario": "A alternativa correta resume o conceito de Classificação das ondas.",
+      "correta": "A distin��o das ondas quanto � natureza, a dire��o de vibra��o e a necessidade ou n�o de meio material.",
+      "comentario": "A alternativa correta resume o conceito de Classifica��o das ondas.",
       "tempoEstimado": 30,
       "tags": [
         "ondulatoria",
@@ -1920,22 +1921,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
-      "subtopico": "Classificação das ondas",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
+      "subtopico": "Classifica��o das ondas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compatível com Classificação das ondas?",
+      "enunciado": "Qual alternativa NAO esta compat�vel com Classifica��o das ondas?",
       "opcoes": [
         "O retorno da onda ao meio de origem apos atingir uma superficie ou obstaculo.",
-        "A distinção das ondas quanto à natureza, a direção de vibração e a necessidade ou não de meio material.",
-        "Classificar ondas como mecânicas ou eletromagnéticas, transversais ou longitudinais.",
-        "Ajuda a compreender a comparação entre ondas mecânicas, eletromagnéticas, transversais e longitudinais."
+        "A distin��o das ondas quanto � natureza, a dire��o de vibra��o e a necessidade ou n�o de meio material.",
+        "Classificar ondas como mec�nicas ou eletromagn�ticas, transversais ou longitudinais.",
+        "Ajuda a compreender a compara��o entre ondas mec�nicas, eletromagn�ticas, transversais e longitudinais."
       ],
       "correta": "O retorno da onda ao meio de origem apos atingir uma superficie ou obstaculo.",
-      "comentario": "A opção incompativel descreve outro subtópico, não Classificação das ondas.",
+      "comentario": "A op��o incompativel descreve outro subt�pico, n�o Classifica��o das ondas.",
       "tempoEstimado": 30,
       "tags": [
         "ondulatoria",
@@ -1959,22 +1960,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
-      "subtopico": "Classificação das ondas",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
+      "subtopico": "Classifica��o das ondas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar Classificação das ondas, o foco principal e:",
+      "enunciado": "Ao estudar Classifica��o das ondas, o foco principal e:",
       "opcoes": [
-        "classificar ondas como mecânicas ou eletromagnéticas, transversais ou longitudinais",
+        "classificar ondas como mec�nicas ou eletromagn�ticas, transversais ou longitudinais",
         "interpretar o retorno da onda e o comportamento do pulso refletido",
-        "analisar como a passagem entre meios altera a propagação da onda",
-        "explicar o espalhamento das ondas diante de obstáculos e aberturas"
+        "analisar como a passagem entre meios altera a propaga��o da onda",
+        "explicar o espalhamento das ondas diante de obst�culos e aberturas"
       ],
-      "correta": "classificar ondas como mecânicas ou eletromagnéticas, transversais ou longitudinais",
-      "comentario": "Classificação das ondas concentra-se em classificar ondas como mecânicas ou eletromagnéticas, transversais ou longitudinais.",
+      "correta": "classificar ondas como mec�nicas ou eletromagn�ticas, transversais ou longitudinais",
+      "comentario": "Classifica��o das ondas concentra-se em classificar ondas como mec�nicas ou eletromagn�ticas, transversais ou longitudinais.",
       "tempoEstimado": 35,
       "tags": [
         "ondulatoria",
@@ -1998,22 +1999,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
-      "subtopico": "Classificação das ondas",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
+      "subtopico": "Classifica��o das ondas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Reflexão de ondas trata de o retorno da onda ao meio de origem apos atingir uma superficie ou obstaculo, Classificação das ondas destaca:",
+      "enunciado": "Enquanto Reflex�o de ondas trata de o retorno da onda ao meio de origem apos atingir uma superficie ou obstaculo, Classifica��o das ondas destaca:",
       "opcoes": [
-        "A distinção das ondas quanto à natureza, a direção de vibração e a necessidade ou não de meio material.",
+        "A distin��o das ondas quanto � natureza, a dire��o de vibra��o e a necessidade ou n�o de meio material.",
         "O retorno da onda ao meio de origem apos atingir uma superficie ou obstaculo.",
-        "A mudanca de velocidade e, em muitos casos, de direção de uma onda ao passar de um meio para outro.",
-        "A capacidade de a onda contornar obstáculos ou espalhar-se ao atravessar fendas."
+        "A mudanca de velocidade e, em muitos casos, de dire��o de uma onda ao passar de um meio para outro.",
+        "A capacidade de a onda contornar obst�culos ou espalhar-se ao atravessar fendas."
       ],
-      "correta": "A distinção das ondas quanto à natureza, a direção de vibração e a necessidade ou não de meio material.",
-      "comentario": "A comparação correta mostra a especificidade de Classificação das ondas.",
+      "correta": "A distin��o das ondas quanto � natureza, a dire��o de vibra��o e a necessidade ou n�o de meio material.",
+      "comentario": "A compara��o correta mostra a especificidade de Classifica��o das ondas.",
       "tempoEstimado": 35,
       "tags": [
         "ondulatoria",
@@ -2037,22 +2038,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
-      "subtopico": "Classificação das ondas",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
+      "subtopico": "Classifica��o das ondas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma análise de sala, considera-se que uma turma compara som, luz e vibrações em uma corda para identificar semelhanças e diferenças Para interpretar essa situação, é mais adequado mobilizar o conceito de:",
+      "enunciado": "Em uma an�lise de sala, considera-se que uma turma compara som, luz e vibra��es em uma corda para identificar semelhan�as e diferen�as Para interpretar essa situa��o, � mais adequado mobilizar o conceito de:",
       "opcoes": [
-        "Classificação das ondas",
-        "Reflexão de ondas",
+        "Classifica��o das ondas",
+        "Reflex�o de ondas",
         "Difracao",
         "Interferencia"
       ],
-      "correta": "Classificação das ondas",
-      "comentario": "O caso descrito é interpretado adequadamente por meio de Classificação das ondas.",
+      "correta": "Classifica��o das ondas",
+      "comentario": "O caso descrito � interpretado adequadamente por meio de Classifica��o das ondas.",
       "tempoEstimado": 40,
       "tags": [
         "ondulatoria",
@@ -2076,22 +2077,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
-      "subtopico": "Classificação das ondas",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
+      "subtopico": "Classifica��o das ondas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação prática depende mais diretamente de Classificação das ondas?",
+      "enunciado": "Qual situa��o pr�tica depende mais diretamente de Classifica��o das ondas?",
       "opcoes": [
-        "a comparação entre ondas mecânicas, eletromagnéticas, transversais e longitudinais",
-        "a formacao de ecos e a reflexão de pulsos em cordas",
-        "as mudancas de direção de ondas ao passarem entre meios distintos",
-        "o cancelamento de ruído e os padrões de franjas em experimentos ondulatórios"
+        "a compara��o entre ondas mec�nicas, eletromagn�ticas, transversais e longitudinais",
+        "a formacao de ecos e a reflex�o de pulsos em cordas",
+        "as mudancas de dire��o de ondas ao passarem entre meios distintos",
+        "o cancelamento de ru�do e os padr�es de franjas em experimentos ondulat�rios"
       ],
-      "correta": "a comparação entre ondas mecânicas, eletromagnéticas, transversais e longitudinais",
-      "comentario": "Classificação das ondas aparece de modo direto na comparação entre ondas mecânicas, eletromagnéticas, transversais e longitudinais.",
+      "correta": "a compara��o entre ondas mec�nicas, eletromagn�ticas, transversais e longitudinais",
+      "comentario": "Classifica��o das ondas aparece de modo direto na compara��o entre ondas mec�nicas, eletromagn�ticas, transversais e longitudinais.",
       "tempoEstimado": 40,
       "tags": [
         "ondulatoria",
@@ -2115,22 +2116,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
-      "subtopico": "Classificação das ondas",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
+      "subtopico": "Classifica��o das ondas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir de uma turma compara som, luz e vibrações em uma corda para identificar semelhanças e diferenças, qual conclusão está mais correta?",
+      "enunciado": "A partir de uma turma compara som, luz e vibra��es em uma corda para identificar semelhan�as e diferen�as, qual conclus�o est� mais correta?",
       "opcoes": [
-        "o caso e explicado por Classificação das ondas.",
-        "o caso e mais bem entendido por Reflexão de ondas.",
-        "a situação anula a importância de Refração de ondas.",
-        "o fenômeno exclui qualquer relação com Difração."
+        "o caso e explicado por Classifica��o das ondas.",
+        "o caso e mais bem entendido por Reflex�o de ondas.",
+        "a situa��o anula a import�ncia de Refra��o de ondas.",
+        "o fen�meno exclui qualquer rela��o com Difra��o."
       ],
-      "correta": "o caso e explicado por Classificação das ondas.",
-      "comentario": "A conclusão adequada retoma a ideia central de Classificação das ondas.",
+      "correta": "o caso e explicado por Classifica��o das ondas.",
+      "comentario": "A conclus�o adequada retoma a ideia central de Classifica��o das ondas.",
       "tempoEstimado": 45,
       "tags": [
         "ondulatoria",
@@ -2154,22 +2155,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
-      "subtopico": "Classificação das ondas",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
+      "subtopico": "Classifica��o das ondas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Se um grupo fosse pesquisar Classificação das ondas, qual pergunta orientadora seria a mais adequada?",
+      "enunciado": "Se um grupo fosse pesquisar Classifica��o das ondas, qual pergunta orientadora seria a mais adequada?",
       "opcoes": [
-        "Como Classificação das ondas aparece na comparação entre ondas mecânicas, eletromagnéticas, transversais e longitudinais?",
-        "Como Reflexão de ondas substitui totalmente a comparação entre ondas mecânicas, eletromagnéticas, transversais e longitudinais?",
-        "Por que Refração de ondas torna desnecessário estudar Classificação das ondas?",
-        "De que modo Difração elimina toda medida fisica envolvida?"
+        "Como Classifica��o das ondas aparece na compara��o entre ondas mec�nicas, eletromagn�ticas, transversais e longitudinais?",
+        "Como Reflex�o de ondas substitui totalmente a compara��o entre ondas mec�nicas, eletromagn�ticas, transversais e longitudinais?",
+        "Por que Refra��o de ondas torna desnecess�rio estudar Classifica��o das ondas?",
+        "De que modo Difra��o elimina toda medida fisica envolvida?"
       ],
-      "correta": "Como Classificação das ondas aparece na comparação entre ondas mecânicas, eletromagnéticas, transversais e longitudinais?",
-      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Classificação das ondas.",
+      "correta": "Como Classifica��o das ondas aparece na compara��o entre ondas mec�nicas, eletromagn�ticas, transversais e longitudinais?",
+      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Classifica��o das ondas.",
       "tempoEstimado": 45,
       "tags": [
         "ondulatoria",
@@ -2193,22 +2194,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
-      "subtopico": "Classificação das ondas",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
+      "subtopico": "Classifica��o das ondas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em Classificação das ondas e pensar que:",
+      "enunciado": "Um erro comum em Classifica��o das ondas e pensar que:",
       "opcoes": [
         "toda onda precisa de meio material para se propagar",
-        "na reflexão a onda necessariamente muda de meio de propagação",
-        "a refração ocorre sem qualquer alteracao na Velocidade de propagação",
-        "a Difração so pode ocorrer com a luz e nunca com o som"
+        "na reflex�o a onda necessariamente muda de meio de propaga��o",
+        "a refra��o ocorre sem qualquer alteracao na Velocidade de propaga��o",
+        "a Difra��o so pode ocorrer com a luz e nunca com o som"
       ],
       "correta": "toda onda precisa de meio material para se propagar",
-      "comentario": "Esse e um equívoco frequente porque contraria a definição correta de Classificação das ondas.",
+      "comentario": "Esse e um equ�voco frequente porque contraria a defini��o correta de Classifica��o das ondas.",
       "tempoEstimado": 50,
       "tags": [
         "ondulatoria",
@@ -2232,22 +2233,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
-      "subtopico": "Classificação das ondas",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
+      "subtopico": "Classifica��o das ondas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"todas as ondas precisam de um meio material, inclusive a luz no vacuo\". A avaliação mais adequada e:",
+      "enunciado": "Um estudante afirma: \"todas as ondas precisam de um meio material, inclusive a luz no vacuo\". A avalia��o mais adequada e:",
       "opcoes": [
-        "A afirmação está incorreta, porque a distinção das ondas quanto à natureza, a direção de vibração e a necessidade ou não de meio material.",
-        "A afirmação está correta, pois resume integralmente Classificação das ondas.",
-        "A afirmação está correta, porque toda situação do tema depende apenas dessa ideia.",
-        "A afirmação está incorreta apenas porque não apresenta uma unidade de medida."
+        "A afirma��o est� incorreta, porque a distin��o das ondas quanto � natureza, a dire��o de vibra��o e a necessidade ou n�o de meio material.",
+        "A afirma��o est� correta, pois resume integralmente Classifica��o das ondas.",
+        "A afirma��o est� correta, porque toda situa��o do tema depende apenas dessa ideia.",
+        "A afirma��o est� incorreta apenas porque n�o apresenta uma unidade de medida."
       ],
-      "correta": "A afirmação está incorreta, porque a distinção das ondas quanto à natureza, a direção de vibração e a necessidade ou não de meio material.",
-      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre Classificação das ondas.",
+      "correta": "A afirma��o est� incorreta, porque a distin��o das ondas quanto � natureza, a dire��o de vibra��o e a necessidade ou n�o de meio material.",
+      "comentario": "A fala do estudante apresenta um equ�voco conceitual sobre Classifica��o das ondas.",
       "tempoEstimado": 55,
       "tags": [
         "ondulatoria",
@@ -2271,22 +2272,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
-      "subtopico": "Classificação das ondas",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
+      "subtopico": "Classifica��o das ondas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se Classificação das ondas fosse ignorado(a) ao analisar a comparação entre ondas mecânicas, eletromagnéticas, transversais e longitudinais, o resultado mais provável seria:",
+      "enunciado": "Se Classifica��o das ondas fosse ignorado(a) ao analisar a compara��o entre ondas mec�nicas, eletromagn�ticas, transversais e longitudinais, o resultado mais prov�vel seria:",
       "opcoes": [
-        "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a comparação entre ondas mecânicas, eletromagnéticas, transversais e longitudinais.",
-        "a situação seria explicada automaticamente por Reflexão de ondas, sem necessidade de análise.",
-        "nenhuma interpretacao fisica seria alterada, porque Classificação das ondas não interfere nesse tipo de problema.",
-        "o fenômeno deixaria de existir apenas por não ser nomeado."
+        "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre a compara��o entre ondas mec�nicas, eletromagn�ticas, transversais e longitudinais.",
+        "a situa��o seria explicada automaticamente por Reflex�o de ondas, sem necessidade de an�lise.",
+        "nenhuma interpretacao fisica seria alterada, porque Classifica��o das ondas n�o interfere nesse tipo de problema.",
+        "o fen�meno deixaria de existir apenas por n�o ser nomeado."
       ],
-      "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a comparação entre ondas mecânicas, eletromagnéticas, transversais e longitudinais.",
-      "comentario": "Ignorar Classificação das ondas compromete a leitura fisica da situação apresentada.",
+      "correta": "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre a compara��o entre ondas mec�nicas, eletromagn�ticas, transversais e longitudinais.",
+      "comentario": "Ignorar Classifica��o das ondas compromete a leitura fisica da situa��o apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "ondulatoria",
@@ -2310,22 +2311,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
-      "subtopico": "Classificação das ondas",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
+      "subtopico": "Classifica��o das ondas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma aplicação cotidiana ou escolar, Classificação das ondas ajuda principalmente a compreender:",
+      "enunciado": "Em uma aplica��o cotidiana ou escolar, Classifica��o das ondas ajuda principalmente a compreender:",
       "opcoes": [
-        "a comparação entre ondas mecânicas, eletromagnéticas, transversais e longitudinais",
-        "a formacao de ecos e a reflexão de pulsos em cordas",
-        "as mudancas de direção de ondas ao passarem entre meios distintos",
-        "a audição em ambientes com obstáculos e pequenas aberturas"
+        "a compara��o entre ondas mec�nicas, eletromagn�ticas, transversais e longitudinais",
+        "a formacao de ecos e a reflex�o de pulsos em cordas",
+        "as mudancas de dire��o de ondas ao passarem entre meios distintos",
+        "a audi��o em ambientes com obst�culos e pequenas aberturas"
       ],
-      "correta": "a comparação entre ondas mecânicas, eletromagnéticas, transversais e longitudinais",
-      "comentario": "A aplicação escolhida e a que melhor representa Classificação das ondas.",
+      "correta": "a compara��o entre ondas mec�nicas, eletromagn�ticas, transversais e longitudinais",
+      "comentario": "A aplica��o escolhida e a que melhor representa Classifica��o das ondas.",
       "tempoEstimado": 60,
       "tags": [
         "ondulatoria",
@@ -2349,22 +2350,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
-      "subtopico": "Classificação das ondas",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
+      "subtopico": "Classifica��o das ondas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual resumo sintetiza melhor a ideia central de Classificação das ondas?",
+      "enunciado": "Qual resumo sintetiza melhor a ideia central de Classifica��o das ondas?",
       "opcoes": [
-        "Em síntese, a distinção das ondas quanto à natureza, a direção de vibração e a necessidade ou não de meio material.",
-        "Em síntese, o retorno da onda ao meio de origem apos atingir uma superficie ou obstaculo.",
-        "Em síntese, a mudanca de velocidade e, em muitos casos, de direção de uma onda ao passar de um meio para outro.",
-        "Em síntese, a capacidade de a onda contornar obstáculos ou espalhar-se ao atravessar fendas."
+        "Em s�ntese, a distin��o das ondas quanto � natureza, a dire��o de vibra��o e a necessidade ou n�o de meio material.",
+        "Em s�ntese, o retorno da onda ao meio de origem apos atingir uma superficie ou obstaculo.",
+        "Em s�ntese, a mudanca de velocidade e, em muitos casos, de dire��o de uma onda ao passar de um meio para outro.",
+        "Em s�ntese, a capacidade de a onda contornar obst�culos ou espalhar-se ao atravessar fendas."
       ],
-      "correta": "Em síntese, a distinção das ondas quanto à natureza, a direção de vibração e a necessidade ou não de meio material.",
-      "comentario": "O resumo correto recupera o núcleo conceitual de Classificação das ondas.",
+      "correta": "Em s�ntese, a distin��o das ondas quanto � natureza, a dire��o de vibra��o e a necessidade ou n�o de meio material.",
+      "comentario": "O resumo correto recupera o n�cleo conceitual de Classifica��o das ondas.",
       "tempoEstimado": 65,
       "tags": [
         "ondulatoria",
@@ -2388,22 +2389,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
-      "subtopico": "Reflexão de ondas",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
+      "subtopico": "Reflex�o de ondas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Física, Reflexão de ondas pode ser definido(a) como:",
+      "enunciado": "Em F�sica, Reflex�o de ondas pode ser definido(a) como:",
       "opcoes": [
         "o retorno da onda ao meio de origem apos atingir uma superficie ou obstaculo",
-        "a mudanca de velocidade e, em muitos casos, de direção de uma onda ao passar de um meio para outro",
-        "a capacidade de a onda contornar obstáculos ou espalhar-se ao atravessar fendas",
+        "a mudanca de velocidade e, em muitos casos, de dire��o de uma onda ao passar de um meio para outro",
+        "a capacidade de a onda contornar obst�culos ou espalhar-se ao atravessar fendas",
         "a superposicao de ondas que produz reforco ou cancelamento na onda resultante"
       ],
       "correta": "o retorno da onda ao meio de origem apos atingir uma superficie ou obstaculo",
-      "comentario": "Reflexão de ondas refere-se ao retorno da onda ao meio de origem apos atingir uma superficie ou obstaculo.",
+      "comentario": "Reflex�o de ondas refere-se ao retorno da onda ao meio de origem apos atingir uma superficie ou obstaculo.",
       "tempoEstimado": 25,
       "tags": [
         "ondulatoria",
@@ -2427,22 +2428,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
-      "subtopico": "Reflexão de ondas",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
+      "subtopico": "Reflex�o de ondas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: um pulso em uma mola retorna depois de alcançar a extremidade fixa Esse caso exemplifica melhor qual subtópico?",
+      "enunciado": "Observe a situa��o: um pulso em uma mola retorna depois de alcan�ar a extremidade fixa Esse caso exemplifica melhor qual subt�pico?",
       "opcoes": [
-        "Reflexão de ondas",
+        "Reflex�o de ondas",
         "Refracao de ondas",
         "Difracao",
         "Interferencia"
       ],
-      "correta": "Reflexão de ondas",
-      "comentario": "A situação apresentada é um exemplo de Reflexão de ondas.",
+      "correta": "Reflex�o de ondas",
+      "comentario": "A situa��o apresentada � um exemplo de Reflex�o de ondas.",
       "tempoEstimado": 25,
       "tags": [
         "ondulatoria",
@@ -2466,22 +2467,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
-      "subtopico": "Reflexão de ondas",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
+      "subtopico": "Reflex�o de ondas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmação descreve corretamente Reflexão de ondas?",
+      "enunciado": "Qual afirma��o descreve corretamente Reflex�o de ondas?",
       "opcoes": [
         "O retorno da onda ao meio de origem apos atingir uma superficie ou obstaculo.",
-        "A mudanca de velocidade e, em muitos casos, de direção de uma onda ao passar de um meio para outro.",
-        "A capacidade de a onda contornar obstáculos ou espalhar-se ao atravessar fendas.",
+        "A mudanca de velocidade e, em muitos casos, de dire��o de uma onda ao passar de um meio para outro.",
+        "A capacidade de a onda contornar obst�culos ou espalhar-se ao atravessar fendas.",
         "A superposicao de ondas que produz reforco ou cancelamento na onda resultante."
       ],
       "correta": "O retorno da onda ao meio de origem apos atingir uma superficie ou obstaculo.",
-      "comentario": "A alternativa correta resume o conceito de Reflexão de ondas.",
+      "comentario": "A alternativa correta resume o conceito de Reflex�o de ondas.",
       "tempoEstimado": 30,
       "tags": [
         "ondulatoria",
@@ -2505,22 +2506,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
-      "subtopico": "Reflexão de ondas",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
+      "subtopico": "Reflex�o de ondas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compatível com Reflexão de ondas?",
+      "enunciado": "Qual alternativa NAO esta compat�vel com Reflex�o de ondas?",
       "opcoes": [
-        "A mudanca de velocidade e, em muitos casos, de direção de uma onda ao passar de um meio para outro.",
+        "A mudanca de velocidade e, em muitos casos, de dire��o de uma onda ao passar de um meio para outro.",
         "O retorno da onda ao meio de origem apos atingir uma superficie ou obstaculo.",
         "Interpretar o retorno da onda e o comportamento do pulso refletido.",
-        "Ajuda a compreender a formacao de ecos e a reflexão de pulsos em cordas."
+        "Ajuda a compreender a formacao de ecos e a reflex�o de pulsos em cordas."
       ],
-      "correta": "A mudanca de velocidade e, em muitos casos, de direção de uma onda ao passar de um meio para outro.",
-      "comentario": "A opção incompativel descreve outro subtópico, não Reflexão de ondas.",
+      "correta": "A mudanca de velocidade e, em muitos casos, de dire��o de uma onda ao passar de um meio para outro.",
+      "comentario": "A op��o incompativel descreve outro subt�pico, n�o Reflex�o de ondas.",
       "tempoEstimado": 30,
       "tags": [
         "ondulatoria",
@@ -2544,22 +2545,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
-      "subtopico": "Reflexão de ondas",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
+      "subtopico": "Reflex�o de ondas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar Reflexão de ondas, o foco principal e:",
+      "enunciado": "Ao estudar Reflex�o de ondas, o foco principal e:",
       "opcoes": [
         "interpretar o retorno da onda e o comportamento do pulso refletido",
-        "analisar como a passagem entre meios altera a propagação da onda",
-        "explicar o espalhamento das ondas diante de obstáculos e aberturas",
+        "analisar como a passagem entre meios altera a propaga��o da onda",
+        "explicar o espalhamento das ondas diante de obst�culos e aberturas",
         "interpretar a combinacao de ondas e seus efeitos construtivos ou destrutivos"
       ],
       "correta": "interpretar o retorno da onda e o comportamento do pulso refletido",
-      "comentario": "Reflexão de ondas concentra-se em interpretar o retorno da onda e o comportamento do pulso refletido.",
+      "comentario": "Reflex�o de ondas concentra-se em interpretar o retorno da onda e o comportamento do pulso refletido.",
       "tempoEstimado": 35,
       "tags": [
         "ondulatoria",
@@ -2583,22 +2584,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
-      "subtopico": "Reflexão de ondas",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
+      "subtopico": "Reflex�o de ondas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Refracao de ondas trata de a mudanca de velocidade e, em muitos casos, de direção de uma onda ao passar de um meio para outro, Reflexão de ondas destaca:",
+      "enunciado": "Enquanto Refracao de ondas trata de a mudanca de velocidade e, em muitos casos, de dire��o de uma onda ao passar de um meio para outro, Reflex�o de ondas destaca:",
       "opcoes": [
         "O retorno da onda ao meio de origem apos atingir uma superficie ou obstaculo.",
-        "A mudanca de velocidade e, em muitos casos, de direção de uma onda ao passar de um meio para outro.",
-        "A capacidade de a onda contornar obstáculos ou espalhar-se ao atravessar fendas.",
+        "A mudanca de velocidade e, em muitos casos, de dire��o de uma onda ao passar de um meio para outro.",
+        "A capacidade de a onda contornar obst�culos ou espalhar-se ao atravessar fendas.",
         "A superposicao de ondas que produz reforco ou cancelamento na onda resultante."
       ],
       "correta": "O retorno da onda ao meio de origem apos atingir uma superficie ou obstaculo.",
-      "comentario": "A comparação correta mostra a especificidade de Reflexão de ondas.",
+      "comentario": "A compara��o correta mostra a especificidade de Reflex�o de ondas.",
       "tempoEstimado": 35,
       "tags": [
         "ondulatoria",
@@ -2622,22 +2623,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
-      "subtopico": "Reflexão de ondas",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
+      "subtopico": "Reflex�o de ondas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma análise de sala, considera-se que um pulso em uma mola retorna depois de alcançar a extremidade fixa Para interpretar essa situação, é mais adequado mobilizar o conceito de:",
+      "enunciado": "Em uma an�lise de sala, considera-se que um pulso em uma mola retorna depois de alcan�ar a extremidade fixa Para interpretar essa situa��o, � mais adequado mobilizar o conceito de:",
       "opcoes": [
-        "Reflexão de ondas",
+        "Reflex�o de ondas",
         "Refracao de ondas",
         "Interferencia",
         "Ressonancia"
       ],
-      "correta": "Reflexão de ondas",
-      "comentario": "O caso descrito é interpretado adequadamente por meio de Reflexão de ondas.",
+      "correta": "Reflex�o de ondas",
+      "comentario": "O caso descrito � interpretado adequadamente por meio de Reflex�o de ondas.",
       "tempoEstimado": 40,
       "tags": [
         "ondulatoria",
@@ -2661,22 +2662,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
-      "subtopico": "Reflexão de ondas",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
+      "subtopico": "Reflex�o de ondas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação prática depende mais diretamente de Reflexão de ondas?",
+      "enunciado": "Qual situa��o pr�tica depende mais diretamente de Reflex�o de ondas?",
       "opcoes": [
-        "a formacao de ecos e a reflexão de pulsos em cordas",
-        "as mudancas de direção de ondas ao passarem entre meios distintos",
-        "a audição em ambientes com obstáculos e pequenas aberturas",
-        "a afinação de instrumentos musicais e as vibrações em pontes e estruturas"
+        "a formacao de ecos e a reflex�o de pulsos em cordas",
+        "as mudancas de dire��o de ondas ao passarem entre meios distintos",
+        "a audi��o em ambientes com obst�culos e pequenas aberturas",
+        "a afina��o de instrumentos musicais e as vibra��es em pontes e estruturas"
       ],
-      "correta": "a formacao de ecos e a reflexão de pulsos em cordas",
-      "comentario": "Reflexão de ondas aparece de modo direto na formacao de ecos e a reflexão de pulsos em cordas.",
+      "correta": "a formacao de ecos e a reflex�o de pulsos em cordas",
+      "comentario": "Reflex�o de ondas aparece de modo direto na formacao de ecos e a reflex�o de pulsos em cordas.",
       "tempoEstimado": 40,
       "tags": [
         "ondulatoria",
@@ -2700,22 +2701,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
-      "subtopico": "Reflexão de ondas",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
+      "subtopico": "Reflex�o de ondas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir de um pulso em uma mola retorna depois de alcançar a extremidade fixa, qual conclusão está mais correta?",
+      "enunciado": "A partir de um pulso em uma mola retorna depois de alcan�ar a extremidade fixa, qual conclus�o est� mais correta?",
       "opcoes": [
-        "o caso e explicado por Reflexão de ondas.",
-        "o caso e mais bem entendido por Refração de ondas.",
-        "a situação anula a importância de Difração.",
-        "o fenômeno exclui qualquer relação com Interferência."
+        "o caso e explicado por Reflex�o de ondas.",
+        "o caso e mais bem entendido por Refra��o de ondas.",
+        "a situa��o anula a import�ncia de Difra��o.",
+        "o fen�meno exclui qualquer rela��o com Interfer�ncia."
       ],
-      "correta": "o caso e explicado por Reflexão de ondas.",
-      "comentario": "A conclusão adequada retoma a ideia central de Reflexão de ondas.",
+      "correta": "o caso e explicado por Reflex�o de ondas.",
+      "comentario": "A conclus�o adequada retoma a ideia central de Reflex�o de ondas.",
       "tempoEstimado": 45,
       "tags": [
         "ondulatoria",
@@ -2739,22 +2740,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
-      "subtopico": "Reflexão de ondas",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
+      "subtopico": "Reflex�o de ondas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Se um grupo fosse pesquisar Reflexão de ondas, qual pergunta orientadora seria a mais adequada?",
+      "enunciado": "Se um grupo fosse pesquisar Reflex�o de ondas, qual pergunta orientadora seria a mais adequada?",
       "opcoes": [
-        "Como Reflexão de ondas aparece na formacao de ecos e a reflexão de pulsos em cordas?",
-        "Como Refração de ondas substitui totalmente a formacao de ecos e a reflexão de pulsos em cordas?",
-        "Por que Difração torna desnecessário estudar Reflexão de ondas?",
-        "De que modo Interferência elimina toda medida fisica envolvida?"
+        "Como Reflex�o de ondas aparece na formacao de ecos e a reflex�o de pulsos em cordas?",
+        "Como Refra��o de ondas substitui totalmente a formacao de ecos e a reflex�o de pulsos em cordas?",
+        "Por que Difra��o torna desnecess�rio estudar Reflex�o de ondas?",
+        "De que modo Interfer�ncia elimina toda medida fisica envolvida?"
       ],
-      "correta": "Como Reflexão de ondas aparece na formacao de ecos e a reflexão de pulsos em cordas?",
-      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Reflexão de ondas.",
+      "correta": "Como Reflex�o de ondas aparece na formacao de ecos e a reflex�o de pulsos em cordas?",
+      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Reflex�o de ondas.",
       "tempoEstimado": 45,
       "tags": [
         "ondulatoria",
@@ -2778,22 +2779,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
-      "subtopico": "Reflexão de ondas",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
+      "subtopico": "Reflex�o de ondas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em Reflexão de ondas e pensar que:",
+      "enunciado": "Um erro comum em Reflex�o de ondas e pensar que:",
       "opcoes": [
-        "na reflexão a onda necessariamente muda de meio de propagação",
-        "a refração ocorre sem qualquer alteracao na Velocidade de propagação",
-        "a Difração so pode ocorrer com a luz e nunca com o som",
+        "na reflex�o a onda necessariamente muda de meio de propaga��o",
+        "a refra��o ocorre sem qualquer alteracao na Velocidade de propaga��o",
+        "a Difra��o so pode ocorrer com a luz e nunca com o som",
         "quando duas ondas se encontram elas desaparecem definitivamente"
       ],
-      "correta": "na reflexão a onda necessariamente muda de meio de propagação",
-      "comentario": "Esse e um equívoco frequente porque contraria a definição correta de Reflexão de ondas.",
+      "correta": "na reflex�o a onda necessariamente muda de meio de propaga��o",
+      "comentario": "Esse e um equ�voco frequente porque contraria a defini��o correta de Reflex�o de ondas.",
       "tempoEstimado": 50,
       "tags": [
         "ondulatoria",
@@ -2817,22 +2818,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
-      "subtopico": "Reflexão de ondas",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
+      "subtopico": "Reflex�o de ondas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"uma onda refletida so existe quando ela passa para outro meio\". A avaliação mais adequada e:",
+      "enunciado": "Um estudante afirma: \"uma onda refletida so existe quando ela passa para outro meio\". A avalia��o mais adequada e:",
       "opcoes": [
-        "A afirmação está incorreta, porque o retorno da onda ao meio de origem apos atingir uma superficie ou obstaculo.",
-        "A afirmação está correta, pois resume integralmente Reflexão de ondas.",
-        "A afirmação está correta, porque toda situação do tema depende apenas dessa ideia.",
-        "A afirmação está incorreta apenas porque não apresenta uma unidade de medida."
+        "A afirma��o est� incorreta, porque o retorno da onda ao meio de origem apos atingir uma superficie ou obstaculo.",
+        "A afirma��o est� correta, pois resume integralmente Reflex�o de ondas.",
+        "A afirma��o est� correta, porque toda situa��o do tema depende apenas dessa ideia.",
+        "A afirma��o est� incorreta apenas porque n�o apresenta uma unidade de medida."
       ],
-      "correta": "A afirmação está incorreta, porque o retorno da onda ao meio de origem apos atingir uma superficie ou obstaculo.",
-      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre Reflexão de ondas.",
+      "correta": "A afirma��o est� incorreta, porque o retorno da onda ao meio de origem apos atingir uma superficie ou obstaculo.",
+      "comentario": "A fala do estudante apresenta um equ�voco conceitual sobre Reflex�o de ondas.",
       "tempoEstimado": 55,
       "tags": [
         "ondulatoria",
@@ -2856,22 +2857,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
-      "subtopico": "Reflexão de ondas",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
+      "subtopico": "Reflex�o de ondas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se Reflexão de ondas fosse ignorado(a) ao analisar a formacao de ecos e a reflexão de pulsos em cordas, o resultado mais provável seria:",
+      "enunciado": "Se Reflex�o de ondas fosse ignorado(a) ao analisar a formacao de ecos e a reflex�o de pulsos em cordas, o resultado mais prov�vel seria:",
       "opcoes": [
-        "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a formacao de ecos e a reflexão de pulsos em cordas.",
-        "a situação seria explicada automaticamente por Refração de ondas, sem necessidade de análise.",
-        "nenhuma interpretacao fisica seria alterada, porque Reflexão de ondas não interfere nesse tipo de problema.",
-        "o fenômeno deixaria de existir apenas por não ser nomeado."
+        "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre a formacao de ecos e a reflex�o de pulsos em cordas.",
+        "a situa��o seria explicada automaticamente por Refra��o de ondas, sem necessidade de an�lise.",
+        "nenhuma interpretacao fisica seria alterada, porque Reflex�o de ondas n�o interfere nesse tipo de problema.",
+        "o fen�meno deixaria de existir apenas por n�o ser nomeado."
       ],
-      "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a formacao de ecos e a reflexão de pulsos em cordas.",
-      "comentario": "Ignorar Reflexão de ondas compromete a leitura fisica da situação apresentada.",
+      "correta": "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre a formacao de ecos e a reflex�o de pulsos em cordas.",
+      "comentario": "Ignorar Reflex�o de ondas compromete a leitura fisica da situa��o apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "ondulatoria",
@@ -2895,22 +2896,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
-      "subtopico": "Reflexão de ondas",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
+      "subtopico": "Reflex�o de ondas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma aplicação cotidiana ou escolar, Reflexão de ondas ajuda principalmente a compreender:",
+      "enunciado": "Em uma aplica��o cotidiana ou escolar, Reflex�o de ondas ajuda principalmente a compreender:",
       "opcoes": [
-        "a formacao de ecos e a reflexão de pulsos em cordas",
-        "as mudancas de direção de ondas ao passarem entre meios distintos",
-        "a audição em ambientes com obstáculos e pequenas aberturas",
-        "o cancelamento de ruído e os padrões de franjas em experimentos ondulatórios"
+        "a formacao de ecos e a reflex�o de pulsos em cordas",
+        "as mudancas de dire��o de ondas ao passarem entre meios distintos",
+        "a audi��o em ambientes com obst�culos e pequenas aberturas",
+        "o cancelamento de ru�do e os padr�es de franjas em experimentos ondulat�rios"
       ],
-      "correta": "a formacao de ecos e a reflexão de pulsos em cordas",
-      "comentario": "A aplicação escolhida e a que melhor representa Reflexão de ondas.",
+      "correta": "a formacao de ecos e a reflex�o de pulsos em cordas",
+      "comentario": "A aplica��o escolhida e a que melhor representa Reflex�o de ondas.",
       "tempoEstimado": 60,
       "tags": [
         "ondulatoria",
@@ -2934,22 +2935,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
-      "subtopico": "Reflexão de ondas",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
+      "subtopico": "Reflex�o de ondas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual resumo sintetiza melhor a ideia central de Reflexão de ondas?",
+      "enunciado": "Qual resumo sintetiza melhor a ideia central de Reflex�o de ondas?",
       "opcoes": [
-        "Em síntese, o retorno da onda ao meio de origem apos atingir uma superficie ou obstaculo.",
-        "Em síntese, a mudanca de velocidade e, em muitos casos, de direção de uma onda ao passar de um meio para outro.",
-        "Em síntese, a capacidade de a onda contornar obstáculos ou espalhar-se ao atravessar fendas.",
-        "Em síntese, a superposicao de ondas que produz reforco ou cancelamento na onda resultante."
+        "Em s�ntese, o retorno da onda ao meio de origem apos atingir uma superficie ou obstaculo.",
+        "Em s�ntese, a mudanca de velocidade e, em muitos casos, de dire��o de uma onda ao passar de um meio para outro.",
+        "Em s�ntese, a capacidade de a onda contornar obst�culos ou espalhar-se ao atravessar fendas.",
+        "Em s�ntese, a superposicao de ondas que produz reforco ou cancelamento na onda resultante."
       ],
-      "correta": "Em síntese, o retorno da onda ao meio de origem apos atingir uma superficie ou obstaculo.",
-      "comentario": "O resumo correto recupera o núcleo conceitual de Reflexão de ondas.",
+      "correta": "Em s�ntese, o retorno da onda ao meio de origem apos atingir uma superficie ou obstaculo.",
+      "comentario": "O resumo correto recupera o n�cleo conceitual de Reflex�o de ondas.",
       "tempoEstimado": 65,
       "tags": [
         "ondulatoria",
@@ -2973,22 +2974,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Refracao de ondas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Física, Refracao de ondas pode ser definido(a) como:",
+      "enunciado": "Em F�sica, Refracao de ondas pode ser definido(a) como:",
       "opcoes": [
-        "a mudanca de velocidade e, em muitos casos, de direção de uma onda ao passar de um meio para outro",
-        "a capacidade de a onda contornar obstáculos ou espalhar-se ao atravessar fendas",
+        "a mudanca de velocidade e, em muitos casos, de dire��o de uma onda ao passar de um meio para outro",
+        "a capacidade de a onda contornar obst�culos ou espalhar-se ao atravessar fendas",
         "a superposicao de ondas que produz reforco ou cancelamento na onda resultante",
-        "o aumento da amplitude de um sistema quando a frequência de excitacao coincide com sua frequência natural"
+        "o aumento da amplitude de um sistema quando a frequ�ncia de excitacao coincide com sua frequ�ncia natural"
       ],
-      "correta": "a mudanca de velocidade e, em muitos casos, de direção de uma onda ao passar de um meio para outro",
-      "comentario": "Refracao de ondas refere-se à mudanca de velocidade e, em muitos casos, de direção de uma onda ao passar de um meio para outro.",
+      "correta": "a mudanca de velocidade e, em muitos casos, de dire��o de uma onda ao passar de um meio para outro",
+      "comentario": "Refracao de ondas refere-se � mudanca de velocidade e, em muitos casos, de dire��o de uma onda ao passar de um meio para outro.",
       "tempoEstimado": 25,
       "tags": [
         "ondulatoria",
@@ -3012,14 +3013,14 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Refracao de ondas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: frentes de onda entram da região funda para a região rasa de um tanque e desviam sua direção Esse caso exemplifica melhor qual subtópico?",
+      "enunciado": "Observe a situa��o: frentes de onda entram da regi�o funda para a regi�o rasa de um tanque e desviam sua dire��o Esse caso exemplifica melhor qual subt�pico?",
       "opcoes": [
         "Refracao de ondas",
         "Difracao",
@@ -3027,7 +3028,7 @@ export const ondulatoria = {
         "Ressonancia"
       ],
       "correta": "Refracao de ondas",
-      "comentario": "A situação apresentada é um exemplo de Refração de ondas.",
+      "comentario": "A situa��o apresentada � um exemplo de Refra��o de ondas.",
       "tempoEstimado": 25,
       "tags": [
         "ondulatoria",
@@ -3051,22 +3052,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Refracao de ondas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmação descreve corretamente Refração de ondas?",
+      "enunciado": "Qual afirma��o descreve corretamente Refra��o de ondas?",
       "opcoes": [
-        "A mudanca de velocidade e, em muitos casos, de direção de uma onda ao passar de um meio para outro.",
-        "A capacidade de a onda contornar obstáculos ou espalhar-se ao atravessar fendas.",
+        "A mudanca de velocidade e, em muitos casos, de dire��o de uma onda ao passar de um meio para outro.",
+        "A capacidade de a onda contornar obst�culos ou espalhar-se ao atravessar fendas.",
         "A superposicao de ondas que produz reforco ou cancelamento na onda resultante.",
-        "O aumento da amplitude de um sistema quando a frequência de excitacao coincide com sua frequência natural."
+        "O aumento da amplitude de um sistema quando a frequ�ncia de excitacao coincide com sua frequ�ncia natural."
       ],
-      "correta": "A mudanca de velocidade e, em muitos casos, de direção de uma onda ao passar de um meio para outro.",
-      "comentario": "A alternativa correta resume o conceito de Refração de ondas.",
+      "correta": "A mudanca de velocidade e, em muitos casos, de dire��o de uma onda ao passar de um meio para outro.",
+      "comentario": "A alternativa correta resume o conceito de Refra��o de ondas.",
       "tempoEstimado": 30,
       "tags": [
         "ondulatoria",
@@ -3090,22 +3091,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Refracao de ondas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compatível com Refração de ondas?",
+      "enunciado": "Qual alternativa NAO esta compat�vel com Refra��o de ondas?",
       "opcoes": [
-        "A capacidade de a onda contornar obstáculos ou espalhar-se ao atravessar fendas.",
-        "A mudanca de velocidade e, em muitos casos, de direção de uma onda ao passar de um meio para outro.",
-        "Analisar como a passagem entre meios altera a propagação da onda.",
-        "Ajuda a compreender as mudancas de direção de ondas ao passarem entre meios distintos."
+        "A capacidade de a onda contornar obst�culos ou espalhar-se ao atravessar fendas.",
+        "A mudanca de velocidade e, em muitos casos, de dire��o de uma onda ao passar de um meio para outro.",
+        "Analisar como a passagem entre meios altera a propaga��o da onda.",
+        "Ajuda a compreender as mudancas de dire��o de ondas ao passarem entre meios distintos."
       ],
-      "correta": "A capacidade de a onda contornar obstáculos ou espalhar-se ao atravessar fendas.",
-      "comentario": "A opção incompativel descreve outro subtópico, não Refração de ondas.",
+      "correta": "A capacidade de a onda contornar obst�culos ou espalhar-se ao atravessar fendas.",
+      "comentario": "A op��o incompativel descreve outro subt�pico, n�o Refra��o de ondas.",
       "tempoEstimado": 30,
       "tags": [
         "ondulatoria",
@@ -3129,22 +3130,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Refracao de ondas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar Refração de ondas, o foco principal e:",
+      "enunciado": "Ao estudar Refra��o de ondas, o foco principal e:",
       "opcoes": [
-        "analisar como a passagem entre meios altera a propagação da onda",
-        "explicar o espalhamento das ondas diante de obstáculos e aberturas",
+        "analisar como a passagem entre meios altera a propaga��o da onda",
+        "explicar o espalhamento das ondas diante de obst�culos e aberturas",
         "interpretar a combinacao de ondas e seus efeitos construtivos ou destrutivos",
-        "relacionar frequência natural e aumento de amplitude em sistemas oscilantes"
+        "relacionar frequ�ncia natural e aumento de amplitude em sistemas oscilantes"
       ],
-      "correta": "analisar como a passagem entre meios altera a propagação da onda",
-      "comentario": "Refracao de ondas concentra-se em analisar como a passagem entre meios altera a propagação da onda.",
+      "correta": "analisar como a passagem entre meios altera a propaga��o da onda",
+      "comentario": "Refracao de ondas concentra-se em analisar como a passagem entre meios altera a propaga��o da onda.",
       "tempoEstimado": 35,
       "tags": [
         "ondulatoria",
@@ -3168,22 +3169,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Refracao de ondas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Difracao trata de a capacidade de a onda contornar obstáculos ou espalhar-se ao atravessar fendas, Refracao de ondas destaca:",
+      "enunciado": "Enquanto Difracao trata de a capacidade de a onda contornar obst�culos ou espalhar-se ao atravessar fendas, Refracao de ondas destaca:",
       "opcoes": [
-        "A mudanca de velocidade e, em muitos casos, de direção de uma onda ao passar de um meio para outro.",
-        "A capacidade de a onda contornar obstáculos ou espalhar-se ao atravessar fendas.",
+        "A mudanca de velocidade e, em muitos casos, de dire��o de uma onda ao passar de um meio para outro.",
+        "A capacidade de a onda contornar obst�culos ou espalhar-se ao atravessar fendas.",
         "A superposicao de ondas que produz reforco ou cancelamento na onda resultante.",
-        "O aumento da amplitude de um sistema quando a frequência de excitacao coincide com sua frequência natural."
+        "O aumento da amplitude de um sistema quando a frequ�ncia de excitacao coincide com sua frequ�ncia natural."
       ],
-      "correta": "A mudanca de velocidade e, em muitos casos, de direção de uma onda ao passar de um meio para outro.",
-      "comentario": "A comparação correta mostra a especificidade de Refração de ondas.",
+      "correta": "A mudanca de velocidade e, em muitos casos, de dire��o de uma onda ao passar de um meio para outro.",
+      "comentario": "A compara��o correta mostra a especificidade de Refra��o de ondas.",
       "tempoEstimado": 35,
       "tags": [
         "ondulatoria",
@@ -3207,14 +3208,14 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Refracao de ondas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma análise de sala, considera-se que frentes de onda entram da região funda para a região rasa de um tanque e desviam sua direção Para interpretar essa situação, é mais adequado mobilizar o conceito de:",
+      "enunciado": "Em uma an�lise de sala, considera-se que frentes de onda entram da regi�o funda para a regi�o rasa de um tanque e desviam sua dire��o Para interpretar essa situa��o, � mais adequado mobilizar o conceito de:",
       "opcoes": [
         "Refracao de ondas",
         "Difracao",
@@ -3222,7 +3223,7 @@ export const ondulatoria = {
         "Efeito Doppler"
       ],
       "correta": "Refracao de ondas",
-      "comentario": "O caso descrito é interpretado adequadamente por meio de Refração de ondas.",
+      "comentario": "O caso descrito � interpretado adequadamente por meio de Refra��o de ondas.",
       "tempoEstimado": 40,
       "tags": [
         "ondulatoria",
@@ -3246,22 +3247,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Refracao de ondas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação prática depende mais diretamente de Refracao de ondas?",
+      "enunciado": "Qual situa��o pr�tica depende mais diretamente de Refracao de ondas?",
       "opcoes": [
-        "as mudancas de direção de ondas ao passarem entre meios distintos",
-        "a audição em ambientes com obstáculos e pequenas aberturas",
-        "o cancelamento de ruído e os padrões de franjas em experimentos ondulatórios",
-        "radares, exames médicos e interpretacao de sirenes e sinais astronômicos"
+        "as mudancas de dire��o de ondas ao passarem entre meios distintos",
+        "a audi��o em ambientes com obst�culos e pequenas aberturas",
+        "o cancelamento de ru�do e os padr�es de franjas em experimentos ondulat�rios",
+        "radares, exames m�dicos e interpretacao de sirenes e sinais astron�micos"
       ],
-      "correta": "as mudancas de direção de ondas ao passarem entre meios distintos",
-      "comentario": "Refracao de ondas aparece de modo direto nas mudancas de direção de ondas ao passarem entre meios distintos.",
+      "correta": "as mudancas de dire��o de ondas ao passarem entre meios distintos",
+      "comentario": "Refracao de ondas aparece de modo direto nas mudancas de dire��o de ondas ao passarem entre meios distintos.",
       "tempoEstimado": 40,
       "tags": [
         "ondulatoria",
@@ -3285,22 +3286,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Refracao de ondas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir de frentes de onda entram da região funda para a região rasa de um tanque e desviam sua direção, qual conclusão está mais correta?",
+      "enunciado": "A partir de frentes de onda entram da regi�o funda para a regi�o rasa de um tanque e desviam sua dire��o, qual conclus�o est� mais correta?",
       "opcoes": [
-        "o caso e explicado por Refração de ondas.",
-        "o caso e mais bem entendido por Difração.",
-        "a situação anula a importância de Interferência.",
-        "o fenômeno exclui qualquer relação com Ressonância."
+        "o caso e explicado por Refra��o de ondas.",
+        "o caso e mais bem entendido por Difra��o.",
+        "a situa��o anula a import�ncia de Interfer�ncia.",
+        "o fen�meno exclui qualquer rela��o com Resson�ncia."
       ],
-      "correta": "o caso e explicado por Refração de ondas.",
-      "comentario": "A conclusão adequada retoma a ideia central de Refração de ondas.",
+      "correta": "o caso e explicado por Refra��o de ondas.",
+      "comentario": "A conclus�o adequada retoma a ideia central de Refra��o de ondas.",
       "tempoEstimado": 45,
       "tags": [
         "ondulatoria",
@@ -3324,22 +3325,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Refracao de ondas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Se um grupo fosse pesquisar Refração de ondas, qual pergunta orientadora seria a mais adequada?",
+      "enunciado": "Se um grupo fosse pesquisar Refra��o de ondas, qual pergunta orientadora seria a mais adequada?",
       "opcoes": [
-        "Como Refração de ondas aparece nas mudancas de direção de ondas ao passarem entre meios distintos?",
-        "Como Difração substitui totalmente as mudancas de direção de ondas ao passarem entre meios distintos?",
-        "Por que Interferência torna desnecessário estudar Refracao de ondas?",
-        "De que modo Ressonância elimina toda medida fisica envolvida?"
+        "Como Refra��o de ondas aparece nas mudancas de dire��o de ondas ao passarem entre meios distintos?",
+        "Como Difra��o substitui totalmente as mudancas de dire��o de ondas ao passarem entre meios distintos?",
+        "Por que Interfer�ncia torna desnecess�rio estudar Refracao de ondas?",
+        "De que modo Resson�ncia elimina toda medida fisica envolvida?"
       ],
-      "correta": "Como Refração de ondas aparece nas mudancas de direção de ondas ao passarem entre meios distintos?",
-      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Refração de ondas.",
+      "correta": "Como Refra��o de ondas aparece nas mudancas de dire��o de ondas ao passarem entre meios distintos?",
+      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Refra��o de ondas.",
       "tempoEstimado": 45,
       "tags": [
         "ondulatoria",
@@ -3363,22 +3364,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Refracao de ondas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em Refração de ondas e pensar que:",
+      "enunciado": "Um erro comum em Refra��o de ondas e pensar que:",
       "opcoes": [
-        "a refração ocorre sem qualquer alteracao na Velocidade de propagação",
-        "a Difração so pode ocorrer com a luz e nunca com o som",
+        "a refra��o ocorre sem qualquer alteracao na Velocidade de propaga��o",
+        "a Difra��o so pode ocorrer com a luz e nunca com o som",
         "quando duas ondas se encontram elas desaparecem definitivamente",
-        "Ressonância e apenas um aumento aleatorio de volume sem relação com frequência"
+        "Resson�ncia e apenas um aumento aleatorio de volume sem rela��o com frequ�ncia"
       ],
-      "correta": "a refração ocorre sem qualquer alteracao na Velocidade de propagação",
-      "comentario": "Esse e um equívoco frequente porque contraria a definição correta de Refração de ondas.",
+      "correta": "a refra��o ocorre sem qualquer alteracao na Velocidade de propaga��o",
+      "comentario": "Esse e um equ�voco frequente porque contraria a defini��o correta de Refra��o de ondas.",
       "tempoEstimado": 50,
       "tags": [
         "ondulatoria",
@@ -3402,22 +3403,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Refracao de ondas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"na refração, a onda muda de direção, mas sua velocidade permanece sempre igual\". A avaliação mais adequada e:",
+      "enunciado": "Um estudante afirma: \"na refra��o, a onda muda de dire��o, mas sua velocidade permanece sempre igual\". A avalia��o mais adequada e:",
       "opcoes": [
-        "A afirmação está incorreta, porque a mudanca de velocidade e, em muitos casos, de direção de uma onda ao passar de um meio para outro.",
-        "A afirmação está correta, pois resume integralmente Refração de ondas.",
-        "A afirmação está correta, porque toda situação do tema depende apenas dessa ideia.",
-        "A afirmação está incorreta apenas porque não apresenta uma unidade de medida."
+        "A afirma��o est� incorreta, porque a mudanca de velocidade e, em muitos casos, de dire��o de uma onda ao passar de um meio para outro.",
+        "A afirma��o est� correta, pois resume integralmente Refra��o de ondas.",
+        "A afirma��o est� correta, porque toda situa��o do tema depende apenas dessa ideia.",
+        "A afirma��o est� incorreta apenas porque n�o apresenta uma unidade de medida."
       ],
-      "correta": "A afirmação está incorreta, porque a mudanca de velocidade e, em muitos casos, de direção de uma onda ao passar de um meio para outro.",
-      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre Refração de ondas.",
+      "correta": "A afirma��o est� incorreta, porque a mudanca de velocidade e, em muitos casos, de dire��o de uma onda ao passar de um meio para outro.",
+      "comentario": "A fala do estudante apresenta um equ�voco conceitual sobre Refra��o de ondas.",
       "tempoEstimado": 55,
       "tags": [
         "ondulatoria",
@@ -3441,22 +3442,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Refracao de ondas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se Refração de ondas fosse ignorado(a) ao analisar as mudancas de direção de ondas ao passarem entre meios distintos, o resultado mais provável seria:",
+      "enunciado": "Se Refra��o de ondas fosse ignorado(a) ao analisar as mudancas de dire��o de ondas ao passarem entre meios distintos, o resultado mais prov�vel seria:",
       "opcoes": [
-        "a análise ficaria incompleta e poderia gerar interpretações erradas sobre as mudancas de direção de ondas ao passarem entre meios distintos.",
-        "a situação seria explicada automaticamente por Difração, sem necessidade de análise.",
-        "nenhuma interpretacao fisica seria alterada, porque Refracao de ondas não interfere nesse tipo de problema.",
-        "o fenômeno deixaria de existir apenas por não ser nomeado."
+        "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre as mudancas de dire��o de ondas ao passarem entre meios distintos.",
+        "a situa��o seria explicada automaticamente por Difra��o, sem necessidade de an�lise.",
+        "nenhuma interpretacao fisica seria alterada, porque Refracao de ondas n�o interfere nesse tipo de problema.",
+        "o fen�meno deixaria de existir apenas por n�o ser nomeado."
       ],
-      "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre as mudancas de direção de ondas ao passarem entre meios distintos.",
-      "comentario": "Ignorar Refração de ondas compromete a leitura fisica da situação apresentada.",
+      "correta": "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre as mudancas de dire��o de ondas ao passarem entre meios distintos.",
+      "comentario": "Ignorar Refra��o de ondas compromete a leitura fisica da situa��o apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "ondulatoria",
@@ -3480,22 +3481,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Refracao de ondas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma aplicação cotidiana ou escolar, Refracao de ondas ajuda principalmente a compreender:",
+      "enunciado": "Em uma aplica��o cotidiana ou escolar, Refracao de ondas ajuda principalmente a compreender:",
       "opcoes": [
-        "as mudancas de direção de ondas ao passarem entre meios distintos",
-        "a audição em ambientes com obstáculos e pequenas aberturas",
-        "o cancelamento de ruído e os padrões de franjas em experimentos ondulatórios",
-        "a afinação de instrumentos musicais e as vibrações em pontes e estruturas"
+        "as mudancas de dire��o de ondas ao passarem entre meios distintos",
+        "a audi��o em ambientes com obst�culos e pequenas aberturas",
+        "o cancelamento de ru�do e os padr�es de franjas em experimentos ondulat�rios",
+        "a afina��o de instrumentos musicais e as vibra��es em pontes e estruturas"
       ],
-      "correta": "as mudancas de direção de ondas ao passarem entre meios distintos",
-      "comentario": "A aplicação escolhida e a que melhor representa Refração de ondas.",
+      "correta": "as mudancas de dire��o de ondas ao passarem entre meios distintos",
+      "comentario": "A aplica��o escolhida e a que melhor representa Refra��o de ondas.",
       "tempoEstimado": 60,
       "tags": [
         "ondulatoria",
@@ -3519,8 +3520,8 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Refracao de ondas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
@@ -3528,13 +3529,13 @@ export const ondulatoria = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual resumo sintetiza melhor a ideia central de Refracao de ondas?",
       "opcoes": [
-        "Em síntese, a mudanca de velocidade e, em muitos casos, de direção de uma onda ao passar de um meio para outro.",
-        "Em síntese, a capacidade de a onda contornar obstáculos ou espalhar-se ao atravessar fendas.",
-        "Em síntese, a superposicao de ondas que produz reforco ou cancelamento na onda resultante.",
-        "Em síntese, o aumento da amplitude de um sistema quando a frequência de excitacao coincide com sua frequência natural."
+        "Em s�ntese, a mudanca de velocidade e, em muitos casos, de dire��o de uma onda ao passar de um meio para outro.",
+        "Em s�ntese, a capacidade de a onda contornar obst�culos ou espalhar-se ao atravessar fendas.",
+        "Em s�ntese, a superposicao de ondas que produz reforco ou cancelamento na onda resultante.",
+        "Em s�ntese, o aumento da amplitude de um sistema quando a frequ�ncia de excitacao coincide com sua frequ�ncia natural."
       ],
-      "correta": "Em síntese, a mudanca de velocidade e, em muitos casos, de direção de uma onda ao passar de um meio para outro.",
-      "comentario": "O resumo correto recupera o núcleo conceitual de Refração de ondas.",
+      "correta": "Em s�ntese, a mudanca de velocidade e, em muitos casos, de dire��o de uma onda ao passar de um meio para outro.",
+      "comentario": "O resumo correto recupera o n�cleo conceitual de Refra��o de ondas.",
       "tempoEstimado": 65,
       "tags": [
         "ondulatoria",
@@ -3558,22 +3559,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Difracao",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Física, Difracao pode ser definido(a) como:",
+      "enunciado": "Em F�sica, Difracao pode ser definido(a) como:",
       "opcoes": [
-        "a capacidade de a onda contornar obstáculos ou espalhar-se ao atravessar fendas",
+        "a capacidade de a onda contornar obst�culos ou espalhar-se ao atravessar fendas",
         "a superposicao de ondas que produz reforco ou cancelamento na onda resultante",
-        "o aumento da amplitude de um sistema quando a frequência de excitacao coincide com sua frequência natural",
-        "a variação aparente da frequência percebida devido ao movimento relativo entre fonte e observador"
+        "o aumento da amplitude de um sistema quando a frequ�ncia de excitacao coincide com sua frequ�ncia natural",
+        "a varia��o aparente da frequ�ncia percebida devido ao movimento relativo entre fonte e observador"
       ],
-      "correta": "a capacidade de a onda contornar obstáculos ou espalhar-se ao atravessar fendas",
-      "comentario": "Difracao refere-se à capacidade de a onda contornar obstáculos ou espalhar-se ao atravessar fendas.",
+      "correta": "a capacidade de a onda contornar obst�culos ou espalhar-se ao atravessar fendas",
+      "comentario": "Difracao refere-se � capacidade de a onda contornar obst�culos ou espalhar-se ao atravessar fendas.",
       "tempoEstimado": 25,
       "tags": [
         "ondulatoria",
@@ -3597,14 +3598,14 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Difracao",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: o som continua sendo percebido mesmo atras de uma porta entreaberta Esse caso exemplifica melhor qual subtópico?",
+      "enunciado": "Observe a situa��o: o som continua sendo percebido mesmo atras de uma porta entreaberta Esse caso exemplifica melhor qual subt�pico?",
       "opcoes": [
         "Difracao",
         "Interferencia",
@@ -3612,7 +3613,7 @@ export const ondulatoria = {
         "Efeito Doppler"
       ],
       "correta": "Difracao",
-      "comentario": "A situação apresentada é um exemplo de Difração.",
+      "comentario": "A situa��o apresentada � um exemplo de Difra��o.",
       "tempoEstimado": 25,
       "tags": [
         "ondulatoria",
@@ -3636,22 +3637,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Difracao",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmação descreve corretamente Difração?",
+      "enunciado": "Qual afirma��o descreve corretamente Difra��o?",
       "opcoes": [
-        "A capacidade de a onda contornar obstáculos ou espalhar-se ao atravessar fendas.",
+        "A capacidade de a onda contornar obst�culos ou espalhar-se ao atravessar fendas.",
         "A superposicao de ondas que produz reforco ou cancelamento na onda resultante.",
-        "O aumento da amplitude de um sistema quando a frequência de excitacao coincide com sua frequência natural.",
-        "A variação aparente da frequência percebida devido ao movimento relativo entre fonte e observador."
+        "O aumento da amplitude de um sistema quando a frequ�ncia de excitacao coincide com sua frequ�ncia natural.",
+        "A varia��o aparente da frequ�ncia percebida devido ao movimento relativo entre fonte e observador."
       ],
-      "correta": "A capacidade de a onda contornar obstáculos ou espalhar-se ao atravessar fendas.",
-      "comentario": "A alternativa correta resume o conceito de Difração.",
+      "correta": "A capacidade de a onda contornar obst�culos ou espalhar-se ao atravessar fendas.",
+      "comentario": "A alternativa correta resume o conceito de Difra��o.",
       "tempoEstimado": 30,
       "tags": [
         "ondulatoria",
@@ -3675,22 +3676,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Difracao",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compatível com Difração?",
+      "enunciado": "Qual alternativa NAO esta compat�vel com Difra��o?",
       "opcoes": [
         "A superposicao de ondas que produz reforco ou cancelamento na onda resultante.",
-        "A capacidade de a onda contornar obstáculos ou espalhar-se ao atravessar fendas.",
-        "Explicar o espalhamento das ondas diante de obstáculos e aberturas.",
-        "Ajuda a compreender a audição em ambientes com obstáculos e pequenas aberturas."
+        "A capacidade de a onda contornar obst�culos ou espalhar-se ao atravessar fendas.",
+        "Explicar o espalhamento das ondas diante de obst�culos e aberturas.",
+        "Ajuda a compreender a audi��o em ambientes com obst�culos e pequenas aberturas."
       ],
       "correta": "A superposicao de ondas que produz reforco ou cancelamento na onda resultante.",
-      "comentario": "A opção incompativel descreve outro subtópico, não Difração.",
+      "comentario": "A op��o incompativel descreve outro subt�pico, n�o Difra��o.",
       "tempoEstimado": 30,
       "tags": [
         "ondulatoria",
@@ -3714,22 +3715,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Difracao",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar Difração, o foco principal e:",
+      "enunciado": "Ao estudar Difra��o, o foco principal e:",
       "opcoes": [
-        "explicar o espalhamento das ondas diante de obstáculos e aberturas",
+        "explicar o espalhamento das ondas diante de obst�culos e aberturas",
         "interpretar a combinacao de ondas e seus efeitos construtivos ou destrutivos",
-        "relacionar frequência natural e aumento de amplitude em sistemas oscilantes",
-        "analisar mudancas aparentes de frequência em situações com movimento relativo"
+        "relacionar frequ�ncia natural e aumento de amplitude em sistemas oscilantes",
+        "analisar mudancas aparentes de frequ�ncia em situa��es com movimento relativo"
       ],
-      "correta": "explicar o espalhamento das ondas diante de obstáculos e aberturas",
-      "comentario": "Difracao concentra-se em explicar o espalhamento das ondas diante de obstáculos e aberturas.",
+      "correta": "explicar o espalhamento das ondas diante de obst�culos e aberturas",
+      "comentario": "Difracao concentra-se em explicar o espalhamento das ondas diante de obst�culos e aberturas.",
       "tempoEstimado": 35,
       "tags": [
         "ondulatoria",
@@ -3753,8 +3754,8 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Difracao",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
@@ -3762,13 +3763,13 @@ export const ondulatoria = {
       "tipo": "multipla_escolha",
       "enunciado": "Enquanto Interferencia trata de a superposicao de ondas que produz reforco ou cancelamento na onda resultante, Difracao destaca:",
       "opcoes": [
-        "A capacidade de a onda contornar obstáculos ou espalhar-se ao atravessar fendas.",
+        "A capacidade de a onda contornar obst�culos ou espalhar-se ao atravessar fendas.",
         "A superposicao de ondas que produz reforco ou cancelamento na onda resultante.",
-        "O aumento da amplitude de um sistema quando a frequência de excitacao coincide com sua frequência natural.",
-        "A variação aparente da frequência percebida devido ao movimento relativo entre fonte e observador."
+        "O aumento da amplitude de um sistema quando a frequ�ncia de excitacao coincide com sua frequ�ncia natural.",
+        "A varia��o aparente da frequ�ncia percebida devido ao movimento relativo entre fonte e observador."
       ],
-      "correta": "A capacidade de a onda contornar obstáculos ou espalhar-se ao atravessar fendas.",
-      "comentario": "A comparação correta mostra a especificidade de Difração.",
+      "correta": "A capacidade de a onda contornar obst�culos ou espalhar-se ao atravessar fendas.",
+      "comentario": "A compara��o correta mostra a especificidade de Difra��o.",
       "tempoEstimado": 35,
       "tags": [
         "ondulatoria",
@@ -3792,14 +3793,14 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Difracao",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma análise de sala, considera-se que o som continua sendo percebido mesmo atras de uma porta entreaberta Para interpretar essa situação, é mais adequado mobilizar o conceito de:",
+      "enunciado": "Em uma an�lise de sala, considera-se que o som continua sendo percebido mesmo atras de uma porta entreaberta Para interpretar essa situa��o, � mais adequado mobilizar o conceito de:",
       "opcoes": [
         "Difracao",
         "Interferencia",
@@ -3807,7 +3808,7 @@ export const ondulatoria = {
         "Conceito de onda"
       ],
       "correta": "Difracao",
-      "comentario": "O caso descrito é interpretado adequadamente por meio de Difração.",
+      "comentario": "O caso descrito � interpretado adequadamente por meio de Difra��o.",
       "tempoEstimado": 40,
       "tags": [
         "ondulatoria",
@@ -3831,22 +3832,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Difracao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação prática depende mais diretamente de Difracao?",
+      "enunciado": "Qual situa��o pr�tica depende mais diretamente de Difracao?",
       "opcoes": [
-        "a audição em ambientes com obstáculos e pequenas aberturas",
-        "o cancelamento de ruído e os padrões de franjas em experimentos ondulatórios",
-        "a afinação de instrumentos musicais e as vibrações em pontes e estruturas",
-        "a propagação de pulsos em cordas e superficies líquidas"
+        "a audi��o em ambientes com obst�culos e pequenas aberturas",
+        "o cancelamento de ru�do e os padr�es de franjas em experimentos ondulat�rios",
+        "a afina��o de instrumentos musicais e as vibra��es em pontes e estruturas",
+        "a propaga��o de pulsos em cordas e superficies l�quidas"
       ],
-      "correta": "a audição em ambientes com obstáculos e pequenas aberturas",
-      "comentario": "Difracao aparece de modo direto na audição em ambientes com obstáculos e pequenas aberturas.",
+      "correta": "a audi��o em ambientes com obst�culos e pequenas aberturas",
+      "comentario": "Difracao aparece de modo direto na audi��o em ambientes com obst�culos e pequenas aberturas.",
       "tempoEstimado": 40,
       "tags": [
         "ondulatoria",
@@ -3870,22 +3871,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Difracao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir de o som continua sendo percebido mesmo atras de uma porta entreaberta, qual conclusão está mais correta?",
+      "enunciado": "A partir de o som continua sendo percebido mesmo atras de uma porta entreaberta, qual conclus�o est� mais correta?",
       "opcoes": [
-        "o caso e explicado por Difração.",
-        "o caso e mais bem entendido por Interferência.",
-        "a situação anula a importância de Ressonância.",
-        "o fenômeno exclui qualquer relação com efeito Doppler."
+        "o caso e explicado por Difra��o.",
+        "o caso e mais bem entendido por Interfer�ncia.",
+        "a situa��o anula a import�ncia de Resson�ncia.",
+        "o fen�meno exclui qualquer rela��o com efeito Doppler."
       ],
-      "correta": "o caso e explicado por Difração.",
-      "comentario": "A conclusão adequada retoma a ideia central de Difração.",
+      "correta": "o caso e explicado por Difra��o.",
+      "comentario": "A conclus�o adequada retoma a ideia central de Difra��o.",
       "tempoEstimado": 45,
       "tags": [
         "ondulatoria",
@@ -3909,22 +3910,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Difracao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Se um grupo fosse pesquisar Difração, qual pergunta orientadora seria a mais adequada?",
+      "enunciado": "Se um grupo fosse pesquisar Difra��o, qual pergunta orientadora seria a mais adequada?",
       "opcoes": [
-        "Como Difração aparece na audição em ambientes com obstáculos e pequenas aberturas?",
-        "Como Interferência substitui totalmente a audição em ambientes com obstáculos e pequenas aberturas?",
-        "Por que Ressonância torna desnecessário estudar Difracao?",
+        "Como Difra��o aparece na audi��o em ambientes com obst�culos e pequenas aberturas?",
+        "Como Interfer�ncia substitui totalmente a audi��o em ambientes com obst�culos e pequenas aberturas?",
+        "Por que Resson�ncia torna desnecess�rio estudar Difracao?",
         "De que modo efeito Doppler elimina toda medida fisica envolvida?"
       ],
-      "correta": "Como Difração aparece na audição em ambientes com obstáculos e pequenas aberturas?",
-      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Difração.",
+      "correta": "Como Difra��o aparece na audi��o em ambientes com obst�culos e pequenas aberturas?",
+      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Difra��o.",
       "tempoEstimado": 45,
       "tags": [
         "ondulatoria",
@@ -3948,22 +3949,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Difracao",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em Difração e pensar que:",
+      "enunciado": "Um erro comum em Difra��o e pensar que:",
       "opcoes": [
-        "a Difração so pode ocorrer com a luz e nunca com o som",
+        "a Difra��o so pode ocorrer com a luz e nunca com o som",
         "quando duas ondas se encontram elas desaparecem definitivamente",
-        "Ressonância e apenas um aumento aleatorio de volume sem relação com frequência",
-        "o efeito Doppler altera a frequência emitida pela fonte em si"
+        "Resson�ncia e apenas um aumento aleatorio de volume sem rela��o com frequ�ncia",
+        "o efeito Doppler altera a frequ�ncia emitida pela fonte em si"
       ],
-      "correta": "a Difração so pode ocorrer com a luz e nunca com o som",
-      "comentario": "Esse e um equívoco frequente porque contraria a definição correta de Difração.",
+      "correta": "a Difra��o so pode ocorrer com a luz e nunca com o som",
+      "comentario": "Esse e um equ�voco frequente porque contraria a defini��o correta de Difra��o.",
       "tempoEstimado": 50,
       "tags": [
         "ondulatoria",
@@ -3987,22 +3988,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Difracao",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"Difração e um fenômeno exclusivo das ondas luminosas\". A avaliação mais adequada e:",
+      "enunciado": "Um estudante afirma: \"Difra��o e um fen�meno exclusivo das ondas luminosas\". A avalia��o mais adequada e:",
       "opcoes": [
-        "A afirmação está incorreta, porque a capacidade de a onda contornar obstáculos ou espalhar-se ao atravessar fendas.",
-        "A afirmação está correta, pois resume integralmente Difração.",
-        "A afirmação está correta, porque toda situação do tema depende apenas dessa ideia.",
-        "A afirmação está incorreta apenas porque não apresenta uma unidade de medida."
+        "A afirma��o est� incorreta, porque a capacidade de a onda contornar obst�culos ou espalhar-se ao atravessar fendas.",
+        "A afirma��o est� correta, pois resume integralmente Difra��o.",
+        "A afirma��o est� correta, porque toda situa��o do tema depende apenas dessa ideia.",
+        "A afirma��o est� incorreta apenas porque n�o apresenta uma unidade de medida."
       ],
-      "correta": "A afirmação está incorreta, porque a capacidade de a onda contornar obstáculos ou espalhar-se ao atravessar fendas.",
-      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre Difração.",
+      "correta": "A afirma��o est� incorreta, porque a capacidade de a onda contornar obst�culos ou espalhar-se ao atravessar fendas.",
+      "comentario": "A fala do estudante apresenta um equ�voco conceitual sobre Difra��o.",
       "tempoEstimado": 55,
       "tags": [
         "ondulatoria",
@@ -4026,22 +4027,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Difracao",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se Difração fosse ignorado(a) ao analisar a audição em ambientes com obstáculos e pequenas aberturas, o resultado mais provável seria:",
+      "enunciado": "Se Difra��o fosse ignorado(a) ao analisar a audi��o em ambientes com obst�culos e pequenas aberturas, o resultado mais prov�vel seria:",
       "opcoes": [
-        "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a audição em ambientes com obstáculos e pequenas aberturas.",
-        "a situação seria explicada automaticamente por Interferência, sem necessidade de análise.",
-        "nenhuma interpretacao fisica seria alterada, porque Difracao não interfere nesse tipo de problema.",
-        "o fenômeno deixaria de existir apenas por não ser nomeado."
+        "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre a audi��o em ambientes com obst�culos e pequenas aberturas.",
+        "a situa��o seria explicada automaticamente por Interfer�ncia, sem necessidade de an�lise.",
+        "nenhuma interpretacao fisica seria alterada, porque Difracao n�o interfere nesse tipo de problema.",
+        "o fen�meno deixaria de existir apenas por n�o ser nomeado."
       ],
-      "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a audição em ambientes com obstáculos e pequenas aberturas.",
-      "comentario": "Ignorar Difração compromete a leitura fisica da situação apresentada.",
+      "correta": "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre a audi��o em ambientes com obst�culos e pequenas aberturas.",
+      "comentario": "Ignorar Difra��o compromete a leitura fisica da situa��o apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "ondulatoria",
@@ -4065,22 +4066,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Difracao",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma aplicação cotidiana ou escolar, Difracao ajuda principalmente a compreender:",
+      "enunciado": "Em uma aplica��o cotidiana ou escolar, Difracao ajuda principalmente a compreender:",
       "opcoes": [
-        "a audição em ambientes com obstáculos e pequenas aberturas",
-        "o cancelamento de ruído e os padrões de franjas em experimentos ondulatórios",
-        "a afinação de instrumentos musicais e as vibrações em pontes e estruturas",
-        "radares, exames médicos e interpretacao de sirenes e sinais astronômicos"
+        "a audi��o em ambientes com obst�culos e pequenas aberturas",
+        "o cancelamento de ru�do e os padr�es de franjas em experimentos ondulat�rios",
+        "a afina��o de instrumentos musicais e as vibra��es em pontes e estruturas",
+        "radares, exames m�dicos e interpretacao de sirenes e sinais astron�micos"
       ],
-      "correta": "a audição em ambientes com obstáculos e pequenas aberturas",
-      "comentario": "A aplicação escolhida e a que melhor representa Difração.",
+      "correta": "a audi��o em ambientes com obst�culos e pequenas aberturas",
+      "comentario": "A aplica��o escolhida e a que melhor representa Difra��o.",
       "tempoEstimado": 60,
       "tags": [
         "ondulatoria",
@@ -4104,8 +4105,8 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Difracao",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
@@ -4113,13 +4114,13 @@ export const ondulatoria = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual resumo sintetiza melhor a ideia central de Difracao?",
       "opcoes": [
-        "Em síntese, a capacidade de a onda contornar obstáculos ou espalhar-se ao atravessar fendas.",
-        "Em síntese, a superposicao de ondas que produz reforco ou cancelamento na onda resultante.",
-        "Em síntese, o aumento da amplitude de um sistema quando a frequência de excitacao coincide com sua frequência natural.",
-        "Em síntese, a variação aparente da frequência percebida devido ao movimento relativo entre fonte e observador."
+        "Em s�ntese, a capacidade de a onda contornar obst�culos ou espalhar-se ao atravessar fendas.",
+        "Em s�ntese, a superposicao de ondas que produz reforco ou cancelamento na onda resultante.",
+        "Em s�ntese, o aumento da amplitude de um sistema quando a frequ�ncia de excitacao coincide com sua frequ�ncia natural.",
+        "Em s�ntese, a varia��o aparente da frequ�ncia percebida devido ao movimento relativo entre fonte e observador."
       ],
-      "correta": "Em síntese, a capacidade de a onda contornar obstáculos ou espalhar-se ao atravessar fendas.",
-      "comentario": "O resumo correto recupera o núcleo conceitual de Difração.",
+      "correta": "Em s�ntese, a capacidade de a onda contornar obst�culos ou espalhar-se ao atravessar fendas.",
+      "comentario": "O resumo correto recupera o n�cleo conceitual de Difra��o.",
       "tempoEstimado": 65,
       "tags": [
         "ondulatoria",
@@ -4143,22 +4144,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Interferencia",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Física, Interferencia pode ser definido(a) como:",
+      "enunciado": "Em F�sica, Interferencia pode ser definido(a) como:",
       "opcoes": [
         "a superposicao de ondas que produz reforco ou cancelamento na onda resultante",
-        "o aumento da amplitude de um sistema quando a frequência de excitacao coincide com sua frequência natural",
-        "a variação aparente da frequência percebida devido ao movimento relativo entre fonte e observador",
-        "uma perturbação que se propaga transportando energia sem transportar matéria de forma permanente"
+        "o aumento da amplitude de um sistema quando a frequ�ncia de excitacao coincide com sua frequ�ncia natural",
+        "a varia��o aparente da frequ�ncia percebida devido ao movimento relativo entre fonte e observador",
+        "uma perturba��o que se propaga transportando energia sem transportar mat�ria de forma permanente"
       ],
       "correta": "a superposicao de ondas que produz reforco ou cancelamento na onda resultante",
-      "comentario": "Interferencia refere-se à superposicao de ondas que produz reforco ou cancelamento na onda resultante.",
+      "comentario": "Interferencia refere-se � superposicao de ondas que produz reforco ou cancelamento na onda resultante.",
       "tempoEstimado": 25,
       "tags": [
         "ondulatoria",
@@ -4182,14 +4183,14 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Interferencia",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: duas ondas em uma corda se encontram e formam regiões de maior ou menor amplitude Esse caso exemplifica melhor qual subtópico?",
+      "enunciado": "Observe a situa��o: duas ondas em uma corda se encontram e formam regi�es de maior ou menor amplitude Esse caso exemplifica melhor qual subt�pico?",
       "opcoes": [
         "Interferencia",
         "Ressonancia",
@@ -4197,7 +4198,7 @@ export const ondulatoria = {
         "Conceito de onda"
       ],
       "correta": "Interferencia",
-      "comentario": "A situação apresentada é um exemplo de Interferência.",
+      "comentario": "A situa��o apresentada � um exemplo de Interfer�ncia.",
       "tempoEstimado": 25,
       "tags": [
         "ondulatoria",
@@ -4221,22 +4222,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Interferencia",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmação descreve corretamente Interferência?",
+      "enunciado": "Qual afirma��o descreve corretamente Interfer�ncia?",
       "opcoes": [
         "A superposicao de ondas que produz reforco ou cancelamento na onda resultante.",
-        "O aumento da amplitude de um sistema quando a frequência de excitacao coincide com sua frequência natural.",
-        "A variação aparente da frequência percebida devido ao movimento relativo entre fonte e observador.",
-        "Uma perturbação que se propaga transportando energia sem transportar matéria de forma permanente."
+        "O aumento da amplitude de um sistema quando a frequ�ncia de excitacao coincide com sua frequ�ncia natural.",
+        "A varia��o aparente da frequ�ncia percebida devido ao movimento relativo entre fonte e observador.",
+        "Uma perturba��o que se propaga transportando energia sem transportar mat�ria de forma permanente."
       ],
       "correta": "A superposicao de ondas que produz reforco ou cancelamento na onda resultante.",
-      "comentario": "A alternativa correta resume o conceito de Interferência.",
+      "comentario": "A alternativa correta resume o conceito de Interfer�ncia.",
       "tempoEstimado": 30,
       "tags": [
         "ondulatoria",
@@ -4260,22 +4261,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Interferencia",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compatível com Interferência?",
+      "enunciado": "Qual alternativa NAO esta compat�vel com Interfer�ncia?",
       "opcoes": [
-        "O aumento da amplitude de um sistema quando a frequência de excitacao coincide com sua frequência natural.",
+        "O aumento da amplitude de um sistema quando a frequ�ncia de excitacao coincide com sua frequ�ncia natural.",
         "A superposicao de ondas que produz reforco ou cancelamento na onda resultante.",
         "Interpretar a combinacao de ondas e seus efeitos construtivos ou destrutivos.",
-        "Ajuda a compreender o cancelamento de ruído e os padrões de franjas em experimentos ondulatórios."
+        "Ajuda a compreender o cancelamento de ru�do e os padr�es de franjas em experimentos ondulat�rios."
       ],
-      "correta": "O aumento da amplitude de um sistema quando a frequência de excitacao coincide com sua frequência natural.",
-      "comentario": "A opção incompativel descreve outro subtópico, não Interferência.",
+      "correta": "O aumento da amplitude de um sistema quando a frequ�ncia de excitacao coincide com sua frequ�ncia natural.",
+      "comentario": "A op��o incompativel descreve outro subt�pico, n�o Interfer�ncia.",
       "tempoEstimado": 30,
       "tags": [
         "ondulatoria",
@@ -4299,19 +4300,19 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Interferencia",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar Interferência, o foco principal e:",
+      "enunciado": "Ao estudar Interfer�ncia, o foco principal e:",
       "opcoes": [
         "interpretar a combinacao de ondas e seus efeitos construtivos ou destrutivos",
-        "relacionar frequência natural e aumento de amplitude em sistemas oscilantes",
-        "analisar mudancas aparentes de frequência em situações com movimento relativo",
-        "identificar a propagação de perturbacoes e o transporte de energia"
+        "relacionar frequ�ncia natural e aumento de amplitude em sistemas oscilantes",
+        "analisar mudancas aparentes de frequ�ncia em situa��es com movimento relativo",
+        "identificar a propaga��o de perturbacoes e o transporte de energia"
       ],
       "correta": "interpretar a combinacao de ondas e seus efeitos construtivos ou destrutivos",
       "comentario": "Interferencia concentra-se em interpretar a combinacao de ondas e seus efeitos construtivos ou destrutivos.",
@@ -4338,22 +4339,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Interferencia",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Ressonancia trata de o aumento da amplitude de um sistema quando a frequência de excitacao coincide com sua frequência natural, Interferencia destaca:",
+      "enunciado": "Enquanto Ressonancia trata de o aumento da amplitude de um sistema quando a frequ�ncia de excitacao coincide com sua frequ�ncia natural, Interferencia destaca:",
       "opcoes": [
         "A superposicao de ondas que produz reforco ou cancelamento na onda resultante.",
-        "O aumento da amplitude de um sistema quando a frequência de excitacao coincide com sua frequência natural.",
-        "A variação aparente da frequência percebida devido ao movimento relativo entre fonte e observador.",
-        "Uma perturbação que se propaga transportando energia sem transportar matéria de forma permanente."
+        "O aumento da amplitude de um sistema quando a frequ�ncia de excitacao coincide com sua frequ�ncia natural.",
+        "A varia��o aparente da frequ�ncia percebida devido ao movimento relativo entre fonte e observador.",
+        "Uma perturba��o que se propaga transportando energia sem transportar mat�ria de forma permanente."
       ],
       "correta": "A superposicao de ondas que produz reforco ou cancelamento na onda resultante.",
-      "comentario": "A comparação correta mostra a especificidade de Interferência.",
+      "comentario": "A compara��o correta mostra a especificidade de Interfer�ncia.",
       "tempoEstimado": 35,
       "tags": [
         "ondulatoria",
@@ -4377,14 +4378,14 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Interferencia",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma análise de sala, considera-se que duas ondas em uma corda se encontram e formam regiões de maior ou menor amplitude Para interpretar essa situação, é mais adequado mobilizar o conceito de:",
+      "enunciado": "Em uma an�lise de sala, considera-se que duas ondas em uma corda se encontram e formam regi�es de maior ou menor amplitude Para interpretar essa situa��o, � mais adequado mobilizar o conceito de:",
       "opcoes": [
         "Interferencia",
         "Ressonancia",
@@ -4392,7 +4393,7 @@ export const ondulatoria = {
         "Grandezas da onda"
       ],
       "correta": "Interferencia",
-      "comentario": "O caso descrito é interpretado adequadamente por meio de Interferência.",
+      "comentario": "O caso descrito � interpretado adequadamente por meio de Interfer�ncia.",
       "tempoEstimado": 40,
       "tags": [
         "ondulatoria",
@@ -4416,22 +4417,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Interferencia",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação prática depende mais diretamente de Interferencia?",
+      "enunciado": "Qual situa��o pr�tica depende mais diretamente de Interferencia?",
       "opcoes": [
-        "o cancelamento de ruído e os padrões de franjas em experimentos ondulatórios",
-        "a afinação de instrumentos musicais e as vibrações em pontes e estruturas",
-        "radares, exames médicos e interpretacao de sirenes e sinais astronômicos",
+        "o cancelamento de ru�do e os padr�es de franjas em experimentos ondulat�rios",
+        "a afina��o de instrumentos musicais e as vibra��es em pontes e estruturas",
+        "radares, exames m�dicos e interpretacao de sirenes e sinais astron�micos",
         "a leitura de graficos e tabelas sobre ondas em laboratorio"
       ],
-      "correta": "o cancelamento de ruído e os padrões de franjas em experimentos ondulatórios",
-      "comentario": "Interferencia aparece de modo direto no cancelamento de ruído e os padrões de franjas em experimentos ondulatórios.",
+      "correta": "o cancelamento de ru�do e os padr�es de franjas em experimentos ondulat�rios",
+      "comentario": "Interferencia aparece de modo direto no cancelamento de ru�do e os padr�es de franjas em experimentos ondulat�rios.",
       "tempoEstimado": 40,
       "tags": [
         "ondulatoria",
@@ -4455,22 +4456,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Interferencia",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir de duas ondas em uma corda se encontram e formam regiões de maior ou menor amplitude, qual conclusão está mais correta?",
+      "enunciado": "A partir de duas ondas em uma corda se encontram e formam regi�es de maior ou menor amplitude, qual conclus�o est� mais correta?",
       "opcoes": [
-        "o caso e explicado por Interferência.",
-        "o caso e mais bem entendido por Ressonância.",
-        "a situação anula a importância de efeito Doppler.",
-        "o fenômeno exclui qualquer relação com Conceito de onda."
+        "o caso e explicado por Interfer�ncia.",
+        "o caso e mais bem entendido por Resson�ncia.",
+        "a situa��o anula a import�ncia de efeito Doppler.",
+        "o fen�meno exclui qualquer rela��o com Conceito de onda."
       ],
-      "correta": "o caso e explicado por Interferência.",
-      "comentario": "A conclusão adequada retoma a ideia central de Interferência.",
+      "correta": "o caso e explicado por Interfer�ncia.",
+      "comentario": "A conclus�o adequada retoma a ideia central de Interfer�ncia.",
       "tempoEstimado": 45,
       "tags": [
         "ondulatoria",
@@ -4494,22 +4495,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Interferencia",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Se um grupo fosse pesquisar Interferência, qual pergunta orientadora seria a mais adequada?",
+      "enunciado": "Se um grupo fosse pesquisar Interfer�ncia, qual pergunta orientadora seria a mais adequada?",
       "opcoes": [
-        "Como Interferência aparece no cancelamento de ruído e os padrões de franjas em experimentos ondulatórios?",
-        "Como Ressonância substitui totalmente o cancelamento de ruído e os padrões de franjas em experimentos ondulatórios?",
-        "Por que efeito Doppler torna desnecessário estudar Interferencia?",
+        "Como Interfer�ncia aparece no cancelamento de ru�do e os padr�es de franjas em experimentos ondulat�rios?",
+        "Como Resson�ncia substitui totalmente o cancelamento de ru�do e os padr�es de franjas em experimentos ondulat�rios?",
+        "Por que efeito Doppler torna desnecess�rio estudar Interferencia?",
         "De que modo Conceito de onda elimina toda medida fisica envolvida?"
       ],
-      "correta": "Como Interferência aparece no cancelamento de ruído e os padrões de franjas em experimentos ondulatórios?",
-      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Interferência.",
+      "correta": "Como Interfer�ncia aparece no cancelamento de ru�do e os padr�es de franjas em experimentos ondulat�rios?",
+      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Interfer�ncia.",
       "tempoEstimado": 45,
       "tags": [
         "ondulatoria",
@@ -4533,22 +4534,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Interferencia",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em Interferência e pensar que:",
+      "enunciado": "Um erro comum em Interfer�ncia e pensar que:",
       "opcoes": [
         "quando duas ondas se encontram elas desaparecem definitivamente",
-        "Ressonância e apenas um aumento aleatorio de volume sem relação com frequência",
-        "o efeito Doppler altera a frequência emitida pela fonte em si",
-        "a onda carrega a matéria do meio ao longo de todo o percurso"
+        "Resson�ncia e apenas um aumento aleatorio de volume sem rela��o com frequ�ncia",
+        "o efeito Doppler altera a frequ�ncia emitida pela fonte em si",
+        "a onda carrega a mat�ria do meio ao longo de todo o percurso"
       ],
       "correta": "quando duas ondas se encontram elas desaparecem definitivamente",
-      "comentario": "Esse e um equívoco frequente porque contraria a definição correta de Interferência.",
+      "comentario": "Esse e um equ�voco frequente porque contraria a defini��o correta de Interfer�ncia.",
       "tempoEstimado": 50,
       "tags": [
         "ondulatoria",
@@ -4572,22 +4573,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Interferencia",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"o encontro entre duas ondas faz com que ambas deixem de existir apos a colisao\". A avaliação mais adequada e:",
+      "enunciado": "Um estudante afirma: \"o encontro entre duas ondas faz com que ambas deixem de existir apos a colisao\". A avalia��o mais adequada e:",
       "opcoes": [
-        "A afirmação está incorreta, porque a superposicao de ondas que produz reforco ou cancelamento na onda resultante.",
-        "A afirmação está correta, pois resume integralmente Interferência.",
-        "A afirmação está correta, porque toda situação do tema depende apenas dessa ideia.",
-        "A afirmação está incorreta apenas porque não apresenta uma unidade de medida."
+        "A afirma��o est� incorreta, porque a superposicao de ondas que produz reforco ou cancelamento na onda resultante.",
+        "A afirma��o est� correta, pois resume integralmente Interfer�ncia.",
+        "A afirma��o est� correta, porque toda situa��o do tema depende apenas dessa ideia.",
+        "A afirma��o est� incorreta apenas porque n�o apresenta uma unidade de medida."
       ],
-      "correta": "A afirmação está incorreta, porque a superposicao de ondas que produz reforco ou cancelamento na onda resultante.",
-      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre Interferência.",
+      "correta": "A afirma��o est� incorreta, porque a superposicao de ondas que produz reforco ou cancelamento na onda resultante.",
+      "comentario": "A fala do estudante apresenta um equ�voco conceitual sobre Interfer�ncia.",
       "tempoEstimado": 55,
       "tags": [
         "ondulatoria",
@@ -4611,22 +4612,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Interferencia",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se Interferência fosse ignorado(a) ao analisar o cancelamento de ruído e os padrões de franjas em experimentos ondulatórios, o resultado mais provável seria:",
+      "enunciado": "Se Interfer�ncia fosse ignorado(a) ao analisar o cancelamento de ru�do e os padr�es de franjas em experimentos ondulat�rios, o resultado mais prov�vel seria:",
       "opcoes": [
-        "a análise ficaria incompleta e poderia gerar interpretações erradas sobre o cancelamento de ruído e os padrões de franjas em experimentos ondulatórios.",
-        "a situação seria explicada automaticamente por Ressonância, sem necessidade de análise.",
-        "nenhuma interpretacao fisica seria alterada, porque Interferencia não interfere nesse tipo de problema.",
-        "o fenômeno deixaria de existir apenas por não ser nomeado."
+        "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre o cancelamento de ru�do e os padr�es de franjas em experimentos ondulat�rios.",
+        "a situa��o seria explicada automaticamente por Resson�ncia, sem necessidade de an�lise.",
+        "nenhuma interpretacao fisica seria alterada, porque Interferencia n�o interfere nesse tipo de problema.",
+        "o fen�meno deixaria de existir apenas por n�o ser nomeado."
       ],
-      "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre o cancelamento de ruído e os padrões de franjas em experimentos ondulatórios.",
-      "comentario": "Ignorar Interferência compromete a leitura fisica da situação apresentada.",
+      "correta": "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre o cancelamento de ru�do e os padr�es de franjas em experimentos ondulat�rios.",
+      "comentario": "Ignorar Interfer�ncia compromete a leitura fisica da situa��o apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "ondulatoria",
@@ -4650,22 +4651,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Interferencia",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma aplicação cotidiana ou escolar, Interferencia ajuda principalmente a compreender:",
+      "enunciado": "Em uma aplica��o cotidiana ou escolar, Interferencia ajuda principalmente a compreender:",
       "opcoes": [
-        "o cancelamento de ruído e os padrões de franjas em experimentos ondulatórios",
-        "a afinação de instrumentos musicais e as vibrações em pontes e estruturas",
-        "radares, exames médicos e interpretacao de sirenes e sinais astronômicos",
-        "a propagação de pulsos em cordas e superficies líquidas"
+        "o cancelamento de ru�do e os padr�es de franjas em experimentos ondulat�rios",
+        "a afina��o de instrumentos musicais e as vibra��es em pontes e estruturas",
+        "radares, exames m�dicos e interpretacao de sirenes e sinais astron�micos",
+        "a propaga��o de pulsos em cordas e superficies l�quidas"
       ],
-      "correta": "o cancelamento de ruído e os padrões de franjas em experimentos ondulatórios",
-      "comentario": "A aplicação escolhida e a que melhor representa Interferência.",
+      "correta": "o cancelamento de ru�do e os padr�es de franjas em experimentos ondulat�rios",
+      "comentario": "A aplica��o escolhida e a que melhor representa Interfer�ncia.",
       "tempoEstimado": 60,
       "tags": [
         "ondulatoria",
@@ -4689,8 +4690,8 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Interferencia",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
@@ -4698,13 +4699,13 @@ export const ondulatoria = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual resumo sintetiza melhor a ideia central de Interferencia?",
       "opcoes": [
-        "Em síntese, a superposicao de ondas que produz reforco ou cancelamento na onda resultante.",
-        "Em síntese, o aumento da amplitude de um sistema quando a frequência de excitacao coincide com sua frequência natural.",
-        "Em síntese, a variação aparente da frequência percebida devido ao movimento relativo entre fonte e observador.",
-        "Em síntese, uma perturbação que se propaga transportando energia sem transportar matéria de forma permanente."
+        "Em s�ntese, a superposicao de ondas que produz reforco ou cancelamento na onda resultante.",
+        "Em s�ntese, o aumento da amplitude de um sistema quando a frequ�ncia de excitacao coincide com sua frequ�ncia natural.",
+        "Em s�ntese, a varia��o aparente da frequ�ncia percebida devido ao movimento relativo entre fonte e observador.",
+        "Em s�ntese, uma perturba��o que se propaga transportando energia sem transportar mat�ria de forma permanente."
       ],
-      "correta": "Em síntese, a superposicao de ondas que produz reforco ou cancelamento na onda resultante.",
-      "comentario": "O resumo correto recupera o núcleo conceitual de Interferência.",
+      "correta": "Em s�ntese, a superposicao de ondas que produz reforco ou cancelamento na onda resultante.",
+      "comentario": "O resumo correto recupera o n�cleo conceitual de Interfer�ncia.",
       "tempoEstimado": 65,
       "tags": [
         "ondulatoria",
@@ -4728,22 +4729,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Ressonancia",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Física, Ressonancia pode ser definido(a) como:",
+      "enunciado": "Em F�sica, Ressonancia pode ser definido(a) como:",
       "opcoes": [
-        "o aumento da amplitude de um sistema quando a frequência de excitacao coincide com sua frequência natural",
-        "a variação aparente da frequência percebida devido ao movimento relativo entre fonte e observador",
-        "uma perturbação que se propaga transportando energia sem transportar matéria de forma permanente",
-        "os elementos que caracterizam uma onda, como amplitude, comprimento de onda, frequência e período"
+        "o aumento da amplitude de um sistema quando a frequ�ncia de excitacao coincide com sua frequ�ncia natural",
+        "a varia��o aparente da frequ�ncia percebida devido ao movimento relativo entre fonte e observador",
+        "uma perturba��o que se propaga transportando energia sem transportar mat�ria de forma permanente",
+        "os elementos que caracterizam uma onda, como amplitude, comprimento de onda, frequ�ncia e per�odo"
       ],
-      "correta": "o aumento da amplitude de um sistema quando a frequência de excitacao coincide com sua frequência natural",
-      "comentario": "Ressonancia refere-se ao aumento da amplitude de um sistema quando a frequência de excitacao coincide com sua frequência natural.",
+      "correta": "o aumento da amplitude de um sistema quando a frequ�ncia de excitacao coincide com sua frequ�ncia natural",
+      "comentario": "Ressonancia refere-se ao aumento da amplitude de um sistema quando a frequ�ncia de excitacao coincide com sua frequ�ncia natural.",
       "tempoEstimado": 25,
       "tags": [
         "ondulatoria",
@@ -4767,14 +4768,14 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Ressonancia",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: uma taca vibra intensamente quando recebe um som na frequência adequada Esse caso exemplifica melhor qual subtópico?",
+      "enunciado": "Observe a situa��o: uma taca vibra intensamente quando recebe um som na frequ�ncia adequada Esse caso exemplifica melhor qual subt�pico?",
       "opcoes": [
         "Ressonancia",
         "Efeito Doppler",
@@ -4782,7 +4783,7 @@ export const ondulatoria = {
         "Grandezas da onda"
       ],
       "correta": "Ressonancia",
-      "comentario": "A situação apresentada é um exemplo de Ressonância.",
+      "comentario": "A situa��o apresentada � um exemplo de Resson�ncia.",
       "tempoEstimado": 25,
       "tags": [
         "ondulatoria",
@@ -4806,22 +4807,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Ressonancia",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmação descreve corretamente Ressonância?",
+      "enunciado": "Qual afirma��o descreve corretamente Resson�ncia?",
       "opcoes": [
-        "O aumento da amplitude de um sistema quando a frequência de excitacao coincide com sua frequência natural.",
-        "A variação aparente da frequência percebida devido ao movimento relativo entre fonte e observador.",
-        "Uma perturbação que se propaga transportando energia sem transportar matéria de forma permanente.",
-        "Os elementos que caracterizam uma onda, como amplitude, comprimento de onda, frequência e período."
+        "O aumento da amplitude de um sistema quando a frequ�ncia de excitacao coincide com sua frequ�ncia natural.",
+        "A varia��o aparente da frequ�ncia percebida devido ao movimento relativo entre fonte e observador.",
+        "Uma perturba��o que se propaga transportando energia sem transportar mat�ria de forma permanente.",
+        "Os elementos que caracterizam uma onda, como amplitude, comprimento de onda, frequ�ncia e per�odo."
       ],
-      "correta": "O aumento da amplitude de um sistema quando a frequência de excitacao coincide com sua frequência natural.",
-      "comentario": "A alternativa correta resume o conceito de Ressonância.",
+      "correta": "O aumento da amplitude de um sistema quando a frequ�ncia de excitacao coincide com sua frequ�ncia natural.",
+      "comentario": "A alternativa correta resume o conceito de Resson�ncia.",
       "tempoEstimado": 30,
       "tags": [
         "ondulatoria",
@@ -4845,22 +4846,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Ressonancia",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compatível com Ressonância?",
+      "enunciado": "Qual alternativa NAO esta compat�vel com Resson�ncia?",
       "opcoes": [
-        "A variação aparente da frequência percebida devido ao movimento relativo entre fonte e observador.",
-        "O aumento da amplitude de um sistema quando a frequência de excitacao coincide com sua frequência natural.",
-        "Relacionar frequência natural e aumento de amplitude em sistemas oscilantes.",
-        "Ajuda a compreender a afinação de instrumentos musicais e as vibrações em pontes e estruturas."
+        "A varia��o aparente da frequ�ncia percebida devido ao movimento relativo entre fonte e observador.",
+        "O aumento da amplitude de um sistema quando a frequ�ncia de excitacao coincide com sua frequ�ncia natural.",
+        "Relacionar frequ�ncia natural e aumento de amplitude em sistemas oscilantes.",
+        "Ajuda a compreender a afina��o de instrumentos musicais e as vibra��es em pontes e estruturas."
       ],
-      "correta": "A variação aparente da frequência percebida devido ao movimento relativo entre fonte e observador.",
-      "comentario": "A opção incompativel descreve outro subtópico, não Ressonância.",
+      "correta": "A varia��o aparente da frequ�ncia percebida devido ao movimento relativo entre fonte e observador.",
+      "comentario": "A op��o incompativel descreve outro subt�pico, n�o Resson�ncia.",
       "tempoEstimado": 30,
       "tags": [
         "ondulatoria",
@@ -4884,22 +4885,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Ressonancia",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar Ressonância, o foco principal e:",
+      "enunciado": "Ao estudar Resson�ncia, o foco principal e:",
       "opcoes": [
-        "relacionar frequência natural e aumento de amplitude em sistemas oscilantes",
-        "analisar mudancas aparentes de frequência em situações com movimento relativo",
-        "identificar a propagação de perturbacoes e o transporte de energia",
-        "relacionar amplitude, frequência, período e comprimento de onda"
+        "relacionar frequ�ncia natural e aumento de amplitude em sistemas oscilantes",
+        "analisar mudancas aparentes de frequ�ncia em situa��es com movimento relativo",
+        "identificar a propaga��o de perturbacoes e o transporte de energia",
+        "relacionar amplitude, frequ�ncia, per�odo e comprimento de onda"
       ],
-      "correta": "relacionar frequência natural e aumento de amplitude em sistemas oscilantes",
-      "comentario": "Ressonancia concentra-se em relacionar frequência natural e aumento de amplitude em sistemas oscilantes.",
+      "correta": "relacionar frequ�ncia natural e aumento de amplitude em sistemas oscilantes",
+      "comentario": "Ressonancia concentra-se em relacionar frequ�ncia natural e aumento de amplitude em sistemas oscilantes.",
       "tempoEstimado": 35,
       "tags": [
         "ondulatoria",
@@ -4923,22 +4924,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Ressonancia",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Efeito Doppler trata de a variação aparente da frequência percebida devido ao movimento relativo entre fonte e observador, Ressonancia destaca:",
+      "enunciado": "Enquanto Efeito Doppler trata de a varia��o aparente da frequ�ncia percebida devido ao movimento relativo entre fonte e observador, Ressonancia destaca:",
       "opcoes": [
-        "O aumento da amplitude de um sistema quando a frequência de excitacao coincide com sua frequência natural.",
-        "A variação aparente da frequência percebida devido ao movimento relativo entre fonte e observador.",
-        "Uma perturbação que se propaga transportando energia sem transportar matéria de forma permanente.",
-        "Os elementos que caracterizam uma onda, como amplitude, comprimento de onda, frequência e período."
+        "O aumento da amplitude de um sistema quando a frequ�ncia de excitacao coincide com sua frequ�ncia natural.",
+        "A varia��o aparente da frequ�ncia percebida devido ao movimento relativo entre fonte e observador.",
+        "Uma perturba��o que se propaga transportando energia sem transportar mat�ria de forma permanente.",
+        "Os elementos que caracterizam uma onda, como amplitude, comprimento de onda, frequ�ncia e per�odo."
       ],
-      "correta": "O aumento da amplitude de um sistema quando a frequência de excitacao coincide com sua frequência natural.",
-      "comentario": "A comparação correta mostra a especificidade de Ressonância.",
+      "correta": "O aumento da amplitude de um sistema quando a frequ�ncia de excitacao coincide com sua frequ�ncia natural.",
+      "comentario": "A compara��o correta mostra a especificidade de Resson�ncia.",
       "tempoEstimado": 35,
       "tags": [
         "ondulatoria",
@@ -4962,22 +4963,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Ressonancia",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma análise de sala, considera-se que uma taca vibra intensamente quando recebe um som na frequência adequada Para interpretar essa situação, é mais adequado mobilizar o conceito de:",
+      "enunciado": "Em uma an�lise de sala, considera-se que uma taca vibra intensamente quando recebe um som na frequ�ncia adequada Para interpretar essa situa��o, � mais adequado mobilizar o conceito de:",
       "opcoes": [
         "Ressonancia",
         "Efeito Doppler",
         "Grandezas da onda",
-        "Velocidade de propagação"
+        "Velocidade de propaga��o"
       ],
       "correta": "Ressonancia",
-      "comentario": "O caso descrito é interpretado adequadamente por meio de Ressonância.",
+      "comentario": "O caso descrito � interpretado adequadamente por meio de Resson�ncia.",
       "tempoEstimado": 40,
       "tags": [
         "ondulatoria",
@@ -5001,22 +5002,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Ressonancia",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação prática depende mais diretamente de Ressonancia?",
+      "enunciado": "Qual situa��o pr�tica depende mais diretamente de Ressonancia?",
       "opcoes": [
-        "a afinação de instrumentos musicais e as vibrações em pontes e estruturas",
-        "radares, exames médicos e interpretacao de sirenes e sinais astronômicos",
-        "a propagação de pulsos em cordas e superficies líquidas",
-        "o cálculo da velocidade do som ou da luz em diferentes meios"
+        "a afina��o de instrumentos musicais e as vibra��es em pontes e estruturas",
+        "radares, exames m�dicos e interpretacao de sirenes e sinais astron�micos",
+        "a propaga��o de pulsos em cordas e superficies l�quidas",
+        "o c�lculo da velocidade do som ou da luz em diferentes meios"
       ],
-      "correta": "a afinação de instrumentos musicais e as vibrações em pontes e estruturas",
-      "comentario": "Ressonancia aparece de modo direto na afinação de instrumentos musicais e as vibrações em pontes e estruturas.",
+      "correta": "a afina��o de instrumentos musicais e as vibra��es em pontes e estruturas",
+      "comentario": "Ressonancia aparece de modo direto na afina��o de instrumentos musicais e as vibra��es em pontes e estruturas.",
       "tempoEstimado": 40,
       "tags": [
         "ondulatoria",
@@ -5040,22 +5041,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Ressonancia",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir de uma taca vibra intensamente quando recebe um som na frequência adequada, qual conclusão está mais correta?",
+      "enunciado": "A partir de uma taca vibra intensamente quando recebe um som na frequ�ncia adequada, qual conclus�o est� mais correta?",
       "opcoes": [
-        "o caso e explicado por Ressonância.",
+        "o caso e explicado por Resson�ncia.",
         "o caso e mais bem entendido por efeito Doppler.",
-        "a situação anula a importância de Conceito de onda.",
-        "o fenômeno exclui qualquer relação com Grandezas da onda."
+        "a situa��o anula a import�ncia de Conceito de onda.",
+        "o fen�meno exclui qualquer rela��o com Grandezas da onda."
       ],
-      "correta": "o caso e explicado por Ressonância.",
-      "comentario": "A conclusão adequada retoma a ideia central de Ressonância.",
+      "correta": "o caso e explicado por Resson�ncia.",
+      "comentario": "A conclus�o adequada retoma a ideia central de Resson�ncia.",
       "tempoEstimado": 45,
       "tags": [
         "ondulatoria",
@@ -5079,22 +5080,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Ressonancia",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Se um grupo fosse pesquisar Ressonância, qual pergunta orientadora seria a mais adequada?",
+      "enunciado": "Se um grupo fosse pesquisar Resson�ncia, qual pergunta orientadora seria a mais adequada?",
       "opcoes": [
-        "Como Ressonância aparece na afinação de instrumentos musicais e as vibrações em pontes e estruturas?",
-        "Como efeito Doppler substitui totalmente a afinação de instrumentos musicais e as vibrações em pontes e estruturas?",
-        "Por que Conceito de onda torna desnecessário estudar Ressonancia?",
+        "Como Resson�ncia aparece na afina��o de instrumentos musicais e as vibra��es em pontes e estruturas?",
+        "Como efeito Doppler substitui totalmente a afina��o de instrumentos musicais e as vibra��es em pontes e estruturas?",
+        "Por que Conceito de onda torna desnecess�rio estudar Ressonancia?",
         "De que modo Grandezas da onda elimina toda medida fisica envolvida?"
       ],
-      "correta": "Como Ressonância aparece na afinação de instrumentos musicais e as vibrações em pontes e estruturas?",
-      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Ressonância.",
+      "correta": "Como Resson�ncia aparece na afina��o de instrumentos musicais e as vibra��es em pontes e estruturas?",
+      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Resson�ncia.",
       "tempoEstimado": 45,
       "tags": [
         "ondulatoria",
@@ -5118,22 +5119,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Ressonancia",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em Ressonância e pensar que:",
+      "enunciado": "Um erro comum em Resson�ncia e pensar que:",
       "opcoes": [
-        "Ressonância e apenas um aumento aleatorio de volume sem relação com frequência",
-        "o efeito Doppler altera a frequência emitida pela fonte em si",
-        "a onda carrega a matéria do meio ao longo de todo o percurso",
-        "amplitude, frequência e comprimento de onda representam exatamente a mesma grandeza"
+        "Resson�ncia e apenas um aumento aleatorio de volume sem rela��o com frequ�ncia",
+        "o efeito Doppler altera a frequ�ncia emitida pela fonte em si",
+        "a onda carrega a mat�ria do meio ao longo de todo o percurso",
+        "amplitude, frequ�ncia e comprimento de onda representam exatamente a mesma grandeza"
       ],
-      "correta": "Ressonância e apenas um aumento aleatorio de volume sem relação com frequência",
-      "comentario": "Esse e um equívoco frequente porque contraria a definição correta de Ressonância.",
+      "correta": "Resson�ncia e apenas um aumento aleatorio de volume sem rela��o com frequ�ncia",
+      "comentario": "Esse e um equ�voco frequente porque contraria a defini��o correta de Resson�ncia.",
       "tempoEstimado": 50,
       "tags": [
         "ondulatoria",
@@ -5157,22 +5158,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Ressonancia",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"Ressonância acontece quando qualquer som forte atinge um objeto, independentemente da frequência\". A avaliação mais adequada e:",
+      "enunciado": "Um estudante afirma: \"Resson�ncia acontece quando qualquer som forte atinge um objeto, independentemente da frequ�ncia\". A avalia��o mais adequada e:",
       "opcoes": [
-        "A afirmação está incorreta, porque o aumento da amplitude de um sistema quando a frequência de excitacao coincide com sua frequência natural.",
-        "A afirmação está correta, pois resume integralmente Ressonância.",
-        "A afirmação está correta, porque toda situação do tema depende apenas dessa ideia.",
-        "A afirmação está incorreta apenas porque não apresenta uma unidade de medida."
+        "A afirma��o est� incorreta, porque o aumento da amplitude de um sistema quando a frequ�ncia de excitacao coincide com sua frequ�ncia natural.",
+        "A afirma��o est� correta, pois resume integralmente Resson�ncia.",
+        "A afirma��o est� correta, porque toda situa��o do tema depende apenas dessa ideia.",
+        "A afirma��o est� incorreta apenas porque n�o apresenta uma unidade de medida."
       ],
-      "correta": "A afirmação está incorreta, porque o aumento da amplitude de um sistema quando a frequência de excitacao coincide com sua frequência natural.",
-      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre Ressonância.",
+      "correta": "A afirma��o est� incorreta, porque o aumento da amplitude de um sistema quando a frequ�ncia de excitacao coincide com sua frequ�ncia natural.",
+      "comentario": "A fala do estudante apresenta um equ�voco conceitual sobre Resson�ncia.",
       "tempoEstimado": 55,
       "tags": [
         "ondulatoria",
@@ -5196,22 +5197,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Ressonancia",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se Ressonância fosse ignorado(a) ao analisar a afinação de instrumentos musicais e as vibrações em pontes e estruturas, o resultado mais provável seria:",
+      "enunciado": "Se Resson�ncia fosse ignorado(a) ao analisar a afina��o de instrumentos musicais e as vibra��es em pontes e estruturas, o resultado mais prov�vel seria:",
       "opcoes": [
-        "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a afinação de instrumentos musicais e as vibrações em pontes e estruturas.",
-        "a situação seria explicada automaticamente por efeito Doppler, sem necessidade de análise.",
-        "nenhuma interpretacao fisica seria alterada, porque Ressonancia não interfere nesse tipo de problema.",
-        "o fenômeno deixaria de existir apenas por não ser nomeado."
+        "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre a afina��o de instrumentos musicais e as vibra��es em pontes e estruturas.",
+        "a situa��o seria explicada automaticamente por efeito Doppler, sem necessidade de an�lise.",
+        "nenhuma interpretacao fisica seria alterada, porque Ressonancia n�o interfere nesse tipo de problema.",
+        "o fen�meno deixaria de existir apenas por n�o ser nomeado."
       ],
-      "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a afinação de instrumentos musicais e as vibrações em pontes e estruturas.",
-      "comentario": "Ignorar Ressonância compromete a leitura fisica da situação apresentada.",
+      "correta": "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre a afina��o de instrumentos musicais e as vibra��es em pontes e estruturas.",
+      "comentario": "Ignorar Resson�ncia compromete a leitura fisica da situa��o apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "ondulatoria",
@@ -5235,22 +5236,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Ressonancia",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma aplicação cotidiana ou escolar, Ressonancia ajuda principalmente a compreender:",
+      "enunciado": "Em uma aplica��o cotidiana ou escolar, Ressonancia ajuda principalmente a compreender:",
       "opcoes": [
-        "a afinação de instrumentos musicais e as vibrações em pontes e estruturas",
-        "radares, exames médicos e interpretacao de sirenes e sinais astronômicos",
-        "a propagação de pulsos em cordas e superficies líquidas",
+        "a afina��o de instrumentos musicais e as vibra��es em pontes e estruturas",
+        "radares, exames m�dicos e interpretacao de sirenes e sinais astron�micos",
+        "a propaga��o de pulsos em cordas e superficies l�quidas",
         "a leitura de graficos e tabelas sobre ondas em laboratorio"
       ],
-      "correta": "a afinação de instrumentos musicais e as vibrações em pontes e estruturas",
-      "comentario": "A aplicação escolhida e a que melhor representa Ressonância.",
+      "correta": "a afina��o de instrumentos musicais e as vibra��es em pontes e estruturas",
+      "comentario": "A aplica��o escolhida e a que melhor representa Resson�ncia.",
       "tempoEstimado": 60,
       "tags": [
         "ondulatoria",
@@ -5274,8 +5275,8 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Ressonancia",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
@@ -5283,13 +5284,13 @@ export const ondulatoria = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual resumo sintetiza melhor a ideia central de Ressonancia?",
       "opcoes": [
-        "Em síntese, o aumento da amplitude de um sistema quando a frequência de excitacao coincide com sua frequência natural.",
-        "Em síntese, a variação aparente da frequência percebida devido ao movimento relativo entre fonte e observador.",
-        "Em síntese, uma perturbação que se propaga transportando energia sem transportar matéria de forma permanente.",
-        "Em síntese, os elementos que caracterizam uma onda, como amplitude, comprimento de onda, frequência e período."
+        "Em s�ntese, o aumento da amplitude de um sistema quando a frequ�ncia de excitacao coincide com sua frequ�ncia natural.",
+        "Em s�ntese, a varia��o aparente da frequ�ncia percebida devido ao movimento relativo entre fonte e observador.",
+        "Em s�ntese, uma perturba��o que se propaga transportando energia sem transportar mat�ria de forma permanente.",
+        "Em s�ntese, os elementos que caracterizam uma onda, como amplitude, comprimento de onda, frequ�ncia e per�odo."
       ],
-      "correta": "Em síntese, o aumento da amplitude de um sistema quando a frequência de excitacao coincide com sua frequência natural.",
-      "comentario": "O resumo correto recupera o núcleo conceitual de Ressonância.",
+      "correta": "Em s�ntese, o aumento da amplitude de um sistema quando a frequ�ncia de excitacao coincide com sua frequ�ncia natural.",
+      "comentario": "O resumo correto recupera o n�cleo conceitual de Resson�ncia.",
       "tempoEstimado": 65,
       "tags": [
         "ondulatoria",
@@ -5313,22 +5314,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Efeito Doppler",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Física, Efeito Doppler pode ser definido(a) como:",
+      "enunciado": "Em F�sica, Efeito Doppler pode ser definido(a) como:",
       "opcoes": [
-        "a variação aparente da frequência percebida devido ao movimento relativo entre fonte e observador",
-        "uma perturbação que se propaga transportando energia sem transportar matéria de forma permanente",
-        "os elementos que caracterizam uma onda, como amplitude, comprimento de onda, frequência e período",
-        "a grandeza que indica a rapidez com que a onda se desloca em um meio, relacionando comprimento de onda e frequência"
+        "a varia��o aparente da frequ�ncia percebida devido ao movimento relativo entre fonte e observador",
+        "uma perturba��o que se propaga transportando energia sem transportar mat�ria de forma permanente",
+        "os elementos que caracterizam uma onda, como amplitude, comprimento de onda, frequ�ncia e per�odo",
+        "a grandeza que indica a rapidez com que a onda se desloca em um meio, relacionando comprimento de onda e frequ�ncia"
       ],
-      "correta": "a variação aparente da frequência percebida devido ao movimento relativo entre fonte e observador",
-      "comentario": "Efeito Doppler refere-se à variação aparente da frequência percebida devido ao movimento relativo entre fonte e observador.",
+      "correta": "a varia��o aparente da frequ�ncia percebida devido ao movimento relativo entre fonte e observador",
+      "comentario": "Efeito Doppler refere-se � varia��o aparente da frequ�ncia percebida devido ao movimento relativo entre fonte e observador.",
       "tempoEstimado": 25,
       "tags": [
         "ondulatoria",
@@ -5352,22 +5353,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Efeito Doppler",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: a sirene de uma ambulancia parece mais aguda ao se aproximar e mais grave ao se afastar Esse caso exemplifica melhor qual subtópico?",
+      "enunciado": "Observe a situa��o: a sirene de uma ambulancia parece mais aguda ao se aproximar e mais grave ao se afastar Esse caso exemplifica melhor qual subt�pico?",
       "opcoes": [
         "Efeito Doppler",
         "Conceito de onda",
         "Grandezas da onda",
-        "Velocidade de propagação"
+        "Velocidade de propaga��o"
       ],
       "correta": "Efeito Doppler",
-      "comentario": "A situação apresentada é um exemplo de efeito Doppler.",
+      "comentario": "A situa��o apresentada � um exemplo de efeito Doppler.",
       "tempoEstimado": 25,
       "tags": [
         "ondulatoria",
@@ -5391,21 +5392,21 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Efeito Doppler",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmação descreve corretamente efeito Doppler?",
+      "enunciado": "Qual afirma��o descreve corretamente efeito Doppler?",
       "opcoes": [
-        "A variação aparente da frequência percebida devido ao movimento relativo entre fonte e observador.",
-        "Uma perturbação que se propaga transportando energia sem transportar matéria de forma permanente.",
-        "Os elementos que caracterizam uma onda, como amplitude, comprimento de onda, frequência e período.",
-        "A grandeza que indica a rapidez com que a onda se desloca em um meio, relacionando comprimento de onda e frequência."
+        "A varia��o aparente da frequ�ncia percebida devido ao movimento relativo entre fonte e observador.",
+        "Uma perturba��o que se propaga transportando energia sem transportar mat�ria de forma permanente.",
+        "Os elementos que caracterizam uma onda, como amplitude, comprimento de onda, frequ�ncia e per�odo.",
+        "A grandeza que indica a rapidez com que a onda se desloca em um meio, relacionando comprimento de onda e frequ�ncia."
       ],
-      "correta": "A variação aparente da frequência percebida devido ao movimento relativo entre fonte e observador.",
+      "correta": "A varia��o aparente da frequ�ncia percebida devido ao movimento relativo entre fonte e observador.",
       "comentario": "A alternativa correta resume o conceito de efeito Doppler.",
       "tempoEstimado": 30,
       "tags": [
@@ -5430,22 +5431,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Efeito Doppler",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compatível com efeito Doppler?",
+      "enunciado": "Qual alternativa NAO esta compat�vel com efeito Doppler?",
       "opcoes": [
-        "Uma perturbação que se propaga transportando energia sem transportar matéria de forma permanente.",
-        "A variação aparente da frequência percebida devido ao movimento relativo entre fonte e observador.",
-        "Analisar mudancas aparentes de frequência em situações com movimento relativo.",
-        "Ajuda a compreender radares, exames médicos e interpretacao de sirenes e sinais astronômicos."
+        "Uma perturba��o que se propaga transportando energia sem transportar mat�ria de forma permanente.",
+        "A varia��o aparente da frequ�ncia percebida devido ao movimento relativo entre fonte e observador.",
+        "Analisar mudancas aparentes de frequ�ncia em situa��es com movimento relativo.",
+        "Ajuda a compreender radares, exames m�dicos e interpretacao de sirenes e sinais astron�micos."
       ],
-      "correta": "Uma perturbação que se propaga transportando energia sem transportar matéria de forma permanente.",
-      "comentario": "A opção incompativel descreve outro subtópico, não efeito Doppler.",
+      "correta": "Uma perturba��o que se propaga transportando energia sem transportar mat�ria de forma permanente.",
+      "comentario": "A op��o incompativel descreve outro subt�pico, n�o efeito Doppler.",
       "tempoEstimado": 30,
       "tags": [
         "ondulatoria",
@@ -5469,8 +5470,8 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Efeito Doppler",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
@@ -5478,13 +5479,13 @@ export const ondulatoria = {
       "tipo": "multipla_escolha",
       "enunciado": "Ao estudar efeito Doppler, o foco principal e:",
       "opcoes": [
-        "analisar mudancas aparentes de frequência em situações com movimento relativo",
-        "identificar a propagação de perturbacoes e o transporte de energia",
-        "relacionar amplitude, frequência, período e comprimento de onda",
-        "calcular a rapidez de propagação de ondas em diferentes meios"
+        "analisar mudancas aparentes de frequ�ncia em situa��es com movimento relativo",
+        "identificar a propaga��o de perturbacoes e o transporte de energia",
+        "relacionar amplitude, frequ�ncia, per�odo e comprimento de onda",
+        "calcular a rapidez de propaga��o de ondas em diferentes meios"
       ],
-      "correta": "analisar mudancas aparentes de frequência em situações com movimento relativo",
-      "comentario": "Efeito Doppler concentra-se em analisar mudancas aparentes de frequência em situações com movimento relativo.",
+      "correta": "analisar mudancas aparentes de frequ�ncia em situa��es com movimento relativo",
+      "comentario": "Efeito Doppler concentra-se em analisar mudancas aparentes de frequ�ncia em situa��es com movimento relativo.",
       "tempoEstimado": 35,
       "tags": [
         "ondulatoria",
@@ -5508,22 +5509,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Efeito Doppler",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Conceito de onda trata de uma perturbação que se propaga transportando energia sem transportar matéria de forma permanente, Efeito Doppler destaca:",
+      "enunciado": "Enquanto Conceito de onda trata de uma perturba��o que se propaga transportando energia sem transportar mat�ria de forma permanente, Efeito Doppler destaca:",
       "opcoes": [
-        "A variação aparente da frequência percebida devido ao movimento relativo entre fonte e observador.",
-        "Uma perturbação que se propaga transportando energia sem transportar matéria de forma permanente.",
-        "Os elementos que caracterizam uma onda, como amplitude, comprimento de onda, frequência e período.",
-        "A grandeza que indica a rapidez com que a onda se desloca em um meio, relacionando comprimento de onda e frequência."
+        "A varia��o aparente da frequ�ncia percebida devido ao movimento relativo entre fonte e observador.",
+        "Uma perturba��o que se propaga transportando energia sem transportar mat�ria de forma permanente.",
+        "Os elementos que caracterizam uma onda, como amplitude, comprimento de onda, frequ�ncia e per�odo.",
+        "A grandeza que indica a rapidez com que a onda se desloca em um meio, relacionando comprimento de onda e frequ�ncia."
       ],
-      "correta": "A variação aparente da frequência percebida devido ao movimento relativo entre fonte e observador.",
-      "comentario": "A comparação correta mostra a especificidade de efeito Doppler.",
+      "correta": "A varia��o aparente da frequ�ncia percebida devido ao movimento relativo entre fonte e observador.",
+      "comentario": "A compara��o correta mostra a especificidade de efeito Doppler.",
       "tempoEstimado": 35,
       "tags": [
         "ondulatoria",
@@ -5547,22 +5548,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Efeito Doppler",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma análise de sala, considera-se que a sirene de uma ambulancia parece mais aguda ao se aproximar e mais grave ao se afastar Para interpretar essa situação, é mais adequado mobilizar o conceito de:",
+      "enunciado": "Em uma an�lise de sala, considera-se que a sirene de uma ambulancia parece mais aguda ao se aproximar e mais grave ao se afastar Para interpretar essa situa��o, � mais adequado mobilizar o conceito de:",
       "opcoes": [
         "Efeito Doppler",
         "Conceito de onda",
-        "Velocidade de propagação",
-        "Classificação das ondas"
+        "Velocidade de propaga��o",
+        "Classifica��o das ondas"
       ],
       "correta": "Efeito Doppler",
-      "comentario": "O caso descrito é interpretado adequadamente por meio de efeito Doppler.",
+      "comentario": "O caso descrito � interpretado adequadamente por meio de efeito Doppler.",
       "tempoEstimado": 40,
       "tags": [
         "ondulatoria",
@@ -5586,22 +5587,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Efeito Doppler",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação prática depende mais diretamente de Efeito Doppler?",
+      "enunciado": "Qual situa��o pr�tica depende mais diretamente de Efeito Doppler?",
       "opcoes": [
-        "radares, exames médicos e interpretacao de sirenes e sinais astronômicos",
-        "a propagação de pulsos em cordas e superficies líquidas",
+        "radares, exames m�dicos e interpretacao de sirenes e sinais astron�micos",
+        "a propaga��o de pulsos em cordas e superficies l�quidas",
         "a leitura de graficos e tabelas sobre ondas em laboratorio",
-        "a comparação entre ondas mecânicas, eletromagnéticas, transversais e longitudinais"
+        "a compara��o entre ondas mec�nicas, eletromagn�ticas, transversais e longitudinais"
       ],
-      "correta": "radares, exames médicos e interpretacao de sirenes e sinais astronômicos",
-      "comentario": "Efeito Doppler aparece de modo direto em radares, exames médicos e interpretacao de sirenes e sinais astronômicos.",
+      "correta": "radares, exames m�dicos e interpretacao de sirenes e sinais astron�micos",
+      "comentario": "Efeito Doppler aparece de modo direto em radares, exames m�dicos e interpretacao de sirenes e sinais astron�micos.",
       "tempoEstimado": 40,
       "tags": [
         "ondulatoria",
@@ -5625,22 +5626,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Efeito Doppler",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir de a sirene de uma ambulancia parece mais aguda ao se aproximar e mais grave ao se afastar, qual conclusão está mais correta?",
+      "enunciado": "A partir de a sirene de uma ambulancia parece mais aguda ao se aproximar e mais grave ao se afastar, qual conclus�o est� mais correta?",
       "opcoes": [
         "o caso e explicado por efeito Doppler.",
         "o caso e mais bem entendido por Conceito de onda.",
-        "a situação anula a importância de Grandezas da onda.",
-        "o fenômeno exclui qualquer relação com Velocidade de propagação."
+        "a situa��o anula a import�ncia de Grandezas da onda.",
+        "o fen�meno exclui qualquer rela��o com Velocidade de propaga��o."
       ],
       "correta": "o caso e explicado por efeito Doppler.",
-      "comentario": "A conclusão adequada retoma a ideia central de efeito Doppler.",
+      "comentario": "A conclus�o adequada retoma a ideia central de efeito Doppler.",
       "tempoEstimado": 45,
       "tags": [
         "ondulatoria",
@@ -5664,8 +5665,8 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Efeito Doppler",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
@@ -5673,12 +5674,12 @@ export const ondulatoria = {
       "tipo": "multipla_escolha",
       "enunciado": "Se um grupo fosse pesquisar efeito Doppler, qual pergunta orientadora seria a mais adequada?",
       "opcoes": [
-        "Como efeito Doppler aparece em radares, exames médicos e interpretacao de sirenes e sinais astronômicos?",
-        "Como Conceito de onda substitui totalmente radares, exames médicos e interpretacao de sirenes e sinais astronômicos?",
-        "Por que Grandezas da onda torna desnecessário estudar Efeito Doppler?",
-        "De que modo Velocidade de propagação elimina toda medida fisica envolvida?"
+        "Como efeito Doppler aparece em radares, exames m�dicos e interpretacao de sirenes e sinais astron�micos?",
+        "Como Conceito de onda substitui totalmente radares, exames m�dicos e interpretacao de sirenes e sinais astron�micos?",
+        "Por que Grandezas da onda torna desnecess�rio estudar Efeito Doppler?",
+        "De que modo Velocidade de propaga��o elimina toda medida fisica envolvida?"
       ],
-      "correta": "Como efeito Doppler aparece em radares, exames médicos e interpretacao de sirenes e sinais astronômicos?",
+      "correta": "Como efeito Doppler aparece em radares, exames m�dicos e interpretacao de sirenes e sinais astron�micos?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de efeito Doppler.",
       "tempoEstimado": 45,
       "tags": [
@@ -5703,8 +5704,8 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Efeito Doppler",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
@@ -5712,13 +5713,13 @@ export const ondulatoria = {
       "tipo": "multipla_escolha",
       "enunciado": "Um erro comum em efeito Doppler e pensar que:",
       "opcoes": [
-        "o efeito Doppler altera a frequência emitida pela fonte em si",
-        "a onda carrega a matéria do meio ao longo de todo o percurso",
-        "amplitude, frequência e comprimento de onda representam exatamente a mesma grandeza",
+        "o efeito Doppler altera a frequ�ncia emitida pela fonte em si",
+        "a onda carrega a mat�ria do meio ao longo de todo o percurso",
+        "amplitude, frequ�ncia e comprimento de onda representam exatamente a mesma grandeza",
         "a velocidade da onda depende apenas da amplitude do pulso produzido"
       ],
-      "correta": "o efeito Doppler altera a frequência emitida pela fonte em si",
-      "comentario": "Esse e um equívoco frequente porque contraria a definição correta de efeito Doppler.",
+      "correta": "o efeito Doppler altera a frequ�ncia emitida pela fonte em si",
+      "comentario": "Esse e um equ�voco frequente porque contraria a defini��o correta de efeito Doppler.",
       "tempoEstimado": 50,
       "tags": [
         "ondulatoria",
@@ -5742,22 +5743,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Efeito Doppler",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"no efeito Doppler, a fonte passa a emitir outra frequência real quando se movimenta\". A avaliação mais adequada e:",
+      "enunciado": "Um estudante afirma: \"no efeito Doppler, a fonte passa a emitir outra frequ�ncia real quando se movimenta\". A avalia��o mais adequada e:",
       "opcoes": [
-        "A afirmação está incorreta, porque a variação aparente da frequência percebida devido ao movimento relativo entre fonte e observador.",
-        "A afirmação está correta, pois resume integralmente efeito Doppler.",
-        "A afirmação está correta, porque toda situação do tema depende apenas dessa ideia.",
-        "A afirmação está incorreta apenas porque não apresenta uma unidade de medida."
+        "A afirma��o est� incorreta, porque a varia��o aparente da frequ�ncia percebida devido ao movimento relativo entre fonte e observador.",
+        "A afirma��o est� correta, pois resume integralmente efeito Doppler.",
+        "A afirma��o est� correta, porque toda situa��o do tema depende apenas dessa ideia.",
+        "A afirma��o est� incorreta apenas porque n�o apresenta uma unidade de medida."
       ],
-      "correta": "A afirmação está incorreta, porque a variação aparente da frequência percebida devido ao movimento relativo entre fonte e observador.",
-      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre efeito Doppler.",
+      "correta": "A afirma��o est� incorreta, porque a varia��o aparente da frequ�ncia percebida devido ao movimento relativo entre fonte e observador.",
+      "comentario": "A fala do estudante apresenta um equ�voco conceitual sobre efeito Doppler.",
       "tempoEstimado": 55,
       "tags": [
         "ondulatoria",
@@ -5781,22 +5782,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Efeito Doppler",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se efeito Doppler fosse ignorado(a) ao analisar radares, exames médicos e interpretacao de sirenes e sinais astronômicos, o resultado mais provável seria:",
+      "enunciado": "Se efeito Doppler fosse ignorado(a) ao analisar radares, exames m�dicos e interpretacao de sirenes e sinais astron�micos, o resultado mais prov�vel seria:",
       "opcoes": [
-        "a análise ficaria incompleta e poderia gerar interpretações erradas sobre radares, exames médicos e interpretacao de sirenes e sinais astronômicos.",
-        "a situação seria explicada automaticamente por Conceito de onda, sem necessidade de análise.",
-        "nenhuma interpretacao fisica seria alterada, porque Efeito Doppler não interfere nesse tipo de problema.",
-        "o fenômeno deixaria de existir apenas por não ser nomeado."
+        "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre radares, exames m�dicos e interpretacao de sirenes e sinais astron�micos.",
+        "a situa��o seria explicada automaticamente por Conceito de onda, sem necessidade de an�lise.",
+        "nenhuma interpretacao fisica seria alterada, porque Efeito Doppler n�o interfere nesse tipo de problema.",
+        "o fen�meno deixaria de existir apenas por n�o ser nomeado."
       ],
-      "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre radares, exames médicos e interpretacao de sirenes e sinais astronômicos.",
-      "comentario": "Ignorar efeito Doppler compromete a leitura fisica da situação apresentada.",
+      "correta": "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre radares, exames m�dicos e interpretacao de sirenes e sinais astron�micos.",
+      "comentario": "Ignorar efeito Doppler compromete a leitura fisica da situa��o apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "ondulatoria",
@@ -5820,22 +5821,22 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Efeito Doppler",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma aplicação cotidiana ou escolar, Efeito Doppler ajuda principalmente a compreender:",
+      "enunciado": "Em uma aplica��o cotidiana ou escolar, Efeito Doppler ajuda principalmente a compreender:",
       "opcoes": [
-        "radares, exames médicos e interpretacao de sirenes e sinais astronômicos",
-        "a propagação de pulsos em cordas e superficies líquidas",
+        "radares, exames m�dicos e interpretacao de sirenes e sinais astron�micos",
+        "a propaga��o de pulsos em cordas e superficies l�quidas",
         "a leitura de graficos e tabelas sobre ondas em laboratorio",
-        "o cálculo da velocidade do som ou da luz em diferentes meios"
+        "o c�lculo da velocidade do som ou da luz em diferentes meios"
       ],
-      "correta": "radares, exames médicos e interpretacao de sirenes e sinais astronômicos",
-      "comentario": "A aplicação escolhida e a que melhor representa efeito Doppler.",
+      "correta": "radares, exames m�dicos e interpretacao de sirenes e sinais astron�micos",
+      "comentario": "A aplica��o escolhida e a que melhor representa efeito Doppler.",
       "tempoEstimado": 60,
       "tags": [
         "ondulatoria",
@@ -5859,8 +5860,8 @@ export const ondulatoria = {
       "serie": [
         3
       ],
-      "materia": "Física",
-      "topico": "Ondulatória",
+      "materia": "F�sica",
+      "topico": "Ondulat�ria",
       "subtopico": "Efeito Doppler",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
@@ -5868,13 +5869,13 @@ export const ondulatoria = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual resumo sintetiza melhor a ideia central de Efeito Doppler?",
       "opcoes": [
-        "Em síntese, a variação aparente da frequência percebida devido ao movimento relativo entre fonte e observador.",
-        "Em síntese, uma perturbação que se propaga transportando energia sem transportar matéria de forma permanente.",
-        "Em síntese, os elementos que caracterizam uma onda, como amplitude, comprimento de onda, frequência e período.",
-        "Em síntese, a grandeza que indica a rapidez com que a onda se desloca em um meio, relacionando comprimento de onda e frequência."
+        "Em s�ntese, a varia��o aparente da frequ�ncia percebida devido ao movimento relativo entre fonte e observador.",
+        "Em s�ntese, uma perturba��o que se propaga transportando energia sem transportar mat�ria de forma permanente.",
+        "Em s�ntese, os elementos que caracterizam uma onda, como amplitude, comprimento de onda, frequ�ncia e per�odo.",
+        "Em s�ntese, a grandeza que indica a rapidez com que a onda se desloca em um meio, relacionando comprimento de onda e frequ�ncia."
       ],
-      "correta": "Em síntese, a variação aparente da frequência percebida devido ao movimento relativo entre fonte e observador.",
-      "comentario": "O resumo correto recupera o núcleo conceitual de efeito Doppler.",
+      "correta": "Em s�ntese, a varia��o aparente da frequ�ncia percebida devido ao movimento relativo entre fonte e observador.",
+      "comentario": "O resumo correto recupera o n�cleo conceitual de efeito Doppler.",
       "tempoEstimado": 65,
       "tags": [
         "ondulatoria",

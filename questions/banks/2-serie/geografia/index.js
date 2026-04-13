@@ -4,9 +4,9 @@ import { economiaMundial } from "./economia-mundial/index.js";
 import { urbanizacao } from "./urbanizacao/index.js";
 
 export const geografia2Serie = [
-  industrializacao,
-  globalizacao,
   economiaMundial,
+  globalizacao,
+  industrializacao,
   urbanizacao
 ];
 

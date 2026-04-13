@@ -1,45 +1,46 @@
 export const funcoesDaLinguagem = {
   "id": "portugues_funcoes_da_linguagem",
-  "materia": "Português",
+  "materia": "Portugues",
   "serie": [
     1
   ],
-  "topico": "Funções da Linguagem",
+  "topico": "Funcoes da Linguagem",
   "metadados": {
     "disciplinaId": "portugues",
     "base": "ESCOLAR",
+    "seloEditorial": "VERIFICADA",
     "eixo": "Leitura e linguagem",
-    "frente": "Comunicação e sentidos",
+    "frente": "Comunicacao e sentidos",
     "searchAliases": [
-      "elementos da comunicação",
-      "funções da linguagem",
-      "intenção comunicativa",
+      "elementos da comunicacao",
+      "funcoes da linguagem",
+      "intencao comunicativa",
       "foco da mensagem"
     ],
     "subtopicosBase": [
       "Conceito geral",
-      "Função referencial",
-      "Função emotiva",
-      "Função conativa",
-      "Função fática",
-      "Função metalinguística",
-      "Função poética",
-      "Identificação em contexto",
+      "Funcao referencial",
+      "Funcao emotiva",
+      "Funcao conativa",
+      "Funcao fatica",
+      "Funcao metalinguistica",
+      "Funcao poetica",
+      "Identificacao em contexto",
       "Efeito de sentido",
-      "Diferenciação entre funções",
-      "Interpretação indireta",
+      "Diferenciacao entre funcoes",
+      "Interpretacao indireta",
       "Pegadinha",
-      "Equivalência de formas"
+      "Equivalencia de formas"
     ],
     "habilidadesBase": [
-      "identificar as funções da linguagem em enunciados curtos",
-      "reconhecer o foco da mensagem em diferentes situações comunicativas",
-      "distinguir funções da linguagem com características semelhantes",
-      "interpretar efeitos de sentido associados as funções da linguagem",
-      "analisar usos das funções da linguagem em pequenos textos"
+      "identificar as funcoes da linguagem em enunciados curtos",
+      "reconhecer o foco da mensagem em diferentes situacoes comunicativas",
+      "distinguir funcoes da linguagem com caracteristicas semelhantes",
+      "interpretar efeitos de sentido associados as funcoes da linguagem",
+      "analisar usos das funcoes da linguagem em pequenos textos"
     ],
     "auditado": true,
-    "auditadoEm": "2026-04-10",
+    "auditadoEm": "2026-04-12",
     "auditoriaTipo": "varredura-rapida"
   },
   "questoes": [
@@ -48,22 +49,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Função referencial",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Funcao referencial",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "No enunciado \"A água entra em ebulição a 100 graus ao nível do mar.\", qual função da linguagem predomina?",
+      "enunciado": "No enunciado \"A agua entra em ebulicao a 100 graus ao nivel do mar.\", qual funcao da linguagem predomina?",
       "opcoes": [
         "Referencial",
-        "Metalinguística",
-        "Fática",
-        "Poética"
+        "Metalinguistica",
+        "Fatica",
+        "Poetica"
       ],
       "correta": "Referencial",
-      "comentario": "Referencial prioriza a informação objetiva sobre fatos, dados e referências do mundo.",
+      "comentario": "Referencial prioriza a informacao objetiva sobre fatos, dados e referencias do mundo.",
       "tempoEstimado": 20,
       "tags": [
         "referencial",
@@ -86,22 +87,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta um exemplo de função emotiva?",
+      "enunciado": "Qual alternativa apresenta um exemplo de funcao emotiva?",
       "opcoes": [
         "Senti um alivio enorme ao terminar a prova.",
-        "Alô, você está me ouvindo?",
-        "A palavra poema designa um texto organizado de forma artística.",
+        "Alo, voce esta me ouvindo?",
+        "A palavra poema designa um texto organizado de forma artistica.",
         "O verso brinca com o som das letras."
       ],
       "correta": "Senti um alivio enorme ao terminar a prova.",
-      "comentario": "A resposta correta exemplifica Emotiva, pois centraliza a subjetividade, os sentimentos e a opinião do emissor.",
+      "comentario": "A resposta correta exemplifica Emotiva, pois centraliza a subjetividade, os sentimentos e a opiniao do emissor.",
       "tempoEstimado": 20,
       "tags": [
         "emotiva",
@@ -124,20 +125,20 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Função conativa",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Funcao conativa",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A afirmação \"No trecho Leia o regulamento antes de participar., predomina a função conativa\" está correta?",
+      "enunciado": "A afirmacao \"No trecho Leia o regulamento antes de participar., predomina a funcao conativa\" esta correta?",
       "opcoes": [
         "Verdadeiro",
         "Falso"
       ],
       "correta": "Verdadeiro",
-      "comentario": "Está correta porque o foco principal recai sobre receptor.",
+      "comentario": "Esta correta porque o foco principal recai sobre receptor.",
       "tempoEstimado": 20,
       "tags": [
         "conativa",
@@ -160,22 +161,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Função fática",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Funcao fatica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "No enunciado \"Alô, você está me ouvindo?\", qual função da linguagem predomina?",
+      "enunciado": "No enunciado \"Alo, voce esta me ouvindo?\", qual funcao da linguagem predomina?",
       "opcoes": [
-        "Fática",
+        "Fatica",
         "Conativa",
         "Emotiva",
         "Referencial"
       ],
-      "correta": "Fática",
-      "comentario": "Fática verifica, inicia, mantem ou encerra o canal de comunicação.",
+      "correta": "Fatica",
+      "comentario": "Fatica verifica, inicia, mantem ou encerra o canal de comunicacao.",
       "tempoEstimado": 20,
       "tags": [
         "fatica",
@@ -198,22 +199,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta um exemplo de função metalinguística?",
+      "enunciado": "Qual alternativa apresenta um exemplo de funcao metalinguistica?",
       "opcoes": [
         "Substantivo e a palavra que nomeia seres, lugares ou ideias.",
-        "Alô, você está me ouvindo?",
+        "Alo, voce esta me ouvindo?",
         "A palavra cai leve, lisa, luminosa.",
         "A campanha comeca na segunda-feira e termina na sexta."
       ],
       "correta": "Substantivo e a palavra que nomeia seres, lugares ou ideias.",
-      "comentario": "A resposta correta exemplifica Metalinguística, pois faz a linguagem voltar-se para si mesma, explicando o próprio codigo.",
+      "comentario": "A resposta correta exemplifica Metalinguistica, pois faz a linguagem voltar-se para si mesma, explicando o proprio codigo.",
       "tempoEstimado": 20,
       "tags": [
         "metalinguistica",
@@ -236,20 +237,20 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Função poética",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Funcao poetica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A afirmação \"No trecho No silêncio da noite, a lua lava a rua., predomina a função poética\" está correta?",
+      "enunciado": "A afirmacao \"No trecho No silencio da noite, a lua lava a rua., predomina a funcao poetica\" esta correta?",
       "opcoes": [
         "Verdadeiro",
         "Falso"
       ],
       "correta": "Verdadeiro",
-      "comentario": "Está correta porque o foco principal recai sobre mensagem.",
+      "comentario": "Esta correta porque o foco principal recai sobre mensagem.",
       "tempoEstimado": 20,
       "tags": [
         "poetica",
@@ -272,22 +273,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Função referencial",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Funcao referencial",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "No enunciado \"O Brasil possui cinco regiões geograficas.\", qual função da linguagem predomina?",
+      "enunciado": "No enunciado \"O Brasil possui cinco regioes geograficas.\", qual funcao da linguagem predomina?",
       "opcoes": [
         "Referencial",
-        "Metalinguística",
-        "Fática",
-        "Poética"
+        "Metalinguistica",
+        "Fatica",
+        "Poetica"
       ],
       "correta": "Referencial",
-      "comentario": "Referencial prioriza a informação objetiva sobre fatos, dados e referências do mundo.",
+      "comentario": "Referencial prioriza a informacao objetiva sobre fatos, dados e referencias do mundo.",
       "tempoEstimado": 20,
       "tags": [
         "referencial",
@@ -310,22 +311,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta um exemplo de função emotiva?",
+      "enunciado": "Qual alternativa apresenta um exemplo de funcao emotiva?",
       "opcoes": [
         "Para mim, esse livro e inesquecivel.",
-        "Alô, você está me ouvindo?",
-        "A palavra poema designa um texto organizado de forma artística.",
+        "Alo, voce esta me ouvindo?",
+        "A palavra poema designa um texto organizado de forma artistica.",
         "O verso brinca com o som das letras."
       ],
       "correta": "Para mim, esse livro e inesquecivel.",
-      "comentario": "A resposta correta exemplifica Emotiva, pois centraliza a subjetividade, os sentimentos e a opinião do emissor.",
+      "comentario": "A resposta correta exemplifica Emotiva, pois centraliza a subjetividade, os sentimentos e a opiniao do emissor.",
       "tempoEstimado": 20,
       "tags": [
         "emotiva",
@@ -348,20 +349,20 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Função conativa",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Funcao conativa",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A afirmação \"No trecho Não perca a promoção deste fim de semana., predomina a função conativa\" está correta?",
+      "enunciado": "A afirmacao \"No trecho Nao perca a promocao deste fim de semana., predomina a funcao conativa\" esta correta?",
       "opcoes": [
         "Verdadeiro",
         "Falso"
       ],
       "correta": "Verdadeiro",
-      "comentario": "Está correta porque o foco principal recai sobre receptor.",
+      "comentario": "Esta correta porque o foco principal recai sobre receptor.",
       "tempoEstimado": 20,
       "tags": [
         "conativa",
@@ -384,22 +385,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Função fática",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Funcao fatica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "No enunciado \"Oi, tudo bem por ai?\", qual função da linguagem predomina?",
+      "enunciado": "No enunciado \"Oi, tudo bem por ai?\", qual funcao da linguagem predomina?",
       "opcoes": [
-        "Fática",
+        "Fatica",
         "Conativa",
         "Emotiva",
         "Referencial"
       ],
-      "correta": "Fática",
-      "comentario": "Fática verifica, inicia, mantem ou encerra o canal de comunicação.",
+      "correta": "Fatica",
+      "comentario": "Fatica verifica, inicia, mantem ou encerra o canal de comunicacao.",
       "tempoEstimado": 20,
       "tags": [
         "fatica",
@@ -422,22 +423,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta um exemplo de função metalinguística?",
+      "enunciado": "Qual alternativa apresenta um exemplo de funcao metalinguistica?",
       "opcoes": [
-        "A palavra poema designa um texto organizado de forma artística.",
-        "Alô, você está me ouvindo?",
+        "A palavra poema designa um texto organizado de forma artistica.",
+        "Alo, voce esta me ouvindo?",
         "A palavra cai leve, lisa, luminosa.",
         "A campanha comeca na segunda-feira e termina na sexta."
       ],
-      "correta": "A palavra poema designa um texto organizado de forma artística.",
-      "comentario": "A resposta correta exemplifica Metalinguística, pois faz a linguagem voltar-se para si mesma, explicando o próprio codigo.",
+      "correta": "A palavra poema designa um texto organizado de forma artistica.",
+      "comentario": "A resposta correta exemplifica Metalinguistica, pois faz a linguagem voltar-se para si mesma, explicando o proprio codigo.",
       "tempoEstimado": 20,
       "tags": [
         "metalinguistica",
@@ -460,20 +461,20 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Função poética",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Funcao poetica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A afirmação \"No trecho A palavra cai leve, lisa, luminosa., predomina a função poética\" está correta?",
+      "enunciado": "A afirmacao \"No trecho A palavra cai leve, lisa, luminosa., predomina a funcao poetica\" esta correta?",
       "opcoes": [
         "Verdadeiro",
         "Falso"
       ],
       "correta": "Verdadeiro",
-      "comentario": "Está correta porque o foco principal recai sobre mensagem.",
+      "comentario": "Esta correta porque o foco principal recai sobre mensagem.",
       "tempoEstimado": 20,
       "tags": [
         "poetica",
@@ -496,22 +497,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Função referencial",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Funcao referencial",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "No enunciado \"A campanha comeca na segunda-feira e termina na sexta.\", qual função da linguagem predomina?",
+      "enunciado": "No enunciado \"A campanha comeca na segunda-feira e termina na sexta.\", qual funcao da linguagem predomina?",
       "opcoes": [
         "Referencial",
-        "Metalinguística",
-        "Fática",
-        "Poética"
+        "Metalinguistica",
+        "Fatica",
+        "Poetica"
       ],
       "correta": "Referencial",
-      "comentario": "Referencial prioriza a informação objetiva sobre fatos, dados e referências do mundo.",
+      "comentario": "Referencial prioriza a informacao objetiva sobre fatos, dados e referencias do mundo.",
       "tempoEstimado": 20,
       "tags": [
         "referencial",
@@ -534,22 +535,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta um exemplo de função emotiva?",
+      "enunciado": "Qual alternativa apresenta um exemplo de funcao emotiva?",
       "opcoes": [
         "Fiquei decepcionado com a atitude do personagem.",
-        "Alô, você está me ouvindo?",
-        "A palavra poema designa um texto organizado de forma artística.",
+        "Alo, voce esta me ouvindo?",
+        "A palavra poema designa um texto organizado de forma artistica.",
         "O verso brinca com o som das letras."
       ],
       "correta": "Fiquei decepcionado com a atitude do personagem.",
-      "comentario": "A resposta correta exemplifica Emotiva, pois centraliza a subjetividade, os sentimentos e a opinião do emissor.",
+      "comentario": "A resposta correta exemplifica Emotiva, pois centraliza a subjetividade, os sentimentos e a opiniao do emissor.",
       "tempoEstimado": 20,
       "tags": [
         "emotiva",
@@ -572,20 +573,20 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Função conativa",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Funcao conativa",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A afirmação \"No trecho Você precisa revisar o texto com calma., predomina a função conativa\" está correta?",
+      "enunciado": "A afirmacao \"No trecho Voce precisa revisar o texto com calma., predomina a funcao conativa\" esta correta?",
       "opcoes": [
         "Verdadeiro",
         "Falso"
       ],
       "correta": "Verdadeiro",
-      "comentario": "Está correta porque o foco principal recai sobre receptor.",
+      "comentario": "Esta correta porque o foco principal recai sobre receptor.",
       "tempoEstimado": 20,
       "tags": [
         "conativa",
@@ -608,22 +609,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Função fática",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Funcao fatica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "No enunciado \"Certo, podemos continuar?\", qual função da linguagem predomina?",
+      "enunciado": "No enunciado \"Certo, podemos continuar?\", qual funcao da linguagem predomina?",
       "opcoes": [
-        "Fática",
+        "Fatica",
         "Conativa",
         "Emotiva",
         "Referencial"
       ],
-      "correta": "Fática",
-      "comentario": "Fática verifica, inicia, mantem ou encerra o canal de comunicação.",
+      "correta": "Fatica",
+      "comentario": "Fatica verifica, inicia, mantem ou encerra o canal de comunicacao.",
       "tempoEstimado": 20,
       "tags": [
         "fatica",
@@ -646,22 +647,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta um exemplo de função metalinguística?",
+      "enunciado": "Qual alternativa apresenta um exemplo de funcao metalinguistica?",
       "opcoes": [
-        "Nesta tirinha, o autor explica o sentido da expressão usada.",
-        "Alô, você está me ouvindo?",
+        "Nesta tirinha, o autor explica o sentido da expressao usada.",
+        "Alo, voce esta me ouvindo?",
         "A palavra cai leve, lisa, luminosa.",
         "A campanha comeca na segunda-feira e termina na sexta."
       ],
-      "correta": "Nesta tirinha, o autor explica o sentido da expressão usada.",
-      "comentario": "A resposta correta exemplifica Metalinguística, pois faz a linguagem voltar-se para si mesma, explicando o próprio codigo.",
+      "correta": "Nesta tirinha, o autor explica o sentido da expressao usada.",
+      "comentario": "A resposta correta exemplifica Metalinguistica, pois faz a linguagem voltar-se para si mesma, explicando o proprio codigo.",
       "tempoEstimado": 20,
       "tags": [
         "metalinguistica",
@@ -684,20 +685,20 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Função poética",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Funcao poetica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A afirmação \"No trecho O verso brinca com o som das letras., predomina a função poética\" está correta?",
+      "enunciado": "A afirmacao \"No trecho O verso brinca com o som das letras., predomina a funcao poetica\" esta correta?",
       "opcoes": [
         "Verdadeiro",
         "Falso"
       ],
       "correta": "Verdadeiro",
-      "comentario": "Está correta porque o foco principal recai sobre mensagem.",
+      "comentario": "Esta correta porque o foco principal recai sobre mensagem.",
       "tempoEstimado": 20,
       "tags": [
         "poetica",
@@ -720,22 +721,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Função referencial",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Funcao referencial",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "No enunciado \"A biblioteca fecha as 18 horas durante a semana.\", qual função da linguagem predomina?",
+      "enunciado": "No enunciado \"A biblioteca fecha as 18 horas durante a semana.\", qual funcao da linguagem predomina?",
       "opcoes": [
         "Referencial",
-        "Metalinguística",
-        "Fática",
-        "Poética"
+        "Metalinguistica",
+        "Fatica",
+        "Poetica"
       ],
       "correta": "Referencial",
-      "comentario": "Referencial prioriza a informação objetiva sobre fatos, dados e referências do mundo.",
+      "comentario": "Referencial prioriza a informacao objetiva sobre fatos, dados e referencias do mundo.",
       "tempoEstimado": 20,
       "tags": [
         "referencial",
@@ -758,22 +759,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta um exemplo de função emotiva?",
+      "enunciado": "Qual alternativa apresenta um exemplo de funcao emotiva?",
       "opcoes": [
         "Estou muito feliz com o resultado da turma.",
-        "Alô, você está me ouvindo?",
-        "A palavra poema designa um texto organizado de forma artística.",
+        "Alo, voce esta me ouvindo?",
+        "A palavra poema designa um texto organizado de forma artistica.",
         "O verso brinca com o som das letras."
       ],
       "correta": "Estou muito feliz com o resultado da turma.",
-      "comentario": "A resposta correta exemplifica Emotiva, pois centraliza a subjetividade, os sentimentos e a opinião do emissor.",
+      "comentario": "A resposta correta exemplifica Emotiva, pois centraliza a subjetividade, os sentimentos e a opiniao do emissor.",
       "tempoEstimado": 20,
       "tags": [
         "emotiva",
@@ -796,20 +797,20 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Função conativa",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Funcao conativa",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A afirmação \"No trecho Venha conhecer a feira cultural da escola., predomina a função conativa\" está correta?",
+      "enunciado": "A afirmacao \"No trecho Venha conhecer a feira cultural da escola., predomina a funcao conativa\" esta correta?",
       "opcoes": [
         "Verdadeiro",
         "Falso"
       ],
       "correta": "Verdadeiro",
-      "comentario": "Está correta porque o foco principal recai sobre receptor.",
+      "comentario": "Esta correta porque o foco principal recai sobre receptor.",
       "tempoEstimado": 20,
       "tags": [
         "conativa",
@@ -832,22 +833,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Função fática",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Funcao fatica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "No enunciado \"Entendeu o que eu disse?\", qual função da linguagem predomina?",
+      "enunciado": "No enunciado \"Entendeu o que eu disse?\", qual funcao da linguagem predomina?",
       "opcoes": [
-        "Fática",
+        "Fatica",
         "Conativa",
         "Emotiva",
         "Referencial"
       ],
-      "correta": "Fática",
-      "comentario": "Fática verifica, inicia, mantem ou encerra o canal de comunicação.",
+      "correta": "Fatica",
+      "comentario": "Fatica verifica, inicia, mantem ou encerra o canal de comunicacao.",
       "tempoEstimado": 20,
       "tags": [
         "fatica",
@@ -870,22 +871,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta um exemplo de função metalinguística?",
+      "enunciado": "Qual alternativa apresenta um exemplo de funcao metalinguistica?",
       "opcoes": [
-        "O dicionário define ambiguidade como duplicidade de sentido.",
-        "Alô, você está me ouvindo?",
+        "O dicionario define ambiguidade como duplicidade de sentido.",
+        "Alo, voce esta me ouvindo?",
         "A palavra cai leve, lisa, luminosa.",
         "A campanha comeca na segunda-feira e termina na sexta."
       ],
-      "correta": "O dicionário define ambiguidade como duplicidade de sentido.",
-      "comentario": "A resposta correta exemplifica Metalinguística, pois faz a linguagem voltar-se para si mesma, explicando o próprio codigo.",
+      "correta": "O dicionario define ambiguidade como duplicidade de sentido.",
+      "comentario": "A resposta correta exemplifica Metalinguistica, pois faz a linguagem voltar-se para si mesma, explicando o proprio codigo.",
       "tempoEstimado": 20,
       "tags": [
         "metalinguistica",
@@ -908,20 +909,20 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Função poética",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Funcao poetica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A afirmação \"No trecho A frase foi montada para soar bonita e marcante., predomina a função poética\" está correta?",
+      "enunciado": "A afirmacao \"No trecho A frase foi montada para soar bonita e marcante., predomina a funcao poetica\" esta correta?",
       "opcoes": [
         "Verdadeiro",
         "Falso"
       ],
       "correta": "Verdadeiro",
-      "comentario": "Está correta porque o foco principal recai sobre mensagem.",
+      "comentario": "Esta correta porque o foco principal recai sobre mensagem.",
       "tempoEstimado": 20,
       "tags": [
         "poetica",
@@ -944,22 +945,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Função referencial",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Funcao referencial",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "No enunciado \"O texto apresenta o conceito e os exemplos do tema estudado.\", qual função da linguagem predomina?",
+      "enunciado": "No enunciado \"O texto apresenta o conceito e os exemplos do tema estudado.\", qual funcao da linguagem predomina?",
       "opcoes": [
         "Referencial",
-        "Metalinguística",
-        "Fática",
-        "Poética"
+        "Metalinguistica",
+        "Fatica",
+        "Poetica"
       ],
       "correta": "Referencial",
-      "comentario": "Referencial prioriza a informação objetiva sobre fatos, dados e referências do mundo.",
+      "comentario": "Referencial prioriza a informacao objetiva sobre fatos, dados e referencias do mundo.",
       "tempoEstimado": 20,
       "tags": [
         "referencial",
@@ -982,22 +983,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta um exemplo de função emotiva?",
+      "enunciado": "Qual alternativa apresenta um exemplo de funcao emotiva?",
       "opcoes": [
         "Acho esse filme profundamente comovente.",
-        "Alô, você está me ouvindo?",
-        "A palavra poema designa um texto organizado de forma artística.",
+        "Alo, voce esta me ouvindo?",
+        "A palavra poema designa um texto organizado de forma artistica.",
         "O verso brinca com o som das letras."
       ],
       "correta": "Acho esse filme profundamente comovente.",
-      "comentario": "A resposta correta exemplifica Emotiva, pois centraliza a subjetividade, os sentimentos e a opinião do emissor.",
+      "comentario": "A resposta correta exemplifica Emotiva, pois centraliza a subjetividade, os sentimentos e a opiniao do emissor.",
       "tempoEstimado": 20,
       "tags": [
         "emotiva",
@@ -1020,20 +1021,20 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Função conativa",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Funcao conativa",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A afirmação \"No trecho Use cinto de segurança durante todo o trajeto., predomina a função conativa\" está correta?",
+      "enunciado": "A afirmacao \"No trecho Use cinto de seguranca durante todo o trajeto., predomina a funcao conativa\" esta correta?",
       "opcoes": [
         "Verdadeiro",
         "Falso"
       ],
       "correta": "Verdadeiro",
-      "comentario": "Está correta porque o foco principal recai sobre receptor.",
+      "comentario": "Esta correta porque o foco principal recai sobre receptor.",
       "tempoEstimado": 20,
       "tags": [
         "conativa",
@@ -1056,22 +1057,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Função fática",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Funcao fatica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "No enunciado \"Boa noite, som testando, um dois tres.\", qual função da linguagem predomina?",
+      "enunciado": "No enunciado \"Boa noite, som testando, um dois tres.\", qual funcao da linguagem predomina?",
       "opcoes": [
-        "Fática",
+        "Fatica",
         "Conativa",
         "Emotiva",
         "Referencial"
       ],
-      "correta": "Fática",
-      "comentario": "Fática verifica, inicia, mantem ou encerra o canal de comunicação.",
+      "correta": "Fatica",
+      "comentario": "Fatica verifica, inicia, mantem ou encerra o canal de comunicacao.",
       "tempoEstimado": 20,
       "tags": [
         "fatica",
@@ -1094,22 +1095,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta um exemplo de função metalinguística?",
+      "enunciado": "Qual alternativa apresenta um exemplo de funcao metalinguistica?",
       "opcoes": [
         "A aula apresenta o que significa o termo narrador.",
-        "Alô, você está me ouvindo?",
+        "Alo, voce esta me ouvindo?",
         "A palavra cai leve, lisa, luminosa.",
         "A campanha comeca na segunda-feira e termina na sexta."
       ],
       "correta": "A aula apresenta o que significa o termo narrador.",
-      "comentario": "A resposta correta exemplifica Metalinguística, pois faz a linguagem voltar-se para si mesma, explicando o próprio codigo.",
+      "comentario": "A resposta correta exemplifica Metalinguistica, pois faz a linguagem voltar-se para si mesma, explicando o proprio codigo.",
       "tempoEstimado": 20,
       "tags": [
         "metalinguistica",
@@ -1132,20 +1133,20 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Função poética",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Funcao poetica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A afirmação \"No trecho Entre sombras e sopros, a cidade suspira., predomina a função poética\" está correta?",
+      "enunciado": "A afirmacao \"No trecho Entre sombras e sopros, a cidade suspira., predomina a funcao poetica\" esta correta?",
       "opcoes": [
         "Verdadeiro",
         "Falso"
       ],
       "correta": "Verdadeiro",
-      "comentario": "Está correta porque o foco principal recai sobre mensagem.",
+      "comentario": "Esta correta porque o foco principal recai sobre mensagem.",
       "tempoEstimado": 20,
       "tags": [
         "poetica",
@@ -1168,22 +1169,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um notícia informativa, aparece o trecho \"A água entra em ebulição a 100 graus ao nível do mar.\". Qual função da linguagem está em destaque?",
+      "enunciado": "Em um noticia informativa, aparece o trecho \"A agua entra em ebulicao a 100 graus ao nivel do mar.\". Qual funcao da linguagem esta em destaque?",
       "opcoes": [
         "Referencial",
         "Conativa",
-        "Fática",
-        "Metalinguística"
+        "Fatica",
+        "Metalinguistica"
       ],
       "correta": "Referencial",
-      "comentario": "O contexto e as marcas do trecho indicam predominio da função referencial.",
+      "comentario": "O contexto e as marcas do trecho indicam predominio da funcao referencial.",
       "tempoEstimado": 30,
       "tags": [
         "referencial",
@@ -1207,19 +1208,19 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No trecho \"Acho esse filme profundamente comovente.\", a escolha pela função emotiva produz principalmente qual efeito?",
+      "enunciado": "No trecho \"Acho esse filme profundamente comovente.\", a escolha pela funcao emotiva produz principalmente qual efeito?",
       "opcoes": [
         "expressar sentimentos e pontos de vista pessoais",
         "listar etapas sem apelo expressivo",
-        "apenas marcar o horário do evento",
-        "registrar um dado sem interação"
+        "apenas marcar o horario do evento",
+        "registrar um dado sem interacao"
       ],
       "correta": "expressar sentimentos e pontos de vista pessoais",
       "comentario": "Nesse caso, a linguagem foi organizada para expressar sentimentos e pontos de vista pessoais.",
@@ -1245,22 +1246,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Diferenciação entre funções",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Diferenciacao entre funcoes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em \"Você precisa revisar o texto com calma.\", a classificação correta é Conativa, e não Fática, porque:",
+      "enunciado": "Em \"Voce precisa revisar o texto com calma.\", a classificacao correta e Conativa, e nao Fatica, porque:",
       "opcoes": [
-        "há foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
-        "Fática aparece sempre que existe qualquer frase curta",
-        "Fática depende somente do uso de pontuação final",
-        "Fática ocorre em toda mensagem objetiva ou subjetiva sem distinção"
+        "ha foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
+        "Fatica aparece sempre que existe qualquer frase curta",
+        "Fatica depende somente do uso de pontuacao final",
+        "Fatica ocorre em toda mensagem objetiva ou subjetiva sem distincao"
       ],
-      "correta": "há foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
-      "comentario": "A justificativa correta recupera o centro da comunicação e as marcas do trecho.",
+      "correta": "ha foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
+      "comentario": "A justificativa correta recupera o centro da comunicacao e as marcas do trecho.",
       "tempoEstimado": 35,
       "tags": [
         "conativa",
@@ -1283,21 +1284,21 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Função fática",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Funcao fatica",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa traz outra frase em que também predomina a função fática?",
+      "enunciado": "Qual alternativa traz outra frase em que tambem predomina a funcao fatica?",
       "opcoes": [
-        "Alô, você está me ouvindo?",
+        "Alo, voce esta me ouvindo?",
         "Leia o regulamento antes de participar.",
-        "A palavra poema designa um texto organizado de forma artística.",
+        "A palavra poema designa um texto organizado de forma artistica.",
         "O verso brinca com o som das letras."
       ],
-      "correta": "Alô, você está me ouvindo?",
+      "correta": "Alo, voce esta me ouvindo?",
       "comentario": "As duas alternativas corretas preservam o mesmo foco comunicativo.",
       "tempoEstimado": 30,
       "tags": [
@@ -1321,22 +1322,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definição corresponde melhor a função predominante no trecho \"A aula apresenta o que significa o termo narrador.\"?",
+      "enunciado": "Qual definicao corresponde melhor a funcao predominante no trecho \"A aula apresenta o que significa o termo narrador.\"?",
       "opcoes": [
-        "faz a linguagem voltar-se para si mesma, explicando o próprio codigo",
+        "faz a linguagem voltar-se para si mesma, explicando o proprio codigo",
         "valoriza a forma da mensagem, a sonoridade, o ritmo e os efeitos de linguagem",
-        "prioriza a informação objetiva sobre fatos, dados e referências do mundo",
-        "centraliza a subjetividade, os sentimentos e a opinião do emissor"
+        "prioriza a informacao objetiva sobre fatos, dados e referencias do mundo",
+        "centraliza a subjetividade, os sentimentos e a opiniao do emissor"
       ],
-      "correta": "faz a linguagem voltar-se para si mesma, explicando o próprio codigo",
-      "comentario": "A frase foi montada para exemplificar a função metalinguística.",
+      "correta": "faz a linguagem voltar-se para si mesma, explicando o proprio codigo",
+      "comentario": "A frase foi montada para exemplificar a funcao metalinguistica.",
       "tempoEstimado": 30,
       "tags": [
         "metalinguistica",
@@ -1359,22 +1360,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO apresenta predominio da função poética?",
+      "enunciado": "Qual alternativa NAO apresenta predominio da funcao poetica?",
       "opcoes": [
-        "O Brasil possui cinco regiões geograficas.",
+        "O Brasil possui cinco regioes geograficas.",
         "A palavra cai leve, lisa, luminosa.",
         "O verso brinca com o som das letras.",
         "A frase foi montada para soar bonita e marcante."
       ],
-      "correta": "O Brasil possui cinco regiões geograficas.",
-      "comentario": "A alternativa correta desloca o foco da mensagem para outra função da linguagem.",
+      "correta": "O Brasil possui cinco regioes geograficas.",
+      "comentario": "A alternativa correta desloca o foco da mensagem para outra funcao da linguagem.",
       "tempoEstimado": 35,
       "tags": [
         "poetica",
@@ -1397,22 +1398,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um texto didático, aparece o trecho \"O Brasil possui cinco regiões geograficas.\". Qual função da linguagem está em destaque?",
+      "enunciado": "Em um texto didatico, aparece o trecho \"O Brasil possui cinco regioes geograficas.\". Qual funcao da linguagem esta em destaque?",
       "opcoes": [
         "Referencial",
         "Conativa",
-        "Fática",
-        "Metalinguística"
+        "Fatica",
+        "Metalinguistica"
       ],
       "correta": "Referencial",
-      "comentario": "O contexto e as marcas do trecho indicam predominio da função referencial.",
+      "comentario": "O contexto e as marcas do trecho indicam predominio da funcao referencial.",
       "tempoEstimado": 30,
       "tags": [
         "referencial",
@@ -1436,19 +1437,19 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No trecho \"Senti um alivio enorme ao terminar a prova.\", a escolha pela função emotiva produz principalmente qual efeito?",
+      "enunciado": "No trecho \"Senti um alivio enorme ao terminar a prova.\", a escolha pela funcao emotiva produz principalmente qual efeito?",
       "opcoes": [
         "expressar sentimentos e pontos de vista pessoais",
         "listar etapas sem apelo expressivo",
-        "apenas marcar o horário do evento",
-        "registrar um dado sem interação"
+        "apenas marcar o horario do evento",
+        "registrar um dado sem interacao"
       ],
       "correta": "expressar sentimentos e pontos de vista pessoais",
       "comentario": "Nesse caso, a linguagem foi organizada para expressar sentimentos e pontos de vista pessoais.",
@@ -1474,22 +1475,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Diferenciação entre funções",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Diferenciacao entre funcoes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em \"Venha conhecer a feira cultural da escola.\", a classificação correta é Conativa, e não Fática, porque:",
+      "enunciado": "Em \"Venha conhecer a feira cultural da escola.\", a classificacao correta e Conativa, e nao Fatica, porque:",
       "opcoes": [
-        "há foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
-        "Fática aparece sempre que existe qualquer frase curta",
-        "Fática depende somente do uso de pontuação final",
-        "Fática ocorre em toda mensagem objetiva ou subjetiva sem distinção"
+        "ha foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
+        "Fatica aparece sempre que existe qualquer frase curta",
+        "Fatica depende somente do uso de pontuacao final",
+        "Fatica ocorre em toda mensagem objetiva ou subjetiva sem distincao"
       ],
-      "correta": "há foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
-      "comentario": "A justificativa correta recupera o centro da comunicação e as marcas do trecho.",
+      "correta": "ha foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
+      "comentario": "A justificativa correta recupera o centro da comunicacao e as marcas do trecho.",
       "tempoEstimado": 35,
       "tags": [
         "conativa",
@@ -1512,18 +1513,18 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Função fática",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Funcao fatica",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa traz outra frase em que também predomina a função fática?",
+      "enunciado": "Qual alternativa traz outra frase em que tambem predomina a funcao fatica?",
       "opcoes": [
         "Oi, tudo bem por ai?",
         "Leia o regulamento antes de participar.",
-        "A palavra poema designa um texto organizado de forma artística.",
+        "A palavra poema designa um texto organizado de forma artistica.",
         "O verso brinca com o som das letras."
       ],
       "correta": "Oi, tudo bem por ai?",
@@ -1550,22 +1551,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definição corresponde melhor a função predominante no trecho \"Substantivo e a palavra que nomeia seres, lugares ou ideias.\"?",
+      "enunciado": "Qual definicao corresponde melhor a funcao predominante no trecho \"Substantivo e a palavra que nomeia seres, lugares ou ideias.\"?",
       "opcoes": [
-        "faz a linguagem voltar-se para si mesma, explicando o próprio codigo",
+        "faz a linguagem voltar-se para si mesma, explicando o proprio codigo",
         "valoriza a forma da mensagem, a sonoridade, o ritmo e os efeitos de linguagem",
-        "prioriza a informação objetiva sobre fatos, dados e referências do mundo",
-        "centraliza a subjetividade, os sentimentos e a opinião do emissor"
+        "prioriza a informacao objetiva sobre fatos, dados e referencias do mundo",
+        "centraliza a subjetividade, os sentimentos e a opiniao do emissor"
       ],
-      "correta": "faz a linguagem voltar-se para si mesma, explicando o próprio codigo",
-      "comentario": "A frase foi montada para exemplificar a função metalinguística.",
+      "correta": "faz a linguagem voltar-se para si mesma, explicando o proprio codigo",
+      "comentario": "A frase foi montada para exemplificar a funcao metalinguistica.",
       "tempoEstimado": 30,
       "tags": [
         "metalinguistica",
@@ -1588,14 +1589,14 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO apresenta predominio da função poética?",
+      "enunciado": "Qual alternativa NAO apresenta predominio da funcao poetica?",
       "opcoes": [
         "A campanha comeca na segunda-feira e termina na sexta.",
         "O verso brinca com o som das letras.",
@@ -1603,7 +1604,7 @@ export const funcoesDaLinguagem = {
         "Entre sombras e sopros, a cidade suspira."
       ],
       "correta": "A campanha comeca na segunda-feira e termina na sexta.",
-      "comentario": "A alternativa correta desloca o foco da mensagem para outra função da linguagem.",
+      "comentario": "A alternativa correta desloca o foco da mensagem para outra funcao da linguagem.",
       "tempoEstimado": 35,
       "tags": [
         "poetica",
@@ -1626,22 +1627,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um relatorio escolar, aparece o trecho \"A campanha comeca na segunda-feira e termina na sexta.\". Qual função da linguagem está em destaque?",
+      "enunciado": "Em um relatorio escolar, aparece o trecho \"A campanha comeca na segunda-feira e termina na sexta.\". Qual funcao da linguagem esta em destaque?",
       "opcoes": [
         "Referencial",
         "Conativa",
-        "Fática",
-        "Metalinguística"
+        "Fatica",
+        "Metalinguistica"
       ],
       "correta": "Referencial",
-      "comentario": "O contexto e as marcas do trecho indicam predominio da função referencial.",
+      "comentario": "O contexto e as marcas do trecho indicam predominio da funcao referencial.",
       "tempoEstimado": 30,
       "tags": [
         "referencial",
@@ -1665,19 +1666,19 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No trecho \"Para mim, esse livro e inesquecivel.\", a escolha pela função emotiva produz principalmente qual efeito?",
+      "enunciado": "No trecho \"Para mim, esse livro e inesquecivel.\", a escolha pela funcao emotiva produz principalmente qual efeito?",
       "opcoes": [
         "expressar sentimentos e pontos de vista pessoais",
         "listar etapas sem apelo expressivo",
-        "apenas marcar o horário do evento",
-        "registrar um dado sem interação"
+        "apenas marcar o horario do evento",
+        "registrar um dado sem interacao"
       ],
       "correta": "expressar sentimentos e pontos de vista pessoais",
       "comentario": "Nesse caso, a linguagem foi organizada para expressar sentimentos e pontos de vista pessoais.",
@@ -1703,22 +1704,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Diferenciação entre funções",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Diferenciacao entre funcoes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em \"Use cinto de segurança durante todo o trajeto.\", a classificação correta é Conativa, e não Fática, porque:",
+      "enunciado": "Em \"Use cinto de seguranca durante todo o trajeto.\", a classificacao correta e Conativa, e nao Fatica, porque:",
       "opcoes": [
-        "há foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
-        "Fática aparece sempre que existe qualquer frase curta",
-        "Fática depende somente do uso de pontuação final",
-        "Fática ocorre em toda mensagem objetiva ou subjetiva sem distinção"
+        "ha foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
+        "Fatica aparece sempre que existe qualquer frase curta",
+        "Fatica depende somente do uso de pontuacao final",
+        "Fatica ocorre em toda mensagem objetiva ou subjetiva sem distincao"
       ],
-      "correta": "há foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
-      "comentario": "A justificativa correta recupera o centro da comunicação e as marcas do trecho.",
+      "correta": "ha foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
+      "comentario": "A justificativa correta recupera o centro da comunicacao e as marcas do trecho.",
       "tempoEstimado": 35,
       "tags": [
         "conativa",
@@ -1741,18 +1742,18 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Função fática",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Funcao fatica",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa traz outra frase em que também predomina a função fática?",
+      "enunciado": "Qual alternativa traz outra frase em que tambem predomina a funcao fatica?",
       "opcoes": [
         "Certo, podemos continuar?",
         "Leia o regulamento antes de participar.",
-        "A palavra poema designa um texto organizado de forma artística.",
+        "A palavra poema designa um texto organizado de forma artistica.",
         "O verso brinca com o som das letras."
       ],
       "correta": "Certo, podemos continuar?",
@@ -1779,22 +1780,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definição corresponde melhor a função predominante no trecho \"A palavra poema designa um texto organizado de forma artística.\"?",
+      "enunciado": "Qual definicao corresponde melhor a funcao predominante no trecho \"A palavra poema designa um texto organizado de forma artistica.\"?",
       "opcoes": [
-        "faz a linguagem voltar-se para si mesma, explicando o próprio codigo",
+        "faz a linguagem voltar-se para si mesma, explicando o proprio codigo",
         "valoriza a forma da mensagem, a sonoridade, o ritmo e os efeitos de linguagem",
-        "prioriza a informação objetiva sobre fatos, dados e referências do mundo",
-        "centraliza a subjetividade, os sentimentos e a opinião do emissor"
+        "prioriza a informacao objetiva sobre fatos, dados e referencias do mundo",
+        "centraliza a subjetividade, os sentimentos e a opiniao do emissor"
       ],
-      "correta": "faz a linguagem voltar-se para si mesma, explicando o próprio codigo",
-      "comentario": "A frase foi montada para exemplificar a função metalinguística.",
+      "correta": "faz a linguagem voltar-se para si mesma, explicando o proprio codigo",
+      "comentario": "A frase foi montada para exemplificar a funcao metalinguistica.",
       "tempoEstimado": 30,
       "tags": [
         "metalinguistica",
@@ -1817,22 +1818,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO apresenta predominio da função poética?",
+      "enunciado": "Qual alternativa NAO apresenta predominio da funcao poetica?",
       "opcoes": [
         "A biblioteca fecha as 18 horas durante a semana.",
         "A frase foi montada para soar bonita e marcante.",
         "Entre sombras e sopros, a cidade suspira.",
-        "No silêncio da noite, a lua lava a rua."
+        "No silencio da noite, a lua lava a rua."
       ],
       "correta": "A biblioteca fecha as 18 horas durante a semana.",
-      "comentario": "A alternativa correta desloca o foco da mensagem para outra função da linguagem.",
+      "comentario": "A alternativa correta desloca o foco da mensagem para outra funcao da linguagem.",
       "tempoEstimado": 35,
       "tags": [
         "poetica",
@@ -1855,22 +1856,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um aviso institucional, aparece o trecho \"A biblioteca fecha as 18 horas durante a semana.\". Qual função da linguagem está em destaque?",
+      "enunciado": "Em um aviso institucional, aparece o trecho \"A biblioteca fecha as 18 horas durante a semana.\". Qual funcao da linguagem esta em destaque?",
       "opcoes": [
         "Referencial",
         "Conativa",
-        "Fática",
-        "Metalinguística"
+        "Fatica",
+        "Metalinguistica"
       ],
       "correta": "Referencial",
-      "comentario": "O contexto e as marcas do trecho indicam predominio da função referencial.",
+      "comentario": "O contexto e as marcas do trecho indicam predominio da funcao referencial.",
       "tempoEstimado": 30,
       "tags": [
         "referencial",
@@ -1894,19 +1895,19 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No trecho \"Fiquei decepcionado com a atitude do personagem.\", a escolha pela função emotiva produz principalmente qual efeito?",
+      "enunciado": "No trecho \"Fiquei decepcionado com a atitude do personagem.\", a escolha pela funcao emotiva produz principalmente qual efeito?",
       "opcoes": [
         "expressar sentimentos e pontos de vista pessoais",
         "listar etapas sem apelo expressivo",
-        "apenas marcar o horário do evento",
-        "registrar um dado sem interação"
+        "apenas marcar o horario do evento",
+        "registrar um dado sem interacao"
       ],
       "correta": "expressar sentimentos e pontos de vista pessoais",
       "comentario": "Nesse caso, a linguagem foi organizada para expressar sentimentos e pontos de vista pessoais.",
@@ -1932,22 +1933,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Diferenciação entre funções",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Diferenciacao entre funcoes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em \"Leia o regulamento antes de participar.\", a classificação correta é Conativa, e não Fática, porque:",
+      "enunciado": "Em \"Leia o regulamento antes de participar.\", a classificacao correta e Conativa, e nao Fatica, porque:",
       "opcoes": [
-        "há foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
-        "Fática aparece sempre que existe qualquer frase curta",
-        "Fática depende somente do uso de pontuação final",
-        "Fática ocorre em toda mensagem objetiva ou subjetiva sem distinção"
+        "ha foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
+        "Fatica aparece sempre que existe qualquer frase curta",
+        "Fatica depende somente do uso de pontuacao final",
+        "Fatica ocorre em toda mensagem objetiva ou subjetiva sem distincao"
       ],
-      "correta": "há foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
-      "comentario": "A justificativa correta recupera o centro da comunicação e as marcas do trecho.",
+      "correta": "ha foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
+      "comentario": "A justificativa correta recupera o centro da comunicacao e as marcas do trecho.",
       "tempoEstimado": 35,
       "tags": [
         "conativa",
@@ -1970,18 +1971,18 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Função fática",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Funcao fatica",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa traz outra frase em que também predomina a função fática?",
+      "enunciado": "Qual alternativa traz outra frase em que tambem predomina a funcao fatica?",
       "opcoes": [
         "Entendeu o que eu disse?",
         "Leia o regulamento antes de participar.",
-        "A palavra poema designa um texto organizado de forma artística.",
+        "A palavra poema designa um texto organizado de forma artistica.",
         "O verso brinca com o som das letras."
       ],
       "correta": "Entendeu o que eu disse?",
@@ -2008,22 +2009,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definição corresponde melhor a função predominante no trecho \"Nesta tirinha, o autor explica o sentido da expressão usada.\"?",
+      "enunciado": "Qual definicao corresponde melhor a funcao predominante no trecho \"Nesta tirinha, o autor explica o sentido da expressao usada.\"?",
       "opcoes": [
-        "faz a linguagem voltar-se para si mesma, explicando o próprio codigo",
+        "faz a linguagem voltar-se para si mesma, explicando o proprio codigo",
         "valoriza a forma da mensagem, a sonoridade, o ritmo e os efeitos de linguagem",
-        "prioriza a informação objetiva sobre fatos, dados e referências do mundo",
-        "centraliza a subjetividade, os sentimentos e a opinião do emissor"
+        "prioriza a informacao objetiva sobre fatos, dados e referencias do mundo",
+        "centraliza a subjetividade, os sentimentos e a opiniao do emissor"
       ],
-      "correta": "faz a linguagem voltar-se para si mesma, explicando o próprio codigo",
-      "comentario": "A frase foi montada para exemplificar a função metalinguística.",
+      "correta": "faz a linguagem voltar-se para si mesma, explicando o proprio codigo",
+      "comentario": "A frase foi montada para exemplificar a funcao metalinguistica.",
       "tempoEstimado": 30,
       "tags": [
         "metalinguistica",
@@ -2046,22 +2047,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO apresenta predominio da função poética?",
+      "enunciado": "Qual alternativa NAO apresenta predominio da funcao poetica?",
       "opcoes": [
         "O texto apresenta o conceito e os exemplos do tema estudado.",
         "Entre sombras e sopros, a cidade suspira.",
-        "No silêncio da noite, a lua lava a rua.",
+        "No silencio da noite, a lua lava a rua.",
         "A palavra cai leve, lisa, luminosa."
       ],
       "correta": "O texto apresenta o conceito e os exemplos do tema estudado.",
-      "comentario": "A alternativa correta desloca o foco da mensagem para outra função da linguagem.",
+      "comentario": "A alternativa correta desloca o foco da mensagem para outra funcao da linguagem.",
       "tempoEstimado": 35,
       "tags": [
         "poetica",
@@ -2084,22 +2085,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um verbete enciclopedico, aparece o trecho \"O texto apresenta o conceito e os exemplos do tema estudado.\". Qual função da linguagem está em destaque?",
+      "enunciado": "Em um verbete enciclopedico, aparece o trecho \"O texto apresenta o conceito e os exemplos do tema estudado.\". Qual funcao da linguagem esta em destaque?",
       "opcoes": [
         "Referencial",
         "Conativa",
-        "Fática",
-        "Metalinguística"
+        "Fatica",
+        "Metalinguistica"
       ],
       "correta": "Referencial",
-      "comentario": "O contexto e as marcas do trecho indicam predominio da função referencial.",
+      "comentario": "O contexto e as marcas do trecho indicam predominio da funcao referencial.",
       "tempoEstimado": 30,
       "tags": [
         "referencial",
@@ -2123,19 +2124,19 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No trecho \"Estou muito feliz com o resultado da turma.\", a escolha pela função emotiva produz principalmente qual efeito?",
+      "enunciado": "No trecho \"Estou muito feliz com o resultado da turma.\", a escolha pela funcao emotiva produz principalmente qual efeito?",
       "opcoes": [
         "expressar sentimentos e pontos de vista pessoais",
         "listar etapas sem apelo expressivo",
-        "apenas marcar o horário do evento",
-        "registrar um dado sem interação"
+        "apenas marcar o horario do evento",
+        "registrar um dado sem interacao"
       ],
       "correta": "expressar sentimentos e pontos de vista pessoais",
       "comentario": "Nesse caso, a linguagem foi organizada para expressar sentimentos e pontos de vista pessoais.",
@@ -2161,22 +2162,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Diferenciação entre funções",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Diferenciacao entre funcoes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em \"Não perca a promoção deste fim de semana.\", a classificação correta é Conativa, e não Fática, porque:",
+      "enunciado": "Em \"Nao perca a promocao deste fim de semana.\", a classificacao correta e Conativa, e nao Fatica, porque:",
       "opcoes": [
-        "há foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
-        "Fática aparece sempre que existe qualquer frase curta",
-        "Fática depende somente do uso de pontuação final",
-        "Fática ocorre em toda mensagem objetiva ou subjetiva sem distinção"
+        "ha foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
+        "Fatica aparece sempre que existe qualquer frase curta",
+        "Fatica depende somente do uso de pontuacao final",
+        "Fatica ocorre em toda mensagem objetiva ou subjetiva sem distincao"
       ],
-      "correta": "há foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
-      "comentario": "A justificativa correta recupera o centro da comunicação e as marcas do trecho.",
+      "correta": "ha foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
+      "comentario": "A justificativa correta recupera o centro da comunicacao e as marcas do trecho.",
       "tempoEstimado": 35,
       "tags": [
         "conativa",
@@ -2199,18 +2200,18 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Função fática",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Funcao fatica",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa traz outra frase em que também predomina a função fática?",
+      "enunciado": "Qual alternativa traz outra frase em que tambem predomina a funcao fatica?",
       "opcoes": [
         "Boa noite, som testando, um dois tres.",
         "Leia o regulamento antes de participar.",
-        "A palavra poema designa um texto organizado de forma artística.",
+        "A palavra poema designa um texto organizado de forma artistica.",
         "O verso brinca com o som das letras."
       ],
       "correta": "Boa noite, som testando, um dois tres.",
@@ -2237,22 +2238,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definição corresponde melhor a função predominante no trecho \"O dicionário define ambiguidade como duplicidade de sentido.\"?",
+      "enunciado": "Qual definicao corresponde melhor a funcao predominante no trecho \"O dicionario define ambiguidade como duplicidade de sentido.\"?",
       "opcoes": [
-        "faz a linguagem voltar-se para si mesma, explicando o próprio codigo",
+        "faz a linguagem voltar-se para si mesma, explicando o proprio codigo",
         "valoriza a forma da mensagem, a sonoridade, o ritmo e os efeitos de linguagem",
-        "prioriza a informação objetiva sobre fatos, dados e referências do mundo",
-        "centraliza a subjetividade, os sentimentos e a opinião do emissor"
+        "prioriza a informacao objetiva sobre fatos, dados e referencias do mundo",
+        "centraliza a subjetividade, os sentimentos e a opiniao do emissor"
       ],
-      "correta": "faz a linguagem voltar-se para si mesma, explicando o próprio codigo",
-      "comentario": "A frase foi montada para exemplificar a função metalinguística.",
+      "correta": "faz a linguagem voltar-se para si mesma, explicando o proprio codigo",
+      "comentario": "A frase foi montada para exemplificar a funcao metalinguistica.",
       "tempoEstimado": 30,
       "tags": [
         "metalinguistica",
@@ -2275,22 +2276,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO apresenta predominio da função poética?",
+      "enunciado": "Qual alternativa NAO apresenta predominio da funcao poetica?",
       "opcoes": [
-        "A água entra em ebulição a 100 graus ao nível do mar.",
-        "No silêncio da noite, a lua lava a rua.",
+        "A agua entra em ebulicao a 100 graus ao nivel do mar.",
+        "No silencio da noite, a lua lava a rua.",
         "A palavra cai leve, lisa, luminosa.",
         "O verso brinca com o som das letras."
       ],
-      "correta": "A água entra em ebulição a 100 graus ao nível do mar.",
-      "comentario": "A alternativa correta desloca o foco da mensagem para outra função da linguagem.",
+      "correta": "A agua entra em ebulicao a 100 graus ao nivel do mar.",
+      "comentario": "A alternativa correta desloca o foco da mensagem para outra funcao da linguagem.",
       "tempoEstimado": 35,
       "tags": [
         "poetica",
@@ -2313,22 +2314,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um notícia informativa, aparece o trecho \"A água entra em ebulição a 100 graus ao nível do mar.\". Qual função da linguagem está em destaque?",
+      "enunciado": "Em um noticia informativa, aparece o trecho \"A agua entra em ebulicao a 100 graus ao nivel do mar.\". Qual funcao da linguagem esta em destaque?",
       "opcoes": [
         "Referencial",
         "Conativa",
-        "Fática",
-        "Metalinguística"
+        "Fatica",
+        "Metalinguistica"
       ],
       "correta": "Referencial",
-      "comentario": "O contexto e as marcas do trecho indicam predominio da função referencial.",
+      "comentario": "O contexto e as marcas do trecho indicam predominio da funcao referencial.",
       "tempoEstimado": 30,
       "tags": [
         "referencial",
@@ -2352,19 +2353,19 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No trecho \"Acho esse filme profundamente comovente.\", a escolha pela função emotiva produz principalmente qual efeito?",
+      "enunciado": "No trecho \"Acho esse filme profundamente comovente.\", a escolha pela funcao emotiva produz principalmente qual efeito?",
       "opcoes": [
         "expressar sentimentos e pontos de vista pessoais",
         "listar etapas sem apelo expressivo",
-        "apenas marcar o horário do evento",
-        "registrar um dado sem interação"
+        "apenas marcar o horario do evento",
+        "registrar um dado sem interacao"
       ],
       "correta": "expressar sentimentos e pontos de vista pessoais",
       "comentario": "Nesse caso, a linguagem foi organizada para expressar sentimentos e pontos de vista pessoais.",
@@ -2390,22 +2391,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Diferenciação entre funções",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Diferenciacao entre funcoes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em \"Você precisa revisar o texto com calma.\", a classificação correta é Conativa, e não Fática, porque:",
+      "enunciado": "Em \"Voce precisa revisar o texto com calma.\", a classificacao correta e Conativa, e nao Fatica, porque:",
       "opcoes": [
-        "há foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
-        "Fática aparece sempre que existe qualquer frase curta",
-        "Fática depende somente do uso de pontuação final",
-        "Fática ocorre em toda mensagem objetiva ou subjetiva sem distinção"
+        "ha foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
+        "Fatica aparece sempre que existe qualquer frase curta",
+        "Fatica depende somente do uso de pontuacao final",
+        "Fatica ocorre em toda mensagem objetiva ou subjetiva sem distincao"
       ],
-      "correta": "há foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
-      "comentario": "A justificativa correta recupera o centro da comunicação e as marcas do trecho.",
+      "correta": "ha foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
+      "comentario": "A justificativa correta recupera o centro da comunicacao e as marcas do trecho.",
       "tempoEstimado": 35,
       "tags": [
         "conativa",
@@ -2428,21 +2429,21 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Função fática",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Funcao fatica",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa traz outra frase em que também predomina a função fática?",
+      "enunciado": "Qual alternativa traz outra frase em que tambem predomina a funcao fatica?",
       "opcoes": [
-        "Alô, você está me ouvindo?",
+        "Alo, voce esta me ouvindo?",
         "Leia o regulamento antes de participar.",
-        "A palavra poema designa um texto organizado de forma artística.",
+        "A palavra poema designa um texto organizado de forma artistica.",
         "O verso brinca com o som das letras."
       ],
-      "correta": "Alô, você está me ouvindo?",
+      "correta": "Alo, voce esta me ouvindo?",
       "comentario": "As duas alternativas corretas preservam o mesmo foco comunicativo.",
       "tempoEstimado": 30,
       "tags": [
@@ -2466,22 +2467,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definição corresponde melhor a função predominante no trecho \"A aula apresenta o que significa o termo narrador.\"?",
+      "enunciado": "Qual definicao corresponde melhor a funcao predominante no trecho \"A aula apresenta o que significa o termo narrador.\"?",
       "opcoes": [
-        "faz a linguagem voltar-se para si mesma, explicando o próprio codigo",
+        "faz a linguagem voltar-se para si mesma, explicando o proprio codigo",
         "valoriza a forma da mensagem, a sonoridade, o ritmo e os efeitos de linguagem",
-        "prioriza a informação objetiva sobre fatos, dados e referências do mundo",
-        "centraliza a subjetividade, os sentimentos e a opinião do emissor"
+        "prioriza a informacao objetiva sobre fatos, dados e referencias do mundo",
+        "centraliza a subjetividade, os sentimentos e a opiniao do emissor"
       ],
-      "correta": "faz a linguagem voltar-se para si mesma, explicando o próprio codigo",
-      "comentario": "A frase foi montada para exemplificar a função metalinguística.",
+      "correta": "faz a linguagem voltar-se para si mesma, explicando o proprio codigo",
+      "comentario": "A frase foi montada para exemplificar a funcao metalinguistica.",
       "tempoEstimado": 30,
       "tags": [
         "metalinguistica",
@@ -2504,22 +2505,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO apresenta predominio da função poética?",
+      "enunciado": "Qual alternativa NAO apresenta predominio da funcao poetica?",
       "opcoes": [
-        "O Brasil possui cinco regiões geograficas.",
+        "O Brasil possui cinco regioes geograficas.",
         "A palavra cai leve, lisa, luminosa.",
         "O verso brinca com o som das letras.",
         "A frase foi montada para soar bonita e marcante."
       ],
-      "correta": "O Brasil possui cinco regiões geograficas.",
-      "comentario": "A alternativa correta desloca o foco da mensagem para outra função da linguagem.",
+      "correta": "O Brasil possui cinco regioes geograficas.",
+      "comentario": "A alternativa correta desloca o foco da mensagem para outra funcao da linguagem.",
       "tempoEstimado": 35,
       "tags": [
         "poetica",
@@ -2542,22 +2543,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um texto didático, aparece o trecho \"O Brasil possui cinco regiões geograficas.\". Qual função da linguagem está em destaque?",
+      "enunciado": "Em um texto didatico, aparece o trecho \"O Brasil possui cinco regioes geograficas.\". Qual funcao da linguagem esta em destaque?",
       "opcoes": [
         "Referencial",
         "Conativa",
-        "Fática",
-        "Metalinguística"
+        "Fatica",
+        "Metalinguistica"
       ],
       "correta": "Referencial",
-      "comentario": "O contexto e as marcas do trecho indicam predominio da função referencial.",
+      "comentario": "O contexto e as marcas do trecho indicam predominio da funcao referencial.",
       "tempoEstimado": 30,
       "tags": [
         "referencial",
@@ -2581,19 +2582,19 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No trecho \"Senti um alivio enorme ao terminar a prova.\", a escolha pela função emotiva produz principalmente qual efeito?",
+      "enunciado": "No trecho \"Senti um alivio enorme ao terminar a prova.\", a escolha pela funcao emotiva produz principalmente qual efeito?",
       "opcoes": [
         "expressar sentimentos e pontos de vista pessoais",
         "listar etapas sem apelo expressivo",
-        "apenas marcar o horário do evento",
-        "registrar um dado sem interação"
+        "apenas marcar o horario do evento",
+        "registrar um dado sem interacao"
       ],
       "correta": "expressar sentimentos e pontos de vista pessoais",
       "comentario": "Nesse caso, a linguagem foi organizada para expressar sentimentos e pontos de vista pessoais.",
@@ -2619,22 +2620,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Diferenciação entre funções",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Diferenciacao entre funcoes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em \"Venha conhecer a feira cultural da escola.\", a classificação correta é Conativa, e não Fática, porque:",
+      "enunciado": "Em \"Venha conhecer a feira cultural da escola.\", a classificacao correta e Conativa, e nao Fatica, porque:",
       "opcoes": [
-        "há foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
-        "Fática aparece sempre que existe qualquer frase curta",
-        "Fática depende somente do uso de pontuação final",
-        "Fática ocorre em toda mensagem objetiva ou subjetiva sem distinção"
+        "ha foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
+        "Fatica aparece sempre que existe qualquer frase curta",
+        "Fatica depende somente do uso de pontuacao final",
+        "Fatica ocorre em toda mensagem objetiva ou subjetiva sem distincao"
       ],
-      "correta": "há foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
-      "comentario": "A justificativa correta recupera o centro da comunicação e as marcas do trecho.",
+      "correta": "ha foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
+      "comentario": "A justificativa correta recupera o centro da comunicacao e as marcas do trecho.",
       "tempoEstimado": 35,
       "tags": [
         "conativa",
@@ -2657,18 +2658,18 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Função fática",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Funcao fatica",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa traz outra frase em que também predomina a função fática?",
+      "enunciado": "Qual alternativa traz outra frase em que tambem predomina a funcao fatica?",
       "opcoes": [
         "Oi, tudo bem por ai?",
         "Leia o regulamento antes de participar.",
-        "A palavra poema designa um texto organizado de forma artística.",
+        "A palavra poema designa um texto organizado de forma artistica.",
         "O verso brinca com o som das letras."
       ],
       "correta": "Oi, tudo bem por ai?",
@@ -2695,22 +2696,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definição corresponde melhor a função predominante no trecho \"Substantivo e a palavra que nomeia seres, lugares ou ideias.\"?",
+      "enunciado": "Qual definicao corresponde melhor a funcao predominante no trecho \"Substantivo e a palavra que nomeia seres, lugares ou ideias.\"?",
       "opcoes": [
-        "faz a linguagem voltar-se para si mesma, explicando o próprio codigo",
+        "faz a linguagem voltar-se para si mesma, explicando o proprio codigo",
         "valoriza a forma da mensagem, a sonoridade, o ritmo e os efeitos de linguagem",
-        "prioriza a informação objetiva sobre fatos, dados e referências do mundo",
-        "centraliza a subjetividade, os sentimentos e a opinião do emissor"
+        "prioriza a informacao objetiva sobre fatos, dados e referencias do mundo",
+        "centraliza a subjetividade, os sentimentos e a opiniao do emissor"
       ],
-      "correta": "faz a linguagem voltar-se para si mesma, explicando o próprio codigo",
-      "comentario": "A frase foi montada para exemplificar a função metalinguística.",
+      "correta": "faz a linguagem voltar-se para si mesma, explicando o proprio codigo",
+      "comentario": "A frase foi montada para exemplificar a funcao metalinguistica.",
       "tempoEstimado": 30,
       "tags": [
         "metalinguistica",
@@ -2733,14 +2734,14 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO apresenta predominio da função poética?",
+      "enunciado": "Qual alternativa NAO apresenta predominio da funcao poetica?",
       "opcoes": [
         "A campanha comeca na segunda-feira e termina na sexta.",
         "O verso brinca com o som das letras.",
@@ -2748,7 +2749,7 @@ export const funcoesDaLinguagem = {
         "Entre sombras e sopros, a cidade suspira."
       ],
       "correta": "A campanha comeca na segunda-feira e termina na sexta.",
-      "comentario": "A alternativa correta desloca o foco da mensagem para outra função da linguagem.",
+      "comentario": "A alternativa correta desloca o foco da mensagem para outra funcao da linguagem.",
       "tempoEstimado": 35,
       "tags": [
         "poetica",
@@ -2771,22 +2772,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um relatorio escolar, aparece o trecho \"A campanha comeca na segunda-feira e termina na sexta.\". Qual função da linguagem está em destaque?",
+      "enunciado": "Em um relatorio escolar, aparece o trecho \"A campanha comeca na segunda-feira e termina na sexta.\". Qual funcao da linguagem esta em destaque?",
       "opcoes": [
         "Referencial",
         "Conativa",
-        "Fática",
-        "Metalinguística"
+        "Fatica",
+        "Metalinguistica"
       ],
       "correta": "Referencial",
-      "comentario": "O contexto e as marcas do trecho indicam predominio da função referencial.",
+      "comentario": "O contexto e as marcas do trecho indicam predominio da funcao referencial.",
       "tempoEstimado": 30,
       "tags": [
         "referencial",
@@ -2810,19 +2811,19 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No trecho \"Para mim, esse livro e inesquecivel.\", a escolha pela função emotiva produz principalmente qual efeito?",
+      "enunciado": "No trecho \"Para mim, esse livro e inesquecivel.\", a escolha pela funcao emotiva produz principalmente qual efeito?",
       "opcoes": [
         "expressar sentimentos e pontos de vista pessoais",
         "listar etapas sem apelo expressivo",
-        "apenas marcar o horário do evento",
-        "registrar um dado sem interação"
+        "apenas marcar o horario do evento",
+        "registrar um dado sem interacao"
       ],
       "correta": "expressar sentimentos e pontos de vista pessoais",
       "comentario": "Nesse caso, a linguagem foi organizada para expressar sentimentos e pontos de vista pessoais.",
@@ -2848,22 +2849,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Diferenciação entre funções",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Diferenciacao entre funcoes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em \"Use cinto de segurança durante todo o trajeto.\", a classificação correta é Conativa, e não Fática, porque:",
+      "enunciado": "Em \"Use cinto de seguranca durante todo o trajeto.\", a classificacao correta e Conativa, e nao Fatica, porque:",
       "opcoes": [
-        "há foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
-        "Fática aparece sempre que existe qualquer frase curta",
-        "Fática depende somente do uso de pontuação final",
-        "Fática ocorre em toda mensagem objetiva ou subjetiva sem distinção"
+        "ha foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
+        "Fatica aparece sempre que existe qualquer frase curta",
+        "Fatica depende somente do uso de pontuacao final",
+        "Fatica ocorre em toda mensagem objetiva ou subjetiva sem distincao"
       ],
-      "correta": "há foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
-      "comentario": "A justificativa correta recupera o centro da comunicação e as marcas do trecho.",
+      "correta": "ha foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
+      "comentario": "A justificativa correta recupera o centro da comunicacao e as marcas do trecho.",
       "tempoEstimado": 35,
       "tags": [
         "conativa",
@@ -2886,18 +2887,18 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Função fática",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Funcao fatica",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa traz outra frase em que também predomina a função fática?",
+      "enunciado": "Qual alternativa traz outra frase em que tambem predomina a funcao fatica?",
       "opcoes": [
         "Certo, podemos continuar?",
         "Leia o regulamento antes de participar.",
-        "A palavra poema designa um texto organizado de forma artística.",
+        "A palavra poema designa um texto organizado de forma artistica.",
         "O verso brinca com o som das letras."
       ],
       "correta": "Certo, podemos continuar?",
@@ -2924,22 +2925,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definição corresponde melhor a função predominante no trecho \"A palavra poema designa um texto organizado de forma artística.\"?",
+      "enunciado": "Qual definicao corresponde melhor a funcao predominante no trecho \"A palavra poema designa um texto organizado de forma artistica.\"?",
       "opcoes": [
-        "faz a linguagem voltar-se para si mesma, explicando o próprio codigo",
+        "faz a linguagem voltar-se para si mesma, explicando o proprio codigo",
         "valoriza a forma da mensagem, a sonoridade, o ritmo e os efeitos de linguagem",
-        "prioriza a informação objetiva sobre fatos, dados e referências do mundo",
-        "centraliza a subjetividade, os sentimentos e a opinião do emissor"
+        "prioriza a informacao objetiva sobre fatos, dados e referencias do mundo",
+        "centraliza a subjetividade, os sentimentos e a opiniao do emissor"
       ],
-      "correta": "faz a linguagem voltar-se para si mesma, explicando o próprio codigo",
-      "comentario": "A frase foi montada para exemplificar a função metalinguística.",
+      "correta": "faz a linguagem voltar-se para si mesma, explicando o proprio codigo",
+      "comentario": "A frase foi montada para exemplificar a funcao metalinguistica.",
       "tempoEstimado": 30,
       "tags": [
         "metalinguistica",
@@ -2962,22 +2963,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO apresenta predominio da função poética?",
+      "enunciado": "Qual alternativa NAO apresenta predominio da funcao poetica?",
       "opcoes": [
         "A biblioteca fecha as 18 horas durante a semana.",
         "A frase foi montada para soar bonita e marcante.",
         "Entre sombras e sopros, a cidade suspira.",
-        "No silêncio da noite, a lua lava a rua."
+        "No silencio da noite, a lua lava a rua."
       ],
       "correta": "A biblioteca fecha as 18 horas durante a semana.",
-      "comentario": "A alternativa correta desloca o foco da mensagem para outra função da linguagem.",
+      "comentario": "A alternativa correta desloca o foco da mensagem para outra funcao da linguagem.",
       "tempoEstimado": 35,
       "tags": [
         "poetica",
@@ -3000,22 +3001,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um aviso institucional, aparece o trecho \"A biblioteca fecha as 18 horas durante a semana.\". Qual função da linguagem está em destaque?",
+      "enunciado": "Em um aviso institucional, aparece o trecho \"A biblioteca fecha as 18 horas durante a semana.\". Qual funcao da linguagem esta em destaque?",
       "opcoes": [
         "Referencial",
         "Conativa",
-        "Fática",
-        "Metalinguística"
+        "Fatica",
+        "Metalinguistica"
       ],
       "correta": "Referencial",
-      "comentario": "O contexto e as marcas do trecho indicam predominio da função referencial.",
+      "comentario": "O contexto e as marcas do trecho indicam predominio da funcao referencial.",
       "tempoEstimado": 30,
       "tags": [
         "referencial",
@@ -3039,19 +3040,19 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No trecho \"Fiquei decepcionado com a atitude do personagem.\", a escolha pela função emotiva produz principalmente qual efeito?",
+      "enunciado": "No trecho \"Fiquei decepcionado com a atitude do personagem.\", a escolha pela funcao emotiva produz principalmente qual efeito?",
       "opcoes": [
         "expressar sentimentos e pontos de vista pessoais",
         "listar etapas sem apelo expressivo",
-        "apenas marcar o horário do evento",
-        "registrar um dado sem interação"
+        "apenas marcar o horario do evento",
+        "registrar um dado sem interacao"
       ],
       "correta": "expressar sentimentos e pontos de vista pessoais",
       "comentario": "Nesse caso, a linguagem foi organizada para expressar sentimentos e pontos de vista pessoais.",
@@ -3077,22 +3078,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Diferenciação entre funções",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Diferenciacao entre funcoes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em \"Leia o regulamento antes de participar.\", a classificação correta é Conativa, e não Fática, porque:",
+      "enunciado": "Em \"Leia o regulamento antes de participar.\", a classificacao correta e Conativa, e nao Fatica, porque:",
       "opcoes": [
-        "há foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
-        "Fática aparece sempre que existe qualquer frase curta",
-        "Fática depende somente do uso de pontuação final",
-        "Fática ocorre em toda mensagem objetiva ou subjetiva sem distinção"
+        "ha foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
+        "Fatica aparece sempre que existe qualquer frase curta",
+        "Fatica depende somente do uso de pontuacao final",
+        "Fatica ocorre em toda mensagem objetiva ou subjetiva sem distincao"
       ],
-      "correta": "há foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
-      "comentario": "A justificativa correta recupera o centro da comunicação e as marcas do trecho.",
+      "correta": "ha foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
+      "comentario": "A justificativa correta recupera o centro da comunicacao e as marcas do trecho.",
       "tempoEstimado": 35,
       "tags": [
         "conativa",
@@ -3115,18 +3116,18 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Função fática",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Funcao fatica",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa traz outra frase em que também predomina a função fática?",
+      "enunciado": "Qual alternativa traz outra frase em que tambem predomina a funcao fatica?",
       "opcoes": [
         "Entendeu o que eu disse?",
         "Leia o regulamento antes de participar.",
-        "A palavra poema designa um texto organizado de forma artística.",
+        "A palavra poema designa um texto organizado de forma artistica.",
         "O verso brinca com o som das letras."
       ],
       "correta": "Entendeu o que eu disse?",
@@ -3153,22 +3154,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definição corresponde melhor a função predominante no trecho \"Nesta tirinha, o autor explica o sentido da expressão usada.\"?",
+      "enunciado": "Qual definicao corresponde melhor a funcao predominante no trecho \"Nesta tirinha, o autor explica o sentido da expressao usada.\"?",
       "opcoes": [
-        "faz a linguagem voltar-se para si mesma, explicando o próprio codigo",
+        "faz a linguagem voltar-se para si mesma, explicando o proprio codigo",
         "valoriza a forma da mensagem, a sonoridade, o ritmo e os efeitos de linguagem",
-        "prioriza a informação objetiva sobre fatos, dados e referências do mundo",
-        "centraliza a subjetividade, os sentimentos e a opinião do emissor"
+        "prioriza a informacao objetiva sobre fatos, dados e referencias do mundo",
+        "centraliza a subjetividade, os sentimentos e a opiniao do emissor"
       ],
-      "correta": "faz a linguagem voltar-se para si mesma, explicando o próprio codigo",
-      "comentario": "A frase foi montada para exemplificar a função metalinguística.",
+      "correta": "faz a linguagem voltar-se para si mesma, explicando o proprio codigo",
+      "comentario": "A frase foi montada para exemplificar a funcao metalinguistica.",
       "tempoEstimado": 30,
       "tags": [
         "metalinguistica",
@@ -3191,22 +3192,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO apresenta predominio da função poética?",
+      "enunciado": "Qual alternativa NAO apresenta predominio da funcao poetica?",
       "opcoes": [
         "O texto apresenta o conceito e os exemplos do tema estudado.",
         "Entre sombras e sopros, a cidade suspira.",
-        "No silêncio da noite, a lua lava a rua.",
+        "No silencio da noite, a lua lava a rua.",
         "A palavra cai leve, lisa, luminosa."
       ],
       "correta": "O texto apresenta o conceito e os exemplos do tema estudado.",
-      "comentario": "A alternativa correta desloca o foco da mensagem para outra função da linguagem.",
+      "comentario": "A alternativa correta desloca o foco da mensagem para outra funcao da linguagem.",
       "tempoEstimado": 35,
       "tags": [
         "poetica",
@@ -3229,22 +3230,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um verbete enciclopedico, aparece o trecho \"O texto apresenta o conceito e os exemplos do tema estudado.\". Qual função da linguagem está em destaque?",
+      "enunciado": "Em um verbete enciclopedico, aparece o trecho \"O texto apresenta o conceito e os exemplos do tema estudado.\". Qual funcao da linguagem esta em destaque?",
       "opcoes": [
         "Referencial",
         "Conativa",
-        "Fática",
-        "Metalinguística"
+        "Fatica",
+        "Metalinguistica"
       ],
       "correta": "Referencial",
-      "comentario": "O contexto e as marcas do trecho indicam predominio da função referencial.",
+      "comentario": "O contexto e as marcas do trecho indicam predominio da funcao referencial.",
       "tempoEstimado": 30,
       "tags": [
         "referencial",
@@ -3268,19 +3269,19 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No trecho \"Estou muito feliz com o resultado da turma.\", a escolha pela função emotiva produz principalmente qual efeito?",
+      "enunciado": "No trecho \"Estou muito feliz com o resultado da turma.\", a escolha pela funcao emotiva produz principalmente qual efeito?",
       "opcoes": [
         "expressar sentimentos e pontos de vista pessoais",
         "listar etapas sem apelo expressivo",
-        "apenas marcar o horário do evento",
-        "registrar um dado sem interação"
+        "apenas marcar o horario do evento",
+        "registrar um dado sem interacao"
       ],
       "correta": "expressar sentimentos e pontos de vista pessoais",
       "comentario": "Nesse caso, a linguagem foi organizada para expressar sentimentos e pontos de vista pessoais.",
@@ -3306,22 +3307,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Diferenciação entre funções",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Diferenciacao entre funcoes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em \"Não perca a promoção deste fim de semana.\", a classificação correta é Conativa, e não Fática, porque:",
+      "enunciado": "Em \"Nao perca a promocao deste fim de semana.\", a classificacao correta e Conativa, e nao Fatica, porque:",
       "opcoes": [
-        "há foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
-        "Fática aparece sempre que existe qualquer frase curta",
-        "Fática depende somente do uso de pontuação final",
-        "Fática ocorre em toda mensagem objetiva ou subjetiva sem distinção"
+        "ha foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
+        "Fatica aparece sempre que existe qualquer frase curta",
+        "Fatica depende somente do uso de pontuacao final",
+        "Fatica ocorre em toda mensagem objetiva ou subjetiva sem distincao"
       ],
-      "correta": "há foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
-      "comentario": "A justificativa correta recupera o centro da comunicação e as marcas do trecho.",
+      "correta": "ha foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
+      "comentario": "A justificativa correta recupera o centro da comunicacao e as marcas do trecho.",
       "tempoEstimado": 35,
       "tags": [
         "conativa",
@@ -3344,18 +3345,18 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Função fática",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Funcao fatica",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa traz outra frase em que também predomina a função fática?",
+      "enunciado": "Qual alternativa traz outra frase em que tambem predomina a funcao fatica?",
       "opcoes": [
         "Boa noite, som testando, um dois tres.",
         "Leia o regulamento antes de participar.",
-        "A palavra poema designa um texto organizado de forma artística.",
+        "A palavra poema designa um texto organizado de forma artistica.",
         "O verso brinca com o som das letras."
       ],
       "correta": "Boa noite, som testando, um dois tres.",
@@ -3382,22 +3383,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definição corresponde melhor a função predominante no trecho \"O dicionário define ambiguidade como duplicidade de sentido.\"?",
+      "enunciado": "Qual definicao corresponde melhor a funcao predominante no trecho \"O dicionario define ambiguidade como duplicidade de sentido.\"?",
       "opcoes": [
-        "faz a linguagem voltar-se para si mesma, explicando o próprio codigo",
+        "faz a linguagem voltar-se para si mesma, explicando o proprio codigo",
         "valoriza a forma da mensagem, a sonoridade, o ritmo e os efeitos de linguagem",
-        "prioriza a informação objetiva sobre fatos, dados e referências do mundo",
-        "centraliza a subjetividade, os sentimentos e a opinião do emissor"
+        "prioriza a informacao objetiva sobre fatos, dados e referencias do mundo",
+        "centraliza a subjetividade, os sentimentos e a opiniao do emissor"
       ],
-      "correta": "faz a linguagem voltar-se para si mesma, explicando o próprio codigo",
-      "comentario": "A frase foi montada para exemplificar a função metalinguística.",
+      "correta": "faz a linguagem voltar-se para si mesma, explicando o proprio codigo",
+      "comentario": "A frase foi montada para exemplificar a funcao metalinguistica.",
       "tempoEstimado": 30,
       "tags": [
         "metalinguistica",
@@ -3420,22 +3421,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO apresenta predominio da função poética?",
+      "enunciado": "Qual alternativa NAO apresenta predominio da funcao poetica?",
       "opcoes": [
-        "A água entra em ebulição a 100 graus ao nível do mar.",
-        "No silêncio da noite, a lua lava a rua.",
+        "A agua entra em ebulicao a 100 graus ao nivel do mar.",
+        "No silencio da noite, a lua lava a rua.",
         "A palavra cai leve, lisa, luminosa.",
         "O verso brinca com o som das letras."
       ],
-      "correta": "A água entra em ebulição a 100 graus ao nível do mar.",
-      "comentario": "A alternativa correta desloca o foco da mensagem para outra função da linguagem.",
+      "correta": "A agua entra em ebulicao a 100 graus ao nivel do mar.",
+      "comentario": "A alternativa correta desloca o foco da mensagem para outra funcao da linguagem.",
       "tempoEstimado": 35,
       "tags": [
         "poetica",
@@ -3458,22 +3459,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um notícia informativa, aparece o trecho \"A água entra em ebulição a 100 graus ao nível do mar.\". Qual função da linguagem está em destaque?",
+      "enunciado": "Em um noticia informativa, aparece o trecho \"A agua entra em ebulicao a 100 graus ao nivel do mar.\". Qual funcao da linguagem esta em destaque?",
       "opcoes": [
         "Referencial",
         "Conativa",
-        "Fática",
-        "Metalinguística"
+        "Fatica",
+        "Metalinguistica"
       ],
       "correta": "Referencial",
-      "comentario": "O contexto e as marcas do trecho indicam predominio da função referencial.",
+      "comentario": "O contexto e as marcas do trecho indicam predominio da funcao referencial.",
       "tempoEstimado": 30,
       "tags": [
         "referencial",
@@ -3497,19 +3498,19 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No trecho \"Acho esse filme profundamente comovente.\", a escolha pela função emotiva produz principalmente qual efeito?",
+      "enunciado": "No trecho \"Acho esse filme profundamente comovente.\", a escolha pela funcao emotiva produz principalmente qual efeito?",
       "opcoes": [
         "expressar sentimentos e pontos de vista pessoais",
         "listar etapas sem apelo expressivo",
-        "apenas marcar o horário do evento",
-        "registrar um dado sem interação"
+        "apenas marcar o horario do evento",
+        "registrar um dado sem interacao"
       ],
       "correta": "expressar sentimentos e pontos de vista pessoais",
       "comentario": "Nesse caso, a linguagem foi organizada para expressar sentimentos e pontos de vista pessoais.",
@@ -3535,22 +3536,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Diferenciação entre funções",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Diferenciacao entre funcoes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em \"Você precisa revisar o texto com calma.\", a classificação correta é Conativa, e não Fática, porque:",
+      "enunciado": "Em \"Voce precisa revisar o texto com calma.\", a classificacao correta e Conativa, e nao Fatica, porque:",
       "opcoes": [
-        "há foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
-        "Fática aparece sempre que existe qualquer frase curta",
-        "Fática depende somente do uso de pontuação final",
-        "Fática ocorre em toda mensagem objetiva ou subjetiva sem distinção"
+        "ha foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
+        "Fatica aparece sempre que existe qualquer frase curta",
+        "Fatica depende somente do uso de pontuacao final",
+        "Fatica ocorre em toda mensagem objetiva ou subjetiva sem distincao"
       ],
-      "correta": "há foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
-      "comentario": "A justificativa correta recupera o centro da comunicação e as marcas do trecho.",
+      "correta": "ha foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
+      "comentario": "A justificativa correta recupera o centro da comunicacao e as marcas do trecho.",
       "tempoEstimado": 35,
       "tags": [
         "conativa",
@@ -3573,21 +3574,21 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Função fática",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Funcao fatica",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa traz outra frase em que também predomina a função fática?",
+      "enunciado": "Qual alternativa traz outra frase em que tambem predomina a funcao fatica?",
       "opcoes": [
-        "Alô, você está me ouvindo?",
+        "Alo, voce esta me ouvindo?",
         "Leia o regulamento antes de participar.",
-        "A palavra poema designa um texto organizado de forma artística.",
+        "A palavra poema designa um texto organizado de forma artistica.",
         "O verso brinca com o som das letras."
       ],
-      "correta": "Alô, você está me ouvindo?",
+      "correta": "Alo, voce esta me ouvindo?",
       "comentario": "As duas alternativas corretas preservam o mesmo foco comunicativo.",
       "tempoEstimado": 30,
       "tags": [
@@ -3611,22 +3612,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definição corresponde melhor a função predominante no trecho \"A aula apresenta o que significa o termo narrador.\"?",
+      "enunciado": "Qual definicao corresponde melhor a funcao predominante no trecho \"A aula apresenta o que significa o termo narrador.\"?",
       "opcoes": [
-        "faz a linguagem voltar-se para si mesma, explicando o próprio codigo",
+        "faz a linguagem voltar-se para si mesma, explicando o proprio codigo",
         "valoriza a forma da mensagem, a sonoridade, o ritmo e os efeitos de linguagem",
-        "prioriza a informação objetiva sobre fatos, dados e referências do mundo",
-        "centraliza a subjetividade, os sentimentos e a opinião do emissor"
+        "prioriza a informacao objetiva sobre fatos, dados e referencias do mundo",
+        "centraliza a subjetividade, os sentimentos e a opiniao do emissor"
       ],
-      "correta": "faz a linguagem voltar-se para si mesma, explicando o próprio codigo",
-      "comentario": "A frase foi montada para exemplificar a função metalinguística.",
+      "correta": "faz a linguagem voltar-se para si mesma, explicando o proprio codigo",
+      "comentario": "A frase foi montada para exemplificar a funcao metalinguistica.",
       "tempoEstimado": 30,
       "tags": [
         "metalinguistica",
@@ -3649,22 +3650,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO apresenta predominio da função poética?",
+      "enunciado": "Qual alternativa NAO apresenta predominio da funcao poetica?",
       "opcoes": [
-        "O Brasil possui cinco regiões geograficas.",
+        "O Brasil possui cinco regioes geograficas.",
         "A palavra cai leve, lisa, luminosa.",
         "O verso brinca com o som das letras.",
         "A frase foi montada para soar bonita e marcante."
       ],
-      "correta": "O Brasil possui cinco regiões geograficas.",
-      "comentario": "A alternativa correta desloca o foco da mensagem para outra função da linguagem.",
+      "correta": "O Brasil possui cinco regioes geograficas.",
+      "comentario": "A alternativa correta desloca o foco da mensagem para outra funcao da linguagem.",
       "tempoEstimado": 35,
       "tags": [
         "poetica",
@@ -3687,22 +3688,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um texto didático, aparece o trecho \"O Brasil possui cinco regiões geograficas.\". Qual função da linguagem está em destaque?",
+      "enunciado": "Em um texto didatico, aparece o trecho \"O Brasil possui cinco regioes geograficas.\". Qual funcao da linguagem esta em destaque?",
       "opcoes": [
         "Referencial",
         "Conativa",
-        "Fática",
-        "Metalinguística"
+        "Fatica",
+        "Metalinguistica"
       ],
       "correta": "Referencial",
-      "comentario": "O contexto e as marcas do trecho indicam predominio da função referencial.",
+      "comentario": "O contexto e as marcas do trecho indicam predominio da funcao referencial.",
       "tempoEstimado": 30,
       "tags": [
         "referencial",
@@ -3726,19 +3727,19 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No trecho \"Senti um alivio enorme ao terminar a prova.\", a escolha pela função emotiva produz principalmente qual efeito?",
+      "enunciado": "No trecho \"Senti um alivio enorme ao terminar a prova.\", a escolha pela funcao emotiva produz principalmente qual efeito?",
       "opcoes": [
         "expressar sentimentos e pontos de vista pessoais",
         "listar etapas sem apelo expressivo",
-        "apenas marcar o horário do evento",
-        "registrar um dado sem interação"
+        "apenas marcar o horario do evento",
+        "registrar um dado sem interacao"
       ],
       "correta": "expressar sentimentos e pontos de vista pessoais",
       "comentario": "Nesse caso, a linguagem foi organizada para expressar sentimentos e pontos de vista pessoais.",
@@ -3764,22 +3765,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Diferenciação entre funções",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Diferenciacao entre funcoes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em \"Venha conhecer a feira cultural da escola.\", a classificação correta é Conativa, e não Fática, porque:",
+      "enunciado": "Em \"Venha conhecer a feira cultural da escola.\", a classificacao correta e Conativa, e nao Fatica, porque:",
       "opcoes": [
-        "há foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
-        "Fática aparece sempre que existe qualquer frase curta",
-        "Fática depende somente do uso de pontuação final",
-        "Fática ocorre em toda mensagem objetiva ou subjetiva sem distinção"
+        "ha foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
+        "Fatica aparece sempre que existe qualquer frase curta",
+        "Fatica depende somente do uso de pontuacao final",
+        "Fatica ocorre em toda mensagem objetiva ou subjetiva sem distincao"
       ],
-      "correta": "há foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
-      "comentario": "A justificativa correta recupera o centro da comunicação e as marcas do trecho.",
+      "correta": "ha foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
+      "comentario": "A justificativa correta recupera o centro da comunicacao e as marcas do trecho.",
       "tempoEstimado": 35,
       "tags": [
         "conativa",
@@ -3802,18 +3803,18 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Função fática",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Funcao fatica",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa traz outra frase em que também predomina a função fática?",
+      "enunciado": "Qual alternativa traz outra frase em que tambem predomina a funcao fatica?",
       "opcoes": [
         "Oi, tudo bem por ai?",
         "Leia o regulamento antes de participar.",
-        "A palavra poema designa um texto organizado de forma artística.",
+        "A palavra poema designa um texto organizado de forma artistica.",
         "O verso brinca com o som das letras."
       ],
       "correta": "Oi, tudo bem por ai?",
@@ -3840,22 +3841,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definição corresponde melhor a função predominante no trecho \"Substantivo e a palavra que nomeia seres, lugares ou ideias.\"?",
+      "enunciado": "Qual definicao corresponde melhor a funcao predominante no trecho \"Substantivo e a palavra que nomeia seres, lugares ou ideias.\"?",
       "opcoes": [
-        "faz a linguagem voltar-se para si mesma, explicando o próprio codigo",
+        "faz a linguagem voltar-se para si mesma, explicando o proprio codigo",
         "valoriza a forma da mensagem, a sonoridade, o ritmo e os efeitos de linguagem",
-        "prioriza a informação objetiva sobre fatos, dados e referências do mundo",
-        "centraliza a subjetividade, os sentimentos e a opinião do emissor"
+        "prioriza a informacao objetiva sobre fatos, dados e referencias do mundo",
+        "centraliza a subjetividade, os sentimentos e a opiniao do emissor"
       ],
-      "correta": "faz a linguagem voltar-se para si mesma, explicando o próprio codigo",
-      "comentario": "A frase foi montada para exemplificar a função metalinguística.",
+      "correta": "faz a linguagem voltar-se para si mesma, explicando o proprio codigo",
+      "comentario": "A frase foi montada para exemplificar a funcao metalinguistica.",
       "tempoEstimado": 30,
       "tags": [
         "metalinguistica",
@@ -3878,14 +3879,14 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO apresenta predominio da função poética?",
+      "enunciado": "Qual alternativa NAO apresenta predominio da funcao poetica?",
       "opcoes": [
         "A campanha comeca na segunda-feira e termina na sexta.",
         "O verso brinca com o som das letras.",
@@ -3893,7 +3894,7 @@ export const funcoesDaLinguagem = {
         "Entre sombras e sopros, a cidade suspira."
       ],
       "correta": "A campanha comeca na segunda-feira e termina na sexta.",
-      "comentario": "A alternativa correta desloca o foco da mensagem para outra função da linguagem.",
+      "comentario": "A alternativa correta desloca o foco da mensagem para outra funcao da linguagem.",
       "tempoEstimado": 35,
       "tags": [
         "poetica",
@@ -3916,22 +3917,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um relatorio escolar, aparece o trecho \"A campanha comeca na segunda-feira e termina na sexta.\". Qual função da linguagem está em destaque?",
+      "enunciado": "Em um relatorio escolar, aparece o trecho \"A campanha comeca na segunda-feira e termina na sexta.\". Qual funcao da linguagem esta em destaque?",
       "opcoes": [
         "Referencial",
         "Conativa",
-        "Fática",
-        "Metalinguística"
+        "Fatica",
+        "Metalinguistica"
       ],
       "correta": "Referencial",
-      "comentario": "O contexto e as marcas do trecho indicam predominio da função referencial.",
+      "comentario": "O contexto e as marcas do trecho indicam predominio da funcao referencial.",
       "tempoEstimado": 30,
       "tags": [
         "referencial",
@@ -3955,19 +3956,19 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No trecho \"Para mim, esse livro e inesquecivel.\", a escolha pela função emotiva produz principalmente qual efeito?",
+      "enunciado": "No trecho \"Para mim, esse livro e inesquecivel.\", a escolha pela funcao emotiva produz principalmente qual efeito?",
       "opcoes": [
         "expressar sentimentos e pontos de vista pessoais",
         "listar etapas sem apelo expressivo",
-        "apenas marcar o horário do evento",
-        "registrar um dado sem interação"
+        "apenas marcar o horario do evento",
+        "registrar um dado sem interacao"
       ],
       "correta": "expressar sentimentos e pontos de vista pessoais",
       "comentario": "Nesse caso, a linguagem foi organizada para expressar sentimentos e pontos de vista pessoais.",
@@ -3993,22 +3994,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Diferenciação entre funções",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Diferenciacao entre funcoes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em \"Use cinto de segurança durante todo o trajeto.\", a classificação correta é Conativa, e não Fática, porque:",
+      "enunciado": "Em \"Use cinto de seguranca durante todo o trajeto.\", a classificacao correta e Conativa, e nao Fatica, porque:",
       "opcoes": [
-        "há foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
-        "Fática aparece sempre que existe qualquer frase curta",
-        "Fática depende somente do uso de pontuação final",
-        "Fática ocorre em toda mensagem objetiva ou subjetiva sem distinção"
+        "ha foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
+        "Fatica aparece sempre que existe qualquer frase curta",
+        "Fatica depende somente do uso de pontuacao final",
+        "Fatica ocorre em toda mensagem objetiva ou subjetiva sem distincao"
       ],
-      "correta": "há foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
-      "comentario": "A justificativa correta recupera o centro da comunicação e as marcas do trecho.",
+      "correta": "ha foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
+      "comentario": "A justificativa correta recupera o centro da comunicacao e as marcas do trecho.",
       "tempoEstimado": 35,
       "tags": [
         "conativa",
@@ -4031,18 +4032,18 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Função fática",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Funcao fatica",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa traz outra frase em que também predomina a função fática?",
+      "enunciado": "Qual alternativa traz outra frase em que tambem predomina a funcao fatica?",
       "opcoes": [
         "Certo, podemos continuar?",
         "Leia o regulamento antes de participar.",
-        "A palavra poema designa um texto organizado de forma artística.",
+        "A palavra poema designa um texto organizado de forma artistica.",
         "O verso brinca com o som das letras."
       ],
       "correta": "Certo, podemos continuar?",
@@ -4069,22 +4070,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definição corresponde melhor a função predominante no trecho \"A palavra poema designa um texto organizado de forma artística.\"?",
+      "enunciado": "Qual definicao corresponde melhor a funcao predominante no trecho \"A palavra poema designa um texto organizado de forma artistica.\"?",
       "opcoes": [
-        "faz a linguagem voltar-se para si mesma, explicando o próprio codigo",
+        "faz a linguagem voltar-se para si mesma, explicando o proprio codigo",
         "valoriza a forma da mensagem, a sonoridade, o ritmo e os efeitos de linguagem",
-        "prioriza a informação objetiva sobre fatos, dados e referências do mundo",
-        "centraliza a subjetividade, os sentimentos e a opinião do emissor"
+        "prioriza a informacao objetiva sobre fatos, dados e referencias do mundo",
+        "centraliza a subjetividade, os sentimentos e a opiniao do emissor"
       ],
-      "correta": "faz a linguagem voltar-se para si mesma, explicando o próprio codigo",
-      "comentario": "A frase foi montada para exemplificar a função metalinguística.",
+      "correta": "faz a linguagem voltar-se para si mesma, explicando o proprio codigo",
+      "comentario": "A frase foi montada para exemplificar a funcao metalinguistica.",
       "tempoEstimado": 30,
       "tags": [
         "metalinguistica",
@@ -4107,22 +4108,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO apresenta predominio da função poética?",
+      "enunciado": "Qual alternativa NAO apresenta predominio da funcao poetica?",
       "opcoes": [
         "A biblioteca fecha as 18 horas durante a semana.",
         "A frase foi montada para soar bonita e marcante.",
         "Entre sombras e sopros, a cidade suspira.",
-        "No silêncio da noite, a lua lava a rua."
+        "No silencio da noite, a lua lava a rua."
       ],
       "correta": "A biblioteca fecha as 18 horas durante a semana.",
-      "comentario": "A alternativa correta desloca o foco da mensagem para outra função da linguagem.",
+      "comentario": "A alternativa correta desloca o foco da mensagem para outra funcao da linguagem.",
       "tempoEstimado": 35,
       "tags": [
         "poetica",
@@ -4145,22 +4146,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um aviso institucional, aparece o trecho \"A biblioteca fecha as 18 horas durante a semana.\". Qual função da linguagem está em destaque?",
+      "enunciado": "Em um aviso institucional, aparece o trecho \"A biblioteca fecha as 18 horas durante a semana.\". Qual funcao da linguagem esta em destaque?",
       "opcoes": [
         "Referencial",
         "Conativa",
-        "Fática",
-        "Metalinguística"
+        "Fatica",
+        "Metalinguistica"
       ],
       "correta": "Referencial",
-      "comentario": "O contexto e as marcas do trecho indicam predominio da função referencial.",
+      "comentario": "O contexto e as marcas do trecho indicam predominio da funcao referencial.",
       "tempoEstimado": 30,
       "tags": [
         "referencial",
@@ -4184,19 +4185,19 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No trecho \"Fiquei decepcionado com a atitude do personagem.\", a escolha pela função emotiva produz principalmente qual efeito?",
+      "enunciado": "No trecho \"Fiquei decepcionado com a atitude do personagem.\", a escolha pela funcao emotiva produz principalmente qual efeito?",
       "opcoes": [
         "expressar sentimentos e pontos de vista pessoais",
         "listar etapas sem apelo expressivo",
-        "apenas marcar o horário do evento",
-        "registrar um dado sem interação"
+        "apenas marcar o horario do evento",
+        "registrar um dado sem interacao"
       ],
       "correta": "expressar sentimentos e pontos de vista pessoais",
       "comentario": "Nesse caso, a linguagem foi organizada para expressar sentimentos e pontos de vista pessoais.",
@@ -4222,22 +4223,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Diferenciação entre funções",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Diferenciacao entre funcoes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em \"Leia o regulamento antes de participar.\", a classificação correta é Conativa, e não Fática, porque:",
+      "enunciado": "Em \"Leia o regulamento antes de participar.\", a classificacao correta e Conativa, e nao Fatica, porque:",
       "opcoes": [
-        "há foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
-        "Fática aparece sempre que existe qualquer frase curta",
-        "Fática depende somente do uso de pontuação final",
-        "Fática ocorre em toda mensagem objetiva ou subjetiva sem distinção"
+        "ha foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
+        "Fatica aparece sempre que existe qualquer frase curta",
+        "Fatica depende somente do uso de pontuacao final",
+        "Fatica ocorre em toda mensagem objetiva ou subjetiva sem distincao"
       ],
-      "correta": "há foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
-      "comentario": "A justificativa correta recupera o centro da comunicação e as marcas do trecho.",
+      "correta": "ha foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
+      "comentario": "A justificativa correta recupera o centro da comunicacao e as marcas do trecho.",
       "tempoEstimado": 35,
       "tags": [
         "conativa",
@@ -4260,18 +4261,18 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Função fática",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Funcao fatica",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa traz outra frase em que também predomina a função fática?",
+      "enunciado": "Qual alternativa traz outra frase em que tambem predomina a funcao fatica?",
       "opcoes": [
         "Entendeu o que eu disse?",
         "Leia o regulamento antes de participar.",
-        "A palavra poema designa um texto organizado de forma artística.",
+        "A palavra poema designa um texto organizado de forma artistica.",
         "O verso brinca com o som das letras."
       ],
       "correta": "Entendeu o que eu disse?",
@@ -4298,22 +4299,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definição corresponde melhor a função predominante no trecho \"Nesta tirinha, o autor explica o sentido da expressão usada.\"?",
+      "enunciado": "Qual definicao corresponde melhor a funcao predominante no trecho \"Nesta tirinha, o autor explica o sentido da expressao usada.\"?",
       "opcoes": [
-        "faz a linguagem voltar-se para si mesma, explicando o próprio codigo",
+        "faz a linguagem voltar-se para si mesma, explicando o proprio codigo",
         "valoriza a forma da mensagem, a sonoridade, o ritmo e os efeitos de linguagem",
-        "prioriza a informação objetiva sobre fatos, dados e referências do mundo",
-        "centraliza a subjetividade, os sentimentos e a opinião do emissor"
+        "prioriza a informacao objetiva sobre fatos, dados e referencias do mundo",
+        "centraliza a subjetividade, os sentimentos e a opiniao do emissor"
       ],
-      "correta": "faz a linguagem voltar-se para si mesma, explicando o próprio codigo",
-      "comentario": "A frase foi montada para exemplificar a função metalinguística.",
+      "correta": "faz a linguagem voltar-se para si mesma, explicando o proprio codigo",
+      "comentario": "A frase foi montada para exemplificar a funcao metalinguistica.",
       "tempoEstimado": 30,
       "tags": [
         "metalinguistica",
@@ -4336,22 +4337,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO apresenta predominio da função poética?",
+      "enunciado": "Qual alternativa NAO apresenta predominio da funcao poetica?",
       "opcoes": [
         "O texto apresenta o conceito e os exemplos do tema estudado.",
         "Entre sombras e sopros, a cidade suspira.",
-        "No silêncio da noite, a lua lava a rua.",
+        "No silencio da noite, a lua lava a rua.",
         "A palavra cai leve, lisa, luminosa."
       ],
       "correta": "O texto apresenta o conceito e os exemplos do tema estudado.",
-      "comentario": "A alternativa correta desloca o foco da mensagem para outra função da linguagem.",
+      "comentario": "A alternativa correta desloca o foco da mensagem para outra funcao da linguagem.",
       "tempoEstimado": 35,
       "tags": [
         "poetica",
@@ -4374,22 +4375,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um verbete enciclopedico, aparece o trecho \"O texto apresenta o conceito e os exemplos do tema estudado.\". Qual função da linguagem está em destaque?",
+      "enunciado": "Em um verbete enciclopedico, aparece o trecho \"O texto apresenta o conceito e os exemplos do tema estudado.\". Qual funcao da linguagem esta em destaque?",
       "opcoes": [
         "Referencial",
         "Conativa",
-        "Fática",
-        "Metalinguística"
+        "Fatica",
+        "Metalinguistica"
       ],
       "correta": "Referencial",
-      "comentario": "O contexto e as marcas do trecho indicam predominio da função referencial.",
+      "comentario": "O contexto e as marcas do trecho indicam predominio da funcao referencial.",
       "tempoEstimado": 30,
       "tags": [
         "referencial",
@@ -4413,19 +4414,19 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No trecho \"Estou muito feliz com o resultado da turma.\", a escolha pela função emotiva produz principalmente qual efeito?",
+      "enunciado": "No trecho \"Estou muito feliz com o resultado da turma.\", a escolha pela funcao emotiva produz principalmente qual efeito?",
       "opcoes": [
         "expressar sentimentos e pontos de vista pessoais",
         "listar etapas sem apelo expressivo",
-        "apenas marcar o horário do evento",
-        "registrar um dado sem interação"
+        "apenas marcar o horario do evento",
+        "registrar um dado sem interacao"
       ],
       "correta": "expressar sentimentos e pontos de vista pessoais",
       "comentario": "Nesse caso, a linguagem foi organizada para expressar sentimentos e pontos de vista pessoais.",
@@ -4451,22 +4452,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Diferenciação entre funções",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Diferenciacao entre funcoes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em \"Não perca a promoção deste fim de semana.\", a classificação correta é Conativa, e não Fática, porque:",
+      "enunciado": "Em \"Nao perca a promocao deste fim de semana.\", a classificacao correta e Conativa, e nao Fatica, porque:",
       "opcoes": [
-        "há foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
-        "Fática aparece sempre que existe qualquer frase curta",
-        "Fática depende somente do uso de pontuação final",
-        "Fática ocorre em toda mensagem objetiva ou subjetiva sem distinção"
+        "ha foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
+        "Fatica aparece sempre que existe qualquer frase curta",
+        "Fatica depende somente do uso de pontuacao final",
+        "Fatica ocorre em toda mensagem objetiva ou subjetiva sem distincao"
       ],
-      "correta": "há foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
-      "comentario": "A justificativa correta recupera o centro da comunicação e as marcas do trecho.",
+      "correta": "ha foco em receptor e presenca de imperativos, chamamentos e apelos ao destinatario",
+      "comentario": "A justificativa correta recupera o centro da comunicacao e as marcas do trecho.",
       "tempoEstimado": 35,
       "tags": [
         "conativa",
@@ -4489,18 +4490,18 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Função fática",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Funcao fatica",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa traz outra frase em que também predomina a função fática?",
+      "enunciado": "Qual alternativa traz outra frase em que tambem predomina a funcao fatica?",
       "opcoes": [
         "Boa noite, som testando, um dois tres.",
         "Leia o regulamento antes de participar.",
-        "A palavra poema designa um texto organizado de forma artística.",
+        "A palavra poema designa um texto organizado de forma artistica.",
         "O verso brinca com o som das letras."
       ],
       "correta": "Boa noite, som testando, um dois tres.",
@@ -4527,22 +4528,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definição corresponde melhor a função predominante no trecho \"O dicionário define ambiguidade como duplicidade de sentido.\"?",
+      "enunciado": "Qual definicao corresponde melhor a funcao predominante no trecho \"O dicionario define ambiguidade como duplicidade de sentido.\"?",
       "opcoes": [
-        "faz a linguagem voltar-se para si mesma, explicando o próprio codigo",
+        "faz a linguagem voltar-se para si mesma, explicando o proprio codigo",
         "valoriza a forma da mensagem, a sonoridade, o ritmo e os efeitos de linguagem",
-        "prioriza a informação objetiva sobre fatos, dados e referências do mundo",
-        "centraliza a subjetividade, os sentimentos e a opinião do emissor"
+        "prioriza a informacao objetiva sobre fatos, dados e referencias do mundo",
+        "centraliza a subjetividade, os sentimentos e a opiniao do emissor"
       ],
-      "correta": "faz a linguagem voltar-se para si mesma, explicando o próprio codigo",
-      "comentario": "A frase foi montada para exemplificar a função metalinguística.",
+      "correta": "faz a linguagem voltar-se para si mesma, explicando o proprio codigo",
+      "comentario": "A frase foi montada para exemplificar a funcao metalinguistica.",
       "tempoEstimado": 30,
       "tags": [
         "metalinguistica",
@@ -4565,22 +4566,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Identificação em contexto",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Identificacao em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO apresenta predominio da função poética?",
+      "enunciado": "Qual alternativa NAO apresenta predominio da funcao poetica?",
       "opcoes": [
-        "A água entra em ebulição a 100 graus ao nível do mar.",
-        "No silêncio da noite, a lua lava a rua.",
+        "A agua entra em ebulicao a 100 graus ao nivel do mar.",
+        "No silencio da noite, a lua lava a rua.",
         "A palavra cai leve, lisa, luminosa.",
         "O verso brinca com o som das letras."
       ],
-      "correta": "A água entra em ebulição a 100 graus ao nível do mar.",
-      "comentario": "A alternativa correta desloca o foco da mensagem para outra função da linguagem.",
+      "correta": "A agua entra em ebulicao a 100 graus ao nivel do mar.",
+      "comentario": "A alternativa correta desloca o foco da mensagem para outra funcao da linguagem.",
       "tempoEstimado": 35,
       "tags": [
         "poetica",
@@ -4603,22 +4604,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Diferenciação entre funções",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Diferenciacao entre funcoes",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia o conjunto de trechos: \"A água entra em ebulição a 100 graus ao nível do mar. Não perca a promoção deste fim de semana.\". Considerando o primeiro trecho como centro da análise, qual função predomina?",
+      "enunciado": "Leia o conjunto de trechos: \"A agua entra em ebulicao a 100 graus ao nivel do mar. Nao perca a promocao deste fim de semana.\". Considerando o primeiro trecho como centro da analise, qual funcao predomina?",
       "opcoes": [
         "Referencial",
         "Conativa",
-        "Fática",
-        "Metalinguística"
+        "Fatica",
+        "Metalinguistica"
       ],
       "correta": "Referencial",
-      "comentario": "Mesmo havendo outro enunciado ao lado, o primeiro trecho orienta a classificação pedida.",
+      "comentario": "Mesmo havendo outro enunciado ao lado, o primeiro trecho orienta a classificacao pedida.",
       "tempoEstimado": 45,
       "tags": [
         "referencial",
@@ -4641,22 +4642,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante leu \"Para mim, esse livro e inesquecivel.\" e afirmou que a função e Fática. Qual avaliação está correta?",
+      "enunciado": "Um estudante leu \"Para mim, esse livro e inesquecivel.\" e afirmou que a funcao e Fatica. Qual avaliacao esta correta?",
       "opcoes": [
-        "O estudante errou, porque predomina a função emotiva.",
-        "O estudante acertou, porque Emotiva e Fática são equivalentes.",
-        "O estudante acertou, porque toda frase expressiva pertence a mesma função.",
-        "Não e possivel classificar o enunciado sem título."
+        "O estudante errou, porque predomina a funcao emotiva.",
+        "O estudante acertou, porque Emotiva e Fatica sao equivalentes.",
+        "O estudante acertou, porque toda frase expressiva pertence a mesma funcao.",
+        "Nao e possivel classificar o enunciado sem titulo."
       ],
-      "correta": "O estudante errou, porque predomina a função emotiva.",
-      "comentario": "A classificação depende do foco principal da mensagem, não apenas do tema tratado.",
+      "correta": "O estudante errou, porque predomina a funcao emotiva.",
+      "comentario": "A classificacao depende do foco principal da mensagem, nao apenas do tema tratado.",
       "tempoEstimado": 45,
       "tags": [
         "emotiva",
@@ -4679,18 +4680,18 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No trecho \"Leia o regulamento antes de participar.\", qual interpretação explica melhor o uso predominante da linguagem?",
+      "enunciado": "No trecho \"Leia o regulamento antes de participar.\", qual interpretacao explica melhor o uso predominante da linguagem?",
       "opcoes": [
         "influenciar o comportamento do interlocutor.",
-        "apenas preencher espaço sem objetivo comunicativo.",
-        "substituir a mensagem por um cálculo ou esquema.",
+        "apenas preencher espaco sem objetivo comunicativo.",
+        "substituir a mensagem por um calculo ou esquema.",
         "eliminar qualquer foco no destinatario, no emissor ou na forma."
       ],
       "correta": "influenciar o comportamento do interlocutor.",
@@ -4717,22 +4718,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Diferenciação entre funções",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Diferenciacao entre funcoes",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia o conjunto de trechos: \"Entendeu o que eu disse? Entre sombras e sopros, a cidade suspira.\". Considerando o primeiro trecho como centro da análise, qual função predomina?",
+      "enunciado": "Leia o conjunto de trechos: \"Entendeu o que eu disse? Entre sombras e sopros, a cidade suspira.\". Considerando o primeiro trecho como centro da analise, qual funcao predomina?",
       "opcoes": [
-        "Fática",
-        "Poética",
+        "Fatica",
+        "Poetica",
         "Referencial",
         "Emotiva"
       ],
-      "correta": "Fática",
-      "comentario": "Mesmo havendo outro enunciado ao lado, o primeiro trecho orienta a classificação pedida.",
+      "correta": "Fatica",
+      "comentario": "Mesmo havendo outro enunciado ao lado, o primeiro trecho orienta a classificacao pedida.",
       "tempoEstimado": 45,
       "tags": [
         "fatica",
@@ -4755,22 +4756,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante leu \"A palavra poema designa um texto organizado de forma artística.\" e afirmou que a função e Referencial. Qual avaliação está correta?",
+      "enunciado": "Um estudante leu \"A palavra poema designa um texto organizado de forma artistica.\" e afirmou que a funcao e Referencial. Qual avaliacao esta correta?",
       "opcoes": [
-        "O estudante errou, porque predomina a função metalinguística.",
-        "O estudante acertou, porque Metalinguística e Referencial são equivalentes.",
-        "O estudante acertou, porque toda frase expressiva pertence a mesma função.",
-        "Não e possivel classificar o enunciado sem título."
+        "O estudante errou, porque predomina a funcao metalinguistica.",
+        "O estudante acertou, porque Metalinguistica e Referencial sao equivalentes.",
+        "O estudante acertou, porque toda frase expressiva pertence a mesma funcao.",
+        "Nao e possivel classificar o enunciado sem titulo."
       ],
-      "correta": "O estudante errou, porque predomina a função metalinguística.",
-      "comentario": "A classificação depende do foco principal da mensagem, não apenas do tema tratado.",
+      "correta": "O estudante errou, porque predomina a funcao metalinguistica.",
+      "comentario": "A classificacao depende do foco principal da mensagem, nao apenas do tema tratado.",
       "tempoEstimado": 45,
       "tags": [
         "metalinguistica",
@@ -4793,21 +4794,21 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No trecho \"A frase foi montada para soar bonita e marcante.\", qual interpretação explica melhor o uso predominante da linguagem?",
+      "enunciado": "No trecho \"A frase foi montada para soar bonita e marcante.\", qual interpretacao explica melhor o uso predominante da linguagem?",
       "opcoes": [
-        "destacar a elaboracao estética da mensagem.",
-        "apenas preencher espaço sem objetivo comunicativo.",
-        "substituir a mensagem por um cálculo ou esquema.",
+        "destacar a elaboracao estatica da mensagem.",
+        "apenas preencher espaco sem objetivo comunicativo.",
+        "substituir a mensagem por um calculo ou esquema.",
         "eliminar qualquer foco no destinatario, no emissor ou na forma."
       ],
-      "correta": "destacar a elaboracao estética da mensagem.",
+      "correta": "destacar a elaboracao estatica da mensagem.",
       "comentario": "A resposta correta reconhece a finalidade principal da mensagem.",
       "tempoEstimado": 40,
       "tags": [
@@ -4831,22 +4832,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Diferenciação entre funções",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Diferenciacao entre funcoes",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia o conjunto de trechos: \"O Brasil possui cinco regiões geograficas. Você precisa revisar o texto com calma.\". Considerando o primeiro trecho como centro da análise, qual função predomina?",
+      "enunciado": "Leia o conjunto de trechos: \"O Brasil possui cinco regioes geograficas. Voce precisa revisar o texto com calma.\". Considerando o primeiro trecho como centro da analise, qual funcao predomina?",
       "opcoes": [
         "Referencial",
         "Conativa",
-        "Fática",
-        "Metalinguística"
+        "Fatica",
+        "Metalinguistica"
       ],
       "correta": "Referencial",
-      "comentario": "Mesmo havendo outro enunciado ao lado, o primeiro trecho orienta a classificação pedida.",
+      "comentario": "Mesmo havendo outro enunciado ao lado, o primeiro trecho orienta a classificacao pedida.",
       "tempoEstimado": 45,
       "tags": [
         "referencial",
@@ -4869,22 +4870,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante leu \"Fiquei decepcionado com a atitude do personagem.\" e afirmou que a função e Fática. Qual avaliação está correta?",
+      "enunciado": "Um estudante leu \"Fiquei decepcionado com a atitude do personagem.\" e afirmou que a funcao e Fatica. Qual avaliacao esta correta?",
       "opcoes": [
-        "O estudante errou, porque predomina a função emotiva.",
-        "O estudante acertou, porque Emotiva e Fática são equivalentes.",
-        "O estudante acertou, porque toda frase expressiva pertence a mesma função.",
-        "Não e possivel classificar o enunciado sem título."
+        "O estudante errou, porque predomina a funcao emotiva.",
+        "O estudante acertou, porque Emotiva e Fatica sao equivalentes.",
+        "O estudante acertou, porque toda frase expressiva pertence a mesma funcao.",
+        "Nao e possivel classificar o enunciado sem titulo."
       ],
-      "correta": "O estudante errou, porque predomina a função emotiva.",
-      "comentario": "A classificação depende do foco principal da mensagem, não apenas do tema tratado.",
+      "correta": "O estudante errou, porque predomina a funcao emotiva.",
+      "comentario": "A classificacao depende do foco principal da mensagem, nao apenas do tema tratado.",
       "tempoEstimado": 45,
       "tags": [
         "emotiva",
@@ -4907,18 +4908,18 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No trecho \"Não perca a promoção deste fim de semana.\", qual interpretação explica melhor o uso predominante da linguagem?",
+      "enunciado": "No trecho \"Nao perca a promocao deste fim de semana.\", qual interpretacao explica melhor o uso predominante da linguagem?",
       "opcoes": [
         "influenciar o comportamento do interlocutor.",
-        "apenas preencher espaço sem objetivo comunicativo.",
-        "substituir a mensagem por um cálculo ou esquema.",
+        "apenas preencher espaco sem objetivo comunicativo.",
+        "substituir a mensagem por um calculo ou esquema.",
         "eliminar qualquer foco no destinatario, no emissor ou na forma."
       ],
       "correta": "influenciar o comportamento do interlocutor.",
@@ -4945,22 +4946,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Diferenciação entre funções",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Diferenciacao entre funcoes",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia o conjunto de trechos: \"Boa noite, som testando, um dois tres. No silêncio da noite, a lua lava a rua.\". Considerando o primeiro trecho como centro da análise, qual função predomina?",
+      "enunciado": "Leia o conjunto de trechos: \"Boa noite, som testando, um dois tres. No silencio da noite, a lua lava a rua.\". Considerando o primeiro trecho como centro da analise, qual funcao predomina?",
       "opcoes": [
-        "Fática",
-        "Poética",
+        "Fatica",
+        "Poetica",
         "Referencial",
         "Emotiva"
       ],
-      "correta": "Fática",
-      "comentario": "Mesmo havendo outro enunciado ao lado, o primeiro trecho orienta a classificação pedida.",
+      "correta": "Fatica",
+      "comentario": "Mesmo havendo outro enunciado ao lado, o primeiro trecho orienta a classificacao pedida.",
       "tempoEstimado": 45,
       "tags": [
         "fatica",
@@ -4983,22 +4984,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante leu \"Nesta tirinha, o autor explica o sentido da expressão usada.\" e afirmou que a função e Referencial. Qual avaliação está correta?",
+      "enunciado": "Um estudante leu \"Nesta tirinha, o autor explica o sentido da expressao usada.\" e afirmou que a funcao e Referencial. Qual avaliacao esta correta?",
       "opcoes": [
-        "O estudante errou, porque predomina a função metalinguística.",
-        "O estudante acertou, porque Metalinguística e Referencial são equivalentes.",
-        "O estudante acertou, porque toda frase expressiva pertence a mesma função.",
-        "Não e possivel classificar o enunciado sem título."
+        "O estudante errou, porque predomina a funcao metalinguistica.",
+        "O estudante acertou, porque Metalinguistica e Referencial sao equivalentes.",
+        "O estudante acertou, porque toda frase expressiva pertence a mesma funcao.",
+        "Nao e possivel classificar o enunciado sem titulo."
       ],
-      "correta": "O estudante errou, porque predomina a função metalinguística.",
-      "comentario": "A classificação depende do foco principal da mensagem, não apenas do tema tratado.",
+      "correta": "O estudante errou, porque predomina a funcao metalinguistica.",
+      "comentario": "A classificacao depende do foco principal da mensagem, nao apenas do tema tratado.",
       "tempoEstimado": 45,
       "tags": [
         "metalinguistica",
@@ -5021,21 +5022,21 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No trecho \"Entre sombras e sopros, a cidade suspira.\", qual interpretação explica melhor o uso predominante da linguagem?",
+      "enunciado": "No trecho \"Entre sombras e sopros, a cidade suspira.\", qual interpretacao explica melhor o uso predominante da linguagem?",
       "opcoes": [
-        "destacar a elaboracao estética da mensagem.",
-        "apenas preencher espaço sem objetivo comunicativo.",
-        "substituir a mensagem por um cálculo ou esquema.",
+        "destacar a elaboracao estatica da mensagem.",
+        "apenas preencher espaco sem objetivo comunicativo.",
+        "substituir a mensagem por um calculo ou esquema.",
         "eliminar qualquer foco no destinatario, no emissor ou na forma."
       ],
-      "correta": "destacar a elaboracao estética da mensagem.",
+      "correta": "destacar a elaboracao estatica da mensagem.",
       "comentario": "A resposta correta reconhece a finalidade principal da mensagem.",
       "tempoEstimado": 40,
       "tags": [
@@ -5059,22 +5060,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Diferenciação entre funções",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Diferenciacao entre funcoes",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia o conjunto de trechos: \"A campanha comeca na segunda-feira e termina na sexta. Venha conhecer a feira cultural da escola.\". Considerando o primeiro trecho como centro da análise, qual função predomina?",
+      "enunciado": "Leia o conjunto de trechos: \"A campanha comeca na segunda-feira e termina na sexta. Venha conhecer a feira cultural da escola.\". Considerando o primeiro trecho como centro da analise, qual funcao predomina?",
       "opcoes": [
         "Referencial",
         "Conativa",
-        "Fática",
-        "Metalinguística"
+        "Fatica",
+        "Metalinguistica"
       ],
       "correta": "Referencial",
-      "comentario": "Mesmo havendo outro enunciado ao lado, o primeiro trecho orienta a classificação pedida.",
+      "comentario": "Mesmo havendo outro enunciado ao lado, o primeiro trecho orienta a classificacao pedida.",
       "tempoEstimado": 45,
       "tags": [
         "referencial",
@@ -5097,22 +5098,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante leu \"Estou muito feliz com o resultado da turma.\" e afirmou que a função e Fática. Qual avaliação está correta?",
+      "enunciado": "Um estudante leu \"Estou muito feliz com o resultado da turma.\" e afirmou que a funcao e Fatica. Qual avaliacao esta correta?",
       "opcoes": [
-        "O estudante errou, porque predomina a função emotiva.",
-        "O estudante acertou, porque Emotiva e Fática são equivalentes.",
-        "O estudante acertou, porque toda frase expressiva pertence a mesma função.",
-        "Não e possivel classificar o enunciado sem título."
+        "O estudante errou, porque predomina a funcao emotiva.",
+        "O estudante acertou, porque Emotiva e Fatica sao equivalentes.",
+        "O estudante acertou, porque toda frase expressiva pertence a mesma funcao.",
+        "Nao e possivel classificar o enunciado sem titulo."
       ],
-      "correta": "O estudante errou, porque predomina a função emotiva.",
-      "comentario": "A classificação depende do foco principal da mensagem, não apenas do tema tratado.",
+      "correta": "O estudante errou, porque predomina a funcao emotiva.",
+      "comentario": "A classificacao depende do foco principal da mensagem, nao apenas do tema tratado.",
       "tempoEstimado": 45,
       "tags": [
         "emotiva",
@@ -5135,18 +5136,18 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No trecho \"Você precisa revisar o texto com calma.\", qual interpretação explica melhor o uso predominante da linguagem?",
+      "enunciado": "No trecho \"Voce precisa revisar o texto com calma.\", qual interpretacao explica melhor o uso predominante da linguagem?",
       "opcoes": [
         "influenciar o comportamento do interlocutor.",
-        "apenas preencher espaço sem objetivo comunicativo.",
-        "substituir a mensagem por um cálculo ou esquema.",
+        "apenas preencher espaco sem objetivo comunicativo.",
+        "substituir a mensagem por um calculo ou esquema.",
         "eliminar qualquer foco no destinatario, no emissor ou na forma."
       ],
       "correta": "influenciar o comportamento do interlocutor.",
@@ -5173,22 +5174,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Diferenciação entre funções",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Diferenciacao entre funcoes",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia o conjunto de trechos: \"Alô, você está me ouvindo? A palavra cai leve, lisa, luminosa.\". Considerando o primeiro trecho como centro da análise, qual função predomina?",
+      "enunciado": "Leia o conjunto de trechos: \"Alo, voce esta me ouvindo? A palavra cai leve, lisa, luminosa.\". Considerando o primeiro trecho como centro da analise, qual funcao predomina?",
       "opcoes": [
-        "Fática",
-        "Poética",
+        "Fatica",
+        "Poetica",
         "Referencial",
         "Emotiva"
       ],
-      "correta": "Fática",
-      "comentario": "Mesmo havendo outro enunciado ao lado, o primeiro trecho orienta a classificação pedida.",
+      "correta": "Fatica",
+      "comentario": "Mesmo havendo outro enunciado ao lado, o primeiro trecho orienta a classificacao pedida.",
       "tempoEstimado": 45,
       "tags": [
         "fatica",
@@ -5211,22 +5212,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante leu \"O dicionário define ambiguidade como duplicidade de sentido.\" e afirmou que a função e Referencial. Qual avaliação está correta?",
+      "enunciado": "Um estudante leu \"O dicionario define ambiguidade como duplicidade de sentido.\" e afirmou que a funcao e Referencial. Qual avaliacao esta correta?",
       "opcoes": [
-        "O estudante errou, porque predomina a função metalinguística.",
-        "O estudante acertou, porque Metalinguística e Referencial são equivalentes.",
-        "O estudante acertou, porque toda frase expressiva pertence a mesma função.",
-        "Não e possivel classificar o enunciado sem título."
+        "O estudante errou, porque predomina a funcao metalinguistica.",
+        "O estudante acertou, porque Metalinguistica e Referencial sao equivalentes.",
+        "O estudante acertou, porque toda frase expressiva pertence a mesma funcao.",
+        "Nao e possivel classificar o enunciado sem titulo."
       ],
-      "correta": "O estudante errou, porque predomina a função metalinguística.",
-      "comentario": "A classificação depende do foco principal da mensagem, não apenas do tema tratado.",
+      "correta": "O estudante errou, porque predomina a funcao metalinguistica.",
+      "comentario": "A classificacao depende do foco principal da mensagem, nao apenas do tema tratado.",
       "tempoEstimado": 45,
       "tags": [
         "metalinguistica",
@@ -5249,21 +5250,21 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No trecho \"No silêncio da noite, a lua lava a rua.\", qual interpretação explica melhor o uso predominante da linguagem?",
+      "enunciado": "No trecho \"No silencio da noite, a lua lava a rua.\", qual interpretacao explica melhor o uso predominante da linguagem?",
       "opcoes": [
-        "destacar a elaboracao estética da mensagem.",
-        "apenas preencher espaço sem objetivo comunicativo.",
-        "substituir a mensagem por um cálculo ou esquema.",
+        "destacar a elaboracao estatica da mensagem.",
+        "apenas preencher espaco sem objetivo comunicativo.",
+        "substituir a mensagem por um calculo ou esquema.",
         "eliminar qualquer foco no destinatario, no emissor ou na forma."
       ],
-      "correta": "destacar a elaboracao estética da mensagem.",
+      "correta": "destacar a elaboracao estatica da mensagem.",
       "comentario": "A resposta correta reconhece a finalidade principal da mensagem.",
       "tempoEstimado": 40,
       "tags": [
@@ -5287,22 +5288,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Diferenciação entre funções",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Diferenciacao entre funcoes",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia o conjunto de trechos: \"A biblioteca fecha as 18 horas durante a semana. Use cinto de segurança durante todo o trajeto.\". Considerando o primeiro trecho como centro da análise, qual função predomina?",
+      "enunciado": "Leia o conjunto de trechos: \"A biblioteca fecha as 18 horas durante a semana. Use cinto de seguranca durante todo o trajeto.\". Considerando o primeiro trecho como centro da analise, qual funcao predomina?",
       "opcoes": [
         "Referencial",
         "Conativa",
-        "Fática",
-        "Metalinguística"
+        "Fatica",
+        "Metalinguistica"
       ],
       "correta": "Referencial",
-      "comentario": "Mesmo havendo outro enunciado ao lado, o primeiro trecho orienta a classificação pedida.",
+      "comentario": "Mesmo havendo outro enunciado ao lado, o primeiro trecho orienta a classificacao pedida.",
       "tempoEstimado": 45,
       "tags": [
         "referencial",
@@ -5325,22 +5326,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante leu \"Acho esse filme profundamente comovente.\" e afirmou que a função e Fática. Qual avaliação está correta?",
+      "enunciado": "Um estudante leu \"Acho esse filme profundamente comovente.\" e afirmou que a funcao e Fatica. Qual avaliacao esta correta?",
       "opcoes": [
-        "O estudante errou, porque predomina a função emotiva.",
-        "O estudante acertou, porque Emotiva e Fática são equivalentes.",
-        "O estudante acertou, porque toda frase expressiva pertence a mesma função.",
-        "Não e possivel classificar o enunciado sem título."
+        "O estudante errou, porque predomina a funcao emotiva.",
+        "O estudante acertou, porque Emotiva e Fatica sao equivalentes.",
+        "O estudante acertou, porque toda frase expressiva pertence a mesma funcao.",
+        "Nao e possivel classificar o enunciado sem titulo."
       ],
-      "correta": "O estudante errou, porque predomina a função emotiva.",
-      "comentario": "A classificação depende do foco principal da mensagem, não apenas do tema tratado.",
+      "correta": "O estudante errou, porque predomina a funcao emotiva.",
+      "comentario": "A classificacao depende do foco principal da mensagem, nao apenas do tema tratado.",
       "tempoEstimado": 45,
       "tags": [
         "emotiva",
@@ -5363,18 +5364,18 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No trecho \"Venha conhecer a feira cultural da escola.\", qual interpretação explica melhor o uso predominante da linguagem?",
+      "enunciado": "No trecho \"Venha conhecer a feira cultural da escola.\", qual interpretacao explica melhor o uso predominante da linguagem?",
       "opcoes": [
         "influenciar o comportamento do interlocutor.",
-        "apenas preencher espaço sem objetivo comunicativo.",
-        "substituir a mensagem por um cálculo ou esquema.",
+        "apenas preencher espaco sem objetivo comunicativo.",
+        "substituir a mensagem por um calculo ou esquema.",
         "eliminar qualquer foco no destinatario, no emissor ou na forma."
       ],
       "correta": "influenciar o comportamento do interlocutor.",
@@ -5401,22 +5402,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Diferenciação entre funções",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Diferenciacao entre funcoes",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia o conjunto de trechos: \"Oi, tudo bem por ai? O verso brinca com o som das letras.\". Considerando o primeiro trecho como centro da análise, qual função predomina?",
+      "enunciado": "Leia o conjunto de trechos: \"Oi, tudo bem por ai? O verso brinca com o som das letras.\". Considerando o primeiro trecho como centro da analise, qual funcao predomina?",
       "opcoes": [
-        "Fática",
-        "Poética",
+        "Fatica",
+        "Poetica",
         "Referencial",
         "Emotiva"
       ],
-      "correta": "Fática",
-      "comentario": "Mesmo havendo outro enunciado ao lado, o primeiro trecho orienta a classificação pedida.",
+      "correta": "Fatica",
+      "comentario": "Mesmo havendo outro enunciado ao lado, o primeiro trecho orienta a classificacao pedida.",
       "tempoEstimado": 45,
       "tags": [
         "fatica",
@@ -5439,22 +5440,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante leu \"A aula apresenta o que significa o termo narrador.\" e afirmou que a função e Referencial. Qual avaliação está correta?",
+      "enunciado": "Um estudante leu \"A aula apresenta o que significa o termo narrador.\" e afirmou que a funcao e Referencial. Qual avaliacao esta correta?",
       "opcoes": [
-        "O estudante errou, porque predomina a função metalinguística.",
-        "O estudante acertou, porque Metalinguística e Referencial são equivalentes.",
-        "O estudante acertou, porque toda frase expressiva pertence a mesma função.",
-        "Não e possivel classificar o enunciado sem título."
+        "O estudante errou, porque predomina a funcao metalinguistica.",
+        "O estudante acertou, porque Metalinguistica e Referencial sao equivalentes.",
+        "O estudante acertou, porque toda frase expressiva pertence a mesma funcao.",
+        "Nao e possivel classificar o enunciado sem titulo."
       ],
-      "correta": "O estudante errou, porque predomina a função metalinguística.",
-      "comentario": "A classificação depende do foco principal da mensagem, não apenas do tema tratado.",
+      "correta": "O estudante errou, porque predomina a funcao metalinguistica.",
+      "comentario": "A classificacao depende do foco principal da mensagem, nao apenas do tema tratado.",
       "tempoEstimado": 45,
       "tags": [
         "metalinguistica",
@@ -5477,21 +5478,21 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No trecho \"A palavra cai leve, lisa, luminosa.\", qual interpretação explica melhor o uso predominante da linguagem?",
+      "enunciado": "No trecho \"A palavra cai leve, lisa, luminosa.\", qual interpretacao explica melhor o uso predominante da linguagem?",
       "opcoes": [
-        "destacar a elaboracao estética da mensagem.",
-        "apenas preencher espaço sem objetivo comunicativo.",
-        "substituir a mensagem por um cálculo ou esquema.",
+        "destacar a elaboracao estatica da mensagem.",
+        "apenas preencher espaco sem objetivo comunicativo.",
+        "substituir a mensagem por um calculo ou esquema.",
         "eliminar qualquer foco no destinatario, no emissor ou na forma."
       ],
-      "correta": "destacar a elaboracao estética da mensagem.",
+      "correta": "destacar a elaboracao estatica da mensagem.",
       "comentario": "A resposta correta reconhece a finalidade principal da mensagem.",
       "tempoEstimado": 40,
       "tags": [
@@ -5515,22 +5516,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Diferenciação entre funções",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Diferenciacao entre funcoes",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia o conjunto de trechos: \"O texto apresenta o conceito e os exemplos do tema estudado. Leia o regulamento antes de participar.\". Considerando o primeiro trecho como centro da análise, qual função predomina?",
+      "enunciado": "Leia o conjunto de trechos: \"O texto apresenta o conceito e os exemplos do tema estudado. Leia o regulamento antes de participar.\". Considerando o primeiro trecho como centro da analise, qual funcao predomina?",
       "opcoes": [
         "Referencial",
         "Conativa",
-        "Fática",
-        "Metalinguística"
+        "Fatica",
+        "Metalinguistica"
       ],
       "correta": "Referencial",
-      "comentario": "Mesmo havendo outro enunciado ao lado, o primeiro trecho orienta a classificação pedida.",
+      "comentario": "Mesmo havendo outro enunciado ao lado, o primeiro trecho orienta a classificacao pedida.",
       "tempoEstimado": 45,
       "tags": [
         "referencial",
@@ -5553,22 +5554,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante leu \"Senti um alivio enorme ao terminar a prova.\" e afirmou que a função e Fática. Qual avaliação está correta?",
+      "enunciado": "Um estudante leu \"Senti um alivio enorme ao terminar a prova.\" e afirmou que a funcao e Fatica. Qual avaliacao esta correta?",
       "opcoes": [
-        "O estudante errou, porque predomina a função emotiva.",
-        "O estudante acertou, porque Emotiva e Fática são equivalentes.",
-        "O estudante acertou, porque toda frase expressiva pertence a mesma função.",
-        "Não e possivel classificar o enunciado sem título."
+        "O estudante errou, porque predomina a funcao emotiva.",
+        "O estudante acertou, porque Emotiva e Fatica sao equivalentes.",
+        "O estudante acertou, porque toda frase expressiva pertence a mesma funcao.",
+        "Nao e possivel classificar o enunciado sem titulo."
       ],
-      "correta": "O estudante errou, porque predomina a função emotiva.",
-      "comentario": "A classificação depende do foco principal da mensagem, não apenas do tema tratado.",
+      "correta": "O estudante errou, porque predomina a funcao emotiva.",
+      "comentario": "A classificacao depende do foco principal da mensagem, nao apenas do tema tratado.",
       "tempoEstimado": 45,
       "tags": [
         "emotiva",
@@ -5591,18 +5592,18 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No trecho \"Use cinto de segurança durante todo o trajeto.\", qual interpretação explica melhor o uso predominante da linguagem?",
+      "enunciado": "No trecho \"Use cinto de seguranca durante todo o trajeto.\", qual interpretacao explica melhor o uso predominante da linguagem?",
       "opcoes": [
         "influenciar o comportamento do interlocutor.",
-        "apenas preencher espaço sem objetivo comunicativo.",
-        "substituir a mensagem por um cálculo ou esquema.",
+        "apenas preencher espaco sem objetivo comunicativo.",
+        "substituir a mensagem por um calculo ou esquema.",
         "eliminar qualquer foco no destinatario, no emissor ou na forma."
       ],
       "correta": "influenciar o comportamento do interlocutor.",
@@ -5629,22 +5630,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Diferenciação entre funções",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Diferenciacao entre funcoes",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia o conjunto de trechos: \"Certo, podemos continuar? A frase foi montada para soar bonita e marcante.\". Considerando o primeiro trecho como centro da análise, qual função predomina?",
+      "enunciado": "Leia o conjunto de trechos: \"Certo, podemos continuar? A frase foi montada para soar bonita e marcante.\". Considerando o primeiro trecho como centro da analise, qual funcao predomina?",
       "opcoes": [
-        "Fática",
-        "Poética",
+        "Fatica",
+        "Poetica",
         "Referencial",
         "Emotiva"
       ],
-      "correta": "Fática",
-      "comentario": "Mesmo havendo outro enunciado ao lado, o primeiro trecho orienta a classificação pedida.",
+      "correta": "Fatica",
+      "comentario": "Mesmo havendo outro enunciado ao lado, o primeiro trecho orienta a classificacao pedida.",
       "tempoEstimado": 45,
       "tags": [
         "fatica",
@@ -5667,22 +5668,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante leu \"Substantivo e a palavra que nomeia seres, lugares ou ideias.\" e afirmou que a função e Referencial. Qual avaliação está correta?",
+      "enunciado": "Um estudante leu \"Substantivo e a palavra que nomeia seres, lugares ou ideias.\" e afirmou que a funcao e Referencial. Qual avaliacao esta correta?",
       "opcoes": [
-        "O estudante errou, porque predomina a função metalinguística.",
-        "O estudante acertou, porque Metalinguística e Referencial são equivalentes.",
-        "O estudante acertou, porque toda frase expressiva pertence a mesma função.",
-        "Não e possivel classificar o enunciado sem título."
+        "O estudante errou, porque predomina a funcao metalinguistica.",
+        "O estudante acertou, porque Metalinguistica e Referencial sao equivalentes.",
+        "O estudante acertou, porque toda frase expressiva pertence a mesma funcao.",
+        "Nao e possivel classificar o enunciado sem titulo."
       ],
-      "correta": "O estudante errou, porque predomina a função metalinguística.",
-      "comentario": "A classificação depende do foco principal da mensagem, não apenas do tema tratado.",
+      "correta": "O estudante errou, porque predomina a funcao metalinguistica.",
+      "comentario": "A classificacao depende do foco principal da mensagem, nao apenas do tema tratado.",
       "tempoEstimado": 45,
       "tags": [
         "metalinguistica",
@@ -5705,21 +5706,21 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No trecho \"O verso brinca com o som das letras.\", qual interpretação explica melhor o uso predominante da linguagem?",
+      "enunciado": "No trecho \"O verso brinca com o som das letras.\", qual interpretacao explica melhor o uso predominante da linguagem?",
       "opcoes": [
-        "destacar a elaboracao estética da mensagem.",
-        "apenas preencher espaço sem objetivo comunicativo.",
-        "substituir a mensagem por um cálculo ou esquema.",
+        "destacar a elaboracao estatica da mensagem.",
+        "apenas preencher espaco sem objetivo comunicativo.",
+        "substituir a mensagem por um calculo ou esquema.",
         "eliminar qualquer foco no destinatario, no emissor ou na forma."
       ],
-      "correta": "destacar a elaboracao estética da mensagem.",
+      "correta": "destacar a elaboracao estatica da mensagem.",
       "comentario": "A resposta correta reconhece a finalidade principal da mensagem.",
       "tempoEstimado": 40,
       "tags": [
@@ -5743,22 +5744,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Interpretação indireta",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um verbete enciclopedico, aparece a formulacao \"A água entra em ebulição a 100 graus ao nível do mar.\". Qual leitura melhor justifica a função dominante desse trecho?",
+      "enunciado": "Em um verbete enciclopedico, aparece a formulacao \"A agua entra em ebulicao a 100 graus ao nivel do mar.\". Qual leitura melhor justifica a funcao dominante desse trecho?",
       "opcoes": [
         "o enunciado se organiza para informar de modo objetivo e direto",
-        "o enunciado busca apenas decorar a página sem comunicar nada",
-        "o enunciado nega qualquer intenção de linguagem",
+        "o enunciado busca apenas decorar a pagina sem comunicar nada",
+        "o enunciado nega qualquer intencao de linguagem",
         "o enunciado elimina o contexto em que foi produzido"
       ],
       "correta": "o enunciado se organiza para informar de modo objetivo e direto",
-      "comentario": "A função da linguagem se identifica pela finalidade dominante da mensagem no contexto.",
+      "comentario": "A funcao da linguagem se identifica pela finalidade dominante da mensagem no contexto.",
       "tempoEstimado": 50,
       "tags": [
         "referencial",
@@ -5781,22 +5782,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia a análise: \"Como o trecho Acho esse filme profundamente comovente. trata de um tema concreto, a função só pode ser referencial\". Qual alternativa avalia melhor essa afirmação?",
+      "enunciado": "Leia a analise: \"Como o trecho Acho esse filme profundamente comovente. trata de um tema concreto, a funcao so pode ser referencial\". Qual alternativa avalia melhor essa afirmacao?",
       "opcoes": [
-        "Ela está errada, porque o tema não basta; no trecho predomina a função emotiva.",
-        "Ela está correta, porque toda mensagem com substantivos e referencial.",
-        "Ela está correta, porque qualquer frase curta elimina outras funções.",
-        "Ela está errada apenas se houver ponto de exclamação."
+        "Ela esta errada, porque o tema nao basta; no trecho predomina a funcao emotiva.",
+        "Ela esta correta, porque toda mensagem com substantivos e referencial.",
+        "Ela esta correta, porque qualquer frase curta elimina outras funcoes.",
+        "Ela esta errada apenas se houver ponto de exclamacao."
       ],
-      "correta": "Ela está errada, porque o tema não basta; no trecho predomina a função emotiva.",
-      "comentario": "O erro comum está em confundir assunto tratado com foco comunicativo predominante.",
+      "correta": "Ela esta errada, porque o tema nao basta; no trecho predomina a funcao emotiva.",
+      "comentario": "O erro comum esta em confundir assunto tratado com foco comunicativo predominante.",
       "tempoEstimado": 50,
       "tags": [
         "emotiva",
@@ -5819,22 +5820,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Equivalência de formas",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa preserva melhor a mesma função predominante de \"Você precisa revisar o texto com calma.\"?",
+      "enunciado": "Qual alternativa preserva melhor a mesma funcao predominante de \"Voce precisa revisar o texto com calma.\"?",
       "opcoes": [
         "Venha conhecer a feira cultural da escola.",
-        "No silêncio da noite, a lua lava a rua.",
-        "O Brasil possui cinco regiões geograficas.",
+        "No silencio da noite, a lua lava a rua.",
+        "O Brasil possui cinco regioes geograficas.",
         "Senti um alivio enorme ao terminar a prova."
       ],
       "correta": "Venha conhecer a feira cultural da escola.",
-      "comentario": "A resposta correta conserva o mesmo foco da comunicação, ainda que a frase mude.",
+      "comentario": "A resposta correta conserva o mesmo foco da comunicacao, ainda que a frase mude.",
       "tempoEstimado": 55,
       "tags": [
         "conativa",
@@ -5857,9 +5858,9 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Interpretação indireta",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
@@ -5872,7 +5873,7 @@ export const funcoesDaLinguagem = {
         "o apagamento do sentido da frase"
       ],
       "correta": "canal",
-      "comentario": "O reconhecimento da função depende de identificar em que elemento da comunicação recai a atencao principal.",
+      "comentario": "O reconhecimento da funcao depende de identificar em que elemento da comunicacao recai a atencao principal.",
       "tempoEstimado": 55,
       "tags": [
         "fatica",
@@ -5895,22 +5896,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"A aula apresenta o que significa o termo narrador.\", evitando um erro comum de classificação?",
+      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"A aula apresenta o que significa o termo narrador.\", evitando um erro comum de classificacao?",
       "opcoes": [
-        "Reconhecer o predominio da função metalinguística.",
-        "Classificar automaticamente o trecho como fática por causa do tema.",
-        "Dizer que não há função dominante porque a frase e curta.",
+        "Reconhecer o predominio da funcao metalinguistica.",
+        "Classificar automaticamente o trecho como fatica por causa do tema.",
+        "Dizer que nao ha funcao dominante porque a frase e curta.",
         "Afirmar que toda mensagem escolar e sempre referencial."
       ],
-      "correta": "Reconhecer o predominio da função metalinguística.",
-      "comentario": "O ponto central e observar a intenção dominante da mensagem no contexto.",
+      "correta": "Reconhecer o predominio da funcao metalinguistica.",
+      "comentario": "O ponto central e observar a intencao dominante da mensagem no contexto.",
       "tempoEstimado": 50,
       "tags": [
         "metalinguistica",
@@ -5933,22 +5934,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Interpretação indireta",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um poema, aparece a formulacao \"No silêncio da noite, a lua lava a rua.\". Qual leitura melhor justifica a função dominante desse trecho?",
+      "enunciado": "Em um poema, aparece a formulacao \"No silencio da noite, a lua lava a rua.\". Qual leitura melhor justifica a funcao dominante desse trecho?",
       "opcoes": [
-        "o enunciado se organiza para destacar a elaboracao estética da mensagem",
-        "o enunciado busca apenas decorar a página sem comunicar nada",
-        "o enunciado nega qualquer intenção de linguagem",
+        "o enunciado se organiza para destacar a elaboracao estatica da mensagem",
+        "o enunciado busca apenas decorar a pagina sem comunicar nada",
+        "o enunciado nega qualquer intencao de linguagem",
         "o enunciado elimina o contexto em que foi produzido"
       ],
-      "correta": "o enunciado se organiza para destacar a elaboracao estética da mensagem",
-      "comentario": "A função da linguagem se identifica pela finalidade dominante da mensagem no contexto.",
+      "correta": "o enunciado se organiza para destacar a elaboracao estatica da mensagem",
+      "comentario": "A funcao da linguagem se identifica pela finalidade dominante da mensagem no contexto.",
       "tempoEstimado": 50,
       "tags": [
         "poetica",
@@ -5971,22 +5972,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia a análise: \"Como o trecho O Brasil possui cinco regiões geograficas. trata de um tema concreto, a função só pode ser referencial\". Qual alternativa avalia melhor essa afirmação?",
+      "enunciado": "Leia a analise: \"Como o trecho O Brasil possui cinco regioes geograficas. trata de um tema concreto, a funcao so pode ser referencial\". Qual alternativa avalia melhor essa afirmacao?",
       "opcoes": [
-        "Ela está errada, porque o tema não basta; no trecho predomina a função referencial.",
-        "Ela está correta, porque toda mensagem com substantivos e referencial.",
-        "Ela está correta, porque qualquer frase curta elimina outras funções.",
-        "Ela está errada apenas se houver ponto de exclamação."
+        "Ela esta errada, porque o tema nao basta; no trecho predomina a funcao referencial.",
+        "Ela esta correta, porque toda mensagem com substantivos e referencial.",
+        "Ela esta correta, porque qualquer frase curta elimina outras funcoes.",
+        "Ela esta errada apenas se houver ponto de exclamacao."
       ],
-      "correta": "Ela está errada, porque o tema não basta; no trecho predomina a função referencial.",
-      "comentario": "O erro comum está em confundir assunto tratado com foco comunicativo predominante.",
+      "correta": "Ela esta errada, porque o tema nao basta; no trecho predomina a funcao referencial.",
+      "comentario": "O erro comum esta em confundir assunto tratado com foco comunicativo predominante.",
       "tempoEstimado": 50,
       "tags": [
         "referencial",
@@ -6009,22 +6010,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Equivalência de formas",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa preserva melhor a mesma função predominante de \"Senti um alivio enorme ao terminar a prova.\"?",
+      "enunciado": "Qual alternativa preserva melhor a mesma funcao predominante de \"Senti um alivio enorme ao terminar a prova.\"?",
       "opcoes": [
         "Para mim, esse livro e inesquecivel.",
-        "Alô, você está me ouvindo?",
-        "A palavra poema designa um texto organizado de forma artística.",
+        "Alo, voce esta me ouvindo?",
+        "A palavra poema designa um texto organizado de forma artistica.",
         "O verso brinca com o som das letras."
       ],
       "correta": "Para mim, esse livro e inesquecivel.",
-      "comentario": "A resposta correta conserva o mesmo foco da comunicação, ainda que a frase mude.",
+      "comentario": "A resposta correta conserva o mesmo foco da comunicacao, ainda que a frase mude.",
       "tempoEstimado": 55,
       "tags": [
         "emotiva",
@@ -6047,9 +6048,9 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Interpretação indireta",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
@@ -6062,7 +6063,7 @@ export const funcoesDaLinguagem = {
         "o apagamento do sentido da frase"
       ],
       "correta": "receptor",
-      "comentario": "O reconhecimento da função depende de identificar em que elemento da comunicação recai a atencao principal.",
+      "comentario": "O reconhecimento da funcao depende de identificar em que elemento da comunicacao recai a atencao principal.",
       "tempoEstimado": 55,
       "tags": [
         "conativa",
@@ -6085,22 +6086,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"Boa noite, som testando, um dois tres.\", evitando um erro comum de classificação?",
+      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"Boa noite, som testando, um dois tres.\", evitando um erro comum de classificacao?",
       "opcoes": [
-        "Reconhecer o predominio da função fática.",
+        "Reconhecer o predominio da funcao fatica.",
         "Classificar automaticamente o trecho como emotiva por causa do tema.",
-        "Dizer que não há função dominante porque a frase e curta.",
+        "Dizer que nao ha funcao dominante porque a frase e curta.",
         "Afirmar que toda mensagem escolar e sempre referencial."
       ],
-      "correta": "Reconhecer o predominio da função fática.",
-      "comentario": "O ponto central e observar a intenção dominante da mensagem no contexto.",
+      "correta": "Reconhecer o predominio da funcao fatica.",
+      "comentario": "O ponto central e observar a intencao dominante da mensagem no contexto.",
       "tempoEstimado": 50,
       "tags": [
         "fatica",
@@ -6123,22 +6124,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Interpretação indireta",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um gramática escolar, aparece a formulacao \"Substantivo e a palavra que nomeia seres, lugares ou ideias.\". Qual leitura melhor justifica a função dominante desse trecho?",
+      "enunciado": "Em um grametica escolar, aparece a formulacao \"Substantivo e a palavra que nomeia seres, lugares ou ideias.\". Qual leitura melhor justifica a funcao dominante desse trecho?",
       "opcoes": [
-        "o enunciado se organiza para explicar o funcionamento do codigo ou da própria linguagem",
-        "o enunciado busca apenas decorar a página sem comunicar nada",
-        "o enunciado nega qualquer intenção de linguagem",
+        "o enunciado se organiza para explicar o funcionamento do codigo ou da propria linguagem",
+        "o enunciado busca apenas decorar a pagina sem comunicar nada",
+        "o enunciado nega qualquer intencao de linguagem",
         "o enunciado elimina o contexto em que foi produzido"
       ],
-      "correta": "o enunciado se organiza para explicar o funcionamento do codigo ou da própria linguagem",
-      "comentario": "A função da linguagem se identifica pela finalidade dominante da mensagem no contexto.",
+      "correta": "o enunciado se organiza para explicar o funcionamento do codigo ou da propria linguagem",
+      "comentario": "A funcao da linguagem se identifica pela finalidade dominante da mensagem no contexto.",
       "tempoEstimado": 50,
       "tags": [
         "metalinguistica",
@@ -6161,22 +6162,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia a análise: \"Como o trecho A palavra cai leve, lisa, luminosa. trata de um tema concreto, a função só pode ser referencial\". Qual alternativa avalia melhor essa afirmação?",
+      "enunciado": "Leia a analise: \"Como o trecho A palavra cai leve, lisa, luminosa. trata de um tema concreto, a funcao so pode ser referencial\". Qual alternativa avalia melhor essa afirmacao?",
       "opcoes": [
-        "Ela está errada, porque o tema não basta; no trecho predomina a função poética.",
-        "Ela está correta, porque toda mensagem com substantivos e referencial.",
-        "Ela está correta, porque qualquer frase curta elimina outras funções.",
-        "Ela está errada apenas se houver ponto de exclamação."
+        "Ela esta errada, porque o tema nao basta; no trecho predomina a funcao poetica.",
+        "Ela esta correta, porque toda mensagem com substantivos e referencial.",
+        "Ela esta correta, porque qualquer frase curta elimina outras funcoes.",
+        "Ela esta errada apenas se houver ponto de exclamacao."
       ],
-      "correta": "Ela está errada, porque o tema não basta; no trecho predomina a função poética.",
-      "comentario": "O erro comum está em confundir assunto tratado com foco comunicativo predominante.",
+      "correta": "Ela esta errada, porque o tema nao basta; no trecho predomina a funcao poetica.",
+      "comentario": "O erro comum esta em confundir assunto tratado com foco comunicativo predominante.",
       "tempoEstimado": 50,
       "tags": [
         "poetica",
@@ -6199,22 +6200,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Equivalência de formas",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa preserva melhor a mesma função predominante de \"A campanha comeca na segunda-feira e termina na sexta.\"?",
+      "enunciado": "Qual alternativa preserva melhor a mesma funcao predominante de \"A campanha comeca na segunda-feira e termina na sexta.\"?",
       "opcoes": [
         "A biblioteca fecha as 18 horas durante a semana.",
         "Estou muito feliz com o resultado da turma.",
-        "Não perca a promoção deste fim de semana.",
+        "Nao perca a promocao deste fim de semana.",
         "Certo, podemos continuar?"
       ],
       "correta": "A biblioteca fecha as 18 horas durante a semana.",
-      "comentario": "A resposta correta conserva o mesmo foco da comunicação, ainda que a frase mude.",
+      "comentario": "A resposta correta conserva o mesmo foco da comunicacao, ainda que a frase mude.",
       "tempoEstimado": 55,
       "tags": [
         "referencial",
@@ -6237,9 +6238,9 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Interpretação indireta",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
@@ -6252,7 +6253,7 @@ export const funcoesDaLinguagem = {
         "o apagamento do sentido da frase"
       ],
       "correta": "emissor",
-      "comentario": "O reconhecimento da função depende de identificar em que elemento da comunicação recai a atencao principal.",
+      "comentario": "O reconhecimento da funcao depende de identificar em que elemento da comunicacao recai a atencao principal.",
       "tempoEstimado": 55,
       "tags": [
         "emotiva",
@@ -6275,22 +6276,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"Use cinto de segurança durante todo o trajeto.\", evitando um erro comum de classificação?",
+      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"Use cinto de seguranca durante todo o trajeto.\", evitando um erro comum de classificacao?",
       "opcoes": [
-        "Reconhecer o predominio da função conativa.",
-        "Classificar automaticamente o trecho como poética por causa do tema.",
-        "Dizer que não há função dominante porque a frase e curta.",
+        "Reconhecer o predominio da funcao conativa.",
+        "Classificar automaticamente o trecho como poetica por causa do tema.",
+        "Dizer que nao ha funcao dominante porque a frase e curta.",
         "Afirmar que toda mensagem escolar e sempre referencial."
       ],
-      "correta": "Reconhecer o predominio da função conativa.",
-      "comentario": "O ponto central e observar a intenção dominante da mensagem no contexto.",
+      "correta": "Reconhecer o predominio da funcao conativa.",
+      "comentario": "O ponto central e observar a intencao dominante da mensagem no contexto.",
       "tempoEstimado": 50,
       "tags": [
         "conativa",
@@ -6313,22 +6314,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Interpretação indireta",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um ligacao telefonica, aparece a formulacao \"Alô, você está me ouvindo?\". Qual leitura melhor justifica a função dominante desse trecho?",
+      "enunciado": "Em uma ligacao telefonica, aparece a formulacao \"Alo, voce esta me ouvindo?\". Qual leitura melhor justifica a funcao dominante desse trecho?",
       "opcoes": [
         "o enunciado se organiza para testar ou sustentar o contato entre interlocutores",
-        "o enunciado busca apenas decorar a página sem comunicar nada",
-        "o enunciado nega qualquer intenção de linguagem",
+        "o enunciado busca apenas decorar a pagina sem comunicar nada",
+        "o enunciado nega qualquer intencao de linguagem",
         "o enunciado elimina o contexto em que foi produzido"
       ],
       "correta": "o enunciado se organiza para testar ou sustentar o contato entre interlocutores",
-      "comentario": "A função da linguagem se identifica pela finalidade dominante da mensagem no contexto.",
+      "comentario": "A funcao da linguagem se identifica pela finalidade dominante da mensagem no contexto.",
       "tempoEstimado": 50,
       "tags": [
         "fatica",
@@ -6351,22 +6352,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia a análise: \"Como o trecho A palavra poema designa um texto organizado de forma artística. trata de um tema concreto, a função só pode ser referencial\". Qual alternativa avalia melhor essa afirmação?",
+      "enunciado": "Leia a analise: \"Como o trecho A palavra poema designa um texto organizado de forma artistica. trata de um tema concreto, a funcao so pode ser referencial\". Qual alternativa avalia melhor essa afirmacao?",
       "opcoes": [
-        "Ela está errada, porque o tema não basta; no trecho predomina a função metalinguística.",
-        "Ela está correta, porque toda mensagem com substantivos e referencial.",
-        "Ela está correta, porque qualquer frase curta elimina outras funções.",
-        "Ela está errada apenas se houver ponto de exclamação."
+        "Ela esta errada, porque o tema nao basta; no trecho predomina a funcao metalinguistica.",
+        "Ela esta correta, porque toda mensagem com substantivos e referencial.",
+        "Ela esta correta, porque qualquer frase curta elimina outras funcoes.",
+        "Ela esta errada apenas se houver ponto de exclamacao."
       ],
-      "correta": "Ela está errada, porque o tema não basta; no trecho predomina a função metalinguística.",
-      "comentario": "O erro comum está em confundir assunto tratado com foco comunicativo predominante.",
+      "correta": "Ela esta errada, porque o tema nao basta; no trecho predomina a funcao metalinguistica.",
+      "comentario": "O erro comum esta em confundir assunto tratado com foco comunicativo predominante.",
       "tempoEstimado": 50,
       "tags": [
         "metalinguistica",
@@ -6389,22 +6390,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Equivalência de formas",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa preserva melhor a mesma função predominante de \"O verso brinca com o som das letras.\"?",
+      "enunciado": "Qual alternativa preserva melhor a mesma funcao predominante de \"O verso brinca com o som das letras.\"?",
       "opcoes": [
         "A frase foi montada para soar bonita e marcante.",
-        "A água entra em ebulição a 100 graus ao nível do mar.",
+        "A agua entra em ebulicao a 100 graus ao nivel do mar.",
         "Acho esse filme profundamente comovente.",
-        "Você precisa revisar o texto com calma."
+        "Voce precisa revisar o texto com calma."
       ],
       "correta": "A frase foi montada para soar bonita e marcante.",
-      "comentario": "A resposta correta conserva o mesmo foco da comunicação, ainda que a frase mude.",
+      "comentario": "A resposta correta conserva o mesmo foco da comunicacao, ainda que a frase mude.",
       "tempoEstimado": 55,
       "tags": [
         "poetica",
@@ -6427,9 +6428,9 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Interpretação indireta",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
@@ -6442,7 +6443,7 @@ export const funcoesDaLinguagem = {
         "o apagamento do sentido da frase"
       ],
       "correta": "contexto",
-      "comentario": "O reconhecimento da função depende de identificar em que elemento da comunicação recai a atencao principal.",
+      "comentario": "O reconhecimento da funcao depende de identificar em que elemento da comunicacao recai a atencao principal.",
       "tempoEstimado": 55,
       "tags": [
         "referencial",
@@ -6465,22 +6466,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"Fiquei decepcionado com a atitude do personagem.\", evitando um erro comum de classificação?",
+      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"Fiquei decepcionado com a atitude do personagem.\", evitando um erro comum de classificacao?",
       "opcoes": [
-        "Reconhecer o predominio da função emotiva.",
-        "Classificar automaticamente o trecho como fática por causa do tema.",
-        "Dizer que não há função dominante porque a frase e curta.",
+        "Reconhecer o predominio da funcao emotiva.",
+        "Classificar automaticamente o trecho como fatica por causa do tema.",
+        "Dizer que nao ha funcao dominante porque a frase e curta.",
         "Afirmar que toda mensagem escolar e sempre referencial."
       ],
-      "correta": "Reconhecer o predominio da função emotiva.",
-      "comentario": "O ponto central e observar a intenção dominante da mensagem no contexto.",
+      "correta": "Reconhecer o predominio da funcao emotiva.",
+      "comentario": "O ponto central e observar a intencao dominante da mensagem no contexto.",
       "tempoEstimado": 50,
       "tags": [
         "emotiva",
@@ -6503,22 +6504,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Interpretação indireta",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um propaganda, aparece a formulacao \"Leia o regulamento antes de participar.\". Qual leitura melhor justifica a função dominante desse trecho?",
+      "enunciado": "Em um propaganda, aparece a formulacao \"Leia o regulamento antes de participar.\". Qual leitura melhor justifica a funcao dominante desse trecho?",
       "opcoes": [
         "o enunciado se organiza para influenciar o comportamento do interlocutor",
-        "o enunciado busca apenas decorar a página sem comunicar nada",
-        "o enunciado nega qualquer intenção de linguagem",
+        "o enunciado busca apenas decorar a pagina sem comunicar nada",
+        "o enunciado nega qualquer intencao de linguagem",
         "o enunciado elimina o contexto em que foi produzido"
       ],
       "correta": "o enunciado se organiza para influenciar o comportamento do interlocutor",
-      "comentario": "A função da linguagem se identifica pela finalidade dominante da mensagem no contexto.",
+      "comentario": "A funcao da linguagem se identifica pela finalidade dominante da mensagem no contexto.",
       "tempoEstimado": 50,
       "tags": [
         "conativa",
@@ -6541,22 +6542,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia a análise: \"Como o trecho Oi, tudo bem por ai? trata de um tema concreto, a função só pode ser referencial\". Qual alternativa avalia melhor essa afirmação?",
+      "enunciado": "Leia a analise: \"Como o trecho Oi, tudo bem por ai? trata de um tema concreto, a funcao so pode ser referencial\". Qual alternativa avalia melhor essa afirmacao?",
       "opcoes": [
-        "Ela está errada, porque o tema não basta; no trecho predomina a função fática.",
-        "Ela está correta, porque toda mensagem com substantivos e referencial.",
-        "Ela está correta, porque qualquer frase curta elimina outras funções.",
-        "Ela está errada apenas se houver ponto de exclamação."
+        "Ela esta errada, porque o tema nao basta; no trecho predomina a funcao fatica.",
+        "Ela esta correta, porque toda mensagem com substantivos e referencial.",
+        "Ela esta correta, porque qualquer frase curta elimina outras funcoes.",
+        "Ela esta errada apenas se houver ponto de exclamacao."
       ],
-      "correta": "Ela está errada, porque o tema não basta; no trecho predomina a função fática.",
-      "comentario": "O erro comum está em confundir assunto tratado com foco comunicativo predominante.",
+      "correta": "Ela esta errada, porque o tema nao basta; no trecho predomina a funcao fatica.",
+      "comentario": "O erro comum esta em confundir assunto tratado com foco comunicativo predominante.",
       "tempoEstimado": 50,
       "tags": [
         "fatica",
@@ -6579,22 +6580,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Equivalência de formas",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa preserva melhor a mesma função predominante de \"Nesta tirinha, o autor explica o sentido da expressão usada.\"?",
+      "enunciado": "Qual alternativa preserva melhor a mesma funcao predominante de \"Nesta tirinha, o autor explica o sentido da expressao usada.\"?",
       "opcoes": [
-        "O dicionário define ambiguidade como duplicidade de sentido.",
-        "Alô, você está me ouvindo?",
+        "O dicionario define ambiguidade como duplicidade de sentido.",
+        "Alo, voce esta me ouvindo?",
         "A palavra cai leve, lisa, luminosa.",
         "A campanha comeca na segunda-feira e termina na sexta."
       ],
-      "correta": "O dicionário define ambiguidade como duplicidade de sentido.",
-      "comentario": "A resposta correta conserva o mesmo foco da comunicação, ainda que a frase mude.",
+      "correta": "O dicionario define ambiguidade como duplicidade de sentido.",
+      "comentario": "A resposta correta conserva o mesmo foco da comunicacao, ainda que a frase mude.",
       "tempoEstimado": 55,
       "tags": [
         "metalinguistica",
@@ -6617,9 +6618,9 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Interpretação indireta",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
@@ -6632,7 +6633,7 @@ export const funcoesDaLinguagem = {
         "o apagamento do sentido da frase"
       ],
       "correta": "mensagem",
-      "comentario": "O reconhecimento da função depende de identificar em que elemento da comunicação recai a atencao principal.",
+      "comentario": "O reconhecimento da funcao depende de identificar em que elemento da comunicacao recai a atencao principal.",
       "tempoEstimado": 55,
       "tags": [
         "poetica",
@@ -6655,22 +6656,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"O texto apresenta o conceito e os exemplos do tema estudado.\", evitando um erro comum de classificação?",
+      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"O texto apresenta o conceito e os exemplos do tema estudado.\", evitando um erro comum de classificacao?",
       "opcoes": [
-        "Reconhecer o predominio da função referencial.",
+        "Reconhecer o predominio da funcao referencial.",
         "Classificar automaticamente o trecho como emotiva por causa do tema.",
-        "Dizer que não há função dominante porque a frase e curta.",
+        "Dizer que nao ha funcao dominante porque a frase e curta.",
         "Afirmar que toda mensagem escolar e sempre referencial."
       ],
-      "correta": "Reconhecer o predominio da função referencial.",
-      "comentario": "O ponto central e observar a intenção dominante da mensagem no contexto.",
+      "correta": "Reconhecer o predominio da funcao referencial.",
+      "comentario": "O ponto central e observar a intencao dominante da mensagem no contexto.",
       "tempoEstimado": 50,
       "tags": [
         "referencial",
@@ -6693,22 +6694,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Interpretação indireta",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um diario pessoal, aparece a formulacao \"Estou muito feliz com o resultado da turma.\". Qual leitura melhor justifica a função dominante desse trecho?",
+      "enunciado": "Em um diario pessoal, aparece a formulacao \"Estou muito feliz com o resultado da turma.\". Qual leitura melhor justifica a funcao dominante desse trecho?",
       "opcoes": [
         "o enunciado se organiza para expressar sentimentos e pontos de vista pessoais",
-        "o enunciado busca apenas decorar a página sem comunicar nada",
-        "o enunciado nega qualquer intenção de linguagem",
+        "o enunciado busca apenas decorar a pagina sem comunicar nada",
+        "o enunciado nega qualquer intencao de linguagem",
         "o enunciado elimina o contexto em que foi produzido"
       ],
       "correta": "o enunciado se organiza para expressar sentimentos e pontos de vista pessoais",
-      "comentario": "A função da linguagem se identifica pela finalidade dominante da mensagem no contexto.",
+      "comentario": "A funcao da linguagem se identifica pela finalidade dominante da mensagem no contexto.",
       "tempoEstimado": 50,
       "tags": [
         "emotiva",
@@ -6731,22 +6732,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia a análise: \"Como o trecho Não perca a promoção deste fim de semana. trata de um tema concreto, a função só pode ser referencial\". Qual alternativa avalia melhor essa afirmação?",
+      "enunciado": "Leia a analise: \"Como o trecho Nao perca a promocao deste fim de semana. trata de um tema concreto, a funcao so pode ser referencial\". Qual alternativa avalia melhor essa afirmacao?",
       "opcoes": [
-        "Ela está errada, porque o tema não basta; no trecho predomina a função conativa.",
-        "Ela está correta, porque toda mensagem com substantivos e referencial.",
-        "Ela está correta, porque qualquer frase curta elimina outras funções.",
-        "Ela está errada apenas se houver ponto de exclamação."
+        "Ela esta errada, porque o tema nao basta; no trecho predomina a funcao conativa.",
+        "Ela esta correta, porque toda mensagem com substantivos e referencial.",
+        "Ela esta correta, porque qualquer frase curta elimina outras funcoes.",
+        "Ela esta errada apenas se houver ponto de exclamacao."
       ],
-      "correta": "Ela está errada, porque o tema não basta; no trecho predomina a função conativa.",
-      "comentario": "O erro comum está em confundir assunto tratado com foco comunicativo predominante.",
+      "correta": "Ela esta errada, porque o tema nao basta; no trecho predomina a funcao conativa.",
+      "comentario": "O erro comum esta em confundir assunto tratado com foco comunicativo predominante.",
       "tempoEstimado": 50,
       "tags": [
         "conativa",
@@ -6769,22 +6770,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Equivalência de formas",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa preserva melhor a mesma função predominante de \"Certo, podemos continuar?\"?",
+      "enunciado": "Qual alternativa preserva melhor a mesma funcao predominante de \"Certo, podemos continuar?\"?",
       "opcoes": [
         "Entendeu o que eu disse?",
         "Estou muito feliz com o resultado da turma.",
-        "Não perca a promoção deste fim de semana.",
-        "Nesta tirinha, o autor explica o sentido da expressão usada."
+        "Nao perca a promocao deste fim de semana.",
+        "Nesta tirinha, o autor explica o sentido da expressao usada."
       ],
       "correta": "Entendeu o que eu disse?",
-      "comentario": "A resposta correta conserva o mesmo foco da comunicação, ainda que a frase mude.",
+      "comentario": "A resposta correta conserva o mesmo foco da comunicacao, ainda que a frase mude.",
       "tempoEstimado": 55,
       "tags": [
         "fatica",
@@ -6807,14 +6808,14 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Interpretação indireta",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia o microtexto: \"Durante a atividade, alguem escreveu: O dicionário define ambiguidade como duplicidade de sentido.\". Nesse uso, a linguagem se orienta sobretudo para:",
+      "enunciado": "Leia o microtexto: \"Durante a atividade, alguem escreveu: O dicionario define ambiguidade como duplicidade de sentido.\". Nesse uso, a linguagem se orienta sobretudo para:",
       "opcoes": [
         "codigo",
         "apenas o suporte material do papel",
@@ -6822,7 +6823,7 @@ export const funcoesDaLinguagem = {
         "o apagamento do sentido da frase"
       ],
       "correta": "codigo",
-      "comentario": "O reconhecimento da função depende de identificar em que elemento da comunicação recai a atencao principal.",
+      "comentario": "O reconhecimento da funcao depende de identificar em que elemento da comunicacao recai a atencao principal.",
       "tempoEstimado": 55,
       "tags": [
         "metalinguistica",
@@ -6845,22 +6846,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"Entre sombras e sopros, a cidade suspira.\", evitando um erro comum de classificação?",
+      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"Entre sombras e sopros, a cidade suspira.\", evitando um erro comum de classificacao?",
       "opcoes": [
-        "Reconhecer o predominio da função poética.",
+        "Reconhecer o predominio da funcao poetica.",
         "Classificar automaticamente o trecho como referencial por causa do tema.",
-        "Dizer que não há função dominante porque a frase e curta.",
+        "Dizer que nao ha funcao dominante porque a frase e curta.",
         "Afirmar que toda mensagem escolar e sempre referencial."
       ],
-      "correta": "Reconhecer o predominio da função poética.",
-      "comentario": "O ponto central e observar a intenção dominante da mensagem no contexto.",
+      "correta": "Reconhecer o predominio da funcao poetica.",
+      "comentario": "O ponto central e observar a intencao dominante da mensagem no contexto.",
       "tempoEstimado": 50,
       "tags": [
         "poetica",
@@ -6883,22 +6884,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Interpretação indireta",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um verbete enciclopedico, aparece a formulacao \"A água entra em ebulição a 100 graus ao nível do mar.\". Qual leitura melhor justifica a função dominante desse trecho?",
+      "enunciado": "Em um verbete enciclopedico, aparece a formulacao \"A agua entra em ebulicao a 100 graus ao nivel do mar.\". Qual leitura melhor justifica a funcao dominante desse trecho?",
       "opcoes": [
         "o enunciado se organiza para informar de modo objetivo e direto",
-        "o enunciado busca apenas decorar a página sem comunicar nada",
-        "o enunciado nega qualquer intenção de linguagem",
+        "o enunciado busca apenas decorar a pagina sem comunicar nada",
+        "o enunciado nega qualquer intencao de linguagem",
         "o enunciado elimina o contexto em que foi produzido"
       ],
       "correta": "o enunciado se organiza para informar de modo objetivo e direto",
-      "comentario": "A função da linguagem se identifica pela finalidade dominante da mensagem no contexto.",
+      "comentario": "A funcao da linguagem se identifica pela finalidade dominante da mensagem no contexto.",
       "tempoEstimado": 50,
       "tags": [
         "referencial",
@@ -6921,22 +6922,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia a análise: \"Como o trecho Acho esse filme profundamente comovente. trata de um tema concreto, a função só pode ser referencial\". Qual alternativa avalia melhor essa afirmação?",
+      "enunciado": "Leia a analise: \"Como o trecho Acho esse filme profundamente comovente. trata de um tema concreto, a funcao so pode ser referencial\". Qual alternativa avalia melhor essa afirmacao?",
       "opcoes": [
-        "Ela está errada, porque o tema não basta; no trecho predomina a função emotiva.",
-        "Ela está correta, porque toda mensagem com substantivos e referencial.",
-        "Ela está correta, porque qualquer frase curta elimina outras funções.",
-        "Ela está errada apenas se houver ponto de exclamação."
+        "Ela esta errada, porque o tema nao basta; no trecho predomina a funcao emotiva.",
+        "Ela esta correta, porque toda mensagem com substantivos e referencial.",
+        "Ela esta correta, porque qualquer frase curta elimina outras funcoes.",
+        "Ela esta errada apenas se houver ponto de exclamacao."
       ],
-      "correta": "Ela está errada, porque o tema não basta; no trecho predomina a função emotiva.",
-      "comentario": "O erro comum está em confundir assunto tratado com foco comunicativo predominante.",
+      "correta": "Ela esta errada, porque o tema nao basta; no trecho predomina a funcao emotiva.",
+      "comentario": "O erro comum esta em confundir assunto tratado com foco comunicativo predominante.",
       "tempoEstimado": 50,
       "tags": [
         "emotiva",
@@ -6959,22 +6960,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Equivalência de formas",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa preserva melhor a mesma função predominante de \"Você precisa revisar o texto com calma.\"?",
+      "enunciado": "Qual alternativa preserva melhor a mesma funcao predominante de \"Voce precisa revisar o texto com calma.\"?",
       "opcoes": [
         "Venha conhecer a feira cultural da escola.",
-        "No silêncio da noite, a lua lava a rua.",
-        "O Brasil possui cinco regiões geograficas.",
+        "No silencio da noite, a lua lava a rua.",
+        "O Brasil possui cinco regioes geograficas.",
         "Senti um alivio enorme ao terminar a prova."
       ],
       "correta": "Venha conhecer a feira cultural da escola.",
-      "comentario": "A resposta correta conserva o mesmo foco da comunicação, ainda que a frase mude.",
+      "comentario": "A resposta correta conserva o mesmo foco da comunicacao, ainda que a frase mude.",
       "tempoEstimado": 55,
       "tags": [
         "conativa",
@@ -6997,9 +6998,9 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Interpretação indireta",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
@@ -7012,7 +7013,7 @@ export const funcoesDaLinguagem = {
         "o apagamento do sentido da frase"
       ],
       "correta": "canal",
-      "comentario": "O reconhecimento da função depende de identificar em que elemento da comunicação recai a atencao principal.",
+      "comentario": "O reconhecimento da funcao depende de identificar em que elemento da comunicacao recai a atencao principal.",
       "tempoEstimado": 55,
       "tags": [
         "fatica",
@@ -7035,22 +7036,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"A aula apresenta o que significa o termo narrador.\", evitando um erro comum de classificação?",
+      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"A aula apresenta o que significa o termo narrador.\", evitando um erro comum de classificacao?",
       "opcoes": [
-        "Reconhecer o predominio da função metalinguística.",
-        "Classificar automaticamente o trecho como fática por causa do tema.",
-        "Dizer que não há função dominante porque a frase e curta.",
+        "Reconhecer o predominio da funcao metalinguistica.",
+        "Classificar automaticamente o trecho como fatica por causa do tema.",
+        "Dizer que nao ha funcao dominante porque a frase e curta.",
         "Afirmar que toda mensagem escolar e sempre referencial."
       ],
-      "correta": "Reconhecer o predominio da função metalinguística.",
-      "comentario": "O ponto central e observar a intenção dominante da mensagem no contexto.",
+      "correta": "Reconhecer o predominio da funcao metalinguistica.",
+      "comentario": "O ponto central e observar a intencao dominante da mensagem no contexto.",
       "tempoEstimado": 50,
       "tags": [
         "metalinguistica",
@@ -7073,22 +7074,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Interpretação indireta",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um poema, aparece a formulacao \"No silêncio da noite, a lua lava a rua.\". Qual leitura melhor justifica a função dominante desse trecho?",
+      "enunciado": "Em um poema, aparece a formulacao \"No silencio da noite, a lua lava a rua.\". Qual leitura melhor justifica a funcao dominante desse trecho?",
       "opcoes": [
-        "o enunciado se organiza para destacar a elaboracao estética da mensagem",
-        "o enunciado busca apenas decorar a página sem comunicar nada",
-        "o enunciado nega qualquer intenção de linguagem",
+        "o enunciado se organiza para destacar a elaboracao estatica da mensagem",
+        "o enunciado busca apenas decorar a pagina sem comunicar nada",
+        "o enunciado nega qualquer intencao de linguagem",
         "o enunciado elimina o contexto em que foi produzido"
       ],
-      "correta": "o enunciado se organiza para destacar a elaboracao estética da mensagem",
-      "comentario": "A função da linguagem se identifica pela finalidade dominante da mensagem no contexto.",
+      "correta": "o enunciado se organiza para destacar a elaboracao estatica da mensagem",
+      "comentario": "A funcao da linguagem se identifica pela finalidade dominante da mensagem no contexto.",
       "tempoEstimado": 50,
       "tags": [
         "poetica",
@@ -7111,22 +7112,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia a análise: \"Como o trecho O Brasil possui cinco regiões geograficas. trata de um tema concreto, a função só pode ser referencial\". Qual alternativa avalia melhor essa afirmação?",
+      "enunciado": "Leia a analise: \"Como o trecho O Brasil possui cinco regioes geograficas. trata de um tema concreto, a funcao so pode ser referencial\". Qual alternativa avalia melhor essa afirmacao?",
       "opcoes": [
-        "Ela está errada, porque o tema não basta; no trecho predomina a função referencial.",
-        "Ela está correta, porque toda mensagem com substantivos e referencial.",
-        "Ela está correta, porque qualquer frase curta elimina outras funções.",
-        "Ela está errada apenas se houver ponto de exclamação."
+        "Ela esta errada, porque o tema nao basta; no trecho predomina a funcao referencial.",
+        "Ela esta correta, porque toda mensagem com substantivos e referencial.",
+        "Ela esta correta, porque qualquer frase curta elimina outras funcoes.",
+        "Ela esta errada apenas se houver ponto de exclamacao."
       ],
-      "correta": "Ela está errada, porque o tema não basta; no trecho predomina a função referencial.",
-      "comentario": "O erro comum está em confundir assunto tratado com foco comunicativo predominante.",
+      "correta": "Ela esta errada, porque o tema nao basta; no trecho predomina a funcao referencial.",
+      "comentario": "O erro comum esta em confundir assunto tratado com foco comunicativo predominante.",
       "tempoEstimado": 50,
       "tags": [
         "referencial",
@@ -7149,22 +7150,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Equivalência de formas",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa preserva melhor a mesma função predominante de \"Senti um alivio enorme ao terminar a prova.\"?",
+      "enunciado": "Qual alternativa preserva melhor a mesma funcao predominante de \"Senti um alivio enorme ao terminar a prova.\"?",
       "opcoes": [
         "Para mim, esse livro e inesquecivel.",
-        "Alô, você está me ouvindo?",
-        "A palavra poema designa um texto organizado de forma artística.",
+        "Alo, voce esta me ouvindo?",
+        "A palavra poema designa um texto organizado de forma artistica.",
         "O verso brinca com o som das letras."
       ],
       "correta": "Para mim, esse livro e inesquecivel.",
-      "comentario": "A resposta correta conserva o mesmo foco da comunicação, ainda que a frase mude.",
+      "comentario": "A resposta correta conserva o mesmo foco da comunicacao, ainda que a frase mude.",
       "tempoEstimado": 55,
       "tags": [
         "emotiva",
@@ -7187,9 +7188,9 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Interpretação indireta",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
@@ -7202,7 +7203,7 @@ export const funcoesDaLinguagem = {
         "o apagamento do sentido da frase"
       ],
       "correta": "receptor",
-      "comentario": "O reconhecimento da função depende de identificar em que elemento da comunicação recai a atencao principal.",
+      "comentario": "O reconhecimento da funcao depende de identificar em que elemento da comunicacao recai a atencao principal.",
       "tempoEstimado": 55,
       "tags": [
         "conativa",
@@ -7225,22 +7226,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"Boa noite, som testando, um dois tres.\", evitando um erro comum de classificação?",
+      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"Boa noite, som testando, um dois tres.\", evitando um erro comum de classificacao?",
       "opcoes": [
-        "Reconhecer o predominio da função fática.",
+        "Reconhecer o predominio da funcao fatica.",
         "Classificar automaticamente o trecho como emotiva por causa do tema.",
-        "Dizer que não há função dominante porque a frase e curta.",
+        "Dizer que nao ha funcao dominante porque a frase e curta.",
         "Afirmar que toda mensagem escolar e sempre referencial."
       ],
-      "correta": "Reconhecer o predominio da função fática.",
-      "comentario": "O ponto central e observar a intenção dominante da mensagem no contexto.",
+      "correta": "Reconhecer o predominio da funcao fatica.",
+      "comentario": "O ponto central e observar a intencao dominante da mensagem no contexto.",
       "tempoEstimado": 50,
       "tags": [
         "fatica",
@@ -7263,22 +7264,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Interpretação indireta",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um gramática escolar, aparece a formulacao \"Substantivo e a palavra que nomeia seres, lugares ou ideias.\". Qual leitura melhor justifica a função dominante desse trecho?",
+      "enunciado": "Em um grametica escolar, aparece a formulacao \"Substantivo e a palavra que nomeia seres, lugares ou ideias.\". Qual leitura melhor justifica a funcao dominante desse trecho?",
       "opcoes": [
-        "o enunciado se organiza para explicar o funcionamento do codigo ou da própria linguagem",
-        "o enunciado busca apenas decorar a página sem comunicar nada",
-        "o enunciado nega qualquer intenção de linguagem",
+        "o enunciado se organiza para explicar o funcionamento do codigo ou da propria linguagem",
+        "o enunciado busca apenas decorar a pagina sem comunicar nada",
+        "o enunciado nega qualquer intencao de linguagem",
         "o enunciado elimina o contexto em que foi produzido"
       ],
-      "correta": "o enunciado se organiza para explicar o funcionamento do codigo ou da própria linguagem",
-      "comentario": "A função da linguagem se identifica pela finalidade dominante da mensagem no contexto.",
+      "correta": "o enunciado se organiza para explicar o funcionamento do codigo ou da propria linguagem",
+      "comentario": "A funcao da linguagem se identifica pela finalidade dominante da mensagem no contexto.",
       "tempoEstimado": 50,
       "tags": [
         "metalinguistica",
@@ -7301,22 +7302,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia a análise: \"Como o trecho A palavra cai leve, lisa, luminosa. trata de um tema concreto, a função só pode ser referencial\". Qual alternativa avalia melhor essa afirmação?",
+      "enunciado": "Leia a analise: \"Como o trecho A palavra cai leve, lisa, luminosa. trata de um tema concreto, a funcao so pode ser referencial\". Qual alternativa avalia melhor essa afirmacao?",
       "opcoes": [
-        "Ela está errada, porque o tema não basta; no trecho predomina a função poética.",
-        "Ela está correta, porque toda mensagem com substantivos e referencial.",
-        "Ela está correta, porque qualquer frase curta elimina outras funções.",
-        "Ela está errada apenas se houver ponto de exclamação."
+        "Ela esta errada, porque o tema nao basta; no trecho predomina a funcao poetica.",
+        "Ela esta correta, porque toda mensagem com substantivos e referencial.",
+        "Ela esta correta, porque qualquer frase curta elimina outras funcoes.",
+        "Ela esta errada apenas se houver ponto de exclamacao."
       ],
-      "correta": "Ela está errada, porque o tema não basta; no trecho predomina a função poética.",
-      "comentario": "O erro comum está em confundir assunto tratado com foco comunicativo predominante.",
+      "correta": "Ela esta errada, porque o tema nao basta; no trecho predomina a funcao poetica.",
+      "comentario": "O erro comum esta em confundir assunto tratado com foco comunicativo predominante.",
       "tempoEstimado": 50,
       "tags": [
         "poetica",
@@ -7339,22 +7340,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Equivalência de formas",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa preserva melhor a mesma função predominante de \"A campanha comeca na segunda-feira e termina na sexta.\"?",
+      "enunciado": "Qual alternativa preserva melhor a mesma funcao predominante de \"A campanha comeca na segunda-feira e termina na sexta.\"?",
       "opcoes": [
         "A biblioteca fecha as 18 horas durante a semana.",
         "Estou muito feliz com o resultado da turma.",
-        "Não perca a promoção deste fim de semana.",
+        "Nao perca a promocao deste fim de semana.",
         "Certo, podemos continuar?"
       ],
       "correta": "A biblioteca fecha as 18 horas durante a semana.",
-      "comentario": "A resposta correta conserva o mesmo foco da comunicação, ainda que a frase mude.",
+      "comentario": "A resposta correta conserva o mesmo foco da comunicacao, ainda que a frase mude.",
       "tempoEstimado": 55,
       "tags": [
         "referencial",
@@ -7377,9 +7378,9 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Interpretação indireta",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
@@ -7392,7 +7393,7 @@ export const funcoesDaLinguagem = {
         "o apagamento do sentido da frase"
       ],
       "correta": "emissor",
-      "comentario": "O reconhecimento da função depende de identificar em que elemento da comunicação recai a atencao principal.",
+      "comentario": "O reconhecimento da funcao depende de identificar em que elemento da comunicacao recai a atencao principal.",
       "tempoEstimado": 55,
       "tags": [
         "emotiva",
@@ -7415,22 +7416,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"Use cinto de segurança durante todo o trajeto.\", evitando um erro comum de classificação?",
+      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"Use cinto de seguranca durante todo o trajeto.\", evitando um erro comum de classificacao?",
       "opcoes": [
-        "Reconhecer o predominio da função conativa.",
-        "Classificar automaticamente o trecho como poética por causa do tema.",
-        "Dizer que não há função dominante porque a frase e curta.",
+        "Reconhecer o predominio da funcao conativa.",
+        "Classificar automaticamente o trecho como poetica por causa do tema.",
+        "Dizer que nao ha funcao dominante porque a frase e curta.",
         "Afirmar que toda mensagem escolar e sempre referencial."
       ],
-      "correta": "Reconhecer o predominio da função conativa.",
-      "comentario": "O ponto central e observar a intenção dominante da mensagem no contexto.",
+      "correta": "Reconhecer o predominio da funcao conativa.",
+      "comentario": "O ponto central e observar a intencao dominante da mensagem no contexto.",
       "tempoEstimado": 50,
       "tags": [
         "conativa",
@@ -7453,22 +7454,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Interpretação indireta",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um ligacao telefonica, aparece a formulacao \"Alô, você está me ouvindo?\". Qual leitura melhor justifica a função dominante desse trecho?",
+      "enunciado": "Em uma ligacao telefonica, aparece a formulacao \"Alo, voce esta me ouvindo?\". Qual leitura melhor justifica a funcao dominante desse trecho?",
       "opcoes": [
         "o enunciado se organiza para testar ou sustentar o contato entre interlocutores",
-        "o enunciado busca apenas decorar a página sem comunicar nada",
-        "o enunciado nega qualquer intenção de linguagem",
+        "o enunciado busca apenas decorar a pagina sem comunicar nada",
+        "o enunciado nega qualquer intencao de linguagem",
         "o enunciado elimina o contexto em que foi produzido"
       ],
       "correta": "o enunciado se organiza para testar ou sustentar o contato entre interlocutores",
-      "comentario": "A função da linguagem se identifica pela finalidade dominante da mensagem no contexto.",
+      "comentario": "A funcao da linguagem se identifica pela finalidade dominante da mensagem no contexto.",
       "tempoEstimado": 50,
       "tags": [
         "fatica",
@@ -7491,22 +7492,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia a análise: \"Como o trecho A palavra poema designa um texto organizado de forma artística. trata de um tema concreto, a função só pode ser referencial\". Qual alternativa avalia melhor essa afirmação?",
+      "enunciado": "Leia a analise: \"Como o trecho A palavra poema designa um texto organizado de forma artistica. trata de um tema concreto, a funcao so pode ser referencial\". Qual alternativa avalia melhor essa afirmacao?",
       "opcoes": [
-        "Ela está errada, porque o tema não basta; no trecho predomina a função metalinguística.",
-        "Ela está correta, porque toda mensagem com substantivos e referencial.",
-        "Ela está correta, porque qualquer frase curta elimina outras funções.",
-        "Ela está errada apenas se houver ponto de exclamação."
+        "Ela esta errada, porque o tema nao basta; no trecho predomina a funcao metalinguistica.",
+        "Ela esta correta, porque toda mensagem com substantivos e referencial.",
+        "Ela esta correta, porque qualquer frase curta elimina outras funcoes.",
+        "Ela esta errada apenas se houver ponto de exclamacao."
       ],
-      "correta": "Ela está errada, porque o tema não basta; no trecho predomina a função metalinguística.",
-      "comentario": "O erro comum está em confundir assunto tratado com foco comunicativo predominante.",
+      "correta": "Ela esta errada, porque o tema nao basta; no trecho predomina a funcao metalinguistica.",
+      "comentario": "O erro comum esta em confundir assunto tratado com foco comunicativo predominante.",
       "tempoEstimado": 50,
       "tags": [
         "metalinguistica",
@@ -7529,22 +7530,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Equivalência de formas",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa preserva melhor a mesma função predominante de \"O verso brinca com o som das letras.\"?",
+      "enunciado": "Qual alternativa preserva melhor a mesma funcao predominante de \"O verso brinca com o som das letras.\"?",
       "opcoes": [
         "A frase foi montada para soar bonita e marcante.",
-        "A água entra em ebulição a 100 graus ao nível do mar.",
+        "A agua entra em ebulicao a 100 graus ao nivel do mar.",
         "Acho esse filme profundamente comovente.",
-        "Você precisa revisar o texto com calma."
+        "Voce precisa revisar o texto com calma."
       ],
       "correta": "A frase foi montada para soar bonita e marcante.",
-      "comentario": "A resposta correta conserva o mesmo foco da comunicação, ainda que a frase mude.",
+      "comentario": "A resposta correta conserva o mesmo foco da comunicacao, ainda que a frase mude.",
       "tempoEstimado": 55,
       "tags": [
         "poetica",
@@ -7567,9 +7568,9 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
-      "subtopico": "Interpretação indireta",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
+      "subtopico": "Interpretacao indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
@@ -7582,7 +7583,7 @@ export const funcoesDaLinguagem = {
         "o apagamento do sentido da frase"
       ],
       "correta": "contexto",
-      "comentario": "O reconhecimento da função depende de identificar em que elemento da comunicação recai a atencao principal.",
+      "comentario": "O reconhecimento da funcao depende de identificar em que elemento da comunicacao recai a atencao principal.",
       "tempoEstimado": 55,
       "tags": [
         "referencial",
@@ -7605,22 +7606,22 @@ export const funcoesDaLinguagem = {
       "serie": [
         1
       ],
-      "materia": "Português",
-      "topico": "Funções da Linguagem",
+      "materia": "Portugues",
+      "topico": "Funcoes da Linguagem",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"Fiquei decepcionado com a atitude do personagem.\", evitando um erro comum de classificação?",
+      "enunciado": "Qual alternativa apresenta uma leitura adequada do trecho \"Fiquei decepcionado com a atitude do personagem.\", evitando um erro comum de classificacao?",
       "opcoes": [
-        "Reconhecer o predominio da função emotiva.",
-        "Classificar automaticamente o trecho como fática por causa do tema.",
-        "Dizer que não há função dominante porque a frase e curta.",
+        "Reconhecer o predominio da funcao emotiva.",
+        "Classificar automaticamente o trecho como fatica por causa do tema.",
+        "Dizer que nao ha funcao dominante porque a frase e curta.",
         "Afirmar que toda mensagem escolar e sempre referencial."
       ],
-      "correta": "Reconhecer o predominio da função emotiva.",
-      "comentario": "O ponto central e observar a intenção dominante da mensagem no contexto.",
+      "correta": "Reconhecer o predominio da funcao emotiva.",
+      "comentario": "O ponto central e observar a intencao dominante da mensagem no contexto.",
       "tempoEstimado": 50,
       "tags": [
         "emotiva",

@@ -1,15 +1,16 @@
-export const vocabularioIntermediario = {
+﻿export const vocabularioIntermediario = {
   "id": "ingles_vocabulario_intermediario",
-  "materia": "Inglês",
+  "materia": "Ingles",
   "serie": [
     2
   ],
-  "topico": "Vocabulário Intermediário",
+  "topico": "Vocabulario Intermediario",
   "metadados": {
     "disciplinaId": "ingles",
     "base": "ESCOLAR",
-    "eixo": "Ampliação lexical e leitura contextualizada",
-    "frente": "Vocabulário temático para leitura de textos mais variados e atuais",
+    "seloEditorial": "VERIFICADA",
+    "eixo": "Ampliacao lexical e leitura contextualizada",
+    "frente": "Vocabulario tematico para leitura de textos mais variados e atuais",
     "searchAliases": [
       "vocabulario intermediario",
       "intermediate vocabulary",
@@ -31,15 +32,15 @@ export const vocabularioIntermediario = {
       "Context clues and word meaning"
     ],
     "habilidadesBase": [
-      "ampliar repertório lexical em temas sociais e escolares",
+      "ampliar repertorio lexical em temas sociais e escolares",
       "inferir significado de palavras por contexto",
-      "reconhecer collocations e expressões frequentes",
-      "interpretar vocabulário em textos informativos e opinativos",
-      "relacionar campo semântico e intenção comunicativa",
-      "usar vocabulário intermediário para leitura estratégica"
+      "reconhecer collocations e expressoes frequentes",
+      "interpretar vocabulario em textos informativos e opinativos",
+      "relacionar campo semantico e intencao comunicativa",
+      "usar vocabulario intermediario para leitura estrategica"
     ],
     "auditado": true,
-    "auditadoEm": "2026-04-11",
+    "auditadoEm": "2026-04-12",
     "auditoriaTipo": "varredura-mais-profunda"
   },
   "questoes": [
@@ -48,22 +49,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Travel and transportation",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Inglês, Travel and transportation refere-se a:",
+      "enunciado": "Em Ingles, Travel and transportation refere-se a:",
       "opcoes": [
-        "o vocabulário ligado a viagens, meios de transporte, deslocamento e planejamento de trajetos",
-        "o vocabulário relacionado a dispositivos, internet, redes sociais, aplicativos e comunicação digital",
-        "o vocabulário usado para falar de corpo, bem-estar, hábitos saudáveis, sintomas e cuidados",
+        "o vocabulario ligado a viagens, meios de transporte, deslocamento e planejamento de trajetos",
+        "o vocabulario relacionado a dispositivos, internet, redes sociais, aplicativos e comunicacao digital",
+        "o vocabulario usado para falar de corpo, bem-estar, habitos saudaveis, sintomas e cuidados",
         "o conjunto de palavras usado em temas ambientais, consumo consciente e sustentabilidade"
       ],
-      "correta": "o vocabulário ligado a viagens, meios de transporte, deslocamento e planejamento de trajetos",
-      "comentario": "Travel and transportation refere-se ao vocabulário ligado a viagens, meios de transporte, deslocamento e planejamento de trajetos.",
+      "correta": "o vocabulario ligado a viagens, meios de transporte, deslocamento e planejamento de trajetos",
+      "comentario": "Travel and transportation refere-se ao vocabulario ligado a viagens, meios de transporte, deslocamento e planejamento de trajetos.",
       "tempoEstimado": 20,
       "tags": [
         "vocabulario-intermediario",
@@ -87,14 +88,14 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Travel and transportation",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: um texto cita ticket, platform, airport, luggage e train station. Esse caso está mais ligado a qual subtópico?",
+      "enunciado": "Observe a situacao: um texto cita ticket, platform, airport, luggage e train station. Esse caso esta mais ligado a qual subtopico?",
       "opcoes": [
         "Travel and transportation",
         "Technology and media",
@@ -102,7 +103,7 @@ export const vocabularioIntermediario = {
         "Environment and sustainability"
       ],
       "correta": "Travel and transportation",
-      "comentario": "A situação apresentada é melhor compreendida por meio de travel and transportation.",
+      "comentario": "A situacao apresentada e melhor compreendida por meio de travel and transportation.",
       "tempoEstimado": 20,
       "tags": [
         "vocabulario-intermediario",
@@ -126,8 +127,8 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Travel and transportation",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
@@ -165,22 +166,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Travel and transportation",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO representa corretamente travel and transportation?",
+      "enunciado": "Qual alternativa NAO representa corretamente travel and transportation?",
       "opcoes": [
         "Users should review their privacy settings before sharing photos.",
         "She missed her train because she arrived late at the station.",
         "observar palavras ligadas a transporte, destino e deslocamento.",
-        "interpretar anúncios de viagem, roteiros e informações de transporte."
+        "interpretar anuncios de viagem, roteiros e informacoes de transporte."
       ],
       "correta": "Users should review their privacy settings before sharing photos.",
-      "comentario": "A opção incompatível ilustra outro subtópico, e não travel and transportation.",
+      "comentario": "A opcao incompativel ilustra outro subtopico, e nao travel and transportation.",
       "tempoEstimado": 25,
       "tags": [
         "vocabulario-intermediario",
@@ -204,22 +205,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Travel and transportation",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar travel and transportation, o foco principal é:",
+      "enunciado": "Ao estudar travel and transportation, o foco principal e:",
       "opcoes": [
-        "reconhecer palavras e expressões de mobilidade e viagem",
-        "identificar léxico de ambientes digitais e comunicação online",
-        "reconhecer palavras ligadas a saúde e rotina corporal",
-        "interpretar vocabulário ecológico e de responsabilidade ambiental"
+        "reconhecer palavras e expressoes de mobilidade e viagem",
+        "identificar lexico de ambientes digitais e comunicacao online",
+        "reconhecer palavras ligadas a saude e rotina corporal",
+        "interpretar vocabulario ecologico e de responsabilidade ambiental"
       ],
-      "correta": "reconhecer palavras e expressões de mobilidade e viagem",
-      "comentario": "Travel and transportation concentra-se em reconhecer palavras e expressões de mobilidade e viagem.",
+      "correta": "reconhecer palavras e expressoes de mobilidade e viagem",
+      "comentario": "Travel and transportation concentra-se em reconhecer palavras e expressoes de mobilidade e viagem.",
       "tempoEstimado": 30,
       "tags": [
         "vocabulario-intermediario",
@@ -243,22 +244,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Travel and transportation",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Technology and media trata de o vocabulário relacionado a dispositivos, internet, redes sociais, aplicativos e comunicação digital, Travel and transportation destaca:",
+      "enunciado": "Enquanto Technology and media trata de o vocabulario relacionado a dispositivos, internet, redes sociais, aplicativos e comunicacao digital, Travel and transportation destaca:",
       "opcoes": [
-        "O vocabulário ligado a viagens, meios de transporte, deslocamento e planejamento de trajetos.",
-        "O vocabulário relacionado a dispositivos, internet, redes sociais, aplicativos e comunicação digital.",
-        "O vocabulário usado para falar de corpo, bem-estar, hábitos saudáveis, sintomas e cuidados.",
+        "O vocabulario ligado a viagens, meios de transporte, deslocamento e planejamento de trajetos.",
+        "O vocabulario relacionado a dispositivos, internet, redes sociais, aplicativos e comunicacao digital.",
+        "O vocabulario usado para falar de corpo, bem-estar, habitos saudaveis, sintomas e cuidados.",
         "O conjunto de palavras usado em temas ambientais, consumo consciente e sustentabilidade."
       ],
-      "correta": "O vocabulário ligado a viagens, meios de transporte, deslocamento e planejamento de trajetos.",
-      "comentario": "A comparação correta mostra a especificidade de travel and transportation.",
+      "correta": "O vocabulario ligado a viagens, meios de transporte, deslocamento e planejamento de trajetos.",
+      "comentario": "A comparacao correta mostra a especificidade de travel and transportation.",
       "tempoEstimado": 30,
       "tags": [
         "vocabulario-intermediario",
@@ -282,8 +283,8 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Travel and transportation",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
@@ -297,7 +298,7 @@ export const vocabularioIntermediario = {
         "Work and professions"
       ],
       "correta": "Travel and transportation",
-      "comentario": "Esse tipo de tarefa exige domínio de travel and transportation.",
+      "comentario": "Esse tipo de tarefa exige dominio de travel and transportation.",
       "tempoEstimado": 35,
       "tags": [
         "vocabulario-intermediario",
@@ -321,22 +322,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Travel and transportation",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação prática depende mais diretamente de Travel and transportation?",
+      "enunciado": "Qual situacao pratica depende mais diretamente de Travel and transportation?",
       "opcoes": [
-        "interpretar anúncios de viagem, roteiros e informações de transporte",
-        "interpretar textos atuais sobre mídia e tecnologia",
-        "entender campanhas e textos informativos sobre saúde",
-        "interpretar perfis profissionais e situações de trabalho"
+        "interpretar anuncios de viagem, roteiros e informacoes de transporte",
+        "interpretar textos atuais sobre midia e tecnologia",
+        "entender campanhas e textos informativos sobre saude",
+        "interpretar perfis profissionais e situacoes de trabalho"
       ],
-      "correta": "interpretar anúncios de viagem, roteiros e informações de transporte",
-      "comentario": "Travel and transportation aparece de forma direta em interpretar anúncios de viagem, roteiros e informações de transporte.",
+      "correta": "interpretar anuncios de viagem, roteiros e informacoes de transporte",
+      "comentario": "Travel and transportation aparece de forma direta em interpretar anuncios de viagem, roteiros e informacoes de transporte.",
       "tempoEstimado": 35,
       "tags": [
         "vocabulario-intermediario",
@@ -360,22 +361,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Travel and transportation",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre travel and transportation?",
+      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre travel and transportation?",
       "opcoes": [
-        "o caso é resolvido com foco em travel and transportation.",
-        "o caso é melhor resolvido por technology and media.",
+        "o caso e resolvido com foco em travel and transportation.",
+        "o caso e melhor resolvido por technology and media.",
         "o caso elimina a necessidade de health and body.",
         "o caso impede qualquer uso de environment and sustainability."
       ],
-      "correta": "o caso é resolvido com foco em travel and transportation.",
-      "comentario": "A conclusão correta retoma a função central de travel and transportation.",
+      "correta": "o caso e resolvido com foco em travel and transportation.",
+      "comentario": "A conclusao correta retoma a funcao central de travel and transportation.",
       "tempoEstimado": 40,
       "tags": [
         "vocabulario-intermediario",
@@ -399,8 +400,8 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Travel and transportation",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
@@ -408,12 +409,12 @@ export const vocabularioIntermediario = {
       "tipo": "multipla_escolha",
       "enunciado": "Se a turma fosse revisar travel and transportation, qual pergunta de estudo seria a mais adequada?",
       "opcoes": [
-        "Como travel and transportation aparece em interpretar anúncios de viagem, roteiros e informações de transporte?",
-        "Como technology and media substitui totalmente interpretar anúncios de viagem, roteiros e informações de transporte?",
-        "Por que health and body torna desnecessário estudar Travel and transportation?",
+        "Como travel and transportation aparece em interpretar anuncios de viagem, roteiros e informacoes de transporte?",
+        "Como technology and media substitui totalmente interpretar anuncios de viagem, roteiros e informacoes de transporte?",
+        "Por que health and body torna desnecessario estudar Travel and transportation?",
         "De que modo environment and sustainability elimina toda leitura de contexto?"
       ],
-      "correta": "Como travel and transportation aparece em interpretar anúncios de viagem, roteiros e informações de transporte?",
+      "correta": "Como travel and transportation aparece em interpretar anuncios de viagem, roteiros e informacoes de transporte?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de travel and transportation.",
       "tempoEstimado": 40,
       "tags": [
@@ -438,22 +439,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Travel and transportation",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em travel and transportation é pensar que:",
+      "enunciado": "Um erro comum em travel and transportation e pensar que:",
       "opcoes": [
         "travel vocabulary serve apenas para turismo internacional",
-        "tecnologia em inglês se resume a nomes de aparelhos",
-        "health vocabulary trata apenas de doenças graves",
-        "environment vocabulary aparece apenas em textos científicos longos"
+        "tecnologia em ingles se resume a nomes de aparelhos",
+        "health vocabulary trata apenas de doencas graves",
+        "environment vocabulary aparece apenas em textos cientificos longos"
       ],
       "correta": "travel vocabulary serve apenas para turismo internacional",
-      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de travel and transportation.",
+      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de travel and transportation.",
       "tempoEstimado": 45,
       "tags": [
         "vocabulario-intermediario",
@@ -477,22 +478,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Travel and transportation",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"para entender transporte em inglês basta conhecer nomes de países\". A avaliação mais adequada é:",
+      "enunciado": "Um estudante afirma: \"para entender transporte em ingles basta conhecer nomes de paises\". A avaliacao mais adequada e:",
       "opcoes": [
-        "A afirmação está incorreta, porque o vocabulário ligado a viagens, meios de transporte, deslocamento e planejamento de trajetos.",
-        "A afirmação está correta, pois resume integralmente travel and transportation.",
-        "A afirmação está correta, porque basta decorar a tradução do exemplo.",
-        "A afirmação está incorreta apenas por não citar uma regra gramatical."
+        "A afirmacao esta incorreta, porque o vocabulario ligado a viagens, meios de transporte, deslocamento e planejamento de trajetos.",
+        "A afirmacao esta correta, pois resume integralmente travel and transportation.",
+        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
+        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
       ],
-      "correta": "A afirmação está incorreta, porque o vocabulário ligado a viagens, meios de transporte, deslocamento e planejamento de trajetos.",
-      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre travel and transportation.",
+      "correta": "A afirmacao esta incorreta, porque o vocabulario ligado a viagens, meios de transporte, deslocamento e planejamento de trajetos.",
+      "comentario": "A fala do estudante apresenta um equivoco conceitual sobre travel and transportation.",
       "tempoEstimado": 45,
       "tags": [
         "vocabulario-intermediario",
@@ -516,22 +517,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Travel and transportation",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se travel and transportation fosse ignorado(a) em interpretar anúncios de viagem, roteiros e informações de transporte, o resultado mais provável seria:",
+      "enunciado": "Se travel and transportation fosse ignorado(a) em interpretar anuncios de viagem, roteiros e informacoes de transporte, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretação ficaria incompleta e aumentaria a chance de erro em interpretar anúncios de viagem, roteiros e informações de transporte.",
-        "a questão seria resolvida automaticamente por technology and media.",
-        "nenhuma interpretação seria alterada, porque Travel and transportation não interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
+        "a interpretacao ficaria incompleta e aumentaria a chance de erro em interpretar anuncios de viagem, roteiros e informacoes de transporte.",
+        "a questao seria resolvida automaticamente por technology and media.",
+        "nenhuma interpretacao seria alterada, porque Travel and transportation nao interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
       ],
-      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em interpretar anúncios de viagem, roteiros e informações de transporte.",
-      "comentario": "Ignorar travel and transportation compromete a resolução correta da atividade.",
+      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em interpretar anuncios de viagem, roteiros e informacoes de transporte.",
+      "comentario": "Ignorar travel and transportation compromete a resolucao correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "vocabulario-intermediario",
@@ -555,14 +556,14 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Travel and transportation",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou ação ilustra melhor Travel and transportation?",
+      "enunciado": "Qual trecho ou acao ilustra melhor Travel and transportation?",
       "opcoes": [
         "She missed her train because she arrived late at the station.",
         "Users should review their privacy settings before sharing photos.",
@@ -570,7 +571,7 @@ export const vocabularioIntermediario = {
         "The campaign encourages students to reduce plastic waste."
       ],
       "correta": "She missed her train because she arrived late at the station.",
-      "comentario": "O item correto é o que melhor exemplifica travel and transportation.",
+      "comentario": "O item correto e o que melhor exemplifica travel and transportation.",
       "tempoEstimado": 50,
       "tags": [
         "vocabulario-intermediario",
@@ -594,21 +595,21 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Travel and transportation",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao encontrar o exemplo \"She missed her train because she arrived late at the station.\", a leitura mais adequada é:",
+      "enunciado": "Ao encontrar o exemplo \"She missed her train because she arrived late at the station.\", a leitura mais adequada e:",
       "opcoes": [
-        "a frase mobiliza vocabulário típico de deslocamento e viagem",
-        "a frase traz vocabulário comum em temas digitais",
-        "a frase mobiliza vocabulário de saúde e bem-estar",
-        "a frase trabalha vocabulário ambiental em contexto prático"
+        "a frase mobiliza vocabulario tipico de deslocamento e viagem",
+        "a frase traz vocabulario comum em temas digitais",
+        "a frase mobiliza vocabulario de saude e bem-estar",
+        "a frase trabalha vocabulario ambiental em contexto pratico"
       ],
-      "correta": "a frase mobiliza vocabulário típico de deslocamento e viagem",
+      "correta": "a frase mobiliza vocabulario tipico de deslocamento e viagem",
       "comentario": "A leitura correta do exemplo revela o papel de travel and transportation.",
       "tempoEstimado": 55,
       "tags": [
@@ -633,22 +634,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Travel and transportation",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estratégia ajuda mais a estudar travel and transportation?",
+      "enunciado": "Qual estrategia ajuda mais a estudar travel and transportation?",
       "opcoes": [
         "observar palavras ligadas a transporte, destino e deslocamento",
-        "relacionar palavras técnicas ao contexto de mídia e uso online",
-        "identificar termos ligados a hábitos, corpo e prevenção",
-        "procurar termos ligados a natureza, impacto ambiental e ações sustentáveis"
+        "relacionar palavras tecnicas ao contexto de midia e uso online",
+        "identificar termos ligados a habitos, corpo e prevencao",
+        "procurar termos ligados a natureza, impacto ambiental e acoes sustentaveis"
       ],
       "correta": "observar palavras ligadas a transporte, destino e deslocamento",
-      "comentario": "A estratégia correta fortalece o domínio de travel and transportation.",
+      "comentario": "A estrategia correta fortalece o dominio de travel and transportation.",
       "tempoEstimado": 55,
       "tags": [
         "vocabulario-intermediario",
@@ -672,22 +673,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Travel and transportation",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Travel and transportation é mais cobrado quando:",
+      "enunciado": "Em uma prova, Travel and transportation e mais cobrado quando:",
       "opcoes": [
         "o item cobra leitura de contexto de viagem ou transporte",
-        "a questão exige leitura lexical em textos sobre tecnologia",
-        "o item pede compreensão de vocabulário em contexto de saúde",
-        "a questão usa tema ecológico para leitura e vocabulário"
+        "a questao exige leitura lexical em textos sobre tecnologia",
+        "o item pede compreensao de vocabulario em contexto de saude",
+        "a questao usa tema ecologico para leitura e vocabulario"
       ],
       "correta": "o item cobra leitura de contexto de viagem ou transporte",
-      "comentario": "Esse é o tipo de demanda em que travel and transportation aparece com mais frequência.",
+      "comentario": "Esse e o tipo de demanda em que travel and transportation aparece com mais frequencia.",
       "tempoEstimado": 60,
       "tags": [
         "vocabulario-intermediario",
@@ -711,8 +712,8 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Travel and transportation",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
@@ -720,13 +721,13 @@ export const vocabularioIntermediario = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual resumo sintetiza melhor a ideia de Travel and transportation?",
       "opcoes": [
-        "Em síntese, o vocabulário ligado a viagens, meios de transporte, deslocamento e planejamento de trajetos.",
-        "Em síntese, o vocabulário relacionado a dispositivos, internet, redes sociais, aplicativos e comunicação digital.",
-        "Em síntese, o vocabulário usado para falar de corpo, bem-estar, hábitos saudáveis, sintomas e cuidados.",
-        "Em síntese, o conjunto de palavras usado em temas ambientais, consumo consciente e sustentabilidade."
+        "Em sintese, o vocabulario ligado a viagens, meios de transporte, deslocamento e planejamento de trajetos.",
+        "Em sintese, o vocabulario relacionado a dispositivos, internet, redes sociais, aplicativos e comunicacao digital.",
+        "Em sintese, o vocabulario usado para falar de corpo, bem-estar, habitos saudaveis, sintomas e cuidados.",
+        "Em sintese, o conjunto de palavras usado em temas ambientais, consumo consciente e sustentabilidade."
       ],
-      "correta": "Em síntese, o vocabulário ligado a viagens, meios de transporte, deslocamento e planejamento de trajetos.",
-      "comentario": "O resumo correto recupera o núcleo de travel and transportation.",
+      "correta": "Em sintese, o vocabulario ligado a viagens, meios de transporte, deslocamento e planejamento de trajetos.",
+      "comentario": "O resumo correto recupera o nucleo de travel and transportation.",
       "tempoEstimado": 60,
       "tags": [
         "vocabulario-intermediario",
@@ -750,22 +751,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Travel and transportation",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associação entre exemplo e interpretação está correta em Travel and transportation?",
+      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Travel and transportation?",
       "opcoes": [
-        "She missed her train because she arrived late at the station. -> a frase mobiliza vocabulário típico de deslocamento e viagem",
-        "Users should review their privacy settings before sharing photos. -> a frase mobiliza vocabulário típico de deslocamento e viagem",
-        "Regular exercise improves both body and mind. -> a frase trabalha vocabulário ambiental em contexto prático",
-        "The campaign encourages students to reduce plastic waste. -> a frase traz vocabulário comum em temas digitais"
+        "She missed her train because she arrived late at the station. -> a frase mobiliza vocabulario tipico de deslocamento e viagem",
+        "Users should review their privacy settings before sharing photos. -> a frase mobiliza vocabulario tipico de deslocamento e viagem",
+        "Regular exercise improves both body and mind. -> a frase trabalha vocabulario ambiental em contexto pratico",
+        "The campaign encourages students to reduce plastic waste. -> a frase traz vocabulario comum em temas digitais"
       ],
-      "correta": "She missed her train because she arrived late at the station. -> a frase mobiliza vocabulário típico de deslocamento e viagem",
-      "comentario": "A associação correta mantém coerência entre exemplo e interpretação em travel and transportation.",
+      "correta": "She missed her train because she arrived late at the station. -> a frase mobiliza vocabulario tipico de deslocamento e viagem",
+      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em travel and transportation.",
       "tempoEstimado": 65,
       "tags": [
         "vocabulario-intermediario",
@@ -789,8 +790,8 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Travel and transportation",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
@@ -798,13 +799,13 @@ export const vocabularioIntermediario = {
       "tipo": "multipla_escolha",
       "enunciado": "Ao resolver uma atividade sobre travel and transportation, o estudante deve principalmente:",
       "opcoes": [
-        "reconhecer palavras e expressões de mobilidade e viagem",
+        "reconhecer palavras e expressoes de mobilidade e viagem",
         "observar palavras ligadas a transporte, destino e deslocamento",
-        "interpretar anúncios de viagem, roteiros e informações de transporte",
+        "interpretar anuncios de viagem, roteiros e informacoes de transporte",
         "o item cobra leitura de contexto de viagem ou transporte"
       ],
-      "correta": "reconhecer palavras e expressões de mobilidade e viagem",
-      "comentario": "O objetivo central de travel and transportation é reconhecer palavras e expressões de mobilidade e viagem.",
+      "correta": "reconhecer palavras e expressoes de mobilidade e viagem",
+      "comentario": "O objetivo central de travel and transportation e reconhecer palavras e expressoes de mobilidade e viagem.",
       "tempoEstimado": 70,
       "tags": [
         "vocabulario-intermediario",
@@ -828,22 +829,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Technology and media",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Inglês, Technology and media refere-se a:",
+      "enunciado": "Em Ingles, Technology and media refere-se a:",
       "opcoes": [
-        "o vocabulário relacionado a dispositivos, internet, redes sociais, aplicativos e comunicação digital",
-        "o vocabulário usado para falar de corpo, bem-estar, hábitos saudáveis, sintomas e cuidados",
+        "o vocabulario relacionado a dispositivos, internet, redes sociais, aplicativos e comunicacao digital",
+        "o vocabulario usado para falar de corpo, bem-estar, habitos saudaveis, sintomas e cuidados",
         "o conjunto de palavras usado em temas ambientais, consumo consciente e sustentabilidade",
-        "o vocabulário relacionado a ocupações, mercado de trabalho, tarefas e ambientes profissionais"
+        "o vocabulario relacionado a ocupacoes, mercado de trabalho, tarefas e ambientes profissionais"
       ],
-      "correta": "o vocabulário relacionado a dispositivos, internet, redes sociais, aplicativos e comunicação digital",
-      "comentario": "Technology and media refere-se ao vocabulário relacionado a dispositivos, internet, redes sociais, aplicativos e comunicação digital.",
+      "correta": "o vocabulario relacionado a dispositivos, internet, redes sociais, aplicativos e comunicacao digital",
+      "comentario": "Technology and media refere-se ao vocabulario relacionado a dispositivos, internet, redes sociais, aplicativos e comunicacao digital.",
       "tempoEstimado": 20,
       "tags": [
         "vocabulario-intermediario",
@@ -867,14 +868,14 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Technology and media",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: um texto discute app updates, privacy settings and social networks. Esse caso está mais ligado a qual subtópico?",
+      "enunciado": "Observe a situacao: um texto discute app updates, privacy settings and social networks. Esse caso esta mais ligado a qual subtopico?",
       "opcoes": [
         "Technology and media",
         "Health and body",
@@ -882,7 +883,7 @@ export const vocabularioIntermediario = {
         "Work and professions"
       ],
       "correta": "Technology and media",
-      "comentario": "A situação apresentada é melhor compreendida por meio de technology and media.",
+      "comentario": "A situacao apresentada e melhor compreendida por meio de technology and media.",
       "tempoEstimado": 20,
       "tags": [
         "vocabulario-intermediario",
@@ -906,8 +907,8 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Technology and media",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
@@ -945,22 +946,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Technology and media",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO representa corretamente technology and media?",
+      "enunciado": "Qual alternativa NAO representa corretamente technology and media?",
       "opcoes": [
         "Regular exercise improves both body and mind.",
         "Users should review their privacy settings before sharing photos.",
-        "relacionar palavras técnicas ao contexto de mídia e uso online.",
-        "interpretar textos atuais sobre mídia e tecnologia."
+        "relacionar palavras tecnicas ao contexto de midia e uso online.",
+        "interpretar textos atuais sobre midia e tecnologia."
       ],
       "correta": "Regular exercise improves both body and mind.",
-      "comentario": "A opção incompatível ilustra outro subtópico, e não technology and media.",
+      "comentario": "A opcao incompativel ilustra outro subtopico, e nao technology and media.",
       "tempoEstimado": 25,
       "tags": [
         "vocabulario-intermediario",
@@ -984,22 +985,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Technology and media",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar technology and media, o foco principal é:",
+      "enunciado": "Ao estudar technology and media, o foco principal e:",
       "opcoes": [
-        "identificar léxico de ambientes digitais e comunicação online",
-        "reconhecer palavras ligadas a saúde e rotina corporal",
-        "interpretar vocabulário ecológico e de responsabilidade ambiental",
-        "reconhecer profissões e situações ligadas ao mundo do trabalho"
+        "identificar lexico de ambientes digitais e comunicacao online",
+        "reconhecer palavras ligadas a saude e rotina corporal",
+        "interpretar vocabulario ecologico e de responsabilidade ambiental",
+        "reconhecer profissoes e situacoes ligadas ao mundo do trabalho"
       ],
-      "correta": "identificar léxico de ambientes digitais e comunicação online",
-      "comentario": "Technology and media concentra-se em identificar léxico de ambientes digitais e comunicação online.",
+      "correta": "identificar lexico de ambientes digitais e comunicacao online",
+      "comentario": "Technology and media concentra-se em identificar lexico de ambientes digitais e comunicacao online.",
       "tempoEstimado": 30,
       "tags": [
         "vocabulario-intermediario",
@@ -1023,22 +1024,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Technology and media",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Health and body trata de o vocabulário usado para falar de corpo, bem-estar, hábitos saudáveis, sintomas e cuidados, Technology and media destaca:",
+      "enunciado": "Enquanto Health and body trata de o vocabulario usado para falar de corpo, bem-estar, habitos saudaveis, sintomas e cuidados, Technology and media destaca:",
       "opcoes": [
-        "O vocabulário relacionado a dispositivos, internet, redes sociais, aplicativos e comunicação digital.",
-        "O vocabulário usado para falar de corpo, bem-estar, hábitos saudáveis, sintomas e cuidados.",
+        "O vocabulario relacionado a dispositivos, internet, redes sociais, aplicativos e comunicacao digital.",
+        "O vocabulario usado para falar de corpo, bem-estar, habitos saudaveis, sintomas e cuidados.",
         "O conjunto de palavras usado em temas ambientais, consumo consciente e sustentabilidade.",
-        "O vocabulário relacionado a ocupações, mercado de trabalho, tarefas e ambientes profissionais."
+        "O vocabulario relacionado a ocupacoes, mercado de trabalho, tarefas e ambientes profissionais."
       ],
-      "correta": "O vocabulário relacionado a dispositivos, internet, redes sociais, aplicativos e comunicação digital.",
-      "comentario": "A comparação correta mostra a especificidade de technology and media.",
+      "correta": "O vocabulario relacionado a dispositivos, internet, redes sociais, aplicativos e comunicacao digital.",
+      "comentario": "A comparacao correta mostra a especificidade de technology and media.",
       "tempoEstimado": 30,
       "tags": [
         "vocabulario-intermediario",
@@ -1062,8 +1063,8 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Technology and media",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
@@ -1077,7 +1078,7 @@ export const vocabularioIntermediario = {
         "Feelings and opinions"
       ],
       "correta": "Technology and media",
-      "comentario": "Esse tipo de tarefa exige domínio de technology and media.",
+      "comentario": "Esse tipo de tarefa exige dominio de technology and media.",
       "tempoEstimado": 35,
       "tags": [
         "vocabulario-intermediario",
@@ -1101,22 +1102,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Technology and media",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação prática depende mais diretamente de Technology and media?",
+      "enunciado": "Qual situacao pratica depende mais diretamente de Technology and media?",
       "opcoes": [
-        "interpretar textos atuais sobre mídia e tecnologia",
-        "entender campanhas e textos informativos sobre saúde",
+        "interpretar textos atuais sobre midia e tecnologia",
+        "entender campanhas e textos informativos sobre saude",
         "resolver itens sobre meio ambiente e sustentabilidade",
-        "interpretar posicionamentos em textos curtos e opiniões em redes sociais"
+        "interpretar posicionamentos em textos curtos e opinioes em redes sociais"
       ],
-      "correta": "interpretar textos atuais sobre mídia e tecnologia",
-      "comentario": "Technology and media aparece de forma direta em interpretar textos atuais sobre mídia e tecnologia.",
+      "correta": "interpretar textos atuais sobre midia e tecnologia",
+      "comentario": "Technology and media aparece de forma direta em interpretar textos atuais sobre midia e tecnologia.",
       "tempoEstimado": 35,
       "tags": [
         "vocabulario-intermediario",
@@ -1140,22 +1141,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Technology and media",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre technology and media?",
+      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre technology and media?",
       "opcoes": [
-        "o caso é resolvido com foco em technology and media.",
-        "o caso é melhor resolvido por health and body.",
+        "o caso e resolvido com foco em technology and media.",
+        "o caso e melhor resolvido por health and body.",
         "o caso elimina a necessidade de environment and sustainability.",
         "o caso impede qualquer uso de work and professions."
       ],
-      "correta": "o caso é resolvido com foco em technology and media.",
-      "comentario": "A conclusão correta retoma a função central de technology and media.",
+      "correta": "o caso e resolvido com foco em technology and media.",
+      "comentario": "A conclusao correta retoma a funcao central de technology and media.",
       "tempoEstimado": 40,
       "tags": [
         "vocabulario-intermediario",
@@ -1179,8 +1180,8 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Technology and media",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
@@ -1188,12 +1189,12 @@ export const vocabularioIntermediario = {
       "tipo": "multipla_escolha",
       "enunciado": "Se a turma fosse revisar technology and media, qual pergunta de estudo seria a mais adequada?",
       "opcoes": [
-        "Como technology and media aparece em interpretar textos atuais sobre mídia e tecnologia?",
-        "Como health and body substitui totalmente interpretar textos atuais sobre mídia e tecnologia?",
-        "Por que environment and sustainability torna desnecessário estudar Technology and media?",
+        "Como technology and media aparece em interpretar textos atuais sobre midia e tecnologia?",
+        "Como health and body substitui totalmente interpretar textos atuais sobre midia e tecnologia?",
+        "Por que environment and sustainability torna desnecessario estudar Technology and media?",
         "De que modo work and professions elimina toda leitura de contexto?"
       ],
-      "correta": "Como technology and media aparece em interpretar textos atuais sobre mídia e tecnologia?",
+      "correta": "Como technology and media aparece em interpretar textos atuais sobre midia e tecnologia?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de technology and media.",
       "tempoEstimado": 40,
       "tags": [
@@ -1218,22 +1219,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Technology and media",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em technology and media é pensar que:",
+      "enunciado": "Um erro comum em technology and media e pensar que:",
       "opcoes": [
-        "tecnologia em inglês se resume a nomes de aparelhos",
-        "health vocabulary trata apenas de doenças graves",
-        "environment vocabulary aparece apenas em textos científicos longos",
-        "work vocabulary se limita ao nome de profissões"
+        "tecnologia em ingles se resume a nomes de aparelhos",
+        "health vocabulary trata apenas de doencas graves",
+        "environment vocabulary aparece apenas em textos cientificos longos",
+        "work vocabulary se limita ao nome de profissoes"
       ],
-      "correta": "tecnologia em inglês se resume a nomes de aparelhos",
-      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de technology and media.",
+      "correta": "tecnologia em ingles se resume a nomes de aparelhos",
+      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de technology and media.",
       "tempoEstimado": 45,
       "tags": [
         "vocabulario-intermediario",
@@ -1257,22 +1258,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Technology and media",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"technology vocabulary significa só saber traduzir phone e computer\". A avaliação mais adequada é:",
+      "enunciado": "Um estudante afirma: \"technology vocabulary significa so saber traduzir phone e computer\". A avaliacao mais adequada e:",
       "opcoes": [
-        "A afirmação está incorreta, porque o vocabulário relacionado a dispositivos, internet, redes sociais, aplicativos e comunicação digital.",
-        "A afirmação está correta, pois resume integralmente technology and media.",
-        "A afirmação está correta, porque basta decorar a tradução do exemplo.",
-        "A afirmação está incorreta apenas por não citar uma regra gramatical."
+        "A afirmacao esta incorreta, porque o vocabulario relacionado a dispositivos, internet, redes sociais, aplicativos e comunicacao digital.",
+        "A afirmacao esta correta, pois resume integralmente technology and media.",
+        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
+        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
       ],
-      "correta": "A afirmação está incorreta, porque o vocabulário relacionado a dispositivos, internet, redes sociais, aplicativos e comunicação digital.",
-      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre technology and media.",
+      "correta": "A afirmacao esta incorreta, porque o vocabulario relacionado a dispositivos, internet, redes sociais, aplicativos e comunicacao digital.",
+      "comentario": "A fala do estudante apresenta um equivoco conceitual sobre technology and media.",
       "tempoEstimado": 45,
       "tags": [
         "vocabulario-intermediario",
@@ -1296,22 +1297,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Technology and media",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se technology and media fosse ignorado(a) em interpretar textos atuais sobre mídia e tecnologia, o resultado mais provável seria:",
+      "enunciado": "Se technology and media fosse ignorado(a) em interpretar textos atuais sobre midia e tecnologia, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretação ficaria incompleta e aumentaria a chance de erro em interpretar textos atuais sobre mídia e tecnologia.",
-        "a questão seria resolvida automaticamente por health and body.",
-        "nenhuma interpretação seria alterada, porque Technology and media não interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
+        "a interpretacao ficaria incompleta e aumentaria a chance de erro em interpretar textos atuais sobre midia e tecnologia.",
+        "a questao seria resolvida automaticamente por health and body.",
+        "nenhuma interpretacao seria alterada, porque Technology and media nao interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
       ],
-      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em interpretar textos atuais sobre mídia e tecnologia.",
-      "comentario": "Ignorar technology and media compromete a resolução correta da atividade.",
+      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em interpretar textos atuais sobre midia e tecnologia.",
+      "comentario": "Ignorar technology and media compromete a resolucao correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "vocabulario-intermediario",
@@ -1335,14 +1336,14 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Technology and media",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou ação ilustra melhor Technology and media?",
+      "enunciado": "Qual trecho ou acao ilustra melhor Technology and media?",
       "opcoes": [
         "Users should review their privacy settings before sharing photos.",
         "Regular exercise improves both body and mind.",
@@ -1350,7 +1351,7 @@ export const vocabularioIntermediario = {
         "The nurse works long shifts at the hospital."
       ],
       "correta": "Users should review their privacy settings before sharing photos.",
-      "comentario": "O item correto é o que melhor exemplifica technology and media.",
+      "comentario": "O item correto e o que melhor exemplifica technology and media.",
       "tempoEstimado": 50,
       "tags": [
         "vocabulario-intermediario",
@@ -1374,21 +1375,21 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Technology and media",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao encontrar o exemplo \"Users should review their privacy settings before sharing photos.\", a leitura mais adequada é:",
+      "enunciado": "Ao encontrar o exemplo \"Users should review their privacy settings before sharing photos.\", a leitura mais adequada e:",
       "opcoes": [
-        "a frase traz vocabulário comum em temas digitais",
-        "a frase mobiliza vocabulário de saúde e bem-estar",
-        "a frase trabalha vocabulário ambiental em contexto prático",
-        "a frase articula profissão, ambiente e rotina de trabalho"
+        "a frase traz vocabulario comum em temas digitais",
+        "a frase mobiliza vocabulario de saude e bem-estar",
+        "a frase trabalha vocabulario ambiental em contexto pratico",
+        "a frase articula profissao, ambiente e rotina de trabalho"
       ],
-      "correta": "a frase traz vocabulário comum em temas digitais",
+      "correta": "a frase traz vocabulario comum em temas digitais",
       "comentario": "A leitura correta do exemplo revela o papel de technology and media.",
       "tempoEstimado": 55,
       "tags": [
@@ -1413,22 +1414,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Technology and media",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estratégia ajuda mais a estudar technology and media?",
+      "enunciado": "Qual estrategia ajuda mais a estudar technology and media?",
       "opcoes": [
-        "relacionar palavras técnicas ao contexto de mídia e uso online",
-        "identificar termos ligados a hábitos, corpo e prevenção",
-        "procurar termos ligados a natureza, impacto ambiental e ações sustentáveis",
-        "relacionar profissão, local e atividade descrita"
+        "relacionar palavras tecnicas ao contexto de midia e uso online",
+        "identificar termos ligados a habitos, corpo e prevencao",
+        "procurar termos ligados a natureza, impacto ambiental e acoes sustentaveis",
+        "relacionar profissao, local e atividade descrita"
       ],
-      "correta": "relacionar palavras técnicas ao contexto de mídia e uso online",
-      "comentario": "A estratégia correta fortalece o domínio de technology and media.",
+      "correta": "relacionar palavras tecnicas ao contexto de midia e uso online",
+      "comentario": "A estrategia correta fortalece o dominio de technology and media.",
       "tempoEstimado": 55,
       "tags": [
         "vocabulario-intermediario",
@@ -1452,22 +1453,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Technology and media",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Technology and media é mais cobrado quando:",
+      "enunciado": "Em uma prova, Technology and media e mais cobrado quando:",
       "opcoes": [
-        "a questão exige leitura lexical em textos sobre tecnologia",
-        "o item pede compreensão de vocabulário em contexto de saúde",
-        "a questão usa tema ecológico para leitura e vocabulário",
-        "o item pede compreender vocabulário de profissão e rotina laboral"
+        "a questao exige leitura lexical em textos sobre tecnologia",
+        "o item pede compreensao de vocabulario em contexto de saude",
+        "a questao usa tema ecologico para leitura e vocabulario",
+        "o item pede compreender vocabulario de profissao e rotina laboral"
       ],
-      "correta": "a questão exige leitura lexical em textos sobre tecnologia",
-      "comentario": "Esse é o tipo de demanda em que technology and media aparece com mais frequência.",
+      "correta": "a questao exige leitura lexical em textos sobre tecnologia",
+      "comentario": "Esse e o tipo de demanda em que technology and media aparece com mais frequencia.",
       "tempoEstimado": 60,
       "tags": [
         "vocabulario-intermediario",
@@ -1491,8 +1492,8 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Technology and media",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
@@ -1500,13 +1501,13 @@ export const vocabularioIntermediario = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual resumo sintetiza melhor a ideia de Technology and media?",
       "opcoes": [
-        "Em síntese, o vocabulário relacionado a dispositivos, internet, redes sociais, aplicativos e comunicação digital.",
-        "Em síntese, o vocabulário usado para falar de corpo, bem-estar, hábitos saudáveis, sintomas e cuidados.",
-        "Em síntese, o conjunto de palavras usado em temas ambientais, consumo consciente e sustentabilidade.",
-        "Em síntese, o vocabulário relacionado a ocupações, mercado de trabalho, tarefas e ambientes profissionais."
+        "Em sintese, o vocabulario relacionado a dispositivos, internet, redes sociais, aplicativos e comunicacao digital.",
+        "Em sintese, o vocabulario usado para falar de corpo, bem-estar, habitos saudaveis, sintomas e cuidados.",
+        "Em sintese, o conjunto de palavras usado em temas ambientais, consumo consciente e sustentabilidade.",
+        "Em sintese, o vocabulario relacionado a ocupacoes, mercado de trabalho, tarefas e ambientes profissionais."
       ],
-      "correta": "Em síntese, o vocabulário relacionado a dispositivos, internet, redes sociais, aplicativos e comunicação digital.",
-      "comentario": "O resumo correto recupera o núcleo de technology and media.",
+      "correta": "Em sintese, o vocabulario relacionado a dispositivos, internet, redes sociais, aplicativos e comunicacao digital.",
+      "comentario": "O resumo correto recupera o nucleo de technology and media.",
       "tempoEstimado": 60,
       "tags": [
         "vocabulario-intermediario",
@@ -1530,22 +1531,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Technology and media",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associação entre exemplo e interpretação está correta em Technology and media?",
+      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Technology and media?",
       "opcoes": [
-        "Users should review their privacy settings before sharing photos. -> a frase traz vocabulário comum em temas digitais",
-        "Regular exercise improves both body and mind. -> a frase traz vocabulário comum em temas digitais",
-        "The campaign encourages students to reduce plastic waste. -> a frase articula profissão, ambiente e rotina de trabalho",
-        "The nurse works long shifts at the hospital. -> a frase mobiliza vocabulário de saúde e bem-estar"
+        "Users should review their privacy settings before sharing photos. -> a frase traz vocabulario comum em temas digitais",
+        "Regular exercise improves both body and mind. -> a frase traz vocabulario comum em temas digitais",
+        "The campaign encourages students to reduce plastic waste. -> a frase articula profissao, ambiente e rotina de trabalho",
+        "The nurse works long shifts at the hospital. -> a frase mobiliza vocabulario de saude e bem-estar"
       ],
-      "correta": "Users should review their privacy settings before sharing photos. -> a frase traz vocabulário comum em temas digitais",
-      "comentario": "A associação correta mantém coerência entre exemplo e interpretação em technology and media.",
+      "correta": "Users should review their privacy settings before sharing photos. -> a frase traz vocabulario comum em temas digitais",
+      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em technology and media.",
       "tempoEstimado": 65,
       "tags": [
         "vocabulario-intermediario",
@@ -1569,8 +1570,8 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Technology and media",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
@@ -1578,13 +1579,13 @@ export const vocabularioIntermediario = {
       "tipo": "multipla_escolha",
       "enunciado": "Ao resolver uma atividade sobre technology and media, o estudante deve principalmente:",
       "opcoes": [
-        "identificar léxico de ambientes digitais e comunicação online",
-        "relacionar palavras técnicas ao contexto de mídia e uso online",
-        "interpretar textos atuais sobre mídia e tecnologia",
-        "a questão exige leitura lexical em textos sobre tecnologia"
+        "identificar lexico de ambientes digitais e comunicacao online",
+        "relacionar palavras tecnicas ao contexto de midia e uso online",
+        "interpretar textos atuais sobre midia e tecnologia",
+        "a questao exige leitura lexical em textos sobre tecnologia"
       ],
-      "correta": "identificar léxico de ambientes digitais e comunicação online",
-      "comentario": "O objetivo central de technology and media é identificar léxico de ambientes digitais e comunicação online.",
+      "correta": "identificar lexico de ambientes digitais e comunicacao online",
+      "comentario": "O objetivo central de technology and media e identificar lexico de ambientes digitais e comunicacao online.",
       "tempoEstimado": 70,
       "tags": [
         "vocabulario-intermediario",
@@ -1608,22 +1609,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Health and body",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Inglês, Health and body refere-se a:",
+      "enunciado": "Em Ingles, Health and body refere-se a:",
       "opcoes": [
-        "o vocabulário usado para falar de corpo, bem-estar, hábitos saudáveis, sintomas e cuidados",
+        "o vocabulario usado para falar de corpo, bem-estar, habitos saudaveis, sintomas e cuidados",
         "o conjunto de palavras usado em temas ambientais, consumo consciente e sustentabilidade",
-        "o vocabulário relacionado a ocupações, mercado de trabalho, tarefas e ambientes profissionais",
-        "o vocabulário usado para expressar emoções, preferências, avaliação e posicionamento pessoal"
+        "o vocabulario relacionado a ocupacoes, mercado de trabalho, tarefas e ambientes profissionais",
+        "o vocabulario usado para expressar emocoes, preferencias, avaliacao e posicionamento pessoal"
       ],
-      "correta": "o vocabulário usado para falar de corpo, bem-estar, hábitos saudáveis, sintomas e cuidados",
-      "comentario": "Health and body refere-se ao vocabulário usado para falar de corpo, bem-estar, hábitos saudáveis, sintomas e cuidados.",
+      "correta": "o vocabulario usado para falar de corpo, bem-estar, habitos saudaveis, sintomas e cuidados",
+      "comentario": "Health and body refere-se ao vocabulario usado para falar de corpo, bem-estar, habitos saudaveis, sintomas e cuidados.",
       "tempoEstimado": 20,
       "tags": [
         "vocabulario-intermediario",
@@ -1647,14 +1648,14 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Health and body",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: um texto orienta sobre sleep, exercise, diet and hydration. Esse caso está mais ligado a qual subtópico?",
+      "enunciado": "Observe a situacao: um texto orienta sobre sleep, exercise, diet and hydration. Esse caso esta mais ligado a qual subtopico?",
       "opcoes": [
         "Health and body",
         "Environment and sustainability",
@@ -1662,7 +1663,7 @@ export const vocabularioIntermediario = {
         "Feelings and opinions"
       ],
       "correta": "Health and body",
-      "comentario": "A situação apresentada é melhor compreendida por meio de health and body.",
+      "comentario": "A situacao apresentada e melhor compreendida por meio de health and body.",
       "tempoEstimado": 20,
       "tags": [
         "vocabulario-intermediario",
@@ -1686,8 +1687,8 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Health and body",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
@@ -1725,22 +1726,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Health and body",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO representa corretamente health and body?",
+      "enunciado": "Qual alternativa NAO representa corretamente health and body?",
       "opcoes": [
         "The campaign encourages students to reduce plastic waste.",
         "Regular exercise improves both body and mind.",
-        "identificar termos ligados a hábitos, corpo e prevenção.",
-        "entender campanhas e textos informativos sobre saúde."
+        "identificar termos ligados a habitos, corpo e prevencao.",
+        "entender campanhas e textos informativos sobre saude."
       ],
       "correta": "The campaign encourages students to reduce plastic waste.",
-      "comentario": "A opção incompatível ilustra outro subtópico, e não health and body.",
+      "comentario": "A opcao incompativel ilustra outro subtopico, e nao health and body.",
       "tempoEstimado": 25,
       "tags": [
         "vocabulario-intermediario",
@@ -1764,22 +1765,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Health and body",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar health and body, o foco principal é:",
+      "enunciado": "Ao estudar health and body, o foco principal e:",
       "opcoes": [
-        "reconhecer palavras ligadas a saúde e rotina corporal",
-        "interpretar vocabulário ecológico e de responsabilidade ambiental",
-        "reconhecer profissões e situações ligadas ao mundo do trabalho",
-        "identificar palavras que revelam sentimento e opinião"
+        "reconhecer palavras ligadas a saude e rotina corporal",
+        "interpretar vocabulario ecologico e de responsabilidade ambiental",
+        "reconhecer profissoes e situacoes ligadas ao mundo do trabalho",
+        "identificar palavras que revelam sentimento e opiniao"
       ],
-      "correta": "reconhecer palavras ligadas a saúde e rotina corporal",
-      "comentario": "Health and body concentra-se em reconhecer palavras ligadas a saúde e rotina corporal.",
+      "correta": "reconhecer palavras ligadas a saude e rotina corporal",
+      "comentario": "Health and body concentra-se em reconhecer palavras ligadas a saude e rotina corporal.",
       "tempoEstimado": 30,
       "tags": [
         "vocabulario-intermediario",
@@ -1803,8 +1804,8 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Health and body",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
@@ -1812,13 +1813,13 @@ export const vocabularioIntermediario = {
       "tipo": "multipla_escolha",
       "enunciado": "Enquanto Environment and sustainability trata de o conjunto de palavras usado em temas ambientais, consumo consciente e sustentabilidade, Health and body destaca:",
       "opcoes": [
-        "O vocabulário usado para falar de corpo, bem-estar, hábitos saudáveis, sintomas e cuidados.",
+        "O vocabulario usado para falar de corpo, bem-estar, habitos saudaveis, sintomas e cuidados.",
         "O conjunto de palavras usado em temas ambientais, consumo consciente e sustentabilidade.",
-        "O vocabulário relacionado a ocupações, mercado de trabalho, tarefas e ambientes profissionais.",
-        "O vocabulário usado para expressar emoções, preferências, avaliação e posicionamento pessoal."
+        "O vocabulario relacionado a ocupacoes, mercado de trabalho, tarefas e ambientes profissionais.",
+        "O vocabulario usado para expressar emocoes, preferencias, avaliacao e posicionamento pessoal."
       ],
-      "correta": "O vocabulário usado para falar de corpo, bem-estar, hábitos saudáveis, sintomas e cuidados.",
-      "comentario": "A comparação correta mostra a especificidade de health and body.",
+      "correta": "O vocabulario usado para falar de corpo, bem-estar, habitos saudaveis, sintomas e cuidados.",
+      "comentario": "A comparacao correta mostra a especificidade de health and body.",
       "tempoEstimado": 30,
       "tags": [
         "vocabulario-intermediario",
@@ -1842,8 +1843,8 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Health and body",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
@@ -1857,7 +1858,7 @@ export const vocabularioIntermediario = {
         "Culture and entertainment"
       ],
       "correta": "Health and body",
-      "comentario": "Esse tipo de tarefa exige domínio de health and body.",
+      "comentario": "Esse tipo de tarefa exige dominio de health and body.",
       "tempoEstimado": 35,
       "tags": [
         "vocabulario-intermediario",
@@ -1881,22 +1882,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Health and body",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação prática depende mais diretamente de Health and body?",
+      "enunciado": "Qual situacao pratica depende mais diretamente de Health and body?",
       "opcoes": [
-        "entender campanhas e textos informativos sobre saúde",
+        "entender campanhas e textos informativos sobre saude",
         "resolver itens sobre meio ambiente e sustentabilidade",
-        "interpretar perfis profissionais e situações de trabalho",
+        "interpretar perfis profissionais e situacoes de trabalho",
         "ler textos sobre filmes, shows, livros e eventos culturais"
       ],
-      "correta": "entender campanhas e textos informativos sobre saúde",
-      "comentario": "Health and body aparece de forma direta em entender campanhas e textos informativos sobre saúde.",
+      "correta": "entender campanhas e textos informativos sobre saude",
+      "comentario": "Health and body aparece de forma direta em entender campanhas e textos informativos sobre saude.",
       "tempoEstimado": 35,
       "tags": [
         "vocabulario-intermediario",
@@ -1920,22 +1921,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Health and body",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre health and body?",
+      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre health and body?",
       "opcoes": [
-        "o caso é resolvido com foco em health and body.",
-        "o caso é melhor resolvido por environment and sustainability.",
+        "o caso e resolvido com foco em health and body.",
+        "o caso e melhor resolvido por environment and sustainability.",
         "o caso elimina a necessidade de work and professions.",
         "o caso impede qualquer uso de feelings and opinions."
       ],
-      "correta": "o caso é resolvido com foco em health and body.",
-      "comentario": "A conclusão correta retoma a função central de health and body.",
+      "correta": "o caso e resolvido com foco em health and body.",
+      "comentario": "A conclusao correta retoma a funcao central de health and body.",
       "tempoEstimado": 40,
       "tags": [
         "vocabulario-intermediario",
@@ -1959,8 +1960,8 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Health and body",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
@@ -1968,12 +1969,12 @@ export const vocabularioIntermediario = {
       "tipo": "multipla_escolha",
       "enunciado": "Se a turma fosse revisar health and body, qual pergunta de estudo seria a mais adequada?",
       "opcoes": [
-        "Como health and body aparece em entender campanhas e textos informativos sobre saúde?",
-        "Como environment and sustainability substitui totalmente entender campanhas e textos informativos sobre saúde?",
-        "Por que work and professions torna desnecessário estudar Health and body?",
+        "Como health and body aparece em entender campanhas e textos informativos sobre saude?",
+        "Como environment and sustainability substitui totalmente entender campanhas e textos informativos sobre saude?",
+        "Por que work and professions torna desnecessario estudar Health and body?",
         "De que modo feelings and opinions elimina toda leitura de contexto?"
       ],
-      "correta": "Como health and body aparece em entender campanhas e textos informativos sobre saúde?",
+      "correta": "Como health and body aparece em entender campanhas e textos informativos sobre saude?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de health and body.",
       "tempoEstimado": 40,
       "tags": [
@@ -1998,22 +1999,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Health and body",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em health and body é pensar que:",
+      "enunciado": "Um erro comum em health and body e pensar que:",
       "opcoes": [
-        "health vocabulary trata apenas de doenças graves",
-        "environment vocabulary aparece apenas em textos científicos longos",
-        "work vocabulary se limita ao nome de profissões",
+        "health vocabulary trata apenas de doencas graves",
+        "environment vocabulary aparece apenas em textos cientificos longos",
+        "work vocabulary se limita ao nome de profissoes",
         "feelings e opinions podem ser lidos da mesma forma em qualquer contexto"
       ],
-      "correta": "health vocabulary trata apenas de doenças graves",
-      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de health and body.",
+      "correta": "health vocabulary trata apenas de doencas graves",
+      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de health and body.",
       "tempoEstimado": 45,
       "tags": [
         "vocabulario-intermediario",
@@ -2037,22 +2038,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Health and body",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"se o texto fala de exercise e water, então não pertence ao campo da saúde\". A avaliação mais adequada é:",
+      "enunciado": "Um estudante afirma: \"se o texto fala de exercise e water, entao nao pertence ao campo da saude\". A avaliacao mais adequada e:",
       "opcoes": [
-        "A afirmação está incorreta, porque o vocabulário usado para falar de corpo, bem-estar, hábitos saudáveis, sintomas e cuidados.",
-        "A afirmação está correta, pois resume integralmente health and body.",
-        "A afirmação está correta, porque basta decorar a tradução do exemplo.",
-        "A afirmação está incorreta apenas por não citar uma regra gramatical."
+        "A afirmacao esta incorreta, porque o vocabulario usado para falar de corpo, bem-estar, habitos saudaveis, sintomas e cuidados.",
+        "A afirmacao esta correta, pois resume integralmente health and body.",
+        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
+        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
       ],
-      "correta": "A afirmação está incorreta, porque o vocabulário usado para falar de corpo, bem-estar, hábitos saudáveis, sintomas e cuidados.",
-      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre health and body.",
+      "correta": "A afirmacao esta incorreta, porque o vocabulario usado para falar de corpo, bem-estar, habitos saudaveis, sintomas e cuidados.",
+      "comentario": "A fala do estudante apresenta um equivoco conceitual sobre health and body.",
       "tempoEstimado": 45,
       "tags": [
         "vocabulario-intermediario",
@@ -2076,22 +2077,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Health and body",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se health and body fosse ignorado(a) em entender campanhas e textos informativos sobre saúde, o resultado mais provável seria:",
+      "enunciado": "Se health and body fosse ignorado(a) em entender campanhas e textos informativos sobre saude, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretação ficaria incompleta e aumentaria a chance de erro em entender campanhas e textos informativos sobre saúde.",
-        "a questão seria resolvida automaticamente por environment and sustainability.",
-        "nenhuma interpretação seria alterada, porque Health and body não interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
+        "a interpretacao ficaria incompleta e aumentaria a chance de erro em entender campanhas e textos informativos sobre saude.",
+        "a questao seria resolvida automaticamente por environment and sustainability.",
+        "nenhuma interpretacao seria alterada, porque Health and body nao interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
       ],
-      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em entender campanhas e textos informativos sobre saúde.",
-      "comentario": "Ignorar health and body compromete a resolução correta da atividade.",
+      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em entender campanhas e textos informativos sobre saude.",
+      "comentario": "Ignorar health and body compromete a resolucao correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "vocabulario-intermediario",
@@ -2115,14 +2116,14 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Health and body",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou ação ilustra melhor Health and body?",
+      "enunciado": "Qual trecho ou acao ilustra melhor Health and body?",
       "opcoes": [
         "Regular exercise improves both body and mind.",
         "The campaign encourages students to reduce plastic waste.",
@@ -2130,7 +2131,7 @@ export const vocabularioIntermediario = {
         "I feel nervous, but I still agree with the plan."
       ],
       "correta": "Regular exercise improves both body and mind.",
-      "comentario": "O item correto é o que melhor exemplifica health and body.",
+      "comentario": "O item correto e o que melhor exemplifica health and body.",
       "tempoEstimado": 50,
       "tags": [
         "vocabulario-intermediario",
@@ -2154,21 +2155,21 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Health and body",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao encontrar o exemplo \"Regular exercise improves both body and mind.\", a leitura mais adequada é:",
+      "enunciado": "Ao encontrar o exemplo \"Regular exercise improves both body and mind.\", a leitura mais adequada e:",
       "opcoes": [
-        "a frase mobiliza vocabulário de saúde e bem-estar",
-        "a frase trabalha vocabulário ambiental em contexto prático",
-        "a frase articula profissão, ambiente e rotina de trabalho",
-        "a frase combina emoção e posicionamento pessoal"
+        "a frase mobiliza vocabulario de saude e bem-estar",
+        "a frase trabalha vocabulario ambiental em contexto pratico",
+        "a frase articula profissao, ambiente e rotina de trabalho",
+        "a frase combina emocao e posicionamento pessoal"
       ],
-      "correta": "a frase mobiliza vocabulário de saúde e bem-estar",
+      "correta": "a frase mobiliza vocabulario de saude e bem-estar",
       "comentario": "A leitura correta do exemplo revela o papel de health and body.",
       "tempoEstimado": 55,
       "tags": [
@@ -2193,22 +2194,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Health and body",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estratégia ajuda mais a estudar health and body?",
+      "enunciado": "Qual estrategia ajuda mais a estudar health and body?",
       "opcoes": [
-        "identificar termos ligados a hábitos, corpo e prevenção",
-        "procurar termos ligados a natureza, impacto ambiental e ações sustentáveis",
-        "relacionar profissão, local e atividade descrita",
-        "observar adjetivos, verbos e expressões avaliativas"
+        "identificar termos ligados a habitos, corpo e prevencao",
+        "procurar termos ligados a natureza, impacto ambiental e acoes sustentaveis",
+        "relacionar profissao, local e atividade descrita",
+        "observar adjetivos, verbos e expressoes avaliativas"
       ],
-      "correta": "identificar termos ligados a hábitos, corpo e prevenção",
-      "comentario": "A estratégia correta fortalece o domínio de health and body.",
+      "correta": "identificar termos ligados a habitos, corpo e prevencao",
+      "comentario": "A estrategia correta fortalece o dominio de health and body.",
       "tempoEstimado": 55,
       "tags": [
         "vocabulario-intermediario",
@@ -2232,22 +2233,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Health and body",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Health and body é mais cobrado quando:",
+      "enunciado": "Em uma prova, Health and body e mais cobrado quando:",
       "opcoes": [
-        "o item pede compreensão de vocabulário em contexto de saúde",
-        "a questão usa tema ecológico para leitura e vocabulário",
-        "o item pede compreender vocabulário de profissão e rotina laboral",
-        "a questão exige reconhecer sentimento ou opinião expressa"
+        "o item pede compreensao de vocabulario em contexto de saude",
+        "a questao usa tema ecologico para leitura e vocabulario",
+        "o item pede compreender vocabulario de profissao e rotina laboral",
+        "a questao exige reconhecer sentimento ou opiniao expressa"
       ],
-      "correta": "o item pede compreensão de vocabulário em contexto de saúde",
-      "comentario": "Esse é o tipo de demanda em que health and body aparece com mais frequência.",
+      "correta": "o item pede compreensao de vocabulario em contexto de saude",
+      "comentario": "Esse e o tipo de demanda em que health and body aparece com mais frequencia.",
       "tempoEstimado": 60,
       "tags": [
         "vocabulario-intermediario",
@@ -2271,8 +2272,8 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Health and body",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
@@ -2280,13 +2281,13 @@ export const vocabularioIntermediario = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual resumo sintetiza melhor a ideia de Health and body?",
       "opcoes": [
-        "Em síntese, o vocabulário usado para falar de corpo, bem-estar, hábitos saudáveis, sintomas e cuidados.",
-        "Em síntese, o conjunto de palavras usado em temas ambientais, consumo consciente e sustentabilidade.",
-        "Em síntese, o vocabulário relacionado a ocupações, mercado de trabalho, tarefas e ambientes profissionais.",
-        "Em síntese, o vocabulário usado para expressar emoções, preferências, avaliação e posicionamento pessoal."
+        "Em sintese, o vocabulario usado para falar de corpo, bem-estar, habitos saudaveis, sintomas e cuidados.",
+        "Em sintese, o conjunto de palavras usado em temas ambientais, consumo consciente e sustentabilidade.",
+        "Em sintese, o vocabulario relacionado a ocupacoes, mercado de trabalho, tarefas e ambientes profissionais.",
+        "Em sintese, o vocabulario usado para expressar emocoes, preferencias, avaliacao e posicionamento pessoal."
       ],
-      "correta": "Em síntese, o vocabulário usado para falar de corpo, bem-estar, hábitos saudáveis, sintomas e cuidados.",
-      "comentario": "O resumo correto recupera o núcleo de health and body.",
+      "correta": "Em sintese, o vocabulario usado para falar de corpo, bem-estar, habitos saudaveis, sintomas e cuidados.",
+      "comentario": "O resumo correto recupera o nucleo de health and body.",
       "tempoEstimado": 60,
       "tags": [
         "vocabulario-intermediario",
@@ -2310,22 +2311,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Health and body",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associação entre exemplo e interpretação está correta em Health and body?",
+      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Health and body?",
       "opcoes": [
-        "Regular exercise improves both body and mind. -> a frase mobiliza vocabulário de saúde e bem-estar",
-        "The campaign encourages students to reduce plastic waste. -> a frase mobiliza vocabulário de saúde e bem-estar",
-        "The nurse works long shifts at the hospital. -> a frase combina emoção e posicionamento pessoal",
-        "I feel nervous, but I still agree with the plan. -> a frase trabalha vocabulário ambiental em contexto prático"
+        "Regular exercise improves both body and mind. -> a frase mobiliza vocabulario de saude e bem-estar",
+        "The campaign encourages students to reduce plastic waste. -> a frase mobiliza vocabulario de saude e bem-estar",
+        "The nurse works long shifts at the hospital. -> a frase combina emocao e posicionamento pessoal",
+        "I feel nervous, but I still agree with the plan. -> a frase trabalha vocabulario ambiental em contexto pratico"
       ],
-      "correta": "Regular exercise improves both body and mind. -> a frase mobiliza vocabulário de saúde e bem-estar",
-      "comentario": "A associação correta mantém coerência entre exemplo e interpretação em health and body.",
+      "correta": "Regular exercise improves both body and mind. -> a frase mobiliza vocabulario de saude e bem-estar",
+      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em health and body.",
       "tempoEstimado": 65,
       "tags": [
         "vocabulario-intermediario",
@@ -2349,8 +2350,8 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Health and body",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
@@ -2358,13 +2359,13 @@ export const vocabularioIntermediario = {
       "tipo": "multipla_escolha",
       "enunciado": "Ao resolver uma atividade sobre health and body, o estudante deve principalmente:",
       "opcoes": [
-        "reconhecer palavras ligadas a saúde e rotina corporal",
-        "identificar termos ligados a hábitos, corpo e prevenção",
-        "entender campanhas e textos informativos sobre saúde",
-        "o item pede compreensão de vocabulário em contexto de saúde"
+        "reconhecer palavras ligadas a saude e rotina corporal",
+        "identificar termos ligados a habitos, corpo e prevencao",
+        "entender campanhas e textos informativos sobre saude",
+        "o item pede compreensao de vocabulario em contexto de saude"
       ],
-      "correta": "reconhecer palavras ligadas a saúde e rotina corporal",
-      "comentario": "O objetivo central de health and body é reconhecer palavras ligadas a saúde e rotina corporal.",
+      "correta": "reconhecer palavras ligadas a saude e rotina corporal",
+      "comentario": "O objetivo central de health and body e reconhecer palavras ligadas a saude e rotina corporal.",
       "tempoEstimado": 70,
       "tags": [
         "vocabulario-intermediario",
@@ -2388,19 +2389,19 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Environment and sustainability",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Inglês, Environment and sustainability refere-se a:",
+      "enunciado": "Em Ingles, Environment and sustainability refere-se a:",
       "opcoes": [
         "o conjunto de palavras usado em temas ambientais, consumo consciente e sustentabilidade",
-        "o vocabulário relacionado a ocupações, mercado de trabalho, tarefas e ambientes profissionais",
-        "o vocabulário usado para expressar emoções, preferências, avaliação e posicionamento pessoal",
-        "o vocabulário ligado a música, cinema, literatura, eventos culturais e lazer"
+        "o vocabulario relacionado a ocupacoes, mercado de trabalho, tarefas e ambientes profissionais",
+        "o vocabulario usado para expressar emocoes, preferencias, avaliacao e posicionamento pessoal",
+        "o vocabulario ligado a musica, cinema, literatura, eventos culturais e lazer"
       ],
       "correta": "o conjunto de palavras usado em temas ambientais, consumo consciente e sustentabilidade",
       "comentario": "Environment and sustainability refere-se ao conjunto de palavras usado em temas ambientais, consumo consciente e sustentabilidade.",
@@ -2427,14 +2428,14 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Environment and sustainability",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: um cartaz menciona recycling, pollution, renewable energy and waste reduction. Esse caso está mais ligado a qual subtópico?",
+      "enunciado": "Observe a situacao: um cartaz menciona recycling, pollution, renewable energy and waste reduction. Esse caso esta mais ligado a qual subtopico?",
       "opcoes": [
         "Environment and sustainability",
         "Work and professions",
@@ -2442,7 +2443,7 @@ export const vocabularioIntermediario = {
         "Culture and entertainment"
       ],
       "correta": "Environment and sustainability",
-      "comentario": "A situação apresentada é melhor compreendida por meio de environment and sustainability.",
+      "comentario": "A situacao apresentada e melhor compreendida por meio de environment and sustainability.",
       "tempoEstimado": 20,
       "tags": [
         "vocabulario-intermediario",
@@ -2466,8 +2467,8 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Environment and sustainability",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
@@ -2505,22 +2506,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Environment and sustainability",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO representa corretamente environment and sustainability?",
+      "enunciado": "Qual alternativa NAO representa corretamente environment and sustainability?",
       "opcoes": [
         "The nurse works long shifts at the hospital.",
         "The campaign encourages students to reduce plastic waste.",
-        "procurar termos ligados a natureza, impacto ambiental e ações sustentáveis.",
+        "procurar termos ligados a natureza, impacto ambiental e acoes sustentaveis.",
         "resolver itens sobre meio ambiente e sustentabilidade."
       ],
       "correta": "The nurse works long shifts at the hospital.",
-      "comentario": "A opção incompatível ilustra outro subtópico, e não environment and sustainability.",
+      "comentario": "A opcao incompativel ilustra outro subtopico, e nao environment and sustainability.",
       "tempoEstimado": 25,
       "tags": [
         "vocabulario-intermediario",
@@ -2544,22 +2545,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Environment and sustainability",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar environment and sustainability, o foco principal é:",
+      "enunciado": "Ao estudar environment and sustainability, o foco principal e:",
       "opcoes": [
-        "interpretar vocabulário ecológico e de responsabilidade ambiental",
-        "reconhecer profissões e situações ligadas ao mundo do trabalho",
-        "identificar palavras que revelam sentimento e opinião",
-        "reconhecer léxico de práticas culturais e entretenimento"
+        "interpretar vocabulario ecologico e de responsabilidade ambiental",
+        "reconhecer profissoes e situacoes ligadas ao mundo do trabalho",
+        "identificar palavras que revelam sentimento e opiniao",
+        "reconhecer lexico de praticas culturais e entretenimento"
       ],
-      "correta": "interpretar vocabulário ecológico e de responsabilidade ambiental",
-      "comentario": "Environment and sustainability concentra-se em interpretar vocabulário ecológico e de responsabilidade ambiental.",
+      "correta": "interpretar vocabulario ecologico e de responsabilidade ambiental",
+      "comentario": "Environment and sustainability concentra-se em interpretar vocabulario ecologico e de responsabilidade ambiental.",
       "tempoEstimado": 30,
       "tags": [
         "vocabulario-intermediario",
@@ -2583,22 +2584,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Environment and sustainability",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Work and professions trata de o vocabulário relacionado a ocupações, mercado de trabalho, tarefas e ambientes profissionais, Environment and sustainability destaca:",
+      "enunciado": "Enquanto Work and professions trata de o vocabulario relacionado a ocupacoes, mercado de trabalho, tarefas e ambientes profissionais, Environment and sustainability destaca:",
       "opcoes": [
         "O conjunto de palavras usado em temas ambientais, consumo consciente e sustentabilidade.",
-        "O vocabulário relacionado a ocupações, mercado de trabalho, tarefas e ambientes profissionais.",
-        "O vocabulário usado para expressar emoções, preferências, avaliação e posicionamento pessoal.",
-        "O vocabulário ligado a música, cinema, literatura, eventos culturais e lazer."
+        "O vocabulario relacionado a ocupacoes, mercado de trabalho, tarefas e ambientes profissionais.",
+        "O vocabulario usado para expressar emocoes, preferencias, avaliacao e posicionamento pessoal.",
+        "O vocabulario ligado a musica, cinema, literatura, eventos culturais e lazer."
       ],
       "correta": "O conjunto de palavras usado em temas ambientais, consumo consciente e sustentabilidade.",
-      "comentario": "A comparação correta mostra a especificidade de environment and sustainability.",
+      "comentario": "A comparacao correta mostra a especificidade de environment and sustainability.",
       "tempoEstimado": 30,
       "tags": [
         "vocabulario-intermediario",
@@ -2622,8 +2623,8 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Environment and sustainability",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
@@ -2637,7 +2638,7 @@ export const vocabularioIntermediario = {
         "Social issues"
       ],
       "correta": "Environment and sustainability",
-      "comentario": "Esse tipo de tarefa exige domínio de environment and sustainability.",
+      "comentario": "Esse tipo de tarefa exige dominio de environment and sustainability.",
       "tempoEstimado": 35,
       "tags": [
         "vocabulario-intermediario",
@@ -2661,19 +2662,19 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Environment and sustainability",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação prática depende mais diretamente de Environment and sustainability?",
+      "enunciado": "Qual situacao pratica depende mais diretamente de Environment and sustainability?",
       "opcoes": [
         "resolver itens sobre meio ambiente e sustentabilidade",
-        "interpretar perfis profissionais e situações de trabalho",
-        "interpretar posicionamentos em textos curtos e opiniões em redes sociais",
-        "resolver itens com temática social e cidadania"
+        "interpretar perfis profissionais e situacoes de trabalho",
+        "interpretar posicionamentos em textos curtos e opinioes em redes sociais",
+        "resolver itens com tematica social e cidadania"
       ],
       "correta": "resolver itens sobre meio ambiente e sustentabilidade",
       "comentario": "Environment and sustainability aparece de forma direta em resolver itens sobre meio ambiente e sustentabilidade.",
@@ -2700,22 +2701,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Environment and sustainability",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre environment and sustainability?",
+      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre environment and sustainability?",
       "opcoes": [
-        "o caso é resolvido com foco em environment and sustainability.",
-        "o caso é melhor resolvido por work and professions.",
+        "o caso e resolvido com foco em environment and sustainability.",
+        "o caso e melhor resolvido por work and professions.",
         "o caso elimina a necessidade de feelings and opinions.",
         "o caso impede qualquer uso de culture and entertainment."
       ],
-      "correta": "o caso é resolvido com foco em environment and sustainability.",
-      "comentario": "A conclusão correta retoma a função central de environment and sustainability.",
+      "correta": "o caso e resolvido com foco em environment and sustainability.",
+      "comentario": "A conclusao correta retoma a funcao central de environment and sustainability.",
       "tempoEstimado": 40,
       "tags": [
         "vocabulario-intermediario",
@@ -2739,8 +2740,8 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Environment and sustainability",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
@@ -2750,7 +2751,7 @@ export const vocabularioIntermediario = {
       "opcoes": [
         "Como environment and sustainability aparece em resolver itens sobre meio ambiente e sustentabilidade?",
         "Como work and professions substitui totalmente resolver itens sobre meio ambiente e sustentabilidade?",
-        "Por que feelings and opinions torna desnecessário estudar Environment and sustainability?",
+        "Por que feelings and opinions torna desnecessario estudar Environment and sustainability?",
         "De que modo culture and entertainment elimina toda leitura de contexto?"
       ],
       "correta": "Como environment and sustainability aparece em resolver itens sobre meio ambiente e sustentabilidade?",
@@ -2778,22 +2779,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Environment and sustainability",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em environment and sustainability é pensar que:",
+      "enunciado": "Um erro comum em environment and sustainability e pensar que:",
       "opcoes": [
-        "environment vocabulary aparece apenas em textos científicos longos",
-        "work vocabulary se limita ao nome de profissões",
+        "environment vocabulary aparece apenas em textos cientificos longos",
+        "work vocabulary se limita ao nome de profissoes",
         "feelings e opinions podem ser lidos da mesma forma em qualquer contexto",
         "culture vocabulary aparece apenas em textos sobre arte erudita"
       ],
-      "correta": "environment vocabulary aparece apenas em textos científicos longos",
-      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de environment and sustainability.",
+      "correta": "environment vocabulary aparece apenas em textos cientificos longos",
+      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de environment and sustainability.",
       "tempoEstimado": 45,
       "tags": [
         "vocabulario-intermediario",
@@ -2817,22 +2818,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Environment and sustainability",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"palavras como recycle e pollution não costumam aparecer em textos escolares\". A avaliação mais adequada é:",
+      "enunciado": "Um estudante afirma: \"palavras como recycle e pollution nao costumam aparecer em textos escolares\". A avaliacao mais adequada e:",
       "opcoes": [
-        "A afirmação está incorreta, porque o conjunto de palavras usado em temas ambientais, consumo consciente e sustentabilidade.",
-        "A afirmação está correta, pois resume integralmente environment and sustainability.",
-        "A afirmação está correta, porque basta decorar a tradução do exemplo.",
-        "A afirmação está incorreta apenas por não citar uma regra gramatical."
+        "A afirmacao esta incorreta, porque o conjunto de palavras usado em temas ambientais, consumo consciente e sustentabilidade.",
+        "A afirmacao esta correta, pois resume integralmente environment and sustainability.",
+        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
+        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
       ],
-      "correta": "A afirmação está incorreta, porque o conjunto de palavras usado em temas ambientais, consumo consciente e sustentabilidade.",
-      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre environment and sustainability.",
+      "correta": "A afirmacao esta incorreta, porque o conjunto de palavras usado em temas ambientais, consumo consciente e sustentabilidade.",
+      "comentario": "A fala do estudante apresenta um equivoco conceitual sobre environment and sustainability.",
       "tempoEstimado": 45,
       "tags": [
         "vocabulario-intermediario",
@@ -2856,22 +2857,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Environment and sustainability",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se environment and sustainability fosse ignorado(a) em resolver itens sobre meio ambiente e sustentabilidade, o resultado mais provável seria:",
+      "enunciado": "Se environment and sustainability fosse ignorado(a) em resolver itens sobre meio ambiente e sustentabilidade, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretação ficaria incompleta e aumentaria a chance de erro em resolver itens sobre meio ambiente e sustentabilidade.",
-        "a questão seria resolvida automaticamente por work and professions.",
-        "nenhuma interpretação seria alterada, porque Environment and sustainability não interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
+        "a interpretacao ficaria incompleta e aumentaria a chance de erro em resolver itens sobre meio ambiente e sustentabilidade.",
+        "a questao seria resolvida automaticamente por work and professions.",
+        "nenhuma interpretacao seria alterada, porque Environment and sustainability nao interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
       ],
-      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em resolver itens sobre meio ambiente e sustentabilidade.",
-      "comentario": "Ignorar environment and sustainability compromete a resolução correta da atividade.",
+      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em resolver itens sobre meio ambiente e sustentabilidade.",
+      "comentario": "Ignorar environment and sustainability compromete a resolucao correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "vocabulario-intermediario",
@@ -2895,14 +2896,14 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Environment and sustainability",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou ação ilustra melhor Environment and sustainability?",
+      "enunciado": "Qual trecho ou acao ilustra melhor Environment and sustainability?",
       "opcoes": [
         "The campaign encourages students to reduce plastic waste.",
         "The nurse works long shifts at the hospital.",
@@ -2910,7 +2911,7 @@ export const vocabularioIntermediario = {
         "The festival attracted a young audience interested in music and film."
       ],
       "correta": "The campaign encourages students to reduce plastic waste.",
-      "comentario": "O item correto é o que melhor exemplifica environment and sustainability.",
+      "comentario": "O item correto e o que melhor exemplifica environment and sustainability.",
       "tempoEstimado": 50,
       "tags": [
         "vocabulario-intermediario",
@@ -2934,21 +2935,21 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Environment and sustainability",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao encontrar o exemplo \"The campaign encourages students to reduce plastic waste.\", a leitura mais adequada é:",
+      "enunciado": "Ao encontrar o exemplo \"The campaign encourages students to reduce plastic waste.\", a leitura mais adequada e:",
       "opcoes": [
-        "a frase trabalha vocabulário ambiental em contexto prático",
-        "a frase articula profissão, ambiente e rotina de trabalho",
-        "a frase combina emoção e posicionamento pessoal",
-        "a frase reúne vocabulário típico de cultura e entretenimento"
+        "a frase trabalha vocabulario ambiental em contexto pratico",
+        "a frase articula profissao, ambiente e rotina de trabalho",
+        "a frase combina emocao e posicionamento pessoal",
+        "a frase reune vocabulario tipico de cultura e entretenimento"
       ],
-      "correta": "a frase trabalha vocabulário ambiental em contexto prático",
+      "correta": "a frase trabalha vocabulario ambiental em contexto pratico",
       "comentario": "A leitura correta do exemplo revela o papel de environment and sustainability.",
       "tempoEstimado": 55,
       "tags": [
@@ -2973,22 +2974,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Environment and sustainability",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estratégia ajuda mais a estudar environment and sustainability?",
+      "enunciado": "Qual estrategia ajuda mais a estudar environment and sustainability?",
       "opcoes": [
-        "procurar termos ligados a natureza, impacto ambiental e ações sustentáveis",
-        "relacionar profissão, local e atividade descrita",
-        "observar adjetivos, verbos e expressões avaliativas",
-        "identificar campo semântico de arte, evento e lazer"
+        "procurar termos ligados a natureza, impacto ambiental e acoes sustentaveis",
+        "relacionar profissao, local e atividade descrita",
+        "observar adjetivos, verbos e expressoes avaliativas",
+        "identificar campo semantico de arte, evento e lazer"
       ],
-      "correta": "procurar termos ligados a natureza, impacto ambiental e ações sustentáveis",
-      "comentario": "A estratégia correta fortalece o domínio de environment and sustainability.",
+      "correta": "procurar termos ligados a natureza, impacto ambiental e acoes sustentaveis",
+      "comentario": "A estrategia correta fortalece o dominio de environment and sustainability.",
       "tempoEstimado": 55,
       "tags": [
         "vocabulario-intermediario",
@@ -3012,22 +3013,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Environment and sustainability",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Environment and sustainability é mais cobrado quando:",
+      "enunciado": "Em uma prova, Environment and sustainability e mais cobrado quando:",
       "opcoes": [
-        "a questão usa tema ecológico para leitura e vocabulário",
-        "o item pede compreender vocabulário de profissão e rotina laboral",
-        "a questão exige reconhecer sentimento ou opinião expressa",
-        "a questão pede compreensão lexical em contexto cultural"
+        "a questao usa tema ecologico para leitura e vocabulario",
+        "o item pede compreender vocabulario de profissao e rotina laboral",
+        "a questao exige reconhecer sentimento ou opiniao expressa",
+        "a questao pede compreensao lexical em contexto cultural"
       ],
-      "correta": "a questão usa tema ecológico para leitura e vocabulário",
-      "comentario": "Esse é o tipo de demanda em que environment and sustainability aparece com mais frequência.",
+      "correta": "a questao usa tema ecologico para leitura e vocabulario",
+      "comentario": "Esse e o tipo de demanda em que environment and sustainability aparece com mais frequencia.",
       "tempoEstimado": 60,
       "tags": [
         "vocabulario-intermediario",
@@ -3051,8 +3052,8 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Environment and sustainability",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
@@ -3060,13 +3061,13 @@ export const vocabularioIntermediario = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual resumo sintetiza melhor a ideia de Environment and sustainability?",
       "opcoes": [
-        "Em síntese, o conjunto de palavras usado em temas ambientais, consumo consciente e sustentabilidade.",
-        "Em síntese, o vocabulário relacionado a ocupações, mercado de trabalho, tarefas e ambientes profissionais.",
-        "Em síntese, o vocabulário usado para expressar emoções, preferências, avaliação e posicionamento pessoal.",
-        "Em síntese, o vocabulário ligado a música, cinema, literatura, eventos culturais e lazer."
+        "Em sintese, o conjunto de palavras usado em temas ambientais, consumo consciente e sustentabilidade.",
+        "Em sintese, o vocabulario relacionado a ocupacoes, mercado de trabalho, tarefas e ambientes profissionais.",
+        "Em sintese, o vocabulario usado para expressar emocoes, preferencias, avaliacao e posicionamento pessoal.",
+        "Em sintese, o vocabulario ligado a musica, cinema, literatura, eventos culturais e lazer."
       ],
-      "correta": "Em síntese, o conjunto de palavras usado em temas ambientais, consumo consciente e sustentabilidade.",
-      "comentario": "O resumo correto recupera o núcleo de environment and sustainability.",
+      "correta": "Em sintese, o conjunto de palavras usado em temas ambientais, consumo consciente e sustentabilidade.",
+      "comentario": "O resumo correto recupera o nucleo de environment and sustainability.",
       "tempoEstimado": 60,
       "tags": [
         "vocabulario-intermediario",
@@ -3090,22 +3091,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Environment and sustainability",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associação entre exemplo e interpretação está correta em Environment and sustainability?",
+      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Environment and sustainability?",
       "opcoes": [
-        "The campaign encourages students to reduce plastic waste. -> a frase trabalha vocabulário ambiental em contexto prático",
-        "The nurse works long shifts at the hospital. -> a frase trabalha vocabulário ambiental em contexto prático",
-        "I feel nervous, but I still agree with the plan. -> a frase reúne vocabulário típico de cultura e entretenimento",
-        "The festival attracted a young audience interested in music and film. -> a frase articula profissão, ambiente e rotina de trabalho"
+        "The campaign encourages students to reduce plastic waste. -> a frase trabalha vocabulario ambiental em contexto pratico",
+        "The nurse works long shifts at the hospital. -> a frase trabalha vocabulario ambiental em contexto pratico",
+        "I feel nervous, but I still agree with the plan. -> a frase reune vocabulario tipico de cultura e entretenimento",
+        "The festival attracted a young audience interested in music and film. -> a frase articula profissao, ambiente e rotina de trabalho"
       ],
-      "correta": "The campaign encourages students to reduce plastic waste. -> a frase trabalha vocabulário ambiental em contexto prático",
-      "comentario": "A associação correta mantém coerência entre exemplo e interpretação em environment and sustainability.",
+      "correta": "The campaign encourages students to reduce plastic waste. -> a frase trabalha vocabulario ambiental em contexto pratico",
+      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em environment and sustainability.",
       "tempoEstimado": 65,
       "tags": [
         "vocabulario-intermediario",
@@ -3129,8 +3130,8 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Environment and sustainability",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
@@ -3138,13 +3139,13 @@ export const vocabularioIntermediario = {
       "tipo": "multipla_escolha",
       "enunciado": "Ao resolver uma atividade sobre environment and sustainability, o estudante deve principalmente:",
       "opcoes": [
-        "interpretar vocabulário ecológico e de responsabilidade ambiental",
-        "procurar termos ligados a natureza, impacto ambiental e ações sustentáveis",
+        "interpretar vocabulario ecologico e de responsabilidade ambiental",
+        "procurar termos ligados a natureza, impacto ambiental e acoes sustentaveis",
         "resolver itens sobre meio ambiente e sustentabilidade",
-        "a questão usa tema ecológico para leitura e vocabulário"
+        "a questao usa tema ecologico para leitura e vocabulario"
       ],
-      "correta": "interpretar vocabulário ecológico e de responsabilidade ambiental",
-      "comentario": "O objetivo central de environment and sustainability é interpretar vocabulário ecológico e de responsabilidade ambiental.",
+      "correta": "interpretar vocabulario ecologico e de responsabilidade ambiental",
+      "comentario": "O objetivo central de environment and sustainability e interpretar vocabulario ecologico e de responsabilidade ambiental.",
       "tempoEstimado": 70,
       "tags": [
         "vocabulario-intermediario",
@@ -3168,22 +3169,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Work and professions",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Inglês, Work and professions refere-se a:",
+      "enunciado": "Em Ingles, Work and professions refere-se a:",
       "opcoes": [
-        "o vocabulário relacionado a ocupações, mercado de trabalho, tarefas e ambientes profissionais",
-        "o vocabulário usado para expressar emoções, preferências, avaliação e posicionamento pessoal",
-        "o vocabulário ligado a música, cinema, literatura, eventos culturais e lazer",
-        "o vocabulário usado para discutir desigualdade, direitos, educação, inclusão e problemas sociais"
+        "o vocabulario relacionado a ocupacoes, mercado de trabalho, tarefas e ambientes profissionais",
+        "o vocabulario usado para expressar emocoes, preferencias, avaliacao e posicionamento pessoal",
+        "o vocabulario ligado a musica, cinema, literatura, eventos culturais e lazer",
+        "o vocabulario usado para discutir desigualdade, direitos, educacao, inclusao e problemas sociais"
       ],
-      "correta": "o vocabulário relacionado a ocupações, mercado de trabalho, tarefas e ambientes profissionais",
-      "comentario": "Work and professions refere-se ao vocabulário relacionado a ocupações, mercado de trabalho, tarefas e ambientes profissionais.",
+      "correta": "o vocabulario relacionado a ocupacoes, mercado de trabalho, tarefas e ambientes profissionais",
+      "comentario": "Work and professions refere-se ao vocabulario relacionado a ocupacoes, mercado de trabalho, tarefas e ambientes profissionais.",
       "tempoEstimado": 20,
       "tags": [
         "vocabulario-intermediario",
@@ -3207,14 +3208,14 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Work and professions",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: um texto apresenta doctor, engineer, office, schedule and teamwork. Esse caso está mais ligado a qual subtópico?",
+      "enunciado": "Observe a situacao: um texto apresenta doctor, engineer, office, schedule and teamwork. Esse caso esta mais ligado a qual subtopico?",
       "opcoes": [
         "Work and professions",
         "Feelings and opinions",
@@ -3222,7 +3223,7 @@ export const vocabularioIntermediario = {
         "Social issues"
       ],
       "correta": "Work and professions",
-      "comentario": "A situação apresentada é melhor compreendida por meio de work and professions.",
+      "comentario": "A situacao apresentada e melhor compreendida por meio de work and professions.",
       "tempoEstimado": 20,
       "tags": [
         "vocabulario-intermediario",
@@ -3246,8 +3247,8 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Work and professions",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
@@ -3285,22 +3286,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Work and professions",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO representa corretamente work and professions?",
+      "enunciado": "Qual alternativa NAO representa corretamente work and professions?",
       "opcoes": [
         "I feel nervous, but I still agree with the plan.",
         "The nurse works long shifts at the hospital.",
-        "relacionar profissão, local e atividade descrita.",
-        "interpretar perfis profissionais e situações de trabalho."
+        "relacionar profissao, local e atividade descrita.",
+        "interpretar perfis profissionais e situacoes de trabalho."
       ],
       "correta": "I feel nervous, but I still agree with the plan.",
-      "comentario": "A opção incompatível ilustra outro subtópico, e não work and professions.",
+      "comentario": "A opcao incompativel ilustra outro subtopico, e nao work and professions.",
       "tempoEstimado": 25,
       "tags": [
         "vocabulario-intermediario",
@@ -3324,22 +3325,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Work and professions",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar work and professions, o foco principal é:",
+      "enunciado": "Ao estudar work and professions, o foco principal e:",
       "opcoes": [
-        "reconhecer profissões e situações ligadas ao mundo do trabalho",
-        "identificar palavras que revelam sentimento e opinião",
-        "reconhecer léxico de práticas culturais e entretenimento",
+        "reconhecer profissoes e situacoes ligadas ao mundo do trabalho",
+        "identificar palavras que revelam sentimento e opiniao",
+        "reconhecer lexico de praticas culturais e entretenimento",
         "interpretar temas sociais frequentes em textos atuais"
       ],
-      "correta": "reconhecer profissões e situações ligadas ao mundo do trabalho",
-      "comentario": "Work and professions concentra-se em reconhecer profissões e situações ligadas ao mundo do trabalho.",
+      "correta": "reconhecer profissoes e situacoes ligadas ao mundo do trabalho",
+      "comentario": "Work and professions concentra-se em reconhecer profissoes e situacoes ligadas ao mundo do trabalho.",
       "tempoEstimado": 30,
       "tags": [
         "vocabulario-intermediario",
@@ -3363,22 +3364,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Work and professions",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Feelings and opinions trata de o vocabulário usado para expressar emoções, preferências, avaliação e posicionamento pessoal, Work and professions destaca:",
+      "enunciado": "Enquanto Feelings and opinions trata de o vocabulario usado para expressar emocoes, preferencias, avaliacao e posicionamento pessoal, Work and professions destaca:",
       "opcoes": [
-        "O vocabulário relacionado a ocupações, mercado de trabalho, tarefas e ambientes profissionais.",
-        "O vocabulário usado para expressar emoções, preferências, avaliação e posicionamento pessoal.",
-        "O vocabulário ligado a música, cinema, literatura, eventos culturais e lazer.",
-        "O vocabulário usado para discutir desigualdade, direitos, educação, inclusão e problemas sociais."
+        "O vocabulario relacionado a ocupacoes, mercado de trabalho, tarefas e ambientes profissionais.",
+        "O vocabulario usado para expressar emocoes, preferencias, avaliacao e posicionamento pessoal.",
+        "O vocabulario ligado a musica, cinema, literatura, eventos culturais e lazer.",
+        "O vocabulario usado para discutir desigualdade, direitos, educacao, inclusao e problemas sociais."
       ],
-      "correta": "O vocabulário relacionado a ocupações, mercado de trabalho, tarefas e ambientes profissionais.",
-      "comentario": "A comparação correta mostra a especificidade de work and professions.",
+      "correta": "O vocabulario relacionado a ocupacoes, mercado de trabalho, tarefas e ambientes profissionais.",
+      "comentario": "A comparacao correta mostra a especificidade de work and professions.",
       "tempoEstimado": 30,
       "tags": [
         "vocabulario-intermediario",
@@ -3402,8 +3403,8 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Work and professions",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
@@ -3417,7 +3418,7 @@ export const vocabularioIntermediario = {
         "Phrasal expressions and collocations"
       ],
       "correta": "Work and professions",
-      "comentario": "Esse tipo de tarefa exige domínio de work and professions.",
+      "comentario": "Esse tipo de tarefa exige dominio de work and professions.",
       "tempoEstimado": 35,
       "tags": [
         "vocabulario-intermediario",
@@ -3441,22 +3442,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Work and professions",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação prática depende mais diretamente de Work and professions?",
+      "enunciado": "Qual situacao pratica depende mais diretamente de Work and professions?",
       "opcoes": [
-        "interpretar perfis profissionais e situações de trabalho",
-        "interpretar posicionamentos em textos curtos e opiniões em redes sociais",
+        "interpretar perfis profissionais e situacoes de trabalho",
+        "interpretar posicionamentos em textos curtos e opinioes em redes sociais",
         "ler textos sobre filmes, shows, livros e eventos culturais",
-        "interpretar expressões que não devem ser lidas palavra por palavra"
+        "interpretar expressoes que nao devem ser lidas palavra por palavra"
       ],
-      "correta": "interpretar perfis profissionais e situações de trabalho",
-      "comentario": "Work and professions aparece de forma direta em interpretar perfis profissionais e situações de trabalho.",
+      "correta": "interpretar perfis profissionais e situacoes de trabalho",
+      "comentario": "Work and professions aparece de forma direta em interpretar perfis profissionais e situacoes de trabalho.",
       "tempoEstimado": 35,
       "tags": [
         "vocabulario-intermediario",
@@ -3480,22 +3481,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Work and professions",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre work and professions?",
+      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre work and professions?",
       "opcoes": [
-        "o caso é resolvido com foco em work and professions.",
-        "o caso é melhor resolvido por feelings and opinions.",
+        "o caso e resolvido com foco em work and professions.",
+        "o caso e melhor resolvido por feelings and opinions.",
         "o caso elimina a necessidade de culture and entertainment.",
         "o caso impede qualquer uso de social issues."
       ],
-      "correta": "o caso é resolvido com foco em work and professions.",
-      "comentario": "A conclusão correta retoma a função central de work and professions.",
+      "correta": "o caso e resolvido com foco em work and professions.",
+      "comentario": "A conclusao correta retoma a funcao central de work and professions.",
       "tempoEstimado": 40,
       "tags": [
         "vocabulario-intermediario",
@@ -3519,8 +3520,8 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Work and professions",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
@@ -3528,12 +3529,12 @@ export const vocabularioIntermediario = {
       "tipo": "multipla_escolha",
       "enunciado": "Se a turma fosse revisar work and professions, qual pergunta de estudo seria a mais adequada?",
       "opcoes": [
-        "Como work and professions aparece em interpretar perfis profissionais e situações de trabalho?",
-        "Como feelings and opinions substitui totalmente interpretar perfis profissionais e situações de trabalho?",
-        "Por que culture and entertainment torna desnecessário estudar Work and professions?",
+        "Como work and professions aparece em interpretar perfis profissionais e situacoes de trabalho?",
+        "Como feelings and opinions substitui totalmente interpretar perfis profissionais e situacoes de trabalho?",
+        "Por que culture and entertainment torna desnecessario estudar Work and professions?",
         "De que modo social issues elimina toda leitura de contexto?"
       ],
-      "correta": "Como work and professions aparece em interpretar perfis profissionais e situações de trabalho?",
+      "correta": "Como work and professions aparece em interpretar perfis profissionais e situacoes de trabalho?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de work and professions.",
       "tempoEstimado": 40,
       "tags": [
@@ -3558,22 +3559,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Work and professions",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em work and professions é pensar que:",
+      "enunciado": "Um erro comum em work and professions e pensar que:",
       "opcoes": [
-        "work vocabulary se limita ao nome de profissões",
+        "work vocabulary se limita ao nome de profissoes",
         "feelings e opinions podem ser lidos da mesma forma em qualquer contexto",
         "culture vocabulary aparece apenas em textos sobre arte erudita",
-        "social issues vocabulary é avançado demais para aparecer em textos curtos"
+        "social issues vocabulary e avancado demais para aparecer em textos curtos"
       ],
-      "correta": "work vocabulary se limita ao nome de profissões",
-      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de work and professions.",
+      "correta": "work vocabulary se limita ao nome de profissoes",
+      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de work and professions.",
       "tempoEstimado": 45,
       "tags": [
         "vocabulario-intermediario",
@@ -3597,22 +3598,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Work and professions",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"se o texto não cita uma profissão específica, então não trata de trabalho\". A avaliação mais adequada é:",
+      "enunciado": "Um estudante afirma: \"se o texto nao cita uma profissao especifica, entao nao trata de trabalho\". A avaliacao mais adequada e:",
       "opcoes": [
-        "A afirmação está incorreta, porque o vocabulário relacionado a ocupações, mercado de trabalho, tarefas e ambientes profissionais.",
-        "A afirmação está correta, pois resume integralmente work and professions.",
-        "A afirmação está correta, porque basta decorar a tradução do exemplo.",
-        "A afirmação está incorreta apenas por não citar uma regra gramatical."
+        "A afirmacao esta incorreta, porque o vocabulario relacionado a ocupacoes, mercado de trabalho, tarefas e ambientes profissionais.",
+        "A afirmacao esta correta, pois resume integralmente work and professions.",
+        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
+        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
       ],
-      "correta": "A afirmação está incorreta, porque o vocabulário relacionado a ocupações, mercado de trabalho, tarefas e ambientes profissionais.",
-      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre work and professions.",
+      "correta": "A afirmacao esta incorreta, porque o vocabulario relacionado a ocupacoes, mercado de trabalho, tarefas e ambientes profissionais.",
+      "comentario": "A fala do estudante apresenta um equivoco conceitual sobre work and professions.",
       "tempoEstimado": 45,
       "tags": [
         "vocabulario-intermediario",
@@ -3636,22 +3637,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Work and professions",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se work and professions fosse ignorado(a) em interpretar perfis profissionais e situações de trabalho, o resultado mais provável seria:",
+      "enunciado": "Se work and professions fosse ignorado(a) em interpretar perfis profissionais e situacoes de trabalho, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretação ficaria incompleta e aumentaria a chance de erro em interpretar perfis profissionais e situações de trabalho.",
-        "a questão seria resolvida automaticamente por feelings and opinions.",
-        "nenhuma interpretação seria alterada, porque Work and professions não interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
+        "a interpretacao ficaria incompleta e aumentaria a chance de erro em interpretar perfis profissionais e situacoes de trabalho.",
+        "a questao seria resolvida automaticamente por feelings and opinions.",
+        "nenhuma interpretacao seria alterada, porque Work and professions nao interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
       ],
-      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em interpretar perfis profissionais e situações de trabalho.",
-      "comentario": "Ignorar work and professions compromete a resolução correta da atividade.",
+      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em interpretar perfis profissionais e situacoes de trabalho.",
+      "comentario": "Ignorar work and professions compromete a resolucao correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "vocabulario-intermediario",
@@ -3675,14 +3676,14 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Work and professions",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou ação ilustra melhor Work and professions?",
+      "enunciado": "Qual trecho ou acao ilustra melhor Work and professions?",
       "opcoes": [
         "The nurse works long shifts at the hospital.",
         "I feel nervous, but I still agree with the plan.",
@@ -3690,7 +3691,7 @@ export const vocabularioIntermediario = {
         "The article highlights the need for equal access to education."
       ],
       "correta": "The nurse works long shifts at the hospital.",
-      "comentario": "O item correto é o que melhor exemplifica work and professions.",
+      "comentario": "O item correto e o que melhor exemplifica work and professions.",
       "tempoEstimado": 50,
       "tags": [
         "vocabulario-intermediario",
@@ -3714,21 +3715,21 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Work and professions",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao encontrar o exemplo \"The nurse works long shifts at the hospital.\", a leitura mais adequada é:",
+      "enunciado": "Ao encontrar o exemplo \"The nurse works long shifts at the hospital.\", a leitura mais adequada e:",
       "opcoes": [
-        "a frase articula profissão, ambiente e rotina de trabalho",
-        "a frase combina emoção e posicionamento pessoal",
-        "a frase reúne vocabulário típico de cultura e entretenimento",
-        "a frase mobiliza vocabulário de debate social"
+        "a frase articula profissao, ambiente e rotina de trabalho",
+        "a frase combina emocao e posicionamento pessoal",
+        "a frase reune vocabulario tipico de cultura e entretenimento",
+        "a frase mobiliza vocabulario de debate social"
       ],
-      "correta": "a frase articula profissão, ambiente e rotina de trabalho",
+      "correta": "a frase articula profissao, ambiente e rotina de trabalho",
       "comentario": "A leitura correta do exemplo revela o papel de work and professions.",
       "tempoEstimado": 55,
       "tags": [
@@ -3753,22 +3754,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Work and professions",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estratégia ajuda mais a estudar work and professions?",
+      "enunciado": "Qual estrategia ajuda mais a estudar work and professions?",
       "opcoes": [
-        "relacionar profissão, local e atividade descrita",
-        "observar adjetivos, verbos e expressões avaliativas",
-        "identificar campo semântico de arte, evento e lazer",
+        "relacionar profissao, local e atividade descrita",
+        "observar adjetivos, verbos e expressoes avaliativas",
+        "identificar campo semantico de arte, evento e lazer",
         "observar palavras ligadas a direitos, desigualdade e comunidade"
       ],
-      "correta": "relacionar profissão, local e atividade descrita",
-      "comentario": "A estratégia correta fortalece o domínio de work and professions.",
+      "correta": "relacionar profissao, local e atividade descrita",
+      "comentario": "A estrategia correta fortalece o dominio de work and professions.",
       "tempoEstimado": 55,
       "tags": [
         "vocabulario-intermediario",
@@ -3792,22 +3793,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Work and professions",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Work and professions é mais cobrado quando:",
+      "enunciado": "Em uma prova, Work and professions e mais cobrado quando:",
       "opcoes": [
-        "o item pede compreender vocabulário de profissão e rotina laboral",
-        "a questão exige reconhecer sentimento ou opinião expressa",
-        "a questão pede compreensão lexical em contexto cultural",
-        "o item cobra leitura temática e vocabulário social"
+        "o item pede compreender vocabulario de profissao e rotina laboral",
+        "a questao exige reconhecer sentimento ou opiniao expressa",
+        "a questao pede compreensao lexical em contexto cultural",
+        "o item cobra leitura tematica e vocabulario social"
       ],
-      "correta": "o item pede compreender vocabulário de profissão e rotina laboral",
-      "comentario": "Esse é o tipo de demanda em que work and professions aparece com mais frequência.",
+      "correta": "o item pede compreender vocabulario de profissao e rotina laboral",
+      "comentario": "Esse e o tipo de demanda em que work and professions aparece com mais frequencia.",
       "tempoEstimado": 60,
       "tags": [
         "vocabulario-intermediario",
@@ -3831,8 +3832,8 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Work and professions",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
@@ -3840,13 +3841,13 @@ export const vocabularioIntermediario = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual resumo sintetiza melhor a ideia de Work and professions?",
       "opcoes": [
-        "Em síntese, o vocabulário relacionado a ocupações, mercado de trabalho, tarefas e ambientes profissionais.",
-        "Em síntese, o vocabulário usado para expressar emoções, preferências, avaliação e posicionamento pessoal.",
-        "Em síntese, o vocabulário ligado a música, cinema, literatura, eventos culturais e lazer.",
-        "Em síntese, o vocabulário usado para discutir desigualdade, direitos, educação, inclusão e problemas sociais."
+        "Em sintese, o vocabulario relacionado a ocupacoes, mercado de trabalho, tarefas e ambientes profissionais.",
+        "Em sintese, o vocabulario usado para expressar emocoes, preferencias, avaliacao e posicionamento pessoal.",
+        "Em sintese, o vocabulario ligado a musica, cinema, literatura, eventos culturais e lazer.",
+        "Em sintese, o vocabulario usado para discutir desigualdade, direitos, educacao, inclusao e problemas sociais."
       ],
-      "correta": "Em síntese, o vocabulário relacionado a ocupações, mercado de trabalho, tarefas e ambientes profissionais.",
-      "comentario": "O resumo correto recupera o núcleo de work and professions.",
+      "correta": "Em sintese, o vocabulario relacionado a ocupacoes, mercado de trabalho, tarefas e ambientes profissionais.",
+      "comentario": "O resumo correto recupera o nucleo de work and professions.",
       "tempoEstimado": 60,
       "tags": [
         "vocabulario-intermediario",
@@ -3870,22 +3871,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Work and professions",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associação entre exemplo e interpretação está correta em Work and professions?",
+      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Work and professions?",
       "opcoes": [
-        "The nurse works long shifts at the hospital. -> a frase articula profissão, ambiente e rotina de trabalho",
-        "I feel nervous, but I still agree with the plan. -> a frase articula profissão, ambiente e rotina de trabalho",
-        "The festival attracted a young audience interested in music and film. -> a frase mobiliza vocabulário de debate social",
-        "The article highlights the need for equal access to education. -> a frase combina emoção e posicionamento pessoal"
+        "The nurse works long shifts at the hospital. -> a frase articula profissao, ambiente e rotina de trabalho",
+        "I feel nervous, but I still agree with the plan. -> a frase articula profissao, ambiente e rotina de trabalho",
+        "The festival attracted a young audience interested in music and film. -> a frase mobiliza vocabulario de debate social",
+        "The article highlights the need for equal access to education. -> a frase combina emocao e posicionamento pessoal"
       ],
-      "correta": "The nurse works long shifts at the hospital. -> a frase articula profissão, ambiente e rotina de trabalho",
-      "comentario": "A associação correta mantém coerência entre exemplo e interpretação em work and professions.",
+      "correta": "The nurse works long shifts at the hospital. -> a frase articula profissao, ambiente e rotina de trabalho",
+      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em work and professions.",
       "tempoEstimado": 65,
       "tags": [
         "vocabulario-intermediario",
@@ -3909,8 +3910,8 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Work and professions",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
@@ -3918,13 +3919,13 @@ export const vocabularioIntermediario = {
       "tipo": "multipla_escolha",
       "enunciado": "Ao resolver uma atividade sobre work and professions, o estudante deve principalmente:",
       "opcoes": [
-        "reconhecer profissões e situações ligadas ao mundo do trabalho",
-        "relacionar profissão, local e atividade descrita",
-        "interpretar perfis profissionais e situações de trabalho",
-        "o item pede compreender vocabulário de profissão e rotina laboral"
+        "reconhecer profissoes e situacoes ligadas ao mundo do trabalho",
+        "relacionar profissao, local e atividade descrita",
+        "interpretar perfis profissionais e situacoes de trabalho",
+        "o item pede compreender vocabulario de profissao e rotina laboral"
       ],
-      "correta": "reconhecer profissões e situações ligadas ao mundo do trabalho",
-      "comentario": "O objetivo central de work and professions é reconhecer profissões e situações ligadas ao mundo do trabalho.",
+      "correta": "reconhecer profissoes e situacoes ligadas ao mundo do trabalho",
+      "comentario": "O objetivo central de work and professions e reconhecer profissoes e situacoes ligadas ao mundo do trabalho.",
       "tempoEstimado": 70,
       "tags": [
         "vocabulario-intermediario",
@@ -3948,22 +3949,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Feelings and opinions",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Inglês, Feelings and opinions refere-se a:",
+      "enunciado": "Em Ingles, Feelings and opinions refere-se a:",
       "opcoes": [
-        "o vocabulário usado para expressar emoções, preferências, avaliação e posicionamento pessoal",
-        "o vocabulário ligado a música, cinema, literatura, eventos culturais e lazer",
-        "o vocabulário usado para discutir desigualdade, direitos, educação, inclusão e problemas sociais",
-        "as combinações frequentes de palavras e expressões fixas que aparecem com naturalidade no inglês"
+        "o vocabulario usado para expressar emocoes, preferencias, avaliacao e posicionamento pessoal",
+        "o vocabulario ligado a musica, cinema, literatura, eventos culturais e lazer",
+        "o vocabulario usado para discutir desigualdade, direitos, educacao, inclusao e problemas sociais",
+        "as combinacoes frequentes de palavras e expressoes fixas que aparecem com naturalidade no ingles"
       ],
-      "correta": "o vocabulário usado para expressar emoções, preferências, avaliação e posicionamento pessoal",
-      "comentario": "Feelings and opinions refere-se ao vocabulário usado para expressar emoções, preferências, avaliação e posicionamento pessoal.",
+      "correta": "o vocabulario usado para expressar emocoes, preferencias, avaliacao e posicionamento pessoal",
+      "comentario": "Feelings and opinions refere-se ao vocabulario usado para expressar emocoes, preferencias, avaliacao e posicionamento pessoal.",
       "tempoEstimado": 20,
       "tags": [
         "vocabulario-intermediario",
@@ -3987,14 +3988,14 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Feelings and opinions",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: um comentário online usa excited, worried, agree and prefer. Esse caso está mais ligado a qual subtópico?",
+      "enunciado": "Observe a situacao: um comentario online usa excited, worried, agree and prefer. Esse caso esta mais ligado a qual subtopico?",
       "opcoes": [
         "Feelings and opinions",
         "Culture and entertainment",
@@ -4002,7 +4003,7 @@ export const vocabularioIntermediario = {
         "Phrasal expressions and collocations"
       ],
       "correta": "Feelings and opinions",
-      "comentario": "A situação apresentada é melhor compreendida por meio de feelings and opinions.",
+      "comentario": "A situacao apresentada e melhor compreendida por meio de feelings and opinions.",
       "tempoEstimado": 20,
       "tags": [
         "vocabulario-intermediario",
@@ -4026,8 +4027,8 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Feelings and opinions",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
@@ -4065,22 +4066,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Feelings and opinions",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO representa corretamente feelings and opinions?",
+      "enunciado": "Qual alternativa NAO representa corretamente feelings and opinions?",
       "opcoes": [
         "The festival attracted a young audience interested in music and film.",
         "I feel nervous, but I still agree with the plan.",
-        "observar adjetivos, verbos e expressões avaliativas.",
-        "interpretar posicionamentos em textos curtos e opiniões em redes sociais."
+        "observar adjetivos, verbos e expressoes avaliativas.",
+        "interpretar posicionamentos em textos curtos e opinioes em redes sociais."
       ],
       "correta": "The festival attracted a young audience interested in music and film.",
-      "comentario": "A opção incompatível ilustra outro subtópico, e não feelings and opinions.",
+      "comentario": "A opcao incompativel ilustra outro subtopico, e nao feelings and opinions.",
       "tempoEstimado": 25,
       "tags": [
         "vocabulario-intermediario",
@@ -4104,22 +4105,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Feelings and opinions",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar feelings and opinions, o foco principal é:",
+      "enunciado": "Ao estudar feelings and opinions, o foco principal e:",
       "opcoes": [
-        "identificar palavras que revelam sentimento e opinião",
-        "reconhecer léxico de práticas culturais e entretenimento",
+        "identificar palavras que revelam sentimento e opiniao",
+        "reconhecer lexico de praticas culturais e entretenimento",
         "interpretar temas sociais frequentes em textos atuais",
-        "reconhecer combinações lexicais recorrentes em contexto"
+        "reconhecer combinacoes lexicais recorrentes em contexto"
       ],
-      "correta": "identificar palavras que revelam sentimento e opinião",
-      "comentario": "Feelings and opinions concentra-se em identificar palavras que revelam sentimento e opinião.",
+      "correta": "identificar palavras que revelam sentimento e opiniao",
+      "comentario": "Feelings and opinions concentra-se em identificar palavras que revelam sentimento e opiniao.",
       "tempoEstimado": 30,
       "tags": [
         "vocabulario-intermediario",
@@ -4143,22 +4144,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Feelings and opinions",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Culture and entertainment trata de o vocabulário ligado a música, cinema, literatura, eventos culturais e lazer, Feelings and opinions destaca:",
+      "enunciado": "Enquanto Culture and entertainment trata de o vocabulario ligado a musica, cinema, literatura, eventos culturais e lazer, Feelings and opinions destaca:",
       "opcoes": [
-        "O vocabulário usado para expressar emoções, preferências, avaliação e posicionamento pessoal.",
-        "O vocabulário ligado a música, cinema, literatura, eventos culturais e lazer.",
-        "O vocabulário usado para discutir desigualdade, direitos, educação, inclusão e problemas sociais.",
-        "As combinações frequentes de palavras e expressões fixas que aparecem com naturalidade no inglês."
+        "O vocabulario usado para expressar emocoes, preferencias, avaliacao e posicionamento pessoal.",
+        "O vocabulario ligado a musica, cinema, literatura, eventos culturais e lazer.",
+        "O vocabulario usado para discutir desigualdade, direitos, educacao, inclusao e problemas sociais.",
+        "As combinacoes frequentes de palavras e expressoes fixas que aparecem com naturalidade no ingles."
       ],
-      "correta": "O vocabulário usado para expressar emoções, preferências, avaliação e posicionamento pessoal.",
-      "comentario": "A comparação correta mostra a especificidade de feelings and opinions.",
+      "correta": "O vocabulario usado para expressar emocoes, preferencias, avaliacao e posicionamento pessoal.",
+      "comentario": "A comparacao correta mostra a especificidade de feelings and opinions.",
       "tempoEstimado": 30,
       "tags": [
         "vocabulario-intermediario",
@@ -4182,14 +4183,14 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Feelings and opinions",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma atividade de sala, um comentário online usa excited, worried, agree and prefer. Para responder bem, o estudante deve mobilizar principalmente:",
+      "enunciado": "Em uma atividade de sala, um comentario online usa excited, worried, agree and prefer. Para responder bem, o estudante deve mobilizar principalmente:",
       "opcoes": [
         "Feelings and opinions",
         "Culture and entertainment",
@@ -4197,7 +4198,7 @@ export const vocabularioIntermediario = {
         "Context clues and word meaning"
       ],
       "correta": "Feelings and opinions",
-      "comentario": "Esse tipo de tarefa exige domínio de feelings and opinions.",
+      "comentario": "Esse tipo de tarefa exige dominio de feelings and opinions.",
       "tempoEstimado": 35,
       "tags": [
         "vocabulario-intermediario",
@@ -4221,22 +4222,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Feelings and opinions",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação prática depende mais diretamente de Feelings and opinions?",
+      "enunciado": "Qual situacao pratica depende mais diretamente de Feelings and opinions?",
       "opcoes": [
-        "interpretar posicionamentos em textos curtos e opiniões em redes sociais",
+        "interpretar posicionamentos em textos curtos e opinioes em redes sociais",
         "ler textos sobre filmes, shows, livros e eventos culturais",
-        "resolver itens com temática social e cidadania",
-        "continuar a leitura sem depender de tradução literal de cada termo"
+        "resolver itens com tematica social e cidadania",
+        "continuar a leitura sem depender de traducao literal de cada termo"
       ],
-      "correta": "interpretar posicionamentos em textos curtos e opiniões em redes sociais",
-      "comentario": "Feelings and opinions aparece de forma direta em interpretar posicionamentos em textos curtos e opiniões em redes sociais.",
+      "correta": "interpretar posicionamentos em textos curtos e opinioes em redes sociais",
+      "comentario": "Feelings and opinions aparece de forma direta em interpretar posicionamentos em textos curtos e opinioes em redes sociais.",
       "tempoEstimado": 35,
       "tags": [
         "vocabulario-intermediario",
@@ -4260,22 +4261,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Feelings and opinions",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre feelings and opinions?",
+      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre feelings and opinions?",
       "opcoes": [
-        "o caso é resolvido com foco em feelings and opinions.",
-        "o caso é melhor resolvido por culture and entertainment.",
+        "o caso e resolvido com foco em feelings and opinions.",
+        "o caso e melhor resolvido por culture and entertainment.",
         "o caso elimina a necessidade de social issues.",
         "o caso impede qualquer uso de phrasal expressions and collocations."
       ],
-      "correta": "o caso é resolvido com foco em feelings and opinions.",
-      "comentario": "A conclusão correta retoma a função central de feelings and opinions.",
+      "correta": "o caso e resolvido com foco em feelings and opinions.",
+      "comentario": "A conclusao correta retoma a funcao central de feelings and opinions.",
       "tempoEstimado": 40,
       "tags": [
         "vocabulario-intermediario",
@@ -4299,8 +4300,8 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Feelings and opinions",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
@@ -4308,12 +4309,12 @@ export const vocabularioIntermediario = {
       "tipo": "multipla_escolha",
       "enunciado": "Se a turma fosse revisar feelings and opinions, qual pergunta de estudo seria a mais adequada?",
       "opcoes": [
-        "Como feelings and opinions aparece em interpretar posicionamentos em textos curtos e opiniões em redes sociais?",
-        "Como culture and entertainment substitui totalmente interpretar posicionamentos em textos curtos e opiniões em redes sociais?",
-        "Por que social issues torna desnecessário estudar Feelings and opinions?",
+        "Como feelings and opinions aparece em interpretar posicionamentos em textos curtos e opinioes em redes sociais?",
+        "Como culture and entertainment substitui totalmente interpretar posicionamentos em textos curtos e opinioes em redes sociais?",
+        "Por que social issues torna desnecessario estudar Feelings and opinions?",
         "De que modo phrasal expressions and collocations elimina toda leitura de contexto?"
       ],
-      "correta": "Como feelings and opinions aparece em interpretar posicionamentos em textos curtos e opiniões em redes sociais?",
+      "correta": "Como feelings and opinions aparece em interpretar posicionamentos em textos curtos e opinioes em redes sociais?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de feelings and opinions.",
       "tempoEstimado": 40,
       "tags": [
@@ -4338,22 +4339,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Feelings and opinions",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em feelings and opinions é pensar que:",
+      "enunciado": "Um erro comum em feelings and opinions e pensar que:",
       "opcoes": [
         "feelings e opinions podem ser lidos da mesma forma em qualquer contexto",
         "culture vocabulary aparece apenas em textos sobre arte erudita",
-        "social issues vocabulary é avançado demais para aparecer em textos curtos",
-        "collocations podem ser montadas livremente sem seguir combinações usuais"
+        "social issues vocabulary e avancado demais para aparecer em textos curtos",
+        "collocations podem ser montadas livremente sem seguir combinacoes usuais"
       ],
       "correta": "feelings e opinions podem ser lidos da mesma forma em qualquer contexto",
-      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de feelings and opinions.",
+      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de feelings and opinions.",
       "tempoEstimado": 45,
       "tags": [
         "vocabulario-intermediario",
@@ -4377,22 +4378,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Feelings and opinions",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"agree, like e worried têm a mesma função porque todos mostram reação\". A avaliação mais adequada é:",
+      "enunciado": "Um estudante afirma: \"agree, like e worried tem a mesma funcao porque todos mostram reacao\". A avaliacao mais adequada e:",
       "opcoes": [
-        "A afirmação está incorreta, porque o vocabulário usado para expressar emoções, preferências, avaliação e posicionamento pessoal.",
-        "A afirmação está correta, pois resume integralmente feelings and opinions.",
-        "A afirmação está correta, porque basta decorar a tradução do exemplo.",
-        "A afirmação está incorreta apenas por não citar uma regra gramatical."
+        "A afirmacao esta incorreta, porque o vocabulario usado para expressar emocoes, preferencias, avaliacao e posicionamento pessoal.",
+        "A afirmacao esta correta, pois resume integralmente feelings and opinions.",
+        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
+        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
       ],
-      "correta": "A afirmação está incorreta, porque o vocabulário usado para expressar emoções, preferências, avaliação e posicionamento pessoal.",
-      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre feelings and opinions.",
+      "correta": "A afirmacao esta incorreta, porque o vocabulario usado para expressar emocoes, preferencias, avaliacao e posicionamento pessoal.",
+      "comentario": "A fala do estudante apresenta um equivoco conceitual sobre feelings and opinions.",
       "tempoEstimado": 45,
       "tags": [
         "vocabulario-intermediario",
@@ -4416,22 +4417,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Feelings and opinions",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se feelings and opinions fosse ignorado(a) em interpretar posicionamentos em textos curtos e opiniões em redes sociais, o resultado mais provável seria:",
+      "enunciado": "Se feelings and opinions fosse ignorado(a) em interpretar posicionamentos em textos curtos e opinioes em redes sociais, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretação ficaria incompleta e aumentaria a chance de erro em interpretar posicionamentos em textos curtos e opiniões em redes sociais.",
-        "a questão seria resolvida automaticamente por culture and entertainment.",
-        "nenhuma interpretação seria alterada, porque Feelings and opinions não interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
+        "a interpretacao ficaria incompleta e aumentaria a chance de erro em interpretar posicionamentos em textos curtos e opinioes em redes sociais.",
+        "a questao seria resolvida automaticamente por culture and entertainment.",
+        "nenhuma interpretacao seria alterada, porque Feelings and opinions nao interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
       ],
-      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em interpretar posicionamentos em textos curtos e opiniões em redes sociais.",
-      "comentario": "Ignorar feelings and opinions compromete a resolução correta da atividade.",
+      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em interpretar posicionamentos em textos curtos e opinioes em redes sociais.",
+      "comentario": "Ignorar feelings and opinions compromete a resolucao correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "vocabulario-intermediario",
@@ -4455,14 +4456,14 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Feelings and opinions",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou ação ilustra melhor Feelings and opinions?",
+      "enunciado": "Qual trecho ou acao ilustra melhor Feelings and opinions?",
       "opcoes": [
         "I feel nervous, but I still agree with the plan.",
         "The festival attracted a young audience interested in music and film.",
@@ -4470,7 +4471,7 @@ export const vocabularioIntermediario = {
         "Students should pay attention and take part in the discussion."
       ],
       "correta": "I feel nervous, but I still agree with the plan.",
-      "comentario": "O item correto é o que melhor exemplifica feelings and opinions.",
+      "comentario": "O item correto e o que melhor exemplifica feelings and opinions.",
       "tempoEstimado": 50,
       "tags": [
         "vocabulario-intermediario",
@@ -4494,21 +4495,21 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Feelings and opinions",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao encontrar o exemplo \"I feel nervous, but I still agree with the plan.\", a leitura mais adequada é:",
+      "enunciado": "Ao encontrar o exemplo \"I feel nervous, but I still agree with the plan.\", a leitura mais adequada e:",
       "opcoes": [
-        "a frase combina emoção e posicionamento pessoal",
-        "a frase reúne vocabulário típico de cultura e entretenimento",
-        "a frase mobiliza vocabulário de debate social",
-        "a frase mostra combinações frequentes do inglês em uso"
+        "a frase combina emocao e posicionamento pessoal",
+        "a frase reune vocabulario tipico de cultura e entretenimento",
+        "a frase mobiliza vocabulario de debate social",
+        "a frase mostra combinacoes frequentes do ingles em uso"
       ],
-      "correta": "a frase combina emoção e posicionamento pessoal",
+      "correta": "a frase combina emocao e posicionamento pessoal",
       "comentario": "A leitura correta do exemplo revela o papel de feelings and opinions.",
       "tempoEstimado": 55,
       "tags": [
@@ -4533,22 +4534,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Feelings and opinions",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estratégia ajuda mais a estudar feelings and opinions?",
+      "enunciado": "Qual estrategia ajuda mais a estudar feelings and opinions?",
       "opcoes": [
-        "observar adjetivos, verbos e expressões avaliativas",
-        "identificar campo semântico de arte, evento e lazer",
+        "observar adjetivos, verbos e expressoes avaliativas",
+        "identificar campo semantico de arte, evento e lazer",
         "observar palavras ligadas a direitos, desigualdade e comunidade",
-        "memorizar combinações comuns e confirmar seu sentido no contexto"
+        "memorizar combinacoes comuns e confirmar seu sentido no contexto"
       ],
-      "correta": "observar adjetivos, verbos e expressões avaliativas",
-      "comentario": "A estratégia correta fortalece o domínio de feelings and opinions.",
+      "correta": "observar adjetivos, verbos e expressoes avaliativas",
+      "comentario": "A estrategia correta fortalece o dominio de feelings and opinions.",
       "tempoEstimado": 55,
       "tags": [
         "vocabulario-intermediario",
@@ -4572,22 +4573,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Feelings and opinions",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Feelings and opinions é mais cobrado quando:",
+      "enunciado": "Em uma prova, Feelings and opinions e mais cobrado quando:",
       "opcoes": [
-        "a questão exige reconhecer sentimento ou opinião expressa",
-        "a questão pede compreensão lexical em contexto cultural",
-        "o item cobra leitura temática e vocabulário social",
-        "a questão pede reconhecer uso natural de expressão ou combinação lexical"
+        "a questao exige reconhecer sentimento ou opiniao expressa",
+        "a questao pede compreensao lexical em contexto cultural",
+        "o item cobra leitura tematica e vocabulario social",
+        "a questao pede reconhecer uso natural de expressao ou combinacao lexical"
       ],
-      "correta": "a questão exige reconhecer sentimento ou opinião expressa",
-      "comentario": "Esse é o tipo de demanda em que feelings and opinions aparece com mais frequência.",
+      "correta": "a questao exige reconhecer sentimento ou opiniao expressa",
+      "comentario": "Esse e o tipo de demanda em que feelings and opinions aparece com mais frequencia.",
       "tempoEstimado": 60,
       "tags": [
         "vocabulario-intermediario",
@@ -4611,8 +4612,8 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Feelings and opinions",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
@@ -4620,13 +4621,13 @@ export const vocabularioIntermediario = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual resumo sintetiza melhor a ideia de Feelings and opinions?",
       "opcoes": [
-        "Em síntese, o vocabulário usado para expressar emoções, preferências, avaliação e posicionamento pessoal.",
-        "Em síntese, o vocabulário ligado a música, cinema, literatura, eventos culturais e lazer.",
-        "Em síntese, o vocabulário usado para discutir desigualdade, direitos, educação, inclusão e problemas sociais.",
-        "Em síntese, as combinações frequentes de palavras e expressões fixas que aparecem com naturalidade no inglês."
+        "Em sintese, o vocabulario usado para expressar emocoes, preferencias, avaliacao e posicionamento pessoal.",
+        "Em sintese, o vocabulario ligado a musica, cinema, literatura, eventos culturais e lazer.",
+        "Em sintese, o vocabulario usado para discutir desigualdade, direitos, educacao, inclusao e problemas sociais.",
+        "Em sintese, as combinacoes frequentes de palavras e expressoes fixas que aparecem com naturalidade no ingles."
       ],
-      "correta": "Em síntese, o vocabulário usado para expressar emoções, preferências, avaliação e posicionamento pessoal.",
-      "comentario": "O resumo correto recupera o núcleo de feelings and opinions.",
+      "correta": "Em sintese, o vocabulario usado para expressar emocoes, preferencias, avaliacao e posicionamento pessoal.",
+      "comentario": "O resumo correto recupera o nucleo de feelings and opinions.",
       "tempoEstimado": 60,
       "tags": [
         "vocabulario-intermediario",
@@ -4650,22 +4651,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Feelings and opinions",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associação entre exemplo e interpretação está correta em Feelings and opinions?",
+      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Feelings and opinions?",
       "opcoes": [
-        "I feel nervous, but I still agree with the plan. -> a frase combina emoção e posicionamento pessoal",
-        "The festival attracted a young audience interested in music and film. -> a frase combina emoção e posicionamento pessoal",
-        "The article highlights the need for equal access to education. -> a frase mostra combinações frequentes do inglês em uso",
-        "Students should pay attention and take part in the discussion. -> a frase reúne vocabulário típico de cultura e entretenimento"
+        "I feel nervous, but I still agree with the plan. -> a frase combina emocao e posicionamento pessoal",
+        "The festival attracted a young audience interested in music and film. -> a frase combina emocao e posicionamento pessoal",
+        "The article highlights the need for equal access to education. -> a frase mostra combinacoes frequentes do ingles em uso",
+        "Students should pay attention and take part in the discussion. -> a frase reune vocabulario tipico de cultura e entretenimento"
       ],
-      "correta": "I feel nervous, but I still agree with the plan. -> a frase combina emoção e posicionamento pessoal",
-      "comentario": "A associação correta mantém coerência entre exemplo e interpretação em feelings and opinions.",
+      "correta": "I feel nervous, but I still agree with the plan. -> a frase combina emocao e posicionamento pessoal",
+      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em feelings and opinions.",
       "tempoEstimado": 65,
       "tags": [
         "vocabulario-intermediario",
@@ -4689,8 +4690,8 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Feelings and opinions",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
@@ -4698,13 +4699,13 @@ export const vocabularioIntermediario = {
       "tipo": "multipla_escolha",
       "enunciado": "Ao resolver uma atividade sobre feelings and opinions, o estudante deve principalmente:",
       "opcoes": [
-        "identificar palavras que revelam sentimento e opinião",
-        "observar adjetivos, verbos e expressões avaliativas",
-        "interpretar posicionamentos em textos curtos e opiniões em redes sociais",
-        "a questão exige reconhecer sentimento ou opinião expressa"
+        "identificar palavras que revelam sentimento e opiniao",
+        "observar adjetivos, verbos e expressoes avaliativas",
+        "interpretar posicionamentos em textos curtos e opinioes em redes sociais",
+        "a questao exige reconhecer sentimento ou opiniao expressa"
       ],
-      "correta": "identificar palavras que revelam sentimento e opinião",
-      "comentario": "O objetivo central de feelings and opinions é identificar palavras que revelam sentimento e opinião.",
+      "correta": "identificar palavras que revelam sentimento e opiniao",
+      "comentario": "O objetivo central de feelings and opinions e identificar palavras que revelam sentimento e opiniao.",
       "tempoEstimado": 70,
       "tags": [
         "vocabulario-intermediario",
@@ -4728,22 +4729,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Culture and entertainment",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Inglês, Culture and entertainment refere-se a:",
+      "enunciado": "Em Ingles, Culture and entertainment refere-se a:",
       "opcoes": [
-        "o vocabulário ligado a música, cinema, literatura, eventos culturais e lazer",
-        "o vocabulário usado para discutir desigualdade, direitos, educação, inclusão e problemas sociais",
-        "as combinações frequentes de palavras e expressões fixas que aparecem com naturalidade no inglês",
-        "o uso do próprio contexto para inferir o significado de palavras desconhecidas"
+        "o vocabulario ligado a musica, cinema, literatura, eventos culturais e lazer",
+        "o vocabulario usado para discutir desigualdade, direitos, educacao, inclusao e problemas sociais",
+        "as combinacoes frequentes de palavras e expressoes fixas que aparecem com naturalidade no ingles",
+        "o uso do proprio contexto para inferir o significado de palavras desconhecidas"
       ],
-      "correta": "o vocabulário ligado a música, cinema, literatura, eventos culturais e lazer",
-      "comentario": "Culture and entertainment refere-se ao vocabulário ligado a música, cinema, literatura, eventos culturais e lazer.",
+      "correta": "o vocabulario ligado a musica, cinema, literatura, eventos culturais e lazer",
+      "comentario": "Culture and entertainment refere-se ao vocabulario ligado a musica, cinema, literatura, eventos culturais e lazer.",
       "tempoEstimado": 20,
       "tags": [
         "vocabulario-intermediario",
@@ -4767,14 +4768,14 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Culture and entertainment",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: uma resenha menciona audience, soundtrack, performance and festival. Esse caso está mais ligado a qual subtópico?",
+      "enunciado": "Observe a situacao: uma resenha menciona audience, soundtrack, performance and festival. Esse caso esta mais ligado a qual subtopico?",
       "opcoes": [
         "Culture and entertainment",
         "Social issues",
@@ -4782,7 +4783,7 @@ export const vocabularioIntermediario = {
         "Context clues and word meaning"
       ],
       "correta": "Culture and entertainment",
-      "comentario": "A situação apresentada é melhor compreendida por meio de culture and entertainment.",
+      "comentario": "A situacao apresentada e melhor compreendida por meio de culture and entertainment.",
       "tempoEstimado": 20,
       "tags": [
         "vocabulario-intermediario",
@@ -4806,8 +4807,8 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Culture and entertainment",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
@@ -4845,22 +4846,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Culture and entertainment",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO representa corretamente culture and entertainment?",
+      "enunciado": "Qual alternativa NAO representa corretamente culture and entertainment?",
       "opcoes": [
         "The article highlights the need for equal access to education.",
         "The festival attracted a young audience interested in music and film.",
-        "identificar campo semântico de arte, evento e lazer.",
+        "identificar campo semantico de arte, evento e lazer.",
         "ler textos sobre filmes, shows, livros e eventos culturais."
       ],
       "correta": "The article highlights the need for equal access to education.",
-      "comentario": "A opção incompatível ilustra outro subtópico, e não culture and entertainment.",
+      "comentario": "A opcao incompativel ilustra outro subtopico, e nao culture and entertainment.",
       "tempoEstimado": 25,
       "tags": [
         "vocabulario-intermediario",
@@ -4884,22 +4885,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Culture and entertainment",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar culture and entertainment, o foco principal é:",
+      "enunciado": "Ao estudar culture and entertainment, o foco principal e:",
       "opcoes": [
-        "reconhecer léxico de práticas culturais e entretenimento",
+        "reconhecer lexico de praticas culturais e entretenimento",
         "interpretar temas sociais frequentes em textos atuais",
-        "reconhecer combinações lexicais recorrentes em contexto",
+        "reconhecer combinacoes lexicais recorrentes em contexto",
         "deduzir sentido lexical a partir de pistas internas do texto"
       ],
-      "correta": "reconhecer léxico de práticas culturais e entretenimento",
-      "comentario": "Culture and entertainment concentra-se em reconhecer léxico de práticas culturais e entretenimento.",
+      "correta": "reconhecer lexico de praticas culturais e entretenimento",
+      "comentario": "Culture and entertainment concentra-se em reconhecer lexico de praticas culturais e entretenimento.",
       "tempoEstimado": 30,
       "tags": [
         "vocabulario-intermediario",
@@ -4923,22 +4924,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Culture and entertainment",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Social issues trata de o vocabulário usado para discutir desigualdade, direitos, educação, inclusão e problemas sociais, Culture and entertainment destaca:",
+      "enunciado": "Enquanto Social issues trata de o vocabulario usado para discutir desigualdade, direitos, educacao, inclusao e problemas sociais, Culture and entertainment destaca:",
       "opcoes": [
-        "O vocabulário ligado a música, cinema, literatura, eventos culturais e lazer.",
-        "O vocabulário usado para discutir desigualdade, direitos, educação, inclusão e problemas sociais.",
-        "As combinações frequentes de palavras e expressões fixas que aparecem com naturalidade no inglês.",
-        "O uso do próprio contexto para inferir o significado de palavras desconhecidas."
+        "O vocabulario ligado a musica, cinema, literatura, eventos culturais e lazer.",
+        "O vocabulario usado para discutir desigualdade, direitos, educacao, inclusao e problemas sociais.",
+        "As combinacoes frequentes de palavras e expressoes fixas que aparecem com naturalidade no ingles.",
+        "O uso do proprio contexto para inferir o significado de palavras desconhecidas."
       ],
-      "correta": "O vocabulário ligado a música, cinema, literatura, eventos culturais e lazer.",
-      "comentario": "A comparação correta mostra a especificidade de culture and entertainment.",
+      "correta": "O vocabulario ligado a musica, cinema, literatura, eventos culturais e lazer.",
+      "comentario": "A comparacao correta mostra a especificidade de culture and entertainment.",
       "tempoEstimado": 30,
       "tags": [
         "vocabulario-intermediario",
@@ -4962,8 +4963,8 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Culture and entertainment",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
@@ -4977,7 +4978,7 @@ export const vocabularioIntermediario = {
         "Travel and transportation"
       ],
       "correta": "Culture and entertainment",
-      "comentario": "Esse tipo de tarefa exige domínio de culture and entertainment.",
+      "comentario": "Esse tipo de tarefa exige dominio de culture and entertainment.",
       "tempoEstimado": 35,
       "tags": [
         "vocabulario-intermediario",
@@ -5001,19 +5002,19 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Culture and entertainment",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação prática depende mais diretamente de Culture and entertainment?",
+      "enunciado": "Qual situacao pratica depende mais diretamente de Culture and entertainment?",
       "opcoes": [
         "ler textos sobre filmes, shows, livros e eventos culturais",
-        "resolver itens com temática social e cidadania",
-        "interpretar expressões que não devem ser lidas palavra por palavra",
-        "interpretar anúncios de viagem, roteiros e informações de transporte"
+        "resolver itens com tematica social e cidadania",
+        "interpretar expressoes que nao devem ser lidas palavra por palavra",
+        "interpretar anuncios de viagem, roteiros e informacoes de transporte"
       ],
       "correta": "ler textos sobre filmes, shows, livros e eventos culturais",
       "comentario": "Culture and entertainment aparece de forma direta em ler textos sobre filmes, shows, livros e eventos culturais.",
@@ -5040,22 +5041,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Culture and entertainment",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre culture and entertainment?",
+      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre culture and entertainment?",
       "opcoes": [
-        "o caso é resolvido com foco em culture and entertainment.",
-        "o caso é melhor resolvido por social issues.",
+        "o caso e resolvido com foco em culture and entertainment.",
+        "o caso e melhor resolvido por social issues.",
         "o caso elimina a necessidade de phrasal expressions and collocations.",
         "o caso impede qualquer uso de context clues and word meaning."
       ],
-      "correta": "o caso é resolvido com foco em culture and entertainment.",
-      "comentario": "A conclusão correta retoma a função central de culture and entertainment.",
+      "correta": "o caso e resolvido com foco em culture and entertainment.",
+      "comentario": "A conclusao correta retoma a funcao central de culture and entertainment.",
       "tempoEstimado": 40,
       "tags": [
         "vocabulario-intermediario",
@@ -5079,8 +5080,8 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Culture and entertainment",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
@@ -5090,7 +5091,7 @@ export const vocabularioIntermediario = {
       "opcoes": [
         "Como culture and entertainment aparece em ler textos sobre filmes, shows, livros e eventos culturais?",
         "Como social issues substitui totalmente ler textos sobre filmes, shows, livros e eventos culturais?",
-        "Por que phrasal expressions and collocations torna desnecessário estudar Culture and entertainment?",
+        "Por que phrasal expressions and collocations torna desnecessario estudar Culture and entertainment?",
         "De que modo context clues and word meaning elimina toda leitura de contexto?"
       ],
       "correta": "Como culture and entertainment aparece em ler textos sobre filmes, shows, livros e eventos culturais?",
@@ -5118,22 +5119,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Culture and entertainment",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em culture and entertainment é pensar que:",
+      "enunciado": "Um erro comum em culture and entertainment e pensar que:",
       "opcoes": [
         "culture vocabulary aparece apenas em textos sobre arte erudita",
-        "social issues vocabulary é avançado demais para aparecer em textos curtos",
-        "collocations podem ser montadas livremente sem seguir combinações usuais",
-        "se uma palavra é desconhecida, a leitura fica impossível sem dicionário"
+        "social issues vocabulary e avancado demais para aparecer em textos curtos",
+        "collocations podem ser montadas livremente sem seguir combinacoes usuais",
+        "se uma palavra e desconhecida, a leitura fica impossivel sem dicionario"
       ],
       "correta": "culture vocabulary aparece apenas em textos sobre arte erudita",
-      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de culture and entertainment.",
+      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de culture and entertainment.",
       "tempoEstimado": 45,
       "tags": [
         "vocabulario-intermediario",
@@ -5157,22 +5158,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Culture and entertainment",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"festival, concert e movie review pertencem a temas totalmente separados\". A avaliação mais adequada é:",
+      "enunciado": "Um estudante afirma: \"festival, concert e movie review pertencem a temas totalmente separados\". A avaliacao mais adequada e:",
       "opcoes": [
-        "A afirmação está incorreta, porque o vocabulário ligado a música, cinema, literatura, eventos culturais e lazer.",
-        "A afirmação está correta, pois resume integralmente culture and entertainment.",
-        "A afirmação está correta, porque basta decorar a tradução do exemplo.",
-        "A afirmação está incorreta apenas por não citar uma regra gramatical."
+        "A afirmacao esta incorreta, porque o vocabulario ligado a musica, cinema, literatura, eventos culturais e lazer.",
+        "A afirmacao esta correta, pois resume integralmente culture and entertainment.",
+        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
+        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
       ],
-      "correta": "A afirmação está incorreta, porque o vocabulário ligado a música, cinema, literatura, eventos culturais e lazer.",
-      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre culture and entertainment.",
+      "correta": "A afirmacao esta incorreta, porque o vocabulario ligado a musica, cinema, literatura, eventos culturais e lazer.",
+      "comentario": "A fala do estudante apresenta um equivoco conceitual sobre culture and entertainment.",
       "tempoEstimado": 45,
       "tags": [
         "vocabulario-intermediario",
@@ -5196,22 +5197,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Culture and entertainment",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se culture and entertainment fosse ignorado(a) em ler textos sobre filmes, shows, livros e eventos culturais, o resultado mais provável seria:",
+      "enunciado": "Se culture and entertainment fosse ignorado(a) em ler textos sobre filmes, shows, livros e eventos culturais, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretação ficaria incompleta e aumentaria a chance de erro em ler textos sobre filmes, shows, livros e eventos culturais.",
-        "a questão seria resolvida automaticamente por social issues.",
-        "nenhuma interpretação seria alterada, porque Culture and entertainment não interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
+        "a interpretacao ficaria incompleta e aumentaria a chance de erro em ler textos sobre filmes, shows, livros e eventos culturais.",
+        "a questao seria resolvida automaticamente por social issues.",
+        "nenhuma interpretacao seria alterada, porque Culture and entertainment nao interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
       ],
-      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em ler textos sobre filmes, shows, livros e eventos culturais.",
-      "comentario": "Ignorar culture and entertainment compromete a resolução correta da atividade.",
+      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em ler textos sobre filmes, shows, livros e eventos culturais.",
+      "comentario": "Ignorar culture and entertainment compromete a resolucao correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "vocabulario-intermediario",
@@ -5235,14 +5236,14 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Culture and entertainment",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou ação ilustra melhor Culture and entertainment?",
+      "enunciado": "Qual trecho ou acao ilustra melhor Culture and entertainment?",
       "opcoes": [
         "The festival attracted a young audience interested in music and film.",
         "The article highlights the need for equal access to education.",
@@ -5250,7 +5251,7 @@ export const vocabularioIntermediario = {
         "The word affordable suggests something that is not too expensive."
       ],
       "correta": "The festival attracted a young audience interested in music and film.",
-      "comentario": "O item correto é o que melhor exemplifica culture and entertainment.",
+      "comentario": "O item correto e o que melhor exemplifica culture and entertainment.",
       "tempoEstimado": 50,
       "tags": [
         "vocabulario-intermediario",
@@ -5274,21 +5275,21 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Culture and entertainment",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao encontrar o exemplo \"The festival attracted a young audience interested in music and film.\", a leitura mais adequada é:",
+      "enunciado": "Ao encontrar o exemplo \"The festival attracted a young audience interested in music and film.\", a leitura mais adequada e:",
       "opcoes": [
-        "a frase reúne vocabulário típico de cultura e entretenimento",
-        "a frase mobiliza vocabulário de debate social",
-        "a frase mostra combinações frequentes do inglês em uso",
+        "a frase reune vocabulario tipico de cultura e entretenimento",
+        "a frase mobiliza vocabulario de debate social",
+        "a frase mostra combinacoes frequentes do ingles em uso",
         "o sentido da palavra pode ser inferido pelas pistas do contexto"
       ],
-      "correta": "a frase reúne vocabulário típico de cultura e entretenimento",
+      "correta": "a frase reune vocabulario tipico de cultura e entretenimento",
       "comentario": "A leitura correta do exemplo revela o papel de culture and entertainment.",
       "tempoEstimado": 55,
       "tags": [
@@ -5313,22 +5314,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Culture and entertainment",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estratégia ajuda mais a estudar culture and entertainment?",
+      "enunciado": "Qual estrategia ajuda mais a estudar culture and entertainment?",
       "opcoes": [
-        "identificar campo semântico de arte, evento e lazer",
+        "identificar campo semantico de arte, evento e lazer",
         "observar palavras ligadas a direitos, desigualdade e comunidade",
-        "memorizar combinações comuns e confirmar seu sentido no contexto",
-        "observar definição indireta, exemplo, contraste e repetição ao redor da palavra"
+        "memorizar combinacoes comuns e confirmar seu sentido no contexto",
+        "observar definicao indireta, exemplo, contraste e repeticao ao redor da palavra"
       ],
-      "correta": "identificar campo semântico de arte, evento e lazer",
-      "comentario": "A estratégia correta fortalece o domínio de culture and entertainment.",
+      "correta": "identificar campo semantico de arte, evento e lazer",
+      "comentario": "A estrategia correta fortalece o dominio de culture and entertainment.",
       "tempoEstimado": 55,
       "tags": [
         "vocabulario-intermediario",
@@ -5352,22 +5353,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Culture and entertainment",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Culture and entertainment é mais cobrado quando:",
+      "enunciado": "Em uma prova, Culture and entertainment e mais cobrado quando:",
       "opcoes": [
-        "a questão pede compreensão lexical em contexto cultural",
-        "o item cobra leitura temática e vocabulário social",
-        "a questão pede reconhecer uso natural de expressão ou combinação lexical",
-        "o item cobra inferência lexical contextual"
+        "a questao pede compreensao lexical em contexto cultural",
+        "o item cobra leitura tematica e vocabulario social",
+        "a questao pede reconhecer uso natural de expressao ou combinacao lexical",
+        "o item cobra inferencia lexical contextual"
       ],
-      "correta": "a questão pede compreensão lexical em contexto cultural",
-      "comentario": "Esse é o tipo de demanda em que culture and entertainment aparece com mais frequência.",
+      "correta": "a questao pede compreensao lexical em contexto cultural",
+      "comentario": "Esse e o tipo de demanda em que culture and entertainment aparece com mais frequencia.",
       "tempoEstimado": 60,
       "tags": [
         "vocabulario-intermediario",
@@ -5391,8 +5392,8 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Culture and entertainment",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
@@ -5400,13 +5401,13 @@ export const vocabularioIntermediario = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual resumo sintetiza melhor a ideia de Culture and entertainment?",
       "opcoes": [
-        "Em síntese, o vocabulário ligado a música, cinema, literatura, eventos culturais e lazer.",
-        "Em síntese, o vocabulário usado para discutir desigualdade, direitos, educação, inclusão e problemas sociais.",
-        "Em síntese, as combinações frequentes de palavras e expressões fixas que aparecem com naturalidade no inglês.",
-        "Em síntese, o uso do próprio contexto para inferir o significado de palavras desconhecidas."
+        "Em sintese, o vocabulario ligado a musica, cinema, literatura, eventos culturais e lazer.",
+        "Em sintese, o vocabulario usado para discutir desigualdade, direitos, educacao, inclusao e problemas sociais.",
+        "Em sintese, as combinacoes frequentes de palavras e expressoes fixas que aparecem com naturalidade no ingles.",
+        "Em sintese, o uso do proprio contexto para inferir o significado de palavras desconhecidas."
       ],
-      "correta": "Em síntese, o vocabulário ligado a música, cinema, literatura, eventos culturais e lazer.",
-      "comentario": "O resumo correto recupera o núcleo de culture and entertainment.",
+      "correta": "Em sintese, o vocabulario ligado a musica, cinema, literatura, eventos culturais e lazer.",
+      "comentario": "O resumo correto recupera o nucleo de culture and entertainment.",
       "tempoEstimado": 60,
       "tags": [
         "vocabulario-intermediario",
@@ -5430,22 +5431,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Culture and entertainment",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associação entre exemplo e interpretação está correta em Culture and entertainment?",
+      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Culture and entertainment?",
       "opcoes": [
-        "The festival attracted a young audience interested in music and film. -> a frase reúne vocabulário típico de cultura e entretenimento",
-        "The article highlights the need for equal access to education. -> a frase reúne vocabulário típico de cultura e entretenimento",
+        "The festival attracted a young audience interested in music and film. -> a frase reune vocabulario tipico de cultura e entretenimento",
+        "The article highlights the need for equal access to education. -> a frase reune vocabulario tipico de cultura e entretenimento",
         "Students should pay attention and take part in the discussion. -> o sentido da palavra pode ser inferido pelas pistas do contexto",
-        "The word affordable suggests something that is not too expensive. -> a frase mobiliza vocabulário de debate social"
+        "The word affordable suggests something that is not too expensive. -> a frase mobiliza vocabulario de debate social"
       ],
-      "correta": "The festival attracted a young audience interested in music and film. -> a frase reúne vocabulário típico de cultura e entretenimento",
-      "comentario": "A associação correta mantém coerência entre exemplo e interpretação em culture and entertainment.",
+      "correta": "The festival attracted a young audience interested in music and film. -> a frase reune vocabulario tipico de cultura e entretenimento",
+      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em culture and entertainment.",
       "tempoEstimado": 65,
       "tags": [
         "vocabulario-intermediario",
@@ -5469,8 +5470,8 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Culture and entertainment",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
@@ -5478,13 +5479,13 @@ export const vocabularioIntermediario = {
       "tipo": "multipla_escolha",
       "enunciado": "Ao resolver uma atividade sobre culture and entertainment, o estudante deve principalmente:",
       "opcoes": [
-        "reconhecer léxico de práticas culturais e entretenimento",
-        "identificar campo semântico de arte, evento e lazer",
+        "reconhecer lexico de praticas culturais e entretenimento",
+        "identificar campo semantico de arte, evento e lazer",
         "ler textos sobre filmes, shows, livros e eventos culturais",
-        "a questão pede compreensão lexical em contexto cultural"
+        "a questao pede compreensao lexical em contexto cultural"
       ],
-      "correta": "reconhecer léxico de práticas culturais e entretenimento",
-      "comentario": "O objetivo central de culture and entertainment é reconhecer léxico de práticas culturais e entretenimento.",
+      "correta": "reconhecer lexico de praticas culturais e entretenimento",
+      "comentario": "O objetivo central de culture and entertainment e reconhecer lexico de praticas culturais e entretenimento.",
       "tempoEstimado": 70,
       "tags": [
         "vocabulario-intermediario",
@@ -5508,22 +5509,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Social issues",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Inglês, Social issues refere-se a:",
+      "enunciado": "Em Ingles, Social issues refere-se a:",
       "opcoes": [
-        "o vocabulário usado para discutir desigualdade, direitos, educação, inclusão e problemas sociais",
-        "as combinações frequentes de palavras e expressões fixas que aparecem com naturalidade no inglês",
-        "o uso do próprio contexto para inferir o significado de palavras desconhecidas",
-        "o vocabulário ligado a viagens, meios de transporte, deslocamento e planejamento de trajetos"
+        "o vocabulario usado para discutir desigualdade, direitos, educacao, inclusao e problemas sociais",
+        "as combinacoes frequentes de palavras e expressoes fixas que aparecem com naturalidade no ingles",
+        "o uso do proprio contexto para inferir o significado de palavras desconhecidas",
+        "o vocabulario ligado a viagens, meios de transporte, deslocamento e planejamento de trajetos"
       ],
-      "correta": "o vocabulário usado para discutir desigualdade, direitos, educação, inclusão e problemas sociais",
-      "comentario": "Social issues refere-se ao vocabulário usado para discutir desigualdade, direitos, educação, inclusão e problemas sociais.",
+      "correta": "o vocabulario usado para discutir desigualdade, direitos, educacao, inclusao e problemas sociais",
+      "comentario": "Social issues refere-se ao vocabulario usado para discutir desigualdade, direitos, educacao, inclusao e problemas sociais.",
       "tempoEstimado": 20,
       "tags": [
         "vocabulario-intermediario",
@@ -5547,14 +5548,14 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Social issues",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: um texto aborda poverty, access to education, equality and public policies. Esse caso está mais ligado a qual subtópico?",
+      "enunciado": "Observe a situacao: um texto aborda poverty, access to education, equality and public policies. Esse caso esta mais ligado a qual subtopico?",
       "opcoes": [
         "Social issues",
         "Phrasal expressions and collocations",
@@ -5562,7 +5563,7 @@ export const vocabularioIntermediario = {
         "Travel and transportation"
       ],
       "correta": "Social issues",
-      "comentario": "A situação apresentada é melhor compreendida por meio de social issues.",
+      "comentario": "A situacao apresentada e melhor compreendida por meio de social issues.",
       "tempoEstimado": 20,
       "tags": [
         "vocabulario-intermediario",
@@ -5586,8 +5587,8 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Social issues",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
@@ -5625,22 +5626,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Social issues",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO representa corretamente social issues?",
+      "enunciado": "Qual alternativa NAO representa corretamente social issues?",
       "opcoes": [
         "Students should pay attention and take part in the discussion.",
         "The article highlights the need for equal access to education.",
         "observar palavras ligadas a direitos, desigualdade e comunidade.",
-        "resolver itens com temática social e cidadania."
+        "resolver itens com tematica social e cidadania."
       ],
       "correta": "Students should pay attention and take part in the discussion.",
-      "comentario": "A opção incompatível ilustra outro subtópico, e não social issues.",
+      "comentario": "A opcao incompativel ilustra outro subtopico, e nao social issues.",
       "tempoEstimado": 25,
       "tags": [
         "vocabulario-intermediario",
@@ -5664,19 +5665,19 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Social issues",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar social issues, o foco principal é:",
+      "enunciado": "Ao estudar social issues, o foco principal e:",
       "opcoes": [
         "interpretar temas sociais frequentes em textos atuais",
-        "reconhecer combinações lexicais recorrentes em contexto",
+        "reconhecer combinacoes lexicais recorrentes em contexto",
         "deduzir sentido lexical a partir de pistas internas do texto",
-        "reconhecer palavras e expressões de mobilidade e viagem"
+        "reconhecer palavras e expressoes de mobilidade e viagem"
       ],
       "correta": "interpretar temas sociais frequentes em textos atuais",
       "comentario": "Social issues concentra-se em interpretar temas sociais frequentes em textos atuais.",
@@ -5703,22 +5704,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Social issues",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Phrasal expressions and collocations trata de as combinações frequentes de palavras e expressões fixas que aparecem com naturalidade no inglês, Social issues destaca:",
+      "enunciado": "Enquanto Phrasal expressions and collocations trata de as combinacoes frequentes de palavras e expressoes fixas que aparecem com naturalidade no ingles, Social issues destaca:",
       "opcoes": [
-        "O vocabulário usado para discutir desigualdade, direitos, educação, inclusão e problemas sociais.",
-        "As combinações frequentes de palavras e expressões fixas que aparecem com naturalidade no inglês.",
-        "O uso do próprio contexto para inferir o significado de palavras desconhecidas.",
-        "O vocabulário ligado a viagens, meios de transporte, deslocamento e planejamento de trajetos."
+        "O vocabulario usado para discutir desigualdade, direitos, educacao, inclusao e problemas sociais.",
+        "As combinacoes frequentes de palavras e expressoes fixas que aparecem com naturalidade no ingles.",
+        "O uso do proprio contexto para inferir o significado de palavras desconhecidas.",
+        "O vocabulario ligado a viagens, meios de transporte, deslocamento e planejamento de trajetos."
       ],
-      "correta": "O vocabulário usado para discutir desigualdade, direitos, educação, inclusão e problemas sociais.",
-      "comentario": "A comparação correta mostra a especificidade de social issues.",
+      "correta": "O vocabulario usado para discutir desigualdade, direitos, educacao, inclusao e problemas sociais.",
+      "comentario": "A comparacao correta mostra a especificidade de social issues.",
       "tempoEstimado": 30,
       "tags": [
         "vocabulario-intermediario",
@@ -5742,8 +5743,8 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Social issues",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
@@ -5757,7 +5758,7 @@ export const vocabularioIntermediario = {
         "Technology and media"
       ],
       "correta": "Social issues",
-      "comentario": "Esse tipo de tarefa exige domínio de social issues.",
+      "comentario": "Esse tipo de tarefa exige dominio de social issues.",
       "tempoEstimado": 35,
       "tags": [
         "vocabulario-intermediario",
@@ -5781,22 +5782,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Social issues",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação prática depende mais diretamente de Social issues?",
+      "enunciado": "Qual situacao pratica depende mais diretamente de Social issues?",
       "opcoes": [
-        "resolver itens com temática social e cidadania",
-        "interpretar expressões que não devem ser lidas palavra por palavra",
-        "continuar a leitura sem depender de tradução literal de cada termo",
-        "interpretar textos atuais sobre mídia e tecnologia"
+        "resolver itens com tematica social e cidadania",
+        "interpretar expressoes que nao devem ser lidas palavra por palavra",
+        "continuar a leitura sem depender de traducao literal de cada termo",
+        "interpretar textos atuais sobre midia e tecnologia"
       ],
-      "correta": "resolver itens com temática social e cidadania",
-      "comentario": "Social issues aparece de forma direta em resolver itens com temática social e cidadania.",
+      "correta": "resolver itens com tematica social e cidadania",
+      "comentario": "Social issues aparece de forma direta em resolver itens com tematica social e cidadania.",
       "tempoEstimado": 35,
       "tags": [
         "vocabulario-intermediario",
@@ -5820,22 +5821,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Social issues",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre social issues?",
+      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre social issues?",
       "opcoes": [
-        "o caso é resolvido com foco em social issues.",
-        "o caso é melhor resolvido por phrasal expressions and collocations.",
+        "o caso e resolvido com foco em social issues.",
+        "o caso e melhor resolvido por phrasal expressions and collocations.",
         "o caso elimina a necessidade de context clues and word meaning.",
         "o caso impede qualquer uso de travel and transportation."
       ],
-      "correta": "o caso é resolvido com foco em social issues.",
-      "comentario": "A conclusão correta retoma a função central de social issues.",
+      "correta": "o caso e resolvido com foco em social issues.",
+      "comentario": "A conclusao correta retoma a funcao central de social issues.",
       "tempoEstimado": 40,
       "tags": [
         "vocabulario-intermediario",
@@ -5859,8 +5860,8 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Social issues",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
@@ -5868,12 +5869,12 @@ export const vocabularioIntermediario = {
       "tipo": "multipla_escolha",
       "enunciado": "Se a turma fosse revisar social issues, qual pergunta de estudo seria a mais adequada?",
       "opcoes": [
-        "Como social issues aparece em resolver itens com temática social e cidadania?",
-        "Como phrasal expressions and collocations substitui totalmente resolver itens com temática social e cidadania?",
-        "Por que context clues and word meaning torna desnecessário estudar Social issues?",
+        "Como social issues aparece em resolver itens com tematica social e cidadania?",
+        "Como phrasal expressions and collocations substitui totalmente resolver itens com tematica social e cidadania?",
+        "Por que context clues and word meaning torna desnecessario estudar Social issues?",
         "De que modo travel and transportation elimina toda leitura de contexto?"
       ],
-      "correta": "Como social issues aparece em resolver itens com temática social e cidadania?",
+      "correta": "Como social issues aparece em resolver itens com tematica social e cidadania?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de social issues.",
       "tempoEstimado": 40,
       "tags": [
@@ -5898,22 +5899,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Social issues",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em social issues é pensar que:",
+      "enunciado": "Um erro comum em social issues e pensar que:",
       "opcoes": [
-        "social issues vocabulary é avançado demais para aparecer em textos curtos",
-        "collocations podem ser montadas livremente sem seguir combinações usuais",
-        "se uma palavra é desconhecida, a leitura fica impossível sem dicionário",
+        "social issues vocabulary e avancado demais para aparecer em textos curtos",
+        "collocations podem ser montadas livremente sem seguir combinacoes usuais",
+        "se uma palavra e desconhecida, a leitura fica impossivel sem dicionario",
         "travel vocabulary serve apenas para turismo internacional"
       ],
-      "correta": "social issues vocabulary é avançado demais para aparecer em textos curtos",
-      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de social issues.",
+      "correta": "social issues vocabulary e avancado demais para aparecer em textos curtos",
+      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de social issues.",
       "tempoEstimado": 45,
       "tags": [
         "vocabulario-intermediario",
@@ -5937,22 +5938,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Social issues",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"se o texto trata de escola e comunidade, então não fala de questão social\". A avaliação mais adequada é:",
+      "enunciado": "Um estudante afirma: \"se o texto trata de escola e comunidade, entao nao fala de questao social\". A avaliacao mais adequada e:",
       "opcoes": [
-        "A afirmação está incorreta, porque o vocabulário usado para discutir desigualdade, direitos, educação, inclusão e problemas sociais.",
-        "A afirmação está correta, pois resume integralmente social issues.",
-        "A afirmação está correta, porque basta decorar a tradução do exemplo.",
-        "A afirmação está incorreta apenas por não citar uma regra gramatical."
+        "A afirmacao esta incorreta, porque o vocabulario usado para discutir desigualdade, direitos, educacao, inclusao e problemas sociais.",
+        "A afirmacao esta correta, pois resume integralmente social issues.",
+        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
+        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
       ],
-      "correta": "A afirmação está incorreta, porque o vocabulário usado para discutir desigualdade, direitos, educação, inclusão e problemas sociais.",
-      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre social issues.",
+      "correta": "A afirmacao esta incorreta, porque o vocabulario usado para discutir desigualdade, direitos, educacao, inclusao e problemas sociais.",
+      "comentario": "A fala do estudante apresenta um equivoco conceitual sobre social issues.",
       "tempoEstimado": 45,
       "tags": [
         "vocabulario-intermediario",
@@ -5976,22 +5977,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Social issues",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se social issues fosse ignorado(a) em resolver itens com temática social e cidadania, o resultado mais provável seria:",
+      "enunciado": "Se social issues fosse ignorado(a) em resolver itens com tematica social e cidadania, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretação ficaria incompleta e aumentaria a chance de erro em resolver itens com temática social e cidadania.",
-        "a questão seria resolvida automaticamente por phrasal expressions and collocations.",
-        "nenhuma interpretação seria alterada, porque Social issues não interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
+        "a interpretacao ficaria incompleta e aumentaria a chance de erro em resolver itens com tematica social e cidadania.",
+        "a questao seria resolvida automaticamente por phrasal expressions and collocations.",
+        "nenhuma interpretacao seria alterada, porque Social issues nao interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
       ],
-      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em resolver itens com temática social e cidadania.",
-      "comentario": "Ignorar social issues compromete a resolução correta da atividade.",
+      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em resolver itens com tematica social e cidadania.",
+      "comentario": "Ignorar social issues compromete a resolucao correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "vocabulario-intermediario",
@@ -6015,14 +6016,14 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Social issues",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou ação ilustra melhor Social issues?",
+      "enunciado": "Qual trecho ou acao ilustra melhor Social issues?",
       "opcoes": [
         "The article highlights the need for equal access to education.",
         "Students should pay attention and take part in the discussion.",
@@ -6030,7 +6031,7 @@ export const vocabularioIntermediario = {
         "She missed her train because she arrived late at the station."
       ],
       "correta": "The article highlights the need for equal access to education.",
-      "comentario": "O item correto é o que melhor exemplifica social issues.",
+      "comentario": "O item correto e o que melhor exemplifica social issues.",
       "tempoEstimado": 50,
       "tags": [
         "vocabulario-intermediario",
@@ -6054,21 +6055,21 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Social issues",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao encontrar o exemplo \"The article highlights the need for equal access to education.\", a leitura mais adequada é:",
+      "enunciado": "Ao encontrar o exemplo \"The article highlights the need for equal access to education.\", a leitura mais adequada e:",
       "opcoes": [
-        "a frase mobiliza vocabulário de debate social",
-        "a frase mostra combinações frequentes do inglês em uso",
+        "a frase mobiliza vocabulario de debate social",
+        "a frase mostra combinacoes frequentes do ingles em uso",
         "o sentido da palavra pode ser inferido pelas pistas do contexto",
-        "a frase mobiliza vocabulário típico de deslocamento e viagem"
+        "a frase mobiliza vocabulario tipico de deslocamento e viagem"
       ],
-      "correta": "a frase mobiliza vocabulário de debate social",
+      "correta": "a frase mobiliza vocabulario de debate social",
       "comentario": "A leitura correta do exemplo revela o papel de social issues.",
       "tempoEstimado": 55,
       "tags": [
@@ -6093,22 +6094,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Social issues",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estratégia ajuda mais a estudar social issues?",
+      "enunciado": "Qual estrategia ajuda mais a estudar social issues?",
       "opcoes": [
         "observar palavras ligadas a direitos, desigualdade e comunidade",
-        "memorizar combinações comuns e confirmar seu sentido no contexto",
-        "observar definição indireta, exemplo, contraste e repetição ao redor da palavra",
+        "memorizar combinacoes comuns e confirmar seu sentido no contexto",
+        "observar definicao indireta, exemplo, contraste e repeticao ao redor da palavra",
         "observar palavras ligadas a transporte, destino e deslocamento"
       ],
       "correta": "observar palavras ligadas a direitos, desigualdade e comunidade",
-      "comentario": "A estratégia correta fortalece o domínio de social issues.",
+      "comentario": "A estrategia correta fortalece o dominio de social issues.",
       "tempoEstimado": 55,
       "tags": [
         "vocabulario-intermediario",
@@ -6132,22 +6133,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Social issues",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Social issues é mais cobrado quando:",
+      "enunciado": "Em uma prova, Social issues e mais cobrado quando:",
       "opcoes": [
-        "o item cobra leitura temática e vocabulário social",
-        "a questão pede reconhecer uso natural de expressão ou combinação lexical",
-        "o item cobra inferência lexical contextual",
+        "o item cobra leitura tematica e vocabulario social",
+        "a questao pede reconhecer uso natural de expressao ou combinacao lexical",
+        "o item cobra inferencia lexical contextual",
         "o item cobra leitura de contexto de viagem ou transporte"
       ],
-      "correta": "o item cobra leitura temática e vocabulário social",
-      "comentario": "Esse é o tipo de demanda em que social issues aparece com mais frequência.",
+      "correta": "o item cobra leitura tematica e vocabulario social",
+      "comentario": "Esse e o tipo de demanda em que social issues aparece com mais frequencia.",
       "tempoEstimado": 60,
       "tags": [
         "vocabulario-intermediario",
@@ -6171,8 +6172,8 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Social issues",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
@@ -6180,13 +6181,13 @@ export const vocabularioIntermediario = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual resumo sintetiza melhor a ideia de Social issues?",
       "opcoes": [
-        "Em síntese, o vocabulário usado para discutir desigualdade, direitos, educação, inclusão e problemas sociais.",
-        "Em síntese, as combinações frequentes de palavras e expressões fixas que aparecem com naturalidade no inglês.",
-        "Em síntese, o uso do próprio contexto para inferir o significado de palavras desconhecidas.",
-        "Em síntese, o vocabulário ligado a viagens, meios de transporte, deslocamento e planejamento de trajetos."
+        "Em sintese, o vocabulario usado para discutir desigualdade, direitos, educacao, inclusao e problemas sociais.",
+        "Em sintese, as combinacoes frequentes de palavras e expressoes fixas que aparecem com naturalidade no ingles.",
+        "Em sintese, o uso do proprio contexto para inferir o significado de palavras desconhecidas.",
+        "Em sintese, o vocabulario ligado a viagens, meios de transporte, deslocamento e planejamento de trajetos."
       ],
-      "correta": "Em síntese, o vocabulário usado para discutir desigualdade, direitos, educação, inclusão e problemas sociais.",
-      "comentario": "O resumo correto recupera o núcleo de social issues.",
+      "correta": "Em sintese, o vocabulario usado para discutir desigualdade, direitos, educacao, inclusao e problemas sociais.",
+      "comentario": "O resumo correto recupera o nucleo de social issues.",
       "tempoEstimado": 60,
       "tags": [
         "vocabulario-intermediario",
@@ -6210,22 +6211,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Social issues",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associação entre exemplo e interpretação está correta em Social issues?",
+      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Social issues?",
       "opcoes": [
-        "The article highlights the need for equal access to education. -> a frase mobiliza vocabulário de debate social",
-        "Students should pay attention and take part in the discussion. -> a frase mobiliza vocabulário de debate social",
-        "The word affordable suggests something that is not too expensive. -> a frase mobiliza vocabulário típico de deslocamento e viagem",
-        "She missed her train because she arrived late at the station. -> a frase mostra combinações frequentes do inglês em uso"
+        "The article highlights the need for equal access to education. -> a frase mobiliza vocabulario de debate social",
+        "Students should pay attention and take part in the discussion. -> a frase mobiliza vocabulario de debate social",
+        "The word affordable suggests something that is not too expensive. -> a frase mobiliza vocabulario tipico de deslocamento e viagem",
+        "She missed her train because she arrived late at the station. -> a frase mostra combinacoes frequentes do ingles em uso"
       ],
-      "correta": "The article highlights the need for equal access to education. -> a frase mobiliza vocabulário de debate social",
-      "comentario": "A associação correta mantém coerência entre exemplo e interpretação em social issues.",
+      "correta": "The article highlights the need for equal access to education. -> a frase mobiliza vocabulario de debate social",
+      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em social issues.",
       "tempoEstimado": 65,
       "tags": [
         "vocabulario-intermediario",
@@ -6249,8 +6250,8 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Social issues",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
@@ -6260,11 +6261,11 @@ export const vocabularioIntermediario = {
       "opcoes": [
         "interpretar temas sociais frequentes em textos atuais",
         "observar palavras ligadas a direitos, desigualdade e comunidade",
-        "resolver itens com temática social e cidadania",
-        "o item cobra leitura temática e vocabulário social"
+        "resolver itens com tematica social e cidadania",
+        "o item cobra leitura tematica e vocabulario social"
       ],
       "correta": "interpretar temas sociais frequentes em textos atuais",
-      "comentario": "O objetivo central de social issues é interpretar temas sociais frequentes em textos atuais.",
+      "comentario": "O objetivo central de social issues e interpretar temas sociais frequentes em textos atuais.",
       "tempoEstimado": 70,
       "tags": [
         "vocabulario-intermediario",
@@ -6288,22 +6289,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Phrasal expressions and collocations",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Inglês, Phrasal expressions and collocations refere-se a:",
+      "enunciado": "Em Ingles, Phrasal expressions and collocations refere-se a:",
       "opcoes": [
-        "as combinações frequentes de palavras e expressões fixas que aparecem com naturalidade no inglês",
-        "o uso do próprio contexto para inferir o significado de palavras desconhecidas",
-        "o vocabulário ligado a viagens, meios de transporte, deslocamento e planejamento de trajetos",
-        "o vocabulário relacionado a dispositivos, internet, redes sociais, aplicativos e comunicação digital"
+        "as combinacoes frequentes de palavras e expressoes fixas que aparecem com naturalidade no ingles",
+        "o uso do proprio contexto para inferir o significado de palavras desconhecidas",
+        "o vocabulario ligado a viagens, meios de transporte, deslocamento e planejamento de trajetos",
+        "o vocabulario relacionado a dispositivos, internet, redes sociais, aplicativos e comunicacao digital"
       ],
-      "correta": "as combinações frequentes de palavras e expressões fixas que aparecem com naturalidade no inglês",
-      "comentario": "Phrasal expressions and collocations refere-se às combinações frequentes de palavras e expressões fixas que aparecem com naturalidade no inglês.",
+      "correta": "as combinacoes frequentes de palavras e expressoes fixas que aparecem com naturalidade no ingles",
+      "comentario": "Phrasal expressions and collocations refere-se as combinacoes frequentes de palavras e expressoes fixas que aparecem com naturalidade no ingles.",
       "tempoEstimado": 20,
       "tags": [
         "vocabulario-intermediario",
@@ -6327,14 +6328,14 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Phrasal expressions and collocations",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: um texto usa take part, look for, make a decision and pay attention. Esse caso está mais ligado a qual subtópico?",
+      "enunciado": "Observe a situacao: um texto usa take part, look for, make a decision and pay attention. Esse caso esta mais ligado a qual subtopico?",
       "opcoes": [
         "Phrasal expressions and collocations",
         "Context clues and word meaning",
@@ -6342,7 +6343,7 @@ export const vocabularioIntermediario = {
         "Technology and media"
       ],
       "correta": "Phrasal expressions and collocations",
-      "comentario": "A situação apresentada é melhor compreendida por meio de phrasal expressions and collocations.",
+      "comentario": "A situacao apresentada e melhor compreendida por meio de phrasal expressions and collocations.",
       "tempoEstimado": 20,
       "tags": [
         "vocabulario-intermediario",
@@ -6366,8 +6367,8 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Phrasal expressions and collocations",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
@@ -6405,22 +6406,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Phrasal expressions and collocations",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO representa corretamente phrasal expressions and collocations?",
+      "enunciado": "Qual alternativa NAO representa corretamente phrasal expressions and collocations?",
       "opcoes": [
         "The word affordable suggests something that is not too expensive.",
         "Students should pay attention and take part in the discussion.",
-        "memorizar combinações comuns e confirmar seu sentido no contexto.",
-        "interpretar expressões que não devem ser lidas palavra por palavra."
+        "memorizar combinacoes comuns e confirmar seu sentido no contexto.",
+        "interpretar expressoes que nao devem ser lidas palavra por palavra."
       ],
       "correta": "The word affordable suggests something that is not too expensive.",
-      "comentario": "A opção incompatível ilustra outro subtópico, e não phrasal expressions and collocations.",
+      "comentario": "A opcao incompativel ilustra outro subtopico, e nao phrasal expressions and collocations.",
       "tempoEstimado": 25,
       "tags": [
         "vocabulario-intermediario",
@@ -6444,22 +6445,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Phrasal expressions and collocations",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar phrasal expressions and collocations, o foco principal é:",
+      "enunciado": "Ao estudar phrasal expressions and collocations, o foco principal e:",
       "opcoes": [
-        "reconhecer combinações lexicais recorrentes em contexto",
+        "reconhecer combinacoes lexicais recorrentes em contexto",
         "deduzir sentido lexical a partir de pistas internas do texto",
-        "reconhecer palavras e expressões de mobilidade e viagem",
-        "identificar léxico de ambientes digitais e comunicação online"
+        "reconhecer palavras e expressoes de mobilidade e viagem",
+        "identificar lexico de ambientes digitais e comunicacao online"
       ],
-      "correta": "reconhecer combinações lexicais recorrentes em contexto",
-      "comentario": "Phrasal expressions and collocations concentra-se em reconhecer combinações lexicais recorrentes em contexto.",
+      "correta": "reconhecer combinacoes lexicais recorrentes em contexto",
+      "comentario": "Phrasal expressions and collocations concentra-se em reconhecer combinacoes lexicais recorrentes em contexto.",
       "tempoEstimado": 30,
       "tags": [
         "vocabulario-intermediario",
@@ -6483,22 +6484,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Phrasal expressions and collocations",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Context clues and word meaning trata de o uso do próprio contexto para inferir o significado de palavras desconhecidas, Phrasal expressions and collocations destaca:",
+      "enunciado": "Enquanto Context clues and word meaning trata de o uso do proprio contexto para inferir o significado de palavras desconhecidas, Phrasal expressions and collocations destaca:",
       "opcoes": [
-        "As combinações frequentes de palavras e expressões fixas que aparecem com naturalidade no inglês.",
-        "O uso do próprio contexto para inferir o significado de palavras desconhecidas.",
-        "O vocabulário ligado a viagens, meios de transporte, deslocamento e planejamento de trajetos.",
-        "O vocabulário relacionado a dispositivos, internet, redes sociais, aplicativos e comunicação digital."
+        "As combinacoes frequentes de palavras e expressoes fixas que aparecem com naturalidade no ingles.",
+        "O uso do proprio contexto para inferir o significado de palavras desconhecidas.",
+        "O vocabulario ligado a viagens, meios de transporte, deslocamento e planejamento de trajetos.",
+        "O vocabulario relacionado a dispositivos, internet, redes sociais, aplicativos e comunicacao digital."
       ],
-      "correta": "As combinações frequentes de palavras e expressões fixas que aparecem com naturalidade no inglês.",
-      "comentario": "A comparação correta mostra a especificidade de phrasal expressions and collocations.",
+      "correta": "As combinacoes frequentes de palavras e expressoes fixas que aparecem com naturalidade no ingles.",
+      "comentario": "A comparacao correta mostra a especificidade de phrasal expressions and collocations.",
       "tempoEstimado": 30,
       "tags": [
         "vocabulario-intermediario",
@@ -6522,8 +6523,8 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Phrasal expressions and collocations",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
@@ -6537,7 +6538,7 @@ export const vocabularioIntermediario = {
         "Health and body"
       ],
       "correta": "Phrasal expressions and collocations",
-      "comentario": "Esse tipo de tarefa exige domínio de phrasal expressions and collocations.",
+      "comentario": "Esse tipo de tarefa exige dominio de phrasal expressions and collocations.",
       "tempoEstimado": 35,
       "tags": [
         "vocabulario-intermediario",
@@ -6561,22 +6562,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Phrasal expressions and collocations",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação prática depende mais diretamente de Phrasal expressions and collocations?",
+      "enunciado": "Qual situacao pratica depende mais diretamente de Phrasal expressions and collocations?",
       "opcoes": [
-        "interpretar expressões que não devem ser lidas palavra por palavra",
-        "continuar a leitura sem depender de tradução literal de cada termo",
-        "interpretar anúncios de viagem, roteiros e informações de transporte",
-        "entender campanhas e textos informativos sobre saúde"
+        "interpretar expressoes que nao devem ser lidas palavra por palavra",
+        "continuar a leitura sem depender de traducao literal de cada termo",
+        "interpretar anuncios de viagem, roteiros e informacoes de transporte",
+        "entender campanhas e textos informativos sobre saude"
       ],
-      "correta": "interpretar expressões que não devem ser lidas palavra por palavra",
-      "comentario": "Phrasal expressions and collocations aparece de forma direta em interpretar expressões que não devem ser lidas palavra por palavra.",
+      "correta": "interpretar expressoes que nao devem ser lidas palavra por palavra",
+      "comentario": "Phrasal expressions and collocations aparece de forma direta em interpretar expressoes que nao devem ser lidas palavra por palavra.",
       "tempoEstimado": 35,
       "tags": [
         "vocabulario-intermediario",
@@ -6600,22 +6601,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Phrasal expressions and collocations",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre phrasal expressions and collocations?",
+      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre phrasal expressions and collocations?",
       "opcoes": [
-        "o caso é resolvido com foco em phrasal expressions and collocations.",
-        "o caso é melhor resolvido por context clues and word meaning.",
+        "o caso e resolvido com foco em phrasal expressions and collocations.",
+        "o caso e melhor resolvido por context clues and word meaning.",
         "o caso elimina a necessidade de travel and transportation.",
         "o caso impede qualquer uso de technology and media."
       ],
-      "correta": "o caso é resolvido com foco em phrasal expressions and collocations.",
-      "comentario": "A conclusão correta retoma a função central de phrasal expressions and collocations.",
+      "correta": "o caso e resolvido com foco em phrasal expressions and collocations.",
+      "comentario": "A conclusao correta retoma a funcao central de phrasal expressions and collocations.",
       "tempoEstimado": 40,
       "tags": [
         "vocabulario-intermediario",
@@ -6639,8 +6640,8 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Phrasal expressions and collocations",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
@@ -6648,12 +6649,12 @@ export const vocabularioIntermediario = {
       "tipo": "multipla_escolha",
       "enunciado": "Se a turma fosse revisar phrasal expressions and collocations, qual pergunta de estudo seria a mais adequada?",
       "opcoes": [
-        "Como phrasal expressions and collocations aparece em interpretar expressões que não devem ser lidas palavra por palavra?",
-        "Como context clues and word meaning substitui totalmente interpretar expressões que não devem ser lidas palavra por palavra?",
-        "Por que travel and transportation torna desnecessário estudar Phrasal expressions and collocations?",
+        "Como phrasal expressions and collocations aparece em interpretar expressoes que nao devem ser lidas palavra por palavra?",
+        "Como context clues and word meaning substitui totalmente interpretar expressoes que nao devem ser lidas palavra por palavra?",
+        "Por que travel and transportation torna desnecessario estudar Phrasal expressions and collocations?",
         "De que modo technology and media elimina toda leitura de contexto?"
       ],
-      "correta": "Como phrasal expressions and collocations aparece em interpretar expressões que não devem ser lidas palavra por palavra?",
+      "correta": "Como phrasal expressions and collocations aparece em interpretar expressoes que nao devem ser lidas palavra por palavra?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de phrasal expressions and collocations.",
       "tempoEstimado": 40,
       "tags": [
@@ -6678,22 +6679,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Phrasal expressions and collocations",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em phrasal expressions and collocations é pensar que:",
+      "enunciado": "Um erro comum em phrasal expressions and collocations e pensar que:",
       "opcoes": [
-        "collocations podem ser montadas livremente sem seguir combinações usuais",
-        "se uma palavra é desconhecida, a leitura fica impossível sem dicionário",
+        "collocations podem ser montadas livremente sem seguir combinacoes usuais",
+        "se uma palavra e desconhecida, a leitura fica impossivel sem dicionario",
         "travel vocabulary serve apenas para turismo internacional",
-        "tecnologia em inglês se resume a nomes de aparelhos"
+        "tecnologia em ingles se resume a nomes de aparelhos"
       ],
-      "correta": "collocations podem ser montadas livremente sem seguir combinações usuais",
-      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de phrasal expressions and collocations.",
+      "correta": "collocations podem ser montadas livremente sem seguir combinacoes usuais",
+      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de phrasal expressions and collocations.",
       "tempoEstimado": 45,
       "tags": [
         "vocabulario-intermediario",
@@ -6717,22 +6718,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Phrasal expressions and collocations",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"make a homework é tão natural quanto do homework porque o sentido é parecido\". A avaliação mais adequada é:",
+      "enunciado": "Um estudante afirma: \"make a homework e tao natural quanto do homework porque o sentido e parecido\". A avaliacao mais adequada e:",
       "opcoes": [
-        "A afirmação está incorreta, porque as combinações frequentes de palavras e expressões fixas que aparecem com naturalidade no inglês.",
-        "A afirmação está correta, pois resume integralmente phrasal expressions and collocations.",
-        "A afirmação está correta, porque basta decorar a tradução do exemplo.",
-        "A afirmação está incorreta apenas por não citar uma regra gramatical."
+        "A afirmacao esta incorreta, porque as combinacoes frequentes de palavras e expressoes fixas que aparecem com naturalidade no ingles.",
+        "A afirmacao esta correta, pois resume integralmente phrasal expressions and collocations.",
+        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
+        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
       ],
-      "correta": "A afirmação está incorreta, porque as combinações frequentes de palavras e expressões fixas que aparecem com naturalidade no inglês.",
-      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre phrasal expressions and collocations.",
+      "correta": "A afirmacao esta incorreta, porque as combinacoes frequentes de palavras e expressoes fixas que aparecem com naturalidade no ingles.",
+      "comentario": "A fala do estudante apresenta um equivoco conceitual sobre phrasal expressions and collocations.",
       "tempoEstimado": 45,
       "tags": [
         "vocabulario-intermediario",
@@ -6756,22 +6757,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Phrasal expressions and collocations",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se phrasal expressions and collocations fosse ignorado(a) em interpretar expressões que não devem ser lidas palavra por palavra, o resultado mais provável seria:",
+      "enunciado": "Se phrasal expressions and collocations fosse ignorado(a) em interpretar expressoes que nao devem ser lidas palavra por palavra, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretação ficaria incompleta e aumentaria a chance de erro em interpretar expressões que não devem ser lidas palavra por palavra.",
-        "a questão seria resolvida automaticamente por context clues and word meaning.",
-        "nenhuma interpretação seria alterada, porque Phrasal expressions and collocations não interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
+        "a interpretacao ficaria incompleta e aumentaria a chance de erro em interpretar expressoes que nao devem ser lidas palavra por palavra.",
+        "a questao seria resolvida automaticamente por context clues and word meaning.",
+        "nenhuma interpretacao seria alterada, porque Phrasal expressions and collocations nao interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
       ],
-      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em interpretar expressões que não devem ser lidas palavra por palavra.",
-      "comentario": "Ignorar phrasal expressions and collocations compromete a resolução correta da atividade.",
+      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em interpretar expressoes que nao devem ser lidas palavra por palavra.",
+      "comentario": "Ignorar phrasal expressions and collocations compromete a resolucao correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "vocabulario-intermediario",
@@ -6795,14 +6796,14 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Phrasal expressions and collocations",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou ação ilustra melhor Phrasal expressions and collocations?",
+      "enunciado": "Qual trecho ou acao ilustra melhor Phrasal expressions and collocations?",
       "opcoes": [
         "Students should pay attention and take part in the discussion.",
         "The word affordable suggests something that is not too expensive.",
@@ -6810,7 +6811,7 @@ export const vocabularioIntermediario = {
         "Users should review their privacy settings before sharing photos."
       ],
       "correta": "Students should pay attention and take part in the discussion.",
-      "comentario": "O item correto é o que melhor exemplifica phrasal expressions and collocations.",
+      "comentario": "O item correto e o que melhor exemplifica phrasal expressions and collocations.",
       "tempoEstimado": 50,
       "tags": [
         "vocabulario-intermediario",
@@ -6834,21 +6835,21 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Phrasal expressions and collocations",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao encontrar o exemplo \"Students should pay attention and take part in the discussion.\", a leitura mais adequada é:",
+      "enunciado": "Ao encontrar o exemplo \"Students should pay attention and take part in the discussion.\", a leitura mais adequada e:",
       "opcoes": [
-        "a frase mostra combinações frequentes do inglês em uso",
+        "a frase mostra combinacoes frequentes do ingles em uso",
         "o sentido da palavra pode ser inferido pelas pistas do contexto",
-        "a frase mobiliza vocabulário típico de deslocamento e viagem",
-        "a frase traz vocabulário comum em temas digitais"
+        "a frase mobiliza vocabulario tipico de deslocamento e viagem",
+        "a frase traz vocabulario comum em temas digitais"
       ],
-      "correta": "a frase mostra combinações frequentes do inglês em uso",
+      "correta": "a frase mostra combinacoes frequentes do ingles em uso",
       "comentario": "A leitura correta do exemplo revela o papel de phrasal expressions and collocations.",
       "tempoEstimado": 55,
       "tags": [
@@ -6873,22 +6874,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Phrasal expressions and collocations",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estratégia ajuda mais a estudar phrasal expressions and collocations?",
+      "enunciado": "Qual estrategia ajuda mais a estudar phrasal expressions and collocations?",
       "opcoes": [
-        "memorizar combinações comuns e confirmar seu sentido no contexto",
-        "observar definição indireta, exemplo, contraste e repetição ao redor da palavra",
+        "memorizar combinacoes comuns e confirmar seu sentido no contexto",
+        "observar definicao indireta, exemplo, contraste e repeticao ao redor da palavra",
         "observar palavras ligadas a transporte, destino e deslocamento",
-        "relacionar palavras técnicas ao contexto de mídia e uso online"
+        "relacionar palavras tecnicas ao contexto de midia e uso online"
       ],
-      "correta": "memorizar combinações comuns e confirmar seu sentido no contexto",
-      "comentario": "A estratégia correta fortalece o domínio de phrasal expressions and collocations.",
+      "correta": "memorizar combinacoes comuns e confirmar seu sentido no contexto",
+      "comentario": "A estrategia correta fortalece o dominio de phrasal expressions and collocations.",
       "tempoEstimado": 55,
       "tags": [
         "vocabulario-intermediario",
@@ -6912,22 +6913,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Phrasal expressions and collocations",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Phrasal expressions and collocations é mais cobrado quando:",
+      "enunciado": "Em uma prova, Phrasal expressions and collocations e mais cobrado quando:",
       "opcoes": [
-        "a questão pede reconhecer uso natural de expressão ou combinação lexical",
-        "o item cobra inferência lexical contextual",
+        "a questao pede reconhecer uso natural de expressao ou combinacao lexical",
+        "o item cobra inferencia lexical contextual",
         "o item cobra leitura de contexto de viagem ou transporte",
-        "a questão exige leitura lexical em textos sobre tecnologia"
+        "a questao exige leitura lexical em textos sobre tecnologia"
       ],
-      "correta": "a questão pede reconhecer uso natural de expressão ou combinação lexical",
-      "comentario": "Esse é o tipo de demanda em que phrasal expressions and collocations aparece com mais frequência.",
+      "correta": "a questao pede reconhecer uso natural de expressao ou combinacao lexical",
+      "comentario": "Esse e o tipo de demanda em que phrasal expressions and collocations aparece com mais frequencia.",
       "tempoEstimado": 60,
       "tags": [
         "vocabulario-intermediario",
@@ -6951,8 +6952,8 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Phrasal expressions and collocations",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
@@ -6960,13 +6961,13 @@ export const vocabularioIntermediario = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual resumo sintetiza melhor a ideia de Phrasal expressions and collocations?",
       "opcoes": [
-        "Em síntese, as combinações frequentes de palavras e expressões fixas que aparecem com naturalidade no inglês.",
-        "Em síntese, o uso do próprio contexto para inferir o significado de palavras desconhecidas.",
-        "Em síntese, o vocabulário ligado a viagens, meios de transporte, deslocamento e planejamento de trajetos.",
-        "Em síntese, o vocabulário relacionado a dispositivos, internet, redes sociais, aplicativos e comunicação digital."
+        "Em sintese, as combinacoes frequentes de palavras e expressoes fixas que aparecem com naturalidade no ingles.",
+        "Em sintese, o uso do proprio contexto para inferir o significado de palavras desconhecidas.",
+        "Em sintese, o vocabulario ligado a viagens, meios de transporte, deslocamento e planejamento de trajetos.",
+        "Em sintese, o vocabulario relacionado a dispositivos, internet, redes sociais, aplicativos e comunicacao digital."
       ],
-      "correta": "Em síntese, as combinações frequentes de palavras e expressões fixas que aparecem com naturalidade no inglês.",
-      "comentario": "O resumo correto recupera o núcleo de phrasal expressions and collocations.",
+      "correta": "Em sintese, as combinacoes frequentes de palavras e expressoes fixas que aparecem com naturalidade no ingles.",
+      "comentario": "O resumo correto recupera o nucleo de phrasal expressions and collocations.",
       "tempoEstimado": 60,
       "tags": [
         "vocabulario-intermediario",
@@ -6990,22 +6991,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Phrasal expressions and collocations",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associação entre exemplo e interpretação está correta em Phrasal expressions and collocations?",
+      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Phrasal expressions and collocations?",
       "opcoes": [
-        "Students should pay attention and take part in the discussion. -> a frase mostra combinações frequentes do inglês em uso",
-        "The word affordable suggests something that is not too expensive. -> a frase mostra combinações frequentes do inglês em uso",
-        "She missed her train because she arrived late at the station. -> a frase traz vocabulário comum em temas digitais",
+        "Students should pay attention and take part in the discussion. -> a frase mostra combinacoes frequentes do ingles em uso",
+        "The word affordable suggests something that is not too expensive. -> a frase mostra combinacoes frequentes do ingles em uso",
+        "She missed her train because she arrived late at the station. -> a frase traz vocabulario comum em temas digitais",
         "Users should review their privacy settings before sharing photos. -> o sentido da palavra pode ser inferido pelas pistas do contexto"
       ],
-      "correta": "Students should pay attention and take part in the discussion. -> a frase mostra combinações frequentes do inglês em uso",
-      "comentario": "A associação correta mantém coerência entre exemplo e interpretação em phrasal expressions and collocations.",
+      "correta": "Students should pay attention and take part in the discussion. -> a frase mostra combinacoes frequentes do ingles em uso",
+      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em phrasal expressions and collocations.",
       "tempoEstimado": 65,
       "tags": [
         "vocabulario-intermediario",
@@ -7029,8 +7030,8 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Phrasal expressions and collocations",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
@@ -7038,13 +7039,13 @@ export const vocabularioIntermediario = {
       "tipo": "multipla_escolha",
       "enunciado": "Ao resolver uma atividade sobre phrasal expressions and collocations, o estudante deve principalmente:",
       "opcoes": [
-        "reconhecer combinações lexicais recorrentes em contexto",
-        "memorizar combinações comuns e confirmar seu sentido no contexto",
-        "interpretar expressões que não devem ser lidas palavra por palavra",
-        "a questão pede reconhecer uso natural de expressão ou combinação lexical"
+        "reconhecer combinacoes lexicais recorrentes em contexto",
+        "memorizar combinacoes comuns e confirmar seu sentido no contexto",
+        "interpretar expressoes que nao devem ser lidas palavra por palavra",
+        "a questao pede reconhecer uso natural de expressao ou combinacao lexical"
       ],
-      "correta": "reconhecer combinações lexicais recorrentes em contexto",
-      "comentario": "O objetivo central de phrasal expressions and collocations é reconhecer combinações lexicais recorrentes em contexto.",
+      "correta": "reconhecer combinacoes lexicais recorrentes em contexto",
+      "comentario": "O objetivo central de phrasal expressions and collocations e reconhecer combinacoes lexicais recorrentes em contexto.",
       "tempoEstimado": 70,
       "tags": [
         "vocabulario-intermediario",
@@ -7068,22 +7069,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Context clues and word meaning",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Inglês, Context clues and word meaning refere-se a:",
+      "enunciado": "Em Ingles, Context clues and word meaning refere-se a:",
       "opcoes": [
-        "o uso do próprio contexto para inferir o significado de palavras desconhecidas",
-        "o vocabulário ligado a viagens, meios de transporte, deslocamento e planejamento de trajetos",
-        "o vocabulário relacionado a dispositivos, internet, redes sociais, aplicativos e comunicação digital",
-        "o vocabulário usado para falar de corpo, bem-estar, hábitos saudáveis, sintomas e cuidados"
+        "o uso do proprio contexto para inferir o significado de palavras desconhecidas",
+        "o vocabulario ligado a viagens, meios de transporte, deslocamento e planejamento de trajetos",
+        "o vocabulario relacionado a dispositivos, internet, redes sociais, aplicativos e comunicacao digital",
+        "o vocabulario usado para falar de corpo, bem-estar, habitos saudaveis, sintomas e cuidados"
       ],
-      "correta": "o uso do próprio contexto para inferir o significado de palavras desconhecidas",
-      "comentario": "Context clues and word meaning refere-se ao uso do próprio contexto para inferir o significado de palavras desconhecidas.",
+      "correta": "o uso do proprio contexto para inferir o significado de palavras desconhecidas",
+      "comentario": "Context clues and word meaning refere-se ao uso do proprio contexto para inferir o significado de palavras desconhecidas.",
       "tempoEstimado": 20,
       "tags": [
         "vocabulario-intermediario",
@@ -7107,14 +7108,14 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Context clues and word meaning",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: um texto explica a palavra sustainable com exemplos de reuse and reduce. Esse caso está mais ligado a qual subtópico?",
+      "enunciado": "Observe a situacao: um texto explica a palavra sustainable com exemplos de reuse and reduce. Esse caso esta mais ligado a qual subtopico?",
       "opcoes": [
         "Context clues and word meaning",
         "Travel and transportation",
@@ -7122,7 +7123,7 @@ export const vocabularioIntermediario = {
         "Health and body"
       ],
       "correta": "Context clues and word meaning",
-      "comentario": "A situação apresentada é melhor compreendida por meio de context clues and word meaning.",
+      "comentario": "A situacao apresentada e melhor compreendida por meio de context clues and word meaning.",
       "tempoEstimado": 20,
       "tags": [
         "vocabulario-intermediario",
@@ -7146,8 +7147,8 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Context clues and word meaning",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
@@ -7185,22 +7186,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Context clues and word meaning",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NÃO representa corretamente context clues and word meaning?",
+      "enunciado": "Qual alternativa NAO representa corretamente context clues and word meaning?",
       "opcoes": [
         "She missed her train because she arrived late at the station.",
         "The word affordable suggests something that is not too expensive.",
-        "observar definição indireta, exemplo, contraste e repetição ao redor da palavra.",
-        "continuar a leitura sem depender de tradução literal de cada termo."
+        "observar definicao indireta, exemplo, contraste e repeticao ao redor da palavra.",
+        "continuar a leitura sem depender de traducao literal de cada termo."
       ],
       "correta": "She missed her train because she arrived late at the station.",
-      "comentario": "A opção incompatível ilustra outro subtópico, e não context clues and word meaning.",
+      "comentario": "A opcao incompativel ilustra outro subtopico, e nao context clues and word meaning.",
       "tempoEstimado": 25,
       "tags": [
         "vocabulario-intermediario",
@@ -7224,19 +7225,19 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Context clues and word meaning",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar context clues and word meaning, o foco principal é:",
+      "enunciado": "Ao estudar context clues and word meaning, o foco principal e:",
       "opcoes": [
         "deduzir sentido lexical a partir de pistas internas do texto",
-        "reconhecer palavras e expressões de mobilidade e viagem",
-        "identificar léxico de ambientes digitais e comunicação online",
-        "reconhecer palavras ligadas a saúde e rotina corporal"
+        "reconhecer palavras e expressoes de mobilidade e viagem",
+        "identificar lexico de ambientes digitais e comunicacao online",
+        "reconhecer palavras ligadas a saude e rotina corporal"
       ],
       "correta": "deduzir sentido lexical a partir de pistas internas do texto",
       "comentario": "Context clues and word meaning concentra-se em deduzir sentido lexical a partir de pistas internas do texto.",
@@ -7263,22 +7264,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Context clues and word meaning",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Travel and transportation trata de o vocabulário ligado a viagens, meios de transporte, deslocamento e planejamento de trajetos, Context clues and word meaning destaca:",
+      "enunciado": "Enquanto Travel and transportation trata de o vocabulario ligado a viagens, meios de transporte, deslocamento e planejamento de trajetos, Context clues and word meaning destaca:",
       "opcoes": [
-        "O uso do próprio contexto para inferir o significado de palavras desconhecidas.",
-        "O vocabulário ligado a viagens, meios de transporte, deslocamento e planejamento de trajetos.",
-        "O vocabulário relacionado a dispositivos, internet, redes sociais, aplicativos e comunicação digital.",
-        "O vocabulário usado para falar de corpo, bem-estar, hábitos saudáveis, sintomas e cuidados."
+        "O uso do proprio contexto para inferir o significado de palavras desconhecidas.",
+        "O vocabulario ligado a viagens, meios de transporte, deslocamento e planejamento de trajetos.",
+        "O vocabulario relacionado a dispositivos, internet, redes sociais, aplicativos e comunicacao digital.",
+        "O vocabulario usado para falar de corpo, bem-estar, habitos saudaveis, sintomas e cuidados."
       ],
-      "correta": "O uso do próprio contexto para inferir o significado de palavras desconhecidas.",
-      "comentario": "A comparação correta mostra a especificidade de context clues and word meaning.",
+      "correta": "O uso do proprio contexto para inferir o significado de palavras desconhecidas.",
+      "comentario": "A comparacao correta mostra a especificidade de context clues and word meaning.",
       "tempoEstimado": 30,
       "tags": [
         "vocabulario-intermediario",
@@ -7302,8 +7303,8 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Context clues and word meaning",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
@@ -7317,7 +7318,7 @@ export const vocabularioIntermediario = {
         "Environment and sustainability"
       ],
       "correta": "Context clues and word meaning",
-      "comentario": "Esse tipo de tarefa exige domínio de context clues and word meaning.",
+      "comentario": "Esse tipo de tarefa exige dominio de context clues and word meaning.",
       "tempoEstimado": 35,
       "tags": [
         "vocabulario-intermediario",
@@ -7341,22 +7342,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Context clues and word meaning",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situação prática depende mais diretamente de Context clues and word meaning?",
+      "enunciado": "Qual situacao pratica depende mais diretamente de Context clues and word meaning?",
       "opcoes": [
-        "continuar a leitura sem depender de tradução literal de cada termo",
-        "interpretar anúncios de viagem, roteiros e informações de transporte",
-        "interpretar textos atuais sobre mídia e tecnologia",
+        "continuar a leitura sem depender de traducao literal de cada termo",
+        "interpretar anuncios de viagem, roteiros e informacoes de transporte",
+        "interpretar textos atuais sobre midia e tecnologia",
         "resolver itens sobre meio ambiente e sustentabilidade"
       ],
-      "correta": "continuar a leitura sem depender de tradução literal de cada termo",
-      "comentario": "Context clues and word meaning aparece de forma direta em continuar a leitura sem depender de tradução literal de cada termo.",
+      "correta": "continuar a leitura sem depender de traducao literal de cada termo",
+      "comentario": "Context clues and word meaning aparece de forma direta em continuar a leitura sem depender de traducao literal de cada termo.",
       "tempoEstimado": 35,
       "tags": [
         "vocabulario-intermediario",
@@ -7380,22 +7381,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Context clues and word meaning",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre context clues and word meaning?",
+      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre context clues and word meaning?",
       "opcoes": [
-        "o caso é resolvido com foco em context clues and word meaning.",
-        "o caso é melhor resolvido por travel and transportation.",
+        "o caso e resolvido com foco em context clues and word meaning.",
+        "o caso e melhor resolvido por travel and transportation.",
         "o caso elimina a necessidade de technology and media.",
         "o caso impede qualquer uso de health and body."
       ],
-      "correta": "o caso é resolvido com foco em context clues and word meaning.",
-      "comentario": "A conclusão correta retoma a função central de context clues and word meaning.",
+      "correta": "o caso e resolvido com foco em context clues and word meaning.",
+      "comentario": "A conclusao correta retoma a funcao central de context clues and word meaning.",
       "tempoEstimado": 40,
       "tags": [
         "vocabulario-intermediario",
@@ -7419,8 +7420,8 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Context clues and word meaning",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
@@ -7428,12 +7429,12 @@ export const vocabularioIntermediario = {
       "tipo": "multipla_escolha",
       "enunciado": "Se a turma fosse revisar context clues and word meaning, qual pergunta de estudo seria a mais adequada?",
       "opcoes": [
-        "Como context clues and word meaning aparece em continuar a leitura sem depender de tradução literal de cada termo?",
-        "Como travel and transportation substitui totalmente continuar a leitura sem depender de tradução literal de cada termo?",
-        "Por que technology and media torna desnecessário estudar Context clues and word meaning?",
+        "Como context clues and word meaning aparece em continuar a leitura sem depender de traducao literal de cada termo?",
+        "Como travel and transportation substitui totalmente continuar a leitura sem depender de traducao literal de cada termo?",
+        "Por que technology and media torna desnecessario estudar Context clues and word meaning?",
         "De que modo health and body elimina toda leitura de contexto?"
       ],
-      "correta": "Como context clues and word meaning aparece em continuar a leitura sem depender de tradução literal de cada termo?",
+      "correta": "Como context clues and word meaning aparece em continuar a leitura sem depender de traducao literal de cada termo?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de context clues and word meaning.",
       "tempoEstimado": 40,
       "tags": [
@@ -7458,22 +7459,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Context clues and word meaning",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em context clues and word meaning é pensar que:",
+      "enunciado": "Um erro comum em context clues and word meaning e pensar que:",
       "opcoes": [
-        "se uma palavra é desconhecida, a leitura fica impossível sem dicionário",
+        "se uma palavra e desconhecida, a leitura fica impossivel sem dicionario",
         "travel vocabulary serve apenas para turismo internacional",
-        "tecnologia em inglês se resume a nomes de aparelhos",
-        "health vocabulary trata apenas de doenças graves"
+        "tecnologia em ingles se resume a nomes de aparelhos",
+        "health vocabulary trata apenas de doencas graves"
       ],
-      "correta": "se uma palavra é desconhecida, a leitura fica impossível sem dicionário",
-      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de context clues and word meaning.",
+      "correta": "se uma palavra e desconhecida, a leitura fica impossivel sem dicionario",
+      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de context clues and word meaning.",
       "tempoEstimado": 45,
       "tags": [
         "vocabulario-intermediario",
@@ -7497,22 +7498,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Context clues and word meaning",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"não dá para entender uma palavra nova se ela não for traduzida diretamente\". A avaliação mais adequada é:",
+      "enunciado": "Um estudante afirma: \"nao da para entender uma palavra nova se ela nao for traduzida diretamente\". A avaliacao mais adequada e:",
       "opcoes": [
-        "A afirmação está incorreta, porque o uso do próprio contexto para inferir o significado de palavras desconhecidas.",
-        "A afirmação está correta, pois resume integralmente context clues and word meaning.",
-        "A afirmação está correta, porque basta decorar a tradução do exemplo.",
-        "A afirmação está incorreta apenas por não citar uma regra gramatical."
+        "A afirmacao esta incorreta, porque o uso do proprio contexto para inferir o significado de palavras desconhecidas.",
+        "A afirmacao esta correta, pois resume integralmente context clues and word meaning.",
+        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
+        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
       ],
-      "correta": "A afirmação está incorreta, porque o uso do próprio contexto para inferir o significado de palavras desconhecidas.",
-      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre context clues and word meaning.",
+      "correta": "A afirmacao esta incorreta, porque o uso do proprio contexto para inferir o significado de palavras desconhecidas.",
+      "comentario": "A fala do estudante apresenta um equivoco conceitual sobre context clues and word meaning.",
       "tempoEstimado": 45,
       "tags": [
         "vocabulario-intermediario",
@@ -7536,22 +7537,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Context clues and word meaning",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se context clues and word meaning fosse ignorado(a) em continuar a leitura sem depender de tradução literal de cada termo, o resultado mais provável seria:",
+      "enunciado": "Se context clues and word meaning fosse ignorado(a) em continuar a leitura sem depender de traducao literal de cada termo, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretação ficaria incompleta e aumentaria a chance de erro em continuar a leitura sem depender de tradução literal de cada termo.",
-        "a questão seria resolvida automaticamente por travel and transportation.",
-        "nenhuma interpretação seria alterada, porque Context clues and word meaning não interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
+        "a interpretacao ficaria incompleta e aumentaria a chance de erro em continuar a leitura sem depender de traducao literal de cada termo.",
+        "a questao seria resolvida automaticamente por travel and transportation.",
+        "nenhuma interpretacao seria alterada, porque Context clues and word meaning nao interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
       ],
-      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em continuar a leitura sem depender de tradução literal de cada termo.",
-      "comentario": "Ignorar context clues and word meaning compromete a resolução correta da atividade.",
+      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em continuar a leitura sem depender de traducao literal de cada termo.",
+      "comentario": "Ignorar context clues and word meaning compromete a resolucao correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "vocabulario-intermediario",
@@ -7575,14 +7576,14 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Context clues and word meaning",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou ação ilustra melhor Context clues and word meaning?",
+      "enunciado": "Qual trecho ou acao ilustra melhor Context clues and word meaning?",
       "opcoes": [
         "The word affordable suggests something that is not too expensive.",
         "She missed her train because she arrived late at the station.",
@@ -7590,7 +7591,7 @@ export const vocabularioIntermediario = {
         "Regular exercise improves both body and mind."
       ],
       "correta": "The word affordable suggests something that is not too expensive.",
-      "comentario": "O item correto é o que melhor exemplifica context clues and word meaning.",
+      "comentario": "O item correto e o que melhor exemplifica context clues and word meaning.",
       "tempoEstimado": 50,
       "tags": [
         "vocabulario-intermediario",
@@ -7614,19 +7615,19 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Context clues and word meaning",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao encontrar o exemplo \"The word affordable suggests something that is not too expensive.\", a leitura mais adequada é:",
+      "enunciado": "Ao encontrar o exemplo \"The word affordable suggests something that is not too expensive.\", a leitura mais adequada e:",
       "opcoes": [
         "o sentido da palavra pode ser inferido pelas pistas do contexto",
-        "a frase mobiliza vocabulário típico de deslocamento e viagem",
-        "a frase traz vocabulário comum em temas digitais",
-        "a frase mobiliza vocabulário de saúde e bem-estar"
+        "a frase mobiliza vocabulario tipico de deslocamento e viagem",
+        "a frase traz vocabulario comum em temas digitais",
+        "a frase mobiliza vocabulario de saude e bem-estar"
       ],
       "correta": "o sentido da palavra pode ser inferido pelas pistas do contexto",
       "comentario": "A leitura correta do exemplo revela o papel de context clues and word meaning.",
@@ -7653,22 +7654,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Context clues and word meaning",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estratégia ajuda mais a estudar context clues and word meaning?",
+      "enunciado": "Qual estrategia ajuda mais a estudar context clues and word meaning?",
       "opcoes": [
-        "observar definição indireta, exemplo, contraste e repetição ao redor da palavra",
+        "observar definicao indireta, exemplo, contraste e repeticao ao redor da palavra",
         "observar palavras ligadas a transporte, destino e deslocamento",
-        "relacionar palavras técnicas ao contexto de mídia e uso online",
-        "identificar termos ligados a hábitos, corpo e prevenção"
+        "relacionar palavras tecnicas ao contexto de midia e uso online",
+        "identificar termos ligados a habitos, corpo e prevencao"
       ],
-      "correta": "observar definição indireta, exemplo, contraste e repetição ao redor da palavra",
-      "comentario": "A estratégia correta fortalece o domínio de context clues and word meaning.",
+      "correta": "observar definicao indireta, exemplo, contraste e repeticao ao redor da palavra",
+      "comentario": "A estrategia correta fortalece o dominio de context clues and word meaning.",
       "tempoEstimado": 55,
       "tags": [
         "vocabulario-intermediario",
@@ -7692,22 +7693,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Context clues and word meaning",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Context clues and word meaning é mais cobrado quando:",
+      "enunciado": "Em uma prova, Context clues and word meaning e mais cobrado quando:",
       "opcoes": [
-        "o item cobra inferência lexical contextual",
+        "o item cobra inferencia lexical contextual",
         "o item cobra leitura de contexto de viagem ou transporte",
-        "a questão exige leitura lexical em textos sobre tecnologia",
-        "o item pede compreensão de vocabulário em contexto de saúde"
+        "a questao exige leitura lexical em textos sobre tecnologia",
+        "o item pede compreensao de vocabulario em contexto de saude"
       ],
-      "correta": "o item cobra inferência lexical contextual",
-      "comentario": "Esse é o tipo de demanda em que context clues and word meaning aparece com mais frequência.",
+      "correta": "o item cobra inferencia lexical contextual",
+      "comentario": "Esse e o tipo de demanda em que context clues and word meaning aparece com mais frequencia.",
       "tempoEstimado": 60,
       "tags": [
         "vocabulario-intermediario",
@@ -7731,8 +7732,8 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Context clues and word meaning",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
@@ -7740,13 +7741,13 @@ export const vocabularioIntermediario = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual resumo sintetiza melhor a ideia de Context clues and word meaning?",
       "opcoes": [
-        "Em síntese, o uso do próprio contexto para inferir o significado de palavras desconhecidas.",
-        "Em síntese, o vocabulário ligado a viagens, meios de transporte, deslocamento e planejamento de trajetos.",
-        "Em síntese, o vocabulário relacionado a dispositivos, internet, redes sociais, aplicativos e comunicação digital.",
-        "Em síntese, o vocabulário usado para falar de corpo, bem-estar, hábitos saudáveis, sintomas e cuidados."
+        "Em sintese, o uso do proprio contexto para inferir o significado de palavras desconhecidas.",
+        "Em sintese, o vocabulario ligado a viagens, meios de transporte, deslocamento e planejamento de trajetos.",
+        "Em sintese, o vocabulario relacionado a dispositivos, internet, redes sociais, aplicativos e comunicacao digital.",
+        "Em sintese, o vocabulario usado para falar de corpo, bem-estar, habitos saudaveis, sintomas e cuidados."
       ],
-      "correta": "Em síntese, o uso do próprio contexto para inferir o significado de palavras desconhecidas.",
-      "comentario": "O resumo correto recupera o núcleo de context clues and word meaning.",
+      "correta": "Em sintese, o uso do proprio contexto para inferir o significado de palavras desconhecidas.",
+      "comentario": "O resumo correto recupera o nucleo de context clues and word meaning.",
       "tempoEstimado": 60,
       "tags": [
         "vocabulario-intermediario",
@@ -7770,22 +7771,22 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Context clues and word meaning",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associação entre exemplo e interpretação está correta em Context clues and word meaning?",
+      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Context clues and word meaning?",
       "opcoes": [
         "The word affordable suggests something that is not too expensive. -> o sentido da palavra pode ser inferido pelas pistas do contexto",
         "She missed her train because she arrived late at the station. -> o sentido da palavra pode ser inferido pelas pistas do contexto",
-        "Users should review their privacy settings before sharing photos. -> a frase mobiliza vocabulário de saúde e bem-estar",
-        "Regular exercise improves both body and mind. -> a frase mobiliza vocabulário típico de deslocamento e viagem"
+        "Users should review their privacy settings before sharing photos. -> a frase mobiliza vocabulario de saude e bem-estar",
+        "Regular exercise improves both body and mind. -> a frase mobiliza vocabulario tipico de deslocamento e viagem"
       ],
       "correta": "The word affordable suggests something that is not too expensive. -> o sentido da palavra pode ser inferido pelas pistas do contexto",
-      "comentario": "A associação correta mantém coerência entre exemplo e interpretação em context clues and word meaning.",
+      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em context clues and word meaning.",
       "tempoEstimado": 65,
       "tags": [
         "vocabulario-intermediario",
@@ -7809,8 +7810,8 @@ export const vocabularioIntermediario = {
       "serie": [
         2
       ],
-      "materia": "Inglês",
-      "topico": "Vocabulário Intermediário",
+      "materia": "Ingles",
+      "topico": "Vocabulario Intermediario",
       "subtopico": "Context clues and word meaning",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
@@ -7819,12 +7820,12 @@ export const vocabularioIntermediario = {
       "enunciado": "Ao resolver uma atividade sobre context clues and word meaning, o estudante deve principalmente:",
       "opcoes": [
         "deduzir sentido lexical a partir de pistas internas do texto",
-        "observar definição indireta, exemplo, contraste e repetição ao redor da palavra",
-        "continuar a leitura sem depender de tradução literal de cada termo",
-        "o item cobra inferência lexical contextual"
+        "observar definicao indireta, exemplo, contraste e repeticao ao redor da palavra",
+        "continuar a leitura sem depender de traducao literal de cada termo",
+        "o item cobra inferencia lexical contextual"
       ],
       "correta": "deduzir sentido lexical a partir de pistas internas do texto",
-      "comentario": "O objetivo central de context clues and word meaning é deduzir sentido lexical a partir de pistas internas do texto.",
+      "comentario": "O objetivo central de context clues and word meaning e deduzir sentido lexical a partir de pistas internas do texto.",
       "tempoEstimado": 70,
       "tags": [
         "vocabulario-intermediario",

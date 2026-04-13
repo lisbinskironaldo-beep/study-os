@@ -1,4 +1,4 @@
-export const vetores = {
+﻿export const vetores = {
   "id": "fisica_vetores",
   "materia": "Física",
   "serie": [
@@ -8,6 +8,7 @@ export const vetores = {
   "metadados": {
     "disciplinaId": "fisica",
     "base": "ESCOLAR",
+    "seloEditorial": "VERIFICADA",
     "eixo": "Representação matemática de grandezas físicas",
     "frente": "Vetores e leitura geométrica de grandezas direcionais",
     "searchAliases": [
@@ -39,7 +40,7 @@ export const vetores = {
       "aplicar vetores em deslocamento, velocidade e força"
     ],
     "auditado": true,
-    "auditadoEm": "2026-04-11",
+    "auditadoEm": "2026-04-12",
     "auditoriaTipo": "varredura-mais-profunda"
   },
   "questoes": [

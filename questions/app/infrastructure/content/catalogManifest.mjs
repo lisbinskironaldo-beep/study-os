@@ -1,11 +1,7 @@
-function slugify(value) {
-    return String(value || "")
-        .normalize("NFD")
-        .replace(/[\u0300-\u036f]/g, "")
-        .toLowerCase()
-        .replace(/[^a-z0-9]+/g, "_")
-        .replace(/^_+|_+$/g, "");
-}
+import {
+    getCanonicalSubjectMetadata,
+    slugify
+} from "../../domain/subjectMetadata.mjs";
 
 export function normalizeCatalogTopic(
     topic = {},
@@ -37,13 +33,15 @@ export function normalizeCatalogTopic(
     const sourceMeta =
         options.topicMetaById?.[topicId] ||
         {};
+    const subjectMeta =
+        getCanonicalSubjectMetadata(
+            topic.materia
+        );
 
     return {
         id: topicId,
-        subjectKey: slugify(topic.materia),
-        materia: String(
-            topic.materia || ""
-        ).trim(),
+        subjectKey: subjectMeta.key,
+        materia: subjectMeta.label,
         topico: String(
             topic.topico || ""
         ).trim(),
@@ -60,6 +58,12 @@ export function normalizeCatalogTopic(
             String(
                 sourceMeta.updatedAt || ""
             ).trim(),
+        seloEditorial: String(
+            topic?.metadados
+                ?.seloEditorial || ""
+        )
+            .trim()
+            .toUpperCase(),
         base: String(
             topic?.metadados?.base ||
                 "ESCOLAR"
