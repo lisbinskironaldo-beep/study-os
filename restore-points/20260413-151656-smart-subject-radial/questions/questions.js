@@ -12,7 +12,6 @@ window.QuestionsPage = {
     questionContestDefaultText:
         "Enviar sem comentar",
     smartSubjectEditorKey: "",
-    smartSubjectFocusKey: "",
     simuladoBuilder: null,
     renderFrameId: 0,
     renderQueuedSync: false,
@@ -3681,96 +3680,6 @@ window.QuestionsPage = {
         );
     },
 
-    resolveSmartSubjectFocus(
-        subjectOptions = null
-    ) {
-        const options =
-            Array.isArray(subjectOptions) &&
-            subjectOptions.length
-                ? subjectOptions
-                : this.getSmartSubjectOptions();
-        const cleanFocusKey =
-            String(
-                this.smartSubjectFocusKey || ""
-            )
-                .trim()
-                .toLowerCase();
-        const cleanEditorKey =
-            String(
-                this.smartSubjectEditorKey || ""
-            )
-                .trim()
-                .toLowerCase();
-        const activeOptions =
-            options.filter(
-                (item) =>
-                    item.active &&
-                    !item.disabled &&
-                    item.selectedTopicCount !==
-                        0
-            );
-        const availableOptions =
-            options.filter(
-                (item) => !item.disabled
-            );
-
-        return (
-            activeOptions.find(
-                (item) =>
-                    item.key === cleanEditorKey
-            ) ||
-            activeOptions.find(
-                (item) =>
-                    item.key === cleanFocusKey
-            ) ||
-            activeOptions.find(
-                (item) =>
-                    item.hasTopicEditor
-            ) ||
-            activeOptions[0] ||
-            availableOptions.find(
-                (item) =>
-                    item.key === cleanFocusKey
-            ) ||
-            availableOptions[0] ||
-            null
-        );
-    },
-
-    focusSmartSubject(subjectKey) {
-        const cleanSubjectKey =
-            String(subjectKey || "")
-                .trim()
-                .toLowerCase();
-
-        if (!cleanSubjectKey) {
-            return;
-        }
-
-        const option =
-            this.getSmartSubjectOptions().find(
-                (item) =>
-                    item.key ===
-                        cleanSubjectKey &&
-                    !item.disabled
-            );
-
-        if (!option) {
-            return;
-        }
-
-        if (
-            this.smartSubjectFocusKey ===
-            cleanSubjectKey
-        ) {
-            return;
-        }
-
-        this.smartSubjectFocusKey =
-            cleanSubjectKey;
-        this.render();
-    },
-
     toggleSmartSubjectTopic(
         subjectKey,
         topicKey
@@ -3929,8 +3838,6 @@ window.QuestionsPage = {
             return;
         }
 
-        this.smartSubjectFocusKey =
-            cleanSubjectKey;
         this.smartSubjectEditorKey =
             cleanSubjectKey;
         this.clearRuntimeNotice();
@@ -4094,18 +4001,13 @@ window.QuestionsPage = {
         const selectedSubjects =
             QuestionsContext.get()
                 .smartSelectedSubjects || [];
-        const nextSelectedSubjects =
-            selectedSubjects.length ===
-            availableSubjects.length
-                ? []
-                : [...availableSubjects];
-
-        this.smartSubjectFocusKey =
-            nextSelectedSubjects[0] || "";
 
         this.setSmartConfig({
             smartSelectedSubjects:
-                nextSelectedSubjects
+                selectedSubjects.length ===
+                availableSubjects.length
+                    ? []
+                    : [...availableSubjects]
         });
     },
 
@@ -4149,7 +4051,6 @@ window.QuestionsPage = {
             "smart_subjects"
         );
         this.smartSubjectEditorKey = "";
-        this.smartSubjectFocusKey = "";
         this.clearRuntimeNotice();
         this.openLauncher("smart");
     },
@@ -4272,26 +4173,6 @@ window.QuestionsPage = {
                     (item) => item !== key
                 )
                 : [...selected, key];
-        const isAdding =
-            !selected.includes(key);
-        const orderedActiveKeys =
-            this.getSmartSubjectOptions()
-                .filter(
-                    (item) => !item.disabled
-                )
-                .map((item) => item.key)
-                .filter((item) =>
-                    next.includes(item)
-                );
-        const nextFocusKey =
-            isAdding
-                ? key
-                : orderedActiveKeys.includes(
-                    this.smartSubjectFocusKey
-                )
-                    ? this.smartSubjectFocusKey
-                    : orderedActiveKeys[0] ||
-                        "";
 
         if (
             selected.includes(key) &&
@@ -4301,9 +4182,6 @@ window.QuestionsPage = {
             this.smartSubjectEditorKey =
                 "";
         }
-
-        this.smartSubjectFocusKey =
-            nextFocusKey;
 
         this.setSmartConfig({
             smartSelectedSubjects: next
@@ -7213,8 +7091,6 @@ window.QuestionsPage = {
             "smart_subjects"
         ) {
             this.smartSubjectEditorKey =
-                "";
-            this.smartSubjectFocusKey =
                 "";
         }
 

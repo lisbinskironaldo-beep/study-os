@@ -4751,222 +4751,6 @@ window.QuestionsUI = {
         `;
     },
 
-    buildSmartRadialSlices(
-        items = [],
-        options = {}
-    ) {
-        const safeItems =
-            Array.isArray(items)
-                ? items
-                : [];
-        const totalItems =
-            Math.max(
-                safeItems.length,
-                1
-            );
-        const innerRadius =
-            Number.isFinite(
-                options.innerRadius
-            )
-                ? Number(
-                    options.innerRadius
-                )
-                : 18;
-        const outerRadius =
-            Number.isFinite(
-                options.outerRadius
-            )
-                ? Number(
-                    options.outerRadius
-                )
-                : 48;
-        const labelRadius =
-            Number.isFinite(
-                options.labelRadius
-            )
-                ? Number(
-                    options.labelRadius
-                )
-                : 30;
-        const noteRadius =
-            Number.isFinite(
-                options.noteRadius
-            )
-                ? Number(
-                    options.noteRadius
-                )
-                : null;
-        const actionRadius =
-            Number.isFinite(
-                options.actionRadius
-            )
-                ? Number(
-                    options.actionRadius
-                )
-                : null;
-        const labelMode =
-            options.labelMode ===
-            "horizontal"
-                ? "horizontal"
-                : "radial";
-        const labelFormatter =
-            typeof options.labelFormatter ===
-            "function"
-                ? options.labelFormatter
-                : (item) =>
-                    String(
-                        item?.label || ""
-                    );
-        const noteFormatter =
-            typeof options.noteFormatter ===
-            "function"
-                ? options.noteFormatter
-                : (item) =>
-                    String(
-                        item?.note || ""
-                    );
-        const sliceAngle =
-            360 / totalItems;
-        const polarToPercent = (
-            angleDeg,
-            radius
-        ) => {
-            const radians =
-                ((angleDeg - 90) *
-                    Math.PI) /
-                180;
-
-            return {
-                x:
-                    50 +
-                    Math.cos(radians) *
-                        radius,
-                y:
-                    50 +
-                    Math.sin(radians) *
-                        radius
-            };
-        };
-        const buildSlicePath = (
-            middleAngle
-        ) => {
-            const startAngle =
-                middleAngle -
-                sliceAngle / 2;
-            const endAngle =
-                middleAngle +
-                sliceAngle / 2;
-            const largeArcFlag =
-                sliceAngle > 180 ? 1 : 0;
-            const innerStart =
-                polarToPercent(
-                    startAngle,
-                    innerRadius
-                );
-            const innerEnd =
-                polarToPercent(
-                    endAngle,
-                    innerRadius
-                );
-            const outerStart =
-                polarToPercent(
-                    startAngle,
-                    outerRadius
-                );
-            const outerEnd =
-                polarToPercent(
-                    endAngle,
-                    outerRadius
-                );
-
-            return [
-                `M ${innerStart.x.toFixed(2)} ${innerStart.y.toFixed(2)}`,
-                `L ${outerStart.x.toFixed(2)} ${outerStart.y.toFixed(2)}`,
-                `A ${outerRadius} ${outerRadius} 0 ${largeArcFlag} 1 ${outerEnd.x.toFixed(2)} ${outerEnd.y.toFixed(2)}`,
-                `L ${innerEnd.x.toFixed(2)} ${innerEnd.y.toFixed(2)}`,
-                `A ${innerRadius} ${innerRadius} 0 ${largeArcFlag} 0 ${innerStart.x.toFixed(2)} ${innerStart.y.toFixed(2)}`,
-                "Z"
-            ].join(" ");
-        };
-
-        return safeItems.map(
-            (item, index) => {
-                const middleAngle =
-                    index *
-                    sliceAngle;
-                const labelPoint =
-                    polarToPercent(
-                        middleAngle,
-                        labelRadius
-                    );
-                const notePoint =
-                    noteRadius === null
-                        ? null
-                        : polarToPercent(
-                            middleAngle,
-                            noteRadius
-                        );
-                const actionPoint =
-                    actionRadius ===
-                    null
-                        ? null
-                        : polarToPercent(
-                            middleAngle,
-                            actionRadius
-                        );
-
-                return {
-                    ...item,
-                    displayLabel:
-                        labelFormatter(item),
-                    displayNote:
-                        noteFormatter(item),
-                    middleAngle,
-                    path:
-                        buildSlicePath(
-                            middleAngle
-                        ),
-                    labelX:
-                        labelPoint.x.toFixed(
-                            2
-                        ),
-                    labelY:
-                        labelPoint.y.toFixed(
-                            2
-                        ),
-                    labelRotate:
-                        labelMode ===
-                        "radial"
-                            ? (
-                                middleAngle -
-                                90
-                            ).toFixed(2)
-                            : "0",
-                    noteX:
-                        notePoint
-                            ? notePoint.x.toFixed(
-                                2
-                            )
-                            : "",
-                    noteY:
-                        notePoint
-                            ? notePoint.y.toFixed(
-                                2
-                            )
-                            : "",
-                    actionLeft:
-                        actionPoint
-                            ? `${actionPoint.x.toFixed(2)}%`
-                            : "",
-                    actionTop:
-                        actionPoint
-                            ? `${actionPoint.y.toFixed(2)}%`
-                            : ""
-                };
-            }
-        );
-    },
-
     renderSmartStart() {
         const page =
             this.page;
@@ -5015,20 +4799,16 @@ window.QuestionsUI = {
                     (item) => !item.disabled
                 )
                 .every((item) => item.active);
-        const radialSeries =
-            this.buildSmartRadialSlices(
-                startOptions,
-                {
-                    innerRadius: 17,
-                    outerRadius: 48,
-                    labelRadius: 30,
-                    noteRadius: 38,
-                    labelMode:
-                        "horizontal"
-                }
-            );
+        const petalClasses = [
+            ...(model?.petalClasses || [
+                "questions-smart-petal-1",
+                "questions-smart-petal-2",
+                "questions-smart-petal-3",
+                "questions-smart-petal-4"
+            ])
+        ];
         return `
-            <section class="questions-card questions-entry-subview questions-smart-start-card questions-smart-series-card">
+            <section class="questions-card questions-entry-subview questions-smart-start-card">
                 <div class="questions-head questions-entry-head">
                     <div>
                         <div class="questions-kicker">Treino inteligente</div>
@@ -5047,45 +4827,46 @@ window.QuestionsUI = {
                 ` : ""}
 
                 <div class="questions-smart-start-shell">
+                    <div class="questions-smart-ring${allAvailableActive ? " is-active" : ""}"></div>
                     <button id="questionsSmartSelectAllBtn" class="questions-smart-ring-toggle${allAvailableActive ? " is-active" : ""}" type="button">
                         ${allAvailableActive ? "Desmarcar" : "Marcar todas"}
                     </button>
 
-                    <div class="questions-smart-radial-stage questions-smart-radial-stage-series">
-                        <div class="questions-smart-pizza-shell">
-                            <div class="questions-smart-pizza questions-smart-pizza--series">
-                                <svg class="questions-smart-pizza-svg" viewBox="0 0 100 100" aria-label="Selecao radial de series">
-                                    ${radialSeries.map((item) => `
-                                        <g class="questions-smart-slice-slot questions-smart-series-slice-slot${item.active ? " is-active" : ""}${item.disabled ? " is-disabled" : ""}">
-                                            <path
-                                                class="questions-smart-slice questions-smart-series-slice"
-                                                d="${item.path}"
-                                                data-smart-start-option="${this.escapeHtml(item.key)}"
-                                                aria-pressed="${item.active ? "true" : "false"}"
-                                            ></path>
-                                            <text
-                                                class="questions-smart-slice-copy questions-smart-series-slice-copy"
-                                                x="${item.labelX}"
-                                                y="${item.labelY}"
-                                            >
-                                                <tspan x="${item.labelX}" dy="0">${this.escapeHtml(item.displayLabel)}</tspan>
-                                                ${item.displayNote ? `<tspan class="questions-smart-series-slice-note" x="${item.labelX}" dy="4.2">${this.escapeHtml(item.displayNote)}</tspan>` : ""}
-                                            </text>
-                                        </g>
-                                    `).join("")}
-                                </svg>
-
-                                <div class="questions-smart-pizza-core">
-                                    <button id="questionsSmartContinueBtn" class="questions-smart-core${activeCount ? " is-ready" : ""}" type="button" ${activeCount ? "" : "disabled"}>
-                                        <strong>Ir</strong>
-                                        <span></span>
-                                    </button>
-                                </div>
-                            </div>
+                    <div class="questions-smart-orbit">
+                        <div class="questions-smart-orbit-grid">
+                            ${startOptions.map((item, index) => `
+                                <button
+                                    class="questions-smart-node questions-smart-petal ${petalClasses[index] || ""}${item.active ? " is-active" : ""}${item.disabled ? " is-disabled" : ""}"
+                                    type="button"
+                                    data-smart-start-option="${item.key}"
+                                    ${item.disabled ? "" : ""}
+                                >
+                                    <div class="questions-smart-node-copy">
+                                        <strong>${item.label}</strong>
+                                        <span>${item.note}</span>
+                                    </div>
+                                </button>
+                            `).join("")}
                         </div>
+
+                        <button id="questionsSmartContinueBtn" class="questions-smart-core${activeCount ? " is-ready" : ""}" type="button" ${activeCount ? "" : "disabled"}>
+                            <strong>Ir</strong>
+                            <span></span>
+                        </button>
                     </div>
                 </div>
 
+                <div class="questions-entry-footer">
+                    <button class="questions-secondary-btn" type="button" data-launcher-view="specific">
+                        Ir para especificar treino
+                    </button>
+                    <button class="questions-secondary-btn" type="button" data-launcher-view="saved">
+                        Guardados
+                    </button>
+                    <button class="questions-secondary-btn" type="button" data-launcher-view="resume">
+                        Retomar treino
+                    </button>
+                </div>
             </section>
         `;
     },
@@ -5184,107 +4965,52 @@ window.QuestionsUI = {
             editorTopics.filter(
                 (topic) => topic.active
             ).length;
-        const resolvedFocusSubject =
-            typeof page.resolveSmartSubjectFocus ===
-            "function"
-                ? page.resolveSmartSubjectFocus(
-                    visibleSubjects
-                )
-                : null;
-        const focusedSubjectKey =
-            editorSubject?.key ||
-            resolvedFocusSubject?.key ||
-            "";
-        const visibleSubjectSlices =
-            this.buildSmartRadialSlices(
-                visibleSubjects,
-                {
-                    innerRadius: 18,
-                    outerRadius: 48,
-                    labelRadius: 31,
-                    actionRadius: 43.8,
-                    labelMode:
-                        "radial",
-                    labelFormatter:
-                        (item) =>
-                            item.label ===
-                            "Educacao Fisica" ||
-                            item.label ===
-                            "EducaÃ§Ã£o FÃ­sica"
-                                ? "Ed Fisica"
-                                : item.label,
-                    labelFormatter:
-                        (item) => {
-                            const normalizedLabel =
-                                String(
-                                    item.label ||
-                                        ""
-                                )
-                                    .normalize(
-                                        "NFD"
-                                    )
-                                    .replace(
-                                        /[\u0300-\u036f]/g,
-                                        ""
-                                    );
-
-                            return normalizedLabel ===
-                                "Educacao Fisica"
-                                ? "Ed Fisica"
-                                : item.label;
-                        }
-                }
-            );
-        /*
-        const sliceAngle =
-            360 / totalSubjects;
-        const legacyVisibleSubjectSlices =
+        const visibleSubjectCards =
             visibleSubjects.map(
                 (item, index) => {
-                    const middleAngle =
-                        index *
-                        sliceAngle;
-                    const displayLabel =
-                        item.label ===
-                        "Educação Física"
-                            ? "Ed Física"
-                            : item.label;
-                    const labelPoint =
-                        polarToPercent(
-                            middleAngle,
-                            23
-                        );
-                    const actionPoint =
-                        polarToPercent(
-                            middleAngle,
-                            45.5
-                        );
+                    const readyQuestionCount =
+                        item.readyQuestionCount ||
+                        item.count ||
+                        0;
+                    const totalTopicCount =
+                        item.topicOptions
+                            ?.length ||
+                        item.readyTopicCount ||
+                        item.topicCount ||
+                        0;
+                    let summary =
+                        item.hasQuestions
+                            ? `${item.readyTopicCount || item.topicCount} assunto(s) | ${readyQuestionCount} questoes`
+                            : "Sem questoes prontas";
+                    let note = "";
+
+                    if (
+                        item.active &&
+                        item.hasTopicEditor &&
+                        item.hasTopicOverrides
+                    ) {
+                        summary = `${item.selectedTopicCount} de ${totalTopicCount} assunto(s) | ${readyQuestionCount} questoes`;
+                        note = `${item.excludedTopicCount} excluido(s)`;
+                    } else if (
+                        item.active &&
+                        item.hasTopicEditor &&
+                        item.selectedTopicCount ===
+                            0
+                    ) {
+                        summary =
+                            "Nenhum assunto ativo";
+                        note =
+                            "Revise as exclusoes";
+                    }
 
                     return {
                         ...item,
-                        displayLabel,
-                        path:
-                            buildSlicePath(
-                                middleAngle
-                            ),
-                        labelX:
-                            labelPoint.x.toFixed(2),
-                        labelY:
-                            labelPoint.y.toFixed(2),
-                        labelRotate:
-                            (
-                                middleAngle - 90
-                            ).toFixed(2),
-                        actionLeft:
-                            `${actionPoint.x.toFixed(2)}%`,
-                        actionTop:
-                            `${actionPoint.y.toFixed(2)}%`,
-                        actionRotate:
-                            `${middleAngle.toFixed(2)}deg`
+                        transform: `translate(-50%, -50%) rotate(${(-90 + ((360 / totalSubjects) * index)).toFixed(2)}deg) translateY(calc(var(--questions-smart-subject-radius, 248px) * -1)) rotate(${(90 - ((360 / totalSubjects) * index)).toFixed(2)}deg)`,
+                        summary,
+                        note
                     };
                 }
             );
-        */
 
         return `
             <section class="questions-card questions-entry-subview questions-smart-start-card questions-smart-subject-card">
@@ -5307,6 +5033,7 @@ window.QuestionsUI = {
 
                 ${subjectOptions.length ? `
                     <div class="questions-smart-start-shell${editorSubject ? " is-topic-editor-open" : ""}">
+                        <div class="questions-smart-ring${allActive ? " is-active" : ""}"></div>
                         <button id="questionsSmartSubjectsSelectAllBtn" class="questions-smart-ring-toggle${allActive ? " is-active" : ""}" type="button">
                             ${allActive ? "Desmarcar" : "Marcar todas"}
                         </button>
@@ -5365,58 +5092,47 @@ window.QuestionsUI = {
                             </div>
                         ` : ""}
 
-                        <div class="questions-smart-radial-stage">
-                            <div class="questions-smart-pizza-shell">
-                                <div class="questions-smart-pizza questions-smart-pizza--subjects">
-                                    <svg class="questions-smart-pizza-svg" viewBox="0 0 100 100" aria-label="Selecao radial de materias">
-                                        ${visibleSubjectSlices.map((item) => `
-                                            <g class="questions-smart-slice-slot${item.active ? " is-active" : ""}${item.disabled ? " is-disabled" : ""}${item.hasTopicOverrides ? " has-topic-overrides" : ""}${focusedSubjectKey === item.key ? " is-focused" : ""}${editorSubject?.key === item.key ? " is-editor-open" : ""}">
-                                                <path
-                                                    class="questions-smart-slice"
-                                                    d="${item.path}"
-                                                    data-smart-subject-option="${this.escapeHtml(item.key)}"
-                                                    aria-pressed="${item.active ? "true" : "false"}"
-                                                ></path>
-                                                <text
-                                                    class="questions-smart-slice-copy"
-                                                    x="${item.labelX}"
-                                                    y="${item.labelY}"
-                                                    transform="rotate(${item.labelRotate} ${item.labelX} ${item.labelY})"
-                                                >
-                                                    ${this.escapeHtml(item.displayLabel)}
-                                                </text>
-                                            </g>
-                                        `).join("")}
-                                    </svg>
-
-                                    ${visibleSubjectSlices.map((item) =>
-                                        item.active &&
-                                        !item.disabled &&
-                                        item.selectedTopicCount !==
-                                            0 &&
-                                        item.hasTopicEditor
-                                            ? `
+                        <div class="questions-smart-subject-orbit" style="--questions-smart-subject-count: ${totalSubjects};">
+                            <div class="questions-smart-subject-grid">
+                                ${visibleSubjectCards.map((item) => `
+                                    <article
+                                        class="questions-smart-node questions-smart-subject-node${item.active ? " is-active" : ""}${item.disabled ? " is-disabled" : ""}${item.hasTopicOverrides ? " has-topic-overrides" : ""}${editorSubject?.key === item.key ? " is-editor-open" : ""}"
+                                        style="--questions-smart-node-transform: ${item.transform};"
+                                    >
                                         <button
-                                            class="questions-smart-slice-action${editorSubject?.key === item.key ? " is-active" : ""}"
+                                            class="questions-smart-subject-toggle"
                                             type="button"
-                                            data-smart-subject-editor="${this.escapeHtml(item.key)}"
-                                            style="left: ${item.actionLeft}; top: ${item.actionTop};"
+                                            data-smart-subject-option="${this.escapeHtml(item.key)}"
+                                            ${item.disabled ? "disabled" : ""}
                                         >
-                                            Assunto
+                                            <div class="questions-smart-node-copy">
+                                                <strong>${this.escapeHtml(item.label)}</strong>
+                                                <span>${this.escapeHtml(item.summary)}</span>
+                                                ${item.note ? `
+                                                    <small class="questions-smart-subject-inline-note">
+                                                        ${this.escapeHtml(item.note)}
+                                                    </small>
+                                                ` : ""}
+                                            </div>
                                         </button>
-                                    `
-                                            : ""
-                                    ).join("")}
 
-                                    <div class="questions-smart-pizza-core">
-                                        <button id="questionsSmartSubjectsContinueBtn" class="questions-smart-core${activeCount ? " is-ready" : ""}" type="button" ${activeCount ? "" : "disabled"}>
-                                            <strong>Ir</strong>
-                                            <span></span>
-                                        </button>
-                                    </div>
-                                </div>
+                                        ${item.active && !item.disabled && item.hasTopicEditor ? `
+                                            <button
+                                                class="questions-smart-subject-editor-btn${editorSubject?.key === item.key ? " is-active" : ""}"
+                                                type="button"
+                                                data-smart-subject-editor="${this.escapeHtml(item.key)}"
+                                            >
+                                                Excluir assuntos
+                                            </button>
+                                        ` : ""}
+                                    </article>
+                                `).join("")}
                             </div>
 
+                            <button id="questionsSmartSubjectsContinueBtn" class="questions-smart-core${activeCount ? " is-ready" : ""}" type="button" ${activeCount ? "" : "disabled"}>
+                                <strong>Ir</strong>
+                                <span></span>
+                            </button>
                         </div>
                         ${hiddenSubjects ? `
                             <div class="questions-inline-note questions-smart-subject-note">
@@ -5429,6 +5145,18 @@ window.QuestionsUI = {
                         Nenhuma matéria ficou disponível com as séries ativas. Volte e ajuste a seleção.
                     </div>
                 `}
+
+                <div class="questions-entry-footer">
+                    <button class="questions-secondary-btn" type="button" data-launcher-view="specific">
+                        Ir para especificar treino
+                    </button>
+                    <button class="questions-secondary-btn" type="button" data-launcher-view="saved">
+                        Guardados
+                    </button>
+                    <button class="questions-secondary-btn" type="button" data-launcher-view="resume">
+                        Retomar treino
+                    </button>
+                </div>
             </section>
         `;
     },
@@ -7305,22 +7033,6 @@ window.QuestionsUI = {
 
                         this.page.openSmartSubjectEditor(
                             subjectKey
-                        );
-                    }
-                );
-            });
-
-        document
-            .querySelectorAll(
-                "[data-smart-subject-focus]"
-            )
-            .forEach((button) => {
-                button.addEventListener(
-                    "click",
-                    () => {
-                        this.page.focusSmartSubject(
-                            button.dataset
-                                .smartSubjectFocus
                         );
                     }
                 );

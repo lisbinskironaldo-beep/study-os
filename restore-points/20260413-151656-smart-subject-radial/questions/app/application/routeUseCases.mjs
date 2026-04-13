@@ -389,25 +389,6 @@ export function createQuestionsRouteUseCases(
                     (item) => item !== key
                 )
                 : [...selected, key];
-        const isAdding =
-            !selected.includes(key);
-        const orderedActiveKeys =
-            page.getSmartSubjectOptions()
-                .filter(
-                    (item) => !item.disabled
-                )
-                .map((item) => item.key)
-                .filter((item) =>
-                    next.includes(item)
-                );
-        const nextFocusKey =
-            isAdding
-                ? key
-                : orderedActiveKeys.includes(
-                    page.smartSubjectFocusKey
-                )
-                    ? page.smartSubjectFocusKey
-                    : orderedActiveKeys[0] || "";
 
         if (
             selected.includes(key) &&
@@ -417,9 +398,6 @@ export function createQuestionsRouteUseCases(
             page.smartSubjectEditorKey =
                 "";
         }
-
-        page.smartSubjectFocusKey =
-            nextFocusKey;
 
         setSmartConfig({
             smartSelectedSubjects: next
@@ -537,18 +515,13 @@ export function createQuestionsRouteUseCases(
         const selectedSubjects =
             QuestionsContext.get()
                 .smartSelectedSubjects || [];
-        const nextSelectedSubjects =
-            selectedSubjects.length ===
-            availableSubjects.length
-                ? []
-                : [...availableSubjects];
-
-        page.smartSubjectFocusKey =
-            nextSelectedSubjects[0] || "";
 
         setSmartConfig({
             smartSelectedSubjects:
-                nextSelectedSubjects
+                selectedSubjects.length ===
+                availableSubjects.length
+                    ? []
+                    : [...availableSubjects]
         });
     }
 
@@ -585,7 +558,6 @@ export function createQuestionsRouteUseCases(
             "smart_subjects"
         );
         page.smartSubjectEditorKey = "";
-        page.smartSubjectFocusKey = "";
         page.clearRuntimeNotice();
         page.openLauncher("smart");
     }
