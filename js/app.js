@@ -31,6 +31,7 @@ const Core = {
         "immersion",
         "pulse"
     ],
+    premiumStudyLoadPromise: null,
 
     /* ================= INIT ================= */
 
@@ -186,12 +187,112 @@ const Core = {
         });
     },
 
+    ensureScriptLoaded(src, markName = "data-app-src") {
+        return new Promise((resolve, reject) => {
+            const existing =
+                document.querySelector(
+                    `script[${markName}="${src}"]`
+                );
+
+            if (existing) {
+                if (existing.dataset.loaded === "true") {
+                    resolve();
+                    return;
+                }
+
+                existing.addEventListener(
+                    "load",
+                    () => resolve(),
+                    { once: true }
+                );
+                existing.addEventListener(
+                    "error",
+                    () => reject(
+                        new Error(`Falha ao carregar ${src}`)
+                    ),
+                    { once: true }
+                );
+                return;
+            }
+
+            const script =
+                document.createElement("script");
+
+            script.src = src;
+            script.defer = true;
+            script.setAttribute(markName, src);
+            script.addEventListener(
+                "load",
+                () => {
+                    script.dataset.loaded = "true";
+                    resolve();
+                },
+                { once: true }
+            );
+            script.addEventListener(
+                "error",
+                () => reject(
+                    new Error(`Falha ao carregar ${src}`)
+                ),
+                { once: true }
+            );
+
+            document.body.appendChild(script);
+        });
+    },
+
+    activateExternalModule(target) {
+        this.stopAll();
+        this.clearVisualResidues(target);
+        this.hideHero();
+        this.hideModules();
+
+        const moduleEl =
+            document.getElementById(`${target}Module`);
+
+        if (moduleEl) {
+            moduleEl.classList.add("active");
+        }
+
+        this.state.mode = target;
+        document.body.setAttribute("data-mode", target);
+        if (target !== "pomodoro") {
+            document.body.classList.remove(
+                "pomodoro-table-sync-on"
+            );
+        }
+        this.setActiveNav(target);
+    },
+
+    loadPremiumStudyModule() {
+        if (this.premiumStudyLoadPromise) {
+            return this.premiumStudyLoadPromise;
+        }
+
+        this.premiumStudyLoadPromise =
+            this.ensureScriptLoaded(
+                "premium-study/bootstrap/index.js",
+                "data-premium-bootstrap"
+            );
+
+        return this.premiumStudyLoadPromise;
+    },
+
     /* ================= NAVIGATION ================= */
 
     navigate(target) {
 
    if (target === "alarm") {
 target = "calendar"
+}
+
+   if (
+this.state.mode === "premium-study" &&
+target !== "premium-study" &&
+window.PremiumStudyApp &&
+typeof PremiumStudyApp.clearAnalysisTimers === "function"
+) {
+PremiumStudyApp.clearAnalysisTimers()
 }
 
    if (
@@ -319,6 +420,27 @@ QuestionsPage.render()
 
 }
 
+   return
+}
+
+   if (target === "premium-study") {
+
+this.activateExternalModule("premium-study")
+
+this.loadPremiumStudyModule()
+.then(() => {
+
+if (window.PremiumStudyBootstrap) {
+window.PremiumStudyBootstrap.init({
+root: document.getElementById("premium-studyModule")
+})
+}
+
+})
+.catch((error) => {
+console.error(error)
+})
+
 return
 }
 
@@ -401,6 +523,14 @@ return
     },
 
     goHome() {
+        if (
+            window.PremiumStudyApp &&
+            typeof PremiumStudyApp.clearAnalysisTimers ===
+                "function"
+        ) {
+            PremiumStudyApp.clearAnalysisTimers();
+        }
+        document.body.removeAttribute("data-premium-step");
         this.changeMode("clock");
     },
 
@@ -949,6 +1079,8 @@ return
 };
 
 /* ================= BOOT ================= */
+
+window.Core = Core;
 
 document.addEventListener("DOMContentLoaded", () => {
 

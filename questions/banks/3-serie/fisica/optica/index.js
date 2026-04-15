@@ -1,43 +1,43 @@
-﻿export const optica = {
+export const optica = {
   "id": "fisica_optica",
-  "materia": "F�sica",
+  "materia": "Física",
   "serie": [
     3
   ],
-  "topico": "�ptica",
+  "topico": "Óptica",
   "metadados": {
     "disciplinaId": "fisica",
     "base": "ESCOLAR",
     "seloEditorial": "VERIFICADA",
-    "eixo": "Luz e forma��o de imagens",
-    "frente": "�ptica geom�trica e interpreta��o de fen�menos luminosos",
+    "eixo": "Luz e formação de imagens",
+    "frente": "Óptica geométrica e interpretação de fenômenos luminosos",
     "searchAliases": [
-      "�ptica",
+      "Óptica",
       "luz",
       "espelhos",
       "lentes",
-      "refra��o",
-      "defeitos da vis�o"
+      "refração",
+      "defeitos da visão"
     ],
     "subtopicosBase": [
-      "Natureza e propaga��o da luz",
-      "Princ�pios da �ptica geom�trica",
-      "Reflex�o em espelhos planos",
-      "Espelhos esf�ricos",
-      "Refra��o da luz",
+      "Natureza e propagação da luz",
+      "Princípios da Óptica geométrica",
+      "Reflexão em espelhos planos",
+      "Espelhos esféricos",
+      "Refração da luz",
       "Leis de Snell",
-      "Lentes esf�ricas",
-      "Instrumentos �pticos",
-      "Dispers�o e prismas",
-      "Defeitos da vis�o"
+      "Lentes esféricas",
+      "Instrumentos ópticos",
+      "Dispersão e prismas",
+      "Defeitos da visão"
     ],
     "habilidadesBase": [
-      "identificar princ�pios b�sicos da �ptica geom�trica",
-      "analisar reflex�o e forma��o de imagens em espelhos",
-      "aplicar leis da refra��o da luz",
-      "resolver situa��es com lentes esf�ricas",
-      "interpretar instrumentos �pticos e defeitos da vis�o",
-      "relacionar luz, dispers�o e fen�menos visuais"
+      "identificar princípios básicos da Óptica geométrica",
+      "analisar reflexão e formação de imagens em espelhos",
+      "aplicar leis da refração da luz",
+      "resolver situações com lentes esféricas",
+      "interpretar instrumentos ópticos e defeitos da visão",
+      "relacionar luz, dispersão e fenômenos visuais"
     ],
     "auditado": true,
     "auditadoEm": "2026-04-12",
@@ -49,22 +49,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Natureza e propaga��o da luz",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Natureza e propagação da luz",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em F�sica, Natureza e propaga��o da luz pode ser definido(a) como:",
+      "enunciado": "Em Física, Natureza e propagação da luz pode ser definido(a) como:",
       "opcoes": [
-        "o estudo da luz como forma de energia que se propaga e permite a vis�o dos objetos",
-        "as regras que descrevem a propaga��o retil�nea, a independ�ncia e a reversibilidade dos raios de luz",
-        "o fen�meno em que a luz retorna ao meio de origem e forma imagens virtuais sim�tricas em espelhos planos",
+        "o estudo da luz como forma de energia que se propaga e permite a visão dos objetos",
+        "as regras que descrevem a propagação retilínea, a independência e a reversibilidade dos raios de luz",
+        "o fenômeno em que a luz retorna ao meio de origem e forma imagens virtuais simétricas em espelhos planos",
         "superficies refletoras curvas que podem convergir ou divergir raios e formar diferentes tipos de imagem"
       ],
-      "correta": "o estudo da luz como forma de energia que se propaga e permite a vis�o dos objetos",
-      "comentario": "Natureza e propaga��o da luz refere-se ao estudo da luz como forma de energia que se propaga e permite a vis�o dos objetos.",
+      "correta": "o estudo da luz como forma de energia que se propaga e permite a visão dos objetos",
+      "comentario": "Natureza e propagação da luz refere-se ao estudo da luz como forma de energia que se propaga e permite a visão dos objetos.",
       "tempoEstimado": 25,
       "tags": [
         "optica",
@@ -88,22 +88,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Natureza e propaga��o da luz",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Natureza e propagação da luz",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situa��o: um feixe luminoso atravessa o ar e ilumina objetos em uma sala escura Esse caso exemplifica melhor qual subt�pico?",
+      "enunciado": "Observe a situação: um feixe luminoso atravessa o ar e ilumina objetos em uma sala escura Esse caso exemplifica melhor qual subtópico?",
       "opcoes": [
-        "Natureza e propaga��o da luz",
-        "Princ�pios da �ptica geom�trica",
-        "Reflex�o em espelhos planos",
-        "Espelhos esf�ricos"
+        "Natureza e propagação da luz",
+        "Princípios da Óptica geométrica",
+        "Reflexão em espelhos planos",
+        "Espelhos esféricos"
       ],
-      "correta": "Natureza e propaga��o da luz",
-      "comentario": "A situa��o apresentada � um exemplo de Natureza e propaga��o da luz.",
+      "correta": "Natureza e propagação da luz",
+      "comentario": "A situação apresentada é um exemplo de Natureza e propagação da luz.",
       "tempoEstimado": 25,
       "tags": [
         "optica",
@@ -127,22 +127,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Natureza e propaga��o da luz",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Natureza e propagação da luz",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirma��o descreve corretamente Natureza e propaga��o da luz?",
+      "enunciado": "Qual afirmação descreve corretamente Natureza e propagação da luz?",
       "opcoes": [
-        "O estudo da luz como forma de energia que se propaga e permite a vis�o dos objetos.",
-        "As regras que descrevem a propaga��o retil�nea, a independ�ncia e a reversibilidade dos raios de luz.",
-        "O fen�meno em que a luz retorna ao meio de origem e forma imagens virtuais sim�tricas em espelhos planos.",
+        "O estudo da luz como forma de energia que se propaga e permite a visão dos objetos.",
+        "As regras que descrevem a propagação retilínea, a independência e a reversibilidade dos raios de luz.",
+        "O fenômeno em que a luz retorna ao meio de origem e forma imagens virtuais simétricas em espelhos planos.",
         "Superficies refletoras curvas que podem convergir ou divergir raios e formar diferentes tipos de imagem."
       ],
-      "correta": "O estudo da luz como forma de energia que se propaga e permite a vis�o dos objetos.",
-      "comentario": "A alternativa correta resume o conceito de Natureza e propaga��o da luz.",
+      "correta": "O estudo da luz como forma de energia que se propaga e permite a visão dos objetos.",
+      "comentario": "A alternativa correta resume o conceito de Natureza e propagação da luz.",
       "tempoEstimado": 30,
       "tags": [
         "optica",
@@ -166,22 +166,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Natureza e propaga��o da luz",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Natureza e propagação da luz",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compat�vel com Natureza e propaga��o da luz?",
+      "enunciado": "Qual alternativa NAO esta compatível com Natureza e propagação da luz?",
       "opcoes": [
-        "As regras que descrevem a propaga��o retil�nea, a independ�ncia e a reversibilidade dos raios de luz.",
-        "O estudo da luz como forma de energia que se propaga e permite a vis�o dos objetos.",
+        "As regras que descrevem a propagação retilínea, a independência e a reversibilidade dos raios de luz.",
+        "O estudo da luz como forma de energia que se propaga e permite a visão dos objetos.",
         "Compreender como a luz se propaga e torna possivel a observacao visual.",
         "Ajuda a compreender a formacao de sombras e a iluminacao de ambientes."
       ],
-      "correta": "As regras que descrevem a propaga��o retil�nea, a independ�ncia e a reversibilidade dos raios de luz.",
-      "comentario": "A op��o incompativel descreve outro subt�pico, n�o Natureza e propaga��o da luz.",
+      "correta": "As regras que descrevem a propagação retilínea, a independência e a reversibilidade dos raios de luz.",
+      "comentario": "A opção incompativel descreve outro subtópico, não Natureza e propagação da luz.",
       "tempoEstimado": 30,
       "tags": [
         "optica",
@@ -205,22 +205,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Natureza e propaga��o da luz",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Natureza e propagação da luz",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar Natureza e propaga��o da luz, o foco principal e:",
+      "enunciado": "Ao estudar Natureza e propagação da luz, o foco principal e:",
       "opcoes": [
         "compreender como a luz se propaga e torna possivel a observacao visual",
         "aplicar os principios basicos que organizam o comportamento dos raios luminosos",
-        "relacionar reflex�o regular com a formacao de imagens em espelhos planos",
-        "interpretar a formacao de imagens em espelhos c�ncavos e convexos"
+        "relacionar reflexão regular com a formacao de imagens em espelhos planos",
+        "interpretar a formacao de imagens em espelhos côncavos e convexos"
       ],
       "correta": "compreender como a luz se propaga e torna possivel a observacao visual",
-      "comentario": "Natureza e propaga��o da luz concentra-se em compreender como a luz se propaga e torna possivel a observacao visual.",
+      "comentario": "Natureza e propagação da luz concentra-se em compreender como a luz se propaga e torna possivel a observacao visual.",
       "tempoEstimado": 35,
       "tags": [
         "optica",
@@ -244,22 +244,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Natureza e propaga��o da luz",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Natureza e propagação da luz",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Princ�pios da �ptica geom�trica trata de as regras que descrevem a propaga��o retil�nea, a independ�ncia e a reversibilidade dos raios de luz, Natureza e propaga��o da luz destaca:",
+      "enunciado": "Enquanto Princípios da Óptica geométrica trata de as regras que descrevem a propagação retilínea, a independência e a reversibilidade dos raios de luz, Natureza e propagação da luz destaca:",
       "opcoes": [
-        "O estudo da luz como forma de energia que se propaga e permite a vis�o dos objetos.",
-        "As regras que descrevem a propaga��o retil�nea, a independ�ncia e a reversibilidade dos raios de luz.",
-        "O fen�meno em que a luz retorna ao meio de origem e forma imagens virtuais sim�tricas em espelhos planos.",
+        "O estudo da luz como forma de energia que se propaga e permite a visão dos objetos.",
+        "As regras que descrevem a propagação retilínea, a independência e a reversibilidade dos raios de luz.",
+        "O fenômeno em que a luz retorna ao meio de origem e forma imagens virtuais simétricas em espelhos planos.",
         "Superficies refletoras curvas que podem convergir ou divergir raios e formar diferentes tipos de imagem."
       ],
-      "correta": "O estudo da luz como forma de energia que se propaga e permite a vis�o dos objetos.",
-      "comentario": "A compara��o correta mostra a especificidade de Natureza e propaga��o da luz.",
+      "correta": "O estudo da luz como forma de energia que se propaga e permite a visão dos objetos.",
+      "comentario": "A comparação correta mostra a especificidade de Natureza e propagação da luz.",
       "tempoEstimado": 35,
       "tags": [
         "optica",
@@ -283,22 +283,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Natureza e propaga��o da luz",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Natureza e propagação da luz",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma an�lise de sala, considera-se que um feixe luminoso atravessa o ar e ilumina objetos em uma sala escura Para interpretar essa situa��o, � mais adequado mobilizar o conceito de:",
+      "enunciado": "Em uma análise de sala, considera-se que um feixe luminoso atravessa o ar e ilumina objetos em uma sala escura Para interpretar essa situação, é mais adequado mobilizar o conceito de:",
       "opcoes": [
-        "Natureza e propaga��o da luz",
-        "Princ�pios da �ptica geom�trica",
-        "Espelhos esf�ricos",
-        "Refracao da luz"
+        "Natureza e propagação da luz",
+        "Princípios da Óptica geométrica",
+        "Espelhos esféricos",
+        "Refração da luz"
       ],
-      "correta": "Natureza e propaga��o da luz",
-      "comentario": "O caso descrito � interpretado adequadamente por meio de Natureza e propaga��o da luz.",
+      "correta": "Natureza e propagação da luz",
+      "comentario": "O caso descrito é interpretado adequadamente por meio de Natureza e propagação da luz.",
       "tempoEstimado": 40,
       "tags": [
         "optica",
@@ -322,22 +322,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Natureza e propaga��o da luz",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Natureza e propagação da luz",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situa��o pr�tica depende mais diretamente de Natureza e propaga��o da luz?",
+      "enunciado": "Qual situação prática depende mais diretamente de Natureza e propagação da luz?",
       "opcoes": [
         "a formacao de sombras e a iluminacao de ambientes",
-        "a an�lise de trajet�rias luminosas em esquemas geometricos",
+        "a análise de trajetórias luminosas em esquemas geometricos",
         "o uso cotidiano de espelhos planos em banheiros, elevadores e retrovisores internos",
         "a interpretacao visual de objetos imersos em agua e vidro"
       ],
       "correta": "a formacao de sombras e a iluminacao de ambientes",
-      "comentario": "Natureza e propaga��o da luz aparece de modo direto na formacao de sombras e a iluminacao de ambientes.",
+      "comentario": "Natureza e propagação da luz aparece de modo direto na formacao de sombras e a iluminacao de ambientes.",
       "tempoEstimado": 40,
       "tags": [
         "optica",
@@ -361,22 +361,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Natureza e propaga��o da luz",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Natureza e propagação da luz",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir de um feixe luminoso atravessa o ar e ilumina objetos em uma sala escura, qual conclus�o est� mais correta?",
+      "enunciado": "A partir de um feixe luminoso atravessa o ar e ilumina objetos em uma sala escura, qual conclusão está mais correta?",
       "opcoes": [
-        "o caso e explicado por Natureza e propaga��o da luz.",
-        "o caso e mais bem entendido por Princ�pios da �ptica geom�trica.",
-        "a situa��o anula a import�ncia de Reflex�o em espelhos planos.",
-        "o fen�meno exclui qualquer rela��o com Espelhos esf�ricos."
+        "o caso e explicado por Natureza e propagação da luz.",
+        "o caso e mais bem entendido por Princípios da Óptica geométrica.",
+        "a situação anula a importância de Reflexão em espelhos planos.",
+        "o fenômeno exclui qualquer relação com Espelhos esféricos."
       ],
-      "correta": "o caso e explicado por Natureza e propaga��o da luz.",
-      "comentario": "A conclus�o adequada retoma a ideia central de Natureza e propaga��o da luz.",
+      "correta": "o caso e explicado por Natureza e propagação da luz.",
+      "comentario": "A conclusão adequada retoma a ideia central de Natureza e propagação da luz.",
       "tempoEstimado": 45,
       "tags": [
         "optica",
@@ -400,22 +400,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Natureza e propaga��o da luz",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Natureza e propagação da luz",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Se um grupo fosse pesquisar Natureza e propaga��o da luz, qual pergunta orientadora seria a mais adequada?",
+      "enunciado": "Se um grupo fosse pesquisar Natureza e propagação da luz, qual pergunta orientadora seria a mais adequada?",
       "opcoes": [
-        "Como Natureza e propaga��o da luz aparece na formacao de sombras e a iluminacao de ambientes?",
-        "Como Princ�pios da �ptica geom�trica substitui totalmente a formacao de sombras e a iluminacao de ambientes?",
-        "Por que Reflex�o em espelhos planos torna desnecess�rio estudar Natureza e propaga��o da luz?",
-        "De que modo Espelhos esf�ricos elimina toda medida fisica envolvida?"
+        "Como Natureza e propagação da luz aparece na formacao de sombras e a iluminacao de ambientes?",
+        "Como Princípios da Óptica geométrica substitui totalmente a formacao de sombras e a iluminacao de ambientes?",
+        "Por que Reflexão em espelhos planos torna desnecessário estudar Natureza e propagação da luz?",
+        "De que modo Espelhos esféricos elimina toda medida fisica envolvida?"
       ],
-      "correta": "Como Natureza e propaga��o da luz aparece na formacao de sombras e a iluminacao de ambientes?",
-      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Natureza e propaga��o da luz.",
+      "correta": "Como Natureza e propagação da luz aparece na formacao de sombras e a iluminacao de ambientes?",
+      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Natureza e propagação da luz.",
       "tempoEstimado": 45,
       "tags": [
         "optica",
@@ -439,22 +439,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Natureza e propaga��o da luz",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Natureza e propagação da luz",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em Natureza e propaga��o da luz e pensar que:",
+      "enunciado": "Um erro comum em Natureza e propagação da luz e pensar que:",
       "opcoes": [
         "a luz so existe quando toca diretamente os olhos do observador",
-        "raios de luz se anulam quando se cruzam no mesmo espa�o",
+        "raios de luz se anulam quando se cruzam no mesmo espaço",
         "a imagem no espelho plano fica localizada sobre a superficie refletora",
         "todo espelho esferico produz sempre imagens do mesmo tamanho do objeto"
       ],
       "correta": "a luz so existe quando toca diretamente os olhos do observador",
-      "comentario": "Esse e um equ�voco frequente porque contraria a defini��o correta de Natureza e propaga��o da luz.",
+      "comentario": "Esse e um equívoco frequente porque contraria a definição correta de Natureza e propagação da luz.",
       "tempoEstimado": 50,
       "tags": [
         "optica",
@@ -478,22 +478,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Natureza e propaga��o da luz",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Natureza e propagação da luz",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"a luz so passa a existir no instante em que entra nos olhos de alguem\". A avalia��o mais adequada e:",
+      "enunciado": "Um estudante afirma: \"a luz so passa a existir no instante em que entra nos olhos de alguem\". A avaliação mais adequada e:",
       "opcoes": [
-        "A afirma��o est� incorreta, porque o estudo da luz como forma de energia que se propaga e permite a vis�o dos objetos.",
-        "A afirma��o est� correta, pois resume integralmente Natureza e propaga��o da luz.",
-        "A afirma��o est� correta, porque toda situa��o do tema depende apenas dessa ideia.",
-        "A afirma��o est� incorreta apenas porque n�o apresenta uma unidade de medida."
+        "A afirmação está incorreta, porque o estudo da luz como forma de energia que se propaga e permite a visão dos objetos.",
+        "A afirmação está correta, pois resume integralmente Natureza e propagação da luz.",
+        "A afirmação está correta, porque toda situação do tema depende apenas dessa ideia.",
+        "A afirmação está incorreta apenas porque não apresenta uma unidade de medida."
       ],
-      "correta": "A afirma��o est� incorreta, porque o estudo da luz como forma de energia que se propaga e permite a vis�o dos objetos.",
-      "comentario": "A fala do estudante apresenta um equ�voco conceitual sobre Natureza e propaga��o da luz.",
+      "correta": "A afirmação está incorreta, porque o estudo da luz como forma de energia que se propaga e permite a visão dos objetos.",
+      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre Natureza e propagação da luz.",
       "tempoEstimado": 55,
       "tags": [
         "optica",
@@ -517,22 +517,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Natureza e propaga��o da luz",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Natureza e propagação da luz",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se Natureza e propaga��o da luz fosse ignorado(a) ao analisar a formacao de sombras e a iluminacao de ambientes, o resultado mais prov�vel seria:",
+      "enunciado": "Se Natureza e propagação da luz fosse ignorado(a) ao analisar a formacao de sombras e a iluminacao de ambientes, o resultado mais provável seria:",
       "opcoes": [
-        "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre a formacao de sombras e a iluminacao de ambientes.",
-        "a situa��o seria explicada automaticamente por Princ�pios da �ptica geom�trica, sem necessidade de an�lise.",
-        "nenhuma interpretacao fisica seria alterada, porque Natureza e propaga��o da luz n�o interfere nesse tipo de problema.",
-        "o fen�meno deixaria de existir apenas por n�o ser nomeado."
+        "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a formacao de sombras e a iluminacao de ambientes.",
+        "a situação seria explicada automaticamente por Princípios da Óptica geométrica, sem necessidade de análise.",
+        "nenhuma interpretacao fisica seria alterada, porque Natureza e propagação da luz não interfere nesse tipo de problema.",
+        "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
-      "correta": "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre a formacao de sombras e a iluminacao de ambientes.",
-      "comentario": "Ignorar Natureza e propaga��o da luz compromete a leitura fisica da situa��o apresentada.",
+      "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a formacao de sombras e a iluminacao de ambientes.",
+      "comentario": "Ignorar Natureza e propagação da luz compromete a leitura fisica da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "optica",
@@ -556,22 +556,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Natureza e propaga��o da luz",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Natureza e propagação da luz",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma aplica��o cotidiana ou escolar, Natureza e propaga��o da luz ajuda principalmente a compreender:",
+      "enunciado": "Em uma aplicação cotidiana ou escolar, Natureza e propagação da luz ajuda principalmente a compreender:",
       "opcoes": [
         "a formacao de sombras e a iluminacao de ambientes",
-        "a an�lise de trajet�rias luminosas em esquemas geometricos",
+        "a análise de trajetórias luminosas em esquemas geometricos",
         "o uso cotidiano de espelhos planos em banheiros, elevadores e retrovisores internos",
         "espelhos de maquiagem, retrovisores externos e refletores"
       ],
       "correta": "a formacao de sombras e a iluminacao de ambientes",
-      "comentario": "A aplica��o escolhida e a que melhor representa Natureza e propaga��o da luz.",
+      "comentario": "A aplicação escolhida e a que melhor representa Natureza e propagação da luz.",
       "tempoEstimado": 60,
       "tags": [
         "optica",
@@ -595,22 +595,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Natureza e propaga��o da luz",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Natureza e propagação da luz",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual resumo sintetiza melhor a ideia central de Natureza e propaga��o da luz?",
+      "enunciado": "Qual resumo sintetiza melhor a ideia central de Natureza e propagação da luz?",
       "opcoes": [
-        "Em s�ntese, o estudo da luz como forma de energia que se propaga e permite a vis�o dos objetos.",
-        "Em s�ntese, as regras que descrevem a propaga��o retil�nea, a independ�ncia e a reversibilidade dos raios de luz.",
-        "Em s�ntese, o fen�meno em que a luz retorna ao meio de origem e forma imagens virtuais sim�tricas em espelhos planos.",
-        "Em s�ntese, superficies refletoras curvas que podem convergir ou divergir raios e formar diferentes tipos de imagem."
+        "Em síntese, o estudo da luz como forma de energia que se propaga e permite a visão dos objetos.",
+        "Em síntese, as regras que descrevem a propagação retilínea, a independência e a reversibilidade dos raios de luz.",
+        "Em síntese, o fenômeno em que a luz retorna ao meio de origem e forma imagens virtuais simétricas em espelhos planos.",
+        "Em síntese, superficies refletoras curvas que podem convergir ou divergir raios e formar diferentes tipos de imagem."
       ],
-      "correta": "Em s�ntese, o estudo da luz como forma de energia que se propaga e permite a vis�o dos objetos.",
-      "comentario": "O resumo correto recupera o n�cleo conceitual de Natureza e propaga��o da luz.",
+      "correta": "Em síntese, o estudo da luz como forma de energia que se propaga e permite a visão dos objetos.",
+      "comentario": "O resumo correto recupera o núcleo conceitual de Natureza e propagação da luz.",
       "tempoEstimado": 65,
       "tags": [
         "optica",
@@ -634,22 +634,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Princ�pios da �ptica geom�trica",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Princípios da Óptica geométrica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em F�sica, Princ�pios da �ptica geom�trica pode ser definido(a) como:",
+      "enunciado": "Em Física, Princípios da Óptica geométrica pode ser definido(a) como:",
       "opcoes": [
-        "as regras que descrevem a propaga��o retil�nea, a independ�ncia e a reversibilidade dos raios de luz",
-        "o fen�meno em que a luz retorna ao meio de origem e forma imagens virtuais sim�tricas em espelhos planos",
+        "as regras que descrevem a propagação retilínea, a independência e a reversibilidade dos raios de luz",
+        "o fenômeno em que a luz retorna ao meio de origem e forma imagens virtuais simétricas em espelhos planos",
         "superficies refletoras curvas que podem convergir ou divergir raios e formar diferentes tipos de imagem",
-        "a mudanca de dire��o e de velocidade da luz quando ela passa de um meio para outro"
+        "a mudanca de direção e de velocidade da luz quando ela passa de um meio para outro"
       ],
-      "correta": "as regras que descrevem a propaga��o retil�nea, a independ�ncia e a reversibilidade dos raios de luz",
-      "comentario": "Princ�pios da �ptica geom�trica refere-se �s regras que descrevem a propaga��o retil�nea, a independ�ncia e a reversibilidade dos raios de luz.",
+      "correta": "as regras que descrevem a propagação retilínea, a independência e a reversibilidade dos raios de luz",
+      "comentario": "Princípios da Óptica geométrica refere-se às regras que descrevem a propagação retilínea, a independência e a reversibilidade dos raios de luz.",
       "tempoEstimado": 25,
       "tags": [
         "optica",
@@ -673,22 +673,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Princ�pios da �ptica geom�trica",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Princípios da Óptica geométrica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situa��o: um experimento mostra raios de luz cruzando-se sem alterar suas trajet�rias e retornando pelo mesmo caminho Esse caso exemplifica melhor qual subt�pico?",
+      "enunciado": "Observe a situação: um experimento mostra raios de luz cruzando-se sem alterar suas trajetórias e retornando pelo mesmo caminho Esse caso exemplifica melhor qual subtópico?",
       "opcoes": [
-        "Princ�pios da �ptica geom�trica",
-        "Reflex�o em espelhos planos",
-        "Espelhos esf�ricos",
-        "Refracao da luz"
+        "Princípios da Óptica geométrica",
+        "Reflexão em espelhos planos",
+        "Espelhos esféricos",
+        "Refração da luz"
       ],
-      "correta": "Princ�pios da �ptica geom�trica",
-      "comentario": "A situa��o apresentada � um exemplo de Princ�pios da �ptica geom�trica.",
+      "correta": "Princípios da Óptica geométrica",
+      "comentario": "A situação apresentada é um exemplo de Princípios da Óptica geométrica.",
       "tempoEstimado": 25,
       "tags": [
         "optica",
@@ -712,22 +712,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Princ�pios da �ptica geom�trica",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Princípios da Óptica geométrica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirma��o descreve corretamente Princ�pios da �ptica geom�trica?",
+      "enunciado": "Qual afirmação descreve corretamente Princípios da Óptica geométrica?",
       "opcoes": [
-        "As regras que descrevem a propaga��o retil�nea, a independ�ncia e a reversibilidade dos raios de luz.",
-        "O fen�meno em que a luz retorna ao meio de origem e forma imagens virtuais sim�tricas em espelhos planos.",
+        "As regras que descrevem a propagação retilínea, a independência e a reversibilidade dos raios de luz.",
+        "O fenômeno em que a luz retorna ao meio de origem e forma imagens virtuais simétricas em espelhos planos.",
         "Superficies refletoras curvas que podem convergir ou divergir raios e formar diferentes tipos de imagem.",
-        "A mudanca de dire��o e de velocidade da luz quando ela passa de um meio para outro."
+        "A mudanca de direção e de velocidade da luz quando ela passa de um meio para outro."
       ],
-      "correta": "As regras que descrevem a propaga��o retil�nea, a independ�ncia e a reversibilidade dos raios de luz.",
-      "comentario": "A alternativa correta resume o conceito de Princ�pios da �ptica geom�trica.",
+      "correta": "As regras que descrevem a propagação retilínea, a independência e a reversibilidade dos raios de luz.",
+      "comentario": "A alternativa correta resume o conceito de Princípios da Óptica geométrica.",
       "tempoEstimado": 30,
       "tags": [
         "optica",
@@ -751,22 +751,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Princ�pios da �ptica geom�trica",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Princípios da Óptica geométrica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compat�vel com Princ�pios da �ptica geom�trica?",
+      "enunciado": "Qual alternativa NAO esta compatível com Princípios da Óptica geométrica?",
       "opcoes": [
-        "O fen�meno em que a luz retorna ao meio de origem e forma imagens virtuais sim�tricas em espelhos planos.",
-        "As regras que descrevem a propaga��o retil�nea, a independ�ncia e a reversibilidade dos raios de luz.",
+        "O fenômeno em que a luz retorna ao meio de origem e forma imagens virtuais simétricas em espelhos planos.",
+        "As regras que descrevem a propagação retilínea, a independência e a reversibilidade dos raios de luz.",
         "Aplicar os principios basicos que organizam o comportamento dos raios luminosos.",
-        "Ajuda a compreender a an�lise de trajet�rias luminosas em esquemas geometricos."
+        "Ajuda a compreender a análise de trajetórias luminosas em esquemas geometricos."
       ],
-      "correta": "O fen�meno em que a luz retorna ao meio de origem e forma imagens virtuais sim�tricas em espelhos planos.",
-      "comentario": "A op��o incompativel descreve outro subt�pico, n�o Princ�pios da �ptica geom�trica.",
+      "correta": "O fenômeno em que a luz retorna ao meio de origem e forma imagens virtuais simétricas em espelhos planos.",
+      "comentario": "A opção incompativel descreve outro subtópico, não Princípios da Óptica geométrica.",
       "tempoEstimado": 30,
       "tags": [
         "optica",
@@ -790,22 +790,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Princ�pios da �ptica geom�trica",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Princípios da Óptica geométrica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar Princ�pios da �ptica geom�trica, o foco principal e:",
+      "enunciado": "Ao estudar Princípios da Óptica geométrica, o foco principal e:",
       "opcoes": [
         "aplicar os principios basicos que organizam o comportamento dos raios luminosos",
-        "relacionar reflex�o regular com a formacao de imagens em espelhos planos",
-        "interpretar a formacao de imagens em espelhos c�ncavos e convexos",
-        "analisar a mudanca de trajet�ria da luz em interfaces entre meios distintos"
+        "relacionar reflexão regular com a formacao de imagens em espelhos planos",
+        "interpretar a formacao de imagens em espelhos côncavos e convexos",
+        "analisar a mudanca de trajetória da luz em interfaces entre meios distintos"
       ],
       "correta": "aplicar os principios basicos que organizam o comportamento dos raios luminosos",
-      "comentario": "Princ�pios da �ptica geom�trica concentra-se em aplicar os principios basicos que organizam o comportamento dos raios luminosos.",
+      "comentario": "Princípios da Óptica geométrica concentra-se em aplicar os principios basicos que organizam o comportamento dos raios luminosos.",
       "tempoEstimado": 35,
       "tags": [
         "optica",
@@ -829,22 +829,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Princ�pios da �ptica geom�trica",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Princípios da Óptica geométrica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Reflex�o em espelhos planos trata de o fen�meno em que a luz retorna ao meio de origem e forma imagens virtuais sim�tricas em espelhos planos, Princ�pios da �ptica geom�trica destaca:",
+      "enunciado": "Enquanto Reflexão em espelhos planos trata de o fenômeno em que a luz retorna ao meio de origem e forma imagens virtuais simétricas em espelhos planos, Princípios da Óptica geométrica destaca:",
       "opcoes": [
-        "As regras que descrevem a propaga��o retil�nea, a independ�ncia e a reversibilidade dos raios de luz.",
-        "O fen�meno em que a luz retorna ao meio de origem e forma imagens virtuais sim�tricas em espelhos planos.",
+        "As regras que descrevem a propagação retilínea, a independência e a reversibilidade dos raios de luz.",
+        "O fenômeno em que a luz retorna ao meio de origem e forma imagens virtuais simétricas em espelhos planos.",
         "Superficies refletoras curvas que podem convergir ou divergir raios e formar diferentes tipos de imagem.",
-        "A mudanca de dire��o e de velocidade da luz quando ela passa de um meio para outro."
+        "A mudanca de direção e de velocidade da luz quando ela passa de um meio para outro."
       ],
-      "correta": "As regras que descrevem a propaga��o retil�nea, a independ�ncia e a reversibilidade dos raios de luz.",
-      "comentario": "A compara��o correta mostra a especificidade de Princ�pios da �ptica geom�trica.",
+      "correta": "As regras que descrevem a propagação retilínea, a independência e a reversibilidade dos raios de luz.",
+      "comentario": "A comparação correta mostra a especificidade de Princípios da Óptica geométrica.",
       "tempoEstimado": 35,
       "tags": [
         "optica",
@@ -868,22 +868,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Princ�pios da �ptica geom�trica",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Princípios da Óptica geométrica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma an�lise de sala, considera-se que um experimento mostra raios de luz cruzando-se sem alterar suas trajet�rias e retornando pelo mesmo caminho Para interpretar essa situa��o, � mais adequado mobilizar o conceito de:",
+      "enunciado": "Em uma análise de sala, considera-se que um experimento mostra raios de luz cruzando-se sem alterar suas trajetórias e retornando pelo mesmo caminho Para interpretar essa situação, é mais adequado mobilizar o conceito de:",
       "opcoes": [
-        "Princ�pios da �ptica geom�trica",
-        "Reflex�o em espelhos planos",
-        "Refracao da luz",
+        "Princípios da Óptica geométrica",
+        "Reflexão em espelhos planos",
+        "Refração da luz",
         "Leis de Snell"
       ],
-      "correta": "Princ�pios da �ptica geom�trica",
-      "comentario": "O caso descrito � interpretado adequadamente por meio de Princ�pios da �ptica geom�trica.",
+      "correta": "Princípios da Óptica geométrica",
+      "comentario": "O caso descrito é interpretado adequadamente por meio de Princípios da Óptica geométrica.",
       "tempoEstimado": 40,
       "tags": [
         "optica",
@@ -907,22 +907,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Princ�pios da �ptica geom�trica",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Princípios da Óptica geométrica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situa��o pr�tica depende mais diretamente de Princ�pios da �ptica geom�trica?",
+      "enunciado": "Qual situação prática depende mais diretamente de Princípios da Óptica geométrica?",
       "opcoes": [
-        "a an�lise de trajet�rias luminosas em esquemas geometricos",
+        "a análise de trajetórias luminosas em esquemas geometricos",
         "o uso cotidiano de espelhos planos em banheiros, elevadores e retrovisores internos",
         "espelhos de maquiagem, retrovisores externos e refletores",
-        "o c�lculo de �ngulos de refra��o em interfaces opticas"
+        "o cálculo de ângulos de refração em interfaces opticas"
       ],
-      "correta": "a an�lise de trajet�rias luminosas em esquemas geometricos",
-      "comentario": "Princ�pios da �ptica geom�trica aparece de modo direto na an�lise de trajet�rias luminosas em esquemas geometricos.",
+      "correta": "a análise de trajetórias luminosas em esquemas geometricos",
+      "comentario": "Princípios da Óptica geométrica aparece de modo direto na análise de trajetórias luminosas em esquemas geometricos.",
       "tempoEstimado": 40,
       "tags": [
         "optica",
@@ -946,22 +946,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Princ�pios da �ptica geom�trica",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Princípios da Óptica geométrica",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir de um experimento mostra raios de luz cruzando-se sem alterar suas trajet�rias e retornando pelo mesmo caminho, qual conclus�o est� mais correta?",
+      "enunciado": "A partir de um experimento mostra raios de luz cruzando-se sem alterar suas trajetórias e retornando pelo mesmo caminho, qual conclusão está mais correta?",
       "opcoes": [
-        "o caso e explicado por Princ�pios da �ptica geom�trica.",
-        "o caso e mais bem entendido por Reflex�o em espelhos planos.",
-        "a situa��o anula a import�ncia de Espelhos esf�ricos.",
-        "o fen�meno exclui qualquer rela��o com Refra��o da luz."
+        "o caso e explicado por Princípios da Óptica geométrica.",
+        "o caso e mais bem entendido por Reflexão em espelhos planos.",
+        "a situação anula a importância de Espelhos esféricos.",
+        "o fenômeno exclui qualquer relação com Refração da luz."
       ],
-      "correta": "o caso e explicado por Princ�pios da �ptica geom�trica.",
-      "comentario": "A conclus�o adequada retoma a ideia central de Princ�pios da �ptica geom�trica.",
+      "correta": "o caso e explicado por Princípios da Óptica geométrica.",
+      "comentario": "A conclusão adequada retoma a ideia central de Princípios da Óptica geométrica.",
       "tempoEstimado": 45,
       "tags": [
         "optica",
@@ -985,22 +985,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Princ�pios da �ptica geom�trica",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Princípios da Óptica geométrica",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Se um grupo fosse pesquisar Princ�pios da �ptica geom�trica, qual pergunta orientadora seria a mais adequada?",
+      "enunciado": "Se um grupo fosse pesquisar Princípios da Óptica geométrica, qual pergunta orientadora seria a mais adequada?",
       "opcoes": [
-        "Como Princ�pios da �ptica geom�trica aparece na an�lise de trajet�rias luminosas em esquemas geometricos?",
-        "Como Reflex�o em espelhos planos substitui totalmente a an�lise de trajet�rias luminosas em esquemas geometricos?",
-        "Por que Espelhos esf�ricos torna desnecess�rio estudar Princ�pios da �ptica geom�trica?",
-        "De que modo Refra��o da luz elimina toda medida fisica envolvida?"
+        "Como Princípios da Óptica geométrica aparece na análise de trajetórias luminosas em esquemas geometricos?",
+        "Como Reflexão em espelhos planos substitui totalmente a análise de trajetórias luminosas em esquemas geometricos?",
+        "Por que Espelhos esféricos torna desnecessário estudar Princípios da Óptica geométrica?",
+        "De que modo Refração da luz elimina toda medida fisica envolvida?"
       ],
-      "correta": "Como Princ�pios da �ptica geom�trica aparece na an�lise de trajet�rias luminosas em esquemas geometricos?",
-      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Princ�pios da �ptica geom�trica.",
+      "correta": "Como Princípios da Óptica geométrica aparece na análise de trajetórias luminosas em esquemas geometricos?",
+      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Princípios da Óptica geométrica.",
       "tempoEstimado": 45,
       "tags": [
         "optica",
@@ -1024,22 +1024,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Princ�pios da �ptica geom�trica",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Princípios da Óptica geométrica",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em Princ�pios da �ptica geom�trica e pensar que:",
+      "enunciado": "Um erro comum em Princípios da Óptica geométrica e pensar que:",
       "opcoes": [
-        "raios de luz se anulam quando se cruzam no mesmo espa�o",
+        "raios de luz se anulam quando se cruzam no mesmo espaço",
         "a imagem no espelho plano fica localizada sobre a superficie refletora",
         "todo espelho esferico produz sempre imagens do mesmo tamanho do objeto",
-        "na refra��o, a luz muda de dire��o sem alterar sua velocidade"
+        "na refração, a luz muda de direção sem alterar sua velocidade"
       ],
-      "correta": "raios de luz se anulam quando se cruzam no mesmo espa�o",
-      "comentario": "Esse e um equ�voco frequente porque contraria a defini��o correta de Princ�pios da �ptica geom�trica.",
+      "correta": "raios de luz se anulam quando se cruzam no mesmo espaço",
+      "comentario": "Esse e um equívoco frequente porque contraria a definição correta de Princípios da Óptica geométrica.",
       "tempoEstimado": 50,
       "tags": [
         "optica",
@@ -1063,22 +1063,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Princ�pios da �ptica geom�trica",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Princípios da Óptica geométrica",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"dois raios de luz que se cruzam deixam de seguir sua trajet�ria original\". A avalia��o mais adequada e:",
+      "enunciado": "Um estudante afirma: \"dois raios de luz que se cruzam deixam de seguir sua trajetória original\". A avaliação mais adequada e:",
       "opcoes": [
-        "A afirma��o est� incorreta, porque as regras que descrevem a propaga��o retil�nea, a independ�ncia e a reversibilidade dos raios de luz.",
-        "A afirma��o est� correta, pois resume integralmente Princ�pios da �ptica geom�trica.",
-        "A afirma��o est� correta, porque toda situa��o do tema depende apenas dessa ideia.",
-        "A afirma��o est� incorreta apenas porque n�o apresenta uma unidade de medida."
+        "A afirmação está incorreta, porque as regras que descrevem a propagação retilínea, a independência e a reversibilidade dos raios de luz.",
+        "A afirmação está correta, pois resume integralmente Princípios da Óptica geométrica.",
+        "A afirmação está correta, porque toda situação do tema depende apenas dessa ideia.",
+        "A afirmação está incorreta apenas porque não apresenta uma unidade de medida."
       ],
-      "correta": "A afirma��o est� incorreta, porque as regras que descrevem a propaga��o retil�nea, a independ�ncia e a reversibilidade dos raios de luz.",
-      "comentario": "A fala do estudante apresenta um equ�voco conceitual sobre Princ�pios da �ptica geom�trica.",
+      "correta": "A afirmação está incorreta, porque as regras que descrevem a propagação retilínea, a independência e a reversibilidade dos raios de luz.",
+      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre Princípios da Óptica geométrica.",
       "tempoEstimado": 55,
       "tags": [
         "optica",
@@ -1102,22 +1102,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Princ�pios da �ptica geom�trica",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Princípios da Óptica geométrica",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se Princ�pios da �ptica geom�trica fosse ignorado(a) ao analisar a an�lise de trajet�rias luminosas em esquemas geometricos, o resultado mais prov�vel seria:",
+      "enunciado": "Se Princípios da Óptica geométrica fosse ignorado(a) ao analisar a análise de trajetórias luminosas em esquemas geometricos, o resultado mais provável seria:",
       "opcoes": [
-        "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre a an�lise de trajet�rias luminosas em esquemas geometricos.",
-        "a situa��o seria explicada automaticamente por Reflex�o em espelhos planos, sem necessidade de an�lise.",
-        "nenhuma interpretacao fisica seria alterada, porque Princ�pios da �ptica geom�trica n�o interfere nesse tipo de problema.",
-        "o fen�meno deixaria de existir apenas por n�o ser nomeado."
+        "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a análise de trajetórias luminosas em esquemas geometricos.",
+        "a situação seria explicada automaticamente por Reflexão em espelhos planos, sem necessidade de análise.",
+        "nenhuma interpretacao fisica seria alterada, porque Princípios da Óptica geométrica não interfere nesse tipo de problema.",
+        "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
-      "correta": "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre a an�lise de trajet�rias luminosas em esquemas geometricos.",
-      "comentario": "Ignorar Princ�pios da �ptica geom�trica compromete a leitura fisica da situa��o apresentada.",
+      "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a análise de trajetórias luminosas em esquemas geometricos.",
+      "comentario": "Ignorar Princípios da Óptica geométrica compromete a leitura fisica da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "optica",
@@ -1141,22 +1141,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Princ�pios da �ptica geom�trica",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Princípios da Óptica geométrica",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma aplica��o cotidiana ou escolar, Princ�pios da �ptica geom�trica ajuda principalmente a compreender:",
+      "enunciado": "Em uma aplicação cotidiana ou escolar, Princípios da Óptica geométrica ajuda principalmente a compreender:",
       "opcoes": [
-        "a an�lise de trajet�rias luminosas em esquemas geometricos",
+        "a análise de trajetórias luminosas em esquemas geometricos",
         "o uso cotidiano de espelhos planos em banheiros, elevadores e retrovisores internos",
         "espelhos de maquiagem, retrovisores externos e refletores",
         "a interpretacao visual de objetos imersos em agua e vidro"
       ],
-      "correta": "a an�lise de trajet�rias luminosas em esquemas geometricos",
-      "comentario": "A aplica��o escolhida e a que melhor representa Princ�pios da �ptica geom�trica.",
+      "correta": "a análise de trajetórias luminosas em esquemas geometricos",
+      "comentario": "A aplicação escolhida e a que melhor representa Princípios da Óptica geométrica.",
       "tempoEstimado": 60,
       "tags": [
         "optica",
@@ -1180,22 +1180,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Princ�pios da �ptica geom�trica",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Princípios da Óptica geométrica",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual resumo sintetiza melhor a ideia central de Princ�pios da �ptica geom�trica?",
+      "enunciado": "Qual resumo sintetiza melhor a ideia central de Princípios da Óptica geométrica?",
       "opcoes": [
-        "Em s�ntese, as regras que descrevem a propaga��o retil�nea, a independ�ncia e a reversibilidade dos raios de luz.",
-        "Em s�ntese, o fen�meno em que a luz retorna ao meio de origem e forma imagens virtuais sim�tricas em espelhos planos.",
-        "Em s�ntese, superficies refletoras curvas que podem convergir ou divergir raios e formar diferentes tipos de imagem.",
-        "Em s�ntese, a mudanca de dire��o e de velocidade da luz quando ela passa de um meio para outro."
+        "Em síntese, as regras que descrevem a propagação retilínea, a independência e a reversibilidade dos raios de luz.",
+        "Em síntese, o fenômeno em que a luz retorna ao meio de origem e forma imagens virtuais simétricas em espelhos planos.",
+        "Em síntese, superficies refletoras curvas que podem convergir ou divergir raios e formar diferentes tipos de imagem.",
+        "Em síntese, a mudanca de direção e de velocidade da luz quando ela passa de um meio para outro."
       ],
-      "correta": "Em s�ntese, as regras que descrevem a propaga��o retil�nea, a independ�ncia e a reversibilidade dos raios de luz.",
-      "comentario": "O resumo correto recupera o n�cleo conceitual de Princ�pios da �ptica geom�trica.",
+      "correta": "Em síntese, as regras que descrevem a propagação retilínea, a independência e a reversibilidade dos raios de luz.",
+      "comentario": "O resumo correto recupera o núcleo conceitual de Princípios da Óptica geométrica.",
       "tempoEstimado": 65,
       "tags": [
         "optica",
@@ -1219,22 +1219,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Reflex�o em espelhos planos",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Reflexão em espelhos planos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em F�sica, Reflex�o em espelhos planos pode ser definido(a) como:",
+      "enunciado": "Em Física, Reflexão em espelhos planos pode ser definido(a) como:",
       "opcoes": [
-        "o fen�meno em que a luz retorna ao meio de origem e forma imagens virtuais sim�tricas em espelhos planos",
+        "o fenômeno em que a luz retorna ao meio de origem e forma imagens virtuais simétricas em espelhos planos",
         "superficies refletoras curvas que podem convergir ou divergir raios e formar diferentes tipos de imagem",
-        "a mudanca de dire��o e de velocidade da luz quando ela passa de um meio para outro",
-        "as relacoes matematicas que ligam os �ngulos de incidencia e refra��o aos �ndices dos meios"
+        "a mudanca de direção e de velocidade da luz quando ela passa de um meio para outro",
+        "as relacoes matematicas que ligam os ângulos de incidencia e refração aos índices dos meios"
       ],
-      "correta": "o fen�meno em que a luz retorna ao meio de origem e forma imagens virtuais sim�tricas em espelhos planos",
-      "comentario": "Reflex�o em espelhos planos refere-se ao fen�meno em que a luz retorna ao meio de origem e forma imagens virtuais sim�tricas em espelhos planos.",
+      "correta": "o fenômeno em que a luz retorna ao meio de origem e forma imagens virtuais simétricas em espelhos planos",
+      "comentario": "Reflexão em espelhos planos refere-se ao fenômeno em que a luz retorna ao meio de origem e forma imagens virtuais simétricas em espelhos planos.",
       "tempoEstimado": 25,
       "tags": [
         "optica",
@@ -1258,22 +1258,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Reflex�o em espelhos planos",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Reflexão em espelhos planos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situa��o: uma pessoa se observa em um espelho plano e percebe uma imagem a mesma distancia atras do espelho Esse caso exemplifica melhor qual subt�pico?",
+      "enunciado": "Observe a situação: uma pessoa se observa em um espelho plano e percebe uma imagem a mesma distancia atras do espelho Esse caso exemplifica melhor qual subtópico?",
       "opcoes": [
-        "Reflex�o em espelhos planos",
-        "Espelhos esf�ricos",
-        "Refracao da luz",
+        "Reflexão em espelhos planos",
+        "Espelhos esféricos",
+        "Refração da luz",
         "Leis de Snell"
       ],
-      "correta": "Reflex�o em espelhos planos",
-      "comentario": "A situa��o apresentada � um exemplo de Reflex�o em espelhos planos.",
+      "correta": "Reflexão em espelhos planos",
+      "comentario": "A situação apresentada é um exemplo de Reflexão em espelhos planos.",
       "tempoEstimado": 25,
       "tags": [
         "optica",
@@ -1297,22 +1297,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Reflex�o em espelhos planos",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Reflexão em espelhos planos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirma��o descreve corretamente Reflex�o em espelhos planos?",
+      "enunciado": "Qual afirmação descreve corretamente Reflexão em espelhos planos?",
       "opcoes": [
-        "O fen�meno em que a luz retorna ao meio de origem e forma imagens virtuais sim�tricas em espelhos planos.",
+        "O fenômeno em que a luz retorna ao meio de origem e forma imagens virtuais simétricas em espelhos planos.",
         "Superficies refletoras curvas que podem convergir ou divergir raios e formar diferentes tipos de imagem.",
-        "A mudanca de dire��o e de velocidade da luz quando ela passa de um meio para outro.",
-        "As relacoes matematicas que ligam os �ngulos de incidencia e refra��o aos �ndices dos meios."
+        "A mudanca de direção e de velocidade da luz quando ela passa de um meio para outro.",
+        "As relacoes matematicas que ligam os ângulos de incidencia e refração aos índices dos meios."
       ],
-      "correta": "O fen�meno em que a luz retorna ao meio de origem e forma imagens virtuais sim�tricas em espelhos planos.",
-      "comentario": "A alternativa correta resume o conceito de Reflex�o em espelhos planos.",
+      "correta": "O fenômeno em que a luz retorna ao meio de origem e forma imagens virtuais simétricas em espelhos planos.",
+      "comentario": "A alternativa correta resume o conceito de Reflexão em espelhos planos.",
       "tempoEstimado": 30,
       "tags": [
         "optica",
@@ -1336,22 +1336,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Reflex�o em espelhos planos",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Reflexão em espelhos planos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compat�vel com Reflex�o em espelhos planos?",
+      "enunciado": "Qual alternativa NAO esta compatível com Reflexão em espelhos planos?",
       "opcoes": [
         "Superficies refletoras curvas que podem convergir ou divergir raios e formar diferentes tipos de imagem.",
-        "O fen�meno em que a luz retorna ao meio de origem e forma imagens virtuais sim�tricas em espelhos planos.",
-        "Relacionar reflex�o regular com a formacao de imagens em espelhos planos.",
+        "O fenômeno em que a luz retorna ao meio de origem e forma imagens virtuais simétricas em espelhos planos.",
+        "Relacionar reflexão regular com a formacao de imagens em espelhos planos.",
         "Ajuda a compreender o uso cotidiano de espelhos planos em banheiros, elevadores e retrovisores internos."
       ],
       "correta": "Superficies refletoras curvas que podem convergir ou divergir raios e formar diferentes tipos de imagem.",
-      "comentario": "A op��o incompativel descreve outro subt�pico, n�o Reflex�o em espelhos planos.",
+      "comentario": "A opção incompativel descreve outro subtópico, não Reflexão em espelhos planos.",
       "tempoEstimado": 30,
       "tags": [
         "optica",
@@ -1375,22 +1375,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Reflex�o em espelhos planos",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Reflexão em espelhos planos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar Reflex�o em espelhos planos, o foco principal e:",
+      "enunciado": "Ao estudar Reflexão em espelhos planos, o foco principal e:",
       "opcoes": [
-        "relacionar reflex�o regular com a formacao de imagens em espelhos planos",
-        "interpretar a formacao de imagens em espelhos c�ncavos e convexos",
-        "analisar a mudanca de trajet�ria da luz em interfaces entre meios distintos",
-        "relacionar �ngulos e �ndices de refra��o em passagens de luz entre meios"
+        "relacionar reflexão regular com a formacao de imagens em espelhos planos",
+        "interpretar a formacao de imagens em espelhos côncavos e convexos",
+        "analisar a mudanca de trajetória da luz em interfaces entre meios distintos",
+        "relacionar ângulos e índices de refração em passagens de luz entre meios"
       ],
-      "correta": "relacionar reflex�o regular com a formacao de imagens em espelhos planos",
-      "comentario": "Reflex�o em espelhos planos concentra-se em relacionar reflex�o regular com a formacao de imagens em espelhos planos.",
+      "correta": "relacionar reflexão regular com a formacao de imagens em espelhos planos",
+      "comentario": "Reflexão em espelhos planos concentra-se em relacionar reflexão regular com a formacao de imagens em espelhos planos.",
       "tempoEstimado": 35,
       "tags": [
         "optica",
@@ -1414,22 +1414,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Reflex�o em espelhos planos",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Reflexão em espelhos planos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Espelhos esf�ricos trata de superficies refletoras curvas que podem convergir ou divergir raios e formar diferentes tipos de imagem, Reflex�o em espelhos planos destaca:",
+      "enunciado": "Enquanto Espelhos esféricos trata de superficies refletoras curvas que podem convergir ou divergir raios e formar diferentes tipos de imagem, Reflexão em espelhos planos destaca:",
       "opcoes": [
-        "O fen�meno em que a luz retorna ao meio de origem e forma imagens virtuais sim�tricas em espelhos planos.",
+        "O fenômeno em que a luz retorna ao meio de origem e forma imagens virtuais simétricas em espelhos planos.",
         "Superficies refletoras curvas que podem convergir ou divergir raios e formar diferentes tipos de imagem.",
-        "A mudanca de dire��o e de velocidade da luz quando ela passa de um meio para outro.",
-        "As relacoes matematicas que ligam os �ngulos de incidencia e refra��o aos �ndices dos meios."
+        "A mudanca de direção e de velocidade da luz quando ela passa de um meio para outro.",
+        "As relacoes matematicas que ligam os ângulos de incidencia e refração aos índices dos meios."
       ],
-      "correta": "O fen�meno em que a luz retorna ao meio de origem e forma imagens virtuais sim�tricas em espelhos planos.",
-      "comentario": "A compara��o correta mostra a especificidade de Reflex�o em espelhos planos.",
+      "correta": "O fenômeno em que a luz retorna ao meio de origem e forma imagens virtuais simétricas em espelhos planos.",
+      "comentario": "A comparação correta mostra a especificidade de Reflexão em espelhos planos.",
       "tempoEstimado": 35,
       "tags": [
         "optica",
@@ -1453,22 +1453,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Reflex�o em espelhos planos",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Reflexão em espelhos planos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma an�lise de sala, considera-se que uma pessoa se observa em um espelho plano e percebe uma imagem a mesma distancia atras do espelho Para interpretar essa situa��o, � mais adequado mobilizar o conceito de:",
+      "enunciado": "Em uma análise de sala, considera-se que uma pessoa se observa em um espelho plano e percebe uma imagem a mesma distancia atras do espelho Para interpretar essa situação, é mais adequado mobilizar o conceito de:",
       "opcoes": [
-        "Reflex�o em espelhos planos",
-        "Espelhos esf�ricos",
+        "Reflexão em espelhos planos",
+        "Espelhos esféricos",
         "Leis de Snell",
-        "Lentes esf�ricas"
+        "Lentes esféricas"
       ],
-      "correta": "Reflex�o em espelhos planos",
-      "comentario": "O caso descrito � interpretado adequadamente por meio de Reflex�o em espelhos planos.",
+      "correta": "Reflexão em espelhos planos",
+      "comentario": "O caso descrito é interpretado adequadamente por meio de Reflexão em espelhos planos.",
       "tempoEstimado": 40,
       "tags": [
         "optica",
@@ -1492,22 +1492,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Reflex�o em espelhos planos",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Reflexão em espelhos planos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situa��o pr�tica depende mais diretamente de Reflex�o em espelhos planos?",
+      "enunciado": "Qual situação prática depende mais diretamente de Reflexão em espelhos planos?",
       "opcoes": [
         "o uso cotidiano de espelhos planos em banheiros, elevadores e retrovisores internos",
         "espelhos de maquiagem, retrovisores externos e refletores",
         "a interpretacao visual de objetos imersos em agua e vidro",
-        "�culos, lupas, c�meras e projetores"
+        "óculos, lupas, câmeras e projetores"
       ],
       "correta": "o uso cotidiano de espelhos planos em banheiros, elevadores e retrovisores internos",
-      "comentario": "Reflex�o em espelhos planos aparece de modo direto no uso cotidiano de espelhos planos em banheiros, elevadores e retrovisores internos.",
+      "comentario": "Reflexão em espelhos planos aparece de modo direto no uso cotidiano de espelhos planos em banheiros, elevadores e retrovisores internos.",
       "tempoEstimado": 40,
       "tags": [
         "optica",
@@ -1531,22 +1531,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Reflex�o em espelhos planos",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Reflexão em espelhos planos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir de uma pessoa se observa em um espelho plano e percebe uma imagem a mesma distancia atras do espelho, qual conclus�o est� mais correta?",
+      "enunciado": "A partir de uma pessoa se observa em um espelho plano e percebe uma imagem a mesma distancia atras do espelho, qual conclusão está mais correta?",
       "opcoes": [
-        "o caso e explicado por Reflex�o em espelhos planos.",
-        "o caso e mais bem entendido por Espelhos esf�ricos.",
-        "a situa��o anula a import�ncia de Refra��o da luz.",
-        "o fen�meno exclui qualquer rela��o com leis de Snell."
+        "o caso e explicado por Reflexão em espelhos planos.",
+        "o caso e mais bem entendido por Espelhos esféricos.",
+        "a situação anula a importância de Refração da luz.",
+        "o fenômeno exclui qualquer relação com leis de Snell."
       ],
-      "correta": "o caso e explicado por Reflex�o em espelhos planos.",
-      "comentario": "A conclus�o adequada retoma a ideia central de Reflex�o em espelhos planos.",
+      "correta": "o caso e explicado por Reflexão em espelhos planos.",
+      "comentario": "A conclusão adequada retoma a ideia central de Reflexão em espelhos planos.",
       "tempoEstimado": 45,
       "tags": [
         "optica",
@@ -1570,22 +1570,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Reflex�o em espelhos planos",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Reflexão em espelhos planos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Se um grupo fosse pesquisar Reflex�o em espelhos planos, qual pergunta orientadora seria a mais adequada?",
+      "enunciado": "Se um grupo fosse pesquisar Reflexão em espelhos planos, qual pergunta orientadora seria a mais adequada?",
       "opcoes": [
-        "Como Reflex�o em espelhos planos aparece no uso cotidiano de espelhos planos em banheiros, elevadores e retrovisores internos?",
-        "Como Espelhos esf�ricos substitui totalmente o uso cotidiano de espelhos planos em banheiros, elevadores e retrovisores internos?",
-        "Por que Refra��o da luz torna desnecess�rio estudar Reflex�o em espelhos planos?",
+        "Como Reflexão em espelhos planos aparece no uso cotidiano de espelhos planos em banheiros, elevadores e retrovisores internos?",
+        "Como Espelhos esféricos substitui totalmente o uso cotidiano de espelhos planos em banheiros, elevadores e retrovisores internos?",
+        "Por que Refração da luz torna desnecessário estudar Reflexão em espelhos planos?",
         "De que modo leis de Snell elimina toda medida fisica envolvida?"
       ],
-      "correta": "Como Reflex�o em espelhos planos aparece no uso cotidiano de espelhos planos em banheiros, elevadores e retrovisores internos?",
-      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Reflex�o em espelhos planos.",
+      "correta": "Como Reflexão em espelhos planos aparece no uso cotidiano de espelhos planos em banheiros, elevadores e retrovisores internos?",
+      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Reflexão em espelhos planos.",
       "tempoEstimado": 45,
       "tags": [
         "optica",
@@ -1609,22 +1609,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Reflex�o em espelhos planos",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Reflexão em espelhos planos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em Reflex�o em espelhos planos e pensar que:",
+      "enunciado": "Um erro comum em Reflexão em espelhos planos e pensar que:",
       "opcoes": [
         "a imagem no espelho plano fica localizada sobre a superficie refletora",
         "todo espelho esferico produz sempre imagens do mesmo tamanho do objeto",
-        "na refra��o, a luz muda de dire��o sem alterar sua velocidade",
+        "na refração, a luz muda de direção sem alterar sua velocidade",
         "as leis de Snell valem apenas quando a luz entra perpendicularmente ao meio"
       ],
       "correta": "a imagem no espelho plano fica localizada sobre a superficie refletora",
-      "comentario": "Esse e um equ�voco frequente porque contraria a defini��o correta de Reflex�o em espelhos planos.",
+      "comentario": "Esse e um equívoco frequente porque contraria a definição correta de Reflexão em espelhos planos.",
       "tempoEstimado": 50,
       "tags": [
         "optica",
@@ -1648,22 +1648,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Reflex�o em espelhos planos",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Reflexão em espelhos planos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"em um espelho plano, a imagem se forma exatamente na superficie do espelho\". A avalia��o mais adequada e:",
+      "enunciado": "Um estudante afirma: \"em um espelho plano, a imagem se forma exatamente na superficie do espelho\". A avaliação mais adequada e:",
       "opcoes": [
-        "A afirma��o est� incorreta, porque o fen�meno em que a luz retorna ao meio de origem e forma imagens virtuais sim�tricas em espelhos planos.",
-        "A afirma��o est� correta, pois resume integralmente Reflex�o em espelhos planos.",
-        "A afirma��o est� correta, porque toda situa��o do tema depende apenas dessa ideia.",
-        "A afirma��o est� incorreta apenas porque n�o apresenta uma unidade de medida."
+        "A afirmação está incorreta, porque o fenômeno em que a luz retorna ao meio de origem e forma imagens virtuais simétricas em espelhos planos.",
+        "A afirmação está correta, pois resume integralmente Reflexão em espelhos planos.",
+        "A afirmação está correta, porque toda situação do tema depende apenas dessa ideia.",
+        "A afirmação está incorreta apenas porque não apresenta uma unidade de medida."
       ],
-      "correta": "A afirma��o est� incorreta, porque o fen�meno em que a luz retorna ao meio de origem e forma imagens virtuais sim�tricas em espelhos planos.",
-      "comentario": "A fala do estudante apresenta um equ�voco conceitual sobre Reflex�o em espelhos planos.",
+      "correta": "A afirmação está incorreta, porque o fenômeno em que a luz retorna ao meio de origem e forma imagens virtuais simétricas em espelhos planos.",
+      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre Reflexão em espelhos planos.",
       "tempoEstimado": 55,
       "tags": [
         "optica",
@@ -1687,22 +1687,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Reflex�o em espelhos planos",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Reflexão em espelhos planos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se Reflex�o em espelhos planos fosse ignorado(a) ao analisar o uso cotidiano de espelhos planos em banheiros, elevadores e retrovisores internos, o resultado mais prov�vel seria:",
+      "enunciado": "Se Reflexão em espelhos planos fosse ignorado(a) ao analisar o uso cotidiano de espelhos planos em banheiros, elevadores e retrovisores internos, o resultado mais provável seria:",
       "opcoes": [
-        "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre o uso cotidiano de espelhos planos em banheiros, elevadores e retrovisores internos.",
-        "a situa��o seria explicada automaticamente por Espelhos esf�ricos, sem necessidade de an�lise.",
-        "nenhuma interpretacao fisica seria alterada, porque Reflex�o em espelhos planos n�o interfere nesse tipo de problema.",
-        "o fen�meno deixaria de existir apenas por n�o ser nomeado."
+        "a análise ficaria incompleta e poderia gerar interpretações erradas sobre o uso cotidiano de espelhos planos em banheiros, elevadores e retrovisores internos.",
+        "a situação seria explicada automaticamente por Espelhos esféricos, sem necessidade de análise.",
+        "nenhuma interpretacao fisica seria alterada, porque Reflexão em espelhos planos não interfere nesse tipo de problema.",
+        "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
-      "correta": "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre o uso cotidiano de espelhos planos em banheiros, elevadores e retrovisores internos.",
-      "comentario": "Ignorar Reflex�o em espelhos planos compromete a leitura fisica da situa��o apresentada.",
+      "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre o uso cotidiano de espelhos planos em banheiros, elevadores e retrovisores internos.",
+      "comentario": "Ignorar Reflexão em espelhos planos compromete a leitura fisica da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "optica",
@@ -1726,22 +1726,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Reflex�o em espelhos planos",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Reflexão em espelhos planos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma aplica��o cotidiana ou escolar, Reflex�o em espelhos planos ajuda principalmente a compreender:",
+      "enunciado": "Em uma aplicação cotidiana ou escolar, Reflexão em espelhos planos ajuda principalmente a compreender:",
       "opcoes": [
         "o uso cotidiano de espelhos planos em banheiros, elevadores e retrovisores internos",
         "espelhos de maquiagem, retrovisores externos e refletores",
         "a interpretacao visual de objetos imersos em agua e vidro",
-        "o c�lculo de �ngulos de refra��o em interfaces opticas"
+        "o cálculo de ângulos de refração em interfaces opticas"
       ],
       "correta": "o uso cotidiano de espelhos planos em banheiros, elevadores e retrovisores internos",
-      "comentario": "A aplica��o escolhida e a que melhor representa Reflex�o em espelhos planos.",
+      "comentario": "A aplicação escolhida e a que melhor representa Reflexão em espelhos planos.",
       "tempoEstimado": 60,
       "tags": [
         "optica",
@@ -1765,22 +1765,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Reflex�o em espelhos planos",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Reflexão em espelhos planos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual resumo sintetiza melhor a ideia central de Reflex�o em espelhos planos?",
+      "enunciado": "Qual resumo sintetiza melhor a ideia central de Reflexão em espelhos planos?",
       "opcoes": [
-        "Em s�ntese, o fen�meno em que a luz retorna ao meio de origem e forma imagens virtuais sim�tricas em espelhos planos.",
-        "Em s�ntese, superficies refletoras curvas que podem convergir ou divergir raios e formar diferentes tipos de imagem.",
-        "Em s�ntese, a mudanca de dire��o e de velocidade da luz quando ela passa de um meio para outro.",
-        "Em s�ntese, as relacoes matematicas que ligam os �ngulos de incidencia e refra��o aos �ndices dos meios."
+        "Em síntese, o fenômeno em que a luz retorna ao meio de origem e forma imagens virtuais simétricas em espelhos planos.",
+        "Em síntese, superficies refletoras curvas que podem convergir ou divergir raios e formar diferentes tipos de imagem.",
+        "Em síntese, a mudanca de direção e de velocidade da luz quando ela passa de um meio para outro.",
+        "Em síntese, as relacoes matematicas que ligam os ângulos de incidencia e refração aos índices dos meios."
       ],
-      "correta": "Em s�ntese, o fen�meno em que a luz retorna ao meio de origem e forma imagens virtuais sim�tricas em espelhos planos.",
-      "comentario": "O resumo correto recupera o n�cleo conceitual de Reflex�o em espelhos planos.",
+      "correta": "Em síntese, o fenômeno em que a luz retorna ao meio de origem e forma imagens virtuais simétricas em espelhos planos.",
+      "comentario": "O resumo correto recupera o núcleo conceitual de Reflexão em espelhos planos.",
       "tempoEstimado": 65,
       "tags": [
         "optica",
@@ -1804,22 +1804,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Espelhos esf�ricos",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Espelhos esféricos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em F�sica, Espelhos esf�ricos pode ser definido(a) como:",
+      "enunciado": "Em Física, Espelhos esféricos pode ser definido(a) como:",
       "opcoes": [
         "superficies refletoras curvas que podem convergir ou divergir raios e formar diferentes tipos de imagem",
-        "a mudanca de dire��o e de velocidade da luz quando ela passa de um meio para outro",
-        "as relacoes matematicas que ligam os �ngulos de incidencia e refra��o aos �ndices dos meios",
+        "a mudanca de direção e de velocidade da luz quando ela passa de um meio para outro",
+        "as relacoes matematicas que ligam os ângulos de incidencia e refração aos índices dos meios",
         "dispositivos transparentes que convergem ou divergem raios luminosos e formam imagens"
       ],
       "correta": "superficies refletoras curvas que podem convergir ou divergir raios e formar diferentes tipos de imagem",
-      "comentario": "Espelhos esf�ricos refere-se a superficies refletoras curvas que podem convergir ou divergir raios e formar diferentes tipos de imagem.",
+      "comentario": "Espelhos esféricos refere-se a superficies refletoras curvas que podem convergir ou divergir raios e formar diferentes tipos de imagem.",
       "tempoEstimado": 25,
       "tags": [
         "optica",
@@ -1843,22 +1843,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Espelhos esf�ricos",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Espelhos esféricos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situa��o: um objeto diante de um espelho concavo pode produzir imagem ampliada ou invertida conforme a posicao Esse caso exemplifica melhor qual subt�pico?",
+      "enunciado": "Observe a situação: um objeto diante de um espelho concavo pode produzir imagem ampliada ou invertida conforme a posicao Esse caso exemplifica melhor qual subtópico?",
       "opcoes": [
-        "Espelhos esf�ricos",
-        "Refracao da luz",
+        "Espelhos esféricos",
+        "Refração da luz",
         "Leis de Snell",
-        "Lentes esf�ricas"
+        "Lentes esféricas"
       ],
-      "correta": "Espelhos esf�ricos",
-      "comentario": "A situa��o apresentada � um exemplo de Espelhos esf�ricos.",
+      "correta": "Espelhos esféricos",
+      "comentario": "A situação apresentada é um exemplo de Espelhos esféricos.",
       "tempoEstimado": 25,
       "tags": [
         "optica",
@@ -1882,22 +1882,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Espelhos esf�ricos",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Espelhos esféricos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirma��o descreve corretamente Espelhos esf�ricos?",
+      "enunciado": "Qual afirmação descreve corretamente Espelhos esféricos?",
       "opcoes": [
         "Superficies refletoras curvas que podem convergir ou divergir raios e formar diferentes tipos de imagem.",
-        "A mudanca de dire��o e de velocidade da luz quando ela passa de um meio para outro.",
-        "As relacoes matematicas que ligam os �ngulos de incidencia e refra��o aos �ndices dos meios.",
+        "A mudanca de direção e de velocidade da luz quando ela passa de um meio para outro.",
+        "As relacoes matematicas que ligam os ângulos de incidencia e refração aos índices dos meios.",
         "Dispositivos transparentes que convergem ou divergem raios luminosos e formam imagens."
       ],
       "correta": "Superficies refletoras curvas que podem convergir ou divergir raios e formar diferentes tipos de imagem.",
-      "comentario": "A alternativa correta resume o conceito de Espelhos esf�ricos.",
+      "comentario": "A alternativa correta resume o conceito de Espelhos esféricos.",
       "tempoEstimado": 30,
       "tags": [
         "optica",
@@ -1921,22 +1921,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Espelhos esf�ricos",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Espelhos esféricos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compat�vel com Espelhos esf�ricos?",
+      "enunciado": "Qual alternativa NAO esta compatível com Espelhos esféricos?",
       "opcoes": [
-        "A mudanca de dire��o e de velocidade da luz quando ela passa de um meio para outro.",
+        "A mudanca de direção e de velocidade da luz quando ela passa de um meio para outro.",
         "Superficies refletoras curvas que podem convergir ou divergir raios e formar diferentes tipos de imagem.",
-        "Interpretar a formacao de imagens em espelhos c�ncavos e convexos.",
+        "Interpretar a formacao de imagens em espelhos côncavos e convexos.",
         "Ajuda a compreender espelhos de maquiagem, retrovisores externos e refletores."
       ],
-      "correta": "A mudanca de dire��o e de velocidade da luz quando ela passa de um meio para outro.",
-      "comentario": "A op��o incompativel descreve outro subt�pico, n�o Espelhos esf�ricos.",
+      "correta": "A mudanca de direção e de velocidade da luz quando ela passa de um meio para outro.",
+      "comentario": "A opção incompativel descreve outro subtópico, não Espelhos esféricos.",
       "tempoEstimado": 30,
       "tags": [
         "optica",
@@ -1960,22 +1960,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Espelhos esf�ricos",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Espelhos esféricos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar Espelhos esf�ricos, o foco principal e:",
+      "enunciado": "Ao estudar Espelhos esféricos, o foco principal e:",
       "opcoes": [
-        "interpretar a formacao de imagens em espelhos c�ncavos e convexos",
-        "analisar a mudanca de trajet�ria da luz em interfaces entre meios distintos",
-        "relacionar �ngulos e �ndices de refra��o em passagens de luz entre meios",
+        "interpretar a formacao de imagens em espelhos côncavos e convexos",
+        "analisar a mudanca de trajetória da luz em interfaces entre meios distintos",
+        "relacionar ângulos e índices de refração em passagens de luz entre meios",
         "analisar como lentes convergentes e divergentes formam imagens e alteram feixes de luz"
       ],
-      "correta": "interpretar a formacao de imagens em espelhos c�ncavos e convexos",
-      "comentario": "Espelhos esf�ricos concentra-se em interpretar a formacao de imagens em espelhos c�ncavos e convexos.",
+      "correta": "interpretar a formacao de imagens em espelhos côncavos e convexos",
+      "comentario": "Espelhos esféricos concentra-se em interpretar a formacao de imagens em espelhos côncavos e convexos.",
       "tempoEstimado": 35,
       "tags": [
         "optica",
@@ -1999,22 +1999,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Espelhos esf�ricos",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Espelhos esféricos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Refracao da luz trata de a mudanca de dire��o e de velocidade da luz quando ela passa de um meio para outro, Espelhos esf�ricos destaca:",
+      "enunciado": "Enquanto Refração da luz trata de a mudanca de direção e de velocidade da luz quando ela passa de um meio para outro, Espelhos esféricos destaca:",
       "opcoes": [
         "Superficies refletoras curvas que podem convergir ou divergir raios e formar diferentes tipos de imagem.",
-        "A mudanca de dire��o e de velocidade da luz quando ela passa de um meio para outro.",
-        "As relacoes matematicas que ligam os �ngulos de incidencia e refra��o aos �ndices dos meios.",
+        "A mudanca de direção e de velocidade da luz quando ela passa de um meio para outro.",
+        "As relacoes matematicas que ligam os ângulos de incidencia e refração aos índices dos meios.",
         "Dispositivos transparentes que convergem ou divergem raios luminosos e formam imagens."
       ],
       "correta": "Superficies refletoras curvas que podem convergir ou divergir raios e formar diferentes tipos de imagem.",
-      "comentario": "A compara��o correta mostra a especificidade de Espelhos esf�ricos.",
+      "comentario": "A comparação correta mostra a especificidade de Espelhos esféricos.",
       "tempoEstimado": 35,
       "tags": [
         "optica",
@@ -2038,22 +2038,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Espelhos esf�ricos",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Espelhos esféricos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma an�lise de sala, considera-se que um objeto diante de um espelho concavo pode produzir imagem ampliada ou invertida conforme a posicao Para interpretar essa situa��o, � mais adequado mobilizar o conceito de:",
+      "enunciado": "Em uma análise de sala, considera-se que um objeto diante de um espelho concavo pode produzir imagem ampliada ou invertida conforme a posicao Para interpretar essa situação, é mais adequado mobilizar o conceito de:",
       "opcoes": [
-        "Espelhos esf�ricos",
-        "Refracao da luz",
-        "Lentes esf�ricas",
-        "Instrumentos �pticos"
+        "Espelhos esféricos",
+        "Refração da luz",
+        "Lentes esféricas",
+        "Instrumentos ópticos"
       ],
-      "correta": "Espelhos esf�ricos",
-      "comentario": "O caso descrito � interpretado adequadamente por meio de Espelhos esf�ricos.",
+      "correta": "Espelhos esféricos",
+      "comentario": "O caso descrito é interpretado adequadamente por meio de Espelhos esféricos.",
       "tempoEstimado": 40,
       "tags": [
         "optica",
@@ -2077,22 +2077,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Espelhos esf�ricos",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Espelhos esféricos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situa��o pr�tica depende mais diretamente de Espelhos esf�ricos?",
+      "enunciado": "Qual situação prática depende mais diretamente de Espelhos esféricos?",
       "opcoes": [
         "espelhos de maquiagem, retrovisores externos e refletores",
         "a interpretacao visual de objetos imersos em agua e vidro",
-        "o c�lculo de �ngulos de refra��o em interfaces opticas",
-        "o uso de microsc�pios, telesc�pios, lunetas e c�meras fotogr�ficas"
+        "o cálculo de ângulos de refração em interfaces opticas",
+        "o uso de microscópios, telescópios, lunetas e câmeras fotográficas"
       ],
       "correta": "espelhos de maquiagem, retrovisores externos e refletores",
-      "comentario": "Espelhos esf�ricos aparece de modo direto em espelhos de maquiagem, retrovisores externos e refletores.",
+      "comentario": "Espelhos esféricos aparece de modo direto em espelhos de maquiagem, retrovisores externos e refletores.",
       "tempoEstimado": 40,
       "tags": [
         "optica",
@@ -2116,22 +2116,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Espelhos esf�ricos",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Espelhos esféricos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir de um objeto diante de um espelho concavo pode produzir imagem ampliada ou invertida conforme a posicao, qual conclus�o est� mais correta?",
+      "enunciado": "A partir de um objeto diante de um espelho concavo pode produzir imagem ampliada ou invertida conforme a posicao, qual conclusão está mais correta?",
       "opcoes": [
-        "o caso e explicado por Espelhos esf�ricos.",
-        "o caso e mais bem entendido por Refra��o da luz.",
-        "a situa��o anula a import�ncia de leis de Snell.",
-        "o fen�meno exclui qualquer rela��o com Lentes esf�ricas."
+        "o caso e explicado por Espelhos esféricos.",
+        "o caso e mais bem entendido por Refração da luz.",
+        "a situação anula a importância de leis de Snell.",
+        "o fenômeno exclui qualquer relação com Lentes esféricas."
       ],
-      "correta": "o caso e explicado por Espelhos esf�ricos.",
-      "comentario": "A conclus�o adequada retoma a ideia central de Espelhos esf�ricos.",
+      "correta": "o caso e explicado por Espelhos esféricos.",
+      "comentario": "A conclusão adequada retoma a ideia central de Espelhos esféricos.",
       "tempoEstimado": 45,
       "tags": [
         "optica",
@@ -2155,22 +2155,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Espelhos esf�ricos",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Espelhos esféricos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Se um grupo fosse pesquisar Espelhos esf�ricos, qual pergunta orientadora seria a mais adequada?",
+      "enunciado": "Se um grupo fosse pesquisar Espelhos esféricos, qual pergunta orientadora seria a mais adequada?",
       "opcoes": [
-        "Como Espelhos esf�ricos aparece em espelhos de maquiagem, retrovisores externos e refletores?",
-        "Como Refra��o da luz substitui totalmente espelhos de maquiagem, retrovisores externos e refletores?",
-        "Por que leis de Snell torna desnecess�rio estudar Espelhos esf�ricos?",
-        "De que modo Lentes esf�ricas elimina toda medida fisica envolvida?"
+        "Como Espelhos esféricos aparece em espelhos de maquiagem, retrovisores externos e refletores?",
+        "Como Refração da luz substitui totalmente espelhos de maquiagem, retrovisores externos e refletores?",
+        "Por que leis de Snell torna desnecessário estudar Espelhos esféricos?",
+        "De que modo Lentes esféricas elimina toda medida fisica envolvida?"
       ],
-      "correta": "Como Espelhos esf�ricos aparece em espelhos de maquiagem, retrovisores externos e refletores?",
-      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Espelhos esf�ricos.",
+      "correta": "Como Espelhos esféricos aparece em espelhos de maquiagem, retrovisores externos e refletores?",
+      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Espelhos esféricos.",
       "tempoEstimado": 45,
       "tags": [
         "optica",
@@ -2194,22 +2194,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Espelhos esf�ricos",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Espelhos esféricos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em Espelhos esf�ricos e pensar que:",
+      "enunciado": "Um erro comum em Espelhos esféricos e pensar que:",
       "opcoes": [
         "todo espelho esferico produz sempre imagens do mesmo tamanho do objeto",
-        "na refra��o, a luz muda de dire��o sem alterar sua velocidade",
+        "na refração, a luz muda de direção sem alterar sua velocidade",
         "as leis de Snell valem apenas quando a luz entra perpendicularmente ao meio",
         "toda lente produz apenas imagens virtuais e nunca imagens reais"
       ],
       "correta": "todo espelho esferico produz sempre imagens do mesmo tamanho do objeto",
-      "comentario": "Esse e um equ�voco frequente porque contraria a defini��o correta de Espelhos esf�ricos.",
+      "comentario": "Esse e um equívoco frequente porque contraria a definição correta de Espelhos esféricos.",
       "tempoEstimado": 50,
       "tags": [
         "optica",
@@ -2233,22 +2233,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Espelhos esf�ricos",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Espelhos esféricos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"espelhos c�ncavos e convexos formam sempre imagens iguais ao objeto\". A avalia��o mais adequada e:",
+      "enunciado": "Um estudante afirma: \"espelhos côncavos e convexos formam sempre imagens iguais ao objeto\". A avaliação mais adequada e:",
       "opcoes": [
-        "A afirma��o est� incorreta, porque superficies refletoras curvas que podem convergir ou divergir raios e formar diferentes tipos de imagem.",
-        "A afirma��o est� correta, pois resume integralmente Espelhos esf�ricos.",
-        "A afirma��o est� correta, porque toda situa��o do tema depende apenas dessa ideia.",
-        "A afirma��o est� incorreta apenas porque n�o apresenta uma unidade de medida."
+        "A afirmação está incorreta, porque superficies refletoras curvas que podem convergir ou divergir raios e formar diferentes tipos de imagem.",
+        "A afirmação está correta, pois resume integralmente Espelhos esféricos.",
+        "A afirmação está correta, porque toda situação do tema depende apenas dessa ideia.",
+        "A afirmação está incorreta apenas porque não apresenta uma unidade de medida."
       ],
-      "correta": "A afirma��o est� incorreta, porque superficies refletoras curvas que podem convergir ou divergir raios e formar diferentes tipos de imagem.",
-      "comentario": "A fala do estudante apresenta um equ�voco conceitual sobre Espelhos esf�ricos.",
+      "correta": "A afirmação está incorreta, porque superficies refletoras curvas que podem convergir ou divergir raios e formar diferentes tipos de imagem.",
+      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre Espelhos esféricos.",
       "tempoEstimado": 55,
       "tags": [
         "optica",
@@ -2272,22 +2272,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Espelhos esf�ricos",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Espelhos esféricos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se Espelhos esf�ricos fosse ignorado(a) ao analisar espelhos de maquiagem, retrovisores externos e refletores, o resultado mais prov�vel seria:",
+      "enunciado": "Se Espelhos esféricos fosse ignorado(a) ao analisar espelhos de maquiagem, retrovisores externos e refletores, o resultado mais provável seria:",
       "opcoes": [
-        "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre espelhos de maquiagem, retrovisores externos e refletores.",
-        "a situa��o seria explicada automaticamente por Refra��o da luz, sem necessidade de an�lise.",
-        "nenhuma interpretacao fisica seria alterada, porque Espelhos esf�ricos n�o interfere nesse tipo de problema.",
-        "o fen�meno deixaria de existir apenas por n�o ser nomeado."
+        "a análise ficaria incompleta e poderia gerar interpretações erradas sobre espelhos de maquiagem, retrovisores externos e refletores.",
+        "a situação seria explicada automaticamente por Refração da luz, sem necessidade de análise.",
+        "nenhuma interpretacao fisica seria alterada, porque Espelhos esféricos não interfere nesse tipo de problema.",
+        "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
-      "correta": "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre espelhos de maquiagem, retrovisores externos e refletores.",
-      "comentario": "Ignorar Espelhos esf�ricos compromete a leitura fisica da situa��o apresentada.",
+      "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre espelhos de maquiagem, retrovisores externos e refletores.",
+      "comentario": "Ignorar Espelhos esféricos compromete a leitura fisica da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "optica",
@@ -2311,22 +2311,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Espelhos esf�ricos",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Espelhos esféricos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma aplica��o cotidiana ou escolar, Espelhos esf�ricos ajuda principalmente a compreender:",
+      "enunciado": "Em uma aplicação cotidiana ou escolar, Espelhos esféricos ajuda principalmente a compreender:",
       "opcoes": [
         "espelhos de maquiagem, retrovisores externos e refletores",
         "a interpretacao visual de objetos imersos em agua e vidro",
-        "o c�lculo de �ngulos de refra��o em interfaces opticas",
-        "�culos, lupas, c�meras e projetores"
+        "o cálculo de ângulos de refração em interfaces opticas",
+        "óculos, lupas, câmeras e projetores"
       ],
       "correta": "espelhos de maquiagem, retrovisores externos e refletores",
-      "comentario": "A aplica��o escolhida e a que melhor representa Espelhos esf�ricos.",
+      "comentario": "A aplicação escolhida e a que melhor representa Espelhos esféricos.",
       "tempoEstimado": 60,
       "tags": [
         "optica",
@@ -2350,22 +2350,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Espelhos esf�ricos",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Espelhos esféricos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual resumo sintetiza melhor a ideia central de Espelhos esf�ricos?",
+      "enunciado": "Qual resumo sintetiza melhor a ideia central de Espelhos esféricos?",
       "opcoes": [
-        "Em s�ntese, superficies refletoras curvas que podem convergir ou divergir raios e formar diferentes tipos de imagem.",
-        "Em s�ntese, a mudanca de dire��o e de velocidade da luz quando ela passa de um meio para outro.",
-        "Em s�ntese, as relacoes matematicas que ligam os �ngulos de incidencia e refra��o aos �ndices dos meios.",
-        "Em s�ntese, dispositivos transparentes que convergem ou divergem raios luminosos e formam imagens."
+        "Em síntese, superficies refletoras curvas que podem convergir ou divergir raios e formar diferentes tipos de imagem.",
+        "Em síntese, a mudanca de direção e de velocidade da luz quando ela passa de um meio para outro.",
+        "Em síntese, as relacoes matematicas que ligam os ângulos de incidencia e refração aos índices dos meios.",
+        "Em síntese, dispositivos transparentes que convergem ou divergem raios luminosos e formam imagens."
       ],
-      "correta": "Em s�ntese, superficies refletoras curvas que podem convergir ou divergir raios e formar diferentes tipos de imagem.",
-      "comentario": "O resumo correto recupera o n�cleo conceitual de Espelhos esf�ricos.",
+      "correta": "Em síntese, superficies refletoras curvas que podem convergir ou divergir raios e formar diferentes tipos de imagem.",
+      "comentario": "O resumo correto recupera o núcleo conceitual de Espelhos esféricos.",
       "tempoEstimado": 65,
       "tags": [
         "optica",
@@ -2389,22 +2389,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Refracao da luz",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Refração da luz",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em F�sica, Refracao da luz pode ser definido(a) como:",
+      "enunciado": "Em Física, Refração da luz pode ser definido(a) como:",
       "opcoes": [
-        "a mudanca de dire��o e de velocidade da luz quando ela passa de um meio para outro",
-        "as relacoes matematicas que ligam os �ngulos de incidencia e refra��o aos �ndices dos meios",
+        "a mudanca de direção e de velocidade da luz quando ela passa de um meio para outro",
+        "as relacoes matematicas que ligam os ângulos de incidencia e refração aos índices dos meios",
         "dispositivos transparentes que convergem ou divergem raios luminosos e formam imagens",
         "aparelhos que utilizam lentes, espelhos ou ambos para ampliar, corrigir ou registrar imagens"
       ],
-      "correta": "a mudanca de dire��o e de velocidade da luz quando ela passa de um meio para outro",
-      "comentario": "Refracao da luz refere-se � mudanca de dire��o e de velocidade da luz quando ela passa de um meio para outro.",
+      "correta": "a mudanca de direção e de velocidade da luz quando ela passa de um meio para outro",
+      "comentario": "Refração da luz refere-se à mudanca de direção e de velocidade da luz quando ela passa de um meio para outro.",
       "tempoEstimado": 25,
       "tags": [
         "optica",
@@ -2428,22 +2428,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Refracao da luz",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Refração da luz",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situa��o: um canudo parcialmente mergulhado em agua parece quebrado ao ser observado de lado Esse caso exemplifica melhor qual subt�pico?",
+      "enunciado": "Observe a situação: um canudo parcialmente mergulhado em agua parece quebrado ao ser observado de lado Esse caso exemplifica melhor qual subtópico?",
       "opcoes": [
-        "Refracao da luz",
+        "Refração da luz",
         "Leis de Snell",
-        "Lentes esf�ricas",
-        "Instrumentos �pticos"
+        "Lentes esféricas",
+        "Instrumentos ópticos"
       ],
-      "correta": "Refracao da luz",
-      "comentario": "A situa��o apresentada � um exemplo de Refra��o da luz.",
+      "correta": "Refração da luz",
+      "comentario": "A situação apresentada é um exemplo de Refração da luz.",
       "tempoEstimado": 25,
       "tags": [
         "optica",
@@ -2467,22 +2467,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Refracao da luz",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Refração da luz",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirma��o descreve corretamente Refra��o da luz?",
+      "enunciado": "Qual afirmação descreve corretamente Refração da luz?",
       "opcoes": [
-        "A mudanca de dire��o e de velocidade da luz quando ela passa de um meio para outro.",
-        "As relacoes matematicas que ligam os �ngulos de incidencia e refra��o aos �ndices dos meios.",
+        "A mudanca de direção e de velocidade da luz quando ela passa de um meio para outro.",
+        "As relacoes matematicas que ligam os ângulos de incidencia e refração aos índices dos meios.",
         "Dispositivos transparentes que convergem ou divergem raios luminosos e formam imagens.",
         "Aparelhos que utilizam lentes, espelhos ou ambos para ampliar, corrigir ou registrar imagens."
       ],
-      "correta": "A mudanca de dire��o e de velocidade da luz quando ela passa de um meio para outro.",
-      "comentario": "A alternativa correta resume o conceito de Refra��o da luz.",
+      "correta": "A mudanca de direção e de velocidade da luz quando ela passa de um meio para outro.",
+      "comentario": "A alternativa correta resume o conceito de Refração da luz.",
       "tempoEstimado": 30,
       "tags": [
         "optica",
@@ -2506,22 +2506,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Refracao da luz",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Refração da luz",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compat�vel com Refra��o da luz?",
+      "enunciado": "Qual alternativa NAO esta compatível com Refração da luz?",
       "opcoes": [
-        "As relacoes matematicas que ligam os �ngulos de incidencia e refra��o aos �ndices dos meios.",
-        "A mudanca de dire��o e de velocidade da luz quando ela passa de um meio para outro.",
-        "Analisar a mudanca de trajet�ria da luz em interfaces entre meios distintos.",
+        "As relacoes matematicas que ligam os ângulos de incidencia e refração aos índices dos meios.",
+        "A mudanca de direção e de velocidade da luz quando ela passa de um meio para outro.",
+        "Analisar a mudanca de trajetória da luz em interfaces entre meios distintos.",
         "Ajuda a compreender a interpretacao visual de objetos imersos em agua e vidro."
       ],
-      "correta": "As relacoes matematicas que ligam os �ngulos de incidencia e refra��o aos �ndices dos meios.",
-      "comentario": "A op��o incompativel descreve outro subt�pico, n�o Refra��o da luz.",
+      "correta": "As relacoes matematicas que ligam os ângulos de incidencia e refração aos índices dos meios.",
+      "comentario": "A opção incompativel descreve outro subtópico, não Refração da luz.",
       "tempoEstimado": 30,
       "tags": [
         "optica",
@@ -2545,22 +2545,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Refracao da luz",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Refração da luz",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar Refra��o da luz, o foco principal e:",
+      "enunciado": "Ao estudar Refração da luz, o foco principal e:",
       "opcoes": [
-        "analisar a mudanca de trajet�ria da luz em interfaces entre meios distintos",
-        "relacionar �ngulos e �ndices de refra��o em passagens de luz entre meios",
+        "analisar a mudanca de trajetória da luz em interfaces entre meios distintos",
+        "relacionar ângulos e índices de refração em passagens de luz entre meios",
         "analisar como lentes convergentes e divergentes formam imagens e alteram feixes de luz",
-        "compreender o funcionamento basico de instrumentos que manipulam trajet�rias luminosas"
+        "compreender o funcionamento basico de instrumentos que manipulam trajetórias luminosas"
       ],
-      "correta": "analisar a mudanca de trajet�ria da luz em interfaces entre meios distintos",
-      "comentario": "Refracao da luz concentra-se em analisar a mudanca de trajet�ria da luz em interfaces entre meios distintos.",
+      "correta": "analisar a mudanca de trajetória da luz em interfaces entre meios distintos",
+      "comentario": "Refração da luz concentra-se em analisar a mudanca de trajetória da luz em interfaces entre meios distintos.",
       "tempoEstimado": 35,
       "tags": [
         "optica",
@@ -2584,22 +2584,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Refracao da luz",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Refração da luz",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Leis de Snell trata de as relacoes matematicas que ligam os �ngulos de incidencia e refra��o aos �ndices dos meios, Refracao da luz destaca:",
+      "enunciado": "Enquanto Leis de Snell trata de as relacoes matematicas que ligam os ângulos de incidencia e refração aos índices dos meios, Refração da luz destaca:",
       "opcoes": [
-        "A mudanca de dire��o e de velocidade da luz quando ela passa de um meio para outro.",
-        "As relacoes matematicas que ligam os �ngulos de incidencia e refra��o aos �ndices dos meios.",
+        "A mudanca de direção e de velocidade da luz quando ela passa de um meio para outro.",
+        "As relacoes matematicas que ligam os ângulos de incidencia e refração aos índices dos meios.",
         "Dispositivos transparentes que convergem ou divergem raios luminosos e formam imagens.",
         "Aparelhos que utilizam lentes, espelhos ou ambos para ampliar, corrigir ou registrar imagens."
       ],
-      "correta": "A mudanca de dire��o e de velocidade da luz quando ela passa de um meio para outro.",
-      "comentario": "A compara��o correta mostra a especificidade de Refra��o da luz.",
+      "correta": "A mudanca de direção e de velocidade da luz quando ela passa de um meio para outro.",
+      "comentario": "A comparação correta mostra a especificidade de Refração da luz.",
       "tempoEstimado": 35,
       "tags": [
         "optica",
@@ -2623,22 +2623,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Refracao da luz",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Refração da luz",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma an�lise de sala, considera-se que um canudo parcialmente mergulhado em agua parece quebrado ao ser observado de lado Para interpretar essa situa��o, � mais adequado mobilizar o conceito de:",
+      "enunciado": "Em uma análise de sala, considera-se que um canudo parcialmente mergulhado em agua parece quebrado ao ser observado de lado Para interpretar essa situação, é mais adequado mobilizar o conceito de:",
       "opcoes": [
-        "Refracao da luz",
+        "Refração da luz",
         "Leis de Snell",
-        "Instrumentos �pticos",
-        "Dispersao e prismas"
+        "Instrumentos ópticos",
+        "Dispersão e prismas"
       ],
-      "correta": "Refracao da luz",
-      "comentario": "O caso descrito � interpretado adequadamente por meio de Refra��o da luz.",
+      "correta": "Refração da luz",
+      "comentario": "O caso descrito é interpretado adequadamente por meio de Refração da luz.",
       "tempoEstimado": 40,
       "tags": [
         "optica",
@@ -2662,22 +2662,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Refracao da luz",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Refração da luz",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situa��o pr�tica depende mais diretamente de Refracao da luz?",
+      "enunciado": "Qual situação prática depende mais diretamente de Refração da luz?",
       "opcoes": [
         "a interpretacao visual de objetos imersos em agua e vidro",
-        "o c�lculo de �ngulos de refra��o em interfaces opticas",
-        "�culos, lupas, c�meras e projetores",
+        "o cálculo de ângulos de refração em interfaces opticas",
+        "óculos, lupas, câmeras e projetores",
         "a formacao de espectros luminosos e o estudo das cores"
       ],
       "correta": "a interpretacao visual de objetos imersos em agua e vidro",
-      "comentario": "Refracao da luz aparece de modo direto na interpretacao visual de objetos imersos em agua e vidro.",
+      "comentario": "Refração da luz aparece de modo direto na interpretacao visual de objetos imersos em agua e vidro.",
       "tempoEstimado": 40,
       "tags": [
         "optica",
@@ -2701,22 +2701,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Refracao da luz",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Refração da luz",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir de um canudo parcialmente mergulhado em agua parece quebrado ao ser observado de lado, qual conclus�o est� mais correta?",
+      "enunciado": "A partir de um canudo parcialmente mergulhado em agua parece quebrado ao ser observado de lado, qual conclusão está mais correta?",
       "opcoes": [
-        "o caso e explicado por Refra��o da luz.",
+        "o caso e explicado por Refração da luz.",
         "o caso e mais bem entendido por leis de Snell.",
-        "a situa��o anula a import�ncia de Lentes esf�ricas.",
-        "o fen�meno exclui qualquer rela��o com Instrumentos �pticos."
+        "a situação anula a importância de Lentes esféricas.",
+        "o fenômeno exclui qualquer relação com Instrumentos ópticos."
       ],
-      "correta": "o caso e explicado por Refra��o da luz.",
-      "comentario": "A conclus�o adequada retoma a ideia central de Refra��o da luz.",
+      "correta": "o caso e explicado por Refração da luz.",
+      "comentario": "A conclusão adequada retoma a ideia central de Refração da luz.",
       "tempoEstimado": 45,
       "tags": [
         "optica",
@@ -2740,22 +2740,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Refracao da luz",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Refração da luz",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Se um grupo fosse pesquisar Refra��o da luz, qual pergunta orientadora seria a mais adequada?",
+      "enunciado": "Se um grupo fosse pesquisar Refração da luz, qual pergunta orientadora seria a mais adequada?",
       "opcoes": [
-        "Como Refra��o da luz aparece na interpretacao visual de objetos imersos em agua e vidro?",
+        "Como Refração da luz aparece na interpretacao visual de objetos imersos em agua e vidro?",
         "Como leis de Snell substitui totalmente a interpretacao visual de objetos imersos em agua e vidro?",
-        "Por que Lentes esf�ricas torna desnecess�rio estudar Refracao da luz?",
-        "De que modo Instrumentos �pticos elimina toda medida fisica envolvida?"
+        "Por que Lentes esféricas torna desnecessário estudar Refração da luz?",
+        "De que modo Instrumentos ópticos elimina toda medida fisica envolvida?"
       ],
-      "correta": "Como Refra��o da luz aparece na interpretacao visual de objetos imersos em agua e vidro?",
-      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Refra��o da luz.",
+      "correta": "Como Refração da luz aparece na interpretacao visual de objetos imersos em agua e vidro?",
+      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Refração da luz.",
       "tempoEstimado": 45,
       "tags": [
         "optica",
@@ -2779,22 +2779,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Refracao da luz",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Refração da luz",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em Refra��o da luz e pensar que:",
+      "enunciado": "Um erro comum em Refração da luz e pensar que:",
       "opcoes": [
-        "na refra��o, a luz muda de dire��o sem alterar sua velocidade",
+        "na refração, a luz muda de direção sem alterar sua velocidade",
         "as leis de Snell valem apenas quando a luz entra perpendicularmente ao meio",
         "toda lente produz apenas imagens virtuais e nunca imagens reais",
-        "Instrumentos �pticos funcionam sem depender de qualquer desvio ou controle da luz"
+        "Instrumentos ópticos funcionam sem depender de qualquer desvio ou controle da luz"
       ],
-      "correta": "na refra��o, a luz muda de dire��o sem alterar sua velocidade",
-      "comentario": "Esse e um equ�voco frequente porque contraria a defini��o correta de Refra��o da luz.",
+      "correta": "na refração, a luz muda de direção sem alterar sua velocidade",
+      "comentario": "Esse e um equívoco frequente porque contraria a definição correta de Refração da luz.",
       "tempoEstimado": 50,
       "tags": [
         "optica",
@@ -2818,22 +2818,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Refracao da luz",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Refração da luz",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"a refra��o so altera o caminho do raio luminoso, nunca sua velocidade\". A avalia��o mais adequada e:",
+      "enunciado": "Um estudante afirma: \"a refração so altera o caminho do raio luminoso, nunca sua velocidade\". A avaliação mais adequada e:",
       "opcoes": [
-        "A afirma��o est� incorreta, porque a mudanca de dire��o e de velocidade da luz quando ela passa de um meio para outro.",
-        "A afirma��o est� correta, pois resume integralmente Refra��o da luz.",
-        "A afirma��o est� correta, porque toda situa��o do tema depende apenas dessa ideia.",
-        "A afirma��o est� incorreta apenas porque n�o apresenta uma unidade de medida."
+        "A afirmação está incorreta, porque a mudanca de direção e de velocidade da luz quando ela passa de um meio para outro.",
+        "A afirmação está correta, pois resume integralmente Refração da luz.",
+        "A afirmação está correta, porque toda situação do tema depende apenas dessa ideia.",
+        "A afirmação está incorreta apenas porque não apresenta uma unidade de medida."
       ],
-      "correta": "A afirma��o est� incorreta, porque a mudanca de dire��o e de velocidade da luz quando ela passa de um meio para outro.",
-      "comentario": "A fala do estudante apresenta um equ�voco conceitual sobre Refra��o da luz.",
+      "correta": "A afirmação está incorreta, porque a mudanca de direção e de velocidade da luz quando ela passa de um meio para outro.",
+      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre Refração da luz.",
       "tempoEstimado": 55,
       "tags": [
         "optica",
@@ -2857,22 +2857,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Refracao da luz",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Refração da luz",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se Refra��o da luz fosse ignorado(a) ao analisar a interpretacao visual de objetos imersos em agua e vidro, o resultado mais prov�vel seria:",
+      "enunciado": "Se Refração da luz fosse ignorado(a) ao analisar a interpretacao visual de objetos imersos em agua e vidro, o resultado mais provável seria:",
       "opcoes": [
-        "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre a interpretacao visual de objetos imersos em agua e vidro.",
-        "a situa��o seria explicada automaticamente por leis de Snell, sem necessidade de an�lise.",
-        "nenhuma interpretacao fisica seria alterada, porque Refracao da luz n�o interfere nesse tipo de problema.",
-        "o fen�meno deixaria de existir apenas por n�o ser nomeado."
+        "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a interpretacao visual de objetos imersos em agua e vidro.",
+        "a situação seria explicada automaticamente por leis de Snell, sem necessidade de análise.",
+        "nenhuma interpretacao fisica seria alterada, porque Refração da luz não interfere nesse tipo de problema.",
+        "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
-      "correta": "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre a interpretacao visual de objetos imersos em agua e vidro.",
-      "comentario": "Ignorar Refra��o da luz compromete a leitura fisica da situa��o apresentada.",
+      "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a interpretacao visual de objetos imersos em agua e vidro.",
+      "comentario": "Ignorar Refração da luz compromete a leitura fisica da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "optica",
@@ -2896,22 +2896,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Refracao da luz",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Refração da luz",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma aplica��o cotidiana ou escolar, Refracao da luz ajuda principalmente a compreender:",
+      "enunciado": "Em uma aplicação cotidiana ou escolar, Refração da luz ajuda principalmente a compreender:",
       "opcoes": [
         "a interpretacao visual de objetos imersos em agua e vidro",
-        "o c�lculo de �ngulos de refra��o em interfaces opticas",
-        "�culos, lupas, c�meras e projetores",
-        "o uso de microsc�pios, telesc�pios, lunetas e c�meras fotogr�ficas"
+        "o cálculo de ângulos de refração em interfaces opticas",
+        "óculos, lupas, câmeras e projetores",
+        "o uso de microscópios, telescópios, lunetas e câmeras fotográficas"
       ],
       "correta": "a interpretacao visual de objetos imersos em agua e vidro",
-      "comentario": "A aplica��o escolhida e a que melhor representa Refra��o da luz.",
+      "comentario": "A aplicação escolhida e a que melhor representa Refração da luz.",
       "tempoEstimado": 60,
       "tags": [
         "optica",
@@ -2935,22 +2935,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Refracao da luz",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Refração da luz",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual resumo sintetiza melhor a ideia central de Refracao da luz?",
+      "enunciado": "Qual resumo sintetiza melhor a ideia central de Refração da luz?",
       "opcoes": [
-        "Em s�ntese, a mudanca de dire��o e de velocidade da luz quando ela passa de um meio para outro.",
-        "Em s�ntese, as relacoes matematicas que ligam os �ngulos de incidencia e refra��o aos �ndices dos meios.",
-        "Em s�ntese, dispositivos transparentes que convergem ou divergem raios luminosos e formam imagens.",
-        "Em s�ntese, aparelhos que utilizam lentes, espelhos ou ambos para ampliar, corrigir ou registrar imagens."
+        "Em síntese, a mudanca de direção e de velocidade da luz quando ela passa de um meio para outro.",
+        "Em síntese, as relacoes matematicas que ligam os ângulos de incidencia e refração aos índices dos meios.",
+        "Em síntese, dispositivos transparentes que convergem ou divergem raios luminosos e formam imagens.",
+        "Em síntese, aparelhos que utilizam lentes, espelhos ou ambos para ampliar, corrigir ou registrar imagens."
       ],
-      "correta": "Em s�ntese, a mudanca de dire��o e de velocidade da luz quando ela passa de um meio para outro.",
-      "comentario": "O resumo correto recupera o n�cleo conceitual de Refra��o da luz.",
+      "correta": "Em síntese, a mudanca de direção e de velocidade da luz quando ela passa de um meio para outro.",
+      "comentario": "O resumo correto recupera o núcleo conceitual de Refração da luz.",
       "tempoEstimado": 65,
       "tags": [
         "optica",
@@ -2974,22 +2974,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
+      "materia": "Física",
+      "topico": "Óptica",
       "subtopico": "Leis de Snell",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em F�sica, Leis de Snell pode ser definido(a) como:",
+      "enunciado": "Em Física, Leis de Snell pode ser definido(a) como:",
       "opcoes": [
-        "as relacoes matematicas que ligam os �ngulos de incidencia e refra��o aos �ndices dos meios",
+        "as relacoes matematicas que ligam os ângulos de incidencia e refração aos índices dos meios",
         "dispositivos transparentes que convergem ou divergem raios luminosos e formam imagens",
         "aparelhos que utilizam lentes, espelhos ou ambos para ampliar, corrigir ou registrar imagens",
-        "a separacao da luz em diferentes cores causada pela varia��o da refra��o com o comprimento de onda"
+        "a separacao da luz em diferentes cores causada pela variação da refração com o comprimento de onda"
       ],
-      "correta": "as relacoes matematicas que ligam os �ngulos de incidencia e refra��o aos �ndices dos meios",
-      "comentario": "Leis de Snell refere-se �s relacoes matematicas que ligam os �ngulos de incidencia e refra��o aos �ndices dos meios.",
+      "correta": "as relacoes matematicas que ligam os ângulos de incidencia e refração aos índices dos meios",
+      "comentario": "Leis de Snell refere-se às relacoes matematicas que ligam os ângulos de incidencia e refração aos índices dos meios.",
       "tempoEstimado": 25,
       "tags": [
         "optica",
@@ -3013,22 +3013,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
+      "materia": "Física",
+      "topico": "Óptica",
       "subtopico": "Leis de Snell",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situa��o: um raio incide sobre a superficie entre ar e vidro e os �ngulos sao medidos para compara��o Esse caso exemplifica melhor qual subt�pico?",
+      "enunciado": "Observe a situação: um raio incide sobre a superficie entre ar e vidro e os ângulos sao medidos para comparação Esse caso exemplifica melhor qual subtópico?",
       "opcoes": [
         "Leis de Snell",
-        "Lentes esf�ricas",
-        "Instrumentos �pticos",
-        "Dispersao e prismas"
+        "Lentes esféricas",
+        "Instrumentos ópticos",
+        "Dispersão e prismas"
       ],
       "correta": "Leis de Snell",
-      "comentario": "A situa��o apresentada � um exemplo de leis de Snell.",
+      "comentario": "A situação apresentada é um exemplo de leis de Snell.",
       "tempoEstimado": 25,
       "tags": [
         "optica",
@@ -3052,21 +3052,21 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
+      "materia": "Física",
+      "topico": "Óptica",
       "subtopico": "Leis de Snell",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirma��o descreve corretamente leis de Snell?",
+      "enunciado": "Qual afirmação descreve corretamente leis de Snell?",
       "opcoes": [
-        "As relacoes matematicas que ligam os �ngulos de incidencia e refra��o aos �ndices dos meios.",
+        "As relacoes matematicas que ligam os ângulos de incidencia e refração aos índices dos meios.",
         "Dispositivos transparentes que convergem ou divergem raios luminosos e formam imagens.",
         "Aparelhos que utilizam lentes, espelhos ou ambos para ampliar, corrigir ou registrar imagens.",
-        "A separacao da luz em diferentes cores causada pela varia��o da refra��o com o comprimento de onda."
+        "A separacao da luz em diferentes cores causada pela variação da refração com o comprimento de onda."
       ],
-      "correta": "As relacoes matematicas que ligam os �ngulos de incidencia e refra��o aos �ndices dos meios.",
+      "correta": "As relacoes matematicas que ligam os ângulos de incidencia e refração aos índices dos meios.",
       "comentario": "A alternativa correta resume o conceito de leis de Snell.",
       "tempoEstimado": 30,
       "tags": [
@@ -3091,22 +3091,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
+      "materia": "Física",
+      "topico": "Óptica",
       "subtopico": "Leis de Snell",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compat�vel com leis de Snell?",
+      "enunciado": "Qual alternativa NAO esta compatível com leis de Snell?",
       "opcoes": [
         "Dispositivos transparentes que convergem ou divergem raios luminosos e formam imagens.",
-        "As relacoes matematicas que ligam os �ngulos de incidencia e refra��o aos �ndices dos meios.",
-        "Relacionar �ngulos e �ndices de refra��o em passagens de luz entre meios.",
-        "Ajuda a compreender o c�lculo de �ngulos de refra��o em interfaces opticas."
+        "As relacoes matematicas que ligam os ângulos de incidencia e refração aos índices dos meios.",
+        "Relacionar ângulos e índices de refração em passagens de luz entre meios.",
+        "Ajuda a compreender o cálculo de ângulos de refração em interfaces opticas."
       ],
       "correta": "Dispositivos transparentes que convergem ou divergem raios luminosos e formam imagens.",
-      "comentario": "A op��o incompativel descreve outro subt�pico, n�o leis de Snell.",
+      "comentario": "A opção incompativel descreve outro subtópico, não leis de Snell.",
       "tempoEstimado": 30,
       "tags": [
         "optica",
@@ -3130,8 +3130,8 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
+      "materia": "Física",
+      "topico": "Óptica",
       "subtopico": "Leis de Snell",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
@@ -3139,13 +3139,13 @@
       "tipo": "multipla_escolha",
       "enunciado": "Ao estudar leis de Snell, o foco principal e:",
       "opcoes": [
-        "relacionar �ngulos e �ndices de refra��o em passagens de luz entre meios",
+        "relacionar ângulos e índices de refração em passagens de luz entre meios",
         "analisar como lentes convergentes e divergentes formam imagens e alteram feixes de luz",
-        "compreender o funcionamento basico de instrumentos que manipulam trajet�rias luminosas",
-        "explicar a decomposi��o da luz branca e a acao dos prismas"
+        "compreender o funcionamento basico de instrumentos que manipulam trajetórias luminosas",
+        "explicar a decomposição da luz branca e a acao dos prismas"
       ],
-      "correta": "relacionar �ngulos e �ndices de refra��o em passagens de luz entre meios",
-      "comentario": "Leis de Snell concentra-se em relacionar �ngulos e �ndices de refra��o em passagens de luz entre meios.",
+      "correta": "relacionar ângulos e índices de refração em passagens de luz entre meios",
+      "comentario": "Leis de Snell concentra-se em relacionar ângulos e índices de refração em passagens de luz entre meios.",
       "tempoEstimado": 35,
       "tags": [
         "optica",
@@ -3169,22 +3169,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
+      "materia": "Física",
+      "topico": "Óptica",
       "subtopico": "Leis de Snell",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Lentes esf�ricas trata de dispositivos transparentes que convergem ou divergem raios luminosos e formam imagens, Leis de Snell destaca:",
+      "enunciado": "Enquanto Lentes esféricas trata de dispositivos transparentes que convergem ou divergem raios luminosos e formam imagens, Leis de Snell destaca:",
       "opcoes": [
-        "As relacoes matematicas que ligam os �ngulos de incidencia e refra��o aos �ndices dos meios.",
+        "As relacoes matematicas que ligam os ângulos de incidencia e refração aos índices dos meios.",
         "Dispositivos transparentes que convergem ou divergem raios luminosos e formam imagens.",
         "Aparelhos que utilizam lentes, espelhos ou ambos para ampliar, corrigir ou registrar imagens.",
-        "A separacao da luz em diferentes cores causada pela varia��o da refra��o com o comprimento de onda."
+        "A separacao da luz em diferentes cores causada pela variação da refração com o comprimento de onda."
       ],
-      "correta": "As relacoes matematicas que ligam os �ngulos de incidencia e refra��o aos �ndices dos meios.",
-      "comentario": "A compara��o correta mostra a especificidade de leis de Snell.",
+      "correta": "As relacoes matematicas que ligam os ângulos de incidencia e refração aos índices dos meios.",
+      "comentario": "A comparação correta mostra a especificidade de leis de Snell.",
       "tempoEstimado": 35,
       "tags": [
         "optica",
@@ -3208,22 +3208,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
+      "materia": "Física",
+      "topico": "Óptica",
       "subtopico": "Leis de Snell",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma an�lise de sala, considera-se que um raio incide sobre a superficie entre ar e vidro e os �ngulos sao medidos para compara��o Para interpretar essa situa��o, � mais adequado mobilizar o conceito de:",
+      "enunciado": "Em uma análise de sala, considera-se que um raio incide sobre a superficie entre ar e vidro e os ângulos sao medidos para comparação Para interpretar essa situação, é mais adequado mobilizar o conceito de:",
       "opcoes": [
         "Leis de Snell",
-        "Lentes esf�ricas",
-        "Dispersao e prismas",
-        "Defeitos da vis�o"
+        "Lentes esféricas",
+        "Dispersão e prismas",
+        "Defeitos da visão"
       ],
       "correta": "Leis de Snell",
-      "comentario": "O caso descrito � interpretado adequadamente por meio de leis de Snell.",
+      "comentario": "O caso descrito é interpretado adequadamente por meio de leis de Snell.",
       "tempoEstimado": 40,
       "tags": [
         "optica",
@@ -3247,22 +3247,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
+      "materia": "Física",
+      "topico": "Óptica",
       "subtopico": "Leis de Snell",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situa��o pr�tica depende mais diretamente de Leis de Snell?",
+      "enunciado": "Qual situação prática depende mais diretamente de Leis de Snell?",
       "opcoes": [
-        "o c�lculo de �ngulos de refra��o em interfaces opticas",
-        "�culos, lupas, c�meras e projetores",
-        "o uso de microsc�pios, telesc�pios, lunetas e c�meras fotogr�ficas",
-        "a corre��o visual com �culos e lentes de contato"
+        "o cálculo de ângulos de refração em interfaces opticas",
+        "óculos, lupas, câmeras e projetores",
+        "o uso de microscópios, telescópios, lunetas e câmeras fotográficas",
+        "a correção visual com óculos e lentes de contato"
       ],
-      "correta": "o c�lculo de �ngulos de refra��o em interfaces opticas",
-      "comentario": "Leis de Snell aparece de modo direto no c�lculo de �ngulos de refra��o em interfaces opticas.",
+      "correta": "o cálculo de ângulos de refração em interfaces opticas",
+      "comentario": "Leis de Snell aparece de modo direto no cálculo de ângulos de refração em interfaces opticas.",
       "tempoEstimado": 40,
       "tags": [
         "optica",
@@ -3286,22 +3286,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
+      "materia": "Física",
+      "topico": "Óptica",
       "subtopico": "Leis de Snell",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir de um raio incide sobre a superficie entre ar e vidro e os �ngulos sao medidos para compara��o, qual conclus�o est� mais correta?",
+      "enunciado": "A partir de um raio incide sobre a superficie entre ar e vidro e os ângulos sao medidos para comparação, qual conclusão está mais correta?",
       "opcoes": [
         "o caso e explicado por leis de Snell.",
-        "o caso e mais bem entendido por Lentes esf�ricas.",
-        "a situa��o anula a import�ncia de Instrumentos �pticos.",
-        "o fen�meno exclui qualquer rela��o com Dispers�o e prismas."
+        "o caso e mais bem entendido por Lentes esféricas.",
+        "a situação anula a importância de Instrumentos ópticos.",
+        "o fenômeno exclui qualquer relação com Dispersão e prismas."
       ],
       "correta": "o caso e explicado por leis de Snell.",
-      "comentario": "A conclus�o adequada retoma a ideia central de leis de Snell.",
+      "comentario": "A conclusão adequada retoma a ideia central de leis de Snell.",
       "tempoEstimado": 45,
       "tags": [
         "optica",
@@ -3325,8 +3325,8 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
+      "materia": "Física",
+      "topico": "Óptica",
       "subtopico": "Leis de Snell",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
@@ -3334,12 +3334,12 @@
       "tipo": "multipla_escolha",
       "enunciado": "Se um grupo fosse pesquisar leis de Snell, qual pergunta orientadora seria a mais adequada?",
       "opcoes": [
-        "Como leis de Snell aparece no c�lculo de �ngulos de refra��o em interfaces opticas?",
-        "Como Lentes esf�ricas substitui totalmente o c�lculo de �ngulos de refra��o em interfaces opticas?",
-        "Por que Instrumentos �pticos torna desnecess�rio estudar Leis de Snell?",
-        "De que modo Dispers�o e prismas elimina toda medida fisica envolvida?"
+        "Como leis de Snell aparece no cálculo de ângulos de refração em interfaces opticas?",
+        "Como Lentes esféricas substitui totalmente o cálculo de ângulos de refração em interfaces opticas?",
+        "Por que Instrumentos ópticos torna desnecessário estudar Leis de Snell?",
+        "De que modo Dispersão e prismas elimina toda medida fisica envolvida?"
       ],
-      "correta": "Como leis de Snell aparece no c�lculo de �ngulos de refra��o em interfaces opticas?",
+      "correta": "Como leis de Snell aparece no cálculo de ângulos de refração em interfaces opticas?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de leis de Snell.",
       "tempoEstimado": 45,
       "tags": [
@@ -3364,8 +3364,8 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
+      "materia": "Física",
+      "topico": "Óptica",
       "subtopico": "Leis de Snell",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
@@ -3375,11 +3375,11 @@
       "opcoes": [
         "as leis de Snell valem apenas quando a luz entra perpendicularmente ao meio",
         "toda lente produz apenas imagens virtuais e nunca imagens reais",
-        "Instrumentos �pticos funcionam sem depender de qualquer desvio ou controle da luz",
+        "Instrumentos ópticos funcionam sem depender de qualquer desvio ou controle da luz",
         "o prisma colore a luz branca com tintas invisiveis do proprio material"
       ],
       "correta": "as leis de Snell valem apenas quando a luz entra perpendicularmente ao meio",
-      "comentario": "Esse e um equ�voco frequente porque contraria a defini��o correta de leis de Snell.",
+      "comentario": "Esse e um equívoco frequente porque contraria a definição correta de leis de Snell.",
       "tempoEstimado": 50,
       "tags": [
         "optica",
@@ -3403,22 +3403,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
+      "materia": "Física",
+      "topico": "Óptica",
       "subtopico": "Leis de Snell",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"as leis de Snell so podem ser usadas quando o raio atinge a superf�cie a noventa graus\". A avalia��o mais adequada e:",
+      "enunciado": "Um estudante afirma: \"as leis de Snell so podem ser usadas quando o raio atinge a superfície a noventa graus\". A avaliação mais adequada e:",
       "opcoes": [
-        "A afirma��o est� incorreta, porque as relacoes matematicas que ligam os �ngulos de incidencia e refra��o aos �ndices dos meios.",
-        "A afirma��o est� correta, pois resume integralmente leis de Snell.",
-        "A afirma��o est� correta, porque toda situa��o do tema depende apenas dessa ideia.",
-        "A afirma��o est� incorreta apenas porque n�o apresenta uma unidade de medida."
+        "A afirmação está incorreta, porque as relacoes matematicas que ligam os ângulos de incidencia e refração aos índices dos meios.",
+        "A afirmação está correta, pois resume integralmente leis de Snell.",
+        "A afirmação está correta, porque toda situação do tema depende apenas dessa ideia.",
+        "A afirmação está incorreta apenas porque não apresenta uma unidade de medida."
       ],
-      "correta": "A afirma��o est� incorreta, porque as relacoes matematicas que ligam os �ngulos de incidencia e refra��o aos �ndices dos meios.",
-      "comentario": "A fala do estudante apresenta um equ�voco conceitual sobre leis de Snell.",
+      "correta": "A afirmação está incorreta, porque as relacoes matematicas que ligam os ângulos de incidencia e refração aos índices dos meios.",
+      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre leis de Snell.",
       "tempoEstimado": 55,
       "tags": [
         "optica",
@@ -3442,22 +3442,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
+      "materia": "Física",
+      "topico": "Óptica",
       "subtopico": "Leis de Snell",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se leis de Snell fosse ignorado(a) ao analisar o c�lculo de �ngulos de refra��o em interfaces opticas, o resultado mais prov�vel seria:",
+      "enunciado": "Se leis de Snell fosse ignorado(a) ao analisar o cálculo de ângulos de refração em interfaces opticas, o resultado mais provável seria:",
       "opcoes": [
-        "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre o c�lculo de �ngulos de refra��o em interfaces opticas.",
-        "a situa��o seria explicada automaticamente por Lentes esf�ricas, sem necessidade de an�lise.",
-        "nenhuma interpretacao fisica seria alterada, porque Leis de Snell n�o interfere nesse tipo de problema.",
-        "o fen�meno deixaria de existir apenas por n�o ser nomeado."
+        "a análise ficaria incompleta e poderia gerar interpretações erradas sobre o cálculo de ângulos de refração em interfaces opticas.",
+        "a situação seria explicada automaticamente por Lentes esféricas, sem necessidade de análise.",
+        "nenhuma interpretacao fisica seria alterada, porque Leis de Snell não interfere nesse tipo de problema.",
+        "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
-      "correta": "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre o c�lculo de �ngulos de refra��o em interfaces opticas.",
-      "comentario": "Ignorar leis de Snell compromete a leitura fisica da situa��o apresentada.",
+      "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre o cálculo de ângulos de refração em interfaces opticas.",
+      "comentario": "Ignorar leis de Snell compromete a leitura fisica da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "optica",
@@ -3481,22 +3481,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
+      "materia": "Física",
+      "topico": "Óptica",
       "subtopico": "Leis de Snell",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma aplica��o cotidiana ou escolar, Leis de Snell ajuda principalmente a compreender:",
+      "enunciado": "Em uma aplicação cotidiana ou escolar, Leis de Snell ajuda principalmente a compreender:",
       "opcoes": [
-        "o c�lculo de �ngulos de refra��o em interfaces opticas",
-        "�culos, lupas, c�meras e projetores",
-        "o uso de microsc�pios, telesc�pios, lunetas e c�meras fotogr�ficas",
+        "o cálculo de ângulos de refração em interfaces opticas",
+        "óculos, lupas, câmeras e projetores",
+        "o uso de microscópios, telescópios, lunetas e câmeras fotográficas",
         "a formacao de espectros luminosos e o estudo das cores"
       ],
-      "correta": "o c�lculo de �ngulos de refra��o em interfaces opticas",
-      "comentario": "A aplica��o escolhida e a que melhor representa leis de Snell.",
+      "correta": "o cálculo de ângulos de refração em interfaces opticas",
+      "comentario": "A aplicação escolhida e a que melhor representa leis de Snell.",
       "tempoEstimado": 60,
       "tags": [
         "optica",
@@ -3520,8 +3520,8 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
+      "materia": "Física",
+      "topico": "Óptica",
       "subtopico": "Leis de Snell",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
@@ -3529,13 +3529,13 @@
       "tipo": "multipla_escolha",
       "enunciado": "Qual resumo sintetiza melhor a ideia central de Leis de Snell?",
       "opcoes": [
-        "Em s�ntese, as relacoes matematicas que ligam os �ngulos de incidencia e refra��o aos �ndices dos meios.",
-        "Em s�ntese, dispositivos transparentes que convergem ou divergem raios luminosos e formam imagens.",
-        "Em s�ntese, aparelhos que utilizam lentes, espelhos ou ambos para ampliar, corrigir ou registrar imagens.",
-        "Em s�ntese, a separacao da luz em diferentes cores causada pela varia��o da refra��o com o comprimento de onda."
+        "Em síntese, as relacoes matematicas que ligam os ângulos de incidencia e refração aos índices dos meios.",
+        "Em síntese, dispositivos transparentes que convergem ou divergem raios luminosos e formam imagens.",
+        "Em síntese, aparelhos que utilizam lentes, espelhos ou ambos para ampliar, corrigir ou registrar imagens.",
+        "Em síntese, a separacao da luz em diferentes cores causada pela variação da refração com o comprimento de onda."
       ],
-      "correta": "Em s�ntese, as relacoes matematicas que ligam os �ngulos de incidencia e refra��o aos �ndices dos meios.",
-      "comentario": "O resumo correto recupera o n�cleo conceitual de leis de Snell.",
+      "correta": "Em síntese, as relacoes matematicas que ligam os ângulos de incidencia e refração aos índices dos meios.",
+      "comentario": "O resumo correto recupera o núcleo conceitual de leis de Snell.",
       "tempoEstimado": 65,
       "tags": [
         "optica",
@@ -3559,22 +3559,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Lentes esf�ricas",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Lentes esféricas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em F�sica, Lentes esf�ricas pode ser definido(a) como:",
+      "enunciado": "Em Física, Lentes esféricas pode ser definido(a) como:",
       "opcoes": [
         "dispositivos transparentes que convergem ou divergem raios luminosos e formam imagens",
         "aparelhos que utilizam lentes, espelhos ou ambos para ampliar, corrigir ou registrar imagens",
-        "a separacao da luz em diferentes cores causada pela varia��o da refra��o com o comprimento de onda",
-        "as condi��es em que a imagem n�o se forma adequadamente na retina, exigindo corre��o �ptica"
+        "a separacao da luz em diferentes cores causada pela variação da refração com o comprimento de onda",
+        "as condições em que a imagem não se forma adequadamente na retina, exigindo correção Óptica"
       ],
       "correta": "dispositivos transparentes que convergem ou divergem raios luminosos e formam imagens",
-      "comentario": "Lentes esf�ricas refere-se a dispositivos transparentes que convergem ou divergem raios luminosos e formam imagens.",
+      "comentario": "Lentes esféricas refere-se a dispositivos transparentes que convergem ou divergem raios luminosos e formam imagens.",
       "tempoEstimado": 25,
       "tags": [
         "optica",
@@ -3598,22 +3598,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Lentes esf�ricas",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Lentes esféricas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situa��o: uma lente convergente projeta a imagem de um objeto em uma tela quando o objeto esta em posicao adequada Esse caso exemplifica melhor qual subt�pico?",
+      "enunciado": "Observe a situação: uma lente convergente projeta a imagem de um objeto em uma tela quando o objeto esta em posicao adequada Esse caso exemplifica melhor qual subtópico?",
       "opcoes": [
-        "Lentes esf�ricas",
-        "Instrumentos �pticos",
-        "Dispersao e prismas",
-        "Defeitos da vis�o"
+        "Lentes esféricas",
+        "Instrumentos ópticos",
+        "Dispersão e prismas",
+        "Defeitos da visão"
       ],
-      "correta": "Lentes esf�ricas",
-      "comentario": "A situa��o apresentada � um exemplo de Lentes esf�ricas.",
+      "correta": "Lentes esféricas",
+      "comentario": "A situação apresentada é um exemplo de Lentes esféricas.",
       "tempoEstimado": 25,
       "tags": [
         "optica",
@@ -3637,22 +3637,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Lentes esf�ricas",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Lentes esféricas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirma��o descreve corretamente Lentes esf�ricas?",
+      "enunciado": "Qual afirmação descreve corretamente Lentes esféricas?",
       "opcoes": [
         "Dispositivos transparentes que convergem ou divergem raios luminosos e formam imagens.",
         "Aparelhos que utilizam lentes, espelhos ou ambos para ampliar, corrigir ou registrar imagens.",
-        "A separacao da luz em diferentes cores causada pela varia��o da refra��o com o comprimento de onda.",
-        "As condi��es em que a imagem n�o se forma adequadamente na retina, exigindo corre��o �ptica."
+        "A separacao da luz em diferentes cores causada pela variação da refração com o comprimento de onda.",
+        "As condições em que a imagem não se forma adequadamente na retina, exigindo correção Óptica."
       ],
       "correta": "Dispositivos transparentes que convergem ou divergem raios luminosos e formam imagens.",
-      "comentario": "A alternativa correta resume o conceito de Lentes esf�ricas.",
+      "comentario": "A alternativa correta resume o conceito de Lentes esféricas.",
       "tempoEstimado": 30,
       "tags": [
         "optica",
@@ -3676,22 +3676,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Lentes esf�ricas",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Lentes esféricas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compat�vel com Lentes esf�ricas?",
+      "enunciado": "Qual alternativa NAO esta compatível com Lentes esféricas?",
       "opcoes": [
         "Aparelhos que utilizam lentes, espelhos ou ambos para ampliar, corrigir ou registrar imagens.",
         "Dispositivos transparentes que convergem ou divergem raios luminosos e formam imagens.",
         "Analisar como lentes convergentes e divergentes formam imagens e alteram feixes de luz.",
-        "Ajuda a compreender �culos, lupas, c�meras e projetores."
+        "Ajuda a compreender óculos, lupas, câmeras e projetores."
       ],
       "correta": "Aparelhos que utilizam lentes, espelhos ou ambos para ampliar, corrigir ou registrar imagens.",
-      "comentario": "A op��o incompativel descreve outro subt�pico, n�o Lentes esf�ricas.",
+      "comentario": "A opção incompativel descreve outro subtópico, não Lentes esféricas.",
       "tempoEstimado": 30,
       "tags": [
         "optica",
@@ -3715,22 +3715,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Lentes esf�ricas",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Lentes esféricas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar Lentes esf�ricas, o foco principal e:",
+      "enunciado": "Ao estudar Lentes esféricas, o foco principal e:",
       "opcoes": [
         "analisar como lentes convergentes e divergentes formam imagens e alteram feixes de luz",
-        "compreender o funcionamento basico de instrumentos que manipulam trajet�rias luminosas",
-        "explicar a decomposi��o da luz branca e a acao dos prismas",
-        "relacionar miopia, hipermetropia e outros defeitos visuais as formas de corre��o"
+        "compreender o funcionamento basico de instrumentos que manipulam trajetórias luminosas",
+        "explicar a decomposição da luz branca e a acao dos prismas",
+        "relacionar miopia, hipermetropia e outros defeitos visuais as formas de correção"
       ],
       "correta": "analisar como lentes convergentes e divergentes formam imagens e alteram feixes de luz",
-      "comentario": "Lentes esf�ricas concentra-se em analisar como lentes convergentes e divergentes formam imagens e alteram feixes de luz.",
+      "comentario": "Lentes esféricas concentra-se em analisar como lentes convergentes e divergentes formam imagens e alteram feixes de luz.",
       "tempoEstimado": 35,
       "tags": [
         "optica",
@@ -3754,22 +3754,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Lentes esf�ricas",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Lentes esféricas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Instrumentos �pticos trata de aparelhos que utilizam lentes, espelhos ou ambos para ampliar, corrigir ou registrar imagens, Lentes esf�ricas destaca:",
+      "enunciado": "Enquanto Instrumentos ópticos trata de aparelhos que utilizam lentes, espelhos ou ambos para ampliar, corrigir ou registrar imagens, Lentes esféricas destaca:",
       "opcoes": [
         "Dispositivos transparentes que convergem ou divergem raios luminosos e formam imagens.",
         "Aparelhos que utilizam lentes, espelhos ou ambos para ampliar, corrigir ou registrar imagens.",
-        "A separacao da luz em diferentes cores causada pela varia��o da refra��o com o comprimento de onda.",
-        "As condi��es em que a imagem n�o se forma adequadamente na retina, exigindo corre��o �ptica."
+        "A separacao da luz em diferentes cores causada pela variação da refração com o comprimento de onda.",
+        "As condições em que a imagem não se forma adequadamente na retina, exigindo correção Óptica."
       ],
       "correta": "Dispositivos transparentes que convergem ou divergem raios luminosos e formam imagens.",
-      "comentario": "A compara��o correta mostra a especificidade de Lentes esf�ricas.",
+      "comentario": "A comparação correta mostra a especificidade de Lentes esféricas.",
       "tempoEstimado": 35,
       "tags": [
         "optica",
@@ -3793,22 +3793,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Lentes esf�ricas",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Lentes esféricas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma an�lise de sala, considera-se que uma lente convergente projeta a imagem de um objeto em uma tela quando o objeto esta em posicao adequada Para interpretar essa situa��o, � mais adequado mobilizar o conceito de:",
+      "enunciado": "Em uma análise de sala, considera-se que uma lente convergente projeta a imagem de um objeto em uma tela quando o objeto esta em posicao adequada Para interpretar essa situação, é mais adequado mobilizar o conceito de:",
       "opcoes": [
-        "Lentes esf�ricas",
-        "Instrumentos �pticos",
-        "Defeitos da vis�o",
-        "Natureza e propaga��o da luz"
+        "Lentes esféricas",
+        "Instrumentos ópticos",
+        "Defeitos da visão",
+        "Natureza e propagação da luz"
       ],
-      "correta": "Lentes esf�ricas",
-      "comentario": "O caso descrito � interpretado adequadamente por meio de Lentes esf�ricas.",
+      "correta": "Lentes esféricas",
+      "comentario": "O caso descrito é interpretado adequadamente por meio de Lentes esféricas.",
       "tempoEstimado": 40,
       "tags": [
         "optica",
@@ -3832,22 +3832,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Lentes esf�ricas",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Lentes esféricas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situa��o pr�tica depende mais diretamente de Lentes esf�ricas?",
+      "enunciado": "Qual situação prática depende mais diretamente de Lentes esféricas?",
       "opcoes": [
-        "�culos, lupas, c�meras e projetores",
-        "o uso de microsc�pios, telesc�pios, lunetas e c�meras fotogr�ficas",
+        "óculos, lupas, câmeras e projetores",
+        "o uso de microscópios, telescópios, lunetas e câmeras fotográficas",
         "a formacao de espectros luminosos e o estudo das cores",
         "a formacao de sombras e a iluminacao de ambientes"
       ],
-      "correta": "�culos, lupas, c�meras e projetores",
-      "comentario": "Lentes esf�ricas aparece de modo direto em �culos, lupas, c�meras e projetores.",
+      "correta": "óculos, lupas, câmeras e projetores",
+      "comentario": "Lentes esféricas aparece de modo direto em óculos, lupas, câmeras e projetores.",
       "tempoEstimado": 40,
       "tags": [
         "optica",
@@ -3871,22 +3871,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Lentes esf�ricas",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Lentes esféricas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir de uma lente convergente projeta a imagem de um objeto em uma tela quando o objeto esta em posicao adequada, qual conclus�o est� mais correta?",
+      "enunciado": "A partir de uma lente convergente projeta a imagem de um objeto em uma tela quando o objeto esta em posicao adequada, qual conclusão está mais correta?",
       "opcoes": [
-        "o caso e explicado por Lentes esf�ricas.",
-        "o caso e mais bem entendido por Instrumentos �pticos.",
-        "a situa��o anula a import�ncia de Dispers�o e prismas.",
-        "o fen�meno exclui qualquer rela��o com Defeitos da vis�o."
+        "o caso e explicado por Lentes esféricas.",
+        "o caso e mais bem entendido por Instrumentos ópticos.",
+        "a situação anula a importância de Dispersão e prismas.",
+        "o fenômeno exclui qualquer relação com Defeitos da visão."
       ],
-      "correta": "o caso e explicado por Lentes esf�ricas.",
-      "comentario": "A conclus�o adequada retoma a ideia central de Lentes esf�ricas.",
+      "correta": "o caso e explicado por Lentes esféricas.",
+      "comentario": "A conclusão adequada retoma a ideia central de Lentes esféricas.",
       "tempoEstimado": 45,
       "tags": [
         "optica",
@@ -3910,22 +3910,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Lentes esf�ricas",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Lentes esféricas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Se um grupo fosse pesquisar Lentes esf�ricas, qual pergunta orientadora seria a mais adequada?",
+      "enunciado": "Se um grupo fosse pesquisar Lentes esféricas, qual pergunta orientadora seria a mais adequada?",
       "opcoes": [
-        "Como Lentes esf�ricas aparece em �culos, lupas, c�meras e projetores?",
-        "Como Instrumentos �pticos substitui totalmente �culos, lupas, c�meras e projetores?",
-        "Por que Dispers�o e prismas torna desnecess�rio estudar Lentes esf�ricas?",
-        "De que modo Defeitos da vis�o elimina toda medida fisica envolvida?"
+        "Como Lentes esféricas aparece em óculos, lupas, câmeras e projetores?",
+        "Como Instrumentos ópticos substitui totalmente óculos, lupas, câmeras e projetores?",
+        "Por que Dispersão e prismas torna desnecessário estudar Lentes esféricas?",
+        "De que modo Defeitos da visão elimina toda medida fisica envolvida?"
       ],
-      "correta": "Como Lentes esf�ricas aparece em �culos, lupas, c�meras e projetores?",
-      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Lentes esf�ricas.",
+      "correta": "Como Lentes esféricas aparece em óculos, lupas, câmeras e projetores?",
+      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Lentes esféricas.",
       "tempoEstimado": 45,
       "tags": [
         "optica",
@@ -3949,22 +3949,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Lentes esf�ricas",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Lentes esféricas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em Lentes esf�ricas e pensar que:",
+      "enunciado": "Um erro comum em Lentes esféricas e pensar que:",
       "opcoes": [
         "toda lente produz apenas imagens virtuais e nunca imagens reais",
-        "Instrumentos �pticos funcionam sem depender de qualquer desvio ou controle da luz",
+        "Instrumentos ópticos funcionam sem depender de qualquer desvio ou controle da luz",
         "o prisma colore a luz branca com tintas invisiveis do proprio material",
-        "todos os Defeitos da vis�o sao corrigidos pelo mesmo tipo de lente"
+        "todos os Defeitos da visão sao corrigidos pelo mesmo tipo de lente"
       ],
       "correta": "toda lente produz apenas imagens virtuais e nunca imagens reais",
-      "comentario": "Esse e um equ�voco frequente porque contraria a defini��o correta de Lentes esf�ricas.",
+      "comentario": "Esse e um equívoco frequente porque contraria a definição correta de Lentes esféricas.",
       "tempoEstimado": 50,
       "tags": [
         "optica",
@@ -3988,22 +3988,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Lentes esf�ricas",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Lentes esféricas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"nenhuma lente e capaz de formar imagem real em uma tela\". A avalia��o mais adequada e:",
+      "enunciado": "Um estudante afirma: \"nenhuma lente e capaz de formar imagem real em uma tela\". A avaliação mais adequada e:",
       "opcoes": [
-        "A afirma��o est� incorreta, porque dispositivos transparentes que convergem ou divergem raios luminosos e formam imagens.",
-        "A afirma��o est� correta, pois resume integralmente Lentes esf�ricas.",
-        "A afirma��o est� correta, porque toda situa��o do tema depende apenas dessa ideia.",
-        "A afirma��o est� incorreta apenas porque n�o apresenta uma unidade de medida."
+        "A afirmação está incorreta, porque dispositivos transparentes que convergem ou divergem raios luminosos e formam imagens.",
+        "A afirmação está correta, pois resume integralmente Lentes esféricas.",
+        "A afirmação está correta, porque toda situação do tema depende apenas dessa ideia.",
+        "A afirmação está incorreta apenas porque não apresenta uma unidade de medida."
       ],
-      "correta": "A afirma��o est� incorreta, porque dispositivos transparentes que convergem ou divergem raios luminosos e formam imagens.",
-      "comentario": "A fala do estudante apresenta um equ�voco conceitual sobre Lentes esf�ricas.",
+      "correta": "A afirmação está incorreta, porque dispositivos transparentes que convergem ou divergem raios luminosos e formam imagens.",
+      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre Lentes esféricas.",
       "tempoEstimado": 55,
       "tags": [
         "optica",
@@ -4027,22 +4027,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Lentes esf�ricas",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Lentes esféricas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se Lentes esf�ricas fosse ignorado(a) ao analisar �culos, lupas, c�meras e projetores, o resultado mais prov�vel seria:",
+      "enunciado": "Se Lentes esféricas fosse ignorado(a) ao analisar óculos, lupas, câmeras e projetores, o resultado mais provável seria:",
       "opcoes": [
-        "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre �culos, lupas, c�meras e projetores.",
-        "a situa��o seria explicada automaticamente por Instrumentos �pticos, sem necessidade de an�lise.",
-        "nenhuma interpretacao fisica seria alterada, porque Lentes esf�ricas n�o interfere nesse tipo de problema.",
-        "o fen�meno deixaria de existir apenas por n�o ser nomeado."
+        "a análise ficaria incompleta e poderia gerar interpretações erradas sobre óculos, lupas, câmeras e projetores.",
+        "a situação seria explicada automaticamente por Instrumentos ópticos, sem necessidade de análise.",
+        "nenhuma interpretacao fisica seria alterada, porque Lentes esféricas não interfere nesse tipo de problema.",
+        "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
-      "correta": "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre �culos, lupas, c�meras e projetores.",
-      "comentario": "Ignorar Lentes esf�ricas compromete a leitura fisica da situa��o apresentada.",
+      "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre óculos, lupas, câmeras e projetores.",
+      "comentario": "Ignorar Lentes esféricas compromete a leitura fisica da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "optica",
@@ -4066,22 +4066,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Lentes esf�ricas",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Lentes esféricas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma aplica��o cotidiana ou escolar, Lentes esf�ricas ajuda principalmente a compreender:",
+      "enunciado": "Em uma aplicação cotidiana ou escolar, Lentes esféricas ajuda principalmente a compreender:",
       "opcoes": [
-        "�culos, lupas, c�meras e projetores",
-        "o uso de microsc�pios, telesc�pios, lunetas e c�meras fotogr�ficas",
+        "óculos, lupas, câmeras e projetores",
+        "o uso de microscópios, telescópios, lunetas e câmeras fotográficas",
         "a formacao de espectros luminosos e o estudo das cores",
-        "a corre��o visual com �culos e lentes de contato"
+        "a correção visual com óculos e lentes de contato"
       ],
-      "correta": "�culos, lupas, c�meras e projetores",
-      "comentario": "A aplica��o escolhida e a que melhor representa Lentes esf�ricas.",
+      "correta": "óculos, lupas, câmeras e projetores",
+      "comentario": "A aplicação escolhida e a que melhor representa Lentes esféricas.",
       "tempoEstimado": 60,
       "tags": [
         "optica",
@@ -4105,22 +4105,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Lentes esf�ricas",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Lentes esféricas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual resumo sintetiza melhor a ideia central de Lentes esf�ricas?",
+      "enunciado": "Qual resumo sintetiza melhor a ideia central de Lentes esféricas?",
       "opcoes": [
-        "Em s�ntese, dispositivos transparentes que convergem ou divergem raios luminosos e formam imagens.",
-        "Em s�ntese, aparelhos que utilizam lentes, espelhos ou ambos para ampliar, corrigir ou registrar imagens.",
-        "Em s�ntese, a separacao da luz em diferentes cores causada pela varia��o da refra��o com o comprimento de onda.",
-        "Em s�ntese, as condi��es em que a imagem n�o se forma adequadamente na retina, exigindo corre��o �ptica."
+        "Em síntese, dispositivos transparentes que convergem ou divergem raios luminosos e formam imagens.",
+        "Em síntese, aparelhos que utilizam lentes, espelhos ou ambos para ampliar, corrigir ou registrar imagens.",
+        "Em síntese, a separacao da luz em diferentes cores causada pela variação da refração com o comprimento de onda.",
+        "Em síntese, as condições em que a imagem não se forma adequadamente na retina, exigindo correção Óptica."
       ],
-      "correta": "Em s�ntese, dispositivos transparentes que convergem ou divergem raios luminosos e formam imagens.",
-      "comentario": "O resumo correto recupera o n�cleo conceitual de Lentes esf�ricas.",
+      "correta": "Em síntese, dispositivos transparentes que convergem ou divergem raios luminosos e formam imagens.",
+      "comentario": "O resumo correto recupera o núcleo conceitual de Lentes esféricas.",
       "tempoEstimado": 65,
       "tags": [
         "optica",
@@ -4144,22 +4144,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Instrumentos �pticos",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Instrumentos ópticos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em F�sica, Instrumentos �pticos pode ser definido(a) como:",
+      "enunciado": "Em Física, Instrumentos ópticos pode ser definido(a) como:",
       "opcoes": [
         "aparelhos que utilizam lentes, espelhos ou ambos para ampliar, corrigir ou registrar imagens",
-        "a separacao da luz em diferentes cores causada pela varia��o da refra��o com o comprimento de onda",
-        "as condi��es em que a imagem n�o se forma adequadamente na retina, exigindo corre��o �ptica",
-        "o estudo da luz como forma de energia que se propaga e permite a vis�o dos objetos"
+        "a separacao da luz em diferentes cores causada pela variação da refração com o comprimento de onda",
+        "as condições em que a imagem não se forma adequadamente na retina, exigindo correção Óptica",
+        "o estudo da luz como forma de energia que se propaga e permite a visão dos objetos"
       ],
       "correta": "aparelhos que utilizam lentes, espelhos ou ambos para ampliar, corrigir ou registrar imagens",
-      "comentario": "Instrumentos �pticos refere-se a aparelhos que utilizam lentes, espelhos ou ambos para ampliar, corrigir ou registrar imagens.",
+      "comentario": "Instrumentos ópticos refere-se a aparelhos que utilizam lentes, espelhos ou ambos para ampliar, corrigir ou registrar imagens.",
       "tempoEstimado": 25,
       "tags": [
         "optica",
@@ -4183,22 +4183,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Instrumentos �pticos",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Instrumentos ópticos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situa��o: microsc�pios, telesc�pios e c�meras organizam a passagem da luz para ampliar ou registrar imagens Esse caso exemplifica melhor qual subt�pico?",
+      "enunciado": "Observe a situação: microscópios, telescópios e câmeras organizam a passagem da luz para ampliar ou registrar imagens Esse caso exemplifica melhor qual subtópico?",
       "opcoes": [
-        "Instrumentos �pticos",
-        "Dispersao e prismas",
-        "Defeitos da vis�o",
-        "Natureza e propaga��o da luz"
+        "Instrumentos ópticos",
+        "Dispersão e prismas",
+        "Defeitos da visão",
+        "Natureza e propagação da luz"
       ],
-      "correta": "Instrumentos �pticos",
-      "comentario": "A situa��o apresentada � um exemplo de Instrumentos �pticos.",
+      "correta": "Instrumentos ópticos",
+      "comentario": "A situação apresentada é um exemplo de Instrumentos ópticos.",
       "tempoEstimado": 25,
       "tags": [
         "optica",
@@ -4222,22 +4222,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Instrumentos �pticos",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Instrumentos ópticos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirma��o descreve corretamente Instrumentos �pticos?",
+      "enunciado": "Qual afirmação descreve corretamente Instrumentos ópticos?",
       "opcoes": [
         "Aparelhos que utilizam lentes, espelhos ou ambos para ampliar, corrigir ou registrar imagens.",
-        "A separacao da luz em diferentes cores causada pela varia��o da refra��o com o comprimento de onda.",
-        "As condi��es em que a imagem n�o se forma adequadamente na retina, exigindo corre��o �ptica.",
-        "O estudo da luz como forma de energia que se propaga e permite a vis�o dos objetos."
+        "A separacao da luz em diferentes cores causada pela variação da refração com o comprimento de onda.",
+        "As condições em que a imagem não se forma adequadamente na retina, exigindo correção Óptica.",
+        "O estudo da luz como forma de energia que se propaga e permite a visão dos objetos."
       ],
       "correta": "Aparelhos que utilizam lentes, espelhos ou ambos para ampliar, corrigir ou registrar imagens.",
-      "comentario": "A alternativa correta resume o conceito de Instrumentos �pticos.",
+      "comentario": "A alternativa correta resume o conceito de Instrumentos ópticos.",
       "tempoEstimado": 30,
       "tags": [
         "optica",
@@ -4261,22 +4261,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Instrumentos �pticos",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Instrumentos ópticos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compat�vel com Instrumentos �pticos?",
+      "enunciado": "Qual alternativa NAO esta compatível com Instrumentos ópticos?",
       "opcoes": [
-        "A separacao da luz em diferentes cores causada pela varia��o da refra��o com o comprimento de onda.",
+        "A separacao da luz em diferentes cores causada pela variação da refração com o comprimento de onda.",
         "Aparelhos que utilizam lentes, espelhos ou ambos para ampliar, corrigir ou registrar imagens.",
-        "Compreender o funcionamento basico de instrumentos que manipulam trajet�rias luminosas.",
-        "Ajuda a compreender o uso de microsc�pios, telesc�pios, lunetas e c�meras fotogr�ficas."
+        "Compreender o funcionamento basico de instrumentos que manipulam trajetórias luminosas.",
+        "Ajuda a compreender o uso de microscópios, telescópios, lunetas e câmeras fotográficas."
       ],
-      "correta": "A separacao da luz em diferentes cores causada pela varia��o da refra��o com o comprimento de onda.",
-      "comentario": "A op��o incompativel descreve outro subt�pico, n�o Instrumentos �pticos.",
+      "correta": "A separacao da luz em diferentes cores causada pela variação da refração com o comprimento de onda.",
+      "comentario": "A opção incompativel descreve outro subtópico, não Instrumentos ópticos.",
       "tempoEstimado": 30,
       "tags": [
         "optica",
@@ -4300,22 +4300,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Instrumentos �pticos",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Instrumentos ópticos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar Instrumentos �pticos, o foco principal e:",
+      "enunciado": "Ao estudar Instrumentos ópticos, o foco principal e:",
       "opcoes": [
-        "compreender o funcionamento basico de instrumentos que manipulam trajet�rias luminosas",
-        "explicar a decomposi��o da luz branca e a acao dos prismas",
-        "relacionar miopia, hipermetropia e outros defeitos visuais as formas de corre��o",
+        "compreender o funcionamento basico de instrumentos que manipulam trajetórias luminosas",
+        "explicar a decomposição da luz branca e a acao dos prismas",
+        "relacionar miopia, hipermetropia e outros defeitos visuais as formas de correção",
         "compreender como a luz se propaga e torna possivel a observacao visual"
       ],
-      "correta": "compreender o funcionamento basico de instrumentos que manipulam trajet�rias luminosas",
-      "comentario": "Instrumentos �pticos concentra-se em compreender o funcionamento basico de instrumentos que manipulam trajet�rias luminosas.",
+      "correta": "compreender o funcionamento basico de instrumentos que manipulam trajetórias luminosas",
+      "comentario": "Instrumentos ópticos concentra-se em compreender o funcionamento basico de instrumentos que manipulam trajetórias luminosas.",
       "tempoEstimado": 35,
       "tags": [
         "optica",
@@ -4339,22 +4339,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Instrumentos �pticos",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Instrumentos ópticos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Dispersao e prismas trata de a separacao da luz em diferentes cores causada pela varia��o da refra��o com o comprimento de onda, Instrumentos �pticos destaca:",
+      "enunciado": "Enquanto Dispersão e prismas trata de a separacao da luz em diferentes cores causada pela variação da refração com o comprimento de onda, Instrumentos ópticos destaca:",
       "opcoes": [
         "Aparelhos que utilizam lentes, espelhos ou ambos para ampliar, corrigir ou registrar imagens.",
-        "A separacao da luz em diferentes cores causada pela varia��o da refra��o com o comprimento de onda.",
-        "As condi��es em que a imagem n�o se forma adequadamente na retina, exigindo corre��o �ptica.",
-        "O estudo da luz como forma de energia que se propaga e permite a vis�o dos objetos."
+        "A separacao da luz em diferentes cores causada pela variação da refração com o comprimento de onda.",
+        "As condições em que a imagem não se forma adequadamente na retina, exigindo correção Óptica.",
+        "O estudo da luz como forma de energia que se propaga e permite a visão dos objetos."
       ],
       "correta": "Aparelhos que utilizam lentes, espelhos ou ambos para ampliar, corrigir ou registrar imagens.",
-      "comentario": "A compara��o correta mostra a especificidade de Instrumentos �pticos.",
+      "comentario": "A comparação correta mostra a especificidade de Instrumentos ópticos.",
       "tempoEstimado": 35,
       "tags": [
         "optica",
@@ -4378,22 +4378,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Instrumentos �pticos",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Instrumentos ópticos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma an�lise de sala, considera-se que microsc�pios, telesc�pios e c�meras organizam a passagem da luz para ampliar ou registrar imagens Para interpretar essa situa��o, � mais adequado mobilizar o conceito de:",
+      "enunciado": "Em uma análise de sala, considera-se que microscópios, telescópios e câmeras organizam a passagem da luz para ampliar ou registrar imagens Para interpretar essa situação, é mais adequado mobilizar o conceito de:",
       "opcoes": [
-        "Instrumentos �pticos",
-        "Dispersao e prismas",
-        "Natureza e propaga��o da luz",
-        "Princ�pios da �ptica geom�trica"
+        "Instrumentos ópticos",
+        "Dispersão e prismas",
+        "Natureza e propagação da luz",
+        "Princípios da Óptica geométrica"
       ],
-      "correta": "Instrumentos �pticos",
-      "comentario": "O caso descrito � interpretado adequadamente por meio de Instrumentos �pticos.",
+      "correta": "Instrumentos ópticos",
+      "comentario": "O caso descrito é interpretado adequadamente por meio de Instrumentos ópticos.",
       "tempoEstimado": 40,
       "tags": [
         "optica",
@@ -4417,22 +4417,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Instrumentos �pticos",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Instrumentos ópticos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situa��o pr�tica depende mais diretamente de Instrumentos �pticos?",
+      "enunciado": "Qual situação prática depende mais diretamente de Instrumentos ópticos?",
       "opcoes": [
-        "o uso de microsc�pios, telesc�pios, lunetas e c�meras fotogr�ficas",
+        "o uso de microscópios, telescópios, lunetas e câmeras fotográficas",
         "a formacao de espectros luminosos e o estudo das cores",
-        "a corre��o visual com �culos e lentes de contato",
-        "a an�lise de trajet�rias luminosas em esquemas geometricos"
+        "a correção visual com óculos e lentes de contato",
+        "a análise de trajetórias luminosas em esquemas geometricos"
       ],
-      "correta": "o uso de microsc�pios, telesc�pios, lunetas e c�meras fotogr�ficas",
-      "comentario": "Instrumentos �pticos aparece de modo direto no uso de microsc�pios, telesc�pios, lunetas e c�meras fotogr�ficas.",
+      "correta": "o uso de microscópios, telescópios, lunetas e câmeras fotográficas",
+      "comentario": "Instrumentos ópticos aparece de modo direto no uso de microscópios, telescópios, lunetas e câmeras fotográficas.",
       "tempoEstimado": 40,
       "tags": [
         "optica",
@@ -4456,22 +4456,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Instrumentos �pticos",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Instrumentos ópticos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir de microsc�pios, telesc�pios e c�meras organizam a passagem da luz para ampliar ou registrar imagens, qual conclus�o est� mais correta?",
+      "enunciado": "A partir de microscópios, telescópios e câmeras organizam a passagem da luz para ampliar ou registrar imagens, qual conclusão está mais correta?",
       "opcoes": [
-        "o caso e explicado por Instrumentos �pticos.",
-        "o caso e mais bem entendido por Dispers�o e prismas.",
-        "a situa��o anula a import�ncia de Defeitos da vis�o.",
-        "o fen�meno exclui qualquer rela��o com Natureza e propaga��o da luz."
+        "o caso e explicado por Instrumentos ópticos.",
+        "o caso e mais bem entendido por Dispersão e prismas.",
+        "a situação anula a importância de Defeitos da visão.",
+        "o fenômeno exclui qualquer relação com Natureza e propagação da luz."
       ],
-      "correta": "o caso e explicado por Instrumentos �pticos.",
-      "comentario": "A conclus�o adequada retoma a ideia central de Instrumentos �pticos.",
+      "correta": "o caso e explicado por Instrumentos ópticos.",
+      "comentario": "A conclusão adequada retoma a ideia central de Instrumentos ópticos.",
       "tempoEstimado": 45,
       "tags": [
         "optica",
@@ -4495,22 +4495,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Instrumentos �pticos",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Instrumentos ópticos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Se um grupo fosse pesquisar Instrumentos �pticos, qual pergunta orientadora seria a mais adequada?",
+      "enunciado": "Se um grupo fosse pesquisar Instrumentos ópticos, qual pergunta orientadora seria a mais adequada?",
       "opcoes": [
-        "Como Instrumentos �pticos aparece no uso de microsc�pios, telesc�pios, lunetas e c�meras fotogr�ficas?",
-        "Como Dispers�o e prismas substitui totalmente o uso de microsc�pios, telesc�pios, lunetas e c�meras fotogr�ficas?",
-        "Por que Defeitos da vis�o torna desnecess�rio estudar Instrumentos �pticos?",
-        "De que modo Natureza e propaga��o da luz elimina toda medida fisica envolvida?"
+        "Como Instrumentos ópticos aparece no uso de microscópios, telescópios, lunetas e câmeras fotográficas?",
+        "Como Dispersão e prismas substitui totalmente o uso de microscópios, telescópios, lunetas e câmeras fotográficas?",
+        "Por que Defeitos da visão torna desnecessário estudar Instrumentos ópticos?",
+        "De que modo Natureza e propagação da luz elimina toda medida fisica envolvida?"
       ],
-      "correta": "Como Instrumentos �pticos aparece no uso de microsc�pios, telesc�pios, lunetas e c�meras fotogr�ficas?",
-      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Instrumentos �pticos.",
+      "correta": "Como Instrumentos ópticos aparece no uso de microscópios, telescópios, lunetas e câmeras fotográficas?",
+      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Instrumentos ópticos.",
       "tempoEstimado": 45,
       "tags": [
         "optica",
@@ -4534,22 +4534,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Instrumentos �pticos",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Instrumentos ópticos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em Instrumentos �pticos e pensar que:",
+      "enunciado": "Um erro comum em Instrumentos ópticos e pensar que:",
       "opcoes": [
-        "Instrumentos �pticos funcionam sem depender de qualquer desvio ou controle da luz",
+        "Instrumentos ópticos funcionam sem depender de qualquer desvio ou controle da luz",
         "o prisma colore a luz branca com tintas invisiveis do proprio material",
-        "todos os Defeitos da vis�o sao corrigidos pelo mesmo tipo de lente",
+        "todos os Defeitos da visão sao corrigidos pelo mesmo tipo de lente",
         "a luz so existe quando toca diretamente os olhos do observador"
       ],
-      "correta": "Instrumentos �pticos funcionam sem depender de qualquer desvio ou controle da luz",
-      "comentario": "Esse e um equ�voco frequente porque contraria a defini��o correta de Instrumentos �pticos.",
+      "correta": "Instrumentos ópticos funcionam sem depender de qualquer desvio ou controle da luz",
+      "comentario": "Esse e um equívoco frequente porque contraria a definição correta de Instrumentos ópticos.",
       "tempoEstimado": 50,
       "tags": [
         "optica",
@@ -4573,22 +4573,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Instrumentos �pticos",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Instrumentos ópticos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"microsc�pios e telesc�pios n�o precisam desviar a luz para formar imagens uteis\". A avalia��o mais adequada e:",
+      "enunciado": "Um estudante afirma: \"microscópios e telescópios não precisam desviar a luz para formar imagens uteis\". A avaliação mais adequada e:",
       "opcoes": [
-        "A afirma��o est� incorreta, porque aparelhos que utilizam lentes, espelhos ou ambos para ampliar, corrigir ou registrar imagens.",
-        "A afirma��o est� correta, pois resume integralmente Instrumentos �pticos.",
-        "A afirma��o est� correta, porque toda situa��o do tema depende apenas dessa ideia.",
-        "A afirma��o est� incorreta apenas porque n�o apresenta uma unidade de medida."
+        "A afirmação está incorreta, porque aparelhos que utilizam lentes, espelhos ou ambos para ampliar, corrigir ou registrar imagens.",
+        "A afirmação está correta, pois resume integralmente Instrumentos ópticos.",
+        "A afirmação está correta, porque toda situação do tema depende apenas dessa ideia.",
+        "A afirmação está incorreta apenas porque não apresenta uma unidade de medida."
       ],
-      "correta": "A afirma��o est� incorreta, porque aparelhos que utilizam lentes, espelhos ou ambos para ampliar, corrigir ou registrar imagens.",
-      "comentario": "A fala do estudante apresenta um equ�voco conceitual sobre Instrumentos �pticos.",
+      "correta": "A afirmação está incorreta, porque aparelhos que utilizam lentes, espelhos ou ambos para ampliar, corrigir ou registrar imagens.",
+      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre Instrumentos ópticos.",
       "tempoEstimado": 55,
       "tags": [
         "optica",
@@ -4612,22 +4612,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Instrumentos �pticos",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Instrumentos ópticos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se Instrumentos �pticos fosse ignorado(a) ao analisar o uso de microsc�pios, telesc�pios, lunetas e c�meras fotogr�ficas, o resultado mais prov�vel seria:",
+      "enunciado": "Se Instrumentos ópticos fosse ignorado(a) ao analisar o uso de microscópios, telescópios, lunetas e câmeras fotográficas, o resultado mais provável seria:",
       "opcoes": [
-        "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre o uso de microsc�pios, telesc�pios, lunetas e c�meras fotogr�ficas.",
-        "a situa��o seria explicada automaticamente por Dispers�o e prismas, sem necessidade de an�lise.",
-        "nenhuma interpretacao fisica seria alterada, porque Instrumentos �pticos n�o interfere nesse tipo de problema.",
-        "o fen�meno deixaria de existir apenas por n�o ser nomeado."
+        "a análise ficaria incompleta e poderia gerar interpretações erradas sobre o uso de microscópios, telescópios, lunetas e câmeras fotográficas.",
+        "a situação seria explicada automaticamente por Dispersão e prismas, sem necessidade de análise.",
+        "nenhuma interpretacao fisica seria alterada, porque Instrumentos ópticos não interfere nesse tipo de problema.",
+        "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
-      "correta": "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre o uso de microsc�pios, telesc�pios, lunetas e c�meras fotogr�ficas.",
-      "comentario": "Ignorar Instrumentos �pticos compromete a leitura fisica da situa��o apresentada.",
+      "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre o uso de microscópios, telescópios, lunetas e câmeras fotográficas.",
+      "comentario": "Ignorar Instrumentos ópticos compromete a leitura fisica da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "optica",
@@ -4651,22 +4651,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Instrumentos �pticos",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Instrumentos ópticos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma aplica��o cotidiana ou escolar, Instrumentos �pticos ajuda principalmente a compreender:",
+      "enunciado": "Em uma aplicação cotidiana ou escolar, Instrumentos ópticos ajuda principalmente a compreender:",
       "opcoes": [
-        "o uso de microsc�pios, telesc�pios, lunetas e c�meras fotogr�ficas",
+        "o uso de microscópios, telescópios, lunetas e câmeras fotográficas",
         "a formacao de espectros luminosos e o estudo das cores",
-        "a corre��o visual com �culos e lentes de contato",
+        "a correção visual com óculos e lentes de contato",
         "a formacao de sombras e a iluminacao de ambientes"
       ],
-      "correta": "o uso de microsc�pios, telesc�pios, lunetas e c�meras fotogr�ficas",
-      "comentario": "A aplica��o escolhida e a que melhor representa Instrumentos �pticos.",
+      "correta": "o uso de microscópios, telescópios, lunetas e câmeras fotográficas",
+      "comentario": "A aplicação escolhida e a que melhor representa Instrumentos ópticos.",
       "tempoEstimado": 60,
       "tags": [
         "optica",
@@ -4690,22 +4690,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Instrumentos �pticos",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Instrumentos ópticos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual resumo sintetiza melhor a ideia central de Instrumentos �pticos?",
+      "enunciado": "Qual resumo sintetiza melhor a ideia central de Instrumentos ópticos?",
       "opcoes": [
-        "Em s�ntese, aparelhos que utilizam lentes, espelhos ou ambos para ampliar, corrigir ou registrar imagens.",
-        "Em s�ntese, a separacao da luz em diferentes cores causada pela varia��o da refra��o com o comprimento de onda.",
-        "Em s�ntese, as condi��es em que a imagem n�o se forma adequadamente na retina, exigindo corre��o �ptica.",
-        "Em s�ntese, o estudo da luz como forma de energia que se propaga e permite a vis�o dos objetos."
+        "Em síntese, aparelhos que utilizam lentes, espelhos ou ambos para ampliar, corrigir ou registrar imagens.",
+        "Em síntese, a separacao da luz em diferentes cores causada pela variação da refração com o comprimento de onda.",
+        "Em síntese, as condições em que a imagem não se forma adequadamente na retina, exigindo correção Óptica.",
+        "Em síntese, o estudo da luz como forma de energia que se propaga e permite a visão dos objetos."
       ],
-      "correta": "Em s�ntese, aparelhos que utilizam lentes, espelhos ou ambos para ampliar, corrigir ou registrar imagens.",
-      "comentario": "O resumo correto recupera o n�cleo conceitual de Instrumentos �pticos.",
+      "correta": "Em síntese, aparelhos que utilizam lentes, espelhos ou ambos para ampliar, corrigir ou registrar imagens.",
+      "comentario": "O resumo correto recupera o núcleo conceitual de Instrumentos ópticos.",
       "tempoEstimado": 65,
       "tags": [
         "optica",
@@ -4729,22 +4729,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Dispersao e prismas",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Dispersão e prismas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em F�sica, Dispersao e prismas pode ser definido(a) como:",
+      "enunciado": "Em Física, Dispersão e prismas pode ser definido(a) como:",
       "opcoes": [
-        "a separacao da luz em diferentes cores causada pela varia��o da refra��o com o comprimento de onda",
-        "as condi��es em que a imagem n�o se forma adequadamente na retina, exigindo corre��o �ptica",
-        "o estudo da luz como forma de energia que se propaga e permite a vis�o dos objetos",
-        "as regras que descrevem a propaga��o retil�nea, a independ�ncia e a reversibilidade dos raios de luz"
+        "a separacao da luz em diferentes cores causada pela variação da refração com o comprimento de onda",
+        "as condições em que a imagem não se forma adequadamente na retina, exigindo correção Óptica",
+        "o estudo da luz como forma de energia que se propaga e permite a visão dos objetos",
+        "as regras que descrevem a propagação retilínea, a independência e a reversibilidade dos raios de luz"
       ],
-      "correta": "a separacao da luz em diferentes cores causada pela varia��o da refra��o com o comprimento de onda",
-      "comentario": "Dispersao e prismas refere-se � separacao da luz em diferentes cores causada pela varia��o da refra��o com o comprimento de onda.",
+      "correta": "a separacao da luz em diferentes cores causada pela variação da refração com o comprimento de onda",
+      "comentario": "Dispersão e prismas refere-se à separacao da luz em diferentes cores causada pela variação da refração com o comprimento de onda.",
       "tempoEstimado": 25,
       "tags": [
         "optica",
@@ -4768,22 +4768,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Dispersao e prismas",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Dispersão e prismas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situa��o: um prisma separa a luz branca em varias cores ao atravessa-lo Esse caso exemplifica melhor qual subt�pico?",
+      "enunciado": "Observe a situação: um prisma separa a luz branca em varias cores ao atravessa-lo Esse caso exemplifica melhor qual subtópico?",
       "opcoes": [
-        "Dispersao e prismas",
-        "Defeitos da vis�o",
-        "Natureza e propaga��o da luz",
-        "Princ�pios da �ptica geom�trica"
+        "Dispersão e prismas",
+        "Defeitos da visão",
+        "Natureza e propagação da luz",
+        "Princípios da Óptica geométrica"
       ],
-      "correta": "Dispersao e prismas",
-      "comentario": "A situa��o apresentada � um exemplo de Dispers�o e prismas.",
+      "correta": "Dispersão e prismas",
+      "comentario": "A situação apresentada é um exemplo de Dispersão e prismas.",
       "tempoEstimado": 25,
       "tags": [
         "optica",
@@ -4807,22 +4807,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Dispersao e prismas",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Dispersão e prismas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirma��o descreve corretamente Dispers�o e prismas?",
+      "enunciado": "Qual afirmação descreve corretamente Dispersão e prismas?",
       "opcoes": [
-        "A separacao da luz em diferentes cores causada pela varia��o da refra��o com o comprimento de onda.",
-        "As condi��es em que a imagem n�o se forma adequadamente na retina, exigindo corre��o �ptica.",
-        "O estudo da luz como forma de energia que se propaga e permite a vis�o dos objetos.",
-        "As regras que descrevem a propaga��o retil�nea, a independ�ncia e a reversibilidade dos raios de luz."
+        "A separacao da luz em diferentes cores causada pela variação da refração com o comprimento de onda.",
+        "As condições em que a imagem não se forma adequadamente na retina, exigindo correção Óptica.",
+        "O estudo da luz como forma de energia que se propaga e permite a visão dos objetos.",
+        "As regras que descrevem a propagação retilínea, a independência e a reversibilidade dos raios de luz."
       ],
-      "correta": "A separacao da luz em diferentes cores causada pela varia��o da refra��o com o comprimento de onda.",
-      "comentario": "A alternativa correta resume o conceito de Dispers�o e prismas.",
+      "correta": "A separacao da luz em diferentes cores causada pela variação da refração com o comprimento de onda.",
+      "comentario": "A alternativa correta resume o conceito de Dispersão e prismas.",
       "tempoEstimado": 30,
       "tags": [
         "optica",
@@ -4846,22 +4846,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Dispersao e prismas",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Dispersão e prismas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compat�vel com Dispers�o e prismas?",
+      "enunciado": "Qual alternativa NAO esta compatível com Dispersão e prismas?",
       "opcoes": [
-        "As condi��es em que a imagem n�o se forma adequadamente na retina, exigindo corre��o �ptica.",
-        "A separacao da luz em diferentes cores causada pela varia��o da refra��o com o comprimento de onda.",
-        "Explicar a decomposi��o da luz branca e a acao dos prismas.",
+        "As condições em que a imagem não se forma adequadamente na retina, exigindo correção Óptica.",
+        "A separacao da luz em diferentes cores causada pela variação da refração com o comprimento de onda.",
+        "Explicar a decomposição da luz branca e a acao dos prismas.",
         "Ajuda a compreender a formacao de espectros luminosos e o estudo das cores."
       ],
-      "correta": "As condi��es em que a imagem n�o se forma adequadamente na retina, exigindo corre��o �ptica.",
-      "comentario": "A op��o incompativel descreve outro subt�pico, n�o Dispers�o e prismas.",
+      "correta": "As condições em que a imagem não se forma adequadamente na retina, exigindo correção Óptica.",
+      "comentario": "A opção incompativel descreve outro subtópico, não Dispersão e prismas.",
       "tempoEstimado": 30,
       "tags": [
         "optica",
@@ -4885,22 +4885,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Dispersao e prismas",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Dispersão e prismas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar Dispers�o e prismas, o foco principal e:",
+      "enunciado": "Ao estudar Dispersão e prismas, o foco principal e:",
       "opcoes": [
-        "explicar a decomposi��o da luz branca e a acao dos prismas",
-        "relacionar miopia, hipermetropia e outros defeitos visuais as formas de corre��o",
+        "explicar a decomposição da luz branca e a acao dos prismas",
+        "relacionar miopia, hipermetropia e outros defeitos visuais as formas de correção",
         "compreender como a luz se propaga e torna possivel a observacao visual",
         "aplicar os principios basicos que organizam o comportamento dos raios luminosos"
       ],
-      "correta": "explicar a decomposi��o da luz branca e a acao dos prismas",
-      "comentario": "Dispersao e prismas concentra-se em explicar a decomposi��o da luz branca e a acao dos prismas.",
+      "correta": "explicar a decomposição da luz branca e a acao dos prismas",
+      "comentario": "Dispersão e prismas concentra-se em explicar a decomposição da luz branca e a acao dos prismas.",
       "tempoEstimado": 35,
       "tags": [
         "optica",
@@ -4924,22 +4924,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Dispersao e prismas",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Dispersão e prismas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Defeitos da vis�o trata de as condi��es em que a imagem n�o se forma adequadamente na retina, exigindo corre��o �ptica, Dispersao e prismas destaca:",
+      "enunciado": "Enquanto Defeitos da visão trata de as condições em que a imagem não se forma adequadamente na retina, exigindo correção Óptica, Dispersão e prismas destaca:",
       "opcoes": [
-        "A separacao da luz em diferentes cores causada pela varia��o da refra��o com o comprimento de onda.",
-        "As condi��es em que a imagem n�o se forma adequadamente na retina, exigindo corre��o �ptica.",
-        "O estudo da luz como forma de energia que se propaga e permite a vis�o dos objetos.",
-        "As regras que descrevem a propaga��o retil�nea, a independ�ncia e a reversibilidade dos raios de luz."
+        "A separacao da luz em diferentes cores causada pela variação da refração com o comprimento de onda.",
+        "As condições em que a imagem não se forma adequadamente na retina, exigindo correção Óptica.",
+        "O estudo da luz como forma de energia que se propaga e permite a visão dos objetos.",
+        "As regras que descrevem a propagação retilínea, a independência e a reversibilidade dos raios de luz."
       ],
-      "correta": "A separacao da luz em diferentes cores causada pela varia��o da refra��o com o comprimento de onda.",
-      "comentario": "A compara��o correta mostra a especificidade de Dispers�o e prismas.",
+      "correta": "A separacao da luz em diferentes cores causada pela variação da refração com o comprimento de onda.",
+      "comentario": "A comparação correta mostra a especificidade de Dispersão e prismas.",
       "tempoEstimado": 35,
       "tags": [
         "optica",
@@ -4963,22 +4963,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Dispersao e prismas",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Dispersão e prismas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma an�lise de sala, considera-se que um prisma separa a luz branca em varias cores ao atravessa-lo Para interpretar essa situa��o, � mais adequado mobilizar o conceito de:",
+      "enunciado": "Em uma análise de sala, considera-se que um prisma separa a luz branca em varias cores ao atravessa-lo Para interpretar essa situação, é mais adequado mobilizar o conceito de:",
       "opcoes": [
-        "Dispersao e prismas",
-        "Defeitos da vis�o",
-        "Princ�pios da �ptica geom�trica",
-        "Reflex�o em espelhos planos"
+        "Dispersão e prismas",
+        "Defeitos da visão",
+        "Princípios da Óptica geométrica",
+        "Reflexão em espelhos planos"
       ],
-      "correta": "Dispersao e prismas",
-      "comentario": "O caso descrito � interpretado adequadamente por meio de Dispers�o e prismas.",
+      "correta": "Dispersão e prismas",
+      "comentario": "O caso descrito é interpretado adequadamente por meio de Dispersão e prismas.",
       "tempoEstimado": 40,
       "tags": [
         "optica",
@@ -5002,22 +5002,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Dispersao e prismas",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Dispersão e prismas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situa��o pr�tica depende mais diretamente de Dispersao e prismas?",
+      "enunciado": "Qual situação prática depende mais diretamente de Dispersão e prismas?",
       "opcoes": [
         "a formacao de espectros luminosos e o estudo das cores",
-        "a corre��o visual com �culos e lentes de contato",
+        "a correção visual com óculos e lentes de contato",
         "a formacao de sombras e a iluminacao de ambientes",
         "o uso cotidiano de espelhos planos em banheiros, elevadores e retrovisores internos"
       ],
       "correta": "a formacao de espectros luminosos e o estudo das cores",
-      "comentario": "Dispersao e prismas aparece de modo direto na formacao de espectros luminosos e o estudo das cores.",
+      "comentario": "Dispersão e prismas aparece de modo direto na formacao de espectros luminosos e o estudo das cores.",
       "tempoEstimado": 40,
       "tags": [
         "optica",
@@ -5041,22 +5041,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Dispersao e prismas",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Dispersão e prismas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir de um prisma separa a luz branca em varias cores ao atravessa-lo, qual conclus�o est� mais correta?",
+      "enunciado": "A partir de um prisma separa a luz branca em varias cores ao atravessa-lo, qual conclusão está mais correta?",
       "opcoes": [
-        "o caso e explicado por Dispers�o e prismas.",
-        "o caso e mais bem entendido por Defeitos da vis�o.",
-        "a situa��o anula a import�ncia de Natureza e propaga��o da luz.",
-        "o fen�meno exclui qualquer rela��o com Princ�pios da �ptica geom�trica."
+        "o caso e explicado por Dispersão e prismas.",
+        "o caso e mais bem entendido por Defeitos da visão.",
+        "a situação anula a importância de Natureza e propagação da luz.",
+        "o fenômeno exclui qualquer relação com Princípios da Óptica geométrica."
       ],
-      "correta": "o caso e explicado por Dispers�o e prismas.",
-      "comentario": "A conclus�o adequada retoma a ideia central de Dispers�o e prismas.",
+      "correta": "o caso e explicado por Dispersão e prismas.",
+      "comentario": "A conclusão adequada retoma a ideia central de Dispersão e prismas.",
       "tempoEstimado": 45,
       "tags": [
         "optica",
@@ -5080,22 +5080,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Dispersao e prismas",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Dispersão e prismas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Se um grupo fosse pesquisar Dispers�o e prismas, qual pergunta orientadora seria a mais adequada?",
+      "enunciado": "Se um grupo fosse pesquisar Dispersão e prismas, qual pergunta orientadora seria a mais adequada?",
       "opcoes": [
-        "Como Dispers�o e prismas aparece na formacao de espectros luminosos e o estudo das cores?",
-        "Como Defeitos da vis�o substitui totalmente a formacao de espectros luminosos e o estudo das cores?",
-        "Por que Natureza e propaga��o da luz torna desnecess�rio estudar Dispersao e prismas?",
-        "De que modo Princ�pios da �ptica geom�trica elimina toda medida fisica envolvida?"
+        "Como Dispersão e prismas aparece na formacao de espectros luminosos e o estudo das cores?",
+        "Como Defeitos da visão substitui totalmente a formacao de espectros luminosos e o estudo das cores?",
+        "Por que Natureza e propagação da luz torna desnecessário estudar Dispersão e prismas?",
+        "De que modo Princípios da Óptica geométrica elimina toda medida fisica envolvida?"
       ],
-      "correta": "Como Dispers�o e prismas aparece na formacao de espectros luminosos e o estudo das cores?",
-      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Dispers�o e prismas.",
+      "correta": "Como Dispersão e prismas aparece na formacao de espectros luminosos e o estudo das cores?",
+      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Dispersão e prismas.",
       "tempoEstimado": 45,
       "tags": [
         "optica",
@@ -5119,22 +5119,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Dispersao e prismas",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Dispersão e prismas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em Dispers�o e prismas e pensar que:",
+      "enunciado": "Um erro comum em Dispersão e prismas e pensar que:",
       "opcoes": [
         "o prisma colore a luz branca com tintas invisiveis do proprio material",
-        "todos os Defeitos da vis�o sao corrigidos pelo mesmo tipo de lente",
+        "todos os Defeitos da visão sao corrigidos pelo mesmo tipo de lente",
         "a luz so existe quando toca diretamente os olhos do observador",
-        "raios de luz se anulam quando se cruzam no mesmo espa�o"
+        "raios de luz se anulam quando se cruzam no mesmo espaço"
       ],
       "correta": "o prisma colore a luz branca com tintas invisiveis do proprio material",
-      "comentario": "Esse e um equ�voco frequente porque contraria a defini��o correta de Dispers�o e prismas.",
+      "comentario": "Esse e um equívoco frequente porque contraria a definição correta de Dispersão e prismas.",
       "tempoEstimado": 50,
       "tags": [
         "optica",
@@ -5158,22 +5158,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Dispersao e prismas",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Dispersão e prismas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"as cores vistas em um prisma surgem porque o vidro adiciona pigmentos invisiveis a luz\". A avalia��o mais adequada e:",
+      "enunciado": "Um estudante afirma: \"as cores vistas em um prisma surgem porque o vidro adiciona pigmentos invisiveis a luz\". A avaliação mais adequada e:",
       "opcoes": [
-        "A afirma��o est� incorreta, porque a separacao da luz em diferentes cores causada pela varia��o da refra��o com o comprimento de onda.",
-        "A afirma��o est� correta, pois resume integralmente Dispers�o e prismas.",
-        "A afirma��o est� correta, porque toda situa��o do tema depende apenas dessa ideia.",
-        "A afirma��o est� incorreta apenas porque n�o apresenta uma unidade de medida."
+        "A afirmação está incorreta, porque a separacao da luz em diferentes cores causada pela variação da refração com o comprimento de onda.",
+        "A afirmação está correta, pois resume integralmente Dispersão e prismas.",
+        "A afirmação está correta, porque toda situação do tema depende apenas dessa ideia.",
+        "A afirmação está incorreta apenas porque não apresenta uma unidade de medida."
       ],
-      "correta": "A afirma��o est� incorreta, porque a separacao da luz em diferentes cores causada pela varia��o da refra��o com o comprimento de onda.",
-      "comentario": "A fala do estudante apresenta um equ�voco conceitual sobre Dispers�o e prismas.",
+      "correta": "A afirmação está incorreta, porque a separacao da luz em diferentes cores causada pela variação da refração com o comprimento de onda.",
+      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre Dispersão e prismas.",
       "tempoEstimado": 55,
       "tags": [
         "optica",
@@ -5197,22 +5197,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Dispersao e prismas",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Dispersão e prismas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se Dispers�o e prismas fosse ignorado(a) ao analisar a formacao de espectros luminosos e o estudo das cores, o resultado mais prov�vel seria:",
+      "enunciado": "Se Dispersão e prismas fosse ignorado(a) ao analisar a formacao de espectros luminosos e o estudo das cores, o resultado mais provável seria:",
       "opcoes": [
-        "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre a formacao de espectros luminosos e o estudo das cores.",
-        "a situa��o seria explicada automaticamente por Defeitos da vis�o, sem necessidade de an�lise.",
-        "nenhuma interpretacao fisica seria alterada, porque Dispersao e prismas n�o interfere nesse tipo de problema.",
-        "o fen�meno deixaria de existir apenas por n�o ser nomeado."
+        "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a formacao de espectros luminosos e o estudo das cores.",
+        "a situação seria explicada automaticamente por Defeitos da visão, sem necessidade de análise.",
+        "nenhuma interpretacao fisica seria alterada, porque Dispersão e prismas não interfere nesse tipo de problema.",
+        "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
-      "correta": "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre a formacao de espectros luminosos e o estudo das cores.",
-      "comentario": "Ignorar Dispers�o e prismas compromete a leitura fisica da situa��o apresentada.",
+      "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a formacao de espectros luminosos e o estudo das cores.",
+      "comentario": "Ignorar Dispersão e prismas compromete a leitura fisica da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "optica",
@@ -5236,22 +5236,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Dispersao e prismas",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Dispersão e prismas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma aplica��o cotidiana ou escolar, Dispersao e prismas ajuda principalmente a compreender:",
+      "enunciado": "Em uma aplicação cotidiana ou escolar, Dispersão e prismas ajuda principalmente a compreender:",
       "opcoes": [
         "a formacao de espectros luminosos e o estudo das cores",
-        "a corre��o visual com �culos e lentes de contato",
+        "a correção visual com óculos e lentes de contato",
         "a formacao de sombras e a iluminacao de ambientes",
-        "a an�lise de trajet�rias luminosas em esquemas geometricos"
+        "a análise de trajetórias luminosas em esquemas geometricos"
       ],
       "correta": "a formacao de espectros luminosos e o estudo das cores",
-      "comentario": "A aplica��o escolhida e a que melhor representa Dispers�o e prismas.",
+      "comentario": "A aplicação escolhida e a que melhor representa Dispersão e prismas.",
       "tempoEstimado": 60,
       "tags": [
         "optica",
@@ -5275,22 +5275,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Dispersao e prismas",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Dispersão e prismas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual resumo sintetiza melhor a ideia central de Dispersao e prismas?",
+      "enunciado": "Qual resumo sintetiza melhor a ideia central de Dispersão e prismas?",
       "opcoes": [
-        "Em s�ntese, a separacao da luz em diferentes cores causada pela varia��o da refra��o com o comprimento de onda.",
-        "Em s�ntese, as condi��es em que a imagem n�o se forma adequadamente na retina, exigindo corre��o �ptica.",
-        "Em s�ntese, o estudo da luz como forma de energia que se propaga e permite a vis�o dos objetos.",
-        "Em s�ntese, as regras que descrevem a propaga��o retil�nea, a independ�ncia e a reversibilidade dos raios de luz."
+        "Em síntese, a separacao da luz em diferentes cores causada pela variação da refração com o comprimento de onda.",
+        "Em síntese, as condições em que a imagem não se forma adequadamente na retina, exigindo correção Óptica.",
+        "Em síntese, o estudo da luz como forma de energia que se propaga e permite a visão dos objetos.",
+        "Em síntese, as regras que descrevem a propagação retilínea, a independência e a reversibilidade dos raios de luz."
       ],
-      "correta": "Em s�ntese, a separacao da luz em diferentes cores causada pela varia��o da refra��o com o comprimento de onda.",
-      "comentario": "O resumo correto recupera o n�cleo conceitual de Dispers�o e prismas.",
+      "correta": "Em síntese, a separacao da luz em diferentes cores causada pela variação da refração com o comprimento de onda.",
+      "comentario": "O resumo correto recupera o núcleo conceitual de Dispersão e prismas.",
       "tempoEstimado": 65,
       "tags": [
         "optica",
@@ -5314,22 +5314,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Defeitos da vis�o",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Defeitos da visão",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em F�sica, Defeitos da vis�o pode ser definido(a) como:",
+      "enunciado": "Em Física, Defeitos da visão pode ser definido(a) como:",
       "opcoes": [
-        "as condi��es em que a imagem n�o se forma adequadamente na retina, exigindo corre��o �ptica",
-        "o estudo da luz como forma de energia que se propaga e permite a vis�o dos objetos",
-        "as regras que descrevem a propaga��o retil�nea, a independ�ncia e a reversibilidade dos raios de luz",
-        "o fen�meno em que a luz retorna ao meio de origem e forma imagens virtuais sim�tricas em espelhos planos"
+        "as condições em que a imagem não se forma adequadamente na retina, exigindo correção Óptica",
+        "o estudo da luz como forma de energia que se propaga e permite a visão dos objetos",
+        "as regras que descrevem a propagação retilínea, a independência e a reversibilidade dos raios de luz",
+        "o fenômeno em que a luz retorna ao meio de origem e forma imagens virtuais simétricas em espelhos planos"
       ],
-      "correta": "as condi��es em que a imagem n�o se forma adequadamente na retina, exigindo corre��o �ptica",
-      "comentario": "Defeitos da vis�o refere-se �s condi��es em que a imagem n�o se forma adequadamente na retina, exigindo corre��o �ptica.",
+      "correta": "as condições em que a imagem não se forma adequadamente na retina, exigindo correção Óptica",
+      "comentario": "Defeitos da visão refere-se às condições em que a imagem não se forma adequadamente na retina, exigindo correção Óptica.",
       "tempoEstimado": 25,
       "tags": [
         "optica",
@@ -5353,22 +5353,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Defeitos da vis�o",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Defeitos da visão",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situa��o: uma pessoa enxerga mal de longe ou de perto e precisa de lentes corretivas adequadas Esse caso exemplifica melhor qual subt�pico?",
+      "enunciado": "Observe a situação: uma pessoa enxerga mal de longe ou de perto e precisa de lentes corretivas adequadas Esse caso exemplifica melhor qual subtópico?",
       "opcoes": [
-        "Defeitos da vis�o",
-        "Natureza e propaga��o da luz",
-        "Princ�pios da �ptica geom�trica",
-        "Reflex�o em espelhos planos"
+        "Defeitos da visão",
+        "Natureza e propagação da luz",
+        "Princípios da Óptica geométrica",
+        "Reflexão em espelhos planos"
       ],
-      "correta": "Defeitos da vis�o",
-      "comentario": "A situa��o apresentada � um exemplo de Defeitos da vis�o.",
+      "correta": "Defeitos da visão",
+      "comentario": "A situação apresentada é um exemplo de Defeitos da visão.",
       "tempoEstimado": 25,
       "tags": [
         "optica",
@@ -5392,22 +5392,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Defeitos da vis�o",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Defeitos da visão",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirma��o descreve corretamente Defeitos da vis�o?",
+      "enunciado": "Qual afirmação descreve corretamente Defeitos da visão?",
       "opcoes": [
-        "As condi��es em que a imagem n�o se forma adequadamente na retina, exigindo corre��o �ptica.",
-        "O estudo da luz como forma de energia que se propaga e permite a vis�o dos objetos.",
-        "As regras que descrevem a propaga��o retil�nea, a independ�ncia e a reversibilidade dos raios de luz.",
-        "O fen�meno em que a luz retorna ao meio de origem e forma imagens virtuais sim�tricas em espelhos planos."
+        "As condições em que a imagem não se forma adequadamente na retina, exigindo correção Óptica.",
+        "O estudo da luz como forma de energia que se propaga e permite a visão dos objetos.",
+        "As regras que descrevem a propagação retilínea, a independência e a reversibilidade dos raios de luz.",
+        "O fenômeno em que a luz retorna ao meio de origem e forma imagens virtuais simétricas em espelhos planos."
       ],
-      "correta": "As condi��es em que a imagem n�o se forma adequadamente na retina, exigindo corre��o �ptica.",
-      "comentario": "A alternativa correta resume o conceito de Defeitos da vis�o.",
+      "correta": "As condições em que a imagem não se forma adequadamente na retina, exigindo correção Óptica.",
+      "comentario": "A alternativa correta resume o conceito de Defeitos da visão.",
       "tempoEstimado": 30,
       "tags": [
         "optica",
@@ -5431,22 +5431,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Defeitos da vis�o",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Defeitos da visão",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compat�vel com Defeitos da vis�o?",
+      "enunciado": "Qual alternativa NAO esta compatível com Defeitos da visão?",
       "opcoes": [
-        "O estudo da luz como forma de energia que se propaga e permite a vis�o dos objetos.",
-        "As condi��es em que a imagem n�o se forma adequadamente na retina, exigindo corre��o �ptica.",
-        "Relacionar miopia, hipermetropia e outros defeitos visuais as formas de corre��o.",
-        "Ajuda a compreender a corre��o visual com �culos e lentes de contato."
+        "O estudo da luz como forma de energia que se propaga e permite a visão dos objetos.",
+        "As condições em que a imagem não se forma adequadamente na retina, exigindo correção Óptica.",
+        "Relacionar miopia, hipermetropia e outros defeitos visuais as formas de correção.",
+        "Ajuda a compreender a correção visual com óculos e lentes de contato."
       ],
-      "correta": "O estudo da luz como forma de energia que se propaga e permite a vis�o dos objetos.",
-      "comentario": "A op��o incompativel descreve outro subt�pico, n�o Defeitos da vis�o.",
+      "correta": "O estudo da luz como forma de energia que se propaga e permite a visão dos objetos.",
+      "comentario": "A opção incompativel descreve outro subtópico, não Defeitos da visão.",
       "tempoEstimado": 30,
       "tags": [
         "optica",
@@ -5470,22 +5470,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Defeitos da vis�o",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Defeitos da visão",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar Defeitos da vis�o, o foco principal e:",
+      "enunciado": "Ao estudar Defeitos da visão, o foco principal e:",
       "opcoes": [
-        "relacionar miopia, hipermetropia e outros defeitos visuais as formas de corre��o",
+        "relacionar miopia, hipermetropia e outros defeitos visuais as formas de correção",
         "compreender como a luz se propaga e torna possivel a observacao visual",
         "aplicar os principios basicos que organizam o comportamento dos raios luminosos",
-        "relacionar reflex�o regular com a formacao de imagens em espelhos planos"
+        "relacionar reflexão regular com a formacao de imagens em espelhos planos"
       ],
-      "correta": "relacionar miopia, hipermetropia e outros defeitos visuais as formas de corre��o",
-      "comentario": "Defeitos da vis�o concentra-se em relacionar miopia, hipermetropia e outros defeitos visuais as formas de corre��o.",
+      "correta": "relacionar miopia, hipermetropia e outros defeitos visuais as formas de correção",
+      "comentario": "Defeitos da visão concentra-se em relacionar miopia, hipermetropia e outros defeitos visuais as formas de correção.",
       "tempoEstimado": 35,
       "tags": [
         "optica",
@@ -5509,22 +5509,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Defeitos da vis�o",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Defeitos da visão",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Natureza e propaga��o da luz trata de o estudo da luz como forma de energia que se propaga e permite a vis�o dos objetos, Defeitos da vis�o destaca:",
+      "enunciado": "Enquanto Natureza e propagação da luz trata de o estudo da luz como forma de energia que se propaga e permite a visão dos objetos, Defeitos da visão destaca:",
       "opcoes": [
-        "As condi��es em que a imagem n�o se forma adequadamente na retina, exigindo corre��o �ptica.",
-        "O estudo da luz como forma de energia que se propaga e permite a vis�o dos objetos.",
-        "As regras que descrevem a propaga��o retil�nea, a independ�ncia e a reversibilidade dos raios de luz.",
-        "O fen�meno em que a luz retorna ao meio de origem e forma imagens virtuais sim�tricas em espelhos planos."
+        "As condições em que a imagem não se forma adequadamente na retina, exigindo correção Óptica.",
+        "O estudo da luz como forma de energia que se propaga e permite a visão dos objetos.",
+        "As regras que descrevem a propagação retilínea, a independência e a reversibilidade dos raios de luz.",
+        "O fenômeno em que a luz retorna ao meio de origem e forma imagens virtuais simétricas em espelhos planos."
       ],
-      "correta": "As condi��es em que a imagem n�o se forma adequadamente na retina, exigindo corre��o �ptica.",
-      "comentario": "A compara��o correta mostra a especificidade de Defeitos da vis�o.",
+      "correta": "As condições em que a imagem não se forma adequadamente na retina, exigindo correção Óptica.",
+      "comentario": "A comparação correta mostra a especificidade de Defeitos da visão.",
       "tempoEstimado": 35,
       "tags": [
         "optica",
@@ -5548,22 +5548,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Defeitos da vis�o",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Defeitos da visão",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma an�lise de sala, considera-se que uma pessoa enxerga mal de longe ou de perto e precisa de lentes corretivas adequadas Para interpretar essa situa��o, � mais adequado mobilizar o conceito de:",
+      "enunciado": "Em uma análise de sala, considera-se que uma pessoa enxerga mal de longe ou de perto e precisa de lentes corretivas adequadas Para interpretar essa situação, é mais adequado mobilizar o conceito de:",
       "opcoes": [
-        "Defeitos da vis�o",
-        "Natureza e propaga��o da luz",
-        "Reflex�o em espelhos planos",
-        "Espelhos esf�ricos"
+        "Defeitos da visão",
+        "Natureza e propagação da luz",
+        "Reflexão em espelhos planos",
+        "Espelhos esféricos"
       ],
-      "correta": "Defeitos da vis�o",
-      "comentario": "O caso descrito � interpretado adequadamente por meio de Defeitos da vis�o.",
+      "correta": "Defeitos da visão",
+      "comentario": "O caso descrito é interpretado adequadamente por meio de Defeitos da visão.",
       "tempoEstimado": 40,
       "tags": [
         "optica",
@@ -5587,22 +5587,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Defeitos da vis�o",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Defeitos da visão",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situa��o pr�tica depende mais diretamente de Defeitos da vis�o?",
+      "enunciado": "Qual situação prática depende mais diretamente de Defeitos da visão?",
       "opcoes": [
-        "a corre��o visual com �culos e lentes de contato",
+        "a correção visual com óculos e lentes de contato",
         "a formacao de sombras e a iluminacao de ambientes",
-        "a an�lise de trajet�rias luminosas em esquemas geometricos",
+        "a análise de trajetórias luminosas em esquemas geometricos",
         "espelhos de maquiagem, retrovisores externos e refletores"
       ],
-      "correta": "a corre��o visual com �culos e lentes de contato",
-      "comentario": "Defeitos da vis�o aparece de modo direto na corre��o visual com �culos e lentes de contato.",
+      "correta": "a correção visual com óculos e lentes de contato",
+      "comentario": "Defeitos da visão aparece de modo direto na correção visual com óculos e lentes de contato.",
       "tempoEstimado": 40,
       "tags": [
         "optica",
@@ -5626,22 +5626,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Defeitos da vis�o",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Defeitos da visão",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir de uma pessoa enxerga mal de longe ou de perto e precisa de lentes corretivas adequadas, qual conclus�o est� mais correta?",
+      "enunciado": "A partir de uma pessoa enxerga mal de longe ou de perto e precisa de lentes corretivas adequadas, qual conclusão está mais correta?",
       "opcoes": [
-        "o caso e explicado por Defeitos da vis�o.",
-        "o caso e mais bem entendido por Natureza e propaga��o da luz.",
-        "a situa��o anula a import�ncia de Princ�pios da �ptica geom�trica.",
-        "o fen�meno exclui qualquer rela��o com Reflex�o em espelhos planos."
+        "o caso e explicado por Defeitos da visão.",
+        "o caso e mais bem entendido por Natureza e propagação da luz.",
+        "a situação anula a importância de Princípios da Óptica geométrica.",
+        "o fenômeno exclui qualquer relação com Reflexão em espelhos planos."
       ],
-      "correta": "o caso e explicado por Defeitos da vis�o.",
-      "comentario": "A conclus�o adequada retoma a ideia central de Defeitos da vis�o.",
+      "correta": "o caso e explicado por Defeitos da visão.",
+      "comentario": "A conclusão adequada retoma a ideia central de Defeitos da visão.",
       "tempoEstimado": 45,
       "tags": [
         "optica",
@@ -5665,22 +5665,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Defeitos da vis�o",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Defeitos da visão",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Se um grupo fosse pesquisar Defeitos da vis�o, qual pergunta orientadora seria a mais adequada?",
+      "enunciado": "Se um grupo fosse pesquisar Defeitos da visão, qual pergunta orientadora seria a mais adequada?",
       "opcoes": [
-        "Como Defeitos da vis�o aparece na corre��o visual com �culos e lentes de contato?",
-        "Como Natureza e propaga��o da luz substitui totalmente a corre��o visual com �culos e lentes de contato?",
-        "Por que Princ�pios da �ptica geom�trica torna desnecess�rio estudar Defeitos da vis�o?",
-        "De que modo Reflex�o em espelhos planos elimina toda medida fisica envolvida?"
+        "Como Defeitos da visão aparece na correção visual com óculos e lentes de contato?",
+        "Como Natureza e propagação da luz substitui totalmente a correção visual com óculos e lentes de contato?",
+        "Por que Princípios da Óptica geométrica torna desnecessário estudar Defeitos da visão?",
+        "De que modo Reflexão em espelhos planos elimina toda medida fisica envolvida?"
       ],
-      "correta": "Como Defeitos da vis�o aparece na corre��o visual com �culos e lentes de contato?",
-      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Defeitos da vis�o.",
+      "correta": "Como Defeitos da visão aparece na correção visual com óculos e lentes de contato?",
+      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Defeitos da visão.",
       "tempoEstimado": 45,
       "tags": [
         "optica",
@@ -5704,22 +5704,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Defeitos da vis�o",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Defeitos da visão",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em Defeitos da vis�o e pensar que:",
+      "enunciado": "Um erro comum em Defeitos da visão e pensar que:",
       "opcoes": [
-        "todos os Defeitos da vis�o sao corrigidos pelo mesmo tipo de lente",
+        "todos os Defeitos da visão sao corrigidos pelo mesmo tipo de lente",
         "a luz so existe quando toca diretamente os olhos do observador",
-        "raios de luz se anulam quando se cruzam no mesmo espa�o",
+        "raios de luz se anulam quando se cruzam no mesmo espaço",
         "a imagem no espelho plano fica localizada sobre a superficie refletora"
       ],
-      "correta": "todos os Defeitos da vis�o sao corrigidos pelo mesmo tipo de lente",
-      "comentario": "Esse e um equ�voco frequente porque contraria a defini��o correta de Defeitos da vis�o.",
+      "correta": "todos os Defeitos da visão sao corrigidos pelo mesmo tipo de lente",
+      "comentario": "Esse e um equívoco frequente porque contraria a definição correta de Defeitos da visão.",
       "tempoEstimado": 50,
       "tags": [
         "optica",
@@ -5743,22 +5743,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Defeitos da vis�o",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Defeitos da visão",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"qualquer problema visual pode ser resolvido com qualquer lente corretiva\". A avalia��o mais adequada e:",
+      "enunciado": "Um estudante afirma: \"qualquer problema visual pode ser resolvido com qualquer lente corretiva\". A avaliação mais adequada e:",
       "opcoes": [
-        "A afirma��o est� incorreta, porque as condi��es em que a imagem n�o se forma adequadamente na retina, exigindo corre��o �ptica.",
-        "A afirma��o est� correta, pois resume integralmente Defeitos da vis�o.",
-        "A afirma��o est� correta, porque toda situa��o do tema depende apenas dessa ideia.",
-        "A afirma��o est� incorreta apenas porque n�o apresenta uma unidade de medida."
+        "A afirmação está incorreta, porque as condições em que a imagem não se forma adequadamente na retina, exigindo correção Óptica.",
+        "A afirmação está correta, pois resume integralmente Defeitos da visão.",
+        "A afirmação está correta, porque toda situação do tema depende apenas dessa ideia.",
+        "A afirmação está incorreta apenas porque não apresenta uma unidade de medida."
       ],
-      "correta": "A afirma��o est� incorreta, porque as condi��es em que a imagem n�o se forma adequadamente na retina, exigindo corre��o �ptica.",
-      "comentario": "A fala do estudante apresenta um equ�voco conceitual sobre Defeitos da vis�o.",
+      "correta": "A afirmação está incorreta, porque as condições em que a imagem não se forma adequadamente na retina, exigindo correção Óptica.",
+      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre Defeitos da visão.",
       "tempoEstimado": 55,
       "tags": [
         "optica",
@@ -5782,22 +5782,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Defeitos da vis�o",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Defeitos da visão",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se Defeitos da vis�o fosse ignorado(a) ao analisar a corre��o visual com �culos e lentes de contato, o resultado mais prov�vel seria:",
+      "enunciado": "Se Defeitos da visão fosse ignorado(a) ao analisar a correção visual com óculos e lentes de contato, o resultado mais provável seria:",
       "opcoes": [
-        "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre a corre��o visual com �culos e lentes de contato.",
-        "a situa��o seria explicada automaticamente por Natureza e propaga��o da luz, sem necessidade de an�lise.",
-        "nenhuma interpretacao fisica seria alterada, porque Defeitos da vis�o n�o interfere nesse tipo de problema.",
-        "o fen�meno deixaria de existir apenas por n�o ser nomeado."
+        "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a correção visual com óculos e lentes de contato.",
+        "a situação seria explicada automaticamente por Natureza e propagação da luz, sem necessidade de análise.",
+        "nenhuma interpretacao fisica seria alterada, porque Defeitos da visão não interfere nesse tipo de problema.",
+        "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
-      "correta": "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre a corre��o visual com �culos e lentes de contato.",
-      "comentario": "Ignorar Defeitos da vis�o compromete a leitura fisica da situa��o apresentada.",
+      "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a correção visual com óculos e lentes de contato.",
+      "comentario": "Ignorar Defeitos da visão compromete a leitura fisica da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "optica",
@@ -5821,22 +5821,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Defeitos da vis�o",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Defeitos da visão",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma aplica��o cotidiana ou escolar, Defeitos da vis�o ajuda principalmente a compreender:",
+      "enunciado": "Em uma aplicação cotidiana ou escolar, Defeitos da visão ajuda principalmente a compreender:",
       "opcoes": [
-        "a corre��o visual com �culos e lentes de contato",
+        "a correção visual com óculos e lentes de contato",
         "a formacao de sombras e a iluminacao de ambientes",
-        "a an�lise de trajet�rias luminosas em esquemas geometricos",
+        "a análise de trajetórias luminosas em esquemas geometricos",
         "o uso cotidiano de espelhos planos em banheiros, elevadores e retrovisores internos"
       ],
-      "correta": "a corre��o visual com �culos e lentes de contato",
-      "comentario": "A aplica��o escolhida e a que melhor representa Defeitos da vis�o.",
+      "correta": "a correção visual com óculos e lentes de contato",
+      "comentario": "A aplicação escolhida e a que melhor representa Defeitos da visão.",
       "tempoEstimado": 60,
       "tags": [
         "optica",
@@ -5860,22 +5860,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
-      "topico": "�ptica",
-      "subtopico": "Defeitos da vis�o",
+      "materia": "Física",
+      "topico": "Óptica",
+      "subtopico": "Defeitos da visão",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual resumo sintetiza melhor a ideia central de Defeitos da vis�o?",
+      "enunciado": "Qual resumo sintetiza melhor a ideia central de Defeitos da visão?",
       "opcoes": [
-        "Em s�ntese, as condi��es em que a imagem n�o se forma adequadamente na retina, exigindo corre��o �ptica.",
-        "Em s�ntese, o estudo da luz como forma de energia que se propaga e permite a vis�o dos objetos.",
-        "Em s�ntese, as regras que descrevem a propaga��o retil�nea, a independ�ncia e a reversibilidade dos raios de luz.",
-        "Em s�ntese, o fen�meno em que a luz retorna ao meio de origem e forma imagens virtuais sim�tricas em espelhos planos."
+        "Em síntese, as condições em que a imagem não se forma adequadamente na retina, exigindo correção Óptica.",
+        "Em síntese, o estudo da luz como forma de energia que se propaga e permite a visão dos objetos.",
+        "Em síntese, as regras que descrevem a propagação retilínea, a independência e a reversibilidade dos raios de luz.",
+        "Em síntese, o fenômeno em que a luz retorna ao meio de origem e forma imagens virtuais simétricas em espelhos planos."
       ],
-      "correta": "Em s�ntese, as condi��es em que a imagem n�o se forma adequadamente na retina, exigindo corre��o �ptica.",
-      "comentario": "O resumo correto recupera o n�cleo conceitual de Defeitos da vis�o.",
+      "correta": "Em síntese, as condições em que a imagem não se forma adequadamente na retina, exigindo correção Óptica.",
+      "comentario": "O resumo correto recupera o núcleo conceitual de Defeitos da visão.",
       "tempoEstimado": 65,
       "tags": [
         "optica",

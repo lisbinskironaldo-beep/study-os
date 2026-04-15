@@ -1,6 +1,6 @@
-﻿export const magnetismo = {
+export const magnetismo = {
   "id": "fisica_magnetismo",
-  "materia": "F�sica",
+  "materia": "Física",
   "serie": [
     3
   ],
@@ -9,35 +9,35 @@
     "disciplinaId": "fisica",
     "base": "ESCOLAR",
     "seloEditorial": "VERIFICADA",
-    "eixo": "Campos magn�ticos e eletromagnetismo",
-    "frente": "Fen�menos magn�ticos, indu��o e aplica��es tecnol�gicas",
+    "eixo": "Campos magnéticos e eletromagnetismo",
+    "frente": "Fenômenos magnéticos, indução e aplicações tecnológicas",
     "searchAliases": [
       "magnetismo",
-      "campo magn�tico",
-      "�m�s",
-      "indu��o eletromagn�tica",
-      "eletro�m�",
-      "motor el�trico"
+      "campo magnético",
+      "ímãs",
+      "indução eletromagnética",
+      "eletroímã",
+      "motor elétrico"
     ],
     "subtopicosBase": [
-      "�m�s e polos magn�ticos",
-      "Campo magn�tico",
+      "ímãs e polos magnéticos",
+      "Campo magnético",
       "Linhas de campo",
-      "Campo magn�tico terrestre",
-      "For�a magn�tica sobre cargas",
-      "For�a magn�tica em condutores",
-      "Indu��o eletromagn�tica",
-      "Eletro�m�s",
-      "Motores el�tricos",
-      "Aplica��es do magnetismo"
+      "Campo magnético terrestre",
+      "Força magnética sobre cargas",
+      "Força magnética em condutores",
+      "Indução eletromagnética",
+      "Eletroímãs",
+      "Motores elétricos",
+      "Aplicações do magnetismo"
     ],
     "habilidadesBase": [
-      "identificar propriedades b�sicas de �m�s e campos magn�ticos",
+      "identificar propriedades básicas de ímãs e campos magnéticos",
       "interpretar linhas de campo e campo terrestre",
-      "analisar for�a magn�tica em cargas e condutores",
-      "explicar indu��o eletromagn�tica",
-      "relacionar eletro�m�s e motores el�tricos ao cotidiano",
-      "aplicar conceitos de magnetismo a situa��es tecnol�gicas"
+      "analisar força magnética em cargas e condutores",
+      "explicar indução eletromagnética",
+      "relacionar eletroímãs e motores elétricos ao cotidiano",
+      "aplicar conceitos de magnetismo a situações tecnológicas"
     ],
     "auditado": true,
     "auditadoEm": "2026-04-12",
@@ -49,22 +49,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "�m�s e polos magn�ticos",
+      "subtopico": "ímãs e polos magnéticos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em F�sica, �m�s e polos magn�ticos pode ser definido(a) como:",
+      "enunciado": "Em Física, ímãs e polos magnéticos pode ser definido(a) como:",
       "opcoes": [
-        "corpos que apresentam polos magn�ticos insepar�veis, capazes de atrair ou repelir outros �m�s e materiais ferromagn�ticos",
-        "a regi�o do espa�o em que for�as magn�ticas podem atuar sobre �m�s, cargas ou correntes",
-        "as representa��es gr�ficas que indicam dire��o, sentido e intensidade relativa do Campo magn�tico",
-        "o campo gerado pela Terra que orienta b�ssolas e participa de diversos fen�menos naturais"
+        "corpos que apresentam polos magnéticos inseparáveis, capazes de atrair ou repelir outros ímãs e materiais ferromagnéticos",
+        "a região do espaço em que forças magnéticas podem atuar sobre ímãs, cargas ou correntes",
+        "as representações gráficas que indicam direção, sentido e intensidade relativa do Campo magnético",
+        "o campo gerado pela Terra que orienta bússolas e participa de diversos fenômenos naturais"
       ],
-      "correta": "corpos que apresentam polos magn�ticos insepar�veis, capazes de atrair ou repelir outros �m�s e materiais ferromagn�ticos",
-      "comentario": "�m�s e polos magn�ticos refere-se a corpos que apresentam polos magn�ticos insepar�veis, capazes de atrair ou repelir outros �m�s e materiais ferromagn�ticos.",
+      "correta": "corpos que apresentam polos magnéticos inseparáveis, capazes de atrair ou repelir outros ímãs e materiais ferromagnéticos",
+      "comentario": "ímãs e polos magnéticos refere-se a corpos que apresentam polos magnéticos inseparáveis, capazes de atrair ou repelir outros ímãs e materiais ferromagnéticos.",
       "tempoEstimado": 25,
       "tags": [
         "magnetismo",
@@ -88,22 +88,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "�m�s e polos magn�ticos",
+      "subtopico": "ímãs e polos magnéticos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situa��o: dois �m�s se aproximam e podem se atrair ou se repelir conforme a orientacao dos polos Esse caso exemplifica melhor qual subt�pico?",
+      "enunciado": "Observe a situação: dois ímãs se aproximam e podem se atrair ou se repelir conforme a orientacao dos polos Esse caso exemplifica melhor qual subtópico?",
       "opcoes": [
-        "�m�s e polos magn�ticos",
-        "Campo magn�tico",
+        "ímãs e polos magnéticos",
+        "Campo magnético",
         "Linhas de campo",
-        "Campo magn�tico terrestre"
+        "Campo magnético terrestre"
       ],
-      "correta": "�m�s e polos magn�ticos",
-      "comentario": "A situa��o apresentada � um exemplo de �m�s e polos magn�ticos.",
+      "correta": "ímãs e polos magnéticos",
+      "comentario": "A situação apresentada é um exemplo de ímãs e polos magnéticos.",
       "tempoEstimado": 25,
       "tags": [
         "magnetismo",
@@ -127,22 +127,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "�m�s e polos magn�ticos",
+      "subtopico": "ímãs e polos magnéticos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirma��o descreve corretamente �m�s e polos magn�ticos?",
+      "enunciado": "Qual afirmação descreve corretamente ímãs e polos magnéticos?",
       "opcoes": [
-        "Corpos que apresentam polos magn�ticos insepar�veis, capazes de atrair ou repelir outros �m�s e materiais ferromagn�ticos.",
-        "A regi�o do espa�o em que for�as magn�ticas podem atuar sobre �m�s, cargas ou correntes.",
-        "As representa��es gr�ficas que indicam dire��o, sentido e intensidade relativa do Campo magn�tico.",
-        "O campo gerado pela Terra que orienta b�ssolas e participa de diversos fen�menos naturais."
+        "Corpos que apresentam polos magnéticos inseparáveis, capazes de atrair ou repelir outros ímãs e materiais ferromagnéticos.",
+        "A região do espaço em que forças magnéticas podem atuar sobre ímãs, cargas ou correntes.",
+        "As representações gráficas que indicam direção, sentido e intensidade relativa do Campo magnético.",
+        "O campo gerado pela Terra que orienta bússolas e participa de diversos fenômenos naturais."
       ],
-      "correta": "Corpos que apresentam polos magn�ticos insepar�veis, capazes de atrair ou repelir outros �m�s e materiais ferromagn�ticos.",
-      "comentario": "A alternativa correta resume o conceito de �m�s e polos magn�ticos.",
+      "correta": "Corpos que apresentam polos magnéticos inseparáveis, capazes de atrair ou repelir outros ímãs e materiais ferromagnéticos.",
+      "comentario": "A alternativa correta resume o conceito de ímãs e polos magnéticos.",
       "tempoEstimado": 30,
       "tags": [
         "magnetismo",
@@ -166,22 +166,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "�m�s e polos magn�ticos",
+      "subtopico": "ímãs e polos magnéticos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compat�vel com �m�s e polos magn�ticos?",
+      "enunciado": "Qual alternativa NAO esta compatível com ímãs e polos magnéticos?",
       "opcoes": [
-        "A regi�o do espa�o em que for�as magn�ticas podem atuar sobre �m�s, cargas ou correntes.",
-        "Corpos que apresentam polos magn�ticos insepar�veis, capazes de atrair ou repelir outros �m�s e materiais ferromagn�ticos.",
-        "Identificar propriedades de polos magn�ticos e intera��es entre �m�s.",
-        "Ajuda a compreender fechos magn�ticos, b�ssolas simples e separacao de materiais met�licos."
+        "A região do espaço em que forças magnéticas podem atuar sobre ímãs, cargas ou correntes.",
+        "Corpos que apresentam polos magnéticos inseparáveis, capazes de atrair ou repelir outros ímãs e materiais ferromagnéticos.",
+        "Identificar propriedades de polos magnéticos e interações entre ímãs.",
+        "Ajuda a compreender fechos magnéticos, bússolas simples e separacao de materiais metálicos."
       ],
-      "correta": "A regi�o do espa�o em que for�as magn�ticas podem atuar sobre �m�s, cargas ou correntes.",
-      "comentario": "A op��o incompativel descreve outro subt�pico, n�o �m�s e polos magn�ticos.",
+      "correta": "A região do espaço em que forças magnéticas podem atuar sobre ímãs, cargas ou correntes.",
+      "comentario": "A opção incompativel descreve outro subtópico, não ímãs e polos magnéticos.",
       "tempoEstimado": 30,
       "tags": [
         "magnetismo",
@@ -205,22 +205,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "�m�s e polos magn�ticos",
+      "subtopico": "ímãs e polos magnéticos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar �m�s e polos magn�ticos, o foco principal e:",
+      "enunciado": "Ao estudar ímãs e polos magnéticos, o foco principal e:",
       "opcoes": [
-        "identificar propriedades de polos magn�ticos e intera��es entre �m�s",
-        "compreender a acao do Campo magn�tico ao redor de �m�s e correntes",
-        "interpretar mapas de Campo magn�tico a partir do desenho de suas linhas",
+        "identificar propriedades de polos magnéticos e interações entre ímãs",
+        "compreender a acao do Campo magnético ao redor de ímãs e correntes",
+        "interpretar mapas de Campo magnético a partir do desenho de suas linhas",
         "relacionar o magnetismo terrestre a orientacao e a protecao planetaria"
       ],
-      "correta": "identificar propriedades de polos magn�ticos e intera��es entre �m�s",
-      "comentario": "�m�s e polos magn�ticos concentra-se em identificar propriedades de polos magn�ticos e intera��es entre �m�s.",
+      "correta": "identificar propriedades de polos magnéticos e interações entre ímãs",
+      "comentario": "ímãs e polos magnéticos concentra-se em identificar propriedades de polos magnéticos e interações entre ímãs.",
       "tempoEstimado": 35,
       "tags": [
         "magnetismo",
@@ -244,22 +244,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "�m�s e polos magn�ticos",
+      "subtopico": "ímãs e polos magnéticos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Campo magn�tico trata de a regi�o do espa�o em que for�as magn�ticas podem atuar sobre �m�s, cargas ou correntes, �m�s e polos magn�ticos destaca:",
+      "enunciado": "Enquanto Campo magnético trata de a região do espaço em que forças magnéticas podem atuar sobre ímãs, cargas ou correntes, ímãs e polos magnéticos destaca:",
       "opcoes": [
-        "Corpos que apresentam polos magn�ticos insepar�veis, capazes de atrair ou repelir outros �m�s e materiais ferromagn�ticos.",
-        "A regi�o do espa�o em que for�as magn�ticas podem atuar sobre �m�s, cargas ou correntes.",
-        "As representa��es gr�ficas que indicam dire��o, sentido e intensidade relativa do Campo magn�tico.",
-        "O campo gerado pela Terra que orienta b�ssolas e participa de diversos fen�menos naturais."
+        "Corpos que apresentam polos magnéticos inseparáveis, capazes de atrair ou repelir outros ímãs e materiais ferromagnéticos.",
+        "A região do espaço em que forças magnéticas podem atuar sobre ímãs, cargas ou correntes.",
+        "As representações gráficas que indicam direção, sentido e intensidade relativa do Campo magnético.",
+        "O campo gerado pela Terra que orienta bússolas e participa de diversos fenômenos naturais."
       ],
-      "correta": "Corpos que apresentam polos magn�ticos insepar�veis, capazes de atrair ou repelir outros �m�s e materiais ferromagn�ticos.",
-      "comentario": "A compara��o correta mostra a especificidade de �m�s e polos magn�ticos.",
+      "correta": "Corpos que apresentam polos magnéticos inseparáveis, capazes de atrair ou repelir outros ímãs e materiais ferromagnéticos.",
+      "comentario": "A comparação correta mostra a especificidade de ímãs e polos magnéticos.",
       "tempoEstimado": 35,
       "tags": [
         "magnetismo",
@@ -283,22 +283,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "�m�s e polos magn�ticos",
+      "subtopico": "ímãs e polos magnéticos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma an�lise de sala, considera-se que dois �m�s se aproximam e podem se atrair ou se repelir conforme a orientacao dos polos Para interpretar essa situa��o, � mais adequado mobilizar o conceito de:",
+      "enunciado": "Em uma análise de sala, considera-se que dois ímãs se aproximam e podem se atrair ou se repelir conforme a orientacao dos polos Para interpretar essa situação, é mais adequado mobilizar o conceito de:",
       "opcoes": [
-        "�m�s e polos magn�ticos",
-        "Campo magn�tico",
-        "Campo magn�tico terrestre",
-        "For�a magn�tica sobre cargas"
+        "ímãs e polos magnéticos",
+        "Campo magnético",
+        "Campo magnético terrestre",
+        "Força magnética sobre cargas"
       ],
-      "correta": "�m�s e polos magn�ticos",
-      "comentario": "O caso descrito � interpretado adequadamente por meio de �m�s e polos magn�ticos.",
+      "correta": "ímãs e polos magnéticos",
+      "comentario": "O caso descrito é interpretado adequadamente por meio de ímãs e polos magnéticos.",
       "tempoEstimado": 40,
       "tags": [
         "magnetismo",
@@ -322,22 +322,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "�m�s e polos magn�ticos",
+      "subtopico": "ímãs e polos magnéticos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situa��o pr�tica depende mais diretamente de �m�s e polos magn�ticos?",
+      "enunciado": "Qual situação prática depende mais diretamente de ímãs e polos magnéticos?",
       "opcoes": [
-        "fechos magn�ticos, b�ssolas simples e separacao de materiais met�licos",
-        "a localizacao de regi�es de influencia magnetica em experi�ncias e dispositivos",
+        "fechos magnéticos, bússolas simples e separacao de materiais metálicos",
+        "a localizacao de regiões de influencia magnetica em experiências e dispositivos",
         "a leitura de esquemas com limalha de ferro e diagramas de campo",
-        "aceleradores de part�culas e tubos de raios cat�dicos"
+        "aceleradores de partículas e tubos de raios catódicos"
       ],
-      "correta": "fechos magn�ticos, b�ssolas simples e separacao de materiais met�licos",
-      "comentario": "�m�s e polos magn�ticos aparece de modo direto em fechos magn�ticos, b�ssolas simples e separacao de materiais met�licos.",
+      "correta": "fechos magnéticos, bússolas simples e separacao de materiais metálicos",
+      "comentario": "ímãs e polos magnéticos aparece de modo direto em fechos magnéticos, bússolas simples e separacao de materiais metálicos.",
       "tempoEstimado": 40,
       "tags": [
         "magnetismo",
@@ -361,22 +361,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "�m�s e polos magn�ticos",
+      "subtopico": "ímãs e polos magnéticos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir de dois �m�s se aproximam e podem se atrair ou se repelir conforme a orientacao dos polos, qual conclus�o est� mais correta?",
+      "enunciado": "A partir de dois ímãs se aproximam e podem se atrair ou se repelir conforme a orientacao dos polos, qual conclusão está mais correta?",
       "opcoes": [
-        "o caso e explicado por �m�s e polos magn�ticos.",
-        "o caso e mais bem entendido por Campo magn�tico.",
-        "a situa��o anula a import�ncia de Linhas de campo.",
-        "o fen�meno exclui qualquer rela��o com Campo magn�tico terrestre."
+        "o caso e explicado por ímãs e polos magnéticos.",
+        "o caso e mais bem entendido por Campo magnético.",
+        "a situação anula a importância de Linhas de campo.",
+        "o fenômeno exclui qualquer relação com Campo magnético terrestre."
       ],
-      "correta": "o caso e explicado por �m�s e polos magn�ticos.",
-      "comentario": "A conclus�o adequada retoma a ideia central de �m�s e polos magn�ticos.",
+      "correta": "o caso e explicado por ímãs e polos magnéticos.",
+      "comentario": "A conclusão adequada retoma a ideia central de ímãs e polos magnéticos.",
       "tempoEstimado": 45,
       "tags": [
         "magnetismo",
@@ -400,22 +400,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "�m�s e polos magn�ticos",
+      "subtopico": "ímãs e polos magnéticos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Se um grupo fosse pesquisar �m�s e polos magn�ticos, qual pergunta orientadora seria a mais adequada?",
+      "enunciado": "Se um grupo fosse pesquisar ímãs e polos magnéticos, qual pergunta orientadora seria a mais adequada?",
       "opcoes": [
-        "Como �m�s e polos magn�ticos aparece em fechos magn�ticos, b�ssolas simples e separacao de materiais met�licos?",
-        "Como Campo magn�tico substitui totalmente fechos magn�ticos, b�ssolas simples e separacao de materiais met�licos?",
-        "Por que Linhas de campo torna desnecess�rio estudar �m�s e polos magn�ticos?",
-        "De que modo Campo magn�tico terrestre elimina toda medida fisica envolvida?"
+        "Como ímãs e polos magnéticos aparece em fechos magnéticos, bússolas simples e separacao de materiais metálicos?",
+        "Como Campo magnético substitui totalmente fechos magnéticos, bússolas simples e separacao de materiais metálicos?",
+        "Por que Linhas de campo torna desnecessário estudar ímãs e polos magnéticos?",
+        "De que modo Campo magnético terrestre elimina toda medida fisica envolvida?"
       ],
-      "correta": "Como �m�s e polos magn�ticos aparece em fechos magn�ticos, b�ssolas simples e separacao de materiais met�licos?",
-      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de �m�s e polos magn�ticos.",
+      "correta": "Como ímãs e polos magnéticos aparece em fechos magnéticos, bússolas simples e separacao de materiais metálicos?",
+      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de ímãs e polos magnéticos.",
       "tempoEstimado": 45,
       "tags": [
         "magnetismo",
@@ -439,22 +439,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "�m�s e polos magn�ticos",
+      "subtopico": "ímãs e polos magnéticos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em �m�s e polos magn�ticos e pensar que:",
+      "enunciado": "Um erro comum em ímãs e polos magnéticos e pensar que:",
       "opcoes": [
         "e possivel isolar permanentemente um polo norte sem um polo sul associado",
-        "Campo magn�tico existe apenas no interior do �m� e nunca ao seu redor",
-        "as Linhas de campo sao fios materiais realmente existentes no espa�o",
-        "a Terra n�o exerce qualquer influencia magnetica mensuravel em objetos e instrumentos"
+        "Campo magnético existe apenas no interior do ímã e nunca ao seu redor",
+        "as Linhas de campo sao fios materiais realmente existentes no espaço",
+        "a Terra não exerce qualquer influencia magnetica mensuravel em objetos e instrumentos"
       ],
       "correta": "e possivel isolar permanentemente um polo norte sem um polo sul associado",
-      "comentario": "Esse e um equ�voco frequente porque contraria a defini��o correta de �m�s e polos magn�ticos.",
+      "comentario": "Esse e um equívoco frequente porque contraria a definição correta de ímãs e polos magnéticos.",
       "tempoEstimado": 50,
       "tags": [
         "magnetismo",
@@ -478,22 +478,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "�m�s e polos magn�ticos",
+      "subtopico": "ímãs e polos magnéticos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"se um �m� for cortado, um dos pedacos pode ficar so com o polo norte\". A avalia��o mais adequada e:",
+      "enunciado": "Um estudante afirma: \"se um ímã for cortado, um dos pedacos pode ficar so com o polo norte\". A avaliação mais adequada e:",
       "opcoes": [
-        "A afirma��o est� incorreta, porque corpos que apresentam polos magn�ticos insepar�veis, capazes de atrair ou repelir outros �m�s e materiais ferromagn�ticos.",
-        "A afirma��o est� correta, pois resume integralmente �m�s e polos magn�ticos.",
-        "A afirma��o est� correta, porque toda situa��o do tema depende apenas dessa ideia.",
-        "A afirma��o est� incorreta apenas porque n�o apresenta uma unidade de medida."
+        "A afirmação está incorreta, porque corpos que apresentam polos magnéticos inseparáveis, capazes de atrair ou repelir outros ímãs e materiais ferromagnéticos.",
+        "A afirmação está correta, pois resume integralmente ímãs e polos magnéticos.",
+        "A afirmação está correta, porque toda situação do tema depende apenas dessa ideia.",
+        "A afirmação está incorreta apenas porque não apresenta uma unidade de medida."
       ],
-      "correta": "A afirma��o est� incorreta, porque corpos que apresentam polos magn�ticos insepar�veis, capazes de atrair ou repelir outros �m�s e materiais ferromagn�ticos.",
-      "comentario": "A fala do estudante apresenta um equ�voco conceitual sobre �m�s e polos magn�ticos.",
+      "correta": "A afirmação está incorreta, porque corpos que apresentam polos magnéticos inseparáveis, capazes de atrair ou repelir outros ímãs e materiais ferromagnéticos.",
+      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre ímãs e polos magnéticos.",
       "tempoEstimado": 55,
       "tags": [
         "magnetismo",
@@ -517,22 +517,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "�m�s e polos magn�ticos",
+      "subtopico": "ímãs e polos magnéticos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se �m�s e polos magn�ticos fosse ignorado(a) ao analisar fechos magn�ticos, b�ssolas simples e separacao de materiais met�licos, o resultado mais prov�vel seria:",
+      "enunciado": "Se ímãs e polos magnéticos fosse ignorado(a) ao analisar fechos magnéticos, bússolas simples e separacao de materiais metálicos, o resultado mais provável seria:",
       "opcoes": [
-        "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre fechos magn�ticos, b�ssolas simples e separacao de materiais met�licos.",
-        "a situa��o seria explicada automaticamente por Campo magn�tico, sem necessidade de an�lise.",
-        "nenhuma interpretacao fisica seria alterada, porque �m�s e polos magn�ticos n�o interfere nesse tipo de problema.",
-        "o fen�meno deixaria de existir apenas por n�o ser nomeado."
+        "a análise ficaria incompleta e poderia gerar interpretações erradas sobre fechos magnéticos, bússolas simples e separacao de materiais metálicos.",
+        "a situação seria explicada automaticamente por Campo magnético, sem necessidade de análise.",
+        "nenhuma interpretacao fisica seria alterada, porque ímãs e polos magnéticos não interfere nesse tipo de problema.",
+        "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
-      "correta": "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre fechos magn�ticos, b�ssolas simples e separacao de materiais met�licos.",
-      "comentario": "Ignorar �m�s e polos magn�ticos compromete a leitura fisica da situa��o apresentada.",
+      "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre fechos magnéticos, bússolas simples e separacao de materiais metálicos.",
+      "comentario": "Ignorar ímãs e polos magnéticos compromete a leitura fisica da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "magnetismo",
@@ -556,22 +556,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "�m�s e polos magn�ticos",
+      "subtopico": "ímãs e polos magnéticos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma aplica��o cotidiana ou escolar, �m�s e polos magn�ticos ajuda principalmente a compreender:",
+      "enunciado": "Em uma aplicação cotidiana ou escolar, ímãs e polos magnéticos ajuda principalmente a compreender:",
       "opcoes": [
-        "fechos magn�ticos, b�ssolas simples e separacao de materiais met�licos",
-        "a localizacao de regi�es de influencia magnetica em experi�ncias e dispositivos",
+        "fechos magnéticos, bússolas simples e separacao de materiais metálicos",
+        "a localizacao de regiões de influencia magnetica em experiências e dispositivos",
         "a leitura de esquemas com limalha de ferro e diagramas de campo",
-        "a navegacao por b�ssolas e o estudo da orientacao geografica"
+        "a navegacao por bússolas e o estudo da orientacao geografica"
       ],
-      "correta": "fechos magn�ticos, b�ssolas simples e separacao de materiais met�licos",
-      "comentario": "A aplica��o escolhida e a que melhor representa �m�s e polos magn�ticos.",
+      "correta": "fechos magnéticos, bússolas simples e separacao de materiais metálicos",
+      "comentario": "A aplicação escolhida e a que melhor representa ímãs e polos magnéticos.",
       "tempoEstimado": 60,
       "tags": [
         "magnetismo",
@@ -595,22 +595,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "�m�s e polos magn�ticos",
+      "subtopico": "ímãs e polos magnéticos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual resumo sintetiza melhor a ideia central de �m�s e polos magn�ticos?",
+      "enunciado": "Qual resumo sintetiza melhor a ideia central de ímãs e polos magnéticos?",
       "opcoes": [
-        "Em s�ntese, corpos que apresentam polos magn�ticos insepar�veis, capazes de atrair ou repelir outros �m�s e materiais ferromagn�ticos.",
-        "Em s�ntese, a regi�o do espa�o em que for�as magn�ticas podem atuar sobre �m�s, cargas ou correntes.",
-        "Em s�ntese, as representa��es gr�ficas que indicam dire��o, sentido e intensidade relativa do Campo magn�tico.",
-        "Em s�ntese, o campo gerado pela Terra que orienta b�ssolas e participa de diversos fen�menos naturais."
+        "Em síntese, corpos que apresentam polos magnéticos inseparáveis, capazes de atrair ou repelir outros ímãs e materiais ferromagnéticos.",
+        "Em síntese, a região do espaço em que forças magnéticas podem atuar sobre ímãs, cargas ou correntes.",
+        "Em síntese, as representações gráficas que indicam direção, sentido e intensidade relativa do Campo magnético.",
+        "Em síntese, o campo gerado pela Terra que orienta bússolas e participa de diversos fenômenos naturais."
       ],
-      "correta": "Em s�ntese, corpos que apresentam polos magn�ticos insepar�veis, capazes de atrair ou repelir outros �m�s e materiais ferromagn�ticos.",
-      "comentario": "O resumo correto recupera o n�cleo conceitual de �m�s e polos magn�ticos.",
+      "correta": "Em síntese, corpos que apresentam polos magnéticos inseparáveis, capazes de atrair ou repelir outros ímãs e materiais ferromagnéticos.",
+      "comentario": "O resumo correto recupera o núcleo conceitual de ímãs e polos magnéticos.",
       "tempoEstimado": 65,
       "tags": [
         "magnetismo",
@@ -634,22 +634,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Campo magn�tico",
+      "subtopico": "Campo magnético",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em F�sica, Campo magn�tico pode ser definido(a) como:",
+      "enunciado": "Em Física, Campo magnético pode ser definido(a) como:",
       "opcoes": [
-        "a regi�o do espa�o em que for�as magn�ticas podem atuar sobre �m�s, cargas ou correntes",
-        "as representa��es gr�ficas que indicam dire��o, sentido e intensidade relativa do Campo magn�tico",
-        "o campo gerado pela Terra que orienta b�ssolas e participa de diversos fen�menos naturais",
-        "a for�a exercida por um Campo magn�tico sobre cargas el�tricas em movimento"
+        "a região do espaço em que forças magnéticas podem atuar sobre ímãs, cargas ou correntes",
+        "as representações gráficas que indicam direção, sentido e intensidade relativa do Campo magnético",
+        "o campo gerado pela Terra que orienta bússolas e participa de diversos fenômenos naturais",
+        "a força exercida por um Campo magnético sobre cargas elétricas em movimento"
       ],
-      "correta": "a regi�o do espa�o em que for�as magn�ticas podem atuar sobre �m�s, cargas ou correntes",
-      "comentario": "Campo magn�tico refere-se � regi�o do espa�o em que for�as magn�ticas podem atuar sobre �m�s, cargas ou correntes.",
+      "correta": "a região do espaço em que forças magnéticas podem atuar sobre ímãs, cargas ou correntes",
+      "comentario": "Campo magnético refere-se à região do espaço em que forças magnéticas podem atuar sobre ímãs, cargas ou correntes.",
       "tempoEstimado": 25,
       "tags": [
         "magnetismo",
@@ -673,22 +673,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Campo magn�tico",
+      "subtopico": "Campo magnético",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situa��o: uma b�ssola muda de orientacao ao ser aproximada de um �m� ou de um fio com corrente Esse caso exemplifica melhor qual subt�pico?",
+      "enunciado": "Observe a situação: uma bússola muda de orientacao ao ser aproximada de um ímã ou de um fio com corrente Esse caso exemplifica melhor qual subtópico?",
       "opcoes": [
-        "Campo magn�tico",
+        "Campo magnético",
         "Linhas de campo",
-        "Campo magn�tico terrestre",
-        "For�a magn�tica sobre cargas"
+        "Campo magnético terrestre",
+        "Força magnética sobre cargas"
       ],
-      "correta": "Campo magn�tico",
-      "comentario": "A situa��o apresentada � um exemplo de Campo magn�tico.",
+      "correta": "Campo magnético",
+      "comentario": "A situação apresentada é um exemplo de Campo magnético.",
       "tempoEstimado": 25,
       "tags": [
         "magnetismo",
@@ -712,22 +712,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Campo magn�tico",
+      "subtopico": "Campo magnético",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirma��o descreve corretamente Campo magn�tico?",
+      "enunciado": "Qual afirmação descreve corretamente Campo magnético?",
       "opcoes": [
-        "A regi�o do espa�o em que for�as magn�ticas podem atuar sobre �m�s, cargas ou correntes.",
-        "As representa��es gr�ficas que indicam dire��o, sentido e intensidade relativa do Campo magn�tico.",
-        "O campo gerado pela Terra que orienta b�ssolas e participa de diversos fen�menos naturais.",
-        "A for�a exercida por um Campo magn�tico sobre cargas el�tricas em movimento."
+        "A região do espaço em que forças magnéticas podem atuar sobre ímãs, cargas ou correntes.",
+        "As representações gráficas que indicam direção, sentido e intensidade relativa do Campo magnético.",
+        "O campo gerado pela Terra que orienta bússolas e participa de diversos fenômenos naturais.",
+        "A força exercida por um Campo magnético sobre cargas elétricas em movimento."
       ],
-      "correta": "A regi�o do espa�o em que for�as magn�ticas podem atuar sobre �m�s, cargas ou correntes.",
-      "comentario": "A alternativa correta resume o conceito de Campo magn�tico.",
+      "correta": "A região do espaço em que forças magnéticas podem atuar sobre ímãs, cargas ou correntes.",
+      "comentario": "A alternativa correta resume o conceito de Campo magnético.",
       "tempoEstimado": 30,
       "tags": [
         "magnetismo",
@@ -751,22 +751,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Campo magn�tico",
+      "subtopico": "Campo magnético",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compat�vel com Campo magn�tico?",
+      "enunciado": "Qual alternativa NAO esta compatível com Campo magnético?",
       "opcoes": [
-        "As representa��es gr�ficas que indicam dire��o, sentido e intensidade relativa do Campo magn�tico.",
-        "A regi�o do espa�o em que for�as magn�ticas podem atuar sobre �m�s, cargas ou correntes.",
-        "Compreender a acao do Campo magn�tico ao redor de �m�s e correntes.",
-        "Ajuda a compreender a localizacao de regi�es de influencia magnetica em experi�ncias e dispositivos."
+        "As representações gráficas que indicam direção, sentido e intensidade relativa do Campo magnético.",
+        "A região do espaço em que forças magnéticas podem atuar sobre ímãs, cargas ou correntes.",
+        "Compreender a acao do Campo magnético ao redor de ímãs e correntes.",
+        "Ajuda a compreender a localizacao de regiões de influencia magnetica em experiências e dispositivos."
       ],
-      "correta": "As representa��es gr�ficas que indicam dire��o, sentido e intensidade relativa do Campo magn�tico.",
-      "comentario": "A op��o incompativel descreve outro subt�pico, n�o Campo magn�tico.",
+      "correta": "As representações gráficas que indicam direção, sentido e intensidade relativa do Campo magnético.",
+      "comentario": "A opção incompativel descreve outro subtópico, não Campo magnético.",
       "tempoEstimado": 30,
       "tags": [
         "magnetismo",
@@ -790,22 +790,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Campo magn�tico",
+      "subtopico": "Campo magnético",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar Campo magn�tico, o foco principal e:",
+      "enunciado": "Ao estudar Campo magnético, o foco principal e:",
       "opcoes": [
-        "compreender a acao do Campo magn�tico ao redor de �m�s e correntes",
-        "interpretar mapas de Campo magn�tico a partir do desenho de suas linhas",
+        "compreender a acao do Campo magnético ao redor de ímãs e correntes",
+        "interpretar mapas de Campo magnético a partir do desenho de suas linhas",
         "relacionar o magnetismo terrestre a orientacao e a protecao planetaria",
-        "analisar a interacao entre cargas m�veis e campos magn�ticos"
+        "analisar a interacao entre cargas móveis e campos magnéticos"
       ],
-      "correta": "compreender a acao do Campo magn�tico ao redor de �m�s e correntes",
-      "comentario": "Campo magn�tico concentra-se em compreender a acao do Campo magn�tico ao redor de �m�s e correntes.",
+      "correta": "compreender a acao do Campo magnético ao redor de ímãs e correntes",
+      "comentario": "Campo magnético concentra-se em compreender a acao do Campo magnético ao redor de ímãs e correntes.",
       "tempoEstimado": 35,
       "tags": [
         "magnetismo",
@@ -829,22 +829,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Campo magn�tico",
+      "subtopico": "Campo magnético",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Linhas de campo trata de as representa��es gr�ficas que indicam dire��o, sentido e intensidade relativa do Campo magn�tico, Campo magn�tico destaca:",
+      "enunciado": "Enquanto Linhas de campo trata de as representações gráficas que indicam direção, sentido e intensidade relativa do Campo magnético, Campo magnético destaca:",
       "opcoes": [
-        "A regi�o do espa�o em que for�as magn�ticas podem atuar sobre �m�s, cargas ou correntes.",
-        "As representa��es gr�ficas que indicam dire��o, sentido e intensidade relativa do Campo magn�tico.",
-        "O campo gerado pela Terra que orienta b�ssolas e participa de diversos fen�menos naturais.",
-        "A for�a exercida por um Campo magn�tico sobre cargas el�tricas em movimento."
+        "A região do espaço em que forças magnéticas podem atuar sobre ímãs, cargas ou correntes.",
+        "As representações gráficas que indicam direção, sentido e intensidade relativa do Campo magnético.",
+        "O campo gerado pela Terra que orienta bússolas e participa de diversos fenômenos naturais.",
+        "A força exercida por um Campo magnético sobre cargas elétricas em movimento."
       ],
-      "correta": "A regi�o do espa�o em que for�as magn�ticas podem atuar sobre �m�s, cargas ou correntes.",
-      "comentario": "A compara��o correta mostra a especificidade de Campo magn�tico.",
+      "correta": "A região do espaço em que forças magnéticas podem atuar sobre ímãs, cargas ou correntes.",
+      "comentario": "A comparação correta mostra a especificidade de Campo magnético.",
       "tempoEstimado": 35,
       "tags": [
         "magnetismo",
@@ -868,22 +868,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Campo magn�tico",
+      "subtopico": "Campo magnético",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma an�lise de sala, considera-se que uma b�ssola muda de orientacao ao ser aproximada de um �m� ou de um fio com corrente Para interpretar essa situa��o, � mais adequado mobilizar o conceito de:",
+      "enunciado": "Em uma análise de sala, considera-se que uma bússola muda de orientacao ao ser aproximada de um ímã ou de um fio com corrente Para interpretar essa situação, é mais adequado mobilizar o conceito de:",
       "opcoes": [
-        "Campo magn�tico",
+        "Campo magnético",
         "Linhas de campo",
-        "For�a magn�tica sobre cargas",
-        "For�a magn�tica em condutores"
+        "Força magnética sobre cargas",
+        "Força magnética em condutores"
       ],
-      "correta": "Campo magn�tico",
-      "comentario": "O caso descrito � interpretado adequadamente por meio de Campo magn�tico.",
+      "correta": "Campo magnético",
+      "comentario": "O caso descrito é interpretado adequadamente por meio de Campo magnético.",
       "tempoEstimado": 40,
       "tags": [
         "magnetismo",
@@ -907,22 +907,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Campo magn�tico",
+      "subtopico": "Campo magnético",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situa��o pr�tica depende mais diretamente de Campo magn�tico?",
+      "enunciado": "Qual situação prática depende mais diretamente de Campo magnético?",
       "opcoes": [
-        "a localizacao de regi�es de influencia magnetica em experi�ncias e dispositivos",
+        "a localizacao de regiões de influencia magnetica em experiências e dispositivos",
         "a leitura de esquemas com limalha de ferro e diagramas de campo",
-        "a navegacao por b�ssolas e o estudo da orientacao geografica",
+        "a navegacao por bússolas e o estudo da orientacao geografica",
         "o principio de funcionamento de alto-falantes e partes de motores"
       ],
-      "correta": "a localizacao de regi�es de influencia magnetica em experi�ncias e dispositivos",
-      "comentario": "Campo magn�tico aparece de modo direto na localizacao de regi�es de influencia magnetica em experi�ncias e dispositivos.",
+      "correta": "a localizacao de regiões de influencia magnetica em experiências e dispositivos",
+      "comentario": "Campo magnético aparece de modo direto na localizacao de regiões de influencia magnetica em experiências e dispositivos.",
       "tempoEstimado": 40,
       "tags": [
         "magnetismo",
@@ -946,22 +946,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Campo magn�tico",
+      "subtopico": "Campo magnético",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir de uma b�ssola muda de orientacao ao ser aproximada de um �m� ou de um fio com corrente, qual conclus�o est� mais correta?",
+      "enunciado": "A partir de uma bússola muda de orientacao ao ser aproximada de um ímã ou de um fio com corrente, qual conclusão está mais correta?",
       "opcoes": [
-        "o caso e explicado por Campo magn�tico.",
+        "o caso e explicado por Campo magnético.",
         "o caso e mais bem entendido por Linhas de campo.",
-        "a situa��o anula a import�ncia de Campo magn�tico terrestre.",
-        "o fen�meno exclui qualquer rela��o com For�a magn�tica sobre cargas."
+        "a situação anula a importância de Campo magnético terrestre.",
+        "o fenômeno exclui qualquer relação com Força magnética sobre cargas."
       ],
-      "correta": "o caso e explicado por Campo magn�tico.",
-      "comentario": "A conclus�o adequada retoma a ideia central de Campo magn�tico.",
+      "correta": "o caso e explicado por Campo magnético.",
+      "comentario": "A conclusão adequada retoma a ideia central de Campo magnético.",
       "tempoEstimado": 45,
       "tags": [
         "magnetismo",
@@ -985,22 +985,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Campo magn�tico",
+      "subtopico": "Campo magnético",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Se um grupo fosse pesquisar Campo magn�tico, qual pergunta orientadora seria a mais adequada?",
+      "enunciado": "Se um grupo fosse pesquisar Campo magnético, qual pergunta orientadora seria a mais adequada?",
       "opcoes": [
-        "Como Campo magn�tico aparece na localizacao de regi�es de influencia magnetica em experi�ncias e dispositivos?",
-        "Como Linhas de campo substitui totalmente a localizacao de regi�es de influencia magnetica em experi�ncias e dispositivos?",
-        "Por que Campo magn�tico terrestre torna desnecess�rio estudar Campo magn�tico?",
-        "De que modo For�a magn�tica sobre cargas elimina toda medida fisica envolvida?"
+        "Como Campo magnético aparece na localizacao de regiões de influencia magnetica em experiências e dispositivos?",
+        "Como Linhas de campo substitui totalmente a localizacao de regiões de influencia magnetica em experiências e dispositivos?",
+        "Por que Campo magnético terrestre torna desnecessário estudar Campo magnético?",
+        "De que modo Força magnética sobre cargas elimina toda medida fisica envolvida?"
       ],
-      "correta": "Como Campo magn�tico aparece na localizacao de regi�es de influencia magnetica em experi�ncias e dispositivos?",
-      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Campo magn�tico.",
+      "correta": "Como Campo magnético aparece na localizacao de regiões de influencia magnetica em experiências e dispositivos?",
+      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Campo magnético.",
       "tempoEstimado": 45,
       "tags": [
         "magnetismo",
@@ -1024,22 +1024,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Campo magn�tico",
+      "subtopico": "Campo magnético",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em Campo magn�tico e pensar que:",
+      "enunciado": "Um erro comum em Campo magnético e pensar que:",
       "opcoes": [
-        "Campo magn�tico existe apenas no interior do �m� e nunca ao seu redor",
-        "as Linhas de campo sao fios materiais realmente existentes no espa�o",
-        "a Terra n�o exerce qualquer influencia magnetica mensuravel em objetos e instrumentos",
-        "cargas el�tricas paradas sofrem sempre a mesma for�a magnetica que cargas em movimento"
+        "Campo magnético existe apenas no interior do ímã e nunca ao seu redor",
+        "as Linhas de campo sao fios materiais realmente existentes no espaço",
+        "a Terra não exerce qualquer influencia magnetica mensuravel em objetos e instrumentos",
+        "cargas elétricas paradas sofrem sempre a mesma força magnetica que cargas em movimento"
       ],
-      "correta": "Campo magn�tico existe apenas no interior do �m� e nunca ao seu redor",
-      "comentario": "Esse e um equ�voco frequente porque contraria a defini��o correta de Campo magn�tico.",
+      "correta": "Campo magnético existe apenas no interior do ímã e nunca ao seu redor",
+      "comentario": "Esse e um equívoco frequente porque contraria a definição correta de Campo magnético.",
       "tempoEstimado": 50,
       "tags": [
         "magnetismo",
@@ -1063,22 +1063,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Campo magn�tico",
+      "subtopico": "Campo magnético",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"fora do �m� n�o existe Campo magn�tico atuando sobre outros corpos\". A avalia��o mais adequada e:",
+      "enunciado": "Um estudante afirma: \"fora do ímã não existe Campo magnético atuando sobre outros corpos\". A avaliação mais adequada e:",
       "opcoes": [
-        "A afirma��o est� incorreta, porque a regi�o do espa�o em que for�as magn�ticas podem atuar sobre �m�s, cargas ou correntes.",
-        "A afirma��o est� correta, pois resume integralmente Campo magn�tico.",
-        "A afirma��o est� correta, porque toda situa��o do tema depende apenas dessa ideia.",
-        "A afirma��o est� incorreta apenas porque n�o apresenta uma unidade de medida."
+        "A afirmação está incorreta, porque a região do espaço em que forças magnéticas podem atuar sobre ímãs, cargas ou correntes.",
+        "A afirmação está correta, pois resume integralmente Campo magnético.",
+        "A afirmação está correta, porque toda situação do tema depende apenas dessa ideia.",
+        "A afirmação está incorreta apenas porque não apresenta uma unidade de medida."
       ],
-      "correta": "A afirma��o est� incorreta, porque a regi�o do espa�o em que for�as magn�ticas podem atuar sobre �m�s, cargas ou correntes.",
-      "comentario": "A fala do estudante apresenta um equ�voco conceitual sobre Campo magn�tico.",
+      "correta": "A afirmação está incorreta, porque a região do espaço em que forças magnéticas podem atuar sobre ímãs, cargas ou correntes.",
+      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre Campo magnético.",
       "tempoEstimado": 55,
       "tags": [
         "magnetismo",
@@ -1102,22 +1102,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Campo magn�tico",
+      "subtopico": "Campo magnético",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se Campo magn�tico fosse ignorado(a) ao analisar a localizacao de regi�es de influencia magnetica em experi�ncias e dispositivos, o resultado mais prov�vel seria:",
+      "enunciado": "Se Campo magnético fosse ignorado(a) ao analisar a localizacao de regiões de influencia magnetica em experiências e dispositivos, o resultado mais provável seria:",
       "opcoes": [
-        "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre a localizacao de regi�es de influencia magnetica em experi�ncias e dispositivos.",
-        "a situa��o seria explicada automaticamente por Linhas de campo, sem necessidade de an�lise.",
-        "nenhuma interpretacao fisica seria alterada, porque Campo magn�tico n�o interfere nesse tipo de problema.",
-        "o fen�meno deixaria de existir apenas por n�o ser nomeado."
+        "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a localizacao de regiões de influencia magnetica em experiências e dispositivos.",
+        "a situação seria explicada automaticamente por Linhas de campo, sem necessidade de análise.",
+        "nenhuma interpretacao fisica seria alterada, porque Campo magnético não interfere nesse tipo de problema.",
+        "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
-      "correta": "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre a localizacao de regi�es de influencia magnetica em experi�ncias e dispositivos.",
-      "comentario": "Ignorar Campo magn�tico compromete a leitura fisica da situa��o apresentada.",
+      "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a localizacao de regiões de influencia magnetica em experiências e dispositivos.",
+      "comentario": "Ignorar Campo magnético compromete a leitura fisica da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "magnetismo",
@@ -1141,22 +1141,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Campo magn�tico",
+      "subtopico": "Campo magnético",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma aplica��o cotidiana ou escolar, Campo magn�tico ajuda principalmente a compreender:",
+      "enunciado": "Em uma aplicação cotidiana ou escolar, Campo magnético ajuda principalmente a compreender:",
       "opcoes": [
-        "a localizacao de regi�es de influencia magnetica em experi�ncias e dispositivos",
+        "a localizacao de regiões de influencia magnetica em experiências e dispositivos",
         "a leitura de esquemas com limalha de ferro e diagramas de campo",
-        "a navegacao por b�ssolas e o estudo da orientacao geografica",
-        "aceleradores de part�culas e tubos de raios cat�dicos"
+        "a navegacao por bússolas e o estudo da orientacao geografica",
+        "aceleradores de partículas e tubos de raios catódicos"
       ],
-      "correta": "a localizacao de regi�es de influencia magnetica em experi�ncias e dispositivos",
-      "comentario": "A aplica��o escolhida e a que melhor representa Campo magn�tico.",
+      "correta": "a localizacao de regiões de influencia magnetica em experiências e dispositivos",
+      "comentario": "A aplicação escolhida e a que melhor representa Campo magnético.",
       "tempoEstimado": 60,
       "tags": [
         "magnetismo",
@@ -1180,22 +1180,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Campo magn�tico",
+      "subtopico": "Campo magnético",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual resumo sintetiza melhor a ideia central de Campo magn�tico?",
+      "enunciado": "Qual resumo sintetiza melhor a ideia central de Campo magnético?",
       "opcoes": [
-        "Em s�ntese, a regi�o do espa�o em que for�as magn�ticas podem atuar sobre �m�s, cargas ou correntes.",
-        "Em s�ntese, as representa��es gr�ficas que indicam dire��o, sentido e intensidade relativa do Campo magn�tico.",
-        "Em s�ntese, o campo gerado pela Terra que orienta b�ssolas e participa de diversos fen�menos naturais.",
-        "Em s�ntese, a for�a exercida por um Campo magn�tico sobre cargas el�tricas em movimento."
+        "Em síntese, a região do espaço em que forças magnéticas podem atuar sobre ímãs, cargas ou correntes.",
+        "Em síntese, as representações gráficas que indicam direção, sentido e intensidade relativa do Campo magnético.",
+        "Em síntese, o campo gerado pela Terra que orienta bússolas e participa de diversos fenômenos naturais.",
+        "Em síntese, a força exercida por um Campo magnético sobre cargas elétricas em movimento."
       ],
-      "correta": "Em s�ntese, a regi�o do espa�o em que for�as magn�ticas podem atuar sobre �m�s, cargas ou correntes.",
-      "comentario": "O resumo correto recupera o n�cleo conceitual de Campo magn�tico.",
+      "correta": "Em síntese, a região do espaço em que forças magnéticas podem atuar sobre ímãs, cargas ou correntes.",
+      "comentario": "O resumo correto recupera o núcleo conceitual de Campo magnético.",
       "tempoEstimado": 65,
       "tags": [
         "magnetismo",
@@ -1219,22 +1219,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
       "subtopico": "Linhas de campo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em F�sica, Linhas de campo pode ser definido(a) como:",
+      "enunciado": "Em Física, Linhas de campo pode ser definido(a) como:",
       "opcoes": [
-        "as representa��es gr�ficas que indicam dire��o, sentido e intensidade relativa do Campo magn�tico",
-        "o campo gerado pela Terra que orienta b�ssolas e participa de diversos fen�menos naturais",
-        "a for�a exercida por um Campo magn�tico sobre cargas el�tricas em movimento",
-        "a for�a que atua sobre fios percorridos por corrente quando estao imersos em Campo magn�tico"
+        "as representações gráficas que indicam direção, sentido e intensidade relativa do Campo magnético",
+        "o campo gerado pela Terra que orienta bússolas e participa de diversos fenômenos naturais",
+        "a força exercida por um Campo magnético sobre cargas elétricas em movimento",
+        "a força que atua sobre fios percorridos por corrente quando estao imersos em Campo magnético"
       ],
-      "correta": "as representa��es gr�ficas que indicam dire��o, sentido e intensidade relativa do Campo magn�tico",
-      "comentario": "Linhas de campo refere-se �s representa��es gr�ficas que indicam dire��o, sentido e intensidade relativa do Campo magn�tico.",
+      "correta": "as representações gráficas que indicam direção, sentido e intensidade relativa do Campo magnético",
+      "comentario": "Linhas de campo refere-se às representações gráficas que indicam direção, sentido e intensidade relativa do Campo magnético.",
       "tempoEstimado": 25,
       "tags": [
         "magnetismo",
@@ -1258,22 +1258,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
       "subtopico": "Linhas de campo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situa��o: limalha de ferro se organiza ao redor de um �m� revelando padr�es curvos caracter�sticos Esse caso exemplifica melhor qual subt�pico?",
+      "enunciado": "Observe a situação: limalha de ferro se organiza ao redor de um ímã revelando padrões curvos característicos Esse caso exemplifica melhor qual subtópico?",
       "opcoes": [
         "Linhas de campo",
-        "Campo magn�tico terrestre",
-        "For�a magn�tica sobre cargas",
-        "For�a magn�tica em condutores"
+        "Campo magnético terrestre",
+        "Força magnética sobre cargas",
+        "Força magnética em condutores"
       ],
       "correta": "Linhas de campo",
-      "comentario": "A situa��o apresentada � um exemplo de Linhas de campo.",
+      "comentario": "A situação apresentada é um exemplo de Linhas de campo.",
       "tempoEstimado": 25,
       "tags": [
         "magnetismo",
@@ -1297,21 +1297,21 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
       "subtopico": "Linhas de campo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirma��o descreve corretamente Linhas de campo?",
+      "enunciado": "Qual afirmação descreve corretamente Linhas de campo?",
       "opcoes": [
-        "As representa��es gr�ficas que indicam dire��o, sentido e intensidade relativa do Campo magn�tico.",
-        "O campo gerado pela Terra que orienta b�ssolas e participa de diversos fen�menos naturais.",
-        "A for�a exercida por um Campo magn�tico sobre cargas el�tricas em movimento.",
-        "A for�a que atua sobre fios percorridos por corrente quando estao imersos em Campo magn�tico."
+        "As representações gráficas que indicam direção, sentido e intensidade relativa do Campo magnético.",
+        "O campo gerado pela Terra que orienta bússolas e participa de diversos fenômenos naturais.",
+        "A força exercida por um Campo magnético sobre cargas elétricas em movimento.",
+        "A força que atua sobre fios percorridos por corrente quando estao imersos em Campo magnético."
       ],
-      "correta": "As representa��es gr�ficas que indicam dire��o, sentido e intensidade relativa do Campo magn�tico.",
+      "correta": "As representações gráficas que indicam direção, sentido e intensidade relativa do Campo magnético.",
       "comentario": "A alternativa correta resume o conceito de Linhas de campo.",
       "tempoEstimado": 30,
       "tags": [
@@ -1336,22 +1336,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
       "subtopico": "Linhas de campo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compat�vel com Linhas de campo?",
+      "enunciado": "Qual alternativa NAO esta compatível com Linhas de campo?",
       "opcoes": [
-        "O campo gerado pela Terra que orienta b�ssolas e participa de diversos fen�menos naturais.",
-        "As representa��es gr�ficas que indicam dire��o, sentido e intensidade relativa do Campo magn�tico.",
-        "Interpretar mapas de Campo magn�tico a partir do desenho de suas linhas.",
+        "O campo gerado pela Terra que orienta bússolas e participa de diversos fenômenos naturais.",
+        "As representações gráficas que indicam direção, sentido e intensidade relativa do Campo magnético.",
+        "Interpretar mapas de Campo magnético a partir do desenho de suas linhas.",
         "Ajuda a compreender a leitura de esquemas com limalha de ferro e diagramas de campo."
       ],
-      "correta": "O campo gerado pela Terra que orienta b�ssolas e participa de diversos fen�menos naturais.",
-      "comentario": "A op��o incompativel descreve outro subt�pico, n�o Linhas de campo.",
+      "correta": "O campo gerado pela Terra que orienta bússolas e participa de diversos fenômenos naturais.",
+      "comentario": "A opção incompativel descreve outro subtópico, não Linhas de campo.",
       "tempoEstimado": 30,
       "tags": [
         "magnetismo",
@@ -1375,7 +1375,7 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
       "subtopico": "Linhas de campo",
       "dificuldadeLabel": "facil",
@@ -1384,13 +1384,13 @@
       "tipo": "multipla_escolha",
       "enunciado": "Ao estudar Linhas de campo, o foco principal e:",
       "opcoes": [
-        "interpretar mapas de Campo magn�tico a partir do desenho de suas linhas",
+        "interpretar mapas de Campo magnético a partir do desenho de suas linhas",
         "relacionar o magnetismo terrestre a orientacao e a protecao planetaria",
-        "analisar a interacao entre cargas m�veis e campos magn�ticos",
-        "relacionar corrente el�trica, Campo magn�tico e for�a em condutores"
+        "analisar a interacao entre cargas móveis e campos magnéticos",
+        "relacionar corrente elétrica, Campo magnético e força em condutores"
       ],
-      "correta": "interpretar mapas de Campo magn�tico a partir do desenho de suas linhas",
-      "comentario": "Linhas de campo concentra-se em interpretar mapas de Campo magn�tico a partir do desenho de suas linhas.",
+      "correta": "interpretar mapas de Campo magnético a partir do desenho de suas linhas",
+      "comentario": "Linhas de campo concentra-se em interpretar mapas de Campo magnético a partir do desenho de suas linhas.",
       "tempoEstimado": 35,
       "tags": [
         "magnetismo",
@@ -1414,22 +1414,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
       "subtopico": "Linhas de campo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Campo magn�tico terrestre trata de o campo gerado pela Terra que orienta b�ssolas e participa de diversos fen�menos naturais, Linhas de campo destaca:",
+      "enunciado": "Enquanto Campo magnético terrestre trata de o campo gerado pela Terra que orienta bússolas e participa de diversos fenômenos naturais, Linhas de campo destaca:",
       "opcoes": [
-        "As representa��es gr�ficas que indicam dire��o, sentido e intensidade relativa do Campo magn�tico.",
-        "O campo gerado pela Terra que orienta b�ssolas e participa de diversos fen�menos naturais.",
-        "A for�a exercida por um Campo magn�tico sobre cargas el�tricas em movimento.",
-        "A for�a que atua sobre fios percorridos por corrente quando estao imersos em Campo magn�tico."
+        "As representações gráficas que indicam direção, sentido e intensidade relativa do Campo magnético.",
+        "O campo gerado pela Terra que orienta bússolas e participa de diversos fenômenos naturais.",
+        "A força exercida por um Campo magnético sobre cargas elétricas em movimento.",
+        "A força que atua sobre fios percorridos por corrente quando estao imersos em Campo magnético."
       ],
-      "correta": "As representa��es gr�ficas que indicam dire��o, sentido e intensidade relativa do Campo magn�tico.",
-      "comentario": "A compara��o correta mostra a especificidade de Linhas de campo.",
+      "correta": "As representações gráficas que indicam direção, sentido e intensidade relativa do Campo magnético.",
+      "comentario": "A comparação correta mostra a especificidade de Linhas de campo.",
       "tempoEstimado": 35,
       "tags": [
         "magnetismo",
@@ -1453,22 +1453,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
       "subtopico": "Linhas de campo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma an�lise de sala, considera-se que limalha de ferro se organiza ao redor de um �m� revelando padr�es curvos caracter�sticos Para interpretar essa situa��o, � mais adequado mobilizar o conceito de:",
+      "enunciado": "Em uma análise de sala, considera-se que limalha de ferro se organiza ao redor de um ímã revelando padrões curvos característicos Para interpretar essa situação, é mais adequado mobilizar o conceito de:",
       "opcoes": [
         "Linhas de campo",
-        "Campo magn�tico terrestre",
-        "For�a magn�tica em condutores",
-        "Indu��o eletromagn�tica"
+        "Campo magnético terrestre",
+        "Força magnética em condutores",
+        "Indução eletromagnética"
       ],
       "correta": "Linhas de campo",
-      "comentario": "O caso descrito � interpretado adequadamente por meio de Linhas de campo.",
+      "comentario": "O caso descrito é interpretado adequadamente por meio de Linhas de campo.",
       "tempoEstimado": 40,
       "tags": [
         "magnetismo",
@@ -1492,19 +1492,19 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
       "subtopico": "Linhas de campo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situa��o pr�tica depende mais diretamente de Linhas de campo?",
+      "enunciado": "Qual situação prática depende mais diretamente de Linhas de campo?",
       "opcoes": [
         "a leitura de esquemas com limalha de ferro e diagramas de campo",
-        "a navegacao por b�ssolas e o estudo da orientacao geografica",
-        "aceleradores de part�culas e tubos de raios cat�dicos",
-        "a geracao de energia em d�namos, transformadores e usinas"
+        "a navegacao por bússolas e o estudo da orientacao geografica",
+        "aceleradores de partículas e tubos de raios catódicos",
+        "a geracao de energia em dínamos, transformadores e usinas"
       ],
       "correta": "a leitura de esquemas com limalha de ferro e diagramas de campo",
       "comentario": "Linhas de campo aparece de modo direto na leitura de esquemas com limalha de ferro e diagramas de campo.",
@@ -1531,22 +1531,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
       "subtopico": "Linhas de campo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir de limalha de ferro se organiza ao redor de um �m� revelando padr�es curvos caracter�sticos, qual conclus�o est� mais correta?",
+      "enunciado": "A partir de limalha de ferro se organiza ao redor de um ímã revelando padrões curvos característicos, qual conclusão está mais correta?",
       "opcoes": [
         "o caso e explicado por Linhas de campo.",
-        "o caso e mais bem entendido por Campo magn�tico terrestre.",
-        "a situa��o anula a import�ncia de For�a magn�tica sobre cargas.",
-        "o fen�meno exclui qualquer rela��o com For�a magn�tica em condutores."
+        "o caso e mais bem entendido por Campo magnético terrestre.",
+        "a situação anula a importância de Força magnética sobre cargas.",
+        "o fenômeno exclui qualquer relação com Força magnética em condutores."
       ],
       "correta": "o caso e explicado por Linhas de campo.",
-      "comentario": "A conclus�o adequada retoma a ideia central de Linhas de campo.",
+      "comentario": "A conclusão adequada retoma a ideia central de Linhas de campo.",
       "tempoEstimado": 45,
       "tags": [
         "magnetismo",
@@ -1570,7 +1570,7 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
       "subtopico": "Linhas de campo",
       "dificuldadeLabel": "medio",
@@ -1580,9 +1580,9 @@
       "enunciado": "Se um grupo fosse pesquisar Linhas de campo, qual pergunta orientadora seria a mais adequada?",
       "opcoes": [
         "Como Linhas de campo aparece na leitura de esquemas com limalha de ferro e diagramas de campo?",
-        "Como Campo magn�tico terrestre substitui totalmente a leitura de esquemas com limalha de ferro e diagramas de campo?",
-        "Por que For�a magn�tica sobre cargas torna desnecess�rio estudar Linhas de campo?",
-        "De que modo For�a magn�tica em condutores elimina toda medida fisica envolvida?"
+        "Como Campo magnético terrestre substitui totalmente a leitura de esquemas com limalha de ferro e diagramas de campo?",
+        "Por que Força magnética sobre cargas torna desnecessário estudar Linhas de campo?",
+        "De que modo Força magnética em condutores elimina toda medida fisica envolvida?"
       ],
       "correta": "Como Linhas de campo aparece na leitura de esquemas com limalha de ferro e diagramas de campo?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Linhas de campo.",
@@ -1609,7 +1609,7 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
       "subtopico": "Linhas de campo",
       "dificuldadeLabel": "dificil",
@@ -1618,13 +1618,13 @@
       "tipo": "multipla_escolha",
       "enunciado": "Um erro comum em Linhas de campo e pensar que:",
       "opcoes": [
-        "as Linhas de campo sao fios materiais realmente existentes no espa�o",
-        "a Terra n�o exerce qualquer influencia magnetica mensuravel em objetos e instrumentos",
-        "cargas el�tricas paradas sofrem sempre a mesma for�a magnetica que cargas em movimento",
-        "o Campo magn�tico empurra igualmente qualquer fio, mesmo sem corrente el�trica"
+        "as Linhas de campo sao fios materiais realmente existentes no espaço",
+        "a Terra não exerce qualquer influencia magnetica mensuravel em objetos e instrumentos",
+        "cargas elétricas paradas sofrem sempre a mesma força magnetica que cargas em movimento",
+        "o Campo magnético empurra igualmente qualquer fio, mesmo sem corrente elétrica"
       ],
-      "correta": "as Linhas de campo sao fios materiais realmente existentes no espa�o",
-      "comentario": "Esse e um equ�voco frequente porque contraria a defini��o correta de Linhas de campo.",
+      "correta": "as Linhas de campo sao fios materiais realmente existentes no espaço",
+      "comentario": "Esse e um equívoco frequente porque contraria a definição correta de Linhas de campo.",
       "tempoEstimado": 50,
       "tags": [
         "magnetismo",
@@ -1648,22 +1648,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
       "subtopico": "Linhas de campo",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"as linhas de Campo magn�tico sao trilhas materiais invisiveis por onde passam part�culas\". A avalia��o mais adequada e:",
+      "enunciado": "Um estudante afirma: \"as linhas de Campo magnético sao trilhas materiais invisiveis por onde passam partículas\". A avaliação mais adequada e:",
       "opcoes": [
-        "A afirma��o est� incorreta, porque as representa��es gr�ficas que indicam dire��o, sentido e intensidade relativa do Campo magn�tico.",
-        "A afirma��o est� correta, pois resume integralmente Linhas de campo.",
-        "A afirma��o est� correta, porque toda situa��o do tema depende apenas dessa ideia.",
-        "A afirma��o est� incorreta apenas porque n�o apresenta uma unidade de medida."
+        "A afirmação está incorreta, porque as representações gráficas que indicam direção, sentido e intensidade relativa do Campo magnético.",
+        "A afirmação está correta, pois resume integralmente Linhas de campo.",
+        "A afirmação está correta, porque toda situação do tema depende apenas dessa ideia.",
+        "A afirmação está incorreta apenas porque não apresenta uma unidade de medida."
       ],
-      "correta": "A afirma��o est� incorreta, porque as representa��es gr�ficas que indicam dire��o, sentido e intensidade relativa do Campo magn�tico.",
-      "comentario": "A fala do estudante apresenta um equ�voco conceitual sobre Linhas de campo.",
+      "correta": "A afirmação está incorreta, porque as representações gráficas que indicam direção, sentido e intensidade relativa do Campo magnético.",
+      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre Linhas de campo.",
       "tempoEstimado": 55,
       "tags": [
         "magnetismo",
@@ -1687,22 +1687,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
       "subtopico": "Linhas de campo",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se Linhas de campo fosse ignorado(a) ao analisar a leitura de esquemas com limalha de ferro e diagramas de campo, o resultado mais prov�vel seria:",
+      "enunciado": "Se Linhas de campo fosse ignorado(a) ao analisar a leitura de esquemas com limalha de ferro e diagramas de campo, o resultado mais provável seria:",
       "opcoes": [
-        "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre a leitura de esquemas com limalha de ferro e diagramas de campo.",
-        "a situa��o seria explicada automaticamente por Campo magn�tico terrestre, sem necessidade de an�lise.",
-        "nenhuma interpretacao fisica seria alterada, porque Linhas de campo n�o interfere nesse tipo de problema.",
-        "o fen�meno deixaria de existir apenas por n�o ser nomeado."
+        "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a leitura de esquemas com limalha de ferro e diagramas de campo.",
+        "a situação seria explicada automaticamente por Campo magnético terrestre, sem necessidade de análise.",
+        "nenhuma interpretacao fisica seria alterada, porque Linhas de campo não interfere nesse tipo de problema.",
+        "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
-      "correta": "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre a leitura de esquemas com limalha de ferro e diagramas de campo.",
-      "comentario": "Ignorar Linhas de campo compromete a leitura fisica da situa��o apresentada.",
+      "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a leitura de esquemas com limalha de ferro e diagramas de campo.",
+      "comentario": "Ignorar Linhas de campo compromete a leitura fisica da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "magnetismo",
@@ -1726,22 +1726,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
       "subtopico": "Linhas de campo",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma aplica��o cotidiana ou escolar, Linhas de campo ajuda principalmente a compreender:",
+      "enunciado": "Em uma aplicação cotidiana ou escolar, Linhas de campo ajuda principalmente a compreender:",
       "opcoes": [
         "a leitura de esquemas com limalha de ferro e diagramas de campo",
-        "a navegacao por b�ssolas e o estudo da orientacao geografica",
-        "aceleradores de part�culas e tubos de raios cat�dicos",
+        "a navegacao por bússolas e o estudo da orientacao geografica",
+        "aceleradores de partículas e tubos de raios catódicos",
         "o principio de funcionamento de alto-falantes e partes de motores"
       ],
       "correta": "a leitura de esquemas com limalha de ferro e diagramas de campo",
-      "comentario": "A aplica��o escolhida e a que melhor representa Linhas de campo.",
+      "comentario": "A aplicação escolhida e a que melhor representa Linhas de campo.",
       "tempoEstimado": 60,
       "tags": [
         "magnetismo",
@@ -1765,7 +1765,7 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
       "subtopico": "Linhas de campo",
       "dificuldadeLabel": "dificil",
@@ -1774,13 +1774,13 @@
       "tipo": "multipla_escolha",
       "enunciado": "Qual resumo sintetiza melhor a ideia central de Linhas de campo?",
       "opcoes": [
-        "Em s�ntese, as representa��es gr�ficas que indicam dire��o, sentido e intensidade relativa do Campo magn�tico.",
-        "Em s�ntese, o campo gerado pela Terra que orienta b�ssolas e participa de diversos fen�menos naturais.",
-        "Em s�ntese, a for�a exercida por um Campo magn�tico sobre cargas el�tricas em movimento.",
-        "Em s�ntese, a for�a que atua sobre fios percorridos por corrente quando estao imersos em Campo magn�tico."
+        "Em síntese, as representações gráficas que indicam direção, sentido e intensidade relativa do Campo magnético.",
+        "Em síntese, o campo gerado pela Terra que orienta bússolas e participa de diversos fenômenos naturais.",
+        "Em síntese, a força exercida por um Campo magnético sobre cargas elétricas em movimento.",
+        "Em síntese, a força que atua sobre fios percorridos por corrente quando estao imersos em Campo magnético."
       ],
-      "correta": "Em s�ntese, as representa��es gr�ficas que indicam dire��o, sentido e intensidade relativa do Campo magn�tico.",
-      "comentario": "O resumo correto recupera o n�cleo conceitual de Linhas de campo.",
+      "correta": "Em síntese, as representações gráficas que indicam direção, sentido e intensidade relativa do Campo magnético.",
+      "comentario": "O resumo correto recupera o núcleo conceitual de Linhas de campo.",
       "tempoEstimado": 65,
       "tags": [
         "magnetismo",
@@ -1804,22 +1804,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Campo magn�tico terrestre",
+      "subtopico": "Campo magnético terrestre",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em F�sica, Campo magn�tico terrestre pode ser definido(a) como:",
+      "enunciado": "Em Física, Campo magnético terrestre pode ser definido(a) como:",
       "opcoes": [
-        "o campo gerado pela Terra que orienta b�ssolas e participa de diversos fen�menos naturais",
-        "a for�a exercida por um Campo magn�tico sobre cargas el�tricas em movimento",
-        "a for�a que atua sobre fios percorridos por corrente quando estao imersos em Campo magn�tico",
-        "a produ��o de corrente ou tens�o el�trica a partir de varia��es no fluxo magn�tico"
+        "o campo gerado pela Terra que orienta bússolas e participa de diversos fenômenos naturais",
+        "a força exercida por um Campo magnético sobre cargas elétricas em movimento",
+        "a força que atua sobre fios percorridos por corrente quando estao imersos em Campo magnético",
+        "a produção de corrente ou tensão elétrica a partir de variações no fluxo magnético"
       ],
-      "correta": "o campo gerado pela Terra que orienta b�ssolas e participa de diversos fen�menos naturais",
-      "comentario": "Campo magn�tico terrestre refere-se ao campo gerado pela Terra que orienta b�ssolas e participa de diversos fen�menos naturais.",
+      "correta": "o campo gerado pela Terra que orienta bússolas e participa de diversos fenômenos naturais",
+      "comentario": "Campo magnético terrestre refere-se ao campo gerado pela Terra que orienta bússolas e participa de diversos fenômenos naturais.",
       "tempoEstimado": 25,
       "tags": [
         "magnetismo",
@@ -1843,22 +1843,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Campo magn�tico terrestre",
+      "subtopico": "Campo magnético terrestre",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situa��o: a agulha da b�ssola se alinha aproximadamente na dire��o norte-sul por influencia da Terra Esse caso exemplifica melhor qual subt�pico?",
+      "enunciado": "Observe a situação: a agulha da bússola se alinha aproximadamente na direção norte-sul por influencia da Terra Esse caso exemplifica melhor qual subtópico?",
       "opcoes": [
-        "Campo magn�tico terrestre",
-        "For�a magn�tica sobre cargas",
-        "For�a magn�tica em condutores",
-        "Indu��o eletromagn�tica"
+        "Campo magnético terrestre",
+        "Força magnética sobre cargas",
+        "Força magnética em condutores",
+        "Indução eletromagnética"
       ],
-      "correta": "Campo magn�tico terrestre",
-      "comentario": "A situa��o apresentada � um exemplo de Campo magn�tico terrestre.",
+      "correta": "Campo magnético terrestre",
+      "comentario": "A situação apresentada é um exemplo de Campo magnético terrestre.",
       "tempoEstimado": 25,
       "tags": [
         "magnetismo",
@@ -1882,22 +1882,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Campo magn�tico terrestre",
+      "subtopico": "Campo magnético terrestre",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirma��o descreve corretamente Campo magn�tico terrestre?",
+      "enunciado": "Qual afirmação descreve corretamente Campo magnético terrestre?",
       "opcoes": [
-        "O campo gerado pela Terra que orienta b�ssolas e participa de diversos fen�menos naturais.",
-        "A for�a exercida por um Campo magn�tico sobre cargas el�tricas em movimento.",
-        "A for�a que atua sobre fios percorridos por corrente quando estao imersos em Campo magn�tico.",
-        "A produ��o de corrente ou tens�o el�trica a partir de varia��es no fluxo magn�tico."
+        "O campo gerado pela Terra que orienta bússolas e participa de diversos fenômenos naturais.",
+        "A força exercida por um Campo magnético sobre cargas elétricas em movimento.",
+        "A força que atua sobre fios percorridos por corrente quando estao imersos em Campo magnético.",
+        "A produção de corrente ou tensão elétrica a partir de variações no fluxo magnético."
       ],
-      "correta": "O campo gerado pela Terra que orienta b�ssolas e participa de diversos fen�menos naturais.",
-      "comentario": "A alternativa correta resume o conceito de Campo magn�tico terrestre.",
+      "correta": "O campo gerado pela Terra que orienta bússolas e participa de diversos fenômenos naturais.",
+      "comentario": "A alternativa correta resume o conceito de Campo magnético terrestre.",
       "tempoEstimado": 30,
       "tags": [
         "magnetismo",
@@ -1921,22 +1921,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Campo magn�tico terrestre",
+      "subtopico": "Campo magnético terrestre",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compat�vel com Campo magn�tico terrestre?",
+      "enunciado": "Qual alternativa NAO esta compatível com Campo magnético terrestre?",
       "opcoes": [
-        "A for�a exercida por um Campo magn�tico sobre cargas el�tricas em movimento.",
-        "O campo gerado pela Terra que orienta b�ssolas e participa de diversos fen�menos naturais.",
+        "A força exercida por um Campo magnético sobre cargas elétricas em movimento.",
+        "O campo gerado pela Terra que orienta bússolas e participa de diversos fenômenos naturais.",
         "Relacionar o magnetismo terrestre a orientacao e a protecao planetaria.",
-        "Ajuda a compreender a navegacao por b�ssolas e o estudo da orientacao geografica."
+        "Ajuda a compreender a navegacao por bússolas e o estudo da orientacao geografica."
       ],
-      "correta": "A for�a exercida por um Campo magn�tico sobre cargas el�tricas em movimento.",
-      "comentario": "A op��o incompativel descreve outro subt�pico, n�o Campo magn�tico terrestre.",
+      "correta": "A força exercida por um Campo magnético sobre cargas elétricas em movimento.",
+      "comentario": "A opção incompativel descreve outro subtópico, não Campo magnético terrestre.",
       "tempoEstimado": 30,
       "tags": [
         "magnetismo",
@@ -1960,22 +1960,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Campo magn�tico terrestre",
+      "subtopico": "Campo magnético terrestre",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar Campo magn�tico terrestre, o foco principal e:",
+      "enunciado": "Ao estudar Campo magnético terrestre, o foco principal e:",
       "opcoes": [
         "relacionar o magnetismo terrestre a orientacao e a protecao planetaria",
-        "analisar a interacao entre cargas m�veis e campos magn�ticos",
-        "relacionar corrente el�trica, Campo magn�tico e for�a em condutores",
-        "explicar como mudancas no Campo magn�tico geram efeitos el�tricos"
+        "analisar a interacao entre cargas móveis e campos magnéticos",
+        "relacionar corrente elétrica, Campo magnético e força em condutores",
+        "explicar como mudancas no Campo magnético geram efeitos elétricos"
       ],
       "correta": "relacionar o magnetismo terrestre a orientacao e a protecao planetaria",
-      "comentario": "Campo magn�tico terrestre concentra-se em relacionar o magnetismo terrestre a orientacao e a protecao planetaria.",
+      "comentario": "Campo magnético terrestre concentra-se em relacionar o magnetismo terrestre a orientacao e a protecao planetaria.",
       "tempoEstimado": 35,
       "tags": [
         "magnetismo",
@@ -1999,22 +1999,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Campo magn�tico terrestre",
+      "subtopico": "Campo magnético terrestre",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto For�a magn�tica sobre cargas trata de a for�a exercida por um Campo magn�tico sobre cargas el�tricas em movimento, Campo magn�tico terrestre destaca:",
+      "enunciado": "Enquanto Força magnética sobre cargas trata de a força exercida por um Campo magnético sobre cargas elétricas em movimento, Campo magnético terrestre destaca:",
       "opcoes": [
-        "O campo gerado pela Terra que orienta b�ssolas e participa de diversos fen�menos naturais.",
-        "A for�a exercida por um Campo magn�tico sobre cargas el�tricas em movimento.",
-        "A for�a que atua sobre fios percorridos por corrente quando estao imersos em Campo magn�tico.",
-        "A produ��o de corrente ou tens�o el�trica a partir de varia��es no fluxo magn�tico."
+        "O campo gerado pela Terra que orienta bússolas e participa de diversos fenômenos naturais.",
+        "A força exercida por um Campo magnético sobre cargas elétricas em movimento.",
+        "A força que atua sobre fios percorridos por corrente quando estao imersos em Campo magnético.",
+        "A produção de corrente ou tensão elétrica a partir de variações no fluxo magnético."
       ],
-      "correta": "O campo gerado pela Terra que orienta b�ssolas e participa de diversos fen�menos naturais.",
-      "comentario": "A compara��o correta mostra a especificidade de Campo magn�tico terrestre.",
+      "correta": "O campo gerado pela Terra que orienta bússolas e participa de diversos fenômenos naturais.",
+      "comentario": "A comparação correta mostra a especificidade de Campo magnético terrestre.",
       "tempoEstimado": 35,
       "tags": [
         "magnetismo",
@@ -2038,22 +2038,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Campo magn�tico terrestre",
+      "subtopico": "Campo magnético terrestre",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma an�lise de sala, considera-se que a agulha da b�ssola se alinha aproximadamente na dire��o norte-sul por influencia da Terra Para interpretar essa situa��o, � mais adequado mobilizar o conceito de:",
+      "enunciado": "Em uma análise de sala, considera-se que a agulha da bússola se alinha aproximadamente na direção norte-sul por influencia da Terra Para interpretar essa situação, é mais adequado mobilizar o conceito de:",
       "opcoes": [
-        "Campo magn�tico terrestre",
-        "For�a magn�tica sobre cargas",
-        "Indu��o eletromagn�tica",
-        "Eletro�m�s"
+        "Campo magnético terrestre",
+        "Força magnética sobre cargas",
+        "Indução eletromagnética",
+        "Eletroímãs"
       ],
-      "correta": "Campo magn�tico terrestre",
-      "comentario": "O caso descrito � interpretado adequadamente por meio de Campo magn�tico terrestre.",
+      "correta": "Campo magnético terrestre",
+      "comentario": "O caso descrito é interpretado adequadamente por meio de Campo magnético terrestre.",
       "tempoEstimado": 40,
       "tags": [
         "magnetismo",
@@ -2077,22 +2077,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Campo magn�tico terrestre",
+      "subtopico": "Campo magnético terrestre",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situa��o pr�tica depende mais diretamente de Campo magn�tico terrestre?",
+      "enunciado": "Qual situação prática depende mais diretamente de Campo magnético terrestre?",
       "opcoes": [
-        "a navegacao por b�ssolas e o estudo da orientacao geografica",
-        "aceleradores de part�culas e tubos de raios cat�dicos",
+        "a navegacao por bússolas e o estudo da orientacao geografica",
+        "aceleradores de partículas e tubos de raios catódicos",
         "o principio de funcionamento de alto-falantes e partes de motores",
-        "guindastes de sucata, campainhas e travas el�tricas"
+        "guindastes de sucata, campainhas e travas elétricas"
       ],
-      "correta": "a navegacao por b�ssolas e o estudo da orientacao geografica",
-      "comentario": "Campo magn�tico terrestre aparece de modo direto na navegacao por b�ssolas e o estudo da orientacao geografica.",
+      "correta": "a navegacao por bússolas e o estudo da orientacao geografica",
+      "comentario": "Campo magnético terrestre aparece de modo direto na navegacao por bússolas e o estudo da orientacao geografica.",
       "tempoEstimado": 40,
       "tags": [
         "magnetismo",
@@ -2116,22 +2116,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Campo magn�tico terrestre",
+      "subtopico": "Campo magnético terrestre",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir de a agulha da b�ssola se alinha aproximadamente na dire��o norte-sul por influencia da terra, qual conclus�o est� mais correta?",
+      "enunciado": "A partir de a agulha da bússola se alinha aproximadamente na direção norte-sul por influencia da terra, qual conclusão está mais correta?",
       "opcoes": [
-        "o caso e explicado por Campo magn�tico terrestre.",
-        "o caso e mais bem entendido por For�a magn�tica sobre cargas.",
-        "a situa��o anula a import�ncia de For�a magn�tica em condutores.",
-        "o fen�meno exclui qualquer rela��o com Indu��o eletromagn�tica."
+        "o caso e explicado por Campo magnético terrestre.",
+        "o caso e mais bem entendido por Força magnética sobre cargas.",
+        "a situação anula a importância de Força magnética em condutores.",
+        "o fenômeno exclui qualquer relação com Indução eletromagnética."
       ],
-      "correta": "o caso e explicado por Campo magn�tico terrestre.",
-      "comentario": "A conclus�o adequada retoma a ideia central de Campo magn�tico terrestre.",
+      "correta": "o caso e explicado por Campo magnético terrestre.",
+      "comentario": "A conclusão adequada retoma a ideia central de Campo magnético terrestre.",
       "tempoEstimado": 45,
       "tags": [
         "magnetismo",
@@ -2155,22 +2155,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Campo magn�tico terrestre",
+      "subtopico": "Campo magnético terrestre",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Se um grupo fosse pesquisar Campo magn�tico terrestre, qual pergunta orientadora seria a mais adequada?",
+      "enunciado": "Se um grupo fosse pesquisar Campo magnético terrestre, qual pergunta orientadora seria a mais adequada?",
       "opcoes": [
-        "Como Campo magn�tico terrestre aparece na navegacao por b�ssolas e o estudo da orientacao geografica?",
-        "Como For�a magn�tica sobre cargas substitui totalmente a navegacao por b�ssolas e o estudo da orientacao geografica?",
-        "Por que For�a magn�tica em condutores torna desnecess�rio estudar Campo magn�tico terrestre?",
-        "De que modo Indu��o eletromagn�tica elimina toda medida fisica envolvida?"
+        "Como Campo magnético terrestre aparece na navegacao por bússolas e o estudo da orientacao geografica?",
+        "Como Força magnética sobre cargas substitui totalmente a navegacao por bússolas e o estudo da orientacao geografica?",
+        "Por que Força magnética em condutores torna desnecessário estudar Campo magnético terrestre?",
+        "De que modo Indução eletromagnética elimina toda medida fisica envolvida?"
       ],
-      "correta": "Como Campo magn�tico terrestre aparece na navegacao por b�ssolas e o estudo da orientacao geografica?",
-      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Campo magn�tico terrestre.",
+      "correta": "Como Campo magnético terrestre aparece na navegacao por bússolas e o estudo da orientacao geografica?",
+      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Campo magnético terrestre.",
       "tempoEstimado": 45,
       "tags": [
         "magnetismo",
@@ -2194,22 +2194,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Campo magn�tico terrestre",
+      "subtopico": "Campo magnético terrestre",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em Campo magn�tico terrestre e pensar que:",
+      "enunciado": "Um erro comum em Campo magnético terrestre e pensar que:",
       "opcoes": [
-        "a Terra n�o exerce qualquer influencia magnetica mensuravel em objetos e instrumentos",
-        "cargas el�tricas paradas sofrem sempre a mesma for�a magnetica que cargas em movimento",
-        "o Campo magn�tico empurra igualmente qualquer fio, mesmo sem corrente el�trica",
-        "basta haver um �m� parado perto da bobina para surgir corrente continuamente"
+        "a Terra não exerce qualquer influencia magnetica mensuravel em objetos e instrumentos",
+        "cargas elétricas paradas sofrem sempre a mesma força magnetica que cargas em movimento",
+        "o Campo magnético empurra igualmente qualquer fio, mesmo sem corrente elétrica",
+        "basta haver um ímã parado perto da bobina para surgir corrente continuamente"
       ],
-      "correta": "a Terra n�o exerce qualquer influencia magnetica mensuravel em objetos e instrumentos",
-      "comentario": "Esse e um equ�voco frequente porque contraria a defini��o correta de Campo magn�tico terrestre.",
+      "correta": "a Terra não exerce qualquer influencia magnetica mensuravel em objetos e instrumentos",
+      "comentario": "Esse e um equívoco frequente porque contraria a definição correta de Campo magnético terrestre.",
       "tempoEstimado": 50,
       "tags": [
         "magnetismo",
@@ -2233,22 +2233,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Campo magn�tico terrestre",
+      "subtopico": "Campo magnético terrestre",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"b�ssolas apontam para o norte apenas por habito de fabricacao, n�o por acao da Terra\". A avalia��o mais adequada e:",
+      "enunciado": "Um estudante afirma: \"bússolas apontam para o norte apenas por habito de fabricacao, não por acao da Terra\". A avaliação mais adequada e:",
       "opcoes": [
-        "A afirma��o est� incorreta, porque o campo gerado pela Terra que orienta b�ssolas e participa de diversos fen�menos naturais.",
-        "A afirma��o est� correta, pois resume integralmente Campo magn�tico terrestre.",
-        "A afirma��o est� correta, porque toda situa��o do tema depende apenas dessa ideia.",
-        "A afirma��o est� incorreta apenas porque n�o apresenta uma unidade de medida."
+        "A afirmação está incorreta, porque o campo gerado pela Terra que orienta bússolas e participa de diversos fenômenos naturais.",
+        "A afirmação está correta, pois resume integralmente Campo magnético terrestre.",
+        "A afirmação está correta, porque toda situação do tema depende apenas dessa ideia.",
+        "A afirmação está incorreta apenas porque não apresenta uma unidade de medida."
       ],
-      "correta": "A afirma��o est� incorreta, porque o campo gerado pela Terra que orienta b�ssolas e participa de diversos fen�menos naturais.",
-      "comentario": "A fala do estudante apresenta um equ�voco conceitual sobre Campo magn�tico terrestre.",
+      "correta": "A afirmação está incorreta, porque o campo gerado pela Terra que orienta bússolas e participa de diversos fenômenos naturais.",
+      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre Campo magnético terrestre.",
       "tempoEstimado": 55,
       "tags": [
         "magnetismo",
@@ -2272,22 +2272,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Campo magn�tico terrestre",
+      "subtopico": "Campo magnético terrestre",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se Campo magn�tico terrestre fosse ignorado(a) ao analisar a navegacao por b�ssolas e o estudo da orientacao geografica, o resultado mais prov�vel seria:",
+      "enunciado": "Se Campo magnético terrestre fosse ignorado(a) ao analisar a navegacao por bússolas e o estudo da orientacao geografica, o resultado mais provável seria:",
       "opcoes": [
-        "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre a navegacao por b�ssolas e o estudo da orientacao geografica.",
-        "a situa��o seria explicada automaticamente por For�a magn�tica sobre cargas, sem necessidade de an�lise.",
-        "nenhuma interpretacao fisica seria alterada, porque Campo magn�tico terrestre n�o interfere nesse tipo de problema.",
-        "o fen�meno deixaria de existir apenas por n�o ser nomeado."
+        "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a navegacao por bússolas e o estudo da orientacao geografica.",
+        "a situação seria explicada automaticamente por Força magnética sobre cargas, sem necessidade de análise.",
+        "nenhuma interpretacao fisica seria alterada, porque Campo magnético terrestre não interfere nesse tipo de problema.",
+        "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
-      "correta": "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre a navegacao por b�ssolas e o estudo da orientacao geografica.",
-      "comentario": "Ignorar Campo magn�tico terrestre compromete a leitura fisica da situa��o apresentada.",
+      "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a navegacao por bússolas e o estudo da orientacao geografica.",
+      "comentario": "Ignorar Campo magnético terrestre compromete a leitura fisica da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "magnetismo",
@@ -2311,22 +2311,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Campo magn�tico terrestre",
+      "subtopico": "Campo magnético terrestre",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma aplica��o cotidiana ou escolar, Campo magn�tico terrestre ajuda principalmente a compreender:",
+      "enunciado": "Em uma aplicação cotidiana ou escolar, Campo magnético terrestre ajuda principalmente a compreender:",
       "opcoes": [
-        "a navegacao por b�ssolas e o estudo da orientacao geografica",
-        "aceleradores de part�culas e tubos de raios cat�dicos",
+        "a navegacao por bússolas e o estudo da orientacao geografica",
+        "aceleradores de partículas e tubos de raios catódicos",
         "o principio de funcionamento de alto-falantes e partes de motores",
-        "a geracao de energia em d�namos, transformadores e usinas"
+        "a geracao de energia em dínamos, transformadores e usinas"
       ],
-      "correta": "a navegacao por b�ssolas e o estudo da orientacao geografica",
-      "comentario": "A aplica��o escolhida e a que melhor representa Campo magn�tico terrestre.",
+      "correta": "a navegacao por bússolas e o estudo da orientacao geografica",
+      "comentario": "A aplicação escolhida e a que melhor representa Campo magnético terrestre.",
       "tempoEstimado": 60,
       "tags": [
         "magnetismo",
@@ -2350,22 +2350,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Campo magn�tico terrestre",
+      "subtopico": "Campo magnético terrestre",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual resumo sintetiza melhor a ideia central de Campo magn�tico terrestre?",
+      "enunciado": "Qual resumo sintetiza melhor a ideia central de Campo magnético terrestre?",
       "opcoes": [
-        "Em s�ntese, o campo gerado pela Terra que orienta b�ssolas e participa de diversos fen�menos naturais.",
-        "Em s�ntese, a for�a exercida por um Campo magn�tico sobre cargas el�tricas em movimento.",
-        "Em s�ntese, a for�a que atua sobre fios percorridos por corrente quando estao imersos em Campo magn�tico.",
-        "Em s�ntese, a produ��o de corrente ou tens�o el�trica a partir de varia��es no fluxo magn�tico."
+        "Em síntese, o campo gerado pela Terra que orienta bússolas e participa de diversos fenômenos naturais.",
+        "Em síntese, a força exercida por um Campo magnético sobre cargas elétricas em movimento.",
+        "Em síntese, a força que atua sobre fios percorridos por corrente quando estao imersos em Campo magnético.",
+        "Em síntese, a produção de corrente ou tensão elétrica a partir de variações no fluxo magnético."
       ],
-      "correta": "Em s�ntese, o campo gerado pela Terra que orienta b�ssolas e participa de diversos fen�menos naturais.",
-      "comentario": "O resumo correto recupera o n�cleo conceitual de Campo magn�tico terrestre.",
+      "correta": "Em síntese, o campo gerado pela Terra que orienta bússolas e participa de diversos fenômenos naturais.",
+      "comentario": "O resumo correto recupera o núcleo conceitual de Campo magnético terrestre.",
       "tempoEstimado": 65,
       "tags": [
         "magnetismo",
@@ -2389,22 +2389,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "For�a magn�tica sobre cargas",
+      "subtopico": "Força magnética sobre cargas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em F�sica, For�a magn�tica sobre cargas pode ser definido(a) como:",
+      "enunciado": "Em Física, Força magnética sobre cargas pode ser definido(a) como:",
       "opcoes": [
-        "a for�a exercida por um Campo magn�tico sobre cargas el�tricas em movimento",
-        "a for�a que atua sobre fios percorridos por corrente quando estao imersos em Campo magn�tico",
-        "a produ��o de corrente ou tens�o el�trica a partir de varia��es no fluxo magn�tico",
-        "dispositivos em que a corrente el�trica produz campo magn�tico, geralmente refor�ado por n�cleo ferromagn�tico"
+        "a força exercida por um Campo magnético sobre cargas elétricas em movimento",
+        "a força que atua sobre fios percorridos por corrente quando estao imersos em Campo magnético",
+        "a produção de corrente ou tensão elétrica a partir de variações no fluxo magnético",
+        "dispositivos em que a corrente elétrica produz campo magnético, geralmente reforçado por núcleo ferromagnético"
       ],
-      "correta": "a for�a exercida por um Campo magn�tico sobre cargas el�tricas em movimento",
-      "comentario": "For�a magn�tica sobre cargas refere-se � for�a exercida por um Campo magn�tico sobre cargas el�tricas em movimento.",
+      "correta": "a força exercida por um Campo magnético sobre cargas elétricas em movimento",
+      "comentario": "Força magnética sobre cargas refere-se à força exercida por um Campo magnético sobre cargas elétricas em movimento.",
       "tempoEstimado": 25,
       "tags": [
         "magnetismo",
@@ -2428,22 +2428,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "For�a magn�tica sobre cargas",
+      "subtopico": "Força magnética sobre cargas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situa��o: part�culas carregadas entram em uma regi�o com Campo magn�tico e tem sua trajet�ria desviada Esse caso exemplifica melhor qual subt�pico?",
+      "enunciado": "Observe a situação: partículas carregadas entram em uma região com Campo magnético e tem sua trajetória desviada Esse caso exemplifica melhor qual subtópico?",
       "opcoes": [
-        "For�a magn�tica sobre cargas",
-        "For�a magn�tica em condutores",
-        "Indu��o eletromagn�tica",
-        "Eletro�m�s"
+        "Força magnética sobre cargas",
+        "Força magnética em condutores",
+        "Indução eletromagnética",
+        "Eletroímãs"
       ],
-      "correta": "For�a magn�tica sobre cargas",
-      "comentario": "A situa��o apresentada � um exemplo de For�a magn�tica sobre cargas.",
+      "correta": "Força magnética sobre cargas",
+      "comentario": "A situação apresentada é um exemplo de Força magnética sobre cargas.",
       "tempoEstimado": 25,
       "tags": [
         "magnetismo",
@@ -2467,22 +2467,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "For�a magn�tica sobre cargas",
+      "subtopico": "Força magnética sobre cargas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirma��o descreve corretamente For�a magn�tica sobre cargas?",
+      "enunciado": "Qual afirmação descreve corretamente Força magnética sobre cargas?",
       "opcoes": [
-        "A for�a exercida por um Campo magn�tico sobre cargas el�tricas em movimento.",
-        "A for�a que atua sobre fios percorridos por corrente quando estao imersos em Campo magn�tico.",
-        "A produ��o de corrente ou tens�o el�trica a partir de varia��es no fluxo magn�tico.",
-        "Dispositivos em que a corrente el�trica produz campo magn�tico, geralmente refor�ado por n�cleo ferromagn�tico."
+        "A força exercida por um Campo magnético sobre cargas elétricas em movimento.",
+        "A força que atua sobre fios percorridos por corrente quando estao imersos em Campo magnético.",
+        "A produção de corrente ou tensão elétrica a partir de variações no fluxo magnético.",
+        "Dispositivos em que a corrente elétrica produz campo magnético, geralmente reforçado por núcleo ferromagnético."
       ],
-      "correta": "A for�a exercida por um Campo magn�tico sobre cargas el�tricas em movimento.",
-      "comentario": "A alternativa correta resume o conceito de For�a magn�tica sobre cargas.",
+      "correta": "A força exercida por um Campo magnético sobre cargas elétricas em movimento.",
+      "comentario": "A alternativa correta resume o conceito de Força magnética sobre cargas.",
       "tempoEstimado": 30,
       "tags": [
         "magnetismo",
@@ -2506,22 +2506,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "For�a magn�tica sobre cargas",
+      "subtopico": "Força magnética sobre cargas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compat�vel com For�a magn�tica sobre cargas?",
+      "enunciado": "Qual alternativa NAO esta compatível com Força magnética sobre cargas?",
       "opcoes": [
-        "A for�a que atua sobre fios percorridos por corrente quando estao imersos em Campo magn�tico.",
-        "A for�a exercida por um Campo magn�tico sobre cargas el�tricas em movimento.",
-        "Analisar a interacao entre cargas m�veis e campos magn�ticos.",
-        "Ajuda a compreender aceleradores de part�culas e tubos de raios cat�dicos."
+        "A força que atua sobre fios percorridos por corrente quando estao imersos em Campo magnético.",
+        "A força exercida por um Campo magnético sobre cargas elétricas em movimento.",
+        "Analisar a interacao entre cargas móveis e campos magnéticos.",
+        "Ajuda a compreender aceleradores de partículas e tubos de raios catódicos."
       ],
-      "correta": "A for�a que atua sobre fios percorridos por corrente quando estao imersos em Campo magn�tico.",
-      "comentario": "A op��o incompativel descreve outro subt�pico, n�o For�a magn�tica sobre cargas.",
+      "correta": "A força que atua sobre fios percorridos por corrente quando estao imersos em Campo magnético.",
+      "comentario": "A opção incompativel descreve outro subtópico, não Força magnética sobre cargas.",
       "tempoEstimado": 30,
       "tags": [
         "magnetismo",
@@ -2545,22 +2545,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "For�a magn�tica sobre cargas",
+      "subtopico": "Força magnética sobre cargas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar For�a magn�tica sobre cargas, o foco principal e:",
+      "enunciado": "Ao estudar Força magnética sobre cargas, o foco principal e:",
       "opcoes": [
-        "analisar a interacao entre cargas m�veis e campos magn�ticos",
-        "relacionar corrente el�trica, Campo magn�tico e for�a em condutores",
-        "explicar como mudancas no Campo magn�tico geram efeitos el�tricos",
-        "relacionar corrente el�trica ao surgimento de magnetismo artificial controlavel"
+        "analisar a interacao entre cargas móveis e campos magnéticos",
+        "relacionar corrente elétrica, Campo magnético e força em condutores",
+        "explicar como mudancas no Campo magnético geram efeitos elétricos",
+        "relacionar corrente elétrica ao surgimento de magnetismo artificial controlavel"
       ],
-      "correta": "analisar a interacao entre cargas m�veis e campos magn�ticos",
-      "comentario": "For�a magn�tica sobre cargas concentra-se em analisar a interacao entre cargas m�veis e campos magn�ticos.",
+      "correta": "analisar a interacao entre cargas móveis e campos magnéticos",
+      "comentario": "Força magnética sobre cargas concentra-se em analisar a interacao entre cargas móveis e campos magnéticos.",
       "tempoEstimado": 35,
       "tags": [
         "magnetismo",
@@ -2584,22 +2584,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "For�a magn�tica sobre cargas",
+      "subtopico": "Força magnética sobre cargas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto For�a magn�tica em condutores trata de a for�a que atua sobre fios percorridos por corrente quando estao imersos em Campo magn�tico, For�a magn�tica sobre cargas destaca:",
+      "enunciado": "Enquanto Força magnética em condutores trata de a força que atua sobre fios percorridos por corrente quando estao imersos em Campo magnético, Força magnética sobre cargas destaca:",
       "opcoes": [
-        "A for�a exercida por um Campo magn�tico sobre cargas el�tricas em movimento.",
-        "A for�a que atua sobre fios percorridos por corrente quando estao imersos em Campo magn�tico.",
-        "A produ��o de corrente ou tens�o el�trica a partir de varia��es no fluxo magn�tico.",
-        "Dispositivos em que a corrente el�trica produz campo magn�tico, geralmente refor�ado por n�cleo ferromagn�tico."
+        "A força exercida por um Campo magnético sobre cargas elétricas em movimento.",
+        "A força que atua sobre fios percorridos por corrente quando estao imersos em Campo magnético.",
+        "A produção de corrente ou tensão elétrica a partir de variações no fluxo magnético.",
+        "Dispositivos em que a corrente elétrica produz campo magnético, geralmente reforçado por núcleo ferromagnético."
       ],
-      "correta": "A for�a exercida por um Campo magn�tico sobre cargas el�tricas em movimento.",
-      "comentario": "A compara��o correta mostra a especificidade de For�a magn�tica sobre cargas.",
+      "correta": "A força exercida por um Campo magnético sobre cargas elétricas em movimento.",
+      "comentario": "A comparação correta mostra a especificidade de Força magnética sobre cargas.",
       "tempoEstimado": 35,
       "tags": [
         "magnetismo",
@@ -2623,22 +2623,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "For�a magn�tica sobre cargas",
+      "subtopico": "Força magnética sobre cargas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma an�lise de sala, considera-se que part�culas carregadas entram em uma regi�o com Campo magn�tico e tem sua trajet�ria desviada Para interpretar essa situa��o, � mais adequado mobilizar o conceito de:",
+      "enunciado": "Em uma análise de sala, considera-se que partículas carregadas entram em uma região com Campo magnético e tem sua trajetória desviada Para interpretar essa situação, é mais adequado mobilizar o conceito de:",
       "opcoes": [
-        "For�a magn�tica sobre cargas",
-        "For�a magn�tica em condutores",
-        "Eletro�m�s",
-        "Motores el�tricos"
+        "Força magnética sobre cargas",
+        "Força magnética em condutores",
+        "Eletroímãs",
+        "Motores elétricos"
       ],
-      "correta": "For�a magn�tica sobre cargas",
-      "comentario": "O caso descrito � interpretado adequadamente por meio de For�a magn�tica sobre cargas.",
+      "correta": "Força magnética sobre cargas",
+      "comentario": "O caso descrito é interpretado adequadamente por meio de Força magnética sobre cargas.",
       "tempoEstimado": 40,
       "tags": [
         "magnetismo",
@@ -2662,22 +2662,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "For�a magn�tica sobre cargas",
+      "subtopico": "Força magnética sobre cargas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situa��o pr�tica depende mais diretamente de For�a magn�tica sobre cargas?",
+      "enunciado": "Qual situação prática depende mais diretamente de Força magnética sobre cargas?",
       "opcoes": [
-        "aceleradores de part�culas e tubos de raios cat�dicos",
+        "aceleradores de partículas e tubos de raios catódicos",
         "o principio de funcionamento de alto-falantes e partes de motores",
-        "a geracao de energia em d�namos, transformadores e usinas",
+        "a geracao de energia em dínamos, transformadores e usinas",
         "ventiladores, liquidificadores e diversos equipamentos motorizados"
       ],
-      "correta": "aceleradores de part�culas e tubos de raios cat�dicos",
-      "comentario": "For�a magn�tica sobre cargas aparece de modo direto em aceleradores de part�culas e tubos de raios cat�dicos.",
+      "correta": "aceleradores de partículas e tubos de raios catódicos",
+      "comentario": "Força magnética sobre cargas aparece de modo direto em aceleradores de partículas e tubos de raios catódicos.",
       "tempoEstimado": 40,
       "tags": [
         "magnetismo",
@@ -2701,22 +2701,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "For�a magn�tica sobre cargas",
+      "subtopico": "Força magnética sobre cargas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir de part�culas carregadas entram em uma regi�o com Campo magn�tico e tem sua trajet�ria desviada, qual conclus�o est� mais correta?",
+      "enunciado": "A partir de partículas carregadas entram em uma região com Campo magnético e tem sua trajetória desviada, qual conclusão está mais correta?",
       "opcoes": [
-        "o caso e explicado por For�a magn�tica sobre cargas.",
-        "o caso e mais bem entendido por For�a magn�tica em condutores.",
-        "a situa��o anula a import�ncia de Indu��o eletromagn�tica.",
-        "o fen�meno exclui qualquer rela��o com Eletro�m�s."
+        "o caso e explicado por Força magnética sobre cargas.",
+        "o caso e mais bem entendido por Força magnética em condutores.",
+        "a situação anula a importância de Indução eletromagnética.",
+        "o fenômeno exclui qualquer relação com Eletroímãs."
       ],
-      "correta": "o caso e explicado por For�a magn�tica sobre cargas.",
-      "comentario": "A conclus�o adequada retoma a ideia central de For�a magn�tica sobre cargas.",
+      "correta": "o caso e explicado por Força magnética sobre cargas.",
+      "comentario": "A conclusão adequada retoma a ideia central de Força magnética sobre cargas.",
       "tempoEstimado": 45,
       "tags": [
         "magnetismo",
@@ -2740,22 +2740,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "For�a magn�tica sobre cargas",
+      "subtopico": "Força magnética sobre cargas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Se um grupo fosse pesquisar For�a magn�tica sobre cargas, qual pergunta orientadora seria a mais adequada?",
+      "enunciado": "Se um grupo fosse pesquisar Força magnética sobre cargas, qual pergunta orientadora seria a mais adequada?",
       "opcoes": [
-        "Como For�a magn�tica sobre cargas aparece em aceleradores de part�culas e tubos de raios cat�dicos?",
-        "Como For�a magn�tica em condutores substitui totalmente aceleradores de part�culas e tubos de raios cat�dicos?",
-        "Por que Indu��o eletromagn�tica torna desnecess�rio estudar For�a magn�tica sobre cargas?",
-        "De que modo Eletro�m�s elimina toda medida fisica envolvida?"
+        "Como Força magnética sobre cargas aparece em aceleradores de partículas e tubos de raios catódicos?",
+        "Como Força magnética em condutores substitui totalmente aceleradores de partículas e tubos de raios catódicos?",
+        "Por que Indução eletromagnética torna desnecessário estudar Força magnética sobre cargas?",
+        "De que modo Eletroímãs elimina toda medida fisica envolvida?"
       ],
-      "correta": "Como For�a magn�tica sobre cargas aparece em aceleradores de part�culas e tubos de raios cat�dicos?",
-      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de For�a magn�tica sobre cargas.",
+      "correta": "Como Força magnética sobre cargas aparece em aceleradores de partículas e tubos de raios catódicos?",
+      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Força magnética sobre cargas.",
       "tempoEstimado": 45,
       "tags": [
         "magnetismo",
@@ -2779,22 +2779,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "For�a magn�tica sobre cargas",
+      "subtopico": "Força magnética sobre cargas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em For�a magn�tica sobre cargas e pensar que:",
+      "enunciado": "Um erro comum em Força magnética sobre cargas e pensar que:",
       "opcoes": [
-        "cargas el�tricas paradas sofrem sempre a mesma for�a magnetica que cargas em movimento",
-        "o Campo magn�tico empurra igualmente qualquer fio, mesmo sem corrente el�trica",
-        "basta haver um �m� parado perto da bobina para surgir corrente continuamente",
-        "um eletro�m� mant�m sua for�a magnetica m�xima mesmo desligado da corrente"
+        "cargas elétricas paradas sofrem sempre a mesma força magnetica que cargas em movimento",
+        "o Campo magnético empurra igualmente qualquer fio, mesmo sem corrente elétrica",
+        "basta haver um ímã parado perto da bobina para surgir corrente continuamente",
+        "um eletroímã mantêm sua força magnetica máxima mesmo desligado da corrente"
       ],
-      "correta": "cargas el�tricas paradas sofrem sempre a mesma for�a magnetica que cargas em movimento",
-      "comentario": "Esse e um equ�voco frequente porque contraria a defini��o correta de For�a magn�tica sobre cargas.",
+      "correta": "cargas elétricas paradas sofrem sempre a mesma força magnetica que cargas em movimento",
+      "comentario": "Esse e um equívoco frequente porque contraria a definição correta de Força magnética sobre cargas.",
       "tempoEstimado": 50,
       "tags": [
         "magnetismo",
@@ -2818,22 +2818,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "For�a magn�tica sobre cargas",
+      "subtopico": "Força magnética sobre cargas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"qualquer carga el�trica, em repouso ou em movimento, sofre desvio magn�tico da mesma forma\". A avalia��o mais adequada e:",
+      "enunciado": "Um estudante afirma: \"qualquer carga elétrica, em repouso ou em movimento, sofre desvio magnético da mesma forma\". A avaliação mais adequada e:",
       "opcoes": [
-        "A afirma��o est� incorreta, porque a for�a exercida por um Campo magn�tico sobre cargas el�tricas em movimento.",
-        "A afirma��o est� correta, pois resume integralmente For�a magn�tica sobre cargas.",
-        "A afirma��o est� correta, porque toda situa��o do tema depende apenas dessa ideia.",
-        "A afirma��o est� incorreta apenas porque n�o apresenta uma unidade de medida."
+        "A afirmação está incorreta, porque a força exercida por um Campo magnético sobre cargas elétricas em movimento.",
+        "A afirmação está correta, pois resume integralmente Força magnética sobre cargas.",
+        "A afirmação está correta, porque toda situação do tema depende apenas dessa ideia.",
+        "A afirmação está incorreta apenas porque não apresenta uma unidade de medida."
       ],
-      "correta": "A afirma��o est� incorreta, porque a for�a exercida por um Campo magn�tico sobre cargas el�tricas em movimento.",
-      "comentario": "A fala do estudante apresenta um equ�voco conceitual sobre For�a magn�tica sobre cargas.",
+      "correta": "A afirmação está incorreta, porque a força exercida por um Campo magnético sobre cargas elétricas em movimento.",
+      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre Força magnética sobre cargas.",
       "tempoEstimado": 55,
       "tags": [
         "magnetismo",
@@ -2857,22 +2857,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "For�a magn�tica sobre cargas",
+      "subtopico": "Força magnética sobre cargas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se For�a magn�tica sobre cargas fosse ignorado(a) ao analisar aceleradores de part�culas e tubos de raios cat�dicos, o resultado mais prov�vel seria:",
+      "enunciado": "Se Força magnética sobre cargas fosse ignorado(a) ao analisar aceleradores de partículas e tubos de raios catódicos, o resultado mais provável seria:",
       "opcoes": [
-        "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre aceleradores de part�culas e tubos de raios cat�dicos.",
-        "a situa��o seria explicada automaticamente por For�a magn�tica em condutores, sem necessidade de an�lise.",
-        "nenhuma interpretacao fisica seria alterada, porque For�a magn�tica sobre cargas n�o interfere nesse tipo de problema.",
-        "o fen�meno deixaria de existir apenas por n�o ser nomeado."
+        "a análise ficaria incompleta e poderia gerar interpretações erradas sobre aceleradores de partículas e tubos de raios catódicos.",
+        "a situação seria explicada automaticamente por Força magnética em condutores, sem necessidade de análise.",
+        "nenhuma interpretacao fisica seria alterada, porque Força magnética sobre cargas não interfere nesse tipo de problema.",
+        "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
-      "correta": "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre aceleradores de part�culas e tubos de raios cat�dicos.",
-      "comentario": "Ignorar For�a magn�tica sobre cargas compromete a leitura fisica da situa��o apresentada.",
+      "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre aceleradores de partículas e tubos de raios catódicos.",
+      "comentario": "Ignorar Força magnética sobre cargas compromete a leitura fisica da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "magnetismo",
@@ -2896,22 +2896,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "For�a magn�tica sobre cargas",
+      "subtopico": "Força magnética sobre cargas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma aplica��o cotidiana ou escolar, For�a magn�tica sobre cargas ajuda principalmente a compreender:",
+      "enunciado": "Em uma aplicação cotidiana ou escolar, Força magnética sobre cargas ajuda principalmente a compreender:",
       "opcoes": [
-        "aceleradores de part�culas e tubos de raios cat�dicos",
+        "aceleradores de partículas e tubos de raios catódicos",
         "o principio de funcionamento de alto-falantes e partes de motores",
-        "a geracao de energia em d�namos, transformadores e usinas",
-        "guindastes de sucata, campainhas e travas el�tricas"
+        "a geracao de energia em dínamos, transformadores e usinas",
+        "guindastes de sucata, campainhas e travas elétricas"
       ],
-      "correta": "aceleradores de part�culas e tubos de raios cat�dicos",
-      "comentario": "A aplica��o escolhida e a que melhor representa For�a magn�tica sobre cargas.",
+      "correta": "aceleradores de partículas e tubos de raios catódicos",
+      "comentario": "A aplicação escolhida e a que melhor representa Força magnética sobre cargas.",
       "tempoEstimado": 60,
       "tags": [
         "magnetismo",
@@ -2935,22 +2935,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "For�a magn�tica sobre cargas",
+      "subtopico": "Força magnética sobre cargas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual resumo sintetiza melhor a ideia central de For�a magn�tica sobre cargas?",
+      "enunciado": "Qual resumo sintetiza melhor a ideia central de Força magnética sobre cargas?",
       "opcoes": [
-        "Em s�ntese, a for�a exercida por um Campo magn�tico sobre cargas el�tricas em movimento.",
-        "Em s�ntese, a for�a que atua sobre fios percorridos por corrente quando estao imersos em Campo magn�tico.",
-        "Em s�ntese, a produ��o de corrente ou tens�o el�trica a partir de varia��es no fluxo magn�tico.",
-        "Em s�ntese, dispositivos em que a corrente el�trica produz campo magn�tico, geralmente refor�ado por n�cleo ferromagn�tico."
+        "Em síntese, a força exercida por um Campo magnético sobre cargas elétricas em movimento.",
+        "Em síntese, a força que atua sobre fios percorridos por corrente quando estao imersos em Campo magnético.",
+        "Em síntese, a produção de corrente ou tensão elétrica a partir de variações no fluxo magnético.",
+        "Em síntese, dispositivos em que a corrente elétrica produz campo magnético, geralmente reforçado por núcleo ferromagnético."
       ],
-      "correta": "Em s�ntese, a for�a exercida por um Campo magn�tico sobre cargas el�tricas em movimento.",
-      "comentario": "O resumo correto recupera o n�cleo conceitual de For�a magn�tica sobre cargas.",
+      "correta": "Em síntese, a força exercida por um Campo magnético sobre cargas elétricas em movimento.",
+      "comentario": "O resumo correto recupera o núcleo conceitual de Força magnética sobre cargas.",
       "tempoEstimado": 65,
       "tags": [
         "magnetismo",
@@ -2974,22 +2974,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "For�a magn�tica em condutores",
+      "subtopico": "Força magnética em condutores",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em F�sica, For�a magn�tica em condutores pode ser definido(a) como:",
+      "enunciado": "Em Física, Força magnética em condutores pode ser definido(a) como:",
       "opcoes": [
-        "a for�a que atua sobre fios percorridos por corrente quando estao imersos em Campo magn�tico",
-        "a produ��o de corrente ou tens�o el�trica a partir de varia��es no fluxo magn�tico",
-        "dispositivos em que a corrente el�trica produz campo magn�tico, geralmente refor�ado por n�cleo ferromagn�tico",
-        "maquinas que convertem energia el�trica em energia mec�nica por meio da interacao entre corrente e Campo magn�tico"
+        "a força que atua sobre fios percorridos por corrente quando estao imersos em Campo magnético",
+        "a produção de corrente ou tensão elétrica a partir de variações no fluxo magnético",
+        "dispositivos em que a corrente elétrica produz campo magnético, geralmente reforçado por núcleo ferromagnético",
+        "maquinas que convertem energia elétrica em energia mecânica por meio da interacao entre corrente e Campo magnético"
       ],
-      "correta": "a for�a que atua sobre fios percorridos por corrente quando estao imersos em Campo magn�tico",
-      "comentario": "For�a magn�tica em condutores refere-se � for�a que atua sobre fios percorridos por corrente quando estao imersos em Campo magn�tico.",
+      "correta": "a força que atua sobre fios percorridos por corrente quando estao imersos em Campo magnético",
+      "comentario": "Força magnética em condutores refere-se à força que atua sobre fios percorridos por corrente quando estao imersos em Campo magnético.",
       "tempoEstimado": 25,
       "tags": [
         "magnetismo",
@@ -3013,22 +3013,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "For�a magn�tica em condutores",
+      "subtopico": "Força magnética em condutores",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situa��o: um fio com corrente sofre desvio ao ser colocado entre os polos de um �m� Esse caso exemplifica melhor qual subt�pico?",
+      "enunciado": "Observe a situação: um fio com corrente sofre desvio ao ser colocado entre os polos de um ímã Esse caso exemplifica melhor qual subtópico?",
       "opcoes": [
-        "For�a magn�tica em condutores",
-        "Indu��o eletromagn�tica",
-        "Eletro�m�s",
-        "Motores el�tricos"
+        "Força magnética em condutores",
+        "Indução eletromagnética",
+        "Eletroímãs",
+        "Motores elétricos"
       ],
-      "correta": "For�a magn�tica em condutores",
-      "comentario": "A situa��o apresentada � um exemplo de For�a magn�tica em condutores.",
+      "correta": "Força magnética em condutores",
+      "comentario": "A situação apresentada é um exemplo de Força magnética em condutores.",
       "tempoEstimado": 25,
       "tags": [
         "magnetismo",
@@ -3052,22 +3052,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "For�a magn�tica em condutores",
+      "subtopico": "Força magnética em condutores",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirma��o descreve corretamente For�a magn�tica em condutores?",
+      "enunciado": "Qual afirmação descreve corretamente Força magnética em condutores?",
       "opcoes": [
-        "A for�a que atua sobre fios percorridos por corrente quando estao imersos em Campo magn�tico.",
-        "A produ��o de corrente ou tens�o el�trica a partir de varia��es no fluxo magn�tico.",
-        "Dispositivos em que a corrente el�trica produz campo magn�tico, geralmente refor�ado por n�cleo ferromagn�tico.",
-        "Maquinas que convertem energia el�trica em energia mec�nica por meio da interacao entre corrente e Campo magn�tico."
+        "A força que atua sobre fios percorridos por corrente quando estao imersos em Campo magnético.",
+        "A produção de corrente ou tensão elétrica a partir de variações no fluxo magnético.",
+        "Dispositivos em que a corrente elétrica produz campo magnético, geralmente reforçado por núcleo ferromagnético.",
+        "Maquinas que convertem energia elétrica em energia mecânica por meio da interacao entre corrente e Campo magnético."
       ],
-      "correta": "A for�a que atua sobre fios percorridos por corrente quando estao imersos em Campo magn�tico.",
-      "comentario": "A alternativa correta resume o conceito de For�a magn�tica em condutores.",
+      "correta": "A força que atua sobre fios percorridos por corrente quando estao imersos em Campo magnético.",
+      "comentario": "A alternativa correta resume o conceito de Força magnética em condutores.",
       "tempoEstimado": 30,
       "tags": [
         "magnetismo",
@@ -3091,22 +3091,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "For�a magn�tica em condutores",
+      "subtopico": "Força magnética em condutores",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compat�vel com For�a magn�tica em condutores?",
+      "enunciado": "Qual alternativa NAO esta compatível com Força magnética em condutores?",
       "opcoes": [
-        "A produ��o de corrente ou tens�o el�trica a partir de varia��es no fluxo magn�tico.",
-        "A for�a que atua sobre fios percorridos por corrente quando estao imersos em Campo magn�tico.",
-        "Relacionar corrente el�trica, Campo magn�tico e for�a em condutores.",
+        "A produção de corrente ou tensão elétrica a partir de variações no fluxo magnético.",
+        "A força que atua sobre fios percorridos por corrente quando estao imersos em Campo magnético.",
+        "Relacionar corrente elétrica, Campo magnético e força em condutores.",
         "Ajuda a compreender o principio de funcionamento de alto-falantes e partes de motores."
       ],
-      "correta": "A produ��o de corrente ou tens�o el�trica a partir de varia��es no fluxo magn�tico.",
-      "comentario": "A op��o incompativel descreve outro subt�pico, n�o For�a magn�tica em condutores.",
+      "correta": "A produção de corrente ou tensão elétrica a partir de variações no fluxo magnético.",
+      "comentario": "A opção incompativel descreve outro subtópico, não Força magnética em condutores.",
       "tempoEstimado": 30,
       "tags": [
         "magnetismo",
@@ -3130,22 +3130,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "For�a magn�tica em condutores",
+      "subtopico": "Força magnética em condutores",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar For�a magn�tica em condutores, o foco principal e:",
+      "enunciado": "Ao estudar Força magnética em condutores, o foco principal e:",
       "opcoes": [
-        "relacionar corrente el�trica, Campo magn�tico e for�a em condutores",
-        "explicar como mudancas no Campo magn�tico geram efeitos el�tricos",
-        "relacionar corrente el�trica ao surgimento de magnetismo artificial controlavel",
-        "compreender a conversao de energia el�trica em movimento mec�nico"
+        "relacionar corrente elétrica, Campo magnético e força em condutores",
+        "explicar como mudancas no Campo magnético geram efeitos elétricos",
+        "relacionar corrente elétrica ao surgimento de magnetismo artificial controlavel",
+        "compreender a conversao de energia elétrica em movimento mecânico"
       ],
-      "correta": "relacionar corrente el�trica, Campo magn�tico e for�a em condutores",
-      "comentario": "For�a magn�tica em condutores concentra-se em relacionar corrente el�trica, Campo magn�tico e for�a em condutores.",
+      "correta": "relacionar corrente elétrica, Campo magnético e força em condutores",
+      "comentario": "Força magnética em condutores concentra-se em relacionar corrente elétrica, Campo magnético e força em condutores.",
       "tempoEstimado": 35,
       "tags": [
         "magnetismo",
@@ -3169,22 +3169,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "For�a magn�tica em condutores",
+      "subtopico": "Força magnética em condutores",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Indu��o eletromagn�tica trata de a produ��o de corrente ou tens�o el�trica a partir de varia��es no fluxo magn�tico, For�a magn�tica em condutores destaca:",
+      "enunciado": "Enquanto Indução eletromagnética trata de a produção de corrente ou tensão elétrica a partir de variações no fluxo magnético, Força magnética em condutores destaca:",
       "opcoes": [
-        "A for�a que atua sobre fios percorridos por corrente quando estao imersos em Campo magn�tico.",
-        "A produ��o de corrente ou tens�o el�trica a partir de varia��es no fluxo magn�tico.",
-        "Dispositivos em que a corrente el�trica produz campo magn�tico, geralmente refor�ado por n�cleo ferromagn�tico.",
-        "Maquinas que convertem energia el�trica em energia mec�nica por meio da interacao entre corrente e Campo magn�tico."
+        "A força que atua sobre fios percorridos por corrente quando estao imersos em Campo magnético.",
+        "A produção de corrente ou tensão elétrica a partir de variações no fluxo magnético.",
+        "Dispositivos em que a corrente elétrica produz campo magnético, geralmente reforçado por núcleo ferromagnético.",
+        "Maquinas que convertem energia elétrica em energia mecânica por meio da interacao entre corrente e Campo magnético."
       ],
-      "correta": "A for�a que atua sobre fios percorridos por corrente quando estao imersos em Campo magn�tico.",
-      "comentario": "A compara��o correta mostra a especificidade de For�a magn�tica em condutores.",
+      "correta": "A força que atua sobre fios percorridos por corrente quando estao imersos em Campo magnético.",
+      "comentario": "A comparação correta mostra a especificidade de Força magnética em condutores.",
       "tempoEstimado": 35,
       "tags": [
         "magnetismo",
@@ -3208,22 +3208,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "For�a magn�tica em condutores",
+      "subtopico": "Força magnética em condutores",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma an�lise de sala, considera-se que um fio com corrente sofre desvio ao ser colocado entre os polos de um �m� Para interpretar essa situa��o, � mais adequado mobilizar o conceito de:",
+      "enunciado": "Em uma análise de sala, considera-se que um fio com corrente sofre desvio ao ser colocado entre os polos de um ímã Para interpretar essa situação, é mais adequado mobilizar o conceito de:",
       "opcoes": [
-        "For�a magn�tica em condutores",
-        "Indu��o eletromagn�tica",
-        "Motores el�tricos",
-        "Aplica��es do magnetismo"
+        "Força magnética em condutores",
+        "Indução eletromagnética",
+        "Motores elétricos",
+        "Aplicações do magnetismo"
       ],
-      "correta": "For�a magn�tica em condutores",
-      "comentario": "O caso descrito � interpretado adequadamente por meio de For�a magn�tica em condutores.",
+      "correta": "Força magnética em condutores",
+      "comentario": "O caso descrito é interpretado adequadamente por meio de Força magnética em condutores.",
       "tempoEstimado": 40,
       "tags": [
         "magnetismo",
@@ -3247,22 +3247,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "For�a magn�tica em condutores",
+      "subtopico": "Força magnética em condutores",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situa��o pr�tica depende mais diretamente de For�a magn�tica em condutores?",
+      "enunciado": "Qual situação prática depende mais diretamente de Força magnética em condutores?",
       "opcoes": [
         "o principio de funcionamento de alto-falantes e partes de motores",
-        "a geracao de energia em d�namos, transformadores e usinas",
-        "guindastes de sucata, campainhas e travas el�tricas",
+        "a geracao de energia em dínamos, transformadores e usinas",
+        "guindastes de sucata, campainhas e travas elétricas",
         "tecnologias medicas, industriais e de transporte baseadas em magnetismo"
       ],
       "correta": "o principio de funcionamento de alto-falantes e partes de motores",
-      "comentario": "For�a magn�tica em condutores aparece de modo direto no principio de funcionamento de alto-falantes e partes de motores.",
+      "comentario": "Força magnética em condutores aparece de modo direto no principio de funcionamento de alto-falantes e partes de motores.",
       "tempoEstimado": 40,
       "tags": [
         "magnetismo",
@@ -3286,22 +3286,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "For�a magn�tica em condutores",
+      "subtopico": "Força magnética em condutores",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir de um fio com corrente sofre desvio ao ser colocado entre os polos de um �m�, qual conclus�o est� mais correta?",
+      "enunciado": "A partir de um fio com corrente sofre desvio ao ser colocado entre os polos de um ímã, qual conclusão está mais correta?",
       "opcoes": [
-        "o caso e explicado por For�a magn�tica em condutores.",
-        "o caso e mais bem entendido por Indu��o eletromagn�tica.",
-        "a situa��o anula a import�ncia de Eletro�m�s.",
-        "o fen�meno exclui qualquer rela��o com Motores el�tricos."
+        "o caso e explicado por Força magnética em condutores.",
+        "o caso e mais bem entendido por Indução eletromagnética.",
+        "a situação anula a importância de Eletroímãs.",
+        "o fenômeno exclui qualquer relação com Motores elétricos."
       ],
-      "correta": "o caso e explicado por For�a magn�tica em condutores.",
-      "comentario": "A conclus�o adequada retoma a ideia central de For�a magn�tica em condutores.",
+      "correta": "o caso e explicado por Força magnética em condutores.",
+      "comentario": "A conclusão adequada retoma a ideia central de Força magnética em condutores.",
       "tempoEstimado": 45,
       "tags": [
         "magnetismo",
@@ -3325,22 +3325,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "For�a magn�tica em condutores",
+      "subtopico": "Força magnética em condutores",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Se um grupo fosse pesquisar For�a magn�tica em condutores, qual pergunta orientadora seria a mais adequada?",
+      "enunciado": "Se um grupo fosse pesquisar Força magnética em condutores, qual pergunta orientadora seria a mais adequada?",
       "opcoes": [
-        "Como For�a magn�tica em condutores aparece no principio de funcionamento de alto-falantes e partes de motores?",
-        "Como Indu��o eletromagn�tica substitui totalmente o principio de funcionamento de alto-falantes e partes de motores?",
-        "Por que Eletro�m�s torna desnecess�rio estudar For�a magn�tica em condutores?",
-        "De que modo Motores el�tricos elimina toda medida fisica envolvida?"
+        "Como Força magnética em condutores aparece no principio de funcionamento de alto-falantes e partes de motores?",
+        "Como Indução eletromagnética substitui totalmente o principio de funcionamento de alto-falantes e partes de motores?",
+        "Por que Eletroímãs torna desnecessário estudar Força magnética em condutores?",
+        "De que modo Motores elétricos elimina toda medida fisica envolvida?"
       ],
-      "correta": "Como For�a magn�tica em condutores aparece no principio de funcionamento de alto-falantes e partes de motores?",
-      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de For�a magn�tica em condutores.",
+      "correta": "Como Força magnética em condutores aparece no principio de funcionamento de alto-falantes e partes de motores?",
+      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Força magnética em condutores.",
       "tempoEstimado": 45,
       "tags": [
         "magnetismo",
@@ -3364,22 +3364,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "For�a magn�tica em condutores",
+      "subtopico": "Força magnética em condutores",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em For�a magn�tica em condutores e pensar que:",
+      "enunciado": "Um erro comum em Força magnética em condutores e pensar que:",
       "opcoes": [
-        "o Campo magn�tico empurra igualmente qualquer fio, mesmo sem corrente el�trica",
-        "basta haver um �m� parado perto da bobina para surgir corrente continuamente",
-        "um eletro�m� mant�m sua for�a magnetica m�xima mesmo desligado da corrente",
-        "Motores el�tricos funcionam sem depender de Campo magn�tico ou corrente el�trica organizada"
+        "o Campo magnético empurra igualmente qualquer fio, mesmo sem corrente elétrica",
+        "basta haver um ímã parado perto da bobina para surgir corrente continuamente",
+        "um eletroímã mantêm sua força magnetica máxima mesmo desligado da corrente",
+        "Motores elétricos funcionam sem depender de Campo magnético ou corrente elétrica organizada"
       ],
-      "correta": "o Campo magn�tico empurra igualmente qualquer fio, mesmo sem corrente el�trica",
-      "comentario": "Esse e um equ�voco frequente porque contraria a defini��o correta de For�a magn�tica em condutores.",
+      "correta": "o Campo magnético empurra igualmente qualquer fio, mesmo sem corrente elétrica",
+      "comentario": "Esse e um equívoco frequente porque contraria a definição correta de Força magnética em condutores.",
       "tempoEstimado": 50,
       "tags": [
         "magnetismo",
@@ -3403,22 +3403,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "For�a magn�tica em condutores",
+      "subtopico": "Força magnética em condutores",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"um fio metalico parado em um Campo magn�tico sempre sofre for�a, mesmo sem corrente\". A avalia��o mais adequada e:",
+      "enunciado": "Um estudante afirma: \"um fio metalico parado em um Campo magnético sempre sofre força, mesmo sem corrente\". A avaliação mais adequada e:",
       "opcoes": [
-        "A afirma��o est� incorreta, porque a for�a que atua sobre fios percorridos por corrente quando estao imersos em Campo magn�tico.",
-        "A afirma��o est� correta, pois resume integralmente For�a magn�tica em condutores.",
-        "A afirma��o est� correta, porque toda situa��o do tema depende apenas dessa ideia.",
-        "A afirma��o est� incorreta apenas porque n�o apresenta uma unidade de medida."
+        "A afirmação está incorreta, porque a força que atua sobre fios percorridos por corrente quando estao imersos em Campo magnético.",
+        "A afirmação está correta, pois resume integralmente Força magnética em condutores.",
+        "A afirmação está correta, porque toda situação do tema depende apenas dessa ideia.",
+        "A afirmação está incorreta apenas porque não apresenta uma unidade de medida."
       ],
-      "correta": "A afirma��o est� incorreta, porque a for�a que atua sobre fios percorridos por corrente quando estao imersos em Campo magn�tico.",
-      "comentario": "A fala do estudante apresenta um equ�voco conceitual sobre For�a magn�tica em condutores.",
+      "correta": "A afirmação está incorreta, porque a força que atua sobre fios percorridos por corrente quando estao imersos em Campo magnético.",
+      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre Força magnética em condutores.",
       "tempoEstimado": 55,
       "tags": [
         "magnetismo",
@@ -3442,22 +3442,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "For�a magn�tica em condutores",
+      "subtopico": "Força magnética em condutores",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se For�a magn�tica em condutores fosse ignorado(a) ao analisar o principio de funcionamento de alto-falantes e partes de motores, o resultado mais prov�vel seria:",
+      "enunciado": "Se Força magnética em condutores fosse ignorado(a) ao analisar o principio de funcionamento de alto-falantes e partes de motores, o resultado mais provável seria:",
       "opcoes": [
-        "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre o principio de funcionamento de alto-falantes e partes de motores.",
-        "a situa��o seria explicada automaticamente por Indu��o eletromagn�tica, sem necessidade de an�lise.",
-        "nenhuma interpretacao fisica seria alterada, porque For�a magn�tica em condutores n�o interfere nesse tipo de problema.",
-        "o fen�meno deixaria de existir apenas por n�o ser nomeado."
+        "a análise ficaria incompleta e poderia gerar interpretações erradas sobre o principio de funcionamento de alto-falantes e partes de motores.",
+        "a situação seria explicada automaticamente por Indução eletromagnética, sem necessidade de análise.",
+        "nenhuma interpretacao fisica seria alterada, porque Força magnética em condutores não interfere nesse tipo de problema.",
+        "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
-      "correta": "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre o principio de funcionamento de alto-falantes e partes de motores.",
-      "comentario": "Ignorar For�a magn�tica em condutores compromete a leitura fisica da situa��o apresentada.",
+      "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre o principio de funcionamento de alto-falantes e partes de motores.",
+      "comentario": "Ignorar Força magnética em condutores compromete a leitura fisica da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "magnetismo",
@@ -3481,22 +3481,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "For�a magn�tica em condutores",
+      "subtopico": "Força magnética em condutores",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma aplica��o cotidiana ou escolar, For�a magn�tica em condutores ajuda principalmente a compreender:",
+      "enunciado": "Em uma aplicação cotidiana ou escolar, Força magnética em condutores ajuda principalmente a compreender:",
       "opcoes": [
         "o principio de funcionamento de alto-falantes e partes de motores",
-        "a geracao de energia em d�namos, transformadores e usinas",
-        "guindastes de sucata, campainhas e travas el�tricas",
+        "a geracao de energia em dínamos, transformadores e usinas",
+        "guindastes de sucata, campainhas e travas elétricas",
         "ventiladores, liquidificadores e diversos equipamentos motorizados"
       ],
       "correta": "o principio de funcionamento de alto-falantes e partes de motores",
-      "comentario": "A aplica��o escolhida e a que melhor representa For�a magn�tica em condutores.",
+      "comentario": "A aplicação escolhida e a que melhor representa Força magnética em condutores.",
       "tempoEstimado": 60,
       "tags": [
         "magnetismo",
@@ -3520,22 +3520,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "For�a magn�tica em condutores",
+      "subtopico": "Força magnética em condutores",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual resumo sintetiza melhor a ideia central de For�a magn�tica em condutores?",
+      "enunciado": "Qual resumo sintetiza melhor a ideia central de Força magnética em condutores?",
       "opcoes": [
-        "Em s�ntese, a for�a que atua sobre fios percorridos por corrente quando estao imersos em Campo magn�tico.",
-        "Em s�ntese, a produ��o de corrente ou tens�o el�trica a partir de varia��es no fluxo magn�tico.",
-        "Em s�ntese, dispositivos em que a corrente el�trica produz campo magn�tico, geralmente refor�ado por n�cleo ferromagn�tico.",
-        "Em s�ntese, maquinas que convertem energia el�trica em energia mec�nica por meio da interacao entre corrente e Campo magn�tico."
+        "Em síntese, a força que atua sobre fios percorridos por corrente quando estao imersos em Campo magnético.",
+        "Em síntese, a produção de corrente ou tensão elétrica a partir de variações no fluxo magnético.",
+        "Em síntese, dispositivos em que a corrente elétrica produz campo magnético, geralmente reforçado por núcleo ferromagnético.",
+        "Em síntese, maquinas que convertem energia elétrica em energia mecânica por meio da interacao entre corrente e Campo magnético."
       ],
-      "correta": "Em s�ntese, a for�a que atua sobre fios percorridos por corrente quando estao imersos em Campo magn�tico.",
-      "comentario": "O resumo correto recupera o n�cleo conceitual de For�a magn�tica em condutores.",
+      "correta": "Em síntese, a força que atua sobre fios percorridos por corrente quando estao imersos em Campo magnético.",
+      "comentario": "O resumo correto recupera o núcleo conceitual de Força magnética em condutores.",
       "tempoEstimado": 65,
       "tags": [
         "magnetismo",
@@ -3559,22 +3559,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Indu��o eletromagn�tica",
+      "subtopico": "Indução eletromagnética",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em F�sica, Indu��o eletromagn�tica pode ser definido(a) como:",
+      "enunciado": "Em Física, Indução eletromagnética pode ser definido(a) como:",
       "opcoes": [
-        "a produ��o de corrente ou tens�o el�trica a partir de varia��es no fluxo magn�tico",
-        "dispositivos em que a corrente el�trica produz campo magn�tico, geralmente refor�ado por n�cleo ferromagn�tico",
-        "maquinas que convertem energia el�trica em energia mec�nica por meio da interacao entre corrente e Campo magn�tico",
-        "o uso de fen�menos magn�ticos em tecnologias, transporte, medicina, informa��o e separacao de materiais"
+        "a produção de corrente ou tensão elétrica a partir de variações no fluxo magnético",
+        "dispositivos em que a corrente elétrica produz campo magnético, geralmente reforçado por núcleo ferromagnético",
+        "maquinas que convertem energia elétrica em energia mecânica por meio da interacao entre corrente e Campo magnético",
+        "o uso de fenômenos magnéticos em tecnologias, transporte, medicina, informação e separacao de materiais"
       ],
-      "correta": "a produ��o de corrente ou tens�o el�trica a partir de varia��es no fluxo magn�tico",
-      "comentario": "Indu��o eletromagn�tica refere-se � produ��o de corrente ou tens�o el�trica a partir de varia��es no fluxo magn�tico.",
+      "correta": "a produção de corrente ou tensão elétrica a partir de variações no fluxo magnético",
+      "comentario": "Indução eletromagnética refere-se à produção de corrente ou tensão elétrica a partir de variações no fluxo magnético.",
       "tempoEstimado": 25,
       "tags": [
         "magnetismo",
@@ -3598,22 +3598,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Indu��o eletromagn�tica",
+      "subtopico": "Indução eletromagnética",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situa��o: ao mover um �m� pr�ximo de uma espira surge corrente el�trica no circuito Esse caso exemplifica melhor qual subt�pico?",
+      "enunciado": "Observe a situação: ao mover um ímã próximo de uma espira surge corrente elétrica no circuito Esse caso exemplifica melhor qual subtópico?",
       "opcoes": [
-        "Indu��o eletromagn�tica",
-        "Eletro�m�s",
-        "Motores el�tricos",
-        "Aplica��es do magnetismo"
+        "Indução eletromagnética",
+        "Eletroímãs",
+        "Motores elétricos",
+        "Aplicações do magnetismo"
       ],
-      "correta": "Indu��o eletromagn�tica",
-      "comentario": "A situa��o apresentada � um exemplo de Indu��o eletromagn�tica.",
+      "correta": "Indução eletromagnética",
+      "comentario": "A situação apresentada é um exemplo de Indução eletromagnética.",
       "tempoEstimado": 25,
       "tags": [
         "magnetismo",
@@ -3637,22 +3637,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Indu��o eletromagn�tica",
+      "subtopico": "Indução eletromagnética",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirma��o descreve corretamente Indu��o eletromagn�tica?",
+      "enunciado": "Qual afirmação descreve corretamente Indução eletromagnética?",
       "opcoes": [
-        "A produ��o de corrente ou tens�o el�trica a partir de varia��es no fluxo magn�tico.",
-        "Dispositivos em que a corrente el�trica produz campo magn�tico, geralmente refor�ado por n�cleo ferromagn�tico.",
-        "Maquinas que convertem energia el�trica em energia mec�nica por meio da interacao entre corrente e Campo magn�tico.",
-        "O uso de fen�menos magn�ticos em tecnologias, transporte, medicina, informa��o e separacao de materiais."
+        "A produção de corrente ou tensão elétrica a partir de variações no fluxo magnético.",
+        "Dispositivos em que a corrente elétrica produz campo magnético, geralmente reforçado por núcleo ferromagnético.",
+        "Maquinas que convertem energia elétrica em energia mecânica por meio da interacao entre corrente e Campo magnético.",
+        "O uso de fenômenos magnéticos em tecnologias, transporte, medicina, informação e separacao de materiais."
       ],
-      "correta": "A produ��o de corrente ou tens�o el�trica a partir de varia��es no fluxo magn�tico.",
-      "comentario": "A alternativa correta resume o conceito de Indu��o eletromagn�tica.",
+      "correta": "A produção de corrente ou tensão elétrica a partir de variações no fluxo magnético.",
+      "comentario": "A alternativa correta resume o conceito de Indução eletromagnética.",
       "tempoEstimado": 30,
       "tags": [
         "magnetismo",
@@ -3676,22 +3676,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Indu��o eletromagn�tica",
+      "subtopico": "Indução eletromagnética",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compat�vel com Indu��o eletromagn�tica?",
+      "enunciado": "Qual alternativa NAO esta compatível com Indução eletromagnética?",
       "opcoes": [
-        "Dispositivos em que a corrente el�trica produz campo magn�tico, geralmente refor�ado por n�cleo ferromagn�tico.",
-        "A produ��o de corrente ou tens�o el�trica a partir de varia��es no fluxo magn�tico.",
-        "Explicar como mudancas no Campo magn�tico geram efeitos el�tricos.",
-        "Ajuda a compreender a geracao de energia em d�namos, transformadores e usinas."
+        "Dispositivos em que a corrente elétrica produz campo magnético, geralmente reforçado por núcleo ferromagnético.",
+        "A produção de corrente ou tensão elétrica a partir de variações no fluxo magnético.",
+        "Explicar como mudancas no Campo magnético geram efeitos elétricos.",
+        "Ajuda a compreender a geracao de energia em dínamos, transformadores e usinas."
       ],
-      "correta": "Dispositivos em que a corrente el�trica produz campo magn�tico, geralmente refor�ado por n�cleo ferromagn�tico.",
-      "comentario": "A op��o incompativel descreve outro subt�pico, n�o Indu��o eletromagn�tica.",
+      "correta": "Dispositivos em que a corrente elétrica produz campo magnético, geralmente reforçado por núcleo ferromagnético.",
+      "comentario": "A opção incompativel descreve outro subtópico, não Indução eletromagnética.",
       "tempoEstimado": 30,
       "tags": [
         "magnetismo",
@@ -3715,22 +3715,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Indu��o eletromagn�tica",
+      "subtopico": "Indução eletromagnética",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar Indu��o eletromagn�tica, o foco principal e:",
+      "enunciado": "Ao estudar Indução eletromagnética, o foco principal e:",
       "opcoes": [
-        "explicar como mudancas no Campo magn�tico geram efeitos el�tricos",
-        "relacionar corrente el�trica ao surgimento de magnetismo artificial controlavel",
-        "compreender a conversao de energia el�trica em movimento mec�nico",
-        "identificar usos tecnol�gicos e sociais do magnetismo em diferentes contextos"
+        "explicar como mudancas no Campo magnético geram efeitos elétricos",
+        "relacionar corrente elétrica ao surgimento de magnetismo artificial controlavel",
+        "compreender a conversao de energia elétrica em movimento mecânico",
+        "identificar usos tecnológicos e sociais do magnetismo em diferentes contextos"
       ],
-      "correta": "explicar como mudancas no Campo magn�tico geram efeitos el�tricos",
-      "comentario": "Indu��o eletromagn�tica concentra-se em explicar como mudancas no Campo magn�tico geram efeitos el�tricos.",
+      "correta": "explicar como mudancas no Campo magnético geram efeitos elétricos",
+      "comentario": "Indução eletromagnética concentra-se em explicar como mudancas no Campo magnético geram efeitos elétricos.",
       "tempoEstimado": 35,
       "tags": [
         "magnetismo",
@@ -3754,22 +3754,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Indu��o eletromagn�tica",
+      "subtopico": "Indução eletromagnética",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Eletro�m�s trata de dispositivos em que a corrente el�trica produz campo magn�tico, geralmente refor�ado por n�cleo ferromagn�tico, Indu��o eletromagn�tica destaca:",
+      "enunciado": "Enquanto Eletroímãs trata de dispositivos em que a corrente elétrica produz campo magnético, geralmente reforçado por núcleo ferromagnético, Indução eletromagnética destaca:",
       "opcoes": [
-        "A produ��o de corrente ou tens�o el�trica a partir de varia��es no fluxo magn�tico.",
-        "Dispositivos em que a corrente el�trica produz campo magn�tico, geralmente refor�ado por n�cleo ferromagn�tico.",
-        "Maquinas que convertem energia el�trica em energia mec�nica por meio da interacao entre corrente e Campo magn�tico.",
-        "O uso de fen�menos magn�ticos em tecnologias, transporte, medicina, informa��o e separacao de materiais."
+        "A produção de corrente ou tensão elétrica a partir de variações no fluxo magnético.",
+        "Dispositivos em que a corrente elétrica produz campo magnético, geralmente reforçado por núcleo ferromagnético.",
+        "Maquinas que convertem energia elétrica em energia mecânica por meio da interacao entre corrente e Campo magnético.",
+        "O uso de fenômenos magnéticos em tecnologias, transporte, medicina, informação e separacao de materiais."
       ],
-      "correta": "A produ��o de corrente ou tens�o el�trica a partir de varia��es no fluxo magn�tico.",
-      "comentario": "A compara��o correta mostra a especificidade de Indu��o eletromagn�tica.",
+      "correta": "A produção de corrente ou tensão elétrica a partir de variações no fluxo magnético.",
+      "comentario": "A comparação correta mostra a especificidade de Indução eletromagnética.",
       "tempoEstimado": 35,
       "tags": [
         "magnetismo",
@@ -3793,22 +3793,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Indu��o eletromagn�tica",
+      "subtopico": "Indução eletromagnética",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma an�lise de sala, considera-se que ao mover um �m� pr�ximo de uma espira surge corrente el�trica no circuito Para interpretar essa situa��o, � mais adequado mobilizar o conceito de:",
+      "enunciado": "Em uma análise de sala, considera-se que ao mover um ímã próximo de uma espira surge corrente elétrica no circuito Para interpretar essa situação, é mais adequado mobilizar o conceito de:",
       "opcoes": [
-        "Indu��o eletromagn�tica",
-        "Eletro�m�s",
-        "Aplica��es do magnetismo",
-        "�m�s e polos magn�ticos"
+        "Indução eletromagnética",
+        "Eletroímãs",
+        "Aplicações do magnetismo",
+        "ímãs e polos magnéticos"
       ],
-      "correta": "Indu��o eletromagn�tica",
-      "comentario": "O caso descrito � interpretado adequadamente por meio de Indu��o eletromagn�tica.",
+      "correta": "Indução eletromagnética",
+      "comentario": "O caso descrito é interpretado adequadamente por meio de Indução eletromagnética.",
       "tempoEstimado": 40,
       "tags": [
         "magnetismo",
@@ -3832,22 +3832,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Indu��o eletromagn�tica",
+      "subtopico": "Indução eletromagnética",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situa��o pr�tica depende mais diretamente de Indu��o eletromagn�tica?",
+      "enunciado": "Qual situação prática depende mais diretamente de Indução eletromagnética?",
       "opcoes": [
-        "a geracao de energia em d�namos, transformadores e usinas",
-        "guindastes de sucata, campainhas e travas el�tricas",
+        "a geracao de energia em dínamos, transformadores e usinas",
+        "guindastes de sucata, campainhas e travas elétricas",
         "ventiladores, liquidificadores e diversos equipamentos motorizados",
-        "fechos magn�ticos, b�ssolas simples e separacao de materiais met�licos"
+        "fechos magnéticos, bússolas simples e separacao de materiais metálicos"
       ],
-      "correta": "a geracao de energia em d�namos, transformadores e usinas",
-      "comentario": "Indu��o eletromagn�tica aparece de modo direto na geracao de energia em d�namos, transformadores e usinas.",
+      "correta": "a geracao de energia em dínamos, transformadores e usinas",
+      "comentario": "Indução eletromagnética aparece de modo direto na geracao de energia em dínamos, transformadores e usinas.",
       "tempoEstimado": 40,
       "tags": [
         "magnetismo",
@@ -3871,22 +3871,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Indu��o eletromagn�tica",
+      "subtopico": "Indução eletromagnética",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir de ao mover um �m� pr�ximo de uma espira surge corrente el�trica no circuito, qual conclus�o est� mais correta?",
+      "enunciado": "A partir de ao mover um ímã próximo de uma espira surge corrente elétrica no circuito, qual conclusão está mais correta?",
       "opcoes": [
-        "o caso e explicado por Indu��o eletromagn�tica.",
-        "o caso e mais bem entendido por Eletro�m�s.",
-        "a situa��o anula a import�ncia de Motores el�tricos.",
-        "o fen�meno exclui qualquer rela��o com Aplica��es do magnetismo."
+        "o caso e explicado por Indução eletromagnética.",
+        "o caso e mais bem entendido por Eletroímãs.",
+        "a situação anula a importância de Motores elétricos.",
+        "o fenômeno exclui qualquer relação com Aplicações do magnetismo."
       ],
-      "correta": "o caso e explicado por Indu��o eletromagn�tica.",
-      "comentario": "A conclus�o adequada retoma a ideia central de Indu��o eletromagn�tica.",
+      "correta": "o caso e explicado por Indução eletromagnética.",
+      "comentario": "A conclusão adequada retoma a ideia central de Indução eletromagnética.",
       "tempoEstimado": 45,
       "tags": [
         "magnetismo",
@@ -3910,22 +3910,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Indu��o eletromagn�tica",
+      "subtopico": "Indução eletromagnética",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Se um grupo fosse pesquisar Indu��o eletromagn�tica, qual pergunta orientadora seria a mais adequada?",
+      "enunciado": "Se um grupo fosse pesquisar Indução eletromagnética, qual pergunta orientadora seria a mais adequada?",
       "opcoes": [
-        "Como Indu��o eletromagn�tica aparece na geracao de energia em d�namos, transformadores e usinas?",
-        "Como Eletro�m�s substitui totalmente a geracao de energia em d�namos, transformadores e usinas?",
-        "Por que Motores el�tricos torna desnecess�rio estudar Indu��o eletromagn�tica?",
-        "De que modo Aplica��es do magnetismo elimina toda medida fisica envolvida?"
+        "Como Indução eletromagnética aparece na geracao de energia em dínamos, transformadores e usinas?",
+        "Como Eletroímãs substitui totalmente a geracao de energia em dínamos, transformadores e usinas?",
+        "Por que Motores elétricos torna desnecessário estudar Indução eletromagnética?",
+        "De que modo Aplicações do magnetismo elimina toda medida fisica envolvida?"
       ],
-      "correta": "Como Indu��o eletromagn�tica aparece na geracao de energia em d�namos, transformadores e usinas?",
-      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Indu��o eletromagn�tica.",
+      "correta": "Como Indução eletromagnética aparece na geracao de energia em dínamos, transformadores e usinas?",
+      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Indução eletromagnética.",
       "tempoEstimado": 45,
       "tags": [
         "magnetismo",
@@ -3949,22 +3949,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Indu��o eletromagn�tica",
+      "subtopico": "Indução eletromagnética",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em Indu��o eletromagn�tica e pensar que:",
+      "enunciado": "Um erro comum em Indução eletromagnética e pensar que:",
       "opcoes": [
-        "basta haver um �m� parado perto da bobina para surgir corrente continuamente",
-        "um eletro�m� mant�m sua for�a magnetica m�xima mesmo desligado da corrente",
-        "Motores el�tricos funcionam sem depender de Campo magn�tico ou corrente el�trica organizada",
-        "magnetismo s� aparece em b�ssolas e n�o tem aplica��es tecnol�gicas relevantes"
+        "basta haver um ímã parado perto da bobina para surgir corrente continuamente",
+        "um eletroímã mantêm sua força magnetica máxima mesmo desligado da corrente",
+        "Motores elétricos funcionam sem depender de Campo magnético ou corrente elétrica organizada",
+        "magnetismo só aparece em bússolas e não tem aplicações tecnológicas relevantes"
       ],
-      "correta": "basta haver um �m� parado perto da bobina para surgir corrente continuamente",
-      "comentario": "Esse e um equ�voco frequente porque contraria a defini��o correta de Indu��o eletromagn�tica.",
+      "correta": "basta haver um ímã parado perto da bobina para surgir corrente continuamente",
+      "comentario": "Esse e um equívoco frequente porque contraria a definição correta de Indução eletromagnética.",
       "tempoEstimado": 50,
       "tags": [
         "magnetismo",
@@ -3988,22 +3988,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Indu��o eletromagn�tica",
+      "subtopico": "Indução eletromagnética",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"um �m� imovel ao lado de uma espira produz corrente el�trica constante sem nenhuma varia��o\". A avalia��o mais adequada e:",
+      "enunciado": "Um estudante afirma: \"um ímã imovel ao lado de uma espira produz corrente elétrica constante sem nenhuma variação\". A avaliação mais adequada e:",
       "opcoes": [
-        "A afirma��o est� incorreta, porque a produ��o de corrente ou tens�o el�trica a partir de varia��es no fluxo magn�tico.",
-        "A afirma��o est� correta, pois resume integralmente Indu��o eletromagn�tica.",
-        "A afirma��o est� correta, porque toda situa��o do tema depende apenas dessa ideia.",
-        "A afirma��o est� incorreta apenas porque n�o apresenta uma unidade de medida."
+        "A afirmação está incorreta, porque a produção de corrente ou tensão elétrica a partir de variações no fluxo magnético.",
+        "A afirmação está correta, pois resume integralmente Indução eletromagnética.",
+        "A afirmação está correta, porque toda situação do tema depende apenas dessa ideia.",
+        "A afirmação está incorreta apenas porque não apresenta uma unidade de medida."
       ],
-      "correta": "A afirma��o est� incorreta, porque a produ��o de corrente ou tens�o el�trica a partir de varia��es no fluxo magn�tico.",
-      "comentario": "A fala do estudante apresenta um equ�voco conceitual sobre Indu��o eletromagn�tica.",
+      "correta": "A afirmação está incorreta, porque a produção de corrente ou tensão elétrica a partir de variações no fluxo magnético.",
+      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre Indução eletromagnética.",
       "tempoEstimado": 55,
       "tags": [
         "magnetismo",
@@ -4027,22 +4027,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Indu��o eletromagn�tica",
+      "subtopico": "Indução eletromagnética",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se Indu��o eletromagn�tica fosse ignorado(a) ao analisar a geracao de energia em d�namos, transformadores e usinas, o resultado mais prov�vel seria:",
+      "enunciado": "Se Indução eletromagnética fosse ignorado(a) ao analisar a geracao de energia em dínamos, transformadores e usinas, o resultado mais provável seria:",
       "opcoes": [
-        "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre a geracao de energia em d�namos, transformadores e usinas.",
-        "a situa��o seria explicada automaticamente por Eletro�m�s, sem necessidade de an�lise.",
-        "nenhuma interpretacao fisica seria alterada, porque Indu��o eletromagn�tica n�o interfere nesse tipo de problema.",
-        "o fen�meno deixaria de existir apenas por n�o ser nomeado."
+        "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a geracao de energia em dínamos, transformadores e usinas.",
+        "a situação seria explicada automaticamente por Eletroímãs, sem necessidade de análise.",
+        "nenhuma interpretacao fisica seria alterada, porque Indução eletromagnética não interfere nesse tipo de problema.",
+        "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
-      "correta": "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre a geracao de energia em d�namos, transformadores e usinas.",
-      "comentario": "Ignorar Indu��o eletromagn�tica compromete a leitura fisica da situa��o apresentada.",
+      "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a geracao de energia em dínamos, transformadores e usinas.",
+      "comentario": "Ignorar Indução eletromagnética compromete a leitura fisica da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "magnetismo",
@@ -4066,22 +4066,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Indu��o eletromagn�tica",
+      "subtopico": "Indução eletromagnética",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma aplica��o cotidiana ou escolar, Indu��o eletromagn�tica ajuda principalmente a compreender:",
+      "enunciado": "Em uma aplicação cotidiana ou escolar, Indução eletromagnética ajuda principalmente a compreender:",
       "opcoes": [
-        "a geracao de energia em d�namos, transformadores e usinas",
-        "guindastes de sucata, campainhas e travas el�tricas",
+        "a geracao de energia em dínamos, transformadores e usinas",
+        "guindastes de sucata, campainhas e travas elétricas",
         "ventiladores, liquidificadores e diversos equipamentos motorizados",
         "tecnologias medicas, industriais e de transporte baseadas em magnetismo"
       ],
-      "correta": "a geracao de energia em d�namos, transformadores e usinas",
-      "comentario": "A aplica��o escolhida e a que melhor representa Indu��o eletromagn�tica.",
+      "correta": "a geracao de energia em dínamos, transformadores e usinas",
+      "comentario": "A aplicação escolhida e a que melhor representa Indução eletromagnética.",
       "tempoEstimado": 60,
       "tags": [
         "magnetismo",
@@ -4105,22 +4105,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Indu��o eletromagn�tica",
+      "subtopico": "Indução eletromagnética",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual resumo sintetiza melhor a ideia central de Indu��o eletromagn�tica?",
+      "enunciado": "Qual resumo sintetiza melhor a ideia central de Indução eletromagnética?",
       "opcoes": [
-        "Em s�ntese, a produ��o de corrente ou tens�o el�trica a partir de varia��es no fluxo magn�tico.",
-        "Em s�ntese, dispositivos em que a corrente el�trica produz campo magn�tico, geralmente refor�ado por n�cleo ferromagn�tico.",
-        "Em s�ntese, maquinas que convertem energia el�trica em energia mec�nica por meio da interacao entre corrente e Campo magn�tico.",
-        "Em s�ntese, o uso de fen�menos magn�ticos em tecnologias, transporte, medicina, informa��o e separacao de materiais."
+        "Em síntese, a produção de corrente ou tensão elétrica a partir de variações no fluxo magnético.",
+        "Em síntese, dispositivos em que a corrente elétrica produz campo magnético, geralmente reforçado por núcleo ferromagnético.",
+        "Em síntese, maquinas que convertem energia elétrica em energia mecânica por meio da interacao entre corrente e Campo magnético.",
+        "Em síntese, o uso de fenômenos magnéticos em tecnologias, transporte, medicina, informação e separacao de materiais."
       ],
-      "correta": "Em s�ntese, a produ��o de corrente ou tens�o el�trica a partir de varia��es no fluxo magn�tico.",
-      "comentario": "O resumo correto recupera o n�cleo conceitual de Indu��o eletromagn�tica.",
+      "correta": "Em síntese, a produção de corrente ou tensão elétrica a partir de variações no fluxo magnético.",
+      "comentario": "O resumo correto recupera o núcleo conceitual de Indução eletromagnética.",
       "tempoEstimado": 65,
       "tags": [
         "magnetismo",
@@ -4144,22 +4144,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Eletro�m�s",
+      "subtopico": "Eletroímãs",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em F�sica, Eletro�m�s pode ser definido(a) como:",
+      "enunciado": "Em Física, Eletroímãs pode ser definido(a) como:",
       "opcoes": [
-        "dispositivos em que a corrente el�trica produz campo magn�tico, geralmente refor�ado por n�cleo ferromagn�tico",
-        "maquinas que convertem energia el�trica em energia mec�nica por meio da interacao entre corrente e Campo magn�tico",
-        "o uso de fen�menos magn�ticos em tecnologias, transporte, medicina, informa��o e separacao de materiais",
-        "corpos que apresentam polos magn�ticos insepar�veis, capazes de atrair ou repelir outros �m�s e materiais ferromagn�ticos"
+        "dispositivos em que a corrente elétrica produz campo magnético, geralmente reforçado por núcleo ferromagnético",
+        "maquinas que convertem energia elétrica em energia mecânica por meio da interacao entre corrente e Campo magnético",
+        "o uso de fenômenos magnéticos em tecnologias, transporte, medicina, informação e separacao de materiais",
+        "corpos que apresentam polos magnéticos inseparáveis, capazes de atrair ou repelir outros ímãs e materiais ferromagnéticos"
       ],
-      "correta": "dispositivos em que a corrente el�trica produz campo magn�tico, geralmente refor�ado por n�cleo ferromagn�tico",
-      "comentario": "Eletro�m�s refere-se a dispositivos em que a corrente el�trica produz campo magn�tico, geralmente refor�ado por n�cleo ferromagn�tico.",
+      "correta": "dispositivos em que a corrente elétrica produz campo magnético, geralmente reforçado por núcleo ferromagnético",
+      "comentario": "Eletroímãs refere-se a dispositivos em que a corrente elétrica produz campo magnético, geralmente reforçado por núcleo ferromagnético.",
       "tempoEstimado": 25,
       "tags": [
         "magnetismo",
@@ -4183,22 +4183,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Eletro�m�s",
+      "subtopico": "Eletroímãs",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situa��o: uma bobina enrolada em um n�cleo de ferro passa a atrair objetos met�licos quando e percorrida por corrente Esse caso exemplifica melhor qual subt�pico?",
+      "enunciado": "Observe a situação: uma bobina enrolada em um núcleo de ferro passa a atrair objetos metálicos quando e percorrida por corrente Esse caso exemplifica melhor qual subtópico?",
       "opcoes": [
-        "Eletro�m�s",
-        "Motores el�tricos",
-        "Aplica��es do magnetismo",
-        "�m�s e polos magn�ticos"
+        "Eletroímãs",
+        "Motores elétricos",
+        "Aplicações do magnetismo",
+        "ímãs e polos magnéticos"
       ],
-      "correta": "Eletro�m�s",
-      "comentario": "A situa��o apresentada � um exemplo de Eletro�m�s.",
+      "correta": "Eletroímãs",
+      "comentario": "A situação apresentada é um exemplo de Eletroímãs.",
       "tempoEstimado": 25,
       "tags": [
         "magnetismo",
@@ -4222,22 +4222,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Eletro�m�s",
+      "subtopico": "Eletroímãs",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirma��o descreve corretamente Eletro�m�s?",
+      "enunciado": "Qual afirmação descreve corretamente Eletroímãs?",
       "opcoes": [
-        "Dispositivos em que a corrente el�trica produz campo magn�tico, geralmente refor�ado por n�cleo ferromagn�tico.",
-        "Maquinas que convertem energia el�trica em energia mec�nica por meio da interacao entre corrente e Campo magn�tico.",
-        "O uso de fen�menos magn�ticos em tecnologias, transporte, medicina, informa��o e separacao de materiais.",
-        "Corpos que apresentam polos magn�ticos insepar�veis, capazes de atrair ou repelir outros �m�s e materiais ferromagn�ticos."
+        "Dispositivos em que a corrente elétrica produz campo magnético, geralmente reforçado por núcleo ferromagnético.",
+        "Maquinas que convertem energia elétrica em energia mecânica por meio da interacao entre corrente e Campo magnético.",
+        "O uso de fenômenos magnéticos em tecnologias, transporte, medicina, informação e separacao de materiais.",
+        "Corpos que apresentam polos magnéticos inseparáveis, capazes de atrair ou repelir outros ímãs e materiais ferromagnéticos."
       ],
-      "correta": "Dispositivos em que a corrente el�trica produz campo magn�tico, geralmente refor�ado por n�cleo ferromagn�tico.",
-      "comentario": "A alternativa correta resume o conceito de Eletro�m�s.",
+      "correta": "Dispositivos em que a corrente elétrica produz campo magnético, geralmente reforçado por núcleo ferromagnético.",
+      "comentario": "A alternativa correta resume o conceito de Eletroímãs.",
       "tempoEstimado": 30,
       "tags": [
         "magnetismo",
@@ -4261,22 +4261,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Eletro�m�s",
+      "subtopico": "Eletroímãs",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compat�vel com Eletro�m�s?",
+      "enunciado": "Qual alternativa NAO esta compatível com Eletroímãs?",
       "opcoes": [
-        "Maquinas que convertem energia el�trica em energia mec�nica por meio da interacao entre corrente e Campo magn�tico.",
-        "Dispositivos em que a corrente el�trica produz campo magn�tico, geralmente refor�ado por n�cleo ferromagn�tico.",
-        "Relacionar corrente el�trica ao surgimento de magnetismo artificial controlavel.",
-        "Ajuda a compreender guindastes de sucata, campainhas e travas el�tricas."
+        "Maquinas que convertem energia elétrica em energia mecânica por meio da interacao entre corrente e Campo magnético.",
+        "Dispositivos em que a corrente elétrica produz campo magnético, geralmente reforçado por núcleo ferromagnético.",
+        "Relacionar corrente elétrica ao surgimento de magnetismo artificial controlavel.",
+        "Ajuda a compreender guindastes de sucata, campainhas e travas elétricas."
       ],
-      "correta": "Maquinas que convertem energia el�trica em energia mec�nica por meio da interacao entre corrente e Campo magn�tico.",
-      "comentario": "A op��o incompativel descreve outro subt�pico, n�o Eletro�m�s.",
+      "correta": "Maquinas que convertem energia elétrica em energia mecânica por meio da interacao entre corrente e Campo magnético.",
+      "comentario": "A opção incompativel descreve outro subtópico, não Eletroímãs.",
       "tempoEstimado": 30,
       "tags": [
         "magnetismo",
@@ -4300,22 +4300,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Eletro�m�s",
+      "subtopico": "Eletroímãs",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar Eletro�m�s, o foco principal e:",
+      "enunciado": "Ao estudar Eletroímãs, o foco principal e:",
       "opcoes": [
-        "relacionar corrente el�trica ao surgimento de magnetismo artificial controlavel",
-        "compreender a conversao de energia el�trica em movimento mec�nico",
-        "identificar usos tecnol�gicos e sociais do magnetismo em diferentes contextos",
-        "identificar propriedades de polos magn�ticos e intera��es entre �m�s"
+        "relacionar corrente elétrica ao surgimento de magnetismo artificial controlavel",
+        "compreender a conversao de energia elétrica em movimento mecânico",
+        "identificar usos tecnológicos e sociais do magnetismo em diferentes contextos",
+        "identificar propriedades de polos magnéticos e interações entre ímãs"
       ],
-      "correta": "relacionar corrente el�trica ao surgimento de magnetismo artificial controlavel",
-      "comentario": "Eletro�m�s concentra-se em relacionar corrente el�trica ao surgimento de magnetismo artificial controlavel.",
+      "correta": "relacionar corrente elétrica ao surgimento de magnetismo artificial controlavel",
+      "comentario": "Eletroímãs concentra-se em relacionar corrente elétrica ao surgimento de magnetismo artificial controlavel.",
       "tempoEstimado": 35,
       "tags": [
         "magnetismo",
@@ -4339,22 +4339,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Eletro�m�s",
+      "subtopico": "Eletroímãs",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Motores el�tricos trata de maquinas que convertem energia el�trica em energia mec�nica por meio da interacao entre corrente e Campo magn�tico, Eletro�m�s destaca:",
+      "enunciado": "Enquanto Motores elétricos trata de maquinas que convertem energia elétrica em energia mecânica por meio da interacao entre corrente e Campo magnético, Eletroímãs destaca:",
       "opcoes": [
-        "Dispositivos em que a corrente el�trica produz campo magn�tico, geralmente refor�ado por n�cleo ferromagn�tico.",
-        "Maquinas que convertem energia el�trica em energia mec�nica por meio da interacao entre corrente e Campo magn�tico.",
-        "O uso de fen�menos magn�ticos em tecnologias, transporte, medicina, informa��o e separacao de materiais.",
-        "Corpos que apresentam polos magn�ticos insepar�veis, capazes de atrair ou repelir outros �m�s e materiais ferromagn�ticos."
+        "Dispositivos em que a corrente elétrica produz campo magnético, geralmente reforçado por núcleo ferromagnético.",
+        "Maquinas que convertem energia elétrica em energia mecânica por meio da interacao entre corrente e Campo magnético.",
+        "O uso de fenômenos magnéticos em tecnologias, transporte, medicina, informação e separacao de materiais.",
+        "Corpos que apresentam polos magnéticos inseparáveis, capazes de atrair ou repelir outros ímãs e materiais ferromagnéticos."
       ],
-      "correta": "Dispositivos em que a corrente el�trica produz campo magn�tico, geralmente refor�ado por n�cleo ferromagn�tico.",
-      "comentario": "A compara��o correta mostra a especificidade de Eletro�m�s.",
+      "correta": "Dispositivos em que a corrente elétrica produz campo magnético, geralmente reforçado por núcleo ferromagnético.",
+      "comentario": "A comparação correta mostra a especificidade de Eletroímãs.",
       "tempoEstimado": 35,
       "tags": [
         "magnetismo",
@@ -4378,22 +4378,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Eletro�m�s",
+      "subtopico": "Eletroímãs",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma an�lise de sala, considera-se que uma bobina enrolada em um n�cleo de ferro passa a atrair objetos met�licos quando e percorrida por corrente Para interpretar essa situa��o, � mais adequado mobilizar o conceito de:",
+      "enunciado": "Em uma análise de sala, considera-se que uma bobina enrolada em um núcleo de ferro passa a atrair objetos metálicos quando e percorrida por corrente Para interpretar essa situação, é mais adequado mobilizar o conceito de:",
       "opcoes": [
-        "Eletro�m�s",
-        "Motores el�tricos",
-        "�m�s e polos magn�ticos",
-        "Campo magn�tico"
+        "Eletroímãs",
+        "Motores elétricos",
+        "ímãs e polos magnéticos",
+        "Campo magnético"
       ],
-      "correta": "Eletro�m�s",
-      "comentario": "O caso descrito � interpretado adequadamente por meio de Eletro�m�s.",
+      "correta": "Eletroímãs",
+      "comentario": "O caso descrito é interpretado adequadamente por meio de Eletroímãs.",
       "tempoEstimado": 40,
       "tags": [
         "magnetismo",
@@ -4417,22 +4417,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Eletro�m�s",
+      "subtopico": "Eletroímãs",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situa��o pr�tica depende mais diretamente de Eletro�m�s?",
+      "enunciado": "Qual situação prática depende mais diretamente de Eletroímãs?",
       "opcoes": [
-        "guindastes de sucata, campainhas e travas el�tricas",
+        "guindastes de sucata, campainhas e travas elétricas",
         "ventiladores, liquidificadores e diversos equipamentos motorizados",
         "tecnologias medicas, industriais e de transporte baseadas em magnetismo",
-        "a localizacao de regi�es de influencia magnetica em experi�ncias e dispositivos"
+        "a localizacao de regiões de influencia magnetica em experiências e dispositivos"
       ],
-      "correta": "guindastes de sucata, campainhas e travas el�tricas",
-      "comentario": "Eletro�m�s aparece de modo direto em guindastes de sucata, campainhas e travas el�tricas.",
+      "correta": "guindastes de sucata, campainhas e travas elétricas",
+      "comentario": "Eletroímãs aparece de modo direto em guindastes de sucata, campainhas e travas elétricas.",
       "tempoEstimado": 40,
       "tags": [
         "magnetismo",
@@ -4456,22 +4456,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Eletro�m�s",
+      "subtopico": "Eletroímãs",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir de uma bobina enrolada em um n�cleo de ferro passa a atrair objetos met�licos quando e percorrida por corrente, qual conclus�o est� mais correta?",
+      "enunciado": "A partir de uma bobina enrolada em um núcleo de ferro passa a atrair objetos metálicos quando e percorrida por corrente, qual conclusão está mais correta?",
       "opcoes": [
-        "o caso e explicado por Eletro�m�s.",
-        "o caso e mais bem entendido por Motores el�tricos.",
-        "a situa��o anula a import�ncia de Aplica��es do magnetismo.",
-        "o fen�meno exclui qualquer rela��o com �m�s e polos magn�ticos."
+        "o caso e explicado por Eletroímãs.",
+        "o caso e mais bem entendido por Motores elétricos.",
+        "a situação anula a importância de Aplicações do magnetismo.",
+        "o fenômeno exclui qualquer relação com ímãs e polos magnéticos."
       ],
-      "correta": "o caso e explicado por Eletro�m�s.",
-      "comentario": "A conclus�o adequada retoma a ideia central de Eletro�m�s.",
+      "correta": "o caso e explicado por Eletroímãs.",
+      "comentario": "A conclusão adequada retoma a ideia central de Eletroímãs.",
       "tempoEstimado": 45,
       "tags": [
         "magnetismo",
@@ -4495,22 +4495,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Eletro�m�s",
+      "subtopico": "Eletroímãs",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Se um grupo fosse pesquisar Eletro�m�s, qual pergunta orientadora seria a mais adequada?",
+      "enunciado": "Se um grupo fosse pesquisar Eletroímãs, qual pergunta orientadora seria a mais adequada?",
       "opcoes": [
-        "Como Eletro�m�s aparece em guindastes de sucata, campainhas e travas el�tricas?",
-        "Como Motores el�tricos substitui totalmente guindastes de sucata, campainhas e travas el�tricas?",
-        "Por que Aplica��es do magnetismo torna desnecess�rio estudar Eletro�m�s?",
-        "De que modo �m�s e polos magn�ticos elimina toda medida fisica envolvida?"
+        "Como Eletroímãs aparece em guindastes de sucata, campainhas e travas elétricas?",
+        "Como Motores elétricos substitui totalmente guindastes de sucata, campainhas e travas elétricas?",
+        "Por que Aplicações do magnetismo torna desnecessário estudar Eletroímãs?",
+        "De que modo ímãs e polos magnéticos elimina toda medida fisica envolvida?"
       ],
-      "correta": "Como Eletro�m�s aparece em guindastes de sucata, campainhas e travas el�tricas?",
-      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Eletro�m�s.",
+      "correta": "Como Eletroímãs aparece em guindastes de sucata, campainhas e travas elétricas?",
+      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Eletroímãs.",
       "tempoEstimado": 45,
       "tags": [
         "magnetismo",
@@ -4534,22 +4534,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Eletro�m�s",
+      "subtopico": "Eletroímãs",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em Eletro�m�s e pensar que:",
+      "enunciado": "Um erro comum em Eletroímãs e pensar que:",
       "opcoes": [
-        "um eletro�m� mant�m sua for�a magnetica m�xima mesmo desligado da corrente",
-        "Motores el�tricos funcionam sem depender de Campo magn�tico ou corrente el�trica organizada",
-        "magnetismo s� aparece em b�ssolas e n�o tem aplica��es tecnol�gicas relevantes",
+        "um eletroímã mantêm sua força magnetica máxima mesmo desligado da corrente",
+        "Motores elétricos funcionam sem depender de Campo magnético ou corrente elétrica organizada",
+        "magnetismo só aparece em bússolas e não tem aplicações tecnológicas relevantes",
         "e possivel isolar permanentemente um polo norte sem um polo sul associado"
       ],
-      "correta": "um eletro�m� mant�m sua for�a magnetica m�xima mesmo desligado da corrente",
-      "comentario": "Esse e um equ�voco frequente porque contraria a defini��o correta de Eletro�m�s.",
+      "correta": "um eletroímã mantêm sua força magnetica máxima mesmo desligado da corrente",
+      "comentario": "Esse e um equívoco frequente porque contraria a definição correta de Eletroímãs.",
       "tempoEstimado": 50,
       "tags": [
         "magnetismo",
@@ -4573,22 +4573,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Eletro�m�s",
+      "subtopico": "Eletroímãs",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"desligar a corrente de um eletro�m� n�o altera sua capacidade de atra��o\". A avalia��o mais adequada e:",
+      "enunciado": "Um estudante afirma: \"desligar a corrente de um eletroímã não altera sua capacidade de atração\". A avaliação mais adequada e:",
       "opcoes": [
-        "A afirma��o est� incorreta, porque dispositivos em que a corrente el�trica produz campo magn�tico, geralmente refor�ado por n�cleo ferromagn�tico.",
-        "A afirma��o est� correta, pois resume integralmente Eletro�m�s.",
-        "A afirma��o est� correta, porque toda situa��o do tema depende apenas dessa ideia.",
-        "A afirma��o est� incorreta apenas porque n�o apresenta uma unidade de medida."
+        "A afirmação está incorreta, porque dispositivos em que a corrente elétrica produz campo magnético, geralmente reforçado por núcleo ferromagnético.",
+        "A afirmação está correta, pois resume integralmente Eletroímãs.",
+        "A afirmação está correta, porque toda situação do tema depende apenas dessa ideia.",
+        "A afirmação está incorreta apenas porque não apresenta uma unidade de medida."
       ],
-      "correta": "A afirma��o est� incorreta, porque dispositivos em que a corrente el�trica produz campo magn�tico, geralmente refor�ado por n�cleo ferromagn�tico.",
-      "comentario": "A fala do estudante apresenta um equ�voco conceitual sobre Eletro�m�s.",
+      "correta": "A afirmação está incorreta, porque dispositivos em que a corrente elétrica produz campo magnético, geralmente reforçado por núcleo ferromagnético.",
+      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre Eletroímãs.",
       "tempoEstimado": 55,
       "tags": [
         "magnetismo",
@@ -4612,22 +4612,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Eletro�m�s",
+      "subtopico": "Eletroímãs",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se Eletro�m�s fosse ignorado(a) ao analisar guindastes de sucata, campainhas e travas el�tricas, o resultado mais prov�vel seria:",
+      "enunciado": "Se Eletroímãs fosse ignorado(a) ao analisar guindastes de sucata, campainhas e travas elétricas, o resultado mais provável seria:",
       "opcoes": [
-        "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre guindastes de sucata, campainhas e travas el�tricas.",
-        "a situa��o seria explicada automaticamente por Motores el�tricos, sem necessidade de an�lise.",
-        "nenhuma interpretacao fisica seria alterada, porque Eletro�m�s n�o interfere nesse tipo de problema.",
-        "o fen�meno deixaria de existir apenas por n�o ser nomeado."
+        "a análise ficaria incompleta e poderia gerar interpretações erradas sobre guindastes de sucata, campainhas e travas elétricas.",
+        "a situação seria explicada automaticamente por Motores elétricos, sem necessidade de análise.",
+        "nenhuma interpretacao fisica seria alterada, porque Eletroímãs não interfere nesse tipo de problema.",
+        "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
-      "correta": "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre guindastes de sucata, campainhas e travas el�tricas.",
-      "comentario": "Ignorar Eletro�m�s compromete a leitura fisica da situa��o apresentada.",
+      "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre guindastes de sucata, campainhas e travas elétricas.",
+      "comentario": "Ignorar Eletroímãs compromete a leitura fisica da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "magnetismo",
@@ -4651,22 +4651,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Eletro�m�s",
+      "subtopico": "Eletroímãs",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma aplica��o cotidiana ou escolar, Eletro�m�s ajuda principalmente a compreender:",
+      "enunciado": "Em uma aplicação cotidiana ou escolar, Eletroímãs ajuda principalmente a compreender:",
       "opcoes": [
-        "guindastes de sucata, campainhas e travas el�tricas",
+        "guindastes de sucata, campainhas e travas elétricas",
         "ventiladores, liquidificadores e diversos equipamentos motorizados",
         "tecnologias medicas, industriais e de transporte baseadas em magnetismo",
-        "fechos magn�ticos, b�ssolas simples e separacao de materiais met�licos"
+        "fechos magnéticos, bússolas simples e separacao de materiais metálicos"
       ],
-      "correta": "guindastes de sucata, campainhas e travas el�tricas",
-      "comentario": "A aplica��o escolhida e a que melhor representa Eletro�m�s.",
+      "correta": "guindastes de sucata, campainhas e travas elétricas",
+      "comentario": "A aplicação escolhida e a que melhor representa Eletroímãs.",
       "tempoEstimado": 60,
       "tags": [
         "magnetismo",
@@ -4690,22 +4690,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Eletro�m�s",
+      "subtopico": "Eletroímãs",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual resumo sintetiza melhor a ideia central de Eletro�m�s?",
+      "enunciado": "Qual resumo sintetiza melhor a ideia central de Eletroímãs?",
       "opcoes": [
-        "Em s�ntese, dispositivos em que a corrente el�trica produz campo magn�tico, geralmente refor�ado por n�cleo ferromagn�tico.",
-        "Em s�ntese, maquinas que convertem energia el�trica em energia mec�nica por meio da interacao entre corrente e Campo magn�tico.",
-        "Em s�ntese, o uso de fen�menos magn�ticos em tecnologias, transporte, medicina, informa��o e separacao de materiais.",
-        "Em s�ntese, corpos que apresentam polos magn�ticos insepar�veis, capazes de atrair ou repelir outros �m�s e materiais ferromagn�ticos."
+        "Em síntese, dispositivos em que a corrente elétrica produz campo magnético, geralmente reforçado por núcleo ferromagnético.",
+        "Em síntese, maquinas que convertem energia elétrica em energia mecânica por meio da interacao entre corrente e Campo magnético.",
+        "Em síntese, o uso de fenômenos magnéticos em tecnologias, transporte, medicina, informação e separacao de materiais.",
+        "Em síntese, corpos que apresentam polos magnéticos inseparáveis, capazes de atrair ou repelir outros ímãs e materiais ferromagnéticos."
       ],
-      "correta": "Em s�ntese, dispositivos em que a corrente el�trica produz campo magn�tico, geralmente refor�ado por n�cleo ferromagn�tico.",
-      "comentario": "O resumo correto recupera o n�cleo conceitual de Eletro�m�s.",
+      "correta": "Em síntese, dispositivos em que a corrente elétrica produz campo magnético, geralmente reforçado por núcleo ferromagnético.",
+      "comentario": "O resumo correto recupera o núcleo conceitual de Eletroímãs.",
       "tempoEstimado": 65,
       "tags": [
         "magnetismo",
@@ -4729,22 +4729,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Motores el�tricos",
+      "subtopico": "Motores elétricos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em F�sica, Motores el�tricos pode ser definido(a) como:",
+      "enunciado": "Em Física, Motores elétricos pode ser definido(a) como:",
       "opcoes": [
-        "maquinas que convertem energia el�trica em energia mec�nica por meio da interacao entre corrente e Campo magn�tico",
-        "o uso de fen�menos magn�ticos em tecnologias, transporte, medicina, informa��o e separacao de materiais",
-        "corpos que apresentam polos magn�ticos insepar�veis, capazes de atrair ou repelir outros �m�s e materiais ferromagn�ticos",
-        "a regi�o do espa�o em que for�as magn�ticas podem atuar sobre �m�s, cargas ou correntes"
+        "maquinas que convertem energia elétrica em energia mecânica por meio da interacao entre corrente e Campo magnético",
+        "o uso de fenômenos magnéticos em tecnologias, transporte, medicina, informação e separacao de materiais",
+        "corpos que apresentam polos magnéticos inseparáveis, capazes de atrair ou repelir outros ímãs e materiais ferromagnéticos",
+        "a região do espaço em que forças magnéticas podem atuar sobre ímãs, cargas ou correntes"
       ],
-      "correta": "maquinas que convertem energia el�trica em energia mec�nica por meio da interacao entre corrente e Campo magn�tico",
-      "comentario": "Motores el�tricos refere-se a maquinas que convertem energia el�trica em energia mec�nica por meio da interacao entre corrente e Campo magn�tico.",
+      "correta": "maquinas que convertem energia elétrica em energia mecânica por meio da interacao entre corrente e Campo magnético",
+      "comentario": "Motores elétricos refere-se a maquinas que convertem energia elétrica em energia mecânica por meio da interacao entre corrente e Campo magnético.",
       "tempoEstimado": 25,
       "tags": [
         "magnetismo",
@@ -4768,22 +4768,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Motores el�tricos",
+      "subtopico": "Motores elétricos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situa��o: uma espira percorrida por corrente gira dentro de um Campo magn�tico e movimenta um eixo Esse caso exemplifica melhor qual subt�pico?",
+      "enunciado": "Observe a situação: uma espira percorrida por corrente gira dentro de um Campo magnético e movimenta um eixo Esse caso exemplifica melhor qual subtópico?",
       "opcoes": [
-        "Motores el�tricos",
-        "Aplica��es do magnetismo",
-        "�m�s e polos magn�ticos",
-        "Campo magn�tico"
+        "Motores elétricos",
+        "Aplicações do magnetismo",
+        "ímãs e polos magnéticos",
+        "Campo magnético"
       ],
-      "correta": "Motores el�tricos",
-      "comentario": "A situa��o apresentada � um exemplo de Motores el�tricos.",
+      "correta": "Motores elétricos",
+      "comentario": "A situação apresentada é um exemplo de Motores elétricos.",
       "tempoEstimado": 25,
       "tags": [
         "magnetismo",
@@ -4807,22 +4807,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Motores el�tricos",
+      "subtopico": "Motores elétricos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirma��o descreve corretamente Motores el�tricos?",
+      "enunciado": "Qual afirmação descreve corretamente Motores elétricos?",
       "opcoes": [
-        "Maquinas que convertem energia el�trica em energia mec�nica por meio da interacao entre corrente e Campo magn�tico.",
-        "O uso de fen�menos magn�ticos em tecnologias, transporte, medicina, informa��o e separacao de materiais.",
-        "Corpos que apresentam polos magn�ticos insepar�veis, capazes de atrair ou repelir outros �m�s e materiais ferromagn�ticos.",
-        "A regi�o do espa�o em que for�as magn�ticas podem atuar sobre �m�s, cargas ou correntes."
+        "Maquinas que convertem energia elétrica em energia mecânica por meio da interacao entre corrente e Campo magnético.",
+        "O uso de fenômenos magnéticos em tecnologias, transporte, medicina, informação e separacao de materiais.",
+        "Corpos que apresentam polos magnéticos inseparáveis, capazes de atrair ou repelir outros ímãs e materiais ferromagnéticos.",
+        "A região do espaço em que forças magnéticas podem atuar sobre ímãs, cargas ou correntes."
       ],
-      "correta": "Maquinas que convertem energia el�trica em energia mec�nica por meio da interacao entre corrente e Campo magn�tico.",
-      "comentario": "A alternativa correta resume o conceito de Motores el�tricos.",
+      "correta": "Maquinas que convertem energia elétrica em energia mecânica por meio da interacao entre corrente e Campo magnético.",
+      "comentario": "A alternativa correta resume o conceito de Motores elétricos.",
       "tempoEstimado": 30,
       "tags": [
         "magnetismo",
@@ -4846,22 +4846,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Motores el�tricos",
+      "subtopico": "Motores elétricos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compat�vel com Motores el�tricos?",
+      "enunciado": "Qual alternativa NAO esta compatível com Motores elétricos?",
       "opcoes": [
-        "O uso de fen�menos magn�ticos em tecnologias, transporte, medicina, informa��o e separacao de materiais.",
-        "Maquinas que convertem energia el�trica em energia mec�nica por meio da interacao entre corrente e Campo magn�tico.",
-        "Compreender a conversao de energia el�trica em movimento mec�nico.",
+        "O uso de fenômenos magnéticos em tecnologias, transporte, medicina, informação e separacao de materiais.",
+        "Maquinas que convertem energia elétrica em energia mecânica por meio da interacao entre corrente e Campo magnético.",
+        "Compreender a conversao de energia elétrica em movimento mecânico.",
         "Ajuda a compreender ventiladores, liquidificadores e diversos equipamentos motorizados."
       ],
-      "correta": "O uso de fen�menos magn�ticos em tecnologias, transporte, medicina, informa��o e separacao de materiais.",
-      "comentario": "A op��o incompativel descreve outro subt�pico, n�o Motores el�tricos.",
+      "correta": "O uso de fenômenos magnéticos em tecnologias, transporte, medicina, informação e separacao de materiais.",
+      "comentario": "A opção incompativel descreve outro subtópico, não Motores elétricos.",
       "tempoEstimado": 30,
       "tags": [
         "magnetismo",
@@ -4885,22 +4885,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Motores el�tricos",
+      "subtopico": "Motores elétricos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar Motores el�tricos, o foco principal e:",
+      "enunciado": "Ao estudar Motores elétricos, o foco principal e:",
       "opcoes": [
-        "compreender a conversao de energia el�trica em movimento mec�nico",
-        "identificar usos tecnol�gicos e sociais do magnetismo em diferentes contextos",
-        "identificar propriedades de polos magn�ticos e intera��es entre �m�s",
-        "compreender a acao do Campo magn�tico ao redor de �m�s e correntes"
+        "compreender a conversao de energia elétrica em movimento mecânico",
+        "identificar usos tecnológicos e sociais do magnetismo em diferentes contextos",
+        "identificar propriedades de polos magnéticos e interações entre ímãs",
+        "compreender a acao do Campo magnético ao redor de ímãs e correntes"
       ],
-      "correta": "compreender a conversao de energia el�trica em movimento mec�nico",
-      "comentario": "Motores el�tricos concentra-se em compreender a conversao de energia el�trica em movimento mec�nico.",
+      "correta": "compreender a conversao de energia elétrica em movimento mecânico",
+      "comentario": "Motores elétricos concentra-se em compreender a conversao de energia elétrica em movimento mecânico.",
       "tempoEstimado": 35,
       "tags": [
         "magnetismo",
@@ -4924,22 +4924,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Motores el�tricos",
+      "subtopico": "Motores elétricos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Aplica��es do magnetismo trata de o uso de fen�menos magn�ticos em tecnologias, transporte, medicina, informa��o e separacao de materiais, Motores el�tricos destaca:",
+      "enunciado": "Enquanto Aplicações do magnetismo trata de o uso de fenômenos magnéticos em tecnologias, transporte, medicina, informação e separacao de materiais, Motores elétricos destaca:",
       "opcoes": [
-        "Maquinas que convertem energia el�trica em energia mec�nica por meio da interacao entre corrente e Campo magn�tico.",
-        "O uso de fen�menos magn�ticos em tecnologias, transporte, medicina, informa��o e separacao de materiais.",
-        "Corpos que apresentam polos magn�ticos insepar�veis, capazes de atrair ou repelir outros �m�s e materiais ferromagn�ticos.",
-        "A regi�o do espa�o em que for�as magn�ticas podem atuar sobre �m�s, cargas ou correntes."
+        "Maquinas que convertem energia elétrica em energia mecânica por meio da interacao entre corrente e Campo magnético.",
+        "O uso de fenômenos magnéticos em tecnologias, transporte, medicina, informação e separacao de materiais.",
+        "Corpos que apresentam polos magnéticos inseparáveis, capazes de atrair ou repelir outros ímãs e materiais ferromagnéticos.",
+        "A região do espaço em que forças magnéticas podem atuar sobre ímãs, cargas ou correntes."
       ],
-      "correta": "Maquinas que convertem energia el�trica em energia mec�nica por meio da interacao entre corrente e Campo magn�tico.",
-      "comentario": "A compara��o correta mostra a especificidade de Motores el�tricos.",
+      "correta": "Maquinas que convertem energia elétrica em energia mecânica por meio da interacao entre corrente e Campo magnético.",
+      "comentario": "A comparação correta mostra a especificidade de Motores elétricos.",
       "tempoEstimado": 35,
       "tags": [
         "magnetismo",
@@ -4963,22 +4963,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Motores el�tricos",
+      "subtopico": "Motores elétricos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma an�lise de sala, considera-se que uma espira percorrida por corrente gira dentro de um Campo magn�tico e movimenta um eixo Para interpretar essa situa��o, � mais adequado mobilizar o conceito de:",
+      "enunciado": "Em uma análise de sala, considera-se que uma espira percorrida por corrente gira dentro de um Campo magnético e movimenta um eixo Para interpretar essa situação, é mais adequado mobilizar o conceito de:",
       "opcoes": [
-        "Motores el�tricos",
-        "Aplica��es do magnetismo",
-        "Campo magn�tico",
+        "Motores elétricos",
+        "Aplicações do magnetismo",
+        "Campo magnético",
         "Linhas de campo"
       ],
-      "correta": "Motores el�tricos",
-      "comentario": "O caso descrito � interpretado adequadamente por meio de Motores el�tricos.",
+      "correta": "Motores elétricos",
+      "comentario": "O caso descrito é interpretado adequadamente por meio de Motores elétricos.",
       "tempoEstimado": 40,
       "tags": [
         "magnetismo",
@@ -5002,22 +5002,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Motores el�tricos",
+      "subtopico": "Motores elétricos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situa��o pr�tica depende mais diretamente de Motores el�tricos?",
+      "enunciado": "Qual situação prática depende mais diretamente de Motores elétricos?",
       "opcoes": [
         "ventiladores, liquidificadores e diversos equipamentos motorizados",
         "tecnologias medicas, industriais e de transporte baseadas em magnetismo",
-        "fechos magn�ticos, b�ssolas simples e separacao de materiais met�licos",
+        "fechos magnéticos, bússolas simples e separacao de materiais metálicos",
         "a leitura de esquemas com limalha de ferro e diagramas de campo"
       ],
       "correta": "ventiladores, liquidificadores e diversos equipamentos motorizados",
-      "comentario": "Motores el�tricos aparece de modo direto em ventiladores, liquidificadores e diversos equipamentos motorizados.",
+      "comentario": "Motores elétricos aparece de modo direto em ventiladores, liquidificadores e diversos equipamentos motorizados.",
       "tempoEstimado": 40,
       "tags": [
         "magnetismo",
@@ -5041,22 +5041,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Motores el�tricos",
+      "subtopico": "Motores elétricos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir de uma espira percorrida por corrente gira dentro de um Campo magn�tico e movimenta um eixo, qual conclus�o est� mais correta?",
+      "enunciado": "A partir de uma espira percorrida por corrente gira dentro de um Campo magnético e movimenta um eixo, qual conclusão está mais correta?",
       "opcoes": [
-        "o caso e explicado por Motores el�tricos.",
-        "o caso e mais bem entendido por Aplica��es do magnetismo.",
-        "a situa��o anula a import�ncia de �m�s e polos magn�ticos.",
-        "o fen�meno exclui qualquer rela��o com Campo magn�tico."
+        "o caso e explicado por Motores elétricos.",
+        "o caso e mais bem entendido por Aplicações do magnetismo.",
+        "a situação anula a importância de ímãs e polos magnéticos.",
+        "o fenômeno exclui qualquer relação com Campo magnético."
       ],
-      "correta": "o caso e explicado por Motores el�tricos.",
-      "comentario": "A conclus�o adequada retoma a ideia central de Motores el�tricos.",
+      "correta": "o caso e explicado por Motores elétricos.",
+      "comentario": "A conclusão adequada retoma a ideia central de Motores elétricos.",
       "tempoEstimado": 45,
       "tags": [
         "magnetismo",
@@ -5080,22 +5080,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Motores el�tricos",
+      "subtopico": "Motores elétricos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Se um grupo fosse pesquisar Motores el�tricos, qual pergunta orientadora seria a mais adequada?",
+      "enunciado": "Se um grupo fosse pesquisar Motores elétricos, qual pergunta orientadora seria a mais adequada?",
       "opcoes": [
-        "Como Motores el�tricos aparece em ventiladores, liquidificadores e diversos equipamentos motorizados?",
-        "Como Aplica��es do magnetismo substitui totalmente ventiladores, liquidificadores e diversos equipamentos motorizados?",
-        "Por que �m�s e polos magn�ticos torna desnecess�rio estudar Motores el�tricos?",
-        "De que modo Campo magn�tico elimina toda medida fisica envolvida?"
+        "Como Motores elétricos aparece em ventiladores, liquidificadores e diversos equipamentos motorizados?",
+        "Como Aplicações do magnetismo substitui totalmente ventiladores, liquidificadores e diversos equipamentos motorizados?",
+        "Por que ímãs e polos magnéticos torna desnecessário estudar Motores elétricos?",
+        "De que modo Campo magnético elimina toda medida fisica envolvida?"
       ],
-      "correta": "Como Motores el�tricos aparece em ventiladores, liquidificadores e diversos equipamentos motorizados?",
-      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Motores el�tricos.",
+      "correta": "Como Motores elétricos aparece em ventiladores, liquidificadores e diversos equipamentos motorizados?",
+      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Motores elétricos.",
       "tempoEstimado": 45,
       "tags": [
         "magnetismo",
@@ -5119,22 +5119,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Motores el�tricos",
+      "subtopico": "Motores elétricos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em Motores el�tricos e pensar que:",
+      "enunciado": "Um erro comum em Motores elétricos e pensar que:",
       "opcoes": [
-        "Motores el�tricos funcionam sem depender de Campo magn�tico ou corrente el�trica organizada",
-        "magnetismo s� aparece em b�ssolas e n�o tem aplica��es tecnol�gicas relevantes",
+        "Motores elétricos funcionam sem depender de Campo magnético ou corrente elétrica organizada",
+        "magnetismo só aparece em bússolas e não tem aplicações tecnológicas relevantes",
         "e possivel isolar permanentemente um polo norte sem um polo sul associado",
-        "Campo magn�tico existe apenas no interior do �m� e nunca ao seu redor"
+        "Campo magnético existe apenas no interior do ímã e nunca ao seu redor"
       ],
-      "correta": "Motores el�tricos funcionam sem depender de Campo magn�tico ou corrente el�trica organizada",
-      "comentario": "Esse e um equ�voco frequente porque contraria a defini��o correta de Motores el�tricos.",
+      "correta": "Motores elétricos funcionam sem depender de Campo magnético ou corrente elétrica organizada",
+      "comentario": "Esse e um equívoco frequente porque contraria a definição correta de Motores elétricos.",
       "tempoEstimado": 50,
       "tags": [
         "magnetismo",
@@ -5158,22 +5158,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Motores el�tricos",
+      "subtopico": "Motores elétricos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"o giro de um motor el�trico ocorre sem participa��o de campos magn�ticos\". A avalia��o mais adequada e:",
+      "enunciado": "Um estudante afirma: \"o giro de um motor elétrico ocorre sem participação de campos magnéticos\". A avaliação mais adequada e:",
       "opcoes": [
-        "A afirma��o est� incorreta, porque maquinas que convertem energia el�trica em energia mec�nica por meio da interacao entre corrente e Campo magn�tico.",
-        "A afirma��o est� correta, pois resume integralmente Motores el�tricos.",
-        "A afirma��o est� correta, porque toda situa��o do tema depende apenas dessa ideia.",
-        "A afirma��o est� incorreta apenas porque n�o apresenta uma unidade de medida."
+        "A afirmação está incorreta, porque maquinas que convertem energia elétrica em energia mecânica por meio da interacao entre corrente e Campo magnético.",
+        "A afirmação está correta, pois resume integralmente Motores elétricos.",
+        "A afirmação está correta, porque toda situação do tema depende apenas dessa ideia.",
+        "A afirmação está incorreta apenas porque não apresenta uma unidade de medida."
       ],
-      "correta": "A afirma��o est� incorreta, porque maquinas que convertem energia el�trica em energia mec�nica por meio da interacao entre corrente e Campo magn�tico.",
-      "comentario": "A fala do estudante apresenta um equ�voco conceitual sobre Motores el�tricos.",
+      "correta": "A afirmação está incorreta, porque maquinas que convertem energia elétrica em energia mecânica por meio da interacao entre corrente e Campo magnético.",
+      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre Motores elétricos.",
       "tempoEstimado": 55,
       "tags": [
         "magnetismo",
@@ -5197,22 +5197,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Motores el�tricos",
+      "subtopico": "Motores elétricos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se Motores el�tricos fosse ignorado(a) ao analisar ventiladores, liquidificadores e diversos equipamentos motorizados, o resultado mais prov�vel seria:",
+      "enunciado": "Se Motores elétricos fosse ignorado(a) ao analisar ventiladores, liquidificadores e diversos equipamentos motorizados, o resultado mais provável seria:",
       "opcoes": [
-        "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre ventiladores, liquidificadores e diversos equipamentos motorizados.",
-        "a situa��o seria explicada automaticamente por Aplica��es do magnetismo, sem necessidade de an�lise.",
-        "nenhuma interpretacao fisica seria alterada, porque Motores el�tricos n�o interfere nesse tipo de problema.",
-        "o fen�meno deixaria de existir apenas por n�o ser nomeado."
+        "a análise ficaria incompleta e poderia gerar interpretações erradas sobre ventiladores, liquidificadores e diversos equipamentos motorizados.",
+        "a situação seria explicada automaticamente por Aplicações do magnetismo, sem necessidade de análise.",
+        "nenhuma interpretacao fisica seria alterada, porque Motores elétricos não interfere nesse tipo de problema.",
+        "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
-      "correta": "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre ventiladores, liquidificadores e diversos equipamentos motorizados.",
-      "comentario": "Ignorar Motores el�tricos compromete a leitura fisica da situa��o apresentada.",
+      "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre ventiladores, liquidificadores e diversos equipamentos motorizados.",
+      "comentario": "Ignorar Motores elétricos compromete a leitura fisica da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "magnetismo",
@@ -5236,22 +5236,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Motores el�tricos",
+      "subtopico": "Motores elétricos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma aplica��o cotidiana ou escolar, Motores el�tricos ajuda principalmente a compreender:",
+      "enunciado": "Em uma aplicação cotidiana ou escolar, Motores elétricos ajuda principalmente a compreender:",
       "opcoes": [
         "ventiladores, liquidificadores e diversos equipamentos motorizados",
         "tecnologias medicas, industriais e de transporte baseadas em magnetismo",
-        "fechos magn�ticos, b�ssolas simples e separacao de materiais met�licos",
-        "a localizacao de regi�es de influencia magnetica em experi�ncias e dispositivos"
+        "fechos magnéticos, bússolas simples e separacao de materiais metálicos",
+        "a localizacao de regiões de influencia magnetica em experiências e dispositivos"
       ],
       "correta": "ventiladores, liquidificadores e diversos equipamentos motorizados",
-      "comentario": "A aplica��o escolhida e a que melhor representa Motores el�tricos.",
+      "comentario": "A aplicação escolhida e a que melhor representa Motores elétricos.",
       "tempoEstimado": 60,
       "tags": [
         "magnetismo",
@@ -5275,22 +5275,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Motores el�tricos",
+      "subtopico": "Motores elétricos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual resumo sintetiza melhor a ideia central de Motores el�tricos?",
+      "enunciado": "Qual resumo sintetiza melhor a ideia central de Motores elétricos?",
       "opcoes": [
-        "Em s�ntese, maquinas que convertem energia el�trica em energia mec�nica por meio da interacao entre corrente e Campo magn�tico.",
-        "Em s�ntese, o uso de fen�menos magn�ticos em tecnologias, transporte, medicina, informa��o e separacao de materiais.",
-        "Em s�ntese, corpos que apresentam polos magn�ticos insepar�veis, capazes de atrair ou repelir outros �m�s e materiais ferromagn�ticos.",
-        "Em s�ntese, a regi�o do espa�o em que for�as magn�ticas podem atuar sobre �m�s, cargas ou correntes."
+        "Em síntese, maquinas que convertem energia elétrica em energia mecânica por meio da interacao entre corrente e Campo magnético.",
+        "Em síntese, o uso de fenômenos magnéticos em tecnologias, transporte, medicina, informação e separacao de materiais.",
+        "Em síntese, corpos que apresentam polos magnéticos inseparáveis, capazes de atrair ou repelir outros ímãs e materiais ferromagnéticos.",
+        "Em síntese, a região do espaço em que forças magnéticas podem atuar sobre ímãs, cargas ou correntes."
       ],
-      "correta": "Em s�ntese, maquinas que convertem energia el�trica em energia mec�nica por meio da interacao entre corrente e Campo magn�tico.",
-      "comentario": "O resumo correto recupera o n�cleo conceitual de Motores el�tricos.",
+      "correta": "Em síntese, maquinas que convertem energia elétrica em energia mecânica por meio da interacao entre corrente e Campo magnético.",
+      "comentario": "O resumo correto recupera o núcleo conceitual de Motores elétricos.",
       "tempoEstimado": 65,
       "tags": [
         "magnetismo",
@@ -5314,22 +5314,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Aplica��es do magnetismo",
+      "subtopico": "Aplicações do magnetismo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em F�sica, Aplica��es do magnetismo pode ser definido(a) como:",
+      "enunciado": "Em Física, Aplicações do magnetismo pode ser definido(a) como:",
       "opcoes": [
-        "o uso de fen�menos magn�ticos em tecnologias, transporte, medicina, informa��o e separacao de materiais",
-        "corpos que apresentam polos magn�ticos insepar�veis, capazes de atrair ou repelir outros �m�s e materiais ferromagn�ticos",
-        "a regi�o do espa�o em que for�as magn�ticas podem atuar sobre �m�s, cargas ou correntes",
-        "as representa��es gr�ficas que indicam dire��o, sentido e intensidade relativa do Campo magn�tico"
+        "o uso de fenômenos magnéticos em tecnologias, transporte, medicina, informação e separacao de materiais",
+        "corpos que apresentam polos magnéticos inseparáveis, capazes de atrair ou repelir outros ímãs e materiais ferromagnéticos",
+        "a região do espaço em que forças magnéticas podem atuar sobre ímãs, cargas ou correntes",
+        "as representações gráficas que indicam direção, sentido e intensidade relativa do Campo magnético"
       ],
-      "correta": "o uso de fen�menos magn�ticos em tecnologias, transporte, medicina, informa��o e separacao de materiais",
-      "comentario": "Aplica��es do magnetismo refere-se ao uso de fen�menos magn�ticos em tecnologias, transporte, medicina, informa��o e separacao de materiais.",
+      "correta": "o uso de fenômenos magnéticos em tecnologias, transporte, medicina, informação e separacao de materiais",
+      "comentario": "Aplicações do magnetismo refere-se ao uso de fenômenos magnéticos em tecnologias, transporte, medicina, informação e separacao de materiais.",
       "tempoEstimado": 25,
       "tags": [
         "magnetismo",
@@ -5353,22 +5353,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Aplica��es do magnetismo",
+      "subtopico": "Aplicações do magnetismo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situa��o: cart�es magn�ticos, trens de levita��o, exames de imagem e separadores industriais usam efeitos magn�ticos Esse caso exemplifica melhor qual subt�pico?",
+      "enunciado": "Observe a situação: cartões magnéticos, trens de levitação, exames de imagem e separadores industriais usam efeitos magnéticos Esse caso exemplifica melhor qual subtópico?",
       "opcoes": [
-        "Aplica��es do magnetismo",
-        "�m�s e polos magn�ticos",
-        "Campo magn�tico",
+        "Aplicações do magnetismo",
+        "ímãs e polos magnéticos",
+        "Campo magnético",
         "Linhas de campo"
       ],
-      "correta": "Aplica��es do magnetismo",
-      "comentario": "A situa��o apresentada � um exemplo de Aplica��es do magnetismo.",
+      "correta": "Aplicações do magnetismo",
+      "comentario": "A situação apresentada é um exemplo de Aplicações do magnetismo.",
       "tempoEstimado": 25,
       "tags": [
         "magnetismo",
@@ -5392,22 +5392,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Aplica��es do magnetismo",
+      "subtopico": "Aplicações do magnetismo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirma��o descreve corretamente Aplica��es do magnetismo?",
+      "enunciado": "Qual afirmação descreve corretamente Aplicações do magnetismo?",
       "opcoes": [
-        "O uso de fen�menos magn�ticos em tecnologias, transporte, medicina, informa��o e separacao de materiais.",
-        "Corpos que apresentam polos magn�ticos insepar�veis, capazes de atrair ou repelir outros �m�s e materiais ferromagn�ticos.",
-        "A regi�o do espa�o em que for�as magn�ticas podem atuar sobre �m�s, cargas ou correntes.",
-        "As representa��es gr�ficas que indicam dire��o, sentido e intensidade relativa do Campo magn�tico."
+        "O uso de fenômenos magnéticos em tecnologias, transporte, medicina, informação e separacao de materiais.",
+        "Corpos que apresentam polos magnéticos inseparáveis, capazes de atrair ou repelir outros ímãs e materiais ferromagnéticos.",
+        "A região do espaço em que forças magnéticas podem atuar sobre ímãs, cargas ou correntes.",
+        "As representações gráficas que indicam direção, sentido e intensidade relativa do Campo magnético."
       ],
-      "correta": "O uso de fen�menos magn�ticos em tecnologias, transporte, medicina, informa��o e separacao de materiais.",
-      "comentario": "A alternativa correta resume o conceito de Aplica��es do magnetismo.",
+      "correta": "O uso de fenômenos magnéticos em tecnologias, transporte, medicina, informação e separacao de materiais.",
+      "comentario": "A alternativa correta resume o conceito de Aplicações do magnetismo.",
       "tempoEstimado": 30,
       "tags": [
         "magnetismo",
@@ -5431,22 +5431,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Aplica��es do magnetismo",
+      "subtopico": "Aplicações do magnetismo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compat�vel com Aplica��es do magnetismo?",
+      "enunciado": "Qual alternativa NAO esta compatível com Aplicações do magnetismo?",
       "opcoes": [
-        "Corpos que apresentam polos magn�ticos insepar�veis, capazes de atrair ou repelir outros �m�s e materiais ferromagn�ticos.",
-        "O uso de fen�menos magn�ticos em tecnologias, transporte, medicina, informa��o e separacao de materiais.",
-        "Identificar usos tecnol�gicos e sociais do magnetismo em diferentes contextos.",
+        "Corpos que apresentam polos magnéticos inseparáveis, capazes de atrair ou repelir outros ímãs e materiais ferromagnéticos.",
+        "O uso de fenômenos magnéticos em tecnologias, transporte, medicina, informação e separacao de materiais.",
+        "Identificar usos tecnológicos e sociais do magnetismo em diferentes contextos.",
         "Ajuda a compreender tecnologias medicas, industriais e de transporte baseadas em magnetismo."
       ],
-      "correta": "Corpos que apresentam polos magn�ticos insepar�veis, capazes de atrair ou repelir outros �m�s e materiais ferromagn�ticos.",
-      "comentario": "A op��o incompativel descreve outro subt�pico, n�o Aplica��es do magnetismo.",
+      "correta": "Corpos que apresentam polos magnéticos inseparáveis, capazes de atrair ou repelir outros ímãs e materiais ferromagnéticos.",
+      "comentario": "A opção incompativel descreve outro subtópico, não Aplicações do magnetismo.",
       "tempoEstimado": 30,
       "tags": [
         "magnetismo",
@@ -5470,22 +5470,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Aplica��es do magnetismo",
+      "subtopico": "Aplicações do magnetismo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar Aplica��es do magnetismo, o foco principal e:",
+      "enunciado": "Ao estudar Aplicações do magnetismo, o foco principal e:",
       "opcoes": [
-        "identificar usos tecnol�gicos e sociais do magnetismo em diferentes contextos",
-        "identificar propriedades de polos magn�ticos e intera��es entre �m�s",
-        "compreender a acao do Campo magn�tico ao redor de �m�s e correntes",
-        "interpretar mapas de Campo magn�tico a partir do desenho de suas linhas"
+        "identificar usos tecnológicos e sociais do magnetismo em diferentes contextos",
+        "identificar propriedades de polos magnéticos e interações entre ímãs",
+        "compreender a acao do Campo magnético ao redor de ímãs e correntes",
+        "interpretar mapas de Campo magnético a partir do desenho de suas linhas"
       ],
-      "correta": "identificar usos tecnol�gicos e sociais do magnetismo em diferentes contextos",
-      "comentario": "Aplica��es do magnetismo concentra-se em identificar usos tecnol�gicos e sociais do magnetismo em diferentes contextos.",
+      "correta": "identificar usos tecnológicos e sociais do magnetismo em diferentes contextos",
+      "comentario": "Aplicações do magnetismo concentra-se em identificar usos tecnológicos e sociais do magnetismo em diferentes contextos.",
       "tempoEstimado": 35,
       "tags": [
         "magnetismo",
@@ -5509,22 +5509,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Aplica��es do magnetismo",
+      "subtopico": "Aplicações do magnetismo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto �m�s e polos magn�ticos trata de corpos que apresentam polos magn�ticos insepar�veis, capazes de atrair ou repelir outros �m�s e materiais ferromagn�ticos, Aplica��es do magnetismo destaca:",
+      "enunciado": "Enquanto ímãs e polos magnéticos trata de corpos que apresentam polos magnéticos inseparáveis, capazes de atrair ou repelir outros ímãs e materiais ferromagnéticos, Aplicações do magnetismo destaca:",
       "opcoes": [
-        "O uso de fen�menos magn�ticos em tecnologias, transporte, medicina, informa��o e separacao de materiais.",
-        "Corpos que apresentam polos magn�ticos insepar�veis, capazes de atrair ou repelir outros �m�s e materiais ferromagn�ticos.",
-        "A regi�o do espa�o em que for�as magn�ticas podem atuar sobre �m�s, cargas ou correntes.",
-        "As representa��es gr�ficas que indicam dire��o, sentido e intensidade relativa do Campo magn�tico."
+        "O uso de fenômenos magnéticos em tecnologias, transporte, medicina, informação e separacao de materiais.",
+        "Corpos que apresentam polos magnéticos inseparáveis, capazes de atrair ou repelir outros ímãs e materiais ferromagnéticos.",
+        "A região do espaço em que forças magnéticas podem atuar sobre ímãs, cargas ou correntes.",
+        "As representações gráficas que indicam direção, sentido e intensidade relativa do Campo magnético."
       ],
-      "correta": "O uso de fen�menos magn�ticos em tecnologias, transporte, medicina, informa��o e separacao de materiais.",
-      "comentario": "A compara��o correta mostra a especificidade de Aplica��es do magnetismo.",
+      "correta": "O uso de fenômenos magnéticos em tecnologias, transporte, medicina, informação e separacao de materiais.",
+      "comentario": "A comparação correta mostra a especificidade de Aplicações do magnetismo.",
       "tempoEstimado": 35,
       "tags": [
         "magnetismo",
@@ -5548,22 +5548,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Aplica��es do magnetismo",
+      "subtopico": "Aplicações do magnetismo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma an�lise de sala, considera-se que cart�es magn�ticos, trens de levita��o, exames de imagem e separadores industriais usam efeitos magn�ticos Para interpretar essa situa��o, � mais adequado mobilizar o conceito de:",
+      "enunciado": "Em uma análise de sala, considera-se que cartões magnéticos, trens de levitação, exames de imagem e separadores industriais usam efeitos magnéticos Para interpretar essa situação, é mais adequado mobilizar o conceito de:",
       "opcoes": [
-        "Aplica��es do magnetismo",
-        "�m�s e polos magn�ticos",
+        "Aplicações do magnetismo",
+        "ímãs e polos magnéticos",
         "Linhas de campo",
-        "Campo magn�tico terrestre"
+        "Campo magnético terrestre"
       ],
-      "correta": "Aplica��es do magnetismo",
-      "comentario": "O caso descrito � interpretado adequadamente por meio de Aplica��es do magnetismo.",
+      "correta": "Aplicações do magnetismo",
+      "comentario": "O caso descrito é interpretado adequadamente por meio de Aplicações do magnetismo.",
       "tempoEstimado": 40,
       "tags": [
         "magnetismo",
@@ -5587,22 +5587,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Aplica��es do magnetismo",
+      "subtopico": "Aplicações do magnetismo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situa��o pr�tica depende mais diretamente de Aplica��es do magnetismo?",
+      "enunciado": "Qual situação prática depende mais diretamente de Aplicações do magnetismo?",
       "opcoes": [
         "tecnologias medicas, industriais e de transporte baseadas em magnetismo",
-        "fechos magn�ticos, b�ssolas simples e separacao de materiais met�licos",
-        "a localizacao de regi�es de influencia magnetica em experi�ncias e dispositivos",
-        "a navegacao por b�ssolas e o estudo da orientacao geografica"
+        "fechos magnéticos, bússolas simples e separacao de materiais metálicos",
+        "a localizacao de regiões de influencia magnetica em experiências e dispositivos",
+        "a navegacao por bússolas e o estudo da orientacao geografica"
       ],
       "correta": "tecnologias medicas, industriais e de transporte baseadas em magnetismo",
-      "comentario": "Aplica��es do magnetismo aparece de modo direto em tecnologias medicas, industriais e de transporte baseadas em magnetismo.",
+      "comentario": "Aplicações do magnetismo aparece de modo direto em tecnologias medicas, industriais e de transporte baseadas em magnetismo.",
       "tempoEstimado": 40,
       "tags": [
         "magnetismo",
@@ -5626,22 +5626,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Aplica��es do magnetismo",
+      "subtopico": "Aplicações do magnetismo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir de cart�es magn�ticos, trens de levita��o, exames de imagem e separadores industriais usam efeitos magn�ticos, qual conclus�o est� mais correta?",
+      "enunciado": "A partir de cartões magnéticos, trens de levitação, exames de imagem e separadores industriais usam efeitos magnéticos, qual conclusão está mais correta?",
       "opcoes": [
-        "o caso e explicado por Aplica��es do magnetismo.",
-        "o caso e mais bem entendido por �m�s e polos magn�ticos.",
-        "a situa��o anula a import�ncia de Campo magn�tico.",
-        "o fen�meno exclui qualquer rela��o com Linhas de campo."
+        "o caso e explicado por Aplicações do magnetismo.",
+        "o caso e mais bem entendido por ímãs e polos magnéticos.",
+        "a situação anula a importância de Campo magnético.",
+        "o fenômeno exclui qualquer relação com Linhas de campo."
       ],
-      "correta": "o caso e explicado por Aplica��es do magnetismo.",
-      "comentario": "A conclus�o adequada retoma a ideia central de Aplica��es do magnetismo.",
+      "correta": "o caso e explicado por Aplicações do magnetismo.",
+      "comentario": "A conclusão adequada retoma a ideia central de Aplicações do magnetismo.",
       "tempoEstimado": 45,
       "tags": [
         "magnetismo",
@@ -5665,22 +5665,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Aplica��es do magnetismo",
+      "subtopico": "Aplicações do magnetismo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Se um grupo fosse pesquisar Aplica��es do magnetismo, qual pergunta orientadora seria a mais adequada?",
+      "enunciado": "Se um grupo fosse pesquisar Aplicações do magnetismo, qual pergunta orientadora seria a mais adequada?",
       "opcoes": [
-        "Como Aplica��es do magnetismo aparece em tecnologias medicas, industriais e de transporte baseadas em magnetismo?",
-        "Como �m�s e polos magn�ticos substitui totalmente tecnologias medicas, industriais e de transporte baseadas em magnetismo?",
-        "Por que Campo magn�tico torna desnecess�rio estudar Aplica��es do magnetismo?",
+        "Como Aplicações do magnetismo aparece em tecnologias medicas, industriais e de transporte baseadas em magnetismo?",
+        "Como ímãs e polos magnéticos substitui totalmente tecnologias medicas, industriais e de transporte baseadas em magnetismo?",
+        "Por que Campo magnético torna desnecessário estudar Aplicações do magnetismo?",
         "De que modo Linhas de campo elimina toda medida fisica envolvida?"
       ],
-      "correta": "Como Aplica��es do magnetismo aparece em tecnologias medicas, industriais e de transporte baseadas em magnetismo?",
-      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Aplica��es do magnetismo.",
+      "correta": "Como Aplicações do magnetismo aparece em tecnologias medicas, industriais e de transporte baseadas em magnetismo?",
+      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Aplicações do magnetismo.",
       "tempoEstimado": 45,
       "tags": [
         "magnetismo",
@@ -5704,22 +5704,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Aplica��es do magnetismo",
+      "subtopico": "Aplicações do magnetismo",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em Aplica��es do magnetismo e pensar que:",
+      "enunciado": "Um erro comum em Aplicações do magnetismo e pensar que:",
       "opcoes": [
-        "magnetismo s� aparece em b�ssolas e n�o tem aplica��es tecnol�gicas relevantes",
+        "magnetismo só aparece em bússolas e não tem aplicações tecnológicas relevantes",
         "e possivel isolar permanentemente um polo norte sem um polo sul associado",
-        "Campo magn�tico existe apenas no interior do �m� e nunca ao seu redor",
-        "as Linhas de campo sao fios materiais realmente existentes no espa�o"
+        "Campo magnético existe apenas no interior do ímã e nunca ao seu redor",
+        "as Linhas de campo sao fios materiais realmente existentes no espaço"
       ],
-      "correta": "magnetismo s� aparece em b�ssolas e n�o tem aplica��es tecnol�gicas relevantes",
-      "comentario": "Esse e um equ�voco frequente porque contraria a defini��o correta de Aplica��es do magnetismo.",
+      "correta": "magnetismo só aparece em bússolas e não tem aplicações tecnológicas relevantes",
+      "comentario": "Esse e um equívoco frequente porque contraria a definição correta de Aplicações do magnetismo.",
       "tempoEstimado": 50,
       "tags": [
         "magnetismo",
@@ -5743,22 +5743,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Aplica��es do magnetismo",
+      "subtopico": "Aplicações do magnetismo",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"fora da b�ssola, o magnetismo n�o e �til em nenhuma tecnologia moderna\". A avalia��o mais adequada e:",
+      "enunciado": "Um estudante afirma: \"fora da bússola, o magnetismo não e útil em nenhuma tecnologia moderna\". A avaliação mais adequada e:",
       "opcoes": [
-        "A afirma��o est� incorreta, porque o uso de fen�menos magn�ticos em tecnologias, transporte, medicina, informa��o e separacao de materiais.",
-        "A afirma��o est� correta, pois resume integralmente Aplica��es do magnetismo.",
-        "A afirma��o est� correta, porque toda situa��o do tema depende apenas dessa ideia.",
-        "A afirma��o est� incorreta apenas porque n�o apresenta uma unidade de medida."
+        "A afirmação está incorreta, porque o uso de fenômenos magnéticos em tecnologias, transporte, medicina, informação e separacao de materiais.",
+        "A afirmação está correta, pois resume integralmente Aplicações do magnetismo.",
+        "A afirmação está correta, porque toda situação do tema depende apenas dessa ideia.",
+        "A afirmação está incorreta apenas porque não apresenta uma unidade de medida."
       ],
-      "correta": "A afirma��o est� incorreta, porque o uso de fen�menos magn�ticos em tecnologias, transporte, medicina, informa��o e separacao de materiais.",
-      "comentario": "A fala do estudante apresenta um equ�voco conceitual sobre Aplica��es do magnetismo.",
+      "correta": "A afirmação está incorreta, porque o uso de fenômenos magnéticos em tecnologias, transporte, medicina, informação e separacao de materiais.",
+      "comentario": "A fala do estudante apresenta um equívoco conceitual sobre Aplicações do magnetismo.",
       "tempoEstimado": 55,
       "tags": [
         "magnetismo",
@@ -5782,22 +5782,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Aplica��es do magnetismo",
+      "subtopico": "Aplicações do magnetismo",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se Aplica��es do magnetismo fosse ignorado(a) ao analisar tecnologias medicas, industriais e de transporte baseadas em magnetismo, o resultado mais prov�vel seria:",
+      "enunciado": "Se Aplicações do magnetismo fosse ignorado(a) ao analisar tecnologias medicas, industriais e de transporte baseadas em magnetismo, o resultado mais provável seria:",
       "opcoes": [
-        "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre tecnologias medicas, industriais e de transporte baseadas em magnetismo.",
-        "a situa��o seria explicada automaticamente por �m�s e polos magn�ticos, sem necessidade de an�lise.",
-        "nenhuma interpretacao fisica seria alterada, porque Aplica��es do magnetismo n�o interfere nesse tipo de problema.",
-        "o fen�meno deixaria de existir apenas por n�o ser nomeado."
+        "a análise ficaria incompleta e poderia gerar interpretações erradas sobre tecnologias medicas, industriais e de transporte baseadas em magnetismo.",
+        "a situação seria explicada automaticamente por ímãs e polos magnéticos, sem necessidade de análise.",
+        "nenhuma interpretacao fisica seria alterada, porque Aplicações do magnetismo não interfere nesse tipo de problema.",
+        "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
-      "correta": "a an�lise ficaria incompleta e poderia gerar interpreta��es erradas sobre tecnologias medicas, industriais e de transporte baseadas em magnetismo.",
-      "comentario": "Ignorar Aplica��es do magnetismo compromete a leitura fisica da situa��o apresentada.",
+      "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre tecnologias medicas, industriais e de transporte baseadas em magnetismo.",
+      "comentario": "Ignorar Aplicações do magnetismo compromete a leitura fisica da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "magnetismo",
@@ -5821,22 +5821,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Aplica��es do magnetismo",
+      "subtopico": "Aplicações do magnetismo",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma aplica��o cotidiana ou escolar, Aplica��es do magnetismo ajuda principalmente a compreender:",
+      "enunciado": "Em uma aplicação cotidiana ou escolar, Aplicações do magnetismo ajuda principalmente a compreender:",
       "opcoes": [
         "tecnologias medicas, industriais e de transporte baseadas em magnetismo",
-        "fechos magn�ticos, b�ssolas simples e separacao de materiais met�licos",
-        "a localizacao de regi�es de influencia magnetica em experi�ncias e dispositivos",
+        "fechos magnéticos, bússolas simples e separacao de materiais metálicos",
+        "a localizacao de regiões de influencia magnetica em experiências e dispositivos",
         "a leitura de esquemas com limalha de ferro e diagramas de campo"
       ],
       "correta": "tecnologias medicas, industriais e de transporte baseadas em magnetismo",
-      "comentario": "A aplica��o escolhida e a que melhor representa Aplica��es do magnetismo.",
+      "comentario": "A aplicação escolhida e a que melhor representa Aplicações do magnetismo.",
       "tempoEstimado": 60,
       "tags": [
         "magnetismo",
@@ -5860,22 +5860,22 @@
       "serie": [
         3
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Magnetismo",
-      "subtopico": "Aplica��es do magnetismo",
+      "subtopico": "Aplicações do magnetismo",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual resumo sintetiza melhor a ideia central de Aplica��es do magnetismo?",
+      "enunciado": "Qual resumo sintetiza melhor a ideia central de Aplicações do magnetismo?",
       "opcoes": [
-        "Em s�ntese, o uso de fen�menos magn�ticos em tecnologias, transporte, medicina, informa��o e separacao de materiais.",
-        "Em s�ntese, corpos que apresentam polos magn�ticos insepar�veis, capazes de atrair ou repelir outros �m�s e materiais ferromagn�ticos.",
-        "Em s�ntese, a regi�o do espa�o em que for�as magn�ticas podem atuar sobre �m�s, cargas ou correntes.",
-        "Em s�ntese, as representa��es gr�ficas que indicam dire��o, sentido e intensidade relativa do Campo magn�tico."
+        "Em síntese, o uso de fenômenos magnéticos em tecnologias, transporte, medicina, informação e separacao de materiais.",
+        "Em síntese, corpos que apresentam polos magnéticos inseparáveis, capazes de atrair ou repelir outros ímãs e materiais ferromagnéticos.",
+        "Em síntese, a região do espaço em que forças magnéticas podem atuar sobre ímãs, cargas ou correntes.",
+        "Em síntese, as representações gráficas que indicam direção, sentido e intensidade relativa do Campo magnético."
       ],
-      "correta": "Em s�ntese, o uso de fen�menos magn�ticos em tecnologias, transporte, medicina, informa��o e separacao de materiais.",
-      "comentario": "O resumo correto recupera o n�cleo conceitual de Aplica��es do magnetismo.",
+      "correta": "Em síntese, o uso de fenômenos magnéticos em tecnologias, transporte, medicina, informação e separacao de materiais.",
+      "comentario": "O resumo correto recupera o núcleo conceitual de Aplicações do magnetismo.",
       "tempoEstimado": 65,
       "tags": [
         "magnetismo",

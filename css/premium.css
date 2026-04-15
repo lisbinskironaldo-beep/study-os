@@ -2429,7 +2429,7 @@ body.dark .home-launchpad-tools {
 
 .launchpad-primary-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 14px;
 }
 
@@ -2540,6 +2540,13 @@ body.dark .launchpad-tool:hover {
     border-color: rgba(216, 174, 160, 0.24);
 }
 
+.launchpad-card[data-module="premium-study"] {
+    background:
+        linear-gradient(145deg, rgba(183, 196, 255, 0.44), rgba(255, 255, 255, 0.92)),
+        var(--surface-strong);
+    border-color: rgba(117, 132, 255, 0.24);
+}
+
 body.dark .launchpad-card[data-module="pomodoro"] {
     background:
         linear-gradient(135deg, rgba(26, 40, 67, 0.94), rgba(17, 28, 48, 0.9)),
@@ -2559,6 +2566,13 @@ body.dark .launchpad-card[data-module="questions"] {
         linear-gradient(135deg, rgba(52, 35, 28, 0.94), rgba(35, 24, 20, 0.9)),
         var(--surface-strong);
     border-color: rgba(191, 143, 96, 0.18);
+}
+
+body.dark .launchpad-card[data-module="premium-study"] {
+    background:
+        radial-gradient(circle at top left, rgba(121, 213, 255, 0.1), transparent 38%),
+        linear-gradient(135deg, rgba(22, 30, 57, 0.96), rgba(14, 18, 32, 0.94));
+    border-color: rgba(121, 213, 255, 0.18);
 }
 
 .launchpad-tool[data-module="stopwatch"] {

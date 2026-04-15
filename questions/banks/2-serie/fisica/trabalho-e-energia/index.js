@@ -1,6 +1,6 @@
-﻿export const trabalhoEEnergia = {
+export const trabalhoEEnergia = {
   "id": "fisica_trabalho_e_energia",
-  "materia": "F�sica",
+  "materia": "Física",
   "serie": [
     2
   ],
@@ -9,35 +9,35 @@
     "disciplinaId": "fisica",
     "base": "ESCOLAR",
     "seloEditorial": "VERIFICADA",
-    "eixo": "Energia, trabalho e conserva��o",
-    "frente": "Transforma��es energ�ticas e leitura mec�nica de sistemas",
+    "eixo": "Energia, trabalho e conservação",
+    "frente": "Transformações energéticas e leitura mecânica de sistemas",
     "searchAliases": [
       "trabalho",
       "energia",
-      "pot�ncia",
-      "energia cin�tica",
+      "potência",
+      "energia cinética",
       "energia potencial",
-      "conserva��o da energia"
+      "conservação da energia"
     ],
     "subtopicosBase": [
       "Conceito de trabalho",
-      "Trabalho de for�a constante",
-      "Pot�ncia mec�nica",
-      "Energia cin�tica",
+      "Trabalho de força constante",
+      "Potência mecânica",
+      "Energia cinética",
       "Energia potencial gravitacional",
-      "Energia potencial el�stica",
+      "Energia potencial elástica",
       "Teorema trabalho-energia",
-      "Conserva��o da energia mec�nica",
-      "Rendimento e dissipa��o",
-      "Aplica��es energ�ticas do cotidiano"
+      "Conservação da energia mecânica",
+      "Rendimento e dissipação",
+      "Aplicações energéticas do cotidiano"
     ],
     "habilidadesBase": [
-      "definir trabalho e pot�ncia em contextos mec�nicos",
-      "calcular energias cin�tica e potenciais",
+      "definir trabalho e potência em contextos mecânicos",
+      "calcular energias cinética e potenciais",
       "aplicar o teorema trabalho-energia",
-      "usar a conserva��o da energia mec�nica",
-      "analisar rendimento e perdas por dissipa��o",
-      "interpretar transforma��es de energia em situa��es cotidianas"
+      "usar a conservação da energia mecânica",
+      "analisar rendimento e perdas por dissipação",
+      "interpretar transformações de energia em situações cotidianas"
     ],
     "auditado": true,
     "auditadoEm": "2026-04-12",
@@ -49,22 +49,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
       "subtopico": "Conceito de trabalho",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em F�sica, Conceito de trabalho pode ser definido(a) como:",
+      "enunciado": "Em Física, Conceito de trabalho pode ser definido(a) como:",
       "opcoes": [
-        "a grandeza associada � transfer�ncia de energia produzida por uma for�a ao longo de um deslocamento",
-        "o c�lculo do trabalho quando a for�a mant�m m�dulo e dire��o constantes durante o deslocamento considerado",
-        "a grandeza que mede a rapidez com que o trabalho � realizado ou a energia � transferida",
+        "a grandeza associada à transferência de energia produzida por uma força ao longo de um deslocamento",
+        "o cálculo do trabalho quando a força mantém módulo e direção constantes durante o deslocamento considerado",
+        "a grandeza que mede a rapidez com que o trabalho é realizado ou a energia é transferida",
         "a energia associada ao movimento de um corpo"
       ],
-      "correta": "a grandeza associada � transfer�ncia de energia produzida por uma for�a ao longo de um deslocamento",
-      "comentario": "Conceito de trabalho refere-se � grandeza associada � transfer�ncia de energia produzida por uma for�a ao longo de um deslocamento.",
+      "correta": "a grandeza associada à transferência de energia produzida por uma força ao longo de um deslocamento",
+      "comentario": "Conceito de trabalho refere-se à grandeza associada à transferência de energia produzida por uma força ao longo de um deslocamento.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -88,22 +88,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
       "subtopico": "Conceito de trabalho",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situa��o: uma for�a empurra um bloco e ele se desloca na dire��o da aplica��o Esse caso exemplifica melhor qual subt�pico?",
+      "enunciado": "Observe a situação: uma força empurra um bloco e ele se desloca na direção da aplicação Esse caso exemplifica melhor qual subtópico?",
       "opcoes": [
         "Conceito de trabalho",
-        "Trabalho de for�a constante",
-        "Pot�ncia mec�nica",
-        "Energia cin�tica"
+        "Trabalho de força constante",
+        "Potência mecânica",
+        "Energia cinética"
       ],
       "correta": "Conceito de trabalho",
-      "comentario": "A situa��o apresentada � um exemplo de conceito de trabalho.",
+      "comentario": "A situação apresentada é um exemplo de conceito de trabalho.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -127,22 +127,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
       "subtopico": "Conceito de trabalho",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirma��o descreve corretamente conceito de trabalho?",
+      "enunciado": "Qual afirmação descreve corretamente conceito de trabalho?",
       "opcoes": [
-        "A grandeza associada � transfer�ncia de energia produzida por uma for�a ao longo de um deslocamento.",
-        "O c�lculo do trabalho quando a for�a mant�m m�dulo e dire��o constantes durante o deslocamento considerado.",
-        "A grandeza que mede a rapidez com que o trabalho � realizado ou a energia � transferida.",
+        "A grandeza associada à transferência de energia produzida por uma força ao longo de um deslocamento.",
+        "O cálculo do trabalho quando a força mantém módulo e direção constantes durante o deslocamento considerado.",
+        "A grandeza que mede a rapidez com que o trabalho é realizado ou a energia é transferida.",
         "A energia associada ao movimento de um corpo."
       ],
-      "correta": "A grandeza associada � transfer�ncia de energia produzida por uma for�a ao longo de um deslocamento.",
-      "comentario": "A afirma��o correta retoma o sentido central de conceito de trabalho.",
+      "correta": "A grandeza associada à transferência de energia produzida por uma força ao longo de um deslocamento.",
+      "comentario": "A afirmação correta retoma o sentido central de conceito de trabalho.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -166,22 +166,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
       "subtopico": "Conceito de trabalho",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa incompat�vel com conceito de trabalho.",
+      "enunciado": "Assinale a alternativa incompatível com conceito de trabalho.",
       "opcoes": [
-        "afirmar que segurar um peso parado sempre realiza trabalho mec�nico positivo sobre ele.",
-        "a rela��o entre for�a aplicada, deslocamento e transfer�ncia de energia mec�nica.",
-        "trabalho mec�nico representa a transfer�ncia de energia por uma for�a ao longo de um deslocamento.",
-        "a grandeza associada � transfer�ncia de energia produzida por uma for�a ao longo de um deslocamento."
+        "afirmar que segurar um peso parado sempre realiza trabalho mecânico positivo sobre ele.",
+        "a relação entre força aplicada, deslocamento e transferência de energia mecânica.",
+        "trabalho mecânico representa a transferência de energia por uma força ao longo de um deslocamento.",
+        "a grandeza associada à transferência de energia produzida por uma força ao longo de um deslocamento."
       ],
-      "correta": "afirmar que segurar um peso parado sempre realiza trabalho mec�nico positivo sobre ele.",
-      "comentario": "Afirmar que segurar um peso parado sempre realiza trabalho mec�nico positivo sobre ele n�o representa conceito de trabalho, enquanto as demais alternativas se relacionam com esse subt�pico.",
+      "correta": "afirmar que segurar um peso parado sempre realiza trabalho mecânico positivo sobre ele.",
+      "comentario": "Afirmar que segurar um peso parado sempre realiza trabalho mecânico positivo sobre ele não representa conceito de trabalho, enquanto as demais alternativas se relacionam com esse subtópico.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -205,22 +205,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
       "subtopico": "Conceito de trabalho",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando se estuda conceito de trabalho, o foco principal est� em:",
+      "enunciado": "Quando se estuda conceito de trabalho, o foco principal está em:",
       "opcoes": [
-        "a rela��o entre for�a aplicada, deslocamento e transfer�ncia de energia mec�nica",
-        "a determina��o do trabalho em situa��es simples com for�a constante",
-        "a compara��o entre a quantidade de trabalho realizado e o tempo gasto para realiz�-lo",
-        "a rela��o entre movimento e capacidade de realizar trabalho ou produzir efeitos din�micos"
+        "a relação entre força aplicada, deslocamento e transferência de energia mecânica",
+        "a determinação do trabalho em situações simples com força constante",
+        "a comparação entre a quantidade de trabalho realizado e o tempo gasto para realizá-lo",
+        "a relação entre movimento e capacidade de realizar trabalho ou produzir efeitos dinâmicos"
       ],
-      "correta": "a rela��o entre for�a aplicada, deslocamento e transfer�ncia de energia mec�nica",
-      "comentario": "Conceito de trabalho volta a aten��o para a rela��o entre for�a aplicada, deslocamento e transfer�ncia de energia mec�nica.",
+      "correta": "a relação entre força aplicada, deslocamento e transferência de energia mecânica",
+      "comentario": "Conceito de trabalho volta a atenção para a relação entre força aplicada, deslocamento e transferência de energia mecânica.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -244,22 +244,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
       "subtopico": "Conceito de trabalho",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferen�a entre conceito de trabalho e pot�ncia mec�nica � que:",
+      "enunciado": "A principal diferença entre conceito de trabalho e potência mecânica é que:",
       "opcoes": [
-        "conceito de trabalho mede a energia transferida por for�a ao longo do deslocamento, enquanto pot�ncia mec�nica indica a rapidez com que esse trabalho � realizado",
-        "Conceito de trabalho e Pot�ncia mec�nica s�o exatamente a mesma ideia f�sica em qualquer situa��o.",
-        "Pot�ncia mec�nica elimina a necessidade de observar conceito de trabalho.",
-        "Conceito de trabalho depende apenas de opini�o pessoal, sem rela��o com grandezas, modelos ou medidas."
+        "conceito de trabalho mede a energia transferida por força ao longo do deslocamento, enquanto potência mecânica indica a rapidez com que esse trabalho é realizado",
+        "Conceito de trabalho e Potência mecânica são exatamente a mesma ideia física em qualquer situação.",
+        "Potência mecânica elimina a necessidade de observar conceito de trabalho.",
+        "Conceito de trabalho depende apenas de opinião pessoal, sem relação com grandezas, modelos ou medidas."
       ],
-      "correta": "conceito de trabalho mede a energia transferida por for�a ao longo do deslocamento, enquanto pot�ncia mec�nica indica a rapidez com que esse trabalho � realizado",
-      "comentario": "A compara��o correta distingue os dois subt�picos sem confundir seus objetos de estudo.",
+      "correta": "conceito de trabalho mede a energia transferida por força ao longo do deslocamento, enquanto potência mecânica indica a rapidez com que esse trabalho é realizado",
+      "comentario": "A comparação correta distingue os dois subtópicos sem confundir seus objetos de estudo.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -283,21 +283,21 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
       "subtopico": "Conceito de trabalho",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma observa��o experimental, registrou-se o seguinte caso: uma for�a empurra um bloco e ele se desloca na dire��o da aplica��o A leitura f�sica mais adequada aponta para:",
+      "enunciado": "Em uma observação experimental, registrou-se o seguinte caso: uma força empurra um bloco e ele se desloca na direção da aplicação A leitura física mais adequada aponta para:",
       "opcoes": [
-        "o caso mostra que trabalho est� ligado � a��o da for�a combinada com o deslocamento do corpo",
-        "Conceito de trabalho mostra que as grandezas envolvidas n�o precisam ser relacionadas para interpretar o caso.",
-        "Conceito de trabalho prova que a situa��o dispensa qualquer leitura f�sica ou quantitativa.",
-        "Conceito de trabalho significa que o fen�meno n�o pode ser descrito por vari�veis f�sicas."
+        "o caso mostra que trabalho está ligado à ação da força combinada com o deslocamento do corpo",
+        "Conceito de trabalho mostra que as grandezas envolvidas não precisam ser relacionadas para interpretar o caso.",
+        "Conceito de trabalho prova que a situação dispensa qualquer leitura física ou quantitativa.",
+        "Conceito de trabalho significa que o fenômeno não pode ser descrito por variáveis físicas."
       ],
-      "correta": "o caso mostra que trabalho est� ligado � a��o da for�a combinada com o deslocamento do corpo",
+      "correta": "o caso mostra que trabalho está ligado à ação da força combinada com o deslocamento do corpo",
       "comentario": "Conceito de trabalho permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
       "tempoEstimado": 25,
       "tags": [
@@ -322,22 +322,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
       "subtopico": "Conceito de trabalho",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situa��o abaixo evidencia conceito de trabalho de maneira mais clara?",
+      "enunciado": "Qual situação abaixo evidencia conceito de trabalho de maneira mais clara?",
       "opcoes": [
-        "analisar o empurr�o de um carrinho que realmente se move ao longo de uma superf�cie",
-        "calcular o trabalho de uma for�a horizontal que arrasta um bloco por alguns metros",
+        "analisar o empurrão de um carrinho que realmente se move ao longo de uma superfície",
+        "calcular o trabalho de uma força horizontal que arrasta um bloco por alguns metros",
         "comparar dois elevadores que realizam o mesmo trabalho em tempos diferentes",
-        "comparar a energia cin�tica de bicicletas em velocidades diferentes"
+        "comparar a energia cinética de bicicletas em velocidades diferentes"
       ],
-      "correta": "analisar o empurr�o de um carrinho que realmente se move ao longo de uma superf�cie",
-      "comentario": "A alternativa correta aproxima conceito de trabalho de uma situa��o concreta.",
+      "correta": "analisar o empurrão de um carrinho que realmente se move ao longo de uma superfície",
+      "comentario": "A alternativa correta aproxima conceito de trabalho de uma situação concreta.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -361,22 +361,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
       "subtopico": "Conceito de trabalho",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"uma for�a empurra um bloco e ele se desloca na dire��o da aplica��o\", qual conclus�o � mais adequada?",
+      "enunciado": "Ao analisar o caso \"uma força empurra um bloco e ele se desloca na direção da aplicação\", qual conclusão é mais adequada?",
       "opcoes": [
-        "o caso mostra que trabalho est� ligado � a��o da for�a combinada com o deslocamento do corpo",
-        "A situa��o indica que conceito de trabalho n�o possui rela��o com medidas, vari�veis ou interpreta��o f�sica.",
-        "A situa��o prova que conceito de trabalho s� existe em exemplos te�ricos sem uso cotidiano.",
-        "A situa��o mostra que conceito de trabalho torna desnecess�rio comparar dados e modelos."
+        "o caso mostra que trabalho está ligado à ação da força combinada com o deslocamento do corpo",
+        "A situação indica que conceito de trabalho não possui relação com medidas, variáveis ou interpretação física.",
+        "A situação prova que conceito de trabalho só existe em exemplos teóricos sem uso cotidiano.",
+        "A situação mostra que conceito de trabalho torna desnecessário comparar dados e modelos."
       ],
-      "correta": "o caso mostra que trabalho est� ligado � a��o da for�a combinada com o deslocamento do corpo",
-      "comentario": "A conclus�o correta mant�m coer�ncia com os dados apresentados e com conceito de trabalho.",
+      "correta": "o caso mostra que trabalho está ligado à ação da força combinada com o deslocamento do corpo",
+      "comentario": "A conclusão correta mantém coerência com os dados apresentados e com conceito de trabalho.",
       "tempoEstimado": 35,
       "tags": [
         "trabalho-e-energia",
@@ -400,7 +400,7 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
       "subtopico": "Conceito de trabalho",
       "dificuldadeLabel": "medio",
@@ -409,12 +409,12 @@
       "tipo": "multipla_escolha",
       "enunciado": "Qual pergunta de pesquisa se relaciona melhor com conceito de trabalho?",
       "opcoes": [
-        "como a aplica��o de uma for�a ao longo de um deslocamento produz trabalho mec�nico?",
-        "como calcular o trabalho realizado por uma for�a constante em um deslocamento?",
-        "por que duas situa��es com o mesmo trabalho podem apresentar pot�ncias diferentes?",
-        "como a velocidade de um corpo influencia sua energia cin�tica?"
+        "como a aplicação de uma força ao longo de um deslocamento produz trabalho mecânico?",
+        "como calcular o trabalho realizado por uma força constante em um deslocamento?",
+        "por que duas situações com o mesmo trabalho podem apresentar potências diferentes?",
+        "como a velocidade de um corpo influencia sua energia cinética?"
       ],
-      "correta": "como a aplica��o de uma for�a ao longo de um deslocamento produz trabalho mec�nico?",
+      "correta": "como a aplicação de uma força ao longo de um deslocamento produz trabalho mecânico?",
       "comentario": "A pergunta correta investiga conceito de trabalho de forma direta e coerente.",
       "tempoEstimado": 35,
       "tags": [
@@ -439,22 +439,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
       "subtopico": "Conceito de trabalho",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a afirma��o que revela compreens�o inadequada de conceito de trabalho.",
+      "enunciado": "Assinale a afirmação que revela compreensão inadequada de conceito de trabalho.",
       "opcoes": [
-        "A grandeza associada � transfer�ncia de energia produzida por uma for�a ao longo de um deslocamento.",
-        "A rela��o entre for�a aplicada, deslocamento e transfer�ncia de energia mec�nica.",
-        "Trabalho mec�nico representa a transfer�ncia de energia por uma for�a ao longo de um deslocamento.",
-        "Sempre que uma for�a existe, trabalho mec�nico necessariamente ocorre, mesmo sem deslocamento."
+        "A grandeza associada à transferência de energia produzida por uma força ao longo de um deslocamento.",
+        "A relação entre força aplicada, deslocamento e transferência de energia mecânica.",
+        "Trabalho mecânico representa a transferência de energia por uma força ao longo de um deslocamento.",
+        "Sempre que uma força existe, trabalho mecânico necessariamente ocorre, mesmo sem deslocamento."
       ],
-      "correta": "Sempre que uma for�a existe, trabalho mec�nico necessariamente ocorre, mesmo sem deslocamento.",
-      "comentario": "A alternativa incorreta expressa um equ�voco comum sobre conceito de trabalho.",
+      "correta": "Sempre que uma força existe, trabalho mecânico necessariamente ocorre, mesmo sem deslocamento.",
+      "comentario": "A alternativa incorreta expressa um equívoco comum sobre conceito de trabalho.",
       "tempoEstimado": 45,
       "tags": [
         "trabalho-e-energia",
@@ -478,22 +478,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
       "subtopico": "Conceito de trabalho",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre F�sica, um estudante afirmou: \"trabalho mec�nico envolve for�a e deslocamento com rela��o f�sica entre eles\". Qual avalia��o � mais consistente?",
+      "enunciado": "Em um debate sobre Física, um estudante afirmou: \"trabalho mecânico envolve força e deslocamento com relação física entre eles\". Qual avaliação é mais consistente?",
       "opcoes": [
-        "A afirma��o est� correta, porque sem deslocamento ou sem componente da for�a na dire��o relevante, n�o h� trabalho mec�nico associado",
-        "A afirma��o est� incorreta, porque conceito de trabalho nunca pode ser usada na F�sica escolar.",
-        "A afirma��o � irrelevante, porque conceito de trabalho n�o se relaciona com interpreta��o de fen�menos.",
-        "A afirma��o est� incorreta, porque conceito de trabalho elimina a necessidade de medir e comparar grandezas."
+        "A afirmação está correta, porque sem deslocamento ou sem componente da força na direção relevante, não há trabalho mecânico associado",
+        "A afirmação está incorreta, porque conceito de trabalho nunca pode ser usada na Física escolar.",
+        "A afirmação é irrelevante, porque conceito de trabalho não se relaciona com interpretação de fenômenos.",
+        "A afirmação está incorreta, porque conceito de trabalho elimina a necessidade de medir e comparar grandezas."
       ],
-      "correta": "A afirma��o est� correta, porque sem deslocamento ou sem componente da for�a na dire��o relevante, n�o h� trabalho mec�nico associado",
-      "comentario": "A avalia��o correta recupera o n�cleo conceitual de conceito de trabalho.",
+      "correta": "A afirmação está correta, porque sem deslocamento ou sem componente da força na direção relevante, não há trabalho mecânico associado",
+      "comentario": "A avaliação correta recupera o núcleo conceitual de conceito de trabalho.",
       "tempoEstimado": 45,
       "tags": [
         "trabalho-e-energia",
@@ -517,22 +517,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
       "subtopico": "Conceito de trabalho",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se conceito de trabalho fosse ignorado(a) na an�lise de um problema f�sico, o resultado mais prov�vel seria:",
+      "enunciado": "Se conceito de trabalho fosse ignorado(a) na análise de um problema físico, o resultado mais provável seria:",
       "opcoes": [
-        "transfer�ncias de energia seriam interpretadas de modo vago, sem crit�rio para ligar for�a e deslocamento",
-        "o problema continuaria exatamente igual, porque conceito de trabalho n�o interfere na an�lise f�sica",
-        "seria poss�vel resolver a situa��o sem observar nenhuma grandeza, rela��o ou modelo",
-        "a interpreta��o ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
+        "transferências de energia seriam interpretadas de modo vago, sem critério para ligar força e deslocamento",
+        "o problema continuaria exatamente igual, porque conceito de trabalho não interfere na análise física",
+        "seria possível resolver a situação sem observar nenhuma grandeza, relação ou modelo",
+        "a interpretação ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
       ],
-      "correta": "transfer�ncias de energia seriam interpretadas de modo vago, sem crit�rio para ligar for�a e deslocamento",
-      "comentario": "Ignorar conceito de trabalho compromete a leitura f�sica e a qualidade da solu��o.",
+      "correta": "transferências de energia seriam interpretadas de modo vago, sem critério para ligar força e deslocamento",
+      "comentario": "Ignorar conceito de trabalho compromete a leitura física e a qualidade da solução.",
       "tempoEstimado": 55,
       "tags": [
         "trabalho-e-energia",
@@ -556,22 +556,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
       "subtopico": "Conceito de trabalho",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente conceito de trabalho a uma situa��o escolar ou cotidiana?",
+      "enunciado": "Qual alternativa aplica corretamente conceito de trabalho a uma situação escolar ou cotidiana?",
       "opcoes": [
-        "analisar o empurr�o de um carrinho que realmente se move ao longo de uma superf�cie",
-        "explicar o funcionamento energ�tico de uma bicicleta, um elevador ou uma catapulta simples",
-        "analisar o rendimento de um elevador, motor ou aparelho mec�nico simples",
+        "analisar o empurrão de um carrinho que realmente se move ao longo de uma superfície",
+        "explicar o funcionamento energético de uma bicicleta, um elevador ou uma catapulta simples",
+        "analisar o rendimento de um elevador, motor ou aparelho mecânico simples",
         "comparar a energia no alto e na base de uma pista sem atrito"
       ],
-      "correta": "analisar o empurr�o de um carrinho que realmente se move ao longo de uma superf�cie",
-      "comentario": "A aplica��o correta mostra como conceito de trabalho aparece em contextos pr�ximos do cotidiano.",
+      "correta": "analisar o empurrão de um carrinho que realmente se move ao longo de uma superfície",
+      "comentario": "A aplicação correta mostra como conceito de trabalho aparece em contextos próximos do cotidiano.",
       "tempoEstimado": 55,
       "tags": [
         "trabalho-e-energia",
@@ -595,22 +595,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
       "subtopico": "Conceito de trabalho",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual s�ntese final representa melhor conceito de trabalho?",
+      "enunciado": "Qual síntese final representa melhor conceito de trabalho?",
       "opcoes": [
-        "trabalho mec�nico representa a transfer�ncia de energia por uma for�a ao longo de um deslocamento",
-        "o trabalho de for�a constante relaciona for�a, deslocamento e orienta��o relativa em uma express�o simples",
-        "pot�ncia mec�nica mede a rapidez com que o trabalho � realizado",
-        "energia cin�tica � a energia associada ao movimento de um corpo"
+        "trabalho mecânico representa a transferência de energia por uma força ao longo de um deslocamento",
+        "o trabalho de força constante relaciona força, deslocamento e orientação relativa em uma expressão simples",
+        "potência mecânica mede a rapidez com que o trabalho é realizado",
+        "energia cinética é a energia associada ao movimento de um corpo"
       ],
-      "correta": "trabalho mec�nico representa a transfer�ncia de energia por uma for�a ao longo de um deslocamento",
-      "comentario": "A s�ntese correta preserva a defini��o, o foco e o uso anal�tico de conceito de trabalho.",
+      "correta": "trabalho mecânico representa a transferência de energia por uma força ao longo de um deslocamento",
+      "comentario": "A síntese correta preserva a definição, o foco e o uso analítico de conceito de trabalho.",
       "tempoEstimado": 55,
       "tags": [
         "trabalho-e-energia",
@@ -634,22 +634,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Trabalho de for�a constante",
+      "subtopico": "Trabalho de força constante",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em F�sica, Trabalho de for�a constante pode ser definido(a) como:",
+      "enunciado": "Em Física, Trabalho de força constante pode ser definido(a) como:",
       "opcoes": [
-        "o c�lculo do trabalho quando a for�a mant�m m�dulo e dire��o constantes durante o deslocamento considerado",
-        "a grandeza associada � transfer�ncia de energia produzida por uma for�a ao longo de um deslocamento",
-        "a grandeza que mede a rapidez com que o trabalho � realizado ou a energia � transferida",
+        "o cálculo do trabalho quando a força mantém módulo e direção constantes durante o deslocamento considerado",
+        "a grandeza associada à transferência de energia produzida por uma força ao longo de um deslocamento",
+        "a grandeza que mede a rapidez com que o trabalho é realizado ou a energia é transferida",
         "a energia associada ao movimento de um corpo"
       ],
-      "correta": "o c�lculo do trabalho quando a for�a mant�m m�dulo e dire��o constantes durante o deslocamento considerado",
-      "comentario": "Trabalho de for�a constante refere-se ao c�lculo do trabalho quando a for�a mant�m m�dulo e dire��o constantes durante o deslocamento considerado.",
+      "correta": "o cálculo do trabalho quando a força mantém módulo e direção constantes durante o deslocamento considerado",
+      "comentario": "Trabalho de força constante refere-se ao cálculo do trabalho quando a força mantém módulo e direção constantes durante o deslocamento considerado.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -673,22 +673,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Trabalho de for�a constante",
+      "subtopico": "Trabalho de força constante",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situa��o: um bloco � puxado por uma for�a horizontal constante ao longo de uma pista reta Esse caso exemplifica melhor qual subt�pico?",
+      "enunciado": "Observe a situação: um bloco é puxado por uma força horizontal constante ao longo de uma pista reta Esse caso exemplifica melhor qual subtópico?",
       "opcoes": [
-        "Trabalho de for�a constante",
+        "Trabalho de força constante",
         "Conceito de trabalho",
-        "Pot�ncia mec�nica",
-        "Energia cin�tica"
+        "Potência mecânica",
+        "Energia cinética"
       ],
-      "correta": "Trabalho de for�a constante",
-      "comentario": "A situa��o apresentada � um exemplo de trabalho de for�a constante.",
+      "correta": "Trabalho de força constante",
+      "comentario": "A situação apresentada é um exemplo de trabalho de força constante.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -712,22 +712,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Trabalho de for�a constante",
+      "subtopico": "Trabalho de força constante",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirma��o descreve corretamente trabalho de for�a constante?",
+      "enunciado": "Qual afirmação descreve corretamente trabalho de força constante?",
       "opcoes": [
-        "O c�lculo do trabalho quando a for�a mant�m m�dulo e dire��o constantes durante o deslocamento considerado.",
-        "A grandeza associada � transfer�ncia de energia produzida por uma for�a ao longo de um deslocamento.",
-        "A grandeza que mede a rapidez com que o trabalho � realizado ou a energia � transferida.",
+        "O cálculo do trabalho quando a força mantém módulo e direção constantes durante o deslocamento considerado.",
+        "A grandeza associada à transferência de energia produzida por uma força ao longo de um deslocamento.",
+        "A grandeza que mede a rapidez com que o trabalho é realizado ou a energia é transferida.",
         "A energia associada ao movimento de um corpo."
       ],
-      "correta": "O c�lculo do trabalho quando a for�a mant�m m�dulo e dire��o constantes durante o deslocamento considerado.",
-      "comentario": "A afirma��o correta retoma o sentido central de trabalho de for�a constante.",
+      "correta": "O cálculo do trabalho quando a força mantém módulo e direção constantes durante o deslocamento considerado.",
+      "comentario": "A afirmação correta retoma o sentido central de trabalho de força constante.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -751,22 +751,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Trabalho de for�a constante",
+      "subtopico": "Trabalho de força constante",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa incompat�vel com trabalho de for�a constante.",
+      "enunciado": "Assinale a alternativa incompatível com trabalho de força constante.",
       "opcoes": [
-        "somar for�a e deslocamento numericamente como se isso determinasse o trabalho.",
-        "a determina��o do trabalho em situa��es simples com for�a constante.",
-        "o trabalho de for�a constante relaciona for�a, deslocamento e orienta��o relativa em uma express�o simples.",
-        "o c�lculo do trabalho quando a for�a mant�m m�dulo e dire��o constantes durante o deslocamento considerado."
+        "somar força e deslocamento numericamente como se isso determinasse o trabalho.",
+        "a determinação do trabalho em situações simples com força constante.",
+        "o trabalho de força constante relaciona força, deslocamento e orientação relativa em uma expressão simples.",
+        "o cálculo do trabalho quando a força mantém módulo e direção constantes durante o deslocamento considerado."
       ],
-      "correta": "somar for�a e deslocamento numericamente como se isso determinasse o trabalho.",
-      "comentario": "Somar for�a e deslocamento numericamente como se isso determinasse o trabalho n�o representa trabalho de for�a constante, enquanto as demais alternativas se relacionam com esse subt�pico.",
+      "correta": "somar força e deslocamento numericamente como se isso determinasse o trabalho.",
+      "comentario": "Somar força e deslocamento numericamente como se isso determinasse o trabalho não representa trabalho de força constante, enquanto as demais alternativas se relacionam com esse subtópico.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -790,22 +790,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Trabalho de for�a constante",
+      "subtopico": "Trabalho de força constante",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando se estuda trabalho de for�a constante, o foco principal est� em:",
+      "enunciado": "Quando se estuda trabalho de força constante, o foco principal está em:",
       "opcoes": [
-        "a determina��o do trabalho em situa��es simples com for�a constante",
-        "a rela��o entre for�a aplicada, deslocamento e transfer�ncia de energia mec�nica",
-        "a compara��o entre a quantidade de trabalho realizado e o tempo gasto para realiz�-lo",
-        "a rela��o entre movimento e capacidade de realizar trabalho ou produzir efeitos din�micos"
+        "a determinação do trabalho em situações simples com força constante",
+        "a relação entre força aplicada, deslocamento e transferência de energia mecânica",
+        "a comparação entre a quantidade de trabalho realizado e o tempo gasto para realizá-lo",
+        "a relação entre movimento e capacidade de realizar trabalho ou produzir efeitos dinâmicos"
       ],
-      "correta": "a determina��o do trabalho em situa��es simples com for�a constante",
-      "comentario": "Trabalho de for�a constante volta a aten��o para a determina��o do trabalho em situa��es simples com for�a constante.",
+      "correta": "a determinação do trabalho em situações simples com força constante",
+      "comentario": "Trabalho de força constante volta a atenção para a determinação do trabalho em situações simples com força constante.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -829,22 +829,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Trabalho de for�a constante",
+      "subtopico": "Trabalho de força constante",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferen�a entre trabalho de for�a constante e conceito de trabalho � que:",
+      "enunciado": "A principal diferença entre trabalho de força constante e conceito de trabalho é que:",
       "opcoes": [
-        "trabalho de for�a constante aplica quantitativamente a ideia geral de trabalho a situa��es em que a for�a n�o varia, enquanto conceito de trabalho apresenta o significado f�sico da grandeza",
-        "Trabalho de for�a constante e Conceito de trabalho s�o exatamente a mesma ideia f�sica em qualquer situa��o.",
-        "Conceito de trabalho elimina a necessidade de observar trabalho de for�a constante.",
-        "Trabalho de for�a constante depende apenas de opini�o pessoal, sem rela��o com grandezas, modelos ou medidas."
+        "trabalho de força constante aplica quantitativamente a ideia geral de trabalho a situações em que a força não varia, enquanto conceito de trabalho apresenta o significado físico da grandeza",
+        "Trabalho de força constante e Conceito de trabalho são exatamente a mesma ideia física em qualquer situação.",
+        "Conceito de trabalho elimina a necessidade de observar trabalho de força constante.",
+        "Trabalho de força constante depende apenas de opinião pessoal, sem relação com grandezas, modelos ou medidas."
       ],
-      "correta": "trabalho de for�a constante aplica quantitativamente a ideia geral de trabalho a situa��es em que a for�a n�o varia, enquanto conceito de trabalho apresenta o significado f�sico da grandeza",
-      "comentario": "A compara��o correta distingue os dois subt�picos sem confundir seus objetos de estudo.",
+      "correta": "trabalho de força constante aplica quantitativamente a ideia geral de trabalho a situações em que a força não varia, enquanto conceito de trabalho apresenta o significado físico da grandeza",
+      "comentario": "A comparação correta distingue os dois subtópicos sem confundir seus objetos de estudo.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -868,22 +868,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Trabalho de for�a constante",
+      "subtopico": "Trabalho de força constante",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma observa��o experimental, registrou-se o seguinte caso: um bloco � puxado por uma for�a horizontal constante ao longo de uma pista reta A leitura f�sica mais adequada aponta para:",
+      "enunciado": "Em uma observação experimental, registrou-se o seguinte caso: um bloco é puxado por uma força horizontal constante ao longo de uma pista reta A leitura física mais adequada aponta para:",
       "opcoes": [
-        "o caso mostra que o trabalho depende do deslocamento e da componente relevante da for�a constante",
-        "Trabalho de for�a constante mostra que as grandezas envolvidas n�o precisam ser relacionadas para interpretar o caso.",
-        "Trabalho de for�a constante prova que a situa��o dispensa qualquer leitura f�sica ou quantitativa.",
-        "Trabalho de for�a constante significa que o fen�meno n�o pode ser descrito por vari�veis f�sicas."
+        "o caso mostra que o trabalho depende do deslocamento e da componente relevante da força constante",
+        "Trabalho de força constante mostra que as grandezas envolvidas não precisam ser relacionadas para interpretar o caso.",
+        "Trabalho de força constante prova que a situação dispensa qualquer leitura física ou quantitativa.",
+        "Trabalho de força constante significa que o fenômeno não pode ser descrito por variáveis físicas."
       ],
-      "correta": "o caso mostra que o trabalho depende do deslocamento e da componente relevante da for�a constante",
-      "comentario": "Trabalho de for�a constante permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
+      "correta": "o caso mostra que o trabalho depende do deslocamento e da componente relevante da força constante",
+      "comentario": "Trabalho de força constante permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -907,22 +907,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Trabalho de for�a constante",
+      "subtopico": "Trabalho de força constante",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situa��o abaixo evidencia trabalho de for�a constante de maneira mais clara?",
+      "enunciado": "Qual situação abaixo evidencia trabalho de força constante de maneira mais clara?",
       "opcoes": [
-        "calcular o trabalho de uma for�a horizontal que arrasta um bloco por alguns metros",
-        "analisar o empurr�o de um carrinho que realmente se move ao longo de uma superf�cie",
+        "calcular o trabalho de uma força horizontal que arrasta um bloco por alguns metros",
+        "analisar o empurrão de um carrinho que realmente se move ao longo de uma superfície",
         "comparar dois elevadores que realizam o mesmo trabalho em tempos diferentes",
-        "comparar a energia cin�tica de bicicletas em velocidades diferentes"
+        "comparar a energia cinética de bicicletas em velocidades diferentes"
       ],
-      "correta": "calcular o trabalho de uma for�a horizontal que arrasta um bloco por alguns metros",
-      "comentario": "A alternativa correta aproxima trabalho de for�a constante de uma situa��o concreta.",
+      "correta": "calcular o trabalho de uma força horizontal que arrasta um bloco por alguns metros",
+      "comentario": "A alternativa correta aproxima trabalho de força constante de uma situação concreta.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -946,22 +946,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Trabalho de for�a constante",
+      "subtopico": "Trabalho de força constante",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"um bloco � puxado por uma for�a horizontal constante ao longo de uma pista reta\", qual conclus�o � mais adequada?",
+      "enunciado": "Ao analisar o caso \"um bloco é puxado por uma força horizontal constante ao longo de uma pista reta\", qual conclusão é mais adequada?",
       "opcoes": [
-        "o caso mostra que o trabalho depende do deslocamento e da componente relevante da for�a constante",
-        "A situa��o indica que trabalho de for�a constante n�o possui rela��o com medidas, vari�veis ou interpreta��o f�sica.",
-        "A situa��o prova que trabalho de for�a constante s� existe em exemplos te�ricos sem uso cotidiano.",
-        "A situa��o mostra que trabalho de for�a constante torna desnecess�rio comparar dados e modelos."
+        "o caso mostra que o trabalho depende do deslocamento e da componente relevante da força constante",
+        "A situação indica que trabalho de força constante não possui relação com medidas, variáveis ou interpretação física.",
+        "A situação prova que trabalho de força constante só existe em exemplos teóricos sem uso cotidiano.",
+        "A situação mostra que trabalho de força constante torna desnecessário comparar dados e modelos."
       ],
-      "correta": "o caso mostra que o trabalho depende do deslocamento e da componente relevante da for�a constante",
-      "comentario": "A conclus�o correta mant�m coer�ncia com os dados apresentados e com trabalho de for�a constante.",
+      "correta": "o caso mostra que o trabalho depende do deslocamento e da componente relevante da força constante",
+      "comentario": "A conclusão correta mantém coerência com os dados apresentados e com trabalho de força constante.",
       "tempoEstimado": 35,
       "tags": [
         "trabalho-e-energia",
@@ -985,22 +985,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Trabalho de for�a constante",
+      "subtopico": "Trabalho de força constante",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com trabalho de for�a constante?",
+      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com trabalho de força constante?",
       "opcoes": [
-        "como calcular o trabalho realizado por uma for�a constante em um deslocamento?",
-        "como a aplica��o de uma for�a ao longo de um deslocamento produz trabalho mec�nico?",
-        "por que duas situa��es com o mesmo trabalho podem apresentar pot�ncias diferentes?",
-        "como a velocidade de um corpo influencia sua energia cin�tica?"
+        "como calcular o trabalho realizado por uma força constante em um deslocamento?",
+        "como a aplicação de uma força ao longo de um deslocamento produz trabalho mecânico?",
+        "por que duas situações com o mesmo trabalho podem apresentar potências diferentes?",
+        "como a velocidade de um corpo influencia sua energia cinética?"
       ],
-      "correta": "como calcular o trabalho realizado por uma for�a constante em um deslocamento?",
-      "comentario": "A pergunta correta investiga trabalho de for�a constante de forma direta e coerente.",
+      "correta": "como calcular o trabalho realizado por uma força constante em um deslocamento?",
+      "comentario": "A pergunta correta investiga trabalho de força constante de forma direta e coerente.",
       "tempoEstimado": 35,
       "tags": [
         "trabalho-e-energia",
@@ -1024,22 +1024,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Trabalho de for�a constante",
+      "subtopico": "Trabalho de força constante",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a afirma��o que revela compreens�o inadequada de trabalho de for�a constante.",
+      "enunciado": "Assinale a afirmação que revela compreensão inadequada de trabalho de força constante.",
       "opcoes": [
-        "O c�lculo do trabalho quando a for�a mant�m m�dulo e dire��o constantes durante o deslocamento considerado.",
-        "A determina��o do trabalho em situa��es simples com for�a constante.",
-        "O trabalho de for�a constante relaciona for�a, deslocamento e orienta��o relativa em uma express�o simples.",
-        "O trabalho de for�a constante independe da dire��o da for�a em rela��o ao deslocamento."
+        "O cálculo do trabalho quando a força mantém módulo e direção constantes durante o deslocamento considerado.",
+        "A determinação do trabalho em situações simples com força constante.",
+        "O trabalho de força constante relaciona força, deslocamento e orientação relativa em uma expressão simples.",
+        "O trabalho de força constante independe da direção da força em relação ao deslocamento."
       ],
-      "correta": "O trabalho de for�a constante independe da dire��o da for�a em rela��o ao deslocamento.",
-      "comentario": "A alternativa incorreta expressa um equ�voco comum sobre trabalho de for�a constante.",
+      "correta": "O trabalho de força constante independe da direção da força em relação ao deslocamento.",
+      "comentario": "A alternativa incorreta expressa um equívoco comum sobre trabalho de força constante.",
       "tempoEstimado": 45,
       "tags": [
         "trabalho-e-energia",
@@ -1063,22 +1063,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Trabalho de for�a constante",
+      "subtopico": "Trabalho de força constante",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre F�sica, um estudante afirmou: \"quando a for�a � constante, o trabalho pode ser determinado pela rela��o entre intensidade da for�a, deslocamento e orienta��o relativa\". Qual avalia��o � mais consistente?",
+      "enunciado": "Em um debate sobre Física, um estudante afirmou: \"quando a força é constante, o trabalho pode ser determinado pela relação entre intensidade da força, deslocamento e orientação relativa\". Qual avaliação é mais consistente?",
       "opcoes": [
-        "A afirma��o est� correta, porque o efeito energ�tico da for�a depende da parte dela que atua na dire��o do deslocamento",
-        "A afirma��o est� incorreta, porque trabalho de for�a constante nunca pode ser usada na F�sica escolar.",
-        "A afirma��o � irrelevante, porque trabalho de for�a constante n�o se relaciona com interpreta��o de fen�menos.",
-        "A afirma��o est� incorreta, porque trabalho de for�a constante elimina a necessidade de medir e comparar grandezas."
+        "A afirmação está correta, porque o efeito energético da força depende da parte dela que atua na direção do deslocamento",
+        "A afirmação está incorreta, porque trabalho de força constante nunca pode ser usada na Física escolar.",
+        "A afirmação é irrelevante, porque trabalho de força constante não se relaciona com interpretação de fenômenos.",
+        "A afirmação está incorreta, porque trabalho de força constante elimina a necessidade de medir e comparar grandezas."
       ],
-      "correta": "A afirma��o est� correta, porque o efeito energ�tico da for�a depende da parte dela que atua na dire��o do deslocamento",
-      "comentario": "A avalia��o correta recupera o n�cleo conceitual de trabalho de for�a constante.",
+      "correta": "A afirmação está correta, porque o efeito energético da força depende da parte dela que atua na direção do deslocamento",
+      "comentario": "A avaliação correta recupera o núcleo conceitual de trabalho de força constante.",
       "tempoEstimado": 45,
       "tags": [
         "trabalho-e-energia",
@@ -1102,22 +1102,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Trabalho de for�a constante",
+      "subtopico": "Trabalho de força constante",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se trabalho de for�a constante fosse ignorado(a) na an�lise de um problema f�sico, o resultado mais prov�vel seria:",
+      "enunciado": "Se trabalho de força constante fosse ignorado(a) na análise de um problema físico, o resultado mais provável seria:",
       "opcoes": [
-        "situa��es de empurr�o, pux�o ou deslocamento simples seriam calculadas sem crit�rio quantitativo confi�vel",
-        "o problema continuaria exatamente igual, porque trabalho de for�a constante n�o interfere na an�lise f�sica",
-        "seria poss�vel resolver a situa��o sem observar nenhuma grandeza, rela��o ou modelo",
-        "a interpreta��o ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
+        "situações de empurrão, puxão ou deslocamento simples seriam calculadas sem critério quantitativo confiável",
+        "o problema continuaria exatamente igual, porque trabalho de força constante não interfere na análise física",
+        "seria possível resolver a situação sem observar nenhuma grandeza, relação ou modelo",
+        "a interpretação ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
       ],
-      "correta": "situa��es de empurr�o, pux�o ou deslocamento simples seriam calculadas sem crit�rio quantitativo confi�vel",
-      "comentario": "Ignorar trabalho de for�a constante compromete a leitura f�sica e a qualidade da solu��o.",
+      "correta": "situações de empurrão, puxão ou deslocamento simples seriam calculadas sem critério quantitativo confiável",
+      "comentario": "Ignorar trabalho de força constante compromete a leitura física e a qualidade da solução.",
       "tempoEstimado": 55,
       "tags": [
         "trabalho-e-energia",
@@ -1141,22 +1141,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Trabalho de for�a constante",
+      "subtopico": "Trabalho de força constante",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente trabalho de for�a constante a uma situa��o escolar ou cotidiana?",
+      "enunciado": "Qual alternativa aplica corretamente trabalho de força constante a uma situação escolar ou cotidiana?",
       "opcoes": [
-        "calcular o trabalho de uma for�a horizontal que arrasta um bloco por alguns metros",
-        "explicar o funcionamento energ�tico de uma bicicleta, um elevador ou uma catapulta simples",
-        "analisar o rendimento de um elevador, motor ou aparelho mec�nico simples",
+        "calcular o trabalho de uma força horizontal que arrasta um bloco por alguns metros",
+        "explicar o funcionamento energético de uma bicicleta, um elevador ou uma catapulta simples",
+        "analisar o rendimento de um elevador, motor ou aparelho mecânico simples",
         "comparar a energia no alto e na base de uma pista sem atrito"
       ],
-      "correta": "calcular o trabalho de uma for�a horizontal que arrasta um bloco por alguns metros",
-      "comentario": "A aplica��o correta mostra como trabalho de for�a constante aparece em contextos pr�ximos do cotidiano.",
+      "correta": "calcular o trabalho de uma força horizontal que arrasta um bloco por alguns metros",
+      "comentario": "A aplicação correta mostra como trabalho de força constante aparece em contextos próximos do cotidiano.",
       "tempoEstimado": 55,
       "tags": [
         "trabalho-e-energia",
@@ -1180,22 +1180,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Trabalho de for�a constante",
+      "subtopico": "Trabalho de força constante",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual s�ntese final representa melhor trabalho de for�a constante?",
+      "enunciado": "Qual síntese final representa melhor trabalho de força constante?",
       "opcoes": [
-        "o trabalho de for�a constante relaciona for�a, deslocamento e orienta��o relativa em uma express�o simples",
-        "trabalho mec�nico representa a transfer�ncia de energia por uma for�a ao longo de um deslocamento",
-        "pot�ncia mec�nica mede a rapidez com que o trabalho � realizado",
-        "energia cin�tica � a energia associada ao movimento de um corpo"
+        "o trabalho de força constante relaciona força, deslocamento e orientação relativa em uma expressão simples",
+        "trabalho mecânico representa a transferência de energia por uma força ao longo de um deslocamento",
+        "potência mecânica mede a rapidez com que o trabalho é realizado",
+        "energia cinética é a energia associada ao movimento de um corpo"
       ],
-      "correta": "o trabalho de for�a constante relaciona for�a, deslocamento e orienta��o relativa em uma express�o simples",
-      "comentario": "A s�ntese correta preserva a defini��o, o foco e o uso anal�tico de trabalho de for�a constante.",
+      "correta": "o trabalho de força constante relaciona força, deslocamento e orientação relativa em uma expressão simples",
+      "comentario": "A síntese correta preserva a definição, o foco e o uso analítico de trabalho de força constante.",
       "tempoEstimado": 55,
       "tags": [
         "trabalho-e-energia",
@@ -1219,22 +1219,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Pot�ncia mec�nica",
+      "subtopico": "Potência mecânica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em F�sica, Pot�ncia mec�nica pode ser definido(a) como:",
+      "enunciado": "Em Física, Potência mecânica pode ser definido(a) como:",
       "opcoes": [
-        "a grandeza que mede a rapidez com que o trabalho � realizado ou a energia � transferida",
-        "a grandeza associada � transfer�ncia de energia produzida por uma for�a ao longo de um deslocamento",
-        "o c�lculo do trabalho quando a for�a mant�m m�dulo e dire��o constantes durante o deslocamento considerado",
+        "a grandeza que mede a rapidez com que o trabalho é realizado ou a energia é transferida",
+        "a grandeza associada à transferência de energia produzida por uma força ao longo de um deslocamento",
+        "o cálculo do trabalho quando a força mantém módulo e direção constantes durante o deslocamento considerado",
         "a energia associada ao movimento de um corpo"
       ],
-      "correta": "a grandeza que mede a rapidez com que o trabalho � realizado ou a energia � transferida",
-      "comentario": "Pot�ncia mec�nica refere-se � grandeza que mede a rapidez com que o trabalho � realizado ou a energia � transferida.",
+      "correta": "a grandeza que mede a rapidez com que o trabalho é realizado ou a energia é transferida",
+      "comentario": "Potência mecânica refere-se à grandeza que mede a rapidez com que o trabalho é realizado ou a energia é transferida.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -1258,22 +1258,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Pot�ncia mec�nica",
+      "subtopico": "Potência mecânica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situa��o: duas pessoas sobem a mesma escada com a mesma carga, mas uma faz isso em menos tempo Esse caso exemplifica melhor qual subt�pico?",
+      "enunciado": "Observe a situação: duas pessoas sobem a mesma escada com a mesma carga, mas uma faz isso em menos tempo Esse caso exemplifica melhor qual subtópico?",
       "opcoes": [
-        "Pot�ncia mec�nica",
+        "Potência mecânica",
         "Conceito de trabalho",
-        "Trabalho de for�a constante",
-        "Energia cin�tica"
+        "Trabalho de força constante",
+        "Energia cinética"
       ],
-      "correta": "Pot�ncia mec�nica",
-      "comentario": "A situa��o apresentada � um exemplo de pot�ncia mec�nica.",
+      "correta": "Potência mecânica",
+      "comentario": "A situação apresentada é um exemplo de potência mecânica.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -1297,22 +1297,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Pot�ncia mec�nica",
+      "subtopico": "Potência mecânica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirma��o descreve corretamente pot�ncia mec�nica?",
+      "enunciado": "Qual afirmação descreve corretamente potência mecânica?",
       "opcoes": [
-        "A grandeza que mede a rapidez com que o trabalho � realizado ou a energia � transferida.",
-        "A grandeza associada � transfer�ncia de energia produzida por uma for�a ao longo de um deslocamento.",
-        "O c�lculo do trabalho quando a for�a mant�m m�dulo e dire��o constantes durante o deslocamento considerado.",
+        "A grandeza que mede a rapidez com que o trabalho é realizado ou a energia é transferida.",
+        "A grandeza associada à transferência de energia produzida por uma força ao longo de um deslocamento.",
+        "O cálculo do trabalho quando a força mantém módulo e direção constantes durante o deslocamento considerado.",
         "A energia associada ao movimento de um corpo."
       ],
-      "correta": "A grandeza que mede a rapidez com que o trabalho � realizado ou a energia � transferida.",
-      "comentario": "A afirma��o correta retoma o sentido central de pot�ncia mec�nica.",
+      "correta": "A grandeza que mede a rapidez com que o trabalho é realizado ou a energia é transferida.",
+      "comentario": "A afirmação correta retoma o sentido central de potência mecânica.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -1336,22 +1336,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Pot�ncia mec�nica",
+      "subtopico": "Potência mecânica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa incompat�vel com pot�ncia mec�nica.",
+      "enunciado": "Assinale a alternativa incompatível com potência mecânica.",
       "opcoes": [
-        "confundir pot�ncia com quantidade total de energia transferida sem considerar o tempo.",
-        "a compara��o entre a quantidade de trabalho realizado e o tempo gasto para realiz�-lo.",
-        "pot�ncia mec�nica mede a rapidez com que o trabalho � realizado.",
-        "a grandeza que mede a rapidez com que o trabalho � realizado ou a energia � transferida."
+        "confundir potência com quantidade total de energia transferida sem considerar o tempo.",
+        "a comparação entre a quantidade de trabalho realizado e o tempo gasto para realizá-lo.",
+        "potência mecânica mede a rapidez com que o trabalho é realizado.",
+        "a grandeza que mede a rapidez com que o trabalho é realizado ou a energia é transferida."
       ],
-      "correta": "confundir pot�ncia com quantidade total de energia transferida sem considerar o tempo.",
-      "comentario": "Confundir pot�ncia com quantidade total de energia transferida sem considerar o tempo n�o representa pot�ncia mec�nica, enquanto as demais alternativas se relacionam com esse subt�pico.",
+      "correta": "confundir potência com quantidade total de energia transferida sem considerar o tempo.",
+      "comentario": "Confundir potência com quantidade total de energia transferida sem considerar o tempo não representa potência mecânica, enquanto as demais alternativas se relacionam com esse subtópico.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -1375,22 +1375,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Pot�ncia mec�nica",
+      "subtopico": "Potência mecânica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando se estuda pot�ncia mec�nica, o foco principal est� em:",
+      "enunciado": "Quando se estuda potência mecânica, o foco principal está em:",
       "opcoes": [
-        "a compara��o entre a quantidade de trabalho realizado e o tempo gasto para realiz�-lo",
-        "a rela��o entre for�a aplicada, deslocamento e transfer�ncia de energia mec�nica",
-        "a determina��o do trabalho em situa��es simples com for�a constante",
-        "a rela��o entre movimento e capacidade de realizar trabalho ou produzir efeitos din�micos"
+        "a comparação entre a quantidade de trabalho realizado e o tempo gasto para realizá-lo",
+        "a relação entre força aplicada, deslocamento e transferência de energia mecânica",
+        "a determinação do trabalho em situações simples com força constante",
+        "a relação entre movimento e capacidade de realizar trabalho ou produzir efeitos dinâmicos"
       ],
-      "correta": "a compara��o entre a quantidade de trabalho realizado e o tempo gasto para realiz�-lo",
-      "comentario": "Pot�ncia mec�nica volta a aten��o para a compara��o entre a quantidade de trabalho realizado e o tempo gasto para realiz�-lo.",
+      "correta": "a comparação entre a quantidade de trabalho realizado e o tempo gasto para realizá-lo",
+      "comentario": "Potência mecânica volta a atenção para a comparação entre a quantidade de trabalho realizado e o tempo gasto para realizá-lo.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -1414,22 +1414,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Pot�ncia mec�nica",
+      "subtopico": "Potência mecânica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferen�a entre pot�ncia mec�nica e conceito de trabalho � que:",
+      "enunciado": "A principal diferença entre potência mecânica e conceito de trabalho é que:",
       "opcoes": [
-        "pot�ncia mec�nica indica a taxa temporal de realiza��o do trabalho, enquanto conceito de trabalho mede a quantidade total de energia transferida",
-        "Pot�ncia mec�nica e Conceito de trabalho s�o exatamente a mesma ideia f�sica em qualquer situa��o.",
-        "Conceito de trabalho elimina a necessidade de observar pot�ncia mec�nica.",
-        "Pot�ncia mec�nica depende apenas de opini�o pessoal, sem rela��o com grandezas, modelos ou medidas."
+        "potência mecânica indica a taxa temporal de realização do trabalho, enquanto conceito de trabalho mede a quantidade total de energia transferida",
+        "Potência mecânica e Conceito de trabalho são exatamente a mesma ideia física em qualquer situação.",
+        "Conceito de trabalho elimina a necessidade de observar potência mecânica.",
+        "Potência mecânica depende apenas de opinião pessoal, sem relação com grandezas, modelos ou medidas."
       ],
-      "correta": "pot�ncia mec�nica indica a taxa temporal de realiza��o do trabalho, enquanto conceito de trabalho mede a quantidade total de energia transferida",
-      "comentario": "A compara��o correta distingue os dois subt�picos sem confundir seus objetos de estudo.",
+      "correta": "potência mecânica indica a taxa temporal de realização do trabalho, enquanto conceito de trabalho mede a quantidade total de energia transferida",
+      "comentario": "A comparação correta distingue os dois subtópicos sem confundir seus objetos de estudo.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -1453,22 +1453,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Pot�ncia mec�nica",
+      "subtopico": "Potência mecânica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma observa��o experimental, registrou-se o seguinte caso: duas pessoas sobem a mesma escada com a mesma carga, mas uma faz isso em menos tempo A leitura f�sica mais adequada aponta para:",
+      "enunciado": "Em uma observação experimental, registrou-se o seguinte caso: duas pessoas sobem a mesma escada com a mesma carga, mas uma faz isso em menos tempo A leitura física mais adequada aponta para:",
       "opcoes": [
-        "o caso mostra que a pot�ncia depende do trabalho e do tempo, n�o apenas do trabalho isoladamente",
-        "Pot�ncia mec�nica mostra que as grandezas envolvidas n�o precisam ser relacionadas para interpretar o caso.",
-        "Pot�ncia mec�nica prova que a situa��o dispensa qualquer leitura f�sica ou quantitativa.",
-        "Pot�ncia mec�nica significa que o fen�meno n�o pode ser descrito por vari�veis f�sicas."
+        "o caso mostra que a potência depende do trabalho e do tempo, não apenas do trabalho isoladamente",
+        "Potência mecânica mostra que as grandezas envolvidas não precisam ser relacionadas para interpretar o caso.",
+        "Potência mecânica prova que a situação dispensa qualquer leitura física ou quantitativa.",
+        "Potência mecânica significa que o fenômeno não pode ser descrito por variáveis físicas."
       ],
-      "correta": "o caso mostra que a pot�ncia depende do trabalho e do tempo, n�o apenas do trabalho isoladamente",
-      "comentario": "Pot�ncia mec�nica permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
+      "correta": "o caso mostra que a potência depende do trabalho e do tempo, não apenas do trabalho isoladamente",
+      "comentario": "Potência mecânica permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -1492,22 +1492,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Pot�ncia mec�nica",
+      "subtopico": "Potência mecânica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situa��o abaixo evidencia pot�ncia mec�nica de maneira mais clara?",
+      "enunciado": "Qual situação abaixo evidencia potência mecânica de maneira mais clara?",
       "opcoes": [
         "comparar dois elevadores que realizam o mesmo trabalho em tempos diferentes",
-        "analisar o empurr�o de um carrinho que realmente se move ao longo de uma superf�cie",
-        "calcular o trabalho de uma for�a horizontal que arrasta um bloco por alguns metros",
-        "comparar a energia cin�tica de bicicletas em velocidades diferentes"
+        "analisar o empurrão de um carrinho que realmente se move ao longo de uma superfície",
+        "calcular o trabalho de uma força horizontal que arrasta um bloco por alguns metros",
+        "comparar a energia cinética de bicicletas em velocidades diferentes"
       ],
       "correta": "comparar dois elevadores que realizam o mesmo trabalho em tempos diferentes",
-      "comentario": "A alternativa correta aproxima pot�ncia mec�nica de uma situa��o concreta.",
+      "comentario": "A alternativa correta aproxima potência mecânica de uma situação concreta.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -1531,22 +1531,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Pot�ncia mec�nica",
+      "subtopico": "Potência mecânica",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"duas pessoas sobem a mesma escada com a mesma carga, mas uma faz isso em menos tempo\", qual conclus�o � mais adequada?",
+      "enunciado": "Ao analisar o caso \"duas pessoas sobem a mesma escada com a mesma carga, mas uma faz isso em menos tempo\", qual conclusão é mais adequada?",
       "opcoes": [
-        "o caso mostra que a pot�ncia depende do trabalho e do tempo, n�o apenas do trabalho isoladamente",
-        "A situa��o indica que pot�ncia mec�nica n�o possui rela��o com medidas, vari�veis ou interpreta��o f�sica.",
-        "A situa��o prova que pot�ncia mec�nica s� existe em exemplos te�ricos sem uso cotidiano.",
-        "A situa��o mostra que pot�ncia mec�nica torna desnecess�rio comparar dados e modelos."
+        "o caso mostra que a potência depende do trabalho e do tempo, não apenas do trabalho isoladamente",
+        "A situação indica que potência mecânica não possui relação com medidas, variáveis ou interpretação física.",
+        "A situação prova que potência mecânica só existe em exemplos teóricos sem uso cotidiano.",
+        "A situação mostra que potência mecânica torna desnecessário comparar dados e modelos."
       ],
-      "correta": "o caso mostra que a pot�ncia depende do trabalho e do tempo, n�o apenas do trabalho isoladamente",
-      "comentario": "A conclus�o correta mant�m coer�ncia com os dados apresentados e com pot�ncia mec�nica.",
+      "correta": "o caso mostra que a potência depende do trabalho e do tempo, não apenas do trabalho isoladamente",
+      "comentario": "A conclusão correta mantém coerência com os dados apresentados e com potência mecânica.",
       "tempoEstimado": 35,
       "tags": [
         "trabalho-e-energia",
@@ -1570,22 +1570,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Pot�ncia mec�nica",
+      "subtopico": "Potência mecânica",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com pot�ncia mec�nica?",
+      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com potência mecânica?",
       "opcoes": [
-        "por que duas situa��es com o mesmo trabalho podem apresentar pot�ncias diferentes?",
-        "como a aplica��o de uma for�a ao longo de um deslocamento produz trabalho mec�nico?",
-        "como calcular o trabalho realizado por uma for�a constante em um deslocamento?",
-        "como a velocidade de um corpo influencia sua energia cin�tica?"
+        "por que duas situações com o mesmo trabalho podem apresentar potências diferentes?",
+        "como a aplicação de uma força ao longo de um deslocamento produz trabalho mecânico?",
+        "como calcular o trabalho realizado por uma força constante em um deslocamento?",
+        "como a velocidade de um corpo influencia sua energia cinética?"
       ],
-      "correta": "por que duas situa��es com o mesmo trabalho podem apresentar pot�ncias diferentes?",
-      "comentario": "A pergunta correta investiga pot�ncia mec�nica de forma direta e coerente.",
+      "correta": "por que duas situações com o mesmo trabalho podem apresentar potências diferentes?",
+      "comentario": "A pergunta correta investiga potência mecânica de forma direta e coerente.",
       "tempoEstimado": 35,
       "tags": [
         "trabalho-e-energia",
@@ -1609,22 +1609,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Pot�ncia mec�nica",
+      "subtopico": "Potência mecânica",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a afirma��o que revela compreens�o inadequada de pot�ncia mec�nica.",
+      "enunciado": "Assinale a afirmação que revela compreensão inadequada de potência mecânica.",
       "opcoes": [
-        "A grandeza que mede a rapidez com que o trabalho � realizado ou a energia � transferida.",
-        "A compara��o entre a quantidade de trabalho realizado e o tempo gasto para realiz�-lo.",
-        "Pot�ncia mec�nica mede a rapidez com que o trabalho � realizado.",
-        "Quem realiza mais pot�ncia sempre realiza necessariamente mais trabalho total."
+        "A grandeza que mede a rapidez com que o trabalho é realizado ou a energia é transferida.",
+        "A comparação entre a quantidade de trabalho realizado e o tempo gasto para realizá-lo.",
+        "Potência mecânica mede a rapidez com que o trabalho é realizado.",
+        "Quem realiza mais potência sempre realiza necessariamente mais trabalho total."
       ],
-      "correta": "Quem realiza mais pot�ncia sempre realiza necessariamente mais trabalho total.",
-      "comentario": "A alternativa incorreta expressa um equ�voco comum sobre pot�ncia mec�nica.",
+      "correta": "Quem realiza mais potência sempre realiza necessariamente mais trabalho total.",
+      "comentario": "A alternativa incorreta expressa um equívoco comum sobre potência mecânica.",
       "tempoEstimado": 45,
       "tags": [
         "trabalho-e-energia",
@@ -1648,22 +1648,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Pot�ncia mec�nica",
+      "subtopico": "Potência mecânica",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre F�sica, um estudante afirmou: \"para o mesmo trabalho, menor tempo implica maior pot�ncia mec�nica\". Qual avalia��o � mais consistente?",
+      "enunciado": "Em um debate sobre Física, um estudante afirmou: \"para o mesmo trabalho, menor tempo implica maior potência mecânica\". Qual avaliação é mais consistente?",
       "opcoes": [
-        "A afirma��o est� correta, porque pot�ncia relaciona o trabalho realizado com o intervalo de tempo correspondente",
-        "A afirma��o est� incorreta, porque pot�ncia mec�nica nunca pode ser usada na F�sica escolar.",
-        "A afirma��o � irrelevante, porque pot�ncia mec�nica n�o se relaciona com interpreta��o de fen�menos.",
-        "A afirma��o est� incorreta, porque pot�ncia mec�nica elimina a necessidade de medir e comparar grandezas."
+        "A afirmação está correta, porque potência relaciona o trabalho realizado com o intervalo de tempo correspondente",
+        "A afirmação está incorreta, porque potência mecânica nunca pode ser usada na Física escolar.",
+        "A afirmação é irrelevante, porque potência mecânica não se relaciona com interpretação de fenômenos.",
+        "A afirmação está incorreta, porque potência mecânica elimina a necessidade de medir e comparar grandezas."
       ],
-      "correta": "A afirma��o est� correta, porque pot�ncia relaciona o trabalho realizado com o intervalo de tempo correspondente",
-      "comentario": "A avalia��o correta recupera o n�cleo conceitual de pot�ncia mec�nica.",
+      "correta": "A afirmação está correta, porque potência relaciona o trabalho realizado com o intervalo de tempo correspondente",
+      "comentario": "A avaliação correta recupera o núcleo conceitual de potência mecânica.",
       "tempoEstimado": 45,
       "tags": [
         "trabalho-e-energia",
@@ -1687,22 +1687,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Pot�ncia mec�nica",
+      "subtopico": "Potência mecânica",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se pot�ncia mec�nica fosse ignorado(a) na an�lise de um problema f�sico, o resultado mais prov�vel seria:",
+      "enunciado": "Se potência mecânica fosse ignorado(a) na análise de um problema físico, o resultado mais provável seria:",
       "opcoes": [
-        "a an�lise de desempenho de m�quinas e pessoas ficaria sem o crit�rio temporal necess�rio para comparar efici�ncia de a��o",
-        "o problema continuaria exatamente igual, porque pot�ncia mec�nica n�o interfere na an�lise f�sica",
-        "seria poss�vel resolver a situa��o sem observar nenhuma grandeza, rela��o ou modelo",
-        "a interpreta��o ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
+        "a análise de desempenho de máquinas e pessoas ficaria sem o critério temporal necessário para comparar eficiência de ação",
+        "o problema continuaria exatamente igual, porque potência mecânica não interfere na análise física",
+        "seria possível resolver a situação sem observar nenhuma grandeza, relação ou modelo",
+        "a interpretação ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
       ],
-      "correta": "a an�lise de desempenho de m�quinas e pessoas ficaria sem o crit�rio temporal necess�rio para comparar efici�ncia de a��o",
-      "comentario": "Ignorar pot�ncia mec�nica compromete a leitura f�sica e a qualidade da solu��o.",
+      "correta": "a análise de desempenho de máquinas e pessoas ficaria sem o critério temporal necessário para comparar eficiência de ação",
+      "comentario": "Ignorar potência mecânica compromete a leitura física e a qualidade da solução.",
       "tempoEstimado": 55,
       "tags": [
         "trabalho-e-energia",
@@ -1726,22 +1726,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Pot�ncia mec�nica",
+      "subtopico": "Potência mecânica",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente pot�ncia mec�nica a uma situa��o escolar ou cotidiana?",
+      "enunciado": "Qual alternativa aplica corretamente potência mecânica a uma situação escolar ou cotidiana?",
       "opcoes": [
         "comparar dois elevadores que realizam o mesmo trabalho em tempos diferentes",
-        "explicar o funcionamento energ�tico de uma bicicleta, um elevador ou uma catapulta simples",
-        "analisar o rendimento de um elevador, motor ou aparelho mec�nico simples",
+        "explicar o funcionamento energético de uma bicicleta, um elevador ou uma catapulta simples",
+        "analisar o rendimento de um elevador, motor ou aparelho mecânico simples",
         "comparar a energia no alto e na base de uma pista sem atrito"
       ],
       "correta": "comparar dois elevadores que realizam o mesmo trabalho em tempos diferentes",
-      "comentario": "A aplica��o correta mostra como pot�ncia mec�nica aparece em contextos pr�ximos do cotidiano.",
+      "comentario": "A aplicação correta mostra como potência mecânica aparece em contextos próximos do cotidiano.",
       "tempoEstimado": 55,
       "tags": [
         "trabalho-e-energia",
@@ -1765,22 +1765,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Pot�ncia mec�nica",
+      "subtopico": "Potência mecânica",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual s�ntese final representa melhor pot�ncia mec�nica?",
+      "enunciado": "Qual síntese final representa melhor potência mecânica?",
       "opcoes": [
-        "pot�ncia mec�nica mede a rapidez com que o trabalho � realizado",
-        "trabalho mec�nico representa a transfer�ncia de energia por uma for�a ao longo de um deslocamento",
-        "o trabalho de for�a constante relaciona for�a, deslocamento e orienta��o relativa em uma express�o simples",
-        "energia cin�tica � a energia associada ao movimento de um corpo"
+        "potência mecânica mede a rapidez com que o trabalho é realizado",
+        "trabalho mecânico representa a transferência de energia por uma força ao longo de um deslocamento",
+        "o trabalho de força constante relaciona força, deslocamento e orientação relativa em uma expressão simples",
+        "energia cinética é a energia associada ao movimento de um corpo"
       ],
-      "correta": "pot�ncia mec�nica mede a rapidez com que o trabalho � realizado",
-      "comentario": "A s�ntese correta preserva a defini��o, o foco e o uso anal�tico de pot�ncia mec�nica.",
+      "correta": "potência mecânica mede a rapidez com que o trabalho é realizado",
+      "comentario": "A síntese correta preserva a definição, o foco e o uso analítico de potência mecânica.",
       "tempoEstimado": 55,
       "tags": [
         "trabalho-e-energia",
@@ -1804,22 +1804,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Energia cin�tica",
+      "subtopico": "Energia cinética",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em F�sica, Energia cin�tica pode ser definido(a) como:",
+      "enunciado": "Em Física, Energia cinética pode ser definido(a) como:",
       "opcoes": [
         "a energia associada ao movimento de um corpo",
-        "a grandeza associada � transfer�ncia de energia produzida por uma for�a ao longo de um deslocamento",
-        "o c�lculo do trabalho quando a for�a mant�m m�dulo e dire��o constantes durante o deslocamento considerado",
-        "a grandeza que mede a rapidez com que o trabalho � realizado ou a energia � transferida"
+        "a grandeza associada à transferência de energia produzida por uma força ao longo de um deslocamento",
+        "o cálculo do trabalho quando a força mantém módulo e direção constantes durante o deslocamento considerado",
+        "a grandeza que mede a rapidez com que o trabalho é realizado ou a energia é transferida"
       ],
       "correta": "a energia associada ao movimento de um corpo",
-      "comentario": "Energia cin�tica refere-se � energia associada ao movimento de um corpo.",
+      "comentario": "Energia cinética refere-se à energia associada ao movimento de um corpo.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -1843,22 +1843,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Energia cin�tica",
+      "subtopico": "Energia cinética",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situa��o: um carrinho em alta velocidade possui maior capacidade de alterar o sistema em impacto do que o mesmo carrinho parado Esse caso exemplifica melhor qual subt�pico?",
+      "enunciado": "Observe a situação: um carrinho em alta velocidade possui maior capacidade de alterar o sistema em impacto do que o mesmo carrinho parado Esse caso exemplifica melhor qual subtópico?",
       "opcoes": [
-        "Energia cin�tica",
+        "Energia cinética",
         "Conceito de trabalho",
-        "Trabalho de for�a constante",
-        "Pot�ncia mec�nica"
+        "Trabalho de força constante",
+        "Potência mecânica"
       ],
-      "correta": "Energia cin�tica",
-      "comentario": "A situa��o apresentada � um exemplo de energia cin�tica.",
+      "correta": "Energia cinética",
+      "comentario": "A situação apresentada é um exemplo de energia cinética.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -1882,22 +1882,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Energia cin�tica",
+      "subtopico": "Energia cinética",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirma��o descreve corretamente energia cin�tica?",
+      "enunciado": "Qual afirmação descreve corretamente energia cinética?",
       "opcoes": [
         "A energia associada ao movimento de um corpo.",
-        "A grandeza associada � transfer�ncia de energia produzida por uma for�a ao longo de um deslocamento.",
-        "O c�lculo do trabalho quando a for�a mant�m m�dulo e dire��o constantes durante o deslocamento considerado.",
-        "A grandeza que mede a rapidez com que o trabalho � realizado ou a energia � transferida."
+        "A grandeza associada à transferência de energia produzida por uma força ao longo de um deslocamento.",
+        "O cálculo do trabalho quando a força mantém módulo e direção constantes durante o deslocamento considerado.",
+        "A grandeza que mede a rapidez com que o trabalho é realizado ou a energia é transferida."
       ],
       "correta": "A energia associada ao movimento de um corpo.",
-      "comentario": "A afirma��o correta retoma o sentido central de energia cin�tica.",
+      "comentario": "A afirmação correta retoma o sentido central de energia cinética.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -1921,22 +1921,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Energia cin�tica",
+      "subtopico": "Energia cinética",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa incompat�vel com energia cin�tica.",
+      "enunciado": "Assinale a alternativa incompatível com energia cinética.",
       "opcoes": [
-        "atribuir energia cin�tica positiva a um corpo completamente em repouso apenas por ter massa.",
-        "a rela��o entre movimento e capacidade de realizar trabalho ou produzir efeitos din�micos.",
-        "energia cin�tica � a energia associada ao movimento de um corpo.",
+        "atribuir energia cinética positiva a um corpo completamente em repouso apenas por ter massa.",
+        "a relação entre movimento e capacidade de realizar trabalho ou produzir efeitos dinâmicos.",
+        "energia cinética é a energia associada ao movimento de um corpo.",
         "a energia associada ao movimento de um corpo."
       ],
-      "correta": "atribuir energia cin�tica positiva a um corpo completamente em repouso apenas por ter massa.",
-      "comentario": "Atribuir energia cin�tica positiva a um corpo completamente em repouso apenas por ter massa n�o representa energia cin�tica, enquanto as demais alternativas se relacionam com esse subt�pico.",
+      "correta": "atribuir energia cinética positiva a um corpo completamente em repouso apenas por ter massa.",
+      "comentario": "Atribuir energia cinética positiva a um corpo completamente em repouso apenas por ter massa não representa energia cinética, enquanto as demais alternativas se relacionam com esse subtópico.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -1960,22 +1960,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Energia cin�tica",
+      "subtopico": "Energia cinética",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando se estuda energia cin�tica, o foco principal est� em:",
+      "enunciado": "Quando se estuda energia cinética, o foco principal está em:",
       "opcoes": [
-        "a rela��o entre movimento e capacidade de realizar trabalho ou produzir efeitos din�micos",
-        "a rela��o entre for�a aplicada, deslocamento e transfer�ncia de energia mec�nica",
-        "a determina��o do trabalho em situa��es simples com for�a constante",
-        "a compara��o entre a quantidade de trabalho realizado e o tempo gasto para realiz�-lo"
+        "a relação entre movimento e capacidade de realizar trabalho ou produzir efeitos dinâmicos",
+        "a relação entre força aplicada, deslocamento e transferência de energia mecânica",
+        "a determinação do trabalho em situações simples com força constante",
+        "a comparação entre a quantidade de trabalho realizado e o tempo gasto para realizá-lo"
       ],
-      "correta": "a rela��o entre movimento e capacidade de realizar trabalho ou produzir efeitos din�micos",
-      "comentario": "Energia cin�tica volta a aten��o para a rela��o entre movimento e capacidade de realizar trabalho ou produzir efeitos din�micos.",
+      "correta": "a relação entre movimento e capacidade de realizar trabalho ou produzir efeitos dinâmicos",
+      "comentario": "Energia cinética volta a atenção para a relação entre movimento e capacidade de realizar trabalho ou produzir efeitos dinâmicos.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -1999,22 +1999,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Energia cin�tica",
+      "subtopico": "Energia cinética",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferen�a entre energia cin�tica e energia potencial gravitacional � que:",
+      "enunciado": "A principal diferença entre energia cinética e energia potencial gravitacional é que:",
       "opcoes": [
-        "energia cin�tica est� ligada ao movimento do corpo, enquanto energia potencial gravitacional depende da posi��o do corpo em um campo gravitacional",
-        "Energia cin�tica e Energia potencial gravitacional s�o exatamente a mesma ideia f�sica em qualquer situa��o.",
-        "Energia potencial gravitacional elimina a necessidade de observar energia cin�tica.",
-        "Energia cin�tica depende apenas de opini�o pessoal, sem rela��o com grandezas, modelos ou medidas."
+        "energia cinética está ligada ao movimento do corpo, enquanto energia potencial gravitacional depende da posição do corpo em um campo gravitacional",
+        "Energia cinética e Energia potencial gravitacional são exatamente a mesma ideia física em qualquer situação.",
+        "Energia potencial gravitacional elimina a necessidade de observar energia cinética.",
+        "Energia cinética depende apenas de opinião pessoal, sem relação com grandezas, modelos ou medidas."
       ],
-      "correta": "energia cin�tica est� ligada ao movimento do corpo, enquanto energia potencial gravitacional depende da posi��o do corpo em um campo gravitacional",
-      "comentario": "A compara��o correta distingue os dois subt�picos sem confundir seus objetos de estudo.",
+      "correta": "energia cinética está ligada ao movimento do corpo, enquanto energia potencial gravitacional depende da posição do corpo em um campo gravitacional",
+      "comentario": "A comparação correta distingue os dois subtópicos sem confundir seus objetos de estudo.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -2038,22 +2038,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Energia cin�tica",
+      "subtopico": "Energia cinética",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma observa��o experimental, registrou-se o seguinte caso: um carrinho em alta velocidade possui maior capacidade de alterar o sistema em impacto do que o mesmo carrinho parado A leitura f�sica mais adequada aponta para:",
+      "enunciado": "Em uma observação experimental, registrou-se o seguinte caso: um carrinho em alta velocidade possui maior capacidade de alterar o sistema em impacto do que o mesmo carrinho parado A leitura física mais adequada aponta para:",
       "opcoes": [
-        "o caso mostra que o movimento do corpo est� associado a uma forma espec�fica de energia mec�nica",
-        "Energia cin�tica mostra que as grandezas envolvidas n�o precisam ser relacionadas para interpretar o caso.",
-        "Energia cin�tica prova que a situa��o dispensa qualquer leitura f�sica ou quantitativa.",
-        "Energia cin�tica significa que o fen�meno n�o pode ser descrito por vari�veis f�sicas."
+        "o caso mostra que o movimento do corpo está associado a uma forma específica de energia mecânica",
+        "Energia cinética mostra que as grandezas envolvidas não precisam ser relacionadas para interpretar o caso.",
+        "Energia cinética prova que a situação dispensa qualquer leitura física ou quantitativa.",
+        "Energia cinética significa que o fenômeno não pode ser descrito por variáveis físicas."
       ],
-      "correta": "o caso mostra que o movimento do corpo est� associado a uma forma espec�fica de energia mec�nica",
-      "comentario": "Energia cin�tica permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
+      "correta": "o caso mostra que o movimento do corpo está associado a uma forma específica de energia mecânica",
+      "comentario": "Energia cinética permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -2077,22 +2077,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Energia cin�tica",
+      "subtopico": "Energia cinética",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situa��o abaixo evidencia energia cin�tica de maneira mais clara?",
+      "enunciado": "Qual situação abaixo evidencia energia cinética de maneira mais clara?",
       "opcoes": [
-        "comparar a energia cin�tica de bicicletas em velocidades diferentes",
-        "analisar o empurr�o de um carrinho que realmente se move ao longo de uma superf�cie",
-        "calcular o trabalho de uma for�a horizontal que arrasta um bloco por alguns metros",
+        "comparar a energia cinética de bicicletas em velocidades diferentes",
+        "analisar o empurrão de um carrinho que realmente se move ao longo de uma superfície",
+        "calcular o trabalho de uma força horizontal que arrasta um bloco por alguns metros",
         "comparar dois elevadores que realizam o mesmo trabalho em tempos diferentes"
       ],
-      "correta": "comparar a energia cin�tica de bicicletas em velocidades diferentes",
-      "comentario": "A alternativa correta aproxima energia cin�tica de uma situa��o concreta.",
+      "correta": "comparar a energia cinética de bicicletas em velocidades diferentes",
+      "comentario": "A alternativa correta aproxima energia cinética de uma situação concreta.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -2116,22 +2116,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Energia cin�tica",
+      "subtopico": "Energia cinética",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"um carrinho em alta velocidade possui maior capacidade de alterar o sistema em impacto do que o mesmo carrinho parado\", qual conclus�o � mais adequada?",
+      "enunciado": "Ao analisar o caso \"um carrinho em alta velocidade possui maior capacidade de alterar o sistema em impacto do que o mesmo carrinho parado\", qual conclusão é mais adequada?",
       "opcoes": [
-        "o caso mostra que o movimento do corpo est� associado a uma forma espec�fica de energia mec�nica",
-        "A situa��o indica que energia cin�tica n�o possui rela��o com medidas, vari�veis ou interpreta��o f�sica.",
-        "A situa��o prova que energia cin�tica s� existe em exemplos te�ricos sem uso cotidiano.",
-        "A situa��o mostra que energia cin�tica torna desnecess�rio comparar dados e modelos."
+        "o caso mostra que o movimento do corpo está associado a uma forma específica de energia mecânica",
+        "A situação indica que energia cinética não possui relação com medidas, variáveis ou interpretação física.",
+        "A situação prova que energia cinética só existe em exemplos teóricos sem uso cotidiano.",
+        "A situação mostra que energia cinética torna desnecessário comparar dados e modelos."
       ],
-      "correta": "o caso mostra que o movimento do corpo est� associado a uma forma espec�fica de energia mec�nica",
-      "comentario": "A conclus�o correta mant�m coer�ncia com os dados apresentados e com energia cin�tica.",
+      "correta": "o caso mostra que o movimento do corpo está associado a uma forma específica de energia mecânica",
+      "comentario": "A conclusão correta mantém coerência com os dados apresentados e com energia cinética.",
       "tempoEstimado": 35,
       "tags": [
         "trabalho-e-energia",
@@ -2155,22 +2155,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Energia cin�tica",
+      "subtopico": "Energia cinética",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com energia cin�tica?",
+      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com energia cinética?",
       "opcoes": [
-        "como a velocidade de um corpo influencia sua energia cin�tica?",
-        "como a aplica��o de uma for�a ao longo de um deslocamento produz trabalho mec�nico?",
-        "como calcular o trabalho realizado por uma for�a constante em um deslocamento?",
-        "por que duas situa��es com o mesmo trabalho podem apresentar pot�ncias diferentes?"
+        "como a velocidade de um corpo influencia sua energia cinética?",
+        "como a aplicação de uma força ao longo de um deslocamento produz trabalho mecânico?",
+        "como calcular o trabalho realizado por uma força constante em um deslocamento?",
+        "por que duas situações com o mesmo trabalho podem apresentar potências diferentes?"
       ],
-      "correta": "como a velocidade de um corpo influencia sua energia cin�tica?",
-      "comentario": "A pergunta correta investiga energia cin�tica de forma direta e coerente.",
+      "correta": "como a velocidade de um corpo influencia sua energia cinética?",
+      "comentario": "A pergunta correta investiga energia cinética de forma direta e coerente.",
       "tempoEstimado": 35,
       "tags": [
         "trabalho-e-energia",
@@ -2194,22 +2194,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Energia cin�tica",
+      "subtopico": "Energia cinética",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a afirma��o que revela compreens�o inadequada de energia cin�tica.",
+      "enunciado": "Assinale a afirmação que revela compreensão inadequada de energia cinética.",
       "opcoes": [
         "A energia associada ao movimento de um corpo.",
-        "A rela��o entre movimento e capacidade de realizar trabalho ou produzir efeitos din�micos.",
-        "Energia cin�tica � a energia associada ao movimento de um corpo.",
-        "Energia cin�tica depende apenas da massa do corpo e n�o da sua velocidade."
+        "A relação entre movimento e capacidade de realizar trabalho ou produzir efeitos dinâmicos.",
+        "Energia cinética é a energia associada ao movimento de um corpo.",
+        "Energia cinética depende apenas da massa do corpo e não da sua velocidade."
       ],
-      "correta": "Energia cin�tica depende apenas da massa do corpo e n�o da sua velocidade.",
-      "comentario": "A alternativa incorreta expressa um equ�voco comum sobre energia cin�tica.",
+      "correta": "Energia cinética depende apenas da massa do corpo e não da sua velocidade.",
+      "comentario": "A alternativa incorreta expressa um equívoco comum sobre energia cinética.",
       "tempoEstimado": 45,
       "tags": [
         "trabalho-e-energia",
@@ -2233,22 +2233,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Energia cin�tica",
+      "subtopico": "Energia cinética",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre F�sica, um estudante afirmou: \"corpos em movimento possuem energia cin�tica associada � sua velocidade\". Qual avalia��o � mais consistente?",
+      "enunciado": "Em um debate sobre Física, um estudante afirmou: \"corpos em movimento possuem energia cinética associada à sua velocidade\". Qual avaliação é mais consistente?",
       "opcoes": [
-        "A afirma��o est� correta, porque a energia cin�tica expressa a energia ligada ao estado de movimento do corpo",
-        "A afirma��o est� incorreta, porque energia cin�tica nunca pode ser usada na F�sica escolar.",
-        "A afirma��o � irrelevante, porque energia cin�tica n�o se relaciona com interpreta��o de fen�menos.",
-        "A afirma��o est� incorreta, porque energia cin�tica elimina a necessidade de medir e comparar grandezas."
+        "A afirmação está correta, porque a energia cinética expressa a energia ligada ao estado de movimento do corpo",
+        "A afirmação está incorreta, porque energia cinética nunca pode ser usada na Física escolar.",
+        "A afirmação é irrelevante, porque energia cinética não se relaciona com interpretação de fenômenos.",
+        "A afirmação está incorreta, porque energia cinética elimina a necessidade de medir e comparar grandezas."
       ],
-      "correta": "A afirma��o est� correta, porque a energia cin�tica expressa a energia ligada ao estado de movimento do corpo",
-      "comentario": "A avalia��o correta recupera o n�cleo conceitual de energia cin�tica.",
+      "correta": "A afirmação está correta, porque a energia cinética expressa a energia ligada ao estado de movimento do corpo",
+      "comentario": "A avaliação correta recupera o núcleo conceitual de energia cinética.",
       "tempoEstimado": 45,
       "tags": [
         "trabalho-e-energia",
@@ -2272,22 +2272,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Energia cin�tica",
+      "subtopico": "Energia cinética",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se energia cin�tica fosse ignorado(a) na an�lise de um problema f�sico, o resultado mais prov�vel seria:",
+      "enunciado": "Se energia cinética fosse ignorado(a) na análise de um problema físico, o resultado mais provável seria:",
       "opcoes": [
-        "seria dif�cil interpretar por que corpos em movimento podem produzir efeitos mec�nicos mais intensos",
-        "o problema continuaria exatamente igual, porque energia cin�tica n�o interfere na an�lise f�sica",
-        "seria poss�vel resolver a situa��o sem observar nenhuma grandeza, rela��o ou modelo",
-        "a interpreta��o ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
+        "seria difícil interpretar por que corpos em movimento podem produzir efeitos mecânicos mais intensos",
+        "o problema continuaria exatamente igual, porque energia cinética não interfere na análise física",
+        "seria possível resolver a situação sem observar nenhuma grandeza, relação ou modelo",
+        "a interpretação ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
       ],
-      "correta": "seria dif�cil interpretar por que corpos em movimento podem produzir efeitos mec�nicos mais intensos",
-      "comentario": "Ignorar energia cin�tica compromete a leitura f�sica e a qualidade da solu��o.",
+      "correta": "seria difícil interpretar por que corpos em movimento podem produzir efeitos mecânicos mais intensos",
+      "comentario": "Ignorar energia cinética compromete a leitura física e a qualidade da solução.",
       "tempoEstimado": 55,
       "tags": [
         "trabalho-e-energia",
@@ -2311,22 +2311,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Energia cin�tica",
+      "subtopico": "Energia cinética",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente energia cin�tica a uma situa��o escolar ou cotidiana?",
+      "enunciado": "Qual alternativa aplica corretamente energia cinética a uma situação escolar ou cotidiana?",
       "opcoes": [
-        "comparar a energia cin�tica de bicicletas em velocidades diferentes",
-        "explicar o funcionamento energ�tico de uma bicicleta, um elevador ou uma catapulta simples",
-        "analisar o rendimento de um elevador, motor ou aparelho mec�nico simples",
+        "comparar a energia cinética de bicicletas em velocidades diferentes",
+        "explicar o funcionamento energético de uma bicicleta, um elevador ou uma catapulta simples",
+        "analisar o rendimento de um elevador, motor ou aparelho mecânico simples",
         "comparar a energia no alto e na base de uma pista sem atrito"
       ],
-      "correta": "comparar a energia cin�tica de bicicletas em velocidades diferentes",
-      "comentario": "A aplica��o correta mostra como energia cin�tica aparece em contextos pr�ximos do cotidiano.",
+      "correta": "comparar a energia cinética de bicicletas em velocidades diferentes",
+      "comentario": "A aplicação correta mostra como energia cinética aparece em contextos próximos do cotidiano.",
       "tempoEstimado": 55,
       "tags": [
         "trabalho-e-energia",
@@ -2350,22 +2350,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Energia cin�tica",
+      "subtopico": "Energia cinética",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual s�ntese final representa melhor energia cin�tica?",
+      "enunciado": "Qual síntese final representa melhor energia cinética?",
       "opcoes": [
-        "energia cin�tica � a energia associada ao movimento de um corpo",
-        "trabalho mec�nico representa a transfer�ncia de energia por uma for�a ao longo de um deslocamento",
-        "o trabalho de for�a constante relaciona for�a, deslocamento e orienta��o relativa em uma express�o simples",
-        "pot�ncia mec�nica mede a rapidez com que o trabalho � realizado"
+        "energia cinética é a energia associada ao movimento de um corpo",
+        "trabalho mecânico representa a transferência de energia por uma força ao longo de um deslocamento",
+        "o trabalho de força constante relaciona força, deslocamento e orientação relativa em uma expressão simples",
+        "potência mecânica mede a rapidez com que o trabalho é realizado"
       ],
-      "correta": "energia cin�tica � a energia associada ao movimento de um corpo",
-      "comentario": "A s�ntese correta preserva a defini��o, o foco e o uso anal�tico de energia cin�tica.",
+      "correta": "energia cinética é a energia associada ao movimento de um corpo",
+      "comentario": "A síntese correta preserva a definição, o foco e o uso analítico de energia cinética.",
       "tempoEstimado": 55,
       "tags": [
         "trabalho-e-energia",
@@ -2389,22 +2389,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
       "subtopico": "Energia potencial gravitacional",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em F�sica, Energia potencial gravitacional pode ser definido(a) como:",
+      "enunciado": "Em Física, Energia potencial gravitacional pode ser definido(a) como:",
       "opcoes": [
-        "a energia associada � posi��o de um corpo em rela��o a um n�vel de refer�ncia em um campo gravitacional",
-        "a grandeza associada � transfer�ncia de energia produzida por uma for�a ao longo de um deslocamento",
-        "o c�lculo do trabalho quando a for�a mant�m m�dulo e dire��o constantes durante o deslocamento considerado",
-        "a grandeza que mede a rapidez com que o trabalho � realizado ou a energia � transferida"
+        "a energia associada à posição de um corpo em relação a um nível de referência em um campo gravitacional",
+        "a grandeza associada à transferência de energia produzida por uma força ao longo de um deslocamento",
+        "o cálculo do trabalho quando a força mantém módulo e direção constantes durante o deslocamento considerado",
+        "a grandeza que mede a rapidez com que o trabalho é realizado ou a energia é transferida"
       ],
-      "correta": "a energia associada � posi��o de um corpo em rela��o a um n�vel de refer�ncia em um campo gravitacional",
-      "comentario": "Energia potencial gravitacional refere-se � energia associada � posi��o de um corpo em rela��o a um n�vel de refer�ncia em um campo gravitacional.",
+      "correta": "a energia associada à posição de um corpo em relação a um nível de referência em um campo gravitacional",
+      "comentario": "Energia potencial gravitacional refere-se à energia associada à posição de um corpo em relação a um nível de referência em um campo gravitacional.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -2428,22 +2428,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
       "subtopico": "Energia potencial gravitacional",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situa��o: uma caixa erguida para uma prateleira alta ganha capacidade de realizar trabalho ao cair Esse caso exemplifica melhor qual subt�pico?",
+      "enunciado": "Observe a situação: uma caixa erguida para uma prateleira alta ganha capacidade de realizar trabalho ao cair Esse caso exemplifica melhor qual subtópico?",
       "opcoes": [
         "Energia potencial gravitacional",
         "Conceito de trabalho",
-        "Trabalho de for�a constante",
-        "Pot�ncia mec�nica"
+        "Trabalho de força constante",
+        "Potência mecânica"
       ],
       "correta": "Energia potencial gravitacional",
-      "comentario": "A situa��o apresentada � um exemplo de energia potencial gravitacional.",
+      "comentario": "A situação apresentada é um exemplo de energia potencial gravitacional.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -2467,22 +2467,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
       "subtopico": "Energia potencial gravitacional",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirma��o descreve corretamente energia potencial gravitacional?",
+      "enunciado": "Qual afirmação descreve corretamente energia potencial gravitacional?",
       "opcoes": [
-        "A energia associada � posi��o de um corpo em rela��o a um n�vel de refer�ncia em um campo gravitacional.",
-        "A grandeza associada � transfer�ncia de energia produzida por uma for�a ao longo de um deslocamento.",
-        "O c�lculo do trabalho quando a for�a mant�m m�dulo e dire��o constantes durante o deslocamento considerado.",
-        "A grandeza que mede a rapidez com que o trabalho � realizado ou a energia � transferida."
+        "A energia associada à posição de um corpo em relação a um nível de referência em um campo gravitacional.",
+        "A grandeza associada à transferência de energia produzida por uma força ao longo de um deslocamento.",
+        "O cálculo do trabalho quando a força mantém módulo e direção constantes durante o deslocamento considerado.",
+        "A grandeza que mede a rapidez com que o trabalho é realizado ou a energia é transferida."
       ],
-      "correta": "A energia associada � posi��o de um corpo em rela��o a um n�vel de refer�ncia em um campo gravitacional.",
-      "comentario": "A afirma��o correta retoma o sentido central de energia potencial gravitacional.",
+      "correta": "A energia associada à posição de um corpo em relação a um nível de referência em um campo gravitacional.",
+      "comentario": "A afirmação correta retoma o sentido central de energia potencial gravitacional.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -2506,22 +2506,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
       "subtopico": "Energia potencial gravitacional",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa incompat�vel com energia potencial gravitacional.",
+      "enunciado": "Assinale a alternativa incompatível com energia potencial gravitacional.",
       "opcoes": [
         "supor que a energia potencial gravitacional independe completamente da altura do corpo.",
-        "a depend�ncia da energia potencial da altura em rela��o ao referencial escolhido.",
-        "energia potencial gravitacional � a energia associada � posi��o de um corpo em um campo gravitacional.",
-        "a energia associada � posi��o de um corpo em rela��o a um n�vel de refer�ncia em um campo gravitacional."
+        "a dependência da energia potencial da altura em relação ao referencial escolhido.",
+        "energia potencial gravitacional é a energia associada à posição de um corpo em um campo gravitacional.",
+        "a energia associada à posição de um corpo em relação a um nível de referência em um campo gravitacional."
       ],
       "correta": "supor que a energia potencial gravitacional independe completamente da altura do corpo.",
-      "comentario": "Supor que a energia potencial gravitacional independe completamente da altura do corpo n�o representa energia potencial gravitacional, enquanto as demais alternativas se relacionam com esse subt�pico.",
+      "comentario": "Supor que a energia potencial gravitacional independe completamente da altura do corpo não representa energia potencial gravitacional, enquanto as demais alternativas se relacionam com esse subtópico.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -2545,22 +2545,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
       "subtopico": "Energia potencial gravitacional",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando se estuda energia potencial gravitacional, o foco principal est� em:",
+      "enunciado": "Quando se estuda energia potencial gravitacional, o foco principal está em:",
       "opcoes": [
-        "a depend�ncia da energia potencial da altura em rela��o ao referencial escolhido",
-        "a rela��o entre for�a aplicada, deslocamento e transfer�ncia de energia mec�nica",
-        "a determina��o do trabalho em situa��es simples com for�a constante",
-        "a compara��o entre a quantidade de trabalho realizado e o tempo gasto para realiz�-lo"
+        "a dependência da energia potencial da altura em relação ao referencial escolhido",
+        "a relação entre força aplicada, deslocamento e transferência de energia mecânica",
+        "a determinação do trabalho em situações simples com força constante",
+        "a comparação entre a quantidade de trabalho realizado e o tempo gasto para realizá-lo"
       ],
-      "correta": "a depend�ncia da energia potencial da altura em rela��o ao referencial escolhido",
-      "comentario": "Energia potencial gravitacional volta a aten��o para a depend�ncia da energia potencial da altura em rela��o ao referencial escolhido.",
+      "correta": "a dependência da energia potencial da altura em relação ao referencial escolhido",
+      "comentario": "Energia potencial gravitacional volta a atenção para a dependência da energia potencial da altura em relação ao referencial escolhido.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -2584,22 +2584,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
       "subtopico": "Energia potencial gravitacional",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferen�a entre energia potencial gravitacional e energia potencial el�stica � que:",
+      "enunciado": "A principal diferença entre energia potencial gravitacional e energia potencial elástica é que:",
       "opcoes": [
-        "energia potencial gravitacional depende da posi��o em campo gravitacional, enquanto energia potencial el�stica depende da deforma��o de um corpo el�stico",
-        "Energia potencial gravitacional e Energia potencial el�stica s�o exatamente a mesma ideia f�sica em qualquer situa��o.",
-        "Energia potencial el�stica elimina a necessidade de observar energia potencial gravitacional.",
-        "Energia potencial gravitacional depende apenas de opini�o pessoal, sem rela��o com grandezas, modelos ou medidas."
+        "energia potencial gravitacional depende da posição em campo gravitacional, enquanto energia potencial elástica depende da deformação de um corpo elástico",
+        "Energia potencial gravitacional e Energia potencial elástica são exatamente a mesma ideia física em qualquer situação.",
+        "Energia potencial elástica elimina a necessidade de observar energia potencial gravitacional.",
+        "Energia potencial gravitacional depende apenas de opinião pessoal, sem relação com grandezas, modelos ou medidas."
       ],
-      "correta": "energia potencial gravitacional depende da posi��o em campo gravitacional, enquanto energia potencial el�stica depende da deforma��o de um corpo el�stico",
-      "comentario": "A compara��o correta distingue os dois subt�picos sem confundir seus objetos de estudo.",
+      "correta": "energia potencial gravitacional depende da posição em campo gravitacional, enquanto energia potencial elástica depende da deformação de um corpo elástico",
+      "comentario": "A comparação correta distingue os dois subtópicos sem confundir seus objetos de estudo.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -2623,21 +2623,21 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
       "subtopico": "Energia potencial gravitacional",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma observa��o experimental, registrou-se o seguinte caso: uma caixa erguida para uma prateleira alta ganha capacidade de realizar trabalho ao cair A leitura f�sica mais adequada aponta para:",
+      "enunciado": "Em uma observação experimental, registrou-se o seguinte caso: uma caixa erguida para uma prateleira alta ganha capacidade de realizar trabalho ao cair A leitura física mais adequada aponta para:",
       "opcoes": [
-        "o caso mostra que a altura escolhida em rela��o a um n�vel de refer�ncia influencia a energia potencial gravitacional",
-        "Energia potencial gravitacional mostra que as grandezas envolvidas n�o precisam ser relacionadas para interpretar o caso.",
-        "Energia potencial gravitacional prova que a situa��o dispensa qualquer leitura f�sica ou quantitativa.",
-        "Energia potencial gravitacional significa que o fen�meno n�o pode ser descrito por vari�veis f�sicas."
+        "o caso mostra que a altura escolhida em relação a um nível de referência influencia a energia potencial gravitacional",
+        "Energia potencial gravitacional mostra que as grandezas envolvidas não precisam ser relacionadas para interpretar o caso.",
+        "Energia potencial gravitacional prova que a situação dispensa qualquer leitura física ou quantitativa.",
+        "Energia potencial gravitacional significa que o fenômeno não pode ser descrito por variáveis físicas."
       ],
-      "correta": "o caso mostra que a altura escolhida em rela��o a um n�vel de refer�ncia influencia a energia potencial gravitacional",
+      "correta": "o caso mostra que a altura escolhida em relação a um nível de referência influencia a energia potencial gravitacional",
       "comentario": "Energia potencial gravitacional permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
       "tempoEstimado": 25,
       "tags": [
@@ -2662,22 +2662,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
       "subtopico": "Energia potencial gravitacional",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situa��o abaixo evidencia energia potencial gravitacional de maneira mais clara?",
+      "enunciado": "Qual situação abaixo evidencia energia potencial gravitacional de maneira mais clara?",
       "opcoes": [
-        "comparar a energia de um objeto no ch�o e no alto de uma estante",
-        "analisar o empurr�o de um carrinho que realmente se move ao longo de uma superf�cie",
-        "calcular o trabalho de uma for�a horizontal que arrasta um bloco por alguns metros",
+        "comparar a energia de um objeto no chão e no alto de uma estante",
+        "analisar o empurrão de um carrinho que realmente se move ao longo de uma superfície",
+        "calcular o trabalho de uma força horizontal que arrasta um bloco por alguns metros",
         "comparar dois elevadores que realizam o mesmo trabalho em tempos diferentes"
       ],
-      "correta": "comparar a energia de um objeto no ch�o e no alto de uma estante",
-      "comentario": "A alternativa correta aproxima energia potencial gravitacional de uma situa��o concreta.",
+      "correta": "comparar a energia de um objeto no chão e no alto de uma estante",
+      "comentario": "A alternativa correta aproxima energia potencial gravitacional de uma situação concreta.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -2701,22 +2701,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
       "subtopico": "Energia potencial gravitacional",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"uma caixa erguida para uma prateleira alta ganha capacidade de realizar trabalho ao cair\", qual conclus�o � mais adequada?",
+      "enunciado": "Ao analisar o caso \"uma caixa erguida para uma prateleira alta ganha capacidade de realizar trabalho ao cair\", qual conclusão é mais adequada?",
       "opcoes": [
-        "o caso mostra que a altura escolhida em rela��o a um n�vel de refer�ncia influencia a energia potencial gravitacional",
-        "A situa��o indica que energia potencial gravitacional n�o possui rela��o com medidas, vari�veis ou interpreta��o f�sica.",
-        "A situa��o prova que energia potencial gravitacional s� existe em exemplos te�ricos sem uso cotidiano.",
-        "A situa��o mostra que energia potencial gravitacional torna desnecess�rio comparar dados e modelos."
+        "o caso mostra que a altura escolhida em relação a um nível de referência influencia a energia potencial gravitacional",
+        "A situação indica que energia potencial gravitacional não possui relação com medidas, variáveis ou interpretação física.",
+        "A situação prova que energia potencial gravitacional só existe em exemplos teóricos sem uso cotidiano.",
+        "A situação mostra que energia potencial gravitacional torna desnecessário comparar dados e modelos."
       ],
-      "correta": "o caso mostra que a altura escolhida em rela��o a um n�vel de refer�ncia influencia a energia potencial gravitacional",
-      "comentario": "A conclus�o correta mant�m coer�ncia com os dados apresentados e com energia potencial gravitacional.",
+      "correta": "o caso mostra que a altura escolhida em relação a um nível de referência influencia a energia potencial gravitacional",
+      "comentario": "A conclusão correta mantém coerência com os dados apresentados e com energia potencial gravitacional.",
       "tempoEstimado": 35,
       "tags": [
         "trabalho-e-energia",
@@ -2740,7 +2740,7 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
       "subtopico": "Energia potencial gravitacional",
       "dificuldadeLabel": "medio",
@@ -2749,12 +2749,12 @@
       "tipo": "multipla_escolha",
       "enunciado": "Qual pergunta de pesquisa se relaciona melhor com energia potencial gravitacional?",
       "opcoes": [
-        "como a altura de um corpo em rela��o a um n�vel de refer�ncia altera sua energia potencial gravitacional?",
-        "como a aplica��o de uma for�a ao longo de um deslocamento produz trabalho mec�nico?",
-        "como calcular o trabalho realizado por uma for�a constante em um deslocamento?",
-        "por que duas situa��es com o mesmo trabalho podem apresentar pot�ncias diferentes?"
+        "como a altura de um corpo em relação a um nível de referência altera sua energia potencial gravitacional?",
+        "como a aplicação de uma força ao longo de um deslocamento produz trabalho mecânico?",
+        "como calcular o trabalho realizado por uma força constante em um deslocamento?",
+        "por que duas situações com o mesmo trabalho podem apresentar potências diferentes?"
       ],
-      "correta": "como a altura de um corpo em rela��o a um n�vel de refer�ncia altera sua energia potencial gravitacional?",
+      "correta": "como a altura de um corpo em relação a um nível de referência altera sua energia potencial gravitacional?",
       "comentario": "A pergunta correta investiga energia potencial gravitacional de forma direta e coerente.",
       "tempoEstimado": 35,
       "tags": [
@@ -2779,22 +2779,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
       "subtopico": "Energia potencial gravitacional",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a afirma��o que revela compreens�o inadequada de energia potencial gravitacional.",
+      "enunciado": "Assinale a afirmação que revela compreensão inadequada de energia potencial gravitacional.",
       "opcoes": [
-        "A energia associada � posi��o de um corpo em rela��o a um n�vel de refer�ncia em um campo gravitacional.",
-        "A depend�ncia da energia potencial da altura em rela��o ao referencial escolhido.",
-        "Energia potencial gravitacional � a energia associada � posi��o de um corpo em um campo gravitacional.",
-        "Energia potencial gravitacional existe apenas quando o corpo est� se movendo para baixo."
+        "A energia associada à posição de um corpo em relação a um nível de referência em um campo gravitacional.",
+        "A dependência da energia potencial da altura em relação ao referencial escolhido.",
+        "Energia potencial gravitacional é a energia associada à posição de um corpo em um campo gravitacional.",
+        "Energia potencial gravitacional existe apenas quando o corpo está se movendo para baixo."
       ],
-      "correta": "Energia potencial gravitacional existe apenas quando o corpo est� se movendo para baixo.",
-      "comentario": "A alternativa incorreta expressa um equ�voco comum sobre energia potencial gravitacional.",
+      "correta": "Energia potencial gravitacional existe apenas quando o corpo está se movendo para baixo.",
+      "comentario": "A alternativa incorreta expressa um equívoco comum sobre energia potencial gravitacional.",
       "tempoEstimado": 45,
       "tags": [
         "trabalho-e-energia",
@@ -2818,22 +2818,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
       "subtopico": "Energia potencial gravitacional",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre F�sica, um estudante afirmou: \"ao elevar um corpo em um campo gravitacional, aumenta-se sua energia potencial gravitacional em rela��o ao n�vel de refer�ncia\". Qual avalia��o � mais consistente?",
+      "enunciado": "Em um debate sobre Física, um estudante afirmou: \"ao elevar um corpo em um campo gravitacional, aumenta-se sua energia potencial gravitacional em relação ao nível de referência\". Qual avaliação é mais consistente?",
       "opcoes": [
-        "A afirma��o est� correta, porque a posi��o mais alta permite maior possibilidade de convers�o em outras formas de energia, como a cin�tica",
-        "A afirma��o est� incorreta, porque energia potencial gravitacional nunca pode ser usada na F�sica escolar.",
-        "A afirma��o � irrelevante, porque energia potencial gravitacional n�o se relaciona com interpreta��o de fen�menos.",
-        "A afirma��o est� incorreta, porque energia potencial gravitacional elimina a necessidade de medir e comparar grandezas."
+        "A afirmação está correta, porque a posição mais alta permite maior possibilidade de conversão em outras formas de energia, como a cinética",
+        "A afirmação está incorreta, porque energia potencial gravitacional nunca pode ser usada na Física escolar.",
+        "A afirmação é irrelevante, porque energia potencial gravitacional não se relaciona com interpretação de fenômenos.",
+        "A afirmação está incorreta, porque energia potencial gravitacional elimina a necessidade de medir e comparar grandezas."
       ],
-      "correta": "A afirma��o est� correta, porque a posi��o mais alta permite maior possibilidade de convers�o em outras formas de energia, como a cin�tica",
-      "comentario": "A avalia��o correta recupera o n�cleo conceitual de energia potencial gravitacional.",
+      "correta": "A afirmação está correta, porque a posição mais alta permite maior possibilidade de conversão em outras formas de energia, como a cinética",
+      "comentario": "A avaliação correta recupera o núcleo conceitual de energia potencial gravitacional.",
       "tempoEstimado": 45,
       "tags": [
         "trabalho-e-energia",
@@ -2857,22 +2857,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
       "subtopico": "Energia potencial gravitacional",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se energia potencial gravitacional fosse ignorado(a) na an�lise de um problema f�sico, o resultado mais prov�vel seria:",
+      "enunciado": "Se energia potencial gravitacional fosse ignorado(a) na análise de um problema físico, o resultado mais provável seria:",
       "opcoes": [
-        "ficaria comprometida a an�lise de sistemas elevados, quedas e transforma��es energ�ticas em presen�a da gravidade",
-        "o problema continuaria exatamente igual, porque energia potencial gravitacional n�o interfere na an�lise f�sica",
-        "seria poss�vel resolver a situa��o sem observar nenhuma grandeza, rela��o ou modelo",
-        "a interpreta��o ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
+        "ficaria comprometida a análise de sistemas elevados, quedas e transformações energéticas em presença da gravidade",
+        "o problema continuaria exatamente igual, porque energia potencial gravitacional não interfere na análise física",
+        "seria possível resolver a situação sem observar nenhuma grandeza, relação ou modelo",
+        "a interpretação ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
       ],
-      "correta": "ficaria comprometida a an�lise de sistemas elevados, quedas e transforma��es energ�ticas em presen�a da gravidade",
-      "comentario": "Ignorar energia potencial gravitacional compromete a leitura f�sica e a qualidade da solu��o.",
+      "correta": "ficaria comprometida a análise de sistemas elevados, quedas e transformações energéticas em presença da gravidade",
+      "comentario": "Ignorar energia potencial gravitacional compromete a leitura física e a qualidade da solução.",
       "tempoEstimado": 55,
       "tags": [
         "trabalho-e-energia",
@@ -2896,22 +2896,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
       "subtopico": "Energia potencial gravitacional",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente energia potencial gravitacional a uma situa��o escolar ou cotidiana?",
+      "enunciado": "Qual alternativa aplica corretamente energia potencial gravitacional a uma situação escolar ou cotidiana?",
       "opcoes": [
-        "comparar a energia de um objeto no ch�o e no alto de uma estante",
-        "explicar o funcionamento energ�tico de uma bicicleta, um elevador ou uma catapulta simples",
-        "analisar o rendimento de um elevador, motor ou aparelho mec�nico simples",
+        "comparar a energia de um objeto no chão e no alto de uma estante",
+        "explicar o funcionamento energético de uma bicicleta, um elevador ou uma catapulta simples",
+        "analisar o rendimento de um elevador, motor ou aparelho mecânico simples",
         "comparar a energia no alto e na base de uma pista sem atrito"
       ],
-      "correta": "comparar a energia de um objeto no ch�o e no alto de uma estante",
-      "comentario": "A aplica��o correta mostra como energia potencial gravitacional aparece em contextos pr�ximos do cotidiano.",
+      "correta": "comparar a energia de um objeto no chão e no alto de uma estante",
+      "comentario": "A aplicação correta mostra como energia potencial gravitacional aparece em contextos próximos do cotidiano.",
       "tempoEstimado": 55,
       "tags": [
         "trabalho-e-energia",
@@ -2935,22 +2935,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
       "subtopico": "Energia potencial gravitacional",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual s�ntese final representa melhor energia potencial gravitacional?",
+      "enunciado": "Qual síntese final representa melhor energia potencial gravitacional?",
       "opcoes": [
-        "energia potencial gravitacional � a energia associada � posi��o de um corpo em um campo gravitacional",
-        "trabalho mec�nico representa a transfer�ncia de energia por uma for�a ao longo de um deslocamento",
-        "o trabalho de for�a constante relaciona for�a, deslocamento e orienta��o relativa em uma express�o simples",
-        "pot�ncia mec�nica mede a rapidez com que o trabalho � realizado"
+        "energia potencial gravitacional é a energia associada à posição de um corpo em um campo gravitacional",
+        "trabalho mecânico representa a transferência de energia por uma força ao longo de um deslocamento",
+        "o trabalho de força constante relaciona força, deslocamento e orientação relativa em uma expressão simples",
+        "potência mecânica mede a rapidez com que o trabalho é realizado"
       ],
-      "correta": "energia potencial gravitacional � a energia associada � posi��o de um corpo em um campo gravitacional",
-      "comentario": "A s�ntese correta preserva a defini��o, o foco e o uso anal�tico de energia potencial gravitacional.",
+      "correta": "energia potencial gravitacional é a energia associada à posição de um corpo em um campo gravitacional",
+      "comentario": "A síntese correta preserva a definição, o foco e o uso analítico de energia potencial gravitacional.",
       "tempoEstimado": 55,
       "tags": [
         "trabalho-e-energia",
@@ -2974,22 +2974,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Energia potencial el�stica",
+      "subtopico": "Energia potencial elástica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em F�sica, Energia potencial el�stica pode ser definido(a) como:",
+      "enunciado": "Em Física, Energia potencial elástica pode ser definido(a) como:",
       "opcoes": [
-        "a energia armazenada em corpos el�sticos quando sofrem deforma��o",
-        "a grandeza associada � transfer�ncia de energia produzida por uma for�a ao longo de um deslocamento",
-        "o c�lculo do trabalho quando a for�a mant�m m�dulo e dire��o constantes durante o deslocamento considerado",
-        "a grandeza que mede a rapidez com que o trabalho � realizado ou a energia � transferida"
+        "a energia armazenada em corpos elásticos quando sofrem deformação",
+        "a grandeza associada à transferência de energia produzida por uma força ao longo de um deslocamento",
+        "o cálculo do trabalho quando a força mantém módulo e direção constantes durante o deslocamento considerado",
+        "a grandeza que mede a rapidez com que o trabalho é realizado ou a energia é transferida"
       ],
-      "correta": "a energia armazenada em corpos el�sticos quando sofrem deforma��o",
-      "comentario": "Energia potencial el�stica refere-se � energia armazenada em corpos el�sticos quando sofrem deforma��o.",
+      "correta": "a energia armazenada em corpos elásticos quando sofrem deformação",
+      "comentario": "Energia potencial elástica refere-se à energia armazenada em corpos elásticos quando sofrem deformação.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -3013,22 +3013,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Energia potencial el�stica",
+      "subtopico": "Energia potencial elástica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situa��o: uma mola comprimida ou esticada pode realizar trabalho ao retornar � sua forma original Esse caso exemplifica melhor qual subt�pico?",
+      "enunciado": "Observe a situação: uma mola comprimida ou esticada pode realizar trabalho ao retornar à sua forma original Esse caso exemplifica melhor qual subtópico?",
       "opcoes": [
-        "Energia potencial el�stica",
+        "Energia potencial elástica",
         "Conceito de trabalho",
-        "Trabalho de for�a constante",
-        "Pot�ncia mec�nica"
+        "Trabalho de força constante",
+        "Potência mecânica"
       ],
-      "correta": "Energia potencial el�stica",
-      "comentario": "A situa��o apresentada � um exemplo de energia potencial el�stica.",
+      "correta": "Energia potencial elástica",
+      "comentario": "A situação apresentada é um exemplo de energia potencial elástica.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -3052,22 +3052,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Energia potencial el�stica",
+      "subtopico": "Energia potencial elástica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirma��o descreve corretamente energia potencial el�stica?",
+      "enunciado": "Qual afirmação descreve corretamente energia potencial elástica?",
       "opcoes": [
-        "A energia armazenada em corpos el�sticos quando sofrem deforma��o.",
-        "A grandeza associada � transfer�ncia de energia produzida por uma for�a ao longo de um deslocamento.",
-        "O c�lculo do trabalho quando a for�a mant�m m�dulo e dire��o constantes durante o deslocamento considerado.",
-        "A grandeza que mede a rapidez com que o trabalho � realizado ou a energia � transferida."
+        "A energia armazenada em corpos elásticos quando sofrem deformação.",
+        "A grandeza associada à transferência de energia produzida por uma força ao longo de um deslocamento.",
+        "O cálculo do trabalho quando a força mantém módulo e direção constantes durante o deslocamento considerado.",
+        "A grandeza que mede a rapidez com que o trabalho é realizado ou a energia é transferida."
       ],
-      "correta": "A energia armazenada em corpos el�sticos quando sofrem deforma��o.",
-      "comentario": "A afirma��o correta retoma o sentido central de energia potencial el�stica.",
+      "correta": "A energia armazenada em corpos elásticos quando sofrem deformação.",
+      "comentario": "A afirmação correta retoma o sentido central de energia potencial elástica.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -3091,22 +3091,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Energia potencial el�stica",
+      "subtopico": "Energia potencial elástica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa incompat�vel com energia potencial el�stica.",
+      "enunciado": "Assinale a alternativa incompatível com energia potencial elástica.",
       "opcoes": [
-        "afirmar que a energia potencial el�stica existe mesmo sem qualquer deforma��o do sistema.",
-        "o armazenamento de energia devido � deforma��o el�stica de molas e sistemas semelhantes.",
-        "energia potencial el�stica � a energia armazenada em deforma��es el�sticas.",
-        "a energia armazenada em corpos el�sticos quando sofrem deforma��o."
+        "afirmar que a energia potencial elástica existe mesmo sem qualquer deformação do sistema.",
+        "o armazenamento de energia devido à deformação elástica de molas e sistemas semelhantes.",
+        "energia potencial elástica é a energia armazenada em deformações elásticas.",
+        "a energia armazenada em corpos elásticos quando sofrem deformação."
       ],
-      "correta": "afirmar que a energia potencial el�stica existe mesmo sem qualquer deforma��o do sistema.",
-      "comentario": "Afirmar que a energia potencial el�stica existe mesmo sem qualquer deforma��o do sistema n�o representa energia potencial el�stica, enquanto as demais alternativas se relacionam com esse subt�pico.",
+      "correta": "afirmar que a energia potencial elástica existe mesmo sem qualquer deformação do sistema.",
+      "comentario": "Afirmar que a energia potencial elástica existe mesmo sem qualquer deformação do sistema não representa energia potencial elástica, enquanto as demais alternativas se relacionam com esse subtópico.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -3130,22 +3130,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Energia potencial el�stica",
+      "subtopico": "Energia potencial elástica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando se estuda energia potencial el�stica, o foco principal est� em:",
+      "enunciado": "Quando se estuda energia potencial elástica, o foco principal está em:",
       "opcoes": [
-        "o armazenamento de energia devido � deforma��o el�stica de molas e sistemas semelhantes",
-        "a rela��o entre for�a aplicada, deslocamento e transfer�ncia de energia mec�nica",
-        "a determina��o do trabalho em situa��es simples com for�a constante",
-        "a compara��o entre a quantidade de trabalho realizado e o tempo gasto para realiz�-lo"
+        "o armazenamento de energia devido à deformação elástica de molas e sistemas semelhantes",
+        "a relação entre força aplicada, deslocamento e transferência de energia mecânica",
+        "a determinação do trabalho em situações simples com força constante",
+        "a comparação entre a quantidade de trabalho realizado e o tempo gasto para realizá-lo"
       ],
-      "correta": "o armazenamento de energia devido � deforma��o el�stica de molas e sistemas semelhantes",
-      "comentario": "Energia potencial el�stica volta a aten��o para o armazenamento de energia devido � deforma��o el�stica de molas e sistemas semelhantes.",
+      "correta": "o armazenamento de energia devido à deformação elástica de molas e sistemas semelhantes",
+      "comentario": "Energia potencial elástica volta a atenção para o armazenamento de energia devido à deformação elástica de molas e sistemas semelhantes.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -3169,22 +3169,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Energia potencial el�stica",
+      "subtopico": "Energia potencial elástica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferen�a entre energia potencial el�stica e energia potencial gravitacional � que:",
+      "enunciado": "A principal diferença entre energia potencial elástica e energia potencial gravitacional é que:",
       "opcoes": [
-        "energia potencial el�stica depende da deforma��o do elemento el�stico, enquanto energia potencial gravitacional depende da posi��o em rela��o ao campo gravitacional",
-        "Energia potencial el�stica e Energia potencial gravitacional s�o exatamente a mesma ideia f�sica em qualquer situa��o.",
-        "Energia potencial gravitacional elimina a necessidade de observar energia potencial el�stica.",
-        "Energia potencial el�stica depende apenas de opini�o pessoal, sem rela��o com grandezas, modelos ou medidas."
+        "energia potencial elástica depende da deformação do elemento elástico, enquanto energia potencial gravitacional depende da posição em relação ao campo gravitacional",
+        "Energia potencial elástica e Energia potencial gravitacional são exatamente a mesma ideia física em qualquer situação.",
+        "Energia potencial gravitacional elimina a necessidade de observar energia potencial elástica.",
+        "Energia potencial elástica depende apenas de opinião pessoal, sem relação com grandezas, modelos ou medidas."
       ],
-      "correta": "energia potencial el�stica depende da deforma��o do elemento el�stico, enquanto energia potencial gravitacional depende da posi��o em rela��o ao campo gravitacional",
-      "comentario": "A compara��o correta distingue os dois subt�picos sem confundir seus objetos de estudo.",
+      "correta": "energia potencial elástica depende da deformação do elemento elástico, enquanto energia potencial gravitacional depende da posição em relação ao campo gravitacional",
+      "comentario": "A comparação correta distingue os dois subtópicos sem confundir seus objetos de estudo.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -3208,22 +3208,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Energia potencial el�stica",
+      "subtopico": "Energia potencial elástica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma observa��o experimental, registrou-se o seguinte caso: uma mola comprimida ou esticada pode realizar trabalho ao retornar � sua forma original A leitura f�sica mais adequada aponta para:",
+      "enunciado": "Em uma observação experimental, registrou-se o seguinte caso: uma mola comprimida ou esticada pode realizar trabalho ao retornar à sua forma original A leitura física mais adequada aponta para:",
       "opcoes": [
-        "o caso mostra que a deforma��o el�stica conserva energia dispon�vel para transforma��o posterior",
-        "Energia potencial el�stica mostra que as grandezas envolvidas n�o precisam ser relacionadas para interpretar o caso.",
-        "Energia potencial el�stica prova que a situa��o dispensa qualquer leitura f�sica ou quantitativa.",
-        "Energia potencial el�stica significa que o fen�meno n�o pode ser descrito por vari�veis f�sicas."
+        "o caso mostra que a deformação elástica conserva energia disponível para transformação posterior",
+        "Energia potencial elástica mostra que as grandezas envolvidas não precisam ser relacionadas para interpretar o caso.",
+        "Energia potencial elástica prova que a situação dispensa qualquer leitura física ou quantitativa.",
+        "Energia potencial elástica significa que o fenômeno não pode ser descrito por variáveis físicas."
       ],
-      "correta": "o caso mostra que a deforma��o el�stica conserva energia dispon�vel para transforma��o posterior",
-      "comentario": "Energia potencial el�stica permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
+      "correta": "o caso mostra que a deformação elástica conserva energia disponível para transformação posterior",
+      "comentario": "Energia potencial elástica permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -3247,22 +3247,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Energia potencial el�stica",
+      "subtopico": "Energia potencial elástica",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situa��o abaixo evidencia energia potencial el�stica de maneira mais clara?",
+      "enunciado": "Qual situação abaixo evidencia energia potencial elástica de maneira mais clara?",
       "opcoes": [
-        "analisar o armazenamento de energia em uma mola comprimida em laborat�rio",
-        "analisar o empurr�o de um carrinho que realmente se move ao longo de uma superf�cie",
-        "calcular o trabalho de uma for�a horizontal que arrasta um bloco por alguns metros",
+        "analisar o armazenamento de energia em uma mola comprimida em laboratério",
+        "analisar o empurrão de um carrinho que realmente se move ao longo de uma superfície",
+        "calcular o trabalho de uma força horizontal que arrasta um bloco por alguns metros",
         "comparar dois elevadores que realizam o mesmo trabalho em tempos diferentes"
       ],
-      "correta": "analisar o armazenamento de energia em uma mola comprimida em laborat�rio",
-      "comentario": "A alternativa correta aproxima energia potencial el�stica de uma situa��o concreta.",
+      "correta": "analisar o armazenamento de energia em uma mola comprimida em laboratério",
+      "comentario": "A alternativa correta aproxima energia potencial elástica de uma situação concreta.",
       "tempoEstimado": 35,
       "tags": [
         "trabalho-e-energia",
@@ -3286,22 +3286,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Energia potencial el�stica",
+      "subtopico": "Energia potencial elástica",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"uma mola comprimida ou esticada pode realizar trabalho ao retornar � sua forma original\", qual conclus�o � mais adequada?",
+      "enunciado": "Ao analisar o caso \"uma mola comprimida ou esticada pode realizar trabalho ao retornar à sua forma original\", qual conclusão é mais adequada?",
       "opcoes": [
-        "o caso mostra que a deforma��o el�stica conserva energia dispon�vel para transforma��o posterior",
-        "A situa��o indica que energia potencial el�stica n�o possui rela��o com medidas, vari�veis ou interpreta��o f�sica.",
-        "A situa��o prova que energia potencial el�stica s� existe em exemplos te�ricos sem uso cotidiano.",
-        "A situa��o mostra que energia potencial el�stica torna desnecess�rio comparar dados e modelos."
+        "o caso mostra que a deformação elástica conserva energia disponível para transformação posterior",
+        "A situação indica que energia potencial elástica não possui relação com medidas, variáveis ou interpretação física.",
+        "A situação prova que energia potencial elástica só existe em exemplos teóricos sem uso cotidiano.",
+        "A situação mostra que energia potencial elástica torna desnecessário comparar dados e modelos."
       ],
-      "correta": "o caso mostra que a deforma��o el�stica conserva energia dispon�vel para transforma��o posterior",
-      "comentario": "A conclus�o correta mant�m coer�ncia com os dados apresentados e com energia potencial el�stica.",
+      "correta": "o caso mostra que a deformação elástica conserva energia disponível para transformação posterior",
+      "comentario": "A conclusão correta mantém coerência com os dados apresentados e com energia potencial elástica.",
       "tempoEstimado": 35,
       "tags": [
         "trabalho-e-energia",
@@ -3325,22 +3325,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Energia potencial el�stica",
+      "subtopico": "Energia potencial elástica",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com energia potencial el�stica?",
+      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com energia potencial elástica?",
       "opcoes": [
-        "como a deforma��o de uma mola altera a energia potencial el�stica do sistema?",
-        "como a aplica��o de uma for�a ao longo de um deslocamento produz trabalho mec�nico?",
-        "como calcular o trabalho realizado por uma for�a constante em um deslocamento?",
-        "por que duas situa��es com o mesmo trabalho podem apresentar pot�ncias diferentes?"
+        "como a deformação de uma mola altera a energia potencial elástica do sistema?",
+        "como a aplicação de uma força ao longo de um deslocamento produz trabalho mecânico?",
+        "como calcular o trabalho realizado por uma força constante em um deslocamento?",
+        "por que duas situações com o mesmo trabalho podem apresentar potências diferentes?"
       ],
-      "correta": "como a deforma��o de uma mola altera a energia potencial el�stica do sistema?",
-      "comentario": "A pergunta correta investiga energia potencial el�stica de forma direta e coerente.",
+      "correta": "como a deformação de uma mola altera a energia potencial elástica do sistema?",
+      "comentario": "A pergunta correta investiga energia potencial elástica de forma direta e coerente.",
       "tempoEstimado": 35,
       "tags": [
         "trabalho-e-energia",
@@ -3364,22 +3364,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Energia potencial el�stica",
+      "subtopico": "Energia potencial elástica",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a afirma��o que revela compreens�o inadequada de energia potencial el�stica.",
+      "enunciado": "Assinale a afirmação que revela compreensão inadequada de energia potencial elástica.",
       "opcoes": [
-        "A energia armazenada em corpos el�sticos quando sofrem deforma��o.",
-        "O armazenamento de energia devido � deforma��o el�stica de molas e sistemas semelhantes.",
-        "Energia potencial el�stica � a energia armazenada em deforma��es el�sticas.",
-        "Molas deformadas n�o armazenam energia, apenas for�a instant�nea."
+        "A energia armazenada em corpos elásticos quando sofrem deformação.",
+        "O armazenamento de energia devido à deformação elástica de molas e sistemas semelhantes.",
+        "Energia potencial elástica é a energia armazenada em deformações elásticas.",
+        "Molas deformadas não armazenam energia, apenas força instantânea."
       ],
-      "correta": "Molas deformadas n�o armazenam energia, apenas for�a instant�nea.",
-      "comentario": "A alternativa incorreta expressa um equ�voco comum sobre energia potencial el�stica.",
+      "correta": "Molas deformadas não armazenam energia, apenas força instantânea.",
+      "comentario": "A alternativa incorreta expressa um equívoco comum sobre energia potencial elástica.",
       "tempoEstimado": 45,
       "tags": [
         "trabalho-e-energia",
@@ -3403,22 +3403,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Energia potencial el�stica",
+      "subtopico": "Energia potencial elástica",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre F�sica, um estudante afirmou: \"quanto maior a deforma��o el�stica, maior a energia potencial armazenada no sistema\". Qual avalia��o � mais consistente?",
+      "enunciado": "Em um debate sobre Física, um estudante afirmou: \"quanto maior a deformação elástica, maior a energia potencial armazenada no sistema\". Qual avaliação é mais consistente?",
       "opcoes": [
-        "A afirma��o est� correta, porque a deforma��o do corpo el�stico representa energia capaz de ser convertida em outras formas durante o retorno",
-        "A afirma��o est� incorreta, porque energia potencial el�stica nunca pode ser usada na F�sica escolar.",
-        "A afirma��o � irrelevante, porque energia potencial el�stica n�o se relaciona com interpreta��o de fen�menos.",
-        "A afirma��o est� incorreta, porque energia potencial el�stica elimina a necessidade de medir e comparar grandezas."
+        "A afirmação está correta, porque a deformação do corpo elástico representa energia capaz de ser convertida em outras formas durante o retorno",
+        "A afirmação está incorreta, porque energia potencial elástica nunca pode ser usada na Física escolar.",
+        "A afirmação é irrelevante, porque energia potencial elástica não se relaciona com interpretação de fenômenos.",
+        "A afirmação está incorreta, porque energia potencial elástica elimina a necessidade de medir e comparar grandezas."
       ],
-      "correta": "A afirma��o est� correta, porque a deforma��o do corpo el�stico representa energia capaz de ser convertida em outras formas durante o retorno",
-      "comentario": "A avalia��o correta recupera o n�cleo conceitual de energia potencial el�stica.",
+      "correta": "A afirmação está correta, porque a deformação do corpo elástico representa energia capaz de ser convertida em outras formas durante o retorno",
+      "comentario": "A avaliação correta recupera o núcleo conceitual de energia potencial elástica.",
       "tempoEstimado": 45,
       "tags": [
         "trabalho-e-energia",
@@ -3442,22 +3442,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Energia potencial el�stica",
+      "subtopico": "Energia potencial elástica",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se energia potencial el�stica fosse ignorado(a) na an�lise de um problema f�sico, o resultado mais prov�vel seria:",
+      "enunciado": "Se energia potencial elástica fosse ignorado(a) na análise de um problema físico, o resultado mais provável seria:",
       "opcoes": [
-        "sistemas com molas, arcos ou amortecedores perderiam interpreta��o energ�tica adequada",
-        "o problema continuaria exatamente igual, porque energia potencial el�stica n�o interfere na an�lise f�sica",
-        "seria poss�vel resolver a situa��o sem observar nenhuma grandeza, rela��o ou modelo",
-        "a interpreta��o ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
+        "sistemas com molas, arcos ou amortecedores perderiam interpretação energética adequada",
+        "o problema continuaria exatamente igual, porque energia potencial elástica não interfere na análise física",
+        "seria possível resolver a situação sem observar nenhuma grandeza, relação ou modelo",
+        "a interpretação ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
       ],
-      "correta": "sistemas com molas, arcos ou amortecedores perderiam interpreta��o energ�tica adequada",
-      "comentario": "Ignorar energia potencial el�stica compromete a leitura f�sica e a qualidade da solu��o.",
+      "correta": "sistemas com molas, arcos ou amortecedores perderiam interpretação energética adequada",
+      "comentario": "Ignorar energia potencial elástica compromete a leitura física e a qualidade da solução.",
       "tempoEstimado": 55,
       "tags": [
         "trabalho-e-energia",
@@ -3481,22 +3481,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Energia potencial el�stica",
+      "subtopico": "Energia potencial elástica",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente energia potencial el�stica a uma situa��o escolar ou cotidiana?",
+      "enunciado": "Qual alternativa aplica corretamente energia potencial elástica a uma situação escolar ou cotidiana?",
       "opcoes": [
-        "analisar o armazenamento de energia em uma mola comprimida em laborat�rio",
-        "explicar o funcionamento energ�tico de uma bicicleta, um elevador ou uma catapulta simples",
-        "analisar o rendimento de um elevador, motor ou aparelho mec�nico simples",
+        "analisar o armazenamento de energia em uma mola comprimida em laboratério",
+        "explicar o funcionamento energético de uma bicicleta, um elevador ou uma catapulta simples",
+        "analisar o rendimento de um elevador, motor ou aparelho mecânico simples",
         "comparar a energia no alto e na base de uma pista sem atrito"
       ],
-      "correta": "analisar o armazenamento de energia em uma mola comprimida em laborat�rio",
-      "comentario": "A aplica��o correta mostra como energia potencial el�stica aparece em contextos pr�ximos do cotidiano.",
+      "correta": "analisar o armazenamento de energia em uma mola comprimida em laboratério",
+      "comentario": "A aplicação correta mostra como energia potencial elástica aparece em contextos próximos do cotidiano.",
       "tempoEstimado": 55,
       "tags": [
         "trabalho-e-energia",
@@ -3520,22 +3520,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Energia potencial el�stica",
+      "subtopico": "Energia potencial elástica",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual s�ntese final representa melhor energia potencial el�stica?",
+      "enunciado": "Qual síntese final representa melhor energia potencial elástica?",
       "opcoes": [
-        "energia potencial el�stica � a energia armazenada em deforma��es el�sticas",
-        "trabalho mec�nico representa a transfer�ncia de energia por uma for�a ao longo de um deslocamento",
-        "o trabalho de for�a constante relaciona for�a, deslocamento e orienta��o relativa em uma express�o simples",
-        "pot�ncia mec�nica mede a rapidez com que o trabalho � realizado"
+        "energia potencial elástica é a energia armazenada em deformações elásticas",
+        "trabalho mecânico representa a transferência de energia por uma força ao longo de um deslocamento",
+        "o trabalho de força constante relaciona força, deslocamento e orientação relativa em uma expressão simples",
+        "potência mecânica mede a rapidez com que o trabalho é realizado"
       ],
-      "correta": "energia potencial el�stica � a energia armazenada em deforma��es el�sticas",
-      "comentario": "A s�ntese correta preserva a defini��o, o foco e o uso anal�tico de energia potencial el�stica.",
+      "correta": "energia potencial elástica é a energia armazenada em deformações elásticas",
+      "comentario": "A síntese correta preserva a definição, o foco e o uso analítico de energia potencial elástica.",
       "tempoEstimado": 55,
       "tags": [
         "trabalho-e-energia",
@@ -3559,22 +3559,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
       "subtopico": "Teorema trabalho-energia",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em F�sica, Teorema trabalho-energia pode ser definido(a) como:",
+      "enunciado": "Em Física, Teorema trabalho-energia pode ser definido(a) como:",
       "opcoes": [
-        "a rela��o segundo a qual o trabalho da for�a resultante � igual � varia��o da energia cin�tica de um corpo",
-        "a grandeza associada � transfer�ncia de energia produzida por uma for�a ao longo de um deslocamento",
-        "o c�lculo do trabalho quando a for�a mant�m m�dulo e dire��o constantes durante o deslocamento considerado",
-        "a grandeza que mede a rapidez com que o trabalho � realizado ou a energia � transferida"
+        "a relação segundo a qual o trabalho da força resultante é igual à variação da energia cinética de um corpo",
+        "a grandeza associada à transferência de energia produzida por uma força ao longo de um deslocamento",
+        "o cálculo do trabalho quando a força mantém módulo e direção constantes durante o deslocamento considerado",
+        "a grandeza que mede a rapidez com que o trabalho é realizado ou a energia é transferida"
       ],
-      "correta": "a rela��o segundo a qual o trabalho da for�a resultante � igual � varia��o da energia cin�tica de um corpo",
-      "comentario": "Teorema trabalho-energia refere-se � rela��o segundo a qual o trabalho da for�a resultante � igual � varia��o da energia cin�tica de um corpo.",
+      "correta": "a relação segundo a qual o trabalho da força resultante é igual à variação da energia cinética de um corpo",
+      "comentario": "Teorema trabalho-energia refere-se à relação segundo a qual o trabalho da força resultante é igual à variação da energia cinética de um corpo.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -3598,22 +3598,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
       "subtopico": "Teorema trabalho-energia",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situa��o: um bloco acelerado por uma for�a resultante ganha velocidade ao longo do deslocamento Esse caso exemplifica melhor qual subt�pico?",
+      "enunciado": "Observe a situação: um bloco acelerado por uma força resultante ganha velocidade ao longo do deslocamento Esse caso exemplifica melhor qual subtópico?",
       "opcoes": [
         "Teorema trabalho-energia",
         "Conceito de trabalho",
-        "Trabalho de for�a constante",
-        "Pot�ncia mec�nica"
+        "Trabalho de força constante",
+        "Potência mecânica"
       ],
       "correta": "Teorema trabalho-energia",
-      "comentario": "A situa��o apresentada � um exemplo de teorema trabalho-energia.",
+      "comentario": "A situação apresentada é um exemplo de teorema trabalho-energia.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -3637,22 +3637,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
       "subtopico": "Teorema trabalho-energia",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirma��o descreve corretamente teorema trabalho-energia?",
+      "enunciado": "Qual afirmação descreve corretamente teorema trabalho-energia?",
       "opcoes": [
-        "A rela��o segundo a qual o trabalho da for�a resultante � igual � varia��o da energia cin�tica de um corpo.",
-        "A grandeza associada � transfer�ncia de energia produzida por uma for�a ao longo de um deslocamento.",
-        "O c�lculo do trabalho quando a for�a mant�m m�dulo e dire��o constantes durante o deslocamento considerado.",
-        "A grandeza que mede a rapidez com que o trabalho � realizado ou a energia � transferida."
+        "A relação segundo a qual o trabalho da força resultante é igual à variação da energia cinética de um corpo.",
+        "A grandeza associada à transferência de energia produzida por uma força ao longo de um deslocamento.",
+        "O cálculo do trabalho quando a força mantém módulo e direção constantes durante o deslocamento considerado.",
+        "A grandeza que mede a rapidez com que o trabalho é realizado ou a energia é transferida."
       ],
-      "correta": "A rela��o segundo a qual o trabalho da for�a resultante � igual � varia��o da energia cin�tica de um corpo.",
-      "comentario": "A afirma��o correta retoma o sentido central de teorema trabalho-energia.",
+      "correta": "A relação segundo a qual o trabalho da força resultante é igual à variação da energia cinética de um corpo.",
+      "comentario": "A afirmação correta retoma o sentido central de teorema trabalho-energia.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -3676,22 +3676,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
       "subtopico": "Teorema trabalho-energia",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa incompat�vel com teorema trabalho-energia.",
+      "enunciado": "Assinale a alternativa incompatível com teorema trabalho-energia.",
       "opcoes": [
-        "afirmar que a energia cin�tica muda sem qualquer trabalho resultante atuando sobre o corpo.",
-        "a conex�o entre trabalho resultante e mudan�a da energia cin�tica.",
-        "o teorema trabalho-energia relaciona o trabalho resultante com a varia��o da energia cin�tica.",
-        "a rela��o segundo a qual o trabalho da for�a resultante � igual � varia��o da energia cin�tica de um corpo."
+        "afirmar que a energia cinética muda sem qualquer trabalho resultante atuando sobre o corpo.",
+        "a conexão entre trabalho resultante e mudança da energia cinética.",
+        "o teorema trabalho-energia relaciona o trabalho resultante com a variação da energia cinética.",
+        "a relação segundo a qual o trabalho da força resultante é igual à variação da energia cinética de um corpo."
       ],
-      "correta": "afirmar que a energia cin�tica muda sem qualquer trabalho resultante atuando sobre o corpo.",
-      "comentario": "Afirmar que a energia cin�tica muda sem qualquer trabalho resultante atuando sobre o corpo n�o representa teorema trabalho-energia, enquanto as demais alternativas se relacionam com esse subt�pico.",
+      "correta": "afirmar que a energia cinética muda sem qualquer trabalho resultante atuando sobre o corpo.",
+      "comentario": "Afirmar que a energia cinética muda sem qualquer trabalho resultante atuando sobre o corpo não representa teorema trabalho-energia, enquanto as demais alternativas se relacionam com esse subtópico.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -3715,22 +3715,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
       "subtopico": "Teorema trabalho-energia",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando se estuda teorema trabalho-energia, o foco principal est� em:",
+      "enunciado": "Quando se estuda teorema trabalho-energia, o foco principal está em:",
       "opcoes": [
-        "a conex�o entre trabalho resultante e mudan�a da energia cin�tica",
-        "a rela��o entre for�a aplicada, deslocamento e transfer�ncia de energia mec�nica",
-        "a determina��o do trabalho em situa��es simples com for�a constante",
-        "a compara��o entre a quantidade de trabalho realizado e o tempo gasto para realiz�-lo"
+        "a conexão entre trabalho resultante e mudança da energia cinética",
+        "a relação entre força aplicada, deslocamento e transferência de energia mecânica",
+        "a determinação do trabalho em situações simples com força constante",
+        "a comparação entre a quantidade de trabalho realizado e o tempo gasto para realizá-lo"
       ],
-      "correta": "a conex�o entre trabalho resultante e mudan�a da energia cin�tica",
-      "comentario": "Teorema trabalho-energia volta a aten��o para a conex�o entre trabalho resultante e mudan�a da energia cin�tica.",
+      "correta": "a conexão entre trabalho resultante e mudança da energia cinética",
+      "comentario": "Teorema trabalho-energia volta a atenção para a conexão entre trabalho resultante e mudança da energia cinética.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -3754,22 +3754,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
       "subtopico": "Teorema trabalho-energia",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferen�a entre teorema trabalho-energia e energia cin�tica � que:",
+      "enunciado": "A principal diferença entre teorema trabalho-energia e energia cinética é que:",
       "opcoes": [
-        "teorema trabalho-energia explica como a energia cin�tica varia sob a��o do trabalho resultante, enquanto energia cin�tica � a pr�pria grandeza associada ao movimento",
-        "Teorema trabalho-energia e Energia cin�tica s�o exatamente a mesma ideia f�sica em qualquer situa��o.",
-        "Energia cin�tica elimina a necessidade de observar teorema trabalho-energia.",
-        "Teorema trabalho-energia depende apenas de opini�o pessoal, sem rela��o com grandezas, modelos ou medidas."
+        "teorema trabalho-energia explica como a energia cinética varia sob ação do trabalho resultante, enquanto energia cinética é a própria grandeza associada ao movimento",
+        "Teorema trabalho-energia e Energia cinética são exatamente a mesma ideia física em qualquer situação.",
+        "Energia cinética elimina a necessidade de observar teorema trabalho-energia.",
+        "Teorema trabalho-energia depende apenas de opinião pessoal, sem relação com grandezas, modelos ou medidas."
       ],
-      "correta": "teorema trabalho-energia explica como a energia cin�tica varia sob a��o do trabalho resultante, enquanto energia cin�tica � a pr�pria grandeza associada ao movimento",
-      "comentario": "A compara��o correta distingue os dois subt�picos sem confundir seus objetos de estudo.",
+      "correta": "teorema trabalho-energia explica como a energia cinética varia sob ação do trabalho resultante, enquanto energia cinética é a própria grandeza associada ao movimento",
+      "comentario": "A comparação correta distingue os dois subtópicos sem confundir seus objetos de estudo.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -3793,21 +3793,21 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
       "subtopico": "Teorema trabalho-energia",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma observa��o experimental, registrou-se o seguinte caso: um bloco acelerado por uma for�a resultante ganha velocidade ao longo do deslocamento A leitura f�sica mais adequada aponta para:",
+      "enunciado": "Em uma observação experimental, registrou-se o seguinte caso: um bloco acelerado por uma força resultante ganha velocidade ao longo do deslocamento A leitura física mais adequada aponta para:",
       "opcoes": [
-        "o caso mostra que a mudan�a do movimento pode ser entendida pela energia transferida pela resultante das for�as",
-        "Teorema trabalho-energia mostra que as grandezas envolvidas n�o precisam ser relacionadas para interpretar o caso.",
-        "Teorema trabalho-energia prova que a situa��o dispensa qualquer leitura f�sica ou quantitativa.",
-        "Teorema trabalho-energia significa que o fen�meno n�o pode ser descrito por vari�veis f�sicas."
+        "o caso mostra que a mudança do movimento pode ser entendida pela energia transferida pela resultante das forças",
+        "Teorema trabalho-energia mostra que as grandezas envolvidas não precisam ser relacionadas para interpretar o caso.",
+        "Teorema trabalho-energia prova que a situação dispensa qualquer leitura física ou quantitativa.",
+        "Teorema trabalho-energia significa que o fenômeno não pode ser descrito por variáveis físicas."
       ],
-      "correta": "o caso mostra que a mudan�a do movimento pode ser entendida pela energia transferida pela resultante das for�as",
+      "correta": "o caso mostra que a mudança do movimento pode ser entendida pela energia transferida pela resultante das forças",
       "comentario": "Teorema trabalho-energia permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
       "tempoEstimado": 25,
       "tags": [
@@ -3832,22 +3832,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
       "subtopico": "Teorema trabalho-energia",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situa��o abaixo evidencia teorema trabalho-energia de maneira mais clara?",
+      "enunciado": "Qual situação abaixo evidencia teorema trabalho-energia de maneira mais clara?",
       "opcoes": [
-        "explicar o ganho de velocidade de um carrinho puxado por for�a resultante ao longo de uma pista",
-        "analisar o empurr�o de um carrinho que realmente se move ao longo de uma superf�cie",
-        "calcular o trabalho de uma for�a horizontal que arrasta um bloco por alguns metros",
+        "explicar o ganho de velocidade de um carrinho puxado por força resultante ao longo de uma pista",
+        "analisar o empurrão de um carrinho que realmente se move ao longo de uma superfície",
+        "calcular o trabalho de uma força horizontal que arrasta um bloco por alguns metros",
         "comparar dois elevadores que realizam o mesmo trabalho em tempos diferentes"
       ],
-      "correta": "explicar o ganho de velocidade de um carrinho puxado por for�a resultante ao longo de uma pista",
-      "comentario": "A alternativa correta aproxima teorema trabalho-energia de uma situa��o concreta.",
+      "correta": "explicar o ganho de velocidade de um carrinho puxado por força resultante ao longo de uma pista",
+      "comentario": "A alternativa correta aproxima teorema trabalho-energia de uma situação concreta.",
       "tempoEstimado": 35,
       "tags": [
         "trabalho-e-energia",
@@ -3871,22 +3871,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
       "subtopico": "Teorema trabalho-energia",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"um bloco acelerado por uma for�a resultante ganha velocidade ao longo do deslocamento\", qual conclus�o � mais adequada?",
+      "enunciado": "Ao analisar o caso \"um bloco acelerado por uma força resultante ganha velocidade ao longo do deslocamento\", qual conclusão é mais adequada?",
       "opcoes": [
-        "o caso mostra que a mudan�a do movimento pode ser entendida pela energia transferida pela resultante das for�as",
-        "A situa��o indica que teorema trabalho-energia n�o possui rela��o com medidas, vari�veis ou interpreta��o f�sica.",
-        "A situa��o prova que teorema trabalho-energia s� existe em exemplos te�ricos sem uso cotidiano.",
-        "A situa��o mostra que teorema trabalho-energia torna desnecess�rio comparar dados e modelos."
+        "o caso mostra que a mudança do movimento pode ser entendida pela energia transferida pela resultante das forças",
+        "A situação indica que teorema trabalho-energia não possui relação com medidas, variáveis ou interpretação física.",
+        "A situação prova que teorema trabalho-energia só existe em exemplos teóricos sem uso cotidiano.",
+        "A situação mostra que teorema trabalho-energia torna desnecessário comparar dados e modelos."
       ],
-      "correta": "o caso mostra que a mudan�a do movimento pode ser entendida pela energia transferida pela resultante das for�as",
-      "comentario": "A conclus�o correta mant�m coer�ncia com os dados apresentados e com teorema trabalho-energia.",
+      "correta": "o caso mostra que a mudança do movimento pode ser entendida pela energia transferida pela resultante das forças",
+      "comentario": "A conclusão correta mantém coerência com os dados apresentados e com teorema trabalho-energia.",
       "tempoEstimado": 35,
       "tags": [
         "trabalho-e-energia",
@@ -3910,7 +3910,7 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
       "subtopico": "Teorema trabalho-energia",
       "dificuldadeLabel": "medio",
@@ -3919,12 +3919,12 @@
       "tipo": "multipla_escolha",
       "enunciado": "Qual pergunta de pesquisa se relaciona melhor com teorema trabalho-energia?",
       "opcoes": [
-        "como o trabalho da for�a resultante se relaciona com a varia��o da energia cin�tica?",
-        "como a aplica��o de uma for�a ao longo de um deslocamento produz trabalho mec�nico?",
-        "como calcular o trabalho realizado por uma for�a constante em um deslocamento?",
-        "por que duas situa��es com o mesmo trabalho podem apresentar pot�ncias diferentes?"
+        "como o trabalho da força resultante se relaciona com a variação da energia cinética?",
+        "como a aplicação de uma força ao longo de um deslocamento produz trabalho mecânico?",
+        "como calcular o trabalho realizado por uma força constante em um deslocamento?",
+        "por que duas situações com o mesmo trabalho podem apresentar potências diferentes?"
       ],
-      "correta": "como o trabalho da for�a resultante se relaciona com a varia��o da energia cin�tica?",
+      "correta": "como o trabalho da força resultante se relaciona com a variação da energia cinética?",
       "comentario": "A pergunta correta investiga teorema trabalho-energia de forma direta e coerente.",
       "tempoEstimado": 35,
       "tags": [
@@ -3949,22 +3949,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
       "subtopico": "Teorema trabalho-energia",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a afirma��o que revela compreens�o inadequada de teorema trabalho-energia.",
+      "enunciado": "Assinale a afirmação que revela compreensão inadequada de teorema trabalho-energia.",
       "opcoes": [
-        "A rela��o segundo a qual o trabalho da for�a resultante � igual � varia��o da energia cin�tica de um corpo.",
-        "A conex�o entre trabalho resultante e mudan�a da energia cin�tica.",
-        "O teorema trabalho-energia relaciona o trabalho resultante com a varia��o da energia cin�tica.",
-        "O trabalho resultante altera apenas a posi��o do corpo, sem rela��o com sua energia cin�tica."
+        "A relação segundo a qual o trabalho da força resultante é igual à variação da energia cinética de um corpo.",
+        "A conexão entre trabalho resultante e mudança da energia cinética.",
+        "O teorema trabalho-energia relaciona o trabalho resultante com a variação da energia cinética.",
+        "O trabalho resultante altera apenas a posição do corpo, sem relação com sua energia cinética."
       ],
-      "correta": "O trabalho resultante altera apenas a posi��o do corpo, sem rela��o com sua energia cin�tica.",
-      "comentario": "A alternativa incorreta expressa um equ�voco comum sobre teorema trabalho-energia.",
+      "correta": "O trabalho resultante altera apenas a posição do corpo, sem relação com sua energia cinética.",
+      "comentario": "A alternativa incorreta expressa um equívoco comum sobre teorema trabalho-energia.",
       "tempoEstimado": 45,
       "tags": [
         "trabalho-e-energia",
@@ -3988,22 +3988,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
       "subtopico": "Teorema trabalho-energia",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre F�sica, um estudante afirmou: \"se a for�a resultante realiza trabalho positivo, a energia cin�tica do corpo tende a aumentar\". Qual avalia��o � mais consistente?",
+      "enunciado": "Em um debate sobre Física, um estudante afirmou: \"se a força resultante realiza trabalho positivo, a energia cinética do corpo tende a aumentar\". Qual avaliação é mais consistente?",
       "opcoes": [
-        "A afirma��o est� correta, porque o teorema trabalho-energia liga diretamente o trabalho resultante � mudan�a da energia cin�tica",
-        "A afirma��o est� incorreta, porque teorema trabalho-energia nunca pode ser usada na F�sica escolar.",
-        "A afirma��o � irrelevante, porque teorema trabalho-energia n�o se relaciona com interpreta��o de fen�menos.",
-        "A afirma��o est� incorreta, porque teorema trabalho-energia elimina a necessidade de medir e comparar grandezas."
+        "A afirmação está correta, porque o teorema trabalho-energia liga diretamente o trabalho resultante à mudança da energia cinética",
+        "A afirmação está incorreta, porque teorema trabalho-energia nunca pode ser usada na Física escolar.",
+        "A afirmação é irrelevante, porque teorema trabalho-energia não se relaciona com interpretação de fenômenos.",
+        "A afirmação está incorreta, porque teorema trabalho-energia elimina a necessidade de medir e comparar grandezas."
       ],
-      "correta": "A afirma��o est� correta, porque o teorema trabalho-energia liga diretamente o trabalho resultante � mudan�a da energia cin�tica",
-      "comentario": "A avalia��o correta recupera o n�cleo conceitual de teorema trabalho-energia.",
+      "correta": "A afirmação está correta, porque o teorema trabalho-energia liga diretamente o trabalho resultante à mudança da energia cinética",
+      "comentario": "A avaliação correta recupera o núcleo conceitual de teorema trabalho-energia.",
       "tempoEstimado": 45,
       "tags": [
         "trabalho-e-energia",
@@ -4027,22 +4027,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
       "subtopico": "Teorema trabalho-energia",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se teorema trabalho-energia fosse ignorado(a) na an�lise de um problema f�sico, o resultado mais prov�vel seria:",
+      "enunciado": "Se teorema trabalho-energia fosse ignorado(a) na análise de um problema físico, o resultado mais provável seria:",
       "opcoes": [
-        "mudan�as de velocidade seriam analisadas sem a liga��o energ�tica que simplifica muitos problemas de din�mica",
-        "o problema continuaria exatamente igual, porque teorema trabalho-energia n�o interfere na an�lise f�sica",
-        "seria poss�vel resolver a situa��o sem observar nenhuma grandeza, rela��o ou modelo",
-        "a interpreta��o ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
+        "mudanças de velocidade seriam analisadas sem a ligação energética que simplifica muitos problemas de dinâmica",
+        "o problema continuaria exatamente igual, porque teorema trabalho-energia não interfere na análise física",
+        "seria possível resolver a situação sem observar nenhuma grandeza, relação ou modelo",
+        "a interpretação ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
       ],
-      "correta": "mudan�as de velocidade seriam analisadas sem a liga��o energ�tica que simplifica muitos problemas de din�mica",
-      "comentario": "Ignorar teorema trabalho-energia compromete a leitura f�sica e a qualidade da solu��o.",
+      "correta": "mudanças de velocidade seriam analisadas sem a ligação energética que simplifica muitos problemas de dinâmica",
+      "comentario": "Ignorar teorema trabalho-energia compromete a leitura física e a qualidade da solução.",
       "tempoEstimado": 55,
       "tags": [
         "trabalho-e-energia",
@@ -4066,22 +4066,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
       "subtopico": "Teorema trabalho-energia",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente teorema trabalho-energia a uma situa��o escolar ou cotidiana?",
+      "enunciado": "Qual alternativa aplica corretamente teorema trabalho-energia a uma situação escolar ou cotidiana?",
       "opcoes": [
-        "explicar o ganho de velocidade de um carrinho puxado por for�a resultante ao longo de uma pista",
-        "explicar o funcionamento energ�tico de uma bicicleta, um elevador ou uma catapulta simples",
-        "analisar o rendimento de um elevador, motor ou aparelho mec�nico simples",
+        "explicar o ganho de velocidade de um carrinho puxado por força resultante ao longo de uma pista",
+        "explicar o funcionamento energético de uma bicicleta, um elevador ou uma catapulta simples",
+        "analisar o rendimento de um elevador, motor ou aparelho mecânico simples",
         "comparar a energia no alto e na base de uma pista sem atrito"
       ],
-      "correta": "explicar o ganho de velocidade de um carrinho puxado por for�a resultante ao longo de uma pista",
-      "comentario": "A aplica��o correta mostra como teorema trabalho-energia aparece em contextos pr�ximos do cotidiano.",
+      "correta": "explicar o ganho de velocidade de um carrinho puxado por força resultante ao longo de uma pista",
+      "comentario": "A aplicação correta mostra como teorema trabalho-energia aparece em contextos próximos do cotidiano.",
       "tempoEstimado": 55,
       "tags": [
         "trabalho-e-energia",
@@ -4105,22 +4105,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
       "subtopico": "Teorema trabalho-energia",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual s�ntese final representa melhor teorema trabalho-energia?",
+      "enunciado": "Qual síntese final representa melhor teorema trabalho-energia?",
       "opcoes": [
-        "o teorema trabalho-energia relaciona o trabalho resultante com a varia��o da energia cin�tica",
-        "trabalho mec�nico representa a transfer�ncia de energia por uma for�a ao longo de um deslocamento",
-        "o trabalho de for�a constante relaciona for�a, deslocamento e orienta��o relativa em uma express�o simples",
-        "pot�ncia mec�nica mede a rapidez com que o trabalho � realizado"
+        "o teorema trabalho-energia relaciona o trabalho resultante com a variação da energia cinética",
+        "trabalho mecânico representa a transferência de energia por uma força ao longo de um deslocamento",
+        "o trabalho de força constante relaciona força, deslocamento e orientação relativa em uma expressão simples",
+        "potência mecânica mede a rapidez com que o trabalho é realizado"
       ],
-      "correta": "o teorema trabalho-energia relaciona o trabalho resultante com a varia��o da energia cin�tica",
-      "comentario": "A s�ntese correta preserva a defini��o, o foco e o uso anal�tico de teorema trabalho-energia.",
+      "correta": "o teorema trabalho-energia relaciona o trabalho resultante com a variação da energia cinética",
+      "comentario": "A síntese correta preserva a definição, o foco e o uso analítico de teorema trabalho-energia.",
       "tempoEstimado": 55,
       "tags": [
         "trabalho-e-energia",
@@ -4144,22 +4144,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Conserva��o da energia mec�nica",
+      "subtopico": "Conservação da energia mecânica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em F�sica, Conserva��o da energia mec�nica pode ser definido(a) como:",
+      "enunciado": "Em Física, Conservação da energia mecânica pode ser definido(a) como:",
       "opcoes": [
-        "o princ�pio segundo o qual a soma das energias cin�tica e potenciais se mant�m constante quando apenas for�as conservativas atuam no sistema",
-        "a grandeza associada � transfer�ncia de energia produzida por uma for�a ao longo de um deslocamento",
-        "o c�lculo do trabalho quando a for�a mant�m m�dulo e dire��o constantes durante o deslocamento considerado",
-        "a grandeza que mede a rapidez com que o trabalho � realizado ou a energia � transferida"
+        "o princípio segundo o qual a soma das energias cinética e potenciais se mantêm constante quando apenas forças conservativas atuam no sistema",
+        "a grandeza associada à transferência de energia produzida por uma força ao longo de um deslocamento",
+        "o cálculo do trabalho quando a força mantém módulo e direção constantes durante o deslocamento considerado",
+        "a grandeza que mede a rapidez com que o trabalho é realizado ou a energia é transferida"
       ],
-      "correta": "o princ�pio segundo o qual a soma das energias cin�tica e potenciais se mant�m constante quando apenas for�as conservativas atuam no sistema",
-      "comentario": "Conserva��o da energia mec�nica refere-se ao princ�pio segundo o qual a soma das energias cin�tica e potenciais se mant�m constante quando apenas for�as conservativas atuam no sistema.",
+      "correta": "o princípio segundo o qual a soma das energias cinética e potenciais se mantêm constante quando apenas forças conservativas atuam no sistema",
+      "comentario": "Conservação da energia mecânica refere-se ao princípio segundo o qual a soma das energias cinética e potenciais se mantêm constante quando apenas forças conservativas atuam no sistema.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -4183,22 +4183,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Conserva��o da energia mec�nica",
+      "subtopico": "Conservação da energia mecânica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situa��o: um corpo desce uma rampa sem atrito e transforma energia potencial em cin�tica Esse caso exemplifica melhor qual subt�pico?",
+      "enunciado": "Observe a situação: um corpo desce uma rampa sem atrito e transforma energia potencial em cinética Esse caso exemplifica melhor qual subtópico?",
       "opcoes": [
-        "Conserva��o da energia mec�nica",
+        "Conservação da energia mecânica",
         "Conceito de trabalho",
-        "Trabalho de for�a constante",
-        "Pot�ncia mec�nica"
+        "Trabalho de força constante",
+        "Potência mecânica"
       ],
-      "correta": "Conserva��o da energia mec�nica",
-      "comentario": "A situa��o apresentada � um exemplo de conserva��o da energia mec�nica.",
+      "correta": "Conservação da energia mecânica",
+      "comentario": "A situação apresentada é um exemplo de conservação da energia mecânica.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -4222,22 +4222,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Conserva��o da energia mec�nica",
+      "subtopico": "Conservação da energia mecânica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirma��o descreve corretamente conserva��o da energia mec�nica?",
+      "enunciado": "Qual afirmação descreve corretamente conservação da energia mecânica?",
       "opcoes": [
-        "O princ�pio segundo o qual a soma das energias cin�tica e potenciais se mant�m constante quando apenas for�as conservativas atuam no sistema.",
-        "A grandeza associada � transfer�ncia de energia produzida por uma for�a ao longo de um deslocamento.",
-        "O c�lculo do trabalho quando a for�a mant�m m�dulo e dire��o constantes durante o deslocamento considerado.",
-        "A grandeza que mede a rapidez com que o trabalho � realizado ou a energia � transferida."
+        "O princípio segundo o qual a soma das energias cinética e potenciais se mantêm constante quando apenas forças conservativas atuam no sistema.",
+        "A grandeza associada à transferência de energia produzida por uma força ao longo de um deslocamento.",
+        "O cálculo do trabalho quando a força mantém módulo e direção constantes durante o deslocamento considerado.",
+        "A grandeza que mede a rapidez com que o trabalho é realizado ou a energia é transferida."
       ],
-      "correta": "O princ�pio segundo o qual a soma das energias cin�tica e potenciais se mant�m constante quando apenas for�as conservativas atuam no sistema.",
-      "comentario": "A afirma��o correta retoma o sentido central de conserva��o da energia mec�nica.",
+      "correta": "O princípio segundo o qual a soma das energias cinética e potenciais se mantêm constante quando apenas forças conservativas atuam no sistema.",
+      "comentario": "A afirmação correta retoma o sentido central de conservação da energia mecânica.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -4261,22 +4261,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Conserva��o da energia mec�nica",
+      "subtopico": "Conservação da energia mecânica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa incompat�vel com conserva��o da energia mec�nica.",
+      "enunciado": "Assinale a alternativa incompatível com conservação da energia mecânica.",
       "opcoes": [
-        "manter a energia mec�nica total constante em um sistema com muito atrito e aquecimento sem considerar perdas.",
-        "a transforma��o entre formas de energia mec�nica sem perda total quando n�o h� dissipa��o.",
-        "a conserva��o da energia mec�nica descreve a troca entre energias cin�tica e potenciais sem altera��o do total mec�nico.",
-        "o princ�pio segundo o qual a soma das energias cin�tica e potenciais se mant�m constante quando apenas for�as conservativas atuam no sistema."
+        "manter a energia mecânica total constante em um sistema com muito atrito e aquecimento sem considerar perdas.",
+        "a transformação entre formas de energia mecânica sem perda total quando não há dissipação.",
+        "a conservação da energia mecânica descreve a troca entre energias cinética e potenciais sem alteração do total mecânico.",
+        "o princípio segundo o qual a soma das energias cinética e potenciais se mantêm constante quando apenas forças conservativas atuam no sistema."
       ],
-      "correta": "manter a energia mec�nica total constante em um sistema com muito atrito e aquecimento sem considerar perdas.",
-      "comentario": "Manter a energia mec�nica total constante em um sistema com muito atrito e aquecimento sem considerar perdas n�o representa conserva��o da energia mec�nica, enquanto as demais alternativas se relacionam com esse subt�pico.",
+      "correta": "manter a energia mecânica total constante em um sistema com muito atrito e aquecimento sem considerar perdas.",
+      "comentario": "Manter a energia mecânica total constante em um sistema com muito atrito e aquecimento sem considerar perdas não representa conservação da energia mecânica, enquanto as demais alternativas se relacionam com esse subtópico.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -4300,22 +4300,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Conserva��o da energia mec�nica",
+      "subtopico": "Conservação da energia mecânica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando se estuda conserva��o da energia mec�nica, o foco principal est� em:",
+      "enunciado": "Quando se estuda conservação da energia mecânica, o foco principal está em:",
       "opcoes": [
-        "a transforma��o entre formas de energia mec�nica sem perda total quando n�o h� dissipa��o",
-        "a rela��o entre for�a aplicada, deslocamento e transfer�ncia de energia mec�nica",
-        "a determina��o do trabalho em situa��es simples com for�a constante",
-        "a compara��o entre a quantidade de trabalho realizado e o tempo gasto para realiz�-lo"
+        "a transformação entre formas de energia mecânica sem perda total quando não há dissipação",
+        "a relação entre força aplicada, deslocamento e transferência de energia mecânica",
+        "a determinação do trabalho em situações simples com força constante",
+        "a comparação entre a quantidade de trabalho realizado e o tempo gasto para realizá-lo"
       ],
-      "correta": "a transforma��o entre formas de energia mec�nica sem perda total quando n�o h� dissipa��o",
-      "comentario": "Conserva��o da energia mec�nica volta a aten��o para a transforma��o entre formas de energia mec�nica sem perda total quando n�o h� dissipa��o.",
+      "correta": "a transformação entre formas de energia mecânica sem perda total quando não há dissipação",
+      "comentario": "Conservação da energia mecânica volta a atenção para a transformação entre formas de energia mecânica sem perda total quando não há dissipação.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -4339,22 +4339,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Conserva��o da energia mec�nica",
+      "subtopico": "Conservação da energia mecânica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferen�a entre conserva��o da energia mec�nica e rendimento e dissipa��o � que:",
+      "enunciado": "A principal diferença entre conservação da energia mecânica e rendimento e dissipação é que:",
       "opcoes": [
-        "conserva��o da energia mec�nica vale quando n�o h� perdas dissipativas relevantes, enquanto rendimento e dissipa��o analisa situa��es em que parte da energia mec�nica se transforma em formas n�o mec�nicas",
-        "Conserva��o da energia mec�nica e Rendimento e dissipa��o s�o exatamente a mesma ideia f�sica em qualquer situa��o.",
-        "Rendimento e dissipa��o elimina a necessidade de observar conserva��o da energia mec�nica.",
-        "Conserva��o da energia mec�nica depende apenas de opini�o pessoal, sem rela��o com grandezas, modelos ou medidas."
+        "conservação da energia mecânica vale quando não há perdas dissipativas relevantes, enquanto rendimento e dissipação analisa situações em que parte da energia mecânica se transforma em formas não mecânicas",
+        "Conservação da energia mecânica e Rendimento e dissipação são exatamente a mesma ideia física em qualquer situação.",
+        "Rendimento e dissipação elimina a necessidade de observar conservação da energia mecânica.",
+        "Conservação da energia mecânica depende apenas de opinião pessoal, sem relação com grandezas, modelos ou medidas."
       ],
-      "correta": "conserva��o da energia mec�nica vale quando n�o h� perdas dissipativas relevantes, enquanto rendimento e dissipa��o analisa situa��es em que parte da energia mec�nica se transforma em formas n�o mec�nicas",
-      "comentario": "A compara��o correta distingue os dois subt�picos sem confundir seus objetos de estudo.",
+      "correta": "conservação da energia mecânica vale quando não há perdas dissipativas relevantes, enquanto rendimento e dissipação analisa situações em que parte da energia mecânica se transforma em formas não mecânicas",
+      "comentario": "A comparação correta distingue os dois subtópicos sem confundir seus objetos de estudo.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -4378,22 +4378,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Conserva��o da energia mec�nica",
+      "subtopico": "Conservação da energia mecânica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma observa��o experimental, registrou-se o seguinte caso: um corpo desce uma rampa sem atrito e transforma energia potencial em cin�tica A leitura f�sica mais adequada aponta para:",
+      "enunciado": "Em uma observação experimental, registrou-se o seguinte caso: um corpo desce uma rampa sem atrito e transforma energia potencial em cinética A leitura física mais adequada aponta para:",
       "opcoes": [
-        "o caso mostra que a energia mec�nica total se conserva quando n�o h� dissipa��o relevante no sistema",
-        "Conserva��o da energia mec�nica mostra que as grandezas envolvidas n�o precisam ser relacionadas para interpretar o caso.",
-        "Conserva��o da energia mec�nica prova que a situa��o dispensa qualquer leitura f�sica ou quantitativa.",
-        "Conserva��o da energia mec�nica significa que o fen�meno n�o pode ser descrito por vari�veis f�sicas."
+        "o caso mostra que a energia mecânica total se conserva quando não há dissipação relevante no sistema",
+        "Conservação da energia mecânica mostra que as grandezas envolvidas não precisam ser relacionadas para interpretar o caso.",
+        "Conservação da energia mecânica prova que a situação dispensa qualquer leitura física ou quantitativa.",
+        "Conservação da energia mecânica significa que o fenômeno não pode ser descrito por variáveis físicas."
       ],
-      "correta": "o caso mostra que a energia mec�nica total se conserva quando n�o h� dissipa��o relevante no sistema",
-      "comentario": "Conserva��o da energia mec�nica permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
+      "correta": "o caso mostra que a energia mecânica total se conserva quando não há dissipação relevante no sistema",
+      "comentario": "Conservação da energia mecânica permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -4417,22 +4417,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Conserva��o da energia mec�nica",
+      "subtopico": "Conservação da energia mecânica",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situa��o abaixo evidencia conserva��o da energia mec�nica de maneira mais clara?",
+      "enunciado": "Qual situação abaixo evidencia conservação da energia mecânica de maneira mais clara?",
       "opcoes": [
         "comparar a energia no alto e na base de uma pista sem atrito",
-        "analisar o empurr�o de um carrinho que realmente se move ao longo de uma superf�cie",
-        "calcular o trabalho de uma for�a horizontal que arrasta um bloco por alguns metros",
+        "analisar o empurrão de um carrinho que realmente se move ao longo de uma superfície",
+        "calcular o trabalho de uma força horizontal que arrasta um bloco por alguns metros",
         "comparar dois elevadores que realizam o mesmo trabalho em tempos diferentes"
       ],
       "correta": "comparar a energia no alto e na base de uma pista sem atrito",
-      "comentario": "A alternativa correta aproxima conserva��o da energia mec�nica de uma situa��o concreta.",
+      "comentario": "A alternativa correta aproxima conservação da energia mecânica de uma situação concreta.",
       "tempoEstimado": 35,
       "tags": [
         "trabalho-e-energia",
@@ -4456,22 +4456,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Conserva��o da energia mec�nica",
+      "subtopico": "Conservação da energia mecânica",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"um corpo desce uma rampa sem atrito e transforma energia potencial em cin�tica\", qual conclus�o � mais adequada?",
+      "enunciado": "Ao analisar o caso \"um corpo desce uma rampa sem atrito e transforma energia potencial em cinética\", qual conclusão é mais adequada?",
       "opcoes": [
-        "o caso mostra que a energia mec�nica total se conserva quando n�o h� dissipa��o relevante no sistema",
-        "A situa��o indica que conserva��o da energia mec�nica n�o possui rela��o com medidas, vari�veis ou interpreta��o f�sica.",
-        "A situa��o prova que conserva��o da energia mec�nica s� existe em exemplos te�ricos sem uso cotidiano.",
-        "A situa��o mostra que conserva��o da energia mec�nica torna desnecess�rio comparar dados e modelos."
+        "o caso mostra que a energia mecânica total se conserva quando não há dissipação relevante no sistema",
+        "A situação indica que conservação da energia mecânica não possui relação com medidas, variáveis ou interpretação física.",
+        "A situação prova que conservação da energia mecânica só existe em exemplos teóricos sem uso cotidiano.",
+        "A situação mostra que conservação da energia mecânica torna desnecessário comparar dados e modelos."
       ],
-      "correta": "o caso mostra que a energia mec�nica total se conserva quando n�o h� dissipa��o relevante no sistema",
-      "comentario": "A conclus�o correta mant�m coer�ncia com os dados apresentados e com conserva��o da energia mec�nica.",
+      "correta": "o caso mostra que a energia mecânica total se conserva quando não há dissipação relevante no sistema",
+      "comentario": "A conclusão correta mantém coerência com os dados apresentados e com conservação da energia mecânica.",
       "tempoEstimado": 35,
       "tags": [
         "trabalho-e-energia",
@@ -4495,22 +4495,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Conserva��o da energia mec�nica",
+      "subtopico": "Conservação da energia mecânica",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com conserva��o da energia mec�nica?",
+      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com conservação da energia mecânica?",
       "opcoes": [
-        "em que condi��es a energia mec�nica total de um sistema permanece constante?",
-        "como a aplica��o de uma for�a ao longo de um deslocamento produz trabalho mec�nico?",
-        "como calcular o trabalho realizado por uma for�a constante em um deslocamento?",
-        "por que duas situa��es com o mesmo trabalho podem apresentar pot�ncias diferentes?"
+        "em que condições a energia mecânica total de um sistema permanece constante?",
+        "como a aplicação de uma força ao longo de um deslocamento produz trabalho mecânico?",
+        "como calcular o trabalho realizado por uma força constante em um deslocamento?",
+        "por que duas situações com o mesmo trabalho podem apresentar potências diferentes?"
       ],
-      "correta": "em que condi��es a energia mec�nica total de um sistema permanece constante?",
-      "comentario": "A pergunta correta investiga conserva��o da energia mec�nica de forma direta e coerente.",
+      "correta": "em que condições a energia mecânica total de um sistema permanece constante?",
+      "comentario": "A pergunta correta investiga conservação da energia mecânica de forma direta e coerente.",
       "tempoEstimado": 35,
       "tags": [
         "trabalho-e-energia",
@@ -4534,22 +4534,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Conserva��o da energia mec�nica",
+      "subtopico": "Conservação da energia mecânica",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a afirma��o que revela compreens�o inadequada de conserva��o da energia mec�nica.",
+      "enunciado": "Assinale a afirmação que revela compreensão inadequada de conservação da energia mecânica.",
       "opcoes": [
-        "O princ�pio segundo o qual a soma das energias cin�tica e potenciais se mant�m constante quando apenas for�as conservativas atuam no sistema.",
-        "A transforma��o entre formas de energia mec�nica sem perda total quando n�o h� dissipa��o.",
-        "A conserva��o da energia mec�nica descreve a troca entre energias cin�tica e potenciais sem altera��o do total mec�nico.",
-        "Energia mec�nica sempre se conserva, mesmo com atrito intenso e aquecimento."
+        "O princípio segundo o qual a soma das energias cinética e potenciais se mantêm constante quando apenas forças conservativas atuam no sistema.",
+        "A transformação entre formas de energia mecânica sem perda total quando não há dissipação.",
+        "A conservação da energia mecânica descreve a troca entre energias cinética e potenciais sem alteração do total mecânico.",
+        "Energia mecânica sempre se conserva, mesmo com atrito intenso e aquecimento."
       ],
-      "correta": "Energia mec�nica sempre se conserva, mesmo com atrito intenso e aquecimento.",
-      "comentario": "A alternativa incorreta expressa um equ�voco comum sobre conserva��o da energia mec�nica.",
+      "correta": "Energia mecânica sempre se conserva, mesmo com atrito intenso e aquecimento.",
+      "comentario": "A alternativa incorreta expressa um equívoco comum sobre conservação da energia mecânica.",
       "tempoEstimado": 45,
       "tags": [
         "trabalho-e-energia",
@@ -4573,22 +4573,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Conserva��o da energia mec�nica",
+      "subtopico": "Conservação da energia mecânica",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre F�sica, um estudante afirmou: \"sem for�as dissipativas relevantes, energia potencial e cin�tica podem se transformar mantendo constante a energia mec�nica total\". Qual avalia��o � mais consistente?",
+      "enunciado": "Em um debate sobre Física, um estudante afirmou: \"sem forças dissipativas relevantes, energia potencial e cinética podem se transformar mantendo constante a energia mecânica total\". Qual avaliação é mais consistente?",
       "opcoes": [
-        "A afirma��o est� correta, porque for�as conservativas promovem troca entre formas mec�nicas sem perda do total mec�nico",
-        "A afirma��o est� incorreta, porque conserva��o da energia mec�nica nunca pode ser usada na F�sica escolar.",
-        "A afirma��o � irrelevante, porque conserva��o da energia mec�nica n�o se relaciona com interpreta��o de fen�menos.",
-        "A afirma��o est� incorreta, porque conserva��o da energia mec�nica elimina a necessidade de medir e comparar grandezas."
+        "A afirmação está correta, porque forças conservativas promovem troca entre formas mecânicas sem perda do total mecânico",
+        "A afirmação está incorreta, porque conservação da energia mecânica nunca pode ser usada na Física escolar.",
+        "A afirmação é irrelevante, porque conservação da energia mecânica não se relaciona com interpretação de fenômenos.",
+        "A afirmação está incorreta, porque conservação da energia mecânica elimina a necessidade de medir e comparar grandezas."
       ],
-      "correta": "A afirma��o est� correta, porque for�as conservativas promovem troca entre formas mec�nicas sem perda do total mec�nico",
-      "comentario": "A avalia��o correta recupera o n�cleo conceitual de conserva��o da energia mec�nica.",
+      "correta": "A afirmação está correta, porque forças conservativas promovem troca entre formas mecânicas sem perda do total mecânico",
+      "comentario": "A avaliação correta recupera o núcleo conceitual de conservação da energia mecânica.",
       "tempoEstimado": 45,
       "tags": [
         "trabalho-e-energia",
@@ -4612,22 +4612,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Conserva��o da energia mec�nica",
+      "subtopico": "Conservação da energia mecânica",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se conserva��o da energia mec�nica fosse ignorado(a) na an�lise de um problema f�sico, o resultado mais prov�vel seria:",
+      "enunciado": "Se conservação da energia mecânica fosse ignorado(a) na análise de um problema físico, o resultado mais provável seria:",
       "opcoes": [
-        "a an�lise de movimentos em rampas, quedas e molas ficaria sem um princ�pio central para relacionar estados diferentes",
-        "o problema continuaria exatamente igual, porque conserva��o da energia mec�nica n�o interfere na an�lise f�sica",
-        "seria poss�vel resolver a situa��o sem observar nenhuma grandeza, rela��o ou modelo",
-        "a interpreta��o ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
+        "a análise de movimentos em rampas, quedas e molas ficaria sem um princípio central para relacionar estados diferentes",
+        "o problema continuaria exatamente igual, porque conservação da energia mecânica não interfere na análise física",
+        "seria possível resolver a situação sem observar nenhuma grandeza, relação ou modelo",
+        "a interpretação ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
       ],
-      "correta": "a an�lise de movimentos em rampas, quedas e molas ficaria sem um princ�pio central para relacionar estados diferentes",
-      "comentario": "Ignorar conserva��o da energia mec�nica compromete a leitura f�sica e a qualidade da solu��o.",
+      "correta": "a análise de movimentos em rampas, quedas e molas ficaria sem um princípio central para relacionar estados diferentes",
+      "comentario": "Ignorar conservação da energia mecânica compromete a leitura física e a qualidade da solução.",
       "tempoEstimado": 55,
       "tags": [
         "trabalho-e-energia",
@@ -4651,22 +4651,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Conserva��o da energia mec�nica",
+      "subtopico": "Conservação da energia mecânica",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente conserva��o da energia mec�nica a uma situa��o escolar ou cotidiana?",
+      "enunciado": "Qual alternativa aplica corretamente conservação da energia mecânica a uma situação escolar ou cotidiana?",
       "opcoes": [
         "comparar a energia no alto e na base de uma pista sem atrito",
-        "explicar o funcionamento energ�tico de uma bicicleta, um elevador ou uma catapulta simples",
-        "analisar o rendimento de um elevador, motor ou aparelho mec�nico simples",
-        "explicar o ganho de velocidade de um carrinho puxado por for�a resultante ao longo de uma pista"
+        "explicar o funcionamento energético de uma bicicleta, um elevador ou uma catapulta simples",
+        "analisar o rendimento de um elevador, motor ou aparelho mecânico simples",
+        "explicar o ganho de velocidade de um carrinho puxado por força resultante ao longo de uma pista"
       ],
       "correta": "comparar a energia no alto e na base de uma pista sem atrito",
-      "comentario": "A aplica��o correta mostra como conserva��o da energia mec�nica aparece em contextos pr�ximos do cotidiano.",
+      "comentario": "A aplicação correta mostra como conservação da energia mecânica aparece em contextos próximos do cotidiano.",
       "tempoEstimado": 55,
       "tags": [
         "trabalho-e-energia",
@@ -4690,22 +4690,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Conserva��o da energia mec�nica",
+      "subtopico": "Conservação da energia mecânica",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual s�ntese final representa melhor conserva��o da energia mec�nica?",
+      "enunciado": "Qual síntese final representa melhor conservação da energia mecânica?",
       "opcoes": [
-        "a conserva��o da energia mec�nica descreve a troca entre energias cin�tica e potenciais sem altera��o do total mec�nico",
-        "trabalho mec�nico representa a transfer�ncia de energia por uma for�a ao longo de um deslocamento",
-        "o trabalho de for�a constante relaciona for�a, deslocamento e orienta��o relativa em uma express�o simples",
-        "pot�ncia mec�nica mede a rapidez com que o trabalho � realizado"
+        "a conservação da energia mecânica descreve a troca entre energias cinética e potenciais sem alteração do total mecânico",
+        "trabalho mecânico representa a transferência de energia por uma força ao longo de um deslocamento",
+        "o trabalho de força constante relaciona força, deslocamento e orientação relativa em uma expressão simples",
+        "potência mecânica mede a rapidez com que o trabalho é realizado"
       ],
-      "correta": "a conserva��o da energia mec�nica descreve a troca entre energias cin�tica e potenciais sem altera��o do total mec�nico",
-      "comentario": "A s�ntese correta preserva a defini��o, o foco e o uso anal�tico de conserva��o da energia mec�nica.",
+      "correta": "a conservação da energia mecânica descreve a troca entre energias cinética e potenciais sem alteração do total mecânico",
+      "comentario": "A síntese correta preserva a definição, o foco e o uso analítico de conservação da energia mecânica.",
       "tempoEstimado": 55,
       "tags": [
         "trabalho-e-energia",
@@ -4729,22 +4729,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Rendimento e dissipa��o",
+      "subtopico": "Rendimento e dissipação",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em F�sica, Rendimento e dissipa��o pode ser definido(a) como:",
+      "enunciado": "Em Física, Rendimento e dissipação pode ser definido(a) como:",
       "opcoes": [
-        "a an�lise da fra��o �til de energia ou pot�ncia obtida e das perdas associadas a processos reais",
-        "a grandeza associada � transfer�ncia de energia produzida por uma for�a ao longo de um deslocamento",
-        "o c�lculo do trabalho quando a for�a mant�m m�dulo e dire��o constantes durante o deslocamento considerado",
-        "a grandeza que mede a rapidez com que o trabalho � realizado ou a energia � transferida"
+        "a análise da fração útil de energia ou potência obtida e das perdas associadas a processos reais",
+        "a grandeza associada à transferência de energia produzida por uma força ao longo de um deslocamento",
+        "o cálculo do trabalho quando a força mantém módulo e direção constantes durante o deslocamento considerado",
+        "a grandeza que mede a rapidez com que o trabalho é realizado ou a energia é transferida"
       ],
-      "correta": "a an�lise da fra��o �til de energia ou pot�ncia obtida e das perdas associadas a processos reais",
-      "comentario": "Rendimento e dissipa��o refere-se � an�lise da fra��o �til de energia ou pot�ncia obtida e das perdas associadas a processos reais.",
+      "correta": "a análise da fração útil de energia ou potência obtida e das perdas associadas a processos reais",
+      "comentario": "Rendimento e dissipação refere-se à análise da fração útil de energia ou potência obtida e das perdas associadas a processos reais.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -4768,22 +4768,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Rendimento e dissipa��o",
+      "subtopico": "Rendimento e dissipação",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situa��o: uma m�quina recebe energia el�trica, mas parte dela � convertida em aquecimento em vez de movimento �til Esse caso exemplifica melhor qual subt�pico?",
+      "enunciado": "Observe a situação: uma máquina recebe energia elétrica, mas parte dela é convertida em aquecimento em vez de movimento útil Esse caso exemplifica melhor qual subtópico?",
       "opcoes": [
-        "Rendimento e dissipa��o",
+        "Rendimento e dissipação",
         "Conceito de trabalho",
-        "Trabalho de for�a constante",
-        "Pot�ncia mec�nica"
+        "Trabalho de força constante",
+        "Potência mecânica"
       ],
-      "correta": "Rendimento e dissipa��o",
-      "comentario": "A situa��o apresentada � um exemplo de rendimento e dissipa��o.",
+      "correta": "Rendimento e dissipação",
+      "comentario": "A situação apresentada é um exemplo de rendimento e dissipação.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -4807,22 +4807,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Rendimento e dissipa��o",
+      "subtopico": "Rendimento e dissipação",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirma��o descreve corretamente rendimento e dissipa��o?",
+      "enunciado": "Qual afirmação descreve corretamente rendimento e dissipação?",
       "opcoes": [
-        "A an�lise da fra��o �til de energia ou pot�ncia obtida e das perdas associadas a processos reais.",
-        "A grandeza associada � transfer�ncia de energia produzida por uma for�a ao longo de um deslocamento.",
-        "O c�lculo do trabalho quando a for�a mant�m m�dulo e dire��o constantes durante o deslocamento considerado.",
-        "A grandeza que mede a rapidez com que o trabalho � realizado ou a energia � transferida."
+        "A análise da fração útil de energia ou potência obtida e das perdas associadas a processos reais.",
+        "A grandeza associada à transferência de energia produzida por uma força ao longo de um deslocamento.",
+        "O cálculo do trabalho quando a força mantém módulo e direção constantes durante o deslocamento considerado.",
+        "A grandeza que mede a rapidez com que o trabalho é realizado ou a energia é transferida."
       ],
-      "correta": "A an�lise da fra��o �til de energia ou pot�ncia obtida e das perdas associadas a processos reais.",
-      "comentario": "A afirma��o correta retoma o sentido central de rendimento e dissipa��o.",
+      "correta": "A análise da fração útil de energia ou potência obtida e das perdas associadas a processos reais.",
+      "comentario": "A afirmação correta retoma o sentido central de rendimento e dissipação.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -4846,22 +4846,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Rendimento e dissipa��o",
+      "subtopico": "Rendimento e dissipação",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa incompat�vel com rendimento e dissipa��o.",
+      "enunciado": "Assinale a alternativa incompatível com rendimento e dissipação.",
       "opcoes": [
-        "assumir rendimento total em qualquer m�quina apenas porque energia n�o desaparece.",
-        "a diferen�a entre energia total fornecida e energia efetivamente aproveitada em sistemas reais.",
-        "rendimento mede a parcela �til da energia, enquanto dissipa��o representa as perdas em processos reais.",
-        "a an�lise da fra��o �til de energia ou pot�ncia obtida e das perdas associadas a processos reais."
+        "assumir rendimento total em qualquer máquina apenas porque energia não desaparece.",
+        "a diferença entre energia total fornecida e energia efetivamente aproveitada em sistemas reais.",
+        "rendimento mede a parcela útil da energia, enquanto dissipação representa as perdas em processos reais.",
+        "a análise da fração útil de energia ou potência obtida e das perdas associadas a processos reais."
       ],
-      "correta": "assumir rendimento total em qualquer m�quina apenas porque energia n�o desaparece.",
-      "comentario": "Assumir rendimento total em qualquer m�quina apenas porque energia n�o desaparece n�o representa rendimento e dissipa��o, enquanto as demais alternativas se relacionam com esse subt�pico.",
+      "correta": "assumir rendimento total em qualquer máquina apenas porque energia não desaparece.",
+      "comentario": "Assumir rendimento total em qualquer máquina apenas porque energia não desaparece não representa rendimento e dissipação, enquanto as demais alternativas se relacionam com esse subtópico.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -4885,22 +4885,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Rendimento e dissipa��o",
+      "subtopico": "Rendimento e dissipação",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando se estuda rendimento e dissipa��o, o foco principal est� em:",
+      "enunciado": "Quando se estuda rendimento e dissipação, o foco principal está em:",
       "opcoes": [
-        "a diferen�a entre energia total fornecida e energia efetivamente aproveitada em sistemas reais",
-        "a rela��o entre for�a aplicada, deslocamento e transfer�ncia de energia mec�nica",
-        "a determina��o do trabalho em situa��es simples com for�a constante",
-        "a compara��o entre a quantidade de trabalho realizado e o tempo gasto para realiz�-lo"
+        "a diferença entre energia total fornecida e energia efetivamente aproveitada em sistemas reais",
+        "a relação entre força aplicada, deslocamento e transferência de energia mecânica",
+        "a determinação do trabalho em situações simples com força constante",
+        "a comparação entre a quantidade de trabalho realizado e o tempo gasto para realizá-lo"
       ],
-      "correta": "a diferen�a entre energia total fornecida e energia efetivamente aproveitada em sistemas reais",
-      "comentario": "Rendimento e dissipa��o volta a aten��o para a diferen�a entre energia total fornecida e energia efetivamente aproveitada em sistemas reais.",
+      "correta": "a diferença entre energia total fornecida e energia efetivamente aproveitada em sistemas reais",
+      "comentario": "Rendimento e dissipação volta a atenção para a diferença entre energia total fornecida e energia efetivamente aproveitada em sistemas reais.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -4924,22 +4924,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Rendimento e dissipa��o",
+      "subtopico": "Rendimento e dissipação",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferen�a entre rendimento e dissipa��o e conserva��o da energia mec�nica � que:",
+      "enunciado": "A principal diferença entre rendimento e dissipação e conservação da energia mecânica é que:",
       "opcoes": [
-        "rendimento e dissipa��o considera perdas e transforma��o em formas n�o �teis, enquanto conserva��o da energia mec�nica trata situa��es ideais ou sem dissipa��o mec�nica relevante",
-        "Rendimento e dissipa��o e Conserva��o da energia mec�nica s�o exatamente a mesma ideia f�sica em qualquer situa��o.",
-        "Conserva��o da energia mec�nica elimina a necessidade de observar rendimento e dissipa��o.",
-        "Rendimento e dissipa��o depende apenas de opini�o pessoal, sem rela��o com grandezas, modelos ou medidas."
+        "rendimento e dissipação considera perdas e transformação em formas não úteis, enquanto conservação da energia mecânica trata situações ideais ou sem dissipação mecânica relevante",
+        "Rendimento e dissipação e Conservação da energia mecânica são exatamente a mesma ideia física em qualquer situação.",
+        "Conservação da energia mecânica elimina a necessidade de observar rendimento e dissipação.",
+        "Rendimento e dissipação depende apenas de opinião pessoal, sem relação com grandezas, modelos ou medidas."
       ],
-      "correta": "rendimento e dissipa��o considera perdas e transforma��o em formas n�o �teis, enquanto conserva��o da energia mec�nica trata situa��es ideais ou sem dissipa��o mec�nica relevante",
-      "comentario": "A compara��o correta distingue os dois subt�picos sem confundir seus objetos de estudo.",
+      "correta": "rendimento e dissipação considera perdas e transformação em formas não úteis, enquanto conservação da energia mecânica trata situações ideais ou sem dissipação mecânica relevante",
+      "comentario": "A comparação correta distingue os dois subtópicos sem confundir seus objetos de estudo.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -4963,22 +4963,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Rendimento e dissipa��o",
+      "subtopico": "Rendimento e dissipação",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma observa��o experimental, registrou-se o seguinte caso: uma m�quina recebe energia el�trica, mas parte dela � convertida em aquecimento em vez de movimento �til A leitura f�sica mais adequada aponta para:",
+      "enunciado": "Em uma observação experimental, registrou-se o seguinte caso: uma máquina recebe energia elétrica, mas parte dela é convertida em aquecimento em vez de movimento útil A leitura física mais adequada aponta para:",
       "opcoes": [
-        "o caso mostra que sistemas reais exigem considerar energia �til e energia dissipada para avalia��o correta",
-        "Rendimento e dissipa��o mostra que as grandezas envolvidas n�o precisam ser relacionadas para interpretar o caso.",
-        "Rendimento e dissipa��o prova que a situa��o dispensa qualquer leitura f�sica ou quantitativa.",
-        "Rendimento e dissipa��o significa que o fen�meno n�o pode ser descrito por vari�veis f�sicas."
+        "o caso mostra que sistemas reais exigem considerar energia útil e energia dissipada para avaliação correta",
+        "Rendimento e dissipação mostra que as grandezas envolvidas não precisam ser relacionadas para interpretar o caso.",
+        "Rendimento e dissipação prova que a situação dispensa qualquer leitura física ou quantitativa.",
+        "Rendimento e dissipação significa que o fenômeno não pode ser descrito por variáveis físicas."
       ],
-      "correta": "o caso mostra que sistemas reais exigem considerar energia �til e energia dissipada para avalia��o correta",
-      "comentario": "Rendimento e dissipa��o permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
+      "correta": "o caso mostra que sistemas reais exigem considerar energia útil e energia dissipada para avaliação correta",
+      "comentario": "Rendimento e dissipação permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -5002,22 +5002,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Rendimento e dissipa��o",
+      "subtopico": "Rendimento e dissipação",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situa��o abaixo evidencia rendimento e dissipa��o de maneira mais clara?",
+      "enunciado": "Qual situação abaixo evidencia rendimento e dissipação de maneira mais clara?",
       "opcoes": [
-        "analisar o rendimento de um elevador, motor ou aparelho mec�nico simples",
-        "analisar o empurr�o de um carrinho que realmente se move ao longo de uma superf�cie",
-        "calcular o trabalho de uma for�a horizontal que arrasta um bloco por alguns metros",
+        "analisar o rendimento de um elevador, motor ou aparelho mecânico simples",
+        "analisar o empurrão de um carrinho que realmente se move ao longo de uma superfície",
+        "calcular o trabalho de uma força horizontal que arrasta um bloco por alguns metros",
         "comparar dois elevadores que realizam o mesmo trabalho em tempos diferentes"
       ],
-      "correta": "analisar o rendimento de um elevador, motor ou aparelho mec�nico simples",
-      "comentario": "A alternativa correta aproxima rendimento e dissipa��o de uma situa��o concreta.",
+      "correta": "analisar o rendimento de um elevador, motor ou aparelho mecânico simples",
+      "comentario": "A alternativa correta aproxima rendimento e dissipação de uma situação concreta.",
       "tempoEstimado": 35,
       "tags": [
         "trabalho-e-energia",
@@ -5041,22 +5041,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Rendimento e dissipa��o",
+      "subtopico": "Rendimento e dissipação",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"uma m�quina recebe energia el�trica, mas parte dela � convertida em aquecimento em vez de movimento �til\", qual conclus�o � mais adequada?",
+      "enunciado": "Ao analisar o caso \"uma máquina recebe energia elétrica, mas parte dela é convertida em aquecimento em vez de movimento útil\", qual conclusão é mais adequada?",
       "opcoes": [
-        "o caso mostra que sistemas reais exigem considerar energia �til e energia dissipada para avalia��o correta",
-        "A situa��o indica que rendimento e dissipa��o n�o possui rela��o com medidas, vari�veis ou interpreta��o f�sica.",
-        "A situa��o prova que rendimento e dissipa��o s� existe em exemplos te�ricos sem uso cotidiano.",
-        "A situa��o mostra que rendimento e dissipa��o torna desnecess�rio comparar dados e modelos."
+        "o caso mostra que sistemas reais exigem considerar energia útil e energia dissipada para avaliação correta",
+        "A situação indica que rendimento e dissipação não possui relação com medidas, variáveis ou interpretação física.",
+        "A situação prova que rendimento e dissipação só existe em exemplos teóricos sem uso cotidiano.",
+        "A situação mostra que rendimento e dissipação torna desnecessário comparar dados e modelos."
       ],
-      "correta": "o caso mostra que sistemas reais exigem considerar energia �til e energia dissipada para avalia��o correta",
-      "comentario": "A conclus�o correta mant�m coer�ncia com os dados apresentados e com rendimento e dissipa��o.",
+      "correta": "o caso mostra que sistemas reais exigem considerar energia útil e energia dissipada para avaliação correta",
+      "comentario": "A conclusão correta mantém coerência com os dados apresentados e com rendimento e dissipação.",
       "tempoEstimado": 35,
       "tags": [
         "trabalho-e-energia",
@@ -5080,22 +5080,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Rendimento e dissipa��o",
+      "subtopico": "Rendimento e dissipação",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com rendimento e dissipa��o?",
+      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com rendimento e dissipação?",
       "opcoes": [
         "por que sistemas reais apresentam rendimento menor que 100 por cento em muitos casos?",
-        "como a aplica��o de uma for�a ao longo de um deslocamento produz trabalho mec�nico?",
-        "como calcular o trabalho realizado por uma for�a constante em um deslocamento?",
-        "por que duas situa��es com o mesmo trabalho podem apresentar pot�ncias diferentes?"
+        "como a aplicação de uma força ao longo de um deslocamento produz trabalho mecânico?",
+        "como calcular o trabalho realizado por uma força constante em um deslocamento?",
+        "por que duas situações com o mesmo trabalho podem apresentar potências diferentes?"
       ],
       "correta": "por que sistemas reais apresentam rendimento menor que 100 por cento em muitos casos?",
-      "comentario": "A pergunta correta investiga rendimento e dissipa��o de forma direta e coerente.",
+      "comentario": "A pergunta correta investiga rendimento e dissipação de forma direta e coerente.",
       "tempoEstimado": 35,
       "tags": [
         "trabalho-e-energia",
@@ -5119,22 +5119,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Rendimento e dissipa��o",
+      "subtopico": "Rendimento e dissipação",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a afirma��o que revela compreens�o inadequada de rendimento e dissipa��o.",
+      "enunciado": "Assinale a afirmação que revela compreensão inadequada de rendimento e dissipação.",
       "opcoes": [
-        "A an�lise da fra��o �til de energia ou pot�ncia obtida e das perdas associadas a processos reais.",
-        "A diferen�a entre energia total fornecida e energia efetivamente aproveitada em sistemas reais.",
-        "Rendimento mede a parcela �til da energia, enquanto dissipa��o representa as perdas em processos reais.",
-        "Toda energia fornecida a uma m�quina se converte integralmente em energia �til."
+        "A análise da fração útil de energia ou potência obtida e das perdas associadas a processos reais.",
+        "A diferença entre energia total fornecida e energia efetivamente aproveitada em sistemas reais.",
+        "Rendimento mede a parcela útil da energia, enquanto dissipação representa as perdas em processos reais.",
+        "Toda energia fornecida a uma máquina se converte integralmente em energia útil."
       ],
-      "correta": "Toda energia fornecida a uma m�quina se converte integralmente em energia �til.",
-      "comentario": "A alternativa incorreta expressa um equ�voco comum sobre rendimento e dissipa��o.",
+      "correta": "Toda energia fornecida a uma máquina se converte integralmente em energia útil.",
+      "comentario": "A alternativa incorreta expressa um equívoco comum sobre rendimento e dissipação.",
       "tempoEstimado": 45,
       "tags": [
         "trabalho-e-energia",
@@ -5158,22 +5158,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Rendimento e dissipa��o",
+      "subtopico": "Rendimento e dissipação",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre F�sica, um estudante afirmou: \"em sistemas reais, parte da energia � dissipada em formas como calor e som, reduzindo o rendimento\". Qual avalia��o � mais consistente?",
+      "enunciado": "Em um debate sobre Física, um estudante afirmou: \"em sistemas reais, parte da energia é dissipada em formas como calor e som, reduzindo o rendimento\". Qual avaliação é mais consistente?",
       "opcoes": [
-        "A afirma��o est� correta, porque transforma��es reais envolvem perdas e convers�es que nem sempre contribuem para o efeito �til desejado",
-        "A afirma��o est� incorreta, porque rendimento e dissipa��o nunca pode ser usada na F�sica escolar.",
-        "A afirma��o � irrelevante, porque rendimento e dissipa��o n�o se relaciona com interpreta��o de fen�menos.",
-        "A afirma��o est� incorreta, porque rendimento e dissipa��o elimina a necessidade de medir e comparar grandezas."
+        "A afirmação está correta, porque transformações reais envolvem perdas e conversóes que nem sempre contribuem para o efeito útil desejado",
+        "A afirmação está incorreta, porque rendimento e dissipação nunca pode ser usada na Física escolar.",
+        "A afirmação é irrelevante, porque rendimento e dissipação não se relaciona com interpretação de fenômenos.",
+        "A afirmação está incorreta, porque rendimento e dissipação elimina a necessidade de medir e comparar grandezas."
       ],
-      "correta": "A afirma��o est� correta, porque transforma��es reais envolvem perdas e convers�es que nem sempre contribuem para o efeito �til desejado",
-      "comentario": "A avalia��o correta recupera o n�cleo conceitual de rendimento e dissipa��o.",
+      "correta": "A afirmação está correta, porque transformações reais envolvem perdas e conversóes que nem sempre contribuem para o efeito útil desejado",
+      "comentario": "A avaliação correta recupera o núcleo conceitual de rendimento e dissipação.",
       "tempoEstimado": 45,
       "tags": [
         "trabalho-e-energia",
@@ -5197,22 +5197,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Rendimento e dissipa��o",
+      "subtopico": "Rendimento e dissipação",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se rendimento e dissipa��o fosse ignorado(a) na an�lise de um problema f�sico, o resultado mais prov�vel seria:",
+      "enunciado": "Se rendimento e dissipação fosse ignorado(a) na análise de um problema físico, o resultado mais provável seria:",
       "opcoes": [
-        "m�quinas, motores e dispositivos seriam avaliados sem considerar perdas inevit�veis em processos reais",
-        "o problema continuaria exatamente igual, porque rendimento e dissipa��o n�o interfere na an�lise f�sica",
-        "seria poss�vel resolver a situa��o sem observar nenhuma grandeza, rela��o ou modelo",
-        "a interpreta��o ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
+        "máquinas, motores e dispositivos seriam avaliados sem considerar perdas inevitáveis em processos reais",
+        "o problema continuaria exatamente igual, porque rendimento e dissipação não interfere na análise física",
+        "seria possível resolver a situação sem observar nenhuma grandeza, relação ou modelo",
+        "a interpretação ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
       ],
-      "correta": "m�quinas, motores e dispositivos seriam avaliados sem considerar perdas inevit�veis em processos reais",
-      "comentario": "Ignorar rendimento e dissipa��o compromete a leitura f�sica e a qualidade da solu��o.",
+      "correta": "máquinas, motores e dispositivos seriam avaliados sem considerar perdas inevitáveis em processos reais",
+      "comentario": "Ignorar rendimento e dissipação compromete a leitura física e a qualidade da solução.",
       "tempoEstimado": 55,
       "tags": [
         "trabalho-e-energia",
@@ -5236,22 +5236,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Rendimento e dissipa��o",
+      "subtopico": "Rendimento e dissipação",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente rendimento e dissipa��o a uma situa��o escolar ou cotidiana?",
+      "enunciado": "Qual alternativa aplica corretamente rendimento e dissipação a uma situação escolar ou cotidiana?",
       "opcoes": [
-        "analisar o rendimento de um elevador, motor ou aparelho mec�nico simples",
-        "explicar o funcionamento energ�tico de uma bicicleta, um elevador ou uma catapulta simples",
+        "analisar o rendimento de um elevador, motor ou aparelho mecânico simples",
+        "explicar o funcionamento energético de uma bicicleta, um elevador ou uma catapulta simples",
         "comparar a energia no alto e na base de uma pista sem atrito",
-        "explicar o ganho de velocidade de um carrinho puxado por for�a resultante ao longo de uma pista"
+        "explicar o ganho de velocidade de um carrinho puxado por força resultante ao longo de uma pista"
       ],
-      "correta": "analisar o rendimento de um elevador, motor ou aparelho mec�nico simples",
-      "comentario": "A aplica��o correta mostra como rendimento e dissipa��o aparece em contextos pr�ximos do cotidiano.",
+      "correta": "analisar o rendimento de um elevador, motor ou aparelho mecânico simples",
+      "comentario": "A aplicação correta mostra como rendimento e dissipação aparece em contextos próximos do cotidiano.",
       "tempoEstimado": 55,
       "tags": [
         "trabalho-e-energia",
@@ -5275,22 +5275,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Rendimento e dissipa��o",
+      "subtopico": "Rendimento e dissipação",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual s�ntese final representa melhor rendimento e dissipa��o?",
+      "enunciado": "Qual síntese final representa melhor rendimento e dissipação?",
       "opcoes": [
-        "rendimento mede a parcela �til da energia, enquanto dissipa��o representa as perdas em processos reais",
-        "trabalho mec�nico representa a transfer�ncia de energia por uma for�a ao longo de um deslocamento",
-        "o trabalho de for�a constante relaciona for�a, deslocamento e orienta��o relativa em uma express�o simples",
-        "pot�ncia mec�nica mede a rapidez com que o trabalho � realizado"
+        "rendimento mede a parcela útil da energia, enquanto dissipação representa as perdas em processos reais",
+        "trabalho mecânico representa a transferência de energia por uma força ao longo de um deslocamento",
+        "o trabalho de força constante relaciona força, deslocamento e orientação relativa em uma expressão simples",
+        "potência mecânica mede a rapidez com que o trabalho é realizado"
       ],
-      "correta": "rendimento mede a parcela �til da energia, enquanto dissipa��o representa as perdas em processos reais",
-      "comentario": "A s�ntese correta preserva a defini��o, o foco e o uso anal�tico de rendimento e dissipa��o.",
+      "correta": "rendimento mede a parcela útil da energia, enquanto dissipação representa as perdas em processos reais",
+      "comentario": "A síntese correta preserva a definição, o foco e o uso analítico de rendimento e dissipação.",
       "tempoEstimado": 55,
       "tags": [
         "trabalho-e-energia",
@@ -5314,22 +5314,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Aplica��es energ�ticas do cotidiano",
+      "subtopico": "Aplicações energéticas do cotidiano",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em F�sica, Aplica��es energ�ticas do cotidiano pode ser definido(a) como:",
+      "enunciado": "Em Física, Aplicações energéticas do cotidiano pode ser definido(a) como:",
       "opcoes": [
-        "o uso dos conceitos de trabalho, pot�ncia e energia para interpretar m�quinas, transporte, quedas, esportes e dispositivos comuns",
-        "a grandeza associada � transfer�ncia de energia produzida por uma for�a ao longo de um deslocamento",
-        "o c�lculo do trabalho quando a for�a mant�m m�dulo e dire��o constantes durante o deslocamento considerado",
-        "a grandeza que mede a rapidez com que o trabalho � realizado ou a energia � transferida"
+        "o uso dos conceitos de trabalho, potência e energia para interpretar máquinas, transporte, quedas, esportes e dispositivos comuns",
+        "a grandeza associada à transferência de energia produzida por uma força ao longo de um deslocamento",
+        "o cálculo do trabalho quando a força mantém módulo e direção constantes durante o deslocamento considerado",
+        "a grandeza que mede a rapidez com que o trabalho é realizado ou a energia é transferida"
       ],
-      "correta": "o uso dos conceitos de trabalho, pot�ncia e energia para interpretar m�quinas, transporte, quedas, esportes e dispositivos comuns",
-      "comentario": "Aplica��es energ�ticas do cotidiano refere-se ao uso dos conceitos de trabalho, pot�ncia e energia para interpretar m�quinas, transporte, quedas, esportes e dispositivos comuns.",
+      "correta": "o uso dos conceitos de trabalho, potência e energia para interpretar máquinas, transporte, quedas, esportes e dispositivos comuns",
+      "comentario": "Aplicações energéticas do cotidiano refere-se ao uso dos conceitos de trabalho, potência e energia para interpretar máquinas, transporte, quedas, esportes e dispositivos comuns.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -5353,22 +5353,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Aplica��es energ�ticas do cotidiano",
+      "subtopico": "Aplicações energéticas do cotidiano",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situa��o: subir escadas, pedalar, usar elevadores e comprimir molas envolve transforma��es de energia e realiza��o de trabalho Esse caso exemplifica melhor qual subt�pico?",
+      "enunciado": "Observe a situação: subir escadas, pedalar, usar elevadores e comprimir molas envolve transformações de energia e realização de trabalho Esse caso exemplifica melhor qual subtópico?",
       "opcoes": [
-        "Aplica��es energ�ticas do cotidiano",
+        "Aplicações energéticas do cotidiano",
         "Conceito de trabalho",
-        "Trabalho de for�a constante",
-        "Pot�ncia mec�nica"
+        "Trabalho de força constante",
+        "Potência mecânica"
       ],
-      "correta": "Aplica��es energ�ticas do cotidiano",
-      "comentario": "A situa��o apresentada � um exemplo de aplica��es energ�ticas do cotidiano.",
+      "correta": "Aplicações energéticas do cotidiano",
+      "comentario": "A situação apresentada é um exemplo de aplicações energéticas do cotidiano.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -5392,22 +5392,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Aplica��es energ�ticas do cotidiano",
+      "subtopico": "Aplicações energéticas do cotidiano",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirma��o descreve corretamente aplica��es energ�ticas do cotidiano?",
+      "enunciado": "Qual afirmação descreve corretamente aplicações energéticas do cotidiano?",
       "opcoes": [
-        "O uso dos conceitos de trabalho, pot�ncia e energia para interpretar m�quinas, transporte, quedas, esportes e dispositivos comuns.",
-        "A grandeza associada � transfer�ncia de energia produzida por uma for�a ao longo de um deslocamento.",
-        "O c�lculo do trabalho quando a for�a mant�m m�dulo e dire��o constantes durante o deslocamento considerado.",
-        "A grandeza que mede a rapidez com que o trabalho � realizado ou a energia � transferida."
+        "O uso dos conceitos de trabalho, potência e energia para interpretar máquinas, transporte, quedas, esportes e dispositivos comuns.",
+        "A grandeza associada à transferência de energia produzida por uma força ao longo de um deslocamento.",
+        "O cálculo do trabalho quando a força mantém módulo e direção constantes durante o deslocamento considerado.",
+        "A grandeza que mede a rapidez com que o trabalho é realizado ou a energia é transferida."
       ],
-      "correta": "O uso dos conceitos de trabalho, pot�ncia e energia para interpretar m�quinas, transporte, quedas, esportes e dispositivos comuns.",
-      "comentario": "A afirma��o correta retoma o sentido central de aplica��es energ�ticas do cotidiano.",
+      "correta": "O uso dos conceitos de trabalho, potência e energia para interpretar máquinas, transporte, quedas, esportes e dispositivos comuns.",
+      "comentario": "A afirmação correta retoma o sentido central de aplicações energéticas do cotidiano.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -5431,22 +5431,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Aplica��es energ�ticas do cotidiano",
+      "subtopico": "Aplicações energéticas do cotidiano",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa incompat�vel com aplica��es energ�ticas do cotidiano.",
+      "enunciado": "Assinale a alternativa incompatível com aplicações energéticas do cotidiano.",
       "opcoes": [
-        "tratar situa��es do dia a dia como totalmente desconectadas dos conceitos de energia e trabalho.",
-        "a leitura f�sica de situa��es cotidianas � luz dos conceitos de energia, pot�ncia e trabalho.",
-        "trabalho, pot�ncia e energia aparecem em muitas situa��es cotidianas e ajudam a interpret�-las fisicamente.",
-        "o uso dos conceitos de trabalho, pot�ncia e energia para interpretar m�quinas, transporte, quedas, esportes e dispositivos comuns."
+        "tratar situações do dia a dia como totalmente desconectadas dos conceitos de energia e trabalho.",
+        "a leitura física de situações cotidianas à luz dos conceitos de energia, potência e trabalho.",
+        "trabalho, potência e energia aparecem em muitas situações cotidianas e ajudam a interpretá-las fisicamente.",
+        "o uso dos conceitos de trabalho, potência e energia para interpretar máquinas, transporte, quedas, esportes e dispositivos comuns."
       ],
-      "correta": "tratar situa��es do dia a dia como totalmente desconectadas dos conceitos de energia e trabalho.",
-      "comentario": "Tratar situa��es do dia a dia como totalmente desconectadas dos conceitos de energia e trabalho n�o representa aplica��es energ�ticas do cotidiano, enquanto as demais alternativas se relacionam com esse subt�pico.",
+      "correta": "tratar situações do dia a dia como totalmente desconectadas dos conceitos de energia e trabalho.",
+      "comentario": "Tratar situações do dia a dia como totalmente desconectadas dos conceitos de energia e trabalho não representa aplicações energéticas do cotidiano, enquanto as demais alternativas se relacionam com esse subtópico.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -5470,22 +5470,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Aplica��es energ�ticas do cotidiano",
+      "subtopico": "Aplicações energéticas do cotidiano",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando se estuda aplica��es energ�ticas do cotidiano, o foco principal est� em:",
+      "enunciado": "Quando se estuda aplicações energéticas do cotidiano, o foco principal está em:",
       "opcoes": [
-        "a leitura f�sica de situa��es cotidianas � luz dos conceitos de energia, pot�ncia e trabalho",
-        "a rela��o entre for�a aplicada, deslocamento e transfer�ncia de energia mec�nica",
-        "a determina��o do trabalho em situa��es simples com for�a constante",
-        "a compara��o entre a quantidade de trabalho realizado e o tempo gasto para realiz�-lo"
+        "a leitura física de situações cotidianas à luz dos conceitos de energia, potência e trabalho",
+        "a relação entre força aplicada, deslocamento e transferência de energia mecânica",
+        "a determinação do trabalho em situações simples com força constante",
+        "a comparação entre a quantidade de trabalho realizado e o tempo gasto para realizá-lo"
       ],
-      "correta": "a leitura f�sica de situa��es cotidianas � luz dos conceitos de energia, pot�ncia e trabalho",
-      "comentario": "Aplica��es energ�ticas do cotidiano volta a aten��o para a leitura f�sica de situa��es cotidianas � luz dos conceitos de energia, pot�ncia e trabalho.",
+      "correta": "a leitura física de situações cotidianas à luz dos conceitos de energia, potência e trabalho",
+      "comentario": "Aplicações energéticas do cotidiano volta a atenção para a leitura física de situações cotidianas à luz dos conceitos de energia, potência e trabalho.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -5509,22 +5509,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Aplica��es energ�ticas do cotidiano",
+      "subtopico": "Aplicações energéticas do cotidiano",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferen�a entre aplica��es energ�ticas do cotidiano e pot�ncia mec�nica � que:",
+      "enunciado": "A principal diferença entre aplicações energéticas do cotidiano e potência mecânica é que:",
       "opcoes": [
-        "aplica��es energ�ticas do cotidiano re�ne diferentes usos pr�ticos de energia e trabalho, enquanto pot�ncia mec�nica focaliza especificamente a rapidez com que o trabalho � realizado",
-        "Aplica��es energ�ticas do cotidiano e Pot�ncia mec�nica s�o exatamente a mesma ideia f�sica em qualquer situa��o.",
-        "Pot�ncia mec�nica elimina a necessidade de observar aplica��es energ�ticas do cotidiano.",
-        "Aplica��es energ�ticas do cotidiano depende apenas de opini�o pessoal, sem rela��o com grandezas, modelos ou medidas."
+        "aplicações energéticas do cotidiano reúne diferentes usos práticos de energia e trabalho, enquanto potência mecânica focaliza especificamente a rapidez com que o trabalho é realizado",
+        "Aplicações energéticas do cotidiano e Potência mecânica são exatamente a mesma ideia física em qualquer situação.",
+        "Potência mecânica elimina a necessidade de observar aplicações energéticas do cotidiano.",
+        "Aplicações energéticas do cotidiano depende apenas de opinião pessoal, sem relação com grandezas, modelos ou medidas."
       ],
-      "correta": "aplica��es energ�ticas do cotidiano re�ne diferentes usos pr�ticos de energia e trabalho, enquanto pot�ncia mec�nica focaliza especificamente a rapidez com que o trabalho � realizado",
-      "comentario": "A compara��o correta distingue os dois subt�picos sem confundir seus objetos de estudo.",
+      "correta": "aplicações energéticas do cotidiano reúne diferentes usos práticos de energia e trabalho, enquanto potência mecânica focaliza especificamente a rapidez com que o trabalho é realizado",
+      "comentario": "A comparação correta distingue os dois subtópicos sem confundir seus objetos de estudo.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -5548,22 +5548,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Aplica��es energ�ticas do cotidiano",
+      "subtopico": "Aplicações energéticas do cotidiano",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma observa��o experimental, registrou-se o seguinte caso: subir escadas, pedalar, usar elevadores e comprimir molas envolve transforma��es de energia e realiza��o de trabalho A leitura f�sica mais adequada aponta para:",
+      "enunciado": "Em uma observação experimental, registrou-se o seguinte caso: subir escadas, pedalar, usar elevadores e comprimir molas envolve transformações de energia e realização de trabalho A leitura física mais adequada aponta para:",
       "opcoes": [
-        "o caso mostra que conceitos energ�ticos organizam a leitura de tarefas, m�quinas e movimentos presentes no cotidiano",
-        "Aplica��es energ�ticas do cotidiano mostra que as grandezas envolvidas n�o precisam ser relacionadas para interpretar o caso.",
-        "Aplica��es energ�ticas do cotidiano prova que a situa��o dispensa qualquer leitura f�sica ou quantitativa.",
-        "Aplica��es energ�ticas do cotidiano significa que o fen�meno n�o pode ser descrito por vari�veis f�sicas."
+        "o caso mostra que conceitos energéticos organizam a leitura de tarefas, máquinas e movimentos presentes no cotidiano",
+        "Aplicações energéticas do cotidiano mostra que as grandezas envolvidas não precisam ser relacionadas para interpretar o caso.",
+        "Aplicações energéticas do cotidiano prova que a situação dispensa qualquer leitura física ou quantitativa.",
+        "Aplicações energéticas do cotidiano significa que o fenômeno não pode ser descrito por variáveis físicas."
       ],
-      "correta": "o caso mostra que conceitos energ�ticos organizam a leitura de tarefas, m�quinas e movimentos presentes no cotidiano",
-      "comentario": "Aplica��es energ�ticas do cotidiano permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
+      "correta": "o caso mostra que conceitos energéticos organizam a leitura de tarefas, máquinas e movimentos presentes no cotidiano",
+      "comentario": "Aplicações energéticas do cotidiano permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
       "tempoEstimado": 25,
       "tags": [
         "trabalho-e-energia",
@@ -5587,22 +5587,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Aplica��es energ�ticas do cotidiano",
+      "subtopico": "Aplicações energéticas do cotidiano",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situa��o abaixo evidencia aplica��es energ�ticas do cotidiano de maneira mais clara?",
+      "enunciado": "Qual situação abaixo evidencia aplicações energéticas do cotidiano de maneira mais clara?",
       "opcoes": [
-        "explicar o funcionamento energ�tico de uma bicicleta, um elevador ou uma catapulta simples",
-        "analisar o empurr�o de um carrinho que realmente se move ao longo de uma superf�cie",
-        "calcular o trabalho de uma for�a horizontal que arrasta um bloco por alguns metros",
+        "explicar o funcionamento energético de uma bicicleta, um elevador ou uma catapulta simples",
+        "analisar o empurrão de um carrinho que realmente se move ao longo de uma superfície",
+        "calcular o trabalho de uma força horizontal que arrasta um bloco por alguns metros",
         "comparar dois elevadores que realizam o mesmo trabalho em tempos diferentes"
       ],
-      "correta": "explicar o funcionamento energ�tico de uma bicicleta, um elevador ou uma catapulta simples",
-      "comentario": "A alternativa correta aproxima aplica��es energ�ticas do cotidiano de uma situa��o concreta.",
+      "correta": "explicar o funcionamento energético de uma bicicleta, um elevador ou uma catapulta simples",
+      "comentario": "A alternativa correta aproxima aplicações energéticas do cotidiano de uma situação concreta.",
       "tempoEstimado": 35,
       "tags": [
         "trabalho-e-energia",
@@ -5626,22 +5626,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Aplica��es energ�ticas do cotidiano",
+      "subtopico": "Aplicações energéticas do cotidiano",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"subir escadas, pedalar, usar elevadores e comprimir molas envolve transforma��es de energia e realiza��o de trabalho\", qual conclus�o � mais adequada?",
+      "enunciado": "Ao analisar o caso \"subir escadas, pedalar, usar elevadores e comprimir molas envolve transformações de energia e realização de trabalho\", qual conclusão é mais adequada?",
       "opcoes": [
-        "o caso mostra que conceitos energ�ticos organizam a leitura de tarefas, m�quinas e movimentos presentes no cotidiano",
-        "A situa��o indica que aplica��es energ�ticas do cotidiano n�o possui rela��o com medidas, vari�veis ou interpreta��o f�sica.",
-        "A situa��o prova que aplica��es energ�ticas do cotidiano s� existe em exemplos te�ricos sem uso cotidiano.",
-        "A situa��o mostra que aplica��es energ�ticas do cotidiano torna desnecess�rio comparar dados e modelos."
+        "o caso mostra que conceitos energéticos organizam a leitura de tarefas, máquinas e movimentos presentes no cotidiano",
+        "A situação indica que aplicações energéticas do cotidiano não possui relação com medidas, variáveis ou interpretação física.",
+        "A situação prova que aplicações energéticas do cotidiano só existe em exemplos teóricos sem uso cotidiano.",
+        "A situação mostra que aplicações energéticas do cotidiano torna desnecessário comparar dados e modelos."
       ],
-      "correta": "o caso mostra que conceitos energ�ticos organizam a leitura de tarefas, m�quinas e movimentos presentes no cotidiano",
-      "comentario": "A conclus�o correta mant�m coer�ncia com os dados apresentados e com aplica��es energ�ticas do cotidiano.",
+      "correta": "o caso mostra que conceitos energéticos organizam a leitura de tarefas, máquinas e movimentos presentes no cotidiano",
+      "comentario": "A conclusão correta mantém coerência com os dados apresentados e com aplicações energéticas do cotidiano.",
       "tempoEstimado": 35,
       "tags": [
         "trabalho-e-energia",
@@ -5665,22 +5665,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Aplica��es energ�ticas do cotidiano",
+      "subtopico": "Aplicações energéticas do cotidiano",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com aplica��es energ�ticas do cotidiano?",
+      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com aplicações energéticas do cotidiano?",
       "opcoes": [
-        "como os conceitos de energia e trabalho ajudam a interpretar situa��es cotidianas aparentemente simples?",
-        "como a aplica��o de uma for�a ao longo de um deslocamento produz trabalho mec�nico?",
-        "como calcular o trabalho realizado por uma for�a constante em um deslocamento?",
-        "por que duas situa��es com o mesmo trabalho podem apresentar pot�ncias diferentes?"
+        "como os conceitos de energia e trabalho ajudam a interpretar situações cotidianas aparentemente simples?",
+        "como a aplicação de uma força ao longo de um deslocamento produz trabalho mecânico?",
+        "como calcular o trabalho realizado por uma força constante em um deslocamento?",
+        "por que duas situações com o mesmo trabalho podem apresentar potências diferentes?"
       ],
-      "correta": "como os conceitos de energia e trabalho ajudam a interpretar situa��es cotidianas aparentemente simples?",
-      "comentario": "A pergunta correta investiga aplica��es energ�ticas do cotidiano de forma direta e coerente.",
+      "correta": "como os conceitos de energia e trabalho ajudam a interpretar situações cotidianas aparentemente simples?",
+      "comentario": "A pergunta correta investiga aplicações energéticas do cotidiano de forma direta e coerente.",
       "tempoEstimado": 35,
       "tags": [
         "trabalho-e-energia",
@@ -5704,22 +5704,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Aplica��es energ�ticas do cotidiano",
+      "subtopico": "Aplicações energéticas do cotidiano",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a afirma��o que revela compreens�o inadequada de aplica��es energ�ticas do cotidiano.",
+      "enunciado": "Assinale a afirmação que revela compreensão inadequada de aplicações energéticas do cotidiano.",
       "opcoes": [
-        "O uso dos conceitos de trabalho, pot�ncia e energia para interpretar m�quinas, transporte, quedas, esportes e dispositivos comuns.",
-        "A leitura f�sica de situa��es cotidianas � luz dos conceitos de energia, pot�ncia e trabalho.",
-        "Trabalho, pot�ncia e energia aparecem em muitas situa��es cotidianas e ajudam a interpret�-las fisicamente.",
-        "Conceitos de energia mec�nica s� servem para exerc�cios abstratos e n�o explicam fen�menos do cotidiano."
+        "O uso dos conceitos de trabalho, potência e energia para interpretar máquinas, transporte, quedas, esportes e dispositivos comuns.",
+        "A leitura física de situações cotidianas à luz dos conceitos de energia, potência e trabalho.",
+        "Trabalho, potência e energia aparecem em muitas situações cotidianas e ajudam a interpretá-las fisicamente.",
+        "Conceitos de energia mecânica só servem para exercícios abstratos e não explicam fenômenos do cotidiano."
       ],
-      "correta": "Conceitos de energia mec�nica s� servem para exerc�cios abstratos e n�o explicam fen�menos do cotidiano.",
-      "comentario": "A alternativa incorreta expressa um equ�voco comum sobre aplica��es energ�ticas do cotidiano.",
+      "correta": "Conceitos de energia mecânica só servem para exercícios abstratos e não explicam fenômenos do cotidiano.",
+      "comentario": "A alternativa incorreta expressa um equívoco comum sobre aplicações energéticas do cotidiano.",
       "tempoEstimado": 45,
       "tags": [
         "trabalho-e-energia",
@@ -5743,22 +5743,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Aplica��es energ�ticas do cotidiano",
+      "subtopico": "Aplicações energéticas do cotidiano",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre F�sica, um estudante afirmou: \"trabalho, energia e pot�ncia ajudam a compreender desde esportes at� m�quinas e deslocamentos cotidianos\". Qual avalia��o � mais consistente?",
+      "enunciado": "Em um debate sobre Física, um estudante afirmou: \"trabalho, energia e potência ajudam a compreender desde esportes até máquinas e deslocamentos cotidianos\". Qual avaliação é mais consistente?",
       "opcoes": [
-        "A afirma��o est� correta, porque esses conceitos descrevem transforma��es f�sicas presentes em m�ltiplas a��es reais do dia a dia",
-        "A afirma��o est� incorreta, porque aplica��es energ�ticas do cotidiano nunca pode ser usada na F�sica escolar.",
-        "A afirma��o � irrelevante, porque aplica��es energ�ticas do cotidiano n�o se relaciona com interpreta��o de fen�menos.",
-        "A afirma��o est� incorreta, porque aplica��es energ�ticas do cotidiano elimina a necessidade de medir e comparar grandezas."
+        "A afirmação está correta, porque esses conceitos descrevem transformações físicas presentes em múltiplas ações reais do dia a dia",
+        "A afirmação está incorreta, porque aplicações energéticas do cotidiano nunca pode ser usada na Física escolar.",
+        "A afirmação é irrelevante, porque aplicações energéticas do cotidiano não se relaciona com interpretação de fenômenos.",
+        "A afirmação está incorreta, porque aplicações energéticas do cotidiano elimina a necessidade de medir e comparar grandezas."
       ],
-      "correta": "A afirma��o est� correta, porque esses conceitos descrevem transforma��es f�sicas presentes em m�ltiplas a��es reais do dia a dia",
-      "comentario": "A avalia��o correta recupera o n�cleo conceitual de aplica��es energ�ticas do cotidiano.",
+      "correta": "A afirmação está correta, porque esses conceitos descrevem transformações físicas presentes em múltiplas ações reais do dia a dia",
+      "comentario": "A avaliação correta recupera o núcleo conceitual de aplicações energéticas do cotidiano.",
       "tempoEstimado": 45,
       "tags": [
         "trabalho-e-energia",
@@ -5782,22 +5782,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Aplica��es energ�ticas do cotidiano",
+      "subtopico": "Aplicações energéticas do cotidiano",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se aplica��es energ�ticas do cotidiano fosse ignorado(a) na an�lise de um problema f�sico, o resultado mais prov�vel seria:",
+      "enunciado": "Se aplicações energéticas do cotidiano fosse ignorado(a) na análise de um problema físico, o resultado mais provável seria:",
       "opcoes": [
-        "o v�nculo entre a F�sica escolar e situa��es concretas do cotidiano ficaria enfraquecido e pouco significativo",
-        "o problema continuaria exatamente igual, porque aplica��es energ�ticas do cotidiano n�o interfere na an�lise f�sica",
-        "seria poss�vel resolver a situa��o sem observar nenhuma grandeza, rela��o ou modelo",
-        "a interpreta��o ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
+        "o vínculo entre a Física escolar e situações concretas do cotidiano ficaria enfraquecido e pouco significativo",
+        "o problema continuaria exatamente igual, porque aplicações energéticas do cotidiano não interfere na análise física",
+        "seria possível resolver a situação sem observar nenhuma grandeza, relação ou modelo",
+        "a interpretação ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
       ],
-      "correta": "o v�nculo entre a F�sica escolar e situa��es concretas do cotidiano ficaria enfraquecido e pouco significativo",
-      "comentario": "Ignorar aplica��es energ�ticas do cotidiano compromete a leitura f�sica e a qualidade da solu��o.",
+      "correta": "o vínculo entre a Física escolar e situações concretas do cotidiano ficaria enfraquecido e pouco significativo",
+      "comentario": "Ignorar aplicações energéticas do cotidiano compromete a leitura física e a qualidade da solução.",
       "tempoEstimado": 55,
       "tags": [
         "trabalho-e-energia",
@@ -5821,22 +5821,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Aplica��es energ�ticas do cotidiano",
+      "subtopico": "Aplicações energéticas do cotidiano",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente aplica��es energ�ticas do cotidiano a uma situa��o escolar ou cotidiana?",
+      "enunciado": "Qual alternativa aplica corretamente aplicações energéticas do cotidiano a uma situação escolar ou cotidiana?",
       "opcoes": [
-        "explicar o funcionamento energ�tico de uma bicicleta, um elevador ou uma catapulta simples",
-        "analisar o rendimento de um elevador, motor ou aparelho mec�nico simples",
+        "explicar o funcionamento energético de uma bicicleta, um elevador ou uma catapulta simples",
+        "analisar o rendimento de um elevador, motor ou aparelho mecânico simples",
         "comparar a energia no alto e na base de uma pista sem atrito",
-        "explicar o ganho de velocidade de um carrinho puxado por for�a resultante ao longo de uma pista"
+        "explicar o ganho de velocidade de um carrinho puxado por força resultante ao longo de uma pista"
       ],
-      "correta": "explicar o funcionamento energ�tico de uma bicicleta, um elevador ou uma catapulta simples",
-      "comentario": "A aplica��o correta mostra como aplica��es energ�ticas do cotidiano aparece em contextos pr�ximos do cotidiano.",
+      "correta": "explicar o funcionamento energético de uma bicicleta, um elevador ou uma catapulta simples",
+      "comentario": "A aplicação correta mostra como aplicações energéticas do cotidiano aparece em contextos próximos do cotidiano.",
       "tempoEstimado": 55,
       "tags": [
         "trabalho-e-energia",
@@ -5860,22 +5860,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Trabalho e Energia",
-      "subtopico": "Aplica��es energ�ticas do cotidiano",
+      "subtopico": "Aplicações energéticas do cotidiano",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual s�ntese final representa melhor aplica��es energ�ticas do cotidiano?",
+      "enunciado": "Qual síntese final representa melhor aplicações energéticas do cotidiano?",
       "opcoes": [
-        "trabalho, pot�ncia e energia aparecem em muitas situa��es cotidianas e ajudam a interpret�-las fisicamente",
-        "trabalho mec�nico representa a transfer�ncia de energia por uma for�a ao longo de um deslocamento",
-        "o trabalho de for�a constante relaciona for�a, deslocamento e orienta��o relativa em uma express�o simples",
-        "pot�ncia mec�nica mede a rapidez com que o trabalho � realizado"
+        "trabalho, potência e energia aparecem em muitas situações cotidianas e ajudam a interpretá-las fisicamente",
+        "trabalho mecânico representa a transferência de energia por uma força ao longo de um deslocamento",
+        "o trabalho de força constante relaciona força, deslocamento e orientação relativa em uma expressão simples",
+        "potência mecânica mede a rapidez com que o trabalho é realizado"
       ],
-      "correta": "trabalho, pot�ncia e energia aparecem em muitas situa��es cotidianas e ajudam a interpret�-las fisicamente",
-      "comentario": "A s�ntese correta preserva a defini��o, o foco e o uso anal�tico de aplica��es energ�ticas do cotidiano.",
+      "correta": "trabalho, potência e energia aparecem em muitas situações cotidianas e ajudam a interpretá-las fisicamente",
+      "comentario": "A síntese correta preserva a definição, o foco e o uso analítico de aplicações energéticas do cotidiano.",
       "tempoEstimado": 55,
       "tags": [
         "trabalho-e-energia",

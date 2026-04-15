@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-13T14:55:31.067Z",
+  "generatedAt": "2026-04-14T12:19:10.927Z",
   "totals": {
     "topics": 127,
     "readyTopics": 127,
@@ -21744,7 +21744,7 @@
       "id": "fisica_cinematica_mru_mruv",
       "subjectKey": "fisica",
       "materia": "Física",
-      "topico": "Cinem�tica: MRU e MRUV",
+      "topico": "Cinemática: MRU e MRUV",
       "serie": [
         1
       ],
@@ -21752,7 +21752,7 @@
       "readyQuestionCount": 150,
       "hasQuestions": true,
       "path": "questions/banks/1-serie/fisica/cinematica-mru-mruv/index.js",
-      "updatedAt": "2026-04-12T22:15:14.908Z",
+      "updatedAt": "2026-04-14T12:18:50.373Z",
       "seloEditorial": "VERIFICADA",
       "base": "ESCOLAR"
     },
@@ -21760,7 +21760,7 @@
       "id": "fisica_grandezas_fisicas",
       "subjectKey": "fisica",
       "materia": "Física",
-      "topico": "Grandezas F�sicas",
+      "topico": "Grandezas Físicas",
       "serie": [
         1
       ],
@@ -21768,7 +21768,7 @@
       "readyQuestionCount": 150,
       "hasQuestions": true,
       "path": "questions/banks/1-serie/fisica/grandezas-fisicas/index.js",
-      "updatedAt": "2026-04-12T22:15:14.913Z",
+      "updatedAt": "2026-04-14T12:18:50.581Z",
       "seloEditorial": "VERIFICADA",
       "base": "ESCOLAR"
     },
@@ -21784,7 +21784,7 @@
       "readyQuestionCount": 150,
       "hasQuestions": true,
       "path": "questions/banks/1-serie/fisica/movimento-uniforme-e-variado/index.js",
-      "updatedAt": "2026-04-12T22:15:14.919Z",
+      "updatedAt": "2026-04-14T12:18:50.782Z",
       "seloEditorial": "VERIFICADA",
       "base": "ESCOLAR"
     },
@@ -22480,7 +22480,7 @@
       "id": "fisica_dinamica_leis_de_newton",
       "subjectKey": "fisica",
       "materia": "Física",
-      "topico": "Din�mica e Leis de Newton",
+      "topico": "Dinâmica e Leis de Newton",
       "serie": [
         2
       ],
@@ -22488,7 +22488,7 @@
       "readyQuestionCount": 150,
       "hasQuestions": true,
       "path": "questions/banks/2-serie/fisica/dinamica-leis-de-newton/index.js",
-      "updatedAt": "2026-04-12T22:15:14.938Z",
+      "updatedAt": "2026-04-14T12:18:50.995Z",
       "seloEditorial": "VERIFICADA",
       "base": "ESCOLAR"
     },
@@ -22504,7 +22504,7 @@
       "readyQuestionCount": 150,
       "hasQuestions": true,
       "path": "questions/banks/2-serie/fisica/impulso-e-quantidade-de-movimento/index.js",
-      "updatedAt": "2026-04-12T22:15:14.948Z",
+      "updatedAt": "2026-04-14T12:18:51.197Z",
       "seloEditorial": "VERIFICADA",
       "base": "ESCOLAR"
     },
@@ -22520,7 +22520,7 @@
       "readyQuestionCount": 150,
       "hasQuestions": true,
       "path": "questions/banks/2-serie/fisica/trabalho-e-energia/index.js",
-      "updatedAt": "2026-04-12T22:15:14.958Z",
+      "updatedAt": "2026-04-14T12:18:51.393Z",
       "seloEditorial": "VERIFICADA",
       "base": "ESCOLAR"
     },
@@ -23104,7 +23104,7 @@
       "id": "fisica_eletrodinamica",
       "subjectKey": "fisica",
       "materia": "Física",
-      "topico": "Eletrodin�mica",
+      "topico": "Eletrodinâmica",
       "serie": [
         3
       ],
@@ -23112,7 +23112,7 @@
       "readyQuestionCount": 150,
       "hasQuestions": true,
       "path": "questions/banks/3-serie/fisica/eletrodinamica/index.js",
-      "updatedAt": "2026-04-12T22:15:14.984Z",
+      "updatedAt": "2026-04-14T12:18:51.585Z",
       "seloEditorial": "VERIFICADA",
       "base": "ESCOLAR"
     },
@@ -23128,7 +23128,7 @@
       "readyQuestionCount": 150,
       "hasQuestions": true,
       "path": "questions/banks/3-serie/fisica/magnetismo/index.js",
-      "updatedAt": "2026-04-12T22:15:14.989Z",
+      "updatedAt": "2026-04-14T12:18:51.797Z",
       "seloEditorial": "VERIFICADA",
       "base": "ESCOLAR"
     },
@@ -23136,7 +23136,7 @@
       "id": "fisica_ondulatoria",
       "subjectKey": "fisica",
       "materia": "Física",
-      "topico": "Ondulat�ria",
+      "topico": "Ondulatória",
       "serie": [
         3
       ],
@@ -23144,7 +23144,7 @@
       "readyQuestionCount": 150,
       "hasQuestions": true,
       "path": "questions/banks/3-serie/fisica/ondulatoria/index.js",
-      "updatedAt": "2026-04-12T22:15:14.963Z",
+      "updatedAt": "2026-04-14T12:18:51.998Z",
       "seloEditorial": "VERIFICADA",
       "base": "ESCOLAR"
     },
@@ -23152,7 +23152,7 @@
       "id": "fisica_optica",
       "subjectKey": "fisica",
       "materia": "Física",
-      "topico": "�ptica",
+      "topico": "Óptica",
       "serie": [
         3
       ],
@@ -23160,7 +23160,7 @@
       "readyQuestionCount": 150,
       "hasQuestions": true,
       "path": "questions/banks/3-serie/fisica/optica/index.js",
-      "updatedAt": "2026-04-12T22:15:14.974Z",
+      "updatedAt": "2026-04-14T12:18:52.191Z",
       "seloEditorial": "VERIFICADA",
       "base": "ESCOLAR"
     },

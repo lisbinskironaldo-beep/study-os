@@ -1,6 +1,6 @@
-﻿export const impulsoEQuantidadeDeMovimento = {
+export const impulsoEQuantidadeDeMovimento = {
   "id": "fisica_impulso_e_quantidade_de_movimento",
-  "materia": "F�sica",
+  "materia": "Física",
   "serie": [
     2
   ],
@@ -9,35 +9,35 @@
     "disciplinaId": "fisica",
     "base": "ESCOLAR",
     "seloEditorial": "VERIFICADA",
-    "eixo": "Quantidade de movimento e intera��es",
-    "frente": "Conserva��o do momento linear e an�lise de colis�es",
+    "eixo": "Quantidade de movimento e interações",
+    "frente": "Conservação do momento linear e análise de colisões",
     "searchAliases": [
       "impulso",
       "quantidade de movimento",
       "momento linear",
-      "colis�es",
+      "colisões",
       "centro de massa",
-      "conserva��o do momento"
+      "conservação do momento"
     ],
     "subtopicosBase": [
       "Quantidade de movimento",
-      "Impulso de uma for�a",
+      "Impulso de uma força",
       "Teorema do impulso",
-      "Conserva��o do momento linear",
-      "Colis�es el�sticas",
-      "Colis�es inel�sticas",
-      "Explos�es e separa��o de corpos",
+      "Conservação do momento linear",
+      "Colisóes elásticas",
+      "Colisóes inelásticas",
+      "Explosóes e separação de corpos",
       "Centro de massa",
       "Sistemas isolados",
-      "Aplica��es em seguran�a e esportes"
+      "Aplicações em segurança e esportes"
     ],
     "habilidadesBase": [
       "calcular quantidade de movimento e impulso",
       "aplicar o teorema do impulso",
-      "analisar conserva��o do momento linear",
-      "comparar colis�es el�sticas e inel�sticas",
+      "analisar conservação do momento linear",
+      "comparar colisões elásticas e inelásticas",
       "interpretar centro de massa e sistemas isolados",
-      "relacionar impulso a seguran�a e esporte"
+      "relacionar impulso a segurança e esporte"
     ],
     "auditado": true,
     "auditadoEm": "2026-04-12",
@@ -49,22 +49,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Quantidade de movimento",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em F�sica, Quantidade de movimento pode ser definido(a) como:",
+      "enunciado": "Em Física, Quantidade de movimento pode ser definido(a) como:",
       "opcoes": [
         "a grandeza vetorial associada ao produto entre massa e velocidade de um corpo",
-        "a grandeza associada ao produto da for�a resultante pelo intervalo de tempo em que ela atua",
-        "a rela��o segundo a qual o impulso resultante sobre um corpo � igual � varia��o de sua quantidade de movimento",
-        "o princ�pio segundo o qual a quantidade de movimento total de um sistema isolado permanece constante"
+        "a grandeza associada ao produto da força resultante pelo intervalo de tempo em que ela atua",
+        "a relação segundo a qual o impulso resultante sobre um corpo é igual à variação de sua quantidade de movimento",
+        "o princípio segundo o qual a quantidade de movimento total de um sistema isolado permanece constante"
       ],
       "correta": "a grandeza vetorial associada ao produto entre massa e velocidade de um corpo",
-      "comentario": "Quantidade de movimento refere-se � grandeza vetorial associada ao produto entre massa e velocidade de um corpo.",
+      "comentario": "Quantidade de movimento refere-se à grandeza vetorial associada ao produto entre massa e velocidade de um corpo.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -88,22 +88,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Quantidade de movimento",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situa��o: um caminh�o lento e uma bicicleta r�pida podem ter quantidades de movimento compar�veis dependendo de massa e velocidade Esse caso exemplifica melhor qual subt�pico?",
+      "enunciado": "Observe a situação: um caminhão lento e uma bicicleta rápida podem ter quantidades de movimento comparáveis dependendo de massa e velocidade Esse caso exemplifica melhor qual subtópico?",
       "opcoes": [
         "Quantidade de movimento",
-        "Impulso de uma for�a",
+        "Impulso de uma força",
         "Teorema do impulso",
-        "Conserva��o do momento linear"
+        "Conservação do momento linear"
       ],
       "correta": "Quantidade de movimento",
-      "comentario": "A situa��o apresentada � um exemplo de quantidade de movimento.",
+      "comentario": "A situação apresentada é um exemplo de quantidade de movimento.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -127,22 +127,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Quantidade de movimento",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirma��o descreve corretamente quantidade de movimento?",
+      "enunciado": "Qual afirmação descreve corretamente quantidade de movimento?",
       "opcoes": [
         "A grandeza vetorial associada ao produto entre massa e velocidade de um corpo.",
-        "A grandeza associada ao produto da for�a resultante pelo intervalo de tempo em que ela atua.",
-        "A rela��o segundo a qual o impulso resultante sobre um corpo � igual � varia��o de sua quantidade de movimento.",
-        "O princ�pio segundo o qual a quantidade de movimento total de um sistema isolado permanece constante."
+        "A grandeza associada ao produto da força resultante pelo intervalo de tempo em que ela atua.",
+        "A relação segundo a qual o impulso resultante sobre um corpo é igual à variação de sua quantidade de movimento.",
+        "O princípio segundo o qual a quantidade de movimento total de um sistema isolado permanece constante."
       ],
       "correta": "A grandeza vetorial associada ao produto entre massa e velocidade de um corpo.",
-      "comentario": "A afirma��o correta retoma o sentido central de quantidade de movimento.",
+      "comentario": "A afirmação correta retoma o sentido central de quantidade de movimento.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -166,22 +166,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Quantidade de movimento",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa incompat�vel com quantidade de movimento.",
+      "enunciado": "Assinale a alternativa incompatível com quantidade de movimento.",
       "opcoes": [
-        "tratar quantidade de movimento como sin�nimo de for�a aplicada em um instante.",
-        "a rela��o entre massa, velocidade e o estado de movimento de um corpo.",
-        "quantidade de movimento � o produto vetorial entre massa e velocidade de um corpo.",
+        "tratar quantidade de movimento como sinônimo de força aplicada em um instante.",
+        "a relação entre massa, velocidade e o estado de movimento de um corpo.",
+        "quantidade de movimento é o produto vetorial entre massa e velocidade de um corpo.",
         "a grandeza vetorial associada ao produto entre massa e velocidade de um corpo."
       ],
-      "correta": "tratar quantidade de movimento como sin�nimo de for�a aplicada em um instante.",
-      "comentario": "Tratar quantidade de movimento como sin�nimo de for�a aplicada em um instante n�o representa quantidade de movimento, enquanto as demais alternativas se relacionam com esse subt�pico.",
+      "correta": "tratar quantidade de movimento como sinônimo de força aplicada em um instante.",
+      "comentario": "Tratar quantidade de movimento como sinônimo de força aplicada em um instante não representa quantidade de movimento, enquanto as demais alternativas se relacionam com esse subtópico.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -205,22 +205,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Quantidade de movimento",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando se estuda quantidade de movimento, o foco principal est� em:",
+      "enunciado": "Quando se estuda quantidade de movimento, o foco principal está em:",
       "opcoes": [
-        "a rela��o entre massa, velocidade e o estado de movimento de um corpo",
-        "o efeito temporal de uma for�a atuando sobre um corpo",
-        "a conex�o entre for�a atuando no tempo e mudan�a do estado din�mico do corpo",
-        "a perman�ncia do momento total em sistemas sem resultante externa significativa"
+        "a relação entre massa, velocidade e o estado de movimento de um corpo",
+        "o efeito temporal de uma força atuando sobre um corpo",
+        "a conexão entre força atuando no tempo e mudança do estado dinâmico do corpo",
+        "a permanência do momento total em sistemas sem resultante externa significativa"
       ],
-      "correta": "a rela��o entre massa, velocidade e o estado de movimento de um corpo",
-      "comentario": "Quantidade de movimento volta a aten��o para a rela��o entre massa, velocidade e o estado de movimento de um corpo.",
+      "correta": "a relação entre massa, velocidade e o estado de movimento de um corpo",
+      "comentario": "Quantidade de movimento volta a atenção para a relação entre massa, velocidade e o estado de movimento de um corpo.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -244,22 +244,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Quantidade de movimento",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferen�a entre quantidade de movimento e impulso de uma for�a � que:",
+      "enunciado": "A principal diferença entre quantidade de movimento e impulso de uma força é que:",
       "opcoes": [
-        "quantidade de movimento descreve o estado din�mico do corpo em dado instante, enquanto impulso de uma for�a mede a a��o da for�a ao longo do tempo",
-        "Quantidade de movimento e Impulso de uma for�a s�o exatamente a mesma ideia f�sica em qualquer situa��o.",
-        "Impulso de uma for�a elimina a necessidade de observar quantidade de movimento.",
-        "Quantidade de movimento depende apenas de opini�o pessoal, sem rela��o com grandezas, modelos ou medidas."
+        "quantidade de movimento descreve o estado dinâmico do corpo em dado instante, enquanto impulso de uma força mede a ação da força ao longo do tempo",
+        "Quantidade de movimento e Impulso de uma força são exatamente a mesma ideia física em qualquer situação.",
+        "Impulso de uma força elimina a necessidade de observar quantidade de movimento.",
+        "Quantidade de movimento depende apenas de opinião pessoal, sem relação com grandezas, modelos ou medidas."
       ],
-      "correta": "quantidade de movimento descreve o estado din�mico do corpo em dado instante, enquanto impulso de uma for�a mede a a��o da for�a ao longo do tempo",
-      "comentario": "A compara��o correta distingue os dois subt�picos sem confundir seus objetos de estudo.",
+      "correta": "quantidade de movimento descreve o estado dinâmico do corpo em dado instante, enquanto impulso de uma força mede a ação da força ao longo do tempo",
+      "comentario": "A comparação correta distingue os dois subtópicos sem confundir seus objetos de estudo.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -283,19 +283,19 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Quantidade de movimento",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma observa��o experimental, registrou-se o seguinte caso: um caminh�o lento e uma bicicleta r�pida podem ter quantidades de movimento compar�veis dependendo de massa e velocidade A leitura f�sica mais adequada aponta para:",
+      "enunciado": "Em uma observação experimental, registrou-se o seguinte caso: um caminhão lento e uma bicicleta rápida podem ter quantidades de movimento comparáveis dependendo de massa e velocidade A leitura física mais adequada aponta para:",
       "opcoes": [
         "o caso mostra que tanto a massa quanto a velocidade contribuem para a quantidade de movimento",
-        "Quantidade de movimento mostra que as grandezas envolvidas n�o precisam ser relacionadas para interpretar o caso.",
-        "Quantidade de movimento prova que a situa��o dispensa qualquer leitura f�sica ou quantitativa.",
-        "Quantidade de movimento significa que o fen�meno n�o pode ser descrito por vari�veis f�sicas."
+        "Quantidade de movimento mostra que as grandezas envolvidas não precisam ser relacionadas para interpretar o caso.",
+        "Quantidade de movimento prova que a situação dispensa qualquer leitura física ou quantitativa.",
+        "Quantidade de movimento significa que o fenômeno não pode ser descrito por variáveis físicas."
       ],
       "correta": "o caso mostra que tanto a massa quanto a velocidade contribuem para a quantidade de movimento",
       "comentario": "Quantidade de movimento permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
@@ -322,22 +322,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Quantidade de movimento",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situa��o abaixo evidencia quantidade de movimento de maneira mais clara?",
+      "enunciado": "Qual situação abaixo evidencia quantidade de movimento de maneira mais clara?",
       "opcoes": [
-        "comparar a quantidade de movimento de um carrinho leve r�pido e de um carrinho pesado lento",
-        "comparar o efeito de empurrar um carrinho com for�a pequena por muito tempo e grande por pouco tempo",
-        "explicar a mudan�a de movimento de uma bola ap�s colis�o ou chute usando impulso",
-        "calcular a velocidade final de dois corpos ap�s uma colis�o em pista praticamente sem atrito"
+        "comparar a quantidade de movimento de um carrinho leve rápido e de um carrinho pesado lento",
+        "comparar o efeito de empurrar um carrinho com força pequena por muito tempo e grande por pouco tempo",
+        "explicar a mudança de movimento de uma bola após colisão ou chute usando impulso",
+        "calcular a velocidade final de dois corpos após uma colisão em pista praticamente sem atrito"
       ],
-      "correta": "comparar a quantidade de movimento de um carrinho leve r�pido e de um carrinho pesado lento",
-      "comentario": "A alternativa correta aproxima quantidade de movimento de uma situa��o concreta.",
+      "correta": "comparar a quantidade de movimento de um carrinho leve rápido e de um carrinho pesado lento",
+      "comentario": "A alternativa correta aproxima quantidade de movimento de uma situação concreta.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -361,22 +361,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Quantidade de movimento",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"um caminh�o lento e uma bicicleta r�pida podem ter quantidades de movimento compar�veis dependendo de massa e velocidade\", qual conclus�o � mais adequada?",
+      "enunciado": "Ao analisar o caso \"um caminhão lento e uma bicicleta rápida podem ter quantidades de movimento comparáveis dependendo de massa e velocidade\", qual conclusão é mais adequada?",
       "opcoes": [
         "o caso mostra que tanto a massa quanto a velocidade contribuem para a quantidade de movimento",
-        "A situa��o indica que quantidade de movimento n�o possui rela��o com medidas, vari�veis ou interpreta��o f�sica.",
-        "A situa��o prova que quantidade de movimento s� existe em exemplos te�ricos sem uso cotidiano.",
-        "A situa��o mostra que quantidade de movimento torna desnecess�rio comparar dados e modelos."
+        "A situação indica que quantidade de movimento não possui relação com medidas, variáveis ou interpretação física.",
+        "A situação prova que quantidade de movimento só existe em exemplos teóricos sem uso cotidiano.",
+        "A situação mostra que quantidade de movimento torna desnecessário comparar dados e modelos."
       ],
       "correta": "o caso mostra que tanto a massa quanto a velocidade contribuem para a quantidade de movimento",
-      "comentario": "A conclus�o correta mant�m coer�ncia com os dados apresentados e com quantidade de movimento.",
+      "comentario": "A conclusão correta mantém coerência com os dados apresentados e com quantidade de movimento.",
       "tempoEstimado": 35,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -400,7 +400,7 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Quantidade de movimento",
       "dificuldadeLabel": "medio",
@@ -410,8 +410,8 @@
       "enunciado": "Qual pergunta de pesquisa se relaciona melhor com quantidade de movimento?",
       "opcoes": [
         "como massa e velocidade influenciam a quantidade de movimento de um corpo?",
-        "como o tempo de atua��o da for�a influencia o impulso produzido sobre um corpo?",
-        "como a varia��o da quantidade de movimento pode ser prevista a partir do impulso resultante?",
+        "como o tempo de atuação da força influencia o impulso produzido sobre um corpo?",
+        "como a variação da quantidade de movimento pode ser prevista a partir do impulso resultante?",
         "por que a quantidade de movimento total de um sistema isolado se conserva?"
       ],
       "correta": "como massa e velocidade influenciam a quantidade de movimento de um corpo?",
@@ -439,22 +439,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Quantidade de movimento",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a afirma��o que revela compreens�o inadequada de quantidade de movimento.",
+      "enunciado": "Assinale a afirmação que revela compreensão inadequada de quantidade de movimento.",
       "opcoes": [
         "A grandeza vetorial associada ao produto entre massa e velocidade de um corpo.",
-        "A rela��o entre massa, velocidade e o estado de movimento de um corpo.",
-        "Quantidade de movimento � o produto vetorial entre massa e velocidade de um corpo.",
-        "Quantidade de movimento depende apenas da velocidade e n�o da massa."
+        "A relação entre massa, velocidade e o estado de movimento de um corpo.",
+        "Quantidade de movimento é o produto vetorial entre massa e velocidade de um corpo.",
+        "Quantidade de movimento depende apenas da velocidade e não da massa."
       ],
-      "correta": "Quantidade de movimento depende apenas da velocidade e n�o da massa.",
-      "comentario": "A alternativa incorreta expressa um equ�voco comum sobre quantidade de movimento.",
+      "correta": "Quantidade de movimento depende apenas da velocidade e não da massa.",
+      "comentario": "A alternativa incorreta expressa um equívoco comum sobre quantidade de movimento.",
       "tempoEstimado": 45,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -478,22 +478,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Quantidade de movimento",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre F�sica, um estudante afirmou: \"corpos mais massivos ou mais velozes podem ter maior quantidade de movimento\". Qual avalia��o � mais consistente?",
+      "enunciado": "Em um debate sobre Física, um estudante afirmou: \"corpos mais massivos ou mais velozes podem ter maior quantidade de movimento\". Qual avaliação é mais consistente?",
       "opcoes": [
-        "A afirma��o est� correta, porque a quantidade de movimento resulta da combina��o entre massa e velocidade vetorial",
-        "A afirma��o est� incorreta, porque quantidade de movimento nunca pode ser usada na F�sica escolar.",
-        "A afirma��o � irrelevante, porque quantidade de movimento n�o se relaciona com interpreta��o de fen�menos.",
-        "A afirma��o est� incorreta, porque quantidade de movimento elimina a necessidade de medir e comparar grandezas."
+        "A afirmação está correta, porque a quantidade de movimento resulta da combinação entre massa e velocidade vetorial",
+        "A afirmação está incorreta, porque quantidade de movimento nunca pode ser usada na Física escolar.",
+        "A afirmação é irrelevante, porque quantidade de movimento não se relaciona com interpretação de fenômenos.",
+        "A afirmação está incorreta, porque quantidade de movimento elimina a necessidade de medir e comparar grandezas."
       ],
-      "correta": "A afirma��o est� correta, porque a quantidade de movimento resulta da combina��o entre massa e velocidade vetorial",
-      "comentario": "A avalia��o correta recupera o n�cleo conceitual de quantidade de movimento.",
+      "correta": "A afirmação está correta, porque a quantidade de movimento resulta da combinação entre massa e velocidade vetorial",
+      "comentario": "A avaliação correta recupera o núcleo conceitual de quantidade de movimento.",
       "tempoEstimado": 45,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -517,22 +517,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Quantidade de movimento",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se quantidade de movimento fosse ignorado(a) na an�lise de um problema f�sico, o resultado mais prov�vel seria:",
+      "enunciado": "Se quantidade de movimento fosse ignorado(a) na análise de um problema físico, o resultado mais provável seria:",
       "opcoes": [
-        "seria dif�cil comparar corretamente o estado din�mico de corpos com massas e velocidades diferentes",
-        "o problema continuaria exatamente igual, porque quantidade de movimento n�o interfere na an�lise f�sica",
-        "seria poss�vel resolver a situa��o sem observar nenhuma grandeza, rela��o ou modelo",
-        "a interpreta��o ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
+        "seria difícil comparar corretamente o estado dinâmico de corpos com massas e velocidades diferentes",
+        "o problema continuaria exatamente igual, porque quantidade de movimento não interfere na análise física",
+        "seria possível resolver a situação sem observar nenhuma grandeza, relação ou modelo",
+        "a interpretação ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
       ],
-      "correta": "seria dif�cil comparar corretamente o estado din�mico de corpos com massas e velocidades diferentes",
-      "comentario": "Ignorar quantidade de movimento compromete a leitura f�sica e a qualidade da solu��o.",
+      "correta": "seria difícil comparar corretamente o estado dinâmico de corpos com massas e velocidades diferentes",
+      "comentario": "Ignorar quantidade de movimento compromete a leitura física e a qualidade da solução.",
       "tempoEstimado": 55,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -556,22 +556,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Quantidade de movimento",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente quantidade de movimento a uma situa��o escolar ou cotidiana?",
+      "enunciado": "Qual alternativa aplica corretamente quantidade de movimento a uma situação escolar ou cotidiana?",
       "opcoes": [
-        "comparar a quantidade de movimento de um carrinho leve r�pido e de um carrinho pesado lento",
-        "explicar o funcionamento de airbags, joelheiras e amortecedores em situa��es de impacto",
-        "tratar dois corpos em colis�o sobre superf�cie de atrito desprez�vel como sistema isolado durante a intera��o",
+        "comparar a quantidade de movimento de um carrinho leve rápido e de um carrinho pesado lento",
+        "explicar o funcionamento de airbags, joelheiras e amortecedores em situações de impacto",
+        "tratar dois corpos em colisão sobre superfície de atrito desprezível como sistema isolado durante a interação",
         "analisar o salto de um atleta ou o movimento de duas massas ligadas usando a ideia de centro de massa"
       ],
-      "correta": "comparar a quantidade de movimento de um carrinho leve r�pido e de um carrinho pesado lento",
-      "comentario": "A aplica��o correta mostra como quantidade de movimento aparece em contextos pr�ximos do cotidiano.",
+      "correta": "comparar a quantidade de movimento de um carrinho leve rápido e de um carrinho pesado lento",
+      "comentario": "A aplicação correta mostra como quantidade de movimento aparece em contextos próximos do cotidiano.",
       "tempoEstimado": 55,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -595,22 +595,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Quantidade de movimento",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual s�ntese final representa melhor quantidade de movimento?",
+      "enunciado": "Qual síntese final representa melhor quantidade de movimento?",
       "opcoes": [
-        "quantidade de movimento � o produto vetorial entre massa e velocidade de um corpo",
-        "impulso mede o efeito de uma for�a atuando durante certo intervalo de tempo",
-        "o teorema do impulso relaciona impulso resultante e varia��o da quantidade de movimento",
-        "a conserva��o do momento linear afirma que o momento total de um sistema isolado permanece constante"
+        "quantidade de movimento é o produto vetorial entre massa e velocidade de um corpo",
+        "impulso mede o efeito de uma força atuando durante certo intervalo de tempo",
+        "o teorema do impulso relaciona impulso resultante e variação da quantidade de movimento",
+        "a conservação do momento linear afirma que o momento total de um sistema isolado permanece constante"
       ],
-      "correta": "quantidade de movimento � o produto vetorial entre massa e velocidade de um corpo",
-      "comentario": "A s�ntese correta preserva a defini��o, o foco e o uso anal�tico de quantidade de movimento.",
+      "correta": "quantidade de movimento é o produto vetorial entre massa e velocidade de um corpo",
+      "comentario": "A síntese correta preserva a definição, o foco e o uso analítico de quantidade de movimento.",
       "tempoEstimado": 55,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -634,22 +634,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Impulso de uma for�a",
+      "subtopico": "Impulso de uma força",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em F�sica, Impulso de uma for�a pode ser definido(a) como:",
+      "enunciado": "Em Física, Impulso de uma força pode ser definido(a) como:",
       "opcoes": [
-        "a grandeza associada ao produto da for�a resultante pelo intervalo de tempo em que ela atua",
+        "a grandeza associada ao produto da força resultante pelo intervalo de tempo em que ela atua",
         "a grandeza vetorial associada ao produto entre massa e velocidade de um corpo",
-        "a rela��o segundo a qual o impulso resultante sobre um corpo � igual � varia��o de sua quantidade de movimento",
-        "o princ�pio segundo o qual a quantidade de movimento total de um sistema isolado permanece constante"
+        "a relação segundo a qual o impulso resultante sobre um corpo é igual à variação de sua quantidade de movimento",
+        "o princípio segundo o qual a quantidade de movimento total de um sistema isolado permanece constante"
       ],
-      "correta": "a grandeza associada ao produto da for�a resultante pelo intervalo de tempo em que ela atua",
-      "comentario": "Impulso de uma for�a refere-se � grandeza associada ao produto da for�a resultante pelo intervalo de tempo em que ela atua.",
+      "correta": "a grandeza associada ao produto da força resultante pelo intervalo de tempo em que ela atua",
+      "comentario": "Impulso de uma força refere-se à grandeza associada ao produto da força resultante pelo intervalo de tempo em que ela atua.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -673,22 +673,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Impulso de uma for�a",
+      "subtopico": "Impulso de uma força",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situa��o: uma bola recebe uma for�a por curto intervalo de tempo ao ser chutada Esse caso exemplifica melhor qual subt�pico?",
+      "enunciado": "Observe a situação: uma bola recebe uma força por curto intervalo de tempo ao ser chutada Esse caso exemplifica melhor qual subtópico?",
       "opcoes": [
-        "Impulso de uma for�a",
+        "Impulso de uma força",
         "Quantidade de movimento",
         "Teorema do impulso",
-        "Conserva��o do momento linear"
+        "Conservação do momento linear"
       ],
-      "correta": "Impulso de uma for�a",
-      "comentario": "A situa��o apresentada � um exemplo de impulso de uma for�a.",
+      "correta": "Impulso de uma força",
+      "comentario": "A situação apresentada é um exemplo de impulso de uma força.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -712,22 +712,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Impulso de uma for�a",
+      "subtopico": "Impulso de uma força",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirma��o descreve corretamente impulso de uma for�a?",
+      "enunciado": "Qual afirmação descreve corretamente impulso de uma força?",
       "opcoes": [
-        "A grandeza associada ao produto da for�a resultante pelo intervalo de tempo em que ela atua.",
+        "A grandeza associada ao produto da força resultante pelo intervalo de tempo em que ela atua.",
         "A grandeza vetorial associada ao produto entre massa e velocidade de um corpo.",
-        "A rela��o segundo a qual o impulso resultante sobre um corpo � igual � varia��o de sua quantidade de movimento.",
-        "O princ�pio segundo o qual a quantidade de movimento total de um sistema isolado permanece constante."
+        "A relação segundo a qual o impulso resultante sobre um corpo é igual à variação de sua quantidade de movimento.",
+        "O princípio segundo o qual a quantidade de movimento total de um sistema isolado permanece constante."
       ],
-      "correta": "A grandeza associada ao produto da for�a resultante pelo intervalo de tempo em que ela atua.",
-      "comentario": "A afirma��o correta retoma o sentido central de impulso de uma for�a.",
+      "correta": "A grandeza associada ao produto da força resultante pelo intervalo de tempo em que ela atua.",
+      "comentario": "A afirmação correta retoma o sentido central de impulso de uma força.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -751,22 +751,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Impulso de uma for�a",
+      "subtopico": "Impulso de uma força",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa incompat�vel com impulso de uma for�a.",
+      "enunciado": "Assinale a alternativa incompatível com impulso de uma força.",
       "opcoes": [
         "ignorar o intervalo de contato ao comparar dois impactos diferentes.",
-        "o efeito temporal de uma for�a atuando sobre um corpo.",
-        "impulso mede o efeito de uma for�a atuando durante certo intervalo de tempo.",
-        "a grandeza associada ao produto da for�a resultante pelo intervalo de tempo em que ela atua."
+        "o efeito temporal de uma força atuando sobre um corpo.",
+        "impulso mede o efeito de uma força atuando durante certo intervalo de tempo.",
+        "a grandeza associada ao produto da força resultante pelo intervalo de tempo em que ela atua."
       ],
       "correta": "ignorar o intervalo de contato ao comparar dois impactos diferentes.",
-      "comentario": "Ignorar o intervalo de contato ao comparar dois impactos diferentes n�o representa impulso de uma for�a, enquanto as demais alternativas se relacionam com esse subt�pico.",
+      "comentario": "Ignorar o intervalo de contato ao comparar dois impactos diferentes não representa impulso de uma força, enquanto as demais alternativas se relacionam com esse subtópico.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -790,22 +790,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Impulso de uma for�a",
+      "subtopico": "Impulso de uma força",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando se estuda impulso de uma for�a, o foco principal est� em:",
+      "enunciado": "Quando se estuda impulso de uma força, o foco principal está em:",
       "opcoes": [
-        "o efeito temporal de uma for�a atuando sobre um corpo",
-        "a rela��o entre massa, velocidade e o estado de movimento de um corpo",
-        "a conex�o entre for�a atuando no tempo e mudan�a do estado din�mico do corpo",
-        "a perman�ncia do momento total em sistemas sem resultante externa significativa"
+        "o efeito temporal de uma força atuando sobre um corpo",
+        "a relação entre massa, velocidade e o estado de movimento de um corpo",
+        "a conexão entre força atuando no tempo e mudança do estado dinâmico do corpo",
+        "a permanência do momento total em sistemas sem resultante externa significativa"
       ],
-      "correta": "o efeito temporal de uma for�a atuando sobre um corpo",
-      "comentario": "Impulso de uma for�a volta a aten��o para o efeito temporal de uma for�a atuando sobre um corpo.",
+      "correta": "o efeito temporal de uma força atuando sobre um corpo",
+      "comentario": "Impulso de uma força volta a atenção para o efeito temporal de uma força atuando sobre um corpo.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -829,22 +829,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Impulso de uma for�a",
+      "subtopico": "Impulso de uma força",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferen�a entre impulso de uma for�a e teorema do impulso � que:",
+      "enunciado": "A principal diferença entre impulso de uma força e teorema do impulso é que:",
       "opcoes": [
-        "impulso de uma for�a � a grandeza definida pela for�a atuando durante certo tempo, enquanto teorema do impulso relaciona esse impulso � varia��o da quantidade de movimento",
-        "Impulso de uma for�a e Teorema do impulso s�o exatamente a mesma ideia f�sica em qualquer situa��o.",
-        "Teorema do impulso elimina a necessidade de observar impulso de uma for�a.",
-        "Impulso de uma for�a depende apenas de opini�o pessoal, sem rela��o com grandezas, modelos ou medidas."
+        "impulso de uma força é a grandeza definida pela força atuando durante certo tempo, enquanto teorema do impulso relaciona esse impulso à variação da quantidade de movimento",
+        "Impulso de uma força e Teorema do impulso são exatamente a mesma ideia física em qualquer situação.",
+        "Teorema do impulso elimina a necessidade de observar impulso de uma força.",
+        "Impulso de uma força depende apenas de opinião pessoal, sem relação com grandezas, modelos ou medidas."
       ],
-      "correta": "impulso de uma for�a � a grandeza definida pela for�a atuando durante certo tempo, enquanto teorema do impulso relaciona esse impulso � varia��o da quantidade de movimento",
-      "comentario": "A compara��o correta distingue os dois subt�picos sem confundir seus objetos de estudo.",
+      "correta": "impulso de uma força é a grandeza definida pela força atuando durante certo tempo, enquanto teorema do impulso relaciona esse impulso à variação da quantidade de movimento",
+      "comentario": "A comparação correta distingue os dois subtópicos sem confundir seus objetos de estudo.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -868,22 +868,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Impulso de uma for�a",
+      "subtopico": "Impulso de uma força",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma observa��o experimental, registrou-se o seguinte caso: uma bola recebe uma for�a por curto intervalo de tempo ao ser chutada A leitura f�sica mais adequada aponta para:",
+      "enunciado": "Em uma observação experimental, registrou-se o seguinte caso: uma bola recebe uma força por curto intervalo de tempo ao ser chutada A leitura física mais adequada aponta para:",
       "opcoes": [
-        "o caso mostra que a a��o temporal da for�a � essencial para avaliar o impulso produzido",
-        "Impulso de uma for�a mostra que as grandezas envolvidas n�o precisam ser relacionadas para interpretar o caso.",
-        "Impulso de uma for�a prova que a situa��o dispensa qualquer leitura f�sica ou quantitativa.",
-        "Impulso de uma for�a significa que o fen�meno n�o pode ser descrito por vari�veis f�sicas."
+        "o caso mostra que a ação temporal da força é essencial para avaliar o impulso produzido",
+        "Impulso de uma força mostra que as grandezas envolvidas não precisam ser relacionadas para interpretar o caso.",
+        "Impulso de uma força prova que a situação dispensa qualquer leitura física ou quantitativa.",
+        "Impulso de uma força significa que o fenômeno não pode ser descrito por variáveis físicas."
       ],
-      "correta": "o caso mostra que a a��o temporal da for�a � essencial para avaliar o impulso produzido",
-      "comentario": "Impulso de uma for�a permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
+      "correta": "o caso mostra que a ação temporal da força é essencial para avaliar o impulso produzido",
+      "comentario": "Impulso de uma força permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -907,22 +907,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Impulso de uma for�a",
+      "subtopico": "Impulso de uma força",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situa��o abaixo evidencia impulso de uma for�a de maneira mais clara?",
+      "enunciado": "Qual situação abaixo evidencia impulso de uma força de maneira mais clara?",
       "opcoes": [
-        "comparar o efeito de empurrar um carrinho com for�a pequena por muito tempo e grande por pouco tempo",
-        "comparar a quantidade de movimento de um carrinho leve r�pido e de um carrinho pesado lento",
-        "explicar a mudan�a de movimento de uma bola ap�s colis�o ou chute usando impulso",
-        "calcular a velocidade final de dois corpos ap�s uma colis�o em pista praticamente sem atrito"
+        "comparar o efeito de empurrar um carrinho com força pequena por muito tempo e grande por pouco tempo",
+        "comparar a quantidade de movimento de um carrinho leve rápido e de um carrinho pesado lento",
+        "explicar a mudança de movimento de uma bola após colisão ou chute usando impulso",
+        "calcular a velocidade final de dois corpos após uma colisão em pista praticamente sem atrito"
       ],
-      "correta": "comparar o efeito de empurrar um carrinho com for�a pequena por muito tempo e grande por pouco tempo",
-      "comentario": "A alternativa correta aproxima impulso de uma for�a de uma situa��o concreta.",
+      "correta": "comparar o efeito de empurrar um carrinho com força pequena por muito tempo e grande por pouco tempo",
+      "comentario": "A alternativa correta aproxima impulso de uma força de uma situação concreta.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -946,22 +946,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Impulso de uma for�a",
+      "subtopico": "Impulso de uma força",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"uma bola recebe uma for�a por curto intervalo de tempo ao ser chutada\", qual conclus�o � mais adequada?",
+      "enunciado": "Ao analisar o caso \"uma bola recebe uma força por curto intervalo de tempo ao ser chutada\", qual conclusão é mais adequada?",
       "opcoes": [
-        "o caso mostra que a a��o temporal da for�a � essencial para avaliar o impulso produzido",
-        "A situa��o indica que impulso de uma for�a n�o possui rela��o com medidas, vari�veis ou interpreta��o f�sica.",
-        "A situa��o prova que impulso de uma for�a s� existe em exemplos te�ricos sem uso cotidiano.",
-        "A situa��o mostra que impulso de uma for�a torna desnecess�rio comparar dados e modelos."
+        "o caso mostra que a ação temporal da força é essencial para avaliar o impulso produzido",
+        "A situação indica que impulso de uma força não possui relação com medidas, variáveis ou interpretação física.",
+        "A situação prova que impulso de uma força só existe em exemplos teóricos sem uso cotidiano.",
+        "A situação mostra que impulso de uma força torna desnecessário comparar dados e modelos."
       ],
-      "correta": "o caso mostra que a a��o temporal da for�a � essencial para avaliar o impulso produzido",
-      "comentario": "A conclus�o correta mant�m coer�ncia com os dados apresentados e com impulso de uma for�a.",
+      "correta": "o caso mostra que a ação temporal da força é essencial para avaliar o impulso produzido",
+      "comentario": "A conclusão correta mantém coerência com os dados apresentados e com impulso de uma força.",
       "tempoEstimado": 35,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -985,22 +985,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Impulso de uma for�a",
+      "subtopico": "Impulso de uma força",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com impulso de uma for�a?",
+      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com impulso de uma força?",
       "opcoes": [
-        "como o tempo de atua��o da for�a influencia o impulso produzido sobre um corpo?",
+        "como o tempo de atuação da força influencia o impulso produzido sobre um corpo?",
         "como massa e velocidade influenciam a quantidade de movimento de um corpo?",
-        "como a varia��o da quantidade de movimento pode ser prevista a partir do impulso resultante?",
+        "como a variação da quantidade de movimento pode ser prevista a partir do impulso resultante?",
         "por que a quantidade de movimento total de um sistema isolado se conserva?"
       ],
-      "correta": "como o tempo de atua��o da for�a influencia o impulso produzido sobre um corpo?",
-      "comentario": "A pergunta correta investiga impulso de uma for�a de forma direta e coerente.",
+      "correta": "como o tempo de atuação da força influencia o impulso produzido sobre um corpo?",
+      "comentario": "A pergunta correta investiga impulso de uma força de forma direta e coerente.",
       "tempoEstimado": 35,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -1024,22 +1024,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Impulso de uma for�a",
+      "subtopico": "Impulso de uma força",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a afirma��o que revela compreens�o inadequada de impulso de uma for�a.",
+      "enunciado": "Assinale a afirmação que revela compreensão inadequada de impulso de uma força.",
       "opcoes": [
-        "A grandeza associada ao produto da for�a resultante pelo intervalo de tempo em que ela atua.",
-        "O efeito temporal de uma for�a atuando sobre um corpo.",
-        "Impulso mede o efeito de uma for�a atuando durante certo intervalo de tempo.",
-        "Impulso depende apenas do valor da for�a e independe do tempo de contato."
+        "A grandeza associada ao produto da força resultante pelo intervalo de tempo em que ela atua.",
+        "O efeito temporal de uma força atuando sobre um corpo.",
+        "Impulso mede o efeito de uma força atuando durante certo intervalo de tempo.",
+        "Impulso depende apenas do valor da força e independe do tempo de contato."
       ],
-      "correta": "Impulso depende apenas do valor da for�a e independe do tempo de contato.",
-      "comentario": "A alternativa incorreta expressa um equ�voco comum sobre impulso de uma for�a.",
+      "correta": "Impulso depende apenas do valor da força e independe do tempo de contato.",
+      "comentario": "A alternativa incorreta expressa um equívoco comum sobre impulso de uma força.",
       "tempoEstimado": 45,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -1063,22 +1063,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Impulso de uma for�a",
+      "subtopico": "Impulso de uma força",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre F�sica, um estudante afirmou: \"uma for�a menor aplicada por tempo maior pode produzir impulso compar�vel ao de uma for�a maior em tempo menor\". Qual avalia��o � mais consistente?",
+      "enunciado": "Em um debate sobre Física, um estudante afirmou: \"uma força menor aplicada por tempo maior pode produzir impulso comparável ao de uma força maior em tempo menor\". Qual avaliação é mais consistente?",
       "opcoes": [
-        "A afirma��o est� correta, porque o impulso depende simultaneamente da intensidade da for�a e do intervalo de tempo de atua��o",
-        "A afirma��o est� incorreta, porque impulso de uma for�a nunca pode ser usada na F�sica escolar.",
-        "A afirma��o � irrelevante, porque impulso de uma for�a n�o se relaciona com interpreta��o de fen�menos.",
-        "A afirma��o est� incorreta, porque impulso de uma for�a elimina a necessidade de medir e comparar grandezas."
+        "A afirmação está correta, porque o impulso depende simultaneamente da intensidade da força e do intervalo de tempo de atuação",
+        "A afirmação está incorreta, porque impulso de uma força nunca pode ser usada na Física escolar.",
+        "A afirmação é irrelevante, porque impulso de uma força não se relaciona com interpretação de fenômenos.",
+        "A afirmação está incorreta, porque impulso de uma força elimina a necessidade de medir e comparar grandezas."
       ],
-      "correta": "A afirma��o est� correta, porque o impulso depende simultaneamente da intensidade da for�a e do intervalo de tempo de atua��o",
-      "comentario": "A avalia��o correta recupera o n�cleo conceitual de impulso de uma for�a.",
+      "correta": "A afirmação está correta, porque o impulso depende simultaneamente da intensidade da força e do intervalo de tempo de atuação",
+      "comentario": "A avaliação correta recupera o núcleo conceitual de impulso de uma força.",
       "tempoEstimado": 45,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -1102,22 +1102,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Impulso de uma for�a",
+      "subtopico": "Impulso de uma força",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se impulso de uma for�a fosse ignorado(a) na an�lise de um problema f�sico, o resultado mais prov�vel seria:",
+      "enunciado": "Se impulso de uma força fosse ignorado(a) na análise de um problema físico, o resultado mais provável seria:",
       "opcoes": [
-        "n�o seria poss�vel interpretar corretamente situa��es de choque, frenagem ou impacto prolongado",
-        "o problema continuaria exatamente igual, porque impulso de uma for�a n�o interfere na an�lise f�sica",
-        "seria poss�vel resolver a situa��o sem observar nenhuma grandeza, rela��o ou modelo",
-        "a interpreta��o ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
+        "não seria possível interpretar corretamente situações de choque, frenagem ou impacto prolongado",
+        "o problema continuaria exatamente igual, porque impulso de uma força não interfere na análise física",
+        "seria possível resolver a situação sem observar nenhuma grandeza, relação ou modelo",
+        "a interpretação ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
       ],
-      "correta": "n�o seria poss�vel interpretar corretamente situa��es de choque, frenagem ou impacto prolongado",
-      "comentario": "Ignorar impulso de uma for�a compromete a leitura f�sica e a qualidade da solu��o.",
+      "correta": "não seria possível interpretar corretamente situações de choque, frenagem ou impacto prolongado",
+      "comentario": "Ignorar impulso de uma força compromete a leitura física e a qualidade da solução.",
       "tempoEstimado": 55,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -1141,22 +1141,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Impulso de uma for�a",
+      "subtopico": "Impulso de uma força",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente impulso de uma for�a a uma situa��o escolar ou cotidiana?",
+      "enunciado": "Qual alternativa aplica corretamente impulso de uma força a uma situação escolar ou cotidiana?",
       "opcoes": [
-        "comparar o efeito de empurrar um carrinho com for�a pequena por muito tempo e grande por pouco tempo",
-        "explicar o funcionamento de airbags, joelheiras e amortecedores em situa��es de impacto",
-        "tratar dois corpos em colis�o sobre superf�cie de atrito desprez�vel como sistema isolado durante a intera��o",
+        "comparar o efeito de empurrar um carrinho com força pequena por muito tempo e grande por pouco tempo",
+        "explicar o funcionamento de airbags, joelheiras e amortecedores em situações de impacto",
+        "tratar dois corpos em colisão sobre superfície de atrito desprezível como sistema isolado durante a interação",
         "analisar o salto de um atleta ou o movimento de duas massas ligadas usando a ideia de centro de massa"
       ],
-      "correta": "comparar o efeito de empurrar um carrinho com for�a pequena por muito tempo e grande por pouco tempo",
-      "comentario": "A aplica��o correta mostra como impulso de uma for�a aparece em contextos pr�ximos do cotidiano.",
+      "correta": "comparar o efeito de empurrar um carrinho com força pequena por muito tempo e grande por pouco tempo",
+      "comentario": "A aplicação correta mostra como impulso de uma força aparece em contextos próximos do cotidiano.",
       "tempoEstimado": 55,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -1180,22 +1180,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Impulso de uma for�a",
+      "subtopico": "Impulso de uma força",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual s�ntese final representa melhor impulso de uma for�a?",
+      "enunciado": "Qual síntese final representa melhor impulso de uma força?",
       "opcoes": [
-        "impulso mede o efeito de uma for�a atuando durante certo intervalo de tempo",
-        "quantidade de movimento � o produto vetorial entre massa e velocidade de um corpo",
-        "o teorema do impulso relaciona impulso resultante e varia��o da quantidade de movimento",
-        "a conserva��o do momento linear afirma que o momento total de um sistema isolado permanece constante"
+        "impulso mede o efeito de uma força atuando durante certo intervalo de tempo",
+        "quantidade de movimento é o produto vetorial entre massa e velocidade de um corpo",
+        "o teorema do impulso relaciona impulso resultante e variação da quantidade de movimento",
+        "a conservação do momento linear afirma que o momento total de um sistema isolado permanece constante"
       ],
-      "correta": "impulso mede o efeito de uma for�a atuando durante certo intervalo de tempo",
-      "comentario": "A s�ntese correta preserva a defini��o, o foco e o uso anal�tico de impulso de uma for�a.",
+      "correta": "impulso mede o efeito de uma força atuando durante certo intervalo de tempo",
+      "comentario": "A síntese correta preserva a definição, o foco e o uso analítico de impulso de uma força.",
       "tempoEstimado": 55,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -1219,22 +1219,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Teorema do impulso",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em F�sica, Teorema do impulso pode ser definido(a) como:",
+      "enunciado": "Em Física, Teorema do impulso pode ser definido(a) como:",
       "opcoes": [
-        "a rela��o segundo a qual o impulso resultante sobre um corpo � igual � varia��o de sua quantidade de movimento",
+        "a relação segundo a qual o impulso resultante sobre um corpo é igual à variação de sua quantidade de movimento",
         "a grandeza vetorial associada ao produto entre massa e velocidade de um corpo",
-        "a grandeza associada ao produto da for�a resultante pelo intervalo de tempo em que ela atua",
-        "o princ�pio segundo o qual a quantidade de movimento total de um sistema isolado permanece constante"
+        "a grandeza associada ao produto da força resultante pelo intervalo de tempo em que ela atua",
+        "o princípio segundo o qual a quantidade de movimento total de um sistema isolado permanece constante"
       ],
-      "correta": "a rela��o segundo a qual o impulso resultante sobre um corpo � igual � varia��o de sua quantidade de movimento",
-      "comentario": "Teorema do impulso refere-se � rela��o segundo a qual o impulso resultante sobre um corpo � igual � varia��o de sua quantidade de movimento.",
+      "correta": "a relação segundo a qual o impulso resultante sobre um corpo é igual à variação de sua quantidade de movimento",
+      "comentario": "Teorema do impulso refere-se à relação segundo a qual o impulso resultante sobre um corpo é igual à variação de sua quantidade de movimento.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -1258,22 +1258,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Teorema do impulso",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situa��o: uma bola muda de velocidade ap�s receber um chute e essa mudan�a � associada ao impulso aplicado Esse caso exemplifica melhor qual subt�pico?",
+      "enunciado": "Observe a situação: uma bola muda de velocidade após receber um chute e essa mudança é associada ao impulso aplicado Esse caso exemplifica melhor qual subtópico?",
       "opcoes": [
         "Teorema do impulso",
         "Quantidade de movimento",
-        "Impulso de uma for�a",
-        "Conserva��o do momento linear"
+        "Impulso de uma força",
+        "Conservação do momento linear"
       ],
       "correta": "Teorema do impulso",
-      "comentario": "A situa��o apresentada � um exemplo de teorema do impulso.",
+      "comentario": "A situação apresentada é um exemplo de teorema do impulso.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -1297,22 +1297,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Teorema do impulso",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirma��o descreve corretamente teorema do impulso?",
+      "enunciado": "Qual afirmação descreve corretamente teorema do impulso?",
       "opcoes": [
-        "A rela��o segundo a qual o impulso resultante sobre um corpo � igual � varia��o de sua quantidade de movimento.",
+        "A relação segundo a qual o impulso resultante sobre um corpo é igual à variação de sua quantidade de movimento.",
         "A grandeza vetorial associada ao produto entre massa e velocidade de um corpo.",
-        "A grandeza associada ao produto da for�a resultante pelo intervalo de tempo em que ela atua.",
-        "O princ�pio segundo o qual a quantidade de movimento total de um sistema isolado permanece constante."
+        "A grandeza associada ao produto da força resultante pelo intervalo de tempo em que ela atua.",
+        "O princípio segundo o qual a quantidade de movimento total de um sistema isolado permanece constante."
       ],
-      "correta": "A rela��o segundo a qual o impulso resultante sobre um corpo � igual � varia��o de sua quantidade de movimento.",
-      "comentario": "A afirma��o correta retoma o sentido central de teorema do impulso.",
+      "correta": "A relação segundo a qual o impulso resultante sobre um corpo é igual à variação de sua quantidade de movimento.",
+      "comentario": "A afirmação correta retoma o sentido central de teorema do impulso.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -1336,22 +1336,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Teorema do impulso",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa incompat�vel com teorema do impulso.",
+      "enunciado": "Assinale a alternativa incompatível com teorema do impulso.",
       "opcoes": [
         "afirmar que o impulso age sem alterar a quantidade de movimento do corpo.",
-        "a conex�o entre for�a atuando no tempo e mudan�a do estado din�mico do corpo.",
-        "o teorema do impulso relaciona impulso resultante e varia��o da quantidade de movimento.",
-        "a rela��o segundo a qual o impulso resultante sobre um corpo � igual � varia��o de sua quantidade de movimento."
+        "a conexão entre força atuando no tempo e mudança do estado dinâmico do corpo.",
+        "o teorema do impulso relaciona impulso resultante e variação da quantidade de movimento.",
+        "a relação segundo a qual o impulso resultante sobre um corpo é igual à variação de sua quantidade de movimento."
       ],
       "correta": "afirmar que o impulso age sem alterar a quantidade de movimento do corpo.",
-      "comentario": "Afirmar que o impulso age sem alterar a quantidade de movimento do corpo n�o representa teorema do impulso, enquanto as demais alternativas se relacionam com esse subt�pico.",
+      "comentario": "Afirmar que o impulso age sem alterar a quantidade de movimento do corpo não representa teorema do impulso, enquanto as demais alternativas se relacionam com esse subtópico.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -1375,22 +1375,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Teorema do impulso",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando se estuda teorema do impulso, o foco principal est� em:",
+      "enunciado": "Quando se estuda teorema do impulso, o foco principal está em:",
       "opcoes": [
-        "a conex�o entre for�a atuando no tempo e mudan�a do estado din�mico do corpo",
-        "a rela��o entre massa, velocidade e o estado de movimento de um corpo",
-        "o efeito temporal de uma for�a atuando sobre um corpo",
-        "a perman�ncia do momento total em sistemas sem resultante externa significativa"
+        "a conexão entre força atuando no tempo e mudança do estado dinâmico do corpo",
+        "a relação entre massa, velocidade e o estado de movimento de um corpo",
+        "o efeito temporal de uma força atuando sobre um corpo",
+        "a permanência do momento total em sistemas sem resultante externa significativa"
       ],
-      "correta": "a conex�o entre for�a atuando no tempo e mudan�a do estado din�mico do corpo",
-      "comentario": "Teorema do impulso volta a aten��o para a conex�o entre for�a atuando no tempo e mudan�a do estado din�mico do corpo.",
+      "correta": "a conexão entre força atuando no tempo e mudança do estado dinâmico do corpo",
+      "comentario": "Teorema do impulso volta a atenção para a conexão entre força atuando no tempo e mudança do estado dinâmico do corpo.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -1414,22 +1414,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Teorema do impulso",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferen�a entre teorema do impulso e quantidade de movimento � que:",
+      "enunciado": "A principal diferença entre teorema do impulso e quantidade de movimento é que:",
       "opcoes": [
-        "teorema do impulso explica como a quantidade de movimento varia sob a��o de uma for�a, enquanto quantidade de movimento descreve apenas o estado din�mico do corpo em um instante",
-        "Teorema do impulso e Quantidade de movimento s�o exatamente a mesma ideia f�sica em qualquer situa��o.",
+        "teorema do impulso explica como a quantidade de movimento varia sob ação de uma força, enquanto quantidade de movimento descreve apenas o estado dinâmico do corpo em um instante",
+        "Teorema do impulso e Quantidade de movimento são exatamente a mesma ideia física em qualquer situação.",
         "Quantidade de movimento elimina a necessidade de observar teorema do impulso.",
-        "Teorema do impulso depende apenas de opini�o pessoal, sem rela��o com grandezas, modelos ou medidas."
+        "Teorema do impulso depende apenas de opinião pessoal, sem relação com grandezas, modelos ou medidas."
       ],
-      "correta": "teorema do impulso explica como a quantidade de movimento varia sob a��o de uma for�a, enquanto quantidade de movimento descreve apenas o estado din�mico do corpo em um instante",
-      "comentario": "A compara��o correta distingue os dois subt�picos sem confundir seus objetos de estudo.",
+      "correta": "teorema do impulso explica como a quantidade de movimento varia sob ação de uma força, enquanto quantidade de movimento descreve apenas o estado dinâmico do corpo em um instante",
+      "comentario": "A comparação correta distingue os dois subtópicos sem confundir seus objetos de estudo.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -1453,21 +1453,21 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Teorema do impulso",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma observa��o experimental, registrou-se o seguinte caso: uma bola muda de velocidade ap�s receber um chute e essa mudan�a � associada ao impulso aplicado A leitura f�sica mais adequada aponta para:",
+      "enunciado": "Em uma observação experimental, registrou-se o seguinte caso: uma bola muda de velocidade após receber um chute e essa mudança é associada ao impulso aplicado A leitura física mais adequada aponta para:",
       "opcoes": [
-        "o caso mostra que a mudan�a do movimento pode ser entendida pelo impulso total recebido",
-        "Teorema do impulso mostra que as grandezas envolvidas n�o precisam ser relacionadas para interpretar o caso.",
-        "Teorema do impulso prova que a situa��o dispensa qualquer leitura f�sica ou quantitativa.",
-        "Teorema do impulso significa que o fen�meno n�o pode ser descrito por vari�veis f�sicas."
+        "o caso mostra que a mudança do movimento pode ser entendida pelo impulso total recebido",
+        "Teorema do impulso mostra que as grandezas envolvidas não precisam ser relacionadas para interpretar o caso.",
+        "Teorema do impulso prova que a situação dispensa qualquer leitura física ou quantitativa.",
+        "Teorema do impulso significa que o fenômeno não pode ser descrito por variáveis físicas."
       ],
-      "correta": "o caso mostra que a mudan�a do movimento pode ser entendida pelo impulso total recebido",
+      "correta": "o caso mostra que a mudança do movimento pode ser entendida pelo impulso total recebido",
       "comentario": "Teorema do impulso permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
       "tempoEstimado": 25,
       "tags": [
@@ -1492,22 +1492,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Teorema do impulso",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situa��o abaixo evidencia teorema do impulso de maneira mais clara?",
+      "enunciado": "Qual situação abaixo evidencia teorema do impulso de maneira mais clara?",
       "opcoes": [
-        "explicar a mudan�a de movimento de uma bola ap�s colis�o ou chute usando impulso",
-        "comparar a quantidade de movimento de um carrinho leve r�pido e de um carrinho pesado lento",
-        "comparar o efeito de empurrar um carrinho com for�a pequena por muito tempo e grande por pouco tempo",
-        "calcular a velocidade final de dois corpos ap�s uma colis�o em pista praticamente sem atrito"
+        "explicar a mudança de movimento de uma bola após colisão ou chute usando impulso",
+        "comparar a quantidade de movimento de um carrinho leve rápido e de um carrinho pesado lento",
+        "comparar o efeito de empurrar um carrinho com força pequena por muito tempo e grande por pouco tempo",
+        "calcular a velocidade final de dois corpos após uma colisão em pista praticamente sem atrito"
       ],
-      "correta": "explicar a mudan�a de movimento de uma bola ap�s colis�o ou chute usando impulso",
-      "comentario": "A alternativa correta aproxima teorema do impulso de uma situa��o concreta.",
+      "correta": "explicar a mudança de movimento de uma bola após colisão ou chute usando impulso",
+      "comentario": "A alternativa correta aproxima teorema do impulso de uma situação concreta.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -1531,22 +1531,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Teorema do impulso",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"uma bola muda de velocidade ap�s receber um chute e essa mudan�a � associada ao impulso aplicado\", qual conclus�o � mais adequada?",
+      "enunciado": "Ao analisar o caso \"uma bola muda de velocidade após receber um chute e essa mudança é associada ao impulso aplicado\", qual conclusão é mais adequada?",
       "opcoes": [
-        "o caso mostra que a mudan�a do movimento pode ser entendida pelo impulso total recebido",
-        "A situa��o indica que teorema do impulso n�o possui rela��o com medidas, vari�veis ou interpreta��o f�sica.",
-        "A situa��o prova que teorema do impulso s� existe em exemplos te�ricos sem uso cotidiano.",
-        "A situa��o mostra que teorema do impulso torna desnecess�rio comparar dados e modelos."
+        "o caso mostra que a mudança do movimento pode ser entendida pelo impulso total recebido",
+        "A situação indica que teorema do impulso não possui relação com medidas, variáveis ou interpretação física.",
+        "A situação prova que teorema do impulso só existe em exemplos teóricos sem uso cotidiano.",
+        "A situação mostra que teorema do impulso torna desnecessário comparar dados e modelos."
       ],
-      "correta": "o caso mostra que a mudan�a do movimento pode ser entendida pelo impulso total recebido",
-      "comentario": "A conclus�o correta mant�m coer�ncia com os dados apresentados e com teorema do impulso.",
+      "correta": "o caso mostra que a mudança do movimento pode ser entendida pelo impulso total recebido",
+      "comentario": "A conclusão correta mantém coerência com os dados apresentados e com teorema do impulso.",
       "tempoEstimado": 35,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -1570,7 +1570,7 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Teorema do impulso",
       "dificuldadeLabel": "medio",
@@ -1579,12 +1579,12 @@
       "tipo": "multipla_escolha",
       "enunciado": "Qual pergunta de pesquisa se relaciona melhor com teorema do impulso?",
       "opcoes": [
-        "como a varia��o da quantidade de movimento pode ser prevista a partir do impulso resultante?",
+        "como a variação da quantidade de movimento pode ser prevista a partir do impulso resultante?",
         "como massa e velocidade influenciam a quantidade de movimento de um corpo?",
-        "como o tempo de atua��o da for�a influencia o impulso produzido sobre um corpo?",
+        "como o tempo de atuação da força influencia o impulso produzido sobre um corpo?",
         "por que a quantidade de movimento total de um sistema isolado se conserva?"
       ],
-      "correta": "como a varia��o da quantidade de movimento pode ser prevista a partir do impulso resultante?",
+      "correta": "como a variação da quantidade de movimento pode ser prevista a partir do impulso resultante?",
       "comentario": "A pergunta correta investiga teorema do impulso de forma direta e coerente.",
       "tempoEstimado": 35,
       "tags": [
@@ -1609,22 +1609,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Teorema do impulso",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a afirma��o que revela compreens�o inadequada de teorema do impulso.",
+      "enunciado": "Assinale a afirmação que revela compreensão inadequada de teorema do impulso.",
       "opcoes": [
-        "A rela��o segundo a qual o impulso resultante sobre um corpo � igual � varia��o de sua quantidade de movimento.",
-        "A conex�o entre for�a atuando no tempo e mudan�a do estado din�mico do corpo.",
-        "O teorema do impulso relaciona impulso resultante e varia��o da quantidade de movimento.",
-        "O impulso altera apenas a velocidade sem qualquer rela��o com a quantidade de movimento."
+        "A relação segundo a qual o impulso resultante sobre um corpo é igual à variação de sua quantidade de movimento.",
+        "A conexão entre força atuando no tempo e mudança do estado dinâmico do corpo.",
+        "O teorema do impulso relaciona impulso resultante e variação da quantidade de movimento.",
+        "O impulso altera apenas a velocidade sem qualquer relação com a quantidade de movimento."
       ],
-      "correta": "O impulso altera apenas a velocidade sem qualquer rela��o com a quantidade de movimento.",
-      "comentario": "A alternativa incorreta expressa um equ�voco comum sobre teorema do impulso.",
+      "correta": "O impulso altera apenas a velocidade sem qualquer relação com a quantidade de movimento.",
+      "comentario": "A alternativa incorreta expressa um equívoco comum sobre teorema do impulso.",
       "tempoEstimado": 45,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -1648,22 +1648,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Teorema do impulso",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre F�sica, um estudante afirmou: \"o impulso resultante � igual � mudan�a da quantidade de movimento do corpo\". Qual avalia��o � mais consistente?",
+      "enunciado": "Em um debate sobre Física, um estudante afirmou: \"o impulso resultante é igual à mudança da quantidade de movimento do corpo\". Qual avaliação é mais consistente?",
       "opcoes": [
-        "A afirma��o est� correta, porque o teorema do impulso liga a a��o acumulada da for�a ao efeito din�mico produzido",
-        "A afirma��o est� incorreta, porque teorema do impulso nunca pode ser usada na F�sica escolar.",
-        "A afirma��o � irrelevante, porque teorema do impulso n�o se relaciona com interpreta��o de fen�menos.",
-        "A afirma��o est� incorreta, porque teorema do impulso elimina a necessidade de medir e comparar grandezas."
+        "A afirmação está correta, porque o teorema do impulso liga a ação acumulada da força ao efeito dinâmico produzido",
+        "A afirmação está incorreta, porque teorema do impulso nunca pode ser usada na Física escolar.",
+        "A afirmação é irrelevante, porque teorema do impulso não se relaciona com interpretação de fenômenos.",
+        "A afirmação está incorreta, porque teorema do impulso elimina a necessidade de medir e comparar grandezas."
       ],
-      "correta": "A afirma��o est� correta, porque o teorema do impulso liga a a��o acumulada da for�a ao efeito din�mico produzido",
-      "comentario": "A avalia��o correta recupera o n�cleo conceitual de teorema do impulso.",
+      "correta": "A afirmação está correta, porque o teorema do impulso liga a ação acumulada da força ao efeito dinâmico produzido",
+      "comentario": "A avaliação correta recupera o núcleo conceitual de teorema do impulso.",
       "tempoEstimado": 45,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -1687,22 +1687,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Teorema do impulso",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se teorema do impulso fosse ignorado(a) na an�lise de um problema f�sico, o resultado mais prov�vel seria:",
+      "enunciado": "Se teorema do impulso fosse ignorado(a) na análise de um problema físico, o resultado mais provável seria:",
       "opcoes": [
-        "a an�lise de impactos, contatos e varia��es bruscas de movimento ficaria sem uma rela��o f�sica central",
-        "o problema continuaria exatamente igual, porque teorema do impulso n�o interfere na an�lise f�sica",
-        "seria poss�vel resolver a situa��o sem observar nenhuma grandeza, rela��o ou modelo",
-        "a interpreta��o ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
+        "a análise de impactos, contatos e variações bruscas de movimento ficaria sem uma relação física central",
+        "o problema continuaria exatamente igual, porque teorema do impulso não interfere na análise física",
+        "seria possível resolver a situação sem observar nenhuma grandeza, relação ou modelo",
+        "a interpretação ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
       ],
-      "correta": "a an�lise de impactos, contatos e varia��es bruscas de movimento ficaria sem uma rela��o f�sica central",
-      "comentario": "Ignorar teorema do impulso compromete a leitura f�sica e a qualidade da solu��o.",
+      "correta": "a análise de impactos, contatos e variações bruscas de movimento ficaria sem uma relação física central",
+      "comentario": "Ignorar teorema do impulso compromete a leitura física e a qualidade da solução.",
       "tempoEstimado": 55,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -1726,22 +1726,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Teorema do impulso",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente teorema do impulso a uma situa��o escolar ou cotidiana?",
+      "enunciado": "Qual alternativa aplica corretamente teorema do impulso a uma situação escolar ou cotidiana?",
       "opcoes": [
-        "explicar a mudan�a de movimento de uma bola ap�s colis�o ou chute usando impulso",
-        "explicar o funcionamento de airbags, joelheiras e amortecedores em situa��es de impacto",
-        "tratar dois corpos em colis�o sobre superf�cie de atrito desprez�vel como sistema isolado durante a intera��o",
+        "explicar a mudança de movimento de uma bola após colisão ou chute usando impulso",
+        "explicar o funcionamento de airbags, joelheiras e amortecedores em situações de impacto",
+        "tratar dois corpos em colisão sobre superfície de atrito desprezível como sistema isolado durante a interação",
         "analisar o salto de um atleta ou o movimento de duas massas ligadas usando a ideia de centro de massa"
       ],
-      "correta": "explicar a mudan�a de movimento de uma bola ap�s colis�o ou chute usando impulso",
-      "comentario": "A aplica��o correta mostra como teorema do impulso aparece em contextos pr�ximos do cotidiano.",
+      "correta": "explicar a mudança de movimento de uma bola após colisão ou chute usando impulso",
+      "comentario": "A aplicação correta mostra como teorema do impulso aparece em contextos próximos do cotidiano.",
       "tempoEstimado": 55,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -1765,22 +1765,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Teorema do impulso",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual s�ntese final representa melhor teorema do impulso?",
+      "enunciado": "Qual síntese final representa melhor teorema do impulso?",
       "opcoes": [
-        "o teorema do impulso relaciona impulso resultante e varia��o da quantidade de movimento",
-        "quantidade de movimento � o produto vetorial entre massa e velocidade de um corpo",
-        "impulso mede o efeito de uma for�a atuando durante certo intervalo de tempo",
-        "a conserva��o do momento linear afirma que o momento total de um sistema isolado permanece constante"
+        "o teorema do impulso relaciona impulso resultante e variação da quantidade de movimento",
+        "quantidade de movimento é o produto vetorial entre massa e velocidade de um corpo",
+        "impulso mede o efeito de uma força atuando durante certo intervalo de tempo",
+        "a conservação do momento linear afirma que o momento total de um sistema isolado permanece constante"
       ],
-      "correta": "o teorema do impulso relaciona impulso resultante e varia��o da quantidade de movimento",
-      "comentario": "A s�ntese correta preserva a defini��o, o foco e o uso anal�tico de teorema do impulso.",
+      "correta": "o teorema do impulso relaciona impulso resultante e variação da quantidade de movimento",
+      "comentario": "A síntese correta preserva a definição, o foco e o uso analítico de teorema do impulso.",
       "tempoEstimado": 55,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -1804,22 +1804,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Conserva��o do momento linear",
+      "subtopico": "Conservação do momento linear",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em F�sica, Conserva��o do momento linear pode ser definido(a) como:",
+      "enunciado": "Em Física, Conservação do momento linear pode ser definido(a) como:",
       "opcoes": [
-        "o princ�pio segundo o qual a quantidade de movimento total de um sistema isolado permanece constante",
+        "o princípio segundo o qual a quantidade de movimento total de um sistema isolado permanece constante",
         "a grandeza vetorial associada ao produto entre massa e velocidade de um corpo",
-        "a grandeza associada ao produto da for�a resultante pelo intervalo de tempo em que ela atua",
-        "a rela��o segundo a qual o impulso resultante sobre um corpo � igual � varia��o de sua quantidade de movimento"
+        "a grandeza associada ao produto da força resultante pelo intervalo de tempo em que ela atua",
+        "a relação segundo a qual o impulso resultante sobre um corpo é igual à variação de sua quantidade de movimento"
       ],
-      "correta": "o princ�pio segundo o qual a quantidade de movimento total de um sistema isolado permanece constante",
-      "comentario": "Conserva��o do momento linear refere-se ao princ�pio segundo o qual a quantidade de movimento total de um sistema isolado permanece constante.",
+      "correta": "o princípio segundo o qual a quantidade de movimento total de um sistema isolado permanece constante",
+      "comentario": "Conservação do momento linear refere-se ao princípio segundo o qual a quantidade de movimento total de um sistema isolado permanece constante.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -1843,22 +1843,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Conserva��o do momento linear",
+      "subtopico": "Conservação do momento linear",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situa��o: em uma colis�o ideal sem for�as externas relevantes, a soma vetorial do momento antes e depois se conserva Esse caso exemplifica melhor qual subt�pico?",
+      "enunciado": "Observe a situação: em uma colisão ideal sem forças externas relevantes, a soma vetorial do momento antes e depois se conserva Esse caso exemplifica melhor qual subtópico?",
       "opcoes": [
-        "Conserva��o do momento linear",
+        "Conservação do momento linear",
         "Quantidade de movimento",
-        "Impulso de uma for�a",
+        "Impulso de uma força",
         "Teorema do impulso"
       ],
-      "correta": "Conserva��o do momento linear",
-      "comentario": "A situa��o apresentada � um exemplo de conserva��o do momento linear.",
+      "correta": "Conservação do momento linear",
+      "comentario": "A situação apresentada é um exemplo de conservação do momento linear.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -1882,22 +1882,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Conserva��o do momento linear",
+      "subtopico": "Conservação do momento linear",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirma��o descreve corretamente conserva��o do momento linear?",
+      "enunciado": "Qual afirmação descreve corretamente conservação do momento linear?",
       "opcoes": [
-        "O princ�pio segundo o qual a quantidade de movimento total de um sistema isolado permanece constante.",
+        "O princípio segundo o qual a quantidade de movimento total de um sistema isolado permanece constante.",
         "A grandeza vetorial associada ao produto entre massa e velocidade de um corpo.",
-        "A grandeza associada ao produto da for�a resultante pelo intervalo de tempo em que ela atua.",
-        "A rela��o segundo a qual o impulso resultante sobre um corpo � igual � varia��o de sua quantidade de movimento."
+        "A grandeza associada ao produto da força resultante pelo intervalo de tempo em que ela atua.",
+        "A relação segundo a qual o impulso resultante sobre um corpo é igual à variação de sua quantidade de movimento."
       ],
-      "correta": "O princ�pio segundo o qual a quantidade de movimento total de um sistema isolado permanece constante.",
-      "comentario": "A afirma��o correta retoma o sentido central de conserva��o do momento linear.",
+      "correta": "O princípio segundo o qual a quantidade de movimento total de um sistema isolado permanece constante.",
+      "comentario": "A afirmação correta retoma o sentido central de conservação do momento linear.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -1921,22 +1921,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Conserva��o do momento linear",
+      "subtopico": "Conservação do momento linear",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa incompat�vel com conserva��o do momento linear.",
+      "enunciado": "Assinale a alternativa incompatível com conservação do momento linear.",
       "opcoes": [
-        "usar conserva��o do momento linear em um sistema fortemente empurrado por for�a externa durante toda a intera��o.",
-        "a perman�ncia do momento total em sistemas sem resultante externa significativa.",
-        "a conserva��o do momento linear afirma que o momento total de um sistema isolado permanece constante.",
-        "o princ�pio segundo o qual a quantidade de movimento total de um sistema isolado permanece constante."
+        "usar conservação do momento linear em um sistema fortemente empurrado por força externa durante toda a interação.",
+        "a permanência do momento total em sistemas sem resultante externa significativa.",
+        "a conservação do momento linear afirma que o momento total de um sistema isolado permanece constante.",
+        "o princípio segundo o qual a quantidade de movimento total de um sistema isolado permanece constante."
       ],
-      "correta": "usar conserva��o do momento linear em um sistema fortemente empurrado por for�a externa durante toda a intera��o.",
-      "comentario": "Usar conserva��o do momento linear em um sistema fortemente empurrado por for�a externa durante toda a intera��o n�o representa conserva��o do momento linear, enquanto as demais alternativas se relacionam com esse subt�pico.",
+      "correta": "usar conservação do momento linear em um sistema fortemente empurrado por força externa durante toda a interação.",
+      "comentario": "Usar conservação do momento linear em um sistema fortemente empurrado por força externa durante toda a interação não representa conservação do momento linear, enquanto as demais alternativas se relacionam com esse subtópico.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -1960,22 +1960,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Conserva��o do momento linear",
+      "subtopico": "Conservação do momento linear",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando se estuda conserva��o do momento linear, o foco principal est� em:",
+      "enunciado": "Quando se estuda conservação do momento linear, o foco principal está em:",
       "opcoes": [
-        "a perman�ncia do momento total em sistemas sem resultante externa significativa",
-        "a rela��o entre massa, velocidade e o estado de movimento de um corpo",
-        "o efeito temporal de uma for�a atuando sobre um corpo",
-        "a conex�o entre for�a atuando no tempo e mudan�a do estado din�mico do corpo"
+        "a permanência do momento total em sistemas sem resultante externa significativa",
+        "a relação entre massa, velocidade e o estado de movimento de um corpo",
+        "o efeito temporal de uma força atuando sobre um corpo",
+        "a conexão entre força atuando no tempo e mudança do estado dinâmico do corpo"
       ],
-      "correta": "a perman�ncia do momento total em sistemas sem resultante externa significativa",
-      "comentario": "Conserva��o do momento linear volta a aten��o para a perman�ncia do momento total em sistemas sem resultante externa significativa.",
+      "correta": "a permanência do momento total em sistemas sem resultante externa significativa",
+      "comentario": "Conservação do momento linear volta a atenção para a permanência do momento total em sistemas sem resultante externa significativa.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -1999,22 +1999,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Conserva��o do momento linear",
+      "subtopico": "Conservação do momento linear",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferen�a entre conserva��o do momento linear e sistemas isolados � que:",
+      "enunciado": "A principal diferença entre conservação do momento linear e sistemas isolados é que:",
       "opcoes": [
-        "conserva��o do momento linear � o princ�pio f�sico aplicado ao sistema, enquanto sistemas isolados descreve a condi��o necess�ria para essa conserva��o ocorrer",
-        "Conserva��o do momento linear e Sistemas isolados s�o exatamente a mesma ideia f�sica em qualquer situa��o.",
-        "Sistemas isolados elimina a necessidade de observar conserva��o do momento linear.",
-        "Conserva��o do momento linear depende apenas de opini�o pessoal, sem rela��o com grandezas, modelos ou medidas."
+        "conservação do momento linear é o princípio físico aplicado ao sistema, enquanto sistemas isolados descreve a condição necessária para essa conservação ocorrer",
+        "Conservação do momento linear e Sistemas isolados são exatamente a mesma ideia física em qualquer situação.",
+        "Sistemas isolados elimina a necessidade de observar conservação do momento linear.",
+        "Conservação do momento linear depende apenas de opinião pessoal, sem relação com grandezas, modelos ou medidas."
       ],
-      "correta": "conserva��o do momento linear � o princ�pio f�sico aplicado ao sistema, enquanto sistemas isolados descreve a condi��o necess�ria para essa conserva��o ocorrer",
-      "comentario": "A compara��o correta distingue os dois subt�picos sem confundir seus objetos de estudo.",
+      "correta": "conservação do momento linear é o princípio físico aplicado ao sistema, enquanto sistemas isolados descreve a condição necessária para essa conservação ocorrer",
+      "comentario": "A comparação correta distingue os dois subtópicos sem confundir seus objetos de estudo.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -2038,22 +2038,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Conserva��o do momento linear",
+      "subtopico": "Conservação do momento linear",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma observa��o experimental, registrou-se o seguinte caso: em uma colis�o ideal sem for�as externas relevantes, a soma vetorial do momento antes e depois se conserva A leitura f�sica mais adequada aponta para:",
+      "enunciado": "Em uma observação experimental, registrou-se o seguinte caso: em uma colisão ideal sem forças externas relevantes, a soma vetorial do momento antes e depois se conserva A leitura física mais adequada aponta para:",
       "opcoes": [
-        "o caso mostra que o estado din�mico total do sistema se preserva quando for�as externas n�o alteram a soma vetorial do momento",
-        "Conserva��o do momento linear mostra que as grandezas envolvidas n�o precisam ser relacionadas para interpretar o caso.",
-        "Conserva��o do momento linear prova que a situa��o dispensa qualquer leitura f�sica ou quantitativa.",
-        "Conserva��o do momento linear significa que o fen�meno n�o pode ser descrito por vari�veis f�sicas."
+        "o caso mostra que o estado dinâmico total do sistema se preserva quando forças externas não alteram a soma vetorial do momento",
+        "Conservação do momento linear mostra que as grandezas envolvidas não precisam ser relacionadas para interpretar o caso.",
+        "Conservação do momento linear prova que a situação dispensa qualquer leitura física ou quantitativa.",
+        "Conservação do momento linear significa que o fenômeno não pode ser descrito por variáveis físicas."
       ],
-      "correta": "o caso mostra que o estado din�mico total do sistema se preserva quando for�as externas n�o alteram a soma vetorial do momento",
-      "comentario": "Conserva��o do momento linear permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
+      "correta": "o caso mostra que o estado dinâmico total do sistema se preserva quando forças externas não alteram a soma vetorial do momento",
+      "comentario": "Conservação do momento linear permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -2077,22 +2077,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Conserva��o do momento linear",
+      "subtopico": "Conservação do momento linear",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situa��o abaixo evidencia conserva��o do momento linear de maneira mais clara?",
+      "enunciado": "Qual situação abaixo evidencia conservação do momento linear de maneira mais clara?",
       "opcoes": [
-        "calcular a velocidade final de dois corpos ap�s uma colis�o em pista praticamente sem atrito",
-        "comparar a quantidade de movimento de um carrinho leve r�pido e de um carrinho pesado lento",
-        "comparar o efeito de empurrar um carrinho com for�a pequena por muito tempo e grande por pouco tempo",
-        "explicar a mudan�a de movimento de uma bola ap�s colis�o ou chute usando impulso"
+        "calcular a velocidade final de dois corpos após uma colisão em pista praticamente sem atrito",
+        "comparar a quantidade de movimento de um carrinho leve rápido e de um carrinho pesado lento",
+        "comparar o efeito de empurrar um carrinho com força pequena por muito tempo e grande por pouco tempo",
+        "explicar a mudança de movimento de uma bola após colisão ou chute usando impulso"
       ],
-      "correta": "calcular a velocidade final de dois corpos ap�s uma colis�o em pista praticamente sem atrito",
-      "comentario": "A alternativa correta aproxima conserva��o do momento linear de uma situa��o concreta.",
+      "correta": "calcular a velocidade final de dois corpos após uma colisão em pista praticamente sem atrito",
+      "comentario": "A alternativa correta aproxima conservação do momento linear de uma situação concreta.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -2116,22 +2116,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Conserva��o do momento linear",
+      "subtopico": "Conservação do momento linear",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"em uma colis�o ideal sem for�as externas relevantes, a soma vetorial do momento antes e depois se conserva\", qual conclus�o � mais adequada?",
+      "enunciado": "Ao analisar o caso \"em uma colisão ideal sem forças externas relevantes, a soma vetorial do momento antes e depois se conserva\", qual conclusão é mais adequada?",
       "opcoes": [
-        "o caso mostra que o estado din�mico total do sistema se preserva quando for�as externas n�o alteram a soma vetorial do momento",
-        "A situa��o indica que conserva��o do momento linear n�o possui rela��o com medidas, vari�veis ou interpreta��o f�sica.",
-        "A situa��o prova que conserva��o do momento linear s� existe em exemplos te�ricos sem uso cotidiano.",
-        "A situa��o mostra que conserva��o do momento linear torna desnecess�rio comparar dados e modelos."
+        "o caso mostra que o estado dinâmico total do sistema se preserva quando forças externas não alteram a soma vetorial do momento",
+        "A situação indica que conservação do momento linear não possui relação com medidas, variáveis ou interpretação física.",
+        "A situação prova que conservação do momento linear só existe em exemplos teóricos sem uso cotidiano.",
+        "A situação mostra que conservação do momento linear torna desnecessário comparar dados e modelos."
       ],
-      "correta": "o caso mostra que o estado din�mico total do sistema se preserva quando for�as externas n�o alteram a soma vetorial do momento",
-      "comentario": "A conclus�o correta mant�m coer�ncia com os dados apresentados e com conserva��o do momento linear.",
+      "correta": "o caso mostra que o estado dinâmico total do sistema se preserva quando forças externas não alteram a soma vetorial do momento",
+      "comentario": "A conclusão correta mantém coerência com os dados apresentados e com conservação do momento linear.",
       "tempoEstimado": 35,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -2155,22 +2155,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Conserva��o do momento linear",
+      "subtopico": "Conservação do momento linear",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com conserva��o do momento linear?",
+      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com conservação do momento linear?",
       "opcoes": [
         "por que a quantidade de movimento total de um sistema isolado se conserva?",
         "como massa e velocidade influenciam a quantidade de movimento de um corpo?",
-        "como o tempo de atua��o da for�a influencia o impulso produzido sobre um corpo?",
-        "como a varia��o da quantidade de movimento pode ser prevista a partir do impulso resultante?"
+        "como o tempo de atuação da força influencia o impulso produzido sobre um corpo?",
+        "como a variação da quantidade de movimento pode ser prevista a partir do impulso resultante?"
       ],
       "correta": "por que a quantidade de movimento total de um sistema isolado se conserva?",
-      "comentario": "A pergunta correta investiga conserva��o do momento linear de forma direta e coerente.",
+      "comentario": "A pergunta correta investiga conservação do momento linear de forma direta e coerente.",
       "tempoEstimado": 35,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -2194,22 +2194,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Conserva��o do momento linear",
+      "subtopico": "Conservação do momento linear",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a afirma��o que revela compreens�o inadequada de conserva��o do momento linear.",
+      "enunciado": "Assinale a afirmação que revela compreensão inadequada de conservação do momento linear.",
       "opcoes": [
-        "O princ�pio segundo o qual a quantidade de movimento total de um sistema isolado permanece constante.",
-        "A perman�ncia do momento total em sistemas sem resultante externa significativa.",
-        "A conserva��o do momento linear afirma que o momento total de um sistema isolado permanece constante.",
-        "A conserva��o do momento linear vale mesmo quando for�as externas importantes atuam no sistema."
+        "O princípio segundo o qual a quantidade de movimento total de um sistema isolado permanece constante.",
+        "A permanência do momento total em sistemas sem resultante externa significativa.",
+        "A conservação do momento linear afirma que o momento total de um sistema isolado permanece constante.",
+        "A conservação do momento linear vale mesmo quando forças externas importantes atuam no sistema."
       ],
-      "correta": "A conserva��o do momento linear vale mesmo quando for�as externas importantes atuam no sistema.",
-      "comentario": "A alternativa incorreta expressa um equ�voco comum sobre conserva��o do momento linear.",
+      "correta": "A conservação do momento linear vale mesmo quando forças externas importantes atuam no sistema.",
+      "comentario": "A alternativa incorreta expressa um equívoco comum sobre conservação do momento linear.",
       "tempoEstimado": 45,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -2233,22 +2233,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Conserva��o do momento linear",
+      "subtopico": "Conservação do momento linear",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre F�sica, um estudante afirmou: \"sem for�a externa resultante relevante, o momento total antes e depois da intera��o permanece o mesmo\". Qual avalia��o � mais consistente?",
+      "enunciado": "Em um debate sobre Física, um estudante afirmou: \"sem força externa resultante relevante, o momento total antes e depois da interação permanece o mesmo\". Qual avaliação é mais consistente?",
       "opcoes": [
-        "A afirma��o est� correta, porque em sistemas isolados, as for�as internas se compensam na soma total do momento linear",
-        "A afirma��o est� incorreta, porque conserva��o do momento linear nunca pode ser usada na F�sica escolar.",
-        "A afirma��o � irrelevante, porque conserva��o do momento linear n�o se relaciona com interpreta��o de fen�menos.",
-        "A afirma��o est� incorreta, porque conserva��o do momento linear elimina a necessidade de medir e comparar grandezas."
+        "A afirmação está correta, porque em sistemas isolados, as forças internas se compensam na soma total do momento linear",
+        "A afirmação está incorreta, porque conservação do momento linear nunca pode ser usada na Física escolar.",
+        "A afirmação é irrelevante, porque conservação do momento linear não se relaciona com interpretação de fenômenos.",
+        "A afirmação está incorreta, porque conservação do momento linear elimina a necessidade de medir e comparar grandezas."
       ],
-      "correta": "A afirma��o est� correta, porque em sistemas isolados, as for�as internas se compensam na soma total do momento linear",
-      "comentario": "A avalia��o correta recupera o n�cleo conceitual de conserva��o do momento linear.",
+      "correta": "A afirmação está correta, porque em sistemas isolados, as forças internas se compensam na soma total do momento linear",
+      "comentario": "A avaliação correta recupera o núcleo conceitual de conservação do momento linear.",
       "tempoEstimado": 45,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -2272,22 +2272,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Conserva��o do momento linear",
+      "subtopico": "Conservação do momento linear",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se conserva��o do momento linear fosse ignorado(a) na an�lise de um problema f�sico, o resultado mais prov�vel seria:",
+      "enunciado": "Se conservação do momento linear fosse ignorado(a) na análise de um problema físico, o resultado mais provável seria:",
       "opcoes": [
-        "colis�es e explos�es seriam analisadas sem o crit�rio central que conecta os estados inicial e final do sistema",
-        "o problema continuaria exatamente igual, porque conserva��o do momento linear n�o interfere na an�lise f�sica",
-        "seria poss�vel resolver a situa��o sem observar nenhuma grandeza, rela��o ou modelo",
-        "a interpreta��o ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
+        "colisões e explosões seriam analisadas sem o critério central que conecta os estados inicial e final do sistema",
+        "o problema continuaria exatamente igual, porque conservação do momento linear não interfere na análise física",
+        "seria possível resolver a situação sem observar nenhuma grandeza, relação ou modelo",
+        "a interpretação ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
       ],
-      "correta": "colis�es e explos�es seriam analisadas sem o crit�rio central que conecta os estados inicial e final do sistema",
-      "comentario": "Ignorar conserva��o do momento linear compromete a leitura f�sica e a qualidade da solu��o.",
+      "correta": "colisões e explosões seriam analisadas sem o critério central que conecta os estados inicial e final do sistema",
+      "comentario": "Ignorar conservação do momento linear compromete a leitura física e a qualidade da solução.",
       "tempoEstimado": 55,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -2311,22 +2311,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Conserva��o do momento linear",
+      "subtopico": "Conservação do momento linear",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente conserva��o do momento linear a uma situa��o escolar ou cotidiana?",
+      "enunciado": "Qual alternativa aplica corretamente conservação do momento linear a uma situação escolar ou cotidiana?",
       "opcoes": [
-        "calcular a velocidade final de dois corpos ap�s uma colis�o em pista praticamente sem atrito",
-        "explicar o funcionamento de airbags, joelheiras e amortecedores em situa��es de impacto",
-        "tratar dois corpos em colis�o sobre superf�cie de atrito desprez�vel como sistema isolado durante a intera��o",
+        "calcular a velocidade final de dois corpos após uma colisão em pista praticamente sem atrito",
+        "explicar o funcionamento de airbags, joelheiras e amortecedores em situações de impacto",
+        "tratar dois corpos em colisão sobre superfície de atrito desprezível como sistema isolado durante a interação",
         "analisar o salto de um atleta ou o movimento de duas massas ligadas usando a ideia de centro de massa"
       ],
-      "correta": "calcular a velocidade final de dois corpos ap�s uma colis�o em pista praticamente sem atrito",
-      "comentario": "A aplica��o correta mostra como conserva��o do momento linear aparece em contextos pr�ximos do cotidiano.",
+      "correta": "calcular a velocidade final de dois corpos após uma colisão em pista praticamente sem atrito",
+      "comentario": "A aplicação correta mostra como conservação do momento linear aparece em contextos próximos do cotidiano.",
       "tempoEstimado": 55,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -2350,22 +2350,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Conserva��o do momento linear",
+      "subtopico": "Conservação do momento linear",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual s�ntese final representa melhor conserva��o do momento linear?",
+      "enunciado": "Qual síntese final representa melhor conservação do momento linear?",
       "opcoes": [
-        "a conserva��o do momento linear afirma que o momento total de um sistema isolado permanece constante",
-        "quantidade de movimento � o produto vetorial entre massa e velocidade de um corpo",
-        "impulso mede o efeito de uma for�a atuando durante certo intervalo de tempo",
-        "o teorema do impulso relaciona impulso resultante e varia��o da quantidade de movimento"
+        "a conservação do momento linear afirma que o momento total de um sistema isolado permanece constante",
+        "quantidade de movimento é o produto vetorial entre massa e velocidade de um corpo",
+        "impulso mede o efeito de uma força atuando durante certo intervalo de tempo",
+        "o teorema do impulso relaciona impulso resultante e variação da quantidade de movimento"
       ],
-      "correta": "a conserva��o do momento linear afirma que o momento total de um sistema isolado permanece constante",
-      "comentario": "A s�ntese correta preserva a defini��o, o foco e o uso anal�tico de conserva��o do momento linear.",
+      "correta": "a conservação do momento linear afirma que o momento total de um sistema isolado permanece constante",
+      "comentario": "A síntese correta preserva a definição, o foco e o uso analítico de conservação do momento linear.",
       "tempoEstimado": 55,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -2389,22 +2389,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Colis�es el�sticas",
+      "subtopico": "Colisóes elásticas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em F�sica, Colis�es el�sticas pode ser definido(a) como:",
+      "enunciado": "Em Física, Colisóes elásticas pode ser definido(a) como:",
       "opcoes": [
-        "as colis�es em que a quantidade de movimento total se conserva e a energia cin�tica total do sistema tamb�m se conserva",
+        "as colisões em que a quantidade de movimento total se conserva e a energia cinética total do sistema também se conserva",
         "a grandeza vetorial associada ao produto entre massa e velocidade de um corpo",
-        "a grandeza associada ao produto da for�a resultante pelo intervalo de tempo em que ela atua",
-        "a rela��o segundo a qual o impulso resultante sobre um corpo � igual � varia��o de sua quantidade de movimento"
+        "a grandeza associada ao produto da força resultante pelo intervalo de tempo em que ela atua",
+        "a relação segundo a qual o impulso resultante sobre um corpo é igual à variação de sua quantidade de movimento"
       ],
-      "correta": "as colis�es em que a quantidade de movimento total se conserva e a energia cin�tica total do sistema tamb�m se conserva",
-      "comentario": "Colis�es el�sticas refere-se a as colis�es em que a quantidade de movimento total se conserva e a energia cin�tica total do sistema tamb�m se conserva.",
+      "correta": "as colisões em que a quantidade de movimento total se conserva e a energia cinética total do sistema também se conserva",
+      "comentario": "Colisóes elásticas refere-se a as colisões em que a quantidade de movimento total se conserva e a energia cinética total do sistema também se conserva.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -2428,22 +2428,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Colis�es el�sticas",
+      "subtopico": "Colisóes elásticas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situa��o: duas esferas colidem quase sem deforma��o percept�vel e se separam mantendo comportamento idealizado Esse caso exemplifica melhor qual subt�pico?",
+      "enunciado": "Observe a situação: duas esferas colidem quase sem deformação perceptível e se separam mantendo comportamento idealizado Esse caso exemplifica melhor qual subtópico?",
       "opcoes": [
-        "Colis�es el�sticas",
+        "Colisóes elásticas",
         "Quantidade de movimento",
-        "Impulso de uma for�a",
+        "Impulso de uma força",
         "Teorema do impulso"
       ],
-      "correta": "Colis�es el�sticas",
-      "comentario": "A situa��o apresentada � um exemplo de colis�es el�sticas.",
+      "correta": "Colisóes elásticas",
+      "comentario": "A situação apresentada é um exemplo de colisões elásticas.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -2467,22 +2467,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Colis�es el�sticas",
+      "subtopico": "Colisóes elásticas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirma��o descreve corretamente colis�es el�sticas?",
+      "enunciado": "Qual afirmação descreve corretamente colisões elásticas?",
       "opcoes": [
-        "As colis�es em que a quantidade de movimento total se conserva e a energia cin�tica total do sistema tamb�m se conserva.",
+        "As colisões em que a quantidade de movimento total se conserva e a energia cinética total do sistema também se conserva.",
         "A grandeza vetorial associada ao produto entre massa e velocidade de um corpo.",
-        "A grandeza associada ao produto da for�a resultante pelo intervalo de tempo em que ela atua.",
-        "A rela��o segundo a qual o impulso resultante sobre um corpo � igual � varia��o de sua quantidade de movimento."
+        "A grandeza associada ao produto da força resultante pelo intervalo de tempo em que ela atua.",
+        "A relação segundo a qual o impulso resultante sobre um corpo é igual à variação de sua quantidade de movimento."
       ],
-      "correta": "As colis�es em que a quantidade de movimento total se conserva e a energia cin�tica total do sistema tamb�m se conserva.",
-      "comentario": "A afirma��o correta retoma o sentido central de colis�es el�sticas.",
+      "correta": "As colisões em que a quantidade de movimento total se conserva e a energia cinética total do sistema também se conserva.",
+      "comentario": "A afirmação correta retoma o sentido central de colisões elásticas.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -2506,22 +2506,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Colis�es el�sticas",
+      "subtopico": "Colisóes elásticas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa incompat�vel com colis�es el�sticas.",
+      "enunciado": "Assinale a alternativa incompatível com colisões elásticas.",
       "opcoes": [
-        "classificar como el�stica uma colis�o com grande deforma��o e perda evidente de energia cin�tica.",
-        "a identifica��o de colis�es em que n�o h� perda de energia cin�tica total do sistema.",
-        "colis�es el�sticas preservam momento linear e energia cin�tica total do sistema.",
-        "as colis�es em que a quantidade de movimento total se conserva e a energia cin�tica total do sistema tamb�m se conserva."
+        "classificar como elástica uma colisão com grande deformação e perda evidente de energia cinética.",
+        "a identificação de colisões em que não há perda de energia cinética total do sistema.",
+        "colisões elásticas preservam momento linear e energia cinética total do sistema.",
+        "as colisões em que a quantidade de movimento total se conserva e a energia cinética total do sistema também se conserva."
       ],
-      "correta": "classificar como el�stica uma colis�o com grande deforma��o e perda evidente de energia cin�tica.",
-      "comentario": "Classificar como el�stica uma colis�o com grande deforma��o e perda evidente de energia cin�tica n�o representa colis�es el�sticas, enquanto as demais alternativas se relacionam com esse subt�pico.",
+      "correta": "classificar como elástica uma colisão com grande deformação e perda evidente de energia cinética.",
+      "comentario": "Classificar como elástica uma colisão com grande deformação e perda evidente de energia cinética não representa colisões elásticas, enquanto as demais alternativas se relacionam com esse subtópico.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -2545,22 +2545,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Colis�es el�sticas",
+      "subtopico": "Colisóes elásticas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando se estuda colis�es el�sticas, o foco principal est� em:",
+      "enunciado": "Quando se estuda colisões elásticas, o foco principal está em:",
       "opcoes": [
-        "a identifica��o de colis�es em que n�o h� perda de energia cin�tica total do sistema",
-        "a rela��o entre massa, velocidade e o estado de movimento de um corpo",
-        "o efeito temporal de uma for�a atuando sobre um corpo",
-        "a conex�o entre for�a atuando no tempo e mudan�a do estado din�mico do corpo"
+        "a identificação de colisões em que não há perda de energia cinética total do sistema",
+        "a relação entre massa, velocidade e o estado de movimento de um corpo",
+        "o efeito temporal de uma força atuando sobre um corpo",
+        "a conexão entre força atuando no tempo e mudança do estado dinâmico do corpo"
       ],
-      "correta": "a identifica��o de colis�es em que n�o h� perda de energia cin�tica total do sistema",
-      "comentario": "Colis�es el�sticas volta a aten��o para a identifica��o de colis�es em que n�o h� perda de energia cin�tica total do sistema.",
+      "correta": "a identificação de colisões em que não há perda de energia cinética total do sistema",
+      "comentario": "Colisóes elásticas volta a atenção para a identificação de colisões em que não há perda de energia cinética total do sistema.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -2584,22 +2584,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Colis�es el�sticas",
+      "subtopico": "Colisóes elásticas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferen�a entre colis�es el�sticas e colis�es inel�sticas � que:",
+      "enunciado": "A principal diferença entre colisões elásticas e colisões inelásticas é que:",
       "opcoes": [
-        "colis�es el�sticas conservam momento linear e energia cin�tica total, enquanto colis�es inel�sticas conservam o momento linear mas n�o a energia cin�tica total",
-        "Colis�es el�sticas e Colis�es inel�sticas s�o exatamente a mesma ideia f�sica em qualquer situa��o.",
-        "Colis�es inel�sticas elimina a necessidade de observar colis�es el�sticas.",
-        "Colis�es el�sticas depende apenas de opini�o pessoal, sem rela��o com grandezas, modelos ou medidas."
+        "colisões elásticas conservam momento linear e energia cinética total, enquanto colisões inelásticas conservam o momento linear mas não a energia cinética total",
+        "Colisóes elásticas e Colisóes inelásticas são exatamente a mesma ideia física em qualquer situação.",
+        "Colisóes inelásticas elimina a necessidade de observar colisões elásticas.",
+        "Colisóes elásticas depende apenas de opinião pessoal, sem relação com grandezas, modelos ou medidas."
       ],
-      "correta": "colis�es el�sticas conservam momento linear e energia cin�tica total, enquanto colis�es inel�sticas conservam o momento linear mas n�o a energia cin�tica total",
-      "comentario": "A compara��o correta distingue os dois subt�picos sem confundir seus objetos de estudo.",
+      "correta": "colisões elásticas conservam momento linear e energia cinética total, enquanto colisões inelásticas conservam o momento linear mas não a energia cinética total",
+      "comentario": "A comparação correta distingue os dois subtópicos sem confundir seus objetos de estudo.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -2623,22 +2623,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Colis�es el�sticas",
+      "subtopico": "Colisóes elásticas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma observa��o experimental, registrou-se o seguinte caso: duas esferas colidem quase sem deforma��o percept�vel e se separam mantendo comportamento idealizado A leitura f�sica mais adequada aponta para:",
+      "enunciado": "Em uma observação experimental, registrou-se o seguinte caso: duas esferas colidem quase sem deformação perceptível e se separam mantendo comportamento idealizado A leitura física mais adequada aponta para:",
       "opcoes": [
-        "o caso mostra que conservar apenas o momento n�o basta para classificar a colis�o como el�stica",
-        "Colis�es el�sticas mostra que as grandezas envolvidas n�o precisam ser relacionadas para interpretar o caso.",
-        "Colis�es el�sticas prova que a situa��o dispensa qualquer leitura f�sica ou quantitativa.",
-        "Colis�es el�sticas significa que o fen�meno n�o pode ser descrito por vari�veis f�sicas."
+        "o caso mostra que conservar apenas o momento não basta para classificar a colisão como elástica",
+        "Colisóes elásticas mostra que as grandezas envolvidas não precisam ser relacionadas para interpretar o caso.",
+        "Colisóes elásticas prova que a situação dispensa qualquer leitura física ou quantitativa.",
+        "Colisóes elásticas significa que o fenômeno não pode ser descrito por variáveis físicas."
       ],
-      "correta": "o caso mostra que conservar apenas o momento n�o basta para classificar a colis�o como el�stica",
-      "comentario": "Colis�es el�sticas permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
+      "correta": "o caso mostra que conservar apenas o momento não basta para classificar a colisão como elástica",
+      "comentario": "Colisóes elásticas permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -2662,22 +2662,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Colis�es el�sticas",
+      "subtopico": "Colisóes elásticas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situa��o abaixo evidencia colis�es el�sticas de maneira mais clara?",
+      "enunciado": "Qual situação abaixo evidencia colisões elásticas de maneira mais clara?",
       "opcoes": [
-        "comparar a colis�o idealizada entre esferas met�licas quase sem deforma��o com outros tipos de choque",
-        "comparar a quantidade de movimento de um carrinho leve r�pido e de um carrinho pesado lento",
-        "comparar o efeito de empurrar um carrinho com for�a pequena por muito tempo e grande por pouco tempo",
-        "explicar a mudan�a de movimento de uma bola ap�s colis�o ou chute usando impulso"
+        "comparar a colisão idealizada entre esferas metálicas quase sem deformação com outros tipos de choque",
+        "comparar a quantidade de movimento de um carrinho leve rápido e de um carrinho pesado lento",
+        "comparar o efeito de empurrar um carrinho com força pequena por muito tempo e grande por pouco tempo",
+        "explicar a mudança de movimento de uma bola após colisão ou chute usando impulso"
       ],
-      "correta": "comparar a colis�o idealizada entre esferas met�licas quase sem deforma��o com outros tipos de choque",
-      "comentario": "A alternativa correta aproxima colis�es el�sticas de uma situa��o concreta.",
+      "correta": "comparar a colisão idealizada entre esferas metálicas quase sem deformação com outros tipos de choque",
+      "comentario": "A alternativa correta aproxima colisões elásticas de uma situação concreta.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -2701,22 +2701,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Colis�es el�sticas",
+      "subtopico": "Colisóes elásticas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"duas esferas colidem quase sem deforma��o percept�vel e se separam mantendo comportamento idealizado\", qual conclus�o � mais adequada?",
+      "enunciado": "Ao analisar o caso \"duas esferas colidem quase sem deformação perceptível e se separam mantendo comportamento idealizado\", qual conclusão é mais adequada?",
       "opcoes": [
-        "o caso mostra que conservar apenas o momento n�o basta para classificar a colis�o como el�stica",
-        "A situa��o indica que colis�es el�sticas n�o possui rela��o com medidas, vari�veis ou interpreta��o f�sica.",
-        "A situa��o prova que colis�es el�sticas s� existe em exemplos te�ricos sem uso cotidiano.",
-        "A situa��o mostra que colis�es el�sticas torna desnecess�rio comparar dados e modelos."
+        "o caso mostra que conservar apenas o momento não basta para classificar a colisão como elástica",
+        "A situação indica que colisões elásticas não possui relação com medidas, variáveis ou interpretação física.",
+        "A situação prova que colisões elásticas só existe em exemplos teóricos sem uso cotidiano.",
+        "A situação mostra que colisões elásticas torna desnecessário comparar dados e modelos."
       ],
-      "correta": "o caso mostra que conservar apenas o momento n�o basta para classificar a colis�o como el�stica",
-      "comentario": "A conclus�o correta mant�m coer�ncia com os dados apresentados e com colis�es el�sticas.",
+      "correta": "o caso mostra que conservar apenas o momento não basta para classificar a colisão como elástica",
+      "comentario": "A conclusão correta mantém coerência com os dados apresentados e com colisões elásticas.",
       "tempoEstimado": 35,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -2740,22 +2740,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Colis�es el�sticas",
+      "subtopico": "Colisóes elásticas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com colis�es el�sticas?",
+      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com colisões elásticas?",
       "opcoes": [
-        "quais caracter�sticas distinguem uma colis�o el�stica de uma inel�stica?",
+        "quais características distinguem uma colisão elástica de uma inelástica?",
         "como massa e velocidade influenciam a quantidade de movimento de um corpo?",
-        "como o tempo de atua��o da for�a influencia o impulso produzido sobre um corpo?",
-        "como a varia��o da quantidade de movimento pode ser prevista a partir do impulso resultante?"
+        "como o tempo de atuação da força influencia o impulso produzido sobre um corpo?",
+        "como a variação da quantidade de movimento pode ser prevista a partir do impulso resultante?"
       ],
-      "correta": "quais caracter�sticas distinguem uma colis�o el�stica de uma inel�stica?",
-      "comentario": "A pergunta correta investiga colis�es el�sticas de forma direta e coerente.",
+      "correta": "quais características distinguem uma colisão elástica de uma inelástica?",
+      "comentario": "A pergunta correta investiga colisões elásticas de forma direta e coerente.",
       "tempoEstimado": 35,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -2779,22 +2779,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Colis�es el�sticas",
+      "subtopico": "Colisóes elásticas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a afirma��o que revela compreens�o inadequada de colis�es el�sticas.",
+      "enunciado": "Assinale a afirmação que revela compreensão inadequada de colisões elásticas.",
       "opcoes": [
-        "As colis�es em que a quantidade de movimento total se conserva e a energia cin�tica total do sistema tamb�m se conserva.",
-        "A identifica��o de colis�es em que n�o h� perda de energia cin�tica total do sistema.",
-        "Colis�es el�sticas preservam momento linear e energia cin�tica total do sistema.",
-        "Toda colis�o em que os corpos se separam � automaticamente el�stica."
+        "As colisões em que a quantidade de movimento total se conserva e a energia cinética total do sistema também se conserva.",
+        "A identificação de colisões em que não há perda de energia cinética total do sistema.",
+        "Colisóes elásticas preservam momento linear e energia cinética total do sistema.",
+        "Toda colisão em que os corpos se separam é automaticamente elástica."
       ],
-      "correta": "Toda colis�o em que os corpos se separam � automaticamente el�stica.",
-      "comentario": "A alternativa incorreta expressa um equ�voco comum sobre colis�es el�sticas.",
+      "correta": "Toda colisão em que os corpos se separam é automaticamente elástica.",
+      "comentario": "A alternativa incorreta expressa um equívoco comum sobre colisões elásticas.",
       "tempoEstimado": 45,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -2818,22 +2818,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Colis�es el�sticas",
+      "subtopico": "Colisóes elásticas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre F�sica, um estudante afirmou: \"em colis�es el�sticas, a energia cin�tica total do sistema se mant�m juntamente com o momento linear\". Qual avalia��o � mais consistente?",
+      "enunciado": "Em um debate sobre Física, um estudante afirmou: \"em colisões elásticas, a energia cinética total do sistema se mantêm juntamente com o momento linear\". Qual avaliação é mais consistente?",
       "opcoes": [
-        "A afirma��o est� correta, porque o modelo el�stico ideal considera intera��o sem dissipa��o l�quida de energia cin�tica total",
-        "A afirma��o est� incorreta, porque colis�es el�sticas nunca pode ser usada na F�sica escolar.",
-        "A afirma��o � irrelevante, porque colis�es el�sticas n�o se relaciona com interpreta��o de fen�menos.",
-        "A afirma��o est� incorreta, porque colis�es el�sticas elimina a necessidade de medir e comparar grandezas."
+        "A afirmação está correta, porque o modelo elástico ideal considera interação sem dissipação líquida de energia cinética total",
+        "A afirmação está incorreta, porque colisões elásticas nunca pode ser usada na Física escolar.",
+        "A afirmação é irrelevante, porque colisões elásticas não se relaciona com interpretação de fenômenos.",
+        "A afirmação está incorreta, porque colisões elásticas elimina a necessidade de medir e comparar grandezas."
       ],
-      "correta": "A afirma��o est� correta, porque o modelo el�stico ideal considera intera��o sem dissipa��o l�quida de energia cin�tica total",
-      "comentario": "A avalia��o correta recupera o n�cleo conceitual de colis�es el�sticas.",
+      "correta": "A afirmação está correta, porque o modelo elástico ideal considera interação sem dissipação líquida de energia cinética total",
+      "comentario": "A avaliação correta recupera o núcleo conceitual de colisões elásticas.",
       "tempoEstimado": 45,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -2857,22 +2857,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Colis�es el�sticas",
+      "subtopico": "Colisóes elásticas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se colis�es el�sticas fosse ignorado(a) na an�lise de um problema f�sico, o resultado mais prov�vel seria:",
+      "enunciado": "Se colisões elásticas fosse ignorado(a) na análise de um problema físico, o resultado mais provável seria:",
       "opcoes": [
-        "a classifica��o das colis�es ficaria incorreta e a interpreta��o energ�tica do choque seria prejudicada",
-        "o problema continuaria exatamente igual, porque colis�es el�sticas n�o interfere na an�lise f�sica",
-        "seria poss�vel resolver a situa��o sem observar nenhuma grandeza, rela��o ou modelo",
-        "a interpreta��o ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
+        "a classificação das colisões ficaria incorreta e a interpretação energética do choque seria prejudicada",
+        "o problema continuaria exatamente igual, porque colisões elásticas não interfere na análise física",
+        "seria possível resolver a situação sem observar nenhuma grandeza, relação ou modelo",
+        "a interpretação ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
       ],
-      "correta": "a classifica��o das colis�es ficaria incorreta e a interpreta��o energ�tica do choque seria prejudicada",
-      "comentario": "Ignorar colis�es el�sticas compromete a leitura f�sica e a qualidade da solu��o.",
+      "correta": "a classificação das colisões ficaria incorreta e a interpretação energética do choque seria prejudicada",
+      "comentario": "Ignorar colisões elásticas compromete a leitura física e a qualidade da solução.",
       "tempoEstimado": 55,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -2896,22 +2896,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Colis�es el�sticas",
+      "subtopico": "Colisóes elásticas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente colis�es el�sticas a uma situa��o escolar ou cotidiana?",
+      "enunciado": "Qual alternativa aplica corretamente colisões elásticas a uma situação escolar ou cotidiana?",
       "opcoes": [
-        "comparar a colis�o idealizada entre esferas met�licas quase sem deforma��o com outros tipos de choque",
-        "explicar o funcionamento de airbags, joelheiras e amortecedores em situa��es de impacto",
-        "tratar dois corpos em colis�o sobre superf�cie de atrito desprez�vel como sistema isolado durante a intera��o",
+        "comparar a colisão idealizada entre esferas metálicas quase sem deformação com outros tipos de choque",
+        "explicar o funcionamento de airbags, joelheiras e amortecedores em situações de impacto",
+        "tratar dois corpos em colisão sobre superfície de atrito desprezível como sistema isolado durante a interação",
         "analisar o salto de um atleta ou o movimento de duas massas ligadas usando a ideia de centro de massa"
       ],
-      "correta": "comparar a colis�o idealizada entre esferas met�licas quase sem deforma��o com outros tipos de choque",
-      "comentario": "A aplica��o correta mostra como colis�es el�sticas aparece em contextos pr�ximos do cotidiano.",
+      "correta": "comparar a colisão idealizada entre esferas metálicas quase sem deformação com outros tipos de choque",
+      "comentario": "A aplicação correta mostra como colisões elásticas aparece em contextos próximos do cotidiano.",
       "tempoEstimado": 55,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -2935,22 +2935,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Colis�es el�sticas",
+      "subtopico": "Colisóes elásticas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual s�ntese final representa melhor colis�es el�sticas?",
+      "enunciado": "Qual síntese final representa melhor colisões elásticas?",
       "opcoes": [
-        "colis�es el�sticas preservam momento linear e energia cin�tica total do sistema",
-        "quantidade de movimento � o produto vetorial entre massa e velocidade de um corpo",
-        "impulso mede o efeito de uma for�a atuando durante certo intervalo de tempo",
-        "o teorema do impulso relaciona impulso resultante e varia��o da quantidade de movimento"
+        "colisões elásticas preservam momento linear e energia cinética total do sistema",
+        "quantidade de movimento é o produto vetorial entre massa e velocidade de um corpo",
+        "impulso mede o efeito de uma força atuando durante certo intervalo de tempo",
+        "o teorema do impulso relaciona impulso resultante e variação da quantidade de movimento"
       ],
-      "correta": "colis�es el�sticas preservam momento linear e energia cin�tica total do sistema",
-      "comentario": "A s�ntese correta preserva a defini��o, o foco e o uso anal�tico de colis�es el�sticas.",
+      "correta": "colisões elásticas preservam momento linear e energia cinética total do sistema",
+      "comentario": "A síntese correta preserva a definição, o foco e o uso analítico de colisões elásticas.",
       "tempoEstimado": 55,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -2974,22 +2974,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Colis�es inel�sticas",
+      "subtopico": "Colisóes inelásticas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em F�sica, Colis�es inel�sticas pode ser definido(a) como:",
+      "enunciado": "Em Física, Colisóes inelásticas pode ser definido(a) como:",
       "opcoes": [
-        "as colis�es em que o momento linear total se conserva, mas a energia cin�tica total do sistema n�o se conserva",
+        "as colisões em que o momento linear total se conserva, mas a energia cinética total do sistema não se conserva",
         "a grandeza vetorial associada ao produto entre massa e velocidade de um corpo",
-        "a grandeza associada ao produto da for�a resultante pelo intervalo de tempo em que ela atua",
-        "a rela��o segundo a qual o impulso resultante sobre um corpo � igual � varia��o de sua quantidade de movimento"
+        "a grandeza associada ao produto da força resultante pelo intervalo de tempo em que ela atua",
+        "a relação segundo a qual o impulso resultante sobre um corpo é igual à variação de sua quantidade de movimento"
       ],
-      "correta": "as colis�es em que o momento linear total se conserva, mas a energia cin�tica total do sistema n�o se conserva",
-      "comentario": "Colis�es inel�sticas refere-se a as colis�es em que o momento linear total se conserva, mas a energia cin�tica total do sistema n�o se conserva.",
+      "correta": "as colisões em que o momento linear total se conserva, mas a energia cinética total do sistema não se conserva",
+      "comentario": "Colisóes inelásticas refere-se a as colisões em que o momento linear total se conserva, mas a energia cinética total do sistema não se conserva.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -3013,22 +3013,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Colis�es inel�sticas",
+      "subtopico": "Colisóes inelásticas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situa��o: dois carrinhos colidem e parte da energia cin�tica � dissipada em deforma��o, som e calor Esse caso exemplifica melhor qual subt�pico?",
+      "enunciado": "Observe a situação: dois carrinhos colidem e parte da energia cinética é dissipada em deformação, som e calor Esse caso exemplifica melhor qual subtópico?",
       "opcoes": [
-        "Colis�es inel�sticas",
+        "Colisóes inelásticas",
         "Quantidade de movimento",
-        "Impulso de uma for�a",
+        "Impulso de uma força",
         "Teorema do impulso"
       ],
-      "correta": "Colis�es inel�sticas",
-      "comentario": "A situa��o apresentada � um exemplo de colis�es inel�sticas.",
+      "correta": "Colisóes inelásticas",
+      "comentario": "A situação apresentada é um exemplo de colisões inelásticas.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -3052,22 +3052,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Colis�es inel�sticas",
+      "subtopico": "Colisóes inelásticas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirma��o descreve corretamente colis�es inel�sticas?",
+      "enunciado": "Qual afirmação descreve corretamente colisões inelásticas?",
       "opcoes": [
-        "As colis�es em que o momento linear total se conserva, mas a energia cin�tica total do sistema n�o se conserva.",
+        "As colisões em que o momento linear total se conserva, mas a energia cinética total do sistema não se conserva.",
         "A grandeza vetorial associada ao produto entre massa e velocidade de um corpo.",
-        "A grandeza associada ao produto da for�a resultante pelo intervalo de tempo em que ela atua.",
-        "A rela��o segundo a qual o impulso resultante sobre um corpo � igual � varia��o de sua quantidade de movimento."
+        "A grandeza associada ao produto da força resultante pelo intervalo de tempo em que ela atua.",
+        "A relação segundo a qual o impulso resultante sobre um corpo é igual à variação de sua quantidade de movimento."
       ],
-      "correta": "As colis�es em que o momento linear total se conserva, mas a energia cin�tica total do sistema n�o se conserva.",
-      "comentario": "A afirma��o correta retoma o sentido central de colis�es inel�sticas.",
+      "correta": "As colisões em que o momento linear total se conserva, mas a energia cinética total do sistema não se conserva.",
+      "comentario": "A afirmação correta retoma o sentido central de colisões inelásticas.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -3091,22 +3091,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Colis�es inel�sticas",
+      "subtopico": "Colisóes inelásticas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa incompat�vel com colis�es inel�sticas.",
+      "enunciado": "Assinale a alternativa incompatível com colisões inelásticas.",
       "opcoes": [
-        "exigir conserva��o da energia cin�tica total em qualquer colis�o apenas porque o sistema � isolado.",
-        "a identifica��o de colis�es com dissipa��o de energia cin�tica total.",
-        "colis�es inel�sticas conservam o momento linear, mas n�o a energia cin�tica total.",
-        "as colis�es em que o momento linear total se conserva, mas a energia cin�tica total do sistema n�o se conserva."
+        "exigir conservação da energia cinética total em qualquer colisão apenas porque o sistema é isolado.",
+        "a identificação de colisões com dissipação de energia cinética total.",
+        "colisões inelásticas conservam o momento linear, mas não a energia cinética total.",
+        "as colisões em que o momento linear total se conserva, mas a energia cinética total do sistema não se conserva."
       ],
-      "correta": "exigir conserva��o da energia cin�tica total em qualquer colis�o apenas porque o sistema � isolado.",
-      "comentario": "Exigir conserva��o da energia cin�tica total em qualquer colis�o apenas porque o sistema � isolado n�o representa colis�es inel�sticas, enquanto as demais alternativas se relacionam com esse subt�pico.",
+      "correta": "exigir conservação da energia cinética total em qualquer colisão apenas porque o sistema é isolado.",
+      "comentario": "Exigir conservação da energia cinética total em qualquer colisão apenas porque o sistema é isolado não representa colisões inelásticas, enquanto as demais alternativas se relacionam com esse subtópico.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -3130,22 +3130,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Colis�es inel�sticas",
+      "subtopico": "Colisóes inelásticas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando se estuda colis�es inel�sticas, o foco principal est� em:",
+      "enunciado": "Quando se estuda colisões inelásticas, o foco principal está em:",
       "opcoes": [
-        "a identifica��o de colis�es com dissipa��o de energia cin�tica total",
-        "a rela��o entre massa, velocidade e o estado de movimento de um corpo",
-        "o efeito temporal de uma for�a atuando sobre um corpo",
-        "a conex�o entre for�a atuando no tempo e mudan�a do estado din�mico do corpo"
+        "a identificação de colisões com dissipação de energia cinética total",
+        "a relação entre massa, velocidade e o estado de movimento de um corpo",
+        "o efeito temporal de uma força atuando sobre um corpo",
+        "a conexão entre força atuando no tempo e mudança do estado dinâmico do corpo"
       ],
-      "correta": "a identifica��o de colis�es com dissipa��o de energia cin�tica total",
-      "comentario": "Colis�es inel�sticas volta a aten��o para a identifica��o de colis�es com dissipa��o de energia cin�tica total.",
+      "correta": "a identificação de colisões com dissipação de energia cinética total",
+      "comentario": "Colisóes inelásticas volta a atenção para a identificação de colisões com dissipação de energia cinética total.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -3169,22 +3169,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Colis�es inel�sticas",
+      "subtopico": "Colisóes inelásticas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferen�a entre colis�es inel�sticas e colis�es el�sticas � que:",
+      "enunciado": "A principal diferença entre colisões inelásticas e colisões elásticas é que:",
       "opcoes": [
-        "colis�es inel�sticas conservam o momento linear total, mas n�o a energia cin�tica total, enquanto colis�es el�sticas conservam ambas as grandezas",
-        "Colis�es inel�sticas e Colis�es el�sticas s�o exatamente a mesma ideia f�sica em qualquer situa��o.",
-        "Colis�es el�sticas elimina a necessidade de observar colis�es inel�sticas.",
-        "Colis�es inel�sticas depende apenas de opini�o pessoal, sem rela��o com grandezas, modelos ou medidas."
+        "colisões inelásticas conservam o momento linear total, mas não a energia cinética total, enquanto colisões elásticas conservam ambas as grandezas",
+        "Colisóes inelásticas e Colisóes elásticas são exatamente a mesma ideia física em qualquer situação.",
+        "Colisóes elásticas elimina a necessidade de observar colisões inelásticas.",
+        "Colisóes inelásticas depende apenas de opinião pessoal, sem relação com grandezas, modelos ou medidas."
       ],
-      "correta": "colis�es inel�sticas conservam o momento linear total, mas n�o a energia cin�tica total, enquanto colis�es el�sticas conservam ambas as grandezas",
-      "comentario": "A compara��o correta distingue os dois subt�picos sem confundir seus objetos de estudo.",
+      "correta": "colisões inelásticas conservam o momento linear total, mas não a energia cinética total, enquanto colisões elásticas conservam ambas as grandezas",
+      "comentario": "A comparação correta distingue os dois subtópicos sem confundir seus objetos de estudo.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -3208,22 +3208,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Colis�es inel�sticas",
+      "subtopico": "Colisóes inelásticas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma observa��o experimental, registrou-se o seguinte caso: dois carrinhos colidem e parte da energia cin�tica � dissipada em deforma��o, som e calor A leitura f�sica mais adequada aponta para:",
+      "enunciado": "Em uma observação experimental, registrou-se o seguinte caso: dois carrinhos colidem e parte da energia cinética é dissipada em deformação, som e calor A leitura física mais adequada aponta para:",
       "opcoes": [
-        "o caso mostra que a conserva��o do momento linear pode coexistir com dissipa��o de energia cin�tica",
-        "Colis�es inel�sticas mostra que as grandezas envolvidas n�o precisam ser relacionadas para interpretar o caso.",
-        "Colis�es inel�sticas prova que a situa��o dispensa qualquer leitura f�sica ou quantitativa.",
-        "Colis�es inel�sticas significa que o fen�meno n�o pode ser descrito por vari�veis f�sicas."
+        "o caso mostra que a conservação do momento linear pode coexistir com dissipação de energia cinética",
+        "Colisóes inelásticas mostra que as grandezas envolvidas não precisam ser relacionadas para interpretar o caso.",
+        "Colisóes inelásticas prova que a situação dispensa qualquer leitura física ou quantitativa.",
+        "Colisóes inelásticas significa que o fenômeno não pode ser descrito por variáveis físicas."
       ],
-      "correta": "o caso mostra que a conserva��o do momento linear pode coexistir com dissipa��o de energia cin�tica",
-      "comentario": "Colis�es inel�sticas permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
+      "correta": "o caso mostra que a conservação do momento linear pode coexistir com dissipação de energia cinética",
+      "comentario": "Colisóes inelásticas permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -3247,22 +3247,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Colis�es inel�sticas",
+      "subtopico": "Colisóes inelásticas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situa��o abaixo evidencia colis�es inel�sticas de maneira mais clara?",
+      "enunciado": "Qual situação abaixo evidencia colisões inelásticas de maneira mais clara?",
       "opcoes": [
-        "analisar a colis�o entre carrinhos com deforma��o ou acoplamento parcial ap�s o impacto",
-        "comparar a quantidade de movimento de um carrinho leve r�pido e de um carrinho pesado lento",
-        "comparar o efeito de empurrar um carrinho com for�a pequena por muito tempo e grande por pouco tempo",
-        "explicar a mudan�a de movimento de uma bola ap�s colis�o ou chute usando impulso"
+        "analisar a colisão entre carrinhos com deformação ou acoplamento parcial após o impacto",
+        "comparar a quantidade de movimento de um carrinho leve rápido e de um carrinho pesado lento",
+        "comparar o efeito de empurrar um carrinho com força pequena por muito tempo e grande por pouco tempo",
+        "explicar a mudança de movimento de uma bola após colisão ou chute usando impulso"
       ],
-      "correta": "analisar a colis�o entre carrinhos com deforma��o ou acoplamento parcial ap�s o impacto",
-      "comentario": "A alternativa correta aproxima colis�es inel�sticas de uma situa��o concreta.",
+      "correta": "analisar a colisão entre carrinhos com deformação ou acoplamento parcial após o impacto",
+      "comentario": "A alternativa correta aproxima colisões inelásticas de uma situação concreta.",
       "tempoEstimado": 35,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -3286,22 +3286,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Colis�es inel�sticas",
+      "subtopico": "Colisóes inelásticas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"dois carrinhos colidem e parte da energia cin�tica � dissipada em deforma��o, som e calor\", qual conclus�o � mais adequada?",
+      "enunciado": "Ao analisar o caso \"dois carrinhos colidem e parte da energia cinética é dissipada em deformação, som e calor\", qual conclusão é mais adequada?",
       "opcoes": [
-        "o caso mostra que a conserva��o do momento linear pode coexistir com dissipa��o de energia cin�tica",
-        "A situa��o indica que colis�es inel�sticas n�o possui rela��o com medidas, vari�veis ou interpreta��o f�sica.",
-        "A situa��o prova que colis�es inel�sticas s� existe em exemplos te�ricos sem uso cotidiano.",
-        "A situa��o mostra que colis�es inel�sticas torna desnecess�rio comparar dados e modelos."
+        "o caso mostra que a conservação do momento linear pode coexistir com dissipação de energia cinética",
+        "A situação indica que colisões inelásticas não possui relação com medidas, variáveis ou interpretação física.",
+        "A situação prova que colisões inelásticas só existe em exemplos teóricos sem uso cotidiano.",
+        "A situação mostra que colisões inelásticas torna desnecessário comparar dados e modelos."
       ],
-      "correta": "o caso mostra que a conserva��o do momento linear pode coexistir com dissipa��o de energia cin�tica",
-      "comentario": "A conclus�o correta mant�m coer�ncia com os dados apresentados e com colis�es inel�sticas.",
+      "correta": "o caso mostra que a conservação do momento linear pode coexistir com dissipação de energia cinética",
+      "comentario": "A conclusão correta mantém coerência com os dados apresentados e com colisões inelásticas.",
       "tempoEstimado": 35,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -3325,22 +3325,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Colis�es inel�sticas",
+      "subtopico": "Colisóes inelásticas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com colis�es inel�sticas?",
+      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com colisões inelásticas?",
       "opcoes": [
-        "como reconhecer quando uma colis�o � inel�stica a partir da energia cin�tica do sistema?",
+        "como reconhecer quando uma colisão é inelástica a partir da energia cinética do sistema?",
         "como massa e velocidade influenciam a quantidade de movimento de um corpo?",
-        "como o tempo de atua��o da for�a influencia o impulso produzido sobre um corpo?",
-        "como a varia��o da quantidade de movimento pode ser prevista a partir do impulso resultante?"
+        "como o tempo de atuação da força influencia o impulso produzido sobre um corpo?",
+        "como a variação da quantidade de movimento pode ser prevista a partir do impulso resultante?"
       ],
-      "correta": "como reconhecer quando uma colis�o � inel�stica a partir da energia cin�tica do sistema?",
-      "comentario": "A pergunta correta investiga colis�es inel�sticas de forma direta e coerente.",
+      "correta": "como reconhecer quando uma colisão é inelástica a partir da energia cinética do sistema?",
+      "comentario": "A pergunta correta investiga colisões inelásticas de forma direta e coerente.",
       "tempoEstimado": 35,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -3364,22 +3364,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Colis�es inel�sticas",
+      "subtopico": "Colisóes inelásticas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a afirma��o que revela compreens�o inadequada de colis�es inel�sticas.",
+      "enunciado": "Assinale a afirmação que revela compreensão inadequada de colisões inelásticas.",
       "opcoes": [
-        "As colis�es em que o momento linear total se conserva, mas a energia cin�tica total do sistema n�o se conserva.",
-        "A identifica��o de colis�es com dissipa��o de energia cin�tica total.",
-        "Colis�es inel�sticas conservam o momento linear, mas n�o a energia cin�tica total.",
-        "Se o momento linear � conservado, ent�o a energia cin�tica total tamb�m � necessariamente conservada."
+        "As colisões em que o momento linear total se conserva, mas a energia cinética total do sistema não se conserva.",
+        "A identificação de colisões com dissipação de energia cinética total.",
+        "Colisóes inelásticas conservam o momento linear, mas não a energia cinética total.",
+        "Se o momento linear é conservado, então a energia cinética total também é necessariamente conservada."
       ],
-      "correta": "Se o momento linear � conservado, ent�o a energia cin�tica total tamb�m � necessariamente conservada.",
-      "comentario": "A alternativa incorreta expressa um equ�voco comum sobre colis�es inel�sticas.",
+      "correta": "Se o momento linear é conservado, então a energia cinética total também é necessariamente conservada.",
+      "comentario": "A alternativa incorreta expressa um equívoco comum sobre colisões inelásticas.",
       "tempoEstimado": 45,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -3403,22 +3403,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Colis�es inel�sticas",
+      "subtopico": "Colisóes inelásticas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre F�sica, um estudante afirmou: \"em colis�es inel�sticas, parte da energia cin�tica se transforma em outras formas de energia\". Qual avalia��o � mais consistente?",
+      "enunciado": "Em um debate sobre Física, um estudante afirmou: \"em colisões inelásticas, parte da energia cinética se transforma em outras formas de energia\". Qual avaliação é mais consistente?",
       "opcoes": [
-        "A afirma��o est� correta, porque o choque envolve dissipa��o ou transforma��o energ�tica, embora o momento linear total ainda possa se conservar",
-        "A afirma��o est� incorreta, porque colis�es inel�sticas nunca pode ser usada na F�sica escolar.",
-        "A afirma��o � irrelevante, porque colis�es inel�sticas n�o se relaciona com interpreta��o de fen�menos.",
-        "A afirma��o est� incorreta, porque colis�es inel�sticas elimina a necessidade de medir e comparar grandezas."
+        "A afirmação está correta, porque o choque envolve dissipação ou transformação energética, embora o momento linear total ainda possa se conservar",
+        "A afirmação está incorreta, porque colisões inelásticas nunca pode ser usada na Física escolar.",
+        "A afirmação é irrelevante, porque colisões inelásticas não se relaciona com interpretação de fenômenos.",
+        "A afirmação está incorreta, porque colisões inelásticas elimina a necessidade de medir e comparar grandezas."
       ],
-      "correta": "A afirma��o est� correta, porque o choque envolve dissipa��o ou transforma��o energ�tica, embora o momento linear total ainda possa se conservar",
-      "comentario": "A avalia��o correta recupera o n�cleo conceitual de colis�es inel�sticas.",
+      "correta": "A afirmação está correta, porque o choque envolve dissipação ou transformação energética, embora o momento linear total ainda possa se conservar",
+      "comentario": "A avaliação correta recupera o núcleo conceitual de colisões inelásticas.",
       "tempoEstimado": 45,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -3442,22 +3442,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Colis�es inel�sticas",
+      "subtopico": "Colisóes inelásticas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se colis�es inel�sticas fosse ignorado(a) na an�lise de um problema f�sico, o resultado mais prov�vel seria:",
+      "enunciado": "Se colisões inelásticas fosse ignorado(a) na análise de um problema físico, o resultado mais provável seria:",
       "opcoes": [
-        "seria imposs�vel diferenciar choques com perdas energ�ticas daqueles idealmente el�sticos",
-        "o problema continuaria exatamente igual, porque colis�es inel�sticas n�o interfere na an�lise f�sica",
-        "seria poss�vel resolver a situa��o sem observar nenhuma grandeza, rela��o ou modelo",
-        "a interpreta��o ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
+        "seria impossível diferenciar choques com perdas energéticas daqueles idealmente elásticos",
+        "o problema continuaria exatamente igual, porque colisões inelásticas não interfere na análise física",
+        "seria possível resolver a situação sem observar nenhuma grandeza, relação ou modelo",
+        "a interpretação ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
       ],
-      "correta": "seria imposs�vel diferenciar choques com perdas energ�ticas daqueles idealmente el�sticos",
-      "comentario": "Ignorar colis�es inel�sticas compromete a leitura f�sica e a qualidade da solu��o.",
+      "correta": "seria impossível diferenciar choques com perdas energéticas daqueles idealmente elásticos",
+      "comentario": "Ignorar colisões inelásticas compromete a leitura física e a qualidade da solução.",
       "tempoEstimado": 55,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -3481,22 +3481,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Colis�es inel�sticas",
+      "subtopico": "Colisóes inelásticas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente colis�es inel�sticas a uma situa��o escolar ou cotidiana?",
+      "enunciado": "Qual alternativa aplica corretamente colisões inelásticas a uma situação escolar ou cotidiana?",
       "opcoes": [
-        "analisar a colis�o entre carrinhos com deforma��o ou acoplamento parcial ap�s o impacto",
-        "explicar o funcionamento de airbags, joelheiras e amortecedores em situa��es de impacto",
-        "tratar dois corpos em colis�o sobre superf�cie de atrito desprez�vel como sistema isolado durante a intera��o",
+        "analisar a colisão entre carrinhos com deformação ou acoplamento parcial após o impacto",
+        "explicar o funcionamento de airbags, joelheiras e amortecedores em situações de impacto",
+        "tratar dois corpos em colisão sobre superfície de atrito desprezível como sistema isolado durante a interação",
         "analisar o salto de um atleta ou o movimento de duas massas ligadas usando a ideia de centro de massa"
       ],
-      "correta": "analisar a colis�o entre carrinhos com deforma��o ou acoplamento parcial ap�s o impacto",
-      "comentario": "A aplica��o correta mostra como colis�es inel�sticas aparece em contextos pr�ximos do cotidiano.",
+      "correta": "analisar a colisão entre carrinhos com deformação ou acoplamento parcial após o impacto",
+      "comentario": "A aplicação correta mostra como colisões inelásticas aparece em contextos próximos do cotidiano.",
       "tempoEstimado": 55,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -3520,22 +3520,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Colis�es inel�sticas",
+      "subtopico": "Colisóes inelásticas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual s�ntese final representa melhor colis�es inel�sticas?",
+      "enunciado": "Qual síntese final representa melhor colisões inelásticas?",
       "opcoes": [
-        "colis�es inel�sticas conservam o momento linear, mas n�o a energia cin�tica total",
-        "quantidade de movimento � o produto vetorial entre massa e velocidade de um corpo",
-        "impulso mede o efeito de uma for�a atuando durante certo intervalo de tempo",
-        "o teorema do impulso relaciona impulso resultante e varia��o da quantidade de movimento"
+        "colisões inelásticas conservam o momento linear, mas não a energia cinética total",
+        "quantidade de movimento é o produto vetorial entre massa e velocidade de um corpo",
+        "impulso mede o efeito de uma força atuando durante certo intervalo de tempo",
+        "o teorema do impulso relaciona impulso resultante e variação da quantidade de movimento"
       ],
-      "correta": "colis�es inel�sticas conservam o momento linear, mas n�o a energia cin�tica total",
-      "comentario": "A s�ntese correta preserva a defini��o, o foco e o uso anal�tico de colis�es inel�sticas.",
+      "correta": "colisões inelásticas conservam o momento linear, mas não a energia cinética total",
+      "comentario": "A síntese correta preserva a definição, o foco e o uso analítico de colisões inelásticas.",
       "tempoEstimado": 55,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -3559,22 +3559,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Explos�es e separa��o de corpos",
+      "subtopico": "Explosóes e separação de corpos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em F�sica, Explos�es e separa��o de corpos pode ser definido(a) como:",
+      "enunciado": "Em Física, Explosóes e separação de corpos pode ser definido(a) como:",
       "opcoes": [
-        "o fen�meno em que partes de um sistema inicialmente unido se separam, distribuindo entre si o momento total conservado do sistema",
+        "o fenômeno em que partes de um sistema inicialmente unido se separam, distribuindo entre si o momento total conservado do sistema",
         "a grandeza vetorial associada ao produto entre massa e velocidade de um corpo",
-        "a grandeza associada ao produto da for�a resultante pelo intervalo de tempo em que ela atua",
-        "a rela��o segundo a qual o impulso resultante sobre um corpo � igual � varia��o de sua quantidade de movimento"
+        "a grandeza associada ao produto da força resultante pelo intervalo de tempo em que ela atua",
+        "a relação segundo a qual o impulso resultante sobre um corpo é igual à variação de sua quantidade de movimento"
       ],
-      "correta": "o fen�meno em que partes de um sistema inicialmente unido se separam, distribuindo entre si o momento total conservado do sistema",
-      "comentario": "Explos�es e separa��o de corpos refere-se ao fen�meno em que partes de um sistema inicialmente unido se separam, distribuindo entre si o momento total conservado do sistema.",
+      "correta": "o fenômeno em que partes de um sistema inicialmente unido se separam, distribuindo entre si o momento total conservado do sistema",
+      "comentario": "Explosóes e separação de corpos refere-se ao fenômeno em que partes de um sistema inicialmente unido se separam, distribuindo entre si o momento total conservado do sistema.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -3598,22 +3598,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Explos�es e separa��o de corpos",
+      "subtopico": "Explosóes e separação de corpos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situa��o: dois patinadores inicialmente juntos se empurram e passam a se mover em sentidos opostos Esse caso exemplifica melhor qual subt�pico?",
+      "enunciado": "Observe a situação: dois patinadores inicialmente juntos se empurram e passam a se mover em sentidos opostos Esse caso exemplifica melhor qual subtópico?",
       "opcoes": [
-        "Explos�es e separa��o de corpos",
+        "Explosóes e separação de corpos",
         "Quantidade de movimento",
-        "Impulso de uma for�a",
+        "Impulso de uma força",
         "Teorema do impulso"
       ],
-      "correta": "Explos�es e separa��o de corpos",
-      "comentario": "A situa��o apresentada � um exemplo de explos�es e separa��o de corpos.",
+      "correta": "Explosóes e separação de corpos",
+      "comentario": "A situação apresentada é um exemplo de explosões e separação de corpos.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -3637,22 +3637,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Explos�es e separa��o de corpos",
+      "subtopico": "Explosóes e separação de corpos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirma��o descreve corretamente explos�es e separa��o de corpos?",
+      "enunciado": "Qual afirmação descreve corretamente explosões e separação de corpos?",
       "opcoes": [
-        "O fen�meno em que partes de um sistema inicialmente unido se separam, distribuindo entre si o momento total conservado do sistema.",
+        "O fenômeno em que partes de um sistema inicialmente unido se separam, distribuindo entre si o momento total conservado do sistema.",
         "A grandeza vetorial associada ao produto entre massa e velocidade de um corpo.",
-        "A grandeza associada ao produto da for�a resultante pelo intervalo de tempo em que ela atua.",
-        "A rela��o segundo a qual o impulso resultante sobre um corpo � igual � varia��o de sua quantidade de movimento."
+        "A grandeza associada ao produto da força resultante pelo intervalo de tempo em que ela atua.",
+        "A relação segundo a qual o impulso resultante sobre um corpo é igual à variação de sua quantidade de movimento."
       ],
-      "correta": "O fen�meno em que partes de um sistema inicialmente unido se separam, distribuindo entre si o momento total conservado do sistema.",
-      "comentario": "A afirma��o correta retoma o sentido central de explos�es e separa��o de corpos.",
+      "correta": "O fenômeno em que partes de um sistema inicialmente unido se separam, distribuindo entre si o momento total conservado do sistema.",
+      "comentario": "A afirmação correta retoma o sentido central de explosões e separação de corpos.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -3676,22 +3676,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Explos�es e separa��o de corpos",
+      "subtopico": "Explosóes e separação de corpos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa incompat�vel com explos�es e separa��o de corpos.",
+      "enunciado": "Assinale a alternativa incompatível com explosões e separação de corpos.",
       "opcoes": [
-        "afirmar que, em uma separa��o interna, todas as partes podem ganhar momento no mesmo sentido sem compensa��o.",
-        "a redistribui��o interna da quantidade de movimento quando um sistema se separa sem for�as externas relevantes.",
-        "em explos�es e separa��es, o momento total do sistema continua conservado e � redistribu�do entre as partes.",
-        "o fen�meno em que partes de um sistema inicialmente unido se separam, distribuindo entre si o momento total conservado do sistema."
+        "afirmar que, em uma separação interna, todas as partes podem ganhar momento no mesmo sentido sem compensação.",
+        "a redistribuição interna da quantidade de movimento quando um sistema se separa sem forças externas relevantes.",
+        "em explosões e separações, o momento total do sistema continua conservado e é redistribuído entre as partes.",
+        "o fenômeno em que partes de um sistema inicialmente unido se separam, distribuindo entre si o momento total conservado do sistema."
       ],
-      "correta": "afirmar que, em uma separa��o interna, todas as partes podem ganhar momento no mesmo sentido sem compensa��o.",
-      "comentario": "Afirmar que, em uma separa��o interna, todas as partes podem ganhar momento no mesmo sentido sem compensa��o n�o representa explos�es e separa��o de corpos, enquanto as demais alternativas se relacionam com esse subt�pico.",
+      "correta": "afirmar que, em uma separação interna, todas as partes podem ganhar momento no mesmo sentido sem compensação.",
+      "comentario": "Afirmar que, em uma separação interna, todas as partes podem ganhar momento no mesmo sentido sem compensação não representa explosões e separação de corpos, enquanto as demais alternativas se relacionam com esse subtópico.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -3715,22 +3715,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Explos�es e separa��o de corpos",
+      "subtopico": "Explosóes e separação de corpos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando se estuda explos�es e separa��o de corpos, o foco principal est� em:",
+      "enunciado": "Quando se estuda explosões e separação de corpos, o foco principal está em:",
       "opcoes": [
-        "a redistribui��o interna da quantidade de movimento quando um sistema se separa sem for�as externas relevantes",
-        "a rela��o entre massa, velocidade e o estado de movimento de um corpo",
-        "o efeito temporal de uma for�a atuando sobre um corpo",
-        "a conex�o entre for�a atuando no tempo e mudan�a do estado din�mico do corpo"
+        "a redistribuição interna da quantidade de movimento quando um sistema se separa sem forças externas relevantes",
+        "a relação entre massa, velocidade e o estado de movimento de um corpo",
+        "o efeito temporal de uma força atuando sobre um corpo",
+        "a conexão entre força atuando no tempo e mudança do estado dinâmico do corpo"
       ],
-      "correta": "a redistribui��o interna da quantidade de movimento quando um sistema se separa sem for�as externas relevantes",
-      "comentario": "Explos�es e separa��o de corpos volta a aten��o para a redistribui��o interna da quantidade de movimento quando um sistema se separa sem for�as externas relevantes.",
+      "correta": "a redistribuição interna da quantidade de movimento quando um sistema se separa sem forças externas relevantes",
+      "comentario": "Explosóes e separação de corpos volta a atenção para a redistribuição interna da quantidade de movimento quando um sistema se separa sem forças externas relevantes.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -3754,22 +3754,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Explos�es e separa��o de corpos",
+      "subtopico": "Explosóes e separação de corpos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferen�a entre explos�es e separa��o de corpos e conserva��o do momento linear � que:",
+      "enunciado": "A principal diferença entre explosões e separação de corpos e conservação do momento linear é que:",
       "opcoes": [
-        "explos�es e separa��o de corpos � uma aplica��o espec�fica da conserva��o do momento linear a sistemas que se fragmentam ou se separam, enquanto conserva��o do momento linear � o princ�pio geral",
-        "Explos�es e separa��o de corpos e Conserva��o do momento linear s�o exatamente a mesma ideia f�sica em qualquer situa��o.",
-        "Conserva��o do momento linear elimina a necessidade de observar explos�es e separa��o de corpos.",
-        "Explos�es e separa��o de corpos depende apenas de opini�o pessoal, sem rela��o com grandezas, modelos ou medidas."
+        "explosões e separação de corpos é uma aplicação específica da conservação do momento linear a sistemas que se fragmentam ou se separam, enquanto conservação do momento linear é o princípio geral",
+        "Explosóes e separação de corpos e Conservação do momento linear são exatamente a mesma ideia física em qualquer situação.",
+        "Conservação do momento linear elimina a necessidade de observar explosões e separação de corpos.",
+        "Explosóes e separação de corpos depende apenas de opinião pessoal, sem relação com grandezas, modelos ou medidas."
       ],
-      "correta": "explos�es e separa��o de corpos � uma aplica��o espec�fica da conserva��o do momento linear a sistemas que se fragmentam ou se separam, enquanto conserva��o do momento linear � o princ�pio geral",
-      "comentario": "A compara��o correta distingue os dois subt�picos sem confundir seus objetos de estudo.",
+      "correta": "explosões e separação de corpos é uma aplicação específica da conservação do momento linear a sistemas que se fragmentam ou se separam, enquanto conservação do momento linear é o princípio geral",
+      "comentario": "A comparação correta distingue os dois subtópicos sem confundir seus objetos de estudo.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -3793,22 +3793,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Explos�es e separa��o de corpos",
+      "subtopico": "Explosóes e separação de corpos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma observa��o experimental, registrou-se o seguinte caso: dois patinadores inicialmente juntos se empurram e passam a se mover em sentidos opostos A leitura f�sica mais adequada aponta para:",
+      "enunciado": "Em uma observação experimental, registrou-se o seguinte caso: dois patinadores inicialmente juntos se empurram e passam a se mover em sentidos opostos A leitura física mais adequada aponta para:",
       "opcoes": [
-        "o caso mostra que a separa��o interna muda os movimentos individuais sem alterar o momento total do sistema",
-        "Explos�es e separa��o de corpos mostra que as grandezas envolvidas n�o precisam ser relacionadas para interpretar o caso.",
-        "Explos�es e separa��o de corpos prova que a situa��o dispensa qualquer leitura f�sica ou quantitativa.",
-        "Explos�es e separa��o de corpos significa que o fen�meno n�o pode ser descrito por vari�veis f�sicas."
+        "o caso mostra que a separação interna muda os movimentos individuais sem alterar o momento total do sistema",
+        "Explosóes e separação de corpos mostra que as grandezas envolvidas não precisam ser relacionadas para interpretar o caso.",
+        "Explosóes e separação de corpos prova que a situação dispensa qualquer leitura física ou quantitativa.",
+        "Explosóes e separação de corpos significa que o fenômeno não pode ser descrito por variáveis físicas."
       ],
-      "correta": "o caso mostra que a separa��o interna muda os movimentos individuais sem alterar o momento total do sistema",
-      "comentario": "Explos�es e separa��o de corpos permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
+      "correta": "o caso mostra que a separação interna muda os movimentos individuais sem alterar o momento total do sistema",
+      "comentario": "Explosóes e separação de corpos permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -3832,22 +3832,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Explos�es e separa��o de corpos",
+      "subtopico": "Explosóes e separação de corpos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situa��o abaixo evidencia explos�es e separa��o de corpos de maneira mais clara?",
+      "enunciado": "Qual situação abaixo evidencia explosões e separação de corpos de maneira mais clara?",
       "opcoes": [
-        "explicar o recuo de um patinador ao lan�ar um objeto ou separar-se de outro patinador",
-        "comparar a quantidade de movimento de um carrinho leve r�pido e de um carrinho pesado lento",
-        "comparar o efeito de empurrar um carrinho com for�a pequena por muito tempo e grande por pouco tempo",
-        "explicar a mudan�a de movimento de uma bola ap�s colis�o ou chute usando impulso"
+        "explicar o recuo de um patinador ao lançar um objeto ou separar-se de outro patinador",
+        "comparar a quantidade de movimento de um carrinho leve rápido e de um carrinho pesado lento",
+        "comparar o efeito de empurrar um carrinho com força pequena por muito tempo e grande por pouco tempo",
+        "explicar a mudança de movimento de uma bola após colisão ou chute usando impulso"
       ],
-      "correta": "explicar o recuo de um patinador ao lan�ar um objeto ou separar-se de outro patinador",
-      "comentario": "A alternativa correta aproxima explos�es e separa��o de corpos de uma situa��o concreta.",
+      "correta": "explicar o recuo de um patinador ao lançar um objeto ou separar-se de outro patinador",
+      "comentario": "A alternativa correta aproxima explosões e separação de corpos de uma situação concreta.",
       "tempoEstimado": 35,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -3871,22 +3871,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Explos�es e separa��o de corpos",
+      "subtopico": "Explosóes e separação de corpos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"dois patinadores inicialmente juntos se empurram e passam a se mover em sentidos opostos\", qual conclus�o � mais adequada?",
+      "enunciado": "Ao analisar o caso \"dois patinadores inicialmente juntos se empurram e passam a se mover em sentidos opostos\", qual conclusão é mais adequada?",
       "opcoes": [
-        "o caso mostra que a separa��o interna muda os movimentos individuais sem alterar o momento total do sistema",
-        "A situa��o indica que explos�es e separa��o de corpos n�o possui rela��o com medidas, vari�veis ou interpreta��o f�sica.",
-        "A situa��o prova que explos�es e separa��o de corpos s� existe em exemplos te�ricos sem uso cotidiano.",
-        "A situa��o mostra que explos�es e separa��o de corpos torna desnecess�rio comparar dados e modelos."
+        "o caso mostra que a separação interna muda os movimentos individuais sem alterar o momento total do sistema",
+        "A situação indica que explosões e separação de corpos não possui relação com medidas, variáveis ou interpretação física.",
+        "A situação prova que explosões e separação de corpos só existe em exemplos teóricos sem uso cotidiano.",
+        "A situação mostra que explosões e separação de corpos torna desnecessário comparar dados e modelos."
       ],
-      "correta": "o caso mostra que a separa��o interna muda os movimentos individuais sem alterar o momento total do sistema",
-      "comentario": "A conclus�o correta mant�m coer�ncia com os dados apresentados e com explos�es e separa��o de corpos.",
+      "correta": "o caso mostra que a separação interna muda os movimentos individuais sem alterar o momento total do sistema",
+      "comentario": "A conclusão correta mantém coerência com os dados apresentados e com explosões e separação de corpos.",
       "tempoEstimado": 35,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -3910,22 +3910,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Explos�es e separa��o de corpos",
+      "subtopico": "Explosóes e separação de corpos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com explos�es e separa��o de corpos?",
+      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com explosões e separação de corpos?",
       "opcoes": [
-        "como a conserva��o do momento linear aparece quando um sistema inicialmente unido se separa?",
+        "como a conservação do momento linear aparece quando um sistema inicialmente unido se separa?",
         "como massa e velocidade influenciam a quantidade de movimento de um corpo?",
-        "como o tempo de atua��o da for�a influencia o impulso produzido sobre um corpo?",
-        "como a varia��o da quantidade de movimento pode ser prevista a partir do impulso resultante?"
+        "como o tempo de atuação da força influencia o impulso produzido sobre um corpo?",
+        "como a variação da quantidade de movimento pode ser prevista a partir do impulso resultante?"
       ],
-      "correta": "como a conserva��o do momento linear aparece quando um sistema inicialmente unido se separa?",
-      "comentario": "A pergunta correta investiga explos�es e separa��o de corpos de forma direta e coerente.",
+      "correta": "como a conservação do momento linear aparece quando um sistema inicialmente unido se separa?",
+      "comentario": "A pergunta correta investiga explosões e separação de corpos de forma direta e coerente.",
       "tempoEstimado": 35,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -3949,22 +3949,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Explos�es e separa��o de corpos",
+      "subtopico": "Explosóes e separação de corpos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a afirma��o que revela compreens�o inadequada de explos�es e separa��o de corpos.",
+      "enunciado": "Assinale a afirmação que revela compreensão inadequada de explosões e separação de corpos.",
       "opcoes": [
-        "O fen�meno em que partes de um sistema inicialmente unido se separam, distribuindo entre si o momento total conservado do sistema.",
-        "A redistribui��o interna da quantidade de movimento quando um sistema se separa sem for�as externas relevantes.",
-        "Em explos�es e separa��es, o momento total do sistema continua conservado e � redistribu�do entre as partes.",
+        "O fenômeno em que partes de um sistema inicialmente unido se separam, distribuindo entre si o momento total conservado do sistema.",
+        "A redistribuição interna da quantidade de movimento quando um sistema se separa sem forças externas relevantes.",
+        "Em explosões e separações, o momento total do sistema continua conservado e é redistribuído entre as partes.",
         "Quando um sistema explode, o momento total surge do nada sem depender do estado inicial."
       ],
       "correta": "Quando um sistema explode, o momento total surge do nada sem depender do estado inicial.",
-      "comentario": "A alternativa incorreta expressa um equ�voco comum sobre explos�es e separa��o de corpos.",
+      "comentario": "A alternativa incorreta expressa um equívoco comum sobre explosões e separação de corpos.",
       "tempoEstimado": 45,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -3988,22 +3988,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Explos�es e separa��o de corpos",
+      "subtopico": "Explosóes e separação de corpos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre F�sica, um estudante afirmou: \"se o sistema estava inicialmente em repouso, os momentos das partes ap�s a separa��o devem se compensar vetorialmente\". Qual avalia��o � mais consistente?",
+      "enunciado": "Em um debate sobre Física, um estudante afirmou: \"se o sistema estava inicialmente em repouso, os momentos das partes após a separação devem se compensar vetorialmente\". Qual avaliação é mais consistente?",
       "opcoes": [
-        "A afirma��o est� correta, porque a conserva��o do momento linear exige que o momento total final seja igual ao momento total inicial",
-        "A afirma��o est� incorreta, porque explos�es e separa��o de corpos nunca pode ser usada na F�sica escolar.",
-        "A afirma��o � irrelevante, porque explos�es e separa��o de corpos n�o se relaciona com interpreta��o de fen�menos.",
-        "A afirma��o est� incorreta, porque explos�es e separa��o de corpos elimina a necessidade de medir e comparar grandezas."
+        "A afirmação está correta, porque a conservação do momento linear exige que o momento total final seja igual ao momento total inicial",
+        "A afirmação está incorreta, porque explosões e separação de corpos nunca pode ser usada na Física escolar.",
+        "A afirmação é irrelevante, porque explosões e separação de corpos não se relaciona com interpretação de fenômenos.",
+        "A afirmação está incorreta, porque explosões e separação de corpos elimina a necessidade de medir e comparar grandezas."
       ],
-      "correta": "A afirma��o est� correta, porque a conserva��o do momento linear exige que o momento total final seja igual ao momento total inicial",
-      "comentario": "A avalia��o correta recupera o n�cleo conceitual de explos�es e separa��o de corpos.",
+      "correta": "A afirmação está correta, porque a conservação do momento linear exige que o momento total final seja igual ao momento total inicial",
+      "comentario": "A avaliação correta recupera o núcleo conceitual de explosões e separação de corpos.",
       "tempoEstimado": 45,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -4027,22 +4027,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Explos�es e separa��o de corpos",
+      "subtopico": "Explosóes e separação de corpos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se explos�es e separa��o de corpos fosse ignorado(a) na an�lise de um problema f�sico, o resultado mais prov�vel seria:",
+      "enunciado": "Se explosões e separação de corpos fosse ignorado(a) na análise de um problema físico, o resultado mais provável seria:",
       "opcoes": [
-        "seriam mal interpretados fen�menos de recuo, separa��o e fragmenta��o em sistemas isolados",
-        "o problema continuaria exatamente igual, porque explos�es e separa��o de corpos n�o interfere na an�lise f�sica",
-        "seria poss�vel resolver a situa��o sem observar nenhuma grandeza, rela��o ou modelo",
-        "a interpreta��o ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
+        "seriam mal interpretados fenômenos de recuo, separação e fragmentação em sistemas isolados",
+        "o problema continuaria exatamente igual, porque explosões e separação de corpos não interfere na análise física",
+        "seria possível resolver a situação sem observar nenhuma grandeza, relação ou modelo",
+        "a interpretação ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
       ],
-      "correta": "seriam mal interpretados fen�menos de recuo, separa��o e fragmenta��o em sistemas isolados",
-      "comentario": "Ignorar explos�es e separa��o de corpos compromete a leitura f�sica e a qualidade da solu��o.",
+      "correta": "seriam mal interpretados fenômenos de recuo, separação e fragmentação em sistemas isolados",
+      "comentario": "Ignorar explosões e separação de corpos compromete a leitura física e a qualidade da solução.",
       "tempoEstimado": 55,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -4066,22 +4066,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Explos�es e separa��o de corpos",
+      "subtopico": "Explosóes e separação de corpos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente explos�es e separa��o de corpos a uma situa��o escolar ou cotidiana?",
+      "enunciado": "Qual alternativa aplica corretamente explosões e separação de corpos a uma situação escolar ou cotidiana?",
       "opcoes": [
-        "explicar o recuo de um patinador ao lan�ar um objeto ou separar-se de outro patinador",
-        "explicar o funcionamento de airbags, joelheiras e amortecedores em situa��es de impacto",
-        "tratar dois corpos em colis�o sobre superf�cie de atrito desprez�vel como sistema isolado durante a intera��o",
+        "explicar o recuo de um patinador ao lançar um objeto ou separar-se de outro patinador",
+        "explicar o funcionamento de airbags, joelheiras e amortecedores em situações de impacto",
+        "tratar dois corpos em colisão sobre superfície de atrito desprezível como sistema isolado durante a interação",
         "analisar o salto de um atleta ou o movimento de duas massas ligadas usando a ideia de centro de massa"
       ],
-      "correta": "explicar o recuo de um patinador ao lan�ar um objeto ou separar-se de outro patinador",
-      "comentario": "A aplica��o correta mostra como explos�es e separa��o de corpos aparece em contextos pr�ximos do cotidiano.",
+      "correta": "explicar o recuo de um patinador ao lançar um objeto ou separar-se de outro patinador",
+      "comentario": "A aplicação correta mostra como explosões e separação de corpos aparece em contextos próximos do cotidiano.",
       "tempoEstimado": 55,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -4105,22 +4105,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Explos�es e separa��o de corpos",
+      "subtopico": "Explosóes e separação de corpos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual s�ntese final representa melhor explos�es e separa��o de corpos?",
+      "enunciado": "Qual síntese final representa melhor explosões e separação de corpos?",
       "opcoes": [
-        "em explos�es e separa��es, o momento total do sistema continua conservado e � redistribu�do entre as partes",
-        "quantidade de movimento � o produto vetorial entre massa e velocidade de um corpo",
-        "impulso mede o efeito de uma for�a atuando durante certo intervalo de tempo",
-        "o teorema do impulso relaciona impulso resultante e varia��o da quantidade de movimento"
+        "em explosões e separações, o momento total do sistema continua conservado e é redistribuído entre as partes",
+        "quantidade de movimento é o produto vetorial entre massa e velocidade de um corpo",
+        "impulso mede o efeito de uma força atuando durante certo intervalo de tempo",
+        "o teorema do impulso relaciona impulso resultante e variação da quantidade de movimento"
       ],
-      "correta": "em explos�es e separa��es, o momento total do sistema continua conservado e � redistribu�do entre as partes",
-      "comentario": "A s�ntese correta preserva a defini��o, o foco e o uso anal�tico de explos�es e separa��o de corpos.",
+      "correta": "em explosões e separações, o momento total do sistema continua conservado e é redistribuído entre as partes",
+      "comentario": "A síntese correta preserva a definição, o foco e o uso analítico de explosões e separação de corpos.",
       "tempoEstimado": 55,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -4144,22 +4144,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Centro de massa",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em F�sica, Centro de massa pode ser definido(a) como:",
+      "enunciado": "Em Física, Centro de massa pode ser definido(a) como:",
       "opcoes": [
-        "o ponto que representa a distribui��o global de massa de um sistema para fins de an�lise do movimento coletivo",
+        "o ponto que representa a distribuição global de massa de um sistema para fins de análise do movimento coletivo",
         "a grandeza vetorial associada ao produto entre massa e velocidade de um corpo",
-        "a grandeza associada ao produto da for�a resultante pelo intervalo de tempo em que ela atua",
-        "a rela��o segundo a qual o impulso resultante sobre um corpo � igual � varia��o de sua quantidade de movimento"
+        "a grandeza associada ao produto da força resultante pelo intervalo de tempo em que ela atua",
+        "a relação segundo a qual o impulso resultante sobre um corpo é igual à variação de sua quantidade de movimento"
       ],
-      "correta": "o ponto que representa a distribui��o global de massa de um sistema para fins de an�lise do movimento coletivo",
-      "comentario": "Centro de massa refere-se ao ponto que representa a distribui��o global de massa de um sistema para fins de an�lise do movimento coletivo.",
+      "correta": "o ponto que representa a distribuição global de massa de um sistema para fins de análise do movimento coletivo",
+      "comentario": "Centro de massa refere-se ao ponto que representa a distribuição global de massa de um sistema para fins de análise do movimento coletivo.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -4183,22 +4183,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Centro de massa",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situa��o: um sistema de dois corpos pode ser analisado pelo movimento do ponto m�dio ponderado por suas massas Esse caso exemplifica melhor qual subt�pico?",
+      "enunciado": "Observe a situação: um sistema de dois corpos pode ser analisado pelo movimento do ponto médio ponderado por suas massas Esse caso exemplifica melhor qual subtópico?",
       "opcoes": [
         "Centro de massa",
         "Quantidade de movimento",
-        "Impulso de uma for�a",
+        "Impulso de uma força",
         "Teorema do impulso"
       ],
       "correta": "Centro de massa",
-      "comentario": "A situa��o apresentada � um exemplo de centro de massa.",
+      "comentario": "A situação apresentada é um exemplo de centro de massa.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -4222,22 +4222,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Centro de massa",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirma��o descreve corretamente centro de massa?",
+      "enunciado": "Qual afirmação descreve corretamente centro de massa?",
       "opcoes": [
-        "O ponto que representa a distribui��o global de massa de um sistema para fins de an�lise do movimento coletivo.",
+        "O ponto que representa a distribuição global de massa de um sistema para fins de análise do movimento coletivo.",
         "A grandeza vetorial associada ao produto entre massa e velocidade de um corpo.",
-        "A grandeza associada ao produto da for�a resultante pelo intervalo de tempo em que ela atua.",
-        "A rela��o segundo a qual o impulso resultante sobre um corpo � igual � varia��o de sua quantidade de movimento."
+        "A grandeza associada ao produto da força resultante pelo intervalo de tempo em que ela atua.",
+        "A relação segundo a qual o impulso resultante sobre um corpo é igual à variação de sua quantidade de movimento."
       ],
-      "correta": "O ponto que representa a distribui��o global de massa de um sistema para fins de an�lise do movimento coletivo.",
-      "comentario": "A afirma��o correta retoma o sentido central de centro de massa.",
+      "correta": "O ponto que representa a distribuição global de massa de um sistema para fins de análise do movimento coletivo.",
+      "comentario": "A afirmação correta retoma o sentido central de centro de massa.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -4261,22 +4261,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Centro de massa",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa incompat�vel com centro de massa.",
+      "enunciado": "Assinale a alternativa incompatível com centro de massa.",
       "opcoes": [
         "exigir que o centro de massa esteja sempre localizado no mesmo lugar que uma das partes do sistema.",
-        "a descri��o simplificada do movimento global de sistemas extensos ou compostos.",
-        "centro de massa � o ponto representativo da distribui��o de massa usado para descrever o movimento global do sistema.",
-        "o ponto que representa a distribui��o global de massa de um sistema para fins de an�lise do movimento coletivo."
+        "a descrição simplificada do movimento global de sistemas extensos ou compostos.",
+        "centro de massa é o ponto representativo da distribuição de massa usado para descrever o movimento global do sistema.",
+        "o ponto que representa a distribuição global de massa de um sistema para fins de análise do movimento coletivo."
       ],
       "correta": "exigir que o centro de massa esteja sempre localizado no mesmo lugar que uma das partes do sistema.",
-      "comentario": "Exigir que o centro de massa esteja sempre localizado no mesmo lugar que uma das partes do sistema n�o representa centro de massa, enquanto as demais alternativas se relacionam com esse subt�pico.",
+      "comentario": "Exigir que o centro de massa esteja sempre localizado no mesmo lugar que uma das partes do sistema não representa centro de massa, enquanto as demais alternativas se relacionam com esse subtópico.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -4300,22 +4300,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Centro de massa",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando se estuda centro de massa, o foco principal est� em:",
+      "enunciado": "Quando se estuda centro de massa, o foco principal está em:",
       "opcoes": [
-        "a descri��o simplificada do movimento global de sistemas extensos ou compostos",
-        "a rela��o entre massa, velocidade e o estado de movimento de um corpo",
-        "o efeito temporal de uma for�a atuando sobre um corpo",
-        "a conex�o entre for�a atuando no tempo e mudan�a do estado din�mico do corpo"
+        "a descrição simplificada do movimento global de sistemas extensos ou compostos",
+        "a relação entre massa, velocidade e o estado de movimento de um corpo",
+        "o efeito temporal de uma força atuando sobre um corpo",
+        "a conexão entre força atuando no tempo e mudança do estado dinâmico do corpo"
       ],
-      "correta": "a descri��o simplificada do movimento global de sistemas extensos ou compostos",
-      "comentario": "Centro de massa volta a aten��o para a descri��o simplificada do movimento global de sistemas extensos ou compostos.",
+      "correta": "a descrição simplificada do movimento global de sistemas extensos ou compostos",
+      "comentario": "Centro de massa volta a atenção para a descrição simplificada do movimento global de sistemas extensos ou compostos.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -4339,22 +4339,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Centro de massa",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferen�a entre centro de massa e sistemas isolados � que:",
+      "enunciado": "A principal diferença entre centro de massa e sistemas isolados é que:",
       "opcoes": [
-        "centro de massa resume o movimento coletivo do sistema por um ponto representativo, enquanto sistemas isolados descreve a condi��o de aus�ncia de for�as externas relevantes sobre o conjunto",
-        "Centro de massa e Sistemas isolados s�o exatamente a mesma ideia f�sica em qualquer situa��o.",
+        "centro de massa resume o movimento coletivo do sistema por um ponto representativo, enquanto sistemas isolados descreve a condição de ausóncia de forças externas relevantes sobre o conjunto",
+        "Centro de massa e Sistemas isolados são exatamente a mesma ideia física em qualquer situação.",
         "Sistemas isolados elimina a necessidade de observar centro de massa.",
-        "Centro de massa depende apenas de opini�o pessoal, sem rela��o com grandezas, modelos ou medidas."
+        "Centro de massa depende apenas de opinião pessoal, sem relação com grandezas, modelos ou medidas."
       ],
-      "correta": "centro de massa resume o movimento coletivo do sistema por um ponto representativo, enquanto sistemas isolados descreve a condi��o de aus�ncia de for�as externas relevantes sobre o conjunto",
-      "comentario": "A compara��o correta distingue os dois subt�picos sem confundir seus objetos de estudo.",
+      "correta": "centro de massa resume o movimento coletivo do sistema por um ponto representativo, enquanto sistemas isolados descreve a condição de ausóncia de forças externas relevantes sobre o conjunto",
+      "comentario": "A comparação correta distingue os dois subtópicos sem confundir seus objetos de estudo.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -4378,19 +4378,19 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Centro de massa",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma observa��o experimental, registrou-se o seguinte caso: um sistema de dois corpos pode ser analisado pelo movimento do ponto m�dio ponderado por suas massas A leitura f�sica mais adequada aponta para:",
+      "enunciado": "Em uma observação experimental, registrou-se o seguinte caso: um sistema de dois corpos pode ser analisado pelo movimento do ponto médio ponderado por suas massas A leitura física mais adequada aponta para:",
       "opcoes": [
         "o caso mostra que o centro de massa simplifica a leitura do sistema ao resumir seu comportamento coletivo",
-        "Centro de massa mostra que as grandezas envolvidas n�o precisam ser relacionadas para interpretar o caso.",
-        "Centro de massa prova que a situa��o dispensa qualquer leitura f�sica ou quantitativa.",
-        "Centro de massa significa que o fen�meno n�o pode ser descrito por vari�veis f�sicas."
+        "Centro de massa mostra que as grandezas envolvidas não precisam ser relacionadas para interpretar o caso.",
+        "Centro de massa prova que a situação dispensa qualquer leitura física ou quantitativa.",
+        "Centro de massa significa que o fenômeno não pode ser descrito por variáveis físicas."
       ],
       "correta": "o caso mostra que o centro de massa simplifica a leitura do sistema ao resumir seu comportamento coletivo",
       "comentario": "Centro de massa permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
@@ -4417,22 +4417,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Centro de massa",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situa��o abaixo evidencia centro de massa de maneira mais clara?",
+      "enunciado": "Qual situação abaixo evidencia centro de massa de maneira mais clara?",
       "opcoes": [
         "analisar o salto de um atleta ou o movimento de duas massas ligadas usando a ideia de centro de massa",
-        "comparar a quantidade de movimento de um carrinho leve r�pido e de um carrinho pesado lento",
-        "comparar o efeito de empurrar um carrinho com for�a pequena por muito tempo e grande por pouco tempo",
-        "explicar a mudan�a de movimento de uma bola ap�s colis�o ou chute usando impulso"
+        "comparar a quantidade de movimento de um carrinho leve rápido e de um carrinho pesado lento",
+        "comparar o efeito de empurrar um carrinho com força pequena por muito tempo e grande por pouco tempo",
+        "explicar a mudança de movimento de uma bola após colisão ou chute usando impulso"
       ],
       "correta": "analisar o salto de um atleta ou o movimento de duas massas ligadas usando a ideia de centro de massa",
-      "comentario": "A alternativa correta aproxima centro de massa de uma situa��o concreta.",
+      "comentario": "A alternativa correta aproxima centro de massa de uma situação concreta.",
       "tempoEstimado": 35,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -4456,22 +4456,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Centro de massa",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"um sistema de dois corpos pode ser analisado pelo movimento do ponto m�dio ponderado por suas massas\", qual conclus�o � mais adequada?",
+      "enunciado": "Ao analisar o caso \"um sistema de dois corpos pode ser analisado pelo movimento do ponto médio ponderado por suas massas\", qual conclusão é mais adequada?",
       "opcoes": [
         "o caso mostra que o centro de massa simplifica a leitura do sistema ao resumir seu comportamento coletivo",
-        "A situa��o indica que centro de massa n�o possui rela��o com medidas, vari�veis ou interpreta��o f�sica.",
-        "A situa��o prova que centro de massa s� existe em exemplos te�ricos sem uso cotidiano.",
-        "A situa��o mostra que centro de massa torna desnecess�rio comparar dados e modelos."
+        "A situação indica que centro de massa não possui relação com medidas, variáveis ou interpretação física.",
+        "A situação prova que centro de massa só existe em exemplos teóricos sem uso cotidiano.",
+        "A situação mostra que centro de massa torna desnecessário comparar dados e modelos."
       ],
       "correta": "o caso mostra que o centro de massa simplifica a leitura do sistema ao resumir seu comportamento coletivo",
-      "comentario": "A conclus�o correta mant�m coer�ncia com os dados apresentados e com centro de massa.",
+      "comentario": "A conclusão correta mantém coerência com os dados apresentados e com centro de massa.",
       "tempoEstimado": 35,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -4495,7 +4495,7 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Centro de massa",
       "dificuldadeLabel": "medio",
@@ -4504,12 +4504,12 @@
       "tipo": "multipla_escolha",
       "enunciado": "Qual pergunta de pesquisa se relaciona melhor com centro de massa?",
       "opcoes": [
-        "como o centro de massa ajuda a representar o movimento de sistemas com v�rios corpos?",
+        "como o centro de massa ajuda a representar o movimento de sistemas com vários corpos?",
         "como massa e velocidade influenciam a quantidade de movimento de um corpo?",
-        "como o tempo de atua��o da for�a influencia o impulso produzido sobre um corpo?",
-        "como a varia��o da quantidade de movimento pode ser prevista a partir do impulso resultante?"
+        "como o tempo de atuação da força influencia o impulso produzido sobre um corpo?",
+        "como a variação da quantidade de movimento pode ser prevista a partir do impulso resultante?"
       ],
-      "correta": "como o centro de massa ajuda a representar o movimento de sistemas com v�rios corpos?",
+      "correta": "como o centro de massa ajuda a representar o movimento de sistemas com vários corpos?",
       "comentario": "A pergunta correta investiga centro de massa de forma direta e coerente.",
       "tempoEstimado": 35,
       "tags": [
@@ -4534,22 +4534,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Centro de massa",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a afirma��o que revela compreens�o inadequada de centro de massa.",
+      "enunciado": "Assinale a afirmação que revela compreensão inadequada de centro de massa.",
       "opcoes": [
-        "O ponto que representa a distribui��o global de massa de um sistema para fins de an�lise do movimento coletivo.",
-        "A descri��o simplificada do movimento global de sistemas extensos ou compostos.",
-        "Centro de massa � o ponto representativo da distribui��o de massa usado para descrever o movimento global do sistema.",
+        "O ponto que representa a distribuição global de massa de um sistema para fins de análise do movimento coletivo.",
+        "A descrição simplificada do movimento global de sistemas extensos ou compostos.",
+        "Centro de massa é o ponto representativo da distribuição de massa usado para descrever o movimento global do sistema.",
         "O centro de massa precisa coincidir sempre com um ponto material existente do corpo."
       ],
       "correta": "O centro de massa precisa coincidir sempre com um ponto material existente do corpo.",
-      "comentario": "A alternativa incorreta expressa um equ�voco comum sobre centro de massa.",
+      "comentario": "A alternativa incorreta expressa um equívoco comum sobre centro de massa.",
       "tempoEstimado": 45,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -4573,22 +4573,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Centro de massa",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre F�sica, um estudante afirmou: \"o centro de massa pode estar em uma regi�o sem mat�ria, desde que represente a distribui��o do sistema\". Qual avalia��o � mais consistente?",
+      "enunciado": "Em um debate sobre Física, um estudante afirmou: \"o centro de massa pode estar em uma região sem matéria, desde que represente a distribuição do sistema\". Qual avaliação é mais consistente?",
       "opcoes": [
-        "A afirma��o est� correta, porque ele � um ponto geom�trico-din�mico associado � massa distribu�da e n�o necessariamente um ponto material ocupado",
-        "A afirma��o est� incorreta, porque centro de massa nunca pode ser usada na F�sica escolar.",
-        "A afirma��o � irrelevante, porque centro de massa n�o se relaciona com interpreta��o de fen�menos.",
-        "A afirma��o est� incorreta, porque centro de massa elimina a necessidade de medir e comparar grandezas."
+        "A afirmação está correta, porque ele é um ponto geométrico-dinâmico associado à massa distribuída e não necessariamente um ponto material ocupado",
+        "A afirmação está incorreta, porque centro de massa nunca pode ser usada na Física escolar.",
+        "A afirmação é irrelevante, porque centro de massa não se relaciona com interpretação de fenômenos.",
+        "A afirmação está incorreta, porque centro de massa elimina a necessidade de medir e comparar grandezas."
       ],
-      "correta": "A afirma��o est� correta, porque ele � um ponto geom�trico-din�mico associado � massa distribu�da e n�o necessariamente um ponto material ocupado",
-      "comentario": "A avalia��o correta recupera o n�cleo conceitual de centro de massa.",
+      "correta": "A afirmação está correta, porque ele é um ponto geométrico-dinâmico associado à massa distribuída e não necessariamente um ponto material ocupado",
+      "comentario": "A avaliação correta recupera o núcleo conceitual de centro de massa.",
       "tempoEstimado": 45,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -4612,22 +4612,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Centro de massa",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se centro de massa fosse ignorado(a) na an�lise de um problema f�sico, o resultado mais prov�vel seria:",
+      "enunciado": "Se centro de massa fosse ignorado(a) na análise de um problema físico, o resultado mais provável seria:",
       "opcoes": [
-        "sistemas compostos perderiam uma ferramenta importante para simplificar a an�lise do movimento global",
-        "o problema continuaria exatamente igual, porque centro de massa n�o interfere na an�lise f�sica",
-        "seria poss�vel resolver a situa��o sem observar nenhuma grandeza, rela��o ou modelo",
-        "a interpreta��o ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
+        "sistemas compostos perderiam uma ferramenta importante para simplificar a análise do movimento global",
+        "o problema continuaria exatamente igual, porque centro de massa não interfere na análise física",
+        "seria possível resolver a situação sem observar nenhuma grandeza, relação ou modelo",
+        "a interpretação ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
       ],
-      "correta": "sistemas compostos perderiam uma ferramenta importante para simplificar a an�lise do movimento global",
-      "comentario": "Ignorar centro de massa compromete a leitura f�sica e a qualidade da solu��o.",
+      "correta": "sistemas compostos perderiam uma ferramenta importante para simplificar a análise do movimento global",
+      "comentario": "Ignorar centro de massa compromete a leitura física e a qualidade da solução.",
       "tempoEstimado": 55,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -4651,22 +4651,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Centro de massa",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente centro de massa a uma situa��o escolar ou cotidiana?",
+      "enunciado": "Qual alternativa aplica corretamente centro de massa a uma situação escolar ou cotidiana?",
       "opcoes": [
         "analisar o salto de um atleta ou o movimento de duas massas ligadas usando a ideia de centro de massa",
-        "explicar o funcionamento de airbags, joelheiras e amortecedores em situa��es de impacto",
-        "tratar dois corpos em colis�o sobre superf�cie de atrito desprez�vel como sistema isolado durante a intera��o",
-        "explicar o recuo de um patinador ao lan�ar um objeto ou separar-se de outro patinador"
+        "explicar o funcionamento de airbags, joelheiras e amortecedores em situações de impacto",
+        "tratar dois corpos em colisão sobre superfície de atrito desprezível como sistema isolado durante a interação",
+        "explicar o recuo de um patinador ao lançar um objeto ou separar-se de outro patinador"
       ],
       "correta": "analisar o salto de um atleta ou o movimento de duas massas ligadas usando a ideia de centro de massa",
-      "comentario": "A aplica��o correta mostra como centro de massa aparece em contextos pr�ximos do cotidiano.",
+      "comentario": "A aplicação correta mostra como centro de massa aparece em contextos próximos do cotidiano.",
       "tempoEstimado": 55,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -4690,22 +4690,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Centro de massa",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual s�ntese final representa melhor centro de massa?",
+      "enunciado": "Qual síntese final representa melhor centro de massa?",
       "opcoes": [
-        "centro de massa � o ponto representativo da distribui��o de massa usado para descrever o movimento global do sistema",
-        "quantidade de movimento � o produto vetorial entre massa e velocidade de um corpo",
-        "impulso mede o efeito de uma for�a atuando durante certo intervalo de tempo",
-        "o teorema do impulso relaciona impulso resultante e varia��o da quantidade de movimento"
+        "centro de massa é o ponto representativo da distribuição de massa usado para descrever o movimento global do sistema",
+        "quantidade de movimento é o produto vetorial entre massa e velocidade de um corpo",
+        "impulso mede o efeito de uma força atuando durante certo intervalo de tempo",
+        "o teorema do impulso relaciona impulso resultante e variação da quantidade de movimento"
       ],
-      "correta": "centro de massa � o ponto representativo da distribui��o de massa usado para descrever o movimento global do sistema",
-      "comentario": "A s�ntese correta preserva a defini��o, o foco e o uso anal�tico de centro de massa.",
+      "correta": "centro de massa é o ponto representativo da distribuição de massa usado para descrever o movimento global do sistema",
+      "comentario": "A síntese correta preserva a definição, o foco e o uso analítico de centro de massa.",
       "tempoEstimado": 55,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -4729,22 +4729,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Sistemas isolados",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em F�sica, Sistemas isolados pode ser definido(a) como:",
+      "enunciado": "Em Física, Sistemas isolados pode ser definido(a) como:",
       "opcoes": [
-        "os sistemas em que a resultante das for�as externas � nula ou desprez�vel para a an�lise do movimento total",
+        "os sistemas em que a resultante das forças externas é nula ou desprezível para a análise do movimento total",
         "a grandeza vetorial associada ao produto entre massa e velocidade de um corpo",
-        "a grandeza associada ao produto da for�a resultante pelo intervalo de tempo em que ela atua",
-        "a rela��o segundo a qual o impulso resultante sobre um corpo � igual � varia��o de sua quantidade de movimento"
+        "a grandeza associada ao produto da força resultante pelo intervalo de tempo em que ela atua",
+        "a relação segundo a qual o impulso resultante sobre um corpo é igual à variação de sua quantidade de movimento"
       ],
-      "correta": "os sistemas em que a resultante das for�as externas � nula ou desprez�vel para a an�lise do movimento total",
-      "comentario": "Sistemas isolados refere-se a os sistemas em que a resultante das for�as externas � nula ou desprez�vel para a an�lise do movimento total.",
+      "correta": "os sistemas em que a resultante das forças externas é nula ou desprezível para a análise do movimento total",
+      "comentario": "Sistemas isolados refere-se a os sistemas em que a resultante das forças externas é nula ou desprezível para a análise do movimento total.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -4768,22 +4768,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Sistemas isolados",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situa��o: dois corpos interagem em uma pista quase sem atrito e as for�as relevantes s�o essencialmente internas ao sistema Esse caso exemplifica melhor qual subt�pico?",
+      "enunciado": "Observe a situação: dois corpos interagem em uma pista quase sem atrito e as forças relevantes são essencialmente internas ao sistema Esse caso exemplifica melhor qual subtópico?",
       "opcoes": [
         "Sistemas isolados",
         "Quantidade de movimento",
-        "Impulso de uma for�a",
+        "Impulso de uma força",
         "Teorema do impulso"
       ],
       "correta": "Sistemas isolados",
-      "comentario": "A situa��o apresentada � um exemplo de sistemas isolados.",
+      "comentario": "A situação apresentada é um exemplo de sistemas isolados.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -4807,22 +4807,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Sistemas isolados",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirma��o descreve corretamente sistemas isolados?",
+      "enunciado": "Qual afirmação descreve corretamente sistemas isolados?",
       "opcoes": [
-        "Os sistemas em que a resultante das for�as externas � nula ou desprez�vel para a an�lise do movimento total.",
+        "Os sistemas em que a resultante das forças externas é nula ou desprezível para a análise do movimento total.",
         "A grandeza vetorial associada ao produto entre massa e velocidade de um corpo.",
-        "A grandeza associada ao produto da for�a resultante pelo intervalo de tempo em que ela atua.",
-        "A rela��o segundo a qual o impulso resultante sobre um corpo � igual � varia��o de sua quantidade de movimento."
+        "A grandeza associada ao produto da força resultante pelo intervalo de tempo em que ela atua.",
+        "A relação segundo a qual o impulso resultante sobre um corpo é igual à variação de sua quantidade de movimento."
       ],
-      "correta": "Os sistemas em que a resultante das for�as externas � nula ou desprez�vel para a an�lise do movimento total.",
-      "comentario": "A afirma��o correta retoma o sentido central de sistemas isolados.",
+      "correta": "Os sistemas em que a resultante das forças externas é nula ou desprezível para a análise do movimento total.",
+      "comentario": "A afirmação correta retoma o sentido central de sistemas isolados.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -4846,22 +4846,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Sistemas isolados",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa incompat�vel com sistemas isolados.",
+      "enunciado": "Assinale a alternativa incompatível com sistemas isolados.",
       "opcoes": [
-        "concluir que o sistema deixa de ser isolado apenas porque h� for�as internas entre seus componentes.",
-        "a condi��o f�sica que permite aplicar conserva��o do momento linear ao conjunto.",
-        "sistemas isolados s�o aqueles em que a resultante externa sobre o conjunto � nula ou desprez�vel.",
-        "os sistemas em que a resultante das for�as externas � nula ou desprez�vel para a an�lise do movimento total."
+        "concluir que o sistema deixa de ser isolado apenas porque há forças internas entre seus componentes.",
+        "a condição física que permite aplicar conservação do momento linear ao conjunto.",
+        "sistemas isolados são aqueles em que a resultante externa sobre o conjunto é nula ou desprezível.",
+        "os sistemas em que a resultante das forças externas é nula ou desprezível para a análise do movimento total."
       ],
-      "correta": "concluir que o sistema deixa de ser isolado apenas porque h� for�as internas entre seus componentes.",
-      "comentario": "Concluir que o sistema deixa de ser isolado apenas porque h� for�as internas entre seus componentes n�o representa sistemas isolados, enquanto as demais alternativas se relacionam com esse subt�pico.",
+      "correta": "concluir que o sistema deixa de ser isolado apenas porque há forças internas entre seus componentes.",
+      "comentario": "Concluir que o sistema deixa de ser isolado apenas porque há forças internas entre seus componentes não representa sistemas isolados, enquanto as demais alternativas se relacionam com esse subtópico.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -4885,22 +4885,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Sistemas isolados",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando se estuda sistemas isolados, o foco principal est� em:",
+      "enunciado": "Quando se estuda sistemas isolados, o foco principal está em:",
       "opcoes": [
-        "a condi��o f�sica que permite aplicar conserva��o do momento linear ao conjunto",
-        "a rela��o entre massa, velocidade e o estado de movimento de um corpo",
-        "o efeito temporal de uma for�a atuando sobre um corpo",
-        "a conex�o entre for�a atuando no tempo e mudan�a do estado din�mico do corpo"
+        "a condição física que permite aplicar conservação do momento linear ao conjunto",
+        "a relação entre massa, velocidade e o estado de movimento de um corpo",
+        "o efeito temporal de uma força atuando sobre um corpo",
+        "a conexão entre força atuando no tempo e mudança do estado dinâmico do corpo"
       ],
-      "correta": "a condi��o f�sica que permite aplicar conserva��o do momento linear ao conjunto",
-      "comentario": "Sistemas isolados volta a aten��o para a condi��o f�sica que permite aplicar conserva��o do momento linear ao conjunto.",
+      "correta": "a condição física que permite aplicar conservação do momento linear ao conjunto",
+      "comentario": "Sistemas isolados volta a atenção para a condição física que permite aplicar conservação do momento linear ao conjunto.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -4924,22 +4924,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Sistemas isolados",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferen�a entre sistemas isolados e conserva��o do momento linear � que:",
+      "enunciado": "A principal diferença entre sistemas isolados e conservação do momento linear é que:",
       "opcoes": [
-        "sistemas isolados descreve a condi��o de aus�ncia de for�a externa resultante relevante, enquanto conserva��o do momento linear � a consequ�ncia dessa condi��o para o momento total",
-        "Sistemas isolados e Conserva��o do momento linear s�o exatamente a mesma ideia f�sica em qualquer situa��o.",
-        "Conserva��o do momento linear elimina a necessidade de observar sistemas isolados.",
-        "Sistemas isolados depende apenas de opini�o pessoal, sem rela��o com grandezas, modelos ou medidas."
+        "sistemas isolados descreve a condição de ausóncia de força externa resultante relevante, enquanto conservação do momento linear é a consequência dessa condição para o momento total",
+        "Sistemas isolados e Conservação do momento linear são exatamente a mesma ideia física em qualquer situação.",
+        "Conservação do momento linear elimina a necessidade de observar sistemas isolados.",
+        "Sistemas isolados depende apenas de opinião pessoal, sem relação com grandezas, modelos ou medidas."
       ],
-      "correta": "sistemas isolados descreve a condi��o de aus�ncia de for�a externa resultante relevante, enquanto conserva��o do momento linear � a consequ�ncia dessa condi��o para o momento total",
-      "comentario": "A compara��o correta distingue os dois subt�picos sem confundir seus objetos de estudo.",
+      "correta": "sistemas isolados descreve a condição de ausóncia de força externa resultante relevante, enquanto conservação do momento linear é a consequência dessa condição para o momento total",
+      "comentario": "A comparação correta distingue os dois subtópicos sem confundir seus objetos de estudo.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -4963,21 +4963,21 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Sistemas isolados",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma observa��o experimental, registrou-se o seguinte caso: dois corpos interagem em uma pista quase sem atrito e as for�as relevantes s�o essencialmente internas ao sistema A leitura f�sica mais adequada aponta para:",
+      "enunciado": "Em uma observação experimental, registrou-se o seguinte caso: dois corpos interagem em uma pista quase sem atrito e as forças relevantes são essencialmente internas ao sistema A leitura física mais adequada aponta para:",
       "opcoes": [
-        "o caso mostra que o crit�rio de isolamento depende da for�a externa resultante sobre o sistema total",
-        "Sistemas isolados mostra que as grandezas envolvidas n�o precisam ser relacionadas para interpretar o caso.",
-        "Sistemas isolados prova que a situa��o dispensa qualquer leitura f�sica ou quantitativa.",
-        "Sistemas isolados significa que o fen�meno n�o pode ser descrito por vari�veis f�sicas."
+        "o caso mostra que o critério de isolamento depende da força externa resultante sobre o sistema total",
+        "Sistemas isolados mostra que as grandezas envolvidas não precisam ser relacionadas para interpretar o caso.",
+        "Sistemas isolados prova que a situação dispensa qualquer leitura física ou quantitativa.",
+        "Sistemas isolados significa que o fenômeno não pode ser descrito por variáveis físicas."
       ],
-      "correta": "o caso mostra que o crit�rio de isolamento depende da for�a externa resultante sobre o sistema total",
+      "correta": "o caso mostra que o critério de isolamento depende da força externa resultante sobre o sistema total",
       "comentario": "Sistemas isolados permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
       "tempoEstimado": 25,
       "tags": [
@@ -5002,22 +5002,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Sistemas isolados",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situa��o abaixo evidencia sistemas isolados de maneira mais clara?",
+      "enunciado": "Qual situação abaixo evidencia sistemas isolados de maneira mais clara?",
       "opcoes": [
-        "tratar dois corpos em colis�o sobre superf�cie de atrito desprez�vel como sistema isolado durante a intera��o",
-        "comparar a quantidade de movimento de um carrinho leve r�pido e de um carrinho pesado lento",
-        "comparar o efeito de empurrar um carrinho com for�a pequena por muito tempo e grande por pouco tempo",
-        "explicar a mudan�a de movimento de uma bola ap�s colis�o ou chute usando impulso"
+        "tratar dois corpos em colisão sobre superfície de atrito desprezível como sistema isolado durante a interação",
+        "comparar a quantidade de movimento de um carrinho leve rápido e de um carrinho pesado lento",
+        "comparar o efeito de empurrar um carrinho com força pequena por muito tempo e grande por pouco tempo",
+        "explicar a mudança de movimento de uma bola após colisão ou chute usando impulso"
       ],
-      "correta": "tratar dois corpos em colis�o sobre superf�cie de atrito desprez�vel como sistema isolado durante a intera��o",
-      "comentario": "A alternativa correta aproxima sistemas isolados de uma situa��o concreta.",
+      "correta": "tratar dois corpos em colisão sobre superfície de atrito desprezível como sistema isolado durante a interação",
+      "comentario": "A alternativa correta aproxima sistemas isolados de uma situação concreta.",
       "tempoEstimado": 35,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -5041,22 +5041,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Sistemas isolados",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"dois corpos interagem em uma pista quase sem atrito e as for�as relevantes s�o essencialmente internas ao sistema\", qual conclus�o � mais adequada?",
+      "enunciado": "Ao analisar o caso \"dois corpos interagem em uma pista quase sem atrito e as forças relevantes são essencialmente internas ao sistema\", qual conclusão é mais adequada?",
       "opcoes": [
-        "o caso mostra que o crit�rio de isolamento depende da for�a externa resultante sobre o sistema total",
-        "A situa��o indica que sistemas isolados n�o possui rela��o com medidas, vari�veis ou interpreta��o f�sica.",
-        "A situa��o prova que sistemas isolados s� existe em exemplos te�ricos sem uso cotidiano.",
-        "A situa��o mostra que sistemas isolados torna desnecess�rio comparar dados e modelos."
+        "o caso mostra que o critério de isolamento depende da força externa resultante sobre o sistema total",
+        "A situação indica que sistemas isolados não possui relação com medidas, variáveis ou interpretação física.",
+        "A situação prova que sistemas isolados só existe em exemplos teóricos sem uso cotidiano.",
+        "A situação mostra que sistemas isolados torna desnecessário comparar dados e modelos."
       ],
-      "correta": "o caso mostra que o crit�rio de isolamento depende da for�a externa resultante sobre o sistema total",
-      "comentario": "A conclus�o correta mant�m coer�ncia com os dados apresentados e com sistemas isolados.",
+      "correta": "o caso mostra que o critério de isolamento depende da força externa resultante sobre o sistema total",
+      "comentario": "A conclusão correta mantém coerência com os dados apresentados e com sistemas isolados.",
       "tempoEstimado": 35,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -5080,7 +5080,7 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Sistemas isolados",
       "dificuldadeLabel": "medio",
@@ -5091,8 +5091,8 @@
       "opcoes": [
         "como saber se um sistema pode ser tratado como isolado em um problema de movimento?",
         "como massa e velocidade influenciam a quantidade de movimento de um corpo?",
-        "como o tempo de atua��o da for�a influencia o impulso produzido sobre um corpo?",
-        "como a varia��o da quantidade de movimento pode ser prevista a partir do impulso resultante?"
+        "como o tempo de atuação da força influencia o impulso produzido sobre um corpo?",
+        "como a variação da quantidade de movimento pode ser prevista a partir do impulso resultante?"
       ],
       "correta": "como saber se um sistema pode ser tratado como isolado em um problema de movimento?",
       "comentario": "A pergunta correta investiga sistemas isolados de forma direta e coerente.",
@@ -5119,22 +5119,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Sistemas isolados",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a afirma��o que revela compreens�o inadequada de sistemas isolados.",
+      "enunciado": "Assinale a afirmação que revela compreensão inadequada de sistemas isolados.",
       "opcoes": [
-        "Os sistemas em que a resultante das for�as externas � nula ou desprez�vel para a an�lise do movimento total.",
-        "A condi��o f�sica que permite aplicar conserva��o do momento linear ao conjunto.",
-        "Sistemas isolados s�o aqueles em que a resultante externa sobre o conjunto � nula ou desprez�vel.",
-        "Um sistema isolado � aquele em que n�o existe nenhuma for�a atuando em nenhuma parte dele."
+        "Os sistemas em que a resultante das forças externas é nula ou desprezível para a análise do movimento total.",
+        "A condição física que permite aplicar conservação do momento linear ao conjunto.",
+        "Sistemas isolados são aqueles em que a resultante externa sobre o conjunto é nula ou desprezível.",
+        "Um sistema isolado é aquele em que não existe nenhuma força atuando em nenhuma parte dele."
       ],
-      "correta": "Um sistema isolado � aquele em que n�o existe nenhuma for�a atuando em nenhuma parte dele.",
-      "comentario": "A alternativa incorreta expressa um equ�voco comum sobre sistemas isolados.",
+      "correta": "Um sistema isolado é aquele em que não existe nenhuma força atuando em nenhuma parte dele.",
+      "comentario": "A alternativa incorreta expressa um equívoco comum sobre sistemas isolados.",
       "tempoEstimado": 45,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -5158,22 +5158,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Sistemas isolados",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre F�sica, um estudante afirmou: \"um sistema pode ter for�as internas intensas e ainda assim ser tratado como isolado se a resultante externa relevante for nula\". Qual avalia��o � mais consistente?",
+      "enunciado": "Em um debate sobre Física, um estudante afirmou: \"um sistema pode ter forças internas intensas e ainda assim ser tratado como isolado se a resultante externa relevante for nula\". Qual avaliação é mais consistente?",
       "opcoes": [
-        "A afirma��o est� correta, porque o isolamento din�mico depende das for�as externas sobre o conjunto, e n�o da aus�ncia de intera��es internas",
-        "A afirma��o est� incorreta, porque sistemas isolados nunca pode ser usada na F�sica escolar.",
-        "A afirma��o � irrelevante, porque sistemas isolados n�o se relaciona com interpreta��o de fen�menos.",
-        "A afirma��o est� incorreta, porque sistemas isolados elimina a necessidade de medir e comparar grandezas."
+        "A afirmação está correta, porque o isolamento dinâmico depende das forças externas sobre o conjunto, e não da ausóncia de interações internas",
+        "A afirmação está incorreta, porque sistemas isolados nunca pode ser usada na Física escolar.",
+        "A afirmação é irrelevante, porque sistemas isolados não se relaciona com interpretação de fenômenos.",
+        "A afirmação está incorreta, porque sistemas isolados elimina a necessidade de medir e comparar grandezas."
       ],
-      "correta": "A afirma��o est� correta, porque o isolamento din�mico depende das for�as externas sobre o conjunto, e n�o da aus�ncia de intera��es internas",
-      "comentario": "A avalia��o correta recupera o n�cleo conceitual de sistemas isolados.",
+      "correta": "A afirmação está correta, porque o isolamento dinâmico depende das forças externas sobre o conjunto, e não da ausóncia de interações internas",
+      "comentario": "A avaliação correta recupera o núcleo conceitual de sistemas isolados.",
       "tempoEstimado": 45,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -5197,22 +5197,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Sistemas isolados",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se sistemas isolados fosse ignorado(a) na an�lise de um problema f�sico, o resultado mais prov�vel seria:",
+      "enunciado": "Se sistemas isolados fosse ignorado(a) na análise de um problema físico, o resultado mais provável seria:",
       "opcoes": [
-        "seriam aplicadas ou negadas conserva��es de forma errada ao analisar colis�es e separa��es",
-        "o problema continuaria exatamente igual, porque sistemas isolados n�o interfere na an�lise f�sica",
-        "seria poss�vel resolver a situa��o sem observar nenhuma grandeza, rela��o ou modelo",
-        "a interpreta��o ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
+        "seriam aplicadas ou negadas conservações de forma errada ao analisar colisões e separações",
+        "o problema continuaria exatamente igual, porque sistemas isolados não interfere na análise física",
+        "seria possível resolver a situação sem observar nenhuma grandeza, relação ou modelo",
+        "a interpretação ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
       ],
-      "correta": "seriam aplicadas ou negadas conserva��es de forma errada ao analisar colis�es e separa��es",
-      "comentario": "Ignorar sistemas isolados compromete a leitura f�sica e a qualidade da solu��o.",
+      "correta": "seriam aplicadas ou negadas conservações de forma errada ao analisar colisões e separações",
+      "comentario": "Ignorar sistemas isolados compromete a leitura física e a qualidade da solução.",
       "tempoEstimado": 55,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -5236,22 +5236,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Sistemas isolados",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente sistemas isolados a uma situa��o escolar ou cotidiana?",
+      "enunciado": "Qual alternativa aplica corretamente sistemas isolados a uma situação escolar ou cotidiana?",
       "opcoes": [
-        "tratar dois corpos em colis�o sobre superf�cie de atrito desprez�vel como sistema isolado durante a intera��o",
-        "explicar o funcionamento de airbags, joelheiras e amortecedores em situa��es de impacto",
+        "tratar dois corpos em colisão sobre superfície de atrito desprezível como sistema isolado durante a interação",
+        "explicar o funcionamento de airbags, joelheiras e amortecedores em situações de impacto",
         "analisar o salto de um atleta ou o movimento de duas massas ligadas usando a ideia de centro de massa",
-        "explicar o recuo de um patinador ao lan�ar um objeto ou separar-se de outro patinador"
+        "explicar o recuo de um patinador ao lançar um objeto ou separar-se de outro patinador"
       ],
-      "correta": "tratar dois corpos em colis�o sobre superf�cie de atrito desprez�vel como sistema isolado durante a intera��o",
-      "comentario": "A aplica��o correta mostra como sistemas isolados aparece em contextos pr�ximos do cotidiano.",
+      "correta": "tratar dois corpos em colisão sobre superfície de atrito desprezível como sistema isolado durante a interação",
+      "comentario": "A aplicação correta mostra como sistemas isolados aparece em contextos próximos do cotidiano.",
       "tempoEstimado": 55,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -5275,22 +5275,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
       "subtopico": "Sistemas isolados",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual s�ntese final representa melhor sistemas isolados?",
+      "enunciado": "Qual síntese final representa melhor sistemas isolados?",
       "opcoes": [
-        "sistemas isolados s�o aqueles em que a resultante externa sobre o conjunto � nula ou desprez�vel",
-        "quantidade de movimento � o produto vetorial entre massa e velocidade de um corpo",
-        "impulso mede o efeito de uma for�a atuando durante certo intervalo de tempo",
-        "o teorema do impulso relaciona impulso resultante e varia��o da quantidade de movimento"
+        "sistemas isolados são aqueles em que a resultante externa sobre o conjunto é nula ou desprezível",
+        "quantidade de movimento é o produto vetorial entre massa e velocidade de um corpo",
+        "impulso mede o efeito de uma força atuando durante certo intervalo de tempo",
+        "o teorema do impulso relaciona impulso resultante e variação da quantidade de movimento"
       ],
-      "correta": "sistemas isolados s�o aqueles em que a resultante externa sobre o conjunto � nula ou desprez�vel",
-      "comentario": "A s�ntese correta preserva a defini��o, o foco e o uso anal�tico de sistemas isolados.",
+      "correta": "sistemas isolados são aqueles em que a resultante externa sobre o conjunto é nula ou desprezível",
+      "comentario": "A síntese correta preserva a definição, o foco e o uso analítico de sistemas isolados.",
       "tempoEstimado": 55,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -5314,22 +5314,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Aplica��es em seguran�a e esportes",
+      "subtopico": "Aplicações em segurança e esportes",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em F�sica, Aplica��es em seguran�a e esportes pode ser definido(a) como:",
+      "enunciado": "Em Física, Aplicações em segurança e esportes pode ser definido(a) como:",
       "opcoes": [
-        "o uso dos conceitos de impulso e quantidade de movimento para interpretar impactos, amortecimento e desempenho em pr�ticas cotidianas",
+        "o uso dos conceitos de impulso e quantidade de movimento para interpretar impactos, amortecimento e desempenho em práticas cotidianas",
         "a grandeza vetorial associada ao produto entre massa e velocidade de um corpo",
-        "a grandeza associada ao produto da for�a resultante pelo intervalo de tempo em que ela atua",
-        "a rela��o segundo a qual o impulso resultante sobre um corpo � igual � varia��o de sua quantidade de movimento"
+        "a grandeza associada ao produto da força resultante pelo intervalo de tempo em que ela atua",
+        "a relação segundo a qual o impulso resultante sobre um corpo é igual à variação de sua quantidade de movimento"
       ],
-      "correta": "o uso dos conceitos de impulso e quantidade de movimento para interpretar impactos, amortecimento e desempenho em pr�ticas cotidianas",
-      "comentario": "Aplica��es em seguran�a e esportes refere-se ao uso dos conceitos de impulso e quantidade de movimento para interpretar impactos, amortecimento e desempenho em pr�ticas cotidianas.",
+      "correta": "o uso dos conceitos de impulso e quantidade de movimento para interpretar impactos, amortecimento e desempenho em práticas cotidianas",
+      "comentario": "Aplicações em segurança e esportes refere-se ao uso dos conceitos de impulso e quantidade de movimento para interpretar impactos, amortecimento e desempenho em práticas cotidianas.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -5353,22 +5353,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Aplica��es em seguran�a e esportes",
+      "subtopico": "Aplicações em segurança e esportes",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situa��o: airbags, capacetes e colch�es esportivos aumentam o tempo de intera��o para reduzir a for�a m�dia em impactos Esse caso exemplifica melhor qual subt�pico?",
+      "enunciado": "Observe a situação: airbags, capacetes e colcháes esportivos aumentam o tempo de interação para reduzir a força média em impactos Esse caso exemplifica melhor qual subtópico?",
       "opcoes": [
-        "Aplica��es em seguran�a e esportes",
+        "Aplicações em segurança e esportes",
         "Quantidade de movimento",
-        "Impulso de uma for�a",
+        "Impulso de uma força",
         "Teorema do impulso"
       ],
-      "correta": "Aplica��es em seguran�a e esportes",
-      "comentario": "A situa��o apresentada � um exemplo de aplica��es em seguran�a e esportes.",
+      "correta": "Aplicações em segurança e esportes",
+      "comentario": "A situação apresentada é um exemplo de aplicações em segurança e esportes.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -5392,22 +5392,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Aplica��es em seguran�a e esportes",
+      "subtopico": "Aplicações em segurança e esportes",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirma��o descreve corretamente aplica��es em seguran�a e esportes?",
+      "enunciado": "Qual afirmação descreve corretamente aplicações em segurança e esportes?",
       "opcoes": [
-        "O uso dos conceitos de impulso e quantidade de movimento para interpretar impactos, amortecimento e desempenho em pr�ticas cotidianas.",
+        "O uso dos conceitos de impulso e quantidade de movimento para interpretar impactos, amortecimento e desempenho em práticas cotidianas.",
         "A grandeza vetorial associada ao produto entre massa e velocidade de um corpo.",
-        "A grandeza associada ao produto da for�a resultante pelo intervalo de tempo em que ela atua.",
-        "A rela��o segundo a qual o impulso resultante sobre um corpo � igual � varia��o de sua quantidade de movimento."
+        "A grandeza associada ao produto da força resultante pelo intervalo de tempo em que ela atua.",
+        "A relação segundo a qual o impulso resultante sobre um corpo é igual à variação de sua quantidade de movimento."
       ],
-      "correta": "O uso dos conceitos de impulso e quantidade de movimento para interpretar impactos, amortecimento e desempenho em pr�ticas cotidianas.",
-      "comentario": "A afirma��o correta retoma o sentido central de aplica��es em seguran�a e esportes.",
+      "correta": "O uso dos conceitos de impulso e quantidade de movimento para interpretar impactos, amortecimento e desempenho em práticas cotidianas.",
+      "comentario": "A afirmação correta retoma o sentido central de aplicações em segurança e esportes.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -5431,22 +5431,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Aplica��es em seguran�a e esportes",
+      "subtopico": "Aplicações em segurança e esportes",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa incompat�vel com aplica��es em seguran�a e esportes.",
+      "enunciado": "Assinale a alternativa incompatível com aplicações em segurança e esportes.",
       "opcoes": [
-        "dizer que equipamentos de prote��o anulam a mudan�a de quantidade de movimento do corpo em todo impacto.",
-        "a rela��o entre tempo de contato, impulso e prote��o em situa��es reais.",
-        "seguran�a e esportes aplicam impulso e quantidade de movimento para controlar impactos e proteger corpos em movimento.",
-        "o uso dos conceitos de impulso e quantidade de movimento para interpretar impactos, amortecimento e desempenho em pr�ticas cotidianas."
+        "dizer que equipamentos de proteção anulam a mudança de quantidade de movimento do corpo em todo impacto.",
+        "a relação entre tempo de contato, impulso e proteção em situações reais.",
+        "segurança e esportes aplicam impulso e quantidade de movimento para controlar impactos e proteger corpos em movimento.",
+        "o uso dos conceitos de impulso e quantidade de movimento para interpretar impactos, amortecimento e desempenho em práticas cotidianas."
       ],
-      "correta": "dizer que equipamentos de prote��o anulam a mudan�a de quantidade de movimento do corpo em todo impacto.",
-      "comentario": "Dizer que equipamentos de prote��o anulam a mudan�a de quantidade de movimento do corpo em todo impacto n�o representa aplica��es em seguran�a e esportes, enquanto as demais alternativas se relacionam com esse subt�pico.",
+      "correta": "dizer que equipamentos de proteção anulam a mudança de quantidade de movimento do corpo em todo impacto.",
+      "comentario": "Dizer que equipamentos de proteção anulam a mudança de quantidade de movimento do corpo em todo impacto não representa aplicações em segurança e esportes, enquanto as demais alternativas se relacionam com esse subtópico.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -5470,22 +5470,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Aplica��es em seguran�a e esportes",
+      "subtopico": "Aplicações em segurança e esportes",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando se estuda aplica��es em seguran�a e esportes, o foco principal est� em:",
+      "enunciado": "Quando se estuda aplicações em segurança e esportes, o foco principal está em:",
       "opcoes": [
-        "a rela��o entre tempo de contato, impulso e prote��o em situa��es reais",
-        "a rela��o entre massa, velocidade e o estado de movimento de um corpo",
-        "o efeito temporal de uma for�a atuando sobre um corpo",
-        "a conex�o entre for�a atuando no tempo e mudan�a do estado din�mico do corpo"
+        "a relação entre tempo de contato, impulso e proteção em situações reais",
+        "a relação entre massa, velocidade e o estado de movimento de um corpo",
+        "o efeito temporal de uma força atuando sobre um corpo",
+        "a conexão entre força atuando no tempo e mudança do estado dinâmico do corpo"
       ],
-      "correta": "a rela��o entre tempo de contato, impulso e prote��o em situa��es reais",
-      "comentario": "Aplica��es em seguran�a e esportes volta a aten��o para a rela��o entre tempo de contato, impulso e prote��o em situa��es reais.",
+      "correta": "a relação entre tempo de contato, impulso e proteção em situações reais",
+      "comentario": "Aplicações em segurança e esportes volta a atenção para a relação entre tempo de contato, impulso e proteção em situações reais.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -5509,22 +5509,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Aplica��es em seguran�a e esportes",
+      "subtopico": "Aplicações em segurança e esportes",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferen�a entre aplica��es em seguran�a e esportes e impulso de uma for�a � que:",
+      "enunciado": "A principal diferença entre aplicações em segurança e esportes e impulso de uma força é que:",
       "opcoes": [
-        "aplica��es em seguran�a e esportes usa os conceitos de impulso em contextos pr�ticos, enquanto impulso de uma for�a apresenta a defini��o f�sica geral da grandeza",
-        "Aplica��es em seguran�a e esportes e Impulso de uma for�a s�o exatamente a mesma ideia f�sica em qualquer situa��o.",
-        "Impulso de uma for�a elimina a necessidade de observar aplica��es em seguran�a e esportes.",
-        "Aplica��es em seguran�a e esportes depende apenas de opini�o pessoal, sem rela��o com grandezas, modelos ou medidas."
+        "aplicações em segurança e esportes usa os conceitos de impulso em contextos práticos, enquanto impulso de uma força apresenta a definição física geral da grandeza",
+        "Aplicações em segurança e esportes e Impulso de uma força são exatamente a mesma ideia física em qualquer situação.",
+        "Impulso de uma força elimina a necessidade de observar aplicações em segurança e esportes.",
+        "Aplicações em segurança e esportes depende apenas de opinião pessoal, sem relação com grandezas, modelos ou medidas."
       ],
-      "correta": "aplica��es em seguran�a e esportes usa os conceitos de impulso em contextos pr�ticos, enquanto impulso de uma for�a apresenta a defini��o f�sica geral da grandeza",
-      "comentario": "A compara��o correta distingue os dois subt�picos sem confundir seus objetos de estudo.",
+      "correta": "aplicações em segurança e esportes usa os conceitos de impulso em contextos práticos, enquanto impulso de uma força apresenta a definição física geral da grandeza",
+      "comentario": "A comparação correta distingue os dois subtópicos sem confundir seus objetos de estudo.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -5548,22 +5548,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Aplica��es em seguran�a e esportes",
+      "subtopico": "Aplicações em segurança e esportes",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma observa��o experimental, registrou-se o seguinte caso: airbags, capacetes e colch�es esportivos aumentam o tempo de intera��o para reduzir a for�a m�dia em impactos A leitura f�sica mais adequada aponta para:",
+      "enunciado": "Em uma observação experimental, registrou-se o seguinte caso: airbags, capacetes e colcháes esportivos aumentam o tempo de interação para reduzir a força média em impactos A leitura física mais adequada aponta para:",
       "opcoes": [
-        "o caso mostra que a gest�o do tempo de contato altera a for�a m�dia envolvida em uma varia��o de movimento",
-        "Aplica��es em seguran�a e esportes mostra que as grandezas envolvidas n�o precisam ser relacionadas para interpretar o caso.",
-        "Aplica��es em seguran�a e esportes prova que a situa��o dispensa qualquer leitura f�sica ou quantitativa.",
-        "Aplica��es em seguran�a e esportes significa que o fen�meno n�o pode ser descrito por vari�veis f�sicas."
+        "o caso mostra que a gestáo do tempo de contato altera a força média envolvida em uma variação de movimento",
+        "Aplicações em segurança e esportes mostra que as grandezas envolvidas não precisam ser relacionadas para interpretar o caso.",
+        "Aplicações em segurança e esportes prova que a situação dispensa qualquer leitura física ou quantitativa.",
+        "Aplicações em segurança e esportes significa que o fenômeno não pode ser descrito por variáveis físicas."
       ],
-      "correta": "o caso mostra que a gest�o do tempo de contato altera a for�a m�dia envolvida em uma varia��o de movimento",
-      "comentario": "Aplica��es em seguran�a e esportes permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
+      "correta": "o caso mostra que a gestáo do tempo de contato altera a força média envolvida em uma variação de movimento",
+      "comentario": "Aplicações em segurança e esportes permite interpretar o caso com base no conceito correto e nas grandezas relevantes.",
       "tempoEstimado": 25,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -5587,22 +5587,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Aplica��es em seguran�a e esportes",
+      "subtopico": "Aplicações em segurança e esportes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situa��o abaixo evidencia aplica��es em seguran�a e esportes de maneira mais clara?",
+      "enunciado": "Qual situação abaixo evidencia aplicações em segurança e esportes de maneira mais clara?",
       "opcoes": [
-        "explicar o funcionamento de airbags, joelheiras e amortecedores em situa��es de impacto",
-        "comparar a quantidade de movimento de um carrinho leve r�pido e de um carrinho pesado lento",
-        "comparar o efeito de empurrar um carrinho com for�a pequena por muito tempo e grande por pouco tempo",
-        "explicar a mudan�a de movimento de uma bola ap�s colis�o ou chute usando impulso"
+        "explicar o funcionamento de airbags, joelheiras e amortecedores em situações de impacto",
+        "comparar a quantidade de movimento de um carrinho leve rápido e de um carrinho pesado lento",
+        "comparar o efeito de empurrar um carrinho com força pequena por muito tempo e grande por pouco tempo",
+        "explicar a mudança de movimento de uma bola após colisão ou chute usando impulso"
       ],
-      "correta": "explicar o funcionamento de airbags, joelheiras e amortecedores em situa��es de impacto",
-      "comentario": "A alternativa correta aproxima aplica��es em seguran�a e esportes de uma situa��o concreta.",
+      "correta": "explicar o funcionamento de airbags, joelheiras e amortecedores em situações de impacto",
+      "comentario": "A alternativa correta aproxima aplicações em segurança e esportes de uma situação concreta.",
       "tempoEstimado": 35,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -5626,22 +5626,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Aplica��es em seguran�a e esportes",
+      "subtopico": "Aplicações em segurança e esportes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"airbags, capacetes e colch�es esportivos aumentam o tempo de intera��o para reduzir a for�a m�dia em impactos\", qual conclus�o � mais adequada?",
+      "enunciado": "Ao analisar o caso \"airbags, capacetes e colcháes esportivos aumentam o tempo de interação para reduzir a força média em impactos\", qual conclusão é mais adequada?",
       "opcoes": [
-        "o caso mostra que a gest�o do tempo de contato altera a for�a m�dia envolvida em uma varia��o de movimento",
-        "A situa��o indica que aplica��es em seguran�a e esportes n�o possui rela��o com medidas, vari�veis ou interpreta��o f�sica.",
-        "A situa��o prova que aplica��es em seguran�a e esportes s� existe em exemplos te�ricos sem uso cotidiano.",
-        "A situa��o mostra que aplica��es em seguran�a e esportes torna desnecess�rio comparar dados e modelos."
+        "o caso mostra que a gestáo do tempo de contato altera a força média envolvida em uma variação de movimento",
+        "A situação indica que aplicações em segurança e esportes não possui relação com medidas, variáveis ou interpretação física.",
+        "A situação prova que aplicações em segurança e esportes só existe em exemplos teóricos sem uso cotidiano.",
+        "A situação mostra que aplicações em segurança e esportes torna desnecessário comparar dados e modelos."
       ],
-      "correta": "o caso mostra que a gest�o do tempo de contato altera a for�a m�dia envolvida em uma varia��o de movimento",
-      "comentario": "A conclus�o correta mant�m coer�ncia com os dados apresentados e com aplica��es em seguran�a e esportes.",
+      "correta": "o caso mostra que a gestáo do tempo de contato altera a força média envolvida em uma variação de movimento",
+      "comentario": "A conclusão correta mantém coerência com os dados apresentados e com aplicações em segurança e esportes.",
       "tempoEstimado": 35,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -5665,22 +5665,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Aplica��es em seguran�a e esportes",
+      "subtopico": "Aplicações em segurança e esportes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com aplica��es em seguran�a e esportes?",
+      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com aplicações em segurança e esportes?",
       "opcoes": [
-        "por que aumentar o tempo de contato pode reduzir a for�a m�dia em situa��es de impacto?",
+        "por que aumentar o tempo de contato pode reduzir a força média em situações de impacto?",
         "como massa e velocidade influenciam a quantidade de movimento de um corpo?",
-        "como o tempo de atua��o da for�a influencia o impulso produzido sobre um corpo?",
-        "como a varia��o da quantidade de movimento pode ser prevista a partir do impulso resultante?"
+        "como o tempo de atuação da força influencia o impulso produzido sobre um corpo?",
+        "como a variação da quantidade de movimento pode ser prevista a partir do impulso resultante?"
       ],
-      "correta": "por que aumentar o tempo de contato pode reduzir a for�a m�dia em situa��es de impacto?",
-      "comentario": "A pergunta correta investiga aplica��es em seguran�a e esportes de forma direta e coerente.",
+      "correta": "por que aumentar o tempo de contato pode reduzir a força média em situações de impacto?",
+      "comentario": "A pergunta correta investiga aplicações em segurança e esportes de forma direta e coerente.",
       "tempoEstimado": 35,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -5704,22 +5704,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Aplica��es em seguran�a e esportes",
+      "subtopico": "Aplicações em segurança e esportes",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a afirma��o que revela compreens�o inadequada de aplica��es em seguran�a e esportes.",
+      "enunciado": "Assinale a afirmação que revela compreensão inadequada de aplicações em segurança e esportes.",
       "opcoes": [
-        "O uso dos conceitos de impulso e quantidade de movimento para interpretar impactos, amortecimento e desempenho em pr�ticas cotidianas.",
-        "A rela��o entre tempo de contato, impulso e prote��o em situa��es reais.",
-        "Seguran�a e esportes aplicam impulso e quantidade de movimento para controlar impactos e proteger corpos em movimento.",
-        "Equipamentos de seguran�a funcionam porque eliminam completamente o impulso durante uma colis�o."
+        "O uso dos conceitos de impulso e quantidade de movimento para interpretar impactos, amortecimento e desempenho em práticas cotidianas.",
+        "A relação entre tempo de contato, impulso e proteção em situações reais.",
+        "Segurança e esportes aplicam impulso e quantidade de movimento para controlar impactos e proteger corpos em movimento.",
+        "Equipamentos de segurança funcionam porque eliminam completamente o impulso durante uma colisão."
       ],
-      "correta": "Equipamentos de seguran�a funcionam porque eliminam completamente o impulso durante uma colis�o.",
-      "comentario": "A alternativa incorreta expressa um equ�voco comum sobre aplica��es em seguran�a e esportes.",
+      "correta": "Equipamentos de segurança funcionam porque eliminam completamente o impulso durante uma colisão.",
+      "comentario": "A alternativa incorreta expressa um equívoco comum sobre aplicações em segurança e esportes.",
       "tempoEstimado": 45,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -5743,22 +5743,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Aplica��es em seguran�a e esportes",
+      "subtopico": "Aplicações em segurança e esportes",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre F�sica, um estudante afirmou: \"ao aumentar o tempo de intera��o, muitos dispositivos reduzem a for�a m�dia necess�ria para produzir a mesma varia��o de quantidade de movimento\". Qual avalia��o � mais consistente?",
+      "enunciado": "Em um debate sobre Física, um estudante afirmou: \"ao aumentar o tempo de interação, muitos dispositivos reduzem a força média necessária para produzir a mesma variação de quantidade de movimento\". Qual avaliação é mais consistente?",
       "opcoes": [
-        "A afirma��o est� correta, porque o impulso depende da for�a e do tempo, permitindo redistribuir a intera��o temporalmente",
-        "A afirma��o est� incorreta, porque aplica��es em seguran�a e esportes nunca pode ser usada na F�sica escolar.",
-        "A afirma��o � irrelevante, porque aplica��es em seguran�a e esportes n�o se relaciona com interpreta��o de fen�menos.",
-        "A afirma��o est� incorreta, porque aplica��es em seguran�a e esportes elimina a necessidade de medir e comparar grandezas."
+        "A afirmação está correta, porque o impulso depende da força e do tempo, permitindo redistribuir a interação temporalmente",
+        "A afirmação está incorreta, porque aplicações em segurança e esportes nunca pode ser usada na Física escolar.",
+        "A afirmação é irrelevante, porque aplicações em segurança e esportes não se relaciona com interpretação de fenômenos.",
+        "A afirmação está incorreta, porque aplicações em segurança e esportes elimina a necessidade de medir e comparar grandezas."
       ],
-      "correta": "A afirma��o est� correta, porque o impulso depende da for�a e do tempo, permitindo redistribuir a intera��o temporalmente",
-      "comentario": "A avalia��o correta recupera o n�cleo conceitual de aplica��es em seguran�a e esportes.",
+      "correta": "A afirmação está correta, porque o impulso depende da força e do tempo, permitindo redistribuir a interação temporalmente",
+      "comentario": "A avaliação correta recupera o núcleo conceitual de aplicações em segurança e esportes.",
       "tempoEstimado": 45,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -5782,22 +5782,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Aplica��es em seguran�a e esportes",
+      "subtopico": "Aplicações em segurança e esportes",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se aplica��es em seguran�a e esportes fosse ignorado(a) na an�lise de um problema f�sico, o resultado mais prov�vel seria:",
+      "enunciado": "Se aplicações em segurança e esportes fosse ignorado(a) na análise de um problema físico, o resultado mais provável seria:",
       "opcoes": [
-        "ficariam sem explica��o f�sica adequada estrat�gias de prote��o em ve�culos, esportes e quedas",
-        "o problema continuaria exatamente igual, porque aplica��es em seguran�a e esportes n�o interfere na an�lise f�sica",
-        "seria poss�vel resolver a situa��o sem observar nenhuma grandeza, rela��o ou modelo",
-        "a interpreta��o ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
+        "ficariam sem explicação física adequada estratégias de proteção em veóculos, esportes e quedas",
+        "o problema continuaria exatamente igual, porque aplicações em segurança e esportes não interfere na análise física",
+        "seria possível resolver a situação sem observar nenhuma grandeza, relação ou modelo",
+        "a interpretação ficaria automaticamente mais precisa, mesmo sem usar o conceito adequado"
       ],
-      "correta": "ficariam sem explica��o f�sica adequada estrat�gias de prote��o em ve�culos, esportes e quedas",
-      "comentario": "Ignorar aplica��es em seguran�a e esportes compromete a leitura f�sica e a qualidade da solu��o.",
+      "correta": "ficariam sem explicação física adequada estratégias de proteção em veóculos, esportes e quedas",
+      "comentario": "Ignorar aplicações em segurança e esportes compromete a leitura física e a qualidade da solução.",
       "tempoEstimado": 55,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -5821,22 +5821,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Aplica��es em seguran�a e esportes",
+      "subtopico": "Aplicações em segurança e esportes",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente aplica��es em seguran�a e esportes a uma situa��o escolar ou cotidiana?",
+      "enunciado": "Qual alternativa aplica corretamente aplicações em segurança e esportes a uma situação escolar ou cotidiana?",
       "opcoes": [
-        "explicar o funcionamento de airbags, joelheiras e amortecedores em situa��es de impacto",
-        "tratar dois corpos em colis�o sobre superf�cie de atrito desprez�vel como sistema isolado durante a intera��o",
+        "explicar o funcionamento de airbags, joelheiras e amortecedores em situações de impacto",
+        "tratar dois corpos em colisão sobre superfície de atrito desprezível como sistema isolado durante a interação",
         "analisar o salto de um atleta ou o movimento de duas massas ligadas usando a ideia de centro de massa",
-        "explicar o recuo de um patinador ao lan�ar um objeto ou separar-se de outro patinador"
+        "explicar o recuo de um patinador ao lançar um objeto ou separar-se de outro patinador"
       ],
-      "correta": "explicar o funcionamento de airbags, joelheiras e amortecedores em situa��es de impacto",
-      "comentario": "A aplica��o correta mostra como aplica��es em seguran�a e esportes aparece em contextos pr�ximos do cotidiano.",
+      "correta": "explicar o funcionamento de airbags, joelheiras e amortecedores em situações de impacto",
+      "comentario": "A aplicação correta mostra como aplicações em segurança e esportes aparece em contextos próximos do cotidiano.",
       "tempoEstimado": 55,
       "tags": [
         "impulso-e-quantidade-de-movimento",
@@ -5860,22 +5860,22 @@
       "serie": [
         2
       ],
-      "materia": "F�sica",
+      "materia": "Física",
       "topico": "Impulso e Quantidade de Movimento",
-      "subtopico": "Aplica��es em seguran�a e esportes",
+      "subtopico": "Aplicações em segurança e esportes",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual s�ntese final representa melhor aplica��es em seguran�a e esportes?",
+      "enunciado": "Qual síntese final representa melhor aplicações em segurança e esportes?",
       "opcoes": [
-        "seguran�a e esportes aplicam impulso e quantidade de movimento para controlar impactos e proteger corpos em movimento",
-        "quantidade de movimento � o produto vetorial entre massa e velocidade de um corpo",
-        "impulso mede o efeito de uma for�a atuando durante certo intervalo de tempo",
-        "o teorema do impulso relaciona impulso resultante e varia��o da quantidade de movimento"
+        "segurança e esportes aplicam impulso e quantidade de movimento para controlar impactos e proteger corpos em movimento",
+        "quantidade de movimento é o produto vetorial entre massa e velocidade de um corpo",
+        "impulso mede o efeito de uma força atuando durante certo intervalo de tempo",
+        "o teorema do impulso relaciona impulso resultante e variação da quantidade de movimento"
       ],
-      "correta": "seguran�a e esportes aplicam impulso e quantidade de movimento para controlar impactos e proteger corpos em movimento",
-      "comentario": "A s�ntese correta preserva a defini��o, o foco e o uso anal�tico de aplica��es em seguran�a e esportes.",
+      "correta": "segurança e esportes aplicam impulso e quantidade de movimento para controlar impactos e proteger corpos em movimento",
+      "comentario": "A síntese correta preserva a definição, o foco e o uso analítico de aplicações em segurança e esportes.",
       "tempoEstimado": 55,
       "tags": [
         "impulso-e-quantidade-de-movimento",

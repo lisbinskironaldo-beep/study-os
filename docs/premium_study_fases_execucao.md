@@ -1,4 +1,4 @@
-# STUDY OS - PREMIUM STUDY - FASES OFICIAIS DE EXECUÇÃO
+# STUDY OS - PREMIUM STUDY - FASES OFICIAIS DE EXECUCAO
 
 Documento operacional das fases.
 
@@ -7,579 +7,430 @@ Status:
 - detalhado
 - subordinado a `docs/premium_study_constituicao_produto.md`
 
-Atualizado em 2026-04-14.
+Atualizado em 2026-04-15.
 
 ---
 
-## 1. Missão deste documento
+## 1. Missao deste documento
 
-Transformar a constituição do produto em trabalho executável sem retrabalho.
+Transformar a constituicao do produto em trabalho executavel sem retrabalho.
 
 Regra:
 
 ```txt
 cada fase deve ser entregue completa
-com objetivos fechados, critérios de aceite e sem dependência oculta
+com objetivos fechados, criterios de aceite e sem dependencia oculta
 ```
 
 ---
 
-## 2. Ordem oficial de execução
+## 2. Escopo destas fases
 
-1. Fase 0 - Contrato e base estrutural
-2. Fase 1 - Casca do módulo premium
-3. Fase 2 - Intake do PDF e validação
-4. Fase 3 - Análise do material e plano em blocos
-5. Fase 4 - Estudo por bloco
-6. Fase 5 - Prática, flashcards e mini prova
-7. Fase 6 - Conta, assinatura e acesso
-8. Fase 7 - Hardening, performance e observabilidade
-9. Fase 8 - Crescimento controlado
+Este documento cobre agora apenas:
+- fluxo de produto
+- telas
+- UX
+- organizacao de modulo
+- comportamento do onboarding
+- estrutura das proximas telas
+
+As frentes abaixo ficam para depois:
+- IA externa final
+- billing
+- monetizacao
+- acesso premium real
+- estatisticas premium finais
+
+---
+
+## 3. Ordem oficial de execucao atualizada
+
+1. Fase 0 - Base oficial e congelamento de produto
+2. Fase 1 - Shell premium e onboarding guiado
+3. Fase 2 - Processamento e escolha do modo inicial
+4. Fase 3 - Bloco Aprender
+5. Fase 4 - Pratica do bloco
+6. Fase 5 - Mini prova do bloco
+7. Fase 6 - Trilha geral e retomada
+8. Fase 7 - Refino final de UX, responsividade e estabilizacao
+9. Fase 8 - Frentes futuras de IA, premium real e operacao
 
 Regra:
 
 ```txt
-não pular de fase por ansiedade de feature
-antes do fluxo principal estar sólido
+nao pular para a frente comercial ou de IA
+antes de o fluxo principal de estudo estar solido
 ```
 
 ---
 
-## 3. Fase 0 - Contrato e base estrutural
+## 4. Fase 0 - Base oficial e congelamento de produto
 
 ### Objetivo
 
-Congelar as decisões de produto, UX, IA, layout, acessos e arquitetura antes da implementação.
+Congelar as decisoes de produto, fluxo, layout e arquitetura antes das proximas implementacoes.
 
 ### Esta fase precisa deixar pronto
 
-- documentos oficiais publicados
-- estrutura de pastas definida
-- nome do módulo fechado
-- contratos de dados definidos
-- regras de acesso definidas
-- limites de PDF definidos
-- lista de telas aprovada
-- estados do usuário definidos
-- estratégia de IA de baixo custo definida
+- documento base oficial
+- fases atualizadas
+- mapa de telas aprovado
+- regras visuais aprovadas
+- sequencia de execucao definida
+- frentes adiadas explicitamente marcadas
 
 ### Entregas da Fase 0
 
 - `docs/premium_study_constituicao_produto.md`
 - `docs/premium_study_fases_execucao.md`
-- `docs/premium_study_operacao_ai_pagamentos.md`
 
-### Estrutura oficial de pastas aprovada
+### Criterios de aceite
 
-```txt
-premium-study/
-  bootstrap/
-  app/
-  router/
-  state/
-  storage/
-  services/
-    ai/
-    content/
-    pdf/
-    billing/
-    auth/
-  ui/
-    views/
-    components/
-    tokens/
-  styles/
-  workers/
-  assets/
-```
-
-### Contratos mínimos da Fase 0
-
-Entidades obrigatórias:
-
-- `PremiumUser`
-- `PremiumPlan`
-- `PremiumMaterial`
-- `PremiumTopic`
-- `PremiumStudyPlan`
-- `PremiumBlock`
-- `PremiumBlockProgress`
-- `PremiumQuestionSet`
-- `PremiumFlashcardDeck`
-- `PremiumMiniExam`
-- `PremiumAccessGrant`
-
-### Critérios de aceite da Fase 0
-
-- as decisões principais estão documentadas
-- a arquitetura está desacoplada
-- as fases seguintes podem ser executadas sem rediscutir fundamentos
-- qualquer novo programador consegue assumir a frente lendo os docs
-
-### Saída formal da Fase 0
-
-A Fase 0 só conta como concluída quando:
-
-- os documentos estiverem salvos no repositório
-- os três documentos apontarem uns para os outros
-- a Fase 1 puder ser executada sem reabrir produto, monetização ou IA
+- qualquer novo programador entende o que deve construir
+- a ordem das telas esta fechada
+- IA e pagamentos nao atrapalham a continuidade do produto
 
 ---
 
-## 4. Fase 1 - Casca do módulo premium
+## 5. Fase 1 - Shell premium e onboarding guiado
 
 ### Objetivo
 
-Criar o módulo novo no site, com carregamento próprio, layout base e navegação interna.
+Entregar o modulo novo, desacoplado, com onboarding de uma decisao por tela.
 
 ### Escopo
 
-- adicionar card `Estudo Premium` na home
-- criar `#premiumStudyModule`
+- card `Estudo Premium` na home
+- `#premiumStudyModule`
 - bootstrap lazy-load
-- CSS isolado
+- shell premium
 - router interno
-- estado interno
-- navegação entre telas vazias reais
+- state interno
+- storage local do ultimo estudo
+- onboarding visual responsivo
 
-### Tarefas obrigatórias
+### Telas obrigatorias da Fase 1
 
-- criar pasta `premium-study/`
-- criar ponto de entrada do módulo
-- registrar o módulo na home principal
-- montar o shell do premium
-- montar tokens visuais
-- montar componentes base:
-  - `PremiumShell`
-  - `PremiumStepHeader`
-  - `PremiumProgressBar`
-  - `PremiumCard`
-  - `PremiumActionBar`
-  - `PremiumStatPill`
-- montar views base:
-  - landing
-  - novo plano
-  - configuração da prova
-  - análise
-  - tópicos
-  - plano
-  - bloco
+1. Entrada
+2. Data da prova
+3. Meta de nota
+4. Tempo diario
 
-### Layout e direção visual obrigatórios
+### Regras obrigatorias
 
-- fundo escuro sofisticado
-- progresso no topo
-- painel de resumo do plano em construção
-- confirmação visual a cada escolha
-- nada infantil
+- uma decisao por tela
+- voltar no topo
+- fechar no topo
+- seta lateral para avancar nas telas guiadas
+- sem barra de botoes grandes embaixo onde a seta lateral existir
+- conteudo centralizado mesmo com seta lateral
+- sem acoplamento com `questions`
 
-### Mapa obrigatório de ações da Fase 1
+### Entregas da Fase 1
 
-Landing:
+- entrada com `Carregar PDF`
+- `Retomar estudo` quando houver estudo salvo
+- calendario navegavel
+- seletor circular de meta
+- seletores circulares de horas e minutos
+- salvamento automatico local
 
-- botão principal abre `novo plano`
-- botão secundário abre `ver exemplo`
-- botão terciário abre `planos`
+### Criterios de aceite
 
-Novo plano:
-
-- `Selecionar PDF`
-- `Usar exemplo`
-- `Voltar`
-- `Continuar`
-
-Configuração:
-
-- `Voltar`
-- `Analisar material`
-
-Análise:
-
-- `Cancelar`
-
-Plano:
-
-- `Começar pelo recomendado`
-- `Salvar`
-- `Regerar plano`
-
-### Critérios de aceite
-
-- o módulo abre sem carregar os outros sistemas
-- o shell premium é acessível pela home
-- a navegação entre telas existe
-- a barra de progresso reage
-- a base visual premium está definida
+- o usuario consegue atravessar todo o onboarding sem redundancia
+- as telas cabem nos principais formatos sem quebrar
+- o ultimo estudo fica salvo localmente
+- o visual ja comunica premium, direcao e individualizacao
 
 ---
 
-## 5. Fase 2 - Intake do PDF e validação
+## 6. Fase 2 - Processamento e escolha do modo inicial
 
 ### Objetivo
 
-Receber material válido e rejeitar cedo o que não serve.
+Conectar o fim do onboarding a uma entrega clara de proximo passo.
 
 ### Escopo
 
-- upload de PDF
-- validação de extensão
-- validação de tamanho
-- leitura de páginas
-- validação de texto selecionável
-- rejeição de PDF escaneado ou ruim
+- tela de processamento
+- modo inicial
+- resumo compacto do plano
+- comportamento de retorno correto
 
-### Tarefas obrigatórias
+### Telas obrigatorias
 
-- implementar drag-and-drop
-- implementar seletor de arquivo
-- extrair texto do PDF no cliente
-- medir densidade de texto por página
-- validar limite por plano
-- mostrar feedback de motivo de recusa
-- salvar metadados do material
+1. `Estamos montando o melhor caminho para voce`
+2. `Como voce quer comecar agora?`
 
-### Critérios de aceite
+### Regras obrigatorias
 
-- PDF textual válido entra
-- PDF ruim é recusado com clareza
-- páginas e tamanho são controlados
-- metadados do material ficam salvos
+Processamento:
+- barra central estilizada
+- frase personalizada com nota e data
+- subtarefas curtas
+- sem botoes embaixo
 
----
+Modo inicial:
+- `Aprender`, `Praticar` e `Prova`
+- tres opcoes lado a lado
+- resumo compacto do plano
+- `Voltar` no topo
+- resumo informativo, sem parecer botao
 
-## 6. Fase 3 - Análise do material e plano em blocos
+### Criterios de aceite
 
-### Objetivo
-
-Transformar o material em uma trilha útil.
-
-### Escopo
-
-- limpeza do texto
-- detecção de títulos
-- detecção de tópicos
-- revisão manual dos tópicos
-- priorização pelo prazo
-- geração do plano em blocos
-
-### Tarefas obrigatórias
-
-- criar `material-parser`
-- criar `plan-engine`
-- construir heurísticas de prioridade
-- gerar tópicos detectados
-- permitir editar, excluir e adicionar tópicos
-- montar blocos do plano
-- marcar bloco recomendado
-
-### Estrutura oficial de um bloco
-
-Campos mínimos:
-
-- `id`
-- `title`
-- `priority`
-- `estimatedMinutes`
-- `summaryMode`
-- `hotPoints`
-- `keyConcepts`
-- `questionStatus`
-- `flashcardStatus`
-- `miniExamStatus`
-
-### Critérios de aceite
-
-- o sistema transforma um PDF válido em tópicos
-- o usuário consegue revisar os tópicos
-- o plano gerado tem ordem compreensível
-- existe um bloco recomendado
+- o processamento conecta naturalmente ao modo inicial
+- o usuario entende o que fazer depois do plano montado
+- o resumo nao compete com a decisao principal
 
 ---
 
-## 7. Fase 4 - Estudo por bloco
+## 7. Fase 3 - Bloco Aprender
 
 ### Objetivo
 
-Entregar valor real mesmo antes da prática avançada.
+Entregar valor real de estudo antes de pratica avancada.
 
 ### Escopo
 
 - tela do bloco
 - aba `Aprender`
-- resumo principal
-- botão `Explicar melhor`
-- botão `Revisão rápida`
-- progresso do bloco
+- resumo focado
+- pontos quentes
+- conceitos-chave
+- armadilhas comuns
+- botoes de IA guiada
 
-### Tarefas obrigatórias
+### Telas obrigatorias
 
-- construir view do bloco
-- construir componente de resumo
-- construir componente de pontos quentes
-- construir componente de conceitos-chave
-- salvar progresso de leitura
-- destacar próximo passo
+1. `Bloco de estudo`
+2. `Resumo expandido` do bloco
 
-### Layout obrigatório do bloco
+### Acoes obrigatorias
 
-- cabeçalho com nome do bloco
-- justificativa curta do porquê ele está ali
-- barra de progresso do bloco
-- abas fixas no topo da área principal
-- ação principal clara em cada aba
+- `Explicar melhor`
+- `Revisao rapida`
+- `Ir para pratica`
 
-### Critérios de aceite
+### Regras obrigatorias
 
-- o aluno consegue estudar o bloco
-- o sistema salva progresso
-- `Explicar melhor` e `Revisão rápida` funcionam
+- foco em leitura orientada
+- pouco texto corrido
+- secoes curtas
+- contexto sempre ligado ao bloco atual
+
+### Criterios de aceite
+
+- o aluno entende o bloco sem depender da pratica
+- existe percepcao clara de progresso
+- o bloco parece pessoal e objetivo
 
 ---
 
-## 8. Fase 5 - Prática, flashcards e mini prova
+## 8. Fase 4 - Pratica do bloco
 
 ### Objetivo
 
-Completar o ciclo aprender -> praticar -> testar.
+Transformar o estudo em treino util.
 
 ### Escopo
 
-- aba `Praticar`
-- geração de 3 questões
-- decks de flashcards
-- aba `Prova`
-- mini prova do bloco
-- resultado com gabarito comentado
+- hub de pratica
+- questionario
+- verdadeiro ou falso
+- flashcards
 
-### Tarefas obrigatórias
+### Telas obrigatorias
 
-- criar `question-engine`
-- criar `flashcard-engine`
-- criar `mini-exam-engine`
-- construir renderer de questões
-- construir renderer de flashcards
-- construir tela de resultado
+1. `Pratica do bloco`
+2. `Questionario`
+3. `Verdadeiro ou falso`
+4. `Flashcards`
 
-### Formatos oficiais
+### Regras obrigatorias
 
-- questões: múltipla escolha e verdadeiro/falso
-- flashcards: frente e verso objetivos
-- mini prova: 8 a 12 questões
+Tela de entrada da pratica:
+- tres formatos como cards de acao
+- resumo pequeno do bloco
 
-### Critérios de aceite
+Questionario:
+- uma questao por vez
+- 4 alternativas
+- correcao curta
+- botao `Proxima`
 
-- o aluno pratica sem sair do bloco
-- o sistema registra desempenho
-- a mini prova funciona no desktop e no mobile
+Verdadeiro ou falso:
+- serie curta de afirmacoes
+- correcao clara
+
+Flashcards:
+- frente e verso
+- marcar `Entendi`
+- marcar `Revisar de novo`
+
+### Criterios de aceite
+
+- a pratica parece parte da trilha, nao modulo solto
+- os formatos sao curtos e objetivos
+- o usuario consegue sair da pratica com direcionamento
 
 ---
 
-## 9. Fase 6 - Conta, assinatura e acesso
+## 9. Fase 5 - Mini prova do bloco
 
 ### Objetivo
 
-Ligar valor percebido com liberação real do produto.
+Simular pressao e medir rendimento do bloco.
 
 ### Escopo
 
-- autenticação
-- status de plano
-- trial
-- assinatura
-- acesso premium
-- limites do plano grátis
+- mini prova
+- resultado
+- recomendacao de proximo passo
 
-### Tarefas obrigatórias
+### Telas obrigatorias
 
-- criar camada de auth
-- criar camada de access-control
-- criar página de planos
-- criar fluxo de checkout
-- receber webhook
-- ativar entitlements
-- refletir o status no frontend
+1. `Mini prova do bloco`
+2. `Resultado da mini prova`
 
-### Critérios de aceite
+### Regras obrigatorias
 
-- usuário grátis tem limites reais
-- usuário premium libera recursos reais
-- assinaturas e estados são consistentes
+Mini prova:
+- 8 a 12 questoes
+- tempo opcional
+- foco no bloco atual
+
+Resultado:
+- percentual de acerto
+- principal dificuldade
+- recomendacao:
+  - voltar para aprender
+  - praticar mais
+  - seguir para proximo bloco
+
+### Criterios de aceite
+
+- a mini prova e curta e util
+- o resultado aponta claramente o proximo passo
 
 ---
 
-## 10. Fase 7 - Hardening, performance e observabilidade
+## 10. Fase 6 - Trilha geral e retomada
 
 ### Objetivo
 
-Preparar o produto para beta com estabilidade.
+Dar ao aluno um lugar claro para continuar depois.
 
 ### Escopo
 
-- cache
-- reuso de gerações
-- telemetria
-- tratamento de erro
-- limites de uso
-- limpeza de dados temporários
+- trilha geral
+- lista de blocos
+- tela de retomada
+- nome editavel do estudo
 
-### Tarefas obrigatórias
+### Telas obrigatorias
 
-- instrumentar eventos essenciais
-- criar logs mínimos
-- implementar rate limits
-- implementar cache de respostas por bloco
-- medir tempo de tela e custo de geração
-- revisar render no mobile
+1. `Sua trilha`
+2. `Retomar estudo`
 
-### Critérios de aceite
+### Regras obrigatorias
 
-- o fluxo não pesa
-- custos ficam rastreáveis
-- problemas viram eventos observáveis
+Trilha geral:
+- lista dos blocos gerados
+- nome
+- tempo estimado
+- prioridade
+- status
+- acao `Continuar`
+
+Retomada:
+- mostrar ultimo estudo salvo
+- permitir retomar rapidamente
+- permitir renomear depois
+
+### Criterios de aceite
+
+- o usuario consegue sair e voltar sem se perder
+- a trilha geral funciona como centro de continuidade
 
 ---
 
-## 11. Fase 8 - Crescimento controlado
+## 11. Fase 7 - Refino final de UX, responsividade e estabilizacao
 
 ### Objetivo
 
-Expandir sem reabrir a base.
+Polir o fluxo inteiro antes das frentes futuras.
 
-### Escopo permitido
+### Escopo
 
-- materiais maiores
-- mais formatos de questões
-- melhor motor de recomendação
-- OCR seletivo
-- tutor contextual futuro
+- alinhamento visual entre telas
+- responsividade final
+- ajuste de pesos visuais
+- confirmacao de que informacao nao parece acao
+- restore points e documentacao final da fase
 
-### Escopo proibido antes de hora
+### Checklist obrigatorio
 
-- podcast
-- chat livre
-- várias features sociais sem base de retenção
+- nenhuma tela importante com espacamento morto grande
+- nenhum controle sobreposto
+- nenhuma etapa com rolagem indevida
+- setas laterais sem deslocar visualmente o conteudo
+- desktop, tablet e mobile com leitura coerente
 
----
+### Criterios de aceite
 
-## 12. Padrões oficiais de layout
-
-### Estrutura
-
-Toda tela deve nascer com:
-
-- cabeçalho de etapa
-- barra de progresso
-- área principal
-- área de apoio resumida
-- ação principal
-
-### Componentes base
-
-Obrigatórios:
-
-- `step-header`
-- `progress-bar`
-- `context-card`
-- `primary-cta`
-- `secondary-cta`
-- `status-pill`
-- `plan-summary-panel`
-
-### Tokens
-
-Obrigatórios:
-
-- cor
-- espaço
-- raio
-- sombra
-- tipografia
-- duração de animação
-- opacidade
+- fluxo inteiro consistente
+- visual premium estavel
+- onboarding e pos-onboarding claros
 
 ---
 
-## 13. Padrões oficiais de responsividade
+## 12. Fase 8 - Frentes futuras de IA, premium real e operacao
 
-### Regra geral
+### Esta fase fica adiada por enquanto
 
-Se a largura diminuir:
+Quando for retomada, cobrira:
+- IA externa final
+- geracao real de conteudo
+- billing
+- acesso premium real
+- estatisticas premium
+- monetizacao e paywall
 
-- o texto precisa reduzir com elegância
-- os blocos precisam reduzir juntos
-- o CTA não pode sumir
-- os cards não podem quebrar visualmente
-
-### Obrigações
-
-- sem largura fixa de card como regra principal
-- sem títulos que escapem do container
-- sem barra superior inutilizável no celular
-- sem bloco lateral obrigatório em viewport pequena
-
-### App e webview
-
-Deve funcionar bem em:
-
-- toque
-- teclado virtual
-- scroll vertical
-- safe area
-
----
-
-## 14. Padrões oficiais de arquitetura
-
-- `ui` só renderiza e emite eventos
-- `state` concentra estado local
-- `services` executam regras
-- `storage` persiste
-- `router` troca telas
-- `workers` processam peso
-
-Proibições:
-
-- service chamando DOM
-- view falando direto com IA
-- storage decidindo fluxo de UX
-- CSS global mandando no premium
-- `app.js` virando arquivo gigante
-
----
-
-## 15. Definição de pronto por fase
-
-Cada fase só pode ser considerada pronta quando:
-
-- objetivo da fase foi fechado
-- critérios de aceite passaram
-- mobile não quebra
-- ortografia foi revisada
-- não surgiu acoplamento impróprio
-- a fase seguinte consegue começar sem remendo temporário
-
----
-
-## 16. Como executar quando o usuário pedir uma fase
-
-Regra oficial:
+### Regra
 
 ```txt
-ao receber "execute a fase X"
-entregar a fase inteira com todos os objetivos concluidos
-repensando cada objetivo internamente sem interromper para pedir confirmacao
-salvo quando surgir risco real de produto, custo ou integracao externa
+esta fase nao entra enquanto as fases 1 a 7 nao estiverem fechadas e estaveis
 ```
 
 ---
 
-## 17. Checklist final da Fase 0
+## 13. Sequencia operacional recomendada a partir de agora
 
-- [x] constituição do produto documentada
-- [x] fases oficiais documentadas
-- [x] frente operacional documentada
-- [x] decisão de sem chat livre congelada
-- [x] direção visual premium congelada
-- [x] regras de mobile e leveza congeladas
-- [x] estrutura desacoplada congelada
-- [x] Fase 1 pronta para execução
+Quando a execucao voltar ao codigo, a ordem correta e:
+
+1. consolidar `Processamento`
+2. consolidar `Modo inicial`
+3. construir `Aprender`
+4. construir `Pratica`
+5. construir `Mini prova`
+6. construir `Trilha geral`
+7. construir `Retomada`
+8. fazer polimento geral
+
+---
+
+## 14. Regra de entrega por fase
+
+Cada fase deve:
+- nascer desacoplada
+- ter criterio de aceite claro
+- poder ser restaurada por snapshot
+- nao empurrar problema de UX para a fase seguinte
+
+Regra:
+
+```txt
+nao emendar gambiarra para "chegar logo" na proxima fase
+```
+
