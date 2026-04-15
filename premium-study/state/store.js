@@ -395,6 +395,383 @@
         ];
     }
 
+    function buildHighlightedParts(text, highlights) {
+        const content = String(text || "");
+        const terms = Array.isArray(highlights)
+            ? highlights.filter(Boolean)
+            : [];
+
+        if (!content || terms.length === 0) {
+            return [
+                {
+                    text: content,
+                    highlight: false
+                }
+            ];
+        }
+
+        const escapedTerms = terms
+            .map((term) => term.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"))
+            .filter(Boolean);
+
+        if (escapedTerms.length === 0) {
+            return [
+                {
+                    text: content,
+                    highlight: false
+                }
+            ];
+        }
+
+        const regex = new RegExp(`(${escapedTerms.join("|")})`, "gi");
+        const parts = [];
+        let lastIndex = 0;
+        let match;
+
+        while ((match = regex.exec(content))) {
+            if (match.index > lastIndex) {
+                parts.push({
+                    text: content.slice(lastIndex, match.index),
+                    highlight: false
+                });
+            }
+
+            parts.push({
+                text: match[0],
+                highlight: true
+            });
+            lastIndex = match.index + match[0].length;
+        }
+
+        if (lastIndex < content.length) {
+            parts.push({
+                text: content.slice(lastIndex),
+                highlight: false
+            });
+        }
+
+        return parts.length > 0
+            ? parts
+            : [
+                {
+                    text: content,
+                    highlight: false
+                }
+            ];
+    }
+
+    function buildHighlightedDocument(state, block) {
+        const sourceBlock = block || state.blocks[0];
+        const materialLabel = state.studyTitle || state.materialName || "Documento";
+        const emphasisTerms = [
+            sourceBlock.title,
+            ...(sourceBlock.topics || []).slice(0, 3),
+            ...(sourceBlock.learn.keyConcepts || []).slice(0, 3)
+        ].filter(Boolean);
+        const learnSections = Array.isArray(sourceBlock.learn.sections)
+            ? sourceBlock.learn.sections
+            : [];
+        const sections = [
+            {
+                label: "Visao geral",
+                title: sourceBlock.title,
+                paragraphs: [
+                    buildHighlightedParts(sourceBlock.learn.summary, emphasisTerms),
+                    buildHighlightedParts(sourceBlock.learn.intro || sourceBlock.subtitle || "", emphasisTerms)
+                ].filter((parts) => parts.some((part) => part.text))
+            },
+            ...learnSections.map((section) => ({
+                label: section.label,
+                title: section.title,
+                paragraphs: section.paragraphs.map((paragraph) =>
+                    buildHighlightedParts(paragraph, emphasisTerms)
+                )
+            }))
+        ];
+
+        return {
+            id: `highlight-${sourceBlock.id}`,
+            sourceBlockId: sourceBlock.id,
+            title: `${materialLabel} - texto com marcador`,
+            subtitle: "Documento original preservado, com destaque nas partes mais importantes.",
+            ctaLabel: "Extrair resumo para documento novo",
+            sections,
+            extractedSummary: {
+                title: `${sourceBlock.title} - resumo extraido`,
+                lead: sourceBlock.learn.summary,
+                bullets: [
+                    ...(sourceBlock.learn.keyConcepts || []).slice(0, 4),
+                    ...(sourceBlock.learn.hotPoints || []).slice(0, 2)
+                ].filter(Boolean),
+                sourceTitle: materialLabel,
+                blockTitle: sourceBlock.title
+            }
+        };
+    }
+
+    function createSavedSummaryRecord(documentData, state) {
+        const summary = documentData.extractedSummary || {};
+        return {
+            id: `saved-summary-${Date.now()}`,
+            title: summary.title || "Resumo salvo",
+            lead: summary.lead || "",
+            bullets: Array.isArray(summary.bullets)
+                ? summary.bullets
+                : [],
+            sourceTitle: summary.sourceTitle || state.studyTitle || state.materialName || "Documento",
+            blockTitle: summary.blockTitle || "",
+            createdAt: new Date().toISOString()
+        };
+    }
+
+    function createStudyLibraryId() {
+        return `library-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
+    }
+
+    function buildDocumentSections(config) {
+        return [
+            {
+                id: "summary",
+                label: "Resumo abrangente",
+                title: config.summaryTitle,
+                paragraphs: config.summaryParagraphs || []
+            },
+            {
+                id: "concepts",
+                label: "Conceitos centrais",
+                title: config.conceptsTitle,
+                items: config.conceptsItems || []
+            },
+            {
+                id: "rules",
+                label: "Regras e excecoes pontuais",
+                title: config.rulesTitle,
+                items: config.rulesItems || []
+            },
+            {
+                id: "pitfalls",
+                label: "Pegadinhas",
+                title: config.pitfallsTitle,
+                items: config.pitfallsItems || []
+            },
+            {
+                id: "comparisons",
+                label: "Comparacoes importantes",
+                title: config.comparisonsTitle,
+                items: config.comparisonsItems || []
+            },
+            {
+                id: "criteria",
+                label: "Criterios e definicoes chave",
+                title: config.criteriaTitle,
+                items: config.criteriaItems || []
+            }
+        ];
+    }
+
+    function enrichLearnContent(block, materialLabel) {
+        if (block.id === "block-1") {
+            return {
+                ...block,
+                learn: {
+                    ...block.learn,
+                    summary: `Este bloco abre o estudo pelo nucleo de ${materialLabel}, organizando os termos centrais, as definicoes mais importantes e as relacoes que sustentam o restante do conteudo.`,
+                    intro: "A proposta aqui e construir entendimento antes de acelerar. Quando o nucleo do assunto fica claro, o material deixa de parecer uma lista de informacoes soltas e passa a ter ordem, hierarquia e direcao.",
+                    documentSections: buildDocumentSections({
+                        summaryTitle: "O mapa que organiza a leitura inteira",
+                        summaryParagraphs: [
+                            `O nucleo principal de ${materialLabel} precisa ser lido como a espinha dorsal do tema. A funcao deste assunto nao e despejar informacao, mas criar ordem: primeiro voce entende o que define o tema, depois enxerga como cada parte se conecta e, so entao, diferencia exemplo, aplicacao e excecao.`,
+                            "Quando esse mapa fica claro, a leitura acelera naturalmente. O estudante para de decorar frases soltas e passa a reconhecer criterio, estrutura e linguagem recorrente. Isso deixa o conteudo mais leve, reduz a dispersao e melhora muito a entrada nas questoes.",
+                            "Em prova, esse bloco vale porque ele sustenta todos os demais. Se a base estiver firme, voce identifica com mais seguranca o que o enunciado realmente quer cobrar e evita respostas por semelhanca superficial."
+                        ],
+                        conceptsTitle: "As ideias que sustentam o restante do material",
+                        conceptsItems: [
+                            "Definir o conceito central antes de aceitar exemplos como se fossem a propria definicao.",
+                            "Reconhecer qual criterio de classificacao organiza o assunto e separa as partes principais.",
+                            "Entender a estrutura basica do tema para nao tratar elementos relacionados como se fossem equivalentes.",
+                            "Ligar cada termo importante a sua funcao, e nao apenas ao nome que aparece no PDF."
+                        ],
+                        rulesTitle: "O que funciona como regra e onde o assunto costuma abrir excecao",
+                        rulesItems: [
+                            "A regra aqui e partir da definicao e do criterio antes de avancar para detalhe ou aplicacao.",
+                            "Excecoes pontuais aparecem quando um caso parece pertencer ao conceito, mas altera sua funcao ou limite.",
+                            "Sempre que a leitura fugir da base e entrar num caso especifico, vale verificar se aquilo e exemplo ou excecao real.",
+                            "Se a excecao depende de condicao, essa condicao precisa ficar colada a ela na revisao."
+                        ],
+                        pitfallsTitle: "Onde a banca pode confundir quem leu sem estruturar",
+                        pitfallsItems: [
+                            "Trocar definicao por exemplo pratico porque os dois parecem falar da mesma coisa.",
+                            "Responder pelo tema geral da alternativa e ignorar a palavra que muda o criterio.",
+                            "Memorizar nomes isolados sem entender qual relacao existe entre eles.",
+                            "Assumir que todo caso recorrente representa a regra principal."
+                        ],
+                        comparisonsTitle: "Comparacoes que deixam o criterio mais nitido",
+                        comparisonsItems: [
+                            "Conceito central versus aplicacao: um explica o que o tema e, o outro mostra como ele aparece.",
+                            "Regra versus excecao: a regra organiza, a excecao limita ou desvia esse alcance.",
+                            "Criterio versus exemplo: criterio serve para decidir; exemplo serve para ilustrar.",
+                            "Leitura estrutural versus decoracao: a primeira sustenta acerto, a segunda quebra quando o enunciado muda."
+                        ],
+                        criteriaTitle: "O que precisa virar referencia rapida na revisao",
+                        criteriaItems: [
+                            "Definicao-chave: frase curta que explica o que realmente torna o assunto o que ele e.",
+                            "Criterio de classificacao: ponto que diferencia itens parecidos e organiza a leitura.",
+                            "Pergunta-guia: o que define este conceito e com qual parte do tema ele se conecta.",
+                            "Sinal de dominio: conseguir explicar a base sem depender de um unico exemplo."
+                        ]
+                    }),
+                    explainBetter: {
+                        title: "Explicacao mais didatica deste assunto",
+                        paragraphs: [
+                            `Pense este assunto como a fundacao de ${materialLabel}. Se a fundacao estiver clara, o resto do conteudo deixa de parecer um monte de blocos separados e passa a funcionar como uma construcao coerente.`,
+                            "O jeito mais seguro de estudar aqui e perguntar o tempo todo: isso e definicao, criterio, exemplo ou excecao? Essa pergunta simples evita quase todos os erros de leitura superficial.",
+                            "Quando voce consegue responder com suas proprias palavras qual e a ideia central e por que ela organiza o tema, o assunto ja saiu do campo da decoracao e entrou no campo do entendimento."
+                        ]
+                    },
+                    reviewInFivePoints: [
+                        "Descubra primeiro qual conceito organiza o assunto inteiro.",
+                        "Separe definicao, criterio, exemplo e excecao antes de revisar detalhes.",
+                        "Nao aceite duas ideias parecidas como equivalentes sem comparar a funcao de cada uma.",
+                        "Volte ao criterio sempre que uma alternativa parecer familiar demais.",
+                        "Considere o bloco dominado quando conseguir explicar a base sem depender do PDF."
+                    ],
+                    sections: [
+                        {
+                            label: "Panorama",
+                            title: "O que precisa ficar claro logo de inicio",
+                            paragraphs: [
+                                `O primeiro passo em ${materialLabel} e identificar quais ideias realmente organizam o tema. Em vez de entrar por detalhes, exemplos ou excecoes, o foco deve estar na base que sustenta o assunto e reaparece ao longo da leitura.`,
+                                "Quando essa base fica firme, cada novo trecho encontra lugar dentro do mapa mental. Isso reduz dispersao, acelera a compreensao e evita a sensacao de estudar sem eixo."
+                            ]
+                        },
+                        {
+                            label: "Leitura guiada",
+                            title: "Como transformar resumo em entendimento real",
+                            paragraphs: [
+                                "Leia procurando relacoes, nao frases soltas. Sempre que surgir um termo importante, pergunte qual criterio ele representa, com o que ele se conecta e que erro pode acontecer se ele for confundido com exemplo ou aplicacao.",
+                                "Essa postura melhora a retencao porque o cerebro guarda estrutura. Em prova, isso vale muito mais do que decorar definicoes isoladas sem entender por que elas importam."
+                            ]
+                        },
+                        {
+                            label: "Resultado",
+                            title: "O que este assunto precisa entregar para voce",
+                            paragraphs: [
+                                "O ganho principal aqui e criar seguranca conceitual. Quando a base esta firme, voce reconhece o que o enunciado realmente esta cobrando e evita cair em alternativas que parecem familiares, mas trocam criterio por exemplo.",
+                                "Se ao final deste bloco voce conseguir explicar o assunto com suas proprias palavras e mostrar a diferenca entre regra, excecao e aplicacao, o aprendizado ja saiu do nivel superficial."
+                            ]
+                        }
+                    ]
+                }
+            };
+        }
+
+        if (block.id === "block-2") {
+            return {
+                ...block,
+                learn: {
+                    ...block.learn,
+                    summary: `Este bloco concentra o que mais costuma gerar erro em ${materialLabel}: comparacoes, excecoes e formulacoes parecidas que separam leitura superficial de acerto consistente.`,
+                    intro: "Depois que a base fica entendida, o que mais faz diferenca no desempenho e o refinamento do criterio. Este bloco existe para treinar o olhar nas pequenas mudancas de sentido que a banca usa para separar dominio de reconhecimento superficial.",
+                    documentSections: buildDocumentSections({
+                        summaryTitle: "O ajuste fino que transforma leitura em acerto",
+                        summaryParagraphs: [
+                            `Depois de entender a base de ${materialLabel}, o maior salto de resultado vem do refinamento. Este assunto existe para treinar o olhar nas comparacoes, nas palavras de contraste e nas excecoes que a banca usa para separar quem domina o criterio de quem apenas reconhece o tema.`,
+                            "Aqui o estudo precisa ficar mais preciso. A leitura deixa de perguntar apenas do que o texto esta falando e passa a perguntar o que mudou, qual limite foi inserido e qual palavra alterou o sentido do enunciado.",
+                            "Quando esse bloco fica bem resolvido, o aluno passa a errar menos por impulso e ganha mais controle em alternativas muito parecidas, especialmente nas questoes em que a diferenca cabe em um detalhe."
+                        ],
+                        conceptsTitle: "As ideias que precisam virar ferramenta de prova",
+                        conceptsItems: [
+                            "Comparacao direta entre itens proximos para enxergar onde o criterio muda.",
+                            "Leitura da palavra-chave que limita, confirma ou invalida o sentido do enunciado.",
+                            "Separacao limpa entre regra principal e excecao recorrente.",
+                            "Reconhecimento das formulacoes que parecem equivalentes, mas nao produzem o mesmo efeito."
+                        ],
+                        rulesTitle: "Regras de leitura e excecoes que precisam ficar sob controle",
+                        rulesItems: [
+                            "Regra principal: comparar antes de decidir quando duas alternativas parecem irmas.",
+                            "Excecao pontual: um termo de contraste pode inverter o valor inteiro da afirmacao.",
+                            "Sempre que houver limite, condicao ou ressalva, esse elemento precisa ser lido como parte da resposta, nao como detalhe lateral.",
+                            "A excecao nunca deve ser memorizada colada na regra; ela precisa aparecer como desvio controlado."
+                        ],
+                        pitfallsTitle: "Erros tipicos de quem conhece o tema, mas nao o criterio",
+                        pitfallsItems: [
+                            "Confiar na memoria visual do PDF e ignorar a mudanca de uma palavra decisiva.",
+                            "Marcar a alternativa pelo assunto geral, sem checar o limite da afirmacao.",
+                            "Misturar regra e excecao porque ambas parecem familiares.",
+                            "Responder por semelhanca superficial em vez de comparar ponto por ponto."
+                        ],
+                        comparisonsTitle: "Contrastes que precisam aparecer automaticamente",
+                        comparisonsItems: [
+                            "Regra versus excecao: uma organiza o caso comum, a outra limita o alcance.",
+                            "Palavra neutra versus palavra de contraste: a segunda costuma decidir a questao.",
+                            "Enunciado correto versus quase correto: a diferenca geralmente esta no criterio, nao no tema.",
+                            "Reconhecimento superficial versus leitura analitica: o primeiro acelera erro, a segunda sustenta acerto."
+                        ],
+                        criteriaTitle: "Definicoes curtas que protegem voce da pegadinha",
+                        criteriaItems: [
+                            "Palavra-chave: termo que confirma, restringe ou desloca o sentido da alternativa.",
+                            "Criterio de contraste: ponto exato que separa duas formulacoes parecidas.",
+                            "Excecao frequente: caso que so vale quando a condicao aparece junto.",
+                            "Sinal de dominio: conseguir justificar por que uma opcao e quase certa, mas ainda errada."
+                        ]
+                    }),
+                    explainBetter: {
+                        title: "Leitura mais explicada deste assunto",
+                        paragraphs: [
+                            "Este bloco nao pede mais volume de leitura, e sim mais precisao. A pergunta principal deixa de ser 'eu ja vi isso?' e vira 'o que exatamente mudou aqui?'.",
+                            "Quase sempre a banca esconde a diferenca em um termo pequeno: uma restricao, uma ressalva, um conectivo ou uma palavra que parece inofensiva. Por isso a comparacao precisa ser ativa e deliberada.",
+                            "Quando voce passa a ler procurando limite, contraste e excecao, o assunto deixa de ser escorregadio e vira um bloco tecnicamente controlavel."
+                        ]
+                    },
+                    reviewInFivePoints: [
+                        "Compare alternativas muito parecidas antes de confiar na primeira impressao.",
+                        "Procure a palavra que limita, inverte ou condiciona o enunciado.",
+                        "Nao memorize excecao junto da regra: destaque o limite que a torna especial.",
+                        "Desconfie de respostas que parecem certas apenas pelo tema geral.",
+                        "Considere o bloco dominado quando voce consegue explicar por que a quase correta ainda esta errada."
+                    ],
+                    sections: [
+                        {
+                            label: "Comparacao",
+                            title: "Onde a maioria dos erros nasce",
+                            paragraphs: [
+                                "Grande parte dos erros nesta fase nao vem de desconhecer o assunto, mas de ler duas formulacoes parecidas como se fossem equivalentes. E justamente aqui que a prova separa quem so reconhece o tema de quem domina o criterio.",
+                                "Por isso, a comparacao precisa ser ativa. Em vez de perguntar apenas se voce ja viu aquilo, o caminho melhor e perguntar o que muda, qual palavra limita o sentido e onde esta a diferenca que altera a resposta."
+                            ]
+                        },
+                        {
+                            label: "Excecao",
+                            title: "Como revisar limites sem embaralhar a regra",
+                            paragraphs: [
+                                "Excecao nao deve ser estudada misturada com a regra, porque isso enfraquece as duas. A regra precisa ficar limpa, e a excecao precisa aparecer como desvio controlado, com sinal claro do que a torna diferente.",
+                                "Esse cuidado reduz erro por automatismo, que acontece quando o aluno reconhece o tema geral da alternativa, mas nao percebe a pequena mudanca que invalida a resposta."
+                            ]
+                        },
+                        {
+                            label: "Aplicacao",
+                            title: "Como transformar este bloco em acerto de prova",
+                            paragraphs: [
+                                "A estrategia mais forte aqui e revisar por contraste: regra versus excecao, definicao versus exemplo, termo central versus palavra que desvia o sentido. Isso deixa a leitura mais afiada para a linguagem da banca.",
+                                "Se voce conseguir localizar rapidamente a palavra que confirma, limita ou invalida o enunciado, este bloco ja cumpriu sua funcao."
+                            ]
+                        }
+                    ]
+                }
+            };
+        }
+
+        return block;
+    }
+
+    function buildRichBlocks(studyTitle) {
+        const materialLabel =
+            studyTitle || "seu material";
+
+        return buildBlocks(studyTitle).map((block) =>
+            enrichLearnContent(block, materialLabel)
+        );
+    }
+
     function createQuizSession(items) {
         return {
             index: 0,
@@ -485,12 +862,13 @@
 
     function createState() {
         const today = new Date();
-        const blocks = buildBlocks("");
+        const blocks = buildRichBlocks("");
         return {
             step: "entry",
             previousStep: null,
             returnStep: "mode-select",
             accessTier: "free",
+            studyLibraryId: createStudyLibraryId(),
             studyTitle: "",
             materialName: "",
             materialSizeLabel: "",
@@ -507,6 +885,13 @@
             sessions: buildSessions(blocks),
             activeBlockId: blocks[0].id,
             blockTab: "aprender",
+            blockFullScreen: true,
+            blockAssistMode: "",
+            highlightedDocument: null,
+            savedSummaries: [],
+            activeSavedSummaryId: "",
+            studyLibrary: [],
+            activeLibraryItemId: "",
             latestLocalStudy: null,
             savedDraftId: "",
             savedAt: "",
@@ -560,16 +945,19 @@
                 : "PDF textual";
 
             const studyTitle = buildStudyTitle(fileLike.name || "material.pdf");
-            const blocks = buildBlocks(studyTitle);
+            const blocks = buildRichBlocks(studyTitle);
 
             this.state = {
                 ...this.state,
+                studyLibraryId: createStudyLibraryId(),
                 materialName: fileLike.name || "material.pdf",
                 materialSizeLabel: sizeLabel,
                 studyTitle,
                 blocks,
                 sessions: buildSessions(blocks),
                 activeBlockId: blocks[0].id,
+                blockFullScreen: true,
+                blockAssistMode: "",
                 progressLabel: "Material recebido. Agora vamos ajustar tudo ao seu prazo e a sua meta."
             };
 
@@ -663,6 +1051,28 @@
             return this.state;
         },
 
+        setBlockFullScreen(value) {
+            this.state = {
+                ...this.state,
+                blockFullScreen: Boolean(value)
+            };
+
+            return this.state;
+        },
+
+        setBlockAssistMode(mode) {
+            const nextMode = mode === this.state.blockAssistMode
+                ? ""
+                : mode;
+
+            this.state = {
+                ...this.state,
+                blockAssistMode: nextMode
+            };
+
+            return this.state;
+        },
+
         selectBlock(blockId) {
             this.state = {
                 ...this.state,
@@ -670,6 +1080,108 @@
             };
 
             return this.state;
+        },
+
+        setStudyLibrary(items) {
+            const nextItems = Array.isArray(items)
+                ? items
+                : [];
+
+            this.state = {
+                ...this.state,
+                studyLibrary: nextItems,
+                activeLibraryItemId:
+                    this.state.activeLibraryItemId && nextItems.some((item) => item.id === this.state.activeLibraryItemId)
+                        ? this.state.activeLibraryItemId
+                        : nextItems[0]?.id || ""
+            };
+
+            return this.state;
+        },
+
+        setActiveLibraryItem(itemId) {
+            this.state = {
+                ...this.state,
+                activeLibraryItemId: itemId
+            };
+
+            return this.state;
+        },
+
+        getActiveLibraryItem() {
+            return this.state.studyLibrary.find((item) => item.id === this.state.activeLibraryItemId) || this.state.studyLibrary[0] || null;
+        },
+
+        openHighlightDocument(blockId) {
+            const block = blockId
+                ? this.getBlockById(blockId)
+                : this.getActiveBlock();
+            const highlightedDocument =
+                buildHighlightedDocument(this.state, block);
+
+            this.state = {
+                ...this.state,
+                highlightedDocument,
+                activeBlockId: block ? block.id : this.state.activeBlockId,
+                progressLabel: "Documento marcado preparado. Agora voce pode exportar o texto grifado ou so os destaques em PDF."
+            };
+
+            return this.state;
+        },
+
+        setSavedSummaries(items) {
+            const summaries = Array.isArray(items)
+                ? items
+                : [];
+
+            this.state = {
+                ...this.state,
+                savedSummaries: summaries,
+                activeSavedSummaryId:
+                    this.state.activeSavedSummaryId && summaries.some((item) => item.id === this.state.activeSavedSummaryId)
+                        ? this.state.activeSavedSummaryId
+                        : summaries[0]?.id || ""
+            };
+
+            return this.state;
+        },
+
+        saveCurrentHighlightedSummary() {
+            if (!this.state.highlightedDocument) {
+                return null;
+            }
+
+            const nextRecord =
+                createSavedSummaryRecord(
+                    this.state.highlightedDocument,
+                    this.state
+                );
+            const savedSummaries = [
+                nextRecord,
+                ...this.state.savedSummaries
+            ];
+
+            this.state = {
+                ...this.state,
+                savedSummaries,
+                activeSavedSummaryId: nextRecord.id,
+                progressLabel: "Resumo extraido e salvo para consulta futura no premium."
+            };
+
+            return nextRecord;
+        },
+
+        setActiveSavedSummary(summaryId) {
+            this.state = {
+                ...this.state,
+                activeSavedSummaryId: summaryId
+            };
+
+            return this.state;
+        },
+
+        getActiveSavedSummary() {
+            return this.state.savedSummaries.find((item) => item.id === this.state.activeSavedSummaryId) || this.state.savedSummaries[0] || null;
         },
 
         getActiveBlock() {
@@ -866,6 +1378,7 @@
                 returnStep: this.state.returnStep,
                 accessTier: this.state.accessTier,
                 studyTitle: this.state.studyTitle,
+                studyLibraryId: this.state.studyLibraryId,
                 materialName: this.state.materialName,
                 materialSizeLabel: this.state.materialSizeLabel,
                 materialPageCount: this.state.materialPageCount,
@@ -877,6 +1390,13 @@
                 sessions: clone(this.state.sessions),
                 activeBlockId: this.state.activeBlockId,
                 blockTab: this.state.blockTab,
+                blockFullScreen: this.state.blockFullScreen,
+                blockAssistMode: this.state.blockAssistMode,
+                highlightedDocument: clone(this.state.highlightedDocument),
+                savedSummaries: clone(this.state.savedSummaries),
+                activeSavedSummaryId: this.state.activeSavedSummaryId,
+                studyLibrary: clone(this.state.studyLibrary),
+                activeLibraryItemId: this.state.activeLibraryItemId,
                 savedDraftId: this.state.savedDraftId,
                 savedAt: this.state.savedAt,
                 progressLabel: this.state.progressLabel
@@ -890,9 +1410,10 @@
 
             const defaults = createState();
             const studyTitle = snapshot.studyTitle || buildStudyTitle(snapshot.materialName);
+            const materialLabel = studyTitle || "seu material";
             const blocks = snapshot.blocks && snapshot.blocks.length
-                ? snapshot.blocks
-                : buildBlocks(studyTitle);
+                ? snapshot.blocks.map((block) => enrichLearnContent(block, materialLabel))
+                : buildRichBlocks(studyTitle);
             const sessions = normalizeSessions(blocks, snapshot.sessions);
             const normalizedStep = snapshot.step === "analysis"
                 ? "mode-select"
@@ -903,9 +1424,19 @@
                 ...snapshot,
                 step: normalizedStep,
                 studyTitle,
+                studyLibraryId: snapshot.studyLibraryId || defaults.studyLibraryId,
                 blocks,
                 sessions,
                 activeBlockId: snapshot.activeBlockId || blocks[0].id,
+                blockFullScreen: typeof snapshot.blockFullScreen === "boolean"
+                    ? snapshot.blockFullScreen
+                    : defaults.blockFullScreen,
+                blockAssistMode: snapshot.blockAssistMode || defaults.blockAssistMode,
+                highlightedDocument: snapshot.highlightedDocument || null,
+                savedSummaries: Array.isArray(snapshot.savedSummaries) ? snapshot.savedSummaries : defaults.savedSummaries,
+                activeSavedSummaryId: snapshot.activeSavedSummaryId || defaults.activeSavedSummaryId,
+                studyLibrary: this.state.studyLibrary,
+                activeLibraryItemId: this.state.activeLibraryItemId,
                 calendarMonth: snapshot.examDate
                     ? Number(String(snapshot.examDate).split("-")[1]) - 1
                     : defaults.calendarMonth,

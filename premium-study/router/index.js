@@ -10,6 +10,7 @@
         "study-time",
         "analysis",
         "mode-select",
+        "highlight-preview",
         "learn-map",
         "block",
         "practice",
@@ -18,6 +19,7 @@
         "flashcards",
         "mini-exam",
         "exam-result",
+        "premium-library",
         "trail"
     ];
 
@@ -72,6 +74,15 @@
             backVisible: true,
             progressVisible: false,
             showSummary: true
+        },
+        "highlight-preview": {
+            title: "Documento com marcador de texto",
+            subtitle: "O material aparece inteiro, com destaque apenas nas partes mais importantes para orientar sua leitura.",
+            label: "Marcar texto",
+            backVisible: true,
+            progressVisible: false,
+            showSummary: false,
+            scrollable: true
         },
         "learn-map": {
             title: "Escolha o assunto por onde quer comecar.",
@@ -146,6 +157,15 @@
             showSummary: true,
             scrollable: true
         },
+        "premium-library": {
+            title: "Biblioteca premium",
+            subtitle: "Aqui ficam todos os PDFs e estudos carregados para retomada, inclusive o mais recente.",
+            label: "Biblioteca premium",
+            backVisible: true,
+            progressVisible: false,
+            showSummary: false,
+            scrollable: true
+        },
         trail: {
             title: "Sua trilha esta pronta para continuar.",
             subtitle: "Veja os blocos, retome seu ponto atual e avance com clareza.",
@@ -188,6 +208,10 @@
                 return this.goTo("mode-select");
             }
 
+            if (step === "highlight-preview") {
+                return this.goTo("mode-select");
+            }
+
             if (step === "block") {
                 return this.goTo("learn-map");
             }
@@ -206,6 +230,10 @@
 
             if (step === "exam-result") {
                 return this.goTo("mini-exam");
+            }
+
+            if (step === "premium-library") {
+                return this.goTo("entry");
             }
 
             if (step === "trail") {

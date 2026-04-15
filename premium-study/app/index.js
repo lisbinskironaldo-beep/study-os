@@ -30,6 +30,21 @@
 
             this.root.dataset.bound = "true";
 
+            document.addEventListener("fullscreenchange", () => {
+                if (!this.root) {
+                    return;
+                }
+
+                const store = window.PremiumStudyStore;
+                const state = store.getState();
+                const isActive = this.isNativeFullScreenActive();
+
+                if (state.step === "block" && state.blockFullScreen && !isActive) {
+                    store.setBlockFullScreen(false);
+                    this.render();
+                }
+            });
+
             this.root.addEventListener("click", (event) => {
                 const actionTarget = event.target.closest("[data-premium-action]");
                 if (!actionTarget) {
@@ -93,9 +108,58 @@
             this.root.addEventListener("pointercancel", clearPointer);
         },
 
+        isNativeFullScreenActive() {
+            return document.fullscreenElement === this.root;
+        },
+
+        async enterNativeFullScreen() {
+            if (!this.root || this.isNativeFullScreenActive() || typeof this.root.requestFullscreen !== "function") {
+                return;
+            }
+
+            try {
+                await this.root.requestFullscreen();
+            } catch (error) {
+                // Mantemos o fallback visual se o navegador bloquear.
+            }
+        },
+
+        async exitNativeFullScreen() {
+            if (!this.isNativeFullScreenActive() || typeof document.exitFullscreen !== "function") {
+                return;
+            }
+
+            try {
+                await document.exitFullscreen();
+            } catch (error) {
+                // Se falhar, o usuario ainda pode sair com ESC ou pelo navegador.
+            }
+        },
+
+        async syncNativeFullScreen(preferEnter = false) {
+            const state = window.PremiumStudyStore.getState();
+            const shouldBeNativeFullScreen =
+                state.step === "block" &&
+                state.blockFullScreen;
+
+            if (!shouldBeNativeFullScreen) {
+                await this.exitNativeFullScreen();
+                return;
+            }
+
+            if (preferEnter) {
+                await this.enterNativeFullScreen();
+            }
+        },
+
         async hydrateFromStorage() {
             if (!window.PremiumStudyStorage) {
                 return;
+            }
+
+            const studyLibrary = await window.PremiumStudyStorage.getStudyLibrary();
+            if (studyLibrary && studyLibrary.length) {
+                window.PremiumStudyStore.setStudyLibrary(studyLibrary);
             }
 
             const latestDraft = await window.PremiumStudyStorage.getLatestDraft();
@@ -134,7 +198,90 @@
                 savedAt: savedDraft.savedAt
             });
             window.PremiumStudyStore.setLatestLocalStudy(summary);
+            const studyLibrary = await window.PremiumStudyStorage.saveStudyLibraryRecord({
+                ...window.PremiumStudyStore.exportSnapshot(),
+                savedAt: savedDraft.savedAt
+            });
+            if (studyLibrary && studyLibrary.length) {
+                window.PremiumStudyStore.setStudyLibrary(studyLibrary);
+            }
             this.persistenceReady = true;
+        },
+
+        openPrintWindow(title, bodyContent) {
+            const win = window.open("", "_blank", "width=960,height=760");
+            if (!win) {
+                return;
+            }
+
+            win.document.write(`<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<title>${window.PremiumStudyUI.escapeHtml(title)}</title>
+<style>
+body{font-family:Arial,sans-serif;margin:32px;color:#1f2937;line-height:1.6}
+h1{font-size:28px;margin:0 0 8px}
+h2{font-size:18px;margin:28px 0 10px}
+p{margin:0 0 14px}
+mark{background:#ffe38a;padding:0 0.18em;border-radius:0.2em}
+ul{margin:0;padding-left:22px}
+li{margin:0 0 10px}
+.meta{margin-bottom:24px;color:#475569}
+.section{padding-top:18px;border-top:1px solid #dbe3f4;margin-top:18px}
+</style>
+</head>
+<body>${bodyContent}</body>
+</html>`);
+            win.document.close();
+            win.focus();
+            win.print();
+        },
+
+        downloadHighlightedPdf(kind) {
+            const state = window.PremiumStudyStore.getState();
+            const documentData = state.highlightedDocument;
+
+            if (!documentData) {
+                return;
+            }
+
+            if (kind === "summary") {
+                const summary = documentData.extractedSummary || {};
+                const bullets = Array.isArray(summary.bullets)
+                    ? summary.bullets.map((item) => `<li>${window.PremiumStudyUI.escapeHtml(item)}</li>`).join("")
+                    : "";
+                this.openPrintWindow(
+                    `${summary.title || "Resumo destacado"} - PDF`,
+                    `
+<h1>${window.PremiumStudyUI.escapeHtml(summary.title || "Resumo destacado")}</h1>
+<p class="meta">${window.PremiumStudyUI.escapeHtml(summary.sourceTitle || state.studyTitle || state.materialName || "Documento")}</p>
+<p>${window.PremiumStudyUI.escapeHtml(summary.lead || "")}</p>
+<div class="section">
+    <h2>${window.PremiumStudyUI.escapeHtml(summary.blockTitle || "Pontos principais")}</h2>
+    <ul>${bullets}</ul>
+</div>`
+                );
+                return;
+            }
+
+            const sections = (documentData.sections || []).map((section) => `
+<div class="section">
+    <h2>${window.PremiumStudyUI.escapeHtml(section.title)}</h2>
+    ${(section.paragraphs || []).map((paragraph) => `
+        <p>${paragraph.map((part) => part.highlight
+        ? `<mark>${window.PremiumStudyUI.escapeHtml(part.text)}</mark>`
+        : window.PremiumStudyUI.escapeHtml(part.text)).join("")}</p>
+    `).join("")}
+</div>`).join("");
+
+            this.openPrintWindow(
+                `${documentData.title} - PDF`,
+                `
+<h1>${window.PremiumStudyUI.escapeHtml(documentData.title)}</h1>
+<p class="meta">${window.PremiumStudyUI.escapeHtml(documentData.subtitle || "")}</p>
+${sections}`
+            );
         },
 
         clearAnalysisTimers() {
@@ -203,6 +350,10 @@
             const router = window.PremiumStudyRouter;
             const store = window.PremiumStudyStore;
             let shouldPersist = false;
+            let shouldSyncNativeFullScreen = false;
+            let preferEnterNativeFullScreen = false;
+            const premiumLibraryEnabled =
+                store.getState().accessTier === "premium";
 
             switch (action) {
             case "close":
@@ -218,12 +369,14 @@
                 ) {
                     router.goTo("mode-select");
                     this.render();
+                    await this.syncNativeFullScreen();
                     await this.persistCurrentState();
                     return;
                 }
                 if (store.getState().step !== "entry") {
                     router.goTo("entry");
                     this.render();
+                    await this.syncNativeFullScreen();
                     await this.persistCurrentState();
                     return;
                 }
@@ -234,6 +387,7 @@
             case "back":
                 this.clearAnalysisTimers();
                 router.previous(store.getState().step);
+                shouldSyncNativeFullScreen = true;
                 break;
             case "open-file-picker":
                 this.fileInput = this.root.querySelector("#premiumStudyFileInput");
@@ -248,7 +402,9 @@
                         ...latestDraft.snapshot,
                         savedAt: latestDraft.savedAt
                     });
-                    if (store.getState().materialName && store.getState().step === "entry") {
+                    if (store.getState().materialName) {
+                        store.setBlockFullScreen(true);
+                        store.setBlockAssistMode("");
                         router.goTo("mode-select");
                     }
                 }
@@ -283,16 +439,71 @@
                 router.goTo("learn-map");
                 shouldPersist = true;
                 break;
+            case "choose-mode-highlight":
+                store.openHighlightDocument();
+                router.goTo("highlight-preview");
+                shouldPersist = true;
+                break;
             case "choose-mode-practice":
                 store.setReturnStep("mode-select");
                 store.markActiveBlockProgress({ practice: true });
                 router.goTo("practice");
                 shouldPersist = true;
+                shouldSyncNativeFullScreen = true;
                 break;
             case "choose-mode-exam":
                 store.setReturnStep("mode-select");
                 store.resetActiveSession("miniExam");
                 router.goTo("mini-exam");
+                shouldPersist = true;
+                shouldSyncNativeFullScreen = true;
+                break;
+            case "open-premium-library":
+                if (!premiumLibraryEnabled) {
+                    break;
+                }
+                router.goTo("premium-library");
+                shouldPersist = true;
+                shouldSyncNativeFullScreen = true;
+                break;
+            case "open-library-item":
+                if (!premiumLibraryEnabled) {
+                    break;
+                }
+                store.setActiveLibraryItem(payload.blockId);
+                shouldPersist = true;
+                break;
+            case "resume-library-item": {
+                if (!premiumLibraryEnabled) {
+                    break;
+                }
+                const activeItem = store.getActiveLibraryItem();
+                if (activeItem && activeItem.snapshot) {
+                    store.restoreFromSnapshot({
+                        ...activeItem.snapshot,
+                        savedAt: activeItem.savedAt || activeItem.snapshot.savedAt
+                    });
+                    if (store.getState().materialName) {
+                        store.setBlockFullScreen(true);
+                        store.setBlockAssistMode("");
+                        router.goTo("mode-select");
+                    }
+                }
+                shouldPersist = true;
+                break;
+            }
+            case "download-highlight-summary":
+                if (!premiumLibraryEnabled) {
+                    break;
+                }
+                this.downloadHighlightedPdf("summary");
+                shouldPersist = true;
+                break;
+            case "download-highlighted-full":
+                if (!premiumLibraryEnabled) {
+                    break;
+                }
+                this.downloadHighlightedPdf("full");
                 shouldPersist = true;
                 break;
             case "set-tab":
@@ -302,26 +513,42 @@
             case "back-to-mode-select":
                 router.goTo("mode-select");
                 shouldPersist = true;
+                shouldSyncNativeFullScreen = true;
                 break;
             case "open-practice":
                 store.setReturnStep("block");
                 store.markActiveBlockProgress({ practice: true });
                 router.goTo("practice");
                 shouldPersist = true;
+                shouldSyncNativeFullScreen = true;
                 break;
             case "open-block":
                 store.selectBlock(payload.blockId);
                 store.setBlockTab("aprender");
+                store.setBlockFullScreen(true);
+                store.setBlockAssistMode("");
                 store.markActiveBlockProgress({ learn: true });
                 router.goTo("block");
+                shouldPersist = true;
+                shouldSyncNativeFullScreen = true;
+                preferEnterNativeFullScreen = true;
+                break;
+            case "highlight-block":
+                store.selectBlock(payload.blockId);
+                store.openHighlightDocument(payload.blockId);
+                router.goTo("highlight-preview");
                 shouldPersist = true;
                 break;
             case "open-next-block": {
                 const nextBlockId = store.getNextBlockId();
                 if (nextBlockId) {
                     store.selectBlock(nextBlockId);
+                    store.setBlockFullScreen(true);
+                    store.setBlockAssistMode("");
                     router.goTo("block");
                     shouldPersist = true;
+                    shouldSyncNativeFullScreen = true;
+                    preferEnterNativeFullScreen = true;
                 }
                 break;
             }
@@ -330,6 +557,7 @@
                 store.resetActiveSession("miniExam");
                 router.goTo("mini-exam");
                 shouldPersist = true;
+                shouldSyncNativeFullScreen = true;
                 break;
             case "generate-mini-exam":
                 store.startMiniExam();
@@ -413,8 +641,22 @@
                 shouldPersist = true;
                 break;
             case "return-to-block":
+                store.setBlockFullScreen(true);
                 router.goTo("block");
                 shouldPersist = true;
+                shouldSyncNativeFullScreen = true;
+                preferEnterNativeFullScreen = true;
+                break;
+            case "collapse-block-reader":
+                store.setBlockFullScreen(false);
+                shouldPersist = true;
+                shouldSyncNativeFullScreen = true;
+                break;
+            case "expand-block-reader":
+                store.setBlockFullScreen(true);
+                shouldPersist = true;
+                shouldSyncNativeFullScreen = true;
+                preferEnterNativeFullScreen = true;
                 break;
             case "select-block":
                 store.selectBlock(payload.blockId);
@@ -429,14 +671,16 @@
                 break;
             }
             case "ai-explain-better":
+                store.setBlockAssistMode("explain");
                 store.patch({
-                    progressLabel: "Explicacao mais didatica reservada para a etapa de IA contextual."
+                    progressLabel: "Leitura complementar aberta para explicar este assunto com mais didatica."
                 });
                 shouldPersist = true;
                 break;
             case "ai-quick-review":
+                store.setBlockAssistMode("review");
                 store.patch({
-                    progressLabel: "Revisao rapida marcada como foco principal deste bloco."
+                    progressLabel: "Revisao em 5 pontos aberta para fixar este assunto com rapidez."
                 });
                 shouldPersist = true;
                 break;
@@ -451,6 +695,10 @@
             }
 
             this.render();
+
+            if (shouldSyncNativeFullScreen) {
+                await this.syncNativeFullScreen(preferEnterNativeFullScreen);
+            }
 
             if (shouldPersist) {
                 await this.persistCurrentState();
@@ -468,6 +716,10 @@
 
             if (step !== "analysis") {
                 this.clearAnalysisTimers();
+            }
+
+            if (step !== "block" || !window.PremiumStudyStore.getState().blockFullScreen) {
+                this.exitNativeFullScreen();
             }
         },
 

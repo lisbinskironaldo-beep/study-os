@@ -7,6 +7,8 @@
     const DB_VERSION = 1;
     const STORE_NAME = "drafts";
     const LATEST_KEY = "latest";
+    const SAVED_SUMMARIES_KEY = "saved-summaries";
+    const STUDY_LIBRARY_KEY = "study-library";
     let openPromise = null;
 
     function requestToPromise(request) {
@@ -85,6 +87,23 @@
         };
     }
 
+    function buildStudyLibraryRecord(snapshot) {
+        const summary = buildDraftSummary(snapshot);
+        return {
+            id: snapshot.studyLibraryId || `library-${Date.now()}`,
+            title: summary.title,
+            materialName: summary.materialName,
+            examDate: summary.examDate,
+            examDateLabel: summary.examDateLabel,
+            targetScore: summary.targetScore,
+            studyHours: summary.studyHours,
+            studyMinutes: summary.studyMinutes,
+            step: summary.step,
+            savedAt: snapshot.savedAt || new Date().toISOString(),
+            snapshot
+        };
+    }
+
     window.PremiumStudyStorage = {
         async getLatestDraft() {
             try {
@@ -123,6 +142,82 @@
             }
         },
 
-        buildDraftSummary
+        async getStudyLibrary() {
+            try {
+                const record = await withStore("readonly", (store) => requestToPromise(store.get(STUDY_LIBRARY_KEY)));
+                return Array.isArray(record?.items)
+                    ? record.items
+                    : [];
+            } catch (error) {
+                console.error(error);
+                return [];
+            }
+        },
+
+        async saveStudyLibraryRecord(snapshot) {
+            if (!snapshot || !snapshot.materialName) {
+                return [];
+            }
+
+            try {
+                const nextItem = buildStudyLibraryRecord(snapshot);
+                const currentItems = await this.getStudyLibrary();
+                const nextItems = [
+                    nextItem,
+                    ...currentItems.filter((item) => item.id !== nextItem.id)
+                ];
+                const record = {
+                    id: STUDY_LIBRARY_KEY,
+                    savedAt: new Date().toISOString(),
+                    items: nextItems
+                };
+
+                await withStore("readwrite", (store) => requestToPromise(store.put(record)));
+                return nextItems;
+            } catch (error) {
+                console.error(error);
+                return [];
+            }
+        },
+
+        async getSavedSummaries() {
+            try {
+                const record = await withStore("readonly", (store) => requestToPromise(store.get(SAVED_SUMMARIES_KEY)));
+                return Array.isArray(record?.items)
+                    ? record.items
+                    : [];
+            } catch (error) {
+                console.error(error);
+                return [];
+            }
+        },
+
+        async saveSavedSummary(summaryRecord) {
+            if (!summaryRecord) {
+                return [];
+            }
+
+            try {
+                const currentItems = await this.getSavedSummaries();
+                const nextItems = [
+                    summaryRecord,
+                    ...currentItems.filter((item) => item.id !== summaryRecord.id)
+                ];
+                const record = {
+                    id: SAVED_SUMMARIES_KEY,
+                    savedAt: new Date().toISOString(),
+                    items: nextItems
+                };
+
+                await withStore("readwrite", (store) => requestToPromise(store.put(record)));
+                return nextItems;
+            } catch (error) {
+                console.error(error);
+                return [];
+            }
+        },
+
+        buildDraftSummary,
+        buildStudyLibraryRecord
     };
 })();

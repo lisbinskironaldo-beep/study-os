@@ -13,26 +13,41 @@
 
     function entry(state) {
         const resume = state.latestLocalStudy;
+        const studyLibrary = Array.isArray(state.studyLibrary)
+            ? state.studyLibrary
+            : [];
+        const premiumLibraryEnabled =
+            state.accessTier === "premium";
 
         return `
-<section class="premium-entry-grid">
-    <button type="button" class="premium-entry-card premium-entry-card-primary" data-premium-action="open-file-picker">
-        <span class="premium-entry-kicker">Novo estudo</span>
-        <strong>Carregar PDF</strong>
-        <p>Envie seu material e receba um caminho focado na sua necessidade.</p>
-    </button>
-    ${resume ? `
-    <button type="button" class="premium-entry-card premium-entry-card-secondary" data-premium-action="resume-latest-study">
-        <span class="premium-entry-kicker">Ultimo estudo salvo</span>
-        <strong>Retomar estudo</strong>
-        <p>${UI().escapeHtml(resume.title)}</p>
-        <small>Prova em ${UI().escapeHtml(resume.examDateLabel)}</small>
-    </button>` : ""}
+<section class="premium-entry-stage">
+    <div class="premium-entry-hero">
+        <button type="button" class="premium-entry-card premium-entry-card-primary premium-entry-card-featured" data-premium-action="open-file-picker">
+            <span class="premium-entry-kicker">Novo estudo <span class="premium-entry-inline-badge premium-entry-inline-badge-free">Ate 12 paginas gratis</span></span>
+            <strong>Carregar PDF</strong>
+            <p>Envie seu material e receba um caminho focado na sua necessidade.</p>
+        </button>
+    </div>
+    <div class="premium-entry-grid premium-entry-grid-secondary ${resume ? "" : "is-single"}">
+        ${resume ? `
+        <button type="button" class="premium-entry-card premium-entry-card-secondary premium-entry-card-support premium-entry-card-resume" data-premium-action="resume-latest-study">
+            <span class="premium-entry-kicker">Ultimo estudo salvo <span class="premium-entry-inline-badge premium-entry-inline-badge-free">Gratis</span></span>
+            <strong>Retomar ultimo estudo</strong>
+            <p>${UI().escapeHtml(resume.title)}</p>
+            <small>Prova em ${UI().escapeHtml(resume.examDateLabel)}</small>
+        </button>` : ""}
+        <button type="button" class="premium-entry-card premium-entry-card-secondary premium-entry-card-support premium-entry-card-premium ${premiumLibraryEnabled ? "" : "is-locked"}" data-premium-action="open-premium-library" ${premiumLibraryEnabled ? "" : "disabled aria-disabled=\"true\""}>
+            <span class="premium-entry-kicker">Biblioteca premium <span class="premium-entry-inline-badge premium-entry-inline-badge-premium">Premium</span></span>
+            <strong>Biblioteca premium</strong>
+            <p>${studyLibrary.length > 0 ? `${studyLibrary.length} PDF(s) e estudo(s) ja carregados e prontos para consulta.` : "Todos os materiais carregados ficam guardados aqui, inclusive o mais recente."}</p>
+            <small>${premiumLibraryEnabled ? "Ver historico completo de materiais" : "Disponivel no plano premium"}</small>
+        </button>
+    </div>
     <input id="premiumStudyFileInput" class="premium-hidden-input" type="file" accept=".pdf,application/pdf" />
 </section>
 <div class="premium-entry-note">
     <span>Gratis para sempre em PDFs de ate 12 paginas.</span>
-    <span>Historico completo, retomada expandida e materiais maiores ficam no premium.</span>
+    <span>Historico completo de materiais, retomada expandida e exportacao do marcador em PDF ficam no premium.</span>
 </div>`;
     }
 
@@ -181,19 +196,24 @@
         return `
 <section class="premium-mode-grid">
     <button type="button" class="premium-mode-card premium-mode-card-primary" data-premium-action="choose-mode-learn">
-        <span>Aprender</span>
-        <strong>Entendimento guiado</strong>
-        <p>Resumo e pontos quentes.</p>
+        <span class="premium-mode-word">Aprender</span>
+        <strong>Entendimento guiado do assunto</strong>
+        <p>Entre pelo resumo principal, com leitura orientada e estrutura clara.</p>
     </button>
     <button type="button" class="premium-mode-card" data-premium-action="choose-mode-practice">
-        <span>Praticar</span>
+        <span class="premium-mode-word">Praticar</span>
         <strong>Va direto para questoes</strong>
-        <p>Treino rapido e objetivo.</p>
+        <p>Treino objetivo para consolidar o assunto sem desviar do foco.</p>
     </button>
     <button type="button" class="premium-mode-card" data-premium-action="choose-mode-exam">
-        <span>Prova</span>
+        <span class="premium-mode-word">Prova</span>
         <strong>Teste seu nivel agora</strong>
-        <p>Mini prova do bloco.</p>
+        <p>Mini prova do bloco para medir criterio, seguranca e prontidao.</p>
+    </button>
+    <button type="button" class="premium-mode-card premium-mode-card-highlight" data-premium-action="choose-mode-highlight">
+        <span class="premium-mode-word">Marcar</span>
+        <strong>Resumir com marcador de texto</strong>
+        <p>Veja o documento inteiro com grifo nas partes mais importantes e exporte o resultado em PDF no final.</p>
     </button>
 </section>`;
     }
@@ -203,6 +223,60 @@
 <ul class="premium-bullet-list">
     ${items.map((item) => `<li>${UI().escapeHtml(item)}</li>`).join("")}
 </ul>`;
+    }
+
+    function renderSubjectTags(items = []) {
+        return `
+<div class="premium-subject-tags">
+    ${items.slice(0, 3).map((item) => `<span class="premium-subject-tag">${UI().escapeHtml(item)}</span>`).join("")}
+</div>`;
+    }
+
+    function renderLearnSections(sections = []) {
+        return sections.map((section) => `
+        <section class="premium-learn-section premium-learn-section-rich">
+            <span class="premium-detail-label">${UI().escapeHtml(section.label)}</span>
+            <h3>${UI().escapeHtml(section.title)}</h3>
+            ${section.paragraphs.map((paragraph) => `<p>${UI().escapeHtml(paragraph)}</p>`).join("")}
+        </section>
+    `).join("");
+    }
+
+    function renderDocumentSections(sections = []) {
+        return sections.map((section) => `
+        <section class="premium-learn-section premium-learn-section-rich premium-learn-section-document premium-learn-section-document-${UI().escapeHtml(section.id || "default")}">
+            <span class="premium-detail-label">${UI().escapeHtml(section.label)}</span>
+            <h3>${UI().escapeHtml(section.title)}</h3>
+            ${Array.isArray(section.paragraphs)
+        ? section.paragraphs.map((paragraph) => `<p>${UI().escapeHtml(paragraph)}</p>`).join("")
+        : ""}
+            ${Array.isArray(section.items) && section.items.length > 0
+        ? renderBulletList(section.items)
+        : ""}
+        </section>
+    `).join("");
+    }
+
+    function renderAssistPanel(block, assistMode) {
+        if (assistMode === "explain" && block.learn.explainBetter) {
+            return `
+<section class="premium-learn-section premium-learn-section-rich premium-learn-assist-panel">
+    <span class="premium-detail-label">Explicar melhor este assunto</span>
+    <h3>${UI().escapeHtml(block.learn.explainBetter.title)}</h3>
+    ${block.learn.explainBetter.paragraphs.map((paragraph) => `<p>${UI().escapeHtml(paragraph)}</p>`).join("")}
+</section>`;
+        }
+
+        if (assistMode === "review" && Array.isArray(block.learn.reviewInFivePoints)) {
+            return `
+<section class="premium-learn-section premium-learn-section-rich premium-learn-assist-panel">
+    <span class="premium-detail-label">Revisar este assunto em 5 pontos</span>
+    <h3>Os 5 pontos que mais precisam ficar de pe</h3>
+    ${renderBulletList(block.learn.reviewInFivePoints)}
+</section>`;
+        }
+
+        return "";
     }
 
     function getPracticeProgress(state, type) {
@@ -250,10 +324,11 @@
         return `
 <section class="premium-learn-map-grid">
     ${state.blocks.map((block) => `
-    <button type="button" class="premium-subject-card ${state.activeBlockId === block.id ? "is-active" : ""}" data-premium-action="open-block" data-block-id="${block.id}">
-        <span>${UI().escapeHtml(block.duration)}</span>
-        <strong>${UI().escapeHtml(block.title)}</strong>
-        <p>${UI().escapeHtml(block.excerpt || block.subtitle)}</p>
+    <button type="button" class="premium-subject-card premium-mode-card ${state.activeBlockId === block.id ? "is-active" : ""}" data-premium-action="open-block" data-block-id="${block.id}">
+        <span class="premium-subject-duration">${UI().escapeHtml(block.duration)}</span>
+        <span class="premium-mode-word premium-subject-word">${UI().escapeHtml(block.title)}</span>
+        <strong>${UI().escapeHtml(block.subtitle)}</strong>
+        <p>${UI().escapeHtml(block.excerpt || block.learn.summary)}</p>
     </button>`).join("")}
 </section>`;
     }
@@ -261,34 +336,141 @@
     function block(state) {
         const block = Store().getActiveBlock();
         const nextBlockId = Store().getNextBlockId();
+        const documentSections = Array.isArray(block.learn.documentSections) && block.learn.documentSections.length
+            ? block.learn.documentSections
+            : [];
+        const assistPanel = renderAssistPanel(block, state.blockAssistMode);
         return `
-<section class="premium-learn-focus">
-    <article class="premium-learn-article">
-        <span class="premium-panel-kicker">Aprender</span>
-        <h2>${UI().escapeHtml(block.title)}</h2>
-        <p class="premium-learn-lead">${UI().escapeHtml(block.learn.summary)}</p>
-        <div class="premium-inline-actions premium-inline-actions-contextual">
-            <button type="button" class="premium-tab" data-premium-action="ai-explain-better">Explicar melhor este assunto</button>
-            <button type="button" class="premium-tab" data-premium-action="ai-quick-review">Revisar este assunto em 5 pontos</button>
+<section class="premium-learn-reader ${state.blockFullScreen ? "is-fullscreen" : "is-page"}">
+    ${state.blockFullScreen ? `<div class="premium-learn-reader-scrim" aria-hidden="true"></div>` : ""}
+    <div class="premium-learn-focus premium-learn-reader-panel">
+        <article class="premium-learn-article">
+            <div class="premium-learn-reader-head">
+                <div class="premium-learn-reader-copy">
+                    <span class="premium-panel-kicker">Aprender</span>
+                    <h2>${UI().escapeHtml(block.title)}</h2>
+                    <p class="premium-learn-lead">${UI().escapeHtml(block.subtitle)}</p>
+                </div>
+                <div class="premium-inline-actions premium-inline-actions-contextual premium-learn-reader-toggles">
+                    <button type="button" class="premium-tab ${state.blockFullScreen ? "" : "is-active"}" data-premium-action="${state.blockFullScreen ? "collapse-block-reader" : "expand-block-reader"}">
+                        ${state.blockFullScreen ? "Sair do full screen" : "Abrir em full screen"}
+                    </button>
+                </div>
+            </div>
+            ${renderDocumentSections(documentSections)}
+            ${assistPanel}
+        </article>
+        ${UI().actionBar([
+            { action: "ai-explain-better", label: "◦ Explicar melhor", variant: state.blockAssistMode === "explain" ? "secondary" : "ghost" },
+            { action: "ai-quick-review", label: "◇ Revisar em 5 pontos", variant: state.blockAssistMode === "review" ? "secondary" : "ghost" },
+            { action: "open-mini-exam", label: "▣ Mini prova", variant: "primary" },
+            ...(nextBlockId ? [{ action: "open-next-block", label: "→ Proximo", variant: "ghost" }] : [])
+        ])}
+    </div>
+</section>`;
+    }
+
+    function renderHighlightParagraph(parts = []) {
+        return `<p class="premium-highlight-paragraph">${parts.map((part) => part.highlight
+            ? `<mark class="premium-highlight-mark">${UI().escapeHtml(part.text)}</mark>`
+            : UI().escapeHtml(part.text)).join("")}</p>`;
+    }
+
+    function highlightPreview(state) {
+        const documentData = state.highlightedDocument || Store().openHighlightDocument().highlightedDocument;
+        const premiumLibraryEnabled = state.accessTier === "premium";
+
+        return `
+<section class="premium-highlight-shell">
+    <article class="premium-highlight-doc">
+        <span class="premium-panel-kicker">Documento com marcador</span>
+        <h2>${UI().escapeHtml(documentData.title)}</h2>
+        <p class="premium-learn-lead">${UI().escapeHtml(documentData.subtitle)}</p>
+        <div class="premium-highlight-note">
+            <strong>Documento integral preservado.</strong>
+            <p>Nada e removido daqui. O sistema so grifa os trechos mais importantes para guiar a leitura e preparar a exportacao em PDF no final.</p>
         </div>
-        <section class="premium-learn-section">
-            <span class="premium-detail-label">Conceitos-chave</span>
-            ${renderBulletList(block.learn.keyConcepts)}
-        </section>
-        <section class="premium-learn-section">
-            <span class="premium-detail-label">Pontos quentes</span>
-            ${renderBulletList(block.learn.hotPoints)}
-        </section>
-        <section class="premium-learn-section">
-            <span class="premium-detail-label">Armadilhas comuns</span>
-            ${renderBulletList(block.learn.pitfalls)}
-        </section>
+        ${documentData.sections.map((section) => `
+            <section class="premium-highlight-section">
+                <span class="premium-detail-label">${UI().escapeHtml(section.label)}</span>
+                <h3>${UI().escapeHtml(section.title)}</h3>
+                ${section.paragraphs.map((paragraph) => renderHighlightParagraph(paragraph)).join("")}
+            </section>
+        `).join("")}
     </article>
+    <section class="premium-highlight-export">
+        <span class="premium-panel-kicker">Resumo destacado</span>
+        <strong>Baixe em PDF so os destaques principais ou o documento inteiro com os grifos.</strong>
+        <p>O texto marcado nao fica salvo para consulta dentro do app. Aqui ele so pode ser exportado em PDF.</p>
+        <div class="premium-inline-actions premium-inline-actions-contextual">
+            <button type="button" class="premium-action premium-action-primary" data-premium-action="download-highlight-summary" ${premiumLibraryEnabled ? "" : "disabled"}>Baixar PDF so com destaques</button>
+            <button type="button" class="premium-action premium-action-secondary" data-premium-action="download-highlighted-full" ${premiumLibraryEnabled ? "" : "disabled"}>Baixar PDF com texto todo destacado</button>
+        </div>
+        <small>${premiumLibraryEnabled ? "O navegador vai abrir a saida em formato de impressao para salvar em PDF." : "Os dois downloads ficam liberados no premium."}</small>
+    </section>
     ${UI().actionBar([
-        { action: "open-practice", label: "Praticar este assunto", variant: "primary" },
-        { action: "open-mini-exam", label: "Mini prova deste assunto", variant: "secondary" },
-        ...(nextBlockId ? [{ action: "open-next-block", label: "Proximo assunto", variant: "ghost" }] : [])
+        { action: "back-to-mode-select", label: "Voltar para modos", variant: "secondary" }
     ])}
+</section>`;
+    }
+
+    function premiumLibrary(state) {
+        const premiumLibraryEnabled = state.accessTier === "premium";
+        const activeItem = Store().getActiveLibraryItem();
+
+        if (!premiumLibraryEnabled) {
+            return `
+<section class="premium-saved-shell">
+    <article class="premium-empty-library premium-empty-library-locked">
+        <span class="premium-panel-kicker">Biblioteca premium</span>
+        <strong>O historico completo de materiais fica liberado no premium.</strong>
+        <p>Quando o plano premium estiver ativo, esta area passa a listar todos os PDFs e estudos carregados para consulta e retomada.</p>
+    </article>
+</section>`;
+        }
+
+        return `
+<section class="premium-saved-shell">
+    <div class="premium-saved-grid">
+        <aside class="premium-saved-list">
+            ${state.studyLibrary.length > 0 ? state.studyLibrary.map((item) => `
+                <button type="button" class="premium-saved-card ${activeItem && activeItem.id === item.id ? "is-active" : ""}" data-premium-action="open-library-item" data-block-id="${item.id}">
+                    <span>${UI().escapeHtml(item.savedAt ? new Date(item.savedAt).toLocaleDateString("pt-BR") : "Material")}</span>
+                    <strong>${UI().escapeHtml(item.title)}</strong>
+                    <p>${UI().escapeHtml(item.materialName)}</p>
+                </button>
+            `).join("") : `
+                <article class="premium-empty-library">
+                    <strong>Nenhum material salvo ainda.</strong>
+                    <p>Assim que voce carregar PDFs e avancar no fluxo, eles passam a aparecer aqui.</p>
+                </article>
+            `}
+        </aside>
+        <article class="premium-saved-preview">
+            ${activeItem ? `
+                <span class="premium-panel-kicker">Material salvo</span>
+                <h2>${UI().escapeHtml(activeItem.title)}</h2>
+                <p class="premium-learn-lead">${UI().escapeHtml(activeItem.materialName)}</p>
+                <section class="premium-learn-section premium-learn-section-rich">
+                    <span class="premium-detail-label">Ultimo estado salvo</span>
+                    <h3>${UI().escapeHtml(activeItem.examDateLabel || "Data da prova nao definida")}</h3>
+                    ${renderBulletList([
+                        `Meta registrada: ${Number(activeItem.targetScore || 0).toFixed(1)} / 10`,
+                        `Carga planejada: ${activeItem.studyHours || 0}h ${String(activeItem.studyMinutes || 0).padStart(2, "0")}min`,
+                        `Etapa salva: ${activeItem.step || "entry"}`
+                    ])}
+                </section>
+                ${UI().actionBar([
+                    { action: "resume-library-item", label: "Abrir estudo salvo", variant: "primary" }
+                ])}
+            ` : `
+                <div class="premium-empty-library">
+                    <strong>Sua biblioteca premium fica aqui.</strong>
+                    <p>Quando voce carregar materiais, eles passam a ficar guardados nesta area para retomada futura.</p>
+                </div>
+            `}
+        </article>
+    </div>
 </section>`;
     }
 
@@ -588,6 +770,8 @@
                 return analysis(state);
             case "mode-select":
                 return modeSelect(state);
+            case "highlight-preview":
+                return highlightPreview(state);
             case "learn-map":
                 return learnMap(state);
             case "practice":
@@ -602,6 +786,8 @@
                 return miniExam(state);
             case "exam-result":
                 return examResult(state);
+            case "premium-library":
+                return premiumLibrary(state);
             case "trail":
                 return trail(state);
             case "block":
