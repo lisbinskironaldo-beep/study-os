@@ -225,6 +225,113 @@
                             "Marcar relacoes entre conceitos transforma o conteudo em estrutura, nao em lista solta."
                         )
                     ],
+                    quizSeries: [
+                        [
+                            buildQuestion(
+                                `Dentro de ${material}, qual estrategia vem antes de memorizar detalhes?`,
+                                [
+                                    "Ler apenas exemplos isolados",
+                                    "Entender o vocabulario e as definicoes centrais",
+                                    "Ir direto para a mini prova",
+                                    "Pular os termos principais"
+                                ],
+                                1,
+                                "O primeiro ganho real vem de organizar linguagem, criterio e definicoes do bloco."
+                            ),
+                            buildQuestion(
+                                "Ao revisar um conceito central, o que mais ajuda a evitar erro de prova?",
+                                [
+                                    "Decorar um unico caso",
+                                    "Misturar regra e excecao",
+                                    "Separar regra, excecao e exemplo",
+                                    "Ignorar a linguagem da banca"
+                                ],
+                                2,
+                                "Separar regra, excecao e exemplo reduz confusao e melhora a leitura de alternativas."
+                            ),
+                            buildQuestion(
+                                "Qual atitude melhora a leitura do bloco recomendado?",
+                                [
+                                    "Ler tudo na mesma velocidade",
+                                    "Marcar relacoes entre os conceitos",
+                                    "Ignorar os termos repetidos",
+                                    "Pular o resumo principal"
+                                ],
+                                1,
+                                "Marcar relacoes entre conceitos transforma o conteudo em estrutura, nao em lista solta."
+                            )
+                        ],
+                        [
+                            buildQuestion(
+                                "Qual ganho aparece quando voce entende o criterio principal do bloco?",
+                                [
+                                    "A leitura fica mais organizada",
+                                    "Os exemplos deixam de importar",
+                                    "A pratica pode ser ignorada",
+                                    "Toda excecao vira regra"
+                                ],
+                                0,
+                                "Com criterio claro, o conteudo deixa de parecer uma lista solta e passa a ter eixo."
+                            ),
+                            buildQuestion(
+                                "O que mais protege contra erro por semelhanca superficial?",
+                                [
+                                    "Memorizar so os titulos",
+                                    "Comparar funcao e relacao entre conceitos",
+                                    "Ler apenas uma vez",
+                                    "Pular definicoes"
+                                ],
+                                1,
+                                "Comparar funcao e relacao entre conceitos evita que ideias proximas parecam iguais."
+                            ),
+                            buildQuestion(
+                                "Quando vale voltar ao resumo base?",
+                                [
+                                    "Quando a duvida e de fundamento",
+                                    "So quando sobrar tempo",
+                                    "Depois de decorar tudo",
+                                    "Nunca, porque questao basta"
+                                ],
+                                0,
+                                "Se a duvida e estrutural, o resumo base recompõe o mapa do assunto."
+                            )
+                        ],
+                        [
+                            buildQuestion(
+                                "Qual sequencia consolida melhor o bloco?",
+                                [
+                                    "Resumo, criterio, pratica",
+                                    "Titulo, exemplo, chute",
+                                    "Excecao, detalhe, pressa",
+                                    "Mini prova sem revisao"
+                                ],
+                                0,
+                                "Resumo, criterio e pratica formam a trilha mais limpa para o assunto."
+                            ),
+                            buildQuestion(
+                                "O que mostra que o conceito foi realmente entendido?",
+                                [
+                                    "Reconhecer a pagina do PDF",
+                                    "Explicar a base sem depender de um exemplo",
+                                    "Lembrar a cor do card",
+                                    "Marcar a opcao mais longa"
+                                ],
+                                1,
+                                "Entendimento real aparece quando a explicacao se sustenta sem apoio de um caso isolado."
+                            ),
+                            buildQuestion(
+                                "Qual erro mais comum depois de uma leitura superficial?",
+                                [
+                                    "Responder pelo tema geral da alternativa",
+                                    "Separar regra e excecao",
+                                    "Comparar item por item",
+                                    "Voltar ao criterio"
+                                ],
+                                0,
+                                "Quem leu superficialmente tende a marcar pela sensacao geral, nao pelo criterio."
+                            )
+                        ]
+                    ],
                     trueFalse: [
                         buildTrueFalse(
                             "Conceito central e exemplo pratico podem ser tratados como a mesma coisa na revisao.",
@@ -242,6 +349,59 @@
                             "E justamente o criterio que diferencia opcoes muito proximas."
                         )
                     ],
+                    trueFalseSeries: [
+                        [
+                            buildTrueFalse(
+                                "Conceito central e exemplo pratico podem ser tratados como a mesma coisa na revisao.",
+                                false,
+                                "Separar conceito de exemplo evita trocas comuns em prova."
+                            ),
+                            buildTrueFalse(
+                                "A linguagem principal do material deve ser revisada antes da pratica intensa.",
+                                true,
+                                "Entender a linguagem do bloco acelera o restante da trilha."
+                            ),
+                            buildTrueFalse(
+                                "Ignorar criterios de classificacao reduz o risco de erro em alternativas parecidas.",
+                                false,
+                                "E justamente o criterio que diferencia opcoes muito proximas."
+                            )
+                        ],
+                        [
+                            buildTrueFalse(
+                                "O vocabulario principal do tema pode ficar para depois, desde que voce memorize os nomes.",
+                                false,
+                                "Sem entender a linguagem principal, a leitura perde eixo e a memorizacao quebra rapido."
+                            ),
+                            buildTrueFalse(
+                                "Separar regra, excecao e exemplo ajuda a ler o bloco com mais clareza.",
+                                true,
+                                "Essa separacao evita que elementos parecidos sejam tratados como equivalentes."
+                            ),
+                            buildTrueFalse(
+                                "Quando dois itens parecem proximos, o criterio de classificacao deixa de ser importante.",
+                                false,
+                                "E justamente o criterio que mostra onde os itens se afastam."
+                            )
+                        ],
+                        [
+                            buildTrueFalse(
+                                "Entender a relacao entre os conceitos vale mais do que decorar uma lista sem conexao.",
+                                true,
+                                "A relacao entre ideias sustenta o acerto quando a prova muda a formulacao."
+                            ),
+                            buildTrueFalse(
+                                "Se um caso aparece muito no material, ele automaticamente vira a regra principal.",
+                                false,
+                                "Frequencia nao substitui criterio; um caso recorrente ainda pode ser so exemplo."
+                            ),
+                            buildTrueFalse(
+                                "Revisar a estrutura basica do tema ajuda a reduzir resposta por semelhanca superficial.",
+                                true,
+                                "Estrutura clara faz o aluno decidir por criterio, nao por impressao."
+                            )
+                        ]
+                    ],
                     flashcards: [
                         buildFlashcard(
                             "Mnemonico TRE",
@@ -258,6 +418,60 @@
                             "A que conecta conceitos em vez de decorar itens isolados.",
                             "Relacao vale mais do que lista solta."
                         )
+                    ]
+                    ,
+                    flashcardSeries: [
+                        [
+                            buildFlashcard(
+                                "Mnemonico TRE",
+                                "Termo -> Regra -> Excecao.",
+                                "Abra o assunto sempre nessa ordem para nao confundir base com detalhe."
+                            ),
+                            buildFlashcard(
+                                "Pergunta gatilho",
+                                "O que define este conceito?",
+                                "Se a resposta virar um exemplo, voce ainda nao fixou o conceito."
+                            ),
+                            buildFlashcard(
+                                "Qual leitura gera mais resultado?",
+                                "A que conecta conceitos em vez de decorar itens isolados.",
+                                "Relacao vale mais do que lista solta."
+                            )
+                        ],
+                        [
+                            buildFlashcard(
+                                "Base antes do detalhe",
+                                "Primeiro criterio, depois exemplo.",
+                                "Sem criterio, o detalhe parece importante demais."
+                            ),
+                            buildFlashcard(
+                                "Erro classico",
+                                "Confundir funcao com nome.",
+                                "Pergunte sempre para que aquilo serve no tema."
+                            ),
+                            buildFlashcard(
+                                "Sinal de dominio",
+                                "Explicar sem depender do PDF.",
+                                "Se a explicacao so sai olhando o material, a base ainda esta fraca."
+                            )
+                        ],
+                        [
+                            buildFlashcard(
+                                "Revisao inteligente",
+                                "Comparar antes de concluir.",
+                                "Comparacao reduz resposta por semelhanca superficial."
+                            ),
+                            buildFlashcard(
+                                "Foco da banca",
+                                "Criterio decide mais que tema.",
+                                "Muitas alternativas parecem certas ate o criterio entrar."
+                            ),
+                            buildFlashcard(
+                                "Pergunta final",
+                                "O que sustenta este assunto inteiro?",
+                                "Quando essa resposta fica curta e clara, o bloco assentou."
+                            )
+                        ]
                     ]
                 },
                 exam: {
@@ -347,6 +561,113 @@
                             "Separar a excecao da regra evita erro por automatismo."
                         )
                     ],
+                    quizSeries: [
+                        [
+                            buildQuestion(
+                                "O que mais ajuda a acertar itens muito parecidos?",
+                                [
+                                    "Responder rapido",
+                                    "Comparar palavra-chave e criterio",
+                                    "Ignorar excecoes",
+                                    "Confiar apenas no instinto"
+                                ],
+                                1,
+                                "Itens parecidos se resolvem por palavra-chave e criterio, nao por impressao geral."
+                            ),
+                            buildQuestion(
+                                "Como a banca costuma montar pegadinhas?",
+                                [
+                                    "Mudando todo o tema",
+                                    "Eliminando o enunciado",
+                                    "Trocando o termo que muda o sentido",
+                                    "Retirando todas as alternativas"
+                                ],
+                                2,
+                                "A pegadinha real costuma morar em um termo pequeno, nao no assunto inteiro."
+                            ),
+                            buildQuestion(
+                                "O que fazer com excecoes recorrentes?",
+                                [
+                                    "Misturar com a regra",
+                                    "Separar visualmente da regra",
+                                    "Ignorar para nao confundir",
+                                    "Deixar para o final sem revisar"
+                                ],
+                                1,
+                                "Separar a excecao da regra evita erro por automatismo."
+                            )
+                        ],
+                        [
+                            buildQuestion(
+                                "Qual detalhe costuma decidir entre duas alternativas muito proximas?",
+                                [
+                                    "A fonte do PDF",
+                                    "A palavra de contraste",
+                                    "O tamanho da frase",
+                                    "A ordem alfabetica"
+                                ],
+                                1,
+                                "A palavra de contraste costuma separar a correta da quase correta."
+                            ),
+                            buildQuestion(
+                                "Qual atitude melhora o acerto em temas com excecao recorrente?",
+                                [
+                                    "Juntar excecao e regra numa unica memoria",
+                                    "Marcar a condicao que ativa a excecao",
+                                    "Confiar na primeira impressao",
+                                    "Ler mais rapido"
+                                ],
+                                1,
+                                "A excecao so funciona direito quando sua condicao aparece junto."
+                            ),
+                            buildQuestion(
+                                "O que reduz mais erro por automatismo?",
+                                [
+                                    "Comparar item por item",
+                                    "Marcar a primeira opcao familiar",
+                                    "Ignorar limitadores",
+                                    "Responder sem revisar"
+                                ],
+                                0,
+                                "Comparacao deliberada freia o impulso de responder pela semelhanca."
+                            )
+                        ],
+                        [
+                            buildQuestion(
+                                "Qual sinal indica dominio mais fino do bloco?",
+                                [
+                                    "Saber o tema geral",
+                                    "Justificar por que a quase correta ainda esta errada",
+                                    "Lembrar a ordem das paginas",
+                                    "Responder sempre mais rapido"
+                                ],
+                                1,
+                                "Dominar o bloco fino e conseguir explicar a diferenca entre certa e quase certa."
+                            ),
+                            buildQuestion(
+                                "O que mais costuma invalidar uma alternativa aparentemente correta?",
+                                [
+                                    "Uma restricao pequena",
+                                    "Um titulo bonito",
+                                    "Uma frase curta",
+                                    "O mesmo exemplo"
+                                ],
+                                0,
+                                "Em temas de contraste, a restricao pequena quase sempre muda o valor da resposta."
+                            ),
+                            buildQuestion(
+                                "Qual revisao faz mais sentido antes da mini prova?",
+                                [
+                                    "Passar o olho so nos titulos",
+                                    "Voltar aos contrastes e excecoes principais",
+                                    "Ignorar palavras-chave",
+                                    "Trocar criterio por exemplo"
+                                ],
+                                1,
+                                "Antes da mini prova, revisar contraste e excecao limpa o ponto mais sensivel do bloco."
+                            )
+                        ]
+                    ],
                     trueFalse: [
                         buildTrueFalse(
                             "Uma palavra-chave pode mudar completamente o sentido de uma alternativa.",
@@ -364,6 +685,59 @@
                             "Comparar reduz automatismo e melhora o acerto."
                         )
                     ],
+                    trueFalseSeries: [
+                        [
+                            buildTrueFalse(
+                                "Uma palavra-chave pode mudar completamente o sentido de uma alternativa.",
+                                true,
+                                "Muitas pegadinhas estao em uma unica palavra."
+                            ),
+                            buildTrueFalse(
+                                "Excecoes devem ser lidas como se fossem regra para acelerar a prova.",
+                                false,
+                                "Excecao precisa ser marcada como excecao."
+                            ),
+                            buildTrueFalse(
+                                "Comparacoes diretas ajudam a reduzir erro por semelhanca superficial.",
+                                true,
+                                "Comparar reduz automatismo e melhora o acerto."
+                            )
+                        ],
+                        [
+                            buildTrueFalse(
+                                "Quando duas alternativas parecem irmas, comparar palavra-chave e limite ajuda a decidir.",
+                                true,
+                                "O contraste fino costuma estar justamente nesses elementos pequenos."
+                            ),
+                            buildTrueFalse(
+                                "Se a alternativa parece familiar, ja nao e necessario verificar restricoes ou condicoes.",
+                                false,
+                                "Familiaridade sem checagem de limite e caminho classico para erro."
+                            ),
+                            buildTrueFalse(
+                                "Separar regra e excecao visualmente reduz resposta por automatismo.",
+                                true,
+                                "Essa divisao deixa o criterio mais limpo no momento da prova."
+                            )
+                        ],
+                        [
+                            buildTrueFalse(
+                                "A excecao deve ser revisada colada na regra para o cerebro economizar leitura.",
+                                false,
+                                "Quando ficam grudadas, a tendencia e embaralhar as duas."
+                            ),
+                            buildTrueFalse(
+                                "O erro por semelhanca superficial costuma cair quando voce compara item por item.",
+                                true,
+                                "Comparacao deliberada enfraquece o impulso de responder pela primeira impressao."
+                            ),
+                            buildTrueFalse(
+                                "Pegadinha boa troca o criterio em um detalhe pequeno, nao necessariamente o tema inteiro.",
+                                true,
+                                "A banca costuma deslocar o sentido por uma palavra, limite ou excecao."
+                            )
+                        ]
+                    ],
                     flashcards: [
                         buildFlashcard(
                             "Mnemonico CPL",
@@ -380,6 +754,60 @@
                             "Uma palavra muda tudo.",
                             "Procure conectivos e limitadores antes de marcar."
                         )
+                    ]
+                    ,
+                    flashcardSeries: [
+                        [
+                            buildFlashcard(
+                                "Mnemonico CPL",
+                                "Comparar -> Palavra-chave -> Limite.",
+                                "Quando duas alternativas parecerem irmas, rode CPL antes de decidir."
+                            ),
+                            buildFlashcard(
+                                "Regra x excecao",
+                                "Excecao nunca revisa colada na regra.",
+                                "Separar visualmente evita resposta por automatismo."
+                            ),
+                            buildFlashcard(
+                                "Pegadinha classica",
+                                "Uma palavra muda tudo.",
+                                "Procure conectivos e limitadores antes de marcar."
+                            )
+                        ],
+                        [
+                            buildFlashcard(
+                                "Pergunta de ouro",
+                                "O que exatamente mudou aqui?",
+                                "Essa pergunta quebra a leitura por semelhanca superficial."
+                            ),
+                            buildFlashcard(
+                                "Erro fino",
+                                "Tema certo, criterio errado.",
+                                "Muita alternativa quase correta cai nessa armadilha."
+                            ),
+                            buildFlashcard(
+                                "Excecao segura",
+                                "So vale com a condicao junto.",
+                                "Sem a condicao, voce provavelmente voltou para a regra."
+                            )
+                        ],
+                        [
+                            buildFlashcard(
+                                "Olho clinico",
+                                "Contraste decide mais que familiaridade.",
+                                "Se parece muito facil, procure o limitador."
+                            ),
+                            buildFlashcard(
+                                "Quase correta",
+                                "Explique por que ainda esta errada.",
+                                "Esse e o teste real de dominio fino."
+                            ),
+                            buildFlashcard(
+                                "Revisao final",
+                                "Regra, excecao, palavra-chave.",
+                                "Esse trio limpa o bloco antes da mini prova."
+                            )
+                        ]
                     ]
                 },
                 exam: {
@@ -777,7 +1205,9 @@
             index: 0,
             answers: [],
             isComplete: false,
-            completedAt: ""
+            completedAt: "",
+            currentSeriesIndex: 0,
+            freeSeriesUsed: 1
         };
     }
 
@@ -786,7 +1216,9 @@
             answers: {},
             submitted: false,
             score: null,
-            focusIndex: 0
+            focusIndex: 0,
+            currentSeriesIndex: 0,
+            freeSeriesUsed: 1
         };
     }
 
@@ -795,7 +1227,9 @@
             index: 0,
             flipped: false,
             known: [],
-            done: false
+            done: false,
+            currentSeriesIndex: 0,
+            freeSeriesUsed: 1
         };
     }
 
@@ -1242,6 +1676,77 @@
             return this.state.sessions[blockId] ? this.state.sessions[blockId][type] : null;
         },
 
+        getPracticeSeriesMeta(type) {
+            const session = this.getActiveSession(type) || {};
+            const block = this.getActiveBlock();
+            const seriesByType = {
+                quiz: Array.isArray(block.practice.quizSeries) && block.practice.quizSeries.length
+                    ? block.practice.quizSeries
+                    : [block.practice.quiz],
+                trueFalse: Array.isArray(block.practice.trueFalseSeries) && block.practice.trueFalseSeries.length
+                    ? block.practice.trueFalseSeries
+                    : [block.practice.trueFalse],
+                flashcards: Array.isArray(block.practice.flashcardSeries) && block.practice.flashcardSeries.length
+                    ? block.practice.flashcardSeries
+                    : [block.practice.flashcards]
+            };
+            const totalSeries = seriesByType[type]?.length || 1;
+            const freeSeriesLimit = Math.min(3, totalSeries);
+            const currentSeries = Math.max(
+                1,
+                Math.min(
+                    freeSeriesLimit,
+                    Number.isFinite(session.currentSeriesIndex)
+                        ? session.currentSeriesIndex + 1
+                        : (session.freeSeriesUsed || 1)
+                )
+            );
+            const generatedSeriesCount = Math.max(
+                currentSeries,
+                Math.min(freeSeriesLimit, session.freeSeriesUsed || currentSeries)
+            );
+
+            return {
+                currentSeries,
+                freeSeriesLimit,
+                generatedSeriesCount,
+                hasMoreFreeSeries: generatedSeriesCount < freeSeriesLimit
+            };
+        },
+
+        getActiveTrueFalseItems() {
+            const block = this.getActiveBlock();
+            const session = this.getActiveSession("trueFalse");
+            const series = Array.isArray(block.practice.trueFalseSeries) && block.practice.trueFalseSeries.length
+                ? block.practice.trueFalseSeries
+                : [block.practice.trueFalse];
+            const index = Math.max(0, Math.min(series.length - 1, session?.currentSeriesIndex || 0));
+
+            return series[index] || block.practice.trueFalse;
+        },
+
+        getActiveQuizItems() {
+            const block = this.getActiveBlock();
+            const session = this.getActiveSession("quiz");
+            const series = Array.isArray(block.practice.quizSeries) && block.practice.quizSeries.length
+                ? block.practice.quizSeries
+                : [block.practice.quiz];
+            const index = Math.max(0, Math.min(series.length - 1, session?.currentSeriesIndex || 0));
+
+            return series[index] || block.practice.quiz;
+        },
+
+        getActiveFlashcardItems() {
+            const block = this.getActiveBlock();
+            const session = this.getActiveSession("flashcards");
+            const series = Array.isArray(block.practice.flashcardSeries) && block.practice.flashcardSeries.length
+                ? block.practice.flashcardSeries
+                : [block.practice.flashcards];
+            const index = Math.max(0, Math.min(series.length - 1, session?.currentSeriesIndex || 0));
+
+            return series[index] || block.practice.flashcards;
+        },
+
         updateActiveSession(type, updater) {
             const blockId = this.state.activeBlockId;
             const current = this.getActiveSession(type);
@@ -1275,6 +1780,21 @@
                 flashcards: createFlashcardSession(block.practice.flashcards),
                 miniExam: createMiniExamSession(block.exam.questions)
             };
+            if (type === "quiz") {
+                const current = this.getActiveSession("quiz");
+                seeds.quiz.currentSeriesIndex = current?.currentSeriesIndex || 0;
+                seeds.quiz.freeSeriesUsed = current?.freeSeriesUsed || 1;
+            }
+            if (type === "trueFalse") {
+                const current = this.getActiveSession("trueFalse");
+                seeds.trueFalse.currentSeriesIndex = current?.currentSeriesIndex || 0;
+                seeds.trueFalse.freeSeriesUsed = current?.freeSeriesUsed || 1;
+            }
+            if (type === "flashcards") {
+                const current = this.getActiveSession("flashcards");
+                seeds.flashcards.currentSeriesIndex = current?.currentSeriesIndex || 0;
+                seeds.flashcards.freeSeriesUsed = current?.freeSeriesUsed || 1;
+            }
             return this.updateActiveSession(type, seeds[type]);
         },
 
@@ -1297,9 +1817,9 @@
         },
 
         advanceQuiz() {
-            const block = this.getActiveBlock();
+            const items = this.getActiveQuizItems();
             return this.updateActiveSession("quiz", (session) => {
-                if (session.index >= block.practice.quiz.length - 1) {
+                if (session.index >= items.length - 1) {
                     session.isComplete = true;
                     session.completedAt = new Date().toISOString();
                 } else {
@@ -1317,16 +1837,36 @@
         },
 
         submitTrueFalse() {
-            const block = this.getActiveBlock();
+            const items = this.getActiveTrueFalseItems();
             return this.updateActiveSession("trueFalse", (session) => {
                 let hits = 0;
-                block.practice.trueFalse.forEach((item, index) => {
+                items.forEach((item, index) => {
                     if (session.answers[index] === item.answer) {
                         hits += 1;
                     }
                 });
                 session.submitted = true;
                 session.score = hits;
+                return session;
+            });
+        },
+
+        advanceTrueFalseSeries() {
+            const block = this.getActiveBlock();
+            const series = Array.isArray(block.practice.trueFalseSeries) && block.practice.trueFalseSeries.length
+                ? block.practice.trueFalseSeries
+                : [block.practice.trueFalse];
+
+            return this.updateActiveSession("trueFalse", (session) => {
+                const nextFreeSeriesUsed = Math.min(series.length, (session.freeSeriesUsed || 1) + 1);
+                const nextSeriesIndex = Math.min(series.length - 1, nextFreeSeriesUsed - 1);
+
+                session.answers = {};
+                session.submitted = false;
+                session.score = null;
+                session.focusIndex = 0;
+                session.freeSeriesUsed = nextFreeSeriesUsed;
+                session.currentSeriesIndex = nextSeriesIndex;
                 return session;
             });
         },
@@ -1354,18 +1894,18 @@
 
             return this.updateActiveSession(type, (session) => {
                 if (type === "quiz") {
-                    session.index = nextIndex;
+                    session.index = Math.max(0, Math.min(this.getActiveQuizItems().length - 1, nextIndex));
                     session.isComplete = false;
                     return session;
                 }
 
                 if (type === "trueFalse") {
-                    session.focusIndex = nextIndex;
+                    session.focusIndex = Math.max(0, Math.min(this.getActiveTrueFalseItems().length - 1, nextIndex));
                     return session;
                 }
 
                 if (type === "flashcards") {
-                    session.index = nextIndex;
+                    session.index = Math.max(0, Math.min(this.getActiveFlashcardItems().length - 1, nextIndex));
                     session.done = false;
                     session.flipped = false;
                     return session;
@@ -1375,16 +1915,111 @@
             });
         },
 
-        markFlashcard(known) {
+        selectPracticeSeries(type, seriesIndex) {
             const block = this.getActiveBlock();
+            const current = this.getActiveSession(type) || {};
+            const seriesByType = {
+                quiz: Array.isArray(block.practice.quizSeries) && block.practice.quizSeries.length
+                    ? block.practice.quizSeries
+                    : [block.practice.quiz],
+                trueFalse: Array.isArray(block.practice.trueFalseSeries) && block.practice.trueFalseSeries.length
+                    ? block.practice.trueFalseSeries
+                    : [block.practice.trueFalse],
+                flashcards: Array.isArray(block.practice.flashcardSeries) && block.practice.flashcardSeries.length
+                    ? block.practice.flashcardSeries
+                    : [block.practice.flashcards]
+            };
+            const series = seriesByType[type];
+            const maxAvailableIndex = Math.max(
+                0,
+                Math.min(series.length - 1, (current.freeSeriesUsed || 1) - 1)
+            );
+            const nextSeriesIndex = Math.max(
+                0,
+                Math.min(maxAvailableIndex, Number(seriesIndex) || 0)
+            );
+
+            return this.updateActiveSession(type, (session) => {
+                session.currentSeriesIndex = nextSeriesIndex;
+
+                if (type === "quiz") {
+                    session.index = 0;
+                    session.answers = [];
+                    session.isComplete = false;
+                    session.completedAt = "";
+                    return session;
+                }
+
+                if (type === "trueFalse") {
+                    session.answers = {};
+                    session.submitted = false;
+                    session.score = null;
+                    session.focusIndex = 0;
+                    return session;
+                }
+
+                if (type === "flashcards") {
+                    session.index = 0;
+                    session.flipped = false;
+                    session.known = [];
+                    session.done = false;
+                    return session;
+                }
+
+                return session;
+            });
+        },
+
+        markFlashcard(known) {
+            const items = this.getActiveFlashcardItems();
             return this.updateActiveSession("flashcards", (session) => {
                 session.known[session.index] = known;
                 session.flipped = false;
-                if (session.index < block.practice.flashcards.length - 1) {
+                if (session.index < items.length - 1) {
                     session.index += 1;
                 } else {
                     session.done = true;
                 }
+                return session;
+            });
+        },
+
+        advanceQuizSeries() {
+            const block = this.getActiveBlock();
+            const series = Array.isArray(block.practice.quizSeries) && block.practice.quizSeries.length
+                ? block.practice.quizSeries
+                : [block.practice.quiz];
+
+            return this.updateActiveSession("quiz", (session) => {
+                const nextFreeSeriesUsed = Math.min(series.length, (session.freeSeriesUsed || 1) + 1);
+                const nextSeriesIndex = Math.min(series.length - 1, nextFreeSeriesUsed - 1);
+
+                session.index = 0;
+                session.answers = [];
+                session.isComplete = false;
+                session.completedAt = "";
+                session.freeSeriesUsed = nextFreeSeriesUsed;
+                session.currentSeriesIndex = nextSeriesIndex;
+                return session;
+            });
+        },
+
+        advanceFlashcardSeries() {
+            const block = this.getActiveBlock();
+            const series = Array.isArray(block.practice.flashcardSeries) && block.practice.flashcardSeries.length
+                ? block.practice.flashcardSeries
+                : [block.practice.flashcards];
+
+            return this.updateActiveSession("flashcards", (session) => {
+                const nextFreeSeriesUsed = Math.min(series.length, (session.freeSeriesUsed || 1) + 1);
+                const nextSeriesIndex = Math.min(series.length - 1, nextFreeSeriesUsed - 1);
+
+                session.index = 0;
+                session.flipped = false;
+                session.known = [];
+                session.done = false;
+                session.freeSeriesUsed = nextFreeSeriesUsed;
+                session.currentSeriesIndex = nextSeriesIndex;
                 return session;
             });
         },
@@ -1468,14 +2103,8 @@
                 blockTab: this.state.blockTab,
                 blockFullScreen: this.state.blockFullScreen,
                 blockAssistMode: this.state.blockAssistMode,
-                highlightedDocument: clone(this.state.highlightedDocument),
-                savedSummaries: clone(this.state.savedSummaries),
-                activeSavedSummaryId: this.state.activeSavedSummaryId,
-                studyLibrary: clone(this.state.studyLibrary),
-                activeLibraryItemId: this.state.activeLibraryItemId,
                 savedDraftId: this.state.savedDraftId,
                 savedAt: this.state.savedAt,
-                sessionNote: clone(this.state.sessionNote),
                 progressLabel: this.state.progressLabel
             };
         },

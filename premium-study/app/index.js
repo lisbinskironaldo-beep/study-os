@@ -9,6 +9,8 @@
         fileInput: null,
         persistenceReady: false,
         activeRingControl: null,
+        persistTimer: null,
+        persistPromise: null,
 
         async init(options = {}) {
             this.root = options.root || document.getElementById("premium-studyModule");
@@ -70,7 +72,7 @@
                         window.PremiumStudyStore.setMaterial(file);
                         window.PremiumStudyRouter.goTo("exam-date");
                         this.render();
-                        this.persistCurrentState();
+                        this.schedulePersist(80);
                     }
                 }
             });
@@ -101,7 +103,7 @@
 
             const clearPointer = () => {
                 if (this.activeRingControl) {
-                    this.persistCurrentState();
+                    this.schedulePersist(120);
                 }
                 this.activeRingControl = null;
             };
@@ -210,6 +212,51 @@
             this.persistenceReady = true;
         },
 
+        schedulePersist(delay = 180) {
+            const state = window.PremiumStudyStore.getState();
+            if (!window.PremiumStudyStorage || !state.materialName) {
+                return;
+            }
+
+            if (this.persistTimer) {
+                window.clearTimeout(this.persistTimer);
+            }
+
+            this.persistTimer = window.setTimeout(() => {
+                this.persistTimer = null;
+                this.persistPromise = this.persistCurrentState()
+                    .catch((error) => console.error(error))
+                    .finally(() => {
+                        this.persistPromise = null;
+                    });
+            }, delay);
+        },
+
+        async flushPersist() {
+            const state = window.PremiumStudyStore.getState();
+            if (!window.PremiumStudyStorage || !state.materialName) {
+                return;
+            }
+
+            if (this.persistTimer) {
+                window.clearTimeout(this.persistTimer);
+                this.persistTimer = null;
+            }
+
+            if (this.persistPromise) {
+                await this.persistPromise;
+                return;
+            }
+
+            this.persistPromise = this.persistCurrentState()
+                .catch((error) => console.error(error))
+                .finally(() => {
+                    this.persistPromise = null;
+                });
+
+            await this.persistPromise;
+        },
+
         openPrintWindow(title, bodyContent) {
             const win = window.open("", "_blank", "width=960,height=760");
             if (!win) {
@@ -308,7 +355,7 @@ ${sections}`
                                 progressLabel: "Sua trilha inicial esta pronta para voce escolher como quer entrar no conteudo."
                             });
                             this.render();
-                            this.persistCurrentState();
+                            this.schedulePersist(120);
                         }, 520);
                         this.analysisTimers.push(finishId);
                     }
@@ -427,14 +474,14 @@ ${sections}`
                     router.goTo("mode-select");
                     this.render();
                     await this.syncNativeFullScreen();
-                    await this.persistCurrentState();
+                    await this.flushPersist();
                     return;
                 }
                 if (store.getState().step !== "entry") {
                     router.goTo("entry");
                     this.render();
                     await this.syncNativeFullScreen();
-                    await this.persistCurrentState();
+                    await this.flushPersist();
                     return;
                 }
                 if (window.Core && typeof window.Core.goHome === "function") {
@@ -633,7 +680,7 @@ ${sections}`
                 shouldPersist = true;
                 break;
             case "open-practice-slot":
-                store.focusPracticeItem(payload.practiceType, Number(payload.slotIndex));
+                store.selectPracticeSeries(payload.practiceType, Number(payload.slotIndex));
                 if (payload.practiceType === "quiz") {
                     router.goTo("quiz");
                 } else if (payload.practiceType === "trueFalse") {
@@ -675,9 +722,6 @@ ${sections}`
                 router.goTo("flashcards");
                 shouldPersist = true;
                 break;
-            case "request-extra-quiz":
-            case "request-extra-true-false":
-            case "request-extra-flashcards":
             case "request-extra-mini-exam":
                 store.setSessionNote({
                     step: store.getState().step,
@@ -687,6 +731,63 @@ ${sections}`
                 });
                 shouldPersist = true;
                 break;
+            case "request-extra-quiz": {
+                const seriesMeta = store.getPracticeSeriesMeta("quiz");
+
+                if (seriesMeta.hasMoreFreeSeries) {
+                    store.advanceQuizSeries();
+                    store.clearSessionNote();
+                    shouldPersist = true;
+                    break;
+                }
+
+                store.setSessionNote({
+                    step: store.getState().step,
+                    tone: "premium",
+                    title: "Extras liberados no premium",
+                    message: "As 3 series gratis do questionario ja foram usadas. No premium, voce libera novas series e reformulacoes por outra otica."
+                });
+                shouldPersist = true;
+                break;
+            }
+            case "request-extra-true-false": {
+                const seriesMeta = store.getPracticeSeriesMeta("trueFalse");
+
+                if (seriesMeta.hasMoreFreeSeries) {
+                    store.advanceTrueFalseSeries();
+                    store.clearSessionNote();
+                    shouldPersist = true;
+                    break;
+                }
+
+                store.setSessionNote({
+                    step: store.getState().step,
+                    tone: "premium",
+                    title: "Extras liberados no premium",
+                    message: "As 3 series gratis de verdadeiro ou falso ja foram usadas. No premium, voce libera novas series e reformulacoes por outra otica."
+                });
+                shouldPersist = true;
+                break;
+            }
+            case "request-extra-flashcards": {
+                const seriesMeta = store.getPracticeSeriesMeta("flashcards");
+
+                if (seriesMeta.hasMoreFreeSeries) {
+                    store.advanceFlashcardSeries();
+                    store.clearSessionNote();
+                    shouldPersist = true;
+                    break;
+                }
+
+                store.setSessionNote({
+                    step: store.getState().step,
+                    tone: "premium",
+                    title: "Extras liberados no premium",
+                    message: "As 3 series gratis de flashcards ja foram usadas. No premium, voce libera novas series e reformulacoes por outra otica."
+                });
+                shouldPersist = true;
+                break;
+            }
             case "flip-flashcard":
                 store.flipFlashcard();
                 shouldPersist = true;
@@ -786,7 +887,7 @@ ${sections}`
             }
 
             if (shouldPersist) {
-                await this.persistCurrentState();
+                this.schedulePersist();
             }
         },
 

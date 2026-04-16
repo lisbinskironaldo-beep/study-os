@@ -293,32 +293,28 @@
 </article>`;
     }
 
-    function getPracticeSlots(state, type) {
-        const block = Store().getActiveBlock();
-        const session = state.sessions[state.activeBlockId][type];
-        const targets = block.practice.targets || {};
-        const total = targets[type] || 3;
+    function getPracticeSlots(state, type, seriesMeta) {
+        const session = state.sessions[state.activeBlockId][type] || {};
+        const total = Math.max(1, Number(seriesMeta?.freeSeriesLimit) || 3);
+        const filledCount = Math.max(
+            0,
+            Math.min(total, Number(seriesMeta?.generatedSeriesCount) || 1)
+        );
+        const activeIndex = Math.max(
+            0,
+            Math.min(
+                total - 1,
+                Number.isFinite(session.currentSeriesIndex)
+                    ? session.currentSeriesIndex
+                    : Math.max(0, filledCount - 1)
+            )
+        );
 
-        return Array.from({ length: total }, (_, index) => {
-            if (type === "quiz") {
-                return {
-                    index,
-                    done: typeof session.answers[index] === "number"
-                };
-            }
-
-            if (type === "trueFalse") {
-                return {
-                    index,
-                    done: Object.prototype.hasOwnProperty.call(session.answers, index)
-                };
-            }
-
-            return {
-                index,
-                done: typeof session.known[index] === "boolean"
-            };
-        });
+        return Array.from({ length: total }, (_, index) => ({
+            index,
+            done: index < filledCount,
+            active: index === activeIndex
+        }));
     }
 
     function renderPracticeSlotPots(type, slots) {
@@ -332,7 +328,7 @@
 <div class="premium-practice-slots">
     <div class="premium-practice-slot-row">
         ${slots.map((slot) => `
-        <button type="button" class="premium-practice-slot ${slot.done ? "is-done" : ""}" data-premium-action="open-practice-slot" data-practice-type="${type}" data-slot-index="${slot.index}" aria-label="Abrir item ${slot.index + 1}">
+        <button type="button" class="premium-practice-slot ${slot.done ? "is-done" : ""} ${slot.active ? "is-active" : ""}" data-premium-action="open-practice-slot" data-practice-type="${type}" data-slot-index="${slot.index}" aria-label="Abrir serie ${slot.index + 1}">
             <span class="premium-practice-slot-fill" style="height:${slot.done ? 100 : 12}%"></span>
             <strong>${slot.index + 1}</strong>
         </button>`).join("")}
@@ -347,12 +343,12 @@
 </div>`;
     }
 
-    function renderPracticeCard({ action, type, label, title, description, slots, primary = false }) {
+    function renderPracticeCard({ action, type, label, title, description, slots, seriesMeta, primary = false }) {
         return `
     <article class="premium-practice-card ${primary ? "premium-practice-card-primary" : ""}" data-premium-action="${action}" role="button" tabindex="0" aria-label="${UI().escapeHtml(title)}">
         <div class="premium-practice-card-head">
             <span>${label}</span>
-            <em>3 gratis</em>
+            <em>${seriesMeta.currentSeries}/${seriesMeta.freeSeriesLimit}</em>
         </div>
         <strong>${title}</strong>
         <p>${description}</p>
@@ -515,9 +511,12 @@
     }
 
     function practice(state) {
-        const quizSlots = getPracticeSlots(state, "quiz");
-        const trueFalseSlots = getPracticeSlots(state, "trueFalse");
-        const flashcardSlots = getPracticeSlots(state, "flashcards");
+        const quizSeriesMeta = Store().getPracticeSeriesMeta("quiz");
+        const trueFalseSeriesMeta = Store().getPracticeSeriesMeta("trueFalse");
+        const flashcardSeriesMeta = Store().getPracticeSeriesMeta("flashcards");
+        const quizSlots = getPracticeSlots(state, "quiz", quizSeriesMeta);
+        const trueFalseSlots = getPracticeSlots(state, "trueFalse", trueFalseSeriesMeta);
+        const flashcardSlots = getPracticeSlots(state, "flashcards", flashcardSeriesMeta);
 
         return `
 <section class="premium-practice-grid premium-practice-grid-simple">
@@ -528,6 +527,7 @@
         title: "Multipla escolha",
         description: "Treino direto para criterio, leitura e decisao.",
         slots: quizSlots,
+        seriesMeta: quizSeriesMeta,
         primary: true
     })}
     ${renderPracticeCard({
@@ -536,7 +536,8 @@
         label: "Verdadeiro ou falso",
         title: "Criterio e contraste",
         description: "Bom para perceber pegadinha e limite da regra.",
-        slots: trueFalseSlots
+        slots: trueFalseSlots,
+        seriesMeta: trueFalseSeriesMeta
     })}
     ${renderPracticeCard({
         action: "open-flashcards",
@@ -544,16 +545,21 @@
         label: "Flashcards",
         title: "Memorizacao ativa",
         description: "Mnemonicos, gatilhos e fixacao rapida do bloco.",
-        slots: flashcardSlots
+        slots: flashcardSlots,
+        seriesMeta: flashcardSeriesMeta
     })}
     ${renderSessionNote(state, "practice")}
 </section>`;
     }
 
     function quiz(state) {
-        const block = Store().getActiveBlock();
+        const items = Store().getActiveQuizItems();
         const session = state.sessions[state.activeBlockId].quiz;
-        const hits = block.practice.quiz.reduce((sum, item, index) => (
+        const seriesMeta = Store().getPracticeSeriesMeta("quiz");
+        const extraButtonLabel = seriesMeta.hasMoreFreeSeries
+            ? "Gerar mais"
+            : "Gerar mais no premium";
+        const hits = items.reduce((sum, item, index) => (
             session.answers[index] === item.correctIndex ? sum + 1 : sum
         ), 0);
 
@@ -562,27 +568,27 @@
 <section class="premium-result-shell">
     <article class="premium-result-hero premium-result-hero-compact">
         <span class="premium-detail-label">Questionario concluido</span>
-        <strong>${hits}/${block.practice.quiz.length}</strong>
+        <strong>${seriesMeta.currentSeries}/${seriesMeta.freeSeriesLimit}</strong>
         <p>Voce terminou o questionario base deste assunto.</p>
     </article>
     ${UI().actionBar([
         { action: "open-practice", label: "Voltar para pratica", variant: "secondary" },
-        { action: "request-extra-quiz", label: "Gerar mais no premium", variant: "ghost" },
+        { action: "request-extra-quiz", label: extraButtonLabel, variant: "ghost" },
         { action: "open-mini-exam", label: "Ir para mini prova", variant: "primary" }
     ])}
     ${renderSessionNote(state, "quiz")}
 </section>`;
         }
 
-        const question = block.practice.quiz[session.index];
+        const question = items[session.index];
         const hasAnswer = typeof session.answers[session.index] === "number";
         const answer = session.answers[session.index];
 
         return `
 <section class="premium-quiz-shell">
     <div class="premium-question-meta">
-        <span>Questao ${session.index + 1} de ${block.practice.quiz.length}</span>
-        <strong>${UI().escapeHtml(block.title)}</strong>
+        <span>Questao ${session.index + 1} de ${items.length}</span>
+        <strong>Serie ${seriesMeta.currentSeries}/${seriesMeta.freeSeriesLimit}</strong>
     </div>
     <article class="premium-question-card">
         <h2>${UI().escapeHtml(question.prompt)}</h2>
@@ -590,7 +596,10 @@
             ${question.options.map((option, index) => `
             <button
                 type="button"
-                class="premium-option-card ${hasAnswer && answer === index ? "is-selected" : ""} ${hasAnswer && index === question.correctIndex ? "is-correct" : ""}"
+                class="premium-option-card
+                    ${hasAnswer && answer === index ? "is-selected" : ""}
+                    ${hasAnswer && index === question.correctIndex ? "is-correct" : ""}
+                    ${hasAnswer && answer === index && answer !== question.correctIndex ? "is-incorrect" : ""}"
                 data-premium-action="answer-quiz"
                 data-answer-index="${index}"
                 ${hasAnswer ? "disabled" : ""}
@@ -605,7 +614,7 @@
             <p>${UI().escapeHtml(question.rationale)}</p>
         </div>
         ${UI().actionBar([
-            { action: session.index >= block.practice.quiz.length - 1 ? "finish-quiz" : "continue-quiz", label: session.index >= block.practice.quiz.length - 1 ? "Ver resultado" : "Proxima", variant: "primary" }
+            { action: session.index >= items.length - 1 ? "finish-quiz" : "continue-quiz", label: session.index >= items.length - 1 ? "Ver resultado" : "Proxima", variant: "primary" }
         ])}
         ${renderSessionNote(state, "quiz")}` : ""}
     </article>
@@ -615,15 +624,20 @@
     function trueFalse(state) {
         const block = Store().getActiveBlock();
         const session = state.sessions[state.activeBlockId].trueFalse;
+        const items = Store().getActiveTrueFalseItems();
+        const seriesMeta = Store().getPracticeSeriesMeta("trueFalse");
+        const extraButtonLabel = seriesMeta.hasMoreFreeSeries
+            ? "Gerar mais"
+            : "Gerar mais no premium";
 
         return `
 <section class="premium-vf-shell">
     <div class="premium-question-meta">
-        <span>Serie curta</span>
+        <span>Serie curta ${seriesMeta.currentSeries}/${seriesMeta.freeSeriesLimit}</span>
         <strong>${UI().escapeHtml(block.title)}</strong>
     </div>
     <div class="premium-vf-list">
-        ${block.practice.trueFalse.map((item, index) => {
+        ${items.map((item, index) => {
             const selectedValue = session.answers[index];
             const trueClasses = [
                 "premium-mini-toggle",
@@ -653,7 +667,7 @@
     ${session.submitted
         ? UI().actionBar([
             { action: "reset-true-false", label: "Refazer", variant: "secondary" },
-            { action: "request-extra-true-false", label: "Gerar mais no premium", variant: "ghost" },
+            { action: "request-extra-true-false", label: extraButtonLabel, variant: "ghost" },
             { action: "open-flashcards", label: "Ir para flashcards", variant: "primary" }
         ])
         : UI().actionBar([
@@ -664,9 +678,13 @@
     }
 
     function flashcards(state) {
-        const block = Store().getActiveBlock();
+        const items = Store().getActiveFlashcardItems();
         const session = state.sessions[state.activeBlockId].flashcards;
-        const card = block.practice.flashcards[session.index];
+        const seriesMeta = Store().getPracticeSeriesMeta("flashcards");
+        const extraButtonLabel = seriesMeta.hasMoreFreeSeries
+            ? "Gerar mais"
+            : "Gerar mais no premium";
+        const card = items[session.index];
         const isDone = session.known.filter((value) => value === true).length;
 
         if (session.done) {
@@ -674,12 +692,12 @@
 <section class="premium-result-shell">
     <article class="premium-result-hero premium-result-hero-compact">
         <span class="premium-detail-label">Flashcards concluidos</span>
-        <strong>${isDone}/${block.practice.flashcards.length}</strong>
+        <strong>${seriesMeta.currentSeries}/${seriesMeta.freeSeriesLimit}</strong>
         <p>Voce marcou ${isDone} cards como entendidos neste bloco.</p>
     </article>
     ${UI().actionBar([
         { action: "open-practice", label: "Voltar para pratica", variant: "secondary" },
-        { action: "request-extra-flashcards", label: "Gerar extras no premium", variant: "ghost" },
+        { action: "request-extra-flashcards", label: extraButtonLabel, variant: "ghost" },
         { action: "open-mini-exam", label: "Ir para mini prova", variant: "primary" }
     ])}
     ${renderSessionNote(state, "flashcards")}
@@ -689,7 +707,7 @@
         return `
 <section class="premium-flashcards-shell">
     <div class="premium-question-meta">
-        <span>Card ${session.index + 1} de ${block.practice.flashcards.length}</span>
+        <span>Card ${session.index + 1} de ${items.length}</span>
         <strong>${isDone} marcados como entendidos</strong>
     </div>
     <article class="premium-flashcard-card ${session.flipped ? "is-flipped" : ""}">

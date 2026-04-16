@@ -87,10 +87,67 @@
         };
     }
 
-    function buildStudyLibraryRecord(snapshot) {
-        const summary = buildDraftSummary(snapshot);
+    function sanitizeSnapshot(snapshot) {
+        if (!snapshot || typeof snapshot !== "object") {
+            return null;
+        }
+
         return {
-            id: snapshot.studyLibraryId || `library-${Date.now()}`,
+            step: snapshot.step || "entry",
+            returnStep: snapshot.returnStep || "",
+            accessTier: snapshot.accessTier || "guest",
+            studyTitle: snapshot.studyTitle || "",
+            studyLibraryId: snapshot.studyLibraryId || "",
+            materialName: snapshot.materialName || "",
+            materialSizeLabel: snapshot.materialSizeLabel || "",
+            materialPageCount: snapshot.materialPageCount || 0,
+            examDate: snapshot.examDate || "",
+            targetScore: snapshot.targetScore || 7,
+            studyHours: snapshot.studyHours || 1,
+            studyMinutes: snapshot.studyMinutes || 0,
+            blocks: Array.isArray(snapshot.blocks) ? snapshot.blocks : [],
+            sessions: snapshot.sessions && typeof snapshot.sessions === "object"
+                ? snapshot.sessions
+                : {},
+            activeBlockId: snapshot.activeBlockId || "",
+            blockTab: snapshot.blockTab || "aprender",
+            blockFullScreen: Boolean(snapshot.blockFullScreen),
+            blockAssistMode: snapshot.blockAssistMode || "",
+            savedDraftId: snapshot.savedDraftId || "",
+            savedAt: snapshot.savedAt || "",
+            progressLabel: snapshot.progressLabel || ""
+        };
+    }
+
+    function sanitizeStudyLibraryItem(item) {
+        if (!item || typeof item !== "object") {
+            return null;
+        }
+
+        const snapshot = sanitizeSnapshot(item.snapshot);
+        const base = snapshot || item;
+        const savedAt = item.savedAt || snapshot?.savedAt || new Date().toISOString();
+
+        return {
+            id: item.id || base.studyLibraryId || `library-${Date.now()}`,
+            title: item.title || base.studyTitle || base.materialName || "Estudo salvo",
+            materialName: item.materialName || base.materialName || "PDF sem nome",
+            examDate: item.examDate || base.examDate || "",
+            examDateLabel: item.examDateLabel || normalizeDateLabel(item.examDate || base.examDate),
+            targetScore: item.targetScore ?? base.targetScore ?? 7,
+            studyHours: item.studyHours ?? base.studyHours ?? 1,
+            studyMinutes: item.studyMinutes ?? base.studyMinutes ?? 0,
+            step: item.step || base.step || "entry",
+            savedAt,
+            snapshot
+        };
+    }
+
+    function buildStudyLibraryRecord(snapshot) {
+        const cleanSnapshot = sanitizeSnapshot(snapshot);
+        const summary = buildDraftSummary(cleanSnapshot || {});
+        return {
+            id: cleanSnapshot?.studyLibraryId || `library-${Date.now()}`,
             title: summary.title,
             materialName: summary.materialName,
             examDate: summary.examDate,
@@ -99,15 +156,23 @@
             studyHours: summary.studyHours,
             studyMinutes: summary.studyMinutes,
             step: summary.step,
-            savedAt: snapshot.savedAt || new Date().toISOString(),
-            snapshot
+            savedAt: cleanSnapshot?.savedAt || new Date().toISOString(),
+            snapshot: cleanSnapshot
         };
     }
 
     window.PremiumStudyStorage = {
         async getLatestDraft() {
             try {
-                return await withStore("readonly", (store) => requestToPromise(store.get(LATEST_KEY)));
+                const draft = await withStore("readonly", (store) => requestToPromise(store.get(LATEST_KEY)));
+                if (!draft) {
+                    return null;
+                }
+
+                return {
+                    ...draft,
+                    snapshot: sanitizeSnapshot(draft.snapshot)
+                };
             } catch (error) {
                 console.error(error);
                 return null;
@@ -119,10 +184,11 @@
                 return null;
             }
 
+            const cleanSnapshot = sanitizeSnapshot(snapshot);
             const draft = {
                 id: LATEST_KEY,
                 savedAt: new Date().toISOString(),
-                snapshot
+                snapshot: cleanSnapshot
             };
 
             try {
@@ -146,7 +212,7 @@
             try {
                 const record = await withStore("readonly", (store) => requestToPromise(store.get(STUDY_LIBRARY_KEY)));
                 return Array.isArray(record?.items)
-                    ? record.items
+                    ? record.items.map(sanitizeStudyLibraryItem).filter(Boolean)
                     : [];
             } catch (error) {
                 console.error(error);
