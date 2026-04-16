@@ -166,7 +166,7 @@
                     exam: false
                 },
                 learn: {
-                    summary: `Este bloco isola o nucleo de ${material}, priorizando termos, definicoes e relacoes que ajudam voce a entrar no conteudo sem desperdiçar tempo.`,
+                    summary: `Este bloco isola o nucleo de ${material}, priorizando termos, definicoes e relacoes que ajudam voce a entrar no conteudo sem desperdicar tempo.`,
                     hotPoints: [
                         "Entender o vocabulario principal antes de memorizar detalhes.",
                         "Separar o que e regra, o que e excecao e o que e exemplo.",
@@ -244,7 +244,7 @@
                     ],
                     flashcards: [
                         buildFlashcard(
-                            "Mnemônico TRE",
+                            "Mnemonico TRE",
                             "Termo -> Regra -> Excecao.",
                             "Abra o assunto sempre nessa ordem para nao confundir base com detalhe."
                         ),
@@ -256,7 +256,7 @@
                         buildFlashcard(
                             "Qual leitura gera mais resultado?",
                             "A que conecta conceitos em vez de decorar itens isolados.",
-                            "Relação vale mais do que lista solta."
+                            "Relacao vale mais do que lista solta."
                         )
                     ]
                 },
@@ -366,7 +366,7 @@
                     ],
                     flashcards: [
                         buildFlashcard(
-                            "Mnemônico CPL",
+                            "Mnemonico CPL",
                             "Comparar -> Palavra-chave -> Limite.",
                             "Quando duas alternativas parecerem irmas, rode CPL antes de decidir."
                         ),
@@ -785,7 +785,8 @@
         return {
             answers: {},
             submitted: false,
-            score: null
+            score: null,
+            focusIndex: 0
         };
     }
 
@@ -895,7 +896,7 @@
             latestLocalStudy: null,
             savedDraftId: "",
             savedAt: "",
-            sessionNote: "",
+            sessionNote: null,
             progressLabel: "Seu plano comeca quando o PDF entra."
         };
     }
@@ -935,6 +936,28 @@
             return this.state;
         },
 
+        clearSessionNote() {
+            if (!this.state.sessionNote) {
+                return this.state;
+            }
+
+            this.state = {
+                ...this.state,
+                sessionNote: null
+            };
+
+            return this.state;
+        },
+
+        setSessionNote(note) {
+            this.state = {
+                ...this.state,
+                sessionNote: note || null
+            };
+
+            return this.state;
+        },
+
         setMaterial(fileLike) {
             if (!fileLike) {
                 return this.state;
@@ -958,6 +981,7 @@
                 activeBlockId: blocks[0].id,
                 blockFullScreen: true,
                 blockAssistMode: "",
+                sessionNote: null,
                 progressLabel: "Material recebido. Agora vamos ajustar tudo ao seu prazo e a sua meta."
             };
 
@@ -968,6 +992,21 @@
             this.state = {
                 ...this.state,
                 latestLocalStudy: summary
+            };
+
+            return this.state;
+        },
+
+        setStudyTitle(title) {
+            const nextTitle = String(title || "").trim();
+            if (!nextTitle) {
+                return this.state;
+            }
+
+            this.state = {
+                ...this.state,
+                studyTitle: nextTitle,
+                progressLabel: "Nome do estudo atualizado."
             };
 
             return this.state;
@@ -1299,6 +1338,43 @@
             });
         },
 
+        focusPracticeItem(type, itemIndex) {
+            const block = this.getActiveBlock();
+            const limits = {
+                quiz: block.practice.quiz.length,
+                trueFalse: block.practice.trueFalse.length,
+                flashcards: block.practice.flashcards.length
+            };
+            const limit = limits[type];
+            if (!Number.isFinite(limit) || limit <= 0) {
+                return this.state;
+            }
+
+            const nextIndex = Math.max(0, Math.min(limit - 1, Number(itemIndex) || 0));
+
+            return this.updateActiveSession(type, (session) => {
+                if (type === "quiz") {
+                    session.index = nextIndex;
+                    session.isComplete = false;
+                    return session;
+                }
+
+                if (type === "trueFalse") {
+                    session.focusIndex = nextIndex;
+                    return session;
+                }
+
+                if (type === "flashcards") {
+                    session.index = nextIndex;
+                    session.done = false;
+                    session.flipped = false;
+                    return session;
+                }
+
+                return session;
+            });
+        },
+
         markFlashcard(known) {
             const block = this.getActiveBlock();
             return this.updateActiveSession("flashcards", (session) => {
@@ -1399,6 +1475,7 @@
                 activeLibraryItemId: this.state.activeLibraryItemId,
                 savedDraftId: this.state.savedDraftId,
                 savedAt: this.state.savedAt,
+                sessionNote: clone(this.state.sessionNote),
                 progressLabel: this.state.progressLabel
             };
         },
@@ -1437,6 +1514,7 @@
                 activeSavedSummaryId: snapshot.activeSavedSummaryId || defaults.activeSavedSummaryId,
                 studyLibrary: this.state.studyLibrary,
                 activeLibraryItemId: this.state.activeLibraryItemId,
+                sessionNote: snapshot.sessionNote || null,
                 calendarMonth: snapshot.examDate
                     ? Number(String(snapshot.examDate).split("-")[1]) - 1
                     : defaults.calendarMonth,

@@ -7,7 +7,7 @@ Status:
 - detalhado
 - subordinado a `docs/premium_study_constituicao_produto.md`
 
-Atualizado em 2026-04-15.
+Atualizado em 2026-04-16.
 
 ---
 
@@ -40,6 +40,7 @@ As frentes abaixo ficam para depois:
 - monetizacao
 - acesso premium real
 - estatisticas premium finais
+- novos modulos do ecossistema, como `Teste seu QI` e `Teste vocacional`
 
 ---
 
@@ -55,12 +56,42 @@ As frentes abaixo ficam para depois:
 8. Fase 7 - Refino final de UX, responsividade e estabilizacao
 9. Fase 8 - Frentes futuras de IA, premium real e operacao
 
+Documento relacionado para ideias futuras fora deste modulo:
+
+- `docs/future_modules_qi_vocacional.md`
+
 Regra:
 
 ```txt
 nao pular para a frente comercial ou de IA
 antes de o fluxo principal de estudo estar solido
 ```
+
+---
+
+## 3.1 Estado atual consolidado
+
+Status real do modulo em 2026-04-16:
+
+- Fase 0: concluida
+- Fase 1: concluida
+- Fase 2: concluida
+- Fase 3: concluida, com escopo ampliado
+- Fase 4: concluida
+- Fase 5: concluida
+- Fase 6: concluida
+- Fase 7: concluida para a fase de produto atual
+- Fase 8: adiada
+
+Mudancas ja implementadas fora da documentacao anterior:
+- `Biblioteca premium` na entrada
+- quarta opcao `Marcar` no modo inicial
+- documento com marcador de texto
+- exportacao em PDF do marcador
+- mapa de assuntos clicaveis
+- `Aprender` em full-screen
+- pratica com progresso visual por formato
+- mini prova com geracao base de 10 questoes
 
 ---
 
@@ -171,8 +202,8 @@ Processamento:
 - sem botoes embaixo
 
 Modo inicial:
-- `Aprender`, `Praticar` e `Prova`
-- tres opcoes lado a lado
+- `Aprender`, `Praticar`, `Prova` e `Marcar`
+- quatro opcoes lado a lado
 - resumo compacto do plano
 - `Voltar` no topo
 - resumo informativo, sem parecer botao
@@ -193,30 +224,31 @@ Entregar valor real de estudo antes de pratica avancada.
 
 ### Escopo
 
-- tela do bloco
-- aba `Aprender`
+- mapa de assuntos clicaveis
+- leitura por assunto
+- modo full-screen
 - resumo focado
-- pontos quentes
-- conceitos-chave
-- armadilhas comuns
-- botoes de IA guiada
+- secoes internas do assunto
+- acoes contextuais dentro do proprio assunto
 
 ### Telas obrigatorias
 
-1. `Bloco de estudo`
-2. `Resumo expandido` do bloco
+1. `Mapa de assuntos`
+2. `Resumo focado do assunto`
 
 ### Acoes obrigatorias
 
-- `Explicar melhor`
-- `Revisao rapida`
-- `Ir para pratica`
+- `Explicar melhor este assunto`
+- `Revisar este assunto em 5 pontos`
+- `Mini prova deste assunto`
+- `Proximo assunto`
 
 ### Regras obrigatorias
 
 - foco em leitura orientada
-- pouco texto corrido
-- secoes curtas
+- tela cheia com coluna central de leitura
+- rolagem liberada
+- pouco ruido visual
 - contexto sempre ligado ao bloco atual
 
 ### Criterios de aceite
@@ -251,13 +283,15 @@ Transformar o estudo em treino util.
 
 Tela de entrada da pratica:
 - tres formatos como cards de acao
-- resumo pequeno do bloco
+- sem painel `Plano em construcao`
+- progresso visual por formato no estilo `copo enchendo`
 
 Questionario:
 - uma questao por vez
 - 4 alternativas
 - correcao curta
 - botao `Proxima`
+- opcao `Gerar mais no premium`
 
 Verdadeiro ou falso:
 - serie curta de afirmacoes
@@ -267,6 +301,7 @@ Flashcards:
 - frente e verso
 - marcar `Entendi`
 - marcar `Revisar de novo`
+- usar mnemônicos, gatilhos e fixacao real
 
 ### Criterios de aceite
 
@@ -296,9 +331,10 @@ Simular pressao e medir rendimento do bloco.
 ### Regras obrigatorias
 
 Mini prova:
-- 8 a 12 questoes
+- geracao base de 10 questoes
 - tempo opcional
 - foco no bloco atual
+- `Gerar mais no premium` como acao separada
 
 Resultado:
 - percentual de acerto
@@ -325,13 +361,17 @@ Dar ao aluno um lugar claro para continuar depois.
 
 - trilha geral
 - lista de blocos
-- tela de retomada
+- retomada do ultimo estudo
+- biblioteca premium
 - nome editavel do estudo
+- restauracao do ponto salvo
+- navegacao correta ao fechar telas internas
 
 ### Telas obrigatorias
 
 1. `Sua trilha`
 2. `Retomar estudo`
+3. `Biblioteca premium`
 
 ### Regras obrigatorias
 
@@ -347,11 +387,18 @@ Retomada:
 - mostrar ultimo estudo salvo
 - permitir retomar rapidamente
 - permitir renomear depois
+- retomar no passo salvo
+
+Biblioteca premium:
+- listar materiais e estudos salvos
+- abrir um estudo salvo
+- ficar visualmente bloqueada fora do premium
 
 ### Criterios de aceite
 
 - o usuario consegue sair e voltar sem se perder
 - a trilha geral funciona como centro de continuidade
+- `Retomar estudo` nao joga o usuario para o inicio nem para um passo errado
 
 ---
 
@@ -368,6 +415,9 @@ Polir o fluxo inteiro antes das frentes futuras.
 - ajuste de pesos visuais
 - confirmacao de que informacao nao parece acao
 - restore points e documentacao final da fase
+- limpeza de textos e encoding
+- revisao do comportamento de fechar e voltar
+- validacao real do fluxo em browser
 
 ### Checklist obrigatorio
 
@@ -376,6 +426,9 @@ Polir o fluxo inteiro antes das frentes futuras.
 - nenhuma etapa com rolagem indevida
 - setas laterais sem deslocar visualmente o conteudo
 - desktop, tablet e mobile com leitura coerente
+- sem textos quebrados por encoding
+- sem placeholder de fase futura aparecendo no produto
+- sem diferenca entre comportamento documentado e comportamento real
 
 ### Criterios de aceite
 
@@ -407,20 +460,31 @@ esta fase nao entra enquanto as fases 1 a 7 nao estiverem fechadas e estaveis
 
 ## 13. Sequencia operacional recomendada a partir de agora
 
-Quando a execucao voltar ao codigo, a ordem correta e:
+Com a fase de produto principal fechada, a proxima frente recomendada passa a ser:
 
-1. consolidar `Processamento`
-2. consolidar `Modo inicial`
-3. construir `Aprender`
-4. construir `Pratica`
-5. construir `Mini prova`
-6. construir `Trilha geral`
-7. construir `Retomada`
-8. fazer polimento geral
+1. operacao premium real
+2. pagamentos e billing
+3. bloqueios reais de acesso premium
+4. extras premium conectados a regra de assinatura
+5. IA externa real para conteudo dinamico
+6. estatisticas premium
 
 ---
 
-## 14. Regra de entrega por fase
+## 14. Plano objetivo da proxima frente
+
+### Fase 8 - Frentes futuras
+
+Vai mudar ou implementar depois:
+- paywall premium real
+- liberacao real de extras premium
+- IA externa de verdade
+- billing
+- estatisticas premium
+
+---
+
+## 15. Regra de entrega por fase
 
 Cada fase deve:
 - nascer desacoplada
@@ -433,4 +497,3 @@ Regra:
 ```txt
 nao emendar gambiarra para "chegar logo" na proxima fase
 ```
-

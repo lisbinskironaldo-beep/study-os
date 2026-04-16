@@ -58,7 +58,9 @@
                 const answerIndex = actionTarget.dataset.answerIndex || "";
                 const itemIndex = actionTarget.dataset.itemIndex || "";
                 const itemValue = actionTarget.dataset.itemValue || "";
-                this.handleAction(action, { blockId, tabId, dateValue, answerIndex, itemIndex, itemValue });
+                const practiceType = actionTarget.dataset.practiceType || "";
+                const slotIndex = actionTarget.dataset.slotIndex || "";
+                this.handleAction(action, { blockId, tabId, dateValue, answerIndex, itemIndex, itemValue, practiceType, slotIndex });
             });
 
             this.root.addEventListener("change", (event) => {
@@ -346,6 +348,52 @@ ${sections}`
             this.render();
         },
 
+        getResumeStep(snapshot = {}) {
+            if (!snapshot.materialName) {
+                return "entry";
+            }
+
+            if (
+                !snapshot.step ||
+                snapshot.step === "entry" ||
+                snapshot.step === "analysis" ||
+                snapshot.step === "premium-library"
+            ) {
+                return "mode-select";
+            }
+
+            return snapshot.step;
+        },
+
+        async resumeSnapshot(snapshot = {}) {
+            const store = window.PremiumStudyStore;
+            const router = window.PremiumStudyRouter;
+            const nextStep = this.getResumeStep(snapshot);
+
+            store.restoreFromSnapshot({
+                ...snapshot,
+                step: nextStep,
+                sessionNote: null
+            });
+
+            if (!store.getState().materialName) {
+                router.goTo("entry");
+                return {
+                    shouldSyncNativeFullScreen: false,
+                    preferEnterNativeFullScreen: false
+                };
+            }
+
+            router.goTo(nextStep);
+
+            return {
+                shouldSyncNativeFullScreen: true,
+                preferEnterNativeFullScreen:
+                    nextStep === "block" &&
+                    store.getState().blockFullScreen
+            };
+        },
+
         async handleAction(action, payload = {}) {
             const router = window.PremiumStudyRouter;
             const store = window.PremiumStudyStore;
@@ -354,6 +402,15 @@ ${sections}`
             let preferEnterNativeFullScreen = false;
             const premiumLibraryEnabled =
                 store.getState().accessTier === "premium";
+
+            if (
+                action !== "request-extra-quiz" &&
+                action !== "request-extra-true-false" &&
+                action !== "request-extra-flashcards" &&
+                action !== "request-extra-mini-exam"
+            ) {
+                store.clearSessionNote();
+            }
 
             switch (action) {
             case "close":
@@ -400,13 +457,16 @@ ${sections}`
                 if (latestDraft && latestDraft.snapshot) {
                     store.restoreFromSnapshot({
                         ...latestDraft.snapshot,
-                        savedAt: latestDraft.savedAt
+                        savedAt: latestDraft.savedAt,
+                        step: "mode-select",
+                        sessionNote: null
                     });
                     if (store.getState().materialName) {
-                        store.setBlockFullScreen(true);
-                        store.setBlockAssistMode("");
                         router.goTo("mode-select");
+                        shouldSyncNativeFullScreen = true;
+                        preferEnterNativeFullScreen = false;
                     }
+                    shouldPersist = true;
                 }
                 break;
             }
@@ -479,15 +539,12 @@ ${sections}`
                 }
                 const activeItem = store.getActiveLibraryItem();
                 if (activeItem && activeItem.snapshot) {
-                    store.restoreFromSnapshot({
+                    const resumeState = await this.resumeSnapshot({
                         ...activeItem.snapshot,
                         savedAt: activeItem.savedAt || activeItem.snapshot.savedAt
                     });
-                    if (store.getState().materialName) {
-                        store.setBlockFullScreen(true);
-                        store.setBlockAssistMode("");
-                        router.goTo("mode-select");
-                    }
+                    shouldSyncNativeFullScreen = resumeState.shouldSyncNativeFullScreen;
+                    preferEnterNativeFullScreen = resumeState.preferEnterNativeFullScreen;
                 }
                 shouldPersist = true;
                 break;
@@ -554,7 +611,6 @@ ${sections}`
             }
             case "open-mini-exam":
                 store.setReturnStep("block");
-                store.resetActiveSession("miniExam");
                 router.goTo("mini-exam");
                 shouldPersist = true;
                 shouldSyncNativeFullScreen = true;
@@ -563,13 +619,28 @@ ${sections}`
                 store.startMiniExam();
                 shouldPersist = true;
                 break;
+            case "retry-mini-exam":
+                store.resetActiveSession("miniExam");
+                store.startMiniExam();
+                shouldPersist = true;
+                break;
             case "open-trail":
                 router.goTo("trail");
                 shouldPersist = true;
                 break;
             case "open-quiz":
-                store.resetActiveSession("quiz");
                 router.goTo("quiz");
+                shouldPersist = true;
+                break;
+            case "open-practice-slot":
+                store.focusPracticeItem(payload.practiceType, Number(payload.slotIndex));
+                if (payload.practiceType === "quiz") {
+                    router.goTo("quiz");
+                } else if (payload.practiceType === "trueFalse") {
+                    router.goTo("true-false");
+                } else if (payload.practiceType === "flashcards") {
+                    router.goTo("flashcards");
+                }
                 shouldPersist = true;
                 break;
             case "answer-quiz":
@@ -585,7 +656,6 @@ ${sections}`
                 shouldPersist = true;
                 break;
             case "open-true-false":
-                store.resetActiveSession("trueFalse");
                 router.goTo("true-false");
                 shouldPersist = true;
                 break;
@@ -602,15 +672,18 @@ ${sections}`
                 shouldPersist = true;
                 break;
             case "open-flashcards":
-                store.resetActiveSession("flashcards");
                 router.goTo("flashcards");
                 shouldPersist = true;
                 break;
             case "request-extra-quiz":
             case "request-extra-true-false":
+            case "request-extra-flashcards":
             case "request-extra-mini-exam":
-                store.patch({
-                    sessionNote: "Geracao extra fica reservada ao premium e podera reformular o treino por outra otica."
+                store.setSessionNote({
+                    step: store.getState().step,
+                    tone: "premium",
+                    title: "Extras liberados no premium",
+                    message: "O pacote base continua gratis. No premium, voce libera novas questoes, novos flashcards e reformulacoes por outra otica."
                 });
                 shouldPersist = true;
                 break;
@@ -662,6 +735,15 @@ ${sections}`
                 store.selectBlock(payload.blockId);
                 shouldPersist = true;
                 break;
+            case "rename-study": {
+                const currentTitle = store.getState().studyTitle || store.getState().materialName || "Estudo personalizado";
+                const nextTitle = window.prompt("Como voce quer chamar este estudo?", currentTitle);
+                if (nextTitle && nextTitle.trim()) {
+                    store.setStudyTitle(nextTitle);
+                    shouldPersist = true;
+                }
+                break;
+            }
             case "next-block": {
                 const blocks = store.getState().blocks;
                 const activeIndex = blocks.findIndex((block) => block.id === store.getState().activeBlockId);
@@ -685,8 +767,11 @@ ${sections}`
                 shouldPersist = true;
                 break;
             case "ai-create-questions":
-                store.patch({
-                    progressLabel: "Criacao de questoes preparada para a proxima fase do motor de conteudo."
+                store.setSessionNote({
+                    step: store.getState().step,
+                    tone: "info",
+                    title: "Criacao extra ainda nao entrou nesta fase",
+                    message: "Nesta etapa, o foco continua no pacote base do assunto. A geracao dinamica extra entra junto da operacao premium."
                 });
                 shouldPersist = true;
                 break;

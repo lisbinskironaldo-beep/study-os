@@ -119,7 +119,8 @@
             backVisible: true,
             progressVisible: false,
             showSummary: false,
-            scrollable: true
+            scrollable: true,
+            hideHeading: true
         },
         "true-false": {
             title: "Verdadeiro ou falso",
@@ -128,7 +129,8 @@
             backVisible: true,
             progressVisible: false,
             showSummary: false,
-            scrollable: true
+            scrollable: true,
+            hideHeading: true
         },
         flashcards: {
             title: "Flashcards do bloco",
@@ -137,7 +139,8 @@
             backVisible: true,
             progressVisible: false,
             showSummary: false,
-            scrollable: true
+            scrollable: true,
+            hideHeading: true
         },
         "mini-exam": {
             title: "Mini prova do bloco",
@@ -146,7 +149,8 @@
             backVisible: true,
             progressVisible: false,
             showSummary: false,
-            scrollable: true
+            scrollable: true,
+            hideHeading: true
         },
         "exam-result": {
             title: "Seu resultado do bloco",

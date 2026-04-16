@@ -16,6 +16,7 @@
         const studyLibrary = Array.isArray(state.studyLibrary)
             ? state.studyLibrary
             : [];
+        const additionalStudiesCount = Math.max(0, studyLibrary.length - (resume ? 1 : 0));
         const premiumLibraryEnabled =
             state.accessTier === "premium";
 
@@ -39,15 +40,15 @@
         <button type="button" class="premium-entry-card premium-entry-card-secondary premium-entry-card-support premium-entry-card-premium ${premiumLibraryEnabled ? "" : "is-locked"}" data-premium-action="open-premium-library" ${premiumLibraryEnabled ? "" : "disabled aria-disabled=\"true\""}>
             <span class="premium-entry-kicker">Biblioteca premium <span class="premium-entry-inline-badge premium-entry-inline-badge-premium">Premium</span></span>
             <strong>Biblioteca premium</strong>
-            <p>${studyLibrary.length > 0 ? `${studyLibrary.length} PDF(s) e estudo(s) ja carregados e prontos para consulta.` : "Todos os materiais carregados ficam guardados aqui, inclusive o mais recente."}</p>
-            <small>${premiumLibraryEnabled ? "Ver historico completo de materiais" : "Disponivel no plano premium"}</small>
+            <p>${additionalStudiesCount > 0 ? `${additionalStudiesCount} estudo(s) extras ja esperam por voce aqui.` : "Retome outros estudos salvos e mantenha seu historico organizado."}</p>
+            <small>${premiumLibraryEnabled ? "Abrir historico premium" : "Estude mais com premium"}</small>
         </button>
     </div>
     <input id="premiumStudyFileInput" class="premium-hidden-input" type="file" accept=".pdf,application/pdf" />
 </section>
 <div class="premium-entry-note">
     <span>Gratis para sempre em PDFs de ate 12 paginas.</span>
-    <span>Historico completo de materiais, retomada expandida e exportacao do marcador em PDF ficam no premium.</span>
+    <span>Retomar o ultimo estudo continua gratis. Os outros estudos e o historico completo ficam no premium.</span>
 </div>`;
     }
 
@@ -279,45 +280,84 @@
         return "";
     }
 
-    function getPracticeProgress(state, type) {
-        const block = Store().getActiveBlock();
-        const session = state.sessions[state.activeBlockId][type];
-
-        if (type === "quiz") {
-            const total = block.practice.quiz.length;
-            const completed = session.answers.filter((value) => typeof value === "number").length;
-            return {
-                current: completed,
-                total,
-                ratio: total ? Math.round((completed / total) * 100) : 0
-            };
+    function renderSessionNote(state, scope) {
+        const note = state.sessionNote;
+        if (!note || note.step !== scope) {
+            return "";
         }
 
-        if (type === "trueFalse") {
-            const total = block.practice.trueFalse.length;
-            const completed = Object.keys(session.answers).length;
-            return {
-                current: completed,
-                total,
-                ratio: session.submitted ? 100 : total ? Math.round((completed / total) * 100) : 0
-            };
-        }
-
-        const total = block.practice.flashcards.length;
-        const completed = session.known.filter((value) => typeof value === "boolean").length;
-        return {
-            current: completed,
-            total,
-            ratio: total ? Math.round((completed / total) * 100) : 0
-        };
+        return `
+<article class="premium-session-note premium-session-note-${UI().escapeHtml(note.tone || "info")}">
+    <strong>${UI().escapeHtml(note.title || "Aviso")}</strong>
+    <p>${UI().escapeHtml(note.message || "")}</p>
+</article>`;
     }
 
-    function renderPracticeCup(progress) {
+    function getPracticeSlots(state, type) {
+        const block = Store().getActiveBlock();
+        const session = state.sessions[state.activeBlockId][type];
+        const targets = block.practice.targets || {};
+        const total = targets[type] || 3;
+
+        return Array.from({ length: total }, (_, index) => {
+            if (type === "quiz") {
+                return {
+                    index,
+                    done: typeof session.answers[index] === "number"
+                };
+            }
+
+            if (type === "trueFalse") {
+                return {
+                    index,
+                    done: Object.prototype.hasOwnProperty.call(session.answers, index)
+                };
+            }
+
+            return {
+                index,
+                done: typeof session.known[index] === "boolean"
+            };
+        });
+    }
+
+    function renderPracticeSlotPots(type, slots) {
+        const premiumAction = type === "quiz"
+            ? "request-extra-quiz"
+            : type === "trueFalse"
+                ? "request-extra-true-false"
+                : "request-extra-flashcards";
+
         return `
-<div class="premium-practice-cup">
-    <span class="premium-practice-cup-fill" style="height:${Math.max(6, progress.ratio)}%"></span>
-    <strong>${progress.current}/${progress.total}</strong>
+<div class="premium-practice-slots">
+    <div class="premium-practice-slot-row">
+        ${slots.map((slot) => `
+        <button type="button" class="premium-practice-slot ${slot.done ? "is-done" : ""}" data-premium-action="open-practice-slot" data-practice-type="${type}" data-slot-index="${slot.index}" aria-label="Abrir item ${slot.index + 1}">
+            <span class="premium-practice-slot-fill" style="height:${slot.done ? 100 : 12}%"></span>
+            <strong>${slot.index + 1}</strong>
+        </button>`).join("")}
+    </div>
+    <div class="premium-practice-slot-row premium-practice-slot-row-premium">
+        ${Array.from({ length: 3 }, () => `
+        <button type="button" class="premium-practice-slot premium-practice-slot-locked" data-premium-action="${premiumAction}" aria-label="Liberar extras no premium">
+            <span class="premium-practice-slot-lock">+</span>
+        </button>`).join("")}
+    </div>
+    <small>3 gratis agora. Depois, potes extras e infinitos no premium.</small>
 </div>`;
+    }
+
+    function renderPracticeCard({ action, type, label, title, description, slots, primary = false }) {
+        return `
+    <article class="premium-practice-card ${primary ? "premium-practice-card-primary" : ""}" data-premium-action="${action}" role="button" tabindex="0" aria-label="${UI().escapeHtml(title)}">
+        <div class="premium-practice-card-head">
+            <span>${label}</span>
+            <em>3 gratis</em>
+        </div>
+        <strong>${title}</strong>
+        <p>${description}</p>
+        ${renderPracticeSlotPots(type, slots)}
+    </article>`;
     }
 
     function learnMap(state) {
@@ -361,10 +401,10 @@
             ${assistPanel}
         </article>
         ${UI().actionBar([
-            { action: "ai-explain-better", label: "◦ Explicar melhor", variant: state.blockAssistMode === "explain" ? "secondary" : "ghost" },
-            { action: "ai-quick-review", label: "◇ Revisar em 5 pontos", variant: state.blockAssistMode === "review" ? "secondary" : "ghost" },
-            { action: "open-mini-exam", label: "▣ Mini prova", variant: "primary" },
-            ...(nextBlockId ? [{ action: "open-next-block", label: "→ Proximo", variant: "ghost" }] : [])
+            { action: "ai-explain-better", label: "Explicar melhor", variant: state.blockAssistMode === "explain" ? "secondary" : "ghost" },
+            { action: "ai-quick-review", label: "Revisar em 5 pontos", variant: state.blockAssistMode === "review" ? "secondary" : "ghost" },
+            { action: "open-mini-exam", label: "Mini prova", variant: "primary" },
+            ...(nextBlockId ? [{ action: "open-next-block", label: "Proximo assunto", variant: "ghost" }] : [])
         ])}
     </div>
 </section>`;
@@ -475,39 +515,38 @@
     }
 
     function practice(state) {
-        const quizProgress = getPracticeProgress(state, "quiz");
-        const trueFalseProgress = getPracticeProgress(state, "trueFalse");
-        const flashcardsProgress = getPracticeProgress(state, "flashcards");
+        const quizSlots = getPracticeSlots(state, "quiz");
+        const trueFalseSlots = getPracticeSlots(state, "trueFalse");
+        const flashcardSlots = getPracticeSlots(state, "flashcards");
 
         return `
 <section class="premium-practice-grid premium-practice-grid-simple">
-    <button type="button" class="premium-practice-card premium-practice-card-primary" data-premium-action="open-quiz">
-        <span>Questionario</span>
-        <strong>Multipla escolha</strong>
-        <p>Treino objetivo, com volume calculado para este assunto.</p>
-        <div class="premium-practice-progress">
-            ${renderPracticeCup(quizProgress)}
-            <small>${quizProgress.ratio}% concluido</small>
-        </div>
-    </button>
-    <button type="button" class="premium-practice-card" data-premium-action="open-true-false">
-        <span>Verdadeiro ou falso</span>
-        <strong>Criterio e contraste</strong>
-        <p>Bom para detectar pegadinha e limite de regra.</p>
-        <div class="premium-practice-progress">
-            ${renderPracticeCup(trueFalseProgress)}
-            <small>${trueFalseProgress.ratio}% concluido</small>
-        </div>
-    </button>
-    <button type="button" class="premium-practice-card" data-premium-action="open-flashcards">
-        <span>Flashcards</span>
-        <strong>Memorizacao ativa</strong>
-        <p>Cards curtos com mnemônicos, gatilhos e fixacao real.</p>
-        <div class="premium-practice-progress">
-            ${renderPracticeCup(flashcardsProgress)}
-            <small>${flashcardsProgress.ratio}% concluido</small>
-        </div>
-    </button>
+    ${renderPracticeCard({
+        action: "open-quiz",
+        type: "quiz",
+        label: "Questionario",
+        title: "Multipla escolha",
+        description: "Treino direto para criterio, leitura e decisao.",
+        slots: quizSlots,
+        primary: true
+    })}
+    ${renderPracticeCard({
+        action: "open-true-false",
+        type: "trueFalse",
+        label: "Verdadeiro ou falso",
+        title: "Criterio e contraste",
+        description: "Bom para perceber pegadinha e limite da regra.",
+        slots: trueFalseSlots
+    })}
+    ${renderPracticeCard({
+        action: "open-flashcards",
+        type: "flashcards",
+        label: "Flashcards",
+        title: "Memorizacao ativa",
+        description: "Mnemonicos, gatilhos e fixacao rapida do bloco.",
+        slots: flashcardSlots
+    })}
+    ${renderSessionNote(state, "practice")}
 </section>`;
     }
 
@@ -531,6 +570,7 @@
         { action: "request-extra-quiz", label: "Gerar mais no premium", variant: "ghost" },
         { action: "open-mini-exam", label: "Ir para mini prova", variant: "primary" }
     ])}
+    ${renderSessionNote(state, "quiz")}
 </section>`;
         }
 
@@ -566,7 +606,8 @@
         </div>
         ${UI().actionBar([
             { action: session.index >= block.practice.quiz.length - 1 ? "finish-quiz" : "continue-quiz", label: session.index >= block.practice.quiz.length - 1 ? "Ver resultado" : "Proxima", variant: "primary" }
-        ])}` : ""}
+        ])}
+        ${renderSessionNote(state, "quiz")}` : ""}
     </article>
 </section>`;
     }
@@ -582,16 +623,32 @@
         <strong>${UI().escapeHtml(block.title)}</strong>
     </div>
     <div class="premium-vf-list">
-        ${block.practice.trueFalse.map((item, index) => `
-        <article class="premium-vf-item">
+        ${block.practice.trueFalse.map((item, index) => {
+            const selectedValue = session.answers[index];
+            const trueClasses = [
+                "premium-mini-toggle",
+                !session.submitted && selectedValue === true ? "is-marked" : "",
+                session.submitted && item.answer === true ? "is-result-correct" : "",
+                session.submitted && selectedValue === true && item.answer !== true ? "is-result-wrong" : ""
+            ].filter(Boolean).join(" ");
+            const falseClasses = [
+                "premium-mini-toggle",
+                !session.submitted && selectedValue === false ? "is-marked" : "",
+                session.submitted && item.answer === false ? "is-result-correct" : "",
+                session.submitted && selectedValue === false && item.answer !== false ? "is-result-wrong" : ""
+            ].filter(Boolean).join(" ");
+
+            return `
+        <article class="premium-vf-item ${session.focusIndex === index ? "is-focus" : ""}">
             <strong>${UI().escapeHtml(item.statement)}</strong>
             <div class="premium-vf-actions">
-                <button type="button" class="premium-mini-toggle ${session.answers[index] === true ? "is-selected" : ""}" data-premium-action="answer-true-false" data-item-index="${index}" data-item-value="true">V</button>
-                <button type="button" class="premium-mini-toggle ${session.answers[index] === false ? "is-selected" : ""}" data-premium-action="answer-true-false" data-item-index="${index}" data-item-value="false">F</button>
+                <button type="button" class="${trueClasses}" data-premium-action="answer-true-false" data-item-index="${index}" data-item-value="true" aria-pressed="${selectedValue === true ? "true" : "false"}">V</button>
+                <button type="button" class="${falseClasses}" data-premium-action="answer-true-false" data-item-index="${index}" data-item-value="false" aria-pressed="${selectedValue === false ? "true" : "false"}">F</button>
             </div>
             ${session.submitted ? `
             <p class="premium-vf-rationale ${session.answers[index] === item.answer ? "is-positive" : "is-warning"}">${UI().escapeHtml(item.rationale)}</p>` : ""}
-        </article>`).join("")}
+        </article>`;
+        }).join("")}
     </div>
     ${session.submitted
         ? UI().actionBar([
@@ -602,6 +659,7 @@
         : UI().actionBar([
             { action: "submit-true-false", label: "Corrigir respostas", variant: "primary" }
         ])}
+    ${renderSessionNote(state, "true-false")}
 </section>`;
     }
 
@@ -615,15 +673,16 @@
             return `
 <section class="premium-result-shell">
     <article class="premium-result-hero premium-result-hero-compact">
-        <span class="premium-detail-label">Flashcards concluídos</span>
+        <span class="premium-detail-label">Flashcards concluidos</span>
         <strong>${isDone}/${block.practice.flashcards.length}</strong>
         <p>Voce marcou ${isDone} cards como entendidos neste bloco.</p>
     </article>
     ${UI().actionBar([
         { action: "open-practice", label: "Voltar para pratica", variant: "secondary" },
-        { action: "request-extra-quiz", label: "Gerar extras no premium", variant: "ghost" },
+        { action: "request-extra-flashcards", label: "Gerar extras no premium", variant: "ghost" },
         { action: "open-mini-exam", label: "Ir para mini prova", variant: "primary" }
     ])}
+    ${renderSessionNote(state, "flashcards")}
 </section>`;
         }
 
@@ -643,30 +702,34 @@
         <button type="button" class="premium-action premium-action-ghost" data-premium-action="mark-flashcard-review">Revisar de novo</button>
         <button type="button" class="premium-action premium-action-primary" data-premium-action="mark-flashcard-known">Entendi</button>
     </div>
+    ${renderSessionNote(state, "flashcards")}
 </section>`;
     }
 
     function miniExam(state) {
         const block = Store().getActiveBlock();
         const session = state.sessions[state.activeBlockId].miniExam;
-        if (!session.started) {
+        if (!session.started || session.isComplete) {
+            const hasHistory = Boolean(session.result);
             return `
 <section class="premium-result-shell">
     <article class="premium-result-hero premium-result-hero-compact">
         <span class="premium-detail-label">Mini prova do assunto</span>
         <strong>${block.exam.baseCount || block.exam.questions.length} questoes</strong>
-        <p>Gere o pacote base deste assunto agora. Para um volume maior, o premium libera extras.</p>
+        <p>${hasHistory ? "Refaca a mesma mini prova deste assunto. Para novas questoes e variacoes, o premium libera extras." : "Gere o pacote base deste assunto agora. Para um volume maior, o premium libera extras."}</p>
     </article>
     ${UI().actionBar([
-        { action: "generate-mini-exam", label: `Gerar ${block.exam.baseCount || block.exam.questions.length} questoes`, variant: "primary" },
+        { action: hasHistory ? "retry-mini-exam" : "generate-mini-exam", label: hasHistory ? "Refazer mini prova" : `Gerar ${block.exam.baseCount || block.exam.questions.length} questoes`, variant: "primary" },
         { action: "request-extra-mini-exam", label: "Gerar mais no premium", variant: "ghost" }
     ])}
+    ${renderSessionNote(state, "mini-exam")}
 </section>`;
         }
 
         const question = block.exam.questions[session.index];
         const hasAnswer = typeof session.answers[session.index] === "number";
         const answer = session.answers[session.index];
+        const isCorrectAnswer = hasAnswer && answer === question.correctIndex;
 
         return `
 <section class="premium-quiz-shell">
@@ -680,7 +743,10 @@
             ${question.options.map((option, index) => `
             <button
                 type="button"
-                class="premium-option-card ${hasAnswer && answer === index ? "is-selected" : ""}"
+                class="premium-option-card
+                    ${hasAnswer && answer === index ? "is-selected" : ""}
+                    ${hasAnswer && index === question.correctIndex ? "is-correct" : ""}
+                    ${hasAnswer && answer === index && answer !== question.correctIndex ? "is-incorrect" : ""}"
                 data-premium-action="answer-mini-exam"
                 data-answer-index="${index}"
                 ${hasAnswer ? "disabled" : ""}
@@ -689,9 +755,15 @@
                 <strong>${UI().escapeHtml(option)}</strong>
             </button>`).join("")}
         </div>
-        ${hasAnswer ? UI().actionBar([
+        ${hasAnswer ? `
+        <div class="premium-feedback-card ${isCorrectAnswer ? "is-positive" : "is-warning"}">
+            <strong>${isCorrectAnswer ? "Resposta correta." : "Resposta incorreta."}</strong>
+            <p>${UI().escapeHtml(question.rationale)}</p>
+        </div>
+        ${UI().actionBar([
             { action: session.index >= block.exam.questions.length - 1 ? "finish-mini-exam" : "continue-mini-exam", label: session.index >= block.exam.questions.length - 1 ? "Ver resultado" : "Proxima", variant: "primary" }
-        ]) : ""}
+        ])}` : ""}
+        ${renderSessionNote(state, "mini-exam")}
     </article>
 </section>`;
     }
@@ -720,9 +792,9 @@
         </article>
     </div>
     ${UI().actionBar([
-        { action: "return-to-block", label: "Voltar para aprender", variant: "secondary" },
-        { action: "open-practice", label: "Praticar mais", variant: "secondary" },
-        { action: "open-trail", label: "Seguir na trilha", variant: "primary" }
+        { action: "retry-mini-exam", label: "Refazer mini prova", variant: "secondary" },
+        { action: "open-practice", label: "Ir para o modo pratica", variant: "secondary" },
+        { action: "request-extra-mini-exam", label: "Gerar mais no premium", variant: "ghost" }
     ])}
 </section>`;
     }
@@ -752,6 +824,7 @@
         </button>`).join("")}
     </div>
     ${UI().actionBar([
+        { action: "rename-study", label: "Renomear estudo", variant: "ghost" },
         { action: "return-to-block", label: "Continuar bloco", variant: "primary" }
     ])}
 </section>`;

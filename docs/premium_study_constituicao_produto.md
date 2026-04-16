@@ -7,7 +7,7 @@ Status:
 - imutavel como base de produto
 - referencia obrigatoria para qualquer GPT, programador ou agente que atue nesta frente
 
-Atualizado em 2026-04-15.
+Atualizado em 2026-04-16.
 
 ---
 
@@ -133,10 +133,14 @@ O produto recebe:
 O produto devolve:
 - trilha inicial
 - modos de entrada no conteudo
+- mapa de assuntos clicaveis
 - estudo por bloco
 - pratica por bloco
 - mini prova por bloco
+- documento com marcador de texto
+- exportacao em PDF do marcador no premium
 - retomada de estudo
+- biblioteca premium de materiais
 
 O produto nao precisa ter neste momento:
 - chat livre
@@ -221,10 +225,12 @@ Fluxo principal fechado:
 5. definir horas e minutos por dia
 6. processamento do plano
 7. escolha do modo inicial
-8. bloco de estudo
-9. pratica por bloco
-10. mini prova do bloco
-11. trilha geral e retomada
+8. escolher entre aprender, praticar, prova ou marcar
+9. mapa de assuntos
+10. resumo focado do assunto
+11. pratica por bloco
+12. mini prova do bloco
+13. trilha geral, retomada e biblioteca premium
 
 Regra:
 
@@ -252,7 +258,8 @@ Ela deve mostrar:
 
 A primeira tela passa a mostrar:
 - `Carregar PDF`
-- `Retomar estudo`
+- `Retomar ultimo estudo`
+- `Biblioteca premium`
 
 ### 9.3 Salvamento
 
@@ -267,6 +274,10 @@ Campos minimos salvos:
 - minutos por dia
 - etapa atual
 - ultimo acesso
+- bloco ativo
+- sessoes de pratica
+- estrutura dos assuntos
+- estado do documento marcado quando existir
 
 ---
 
@@ -280,8 +291,14 @@ Objetivo:
 
 Elementos obrigatorios:
 - card `Carregar PDF`
-- card `Retomar estudo` quando existir estudo salvo
+- card `Retomar ultimo estudo` quando existir estudo salvo
+- card `Biblioteca premium`
 - nota discreta sobre limites do plano gratis
+
+Regras:
+- `Biblioteca premium` pode aparecer bloqueada visualmente quando o plano nao estiver ativo
+- a entrada nao deve parecer landing explicativa
+- a prioridade visual continua sendo `Carregar PDF`
 
 ### 10.2 Tela 2 - Data da prova
 
@@ -355,15 +372,16 @@ Como voce quer comecar agora?
 ```
 
 Elementos obrigatorios:
-- tres opcoes lado a lado:
+- quatro opcoes lado a lado:
   - `Aprender`
   - `Praticar`
   - `Prova`
+  - `Marcar`
 - resumo compacto do plano
 - botao `Voltar` no topo
 
 Regras:
-- as tres opcoes continuam lado a lado inclusive em telas menores
+- as quatro opcoes continuam legiveis e clicaveis sem perder hierarquia
 - o resumo e informativo, nao pode parecer botao
 - no desktop o resumo pode aparecer mais aberto
 - em telas menores o resumo deve ser compacto
@@ -375,15 +393,22 @@ Regras:
 ### 11.1 Aprender
 
 Elementos obrigatorios:
-- titulo do bloco
-- tempo estimado
+- mapa de assuntos clicaveis
+- abertura de um assunto por vez
+- modo full-screen de leitura
+- rolagem liberada
+- coluna central de leitura
 - resumo focado em resultado
-- pontos quentes
-- conceitos-chave
-- armadilhas comuns
-- botoes:
-  - `Explicar melhor`
-  - `Revisao rapida`
+- conceitos-chave, pontos quentes e armadilhas comuns dentro do proprio assunto
+- acao contextual para:
+  - `Explicar melhor este assunto`
+  - `Revisar este assunto em 5 pontos`
+  - `Mini prova deste assunto`
+  - `Proximo assunto`
+
+Regra:
+- a tela `Aprender` nao deve carregar paineis informativos grandes competindo com o conteudo
+- o foco principal e leitura guiada do assunto atual
 
 ### 11.2 Praticar
 
@@ -394,13 +419,27 @@ Tela de entrada da pratica:
 
 Cada formato deve abrir sua propria tela.
 
+Regras:
+- nao usar painel `Plano em construcao` dentro da pratica
+- os tres formatos entram como cards simples
+- cada card mostra preenchimento visual de progresso no estilo `copo enchendo`
+- o sistema calcula quantidade base necessaria para concluir o treino do assunto
+- formatos podem oferecer `Gerar mais no premium`
+
+Flashcards:
+- devem priorizar mnemônicos, gatilhos, contraste e memorizacao ativa
+- nao devem parecer simples lista do que estudar
+
 ### 11.3 Prova
 
 Mini prova do bloco com:
 - titulo do bloco
-- quantidade de questoes
+- geracao base de `10 questoes`
 - tempo opcional
 - resultado final
+
+Regra:
+- gerar acima do pacote base fica reservado ao premium
 
 ### 11.4 Trilha geral
 
@@ -417,7 +456,18 @@ Tela para retomar estudos salvos.
 
 Regras:
 - gratis retoma o ultimo estudo local
-- premium futuramente retoma historico completo
+- premium retoma historico expandido pela biblioteca
+- retomar deve abrir no ponto salvo, e nao reiniciar o fluxo
+
+### 11.6 Biblioteca premium
+
+Tela para listar PDFs e estudos ja carregados.
+
+Regras:
+- mostra lista de materiais salvos
+- permite abrir um material salvo
+- pode ficar bloqueada visualmente fora do premium
+- funciona como centro de historico, nao como entrada principal
 
 ---
 
@@ -481,6 +531,10 @@ O que deve ser salvo automaticamente:
 - bloco ativo
 - modo selecionado
 - ultimo acesso
+- biblioteca local de estudos
+- sessoes de pratica e mini prova
+- estrutura enriquecida dos blocos
+- documento marcado quando ja tiver sido gerado
 
 O que pode ficar para depois:
 - historico multiestudo em nuvem
@@ -507,3 +561,19 @@ primeiro consolidar fluxo, telas, blocos e experiencia
 depois entrar nas frentes operacionais e comerciais
 ```
 
+---
+
+## 15. Mudancas consolidadas em 2026-04-16
+
+As mudancas abaixo ja passaram a fazer parte do produto e devem ser consideradas oficiais:
+
+- entrada com `Carregar PDF`, `Retomar ultimo estudo` e `Biblioteca premium`
+- modo inicial com quarta opcao `Marcar`
+- modo `Documento com marcador de texto`
+- exportacao em PDF dos destaques no premium
+- mapa de assuntos clicaveis antes do resumo focado
+- `Aprender` em full-screen, com rolagem liberada e leitura central
+- pratica sem painel informativo grande, com progresso visual por formato
+- flashcards orientados a mnemônicos e gatilhos
+- mini prova com geracao base de 10 questoes
+- biblioteca premium separada da retomada simples do ultimo estudo
