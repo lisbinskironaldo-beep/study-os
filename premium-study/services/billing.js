@@ -4,32 +4,34 @@
     }
 
     const PROVIDER_STATUS = {
-        mode: "local_scaffold",
-        provider: "not_configured",
-        checkoutReady: false,
-        message: "A base de billing esta pronta, mas nenhum provedor de pagamento foi conectado ainda."
+        mode: "serverless",
+        provider: "mercado_pago",
+        checkoutReady: true,
+        message: "Checkout Mercado Pago preparado. O botao abre o checkout quando o ambiente publicado tiver as variaveis configuradas."
     };
+
+    const CHECKOUT_ENDPOINT = "/api/mercado-pago/checkout";
 
     const PLANS = [
         {
             id: "premium_monthly",
             tier: "premium",
             label: "Premium mensal",
-            priceLabel: "Valor a definir",
+            priceLabel: "Mensal",
             interval: "month",
-            description: "Melhor para testar continuidade, biblioteca e extras.",
+            description: "Continuidade, biblioteca e extras com renovacao mensal.",
             recommended: true,
-            checkoutProvider: "pending"
+            checkoutProvider: "mercado_pago"
         },
         {
             id: "premium_annual",
             tier: "premium",
             label: "Premium anual",
-            priceLabel: "Valor a definir",
+            priceLabel: "Anual",
             interval: "year",
-            description: "Melhor para quem vai estudar por meses ou concurso.",
+            description: "Melhor para concurso, materiais longos e rotina de meses.",
             recommended: false,
-            checkoutProvider: "pending"
+            checkoutProvider: "mercado_pago"
         }
     ];
 
@@ -44,12 +46,60 @@
     async function startCheckout(planId, context = {}) {
         const plan = PLANS.find((item) => item.id === planId) || getRecommendedPlan();
 
+        let response;
+        let payload;
+
+        try {
+            response = await fetch(CHECKOUT_ENDPOINT, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    planId: plan.id,
+                    context
+                })
+            });
+        } catch (error) {
+            return {
+                ok: false,
+                status: "checkout_endpoint_unavailable",
+                plan,
+                context,
+                message: "Nao consegui acessar o endpoint seguro de checkout. Ele precisa estar publicado junto do site."
+            };
+        }
+
+        try {
+            payload = await response.json();
+        } catch (error) {
+            payload = null;
+        }
+
+        if (!response.ok || !payload || !payload.ok) {
+            return {
+                ok: false,
+                status: payload && payload.status ? payload.status : "checkout_error",
+                plan,
+                context,
+                message: payload && payload.message
+                    ? payload.message
+                    : "O checkout ainda nao respondeu corretamente. Verifique a publicacao e as variaveis do servidor."
+            };
+        }
+
+        if (payload.checkoutUrl) {
+            window.location.assign(payload.checkoutUrl);
+        }
+
         return {
-            ok: false,
-            status: "not_configured",
+            ok: true,
+            status: payload.status || "checkout_created",
             plan,
             context,
-            message: "Checkout real ainda nao foi conectado. A proxima etapa deve ligar este contrato ao provedor escolhido."
+            preferenceId: payload.preferenceId,
+            checkoutUrl: payload.checkoutUrl,
+            message: "Checkout criado. Abrindo Mercado Pago..."
         };
     }
 

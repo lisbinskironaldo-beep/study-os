@@ -705,3 +705,78 @@ Regra:
 retorno visual do checkout nao libera premium
 webhook validado e consulta ao Mercado Pago liberam premium
 ```
+
+---
+
+## 21. Execucao da Fase 8.3 - checkout seguro Mercado Pago
+
+Atualizado em 2026-04-17.
+
+Esta etapa conecta o botao premium a um contrato real de checkout, mantendo o `Access Token` fora do navegador.
+
+### Arquivos criados
+
+- `api/mercado-pago/checkout.js`
+- `api/mercado-pago/webhook.js`
+
+### Arquivo ajustado
+
+- `premium-study/services/billing.js`
+
+### Variaveis de ambiente oficiais
+
+Obrigatorias no servidor:
+
+```txt
+MERCADO_PAGO_ACCESS_TOKEN
+MERCADO_PAGO_MONTHLY_PRICE
+MERCADO_PAGO_ANNUAL_PRICE
+```
+
+Recomendadas:
+
+```txt
+MERCADO_PAGO_PUBLIC_KEY
+MERCADO_PAGO_CURRENCY
+STUDY_OS_BASE_URL
+MERCADO_PAGO_SUCCESS_URL
+MERCADO_PAGO_FAILURE_URL
+MERCADO_PAGO_PENDING_URL
+MERCADO_PAGO_NOTIFICATION_URL
+MERCADO_PAGO_WEBHOOK_SECRET
+```
+
+### Como funciona agora
+
+1. usuario clica em plano premium
+2. `PremiumStudyBilling.startCheckout` chama `/api/mercado-pago/checkout`
+3. o endpoint le `MERCADO_PAGO_ACCESS_TOKEN` no servidor
+4. o endpoint cria uma preferencia no Mercado Pago
+5. o navegador e redirecionado para o Checkout Pro
+
+### Como funciona o webhook agora
+
+O endpoint `/api/mercado-pago/webhook` ja esta preparado para:
+
+- receber notificacoes `payment`
+- validar `x-signature` quando `MERCADO_PAGO_WEBHOOK_SECRET` existir
+- consultar o pagamento no Mercado Pago usando `MERCADO_PAGO_ACCESS_TOKEN`
+- responder com status tecnico
+
+Ainda nao ativa premium definitivo porque falta fonte de verdade de usuario/assinatura no servidor.
+
+### Regra preservada
+
+```txt
+checkout criado nao significa premium ativo
+premium ativo depende de webhook validado e persistencia no backend
+```
+
+### Pendencias antes de cobrar de verdade
+
+- publicar o site em ambiente com suporte a `/api`
+- configurar variaveis secretas no provedor de hospedagem
+- definir precos mensal e anual
+- configurar webhook no painel Mercado Pago com URL HTTPS publica
+- criar persistencia de usuarios/assinaturas
+- ligar `premium_active` ao retorno validado do backend

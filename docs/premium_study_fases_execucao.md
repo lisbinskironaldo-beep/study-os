@@ -505,6 +505,17 @@ O objetivo e criar contratos pequenos para o produto ja saber:
 - premium preparado para materiais longos sem trava fixa de paginas no navegador
 - regra de custo: dividir o material antes de qualquer chamada de IA
 
+### Entregas da Fase 8.3
+
+- endpoint seguro `/api/mercado-pago/checkout`
+- endpoint inicial `/api/mercado-pago/webhook`
+- `PremiumStudyBilling.startCheckout` chamando o endpoint real
+- `Access Token` mantido fora do navegador
+- preferencia Checkout Pro criada no servidor
+- webhook preparado para validar `x-signature`
+- documentacao das variaveis de ambiente do Mercado Pago
+- premium ainda nao liberado automaticamente sem persistencia real
+
 ### Regras desta fase
 
 - nao chamar provedor externo direto da UI
