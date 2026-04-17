@@ -624,3 +624,84 @@ Regra:
 nao confiar em premium ativado apenas pelo navegador
 o navegador apenas reflete o status validado pelo backend
 ```
+
+---
+
+## 20. Preparacao do webhook Mercado Pago
+
+Atualizado em 2026-04-17.
+
+O webhook deve ser tratado agora como decisao operacional obrigatoria, mas so deve ser ativado no painel quando existir uma URL publica HTTPS do backend.
+
+### Onde entra o segredo
+
+Variavel local oficial:
+
+```txt
+MERCADO_PAGO_WEBHOOK_SECRET
+```
+
+Ela deve receber a assinatura/secret gerada pelo Mercado Pago depois de salvar a configuracao de Webhooks no painel da aplicacao.
+
+Nao confundir:
+
+- `MERCADO_PAGO_PUBLIC_KEY`: pode ser usada no cliente quando necessario
+- `MERCADO_PAGO_ACCESS_TOKEN`: fica apenas no backend
+- `MERCADO_PAGO_WEBHOOK_SECRET`: fica apenas no backend e valida notificacoes recebidas
+
+### Caminho no Mercado Pago
+
+No painel de desenvolvedor:
+
+1. abrir `Suas integracoes`
+2. selecionar a aplicacao `StudyPro`
+3. abrir `Webhooks`
+4. entrar em `Configurar notificacoes`
+5. informar uma URL HTTPS publica do backend
+6. selecionar os eventos corretos
+7. salvar
+8. copiar a assinatura/secret gerada para `MERCADO_PAGO_WEBHOOK_SECRET`
+
+### URL planejada
+
+Quando houver backend/serverless, usar:
+
+```txt
+https://dominio-do-site.com/api/mercado-pago/webhook
+```
+
+Em desenvolvimento local, `127.0.0.1` nao serve para webhook do Mercado Pago.
+
+Para testar localmente, sera necessario:
+
+- publicar um ambiente de teste, ou
+- usar tunel HTTPS temporario, como Cloudflare Tunnel ou ngrok
+
+### Eventos que devem ser ativados
+
+Para pagamento unico via Checkout Pro:
+
+- `payment`
+
+Para assinatura recorrente:
+
+- `subscription_preapproval`
+- `subscription_authorized_payment`
+- `subscription_preapproval_plan`, se usarmos plano associado mensal/anual
+
+### Regra de seguranca
+
+O backend deve:
+
+- receber o POST do Mercado Pago
+- validar a assinatura enviada no header `x-signature`
+- consultar o pagamento/assinatura na API do Mercado Pago usando `MERCADO_PAGO_ACCESS_TOKEN`
+- atualizar o status premium no servidor
+- nunca liberar premium apenas porque o navegador voltou com `success`
+
+Regra:
+
+```txt
+retorno visual do checkout nao libera premium
+webhook validado e consulta ao Mercado Pago liberam premium
+```

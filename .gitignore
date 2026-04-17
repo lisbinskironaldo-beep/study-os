@@ -1,3 +1,6 @@
 .codex-backups/
 .codex-temp/
 test-results/
+.env
+.env.local
+.env.*.local
