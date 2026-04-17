@@ -5,11 +5,21 @@
 
     const UI = () => window.PremiumStudyUI;
     const Store = () => window.PremiumStudyStore;
+    const Access = () => window.PremiumStudyAccessControl;
 
     const MONTHS = [
         "Janeiro", "Fevereiro", "Marco", "Abril", "Maio", "Junho",
         "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"
     ];
+
+    function canAccess(feature, state, context = {}) {
+        const access = Access();
+        if (!access) {
+            return state.accessTier === "premium";
+        }
+
+        return access.canUse(feature, state, context);
+    }
 
     function entry(state) {
         const resume = state.latestLocalStudy;
@@ -17,8 +27,10 @@
             ? state.studyLibrary
             : [];
         const additionalStudiesCount = Math.max(0, studyLibrary.length - (resume ? 1 : 0));
-        const premiumLibraryEnabled =
-            state.accessTier === "premium";
+        const premiumLibraryFeature = Access()
+            ? Access().FEATURES.PREMIUM_LIBRARY
+            : "premium_library";
+        const premiumLibraryEnabled = canAccess(premiumLibraryFeature, state);
 
         return `
 <section class="premium-entry-stage">
@@ -37,7 +49,7 @@
             <p>${UI().escapeHtml(resume.title)}</p>
             <small>Prova em ${UI().escapeHtml(resume.examDateLabel)}</small>
         </button>` : ""}
-        <button type="button" class="premium-entry-card premium-entry-card-secondary premium-entry-card-support premium-entry-card-premium ${premiumLibraryEnabled ? "" : "is-locked"}" data-premium-action="open-premium-library" ${premiumLibraryEnabled ? "" : "disabled aria-disabled=\"true\""}>
+        <button type="button" class="premium-entry-card premium-entry-card-secondary premium-entry-card-support premium-entry-card-premium ${premiumLibraryEnabled ? "" : "is-locked"}" data-premium-action="open-premium-library" ${premiumLibraryEnabled ? "" : "aria-disabled=\"true\""}>
             <span class="premium-entry-kicker">Biblioteca premium <span class="premium-entry-inline-badge premium-entry-inline-badge-premium">Premium</span></span>
             <strong>Biblioteca premium</strong>
             <p>${additionalStudiesCount > 0 ? `${additionalStudiesCount} estudo(s) extras ja esperam por voce aqui.` : "Retome outros estudos salvos e mantenha seu historico organizado."}</p>
@@ -49,7 +61,8 @@
 <div class="premium-entry-note">
     <span>Gratis para sempre em PDFs de ate 12 paginas.</span>
     <span>Retomar o ultimo estudo continua gratis. Os outros estudos e o historico completo ficam no premium.</span>
-</div>`;
+</div>
+${renderSessionNote(state, "entry")}`;
     }
 
     function buildCalendar(state) {
@@ -359,13 +372,27 @@
     function learnMap(state) {
         return `
 <section class="premium-learn-map-grid">
-    ${state.blocks.map((block) => `
-    <button type="button" class="premium-subject-card premium-mode-card ${state.activeBlockId === block.id ? "is-active" : ""}" data-premium-action="open-block" data-block-id="${block.id}">
+    ${state.blocks.map((block, index) => {
+        const progress = block.progress || {};
+        const statusClass = progress.exam
+            ? "is-complete"
+            : progress.learn
+                ? "is-started"
+                : "is-new";
+        const statusLabel = progress.exam
+            ? "Concluido"
+            : progress.learn
+                ? "Iniciado"
+                : "Novo";
+
+        return `
+    <button type="button" class="premium-subject-card ${statusClass} ${state.activeBlockId === block.id ? "is-active" : ""}" data-premium-action="open-block" data-block-id="${block.id}">
+        <span class="premium-subject-index">${String(index + 1).padStart(2, "0")}</span>
+        <span class="premium-subject-word">${UI().escapeHtml(block.title)}</span>
+        <span class="premium-subject-status">${statusLabel}</span>
         <span class="premium-subject-duration">${UI().escapeHtml(block.duration)}</span>
-        <span class="premium-mode-word premium-subject-word">${UI().escapeHtml(block.title)}</span>
-        <strong>${UI().escapeHtml(block.subtitle)}</strong>
-        <p>${UI().escapeHtml(block.excerpt || block.learn.summary)}</p>
-    </button>`).join("")}
+    </button>`;
+    }).join("")}
 </section>`;
     }
 
@@ -414,7 +441,10 @@
 
     function highlightPreview(state) {
         const documentData = state.highlightedDocument || Store().openHighlightDocument().highlightedDocument;
-        const premiumLibraryEnabled = state.accessTier === "premium";
+        const highlightExportFeature = Access()
+            ? Access().FEATURES.HIGHLIGHT_EXPORT
+            : "highlight_export";
+        const premiumLibraryEnabled = canAccess(highlightExportFeature, state);
 
         return `
 <section class="premium-highlight-shell">
@@ -439,8 +469,8 @@
         <strong>Baixe em PDF so os destaques principais ou o documento inteiro com os grifos.</strong>
         <p>O texto marcado nao fica salvo para consulta dentro do app. Aqui ele so pode ser exportado em PDF.</p>
         <div class="premium-inline-actions premium-inline-actions-contextual">
-            <button type="button" class="premium-action premium-action-primary" data-premium-action="download-highlight-summary" ${premiumLibraryEnabled ? "" : "disabled"}>Baixar PDF so com destaques</button>
-            <button type="button" class="premium-action premium-action-secondary" data-premium-action="download-highlighted-full" ${premiumLibraryEnabled ? "" : "disabled"}>Baixar PDF com texto todo destacado</button>
+            <button type="button" class="premium-action premium-action-primary" data-premium-action="download-highlight-summary">Baixar PDF so com destaques</button>
+            <button type="button" class="premium-action premium-action-secondary" data-premium-action="download-highlighted-full">Baixar PDF com texto todo destacado</button>
         </div>
         <small>${premiumLibraryEnabled ? "O navegador vai abrir a saida em formato de impressao para salvar em PDF." : "Os dois downloads ficam liberados no premium."}</small>
     </section>
@@ -451,7 +481,10 @@
     }
 
     function premiumLibrary(state) {
-        const premiumLibraryEnabled = state.accessTier === "premium";
+        const premiumLibraryFeature = Access()
+            ? Access().FEATURES.PREMIUM_LIBRARY
+            : "premium_library";
+        const premiumLibraryEnabled = canAccess(premiumLibraryFeature, state);
         const activeItem = Store().getActiveLibraryItem();
 
         if (!premiumLibraryEnabled) {
@@ -508,6 +541,68 @@
         </article>
     </div>
 </section>`;
+    }
+
+    function premiumCheckout(state) {
+        const access = Access();
+        const billing = window.PremiumStudyBilling;
+        const feature = state.premiumOffer && state.premiumOffer.feature
+            ? state.premiumOffer.feature
+            : premiumLibraryFeatureFallback();
+        const offer = state.premiumOffer || (access
+            ? access.buildOffer(feature)
+            : {
+                eyebrow: "Premium",
+                title: "Libere continuidade e profundidade.",
+                lead: "O gratis entrega a base. O premium entra quando voce quer mais materiais, mais treino e mais continuidade.",
+                benefits: ["Historico completo", "Treinos extras", "Recursos avancados"],
+                cta: "Conhecer premium"
+            });
+        const plans = billing && typeof billing.getPlans === "function"
+            ? billing.getPlans()
+            : [];
+        const providerStatus = billing && typeof billing.getProviderStatus === "function"
+            ? billing.getProviderStatus()
+            : { checkoutReady: false, message: "Checkout real ainda nao foi conectado." };
+
+        return `
+<section class="premium-paywall-shell">
+    <article class="premium-paywall-hero">
+        <span class="premium-panel-kicker">${UI().escapeHtml(offer.eyebrow || "Premium")}</span>
+        <h2>${UI().escapeHtml(offer.title || "Libere o premium.")}</h2>
+        <p>${UI().escapeHtml(offer.lead || "Recursos avancados ficam no plano premium.")}</p>
+        <ul class="premium-paywall-benefits" aria-label="Beneficios do premium">
+            ${(offer.benefits || []).map((benefit) => `
+            <li>
+                <span aria-hidden="true"></span>
+                <strong>${UI().escapeHtml(benefit)}</strong>
+            </li>`).join("")}
+        </ul>
+    </article>
+    <div class="premium-plan-grid">
+        ${plans.map((plan) => `
+        <button type="button" class="premium-plan-card ${plan.recommended ? "is-recommended" : ""}" data-premium-action="start-premium-checkout" data-item-value="${UI().escapeHtml(plan.id)}">
+            <span>${plan.recommended ? "Recomendado" : "Opcional"}</span>
+            <strong>${UI().escapeHtml(plan.label)}</strong>
+            <em>${UI().escapeHtml(plan.priceLabel)}</em>
+            <small>${UI().escapeHtml(plan.description)}</small>
+        </button>`).join("")}
+    </div>
+    <article class="premium-paywall-status">
+        <strong>${providerStatus.checkoutReady ? "Checkout pronto" : "Checkout em preparacao"}</strong>
+        <p>${UI().escapeHtml(providerStatus.message || "O provedor real sera conectado na proxima etapa.")}</p>
+    </article>
+    ${renderSessionNote(state, "premium-checkout")}
+    ${UI().actionBar([
+        { action: "back", label: "Voltar", variant: "secondary" }
+    ])}
+</section>`;
+    }
+
+    function premiumLibraryFeatureFallback() {
+        return Access()
+            ? Access().FEATURES.PREMIUM_LIBRARY
+            : "premium_library";
     }
 
     function practice(state) {
@@ -879,6 +974,8 @@
                 return examResult(state);
             case "premium-library":
                 return premiumLibrary(state);
+            case "premium-checkout":
+                return premiumCheckout(state);
             case "trail":
                 return trail(state);
             case "block":

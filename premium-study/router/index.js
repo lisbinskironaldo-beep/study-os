@@ -19,6 +19,7 @@
         "flashcards",
         "mini-exam",
         "exam-result",
+        "premium-checkout",
         "premium-library",
         "trail"
     ];
@@ -170,6 +171,15 @@
             showSummary: false,
             scrollable: true
         },
+        "premium-checkout": {
+            title: "Plano premium",
+            subtitle: "Libere continuidade, biblioteca e treinos extras sem poluir sua rotina de estudo.",
+            label: "Premium",
+            backVisible: true,
+            progressVisible: false,
+            showSummary: false,
+            scrollable: true
+        },
         trail: {
             title: "Sua trilha esta pronta para continuar.",
             subtitle: "Veja os blocos, retome seu ponto atual e avance com clareza.",
@@ -234,6 +244,10 @@
 
             if (step === "exam-result") {
                 return this.goTo("mini-exam");
+            }
+
+            if (step === "premium-checkout") {
+                return this.goTo(state.returnStep || "entry");
             }
 
             if (step === "premium-library") {

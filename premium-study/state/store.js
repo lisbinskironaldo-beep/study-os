@@ -1243,6 +1243,31 @@
         };
     }
 
+    function getPracticeSeries(block, type) {
+        const practice = block.practice || {};
+        const seriesKeys = {
+            quiz: "quizSeries",
+            trueFalse: "trueFalseSeries",
+            flashcards: "flashcardSeries"
+        };
+        const baseKeys = {
+            quiz: "quiz",
+            trueFalse: "trueFalse",
+            flashcards: "flashcards"
+        };
+        const existingSeries = practice[seriesKeys[type]];
+
+        if (Array.isArray(existingSeries) && existingSeries.length > 0) {
+            return existingSeries;
+        }
+
+        const baseItems = Array.isArray(practice[baseKeys[type]])
+            ? practice[baseKeys[type]]
+            : [];
+
+        return [clone(baseItems), clone(baseItems), clone(baseItems)];
+    }
+
     function buildSessions(blocks) {
         const sessions = {};
         blocks.forEach((block) => {
@@ -1331,6 +1356,7 @@
             savedDraftId: "",
             savedAt: "",
             sessionNote: null,
+            premiumOffer: null,
             progressLabel: "Seu plano comeca quando o PDF entra."
         };
     }
@@ -1392,6 +1418,15 @@
             return this.state;
         },
 
+        setPremiumOffer(offer) {
+            this.state = {
+                ...this.state,
+                premiumOffer: offer || null
+            };
+
+            return this.state;
+        },
+
         setMaterial(fileLike) {
             if (!fileLike) {
                 return this.state;
@@ -1400,6 +1435,9 @@
             const sizeLabel = typeof fileLike.size === "number"
                 ? `${(fileLike.size / (1024 * 1024)).toFixed(1)} MB`
                 : "PDF textual";
+            const pageCount = Number.isFinite(fileLike.pageCount)
+                ? fileLike.pageCount
+                : null;
 
             const studyTitle = buildStudyTitle(fileLike.name || "material.pdf");
             const blocks = buildRichBlocks(studyTitle);
@@ -1409,6 +1447,7 @@
                 studyLibraryId: createStudyLibraryId(),
                 materialName: fileLike.name || "material.pdf",
                 materialSizeLabel: sizeLabel,
+                materialPageCount: pageCount,
                 studyTitle,
                 blocks,
                 sessions: buildSessions(blocks),
@@ -1679,18 +1718,7 @@
         getPracticeSeriesMeta(type) {
             const session = this.getActiveSession(type) || {};
             const block = this.getActiveBlock();
-            const seriesByType = {
-                quiz: Array.isArray(block.practice.quizSeries) && block.practice.quizSeries.length
-                    ? block.practice.quizSeries
-                    : [block.practice.quiz],
-                trueFalse: Array.isArray(block.practice.trueFalseSeries) && block.practice.trueFalseSeries.length
-                    ? block.practice.trueFalseSeries
-                    : [block.practice.trueFalse],
-                flashcards: Array.isArray(block.practice.flashcardSeries) && block.practice.flashcardSeries.length
-                    ? block.practice.flashcardSeries
-                    : [block.practice.flashcards]
-            };
-            const totalSeries = seriesByType[type]?.length || 1;
+            const totalSeries = getPracticeSeries(block, type).length || 1;
             const freeSeriesLimit = Math.min(3, totalSeries);
             const currentSeries = Math.max(
                 1,
@@ -1717,9 +1745,7 @@
         getActiveTrueFalseItems() {
             const block = this.getActiveBlock();
             const session = this.getActiveSession("trueFalse");
-            const series = Array.isArray(block.practice.trueFalseSeries) && block.practice.trueFalseSeries.length
-                ? block.practice.trueFalseSeries
-                : [block.practice.trueFalse];
+            const series = getPracticeSeries(block, "trueFalse");
             const index = Math.max(0, Math.min(series.length - 1, session?.currentSeriesIndex || 0));
 
             return series[index] || block.practice.trueFalse;
@@ -1728,9 +1754,7 @@
         getActiveQuizItems() {
             const block = this.getActiveBlock();
             const session = this.getActiveSession("quiz");
-            const series = Array.isArray(block.practice.quizSeries) && block.practice.quizSeries.length
-                ? block.practice.quizSeries
-                : [block.practice.quiz];
+            const series = getPracticeSeries(block, "quiz");
             const index = Math.max(0, Math.min(series.length - 1, session?.currentSeriesIndex || 0));
 
             return series[index] || block.practice.quiz;
@@ -1739,9 +1763,7 @@
         getActiveFlashcardItems() {
             const block = this.getActiveBlock();
             const session = this.getActiveSession("flashcards");
-            const series = Array.isArray(block.practice.flashcardSeries) && block.practice.flashcardSeries.length
-                ? block.practice.flashcardSeries
-                : [block.practice.flashcards];
+            const series = getPracticeSeries(block, "flashcards");
             const index = Math.max(0, Math.min(series.length - 1, session?.currentSeriesIndex || 0));
 
             return series[index] || block.practice.flashcards;
@@ -1853,9 +1875,7 @@
 
         advanceTrueFalseSeries() {
             const block = this.getActiveBlock();
-            const series = Array.isArray(block.practice.trueFalseSeries) && block.practice.trueFalseSeries.length
-                ? block.practice.trueFalseSeries
-                : [block.practice.trueFalse];
+            const series = getPracticeSeries(block, "trueFalse");
 
             return this.updateActiveSession("trueFalse", (session) => {
                 const nextFreeSeriesUsed = Math.min(series.length, (session.freeSeriesUsed || 1) + 1);
@@ -1918,18 +1938,7 @@
         selectPracticeSeries(type, seriesIndex) {
             const block = this.getActiveBlock();
             const current = this.getActiveSession(type) || {};
-            const seriesByType = {
-                quiz: Array.isArray(block.practice.quizSeries) && block.practice.quizSeries.length
-                    ? block.practice.quizSeries
-                    : [block.practice.quiz],
-                trueFalse: Array.isArray(block.practice.trueFalseSeries) && block.practice.trueFalseSeries.length
-                    ? block.practice.trueFalseSeries
-                    : [block.practice.trueFalse],
-                flashcards: Array.isArray(block.practice.flashcardSeries) && block.practice.flashcardSeries.length
-                    ? block.practice.flashcardSeries
-                    : [block.practice.flashcards]
-            };
-            const series = seriesByType[type];
+            const series = getPracticeSeries(block, type);
             const maxAvailableIndex = Math.max(
                 0,
                 Math.min(series.length - 1, (current.freeSeriesUsed || 1) - 1)
@@ -1986,9 +1995,7 @@
 
         advanceQuizSeries() {
             const block = this.getActiveBlock();
-            const series = Array.isArray(block.practice.quizSeries) && block.practice.quizSeries.length
-                ? block.practice.quizSeries
-                : [block.practice.quiz];
+            const series = getPracticeSeries(block, "quiz");
 
             return this.updateActiveSession("quiz", (session) => {
                 const nextFreeSeriesUsed = Math.min(series.length, (session.freeSeriesUsed || 1) + 1);
@@ -2006,9 +2013,7 @@
 
         advanceFlashcardSeries() {
             const block = this.getActiveBlock();
-            const series = Array.isArray(block.practice.flashcardSeries) && block.practice.flashcardSeries.length
-                ? block.practice.flashcardSeries
-                : [block.practice.flashcards];
+            const series = getPracticeSeries(block, "flashcards");
 
             return this.updateActiveSession("flashcards", (session) => {
                 const nextFreeSeriesUsed = Math.min(series.length, (session.freeSeriesUsed || 1) + 1);
@@ -2105,6 +2110,7 @@
                 blockAssistMode: this.state.blockAssistMode,
                 savedDraftId: this.state.savedDraftId,
                 savedAt: this.state.savedAt,
+                premiumOffer: this.state.premiumOffer,
                 progressLabel: this.state.progressLabel
             };
         },
@@ -2144,6 +2150,7 @@
                 studyLibrary: this.state.studyLibrary,
                 activeLibraryItemId: this.state.activeLibraryItemId,
                 sessionNote: snapshot.sessionNote || null,
+                premiumOffer: snapshot.premiumOffer || null,
                 calendarMonth: snapshot.examDate
                     ? Number(String(snapshot.examDate).split("-")[1]) - 1
                     : defaults.calendarMonth,

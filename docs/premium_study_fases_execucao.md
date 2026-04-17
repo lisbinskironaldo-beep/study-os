@@ -35,10 +35,9 @@ Este documento cobre agora apenas:
 - estrutura das proximas telas
 
 As frentes abaixo ficam para depois:
-- IA externa final
-- billing
-- monetizacao
-- acesso premium real
+- conexao final com IA externa paga
+- checkout real com provedor
+- monetizacao ativa
 - estatisticas premium finais
 - novos modulos do ecossistema, como `Teste seu QI` e `Teste vocacional`
 
@@ -81,7 +80,7 @@ Status real do modulo em 2026-04-16:
 - Fase 5: concluida
 - Fase 6: concluida
 - Fase 7: concluida para a fase de produto atual
-- Fase 8: adiada
+- Fase 8: iniciada como base operacional local
 
 Mudancas ja implementadas fora da documentacao anterior:
 - `Biblioteca premium` na entrada
@@ -245,6 +244,13 @@ Entregar valor real de estudo antes de pratica avancada.
 
 ### Regras obrigatorias
 
+- mapa de assuntos mostra assuntos do PDF, nao funcoes diferentes
+- todos os cards do mapa abrem o mesmo tipo de resumo focado
+- quanto mais assuntos o PDF tiver, mais cards o mapa tera
+- grade com dois cards por linha sempre que possivel, inclusive em telas pequenas
+- cards do mapa devem ser baixos, com foco no titulo do assunto
+- cada card deve mostrar status visual: novo, iniciado ou concluido
+- usar arredondamento leve nos cards, evitando cantos muito redondos com cara de template pronto
 - foco em leitura orientada
 - tela cheia com coluna central de leitura
 - rolagem liberada
@@ -438,22 +444,66 @@ Polir o fluxo inteiro antes das frentes futuras.
 
 ---
 
-## 12. Fase 8 - Frentes futuras de IA, premium real e operacao
+## 12. Fase 8 - Frentes de IA, premium real e operacao
 
-### Esta fase fica adiada por enquanto
+### Status atual
 
-Quando for retomada, cobrira:
-- IA externa final
-- geracao real de conteudo
-- billing
-- acesso premium real
-- estatisticas premium
-- monetizacao e paywall
+A Fase 8 foi iniciada em 2026-04-16 como base operacional local.
+
+O objetivo desta primeira entrega nao e cobrar nem chamar IA real ainda.
+O objetivo e criar contratos pequenos para o produto ja saber:
+
+- quem pode usar cada recurso
+- onde o checkout sera conectado
+- onde a IA real sera conectada
+- quais prompts serao versionados
+- quais limites continuam gratis
+- quais recursos ficam premium
+
+### Entregas da Fase 8.1
+
+- `premium-study/services/access-control.js`
+- `premium-study/services/pdf-validator.js`
+- `premium-study/services/billing.js`
+- `premium-study/services/ai.js`
+- `premium-study/services/ai/prompts/plan.md`
+- `premium-study/services/ai/prompts/explain.md`
+- `premium-study/services/ai/prompts/review.md`
+- `premium-study/services/ai/prompts/questions.md`
+- `premium-study/services/ai/prompts/flashcards.md`
+- `premium-study/services/ai/prompts/mini_exam.md`
+
+### Entregas da Fase 8.2
+
+- rota `premium-checkout`
+- tela visual de oferta premium
+- cards de planos mensal e anual preparados
+- cliques premium levando para paywall em vez de ficarem mortos
+- biblioteca premium, exportacao e extras usando a mesma tela de conversao
+- botao de checkout chamando `PremiumStudyBilling.startCheckout`
+- mensagem clara quando o provedor real ainda nao estiver conectado
+- trava real no upload para PDF acima do limite gratis
+- oferta premium contextual para PDF maior que 12 paginas
+- premium preparado para materiais longos sem trava fixa de paginas no navegador
+- regra de custo: dividir o material antes de qualquer chamada de IA
+
+### Regras desta fase
+
+- nao chamar provedor externo direto da UI
+- nao espalhar regra de premium nas telas
+- nao misturar billing com renderizacao
+- nao chamar IA sem backend, cache e limite
+- manter o ultimo estudo gratis
+- manter tres series gratis por formato de pratica
+- bloquear biblioteca completa, extras, PDF maior e estatisticas no premium
+- nao mostrar preco definitivo antes de a operacao de pagamento estar definida
+- validar PDF antes de `setMaterial`
+- vender `PDFs longos com divisao inteligente`, nao `IA ilimitada sem controle`
 
 ### Regra
 
 ```txt
-esta fase nao entra enquanto as fases 1 a 7 nao estiverem fechadas e estaveis
+servico externo so entra depois que o contrato local estiver estavel
 ```
 
 ---
@@ -462,25 +512,38 @@ esta fase nao entra enquanto as fases 1 a 7 nao estiverem fechadas e estaveis
 
 Com a fase de produto principal fechada, a proxima frente recomendada passa a ser:
 
-1. operacao premium real
-2. pagamentos e billing
-3. bloqueios reais de acesso premium
-4. extras premium conectados a regra de assinatura
-5. IA externa real para conteudo dinamico
-6. estatisticas premium
+1. consolidar a camada `access-control`
+2. conectar paywall visual ao contrato `billing`
+3. conectar checkout real ao contrato `billing`
+4. criar fonte de verdade de assinatura no backend
+5. conectar extras premium a assinatura real
+6. conectar IA externa com cache e prompts versionados
+7. adicionar estatisticas premium
 
 ---
 
 ## 14. Plano objetivo da proxima frente
 
-### Fase 8 - Frentes futuras
+### Fase 8 - Execucao operacional
 
-Vai mudar ou implementar depois:
-- paywall premium real
-- liberacao real de extras premium
-- IA externa de verdade
-- billing
-- estatisticas premium
+Vai mudar ou implementar agora:
+- paywall premium usando `access-control`
+- checkout real usando `billing`
+- liberacao real de extras premium depois da assinatura
+- IA externa real usando `PremiumStudyAI`
+- cache por material, bloco e acao
+- estatisticas premium depois da fonte de dados de progresso estar estavel
+
+### Fase 8.3 - Proxima etapa externa
+
+Antes de conectar pagamento real, sera necessario:
+
+- criar ou acessar conta Mercado Pago
+- definir se a assinatura inicial sera mensal, anual ou as duas
+- definir preco publico
+- obter credenciais de teste
+- configurar URL de retorno e webhook
+- decidir onde o backend salvará o status real da assinatura
 
 ---
 

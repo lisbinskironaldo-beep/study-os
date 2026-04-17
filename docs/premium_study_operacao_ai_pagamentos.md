@@ -450,3 +450,177 @@ não porque foi empurrado para um mecanismo de spam
 - Mercado Pago como primeira recomendação para assinatura no Brasil
 - backend como fonte da verdade de acesso
 - uso de modelo econômico como trilha principal
+
+---
+
+## 18. Execucao inicial da Fase 8 - base local
+
+Atualizado em 2026-04-16.
+
+Esta etapa criou a base operacional sem custo externo e sem chamada real de IA.
+
+Arquivos criados:
+
+- `premium-study/services/access-control.js`
+- `premium-study/services/pdf-validator.js`
+- `premium-study/services/billing.js`
+- `premium-study/services/ai.js`
+- `premium-study/services/ai/prompts/plan.md`
+- `premium-study/services/ai/prompts/explain.md`
+- `premium-study/services/ai/prompts/review.md`
+- `premium-study/services/ai/prompts/questions.md`
+- `premium-study/services/ai/prompts/flashcards.md`
+- `premium-study/services/ai/prompts/mini_exam.md`
+
+### Access control
+
+Responsabilidade:
+
+- normalizar estados antigos como `free` e `premium`
+- decidir se o usuario pode abrir biblioteca premium
+- decidir se pode exportar marcador
+- decidir se pode pedir series extras
+- decidir se pode gerar mini provas extras
+- manter o ultimo estudo como recurso gratis
+- manter o limite gratis de PDF em ate 12 paginas
+
+Regra:
+
+```txt
+tela nao decide plano
+tela pergunta para access-control
+```
+
+### Billing
+
+Responsabilidade:
+
+- listar planos locais
+- indicar plano recomendado
+- preparar contrato de checkout
+- deixar claro que o provedor real ainda nao foi conectado
+
+Estado atual:
+
+```txt
+local_scaffold
+checkout real ainda nao configurado
+```
+
+Proxima etapa:
+
+- escolher o primeiro provedor real
+- conectar checkout no backend
+- gravar assinatura como fonte de verdade no servidor
+- atualizar `accessTier` pelo retorno confiavel do backend
+
+### IA
+
+Responsabilidade:
+
+- mapear tarefas oficiais de IA
+- versionar prompts
+- criar chave de cache por tarefa
+- retornar `not_configured` enquanto nao houver backend
+
+Tarefas oficiais:
+
+- `plan_from_material`
+- `explain_block`
+- `quick_review`
+- `extra_quiz`
+- `extra_true_false`
+- `extra_flashcards`
+- `extra_mini_exam`
+
+Regra:
+
+```txt
+IA real nao deve ser chamada direto da interface
+o backend precisa controlar chave, cache, limites e custo
+```
+
+### O que ainda nao entrou
+
+- cobranca real
+- webhook de pagamento
+- login/conta como fonte de verdade
+- validacao real de assinatura
+- chamada real de IA
+- cache persistente de geracoes
+- estatisticas premium
+
+### Criterio de aceite da Fase 8.1
+
+- o modulo carrega os servicos antes da UI
+- as telas deixam de depender diretamente de `accessTier === "premium"`
+- os recursos premium passam a consultar uma camada unica
+- nenhum custo externo e gerado
+- a proxima fase consegue conectar provedor sem refazer o fluxo visual
+
+---
+
+## 19. Execucao da Fase 8.2 - paywall visual
+
+Atualizado em 2026-04-16.
+
+Esta etapa criou a tela de conversao premium sem ativar cobranca real.
+
+### O que foi implementado
+
+- rota `premium-checkout`
+- tela de oferta premium contextual
+- beneficios diferentes conforme o recurso bloqueado
+- planos `Premium mensal` e `Premium anual` no contrato de billing
+- clique em biblioteca premium levando para paywall
+- clique em exportacao do marcador levando para paywall
+- clique em extras de pratica levando para paywall
+- clique em mini prova extra levando para paywall
+- retorno visual quando o checkout real ainda nao esta conectado
+- validacao do PDF antes de entrar no fluxo
+- bloqueio de PDF acima de 12 paginas no plano gratis
+- paywall contextual para PDF maior
+- premium preparado para materiais longos sem trava fixa de paginas no navegador
+- regra de custo: dividir o material antes de qualquer chamada de IA
+
+### Decisao de produto
+
+O produto nao deve mostrar preco definitivo enquanto o provedor real e a estrategia comercial nao forem fechados.
+
+Por isso, os planos aparecem com:
+
+```txt
+Valor a definir
+```
+
+### Regras preservadas
+
+- ultimo estudo continua gratis
+- PDFs textuais de ate 12 paginas continuam gratis
+- PDFs acima de 12 paginas nao avancam no fluxo gratis
+- no premium, o atrativo deve ser `PDFs longos com divisao inteligente`, nao `IA ilimitada sem controle`
+- tres rodadas gratis por formato de pratica continuam gratis
+- questionarios extras, V/F extras e flashcards extras devem aparecer como beneficios separados
+- biblioteca completa continua premium
+- exportacao de marcador continua premium
+- extras infinitos continuam premium
+
+### O que depende de acao externa
+
+Para transformar o paywall em assinatura real, sera necessario:
+
+- criar ou acessar conta Mercado Pago
+- definir preco mensal e anual
+- criar aplicacao/credenciais de teste
+- configurar URL de retorno
+- configurar webhook de assinatura/pagamento
+- criar backend para receber webhook
+- salvar status real de assinatura no servidor
+- atualizar o app com esse status confiavel
+
+Regra:
+
+```txt
+nao confiar em premium ativado apenas pelo navegador
+o navegador apenas reflete o status validado pelo backend
+```

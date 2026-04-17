@@ -69,10 +69,7 @@
                 if (event.target.id === "premiumStudyFileInput") {
                     const file = event.target.files && event.target.files[0];
                     if (file) {
-                        window.PremiumStudyStore.setMaterial(file);
-                        window.PremiumStudyRouter.goTo("exam-date");
-                        this.render();
-                        this.schedulePersist(80);
+                        this.handleSelectedFile(file, event.target);
                     }
                 }
             });
@@ -178,6 +175,77 @@
 
             window.PremiumStudyStore.setLatestLocalStudy(summary);
             this.persistenceReady = true;
+        },
+
+        openPremiumOffer(featureName, sourceStep) {
+            const store = window.PremiumStudyStore;
+            const router = window.PremiumStudyRouter;
+            const access = window.PremiumStudyAccessControl;
+            const feature = access && access.FEATURES
+                ? access.FEATURES[featureName] || featureName
+                : featureName;
+            const offer = access
+                ? access.buildOffer(feature)
+                : {
+                    feature,
+                    eyebrow: "Premium",
+                    title: "Libere recursos premium.",
+                    lead: "Este recurso fica liberado no plano premium.",
+                    benefits: ["Mais continuidade", "Mais treino", "Mais controle"],
+                    cta: "Conhecer premium"
+                };
+
+            store.setPremiumOffer({
+                ...offer,
+                sourceStep: sourceStep || store.getState().step
+            });
+            store.setReturnStep(sourceStep || store.getState().step || "entry");
+            router.goTo("premium-checkout");
+        },
+
+        async handleSelectedFile(file, input) {
+            const store = window.PremiumStudyStore;
+            const router = window.PremiumStudyRouter;
+            const validator = window.PremiumStudyPdfValidator;
+            const validation = validator
+                ? await validator.validate(file, store.getState())
+                : { ok: true, pageCount: null };
+
+            if (input) {
+                input.value = "";
+            }
+
+            if (!validation.ok) {
+                if (validation.reason === "page_limit") {
+                    this.openPremiumOffer("LARGE_PDF_UPLOAD", "entry");
+                    store.setSessionNote({
+                        step: "premium-checkout",
+                        tone: "premium",
+                        title: "PDF acima do limite gratis",
+                        message: validation.message
+                    });
+                } else {
+                    store.setSessionNote({
+                        step: store.getState().step,
+                        tone: "premium",
+                        title: "PDF nao aceito",
+                        message: validation.message || "Tente um PDF textual valido."
+                    });
+                }
+
+                this.render();
+                return;
+            }
+
+            store.setMaterial({
+                name: file.name,
+                size: file.size,
+                type: file.type,
+                pageCount: validation.pageCount
+            });
+            router.goTo("exam-date");
+            this.render();
+            this.schedulePersist(80);
         },
 
         async persistCurrentState() {
@@ -444,11 +512,35 @@ ${sections}`
         async handleAction(action, payload = {}) {
             const router = window.PremiumStudyRouter;
             const store = window.PremiumStudyStore;
+            const access = window.PremiumStudyAccessControl;
             let shouldPersist = false;
             let shouldSyncNativeFullScreen = false;
             let preferEnterNativeFullScreen = false;
-            const premiumLibraryEnabled =
-                store.getState().accessTier === "premium";
+            const getFeature = (name) => access && access.FEATURES
+                ? access.FEATURES[name]
+                : name.toLowerCase();
+            const canUseFeature = (name, context = {}) => access
+                ? access.canUse(getFeature(name), store.getState(), context)
+                : store.getState().accessTier === "premium";
+            const setPremiumLockNote = (name) => {
+                const feature = getFeature(name);
+                const note = access
+                    ? access.buildLockNote(feature)
+                    : {
+                        tone: "premium",
+                        title: "Recurso premium",
+                        message: "Este recurso fica liberado no plano premium."
+                    };
+
+                store.setSessionNote({
+                    step: store.getState().step,
+                    ...note
+                });
+            };
+            const openPremiumOffer = (name) => {
+                this.openPremiumOffer(name, store.getState().step || "entry");
+            };
+            const premiumLibraryEnabled = canUseFeature("PREMIUM_LIBRARY");
 
             if (
                 action !== "request-extra-quiz" &&
@@ -542,7 +634,6 @@ ${sections}`
                 break;
             case "choose-mode-learn":
                 store.setBlockTab("aprender");
-                store.markActiveBlockProgress({ learn: true });
                 router.goTo("learn-map");
                 shouldPersist = true;
                 break;
@@ -567,6 +658,8 @@ ${sections}`
                 break;
             case "open-premium-library":
                 if (!premiumLibraryEnabled) {
+                    openPremiumOffer("PREMIUM_LIBRARY");
+                    shouldPersist = true;
                     break;
                 }
                 router.goTo("premium-library");
@@ -575,6 +668,8 @@ ${sections}`
                 break;
             case "open-library-item":
                 if (!premiumLibraryEnabled) {
+                    openPremiumOffer("PREMIUM_LIBRARY");
+                    shouldPersist = true;
                     break;
                 }
                 store.setActiveLibraryItem(payload.blockId);
@@ -582,6 +677,8 @@ ${sections}`
                 break;
             case "resume-library-item": {
                 if (!premiumLibraryEnabled) {
+                    openPremiumOffer("PREMIUM_LIBRARY");
+                    shouldPersist = true;
                     break;
                 }
                 const activeItem = store.getActiveLibraryItem();
@@ -597,14 +694,18 @@ ${sections}`
                 break;
             }
             case "download-highlight-summary":
-                if (!premiumLibraryEnabled) {
+                if (!canUseFeature("HIGHLIGHT_EXPORT")) {
+                    openPremiumOffer("HIGHLIGHT_EXPORT");
+                    shouldPersist = true;
                     break;
                 }
                 this.downloadHighlightedPdf("summary");
                 shouldPersist = true;
                 break;
             case "download-highlighted-full":
-                if (!premiumLibraryEnabled) {
+                if (!canUseFeature("HIGHLIGHT_EXPORT")) {
+                    openPremiumOffer("HIGHLIGHT_EXPORT");
+                    shouldPersist = true;
                     break;
                 }
                 this.downloadHighlightedPdf("full");
@@ -614,6 +715,28 @@ ${sections}`
                 store.setBlockTab(payload.tabId);
                 shouldPersist = true;
                 break;
+            case "open-premium-checkout":
+                openPremiumOffer(payload.itemValue || "PREMIUM_LIBRARY");
+                shouldPersist = true;
+                shouldSyncNativeFullScreen = true;
+                break;
+            case "start-premium-checkout": {
+                const checkout = window.PremiumStudyBilling
+                    ? await window.PremiumStudyBilling.startCheckout(payload.itemValue || "premium_monthly", {
+                        feature: store.getState().premiumOffer && store.getState().premiumOffer.feature,
+                        sourceStep: store.getState().returnStep
+                    })
+                    : { status: "not_configured", message: "Checkout real ainda nao foi conectado." };
+
+                store.setSessionNote({
+                    step: store.getState().step,
+                    tone: checkout.ok ? "info" : "premium",
+                    title: checkout.ok ? "Checkout iniciado" : "Pagamento ainda precisa ser conectado",
+                    message: checkout.message || "A proxima etapa liga este botao ao provedor real."
+                });
+                shouldPersist = true;
+                break;
+            }
             case "back-to-mode-select":
                 router.goTo("mode-select");
                 shouldPersist = true;
@@ -723,12 +846,7 @@ ${sections}`
                 shouldPersist = true;
                 break;
             case "request-extra-mini-exam":
-                store.setSessionNote({
-                    step: store.getState().step,
-                    tone: "premium",
-                    title: "Extras liberados no premium",
-                    message: "O pacote base continua gratis. No premium, voce libera novas questoes, novos flashcards e reformulacoes por outra otica."
-                });
+                openPremiumOffer("MINI_EXAM_EXTRA");
                 shouldPersist = true;
                 break;
             case "request-extra-quiz": {
@@ -741,12 +859,7 @@ ${sections}`
                     break;
                 }
 
-                store.setSessionNote({
-                    step: store.getState().step,
-                    tone: "premium",
-                    title: "Extras liberados no premium",
-                    message: "As 3 series gratis do questionario ja foram usadas. No premium, voce libera novas series e reformulacoes por outra otica."
-                });
+                openPremiumOffer("PRACTICE_EXTRA_SERIES");
                 shouldPersist = true;
                 break;
             }
@@ -760,12 +873,7 @@ ${sections}`
                     break;
                 }
 
-                store.setSessionNote({
-                    step: store.getState().step,
-                    tone: "premium",
-                    title: "Extras liberados no premium",
-                    message: "As 3 series gratis de verdadeiro ou falso ja foram usadas. No premium, voce libera novas series e reformulacoes por outra otica."
-                });
+                openPremiumOffer("PRACTICE_EXTRA_SERIES");
                 shouldPersist = true;
                 break;
             }
@@ -779,12 +887,7 @@ ${sections}`
                     break;
                 }
 
-                store.setSessionNote({
-                    step: store.getState().step,
-                    tone: "premium",
-                    title: "Extras liberados no premium",
-                    message: "As 3 series gratis de flashcards ja foram usadas. No premium, voce libera novas series e reformulacoes por outra otica."
-                });
+                openPremiumOffer("PRACTICE_EXTRA_SERIES");
                 shouldPersist = true;
                 break;
             }
