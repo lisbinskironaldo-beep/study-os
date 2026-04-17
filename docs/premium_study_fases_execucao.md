@@ -247,7 +247,7 @@ Entregar valor real de estudo antes de pratica avancada.
 - mapa de assuntos mostra assuntos do PDF, nao funcoes diferentes
 - todos os cards do mapa abrem o mesmo tipo de resumo focado
 - quanto mais assuntos o PDF tiver, mais cards o mapa tera
-- grade com dois cards por linha sempre que possivel, inclusive em telas pequenas
+- grade responsiva: ate 3 cards por linha em desktop quando houver espaco, 2 em telas medias/pequenas e 1 apenas quando necessario
 - cards do mapa devem ser baixos, com foco no titulo do assunto
 - cada card deve mostrar status visual: novo, iniciado ou concluido
 - usar arredondamento leve nos cards, evitando cantos muito redondos com cara de template pronto
@@ -435,6 +435,18 @@ Polir o fluxo inteiro antes das frentes futuras.
 - sem textos quebrados por encoding
 - sem placeholder de fase futura aparecendo no produto
 - sem diferenca entre comportamento documentado e comportamento real
+
+### Regra visual de cantos premium
+
+O modo premium deve seguir a escala de raios definida em `premium-study/styles/premium-study.css`.
+
+- shell principal: `--premium-radius-shell`, usado apenas no container externo e leitores amplos
+- paineis grandes: `--premium-radius-panel`, usado em calendario, paywall e blocos de destaque
+- cards comuns: `--premium-radius-card`, usado em cards clicaveis, perguntas, resumos e componentes de acao
+- detalhes internos: `--premium-radius-tight` e `--premium-radius-chip`, usados em alternativas, tags, badges e listas
+- elementos realmente circulares: `--premium-radius-pill`, reservado para voltar, fechar, progresso, controles circulares, trilhas e botoes que precisam parecer circulares por funcao
+
+Nao voltar a usar cantos grandes como `24px`, `28px`, `30px` ou `36px` em cards e paineis do modo premium. O visual esperado e maduro, preciso e levemente arredondado, semelhante aos cards compactos de `Retomar ultimo estudo`, `Biblioteca premium` e aos cards pequenos do mapa de assuntos.
 
 ### Criterios de aceite
 
