@@ -291,6 +291,12 @@ Tela de entrada da pratica:
 - tres formatos como cards de acao
 - sem painel `Plano em construcao`
 - progresso visual por formato no estilo `copo enchendo`
+- cada formato tem 3 rodadas gratis por assunto
+- o card principal abre sempre a proxima rodada gratis pendente
+- pote vazio abre aquela rodada
+- pote cheio abre a rodada ja concluida para revisao ou refazer
+- quando as 3 rodadas gratis acabam, extras ficam bloqueados no premium
+- `Refazer questionario`, `Refazer V ou F` e `Refazer flashcards` limpam as 3 rodadas daquele formato e recomecam com as mesmas questoes/cards
 
 Questionario:
 - uma questao por vez

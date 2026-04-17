@@ -1207,7 +1207,9 @@
             isComplete: false,
             completedAt: "",
             currentSeriesIndex: 0,
-            freeSeriesUsed: 1
+            freeSeriesUsed: 1,
+            completedSeries: [],
+            seriesSnapshots: {}
         };
     }
 
@@ -1218,7 +1220,9 @@
             score: null,
             focusIndex: 0,
             currentSeriesIndex: 0,
-            freeSeriesUsed: 1
+            freeSeriesUsed: 1,
+            completedSeries: [],
+            seriesSnapshots: {}
         };
     }
 
@@ -1229,7 +1233,9 @@
             known: [],
             done: false,
             currentSeriesIndex: 0,
-            freeSeriesUsed: 1
+            freeSeriesUsed: 1,
+            completedSeries: [],
+            seriesSnapshots: {}
         };
     }
 
@@ -1266,6 +1272,99 @@
             : [];
 
         return [clone(baseItems), clone(baseItems), clone(baseItems)];
+    }
+
+    function isPracticeSessionComplete(type, session = {}) {
+        if (type === "quiz") {
+            return Boolean(session.isComplete);
+        }
+
+        if (type === "trueFalse") {
+            return Boolean(session.submitted);
+        }
+
+        if (type === "flashcards") {
+            return Boolean(session.done);
+        }
+
+        return false;
+    }
+
+    function normalizeCompletedSeries(type, session = {}, freeSeriesLimit = 3) {
+        const source = Array.isArray(session.completedSeries)
+            ? session.completedSeries
+            : [];
+        const completed = new Set(
+            source
+                .map((index) => Number(index))
+                .filter((index) => Number.isFinite(index) && index >= 0 && index < freeSeriesLimit)
+        );
+
+        if (isPracticeSessionComplete(type, session)) {
+            const currentIndex = Number.isFinite(session.currentSeriesIndex)
+                ? session.currentSeriesIndex
+                : 0;
+            if (currentIndex >= 0 && currentIndex < freeSeriesLimit) {
+                completed.add(currentIndex);
+            }
+        }
+
+        return Array.from(completed).sort((a, b) => a - b);
+    }
+
+    function snapshotPracticeSession(session) {
+        const snapshot = clone(session);
+        delete snapshot.seriesSnapshots;
+        return snapshot;
+    }
+
+    function createPracticeSeriesSeed(type, seriesIndex, session = {}) {
+        const completedSeries = Array.isArray(session.completedSeries)
+            ? [...session.completedSeries]
+            : [];
+        const seriesSnapshots = session.seriesSnapshots && typeof session.seriesSnapshots === "object"
+            ? { ...session.seriesSnapshots }
+            : {};
+        const freeSeriesUsed = Math.max(
+            Number(session.freeSeriesUsed) || 1,
+            (Number(seriesIndex) || 0) + 1
+        );
+        const seed = type === "quiz"
+            ? createQuizSession([])
+            : type === "trueFalse"
+                ? createTrueFalseSession([])
+                : createFlashcardSession([]);
+
+        return {
+            ...seed,
+            currentSeriesIndex: Number(seriesIndex) || 0,
+            freeSeriesUsed,
+            completedSeries,
+            seriesSnapshots
+        };
+    }
+
+    function markPracticeSeriesComplete(type, session = {}) {
+        const currentSeriesIndex = Math.max(0, Number(session.currentSeriesIndex) || 0);
+        const completedSeries = normalizeCompletedSeries(type, session);
+        if (!completedSeries.includes(currentSeriesIndex)) {
+            completedSeries.push(currentSeriesIndex);
+            completedSeries.sort((a, b) => a - b);
+        }
+
+        const nextSession = {
+            ...session,
+            completedSeries,
+            freeSeriesUsed: Math.max(Number(session.freeSeriesUsed) || 1, currentSeriesIndex + 1)
+        };
+        const seriesSnapshots = nextSession.seriesSnapshots && typeof nextSession.seriesSnapshots === "object"
+            ? { ...nextSession.seriesSnapshots }
+            : {};
+
+        seriesSnapshots[currentSeriesIndex] = snapshotPracticeSession(nextSession);
+        nextSession.seriesSnapshots = seriesSnapshots;
+
+        return nextSession;
     }
 
     function buildSessions(blocks) {
@@ -1720,6 +1819,9 @@
             const block = this.getActiveBlock();
             const totalSeries = getPracticeSeries(block, type).length || 1;
             const freeSeriesLimit = Math.min(3, totalSeries);
+            const completedSeries = normalizeCompletedSeries(type, session, freeSeriesLimit);
+            const nextPendingIndex = Array.from({ length: freeSeriesLimit }, (_, index) => index)
+                .find((index) => !completedSeries.includes(index));
             const currentSeries = Math.max(
                 1,
                 Math.min(
@@ -1729,16 +1831,16 @@
                         : (session.freeSeriesUsed || 1)
                 )
             );
-            const generatedSeriesCount = Math.max(
-                currentSeries,
-                Math.min(freeSeriesLimit, session.freeSeriesUsed || currentSeries)
-            );
 
             return {
                 currentSeries,
                 freeSeriesLimit,
-                generatedSeriesCount,
-                hasMoreFreeSeries: generatedSeriesCount < freeSeriesLimit
+                completedSeries,
+                completedCount: completedSeries.length,
+                generatedSeriesCount: completedSeries.length,
+                nextPendingIndex: Number.isFinite(nextPendingIndex) ? nextPendingIndex : null,
+                isAllComplete: completedSeries.length >= freeSeriesLimit,
+                hasMoreFreeSeries: completedSeries.length < freeSeriesLimit
             };
         },
 
@@ -1794,7 +1896,7 @@
             return this.state;
         },
 
-        resetActiveSession(type) {
+        resetActiveSession(type, options = {}) {
             const block = this.getActiveBlock();
             const seeds = {
                 quiz: createQuizSession(block.practice.quiz),
@@ -1804,18 +1906,39 @@
             };
             if (type === "quiz") {
                 const current = this.getActiveSession("quiz");
-                seeds.quiz.currentSeriesIndex = current?.currentSeriesIndex || 0;
-                seeds.quiz.freeSeriesUsed = current?.freeSeriesUsed || 1;
+                seeds.quiz.currentSeriesIndex = options.allSeries ? 0 : current?.currentSeriesIndex || 0;
+                seeds.quiz.freeSeriesUsed = options.allSeries ? 1 : current?.freeSeriesUsed || 1;
+                seeds.quiz.completedSeries = options.allSeries
+                    ? []
+                    : normalizeCompletedSeries("quiz", current).filter((index) => index !== seeds.quiz.currentSeriesIndex);
+                seeds.quiz.seriesSnapshots = options.allSeries
+                    ? {}
+                    : { ...(current?.seriesSnapshots || {}) };
+                delete seeds.quiz.seriesSnapshots[seeds.quiz.currentSeriesIndex];
             }
             if (type === "trueFalse") {
                 const current = this.getActiveSession("trueFalse");
-                seeds.trueFalse.currentSeriesIndex = current?.currentSeriesIndex || 0;
-                seeds.trueFalse.freeSeriesUsed = current?.freeSeriesUsed || 1;
+                seeds.trueFalse.currentSeriesIndex = options.allSeries ? 0 : current?.currentSeriesIndex || 0;
+                seeds.trueFalse.freeSeriesUsed = options.allSeries ? 1 : current?.freeSeriesUsed || 1;
+                seeds.trueFalse.completedSeries = options.allSeries
+                    ? []
+                    : normalizeCompletedSeries("trueFalse", current).filter((index) => index !== seeds.trueFalse.currentSeriesIndex);
+                seeds.trueFalse.seriesSnapshots = options.allSeries
+                    ? {}
+                    : { ...(current?.seriesSnapshots || {}) };
+                delete seeds.trueFalse.seriesSnapshots[seeds.trueFalse.currentSeriesIndex];
             }
             if (type === "flashcards") {
                 const current = this.getActiveSession("flashcards");
-                seeds.flashcards.currentSeriesIndex = current?.currentSeriesIndex || 0;
-                seeds.flashcards.freeSeriesUsed = current?.freeSeriesUsed || 1;
+                seeds.flashcards.currentSeriesIndex = options.allSeries ? 0 : current?.currentSeriesIndex || 0;
+                seeds.flashcards.freeSeriesUsed = options.allSeries ? 1 : current?.freeSeriesUsed || 1;
+                seeds.flashcards.completedSeries = options.allSeries
+                    ? []
+                    : normalizeCompletedSeries("flashcards", current).filter((index) => index !== seeds.flashcards.currentSeriesIndex);
+                seeds.flashcards.seriesSnapshots = options.allSeries
+                    ? {}
+                    : { ...(current?.seriesSnapshots || {}) };
+                delete seeds.flashcards.seriesSnapshots[seeds.flashcards.currentSeriesIndex];
             }
             return this.updateActiveSession(type, seeds[type]);
         },
@@ -1844,6 +1967,7 @@
                 if (session.index >= items.length - 1) {
                     session.isComplete = true;
                     session.completedAt = new Date().toISOString();
+                    return markPracticeSeriesComplete("quiz", session);
                 } else {
                     session.index += 1;
                 }
@@ -1869,26 +1993,12 @@
                 });
                 session.submitted = true;
                 session.score = hits;
-                return session;
+                return markPracticeSeriesComplete("trueFalse", session);
             });
         },
 
         advanceTrueFalseSeries() {
-            const block = this.getActiveBlock();
-            const series = getPracticeSeries(block, "trueFalse");
-
-            return this.updateActiveSession("trueFalse", (session) => {
-                const nextFreeSeriesUsed = Math.min(series.length, (session.freeSeriesUsed || 1) + 1);
-                const nextSeriesIndex = Math.min(series.length - 1, nextFreeSeriesUsed - 1);
-
-                session.answers = {};
-                session.submitted = false;
-                session.score = null;
-                session.focusIndex = 0;
-                session.freeSeriesUsed = nextFreeSeriesUsed;
-                session.currentSeriesIndex = nextSeriesIndex;
-                return session;
-            });
+            return this.startNextPracticeSeries("trueFalse");
         },
 
         flipFlashcard() {
@@ -1939,44 +2049,72 @@
             const block = this.getActiveBlock();
             const current = this.getActiveSession(type) || {};
             const series = getPracticeSeries(block, type);
-            const maxAvailableIndex = Math.max(
-                0,
-                Math.min(series.length - 1, (current.freeSeriesUsed || 1) - 1)
-            );
+            const freeSeriesLimit = Math.min(3, series.length || 1);
+            const completedSeries = normalizeCompletedSeries(type, current, freeSeriesLimit);
+            const seriesSnapshots = current.seriesSnapshots && typeof current.seriesSnapshots === "object"
+                ? current.seriesSnapshots
+                : {};
             const nextSeriesIndex = Math.max(
                 0,
-                Math.min(maxAvailableIndex, Number(seriesIndex) || 0)
+                Math.min(freeSeriesLimit - 1, Number(seriesIndex) || 0)
             );
 
             return this.updateActiveSession(type, (session) => {
-                session.currentSeriesIndex = nextSeriesIndex;
+                const isSameActiveSeries = session.currentSeriesIndex === nextSeriesIndex;
+                const isCurrentIncomplete = !isPracticeSessionComplete(type, session);
+                const nextSnapshots = { ...seriesSnapshots };
+                if (Number.isFinite(session.currentSeriesIndex)) {
+                    nextSnapshots[session.currentSeriesIndex] = snapshotPracticeSession(session);
+                }
+                const savedSnapshot = nextSnapshots[nextSeriesIndex];
 
-                if (type === "quiz") {
-                    session.index = 0;
-                    session.answers = [];
-                    session.isComplete = false;
-                    session.completedAt = "";
-                    return session;
+                if (!isSameActiveSeries && savedSnapshot) {
+                    return {
+                        ...clone(savedSnapshot),
+                        currentSeriesIndex: nextSeriesIndex,
+                        freeSeriesUsed: Math.max(Number(session.freeSeriesUsed) || 1, nextSeriesIndex + 1),
+                        completedSeries,
+                        seriesSnapshots: nextSnapshots
+                    };
                 }
 
-                if (type === "trueFalse") {
-                    session.answers = {};
-                    session.submitted = false;
-                    session.score = null;
-                    session.focusIndex = 0;
-                    return session;
+                if (isSameActiveSeries && isPracticeSessionComplete(type, session)) {
+                    nextSnapshots[nextSeriesIndex] = nextSnapshots[nextSeriesIndex] || snapshotPracticeSession(session);
+
+                    return {
+                        ...session,
+                        completedSeries,
+                        seriesSnapshots: nextSnapshots
+                    };
                 }
 
-                if (type === "flashcards") {
-                    session.index = 0;
-                    session.flipped = false;
-                    session.known = [];
-                    session.done = false;
-                    return session;
+                if (isSameActiveSeries && isCurrentIncomplete) {
+                    return {
+                        ...session,
+                        completedSeries,
+                        seriesSnapshots: nextSnapshots
+                    };
                 }
 
-                return session;
+                return createPracticeSeriesSeed(type, nextSeriesIndex, {
+                    ...session,
+                    completedSeries,
+                    seriesSnapshots: nextSnapshots
+                });
             });
+        },
+
+        startNextPracticeSeries(type) {
+            const meta = this.getPracticeSeriesMeta(type);
+            if (!Number.isFinite(meta.nextPendingIndex)) {
+                return this.state;
+            }
+
+            return this.selectPracticeSeries(type, meta.nextPendingIndex);
+        },
+
+        restartPracticeType(type) {
+            return this.resetActiveSession(type, { allSeries: true });
         },
 
         markFlashcard(known) {
@@ -1988,45 +2126,18 @@
                     session.index += 1;
                 } else {
                     session.done = true;
+                    return markPracticeSeriesComplete("flashcards", session);
                 }
                 return session;
             });
         },
 
         advanceQuizSeries() {
-            const block = this.getActiveBlock();
-            const series = getPracticeSeries(block, "quiz");
-
-            return this.updateActiveSession("quiz", (session) => {
-                const nextFreeSeriesUsed = Math.min(series.length, (session.freeSeriesUsed || 1) + 1);
-                const nextSeriesIndex = Math.min(series.length - 1, nextFreeSeriesUsed - 1);
-
-                session.index = 0;
-                session.answers = [];
-                session.isComplete = false;
-                session.completedAt = "";
-                session.freeSeriesUsed = nextFreeSeriesUsed;
-                session.currentSeriesIndex = nextSeriesIndex;
-                return session;
-            });
+            return this.startNextPracticeSeries("quiz");
         },
 
         advanceFlashcardSeries() {
-            const block = this.getActiveBlock();
-            const series = getPracticeSeries(block, "flashcards");
-
-            return this.updateActiveSession("flashcards", (session) => {
-                const nextFreeSeriesUsed = Math.min(series.length, (session.freeSeriesUsed || 1) + 1);
-                const nextSeriesIndex = Math.min(series.length - 1, nextFreeSeriesUsed - 1);
-
-                session.index = 0;
-                session.flipped = false;
-                session.known = [];
-                session.done = false;
-                session.freeSeriesUsed = nextFreeSeriesUsed;
-                session.currentSeriesIndex = nextSeriesIndex;
-                return session;
-            });
+            return this.startNextPracticeSeries("flashcards");
         },
 
         setMiniExamAnswer(answerIndex) {

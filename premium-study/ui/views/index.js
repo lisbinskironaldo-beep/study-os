@@ -309,34 +309,27 @@ ${renderSessionNote(state, "entry")}`;
     function getPracticeSlots(state, type, seriesMeta) {
         const session = state.sessions[state.activeBlockId][type] || {};
         const total = Math.max(1, Number(seriesMeta?.freeSeriesLimit) || 3);
-        const filledCount = Math.max(
-            0,
-            Math.min(total, Number(seriesMeta?.generatedSeriesCount) || 1)
-        );
+        const completedSeries = Array.isArray(seriesMeta?.completedSeries)
+            ? seriesMeta.completedSeries
+            : [];
         const activeIndex = Math.max(
             0,
             Math.min(
                 total - 1,
                 Number.isFinite(session.currentSeriesIndex)
                     ? session.currentSeriesIndex
-                    : Math.max(0, filledCount - 1)
+                    : 0
             )
         );
 
         return Array.from({ length: total }, (_, index) => ({
             index,
-            done: index < filledCount,
+            done: completedSeries.includes(index),
             active: index === activeIndex
         }));
     }
 
     function renderPracticeSlotPots(type, slots) {
-        const premiumAction = type === "quiz"
-            ? "request-extra-quiz"
-            : type === "trueFalse"
-                ? "request-extra-true-false"
-                : "request-extra-flashcards";
-
         return `
 <div class="premium-practice-slots">
     <div class="premium-practice-slot-row">
@@ -348,7 +341,7 @@ ${renderSessionNote(state, "entry")}`;
     </div>
     <div class="premium-practice-slot-row premium-practice-slot-row-premium">
         ${Array.from({ length: 3 }, () => `
-        <button type="button" class="premium-practice-slot premium-practice-slot-locked" data-premium-action="${premiumAction}" aria-label="Liberar extras no premium">
+        <button type="button" class="premium-practice-slot premium-practice-slot-locked" data-premium-action="request-premium-practice-extra" data-practice-type="${type}" aria-label="Liberar extras no premium">
             <span class="premium-practice-slot-lock">+</span>
         </button>`).join("")}
     </div>
@@ -361,7 +354,7 @@ ${renderSessionNote(state, "entry")}`;
     <article class="premium-practice-card ${primary ? "premium-practice-card-primary" : ""}" data-premium-action="${action}" role="button" tabindex="0" aria-label="${UI().escapeHtml(title)}">
         <div class="premium-practice-card-head">
             <span>${label}</span>
-            <em>${seriesMeta.currentSeries}/${seriesMeta.freeSeriesLimit}</em>
+            <em>${seriesMeta.completedCount}/${seriesMeta.freeSeriesLimit}</em>
         </div>
         <strong>${title}</strong>
         <p>${description}</p>
@@ -659,17 +652,19 @@ ${renderSessionNote(state, "entry")}`;
         ), 0);
 
         if (session.isComplete) {
+            const restartAction = seriesMeta.isAllComplete ? "restart-quiz" : "reset-quiz";
+            const restartLabel = seriesMeta.isAllComplete ? "Refazer questionario" : "Refazer esta rodada";
             return `
 <section class="premium-result-shell">
     <article class="premium-result-hero premium-result-hero-compact">
         <span class="premium-detail-label">Questionario concluido</span>
-        <strong>${seriesMeta.currentSeries}/${seriesMeta.freeSeriesLimit}</strong>
-        <p>Voce terminou o questionario base deste assunto.</p>
+        <strong>${seriesMeta.completedCount}/${seriesMeta.freeSeriesLimit}</strong>
+        <p>${seriesMeta.isAllComplete ? "Voce concluiu as 3 rodadas gratis deste questionario." : "Voce terminou esta rodada. Pode seguir para a proxima gratis."}</p>
     </article>
     ${UI().actionBar([
         { action: "open-practice", label: "Voltar para pratica", variant: "secondary" },
-        { action: "request-extra-quiz", label: extraButtonLabel, variant: "ghost" },
-        { action: "open-mini-exam", label: "Ir para mini prova", variant: "primary" }
+        { action: restartAction, label: restartLabel, variant: "ghost" },
+        { action: "request-extra-quiz", label: extraButtonLabel, variant: "primary" }
     ])}
     ${renderSessionNote(state, "quiz")}
 </section>`;
@@ -761,9 +756,9 @@ ${renderSessionNote(state, "entry")}`;
     </div>
     ${session.submitted
         ? UI().actionBar([
-            { action: "reset-true-false", label: "Refazer", variant: "secondary" },
-            { action: "request-extra-true-false", label: extraButtonLabel, variant: "ghost" },
-            { action: "open-flashcards", label: "Ir para flashcards", variant: "primary" }
+            { action: "open-practice", label: "Voltar para pratica", variant: "secondary" },
+            { action: seriesMeta.isAllComplete ? "restart-true-false" : "reset-true-false", label: seriesMeta.isAllComplete ? "Refazer V ou F" : "Refazer esta rodada", variant: "ghost" },
+            { action: "request-extra-true-false", label: extraButtonLabel, variant: "primary" }
         ])
         : UI().actionBar([
             { action: "submit-true-false", label: "Corrigir respostas", variant: "primary" }
@@ -783,17 +778,19 @@ ${renderSessionNote(state, "entry")}`;
         const isDone = session.known.filter((value) => value === true).length;
 
         if (session.done) {
+            const restartAction = seriesMeta.isAllComplete ? "restart-flashcards" : "reset-flashcards";
+            const restartLabel = seriesMeta.isAllComplete ? "Refazer flashcards" : "Refazer esta rodada";
             return `
 <section class="premium-result-shell">
     <article class="premium-result-hero premium-result-hero-compact">
         <span class="premium-detail-label">Flashcards concluidos</span>
-        <strong>${seriesMeta.currentSeries}/${seriesMeta.freeSeriesLimit}</strong>
-        <p>Voce marcou ${isDone} cards como entendidos neste bloco.</p>
+        <strong>${seriesMeta.completedCount}/${seriesMeta.freeSeriesLimit}</strong>
+        <p>${seriesMeta.isAllComplete ? "Voce concluiu as 3 rodadas gratis de flashcards." : `Voce marcou ${isDone} cards como entendidos nesta rodada.`}</p>
     </article>
     ${UI().actionBar([
         { action: "open-practice", label: "Voltar para pratica", variant: "secondary" },
-        { action: "request-extra-flashcards", label: extraButtonLabel, variant: "ghost" },
-        { action: "open-mini-exam", label: "Ir para mini prova", variant: "primary" }
+        { action: restartAction, label: restartLabel, variant: "ghost" },
+        { action: "request-extra-flashcards", label: extraButtonLabel, variant: "primary" }
     ])}
     ${renderSessionNote(state, "flashcards")}
 </section>`;

@@ -540,6 +540,15 @@ ${sections}`
             const openPremiumOffer = (name) => {
                 this.openPremiumOffer(name, store.getState().step || "entry");
             };
+            const openPracticeSeries = (type, step) => {
+                const meta = store.getPracticeSeriesMeta(type);
+                const targetIndex = Number.isFinite(meta.nextPendingIndex)
+                    ? meta.nextPendingIndex
+                    : Math.max(0, meta.freeSeriesLimit - 1);
+
+                store.selectPracticeSeries(type, targetIndex);
+                router.goTo(step);
+            };
             const premiumLibraryEnabled = canUseFeature("PREMIUM_LIBRARY");
 
             if (
@@ -799,7 +808,7 @@ ${sections}`
                 shouldPersist = true;
                 break;
             case "open-quiz":
-                router.goTo("quiz");
+                openPracticeSeries("quiz", "quiz");
                 shouldPersist = true;
                 break;
             case "open-practice-slot":
@@ -826,7 +835,7 @@ ${sections}`
                 shouldPersist = true;
                 break;
             case "open-true-false":
-                router.goTo("true-false");
+                openPracticeSeries("trueFalse", "true-false");
                 shouldPersist = true;
                 break;
             case "answer-true-false":
@@ -841,8 +850,16 @@ ${sections}`
                 store.resetActiveSession("trueFalse");
                 shouldPersist = true;
                 break;
+            case "restart-true-false":
+                store.restartPracticeType("trueFalse");
+                shouldPersist = true;
+                break;
             case "open-flashcards":
-                router.goTo("flashcards");
+                openPracticeSeries("flashcards", "flashcards");
+                shouldPersist = true;
+                break;
+            case "request-premium-practice-extra":
+                openPremiumOffer("PRACTICE_EXTRA_SERIES");
                 shouldPersist = true;
                 break;
             case "request-extra-mini-exam":
@@ -855,6 +872,7 @@ ${sections}`
                 if (seriesMeta.hasMoreFreeSeries) {
                     store.advanceQuizSeries();
                     store.clearSessionNote();
+                    router.goTo("quiz");
                     shouldPersist = true;
                     break;
                 }
@@ -869,6 +887,7 @@ ${sections}`
                 if (seriesMeta.hasMoreFreeSeries) {
                     store.advanceTrueFalseSeries();
                     store.clearSessionNote();
+                    router.goTo("true-false");
                     shouldPersist = true;
                     break;
                 }
@@ -883,6 +902,7 @@ ${sections}`
                 if (seriesMeta.hasMoreFreeSeries) {
                     store.advanceFlashcardSeries();
                     store.clearSessionNote();
+                    router.goTo("flashcards");
                     shouldPersist = true;
                     break;
                 }
@@ -901,6 +921,22 @@ ${sections}`
                 break;
             case "mark-flashcard-known":
                 store.markFlashcard(true);
+                shouldPersist = true;
+                break;
+            case "reset-quiz":
+                store.resetActiveSession("quiz");
+                shouldPersist = true;
+                break;
+            case "restart-quiz":
+                store.restartPracticeType("quiz");
+                shouldPersist = true;
+                break;
+            case "reset-flashcards":
+                store.resetActiveSession("flashcards");
+                shouldPersist = true;
+                break;
+            case "restart-flashcards":
+                store.restartPracticeType("flashcards");
                 shouldPersist = true;
                 break;
             case "answer-mini-exam":
