@@ -49,6 +49,41 @@ const Core = {
         this.initTopbarCollapse();
         this.goHome();
         this.initShortcutHint();
+        this.handlePremiumPaymentReturn();
+    },
+
+    getPremiumPaymentReturn() {
+        const params = new URLSearchParams(window.location.search);
+        const status = params.get("premiumPayment");
+
+        if (!["success", "failure", "pending"].includes(status)) {
+            return null;
+        }
+
+        return {
+            status,
+            paymentId: params.get("payment_id") || params.get("paymentId") || "",
+            collectionId: params.get("collection_id") || "",
+            preferenceId: params.get("preference_id") || "",
+            collectionStatus: params.get("collection_status") || "",
+            externalReference: params.get("external_reference") || ""
+        };
+    },
+
+    handlePremiumPaymentReturn() {
+        const paymentReturn = this.getPremiumPaymentReturn();
+
+        if (!paymentReturn) {
+            return;
+        }
+
+        window.RotaNotaPremiumPaymentReturn = paymentReturn;
+
+        if (window.history && typeof window.history.replaceState === "function") {
+            window.history.replaceState({}, document.title, window.location.pathname);
+        }
+
+        this.navigate("premium-study");
     },
 
     registerModules() {

@@ -22,7 +22,59 @@
             this.root.classList.add("premium-study-host");
             this.bindRoot();
             await this.hydrateFromStorage();
+            this.consumePaymentReturn();
             this.render();
+        },
+
+        consumePaymentReturn() {
+            const paymentReturn = window.RotaNotaPremiumPaymentReturn;
+
+            if (!paymentReturn || paymentReturn.consumed) {
+                return;
+            }
+
+            const store = window.PremiumStudyStore;
+            const router = window.PremiumStudyRouter;
+            const messages = {
+                success: {
+                    tone: "info",
+                    title: "Pagamento recebido pelo Mercado Pago",
+                    message: "Estamos aguardando a confirmacao segura do webhook para liberar o premium. Se o pagamento foi aprovado, a liberacao final entra na proxima etapa operacional."
+                },
+                pending: {
+                    tone: "premium",
+                    title: "Pagamento em analise",
+                    message: "O Mercado Pago marcou este pagamento como pendente. Assim que houver confirmacao, o acesso premium podera ser liberado pelo servidor."
+                },
+                failure: {
+                    tone: "premium",
+                    title: "Pagamento nao concluido",
+                    message: "O pagamento nao foi aprovado ou foi cancelado. Voce pode tentar novamente quando quiser."
+                }
+            };
+            const note = messages[paymentReturn.status] || messages.pending;
+
+            paymentReturn.consumed = true;
+            store.setPremiumOffer({
+                eyebrow: "RotaNota Premium",
+                title: paymentReturn.status === "success"
+                    ? "Pagamento recebido. Falta a confirmacao segura."
+                    : "Finalize seu acesso premium com seguranca.",
+                lead: "O checkout ja esta conectado ao Mercado Pago. A liberacao definitiva depende do webhook e da fonte de verdade do servidor.",
+                benefits: [
+                    "Checkout seguro funcionando",
+                    "Webhook preparado para confirmacao",
+                    "Liberacao premium sera persistida no backend"
+                ],
+                cta: "Voltar aos planos",
+                sourceStep: "entry"
+            });
+            store.setReturnStep("entry");
+            store.setSessionNote({
+                step: "premium-checkout",
+                ...note
+            });
+            router.goTo("premium-checkout");
         },
 
         bindRoot() {
@@ -730,6 +782,14 @@ ${sections}`
                 shouldSyncNativeFullScreen = true;
                 break;
             case "start-premium-checkout": {
+                store.setSessionNote({
+                    step: store.getState().step,
+                    tone: "info",
+                    title: "Abrindo checkout seguro",
+                    message: "Estamos criando sua rota de pagamento no Mercado Pago."
+                });
+                this.render();
+
                 const checkout = window.PremiumStudyBilling
                     ? await window.PremiumStudyBilling.startCheckout(payload.itemValue || "premium_monthly", {
                         feature: store.getState().premiumOffer && store.getState().premiumOffer.feature,

@@ -780,3 +780,40 @@ premium ativo depende de webhook validado e persistencia no backend
 - configurar webhook no painel Mercado Pago com URL HTTPS publica
 - criar persistencia de usuarios/assinaturas
 - ligar `premium_active` ao retorno validado do backend
+
+---
+
+## 22. Execucao da Fase 8.4 - retorno do checkout
+
+Atualizado em 2026-04-18.
+
+Esta etapa trata o retorno visual do Mercado Pago sem liberar premium indevidamente.
+
+### O que foi implementado
+
+- leitura de `premiumPayment=success`
+- leitura de `premiumPayment=failure`
+- leitura de `premiumPayment=pending`
+- abertura automatica do modulo `PDF Focado` quando o usuario volta do checkout
+- rota para `premium-checkout` com mensagem contextual
+- limpeza do parametro da URL apos leitura
+- feedback imediato `Abrindo checkout seguro` antes do redirecionamento ao Mercado Pago
+
+### Regra preservada
+
+```txt
+success na URL nao ativa premium
+success apenas informa que o Mercado Pago retornou o usuario
+premium real depende de webhook validado e persistencia no servidor
+```
+
+### Proxima etapa obrigatoria
+
+Criar uma fonte de verdade de usuario/assinatura.
+
+Sem isso, o sistema ainda nao deve gravar:
+
+- `premium_active`
+- historico completo remoto
+- biblioteca premium real entre dispositivos
+- desbloqueio definitivo de recursos pagos
