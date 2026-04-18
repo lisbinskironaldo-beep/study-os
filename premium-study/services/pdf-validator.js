@@ -81,7 +81,7 @@
             return {
                 ok: false,
                 reason: "invalid_pdf",
-                message: "O arquivo selecionado nao parece ser um PDF valido."
+                message: "O arquivo selecionado não parece ser um PDF válido."
             };
         }
 
@@ -100,7 +100,7 @@
                     : "large_pdf_upload",
                 pageCount,
                 limit,
-                message: `Este PDF tem ${pageCount} paginas. No gratis, o limite e de ${limit} paginas.`
+                message: `Este PDF tem ${pageCount} páginas. No grátis, o limite é de ${limit} páginas.`
             };
         }
 

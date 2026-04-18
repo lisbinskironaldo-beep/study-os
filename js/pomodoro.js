@@ -186,7 +186,7 @@ const Pomodoro = {
         container.innerHTML = `
             <div class="pomodoro-presets-heading">
                 <h2 class="pomodoro-presets-title">
-                    <span>Metodos de estudo</span>
+                    <span>Métodos de estudo</span>
                     <em>Pomodoro</em>
                 </h2>
             </div>
@@ -530,7 +530,7 @@ const Pomodoro = {
         if (this.mode === "study") {
             this.logStudySession(
                 this.getStudySecondsForLog(),
-                linkedBlock ? linkedBlock.title : "Sessao do dia"
+                linkedBlock ? linkedBlock.title : "Sessão do dia"
             );
 
             if (linkedBlock) {
@@ -1050,7 +1050,7 @@ const Pomodoro = {
             ) {
                 this.logStudySession(
                     this.getTodayBlockStudySeconds(item),
-                    item.title || "Sessao do dia"
+                    item.title || "Sessão do dia"
                 );
                 entry.loggedIds.push(item.id);
                 changed = true;
@@ -1356,15 +1356,15 @@ const Pomodoro = {
                     tone: "empty",
                     pill: "Vazio",
                     title: "Monte a rota de hoje no quadro semanal.",
-                    detail: "Com horarios e materias preenchidos, o Pomodoro acompanha ao vivo."
+                    detail: "Com horários e matérias preenchidos, o Pomodoro acompanha ao vivo."
                 };
             }
 
             return {
                 tone: "done",
                 pill: "Fechado",
-                title: "Todos os blocos do dia foram concluidos.",
-                detail: "Voce pode revisar o quadro ou iniciar um ciclo manual."
+                title: "Todos os blocos do dia foram concluídos.",
+                detail: "Você pode revisar o quadro ou iniciar um ciclo manual."
             };
         }
 
@@ -1375,15 +1375,15 @@ const Pomodoro = {
                 tone: "break",
                 pill: "Pausa",
                 title: `Janela de pausa ativa por mais ${this.formatRelativeMinutes(this.remaining / 60)}.`,
-                detail: `${block.title} encerrou o foco e a proxima materia ja esta na fila.`
+                detail: `${block.title} encerrou o foco e a próxima matéria já está na fila.`
             };
         }
 
         if (nowMinutes < block.startMinutes) {
             return {
                 tone: "upcoming",
-                pill: "Proximo",
-                title: `Comeca em ${this.formatRelativeMinutes(block.startMinutes - nowMinutes)}.`,
+                pill: "Próximo",
+                title: `Começa em ${this.formatRelativeMinutes(block.startMinutes - nowMinutes)}.`,
                 detail: `Ritmo ${block.studyMinutes}/${block.breakMinutes} pronto para iniciar.`
             };
         }
@@ -1396,8 +1396,8 @@ const Pomodoro = {
                 tone: "live",
                 pill: "Ao vivo",
                 title: delayMinutes > 0
-                    ? `Sessao ao vivo com ${this.formatRelativeMinutes(delayMinutes)} de atraso ajustado.`
-                    : "Sessao entrou na janela certa.",
+                    ? `Sessão ao vivo com ${this.formatRelativeMinutes(delayMinutes)} de atraso ajustado.`
+                    : "Sessão entrou na janela certa.",
                 detail: `Restam ${this.formatRelativeMinutes(Math.max(block.endMinutes - nowMinutes, 0))} para fechar este foco.`
             };
         }
@@ -1414,8 +1414,8 @@ const Pomodoro = {
         return {
             tone: "catchup",
             pill: "Rota",
-            title: `${state.missedCount + 1} bloco(s) ficaram para tras.`,
-            detail: "O app aponta o proximo bloco pendente para voce retomar sem perder o fio."
+            title: `${state.missedCount + 1} bloco(s) ficaram para trás.`,
+            detail: "O app aponta o próximo bloco pendente para você retomar sem perder o fio."
         };
     },
 
@@ -1446,7 +1446,7 @@ const Pomodoro = {
                     </div>
                     <div class="today-flow-progress">
                         <strong>${completedLabel}</strong>
-                        <span>blocos concluidos</span>
+                        <span>blocos concluídos</span>
                     </div>
                 </div>
                 <div class="today-flow-grid">
@@ -1456,7 +1456,7 @@ const Pomodoro = {
                             <span class="today-flow-slot">${currentBlock ? currentBlock.studyRange : "Sem bloco ativo"}</span>
                         </div>
                         <div class="today-flow-title">${currentBlock ? currentBlock.title : "Nenhuma rota pronta para hoje"}</div>
-                        <div class="today-flow-meta">${currentBlock ? `${currentBlock.dayName} • ${currentBlock.studyMinutes}/${currentBlock.breakMinutes}` : "Abra o quadro e defina horarios e materias."}</div>
+                        <div class="today-flow-meta">${currentBlock ? `${currentBlock.dayName} • ${currentBlock.studyMinutes}/${currentBlock.breakMinutes}` : "Abra o quadro e defina horários e matérias."}</div>
                         <div class="today-flow-status">${status.title}</div>
                         <div class="today-flow-detail">${status.detail}</div>
                         <div class="today-flow-actions">
@@ -1468,7 +1468,7 @@ const Pomodoro = {
                     <article class="today-flow-card today-flow-queue">
                         <div class="today-flow-card-top">
                             <span class="today-flow-pill is-queue">Depois</span>
-                            <span class="today-flow-slot">${queue.length ? "Proximos blocos" : "Fila limpa"}</span>
+                            <span class="today-flow-slot">${queue.length ? "Próximos blocos" : "Fila limpa"}</span>
                         </div>
                         <div class="today-flow-queue-list">
                             ${queue.length ? queue.map((item) => `
@@ -1570,8 +1570,8 @@ const Pomodoro = {
 
             return {
                     tone: "done",
-                title: "Rota de hoje concluida.",
-                detail: "Voce pode seguir no modo livre."
+                title: "Rota de hoje concluída.",
+                detail: "Você pode seguir no modo livre."
             };
         }
 
@@ -1592,8 +1592,8 @@ const Pomodoro = {
         return {
             tone: this.syncEnabled ? "live" : "idle",
             title: this.syncEnabled
-                ? "Sincronizacao ativa."
-                : "Sincronizacao desligada.",
+                ? "Sincronização ativa."
+                : "Sincronização desligada.",
             detail: this.syncEnabled
                 ? `Modo: ${activeLabel}`
                 : `Modo: ${activeLabel}`
@@ -1687,7 +1687,7 @@ const Pomodoro = {
                     <div class="today-flow-track ${this.syncEnabled ? "is-live" : "is-muted"}">
                         ${this.renderFlowSlot("Antes", beforeItem, "previous")}
                         ${this.renderFlowSlot("Agora", middleItem, isBreakLive ? "break" : (this.syncEnabled ? "current" : "idle"))}
-                        ${this.renderFlowSlot("Proxima", nextBlock, "next")}
+                        ${this.renderFlowSlot("Próxima", nextBlock, "next")}
                     </div>
                 `}
             </div>

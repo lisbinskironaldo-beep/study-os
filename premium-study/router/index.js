@@ -27,7 +27,7 @@
     const STEP_META = {
         entry: {
             title: "RotaNota transforma seu PDF em uma rota para a prova.",
-            subtitle: "Tudo comeca no seu material. Depois disso, cada etapa ajusta a trilha ao seu prazo e a sua meta.",
+            subtitle: "Tudo começa no seu material. Depois disso, cada etapa ajusta a trilha ao seu prazo e à sua meta.",
             label: "Entrada RotaNota",
             backVisible: false,
             progressVisible: false,
@@ -43,7 +43,7 @@
             showSummary: false
         },
         "target-score": {
-            title: "Qual nota voce quer tirar?",
+            title: "Qual nota você quer tirar?",
             subtitle: "Defina a meta para que o plano ajuste foco, ritmo e profundidade.",
             label: "Meta de nota",
             backVisible: true,
@@ -52,16 +52,16 @@
             showSummary: false
         },
         "study-time": {
-            title: "Quanto tempo por dia voce vai ter para estudar?",
+            title: "Quanto tempo por dia você vai ter para estudar?",
             subtitle: "Ajuste horas e minutos para que o plano respeite sua rotina real.",
-            label: "Tempo diario",
+            label: "Tempo diário",
             backVisible: true,
             progressVisible: true,
             progress: 78,
             showSummary: false
         },
         analysis: {
-            title: "RotaNota esta montando o melhor caminho para voce.",
+            title: "RotaNota está montando o melhor caminho para você.",
             subtitle: "Agora o sistema transforma suas escolhas em uma trilha mais objetiva e focada na sua meta.",
             label: "Processamento",
             backVisible: false,
@@ -69,8 +69,8 @@
             showSummary: false
         },
         "mode-select": {
-            title: "Como voce quer comecar agora?",
-            subtitle: "Escolha o jeito mais natural para entrar no conteudo neste momento.",
+            title: "Como você quer começar agora?",
+            subtitle: "Escolha o jeito mais natural para entrar no conteúdo neste momento.",
             label: "Modo inicial",
             backVisible: true,
             progressVisible: false,
@@ -86,8 +86,8 @@
             scrollable: true
         },
         "learn-map": {
-            title: "Escolha o assunto por onde quer comecar.",
-            subtitle: "Cada assunto abre um resumo focado no resultado e voce pode avancar para o proximo direto de la.",
+            title: "Escolha o assunto por onde quer começar.",
+            subtitle: "Cada assunto abre um resumo focado no resultado e você pode avançar para o próximo direto de lá.",
             label: "Aprender",
             backVisible: true,
             progressVisible: false,
@@ -105,18 +105,18 @@
             hideHeading: true
         },
         practice: {
-            title: "Como voce quer praticar este bloco?",
+            title: "Como você quer praticar este bloco?",
             subtitle: "Escolha um formato curto para consolidar o que acabou de estudar.",
-            label: "Pratica",
+            label: "Prática",
             backVisible: true,
             progressVisible: false,
             showSummary: false,
             scrollable: true
         },
         quiz: {
-            title: "Questionario orientado",
-            subtitle: "Uma questao por vez, com leitura limpa e correcao objetiva.",
-            label: "Questionario",
+            title: "Questionário orientado",
+            subtitle: "Uma questão por vez, com leitura limpa e correção objetiva.",
+            label: "Questionário",
             backVisible: true,
             progressVisible: false,
             showSummary: false,
@@ -125,7 +125,7 @@
         },
         "true-false": {
             title: "Verdadeiro ou falso",
-            subtitle: "Teste formulacoes parecidas e veja onde a banca pode confundir voce.",
+            subtitle: "Teste formulações parecidas e veja onde a banca pode confundir você.",
             label: "V ou F",
             backVisible: true,
             progressVisible: false,
@@ -135,7 +135,7 @@
         },
         flashcards: {
             title: "Flashcards do bloco",
-            subtitle: "Revise termos e relacoes em ciclos curtos de memorizacao.",
+            subtitle: "Revise termos e relações em ciclos curtos de memorização.",
             label: "Flashcards",
             backVisible: true,
             progressVisible: false,
@@ -155,7 +155,7 @@
         },
         "exam-result": {
             title: "Seu resultado do bloco",
-            subtitle: "Use o resultado para decidir se volta para aprender, pratica mais ou segue.",
+            subtitle: "Use o resultado para decidir se volta para aprender, treina mais ou segue.",
             label: "Resultado",
             backVisible: true,
             progressVisible: false,
@@ -181,7 +181,7 @@
             scrollable: true
         },
         trail: {
-            title: "Sua trilha esta pronta para continuar.",
+            title: "Sua trilha está pronta para continuar.",
             subtitle: "Veja os blocos, retome seu ponto atual e avance com clareza.",
             label: "Sua trilha",
             backVisible: true,

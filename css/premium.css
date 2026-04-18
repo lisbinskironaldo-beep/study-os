@@ -7151,3 +7151,305 @@ body.focus-mode #shortcutHint.is-visible {
         min-width: 100%;
     }
 }
+
+/* =====================================================
+   RotaNota refinement - home, Pomodoro and light radii
+===================================================== */
+
+:root {
+    --rn-radius-shell: 14px;
+    --rn-radius-card: 10px;
+    --rn-radius-control: 9px;
+    --rn-home-width: min(1040px, calc(100vw - 64px));
+}
+
+body.dark {
+    --bg: #0b111b;
+    --bg-deep: #101b2a;
+    --ink: #f4f7fb;
+    --muted: #9aa8ba;
+    --surface: rgba(16, 23, 35, 0.82);
+    --surface-strong: rgba(17, 25, 38, 0.95);
+    --ui-clickable-surface:
+        linear-gradient(180deg, rgba(31, 39, 53, 0.97), rgba(21, 28, 41, 0.96));
+    --ui-clickable-border: rgba(125, 214, 255, 0.12);
+    --ui-informative-surface:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.025), rgba(255, 255, 255, 0.055));
+    background:
+        radial-gradient(circle at 16% 0%, rgba(0, 212, 255, 0.12), transparent 28%),
+        radial-gradient(circle at 90% 12%, rgba(37, 88, 240, 0.12), transparent 26%),
+        linear-gradient(180deg, #070b12 0%, #0b111b 48%, #111a25 100%);
+}
+
+.topbar,
+.hero,
+.module.active,
+.footer,
+.home-launchpad-main,
+.home-launchpad-tools,
+.rotanota-home-brand,
+.launchpad-card,
+.launchpad-tool,
+.icon-circle,
+.timezone-topbar,
+.style-menu,
+.style-option,
+.preset-chip,
+.pomodoro-presets,
+.today-flow-shell,
+.today-flow-card,
+#ambientRoot .ambient-mini,
+#ambientRoot .ambient-panel,
+.ambient-player,
+.ambient-panel-new {
+    clip-path: none !important;
+}
+
+.topbar,
+.hero,
+.module.active,
+.footer,
+.home-launchpad-main,
+.home-launchpad-tools,
+.rotanota-home-brand,
+.style-menu,
+.pomodoro-presets,
+.today-flow-shell,
+#ambientRoot .ambient-panel,
+.ambient-panel-new {
+    border-radius: var(--rn-radius-shell) !important;
+}
+
+.launchpad-card,
+.launchpad-tool,
+.style-option,
+.preset-chip,
+.today-flow-card,
+.timezone-topbar,
+#ambientRoot .ambient-mini,
+.ambient-player,
+.ambient-sound,
+.youtube-controls {
+    border-radius: var(--rn-radius-card) !important;
+}
+
+.icon-circle,
+.topbar-collapse-btn,
+.control-btn,
+.ambient-play,
+.ambient-fav,
+.yt-fav {
+    border-radius: var(--rn-radius-control) !important;
+}
+
+body[data-mode="clock"] .hero {
+    width: var(--rn-home-width);
+    min-height: min(720px, calc(100vh - 118px));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: clamp(22px, 4vw, 42px);
+    overflow: visible;
+}
+
+body[data-mode="clock"] #pomodoroPresets,
+body[data-mode="clock"] .date-display,
+body[data-mode="clock"] .time-display,
+body[data-mode="clock"] #cycleProgress,
+body[data-mode="clock"] #todayFlow,
+body[data-mode="clock"] .controls,
+body[data-mode="clock"] .main-stats-row,
+body[data-mode="clock"] #streakVisual,
+body[data-mode="clock"] #dailyGoal,
+body[data-mode="clock"] #weeklyChart,
+body[data-mode="clock"] #sessionLog,
+body[data-mode="clock"] #advancedStats,
+body[data-mode="clock"] #achievements,
+body[data-mode="clock"] #progressiveBars {
+    display: none !important;
+}
+
+#homeLaunchpad {
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+body:not([data-mode="clock"]) #homeLaunchpad {
+    display: none !important;
+}
+
+.rotanota-home-brand {
+    width: 100%;
+    margin: 0 auto 12px;
+    padding: clamp(18px, 2.6vw, 28px);
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: clamp(14px, 2vw, 22px);
+}
+
+.rotanota-home-brand img {
+    width: clamp(54px, 6vw, 74px);
+    height: clamp(54px, 6vw, 74px);
+}
+
+.rotanota-home-brand span {
+    font-size: clamp(1.9rem, 3.2vw, 3.35rem);
+}
+
+.rotanota-home-brand strong {
+    font-size: clamp(0.96rem, 1.2vw, 1.16rem);
+}
+
+.rotanota-home-brand p {
+    font-size: 0.88rem;
+}
+
+.home-launchpad-main,
+.home-launchpad-tools {
+    width: 100%;
+    padding: clamp(14px, 2vw, 20px);
+}
+
+.launchpad-primary-grid {
+    width: 100%;
+    grid-template-columns: repeat(4, minmax(128px, 1fr));
+    gap: 10px;
+}
+
+.launchpad-card {
+    min-height: 74px;
+    padding: 16px 14px;
+}
+
+.launchpad-card-title {
+    font-size: clamp(0.92rem, 1vw, 1rem);
+}
+
+.home-launchpad-tools {
+    margin-top: 10px;
+}
+
+.launchpad-tool-row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(112px, 1fr));
+    gap: 10px;
+}
+
+.launchpad-tool {
+    min-height: 38px;
+    padding: 0 12px;
+    font-size: 0.82rem;
+}
+
+body[data-mode="pomodoro"] .hero {
+    min-height: min(760px, calc(100vh - 122px));
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    align-content: start;
+    row-gap: 14px;
+    padding: clamp(22px, 3vw, 34px);
+}
+
+body[data-mode="pomodoro"] #pomodoroPresets,
+body[data-mode="pomodoro"] .date-display,
+body[data-mode="pomodoro"] .time-display,
+body[data-mode="pomodoro"] #cycleProgress,
+body[data-mode="pomodoro"] #todayFlow,
+body[data-mode="pomodoro"] .controls,
+body[data-mode="pomodoro"] .main-stats-row,
+body[data-mode="pomodoro"] #streakVisual,
+body[data-mode="pomodoro"] #dailyGoal,
+body[data-mode="pomodoro"] #weeklyChart,
+body[data-mode="pomodoro"] #sessionLog,
+body[data-mode="pomodoro"] #advancedStats,
+body[data-mode="pomodoro"] #achievements,
+body[data-mode="pomodoro"] #progressiveBars {
+    grid-column: 2 / 12;
+}
+
+body[data-mode="pomodoro"] .time-display {
+    display: block;
+    max-width: 920px;
+    margin-inline: auto;
+}
+
+body[data-mode="pomodoro"] .controls {
+    display: flex;
+}
+
+.pomodoro-presets-title span {
+    letter-spacing: 0.12em;
+}
+
+.topbar {
+    overflow: visible;
+}
+
+.rotanota-topbar-brand {
+    border-radius: var(--rn-radius-card);
+    clip-path: none;
+}
+
+.rotanota-topbar-brand img {
+    width: 30px;
+    height: 30px;
+}
+
+.rotanota-topbar-brand small {
+    letter-spacing: 0.08em;
+}
+
+@media (max-width: 980px) {
+    body[data-mode="clock"] .hero {
+        width: min(100%, calc(100vw - 28px));
+        min-height: auto;
+        align-items: flex-start;
+    }
+
+    .launchpad-primary-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .launchpad-tool-row {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    body[data-mode="pomodoro"] #pomodoroPresets,
+    body[data-mode="pomodoro"] .date-display,
+    body[data-mode="pomodoro"] .time-display,
+    body[data-mode="pomodoro"] #cycleProgress,
+    body[data-mode="pomodoro"] #todayFlow,
+    body[data-mode="pomodoro"] .controls,
+    body[data-mode="pomodoro"] .main-stats-row,
+    body[data-mode="pomodoro"] #streakVisual,
+    body[data-mode="pomodoro"] #dailyGoal,
+    body[data-mode="pomodoro"] #weeklyChart,
+    body[data-mode="pomodoro"] #sessionLog,
+    body[data-mode="pomodoro"] #advancedStats,
+    body[data-mode="pomodoro"] #achievements,
+    body[data-mode="pomodoro"] #progressiveBars {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 620px) {
+    :root {
+        --rn-radius-shell: 12px;
+        --rn-radius-card: 9px;
+    }
+
+    .rotanota-home-brand {
+        grid-template-columns: 1fr;
+        justify-items: start;
+        text-align: left;
+    }
+
+    .launchpad-primary-grid,
+    .launchpad-tool-row {
+        grid-template-columns: 1fr;
+    }
+
+    .launchpad-card {
+        min-height: 58px;
+    }
+}

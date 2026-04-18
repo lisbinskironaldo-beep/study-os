@@ -8,7 +8,7 @@
     const Access = () => window.PremiumStudyAccessControl;
 
     const MONTHS = [
-        "Janeiro", "Fevereiro", "Marco", "Abril", "Maio", "Junho",
+        "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
         "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"
     ];
 
@@ -36,7 +36,7 @@
 <section class="premium-entry-stage">
     <div class="premium-entry-hero">
         <button type="button" class="premium-entry-card premium-entry-card-primary premium-entry-card-featured" data-premium-action="open-file-picker">
-            <span class="premium-entry-kicker">Novo estudo <span class="premium-entry-inline-badge premium-entry-inline-badge-free">Ate 12 paginas gratis</span></span>
+            <span class="premium-entry-kicker">Novo estudo <span class="premium-entry-inline-badge premium-entry-inline-badge-free">Até 12 páginas grátis</span></span>
             <strong>Carregar PDF</strong>
             <p>Envie seu material e receba um caminho focado na sua necessidade.</p>
         </button>
@@ -44,23 +44,23 @@
     <div class="premium-entry-grid premium-entry-grid-secondary ${resume ? "" : "is-single"}">
         ${resume ? `
         <button type="button" class="premium-entry-card premium-entry-card-secondary premium-entry-card-support premium-entry-card-resume" data-premium-action="resume-latest-study">
-            <span class="premium-entry-kicker">Ultimo estudo salvo <span class="premium-entry-inline-badge premium-entry-inline-badge-free">Gratis</span></span>
-            <strong>Retomar ultimo estudo</strong>
+            <span class="premium-entry-kicker">Último estudo salvo <span class="premium-entry-inline-badge premium-entry-inline-badge-free">Grátis</span></span>
+            <strong>Retomar último estudo</strong>
             <p>${UI().escapeHtml(resume.title)}</p>
             <small>Prova em ${UI().escapeHtml(resume.examDateLabel)}</small>
         </button>` : ""}
         <button type="button" class="premium-entry-card premium-entry-card-secondary premium-entry-card-support premium-entry-card-premium ${premiumLibraryEnabled ? "" : "is-locked"}" data-premium-action="open-premium-library" ${premiumLibraryEnabled ? "" : "aria-disabled=\"true\""}>
             <span class="premium-entry-kicker">Biblioteca premium <span class="premium-entry-inline-badge premium-entry-inline-badge-premium">Premium</span></span>
             <strong>Biblioteca premium</strong>
-            <p>${additionalStudiesCount > 0 ? `${additionalStudiesCount} estudo(s) extras ja esperam por voce aqui.` : "Retome outros estudos salvos e mantenha seu historico organizado."}</p>
-            <small>${premiumLibraryEnabled ? "Abrir historico premium" : "Estude mais com premium"}</small>
+            <p>${additionalStudiesCount > 0 ? `${additionalStudiesCount} estudo(s) extras já esperam por você aqui.` : "Retome outros estudos salvos e mantenha seu histórico organizado."}</p>
+            <small>${premiumLibraryEnabled ? "Abrir histórico premium" : "Estude mais com premium"}</small>
         </button>
     </div>
     <input id="premiumStudyFileInput" class="premium-hidden-input" type="file" accept=".pdf,application/pdf" />
 </section>
 <div class="premium-entry-note">
-    <span>Gratis para sempre em PDFs de ate 12 paginas.</span>
-    <span>Retomar o ultimo estudo continua gratis. Os outros estudos e o historico completo ficam no premium.</span>
+    <span>Grátis para sempre em PDFs de até 12 páginas.</span>
+    <span>Retomar o último estudo continua grátis. Os outros estudos e o histórico completo ficam no premium.</span>
 </div>
 ${renderSessionNote(state, "entry")}`;
     }
@@ -105,9 +105,9 @@ ${renderSessionNote(state, "entry")}`;
     <div class="premium-calendar-panel">
         <div class="premium-calendar-head">
             <div class="premium-calendar-title-wrap">
-                <button type="button" class="premium-calendar-nav" data-premium-action="calendar-prev" aria-label="Mes anterior">&larr;</button>
+                <button type="button" class="premium-calendar-nav" data-premium-action="calendar-prev" aria-label="Mês anterior">&larr;</button>
                 <strong class="premium-calendar-title">${MONTHS[month]} ${year}</strong>
-                <button type="button" class="premium-calendar-nav" data-premium-action="calendar-next" aria-label="Mes seguinte">&rarr;</button>
+                <button type="button" class="premium-calendar-nav" data-premium-action="calendar-next" aria-label="Mês seguinte">&rarr;</button>
             </div>
             <span class="premium-calendar-selection">${state.examDate ? `Selecionado: ${UI().formatDateLabel(state.examDate)}` : "Escolha um dia"}</span>
         </div>
@@ -192,11 +192,11 @@ ${renderSessionNote(state, "entry")}`;
         return `
 <section class="premium-loading-stage">
     <div class="premium-loading-orb" aria-hidden="true"></div>
-    <strong>Extraindo o melhor conteudo para voce buscar nota ${targetScore} no dia ${UI().escapeHtml(examDateLabel)}.</strong>
-    <p>Estamos montando uma trilha mais objetiva para o seu prazo e para o tempo diario que voce informou.</p>
+    <strong>Extraindo o melhor conteúdo para você buscar nota ${targetScore} no dia ${UI().escapeHtml(examDateLabel)}.</strong>
+    <p>Estamos montando uma trilha mais objetiva para o seu prazo e para o tempo diário que você informou.</p>
     <div class="premium-loading-checks">
         <span>Lendo PDF</span>
-        <span>Separando topicos</span>
+        <span>Separando tópicos</span>
         <span>Priorizando trilha</span>
         <span>Montando plano</span>
     </div>
@@ -216,13 +216,13 @@ ${renderSessionNote(state, "entry")}`;
     </button>
     <button type="button" class="premium-mode-card" data-premium-action="choose-mode-practice">
         <span class="premium-mode-word">Praticar</span>
-        <strong>Va direto para questoes</strong>
+        <strong>Vá direto para questões</strong>
         <p>Treino objetivo para consolidar o assunto sem desviar do foco.</p>
     </button>
     <button type="button" class="premium-mode-card" data-premium-action="choose-mode-exam">
         <span class="premium-mode-word">Prova</span>
-        <strong>Teste seu nivel agora</strong>
-        <p>Mini prova do bloco para medir criterio, seguranca e prontidao.</p>
+        <strong>Teste seu nível agora</strong>
+        <p>Mini prova do bloco para medir critério, segurança e prontidão.</p>
     </button>
     <button type="button" class="premium-mode-card premium-mode-card-highlight" data-premium-action="choose-mode-highlight">
         <span class="premium-mode-word">Marcar</span>
@@ -345,7 +345,7 @@ ${renderSessionNote(state, "entry")}`;
             <span class="premium-practice-slot-lock">+</span>
         </button>`).join("")}
     </div>
-    <small>3 gratis agora. Depois, potes extras e infinitos no premium.</small>
+    <small>3 grátis agora. Depois, potes extras e infinitos no premium.</small>
 </div>`;
     }
 
@@ -420,7 +420,7 @@ ${renderSessionNote(state, "entry")}`;
             { action: "ai-explain-better", label: "Explicar melhor", variant: state.blockAssistMode === "explain" ? "secondary" : "ghost" },
             { action: "ai-quick-review", label: "Revisar em 5 pontos", variant: state.blockAssistMode === "review" ? "secondary" : "ghost" },
             { action: "open-mini-exam", label: "Mini prova", variant: "primary" },
-            ...(nextBlockId ? [{ action: "open-next-block", label: "Proximo assunto", variant: "ghost" }] : [])
+            ...(nextBlockId ? [{ action: "open-next-block", label: "Próximo assunto", variant: "ghost" }] : [])
         ])}
     </div>
 </section>`;
@@ -504,7 +504,7 @@ ${renderSessionNote(state, "entry")}`;
             `).join("") : `
                 <article class="premium-empty-library">
                     <strong>Nenhum material salvo ainda.</strong>
-                    <p>Assim que voce carregar PDFs e avancar no fluxo, eles passam a aparecer aqui.</p>
+                    <p>Assim que você carregar PDFs e avançar no fluxo, eles passam a aparecer aqui.</p>
                 </article>
             `}
         </aside>
@@ -528,7 +528,7 @@ ${renderSessionNote(state, "entry")}`;
             ` : `
                 <div class="premium-empty-library">
                     <strong>Sua biblioteca premium fica aqui.</strong>
-                    <p>Quando voce carregar materiais, eles passam a ficar guardados nesta area para retomada futura.</p>
+                    <p>Quando você carregar materiais, eles passam a ficar guardados nesta área para retomada futura.</p>
                 </div>
             `}
         </article>
@@ -547,7 +547,7 @@ ${renderSessionNote(state, "entry")}`;
             : {
                 eyebrow: "Premium",
                 title: "Libere continuidade e profundidade.",
-                lead: "O gratis entrega a base. O premium entra quando voce quer mais materiais, mais treino e mais continuidade.",
+                lead: "O grátis entrega a base. O premium entra quando você quer mais materiais, mais treino e mais continuidade.",
                 benefits: ["Historico completo", "Treinos extras", "Recursos avancados"],
                 cta: "Conhecer premium"
             });
@@ -611,9 +611,9 @@ ${renderSessionNote(state, "entry")}`;
     ${renderPracticeCard({
         action: "open-quiz",
         type: "quiz",
-        label: "Questionario",
+        label: "Questionário",
         title: "Multipla escolha",
-        description: "Treino direto para criterio, leitura e decisao.",
+        description: "Treino direto para critério, leitura e decisão.",
         slots: quizSlots,
         seriesMeta: quizSeriesMeta,
         primary: true
@@ -631,8 +631,8 @@ ${renderSessionNote(state, "entry")}`;
         action: "open-flashcards",
         type: "flashcards",
         label: "Flashcards",
-        title: "Memorizacao ativa",
-        description: "Mnemonicos, gatilhos e fixacao rapida do bloco.",
+        title: "Memorização ativa",
+        description: "Mnemônicos, gatilhos e fixação rápida do bloco.",
         slots: flashcardSlots,
         seriesMeta: flashcardSeriesMeta
     })}
@@ -653,16 +653,16 @@ ${renderSessionNote(state, "entry")}`;
 
         if (session.isComplete) {
             const restartAction = seriesMeta.isAllComplete ? "restart-quiz" : "reset-quiz";
-            const restartLabel = seriesMeta.isAllComplete ? "Refazer questionario" : "Refazer esta rodada";
+            const restartLabel = seriesMeta.isAllComplete ? "Refazer questionário" : "Refazer esta rodada";
             return `
 <section class="premium-result-shell">
     <article class="premium-result-hero premium-result-hero-compact">
-        <span class="premium-detail-label">Questionario concluido</span>
+        <span class="premium-detail-label">Questionário concluído</span>
         <strong>${seriesMeta.completedCount}/${seriesMeta.freeSeriesLimit}</strong>
-        <p>${seriesMeta.isAllComplete ? "Voce concluiu as 3 rodadas gratis deste questionario." : "Voce terminou esta rodada. Pode seguir para a proxima gratis."}</p>
+        <p>${seriesMeta.isAllComplete ? "Você concluiu as 3 rodadas grátis deste questionário." : "Você terminou esta rodada. Pode seguir para a próxima grátis."}</p>
     </article>
     ${UI().actionBar([
-        { action: "open-practice", label: "Voltar para pratica", variant: "secondary" },
+        { action: "open-practice", label: "Voltar para prática", variant: "secondary" },
         { action: restartAction, label: restartLabel, variant: "ghost" },
         { action: "request-extra-quiz", label: extraButtonLabel, variant: "primary" }
     ])}
@@ -677,8 +677,8 @@ ${renderSessionNote(state, "entry")}`;
         return `
 <section class="premium-quiz-shell">
     <div class="premium-question-meta">
-        <span>Questao ${session.index + 1} de ${items.length}</span>
-        <strong>Serie ${seriesMeta.currentSeries}/${seriesMeta.freeSeriesLimit}</strong>
+        <span>Questão ${session.index + 1} de ${items.length}</span>
+        <strong>Série ${seriesMeta.currentSeries}/${seriesMeta.freeSeriesLimit}</strong>
     </div>
     <article class="premium-question-card">
         <h2>${UI().escapeHtml(question.prompt)}</h2>
@@ -704,7 +704,7 @@ ${renderSessionNote(state, "entry")}`;
             <p>${UI().escapeHtml(question.rationale)}</p>
         </div>
         ${UI().actionBar([
-            { action: session.index >= items.length - 1 ? "finish-quiz" : "continue-quiz", label: session.index >= items.length - 1 ? "Ver resultado" : "Proxima", variant: "primary" }
+            { action: session.index >= items.length - 1 ? "finish-quiz" : "continue-quiz", label: session.index >= items.length - 1 ? "Ver resultado" : "Próxima", variant: "primary" }
         ])}
         ${renderSessionNote(state, "quiz")}` : ""}
     </article>
@@ -723,7 +723,7 @@ ${renderSessionNote(state, "entry")}`;
         return `
 <section class="premium-vf-shell">
     <div class="premium-question-meta">
-        <span>Serie curta ${seriesMeta.currentSeries}/${seriesMeta.freeSeriesLimit}</span>
+        <span>Série curta ${seriesMeta.currentSeries}/${seriesMeta.freeSeriesLimit}</span>
         <strong>${UI().escapeHtml(block.title)}</strong>
     </div>
     <div class="premium-vf-list">
@@ -756,7 +756,7 @@ ${renderSessionNote(state, "entry")}`;
     </div>
     ${session.submitted
         ? UI().actionBar([
-            { action: "open-practice", label: "Voltar para pratica", variant: "secondary" },
+            { action: "open-practice", label: "Voltar para prática", variant: "secondary" },
             { action: seriesMeta.isAllComplete ? "restart-true-false" : "reset-true-false", label: seriesMeta.isAllComplete ? "Refazer V ou F" : "Refazer esta rodada", variant: "ghost" },
             { action: "request-extra-true-false", label: extraButtonLabel, variant: "primary" }
         ])
@@ -783,12 +783,12 @@ ${renderSessionNote(state, "entry")}`;
             return `
 <section class="premium-result-shell">
     <article class="premium-result-hero premium-result-hero-compact">
-        <span class="premium-detail-label">Flashcards concluidos</span>
+        <span class="premium-detail-label">Flashcards concluídos</span>
         <strong>${seriesMeta.completedCount}/${seriesMeta.freeSeriesLimit}</strong>
-        <p>${seriesMeta.isAllComplete ? "Voce concluiu as 3 rodadas gratis de flashcards." : `Voce marcou ${isDone} cards como entendidos nesta rodada.`}</p>
+        <p>${seriesMeta.isAllComplete ? "Você concluiu as 3 rodadas grátis de flashcards." : `Você marcou ${isDone} cards como entendidos nesta rodada.`}</p>
     </article>
     ${UI().actionBar([
-        { action: "open-practice", label: "Voltar para pratica", variant: "secondary" },
+        { action: "open-practice", label: "Voltar para prática", variant: "secondary" },
         { action: restartAction, label: restartLabel, variant: "ghost" },
         { action: "request-extra-flashcards", label: extraButtonLabel, variant: "primary" }
     ])}
@@ -825,11 +825,11 @@ ${renderSessionNote(state, "entry")}`;
 <section class="premium-result-shell">
     <article class="premium-result-hero premium-result-hero-compact">
         <span class="premium-detail-label">Mini prova do assunto</span>
-        <strong>${block.exam.baseCount || block.exam.questions.length} questoes</strong>
-        <p>${hasHistory ? "Refaca a mesma mini prova deste assunto. Para novas questoes e variacoes, o premium libera extras." : "Gere o pacote base deste assunto agora. Para um volume maior, o premium libera extras."}</p>
+        <strong>${block.exam.baseCount || block.exam.questions.length} questões</strong>
+        <p>${hasHistory ? "Refaça a mesma mini prova deste assunto. Para novas questões e variações, o premium libera extras." : "Gere o pacote base deste assunto agora. Para um volume maior, o premium libera extras."}</p>
     </article>
     ${UI().actionBar([
-        { action: hasHistory ? "retry-mini-exam" : "generate-mini-exam", label: hasHistory ? "Refazer mini prova" : `Gerar ${block.exam.baseCount || block.exam.questions.length} questoes`, variant: "primary" },
+        { action: hasHistory ? "retry-mini-exam" : "generate-mini-exam", label: hasHistory ? "Refazer mini prova" : `Gerar ${block.exam.baseCount || block.exam.questions.length} questões`, variant: "primary" },
         { action: "request-extra-mini-exam", label: "Gerar mais no premium", variant: "ghost" }
     ])}
     ${renderSessionNote(state, "mini-exam")}
@@ -871,7 +871,7 @@ ${renderSessionNote(state, "entry")}`;
             <p>${UI().escapeHtml(question.rationale)}</p>
         </div>
         ${UI().actionBar([
-            { action: session.index >= block.exam.questions.length - 1 ? "finish-mini-exam" : "continue-mini-exam", label: session.index >= block.exam.questions.length - 1 ? "Ver resultado" : "Proxima", variant: "primary" }
+            { action: session.index >= block.exam.questions.length - 1 ? "finish-mini-exam" : "continue-mini-exam", label: session.index >= block.exam.questions.length - 1 ? "Ver resultado" : "Próxima", variant: "primary" }
         ])}` : ""}
         ${renderSessionNote(state, "mini-exam")}
     </article>
@@ -894,16 +894,16 @@ ${renderSessionNote(state, "entry")}`;
     <div class="premium-detail-grid">
         <article class="premium-detail-card">
             <span class="premium-detail-label">Leitura recomendada</span>
-            <strong>Volte ao resumo se errou criterio ou linguagem.</strong>
+            <strong>Volte ao resumo se errou critério ou linguagem.</strong>
         </article>
         <article class="premium-detail-card">
-            <span class="premium-detail-label">Proximo passo</span>
-            <strong>${result.ratio >= 70 ? "Voce ja pode seguir para o proximo bloco." : "Pratique mais antes de avancar."}</strong>
+            <span class="premium-detail-label">Próximo passo</span>
+            <strong>${result.ratio >= 70 ? "Você já pode seguir para o próximo bloco." : "Pratique mais antes de avançar."}</strong>
         </article>
     </div>
     ${UI().actionBar([
         { action: "retry-mini-exam", label: "Refazer mini prova", variant: "secondary" },
-        { action: "open-practice", label: "Ir para o modo pratica", variant: "secondary" },
+        { action: "open-practice", label: "Ir para o modo prática", variant: "secondary" },
         { action: "request-extra-mini-exam", label: "Gerar mais no premium", variant: "ghost" }
     ])}
 </section>`;
@@ -916,7 +916,7 @@ ${renderSessionNote(state, "entry")}`;
     <article class="premium-result-hero premium-result-hero-compact">
         <span class="premium-detail-label">Progresso geral</span>
         <strong>${progress.ratio}%</strong>
-        <p>${progress.completed} etapas concluidas de ${progress.total} nesta trilha.</p>
+        <p>${progress.completed} etapas concluídas de ${progress.total} nesta trilha.</p>
     </article>
     <div class="premium-trail-list">
         ${state.blocks.map((block) => `

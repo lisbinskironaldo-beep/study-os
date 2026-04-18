@@ -64,8 +64,8 @@
                 },
                 failure: {
                     tone: "premium",
-                    title: "Pagamento nao concluido",
-                    message: "O pagamento nao foi aprovado ou foi cancelado. Voce pode tentar novamente quando quiser."
+                    title: "Pagamento não concluído",
+                    message: "O pagamento não foi aprovado ou foi cancelado. Você pode tentar novamente quando quiser."
                 }
             };
             const note = messages[paymentReturn.status] || messages.pending;
@@ -75,7 +75,7 @@
                 eyebrow: "RotaNota Premium",
                 title: paymentReturn.status === "success"
                     ? "Pagamento recebido. Falta a confirmacao segura."
-                    : "Finalize seu acesso premium com seguranca.",
+                    : "Finalize seu acesso premium com segurança.",
                 lead: "O checkout ja esta conectado ao Mercado Pago. A liberacao definitiva depende do webhook e da fonte de verdade do servidor.",
                 benefits: [
                     "Checkout seguro funcionando",
@@ -321,7 +321,7 @@
                     store.setSessionNote({
                         step: "premium-checkout",
                         tone: "premium",
-                        title: "PDF acima do limite gratis",
+                        title: "PDF acima do limite grátis",
                         message: validation.message
                     });
                 } else {
@@ -520,7 +520,7 @@ ${sections}`
                         const finishId = window.setTimeout(() => {
                             window.PremiumStudyRouter.goTo("mode-select");
                             window.PremiumStudyStore.patch({
-                                progressLabel: "Sua trilha inicial esta pronta para voce escolher como quer entrar no conteudo."
+                                progressLabel: "Sua trilha inicial está pronta para você escolher como quer entrar no conteúdo."
                             });
                             this.render();
                             this.schedulePersist(120);
@@ -1085,7 +1085,7 @@ ${sections}`
                 break;
             case "rename-study": {
                 const currentTitle = store.getState().studyTitle || store.getState().materialName || "Estudo personalizado";
-                const nextTitle = window.prompt("Como voce quer chamar este estudo?", currentTitle);
+                const nextTitle = window.prompt("Como você quer chamar este estudo?", currentTitle);
                 if (nextTitle && nextTitle.trim()) {
                     store.setStudyTitle(nextTitle);
                     shouldPersist = true;

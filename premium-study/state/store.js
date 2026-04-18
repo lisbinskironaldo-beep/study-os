@@ -36,33 +36,33 @@
                 [
                     "Pular as definicoes centrais",
                     `Mapear ${first} antes de decorar detalhes`,
-                    "Comecar apenas por exemplos isolados",
+                    "Começar apenas por exemplos isolados",
                     "Ir direto para excecoes"
                 ],
                 1,
                 `O ponto de partida mais forte e entender ${first} antes de aprofundar o resto.`
             ),
             buildQuestion(
-                `O que mais ajuda a nao confundir ${first} com aplicacao pratica?`,
+                `O que mais ajuda a não confundir ${first} com aplicação prática?`,
                 [
-                    "Separar conceito, criterio e exemplo",
+                    "Separar conceito, critério e exemplo",
                     "Ler so a conclusao",
                     "Decorar uma frase solta",
                     "Ignorar a linguagem da banca"
                 ],
                 0,
-                "Separar conceito, criterio e exemplo evita trocas tipicas de prova."
+                "Separar conceito, critério e exemplo evita trocas típicas de prova."
             ),
             buildQuestion(
-                `Quando o enunciado cobra ${second}, o que voce deve procurar primeiro?`,
+                `Quando o enunciado cobra ${second}, o que você deve procurar primeiro?`,
                 [
-                    "A palavra que delimita o criterio",
+                    "A palavra que delimita o critério",
                     "O exemplo mais bonito",
                     "A alternativa mais longa",
                     "A resposta que parece familiar"
                 ],
                 0,
-                `Em questoes de ${second}, a palavra que limita o criterio costuma decidir a alternativa.`
+                `Em questões de ${second}, a palavra que limita o critério costuma decidir a alternativa.`
             ),
             buildQuestion(
                 `Qual erro mais comum ao revisar ${third}?`,
@@ -84,18 +84,18 @@
                     "Decorando so o titulo"
                 ],
                 1,
-                "Uma relacao mnemonica curta ajuda a recuperar o conteudo sob pressao."
+                "Uma relação mnemônica curta ajuda a recuperar o conteúdo sob pressão."
             ),
             buildQuestion(
                 "Qual sequencia de revisao reduz mais a dispersao?",
                 [
-                    "Resumo, criterio, pratica",
+                    "Resumo, critério, prática",
                     "Pratica, titulo, acaso",
                     "Excecao, detalhe, exemplo",
                     "Mini prova, sem resumo"
                 ],
                 0,
-                "Resumo, criterio e pratica formam a trilha mais limpa para consolidar o bloco."
+                "Resumo, critério e prática formam a trilha mais limpa para consolidar o bloco."
             ),
             buildQuestion(
                 "Em alternativas muito parecidas, o que mais protege seu resultado?",
@@ -114,32 +114,32 @@
                     "Quando o erro mostra duvida de base",
                     "So quando faltar tempo",
                     "Depois de decorar tudo",
-                    "Nunca, porque pratica basta"
+                    "Nunca, porque prática basta"
                 ],
                 0,
                 "Se o erro foi de base, o resumo focado recompõe o mapa mental do assunto."
             ),
             buildQuestion(
-                "Qual sinal indica que voce entendeu o assunto, e nao so decorou?",
+                "Qual sinal indica que você entendeu o assunto, e não só decorou?",
                 [
-                    "Consegue explicar o criterio sem depender do exemplo",
+                    "Consegue explicar o critério sem depender do exemplo",
                     "Reconhece a fonte do PDF",
                     "Lembra a cor do card",
                     "Responde so pelo tema geral"
                 ],
                 0,
-                "Entendimento real aparece quando o criterio se sustenta sem depender do exemplo."
+                "Entendimento real aparece quando o critério se sustenta sem depender do exemplo."
             ),
             buildQuestion(
                 "Qual proximo passo faz mais sentido depois de consolidar este assunto?",
                 [
-                    "Ir para o proximo assunto ou para a pratica",
+                    "Ir para o próximo assunto ou para a prática",
                     "Reiniciar o onboarding",
                     "Apagar o progresso",
                     "Fechar sem salvar"
                 ],
                 0,
-                "Depois de consolidar um assunto, faz sentido praticar ou seguir para o proximo bloco."
+                "Depois de consolidar um assunto, faz sentido praticar ou seguir para o próximo bloco."
             )
         ];
     }
@@ -154,10 +154,10 @@
                 subtitle: "Comece pelo que mais organiza o entendimento e reduz dispersao.",
                 duration: "34 min",
                 status: "recommended",
-                excerpt: "Termos centrais, definicoes e relacoes que abrem o restante do conteudo.",
+                excerpt: "Termos centrais, definições e relações que abrem o restante do conteúdo.",
                 topics: [
                     "conceitos centrais do material",
-                    "criterios e definicoes chave",
+                    "critérios e definições chave",
                     "linguagem que mais aparece na prova"
                 ],
                 progress: {
@@ -166,7 +166,7 @@
                     exam: false
                 },
                 learn: {
-                    summary: `Este bloco isola o nucleo de ${material}, priorizando termos, definicoes e relacoes que ajudam voce a entrar no conteudo sem desperdicar tempo.`,
+                    summary: `Este bloco isola o núcleo de ${material}, priorizando termos, definições e relações que ajudam você a entrar no conteúdo sem desperdiçar tempo.`,
                     hotPoints: [
                         "Entender o vocabulario principal antes de memorizar detalhes.",
                         "Separar o que e regra, o que e excecao e o que e exemplo.",
@@ -174,14 +174,14 @@
                     ],
                     keyConcepts: [
                         "conceito central",
-                        "criterio de classificacao",
+                        "critério de classificação",
                         "estrutura basica",
                         "aplicacao mais cobrada"
                     ],
                     pitfalls: [
                         "Trocar definicao por exemplo pratico.",
                         "Memorizar nomes sem entender relacao entre eles.",
-                        "Ignorar o criterio que diferencia itens parecidos."
+                        "Ignorar o critério que diferencia itens parecidos."
                     ]
                 },
                 practice: {
@@ -200,7 +200,7 @@
                                 "Pular os termos principais"
                             ],
                             1,
-                            "O primeiro ganho real vem de organizar linguagem, criterio e definicoes do bloco."
+                            "O primeiro ganho real vem de organizar linguagem, critério e definições do bloco."
                         ),
                         buildQuestion(
                             "Ao revisar um conceito central, o que mais ajuda a evitar erro de prova?",
@@ -222,7 +222,7 @@
                                 "Pular o resumo principal"
                             ],
                             1,
-                            "Marcar relacoes entre conceitos transforma o conteudo em estrutura, nao em lista solta."
+                            "Marcar relações entre conceitos transforma o conteúdo em estrutura, não em lista solta."
                         )
                     ],
                     quizSeries: [
@@ -236,7 +236,7 @@
                                     "Pular os termos principais"
                                 ],
                                 1,
-                                "O primeiro ganho real vem de organizar linguagem, criterio e definicoes do bloco."
+                                "O primeiro ganho real vem de organizar linguagem, critério e definições do bloco."
                             ),
                             buildQuestion(
                                 "Ao revisar um conceito central, o que mais ajuda a evitar erro de prova?",
@@ -258,20 +258,20 @@
                                     "Pular o resumo principal"
                                 ],
                                 1,
-                                "Marcar relacoes entre conceitos transforma o conteudo em estrutura, nao em lista solta."
+                                "Marcar relações entre conceitos transforma o conteúdo em estrutura, não em lista solta."
                             )
                         ],
                         [
                             buildQuestion(
-                                "Qual ganho aparece quando voce entende o criterio principal do bloco?",
+                                "Qual ganho aparece quando você entende o critério principal do bloco?",
                                 [
                                     "A leitura fica mais organizada",
                                     "Os exemplos deixam de importar",
-                                    "A pratica pode ser ignorada",
+                                    "A prática pode ser ignorada",
                                     "Toda excecao vira regra"
                                 ],
                                 0,
-                                "Com criterio claro, o conteudo deixa de parecer uma lista solta e passa a ter eixo."
+                                "Com critério claro, o conteúdo deixa de parecer uma lista solta e passa a ter eixo."
                             ),
                             buildQuestion(
                                 "O que mais protege contra erro por semelhanca superficial?",
@@ -300,13 +300,13 @@
                             buildQuestion(
                                 "Qual sequencia consolida melhor o bloco?",
                                 [
-                                    "Resumo, criterio, pratica",
+                                    "Resumo, critério, prática",
                                     "Titulo, exemplo, chute",
                                     "Excecao, detalhe, pressa",
                                     "Mini prova sem revisao"
                                 ],
                                 0,
-                                "Resumo, criterio e pratica formam a trilha mais limpa para o assunto."
+                                "Resumo, critério e prática formam a trilha mais limpa para o assunto."
                             ),
                             buildQuestion(
                                 "O que mostra que o conceito foi realmente entendido?",
@@ -325,10 +325,10 @@
                                     "Responder pelo tema geral da alternativa",
                                     "Separar regra e excecao",
                                     "Comparar item por item",
-                                    "Voltar ao criterio"
+                                    "Voltar ao critério"
                                 ],
                                 0,
-                                "Quem leu superficialmente tende a marcar pela sensacao geral, nao pelo criterio."
+                                "Quem leu superficialmente tende a marcar pela sensação geral, não pelo critério."
                             )
                         ]
                     ],
@@ -339,14 +339,14 @@
                             "Separar conceito de exemplo evita trocas comuns em prova."
                         ),
                         buildTrueFalse(
-                            "A linguagem principal do material deve ser revisada antes da pratica intensa.",
+                            "A linguagem principal do material deve ser revisada antes da prática intensa.",
                             true,
                             "Entender a linguagem do bloco acelera o restante da trilha."
                         ),
                         buildTrueFalse(
-                            "Ignorar criterios de classificacao reduz o risco de erro em alternativas parecidas.",
+                            "Ignorar critérios de classificação reduz o risco de erro em alternativas parecidas.",
                             false,
-                            "E justamente o criterio que diferencia opcoes muito proximas."
+                            "É justamente o critério que diferencia opções muito próximas."
                         )
                     ],
                     trueFalseSeries: [
@@ -357,19 +357,19 @@
                                 "Separar conceito de exemplo evita trocas comuns em prova."
                             ),
                             buildTrueFalse(
-                                "A linguagem principal do material deve ser revisada antes da pratica intensa.",
+                                "A linguagem principal do material deve ser revisada antes da prática intensa.",
                                 true,
                                 "Entender a linguagem do bloco acelera o restante da trilha."
                             ),
                             buildTrueFalse(
-                                "Ignorar criterios de classificacao reduz o risco de erro em alternativas parecidas.",
+                                "Ignorar critérios de classificação reduz o risco de erro em alternativas parecidas.",
                                 false,
-                                "E justamente o criterio que diferencia opcoes muito proximas."
+                                "É justamente o critério que diferencia opções muito próximas."
                             )
                         ],
                         [
                             buildTrueFalse(
-                                "O vocabulario principal do tema pode ficar para depois, desde que voce memorize os nomes.",
+                                "O vocabulário principal do tema pode ficar para depois, desde que você memorize os nomes.",
                                 false,
                                 "Sem entender a linguagem principal, a leitura perde eixo e a memorizacao quebra rapido."
                             ),
@@ -379,9 +379,9 @@
                                 "Essa separacao evita que elementos parecidos sejam tratados como equivalentes."
                             ),
                             buildTrueFalse(
-                                "Quando dois itens parecem proximos, o criterio de classificacao deixa de ser importante.",
+                                "Quando dois itens parecem próximos, o critério de classificação deixa de ser importante.",
                                 false,
-                                "E justamente o criterio que mostra onde os itens se afastam."
+                                "É justamente o critério que mostra onde os itens se afastam."
                             )
                         ],
                         [
@@ -393,12 +393,12 @@
                             buildTrueFalse(
                                 "Se um caso aparece muito no material, ele automaticamente vira a regra principal.",
                                 false,
-                                "Frequencia nao substitui criterio; um caso recorrente ainda pode ser so exemplo."
+                                "Frequência não substitui critério; um caso recorrente ainda pode ser só exemplo."
                             ),
                             buildTrueFalse(
                                 "Revisar a estrutura basica do tema ajuda a reduzir resposta por semelhanca superficial.",
                                 true,
-                                "Estrutura clara faz o aluno decidir por criterio, nao por impressao."
+                                "Estrutura clara faz o aluno decidir por critério, não por impressão."
                             )
                         ]
                     ],
@@ -411,7 +411,7 @@
                         buildFlashcard(
                             "Pergunta gatilho",
                             "O que define este conceito?",
-                            "Se a resposta virar um exemplo, voce ainda nao fixou o conceito."
+                            "Se a resposta virar um exemplo, você ainda não fixou o conceito."
                         ),
                         buildFlashcard(
                             "Qual leitura gera mais resultado?",
@@ -430,7 +430,7 @@
                             buildFlashcard(
                                 "Pergunta gatilho",
                                 "O que define este conceito?",
-                                "Se a resposta virar um exemplo, voce ainda nao fixou o conceito."
+                                "Se a resposta virar um exemplo, você ainda não fixou o conceito."
                             ),
                             buildFlashcard(
                                 "Qual leitura gera mais resultado?",
@@ -441,8 +441,8 @@
                         [
                             buildFlashcard(
                                 "Base antes do detalhe",
-                                "Primeiro criterio, depois exemplo.",
-                                "Sem criterio, o detalhe parece importante demais."
+                                "Primeiro critério, depois exemplo.",
+                                "Sem critério, o detalhe parece importante demais."
                             ),
                             buildFlashcard(
                                 "Erro classico",
@@ -464,7 +464,7 @@
                             buildFlashcard(
                                 "Foco da banca",
                                 "Criterio decide mais que tema.",
-                                "Muitas alternativas parecem certas ate o criterio entrar."
+                                "Muitas alternativas parecem certas até o critério entrar."
                             ),
                             buildFlashcard(
                                 "Pergunta final",
@@ -478,7 +478,7 @@
                     baseCount: 10,
                     questions: buildExamPack(material, [
                         "a linguagem central",
-                        "o criterio principal",
+                        "o critério principal",
                         "relacoes entre conceitos",
                         "a memorizacao do bloco"
                     ])
@@ -487,7 +487,7 @@
             {
                 id: "block-2",
                 title: "Consolidacao objetiva",
-                subtitle: "Aperte a retencao do que mais diferencia desempenho em questoes.",
+                subtitle: "Aperte a retenção do que mais diferencia desempenho em questões.",
                 duration: "22 min",
                 status: "ready",
                 excerpt: "Comparacoes, excecoes e palavras-chave que costumam separar acerto de erro.",
@@ -531,12 +531,12 @@
                             "O que mais ajuda a acertar itens muito parecidos?",
                             [
                                 "Responder rapido",
-                                "Comparar palavra-chave e criterio",
+                                "Comparar palavra-chave e critério",
                                 "Ignorar excecoes",
                                 "Confiar apenas no instinto"
                             ],
                             1,
-                            "Itens parecidos se resolvem por palavra-chave e criterio, nao por impressao geral."
+                            "Itens parecidos se resolvem por palavra-chave e critério, não por impressão geral."
                         ),
                         buildQuestion(
                             "Como a banca costuma montar pegadinhas?",
@@ -567,12 +567,12 @@
                                 "O que mais ajuda a acertar itens muito parecidos?",
                                 [
                                     "Responder rapido",
-                                    "Comparar palavra-chave e criterio",
+                                    "Comparar palavra-chave e critério",
                                     "Ignorar excecoes",
                                     "Confiar apenas no instinto"
                                 ],
                                 1,
-                                "Itens parecidos se resolvem por palavra-chave e criterio, nao por impressao geral."
+                                "Itens parecidos se resolvem por palavra-chave e critério, não por impressão geral."
                             ),
                             buildQuestion(
                                 "Como a banca costuma montar pegadinhas?",
@@ -638,7 +638,7 @@
                                 [
                                     "Saber o tema geral",
                                     "Justificar por que a quase correta ainda esta errada",
-                                    "Lembrar a ordem das paginas",
+                                    "Lembrar a ordem das páginas",
                                     "Responder sempre mais rapido"
                                 ],
                                 1,
@@ -661,7 +661,7 @@
                                     "Passar o olho so nos titulos",
                                     "Voltar aos contrastes e excecoes principais",
                                     "Ignorar palavras-chave",
-                                    "Trocar criterio por exemplo"
+                                    "Trocar critério por exemplo"
                                 ],
                                 1,
                                 "Antes da mini prova, revisar contraste e excecao limpa o ponto mais sensivel do bloco."
@@ -717,7 +717,7 @@
                             buildTrueFalse(
                                 "Separar regra e excecao visualmente reduz resposta por automatismo.",
                                 true,
-                                "Essa divisao deixa o criterio mais limpo no momento da prova."
+                                "Essa divisão deixa o critério mais limpo no momento da prova."
                             )
                         ],
                         [
@@ -727,12 +727,12 @@
                                 "Quando ficam grudadas, a tendencia e embaralhar as duas."
                             ),
                             buildTrueFalse(
-                                "O erro por semelhanca superficial costuma cair quando voce compara item por item.",
+                                "O erro por semelhança superficial costuma cair quando você compara item por item.",
                                 true,
                                 "Comparacao deliberada enfraquece o impulso de responder pela primeira impressao."
                             ),
                             buildTrueFalse(
-                                "Pegadinha boa troca o criterio em um detalhe pequeno, nao necessariamente o tema inteiro.",
+                                "Pegadinha boa troca o critério em um detalhe pequeno, não necessariamente o tema inteiro.",
                                 true,
                                 "A banca costuma deslocar o sentido por uma palavra, limite ou excecao."
                             )
@@ -782,13 +782,13 @@
                             ),
                             buildFlashcard(
                                 "Erro fino",
-                                "Tema certo, criterio errado.",
+                                "Tema certo, critério errado.",
                                 "Muita alternativa quase correta cai nessa armadilha."
                             ),
                             buildFlashcard(
                                 "Excecao segura",
                                 "So vale com a condicao junto.",
-                                "Sem a condicao, voce provavelmente voltou para a regra."
+                                "Sem a condição, você provavelmente voltou para a regra."
                             )
                         ],
                         [
@@ -1003,25 +1003,25 @@
                 ...block,
                 learn: {
                     ...block.learn,
-                    summary: `Este bloco abre o estudo pelo nucleo de ${materialLabel}, organizando os termos centrais, as definicoes mais importantes e as relacoes que sustentam o restante do conteudo.`,
+                    summary: `Este bloco abre o estudo pelo núcleo de ${materialLabel}, organizando os termos centrais, as definições mais importantes e as relações que sustentam o restante do conteúdo.`,
                     intro: "A proposta aqui e construir entendimento antes de acelerar. Quando o nucleo do assunto fica claro, o material deixa de parecer uma lista de informacoes soltas e passa a ter ordem, hierarquia e direcao.",
                     documentSections: buildDocumentSections({
                         summaryTitle: "O mapa que organiza a leitura inteira",
                         summaryParagraphs: [
-                            `O nucleo principal de ${materialLabel} precisa ser lido como a espinha dorsal do tema. A funcao deste assunto nao e despejar informacao, mas criar ordem: primeiro voce entende o que define o tema, depois enxerga como cada parte se conecta e, so entao, diferencia exemplo, aplicacao e excecao.`,
-                            "Quando esse mapa fica claro, a leitura acelera naturalmente. O estudante para de decorar frases soltas e passa a reconhecer criterio, estrutura e linguagem recorrente. Isso deixa o conteudo mais leve, reduz a dispersao e melhora muito a entrada nas questoes.",
-                            "Em prova, esse bloco vale porque ele sustenta todos os demais. Se a base estiver firme, voce identifica com mais seguranca o que o enunciado realmente quer cobrar e evita respostas por semelhanca superficial."
+                            `O núcleo principal de ${materialLabel} precisa ser lido como a espinha dorsal do tema. A função deste assunto não é despejar informação, mas criar ordem: primeiro você entende o que define o tema, depois enxerga como cada parte se conecta e, só então, diferencia exemplo, aplicação e exceção.`,
+                            "Quando esse mapa fica claro, a leitura acelera naturalmente. O estudante para de decorar frases soltas e passa a reconhecer critério, estrutura e linguagem recorrente. Isso deixa o conteúdo mais leve, reduz a dispersão e melhora muito a entrada nas questões.",
+                            "Em prova, esse bloco vale porque ele sustenta todos os demais. Se a base estiver firme, você identifica com mais segurança o que o enunciado realmente quer cobrar e evita respostas por semelhança superficial."
                         ],
                         conceptsTitle: "As ideias que sustentam o restante do material",
                         conceptsItems: [
                             "Definir o conceito central antes de aceitar exemplos como se fossem a propria definicao.",
-                            "Reconhecer qual criterio de classificacao organiza o assunto e separa as partes principais.",
+                            "Reconhecer qual critério de classificação organiza o assunto e separa as partes principais.",
                             "Entender a estrutura basica do tema para nao tratar elementos relacionados como se fossem equivalentes.",
                             "Ligar cada termo importante a sua funcao, e nao apenas ao nome que aparece no PDF."
                         ],
                         rulesTitle: "O que funciona como regra e onde o assunto costuma abrir excecao",
                         rulesItems: [
-                            "A regra aqui e partir da definicao e do criterio antes de avancar para detalhe ou aplicacao.",
+                            "A regra aqui é partir da definição e do critério antes de avançar para detalhe ou aplicação.",
                             "Excecoes pontuais aparecem quando um caso parece pertencer ao conceito, mas altera sua funcao ou limite.",
                             "Sempre que a leitura fugir da base e entrar num caso especifico, vale verificar se aquilo e exemplo ou excecao real.",
                             "Se a excecao depende de condicao, essa condicao precisa ficar colada a ela na revisao."
@@ -1029,15 +1029,15 @@
                         pitfallsTitle: "Onde a banca pode confundir quem leu sem estruturar",
                         pitfallsItems: [
                             "Trocar definicao por exemplo pratico porque os dois parecem falar da mesma coisa.",
-                            "Responder pelo tema geral da alternativa e ignorar a palavra que muda o criterio.",
+                            "Responder pelo tema geral da alternativa e ignorar a palavra que muda o critério.",
                             "Memorizar nomes isolados sem entender qual relacao existe entre eles.",
                             "Assumir que todo caso recorrente representa a regra principal."
                         ],
-                        comparisonsTitle: "Comparacoes que deixam o criterio mais nitido",
+                        comparisonsTitle: "Comparações que deixam o critério mais nítido",
                         comparisonsItems: [
                             "Conceito central versus aplicacao: um explica o que o tema e, o outro mostra como ele aparece.",
                             "Regra versus excecao: a regra organiza, a excecao limita ou desvia esse alcance.",
-                            "Criterio versus exemplo: criterio serve para decidir; exemplo serve para ilustrar.",
+                            "Critério versus exemplo: critério serve para decidir; exemplo serve para ilustrar.",
                             "Leitura estrutural versus decoracao: a primeira sustenta acerto, a segunda quebra quando o enunciado muda."
                         ],
                         criteriaTitle: "O que precisa virar referencia rapida na revisao",
@@ -1051,16 +1051,16 @@
                     explainBetter: {
                         title: "Explicacao mais didatica deste assunto",
                         paragraphs: [
-                            `Pense este assunto como a fundacao de ${materialLabel}. Se a fundacao estiver clara, o resto do conteudo deixa de parecer um monte de blocos separados e passa a funcionar como uma construcao coerente.`,
-                            "O jeito mais seguro de estudar aqui e perguntar o tempo todo: isso e definicao, criterio, exemplo ou excecao? Essa pergunta simples evita quase todos os erros de leitura superficial.",
-                            "Quando voce consegue responder com suas proprias palavras qual e a ideia central e por que ela organiza o tema, o assunto ja saiu do campo da decoracao e entrou no campo do entendimento."
+                            `Pense este assunto como a fundação de ${materialLabel}. Se a fundação estiver clara, o resto do conteúdo deixa de parecer um monte de blocos separados e passa a funcionar como uma construção coerente.`,
+                            "O jeito mais seguro de estudar aqui é perguntar o tempo todo: isso é definição, critério, exemplo ou exceção? Essa pergunta simples evita quase todos os erros de leitura superficial.",
+                            "Quando você consegue responder com suas próprias palavras qual é a ideia central e por que ela organiza o tema, o assunto já saiu do campo da decoração e entrou no campo do entendimento."
                         ]
                     },
                     reviewInFivePoints: [
                         "Descubra primeiro qual conceito organiza o assunto inteiro.",
-                        "Separe definicao, criterio, exemplo e excecao antes de revisar detalhes.",
+                        "Separe definição, critério, exemplo e exceção antes de revisar detalhes.",
                         "Nao aceite duas ideias parecidas como equivalentes sem comparar a funcao de cada uma.",
-                        "Volte ao criterio sempre que uma alternativa parecer familiar demais.",
+                        "Volte ao critério sempre que uma alternativa parecer familiar demais.",
                         "Considere o bloco dominado quando conseguir explicar a base sem depender do PDF."
                     ],
                     sections: [
@@ -1076,16 +1076,16 @@
                             label: "Leitura guiada",
                             title: "Como transformar resumo em entendimento real",
                             paragraphs: [
-                                "Leia procurando relacoes, nao frases soltas. Sempre que surgir um termo importante, pergunte qual criterio ele representa, com o que ele se conecta e que erro pode acontecer se ele for confundido com exemplo ou aplicacao.",
+                                "Leia procurando relações, não frases soltas. Sempre que surgir um termo importante, pergunte qual critério ele representa, com o que ele se conecta e que erro pode acontecer se ele for confundido com exemplo ou aplicação.",
                                 "Essa postura melhora a retencao porque o cerebro guarda estrutura. Em prova, isso vale muito mais do que decorar definicoes isoladas sem entender por que elas importam."
                             ]
                         },
                         {
                             label: "Resultado",
-                            title: "O que este assunto precisa entregar para voce",
+                            title: "O que este assunto precisa entregar para você",
                             paragraphs: [
-                                "O ganho principal aqui e criar seguranca conceitual. Quando a base esta firme, voce reconhece o que o enunciado realmente esta cobrando e evita cair em alternativas que parecem familiares, mas trocam criterio por exemplo.",
-                                "Se ao final deste bloco voce conseguir explicar o assunto com suas proprias palavras e mostrar a diferenca entre regra, excecao e aplicacao, o aprendizado ja saiu do nivel superficial."
+                                "O ganho principal aqui é criar segurança conceitual. Quando a base está firme, você reconhece o que o enunciado realmente está cobrando e evita cair em alternativas que parecem familiares, mas trocam critério por exemplo.",
+                                "Se ao final deste bloco você conseguir explicar o assunto com suas próprias palavras e mostrar a diferença entre regra, exceção e aplicação, o aprendizado já saiu do nível superficial."
                             ]
                         }
                     ]
@@ -1099,17 +1099,17 @@
                 learn: {
                     ...block.learn,
                     summary: `Este bloco concentra o que mais costuma gerar erro em ${materialLabel}: comparacoes, excecoes e formulacoes parecidas que separam leitura superficial de acerto consistente.`,
-                    intro: "Depois que a base fica entendida, o que mais faz diferenca no desempenho e o refinamento do criterio. Este bloco existe para treinar o olhar nas pequenas mudancas de sentido que a banca usa para separar dominio de reconhecimento superficial.",
+                    intro: "Depois que a base fica entendida, o que mais faz diferença no desempenho é o refinamento do critério. Este bloco existe para treinar o olhar nas pequenas mudanças de sentido que a banca usa para separar domínio de reconhecimento superficial.",
                     documentSections: buildDocumentSections({
                         summaryTitle: "O ajuste fino que transforma leitura em acerto",
                         summaryParagraphs: [
-                            `Depois de entender a base de ${materialLabel}, o maior salto de resultado vem do refinamento. Este assunto existe para treinar o olhar nas comparacoes, nas palavras de contraste e nas excecoes que a banca usa para separar quem domina o criterio de quem apenas reconhece o tema.`,
+                            `Depois de entender a base de ${materialLabel}, o maior salto de resultado vem do refinamento. Este assunto existe para treinar o olhar nas comparações, nas palavras de contraste e nas exceções que a banca usa para separar quem domina o critério de quem apenas reconhece o tema.`,
                             "Aqui o estudo precisa ficar mais preciso. A leitura deixa de perguntar apenas do que o texto esta falando e passa a perguntar o que mudou, qual limite foi inserido e qual palavra alterou o sentido do enunciado.",
-                            "Quando esse bloco fica bem resolvido, o aluno passa a errar menos por impulso e ganha mais controle em alternativas muito parecidas, especialmente nas questoes em que a diferenca cabe em um detalhe."
+                            "Quando esse bloco fica bem resolvido, o aluno passa a errar menos por impulso e ganha mais controle em alternativas muito parecidas, especialmente nas questões em que a diferença cabe em um detalhe."
                         ],
                         conceptsTitle: "As ideias que precisam virar ferramenta de prova",
                         conceptsItems: [
-                            "Comparacao direta entre itens proximos para enxergar onde o criterio muda.",
+                            "Comparação direta entre itens próximos para enxergar onde o critério muda.",
                             "Leitura da palavra-chave que limita, confirma ou invalida o sentido do enunciado.",
                             "Separacao limpa entre regra principal e excecao recorrente.",
                             "Reconhecimento das formulacoes que parecem equivalentes, mas nao produzem o mesmo efeito."
@@ -1121,7 +1121,7 @@
                             "Sempre que houver limite, condicao ou ressalva, esse elemento precisa ser lido como parte da resposta, nao como detalhe lateral.",
                             "A excecao nunca deve ser memorizada colada na regra; ela precisa aparecer como desvio controlado."
                         ],
-                        pitfallsTitle: "Erros tipicos de quem conhece o tema, mas nao o criterio",
+                        pitfallsTitle: "Erros típicos de quem conhece o tema, mas não o critério",
                         pitfallsItems: [
                             "Confiar na memoria visual do PDF e ignorar a mudanca de uma palavra decisiva.",
                             "Marcar a alternativa pelo assunto geral, sem checar o limite da afirmacao.",
@@ -1132,10 +1132,10 @@
                         comparisonsItems: [
                             "Regra versus excecao: uma organiza o caso comum, a outra limita o alcance.",
                             "Palavra neutra versus palavra de contraste: a segunda costuma decidir a questao.",
-                            "Enunciado correto versus quase correto: a diferenca geralmente esta no criterio, nao no tema.",
+                            "Enunciado correto versus quase correto: a diferença geralmente está no critério, não no tema.",
                             "Reconhecimento superficial versus leitura analitica: o primeiro acelera erro, a segunda sustenta acerto."
                         ],
-                        criteriaTitle: "Definicoes curtas que protegem voce da pegadinha",
+                        criteriaTitle: "Definições curtas que protegem você da pegadinha",
                         criteriaItems: [
                             "Palavra-chave: termo que confirma, restringe ou desloca o sentido da alternativa.",
                             "Criterio de contraste: ponto exato que separa duas formulacoes parecidas.",
@@ -1148,7 +1148,7 @@
                         paragraphs: [
                             "Este bloco nao pede mais volume de leitura, e sim mais precisao. A pergunta principal deixa de ser 'eu ja vi isso?' e vira 'o que exatamente mudou aqui?'.",
                             "Quase sempre a banca esconde a diferenca em um termo pequeno: uma restricao, uma ressalva, um conectivo ou uma palavra que parece inofensiva. Por isso a comparacao precisa ser ativa e deliberada.",
-                            "Quando voce passa a ler procurando limite, contraste e excecao, o assunto deixa de ser escorregadio e vira um bloco tecnicamente controlavel."
+                            "Quando você passa a ler procurando limite, contraste e exceção, o assunto deixa de ser escorregadio e vira um bloco tecnicamente controlável."
                         ]
                     },
                     reviewInFivePoints: [
@@ -1156,15 +1156,15 @@
                         "Procure a palavra que limita, inverte ou condiciona o enunciado.",
                         "Nao memorize excecao junto da regra: destaque o limite que a torna especial.",
                         "Desconfie de respostas que parecem certas apenas pelo tema geral.",
-                        "Considere o bloco dominado quando voce consegue explicar por que a quase correta ainda esta errada."
+                        "Considere o bloco dominado quando você consegue explicar por que a quase correta ainda está errada."
                     ],
                     sections: [
                         {
                             label: "Comparacao",
                             title: "Onde a maioria dos erros nasce",
                             paragraphs: [
-                                "Grande parte dos erros nesta fase nao vem de desconhecer o assunto, mas de ler duas formulacoes parecidas como se fossem equivalentes. E justamente aqui que a prova separa quem so reconhece o tema de quem domina o criterio.",
-                                "Por isso, a comparacao precisa ser ativa. Em vez de perguntar apenas se voce ja viu aquilo, o caminho melhor e perguntar o que muda, qual palavra limita o sentido e onde esta a diferenca que altera a resposta."
+                                "Grande parte dos erros nesta fase não vem de desconhecer o assunto, mas de ler duas formulações parecidas como se fossem equivalentes. É justamente aqui que a prova separa quem só reconhece o tema de quem domina o critério.",
+                                "Por isso, a comparação precisa ser ativa. Em vez de perguntar apenas se você já viu aquilo, o caminho melhor é perguntar o que muda, qual palavra limita o sentido e onde está a diferença que altera a resposta."
                             ]
                         },
                         {
@@ -1180,7 +1180,7 @@
                             title: "Como transformar este bloco em acerto de prova",
                             paragraphs: [
                                 "A estrategia mais forte aqui e revisar por contraste: regra versus excecao, definicao versus exemplo, termo central versus palavra que desvia o sentido. Isso deixa a leitura mais afiada para a linguagem da banca.",
-                                "Se voce conseguir localizar rapidamente a palavra que confirma, limita ou invalida o enunciado, este bloco ja cumpriu sua funcao."
+                                "Se você conseguir localizar rapidamente a palavra que confirma, limita ou invalida o enunciado, este bloco já cumpriu sua função."
                             ]
                         }
                     ]
@@ -1738,7 +1738,7 @@
                 ...this.state,
                 highlightedDocument,
                 activeBlockId: block ? block.id : this.state.activeBlockId,
-                progressLabel: "Documento marcado preparado. Agora voce pode exportar o texto grifado ou so os destaques em PDF."
+                progressLabel: "Documento marcado preparado. Agora você pode exportar o texto grifado ou só os destaques em PDF."
             };
 
             return this.state;

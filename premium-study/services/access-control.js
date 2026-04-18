@@ -28,7 +28,7 @@
     const PLAN_CATALOG = {
         free: {
             id: "free",
-            label: "Gratis",
+            label: "Grátis",
             pdfPageLimit: 12,
             latestStudyResume: true,
             practiceSeriesLimit: 3,
@@ -53,68 +53,68 @@
     const LOCK_MESSAGES = {
         [FEATURES.LARGE_PDF_UPLOAD]: {
             title: "PDF maior entra no premium",
-            message: "Gratis continua liberado para PDFs textuais de ate 12 paginas. No premium, materiais longos entram com divisao inteligente antes da IA."
+            message: "Grátis continua liberado para PDFs textuais de até 12 páginas. No premium, materiais longos entram com divisão inteligente antes da IA."
         },
         [FEATURES.PREMIUM_LIBRARY]: {
             title: "Biblioteca premium",
-            message: "Retomar o ultimo estudo continua gratis. Historico completo, outros materiais e organizacao da biblioteca ficam no premium."
+            message: "Retomar o último estudo continua grátis. Histórico completo, outros materiais e organização da biblioteca ficam no premium."
         },
         [FEATURES.PRACTICE_EXTRA_SERIES]: {
             title: "Extras liberados no premium",
-            message: "As 3 series gratis deste formato ja foram usadas. No premium, voce libera novas series e reformulacoes por outra otica."
+            message: "As 3 séries grátis deste formato já foram usadas. No premium, você libera novas séries e reformulações por outra ótica."
         },
         [FEATURES.MINI_EXAM_EXTRA]: {
             title: "Mini provas extras no premium",
-            message: "A mini prova base continua gratis. No premium, voce gera novas questoes e variacoes para o mesmo assunto."
+            message: "A mini prova base continua grátis. No premium, você gera novas questões e variações para o mesmo assunto."
         },
         [FEATURES.HIGHLIGHT_EXPORT]: {
-            title: "Exportacao premium",
+            title: "Exportação premium",
             message: "O marcador pode ser visualizado. Baixar PDF com destaques fica no premium."
         },
         [FEATURES.STATS]: {
-            title: "Estatisticas premium",
-            message: "Indicadores de evolucao, pontos fracos e historico completo entram no painel premium."
+            title: "Estatísticas premium",
+            message: "Indicadores de evolução, pontos fracos e histórico completo entram no painel premium."
         },
         [FEATURES.CLOUD_SYNC]: {
-            title: "Sincronizacao premium",
-            message: "A continuidade local fica gratis. Sincronizar entre dispositivos entra no premium."
+            title: "Sincronização premium",
+            message: "A continuidade local fica grátis. Sincronizar entre dispositivos entra no premium."
         }
     };
 
     const PREMIUM_BENEFITS = [
-        "PDFs longos com divisao inteligente",
+        "PDFs longos com divisão inteligente",
         "Biblioteca completa de estudos",
-        "Estatisticas de evolucao e pontos fracos",
-        "Questionarios extras por assunto",
+        "Estatísticas de evolução e pontos fracos",
+        "Questionários extras por assunto",
         "V/F extras para pegar pegadinhas",
-        "Flashcards extras com mnemonicos",
+        "Flashcards extras com mnemônicos",
         "Mini provas extras por assunto",
-        "Exportacao dos marcadores em PDF"
+        "Exportação dos marcadores em PDF"
     ];
 
     const OFFER_COPY = {
         [FEATURES.PREMIUM_LIBRARY]: {
             eyebrow: "Biblioteca premium",
             title: "Seu estudo completo fica guardado.",
-            lead: "Retome outros materiais, veja seu historico e continue sem reconstruir a trilha.",
+            lead: "Retome outros materiais, veja seu histórico e continue sem reconstruir a trilha.",
             benefits: [
-                "Retomar PDFs alem do ultimo estudo"
+                "Retomar PDFs além do último estudo"
             ],
             cta: "Liberar biblioteca premium"
         },
         [FEATURES.PRACTICE_EXTRA_SERIES]: {
-            eyebrow: "Pratica premium",
-            title: "Treine ate sentir seguranca.",
-            lead: "Depois das rodadas gratis, gere novas praticas por outros angulos.",
+            eyebrow: "Prática premium",
+            title: "Treine até sentir segurança.",
+            lead: "Depois das rodadas grátis, gere novas práticas por outros ângulos.",
             benefits: [
                 "Novas rodadas do mesmo assunto"
             ],
-            cta: "Liberar pratica premium"
+            cta: "Liberar prática premium"
         },
         [FEATURES.MINI_EXAM_EXTRA]: {
             eyebrow: "Mini prova premium",
             title: "Teste o mesmo assunto de novo.",
-            lead: "A mini prova base e gratis. O premium libera novas versoes para medir dominio real.",
+            lead: "A mini prova base é grátis. O premium libera novas versões para medir domínio real.",
             benefits: [
                 "Novas provas por bloco"
             ],
@@ -122,17 +122,17 @@
         },
         [FEATURES.HIGHLIGHT_EXPORT]: {
             eyebrow: "Marcador premium",
-            title: "Leve seus destaques com voce.",
+            title: "Leve seus destaques com você.",
             lead: "Exporte o resumo marcado ou o documento inteiro com grifos.",
             benefits: [
-                "PDF so com pontos quentes"
+                "PDF só com pontos quentes"
             ],
-            cta: "Liberar exportacao"
+            cta: "Liberar exportação"
         },
         [FEATURES.LARGE_PDF_UPLOAD]: {
             eyebrow: "Apostilas longas",
             title: "Use materiais grandes sem perder foco.",
-            lead: "O sistema divide o conteudo antes da IA para manter qualidade e custo sob controle.",
+            lead: "O sistema divide o conteúdo antes da IA para manter qualidade e custo sob controle.",
             benefits: [
                 "Apostilas longas viram blocos claros"
             ],

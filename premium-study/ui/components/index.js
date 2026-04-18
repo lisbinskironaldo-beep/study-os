@@ -14,7 +14,7 @@
 
     function formatDateLabel(dateString) {
         if (!dateString) {
-            return "Nao definida";
+            return "Não definida";
         }
 
         const parts = dateString.split("-");
@@ -59,11 +59,11 @@
 <div class="premium-summary-card premium-summary-card-compact">
     <div class="premium-summary-compact-head">
         <div>
-            <span class="premium-summary-eyebrow">Plano em construcao</span>
+            <span class="premium-summary-eyebrow">Plano em construção</span>
             <strong>${escapeHtml(state.studyTitle || "Estudo personalizado")}</strong>
         </div>
         <div class="premium-summary-compact-focus">
-            <span>Proximo foco</span>
+            <span>Próximo foco</span>
             <strong>${escapeHtml(activeBlock.duration)}</strong>
         </div>
     </div>
@@ -77,7 +77,7 @@
 
         return `
 <div class="premium-summary-card">
-    <span class="premium-summary-eyebrow">Plano em construcao</span>
+    <span class="premium-summary-eyebrow">Plano em construção</span>
     <h2>${escapeHtml(state.studyTitle || "Estudo personalizado")}</h2>
     <p>${escapeHtml(state.progressLabel)}</p>
     <div class="premium-summary-stack">
@@ -87,7 +87,7 @@
         ${summaryStat("Carga", formatStudyLoad(state.studyHours || 0, state.studyMinutes || 0))}
     </div>
     <div class="premium-summary-focus">
-        <span class="premium-summary-focus-label">Proximo foco</span>
+        <span class="premium-summary-focus-label">Próximo foco</span>
         <strong>${escapeHtml(activeBlock.title)}</strong>
         <span>${escapeHtml(activeBlock.duration)}</span>
     </div>

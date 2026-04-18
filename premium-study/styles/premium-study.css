@@ -20,11 +20,11 @@
     --premium-reading-ink: #152033;
     --premium-reading-muted: rgba(21, 32, 51, 0.82);
     --premium-reading-soft: rgba(21, 32, 51, 0.62);
-    --premium-radius-shell: 20px;
-    --premium-radius-panel: 14px;
-    --premium-radius-card: 10px;
-    --premium-radius-tight: 7px;
-    --premium-radius-chip: 6px;
+    --premium-radius-shell: 14px;
+    --premium-radius-panel: 10px;
+    --premium-radius-card: 8px;
+    --premium-radius-tight: 6px;
+    --premium-radius-chip: 5px;
     --premium-radius-pill: 999px;
 }
 
@@ -3352,4 +3352,56 @@ body.dark .launchpad-card[data-module="premium-study"] {
     .premium-practice-slot {
         min-height: 58px;
     }
+}
+
+/* Premium-wide finish: less generic pill UI, closer to the PDF study language. */
+.premium-shell-icon,
+.premium-action,
+.premium-inline-actions .premium-action,
+.premium-entry-inline-badge,
+.premium-detail-label,
+.premium-result-badge,
+.premium-block-chip,
+.premium-subject-tag,
+.premium-progress-pill,
+.premium-mini-toggle,
+.premium-vf-actions button {
+    border-radius: var(--premium-radius-chip) !important;
+}
+
+.premium-study-shell,
+.premium-entry-stage,
+.premium-loading-card,
+.premium-result-hero,
+.premium-block-stage,
+.premium-block-tools,
+.premium-question-card,
+.premium-feedback-card,
+.premium-vf-item,
+.premium-flashcard-card,
+.premium-trail-card,
+.premium-detail-card {
+    border-radius: var(--premium-radius-shell) !important;
+}
+
+.premium-entry-card,
+.premium-block-card,
+.premium-block-tool,
+.premium-practice-card,
+.premium-subject-card,
+.premium-option-card,
+.premium-practice-slot,
+.premium-practice-slot-lock {
+    border-radius: var(--premium-radius-card) !important;
+}
+
+.premium-study-shell {
+    background:
+        radial-gradient(circle at top center, rgba(121, 213, 255, 0.13), transparent 34%),
+        radial-gradient(circle at bottom left, rgba(95, 114, 255, 0.08), transparent 30%),
+        linear-gradient(180deg, rgba(15, 19, 30, 0.99), rgba(9, 12, 19, 0.99));
+}
+
+.premium-study-shell::before {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), transparent 13%);
 }
