@@ -45,6 +45,13 @@
 
     async function startCheckout(planId, context = {}) {
         const plan = PLANS.find((item) => item.id === planId) || getRecommendedPlan();
+        const identityContext = window.PremiumStudyIdentity && typeof window.PremiumStudyIdentity.getCheckoutContext === "function"
+            ? window.PremiumStudyIdentity.getCheckoutContext()
+            : {};
+        const checkoutContext = {
+            ...context,
+            ...identityContext
+        };
 
         let response;
         let payload;
@@ -57,7 +64,8 @@
                 },
                 body: JSON.stringify({
                     planId: plan.id,
-                    context
+                    customerId: checkoutContext.customerId,
+                    context: checkoutContext
                 })
             });
         } catch (error) {
@@ -65,7 +73,7 @@
                 ok: false,
                 status: "checkout_endpoint_unavailable",
                 plan,
-                context,
+                context: checkoutContext,
                 message: "Nao consegui acessar o endpoint seguro de checkout. Ele precisa estar publicado junto do site."
             };
         }
@@ -81,7 +89,7 @@
                 ok: false,
                 status: payload && payload.status ? payload.status : "checkout_error",
                 plan,
-                context,
+                context: checkoutContext,
                 message: payload && payload.message
                     ? payload.message
                     : "O checkout ainda nao respondeu corretamente. Verifique a publicacao e as variaveis do servidor."
@@ -96,7 +104,8 @@
             ok: true,
             status: payload.status || "checkout_created",
             plan,
-            context,
+            context: checkoutContext,
+            customerId: payload.customerId || checkoutContext.customerId,
             preferenceId: payload.preferenceId,
             checkoutUrl: payload.checkoutUrl,
             message: "Checkout criado. Abrindo Mercado Pago..."

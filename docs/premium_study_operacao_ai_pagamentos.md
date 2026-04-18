@@ -817,3 +817,134 @@ Sem isso, o sistema ainda nao deve gravar:
 - historico completo remoto
 - biblioteca premium real entre dispositivos
 - desbloqueio definitivo de recursos pagos
+
+---
+
+## 23. Execucao da Fase 8.5 - fonte de verdade premium
+
+Atualizado em 2026-04-18.
+
+Esta etapa prepara o caminho pagamento -> webhook -> liberacao premium sem confiar no navegador.
+
+### Como passa a funcionar
+
+1. o navegador cria um `customerId` local anonimo e persistente
+2. o checkout envia esse `customerId` no `metadata` e no `external_reference` do Mercado Pago
+3. o backend cria a preferencia de pagamento sem expor `Access Token`
+4. o webhook consulta o pagamento no Mercado Pago
+5. se o pagamento vier `approved`, o backend grava/atualiza o direito premium no Supabase
+6. o frontend consulta `/api/premium/status`
+7. recursos premium so liberam quando o backend confirmar `accessTier: premium`
+
+### Arquivos criados
+
+- `api/_lib/json.js`
+- `api/_lib/supabase.js`
+- `api/_lib/premium-entitlements.js`
+- `api/premium/status.js`
+- `premium-study/services/identity.js`
+- `premium-study/services/account.js`
+
+### Arquivos ajustados
+
+- `api/mercado-pago/checkout.js`
+- `api/mercado-pago/webhook.js`
+- `premium-study/bootstrap/index.js`
+- `premium-study/services/billing.js`
+- `premium-study/app/index.js`
+- `premium-study/state/store.js`
+
+### Variaveis novas
+
+Adicionar no Vercel quando o Supabase for criado:
+
+```env
+SUPABASE_URL=
+SUPABASE_SERVICE_ROLE_KEY=
+```
+
+A `SUPABASE_SERVICE_ROLE_KEY` fica somente no Vercel/backend. Nunca colocar essa chave em HTML, CSS ou JS publico.
+
+### Schema inicial Supabase
+
+Executar no SQL Editor do Supabase:
+
+```sql
+create table if not exists public.premium_checkout_sessions (
+  id uuid primary key default gen_random_uuid(),
+  customer_id text not null,
+  plan_id text not null,
+  preference_id text,
+  external_reference text,
+  status text not null default 'created',
+  provider text not null default 'mercado_pago',
+  payment_id text,
+  metadata jsonb not null default '{}'::jsonb,
+  provider_payload jsonb,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
+create index if not exists premium_checkout_sessions_customer_idx
+  on public.premium_checkout_sessions (customer_id);
+
+create index if not exists premium_checkout_sessions_preference_idx
+  on public.premium_checkout_sessions (preference_id);
+
+create table if not exists public.premium_entitlements (
+  customer_id text primary key,
+  access_tier text not null default 'premium',
+  status text not null default 'active',
+  plan_id text not null,
+  provider text not null default 'mercado_pago',
+  payment_id text,
+  preference_id text,
+  payer_email text,
+  valid_until timestamptz,
+  provider_payload jsonb,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
+create index if not exists premium_entitlements_status_idx
+  on public.premium_entitlements (status);
+
+create or replace function public.set_updated_at()
+returns trigger
+language plpgsql
+as $$
+begin
+  new.updated_at = now();
+  return new;
+end;
+$$;
+
+drop trigger if exists premium_checkout_sessions_updated_at
+  on public.premium_checkout_sessions;
+
+create trigger premium_checkout_sessions_updated_at
+before update on public.premium_checkout_sessions
+for each row execute function public.set_updated_at();
+
+drop trigger if exists premium_entitlements_updated_at
+  on public.premium_entitlements;
+
+create trigger premium_entitlements_updated_at
+before update on public.premium_entitlements
+for each row execute function public.set_updated_at();
+```
+
+### Estado atual da seguranca
+
+Este passo ja impede que o navegador se auto-promova a premium, mas ainda e uma etapa intermediaria:
+
+- o `customerId` anonimo libera premium principalmente no mesmo navegador
+- login com Google/e-mail entra como proxima evolucao para sincronizar entre computadores
+- a assinatura secreta do Mercado Pago deve ser adicionada em `MERCADO_PAGO_WEBHOOK_SECRET` quando for possivel copiar a chave
+
+### Criterio de pronto desta fase
+
+- checkout continua abrindo
+- `/api/premium/status?customerId=...` responde mesmo sem Supabase, mantendo gratis
+- com Supabase configurado, pagamento aprovado passa a criar registro em `premium_entitlements`
+- recursos premium passam a consultar `accessTier` vindo do backend

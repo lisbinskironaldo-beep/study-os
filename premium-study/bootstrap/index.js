@@ -8,8 +8,10 @@
     const dependencies = [
         "premium-study/storage/indexeddb.js",
         "premium-study/services/access-control.js",
+        "premium-study/services/identity.js",
         "premium-study/services/pdf-validator.js",
         "premium-study/services/billing.js",
+        "premium-study/services/account.js",
         "premium-study/services/ai.js",
         "premium-study/state/store.js",
         "premium-study/router/index.js",

@@ -1,3 +1,6 @@
+const { sendJson, readJsonBody } = require("../_lib/json");
+const { recordCheckoutSession, sanitizeCustomerId } = require("../_lib/premium-entitlements");
+
 const MERCADO_PAGO_PREFERENCES_URL = "https://api.mercadopago.com/checkout/preferences";
 
 const PLAN_CONFIG = {
@@ -14,32 +17,6 @@ const PLAN_CONFIG = {
         priceEnv: "MERCADO_PAGO_ANNUAL_PRICE"
     }
 };
-
-function sendJson(res, statusCode, payload) {
-    res.statusCode = statusCode;
-    res.setHeader("Content-Type", "application/json; charset=utf-8");
-    res.end(JSON.stringify(payload));
-}
-
-async function readJsonBody(req) {
-    if (req.body && typeof req.body === "object") {
-        return req.body;
-    }
-
-    const chunks = [];
-
-    for await (const chunk of req) {
-        chunks.push(Buffer.isBuffer(chunk) ? chunk : Buffer.from(chunk));
-    }
-
-    const rawBody = Buffer.concat(chunks).toString("utf8");
-
-    if (!rawBody.trim()) {
-        return {};
-    }
-
-    return JSON.parse(rawBody);
-}
 
 function getOrigin(req) {
     const forwardedProto = req.headers["x-forwarded-proto"];
@@ -147,6 +124,8 @@ module.exports = async function handler(req, res) {
     const context = body.context && typeof body.context === "object"
         ? body.context
         : {};
+    const customerId = sanitizeCustomerId(body.customerId || context.customerId || "");
+    const externalReference = `rotanota:${customerId || "guest"}:${plan.id}:${Date.now()}`;
 
     const preference = {
         items: [
@@ -159,9 +138,10 @@ module.exports = async function handler(req, res) {
                 unit_price: unitPrice
             }
         ],
-        external_reference: `study_os:${plan.id}:${Date.now()}`,
+        external_reference: externalReference,
         metadata: {
             plan_id: plan.id,
+            customer_id: customerId,
             feature: context.feature || "",
             source_step: context.sourceStep || ""
         },
@@ -230,11 +210,24 @@ module.exports = async function handler(req, res) {
         });
     }
 
+    await recordCheckoutSession({
+        customerId,
+        planId: plan.id,
+        preferenceId: mercadoPagoPayload.id,
+        externalReference,
+        metadata: {
+            feature: context.feature || "",
+            sourceStep: context.sourceStep || "",
+            checkoutUrlCreated: Boolean(checkoutUrl)
+        }
+    });
+
     return sendJson(res, 200, {
         ok: true,
         status: "checkout_created",
         provider: "mercado_pago",
         planId: plan.id,
+        customerId,
         preferenceId: mercadoPagoPayload.id,
         checkoutUrl
     });

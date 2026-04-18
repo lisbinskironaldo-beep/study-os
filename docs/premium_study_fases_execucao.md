@@ -516,6 +516,24 @@ O objetivo e criar contratos pequenos para o produto ja saber:
 - documentacao das variaveis de ambiente do Mercado Pago
 - premium ainda nao liberado automaticamente sem persistencia real
 
+### Entregas da Fase 8.4
+
+- retorno visual do Mercado Pago tratado por `premiumPayment=success|pending|failure`
+- abertura automatica do modo `PDF Focado` depois do checkout
+- mensagem contextual sem liberar premium pelo navegador
+- limpeza do parametro da URL depois da leitura
+
+### Entregas da Fase 8.5
+
+- identidade local anonima em `premium-study/services/identity.js`
+- consulta de status premium em `premium-study/services/account.js`
+- endpoint `/api/premium/status`
+- helpers backend para Supabase em `api/_lib`
+- checkout enviando `customerId` em `metadata` e `external_reference`
+- webhook preparado para criar/atualizar `premium_entitlements`
+- schema SQL documentado em `docs/supabase_premium_schema.sql`
+- sem Supabase configurado, o sistema permanece seguro no plano gratis
+
 ### Regras desta fase
 
 - nao chamar provedor externo direto da UI
@@ -549,6 +567,13 @@ Com a fase de produto principal fechada, a proxima frente recomendada passa a se
 6. conectar IA externa com cache e prompts versionados
 7. adicionar estatisticas premium
 
+Status em 2026-04-18:
+
+- itens 1, 2 e 3 concluidos
+- item 4 implementado no codigo e aguardando credenciais/tabelas Supabase
+- item 5 fica parcialmente conectado via `accessTier` do backend
+- itens 6 e 7 permanecem para a proxima frente
+
 ---
 
 ## 14. Plano objetivo da proxima frente
@@ -573,6 +598,13 @@ Antes de conectar pagamento real, sera necessario:
 - obter credenciais de teste
 - configurar URL de retorno e webhook
 - decidir onde o backend salvará o status real da assinatura
+
+Status atualizado:
+
+- Mercado Pago ja cria checkout
+- Vercel ja publica endpoints `/api`
+- Supabase foi escolhido como fonte de verdade de baixo custo
+- falta criar o projeto Supabase, executar o SQL e colar `SUPABASE_URL` + `SUPABASE_SERVICE_ROLE_KEY` no Vercel
 
 ---
 

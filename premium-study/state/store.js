@@ -1427,6 +1427,10 @@
             previousStep: null,
             returnStep: "mode-select",
             accessTier: "free",
+            subscriptionStatus: "registered_free",
+            customerId: "",
+            premiumEntitlement: null,
+            premiumStatusConfigured: false,
             studyLibraryId: createStudyLibraryId(),
             studyTitle: "",
             materialName: "",
@@ -2204,6 +2208,9 @@
                 step: this.state.step,
                 returnStep: this.state.returnStep,
                 accessTier: this.state.accessTier,
+                subscriptionStatus: this.state.subscriptionStatus,
+                customerId: this.state.customerId,
+                premiumEntitlement: this.state.premiumEntitlement,
                 studyTitle: this.state.studyTitle,
                 studyLibraryId: this.state.studyLibraryId,
                 materialName: this.state.materialName,
@@ -2232,6 +2239,13 @@
             }
 
             const defaults = createState();
+            const accountState = {
+                accessTier: this.state.accessTier,
+                subscriptionStatus: this.state.subscriptionStatus,
+                customerId: this.state.customerId,
+                premiumEntitlement: this.state.premiumEntitlement,
+                premiumStatusConfigured: this.state.premiumStatusConfigured
+            };
             const studyTitle = snapshot.studyTitle || buildStudyTitle(snapshot.materialName);
             const materialLabel = studyTitle || "seu material";
             const blocks = snapshot.blocks && snapshot.blocks.length
@@ -2245,6 +2259,7 @@
             this.state = {
                 ...defaults,
                 ...snapshot,
+                ...accountState,
                 step: normalizedStep,
                 studyTitle,
                 studyLibraryId: snapshot.studyLibraryId || defaults.studyLibraryId,

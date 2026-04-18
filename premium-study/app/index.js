@@ -11,6 +11,7 @@
         activeRingControl: null,
         persistTimer: null,
         persistPromise: null,
+        premiumStatusTimers: [],
 
         async init(options = {}) {
             this.root = options.root || document.getElementById("premium-studyModule");
@@ -22,8 +23,23 @@
             this.root.classList.add("premium-study-host");
             this.bindRoot();
             await this.hydrateFromStorage();
+            await this.refreshPremiumAccess();
             this.consumePaymentReturn();
             this.render();
+        },
+
+        async refreshPremiumAccess() {
+            if (!window.PremiumStudyAccount || typeof window.PremiumStudyAccount.refreshAndApply !== "function") {
+                return null;
+            }
+
+            const status = await window.PremiumStudyAccount.refreshAndApply();
+
+            if (status && status.premiumActive) {
+                window.PremiumStudyStore.clearSessionNote();
+            }
+
+            return status;
         },
 
         consumePaymentReturn() {
@@ -75,6 +91,38 @@
                 ...note
             });
             router.goTo("premium-checkout");
+
+            if (paymentReturn.status === "success" || paymentReturn.status === "pending") {
+                this.schedulePremiumStatusRefresh();
+            }
+        },
+
+        clearPremiumStatusTimers() {
+            this.premiumStatusTimers.forEach((timerId) => window.clearTimeout(timerId));
+            this.premiumStatusTimers = [];
+        },
+
+        schedulePremiumStatusRefresh() {
+            this.clearPremiumStatusTimers();
+
+            [2500, 7000, 15000, 30000].forEach((delay) => {
+                const timerId = window.setTimeout(async () => {
+                    const status = await this.refreshPremiumAccess();
+
+                    if (status && status.premiumActive) {
+                        window.PremiumStudyStore.setSessionNote({
+                            step: "premium-checkout",
+                            tone: "info",
+                            title: "Premium liberado",
+                            message: "Pagamento confirmado. Seus recursos premium ja estao ativos neste navegador."
+                        });
+                        this.clearPremiumStatusTimers();
+                        this.render();
+                    }
+                }, delay);
+
+                this.premiumStatusTimers.push(timerId);
+            });
         },
 
         bindRoot() {

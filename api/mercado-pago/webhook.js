@@ -1,10 +1,6 @@
 const crypto = require("crypto");
-
-function sendJson(res, statusCode, payload) {
-    res.statusCode = statusCode;
-    res.setHeader("Content-Type", "application/json; charset=utf-8");
-    res.end(JSON.stringify(payload));
-}
+const { sendJson } = require("../_lib/json");
+const { applyPaymentToEntitlement } = require("../_lib/premium-entitlements");
 
 async function readRawBody(req) {
     const chunks = [];
@@ -153,9 +149,14 @@ module.exports = async function handler(req, res) {
     const payment = eventType === "payment" && paymentId
         ? await fetchPayment(paymentId)
         : null;
+    const premiumActivation = payment
+        ? await applyPaymentToEntitlement(payment)
+        : {
+            ok: false,
+            skipped: true,
+            status: "payment_not_loaded"
+        };
 
-    // Nesta etapa ainda nao temos banco de usuarios/assinaturas.
-    // O webhook valida a origem e consulta o pagamento; a liberacao real entra quando a fonte de verdade existir.
     return sendJson(res, 200, {
         ok: true,
         status: "webhook_received",
@@ -164,6 +165,6 @@ module.exports = async function handler(req, res) {
         action,
         paymentId,
         paymentStatus: payment ? payment.status : null,
-        premiumActivation: "pending_persistence"
+        premiumActivation
     });
 };
