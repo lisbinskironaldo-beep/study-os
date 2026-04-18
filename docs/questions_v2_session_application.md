@@ -1,4 +1,4 @@
-# STUDY OS - QUESTIONS V2 - CAMADA DE APLICACAO DE SESSAO
+# ROTANOTA - QUESTIONS V2 - CAMADA DE APLICACAO DE SESSAO
 
 Documento interno de aplicacao.
 Nao deve aparecer na interface do produto.

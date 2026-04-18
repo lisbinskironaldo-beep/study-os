@@ -1,4 +1,4 @@
-# STUDY OS - QUESTIONS V2 - AUDITORIA DE STORAGE
+# ROTANOTA - QUESTIONS V2 - AUDITORIA DE STORAGE
 
 Documento interno de persistencia.
 Nao deve aparecer na interface do produto.

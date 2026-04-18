@@ -1,4 +1,4 @@
-# STUDY OS - PREMIUM STUDY - FASES OFICIAIS DE EXECUCAO
+# ROTANOTA - PREMIUM STUDY - FASES OFICIAIS DE EXECUCAO
 
 Documento operacional das fases.
 
@@ -130,7 +130,7 @@ Entregar o modulo novo, desacoplado, com onboarding de uma decisao por tela.
 
 ### Escopo
 
-- card `Estudo Premium` na home
+- card `PDF Focado` na home
 - `#premiumStudyModule`
 - bootstrap lazy-load
 - shell premium

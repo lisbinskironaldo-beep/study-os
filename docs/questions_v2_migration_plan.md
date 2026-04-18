@@ -1,4 +1,4 @@
-# STUDY OS - QUESTIONS V2 - PLANO DE MIGRACAO
+# ROTANOTA - QUESTIONS V2 - PLANO DE MIGRACAO
 
 Documento interno de execucao.
 Nao deve aparecer na interface do produto.

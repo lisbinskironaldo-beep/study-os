@@ -683,6 +683,64 @@ body.dark #ambientRoot .ambient-panel::before {
     min-width: 0;
 }
 
+.rotanota-topbar-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    min-width: 0;
+    padding: 5px 12px 5px 6px;
+    border: 1px solid rgba(0, 212, 255, 0.16);
+    background:
+        radial-gradient(circle at top left, rgba(0, 212, 255, 0.14), transparent 48%),
+        rgba(255, 255, 255, 0.22);
+    box-shadow: 0 10px 22px rgba(16, 33, 58, 0.08);
+    clip-path: polygon(10px 0, calc(100% - 10px) 0, 100% 10px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 10px 100%, 0 calc(100% - 10px), 0 10px);
+    transition: opacity 0.18s ease, transform 0.18s ease, max-width 0.18s ease;
+}
+
+.rotanota-topbar-brand img {
+    width: 34px;
+    height: 34px;
+    flex: 0 0 auto;
+    filter: drop-shadow(0 8px 14px rgba(0, 212, 255, 0.14));
+}
+
+.rotanota-topbar-brand span {
+    display: grid;
+    gap: 1px;
+    min-width: 0;
+}
+
+.rotanota-topbar-brand strong {
+    font-family: "Space Grotesk", "Manrope", sans-serif;
+    font-size: 1.02rem;
+    line-height: 1;
+    letter-spacing: -0.04em;
+    color: var(--ink);
+}
+
+.rotanota-topbar-brand strong span {
+    display: inline;
+    color: #008dff;
+}
+
+.rotanota-topbar-brand small {
+    color: var(--muted);
+    font-size: 0.62rem;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+body.dark .rotanota-topbar-brand {
+    background:
+        radial-gradient(circle at top left, rgba(0, 212, 255, 0.16), transparent 48%),
+        rgba(7, 15, 28, 0.74);
+    border-color: rgba(0, 212, 255, 0.12);
+}
+
 .topbar-right {
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -741,6 +799,7 @@ body.topbar-collapsed #homeBtn {
 }
 
 body.topbar-collapsed .timezone-topbar,
+body.topbar-collapsed .rotanota-topbar-brand,
 body.topbar-collapsed .topbar-right {
     opacity: 0;
     pointer-events: none;
@@ -2401,6 +2460,65 @@ body[data-mode="pomodoro"] #achievements {
 
 body[data-mode="clock"] #homeLaunchpad {
     display: grid;
+}
+
+.rotanota-home-brand {
+    width: min(100%, 980px);
+    margin: 0 auto 8px;
+    padding: 24px 26px;
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    align-items: center;
+    gap: 18px;
+    color: var(--ink);
+    background:
+        radial-gradient(circle at 8% 12%, rgba(0, 212, 255, 0.18), transparent 28%),
+        linear-gradient(135deg, rgba(8, 19, 36, 0.95), rgba(10, 20, 36, 0.84));
+    border: 1px solid rgba(0, 212, 255, 0.13);
+    box-shadow: 0 22px 42px rgba(8, 19, 36, 0.18);
+    clip-path: polygon(var(--ui-cut-lg) 0, calc(100% - var(--ui-cut-lg)) 0, 100% var(--ui-cut-lg), 100% calc(100% - var(--ui-cut-lg)), calc(100% - var(--ui-cut-lg)) 100%, var(--ui-cut-lg) 100%, 0 calc(100% - var(--ui-cut-lg)), 0 var(--ui-cut-lg));
+}
+
+.rotanota-home-brand img {
+    width: clamp(62px, 7vw, 82px);
+    height: clamp(62px, 7vw, 82px);
+    filter: drop-shadow(0 16px 28px rgba(0, 212, 255, 0.2));
+}
+
+.rotanota-home-brand div {
+    display: grid;
+    gap: 5px;
+}
+
+.rotanota-home-brand span {
+    font-family: "Space Grotesk", "Manrope", sans-serif;
+    color: #f1f5fa;
+    font-size: clamp(2rem, 4vw, 4rem);
+    font-weight: 800;
+    letter-spacing: -0.08em;
+    line-height: 0.92;
+}
+
+.rotanota-home-brand span span {
+    color: #00d4ff;
+}
+
+.rotanota-home-brand strong {
+    color: rgba(241, 245, 250, 0.94);
+    font-size: clamp(1rem, 1.5vw, 1.3rem);
+    line-height: 1.25;
+}
+
+.rotanota-home-brand p {
+    max-width: 620px;
+    margin: 0;
+    color: rgba(214, 225, 239, 0.68);
+    font-size: 0.94rem;
+    line-height: 1.45;
+}
+
+body:not(.dark) .rotanota-home-brand {
+    color: #f1f5fa;
 }
 
 .home-launchpad-main,
@@ -6834,6 +6952,21 @@ body.focus-mode #shortcutHint.is-visible {
     .home-launchpad-tools {
         padding: 18px;
         border-radius: 24px;
+    }
+
+    .rotanota-home-brand {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+        padding: 20px 18px;
+    }
+
+    .rotanota-home-brand p {
+        margin-inline: auto;
+    }
+
+    .rotanota-topbar-brand small {
+        display: none;
     }
 
     .launchpad-card {

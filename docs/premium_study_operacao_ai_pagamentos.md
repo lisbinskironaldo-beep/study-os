@@ -1,4 +1,4 @@
-# STUDY OS - PREMIUM STUDY - OPERAÇÃO, IA, ACESSOS E PAGAMENTOS
+# ROTANOTA - PREMIUM STUDY - OPERAÇÃO, IA, ACESSOS E PAGAMENTOS
 
 Documento oficial da frente operacional.
 
@@ -412,7 +412,7 @@ Alavancas recomendadas:
 
 - tela bonita de `Seu plano está pronto`
 - card compartilhável de `Seu cronograma pessoal`
-- selo discreto `Criado no Study OS`
+- selo discreto `Criado no RotaNota`
 - resumo visual do progresso
 
 Incentivos permitidos:
@@ -654,7 +654,7 @@ Nao confundir:
 No painel de desenvolvedor:
 
 1. abrir `Suas integracoes`
-2. selecionar a aplicacao `StudyPro`
+2. selecionar a aplicacao `StudyPro` ou `RotaNota`, conforme o nome usado no painel Mercado Pago
 3. abrir `Webhooks`
 4. entrar em `Configurar notificacoes`
 5. informar uma URL HTTPS publica do backend

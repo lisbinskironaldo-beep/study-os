@@ -1,4 +1,4 @@
-# STUDY OS - QUESTIONS V2 - ARQUITETURA ALVO
+# ROTANOTA - QUESTIONS V2 - ARQUITETURA ALVO
 
 Documento interno de arquitetura.
 Nao deve aparecer na interface do produto.
@@ -55,7 +55,7 @@ Consequencias:
 ### 3.1. Macro separacao
 
 ```txt
-Study OS shell
+ROTANOTA shell
   -> navega
   -> hospeda modulos
   -> publica eventos minimos

@@ -1,4 +1,4 @@
-# STUDY OS - LOG DE ESTABILIZACAO E DIRETRIZ DE REVISAO
+# ROTANOTA - LOG DE ESTABILIZACAO E DIRETRIZ DE REVISAO
 
 Registro interno da rodada de trabalho consolidada em 2026-03-31.
 

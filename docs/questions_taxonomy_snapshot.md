@@ -1,4 +1,4 @@
-# STUDY OS - SNAPSHOT DE SERIES, MATERIAS E CATEGORIAS
+# ROTANOTA - SNAPSHOT DE SERIES, MATERIAS E CATEGORIAS
 
 Documento interno de consulta rapida.
 Fotografia da estrutura atual do banco em 2026-03-26.

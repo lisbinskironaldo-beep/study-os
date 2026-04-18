@@ -1,4 +1,4 @@
-# STUDY OS - QUESTIONS V2 - VISAO E PROPOSITO
+# ROTANOTA - QUESTIONS V2 - VISAO E PROPOSITO
 
 Documento interno de direcionamento.
 Nao deve aparecer na interface do produto.
@@ -82,7 +82,7 @@ Ele passa a ser tratado como um dominio proprio dentro do projeto.
 Regra:
 
 ```txt
-o shell continua sendo o Study OS
+o shell continua sendo o ROTANOTA
 questions passa a ser um dominio isolado
 ```
 

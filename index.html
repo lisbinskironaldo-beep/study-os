@@ -3,7 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Study OS</title>
+<meta name="description" content="RotaNota transforma PDFs e materiais em uma rota personalizada para prova, prática e resultado.">
+<title>RotaNota</title>
+<link rel="icon" href="assets/rotanota-mark.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
@@ -38,6 +40,10 @@
                 <path d="M6 10.5V20h12v-9.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
         </button>
+        <div class="rotanota-topbar-brand" aria-label="RotaNota">
+            <img src="assets/rotanota-mark.svg" alt="" width="34" height="34">
+            <span><strong>Rota<span>Nota</span></strong><small>Sua rota. Sua melhor nota.</small></span>
+        </div>
         <select id="timezoneSelector" class="timezone-topbar"></select>
     </div>
 
@@ -126,6 +132,15 @@
     <div id="progressiveBars" class="progressive-bars"></div>
 
     <div id="homeLaunchpad" class="home-launchpad">
+        <section class="rotanota-home-brand" aria-label="RotaNota">
+            <img src="assets/rotanota-mark.svg" alt="" width="82" height="82">
+            <div>
+                <span>Rota<span>Nota</span></span>
+                <strong>Seu material vira uma rota direta para a prova.</strong>
+                <p>Carregue, organize, pratique e avance com foco no resultado.</p>
+            </div>
+        </section>
+
         <div class="home-launchpad-main">
             <div class="launchpad-primary-grid">
                 <button data-module="pomodoro" class="launchpad-card" type="button">
@@ -137,7 +152,7 @@
                 </button>
 
                 <button data-module="premium-study" class="launchpad-card" type="button">
-                    <span class="launchpad-card-title">Estudo Premium</span>
+                    <span class="launchpad-card-title">PDF Focado</span>
                 </button>
 
                 <button data-module="questions" class="launchpad-card" type="button">
@@ -216,7 +231,7 @@
 </svg>
 </button>
 
-<button data-module="premium-study" data-tier="primary" class="icon-circle footer-icon" data-label="Premium">
+<button data-module="premium-study" data-tier="primary" class="icon-circle footer-icon" data-label="PDF Focado">
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 <path d="M4 18L12 4l8 14" />
 <path d="M8.5 13h7" />
@@ -227,7 +242,7 @@
 
     <div class="donate-area">
         <a href="#" id="donateLink">Doar</a>
-        <div class="no-ads">Site livre de an&uacute;ncios e pop-ups.</div>
+        <div class="no-ads">RotaNota livre de an&uacute;ncios e pop-ups.</div>
     </div>
 
     <div class="footer-divider"></div>

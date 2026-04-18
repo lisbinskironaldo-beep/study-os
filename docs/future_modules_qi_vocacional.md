@@ -1,6 +1,6 @@
-# STUDY OS - FRENTES FUTURAS - TESTE DE QI E TESTE VOCACIONAL
+# ROTANOTA - FRENTES FUTURAS - TESTE DE QI E TESTE VOCACIONAL
 
-Documento de captura oficial de ideias futuras do ecossistema `Study OS`.
+Documento de captura oficial de ideias futuras do ecossistema `RotaNota`.
 
 Status:
 - vigente
@@ -34,7 +34,7 @@ elas existem como modulos separados, com documentacao propria e execucao propria
 Os dois projetos entram na mesma area principal em que hoje existem:
 
 - Questoes
-- Estudo Premium
+- PDF Focado
 - Pomodoro
 - Tabela
 
@@ -275,7 +275,7 @@ Recomendacao:
 
 ### 5.1 Nao copiar app generico
 
-Os dois modulos precisam parecer produtos proprios do `Study OS`, nao paginas prontas ou quiz de template.
+Os dois modulos precisam parecer produtos proprios do `RotaNota`, nao paginas prontas ou quiz de template.
 
 ### 5.2 Uma acao por tela
 

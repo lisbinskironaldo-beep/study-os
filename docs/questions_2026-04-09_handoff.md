@@ -1,4 +1,4 @@
-# STUDY OS - HANDOFF DE QUESTOES
+# ROTANOTA - HANDOFF DE QUESTOES
 
 Documento de retomada.
 Atualizado em 2026-04-09.

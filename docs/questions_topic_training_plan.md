@@ -1,4 +1,4 @@
-# STUDY OS - PLANO DO MONTAR SIMULADO
+# ROTANOTA - PLANO DO MONTAR SIMULADO
 
 Documento de produto e execucao.
 Atualizado em 2026-04-09.

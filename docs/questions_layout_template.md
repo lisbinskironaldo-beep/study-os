@@ -1,4 +1,4 @@
-# STUDY OS - TEMPLATE DE ENTREGA DAS QUESTOES
+# ROTANOTA - TEMPLATE DE ENTREGA DAS QUESTOES
 
 Documento interno de consulta.
 Modelo para receber questoes de forma consistente e pronta para escalabilidade.

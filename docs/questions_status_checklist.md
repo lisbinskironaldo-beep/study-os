@@ -1,4 +1,4 @@
-# STUDY OS - STATUS DO MODULO DE QUESTOES
+# ROTANOTA - STATUS DO MODULO DE QUESTOES
 
 Documento interno de acompanhamento.
 Atualizado em 2026-03-28.

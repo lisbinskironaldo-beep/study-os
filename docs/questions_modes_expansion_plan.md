@@ -1,4 +1,4 @@
-# STUDY OS - EXPANSAO DOS MODOS DE QUESTOES
+# ROTANOTA - EXPANSAO DOS MODOS DE QUESTOES
 
 Documento interno de produto e execucao.
 Nao deve aparecer na interface do produto.

@@ -1,4 +1,4 @@
-# STUDY OS - PLANO DO NOVO FLUXO DE QUESTOES
+# ROTANOTA - PLANO DO NOVO FLUXO DE QUESTOES
 
 Documento interno de arquitetura e execucao.
 Baseado na decisao de simplificar a entrada do modulo em dois caminhos:

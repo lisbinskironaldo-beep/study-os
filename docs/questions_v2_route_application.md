@@ -1,4 +1,4 @@
-# STUDY OS - QUESTIONS V2 - CAMADA DE APLICACAO DE ROTA E LAUNCHER
+# ROTANOTA - QUESTIONS V2 - CAMADA DE APLICACAO DE ROTA E LAUNCHER
 
 Documento interno de aplicacao.
 Nao deve aparecer na interface do produto.

@@ -1,4 +1,4 @@
-# STUDY OS - DOCUMENTO BASE DO MODULO DE QUESTOES
+# ROTANOTA - DOCUMENTO BASE DO MODULO DE QUESTOES
 
 Documento interno de consulta.
 Nao deve aparecer na interface do produto.

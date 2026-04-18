@@ -3,13 +3,13 @@ const MERCADO_PAGO_PREFERENCES_URL = "https://api.mercadopago.com/checkout/prefe
 const PLAN_CONFIG = {
     premium_monthly: {
         id: "premium_monthly",
-        title: "Study OS Premium mensal",
+        title: "RotaNota Premium mensal",
         description: "Biblioteca premium, PDFs maiores, treinos extras e continuidade dos estudos.",
         priceEnv: "MERCADO_PAGO_MONTHLY_PRICE"
     },
     premium_annual: {
         id: "premium_annual",
-        title: "Study OS Premium anual",
+        title: "RotaNota Premium anual",
         description: "Acesso premium anual com continuidade, biblioteca e treinos extras.",
         priceEnv: "MERCADO_PAGO_ANNUAL_PRICE"
     }
@@ -167,7 +167,7 @@ module.exports = async function handler(req, res) {
             feature: context.feature || "",
             source_step: context.sourceStep || ""
         },
-        statement_descriptor: "STUDYOS"
+        statement_descriptor: "ROTANOTA"
     };
 
     if (notificationUrl) {

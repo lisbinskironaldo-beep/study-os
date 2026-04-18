@@ -1,4 +1,4 @@
-# STUDY OS - QUESTIONS V2 - SELETORES E FORMATADORES DO LAUNCHER
+# ROTANOTA - QUESTIONS V2 - SELETORES E FORMATADORES DO LAUNCHER
 
 Documento interno de aplicacao.
 Nao deve aparecer na interface do produto.

@@ -26,9 +26,9 @@
 
     const STEP_META = {
         entry: {
-            title: "Carregue seu PDF para uma jornada personalizada para o seu objetivo.",
+            title: "RotaNota transforma seu PDF em uma rota para a prova.",
             subtitle: "Tudo comeca no seu material. Depois disso, cada etapa ajusta a trilha ao seu prazo e a sua meta.",
-            label: "Entrada premium",
+            label: "Entrada RotaNota",
             backVisible: false,
             progressVisible: false,
             showSummary: false
@@ -61,7 +61,7 @@
             showSummary: false
         },
         analysis: {
-            title: "Estamos montando o melhor caminho para voce.",
+            title: "RotaNota esta montando o melhor caminho para voce.",
             subtitle: "Agora o sistema transforma suas escolhas em uma trilha mais objetiva e focada na sua meta.",
             label: "Processamento",
             backVisible: false,

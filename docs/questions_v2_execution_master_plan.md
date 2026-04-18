@@ -1,4 +1,4 @@
-# STUDY OS - QUESTIONS V2 - BLOCO MESTRE DE EXECUCAO
+# ROTANOTA - QUESTIONS V2 - BLOCO MESTRE DE EXECUCAO
 
 Documento interno de execucao.
 Nao deve aparecer na interface do produto.

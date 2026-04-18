@@ -1,4 +1,4 @@
-# STUDY OS - PREMIUM STUDY - CONSTITUICAO DO PRODUTO
+# ROTANOTA - PREMIUM STUDY - CONSTITUICAO DO PRODUTO
 
 Documento oficial e autoritativo do modulo `Premium Study`.
 
@@ -193,7 +193,7 @@ Decisao fechada:
 - carrega por lazy-load
 
 Estrutura recomendada:
-- card na home: `Estudo Premium`
+- card na home: `PDF Focado`
 - container dedicado: `#premiumStudyModule`
 
 ---
