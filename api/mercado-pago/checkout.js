@@ -74,6 +74,10 @@ function getBackUrl(name, origin) {
         : "";
 }
 
+function shouldUseBackUrls(successUrl, failureUrl, pendingUrl) {
+    return [successUrl, failureUrl, pendingUrl].every((url) => /^https:\/\/.+/i.test(url));
+}
+
 function getNotificationUrl(origin) {
     if (process.env.MERCADO_PAGO_NOTIFICATION_URL) {
         return process.env.MERCADO_PAGO_NOTIFICATION_URL;
@@ -155,12 +159,6 @@ module.exports = async function handler(req, res) {
                 unit_price: unitPrice
             }
         ],
-        back_urls: {
-            success: successUrl,
-            failure: failureUrl,
-            pending: pendingUrl
-        },
-        auto_return: "approved",
         external_reference: `study_os:${plan.id}:${Date.now()}`,
         metadata: {
             plan_id: plan.id,
@@ -169,6 +167,15 @@ module.exports = async function handler(req, res) {
         },
         statement_descriptor: "ROTANOTA"
     };
+
+    if (shouldUseBackUrls(successUrl, failureUrl, pendingUrl)) {
+        preference.back_urls = {
+            success: successUrl,
+            failure: failureUrl,
+            pending: pendingUrl
+        };
+        preference.auto_return = "approved";
+    }
 
     if (notificationUrl) {
         preference.notification_url = notificationUrl;
@@ -203,7 +210,11 @@ module.exports = async function handler(req, res) {
             message: "Mercado Pago recusou a criacao do checkout.",
             details: mercadoPagoPayload && mercadoPagoPayload.message
                 ? mercadoPagoPayload.message
-                : mercadoPagoPayload
+                : mercadoPagoPayload,
+            providerStatus: mercadoPagoResponse.status,
+            providerCause: mercadoPagoPayload && mercadoPagoPayload.cause
+                ? mercadoPagoPayload.cause
+                : null
         });
     }
 
