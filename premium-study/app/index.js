@@ -17,6 +17,13 @@
         initialLoadPromise: null,
         lastKnownPremiumActive: false,
         activeMaterialFile: null,
+        pdfBridge: null,
+        pdfObjectUrl: "",
+        pdfLoadedAssetId: "",
+        pdfWorkbenchPersistTimer: null,
+        pdfWorkbenchPersistPromise: null,
+        librarySyncPromise: null,
+        lastLibrarySyncUserId: "",
 
         getGrowthService() {
             return window.PremiumStudyGrowth || null;
@@ -113,6 +120,7 @@
                 } else {
                     await this.refreshPremiumAccess();
                 }
+                await this.syncStudyLibraryWithAccount({ force: true });
                 this.render();
 
                 if (window.PremiumStudyPromotions && typeof window.PremiumStudyPromotions.refresh === "function") {
@@ -181,7 +189,103 @@
 
             this.lastKnownPremiumActive = isPremiumActive;
 
+            if (status && status.authenticated && status.user && status.user.userId) {
+                this.syncStudyLibraryWithAccount().catch((error) => console.warn("Sincronizacao da biblioteca falhou", error));
+            } else {
+                this.lastLibrarySyncUserId = "";
+            }
+
             return status;
+        },
+
+        getLibraryService() {
+            return window.PremiumStudyLibrary || null;
+        },
+
+        buildLatestStudySummaryFromLibraryItem(item) {
+            if (!item) {
+                return null;
+            }
+
+            return {
+                id: item.id || "",
+                title: item.title || item.materialName || "Estudo salvo",
+                materialName: item.materialName || "PDF sem nome",
+                examDate: item.examDate || "",
+                examDateLabel: item.examDateLabel || "Data nao definida",
+                targetScore: item.targetScore || 7,
+                studyHours: item.studyHours || 1,
+                studyMinutes: item.studyMinutes || 0,
+                step: item.step || "entry",
+                savedAt: item.savedAt || new Date().toISOString(),
+                pdfAvailable: Boolean(item.pdfAvailable)
+            };
+        },
+
+        async syncStudyLibraryWithAccount(options = {}) {
+            const store = window.PremiumStudyStore;
+            const state = store.getState();
+            const service = this.getLibraryService();
+
+            if (
+                !window.PremiumStudyStorage ||
+                !service ||
+                !state.accountAuthenticated ||
+                !state.accountUser ||
+                !state.accountUser.userId
+            ) {
+                return null;
+            }
+
+            const userId = state.accountUser.userId;
+
+            if (this.librarySyncPromise) {
+                return this.librarySyncPromise;
+            }
+
+            if (!options.force && this.lastLibrarySyncUserId === userId) {
+                return store.getState().studyLibrary;
+            }
+
+            this.librarySyncPromise = (async () => {
+                const localItems = await window.PremiumStudyStorage.getStudyLibrary();
+                const remote = await service.getRemoteLibrary();
+                const remoteItems = remote.ok ? remote.items : [];
+                let mergedItems = service.mergeLibraryItems(localItems, remoteItems);
+
+                if (mergedItems.length || localItems.length || remoteItems.length) {
+                    await window.PremiumStudyStorage.saveStudyLibrary(mergedItems);
+                    store.setStudyLibrary(mergedItems);
+
+                    if (!store.getState().latestLocalStudy && mergedItems[0]) {
+                        store.setLatestLocalStudy(this.buildLatestStudySummaryFromLibraryItem(mergedItems[0]));
+                    }
+                }
+
+                const itemsToUpload = service.getItemsNeedingUpload(localItems, remoteItems);
+
+                if (itemsToUpload.length) {
+                    const uploaded = await service.saveRemoteLibraryItems(itemsToUpload);
+
+                    if (uploaded.ok && uploaded.items.length) {
+                        mergedItems = service.mergeLibraryItems(mergedItems, uploaded.items);
+                        await window.PremiumStudyStorage.saveStudyLibrary(mergedItems);
+                        store.setStudyLibrary(mergedItems);
+                    }
+                }
+
+                this.lastLibrarySyncUserId = userId;
+                return mergedItems;
+            })()
+                .catch((error) => {
+                    console.warn("Nao foi possivel sincronizar a biblioteca premium", error);
+                    return store.getState().studyLibrary;
+                })
+                .finally(() => {
+                    this.librarySyncPromise = null;
+                });
+
+            return this.librarySyncPromise;
         },
 
         async runHomeAction(action = "") {
@@ -473,6 +577,19 @@
                 ) {
                     store.setHighlightEditorFullScreen(false);
                     this.render();
+                    return;
+                }
+
+                if (
+                    state.step === "pdf-workbench" &&
+                    state.pdfWorkbenchState &&
+                    state.pdfWorkbenchState.fullScreen &&
+                    !isActive
+                ) {
+                    store.patchPdfWorkbenchState({
+                        fullScreen: false
+                    });
+                    this.render();
                 }
             });
 
@@ -515,6 +632,44 @@
                     if (file) {
                         this.handleSelectedFile(file, event.target);
                     }
+                }
+            });
+
+            this.root.addEventListener("input", (event) => {
+                if (event.target && event.target.id === "premiumPdfWorkbenchEditor") {
+                    window.PremiumStudyStore.setPdfWorkbenchText(
+                        this.getPdfWorkbenchEditorText(),
+                        {
+                            html: this.getPdfWorkbenchEditorHtml()
+                        }
+                    );
+                    this.schedulePersist(500);
+                }
+            });
+
+            this.root.addEventListener("paste", (event) => {
+                if (!event.target || event.target.id !== "premiumPdfWorkbenchEditor") {
+                    return;
+                }
+
+                event.preventDefault();
+                const text = event.clipboardData
+                    ? event.clipboardData.getData("text/plain")
+                    : "";
+
+                if (typeof document.execCommand === "function") {
+                    document.execCommand("insertText", false, text);
+                }
+            });
+
+            this.root.addEventListener("keydown", async (event) => {
+                if (!event.target || event.target.id !== "premiumPdfSearchInput") {
+                    return;
+                }
+
+                if (event.key === "Enter") {
+                    event.preventDefault();
+                    await this.handleAction("pdf-search", {});
                 }
             });
 
@@ -660,6 +815,11 @@
                     state.step === "highlight-preview" &&
                     state.highlightEditorOpen &&
                     state.highlightEditorFullScreen
+                ) ||
+                (
+                    state.step === "pdf-workbench" &&
+                    state.pdfWorkbenchState &&
+                    state.pdfWorkbenchState.fullScreen
                 );
 
             if (!shouldBeNativeFullScreen) {
@@ -680,10 +840,12 @@
             const studyLibrary = await window.PremiumStudyStorage.getStudyLibrary();
             if (studyLibrary && studyLibrary.length) {
                 window.PremiumStudyStore.setStudyLibrary(studyLibrary);
+                window.PremiumStudyStore.setLatestLocalStudy(this.buildLatestStudySummaryFromLibraryItem(studyLibrary[0]));
             }
 
             const latestDraft = await window.PremiumStudyStorage.getLatestDraft();
             if (!latestDraft || !latestDraft.snapshot) {
+                this.persistenceReady = true;
                 return;
             }
 
@@ -694,6 +856,566 @@
 
             window.PremiumStudyStore.setLatestLocalStudy(summary);
             this.persistenceReady = true;
+        },
+
+        async ensurePdfWorkbenchText() {
+            const store = window.PremiumStudyStore;
+            const state = store.getState();
+
+            if (state.pdfWorkbenchText) {
+                return state.pdfWorkbenchText;
+            }
+
+            let extractedText = state.materialExtractedText || "";
+
+            if (!extractedText && this.activeMaterialFile && window.PremiumStudyPdfTextExtractor) {
+                const extraction = await window.PremiumStudyPdfTextExtractor.extractText(this.activeMaterialFile, {
+                    maxChars: 40000,
+                    maxPages: state.accessTier === "premium" ? 60 : 24
+                });
+                store.setMaterialExtraction(extraction);
+                extractedText = extraction.text || "";
+            }
+
+            if (extractedText) {
+                store.setPdfWorkbenchText(extractedText, {
+                    preserveOriginal: false,
+                    html: this.textToPdfWorkbenchHtml(extractedText)
+                });
+            }
+
+            return extractedText;
+        },
+
+        escapePdfWorkbenchHtml(text) {
+            return String(text || "")
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/\"/g, "&quot;")
+                .replace(/'/g, "&#39;");
+        },
+
+        textToPdfWorkbenchHtml(text) {
+            return this.escapePdfWorkbenchHtml(text).replace(/\r?\n/g, "<br>");
+        },
+
+        getPdfWorkbenchEditor() {
+            return this.root
+                ? this.root.querySelector("#premiumPdfWorkbenchEditor")
+                : null;
+        },
+
+        getPdfWorkbenchEditorText() {
+            const editor = this.getPdfWorkbenchEditor();
+            return editor
+                ? String(editor.innerText || "").replace(/\r/g, "")
+                : "";
+        },
+
+        getPdfWorkbenchEditorHtml() {
+            const editor = this.getPdfWorkbenchEditor();
+            return editor
+                ? String(editor.innerHTML || "")
+                : "";
+        },
+
+        createPdfWorkbenchExportHtmlDocument(title, bodyHtml) {
+            const safeTitle = String(title || "Documento editado");
+            const content = String(bodyHtml || "")
+                .replace(/<script[\s\S]*?>[\s\S]*?<\/script>/gi, "");
+
+            return `<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>${this.escapePdfWorkbenchHtml(safeTitle)}</title>
+<style>
+body { font-family: Calibri, "Segoe UI", Arial, sans-serif; color: #1f2937; margin: 0; background: #f3f4f6; }
+.page { max-width: 920px; margin: 32px auto; background: #ffffff; padding: 40px 48px; box-shadow: 0 18px 48px rgba(15, 23, 42, 0.12); border-radius: 18px; }
+h1 { margin: 0 0 24px; font-size: 28px; line-height: 1.2; }
+.content { white-space: pre-wrap; font-size: 16px; line-height: 1.7; }
+mark { padding: 0 2px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<main class="page">
+<h1>${this.escapePdfWorkbenchHtml(safeTitle)}</h1>
+<div class="content">${content}</div>
+</main>
+</body>
+</html>`;
+        },
+
+        downloadPdfWorkbenchEditedVersion() {
+            const state = window.PremiumStudyStore.getState();
+            const html = this.getPdfWorkbenchEditorHtml();
+
+            if (!html) {
+                return false;
+            }
+
+            const title = state.studyTitle || state.materialName || "documento-editado";
+            const baseName = String(title)
+                .replace(/\.[a-z0-9]+$/i, "")
+                .replace(/[<>:"/\\|?*]+/g, " ")
+                .replace(/\s+/g, " ")
+                .trim()
+                || "documento-editado";
+            const documentHtml = this.createPdfWorkbenchExportHtmlDocument(title, html);
+            const blob = new Blob([documentHtml], {
+                type: "application/msword"
+            });
+            const url = window.URL.createObjectURL(blob);
+            const anchor = document.createElement("a");
+            anchor.href = url;
+            anchor.download = `${baseName} - editado.doc`;
+            document.body.appendChild(anchor);
+            anchor.click();
+            anchor.remove();
+            window.setTimeout(() => {
+                window.URL.revokeObjectURL(url);
+            }, 2000);
+            return true;
+        },
+
+        focusPdfWorkbenchText(query) {
+            const editor = this.getPdfWorkbenchEditor();
+            const search = String(query || "").trim();
+
+            if (!editor || !search) {
+                return false;
+            }
+
+            const lowerSearch = search.toLowerCase();
+            const walker = document.createTreeWalker(editor, NodeFilter.SHOW_TEXT);
+            const nodes = [];
+            let source = "";
+            let currentNode = walker.nextNode();
+
+            while (currentNode) {
+                const text = String(currentNode.nodeValue || "");
+                if (text) {
+                    nodes.push({
+                        node: currentNode,
+                        start: source.length,
+                        end: source.length + text.length
+                    });
+                    source += text;
+                }
+                currentNode = walker.nextNode();
+            }
+
+            const lowerSource = source.toLowerCase();
+            const selection = window.getSelection ? window.getSelection() : null;
+            let startFrom = 0;
+
+            if (selection && selection.rangeCount > 0) {
+                const activeRange = selection.getRangeAt(0);
+                const activeNode = activeRange.endContainer;
+                const activeEntry = nodes.find((entry) => entry.node === activeNode);
+                startFrom = activeEntry
+                    ? activeEntry.start + activeRange.endOffset
+                    : 0;
+            }
+
+            let matchIndex = lowerSource.indexOf(lowerSearch, startFrom);
+
+            if (matchIndex < 0 && startFrom > 0) {
+                matchIndex = lowerSource.indexOf(lowerSearch);
+            }
+
+            if (matchIndex < 0) {
+                return false;
+            }
+
+            const matchEnd = matchIndex + search.length;
+            const startEntry = nodes.find((entry) => matchIndex >= entry.start && matchIndex < entry.end);
+            const endEntry = nodes.find((entry) => matchEnd > entry.start && matchEnd <= entry.end)
+                || startEntry;
+
+            if (!startEntry || !endEntry || !selection) {
+                return false;
+            }
+
+            const range = document.createRange();
+            range.setStart(startEntry.node, matchIndex - startEntry.start);
+            range.setEnd(endEntry.node, matchEnd - endEntry.start);
+
+            const applySelection = () => {
+                selection.removeAllRanges();
+                selection.addRange(range);
+                editor.focus();
+                const top = range.getBoundingClientRect().top;
+                const hostTop = editor.getBoundingClientRect().top;
+                editor.scrollTop += top - hostTop - (editor.clientHeight / 3);
+            };
+
+            applySelection();
+
+            if (typeof window.requestAnimationFrame === "function") {
+                window.requestAnimationFrame(() => {
+                    window.requestAnimationFrame(() => {
+                        applySelection();
+                    });
+                });
+            } else {
+                window.setTimeout(applySelection, 0);
+            }
+
+            return true;
+        },
+
+        applyPdfHighlight(colorValue) {
+            const editor = this.getPdfWorkbenchEditor();
+            const selection = window.getSelection ? window.getSelection() : null;
+
+            if (!editor || !selection || selection.rangeCount === 0 || selection.isCollapsed) {
+                return false;
+            }
+
+            editor.focus();
+
+            if (typeof document.execCommand === "function") {
+                document.execCommand("styleWithCSS", false, true);
+                const applied = document.execCommand("hiliteColor", false, colorValue);
+
+                if (applied) {
+                    window.PremiumStudyStore.setPdfWorkbenchText(
+                        this.getPdfWorkbenchEditorText(),
+                        {
+                            html: this.getPdfWorkbenchEditorHtml()
+                        }
+                    );
+                    this.schedulePersist(220);
+                    return true;
+                }
+            }
+
+            return false;
+        },
+
+        clearPdfHighlight() {
+            const editor = this.getPdfWorkbenchEditor();
+
+            if (!editor || typeof document.execCommand !== "function") {
+                return false;
+            }
+
+            editor.focus();
+            document.execCommand("removeFormat", false);
+            window.PremiumStudyStore.setPdfWorkbenchText(
+                this.getPdfWorkbenchEditorText(),
+                {
+                    html: this.getPdfWorkbenchEditorHtml()
+                }
+            );
+            this.schedulePersist(220);
+            return true;
+        },
+
+        getPdfWorkbenchService() {
+            return window.PremiumStudyPdfWorkbench || null;
+        },
+
+        destroyPdfBridge() {
+            const service = this.getPdfWorkbenchService();
+
+            if (this.pdfBridge && typeof this.pdfBridge.destroy === "function") {
+                this.pdfBridge.destroy();
+            }
+
+            this.pdfBridge = null;
+            this.pdfLoadedAssetId = "";
+
+            if (service && this.pdfObjectUrl) {
+                service.revokeObjectUrl(this.pdfObjectUrl);
+            }
+
+            this.pdfObjectUrl = "";
+        },
+
+        async resolvePdfSourceUrl(assetId) {
+            if (!assetId || !window.PremiumStudyStorage) {
+                return "";
+            }
+
+            const service = this.getPdfWorkbenchService();
+            const localAsset = await window.PremiumStudyStorage.getPdfAsset(assetId);
+
+            if (localAsset && localAsset.blob && service) {
+                if (this.pdfObjectUrl) {
+                    service.revokeObjectUrl(this.pdfObjectUrl);
+                }
+
+                this.pdfObjectUrl = service.createObjectUrl(localAsset.blob);
+                return this.pdfObjectUrl;
+            }
+
+            return service ? service.buildRemoteAssetUrl(assetId) : "";
+        },
+
+        async loadPdfAnnotationRecord(assetId) {
+            if (!assetId || !window.PremiumStudyStorage) {
+                return null;
+            }
+
+            const localRecord = await window.PremiumStudyStorage.getPdfAnnotations(assetId);
+            const state = window.PremiumStudyStore.getState();
+            const service = this.getPdfWorkbenchService();
+
+            if (!state.accountAuthenticated || !service || typeof service.getRemoteAnnotations !== "function") {
+                return localRecord;
+            }
+
+            const remote = await service.getRemoteAnnotations(assetId);
+
+            if (!remote.ok || !remote.annotationRecord) {
+                return localRecord;
+            }
+
+            const localTime = localRecord && localRecord.updatedAt
+                ? new Date(localRecord.updatedAt).getTime()
+                : 0;
+            const remoteTime = remote.annotationRecord && remote.annotationRecord.updatedAt
+                ? new Date(remote.annotationRecord.updatedAt).getTime()
+                : 0;
+            const winner = remoteTime >= localTime
+                ? remote.annotationRecord
+                : localRecord;
+
+            if (winner) {
+                await window.PremiumStudyStorage.savePdfAnnotations(winner);
+            }
+
+            return winner;
+        },
+
+        schedulePdfWorkbenchPersist(delay = 400) {
+            const state = window.PremiumStudyStore.getState();
+
+            if (!state.pdfAssetId) {
+                return;
+            }
+
+            if (this.pdfWorkbenchPersistTimer) {
+                window.clearTimeout(this.pdfWorkbenchPersistTimer);
+            }
+
+            this.pdfWorkbenchPersistTimer = window.setTimeout(() => {
+                this.pdfWorkbenchPersistTimer = null;
+                this.pdfWorkbenchPersistPromise = this.persistPdfWorkbenchState()
+                    .catch((error) => console.error(error))
+                    .finally(() => {
+                        this.pdfWorkbenchPersistPromise = null;
+                    });
+            }, delay);
+        },
+
+        async persistPdfWorkbenchState() {
+            const store = window.PremiumStudyStore;
+            const state = store.getState();
+
+            if (!state.pdfAssetId || !window.PremiumStudyStorage) {
+                return null;
+            }
+
+            let manualAnnotationEntries = [];
+
+            if (this.pdfBridge && typeof this.pdfBridge.request === "function") {
+                try {
+                    const exportState = await this.pdfBridge.request("exportAnnotations");
+                    manualAnnotationEntries = Array.isArray(exportState && exportState.entries)
+                        ? exportState.entries
+                        : [];
+                } catch (error) {
+                    console.warn("Nao consegui exportar as anotacoes do PDF", error);
+                }
+            } else {
+                const existing = await window.PremiumStudyStorage.getPdfAnnotations(state.pdfAssetId);
+                manualAnnotationEntries = Array.isArray(existing && existing.manualAnnotationEntries)
+                    ? existing.manualAnnotationEntries
+                    : [];
+            }
+
+            const annotationRecord = {
+                assetId: state.pdfAssetId,
+                version: 1,
+                viewerState: state.pdfWorkbenchState,
+                aiHighlights: state.aiHighlights,
+                manualAnnotationEntries,
+                updatedAt: new Date().toISOString()
+            };
+
+            const savedLocal = await window.PremiumStudyStorage.savePdfAnnotations(annotationRecord);
+            const service = this.getPdfWorkbenchService();
+
+            if (
+                state.accountAuthenticated &&
+                service &&
+                typeof service.saveRemoteAnnotations === "function"
+            ) {
+                const remote = await service.saveRemoteAnnotations(state.pdfAssetId, annotationRecord);
+
+                if (remote.ok) {
+                    store.patchPdfWorkbenchState({
+                        lastSyncedAt: annotationRecord.updatedAt
+                    });
+                    store.setPdfAsset({
+                        pdfAssetId: state.pdfAssetId,
+                        pdfAssetHash: state.pdfAssetHash,
+                        pdfSource: "server",
+                        pdfSyncStatus: "synced"
+                    });
+                }
+            }
+
+            return savedLocal;
+        },
+
+        async syncPdfAssetToServer(file) {
+            const service = this.getPdfWorkbenchService();
+            const store = window.PremiumStudyStore;
+            const state = store.getState();
+
+            if (
+                !file ||
+                !state.accountAuthenticated ||
+                !service ||
+                typeof service.uploadAsset !== "function" ||
+                !state.pdfAssetId
+            ) {
+                return null;
+            }
+
+            store.setPdfAsset({
+                pdfAssetId: state.pdfAssetId,
+                pdfAssetHash: state.pdfAssetHash,
+                pdfSource: state.pdfSource || "local",
+                pdfSyncStatus: "syncing"
+            });
+            this.render();
+
+            const result = await service.uploadAsset({
+                assetId: state.pdfAssetId,
+                assetHash: state.pdfAssetHash,
+                fileName: state.materialName,
+                mimeType: file.type,
+                pageCount: state.materialPageCount,
+                customerId: state.customerId
+            }, file);
+
+            if (!result.ok) {
+                store.setPdfSyncError(result.message || "Nao foi possivel sincronizar o PDF agora.");
+                this.render();
+                return result;
+            }
+
+            store.setPdfAsset({
+                pdfAssetId: result.assetId || state.pdfAssetId,
+                pdfAssetHash: result.assetHash || state.pdfAssetHash,
+                pdfSource: "server",
+                pdfSyncStatus: "synced"
+            });
+            this.render();
+            this.schedulePersist(80);
+
+            return result;
+        },
+
+        async mountPdfWorkbench() {
+            const store = window.PremiumStudyStore;
+            const state = store.getState();
+            const iframe = this.root ? this.root.querySelector("#premiumPdfWorkbenchFrame") : null;
+            const service = this.getPdfWorkbenchService();
+
+            if (!iframe || !service || !state.pdfAssetId) {
+                return;
+            }
+
+            if (!this.pdfBridge || this.pdfBridge.iframe !== iframe) {
+                this.destroyPdfBridge();
+                this.pdfBridge = service.createBridge(iframe, {
+                    viewerStateChanged: (payload) => {
+                        store.patchPdfWorkbenchState(payload || {});
+                        this.schedulePersist(120);
+                        this.schedulePdfWorkbenchPersist(500);
+                    },
+                    aiHighlightSelected: (payload) => {
+                        store.selectPdfAiHighlight(payload && payload.highlightId ? payload.highlightId : "");
+                        this.render();
+                    },
+                    viewerError: (payload) => {
+                        store.setSessionNote({
+                            step: "pdf-workbench",
+                            tone: "premium",
+                            title: "Erro ao renderizar o PDF",
+                            message: payload && payload.message
+                                ? `O viewer retornou: ${payload.message}`
+                                : "O viewer encontrou um erro ao abrir o documento."
+                        });
+                        this.render();
+                    }
+                });
+            }
+
+            if (this.pdfLoadedAssetId === state.pdfAssetId) {
+                return;
+            }
+
+            const sourceUrl = await this.resolvePdfSourceUrl(state.pdfAssetId);
+            if (!sourceUrl) {
+                store.setSessionNote({
+                    step: "pdf-workbench",
+                    tone: "premium",
+                    title: "PDF original indisponivel",
+                    message: "Nao encontrei o arquivo original neste navegador nem no servidor."
+                });
+                this.render();
+                return;
+            }
+
+            if (iframe.contentDocument && iframe.contentDocument.readyState !== "complete") {
+                await new Promise((resolve) => {
+                    iframe.addEventListener("load", () => resolve(), { once: true });
+                });
+            }
+
+            const annotationRecord = await this.loadPdfAnnotationRecord(state.pdfAssetId);
+            if (annotationRecord) {
+                if (annotationRecord.viewerState) {
+                    store.patchPdfWorkbenchState(annotationRecord.viewerState);
+                }
+                if (Array.isArray(annotationRecord.aiHighlights) && annotationRecord.aiHighlights.length) {
+                    store.setPdfAiHighlights(annotationRecord.aiHighlights);
+                }
+            }
+
+            try {
+                const viewerState = await this.pdfBridge.request("loadDocument", {
+                    url: sourceUrl,
+                    annotationEntries: annotationRecord && annotationRecord.manualAnnotationEntries
+                        ? annotationRecord.manualAnnotationEntries
+                        : [],
+                    aiHighlights: store.getState().aiHighlights,
+                    viewerState: store.getState().pdfWorkbenchState
+                });
+                if (viewerState && typeof viewerState === "object") {
+                    store.patchPdfWorkbenchState(viewerState);
+                }
+                this.pdfLoadedAssetId = state.pdfAssetId;
+                store.clearSessionNote();
+                this.render();
+            } catch (error) {
+                store.setSessionNote({
+                    step: "pdf-workbench",
+                    tone: "premium",
+                    title: "Nao consegui abrir o PDF",
+                    message: "O viewer nao respondeu a tempo. Tente abrir de novo; se persistir, reenvie o arquivo."
+                });
+                this.render();
+            }
         },
 
         openPremiumOffer(featureName, sourceStep) {
@@ -795,9 +1517,14 @@
             }
 
             this.activeMaterialFile = file;
+            const pdfWorkbench = this.getPdfWorkbenchService();
             let materialHash = "";
 
-            if (window.PremiumStudyGrowth && typeof window.PremiumStudyGrowth.buildMaterialHash === "function") {
+            if (pdfWorkbench && typeof pdfWorkbench.buildPdfAssetHash === "function") {
+                materialHash = await pdfWorkbench.buildPdfAssetHash(file);
+            }
+
+            if (!materialHash && window.PremiumStudyGrowth && typeof window.PremiumStudyGrowth.buildMaterialHash === "function") {
                 materialHash = await window.PremiumStudyGrowth.buildMaterialHash({
                     name: file.name,
                     size: file.size,
@@ -806,12 +1533,30 @@
                 });
             }
 
+            if (window.PremiumStudyStorage) {
+                await window.PremiumStudyStorage.savePdfAsset({
+                    id: materialHash,
+                    assetHash: materialHash,
+                    fileName: file.name,
+                    mimeType: file.type || "application/pdf",
+                    byteSize: file.size,
+                    pageCount: validation.pageCount,
+                    source: "local",
+                    savedAt: new Date().toISOString(),
+                    blob: file
+                });
+            }
+
             store.setMaterial({
                 name: file.name,
                 size: file.size,
                 type: file.type,
                 pageCount: validation.pageCount,
-                materialHash
+                materialHash,
+                pdfAssetId: materialHash,
+                pdfAssetHash: materialHash,
+                pdfSource: "local",
+                pdfSyncStatus: store.getState().accountAuthenticated ? "syncing" : "local_only"
             });
             this.trackGrowth("pdf_upload_success", {
                 materialHash,
@@ -823,12 +1568,17 @@
             router.goTo("exam-date");
             this.render();
             this.schedulePersist(80);
+            this.syncPdfAssetToServer(file).catch((error) => console.error(error));
         },
 
         async persistCurrentState() {
             const state = window.PremiumStudyStore.getState();
             if (!window.PremiumStudyStorage || !state.materialName) {
                 return;
+            }
+
+            if (state.pdfAssetId) {
+                await this.persistPdfWorkbenchState().catch((error) => console.error(error));
             }
 
             const snapshot = window.PremiumStudyStore.exportSnapshot();
@@ -847,13 +1597,37 @@
                 savedAt: savedDraft.savedAt
             });
             window.PremiumStudyStore.setLatestLocalStudy(summary);
-            const studyLibrary = await window.PremiumStudyStorage.saveStudyLibraryRecord({
+            let studyLibrary = await window.PremiumStudyStorage.saveStudyLibraryRecord({
                 ...window.PremiumStudyStore.exportSnapshot(),
                 savedAt: savedDraft.savedAt
             });
             if (studyLibrary && studyLibrary.length) {
                 window.PremiumStudyStore.setStudyLibrary(studyLibrary);
             }
+
+            const libraryService = this.getLibraryService();
+            const currentState = window.PremiumStudyStore.getState();
+            const currentLibraryItem = Array.isArray(studyLibrary)
+                ? studyLibrary.find((item) => item.id === currentState.studyLibraryId) || studyLibrary[0] || null
+                : null;
+
+            if (
+                currentState.accountAuthenticated &&
+                libraryService &&
+                currentLibraryItem
+            ) {
+                const remoteSave = await libraryService.saveRemoteLibraryItems([currentLibraryItem]);
+
+                if (remoteSave.ok) {
+                    studyLibrary = libraryService.mergeLibraryItems(studyLibrary, remoteSave.items);
+                    await window.PremiumStudyStorage.saveStudyLibrary(studyLibrary);
+                    window.PremiumStudyStore.setStudyLibrary(studyLibrary);
+                    this.lastLibrarySyncUserId = currentState.accountUser && currentState.accountUser.userId
+                        ? currentState.accountUser.userId
+                        : this.lastLibrarySyncUserId;
+                }
+            }
+
             this.persistenceReady = true;
         },
 
@@ -890,16 +1664,24 @@
 
             if (this.persistPromise) {
                 await this.persistPromise;
-                return;
+            } else {
+                this.persistPromise = this.persistCurrentState()
+                    .catch((error) => console.error(error))
+                    .finally(() => {
+                        this.persistPromise = null;
+                    });
+
+                await this.persistPromise;
             }
 
-            this.persistPromise = this.persistCurrentState()
-                .catch((error) => console.error(error))
-                .finally(() => {
-                    this.persistPromise = null;
-                });
+            if (this.pdfWorkbenchPersistTimer) {
+                window.clearTimeout(this.pdfWorkbenchPersistTimer);
+                this.pdfWorkbenchPersistTimer = null;
+            }
 
-            await this.persistPromise;
+            if (this.pdfWorkbenchPersistPromise) {
+                await this.pdfWorkbenchPersistPromise;
+            }
         },
 
         openPrintWindow(title, bodyContent) {
@@ -1199,8 +1981,8 @@ ${sections}`
             return {
                 shouldSyncNativeFullScreen: true,
                 preferEnterNativeFullScreen:
-                    nextStep === "block" &&
-                    store.getState().blockFullScreen
+                    (nextStep === "block" && store.getState().blockFullScreen) ||
+                    (nextStep === "pdf-workbench" && store.getState().pdfWorkbenchState.fullScreen)
             };
         },
 
@@ -1245,6 +2027,20 @@ ${sections}`
                 router.goTo(step);
             };
             const premiumLibraryEnabled = canUseFeature("PREMIUM_LIBRARY");
+            const getFieldValue = (selector) => {
+                const element = this.root ? this.root.querySelector(selector) : null;
+                if (!element) {
+                    return "";
+                }
+
+                if ("value" in element) {
+                    return String(element.value || "");
+                }
+
+                return element.isContentEditable
+                    ? String(element.innerText || "")
+                    : "";
+            };
 
             if (
                 action !== "request-extra-quiz" &&
@@ -1316,6 +2112,24 @@ ${sections}`
                             source: "latest_draft"
                         }
                     });
+                    break;
+                }
+
+                const latestLibraryItem = store.getState().studyLibrary[0] || null;
+                if (latestLibraryItem && latestLibraryItem.snapshot) {
+                    const resumeState = await this.resumeSnapshot({
+                        ...latestLibraryItem.snapshot,
+                        savedAt: latestLibraryItem.savedAt || latestLibraryItem.snapshot.savedAt
+                    });
+                    shouldSyncNativeFullScreen = resumeState.shouldSyncNativeFullScreen;
+                    preferEnterNativeFullScreen = resumeState.preferEnterNativeFullScreen;
+                    shouldPersist = true;
+                    this.trackGrowth("resume_latest_study", {
+                        materialHash: store.getState().materialHash,
+                        metadata: {
+                            source: "synced_library"
+                        }
+                    });
                 }
                 break;
             }
@@ -1361,6 +2175,25 @@ ${sections}`
                 store.openHighlightDocument();
                 router.goTo("highlight-preview");
                 shouldPersist = true;
+                break;
+            case "choose-mode-pdf-workbench":
+                if (!(await this.ensurePdfWorkbenchText())) {
+                    store.setSessionNote({
+                        step: "mode-select",
+                        tone: "info",
+                        title: "Nao consegui extrair o texto",
+                        message: "Nao encontrei texto suficiente no PDF para abrir o editor. Tente reenviar um PDF textual."
+                    });
+                    shouldPersist = true;
+                    break;
+                }
+                store.patchPdfWorkbenchState({
+                    fullScreen: true
+                });
+                router.goTo("pdf-workbench");
+                shouldPersist = true;
+                shouldSyncNativeFullScreen = true;
+                preferEnterNativeFullScreen = true;
                 break;
             case "choose-mode-practice":
                 store.setReturnStep("mode-select");
@@ -1417,6 +2250,30 @@ ${sections}`
                 shouldPersist = true;
                 break;
             }
+            case "resume-library-pdf": {
+                if (!premiumLibraryEnabled) {
+                    openPremiumOffer("PREMIUM_LIBRARY");
+                    shouldPersist = true;
+                    break;
+                }
+                const activeItem = store.getActiveLibraryItem();
+                if (activeItem && activeItem.snapshot) {
+                    await this.resumeSnapshot({
+                        ...activeItem.snapshot,
+                        savedAt: activeItem.savedAt || activeItem.snapshot.savedAt,
+                        step: "pdf-workbench"
+                    });
+                    store.patchPdfWorkbenchState({
+                        fullScreen: true
+                    });
+                    router.goTo("pdf-workbench");
+                    await this.ensurePdfWorkbenchText();
+                    shouldSyncNativeFullScreen = true;
+                    preferEnterNativeFullScreen = true;
+                }
+                shouldPersist = true;
+                break;
+            }
             case "download-highlight-summary":
                 if (!canUseFeature("HIGHLIGHT_EXPORT")) {
                     openPremiumOffer("HIGHLIGHT_EXPORT");
@@ -1460,6 +2317,231 @@ ${sections}`
                 shouldPersist = true;
                 shouldSyncNativeFullScreen = true;
                 break;
+            case "pdf-search":
+                {
+                    const query = getFieldValue("#premiumPdfSearchInput");
+                    store.patchPdfWorkbenchState({
+                        searchQuery: query
+                    });
+                    if (!this.focusPdfWorkbenchText(query) && query) {
+                        store.setSessionNote({
+                            step: "pdf-workbench",
+                            tone: "info",
+                            title: "Trecho nao encontrado",
+                            message: "Nao localizei esse termo no texto extraido."
+                        });
+                        this.render();
+                    }
+                    shouldPersist = true;
+                }
+                break;
+            case "pdf-clear-search":
+                store.patchPdfWorkbenchState({
+                    searchQuery: ""
+                });
+                shouldPersist = true;
+                this.render();
+                break;
+            case "restore-pdf-workbench-text":
+                store.restorePdfWorkbenchOriginal();
+                store.setSessionNote({
+                    step: "pdf-workbench",
+                    tone: "info",
+                    title: "Texto restaurado",
+                    message: "O editor voltou para a versao extraida do PDF."
+                });
+                shouldPersist = true;
+                this.render();
+                break;
+            case "copy-pdf-workbench-text": {
+                const text = this.getPdfWorkbenchEditorText() || store.getState().pdfWorkbenchText || "";
+                if (text && navigator.clipboard && typeof navigator.clipboard.writeText === "function") {
+                    try {
+                        await navigator.clipboard.writeText(text);
+                        store.setSessionNote({
+                            step: "pdf-workbench",
+                            tone: "info",
+                            title: "Texto copiado",
+                            message: "O texto extraido foi enviado para a area de transferencia."
+                        });
+                    } catch (_error) {
+                        store.setSessionNote({
+                            step: "pdf-workbench",
+                            tone: "premium",
+                            title: "Nao consegui copiar",
+                            message: "O navegador bloqueou a copia automatica."
+                        });
+                    }
+                    this.render();
+                }
+                break;
+            }
+            case "expand-pdf-workbench":
+                store.patchPdfWorkbenchState({
+                    fullScreen: true
+                });
+                shouldPersist = true;
+                shouldSyncNativeFullScreen = true;
+                preferEnterNativeFullScreen = true;
+                break;
+            case "collapse-pdf-workbench":
+                store.patchPdfWorkbenchState({
+                    fullScreen: false
+                });
+                shouldPersist = true;
+                shouldSyncNativeFullScreen = true;
+                break;
+            case "save-pdf-workbench":
+                store.setPdfWorkbenchText(this.getPdfWorkbenchEditorText(), {
+                    preserveOriginal: true,
+                    html: this.getPdfWorkbenchEditorHtml()
+                });
+                await this.persistPdfWorkbenchState();
+                await this.persistCurrentState();
+                store.setSessionNote({
+                    step: "pdf-workbench",
+                    tone: "info",
+                    title: "Texto salvo",
+                    message: store.getState().accountAuthenticated
+                        ? "Salvo neste navegador e sincronizado com a sua conta na Biblioteca premium. Hoje a biblioteca ainda nao tem pastas."
+                        : "Salvo neste navegador e atualizado no item atual da Biblioteca premium deste navegador. Hoje a biblioteca ainda nao tem pastas."
+                });
+                this.render();
+                shouldPersist = false;
+                break;
+            case "set-pdf-highlight-color":
+                if (this.applyPdfHighlight(payload.itemValue || "")) {
+                    store.setSessionNote({
+                        step: "pdf-workbench",
+                        tone: "info",
+                        title: "Marcacao aplicada",
+                        message: "O trecho selecionado recebeu a cor escolhida."
+                    });
+                    this.render();
+                    shouldPersist = true;
+                }
+                break;
+            case "clear-pdf-highlight":
+                if (this.clearPdfHighlight()) {
+                    store.setSessionNote({
+                        step: "pdf-workbench",
+                        tone: "info",
+                        title: "Marcacao removida",
+                        message: "A marcacao do trecho selecionado foi limpa."
+                    });
+                    this.render();
+                    shouldPersist = true;
+                }
+                break;
+            case "download-original-pdf": {
+                if (this.downloadPdfWorkbenchEditedVersion()) {
+                    store.setSessionNote({
+                        step: "pdf-workbench",
+                        tone: "info",
+                        title: "Versao editada baixada",
+                        message: "O download saiu com o texto e as marcacoes que estao na tela agora."
+                    });
+                    this.render();
+                } else {
+                    store.setSessionNote({
+                        step: "pdf-workbench",
+                        tone: "premium",
+                        title: "Nada para baixar",
+                        message: "Ainda nao encontrei conteudo editado suficiente para gerar o arquivo."
+                    });
+                    this.render();
+                }
+                shouldPersist = true;
+                break;
+            }
+            case "pdf-ai-highlight-all":
+            case "pdf-ai-highlight-block": {
+                const state = store.getState();
+                const dailyMinutes = (Number(state.studyHours) || 0) * 60
+                    + (Number(state.studyMinutes) || 0);
+                const activeBlockState = store.getActiveBlock();
+                const scope = action === "pdf-ai-highlight-block" ? "block" : "all";
+                const service = this.getPdfWorkbenchService();
+                const result = service
+                    ? await service.requestAiHighlights(state.pdfAssetId, {
+                        assetId: state.pdfAssetId,
+                        assetHash: state.pdfAssetHash,
+                        materialName: state.materialName,
+                        extractedText: state.materialExtractedText,
+                        examDate: state.examDate,
+                        targetScore: state.targetScore,
+                        dailyMinutes,
+                        scope,
+                        blockId: scope === "block" && activeBlockState ? activeBlockState.id : "",
+                        blockTitle: scope === "block" && activeBlockState ? activeBlockState.title : "",
+                        blocks: Array.isArray(state.blocks)
+                            ? state.blocks.map((block) => ({
+                                id: block.id,
+                                title: block.title,
+                                topics: block.topics || [],
+                                summary: block.learn && block.learn.summary ? block.learn.summary : ""
+                            }))
+                            : []
+                    })
+                    : { ok: false, status: "service_unavailable" };
+
+                if (result.ok && Array.isArray(result.highlights)) {
+                    store.setPdfAiHighlights(result.highlights);
+
+                    this.schedulePdfWorkbenchPersist(60);
+                    shouldPersist = true;
+                    this.render();
+                } else {
+                    store.setSessionNote({
+                        step: "pdf-workbench",
+                        tone: "info",
+                        title: "IA sem retorno agora",
+                        message: result.message || "Nao consegui gerar os grifos contextualizados neste momento."
+                    });
+                    this.render();
+                }
+                break;
+            }
+            case "select-pdf-ai-highlight":
+                store.selectPdfAiHighlight(payload.itemValue);
+                shouldPersist = true;
+                this.render();
+                break;
+            case "jump-to-pdf-ai-highlight": {
+                const selectedId = store.getState().pdfWorkbenchState.selectedAiHighlightId;
+                const selectedHighlight = store.getState().aiHighlights.find((item) => item.id === selectedId);
+                if (selectedHighlight) {
+                    this.focusPdfWorkbenchText(selectedHighlight.quote || selectedHighlight.anchor || "");
+                    shouldPersist = true;
+                }
+                break;
+            }
+            case "promote-pdf-ai-highlight": {
+                const selectedId = store.getState().pdfWorkbenchState.selectedAiHighlightId;
+                if (selectedId) {
+                    store.updatePdfAiHighlight(selectedId, {
+                        source: "user"
+                    });
+                    this.schedulePdfWorkbenchPersist(60);
+                    shouldPersist = true;
+                    this.render();
+                }
+                break;
+            }
+            case "dismiss-pdf-ai-highlight": {
+                const selectedId = store.getState().pdfWorkbenchState.selectedAiHighlightId;
+                if (selectedId) {
+                    store.updatePdfAiHighlight(selectedId, {
+                        dismissed: true
+                    });
+                    const nextActive = store.getState().aiHighlights.find((item) => !item.dismissed);
+                    store.selectPdfAiHighlight(nextActive ? nextActive.id : "");
+                    this.schedulePdfWorkbenchPersist(60);
+                    shouldPersist = true;
+                    this.render();
+                }
+                break;
+            }
             case "select-highlight-part":
                 store.setHighlightSelection(
                     Number(payload.sectionIndex),
@@ -1553,8 +2635,19 @@ ${sections}`
                     : [];
                 const selectedPlanId = payload.itemValue || "premium_monthly";
                 const selectedPlan = plans.find((plan) => plan.id === selectedPlanId) || null;
+                const auth = window.RotaNotaAuth || null;
+                const googleLoginAvailable = auth
+                    && typeof auth.isGoogleLoginAvailable === "function"
+                    ? auth.isGoogleLoginAvailable()
+                    : false;
+                const alreadyAuthenticated = auth
+                    && typeof auth.isAuthenticated === "function"
+                    ? auth.isAuthenticated()
+                    : false;
 
                 if (
+                    !alreadyAuthenticated &&
+                    googleLoginAvailable &&
                     window.RotaNotaCore
                     && typeof window.RotaNotaCore.requireGoogleLogin === "function"
                 ) {
@@ -1571,6 +2664,16 @@ ${sections}`
                         shouldPersist = true;
                         break;
                     }
+                }
+
+                if (!alreadyAuthenticated && !googleLoginAvailable) {
+                    store.setSessionNote({
+                        step: "premium-checkout",
+                        tone: "info",
+                        title: "Continuando sem login Google",
+                        message: "O login Google nao esta configurado neste ambiente. O checkout foi liberado mesmo assim."
+                    });
+                    this.render();
                 }
 
                 this.trackGrowth("checkout_click", {
@@ -2009,7 +3112,14 @@ ${sections}`
                     step === "highlight-preview" &&
                     state.highlightEditorOpen &&
                     state.highlightEditorFullScreen
+                ) ||
+                (
+                    step === "pdf-workbench" &&
+                    state.pdfWorkbenchState &&
+                    state.pdfWorkbenchState.fullScreen
                 );
+
+            this.destroyPdfBridge();
 
             if (!keepNativeFullScreen) {
                 this.exitNativeFullScreen();
@@ -2023,9 +3133,29 @@ ${sections}`
 
             const state = window.PremiumStudyStore.getState();
             const step = state.step;
+            const currentShell = this.root.querySelector(".premium-study-shell");
+
             const meta = {
                 ...window.PremiumStudyRouter.getMeta(step)
             };
+            const headerActions = step === "pdf-workbench"
+                ? [
+                    {
+                        action: "download-original-pdf",
+                        label: "Baixar versao editada",
+                        icon: "↓"
+                    },
+                    {
+                        action: state.pdfWorkbenchState && state.pdfWorkbenchState.fullScreen
+                            ? "collapse-pdf-workbench"
+                            : "expand-pdf-workbench",
+                        label: state.pdfWorkbenchState && state.pdfWorkbenchState.fullScreen
+                            ? "Sair da tela cheia"
+                            : "Abrir em tela cheia",
+                        icon: "⛶"
+                    }
+                ]
+                : [];
 
             if (step === "highlight-preview" && state.highlightEditorOpen) {
                 meta.hideHeading = true;
@@ -2041,7 +3171,8 @@ ${sections}`
                 meta,
                 content: window.PremiumStudyViews.render(step, state),
                 summary,
-                showBack: window.PremiumStudyRouter.canGoBack(step)
+                showBack: window.PremiumStudyRouter.canGoBack(step),
+                headerActions
             });
 
             document.body.setAttribute("data-premium-step", step);

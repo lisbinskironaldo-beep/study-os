@@ -13,6 +13,7 @@ const { isSupabaseConfigured, supabaseRequest } = require("../_lib/supabase");
 const REQUIRED_SCHEMA_TABLES = [
     "premium_checkout_sessions",
     "premium_entitlements",
+    "premium_study_library_items",
     "premium_study_growth_events",
     "premium_study_ops_alerts",
     "northstar_change_requests",
@@ -105,6 +106,9 @@ module.exports = async function handler(req, res) {
     const userId = authSession.ok
         ? authSession.payload.userId
         : "";
+    const userEmail = authSession.ok
+        ? authSession.payload.email
+        : "";
     const reconciliation = paymentId
         ? await reconcilePaymentById(paymentId)
         : null;
@@ -114,7 +118,8 @@ module.exports = async function handler(req, res) {
     const [status, opsState, schemaReady] = await Promise.all([
         getPremiumStatus({
             customerId,
-            userId
+            userId,
+            userEmail
         }),
         getPrimaryOpsState(),
         getSchemaReady()

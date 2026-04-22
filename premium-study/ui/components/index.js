@@ -114,7 +114,8 @@
         meta,
         content,
         summary,
-        showBack
+        showBack,
+        headerActions = []
     }) {
         const showProgress = meta.progressVisible !== false;
         const showHeading = meta.hideHeading !== true;
@@ -134,9 +135,22 @@
             <div class="premium-shell-progress-wrap">
                 ${showProgress ? progressBar(meta.progress || 0, meta.label || "") : `<span class="premium-shell-label">${escapeHtml(meta.label || "")}</span>`}
             </div>
-            <button type="button" class="premium-shell-icon" data-premium-action="close" aria-label="Fechar">
-                <span aria-hidden="true">&times;</span>
-            </button>
+            <div class="premium-shell-actions">
+                ${headerActions.map((item) => `
+                <button
+                    type="button"
+                    class="premium-shell-icon premium-shell-icon-compact"
+                    data-premium-action="${escapeHtml(item.action)}"
+                    aria-label="${escapeHtml(item.label)}"
+                    title="${escapeHtml(item.label)}"
+                    ${item.disabled ? "disabled" : ""}
+                >
+                    <span aria-hidden="true">${item.icon || ""}</span>
+                </button>`).join("")}
+                <button type="button" class="premium-shell-icon" data-premium-action="close" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
         </div>
     </header>
     <div class="premium-study-shell-body">

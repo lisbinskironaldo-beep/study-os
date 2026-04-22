@@ -11,6 +11,62 @@ const PLAN_DURATIONS_DAYS = {
     premium_annual: 366
 };
 
+function normalizeEmail(value) {
+    return String(value || "")
+        .trim()
+        .toLowerCase();
+}
+
+function parseEnvList(value) {
+    return String(value || "")
+        .split(",")
+        .map((item) => item.trim())
+        .filter(Boolean);
+}
+
+function getOwnerPremiumConfig() {
+    return {
+        userIds: parseEnvList(process.env.ROTANOTA_OWNER_USER_IDS)
+            .map((value) => sanitizeUserId(value))
+            .filter(Boolean),
+        emails: parseEnvList(process.env.ROTANOTA_OWNER_EMAILS)
+            .map((value) => normalizeEmail(value))
+            .filter(Boolean)
+    };
+}
+
+function isOwnerPremiumUser(input = {}) {
+    const config = getOwnerPremiumConfig();
+    const userId = sanitizeUserId(input.userId || input.user_id || "");
+    const email = normalizeEmail(input.userEmail || input.user_email || "");
+
+    return Boolean(
+        (userId && config.userIds.includes(userId)) ||
+        (email && config.emails.includes(email))
+    );
+}
+
+function buildOwnerPremiumStatus(input = {}) {
+    const userId = sanitizeUserId(input.userId || input.user_id || "");
+    const email = normalizeEmail(input.userEmail || input.user_email || "");
+
+    return {
+        ok: true,
+        configured: isSupabaseConfigured(),
+        accessTier: "premium",
+        subscriptionStatus: "owner_override",
+        premiumActive: true,
+        entitlement: {
+            provider: "owner_override",
+            status: "active",
+            plan_id: "owner",
+            user_id: userId || null,
+            payer_email: email || null,
+            valid_until: null
+        }
+    };
+}
+
 function sanitizePaymentId(value) {
     const paymentId = String(value || "").trim();
 
@@ -250,6 +306,19 @@ async function getPremiumStatus(input = {}) {
     const userId = typeof input === "object"
         ? sanitizeUserId(input.userId || input.user_id || "")
         : "";
+    const userEmail = typeof input === "object"
+        ? normalizeEmail(input.userEmail || input.user_email || "")
+        : "";
+
+    if (isOwnerPremiumUser({
+        userId,
+        userEmail
+    })) {
+        return buildOwnerPremiumStatus({
+            userId,
+            userEmail
+        });
+    }
 
     if (!customerId && !userId) {
         return {

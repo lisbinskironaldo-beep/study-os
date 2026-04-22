@@ -11,6 +11,7 @@
         "analysis",
         "mode-select",
         "highlight-preview",
+        "pdf-workbench",
         "learn-map",
         "block",
         "practice",
@@ -86,6 +87,17 @@
             progressVisible: false,
             showSummary: false,
             scrollable: true
+        },
+        "pdf-workbench": {
+            title: "PDF integral editavel",
+            subtitle: "Abra o arquivo original com leitura concentrada, ferramentas de anotacao e grifos contextualizados por IA.",
+            label: "PDF integral",
+            backVisible: true,
+            progressVisible: false,
+            showSummary: false,
+            scrollable: false,
+            hideHeading: true,
+            showKicker: false
         },
         "learn-map": {
             title: "Escolha o assunto por onde quer começar.",
@@ -235,6 +247,10 @@
             }
 
             if (step === "highlight-preview") {
+                return this.goTo("mode-select");
+            }
+
+            if (step === "pdf-workbench") {
                 return this.goTo("mode-select");
             }
 

@@ -66,6 +66,22 @@ O script verifica:
 - Supabase
 - senha da retaguarda
 
+## Owner premium
+
+Para liberar premium automatico para o dono/admin em qualquer navegador, use uma destas envs:
+
+- `ROTANOTA_OWNER_EMAILS=email1@dominio.com,email2@dominio.com`
+- `ROTANOTA_OWNER_USER_IDS=google:123,google:456`
+
+Quando a conta logada bater com uma dessas listas, o backend responde premium por override de owner, sem depender de pagamento no navegador atual.
+
+Observacoes:
+
+- isso libera o premium por conta, nao por navegador
+- a Biblioteca premium agora sincroniza por conta quando houver login e schema aplicado no Supabase
+- o navegador ainda mantem um cache local para continuar funcionando mesmo sem sync
+- a biblioteca ainda nao tem pastas de organizacao
+
 ## Banco
 
 Aplicar o schema:

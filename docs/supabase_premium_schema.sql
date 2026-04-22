@@ -81,6 +81,28 @@ create index if not exists rotanota_user_customer_links_user_idx
 create index if not exists rotanota_user_customer_links_customer_idx
   on public.rotanota_user_customer_links (customer_id);
 
+create table if not exists public.premium_study_library_items (
+  user_id text not null references public.rotanota_user_accounts (user_id) on delete cascade,
+  library_item_id text not null,
+  title text not null default '',
+  material_name text not null default '',
+  exam_date text not null default '',
+  exam_date_label text not null default '',
+  target_score numeric(6,2) not null default 7,
+  study_hours integer not null default 1,
+  study_minutes integer not null default 0,
+  step text not null default 'entry',
+  saved_at timestamptz not null default now(),
+  pdf_available boolean not null default false,
+  snapshot jsonb not null default '{}'::jsonb,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now(),
+  primary key (user_id, library_item_id)
+);
+
+create index if not exists premium_study_library_items_user_saved_idx
+  on public.premium_study_library_items (user_id, saved_at desc);
+
 create or replace function public.set_updated_at()
 returns trigger
 language plpgsql
@@ -117,6 +139,13 @@ drop trigger if exists rotanota_user_customer_links_updated_at
 
 create trigger rotanota_user_customer_links_updated_at
 before update on public.rotanota_user_customer_links
+for each row execute function public.set_updated_at();
+
+drop trigger if exists premium_study_library_items_updated_at
+  on public.premium_study_library_items;
+
+create trigger premium_study_library_items_updated_at
+before update on public.premium_study_library_items
 for each row execute function public.set_updated_at();
 
 create table if not exists public.premium_study_growth_events (
@@ -258,6 +287,55 @@ create table if not exists public.premium_study_promotion_actions (
   payload jsonb not null default '{}'::jsonb,
   created_at timestamptz not null default now()
 );
+
+insert into storage.buckets (id, name, public)
+values ('premium-pdf-assets', 'premium-pdf-assets', false)
+on conflict (id) do nothing;
+
+create table if not exists public.premium_pdf_assets (
+  asset_id text primary key,
+  asset_hash text not null default '',
+  user_id text not null,
+  customer_id text not null default '',
+  file_name text not null default 'material.pdf',
+  mime_type text not null default 'application/pdf',
+  byte_size bigint not null default 0,
+  page_count integer not null default 0,
+  storage_bucket text not null default 'premium-pdf-assets',
+  storage_path text not null,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
+create index if not exists premium_pdf_assets_user_idx
+  on public.premium_pdf_assets (user_id, created_at desc);
+
+create index if not exists premium_pdf_assets_customer_idx
+  on public.premium_pdf_assets (customer_id, created_at desc);
+
+drop trigger if exists premium_pdf_assets_updated_at
+  on public.premium_pdf_assets;
+
+create trigger premium_pdf_assets_updated_at
+before update on public.premium_pdf_assets
+for each row execute function public.set_updated_at();
+
+create table if not exists public.premium_pdf_annotations (
+  asset_id text primary key references public.premium_pdf_assets (asset_id) on delete cascade,
+  annotation_version integer not null default 1,
+  viewer_state jsonb not null default '{}'::jsonb,
+  ai_highlights jsonb not null default '[]'::jsonb,
+  manual_annotation_entries jsonb not null default '[]'::jsonb,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
+drop trigger if exists premium_pdf_annotations_updated_at
+  on public.premium_pdf_annotations;
+
+create trigger premium_pdf_annotations_updated_at
+before update on public.premium_pdf_annotations
+for each row execute function public.set_updated_at();
 
 create index if not exists premium_study_promotion_actions_campaign_idx
   on public.premium_study_promotion_actions (campaign_id, created_at desc);

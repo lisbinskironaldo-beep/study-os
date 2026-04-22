@@ -2345,6 +2345,39 @@
         };
     }
 
+    function createPdfWorkbenchState(input = {}) {
+        return {
+            currentPage: Number(input.currentPage || 1),
+            totalPages: Number(input.totalPages || 0),
+            zoomValue: String(input.zoomValue || "page-width"),
+            sidebarOpen: Boolean(input.sidebarOpen),
+            editorMode: String(input.editorMode || "none"),
+            searchQuery: String(input.searchQuery || ""),
+            selectedAiHighlightId: String(input.selectedAiHighlightId || ""),
+            fullScreen: Boolean(input.fullScreen),
+            lastSyncedAt: String(input.lastSyncedAt || "")
+        };
+    }
+
+    function normalizeAiHighlight(item, index = 0) {
+        if (!item || typeof item !== "object") {
+            return null;
+        }
+
+        return {
+            id: String(item.id || `ai-highlight-${index + 1}`),
+            source: item.source === "user" ? "user" : "ai",
+            pageHint: Number(item.pageHint || 0) || 0,
+            quote: String(item.quote || ""),
+            anchor: String(item.anchor || ""),
+            contextLabel: String(item.contextLabel || ""),
+            reason: String(item.reason || ""),
+            importance: String(item.importance || "high"),
+            colorKey: String(item.colorKey || item.suggestedColor || "gold"),
+            dismissed: Boolean(item.dismissed)
+        };
+    }
+
     function createState() {
         const today = new Date();
         const blocks = buildRichBlocks("");
@@ -2378,6 +2411,17 @@
             materialPageCount: null,
             materialExtractedText: "",
             materialExtractionStatus: "pending",
+            pdfAssetId: "",
+            pdfAssetHash: "",
+            pdfSource: "",
+            pdfSyncStatus: "",
+            pdfSyncError: "",
+            pdfWorkbenchState: createPdfWorkbenchState(),
+            pdfWorkbenchText: "",
+            pdfWorkbenchOriginalText: "",
+            pdfWorkbenchHtml: "",
+            pdfWorkbenchOriginalHtml: "",
+            aiHighlights: [],
             examDate: "",
             calendarMonth: today.getMonth(),
             calendarYear: today.getFullYear(),
@@ -2500,6 +2544,17 @@
                 materialPageCount: pageCount,
                 materialExtractedText: "",
                 materialExtractionStatus: "pending",
+                pdfAssetId: fileLike.pdfAssetId || fileLike.assetId || "",
+                pdfAssetHash: fileLike.pdfAssetHash || fileLike.assetHash || fileLike.materialHash || "",
+                pdfSource: fileLike.pdfSource || "local",
+                pdfSyncStatus: fileLike.pdfSyncStatus || "",
+                pdfSyncError: "",
+                pdfWorkbenchState: createPdfWorkbenchState(),
+                pdfWorkbenchText: "",
+                pdfWorkbenchOriginalText: "",
+                pdfWorkbenchHtml: "",
+                pdfWorkbenchOriginalHtml: "",
+                aiHighlights: [],
                 studyTitle,
                 blocks,
                 sessions: buildSessions(blocks),
@@ -2510,6 +2565,128 @@
                 levelExam: createLevelExamState(),
                 sessionNote: null,
                 progressLabel: "Material recebido. Agora vamos ajustar tudo ao seu prazo e a sua meta."
+            };
+
+            return this.state;
+        },
+
+        setPdfAsset(payload = {}) {
+            this.state = {
+                ...this.state,
+                pdfAssetId: payload.pdfAssetId || this.state.pdfAssetId,
+                pdfAssetHash: payload.pdfAssetHash || this.state.pdfAssetHash,
+                pdfSource: payload.pdfSource || this.state.pdfSource,
+                pdfSyncStatus: payload.pdfSyncStatus || this.state.pdfSyncStatus,
+                pdfSyncError: payload.pdfSyncError || ""
+            };
+
+            return this.state;
+        },
+
+        setPdfSyncError(message) {
+            this.state = {
+                ...this.state,
+                pdfSyncError: String(message || ""),
+                pdfSyncStatus: message ? "error" : this.state.pdfSyncStatus
+            };
+
+            return this.state;
+        },
+
+        patchPdfWorkbenchState(patch = {}) {
+            this.state = {
+                ...this.state,
+                pdfWorkbenchState: {
+                    ...this.state.pdfWorkbenchState,
+                    ...createPdfWorkbenchState({
+                        ...this.state.pdfWorkbenchState,
+                        ...patch
+                    })
+                }
+            };
+
+            return this.state;
+        },
+
+        setPdfWorkbenchText(text, options = {}) {
+            const nextText = String(text || "");
+            const nextHtml = String(options.html || "");
+            const preserveOriginal = options.preserveOriginal !== false;
+            const nextOriginal = preserveOriginal && this.state.pdfWorkbenchOriginalText
+                ? this.state.pdfWorkbenchOriginalText
+                : nextText;
+            const nextOriginalHtml = preserveOriginal && this.state.pdfWorkbenchOriginalHtml
+                ? this.state.pdfWorkbenchOriginalHtml
+                : (nextHtml || "");
+
+            this.state = {
+                ...this.state,
+                pdfWorkbenchText: nextText,
+                pdfWorkbenchOriginalText: nextOriginal,
+                pdfWorkbenchHtml: nextHtml,
+                pdfWorkbenchOriginalHtml: nextOriginalHtml
+            };
+
+            return this.state;
+        },
+
+        restorePdfWorkbenchOriginal() {
+            this.state = {
+                ...this.state,
+                pdfWorkbenchText: this.state.pdfWorkbenchOriginalText || this.state.pdfWorkbenchText || "",
+                pdfWorkbenchHtml: this.state.pdfWorkbenchOriginalHtml || this.state.pdfWorkbenchHtml || ""
+            };
+
+            return this.state;
+        },
+
+        setPdfAiHighlights(items = []) {
+            const normalized = Array.isArray(items)
+                ? items.map(normalizeAiHighlight).filter(Boolean)
+                : [];
+            const currentSelectedId = this.state.pdfWorkbenchState.selectedAiHighlightId;
+            const hasCurrentSelection = normalized.some((item) => item.id === currentSelectedId && !item.dismissed);
+
+            this.state = {
+                ...this.state,
+                aiHighlights: normalized,
+                pdfWorkbenchState: {
+                    ...this.state.pdfWorkbenchState,
+                    selectedAiHighlightId: hasCurrentSelection
+                        ? currentSelectedId
+                        : (normalized.find((item) => !item.dismissed) || {}).id || ""
+                }
+            };
+
+            return this.state;
+        },
+
+        updatePdfAiHighlight(highlightId, patch = {}) {
+            if (!highlightId) {
+                return this.state;
+            }
+
+            this.state = {
+                ...this.state,
+                aiHighlights: this.state.aiHighlights.map((item) => item.id === highlightId
+                    ? normalizeAiHighlight({
+                        ...item,
+                        ...patch,
+                        id: item.id
+                    })
+                    : item)
+            };
+
+            return this.state;
+        },
+
+        selectPdfAiHighlight(highlightId) {
+            this.state = {
+                ...this.state,
+                pdfWorkbenchState: {
+                    ...this.state.pdfWorkbenchState,
+                    selectedAiHighlightId: highlightId || ""
+                }
             };
 
             return this.state;
@@ -3659,6 +3836,17 @@
                 materialPageCount: this.state.materialPageCount,
                 materialExtractedText: this.state.materialExtractedText,
                 materialExtractionStatus: this.state.materialExtractionStatus,
+                pdfAssetId: this.state.pdfAssetId,
+                pdfAssetHash: this.state.pdfAssetHash,
+                pdfSource: this.state.pdfSource,
+                pdfSyncStatus: this.state.pdfSyncStatus,
+                pdfSyncError: this.state.pdfSyncError,
+                pdfWorkbenchState: clone(this.state.pdfWorkbenchState),
+                pdfWorkbenchText: this.state.pdfWorkbenchText,
+                pdfWorkbenchOriginalText: this.state.pdfWorkbenchOriginalText,
+                pdfWorkbenchHtml: this.state.pdfWorkbenchHtml,
+                pdfWorkbenchOriginalHtml: this.state.pdfWorkbenchOriginalHtml,
+                aiHighlights: clone(this.state.aiHighlights),
                 examDate: this.state.examDate,
                 targetScore: this.state.targetScore,
                 studyHours: this.state.studyHours,
@@ -3737,6 +3925,19 @@
                 levelExam: createLevelExamState(snapshot.levelExam || {}),
                 materialExtractionStatus: snapshot.materialExtractionStatus || defaults.materialExtractionStatus,
                 materialExtractedText: snapshot.materialExtractedText || "",
+                pdfAssetId: snapshot.pdfAssetId || defaults.pdfAssetId,
+                pdfAssetHash: snapshot.pdfAssetHash || snapshot.materialHash || defaults.pdfAssetHash,
+                pdfSource: snapshot.pdfSource || defaults.pdfSource,
+                pdfSyncStatus: snapshot.pdfSyncStatus || defaults.pdfSyncStatus,
+                pdfSyncError: snapshot.pdfSyncError || defaults.pdfSyncError,
+                pdfWorkbenchState: createPdfWorkbenchState(snapshot.pdfWorkbenchState || {}),
+                pdfWorkbenchText: snapshot.pdfWorkbenchText || defaults.pdfWorkbenchText,
+                pdfWorkbenchOriginalText: snapshot.pdfWorkbenchOriginalText || snapshot.pdfWorkbenchText || defaults.pdfWorkbenchOriginalText,
+                pdfWorkbenchHtml: snapshot.pdfWorkbenchHtml || defaults.pdfWorkbenchHtml,
+                pdfWorkbenchOriginalHtml: snapshot.pdfWorkbenchOriginalHtml || snapshot.pdfWorkbenchHtml || defaults.pdfWorkbenchOriginalHtml,
+                aiHighlights: Array.isArray(snapshot.aiHighlights)
+                    ? snapshot.aiHighlights.map(normalizeAiHighlight).filter(Boolean)
+                    : defaults.aiHighlights,
                 highlightedDocument: snapshot.highlightedDocument
                     ? refreshHighlightedDocumentState(
                         clone(snapshot.highlightedDocument),

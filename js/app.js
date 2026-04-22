@@ -1295,6 +1295,29 @@ return
         const pendingIntent =
             this.pendingGoogleGateIntent ||
             this.getGoogleGateIntent(source);
+        const googleUnavailable =
+            window.RotaNotaAuth &&
+            typeof window.RotaNotaAuth
+                .isGoogleLoginAvailable ===
+                "function"
+                ? !window.RotaNotaAuth.isGoogleLoginAvailable()
+                : false;
+
+        if (
+            pendingIntent &&
+            pendingIntent.kind ===
+                "premium_checkout" &&
+            googleUnavailable
+        ) {
+            this.setGoogleGateStatus(
+                "Google indisponivel neste ambiente. Seguindo direto para o checkout.",
+                { level: "soft" }
+            );
+            this.handleGoogleLoginSuccess(
+                { intent: pendingIntent }
+            );
+            return;
+        }
 
         if (
             window.RotaNotaAuth &&

@@ -56,8 +56,62 @@ async function supabaseRequest(path, options = {}) {
     };
 }
 
+async function supabaseStorageRequest(path, options = {}) {
+    const config = getSupabaseConfig();
+
+    if (!config.configured) {
+        return {
+            ok: false,
+            status: 503,
+            data: null,
+            error: "supabase_not_configured"
+        };
+    }
+
+    const response = await fetch(`${config.url}/storage/v1/${path.replace(/^\/+/, "")}`, {
+        method: options.method || "GET",
+        headers: {
+            apikey: config.serviceRoleKey,
+            Authorization: `Bearer ${config.serviceRoleKey}`,
+            ...(options.contentType ? { "Content-Type": options.contentType } : {}),
+            ...(options.headers || {})
+        },
+        body: options.body
+    });
+
+    if (options.responseType === "arrayBuffer") {
+        return {
+            ok: response.ok,
+            status: response.status,
+            data: await response.arrayBuffer().catch(() => null),
+            headers: response.headers,
+            error: response.ok ? null : "storage_request_failed"
+        };
+    }
+
+    let data = null;
+    const text = await response.text();
+
+    if (text) {
+        try {
+            data = JSON.parse(text);
+        } catch (_error) {
+            data = text;
+        }
+    }
+
+    return {
+        ok: response.ok,
+        status: response.status,
+        data,
+        headers: response.headers,
+        error: response.ok ? null : data
+    };
+}
+
 module.exports = {
     getSupabaseConfig,
     isSupabaseConfigured,
-    supabaseRequest
+    supabaseRequest,
+    supabaseStorageRequest
 };

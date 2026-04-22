@@ -53,6 +53,13 @@
         );
     }
 
+    function isGoogleLoginAvailable() {
+        return Boolean(
+            state.googleConfigured &&
+            state.googleClientId
+        );
+    }
+
     function getDisplayName() {
         if (!state.session) {
             return "Conta";
@@ -649,6 +656,7 @@
         refreshSession,
         getSession,
         isAuthenticated,
+        isGoogleLoginAvailable,
         prepareGoogleGateButton,
         requestGoogleLogin,
         logout
