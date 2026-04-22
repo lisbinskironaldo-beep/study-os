@@ -256,6 +256,9 @@ export function createQuestionsLegacySessionFallback(
                 );
 
             QuestionsStore.registerSession({
+                sourceMode:
+                    QuestionsState.getMeta()
+                        .sourceMode || "",
                 baseKey:
                     QuestionsContext.get()
                         .base,
@@ -287,6 +290,8 @@ export function createQuestionsLegacySessionFallback(
                 errors: summary.errors,
                 avgTimeMs:
                     summary.avgTimeMs,
+                elapsedAnsweredMs:
+                    summary.elapsedAnsweredMs,
                 topicCount:
                     summary.topicCount,
                 topicKeys: [
@@ -312,7 +317,22 @@ export function createQuestionsLegacySessionFallback(
                         ?.topicLabel || "",
                 strongTopicLabel:
                     summary.strongTopic
-                        ?.topicLabel || ""
+                        ?.topicLabel || "",
+                directSearchTerms: Array.isArray(
+                    QuestionsState.getMeta()
+                        .directSearchTerms
+                )
+                    ? [
+                        ...QuestionsState.getMeta()
+                            .directSearchTerms
+                    ]
+                    : [],
+                directSearchStrategy:
+                    String(
+                        QuestionsState.getMeta()
+                            .directSearchStrategy ||
+                            ""
+                    ).trim()
             });
             QuestionsStore.flushProfileState(
                 true

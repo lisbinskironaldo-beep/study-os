@@ -22,6 +22,7 @@
     }
 
     function entry(state) {
+        const access = Access();
         const resume = state.latestLocalStudy;
         const studyLibrary = Array.isArray(state.studyLibrary)
             ? state.studyLibrary
@@ -31,37 +32,84 @@
             ? Access().FEATURES.PREMIUM_LIBRARY
             : "premium_library";
         const premiumLibraryEnabled = canAccess(premiumLibraryFeature, state);
+        const premiumActive = access && typeof access.isPremiumLike === "function"
+            ? access.isPremiumLike(state)
+            : state.accessTier === "premium";
 
-        return `
+        if (premiumActive) {
+            return `
 <section class="premium-entry-stage">
     <div class="premium-entry-hero">
         <button type="button" class="premium-entry-card premium-entry-card-primary premium-entry-card-featured" data-premium-action="open-file-picker">
-            <span class="premium-entry-kicker">Novo estudo <span class="premium-entry-inline-badge premium-entry-inline-badge-free">Até 12 páginas grátis</span></span>
-            <strong>Carregar PDF</strong>
-            <p>Envie seu material e receba um caminho focado na sua necessidade.</p>
+            <div class="premium-entry-topline">
+                <span class="premium-entry-kicker">Workspace premium</span>
+                <span class="premium-entry-inline-badge premium-entry-inline-badge-active">PDFs ilimitados</span>
+            </div>
+            <strong>Carregar novo PDF</strong>
+            <p>Adicionar outro material e manter tudo organizado na sua biblioteca premium.</p>
         </button>
     </div>
     <div class="premium-entry-grid premium-entry-grid-secondary ${resume ? "" : "is-single"}">
         ${resume ? `
         <button type="button" class="premium-entry-card premium-entry-card-secondary premium-entry-card-support premium-entry-card-resume" data-premium-action="resume-latest-study">
-            <span class="premium-entry-kicker">Último estudo salvo <span class="premium-entry-inline-badge premium-entry-inline-badge-free">Grátis</span></span>
+            <div class="premium-entry-topline">
+                <span class="premium-entry-kicker">Continuidade</span>
+                <span class="premium-entry-inline-badge premium-entry-inline-badge-active">Continuidade completa</span>
+            </div>
+            <strong>Retomar ultimo estudo</strong>
+            <p>${UI().escapeHtml(resume.title)}</p>
+            <small>Prova em ${UI().escapeHtml(resume.examDateLabel)}</small>
+        </button>` : ""}
+        <button type="button" class="premium-entry-card premium-entry-card-secondary premium-entry-card-support premium-entry-card-premium" data-premium-action="open-premium-library">
+            <div class="premium-entry-topline">
+                <span class="premium-entry-kicker">Biblioteca ativa</span>
+                <span class="premium-entry-inline-badge premium-entry-inline-badge-active">Tudo liberado</span>
+            </div>
+            <strong>Abrir biblioteca</strong>
+            <p>${additionalStudiesCount > 0 ? `${additionalStudiesCount} estudo(s) extra(s) ja estao guardados para retomada imediata.` : "Seu historico completo fica pronto para receber novos materiais e retomadas."}</p>
+            <small>Entrar no acervo completo</small>
+        </button>
+    </div>
+    <input id="premiumStudyFileInput" class="premium-hidden-input" type="file" accept=".pdf,application/pdf" />
+</section>
+${renderSessionNote(state, "entry")}`;
+        }
+
+        return `
+<section class="premium-entry-stage">
+    <div class="premium-entry-hero">
+        <button type="button" class="premium-entry-card premium-entry-card-primary premium-entry-card-featured" data-premium-action="open-file-picker">
+            <div class="premium-entry-topline">
+                <span class="premium-entry-kicker">Novo estudo</span>
+                <span class="premium-entry-inline-badge premium-entry-inline-badge-free">Grátis até 12 páginas</span>
+            </div>
+            <strong>Carregar PDF</strong>
+            <p>Enviar material para montar a trilha.</p>
+        </button>
+    </div>
+    <div class="premium-entry-grid premium-entry-grid-secondary ${resume ? "" : "is-single"}">
+        ${resume ? `
+        <button type="button" class="premium-entry-card premium-entry-card-secondary premium-entry-card-support premium-entry-card-resume" data-premium-action="resume-latest-study">
+            <div class="premium-entry-topline">
+                <span class="premium-entry-kicker">Continuidade</span>
+                <span class="premium-entry-inline-badge premium-entry-inline-badge-free">Último estudo livre</span>
+            </div>
             <strong>Retomar último estudo</strong>
             <p>${UI().escapeHtml(resume.title)}</p>
             <small>Prova em ${UI().escapeHtml(resume.examDateLabel)}</small>
         </button>` : ""}
         <button type="button" class="premium-entry-card premium-entry-card-secondary premium-entry-card-support premium-entry-card-premium ${premiumLibraryEnabled ? "" : "is-locked"}" data-premium-action="open-premium-library" ${premiumLibraryEnabled ? "" : "aria-disabled=\"true\""}>
-            <span class="premium-entry-kicker">Biblioteca premium <span class="premium-entry-inline-badge premium-entry-inline-badge-premium">Premium</span></span>
-            <strong>Biblioteca premium</strong>
-            <p>${additionalStudiesCount > 0 ? `${additionalStudiesCount} estudo(s) extras já esperam por você aqui.` : "Retome outros estudos salvos e mantenha seu histórico organizado."}</p>
-            <small>${premiumLibraryEnabled ? "Abrir histórico premium" : "Estude mais com premium"}</small>
+            <div class="premium-entry-topline">
+                <span class="premium-entry-kicker">Camada premium</span>
+                <span class="premium-entry-inline-badge premium-entry-inline-badge-premium">Biblioteca completa</span>
+            </div>
+            <strong>${premiumLibraryEnabled ? "Abrir biblioteca" : "Biblioteca premium"}</strong>
+            <p>${additionalStudiesCount > 0 ? `${additionalStudiesCount} estudo(s) extras já estão prontos para retomada.` : "Guarde outros materiais e mantenha seu histórico completo no mesmo lugar."}</p>
+            <small>${premiumLibraryEnabled ? "Ver histórico premium" : "Expanda seus estudos com premium"}</small>
         </button>
     </div>
     <input id="premiumStudyFileInput" class="premium-hidden-input" type="file" accept=".pdf,application/pdf" />
 </section>
-<div class="premium-entry-note">
-    <span>Grátis para sempre em PDFs de até 12 páginas.</span>
-    <span>Retomar o último estudo continua grátis. Os outros estudos e o histórico completo ficam no premium.</span>
-</div>
 ${renderSessionNote(state, "entry")}`;
     }
 
@@ -221,8 +269,8 @@ ${renderSessionNote(state, "entry")}`;
     </button>
     <button type="button" class="premium-mode-card" data-premium-action="choose-mode-exam">
         <span class="premium-mode-word">Prova</span>
-        <strong>Teste seu nível agora</strong>
-        <p>Mini prova do bloco para medir critério, segurança e prontidão.</p>
+        <strong>Teste seu nivel agora</strong>
+        <p>Prova premium com seletor de quantidade para medir prontidao geral.</p>
     </button>
     <button type="button" class="premium-mode-card premium-mode-card-highlight" data-premium-action="choose-mode-highlight">
         <span class="premium-mode-word">Marcar</span>
@@ -426,10 +474,44 @@ ${renderSessionNote(state, "entry")}`;
 </section>`;
     }
 
-    function renderHighlightParagraph(parts = []) {
-        return `<p class="premium-highlight-paragraph">${parts.map((part) => part.highlight
-            ? `<mark class="premium-highlight-mark">${UI().escapeHtml(part.text)}</mark>`
-            : UI().escapeHtml(part.text)).join("")}</p>`;
+    function getSelectedHighlightPart(documentData) {
+        const selectedPartId = documentData && documentData.selectedPartId
+            ? documentData.selectedPartId
+            : "";
+
+        if (!selectedPartId) {
+            return null;
+        }
+
+        for (const section of documentData.sections || []) {
+            for (const paragraph of section.paragraphs || []) {
+                for (const part of paragraph || []) {
+                    if (part.id === selectedPartId) {
+                        return part;
+                    }
+                }
+            }
+        }
+
+        return null;
+    }
+
+    function renderHighlightParagraph(parts = [], sectionIndex, paragraphIndex, selectedPartId) {
+        return `<p class="premium-highlight-paragraph" data-premium-highlight-paragraph="true" data-section-index="${sectionIndex}" data-paragraph-index="${paragraphIndex}">${parts.map((part, partIndex) => `
+            <span
+                class="premium-highlight-piece${part.highlight ? " is-highlighted" : ""}${selectedPartId === part.id ? " is-selected" : ""}"
+                ${part.highlight ? `style="--premium-highlight-color:${UI().escapeHtml(part.colorKey || "gold")};"` : ""}
+                data-premium-action="select-highlight-part"
+                data-section-index="${sectionIndex}"
+                data-paragraph-index="${paragraphIndex}"
+                data-part-index="${partIndex}"
+                role="button"
+                tabindex="0"
+                aria-pressed="${selectedPartId === part.id ? "true" : "false"}"
+            >${part.highlight
+                ? `<mark class="premium-highlight-mark premium-highlight-mark-${UI().escapeHtml(part.colorKey || "gold")}">${UI().escapeHtml(part.text)}</mark>`
+                : UI().escapeHtml(part.text)}</span>
+        `).join("")}</p>`;
     }
 
     function highlightPreview(state) {
@@ -438,38 +520,102 @@ ${renderSessionNote(state, "entry")}`;
             ? Access().FEATURES.HIGHLIGHT_EXPORT
             : "highlight_export";
         const premiumLibraryEnabled = canAccess(highlightExportFeature, state);
+        const selectedPart = getSelectedHighlightPart(documentData);
+        const colorOptions = Array.isArray(documentData.colorOptions)
+            ? documentData.colorOptions
+            : [];
+        const selectedText = selectedPart ? selectedPart.text : "";
+
+        if (!state.highlightEditorOpen) {
+            return `
+<section class="premium-highlight-shell premium-highlight-shell-preview">
+    <article class="premium-highlight-export premium-highlight-preview-card">
+        <span class="premium-panel-kicker">Texto marcado</span>
+        <strong>${UI().escapeHtml(documentData.title)}</strong>
+        <p>A IA ja deixou o material grifado nos pontos mais importantes. Abra o documento para revisar, ajustar trechos, trocar cores e editar o texto antes de baixar.</p>
+        <div class="premium-highlight-preview-actions">
+            <button type="button" class="premium-action premium-action-primary" data-premium-action="open-highlight-editor">Abrir texto marcado</button>
+            <button type="button" class="premium-action premium-action-secondary" data-premium-action="download-highlight-summary">Baixar PDF so com marcacoes</button>
+            <button type="button" class="premium-action premium-action-secondary" data-premium-action="download-highlighted-full">Baixar PDF completo com as marcacoes</button>
+        </div>
+        <small>${premiumLibraryEnabled ? "Os downloads abrem a versao pronta para salvar em PDF." : "Os downloads continuam liberados no premium."}</small>
+    </article>
+</section>`;
+        }
 
         return `
-<section class="premium-highlight-shell">
-    <article class="premium-highlight-doc">
-        <span class="premium-panel-kicker">Documento com marcador</span>
-        <h2>${UI().escapeHtml(documentData.title)}</h2>
-        <p class="premium-learn-lead">${UI().escapeHtml(documentData.subtitle)}</p>
-        <div class="premium-highlight-note">
-            <strong>Documento integral preservado.</strong>
-            <p>Nada e removido daqui. O sistema so grifa os trechos mais importantes para guiar a leitura e preparar a exportacao em PDF no final.</p>
+<section class="premium-highlight-reader ${state.highlightEditorFullScreen ? "is-fullscreen" : "is-page"}">
+    ${state.highlightEditorFullScreen ? `<div class="premium-highlight-reader-scrim" aria-hidden="true"></div>` : ""}
+    <div class="premium-highlight-focus premium-highlight-reader-panel">
+        <div class="premium-highlight-reader-head">
+            <div class="premium-highlight-reader-copy">
+                <span class="premium-panel-kicker">Texto marcado</span>
+                <h2>${UI().escapeHtml(documentData.title)}</h2>
+                <p class="premium-learn-lead">${UI().escapeHtml(documentData.subtitle)}</p>
+            </div>
+            <div class="premium-inline-actions premium-inline-actions-contextual premium-highlight-reader-toggles">
+                <button type="button" class="premium-tab ${state.highlightEditorFullScreen ? "is-active" : ""}" data-premium-action="${state.highlightEditorFullScreen ? "collapse-highlight-editor" : "expand-highlight-editor"}">
+                    ${state.highlightEditorFullScreen ? "Sair do full screen" : "Abrir em full screen"}
+                </button>
+                <button type="button" class="premium-tab" data-premium-action="close-highlight-editor">Voltar aos downloads</button>
+            </div>
         </div>
-        ${documentData.sections.map((section) => `
-            <section class="premium-highlight-section">
-                <span class="premium-detail-label">${UI().escapeHtml(section.label)}</span>
-                <h3>${UI().escapeHtml(section.title)}</h3>
-                ${section.paragraphs.map((paragraph) => renderHighlightParagraph(paragraph)).join("")}
-            </section>
-        `).join("")}
-    </article>
-    <section class="premium-highlight-export">
-        <span class="premium-panel-kicker">Resumo destacado</span>
-        <strong>Baixe em PDF so os destaques principais ou o documento inteiro com os grifos.</strong>
-        <p>O texto marcado nao fica salvo para consulta dentro do app. Aqui ele so pode ser exportado em PDF.</p>
-        <div class="premium-inline-actions premium-inline-actions-contextual">
-            <button type="button" class="premium-action premium-action-primary" data-premium-action="download-highlight-summary">Baixar PDF so com destaques</button>
-            <button type="button" class="premium-action premium-action-secondary" data-premium-action="download-highlighted-full">Baixar PDF com texto todo destacado</button>
-        </div>
-        <small>${premiumLibraryEnabled ? "O navegador vai abrir a saida em formato de impressao para salvar em PDF." : "Os dois downloads ficam liberados no premium."}</small>
-    </section>
-    ${UI().actionBar([
-        { action: "back-to-mode-select", label: "Voltar para modos", variant: "secondary" }
-    ])}
+        <article class="premium-highlight-document">
+            <div class="premium-highlight-toolbar">
+                <div class="premium-highlight-toolbar-copy">
+                    <span class="premium-detail-label">Editor do documento</span>
+                    <strong>${selectedPart ? "Trecho selecionado pronto para ajuste" : "Selecione um trecho do texto para editar ou marcar"}</strong>
+                    <p>${selectedPart
+            ? "Voce pode reescrever o trecho, trocar a cor, remover a marcacao ou apagar so esta parte."
+            : "Selecione um trecho no proprio documento para marcar, desmarcar, copiar, apagar ou reescrever sem mexer no restante."}</p>
+                </div>
+                <div class="premium-highlight-swatch-row">
+                    ${colorOptions.map((option) => `
+                        <button
+                            type="button"
+                            class="premium-highlight-swatch${documentData.activeColorKey === option.key ? " is-active" : ""}"
+                            data-premium-action="set-highlight-color"
+                            data-item-value="${UI().escapeHtml(option.key)}"
+                            aria-label="${UI().escapeHtml(option.label)}"
+                            title="${UI().escapeHtml(option.label)}"
+                        >
+                            <span class="premium-highlight-swatch-fill premium-highlight-swatch-fill-${UI().escapeHtml(option.key)}"></span>
+                        </button>
+                    `).join("")}
+                </div>
+                <label class="premium-highlight-editor-label" for="premiumHighlightEditor">Texto do trecho</label>
+                <textarea id="premiumHighlightEditor" class="premium-highlight-editor-field" rows="4" placeholder="Selecione um trecho do documento para editar aqui.">${UI().escapeHtml(selectedText)}</textarea>
+                <div class="premium-inline-actions premium-inline-actions-contextual">
+                    <button type="button" class="premium-action premium-action-primary" data-premium-action="save-highlight-text" ${selectedPart ? "" : "disabled"}>Salvar texto</button>
+                    <button type="button" class="premium-action premium-action-secondary" data-premium-action="copy-highlight-text" ${selectedPart ? "" : "disabled"}>Copiar trecho</button>
+                    <button type="button" class="premium-action premium-action-secondary" data-premium-action="toggle-highlight-selection" ${selectedPart ? "" : "disabled"}>${selectedPart && selectedPart.highlight ? "Desmarcar trecho" : "Marcar trecho"}</button>
+                    <button type="button" class="premium-action premium-action-secondary" data-premium-action="delete-highlight-text" ${selectedPart ? "" : "disabled"}>Apagar trecho</button>
+                    <button type="button" class="premium-action premium-action-ghost" data-premium-action="restore-highlight-document">Voltar ao original da IA</button>
+                    <button type="button" class="premium-action premium-action-ghost" data-premium-action="clear-all-highlights">Limpar marcacoes</button>
+                </div>
+            </div>
+            <div class="premium-highlight-note">
+                <strong>Documento integral preservado.</strong>
+                <p>O texto ja entra marcado pela IA e voce ajusta tudo aqui dentro: remove trechos, acrescenta marcacoes, apaga palavras, reescreve e prepara a versao final antes de baixar.</p>
+            </div>
+            <div class="premium-highlight-doc">
+                ${documentData.sections.map((section, sectionIndex) => `
+                    <section class="premium-highlight-section">
+                        <span class="premium-detail-label">${UI().escapeHtml(section.label)}</span>
+                        <h3>${UI().escapeHtml(section.title)}</h3>
+                        ${section.paragraphs.map((paragraph, paragraphIndex) =>
+            renderHighlightParagraph(
+                paragraph,
+                sectionIndex,
+                paragraphIndex,
+                documentData.selectedPartId
+            )
+        ).join("")}
+                    </section>
+                `).join("")}
+            </div>
+        </article>
+    </div>
 </section>`;
     }
 
@@ -539,6 +685,9 @@ ${renderSessionNote(state, "entry")}`;
     function premiumCheckout(state) {
         const access = Access();
         const billing = window.PremiumStudyBilling;
+        const premiumActive = access && typeof access.isPremiumLike === "function"
+            ? access.isPremiumLike(state)
+            : state.accessTier === "premium";
         const feature = state.premiumOffer && state.premiumOffer.feature
             ? state.premiumOffer.feature
             : premiumLibraryFeatureFallback();
@@ -554,33 +703,145 @@ ${renderSessionNote(state, "entry")}`;
         const plans = billing && typeof billing.getPlans === "function"
             ? billing.getPlans()
             : [];
+        const recommendedPlanId = offer.recommendedPlanId
+            || (plans.find((plan) => plan.recommended) || {}).id
+            || "";
+        const orderedPlans = [...plans].sort((left, right) => {
+            const leftScore = left.id === recommendedPlanId ? 2 : (left.recommended ? 1 : 0);
+            const rightScore = right.id === recommendedPlanId ? 2 : (right.recommended ? 1 : 0);
+            return rightScore - leftScore;
+        });
         const providerStatus = billing && typeof billing.getProviderStatus === "function"
             ? billing.getProviderStatus()
             : { checkoutReady: false, message: "Checkout real ainda nao foi conectado." };
+        const primaryBenefits = Array.isArray(offer.benefits)
+            ? offer.benefits.slice(0, 3)
+            : [];
+        const benefitGroups = [
+            {
+                tone: "continuity",
+                title: "Continuidade",
+                items: [
+                    "Retome qualquer PDF salvo",
+                    "Biblioteca completa por objetivo",
+                    "PDFs longos com divisao inteligente"
+                ]
+            },
+            {
+                tone: "depth",
+                title: "Mais profundidade",
+                items: [
+                    "Questionarios extras por assunto",
+                    "V/F extras para pegar pegadinhas",
+                    "Flashcards extras com mnemônicos"
+                ]
+            },
+            {
+                tone: "performance",
+                title: "Mais desempenho",
+                items: [
+                    "Mini provas extras por assunto",
+                    "Estatisticas de evolucao e pontos fracos",
+                    "Exportacao dos marcadores em PDF"
+                ]
+            }
+        ];
+        const comparisonRows = [
+            { label: "Ultimo estudo salvo", free: "Sim", premium: "Sim" },
+            { label: "Outros estudos guardados", free: "Nao", premium: "Sim" },
+            { label: "PDFs longos", free: "Ate 12 paginas", premium: "Ilimitado" },
+            { label: "Questionarios, V/F e flashcards", free: "3 rodadas", premium: "Novas rodadas" },
+            { label: "Mini prova do assunto", free: "Base", premium: "Extras" },
+            { label: "Estatisticas e pontos fracos", free: "Nao", premium: "Sim" }
+        ];
+
+        if (premiumActive) {
+            return `
+<section class="premium-paywall-shell">
+    <article class="premium-paywall-hero premium-paywall-hero-active">
+        <span class="premium-panel-kicker">Premium ativo</span>
+        <h2>Seu workspace completo ja esta liberado.</h2>
+        <p>Agora a experiencia precisa servir o estudo, nao vender acesso. Use a biblioteca, envie materiais longos e retome sua trilha com tudo disponivel.</p>
+        <div class="premium-paywall-benefit-groups" aria-label="Recursos premium ativos">
+            ${benefitGroups.map((group) => `
+            <article class="premium-paywall-benefit-card premium-paywall-benefit-card-${group.tone}">
+                <span class="premium-paywall-benefit-label">${group.title}</span>
+                <ul>
+                    ${group.items.map((item) => `<li>${item}</li>`).join("")}
+                </ul>
+            </article>`).join("")}
+        </div>
+    </article>
+    <article class="premium-paywall-status premium-paywall-status-active">
+        <strong>Premium confirmado neste workspace</strong>
+        <p>Biblioteca, PDFs extensos, extras de pratica e recursos avancados ja fazem parte da sua rotina daqui para frente.</p>
+    </article>
+    ${renderSessionNote(state, "premium-checkout")}
+    ${UI().actionBar([
+        { action: "open-premium-library", label: "Abrir biblioteca", variant: "primary" },
+        { action: "back", label: "Voltar ao estudo", variant: "secondary" }
+    ])}
+</section>`;
+        }
 
         return `
 <section class="premium-paywall-shell">
     <article class="premium-paywall-hero">
         <span class="premium-panel-kicker">${UI().escapeHtml(offer.eyebrow || "Premium")}</span>
-        <h2>${UI().escapeHtml(offer.title || "Libere o premium.")}</h2>
-        <p>${UI().escapeHtml(offer.lead || "Recursos avancados ficam no plano premium.")}</p>
-        <ul class="premium-paywall-benefits" aria-label="Beneficios do premium">
-            ${(offer.benefits || []).map((benefit) => `
-            <li>
-                <span aria-hidden="true"></span>
-                <strong>${UI().escapeHtml(benefit)}</strong>
-            </li>`).join("")}
-        </ul>
+        <h2>${UI().escapeHtml(offer.title || "Seu historico, seus materiais e seus treinos em um so lugar.")}</h2>
+        <p>${UI().escapeHtml(offer.lead || "Continue qualquer estudo, libere extras por assunto e acompanhe sua evolucao sem perder o fio da trilha.")}</p>
+        ${primaryBenefits.length ? `
+        <article class="premium-paywall-benefit-card premium-paywall-benefit-card-continuity">
+            <span class="premium-paywall-benefit-label">Foco desta oferta</span>
+            <ul>
+                ${primaryBenefits.map((item) => `<li>${UI().escapeHtml(item)}</li>`).join("")}
+            </ul>
+        </article>` : ""}
+        <div class="premium-paywall-benefit-groups" aria-label="Beneficios do premium">
+            ${benefitGroups.map((group) => `
+            <article class="premium-paywall-benefit-card premium-paywall-benefit-card-${group.tone}">
+                <span class="premium-paywall-benefit-label">${group.title}</span>
+                <ul>
+                    ${group.items.map((item) => `<li>${item}</li>`).join("")}
+                </ul>
+            </article>`).join("")}
+        </div>
     </article>
     <div class="premium-plan-grid">
-        ${plans.map((plan) => `
-        <button type="button" class="premium-plan-card ${plan.recommended ? "is-recommended" : ""}" data-premium-action="start-premium-checkout" data-item-value="${UI().escapeHtml(plan.id)}">
-            <span>${plan.recommended ? "Recomendado" : "Opcional"}</span>
+        ${orderedPlans.map((plan) => {
+            const isRecommended = plan.id === recommendedPlanId || (!recommendedPlanId && plan.recommended);
+
+            return `
+        <button type="button" class="premium-plan-card ${isRecommended ? "is-recommended" : ""}" data-premium-action="start-premium-checkout" data-item-value="${UI().escapeHtml(plan.id)}">
+            <span>${isRecommended ? "Mais indicado agora" : "Flexivel"}</span>
             <strong>${UI().escapeHtml(plan.label)}</strong>
             <em>${UI().escapeHtml(plan.priceLabel)}</em>
-            <small>${UI().escapeHtml(plan.description)}</small>
-        </button>`).join("")}
+            <p>${UI().escapeHtml(plan.description || "")}</p>
+            <small>${UI().escapeHtml(isRecommended
+                ? (offer.cta || "Oferta destacada agora.")
+                : (plan.interval === "year" ? "Cobranca anual." : "Cobranca mensal."))}</small>
+        </button>`;
+        }).join("")}
     </div>
+    <article class="premium-comparison-card">
+        <div class="premium-comparison-head">
+            <span class="premium-panel-kicker">Comparativo rapido</span>
+            <strong>O que muda do gratis para o premium</strong>
+        </div>
+        <div class="premium-comparison-table" role="table" aria-label="Comparativo gratis e premium">
+            <div class="premium-comparison-row premium-comparison-row-head" role="row">
+                <span role="columnheader">Recurso</span>
+                <span role="columnheader">Gratis</span>
+                <span role="columnheader">Premium</span>
+            </div>
+            ${comparisonRows.map((row) => `
+            <div class="premium-comparison-row" role="row">
+                <strong role="cell">${row.label}</strong>
+                <span role="cell" class="is-free">${row.free}</span>
+                <span role="cell" class="is-premium">${row.premium}</span>
+            </div>`).join("")}
+        </div>
+    </article>
     <article class="premium-paywall-status">
         <strong>${providerStatus.checkoutReady ? "Checkout pronto" : "Checkout em preparacao"}</strong>
         <p>${UI().escapeHtml(providerStatus.message || "O provedor real sera conectado na proxima etapa.")}</p>
@@ -825,12 +1086,12 @@ ${renderSessionNote(state, "entry")}`;
 <section class="premium-result-shell">
     <article class="premium-result-hero premium-result-hero-compact">
         <span class="premium-detail-label">Mini prova do assunto</span>
-        <strong>${block.exam.baseCount || block.exam.questions.length} questões</strong>
+        <strong>${block.exam.questions.length || block.exam.baseCount || 5} questões</strong>
         <p>${hasHistory ? "Refaça a mesma mini prova deste assunto. Para novas questões e variações, o premium libera extras." : "Gere o pacote base deste assunto agora. Para um volume maior, o premium libera extras."}</p>
     </article>
     ${UI().actionBar([
-        { action: hasHistory ? "retry-mini-exam" : "generate-mini-exam", label: hasHistory ? "Refazer mini prova" : `Gerar ${block.exam.baseCount || block.exam.questions.length} questões`, variant: "primary" },
-        { action: "request-extra-mini-exam", label: "Gerar mais no premium", variant: "ghost" }
+        { action: hasHistory ? "retry-mini-exam" : "generate-mini-exam", label: hasHistory ? "Refazer mini prova" : `Gerar ${block.exam.questions.length || block.exam.baseCount || 5} questoes`, variant: "primary" },
+        { action: "request-extra-mini-exam", label: "Gerar mais 5 no premium", variant: "ghost" }
     ])}
     ${renderSessionNote(state, "mini-exam")}
 </section>`;
@@ -904,8 +1165,95 @@ ${renderSessionNote(state, "entry")}`;
     ${UI().actionBar([
         { action: "retry-mini-exam", label: "Refazer mini prova", variant: "secondary" },
         { action: "open-practice", label: "Ir para o modo prática", variant: "secondary" },
-        { action: "request-extra-mini-exam", label: "Gerar mais no premium", variant: "ghost" }
+        { action: "request-extra-mini-exam", label: "Gerar mais 5 no premium", variant: "ghost" }
     ])}
+</section>`;
+    }
+
+    function levelExam(state) {
+        const exam = state.levelExam || {};
+        const questions = Array.isArray(exam.questions) ? exam.questions : [];
+        const result = exam.result || { correct: 0, total: 0, ratio: 0 };
+        const counts = [10, 20, 30];
+
+        if (exam.isComplete) {
+            return `
+<section class="premium-result-shell">
+    <article class="premium-result-hero">
+        <span class="premium-detail-label">Prova de nivel premium</span>
+        <strong>${result.ratio}%</strong>
+        <p>${result.correct} de ${result.total} questoes corretas no teste geral.</p>
+        <div class="premium-result-badge">${result.ratio >= 75 ? "Pronto para acelerar" : result.ratio >= 50 ? "Base em construcao" : "Volte aos blocos principais"}</div>
+    </article>
+    ${UI().actionBar([
+        { action: "generate-level-exam", label: "Gerar nova prova", variant: "primary" },
+        { action: "back-to-mode-select", label: "Voltar para modos", variant: "secondary" }
+    ])}
+    ${renderSessionNote(state, "level-exam")}
+</section>`;
+        }
+
+        if (exam.started && questions.length) {
+            const question = questions[exam.index] || questions[0];
+            const hasAnswer = typeof exam.answers[exam.index] === "number";
+            const answer = exam.answers[exam.index];
+            const isCorrectAnswer = hasAnswer && answer === question.correctIndex;
+
+            return `
+<section class="premium-quiz-shell">
+    <div class="premium-question-meta">
+        <span>Prova ${exam.index + 1} de ${questions.length}</span>
+        <strong>${UI().escapeHtml(exam.title || "Prova de nivel")}</strong>
+    </div>
+    <article class="premium-question-card">
+        <h2>${UI().escapeHtml(question.prompt)}</h2>
+        <div class="premium-option-grid">
+            ${question.options.map((option, index) => `
+            <button
+                type="button"
+                class="premium-option-card
+                    ${hasAnswer && answer === index ? "is-selected" : ""}
+                    ${hasAnswer && index === question.correctIndex ? "is-correct" : ""}
+                    ${hasAnswer && answer === index && answer !== question.correctIndex ? "is-incorrect" : ""}"
+                data-premium-action="answer-level-exam"
+                data-answer-index="${index}"
+                ${hasAnswer ? "disabled" : ""}
+            >
+                <span>${String.fromCharCode(65 + index)}</span>
+                <strong>${UI().escapeHtml(option)}</strong>
+            </button>`).join("")}
+        </div>
+        ${hasAnswer ? `
+        <div class="premium-feedback-card ${isCorrectAnswer ? "is-positive" : "is-warning"}">
+            <strong>${isCorrectAnswer ? "Resposta correta." : "Resposta incorreta."}</strong>
+            <p>${UI().escapeHtml(question.rationale)}</p>
+        </div>
+        ${UI().actionBar([
+            { action: exam.index >= questions.length - 1 ? "finish-level-exam" : "continue-level-exam", label: exam.index >= questions.length - 1 ? "Ver resultado" : "Proxima", variant: "primary" }
+        ])}` : ""}
+        ${renderSessionNote(state, "level-exam")}
+    </article>
+</section>`;
+        }
+
+        return `
+<section class="premium-result-shell">
+    <article class="premium-result-hero premium-result-hero-compact">
+        <span class="premium-detail-label">Prova de nivel premium</span>
+        <strong>${exam.questionCount || 10} questoes</strong>
+        <p>Escolha o tamanho da prova para medir sua prontidao geral no PDF.</p>
+    </article>
+    <div class="premium-inline-actions premium-inline-actions-contextual">
+        ${counts.map((count) => `
+        <button type="button" class="premium-action ${Number(exam.questionCount || 10) === count ? "premium-action-primary" : "premium-action-secondary"}" data-premium-action="select-level-exam-count" data-item-value="${count}">
+            ${count} questoes
+        </button>`).join("")}
+    </div>
+    ${UI().actionBar([
+        { action: questions.length ? "start-level-exam" : "generate-level-exam", label: questions.length ? "Comecar prova" : "Gerar prova premium", variant: "primary" },
+        { action: "back-to-mode-select", label: "Voltar para modos", variant: "secondary" }
+    ])}
+    ${renderSessionNote(state, "level-exam")}
 </section>`;
     }
 
@@ -969,6 +1317,8 @@ ${renderSessionNote(state, "entry")}`;
                 return miniExam(state);
             case "exam-result":
                 return examResult(state);
+            case "level-exam":
+                return levelExam(state);
             case "premium-library":
                 return premiumLibrary(state);
             case "premium-checkout":

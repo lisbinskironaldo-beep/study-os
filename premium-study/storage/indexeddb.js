@@ -99,8 +99,11 @@
             studyTitle: snapshot.studyTitle || "",
             studyLibraryId: snapshot.studyLibraryId || "",
             materialName: snapshot.materialName || "",
+            materialHash: snapshot.materialHash || "",
             materialSizeLabel: snapshot.materialSizeLabel || "",
             materialPageCount: snapshot.materialPageCount || 0,
+            materialExtractedText: snapshot.materialExtractedText || "",
+            materialExtractionStatus: snapshot.materialExtractionStatus || "pending",
             examDate: snapshot.examDate || "",
             targetScore: snapshot.targetScore || 7,
             studyHours: snapshot.studyHours || 1,
@@ -112,10 +115,28 @@
             activeBlockId: snapshot.activeBlockId || "",
             blockTab: snapshot.blockTab || "aprender",
             blockFullScreen: Boolean(snapshot.blockFullScreen),
+            highlightEditorOpen: Boolean(snapshot.highlightEditorOpen),
+            highlightEditorFullScreen: Boolean(snapshot.highlightEditorFullScreen),
             blockAssistMode: snapshot.blockAssistMode || "",
+            levelExam: snapshot.levelExam && typeof snapshot.levelExam === "object"
+                ? snapshot.levelExam
+                : null,
+            highlightedDocument: snapshot.highlightedDocument && typeof snapshot.highlightedDocument === "object"
+                ? snapshot.highlightedDocument
+                : null,
+            savedSummaries: Array.isArray(snapshot.savedSummaries)
+                ? snapshot.savedSummaries
+                : [],
+            activeSavedSummaryId: snapshot.activeSavedSummaryId || "",
             savedDraftId: snapshot.savedDraftId || "",
             savedAt: snapshot.savedAt || "",
-            progressLabel: snapshot.progressLabel || ""
+            progressLabel: snapshot.progressLabel || "",
+            sessionNote: snapshot.sessionNote && typeof snapshot.sessionNote === "object"
+                ? snapshot.sessionNote
+                : null,
+            premiumOffer: snapshot.premiumOffer && typeof snapshot.premiumOffer === "object"
+                ? snapshot.premiumOffer
+                : null
         };
     }
 

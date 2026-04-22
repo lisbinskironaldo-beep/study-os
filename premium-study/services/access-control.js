@@ -20,6 +20,7 @@
         PREMIUM_LIBRARY: "premium_library",
         PRACTICE_EXTRA_SERIES: "practice_extra_series",
         MINI_EXAM_EXTRA: "mini_exam_extra",
+        LEVEL_EXAM: "level_exam",
         HIGHLIGHT_EXPORT: "highlight_export",
         STATS: "stats",
         CLOUD_SYNC: "cloud_sync"
@@ -32,7 +33,7 @@
             pdfPageLimit: 12,
             latestStudyResume: true,
             practiceSeriesLimit: 3,
-            miniExamBaseQuestions: 10,
+            miniExamBaseQuestions: 5,
             premiumLibrary: false,
             stats: false,
             cloudSync: false
@@ -43,7 +44,7 @@
             pdfPageLimit: Infinity,
             latestStudyResume: true,
             practiceSeriesLimit: Infinity,
-            miniExamBaseQuestions: 10,
+            miniExamBaseQuestions: 5,
             premiumLibrary: true,
             stats: true,
             cloudSync: true
@@ -67,6 +68,10 @@
             title: "Mini provas extras no premium",
             message: "A mini prova base continua grátis. No premium, você gera novas questões e variações para o mesmo assunto."
         },
+        [FEATURES.LEVEL_EXAM]: {
+            title: "Prova de nivel premium",
+            message: "A mini prova do bloco fica gratis. A prova de nivel com seletor de quantidade entra no premium."
+        },
         [FEATURES.HIGHLIGHT_EXPORT]: {
             title: "Exportação premium",
             message: "O marcador pode ser visualizado. Baixar PDF com destaques fica no premium."
@@ -89,6 +94,7 @@
         "V/F extras para pegar pegadinhas",
         "Flashcards extras com mnemônicos",
         "Mini provas extras por assunto",
+        "Prova de nivel com quantidade flexivel",
         "Exportação dos marcadores em PDF"
     ];
 
@@ -119,6 +125,15 @@
                 "Novas provas por bloco"
             ],
             cta: "Liberar mini provas extras"
+        },
+        [FEATURES.LEVEL_EXAM]: {
+            eyebrow: "Prova premium",
+            title: "Meça seu nivel com mais profundidade.",
+            lead: "Escolha 10, 20 ou 30 questoes para validar se o material ja esta pronto para prova.",
+            benefits: [
+                "Teste de nivel com seletor"
+            ],
+            cta: "Liberar prova premium"
         },
         [FEATURES.HIGHLIGHT_EXPORT]: {
             eyebrow: "Marcador premium",
@@ -192,6 +207,7 @@
         case FEATURES.PREMIUM_LIBRARY:
         case FEATURES.PRACTICE_EXTRA_SERIES:
         case FEATURES.MINI_EXAM_EXTRA:
+        case FEATURES.LEVEL_EXAM:
         case FEATURES.HIGHLIGHT_EXPORT:
         case FEATURES.STATS:
         case FEATURES.CLOUD_SYNC:

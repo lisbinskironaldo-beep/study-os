@@ -3,19 +3,30 @@
         return;
     }
 
-    const PROMPT_VERSION = "premium-study-ai-v1";
+    const PROMPT_VERSION = "rotanota-pdf-focused-ai-v1";
+    const ENDPOINT = "/api/premium/ai-generate";
+    const state = {
+        configured: null,
+        model: ""
+    };
 
     const TASKS = {
+        FREE_BUNDLE_FROM_MATERIAL: "free_bundle_from_material",
         PLAN_FROM_MATERIAL: "plan_from_material",
         EXPLAIN_BLOCK: "explain_block",
         QUICK_REVIEW: "quick_review",
         EXTRA_QUIZ: "extra_quiz",
         EXTRA_TRUE_FALSE: "extra_true_false",
         EXTRA_FLASHCARDS: "extra_flashcards",
-        EXTRA_MINI_EXAM: "extra_mini_exam"
+        EXTRA_MINI_EXAM: "extra_mini_exam",
+        PREMIUM_LEVEL_EXAM: "premium_level_exam"
     };
 
     const TASK_CONTRACTS = {
+        [TASKS.FREE_BUNDLE_FROM_MATERIAL]: {
+            prompt: "api/premium/ai-generate.js",
+            cacheKeyParts: ["materialHash", "examDate", "targetScore", "dailyMinutes"]
+        },
         [TASKS.PLAN_FROM_MATERIAL]: {
             prompt: "premium-study/services/ai/prompts/plan.md",
             cacheKeyParts: ["materialHash", "examDate", "targetScore", "dailyMinutes"]
@@ -43,11 +54,15 @@
         [TASKS.EXTRA_MINI_EXAM]: {
             prompt: "premium-study/services/ai/prompts/mini_exam.md",
             cacheKeyParts: ["materialHash", "blockId", "count"]
+        },
+        [TASKS.PREMIUM_LEVEL_EXAM]: {
+            prompt: "api/premium/ai-generate.js",
+            cacheKeyParts: ["materialHash", "questionCount"]
         }
     };
 
     function isConfigured() {
-        return false;
+        return state.configured !== false;
     }
 
     function getTaskContract(task) {
@@ -68,16 +83,65 @@
 
     async function request(task, payload = {}) {
         const contract = getTaskContract(task);
+        const normalizedTask = task === TASKS.PLAN_FROM_MATERIAL
+            ? TASKS.FREE_BUNDLE_FROM_MATERIAL
+            : task;
 
-        return {
-            ok: false,
-            status: "not_configured",
-            task,
-            promptVersion: PROMPT_VERSION,
-            cacheKey: buildCacheKey(task, payload),
-            contract,
-            message: "Cliente de IA real ainda nao foi conectado. Use este contrato para ligar backend, cache e prompts versionados."
-        };
+        try {
+            const response = await fetch(ENDPOINT, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    ...payload,
+                    task: normalizedTask
+                })
+            });
+            const data = await response.json().catch(() => null);
+
+            return {
+                ok: Boolean(response.ok && data && data.ok),
+                status: data && data.status ? data.status : response.ok ? "ok" : "request_failed",
+                task: normalizedTask,
+                promptVersion: data && data.promptVersion ? data.promptVersion : PROMPT_VERSION,
+                cacheKey: buildCacheKey(normalizedTask, payload),
+                contract,
+                ...data
+            };
+        } catch (error) {
+            state.configured = false;
+            return {
+                ok: false,
+                status: "network_error",
+                task: normalizedTask,
+                promptVersion: PROMPT_VERSION,
+                cacheKey: buildCacheKey(normalizedTask, payload),
+                contract,
+                message: "Nao consegui acessar a IA agora. Vou manter o pacote base local para voce seguir estudando."
+            };
+        }
+    }
+
+    function syncConfiguration(data = {}) {
+        if (typeof data.aiAvailable === "boolean") {
+            state.configured = data.aiAvailable;
+        } else if (typeof data.ok === "boolean") {
+            state.configured = data.ok;
+        }
+
+        if (data.model) {
+            state.model = data.model;
+        } else if (data.aiModel) {
+            state.model = data.aiModel;
+        }
+    }
+
+    const originalRequest = request;
+    async function trackedRequest(task, payload = {}) {
+        const result = await originalRequest(task, payload);
+        syncConfiguration(result);
+        return result;
     }
 
     window.PremiumStudyAI = {
@@ -87,6 +151,6 @@
         isConfigured,
         getTaskContract,
         buildCacheKey,
-        request
+        request: trackedRequest
     };
 })();

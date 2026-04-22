@@ -1,6 +1,7 @@
 const crypto = require("crypto");
 const { sendJson } = require("../_lib/json");
-const { applyPaymentToEntitlement } = require("../_lib/premium-entitlements");
+const { applyPaymentToEntitlement, parseExternalReference, sanitizeCustomerId } = require("../_lib/premium-entitlements");
+const { recordGrowthEvent, recordOpsAlert } = require("../_lib/ops-service");
 
 async function readRawBody(req) {
     const chunks = [];
@@ -134,6 +135,18 @@ module.exports = async function handler(req, res) {
     const signature = verifyMercadoPagoSignature(req, body);
 
     if (!signature.ok && !signature.skipped) {
+        await recordOpsAlert({
+            eventType: "webhook_invalid_signature",
+            severity: "critical",
+            provider: "mercado_pago",
+            message: signature.message,
+            payload: {
+                headers: {
+                    requestId: req.headers["x-request-id"] || "",
+                    signature: req.headers["x-signature"] || ""
+                }
+            }
+        });
         return sendJson(res, 401, {
             ok: false,
             status: "invalid_signature",
@@ -149,6 +162,16 @@ module.exports = async function handler(req, res) {
     const payment = eventType === "payment" && paymentId
         ? await fetchPayment(paymentId)
         : null;
+    const paymentMetadata = payment && payment.metadata && typeof payment.metadata === "object"
+        ? payment.metadata
+        : {};
+    const parsedReference = parseExternalReference(payment && payment.external_reference ? payment.external_reference : "");
+    const customerId = sanitizeCustomerId(
+        paymentMetadata.customer_id ||
+        paymentMetadata.customerId ||
+        parsedReference.customerId ||
+        ""
+    );
     const premiumActivation = payment
         ? await applyPaymentToEntitlement(payment)
         : {
@@ -156,6 +179,58 @@ module.exports = async function handler(req, res) {
             skipped: true,
             status: "payment_not_loaded"
         };
+
+    if (paymentId && !payment) {
+        await recordOpsAlert({
+            eventType: "webhook_payment_not_loaded",
+            severity: "warning",
+            provider: "mercado_pago",
+            message: "O webhook chegou, mas o pagamento nao foi carregado no provider.",
+            payload: {
+                paymentId,
+                eventType,
+                action
+            }
+        });
+    }
+
+    await recordGrowthEvent({
+        customerId,
+        eventType: "webhook_received",
+        metadata: {
+            paymentId,
+            eventType,
+            action,
+            paymentStatus: payment ? payment.status || "" : "",
+            signature: signature.skipped ? "not_configured" : "valid"
+        }
+    });
+
+    if (premiumActivation && premiumActivation.ok && !premiumActivation.skipped) {
+        await recordGrowthEvent({
+            customerId: premiumActivation.customerId || customerId,
+            eventType: "premium_activated",
+            metadata: {
+                paymentId,
+                planId: premiumActivation.planId || "",
+                validUntil: premiumActivation.validUntil || ""
+            }
+        });
+    }
+
+    if (premiumActivation && !premiumActivation.ok && !premiumActivation.skipped) {
+        await recordOpsAlert({
+            eventType: "premium_activation_failed",
+            severity: "critical",
+            provider: "mercado_pago",
+            message: "Falha ao aplicar o pagamento ao entitlement premium.",
+            payload: {
+                paymentId,
+                status: premiumActivation.status || "",
+                error: premiumActivation.error || null
+            }
+        });
+    }
 
     return sendJson(res, 200, {
         ok: true,

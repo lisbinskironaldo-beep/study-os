@@ -23,6 +23,32 @@ window.QuestionsUI = {
             return;
         }
 
+        const activeElement =
+            document.activeElement instanceof
+            HTMLElement
+                ? document.activeElement
+                : null;
+        const shouldRestoreDirectSearchFocus =
+            activeElement?.id ===
+                "questionsDirectSearchInput" ||
+            this.page
+                ?.directSearchRefocusPending ===
+                true;
+        const directSearchSelectionStart =
+            shouldRestoreDirectSearchFocus &&
+            typeof activeElement
+                .selectionStart ===
+                "number"
+                ? activeElement.selectionStart
+                : null;
+        const directSearchSelectionEnd =
+            shouldRestoreDirectSearchFocus &&
+            typeof activeElement
+                .selectionEnd ===
+                "number"
+                ? activeElement.selectionEnd
+                : null;
+
         const launcher =
             document.getElementById(
                 "questionsLauncher"
@@ -92,6 +118,44 @@ window.QuestionsUI = {
 
         if (phase === "launcher") {
             this.bindLauncher();
+
+            if (
+                shouldRestoreDirectSearchFocus
+            ) {
+                this.page.directSearchRefocusPending =
+                    false;
+                requestAnimationFrame(() => {
+                    const input =
+                        document.getElementById(
+                            "questionsDirectSearchInput"
+                        );
+
+                    if (!input) {
+                        return;
+                    }
+
+                    input.focus({
+                        preventScroll: true
+                    });
+
+                    if (
+                        typeof input
+                            .setSelectionRange ===
+                            "function" &&
+                        Number.isInteger(
+                            directSearchSelectionStart
+                        ) &&
+                        Number.isInteger(
+                            directSearchSelectionEnd
+                        )
+                    ) {
+                        input.setSelectionRange(
+                            directSearchSelectionStart,
+                            directSearchSelectionEnd
+                        );
+                    }
+                });
+            }
         } else {
             this.bindSessionSurface(
                 session
@@ -1683,6 +1747,29 @@ window.QuestionsUI = {
                 minAttempts: 1,
                 minErrors: 1
             })[0] || null;
+        const directSearchTerms =
+            Array.isArray(
+                page.directSearchTerms
+            )
+                ? page.directSearchTerms
+                : [];
+        const directSearchMatchCount =
+            typeof page.directSearchMatchCount ===
+                "number" &&
+            Number.isFinite(
+                page.directSearchMatchCount
+            )
+                ? page.directSearchMatchCount
+                : null;
+        const directSearchStatusLabel =
+            !directSearchTerms.length
+                ? "Adicione um termo para buscar"
+                : page.directSearchLoading
+                    ? "Buscando questoes..."
+                    : directSearchMatchCount ===
+                          null
+                        ? "Pronto para gerar"
+                        : `${directSearchMatchCount} questoes encontradas`;
 
         return `
             <section class="questions-card questions-entry-card">
@@ -1717,7 +1804,6 @@ window.QuestionsUI = {
                     <article class="questions-entry-option questions-entry-option-smart">
                         <div class="questions-entry-copy">
                             <h3>Inteligente</h3>
-                            <p>Fluxo adaptativo com etapa de assuntos e fechamento mais enxuto.</p>
                         </div>
                         <button class="questions-primary-btn" type="button" data-launcher-view="smart_start" ${isLoading || isError ? "disabled" : ""}>
                             ${isLoading ? "Preparando..." : isError ? "Indisponivel" : "Comecar"}
@@ -1727,7 +1813,6 @@ window.QuestionsUI = {
                     <article class="questions-entry-option questions-entry-option-specific">
                         <div class="questions-entry-copy">
                             <h3>Simulado</h3>
-                            <p>Monte blocos por assunto agora e deixe prova pronta reservada para a proxima etapa.</p>
                         </div>
                         <button class="questions-secondary-btn" type="button" data-launcher-view="simulado" ${isLoading || isError ? "disabled" : ""}>
                             ${isLoading ? "Preparando..." : isError ? "Indisponivel" : "Entrar"}
@@ -1735,11 +1820,47 @@ window.QuestionsUI = {
                     </article>
                 </div>
 
-                <div class="questions-entry-footer">
-                    <button class="questions-secondary-btn" type="button" data-launcher-view="progress">
-                        Progresso
-                    </button>
-                </div>
+                <section class="questions-direct-search" aria-label="Busca direta por assunto">
+                    <div class="questions-direct-search-copy">
+                        <h3>Questoes por assunto</h3>
+                    </div>
+
+                    <div class="questions-direct-search-form">
+                        <input
+                            id="questionsDirectSearchInput"
+                            class="questions-search-field questions-direct-search-input"
+                            type="text"
+                            value="${this.escapeHtml(page.directSearchInput || "")}"
+                            placeholder="Ex.: funcao afim, organelas, predicado verbal"
+                        />
+                        <button class="questions-secondary-btn questions-direct-search-add" type="button" data-direct-search-add="true">
+                            Adicionar
+                        </button>
+                        <button class="questions-primary-btn questions-direct-search-generate" type="button" data-direct-search-generate="true" ${directSearchTerms.length ? "" : "disabled"}>
+                            Gerar questoes
+                        </button>
+                    </div>
+
+                    <div class="questions-direct-search-meta">
+                        <span>${directSearchTerms.length ? `${directSearchTerms.length} filtro(s) ativo(s)` : "Nenhum filtro ativo"}</span>
+                        <strong>${directSearchStatusLabel}</strong>
+                    </div>
+
+                    ${directSearchTerms.length ? `
+                        <div class="questions-chip-row questions-direct-search-chips">
+                            ${directSearchTerms.map((term) => `
+                                <button class="questions-chip questions-chip-removable" type="button" data-direct-search-remove="${this.escapeHtml(term)}">
+                                    <span>${this.escapeHtml(term)}</span>
+                                    <strong aria-hidden="true">x</strong>
+                                </button>
+                            `).join("")}
+                            <button class="questions-chip questions-chip-ghost" type="button" data-direct-search-clear="true">
+                                Limpar
+                            </button>
+                        </div>
+                    ` : ""}
+                </section>
+
             </section>
         `;
     },
@@ -5195,6 +5316,14 @@ window.QuestionsUI = {
             editorSubject?.key ||
             resolvedFocusSubject?.key ||
             "";
+        const reviewModel =
+            typeof page.buildSmartTopicReviewModel ===
+            "function"
+                ? page.buildSmartTopicReviewModel()
+                : {
+                    activeSubjects: [],
+                    totalTopics: 0
+                };
         const visibleSubjectSlices =
             this.buildSmartRadialSlices(
                 visibleSubjects,
@@ -5418,6 +5547,70 @@ window.QuestionsUI = {
                             </div>
 
                         </div>
+                        ${page.smartTopicReviewOpen ? `
+                            <div class="questions-smart-topic-review-scrim" data-smart-topic-review-close="true"></div>
+                            <section class="questions-smart-topic-review" role="dialog" aria-modal="true" aria-label="Revisar assuntos selecionados">
+                                <div class="questions-smart-topic-review-head">
+                                    <div>
+                                        <span class="questions-kicker">Antes de gerar</span>
+                                        <h3>Revise os assuntos das materias selecionadas</h3>
+                                        <p>Desmarque o que nao quer levar. Se estiver tudo certo, seguimos com todos os assuntos ativos.</p>
+                                    </div>
+                                    <div class="questions-smart-topic-review-summary">
+                                        <strong>${reviewModel.activeSubjects.length}</strong>
+                                        <span>materia(s)</span>
+                                        <strong>${reviewModel.totalTopics}</strong>
+                                        <span>assunto(s)</span>
+                                    </div>
+                                </div>
+
+                                <div class="questions-smart-topic-review-list">
+                                    ${reviewModel.activeSubjects.map((subject) => `
+                                        <article class="questions-smart-topic-review-group">
+                                            <div class="questions-smart-topic-review-group-head">
+                                                <div>
+                                                    <strong>${this.escapeHtml(subject.label)}</strong>
+                                                    <span>${subject.selectedTopicCount} assunto(s) ativo(s)</span>
+                                                </div>
+                                                <div class="questions-smart-topic-review-group-actions">
+                                                    <button class="questions-smart-topic-editor-btn" type="button" data-smart-topic-editor-select-all="${this.escapeHtml(subject.key)}">
+                                                        Todos
+                                                    </button>
+                                                    <button class="questions-smart-topic-editor-btn" type="button" data-smart-topic-editor-clear-all="${this.escapeHtml(subject.key)}">
+                                                        Limpar
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="questions-smart-topic-review-topic-grid">
+                                                ${subject.topicOptions.map((topic) => `
+                                                    <button
+                                                        class="questions-smart-topic-row${topic.active ? " is-active" : " is-excluded"}"
+                                                        type="button"
+                                                        data-smart-topic-subject="${this.escapeHtml(subject.key)}"
+                                                        data-smart-topic-toggle="${this.escapeHtml(topic.key)}"
+                                                    >
+                                                        <span class="questions-smart-topic-row-check" aria-hidden="true"></span>
+                                                        <span class="questions-smart-topic-row-copy">
+                                                            <strong>${this.escapeHtml(topic.label)}</strong>
+                                                            <small>${topic.count || 0} questoes prontas${topic.subtopicCount ? ` · ${topic.subtopicCount} subtopico(s)` : ""}</small>
+                                                        </span>
+                                                    </button>
+                                                `).join("")}
+                                            </div>
+                                        </article>
+                                    `).join("")}
+                                </div>
+
+                                <div class="questions-smart-topic-review-foot">
+                                    <button class="questions-secondary-btn" type="button" data-smart-topic-review-close="true">
+                                        Voltar
+                                    </button>
+                                    <button class="questions-primary-btn" type="button" data-smart-topic-review-continue="true">
+                                        Seguir com selecao
+                                    </button>
+                                </div>
+                            </section>
+                        ` : ""}
                         ${hiddenSubjects ? `
                             <div class="questions-inline-note questions-smart-subject-note">
                                 +${hiddenSubjects} matéria(s) continuam disponíveis. Ajuste as séries para refinar mais se quiser.
@@ -7260,9 +7453,35 @@ window.QuestionsUI = {
         )?.addEventListener(
             "click",
             () => {
-                this.page.continueSmartSubjects();
+                this.page.openSmartTopicReview();
             }
         );
+
+        document
+            .querySelectorAll(
+                "[data-smart-topic-review-close]"
+            )
+            .forEach((button) => {
+                button.addEventListener(
+                    "click",
+                    () => {
+                        this.page.closeSmartTopicReview();
+                    }
+                );
+            });
+
+        document
+            .querySelectorAll(
+                "[data-smart-topic-review-continue]"
+            )
+            .forEach((button) => {
+                button.addEventListener(
+                    "click",
+                    () => {
+                        this.page.continueSmartTopicReview();
+                    }
+                );
+            });
 
         document
             .querySelectorAll(
@@ -7367,36 +7586,136 @@ window.QuestionsUI = {
             );
 
         document
-            .querySelector(
+            .querySelectorAll(
                 "[data-smart-topic-editor-select-all]"
             )
-            ?.addEventListener(
-                "click",
-                (event) => {
-                    this.page.setAllSmartSubjectTopics(
-                        event.currentTarget
-                            .dataset
-                            .smartTopicEditorSelectAll,
-                        true
-                    );
-                }
-            );
+            .forEach((button) => {
+                button.addEventListener(
+                    "click",
+                    (event) => {
+                        this.page.setAllSmartSubjectTopics(
+                            event.currentTarget
+                                .dataset
+                                .smartTopicEditorSelectAll,
+                            true
+                        );
+                    }
+                );
+            });
 
         document
-            .querySelector(
+            .querySelectorAll(
                 "[data-smart-topic-editor-clear-all]"
             )
-            ?.addEventListener(
-                "click",
-                (event) => {
-                    this.page.setAllSmartSubjectTopics(
-                        event.currentTarget
-                            .dataset
-                            .smartTopicEditorClearAll,
-                        false
-                    );
-                }
+            .forEach((button) => {
+                button.addEventListener(
+                    "click",
+                    (event) => {
+                        this.page.setAllSmartSubjectTopics(
+                            event.currentTarget
+                                .dataset
+                                .smartTopicEditorClearAll,
+                            false
+                        );
+                    }
+                );
+            });
+
+        const directSearchInput =
+            document.getElementById(
+                "questionsDirectSearchInput"
             );
+
+        directSearchInput?.addEventListener(
+            "input",
+            (event) => {
+                this.page.setDirectSearchInput(
+                    event.target.value
+                );
+            }
+        );
+
+        directSearchInput?.addEventListener(
+            "keydown",
+            (event) => {
+                if (event.key !== "Enter") {
+                    return;
+                }
+
+                event.preventDefault();
+                this.page.addDirectSearchTerm(
+                    event.currentTarget.value
+                );
+            }
+        );
+
+        directSearchInput?.addEventListener(
+            "pointerdown",
+            (event) => {
+                event.stopPropagation();
+            }
+        );
+
+        document
+            .querySelectorAll(
+                "[data-direct-search-add]"
+            )
+            .forEach((button) => {
+                button.addEventListener(
+                    "click",
+                    () => {
+                        const field =
+                            document.getElementById(
+                                "questionsDirectSearchInput"
+                            );
+                        this.page.addDirectSearchTerm(
+                            field?.value || ""
+                        );
+                    }
+                );
+            });
+
+        document
+            .querySelectorAll(
+                "[data-direct-search-remove]"
+            )
+            .forEach((button) => {
+                button.addEventListener(
+                    "click",
+                    () => {
+                        this.page.removeDirectSearchTerm(
+                            button.dataset
+                                .directSearchRemove
+                        );
+                    }
+                );
+            });
+
+        document
+            .querySelectorAll(
+                "[data-direct-search-clear]"
+            )
+            .forEach((button) => {
+                button.addEventListener(
+                    "click",
+                    () => {
+                        this.page.clearDirectSearchTerms();
+                    }
+                );
+            });
+
+        document
+            .querySelectorAll(
+                "[data-direct-search-generate]"
+            )
+            .forEach((button) => {
+                button.addEventListener(
+                    "click",
+                    () => {
+                        this.page.startDirectSearchSession();
+                    }
+                );
+            });
 
         document.getElementById(
             "questionsSmartStartBtn"

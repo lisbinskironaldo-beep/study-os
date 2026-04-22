@@ -11,26 +11,27 @@
     };
 
     const CHECKOUT_ENDPOINT = "/api/mercado-pago/checkout";
+    const CHECKOUT_CONTEXT_KEY = "rotanota-premium-checkout-context";
 
     const PLANS = [
         {
             id: "premium_monthly",
             tier: "premium",
             label: "Premium mensal",
-            priceLabel: "Mensal",
+            priceLabel: "R$ 19,90",
             interval: "month",
-            description: "Continuidade, biblioteca e extras com renovacao mensal.",
-            recommended: true,
+            description: "Entrada mais leve para liberar biblioteca, continuidade e extras.",
+            recommended: false,
             checkoutProvider: "mercado_pago"
         },
         {
             id: "premium_annual",
             tier: "premium",
             label: "Premium anual",
-            priceLabel: "Anual",
+            priceLabel: "R$ 149,90",
             interval: "year",
-            description: "Melhor para concurso, materiais longos e rotina de meses.",
-            recommended: false,
+            description: "Melhor escolha para rotina longa, apostilas grandes e preparo continuo.",
+            recommended: true,
             checkoutProvider: "mercado_pago"
         }
     ];
@@ -43,13 +44,64 @@
         return getPlans().find((plan) => plan.recommended) || getPlans()[0];
     }
 
+    function buildCheckoutReturnSnapshot(checkoutContext = {}) {
+        const store = window.PremiumStudyStore;
+
+        if (!store || typeof store.exportSnapshot !== "function") {
+            return null;
+        }
+
+        const snapshot = store.exportSnapshot();
+
+        if (!snapshot || !snapshot.materialName) {
+            return null;
+        }
+
+        const resumeStep = snapshot.step === "premium-checkout" || snapshot.step === "premium-library"
+            ? (snapshot.returnStep || checkoutContext.sourceStep || "mode-select")
+            : snapshot.step;
+
+        return {
+            ...snapshot,
+            step: resumeStep || "mode-select",
+            returnStep: snapshot.returnStep || checkoutContext.sourceStep || "mode-select",
+            premiumOffer: null
+        };
+    }
+
+    function persistCheckoutReturnContext(plan, checkoutContext = {}) {
+        if (!window.sessionStorage) {
+            return;
+        }
+
+        try {
+            window.sessionStorage.setItem(CHECKOUT_CONTEXT_KEY, JSON.stringify({
+                storedAt: new Date().toISOString(),
+                planId: plan && plan.id ? plan.id : "",
+                sourceStep: checkoutContext.sourceStep || "",
+                feature: checkoutContext.feature || "",
+                snapshot: buildCheckoutReturnSnapshot(checkoutContext)
+            }));
+        } catch (error) {
+            // Se o navegador bloquear sessionStorage, o fluxo segue com fallback para a tela base.
+        }
+    }
+
     async function startCheckout(planId, context = {}) {
         const plan = PLANS.find((item) => item.id === planId) || getRecommendedPlan();
         const identityContext = window.PremiumStudyIdentity && typeof window.PremiumStudyIdentity.getCheckoutContext === "function"
             ? window.PremiumStudyIdentity.getCheckoutContext()
             : {};
+        const promotionContext = window.PremiumStudyPromotions && typeof window.PremiumStudyPromotions.getCheckoutContext === "function"
+            ? window.PremiumStudyPromotions.getCheckoutContext(context.feature || "", context.surface || "premium_checkout")
+            : {};
+        const acquisitionContext = window.PremiumStudyGrowth && typeof window.PremiumStudyGrowth.getAcquisitionContext === "function"
+            ? window.PremiumStudyGrowth.getAcquisitionContext()
+            : {};
         const checkoutContext = {
             ...context,
+            ...acquisitionContext,
+            ...promotionContext,
             ...identityContext
         };
 
@@ -97,6 +149,7 @@
         }
 
         if (payload.checkoutUrl) {
+            persistCheckoutReturnContext(plan, checkoutContext);
             window.location.assign(payload.checkoutUrl);
         }
 

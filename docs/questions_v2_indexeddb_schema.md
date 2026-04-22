@@ -21,7 +21,7 @@ Referencia em codigo:
 
 Nome:
 
-- `study_os_questions_v2`
+- `rotanota_questions_v3`
 
 Versao inicial:
 

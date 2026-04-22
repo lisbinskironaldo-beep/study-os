@@ -1,0 +1,14 @@
+.git/
+.vercel/
+.codex-backups/
+.codex-temp/
+.env
+.env.local
+.env.*.local
+docs/
+restore-points/
+temp/
+test-results/
+tools/
+supabase/
+README.md

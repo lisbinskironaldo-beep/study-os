@@ -42,14 +42,42 @@ const Clock = {
             year: "numeric"
         }).format(now);
 
-        document.getElementById("timeDisplay").textContent = time;
-        document.getElementById("dateDisplay").textContent =
-            this.capitalize(date);
+        const formattedDate = this.capitalize(date);
+        const timeDisplay =
+            document.getElementById("timeDisplay");
+        const dateDisplay =
+            document.getElementById("dateDisplay");
+        const compactTime =
+            document.getElementById("homeCompactTime");
+        const compactDate =
+            document.getElementById("homeCompactDate");
+
+        if (timeDisplay) {
+            timeDisplay.textContent = time;
+        }
+
+        if (dateDisplay) {
+            dateDisplay.textContent = formattedDate;
+        }
+
+        if (compactTime) {
+            compactTime.textContent = time.slice(0, 5);
+        }
+
+        if (compactDate) {
+            compactDate.textContent = formattedDate;
+        }
     },
 
     buildTimeZoneSelector() {
 
     const select = document.getElementById("timezoneSelector");
+    this.currentTimeZone = "America/Sao_Paulo";
+
+    if (!select) {
+        return;
+    }
+
     select.innerHTML = "";
 
     const zones = [
@@ -79,8 +107,6 @@ const Clock = {
 
     // padrão Brasil oficial
     select.value = "America/Sao_Paulo";
-    this.currentTimeZone = "America/Sao_Paulo";
-
     select.addEventListener("change", (e) => {
         this.currentTimeZone = e.target.value;
         this.update();

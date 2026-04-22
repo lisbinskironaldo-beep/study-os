@@ -90,6 +90,179 @@ window.QuestionsService = {
             .replace(/\s+/g, " ");
     },
 
+    normalizeSearchTokens(value) {
+        return this.normalizeText(value)
+            .replace(/[^a-z0-9\s]/g, " ")
+            .split(/\s+/)
+            .map((token) => token.trim())
+            .filter((token) => token.length >= 2);
+    },
+
+    levenshteinDistance(a = "", b = "") {
+        const left = String(a || "");
+        const right = String(b || "");
+
+        if (left === right) {
+            return 0;
+        }
+
+        if (!left.length) {
+            return right.length;
+        }
+
+        if (!right.length) {
+            return left.length;
+        }
+
+        const matrix = Array.from(
+            { length: left.length + 1 },
+            () =>
+                new Array(
+                    right.length + 1
+                ).fill(0)
+        );
+
+        for (
+            let row = 0;
+            row <= left.length;
+            row += 1
+        ) {
+            matrix[row][0] = row;
+        }
+
+        for (
+            let col = 0;
+            col <= right.length;
+            col += 1
+        ) {
+            matrix[0][col] = col;
+        }
+
+        for (
+            let row = 1;
+            row <= left.length;
+            row += 1
+        ) {
+            for (
+                let col = 1;
+                col <= right.length;
+                col += 1
+            ) {
+                const cost =
+                    left[row - 1] ===
+                    right[col - 1]
+                        ? 0
+                        : 1;
+
+                matrix[row][col] = Math.min(
+                    matrix[row - 1][col] + 1,
+                    matrix[row][col - 1] + 1,
+                    matrix[row - 1][col - 1] +
+                        cost
+                );
+            }
+        }
+
+        return matrix[left.length][right.length];
+    },
+
+    fuzzyTokenMatch(leftToken, rightToken) {
+        const left =
+            this.normalizeText(leftToken);
+        const right =
+            this.normalizeText(rightToken);
+
+        if (!left || !right) {
+            return false;
+        }
+
+        if (left === right) {
+            return true;
+        }
+
+        if (
+            left.includes(right) ||
+            right.includes(left)
+        ) {
+            return true;
+        }
+
+        const distance =
+            this.levenshteinDistance(
+                left,
+                right
+            );
+        const maxLength = Math.max(
+            left.length,
+            right.length
+        );
+        const threshold =
+            maxLength >= 9
+                ? 2
+                : 1;
+
+        return distance <= threshold;
+    },
+
+    matchesFuzzySearch(
+        haystack,
+        rawTerm
+    ) {
+        const normalizedHaystack =
+            this.normalizeText(haystack);
+        const normalizedTerm =
+            this.normalizeText(rawTerm);
+
+        if (!normalizedHaystack || !normalizedTerm) {
+            return false;
+        }
+
+        if (
+            normalizedHaystack.includes(
+                normalizedTerm
+            )
+        ) {
+            return true;
+        }
+
+        const haystackTokens =
+            this.normalizeSearchTokens(
+                normalizedHaystack
+            );
+        const termTokens =
+            this.normalizeSearchTokens(
+                normalizedTerm
+            );
+
+        if (!termTokens.length) {
+            return false;
+        }
+
+        let matchedCount = 0;
+
+        termTokens.forEach((termToken) => {
+            const matched =
+                haystackTokens.some(
+                    (hayToken) =>
+                        this.fuzzyTokenMatch(
+                            hayToken,
+                            termToken
+                        )
+                );
+
+            if (matched) {
+                matchedCount += 1;
+            }
+        });
+
+        const minimumMatches =
+            termTokens.length <= 2
+                ? termTokens.length
+                : termTokens.length - 1;
+
+        return matchedCount >= minimumMatches;
+    },
+
     formatTime(ms) {
         const totalSeconds =
             Math.max(
@@ -1624,6 +1797,65 @@ window.QuestionsService = {
         });
 
         return questions;
+    },
+
+    orderDirectSearchQuestions(
+        questions = [],
+        strategy = "gradual"
+    ) {
+        const pool = Array.isArray(questions)
+            ? questions.filter(Boolean)
+            : [];
+        const normalizedStrategy =
+            String(strategy || "gradual")
+                .trim()
+                .toLowerCase();
+
+        if (normalizedStrategy === "random") {
+            return this.shuffle(pool);
+        }
+
+        const grouped = new Map();
+
+        pool.forEach((question) => {
+            const difficulty = Math.max(
+                Number(question?.difficulty) || 1,
+                1
+            );
+            const bucket =
+                grouped.get(difficulty) || [];
+
+            bucket.push(question);
+            grouped.set(difficulty, bucket);
+        });
+
+        return [...grouped.keys()]
+            .sort((left, right) => left - right)
+            .flatMap((difficulty) =>
+                [...grouped.get(difficulty)]
+                    .sort((left, right) => {
+                    const timeDiff =
+                        (Number(
+                            left?.expectedTime
+                        ) || 0) -
+                        (Number(
+                            right?.expectedTime
+                        ) || 0);
+
+                    if (timeDiff !== 0) {
+                        return timeDiff;
+                    }
+
+                    return String(
+                        left?.topicLabel || ""
+                    ).localeCompare(
+                        String(
+                            right?.topicLabel || ""
+                        ),
+                        "pt-BR"
+                    );
+                    })
+            );
     },
 
     getWarmupExpandedTopicKeys(
@@ -3932,6 +4164,15 @@ window.QuestionsService = {
             errors,
             accuracy,
             avgTimeMs,
+            elapsedAnsweredMs:
+                safeResults.reduce(
+                    (acc, item) =>
+                        acc +
+                        (Number(
+                            item?.timeMs
+                        ) || 0),
+                    0
+                ),
             topics,
             weakTopic,
             strongTopic,

@@ -7,6 +7,8 @@
         return JSON.parse(JSON.stringify(value));
     }
 
+    const DEFAULT_HIGHLIGHT_COLOR = "#fde68a";
+
     function buildStudyTitle(materialName) {
         if (!materialName) {
             return "Estudo personalizado";
@@ -25,6 +27,21 @@
 
     function buildFlashcard(front, back, tip) {
         return { front, back, tip };
+    }
+
+    function createLevelExamState(overrides = {}) {
+        return {
+            questionCount: 10,
+            title: "Prova de nivel RotaNota",
+            questions: [],
+            started: false,
+            index: 0,
+            answers: [],
+            isComplete: false,
+            result: null,
+            status: "idle",
+            ...overrides
+        };
     }
 
     function buildExamPack(material, descriptors) {
@@ -475,13 +492,13 @@
                     ]
                 },
                 exam: {
-                    baseCount: 10,
+                    baseCount: 5,
                     questions: buildExamPack(material, [
                         "a linguagem central",
                         "o critério principal",
                         "relacoes entre conceitos",
                         "a memorizacao do bloco"
-                    ])
+                    ]).slice(0, 5)
                 }
             },
             {
@@ -811,30 +828,258 @@
                     ]
                 },
                 exam: {
-                    baseCount: 10,
+                    baseCount: 5,
                     questions: buildExamPack(material, [
                         "as comparacoes do tema",
                         "a palavra-chave de contraste",
                         "as excecoes do assunto",
                         "a memorizacao das pegadinhas"
-                    ])
+                    ]).slice(0, 5)
                 }
             }
         ];
     }
 
-    function buildHighlightedParts(text, highlights) {
+    const HIGHLIGHT_COLOR_OPTIONS = [
+        {
+            key: "gold",
+            label: "Amarelo IA",
+            value: "rgba(255, 203, 109, 0.42)"
+        },
+        {
+            key: "mint",
+            label: "Verde agua",
+            value: "rgba(88, 227, 183, 0.34)"
+        },
+        {
+            key: "blue",
+            label: "Azul",
+            value: "rgba(121, 213, 255, 0.32)"
+        },
+        {
+            key: "rose",
+            label: "Rosa",
+            value: "rgba(255, 151, 188, 0.34)"
+        }
+    ];
+
+    function getHighlightColorOptions() {
+        return HIGHLIGHT_COLOR_OPTIONS.map((option) => ({ ...option }));
+    }
+
+    function resolveHighlightColorKey(colorKey) {
+        const normalized = String(colorKey || "").trim().toLowerCase();
+        return HIGHLIGHT_COLOR_OPTIONS.some((option) => option.key === normalized)
+            ? normalized
+            : "gold";
+    }
+
+    function createHighlightPart(partId, text, highlight, colorKey) {
+        return {
+            id: partId,
+            text: String(text || ""),
+            highlight: Boolean(highlight),
+            colorKey: highlight
+                ? resolveHighlightColorKey(colorKey)
+                : ""
+        };
+    }
+
+    function createHighlightPartId(scope = "highlight-edit") {
+        return `${String(scope || "highlight-edit")}-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
+    }
+
+    function normalizeHighlightParagraph(paragraph = []) {
+        const normalized = [];
+
+        (Array.isArray(paragraph) ? paragraph : []).forEach((part) => {
+            const text = String(part?.text || "");
+
+            if (!text) {
+                return;
+            }
+
+            const nextPart = createHighlightPart(
+                String(part?.id || createHighlightPartId("highlight-part")),
+                text,
+                Boolean(part?.highlight),
+                part?.colorKey || ""
+            );
+            const previous = normalized[normalized.length - 1];
+
+            if (
+                previous &&
+                previous.highlight === nextPart.highlight &&
+                previous.colorKey === nextPart.colorKey
+            ) {
+                previous.text += nextPart.text;
+                return;
+            }
+
+            normalized.push(nextPart);
+        });
+
+        return normalized;
+    }
+
+    function selectHighlightRangeFromParagraph(
+        paragraph = [],
+        startOffset = 0,
+        endOffset = 0,
+        activeColorKey = "gold"
+    ) {
+        const parts = Array.isArray(paragraph)
+            ? paragraph
+            : [];
+        const totalLength = parts.reduce(
+            (acc, part) =>
+                acc + String(part?.text || "").length,
+            0
+        );
+        const start = Math.max(
+            0,
+            Math.min(Number(startOffset) || 0, totalLength)
+        );
+        const end = Math.max(
+            start,
+            Math.min(Number(endOffset) || 0, totalLength)
+        );
+
+        if (start === end) {
+            return {
+                paragraph: normalizeHighlightParagraph(parts),
+                selectedPartId: ""
+            };
+        }
+
+        const selectedPartId = createHighlightPartId("highlight-selection");
+        const nextParagraph = [];
+        let selectedText = "";
+        let selectedHighlight = false;
+        let selectedColorKey = resolveHighlightColorKey(activeColorKey);
+        let selectionInserted = false;
+        let cursor = 0;
+
+        parts.forEach((part) => {
+            const text = String(part?.text || "");
+            const partStart = cursor;
+            const partEnd = cursor + text.length;
+            const clonedPart = () =>
+                createHighlightPart(
+                    String(part?.id || createHighlightPartId("highlight-piece")),
+                    "",
+                    Boolean(part?.highlight),
+                    part?.colorKey || ""
+                );
+
+            if (!text) {
+                cursor = partEnd;
+                return;
+            }
+
+            if (partEnd <= start || partStart >= end) {
+                if (!selectionInserted && partStart >= end && selectedText) {
+                    nextParagraph.push(
+                        createHighlightPart(
+                            selectedPartId,
+                            selectedText,
+                            selectedHighlight,
+                            selectedColorKey
+                        )
+                    );
+                    selectionInserted = true;
+                }
+
+                const passthrough = clonedPart();
+                passthrough.text = text;
+                nextParagraph.push(passthrough);
+                cursor = partEnd;
+                return;
+            }
+
+            const overlapStart = Math.max(start, partStart);
+            const overlapEnd = Math.min(end, partEnd);
+            const beforeText = text.slice(0, Math.max(0, overlapStart - partStart));
+            const selectedSlice = text.slice(
+                Math.max(0, overlapStart - partStart),
+                Math.max(0, overlapEnd - partStart)
+            );
+            const afterText = text.slice(Math.max(0, overlapEnd - partStart));
+
+            if (beforeText) {
+                const beforePart = clonedPart();
+                beforePart.text = beforeText;
+                nextParagraph.push(beforePart);
+            }
+
+            if (selectedSlice) {
+                selectedText += selectedSlice;
+
+                if (part?.highlight && !selectedHighlight) {
+                    selectedHighlight = true;
+                    selectedColorKey = resolveHighlightColorKey(
+                        part?.colorKey || activeColorKey
+                    );
+                }
+            }
+
+            if (!selectionInserted && partEnd >= end && selectedText) {
+                nextParagraph.push(
+                    createHighlightPart(
+                        selectedPartId,
+                        selectedText,
+                        selectedHighlight,
+                        selectedColorKey
+                    )
+                );
+                selectionInserted = true;
+            }
+
+            if (afterText) {
+                const afterPart = clonedPart();
+                afterPart.text = afterText;
+                nextParagraph.push(afterPart);
+            }
+
+            cursor = partEnd;
+        });
+
+        if (!selectionInserted && selectedText) {
+            nextParagraph.push(
+                createHighlightPart(
+                    selectedPartId,
+                    selectedText,
+                    selectedHighlight,
+                    selectedColorKey
+                )
+            );
+        }
+
+        return {
+            paragraph: normalizeHighlightParagraph(nextParagraph),
+            selectedPartId
+        };
+    }
+
+    function buildHighlightedParts(text, highlights, options = {}) {
         const content = String(text || "");
         const terms = Array.isArray(highlights)
             ? highlights.filter(Boolean)
             : [];
+        const baseId = String(options.baseId || "highlight");
+        const highlightColorKey =
+            resolveHighlightColorKey(
+                options.highlightColorKey
+            );
 
         if (!content || terms.length === 0) {
             return [
-                {
-                    text: content,
-                    highlight: false
-                }
+                createHighlightPart(
+                    `${baseId}-part-0`,
+                    content,
+                    false,
+                    ""
+                )
             ];
         }
 
@@ -844,10 +1089,12 @@
 
         if (escapedTerms.length === 0) {
             return [
-                {
-                    text: content,
-                    highlight: false
-                }
+                createHighlightPart(
+                    `${baseId}-part-0`,
+                    content,
+                    false,
+                    ""
+                )
             ];
         }
 
@@ -858,34 +1105,326 @@
 
         while ((match = regex.exec(content))) {
             if (match.index > lastIndex) {
-                parts.push({
-                    text: content.slice(lastIndex, match.index),
-                    highlight: false
-                });
+                parts.push(
+                    createHighlightPart(
+                        `${baseId}-part-${parts.length}`,
+                        content.slice(
+                            lastIndex,
+                            match.index
+                        ),
+                        false,
+                        ""
+                    )
+                );
             }
 
-            parts.push({
-                text: match[0],
-                highlight: true
-            });
+            parts.push(
+                createHighlightPart(
+                    `${baseId}-part-${parts.length}`,
+                    match[0],
+                    true,
+                    highlightColorKey
+                )
+            );
             lastIndex = match.index + match[0].length;
         }
 
         if (lastIndex < content.length) {
-            parts.push({
-                text: content.slice(lastIndex),
-                highlight: false
-            });
+            parts.push(
+                createHighlightPart(
+                    `${baseId}-part-${parts.length}`,
+                    content.slice(lastIndex),
+                    false,
+                    ""
+                )
+            );
         }
 
         return parts.length > 0
             ? parts
-            : [
-                {
-                    text: content,
-                    highlight: false
+            : [createHighlightPart(`${baseId}-part-0`, content, false, "")];
+    }
+
+    function splitExtractedTextIntoParagraphs(text) {
+        return String(text || "")
+            .replace(/\r/g, "")
+            .split(/\n{2,}/)
+            .map((paragraph) =>
+                paragraph
+                    .replace(/\n+/g, " ")
+                    .replace(/\s+/g, " ")
+                    .trim()
+            )
+            .filter(Boolean);
+    }
+
+    function looksLikeExtractedHeading(paragraph) {
+        const clean = String(paragraph || "").trim();
+        if (!clean) {
+            return false;
+        }
+
+        const wordCount = clean.split(/\s+/).filter(Boolean).length;
+        return clean.length <= 78
+            && wordCount <= 8
+            && !/[.!?;:]$/.test(clean);
+    }
+
+    function buildHighlightSectionsFromExtractedText(
+        text,
+        highlights,
+        options = {}
+    ) {
+        const title =
+            String(
+                options.primaryTitle ||
+                "Material completo"
+            ).trim() ||
+            "Material completo";
+        const paragraphs =
+            splitExtractedTextIntoParagraphs(text);
+
+        if (!paragraphs.length) {
+            return [];
+        }
+
+        const sections = [];
+        let currentSection = null;
+
+        const pushSection = () => {
+            if (
+                currentSection &&
+                currentSection.paragraphs.length
+            ) {
+                sections.push(currentSection);
+            }
+        };
+
+        paragraphs.forEach((paragraph) => {
+            const paragraphIndex =
+                currentSection
+                    ? currentSection.paragraphs.length
+                    : 0;
+            const shouldStartWithHeading =
+                looksLikeExtractedHeading(
+                    paragraph
+                );
+
+            if (shouldStartWithHeading) {
+                pushSection();
+                currentSection = {
+                    label: `Trecho ${sections.length + 1}`,
+                    title: paragraph,
+                    paragraphs: []
+                };
+                return;
+            }
+
+            if (
+                !currentSection ||
+                currentSection.paragraphs.length >= 4
+            ) {
+                pushSection();
+                currentSection = {
+                    label: `Trecho ${sections.length + 1}`,
+                    title:
+                        sections.length === 0
+                            ? title
+                            : `Continuidade ${sections.length + 1}`,
+                    paragraphs: []
+                };
+            }
+
+            currentSection.paragraphs.push(
+                buildHighlightedParts(
+                    paragraph,
+                    highlights,
+                    {
+                        baseId:
+                            `highlight-section-${sections.length}-paragraph-${paragraphIndex}`,
+                        highlightColorKey:
+                            options.highlightColorKey
+                    }
+                )
+            );
+        });
+
+        pushSection();
+
+        return sections;
+    }
+
+    function extractHighlightedSummaryLead(sections = []) {
+        for (const section of sections) {
+            for (const paragraph of section.paragraphs || []) {
+                const content = (paragraph || [])
+                    .map((part) =>
+                        String(part.text || "")
+                    )
+                    .join("")
+                    .trim();
+
+                if (content) {
+                    return content;
                 }
-            ];
+            }
+        }
+
+        return "";
+    }
+
+    function extractHighlightedSummaryBullets(sourceBlock, sections = []) {
+        const highlightedSnippets = [];
+
+        sections.forEach((section) => {
+            (section.paragraphs || []).forEach(
+                (paragraph) => {
+                    (paragraph || []).forEach(
+                        (part) => {
+                            if (
+                                part.highlight &&
+                                part.text &&
+                                highlightedSnippets.length < 5
+                            ) {
+                                highlightedSnippets.push(
+                                    String(part.text)
+                                        .trim()
+                                );
+                            }
+                        }
+                    );
+                }
+            );
+        });
+
+        return highlightedSnippets.length
+            ? highlightedSnippets
+            : [
+                ...(sourceBlock.learn
+                    ?.keyConcepts || []),
+                ...(sourceBlock.learn
+                    ?.hotPoints || [])
+            ]
+                .filter(Boolean)
+                .slice(0, 5);
+    }
+
+    function findFirstHighlightTarget(
+        sections = []
+    ) {
+        let fallback = null;
+
+        for (const section of sections) {
+            for (const paragraph of section.paragraphs || []) {
+                for (const part of paragraph || []) {
+                    if (
+                        !fallback &&
+                        String(part.text || "").trim()
+                    ) {
+                        fallback = part;
+                    }
+
+                    if (
+                        part.highlight &&
+                        String(part.text || "").trim()
+                    ) {
+                        return part;
+                    }
+                }
+            }
+        }
+
+        return fallback;
+    }
+
+    function refreshHighlightedDocumentState(
+        documentData,
+        state,
+        sourceBlock
+    ) {
+        const block =
+            sourceBlock ||
+            state.blocks.find(
+                (item) =>
+                    item.id ===
+                    documentData.sourceBlockId
+            ) ||
+            state.blocks.find(
+                (item) =>
+                    item.id ===
+                    state.activeBlockId
+            ) ||
+            state.blocks[0];
+        const materialLabel =
+            state.studyTitle ||
+            state.materialName ||
+            "Documento";
+        const sections = Array.isArray(
+            documentData.sections
+        )
+            ? documentData.sections
+            : [];
+        const selected =
+            findSelectedHighlightPart(
+                documentData
+            );
+        const fallbackPart =
+            findFirstHighlightTarget(
+                sections
+            );
+        const nextSelectedId = selected
+            ? selected.part.id
+            : (fallbackPart?.id || "");
+        const extractedLead =
+            extractHighlightedSummaryLead(
+                sections
+            );
+
+        return {
+            ...documentData,
+            sourceBlockId:
+                block?.id ||
+                documentData.sourceBlockId ||
+                "",
+            title:
+                documentData.title ||
+                `${materialLabel} - texto com marcador`,
+            subtitle:
+                documentData.subtitle ||
+                "Documento original preservado, com destaque nas partes mais importantes.",
+            ctaLabel:
+                documentData.ctaLabel ||
+                "Extrair resumo para documento novo",
+            sections,
+            originalSections: Array.isArray(documentData.originalSections)
+                ? documentData.originalSections
+                : clone(sections),
+            selectedPartId: nextSelectedId,
+            activeColorKey:
+                resolveHighlightColorKey(
+                    documentData.activeColorKey ||
+                    "gold"
+                ),
+            colorOptions:
+                getHighlightColorOptions(),
+            extractedSummary: {
+                title:
+                    `${block?.title || "Resumo"} - resumo extraido`,
+                lead:
+                    extractedLead ||
+                    block?.learn?.summary ||
+                    "",
+                bullets:
+                    extractHighlightedSummaryBullets(
+                        block || {},
+                        sections
+                    ),
+                sourceTitle:
+                    materialLabel,
+                blockTitle:
+                    block?.title || ""
+            }
+        };
     }
 
     function buildHighlightedDocument(state, block) {
@@ -899,42 +1438,422 @@
         const learnSections = Array.isArray(sourceBlock.learn.sections)
             ? sourceBlock.learn.sections
             : [];
-        const sections = [
-            {
-                label: "Visao geral",
-                title: sourceBlock.title,
-                paragraphs: [
-                    buildHighlightedParts(sourceBlock.learn.summary, emphasisTerms),
-                    buildHighlightedParts(sourceBlock.learn.intro || sourceBlock.subtitle || "", emphasisTerms)
-                ].filter((parts) => parts.some((part) => part.text))
-            },
-            ...learnSections.map((section) => ({
-                label: section.label,
-                title: section.title,
-                paragraphs: section.paragraphs.map((paragraph) =>
-                    buildHighlightedParts(paragraph, emphasisTerms)
+        const extractedTextSections =
+            state.materialExtractedText
+                ? buildHighlightSectionsFromExtractedText(
+                    state.materialExtractedText,
+                    emphasisTerms,
+                    {
+                        primaryTitle: materialLabel,
+                        highlightColorKey: "gold"
+                    }
                 )
-            }))
-        ];
+                : [];
+        const sections = extractedTextSections.length
+            ? extractedTextSections
+            : [
+                {
+                    label: "Visao geral",
+                    title: sourceBlock.title,
+                    paragraphs: [
+                        buildHighlightedParts(
+                            sourceBlock.learn.summary,
+                            emphasisTerms,
+                            {
+                                baseId: "highlight-summary",
+                                highlightColorKey: "gold"
+                            }
+                        ),
+                        buildHighlightedParts(
+                            sourceBlock.learn.intro || sourceBlock.subtitle || "",
+                            emphasisTerms,
+                            {
+                                baseId: "highlight-intro",
+                                highlightColorKey: "gold"
+                            }
+                        )
+                    ].filter((parts) =>
+                        parts.some((part) => part.text)
+                    )
+                },
+                ...learnSections.map((section, sectionIndex) => ({
+                    label: section.label,
+                    title: section.title,
+                    paragraphs: section.paragraphs.map(
+                        (paragraph, paragraphIndex) =>
+                            buildHighlightedParts(
+                                paragraph,
+                                emphasisTerms,
+                                {
+                                    baseId:
+                                        `highlight-learn-${sectionIndex}-${paragraphIndex}`,
+                                    highlightColorKey:
+                                        "gold"
+                                }
+                            )
+                    )
+                }))
+            ];
+        const extractedLead =
+            extractHighlightedSummaryLead(
+                sections
+            );
 
-        return {
+        return refreshHighlightedDocumentState({
             id: `highlight-${sourceBlock.id}`,
             sourceBlockId: sourceBlock.id,
             title: `${materialLabel} - texto com marcador`,
-            subtitle: "Documento original preservado, com destaque nas partes mais importantes.",
+            subtitle: extractedTextSections.length
+                ? "Texto extraido do PDF com destaques da IA e edicao manual no mesmo visual."
+                : "Documento original preservado, com destaque nas partes mais importantes.",
             ctaLabel: "Extrair resumo para documento novo",
             sections,
+            originalSections: clone(sections),
+            selectedPartId: "",
+            activeColorKey: "gold",
+            colorOptions: getHighlightColorOptions(),
             extractedSummary: {
                 title: `${sourceBlock.title} - resumo extraido`,
-                lead: sourceBlock.learn.summary,
-                bullets: [
-                    ...(sourceBlock.learn.keyConcepts || []).slice(0, 4),
-                    ...(sourceBlock.learn.hotPoints || []).slice(0, 2)
-                ].filter(Boolean),
+                lead: extractedLead || sourceBlock.learn.summary,
+                bullets: extractHighlightedSummaryBullets(
+                    sourceBlock,
+                    sections
+                ),
                 sourceTitle: materialLabel,
                 blockTitle: sourceBlock.title
             }
+        }, state, sourceBlock);
+    }
+
+    function buildPracticeCuePool(block) {
+        return [
+            block.title,
+            block.subtitle,
+            ...(Array.isArray(block.topics)
+                ? block.topics
+                : []),
+            ...(Array.isArray(
+                block.learn?.keyConcepts
+            )
+                ? block.learn.keyConcepts
+                : []),
+            ...(Array.isArray(
+                block.learn?.hotPoints
+            )
+                ? block.learn.hotPoints
+                : [])
+        ]
+            .filter(Boolean)
+            .map((item) => String(item).trim())
+            .filter(Boolean);
+    }
+
+    function buildFallbackQuizItem(
+        block,
+        absoluteIndex
+    ) {
+        const cues =
+            buildPracticeCuePool(block);
+        const cue =
+            cues[
+                absoluteIndex %
+                Math.max(cues.length, 1)
+            ] || block.title;
+
+        return buildQuestion(
+            `No material completo de ${block.title}, qual leitura ajuda mais a dominar ${cue}?`,
+            [
+                "Responder so pelo tema geral",
+                "Comparar criterio, funcao e limite antes de decidir",
+                "Ignorar relacoes entre conceitos",
+                "Memorizar uma frase isolada"
+            ],
+            1,
+            "A leitura mais forte nasce quando voce compara criterio, funcao e limite, em vez de decidir por semelhanca."
+        );
+    }
+
+    function buildFallbackTrueFalseItem(
+        block,
+        absoluteIndex
+    ) {
+        const cues =
+            buildPracticeCuePool(block);
+        const cue =
+            cues[
+                absoluteIndex %
+                Math.max(cues.length, 1)
+            ] || block.title;
+
+        return buildTrueFalse(
+            `No estudo completo de ${block.title}, ${cue} pode ser decidido sem comparar criterio e limite.`,
+            false,
+            "Quando criterio e limite somem da leitura, o erro por semelhanca superficial cresce."
+        );
+    }
+
+    function buildFallbackFlashcardItem(
+        block,
+        absoluteIndex
+    ) {
+        const cues =
+            buildPracticeCuePool(block);
+        const cue =
+            cues[
+                absoluteIndex %
+                Math.max(cues.length, 1)
+            ] || block.title;
+
+        return buildFlashcard(
+            `Ponto-chave ${absoluteIndex + 1}`,
+            cue,
+            "Use esse lembrete para puxar o criterio central do material inteiro antes de responder."
+        );
+    }
+
+    function normalizeQuizItem(
+        item,
+        block,
+        absoluteIndex
+    ) {
+        if (
+            !item ||
+            !String(item.prompt || "").trim()
+        ) {
+            return buildFallbackQuizItem(
+                block,
+                absoluteIndex
+            );
+        }
+
+        const options = Array.isArray(item.options)
+            ? item.options
+                .map((option) =>
+                    String(option || "").trim()
+                )
+                .filter(Boolean)
+            : [];
+
+        while (options.length < 4) {
+            options.push(
+                `Opcao ${String.fromCharCode(65 + options.length)}`
+            );
+        }
+
+        const correctIndex =
+            Number.isFinite(item.correctIndex)
+                ? Math.max(
+                    0,
+                    Math.min(
+                        options.length - 1,
+                        Number(item.correctIndex)
+                    )
+                )
+                : 0;
+
+        return buildQuestion(
+            String(item.prompt).trim(),
+            options.slice(0, 4),
+            correctIndex,
+            String(item.rationale || "").trim() ||
+                "Compare criterio, funcao e limite para validar a resposta correta."
+        );
+    }
+
+    function normalizeTrueFalseItem(
+        item,
+        block,
+        absoluteIndex
+    ) {
+        if (
+            !item ||
+            !String(item.statement || "").trim()
+        ) {
+            return buildFallbackTrueFalseItem(
+                block,
+                absoluteIndex
+            );
+        }
+
+        return buildTrueFalse(
+            String(item.statement).trim(),
+            Boolean(item.answer),
+            String(item.rationale || "").trim() ||
+                "Volte ao criterio do texto para separar o que e regra do que e excecao."
+        );
+    }
+
+    function normalizeFlashcardItem(
+        item,
+        block,
+        absoluteIndex
+    ) {
+        if (
+            !item ||
+            !String(item.front || "").trim() ||
+            !String(item.back || "").trim()
+        ) {
+            return buildFallbackFlashcardItem(
+                block,
+                absoluteIndex
+            );
+        }
+
+        return buildFlashcard(
+            String(item.front).trim(),
+            String(item.back).trim(),
+            String(item.tip || "").trim() ||
+                "Use esse card para puxar o criterio principal do material."
+        );
+    }
+
+    function normalizePracticeSeriesByType(
+        block,
+        practice,
+        type
+    ) {
+        const config = {
+            quiz: {
+                baseKey: "quiz",
+                seriesKey: "quizSeries",
+                itemCount: 3,
+                normalizer: normalizeQuizItem
+            },
+            trueFalse: {
+                baseKey: "trueFalse",
+                seriesKey: "trueFalseSeries",
+                itemCount: 3,
+                normalizer: normalizeTrueFalseItem
+            },
+            flashcards: {
+                baseKey: "flashcards",
+                seriesKey: "flashcardSeries",
+                itemCount: 3,
+                normalizer: normalizeFlashcardItem
+            }
+        }[type];
+
+        const rawBase = Array.isArray(
+            practice[config.baseKey]
+        )
+            ? practice[config.baseKey]
+            : [];
+        const rawSeries = Array.isArray(
+            practice[config.seriesKey]
+        )
+            ? practice[config.seriesKey]
+            : [];
+        const pool = [
+            ...rawBase,
+            ...rawSeries.flatMap((series) =>
+                Array.isArray(series)
+                    ? series
+                    : []
+            )
+        ].map((item, index) =>
+            config.normalizer(
+                item,
+                block,
+                index
+            )
+        );
+        const safePool = pool.length
+            ? pool
+            : Array.from(
+                { length: config.itemCount * 3 },
+                (_, index) =>
+                    config.normalizer(
+                        null,
+                        block,
+                        index
+                    )
+            );
+        const series = Array.from(
+            { length: 3 },
+            (_, seriesIndex) =>
+                Array.from(
+                    { length: config.itemCount },
+                    (_, itemIndex) => {
+                        const absoluteIndex =
+                            seriesIndex *
+                                config.itemCount +
+                            itemIndex;
+                        const source =
+                            safePool[
+                                absoluteIndex %
+                                    safePool.length
+                            ];
+
+                        return clone(source);
+                    }
+                )
+        );
+
+        return {
+            base: series[0],
+            series
         };
+    }
+
+    function findSelectedHighlightPart(
+        documentData
+    ) {
+        if (
+            !documentData ||
+            !documentData.selectedPartId
+        ) {
+            return null;
+        }
+
+        for (
+            let sectionIndex = 0;
+            sectionIndex <
+            (documentData.sections || [])
+                .length;
+            sectionIndex += 1
+        ) {
+            const section =
+                documentData.sections[
+                    sectionIndex
+                ];
+
+            for (
+                let paragraphIndex = 0;
+                paragraphIndex <
+                (section.paragraphs || [])
+                    .length;
+                paragraphIndex += 1
+            ) {
+                const paragraph =
+                    section.paragraphs[
+                        paragraphIndex
+                    ];
+
+                for (
+                    let partIndex = 0;
+                    partIndex <
+                    (paragraph || []).length;
+                    partIndex += 1
+                ) {
+                    const part =
+                        paragraph[partIndex];
+
+                    if (
+                        part.id ===
+                        documentData.selectedPartId
+                    ) {
+                        return {
+                            sectionIndex,
+                            paragraphIndex,
+                            partIndex,
+                            part
+                        };
+                    }
+                }
+            }
+        }
+
+        return null;
     }
 
     function createSavedSummaryRecord(documentData, state) {
@@ -998,6 +1917,13 @@
     }
 
     function enrichLearnContent(block, materialLabel) {
+        if (
+            block.generatedByAi ||
+            (block.learn && Array.isArray(block.learn.documentSections) && block.learn.documentSections.length > 0)
+        ) {
+            return block;
+        }
+
         if (block.id === "block-1") {
             return {
                 ...block,
@@ -1429,13 +2355,29 @@
             accessTier: "free",
             subscriptionStatus: "registered_free",
             customerId: "",
+            accountUser: null,
+            accountAuthenticated: false,
             premiumEntitlement: null,
             premiumStatusConfigured: false,
+            generationPaused: false,
+            opsLanes: {
+                freeLanePaused: false,
+                premiumLanePaused: false
+            },
+            opsThresholds: {
+                dailyWarnThreshold: 500,
+                dailyCriticalThreshold: 600,
+                dailyHardStopThreshold: 650
+            },
+            trialState: null,
             studyLibraryId: createStudyLibraryId(),
             studyTitle: "",
             materialName: "",
+            materialHash: "",
             materialSizeLabel: "",
             materialPageCount: null,
+            materialExtractedText: "",
+            materialExtractionStatus: "pending",
             examDate: "",
             calendarMonth: today.getMonth(),
             calendarYear: today.getFullYear(),
@@ -1444,12 +2386,16 @@
             studyMinutes: 30,
             analysisProgress: 8,
             analysisStatus: "pending",
+            aiGeneration: null,
             blocks,
             sessions: buildSessions(blocks),
             activeBlockId: blocks[0].id,
             blockTab: "aprender",
             blockFullScreen: true,
             blockAssistMode: "",
+            highlightEditorOpen: false,
+            highlightEditorFullScreen: false,
+            levelExam: createLevelExamState(),
             highlightedDocument: null,
             savedSummaries: [],
             activeSavedSummaryId: "",
@@ -1549,14 +2495,19 @@
                 ...this.state,
                 studyLibraryId: createStudyLibraryId(),
                 materialName: fileLike.name || "material.pdf",
+                materialHash: fileLike.materialHash || fileLike.hash || "",
                 materialSizeLabel: sizeLabel,
                 materialPageCount: pageCount,
+                materialExtractedText: "",
+                materialExtractionStatus: "pending",
                 studyTitle,
                 blocks,
                 sessions: buildSessions(blocks),
                 activeBlockId: blocks[0].id,
                 blockFullScreen: true,
                 blockAssistMode: "",
+                aiGeneration: null,
+                levelExam: createLevelExamState(),
                 sessionNote: null,
                 progressLabel: "Material recebido. Agora vamos ajustar tudo ao seu prazo e a sua meta."
             };
@@ -1657,6 +2608,261 @@
             return this.state;
         },
 
+        setMaterialExtraction(result = {}) {
+            this.state = {
+                ...this.state,
+                materialExtractedText: result.text || this.state.materialExtractedText || "",
+                materialExtractionStatus: result.status || (result.text ? "extracted" : "empty_text"),
+                materialPageCount: Number.isFinite(result.pageCount)
+                    ? result.pageCount
+                    : this.state.materialPageCount
+            };
+
+            return this.state;
+        },
+
+        applyGeneratedBundle(payload = {}) {
+            const bundle = payload.bundle || payload;
+            const sourceBlocks = Array.isArray(bundle.blocks) ? bundle.blocks : [];
+            if (!sourceBlocks.length) {
+                return this.state;
+            }
+
+            const blocks = sourceBlocks.map((block, index) => {
+                const practice = block.practice || {};
+                const normalizedBlock = {
+                    ...block,
+                    id: block.id || `block-${index + 1}`
+                };
+                const normalizedQuiz =
+                    normalizePracticeSeriesByType(
+                        normalizedBlock,
+                        practice,
+                        "quiz"
+                    );
+                const normalizedTrueFalse =
+                    normalizePracticeSeriesByType(
+                        normalizedBlock,
+                        practice,
+                        "trueFalse"
+                    );
+                const normalizedFlashcards =
+                    normalizePracticeSeriesByType(
+                        normalizedBlock,
+                        practice,
+                        "flashcards"
+                    );
+                const questions = Array.isArray(block.exam && block.exam.questions)
+                    ? block.exam.questions.slice(0, 5)
+                    : [];
+
+                return {
+                    ...block,
+                    id: block.id || `block-${index + 1}`,
+                    generatedByAi: true,
+                    status: index === 0 ? "recommended" : (block.status || "ready"),
+                    progress: {
+                        learn: false,
+                        practice: false,
+                        exam: false,
+                        ...(block.progress || {})
+                    },
+                    learn: {
+                        summary: "",
+                        intro: "",
+                        hotPoints: [],
+                        keyConcepts: [],
+                        pitfalls: [],
+                        documentSections: [],
+                        explainBetter: null,
+                        reviewInFivePoints: [],
+                        ...(block.learn || {})
+                    },
+                    practice: {
+                        targets: {
+                            quiz: 3,
+                            trueFalse: 3,
+                            flashcards: 3
+                        },
+                        ...practice,
+                        quiz: normalizedQuiz.base,
+                        quizSeries: normalizedQuiz.series,
+                        trueFalse: normalizedTrueFalse.base,
+                        trueFalseSeries: normalizedTrueFalse.series,
+                        flashcards: normalizedFlashcards.base,
+                        flashcardSeries: normalizedFlashcards.series
+                    },
+                    exam: {
+                        ...(block.exam || {}),
+                        baseCount: 5,
+                        questions
+                    }
+                };
+            });
+
+            this.state = {
+                ...this.state,
+                studyTitle: bundle.title || this.state.studyTitle,
+                blocks,
+                sessions: buildSessions(blocks),
+                activeBlockId: bundle.recommendedBlockId && blocks.some((block) => block.id === bundle.recommendedBlockId)
+                    ? bundle.recommendedBlockId
+                    : blocks[0].id,
+                blockAssistMode: "",
+                aiGeneration: {
+                    status: payload.status || "generated",
+                    provider: payload.provider || "",
+                    model: payload.model || "",
+                    promptVersion: payload.promptVersion || "",
+                    warnings: Array.isArray(bundle.warnings) ? bundle.warnings : [],
+                    generatedAt: new Date().toISOString()
+                },
+                progressLabel: "Sua rota foi gerada com IA a partir do PDF. Agora escolha como quer estudar."
+            };
+
+            return this.state;
+        },
+
+        appendMiniExamQuestions(blockId, questions = []) {
+            const targetId = blockId || this.state.activeBlockId;
+            const nextQuestions = Array.isArray(questions) ? questions : [];
+            if (!targetId || !nextQuestions.length) {
+                return this.state;
+            }
+
+            const blocks = this.state.blocks.map((block) => {
+                if (block.id !== targetId) {
+                    return block;
+                }
+
+                return {
+                    ...block,
+                    exam: {
+                        ...block.exam,
+                        baseCount: Number(block.exam && block.exam.baseCount) || 5,
+                        questions: [
+                            ...((block.exam && block.exam.questions) || []),
+                            ...nextQuestions
+                        ]
+                    }
+                };
+            });
+            const sessions = normalizeSessions(blocks, this.state.sessions);
+            sessions[targetId].miniExam = createMiniExamSession(
+                (blocks.find((block) => block.id === targetId).exam || {}).questions || []
+            );
+
+            this.state = {
+                ...this.state,
+                blocks,
+                sessions,
+                progressLabel: "Mais 5 questoes premium foram adicionadas a mini prova deste bloco."
+            };
+
+            return this.state;
+        },
+
+        setLevelExamQuestionCount(count) {
+            const allowed = [10, 20, 30];
+            const questionCount = allowed.includes(Number(count)) ? Number(count) : 10;
+            this.state = {
+                ...this.state,
+                levelExam: createLevelExamState({
+                    ...this.state.levelExam,
+                    questionCount,
+                    questions: [],
+                    started: false,
+                    answers: [],
+                    index: 0,
+                    isComplete: false,
+                    result: null,
+                    status: "idle"
+                })
+            };
+
+            return this.state;
+        },
+
+        setLevelExamQuestions(payload = {}) {
+            const questions = Array.isArray(payload.questions) ? payload.questions : [];
+            this.state = {
+                ...this.state,
+                levelExam: createLevelExamState({
+                    ...this.state.levelExam,
+                    title: payload.title || "Prova de nivel RotaNota",
+                    questions,
+                    questionCount: questions.length || this.state.levelExam.questionCount,
+                    started: false,
+                    index: 0,
+                    answers: [],
+                    isComplete: false,
+                    result: null,
+                    status: questions.length ? "ready" : "idle"
+                })
+            };
+
+            return this.state;
+        },
+
+        startLevelExam() {
+            this.state = {
+                ...this.state,
+                levelExam: createLevelExamState({
+                    ...this.state.levelExam,
+                    started: true,
+                    index: 0,
+                    answers: [],
+                    isComplete: false,
+                    result: null,
+                    status: "running"
+                })
+            };
+
+            return this.state;
+        },
+
+        setLevelExamAnswer(answerIndex) {
+            const levelExam = clone(this.state.levelExam);
+            levelExam.answers[levelExam.index] = answerIndex;
+            this.state = {
+                ...this.state,
+                levelExam
+            };
+
+            return this.state;
+        },
+
+        advanceLevelExam() {
+            const levelExam = clone(this.state.levelExam);
+            const questions = Array.isArray(levelExam.questions) ? levelExam.questions : [];
+
+            if (levelExam.index >= questions.length - 1) {
+                let correct = 0;
+                questions.forEach((question, index) => {
+                    if (levelExam.answers[index] === question.correctIndex) {
+                        correct += 1;
+                    }
+                });
+                levelExam.isComplete = true;
+                levelExam.started = false;
+                levelExam.status = "complete";
+                levelExam.result = {
+                    correct,
+                    total: questions.length,
+                    ratio: questions.length ? Math.round((correct / questions.length) * 100) : 0
+                };
+            } else {
+                levelExam.index += 1;
+            }
+
+            this.state = {
+                ...this.state,
+                levelExam
+            };
+
+            return this.state;
+        },
+
         setBlockTab(tab) {
             this.state = {
                 ...this.state,
@@ -1732,16 +2938,251 @@
                 ? this.getBlockById(blockId)
                 : this.getActiveBlock();
             const highlightedDocument =
-                buildHighlightedDocument(this.state, block);
+                refreshHighlightedDocumentState(
+                    buildHighlightedDocument(
+                        this.state,
+                        block
+                    ),
+                    this.state,
+                    block
+                );
 
             this.state = {
                 ...this.state,
                 highlightedDocument,
+                highlightEditorOpen: false,
+                highlightEditorFullScreen: false,
                 activeBlockId: block ? block.id : this.state.activeBlockId,
                 progressLabel: "Documento marcado preparado. Agora você pode exportar o texto grifado ou só os destaques em PDF."
             };
 
             return this.state;
+        },
+
+        setHighlightEditorOpen(value) {
+            this.state = {
+                ...this.state,
+                highlightEditorOpen: Boolean(value)
+            };
+
+            return this.state;
+        },
+
+        setHighlightEditorFullScreen(value) {
+            this.state = {
+                ...this.state,
+                highlightEditorFullScreen: Boolean(value)
+            };
+
+            return this.state;
+        },
+
+        updateHighlightedDocument(updater) {
+            const current =
+                this.state.highlightedDocument ||
+                buildHighlightedDocument(
+                    this.state,
+                    this.getActiveBlock()
+                );
+            const draft = clone(current);
+            const next =
+                typeof updater === "function"
+                    ? updater(draft) || draft
+                    : draft;
+            const normalized =
+                refreshHighlightedDocumentState(
+                    next,
+                    this.state
+                );
+
+            this.state = {
+                ...this.state,
+                highlightedDocument:
+                    normalized
+            };
+
+            return this.state;
+        },
+
+        setHighlightSelection(sectionIndex, paragraphIndex, partIndex) {
+            return this.updateHighlightedDocument((documentData) => {
+                const target =
+                    documentData.sections?.[Number(sectionIndex)]
+                        ?.paragraphs?.[Number(paragraphIndex)]
+                        ?.[Number(partIndex)];
+
+                documentData.selectedPartId =
+                    target?.id || "";
+                return documentData;
+            });
+        },
+
+        setHighlightTextSelection(sectionIndex, paragraphIndex, startOffset, endOffset) {
+            return this.updateHighlightedDocument((documentData) => {
+                const normalizedSectionIndex = Number(sectionIndex);
+                const normalizedParagraphIndex = Number(paragraphIndex);
+                const paragraph =
+                    documentData.sections?.[normalizedSectionIndex]
+                        ?.paragraphs?.[normalizedParagraphIndex];
+
+                if (!Array.isArray(paragraph)) {
+                    return documentData;
+                }
+
+                const selection =
+                    selectHighlightRangeFromParagraph(
+                        paragraph,
+                        startOffset,
+                        endOffset,
+                        documentData.activeColorKey
+                    );
+
+                documentData.sections[normalizedSectionIndex].paragraphs[normalizedParagraphIndex] =
+                    selection.paragraph;
+                documentData.selectedPartId =
+                    selection.selectedPartId || "";
+                return documentData;
+            });
+        },
+
+        updateSelectedHighlightText(text) {
+            return this.updateHighlightedDocument((documentData) => {
+                const selected =
+                    findSelectedHighlightPart(
+                        documentData
+                    );
+
+                if (!selected) {
+                    return documentData;
+                }
+
+                const nextText =
+                    String(text || "");
+
+                selected.part.text =
+                    nextText;
+                const paragraph =
+                    documentData.sections?.[selected.sectionIndex]
+                        ?.paragraphs?.[selected.paragraphIndex];
+
+                if (Array.isArray(paragraph)) {
+                    documentData.sections[selected.sectionIndex].paragraphs[selected.paragraphIndex] =
+                        normalizeHighlightParagraph(paragraph);
+                }
+
+                if (!nextText) {
+                    documentData.selectedPartId = "";
+                }
+
+                return documentData;
+            });
+        },
+
+        toggleSelectedHighlight(forceValue) {
+            return this.updateHighlightedDocument((documentData) => {
+                const selected =
+                    findSelectedHighlightPart(
+                        documentData
+                    );
+
+                if (!selected) {
+                    return documentData;
+                }
+
+                const nextValue =
+                    typeof forceValue === "boolean"
+                        ? forceValue
+                        : !selected.part.highlight;
+
+                selected.part.highlight =
+                    nextValue;
+                selected.part.colorKey =
+                    nextValue
+                        ? resolveHighlightColorKey(
+                            selected.part.colorKey ||
+                            documentData.activeColorKey
+                        )
+                        : "";
+
+                return documentData;
+            });
+        },
+
+        setHighlightColor(colorKey) {
+            const normalizedColor =
+                resolveHighlightColorKey(
+                    colorKey
+                );
+
+            return this.updateHighlightedDocument((documentData) => {
+                documentData.activeColorKey =
+                    normalizedColor;
+                const selected =
+                    findSelectedHighlightPart(
+                        documentData
+                    );
+
+                if (selected) {
+                    selected.part.highlight = true;
+                    selected.part.colorKey =
+                        normalizedColor;
+                }
+
+                return documentData;
+            });
+        },
+
+        clearAllHighlights() {
+            return this.updateHighlightedDocument((documentData) => {
+                (documentData.sections || []).forEach((section) => {
+                    (section.paragraphs || []).forEach((paragraph) => {
+                        (paragraph || []).forEach((part) => {
+                            part.highlight = false;
+                            part.colorKey = "";
+                        });
+                    });
+                });
+
+                return documentData;
+            });
+        },
+
+        deleteSelectedHighlightText() {
+            return this.updateHighlightedDocument((documentData) => {
+                const selected =
+                    findSelectedHighlightPart(
+                        documentData
+                    );
+
+                if (!selected) {
+                    return documentData;
+                }
+
+                const paragraph =
+                    documentData.sections?.[selected.sectionIndex]
+                        ?.paragraphs?.[selected.paragraphIndex];
+
+                if (!Array.isArray(paragraph)) {
+                    return documentData;
+                }
+
+                const nextParagraph =
+                    paragraph.filter((part) => part.id !== selected.part.id);
+
+                documentData.sections[selected.sectionIndex].paragraphs[selected.paragraphIndex] =
+                    normalizeHighlightParagraph(nextParagraph);
+                documentData.selectedPartId = "";
+                return documentData;
+            });
+        },
+
+        restoreOriginalHighlightedDocument() {
+            return this.updateHighlightedDocument((documentData) => {
+                documentData.sections =
+                    clone(documentData.originalSections || []);
+                documentData.selectedPartId = "";
+                return documentData;
+            });
         },
 
         setSavedSummaries(items) {
@@ -1914,11 +3355,10 @@
                 seeds.quiz.freeSeriesUsed = options.allSeries ? 1 : current?.freeSeriesUsed || 1;
                 seeds.quiz.completedSeries = options.allSeries
                     ? []
-                    : normalizeCompletedSeries("quiz", current).filter((index) => index !== seeds.quiz.currentSeriesIndex);
+                    : normalizeCompletedSeries("quiz", current);
                 seeds.quiz.seriesSnapshots = options.allSeries
                     ? {}
                     : { ...(current?.seriesSnapshots || {}) };
-                delete seeds.quiz.seriesSnapshots[seeds.quiz.currentSeriesIndex];
             }
             if (type === "trueFalse") {
                 const current = this.getActiveSession("trueFalse");
@@ -1926,11 +3366,10 @@
                 seeds.trueFalse.freeSeriesUsed = options.allSeries ? 1 : current?.freeSeriesUsed || 1;
                 seeds.trueFalse.completedSeries = options.allSeries
                     ? []
-                    : normalizeCompletedSeries("trueFalse", current).filter((index) => index !== seeds.trueFalse.currentSeriesIndex);
+                    : normalizeCompletedSeries("trueFalse", current);
                 seeds.trueFalse.seriesSnapshots = options.allSeries
                     ? {}
                     : { ...(current?.seriesSnapshots || {}) };
-                delete seeds.trueFalse.seriesSnapshots[seeds.trueFalse.currentSeriesIndex];
             }
             if (type === "flashcards") {
                 const current = this.getActiveSession("flashcards");
@@ -1938,11 +3377,10 @@
                 seeds.flashcards.freeSeriesUsed = options.allSeries ? 1 : current?.freeSeriesUsed || 1;
                 seeds.flashcards.completedSeries = options.allSeries
                     ? []
-                    : normalizeCompletedSeries("flashcards", current).filter((index) => index !== seeds.flashcards.currentSeriesIndex);
+                    : normalizeCompletedSeries("flashcards", current);
                 seeds.flashcards.seriesSnapshots = options.allSeries
                     ? {}
                     : { ...(current?.seriesSnapshots || {}) };
-                delete seeds.flashcards.seriesSnapshots[seeds.flashcards.currentSeriesIndex];
             }
             return this.updateActiveSession(type, seeds[type]);
         },
@@ -2210,12 +3648,17 @@
                 accessTier: this.state.accessTier,
                 subscriptionStatus: this.state.subscriptionStatus,
                 customerId: this.state.customerId,
+                accountUser: this.state.accountUser,
+                accountAuthenticated: this.state.accountAuthenticated,
                 premiumEntitlement: this.state.premiumEntitlement,
                 studyTitle: this.state.studyTitle,
                 studyLibraryId: this.state.studyLibraryId,
                 materialName: this.state.materialName,
+                materialHash: this.state.materialHash,
                 materialSizeLabel: this.state.materialSizeLabel,
                 materialPageCount: this.state.materialPageCount,
+                materialExtractedText: this.state.materialExtractedText,
+                materialExtractionStatus: this.state.materialExtractionStatus,
                 examDate: this.state.examDate,
                 targetScore: this.state.targetScore,
                 studyHours: this.state.studyHours,
@@ -2225,7 +3668,14 @@
                 activeBlockId: this.state.activeBlockId,
                 blockTab: this.state.blockTab,
                 blockFullScreen: this.state.blockFullScreen,
+                highlightEditorOpen: this.state.highlightEditorOpen,
+                highlightEditorFullScreen: this.state.highlightEditorFullScreen,
                 blockAssistMode: this.state.blockAssistMode,
+                aiGeneration: this.state.aiGeneration,
+                levelExam: clone(this.state.levelExam),
+                highlightedDocument: clone(this.state.highlightedDocument),
+                savedSummaries: clone(this.state.savedSummaries),
+                activeSavedSummaryId: this.state.activeSavedSummaryId,
                 savedDraftId: this.state.savedDraftId,
                 savedAt: this.state.savedAt,
                 premiumOffer: this.state.premiumOffer,
@@ -2243,8 +3693,14 @@
                 accessTier: this.state.accessTier,
                 subscriptionStatus: this.state.subscriptionStatus,
                 customerId: this.state.customerId,
+                accountUser: this.state.accountUser,
+                accountAuthenticated: this.state.accountAuthenticated,
                 premiumEntitlement: this.state.premiumEntitlement,
-                premiumStatusConfigured: this.state.premiumStatusConfigured
+                premiumStatusConfigured: this.state.premiumStatusConfigured,
+                generationPaused: this.state.generationPaused,
+                opsLanes: this.state.opsLanes,
+                opsThresholds: this.state.opsThresholds,
+                trialState: this.state.trialState
             };
             const studyTitle = snapshot.studyTitle || buildStudyTitle(snapshot.materialName);
             const materialLabel = studyTitle || "seu material";
@@ -2263,14 +3719,41 @@
                 step: normalizedStep,
                 studyTitle,
                 studyLibraryId: snapshot.studyLibraryId || defaults.studyLibraryId,
+                materialHash: snapshot.materialHash || defaults.materialHash,
                 blocks,
                 sessions,
                 activeBlockId: snapshot.activeBlockId || blocks[0].id,
                 blockFullScreen: typeof snapshot.blockFullScreen === "boolean"
                     ? snapshot.blockFullScreen
                     : defaults.blockFullScreen,
+                highlightEditorOpen: typeof snapshot.highlightEditorOpen === "boolean"
+                    ? snapshot.highlightEditorOpen
+                    : defaults.highlightEditorOpen,
+                highlightEditorFullScreen: typeof snapshot.highlightEditorFullScreen === "boolean"
+                    ? snapshot.highlightEditorFullScreen
+                    : defaults.highlightEditorFullScreen,
                 blockAssistMode: snapshot.blockAssistMode || defaults.blockAssistMode,
-                highlightedDocument: snapshot.highlightedDocument || null,
+                aiGeneration: snapshot.aiGeneration || defaults.aiGeneration,
+                levelExam: createLevelExamState(snapshot.levelExam || {}),
+                materialExtractionStatus: snapshot.materialExtractionStatus || defaults.materialExtractionStatus,
+                materialExtractedText: snapshot.materialExtractedText || "",
+                highlightedDocument: snapshot.highlightedDocument
+                    ? refreshHighlightedDocumentState(
+                        clone(snapshot.highlightedDocument),
+                        {
+                            ...defaults,
+                            ...snapshot,
+                            studyTitle,
+                            blocks,
+                            activeBlockId:
+                                snapshot.activeBlockId ||
+                                blocks[0].id,
+                            materialExtractedText:
+                                snapshot.materialExtractedText ||
+                                ""
+                        }
+                    )
+                    : null,
                 savedSummaries: Array.isArray(snapshot.savedSummaries) ? snapshot.savedSummaries : defaults.savedSummaries,
                 activeSavedSummaryId: snapshot.activeSavedSummaryId || defaults.activeSavedSummaryId,
                 studyLibrary: this.state.studyLibrary,

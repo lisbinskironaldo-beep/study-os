@@ -19,6 +19,7 @@ const UtilityWindows = {
             total: 0,
             remaining: 0,
             interval: null,
+            compactMode: false,
             fields: {
                 hours: "00",
                 minutes: "00",
@@ -619,6 +620,8 @@ const UtilityWindows = {
         tool.interval = null;
         tool.total = safeTotal;
         tool.remaining = safeTotal;
+        tool.compactMode =
+            options.simuladoCompact === true;
         this.setTimerFieldsFromSeconds(
             safeTotal
         );
@@ -691,6 +694,7 @@ const UtilityWindows = {
             tool.interval = null;
             tool.total = this.getTimerFieldsInSeconds();
             tool.remaining = tool.total;
+            tool.compactMode = false;
         }
 
         this.updateTimerView();
@@ -701,6 +705,14 @@ const UtilityWindows = {
         const tool = this.tools.timer;
         const display = document.getElementById("utilityTimerDisplay");
         const panel = this.getPanel("timer");
+        const compactMobile =
+            Boolean(tool?.compactMode) &&
+            typeof window !== "undefined" &&
+            typeof window.matchMedia ===
+                "function" &&
+            window.matchMedia(
+                "(max-width: 760px) and (pointer: coarse)"
+            ).matches;
 
         if (display) {
             display.textContent = this.formatClock(tool.remaining);
@@ -716,6 +728,10 @@ const UtilityWindows = {
 
         if (panel) {
             panel.classList.toggle("utility-is-live", Boolean(tool.interval));
+            panel.classList.toggle(
+                "utility-window-compact-mobile",
+                compactMobile
+            );
         }
     },
 

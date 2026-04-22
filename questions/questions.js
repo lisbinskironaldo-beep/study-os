@@ -13,6 +13,12 @@ window.QuestionsPage = {
         "Enviar sem comentar",
     smartSubjectEditorKey: "",
     smartSubjectFocusKey: "",
+    smartTopicReviewOpen: false,
+    directSearchTerms: [],
+    directSearchInput: "",
+    directSearchMatchCount: null,
+    directSearchLoading: false,
+    directSearchRefocusPending: false,
     simuladoBuilder: null,
     renderFrameId: 0,
     renderQueuedSync: false,
@@ -2301,7 +2307,8 @@ window.QuestionsPage = {
             safeMinutes * 60,
             {
                 open: true,
-                autostart: true
+                autostart: true,
+                simuladoCompact: true
             }
         );
     },
@@ -3946,6 +3953,95 @@ window.QuestionsPage = {
         this.render();
     },
 
+    buildSmartTopicReviewModel() {
+        const activeSubjects =
+            this.getSmartSubjectOptions().filter(
+                (item) =>
+                    item.active &&
+                    !item.disabled &&
+                    item.selectedTopicCount !==
+                        0
+            );
+
+        return {
+            activeSubjects,
+            totalTopics:
+                activeSubjects.reduce(
+                    (sum, subject) =>
+                        sum +
+                        Number(
+                            subject.selectedTopicCount ||
+                                0
+                        ),
+                    0
+                )
+        };
+    },
+
+    openSmartTopicReview() {
+        const selectedSeries =
+            this.getSelectedSmartSeries();
+
+        if (!selectedSeries.length) {
+            this.runtimeNotice =
+                "Selecione ao menos uma serie antes de escolher as materias.";
+            this.openLauncher(
+                "smart_start"
+            );
+            return;
+        }
+
+        const reviewModel =
+            this.buildSmartTopicReviewModel();
+
+        if (
+            !reviewModel.activeSubjects.length
+        ) {
+            this.runtimeNotice =
+                "Mantenha pelo menos uma materia com assuntos ativos para continuar.";
+            this.render();
+            return;
+        }
+
+        this.dismissCoachHint(
+            "smart_subjects"
+        );
+        this.smartSubjectEditorKey = "";
+        this.clearRuntimeNotice();
+        this.smartTopicReviewOpen = true;
+        this.render();
+    },
+
+    closeSmartTopicReview() {
+        if (!this.smartTopicReviewOpen) {
+            return;
+        }
+
+        this.smartTopicReviewOpen = false;
+        this.render();
+    },
+
+    continueSmartTopicReview() {
+        const reviewModel =
+            this.buildSmartTopicReviewModel();
+
+        if (
+            !reviewModel.activeSubjects.length
+        ) {
+            this.runtimeNotice =
+                "Mantenha pelo menos uma materia com assuntos ativos para continuar.";
+            this.smartTopicReviewOpen =
+                false;
+            this.render();
+            return;
+        }
+
+        this.smartTopicReviewOpen = false;
+        this.smartSubjectFocusKey = "";
+        this.clearRuntimeNotice();
+        this.openLauncher("smart");
+    },
+
     toggleSmartStartOption(optionKey) {
         if (
             this.routeUseCases
@@ -4148,10 +4244,241 @@ window.QuestionsPage = {
         this.dismissCoachHint(
             "smart_subjects"
         );
-        this.smartSubjectEditorKey = "";
-        this.smartSubjectFocusKey = "";
+        this.openSmartTopicReview();
+    },
+
+    setDirectSearchInput(value = "") {
+        this.directSearchInput =
+            String(value || "");
+    },
+
+    async refreshDirectSearchMatches(
+        options = {}
+    ) {
+        const shouldRender =
+            options.render !== false;
+        const terms =
+            this.directSearchTerms
+                .map((term) =>
+                    String(term || "").trim()
+                )
+                .filter(Boolean);
+
+        if (!terms.length) {
+            this.directSearchLoading = false;
+            this.directSearchMatchCount =
+                null;
+
+            if (shouldRender) {
+                this.render();
+            }
+
+            return [];
+        }
+
+        this.directSearchLoading = true;
+
+        if (shouldRender) {
+            this.render();
+        }
+
+        try {
+            await this.ensureDetailedCatalogLoaded();
+
+            const matches =
+                this.getDirectSearchMatches();
+
+            this.directSearchMatchCount =
+                matches.length;
+            this.directSearchLoading = false;
+
+            if (shouldRender) {
+                this.render();
+            }
+
+            return matches;
+        } catch (_error) {
+            this.directSearchLoading =
+                false;
+            this.directSearchMatchCount = 0;
+            this.runtimeNotice =
+                "Nao consegui carregar o banco completo para a busca agora.";
+
+            if (shouldRender) {
+                this.render();
+            }
+
+            return [];
+        }
+    },
+
+    addDirectSearchTerm(rawValue = "") {
+        const normalized =
+            String(rawValue || "")
+                .replace(/\s+/g, " ")
+                .trim();
+
+        if (!normalized) {
+            return;
+        }
+
+        const duplicate =
+            this.directSearchTerms.some(
+                (term) =>
+                    QuestionsService.normalizeText(
+                        term
+                    ) ===
+                    QuestionsService.normalizeText(
+                        normalized
+                    )
+            );
+
+        if (duplicate) {
+            this.directSearchInput = "";
+            this.directSearchRefocusPending =
+                true;
+            this.render();
+            return;
+        }
+
+        this.directSearchTerms = [
+            ...this.directSearchTerms,
+            normalized
+        ].slice(-8);
+        this.directSearchInput = "";
+        this.directSearchRefocusPending =
+            true;
         this.clearRuntimeNotice();
-        this.openLauncher("smart");
+        this.refreshDirectSearchMatches();
+    },
+
+    removeDirectSearchTerm(rawValue = "") {
+        const normalized =
+            QuestionsService.normalizeText(
+                rawValue
+            );
+        this.directSearchTerms =
+            this.directSearchTerms.filter(
+                (term) =>
+                    QuestionsService.normalizeText(
+                        term
+                    ) !== normalized
+            );
+        this.refreshDirectSearchMatches();
+    },
+
+    clearDirectSearchTerms() {
+        this.directSearchTerms = [];
+        this.directSearchInput = "";
+        this.directSearchLoading = false;
+        this.directSearchMatchCount =
+            null;
+        this.render();
+    },
+
+    getDirectSearchMatches() {
+        const terms =
+            this.directSearchTerms
+                .map((term) => String(term || "").trim())
+                .filter(Boolean);
+
+        if (!terms.length) {
+            return [];
+        }
+
+        return QuestionsService.getAllQuestions(
+            this,
+            {}
+        ).filter((question) => {
+            const haystack =
+                QuestionsService.normalizeText(
+                    [
+                        question.subjectLabel,
+                        question.topicLabel,
+                        question.subtopicLabel,
+                        question.axisLabel,
+                        question.frontLabel,
+                        ...(Array.isArray(
+                            question.tags
+                        )
+                            ? question.tags
+                            : []),
+                        ...(Array.isArray(
+                            question.competencies
+                        )
+                            ? question.competencies
+                            : []),
+                        question.prompt
+                    ].join(" ")
+                );
+
+            return terms.some((term) =>
+                QuestionsService.matchesFuzzySearch(
+                    haystack,
+                    term
+                )
+            );
+        });
+    },
+
+    async startDirectSearchSession() {
+        if (!this.directSearchTerms.length) {
+            this.runtimeNotice =
+                "Digite pelo menos um assunto ou subassunto para gerar o treino direto.";
+            this.render();
+            return;
+        }
+
+        const list =
+            await this.refreshDirectSearchMatches(
+                {
+                    render: true
+                }
+            );
+
+        if (!list.length) {
+            this.runtimeNotice =
+                "Nao encontrei questoes para os termos buscados agora. Tente outro assunto ou subassunto.";
+            this.render();
+            return;
+        }
+
+        const label =
+            this.directSearchTerms
+                .slice(0, 3)
+                .join(" + ");
+        const strategy =
+            "gradual";
+        const orderedList =
+            QuestionsService.orderDirectSearchQuestions(
+                list,
+                strategy
+            );
+
+        this.clearRuntimeNotice();
+        this.startSession({
+            sessionList: orderedList,
+            sourceMode: "direct_search",
+            meta: {
+                title: `Busca direta - ${label}`,
+                routeLabel: "Busca direta",
+                requestedCount:
+                    orderedList.length,
+                availableCount:
+                    orderedList.length,
+                readyCount:
+                    orderedList.length,
+                directSearchTerms: [
+                    ...this.directSearchTerms
+                ],
+                directSearchStrategy:
+                    strategy,
+                trainingModeLabel:
+                    "Busca por assunto",
+                trainingValueLabel:
+                    "Gradativa"
+            }
+        });
     },
 
     toggleSmartSeriesExclusion(
@@ -5493,7 +5820,10 @@ window.QuestionsPage = {
         const modeLabel =
             sourceMode === "smart"
                 ? "Treino inteligente"
-                : "Treino especifico";
+                : sourceMode ===
+                      "direct_search"
+                    ? "Busca por assunto"
+                    : "Treino especifico";
         const materia =
             meta.materiaLabel ||
             context.materia ||
@@ -6685,6 +7015,9 @@ window.QuestionsPage = {
                 );
 
             QuestionsStore.registerSession({
+                sourceMode:
+                    QuestionsState.getMeta()
+                        .sourceMode || "",
                 baseKey:
                     QuestionsContext.get()
                         .base,
@@ -6716,6 +7049,8 @@ window.QuestionsPage = {
                 errors: summary.errors,
                 avgTimeMs:
                     summary.avgTimeMs,
+                elapsedAnsweredMs:
+                    summary.elapsedAnsweredMs,
                 topicCount:
                     summary.topicCount,
                 topicKeys: [
@@ -6741,7 +7076,22 @@ window.QuestionsPage = {
                         ?.topicLabel || "",
                 strongTopicLabel:
                     summary.strongTopic
-                        ?.topicLabel || ""
+                        ?.topicLabel || "",
+                directSearchTerms: Array.isArray(
+                    QuestionsState.getMeta()
+                        .directSearchTerms
+                )
+                    ? [
+                        ...QuestionsState.getMeta()
+                            .directSearchTerms
+                    ]
+                    : [],
+                directSearchStrategy:
+                    String(
+                        QuestionsState.getMeta()
+                            .directSearchStrategy ||
+                            ""
+                    ).trim()
             });
             QuestionsStore.flushProfileState(
                 true
@@ -7216,6 +7566,8 @@ window.QuestionsPage = {
                 "";
             this.smartSubjectFocusKey =
                 "";
+            this.smartTopicReviewOpen =
+                false;
         }
 
         if (

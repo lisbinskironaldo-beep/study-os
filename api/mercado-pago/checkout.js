@@ -1,5 +1,7 @@
 const { sendJson, readJsonBody } = require("../_lib/json");
 const { recordCheckoutSession, sanitizeCustomerId } = require("../_lib/premium-entitlements");
+const { readAppSession } = require("../_lib/auth-session");
+const { recordGrowthEvent } = require("../_lib/ops-service");
 
 const MERCADO_PAGO_PREFERENCES_URL = "https://api.mercadopago.com/checkout/preferences";
 
@@ -115,7 +117,7 @@ module.exports = async function handler(req, res) {
         });
     }
 
-    const origin = process.env.STUDY_OS_BASE_URL || getOrigin(req);
+    const origin = process.env.ROTANOTA_BASE_URL || getOrigin(req);
     const successUrl = getBackUrl("MERCADO_PAGO_SUCCESS_URL", origin);
     const failureUrl = getBackUrl("MERCADO_PAGO_FAILURE_URL", origin);
     const pendingUrl = getBackUrl("MERCADO_PAGO_PENDING_URL", origin);
@@ -124,6 +126,17 @@ module.exports = async function handler(req, res) {
     const context = body.context && typeof body.context === "object"
         ? body.context
         : {};
+    const authSession = readAppSession(req);
+
+    if (!authSession.ok || !authSession.payload || !authSession.payload.userId) {
+        return sendJson(res, 401, {
+            ok: false,
+            status: "authentication_required",
+            message: "Entre com Google antes de iniciar o checkout premium."
+        });
+    }
+
+    const userId = authSession.payload.userId;
     const customerId = sanitizeCustomerId(body.customerId || context.customerId || "");
     const externalReference = `rotanota:${customerId || "guest"}:${plan.id}:${Date.now()}`;
 
@@ -142,8 +155,16 @@ module.exports = async function handler(req, res) {
         metadata: {
             plan_id: plan.id,
             customer_id: customerId,
+            user_id: userId,
             feature: context.feature || "",
-            source_step: context.sourceStep || ""
+            source_step: context.sourceStep || "",
+            promotion_campaign_id: context.promotionCampaignId || "",
+            promotion_mode: context.promotionMode || "",
+            promotion_surface: context.promotionSurface || "",
+            utm_source: context.utmSource || "",
+            utm_medium: context.utmMedium || "",
+            utm_campaign: context.utmCampaign || "",
+            utm_content: context.utmContent || ""
         },
         statement_descriptor: "ROTANOTA"
     };
@@ -212,13 +233,45 @@ module.exports = async function handler(req, res) {
 
     await recordCheckoutSession({
         customerId,
+        userId,
         planId: plan.id,
         preferenceId: mercadoPagoPayload.id,
         externalReference,
         metadata: {
             feature: context.feature || "",
             sourceStep: context.sourceStep || "",
+            materialHash: context.materialHash || "",
+            promotionCampaignId: context.promotionCampaignId || "",
+            promotionMode: context.promotionMode || "",
+            promotionSurface: context.promotionSurface || "",
+            utmSource: context.utmSource || "",
+            utmMedium: context.utmMedium || "",
+            utmCampaign: context.utmCampaign || "",
+            utmContent: context.utmContent || "",
+            landingPath: context.landingPath || "",
             checkoutUrlCreated: Boolean(checkoutUrl)
+        }
+    });
+
+    await recordGrowthEvent({
+        customerId,
+        eventType: "checkout_created",
+        materialHash: context.materialHash || "",
+        channel: context.channel || "internal_site",
+        utmSource: context.utmSource || "",
+        utmMedium: context.utmMedium || "",
+        utmCampaign: context.utmCampaign || "",
+        utmContent: context.utmContent || "",
+        landingPath: context.landingPath || "",
+        metadata: {
+            planId: plan.id,
+            userId,
+            feature: context.feature || "",
+            sourceStep: context.sourceStep || "",
+            preferenceId: mercadoPagoPayload.id,
+            promotionCampaignId: context.promotionCampaignId || "",
+            promotionMode: context.promotionMode || "",
+            promotionSurface: context.promotionSurface || ""
         }
     });
 
@@ -228,6 +281,7 @@ module.exports = async function handler(req, res) {
         provider: "mercado_pago",
         planId: plan.id,
         customerId,
+        userId,
         preferenceId: mercadoPagoPayload.id,
         checkoutUrl
     });

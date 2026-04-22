@@ -1,0 +1,18 @@
+{
+  "crons": [
+    {
+      "path": "/api/ops/reviews/three-day-run",
+      "schedule": "0 9 */3 * *"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/api/ops",
+      "destination": "/api/ops-router"
+    },
+    {
+      "source": "/api/ops/:route*",
+      "destination": "/api/ops-router?route=:route"
+    }
+  ]
+}

@@ -217,14 +217,14 @@ border: 1px solid rgba(148, 163, 184, 0.18);
 .questions-entry-option {
 position: relative;
 overflow: hidden;
-padding: 22px;
+padding: 16px 18px;
 border-radius: 0;
 background:
 linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(239, 246, 255, 0.88));
 display: grid;
-gap: 16px;
+gap: 12px;
 align-content: start;
-min-height: 196px;
+min-height: 132px;
 clip-path: polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 100% calc(100% - 20px), calc(100% - 20px) 100%, 20px 100%, 0 calc(100% - 20px), 0 20px);
 box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.72), 0 14px 28px rgba(15, 23, 42, 0.05);
 }
@@ -241,17 +241,17 @@ display: grid;
 align-content: center;
 justify-items: center;
 text-align: center;
-gap: 10px;
+gap: 0;
 }
 
 .questions-entry-grid > .questions-entry-option .questions-entry-copy p {
-max-width: 30ch;
-margin: 0 auto;
+display: none;
 }
 
 .questions-entry-grid > .questions-entry-option .questions-primary-btn,
 .questions-entry-grid > .questions-entry-option .questions-secondary-btn {
-width: min(100%, 220px);
+width: min(100%, 184px);
+min-height: 42px;
 justify-self: center;
 }
 
@@ -831,10 +831,10 @@ color: #e5e7eb;
 
 .questions-hub-consistency-block {
 display: grid;
-width: min(100%, 880px);
+width: min(100%, 760px);
 margin: 0 auto;
-gap: 18px;
-padding: 18px 20px 20px;
+gap: 14px;
+padding: 16px 18px 18px;
 border-radius: 16px;
 border: 1px solid rgba(255, 255, 255, 0.06);
 background: linear-gradient(180deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0.02));
@@ -859,12 +859,12 @@ color: #e5e7eb;
 .questions-hub-consistency-grid {
 display: grid;
 grid-template-columns: repeat(7, minmax(0, 1fr));
-gap: 10px;
+gap: 8px;
 }
 
 .questions-hub-consistency-cell {
 aspect-ratio: 1 / 1;
-border-radius: 10px;
+border-radius: 8px;
 background: rgba(255, 255, 255, 0.08);
 border: 1px solid rgba(255, 255, 255, 0.04);
 }
@@ -3337,6 +3337,127 @@ text-transform: uppercase;
 color: rgba(100, 116, 139, 0.78);
 }
 
+#questionsModule .questions-smart-topic-review-scrim {
+position: absolute;
+inset: 28px 12px 0;
+z-index: 6;
+border-radius: 28px;
+background: rgba(255, 255, 255, 0.5);
+backdrop-filter: blur(4px);
+}
+
+#questionsModule .questions-smart-topic-review {
+position: absolute;
+inset: 46px 20px 12px;
+z-index: 7;
+display: grid;
+grid-template-rows: auto minmax(0, 1fr) auto;
+gap: 14px;
+padding: 18px;
+border-radius: 28px;
+border: 1px solid rgba(186, 201, 221, 0.34);
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(247, 250, 255, 0.94));
+box-shadow: 0 24px 40px rgba(148, 163, 184, 0.16);
+}
+
+#questionsModule .questions-smart-topic-review-head {
+display: grid;
+grid-template-columns: minmax(0, 1fr) auto;
+gap: 18px;
+align-items: start;
+}
+
+#questionsModule .questions-smart-topic-review-head h3 {
+margin: 4px 0 6px;
+font-size: clamp(1.2rem, 2.2vw, 1.55rem);
+}
+
+#questionsModule .questions-smart-topic-review-head p {
+margin: 0;
+color: rgba(71, 85, 105, 0.78);
+}
+
+#questionsModule .questions-smart-topic-review-summary {
+display: grid;
+grid-template-columns: repeat(2, auto);
+gap: 4px 12px;
+align-items: center;
+justify-items: start;
+padding: 12px 14px;
+border-radius: 18px;
+background: rgba(239, 246, 255, 0.92);
+border: 1px solid rgba(147, 197, 253, 0.28);
+}
+
+#questionsModule .questions-smart-topic-review-summary strong {
+font-family: "Space Grotesk", "Manrope", sans-serif;
+font-size: 22px;
+line-height: 1;
+color: rgba(15, 23, 42, 0.92);
+}
+
+#questionsModule .questions-smart-topic-review-summary span {
+font-size: 10px;
+font-weight: 700;
+letter-spacing: 0.14em;
+text-transform: uppercase;
+color: rgba(71, 85, 105, 0.7);
+}
+
+#questionsModule .questions-smart-topic-review-list {
+display: grid;
+gap: 12px;
+overflow: auto;
+padding-right: 4px;
+}
+
+#questionsModule .questions-smart-topic-review-group {
+display: grid;
+gap: 10px;
+padding: 14px;
+border-radius: 20px;
+background: rgba(255, 255, 255, 0.78);
+border: 1px solid rgba(186, 201, 221, 0.26);
+}
+
+#questionsModule .questions-smart-topic-review-group-head {
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 16px;
+}
+
+#questionsModule .questions-smart-topic-review-group-head strong {
+display: block;
+margin-bottom: 4px;
+font-size: 18px;
+color: rgba(15, 23, 42, 0.92);
+}
+
+#questionsModule .questions-smart-topic-review-group-head span {
+font-size: 12px;
+color: rgba(71, 85, 105, 0.72);
+}
+
+#questionsModule .questions-smart-topic-review-group-actions {
+display: flex;
+gap: 8px;
+flex-wrap: wrap;
+justify-content: flex-end;
+}
+
+#questionsModule .questions-smart-topic-review-topic-grid {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 10px;
+}
+
+#questionsModule .questions-smart-topic-review-foot {
+display: flex;
+justify-content: flex-end;
+gap: 10px;
+}
+
 body.dark #questionsModule .questions-smart-start-card {
 background:
 radial-gradient(circle at 50% 58%, var(--questions-smart-card-glow-a), transparent 34%),
@@ -3948,8 +4069,8 @@ z-index: 5;
 
 .questions-smart-pizza-core .questions-smart-core {
 pointer-events: auto;
-width: clamp(126px, 19vw, 166px);
-height: clamp(126px, 19vw, 166px);
+width: clamp(156px, 21vw, 192px);
+height: clamp(156px, 21vw, 192px);
 border-radius: 999px;
 clip-path: none;
 background:
@@ -3975,7 +4096,7 @@ inset 0 -16px 26px rgba(147, 197, 253, 0.24),
 }
 
 #questionsModule .questions-smart-start-card .questions-smart-pizza-core .questions-smart-core strong {
-font-size: clamp(40px, 4.8vw, 54px);
+font-size: clamp(38px, 4.6vw, 52px);
 color: rgba(30, 41, 59, 0.92);
 }
 
@@ -4561,6 +4682,77 @@ border: 1px solid rgba(148, 163, 184, 0.28);
 background: rgba(255, 255, 255, 0.94);
 font: inherit;
 color: #0f172a;
+}
+
+.questions-direct-search {
+display: grid;
+gap: 12px;
+padding: 16px 18px 18px;
+position: relative;
+z-index: 2;
+border-radius: 20px;
+border: 1px solid rgba(148, 163, 184, 0.18);
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(241, 245, 255, 0.88));
+box-shadow: 0 16px 32px rgba(15, 23, 42, 0.06);
+}
+
+.questions-direct-search-copy {
+display: block;
+}
+
+.questions-direct-search-copy h3 {
+margin: 0;
+font-size: clamp(1rem, 1.8vw, 1.2rem);
+}
+
+.questions-direct-search-form {
+display: grid;
+grid-template-columns: minmax(0, 1fr) auto auto;
+gap: 10px;
+align-items: center;
+position: relative;
+z-index: 3;
+}
+
+.questions-direct-search-input {
+min-height: 48px;
+position: relative;
+z-index: 4;
+pointer-events: auto;
+}
+
+.questions-direct-search-add,
+.questions-direct-search-generate {
+min-height: 48px;
+padding-inline: 18px;
+}
+
+.questions-direct-search-meta {
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 16px;
+font-size: 13px;
+color: rgba(71, 85, 105, 0.84);
+}
+
+.questions-direct-search-meta strong {
+font-size: 13px;
+color: rgba(15, 23, 42, 0.9);
+}
+
+.questions-direct-search-chips {
+align-items: center;
+}
+
+.questions-chip-removable {
+display: inline-flex;
+align-items: center;
+gap: 8px;
+}
+
+.questions-chip-ghost {
+background: rgba(255, 255, 255, 0.78);
 }
 
 .questions-inline-note {
@@ -5635,11 +5827,7 @@ transform: var(--questions-smart-node-transform) scale(1);
 
 @media (max-width: 1180px) {
 .questions-entry-card .questions-entry-grid {
-grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.questions-entry-card .questions-entry-grid .questions-entry-option:last-child {
-grid-column: 1 / -1;
+grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .questions-launcher-overview {
@@ -6217,5 +6405,385 @@ background: rgba(239, 246, 255, 0.62);
 @media (max-width: 980px) {
 .questions-simulado-builder {
 grid-template-columns: 1fr;
+}
+}
+
+/* =====================================================
+   Unified questions finish - light/dark color and radius
+===================================================== */
+
+#questionsModule {
+--questions-card-radius: 14px;
+--questions-card-cut: 0px;
+--questions-card-surface:
+radial-gradient(circle at top left, rgba(47, 109, 216, 0.08), transparent 36%),
+linear-gradient(180deg, rgba(249, 252, 255, 0.98), rgba(239, 245, 252, 0.94));
+--questions-card-border: rgba(113, 132, 156, 0.24);
+--questions-card-shadow: 0 18px 38px rgba(44, 58, 78, 0.1);
+--questions-card-line: linear-gradient(90deg, rgba(47, 109, 216, 0.08), rgba(47, 109, 216, 0.56), rgba(217, 95, 79, 0.08));
+--questions-kicker-color: #2f6dd8;
+--questions-text-main: #1b2430;
+--questions-text-muted: rgba(73, 85, 102, 0.78);
+--questions-text-soft: rgba(73, 85, 102, 0.52);
+--questions-panel-surface: rgba(246, 250, 255, 0.88);
+--questions-panel-surface-strong: rgba(255, 255, 255, 0.96);
+--questions-panel-surface-muted: rgba(238, 244, 251, 0.86);
+--questions-panel-border: rgba(113, 132, 156, 0.2);
+--questions-panel-border-strong: rgba(141, 158, 181, 0.28);
+--questions-panel-border-muted: rgba(141, 158, 181, 0.22);
+--questions-chip-surface: rgba(47, 109, 216, 0.08);
+--questions-option-bg: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(241, 246, 252, 0.94));
+--questions-option-border: rgba(113, 132, 156, 0.2);
+--questions-option-selected-bg: linear-gradient(180deg, rgba(232, 241, 253, 0.98), rgba(219, 232, 248, 0.94));
+--questions-option-selected-border: rgba(47, 109, 216, 0.34);
+--questions-primary-btn-bg: linear-gradient(135deg, #2f6dd8, #5d91e1);
+--questions-primary-btn-shadow: 0 14px 28px rgba(47, 109, 216, 0.22);
+--questions-primary-btn-text: #ffffff;
+--questions-secondary-btn-bg: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(238, 244, 251, 0.98));
+--questions-secondary-btn-border: rgba(113, 132, 156, 0.22);
+--questions-secondary-btn-text: #1b2430;
+--questions-secondary-btn-shadow: 0 10px 22px rgba(44, 58, 78, 0.08);
+--questions-smart-toggle-active-bg: linear-gradient(180deg, rgba(219, 232, 248, 0.99), rgba(232, 241, 253, 0.97));
+--questions-smart-toggle-active-border: rgba(47, 109, 216, 0.32);
+--questions-smart-toggle-active-text: #224f9a;
+}
+
+body.dark #questionsModule {
+--questions-card-surface:
+radial-gradient(circle at top left, rgba(75, 126, 210, 0.14), transparent 38%),
+linear-gradient(180deg, rgba(13, 22, 35, 0.96), rgba(8, 14, 24, 0.94));
+--questions-card-border: rgba(92, 122, 171, 0.34);
+--questions-card-shadow: 0 22px 46px rgba(0, 0, 0, 0.36);
+--questions-card-line: linear-gradient(90deg, rgba(111, 167, 255, 0.08), rgba(111, 167, 255, 0.5), rgba(224, 96, 85, 0.12));
+--questions-kicker-color: rgba(143, 190, 255, 0.96);
+--questions-text-main: rgba(247, 242, 241, 0.96);
+--questions-text-muted: rgba(186, 199, 222, 0.8);
+--questions-text-soft: rgba(150, 164, 193, 0.62);
+--questions-panel-surface: rgba(15, 26, 43, 0.9);
+--questions-panel-surface-strong: rgba(18, 31, 51, 0.96);
+--questions-panel-surface-muted: rgba(13, 23, 39, 0.86);
+--questions-panel-border: rgba(92, 122, 171, 0.3);
+--questions-panel-border-strong: rgba(111, 146, 196, 0.38);
+--questions-panel-border-muted: rgba(92, 122, 171, 0.3);
+--questions-chip-surface: rgba(111, 167, 255, 0.1);
+--questions-option-bg: linear-gradient(180deg, rgba(18, 31, 51, 0.96), rgba(12, 21, 36, 0.94));
+--questions-option-border: rgba(92, 122, 171, 0.34);
+--questions-option-selected-bg: linear-gradient(180deg, rgba(35, 58, 94, 0.98), rgba(25, 43, 72, 0.96));
+--questions-option-selected-border: rgba(111, 167, 255, 0.42);
+--questions-option-selected-shadow: inset 0 0 0 1px rgba(111, 167, 255, 0.14);
+--questions-primary-btn-bg: linear-gradient(135deg, rgba(42, 76, 128, 0.98), rgba(149, 63, 70, 0.96));
+--questions-primary-btn-shadow: 0 16px 32px rgba(10, 18, 30, 0.38);
+--questions-primary-btn-text: rgba(255, 255, 255, 0.98);
+--questions-secondary-btn-bg: linear-gradient(180deg, rgba(20, 34, 55, 0.98), rgba(13, 23, 39, 0.96));
+--questions-secondary-btn-border: rgba(111, 146, 196, 0.32);
+--questions-secondary-btn-text: rgba(247, 242, 241, 0.94);
+--questions-secondary-btn-shadow: 0 12px 26px rgba(0, 0, 0, 0.3);
+--questions-smart-toggle-active-bg: linear-gradient(180deg, rgba(37, 65, 108, 0.98), rgba(27, 49, 84, 0.96));
+--questions-smart-toggle-active-border: rgba(111, 167, 255, 0.34);
+--questions-smart-toggle-active-text: rgba(247, 242, 241, 0.98);
+}
+
+#questionsModule .questions-card,
+#questionsModule .questions-stats-card,
+#questionsModule .questions-entry-option,
+#questionsModule .questions-panel,
+#questionsModule .questions-route-card,
+#questionsModule .questions-hub-sidebar,
+#questionsModule .questions-hub-nav-btn,
+#questionsModule .questions-hub-stat-card,
+#questionsModule .questions-hub-radar-card,
+#questionsModule .questions-hub-focus-card,
+#questionsModule .questions-hub-recommendation,
+#questionsModule .questions-hub-bar-card,
+#questionsModule .questions-hub-session-pill,
+#questionsModule .questions-hub-filter-pill,
+#questionsModule .questions-hub-radar-note,
+#questionsModule .questions-hub-time-card,
+#questionsModule .questions-hub-action,
+#questionsModule .questions-smart-config-card,
+#questionsModule .questions-smart-start-shell,
+#questionsModule .questions-smart-ring-toggle,
+#questionsModule .questions-smart-node,
+#questionsModule .questions-smart-petal,
+#questionsModule .questions-smart-core,
+#questionsModule .questions-smart-slice-action,
+#questionsModule .questions-smart-subject-console,
+#questionsModule .questions-smart-subject-focus-chip,
+#questionsModule .questions-smart-subject-console-btn,
+#questionsModule .questions-primary-btn,
+#questionsModule .questions-secondary-btn,
+#questionsModule .questions-option,
+#questionsModule .questions-confirm-btn,
+#questionsModule .questions-simulado-panel,
+#questionsModule .questions-simulado-choice,
+#questionsModule .questions-pill,
+#questionsModule .questions-dialog-card,
+#questionsModule .questions-inline-notice,
+#utilityRoot .questions-floating-window,
+#utilityRoot .questions-floating-actions button {
+clip-path: none !important;
+}
+
+#questionsModule .questions-card,
+#questionsModule .questions-stats-card,
+#utilityRoot .questions-floating-window {
+border-radius: 14px !important;
+}
+
+#questionsModule .questions-entry-option,
+#questionsModule .questions-panel,
+#questionsModule .questions-route-card,
+#questionsModule .questions-hub-sidebar,
+#questionsModule .questions-hub-stat-card,
+#questionsModule .questions-hub-radar-card,
+#questionsModule .questions-hub-focus-card,
+#questionsModule .questions-hub-recommendation,
+#questionsModule .questions-hub-bar-card,
+#questionsModule .questions-hub-time-card,
+#questionsModule .questions-smart-config-card,
+#questionsModule .questions-smart-start-shell,
+#questionsModule .questions-smart-subject-console,
+#questionsModule .questions-simulado-panel,
+#questionsModule .questions-simulado-choice,
+#questionsModule .questions-dialog-card,
+#questionsModule .questions-inline-notice {
+border-radius: 10px !important;
+}
+
+#questionsModule .questions-primary-btn,
+#questionsModule .questions-secondary-btn,
+#questionsModule .questions-confirm-btn,
+#questionsModule .questions-hub-nav-btn,
+#questionsModule .questions-hub-filter-pill,
+#questionsModule .questions-hub-radar-note,
+#questionsModule .questions-hub-action,
+#questionsModule .questions-smart-ring-toggle,
+#questionsModule .questions-smart-slice-action,
+#questionsModule .questions-smart-subject-focus-chip,
+#questionsModule .questions-smart-subject-console-btn,
+#questionsModule .questions-option,
+#questionsModule .questions-pill,
+#utilityRoot .questions-floating-actions button {
+border-radius: 8px !important;
+}
+
+#questionsModule .questions-primary-btn::after,
+#questionsModule .questions-secondary-btn::after,
+#questionsModule .questions-confirm-btn::after {
+clip-path: none !important;
+border-radius: 7px !important;
+}
+
+#questionsModule .questions-entry-option {
+background: var(--questions-option-bg);
+color: var(--questions-text-main);
+}
+
+#questionsModule .questions-entry-option-smart {
+background:
+radial-gradient(circle at top left, rgba(31, 125, 117, 0.08), transparent 44%),
+var(--questions-option-bg);
+}
+
+#questionsModule .questions-entry-option-specific,
+#questionsModule .questions-entry-option-simulado-build,
+#questionsModule .questions-entry-option-simulado-ready {
+background:
+radial-gradient(circle at top left, rgba(47, 109, 216, 0.1), transparent 44%),
+var(--questions-option-bg);
+}
+
+#questionsModule .questions-entry-option-saved {
+background:
+radial-gradient(circle at top left, rgba(217, 95, 79, 0.1), transparent 44%),
+var(--questions-option-bg);
+}
+
+body.dark #questionsModule .questions-entry-option-smart {
+background:
+radial-gradient(circle at top left, rgba(31, 125, 117, 0.14), transparent 44%),
+var(--questions-option-bg);
+}
+
+body.dark #questionsModule .questions-entry-option-specific,
+body.dark #questionsModule .questions-entry-option-simulado-build,
+body.dark #questionsModule .questions-entry-option-simulado-ready {
+background:
+radial-gradient(circle at top left, rgba(111, 167, 255, 0.14), transparent 44%),
+var(--questions-option-bg);
+}
+
+body.dark #questionsModule .questions-entry-option-saved {
+background:
+radial-gradient(circle at top left, rgba(224, 96, 85, 0.14), transparent 44%),
+var(--questions-option-bg);
+}
+
+#questionsModule .questions-entry-card .questions-primary-btn {
+background: var(--questions-secondary-btn-bg);
+border-color: var(--questions-secondary-btn-border);
+color: var(--questions-secondary-btn-text);
+box-shadow: var(--questions-secondary-btn-shadow);
+}
+
+body.dark #questionsModule .questions-card p,
+body.dark #questionsModule .questions-card span,
+body.dark #questionsModule .questions-stats-card,
+body.dark #questionsModule .questions-entry-copy p,
+body.dark #questionsModule .questions-simulado-choice span {
+color: var(--questions-text-muted) !important;
+}
+
+body.dark #questionsModule .questions-card h2,
+body.dark #questionsModule .questions-card h3,
+body.dark #questionsModule .questions-stats-card h3,
+body.dark #questionsModule .questions-entry-copy h3,
+body.dark #questionsModule .questions-simulado-choice strong {
+color: var(--questions-text-main) !important;
+}
+
+@media (max-width: 760px) and (pointer: coarse) {
+.questions-root,
+.questions-launcher,
+.questions-session {
+padding-bottom: calc(84px + env(safe-area-inset-bottom, 0px));
+}
+
+.questions-entry-card .questions-entry-grid {
+grid-template-columns: 1fr;
+}
+
+.questions-direct-search-form,
+.questions-direct-search-meta,
+#questionsModule .questions-smart-topic-review-head,
+#questionsModule .questions-smart-topic-review-group-head,
+#questionsModule .questions-smart-topic-review-foot {
+grid-template-columns: 1fr;
+flex-direction: column;
+align-items: stretch;
+}
+
+.questions-direct-search-form {
+display: grid;
+}
+
+.questions-direct-search-add,
+.questions-direct-search-generate {
+width: 100%;
+}
+
+.questions-direct-search-meta {
+display: grid;
+gap: 6px;
+}
+
+.questions-head,
+.questions-session-top,
+.questions-feedback-foot {
+flex-direction: column;
+align-items: stretch;
+}
+
+#questionsModule .questions-smart-series-card .questions-entry-head,
+#questionsModule .questions-smart-subject-card .questions-entry-head {
+display: grid;
+grid-template-columns: minmax(0, 1fr);
+gap: 10px;
+margin-bottom: 8px;
+}
+
+#questionsModule .questions-smart-series-card .questions-smart-entry-actions,
+#questionsModule .questions-smart-subject-card .questions-smart-entry-actions {
+position: static;
+top: auto;
+right: auto;
+width: 100%;
+justify-self: stretch;
+}
+
+#questionsModule .questions-smart-series-card .questions-smart-back-btn,
+#questionsModule .questions-smart-subject-card .questions-smart-back-btn {
+min-width: 94px;
+min-height: 36px;
+padding: 8px 14px;
+justify-self: start;
+}
+
+#questionsModule .questions-smart-series-card .questions-smart-start-shell {
+padding-top: 50px;
+}
+
+#questionsModule .questions-smart-topic-review {
+inset: 34px 12px 10px;
+padding: 14px;
+}
+
+#questionsModule .questions-smart-topic-review-topic-grid {
+grid-template-columns: 1fr;
+}
+
+#questionsModule .questions-smart-series-card .questions-smart-ring-toggle {
+top: 4px;
+}
+
+#questionsModule .questions-smart-subject-card .questions-smart-start-shell {
+padding-top: 10px;
+}
+
+#questionsModule .questions-smart-entry-actions-subjects {
+width: 100%;
+justify-content: space-between;
+align-items: center;
+gap: 8px;
+flex-wrap: wrap;
+}
+
+#questionsModule .questions-smart-ring-toggle-inline,
+#questionsModule .questions-smart-subject-card .questions-smart-ring-toggle,
+#questionsModule .questions-smart-series-card .questions-smart-ring-toggle {
+max-width: 100%;
+white-space: normal;
+text-align: center;
+}
+
+.questions-smart-radial-stage {
+margin-top: 0;
+gap: 12px;
+}
+
+.questions-question-card--minimal {
+padding: 16px 14px 18px;
+gap: 12px;
+}
+
+.questions-session-card--minimal .questions-question-card h3 {
+font-size: clamp(1.35rem, 6.6vw, 1.75rem);
+line-height: 1.12;
+}
+
+.questions-session-card--minimal .questions-option {
+grid-template-columns: 30px minmax(0, 1fr);
+padding: 12px 12px;
+}
+
+.questions-session-card--minimal .questions-feedback--minimal {
+padding: 14px 12px;
+gap: 12px;
+}
+
+.questions-feedback-foot {
+display: grid;
+grid-template-columns: 1fr;
+gap: 8px;
+}
+
+.questions-session-card--minimal .questions-confirm-btn,
+.questions-feedback-foot .questions-secondary-btn {
+width: 100%;
+justify-content: center;
+}
+
+.questions-feedback-note {
+padding-bottom: 2px;
 }
 }

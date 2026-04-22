@@ -9,6 +9,12 @@ Status:
 
 Atualizado em 2026-04-14.
 
+Documentos complementares desta fase:
+- `docs/premium_study_ops_console.md`
+- `docs/premium_study_ops_runbook.md`
+- `docs/premium_study_ops_copilot.md`
+- `docs/premium_study_ops_promotions.md`
+
 ---
 
 ## 1. Missão deste documento
@@ -667,7 +673,7 @@ No painel de desenvolvedor:
 Quando houver backend/serverless, usar:
 
 ```txt
-https://dominio-do-site.com/api/mercado-pago/webhook
+https://dominio-do-rotanota.com/api/mercado-pago/webhook
 ```
 
 Em desenvolvimento local, `127.0.0.1` nao serve para webhook do Mercado Pago.
@@ -738,7 +744,7 @@ Recomendadas:
 ```txt
 MERCADO_PAGO_PUBLIC_KEY
 MERCADO_PAGO_CURRENCY
-STUDY_OS_BASE_URL
+ROTANOTA_BASE_URL
 MERCADO_PAGO_SUCCESS_URL
 MERCADO_PAGO_FAILURE_URL
 MERCADO_PAGO_PENDING_URL
@@ -948,3 +954,72 @@ Este passo ja impede que o navegador se auto-promova a premium, mas ainda e uma 
 - `/api/premium/status?customerId=...` responde mesmo sem Supabase, mantendo gratis
 - com Supabase configurado, pagamento aprovado passa a criar registro em `premium_entitlements`
 - recursos premium passam a consultar `accessTier` vindo do backend
+
+---
+
+## 24. Estado operacional em 2026-04-20
+
+Atualizado em 2026-04-20.
+
+Este bloco consolida o estado real da operacao depois da integracao com Supabase, Gemini, Mercado Pago e retaguarda ops.
+
+### O que esta configurado
+
+- schema do Supabase aplicado
+- Gemini configurado por env
+- checkout Mercado Pago criando preferencia
+- `/api/premium/status` funcionando
+- retaguarda local funcionando em `/ops/`
+
+### O que foi validado localmente
+
+- login da retaguarda
+- overview operacional
+- copiloto Gemini
+- growth
+- promocoes
+- relatorio semanal
+- checkout Mercado Pago
+
+### O que esta pendente
+
+A pendencia principal nao e mais infraestrutura local. O ponto aberto em 2026-04-20 e a publicacao correta da versao nova da retaguarda.
+
+Estado atual:
+
+- localhost esta saudavel
+- `https://rota-nota.vercel.app` esta publicado
+- a producao ja recebeu o deploy corretivo da retaguarda em 2026-04-20
+
+Historico do incidente resolvido:
+
+- `POST /api/ops/login` funciona
+- `GET /api/ops/overview` funciona
+- antes do deploy corretivo, `GET /api/ops/growth/overview` retornava `404`
+- antes do deploy corretivo, `GET /api/ops/reports/weekly` retornava `404`
+- a faixa `Falha na requisicao` antes do login era efeito desse frontend/API antigo publicado
+
+Estado apos a correcao:
+
+- `GET /api/ops/growth/overview` funciona
+- `GET /api/ops/reports/weekly` funciona
+- `ops/app.js` publicado contem a mensagem nova antes da autenticacao
+
+### Diagnostico fechado
+
+O problema atual da retaguarda publicada nao e:
+
+- senha
+- Gemini
+
+O problema atual e:
+
+- deploy publicado com frontend/API de uma versao intermediaria da retaguarda
+
+### Proximo passo objetivo
+
+Com a retaguarda publicada corrigida, o proximo passo volta a ser operacional:
+
+- configurar `MERCADO_PAGO_WEBHOOK_SECRET`
+- validar o webhook publico do Mercado Pago
+- continuar os testes funcionais do `/ops` em producao

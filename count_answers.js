@@ -1,4 +1,5 @@
 const fs = require('fs');
+const path = require('path');
 
 // Função para contar distribuição de respostas corretas
 function countCorrectAnswers(filePath) {
@@ -20,5 +21,5 @@ function countCorrectAnswers(filePath) {
   return counts;
 }
 
-console.log('cultura-corporal:', countCorrectAnswers('c:/dev/study-os/questions/banks/1-serie/educacao-fisica/cultura-corporal/index.js'));
-console.log('esportes-basicos:', countCorrectAnswers('c:/dev/study-os/questions/banks/1-serie/educacao-fisica/esportes-basicos/index.js'));
+console.log('cultura-corporal:', countCorrectAnswers(path.join(__dirname, 'questions/banks/1-serie/educacao-fisica/cultura-corporal/index.js')));
+console.log('esportes-basicos:', countCorrectAnswers(path.join(__dirname, 'questions/banks/1-serie/educacao-fisica/esportes-basicos/index.js')));

@@ -1,0 +1,3399 @@
+diff --git a/premium-study/app/index.js b/premium-study/app/index.js
+index 1ff74f7..5c28835 100644
+--- a/premium-study/app/index.js
++++ b/premium-study/app/index.js
+@@ -3,6 +3,8 @@
+         return;
+     }
+ 
++    const CHECKOUT_CONTEXT_KEY = "rotanota-premium-checkout-context";
++
+     window.PremiumStudyApp = {
+         root: null,
+         analysisTimers: [],
+@@ -12,6 +14,74 @@
+         persistTimer: null,
+         persistPromise: null,
+         premiumStatusTimers: [],
++        initialLoadPromise: null,
++        lastKnownPremiumActive: false,
++        activeMaterialFile: null,
++        materialExtractionPromise: null,
++
++        getGrowthService() {
++            return window.PremiumStudyGrowth || null;
++        },
++
++        trackGrowth(eventType, data = {}, options = {}) {
++            const growth = this.getGrowthService();
++            if (!growth || typeof growth.track !== "function") {
++                return Promise.resolve(null);
++            }
++
++            const store = window.PremiumStudyStore;
++            const state = store && typeof store.getState === "function"
++                ? store.getState()
++                : {};
++            const metadata = data.metadata && typeof data.metadata === "object"
++                ? data.metadata
++                : {};
++
++            return growth.track(eventType, {
++                customerId: data.customerId || state.customerId || "",
++                materialHash: data.materialHash || state.materialHash || "",
++                metadata: {
++                    step: data.step || state.step || "",
++                    feature: data.feature || "",
++                    surface: data.surface || "",
++                    sourceStep: data.sourceStep || "",
++                    planId: data.planId || "",
++                    reason: data.reason || "",
++                    pageCount: Number.isFinite(data.pageCount) ? data.pageCount : (state.materialPageCount || 0),
++                    ...metadata
++                }
++            }, options);
++        },
++
++        trackGrowthOnce(key, eventType, data = {}, options = {}) {
++            const growth = this.getGrowthService();
++            if (!growth || typeof growth.trackOnce !== "function") {
++                return Promise.resolve(null);
++            }
++
++            const store = window.PremiumStudyStore;
++            const state = store && typeof store.getState === "function"
++                ? store.getState()
++                : {};
++            const metadata = data.metadata && typeof data.metadata === "object"
++                ? data.metadata
++                : {};
++
++            return growth.trackOnce(key, eventType, {
++                customerId: data.customerId || state.customerId || "",
++                materialHash: data.materialHash || state.materialHash || "",
++                metadata: {
++                    step: data.step || state.step || "",
++                    feature: data.feature || "",
++                    surface: data.surface || "",
++                    sourceStep: data.sourceStep || "",
++                    planId: data.planId || "",
++                    reason: data.reason || "",
++                    pageCount: Number.isFinite(data.pageCount) ? data.pageCount : (state.materialPageCount || 0),
++                    ...metadata
++                }
++            }, options);
++        },
+ 
+         async init(options = {}) {
+             this.root = options.root || document.getElementById("premium-studyModule");
+@@ -21,27 +91,133 @@
+             }
+ 
+             this.root.classList.add("premium-study-host");
++            this.root.dataset.ready = "true";
+             this.bindRoot();
+-            await this.hydrateFromStorage();
+-            await this.refreshPremiumAccess();
+-            this.consumePaymentReturn();
++            if (window.PremiumStudyGrowth && typeof window.PremiumStudyGrowth.captureAcquisitionContext === "function") {
++                window.PremiumStudyGrowth.captureAcquisitionContext();
++            }
+             this.render();
++
++            if (!this.initialLoadPromise) {
++                this.initialLoadPromise = this.finishInitialLoad();
++            }
++        },
++
++        async finishInitialLoad() {
++            try {
++                await this.hydrateFromStorage();
++                this.render();
++
++                const paymentReturn = window.RotaNotaPremiumPaymentReturn;
++                if (paymentReturn && !paymentReturn.consumed) {
++                    await this.consumePaymentReturn();
++                } else {
++                    await this.refreshPremiumAccess();
++                }
++                this.render();
++
++                if (window.PremiumStudyPromotions && typeof window.PremiumStudyPromotions.refresh === "function") {
++                    await window.PremiumStudyPromotions.refresh("premium_checkout", "");
++                    if (window.PremiumStudyStore.getState().step === "premium-checkout") {
++                        this.render();
++                    }
++                }
++
++                await this.runHomeAction(window.RotaNotaPremiumHomeAction || "");
++
++                this.trackGrowthOnce("premium-module-entry", "premium_module_entry", {
++                    surface: "premium_entry"
++                });
++            } catch (error) {
++                console.warn("Inicializacao em segundo plano do PDF Focado falhou", error);
++            } finally {
++                this.initialLoadPromise = null;
++            }
+         },
+ 
+-        async refreshPremiumAccess() {
++        getCheckoutReturnContext() {
++            if (!window.sessionStorage) {
++                return null;
++            }
++
++            try {
++                const raw = window.sessionStorage.getItem(CHECKOUT_CONTEXT_KEY);
++                return raw ? JSON.parse(raw) : null;
++            } catch (error) {
++                return null;
++            }
++        },
++
++        clearCheckoutReturnContext() {
++            if (!window.sessionStorage) {
++                return;
++            }
++
++            try {
++                window.sessionStorage.removeItem(CHECKOUT_CONTEXT_KEY);
++            } catch (error) {
++                // Ignora bloqueios de storage do navegador.
++            }
++        },
++
++        async refreshPremiumAccess(options = {}) {
+             if (!window.PremiumStudyAccount || typeof window.PremiumStudyAccount.refreshAndApply !== "function") {
+                 return null;
+             }
+ 
+-            const status = await window.PremiumStudyAccount.refreshAndApply();
++            const status = await window.PremiumStudyAccount.refreshAndApply(options);
++            const isPremiumActive = Boolean(status && status.premiumActive);
+ 
+-            if (status && status.premiumActive) {
++            if (isPremiumActive) {
+                 window.PremiumStudyStore.clearSessionNote();
+             }
+ 
++            if (!this.lastKnownPremiumActive && isPremiumActive) {
++                this.trackGrowthOnce(`premium-active-${status.customerId || "guest"}`, "premium_active_client_seen", {
++                    metadata: {
++                        subscriptionStatus: status.subscriptionStatus || "premium_active"
++                    }
++                });
++            }
++
++            this.lastKnownPremiumActive = isPremiumActive;
++
+             return status;
+         },
+ 
++        async runHomeAction(action = "") {
++            const requestedAction = String(action || "").trim();
++
++            if (!requestedAction) {
++                return false;
++            }
++
++            window.RotaNotaPremiumHomeAction = "";
++
++            if (!this.root) {
++                return false;
++            }
++
++            if (requestedAction === "pdf-upload") {
++                await this.handleAction("open-file-picker", {});
++                return true;
++            }
++
++            if (requestedAction === "pdf-resume") {
++                await this.handleAction("resume-latest-study", {});
++                this.render();
++                return true;
++            }
++
++            if (requestedAction === "pdf-library") {
++                await this.handleAction("open-premium-library", {});
++                this.render();
++                return true;
++            }
++
++            return false;
++        },
++
+         consumePaymentReturn() {
+             const paymentReturn = window.RotaNotaPremiumPaymentReturn;
+ 
+@@ -125,6 +301,149 @@
+             });
+         },
+ 
++        buildPaymentReturnNote(paymentStatus, isPremiumActive) {
++            if (paymentStatus === "failure") {
++                return {
++                    tone: "premium",
++                    title: "Pagamento nao concluido",
++                    message: "O pagamento foi cancelado ou nao foi aprovado. Quando quiser, voce pode tentar novamente sem perder sua trilha."
++                };
++            }
++
++            if (isPremiumActive) {
++                return {
++                    tone: "success",
++                    title: "Premium liberado. Sua trilha continua daqui.",
++                    message: "Pagamento confirmado com sucesso. Biblioteca completa, continuidade e extras premium ja ficaram disponiveis neste estudo."
++                };
++            }
++
++            if (paymentStatus === "success") {
++                return {
++                    tone: "info",
++                    title: "Pagamento recebido. Estamos finalizando a liberacao.",
++                    message: "Voce ja voltou para a sua trilha. Enquanto isso, validamos a confirmacao do servidor em segundo plano para ativar o premium sem te tirar do estudo."
++                };
++            }
++
++            return {
++                tone: "premium",
++                title: "Pagamento em analise",
++                message: "O Mercado Pago marcou o pagamento como pendente. Sua trilha continua normal enquanto buscamos a confirmacao final."
++            };
++        },
++
++        async consumePaymentReturn() {
++            const paymentReturn = window.RotaNotaPremiumPaymentReturn;
++
++            if (!paymentReturn || paymentReturn.consumed) {
++                return;
++            }
++
++            const store = window.PremiumStudyStore;
++            const router = window.PremiumStudyRouter;
++            const checkoutContext = this.getCheckoutReturnContext();
++            const snapshot = checkoutContext && checkoutContext.snapshot && checkoutContext.snapshot.materialName
++                ? checkoutContext.snapshot
++                : null;
++            const targetStep = snapshot
++                ? this.getResumeStep(snapshot)
++                : "entry";
++            let status = null;
++
++            if (
++                (paymentReturn.status === "success" || paymentReturn.status === "pending") &&
++                paymentReturn.paymentId
++            ) {
++                status = await this.refreshPremiumAccess({
++                    paymentId: paymentReturn.paymentId
++                });
++            }
++
++            const note = this.buildPaymentReturnNote(
++                paymentReturn.status,
++                Boolean(status && status.premiumActive)
++            );
++
++            paymentReturn.consumed = true;
++
++            if (snapshot && paymentReturn.status !== "failure") {
++                store.restoreFromSnapshot({
++                    ...snapshot,
++                    step: targetStep,
++                    sessionNote: null
++                });
++                router.goTo(targetStep);
++                store.setReturnStep(snapshot.returnStep || targetStep);
++                store.setPremiumOffer(null);
++                store.setSessionNote({
++                    step: targetStep,
++                    ...note
++                });
++            } else {
++                store.setPremiumOffer({
++                    eyebrow: "RotaNota Premium",
++                    title: paymentReturn.status === "success"
++                        ? "Pagamento recebido. Estamos voltando para sua trilha."
++                        : "Finalize seu acesso premium com seguranca.",
++                    lead: "O checkout segue conectado ao Mercado Pago e o servidor continua como fonte de verdade da liberacao premium.",
++                    benefits: [
++                        "Checkout seguro funcionando",
++                        "Confirmacao premium monitorada pelo servidor",
++                        "Acesso premium liberado sem reiniciar sua trilha"
++                    ],
++                    cta: "Voltar ao estudo",
++                    sourceStep: checkoutContext && checkoutContext.sourceStep
++                        ? checkoutContext.sourceStep
++                        : "entry"
++                });
++                store.setReturnStep(checkoutContext && checkoutContext.sourceStep
++                    ? checkoutContext.sourceStep
++                    : "entry");
++                store.setSessionNote({
++                    step: "premium-checkout",
++                    ...note
++                });
++                router.goTo("premium-checkout");
++            }
++
++            this.clearCheckoutReturnContext();
++
++            if (
++                (paymentReturn.status === "success" || paymentReturn.status === "pending") &&
++                !(status && status.premiumActive)
++            ) {
++                this.schedulePremiumStatusRefresh(paymentReturn, snapshot ? targetStep : "premium-checkout");
++            }
++        },
++
++        schedulePremiumStatusRefresh(paymentReturn = null, targetStep = "premium-checkout") {
++            this.clearPremiumStatusTimers();
++
++            [2500, 7000, 15000, 30000].forEach((delay) => {
++                const timerId = window.setTimeout(async () => {
++                    const status = await this.refreshPremiumAccess({
++                        paymentId: paymentReturn && paymentReturn.paymentId
++                            ? paymentReturn.paymentId
++                            : ""
++                    });
++
++                    if (status && status.premiumActive) {
++                        window.PremiumStudyStore.setSessionNote({
++                            step: targetStep,
++                            tone: "success",
++                            title: "Premium liberado",
++                            message: "Pagamento confirmado. Seus recursos premium ja estao ativos e sua trilha continua do ponto onde voce parou."
++                        });
++                        this.clearPremiumStatusTimers();
++                        this.render();
++                    }
++                }, delay);
++
++                this.premiumStatusTimers.push(timerId);
++            });
++        },
++
+         bindRoot() {
+             if (this.root.dataset.bound === "true") {
+                 return;
+@@ -144,6 +463,17 @@
+                 if (state.step === "block" && state.blockFullScreen && !isActive) {
+                     store.setBlockFullScreen(false);
+                     this.render();
++                    return;
++                }
++
++                if (
++                    state.step === "highlight-preview" &&
++                    state.highlightEditorOpen &&
++                    state.highlightEditorFullScreen &&
++                    !isActive
++                ) {
++                    store.setHighlightEditorFullScreen(false);
++                    this.render();
+                 }
+             });
+ 
+@@ -162,7 +492,22 @@
+                 const itemValue = actionTarget.dataset.itemValue || "";
+                 const practiceType = actionTarget.dataset.practiceType || "";
+                 const slotIndex = actionTarget.dataset.slotIndex || "";
+-                this.handleAction(action, { blockId, tabId, dateValue, answerIndex, itemIndex, itemValue, practiceType, slotIndex });
++                const sectionIndex = actionTarget.dataset.sectionIndex || "";
++                const paragraphIndex = actionTarget.dataset.paragraphIndex || "";
++                const partIndex = actionTarget.dataset.partIndex || "";
++                this.handleAction(action, {
++                    blockId,
++                    tabId,
++                    dateValue,
++                    answerIndex,
++                    itemIndex,
++                    itemValue,
++                    practiceType,
++                    slotIndex,
++                    sectionIndex,
++                    paragraphIndex,
++                    partIndex
++                });
+             });
+ 
+             this.root.addEventListener("change", (event) => {
+@@ -207,6 +552,78 @@
+ 
+             this.root.addEventListener("pointerup", clearPointer);
+             this.root.addEventListener("pointercancel", clearPointer);
++            this.root.addEventListener("mouseup", () => {
++                this.captureHighlightSelection();
++            });
++            this.root.addEventListener("keyup", () => {
++                this.captureHighlightSelection();
++            });
++        },
++
++        getHighlightSelectionOffset(root, container, offset) {
++            if (!root || !container) {
++                return 0;
++            }
++
++            const range = document.createRange();
++
++            try {
++                range.selectNodeContents(root);
++                range.setEnd(container, Number(offset) || 0);
++            } catch (error) {
++                return 0;
++            }
++
++            return range.toString().length;
++        },
++
++        captureHighlightSelection() {
++            if (!this.root) {
++                return;
++            }
++
++            const store = window.PremiumStudyStore;
++            const state = store.getState();
++
++            if (
++                state.step !== "highlight-preview" ||
++                !state.highlightEditorOpen
++            ) {
++                return;
++            }
++
++            const selection = window.getSelection ? window.getSelection() : null;
++
++            if (!selection || selection.rangeCount === 0 || selection.isCollapsed) {
++                return;
++            }
++
++            const range = selection.getRangeAt(0);
++            const startElement = range.startContainer?.parentElement
++                ? range.startContainer.parentElement.closest("[data-premium-highlight-paragraph=\"true\"]")
++                : null;
++            const endElement = range.endContainer?.parentElement
++                ? range.endContainer.parentElement.closest("[data-premium-highlight-paragraph=\"true\"]")
++                : null;
++
++            if (!startElement || startElement !== endElement) {
++                return;
++            }
++
++            const sectionIndex = Number(startElement.dataset.sectionIndex);
++            const paragraphIndex = Number(startElement.dataset.paragraphIndex);
++            const startOffset = this.getHighlightSelectionOffset(startElement, range.startContainer, range.startOffset);
++            const endOffset = this.getHighlightSelectionOffset(startElement, range.endContainer, range.endOffset);
++
++            if (!Number.isFinite(sectionIndex) || !Number.isFinite(paragraphIndex) || startOffset === endOffset) {
++                return;
++            }
++
++            store.setHighlightTextSelection(sectionIndex, paragraphIndex, startOffset, endOffset);
++            store.setHighlightInspectorMode("");
++            selection.removeAllRanges();
++            this.render();
++            this.schedulePersist(120);
+         },
+ 
+         isNativeFullScreenActive() {
+@@ -240,8 +657,12 @@
+         async syncNativeFullScreen(preferEnter = false) {
+             const state = window.PremiumStudyStore.getState();
+             const shouldBeNativeFullScreen =
+-                state.step === "block" &&
+-                state.blockFullScreen;
++                (state.step === "block" && state.blockFullScreen) ||
++                (
++                    state.step === "highlight-preview" &&
++                    state.highlightEditorOpen &&
++                    state.highlightEditorFullScreen
++                );
+ 
+             if (!shouldBeNativeFullScreen) {
+                 await this.exitNativeFullScreen();
+@@ -284,7 +705,7 @@
+             const feature = access && access.FEATURES
+                 ? access.FEATURES[featureName] || featureName
+                 : featureName;
+-            const offer = access
++            const baseOffer = access
+                 ? access.buildOffer(feature)
+                 : {
+                     feature,
+@@ -294,13 +715,43 @@
+                     benefits: ["Mais continuidade", "Mais treino", "Mais controle"],
+                     cta: "Conhecer premium"
+                 };
++            const source = sourceStep || store.getState().step || "entry";
+ 
+-            store.setPremiumOffer({
+-                ...offer,
+-                sourceStep: sourceStep || store.getState().step
+-            });
+-            store.setReturnStep(sourceStep || store.getState().step || "entry");
++            const applyOffer = (offer) => {
++                store.setPremiumOffer({
++                    ...offer,
++                    sourceStep: source
++                });
++            };
++
++            applyOffer(baseOffer);
++            store.setReturnStep(source);
+             router.goTo("premium-checkout");
++            this.trackGrowth("paywall_viewed", {
++                feature,
++                sourceStep: source,
++                surface: "premium_checkout",
++                metadata: {
++                    offerTitle: baseOffer.title || ""
++                }
++            });
++
++            if (window.PremiumStudyPromotions && typeof window.PremiumStudyPromotions.refresh === "function") {
++                window.PremiumStudyPromotions.refresh("premium_checkout", feature)
++                    .then(() => {
++                        const enhanced = window.PremiumStudyPromotions.enhanceOffer(baseOffer, {
++                            feature,
++                            surface: "premium_checkout"
++                        });
++                        applyOffer(enhanced);
++                        if (window.PremiumStudyStore.getState().step === "premium-checkout") {
++                            this.render();
++                        }
++                    })
++                    .catch(() => {
++                        // Se a promocao nao responder, mantemos a oferta base.
++                    });
++            }
+         },
+ 
+         async handleSelectedFile(file, input) {
+@@ -316,6 +767,14 @@
+             }
+ 
+             if (!validation.ok) {
++                this.trackGrowth("pdf_upload_blocked", {
++                    reason: validation.reason || "invalid_pdf",
++                    pageCount: Number(validation.pageCount || 0),
++                    metadata: {
++                        fileName: file && file.name ? file.name : "",
++                        message: validation.message || ""
++                    }
++                });
+                 if (validation.reason === "page_limit") {
+                     this.openPremiumOffer("LARGE_PDF_UPLOAD", "entry");
+                     store.setSessionNote({
+@@ -337,17 +796,151 @@
+                 return;
+             }
+ 
++            this.activeMaterialFile = file;
++            let materialHash = "";
++
++            if (window.PremiumStudyGrowth && typeof window.PremiumStudyGrowth.buildMaterialHash === "function") {
++                materialHash = await window.PremiumStudyGrowth.buildMaterialHash({
++                    name: file.name,
++                    size: file.size,
++                    type: file.type,
++                    pageCount: validation.pageCount
++                });
++            }
++
++            const materialFileKey = this.buildMaterialFileKey(file, materialHash);
++
+             store.setMaterial({
+                 name: file.name,
+                 size: file.size,
+                 type: file.type,
+-                pageCount: validation.pageCount
++                pageCount: validation.pageCount,
++                materialHash,
++                materialFileKey
++            });
++
++            if (window.PremiumStudyStorage && typeof window.PremiumStudyStorage.saveMaterialFile === "function") {
++                await window.PremiumStudyStorage.saveMaterialFile(materialFileKey, file, {
++                    name: file.name,
++                    type: file.type,
++                    size: file.size,
++                    lastModified: file.lastModified
++                });
++            }
++
++            store.patch({
++                progressLabel: "PDF salvo localmente. Agora estamos preparando o texto integral para os modos de leitura e marcacao."
++            });
++            this.render();
++
++            await this.ensureMaterialTextExtracted();
++
++            this.trackGrowth("pdf_upload_success", {
++                materialHash,
++                pageCount: Number(validation.pageCount || 0),
++                metadata: {
++                    fileName: file.name || ""
++                }
+             });
+             router.goTo("exam-date");
+             this.render();
+             this.schedulePersist(80);
+         },
+ 
++        buildMaterialFileKey(file, materialHash = "") {
++            const stableHash = String(materialHash || "").trim();
++            if (stableHash) {
++                return `pdf-${stableHash}`;
++            }
++
++            const name = String(file && file.name ? file.name : "material.pdf")
++                .trim()
++                .toLowerCase()
++                .replace(/[^a-z0-9]+/g, "-")
++                .replace(/^-+|-+$/g, "");
++            const size = Number(file && file.size ? file.size : 0);
++            const lastModified = Number(file && file.lastModified ? file.lastModified : 0);
++
++            return `pdf-${name || "material"}-${size}-${lastModified}`;
++        },
++
++        async restoreActiveMaterialFile(preferredKey = "") {
++            const store = window.PremiumStudyStore;
++            const state = store.getState();
++            const targetKey =
++                String(preferredKey || state.materialFileKey || state.materialHash || "").trim();
++
++            if (
++                this.activeMaterialFile &&
++                targetKey &&
++                targetKey === this.buildMaterialFileKey(this.activeMaterialFile, state.materialHash)
++            ) {
++                return this.activeMaterialFile;
++            }
++
++            if (
++                !targetKey ||
++                !window.PremiumStudyStorage ||
++                typeof window.PremiumStudyStorage.getMaterialFile !== "function"
++            ) {
++                return null;
++            }
++
++            const restoredFile = await window.PremiumStudyStorage.getMaterialFile(targetKey);
++            if (restoredFile) {
++                this.activeMaterialFile = restoredFile;
++            }
++
++            return restoredFile || null;
++        },
++
++        async ensureMaterialTextExtracted() {
++            const store = window.PremiumStudyStore;
++            const state = store.getState();
++
++            if (String(state.materialExtractedText || "").trim()) {
++                return state.materialExtractedText;
++            }
++
++            const materialFile =
++                this.activeMaterialFile ||
++                await this.restoreActiveMaterialFile(state.materialFileKey || state.materialHash || "");
++
++            if (!materialFile || !window.PremiumStudyPdfTextExtractor) {
++                return "";
++            }
++
++            if (!this.materialExtractionPromise) {
++                this.materialExtractionPromise = (async () => {
++                    const extraction = await window.PremiumStudyPdfTextExtractor.extractText(materialFile, {
++                        maxChars: 180000,
++                        maxPages: state.accessTier === "premium" ? 80 : 24
++                    });
++
++                    store.setMaterialExtraction(extraction);
++                    this.schedulePersist(80);
++
++                    if (!extraction || !String(extraction.text || "").trim()) {
++                        store.setSessionNote({
++                            step: "highlight-preview",
++                            tone: "info",
++                            title: "Nao consegui abrir o texto integral ainda",
++                            message: "Este navegador nao conseguiu extrair o texto completo do PDF agora. Reabra o arquivo original neste navegador para tentar novamente."
++                        });
++                        return "";
++                    }
++
++                    return extraction.text;
++                })();
++            }
++
++            try {
++                return await this.materialExtractionPromise;
++            } finally {
++                this.materialExtractionPromise = null;
++            }
++        },
++
+         async persistCurrentState() {
+             const state = window.PremiumStudyStore.getState();
+             if (!window.PremiumStudyStorage || !state.materialName) {
+@@ -487,7 +1080,12 @@ li{margin:0 0 10px}
+     <h2>${window.PremiumStudyUI.escapeHtml(section.title)}</h2>
+     ${(section.paragraphs || []).map((paragraph) => `
+         <p>${paragraph.map((part) => part.highlight
+-        ? `<mark>${window.PremiumStudyUI.escapeHtml(part.text)}</mark>`
++        ? `<mark style="background:${({
++            gold: "rgba(255, 203, 109, 0.52)",
++            mint: "rgba(88, 227, 183, 0.42)",
++            blue: "rgba(121, 213, 255, 0.42)",
++            rose: "rgba(255, 151, 188, 0.44)"
++        })[part.colorKey] || "rgba(255, 203, 109, 0.52)"}">${window.PremiumStudyUI.escapeHtml(part.text)}</mark>`
+         : window.PremiumStudyUI.escapeHtml(part.text)).join("")}</p>
+     `).join("")}
+ </div>`).join("");
+@@ -506,7 +1104,7 @@ ${sections}`
+             this.analysisTimers = [];
+         },
+ 
+-        startAnalysisSequence() {
++        legacyStartAnalysisSequence() {
+             this.clearAnalysisTimers();
+             window.PremiumStudyStore.setAnalysisProgress(10, "running");
+ 
+@@ -533,6 +1131,114 @@ ${sections}`
+             });
+         },
+ 
++        buildBundleSummary() {
++            const state = window.PremiumStudyStore.getState();
++            return state.blocks.map((block) => {
++                const learn = block.learn || {};
++                return [
++                    block.title,
++                    block.subtitle,
++                    learn.summary,
++                    ...(Array.isArray(block.topics) ? block.topics : []),
++                    ...(Array.isArray(learn.keyConcepts) ? learn.keyConcepts : []),
++                    ...(Array.isArray(learn.hotPoints) ? learn.hotPoints : [])
++                ].filter(Boolean).join("\n");
++            }).join("\n\n");
++        },
++
++        async startAnalysisSequence() {
++            this.clearAnalysisTimers();
++            const store = window.PremiumStudyStore;
++            const state = store.getState();
++            store.setAnalysisProgress(12, "running");
++            store.patch({
++                progressLabel: "Lendo o PDF e preparando uma rota unica de estudo."
++            });
++            this.render();
++
++            try {
++                let extractedText = state.materialExtractedText || "";
++
++                if (!extractedText) {
++                    store.setAnalysisProgress(28, "running");
++                    this.render();
++                    extractedText = await this.ensureMaterialTextExtracted();
++                }
++
++                store.setAnalysisProgress(52, "running");
++                store.patch({
++                    progressLabel: "A IA esta montando blocos, praticas e mini provas a partir do material."
++                });
++                this.render();
++
++                const current = store.getState();
++                const dailyMinutes = (Number(current.studyHours) || 0) * 60
++                    + (Number(current.studyMinutes) || 0);
++                const ai = window.PremiumStudyAI;
++                const result = ai && typeof ai.request === "function"
++                    ? await ai.request(ai.TASKS.FREE_BUNDLE_FROM_MATERIAL, {
++                        customerId: current.customerId || "",
++                        materialHash: current.materialHash || "",
++                        materialName: current.materialName || "",
++                        pageCount: current.materialPageCount || 0,
++                        extractedText,
++                        examDate: current.examDate || "",
++                        targetScore: current.targetScore || "",
++                        dailyMinutes
++                    })
++                    : { ok: false, status: "ai_unavailable" };
++
++                store.setAnalysisProgress(82, "running");
++                if (result && result.ok && result.bundle) {
++                    store.applyGeneratedBundle(result);
++                    this.trackGrowth("ai_bundle_generated", {
++                        materialHash: store.getState().materialHash,
++                        metadata: {
++                            provider: result.provider || "",
++                            model: result.model || "",
++                            blockCount: result.bundle && result.bundle.blocks ? result.bundle.blocks.length : 0
++                        }
++                    });
++                } else {
++                    store.patch({
++                        aiGeneration: {
++                            status: result && result.status ? result.status : "fallback",
++                            provider: result && result.provider ? result.provider : "",
++                            model: result && result.model ? result.model : "",
++                            promptVersion: result && result.promptVersion ? result.promptVersion : "",
++                            generatedAt: new Date().toISOString()
++                        },
++                        progressLabel: "Nao consegui acionar a IA agora. Mantive uma rota local para voce continuar estudando."
++                    });
++                    store.setSessionNote({
++                        step: "mode-select",
++                        tone: "info",
++                        title: "IA em modo fallback",
++                        message: "O PDF abriu com o pacote local. Tente novamente mais tarde para gerar conteudo totalmente baseado no texto."
++                    });
++                }
++
++                store.setAnalysisProgress(100, "done");
++                window.PremiumStudyRouter.goTo("mode-select");
++                this.render();
++                this.schedulePersist(120);
++            } catch (error) {
++                store.setAnalysisProgress(100, "done");
++                store.patch({
++                    progressLabel: "A rota local esta pronta. A IA nao respondeu desta vez."
++                });
++                store.setSessionNote({
++                    step: "mode-select",
++                    tone: "info",
++                    title: "IA indisponivel agora",
++                    message: "Mantive uma rota base para voce nao perder o fluxo. Quando a IA responder, ela gera o pacote completo do PDF."
++                });
++                window.PremiumStudyRouter.goTo("mode-select");
++                this.render();
++                this.schedulePersist(120);
++            }
++        },
++
+         updateRingFromPointer(event, ring) {
+             const control = ring.dataset.ringControl || "";
+             const rect = ring.getBoundingClientRect();
+@@ -599,6 +1305,13 @@ ${sections}`
+                 };
+             }
+ 
++            await this.restoreActiveMaterialFile(
++                store.getState().materialFileKey ||
++                snapshot.materialFileKey ||
++                snapshot.materialHash ||
++                ""
++            );
++
+             router.goTo(nextStep);
+ 
+             return {
+@@ -703,18 +1416,21 @@ ${sections}`
+             case "resume-latest-study": {
+                 const latestDraft = await window.PremiumStudyStorage.getLatestDraft();
+                 if (latestDraft && latestDraft.snapshot) {
+-                    store.restoreFromSnapshot({
++                    const resumeState = await this.resumeSnapshot({
+                         ...latestDraft.snapshot,
+                         savedAt: latestDraft.savedAt,
+                         step: "mode-select",
+                         sessionNote: null
+                     });
+-                    if (store.getState().materialName) {
+-                        router.goTo("mode-select");
+-                        shouldSyncNativeFullScreen = true;
+-                        preferEnterNativeFullScreen = false;
+-                    }
++                    shouldSyncNativeFullScreen = resumeState.shouldSyncNativeFullScreen;
++                    preferEnterNativeFullScreen = resumeState.preferEnterNativeFullScreen;
+                     shouldPersist = true;
++                    this.trackGrowth("resume_latest_study", {
++                        materialHash: store.getState().materialHash,
++                        metadata: {
++                            source: "latest_draft"
++                        }
++                    });
+                 }
+                 break;
+             }
+@@ -740,6 +1456,16 @@ ${sections}`
+                 store.setAnalysisProgress(10, "pending");
+                 router.goTo("analysis");
+                 shouldPersist = true;
++                this.trackGrowth("trial_started", {
++                    materialHash: store.getState().materialHash,
++                    pageCount: Number(store.getState().materialPageCount || 0),
++                    metadata: {
++                        examDate: store.getState().examDate || "",
++                        targetScore: store.getState().targetScore || 0,
++                        studyHours: store.getState().studyHours || 0,
++                        studyMinutes: store.getState().studyMinutes || 0
++                    }
++                });
+                 break;
+             case "choose-mode-learn":
+                 store.setBlockTab("aprender");
+@@ -747,6 +1473,7 @@ ${sections}`
+                 shouldPersist = true;
+                 break;
+             case "choose-mode-highlight":
++                await this.ensureMaterialTextExtracted();
+                 store.openHighlightDocument();
+                 router.goTo("highlight-preview");
+                 shouldPersist = true;
+@@ -759,9 +1486,13 @@ ${sections}`
+                 shouldSyncNativeFullScreen = true;
+                 break;
+             case "choose-mode-exam":
++                if (!canUseFeature("LEVEL_EXAM")) {
++                    openPremiumOffer("LEVEL_EXAM");
++                    shouldPersist = true;
++                    break;
++                }
+                 store.setReturnStep("mode-select");
+-                store.resetActiveSession("miniExam");
+-                router.goTo("mini-exam");
++                router.goTo("level-exam");
+                 shouldPersist = true;
+                 shouldSyncNativeFullScreen = true;
+                 break;
+@@ -820,6 +1551,144 @@ ${sections}`
+                 this.downloadHighlightedPdf("full");
+                 shouldPersist = true;
+                 break;
++            case "open-highlight-editor":
++                await this.ensureMaterialTextExtracted();
++                store.openHighlightDocument();
++                store.setHighlightEditorOpen(true);
++                store.setHighlightEditorFullScreen(true);
++                shouldPersist = true;
++                shouldSyncNativeFullScreen = true;
++                preferEnterNativeFullScreen = true;
++                break;
++            case "close-highlight-editor":
++                store.setHighlightEditorFullScreen(false);
++                store.setHighlightEditorOpen(false);
++                shouldPersist = true;
++                shouldSyncNativeFullScreen = true;
++                break;
++            case "expand-highlight-editor":
++                store.setHighlightEditorOpen(true);
++                store.setHighlightEditorFullScreen(true);
++                shouldPersist = true;
++                shouldSyncNativeFullScreen = true;
++                preferEnterNativeFullScreen = true;
++                break;
++            case "collapse-highlight-editor":
++                store.setHighlightEditorFullScreen(false);
++                shouldPersist = true;
++                shouldSyncNativeFullScreen = true;
++                break;
++            case "select-highlight-part":
++                store.setHighlightSelection(
++                    Number(payload.sectionIndex),
++                    Number(payload.paragraphIndex),
++                    Number(payload.partIndex)
++                );
++                store.setHighlightInspectorMode("");
++                shouldPersist = true;
++                break;
++            case "open-highlight-edit":
++                store.setHighlightInspectorMode("edit");
++                shouldPersist = true;
++                break;
++            case "open-highlight-note":
++                store.setHighlightInspectorMode("note");
++                shouldPersist = true;
++                break;
++            case "close-highlight-inspector":
++                store.setHighlightInspectorMode("");
++                shouldPersist = true;
++                break;
++            case "set-highlight-color":
++                store.setHighlightColor(payload.itemValue);
++                shouldPersist = true;
++                break;
++            case "mark-highlight-selection":
++                store.setSelectedHighlightStyleMode("highlight");
++                shouldPersist = true;
++                break;
++            case "unmark-highlight-selection":
++                store.toggleSelectedHighlight(false);
++                shouldPersist = true;
++                break;
++            case "set-highlight-style-box":
++                store.setSelectedHighlightStyleMode("box");
++                shouldPersist = true;
++                break;
++            case "toggle-highlight-selection":
++                store.toggleSelectedHighlight();
++                shouldPersist = true;
++                break;
++            case "clear-all-highlights":
++                store.clearAllHighlights();
++                shouldPersist = true;
++                break;
++            case "restore-highlight-document":
++                store.restoreOriginalHighlightedDocument();
++                shouldPersist = true;
++                break;
++            case "save-highlight-text": {
++                const editor = this.root.querySelector("#premiumHighlightEditor");
++                store.updateSelectedHighlightText(editor ? editor.value : "");
++                store.setHighlightInspectorMode("");
++                shouldPersist = true;
++                break;
++            }
++            case "save-highlight-note": {
++                const editor = this.root.querySelector("#premiumHighlightNoteEditor");
++                store.updateSelectedHighlightNote(editor ? editor.value : "");
++                store.setHighlightInspectorMode("");
++                shouldPersist = true;
++                break;
++            }
++            case "delete-highlight-text":
++                store.deleteSelectedHighlightText();
++                store.setHighlightInspectorMode("");
++                shouldPersist = true;
++                break;
++            case "copy-highlight-text": {
++                const documentData = store.getState().highlightedDocument;
++                const selectedPartId = documentData && documentData.selectedPartId
++                    ? documentData.selectedPartId
++                    : "";
++                let selectedText = "";
++
++                if (selectedPartId) {
++                    (documentData.sections || []).some((section) =>
++                        (section.paragraphs || []).some((paragraph) =>
++                            (paragraph || []).some((part) => {
++                                if (part.id !== selectedPartId) {
++                                    return false;
++                                }
++
++                                selectedText = String(part.text || "");
++                                return true;
++                            })
++                        )
++                    );
++                }
++
++                if (selectedText && navigator.clipboard && typeof navigator.clipboard.writeText === "function") {
++                    try {
++                        await navigator.clipboard.writeText(selectedText);
++                        store.setSessionNote({
++                            step: "highlight-preview",
++                            tone: "info",
++                            title: "Trecho copiado",
++                            message: "O texto selecionado foi enviado para a area de transferencia."
++                        });
++                    } catch (error) {
++                        store.setSessionNote({
++                            step: "highlight-preview",
++                            tone: "premium",
++                            title: "Nao consegui copiar agora",
++                            message: "O navegador bloqueou a copia automatica deste trecho."
++                        });
++                    }
++                }
++                shouldPersist = true;
++                break;
++            }
+             case "set-tab":
+                 store.setBlockTab(payload.tabId);
+                 shouldPersist = true;
+@@ -830,26 +1699,59 @@ ${sections}`
+                 shouldSyncNativeFullScreen = true;
+                 break;
+             case "start-premium-checkout": {
+-                store.setSessionNote({
+-                    step: store.getState().step,
+-                    tone: "info",
+-                    title: "Abrindo checkout seguro",
+-                    message: "Estamos criando sua rota de pagamento no Mercado Pago."
+-                });
+-                this.render();
++                const plans = window.PremiumStudyBilling
++                    && typeof window.PremiumStudyBilling.getPlans === "function"
++                    ? window.PremiumStudyBilling.getPlans()
++                    : [];
++                const selectedPlanId = payload.itemValue || "premium_monthly";
++                const selectedPlan = plans.find((plan) => plan.id === selectedPlanId) || null;
+ 
++                if (
++                    window.RotaNotaCore
++                    && typeof window.RotaNotaCore.requireGoogleLogin === "function"
++                ) {
++                    const gate = window.RotaNotaCore.requireGoogleLogin({
++                        kind: "premium_checkout",
++                        source: "premium_checkout",
++                        planId: selectedPlanId,
++                        planLabel: selectedPlan && selectedPlan.label
++                            ? selectedPlan.label
++                            : ""
++                    });
++
++                    if (!gate || gate.allowed !== true) {
++                        shouldPersist = true;
++                        break;
++                    }
++                }
++
++                this.trackGrowth("checkout_click", {
++                    feature: store.getState().premiumOffer && store.getState().premiumOffer.feature,
++                    sourceStep: store.getState().returnStep,
++                    surface: "premium_checkout",
++                    planId: selectedPlanId,
++                    metadata: {
++                        promotionCampaignId: store.getState().premiumOffer && store.getState().premiumOffer.promotionCampaignId
++                            ? store.getState().premiumOffer.promotionCampaignId
++                            : ""
++                    }
++                });
+                 const checkout = window.PremiumStudyBilling
+-                    ? await window.PremiumStudyBilling.startCheckout(payload.itemValue || "premium_monthly", {
++                    ? await window.PremiumStudyBilling.startCheckout(selectedPlanId, {
+                         feature: store.getState().premiumOffer && store.getState().premiumOffer.feature,
+                         sourceStep: store.getState().returnStep
+                     })
+                     : { status: "not_configured", message: "Checkout real ainda nao foi conectado." };
+ 
++                if (checkout && checkout.ok && checkout.checkoutUrl) {
++                    return;
++                }
++
+                 store.setSessionNote({
+                     step: store.getState().step,
+-                    tone: checkout.ok ? "info" : "premium",
+-                    title: checkout.ok ? "Checkout iniciado" : "Pagamento ainda precisa ser conectado",
+-                    message: checkout.message || "A proxima etapa liga este botao ao provedor real."
++                    tone: "premium",
++                    title: "Nao foi possivel abrir o checkout",
++                    message: checkout.message || "O checkout nao respondeu corretamente agora. Tente de novo em instantes."
+                 });
+                 shouldPersist = true;
+                 break;
+@@ -879,6 +1781,7 @@ ${sections}`
+                 break;
+             case "highlight-block":
+                 store.selectBlock(payload.blockId);
++                await this.ensureMaterialTextExtracted();
+                 store.openHighlightDocument(payload.blockId);
+                 router.goTo("highlight-preview");
+                 shouldPersist = true;
+@@ -971,7 +1874,108 @@ ${sections}`
+                 shouldPersist = true;
+                 break;
+             case "request-extra-mini-exam":
+-                openPremiumOffer("MINI_EXAM_EXTRA");
++                if (!canUseFeature("MINI_EXAM_EXTRA")) {
++                    openPremiumOffer("MINI_EXAM_EXTRA");
++                    shouldPersist = true;
++                    break;
++                }
++                store.setSessionNote({
++                    step: "mini-exam",
++                    tone: "info",
++                    title: "Gerando mais 5 questoes",
++                    message: "A IA esta criando uma nova rodada premium para este bloco."
++                });
++                this.render();
++                {
++                    const block = store.getActiveBlock();
++                    const ai = window.PremiumStudyAI;
++                    const result = ai && typeof ai.request === "function"
++                        ? await ai.request(ai.TASKS.EXTRA_MINI_EXAM, {
++                            customerId: store.getState().customerId || "",
++                            materialHash: store.getState().materialHash || "",
++                            blockId: block.id,
++                            blockTitle: block.title,
++                            blockSummary: block.learn && block.learn.summary ? block.learn.summary : "",
++                            topics: block.topics || [],
++                            count: 5
++                        })
++                        : { ok: false, status: "ai_unavailable" };
++
++                    if (result && result.ok && result.questions) {
++                        store.appendMiniExamQuestions(block.id, result.questions);
++                        router.goTo("mini-exam");
++                    } else {
++                        store.setSessionNote({
++                            step: "mini-exam",
++                            tone: "premium",
++                            title: "Nao foi possivel gerar agora",
++                            message: "A IA nao retornou novas questoes. Tente novamente em alguns instantes."
++                        });
++                    }
++                }
++                shouldPersist = true;
++                break;
++            case "select-level-exam-count":
++                store.setLevelExamQuestionCount(Number(payload.itemValue));
++                shouldPersist = true;
++                break;
++            case "generate-level-exam":
++                if (!canUseFeature("LEVEL_EXAM")) {
++                    openPremiumOffer("LEVEL_EXAM");
++                    shouldPersist = true;
++                    break;
++                }
++                store.setSessionNote({
++                    step: "level-exam",
++                    tone: "info",
++                    title: "Gerando prova premium",
++                    message: "A IA esta montando uma prova de nivel com base na sua rota."
++                });
++                this.render();
++                {
++                    const levelExam = store.getState().levelExam || {};
++                    const ai = window.PremiumStudyAI;
++                    const result = ai && typeof ai.request === "function"
++                        ? await ai.request(ai.TASKS.PREMIUM_LEVEL_EXAM, {
++                            customerId: store.getState().customerId || "",
++                            materialHash: store.getState().materialHash || "",
++                            questionCount: levelExam.questionCount || 10,
++                            bundleSummary: this.buildBundleSummary()
++                        })
++                        : { ok: false, status: "ai_unavailable" };
++
++                    if (result && result.ok && result.questions) {
++                        store.setLevelExamQuestions({
++                            title: result.title,
++                            questions: result.questions
++                        });
++                        store.clearSessionNote();
++                    } else {
++                        store.setSessionNote({
++                            step: "level-exam",
++                            tone: "premium",
++                            title: "Nao foi possivel gerar a prova",
++                            message: "A IA nao retornou uma prova valida. Tente novamente em instantes."
++                        });
++                    }
++                }
++                router.goTo("level-exam");
++                shouldPersist = true;
++                break;
++            case "start-level-exam":
++                store.startLevelExam();
++                shouldPersist = true;
++                break;
++            case "answer-level-exam":
++                store.setLevelExamAnswer(Number(payload.answerIndex));
++                shouldPersist = true;
++                break;
++            case "continue-level-exam":
++                store.advanceLevelExam();
++                shouldPersist = true;
++                break;
++            case "finish-level-exam":
++                store.advanceLevelExam();
+                 shouldPersist = true;
+                 break;
+             case "request-extra-quiz": {
+@@ -1151,7 +2155,16 @@ ${sections}`
+                 this.clearAnalysisTimers();
+             }
+ 
+-            if (step !== "block" || !window.PremiumStudyStore.getState().blockFullScreen) {
++            const state = window.PremiumStudyStore.getState();
++            const keepNativeFullScreen =
++                (step === "block" && state.blockFullScreen) ||
++                (
++                    step === "highlight-preview" &&
++                    state.highlightEditorOpen &&
++                    state.highlightEditorFullScreen
++                );
++
++            if (!keepNativeFullScreen) {
+                 this.exitNativeFullScreen();
+             }
+         },
+@@ -1163,7 +2176,15 @@ ${sections}`
+ 
+             const state = window.PremiumStudyStore.getState();
+             const step = state.step;
+-            const meta = window.PremiumStudyRouter.getMeta(step);
++            const meta = {
++                ...window.PremiumStudyRouter.getMeta(step)
++            };
++
++            if (step === "highlight-preview" && state.highlightEditorOpen) {
++                meta.hideHeading = true;
++                meta.showKicker = false;
++            }
++
+             const summary = meta.showSummary
+                 ? window.PremiumStudyUI.summaryPanel(state, step === "mode-select" ? "compact" : "default")
+                 : "";
+diff --git a/premium-study/state/store.js b/premium-study/state/store.js
+index b16e884..f7c733e 100644
+--- a/premium-study/state/store.js
++++ b/premium-study/state/store.js
+@@ -7,6 +7,8 @@
+         return JSON.parse(JSON.stringify(value));
+     }
+ 
++    const DEFAULT_HIGHLIGHT_COLOR = "#fde68a";
++
+     function buildStudyTitle(materialName) {
+         if (!materialName) {
+             return "Estudo personalizado";
+@@ -27,6 +29,21 @@
+         return { front, back, tip };
+     }
+ 
++    function createLevelExamState(overrides = {}) {
++        return {
++            questionCount: 10,
++            title: "Prova de nivel RotaNota",
++            questions: [],
++            started: false,
++            index: 0,
++            answers: [],
++            isComplete: false,
++            result: null,
++            status: "idle",
++            ...overrides
++        };
++    }
++
+     function buildExamPack(material, descriptors) {
+         const [first, second, third, fourth] = descriptors;
+ 
+@@ -475,13 +492,13 @@
+                     ]
+                 },
+                 exam: {
+-                    baseCount: 10,
++                    baseCount: 5,
+                     questions: buildExamPack(material, [
+                         "a linguagem central",
+                         "o critério principal",
+                         "relacoes entre conceitos",
+                         "a memorizacao do bloco"
+-                    ])
++                    ]).slice(0, 5)
+                 }
+             },
+             {
+@@ -811,31 +828,419 @@
+                     ]
+                 },
+                 exam: {
+-                    baseCount: 10,
++                    baseCount: 5,
+                     questions: buildExamPack(material, [
+                         "as comparacoes do tema",
+                         "a palavra-chave de contraste",
+                         "as excecoes do assunto",
+                         "a memorizacao das pegadinhas"
+-                    ])
++                    ]).slice(0, 5)
+                 }
+             }
+         ];
+     }
+ 
+-    function buildHighlightedParts(text, highlights) {
++    const HIGHLIGHT_COLOR_OPTIONS = [
++        {
++            key: "gold",
++            label: "Amarelo IA",
++            value: "rgba(255, 203, 109, 0.42)"
++        },
++        {
++            key: "mint",
++            label: "Verde agua",
++            value: "rgba(88, 227, 183, 0.34)"
++        },
++        {
++            key: "blue",
++            label: "Azul",
++            value: "rgba(121, 213, 255, 0.32)"
++        },
++        {
++            key: "rose",
++            label: "Rosa",
++            value: "rgba(255, 151, 188, 0.34)"
++        }
++    ];
++
++    function getHighlightColorOptions() {
++        return HIGHLIGHT_COLOR_OPTIONS.map((option) => ({ ...option }));
++    }
++
++    function resolveHighlightColorKey(colorKey) {
++        const normalized = String(colorKey || "").trim().toLowerCase();
++        return HIGHLIGHT_COLOR_OPTIONS.some((option) => option.key === normalized)
++            ? normalized
++            : "gold";
++    }
++
++    function resolveHighlightStyleMode(styleMode) {
++        return String(styleMode || "").trim().toLowerCase() === "box"
++            ? "box"
++            : "highlight";
++    }
++
++    function normalizeHighlightMatchText(text) {
++        return String(text || "")
++            .normalize("NFD")
++            .replace(/[\u0300-\u036f]/g, "")
++            .toLowerCase()
++            .replace(/\s+/g, " ")
++            .trim();
++    }
++
++    function createHighlightPart(partId, text, highlight, colorKey, styleMode = "highlight", note = "") {
++        return {
++            id: partId,
++            text: String(text || ""),
++            highlight: Boolean(highlight),
++            colorKey: highlight
++                ? resolveHighlightColorKey(colorKey)
++                : "",
++            styleMode: resolveHighlightStyleMode(styleMode),
++            note: String(note || "")
++        };
++    }
++
++    function createHighlightPartId(scope = "highlight-edit") {
++        return `${String(scope || "highlight-edit")}-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
++    }
++
++    function normalizeHighlightParagraph(paragraph = []) {
++        const normalized = [];
++
++        (Array.isArray(paragraph) ? paragraph : []).forEach((part) => {
++            const text = String(part?.text || "");
++
++            if (!text) {
++                return;
++            }
++
++            const nextPart = createHighlightPart(
++                String(part?.id || createHighlightPartId("highlight-part")),
++                text,
++                Boolean(part?.highlight),
++                part?.colorKey || "",
++                part?.styleMode || "highlight",
++                part?.note || ""
++            );
++            const previous = normalized[normalized.length - 1];
++
++            if (
++                previous &&
++                previous.highlight === nextPart.highlight &&
++                previous.colorKey === nextPart.colorKey &&
++                previous.styleMode === nextPart.styleMode &&
++                !previous.note &&
++                !nextPart.note
++            ) {
++                previous.text += nextPart.text;
++                return;
++            }
++
++            normalized.push(nextPart);
++        });
++
++        return normalized;
++    }
++
++    function selectHighlightRangeFromParagraph(
++        paragraph = [],
++        startOffset = 0,
++        endOffset = 0,
++        activeColorKey = "gold"
++    ) {
++        const parts = Array.isArray(paragraph)
++            ? paragraph
++            : [];
++        const totalLength = parts.reduce(
++            (acc, part) =>
++                acc + String(part?.text || "").length,
++            0
++        );
++        const start = Math.max(
++            0,
++            Math.min(Number(startOffset) || 0, totalLength)
++        );
++        const end = Math.max(
++            start,
++            Math.min(Number(endOffset) || 0, totalLength)
++        );
++
++        if (start === end) {
++            return {
++                paragraph: normalizeHighlightParagraph(parts),
++                selectedPartId: ""
++            };
++        }
++
++        const selectedPartId = createHighlightPartId("highlight-selection");
++        const nextParagraph = [];
++        let selectedText = "";
++        let selectedHighlight = false;
++        let selectedColorKey = resolveHighlightColorKey(activeColorKey);
++        let selectedStyleMode = "highlight";
++        let selectedNote = "";
++        let selectionInserted = false;
++        let cursor = 0;
++
++        parts.forEach((part) => {
++            const text = String(part?.text || "");
++            const partStart = cursor;
++            const partEnd = cursor + text.length;
++            const clonedPart = () =>
++                createHighlightPart(
++                    String(part?.id || createHighlightPartId("highlight-piece")),
++                    "",
++                    Boolean(part?.highlight),
++                    part?.colorKey || "",
++                    part?.styleMode || "highlight",
++                    part?.note || ""
++                );
++
++            if (!text) {
++                cursor = partEnd;
++                return;
++            }
++
++            if (partEnd <= start || partStart >= end) {
++                if (!selectionInserted && partStart >= end && selectedText) {
++                    nextParagraph.push(
++                        createHighlightPart(
++                            selectedPartId,
++                            selectedText,
++                            selectedHighlight,
++                            selectedColorKey,
++                            selectedStyleMode,
++                            selectedNote
++                        )
++                    );
++                    selectionInserted = true;
++                }
++
++                const passthrough = clonedPart();
++                passthrough.text = text;
++                nextParagraph.push(passthrough);
++                cursor = partEnd;
++                return;
++            }
++
++            const overlapStart = Math.max(start, partStart);
++            const overlapEnd = Math.min(end, partEnd);
++            const beforeText = text.slice(0, Math.max(0, overlapStart - partStart));
++            const selectedSlice = text.slice(
++                Math.max(0, overlapStart - partStart),
++                Math.max(0, overlapEnd - partStart)
++            );
++            const afterText = text.slice(Math.max(0, overlapEnd - partStart));
++
++            if (beforeText) {
++                const beforePart = clonedPart();
++                beforePart.text = beforeText;
++                nextParagraph.push(beforePart);
++            }
++
++            if (selectedSlice) {
++                selectedText += selectedSlice;
++
++                if (part?.highlight && !selectedHighlight) {
++                    selectedHighlight = true;
++                    selectedColorKey = resolveHighlightColorKey(
++                        part?.colorKey || activeColorKey
++                    );
++                    selectedStyleMode = resolveHighlightStyleMode(part?.styleMode || "highlight");
++                }
++
++                if (part?.note && !selectedNote) {
++                    selectedNote = String(part.note || "");
++                }
++            }
++
++            if (!selectionInserted && partEnd >= end && selectedText) {
++                nextParagraph.push(
++                    createHighlightPart(
++                        selectedPartId,
++                        selectedText,
++                        selectedHighlight,
++                        selectedColorKey,
++                        selectedStyleMode,
++                        selectedNote
++                    )
++                );
++                selectionInserted = true;
++            }
++
++            if (afterText) {
++                const afterPart = clonedPart();
++                afterPart.text = afterText;
++                nextParagraph.push(afterPart);
++            }
++
++            cursor = partEnd;
++        });
++
++        if (!selectionInserted && selectedText) {
++            nextParagraph.push(
++                createHighlightPart(
++                    selectedPartId,
++                    selectedText,
++                    selectedHighlight,
++                    selectedColorKey,
++                    selectedStyleMode,
++                    selectedNote
++                )
++            );
++        }
++
++        return {
++            paragraph: normalizeHighlightParagraph(nextParagraph),
++            selectedPartId
++        };
++    }
++
++    function splitTextIntoHighlightFragments(text) {
++        const matches = String(text || "").match(/[^,.;:!?]+(?:[,.;:!?]+\s*|\s*$)/g);
++        return matches && matches.length
++            ? matches
++            : [String(text || "")];
++    }
++
++    function scoreHighlightFragment(fragment, normalizedHighlights = []) {
++        const raw = String(fragment || "");
++        const clean = raw.trim();
++        const normalized = normalizeHighlightMatchText(clean);
++
++        if (!normalized) {
++            return 0;
++        }
++
++        const cueWords = [
++            "principal",
++            "importante",
++            "essencial",
++            "nucleo",
++            "centrais",
++            "definicoes",
++            "criterio",
++            "regra",
++            "excecao",
++            "resultado",
++            "processo",
++            "causa",
++            "efeito",
++            "passo",
++            "base",
++            "estrutura",
++            "comparar",
++            "diferenca",
++            "cobrada",
++            "prova",
++            "deve",
++            "precisa"
++        ];
++        let score = 0;
++
++        if (normalizedHighlights.some((term) => term && normalized.includes(term))) {
++            score += 4;
++        }
++
++        score += cueWords.reduce((total, cue) => (
++            normalized.includes(cue) ? total + 1 : total
++        ), 0);
++
++        if (/\d/.test(clean)) {
++            score += 1;
++        }
++
++        if (clean.length >= 24 && clean.length <= 180) {
++            score += 1;
++        }
++
++        return score;
++    }
++
++    function buildSmartHighlightedFragments(content, highlights, options = {}) {
++        const fragments = splitTextIntoHighlightFragments(content);
++        const normalizedHighlights = (Array.isArray(highlights) ? highlights : [])
++            .map((item) => normalizeHighlightMatchText(item))
++            .filter(Boolean);
++        const highlightColorKey =
++            resolveHighlightColorKey(options.highlightColorKey);
++        const maxHighlights = Math.max(1, Math.min(3, Math.ceil(fragments.length / 3)));
++        const scored = fragments.map((fragment, index) => ({
++            index,
++            fragment,
++            score: scoreHighlightFragment(fragment, normalizedHighlights)
++        }));
++        const ranked = scored
++            .filter((item) => item.score >= 2)
++            .sort((left, right) => right.score - left.score || left.index - right.index);
++        const selectedIndexes = new Set();
++        let highlightedChars = 0;
++        const maxHighlightedChars = Math.max(80, Math.floor(content.length * 0.58));
++
++        ranked.forEach((item) => {
++            if (selectedIndexes.size >= maxHighlights) {
++                return;
++            }
++
++            const length = item.fragment.trim().length;
++            if (!length || highlightedChars + length > maxHighlightedChars) {
++                return;
++            }
++
++            selectedIndexes.add(item.index);
++            highlightedChars += length;
++        });
++
++        return fragments.map((fragment, index) =>
++            createHighlightPart(
++                `${String(options.baseId || "highlight")}-part-${index}`,
++                fragment,
++                selectedIndexes.has(index),
++                highlightColorKey,
++                "highlight",
++                ""
++            )
++        );
++    }
++
++    function buildHighlightedParts(text, highlights, options = {}) {
+         const content = String(text || "");
+         const terms = Array.isArray(highlights)
+             ? highlights.filter(Boolean)
+             : [];
++        const baseId = String(options.baseId || "highlight");
++        const highlightColorKey =
++            resolveHighlightColorKey(
++                options.highlightColorKey
++            );
+ 
+         if (!content || terms.length === 0) {
+             return [
++                createHighlightPart(
++                    `${baseId}-part-0`,
++                    content,
++                    false,
++                    "",
++                    "highlight",
++                    ""
++                )
++            ];
++        }
++
++        const smartParts =
++            buildSmartHighlightedFragments(
++                content,
++                terms,
+                 {
+-                    text: content,
+-                    highlight: false
++                    baseId,
++                    highlightColorKey
+                 }
+-            ];
++            );
++
++        if (smartParts.some((part) => part.highlight)) {
++            return smartParts;
+         }
+ 
+         const escapedTerms = terms
+@@ -844,10 +1249,14 @@
+ 
+         if (escapedTerms.length === 0) {
+             return [
+-                {
+-                    text: content,
+-                    highlight: false
+-                }
++                createHighlightPart(
++                    `${baseId}-part-0`,
++                    content,
++                    false,
++                    "",
++                    "highlight",
++                    ""
++                )
+             ];
+         }
+ 
+@@ -858,85 +1267,578 @@
+ 
+         while ((match = regex.exec(content))) {
+             if (match.index > lastIndex) {
+-                parts.push({
+-                    text: content.slice(lastIndex, match.index),
+-                    highlight: false
+-                });
++                parts.push(
++                    createHighlightPart(
++                        `${baseId}-part-${parts.length}`,
++                        content.slice(
++                            lastIndex,
++                            match.index
++                        ),
++                        false,
++                        "",
++                        "highlight",
++                        ""
++                    )
++                );
+             }
+ 
+-            parts.push({
+-                text: match[0],
+-                highlight: true
+-            });
++            parts.push(
++                createHighlightPart(
++                    `${baseId}-part-${parts.length}`,
++                    match[0],
++                    true,
++                    highlightColorKey,
++                    "highlight",
++                    ""
++                )
++            );
+             lastIndex = match.index + match[0].length;
+         }
+ 
+         if (lastIndex < content.length) {
+-            parts.push({
+-                text: content.slice(lastIndex),
+-                highlight: false
+-            });
++            parts.push(
++                createHighlightPart(
++                    `${baseId}-part-${parts.length}`,
++                    content.slice(lastIndex),
++                    false,
++                    "",
++                    "highlight",
++                    ""
++                )
++            );
+         }
+ 
+         return parts.length > 0
+             ? parts
+-            : [
+-                {
+-                    text: content,
+-                    highlight: false
+-                }
+-            ];
++            : [createHighlightPart(`${baseId}-part-0`, content, false, "", "highlight", "")];
++    }
++
++    function splitExtractedTextIntoParagraphs(text) {
++        return String(text || "")
++            .replace(/\r/g, "")
++            .split(/\n{2,}/)
++            .map((paragraph) =>
++                paragraph
++                    .replace(/\n+/g, " ")
++                    .replace(/\s+/g, " ")
++                    .trim()
++            )
++            .filter(Boolean);
++    }
++
++    function looksLikeExtractedHeading(paragraph) {
++        const clean = String(paragraph || "").trim();
++        if (!clean) {
++            return false;
++        }
++
++        const wordCount = clean.split(/\s+/).filter(Boolean).length;
++        return clean.length <= 78
++            && wordCount <= 8
++            && !/[.!?;:]$/.test(clean);
++    }
++
++    function buildHighlightSectionsFromExtractedText(
++        text,
++        options = {}
++    ) {
++        const title =
++            String(
++                options.primaryTitle ||
++                "Material completo"
++            ).trim() ||
++            "Material completo";
++        const paragraphs =
++            splitExtractedTextIntoParagraphs(text);
++
++        if (!paragraphs.length) {
++            return [];
++        }
++
++        return [
++            {
++                label: "Documento integral",
++                title,
++                paragraphs: paragraphs.map((paragraph, paragraphIndex) => [
++                    createHighlightPart(
++                        `highlight-section-0-paragraph-${paragraphIndex}-part-0`,
++                        paragraph,
++                        false,
++                        "",
++                        "highlight",
++                        ""
++                    )
++                ])
++            }
++        ];
++    }
++
++    function refreshHighlightedDocumentState(
++        documentData,
++        state,
++        sourceBlock
++    ) {
++        const block =
++            sourceBlock ||
++            state.blocks.find(
++                (item) =>
++                    item.id ===
++                    documentData.sourceBlockId
++            ) ||
++            state.blocks.find(
++                (item) =>
++                    item.id ===
++                    state.activeBlockId
++            ) ||
++            state.blocks[0];
++        const materialLabel =
++            state.studyTitle ||
++            state.materialName ||
++            "Documento";
++        const sections = Array.isArray(
++            documentData.sections
++        )
++            ? documentData.sections
++            : [];
++        const selected =
++            findSelectedHighlightPart(
++                documentData
++            );
++        const nextSelectedId = selected
++            ? selected.part.id
++            : "";
++
++        return {
++            ...documentData,
++            sourceBlockId:
++                block?.id ||
++                documentData.sourceBlockId ||
++                "",
++            title:
++                documentData.title ||
++                `${materialLabel} - texto com marcador`,
++            subtitle:
++                documentData.subtitle ||
++                "Texto integral extraido do PDF, sem resumo automatico e pronto para selecao manual.",
++            ctaLabel:
++                documentData.ctaLabel ||
++                "Extrair resumo para documento novo",
++            sections,
++            originalSections: Array.isArray(documentData.originalSections)
++                ? documentData.originalSections
++                : clone(sections),
++            selectedPartId: nextSelectedId,
++            activeColorKey:
++                resolveHighlightColorKey(
++                    documentData.activeColorKey ||
++                    "gold"
++                ),
++            colorOptions:
++                getHighlightColorOptions(),
++            extractedSummary: {
++                title:
++                    `${block?.title || "Resumo"} - resumo extraido`,
++                lead: "",
++                bullets:
++                    [],
++                sourceTitle:
++                    materialLabel,
++                blockTitle:
++                    block?.title || ""
++            }
++        };
+     }
+ 
+     function buildHighlightedDocument(state, block) {
+         const sourceBlock = block || state.blocks[0];
+         const materialLabel = state.studyTitle || state.materialName || "Documento";
+-        const emphasisTerms = [
+-            sourceBlock.title,
+-            ...(sourceBlock.topics || []).slice(0, 3),
+-            ...(sourceBlock.learn.keyConcepts || []).slice(0, 3)
+-        ].filter(Boolean);
+         const learnSections = Array.isArray(sourceBlock.learn.sections)
+             ? sourceBlock.learn.sections
+             : [];
+-        const sections = [
+-            {
+-                label: "Visao geral",
+-                title: sourceBlock.title,
+-                paragraphs: [
+-                    buildHighlightedParts(sourceBlock.learn.summary, emphasisTerms),
+-                    buildHighlightedParts(sourceBlock.learn.intro || sourceBlock.subtitle || "", emphasisTerms)
+-                ].filter((parts) => parts.some((part) => part.text))
+-            },
+-            ...learnSections.map((section) => ({
+-                label: section.label,
+-                title: section.title,
+-                paragraphs: section.paragraphs.map((paragraph) =>
+-                    buildHighlightedParts(paragraph, emphasisTerms)
++        const extractedTextSections =
++            state.materialExtractedText
++                ? buildHighlightSectionsFromExtractedText(
++                    state.materialExtractedText,
++                    {
++                        primaryTitle: materialLabel
++                    }
+                 )
+-            }))
+-        ];
++                : [];
++        const sections = extractedTextSections.length
++            ? extractedTextSections
++            : [
++                {
++                    label: "Documento integral",
++                    title: materialLabel,
++                    paragraphs: [
++                        [
++                            createHighlightPart(
++                                "highlight-summary-part-0",
++                                "O texto integral deste PDF ainda nao foi extraido neste navegador. Reabra o PDF original aqui para carregar o documento completo antes de marcar trechos.",
++                                false,
++                                "",
++                                "highlight",
++                                ""
++                            )
++                        ]
++                    ].filter((parts) => parts.some((part) => part.text))
++                },
++            ];
+ 
+-        return {
++        return refreshHighlightedDocumentState({
+             id: `highlight-${sourceBlock.id}`,
+             sourceBlockId: sourceBlock.id,
+             title: `${materialLabel} - texto com marcador`,
+-            subtitle: "Documento original preservado, com destaque nas partes mais importantes.",
++            subtitle: extractedTextSections.length
++                ? "Texto integral extraido do PDF, sem resumo automatico e sem marcacoes iniciais."
++                : "Texto integral carregado para selecao manual, sem marcacoes iniciais.",
+             ctaLabel: "Extrair resumo para documento novo",
+             sections,
++            originalSections: clone(sections),
++            selectedPartId: "",
++            activeColorKey: "gold",
++            colorOptions: getHighlightColorOptions(),
+             extractedSummary: {
+                 title: `${sourceBlock.title} - resumo extraido`,
+-                lead: sourceBlock.learn.summary,
+-                bullets: [
+-                    ...(sourceBlock.learn.keyConcepts || []).slice(0, 4),
+-                    ...(sourceBlock.learn.hotPoints || []).slice(0, 2)
+-                ].filter(Boolean),
++                lead: "",
++                bullets: [],
+                 sourceTitle: materialLabel,
+                 blockTitle: sourceBlock.title
+             }
++        }, state, sourceBlock);
++    }
++
++    function buildPracticeCuePool(block) {
++        return [
++            block.title,
++            block.subtitle,
++            ...(Array.isArray(block.topics)
++                ? block.topics
++                : []),
++            ...(Array.isArray(
++                block.learn?.keyConcepts
++            )
++                ? block.learn.keyConcepts
++                : []),
++            ...(Array.isArray(
++                block.learn?.hotPoints
++            )
++                ? block.learn.hotPoints
++                : [])
++        ]
++            .filter(Boolean)
++            .map((item) => String(item).trim())
++            .filter(Boolean);
++    }
++
++    function buildFallbackQuizItem(
++        block,
++        absoluteIndex
++    ) {
++        const cues =
++            buildPracticeCuePool(block);
++        const cue =
++            cues[
++                absoluteIndex %
++                Math.max(cues.length, 1)
++            ] || block.title;
++
++        return buildQuestion(
++            `No material completo de ${block.title}, qual leitura ajuda mais a dominar ${cue}?`,
++            [
++                "Responder so pelo tema geral",
++                "Comparar criterio, funcao e limite antes de decidir",
++                "Ignorar relacoes entre conceitos",
++                "Memorizar uma frase isolada"
++            ],
++            1,
++            "A leitura mais forte nasce quando voce compara criterio, funcao e limite, em vez de decidir por semelhanca."
++        );
++    }
++
++    function buildFallbackTrueFalseItem(
++        block,
++        absoluteIndex
++    ) {
++        const cues =
++            buildPracticeCuePool(block);
++        const cue =
++            cues[
++                absoluteIndex %
++                Math.max(cues.length, 1)
++            ] || block.title;
++
++        return buildTrueFalse(
++            `No estudo completo de ${block.title}, ${cue} pode ser decidido sem comparar criterio e limite.`,
++            false,
++            "Quando criterio e limite somem da leitura, o erro por semelhanca superficial cresce."
++        );
++    }
++
++    function buildFallbackFlashcardItem(
++        block,
++        absoluteIndex
++    ) {
++        const cues =
++            buildPracticeCuePool(block);
++        const cue =
++            cues[
++                absoluteIndex %
++                Math.max(cues.length, 1)
++            ] || block.title;
++
++        return buildFlashcard(
++            `Ponto-chave ${absoluteIndex + 1}`,
++            cue,
++            "Use esse lembrete para puxar o criterio central do material inteiro antes de responder."
++        );
++    }
++
++    function normalizeQuizItem(
++        item,
++        block,
++        absoluteIndex
++    ) {
++        if (
++            !item ||
++            !String(item.prompt || "").trim()
++        ) {
++            return buildFallbackQuizItem(
++                block,
++                absoluteIndex
++            );
++        }
++
++        const options = Array.isArray(item.options)
++            ? item.options
++                .map((option) =>
++                    String(option || "").trim()
++                )
++                .filter(Boolean)
++            : [];
++
++        while (options.length < 4) {
++            options.push(
++                `Opcao ${String.fromCharCode(65 + options.length)}`
++            );
++        }
++
++        const correctIndex =
++            Number.isFinite(item.correctIndex)
++                ? Math.max(
++                    0,
++                    Math.min(
++                        options.length - 1,
++                        Number(item.correctIndex)
++                    )
++                )
++                : 0;
++
++        return buildQuestion(
++            String(item.prompt).trim(),
++            options.slice(0, 4),
++            correctIndex,
++            String(item.rationale || "").trim() ||
++                "Compare criterio, funcao e limite para validar a resposta correta."
++        );
++    }
++
++    function normalizeTrueFalseItem(
++        item,
++        block,
++        absoluteIndex
++    ) {
++        if (
++            !item ||
++            !String(item.statement || "").trim()
++        ) {
++            return buildFallbackTrueFalseItem(
++                block,
++                absoluteIndex
++            );
++        }
++
++        return buildTrueFalse(
++            String(item.statement).trim(),
++            Boolean(item.answer),
++            String(item.rationale || "").trim() ||
++                "Volte ao criterio do texto para separar o que e regra do que e excecao."
++        );
++    }
++
++    function normalizeFlashcardItem(
++        item,
++        block,
++        absoluteIndex
++    ) {
++        if (
++            !item ||
++            !String(item.front || "").trim() ||
++            !String(item.back || "").trim()
++        ) {
++            return buildFallbackFlashcardItem(
++                block,
++                absoluteIndex
++            );
++        }
++
++        return buildFlashcard(
++            String(item.front).trim(),
++            String(item.back).trim(),
++            String(item.tip || "").trim() ||
++                "Use esse card para puxar o criterio principal do material."
++        );
++    }
++
++    function normalizePracticeSeriesByType(
++        block,
++        practice,
++        type
++    ) {
++        const config = {
++            quiz: {
++                baseKey: "quiz",
++                seriesKey: "quizSeries",
++                itemCount: 3,
++                normalizer: normalizeQuizItem
++            },
++            trueFalse: {
++                baseKey: "trueFalse",
++                seriesKey: "trueFalseSeries",
++                itemCount: 3,
++                normalizer: normalizeTrueFalseItem
++            },
++            flashcards: {
++                baseKey: "flashcards",
++                seriesKey: "flashcardSeries",
++                itemCount: 3,
++                normalizer: normalizeFlashcardItem
++            }
++        }[type];
++
++        const rawBase = Array.isArray(
++            practice[config.baseKey]
++        )
++            ? practice[config.baseKey]
++            : [];
++        const rawSeries = Array.isArray(
++            practice[config.seriesKey]
++        )
++            ? practice[config.seriesKey]
++            : [];
++        const pool = [
++            ...rawBase,
++            ...rawSeries.flatMap((series) =>
++                Array.isArray(series)
++                    ? series
++                    : []
++            )
++        ].map((item, index) =>
++            config.normalizer(
++                item,
++                block,
++                index
++            )
++        );
++        const safePool = pool.length
++            ? pool
++            : Array.from(
++                { length: config.itemCount * 3 },
++                (_, index) =>
++                    config.normalizer(
++                        null,
++                        block,
++                        index
++                    )
++            );
++        const series = Array.from(
++            { length: 3 },
++            (_, seriesIndex) =>
++                Array.from(
++                    { length: config.itemCount },
++                    (_, itemIndex) => {
++                        const absoluteIndex =
++                            seriesIndex *
++                                config.itemCount +
++                            itemIndex;
++                        const source =
++                            safePool[
++                                absoluteIndex %
++                                    safePool.length
++                            ];
++
++                        return clone(source);
++                    }
++                )
++        );
++
++        return {
++            base: series[0],
++            series
+         };
+     }
+ 
++    function findSelectedHighlightPart(
++        documentData
++    ) {
++        if (
++            !documentData ||
++            !documentData.selectedPartId
++        ) {
++            return null;
++        }
++
++        for (
++            let sectionIndex = 0;
++            sectionIndex <
++            (documentData.sections || [])
++                .length;
++            sectionIndex += 1
++        ) {
++            const section =
++                documentData.sections[
++                    sectionIndex
++                ];
++
++            for (
++                let paragraphIndex = 0;
++                paragraphIndex <
++                (section.paragraphs || [])
++                    .length;
++                paragraphIndex += 1
++            ) {
++                const paragraph =
++                    section.paragraphs[
++                        paragraphIndex
++                    ];
++
++                for (
++                    let partIndex = 0;
++                    partIndex <
++                    (paragraph || []).length;
++                    partIndex += 1
++                ) {
++                    const part =
++                        paragraph[partIndex];
++
++                    if (
++                        part.id ===
++                        documentData.selectedPartId
++                    ) {
++                        return {
++                            sectionIndex,
++                            paragraphIndex,
++                            partIndex,
++                            part
++                        };
++                    }
++                }
++            }
++        }
++
++        return null;
++    }
++
+     function createSavedSummaryRecord(documentData, state) {
+         const summary = documentData.extractedSummary || {};
+         return {
+@@ -998,6 +1900,13 @@
+     }
+ 
+     function enrichLearnContent(block, materialLabel) {
++        if (
++            block.generatedByAi ||
++            (block.learn && Array.isArray(block.learn.documentSections) && block.learn.documentSections.length > 0)
++        ) {
++            return block;
++        }
++
+         if (block.id === "block-1") {
+             return {
+                 ...block,
+@@ -1429,13 +2338,30 @@
+             accessTier: "free",
+             subscriptionStatus: "registered_free",
+             customerId: "",
++            accountUser: null,
++            accountAuthenticated: false,
+             premiumEntitlement: null,
+             premiumStatusConfigured: false,
++            generationPaused: false,
++            opsLanes: {
++                freeLanePaused: false,
++                premiumLanePaused: false
++            },
++            opsThresholds: {
++                dailyWarnThreshold: 500,
++                dailyCriticalThreshold: 600,
++                dailyHardStopThreshold: 650
++            },
++            trialState: null,
+             studyLibraryId: createStudyLibraryId(),
+             studyTitle: "",
+             materialName: "",
++            materialHash: "",
++            materialFileKey: "",
+             materialSizeLabel: "",
+             materialPageCount: null,
++            materialExtractedText: "",
++            materialExtractionStatus: "pending",
+             examDate: "",
+             calendarMonth: today.getMonth(),
+             calendarYear: today.getFullYear(),
+@@ -1444,12 +2370,17 @@
+             studyMinutes: 30,
+             analysisProgress: 8,
+             analysisStatus: "pending",
++            aiGeneration: null,
+             blocks,
+             sessions: buildSessions(blocks),
+             activeBlockId: blocks[0].id,
+             blockTab: "aprender",
+             blockFullScreen: true,
+             blockAssistMode: "",
++            highlightEditorOpen: false,
++            highlightEditorFullScreen: false,
++            highlightInspectorMode: "",
++            levelExam: createLevelExamState(),
+             highlightedDocument: null,
+             savedSummaries: [],
+             activeSavedSummaryId: "",
+@@ -1549,14 +2480,20 @@
+                 ...this.state,
+                 studyLibraryId: createStudyLibraryId(),
+                 materialName: fileLike.name || "material.pdf",
++                materialHash: fileLike.materialHash || fileLike.hash || "",
++                materialFileKey: fileLike.materialFileKey || fileLike.fileKey || "",
+                 materialSizeLabel: sizeLabel,
+                 materialPageCount: pageCount,
++                materialExtractedText: "",
++                materialExtractionStatus: "pending",
+                 studyTitle,
+                 blocks,
+                 sessions: buildSessions(blocks),
+                 activeBlockId: blocks[0].id,
+                 blockFullScreen: true,
+                 blockAssistMode: "",
++                aiGeneration: null,
++                levelExam: createLevelExamState(),
+                 sessionNote: null,
+                 progressLabel: "Material recebido. Agora vamos ajustar tudo ao seu prazo e a sua meta."
+             };
+@@ -1657,6 +2594,284 @@
+             return this.state;
+         },
+ 
++        setMaterialExtraction(result = {}) {
++            const nextExtractedText =
++                result.text || this.state.materialExtractedText || "";
++            const hadExtractedText = Boolean(
++                String(this.state.materialExtractedText || "").trim()
++            );
++
++            let nextState = {
++                ...this.state,
++                materialExtractedText: nextExtractedText,
++                materialExtractionStatus: result.status || (result.text ? "extracted" : "empty_text"),
++                materialPageCount: Number.isFinite(result.pageCount)
++                    ? result.pageCount
++                    : this.state.materialPageCount
++            };
++
++            if (!hadExtractedText && String(nextExtractedText).trim()) {
++                const block =
++                    nextState.blocks.find((item) => item.id === nextState.activeBlockId) ||
++                    nextState.blocks[0];
++
++                nextState = {
++                    ...nextState,
++                    highlightedDocument: refreshHighlightedDocumentState(
++                        buildHighlightedDocument(nextState, block),
++                        nextState,
++                        block
++                    )
++                };
++            }
++
++            this.state = nextState;
++
++            return this.state;
++        },
++
++        applyGeneratedBundle(payload = {}) {
++            const bundle = payload.bundle || payload;
++            const sourceBlocks = Array.isArray(bundle.blocks) ? bundle.blocks : [];
++            if (!sourceBlocks.length) {
++                return this.state;
++            }
++
++            const blocks = sourceBlocks.map((block, index) => {
++                const practice = block.practice || {};
++                const normalizedBlock = {
++                    ...block,
++                    id: block.id || `block-${index + 1}`
++                };
++                const normalizedQuiz =
++                    normalizePracticeSeriesByType(
++                        normalizedBlock,
++                        practice,
++                        "quiz"
++                    );
++                const normalizedTrueFalse =
++                    normalizePracticeSeriesByType(
++                        normalizedBlock,
++                        practice,
++                        "trueFalse"
++                    );
++                const normalizedFlashcards =
++                    normalizePracticeSeriesByType(
++                        normalizedBlock,
++                        practice,
++                        "flashcards"
++                    );
++                const questions = Array.isArray(block.exam && block.exam.questions)
++                    ? block.exam.questions.slice(0, 5)
++                    : [];
++
++                return {
++                    ...block,
++                    id: block.id || `block-${index + 1}`,
++                    generatedByAi: true,
++                    status: index === 0 ? "recommended" : (block.status || "ready"),
++                    progress: {
++                        learn: false,
++                        practice: false,
++                        exam: false,
++                        ...(block.progress || {})
++                    },
++                    learn: {
++                        summary: "",
++                        intro: "",
++                        hotPoints: [],
++                        keyConcepts: [],
++                        pitfalls: [],
++                        documentSections: [],
++                        explainBetter: null,
++                        reviewInFivePoints: [],
++                        ...(block.learn || {})
++                    },
++                    practice: {
++                        targets: {
++                            quiz: 3,
++                            trueFalse: 3,
++                            flashcards: 3
++                        },
++                        ...practice,
++                        quiz: normalizedQuiz.base,
++                        quizSeries: normalizedQuiz.series,
++                        trueFalse: normalizedTrueFalse.base,
++                        trueFalseSeries: normalizedTrueFalse.series,
++                        flashcards: normalizedFlashcards.base,
++                        flashcardSeries: normalizedFlashcards.series
++                    },
++                    exam: {
++                        ...(block.exam || {}),
++                        baseCount: 5,
++                        questions
++                    }
++                };
++            });
++
++            this.state = {
++                ...this.state,
++                studyTitle: bundle.title || this.state.studyTitle,
++                blocks,
++                sessions: buildSessions(blocks),
++                activeBlockId: bundle.recommendedBlockId && blocks.some((block) => block.id === bundle.recommendedBlockId)
++                    ? bundle.recommendedBlockId
++                    : blocks[0].id,
++                blockAssistMode: "",
++                aiGeneration: {
++                    status: payload.status || "generated",
++                    provider: payload.provider || "",
++                    model: payload.model || "",
++                    promptVersion: payload.promptVersion || "",
++                    warnings: Array.isArray(bundle.warnings) ? bundle.warnings : [],
++                    generatedAt: new Date().toISOString()
++                },
++                progressLabel: "Sua rota foi gerada com IA a partir do PDF. Agora escolha como quer estudar."
++            };
++
++            return this.state;
++        },
++
++        appendMiniExamQuestions(blockId, questions = []) {
++            const targetId = blockId || this.state.activeBlockId;
++            const nextQuestions = Array.isArray(questions) ? questions : [];
++            if (!targetId || !nextQuestions.length) {
++                return this.state;
++            }
++
++            const blocks = this.state.blocks.map((block) => {
++                if (block.id !== targetId) {
++                    return block;
++                }
++
++                return {
++                    ...block,
++                    exam: {
++                        ...block.exam,
++                        baseCount: Number(block.exam && block.exam.baseCount) || 5,
++                        questions: [
++                            ...((block.exam && block.exam.questions) || []),
++                            ...nextQuestions
++                        ]
++                    }
++                };
++            });
++            const sessions = normalizeSessions(blocks, this.state.sessions);
++            sessions[targetId].miniExam = createMiniExamSession(
++                (blocks.find((block) => block.id === targetId).exam || {}).questions || []
++            );
++
++            this.state = {
++                ...this.state,
++                blocks,
++                sessions,
++                progressLabel: "Mais 5 questoes premium foram adicionadas a mini prova deste bloco."
++            };
++
++            return this.state;
++        },
++
++        setLevelExamQuestionCount(count) {
++            const allowed = [10, 20, 30];
++            const questionCount = allowed.includes(Number(count)) ? Number(count) : 10;
++            this.state = {
++                ...this.state,
++                levelExam: createLevelExamState({
++                    ...this.state.levelExam,
++                    questionCount,
++                    questions: [],
++                    started: false,
++                    answers: [],
++                    index: 0,
++                    isComplete: false,
++                    result: null,
++                    status: "idle"
++                })
++            };
++
++            return this.state;
++        },
++
++        setLevelExamQuestions(payload = {}) {
++            const questions = Array.isArray(payload.questions) ? payload.questions : [];
++            this.state = {
++                ...this.state,
++                levelExam: createLevelExamState({
++                    ...this.state.levelExam,
++                    title: payload.title || "Prova de nivel RotaNota",
++                    questions,
++                    questionCount: questions.length || this.state.levelExam.questionCount,
++                    started: false,
++                    index: 0,
++                    answers: [],
++                    isComplete: false,
++                    result: null,
++                    status: questions.length ? "ready" : "idle"
++                })
++            };
++
++            return this.state;
++        },
++
++        startLevelExam() {
++            this.state = {
++                ...this.state,
++                levelExam: createLevelExamState({
++                    ...this.state.levelExam,
++                    started: true,
++                    index: 0,
++                    answers: [],
++                    isComplete: false,
++                    result: null,
++                    status: "running"
++                })
++            };
++
++            return this.state;
++        },
++
++        setLevelExamAnswer(answerIndex) {
++            const levelExam = clone(this.state.levelExam);
++            levelExam.answers[levelExam.index] = answerIndex;
++            this.state = {
++                ...this.state,
++                levelExam
++            };
++
++            return this.state;
++        },
++
++        advanceLevelExam() {
++            const levelExam = clone(this.state.levelExam);
++            const questions = Array.isArray(levelExam.questions) ? levelExam.questions : [];
++
++            if (levelExam.index >= questions.length - 1) {
++                let correct = 0;
++                questions.forEach((question, index) => {
++                    if (levelExam.answers[index] === question.correctIndex) {
++                        correct += 1;
++                    }
++                });
++                levelExam.isComplete = true;
++                levelExam.started = false;
++                levelExam.status = "complete";
++                levelExam.result = {
++                    correct,
++                    total: questions.length,
++                    ratio: questions.length ? Math.round((correct / questions.length) * 100) : 0
++                };
++            } else {
++                levelExam.index += 1;
++            }
++
++            this.state = {
++                ...this.state,
++                levelExam
++            };
++
++            return this.state;
++        },
++
+         setBlockTab(tab) {
+             this.state = {
+                 ...this.state,
+@@ -1732,11 +2947,21 @@
+                 ? this.getBlockById(blockId)
+                 : this.getActiveBlock();
+             const highlightedDocument =
+-                buildHighlightedDocument(this.state, block);
++                refreshHighlightedDocumentState(
++                    buildHighlightedDocument(
++                        this.state,
++                        block
++                    ),
++                    this.state,
++                    block
++                );
+ 
+             this.state = {
+                 ...this.state,
+                 highlightedDocument,
++                highlightEditorOpen: false,
++                highlightEditorFullScreen: false,
++                highlightInspectorMode: "",
+                 activeBlockId: block ? block.id : this.state.activeBlockId,
+                 progressLabel: "Documento marcado preparado. Agora você pode exportar o texto grifado ou só os destaques em PDF."
+             };
+@@ -1744,6 +2969,288 @@
+             return this.state;
+         },
+ 
++        setHighlightEditorOpen(value) {
++            this.state = {
++                ...this.state,
++                highlightEditorOpen: Boolean(value)
++            };
++
++            return this.state;
++        },
++
++        setHighlightEditorFullScreen(value) {
++            this.state = {
++                ...this.state,
++                highlightEditorFullScreen: Boolean(value)
++            };
++
++            return this.state;
++        },
++
++        setHighlightInspectorMode(value) {
++            this.state = {
++                ...this.state,
++                highlightInspectorMode: String(value || "")
++            };
++
++            return this.state;
++        },
++
++        updateHighlightedDocument(updater) {
++            const current =
++                this.state.highlightedDocument ||
++                buildHighlightedDocument(
++                    this.state,
++                    this.getActiveBlock()
++                );
++            const draft = clone(current);
++            const next =
++                typeof updater === "function"
++                    ? updater(draft) || draft
++                    : draft;
++            const normalized =
++                refreshHighlightedDocumentState(
++                    next,
++                    this.state
++                );
++
++            this.state = {
++                ...this.state,
++                highlightedDocument:
++                    normalized
++            };
++
++            return this.state;
++        },
++
++        setHighlightSelection(sectionIndex, paragraphIndex, partIndex) {
++            return this.updateHighlightedDocument((documentData) => {
++                const target =
++                    documentData.sections?.[Number(sectionIndex)]
++                        ?.paragraphs?.[Number(paragraphIndex)]
++                        ?.[Number(partIndex)];
++
++                documentData.selectedPartId =
++                    target?.id || "";
++                return documentData;
++            });
++        },
++
++        setHighlightTextSelection(sectionIndex, paragraphIndex, startOffset, endOffset) {
++            return this.updateHighlightedDocument((documentData) => {
++                const normalizedSectionIndex = Number(sectionIndex);
++                const normalizedParagraphIndex = Number(paragraphIndex);
++                const paragraph =
++                    documentData.sections?.[normalizedSectionIndex]
++                        ?.paragraphs?.[normalizedParagraphIndex];
++
++                if (!Array.isArray(paragraph)) {
++                    return documentData;
++                }
++
++                const selection =
++                    selectHighlightRangeFromParagraph(
++                        paragraph,
++                        startOffset,
++                        endOffset,
++                        documentData.activeColorKey
++                    );
++
++                documentData.sections[normalizedSectionIndex].paragraphs[normalizedParagraphIndex] =
++                    selection.paragraph;
++                documentData.selectedPartId =
++                    selection.selectedPartId || "";
++                return documentData;
++            });
++        },
++
++        updateSelectedHighlightText(text) {
++            return this.updateHighlightedDocument((documentData) => {
++                const selected =
++                    findSelectedHighlightPart(
++                        documentData
++                    );
++
++                if (!selected) {
++                    return documentData;
++                }
++
++                const nextText =
++                    String(text || "");
++
++                selected.part.text =
++                    nextText;
++                const paragraph =
++                    documentData.sections?.[selected.sectionIndex]
++                        ?.paragraphs?.[selected.paragraphIndex];
++
++                if (Array.isArray(paragraph)) {
++                    documentData.sections[selected.sectionIndex].paragraphs[selected.paragraphIndex] =
++                        normalizeHighlightParagraph(paragraph);
++                }
++
++                if (!nextText) {
++                    documentData.selectedPartId = "";
++                }
++
++                return documentData;
++            });
++        },
++
++        toggleSelectedHighlight(forceValue) {
++            return this.updateHighlightedDocument((documentData) => {
++                const selected =
++                    findSelectedHighlightPart(
++                        documentData
++                    );
++
++                if (!selected) {
++                    return documentData;
++                }
++
++                const nextValue =
++                    typeof forceValue === "boolean"
++                        ? forceValue
++                        : !selected.part.highlight;
++
++                selected.part.highlight =
++                    nextValue;
++                selected.part.colorKey =
++                    nextValue
++                        ? resolveHighlightColorKey(
++                            selected.part.colorKey ||
++                            documentData.activeColorKey
++                        )
++                        : "";
++                selected.part.styleMode =
++                    nextValue
++                        ? resolveHighlightStyleMode(
++                            selected.part.styleMode || "highlight"
++                        )
++                        : "highlight";
++
++                return documentData;
++            });
++        },
++
++        setSelectedHighlightStyleMode(styleMode) {
++            return this.updateHighlightedDocument((documentData) => {
++                const selected =
++                    findSelectedHighlightPart(
++                        documentData
++                    );
++
++                if (!selected) {
++                    return documentData;
++                }
++
++                selected.part.highlight = true;
++                selected.part.styleMode =
++                    resolveHighlightStyleMode(styleMode);
++                selected.part.colorKey =
++                    resolveHighlightColorKey(
++                        selected.part.colorKey ||
++                        documentData.activeColorKey
++                    );
++                return documentData;
++            });
++        },
++
++        setHighlightColor(colorKey) {
++            const normalizedColor =
++                resolveHighlightColorKey(
++                    colorKey
++                );
++
++            return this.updateHighlightedDocument((documentData) => {
++                documentData.activeColorKey =
++                    normalizedColor;
++                const selected =
++                    findSelectedHighlightPart(
++                        documentData
++                    );
++
++                if (selected) {
++                    selected.part.highlight = true;
++                    selected.part.colorKey =
++                        normalizedColor;
++                }
++
++                return documentData;
++            });
++        },
++
++        clearAllHighlights() {
++            return this.updateHighlightedDocument((documentData) => {
++                (documentData.sections || []).forEach((section) => {
++                    (section.paragraphs || []).forEach((paragraph) => {
++                        (paragraph || []).forEach((part) => {
++                            part.highlight = false;
++                            part.colorKey = "";
++                            part.styleMode = "highlight";
++                        });
++                    });
++                });
++
++                return documentData;
++            });
++        },
++
++        updateSelectedHighlightNote(note) {
++            return this.updateHighlightedDocument((documentData) => {
++                const selected =
++                    findSelectedHighlightPart(
++                        documentData
++                    );
++
++                if (!selected) {
++                    return documentData;
++                }
++
++                selected.part.note =
++                    String(note || "").trim();
++                return documentData;
++            });
++        },
++
++        deleteSelectedHighlightText() {
++            return this.updateHighlightedDocument((documentData) => {
++                const selected =
++                    findSelectedHighlightPart(
++                        documentData
++                    );
++
++                if (!selected) {
++                    return documentData;
++                }
++
++                const paragraph =
++                    documentData.sections?.[selected.sectionIndex]
++                        ?.paragraphs?.[selected.paragraphIndex];
++
++                if (!Array.isArray(paragraph)) {
++                    return documentData;
++                }
++
++                const nextParagraph =
++                    paragraph.filter((part) => part.id !== selected.part.id);
++
++                documentData.sections[selected.sectionIndex].paragraphs[selected.paragraphIndex] =
++                    normalizeHighlightParagraph(nextParagraph);
++                documentData.selectedPartId = "";
++                return documentData;
++            });
++        },
++
++        restoreOriginalHighlightedDocument() {
++            return this.updateHighlightedDocument((documentData) => {
++                documentData.sections =
++                    clone(documentData.originalSections || []);
++                documentData.selectedPartId = "";
++                return documentData;
++            });
++        },
++
+         setSavedSummaries(items) {
+             const summaries = Array.isArray(items)
+                 ? items
+@@ -1914,11 +3421,10 @@
+                 seeds.quiz.freeSeriesUsed = options.allSeries ? 1 : current?.freeSeriesUsed || 1;
+                 seeds.quiz.completedSeries = options.allSeries
+                     ? []
+-                    : normalizeCompletedSeries("quiz", current).filter((index) => index !== seeds.quiz.currentSeriesIndex);
++                    : normalizeCompletedSeries("quiz", current);
+                 seeds.quiz.seriesSnapshots = options.allSeries
+                     ? {}
+                     : { ...(current?.seriesSnapshots || {}) };
+-                delete seeds.quiz.seriesSnapshots[seeds.quiz.currentSeriesIndex];
+             }
+             if (type === "trueFalse") {
+                 const current = this.getActiveSession("trueFalse");
+@@ -1926,11 +3432,10 @@
+                 seeds.trueFalse.freeSeriesUsed = options.allSeries ? 1 : current?.freeSeriesUsed || 1;
+                 seeds.trueFalse.completedSeries = options.allSeries
+                     ? []
+-                    : normalizeCompletedSeries("trueFalse", current).filter((index) => index !== seeds.trueFalse.currentSeriesIndex);
++                    : normalizeCompletedSeries("trueFalse", current);
+                 seeds.trueFalse.seriesSnapshots = options.allSeries
+                     ? {}
+                     : { ...(current?.seriesSnapshots || {}) };
+-                delete seeds.trueFalse.seriesSnapshots[seeds.trueFalse.currentSeriesIndex];
+             }
+             if (type === "flashcards") {
+                 const current = this.getActiveSession("flashcards");
+@@ -1938,11 +3443,10 @@
+                 seeds.flashcards.freeSeriesUsed = options.allSeries ? 1 : current?.freeSeriesUsed || 1;
+                 seeds.flashcards.completedSeries = options.allSeries
+                     ? []
+-                    : normalizeCompletedSeries("flashcards", current).filter((index) => index !== seeds.flashcards.currentSeriesIndex);
++                    : normalizeCompletedSeries("flashcards", current);
+                 seeds.flashcards.seriesSnapshots = options.allSeries
+                     ? {}
+                     : { ...(current?.seriesSnapshots || {}) };
+-                delete seeds.flashcards.seriesSnapshots[seeds.flashcards.currentSeriesIndex];
+             }
+             return this.updateActiveSession(type, seeds[type]);
+         },
+@@ -2210,12 +3714,18 @@
+                 accessTier: this.state.accessTier,
+                 subscriptionStatus: this.state.subscriptionStatus,
+                 customerId: this.state.customerId,
++                accountUser: this.state.accountUser,
++                accountAuthenticated: this.state.accountAuthenticated,
+                 premiumEntitlement: this.state.premiumEntitlement,
+                 studyTitle: this.state.studyTitle,
+                 studyLibraryId: this.state.studyLibraryId,
+                 materialName: this.state.materialName,
++                materialHash: this.state.materialHash,
++                materialFileKey: this.state.materialFileKey,
+                 materialSizeLabel: this.state.materialSizeLabel,
+                 materialPageCount: this.state.materialPageCount,
++                materialExtractedText: this.state.materialExtractedText,
++                materialExtractionStatus: this.state.materialExtractionStatus,
+                 examDate: this.state.examDate,
+                 targetScore: this.state.targetScore,
+                 studyHours: this.state.studyHours,
+@@ -2225,7 +3735,15 @@
+                 activeBlockId: this.state.activeBlockId,
+                 blockTab: this.state.blockTab,
+                 blockFullScreen: this.state.blockFullScreen,
++                highlightEditorOpen: this.state.highlightEditorOpen,
++                highlightEditorFullScreen: this.state.highlightEditorFullScreen,
++                highlightInspectorMode: this.state.highlightInspectorMode,
+                 blockAssistMode: this.state.blockAssistMode,
++                aiGeneration: this.state.aiGeneration,
++                levelExam: clone(this.state.levelExam),
++                highlightedDocument: clone(this.state.highlightedDocument),
++                savedSummaries: clone(this.state.savedSummaries),
++                activeSavedSummaryId: this.state.activeSavedSummaryId,
+                 savedDraftId: this.state.savedDraftId,
+                 savedAt: this.state.savedAt,
+                 premiumOffer: this.state.premiumOffer,
+@@ -2243,8 +3761,14 @@
+                 accessTier: this.state.accessTier,
+                 subscriptionStatus: this.state.subscriptionStatus,
+                 customerId: this.state.customerId,
++                accountUser: this.state.accountUser,
++                accountAuthenticated: this.state.accountAuthenticated,
+                 premiumEntitlement: this.state.premiumEntitlement,
+-                premiumStatusConfigured: this.state.premiumStatusConfigured
++                premiumStatusConfigured: this.state.premiumStatusConfigured,
++                generationPaused: this.state.generationPaused,
++                opsLanes: this.state.opsLanes,
++                opsThresholds: this.state.opsThresholds,
++                trialState: this.state.trialState
+             };
+             const studyTitle = snapshot.studyTitle || buildStudyTitle(snapshot.materialName);
+             const materialLabel = studyTitle || "seu material";
+@@ -2263,14 +3787,43 @@
+                 step: normalizedStep,
+                 studyTitle,
+                 studyLibraryId: snapshot.studyLibraryId || defaults.studyLibraryId,
++                materialHash: snapshot.materialHash || defaults.materialHash,
++                materialFileKey: snapshot.materialFileKey || defaults.materialFileKey,
+                 blocks,
+                 sessions,
+                 activeBlockId: snapshot.activeBlockId || blocks[0].id,
+                 blockFullScreen: typeof snapshot.blockFullScreen === "boolean"
+                     ? snapshot.blockFullScreen
+                     : defaults.blockFullScreen,
++                highlightEditorOpen: typeof snapshot.highlightEditorOpen === "boolean"
++                    ? snapshot.highlightEditorOpen
++                    : defaults.highlightEditorOpen,
++                highlightEditorFullScreen: typeof snapshot.highlightEditorFullScreen === "boolean"
++                    ? snapshot.highlightEditorFullScreen
++                    : defaults.highlightEditorFullScreen,
++                highlightInspectorMode: snapshot.highlightInspectorMode || defaults.highlightInspectorMode,
+                 blockAssistMode: snapshot.blockAssistMode || defaults.blockAssistMode,
+-                highlightedDocument: snapshot.highlightedDocument || null,
++                aiGeneration: snapshot.aiGeneration || defaults.aiGeneration,
++                levelExam: createLevelExamState(snapshot.levelExam || {}),
++                materialExtractionStatus: snapshot.materialExtractionStatus || defaults.materialExtractionStatus,
++                materialExtractedText: snapshot.materialExtractedText || "",
++                highlightedDocument: snapshot.highlightedDocument
++                    ? refreshHighlightedDocumentState(
++                        clone(snapshot.highlightedDocument),
++                        {
++                            ...defaults,
++                            ...snapshot,
++                            studyTitle,
++                            blocks,
++                            activeBlockId:
++                                snapshot.activeBlockId ||
++                                blocks[0].id,
++                            materialExtractedText:
++                                snapshot.materialExtractedText ||
++                                ""
++                        }
++                    )
++                    : null,
+                 savedSummaries: Array.isArray(snapshot.savedSummaries) ? snapshot.savedSummaries : defaults.savedSummaries,
+                 activeSavedSummaryId: snapshot.activeSavedSummaryId || defaults.activeSavedSummaryId,
+                 studyLibrary: this.state.studyLibrary,
+diff --git a/premium-study/storage/indexeddb.js b/premium-study/storage/indexeddb.js
+index 3811055..92d5b40 100644
+--- a/premium-study/storage/indexeddb.js
++++ b/premium-study/storage/indexeddb.js
+@@ -9,8 +9,13 @@
+     const LATEST_KEY = "latest";
+     const SAVED_SUMMARIES_KEY = "saved-summaries";
+     const STUDY_LIBRARY_KEY = "study-library";
++    const MATERIAL_FILE_PREFIX = "material-file:";
+     let openPromise = null;
+ 
++    function buildMaterialFileRecordKey(fileKey) {
++        return `${MATERIAL_FILE_PREFIX}${String(fileKey || "").trim()}`;
++    }
++
+     function requestToPromise(request) {
+         return new Promise((resolve, reject) => {
+             request.addEventListener("success", () => resolve(request.result), { once: true });
+@@ -99,8 +104,12 @@
+             studyTitle: snapshot.studyTitle || "",
+             studyLibraryId: snapshot.studyLibraryId || "",
+             materialName: snapshot.materialName || "",
++            materialHash: snapshot.materialHash || "",
++            materialFileKey: snapshot.materialFileKey || "",
+             materialSizeLabel: snapshot.materialSizeLabel || "",
+             materialPageCount: snapshot.materialPageCount || 0,
++            materialExtractedText: snapshot.materialExtractedText || "",
++            materialExtractionStatus: snapshot.materialExtractionStatus || "pending",
+             examDate: snapshot.examDate || "",
+             targetScore: snapshot.targetScore || 7,
+             studyHours: snapshot.studyHours || 1,
+@@ -112,10 +121,29 @@
+             activeBlockId: snapshot.activeBlockId || "",
+             blockTab: snapshot.blockTab || "aprender",
+             blockFullScreen: Boolean(snapshot.blockFullScreen),
++            highlightEditorOpen: Boolean(snapshot.highlightEditorOpen),
++            highlightEditorFullScreen: Boolean(snapshot.highlightEditorFullScreen),
++            highlightInspectorMode: snapshot.highlightInspectorMode || "",
+             blockAssistMode: snapshot.blockAssistMode || "",
++            levelExam: snapshot.levelExam && typeof snapshot.levelExam === "object"
++                ? snapshot.levelExam
++                : null,
++            highlightedDocument: snapshot.highlightedDocument && typeof snapshot.highlightedDocument === "object"
++                ? snapshot.highlightedDocument
++                : null,
++            savedSummaries: Array.isArray(snapshot.savedSummaries)
++                ? snapshot.savedSummaries
++                : [],
++            activeSavedSummaryId: snapshot.activeSavedSummaryId || "",
+             savedDraftId: snapshot.savedDraftId || "",
+             savedAt: snapshot.savedAt || "",
+-            progressLabel: snapshot.progressLabel || ""
++            progressLabel: snapshot.progressLabel || "",
++            sessionNote: snapshot.sessionNote && typeof snapshot.sessionNote === "object"
++                ? snapshot.sessionNote
++                : null,
++            premiumOffer: snapshot.premiumOffer && typeof snapshot.premiumOffer === "object"
++                ? snapshot.premiumOffer
++                : null
+         };
+     }
+ 
+@@ -208,6 +236,69 @@
+             }
+         },
+ 
++        async saveMaterialFile(fileKey, file, metadata = {}) {
++            const normalizedKey = String(fileKey || "").trim();
++            if (!normalizedKey || !file) {
++                return null;
++            }
++
++            const record = {
++                id: buildMaterialFileRecordKey(normalizedKey),
++                fileKey: normalizedKey,
++                savedAt: new Date().toISOString(),
++                name: metadata.name || file.name || "material.pdf",
++                type: metadata.type || file.type || "application/pdf",
++                size: Number(metadata.size ?? file.size ?? 0),
++                lastModified: Number(metadata.lastModified ?? file.lastModified ?? Date.now()),
++                file
++            };
++
++            try {
++                await withStore("readwrite", (store) => requestToPromise(store.put(record)));
++                return record;
++            } catch (error) {
++                console.error(error);
++                return null;
++            }
++        },
++
++        async getMaterialFile(fileKey) {
++            const normalizedKey = String(fileKey || "").trim();
++            if (!normalizedKey) {
++                return null;
++            }
++
++            try {
++                const record = await withStore(
++                    "readonly",
++                    (store) => requestToPromise(store.get(buildMaterialFileRecordKey(normalizedKey)))
++                );
++                if (!record || !record.file) {
++                    return null;
++                }
++
++                if (record.file instanceof File) {
++                    return record.file;
++                }
++
++                if (record.file instanceof Blob) {
++                    return new File(
++                        [record.file],
++                        record.name || "material.pdf",
++                        {
++                            type: record.type || record.file.type || "application/pdf",
++                            lastModified: Number(record.lastModified || Date.now())
++                        }
++                    );
++                }
++
++                return null;
++            } catch (error) {
++                console.error(error);
++                return null;
++            }
++        },
++
+         async getStudyLibrary() {
+             try {
+                 const record = await withStore("readonly", (store) => requestToPromise(store.get(STUDY_LIBRARY_KEY)));

@@ -1292,6 +1292,174 @@ window.QuestionsStore = {
         ) || null;
     },
 
+    getDirectSearchDashboard() {
+        const runs =
+            this.getRuns({
+                mode: "direct_search"
+            });
+        const resolvedRuns =
+            runs.filter((run) =>
+                Array.isArray(run?.answers) &&
+                run.answers.length
+            );
+        const totals =
+            resolvedRuns.reduce(
+                (acc, run) => {
+                    const answers =
+                        Array.isArray(
+                            run.answers
+                        )
+                            ? run.answers
+                            : [];
+
+                    answers.forEach((answer) => {
+                        acc.attempts += 1;
+                        acc.totalTimeMs +=
+                            Number(
+                                answer?.timeMs
+                            ) || 0;
+
+                        if (answer?.correct) {
+                            acc.hits += 1;
+                        } else {
+                            acc.errors += 1;
+                        }
+                    });
+
+                    acc.lastResolvedAt =
+                        Math.max(
+                            acc.lastResolvedAt,
+                            Number(
+                                run.completedAt
+                            ) ||
+                                Number(
+                                    run.updatedAt
+                                ) ||
+                                Number(
+                                    run.startedAt
+                                ) ||
+                                0
+                        );
+
+                    const meta =
+                        run?.routeSnapshot?.meta &&
+                        typeof run
+                            .routeSnapshot.meta ===
+                            "object"
+                            ? run.routeSnapshot.meta
+                            : run?.summary?.meta &&
+                                typeof run
+                                    .summary.meta ===
+                                    "object"
+                              ? run.summary.meta
+                              : {};
+                    const terms =
+                        Array.isArray(
+                            meta.directSearchTerms
+                        )
+                            ? meta.directSearchTerms
+                            : [];
+                    const strategy = String(
+                        meta.directSearchStrategy ||
+                            ""
+                    ).trim();
+
+                    terms.forEach((term) => {
+                        const key = String(
+                            term || ""
+                        ).trim();
+
+                        if (!key) {
+                            return;
+                        }
+
+                        acc.termUsage.set(
+                            key,
+                            (acc.termUsage.get(
+                                key
+                            ) || 0) + 1
+                        );
+                    });
+
+                    if (strategy) {
+                        acc.strategyUsage.set(
+                            strategy,
+                            (acc.strategyUsage.get(
+                                strategy
+                            ) || 0) + 1
+                        );
+                    }
+
+                    return acc;
+                },
+                {
+                    attempts: 0,
+                    hits: 0,
+                    errors: 0,
+                    totalTimeMs: 0,
+                    lastResolvedAt: 0,
+                    termUsage: new Map(),
+                    strategyUsage:
+                        new Map()
+                }
+            );
+
+        const topTerms = [
+            ...totals.termUsage.entries()
+        ]
+            .sort((left, right) =>
+                right[1] - left[1] ||
+                left[0].localeCompare(
+                    right[0],
+                    "pt-BR"
+                )
+            )
+            .slice(0, 6)
+            .map(([term, count]) => ({
+                term,
+                count
+            }));
+        const preferredStrategy =
+            [...totals.strategyUsage.entries()]
+                .sort((left, right) =>
+                    right[1] - left[1]
+                )[0]?.[0] || "gradual";
+
+        return {
+            runs,
+            resolvedRuns,
+            attempts: totals.attempts,
+            hits: totals.hits,
+            errors: totals.errors,
+            accuracy:
+                totals.attempts > 0
+                    ? totals.hits /
+                      totals.attempts
+                    : 0,
+            avgTimeMs:
+                totals.attempts > 0
+                    ? totals.totalTimeMs /
+                      totals.attempts
+                    : 0,
+            elapsedAnsweredMs:
+                totals.totalTimeMs,
+            totalRuns:
+                runs.length,
+            answeredRuns:
+                resolvedRuns.length,
+            avgAnsweredPerRun:
+                resolvedRuns.length > 0
+                    ? totals.attempts /
+                      resolvedRuns.length
+                    : 0,
+            lastResolvedAt:
+                totals.lastResolvedAt,
+            topTerms,
+            strategy:
+                preferredStrategy
+        };
+    },
+
     saveRun(run = {}) {
         const now = Date.now();
         const questionIds =
@@ -1527,6 +1695,14 @@ window.QuestionsStore = {
                     return false;
                 }
 
+                if (
+                    filters.sourceMode &&
+                    entry.sourceMode !==
+                        filters.sourceMode
+                ) {
+                    return false;
+                }
+
                 return true;
             })
             .sort(
@@ -1647,6 +1823,8 @@ window.QuestionsStore = {
         const focusedSessions =
             this.getFocusedSessions(filters)
                 .slice(0, 5);
+        const directSearch =
+            this.getDirectSearchDashboard();
         const totals =
             entries.reduce(
                 (acc, entry) => {
@@ -1691,6 +1869,7 @@ window.QuestionsStore = {
             strongTopics,
             modeBreakdown,
             focusedSessions,
+            directSearch,
             mostTrainedTopic:
                 [...entries].sort(
                     (left, right) =>

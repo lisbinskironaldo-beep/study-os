@@ -191,12 +191,15 @@ const Pomodoro = {
                 </h2>
             </div>
             <div class="pomodoro-presets-grid"></div>
+            <div class="pomodoro-presets-custom"></div>
         `;
 
         const grid =
             container.querySelector(".pomodoro-presets-grid");
+        const customGrid =
+            container.querySelector(".pomodoro-presets-custom");
 
-        if (!grid) return;
+        if (!grid || !customGrid) return;
 
         Object.keys(this.presets).forEach((key) => {
             const preset = this.presets[key];
@@ -230,7 +233,11 @@ const Pomodoro = {
                 this.renderPresets();
             };
 
-            grid.appendChild(chip);
+            if (key === "custom") {
+                customGrid.appendChild(chip);
+            } else {
+                grid.appendChild(chip);
+            }
         });
     },
 
@@ -875,30 +882,24 @@ const Pomodoro = {
                 document.getElementById(id);
 
             if (button) {
-                button.disabled = this.syncEnabled;
+                button.disabled = false;
             }
         });
 
         if (controls) {
-            controls.classList.toggle(
-                "is-locked",
-                this.syncEnabled
-            );
+            controls.classList.remove("is-locked");
         }
     },
 
     loadSyncPreference() {
-        this.syncEnabled =
-            localStorage.getItem(this.syncStorageKey) === "1";
-        this.todayFlowExpanded =
-            this.syncEnabled;
+        this.syncEnabled = false;
+        this.todayFlowExpanded = false;
+        localStorage.removeItem(this.syncStorageKey);
+        document.body.classList.remove("pomodoro-table-sync-on");
     },
 
     saveSyncPreference() {
-        localStorage.setItem(
-            this.syncStorageKey,
-            this.syncEnabled ? "1" : "0"
-        );
+        localStorage.removeItem(this.syncStorageKey);
     },
 
     readTodayProgress(date = new Date()) {
@@ -1460,7 +1461,6 @@ const Pomodoro = {
                         <div class="today-flow-status">${status.title}</div>
                         <div class="today-flow-detail">${status.detail}</div>
                         <div class="today-flow-actions">
-                            <button id="todayFlowSyncBtn" class="today-flow-btn is-primary" type="button"${currentBlock ? "" : " disabled"}>${this.syncEnabled ? "Sincronizado" : "Sincronizar com tabela"}</button>
                             <button id="todayFlowDoneBtn" class="today-flow-btn" type="button"${currentBlock ? "" : " disabled"}>Concluir bloco</button>
                             <button id="todayFlowOpenQtsBtn" class="today-flow-btn" type="button">Abrir quadro</button>
                         </div>
@@ -1495,21 +1495,10 @@ const Pomodoro = {
     },
 
     bindTodayFlowActions() {
-        const syncBtn =
-            document.getElementById("todayFlowSyncBtn");
         const doneBtn =
             document.getElementById("todayFlowDoneBtn");
         const openQtsBtn =
             document.getElementById("todayFlowOpenQtsBtn");
-
-        if (syncBtn) {
-            syncBtn.onclick = () => {
-                this.syncTodayFlowToPlan();
-                this.updateDisplay();
-                this.renderPresets();
-                this.renderTodayFlow();
-            };
-        }
 
         if (doneBtn) {
             doneBtn.onclick = () => {
@@ -1527,19 +1516,10 @@ const Pomodoro = {
     },
 
     toggleTodaySync() {
-        if (!this.syncEnabled) {
-            this.todayFlowExpanded = true;
-        }
-
-        this.syncEnabled = !this.syncEnabled;
+        this.syncEnabled = false;
+        this.todayFlowExpanded = false;
         this.saveSyncPreference();
 
-        if (this.syncEnabled) {
-            this.syncTodayFlowToPlan({ autostart: true });
-            return;
-        }
-
-        this.todayFlowExpanded = false;
         this.pause();
         this.detachLinkedSchedule();
         this.applyDefaultState();
@@ -1603,6 +1583,13 @@ const Pomodoro = {
     renderTodayFlow() {
         const container = document.getElementById("todayFlow");
         if (!container) return;
+
+        this.syncEnabled = false;
+        this.todayFlowExpanded = false;
+        document.body.classList.remove("pomodoro-table-sync-on");
+        container.innerHTML = "";
+        container.classList.add("hidden");
+        return;
 
         const state =
             this.getTodayFlowState(new Date());
@@ -1673,9 +1660,6 @@ const Pomodoro = {
         container.innerHTML = `
             <div class="today-flow-shell ${shellState}${isCollapsed ? " is-collapsed" : ""}">
                 <div class="today-flow-center">
-                    <button id="todayFlowSyncBtn" class="today-flow-btn is-primary${this.syncEnabled ? " is-on" : ""}" type="button" aria-pressed="${this.syncEnabled ? "true" : "false"}"${referenceBlock ? "" : " disabled"}>
-                        ${this.syncEnabled ? "Sincronizado" : "Sincronizar com tabela"}
-                    </button>
                     ${isCollapsed ? "" : `
                         <div class="today-flow-mode-wrap">
                             <span class="today-flow-mode-label">Ritmo da tabela</span>
@@ -1697,16 +1681,8 @@ const Pomodoro = {
     },
 
     bindTodayFlowActions() {
-        const syncBtn =
-            document.getElementById("todayFlowSyncBtn");
         const openQtsBtn =
             document.getElementById("todayFlowOpenQtsBtn");
-
-        if (syncBtn) {
-            syncBtn.onclick = () => {
-                this.toggleTodaySync();
-            };
-        }
 
         if (openQtsBtn) {
             openQtsBtn.onclick = () => {

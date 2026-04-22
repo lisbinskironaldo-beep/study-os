@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 108" role="img" aria-label="RotaNota">
+  <defs>
+    <linearGradient id="rnLightGradient" x1="16" y1="16" x2="80" y2="80" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1f5dff"/>
+      <stop offset="0.58" stop-color="#1597ff"/>
+      <stop offset="1" stop-color="#14d6ff"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(4 6)">
+    <path fill="url(#rnLightGradient)" d="M18 16H58.5C70.93 16 81 26.07 81 38.5c0 8.54-4.34 15.34-11.47 20.08l-7.8 5.18-8.28-10.32 7.4-4.92c4.02-2.67 6.9-5.55 6.9-10.02 0-5.38-4.37-9.75-9.75-9.75H29.1L18 16Z"/>
+    <path fill="url(#rnLightGradient)" d="M35.9 48.6H51L80 77H62.4L25.1 40.5Z"/>
+    <path fill="url(#rnLightGradient)" d="M18 60.4V77h16.6L18 60.4Z"/>
+  </g>
+  <text x="108" y="74" font-family="Manrope, Arial, sans-serif" font-size="58" font-weight="800" letter-spacing="-2.4" fill="#081a34">Rota</text>
+  <text x="229" y="74" font-family="Manrope, Arial, sans-serif" font-size="58" font-weight="800" letter-spacing="-2.4" fill="url(#rnLightGradient)">Nota</text>
+</svg>

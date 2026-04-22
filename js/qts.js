@@ -1298,87 +1298,6 @@
         return structure;
     },
 
-    buildRepeatingStructure(studyMinutes, breakMinutes) {
-        const structure = [];
-        let rowCount = 0;
-        let intervalCount = 0;
-
-        while (
-            structure.length < this.maxTotalRows &&
-            rowCount < this.defaultInitialRows
-        ) {
-            structure.push({
-                type: "row",
-                duration: studyMinutes
-            });
-            rowCount += 1;
-
-            if (
-                rowCount >=
-                    this.defaultInitialRows ||
-                intervalCount >=
-                    this.defaultInitialIntervals ||
-                structure.length + 1 >
-                    this.maxTotalRows
-            ) {
-                break;
-            }
-
-            structure.push({
-                type: "interval",
-                duration: `Pausa ${breakMinutes}min`
-            });
-            intervalCount += 1;
-        }
-
-        return structure;
-    },
-
-    getTemplateDefinition(type) {
-        const map = {
-            pomo25: {
-                activeTemplate: "pomo25",
-                studyDuration: 25,
-                structure: this.buildRepeatingStructure(25, 5)
-            },
-            deep50: {
-                activeTemplate: "deep50",
-                studyDuration: 50,
-                structure: this.buildRepeatingStructure(50, 15)
-            },
-            flow52: {
-                activeTemplate: "flow52",
-                studyDuration: 52,
-                structure: this.buildRepeatingStructure(52, 17)
-            },
-            ultra90: {
-                activeTemplate: "ultra90",
-                studyDuration: 90,
-                structure: this.buildRepeatingStructure(90, 30)
-            },
-            sprint15: {
-                activeTemplate: "sprint15",
-                studyDuration: 15,
-                structure: this.buildRepeatingStructure(15, 5)
-            },
-            progressivo: {
-                activeTemplate: "progressivo",
-                studyDuration: 15,
-                structure: [
-                    { type: "row", duration: 15 },
-                    { type: "interval", duration: "Pausa 5min" },
-                    { type: "row", duration: 25 },
-                    { type: "interval", duration: "Pausa 10min" },
-                    { type: "row", duration: 35 },
-                    { type: "interval", duration: "Pausa 15min" },
-                    { type: "row", duration: 45 }
-                ]
-            }
-        };
-
-        return map[type] || null;
-    },
-
     render() {
 
         const container =
@@ -1395,20 +1314,7 @@
         container.innerHTML = `
             <div class="qts-stage-shell">
                 <div class="qts-stage-main">
-                    <div class="qts-template-strip">
-                        <div class="qts-template-label" aria-hidden="true">Método pomodoro</div>
-                        <div class="qts-templates">
-                            <button type="button" ${readOnly ? "disabled" : ""} aria-pressed="${this.data.activeTemplate === "pomo25"}" class="${this.data.activeTemplate === "pomo25" ? "is-active" : ""}" data-template="pomo25">25/5</button>
-                            <button type="button" ${readOnly ? "disabled" : ""} aria-pressed="${this.data.activeTemplate === "deep50"}" class="${this.data.activeTemplate === "deep50" ? "is-active" : ""}" data-template="deep50">50/15</button>
-                            <button type="button" ${readOnly ? "disabled" : ""} aria-pressed="${this.data.activeTemplate === "flow52"}" class="${this.data.activeTemplate === "flow52" ? "is-active" : ""}" data-template="flow52">52/17</button>
-                            <button type="button" ${readOnly ? "disabled" : ""} aria-pressed="${this.data.activeTemplate === "ultra90"}" class="${this.data.activeTemplate === "ultra90" ? "is-active" : ""}" data-template="ultra90">90/30</button>
-                            <button type="button" ${readOnly ? "disabled" : ""} aria-pressed="${this.data.activeTemplate === "sprint15"}" class="${this.data.activeTemplate === "sprint15" ? "is-active" : ""}" data-template="sprint15">15/5</button>
-                            <button type="button" ${readOnly ? "disabled" : ""} aria-pressed="${this.data.activeTemplate === "progressivo"}" class="${this.data.activeTemplate === "progressivo" ? "is-active" : ""}" data-template="progressivo">Progressivo</button>
-                            <button type="button" ${readOnly ? "disabled" : ""} aria-pressed="${this.data.activeTemplate === "manual"}" class="${this.data.activeTemplate === "manual" ? "is-active" : ""}" data-template="manual">Manual</button>
-                        </div>
-                    </div>
-
-                    <h2 class="qts-title">Quadro semanal</h2>
+                    <h2 class="qts-title">Tabela classica</h2>
 
                     <div class="qts-grid-shell${readOnly ? " is-readonly" : ""}${futureWeek ? " is-future-week" : ""}">
                         ${futureWeek ? '<div class="qts-week-overlay qts-week-overlay-future">PR\u00d3XIMA SEMANA</div>' : ""}
@@ -1438,20 +1344,6 @@
         this.bindDetachedRailActions();
         this.buildGrid();
         this.renderSubjectSummary();
-
-        document
-            .querySelectorAll(".qts-templates button")
-            .forEach((btn) => {
-                if (btn.disabled) {
-                    return;
-                }
-                btn.onpointerdown = () => {
-                    this.commitPendingEdits();
-                };
-                btn.onclick = () => {
-                    this.applyTemplate(btn.dataset.template);
-                };
-            });
 
     },
     renderDetachedIndexRail() {
@@ -2102,7 +1994,11 @@ visibleDays.forEach((day, colIndex) =>
         }
     },
 
-    startTableSelection(cell, extendExisting = false) {
+    startTableSelection(
+        cell,
+        extendExisting = false,
+        preserveNativeSelection = false
+    ) {
         const coord =
             this.getCellCoord(cell);
 
@@ -2120,8 +2016,10 @@ visibleDays.forEach((day, colIndex) =>
         this.selection.focus = coord;
         this.selection.pointerDown = true;
         this.selection.dragging = false;
-        window.getSelection()
-            ?.removeAllRanges();
+        if (!preserveNativeSelection) {
+            window.getSelection()
+                ?.removeAllRanges();
+        }
         this.applyTableSelection();
     },
 
@@ -2178,7 +2076,7 @@ visibleDays.forEach((day, colIndex) =>
         }
     },
 
-    selectSingleCell(cell) {
+    selectSingleCell(cell, clearNativeSelection = true) {
         const coord =
             this.getCellCoord(cell);
 
@@ -2189,8 +2087,11 @@ visibleDays.forEach((day, colIndex) =>
         this.selection.anchor = coord;
         this.selection.focus = coord;
         this.applyTableSelection();
-        window.getSelection()
-            ?.removeAllRanges();
+
+        if (clearNativeSelection) {
+            window.getSelection()
+                ?.removeAllRanges();
+        }
     },
 
     enterCellEditMode(cell) {
@@ -2271,15 +2172,25 @@ visibleDays.forEach((day, colIndex) =>
                 return;
             }
 
-            e.preventDefault();
-            cell._qtsEditing = false;
+            const keepNativeCaret =
+                cell.isContentEditable &&
+                !e.shiftKey;
+
+            if (!keepNativeCaret) {
+                e.preventDefault();
+            }
+
+            cell._qtsEditing = keepNativeCaret;
 
             this.startTableSelection(
                 cell,
-                e.shiftKey
+                e.shiftKey,
+                keepNativeCaret
             );
 
-            cell.focus({ preventScroll: true });
+            if (!keepNativeCaret) {
+                cell.focus({ preventScroll: true });
+            }
         });
 
         cell.addEventListener("pointerenter", (e) => {
@@ -3598,42 +3509,6 @@ commitPendingEdits() {
     if (active.isContentEditable) {
         active.blur();
     }
-},
-
-applyTemplate(type){
-
-this.commitPendingEdits()
-if(this.isReadonlyWeekView()) return
-
-if(type === "manual"){
-this.data.activeTemplate = "manual"
-this.save()
-this.render()
-return
-}
-
-const template =
-    this.getTemplateDefinition(type)
-
-if(!template) return
-
-const snapshots =
-    this.getRowSnapshots()
-const startTime =
-    this.getSeedStartTime()
-
-this.data.activeTemplate =
-    template.activeTemplate
-this.data.studyDuration =
-    template.studyDuration
-this.data.structure =
-    template.structure.map((item) => ({ ...item }))
-
-this.generateTimes(startTime)
-this.restoreRowSnapshots(snapshots)
-this.refreshIntervalLabels()
-this.save()
-this.render()
 },
 
     save() {

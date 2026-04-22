@@ -29,8 +29,17 @@
     }
 
     function getCheckoutContext() {
+        const auth = window.RotaNotaAuth;
+        const session = auth && typeof auth.getSession === "function"
+            ? auth.getSession()
+            : null;
+
         return {
-            customerId: getCustomerId()
+            customerId: getCustomerId(),
+            userId: session && session.userId
+                ? session.userId
+                : "",
+            authenticated: Boolean(session && session.userId)
         };
     }
 

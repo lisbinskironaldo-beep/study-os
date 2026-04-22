@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="RotaNota">
+  <defs>
+    <linearGradient id="route" x1="18" y1="106" x2="108" y2="18" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2563ff"/>
+      <stop offset="0.52" stop-color="#00d4ff"/>
+      <stop offset="1" stop-color="#39e6a1"/>
+    </linearGradient>
+    <linearGradient id="routeDark" x1="20" y1="96" x2="94" y2="24" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#001324"/>
+      <stop offset="1" stop-color="#081324"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="24" fill="#081324"/>
+  <path d="M30 89c6-24 29-22 44-33 12-9 12-23-6-23H28" fill="none" stroke="url(#route)" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M27 97c8-32 37-28 55-41 10-7 13-17 7-26" fill="none" stroke="#0b1220" stroke-width="26" stroke-linecap="round" stroke-linejoin="round" opacity=".86"/>
+  <path d="M30 89c6-24 29-22 44-33 12-9 12-23-6-23H28" fill="none" stroke="url(#route)" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M37 92c8-16 25-17 41-29" fill="none" stroke="#dff8ff" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 10" opacity=".58"/>
+  <circle cx="92" cy="31" r="15" fill="#39e6a1"/>
+  <circle cx="92" cy="31" r="6" fill="url(#routeDark)"/>
+  <circle cx="25" cy="89" r="8" fill="#2563ff"/>
+</svg>

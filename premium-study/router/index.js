@@ -19,6 +19,7 @@
         "flashcards",
         "mini-exam",
         "exam-result",
+        "level-exam",
         "premium-checkout",
         "premium-library",
         "trail"
@@ -26,9 +27,10 @@
 
     const STEP_META = {
         entry: {
-            title: "RotaNota transforma seu PDF em uma rota para a prova.",
-            subtitle: "Tudo começa no seu material. Depois disso, cada etapa ajusta a trilha ao seu prazo e à sua meta.",
-            label: "Entrada RotaNota",
+            title: "Seu PDF vira uma rota clara até a prova.",
+            subtitle: "Carregue o material e comece uma trilha montada para o seu objetivo.",
+            label: "Entrada premium",
+            showKicker: false,
             backVisible: false,
             progressVisible: false,
             showSummary: false
@@ -171,6 +173,16 @@
             showSummary: false,
             scrollable: true
         },
+        "level-exam": {
+            title: "Prova de nivel premium",
+            subtitle: "Escolha a quantidade de questoes e meca sua prontidao geral no material.",
+            label: "Prova premium",
+            backVisible: true,
+            progressVisible: false,
+            showSummary: true,
+            scrollable: true,
+            hideHeading: true
+        },
         "premium-checkout": {
             title: "Plano premium",
             subtitle: "Libere continuidade, biblioteca e treinos extras sem poluir sua rotina de estudo.",
@@ -244,6 +256,10 @@
 
             if (step === "exam-result") {
                 return this.goTo("mini-exam");
+            }
+
+            if (step === "level-exam") {
+                return this.goTo("mode-select");
             }
 
             if (step === "premium-checkout") {

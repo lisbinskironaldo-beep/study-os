@@ -10,6 +10,9 @@
         "premium-study/services/access-control.js",
         "premium-study/services/identity.js",
         "premium-study/services/pdf-validator.js",
+        "premium-study/services/pdf-text-extractor.js",
+        "premium-study/services/promotions.js",
+        "premium-study/services/growth.js",
         "premium-study/services/billing.js",
         "premium-study/services/account.js",
         "premium-study/services/ai.js",
@@ -19,6 +22,7 @@
         "premium-study/ui/views/index.js",
         "premium-study/app/index.js"
     ];
+    let dependenciesPromise = null;
 
     function ensureStyle() {
         if (document.getElementById(STYLE_ID)) {
@@ -59,13 +63,29 @@
         });
     }
 
-    window.PremiumStudyBootstrap = {
-        async init(options = {}) {
+    async function loadDependencies() {
+        if (dependenciesPromise) {
+            return dependenciesPromise;
+        }
+
+        dependenciesPromise = (async () => {
             ensureStyle();
 
             for (const dependency of dependencies) {
                 await loadScript(dependency);
             }
+        })();
+
+        return dependenciesPromise;
+    }
+
+    window.PremiumStudyBootstrap = {
+        async preload() {
+            return loadDependencies();
+        },
+
+        async init(options = {}) {
+            await loadDependencies();
 
             if (window.PremiumStudyApp && typeof window.PremiumStudyApp.init === "function") {
                 window.PremiumStudyApp.init(options);

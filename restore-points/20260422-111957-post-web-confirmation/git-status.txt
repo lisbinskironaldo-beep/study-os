@@ -1,0 +1,166 @@
+﻿ M .env.example
+ M .gitignore
+ M README.md
+ M ambient/ambientUI.js
+ M api/_lib/premium-entitlements.js
+ M api/mercado-pago/checkout.js
+ M api/mercado-pago/webhook.js
+ M api/premium/status.js
+ M assets/rotanota-mark.svg
+ M count_answers.js
+ M css/premium.css
+ M docs/premium_study_operacao_ai_pagamentos.md
+ M docs/questions_v2_indexeddb_schema.md
+ M docs/supabase_premium_schema.sql
+ M index.html
+ M js/app.js
+ M js/calendar.js
+ M js/clock.js
+ M js/pomodoro.js
+ M js/qts-lab-hooks.js
+ M js/qts.js
+ M js/utilityWindows.js
+ M premium-study/app/index.js
+ M premium-study/bootstrap/index.js
+ M premium-study/router/index.js
+ M premium-study/services/access-control.js
+ M premium-study/services/account.js
+ M premium-study/services/ai.js
+ M premium-study/services/billing.js
+ M premium-study/services/identity.js
+ M premium-study/state/store.js
+ M premium-study/storage/indexeddb.js
+ M premium-study/styles/premium-study.css
+ M premium-study/ui/components/index.js
+ M premium-study/ui/views/index.js
+ M qts-lab.html
+ M questions-standalone.html
+ M questions/app/application/legacySessionFallback.mjs
+ M questions/app/application/routeUseCases.mjs
+ M questions/app/application/sessionUseCases.mjs
+ M questions/app/infrastructure/storage/indexedDbSchema.mjs
+ M questions/questions.css
+ M questions/questions.js
+ M questions/questions.service.js
+ M questions/questions.store.js
+ M questions/questions.ui.js
+?? .vercelignore
+?? api/_lib/auth-session.js
+?? api/_lib/cookies.js
+?? api/_lib/gemini.js
+?? api/_lib/google-auth.js
+?? api/_lib/ops-auth.js
+?? api/_lib/ops-defaults.js
+?? api/_lib/ops-service.js
+?? api/_lib/user-accounts.js
+?? api/auth/
+?? api/northstar-app-manifest.js
+?? api/northstar-mcp.js
+?? api/ops-router.js
+?? api/premium/ai-generate.js
+?? api/premium/growth-event.js
+?? api/premium/promotions.js
+?? assets/brand-exploration/
+?? assets/rotanota-logo-dark.svg
+?? assets/rotanota-logo-light.svg
+?? docs/north_ecosystem_architecture.md
+?? docs/northstar_ai_ops_policy.md
+?? docs/northstar_chatgpt_app.md
+?? docs/northstar_current_state.md
+?? docs/northstar_go_live_monetization.md
+?? docs/northstar_launch_execution.md
+?? docs/northstar_three_day_growth_loop.md
+?? docs/premium_study_ops_console.md
+?? docs/premium_study_ops_copilot.md
+?? docs/premium_study_ops_promotions.md
+?? docs/premium_study_ops_runbook.md
+?? docs/rotanota_2026-04-20_handoff.md
+?? docs/rotanota_execution_phases.md
+?? docs/rotanota_go_live_status.md
+?? js/auth.js
+?? js/routineTable.js
+?? ops/
+?? premium-study/router/index.js.rej
+?? premium-study/services/growth.js
+?? premium-study/services/pdf-text-extractor.js
+?? premium-study/services/promotions.js
+?? premium-study/state/store.js.rej
+?? premium-study/ui/views/index.js.rej
+?? restore-points/20260414-090249-fisica-text-cleanup/
+?? restore-points/20260414-221828-premium-study-phase1-base/
+?? restore-points/20260414-234352-premium-study-onboarding-refined/
+?? restore-points/20260415-000455-premium-study-pre-fit-refinement/
+?? restore-points/20260415-101150-premium-study-pre-next-phases/
+?? restore-points/20260415-102250-premium-study-post-flow-execution/
+?? restore-points/20260418-195717-site-visual-global-before/
+?? restore-points/20260418-200000-home-pomodoro-before/
+?? restore-points/20260418-201217-home-pomodoro-refinement-after/
+?? restore-points/20260418-201329-premium-study-text-visual-before/
+?? restore-points/20260418-204230-premium-study-text-visual-after/
+?? restore-points/20260418-204433-site-refinement-final/
+?? restore-points/20260418-211811-topbar-brand-before/
+?? restore-points/20260418-213709-entry-note-before/
+?? restore-points/20260418-214008-entry-note-after/
+?? restore-points/20260418-214440-entry-premium-redesign-before/
+?? restore-points/20260418-215205-entry-premium-redesign-after/
+?? restore-points/20260418-220030-entry-dedup-before/
+?? restore-points/20260418-220236-entry-dedup-after/
+?? restore-points/20260418-220540-entry-final-polish-before/
+?? restore-points/20260418-220742-entry-final-polish-after/
+?? restore-points/20260418-223000-premium-comparison-before/
+?? restore-points/20260418-223950-premium-comparison-after/
+?? restore-points/20260418-224420-premium-benefit-columns-before/
+?? restore-points/20260418-224544-premium-benefit-columns-after/
+?? restore-points/20260418-225220-light-card-contrast-before/
+?? restore-points/20260418-225431-light-card-contrast-after/
+?? restore-points/20260418-225743-brand-family-before/
+?? restore-points/20260418-230427-brand-family-after/
+?? restore-points/20260418-230735-topbar-logo-fix-before/
+?? restore-points/20260418-231813-calendar-compact-before/
+?? restore-points/20260418-232014-calendar-compact-after/
+?? restore-points/20260418-232747-entry-plan-palette-before/
+?? restore-points/20260418-232953-entry-plan-palette-after/
+?? restore-points/20260418-233301-premium-plan-prices-before/
+?? restore-points/20260418-233417-premium-plan-prices-after/
+?? restore-points/20260418-233626-premium-plan-real-prices-before/
+?? restore-points/20260418-233815-premium-plan-real-prices-after/
+?? restore-points/20260419-000351-home-immersion-before/
+?? restore-points/20260419-002053-ambient-peek-before/
+?? restore-points/20260419-011909-routine-table-v2-before/
+?? restore-points/20260419-015741-home-empty-fix-before/
+?? restore-points/20260419-105046-qts-remove-pomodoro-method-before/
+?? restore-points/20260419-110221-qts-lab-remove-pomodoro-before/
+?? restore-points/20260419-113201-table-refinement-before/
+?? restore-points/20260419-155640-topbar-pomodoro-layout-before/
+?? restore-points/20260419-161041-unified-color-theme-before/
+?? restore-points/20260419-162852-rounded-layout-colors-before/
+?? restore-points/20260419-164414-ambient-player-visual-refresh-before/
+?? restore-points/20260419-192220-ops-gemini-backoffice-before/
+?? restore-points/20260421-140610-6obile-brow10er-10weep-be3ore/
+?? restore-points/20260421-141551-mobile-browser-sweep-pass2/
+?? restore-points/20260421-175142-mobile-fixes-pass3/
+?? restore-points/20260421-190335-multi-adjustments-plan/
+?? restore-points/20260421-204210-multi-adjustments-checkpoint-1/
+?? restore-points/20260421-211500-premium-study-persistence-before/
+?? restore-points/20260421-213420-premium-study-hydration-checkpoint/
+?? restore-points/20260421-230747-premium-highlight-editor-before/
+?? restore-points/20260421-235950-premium-highlight-editor-after/
+?? restore-points/20260422-111300-pdf-integral-persistence-fix/
+?? restore-points/20260422-111957-post-web-confirmation/
+?? restore-points/20260422-112400-pdf-extraction-race-fix/
+?? restore-points/20260422-113700-pdf-extractor-fallback-pass/
+?? restore-points/20260422-121000-before-premium-text-rollback/
+?? scripts/rotanota-readiness-check.js
+?? supabase/
+?? tools/premium-desktop-check.png
+?? tools/premium-mobile-chromium-check.png
+?? tools/premium-mobile-landscape-check.png
+?? tools/premium-mobile-post-check.png
+?? tools/questions-desktop-check.png
+?? tools/questions-mobile-chromium-check.png
+?? tools/questions-mobile-landscape-check.png
+?? tools/questions-mobile-post-check.png
+?? tools/questions-mobile-wait4-check.png
+?? tools/questions-mobile-wait8-check.png
+?? tools/questions-split-layout-check.png
+?? vercel.json

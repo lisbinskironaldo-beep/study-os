@@ -2,15 +2,14 @@
     const markerSpecs = [
         { n: 1, label: "Topo", selector: ".topbar", corner: "tl" },
         { n: 2, label: "Semanas", selector: "#qtsDetachedIndex .qts-detached-block.is-week", corner: "tl" },
-        { n: 3, label: "Dias e horário", selector: "#qtsDetachedIndex .qts-detached-block.is-toggle", corner: "tl" },
+        { n: 3, label: "Dias e horario", selector: "#qtsDetachedIndex .qts-detached-block.is-toggle", corner: "tl" },
         { n: 4, label: "Planejamento lateral", selector: "#qtsDetachedIndex .qts-detached-block.is-summary", corner: "tl" },
-        { n: 5, label: "Método Pomodoro", selector: ".qts-template-strip", corner: "tl" },
-        { n: 6, label: "Título", selector: ".qts-title", corner: "tr" },
-        { n: 7, label: "Tabela", selector: ".qts-grid-shell", corner: "tl" },
-        { n: 8, label: "Controles inferiores", selector: ".qts-controls", corner: "bl" },
-        { n: 9, label: "Planejamento por matéria", selector: "#qtsSubjectSummary", corner: "tl", optional: true },
-        { n: 10, label: "Trilho direito", selector: ".side-modules", corner: "tr" },
-        { n: 11, label: "Rodapé", selector: ".footer", corner: "tl" }
+        { n: 5, label: "Titulo", selector: ".qts-title", corner: "tr" },
+        { n: 6, label: "Tabela", selector: ".qts-grid-shell", corner: "tl" },
+        { n: 7, label: "Controles inferiores", selector: ".qts-controls", corner: "bl" },
+        { n: 8, label: "Planejamento por materia", selector: "#qtsSubjectSummary", corner: "tl", optional: true },
+        { n: 9, label: "Trilho direito", selector: ".side-modules", corner: "tr" },
+        { n: 10, label: "Rodape", selector: ".footer", corner: "tl" }
     ];
 
     function clearMarkers() {

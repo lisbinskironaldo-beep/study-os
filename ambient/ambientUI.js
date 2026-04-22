@@ -1,5 +1,25 @@
 const AmbientUI = {
 
+icon(name) {
+
+const icons = {
+library: `<svg class="ambient-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 5.25h2.4a1.1 1.1 0 0 1 1.1 1.1v11.4a1.1 1.1 0 0 1-1.1 1.1H6.5a1.1 1.1 0 0 1-1.1-1.1V6.35a1.1 1.1 0 0 1 1.1-1.1Z"/><path d="M11.1 4.5h2.5a1.1 1.1 0 0 1 1.1 1.1v12.9a1.1 1.1 0 0 1-1.1 1.1h-2.5a1.1 1.1 0 0 1-1.1-1.1V5.6a1.1 1.1 0 0 1 1.1-1.1Z"/><path d="M15.8 7h1.8a1 1 0 0 1 1 1v9.7a1 1 0 0 1-1 1h-1.8"/></svg>`,
+help: `<svg class="ambient-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.75"/><path d="M9.7 9.45a2.52 2.52 0 0 1 4.8 1.02c0 1.8-2.35 2.16-2.35 3.95"/><circle cx="12" cy="17.2" r="1" fill="currentColor" stroke="none"/></svg>`,
+star: `<svg class="ambient-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 4.9 2.2 4.45 4.92.71-3.56 3.48.84 4.9L12 16.08l-4.4 2.36.84-4.9L4.88 10.06l4.92-.71Z"/></svg>`,
+starFilled: `<svg class="ambient-icon ambient-icon--filled" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 4.9 2.2 4.45 4.92.71-3.56 3.48.84 4.9L12 16.08l-4.4 2.36.84-4.9L4.88 10.06l4.92-.71Z"/></svg>`,
+categories: `<svg class="ambient-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.75 8.25V5.8a1.05 1.05 0 0 1 1.05-1.05h2.45"/><path d="M15.75 4.75h2.45a1.05 1.05 0 0 1 1.05 1.05v2.45"/><path d="M19.25 15.75v2.45a1.05 1.05 0 0 1-1.05 1.05h-2.45"/><path d="M8.25 19.25H5.8a1.05 1.05 0 0 1-1.05-1.05v-2.45"/><path d="M8 8h3.2v3.2H8z"/><path d="M12.8 8H16v3.2h-3.2z"/><path d="M8 12.8h3.2V16H8z"/><path d="M12.8 12.8H16V16h-3.2z"/></svg>`,
+shuffle: `<svg class="ambient-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16.5 6H19v2.5"/><path d="M5 7.5h3.7c1.1 0 2.14.5 2.83 1.36l4.94 6.28c.69.87 1.73 1.36 2.84 1.36H19"/><path d="M16.5 18H19v-2.5"/><path d="M5 16.5h3.7c1.1 0 2.14-.5 2.83-1.36l1.12-1.43"/><path d="m16.3 7.7 2.7-2.7"/></svg>`,
+close: `<svg class="ambient-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 6.5 17.5 17.5"/><path d="M17.5 6.5 6.5 17.5"/></svg>`,
+play: `<svg class="ambient-icon ambient-icon--filled" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 7.4a.8.8 0 0 1 1.22-.68l7.1 4.6a.8.8 0 0 1 0 1.34l-7.1 4.6A.8.8 0 0 1 9 16.52z"/></svg>`,
+pause: `<svg class="ambient-icon ambient-icon--filled" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="7.25" y="6.8" width="3.7" height="10.4" rx="1.2"/><rect x="13.05" y="6.8" width="3.7" height="10.4" rx="1.2"/></svg>`,
+prev: `<svg class="ambient-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 6.8v10.4"/><path d="m17 7.3-6.2 4.7L17 16.7V7.3Z" fill="currentColor" stroke="none"/></svg>`,
+next: `<svg class="ambient-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 6.8v10.4"/><path d="m7 7.3 6.2 4.7L7 16.7V7.3Z" fill="currentColor" stroke="none"/></svg>`
+}
+
+return icons[name] || ""
+
+},
+
 init() {
 
 const root = document.getElementById("ambientRoot")
@@ -15,7 +35,9 @@ root.innerHTML = `
 
 <div id="ambientMini" class="ambient-mini" title="Abrir player">
   <div class="ambient-mini-main">
-    <button id="ambientLibraryToggle" class="ambient-mini-icon" title="Abrir biblioteca">~</button>
+    <button id="ambientLibraryToggle" class="ambient-mini-icon" type="button" title="Abrir biblioteca" aria-label="Abrir biblioteca">
+      ${this.icon("library")}
+    </button>
 
     <div class="ambient-now">
       <div id="ambientTicker" class="ambient-ticker" aria-live="polite">
@@ -27,10 +49,10 @@ root.innerHTML = `
     </div>
 
     <div class="ambient-mini-actions">
-      <button id="ambientPrev" class="ambient-secondary-control" title="Anterior"><<</button>
-      <button id="ambientNext" class="ambient-secondary-control" title="Proxima">>></button>
-      <button id="ambientPlay" class="ambient-primary-control" title="Play ou pause">></button>
-      <button id="ambientHideMini" class="ambient-secondary-control" title="Esconder player">x</button>
+      <button id="ambientPrev" class="ambient-secondary-control" type="button" title="Faixa anterior" aria-label="Faixa anterior">${this.icon("prev")}</button>
+      <button id="ambientNext" class="ambient-secondary-control" type="button" title="Próxima faixa" aria-label="Próxima faixa">${this.icon("next")}</button>
+      <button id="ambientPlay" class="ambient-primary-control" type="button" title="Reproduzir" aria-label="Reproduzir">${this.icon("play")}</button>
+      <button id="ambientHideMini" class="ambient-secondary-control" type="button" title="Ocultar player" aria-label="Ocultar player">${this.icon("close")}</button>
     </div>
   </div>
 
@@ -56,11 +78,11 @@ root.innerHTML = `
     </div>
 
     <div class="ambient-header-actions">
-      <button id="ambientHelpBtn" title="Atalhos">?</button>
-      <button id="ambientFavBtn" title="Favoritos">*</button>
-      <button id="ambientCatBtn" title="Categorias">#</button>
-      <button id="ambientShuffle" title="Embaralhar">~</button>
-      <button id="ambientPanelHide" title="Fechar">x</button>
+      <button id="ambientHelpBtn" type="button" title="Atalhos" aria-label="Atalhos">${this.icon("help")}</button>
+      <button id="ambientFavBtn" type="button" title="Mostrar favoritos" aria-label="Mostrar favoritos">${this.icon("star")}</button>
+      <button id="ambientCatBtn" type="button" title="Categorias" aria-label="Categorias">${this.icon("categories")}</button>
+      <button id="ambientShuffle" type="button" title="Embaralhar" aria-label="Embaralhar">${this.icon("shuffle")}</button>
+      <button id="ambientPanelHide" type="button" title="Fechar biblioteca" aria-label="Fechar biblioteca">${this.icon("close")}</button>
     </div>
   </div>
 
@@ -134,7 +156,11 @@ const title = item?.title || "Escolha uma trilha para acompanhar o estudo"
 const tickerText = `${label} / ${title}`
 
 if (playButton) {
-playButton.textContent = AmbientState.playing ? "||" : ">"
+const isPlaying = AmbientState.playing
+playButton.innerHTML = this.icon(isPlaying ? "pause" : "play")
+playButton.title = isPlaying ? "Pausar" : "Reproduzir"
+playButton.setAttribute("aria-label", isPlaying ? "Pausar" : "Reproduzir")
+playButton.dataset.state = isPlaying ? "pause" : "play"
 }
 
 if (tickerPrimary) {
@@ -147,6 +173,30 @@ tickerClone.textContent = tickerText
 
 if (mini) {
 mini.classList.toggle("is-playing", AmbientState.playing)
+}
+
+const libraryToggle = document.getElementById("ambientLibraryToggle")
+if (libraryToggle) {
+libraryToggle.classList.toggle("is-active", AmbientState.panelMode === 0)
+}
+
+const favoriteButton = document.getElementById("ambientFavBtn")
+if (favoriteButton) {
+favoriteButton.classList.toggle("is-active", AmbientState.favoritesMode)
+favoriteButton.title = AmbientState.favoritesMode
+? "Voltar para a lista aleatória"
+: "Mostrar favoritos"
+favoriteButton.setAttribute(
+"aria-label",
+AmbientState.favoritesMode
+? "Voltar para a lista aleatória"
+: "Mostrar favoritos"
+)
+}
+
+const categoryButton = document.getElementById("ambientCatBtn")
+if (categoryButton) {
+categoryButton.classList.toggle("is-active", AmbientState.ui.categoryMenuOpen)
 }
 
 if (peek) {
@@ -230,6 +280,7 @@ if (!selector) return
 
 selector.classList.add("hidden")
 AmbientState.ui.categoryMenuOpen = false
+this.updateShell()
 
 },
 
@@ -241,6 +292,7 @@ if (!selector) return
 selector.classList.toggle("hidden")
 AmbientState.ui.categoryMenuOpen =
 !selector.classList.contains("hidden")
+this.updateShell()
 
 },
 
@@ -267,7 +319,7 @@ const isCursor = index === AmbientState.cursor
 
 return `
 <div class="ambient-item${isPlaying ? " playing" : ""}${isCursor ? " cursor" : ""}" data-index="${index}" data-id="${item.id}">
-  <button class="fav-btn${favorite ? " active" : ""}" data-id="${item.id}" type="button">*</button>
+  <button class="fav-btn${favorite ? " active" : ""}" data-id="${item.id}" type="button" title="${favorite ? "Remover dos favoritos" : "Salvar nos favoritos"}" aria-label="${favorite ? "Remover dos favoritos" : "Salvar nos favoritos"}">${this.icon(favorite ? "starFilled" : "star")}</button>
   <img src="https://i.ytimg.com/vi/${item.id}/mqdefault.jpg" alt="${item.title}">
   <div class="ambient-item-copy">
     <div class="ambient-item-meta">${item.category || "mix"}</div>
@@ -383,7 +435,7 @@ let help = document.createElement("div")
 help.id = "ambientHelp"
 help.innerHTML = `
 <div class="ambient-help-box">
-  <button id="ambientHelpClose" type="button">x</button>
+  <button id="ambientHelpClose" type="button" aria-label="Fechar ajuda" title="Fechar ajuda">${this.icon("close")}</button>
   <h3>Atalhos do player</h3>
   <div>Alt + M: alterna painel, mini e oculto</div>
   <div>Alt + F: abre favoritos</div>
@@ -438,7 +490,7 @@ const blocked = document.createElement("div")
 blocked.id = "ambientBlocked"
 blocked.innerHTML = `
 <div class="ambient-blocked-box">
-  <button id="ambientBlockedClose" type="button">x</button>
+  <button id="ambientBlockedClose" type="button" aria-label="Fechar lista" title="Fechar lista">${this.icon("close")}</button>
   <div class="ambient-blocked-header">
     <div class="ambient-blocked-kicker">Alt + T</div>
     <h3>Faixas indisponiveis</h3>
@@ -585,6 +637,11 @@ this.togglePanel()
 
 if (peek) {
 peek.addEventListener("click", () => {
+if (document.body.classList.contains("clock-immersion-mode")) {
+AmbientPlayer.toggle()
+return
+}
+
 this.setPanelMode(1)
 })
 }
