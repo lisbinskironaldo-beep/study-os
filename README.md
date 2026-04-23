@@ -51,6 +51,34 @@ Abrir:
 - `http://localhost:3000/`
 - `http://localhost:3000/ops/`
 
+## Documentos e PDF em Texto
+
+Guia operacional principal:
+
+- `docs/premium_documentos_sync.md`
+
+Regras atuais do fluxo:
+
+- o upload aceito no premium study e PDF (`.pdf` / `application/pdf`)
+- o modo `PDF em Texto` abre uma copia textual extraida do PDF para edicao estavel
+- o PDF original continua separado quando houver asset salvo
+- a Biblioteca premium sincroniza o snapshot do estudo por conta, incluindo o texto extraido salvo
+- o navegador tambem mantem cache local para continuar funcionando mesmo sem sync
+
+Para conseguir abrir o mesmo documento em outro PC exatamente do mesmo jeito:
+
+1. usar a mesma conta Google no login do site
+2. garantir que o schema `docs/supabase_premium_schema.sql` foi aplicado no Supabase
+3. abrir o estudo pela Biblioteca premium ou salvar o estudo antes de trocar de maquina
+4. usar um PDF textual valido
+
+Observacoes importantes:
+
+- `PDF em Texto` depende de um PDF com camada de texto; PDF escaneado ou imagem pura pode extrair pouco ou nada
+- a primeira abertura do PDF usa `pdf.js` carregado da CDN `cdnjs`, entao o navegador e a rede precisam permitir esse carregamento
+- se o login Google falhar por `origin_mismatch`, falta cadastrar a origin correta no Google Cloud
+- o editor salvo sincroniza o texto do estudo; sem login, o material fica so no navegador atual
+
 ## Checagem de prontidao
 
 Antes de testar checkout, premium, Gemini e retaguarda:
@@ -81,6 +109,21 @@ Observacoes:
 - a Biblioteca premium agora sincroniza por conta quando houver login e schema aplicado no Supabase
 - o navegador ainda mantem um cache local para continuar funcionando mesmo sem sync
 - a biblioteca ainda nao tem pastas de organizacao
+
+## Login Google no premium
+
+Para o login com Google funcionar no premium:
+
+- configurar `GOOGLE_CLIENT_ID` ou `ROTANOTA_GOOGLE_CLIENT_ID` na Vercel
+- cadastrar no Google Cloud as origins exatas usadas no site
+
+Origins mais comuns:
+
+- `https://rota-nota.vercel.app`
+- `http://localhost:3000`
+- o dominio preview exato da Vercel, se estiver testando por preview
+
+Sem isso, o premium pode mostrar erro `origin_mismatch`.
 
 ## Banco
 
