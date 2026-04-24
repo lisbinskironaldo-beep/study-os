@@ -518,11 +518,25 @@
                 (paymentReturn.status === "success" || paymentReturn.status === "pending") &&
                 !(status && status.premiumActive)
             ) {
-                this.schedulePremiumStatusRefresh(paymentReturn, snapshot ? targetStep : "premium-checkout");
+                this.schedulePremiumStatusRefresh(
+                    paymentReturn,
+                    snapshot ? targetStep : "premium-checkout",
+                    checkoutContext
+                );
+            } else if (
+                status &&
+                status.premiumActive &&
+                checkoutContext &&
+                checkoutContext.feature === "SCANNED_PDF_TEXT"
+            ) {
+                await this.recoverPremiumScannedPdfFlow({
+                    targetStep,
+                    forceRegenerate: true
+                });
             }
         },
 
-        schedulePremiumStatusRefresh(paymentReturn = null, targetStep = "premium-checkout") {
+        schedulePremiumStatusRefresh(paymentReturn = null, targetStep = "premium-checkout", checkoutContext = null) {
             this.clearPremiumStatusTimers();
 
             [2500, 7000, 15000, 30000].forEach((delay) => {
@@ -541,6 +555,13 @@
                             message: "Pagamento confirmado. Seus recursos premium ja estao ativos e sua trilha continua do ponto onde voce parou."
                         });
                         this.clearPremiumStatusTimers();
+                        const recoveryContext = checkoutContext || this.getCheckoutReturnContext();
+                        if (recoveryContext && recoveryContext.feature === "SCANNED_PDF_TEXT") {
+                            await this.recoverPremiumScannedPdfFlow({
+                                targetStep,
+                                forceRegenerate: true
+                            });
+                        }
                         this.render();
                     }
                 }, delay);
@@ -2180,6 +2201,174 @@ ${sections}`
             }).join("\n\n");
         },
 
+        hasMeaningfulStudyProgress() {
+            const store = window.PremiumStudyStore;
+
+            if (!store || typeof store.getOverallProgress !== "function") {
+                return false;
+            }
+
+            const progress = store.getOverallProgress();
+            return Boolean(progress && Number(progress.completed || 0) > 0);
+        },
+
+        async generateBundleFromMaterialText(extractedText, options = {}) {
+            const store = window.PremiumStudyStore;
+            const state = store.getState();
+            const normalizedText = String(extractedText || "").trim();
+
+            if (!normalizedText) {
+                return {
+                    ok: false,
+                    status: "missing_text"
+                };
+            }
+
+            const dailyMinutes = (Number(state.studyHours) || 0) * 60
+                + (Number(state.studyMinutes) || 0);
+            const ai = window.PremiumStudyAI;
+            const result = ai && typeof ai.request === "function"
+                ? await ai.request(ai.TASKS.FREE_BUNDLE_FROM_MATERIAL, {
+                    customerId: state.customerId || "",
+                    materialHash: state.materialHash || "",
+                    materialName: state.materialName || "",
+                    pageCount: state.materialPageCount || 0,
+                    extractedText: normalizedText,
+                    examDate: state.examDate || "",
+                    targetScore: state.targetScore || "",
+                    dailyMinutes
+                })
+                : { ok: false, status: "ai_unavailable" };
+
+            if (result && result.ok && result.bundle) {
+                store.applyGeneratedBundle(result);
+                this.trackGrowth("ai_bundle_generated", {
+                    materialHash: store.getState().materialHash,
+                    metadata: {
+                        provider: result.provider || "",
+                        model: result.model || "",
+                        blockCount: result.bundle && result.bundle.blocks ? result.bundle.blocks.length : 0,
+                        source: options.source || "material_text"
+                    }
+                });
+            }
+
+            return result;
+        },
+
+        async recoverPremiumScannedPdfFlow(options = {}) {
+            const store = window.PremiumStudyStore;
+            const router = window.PremiumStudyRouter;
+            const state = store.getState();
+            const targetStep = options.targetStep || state.step || "mode-select";
+
+            if (!state.materialName) {
+                return {
+                    ok: false,
+                    status: "missing_material"
+                };
+            }
+
+            store.setSessionNote({
+                step: targetStep,
+                tone: "info",
+                title: "Convertendo o PDF com o premium",
+                message: "Seu documento parece imagem ou escaneado. Agora que o premium foi liberado, estamos extraindo o texto completo para atualizar Aprender, Praticar e Prova."
+            });
+            this.render();
+
+            const extractedText = await this.ensureMaterialText({
+                maxChars: 50000,
+                maxPages: 60,
+                allowAiFallback: true,
+                useCache: true,
+                saveLocalCache: true,
+                cacheWeakLocal: true,
+                syncProgressLabel: "Preparando o PDF premium no servidor antes da leitura integral.",
+                aiProgressLabel: "O premium esta convertendo o PDF em texto editavel com ajuda da IA."
+            });
+
+            const normalizedText = String(extractedText || "").trim();
+            if (!normalizedText) {
+                store.setSessionNote({
+                    step: targetStep,
+                    tone: "premium",
+                    title: "Nao consegui converter o PDF agora",
+                    message: "A liberacao premium foi concluida, mas este PDF em imagem ainda nao gerou texto suficiente. Tente novamente em instantes ou use um arquivo mais nitido."
+                });
+                this.render();
+                return {
+                    ok: false,
+                    status: "empty_text"
+                };
+            }
+
+            store.setPdfWorkbenchText(normalizedText, {
+                preserveOriginal: false,
+                html: this.textToPdfWorkbenchHtml(normalizedText)
+            });
+
+            const shouldRefreshModes =
+                options.forceRegenerate === true ||
+                !this.hasMeaningfulStudyProgress() ||
+                !Array.isArray(store.getState().blocks) ||
+                !store.getState().blocks.some((block) => block && block.generatedByAi);
+
+            if (!shouldRefreshModes) {
+                store.setSessionNote({
+                    step: targetStep,
+                    tone: "success",
+                    title: "Texto premium pronto",
+                    message: "O PDF foi convertido em texto editavel. Como voce ja tinha progresso na trilha, mantivemos seus modos atuais sem regenerar os blocos."
+                });
+                this.render();
+                this.schedulePersist(120);
+                return {
+                    ok: true,
+                    status: "text_ready_only"
+                };
+            }
+
+            store.patch({
+                progressLabel: "Atualizando Aprender, Praticar e Prova com o texto premium extraido do PDF."
+            });
+            this.render();
+
+            const bundleResult = await this.generateBundleFromMaterialText(normalizedText, {
+                source: "premium_scanned_pdf_unlock"
+            });
+
+            if (bundleResult && bundleResult.ok && bundleResult.bundle) {
+                router.goTo(targetStep);
+                store.setSessionNote({
+                    step: targetStep,
+                    tone: "success",
+                    title: "Texto premium pronto. Modos atualizados.",
+                    message: "Aprender, Praticar e Prova foram regenerados a partir do texto extraido deste PDF em imagem."
+                });
+                this.render();
+                this.schedulePersist(120);
+                return {
+                    ok: true,
+                    status: "bundle_regenerated"
+                };
+            }
+
+            store.setSessionNote({
+                step: targetStep,
+                tone: "info",
+                title: "Texto premium pronto",
+                message: "O PDF foi convertido em texto editavel. A trilha completa ainda nao foi regenerada agora, mas o texto integral ja ficou disponivel no editor."
+            });
+            this.render();
+            this.schedulePersist(120);
+
+            return {
+                ok: true,
+                status: "text_ready_bundle_pending"
+            };
+        },
+
         async startAnalysisSequence() {
             this.clearAnalysisTimers();
             const store = window.PremiumStudyStore;
@@ -2207,35 +2396,12 @@ ${sections}`
                 });
                 this.render();
 
-                const current = store.getState();
-                const dailyMinutes = (Number(current.studyHours) || 0) * 60
-                    + (Number(current.studyMinutes) || 0);
-                const ai = window.PremiumStudyAI;
-                const result = ai && typeof ai.request === "function"
-                    ? await ai.request(ai.TASKS.FREE_BUNDLE_FROM_MATERIAL, {
-                        customerId: current.customerId || "",
-                        materialHash: current.materialHash || "",
-                        materialName: current.materialName || "",
-                        pageCount: current.materialPageCount || 0,
-                        extractedText,
-                        examDate: current.examDate || "",
-                        targetScore: current.targetScore || "",
-                        dailyMinutes
-                    })
-                    : { ok: false, status: "ai_unavailable" };
+                const result = await this.generateBundleFromMaterialText(extractedText, {
+                    source: "analysis_sequence"
+                });
 
                 store.setAnalysisProgress(82, "running");
-                if (result && result.ok && result.bundle) {
-                    store.applyGeneratedBundle(result);
-                    this.trackGrowth("ai_bundle_generated", {
-                        materialHash: store.getState().materialHash,
-                        metadata: {
-                            provider: result.provider || "",
-                            model: result.model || "",
-                            blockCount: result.bundle && result.bundle.blocks ? result.bundle.blocks.length : 0
-                        }
-                    });
-                } else {
+                if (!(result && result.ok && result.bundle)) {
                     store.patch({
                         aiGeneration: {
                             status: result && result.status ? result.status : "fallback",
@@ -2560,8 +2726,8 @@ ${sections}`
                         store.setSessionNote({
                             step: "premium-checkout",
                             tone: "premium",
-                            title: "PDF escaneado em texto fica no premium",
-                            message: "Este PDF parece imagem ou escaneado. No gratis, o editor abre PDFs textuais. Para converter este documento em texto editavel com IA, use o premium."
+                            title: "Isto nao e erro: este PDF precisa da conversao premium",
+                            message: "Este arquivo parece imagem ou escaneado. No gratis, o editor abre PDFs textuais quando a leitura local funciona. Para transformar este documento em texto editavel com IA, use o premium."
                         });
                         openPremiumOffer("SCANNED_PDF_TEXT");
                         shouldPersist = true;

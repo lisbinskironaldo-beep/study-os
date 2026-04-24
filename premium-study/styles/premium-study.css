@@ -3120,6 +3120,42 @@
         rgba(49, 215, 163, 0.1);
 }
 
+.premium-paywall-explainer {
+    display: grid;
+    gap: 8px;
+    margin-top: 10px;
+    padding: 14px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--premium-radius-card);
+    background: rgba(255, 255, 255, 0.04);
+    box-shadow: var(--premium-shadow-soft);
+}
+
+.premium-paywall-explainer strong {
+    font-size: 1rem;
+}
+
+.premium-paywall-explainer p,
+.premium-paywall-explainer li {
+    color: var(--premium-muted);
+    font-size: 0.9rem;
+    line-height: 1.45;
+}
+
+.premium-paywall-explainer ul {
+    display: grid;
+    gap: 6px;
+    margin: 0;
+    padding-left: 18px;
+}
+
+.premium-paywall-explainer-scanned {
+    border-color: rgba(255, 194, 76, 0.34);
+    background:
+        radial-gradient(circle at top right, rgba(255, 194, 76, 0.12), transparent 34%),
+        rgba(255, 194, 76, 0.08);
+}
+
 .premium-question-meta {
     display: flex;
     align-items: center;

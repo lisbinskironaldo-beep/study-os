@@ -884,6 +884,21 @@ ${renderSessionNote(state, "pdf-workbench")}`;
         const primaryBenefits = Array.isArray(offer.benefits)
             ? offer.benefits.slice(0, 3)
             : [];
+        const scannedPdfFeature = Access()
+            ? Access().FEATURES.SCANNED_PDF_TEXT
+            : "scanned_pdf_text";
+        const scannedPdfExplainer = feature === scannedPdfFeature
+            ? `
+    <article class="premium-paywall-explainer premium-paywall-explainer-scanned">
+        <span class="premium-panel-kicker">Conversao premium de PDF</span>
+        <strong>Isto nao e erro no sistema.</strong>
+        <p>Seu arquivo parece imagem ou PDF escaneado. No gratis, o editor abre quando o documento ja vem com texto legivel. Para este caso, o premium usa IA para converter o arquivo em texto editavel.</p>
+        <ul>
+            <li>Se a leitura gratis nao encontrou texto suficiente, o comportamento esperado e abrir esta oferta.</li>
+            <li>Depois da assinatura, o sistema tenta gerar o texto integral e atualizar Aprender, Praticar e Prova.</li>
+        </ul>
+    </article>`
+            : "";
         const benefitGroups = [
             {
                 tone: "continuity",
@@ -958,6 +973,7 @@ ${renderSessionNote(state, "pdf-workbench")}`;
         <span class="premium-panel-kicker">${UI().escapeHtml(offer.eyebrow || "Premium")}</span>
         <h2>${UI().escapeHtml(offer.title || "Seu historico, seus materiais e seus treinos em um so lugar.")}</h2>
         <p>${UI().escapeHtml(offer.lead || "Continue qualquer estudo, libere extras por assunto e acompanhe sua evolucao sem perder o fio da trilha.")}</p>
+        ${scannedPdfExplainer}
         ${primaryBenefits.length ? `
         <article class="premium-paywall-benefit-card premium-paywall-benefit-card-continuity">
             <span class="premium-paywall-benefit-label">Foco desta oferta</span>
