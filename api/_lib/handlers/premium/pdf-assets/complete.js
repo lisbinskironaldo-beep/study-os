@@ -1,7 +1,7 @@
-const { sendJson, readJsonBody } = require("../../../../json");
-const { readAppSession } = require("../../../../auth-session");
-const { supabaseRequest, isSupabaseConfigured } = require("../../../../supabase");
-const { PDF_BUCKET, buildAssetId, buildStoragePath, cleanText } = require("../../../../premium-pdf");
+const { sendJson, readJsonBody } = require("../../../json");
+const { readAppSession } = require("../../../auth-session");
+const { supabaseRequest, isSupabaseConfigured } = require("../../../supabase");
+const { PDF_BUCKET, buildAssetId, buildStoragePath, cleanText } = require("../../../premium-pdf");
 
 module.exports = async function handler(req, res) {
     if (req.method === "OPTIONS") {

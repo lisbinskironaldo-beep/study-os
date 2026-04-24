@@ -1,7 +1,7 @@
-const { sendJson, readJsonBody } = require("../../../../json");
-const { readAppSession } = require("../../../../auth-session");
-const { getSupabaseConfig, supabaseStorageRequest, isSupabaseConfigured } = require("../../../../supabase");
-const { PDF_BUCKET, buildAssetId, buildStoragePath, cleanText } = require("../../../../premium-pdf");
+const { sendJson, readJsonBody } = require("../../../json");
+const { readAppSession } = require("../../../auth-session");
+const { getSupabaseConfig, supabaseStorageRequest, isSupabaseConfigured } = require("../../../supabase");
+const { PDF_BUCKET, buildAssetId, buildStoragePath, cleanText } = require("../../../premium-pdf");
 
 const MAX_DIRECT_PDF_BYTES = 12 * 1024 * 1024;
 
