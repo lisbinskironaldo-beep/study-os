@@ -761,7 +761,7 @@ ${renderSessionNote(state, "premium-library")}`;
                     data-item-value="${UI().escapeHtml(color.value)}"
                     title="Marca-texto ${UI().escapeHtml(color.label)}"
                     aria-label="Marca-texto ${UI().escapeHtml(color.label)}"
-                    style="--pdf-marker-color:${UI().escapeHtml(color.value)}"
+                    style="background:${UI().escapeHtml(color.value)}; --pdf-marker-color:${UI().escapeHtml(color.value)}"
                 ></button>
             `).join("")}
             <button type="button" class="premium-pdf-tool-button premium-pdf-tool-button-clear" data-premium-action="clear-pdf-highlight" aria-label="Limpar marca-texto" title="Limpar marca-texto">
@@ -770,13 +770,13 @@ ${renderSessionNote(state, "premium-library")}`;
             </button>
         </div>
         <div class="premium-pdf-tool-cluster">
-            <button type="button" class="premium-pdf-tool-button premium-pdf-tool-button-ai" data-premium-action="pdf-ai-highlight-all" aria-label="Grifar tudo com IA" title="Grifar tudo com IA" ${editorText ? "" : "disabled"}>
+            <button type="button" class="premium-pdf-tool-button premium-pdf-tool-button-ai" data-premium-action="pdf-ai-highlight-all" aria-label="Destacar com IA o texto todo" title="Destacar com IA o texto todo" ${editorText ? "" : "disabled"}>
                 <span class="premium-pdf-tool-glyph">AI</span>
-                <span class="premium-pdf-tool-label">Tudo</span>
+                <span class="premium-pdf-tool-label">Destacar IA</span>
             </button>
-            <button type="button" class="premium-pdf-tool-button premium-pdf-tool-button-ai" data-premium-action="pdf-ai-highlight-block" aria-label="Grifar este bloco" title="Grifar este bloco" ${activeBlock ? "" : "disabled"}>
+            <button type="button" class="premium-pdf-tool-button premium-pdf-tool-button-ai" data-premium-action="pdf-ai-highlight-block" aria-label="Destacar com IA este bloco" title="Destacar com IA este bloco" ${activeBlock ? "" : "disabled"}>
                 <span class="premium-pdf-tool-glyph">AI</span>
-                <span class="premium-pdf-tool-label">Bloco</span>
+                <span class="premium-pdf-tool-label">No bloco</span>
             </button>
         </div>
         <div class="premium-pdf-tool-cluster">
@@ -802,6 +802,165 @@ ${renderSessionNote(state, "premium-library")}`;
                     <span>${charCount} caracteres</span>
                 </div>
             </header>
+            <div
+                id="premiumPdfWorkbenchEditor"
+                class="premium-pdf-textarea premium-pdf-rich-editor"
+                contenteditable="true"
+                spellcheck="false"
+                data-placeholder="O texto extraido do PDF aparece aqui para voce editar."
+            >${editorHtml}</div>
+            <div class="premium-pdf-support-grid">
+                <section class="premium-pdf-panel premium-pdf-panel-support">
+                    <div class="premium-pdf-meta">
+                        <span>${UI().escapeHtml(state.materialSizeLabel || "PDF")}</span>
+                        <span>${Number(state.materialPageCount || 0) > 0 ? `${Number(state.materialPageCount)} pagina(s)` : "Paginas em leitura"}</span>
+                        <span>${lineCount} linha(s)</span>
+                        <span>${charCount} caracteres</span>
+                    </div>
+                    <p class="premium-pdf-footnote">${UI().escapeHtml(state.pdfSyncStatus === "synced"
+            ? "PDF e anotacoes sincronizados."
+            : state.pdfSyncStatus === "syncing"
+                ? "Sincronizando workspace."
+                : state.accountAuthenticated
+                    ? "Pronto para sincronizar."
+                    : "Sem login, o workspace fica salvo neste navegador.")}</p>
+                </section>
+                <section class="premium-pdf-panel premium-pdf-panel-context">
+                    ${selectedHighlight ? `
+                        <strong>${UI().escapeHtml(selectedHighlight.contextLabel || "Trecho importante")}</strong>
+                        <p>${UI().escapeHtml(selectedHighlight.reason || "A IA marcou este trecho por relevancia para sua prova.")}</p>
+                        <div class="premium-pdf-context-meta">
+                            <span>Importancia: ${UI().escapeHtml(selectedHighlight.importance || "alta")}</span>
+                            <span>${selectedHighlight.source === "user" ? "Marcacao manual" : "Marcacao da IA"}</span>
+                        </div>
+                        <blockquote>${UI().escapeHtml(selectedHighlight.quote || selectedHighlight.anchor || "")}</blockquote>
+                        <div class="premium-inline-actions premium-inline-actions-contextual">
+                            <button type="button" class="premium-action premium-action-secondary" data-premium-action="jump-to-pdf-ai-highlight">Ir ao trecho</button>
+                            <button type="button" class="premium-action premium-action-secondary" data-premium-action="promote-pdf-ai-highlight">Manual</button>
+                            <button type="button" class="premium-action premium-action-ghost" data-premium-action="dismiss-pdf-ai-highlight">Remover</button>
+                        </div>
+                    ` : `
+                        <p class="premium-pdf-footnote">Acione a IA para localizar os trechos mais importantes do material.</p>
+                    `}
+                </section>
+            </div>
+            <div class="premium-pdf-highlight-list premium-pdf-highlight-list-inline">
+                ${aiHighlights.length > 0 ? aiHighlights.map((item) => `
+                    <button type="button" class="premium-pdf-highlight-card ${selectedHighlight && selectedHighlight.id === item.id ? "is-active" : ""}" data-premium-action="select-pdf-ai-highlight" data-item-value="${UI().escapeHtml(item.id)}">
+                        <span>${UI().escapeHtml(item.contextLabel || "Trecho importante")}</span>
+                        <strong>${UI().escapeHtml(item.quote || item.anchor || "Trecho identificado")}</strong>
+                        <small>${UI().escapeHtml(item.reason || "A IA trouxe este trecho como ponto importante para o estudo.")}</small>
+                    </button>
+                `).join("") : `
+                    <article class="premium-empty-library premium-empty-library-locked premium-pdf-empty-state">
+                        <strong>Nenhum grifo gerado ainda.</strong>
+                        <p>Acione a IA para localizar as passagens mais importantes com contexto.</p>
+                    </article>
+                `}
+            </div>
+        </div>
+    </div>
+</section>
+${renderSessionNote(state, "pdf-workbench")}`;
+    }
+
+    function pdfWorkbench(state) {
+        const aiHighlightFeature = Access()
+            ? Access().FEATURES.AI_TEXT_HIGHLIGHT
+            : "ai_text_highlight";
+        const aiHighlightEnabled = canAccess(aiHighlightFeature, state);
+        const viewerState = state.pdfWorkbenchState || {};
+        const editorText = state.pdfWorkbenchText || state.materialExtractedText || "";
+        const editorHtml = state.pdfWorkbenchHtml || UI().escapeHtml(editorText).replace(/\r?\n/g, "<br>");
+        const aiHighlights = Array.isArray(state.aiHighlights)
+            ? state.aiHighlights.filter((item) => !item.dismissed)
+            : [];
+        const selectedHighlight = aiHighlights.find((item) => item.id === viewerState.selectedAiHighlightId)
+            || aiHighlights[0]
+            || null;
+        const lineCount = editorText ? editorText.split(/\r?\n/).length : 0;
+        const charCount = editorText.length;
+        const markerColors = [
+            { value: "rgba(255, 203, 109, 0.48)", label: "Amarelo" },
+            { value: "rgba(88, 227, 183, 0.38)", label: "Verde" },
+            { value: "rgba(121, 213, 255, 0.38)", label: "Azul" },
+            { value: "rgba(255, 151, 188, 0.38)", label: "Rosa" }
+        ];
+
+        return `
+<section class="premium-pdf-shell ${viewerState.fullScreen ? "is-fullscreen" : ""}">
+    <aside class="premium-pdf-sidebar premium-pdf-sidebar-tools">
+        <label class="premium-pdf-field premium-pdf-field-compact" for="premiumPdfSearchInput">
+            <input id="premiumPdfSearchInput" type="text" value="${UI().escapeHtml(viewerState.searchQuery || "")}" placeholder="Buscar no texto" />
+        </label>
+        <div class="premium-pdf-tool-cluster">
+            <button type="button" class="premium-pdf-tool-button" data-premium-action="pdf-search" aria-label="Buscar" title="Buscar">
+                <span class="premium-pdf-tool-glyph">Q</span>
+                <span class="premium-pdf-tool-label">Buscar</span>
+            </button>
+            <button type="button" class="premium-pdf-tool-button" data-premium-action="pdf-clear-search" aria-label="Limpar busca" title="Limpar busca">
+                <span class="premium-pdf-tool-glyph">X</span>
+                <span class="premium-pdf-tool-label">Limpar</span>
+            </button>
+        </div>
+        <div class="premium-pdf-tool-cluster">
+            <button type="button" class="premium-pdf-tool-button" data-premium-action="save-pdf-workbench" aria-label="Salvar texto" title="Salvar texto">
+                <span class="premium-pdf-tool-glyph">S</span>
+                <span class="premium-pdf-tool-label">Salvar</span>
+            </button>
+            <button type="button" class="premium-pdf-tool-button" data-premium-action="copy-pdf-workbench-text" aria-label="Copiar tudo" title="Copiar tudo">
+                <span class="premium-pdf-tool-glyph">C</span>
+                <span class="premium-pdf-tool-label">Copiar</span>
+            </button>
+            <button type="button" class="premium-pdf-tool-button" data-premium-action="restore-pdf-workbench-text" aria-label="Voltar ao extraido" title="Voltar ao extraido">
+                <span class="premium-pdf-tool-glyph">R</span>
+                <span class="premium-pdf-tool-label">Original</span>
+            </button>
+        </div>
+        <div class="premium-pdf-tool-cluster premium-pdf-tool-cluster-colors">
+            ${markerColors.map((color) => `
+                <button
+                    type="button"
+                    class="premium-pdf-color-button"
+                    data-premium-action="set-pdf-highlight-color"
+                    data-item-value="${UI().escapeHtml(color.value)}"
+                    title="Marca-texto ${UI().escapeHtml(color.label)}"
+                    aria-label="Marca-texto ${UI().escapeHtml(color.label)}"
+                    style="background:${UI().escapeHtml(color.value)}; --pdf-marker-color:${UI().escapeHtml(color.value)}"
+                ></button>
+            `).join("")}
+            <button type="button" class="premium-pdf-tool-button premium-pdf-tool-button-clear" data-premium-action="clear-pdf-highlight" aria-label="Limpar marca-texto" title="Limpar marca-texto">
+                <span class="premium-pdf-tool-glyph">-</span>
+                <span class="premium-pdf-tool-label">Limpar cor</span>
+            </button>
+        </div>
+        <div class="premium-pdf-tool-cluster">
+            <button
+                type="button"
+                class="premium-pdf-tool-button premium-pdf-tool-button-ai ${aiHighlightEnabled ? "" : "is-locked"}"
+                data-premium-action="pdf-ai-highlight-all"
+                aria-label="${aiHighlightEnabled ? "Destacar com IA o texto todo" : "Destacar com IA (premium)"}"
+                title="${aiHighlightEnabled ? "Destacar com IA o texto todo" : "Destacar com IA (premium)"}"
+                ${editorText ? "" : "disabled"}
+            >
+                <span class="premium-pdf-tool-glyph">AI</span>
+                <span class="premium-pdf-tool-label">AI destacar</span>
+            </button>
+        </div>
+    </aside>
+    <div class="premium-pdf-reader">
+        <div class="premium-pdf-reader-shell premium-pdf-editor-shell">
+            <header class="premium-pdf-reader-head">
+                <div>
+                    <span class="premium-panel-kicker">Editor do material</span>
+                    <strong>${UI().escapeHtml(state.studyTitle || state.materialName || "Texto extraido")}</strong>
+                </div>
+                <div class="premium-pdf-reader-meta">
+                    <span>${lineCount} linha(s)</span>
+                    <span>${charCount} caracteres</span>
+                </div>
+            </header>
+            ${viewerState.transientMessage ? `<div class="premium-pdf-inline-toast">${UI().escapeHtml(viewerState.transientMessage)}</div>` : ""}
             <div
                 id="premiumPdfWorkbenchEditor"
                 class="premium-pdf-textarea premium-pdf-rich-editor"

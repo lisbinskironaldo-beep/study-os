@@ -1,4 +1,4 @@
-(function () {
+﻿(function () {
     if (window.PremiumStudyApp) {
         return;
     }
@@ -392,8 +392,8 @@
                 },
                 failure: {
                     tone: "premium",
-                    title: "Pagamento não concluído",
-                    message: "O pagamento não foi aprovado ou foi cancelado. Você pode tentar novamente quando quiser."
+                    title: "Pagamento nÃ£o concluÃ­do",
+                    message: "O pagamento nÃ£o foi aprovado ou foi cancelado. VocÃª pode tentar novamente quando quiser."
                 }
             };
             const note = messages[paymentReturn.status] || messages.pending;
@@ -403,7 +403,7 @@
                 eyebrow: "RotaNota Premium",
                 title: paymentReturn.status === "success"
                     ? "Pagamento recebido. Falta a confirmacao segura."
-                    : "Finalize seu acesso premium com segurança.",
+                    : "Finalize seu acesso premium com seguranÃ§a.",
                 lead: "O checkout ja esta conectado ao Mercado Pago. A liberacao definitiva depende do webhook e da fonte de verdade do servidor.",
                 benefits: [
                     "Checkout seguro funcionando",
@@ -1348,6 +1348,8 @@
             const editor = this.getPdfWorkbenchEditor();
             return editor
                 ? String(editor.innerHTML || "")
+                    .replace(/<mark\b[^>]*data-pdf-search-hit="true"[^>]*>/gi, "")
+                    .replace(/<\/mark>/gi, "")
                 : "";
         },
 
@@ -1415,7 +1417,13 @@ mark { padding: 0 2px; border-radius: 4px; }
             const editor = this.getPdfWorkbenchEditor();
             const search = String(query || "").trim();
 
-            if (!editor || !search) {
+            if (!editor) {
+                return false;
+            }
+
+            this.clearPdfSearchHighlights();
+
+            if (!search) {
                 return false;
             }
 
@@ -1473,12 +1481,19 @@ mark { padding: 0 2px; border-radius: 4px; }
             const range = document.createRange();
             range.setStart(startEntry.node, matchIndex - startEntry.start);
             range.setEnd(endEntry.node, matchEnd - endEntry.start);
+            const highlight = document.createElement("mark");
+            highlight.className = "premium-pdf-search-hit";
+            highlight.setAttribute("data-pdf-search-hit", "true");
+            highlight.appendChild(range.extractContents());
+            range.insertNode(highlight);
 
             const applySelection = () => {
+                const nextRange = document.createRange();
                 selection.removeAllRanges();
-                selection.addRange(range);
+                nextRange.selectNodeContents(highlight);
+                selection.addRange(nextRange);
                 editor.focus();
-                const top = range.getBoundingClientRect().top;
+                const top = highlight.getBoundingClientRect().top;
                 const hostTop = editor.getBoundingClientRect().top;
                 editor.scrollTop += top - hostTop - (editor.clientHeight / 3);
             };
@@ -1496,6 +1511,53 @@ mark { padding: 0 2px; border-radius: 4px; }
             }
 
             return true;
+        },
+
+        clearPdfSearchHighlights() {
+            const editor = this.getPdfWorkbenchEditor();
+
+            if (!editor) {
+                return;
+            }
+
+            editor.querySelectorAll("mark[data-pdf-search-hit=\"true\"]").forEach((mark) => {
+                const parent = mark.parentNode;
+                if (!parent) {
+                    return;
+                }
+
+                while (mark.firstChild) {
+                    parent.insertBefore(mark.firstChild, mark);
+                }
+
+                parent.removeChild(mark);
+                parent.normalize();
+            });
+        },
+
+        showPdfWorkbenchToast(message = "") {
+            const store = window.PremiumStudyStore;
+
+            if (this.pdfWorkbenchToastTimer) {
+                window.clearTimeout(this.pdfWorkbenchToastTimer);
+            }
+
+            store.patchPdfWorkbenchState({
+                transientMessage: String(message || "")
+            });
+            this.render();
+
+            if (!message) {
+                return;
+            }
+
+            this.pdfWorkbenchToastTimer = window.setTimeout(() => {
+                this.pdfWorkbenchToastTimer = null;
+                store.patchPdfWorkbenchState({
+                    transientMessage: ""
+                });
+                this.render();
+            }, 2200);
         },
 
         applyPdfHighlight(colorValue) {
@@ -1933,7 +1995,7 @@ mark { padding: 0 2px; border-radius: 4px; }
                     store.setSessionNote({
                         step: "premium-checkout",
                         tone: "premium",
-                        title: "PDF acima do limite grátis",
+                        title: "PDF acima do limite grÃ¡tis",
                         message: validation.message
                     });
                 } else {
@@ -2220,7 +2282,7 @@ ${sections}`
                         const finishId = window.setTimeout(() => {
                             window.PremiumStudyRouter.goTo("mode-select");
                             window.PremiumStudyStore.patch({
-                                progressLabel: "Sua trilha inicial está pronta para você escolher como quer entrar no conteúdo."
+                                progressLabel: "Sua trilha inicial estÃ¡ pronta para vocÃª escolher como quer entrar no conteÃºdo."
                             });
                             this.render();
                             this.schedulePersist(120);
@@ -3248,8 +3310,10 @@ ${sections}`
                 }
                 break;
             case "pdf-clear-search":
+                this.clearPdfSearchHighlights();
                 store.patchPdfWorkbenchState({
-                    searchQuery: ""
+                    searchQuery: "",
+                    transientMessage: ""
                 });
                 shouldPersist = true;
                 this.render();
@@ -3270,12 +3334,7 @@ ${sections}`
                 if (text && navigator.clipboard && typeof navigator.clipboard.writeText === "function") {
                     try {
                         await navigator.clipboard.writeText(text);
-                        store.setSessionNote({
-                            step: "pdf-workbench",
-                            tone: "info",
-                            title: "Texto copiado",
-                            message: "O texto extraido foi enviado para a area de transferencia."
-                        });
+                        this.showPdfWorkbenchToast("Texto copiado para a area de transferencia.");
                     } catch (_error) {
                         store.setSessionNote({
                             step: "pdf-workbench",
@@ -3304,6 +3363,17 @@ ${sections}`
                 shouldSyncNativeFullScreen = true;
                 break;
             case "save-pdf-workbench":
+                {
+                    const currentTitle = store.getState().studyTitle || store.getState().materialName || "Documento";
+                    const nextTitle = window.prompt("Como voce quer salvar este arquivo?", currentTitle);
+                    if (nextTitle === null) {
+                        break;
+                    }
+                    if (String(nextTitle || "").trim()) {
+                        store.setStudyTitle(String(nextTitle || "").trim());
+                    }
+                }
+                this.clearPdfSearchHighlights();
                 store.setPdfWorkbenchText(this.getPdfWorkbenchEditorText(), {
                     preserveOriginal: true,
                     html: this.getPdfWorkbenchEditorHtml()
@@ -3353,6 +3423,7 @@ ${sections}`
                 }
                 break;
             case "download-original-pdf": {
+                this.clearPdfSearchHighlights();
                 if (this.downloadPdfWorkbenchEditedVersion()) {
                     store.setSessionNote({
                         step: "pdf-workbench",
@@ -3375,6 +3446,11 @@ ${sections}`
             }
             case "pdf-ai-highlight-all":
             case "pdf-ai-highlight-block": {
+                if (!canUseFeature("AI_TEXT_HIGHLIGHT")) {
+                    openPremiumOffer("AI_TEXT_HIGHLIGHT");
+                    shouldPersist = true;
+                    break;
+                }
                 const state = store.getState();
                 const dailyMinutes = (Number(state.studyHours) || 0) * 60
                     + (Number(state.studyMinutes) || 0);
@@ -3982,7 +4058,7 @@ ${sections}`
                 break;
             case "rename-study": {
                 const currentTitle = store.getState().studyTitle || store.getState().materialName || "Estudo personalizado";
-                const nextTitle = window.prompt("Como você quer chamar este estudo?", currentTitle);
+                const nextTitle = window.prompt("Como vocÃª quer chamar este estudo?", currentTitle);
                 if (nextTitle && nextTitle.trim()) {
                     store.setStudyTitle(nextTitle);
                     shouldPersist = true;
@@ -4067,6 +4143,16 @@ ${sections}`
             if (!keepNativeFullScreen) {
                 this.exitNativeFullScreen();
             }
+
+            if (step === "pdf-workbench") {
+                const searchQuery = state.pdfWorkbenchState && state.pdfWorkbenchState.searchQuery
+                    ? state.pdfWorkbenchState.searchQuery
+                    : "";
+
+                if (searchQuery) {
+                    this.focusPdfWorkbenchText(searchQuery);
+                }
+            }
         },
 
         render() {
@@ -4086,7 +4172,7 @@ ${sections}`
                     {
                         action: "download-original-pdf",
                         label: "Baixar versao editada",
-                        icon: "↓"
+                        icon: "\u21E9"
                     },
                     {
                         action: state.pdfWorkbenchState && state.pdfWorkbenchState.fullScreen
@@ -4095,10 +4181,17 @@ ${sections}`
                         label: state.pdfWorkbenchState && state.pdfWorkbenchState.fullScreen
                             ? "Sair da tela cheia"
                             : "Abrir em tela cheia",
-                        icon: "⛶"
+                        icon: "\u26F6"
                     }
                 ]
                 : [];
+
+            if (step === "pdf-workbench" && headerActions.length >= 2) {
+                headerActions[0].icon = "\u21E9";
+                headerActions[1].icon = state.pdfWorkbenchState && state.pdfWorkbenchState.fullScreen
+                    ? "\u21F2"
+                    : "\u26F6";
+            }
 
             if (step === "highlight-preview" && state.highlightEditorOpen) {
                 meta.hideHeading = true;
@@ -4127,3 +4220,4 @@ ${sections}`
         }
     };
 })();
+

@@ -2383,7 +2383,8 @@
             searchQuery: String(input.searchQuery || ""),
             selectedAiHighlightId: String(input.selectedAiHighlightId || ""),
             fullScreen: Boolean(input.fullScreen),
-            lastSyncedAt: String(input.lastSyncedAt || "")
+            lastSyncedAt: String(input.lastSyncedAt || ""),
+            transientMessage: String(input.transientMessage || "")
         };
     }
 

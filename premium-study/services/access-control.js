@@ -22,6 +22,7 @@
         PRACTICE_EXTRA_SERIES: "practice_extra_series",
         MINI_EXAM_EXTRA: "mini_exam_extra",
         LEVEL_EXAM: "level_exam",
+        AI_TEXT_HIGHLIGHT: "ai_text_highlight",
         HIGHLIGHT_EXPORT: "highlight_export",
         STATS: "stats",
         CLOUD_SYNC: "cloud_sync"
@@ -77,6 +78,19 @@
             title: "Prova de nivel premium",
             message: "A mini prova do bloco fica gratis. A prova de nivel com seletor de quantidade entra no premium."
         },
+        [FEATURES.AI_TEXT_HIGHLIGHT]: {
+            title: "Destaque com IA no premium",
+            message: "O marca-texto manual continua livre. Para a IA localizar e destacar os trechos mais importantes do texto, use o premium."
+        },
+        [FEATURES.AI_TEXT_HIGHLIGHT]: {
+            eyebrow: "IA no texto",
+            title: "Deixe a IA destacar os trechos principais.",
+            lead: "O editor segue livre para uso manual. No premium, a IA encontra e marca os pontos mais importantes com contexto.",
+            benefits: [
+                "Destaques automÃ¡ticos com contexto"
+            ],
+            cta: "Liberar destaque com IA"
+        },
         [FEATURES.HIGHLIGHT_EXPORT]: {
             title: "Exportação premium",
             message: "O marcador pode ser visualizado. Baixar PDF com destaques fica no premium."
@@ -94,6 +108,11 @@
     LOCK_MESSAGES[FEATURES.SCANNED_PDF_TEXT] = {
         title: "PDF escaneado vira texto no premium",
         message: "No gratis, PDFs textuais abrem no editor quando a leitura local funciona. Para converter PDF escaneado ou imagem em texto editavel com IA, use o premium."
+    };
+
+    LOCK_MESSAGES[FEATURES.AI_TEXT_HIGHLIGHT] = {
+        title: "Destaque com IA no premium",
+        message: "O marca-texto manual continua livre. Para a IA localizar e destacar os trechos mais importantes do texto, use o premium."
     };
 
     const PREMIUM_BENEFITS = [
@@ -184,6 +203,16 @@
         }
     };
 
+    OFFER_COPY[FEATURES.AI_TEXT_HIGHLIGHT] = {
+        eyebrow: "IA no texto",
+        title: "Deixe a IA destacar os trechos principais.",
+        lead: "O editor segue livre para uso manual. No premium, a IA encontra e marca os pontos mais importantes com contexto.",
+        benefits: [
+            "Destaques automaticos com contexto"
+        ],
+        cta: "Liberar destaque com IA"
+    };
+
     function normalizeAccessState(state = {}) {
         const raw = state.accessTier || state.subscriptionStatus || ACCESS_STATES.REGISTERED_FREE;
 
@@ -229,6 +258,7 @@
         case FEATURES.PRACTICE_EXTRA_SERIES:
         case FEATURES.MINI_EXAM_EXTRA:
         case FEATURES.LEVEL_EXAM:
+        case FEATURES.AI_TEXT_HIGHLIGHT:
         case FEATURES.HIGHLIGHT_EXPORT:
         case FEATURES.STATS:
         case FEATURES.CLOUD_SYNC:
