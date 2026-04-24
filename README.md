@@ -56,6 +56,7 @@ Abrir:
 Guia operacional principal:
 
 - `docs/premium_documentos_sync.md`
+- `docs/premium_study_mode_contract.md`
 
 Regras atuais do fluxo:
 
@@ -64,6 +65,7 @@ Regras atuais do fluxo:
 - o PDF original continua separado quando houver asset salvo
 - a Biblioteca premium sincroniza o snapshot do estudo por conta, incluindo o texto extraido salvo
 - o navegador tambem mantem cache local para continuar funcionando mesmo sem sync
+- quando `Aprender`, `Praticar` ou `Prova` ainda dependem dessa base, o sistema trava a navegacao e mostra uma mensagem de preparacao antes de abrir a aba
 
 Para conseguir abrir o mesmo documento em outro PC exatamente do mesmo jeito:
 

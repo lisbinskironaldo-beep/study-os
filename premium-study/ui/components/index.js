@@ -109,13 +109,29 @@
 </div>`;
     }
 
+    function processingOverlay(processing) {
+        if (!processing || !processing.active) {
+            return "";
+        }
+
+        return `
+<div class="premium-shell-processing" aria-live="polite" aria-busy="true">
+    <article class="premium-shell-processing-card">
+        <span class="premium-panel-kicker">Preparando os modos</span>
+        <strong>${escapeHtml(processing.title || "Estamos organizando Aprender, Praticar e Prova")}</strong>
+        <p>${escapeHtml(processing.message || "Aguarde um instante enquanto o sistema prepara a base antes de abrir a proxima tela.")}</p>
+    </article>
+</div>`;
+    }
+
     function shell({
         step,
         meta,
         content,
         summary,
         showBack,
-        headerActions = []
+        headerActions = [],
+        processing = null
     }) {
         const showProgress = meta.progressVisible !== false;
         const showHeading = meta.hideHeading !== true;
@@ -123,9 +139,12 @@
         const inlineSummary = step === "mode-select" && summary;
         const asideSummary = summary && !inlineSummary;
         const scrollableClass = meta.scrollable ? "premium-shell-scrollable" : "";
+        const processingClass = processing && processing.active
+            ? "premium-shell-is-processing"
+            : "";
 
         return `
-<div class="premium-study-shell ${asideSummary ? "" : "premium-shell-no-summary"} ${scrollableClass}" data-premium-step="${escapeHtml(step)}">
+<div class="premium-study-shell ${asideSummary ? "" : "premium-shell-no-summary"} ${scrollableClass} ${processingClass}" data-premium-step="${escapeHtml(step)}">
     <header class="premium-study-shell-header">
         <div class="premium-shell-nav ${showProgress ? "" : "premium-shell-nav-compact"}">
             ${showBack ? `
@@ -168,6 +187,7 @@
             ${summary}
         </aside>` : ""}
     </div>
+    ${processingOverlay(processing)}
 </div>`;
     }
 

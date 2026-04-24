@@ -44,6 +44,18 @@
         };
     }
 
+    function createModePreparationState(overrides = {}) {
+        return {
+            active: false,
+            targetStep: "mode-select",
+            source: "",
+            title: "",
+            message: "",
+            startedAt: "",
+            ...overrides
+        };
+    }
+
     function buildExamPack(material, descriptors) {
         const [first, second, third, fourth] = descriptors;
 
@@ -2448,6 +2460,7 @@
             latestLocalStudy: null,
             savedDraftId: "",
             savedAt: "",
+            modePreparation: createModePreparationState(),
             sessionNote: null,
             premiumOffer: null,
             progressLabel: "Seu plano comeca quando o PDF entra."
@@ -2484,6 +2497,27 @@
             this.state = {
                 ...this.state,
                 returnStep: step
+            };
+
+            return this.state;
+        },
+
+        setModePreparation(patch = {}) {
+            this.state = {
+                ...this.state,
+                modePreparation: createModePreparationState({
+                    ...this.state.modePreparation,
+                    ...patch
+                })
+            };
+
+            return this.state;
+        },
+
+        clearModePreparation() {
+            this.state = {
+                ...this.state,
+                modePreparation: createModePreparationState()
             };
 
             return this.state;
@@ -3923,6 +3957,7 @@
                 blockAssistMode: snapshot.blockAssistMode || defaults.blockAssistMode,
                 aiGeneration: snapshot.aiGeneration || defaults.aiGeneration,
                 levelExam: createLevelExamState(snapshot.levelExam || {}),
+                modePreparation: defaults.modePreparation,
                 materialExtractionStatus: snapshot.materialExtractionStatus || defaults.materialExtractionStatus,
                 materialExtractedText: snapshot.materialExtractedText || "",
                 pdfAssetId: snapshot.pdfAssetId || defaults.pdfAssetId,

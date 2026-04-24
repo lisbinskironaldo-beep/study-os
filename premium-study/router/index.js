@@ -90,9 +90,9 @@
             scrollable: true
         },
         "pdf-workbench": {
-            title: "PDF integral editavel",
-            subtitle: "Abra o arquivo original com leitura concentrada, ferramentas de anotacao e grifos contextualizados por IA.",
-            label: "PDF integral",
+            title: "PDF em Texto",
+            subtitle: "Abra a base textual extraida do material para revisar, editar, grifar e reaproveitar nos outros modos.",
+            label: "PDF em Texto",
             backVisible: true,
             progressVisible: false,
             showSummary: false,
@@ -192,7 +192,7 @@
             label: "Prova premium",
             backVisible: true,
             progressVisible: false,
-            showSummary: true,
+            showSummary: false,
             scrollable: true,
             hideHeading: true
         },

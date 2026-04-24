@@ -11,6 +11,7 @@ Este guia explica o que precisa estar pronto para abrir documentos no `premium s
 - fallback de extracao por IA para PDFs pequenos quando a camada local vier fraca
 - abertura do modo `PDF em Texto` para editar uma copia textual estavel
 - sync de biblioteca por conta quando houver login e banco configurado
+- preparacao bloqueada de `Aprender`, `Praticar` e `Prova` antes de abrir a aba
 
 ## O que precisa para abrir documentos corretamente
 
@@ -105,6 +106,22 @@ Regra de produto atual:
 - `Aprender` continua priorizando o fluxo gratis com texto local
 - `PDF em Texto` abre gratis quando o PDF ja vier textual
 - quando o arquivo parecer escaneado ou imagem, a conversao robusta para texto editavel fica no premium
+- quando o premium conseguir converter esse texto, os modos `Aprender`, `Praticar` e `Prova` passam a usar essa base
+
+## Regra de preparacao dos modos
+
+Se `Aprender`, `Praticar` ou `Prova` ainda nao estiverem prontos:
+
+- a interface nao abre a tela de destino antes da hora
+- o usuario continua na tela atual
+- aparece uma mensagem objetiva de que o sistema esta preparando os modos
+- a navegacao volta a ficar livre apenas quando a base terminar de ser montada
+
+Isso existe para evitar:
+
+- tela vazia
+- volta automatica
+- reabertura inesperada depois
 
 ## Como garantir que o outro PC abra igual
 
