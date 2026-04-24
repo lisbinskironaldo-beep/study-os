@@ -272,15 +272,10 @@ ${renderSessionNote(state, "entry")}`;
         <strong>Teste seu nivel agora</strong>
         <p>Prova premium com seletor de quantidade para medir prontidao geral.</p>
     </button>
-    <button type="button" class="premium-mode-card premium-mode-card-highlight" data-premium-action="choose-mode-highlight">
-        <span class="premium-mode-word">Marcar</span>
-        <strong>Resumir com marcador de texto</strong>
-        <p>Veja o documento inteiro com grifo nas partes mais importantes e exporte o resultado em PDF no final.</p>
-    </button>
     <button type="button" class="premium-mode-card premium-mode-card-pdf" data-premium-action="choose-mode-pdf-workbench">
         <span class="premium-mode-word">PDF em Texto</span>
         <strong>Extrair e abrir no editor</strong>
-        <p>Transforme o PDF em texto editavel, revise com estabilidade e use os grifos da IA como apoio.</p>
+        <p>PDF textual abre na hora. PDF escaneado ou imagem entra com conversao premium.</p>
     </button>
 </section>
 ${renderSessionNote(state, "mode-select")}`;
@@ -922,6 +917,7 @@ ${renderSessionNote(state, "pdf-workbench")}`;
             { label: "Ultimo estudo salvo", free: "Sim", premium: "Sim" },
             { label: "Outros estudos guardados", free: "Nao", premium: "Sim" },
             { label: "PDFs longos", free: "Ate 12 paginas", premium: "Ilimitado" },
+            { label: "PDF escaneado em texto", free: "Nao", premium: "Sim" },
             { label: "Questionarios, V/F e flashcards", free: "3 rodadas", premium: "Novas rodadas" },
             { label: "Mini prova do assunto", free: "Base", premium: "Extras" },
             { label: "Estatisticas e pontos fracos", free: "Nao", premium: "Sim" }

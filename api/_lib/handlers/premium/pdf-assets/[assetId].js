@@ -1,7 +1,7 @@
-const { sendJson } = require("../../_lib/json");
-const { readAppSession } = require("../../_lib/auth-session");
-const { supabaseRequest, supabaseStorageRequest, isSupabaseConfigured } = require("../../_lib/supabase");
-const { cleanText } = require("../../_lib/premium-pdf");
+const { sendJson } = require("../../../json");
+const { readAppSession } = require("../../../auth-session");
+const { supabaseRequest, supabaseStorageRequest, isSupabaseConfigured } = require("../../../supabase");
+const { cleanText } = require("../../../premium-pdf");
 
 function getAssetId(req) {
     if (req.query && req.query.assetId) {

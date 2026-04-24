@@ -1,8 +1,8 @@
-const { sendJson } = require("../_lib/json");
-const { readAppSession } = require("../_lib/auth-session");
-const { isGoogleAuthConfigured, getGoogleClientId } = require("../_lib/google-auth");
-const { findPrimaryCustomer } = require("../_lib/user-accounts");
-const { getPremiumStatus } = require("../_lib/premium-entitlements");
+const { sendJson } = require("../../json");
+const { readAppSession } = require("../../auth-session");
+const { isGoogleAuthConfigured, getGoogleClientId } = require("../../google-auth");
+const { findPrimaryCustomer } = require("../../user-accounts");
+const { getPremiumStatus } = require("../../premium-entitlements");
 
 module.exports = async function handler(req, res) {
     if (req.method === "OPTIONS") {
@@ -42,6 +42,7 @@ module.exports = async function handler(req, res) {
     );
     const premiumStatus = await getPremiumStatus({
         userId: session.payload.userId,
+        userEmail: session.payload.email,
         customerId: primaryCustomer && primaryCustomer.customer_id
             ? primaryCustomer.customer_id
             : ""

@@ -1,7 +1,7 @@
-const { sendJson, readJsonBody } = require("../_lib/json");
-const { callGeminiJson, isGeminiConfigured, isRetryableGeminiStatus } = require("../_lib/gemini");
-const { getPremiumStatus, sanitizeCustomerId } = require("../_lib/premium-entitlements");
-const { readAppSession } = require("../_lib/auth-session");
+const { sendJson, readJsonBody } = require("../../json");
+const { callGeminiJson, isGeminiConfigured, isRetryableGeminiStatus } = require("../../gemini");
+const { getPremiumStatus, sanitizeCustomerId } = require("../../premium-entitlements");
+const { readAppSession } = require("../../auth-session");
 
 const TASKS = {
     FREE_BUNDLE: "free_bundle_from_material",

@@ -246,24 +246,90 @@
         pageCount,
         customerId
     }, file) {
-        const response = await fetch("/api/premium/pdf-assets", {
+        const normalizedFileName = fileName || file.name || "material.pdf";
+        const normalizedMimeType = mimeType || file.type || "application/pdf";
+        const initResponse = await fetch("/api/premium/pdf-assets/upload-url", {
             method: "POST",
             headers: {
-                "Content-Type": mimeType || file.type || "application/pdf",
-                "x-rotanota-asset-id": assetId || "",
-                "x-rotanota-asset-hash": assetHash || "",
-                "x-rotanota-file-name": encodeURIComponent(fileName || file.name || "material.pdf"),
-                "x-rotanota-page-count": String(pageCount || 0),
-                "x-rotanota-customer-id": customerId || ""
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                assetId: assetId || "",
+                assetHash: assetHash || "",
+                fileName: normalizedFileName,
+                mimeType: normalizedMimeType,
+                byteSize: Number(file && file.size ? file.size : 0) || 0,
+                pageCount: Number(pageCount || 0) || 0,
+                customerId: customerId || ""
+            })
+        });
+        const initData = await initResponse.json().catch(() => null);
+
+        if (!initResponse.ok || !initData || !initData.ok || !initData.signedUrl) {
+            return {
+                ok: false,
+                status: initData && initData.status ? initData.status : "signed_upload_init_failed",
+                message: initData && initData.message
+                    ? initData.message
+                    : "Nao consegui preparar o upload direto do PDF premium."
+            };
+        }
+
+        let uploadMessage = "";
+        const uploadResponse = await fetch(initData.signedUrl, {
+            method: "PUT",
+            headers: {
+                "Content-Type": normalizedMimeType,
+                "cache-control": "3600",
+                "x-upsert": "true"
             },
             body: file
         });
-        const data = await response.json().catch(() => null);
+        const uploadText = await uploadResponse.text().catch(() => "");
+
+        if (uploadText) {
+            try {
+                const parsed = JSON.parse(uploadText);
+                uploadMessage = parsed && parsed.message
+                    ? String(parsed.message)
+                    : "";
+            } catch (_error) {
+                uploadMessage = String(uploadText || "").trim();
+            }
+        }
+
+        if (!uploadResponse.ok) {
+            return {
+                ok: false,
+                status: "signed_upload_failed",
+                message: uploadMessage || "Nao foi possivel enviar o PDF premium para o armazenamento."
+            };
+        }
+
+        const completeResponse = await fetch("/api/premium/pdf-assets/complete", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                assetId: initData.assetId || assetId || "",
+                assetHash: initData.assetHash || assetHash || "",
+                storagePath: initData.storagePath || "",
+                fileName: normalizedFileName,
+                mimeType: normalizedMimeType,
+                byteSize: Number(file && file.size ? file.size : 0) || 0,
+                pageCount: Number(pageCount || 0) || 0,
+                customerId: customerId || ""
+            })
+        });
+        const completeData = await completeResponse.json().catch(() => null);
 
         return {
-            ok: Boolean(response.ok && data && data.ok),
-            status: data && data.status ? data.status : response.ok ? "ok" : "request_failed",
-            ...data
+            ok: Boolean(completeResponse.ok && completeData && completeData.ok),
+            status: completeData && completeData.status ? completeData.status : completeResponse.ok ? "ok" : "request_failed",
+            ...(completeData || {}),
+            assetId: completeData && completeData.assetId ? completeData.assetId : (initData.assetId || assetId || ""),
+            assetHash: completeData && completeData.assetHash ? completeData.assetHash : (initData.assetHash || assetHash || "")
         };
     }
 

@@ -1,4 +1,4 @@
-const { sendJson } = require("./_lib/json");
+const { sendJson } = require("../../json");
 
 module.exports = async function handler(req, res) {
     if (req.method !== "GET") {

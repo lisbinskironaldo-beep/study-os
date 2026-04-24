@@ -8,6 +8,7 @@ Este guia explica o que precisa estar pronto para abrir documentos no `premium s
 
 - upload em PDF (`.pdf` ou `application/pdf`)
 - validacao de PDF textual
+- fallback de extracao por IA para PDFs pequenos quando a camada local vier fraca
 - abertura do modo `PDF em Texto` para editar uma copia textual estavel
 - sync de biblioteca por conta quando houver login e banco configurado
 
@@ -92,6 +93,18 @@ Pode falhar ou extrair pouco com:
 - PDF escaneado
 - imagem dentro de PDF
 - arquivo corrompido
+
+Agora existe um fallback por IA para tentar recuperar texto quando a leitura local vier fraca, mas ele nao substitui todos os casos:
+
+- funciona melhor em PDFs pequenos
+- depende de Gemini configurado no ambiente
+- ainda pode falhar em documento muito pesado, corrompido ou visualmente ruim
+
+Regra de produto atual:
+
+- `Aprender` continua priorizando o fluxo gratis com texto local
+- `PDF em Texto` abre gratis quando o PDF ja vier textual
+- quando o arquivo parecer escaneado ou imagem, a conversao robusta para texto editavel fica no premium
 
 ## Como garantir que o outro PC abra igual
 

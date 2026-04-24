@@ -1,5 +1,5 @@
-const { sendJson } = require("../_lib/json");
-const { getActivePromotion } = require("../_lib/ops-service");
+const { sendJson } = require("../../json");
+const { getActivePromotion } = require("../../ops-service");
 
 module.exports = async function handler(req, res) {
     if (req.method === "OPTIONS") {

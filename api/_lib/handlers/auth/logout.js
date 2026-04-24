@@ -1,5 +1,5 @@
-const { sendJson } = require("../_lib/json");
-const { clearAppSession } = require("../_lib/auth-session");
+const { sendJson } = require("../../json");
+const { clearAppSession } = require("../../auth-session");
 
 module.exports = async function handler(req, res) {
     if (req.method === "OPTIONS") {

@@ -4,10 +4,11 @@
     }
 
     const DB_NAME = "premiumStudyLocal";
-    const DB_VERSION = 2;
+    const DB_VERSION = 3;
     const DRAFTS_STORE = "drafts";
     const PDF_ASSETS_STORE = "pdfAssets";
     const PDF_ANNOTATIONS_STORE = "pdfAnnotations";
+    const TEXT_EXTRACTIONS_STORE = "materialTextExtractions";
     const LATEST_KEY = "latest";
     const SAVED_SUMMARIES_KEY = "saved-summaries";
     const STUDY_LIBRARY_KEY = "study-library";
@@ -41,6 +42,10 @@
 
                 if (!db.objectStoreNames.contains(PDF_ANNOTATIONS_STORE)) {
                     db.createObjectStore(PDF_ANNOTATIONS_STORE, { keyPath: "assetId" });
+                }
+
+                if (!db.objectStoreNames.contains(TEXT_EXTRACTIONS_STORE)) {
+                    db.createObjectStore(TEXT_EXTRACTIONS_STORE, { keyPath: "materialHash" });
                 }
             });
 
@@ -285,6 +290,26 @@
         };
     }
 
+    function sanitizeMaterialTextExtractionRecord(record) {
+        if (!record || typeof record !== "object") {
+            return null;
+        }
+
+        return {
+            materialHash: String(record.materialHash || ""),
+            materialName: String(record.materialName || ""),
+            pageCount: Number(record.pageCount || 0) || 0,
+            text: String(record.text || ""),
+            status: String(record.status || "pending"),
+            source: String(record.source || ""),
+            quality: String(record.quality || ""),
+            warnings: Array.isArray(record.warnings)
+                ? record.warnings.map((item) => String(item || "").trim()).filter(Boolean).slice(0, 8)
+                : [],
+            savedAt: String(record.savedAt || new Date().toISOString())
+        };
+    }
+
     window.PremiumStudyStorage = {
         buildDraftSummary,
 
@@ -488,10 +513,41 @@
             }
         },
 
+        async saveMaterialTextExtraction(record) {
+            const cleanRecord = sanitizeMaterialTextExtractionRecord(record);
+
+            if (!cleanRecord || !cleanRecord.materialHash || !cleanRecord.text) {
+                return null;
+            }
+
+            try {
+                await withStore(TEXT_EXTRACTIONS_STORE, "readwrite", (store) => requestToPromise(store.put(cleanRecord)));
+                return cleanRecord;
+            } catch (error) {
+                console.error(error);
+                return null;
+            }
+        },
+
+        async getMaterialTextExtraction(materialHash) {
+            if (!materialHash) {
+                return null;
+            }
+
+            try {
+                const record = await withStore(TEXT_EXTRACTIONS_STORE, "readonly", (store) => requestToPromise(store.get(materialHash)));
+                return sanitizeMaterialTextExtractionRecord(record);
+            } catch (error) {
+                console.error(error);
+                return null;
+            }
+        },
+
         buildDraftSummary,
         buildStudyLibraryRecord,
         sanitizeStudyLibraryItem,
         sanitizeSnapshot,
-        sanitizePdfAnnotationRecord
+        sanitizePdfAnnotationRecord,
+        sanitizeMaterialTextExtractionRecord
     };
 })();

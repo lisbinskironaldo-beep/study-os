@@ -1,5 +1,5 @@
-const { sendJson, readJsonBody } = require("../../../_lib/json");
-const { generatePdfHighlights, cleanText } = require("../../../_lib/premium-pdf");
+const { sendJson, readJsonBody } = require("../../../../json");
+const { generatePdfHighlights, cleanText } = require("../../../../premium-pdf");
 
 function getAssetId(req) {
     if (req.query && req.query.assetId) {

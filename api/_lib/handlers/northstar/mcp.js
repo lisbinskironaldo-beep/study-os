@@ -1,4 +1,4 @@
-const { sendJson, readJsonBody } = require("./_lib/json");
+const { sendJson, readJsonBody } = require("../../json");
 const {
     getOverview,
     getPaymentsStatus,
@@ -12,7 +12,7 @@ const {
     rejectChangeRequest,
     executeApprovedChangeRequest,
     insertAuditLog
-} = require("./_lib/ops-service");
+} = require("../../ops-service");
 
 const DEFAULT_PROTOCOL_VERSION = "2025-03-26";
 

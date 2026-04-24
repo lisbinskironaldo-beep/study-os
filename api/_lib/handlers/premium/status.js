@@ -1,14 +1,14 @@
-const { sendJson, readJsonBody } = require("../_lib/json");
+const { sendJson, readJsonBody } = require("../../json");
 const {
     getPremiumStatus,
     sanitizeCustomerId,
     sanitizePaymentId,
     reconcilePaymentById
-} = require("../_lib/premium-entitlements");
-const { readAppSession } = require("../_lib/auth-session");
-const { getPrimaryOpsState } = require("../_lib/ops-service");
-const { isGeminiConfigured } = require("../_lib/gemini");
-const { isSupabaseConfigured, supabaseRequest } = require("../_lib/supabase");
+} = require("../../premium-entitlements");
+const { readAppSession } = require("../../auth-session");
+const { getPrimaryOpsState } = require("../../ops-service");
+const { isGeminiConfigured } = require("../../gemini");
+const { isSupabaseConfigured, supabaseRequest } = require("../../supabase");
 
 const REQUIRED_SCHEMA_TABLES = [
     "premium_checkout_sessions",

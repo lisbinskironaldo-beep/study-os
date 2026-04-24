@@ -11,6 +11,7 @@
         "premium-study/services/identity.js",
         "premium-study/services/pdf-validator.js",
         "premium-study/services/pdf-text-extractor.js",
+        "premium-study/services/pdf-ai-text.js",
         "premium-study/services/promotions.js",
         "premium-study/services/growth.js",
         "premium-study/services/billing.js",

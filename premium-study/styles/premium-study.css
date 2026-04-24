@@ -1078,7 +1078,7 @@
 .premium-mode-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     align-items: stretch;
-    gap: 14px;
+    gap: 12px;
 }
 
 .premium-time-stage {
@@ -1143,20 +1143,20 @@
 
 .premium-mode-card {
     display: grid;
-    gap: 5px;
+    gap: 4px;
     align-content: center;
     justify-items: center;
-    min-height: 98px;
+    min-height: 88px;
     color: var(--premium-ink);
     text-align: center;
     cursor: pointer;
     transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
-    padding: 14px 16px;
+    padding: 12px 14px;
 }
 
 .premium-mode-card .premium-mode-word {
     color: var(--premium-accent-bright);
-    font-size: clamp(1.18rem, 2vw, 1.72rem);
+    font-size: clamp(1.08rem, 1.8vw, 1.52rem);
     line-height: 1;
     font-weight: 700;
     letter-spacing: 0.06em;
@@ -1164,15 +1164,15 @@
 }
 
 .premium-mode-card strong {
-    max-width: 17ch;
-    font-size: 0.86rem;
+    max-width: 16ch;
+    font-size: 0.8rem;
     line-height: 1.22;
 }
 
 .premium-mode-card p {
-    max-width: 24ch;
-    font-size: 0.66rem;
-    line-height: 1.18;
+    max-width: 23ch;
+    font-size: 0.62rem;
+    line-height: 1.16;
 }
 
 .premium-mode-card-primary {
@@ -3083,6 +3083,7 @@
     display: grid;
     gap: 8px;
     margin-top: 14px;
+    margin-bottom: 10px;
     padding: 14px 16px;
     border: 1px solid var(--premium-line);
     border-radius: var(--premium-radius-card);

@@ -1,7 +1,7 @@
-const { sendJson, readJsonBody } = require("../_lib/json");
-const { recordCheckoutSession, sanitizeCustomerId } = require("../_lib/premium-entitlements");
-const { readAppSession } = require("../_lib/auth-session");
-const { recordGrowthEvent } = require("../_lib/ops-service");
+const { sendJson, readJsonBody } = require("../../json");
+const { recordCheckoutSession, sanitizeCustomerId } = require("../../premium-entitlements");
+const { readAppSession } = require("../../auth-session");
+const { recordGrowthEvent } = require("../../ops-service");
 
 const MERCADO_PAGO_PREFERENCES_URL = "https://api.mercadopago.com/checkout/preferences";
 

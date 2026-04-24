@@ -1,7 +1,7 @@
-const { sendJson, readJsonBody } = require("../_lib/json");
-const { setAppSession } = require("../_lib/auth-session");
-const { exchangeGoogleCredential } = require("../_lib/google-auth");
-const { getPremiumStatus } = require("../_lib/premium-entitlements");
+const { sendJson, readJsonBody } = require("../../json");
+const { setAppSession } = require("../../auth-session");
+const { exchangeGoogleCredential } = require("../../google-auth");
+const { getPremiumStatus } = require("../../premium-entitlements");
 
 module.exports = async function handler(req, res) {
     if (req.method === "OPTIONS") {
@@ -49,6 +49,7 @@ module.exports = async function handler(req, res) {
 
     const premiumStatus = await getPremiumStatus({
         userId: result.user.userId,
+        userEmail: result.user.email,
         customerId: result.customerId || ""
     });
 

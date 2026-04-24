@@ -1,7 +1,7 @@
 const crypto = require("crypto");
-const { sendJson } = require("../_lib/json");
-const { applyPaymentToEntitlement, parseExternalReference, sanitizeCustomerId } = require("../_lib/premium-entitlements");
-const { recordGrowthEvent, recordOpsAlert } = require("../_lib/ops-service");
+const { sendJson } = require("../../json");
+const { applyPaymentToEntitlement, parseExternalReference, sanitizeCustomerId } = require("../../premium-entitlements");
+const { recordGrowthEvent, recordOpsAlert } = require("../../ops-service");
 
 async function readRawBody(req) {
     const chunks = [];

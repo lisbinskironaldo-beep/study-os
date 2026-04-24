@@ -77,7 +77,8 @@
             label: "Modo inicial",
             backVisible: true,
             progressVisible: false,
-            showSummary: true
+            showSummary: true,
+            scrollable: true
         },
         "highlight-preview": {
             title: "Documento com marcador de texto",

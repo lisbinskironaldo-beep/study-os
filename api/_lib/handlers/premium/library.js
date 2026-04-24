@@ -1,11 +1,11 @@
-const { sendJson, readJsonBody } = require("../_lib/json");
-const { readAppSession } = require("../_lib/auth-session");
-const { isSupabaseConfigured, supabaseRequest } = require("../_lib/supabase");
+const { sendJson, readJsonBody } = require("../../json");
+const { readAppSession } = require("../../auth-session");
+const { isSupabaseConfigured, supabaseRequest } = require("../../supabase");
 const {
     sanitizeStudyLibraryItem,
     mapLibraryItemToSupabase,
     mapLibraryItemFromSupabase
-} = require("../_lib/premium-library");
+} = require("../../premium-library");
 
 function sanitizeIncomingItems(body = {}) {
     if (Array.isArray(body.items)) {

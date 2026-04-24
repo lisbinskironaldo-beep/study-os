@@ -1,5 +1,5 @@
-const { sendJson, readJsonBody } = require("../_lib/json");
-const { recordGrowthEvent } = require("../_lib/ops-service");
+const { sendJson, readJsonBody } = require("../../json");
+const { recordGrowthEvent } = require("../../ops-service");
 
 module.exports = async function handler(req, res) {
     if (req.method === "OPTIONS") {

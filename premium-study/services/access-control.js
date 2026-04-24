@@ -16,6 +16,7 @@
     const FEATURES = {
         PDF_UPLOAD: "pdf_upload",
         LARGE_PDF_UPLOAD: "large_pdf_upload",
+        SCANNED_PDF_TEXT: "scanned_pdf_text",
         RESUME_LATEST: "resume_latest",
         PREMIUM_LIBRARY: "premium_library",
         PRACTICE_EXTRA_SERIES: "practice_extra_series",
@@ -56,6 +57,10 @@
             title: "PDF maior entra no premium",
             message: "Grátis continua liberado para PDFs textuais de até 12 páginas. No premium, materiais longos entram com divisão inteligente antes da IA."
         },
+        [FEATURES.SCANNED_PDF_TEXT]: {
+            title: "PDF escaneado vira texto no premium",
+            message: "No grÃ¡tis, PDFs textuais abrem no editor quando a leitura local funciona. Para converter PDF escaneado ou imagem em texto editÃ¡vel com IA, use o premium."
+        },
         [FEATURES.PREMIUM_LIBRARY]: {
             title: "Biblioteca premium",
             message: "Retomar o último estudo continua grátis. Histórico completo, outros materiais e organização da biblioteca ficam no premium."
@@ -86,7 +91,13 @@
         }
     };
 
+    LOCK_MESSAGES[FEATURES.SCANNED_PDF_TEXT] = {
+        title: "PDF escaneado vira texto no premium",
+        message: "No gratis, PDFs textuais abrem no editor quando a leitura local funciona. Para converter PDF escaneado ou imagem em texto editavel com IA, use o premium."
+    };
+
     const PREMIUM_BENEFITS = [
+        "PDF escaneado convertido em texto editavel",
         "PDFs longos com divisão inteligente",
         "Biblioteca completa de estudos",
         "Estatísticas de evolução e pontos fracos",
@@ -153,6 +164,15 @@
             ],
             cta: "Liberar PDF maior"
         },
+        [FEATURES.SCANNED_PDF_TEXT]: {
+            eyebrow: "PDF escaneado",
+            title: "Converta PDF imagem em texto editavel.",
+            lead: "Quando o PDF vier escaneado, o premium usa leitura por IA para transformar o material em texto estavel dentro do editor.",
+            benefits: [
+                "PDF escaneado vira texto utilizavel"
+            ],
+            cta: "Liberar conversao de PDF"
+        },
         default: {
             eyebrow: "Premium",
             title: "Desbloqueie o estudo completo.",
@@ -203,6 +223,7 @@
         switch (feature) {
         case FEATURES.PDF_UPLOAD:
             return Number(context.pageCount || 0) <= plan.pdfPageLimit || plan.id === "premium";
+        case FEATURES.SCANNED_PDF_TEXT:
         case FEATURES.LARGE_PDF_UPLOAD:
         case FEATURES.PREMIUM_LIBRARY:
         case FEATURES.PRACTICE_EXTRA_SERIES:
