@@ -2212,6 +2212,27 @@ ${sections}`
             return Boolean(progress && Number(progress.completed || 0) > 0);
         },
 
+        hasGeneratedStudyModes() {
+            const store = window.PremiumStudyStore;
+            const state = store.getState();
+            return Array.isArray(state.blocks) && state.blocks.some((block) => block && block.generatedByAi);
+        },
+
+        buildLowQualityPdfNote(step = "mode-select", options = {}) {
+            const needsPremium = options.needsPremium === true;
+
+            return {
+                step,
+                tone: needsPremium ? "premium" : "info",
+                title: needsPremium
+                    ? "Este PDF parece imagem e ainda precisa da conversao premium"
+                    : "Ainda nao consegui montar os modos com este PDF",
+                message: needsPremium
+                    ? "O arquivo parece foto, scan ou imagem com pouca camada de texto. O gratis pode ate montar parte do Aprender, mas para abrir o PDF em Texto e transformar esse material em base estavel para Aprender, Praticar e Prova, o premium usa IA."
+                    : "O PDF em Texto ja abriu, mas Aprender, Praticar e Prova ainda nao ficaram prontos. Vamos tentar montar esses modos a partir do texto extraido; se nao der, o arquivo provavelmente esta com qualidade baixa demais."
+            };
+        },
+
         async generateBundleFromMaterialText(extractedText, options = {}) {
             const store = window.PremiumStudyStore;
             const state = store.getState();
@@ -2366,6 +2387,69 @@ ${sections}`
             return {
                 ok: true,
                 status: "text_ready_bundle_pending"
+            };
+        },
+
+        async ensureStudyModesReady(targetStep = "mode-select", options = {}) {
+            const store = window.PremiumStudyStore;
+            const state = store.getState();
+            const normalizedTargetStep = targetStep || "mode-select";
+
+            if (this.hasGeneratedStudyModes()) {
+                return {
+                    ok: true,
+                    status: "already_generated"
+                };
+            }
+
+            const sourceText = String(
+                state.pdfWorkbenchText ||
+                state.materialExtractedText ||
+                ""
+            ).trim();
+
+            if (!sourceText) {
+                store.setSessionNote(this.buildLowQualityPdfNote("mode-select", {
+                    needsPremium: !state.accessTier || state.accessTier !== "premium"
+                }));
+                return {
+                    ok: false,
+                    status: "missing_source_text"
+                };
+            }
+
+            store.setSessionNote({
+                step: normalizedTargetStep,
+                tone: "info",
+                title: "Montando Aprender, Praticar e Prova",
+                message: "Encontramos texto suficiente no PDF em Texto. Agora estamos preparando os modos a partir dessa base."
+            });
+            this.render();
+
+            const bundleResult = await this.generateBundleFromMaterialText(sourceText, {
+                source: options.source || "mode_open_recovery"
+            });
+
+            if (bundleResult && bundleResult.ok && bundleResult.bundle) {
+                store.setSessionNote({
+                    step: normalizedTargetStep,
+                    tone: "success",
+                    title: "Modos atualizados com o texto do PDF",
+                    message: "Aprender, Praticar e Prova foram montados a partir do texto extraido do editor."
+                });
+                this.schedulePersist(120);
+                return {
+                    ok: true,
+                    status: "generated_from_pdf_text"
+                };
+            }
+
+            store.setSessionNote(this.buildLowQualityPdfNote("mode-select", {
+                needsPremium: false
+            }));
+            return {
+                ok: false,
+                status: bundleResult && bundleResult.status ? bundleResult.status : "bundle_generation_failed"
             };
         },
 
@@ -2698,6 +2782,16 @@ ${sections}`
                 });
                 break;
             case "choose-mode-learn":
+                {
+                    const ensureModes = await this.ensureStudyModesReady("mode-select", {
+                        source: "choose_mode_learn"
+                    });
+                    if (!ensureModes.ok) {
+                        router.goTo("mode-select");
+                        shouldPersist = true;
+                        break;
+                    }
+                }
                 store.setBlockTab("aprender");
                 router.goTo("learn-map");
                 shouldPersist = true;
@@ -2789,6 +2883,16 @@ ${sections}`
                 preferEnterNativeFullScreen = true;
                 break;
             case "choose-mode-practice":
+                {
+                    const ensureModes = await this.ensureStudyModesReady("mode-select", {
+                        source: "choose_mode_practice"
+                    });
+                    if (!ensureModes.ok) {
+                        router.goTo("mode-select");
+                        shouldPersist = true;
+                        break;
+                    }
+                }
                 store.setReturnStep("mode-select");
                 store.markActiveBlockProgress({ practice: true });
                 router.goTo("practice");
@@ -2800,6 +2904,16 @@ ${sections}`
                     openPremiumOffer("LEVEL_EXAM");
                     shouldPersist = true;
                     break;
+                }
+                {
+                    const ensureModes = await this.ensureStudyModesReady("mode-select", {
+                        source: "choose_mode_exam"
+                    });
+                    if (!ensureModes.ok) {
+                        router.goTo("mode-select");
+                        shouldPersist = true;
+                        break;
+                    }
                 }
                 store.setReturnStep("mode-select");
                 router.goTo("level-exam");

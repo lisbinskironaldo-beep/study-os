@@ -895,7 +895,7 @@ ${renderSessionNote(state, "pdf-workbench")}`;
         <p>Seu arquivo parece imagem ou PDF escaneado. No gratis, o editor abre quando o documento ja vem com texto legivel. Para este caso, o premium usa IA para converter o arquivo em texto editavel.</p>
         <ul>
             <li>Se a leitura gratis nao encontrou texto suficiente, o comportamento esperado e abrir esta oferta.</li>
-            <li>Depois da assinatura, o sistema tenta gerar o texto integral e atualizar Aprender, Praticar e Prova.</li>
+            <li>Depois da assinatura, o sistema tenta gerar o texto integral e usar essa base para atualizar Aprender, Praticar e Prova.</li>
         </ul>
     </article>`
             : "";
