@@ -109,17 +109,42 @@
 </div>`;
     }
 
-    function processingOverlay(processing) {
-        if (!processing || !processing.active) {
+    function loadingSignature(activity = {}, options = {}) {
+        const labels = Array.isArray(activity.labels) ? activity.labels.filter(Boolean).slice(0, 4) : [];
+        const trackWidth = Number.isFinite(Number(activity.progress))
+            ? Math.max(12, Math.min(100, Number(activity.progress)))
+            : null;
+        const compact = options.compact === true;
+
+        return `
+<div class="premium-loader-signature ${compact ? "premium-loader-signature-compact" : ""}" aria-hidden="true">
+    <div class="premium-loader-mark">
+        <span class="premium-loader-pill premium-loader-pill-learn"></span>
+        <span class="premium-loader-pill premium-loader-pill-practice"></span>
+        <span class="premium-loader-pill premium-loader-pill-exam"></span>
+    </div>
+    ${labels.length ? `
+    <div class="premium-loader-labels">
+        ${labels.map((label) => `<span>${escapeHtml(label)}</span>`).join("")}
+    </div>` : ""}
+    <div class="premium-loader-track ${trackWidth === null ? "is-ambient" : ""}">
+        <span ${trackWidth === null ? "" : `style="width:${trackWidth}%"`}></span>
+    </div>
+</div>`;
+    }
+
+    function processingOverlay(activity) {
+        if (!activity || !activity.active) {
             return "";
         }
 
         return `
 <div class="premium-shell-processing" aria-live="polite" aria-busy="true">
     <article class="premium-shell-processing-card">
-        <span class="premium-panel-kicker">Preparando os modos</span>
-        <strong>${escapeHtml(processing.title || "Estamos organizando Aprender, Praticar e Prova")}</strong>
-        <p>${escapeHtml(processing.message || "Aguarde um instante enquanto o sistema prepara a base antes de abrir a proxima tela.")}</p>
+        <span class="premium-panel-kicker">${escapeHtml(activity.kicker || "Preparando os modos")}</span>
+        ${loadingSignature(activity, { compact: true })}
+        <strong>${escapeHtml(activity.title || "Estamos organizando Aprender, Praticar e Prova")}</strong>
+        <p>${escapeHtml(activity.message || "Aguarde um instante enquanto o sistema prepara a base antes de abrir a proxima tela.")}</p>
     </article>
 </div>`;
     }
@@ -196,6 +221,7 @@
         escapeHtml,
         formatDateLabel,
         formatStudyLoad,
+        loadingSignature,
         shell,
         summaryPanel
     };

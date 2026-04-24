@@ -91,6 +91,37 @@
             }, options);
         },
 
+        async runShellActivity(options = {}, task) {
+            const store = window.PremiumStudyStore;
+            const current = store.getState().shellActivity;
+
+            if (current && current.active) {
+                return task();
+            }
+
+            const activity = {
+                active: true,
+                kicker: options.kicker || "Carregando",
+                title: options.title || "Organizando sua trilha",
+                message: options.message || "Aguarde um instante enquanto o sistema conclui esta etapa.",
+                labels: Array.isArray(options.labels) ? options.labels : [],
+                progress: Number.isFinite(Number(options.progress)) ? Number(options.progress) : null,
+                startedAt: new Date().toISOString()
+            };
+
+            store.setShellActivity(activity);
+            this.render();
+
+            try {
+                return await task(activity);
+            } finally {
+                if (store.getState().shellActivity && store.getState().shellActivity.active) {
+                    store.clearShellActivity();
+                }
+                this.render();
+            }
+        },
+
         async init(options = {}) {
             this.root = options.root || document.getElementById("premium-studyModule");
 
@@ -113,29 +144,36 @@
 
         async finishInitialLoad() {
             try {
-                await this.hydrateFromStorage();
-                this.render();
+                await this.runShellActivity({
+                    kicker: "Carregando sua trilha",
+                    title: "Reconectando estudo, biblioteca e premium",
+                    message: "Estamos recuperando o ultimo estado, validando sua conta e buscando os estudos salvos antes de liberar a interface.",
+                    labels: ["Lendo navegador", "Validando conta", "Buscando biblioteca", "Liberando acesso"]
+                }, async () => {
+                    await this.hydrateFromStorage();
+                    this.render();
 
-                const paymentReturn = window.RotaNotaPremiumPaymentReturn;
-                if (paymentReturn && !paymentReturn.consumed) {
-                    await this.consumePaymentReturn();
-                } else {
-                    await this.refreshPremiumAccess();
-                }
-                await this.syncStudyLibraryWithAccount({ force: true });
-                this.render();
-
-                if (window.PremiumStudyPromotions && typeof window.PremiumStudyPromotions.refresh === "function") {
-                    await window.PremiumStudyPromotions.refresh("premium_checkout", "");
-                    if (window.PremiumStudyStore.getState().step === "premium-checkout") {
-                        this.render();
+                    const paymentReturn = window.RotaNotaPremiumPaymentReturn;
+                    if (paymentReturn && !paymentReturn.consumed) {
+                        await this.consumePaymentReturn();
+                    } else {
+                        await this.refreshPremiumAccess();
                     }
-                }
+                    await this.syncStudyLibraryWithAccount({ force: true });
+                    this.render();
 
-                await this.runHomeAction(window.RotaNotaPremiumHomeAction || "");
+                    if (window.PremiumStudyPromotions && typeof window.PremiumStudyPromotions.refresh === "function") {
+                        await window.PremiumStudyPromotions.refresh("premium_checkout", "");
+                        if (window.PremiumStudyStore.getState().step === "premium-checkout") {
+                            this.render();
+                        }
+                    }
 
-                this.trackGrowthOnce("premium-module-entry", "premium_module_entry", {
-                    surface: "premium_entry"
+                    await this.runHomeAction(window.RotaNotaPremiumHomeAction || "");
+
+                    this.trackGrowthOnce("premium-module-entry", "premium_module_entry", {
+                        surface: "premium_entry"
+                    });
                 });
             } catch (error) {
                 console.warn("Inicializacao em segundo plano do PDF Focado falhou", error);
@@ -249,7 +287,7 @@
                 return store.getState().studyLibrary;
             }
 
-            this.librarySyncPromise = (async () => {
+            const executeSync = async () => {
                 const localItems = await window.PremiumStudyStorage.getStudyLibrary();
                 const remote = await service.getRemoteLibrary();
                 const remoteItems = remote.ok ? remote.items : [];
@@ -278,7 +316,16 @@
 
                 this.lastLibrarySyncUserId = userId;
                 return mergedItems;
-            })()
+            };
+
+            this.librarySyncPromise = (options.visual
+                ? this.runShellActivity({
+                    kicker: "Biblioteca premium",
+                    title: "Sincronizando seus estudos salvos",
+                    message: "Estamos conferindo o que ja existe neste navegador e na sua conta para mostrar a biblioteca completa.",
+                    labels: ["Lendo local", "Consultando nuvem", "Mesclando estudos", "Atualizando biblioteca"]
+                }, executeSync)
+                : executeSync())
                 .catch((error) => {
                     console.warn("Nao foi possivel sincronizar a biblioteca premium", error);
                     return store.getState().studyLibrary;
@@ -2330,10 +2377,13 @@ ${sections}`
             const currentStep = store.getState().step || options.targetStep || "mode-select";
             const preparation = {
                 active: true,
+                kicker: options.kicker || "Preparando os modos",
                 targetStep: options.targetStep || currentStep,
                 source: options.source || "",
                 title: options.title || "Preparando Aprender, Praticar e Prova",
                 message: options.message || "Aguarde um instante enquanto o sistema organiza a base do material antes de abrir a proxima aba.",
+                labels: Array.isArray(options.labels) ? options.labels : ["Lendo base", "Montando aprender", "Montando pratica", "Montando prova"],
+                progress: Number.isFinite(Number(options.progress)) ? Number(options.progress) : null,
                 startedAt: new Date().toISOString()
             };
 
@@ -2417,7 +2467,8 @@ ${sections}`
                 targetStep,
                 source: options.forceRegenerate ? "premium_scanned_pdf_force" : "premium_scanned_pdf_unlock",
                 title: "Preparando os modos com o PDF premium",
-                message: "Seu documento parece imagem ou escaneado. Agora que o premium foi liberado, estamos convertendo o texto e atualizando Aprender, Praticar e Prova antes de liberar a proxima tela."
+                message: "Seu documento parece imagem ou escaneado. Agora que o premium foi liberado, estamos convertendo o texto e atualizando Aprender, Praticar e Prova antes de liberar a proxima tela.",
+                labels: ["Sincronizando PDF", "Convertendo texto", "Montando blocos", "Liberando modos"]
             }, async () => {
                 const extractedText = await this.ensureMaterialText({
                     maxChars: 50000,
@@ -2549,7 +2600,8 @@ ${sections}`
                 targetStep: normalizedTargetStep,
                 source: options.source || "mode_open_recovery",
                 title: "Preparando os modos a partir do PDF em Texto",
-                message: "Encontramos texto suficiente no editor. Aguarde um instante enquanto Aprender, Praticar e Prova sao montados antes de abrir a aba escolhida."
+                message: "Encontramos texto suficiente no editor. Aguarde um instante enquanto Aprender, Praticar e Prova sao montados antes de abrir a aba escolhida.",
+                labels: ["Lendo editor", "Montando aprender", "Montando pratica", "Montando prova"]
             }, async () => {
                 const bundleResult = await this.generateBundleFromMaterialText(sourceText, {
                     source: options.source || "mode_open_recovery"
@@ -2702,29 +2754,35 @@ ${sections}`
             const store = window.PremiumStudyStore;
             const router = window.PremiumStudyRouter;
             const nextStep = this.getResumeStep(snapshot);
+            return this.runShellActivity({
+                kicker: "Abrindo estudo salvo",
+                title: "Preparando o material da biblioteca",
+                message: "Estamos restaurando o estudo, aplicando o ultimo snapshot salvo e reposicionando voce exatamente no ponto certo.",
+                labels: ["Lendo snapshot", "Montando sessoes", "Restaurando modo", "Abrindo estudo"]
+            }, async () => {
+                store.restoreFromSnapshot({
+                    ...snapshot,
+                    step: nextStep,
+                    sessionNote: null
+                });
 
-            store.restoreFromSnapshot({
-                ...snapshot,
-                step: nextStep,
-                sessionNote: null
-            });
+                if (!store.getState().materialName) {
+                    router.goTo("entry");
+                    return {
+                        shouldSyncNativeFullScreen: false,
+                        preferEnterNativeFullScreen: false
+                    };
+                }
 
-            if (!store.getState().materialName) {
-                router.goTo("entry");
+                router.goTo(nextStep);
+
                 return {
-                    shouldSyncNativeFullScreen: false,
-                    preferEnterNativeFullScreen: false
+                    shouldSyncNativeFullScreen: true,
+                    preferEnterNativeFullScreen:
+                        (nextStep === "block" && store.getState().blockFullScreen) ||
+                        (nextStep === "pdf-workbench" && store.getState().pdfWorkbenchState.fullScreen)
                 };
-            }
-
-            router.goTo(nextStep);
-
-            return {
-                shouldSyncNativeFullScreen: true,
-                preferEnterNativeFullScreen:
-                    (nextStep === "block" && store.getState().blockFullScreen) ||
-                    (nextStep === "pdf-workbench" && store.getState().pdfWorkbenchState.fullScreen)
-            };
+            });
         },
 
         async handleAction(action, payload = {}) {
@@ -2783,12 +2841,18 @@ ${sections}`
                     : "";
             };
 
-            if (store.getState().modePreparation && store.getState().modePreparation.active) {
+            if (
+                (store.getState().modePreparation && store.getState().modePreparation.active) ||
+                (store.getState().shellActivity && store.getState().shellActivity.active)
+            ) {
+                const activeActivity = store.getState().modePreparation && store.getState().modePreparation.active
+                    ? store.getState().modePreparation
+                    : store.getState().shellActivity;
                 store.setSessionNote({
                     step: store.getState().step,
                     tone: "info",
-                    title: store.getState().modePreparation.title || "Preparando os modos",
-                    message: store.getState().modePreparation.message || "Aguarde a preparacao terminar antes de abrir outra area."
+                    title: activeActivity.title || "Processando",
+                    message: activeActivity.message || "Aguarde a preparacao terminar antes de abrir outra area."
                 });
                 this.render();
                 return;
@@ -3063,6 +3127,10 @@ ${sections}`
                     shouldPersist = true;
                     break;
                 }
+                await this.syncStudyLibraryWithAccount({
+                    force: true,
+                    visual: true
+                });
                 router.goTo("premium-library");
                 shouldPersist = true;
                 shouldSyncNativeFullScreen = true;
@@ -3240,8 +3308,15 @@ ${sections}`
                     preserveOriginal: true,
                     html: this.getPdfWorkbenchEditorHtml()
                 });
-                await this.persistPdfWorkbenchState();
-                await this.persistCurrentState();
+                await this.runShellActivity({
+                    kicker: "Salvando",
+                    title: "Guardando o texto na sua biblioteca",
+                    message: "Estamos salvando o editor atual neste navegador e sincronizando com a sua conta quando houver login.",
+                    labels: ["Atualizando editor", "Salvando local", "Sincronizando biblioteca", "Finalizando"]
+                }, async () => {
+                    await this.persistPdfWorkbenchState();
+                    await this.persistCurrentState();
+                });
                 store.setSessionNote({
                     step: "pdf-workbench",
                     tone: "info",
@@ -4033,6 +4108,9 @@ ${sections}`
             const summary = meta.showSummary
                 ? window.PremiumStudyUI.summaryPanel(state, step === "mode-select" ? "compact" : "default")
                 : "";
+            const activeProcessing = state.shellActivity && state.shellActivity.active
+                ? state.shellActivity
+                : state.modePreparation;
 
             this.root.innerHTML = window.PremiumStudyUI.shell({
                 step,
@@ -4041,7 +4119,7 @@ ${sections}`
                 summary,
                 showBack: window.PremiumStudyRouter.canGoBack(step),
                 headerActions,
-                processing: state.modePreparation
+                processing: activeProcessing
             });
 
             document.body.setAttribute("data-premium-step", step);

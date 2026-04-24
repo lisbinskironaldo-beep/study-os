@@ -20,6 +20,22 @@ Isso evita o comportamento ruim de:
 - voltar sozinho
 - reabrir depois
 
+## Linguagem unica de carregamento
+
+As esperas visiveis do `premium study` devem usar a mesma identidade visual de loading:
+
+- preparacao de modos
+- processamento inicial
+- sincronizacao da biblioteca premium
+- retomada de estudo salvo
+- salvamento manual do `PDF em Texto`
+
+Regras:
+
+- evitar tela estatica sem sinal de vida
+- usar a mesma assinatura visual de trilha, nao spinner generico
+- nao disparar esse overlay para autosaves rapidos em segundo plano
+
 ## Papel de cada aba
 
 ### Aprender

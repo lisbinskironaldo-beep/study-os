@@ -47,10 +47,26 @@
     function createModePreparationState(overrides = {}) {
         return {
             active: false,
+            kicker: "Preparando os modos",
             targetStep: "mode-select",
             source: "",
             title: "",
             message: "",
+            labels: [],
+            progress: null,
+            startedAt: "",
+            ...overrides
+        };
+    }
+
+    function createShellActivityState(overrides = {}) {
+        return {
+            active: false,
+            kicker: "Processando",
+            title: "",
+            message: "",
+            labels: [],
+            progress: null,
             startedAt: "",
             ...overrides
         };
@@ -2461,6 +2477,7 @@
             savedDraftId: "",
             savedAt: "",
             modePreparation: createModePreparationState(),
+            shellActivity: createShellActivityState(),
             sessionNote: null,
             premiumOffer: null,
             progressLabel: "Seu plano comeca quando o PDF entra."
@@ -2518,6 +2535,27 @@
             this.state = {
                 ...this.state,
                 modePreparation: createModePreparationState()
+            };
+
+            return this.state;
+        },
+
+        setShellActivity(patch = {}) {
+            this.state = {
+                ...this.state,
+                shellActivity: createShellActivityState({
+                    ...this.state.shellActivity,
+                    ...patch
+                })
+            };
+
+            return this.state;
+        },
+
+        clearShellActivity() {
+            this.state = {
+                ...this.state,
+                shellActivity: createShellActivityState()
             };
 
             return this.state;
@@ -3958,6 +3996,7 @@
                 aiGeneration: snapshot.aiGeneration || defaults.aiGeneration,
                 levelExam: createLevelExamState(snapshot.levelExam || {}),
                 modePreparation: defaults.modePreparation,
+                shellActivity: defaults.shellActivity,
                 materialExtractionStatus: snapshot.materialExtractionStatus || defaults.materialExtractionStatus,
                 materialExtractedText: snapshot.materialExtractedText || "",
                 pdfAssetId: snapshot.pdfAssetId || defaults.pdfAssetId,

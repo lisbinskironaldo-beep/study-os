@@ -254,6 +254,21 @@ ${renderSessionNote(state, "entry")}`;
 </section>`;
     }
 
+    function analysisBranded(state) {
+        const targetScore = Number(state.targetScore || 0).toFixed(1);
+        const examDateLabel = UI().formatDateLabel(state.examDate);
+
+        return `
+<section class="premium-loading-stage">
+    ${UI().loadingSignature({
+            labels: ["Lendo PDF", "Separando topicos", "Priorizando trilha", "Montando plano"],
+            progress: state.analysisProgress
+        })}
+    <strong>Extraindo o melhor conteudo para voce buscar nota ${targetScore} no dia ${UI().escapeHtml(examDateLabel)}.</strong>
+    <p>Estamos montando uma trilha mais objetiva para o seu prazo e para o tempo diario que voce informou.</p>
+</section>`;
+    }
+
     function modeSelect(state) {
         return `
 <section class="premium-mode-grid">
@@ -1482,7 +1497,7 @@ ${renderSessionNote(state, "pdf-workbench")}`;
             case "study-time":
                 return studyTime(state);
             case "analysis":
-                return analysis(state);
+                return analysisBranded(state);
             case "mode-select":
                 return modeSelect(state);
             case "highlight-preview":

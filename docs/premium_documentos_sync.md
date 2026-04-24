@@ -123,6 +123,13 @@ Isso existe para evitar:
 - volta automatica
 - reabertura inesperada depois
 
+As esperas visiveis relacionadas a documentos e biblioteca tambem usam a mesma linguagem de loading:
+
+- preparar modos
+- sincronizar biblioteca
+- retomar estudo salvo
+- salvar manualmente o `PDF em Texto`
+
 ## Como garantir que o outro PC abra igual
 
 1. entrar no site com a mesma conta Google
