@@ -9,10 +9,11 @@ const TASKS = {
     PREMIUM_LEVEL_EXAM: "premium_level_exam"
 };
 
-const PROMPT_VERSION = "rotanota-pdf-focused-ai-v1";
+const PROMPT_VERSION = "rotanota-pdf-focused-ai-v3";
 const DEFAULT_MODEL = "gemini-2.5-flash-lite";
 const FALLBACK_MODEL = "gemini-2.5-flash-lite";
-const MAX_TEXT_CHARS = 22000;
+const FREE_MAX_TEXT_CHARS = 30000;
+const PREMIUM_MAX_TEXT_CHARS = 90000;
 const LEVEL_EXAM_COUNTS = [10, 20, 30];
 
 function cleanText(value, fallback = "") {
@@ -28,6 +29,138 @@ function truncateText(value, maxLength) {
 
 function asArray(value) {
     return Array.isArray(value) ? value : [];
+}
+
+function clampNumber(value, min, max, fallback) {
+    const numeric = Number(value);
+    if (!Number.isFinite(numeric)) {
+        return fallback;
+    }
+    return Math.max(min, Math.min(max, numeric));
+}
+
+function parseIsoDate(value) {
+    const text = cleanText(value);
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(text)) {
+        return null;
+    }
+    const parsed = new Date(`${text}T00:00:00Z`);
+    return Number.isNaN(parsed.getTime()) ? null : parsed;
+}
+
+function computeDaysUntilExam(value) {
+    const examDate = parseIsoDate(value);
+    if (!examDate) {
+        return null;
+    }
+    const now = new Date();
+    const todayUtc = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate());
+    const examUtc = Date.UTC(examDate.getUTCFullYear(), examDate.getUTCMonth(), examDate.getUTCDate());
+    return Math.max(0, Math.round((examUtc - todayUtc) / 86400000));
+}
+
+function looksLikeLargeLegalMaterial(materialName = "") {
+    return /(codigo|c[oó]digo|lei|decreto|estatuto|clt|constitui|regulamento|penal|civil|processual)/i.test(cleanText(materialName));
+}
+
+function inferMaterialProfile(body = {}) {
+    const materialName = cleanText(body.materialName);
+    const textSample = truncateText(body.extractedText, 12000);
+    const combined = `${materialName} ${textSample}`.toLowerCase();
+
+    if (/(codigo|c[oÃ³]digo|lei|decreto|estatuto|clt|constitui|art\.|artigo|penal|civil|processual|tribut|administrativo)/i.test(combined)) {
+        return "juridico";
+    }
+
+    if (/(formula|f[oÃ³]rmula|calculo|c[aÃ¡]lculo|equacao|equa[cÃ§][aÃ£]o|matematica|matem[aÃ¡]tica|fisica|f[iÃ­]sica|quimica|qu[iÃ­]mica)/i.test(combined)) {
+        return "exatas";
+    }
+
+    if (/(anatomia|fisiologia|patologia|diagn[oÃ³]stico|clinico|cl[iÃ­]nico|biologia|medicina|enfermagem|farmacologia)/i.test(combined)) {
+        return "saude_biologicas";
+    }
+
+    if (/(hist[oÃ³]ria|geografia|sociologia|filosofia|autor|teoria|revolu[cÃ§][aÃ£]o|linha do tempo)/i.test(combined)) {
+        return "humanas";
+    }
+
+    if (/(edital|conte[uÃº]do program[aÃ¡]tico|cronograma|cargo|banca|concurso)/i.test(combined)) {
+        return "edital";
+    }
+
+    return "geral";
+}
+
+function buildBundlePlan(body, premiumActive) {
+    const pageCount = Math.max(0, Number(body.pageCount || 0));
+    const dailyMinutes = Math.max(0, Number(body.dailyMinutes || 0));
+    const daysUntilExam = computeDaysUntilExam(body.examDate);
+    const materialProfile = inferMaterialProfile(body);
+    const legalMaterial = materialProfile === "juridico" || looksLikeLargeLegalMaterial(body.materialName);
+    const tierMax = premiumActive ? 12 : 4;
+    let desiredBlockCount = premiumActive ? 6 : 3;
+
+    if (pageCount >= 120) {
+        desiredBlockCount += premiumActive ? 4 : 1;
+    } else if (pageCount >= 80) {
+        desiredBlockCount += premiumActive ? 3 : 1;
+    } else if (pageCount >= 40) {
+        desiredBlockCount += premiumActive ? 2 : 1;
+    } else if (pageCount >= 20) {
+        desiredBlockCount += 1;
+    } else if (pageCount >= 8 && !premiumActive) {
+        desiredBlockCount += 1;
+    }
+
+    if (legalMaterial) {
+        desiredBlockCount += premiumActive ? 1 : 0;
+    }
+
+    if (daysUntilExam !== null) {
+        if (daysUntilExam <= 7) {
+            desiredBlockCount -= premiumActive ? 2 : 1;
+        } else if (daysUntilExam <= 21) {
+            desiredBlockCount -= 1;
+        } else if (daysUntilExam >= 120) {
+            desiredBlockCount += premiumActive ? 2 : 1;
+        } else if (daysUntilExam >= 60) {
+            desiredBlockCount += 1;
+        }
+    }
+
+    if (dailyMinutes >= 180) {
+        desiredBlockCount += 1;
+    } else if (dailyMinutes > 0 && dailyMinutes <= 30) {
+        desiredBlockCount -= 1;
+    }
+
+    desiredBlockCount = clampNumber(
+        body.desiredBlockCount || desiredBlockCount,
+        premiumActive ? 5 : 2,
+        tierMax,
+        premiumActive ? 7 : 3
+    );
+
+    const planMode = daysUntilExam !== null && daysUntilExam <= 14
+        ? "reta_final"
+        : desiredBlockCount >= 9
+            ? "amplo"
+            : "equilibrado";
+
+    return {
+        premiumActive: Boolean(premiumActive),
+        pageCount,
+        dailyMinutes,
+        daysUntilExam,
+        materialProfile,
+        legalMaterial,
+        desiredBlockCount,
+        planMode,
+        learningDepth: premiumActive ? "apostila_interativa" : "trilha_inicial",
+        visualAidBudget: premiumActive ? "amplo" : "enxuto",
+        freePageLimit: 12,
+        maxTextChars: premiumActive ? PREMIUM_MAX_TEXT_CHARS : FREE_MAX_TEXT_CHARS
+    };
 }
 
 function normalizeQuestion(item, fallbackTopic, index) {
@@ -130,24 +263,107 @@ function normalizeFlashcardSeries(series, fallbackTopic) {
 }
 
 function normalizeDocumentSections(sections, fallbackTopic) {
-    return asArray(sections).slice(0, 6).map((section, index) => {
+    return asArray(sections).slice(0, 8).map((section, index) => {
         const paragraphs = asArray(section && section.paragraphs)
             .map((paragraph) => cleanText(paragraph))
             .filter(Boolean)
-            .slice(0, 4);
+            .slice(0, 5);
         const items = asArray(section && section.items)
             .map((item) => cleanText(item))
             .filter(Boolean)
-            .slice(0, 6);
+            .slice(0, 8);
 
         return {
             id: cleanText(section && section.id, `section-${index + 1}`),
+            type: cleanText(section && section.type, cleanText(section && section.id, "reading")),
             label: cleanText(section && section.label, "Leitura guiada"),
             title: cleanText(section && section.title, fallbackTopic),
             paragraphs,
             items
         };
     }).filter((section) => section.paragraphs.length || section.items.length);
+}
+
+function normalizeTextList(value, maxItems = 8) {
+    return asArray(value)
+        .map((item) => cleanText(item))
+        .filter(Boolean)
+        .slice(0, maxItems);
+}
+
+function normalizeObjectList(value, normalizer, maxItems = 4) {
+    return asArray(value)
+        .map((item, index) => normalizer(item, index))
+        .filter(Boolean)
+        .slice(0, maxItems);
+}
+
+function normalizeComparisonTable(table, index) {
+    const rows = asArray(table && table.rows)
+        .map((row) => ({
+            left: cleanText(row && (row.left || row.term || row.concept)),
+            right: cleanText(row && (row.right || row.definition || row.distinction)),
+            note: cleanText(row && (row.note || row.whyItMatters || row.example))
+        }))
+        .filter((row) => row.left || row.right || row.note)
+        .slice(0, 6);
+
+    if (!rows.length) {
+        return null;
+    }
+
+    return {
+        title: cleanText(table && table.title, `Comparativo ${index + 1}`),
+        leftLabel: cleanText(table && table.leftLabel, "Conceito"),
+        rightLabel: cleanText(table && table.rightLabel, "Diferenca pratica"),
+        rows
+    };
+}
+
+function normalizeFlowDiagram(diagram, index) {
+    const steps = asArray(diagram && diagram.steps)
+        .map((step, stepIndex) => ({
+            label: cleanText(step && (step.label || step.title), `Etapa ${stepIndex + 1}`),
+            detail: cleanText(step && (step.detail || step.description || step.note))
+        }))
+        .filter((step) => step.label || step.detail)
+        .slice(0, 7);
+
+    if (!steps.length) {
+        return null;
+    }
+
+    return {
+        title: cleanText(diagram && diagram.title, `Esquema ${index + 1}`),
+        type: cleanText(diagram && diagram.type, "flow"),
+        steps
+    };
+}
+
+function normalizeMnemonic(mnemonic, index) {
+    if (typeof mnemonic === "string") {
+        const text = cleanText(mnemonic);
+        return text
+            ? {
+                title: `Mnemonico ${index + 1}`,
+                formula: text,
+                explanation: ""
+            }
+            : null;
+    }
+
+    const formula = cleanText(mnemonic && (mnemonic.formula || mnemonic.text || mnemonic.phrase));
+    const explanation = cleanText(mnemonic && (mnemonic.explanation || mnemonic.meaning || mnemonic.use));
+
+    if (!formula && !explanation) {
+        return null;
+    }
+
+    return {
+        title: cleanText(mnemonic && mnemonic.title, `Mnemonico ${index + 1}`),
+        formula,
+        explanation
+    };
 }
 
 function normalizeBlock(block, index, materialName) {
@@ -189,6 +405,7 @@ function normalizeBlock(block, index, materialName) {
                 : [
                     {
                         id: "summary",
+                        type: "summary",
                         label: "Resumo",
                         title,
                         paragraphs: [
@@ -196,11 +413,71 @@ function normalizeBlock(block, index, materialName) {
                             cleanText(learn.intro, "Leia este bloco procurando criterios, relacoes e pontos de prova.")
                         ].filter(Boolean),
                         items: []
+                    },
+                    {
+                        id: "exam-focus",
+                        type: "exam_focus",
+                        label: "Como isso cai",
+                        title: `Cobranca principal de ${title}`,
+                        paragraphs: [],
+                        items: normalizeTextList(learn.hotPoints, 5)
                     }
                 ],
-            keyConcepts: asArray(learn.keyConcepts).map((item) => cleanText(item)).filter(Boolean).slice(0, 8),
-            hotPoints: asArray(learn.hotPoints).map((item) => cleanText(item)).filter(Boolean).slice(0, 8),
-            pitfalls: asArray(learn.pitfalls).map((item) => cleanText(item)).filter(Boolean).slice(0, 8),
+            keyConcepts: normalizeTextList(learn.keyConcepts, 8),
+            hotPoints: normalizeTextList(learn.hotPoints, 8),
+            pitfalls: normalizeTextList(learn.pitfalls, 8),
+            examFocus: normalizeTextList(
+                learn.examFocus ||
+                learn.howItIsCharged ||
+                learn.examPatterns,
+                6
+            ),
+            practicalCases: normalizeTextList(
+                learn.practicalCases ||
+                learn.caseDrills ||
+                learn.examples,
+                5
+            ),
+            connections: normalizeTextList(
+                learn.connections ||
+                learn.comparisons ||
+                learn.crossLinks,
+                6
+            ),
+            memoryAnchors: normalizeTextList(
+                learn.memoryAnchors ||
+                learn.memoryHooks ||
+                learn.memorizationCues,
+                6
+            ),
+            comparisonTables: normalizeObjectList(
+                learn.comparisonTables ||
+                learn.comparativeTables ||
+                learn.tables,
+                normalizeComparisonTable,
+                3
+            ),
+            flowDiagrams: normalizeObjectList(
+                learn.flowDiagrams ||
+                learn.visualSchemas ||
+                learn.schemes ||
+                learn.flows,
+                normalizeFlowDiagram,
+                3
+            ),
+            mnemonics: normalizeObjectList(
+                learn.mnemonics ||
+                learn.memoryDevices ||
+                learn.memoryAnchors,
+                normalizeMnemonic,
+                4
+            ),
+            masteryChecklist: normalizeTextList(
+                learn.masteryChecklist ||
+                learn.checklist ||
+                learn.mustKnow,
+                7
+            ),
             explainBetter: {
                 title: cleanText((learn.explainBetter || learn.explainPanel || {}).title, `Explicacao de ${title}`),
                 paragraphs: asArray((learn.explainBetter || learn.explainPanel || {}).paragraphs)
@@ -233,11 +510,17 @@ function normalizeBlock(block, index, materialName) {
     };
 }
 
-function normalizeBundle(data, body) {
+function normalizeBundle(data, body, plan) {
     const materialName = cleanText(body.materialName, "seu material");
     const source = data && typeof data === "object" ? data : {};
+    const maxBlocks = clampNumber(
+        plan && plan.desiredBlockCount,
+        3,
+        12,
+        5
+    );
     const blocks = asArray(source.blocks)
-        .slice(0, 5)
+        .slice(0, maxBlocks)
         .map((block, index) => normalizeBlock(block, index, materialName));
 
     if (!blocks.length) {
@@ -248,30 +531,72 @@ function normalizeBundle(data, body) {
         title: cleanText(source.title, materialName.replace(/\.pdf$/i, "")),
         recommendedBlockId: cleanText(source.recommendedBlockId, blocks[0].id),
         blocks,
-        warnings: asArray(source.warnings).map((item) => cleanText(item)).filter(Boolean).slice(0, 5)
+        warnings: asArray(source.warnings).map((item) => cleanText(item)).filter(Boolean).slice(0, 8)
     };
 }
 
-function buildFreeBundlePrompt(body) {
-    const text = truncateText(body.extractedText, MAX_TEXT_CHARS);
+function buildFreeBundlePrompt(body, plan) {
+    const text = truncateText(body.extractedText, plan.maxTextChars);
+    const depthGuidance = plan.premiumActive
+        ? "Entrega premium: trate Aprender como uma miniapostila interativa. Cada bloco deve ter aula guiada densa, esquemas, comparativos, exemplos, mnemonicos quando naturais e checklist de dominio. Nao entregue apontamentos superficiais."
+        : "Entrega gratis: mantenha o limite de ate 12 paginas como uma amostra util. Gere uma trilha inicial clara, com resumo guiado, pontos de prova, 1 recurso visual simples quando fizer sentido e convite natural para premium em warnings se o material pedir profundidade maior.";
+    const timingGuidance = plan.daysUntilExam === null
+        ? "Prazo nao informado: entregue uma trilha inicial equilibrada."
+        : plan.daysUntilExam <= 7
+            ? "Faltam pouquissimos dias para a prova: compacte assuntos relacionados, priorize incidencia e fundamentos cobraveis."
+            : plan.daysUntilExam <= 30
+                ? "Prazo curto: entregue uma trilha objetiva, mas sem sacrificar os assuntos que mais costumam cair."
+                : "Prazo mais amplo: distribua melhor a cobertura do material, com mais blocos e progressao por assunto.";
+    const structureGuidance = plan.legalMaterial
+        ? "Como o material parece juridico/legislativo, organize os blocos por eixos tematicos, titulos, capitulos ou grupos de artigos. Para leis/codigos, destaque dispositivos centrais, conduta, sujeito, consequencia, excecoes, diferencas e fluxos de analise. Nao concentre tudo nos artigos iniciais."
+        : "Organize os blocos por assuntos progressivos e sem repetir o mesmo resumo.";
+    const profileGuidance = {
+        juridico: "Perfil juridico: priorize artigo/dispositivo, conceito, requisitos, excecoes, pegadinhas, comparativos e casos curtos. So cite jurisprudencia se estiver no texto.",
+        exatas: "Perfil de exatas: priorize formulas, condicoes de uso, passo a passo, exemplo resolvido e erros comuns.",
+        saude_biologicas: "Perfil de saude/biologicas: priorize mecanismo, sinais, criterios, condutas ou classificacoes, e fluxos de decisao quando houver.",
+        humanas: "Perfil de humanas: priorize conceitos, autores, causas/consequencias, linhas do tempo e comparativos.",
+        edital: "Perfil edital: transforme topicos em frentes de estudo, prioridades e checklist de cobertura.",
+        geral: "Perfil geral: adapte o formato ao texto real, preservando hierarquia, definicoes, exemplos e relacoes."
+    }[plan.materialProfile] || "Adapte o formato ao texto real.";
+
     return `
-Voce e a IA pedagogica do RotaNota. Transforme o PDF do usuario em um pacote inicial gratis completo.
+Voce e a IA pedagogica do RotaNota. Transforme o material do usuario em blocos de estudo proporcionais ao plano, ao tamanho do documento e ao prazo.
 
 Regras obrigatorias:
 - Responda SOMENTE JSON valido.
-- Crie de 3 a 5 blocos com recortes proprios do mesmo material; nao duplique o mesmo resumo em todos.
+- Crie EXATAMENTE ${plan.desiredBlockCount} blocos com recortes proprios do mesmo material.
+- A trilha precisa se adaptar ao tamanho do material e ao prazo da prova; nao entregue sempre a mesma estrutura.
+- Cada bloco deve cobrir um assunto diferente e cumulativo; nao duplique o mesmo resumo em todos.
 - Cada bloco precisa ensinar o conteudo do PDF com linguagem clara, voltada para prova.
+- Cada bloco precisa parecer uma aula estruturada, nao apenas um resumo corrido.
+- Distribua o material por estrutura semantica: capitulos, titulos, artigos, secoes, topicos ou mudancas de assunto. Evite recorte fixo por pagina.
 - Cada bloco precisa ter exatamente 5 questoes em exam.questions.
 - Cada bloco precisa ter 3 series gratis de quiz, verdadeiro/falso e flashcards.
+- Nao altere a mecanica de pratica/prova: apenas alimente quizSeries, trueFalseSeries, flashcardSeries e exam.questions no formato pedido.
 - Nao invente fatos fora do texto; se o texto estiver incompleto, deixe isso claro em warnings.
 - Use portugues do Brasil.
+- ${depthGuidance}
+- ${timingGuidance}
+- ${structureGuidance}
+- ${profileGuidance}
+- Em cada bloco, entregue explicacao, cobranca, comparacao, caso pratico, memorizacao e checklist.
+- Mnemonicos devem ser usados apenas quando ajudarem de verdade; nao force frases artificiais.
+- Esquemas/fluxos devem ser textuais e renderizaveis em JSON, com etapas curtas.
+- Comparativos devem separar conceitos confundiveis ou regimes parecidos.
 
 Contexto:
 Material: ${cleanText(body.materialName, "material.pdf")}
-Paginas estimadas: ${Number(body.pageCount || 0)}
+Paginas estimadas: ${plan.pageCount}
 Data da prova: ${cleanText(body.examDate, "nao informada")}
+Dias ate a prova: ${plan.daysUntilExam === null ? "nao informado" : plan.daysUntilExam}
 Meta: ${cleanText(body.targetScore, "nao informada")}
-Tempo diario em minutos: ${cleanText(body.dailyMinutes, "nao informado")}
+Tempo diario em minutos: ${plan.dailyMinutes || "nao informado"}
+Quantidade alvo de blocos: ${plan.desiredBlockCount}
+Modo de trilha: ${plan.planMode}
+Perfil do material: ${plan.materialProfile}
+Profundidade de Aprender: ${plan.learningDepth}
+Recursos visuais: ${plan.visualAidBudget}
+Conta premium ativa: ${plan.premiumActive ? "sim" : "nao"}
 
 Texto extraido do PDF:
 ${text || "Texto nao extraido. Gere uma estrutura inicial honesta baseada no nome do material e avise em warnings que faltou texto."}
@@ -297,11 +622,38 @@ Formato obrigatorio:
         "summary": "string",
         "intro": "string",
         "documentSections": [
-          { "id": "summary", "label": "Resumo", "title": "string", "paragraphs": ["string"], "items": ["string"] }
+          { "id": "summary", "type": "summary", "label": "Resumo", "title": "string", "paragraphs": ["string"], "items": ["string"] }
         ],
         "keyConcepts": ["string"],
         "hotPoints": ["string"],
         "pitfalls": ["string"],
+        "examFocus": ["string"],
+        "practicalCases": ["string"],
+        "connections": ["string"],
+        "memoryAnchors": ["string"],
+        "comparisonTables": [
+          {
+            "title": "string",
+            "leftLabel": "Conceito",
+            "rightLabel": "Diferenca pratica",
+            "rows": [
+              { "left": "string", "right": "string", "note": "string" }
+            ]
+          }
+        ],
+        "flowDiagrams": [
+          {
+            "title": "string",
+            "type": "flow",
+            "steps": [
+              { "label": "string", "detail": "string" }
+            ]
+          }
+        ],
+        "mnemonics": [
+          { "title": "string", "formula": "string", "explanation": "string" }
+        ],
+        "masteryChecklist": ["string"],
         "explainBetter": { "title": "string", "paragraphs": ["string"] },
         "reviewInFivePoints": ["string", "string", "string", "string", "string"]
       },
@@ -432,20 +784,25 @@ module.exports = async function handler(req, res) {
     const task = cleanText(body.task);
     const customerId = sanitizeCustomerId(body.customerId || "");
     const session = readAppSession(req);
-    const userId = session && session.userId
-        ? String(session.userId).trim()
+    const userId = session && session.ok && session.payload && session.payload.userId
+        ? String(session.payload.userId).trim()
         : "";
     const model = getPrimaryModel();
 
     try {
         if (task === TASKS.FREE_BUNDLE) {
+            const premiumActive = await ensurePremium({
+                customerId,
+                userId
+            });
+            const plan = buildBundlePlan(body, premiumActive);
             const result = await callGeminiWithFallback({
                 model,
-                prompt: buildFreeBundlePrompt(body),
+                prompt: buildFreeBundlePrompt(body, plan),
                 schemaInstruction: buildFreeBundleSchema(),
                 temperature: 0.35
             });
-            const bundle = result.ok ? normalizeBundle(result.data, body) : null;
+            const bundle = result.ok ? normalizeBundle(result.data, body, plan) : null;
 
             if (!result.ok || !bundle) {
                 return sendJson(res, 502, {
@@ -468,6 +825,7 @@ module.exports = async function handler(req, res) {
                 attemptedModels: result.attemptedModels || [result.model || model],
                 providerStatus: result.providerStatus || "OK",
                 promptVersion: PROMPT_VERSION,
+                plan,
                 bundle
             });
         }

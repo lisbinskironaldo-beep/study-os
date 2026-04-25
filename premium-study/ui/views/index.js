@@ -1,4 +1,4 @@
-(function () {
+﻿(function () {
     if (window.PremiumStudyViews) {
         return;
     }
@@ -24,6 +24,8 @@
     function entry(state) {
         const access = Access();
         const resume = state.latestLocalStudy;
+        const workspaceMode = state.workspaceMode === "convert" ? "convert" : "study";
+        const isConvertMode = workspaceMode === "convert";
         const studyLibrary = Array.isArray(state.studyLibrary)
             ? state.studyLibrary
             : [];
@@ -35,6 +37,38 @@
         const premiumActive = access && typeof access.isPremiumLike === "function"
             ? access.isPremiumLike(state)
             : state.accessTier === "premium";
+        const fileAccept = isConvertMode
+            ? ".pdf,application/pdf"
+            : ".pdf,.txt,.md,.markdown,.csv,.json,.html,.htm,.xml,application/pdf,text/plain,text/markdown,text/csv,application/json,text/html,text/xml,application/xml";
+
+        if (isConvertMode) {
+            return `
+<section class="premium-entry-stage">
+    <div class="premium-entry-hero">
+        <button type="button" class="premium-entry-card premium-entry-card-primary premium-entry-card-featured" data-premium-action="open-file-picker">
+            <div class="premium-entry-topline">
+                <span class="premium-entry-kicker">Conversor premium</span>
+                <span class="premium-entry-inline-badge ${premiumActive ? "premium-entry-inline-badge-active" : "premium-entry-inline-badge-premium"}">Texto editavel</span>
+            </div>
+            <strong>Converter PDF ruim</strong>
+            <p>Enviar PDF escaneado ou de baixa qualidade para abrir no editor de texto.</p>
+        </button>
+    </div>
+    <div class="premium-entry-grid premium-entry-grid-secondary is-single">
+        <button type="button" class="premium-entry-card premium-entry-card-secondary premium-entry-card-support premium-entry-card-premium ${premiumActive ? "" : "is-locked"}" data-premium-action="${premiumActive ? "switch-to-study-entry" : "open-premium-library"}" ${premiumActive ? "" : "aria-disabled=\"true\""}>
+            <div class="premium-entry-topline">
+                <span class="premium-entry-kicker">Fluxo separado</span>
+                <span class="premium-entry-inline-badge ${premiumActive ? "premium-entry-inline-badge-active" : "premium-entry-inline-badge-premium"}">${premiumActive ? "Material focado" : "Premium"}</span>
+            </div>
+            <strong>${premiumActive ? "Voltar para Material Focado" : "Conversao premium"}</strong>
+            <p>${premiumActive ? "Use o fluxo principal para Aprender, Praticar e Prova com PDF, TXT, MD, CSV, JSON ou HTML." : "A conversao integral de PDF ruim em texto editavel fica reservada ao premium."}</p>
+            <small>${premiumActive ? "Abrir fluxo de estudo" : "Ativar conversao premium"}</small>
+        </button>
+    </div>
+    <input id="premiumStudyFileInput" class="premium-hidden-input" type="file" accept="${fileAccept}" />
+</section>
+${renderSessionNote(state, "entry")}`;
+        }
 
         if (premiumActive) {
             return `
@@ -45,8 +79,8 @@
                 <span class="premium-entry-kicker">Workspace premium</span>
                 <span class="premium-entry-inline-badge premium-entry-inline-badge-active">PDFs ilimitados</span>
             </div>
-            <strong>Carregar novo PDF</strong>
-            <p>Adicionar outro material e manter tudo organizado na sua biblioteca premium.</p>
+            <strong>Carregar novo material</strong>
+            <p>Adicionar PDF, TXT, MD, CSV, JSON ou HTML e manter tudo organizado na sua biblioteca premium.</p>
         </button>
     </div>
     <div class="premium-entry-grid premium-entry-grid-secondary ${resume ? "" : "is-single"}">
@@ -56,7 +90,7 @@
                 <span class="premium-entry-kicker">Continuidade</span>
                 <span class="premium-entry-inline-badge premium-entry-inline-badge-active">Continuidade completa</span>
             </div>
-            <strong>Retomar ultimo estudo</strong>
+            <strong>Retomar último estudo</strong>
             <p>${UI().escapeHtml(resume.title)}</p>
             <small>Prova em ${UI().escapeHtml(resume.examDateLabel)}</small>
         </button>` : ""}
@@ -66,11 +100,11 @@
                 <span class="premium-entry-inline-badge premium-entry-inline-badge-active">Tudo liberado</span>
             </div>
             <strong>Abrir biblioteca</strong>
-            <p>${additionalStudiesCount > 0 ? `${additionalStudiesCount} estudo(s) extra(s) ja estao guardados para retomada imediata.` : "Seu historico completo fica pronto para receber novos materiais e retomadas."}</p>
+            <p>${additionalStudiesCount > 0 ? `${additionalStudiesCount} estudo(s) extra(s) já estão guardados para retomada imediata.` : "Seu histórico completo fica pronto para receber novos materiais e retomadas."}</p>
             <small>Entrar no acervo completo</small>
         </button>
     </div>
-    <input id="premiumStudyFileInput" class="premium-hidden-input" type="file" accept=".pdf,application/pdf" />
+    <input id="premiumStudyFileInput" class="premium-hidden-input" type="file" accept="${fileAccept}" />
 </section>
 ${renderSessionNote(state, "entry")}`;
         }
@@ -83,8 +117,8 @@ ${renderSessionNote(state, "entry")}`;
                 <span class="premium-entry-kicker">Novo estudo</span>
                 <span class="premium-entry-inline-badge premium-entry-inline-badge-free">Grátis até 12 páginas</span>
             </div>
-            <strong>Carregar PDF</strong>
-            <p>Enviar material para montar a trilha.</p>
+            <strong>Carregar material</strong>
+            <p>Enviar PDF, TXT, MD, CSV, JSON ou HTML para montar a trilha.</p>
         </button>
     </div>
     <div class="premium-entry-grid premium-entry-grid-secondary ${resume ? "" : "is-single"}">
@@ -108,7 +142,7 @@ ${renderSessionNote(state, "entry")}`;
             <small>${premiumLibraryEnabled ? "Ver histórico premium" : "Expanda seus estudos com premium"}</small>
         </button>
     </div>
-    <input id="premiumStudyFileInput" class="premium-hidden-input" type="file" accept=".pdf,application/pdf" />
+    <input id="premiumStudyFileInput" class="premium-hidden-input" type="file" accept="${fileAccept}" />
 </section>
 ${renderSessionNote(state, "entry")}`;
     }
@@ -233,6 +267,147 @@ ${renderSessionNote(state, "entry")}`;
 </section>`;
     }
 
+    function deriveDaysUntilExam(examDate) {
+        if (!examDate || !/^\d{4}-\d{2}-\d{2}$/.test(String(examDate))) {
+            return null;
+        }
+
+        const now = new Date();
+        const todayUtc = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate());
+        const parts = String(examDate).split("-").map(Number);
+        const examUtc = Date.UTC(parts[0], parts[1] - 1, parts[2]);
+        return Math.max(0, Math.round((examUtc - todayUtc) / 86400000));
+    }
+
+    function estimateStudyBlocks(state) {
+        const pageCount = Math.max(0, Number(state.materialPageCount || 0));
+        const dailyMinutes = (Number(state.studyHours) || 0) * 60 + (Number(state.studyMinutes) || 0);
+        const daysUntilExam = deriveDaysUntilExam(state.examDate);
+        const accessTier = state.accessTier === "premium" || state.premiumActive ? "premium" : "free";
+        let desiredBlockCount = accessTier === "premium" ? 6 : 3;
+
+        if (pageCount >= 120) {
+            desiredBlockCount += accessTier === "premium" ? 4 : 1;
+        } else if (pageCount >= 80) {
+            desiredBlockCount += accessTier === "premium" ? 3 : 1;
+        } else if (pageCount >= 40) {
+            desiredBlockCount += accessTier === "premium" ? 2 : 1;
+        } else if (pageCount >= 20) {
+            desiredBlockCount += 1;
+        } else if (pageCount >= 8 && accessTier !== "premium") {
+            desiredBlockCount += 1;
+        }
+
+        if (daysUntilExam !== null) {
+            if (daysUntilExam <= 7) {
+                desiredBlockCount -= accessTier === "premium" ? 2 : 1;
+            } else if (daysUntilExam <= 21) {
+                desiredBlockCount -= 1;
+            } else if (daysUntilExam >= 120) {
+                desiredBlockCount += accessTier === "premium" ? 2 : 1;
+            } else if (daysUntilExam >= 60) {
+                desiredBlockCount += 1;
+            }
+        }
+
+        if (dailyMinutes >= 180) {
+            desiredBlockCount += 1;
+        } else if (dailyMinutes > 0 && dailyMinutes <= 30) {
+            desiredBlockCount -= 1;
+        }
+
+        const min = accessTier === "premium" ? 5 : 2;
+        const max = accessTier === "premium" ? 12 : 4;
+        return Math.max(min, Math.min(max, desiredBlockCount));
+    }
+
+    function buildAnalysisSummary(state) {
+        const pageCount = Math.max(0, Number(state.materialPageCount || 0));
+        const daysUntilExam = deriveDaysUntilExam(state.examDate);
+        const estimatedBlocks = estimateStudyBlocks(state);
+        const progress = Math.max(0, Number(state.analysisProgress || 0));
+
+        const materialSizeLabel = pageCount >= 120
+            ? "Material extenso"
+            : pageCount >= 40
+                ? "Material medio"
+                : "Material direto";
+
+        const strategyLabel = daysUntilExam !== null && daysUntilExam <= 14
+            ? "Reta final"
+            : estimatedBlocks >= 9
+                ? "Cobertura ampla"
+                : "Trilha equilibrada";
+
+        const stageLabel = progress >= 92
+            ? "Blocos quase prontos"
+            : progress >= 72
+                ? "Montando blocos"
+                : progress >= 46
+                    ? "Separando eixos"
+                    : progress >= 18
+                        ? "Lendo base textual"
+                        : "Recebendo material";
+
+        const statusLines = [];
+
+        if (pageCount > 0) {
+            statusLines.push(`Documento recebido: ${pageCount} ${pageCount === 1 ? "pagina" : "paginas"}.`);
+        } else {
+            statusLines.push("Documento recebido. Agora estamos medindo o porte do material.");
+        }
+
+        statusLines.push(`Estrategia prevista: ${strategyLabel.toLowerCase()} com cerca de ${estimatedBlocks} ${estimatedBlocks === 1 ? "bloco" : "blocos"} de estudo.`);
+
+        if (progress >= 92) {
+            statusLines.push("Os blocos principais ja foram montados e estamos fechando a camada base para liberar os modos.");
+        } else if (progress >= 72) {
+            statusLines.push("Ja temos texto-base suficiente e estamos transformando isso em blocos de Aprender, Praticar e Prova.");
+        } else if (progress >= 46) {
+            statusLines.push("O texto-base ja entrou. Agora estamos separando capitulos, eixos e prioridades para evitar repeticao.");
+        } else {
+            statusLines.push("Ainda estamos consolidando a base do material antes de transformar tudo em trilha.");
+        }
+
+        return {
+            materialSizeLabel,
+            strategyLabel,
+            stageLabel,
+            estimatedBlocks,
+            statusLines
+        };
+    }
+
+    function renderAnalysisSummary(state) {
+        const summary = buildAnalysisSummary(state);
+        const pageCount = Math.max(0, Number(state.materialPageCount || 0));
+
+        return `
+<div class="premium-analysis-summary">
+    <div class="premium-analysis-summary-grid">
+        <article class="premium-analysis-stat">
+            <span>Material</span>
+            <strong>${pageCount > 0 ? `${pageCount} pags` : "Em leitura"}</strong>
+            <small>${UI().escapeHtml(summary.materialSizeLabel)}</small>
+        </article>
+        <article class="premium-analysis-stat">
+            <span>Estrategia</span>
+            <strong>${UI().escapeHtml(summary.strategyLabel)}</strong>
+            <small>${UI().escapeHtml(summary.stageLabel)}</small>
+        </article>
+        <article class="premium-analysis-stat">
+            <span>Previsao inicial</span>
+            <strong>${summary.estimatedBlocks} blocos</strong>
+            <small>adaptados ao prazo e ao porte</small>
+        </article>
+    </div>
+    <div class="premium-analysis-notes">
+        ${summary.statusLines.map((line) => `<p>${UI().escapeHtml(line)}</p>`).join("")}
+        <p>${UI().escapeHtml(state.progressLabel || "Estamos organizando a trilha para liberar Aprender, Praticar e Prova.")}</p>
+    </div>
+</div>`;
+    }
+
     function analysis(state) {
         const targetScore = Number(state.targetScore || 0).toFixed(1);
         const examDateLabel = UI().formatDateLabel(state.examDate);
@@ -243,7 +418,7 @@ ${renderSessionNote(state, "entry")}`;
     <strong>Extraindo o melhor conteúdo para você buscar nota ${targetScore} no dia ${UI().escapeHtml(examDateLabel)}.</strong>
     <p>Estamos montando uma trilha mais objetiva para o seu prazo e para o tempo diário que você informou.</p>
     <div class="premium-loading-checks">
-        <span>Lendo PDF</span>
+        <span>Lendo material</span>
         <span>Separando tópicos</span>
         <span>Priorizando trilha</span>
         <span>Montando plano</span>
@@ -251,21 +426,29 @@ ${renderSessionNote(state, "entry")}`;
     <div class="premium-loading-track">
         <span style="width:${Math.max(10, state.analysisProgress)}%"></span>
     </div>
+    ${renderAnalysisSummary(state)}
 </section>`;
     }
 
     function analysisBranded(state) {
         const targetScore = Number(state.targetScore || 0).toFixed(1);
         const examDateLabel = UI().formatDateLabel(state.examDate);
+        const summary = buildAnalysisSummary(state);
 
         return `
 <section class="premium-loading-stage">
     ${UI().loadingSignature({
-            labels: ["Lendo PDF", "Separando topicos", "Priorizando trilha", "Montando plano"],
+            labels: [
+                "Recebendo material",
+                "Lendo base textual",
+                "Separando topicos",
+                summary.stageLabel
+            ],
             progress: state.analysisProgress
         })}
-    <strong>Extraindo o melhor conteudo para voce buscar nota ${targetScore} no dia ${UI().escapeHtml(examDateLabel)}.</strong>
-    <p>Estamos montando uma trilha mais objetiva para o seu prazo e para o tempo diario que voce informou.</p>
+    <strong>Extraindo o melhor conteúdo para você buscar nota ${targetScore} no dia ${UI().escapeHtml(examDateLabel)}.</strong>
+    <p>Estamos montando uma trilha mais objetiva para o seu prazo e para o tempo diário que você informou.</p>
+    ${renderAnalysisSummary(state)}
 </section>`;
     }
 
@@ -284,13 +467,8 @@ ${renderSessionNote(state, "entry")}`;
     </button>
     <button type="button" class="premium-mode-card" data-premium-action="choose-mode-exam">
         <span class="premium-mode-word">Prova</span>
-        <strong>Teste seu nivel agora</strong>
-        <p>Prova premium com seletor de quantidade para medir prontidao geral.</p>
-    </button>
-    <button type="button" class="premium-mode-card premium-mode-card-pdf" data-premium-action="choose-mode-pdf-workbench">
-        <span class="premium-mode-word">PDF em Texto</span>
-        <strong>Extrair e abrir no editor</strong>
-        <p>PDF textual abre na hora. PDF escaneado ou imagem entra com conversao premium.</p>
+        <strong>Teste seu nível agora</strong>
+        <p>Prova premium com seletor de quantidade para medir prontidão geral.</p>
     </button>
 </section>
 ${renderSessionNote(state, "mode-select")}`;
@@ -322,7 +500,7 @@ ${renderSessionNote(state, "mode-select")}`;
 
     function renderDocumentSections(sections = []) {
         return sections.map((section) => `
-        <section class="premium-learn-section premium-learn-section-rich premium-learn-section-document premium-learn-section-document-${UI().escapeHtml(section.id || "default")}">
+        <section class="premium-learn-section premium-learn-section-rich premium-learn-section-document premium-learn-section-document-${UI().escapeHtml(section.id || "default")} premium-learn-section-type-${UI().escapeHtml(section.type || section.id || "default")}">
             <span class="premium-detail-label">${UI().escapeHtml(section.label)}</span>
             <h3>${UI().escapeHtml(section.title)}</h3>
             ${Array.isArray(section.paragraphs)
@@ -335,22 +513,169 @@ ${renderSessionNote(state, "mode-select")}`;
     `).join("");
     }
 
+    function renderInsightCard(label, title, items = [], tone = "default") {
+        const filtered = Array.isArray(items) ? items.filter(Boolean).slice(0, 6) : [];
+        if (!filtered.length) {
+            return "";
+        }
+
+        return `
+<article class="premium-learn-insight-card premium-learn-insight-card-${UI().escapeHtml(tone)}">
+    <span class="premium-detail-label">${UI().escapeHtml(label)}</span>
+    <h3>${UI().escapeHtml(title)}</h3>
+    ${renderBulletList(filtered)}
+</article>`;
+    }
+
+    function renderBlockInsightGrid(block) {
+        const learn = block.learn || {};
+        const examFocus = Array.isArray(learn.examFocus) ? learn.examFocus : [];
+        const hotPoints = Array.isArray(learn.hotPoints) ? learn.hotPoints : [];
+        const cards = [
+            renderInsightCard("Mapa mental", "O que precisa ficar de pe", learn.keyConcepts, "concepts"),
+            renderInsightCard("Como isso cai", "O que a prova costuma cobrar", examFocus.length ? examFocus : hotPoints, "exam"),
+            renderInsightCard("Pegadinhas", "Onde o aluno costuma escorregar", learn.pitfalls, "pitfalls"),
+            renderInsightCard("Comparacoes", "O que nao pode ser confundido", learn.connections, "connections"),
+            renderInsightCard("Caso pratico", "Exemplos que fixam o criterio", learn.practicalCases, "cases"),
+            renderInsightCard("Memorizacao", "Ganchos para revisar depois", learn.memoryAnchors, "memory")
+        ].filter(Boolean);
+
+        if (!cards.length) {
+            return "";
+        }
+
+        return `
+<section class="premium-learn-insight-grid">
+    ${cards.join("")}
+</section>`;
+    }
+
+    function renderComparisonTables(tables = []) {
+        const filtered = Array.isArray(tables) ? tables.filter(Boolean).slice(0, 3) : [];
+        if (!filtered.length) {
+            return "";
+        }
+
+        return filtered.map((table) => {
+            const rows = Array.isArray(table.rows) ? table.rows.filter(Boolean).slice(0, 6) : [];
+            if (!rows.length) {
+                return "";
+            }
+
+            return `
+<section class="premium-learn-section premium-learn-section-rich premium-learn-comparison">
+    <span class="premium-detail-label">Comparativo</span>
+    <h3>${UI().escapeHtml(table.title || "Conceitos que nao podem ser confundidos")}</h3>
+    <div class="premium-learn-table" role="table">
+        <div class="premium-learn-table-row premium-learn-table-head" role="row">
+            <span role="columnheader">${UI().escapeHtml(table.leftLabel || "Conceito")}</span>
+            <span role="columnheader">${UI().escapeHtml(table.rightLabel || "Diferenca pratica")}</span>
+            <span role="columnheader">Observacao</span>
+        </div>
+        ${rows.map((row) => `
+        <div class="premium-learn-table-row" role="row">
+            <strong role="cell">${UI().escapeHtml(row.left || "")}</strong>
+            <span role="cell">${UI().escapeHtml(row.right || "")}</span>
+            <em role="cell">${UI().escapeHtml(row.note || "")}</em>
+        </div>`).join("")}
+    </div>
+</section>`;
+        }).filter(Boolean).join("");
+    }
+
+    function renderFlowDiagrams(diagrams = []) {
+        const filtered = Array.isArray(diagrams) ? diagrams.filter(Boolean).slice(0, 3) : [];
+        if (!filtered.length) {
+            return "";
+        }
+
+        return filtered.map((diagram) => {
+            const steps = Array.isArray(diagram.steps) ? diagram.steps.filter(Boolean).slice(0, 7) : [];
+            if (!steps.length) {
+                return "";
+            }
+
+            return `
+<section class="premium-learn-section premium-learn-section-rich premium-learn-flow">
+    <span class="premium-detail-label">Esquema ilustrado</span>
+    <h3>${UI().escapeHtml(diagram.title || "Fluxo de decisao")}</h3>
+    <ol class="premium-learn-flow-steps">
+        ${steps.map((step, index) => `
+        <li>
+            <span>${String(index + 1).padStart(2, "0")}</span>
+            <div>
+                <strong>${UI().escapeHtml(step.label || `Etapa ${index + 1}`)}</strong>
+                ${step.detail ? `<p>${UI().escapeHtml(step.detail)}</p>` : ""}
+            </div>
+        </li>`).join("")}
+    </ol>
+</section>`;
+        }).filter(Boolean).join("");
+    }
+
+    function renderMnemonics(mnemonics = []) {
+        const filtered = Array.isArray(mnemonics) ? mnemonics.filter(Boolean).slice(0, 4) : [];
+        if (!filtered.length) {
+            return "";
+        }
+
+        return `
+<section class="premium-learn-section premium-learn-section-rich premium-learn-mnemonics">
+    <span class="premium-detail-label">Memorizacao ativa</span>
+    <h3>Ganchos para lembrar sem decorar no escuro</h3>
+    <div class="premium-learn-mnemonic-grid">
+        ${filtered.map((item) => `
+        <article class="premium-learn-mnemonic">
+            <span>${UI().escapeHtml(item.title || "Mnemonico")}</span>
+            <strong>${UI().escapeHtml(item.formula || "")}</strong>
+            ${item.explanation ? `<p>${UI().escapeHtml(item.explanation)}</p>` : ""}
+        </article>`).join("")}
+    </div>
+</section>`;
+    }
+
+    function renderMasteryChecklist(items = []) {
+        const filtered = Array.isArray(items) ? items.filter(Boolean).slice(0, 7) : [];
+        if (!filtered.length) {
+            return "";
+        }
+
+        return `
+<section class="premium-learn-section premium-learn-section-rich premium-learn-checklist">
+    <span class="premium-detail-label">Checklist de dominio</span>
+    <h3>Antes de seguir, confira se voce consegue</h3>
+    ${renderBulletList(filtered)}
+</section>`;
+    }
+
+    function renderLearningStudio(block) {
+        const learn = block.learn || {};
+        return [
+            renderComparisonTables(learn.comparisonTables),
+            renderFlowDiagrams(learn.flowDiagrams),
+            renderMnemonics(learn.mnemonics),
+            renderMasteryChecklist(learn.masteryChecklist)
+        ].filter(Boolean).join("");
+    }
+
     function renderAssistPanel(block, assistMode) {
-        if (assistMode === "explain" && block.learn.explainBetter) {
+        const learn = block.learn || {};
+
+        if (assistMode === "explain" && learn.explainBetter) {
             return `
 <section class="premium-learn-section premium-learn-section-rich premium-learn-assist-panel">
     <span class="premium-detail-label">Explicar melhor este assunto</span>
-    <h3>${UI().escapeHtml(block.learn.explainBetter.title)}</h3>
-    ${block.learn.explainBetter.paragraphs.map((paragraph) => `<p>${UI().escapeHtml(paragraph)}</p>`).join("")}
+    <h3>${UI().escapeHtml(learn.explainBetter.title)}</h3>
+    ${(Array.isArray(learn.explainBetter.paragraphs) ? learn.explainBetter.paragraphs : []).map((paragraph) => `<p>${UI().escapeHtml(paragraph)}</p>`).join("")}
 </section>`;
         }
 
-        if (assistMode === "review" && Array.isArray(block.learn.reviewInFivePoints)) {
+        if (assistMode === "review" && Array.isArray(learn.reviewInFivePoints)) {
             return `
 <section class="premium-learn-section premium-learn-section-rich premium-learn-assist-panel">
     <span class="premium-detail-label">Revisar este assunto em 5 pontos</span>
     <h3>Os 5 pontos que mais precisam ficar de pe</h3>
-    ${renderBulletList(block.learn.reviewInFivePoints)}
+    ${renderBulletList(learn.reviewInFivePoints)}
 </section>`;
         }
 
@@ -456,8 +781,9 @@ ${renderSessionNote(state, "mode-select")}`;
     function block(state) {
         const block = Store().getActiveBlock();
         const nextBlockId = Store().getNextBlockId();
-        const documentSections = Array.isArray(block.learn.documentSections) && block.learn.documentSections.length
-            ? block.learn.documentSections
+        const learn = block.learn || {};
+        const documentSections = Array.isArray(learn.documentSections) && learn.documentSections.length
+            ? learn.documentSections
             : [];
         const assistPanel = renderAssistPanel(block, state.blockAssistMode);
         return `
@@ -473,11 +799,13 @@ ${renderSessionNote(state, "mode-select")}`;
                 </div>
                 <div class="premium-inline-actions premium-inline-actions-contextual premium-learn-reader-toggles">
                     <button type="button" class="premium-tab ${state.blockFullScreen ? "" : "is-active"}" data-premium-action="${state.blockFullScreen ? "collapse-block-reader" : "expand-block-reader"}">
-                        ${state.blockFullScreen ? "Sair do full screen" : "Abrir em full screen"}
+                        ${state.blockFullScreen ? "Sair da tela cheia" : "Abrir em tela cheia"}
                     </button>
                 </div>
             </div>
+            ${renderBlockInsightGrid(block)}
             ${renderDocumentSections(documentSections)}
+            ${renderLearningStudio(block)}
             ${assistPanel}
         </article>
         ${UI().actionBar([
@@ -571,7 +899,7 @@ ${renderSessionNote(state, "mode-select")}`;
             </div>
             <div class="premium-inline-actions premium-inline-actions-contextual premium-highlight-reader-toggles">
                 <button type="button" class="premium-tab ${state.highlightEditorFullScreen ? "is-active" : ""}" data-premium-action="${state.highlightEditorFullScreen ? "collapse-highlight-editor" : "expand-highlight-editor"}">
-                    ${state.highlightEditorFullScreen ? "Sair do full screen" : "Abrir em full screen"}
+                    ${state.highlightEditorFullScreen ? "Sair da tela cheia" : "Abrir em tela cheia"}
                 </button>
                 <button type="button" class="premium-tab" data-premium-action="close-highlight-editor">Voltar aos downloads</button>
             </div>
@@ -612,7 +940,7 @@ ${renderSessionNote(state, "mode-select")}`;
             </div>
             <div class="premium-highlight-note">
                 <strong>Documento integral preservado.</strong>
-                <p>O texto ja entra marcado pela IA e voce ajusta tudo aqui dentro: remove trechos, acrescenta marcacoes, apaga palavras, reescreve e prepara a versao final antes de baixar.</p>
+                <p>O texto já entra marcado pela IA e você ajusta tudo aqui dentro: remove trechos, acrescenta marcações, apaga palavras, reescreve e prepara a versão final antes de baixar.</p>
             </div>
             <div class="premium-highlight-doc">
                 ${documentData.sections.map((section, sectionIndex) => `
@@ -647,7 +975,7 @@ ${renderSessionNote(state, "mode-select")}`;
 <section class="premium-saved-shell">
     <article class="premium-empty-library premium-empty-library-locked">
         <span class="premium-panel-kicker">Biblioteca premium</span>
-        <strong>O historico completo de materiais fica liberado no premium.</strong>
+        <strong>O histórico completo de materiais fica liberado no premium.</strong>
         <p>Quando o plano premium estiver ativo, esta area passa a listar todos os PDFs e estudos carregados para consulta e retomada.</p>
     </article>
 </section>`;
@@ -677,7 +1005,7 @@ ${renderSessionNote(state, "mode-select")}`;
                 <p class="premium-learn-lead">${UI().escapeHtml(activeItem.materialName)}</p>
                 <section class="premium-learn-section premium-learn-section-rich">
                     <span class="premium-detail-label">Ultimo estado salvo</span>
-                    <h3>${UI().escapeHtml(activeItem.examDateLabel || "Data da prova nao definida")}</h3>
+                    <h3>${UI().escapeHtml(activeItem.examDateLabel || "Data da prova não definida")}</h3>
                     ${renderBulletList([
                         `Meta registrada: ${Number(activeItem.targetScore || 0).toFixed(1)} / 10`,
                         `Carga planejada: ${activeItem.studyHours || 0}h ${String(activeItem.studyMinutes || 0).padStart(2, "0")}min`,
@@ -693,7 +1021,7 @@ ${renderSessionNote(state, "mode-select")}`;
             ` : `
                 <div class="premium-empty-library">
                     <strong>Sua biblioteca premium fica aqui.</strong>
-                    <p>Quando você carregar materiais, eles passam a ficar guardados nesta área para retomada futura.</p>
+                    <p>Quando você carregar materiais, eles passam a ficar guardados nesta Ã¡rea para retomada futura.</p>
                 </div>
             `}
         </article>
@@ -730,7 +1058,7 @@ ${renderSessionNote(state, "premium-library")}`;
         </label>
         <div class="premium-pdf-tool-cluster">
             <button type="button" class="premium-pdf-tool-button" data-premium-action="pdf-search" aria-label="Buscar" title="Buscar">
-                <span class="premium-pdf-tool-glyph">⌕</span>
+                <span class="premium-pdf-tool-glyph">âŒ•</span>
                 <span class="premium-pdf-tool-label">Buscar</span>
             </button>
             <button type="button" class="premium-pdf-tool-button" data-premium-action="pdf-clear-search" aria-label="Limpar busca" title="Limpar busca">
@@ -740,15 +1068,15 @@ ${renderSessionNote(state, "premium-library")}`;
         </div>
         <div class="premium-pdf-tool-cluster">
             <button type="button" class="premium-pdf-tool-button" data-premium-action="save-pdf-workbench" aria-label="Salvar texto" title="Salvar texto">
-                <span class="premium-pdf-tool-glyph">↧</span>
+                <span class="premium-pdf-tool-glyph">â†§</span>
                 <span class="premium-pdf-tool-label">Salvar</span>
             </button>
             <button type="button" class="premium-pdf-tool-button" data-premium-action="copy-pdf-workbench-text" aria-label="Copiar tudo" title="Copiar tudo">
-                <span class="premium-pdf-tool-glyph">⎘</span>
+                <span class="premium-pdf-tool-glyph">âŽ˜</span>
                 <span class="premium-pdf-tool-label">Copiar</span>
             </button>
-            <button type="button" class="premium-pdf-tool-button" data-premium-action="restore-pdf-workbench-text" aria-label="Voltar ao extraido" title="Voltar ao extraido">
-                <span class="premium-pdf-tool-glyph">↺</span>
+            <button type="button" class="premium-pdf-tool-button" data-premium-action="restore-pdf-workbench-text" aria-label="Voltar ao extraído" title="Voltar ao extraído">
+                <span class="premium-pdf-tool-glyph">â†º</span>
                 <span class="premium-pdf-tool-label">Original</span>
             </button>
         </div>
@@ -781,11 +1109,11 @@ ${renderSessionNote(state, "premium-library")}`;
         </div>
         <div class="premium-pdf-tool-cluster">
             <button type="button" class="premium-pdf-tool-button" data-premium-action="download-original-pdf" aria-label="Baixar PDF original" title="Baixar PDF original" ${state.pdfAssetId ? "" : "disabled"}>
-                <span class="premium-pdf-tool-glyph">↓</span>
+                <span class="premium-pdf-tool-glyph">â†“</span>
                 <span class="premium-pdf-tool-label">Baixar</span>
             </button>
-            <button type="button" class="premium-pdf-tool-button" data-premium-action="${viewerState.fullScreen ? "collapse-pdf-workbench" : "expand-pdf-workbench"}" aria-label="${viewerState.fullScreen ? "Sair do full screen" : "Abrir em full screen"}" title="${viewerState.fullScreen ? "Sair do full screen" : "Abrir em full screen"}">
-                <span class="premium-pdf-tool-glyph">${viewerState.fullScreen ? "⤡" : "⤢"}</span>
+            <button type="button" class="premium-pdf-tool-button" data-premium-action="${viewerState.fullScreen ? "collapse-pdf-workbench" : "expand-pdf-workbench"}" aria-label="${viewerState.fullScreen ? "Sair da tela cheia" : "Abrir em tela cheia"}" title="${viewerState.fullScreen ? "Sair da tela cheia" : "Abrir em tela cheia"}">
+                <span class="premium-pdf-tool-glyph">${viewerState.fullScreen ? "â¤¡" : "â¤¢"}</span>
                 <span class="premium-pdf-tool-label">${viewerState.fullScreen ? "Sair" : "Tela"}</span>
             </button>
         </div>
@@ -795,7 +1123,7 @@ ${renderSessionNote(state, "premium-library")}`;
             <header class="premium-pdf-reader-head">
                 <div>
                     <span class="premium-panel-kicker">Editor do material</span>
-                    <strong>${UI().escapeHtml(state.studyTitle || state.materialName || "Texto extraido")}</strong>
+                    <strong>${UI().escapeHtml(state.studyTitle || state.materialName || "Texto extraído")}</strong>
                 </div>
                 <div class="premium-pdf-reader-meta">
                     <span>${lineCount} linha(s)</span>
@@ -807,7 +1135,7 @@ ${renderSessionNote(state, "premium-library")}`;
                 class="premium-pdf-textarea premium-pdf-rich-editor"
                 contenteditable="true"
                 spellcheck="false"
-                data-placeholder="O texto extraido do PDF aparece aqui para voce editar."
+                data-placeholder="O texto extraído do PDF aparece aqui para você editar."
             >${editorHtml}</div>
             <div class="premium-pdf-support-grid">
                 <section class="premium-pdf-panel premium-pdf-panel-support">
@@ -818,7 +1146,7 @@ ${renderSessionNote(state, "premium-library")}`;
                         <span>${charCount} caracteres</span>
                     </div>
                     <p class="premium-pdf-footnote">${UI().escapeHtml(state.pdfSyncStatus === "synced"
-            ? "PDF e anotacoes sincronizados."
+            ? "PDF e anotações sincronizados."
             : state.pdfSyncStatus === "syncing"
                 ? "Sincronizando workspace."
                 : state.accountAuthenticated
@@ -912,7 +1240,7 @@ ${renderSessionNote(state, "pdf-workbench")}`;
                 <span class="premium-pdf-tool-glyph">C</span>
                 <span class="premium-pdf-tool-label">Copiar</span>
             </button>
-            <button type="button" class="premium-pdf-tool-button" data-premium-action="restore-pdf-workbench-text" aria-label="Voltar ao extraido" title="Voltar ao extraido">
+            <button type="button" class="premium-pdf-tool-button" data-premium-action="restore-pdf-workbench-text" aria-label="Voltar ao extraído" title="Voltar ao extraído">
                 <span class="premium-pdf-tool-glyph">R</span>
                 <span class="premium-pdf-tool-label">Original</span>
             </button>
@@ -953,7 +1281,7 @@ ${renderSessionNote(state, "pdf-workbench")}`;
             <header class="premium-pdf-reader-head">
                 <div>
                     <span class="premium-panel-kicker">Editor do material</span>
-                    <strong>${UI().escapeHtml(state.studyTitle || state.materialName || "Texto extraido")}</strong>
+                    <strong>${UI().escapeHtml(state.studyTitle || state.materialName || "Texto extraído")}</strong>
                 </div>
                 <div class="premium-pdf-reader-meta">
                     <span>${lineCount} linha(s)</span>
@@ -966,7 +1294,7 @@ ${renderSessionNote(state, "pdf-workbench")}`;
                 class="premium-pdf-textarea premium-pdf-rich-editor"
                 contenteditable="true"
                 spellcheck="false"
-                data-placeholder="O texto extraido do PDF aparece aqui para voce editar."
+                data-placeholder="O texto extraído do PDF aparece aqui para você editar."
             >${editorHtml}</div>
             <div class="premium-pdf-support-grid">
                 <section class="premium-pdf-panel premium-pdf-panel-support">
@@ -977,7 +1305,7 @@ ${renderSessionNote(state, "pdf-workbench")}`;
                         <span>${charCount} caracteres</span>
                     </div>
                     <p class="premium-pdf-footnote">${UI().escapeHtml(state.pdfSyncStatus === "synced"
-            ? "PDF e anotacoes sincronizados."
+            ? "PDF e anotações sincronizados."
             : state.pdfSyncStatus === "syncing"
                 ? "Sincronizando workspace."
                 : state.accountAuthenticated
@@ -1038,7 +1366,7 @@ ${renderSessionNote(state, "pdf-workbench")}`;
                 eyebrow: "Premium",
                 title: "Libere continuidade e profundidade.",
                 lead: "O grátis entrega a base. O premium entra quando você quer mais materiais, mais treino e mais continuidade.",
-                benefits: ["Historico completo", "Treinos extras", "Recursos avancados"],
+                benefits: ["Histórico completo", "Treinos extras", "Recursos avançados"],
                 cta: "Conhecer premium"
             });
         const plans = billing && typeof billing.getPlans === "function"
@@ -1054,7 +1382,7 @@ ${renderSessionNote(state, "pdf-workbench")}`;
         });
         const providerStatus = billing && typeof billing.getProviderStatus === "function"
             ? billing.getProviderStatus()
-            : { checkoutReady: false, message: "Checkout real ainda nao foi conectado." };
+            : { checkoutReady: false, message: "Checkout real ainda não foi conectado." };
         const primaryBenefits = Array.isArray(offer.benefits)
             ? offer.benefits.slice(0, 3)
             : [];
@@ -1064,11 +1392,11 @@ ${renderSessionNote(state, "pdf-workbench")}`;
         const scannedPdfExplainer = feature === scannedPdfFeature
             ? `
     <article class="premium-paywall-explainer premium-paywall-explainer-scanned">
-        <span class="premium-panel-kicker">Conversao premium de PDF</span>
-        <strong>Isto nao e erro no sistema.</strong>
-        <p>Seu arquivo parece imagem ou PDF escaneado. No gratis, o editor abre quando o documento ja vem com texto legivel. Para este caso, o premium usa IA para converter o arquivo em texto editavel.</p>
+        <span class="premium-panel-kicker">Conversão premium de PDF</span>
+        <strong>Isto não é erro no sistema.</strong>
+        <p>Seu arquivo parece imagem ou PDF escaneado. No grátis, o editor abre quando o documento já vem com texto legível. Para este caso, o premium usa IA para converter o arquivo em texto editável.</p>
         <ul>
-            <li>Se a leitura gratis nao encontrou texto suficiente, o comportamento esperado e abrir esta oferta.</li>
+            <li>Se a leitura grátis não encontrou texto suficiente, o comportamento esperado é abrir esta oferta.</li>
             <li>Depois da assinatura, o sistema tenta gerar o texto integral e usar essa base para atualizar Aprender, Praticar e Prova.</li>
         </ul>
     </article>`
@@ -1080,14 +1408,14 @@ ${renderSessionNote(state, "pdf-workbench")}`;
                 items: [
                     "Retome qualquer PDF salvo",
                     "Biblioteca completa por objetivo",
-                    "PDFs longos com divisao inteligente"
+                    "PDFs longos com divisão inteligente"
                 ]
             },
             {
                 tone: "depth",
                 title: "Mais profundidade",
                 items: [
-                    "Questionarios extras por assunto",
+                    "Questionários extras por assunto",
                     "V/F extras para pegar pegadinhas",
                     "Flashcards extras com mnemônicos"
                 ]
@@ -1097,19 +1425,19 @@ ${renderSessionNote(state, "pdf-workbench")}`;
                 title: "Mais desempenho",
                 items: [
                     "Mini provas extras por assunto",
-                    "Estatisticas de evolucao e pontos fracos",
-                    "Exportacao dos marcadores em PDF"
+                    "Estatísticas de evolução e pontos fracos",
+                    "Exportação dos marcadores em PDF"
                 ]
             }
         ];
         const comparisonRows = [
             { label: "Ultimo estudo salvo", free: "Sim", premium: "Sim" },
-            { label: "Outros estudos guardados", free: "Nao", premium: "Sim" },
-            { label: "PDFs longos", free: "Ate 12 paginas", premium: "Ilimitado" },
-            { label: "PDF escaneado em texto", free: "Nao", premium: "Sim" },
-            { label: "Questionarios, V/F e flashcards", free: "3 rodadas", premium: "Novas rodadas" },
+            { label: "Outros estudos guardados", free: "Não", premium: "Sim" },
+            { label: "PDFs longos", free: "Até 12 páginas", premium: "Ilimitado" },
+            { label: "PDF escaneado em texto", free: "Não", premium: "Sim" },
+            { label: "Questionários, V/F e flashcards", free: "3 rodadas", premium: "Novas rodadas" },
             { label: "Mini prova do assunto", free: "Base", premium: "Extras" },
-            { label: "Estatisticas e pontos fracos", free: "Nao", premium: "Sim" }
+            { label: "Estatísticas e pontos fracos", free: "Não", premium: "Sim" }
         ];
 
         if (premiumActive) {
@@ -1117,8 +1445,8 @@ ${renderSessionNote(state, "pdf-workbench")}`;
 <section class="premium-paywall-shell">
     <article class="premium-paywall-hero premium-paywall-hero-active">
         <span class="premium-panel-kicker">Premium ativo</span>
-        <h2>Seu workspace completo ja esta liberado.</h2>
-        <p>Agora a experiencia precisa servir o estudo, nao vender acesso. Use a biblioteca, envie materiais longos e retome sua trilha com tudo disponivel.</p>
+        <h2>Seu workspace completo já está liberado.</h2>
+        <p>Agora a experiência precisa servir ao estudo, não vender acesso. Use a biblioteca, envie materiais longos e retome sua trilha com tudo disponível.</p>
         <div class="premium-paywall-benefit-groups" aria-label="Recursos premium ativos">
             ${benefitGroups.map((group) => `
             <article class="premium-paywall-benefit-card premium-paywall-benefit-card-${group.tone}">
@@ -1131,7 +1459,7 @@ ${renderSessionNote(state, "pdf-workbench")}`;
     </article>
     <article class="premium-paywall-status premium-paywall-status-active">
         <strong>Premium confirmado neste workspace</strong>
-        <p>Biblioteca, PDFs extensos, extras de pratica e recursos avancados ja fazem parte da sua rotina daqui para frente.</p>
+        <p>Biblioteca, PDFs extensos, extras de prática e recursos avançados já fazem parte da sua rotina daqui para frente.</p>
     </article>
     ${renderSessionNote(state, "premium-checkout")}
     ${UI().actionBar([
@@ -1145,7 +1473,7 @@ ${renderSessionNote(state, "pdf-workbench")}`;
 <section class="premium-paywall-shell">
     <article class="premium-paywall-hero">
         <span class="premium-panel-kicker">${UI().escapeHtml(offer.eyebrow || "Premium")}</span>
-        <h2>${UI().escapeHtml(offer.title || "Seu historico, seus materiais e seus treinos em um so lugar.")}</h2>
+        <h2>${UI().escapeHtml(offer.title || "Seu histórico, seus materiais e seus treinos em um só lugar.")}</h2>
         <p>${UI().escapeHtml(offer.lead || "Continue qualquer estudo, libere extras por assunto e acompanhe sua evolucao sem perder o fio da trilha.")}</p>
         ${scannedPdfExplainer}
         ${primaryBenefits.length ? `
@@ -1183,10 +1511,10 @@ ${renderSessionNote(state, "pdf-workbench")}`;
     </div>
     <article class="premium-comparison-card">
         <div class="premium-comparison-head">
-            <span class="premium-panel-kicker">Comparativo rapido</span>
-            <strong>O que muda do gratis para o premium</strong>
+            <span class="premium-panel-kicker">Comparativo rápido</span>
+            <strong>O que muda do grátis para o premium</strong>
         </div>
-        <div class="premium-comparison-table" role="table" aria-label="Comparativo gratis e premium">
+        <div class="premium-comparison-table" role="table" aria-label="Comparativo grátis e premium">
             <div class="premium-comparison-row premium-comparison-row-head" role="row">
                 <span role="columnheader">Recurso</span>
                 <span role="columnheader">Gratis</span>
@@ -1202,7 +1530,7 @@ ${renderSessionNote(state, "pdf-workbench")}`;
     </article>
     <article class="premium-paywall-status">
         <strong>${providerStatus.checkoutReady ? "Checkout pronto" : "Checkout em preparacao"}</strong>
-        <p>${UI().escapeHtml(providerStatus.message || "O provedor real sera conectado na proxima etapa.")}</p>
+        <p>${UI().escapeHtml(providerStatus.message || "O provedor real será conectado na próxima etapa.")}</p>
     </article>
     ${renderSessionNote(state, "premium-checkout")}
     ${UI().actionBar([
@@ -1276,9 +1604,9 @@ ${renderSessionNote(state, "pdf-workbench")}`;
             return `
 <section class="premium-result-shell">
     <article class="premium-result-hero premium-result-hero-compact">
-        <span class="premium-detail-label">Questionário concluído</span>
+        <span class="premium-detail-label">Questionário concluÃ­do</span>
         <strong>${seriesMeta.completedCount}/${seriesMeta.freeSeriesLimit}</strong>
-        <p>${seriesMeta.isAllComplete ? "Você concluiu as 3 rodadas grátis deste questionário." : "Você terminou esta rodada. Pode seguir para a próxima grátis."}</p>
+        <p>${seriesMeta.isAllComplete ? "VocÃª concluiu as 3 rodadas grátis deste questionÃ¡rio." : "VocÃª terminou esta rodada. Pode seguir para a prÃ³xima grátis."}</p>
     </article>
     ${UI().actionBar([
         { action: "open-practice", label: "Voltar para prática", variant: "secondary" },
@@ -1404,7 +1732,7 @@ ${renderSessionNote(state, "pdf-workbench")}`;
     <article class="premium-result-hero premium-result-hero-compact">
         <span class="premium-detail-label">Flashcards concluídos</span>
         <strong>${seriesMeta.completedCount}/${seriesMeta.freeSeriesLimit}</strong>
-        <p>${seriesMeta.isAllComplete ? "Você concluiu as 3 rodadas grátis de flashcards." : `Você marcou ${isDone} cards como entendidos nesta rodada.`}</p>
+        <p>${seriesMeta.isAllComplete ? "VocÃª concluiu as 3 rodadas grátis de flashcards." : `Você marcou ${isDone} cards como entendidos nesta rodada.`}</p>
     </article>
     ${UI().actionBar([
         { action: "open-practice", label: "Voltar para prática", variant: "secondary" },
@@ -1445,10 +1773,10 @@ ${renderSessionNote(state, "pdf-workbench")}`;
     <article class="premium-result-hero premium-result-hero-compact">
         <span class="premium-detail-label">Mini prova do assunto</span>
         <strong>${block.exam.questions.length || block.exam.baseCount || 5} questões</strong>
-        <p>${hasHistory ? "Refaça a mesma mini prova deste assunto. Para novas questões e variações, o premium libera extras." : "Gere o pacote base deste assunto agora. Para um volume maior, o premium libera extras."}</p>
+        <p>${hasHistory ? "Refaça a mesma mini prova deste assunto. Para novas questões e variaÃ§Ãµes, o premium libera extras." : "Gere o pacote base deste assunto agora. Para um volume maior, o premium libera extras."}</p>
     </article>
     ${UI().actionBar([
-        { action: hasHistory ? "retry-mini-exam" : "generate-mini-exam", label: hasHistory ? "Refazer mini prova" : `Gerar ${block.exam.questions.length || block.exam.baseCount || 5} questoes`, variant: "primary" },
+        { action: hasHistory ? "retry-mini-exam" : "generate-mini-exam", label: hasHistory ? "Refazer mini prova" : `Gerar ${block.exam.questions.length || block.exam.baseCount || 5} questões`, variant: "primary" },
         { action: "request-extra-mini-exam", label: "Gerar mais 5 no premium", variant: "ghost" }
     ])}
     ${renderSessionNote(state, "mini-exam")}
@@ -1538,9 +1866,9 @@ ${renderSessionNote(state, "pdf-workbench")}`;
             return `
 <section class="premium-result-shell">
     <article class="premium-result-hero">
-        <span class="premium-detail-label">Prova de nivel premium</span>
+        <span class="premium-detail-label">Prova de nível premium</span>
         <strong>${result.ratio}%</strong>
-        <p>${result.correct} de ${result.total} questoes corretas no teste geral.</p>
+        <p>${result.correct} de ${result.total} questões corretas no teste geral.</p>
         <div class="premium-result-badge">${result.ratio >= 75 ? "Pronto para acelerar" : result.ratio >= 50 ? "Base em construcao" : "Volte aos blocos principais"}</div>
     </article>
     ${UI().actionBar([
@@ -1561,7 +1889,7 @@ ${renderSessionNote(state, "pdf-workbench")}`;
 <section class="premium-quiz-shell">
     <div class="premium-question-meta">
         <span>Prova ${exam.index + 1} de ${questions.length}</span>
-        <strong>${UI().escapeHtml(exam.title || "Prova de nivel")}</strong>
+        <strong>${UI().escapeHtml(exam.title || "Prova de nível")}</strong>
     </div>
     <article class="premium-question-card">
         <h2>${UI().escapeHtml(question.prompt)}</h2>
@@ -1597,14 +1925,14 @@ ${renderSessionNote(state, "pdf-workbench")}`;
         return `
 <section class="premium-result-shell">
     <article class="premium-result-hero premium-result-hero-compact">
-        <span class="premium-detail-label">Prova de nivel premium</span>
-        <strong>${exam.questionCount || 10} questoes</strong>
-        <p>Escolha o tamanho da prova para medir sua prontidao geral no PDF.</p>
+        <span class="premium-detail-label">Prova de nível premium</span>
+        <strong>${exam.questionCount || 10} questões</strong>
+        <p>Escolha o tamanho da prova para medir sua prontidão geral no PDF.</p>
     </article>
     <div class="premium-inline-actions premium-inline-actions-contextual">
         ${counts.map((count) => `
         <button type="button" class="premium-action ${Number(exam.questionCount || 10) === count ? "premium-action-primary" : "premium-action-secondary"}" data-premium-action="select-level-exam-count" data-item-value="${count}">
-            ${count} questoes
+            ${count} questões
         </button>`).join("")}
     </div>
     ${UI().actionBar([
@@ -1622,7 +1950,7 @@ ${renderSessionNote(state, "pdf-workbench")}`;
     <article class="premium-result-hero premium-result-hero-compact">
         <span class="premium-detail-label">Progresso geral</span>
         <strong>${progress.ratio}%</strong>
-        <p>${progress.completed} etapas concluídas de ${progress.total} nesta trilha.</p>
+        <p>${progress.completed} etapas concluÃ­das de ${progress.total} nesta trilha.</p>
     </article>
     <div class="premium-trail-list">
         ${state.blocks.map((block) => `

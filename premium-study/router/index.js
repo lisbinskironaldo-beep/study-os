@@ -28,7 +28,13 @@
 
     const STEP_META = {
         entry: {
-            title: "Seu PDF vira uma rota clara até a prova.",
+            title: "Seu PDF vira uma rota clara ate a prova.",
+            titleClass: "premium-stage-title-editorial premium-stage-title-entry",
+            titleHtml: [
+                '<span class="premium-stage-line premium-stage-line-soft premium-stage-line-shift-1">Seu PDF</span>',
+                '<span class="premium-stage-line premium-stage-line-emphasis premium-stage-line-shift-2">vira uma rota</span>',
+                '<span class="premium-stage-line premium-stage-line-tail premium-stage-line-shift-3">clara ate a prova.</span>'
+            ].join(""),
             subtitle: "Carregue o material e comece uma trilha montada para o seu objetivo.",
             label: "Entrada premium",
             showKicker: false,
@@ -37,7 +43,12 @@
             showSummary: false
         },
         "exam-date": {
-            title: "Qual a data da prova?",
+            title: "Qual e a data da sua prova?",
+            titleClass: "premium-stage-title-editorial premium-stage-title-date",
+            titleHtml: [
+                '<span class="premium-stage-line premium-stage-line-soft premium-stage-line-shift-1">Qual e a data</span>',
+                '<span class="premium-stage-line premium-stage-line-emphasis premium-stage-line-shift-3">da sua prova?</span>'
+            ].join(""),
             subtitle: "Escolha a data para o sistema definir a intensidade da trilha.",
             label: "Data da prova",
             backVisible: true,
@@ -46,7 +57,13 @@
             showSummary: false
         },
         "target-score": {
-            title: "Qual nota você quer tirar?",
+            title: "Qual nota voce quer buscar?",
+            titleClass: "premium-stage-title-editorial premium-stage-title-score",
+            titleHtml: [
+                '<span class="premium-stage-line premium-stage-line-soft premium-stage-line-shift-1">Qual nota</span>',
+                '<span class="premium-stage-line premium-stage-line-emphasis premium-stage-line-shift-2">voce quer</span>',
+                '<span class="premium-stage-line premium-stage-line-tail premium-stage-line-shift-3">buscar?</span>'
+            ].join(""),
             subtitle: "Defina a meta para que o plano ajuste foco, ritmo e profundidade.",
             label: "Meta de nota",
             backVisible: true,
@@ -55,16 +72,28 @@
             showSummary: false
         },
         "study-time": {
-            title: "Quanto tempo por dia você vai ter para estudar?",
+            title: "Quanto tempo por dia voce vai ter?",
+            titleClass: "premium-stage-title-editorial premium-stage-title-time",
+            titleHtml: [
+                '<span class="premium-stage-line premium-stage-line-soft premium-stage-line-shift-1">Quanto tempo</span>',
+                '<span class="premium-stage-line premium-stage-line-emphasis premium-stage-line-shift-2">por dia</span>',
+                '<span class="premium-stage-line premium-stage-line-tail premium-stage-line-shift-3">voce vai ter?</span>'
+            ].join(""),
             subtitle: "Ajuste horas e minutos para que o plano respeite sua rotina real.",
-            label: "Tempo diário",
+            label: "Tempo diario",
             backVisible: true,
             progressVisible: true,
             progress: 78,
             showSummary: false
         },
         analysis: {
-            title: "RotaNota está montando o melhor caminho para você.",
+            title: "RotaNota esta montando o melhor caminho para voce.",
+            titleClass: "premium-stage-title-editorial premium-stage-title-analysis",
+            titleHtml: [
+                '<span class="premium-stage-line premium-stage-line-soft premium-stage-line-shift-1">RotaNota</span>',
+                '<span class="premium-stage-line premium-stage-line-emphasis premium-stage-line-shift-2">monta o melhor</span>',
+                '<span class="premium-stage-line premium-stage-line-tail premium-stage-line-shift-3">caminho para voce.</span>'
+            ].join(""),
             subtitle: "Agora o sistema transforma suas escolhas em uma trilha mais objetiva e focada na sua meta.",
             label: "Processamento",
             backVisible: false,
@@ -72,8 +101,14 @@
             showSummary: false
         },
         "mode-select": {
-            title: "Como você quer começar agora?",
-            subtitle: "Escolha o jeito mais natural para entrar no conteúdo neste momento.",
+            title: "Como voce quer começar agora?",
+            titleClass: "premium-stage-title-editorial premium-stage-title-mode",
+            titleHtml: [
+                '<span class="premium-stage-line premium-stage-line-soft premium-stage-line-shift-1">Como voce quer</span>',
+                '<span class="premium-stage-line premium-stage-line-emphasis premium-stage-line-shift-2">comecar</span>',
+                '<span class="premium-stage-line premium-stage-line-tail premium-stage-line-shift-3">agora?</span>'
+            ].join(""),
+            subtitle: "Escolha o jeito mais natural para entrar no conteudo neste momento.",
             label: "Modo inicial",
             backVisible: true,
             progressVisible: false,
@@ -101,8 +136,8 @@
             showKicker: false
         },
         "learn-map": {
-            title: "Escolha o assunto por onde quer começar.",
-            subtitle: "Cada assunto abre um resumo focado no resultado e você pode avançar para o próximo direto de lá.",
+            title: "Escolha o assunto por onde quer comecar.",
+            subtitle: "Cada assunto abre um resumo focado no resultado e voce pode avancar para o proximo direto de la.",
             label: "Aprender",
             backVisible: true,
             progressVisible: false,
@@ -120,18 +155,18 @@
             hideHeading: true
         },
         practice: {
-            title: "Como você quer praticar este bloco?",
+            title: "Como voce quer praticar este bloco?",
             subtitle: "Escolha um formato curto para consolidar o que acabou de estudar.",
-            label: "Prática",
+            label: "Pratica",
             backVisible: true,
             progressVisible: false,
             showSummary: false,
             scrollable: true
         },
         quiz: {
-            title: "Questionário orientado",
-            subtitle: "Uma questão por vez, com leitura limpa e correção objetiva.",
-            label: "Questionário",
+            title: "Questionario orientado",
+            subtitle: "Uma questao por vez, com leitura limpa e correcao objetiva.",
+            label: "Questionario",
             backVisible: true,
             progressVisible: false,
             showSummary: false,
@@ -140,7 +175,7 @@
         },
         "true-false": {
             title: "Verdadeiro ou falso",
-            subtitle: "Teste formulações parecidas e veja onde a banca pode confundir você.",
+            subtitle: "Teste formulacoes parecidas e veja onde a banca pode confundir voce.",
             label: "V ou F",
             backVisible: true,
             progressVisible: false,
@@ -150,7 +185,7 @@
         },
         flashcards: {
             title: "Flashcards do bloco",
-            subtitle: "Revise termos e relações em ciclos curtos de memorização.",
+            subtitle: "Revise termos e relacoes em ciclos curtos de memorizacao.",
             label: "Flashcards",
             backVisible: true,
             progressVisible: false,
@@ -206,7 +241,7 @@
             scrollable: true
         },
         trail: {
-            title: "Sua trilha está pronta para continuar.",
+            title: "Sua trilha esta pronta para continuar.",
             subtitle: "Veja os blocos, retome seu ponto atual e avance com clareza.",
             label: "Sua trilha",
             backVisible: true,
@@ -252,7 +287,7 @@
             }
 
             if (step === "pdf-workbench") {
-                return this.goTo("mode-select");
+                return this.goTo(state.workspaceMode === "convert" ? "entry" : "mode-select");
             }
 
             if (step === "block") {

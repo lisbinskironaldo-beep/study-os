@@ -25,7 +25,7 @@
     const TASK_CONTRACTS = {
         [TASKS.FREE_BUNDLE_FROM_MATERIAL]: {
             prompt: "api/premium/ai-generate.js",
-            cacheKeyParts: ["materialHash", "examDate", "targetScore", "dailyMinutes"]
+            cacheKeyParts: ["materialHash", "pageCount", "examDate", "targetScore", "dailyMinutes", "accessTier"]
         },
         [TASKS.PLAN_FROM_MATERIAL]: {
             prompt: "premium-study/services/ai/prompts/plan.md",

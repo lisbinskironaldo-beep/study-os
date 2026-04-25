@@ -106,8 +106,8 @@
     };
 
     LOCK_MESSAGES[FEATURES.SCANNED_PDF_TEXT] = {
-        title: "PDF escaneado vira texto no premium",
-        message: "No gratis, PDFs textuais abrem no editor quando a leitura local funciona. Para converter PDF escaneado ou imagem em texto editavel com IA, use o premium."
+        title: "Conversao premium de PDF ruim",
+        message: "Use a ferramenta da home para converter PDF escaneado ou de baixa qualidade em texto editavel com IA."
     };
 
     LOCK_MESSAGES[FEATURES.AI_TEXT_HIGHLIGHT] = {
@@ -184,13 +184,13 @@
             cta: "Liberar PDF maior"
         },
         [FEATURES.SCANNED_PDF_TEXT]: {
-            eyebrow: "PDF escaneado",
-            title: "Converta PDF imagem em texto editavel.",
-            lead: "Quando o PDF vier escaneado, o premium usa leitura por IA para transformar o material em texto estavel dentro do editor.",
+            eyebrow: "Conversor premium",
+            title: "Converta PDF ruim em texto editavel.",
+            lead: "Use a ferramenta separada da home para recuperar PDF escaneado ou de baixa qualidade direto no editor.",
             benefits: [
-                "PDF escaneado vira texto utilizavel"
+                "PDF ruim vira texto utilizavel"
             ],
-            cta: "Liberar conversao de PDF"
+            cta: "Liberar conversor premium"
         },
         default: {
             eyebrow: "Premium",

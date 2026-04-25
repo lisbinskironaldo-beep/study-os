@@ -147,7 +147,7 @@
                 await this.runShellActivity({
                     kicker: "Carregando sua trilha",
                     title: "Reconectando estudo, biblioteca e premium",
-                    message: "Estamos recuperando o ultimo estado, validando sua conta e buscando os estudos salvos antes de liberar a interface.",
+                    message: "Estamos recuperando o último estado, validando sua conta e buscando os estudos salvos antes de liberar a interface.",
                     labels: ["Lendo navegador", "Validando conta", "Buscando biblioteca", "Liberando acesso"]
                 }, async () => {
                     await this.hydrateFromStorage();
@@ -252,7 +252,7 @@
                 title: item.title || item.materialName || "Estudo salvo",
                 materialName: item.materialName || "PDF sem nome",
                 examDate: item.examDate || "",
-                examDateLabel: item.examDateLabel || "Data nao definida",
+                examDateLabel: item.examDateLabel || "Data não definida",
                 targetScore: item.targetScore || 7,
                 studyHours: item.studyHours || 1,
                 studyMinutes: item.studyMinutes || 0,
@@ -327,7 +327,7 @@
                 }, executeSync)
                 : executeSync())
                 .catch((error) => {
-                    console.warn("Nao foi possivel sincronizar a biblioteca premium", error);
+                    console.warn("Não foi possível sincronizar a biblioteca premium", error);
                     return store.getState().studyLibrary;
                 })
                 .finally(() => {
@@ -339,6 +339,8 @@
 
         async runHomeAction(action = "") {
             const requestedAction = String(action || "").trim();
+            const store = window.PremiumStudyStore;
+            const access = window.PremiumStudyAccessControl;
 
             if (!requestedAction) {
                 return false;
@@ -350,18 +352,59 @@
                 return false;
             }
 
+            if (requestedAction === "study-entry") {
+                store.patch({
+                    workspaceMode: "study"
+                });
+                store.clearSessionNote();
+                this.render();
+                return true;
+            }
+
             if (requestedAction === "pdf-upload") {
+                store.patch({
+                    workspaceMode: "study"
+                });
+                store.clearSessionNote();
+                this.render();
+                await this.handleAction("open-file-picker", {});
+                return true;
+            }
+
+            if (requestedAction === "pdf-convert") {
+                store.patch({
+                    workspaceMode: "convert"
+                });
+                this.render();
+
+                if (
+                    access &&
+                    !access.canUse(access.FEATURES.SCANNED_PDF_TEXT, store.getState())
+                ) {
+                    this.openPremiumOffer("SCANNED_PDF_TEXT", "entry");
+                    this.render();
+                    return true;
+                }
+
                 await this.handleAction("open-file-picker", {});
                 return true;
             }
 
             if (requestedAction === "pdf-resume") {
+                store.patch({
+                    workspaceMode: "study"
+                });
+                store.clearSessionNote();
                 await this.handleAction("resume-latest-study", {});
                 this.render();
                 return true;
             }
 
             if (requestedAction === "pdf-library") {
+                store.patch({
+                    workspaceMode: "study"
+                });
+                store.clearSessionNote();
                 await this.handleAction("open-premium-library", {});
                 this.render();
                 return true;
@@ -383,7 +426,7 @@
                 success: {
                     tone: "info",
                     title: "Pagamento recebido pelo Mercado Pago",
-                    message: "Estamos aguardando a confirmacao segura do webhook para liberar o premium. Se o pagamento foi aprovado, a liberacao final entra na proxima etapa operacional."
+                    message: "Estamos aguardando a confirmação segura do webhook para liberar o premium. Se o pagamento foi aprovado, a liberacao final entra na próxima etapa operacional."
                 },
                 pending: {
                     tone: "premium",
@@ -392,8 +435,8 @@
                 },
                 failure: {
                     tone: "premium",
-                    title: "Pagamento nÃ£o concluÃ­do",
-                    message: "O pagamento nÃ£o foi aprovado ou foi cancelado. VocÃª pode tentar novamente quando quiser."
+                    title: "Pagamento não concluÃ­do",
+                    message: "O pagamento não foi aprovado ou foi cancelado. Você pode tentar novamente quando quiser."
                 }
             };
             const note = messages[paymentReturn.status] || messages.pending;
@@ -403,7 +446,7 @@
                 eyebrow: "RotaNota Premium",
                 title: paymentReturn.status === "success"
                     ? "Pagamento recebido. Falta a confirmacao segura."
-                    : "Finalize seu acesso premium com seguranÃ§a.",
+                    : "Finalize seu acesso premium com segurança.",
                 lead: "O checkout ja esta conectado ao Mercado Pago. A liberacao definitiva depende do webhook e da fonte de verdade do servidor.",
                 benefits: [
                     "Checkout seguro funcionando",
@@ -457,8 +500,8 @@
             if (paymentStatus === "failure") {
                 return {
                     tone: "premium",
-                    title: "Pagamento nao concluido",
-                    message: "O pagamento foi cancelado ou nao foi aprovado. Quando quiser, voce pode tentar novamente sem perder sua trilha."
+                    title: "Pagamento não concluído",
+                    message: "O pagamento foi cancelado ou não foi aprovado. Quando quiser, você pode tentar novamente sem perder sua trilha."
                 };
             }
 
@@ -599,7 +642,7 @@
                             step: targetStep,
                             tone: "success",
                             title: "Premium liberado",
-                            message: "Pagamento confirmado. Seus recursos premium ja estao ativos e sua trilha continua do ponto onde voce parou."
+                            message: "Pagamento confirmado. Seus recursos premium já estão ativos e sua trilha continua do ponto onde você parou."
                         });
                         this.clearPremiumStatusTimers();
                         const recoveryContext = checkoutContext || this.getCheckoutReturnContext();
@@ -965,6 +1008,33 @@
             return nextFile;
         },
 
+        isPdfMaterial(file) {
+            const validator = window.PremiumStudyPdfValidator;
+            return Boolean(validator && typeof validator.isPdfFile === "function" && validator.isPdfFile(file));
+        },
+
+        isStudyTextMaterial(file) {
+            const validator = window.PremiumStudyPdfValidator;
+            return Boolean(validator && typeof validator.isStudyTextFile === "function" && validator.isStudyTextFile(file));
+        },
+
+        normalizeTextMaterial(rawText = "", file) {
+            const type = String(file && file.type ? file.type : "").toLowerCase();
+            const name = String(file && file.name ? file.name : "").toLowerCase();
+            let normalized = String(rawText || "");
+
+            if (type.includes("html") || name.endsWith(".html") || name.endsWith(".htm") || type.includes("xml") || name.endsWith(".xml")) {
+                const container = document.createElement("div");
+                container.innerHTML = normalized;
+                normalized = container.textContent || container.innerText || "";
+            }
+
+            return normalized
+                .replace(/\r\n/g, "\n")
+                .replace(/\n{3,}/g, "\n\n")
+                .trim();
+        },
+
         summarizeMaterialExtraction(result = {}, options = {}) {
             const text = String(result.text || "").trim();
             const expectedPages = Number(options.pageCount || result.pageCount || 0) || 0;
@@ -1058,7 +1128,7 @@
                 return {
                     ok: false,
                     status: "missing_asset_id",
-                    message: "Nao encontrei o identificador do PDF para preparar a conversao premium."
+                    message: "Não encontrei o identificador do PDF para preparar a conversão premium."
                 };
             }
 
@@ -1093,7 +1163,7 @@
                 status: syncResult && syncResult.status ? syncResult.status : "pdf_sync_failed",
                 message: syncResult && syncResult.message
                     ? syncResult.message
-                    : (currentState.pdfSyncError || "Nao consegui sincronizar o PDF premium para a leitura por IA.")
+                    : (currentState.pdfSyncError || "Não consegui sincronizar o PDF premium para a leitura por IA.")
             };
         },
 
@@ -1117,8 +1187,13 @@
 
             if (
                 !materialFile ||
-                !window.PremiumStudyPdfTextExtractor ||
-                typeof window.PremiumStudyPdfTextExtractor.extractText !== "function"
+                (
+                    !this.isStudyTextMaterial(materialFile) &&
+                    (
+                        !window.PremiumStudyPdfTextExtractor ||
+                        typeof window.PremiumStudyPdfTextExtractor.extractText !== "function"
+                    )
+                )
             ) {
                 return {
                     text: "",
@@ -1127,10 +1202,23 @@
                 };
             }
 
-            const localExtraction = await window.PremiumStudyPdfTextExtractor.extractText(materialFile, {
-                maxChars: Number(options.maxChars || 40000) || 40000,
-                maxPages: Number(options.maxPages || 24) || 24
-            });
+            let localExtraction;
+
+            if (this.isStudyTextMaterial(materialFile) && !this.isPdfMaterial(materialFile)) {
+                const rawText = await materialFile.text();
+                const text = this.normalizeTextMaterial(rawText, materialFile);
+                localExtraction = {
+                    text: text.slice(0, Number(options.maxChars || 40000) || 40000),
+                    status: text ? "extracted_text_file" : "empty_text",
+                    pageCount: 1,
+                    nonEmptyPages: text ? 1 : 0
+                };
+            } else {
+                localExtraction = await window.PremiumStudyPdfTextExtractor.extractText(materialFile, {
+                    maxChars: Number(options.maxChars || 40000) || 40000,
+                    maxPages: Number(options.maxPages || 24) || 24
+                });
+            }
 
             store.setMaterialExtraction(localExtraction);
 
@@ -1723,7 +1811,7 @@ mark { padding: 0 2px; border-radius: 4px; }
                         ? exportState.entries
                         : [];
                 } catch (error) {
-                    console.warn("Nao consegui exportar as anotacoes do PDF", error);
+                    console.warn("Não consegui exportar as anotações do PDF", error);
                 }
             } else {
                 const existing = await window.PremiumStudyStorage.getPdfAnnotations(state.pdfAssetId);
@@ -1801,7 +1889,7 @@ mark { padding: 0 2px; border-radius: 4px; }
             }, file);
 
             if (!result.ok) {
-                store.setPdfSyncError(result.message || "Nao foi possivel sincronizar o PDF agora.");
+                store.setPdfSyncError(result.message || "Não foi possível sincronizar o PDF agora.");
                 this.render();
                 return result;
             }
@@ -1864,8 +1952,8 @@ mark { padding: 0 2px; border-radius: 4px; }
                 store.setSessionNote({
                     step: "pdf-workbench",
                     tone: "premium",
-                    title: "PDF original indisponivel",
-                    message: "Nao encontrei o arquivo original neste navegador nem no servidor."
+                    title: "PDF original indisponível",
+                    message: "Não encontrei o arquivo original neste navegador nem no servidor."
                 });
                 this.render();
                 return;
@@ -1906,8 +1994,8 @@ mark { padding: 0 2px; border-radius: 4px; }
                 store.setSessionNote({
                     step: "pdf-workbench",
                     tone: "premium",
-                    title: "Nao consegui abrir o PDF",
-                    message: "O viewer nao respondeu a tempo. Tente abrir de novo; se persistir, reenvie o arquivo."
+                    title: "Não consegui abrir o PDF",
+                    message: "O viewer não respondeu a tempo. Tente abrir de novo; se persistir, reenvie o arquivo."
                 });
                 this.render();
             }
@@ -1964,7 +2052,7 @@ mark { padding: 0 2px; border-radius: 4px; }
                         }
                     })
                     .catch(() => {
-                        // Se a promocao nao responder, mantemos a oferta base.
+                        // Se a promoção não responder, mantemos a oferta base.
                     });
             }
         },
@@ -1973,8 +2061,9 @@ mark { padding: 0 2px; border-radius: 4px; }
             const store = window.PremiumStudyStore;
             const router = window.PremiumStudyRouter;
             const validator = window.PremiumStudyPdfValidator;
+            const workspaceMode = store.getState().workspaceMode === "convert" ? "convert" : "study";
             const validation = validator
-                ? await validator.validate(file, store.getState())
+                ? await validator.validate(file, store.getState(), { mode: workspaceMode })
                 : { ok: true, pageCount: null };
 
             if (input) {
@@ -1995,18 +2084,37 @@ mark { padding: 0 2px; border-radius: 4px; }
                     store.setSessionNote({
                         step: "premium-checkout",
                         tone: "premium",
-                        title: "PDF acima do limite grÃ¡tis",
+                        title: "PDF acima do limite grátis",
                         message: validation.message
                     });
                 } else {
                     store.setSessionNote({
                         step: store.getState().step,
                         tone: "premium",
-                        title: "PDF nao aceito",
+                        title: "PDF não aceito",
                         message: validation.message || "Tente um PDF textual valido."
                     });
                 }
 
+                this.render();
+                return;
+            }
+
+            if (
+                workspaceMode === "convert" &&
+                window.PremiumStudyAccessControl &&
+                !window.PremiumStudyAccessControl.canUse(
+                    window.PremiumStudyAccessControl.FEATURES.SCANNED_PDF_TEXT,
+                    store.getState()
+                )
+            ) {
+                this.openPremiumOffer("SCANNED_PDF_TEXT", "entry");
+                store.setSessionNote({
+                    step: "premium-checkout",
+                    tone: "premium",
+                    title: "Conversao premium",
+                    message: "A conversao integral de PDF ruim em texto editavel fica no premium."
+                });
                 this.render();
                 return;
             }
@@ -2034,7 +2142,7 @@ mark { padding: 0 2px; border-radius: 4px; }
                     id: materialHash,
                     assetHash: materialHash,
                     fileName: file.name,
-                    mimeType: file.type || "application/pdf",
+                    mimeType: file.type || "application/octet-stream",
                     byteSize: file.size,
                     pageCount: validation.pageCount,
                     source: "local",
@@ -2049,24 +2157,61 @@ mark { padding: 0 2px; border-radius: 4px; }
                 name: file.name,
                 size: file.size,
                 type: file.type,
+                kind: validation.kind || (this.isPdfMaterial(file) ? "pdf" : "text"),
                 pageCount: validation.pageCount,
+                workspaceMode,
                 materialHash,
                 pdfAssetId: materialHash,
                 pdfAssetHash: materialHash,
                 pdfSource: "local",
-                pdfSyncStatus: store.getState().accountAuthenticated ? "syncing" : "local_only"
+                pdfSyncStatus: this.isPdfMaterial(file) && store.getState().accountAuthenticated ? "syncing" : "local_only"
             });
-            this.trackGrowth("pdf_upload_success", {
+            this.trackGrowth(workspaceMode === "convert" ? "pdf_convert_upload_success" : "pdf_upload_success", {
                 materialHash,
                 pageCount: Number(validation.pageCount || 0),
                 metadata: {
                     fileName: file.name || ""
                 }
             });
+
+            if (workspaceMode === "convert") {
+                this.render();
+                const workbenchText = await this.ensurePdfWorkbenchText({
+                    maxChars: 50000,
+                    maxPages: 60,
+                    allowAiFallback: true,
+                    useCache: true,
+                    saveLocalCache: true,
+                    syncProgressLabel: "Preparando o PDF premium antes da conversao em texto editavel.",
+                    aiProgressLabel: "Convertendo o PDF em texto editavel com ajuda da IA."
+                });
+
+                if (!workbenchText) {
+                    store.setSessionNote({
+                        step: "entry",
+                        tone: "premium",
+                        title: "Nao consegui preparar o PDF em texto",
+                        message: this.lastPdfTextFallbackResult && this.lastPdfTextFallbackResult.message
+                            ? this.lastPdfTextFallbackResult.message
+                            : "Nao encontrei texto suficiente para abrir o editor agora."
+                    });
+                    this.render();
+                    return;
+                }
+
+                router.goTo("pdf-workbench");
+                this.render();
+                this.schedulePersist(80);
+                return;
+            }
+
             router.goTo("exam-date");
             this.render();
             this.schedulePersist(80);
-            this.syncPdfAssetToServer(file).catch((error) => console.error(error));
+
+            if (this.isPdfMaterial(file)) {
+                this.syncPdfAssetToServer(file).catch((error) => console.error(error));
+            }
         },
 
         async persistCurrentState() {
@@ -2282,7 +2427,7 @@ ${sections}`
                         const finishId = window.setTimeout(() => {
                             window.PremiumStudyRouter.goTo("mode-select");
                             window.PremiumStudyStore.patch({
-                                progressLabel: "Sua trilha inicial estÃ¡ pronta para vocÃª escolher como quer entrar no conteÃºdo."
+                                progressLabel: "Sua trilha inicial está pronta para você escolher como quer entrar no conteúdo."
                             });
                             this.render();
                             this.schedulePersist(120);
@@ -2305,7 +2450,9 @@ ${sections}`
                     learn.summary,
                     ...(Array.isArray(block.topics) ? block.topics : []),
                     ...(Array.isArray(learn.keyConcepts) ? learn.keyConcepts : []),
-                    ...(Array.isArray(learn.hotPoints) ? learn.hotPoints : [])
+                    ...(Array.isArray(learn.hotPoints) ? learn.hotPoints : []),
+                    ...(Array.isArray(learn.examFocus) ? learn.examFocus : []),
+                    ...(Array.isArray(learn.masteryChecklist) ? learn.masteryChecklist : [])
                 ].filter(Boolean).join("\n");
             }).join("\n\n");
         },
@@ -2424,13 +2571,11 @@ ${sections}`
 
             return {
                 step,
-                tone: needsPremium ? "premium" : "info",
-                title: needsPremium
-                    ? "Este PDF parece imagem e ainda precisa da conversao premium"
-                    : "Ainda nao consegui montar os modos com este PDF",
+                tone: needsPremium ? "info" : "info",
+                title: "Ainda nao consegui montar Aprender, Praticar e Prova",
                 message: needsPremium
-                    ? "O arquivo parece foto, scan ou imagem com pouca camada de texto. O gratis pode ate montar parte do Aprender, mas para abrir o PDF em Texto e transformar esse material em base estavel para Aprender, Praticar e Prova, o premium usa IA."
-                    : "O PDF em Texto ja abriu, mas Aprender, Praticar e Prova ainda nao ficaram prontos. Vamos tentar montar esses modos a partir do texto extraido; se nao der, o arquivo provavelmente esta com qualidade baixa demais."
+                    ? "O arquivo ainda nao entregou texto suficiente para montar os modos automaticamente. O sistema tenta aproveitar o maximo possivel do material."
+                    : "Ainda nao houve texto suficiente para montar os modos automaticamente com este material. O sistema continua tentando aproveitar o maximo possivel do arquivo."
             };
         },
 
@@ -2443,8 +2588,8 @@ ${sections}`
                 targetStep: options.targetStep || currentStep,
                 source: options.source || "",
                 title: options.title || "Preparando Aprender, Praticar e Prova",
-                message: options.message || "Aguarde um instante enquanto o sistema organiza a base do material antes de abrir a proxima aba.",
-                labels: Array.isArray(options.labels) ? options.labels : ["Lendo base", "Montando aprender", "Montando pratica", "Montando prova"],
+                message: options.message || "Aguarde um instante enquanto o sistema organiza a base do material antes de abrir a próxima aba.",
+                labels: Array.isArray(options.labels) ? options.labels : ["Lendo base", "Montando Aprender", "Montando Praticar", "Montando Prova"],
                 progress: Number.isFinite(Number(options.progress)) ? Number(options.progress) : null,
                 startedAt: new Date().toISOString()
             };
@@ -2492,7 +2637,8 @@ ${sections}`
                     extractedText: normalizedText,
                     examDate: state.examDate || "",
                     targetScore: state.targetScore || "",
-                    dailyMinutes
+                    dailyMinutes,
+                    accessTier: state.accessTier || (state.premiumActive ? "premium" : "free")
                 })
                 : { ok: false, status: "ai_unavailable" };
 
@@ -2512,6 +2658,136 @@ ${sections}`
             return result;
         },
 
+        async prepareStudyBaseLayer(options = {}) {
+            const store = window.PremiumStudyStore;
+            const state = store.getState();
+
+            if (!state.materialName) {
+                return {
+                    ok: false,
+                    status: "missing_material"
+                };
+            }
+
+            if (!options.forceRegenerate && this.hasGeneratedStudyModes()) {
+                return {
+                    ok: true,
+                    status: "already_ready"
+                };
+            }
+
+            store.setAnalysisProgress(Math.max(18, Number(store.getState().analysisProgress || 0)), "running");
+            store.patch({
+                progressLabel: "Material recebido. Agora estamos destravando o texto-base antes de organizar a trilha."
+            });
+
+            const extractedText = await this.ensureMaterialText({
+                maxChars: Number(options.maxChars || (state.accessTier === "premium" ? 90000 : 30000)) || 30000,
+                maxPages: Number(options.maxPages || (state.accessTier === "premium" ? 160 : 12)) || 12,
+                allowAiFallback: options.allowAiFallback !== false,
+                useCache: options.useCache !== false,
+                saveLocalCache: options.saveLocalCache !== false,
+                cacheWeakLocal: options.cacheWeakLocal !== false,
+                syncProgressLabel: options.syncProgressLabel || "Tentando destravar mais texto do material antes de montar a trilha.",
+                aiProgressLabel: options.aiProgressLabel || "Tentando ler melhor o material para montar Aprender, Praticar e Prova."
+            });
+
+            const normalizedText = String(extractedText || "").trim();
+            const summary = this.summarizeMaterialExtraction({
+                text: normalizedText,
+                pageCount: state.materialPageCount || 0
+            }, {
+                pageCount: state.materialPageCount || 0
+            });
+
+            store.setAnalysisProgress(Math.max(46, Number(store.getState().analysisProgress || 0)), "running");
+            store.patch({
+                progressLabel: normalizedText
+                    ? "Texto-base extraido. Agora estamos separando os eixos do material para montar a trilha."
+                    : "Ainda estamos tentando destravar texto suficiente para montar a trilha."
+            });
+
+            store.patch({
+                aiGeneration: {
+                    status: "base_preparing",
+                    provider: "",
+                    model: "",
+                    promptVersion: window.PremiumStudyAI ? window.PremiumStudyAI.PROMPT_VERSION : "",
+                    generatedAt: new Date().toISOString(),
+                    textLength: summary.textLength,
+                    source: options.source || "base_layer"
+                }
+            });
+
+            if (!normalizedText) {
+                store.patch({
+                    aiGeneration: {
+                        status: "base_missing_text",
+                        provider: "",
+                        model: "",
+                        promptVersion: window.PremiumStudyAI ? window.PremiumStudyAI.PROMPT_VERSION : "",
+                        generatedAt: new Date().toISOString(),
+                        textLength: 0,
+                        source: options.source || "base_layer"
+                    }
+                });
+                return {
+                    ok: false,
+                    status: "missing_text"
+                };
+            }
+
+            store.setAnalysisProgress(Math.max(72, Number(store.getState().analysisProgress || 0)), "running");
+            store.patch({
+                progressLabel: "Texto-base pronto. A IA agora esta montando Aprender, Praticar e Prova em blocos de estudo."
+            });
+
+            const bundleResult = await this.generateBundleFromMaterialText(normalizedText, {
+                source: options.source || "base_layer"
+            });
+
+            if (bundleResult && bundleResult.ok && bundleResult.bundle) {
+                store.setAnalysisProgress(Math.max(92, Number(store.getState().analysisProgress || 0)), "running");
+                store.patch({
+                    aiGeneration: {
+                        status: "base_ready",
+                        provider: bundleResult.provider || "",
+                        model: bundleResult.model || "",
+                        promptVersion: bundleResult.promptVersion || (window.PremiumStudyAI ? window.PremiumStudyAI.PROMPT_VERSION : ""),
+                        generatedAt: new Date().toISOString(),
+                        textLength: summary.textLength,
+                        source: options.source || "base_layer",
+                        blockCount: Array.isArray(bundleResult.bundle.blocks) ? bundleResult.bundle.blocks.length : 0
+                    },
+                    progressLabel: "Camada base do estudo pronta. Aprender, Praticar e Prova ja ficaram preparados para abrir no clique."
+                });
+                return {
+                    ok: true,
+                    status: "base_ready",
+                    text: normalizedText,
+                    bundle: bundleResult.bundle
+                };
+            }
+
+            store.patch({
+                aiGeneration: {
+                    status: bundleResult && bundleResult.status ? bundleResult.status : "base_failed",
+                    provider: bundleResult && bundleResult.provider ? bundleResult.provider : "",
+                    model: bundleResult && bundleResult.model ? bundleResult.model : "",
+                    promptVersion: bundleResult && bundleResult.promptVersion ? bundleResult.promptVersion : (window.PremiumStudyAI ? window.PremiumStudyAI.PROMPT_VERSION : ""),
+                    generatedAt: new Date().toISOString(),
+                    textLength: summary.textLength,
+                    source: options.source || "base_layer"
+                }
+            });
+
+            return {
+                ok: false,
+                status: bundleResult && bundleResult.status ? bundleResult.status : "bundle_generation_failed",
+                text: normalizedText
+            };
+        },
+
         async recoverPremiumScannedPdfFlow(options = {}) {
             const store = window.PremiumStudyStore;
             const router = window.PremiumStudyRouter;
@@ -2529,7 +2805,7 @@ ${sections}`
                 targetStep,
                 source: options.forceRegenerate ? "premium_scanned_pdf_force" : "premium_scanned_pdf_unlock",
                 title: "Preparando os modos com o PDF premium",
-                message: "Seu documento parece imagem ou escaneado. Agora que o premium foi liberado, estamos convertendo o texto e atualizando Aprender, Praticar e Prova antes de liberar a proxima tela.",
+                message: "Seu documento parece imagem ou escaneado. Agora que o premium foi liberado, estamos convertendo o texto e atualizando Aprender, Praticar e Prova antes de liberar a próxima tela.",
                 labels: ["Sincronizando PDF", "Convertendo texto", "Montando blocos", "Liberando modos"]
             }, async () => {
                 const extractedText = await this.ensureMaterialText({
@@ -2540,7 +2816,7 @@ ${sections}`
                     saveLocalCache: true,
                     cacheWeakLocal: true,
                     syncProgressLabel: "Preparando o PDF premium no servidor antes da leitura integral.",
-                    aiProgressLabel: "O premium esta convertendo o PDF em texto editavel com ajuda da IA."
+                    aiProgressLabel: "O premium está convertendo o PDF em texto editável com ajuda da IA."
                 });
 
                 const normalizedText = String(extractedText || "").trim();
@@ -2548,8 +2824,8 @@ ${sections}`
                     store.setSessionNote({
                         step: targetStep,
                         tone: "premium",
-                        title: "Nao consegui converter o PDF agora",
-                        message: "A liberacao premium foi concluida, mas este PDF em imagem ainda nao gerou texto suficiente. Tente novamente em instantes ou use um arquivo mais nitido."
+                        title: "Não consegui converter o PDF agora",
+                        message: "A liberação premium foi concluída, mas este PDF em imagem ainda não gerou texto suficiente. Tente novamente em instantes ou use um arquivo mais nítido."
                     });
                     return {
                         ok: false,
@@ -2573,7 +2849,7 @@ ${sections}`
                         step: targetStep,
                         tone: "success",
                         title: "Texto premium pronto",
-                        message: "O PDF foi convertido em texto editavel. Como voce ja tinha progresso na trilha, mantivemos seus modos atuais sem regenerar os blocos."
+                        message: "O PDF foi convertido em texto editável. Como você já tinha progresso na trilha, mantivemos seus modos atuais sem regenerar os blocos."
                     });
                     this.schedulePersist(120);
                     return {
@@ -2583,7 +2859,7 @@ ${sections}`
                 }
 
                 store.patch({
-                    progressLabel: "Atualizando Aprender, Praticar e Prova com o texto premium extraido do PDF."
+                    progressLabel: "Atualizando Aprender, Praticar e Prova com o texto premium extraído do PDF."
                 });
                 this.render();
 
@@ -2599,7 +2875,7 @@ ${sections}`
                         step: targetStep,
                         tone: "success",
                         title: "Texto premium pronto. Modos atualizados.",
-                        message: "Aprender, Praticar e Prova foram regenerados a partir do texto extraido deste PDF em imagem."
+                        message: "Aprender, Praticar e Prova foram regenerados a partir do texto extraído deste PDF em imagem."
                     });
                     this.schedulePersist(120);
                     return {
@@ -2612,7 +2888,7 @@ ${sections}`
                     step: targetStep,
                     tone: "info",
                     title: "Texto premium pronto",
-                    message: "O PDF foi convertido em texto editavel. A trilha completa ainda nao foi regenerada agora, mas o texto integral ja ficou disponivel no editor."
+                    message: "O PDF foi convertido em texto editável. A trilha completa ainda não foi regenerada agora, mas o texto integral já ficou disponível no editor."
                 });
                 this.schedulePersist(120);
 
@@ -2625,10 +2901,9 @@ ${sections}`
 
         async ensureStudyModesReady(targetStep = "mode-select", options = {}) {
             const store = window.PremiumStudyStore;
-            const state = store.getState();
             const normalizedTargetStep = targetStep || "mode-select";
 
-            if (state.modePreparation && state.modePreparation.active) {
+            if (store.getState().modePreparation && store.getState().modePreparation.active) {
                 return {
                     ok: false,
                     status: "mode_preparation_active"
@@ -2642,44 +2917,29 @@ ${sections}`
                 };
             }
 
-            const sourceText = String(
-                state.pdfWorkbenchText ||
-                state.materialExtractedText ||
-                ""
-            ).trim();
-
-            if (!sourceText) {
-                store.setSessionNote(this.buildLowQualityPdfNote(normalizedTargetStep, {
-                    needsPremium: !state.accessTier || state.accessTier !== "premium"
-                }));
-                return {
-                    ok: false,
-                    status: "missing_source_text"
-                };
-            }
-
             return this.runModePreparation({
                 targetStep: normalizedTargetStep,
-                source: options.source || "mode_open_recovery",
-                title: "Preparando os modos a partir do PDF em Texto",
-                message: "Encontramos texto suficiente no editor. Aguarde um instante enquanto Aprender, Praticar e Prova sao montados antes de abrir a aba escolhida.",
-                labels: ["Lendo editor", "Montando aprender", "Montando pratica", "Montando prova"]
+                source: options.source || "base_layer_retry",
+                title: "Preparando a camada base do estudo",
+                message: "Estamos tentando montar Aprender, Praticar e Prova antes de abrir a aba escolhida.",
+                labels: ["Lendo material", "Montando Aprender", "Montando Praticar", "Montando Prova"]
             }, async () => {
-                const bundleResult = await this.generateBundleFromMaterialText(sourceText, {
-                    source: options.source || "mode_open_recovery"
+                const baseResult = await this.prepareStudyBaseLayer({
+                    source: options.source || "base_layer_retry",
+                    forceRegenerate: options.forceRegenerate === true
                 });
 
-                if (bundleResult && bundleResult.ok && bundleResult.bundle) {
+                if (baseResult && baseResult.ok) {
                     store.setSessionNote({
                         step: normalizedTargetStep,
                         tone: "success",
-                        title: "Modos atualizados com o texto do PDF",
-                        message: "Aprender, Praticar e Prova foram montados a partir do texto extraido do editor."
+                        title: "Camada base pronta",
+                        message: "Aprender, Praticar e Prova ficaram preparados e agora so aguardam o seu clique."
                     });
                     this.schedulePersist(120);
                     return {
                         ok: true,
-                        status: "generated_from_pdf_text"
+                        status: baseResult.status || "base_ready"
                     };
                 }
 
@@ -2688,7 +2948,7 @@ ${sections}`
                 }));
                 return {
                     ok: false,
-                    status: bundleResult && bundleResult.status ? bundleResult.status : "bundle_generation_failed"
+                    status: baseResult && baseResult.status ? baseResult.status : "base_layer_failed"
                 };
             });
         },
@@ -2696,51 +2956,34 @@ ${sections}`
         async startAnalysisSequence() {
             this.clearAnalysisTimers();
             const store = window.PremiumStudyStore;
-            const state = store.getState();
-            store.setAnalysisProgress(12, "running");
+            store.setAnalysisProgress(8, "running");
             store.patch({
-                progressLabel: "Lendo o PDF e preparando uma rota unica de estudo."
+                progressLabel: "Recebemos o material. Agora vamos medir o porte do conteudo e preparar a camada base do estudo."
             });
             this.render();
 
             try {
-                store.setAnalysisProgress(28, "running");
-                this.render();
-                const extractedText = await this.ensureMaterialText({
-                    maxChars: 22000,
-                    maxPages: state.accessTier === "premium" ? 40 : 12,
-                    allowAiFallback: false,
-                    useCache: false,
-                    saveLocalCache: false
-                });
-
-                store.setAnalysisProgress(52, "running");
-                store.patch({
-                    progressLabel: "A IA esta montando blocos, praticas e mini provas a partir do material."
-                });
-                this.render();
-
-                const result = await this.generateBundleFromMaterialText(extractedText, {
+                const result = await this.prepareStudyBaseLayer({
                     source: "analysis_sequence"
                 });
 
-                store.setAnalysisProgress(82, "running");
-                if (!(result && result.ok && result.bundle)) {
+                store.setAnalysisProgress(96, "running");
+                if (!(result && result.ok)) {
                     store.patch({
-                        aiGeneration: {
-                            status: result && result.status ? result.status : "fallback",
-                            provider: result && result.provider ? result.provider : "",
-                            model: result && result.model ? result.model : "",
-                            promptVersion: result && result.promptVersion ? result.promptVersion : "",
-                            generatedAt: new Date().toISOString()
-                        },
-                        progressLabel: "Nao consegui acionar a IA agora. Mantive uma rota local para voce continuar estudando."
+                        progressLabel: "Ainda nao consegui deixar a camada base pronta. Mantive o estudo aberto para continuar tentando."
                     });
                     store.setSessionNote({
                         step: "mode-select",
                         tone: "info",
-                        title: "IA em modo fallback",
-                        message: "O PDF abriu com o pacote local. Tente novamente mais tarde para gerar conteudo totalmente baseado no texto."
+                        title: "Camada base ainda incompleta",
+                        message: "Ainda nao consegui deixar Aprender, Praticar e Prova prontos. O sistema continua tentando aproveitar o maximo possivel do material."
+                    });
+                } else {
+                    store.setSessionNote({
+                        step: "mode-select",
+                        tone: "success",
+                        title: "Camada base pronta",
+                        message: "Aprender, Praticar e Prova ja ficaram preparados e agora so aguardam o seu clique."
                     });
                 }
 
@@ -2751,13 +2994,13 @@ ${sections}`
             } catch (error) {
                 store.setAnalysisProgress(100, "done");
                 store.patch({
-                    progressLabel: "A rota local esta pronta. A IA nao respondeu desta vez."
+                    progressLabel: "Ainda nao consegui fechar a camada base do estudo."
                 });
                 store.setSessionNote({
                     step: "mode-select",
                     tone: "info",
-                    title: "IA indisponivel agora",
-                    message: "Mantive uma rota base para voce nao perder o fluxo. Quando a IA responder, ela gera o pacote completo do PDF."
+                    title: "Camada base ainda incompleta",
+                    message: "A IA nao respondeu como esperado. O estudo continua aberto e podemos tentar montar a base novamente."
                 });
                 window.PremiumStudyRouter.goTo("mode-select");
                 this.render();
@@ -2800,6 +3043,10 @@ ${sections}`
                 return "entry";
             }
 
+            if (snapshot.workspaceMode === "convert") {
+                return snapshot.pdfWorkbenchText ? "pdf-workbench" : "entry";
+            }
+
             if (
                 !snapshot.step ||
                 snapshot.step === "entry" ||
@@ -2819,7 +3066,7 @@ ${sections}`
             return this.runShellActivity({
                 kicker: "Abrindo estudo salvo",
                 title: "Preparando o material da biblioteca",
-                message: "Estamos restaurando o estudo, aplicando o ultimo snapshot salvo e reposicionando voce exatamente no ponto certo.",
+                message: "Estamos restaurando o estudo, aplicando o último snapshot salvo e reposicionando você exatamente no ponto certo.",
                 labels: ["Lendo snapshot", "Montando sessoes", "Restaurando modo", "Abrindo estudo"]
             }, async () => {
                 store.restoreFromSnapshot({
@@ -2932,6 +3179,7 @@ ${sections}`
             switch (action) {
             case "close":
                 this.clearAnalysisTimers();
+                const workspaceMode = store.getState().workspaceMode === "convert" ? "convert" : "study";
                 if (
                     store.getState().materialName &&
                     store.getState().step !== "entry" &&
@@ -2941,7 +3189,7 @@ ${sections}`
                     store.getState().step !== "study-time" &&
                     store.getState().step !== "analysis"
                 ) {
-                    router.goTo("mode-select");
+                    router.goTo(workspaceMode === "convert" ? "entry" : "mode-select");
                     this.render();
                     await this.syncNativeFullScreen();
                     await this.flushPersist();
@@ -2969,6 +3217,13 @@ ${sections}`
                     this.fileInput.click();
                 }
                 return;
+            case "switch-to-study-entry":
+                store.patch({
+                    workspaceMode: "study"
+                });
+                router.goTo("entry");
+                shouldPersist = true;
+                break;
             case "resume-latest-study": {
                 const latestDraft = await window.PremiumStudyStorage.getLatestDraft();
                 if (latestDraft && latestDraft.snapshot) {
@@ -3083,8 +3338,8 @@ ${sections}`
                         store.setSessionNote({
                             step: "premium-checkout",
                             tone: "premium",
-                            title: "Isto nao e erro: este PDF precisa da conversao premium",
-                            message: "Este arquivo parece imagem ou escaneado. No gratis, o editor abre PDFs textuais quando a leitura local funciona. Para transformar este documento em texto editavel com IA, use o premium."
+                            title: "Isto não é erro: este PDF precisa da conversão premium",
+                            message: "Este arquivo parece imagem ou escaneado. No grátis, o editor abre PDFs textuais quando a leitura local funciona. Para transformar este documento em texto editável com IA, use o premium."
                         });
                         openPremiumOffer("SCANNED_PDF_TEXT");
                         shouldPersist = true;
@@ -3097,7 +3352,7 @@ ${sections}`
                             useCache: true,
                             saveLocalCache: true,
                             syncProgressLabel: "Preparando o PDF premium no servidor antes da leitura integral.",
-                            aiProgressLabel: "O premium esta convertendo o PDF em texto editavel com ajuda da IA."
+                            aiProgressLabel: "O premium está convertendo o PDF em texto editável com ajuda da IA."
                         });
                     }
 
@@ -3122,11 +3377,11 @@ ${sections}`
                             step: "mode-select",
                             tone: "info",
                             title: fallbackFailure && fallbackFailure.status
-                                ? "Nao consegui preparar o PDF em texto"
-                                : "Nao consegui extrair o texto",
+                                ? "Não consegui preparar o PDF em texto"
+                                : "Não consegui extrair o texto",
                             message: fallbackFailure && fallbackFailure.message
                                 ? fallbackFailure.message
-                                : "Nao encontrei texto suficiente no PDF para abrir o editor agora. Tente novamente mais tarde ou use um arquivo mais nitido."
+                                : "Não encontrei texto suficiente no PDF para abrir o editor agora. Tente novamente mais tarde ou use um arquivo mais nítido."
                         });
                         shouldPersist = true;
                         break;
@@ -3301,8 +3556,8 @@ ${sections}`
                         store.setSessionNote({
                             step: "pdf-workbench",
                             tone: "info",
-                            title: "Trecho nao encontrado",
-                            message: "Nao localizei esse termo no texto extraido."
+                            title: "Trecho não encontrado",
+                            message: "Não localizei esse termo no texto extraído."
                         });
                         this.render();
                     }
@@ -3339,7 +3594,7 @@ ${sections}`
                         store.setSessionNote({
                             step: "pdf-workbench",
                             tone: "premium",
-                            title: "Nao consegui copiar",
+                            title: "Não consegui copiar",
                             message: "O navegador bloqueou a copia automatica."
                         });
                     }
@@ -3365,7 +3620,7 @@ ${sections}`
             case "save-pdf-workbench":
                 {
                     const currentTitle = store.getState().studyTitle || store.getState().materialName || "Documento";
-                    const nextTitle = window.prompt("Como voce quer salvar este arquivo?", currentTitle);
+                    const nextTitle = window.prompt("Como você quer salvar este arquivo?", currentTitle);
                     if (nextTitle === null) {
                         break;
                     }
@@ -3392,8 +3647,8 @@ ${sections}`
                     tone: "info",
                     title: "Texto salvo",
                     message: store.getState().accountAuthenticated
-                        ? "Salvo neste navegador e sincronizado com a sua conta na Biblioteca premium. Hoje a biblioteca ainda nao tem pastas."
-                        : "Salvo neste navegador e atualizado no item atual da Biblioteca premium deste navegador. Hoje a biblioteca ainda nao tem pastas."
+                        ? "Salvo neste navegador e sincronizado com a sua conta na Biblioteca premium. Hoje a biblioteca ainda não tem pastas."
+                        : "Salvo neste navegador e atualizado no item atual da Biblioteca premium deste navegador. Hoje a biblioteca ainda não tem pastas."
                 });
                 this.render();
                 shouldPersist = false;
@@ -3437,7 +3692,7 @@ ${sections}`
                         step: "pdf-workbench",
                         tone: "premium",
                         title: "Nada para baixar",
-                        message: "Ainda nao encontrei conteudo editado suficiente para gerar o arquivo."
+                        message: "Ainda não encontrei conteúdo editado suficiente para gerar o arquivo."
                     });
                     this.render();
                 }
@@ -3491,7 +3746,7 @@ ${sections}`
                         step: "pdf-workbench",
                         tone: "info",
                         title: "IA sem retorno agora",
-                        message: result.message || "Nao consegui gerar os grifos contextualizados neste momento."
+                        message: result.message || "Não consegui gerar os grifos contextualizados neste momento."
                     });
                     this.render();
                 }
@@ -3606,7 +3861,7 @@ ${sections}`
                         store.setSessionNote({
                             step: "highlight-preview",
                             tone: "premium",
-                            title: "Nao consegui copiar agora",
+                            title: "Não consegui copiar agora",
                             message: "O navegador bloqueou a copia automatica deste trecho."
                         });
                     }
@@ -3666,7 +3921,7 @@ ${sections}`
                         step: "premium-checkout",
                         tone: "info",
                         title: "Continuando sem login Google",
-                        message: "O login Google nao esta configurado neste ambiente. O checkout foi liberado mesmo assim."
+                        message: "O login Google não está configurado neste ambiente. O checkout foi liberado mesmo assim."
                     });
                     this.render();
                 }
@@ -3687,7 +3942,7 @@ ${sections}`
                         feature: store.getState().premiumOffer && store.getState().premiumOffer.feature,
                         sourceStep: store.getState().returnStep
                     })
-                    : { status: "not_configured", message: "Checkout real ainda nao foi conectado." };
+                    : { status: "not_configured", message: "Checkout real ainda não foi conectado." };
 
                 if (checkout && checkout.ok && checkout.checkoutUrl) {
                     return;
@@ -3696,8 +3951,8 @@ ${sections}`
                 store.setSessionNote({
                     step: store.getState().step,
                     tone: "premium",
-                    title: "Nao foi possivel abrir o checkout",
-                    message: checkout.message || "O checkout nao respondeu corretamente agora. Tente de novo em instantes."
+                    title: "Não foi possível abrir o checkout",
+                    message: checkout.message || "O checkout não respondeu corretamente agora. Tente de novo em instantes."
                 });
                 shouldPersist = true;
                 break;
@@ -3827,7 +4082,7 @@ ${sections}`
                 store.setSessionNote({
                     step: "mini-exam",
                     tone: "info",
-                    title: "Gerando mais 5 questoes",
+                    title: "Gerando mais 5 questões",
                     message: "A IA esta criando uma nova rodada premium para este bloco."
                 });
                 this.render();
@@ -3853,8 +4108,8 @@ ${sections}`
                         store.setSessionNote({
                             step: "mini-exam",
                             tone: "premium",
-                            title: "Nao foi possivel gerar agora",
-                            message: "A IA nao retornou novas questoes. Tente novamente em alguns instantes."
+                            title: "Não foi possível gerar agora",
+                            message: "A IA não retornou novas questões. Tente novamente em alguns instantes."
                         });
                     }
                 }
@@ -3883,7 +4138,7 @@ ${sections}`
                     step: "level-exam",
                     tone: "info",
                     title: "Gerando prova premium",
-                    message: "A IA esta montando uma prova de nivel com base na sua rota."
+                    message: "A IA está montando uma prova de nível com base na sua rota."
                 });
                 this.render();
                 {
@@ -3909,21 +4164,21 @@ ${sections}`
 
                         if (fallbackQuestions.length) {
                             store.setLevelExamQuestions({
-                                title: "Prova de nivel do material",
+                                title: "Prova de nível do material",
                                 questions: fallbackQuestions
                             });
                             store.setSessionNote({
                                 step: "level-exam",
                                 tone: "info",
                                 title: "Prova pronta com base na sua trilha",
-                                message: "A IA da prova nao respondeu com um conjunto valido agora. Montamos a prova usando as questoes e verificacoes dos blocos que ja estavam prontos."
+                                message: "A IA da prova não respondeu com um conjunto válido agora. Montamos a prova usando as questões e verificações dos blocos que já estavam prontos."
                             });
                         } else {
                             store.setSessionNote({
                                 step: "level-exam",
                                 tone: "premium",
-                                title: "Nao foi possivel gerar a prova",
-                                message: "A IA nao retornou uma prova valida e a trilha ainda nao tinha questoes suficientes para montar um fallback local."
+                                title: "Não foi possível gerar a prova",
+                                message: "A IA não retornou uma prova válida e a trilha ainda não tinha questões suficientes para montar um fallback local."
                             });
                         }
                     }
@@ -4058,7 +4313,7 @@ ${sections}`
                 break;
             case "rename-study": {
                 const currentTitle = store.getState().studyTitle || store.getState().materialName || "Estudo personalizado";
-                const nextTitle = window.prompt("Como vocÃª quer chamar este estudo?", currentTitle);
+                const nextTitle = window.prompt("Como você quer chamar este estudo?", currentTitle);
                 if (nextTitle && nextTitle.trim()) {
                     store.setStudyTitle(nextTitle);
                     shouldPersist = true;
@@ -4091,7 +4346,7 @@ ${sections}`
                 store.setSessionNote({
                     step: store.getState().step,
                     tone: "info",
-                    title: "Criacao extra ainda nao entrou nesta fase",
+                    title: "Criação extra ainda não entrou nesta fase",
                     message: "Nesta etapa, o foco continua no pacote base do assunto. A geracao dinamica extra entra junto da operacao premium."
                 });
                 shouldPersist = true;
@@ -4167,6 +4422,19 @@ ${sections}`
             const meta = {
                 ...window.PremiumStudyRouter.getMeta(step)
             };
+            const workspaceMode = state.workspaceMode === "convert" ? "convert" : "study";
+
+            if (step === "entry" && workspaceMode === "convert") {
+                meta.title = "Converter PDF ruim em texto editavel.";
+                meta.subtitle = "Use esta ferramenta premium para recuperar PDF escaneado ou de baixa qualidade no editor.";
+                meta.label = "Conversor premium";
+                meta.titleClass = "premium-stage-title-editorial premium-stage-title-entry";
+                meta.titleHtml = [
+                    '<span class="premium-stage-line premium-stage-line-soft premium-stage-line-shift-1">Converter</span>',
+                    '<span class="premium-stage-line premium-stage-line-emphasis premium-stage-line-shift-2">PDF ruim</span>',
+                    '<span class="premium-stage-line premium-stage-line-tail premium-stage-line-shift-3">em texto editavel.</span>'
+                ].join("");
+            }
             const headerActions = step === "pdf-workbench"
                 ? [
                     {

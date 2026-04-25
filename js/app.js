@@ -434,6 +434,11 @@ const Core = {
 
             btn.addEventListener("click", () => {
 
+                if (btn.dataset.premiumHomeAction) {
+                    window.RotaNotaPremiumHomeAction =
+                        btn.dataset.premiumHomeAction;
+                }
+
                 const module = btn.dataset.module;
                 this.navigate(module);
             });
@@ -1053,6 +1058,11 @@ applyPendingQuestionsNotice()
 }
 
    if (target === "premium-study") {
+
+if (!window.RotaNotaPremiumHomeAction) {
+window.RotaNotaPremiumHomeAction =
+    "study-entry"
+}
 
 this.activateExternalModule("premium-study")
 this.showPremiumStudyLoading()
@@ -2604,6 +2614,8 @@ return
 
         if (
             safeAction === "pdf-upload" ||
+            safeAction === "study-entry" ||
+            safeAction === "pdf-convert" ||
             safeAction === "pdf-resume" ||
             safeAction === "pdf-library"
         ) {

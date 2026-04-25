@@ -4,12 +4,42 @@
     }
 
     const PDF_HEADER_BYTES = "%PDF";
+    const STUDY_TEXT_EXTENSIONS = [".txt", ".md", ".markdown", ".csv", ".json", ".html", ".htm", ".xml"];
+    const STUDY_TEXT_MIME_PREFIXES = ["text/"];
+    const STUDY_TEXT_MIME_TYPES = [
+        "application/json",
+        "application/ld+json",
+        "application/xml"
+    ];
+
+    function getFileName(file) {
+        return String(file && file.name ? file.name : "").toLowerCase();
+    }
+
+    function getFileType(file) {
+        return String(file && file.type ? file.type : "").toLowerCase();
+    }
 
     function isPdfFile(file) {
-        const name = String(file && file.name ? file.name : "").toLowerCase();
-        const type = String(file && file.type ? file.type : "").toLowerCase();
+        const name = getFileName(file);
+        const type = getFileType(file);
 
         return name.endsWith(".pdf") || type === "application/pdf";
+    }
+
+    function isStudyTextFile(file) {
+        const name = getFileName(file);
+        const type = getFileType(file);
+
+        if (STUDY_TEXT_EXTENSIONS.some((extension) => name.endsWith(extension))) {
+            return true;
+        }
+
+        if (STUDY_TEXT_MIME_PREFIXES.some((prefix) => type.startsWith(prefix))) {
+            return true;
+        }
+
+        return STUDY_TEXT_MIME_TYPES.includes(type);
     }
 
     function countPageMarkers(text) {
@@ -49,7 +79,14 @@
         };
     }
 
-    async function validate(file, state = {}) {
+    function resolveMode(options = {}) {
+        const mode = String(options.mode || "study").trim().toLowerCase();
+        return mode === "convert" ? "convert" : "study";
+    }
+
+    async function validate(file, state = {}, options = {}) {
+        const mode = resolveMode(options);
+
         if (!file) {
             return {
                 ok: false,
@@ -58,11 +95,31 @@
             };
         }
 
-        if (!isPdfFile(file)) {
+        if (mode === "convert") {
+            if (!isPdfFile(file)) {
+                return {
+                    ok: false,
+                    reason: "invalid_type",
+                    kind: "unsupported",
+                    message: "Envie um arquivo PDF para converter em texto editavel."
+                };
+            }
+        } else if (!isPdfFile(file) && !isStudyTextFile(file)) {
             return {
                 ok: false,
                 reason: "invalid_type",
-                message: "Envie um arquivo PDF textual."
+                kind: "unsupported",
+                message: "Envie um PDF, TXT, MD, CSV, JSON ou HTML para montar a trilha."
+            };
+        }
+
+        if (isStudyTextFile(file) && !isPdfFile(file)) {
+            return {
+                ok: true,
+                kind: "text",
+                pageCount: 1,
+                limit: null,
+                confidence: "text-file"
             };
         }
 
@@ -73,7 +130,10 @@
             return {
                 ok: false,
                 reason: "read_error",
-                message: "Nao consegui ler este PDF. Tente um arquivo textual mais nitido."
+                kind: "pdf",
+                message: mode === "convert"
+                    ? "Nao consegui ler este PDF agora. Tente outro arquivo."
+                    : "Nao consegui ler este material. Tente um PDF textual mais nitido."
             };
         }
 
@@ -81,7 +141,8 @@
             return {
                 ok: false,
                 reason: "invalid_pdf",
-                message: "O arquivo selecionado não parece ser um PDF válido."
+                kind: "pdf",
+                message: "O arquivo selecionado nao parece ser um PDF valido."
             };
         }
 
@@ -91,21 +152,23 @@
             : 12;
         const pageCount = Number(info.pageCount || 0);
 
-        if (pageCount > limit) {
+        if (mode === "study" && pageCount > limit) {
             return {
                 ok: false,
                 reason: "page_limit",
+                kind: "pdf",
                 feature: access && access.FEATURES
                     ? access.FEATURES.LARGE_PDF_UPLOAD
                     : "large_pdf_upload",
                 pageCount,
                 limit,
-                message: `Este PDF tem ${pageCount} páginas. No grátis, o limite é de ${limit} páginas.`
+                message: `Este PDF tem ${pageCount} paginas. No gratis, o limite e de ${limit} paginas.`
             };
         }
 
         return {
             ok: true,
+            kind: "pdf",
             pageCount,
             limit,
             confidence: info.confidence
@@ -113,6 +176,8 @@
     }
 
     window.PremiumStudyPdfValidator = {
-        validate
+        validate,
+        isPdfFile,
+        isStudyTextFile
     };
 })();

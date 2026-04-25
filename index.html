@@ -128,12 +128,14 @@
         <div id="levelSystem" class="level-system"></div>
     </div>
 
-    <div id="streakVisual" class="streak-visual"></div>
-    <div id="dailyGoal" class="daily-goal"></div>
-    <div id="weeklyChart" class="weekly-chart"></div>
-    <div id="sessionLog" class="session-log"></div>
-    <div id="advancedStats" class="advanced-stats"></div>
-    <div id="achievements" class="achievements"></div>
+    <div class="stats-dashboard-grid">
+        <div id="streakVisual" class="streak-visual"></div>
+        <div id="dailyGoal" class="daily-goal"></div>
+        <div id="weeklyChart" class="weekly-chart"></div>
+        <div id="sessionLog" class="session-log"></div>
+        <div id="advancedStats" class="advanced-stats"></div>
+        <div id="achievements" class="achievements"></div>
+    </div>
     <div id="progressiveBars" class="progressive-bars"></div>
 
     <div id="homeLaunchpad" class="home-launchpad">
@@ -243,10 +245,10 @@
                 </button>
 
                 <button data-module="routine" class="launchpad-card" type="button">
-                    <span class="launchpad-card-title">Rotina semanal</span>
+                    <span class="launchpad-card-title">Tabela</span>
                 </button>
 
-                <button data-module="premium-study" class="launchpad-card" type="button">
+                <button data-module="premium-study" data-premium-home-action="study-entry" class="launchpad-card" type="button">
                     <span class="launchpad-card-title">PDF Focado</span>
                 </button>
 

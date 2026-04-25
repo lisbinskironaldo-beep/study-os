@@ -81,7 +81,7 @@
     <h2>${escapeHtml(state.studyTitle || "Estudo personalizado")}</h2>
     <p>${escapeHtml(state.progressLabel)}</p>
     <div class="premium-summary-stack">
-        ${summaryStat("Material", state.materialName || "Aguardando PDF")}
+        ${summaryStat("Material", state.materialName || "Aguardando material")}
         ${summaryStat("Prova", formatDateLabel(state.examDate))}
         ${summaryStat("Meta", `${Number(state.targetScore || 0).toFixed(1)} / 10`)}
         ${summaryStat("Carga", formatStudyLoad(state.studyHours || 0, state.studyMinutes || 0))}
@@ -167,6 +167,9 @@
         const processingClass = processing && processing.active
             ? "premium-shell-is-processing"
             : "";
+        const titleClass = meta.titleClass ? ` ${escapeHtml(meta.titleClass)}` : "";
+        const titleMarkup = meta.titleHtml || escapeHtml(meta.title || "");
+        const subtitleMarkup = meta.subtitleHtml || escapeHtml(meta.subtitle || "");
 
         return `
 <div class="premium-study-shell ${asideSummary ? "" : "premium-shell-no-summary"} ${scrollableClass} ${processingClass}" data-premium-step="${escapeHtml(step)}">
@@ -201,8 +204,8 @@
         <section class="premium-study-stage">
             ${showHeading ? `<div class="premium-stage-heading">
                 ${showKicker ? `<span class="premium-stage-kicker">${escapeHtml(meta.label)}</span>` : ""}
-                <h1>${escapeHtml(meta.title)}</h1>
-                <p>${escapeHtml(meta.subtitle)}</p>
+                <h1 class="${titleClass.trim()}">${titleMarkup}</h1>
+                <p>${subtitleMarkup}</p>
             </div>` : ""}
             ${inlineSummary ? `<div class="premium-inline-summary">${summary}</div>` : ""}
             ${content}

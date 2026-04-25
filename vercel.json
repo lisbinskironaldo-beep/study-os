@@ -19,6 +19,10 @@
       "destination": "/api/premium-router?route=:route"
     },
     {
+      "source": "/api/questions/:route*",
+      "destination": "/api/questions-router?route=:route"
+    },
+    {
       "source": "/api/northstar-app-manifest",
       "destination": "/api/northstar-router?route=app-manifest"
     },

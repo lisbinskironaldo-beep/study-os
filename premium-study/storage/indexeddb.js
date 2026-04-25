@@ -127,7 +127,7 @@
         return {
             id: snapshot.savedDraftId || LATEST_KEY,
             title: snapshot.studyTitle || snapshot.materialName || "Estudo salvo",
-            materialName: snapshot.materialName || "PDF sem nome",
+            materialName: snapshot.materialName || "Arquivo sem nome",
             examDate: snapshot.examDate || "",
             examDateLabel: normalizeDateLabel(snapshot.examDate),
             targetScore: snapshot.targetScore || 7,
@@ -217,7 +217,7 @@
         return {
             id: item.id || base.studyLibraryId || `library-${Date.now()}`,
             title: item.title || base.studyTitle || base.materialName || "Estudo salvo",
-            materialName: item.materialName || base.materialName || "PDF sem nome",
+            materialName: item.materialName || base.materialName || "Arquivo sem nome",
             examDate: item.examDate || base.examDate || "",
             examDateLabel: item.examDateLabel || normalizeDateLabel(item.examDate || base.examDate),
             targetScore: item.targetScore ?? base.targetScore ?? 7,

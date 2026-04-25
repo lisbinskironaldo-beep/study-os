@@ -14,7 +14,7 @@
             return "Estudo personalizado";
         }
 
-        return materialName.replace(/\.pdf$/i, "");
+        return materialName.replace(/\.(pdf|txt|md|markdown|csv|json|html|htm|xml)$/i, "");
     }
 
     function buildQuestion(prompt, options, correctIndex, rationale) {
@@ -2433,8 +2433,11 @@
             },
             trialState: null,
             studyLibraryId: createStudyLibraryId(),
+            workspaceMode: "study",
             studyTitle: "",
             materialName: "",
+            materialKind: "",
+            materialMimeType: "",
             materialHash: "",
             materialSizeLabel: "",
             materialPageCount: null,
@@ -2600,7 +2603,7 @@
 
             const sizeLabel = typeof fileLike.size === "number"
                 ? `${(fileLike.size / (1024 * 1024)).toFixed(1)} MB`
-                : "PDF textual";
+                : "Material textual";
             const pageCount = Number.isFinite(fileLike.pageCount)
                 ? fileLike.pageCount
                 : null;
@@ -2611,7 +2614,10 @@
             this.state = {
                 ...this.state,
                 studyLibraryId: createStudyLibraryId(),
+                workspaceMode: fileLike.workspaceMode || this.state.workspaceMode || "study",
                 materialName: fileLike.name || "material.pdf",
+                materialKind: fileLike.kind || "",
+                materialMimeType: fileLike.type || "",
                 materialHash: fileLike.materialHash || fileLike.hash || "",
                 materialSizeLabel: sizeLabel,
                 materialPageCount: pageCount,
@@ -2923,6 +2929,10 @@
                         hotPoints: [],
                         keyConcepts: [],
                         pitfalls: [],
+                        examFocus: [],
+                        practicalCases: [],
+                        connections: [],
+                        memoryAnchors: [],
                         documentSections: [],
                         explainBetter: null,
                         reviewInFivePoints: [],
@@ -3903,7 +3913,10 @@
                 premiumEntitlement: this.state.premiumEntitlement,
                 studyTitle: this.state.studyTitle,
                 studyLibraryId: this.state.studyLibraryId,
+                workspaceMode: this.state.workspaceMode,
                 materialName: this.state.materialName,
+                materialKind: this.state.materialKind,
+                materialMimeType: this.state.materialMimeType,
                 materialHash: this.state.materialHash,
                 materialSizeLabel: this.state.materialSizeLabel,
                 materialPageCount: this.state.materialPageCount,
@@ -3980,6 +3993,9 @@
                 step: normalizedStep,
                 studyTitle,
                 studyLibraryId: snapshot.studyLibraryId || defaults.studyLibraryId,
+                workspaceMode: snapshot.workspaceMode || defaults.workspaceMode,
+                materialKind: snapshot.materialKind || defaults.materialKind,
+                materialMimeType: snapshot.materialMimeType || defaults.materialMimeType,
                 materialHash: snapshot.materialHash || defaults.materialHash,
                 blocks,
                 sessions,

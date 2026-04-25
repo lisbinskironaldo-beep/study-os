@@ -77,6 +77,28 @@
             .toUpperCase() || "C";
     }
 
+    function getPlanLabel() {
+        if (!state.session) {
+            return "Visitante";
+        }
+
+        return state.session.premiumActive
+            ? "Premium"
+            : "Gratis";
+    }
+
+    function getProviderLabel() {
+        if (!state.session) {
+            return "";
+        }
+
+        if (state.session.provider === "google") {
+            return "Conta Google";
+        }
+
+        return "Conta conectada";
+    }
+
     function closeMenu() {
         state.menuOpen = false;
         renderProfileSlot();
@@ -157,9 +179,7 @@
         const picture = String(
             state.session.picture || ""
         ).trim();
-        const premiumBadge = state.session.premiumActive
-            ? `<span class="rotanota-account-plan">Premium</span>`
-            : "";
+        const premiumBadge = `<span class="rotanota-account-plan${state.session.premiumActive ? "" : " is-free"}">${getPlanLabel()}</span>`;
 
         slot.innerHTML = `
             <div class="rotanota-account-shell${state.menuOpen ? " is-open" : ""}">
@@ -176,24 +196,46 @@
                     <div class="rotanota-account-menu-head">
                         <strong>${getDisplayName()}</strong>
                         <span>${state.session.email || ""}</span>
-                        ${premiumBadge}
                     </div>
+                    <div class="rotanota-account-meta">
+                        <div class="rotanota-account-meta-row">
+                            <span class="rotanota-account-meta-label">Conta</span>
+                            <strong>${getProviderLabel()}</strong>
+                        </div>
+                        <div class="rotanota-account-meta-row">
+                            <span class="rotanota-account-meta-label">Plano</span>
+                            ${premiumBadge}
+                        </div>
+                    </div>
+                    <button type="button" class="rotanota-account-menu-btn" data-account-action="edit-profile">Editar perfil</button>
                     <button type="button" class="rotanota-account-menu-btn" data-account-action="stats">Abrir painel</button>
-                    <button type="button" class="rotanota-account-menu-btn" data-account-action="logout">Sair</button>
+                    <button type="button" class="rotanota-account-menu-btn is-danger" data-account-action="logout">Sair</button>
                 </div>
             </div>
         `;
 
         slot.querySelector("#rotanotaAccountBtn")
-            ?.addEventListener("click", toggleMenu);
+            ?.addEventListener("click", (event) => {
+                event.preventDefault();
+                event.stopPropagation();
+                toggleMenu();
+            });
 
         slot.querySelectorAll("[data-account-action]")
             .forEach((button) => {
-                button.addEventListener("click", async () => {
+                button.addEventListener("click", async (event) => {
+                    event.preventDefault();
+                    event.stopPropagation();
                     const action = button.dataset.accountAction;
 
                     if (action === "logout") {
                         await logout();
+                        return;
+                    }
+
+                    if (action === "edit-profile") {
+                        closeMenu();
+                        window.open("https://myaccount.google.com/", "_blank", "noopener,noreferrer");
                         return;
                     }
 

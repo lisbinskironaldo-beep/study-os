@@ -1,4 +1,4 @@
-window.QuestionsUI = {
+﻿window.QuestionsUI = {
     page: null,
     sessionEventsBound: false,
     floatingSessionState: {
@@ -282,7 +282,7 @@ window.QuestionsUI = {
             </div>
             <div class="questions-simulado-summary-name">
                 <label class="questions-dialog-label" for="questionsSimuladoSummaryTitleInput">Nome do simulado</label>
-                <input id="questionsSimuladoSummaryTitleInput" class="questions-dialog-input" type="text" value="${this.escapeHtml(suggestedTitle)}" maxlength="80" autocomplete="off" spellcheck="false" placeholder="Ex.: Simulado de Matemática - Abril">
+                <input id="questionsSimuladoSummaryTitleInput" class="questions-dialog-input" type="text" value="${this.escapeHtml(suggestedTitle)}" maxlength="80" autocomplete="off" spellcheck="false" placeholder="Ex.: Simulado de MatemÃ¡tica - Abril">
             </div>
             <div class="questions-simulado-summary-grid">
                 <article class="questions-simulado-summary-stat">
@@ -310,8 +310,8 @@ window.QuestionsUI = {
             <div class="questions-simulado-summary-list">
                 ${blocks.map((block) => `
                     <article class="questions-simulado-summary-item">
-                        <strong>${this.escapeHtml(block.subjectLabel)} · ${this.escapeHtml(block.topicLabel)}</strong>
-                        <span>${this.escapeHtml(this.formatSerieLabel(block.serie))} · ${this.escapeHtml(block.difficultyLabel)} · ${block.actualAmount}/${block.requestedAmount} questoes</span>
+                        <strong>${this.escapeHtml(block.subjectLabel)} Â· ${this.escapeHtml(block.topicLabel)}</strong>
+                        <span>${this.escapeHtml(this.formatSerieLabel(block.serie))} Â· ${this.escapeHtml(block.difficultyLabel)} Â· ${block.actualAmount}/${block.requestedAmount} questoes</span>
                     </article>
                 `).join("")}
             </div>
@@ -1117,9 +1117,9 @@ window.QuestionsUI = {
     renderFloatingSessionHint() {
         return `
             <section class="questions-card questions-floating-hint">
-                <div class="questions-kicker">Sessão ativa</div>
+                <div class="questions-kicker">SessÃ£o ativa</div>
                 <h2>Janela flutuante aberta</h2>
-                <p>As questões continuam em uma janela livre para arrastar, minimizar, redimensionar ou maximizar enquanto você usa o resto do site.</p>
+                <p>As questÃµes continuam em uma janela livre para arrastar, minimizar, redimensionar ou maximizar enquanto vocÃª usa o resto do site.</p>
                 <div class="questions-entry-actions">
                     <button id="questionsFloatingFocusBtn" class="questions-secondary-btn" type="button">Trazer para frente</button>
                     <button id="questionsFloatingPauseBtn" class="questions-secondary-btn" type="button">Pausar treino</button>
@@ -1132,11 +1132,11 @@ window.QuestionsUI = {
         content = ""
     ) {
         return `
-            <section id="questionsFloatingWindow" class="questions-floating-window" aria-label="Janela flutuante de questões">
+            <section id="questionsFloatingWindow" class="questions-floating-window" aria-label="Janela flutuante de questÃµes">
                 <div class="questions-floating-header" data-questions-float-drag="true">
                     <div class="questions-floating-copy">
                         <div class="questions-floating-kicker">Treino ativo</div>
-                        <div class="questions-floating-title">Questões</div>
+                        <div class="questions-floating-title">QuestÃµes</div>
                     </div>
                     <div class="questions-floating-actions">
                         <button id="questionsFloatingMinBtn" type="button" title="Minimizar">_</button>
@@ -1794,7 +1794,7 @@ window.QuestionsUI = {
                     <article class="questions-entry-option questions-entry-option-quick">
                         <div class="questions-entry-copy">
                             <h3>Rapido</h3>
-                            <p>${this.escapeHtml(recentRuns.length ? `${recentRuns.length} treino(s) pausado(s)` : "sem treino pausado")} · ${this.escapeHtml(savedBlocks.length ? `${savedBlocks.length} guardado(s)` : "sem guardados")} · ${this.escapeHtml(weakTopic ? weakTopic.topicLabel : "historico em formacao")}</p>
+                            <p>${this.escapeHtml(recentRuns.length ? `${recentRuns.length} treino(s) pausado(s)` : "sem treino pausado")} Â· ${this.escapeHtml(savedBlocks.length ? `${savedBlocks.length} guardado(s)` : "sem guardados")} Â· ${this.escapeHtml(weakTopic ? weakTopic.topicLabel : "historico em formacao")}</p>
                         </div>
                         <button class="questions-primary-btn" type="button" data-launcher-view="quick" ${isLoading || isError ? "disabled" : ""}>
                             ${isLoading ? "Preparando..." : isError ? "Indisponivel" : "Abrir"}
@@ -2180,8 +2180,8 @@ window.QuestionsUI = {
                                 ${state.blocks.map((block, index) => `
                                     <article class="questions-profile-item${state.editingIndex === index ? " is-active" : ""}">
                                         <div class="questions-profile-copy">
-                                            <strong>${this.escapeHtml(block.subjectLabel)} · ${this.escapeHtml(block.topicLabel)}</strong>
-                                            <span>${this.escapeHtml(this.formatSerieLabel(block.serie))} · ${this.escapeHtml(block.difficultyLabel)} · ${block.amount} questoes</span>
+                                            <strong>${this.escapeHtml(block.subjectLabel)} Â· ${this.escapeHtml(block.topicLabel)}</strong>
+                                            <span>${this.escapeHtml(this.formatSerieLabel(block.serie))} Â· ${this.escapeHtml(block.difficultyLabel)} Â· ${block.amount} questoes</span>
                                         </div>
                                         <div class="questions-profile-actions">
                                             <button class="questions-secondary-btn" type="button" data-simulado-edit-block="${index}">
@@ -2216,7 +2216,7 @@ window.QuestionsUI = {
             return "S\u00e9rie";
         }
 
-        return `${numeric}ª Série`;
+        return `${numeric}Âª SÃ©rie`;
     },
 
     normalizeSerieLabel(label) {
@@ -2281,9 +2281,9 @@ window.QuestionsUI = {
                     subjectLabel:
                         String(
                             entry?.subjectLabel ||
-                                "Matéria"
+                                "MatÃ©ria"
                         ).trim() ||
-                        "Matéria",
+                        "MatÃ©ria",
                     attempts: 0,
                     hits: 0,
                     errors: 0,
@@ -2434,9 +2434,9 @@ window.QuestionsUI = {
                     subjectLabel:
                         String(
                             session?.subjectLabel ||
-                                "Matéria"
+                                "MatÃ©ria"
                         ).trim() ||
-                        "Matéria",
+                        "MatÃ©ria",
                     attempts: 0,
                     hits: 0,
                     errors: 0,
@@ -2613,7 +2613,7 @@ window.QuestionsUI = {
             "Pulso firme",
             "Leitura madura",
             "Mapa avancado",
-            "Domínio em formação"
+            "DomÃ­nio em formaÃ§Ã£o"
         ];
         const tierLabel =
             titles[
@@ -2625,7 +2625,7 @@ window.QuestionsUI = {
                 )
             ];
         let note =
-            "A central vai ficando mais precisa conforme você responde blocos variados.";
+            "A central vai ficando mais precisa conforme vocÃª responde blocos variados.";
 
         if (accuracy >= 80) {
             note =
@@ -2689,7 +2689,7 @@ window.QuestionsUI = {
 
         return [
             {
-                label: "Precisão",
+                label: "PrecisÃ£o",
                 value: clamp(accuracy)
             },
             {
@@ -2715,7 +2715,7 @@ window.QuestionsUI = {
                     : 36
             },
             {
-                label: "Constância",
+                label: "ConstÃ¢ncia",
                 value: sessions
                     ? clamp(
                         (Math.min(
@@ -2739,7 +2739,7 @@ window.QuestionsUI = {
                 )
             },
             {
-                label: "Domínio",
+                label: "DomÃ­nio",
                 value: attempts
                     ? clamp(
                         (((hits - errors) /
@@ -3188,7 +3188,7 @@ window.QuestionsUI = {
             },
             {
                 key: "materia",
-                label: "Matéria"
+                label: "MatÃ©ria"
             },
             {
                 key: "assunto",
@@ -3314,7 +3314,7 @@ window.QuestionsUI = {
                         item.key ===
                         activeSubject
                 )?.label ||
-                    "Matéria";
+                    "MatÃ©ria";
             scopeSummary =
                 `${scopeLabel} na ${this.formatSerieLabel(activeSerie)}`;
             radarSource = {
@@ -3366,7 +3366,7 @@ window.QuestionsUI = {
                 )?.label ||
                 "Assunto";
             scopeSummary =
-                `${scopeLabel} em ${subjects.find((item) => item.key === activeSubject)?.label || "Matéria"}`;
+                `${scopeLabel} em ${subjects.find((item) => item.key === activeSubject)?.label || "MatÃ©ria"}`;
             radarSource = {
                 attempts:
                     selectedTopicEntry
@@ -3445,7 +3445,7 @@ window.QuestionsUI = {
         if (hardestSubject) {
             recommendations.push({
                 kicker:
-                    "Matéria que pede cuidado",
+                    "MatÃ©ria que pede cuidado",
                 title:
                     hardestSubject.subjectLabel,
                 note: `${hardestSubject.errorRate}% de erro no acumulado recente.`
@@ -3468,7 +3468,7 @@ window.QuestionsUI = {
                     "Painel em aquecimento",
                 title:
                     "Seus sinais ainda vao nascer",
-                note: "Assim que as primeiras sessões entrarem, a central mostra reforços, radar e tendência com mais nitidez."
+                note: "Assim que as primeiras sessÃµes entrarem, a central mostra reforÃ§os, radar e tendÃªncia com mais nitidez."
             });
         }
 
@@ -3493,7 +3493,7 @@ window.QuestionsUI = {
                     (item) =>
                         item.key ===
                         activeSubject
-                )?.label || "Matéria",
+                )?.label || "MatÃ©ria",
             overallDashboard,
             overallHours,
             activeTotals,
@@ -3657,7 +3657,7 @@ window.QuestionsUI = {
                     <strong class="questions-hub-summary-value">${accuracy}%</strong>
                 </article>
                 <article class="questions-hub-summary-card questions-hub-summary-card--${timeTone}">
-                    <span class="questions-hub-summary-label">Tempo médio</span>
+                    <span class="questions-hub-summary-label">Tempo mÃ©dio</span>
                     <strong class="questions-hub-summary-value">${avgTime}</strong>
                 </article>
                 <article class="questions-hub-summary-card questions-hub-summary-card--${levelTone}">
@@ -4187,7 +4187,7 @@ window.QuestionsUI = {
                 </div>
 
                 <div class="questions-hub-evolution-chart questions-hub-evolution-chart--${trend.tone}">
-                    <svg class="questions-hub-evolution-svg" viewBox="0 0 760 148" preserveAspectRatio="none" role="img" aria-label="Tendência das últimas respostas">
+                    <svg class="questions-hub-evolution-svg" viewBox="0 0 760 148" preserveAspectRatio="none" role="img" aria-label="TendÃªncia das Ãºltimas respostas">
                         <polyline
                             class="questions-hub-evolution-line"
                             fill="none"
@@ -4200,7 +4200,7 @@ window.QuestionsUI = {
                 </div>
 
                 <div class="questions-hub-evolution-foot">
-                    <span>últimas ${trend.total} questões</span>
+                    <span>Ãºltimas ${trend.total} questÃµes</span>
                     <strong>${trend.latest}%</strong>
                 </div>
             </section>
@@ -4394,12 +4394,644 @@ window.QuestionsUI = {
         `;
     },
 
+    buildProgressHubConsistencySnapshot(
+        model
+    ) {
+        const baseKey =
+            String(
+                model?.activeBase || ""
+            ).trim() ||
+            "ESCOLAR";
+        const activeSerie =
+            Number(
+                model?.activeSerie || 0
+            ) || 1;
+        const sessions =
+            QuestionsStore.getRecentSessions(
+                {
+                    baseKey
+                }
+            ).filter(
+                (session) =>
+                    Number(
+                        session?.serie || 0
+                    ) === activeSerie
+            );
+        const activeDays =
+            new Set();
+
+        sessions.forEach((session) => {
+            const key =
+                this.formatProgressHubDayKey(
+                    session?.createdAt
+                );
+
+            if (key) {
+                activeDays.add(key);
+            }
+        });
+
+        const cells = [];
+        const today =
+            new Date();
+
+        for (
+            let offset = 27;
+            offset >= 0;
+            offset -= 1
+        ) {
+            const date =
+                new Date(
+                    today.getFullYear(),
+                    today.getMonth(),
+                    today.getDate() -
+                        offset
+                );
+            const key =
+                this.formatProgressHubDayKey(
+                    date.getTime()
+                );
+
+            cells.push({
+                key,
+                active:
+                    activeDays.has(key)
+            });
+        }
+
+        const todayKey =
+            this.formatProgressHubDayKey(
+                today.getTime()
+            );
+        const yesterday =
+            new Date(
+                today.getFullYear(),
+                today.getMonth(),
+                today.getDate() - 1
+            );
+        const yesterdayKey =
+            this.formatProgressHubDayKey(
+                yesterday.getTime()
+            );
+        let anchorKey =
+            activeDays.has(todayKey)
+                ? todayKey
+                : activeDays.has(
+                    yesterdayKey
+                )
+                    ? yesterdayKey
+                    : [...activeDays]
+                        .sort()
+                        .slice(-1)[0] ||
+                        "";
+        let streak = 0;
+
+        while (anchorKey) {
+            if (
+                !activeDays.has(
+                    anchorKey
+                )
+            ) {
+                break;
+            }
+
+            streak += 1;
+            const [year, month, day] =
+                anchorKey
+                    .split("-")
+                    .map((part) =>
+                        Number(part)
+                    );
+            const previous =
+                new Date(
+                    year,
+                    month - 1,
+                    day - 1
+                );
+            anchorKey =
+                this.formatProgressHubDayKey(
+                    previous.getTime()
+                );
+        }
+
+        return {
+            cells,
+            streak,
+            activeDays:
+                activeDays.size,
+            weeklyActive:
+                cells.slice(-7).filter(
+                    (cell) => cell.active
+                ).length,
+            consistencyRate:
+                Math.round(
+                    (activeDays.size /
+                        Math.max(
+                            cells.length,
+                            1
+                        )) *
+                        100
+                )
+        };
+    },
+
+    buildProgressHubEvolutionSnapshot(
+        model
+    ) {
+        const baseKey =
+            String(
+                model?.activeBase || ""
+            ).trim() ||
+            "ESCOLAR";
+        const runs =
+            QuestionsStore.getRuns()
+                .slice()
+                .reverse();
+        const answers = [];
+
+        runs.forEach((run) => {
+            (
+                Array.isArray(
+                    run?.answers
+                )
+                    ? run.answers
+                    : []
+            ).forEach((answer) => {
+                if (
+                    baseKey &&
+                    String(
+                        answer?.baseKey || ""
+                    ).trim() !== baseKey
+                ) {
+                    return;
+                }
+
+                answers.push({
+                    correct: Boolean(
+                        answer?.correct
+                    )
+                });
+            });
+        });
+
+        const recentAnswers =
+            answers.slice(-30);
+
+        if (!recentAnswers.length) {
+            return {
+                hasData: false
+            };
+        }
+
+        const smoothed =
+            recentAnswers.map(
+                (_entry, index, list) => {
+                    const start =
+                        Math.max(
+                            0,
+                            index - 3
+                        );
+                    const chunk =
+                        list.slice(
+                            start,
+                            index + 1
+                        );
+                    const accuracy =
+                        chunk.reduce(
+                            (total, item) =>
+                                total +
+                                (item.correct
+                                    ? 100
+                                    : 0),
+                            0
+                        ) / chunk.length;
+
+                    return Math.round(
+                        accuracy
+                    );
+                }
+            );
+        const half =
+            Math.max(
+                1,
+                Math.floor(
+                    smoothed.length / 2
+                )
+            );
+        const firstHalf =
+            smoothed.slice(0, half);
+        const secondHalf =
+            smoothed.slice(half);
+        const firstAvg =
+            firstHalf.reduce(
+                (total, value) =>
+                    total + value,
+                0
+            ) / firstHalf.length;
+        const secondAvg =
+            (secondHalf.length
+                ? secondHalf
+                : firstHalf
+            ).reduce(
+                (total, value) =>
+                    total + value,
+                0
+            ) /
+            (secondHalf.length ||
+                firstHalf.length);
+
+        return {
+            hasData: true,
+            delta: Math.round(
+                secondAvg - firstAvg
+            ),
+            firstAvg:
+                Math.round(firstAvg),
+            secondAvg:
+                Math.round(secondAvg),
+            peak:
+                Math.max(...smoothed)
+        };
+    },
+
+    renderProgressHubSummarySurface(
+        model
+    ) {
+        const accuracy =
+            Math.round(
+                (Number(
+                    model?.overallDashboard
+                        ?.accuracy || 0
+                ) || 0) * 100
+            );
+        const avgTime =
+            QuestionsService.formatTime(
+                Number(
+                    model?.overallDashboard
+                        ?.avgTimeMs || 0
+                ) || 0
+            );
+        const consistency =
+            this.buildProgressHubConsistencySnapshot(
+                model
+            );
+        const summaryCards = [
+            {
+                label: "Acerto geral",
+                value: `${accuracy}%`,
+                note: `${model?.overallDashboard?.attempts || 0} questÃµes lidas`,
+                tone:
+                    accuracy >= 70
+                        ? "good"
+                        : accuracy >= 40
+                            ? "warning"
+                            : "danger"
+            },
+            {
+                label: "Tempo mÃ©dio",
+                value: avgTime,
+                note: "ritmo por resposta",
+                tone:
+                    (Number(
+                        model?.overallDashboard
+                            ?.avgTimeMs || 0
+                    ) || 0) <= 20000
+                        ? "good"
+                        : (Number(
+                            model?.overallDashboard
+                                ?.avgTimeMs || 0
+                        ) || 0) <= 40000
+                            ? "warning"
+                            : "danger"
+            },
+            {
+                label: "NÃ­vel atual",
+                value: String(
+                    model?.level?.level || 1
+                ),
+                note: `${Math.round(model?.level?.progress || 0)}% para o prÃ³ximo`,
+                tone:
+                    model?.level?.progress >= 70
+                        ? "good"
+                        : model?.level?.progress >= 35
+                            ? "warning"
+                            : "neutral"
+            },
+            {
+                label: "ConsistÃªncia",
+                value: `${consistency.streak} dia${consistency.streak === 1 ? "" : "s"}`,
+                note: `${consistency.activeDays} dias ativos no ciclo`,
+                tone:
+                    consistency.streak >= 7
+                        ? "good"
+                        : consistency.streak >= 3
+                            ? "warning"
+                            : "neutral"
+            }
+        ];
+
+        return `
+            <section class="questions-hub-focus-shell questions-hub-focus-shell--summary" aria-label="Resumo essencial">
+                <div class="questions-hub-focus-head">
+                    <div>
+                        <span class="questions-hub-summary-label">Resumo</span>
+                        <strong class="questions-hub-focus-title">Placar pessoal</strong>
+                    </div>
+                    <span class="questions-hub-focus-kicker">visÃ£o geral</span>
+                </div>
+                <div class="questions-hub-focus-grid">
+                    <div class="questions-hub-summary-block">
+                        ${summaryCards.map((card) => `
+                            <article class="questions-hub-summary-card questions-hub-summary-card--${card.tone}">
+                                <span class="questions-hub-summary-label">${card.label}</span>
+                                <strong class="questions-hub-summary-value">${card.value}</strong>
+                                <small class="questions-hub-summary-note">${card.note}</small>
+                            </article>
+                        `).join("")}
+                    </div>
+                    <aside class="questions-hub-focus-side">
+                        <article class="questions-hub-focus-insight questions-hub-focus-insight--summary">
+                            <span class="questions-hub-focus-insight-kicker">SuperaÃ§Ã£o</span>
+                            <strong>${model?.level?.label || "Em aquecimento"}</strong>
+                            <p>${accuracy >= 70
+                                ? "Bom momento para manter ritmo."
+                                : accuracy >= 40
+                                    ? "Base pronta para ganhar traÃ§Ã£o."
+                                    : "As prÃ³ximas sessÃµes vÃ£o ativar o painel."}</p>
+                        </article>
+                        <div class="questions-hub-mini-grid">
+                            <article class="questions-hub-mini-card">
+                                <span>Meta da semana</span>
+                                <strong>${Math.max(Math.round(model?.level?.progress || 0), 0)}%</strong>
+                                <small>do prÃ³ximo nÃ­vel</small>
+                            </article>
+                            <article class="questions-hub-mini-card">
+                                <span>Ponto forte</span>
+                                <strong>${model?.strongestSubject?.subjectLabel ? this.escapeHtml(model.strongestSubject.subjectLabel) : "Sem base"}</strong>
+                                <small>${model?.strongestSubject?.accuracy ? `${model.strongestSubject.accuracy}% de acerto` : "seu destaque aparece aqui"}</small>
+                            </article>
+                        </div>
+                    </aside>
+                </div>
+            </section>
+        `;
+    },
+
+    renderProgressHubImproveSurface(
+        model
+    ) {
+        const items =
+            this.buildProgressHubImproveItems(
+                model
+            );
+        const hardestSubject =
+            model?.hardestSubject || null;
+        const strongestSubject =
+            model?.strongestSubject || null;
+        const solvedBase =
+            Number(
+                model?.overallDashboard
+                    ?.attempts || 0
+            ) || 0;
+
+        return `
+            <section class="questions-hub-focus-shell questions-hub-focus-shell--improve" aria-label="Onde melhorar agora">
+                <div class="questions-hub-focus-head">
+                    <div>
+                        <span class="questions-hub-summary-label">Onde melhorar</span>
+                        <strong class="questions-hub-focus-title">${items.length ? "Focos de reforÃ§o" : "Mapa de reforÃ§o"}</strong>
+                    </div>
+                    <span class="questions-hub-focus-kicker">${items.length ? "top 3 gargalos" : "sem alerta forte"}</span>
+                </div>
+                <div class="questions-hub-focus-grid">
+                    <div class="questions-hub-improve-block">
+                        ${items.length
+                            ? items.map((item, index) => {
+                                const tone =
+                                    this.getProgressHubImproveTone(
+                                        item.errorRate
+                                    );
+
+                                return `
+                                    <article class="questions-hub-improve-row questions-hub-improve-row--${tone}" style="--questions-hub-improve-width:${Math.max(10, item.errorRate)}%">
+                                        <div class="questions-hub-improve-rank">
+                                            0${index + 1}
+                                        </div>
+                                        <div class="questions-hub-improve-copy">
+                                            <strong class="questions-hub-improve-title">${this.escapeHtml(item.topicLabel)}</strong>
+                                            <div class="questions-hub-improve-bar" aria-hidden="true">
+                                                <div class="questions-hub-improve-fill"></div>
+                                            </div>
+                                        </div>
+                                        <div class="questions-hub-improve-metric">
+                                            <span>${item.errorRate}% erro</span>
+                                            <strong>${item.errors}</strong>
+                                        </div>
+                                        <button
+                                            class="questions-hub-improve-train"
+                                            type="button"
+                                            data-hub-train-topic="${this.escapeHtml(item.topicKey)}"
+                                            data-hub-train-subject="${this.escapeHtml(item.subjectKey)}"
+                                            data-hub-train-serie="${item.serie}">
+                                            Treinar
+                                        </button>
+                                    </article>
+                                `;
+                            }).join("")
+                            : `
+                                <div class="questions-hub-improve-empty">
+                                    <div class="questions-hub-empty-visual questions-hub-empty-visual--improve" aria-hidden="true">
+                                        <span class="questions-hub-empty-bar is-quiet"></span>
+                                        <span class="questions-hub-empty-bar is-soft"></span>
+                                        <span class="questions-hub-empty-bar is-mid"></span>
+                                        <span class="questions-hub-empty-bar is-strong"></span>
+                                        <span class="questions-hub-empty-bar is-mid"></span>
+                                        <span class="questions-hub-empty-bar is-tall"></span>
+                                    </div>
+                                    <strong class="questions-hub-improve-empty-value">Sem alerta forte</strong>
+                                </div>
+                            `}
+                    </div>
+                    <aside class="questions-hub-focus-side">
+                        <article class="questions-hub-focus-insight questions-hub-focus-insight--danger">
+                            <span class="questions-hub-focus-insight-kicker">Maior cuidado</span>
+                            <strong>${hardestSubject?.subjectLabel ? this.escapeHtml(hardestSubject.subjectLabel) : "Sem matÃ©ria crÃ­tica"}</strong>
+                            <p>${hardestSubject?.errorRate ? `${hardestSubject.errorRate}% de erro no recorte recente.` : "Quando surgir um padrÃ£o, ele entra aqui."}</p>
+                        </article>
+                        <div class="questions-hub-mini-grid">
+                            <article class="questions-hub-mini-card">
+                                <span>Base lida</span>
+                                <strong>${solvedBase}</strong>
+                                <small>questÃµes no acumulado</small>
+                            </article>
+                            <article class="questions-hub-mini-card">
+                                <span>Ponto forte</span>
+                                <strong>${strongestSubject?.subjectLabel ? this.escapeHtml(strongestSubject.subjectLabel) : "Em anÃ¡lise"}</strong>
+                                <small>${strongestSubject?.accuracy ? `${strongestSubject.accuracy}% de acerto` : "aguardando mais base"}</small>
+                            </article>
+                        </div>
+                    </aside>
+                </div>
+            </section>
+        `;
+    },
+
+    renderProgressHubEvolutionSurface(
+        model
+    ) {
+        const trend =
+            this.buildProgressHubEvolutionModel(
+                model
+            );
+        const snapshot =
+            this.buildProgressHubEvolutionSnapshot(
+                model
+            );
+
+        return `
+            <section class="questions-hub-focus-shell questions-hub-focus-shell--evolution" aria-label="EvoluÃ§Ã£o recente">
+                <div class="questions-hub-focus-head">
+                    <div>
+                        <span class="questions-hub-summary-label">EvoluÃ§Ã£o</span>
+                        <strong class="questions-hub-focus-title">${trend.hasData ? "Curva recente" : "GrÃ¡fico em formaÃ§Ã£o"}</strong>
+                    </div>
+                    <span class="questions-hub-focus-kicker">${trend.hasData ? this.escapeHtml(trend.label) : "sem histÃ³rico"}</span>
+                </div>
+                <div class="questions-hub-focus-grid">
+                    <section class="questions-hub-evolution-block">
+                        ${trend.hasData
+                            ? `
+                                <div class="questions-hub-evolution-head">
+                                    <span class="questions-hub-summary-label">Ãšltimas ${trend.total} questÃµes</span>
+                                    <strong class="questions-hub-evolution-trend questions-hub-evolution-trend--${trend.tone}">
+                                        ${this.escapeHtml(trend.label)}
+                                    </strong>
+                                </div>
+
+                                <div class="questions-hub-evolution-chart questions-hub-evolution-chart--${trend.tone}">
+                                    <svg class="questions-hub-evolution-svg" viewBox="0 0 760 148" preserveAspectRatio="none" role="img" aria-label="TendÃªncia das Ãºltimas respostas">
+                                        <polyline
+                                            class="questions-hub-evolution-line"
+                                            fill="none"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="5"
+                                            points="${trend.points}">
+                                        </polyline>
+                                    </svg>
+                                </div>
+
+                                <div class="questions-hub-evolution-foot">
+                                    <span>fase atual</span>
+                                    <strong>${trend.latest}%</strong>
+                                </div>
+                            `
+                            : `
+                                <div class="questions-hub-improve-empty">
+                                    <div class="questions-hub-empty-visual questions-hub-empty-visual--evolution" aria-hidden="true">
+                                        <span class="questions-hub-empty-point"></span>
+                                        <span class="questions-hub-empty-point"></span>
+                                        <span class="questions-hub-empty-point"></span>
+                                        <span class="questions-hub-empty-point"></span>
+                                    </div>
+                                    <strong class="questions-hub-improve-empty-value">Sem histÃ³rico recente</strong>
+                                </div>
+                            `}
+                    </section>
+                    <aside class="questions-hub-focus-side">
+                        <div class="questions-hub-mini-grid">
+                            <article class="questions-hub-mini-card">
+                                <span>ComparaÃ§Ã£o</span>
+                                <strong>${snapshot.hasData ? `${snapshot.delta >= 0 ? "+" : ""}${snapshot.delta} pts` : "--"}</strong>
+                                <small>contra a metade anterior</small>
+                            </article>
+                            <article class="questions-hub-mini-card">
+                                <span>Melhor fase</span>
+                                <strong>${snapshot.hasData ? `${snapshot.peak}%` : "--"}</strong>
+                                <small>pico recente do grÃ¡fico</small>
+                            </article>
+                            <article class="questions-hub-mini-card">
+                                <span>Antes</span>
+                                <strong>${snapshot.hasData ? `${snapshot.firstAvg}%` : "--"}</strong>
+                                <small>mÃ©dia inicial</small>
+                            </article>
+                            <article class="questions-hub-mini-card">
+                                <span>Agora</span>
+                                <strong>${snapshot.hasData ? `${snapshot.secondAvg}%` : "--"}</strong>
+                                <small>mÃ©dia mais recente</small>
+                            </article>
+                        </div>
+                    </aside>
+                </div>
+            </section>
+        `;
+    },
+
+    renderProgressHubConsistencySurface(
+        model
+    ) {
+        const consistency =
+            this.buildProgressHubConsistencySnapshot(
+                model
+            );
+
+        return `
+            <section class="questions-hub-focus-shell questions-hub-focus-shell--consistency" aria-label="ConsistÃªncia recente">
+                <div class="questions-hub-focus-head">
+                    <div>
+                        <span class="questions-hub-summary-label">ConsistÃªncia</span>
+                        <strong class="questions-hub-focus-title">Ritmo de retorno</strong>
+                    </div>
+                    <span class="questions-hub-focus-kicker">sequÃªncia atual</span>
+                </div>
+                <div class="questions-hub-focus-grid">
+                    <section class="questions-hub-consistency-block">
+                        <div class="questions-hub-consistency-head">
+                            <span class="questions-hub-summary-label">ConsistÃªncia</span>
+                            <strong class="questions-hub-consistency-streak">${consistency.streak} dia${consistency.streak === 1 ? "" : "s"}</strong>
+                        </div>
+
+                        <div class="questions-hub-consistency-grid" aria-hidden="true">
+                            ${consistency.cells.map((cell) => `
+                                <span class="questions-hub-consistency-cell${cell.active ? " is-active" : ""}"></span>
+                            `).join("")}
+                        </div>
+                    </section>
+                    <aside class="questions-hub-focus-side">
+                        <div class="questions-hub-mini-grid">
+                            <article class="questions-hub-mini-card">
+                                <span>Dias ativos</span>
+                                <strong>${consistency.activeDays}</strong>
+                                <small>nos Ãºltimos 28 dias</small>
+                            </article>
+                            <article class="questions-hub-mini-card">
+                                <span>Semana atual</span>
+                                <strong>${consistency.weeklyActive}/7</strong>
+                                <small>dias com estudo</small>
+                            </article>
+                            <article class="questions-hub-mini-card">
+                                <span>FrequÃªncia</span>
+                                <strong>${consistency.consistencyRate}%</strong>
+                                <small>presenÃ§a no ciclo</small>
+                            </article>
+                            <article class="questions-hub-mini-card">
+                                <span>GamificaÃ§Ã£o</span>
+                                <strong>${consistency.streak >= 7 ? "Em alta" : consistency.streak >= 3 ? "No ritmo" : "Aquecendo"}</strong>
+                                <small>status da rotina pessoal</small>
+                            </article>
+                        </div>
+                    </aside>
+                </div>
+            </section>
+        `;
+    },
+
     renderProgressHubCurrentBlock(model) {
         if (
             model.statsSection ===
             "resumo"
         ) {
-            return this.renderProgressHubHero(
+            return this.renderProgressHubSummarySurface(
                 model
             );
         }
@@ -4408,7 +5040,7 @@ window.QuestionsUI = {
             model.statsSection ===
             "melhorar"
         ) {
-            return this.renderProgressHubImproveBlock(
+            return this.renderProgressHubImproveSurface(
                 model
             );
         }
@@ -4417,12 +5049,12 @@ window.QuestionsUI = {
             model.statsSection ===
             "evolucao"
         ) {
-            return this.renderProgressHubEvolutionBlock(
+            return this.renderProgressHubEvolutionSurface(
                 model
             );
         }
 
-        return this.renderProgressHubConsistencyBlock(
+        return this.renderProgressHubConsistencySurface(
             model
         );
     },
@@ -4434,8 +5066,8 @@ window.QuestionsUI = {
             <div class="questions-hub-main-column">
                 <details class="questions-hub-section questions-hub-section-radar" open>
                     <summary class="questions-hub-summary">
-                        <span>Radar da matéria</span>
-                        <strong>${this.escapeHtml(model.activeSubjectLabel)} · ${this.escapeHtml(this.formatSerieLabel(model.activeSerie))}</strong>
+                        <span>Radar da matÃ©ria</span>
+                        <strong>${this.escapeHtml(model.activeSubjectLabel)} Â· ${this.escapeHtml(this.formatSerieLabel(model.activeSerie))}</strong>
                     </summary>
                     <div class="questions-hub-radar-card">
                         <div class="questions-hub-filter-block">
@@ -4450,14 +5082,14 @@ window.QuestionsUI = {
                         </div>
 
                         <div class="questions-hub-filter-block">
-                            <div class="questions-hub-filter-title">Matéria em radar</div>
+                            <div class="questions-hub-filter-title">MatÃ©ria em radar</div>
                             <div class="questions-hub-filter-row">
                                 ${model.subjects.length ? model.subjects.map((subject) => `
                                     <button class="questions-hub-filter-pill questions-hub-filter-pill-subject${model.activeSubject === subject.key ? " is-active" : ""}" type="button" data-hub-subject="${this.escapeHtml(subject.key)}">
                                         ${this.escapeHtml(subject.label)}
                                     </button>
                                 `).join("") : `
-                                    <div class="questions-empty-inline">Nenhuma matéria pronta para essa série ainda.</div>
+                                    <div class="questions-empty-inline">Nenhuma matÃ©ria pronta para essa sÃ©rie ainda.</div>
                                 `}
                             </div>
                         </div>
@@ -4468,17 +5100,17 @@ window.QuestionsUI = {
                                 <article class="questions-hub-radar-note">
                                     <span>Leitura ativa</span>
                                     <strong>${model.activeAccuracy}% de acerto</strong>
-                                    <small>${model.activeTotals.attempts || 0} questões · ${QuestionsService.formatTime(model.activeAvgTimeMs)}</small>
+                                    <small>${model.activeTotals.attempts || 0} questÃµes Â· ${QuestionsService.formatTime(model.activeAvgTimeMs)}</small>
                                 </article>
                                 <article class="questions-hub-radar-note">
                                     <span>Cobertura do assunto</span>
                                     <strong>${model.activeTopicCoverage}/${model.availableTopicCount || 0}</strong>
-                                    <small>tópico(s) já apareceram nas sessões</small>
+                                    <small>tÃ³pico(s) jÃ¡ apareceram nas sessÃµes</small>
                                 </article>
                                 <article class="questions-hub-radar-note">
                                     <span>Tempo investido</span>
                                     <strong>${this.formatHubHours(model.activeHours)}</strong>
-                                    <small>neste recorte de série e matéria</small>
+                                    <small>neste recorte de sÃ©rie e matÃ©ria</small>
                                 </article>
                             </div>
                         </div>
@@ -4487,7 +5119,7 @@ window.QuestionsUI = {
 
                 <details class="questions-hub-section questions-hub-section-subjects" open>
                     <summary class="questions-hub-summary">
-                        <span>Mapa por matéria</span>
+                        <span>Mapa por matÃ©ria</span>
                         <strong>${model.subjectBreakdown.length} frente(s) com hist\u00f3rico</strong>
                     </summary>
                     <div class="questions-hub-bars">
@@ -4495,7 +5127,7 @@ window.QuestionsUI = {
                             <article class="questions-hub-bar-card">
                                 <div class="questions-hub-bar-copy">
                                     <strong>${this.escapeHtml(subject.subjectLabel)}</strong>
-                                    <span>${subject.attempts} questões · ${subject.topicCount} assunto(s) · ${subject.accuracy}% de acerto</span>
+                                    <span>${subject.attempts} questÃµes Â· ${subject.topicCount} assunto(s) Â· ${subject.accuracy}% de acerto</span>
                                 </div>
                                 <div class="questions-hub-bar-track">
                                     <div class="questions-hub-bar-fill questions-hub-bar-fill-cyan" style="width:${Math.max(8, subject.accuracy)}%"></div>
@@ -4504,7 +5136,7 @@ window.QuestionsUI = {
                             </article>
                         `).join("") : `
                             <div class="questions-empty-inline questions-empty-inline-soft">
-                                As matérias vão aparecer aqui conforme as sessões entrarem.
+                                As matÃ©rias vÃ£o aparecer aqui conforme as sessÃµes entrarem.
                             </div>
                         `}
                     </div>
@@ -4520,7 +5152,7 @@ window.QuestionsUI = {
                             <article class="questions-hub-bar-card">
                                 <div class="questions-hub-bar-copy">
                                     <strong>${this.escapeHtml(serie.label)}</strong>
-                                    <span>${serie.attempts} questões · ${serie.sessions} sessão(ões) · ${QuestionsService.formatTime(serie.avgTimeMs)}</span>
+                                    <span>${serie.attempts} questÃµes Â· ${serie.sessions} sessÃ£o(Ãµes) Â· ${QuestionsService.formatTime(serie.avgTimeMs)}</span>
                                 </div>
                                 <div class="questions-hub-bar-track">
                                     <div class="questions-hub-bar-fill questions-hub-bar-fill-mint" style="width:${Math.max(8, serie.accuracy)}%"></div>
@@ -4574,7 +5206,7 @@ window.QuestionsUI = {
                 </summary>
                 <div class="questions-hub-time-grid">
                     <article class="questions-hub-time-card">
-                        <div class="questions-panel-label">Tempo médio por resposta</div>
+                        <div class="questions-panel-label">Tempo mÃ©dio por resposta</div>
                         <div class="questions-hub-time-bars">
                             ${items.length ? items.map((item) => `
                                 <div class="questions-hub-time-row">
@@ -4589,7 +5221,7 @@ window.QuestionsUI = {
                                 </div>
                             `).join("") : `
                                 <div class="questions-empty-inline questions-empty-inline-soft">
-                                    Ainda não há tempo médio suficiente para esse recorte.
+                                    Ainda nÃ£o hÃ¡ tempo mÃ©dio suficiente para esse recorte.
                                 </div>
                             `}
                         </div>
@@ -4611,7 +5243,7 @@ window.QuestionsUI = {
                                 </div>
                             `).join("") : `
                                 <div class="questions-empty-inline questions-empty-inline-soft">
-                                    Ainda não há tempo total suficiente para esse recorte.
+                                    Ainda nÃ£o hÃ¡ tempo total suficiente para esse recorte.
                                 </div>
                             `}
                         </div>
@@ -4660,7 +5292,7 @@ window.QuestionsUI = {
 
                         ${model.statsScope !== "geral" ? `
                             <div class="questions-hub-filter-block">
-                                <div class="questions-hub-filter-title">Passo 1 · Serie</div>
+                                <div class="questions-hub-filter-title">Passo 1 Â· Serie</div>
                                 <div class="questions-hub-filter-row">
                                     ${model.series.map((serie) => `
                                         <button class="questions-hub-filter-pill${Number(model.activeSerie) === Number(serie.key) ? " is-active" : ""}" type="button" data-hub-serie="${serie.key}">
@@ -4673,14 +5305,14 @@ window.QuestionsUI = {
 
                         ${model.statsScope === "materia" || model.statsScope === "assunto" ? `
                             <div class="questions-hub-filter-block">
-                                <div class="questions-hub-filter-title">Passo 2 · Matéria</div>
+                                <div class="questions-hub-filter-title">Passo 2 Â· MatÃ©ria</div>
                                 <div class="questions-hub-filter-row">
                                     ${model.subjects.length ? model.subjects.map((subject) => `
                                         <button class="questions-hub-filter-pill questions-hub-filter-pill-subject${model.activeSubject === subject.key ? " is-active" : ""}" type="button" data-hub-subject="${this.escapeHtml(subject.key)}">
                                             ${this.escapeHtml(subject.label)}
                                         </button>
                                     `).join("") : `
-                                        <div class="questions-empty-inline">Nenhuma matéria pronta para essa série ainda.</div>
+                                        <div class="questions-empty-inline">Nenhuma matÃ©ria pronta para essa sÃ©rie ainda.</div>
                                     `}
                                 </div>
                             </div>
@@ -4688,7 +5320,7 @@ window.QuestionsUI = {
 
                         ${model.statsScope === "assunto" ? `
                             <div class="questions-hub-filter-block">
-                                <div class="questions-hub-filter-title">Passo 3 · Assunto</div>
+                                <div class="questions-hub-filter-title">Passo 3 Â· Assunto</div>
                                 <div class="questions-hub-filter-row">
                                     ${model.topicOptions.length ? model.topicOptions.map((topic) => `
                                         <button class="questions-hub-filter-pill questions-hub-filter-pill-topic${model.activeTopicKey === topic.key ? " is-active" : ""}" type="button" data-hub-topic="${this.escapeHtml(topic.key)}">
@@ -4705,12 +5337,12 @@ window.QuestionsUI = {
                             ${this.renderProgressHubRadar(model.radarMetrics)}
                             <div class="questions-hub-radar-meta">
                                 <article class="questions-hub-radar-note">
-                                    <span>Precisão do recorte</span>
-                                    <strong>${Math.round(model.radarMetrics.find((item) => item.label === "Precisão")?.value || 0)}%</strong>
+                                    <span>PrecisÃ£o do recorte</span>
+                                    <strong>${Math.round(model.radarMetrics.find((item) => item.label === "PrecisÃ£o")?.value || 0)}%</strong>
                                     <small>${this.escapeHtml(model.scopeSummary)}</small>
                                 </article>
                                 <article class="questions-hub-radar-note">
-                                    <span>Tempo médio</span>
+                                    <span>Tempo mÃ©dio</span>
                                     <strong>${QuestionsService.formatTime(model.timeChartItems.length === 1 ? (model.timeChartItems[0]?.avgTimeMs || 0) : model.activeAvgTimeMs)}</strong>
                                     <small>por resposta dentro do recorte</small>
                                 </article>
@@ -4721,7 +5353,7 @@ window.QuestionsUI = {
                                 </article>
                                 <article class="questions-hub-radar-note">
                                     <span>Indicadores do radar</span>
-                                    <small>Precisão = acerto, Cobertura = quanto do recorte já apareceu, Ritmo = tempo médio, Constância = quantidade de sessões, Tração = volume respondido, Domínio = saldo entre acertos e erros.</small>
+                                    <small>PrecisÃ£o = acerto, Cobertura = quanto do recorte jÃ¡ apareceu, Ritmo = tempo mÃ©dio, ConstÃ¢ncia = quantidade de sessÃµes, TraÃ§Ã£o = volume respondido, DomÃ­nio = saldo entre acertos e erros.</small>
                                 </article>
                             </div>
                         </div>
@@ -4734,15 +5366,15 @@ window.QuestionsUI = {
 
                 <details class="questions-hub-section questions-hub-section-subjects" open>
                     <summary class="questions-hub-summary">
-                        <span>Comparacao do recorte</span>
-                        <strong>${comparisonItems.length} item(ns) visiveis</strong>
+                        <span>ComparaÃ§Ã£o do recorte</span>
+                        <strong>${comparisonItems.length} item(ns) visÃ­veis</strong>
                     </summary>
                     <div class="questions-hub-bars">
                         ${comparisonItems.length ? comparisonItems.map((item) => `
                             <article class="questions-hub-bar-card">
                                 <div class="questions-hub-bar-copy">
                                     <strong>${this.escapeHtml(item.subjectLabel || item.topicLabel || item.label)}</strong>
-                                    <span>${item.attempts} questões · ${(item.topicCount || 1)} item(ns) · ${item.accuracy}% de acerto</span>
+                                    <span>${item.attempts} questÃµes Â· ${(item.topicCount || 1)} item(ns) Â· ${item.accuracy}% de acerto</span>
                                 </div>
                                 <div class="questions-hub-bar-track">
                                     <div class="questions-hub-bar-fill questions-hub-bar-fill-cyan" style="width:${Math.max(8, item.accuracy || 0)}%"></div>
@@ -4751,7 +5383,7 @@ window.QuestionsUI = {
                             </article>
                         `).join("") : `
                             <div class="questions-empty-inline questions-empty-inline-soft">
-                                Ainda não há comparação suficiente para esse recorte.
+                                Ainda nÃ£o hÃ¡ comparaÃ§Ã£o suficiente para esse recorte.
                             </div>
                         `}
                     </div>
@@ -4767,7 +5399,7 @@ window.QuestionsUI = {
                             <article class="questions-hub-bar-card">
                                 <div class="questions-hub-bar-copy">
                                     <strong>${this.escapeHtml(serie.label)}</strong>
-                                    <span>${serie.attempts} questões · ${serie.sessions} sessão(ões) · ${QuestionsService.formatTime(serie.avgTimeMs)}</span>
+                                    <span>${serie.attempts} questÃµes Â· ${serie.sessions} sessÃ£o(Ãµes) Â· ${QuestionsService.formatTime(serie.avgTimeMs)}</span>
                                 </div>
                                 <div class="questions-hub-bar-track">
                                     <div class="questions-hub-bar-fill questions-hub-bar-fill-mint" style="width:${Math.max(8, serie.accuracy)}%"></div>
@@ -4801,10 +5433,10 @@ window.QuestionsUI = {
                             ${model.weakOverall.length ? model.weakOverall.map((topic) => `
                                 <div class="questions-hub-topic-row">
                                     <strong>${this.escapeHtml(topic.topicLabel)}</strong>
-                                    <span>${topic.errors} erro(s) · ${Math.round((topic.accuracy || 0) * 100)}% de acerto</span>
+                                    <span>${topic.errors} erro(s) Â· ${Math.round((topic.accuracy || 0) * 100)}% de acerto</span>
                                 </div>
                             `).join("") : `
-                                <div class="questions-empty-inline">Ainda não há erro suficiente para cravar um ponto fraco.</div>
+                                <div class="questions-empty-inline">Ainda nÃ£o hÃ¡ erro suficiente para cravar um ponto fraco.</div>
                             `}
                         </article>
 
@@ -4813,7 +5445,7 @@ window.QuestionsUI = {
                             ${model.strongOverall.length ? model.strongOverall.map((topic) => `
                                 <div class="questions-hub-topic-row">
                                     <strong>${this.escapeHtml(topic.topicLabel)}</strong>
-                                    <span>${topic.hits} acerto(s) · ${Math.round((topic.accuracy || 0) * 100)}% de precis\u00e3o</span>
+                                    <span>${topic.hits} acerto(s) Â· ${Math.round((topic.accuracy || 0) * 100)}% de precis\u00e3o</span>
                                 </div>
                             `).join("") : `
                                 <div class="questions-empty-inline">Os pontos fortes v\u00e3o ganhar nome assim que os acertos se acumularem.</div>
@@ -4840,11 +5472,11 @@ window.QuestionsUI = {
                         ${model.recentSessions.length ? model.recentSessions.map((session) => `
                             <div class="questions-hub-session-pill">
                                 <strong>${this.escapeHtml(session.subjectLabel || "Sess\u00e3o")}</strong>
-                                <span>${session.accuracy || 0}% · ${session.amount || 0} questões</span>
+                                <span>${session.accuracy || 0}% Â· ${session.amount || 0} questÃµes</span>
                             </div>
                         `).join("") : `
                             <div class="questions-empty-inline questions-empty-inline-soft">
-                                As últimas sessões vão aparecer aqui para ajudar na leitura do ritmo.
+                                As Ãºltimas sessÃµes vÃ£o aparecer aqui para ajudar na leitura do ritmo.
                             </div>
                         `}
                     </div>
@@ -5339,7 +5971,7 @@ window.QuestionsUI = {
                             item.label ===
                             "Educacao Fisica" ||
                             item.label ===
-                            "EducaÃ§Ã£o FÃ­sica"
+                            "EducaÃƒÂ§ÃƒÂ£o FÃƒÂ­sica"
                                 ? "Ed Fisica"
                                 : item.label,
                     labelFormatter:
@@ -5376,7 +6008,7 @@ window.QuestionsUI = {
                     const displayLabel =
                         item.label ===
                         "Educação Física"
-                            ? "Ed Física"
+                            ? "Ed FÃ­sica"
                             : item.label;
                     const labelPoint =
                         polarToPercent(
@@ -5592,7 +6224,7 @@ window.QuestionsUI = {
                                                         <span class="questions-smart-topic-row-check" aria-hidden="true"></span>
                                                         <span class="questions-smart-topic-row-copy">
                                                             <strong>${this.escapeHtml(topic.label)}</strong>
-                                                            <small>${topic.count || 0} questoes prontas${topic.subtopicCount ? ` · ${topic.subtopicCount} subtopico(s)` : ""}</small>
+                                                            <small>${topic.count || 0} questoes prontas${topic.subtopicCount ? ` Â· ${topic.subtopicCount} subtopico(s)` : ""}</small>
                                                         </span>
                                                     </button>
                                                 `).join("")}
@@ -5613,13 +6245,13 @@ window.QuestionsUI = {
                         ` : ""}
                         ${hiddenSubjects ? `
                             <div class="questions-inline-note questions-smart-subject-note">
-                                +${hiddenSubjects} matéria(s) continuam disponíveis. Ajuste as séries para refinar mais se quiser.
+                                +${hiddenSubjects} matÃ©ria(s) continuam disponÃ­veis. Ajuste as sÃ©ries para refinar mais se quiser.
                             </div>
                         ` : ""}
                     </div>
                 ` : `
                     <div class="questions-empty-inline">
-                        Nenhuma matéria ficou disponível com as séries ativas. Volte e ajuste a seleção.
+                        Nenhuma matÃ©ria ficou disponÃ­vel com as sÃ©ries ativas. Volte e ajuste a seleÃ§Ã£o.
                     </div>
                 `}
             </section>
@@ -5690,7 +6322,7 @@ window.QuestionsUI = {
 
                 <section class="questions-smart-config-card">
                     <div class="questions-smart-config-group questions-smart-config-group--solo">
-                        <div class="questions-panel-label">Quantidade de questões</div>
+                        <div class="questions-panel-label">Quantidade de questÃµes</div>
                         <div class="questions-smart-config-grid questions-smart-config-grid--quantity">
                             ${smartQuestionOptions.map((amount) => `
                                 <button class="questions-pill${smartSelectedQuestionCount === amount ? " is-active" : ""}" type="button" data-smart-question-count="${amount}" aria-pressed="${smartSelectedQuestionCount === amount ? "true" : "false"}">
@@ -5771,7 +6403,7 @@ window.QuestionsUI = {
 
                 <section class="questions-smart-config-card">
                     <div class="questions-smart-config-group">
-                        <div class="questions-panel-label">Quantidade de questões</div>
+                        <div class="questions-panel-label">Quantidade de questÃµes</div>
                         <div class="questions-smart-config-grid questions-smart-config-grid--quantity">
                             ${timeOptions.map((minutes) => `
                                 <button class="questions-pill${ctx.smartSessionMetric === "tempo" && selectedTimeMinutes === minutes ? " is-active" : ""}" type="button" data-smart-time="${minutes}">
@@ -5782,13 +6414,13 @@ window.QuestionsUI = {
                                 <input id="questionsSmartTimeInput" type="number" min="1" step="1" inputmode="numeric" value="${isCustomTimeActive ? selectedTimeMinutes : ""}" placeholder="min">
                             </label>
                             <button class="questions-pill questions-pill-infinity${ctx.smartSessionMetric === "tempo" && selectedTimeMinutes === null ? " is-active" : ""}" type="button" data-smart-time-infinite="true">
-                                ∞
+                                âˆž
                             </button>
                         </div>
                     </div>
 
                     <div class="questions-smart-config-group">
-                        <div class="questions-panel-label">Quantidade de questões</div>
+                        <div class="questions-panel-label">Quantidade de questÃµes</div>
                         <div class="questions-smart-config-grid questions-smart-config-grid--quantity">
                             ${questionOptions.map((amount) => `
                                 <button class="questions-pill${selectedQuestionCount === amount ? " is-active" : ""}" type="button" data-smart-question-count="${amount}">
@@ -5799,15 +6431,15 @@ window.QuestionsUI = {
                                 <input id="questionsSmartQuestionInput" type="number" min="1" step="1" inputmode="numeric" value="${isCustomQuestionActive ? selectedQuestionCount : ""}" placeholder="n">
                             </label>
                             <button class="questions-pill questions-pill-infinity questions-pill-infinity--large${selectedQuestionCount === null ? " is-active" : ""}" type="button" data-smart-question-infinite="true" aria-label="Sem limite">
-                                ∞
+                                âˆž
                             </button>
                         </div>
                     </div>
 
                     ${preview.isReady ? `
                         <div class="questions-smart-config-note">
-                            <span>${preview.serieLabel} • ${preview.materiaLabel}</span>
-                            <strong>${preview.trainingValueLabel === "∞" ? "Todas as questões disponíveis" : `${preview.amount || 0} questões previstas`}</strong>
+                            <span>${preview.serieLabel} â€¢ ${preview.materiaLabel}</span>
+                            <strong>${preview.trainingValueLabel === "âˆž" ? "Todas as questÃµes disponÃ­veis" : `${preview.amount || 0} questÃµes previstas`}</strong>
                         </div>
                     ` : `
                         <div class="questions-issue-list">
@@ -5877,7 +6509,7 @@ window.QuestionsUI = {
                                     profile.smartGoal
                                 ]?.label || "Continuar",
                                 profile.preferredAmount
-                                    ? `${profile.preferredAmount} questões`
+                                    ? `${profile.preferredAmount} questÃµes`
                                     : "",
                                 ...(profile.excludedSeries || []).map((serie) => `${serie}a s\u00e9rie fora`),
                                 ...(profile.excludedBases || []).map((base) => `${base} fora`),
@@ -5969,8 +6601,8 @@ window.QuestionsUI = {
                                 <article class="questions-profile-item">
                                     <div class="questions-profile-copy">
                                         <strong>${block.name}</strong>
-                                        <span>${block.mode === "smart" ? "Treino inteligente" : "Treino específico"} | ${meta.amount || block.questionIds?.length || 0} questões</span>
-                                        <span>${meta.materiaLabel || "Matéria"}${topicLabels.length ? ` | ${topicLabels.join(", ")}` : ""}</span>
+                                        <span>${block.mode === "smart" ? "Treino inteligente" : "Treino especÃ­fico"} | ${meta.amount || block.questionIds?.length || 0} questÃµes</span>
+                                        <span>${meta.materiaLabel || "MatÃ©ria"}${topicLabels.length ? ` | ${topicLabels.join(", ")}` : ""}</span>
                                         <span>${block.lastUsedAt ? `Usado por ultimo em ${this.formatDate(block.lastUsedAt)}` : `Salvo em ${this.formatDate(block.updatedAt)}`}</span>
                                     </div>
                                     <div class="questions-profile-actions">
@@ -6028,7 +6660,7 @@ window.QuestionsUI = {
                     <div>
                         <div class="questions-kicker">Retomar treino</div>
                         <h2>Reaproveite rotas recentes</h2>
-                        <p>As sessões em andamento ficam salvas com progresso. As concluídas continuam disponíveis para reiniciar sem remontar a rota.</p>
+                        <p>As sessÃµes em andamento ficam salvas com progresso. As concluÃ­das continuam disponÃ­veis para reiniciar sem remontar a rota.</p>
                     </div>
 
                     <div class="questions-entry-actions">
@@ -6038,7 +6670,7 @@ window.QuestionsUI = {
 
                 ${!inProgressRuns.length && !completedRuns.length ? `
                     <div class="questions-empty-inline">
-                        Nenhuma sessão salva ainda. Quando você iniciar um treino, o progresso vai aparecer aqui automaticamente.
+                        Nenhuma sessÃ£o salva ainda. Quando vocÃª iniciar um treino, o progresso vai aparecer aqui automaticamente.
                     </div>
                 ` : `
                     <div class="questions-run-sections">
@@ -6056,7 +6688,7 @@ window.QuestionsUI = {
                                         <article class="questions-run-item">
                                             <div class="questions-run-copy">
                                                 <strong>${run.title}</strong>
-                                                <span>${run.mode === "smart" ? "Treino inteligente" : "Treino específico"} | ${run.routeSnapshot?.meta?.amount || run.questionIds?.length || 0} questões</span>
+                                                <span>${run.mode === "smart" ? "Treino inteligente" : "Treino especÃ­fico"} | ${run.routeSnapshot?.meta?.amount || run.questionIds?.length || 0} questÃµes</span>
                                                 <span>${run.answers?.length || 0}/${run.questionIds?.length || 0} respondidas | atualizada em ${this.formatDate(run.updatedAt)}</span>
                                             </div>
                                             <div class="questions-run-actions">
@@ -6094,7 +6726,7 @@ window.QuestionsUI = {
                                         <article class="questions-run-item">
                                             <div class="questions-run-copy">
                                                 <strong>${run.title}</strong>
-                                                <span>${run.summary?.accuracy || 0}% de acerto | ${run.summary?.total || run.questionIds?.length || 0} questões</span>
+                                                <span>${run.summary?.accuracy || 0}% de acerto | ${run.summary?.total || run.questionIds?.length || 0} questÃµes</span>
                                                 <span>Concluida em ${this.formatDate(run.completedAt || run.updatedAt)}</span>
                                             </div>
                                             <div class="questions-run-actions">
@@ -6110,7 +6742,7 @@ window.QuestionsUI = {
                                 </div>
                             ` : `
                                 <div class="questions-empty-inline questions-empty-inline-soft">
-                                    As sessões concluídas vão aparecer aqui depois dos primeiros treinos.
+                                    As sessÃµes concluÃ­das vÃ£o aparecer aqui depois dos primeiros treinos.
                                 </div>
                             `}
                         </article>
@@ -6195,12 +6827,12 @@ window.QuestionsUI = {
         return `
             <div class="questions-session-overview">
                 <article class="questions-session-stat">
-                    <strong>${meta.materiaLabel || "Matéria"}</strong>
-                    <span>Matéria ativa</span>
+                    <strong>${meta.materiaLabel || "MatÃ©ria"}</strong>
+                    <span>MatÃ©ria ativa</span>
                 </article>
                 <article class="questions-session-stat">
                     <strong>${meta.amount || total}</strong>
-                    <span>Questões na rota</span>
+                    <span>QuestÃµes na rota</span>
                 </article>
                 <article class="questions-session-stat">
                     <strong>${meta.estimatedDuration || "0 min"}</strong>
@@ -6272,7 +6904,7 @@ window.QuestionsUI = {
             subjectLabel:
                 question.subjectLabel ||
                 meta.materiaLabel ||
-                "Matéria",
+                "MatÃ©ria",
             topicLabel:
                 question.topicLabel ||
                 "Assunto",
@@ -6324,7 +6956,7 @@ window.QuestionsUI = {
                     <small>${model.errors} erro(s)</small>
                 </article>
                 <article class="questions-session-mini-card">
-                    <span>Matéria</span>
+                    <span>MatÃ©ria</span>
                     <strong>${model.subjectLabel}</strong>
                 </article>
                 <article class="questions-session-mini-card">
@@ -6342,7 +6974,7 @@ window.QuestionsUI = {
         return `
             <section class="questions-session-info-panel">
                 <div class="questions-session-info-head">
-                    <div class="questions-panel-label">Informações da questão</div>
+                    <div class="questions-panel-label">InformaÃ§Ãµes da questÃ£o</div>
                     <button id="questionsInfoBackBtn" class="questions-secondary-btn questions-session-info-back-btn" type="button">Voltar</button>
                 </div>
                 <div class="questions-session-info-grid">
@@ -6458,8 +7090,8 @@ window.QuestionsUI = {
 
         return `
             <section class="questions-comment-panel${answer ? " is-ready" : ""}">
-                <div class="questions-panel-label">Comentário rápido</div>
-                <p>${question.explanation || "Comentário ainda não preenchido para esta questão."}</p>
+                <div class="questions-panel-label">ComentÃ¡rio rÃ¡pido</div>
+                <p>${question.explanation || "ComentÃ¡rio ainda nÃ£o preenchido para esta questÃ£o."}</p>
                 ${!answer.correct ? `
                     <div class="questions-comment-answer">Resposta esperada: ${answer.correctAnswerLabel || "Nao preenchida"}</div>
                 ` : ""}
@@ -6497,14 +7129,14 @@ window.QuestionsUI = {
                         <span>Se notar algo ruim, ambiguo ou incorreto, envie uma observacao.</span>
                     </div>
                     <button id="questionsContestToggleBtn" class="questions-contest-toggle${isOpen ? " is-open" : ""}" type="button" data-question-contest-toggle="${this.escapeHtml(question.id || "")}">
-                        ${isOpen ? "Fechar contestação" : "Contestar questão"}
+                        ${isOpen ? "Fechar contestaÃ§Ã£o" : "Contestar questÃ£o"}
                     </button>
                 </div>
                 ${isOpen ? `
                     <form id="questionsContestForm" class="questions-contest-form">
                         <textarea id="questionsContestInput" class="questions-contest-field" rows="3" placeholder="${this.escapeHtml(defaultText)}"></textarea>
                         <div class="questions-contest-actions">
-                            <button id="questionsContestSubmitBtn" class="questions-secondary-btn" type="submit">Enviar contestação</button>
+                            <button id="questionsContestSubmitBtn" class="questions-secondary-btn" type="submit">Enviar contestaÃ§Ã£o</button>
                         </div>
                     </form>
                 ` : ""}
@@ -6579,7 +7211,7 @@ window.QuestionsUI = {
             </div>
             ${!answer ? `
                 <button id="questionsChoiceConfirmBtn" class="questions-confirm-btn" type="button" disabled>
-                    <span class="questions-confirm-icon">✓</span>
+                    <span class="questions-confirm-icon">âœ“</span>
                     Confirmar
                 </button>
             ` : ""}
@@ -6612,7 +7244,7 @@ window.QuestionsUI = {
                 </div>
 
                 <button id="questionsOrderingSubmitBtn" class="questions-confirm-btn" type="button" ${isLocked ? "disabled" : ""}>
-                    <span class="questions-confirm-icon">✓</span>
+                    <span class="questions-confirm-icon">âœ“</span>
                     Confirmar
                 </button>
             </div>
@@ -6625,7 +7257,7 @@ window.QuestionsUI = {
             <form id="questionsInputForm" class="questions-input-form">
                 <input id="questionsInputField" class="questions-input-field" type="text" placeholder="Digite sua resposta" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" ${answer ? "disabled" : ""}>
                 <button id="questionsInputConfirmBtn" class="questions-confirm-btn" type="submit" ${answer ? "disabled" : ""}>
-                    <span class="questions-confirm-icon">✓</span>
+                    <span class="questions-confirm-icon">âœ“</span>
                     Confirmar
                 </button>
             </form>
@@ -6649,7 +7281,7 @@ window.QuestionsUI = {
         const lockedNote =
             scoredCorrect
                 ? "O acerto j\u00e1 ficou registrado na primeira confirma\u00e7\u00e3o. Esta nova resposta conta s\u00f3 como tentativa."
-                : "O erro já ficou registrado na primeira confirmação. Esta nova resposta não altera o cômputo.";
+                : "O erro jÃ¡ ficou registrado na primeira confirmaÃ§Ã£o. Esta nova resposta nÃ£o altera o cÃ´mputo.";
 
         return `
             <div class="questions-feedback questions-feedback--minimal ${answer.correct ? "is-correct" : "is-wrong"}">
@@ -6661,8 +7293,8 @@ window.QuestionsUI = {
                         Responder de novo
                     </button>
                     <button id="questionsContinueBtn" class="questions-confirm-btn" type="button">
-                        <span class="questions-confirm-icon">→</span>
-                        Próxima
+                        <span class="questions-confirm-icon">â†’</span>
+                        PrÃ³xima
                     </button>
                 </div>
                 <div class="questions-feedback-note">
@@ -6685,7 +7317,7 @@ window.QuestionsUI = {
 
         return `
             <section class="questions-card questions-results-card">
-                <div class="questions-kicker">Sessão concluída</div>
+                <div class="questions-kicker">SessÃ£o concluÃ­da</div>
                 <h2>${summary.accuracy}% de acerto</h2>
                 <p>${summary.headline}. ${summary.nextStep}</p>
 
@@ -6700,7 +7332,7 @@ window.QuestionsUI = {
                     </article>
                     <article class="questions-result-stat">
                         <strong>${QuestionsService.formatTime(summary.avgTimeMs)}</strong>
-                        <span>tempo médio</span>
+                        <span>tempo mÃ©dio</span>
                     </article>
                     <article class="questions-result-stat">
                         <strong>${summary.topicCount}</strong>
@@ -6710,7 +7342,7 @@ window.QuestionsUI = {
 
                 <div class="questions-results-insights">
                     <article class="questions-result-panel">
-                        <div class="questions-panel-label">Leitura da sessão</div>
+                        <div class="questions-panel-label">Leitura da sessÃ£o</div>
                         <div class="questions-result-callouts">
                             <div class="questions-result-callout">
                                 <strong>Ponto forte</strong>
@@ -6738,10 +7370,10 @@ window.QuestionsUI = {
 
                 <div class="questions-results-actions">
                     ${summary.weakTopic ? `
-                        <button id="questionsFocusWeakBtn" class="questions-secondary-btn" type="button">Reforçar ponto fraco</button>
+                        <button id="questionsFocusWeakBtn" class="questions-secondary-btn" type="button">ReforÃ§ar ponto fraco</button>
                     ` : ""}
                     <button id="questionsReviewErrorsBtn" class="questions-secondary-btn" type="button">Revisar erros</button>
-                    <button id="questionsMixedReviewBtn" class="questions-secondary-btn" type="button">Misturar revisão</button>
+                    <button id="questionsMixedReviewBtn" class="questions-secondary-btn" type="button">Misturar revisÃ£o</button>
                     <button id="questionsRestartBtn" class="questions-primary-btn" type="button">Treinar de novo</button>
                     <button id="questionsResultsBackBtn" class="questions-secondary-btn" type="button">Voltar ao launcher</button>
                 </div>
@@ -6777,8 +7409,8 @@ window.QuestionsUI = {
 
         return `
             <section class="questions-stats-card">
-                <div class="questions-panel-label">Radar da matéria</div>
-                <h3>${subject?.label || "Matéria"}</h3>
+                <div class="questions-panel-label">Radar da matÃ©ria</div>
+                <h3>${subject?.label || "MatÃ©ria"}</h3>
                 <div class="questions-stats-grid">
                     <article>
                         <strong>${dashboard.attempts}</strong>
@@ -6790,11 +7422,11 @@ window.QuestionsUI = {
                     </article>
                     <article>
                         <strong>${QuestionsService.formatTime(dashboard.avgTimeMs)}</strong>
-                        <span>tempo médio</span>
+                        <span>tempo mÃ©dio</span>
                     </article>
                     <article>
                         <strong>${dashboard.totalSessions || 0}</strong>
-                        <span>sessões</span>
+                        <span>sessÃµes</span>
                     </article>
                 </div>
 
@@ -6807,7 +7439,7 @@ window.QuestionsUI = {
                         </div>
                     `).join("") : `
                         <div class="questions-empty-inline">
-                            O painel vai ganhar vida conforme você responder questões.
+                            O painel vai ganhar vida conforme vocÃª responder questÃµes.
                         </div>
                     `}
                 </div>
@@ -6821,7 +7453,7 @@ window.QuestionsUI = {
                         </div>
                     `).join("") : `
                         <div class="questions-empty-inline">
-                            Os destaques positivos vão aparecer conforme você acumular acertos.
+                            Os destaques positivos vÃ£o aparecer conforme vocÃª acumular acertos.
                         </div>
                     `}
                 </div>
@@ -6831,25 +7463,25 @@ window.QuestionsUI = {
                     ${(dashboard.modeBreakdown || []).length ? dashboard.modeBreakdown.map((mode) => `
                         <div class="questions-weak-item">
                             <strong>${mode.modeLabel}</strong>
-                            <span>${mode.sessions} sessão(ões) | ${mode.avgAccuracy}% médio</span>
+                            <span>${mode.sessions} sessÃ£o(Ãµes) | ${mode.avgAccuracy}% mÃ©dio</span>
                         </div>
                     `).join("") : `
                         <div class="questions-empty-inline">
-                            O painel de modos vai ganhar vida conforme você variar os treinos.
+                            O painel de modos vai ganhar vida conforme vocÃª variar os treinos.
                         </div>
                     `}
                 </div>
 
                 <div class="questions-stats-section">
-                    <div class="questions-panel-label">Sessões focadas</div>
+                    <div class="questions-panel-label">SessÃµes focadas</div>
                     ${(dashboard.focusedSessions || []).length ? dashboard.focusedSessions.slice(0, 3).map((session) => `
                         <div class="questions-session-log">
                             <strong>${session.topicLabels?.[0] || session.weakTopicLabel || session.subjectLabel || "Sess\u00e3o focada"}</strong>
-                            <span>${session.accuracy || 0}% | ${session.amount || 0} questões</span>
+                            <span>${session.accuracy || 0}% | ${session.amount || 0} questÃµes</span>
                         </div>
                     `).join("") : `
                         <div class="questions-empty-inline">
-                            Quando você fizer sessões mais focadas, elas aparecem aqui.
+                            Quando vocÃª fizer sessÃµes mais focadas, elas aparecem aqui.
                         </div>
                     `}
                 </div>
@@ -6861,8 +7493,8 @@ window.QuestionsUI = {
                         <span>${dashboard.mostTrainedTopic?.topicLabel || "Ainda sem lideran\u00e7a clara"}</span>
                     </div>
                     <div class="questions-session-log">
-                        <strong>Última leitura</strong>
-                        <span>${dashboard.sessions?.[0]?.accuracy ?? 0}% na sessão mais recente</span>
+                        <strong>Ãšltima leitura</strong>
+                        <span>${dashboard.sessions?.[0]?.accuracy ?? 0}% na sessÃ£o mais recente</span>
                     </div>
                 </div>
             </section>
