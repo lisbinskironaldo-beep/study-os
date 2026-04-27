@@ -1,0 +1,984 @@
+diff --git a/js/app.js b/js/app.js
+index a7acb9a..71952a3 100644
+--- a/js/app.js
++++ b/js/app.js
+@@ -430,6 +430,16 @@ const Core = {
+                 });
+             });
+ 
++        document
++            .querySelectorAll("[data-home-action]")
++            .forEach((button) => {
++                button.addEventListener("click", () => {
++                    this.handleHomeAction(
++                        button.dataset.homeAction
++                    );
++                });
++            });
++
+         this.footerButtons.forEach(btn => {
+ 
+             btn.addEventListener("click", () => {
+@@ -806,7 +816,7 @@ const Core = {
+             return this.premiumStudyLoadPromise;
+         }
+ 
+-        const premiumStudyVersion = "20260426-ocr-visual-4";
++        const premiumStudyVersion = "20260427-premium-aprender-4";
+ 
+         this.premiumStudyLoadPromise =
+             this.ensureScriptLoaded(
+diff --git a/premium-study/bootstrap/index.js b/premium-study/bootstrap/index.js
+index 7a19b4f..0ca4c80 100644
+--- a/premium-study/bootstrap/index.js
++++ b/premium-study/bootstrap/index.js
+@@ -5,7 +5,7 @@
+ 
+     const STYLE_ID = "premium-study-styles";
+     const SCRIPT_MARK = "data-premium-study-src";
+-    const VERSION = "20260426-ocr-visual-4";
++    const VERSION = "20260427-premium-aprender-4";
+     const dependencies = [
+         "premium-study/storage/indexeddb.js",
+         "premium-study/services/access-control.js",
+diff --git a/premium-study/styles/premium-study.css b/premium-study/styles/premium-study.css
+index 00ecbcc..7ec5d8d 100644
+--- a/premium-study/styles/premium-study.css
++++ b/premium-study/styles/premium-study.css
+@@ -2627,12 +2627,51 @@
+         display: flex;
+     }
+ 
++    .premium-learn-workspace-head {
++        grid-template-columns: 1fr;
++    }
++
++    .premium-learn-workspace-meta {
++        gap: 6px;
++    }
++
++    .premium-learn-meta-chip {
++        min-height: 30px;
++        font-size: 0.78rem;
++    }
++
+     .premium-learn-lesson,
+     .premium-learn-memory-deck,
+     .premium-learn-case-grid {
+         grid-template-columns: 1fr;
+     }
+ 
++    .premium-learn-lesson {
++        grid-template-columns: 1fr;
++    }
++
++    .premium-learn-lesson-index {
++        width: 38px;
++        height: 38px;
++    }
++
++    .premium-learn-inline-head {
++        display: grid;
++    }
++
++    .premium-learn-compare-grid {
++        grid-template-columns: 1fr;
++    }
++
++    .premium-learn-flow-step {
++        grid-template-columns: 1fr;
++    }
++
++    .premium-learn-flow-step > span {
++        width: 32px;
++        height: 32px;
++    }
++
+     .premium-learn-table-row {
+         grid-template-columns: 1fr;
+     }
+@@ -2646,20 +2685,19 @@
+     }
+ 
+     .premium-learn-tool-tab {
+-        min-width: 76px;
+-        min-height: 48px;
++        min-width: 120px;
++        min-height: 54px;
+     }
+ 
+     .premium-learn-tool-tab span {
+-        display: none;
+-    }
+-
+-    .premium-learn-tool-tab small {
+-        display: inline;
+         overflow: hidden;
+         text-overflow: ellipsis;
+         white-space: nowrap;
+     }
++
++    .premium-learn-tool-tab small {
++        font-size: 0.7rem;
++    }
+ }
+ 
+ .premium-learn-assist-panel {
+@@ -2669,6 +2707,50 @@
+         linear-gradient(180deg, #eef4f8, #e6edf5);
+ }
+ 
++.premium-learn-assist-lead {
++    margin: 0;
++    max-width: 62ch;
++    color: var(--premium-reading-muted);
++    font-size: 0.98rem;
++    line-height: 1.62;
++}
++
++.premium-learn-review-grid {
++    display: grid;
++    gap: 10px;
++    max-width: var(--premium-reading-width);
++}
++
++.premium-learn-review-card {
++    display: grid;
++    grid-template-columns: 38px minmax(0, 1fr);
++    gap: 12px;
++    align-items: start;
++    padding: 14px;
++    border: 1px solid rgba(22, 34, 52, 0.08);
++    border-radius: 8px;
++    background: rgba(255, 255, 255, 0.6);
++}
++
++.premium-learn-review-card span {
++    display: grid;
++    place-items: center;
++    width: 36px;
++    height: 36px;
++    border-radius: 999px;
++    background: rgba(95, 114, 255, 0.14);
++    color: #24304a;
++    font-size: 0.76rem;
++    font-weight: 800;
++}
++
++.premium-learn-review-card p {
++    margin: 0;
++    color: var(--premium-reading-ink);
++    font-size: 0.95rem;
++    line-height: 1.58;
++}
++
+ .premium-learn-workspace {
+     display: grid;
+     grid-template-columns: minmax(220px, 300px) minmax(0, 1fr);
+@@ -2756,16 +2838,21 @@
+ 
+ .premium-learn-workspace-main {
+     display: grid;
+-    gap: 16px;
++    gap: 18px;
+ }
+ 
+ .premium-learn-workspace-head {
+-    display: flex;
+-    align-items: flex-start;
+-    justify-content: space-between;
++    display: grid;
++    grid-template-columns: minmax(0, 1fr) auto;
+     gap: 18px;
+ }
+ 
++.premium-learn-workspace-head > div {
++    display: grid;
++    gap: 10px;
++    min-width: 0;
++}
++
+ .premium-learn-workspace-head h2 {
+     margin: 0;
+     max-width: 22ch;
+@@ -2774,60 +2861,143 @@
+     line-height: 0.98;
+ }
+ 
++.premium-learn-workspace-meta {
++    display: flex;
++    flex-wrap: wrap;
++    gap: 8px;
++}
++
++.premium-learn-meta-chip {
++    display: inline-flex;
++    align-items: center;
++    min-height: 32px;
++    padding: 0 12px;
++    border: 1px solid rgba(255, 255, 255, 0.08);
++    border-radius: 999px;
++    background: rgba(255, 255, 255, 0.05);
++    color: rgba(238, 242, 255, 0.72);
++    font-size: 0.83rem;
++    font-weight: 700;
++}
++
++.premium-learn-meta-chip-accent {
++    border-color: rgba(49, 215, 163, 0.26);
++    background: rgba(49, 215, 163, 0.12);
++    color: #dffbf3;
++}
++
+ .premium-learn-workspace-tabs {
+     display: flex;
+     align-items: center;
+     gap: 8px;
+     overflow-x: auto;
+-    padding-bottom: 4px;
++    padding: 2px 0 6px;
+     scrollbar-width: thin;
+ }
+ 
+ .premium-learn-tool-tab {
+-    display: flex;
++    display: grid;
++    grid-template-columns: minmax(0, 1fr) auto;
+     align-items: center;
+-    justify-content: space-between;
+-    gap: 8px;
++    gap: 4px 10px;
+     flex: 0 0 auto;
+-    min-width: 138px;
+-    min-height: 52px;
+-    max-height: 56px;
+-    padding: 10px 12px;
+-    border: 1px solid rgba(255, 255, 255, 0.08);
++    min-width: 150px;
++    min-height: 58px;
++    padding: 11px 13px;
++    border: 1px solid rgba(255, 255, 255, 0.14);
+     border-radius: 7px;
+-    background: rgba(255, 255, 255, 0.045);
++    background:
++        linear-gradient(180deg, rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0.05)),
++        rgba(255, 255, 255, 0.04);
+     color: var(--premium-muted);
+     font-weight: 800;
+     cursor: pointer;
++    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
++    transition: border-color 140ms ease, background 140ms ease, color 140ms ease, transform 140ms ease, box-shadow 140ms ease;
+ }
+ 
+ .premium-learn-tool-tab span {
+     overflow: hidden;
+     text-overflow: ellipsis;
+     white-space: nowrap;
++    color: rgba(238, 242, 255, 0.92);
++    font-size: 0.95rem;
+ }
+ 
+ .premium-learn-tool-tab small {
+-    display: none;
++    display: block;
++    grid-column: 1 / 2;
++    color: rgba(238, 242, 255, 0.68);
++    font-size: 0.73rem;
++    font-weight: 600;
+ }
+ 
+ .premium-learn-tool-tab em {
+     display: grid;
+     place-items: center;
+-    min-width: 24px;
++    grid-column: 2 / 3;
++    grid-row: 1 / span 2;
++    min-width: 28px;
+     height: 24px;
+     border-radius: 999px;
+-    background: rgba(255, 255, 255, 0.07);
++    background: rgba(255, 255, 255, 0.1);
++    color: rgba(238, 242, 255, 0.9);
+     font-style: normal;
+     font-size: 0.76rem;
+ }
+ 
++.premium-learn-tool-tab:hover {
++    transform: translateY(-1px);
++    border-color: rgba(121, 213, 255, 0.28);
++    background:
++        linear-gradient(180deg, rgba(121, 213, 255, 0.1), rgba(255, 255, 255, 0.06)),
++        rgba(255, 255, 255, 0.05);
++    box-shadow: 0 10px 24px rgba(7, 12, 22, 0.18);
++}
++
+ .premium-learn-tool-tab.is-active {
+     border-color: rgba(49, 215, 163, 0.32);
+-    background: rgba(49, 215, 163, 0.1);
++    background:
++        linear-gradient(180deg, rgba(49, 215, 163, 0.14), rgba(49, 215, 163, 0.08)),
++        rgba(255, 255, 255, 0.03);
+     color: var(--premium-ink);
+ }
+ 
++.premium-learn-tool-tab.is-active span {
++    color: #1b2a38;
++}
++
++.premium-learn-tool-tab.is-active small {
++    color: rgba(27, 42, 56, 0.68);
++}
++
++.premium-learn-tool-tab.is-active em {
++    background: rgba(49, 215, 163, 0.22);
++    color: #f2fffa;
++}
++
++.premium-learn-tab-intro {
++    display: grid;
++    gap: 8px;
++    max-width: 860px;
++    padding: 16px 18px;
++    border: 1px solid rgba(255, 255, 255, 0.08);
++    border-radius: 8px;
++    background: rgba(255, 255, 255, 0.035);
++}
++
++.premium-learn-tab-intro p {
++    margin: 0;
++    color: rgba(238, 242, 255, 0.76);
++    font-size: 0.96rem;
++    line-height: 1.6;
++}
++
++.premium-learn-workspace-head .premium-learn-lead {
++    max-width: 34ch;
++    color: rgba(238, 242, 255, 0.56);
++}
++
+ .premium-learn-coverage {
+     display: grid;
+     gap: 8px;
+@@ -2870,12 +3040,15 @@
+ 
+ .premium-learn-lesson {
+     display: grid;
+-    grid-template-columns: 52px minmax(0, 1fr);
+-    gap: 16px;
++    grid-template-columns: 56px minmax(0, 1fr);
++    gap: 18px;
+     padding: 24px;
+     border-radius: 8px;
+     border: 1px solid var(--premium-reading-line);
+-    background: linear-gradient(180deg, #f4f8fb, #e8eff4);
++    background:
++        linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(233, 240, 246, 0.96)),
++        linear-gradient(180deg, #f4f8fb, #e8eff4);
++    box-shadow: 0 16px 34px rgba(15, 23, 42, 0.08);
+ }
+ 
+ .premium-learn-lesson-index {
+@@ -2892,10 +3065,25 @@
+ 
+ .premium-learn-lesson-body {
+     display: grid;
+-    gap: 10px;
++    gap: 12px;
+     min-width: 0;
+ }
+ 
++.premium-learn-lesson-topline {
++    display: flex;
++    align-items: center;
++    justify-content: space-between;
++    gap: 10px;
++    flex-wrap: wrap;
++}
++
++.premium-learn-lesson-topline em {
++    color: rgba(34, 49, 63, 0.64);
++    font-size: 0.8rem;
++    font-style: normal;
++    font-weight: 700;
++}
++
+ .premium-learn-lesson h3 {
+     margin: 0;
+     color: var(--premium-reading-ink);
+@@ -2903,6 +3091,11 @@
+     line-height: 1.12;
+ }
+ 
++.premium-learn-paragraph-group {
++    display: grid;
++    gap: 10px;
++}
++
+ .premium-learn-lesson p,
+ .premium-learn-empty-tool p {
+     margin: 0;
+@@ -2911,6 +3104,36 @@
+     line-height: 1.72;
+ }
+ 
++.premium-learn-lesson-footer {
++    display: grid;
++    gap: 10px;
++    padding-top: 6px;
++    border-top: 1px solid rgba(22, 34, 52, 0.08);
++}
++
++.premium-learn-pill-row {
++    display: flex;
++    flex-wrap: wrap;
++    gap: 8px;
++}
++
++.premium-learn-pill {
++    display: inline-flex;
++    align-items: center;
++    min-height: 32px;
++    padding: 0 12px;
++    border-radius: 999px;
++    background: rgba(22, 34, 52, 0.08);
++    color: var(--premium-reading-ink);
++    font-size: 0.86rem;
++    font-weight: 700;
++    line-height: 1.35;
++}
++
++.premium-learn-pill-row-takeaways .premium-learn-pill {
++    background: rgba(49, 215, 163, 0.12);
++}
++
+ .premium-learn-empty-tool {
+     display: grid;
+     gap: 9px;
+@@ -2932,6 +3155,38 @@
+     gap: 12px;
+ }
+ 
++.premium-learn-memory-zone {
++    display: grid;
++    gap: 14px;
++}
++
++.premium-learn-inline-head {
++    display: flex;
++    align-items: flex-start;
++    justify-content: space-between;
++    gap: 12px;
++    padding: 4px 2px 0;
++}
++
++.premium-learn-inline-head > div {
++    display: grid;
++    gap: 6px;
++}
++
++.premium-learn-inline-head h3 {
++    margin: 0;
++    color: var(--premium-ink);
++    font-size: 1.12rem;
++    line-height: 1.25;
++}
++
++.premium-learn-inline-head em {
++    color: var(--premium-muted);
++    font-size: 0.82rem;
++    font-style: normal;
++    font-weight: 700;
++}
++
+ .premium-learn-memory-card,
+ .premium-learn-case {
+     display: grid;
+@@ -2976,6 +3231,17 @@
+     margin-top: 4px;
+ }
+ 
++.premium-learn-case-reveal {
++    display: grid;
++    gap: 8px;
++    padding: 10px 0 2px;
++    border-top: 1px solid rgba(255, 255, 255, 0.08);
++}
++
++.premium-learn-case-reveal small {
++    color: rgba(238, 242, 255, 0.66);
++}
++
+ .premium-learn-mini-action {
+     justify-self: start;
+     min-height: 34px;
+@@ -2990,11 +3256,32 @@
+ }
+ 
+ .premium-learn-check-progress {
++    display: grid;
++    gap: 8px;
+     color: var(--premium-reading-soft);
+     font-size: 0.86rem;
+     font-weight: 800;
+ }
+ 
++.premium-learn-check-progress strong {
++    color: var(--premium-reading-ink);
++    font-size: 0.94rem;
++}
++
++.premium-learn-progressbar {
++    overflow: hidden;
++    height: 10px;
++    border-radius: 999px;
++    background: rgba(22, 34, 52, 0.08);
++}
++
++.premium-learn-progressbar span {
++    display: block;
++    height: 100%;
++    border-radius: inherit;
++    background: linear-gradient(90deg, #31d7a3, #79d5ff);
++}
++
+ .premium-learn-check-items {
+     display: grid;
+     gap: 9px;
+@@ -3005,7 +3292,7 @@
+     display: grid;
+     grid-template-columns: 30px minmax(0, 1fr);
+     gap: 10px;
+-    align-items: center;
++    align-items: flex-start;
+     padding: 11px 12px;
+     border: 1px solid rgba(22, 34, 52, 0.08);
+     border-radius: 7px;
+@@ -3032,6 +3319,19 @@
+     line-height: 1.35;
+ }
+ 
++.premium-learn-check-copy {
++    display: grid;
++    gap: 5px;
++}
++
++.premium-learn-check-copy em {
++    color: rgba(34, 49, 63, 0.62);
++    font-size: 0.78rem;
++    font-style: normal;
++    font-weight: 700;
++    text-transform: uppercase;
++}
++
+ .premium-learn-check-item.is-checked {
+     background: rgba(49, 215, 163, 0.12);
+ }
+@@ -3049,6 +3349,113 @@
+     gap: 12px;
+ }
+ 
++.premium-learn-table-labels {
++    grid-template-columns: repeat(3, minmax(0, 1fr));
++    padding: 12px 14px;
++    gap: 10px;
++    background: rgba(22, 34, 52, 0.08);
++}
++
++.premium-learn-table-labels span {
++    color: var(--premium-reading-ink);
++    font-size: 0.74rem;
++    font-weight: 800;
++    text-transform: uppercase;
++}
++
++.premium-learn-compare-grid {
++    display: grid;
++    grid-template-columns: repeat(3, minmax(0, 1fr));
++    gap: 12px;
++    max-width: var(--premium-reading-width);
++}
++
++.premium-learn-compare-card {
++    display: grid;
++    gap: 8px;
++    min-width: 0;
++    padding: 16px;
++    border: 1px solid rgba(22, 34, 52, 0.08);
++    border-radius: 8px;
++    background: rgba(255, 255, 255, 0.58);
++}
++
++.premium-learn-compare-card strong {
++    color: var(--premium-reading-ink);
++    font-size: 0.98rem;
++    line-height: 1.35;
++}
++
++.premium-learn-compare-card p,
++.premium-learn-compare-card em {
++    margin: 0;
++    color: var(--premium-reading-muted);
++    font-size: 0.92rem;
++    line-height: 1.58;
++}
++
++.premium-learn-compare-card em {
++    font-style: normal;
++}
++
++.premium-learn-flow-track {
++    display: grid;
++    gap: 12px;
++    max-width: var(--premium-reading-width);
++}
++
++.premium-learn-flow-step {
++    display: grid;
++    grid-template-columns: 38px minmax(0, 1fr);
++    gap: 14px;
++    align-items: start;
++    padding: 14px;
++    border: 1px solid rgba(22, 34, 52, 0.08);
++    border-radius: 8px;
++    background: rgba(255, 255, 255, 0.62);
++}
++
++.premium-learn-flow-step > span {
++    display: grid;
++    place-items: center;
++    width: 36px;
++    height: 36px;
++    border-radius: 999px;
++    background: rgba(21, 36, 48, 0.92);
++    color: #ffffff;
++    font-size: 0.76rem;
++    font-weight: 800;
++}
++
++.premium-learn-flow-step-body {
++    display: grid;
++    gap: 6px;
++}
++
++.premium-learn-flow-step-body strong {
++    color: var(--premium-reading-ink);
++    font-size: 0.98rem;
++    line-height: 1.35;
++}
++
++.premium-learn-flow-step-body p {
++    margin: 0;
++    color: var(--premium-reading-muted);
++    font-size: 0.94rem;
++    line-height: 1.58;
++}
++
++.premium-learn-mnemonic summary {
++    display: grid;
++    gap: 7px;
++    cursor: pointer;
++    list-style: none;
++}
++
++.premium-learn-mnemonic summary::-webkit-details-marker {
++    display: none;
++}
++
+ .premium-learn-map-grid {
+     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+     gap: 10px;
+diff --git a/premium-study/ui/views/index.js b/premium-study/ui/views/index.js
+index dcab2e7..d2fbb2c 100644
+--- a/premium-study/ui/views/index.js
++++ b/premium-study/ui/views/index.js
+@@ -558,6 +558,71 @@ ${renderSessionNote(state, "mode-select")}`;
+         ].filter((tab) => tab.id === "aula" || Number(tab.count || 0) > 0);
+     }
+ 
++    function getLearnTabDescription(tabId = "") {
++        const copy = {
++            aula: "Leitura guiada com progressao, foco de prova e takeaway real.",
++            esquemas: "Fluxos e caminhos de decisao para visualizar o criterio sem perder nuance.",
++            comparativos: "Diferencas que a banca tenta embaralhar no enunciado.",
++            memorizar: "Ganchos, cartas e formulas para revisar sem decorar no escuro.",
++            checklist: "Fechamento do bloco antes de avancar para pratica ou prova.",
++            casos: "Aplicacao comentada para testar o criterio em situacao de prova."
++        };
++
++        return copy[tabId] || "Ferramenta de estudo deste bloco.";
++    }
++
++    function renderConceptPills(items = [], className = "premium-learn-pill-row") {
++        const filtered = Array.isArray(items) ? items.filter(Boolean).slice(0, 6) : [];
++        if (!filtered.length) {
++            return "";
++        }
++
++        return `
++<div class="${className}">
++    ${filtered.map((item) => `<span class="premium-learn-pill">${UI().escapeHtml(item)}</span>`).join("")}
++</div>`;
++    }
++
++    function renderParagraphGroup(paragraphs = []) {
++        const filtered = Array.isArray(paragraphs) ? paragraphs.filter(Boolean) : [];
++        if (!filtered.length) {
++            return "";
++        }
++
++        return `
++<div class="premium-learn-paragraph-group">
++    ${filtered.map((paragraph) => `<p>${UI().escapeHtml(paragraph)}</p>`).join("")}
++</div>`;
++    }
++
++    function getChecklistLens(item = "") {
++        const text = String(item || "").toLowerCase();
++
++        if (/diferenc|compar|nao confundir/.test(text)) {
++            return "diferenciar";
++        }
++
++        if (/aplic|caso|questao|resolver/.test(text)) {
++            return "aplicar";
++        }
++
++        return "explicar";
++    }
++
++    function renderWorkspaceMeta(block, state, tabs = [], activeTab = "aula") {
++        const totalBlocks = Array.isArray(state.blocks) ? state.blocks.length : 0;
++        const pageCount = Math.max(0, Number(state.materialPageCount || 0));
++        const activeTabInfo = tabs.find((tab) => tab.id === activeTab) || tabs[0] || { label: "Aula", count: 1 };
++
++        return `
++<div class="premium-learn-workspace-meta">
++    <span class="premium-learn-meta-chip">${pageCount ? `${pageCount} paginas` : "material ativo"}</span>
++    <span class="premium-learn-meta-chip">${totalBlocks || 1} ${totalBlocks === 1 ? "bloco" : "blocos"}</span>
++    <span class="premium-learn-meta-chip">${UI().escapeHtml(block.duration || "ritmo livre")}</span>
++    <span class="premium-learn-meta-chip premium-learn-meta-chip-accent">${UI().escapeHtml(activeTabInfo.label)}: ${Number(activeTabInfo.count || 0)}</span>
++</div>`;
++    }
++
+     function renderLearnSections(sections = []) {
+         return sections.map((section) => `
+         <section class="premium-learn-section premium-learn-section-rich">
+@@ -593,11 +658,18 @@ ${renderSessionNote(state, "mode-select")}`;
+     <section class="premium-learn-lesson">
+         <div class="premium-learn-lesson-index">${String(index + 1).padStart(2, "0")}</div>
+         <div class="premium-learn-lesson-body">
+-            <span class="premium-detail-label">${UI().escapeHtml(module.objective || "Aula guiada")}</span>
++            <div class="premium-learn-lesson-topline">
++                <span class="premium-detail-label">${UI().escapeHtml(module.objective || "Aula guiada")}</span>
++                <em>Parte ${index + 1} de ${modules.length}</em>
++            </div>
+             <h3>${UI().escapeHtml(module.title || `Aula ${index + 1}`)}</h3>
+-            ${(Array.isArray(module.paragraphs) ? module.paragraphs : []).map((paragraph) => `<p>${UI().escapeHtml(paragraph)}</p>`).join("")}
++            ${renderParagraphGroup(module.paragraphs)}
+             ${Array.isArray(module.takeaways) && module.takeaways.length
+-        ? renderBulletList(module.takeaways)
++        ? `
++            <div class="premium-learn-lesson-footer">
++                <span class="premium-detail-label">Fixar antes de seguir</span>
++                ${renderConceptPills(module.takeaways, "premium-learn-pill-row premium-learn-pill-row-takeaways")}
++            </div>`
+         : ""}
+         </div>
+     </section>`).join("")}
+@@ -670,18 +742,18 @@ ${renderSessionNote(state, "mode-select")}`;
+ <section class="premium-learn-section premium-learn-section-rich premium-learn-comparison">
+     <span class="premium-detail-label">Comparativo</span>
+     <h3>${UI().escapeHtml(table.title || "Conceitos que nao podem ser confundidos")}</h3>
+-    <div class="premium-learn-table" role="table">
+-        <div class="premium-learn-table-row premium-learn-table-head" role="row">
+-            <span role="columnheader">${UI().escapeHtml(table.leftLabel || "Conceito")}</span>
+-            <span role="columnheader">${UI().escapeHtml(table.rightLabel || "Diferenca pratica")}</span>
+-            <span role="columnheader">Observacao</span>
+-        </div>
++    <div class="premium-learn-table premium-learn-table-labels">
++        <span>${UI().escapeHtml(table.leftLabel || "Conceito")}</span>
++        <span>${UI().escapeHtml(table.rightLabel || "Diferenca pratica")}</span>
++        <span>Observacao</span>
++    </div>
++    <div class="premium-learn-compare-grid">
+         ${rows.map((row) => `
+-        <div class="premium-learn-table-row" role="row">
+-            <strong role="cell">${UI().escapeHtml(row.left || "")}</strong>
+-            <span role="cell">${UI().escapeHtml(row.right || "")}</span>
+-            <em role="cell">${UI().escapeHtml(row.note || "")}</em>
+-        </div>`).join("")}
++        <article class="premium-learn-compare-card">
++            <strong>${UI().escapeHtml(row.left || "")}</strong>
++            <p>${UI().escapeHtml(row.right || "")}</p>
++            <em>${UI().escapeHtml(row.note || "")}</em>
++        </article>`).join("")}
+     </div>
+ </section>`;
+         }).filter(Boolean).join("");
+@@ -703,16 +775,16 @@ ${renderSessionNote(state, "mode-select")}`;
+ <section class="premium-learn-section premium-learn-section-rich premium-learn-flow">
+     <span class="premium-detail-label">Esquema ilustrado</span>
+     <h3>${UI().escapeHtml(diagram.title || "Fluxo de decisao")}</h3>
+-    <ol class="premium-learn-flow-steps">
++    <div class="premium-learn-flow-track">
+         ${steps.map((step, index) => `
+-        <li>
++        <article class="premium-learn-flow-step">
+             <span>${String(index + 1).padStart(2, "0")}</span>
+-            <div>
++            <div class="premium-learn-flow-step-body">
+                 <strong>${UI().escapeHtml(step.label || `Etapa ${index + 1}`)}</strong>
+                 ${step.detail ? `<p>${UI().escapeHtml(step.detail)}</p>` : ""}
+             </div>
+-        </li>`).join("")}
+-    </ol>
++        </article>`).join("")}
++    </div>
+ </section>`;
+         }).filter(Boolean).join("");
+     }
+@@ -726,11 +798,13 @@ ${renderSessionNote(state, "mode-select")}`;
+         return `
+ <div class="premium-learn-mnemonic-grid">
+         ${filtered.map((item) => `
+-        <article class="premium-learn-mnemonic">
+-            <span>${UI().escapeHtml(item.title || "Mnemonico")}</span>
+-            <strong>${UI().escapeHtml(item.formula || "")}</strong>
+-            ${item.explanation ? `<p>${UI().escapeHtml(item.explanation)}</p>` : ""}
+-        </article>`).join("")}
++        <details class="premium-learn-mnemonic"${filtered.length === 1 ? " open" : ""}>
++            <summary>
++                <span>${UI().escapeHtml(item.title || "Mnemonico")}</span>
++                <strong>${UI().escapeHtml(item.formula || "")}</strong>
++            </summary>
++            ${item.explanation ? `<p>${UI().escapeHtml(item.explanation)}</p>` : `<p>Use este gatilho para lembrar a estrutura do bloco antes de revisar o texto inteiro.</p>`}
++        </details>`).join("")}
+     </div>`;
+     }
+ 
+@@ -742,7 +816,15 @@ ${renderSessionNote(state, "mode-select")}`;
+         const revealed = state.learnInteractions?.revealedMemory?.[blockId] || {};
+ 
+         return `
+-<div class="premium-learn-memory-deck">
++<section class="premium-learn-memory-zone">
++    <header class="premium-learn-inline-head">
++        <div>
++            <span class="premium-detail-label">Cartas de memoria</span>
++            <h3>Recupere o criterio antes de olhar a resposta</h3>
++        </div>
++        <em>${filtered.length} cartas</em>
++    </header>
++    <div class="premium-learn-memory-deck">
+     ${filtered.map((card, index) => {
+         const isRevealed = Boolean(revealed[String(index)]);
+         return `
+@@ -756,7 +838,8 @@ ${renderSessionNote(state, "mode-select")}`;
+         </button>
+     </article>`;
+     }).join("")}
+-</div>`;
++    </div>
++</section>`;
+     }
+ 
+     function renderCaseStudies(caseStudies = [], practicalCases = [], state = {}, blockId = "") {
+@@ -773,8 +856,11 @@ ${renderSessionNote(state, "mode-select")}`;
+     <article class="premium-learn-case ${isRevealed ? "is-revealed" : ""}">
+         <span class="premium-detail-label">${UI().escapeHtml(caseStudy.title || "Caso aplicado")}</span>
+         ${caseStudy.scenario ? `<strong>${UI().escapeHtml(caseStudy.scenario)}</strong>` : ""}
+-        ${isRevealed && caseStudy.analysis ? `<p>${UI().escapeHtml(caseStudy.analysis)}</p>` : ""}
+-        ${isRevealed && caseStudy.lesson ? `<small>${UI().escapeHtml(caseStudy.lesson)}</small>` : ""}
++        ${isRevealed ? `
++        <div class="premium-learn-case-reveal">
++            ${caseStudy.analysis ? `<p>${UI().escapeHtml(caseStudy.analysis)}</p>` : ""}
++            ${caseStudy.lesson ? `<small>${UI().escapeHtml(caseStudy.lesson)}</small>` : `<small>A pegadinha costuma estar no detalhe que parece acessorio, mas redefine o criterio.</small>`}
++        </div>` : ""}
+         <button type="button" class="premium-learn-mini-action" data-premium-action="toggle-learn-case" data-block-id="${UI().escapeHtml(blockId)}" data-item-index="${index}">
+             ${isRevealed ? "Ocultar analise" : "Ver analise"}
+         </button>
+@@ -821,17 +907,26 @@ ${renderSessionNote(state, "mode-select")}`;
+         }
+         const checked = state.learnInteractions?.checked?.[blockId] || {};
+         const doneCount = filtered.filter((_, index) => checked[String(index)]).length;
++        const progressRatio = Math.max(0, Math.min(100, Math.round((doneCount / filtered.length) * 100)));
+ 
+         return `
+ <section class="premium-learn-section premium-learn-section-rich premium-learn-checklist">
+     <span class="premium-detail-label">Checklist de dominio</span>
+     <h3>Antes de seguir, confira se voce consegue</h3>
+-    <div class="premium-learn-check-progress">${doneCount}/${filtered.length} marcados</div>
++    <div class="premium-learn-check-progress">
++        <strong>${doneCount}/${filtered.length} marcados</strong>
++        <div class="premium-learn-progressbar" aria-hidden="true">
++            <span style="width:${progressRatio}%"></span>
++        </div>
++    </div>
+     <div class="premium-learn-check-items">
+         ${filtered.map((item, index) => `
+         <button type="button" class="premium-learn-check-item ${checked[String(index)] ? "is-checked" : ""}" data-premium-action="toggle-learn-check" data-block-id="${UI().escapeHtml(blockId)}" data-item-index="${index}">
+             <span>${checked[String(index)] ? "?" : ""}</span>
+-            <strong>${UI().escapeHtml(item)}</strong>
++            <div class="premium-learn-check-copy">
++                <strong>${UI().escapeHtml(item)}</strong>
++                <em>${UI().escapeHtml(getChecklistLens(item))}</em>
++            </div>
+         </button>`).join("")}
+     </div>
+ </section>`;
+@@ -914,6 +1009,22 @@ ${renderSessionNote(state, "mode-select")}`;
+ </article>`;
+     }
+ 
++    function renderReviewPoints(items = []) {
++        const filtered = Array.isArray(items) ? items.filter(Boolean).slice(0, 5) : [];
++        if (!filtered.length) {
++            return "";
++        }
++
++        return `
++<div class="premium-learn-review-grid">
++    ${filtered.map((item, index) => `
++    <article class="premium-learn-review-card">
++        <span>${String(index + 1).padStart(2, "0")}</span>
++        <p>${UI().escapeHtml(item)}</p>
++    </article>`).join("")}
++</div>`;
++    }
++
+     function renderAssistPanel(block, assistMode) {
+         const learn = block.learn || {};
+ 
+@@ -929,9 +1040,10 @@ ${renderSessionNote(state, "mode-select")}`;
+         if (assistMode === "review" && Array.isArray(learn.reviewInFivePoints)) {
+             return `
+ <section class="premium-learn-section premium-learn-section-rich premium-learn-assist-panel">
+-    <span class="premium-detail-label">Revisar este assunto em 5 pontos</span>
+-    <h3>Os 5 pontos que mais precisam ficar de pe</h3>
+-    ${renderBulletList(learn.reviewInFivePoints)}
++    <span class="premium-detail-label">Revisao em 5 pontos</span>
++    <h3>Fechamento rapido antes de seguir</h3>
++    <p class="premium-learn-assist-lead">Passe por estes 5 checkpoints para confirmar o criterio sem reler o bloco inteiro.</p>
++    ${renderReviewPoints(learn.reviewInFivePoints)}
+ </section>`;
+         }
+ 
+@@ -1080,6 +1192,7 @@ ${renderSessionNote(state, "mode-select")}`;
+                         <span class="premium-panel-kicker">Workspace de estudo</span>
+                         <h2>${UI().escapeHtml(block.title)}</h2>
+                         <p class="premium-learn-lead">${UI().escapeHtml(block.subtitle)}</p>
++                        ${renderWorkspaceMeta(block, state, tabs, activeTab)}
+                     </div>
+                     <button type="button" class="premium-tab ${state.blockFullScreen ? "" : "is-active"}" data-premium-action="${state.blockFullScreen ? "collapse-block-reader" : "expand-block-reader"}">
+                         ${state.blockFullScreen ? "Sair da tela cheia" : "Abrir em tela cheia"}
+@@ -1093,6 +1206,10 @@ ${renderSessionNote(state, "mode-select")}`;
+                         <em>${Number(tab.count || 0)}</em>
+                     </button>`).join("")}
+                 </nav>
++                <section class="premium-learn-tab-intro">
++                    <span class="premium-detail-label">${UI().escapeHtml((tabs.find((tab) => tab.id === activeTab) || { label: "Aula" }).label)}</span>
++                    <p>${UI().escapeHtml(getLearnTabDescription(activeTab))}</p>
++                </section>
+                 ${activeTab === "aula" ? renderBlockInsightGrid(block) : ""}
+                 ${renderLearnTabContent(block, effectiveState, documentSections)}
+                 ${assistPanel}

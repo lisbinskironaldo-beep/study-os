@@ -1,0 +1,254 @@
+diff --git a/js/app.js b/js/app.js
+index a7acb9a..695a192 100644
+--- a/js/app.js
++++ b/js/app.js
+@@ -430,6 +430,16 @@ const Core = {
+                 });
+             });
+ 
++        document
++            .querySelectorAll("[data-home-action]")
++            .forEach((button) => {
++                button.addEventListener("click", () => {
++                    this.handleHomeAction(
++                        button.dataset.homeAction
++                    );
++                });
++            });
++
+         this.footerButtons.forEach(btn => {
+ 
+             btn.addEventListener("click", () => {
+@@ -806,7 +816,7 @@ const Core = {
+             return this.premiumStudyLoadPromise;
+         }
+ 
+-        const premiumStudyVersion = "20260426-ocr-visual-4";
++        const premiumStudyVersion = "20260427-premium-aprender-6";
+ 
+         this.premiumStudyLoadPromise =
+             this.ensureScriptLoaded(
+diff --git a/premium-study/app/index.js b/premium-study/app/index.js
+index 3e59a9a..793c0de 100644
+--- a/premium-study/app/index.js
++++ b/premium-study/app/index.js
+@@ -22,6 +22,9 @@
+         activeMaterialFile: null,
+         activeMaterialAssetId: "",
+         lastPdfTextFallbackResult: null,
++        materialPreparationPromise: null,
++        materialPreparationKey: "",
++        materialPreparationResult: null,
+         pdfBridge: null,
+         pdfObjectUrl: "",
+         pdfLoadedAssetId: "",
+@@ -2186,6 +2189,9 @@ mark { padding: 0 2px; border-radius: 4px; }
+ 
+             this.activeMaterialFile = file;
+             this.activeMaterialAssetId = "";
++            this.materialPreparationPromise = null;
++            this.materialPreparationKey = "";
++            this.materialPreparationResult = null;
+             const pdfWorkbench = this.getPdfWorkbenchService();
+             let materialHash = "";
+ 
+@@ -2277,6 +2283,12 @@ mark { padding: 0 2px; border-radius: 4px; }
+             if (this.isPdfMaterial(file)) {
+                 this.syncPdfAssetToServer(file).catch((error) => console.error(error));
+             }
++
++            this.primeMaterialPreparation({
++                materialHash,
++                maxChars: store.getState().accessTier === "premium" ? 90000 : 30000,
++                maxPages: store.getState().accessTier === "premium" ? 160 : 12
++            }).catch((error) => console.warn("Preparo antecipado do material falhou", error));
+         },
+ 
+         async persistCurrentState() {
+@@ -2755,37 +2767,7 @@ ${sections}`
+             );
+         },
+ 
+-        async findReusableMaterialSnapshot(materialHash) {
+-            const hash = String(materialHash || "").trim();
+-
+-            if (!hash) {
+-                return null;
+-            }
+-
+-            const store = window.PremiumStudyStore;
+-            const stateItems = store && typeof store.getState === "function"
+-                ? store.getState().studyLibrary
+-                : [];
+-            let candidates = Array.isArray(stateItems) ? stateItems : [];
+-
+-            if (window.PremiumStudyStorage && typeof window.PremiumStudyStorage.getStudyLibrary === "function") {
+-                const localItems = await window.PremiumStudyStorage.getStudyLibrary();
+-                candidates = window.PremiumStudyLibrary && typeof window.PremiumStudyLibrary.mergeLibraryItems === "function"
+-                    ? window.PremiumStudyLibrary.mergeLibraryItems(candidates, localItems)
+-                    : [...candidates, ...(Array.isArray(localItems) ? localItems : [])];
+-            }
+-
+-            return candidates
+-                .map((item) => item && item.snapshot ? item.snapshot : null)
+-                .filter((snapshot) => snapshot && snapshot.materialHash === hash && this.snapshotHasGeneratedStudy(snapshot))
+-                .sort((left, right) => Date.parse(right.savedAt || "") - Date.parse(left.savedAt || ""))[0] || null;
+-        },
+-
+-        async reuseGeneratedStudyForCurrentMaterial(options = {}) {
+-            const store = window.PremiumStudyStore;
+-            const state = store.getState();
+-            const reusable = await this.findReusableMaterialSnapshot(state.materialHash || "");
+-
++        applyReusableMaterialSnapshot(reusable, options = {}) {
+             if (!reusable) {
+                 return {
+                     ok: false,
+@@ -2793,6 +2775,9 @@ ${sections}`
+                 };
+             }
+ 
++            const store = window.PremiumStudyStore;
++            const state = store.getState();
++
+             store.applyGeneratedBundle({
+                 title: reusable.studyTitle || reusable.materialName || state.studyTitle || state.materialName,
+                 blocks: reusable.blocks || []
+@@ -2829,6 +2814,97 @@ ${sections}`
+             };
+         },
+ 
++        async findReusableMaterialSnapshot(materialHash) {
++            const hash = String(materialHash || "").trim();
++
++            if (!hash) {
++                return null;
++            }
++
++            const store = window.PremiumStudyStore;
++            const stateItems = store && typeof store.getState === "function"
++                ? store.getState().studyLibrary
++                : [];
++            let candidates = Array.isArray(stateItems) ? stateItems : [];
++
++            if (window.PremiumStudyStorage && typeof window.PremiumStudyStorage.getStudyLibrary === "function") {
++                const localItems = await window.PremiumStudyStorage.getStudyLibrary();
++                candidates = window.PremiumStudyLibrary && typeof window.PremiumStudyLibrary.mergeLibraryItems === "function"
++                    ? window.PremiumStudyLibrary.mergeLibraryItems(candidates, localItems)
++                    : [...candidates, ...(Array.isArray(localItems) ? localItems : [])];
++            }
++
++            return candidates
++                .map((item) => item && item.snapshot ? item.snapshot : null)
++                .filter((snapshot) => snapshot && snapshot.materialHash === hash && this.snapshotHasGeneratedStudy(snapshot))
++                .sort((left, right) => Date.parse(right.savedAt || "") - Date.parse(left.savedAt || ""))[0] || null;
++        },
++
++        async reuseGeneratedStudyForCurrentMaterial(options = {}) {
++            const store = window.PremiumStudyStore;
++            const state = store.getState();
++            const reusable = await this.findReusableMaterialSnapshot(state.materialHash || "");
++
++            return this.applyReusableMaterialSnapshot(reusable, options);
++        },
++
++        async primeMaterialPreparation(options = {}) {
++            const store = window.PremiumStudyStore;
++            const state = store.getState();
++            const materialHash = String(options.materialHash || state.materialHash || "").trim();
++
++            if (!state.materialName) {
++                return null;
++            }
++
++            if (
++                this.materialPreparationPromise &&
++                this.materialPreparationKey === materialHash
++            ) {
++                return this.materialPreparationPromise;
++            }
++
++            if (
++                this.materialPreparationResult &&
++                this.materialPreparationResult.materialHash === materialHash
++            ) {
++                return this.materialPreparationResult;
++            }
++
++            this.materialPreparationKey = materialHash;
++            this.materialPreparationPromise = (async () => {
++                const latestState = store.getState();
++                const extractionOptions = {
++                    maxChars: Number(options.maxChars || (latestState.accessTier === "premium" ? 90000 : 30000)) || 30000,
++                    maxPages: Number(options.maxPages || (latestState.accessTier === "premium" ? 160 : 12)) || 12,
++                    allowAiFallback: false,
++                    useCache: true,
++                    saveLocalCache: true,
++                    cacheWeakLocal: true
++                };
++
++                const [reusable] = await Promise.all([
++                    materialHash
++                        ? this.findReusableMaterialSnapshot(materialHash).catch(() => null)
++                        : Promise.resolve(null),
++                    this.ensureMaterialText(extractionOptions).catch(() => "")
++                ]);
++
++                const result = {
++                    materialHash,
++                    reusable,
++                    extractedTextLength: String(store.getState().materialExtractedText || "").length
++                };
++
++                this.materialPreparationResult = result;
++                return result;
++            })().finally(() => {
++                this.materialPreparationPromise = null;
++            });
++
++            return this.materialPreparationPromise;
++        },
++
+         buildLowQualityPdfNote(step = "mode-select", options = {}) {
+             const needsPremium = options.needsPremium === true;
+ 
+@@ -2945,6 +3021,26 @@ ${sections}`
+             }
+ 
+             if (!options.forceRegenerate) {
++                const prepared = await this.primeMaterialPreparation({
++                    materialHash: state.materialHash || "",
++                    maxChars: Number(options.maxChars || (state.accessTier === "premium" ? 90000 : 30000)) || 30000,
++                    maxPages: Number(options.maxPages || (state.accessTier === "premium" ? 160 : 12)) || 12
++                }).catch(() => null);
++
++                if (prepared && prepared.reusable) {
++                    const appliedPrepared = this.applyReusableMaterialSnapshot(prepared.reusable, {
++                        source: options.source || "base_layer_prewarm"
++                    });
++
++                    if (appliedPrepared && appliedPrepared.ok) {
++                        store.setAnalysisProgress(Math.max(92, Number(store.getState().analysisProgress || 0)), "running");
++                        return {
++                            ok: true,
++                            status: appliedPrepared.status || "reused_same_material"
++                        };
++                    }
++                }
++
+                 const reused = await this.reuseGeneratedStudyForCurrentMaterial({
+                     source: options.source || "base_layer"
+                 });
+diff --git a/premium-study/bootstrap/index.js b/premium-study/bootstrap/index.js
+index 7a19b4f..dc1ca82 100644
+--- a/premium-study/bootstrap/index.js
++++ b/premium-study/bootstrap/index.js
+@@ -5,7 +5,7 @@
+ 
+     const STYLE_ID = "premium-study-styles";
+     const SCRIPT_MARK = "data-premium-study-src";
+-    const VERSION = "20260426-ocr-visual-4";
++    const VERSION = "20260427-premium-aprender-6";
+     const dependencies = [
+         "premium-study/storage/indexeddb.js",
+         "premium-study/services/access-control.js",

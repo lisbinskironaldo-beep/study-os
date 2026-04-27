@@ -1,0 +1,19 @@
+ M api/_lib/handlers/premium/ai-generate.js
+ M css/premium.css
+ M index.html
+ M js/app.js
+ M premium-study/app/index.js
+ M premium-study/bootstrap/index.js
+ M premium-study/services/access-control.js
+ M premium-study/services/pdf-validator.js
+ M premium-study/styles/premium-study.css
+ M premium-study/ui/views/index.js
+?? .codex-artifacts/
+?? restore-points/20260426-220945-pre-cleanup-origem-relogio/
+?? restore-points/20260427-073832-before-premium-aprender-implantacao/
+?? restore-points/20260427-080016-premium-aprender-pass1/
+?? restore-points/20260427-082336-premium-review-pass/
+?? restore-points/20260427-082718-premium-tabs-contrast-pass/
+?? restore-points/20260427-084014-premium-prewarm-pass/
+?? restore-points/20260427-090122-ia-base-lite-free-8-pass/
+?? restore-points/20260427-092430-before-coverage-pass/
