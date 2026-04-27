@@ -2634,7 +2634,7 @@ return
             "questions-quick"
         ) {
             window.RotaNotaQuestionsLauncherTarget =
-                "quick";
+                "home";
             this.navigate("questions");
             return;
         }
