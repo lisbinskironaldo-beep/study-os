@@ -7,6 +7,49 @@
         return JSON.parse(JSON.stringify(value));
     }
 
+    function formatLocalIsoDate(date) {
+        return [
+            date.getFullYear(),
+            String(date.getMonth() + 1).padStart(2, "0"),
+            String(date.getDate()).padStart(2, "0")
+        ].join("-");
+    }
+
+    function getTodayIsoDate() {
+        const today = new Date();
+        today.setHours(0, 0, 0, 0);
+        return formatLocalIsoDate(today);
+    }
+
+    const STEP_REQUIRES_EXAM_DATE = new Set([
+        "target-score",
+        "study-time",
+        "analysis",
+        "mode-select",
+        "highlight-preview",
+        "pdf-workbench",
+        "learn-map",
+        "block",
+        "practice",
+        "quiz",
+        "true-false",
+        "flashcards",
+        "mini-exam",
+        "exam-result",
+        "level-exam",
+        "trail"
+    ]);
+
+    function normalizeFutureExamDate(value) {
+        const iso = String(value || "").trim();
+        const todayIso = getTodayIsoDate();
+        if (!/^\d{4}-\d{2}-\d{2}$/.test(iso) || iso < todayIso) {
+            return "";
+        }
+
+        return iso;
+    }
+
     const DEFAULT_HIGHLIGHT_COLOR = "#fde68a";
 
     function buildStudyTitle(materialName) {
@@ -2807,12 +2850,18 @@
         },
 
         setExamDate(value) {
-            const parts = String(value || "").split("-");
+            const iso = String(value || "").trim();
+            const todayIso = getTodayIsoDate();
+            if (!/^\d{4}-\d{2}-\d{2}$/.test(iso) || iso < todayIso) {
+                return this.state;
+            }
+
+            const parts = iso.split("-");
             const year = parts.length === 3 ? Number(parts[0]) : this.state.calendarYear;
             const month = parts.length === 3 ? Number(parts[1]) - 1 : this.state.calendarMonth;
             this.state = {
                 ...this.state,
-                examDate: value,
+                examDate: iso,
                 calendarMonth: Number.isFinite(month) ? month : this.state.calendarMonth,
                 calendarYear: Number.isFinite(year) ? year : this.state.calendarYear,
                 progressLabel: "Data definida. O ritmo do plano ja pode ser calibrado."
@@ -2823,6 +2872,13 @@
 
         shiftCalendarMonth(delta) {
             const cursor = new Date(this.state.calendarYear, this.state.calendarMonth + delta, 1);
+            const today = new Date();
+            today.setHours(0, 0, 0, 0);
+            const nextCursorValue = (cursor.getFullYear() * 12) + cursor.getMonth();
+            const todayCursorValue = (today.getFullYear() * 12) + today.getMonth();
+            if (nextCursorValue < todayCursorValue) {
+                return this.state;
+            }
             this.state = {
                 ...this.state,
                 calendarMonth: cursor.getMonth(),
@@ -2985,7 +3041,12 @@
                     provider: payload.provider || "",
                     model: payload.model || "",
                     promptVersion: payload.promptVersion || "",
+                    bundleKind: payload.bundleKind || "",
+                    localBundleVersion: payload.localBundleVersion || "",
                     warnings: Array.isArray(bundle.warnings) ? bundle.warnings : [],
+                    coverage: bundle.coverage && typeof bundle.coverage === "object"
+                        ? JSON.parse(JSON.stringify(bundle.coverage))
+                        : null,
                     generatedAt: new Date().toISOString()
                 },
                 progressLabel: "Sua rota foi gerada com IA a partir do PDF. Agora escolha como quer estudar."
@@ -4072,9 +4133,21 @@
                 ? snapshot.blocks.map((block) => enrichLearnContent(block, materialLabel))
                 : buildRichBlocks(studyTitle);
             const sessions = normalizeSessions(blocks, snapshot.sessions);
-            const normalizedStep = snapshot.step === "analysis"
+            const normalizedExamDate = normalizeFutureExamDate(snapshot.examDate);
+            const snapshotStep = snapshot.step === "analysis"
                 ? "mode-select"
                 : snapshot.step || "entry";
+            const normalizedStep = !normalizedExamDate && STEP_REQUIRES_EXAM_DATE.has(snapshotStep)
+                ? (snapshot.materialName ? "exam-date" : "entry")
+                : snapshotStep;
+            const restoredSessionNote = !normalizedExamDate && snapshot.examDate
+                ? {
+                    step: normalizedStep,
+                    tone: "info",
+                    title: "Atualize a data da prova",
+                    message: "A data salva para este estudo ja passou. Escolha uma nova data para recalibrar a trilha."
+                }
+                : (snapshot.sessionNote || null);
 
             this.state = {
                 ...defaults,
@@ -4144,13 +4217,14 @@
                 activeSavedSummaryId: snapshot.activeSavedSummaryId || defaults.activeSavedSummaryId,
                 studyLibrary: this.state.studyLibrary,
                 activeLibraryItemId: this.state.activeLibraryItemId,
-                sessionNote: snapshot.sessionNote || null,
+                sessionNote: restoredSessionNote,
                 premiumOffer: snapshot.premiumOffer || null,
-                calendarMonth: snapshot.examDate
-                    ? Number(String(snapshot.examDate).split("-")[1]) - 1
+                examDate: normalizedExamDate,
+                calendarMonth: normalizedExamDate
+                    ? Number(String(normalizedExamDate).split("-")[1]) - 1
                     : defaults.calendarMonth,
-                calendarYear: snapshot.examDate
-                    ? Number(String(snapshot.examDate).split("-")[0])
+                calendarYear: normalizedExamDate
+                    ? Number(String(normalizedExamDate).split("-")[0])
                     : defaults.calendarYear,
                 latestLocalStudy: this.state.latestLocalStudy
             };

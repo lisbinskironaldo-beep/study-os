@@ -4,6 +4,39 @@
     }
 
     const CHECKOUT_CONTEXT_KEY = "rotanota-premium-checkout-context";
+    const LOCAL_BUNDLE_VERSION = "local-fallback-v2";
+
+    function isSuspiciousGeneratedTitle(value = "") {
+        const candidate = String(value || "")
+            .replace(/\s+/g, " ")
+            .trim();
+
+        if (!candidate) {
+            return true;
+        }
+
+        const wordCount = candidate.split(/\s+/).filter(Boolean).length;
+        return Boolean(
+            candidate.length > 92 ||
+            wordCount > 14 ||
+            /[;|]/.test(candidate) ||
+            /^[A-Za-z]:\\/.test(candidate) ||
+            /^https?:\/\//i.test(candidate) ||
+            /^(fonte:|timestamp:|## my request|# context from my ide setup|chat recuperado|open tabs|my request for codex|files mentioned by the user)/i.test(candidate) ||
+            /^(\d+\.\s*)?(usu[aá]rio|assistente|resumo compactado)\b/i.test(candidate) ||
+            /(codex|request for codex|restore point|rollout-\d{4}|workspace sujo|git status)/i.test(candidate)
+        );
+    }
+
+    function getTodayIsoDate() {
+        const today = new Date();
+        today.setHours(0, 0, 0, 0);
+        return [
+            today.getFullYear(),
+            String(today.getMonth() + 1).padStart(2, "0"),
+            String(today.getDate()).padStart(2, "0")
+        ].join("-");
+    }
 
     window.PremiumStudyApp = {
         root: null,
@@ -22,6 +55,9 @@
         activeMaterialFile: null,
         activeMaterialAssetId: "",
         lastPdfTextFallbackResult: null,
+        materialPreparationPromise: null,
+        materialPreparationKey: "",
+        materialPreparationResult: null,
         pdfBridge: null,
         pdfObjectUrl: "",
         pdfLoadedAssetId: "",
@@ -2186,6 +2222,9 @@ mark { padding: 0 2px; border-radius: 4px; }
 
             this.activeMaterialFile = file;
             this.activeMaterialAssetId = "";
+            this.materialPreparationPromise = null;
+            this.materialPreparationKey = "";
+            this.materialPreparationResult = null;
             const pdfWorkbench = this.getPdfWorkbenchService();
             let materialHash = "";
 
@@ -2277,6 +2316,12 @@ mark { padding: 0 2px; border-radius: 4px; }
             if (this.isPdfMaterial(file)) {
                 this.syncPdfAssetToServer(file).catch((error) => console.error(error));
             }
+
+            this.primeMaterialPreparation({
+                materialHash,
+                maxChars: store.getState().accessTier === "premium" ? 90000 : 30000,
+                maxPages: store.getState().accessTier === "premium" ? 160 : 12
+            }).catch((error) => console.warn("Preparo antecipado do material falhou", error));
         },
 
         async persistCurrentState() {
@@ -2618,9 +2663,12 @@ ${sections}`
             const store = window.PremiumStudyStore;
             const state = store.getState();
             const materialName = options.materialName || state.studyTitle || state.materialName || "Material";
-            const clean = String(text || "")
-                .replace(/\r/g, "")
-                .replace(/[ \t]+/g, " ")
+            const rawText = String(text || "").replace(/\r/g, "");
+            const rawLines = rawText
+                .split("\n")
+                .map((line) => line.replace(/[ \t]+/g, " ").trim());
+            const clean = rawLines
+                .join("\n")
                 .replace(/\n{3,}/g, "\n\n")
                 .trim();
             const paragraphs = clean
@@ -2630,19 +2678,196 @@ ${sections}`
             const articleMatches = [...clean.matchAll(/\b(?:Art\.?|Artigo)\s*\d+[^\n]{0,220}/gi)]
                 .map((match) => match[0].replace(/\s+/g, " ").trim())
                 .filter(Boolean);
-            const seeds = (articleMatches.length ? articleMatches : paragraphs).slice(0, 40);
-            const desiredBlocks = Math.max(3, Math.min(8, Math.ceil(Math.max(1, seeds.length) / 5)));
-            const chunkSize = Math.max(1, Math.ceil(Math.max(1, seeds.length) / desiredBlocks));
-            const blocks = [];
+            const accessTier = String(state.accessTier || (state.premiumActive ? "premium" : "free")).toLowerCase();
+            const premiumLike = accessTier === "premium";
+            const pageCount = Math.max(0, Number(options.pageCount || state.materialPageCount || 0));
+            const seeds = (articleMatches.length ? articleMatches : paragraphs).slice(0, premiumLike ? 72 : 40);
+            const sourceCount = Math.max(1, seeds.length);
+            let desiredBlocks = Math.ceil(sourceCount / (premiumLike ? 4 : 5));
 
-            const titleFrom = (items, index) => {
-                const first = String(items[0] || paragraphs[index] || materialName)
-                    .replace(/^Pagina\s+\d+:\s*/i, "")
+            if (premiumLike) {
+                if (pageCount >= 120) {
+                    desiredBlocks = Math.max(desiredBlocks, 12);
+                } else if (pageCount >= 80) {
+                    desiredBlocks = Math.max(desiredBlocks, 10);
+                } else if (pageCount >= 40) {
+                    desiredBlocks = Math.max(desiredBlocks, 8);
+                } else {
+                    desiredBlocks = Math.max(desiredBlocks, 6);
+                }
+            } else {
+                if (pageCount >= 8) {
+                    desiredBlocks = Math.max(desiredBlocks, 3);
+                }
+            }
+
+            desiredBlocks = Math.max(
+                premiumLike ? 4 : 2,
+                Math.min(
+                    premiumLike ? 12 : 8,
+                    Math.min(sourceCount, desiredBlocks)
+                )
+            );
+
+            const chunkSize = Math.max(1, Math.ceil(sourceCount / desiredBlocks));
+            const blocks = [];
+            const warnings = [];
+            const genericTitle = (index) => `Bloco ${index + 1}: estudo guiado`;
+
+            const normalizeTitleCandidate = (value = "") => String(value || "")
+                .replace(/^Pagina\s+\d+:\s*/i, "")
+                .replace(/^#+\s*/g, "")
+                .replace(/^[-*]\s+/g, "")
+                .replace(/^\d+\.\s+/g, "")
+                .replace(/`/g, "")
+                .replace(/\[(.*?)\]\([^)]*\)/g, "$1")
+                .replace(/\s+/g, " ")
+                .trim();
+            const isBadTitleCandidate = (value = "") => {
+                const candidate = normalizeTitleCandidate(value);
+                if (!candidate || candidate.length < 12) {
+                    return true;
+                }
+
+                const wordCount = candidate.split(/\s+/).filter(Boolean).length;
+                const punctuationHits = (candidate.match(/[;|]/g) || []).length;
+
+                if (
+                    candidate.length > 92 ||
+                    wordCount > 14 ||
+                    punctuationHits > 0 ||
+                    /^[A-Za-z]:\\/.test(candidate) ||
+                    /^https?:\/\//i.test(candidate) ||
+                    /^(fonte:|timestamp:|my request|context from my ide setup|sessao|arquivos salvos|plano de expans[aã]o|chat recuperado|open tabs|my request for codex|files mentioned by the user|vis[aã]o do bloco|minha opini[aã]o|subi para a web)/i.test(candidate) ||
+                    /^(\d+\.\s*)?(usu[aá]rio|assistente|resumo compactado)\b/i.test(candidate) ||
+                    /(codex|request for codex|chat recuperado|restore point|rollout-\d{4}|browser|workspace sujo|git status)/i.test(candidate) ||
+                    /\b(vou|posso|quero|preciso|acho|achei|use|rodar|continuar|valida[cç][aã]o|corrigir|subi)\b/i.test(candidate)
+                ) {
+                    return true;
+                }
+
+                return false;
+            };
+            const looksLikeStrongTitle = (value = "") => {
+                const candidate = normalizeTitleCandidate(value);
+                if (isBadTitleCandidate(candidate)) {
+                    return false;
+                }
+
+                const words = candidate.split(/\s+/).filter(Boolean);
+                if (words.length < 2 || words.length > 10) {
+                    return false;
+                }
+
+                if (/[.!?].+\s/.test(candidate)) {
+                    return false;
+                }
+
+                return true;
+            };
+            const compactTitleCandidate = (value = "") => {
+                const candidate = normalizeTitleCandidate(value);
+                if (!candidate) {
+                    return "";
+                }
+
+                const clipped = candidate
+                    .split(/(?<=[.:;!?])\s+/)[0]
+                    .split(/\s+/)
+                    .slice(0, 9)
+                    .join(" ")
                     .trim();
-                const article = first.match(/\b(?:Art\.?|Artigo)\s*\d+/i);
-                return article
-                    ? `${article[0].replace(/Artigo/i, "Art.")}: leitura guiada`
-                    : (first.slice(0, 72) || `Bloco ${index + 1}`);
+
+                return clipped.replace(/[,:;.-]+$/g, "").trim();
+            };
+            const extractStructuredTitle = (line = "") => {
+                const trimmed = String(line || "").trim();
+                if (!trimmed) {
+                    return "";
+                }
+
+                const boldBullet = trimmed.match(/^[-*]\s+\*\*([^*]{4,90})\*\*(?::|\s|$)/);
+                if (boldBullet) {
+                    return boldBullet[1];
+                }
+
+                const numberedBlock = trimmed.match(/^(?:[-*]\s+)?(Bloco|Etapa|Fase|Parte|Modulo|M[oó]dulo|Cap[ií]tulo|Tema|T[oó]pico)\s+\d+\s*:\s*(.+)$/i);
+                if (numberedBlock) {
+                    return `${numberedBlock[1]} ${numberedBlock[2]}`;
+                }
+
+                if (/^#{1,6}\s+/.test(trimmed)) {
+                    return trimmed.replace(/^#{1,6}\s+/, "");
+                }
+
+                const labelLine = trimmed.match(/^([A-ZÀ-Ý][^:]{4,70}):\s+.+$/);
+                if (labelLine) {
+                    return labelLine[1];
+                }
+
+                return "";
+            };
+            const structuredTitleCandidates = [...new Set(
+                rawLines
+                    .map((line) => extractStructuredTitle(line))
+                    .map((line) => compactTitleCandidate(line))
+                    .filter((line) => looksLikeStrongTitle(line))
+            )];
+            const chatLikeSignals = rawLines.slice(0, 220).reduce((score, line) => {
+                if (/^(#{1,6}\s+)?(context from my ide setup|open tabs|my request for codex|chat recuperado|sessao|usu[aá]rio|assistente)\b/i.test(line)) {
+                    return score + 2;
+                }
+
+                if (/_timestamp:|^fonte:\s+[a-z]:\\|^-\s+(id|cwd|origem):/i.test(line)) {
+                    return score + 1;
+                }
+
+                return score;
+            }, 0);
+            const chatLikeContent = chatLikeSignals >= 8;
+            const structuredTitleForBlock = (index) => {
+                if (!structuredTitleCandidates.length) {
+                    return "";
+                }
+
+                const candidateIndex = Math.min(
+                    structuredTitleCandidates.length - 1,
+                    Math.floor((index / Math.max(1, desiredBlocks)) * structuredTitleCandidates.length)
+                );
+
+                return structuredTitleCandidates[candidateIndex] || "";
+            };
+            const titleFrom = (items, index) => {
+                const articleSource = items.find((item) => /\b(?:Art\.?|Artigo)\s*\d+/i.test(String(item || ""))) || "";
+                const article = String(articleSource).match(/\b(?:Art\.?|Artigo)\s*\d+/i);
+                if (article) {
+                    return `${article[0].replace(/Artigo/i, "Art.")}: leitura guiada`;
+                }
+
+                if (chatLikeContent) {
+                    return genericTitle(index);
+                }
+
+                const structured = structuredTitleForBlock(index);
+                if (structured) {
+                    return structured;
+                }
+
+                const preferredCandidate = [
+                    ...items,
+                    paragraphs[index],
+                    paragraphs[index + 1],
+                    materialName
+                ]
+                    .map((item) => normalizeTitleCandidate(item))
+                    .find((item) => !isBadTitleCandidate(item));
+
+                const compact = compactTitleCandidate(preferredCandidate);
+                if (compact) {
+                    return compact;
+                }
+
+                return genericTitle(index);
             };
             const makeQuestion = (topic) => ({
                 prompt: `Segundo o material, qual conduta de estudo e mais segura sobre "${String(topic || materialName).slice(0, 90)}"?`,
@@ -2723,7 +2948,29 @@ ${sections}`
                 });
             }
 
-            return { title: materialName, blocks };
+            if (paragraphs.length < 3) {
+                warnings.push("A base textual extraida ficou curta; a trilha pode ter recortes mais rasos do que o material original.");
+            }
+
+            if (!articleMatches.length && clean.length < 2500) {
+                warnings.push("O documento trouxe pouco texto estruturado. Revise a cobertura antes de assumir que todo o material foi lido.");
+            }
+
+            if (premiumLike && pageCount >= 80 && blocks.length <= 6) {
+                warnings.push("Mesmo com material longo, a base textual aproveitavel ficou curta para abrir muitos blocos. Revise a cobertura antes de seguir.");
+            }
+
+            return {
+                title: materialName,
+                warnings,
+                coverage: {
+                    summary: `Trilha local montada a partir do texto extraido para nao deixar o material sem rota inicial.`,
+                    sourceQuality: warnings.length >= 2 ? "limitada" : warnings.length ? "media" : "alta",
+                    frontsCovered: blocks.map((block) => block.title).filter(Boolean).slice(0, 6),
+                    possibleGaps: warnings.slice(0, 4)
+                },
+                blocks
+            };
         },
 
         hasMeaningfulStudyProgress() {
@@ -2744,15 +2991,104 @@ ${sections}`
         },
 
         snapshotHasGeneratedStudy(snapshot = {}) {
+            const aiGeneration = snapshot.aiGeneration || {};
+            const status = String(aiGeneration.status || "");
+            const localLike =
+                status === "base_ready_local" ||
+                aiGeneration.bundleKind === "local_fallback" ||
+                aiGeneration.model === "extracted-text-fallback" ||
+                aiGeneration.provider === "local";
+            const suspiciousTitles = Array.isArray(snapshot.blocks)
+                ? snapshot.blocks.some((block) => isSuspiciousGeneratedTitle(block && block.title))
+                : false;
+
+            if (
+                suspiciousTitles &&
+                aiGeneration.localBundleVersion !== LOCAL_BUNDLE_VERSION
+            ) {
+                return false;
+            }
+
+            if (localLike) {
+                if (aiGeneration.localBundleVersion !== LOCAL_BUNDLE_VERSION) {
+                    return false;
+                }
+            }
+
             return Boolean(
                 snapshot &&
                 snapshot.materialHash &&
                 Array.isArray(snapshot.blocks) &&
                 (
                     snapshot.blocks.some((block) => block && block.generatedByAi) ||
-                    ["base_ready", "base_ready_local", "reused_same_material"].includes(String(snapshot.aiGeneration && snapshot.aiGeneration.status || ""))
+                    ["base_ready", "base_ready_local", "reused_same_material"].includes(status)
                 )
             );
+        },
+
+        applyReusableMaterialSnapshot(reusable, options = {}) {
+            if (!reusable) {
+                return {
+                    ok: false,
+                    status: "cache_miss"
+                };
+            }
+
+            const store = window.PremiumStudyStore;
+            const state = store.getState();
+
+            store.applyGeneratedBundle({
+                title: reusable.studyTitle || reusable.materialName || state.studyTitle || state.materialName,
+                blocks: reusable.blocks || [],
+                warnings: Array.isArray(reusable.aiGeneration && reusable.aiGeneration.warnings)
+                    ? reusable.aiGeneration.warnings.slice()
+                    : [],
+                coverage: reusable.aiGeneration && reusable.aiGeneration.coverage
+                    ? JSON.parse(JSON.stringify(reusable.aiGeneration.coverage))
+                    : null
+            });
+
+            if (reusable.materialExtractedText) {
+                store.setMaterialExtraction({
+                    text: reusable.materialExtractedText,
+                    status: reusable.materialExtractionStatus || "cached_snapshot_text",
+                    pageCount: reusable.materialPageCount || state.materialPageCount || 0
+                });
+            }
+
+            store.patch({
+                aiGeneration: {
+                    status: "reused_same_material",
+                    provider: "local-cache",
+                    model: "material-hash",
+                    promptVersion: reusable.aiGeneration && reusable.aiGeneration.promptVersion
+                        ? reusable.aiGeneration.promptVersion
+                        : (window.PremiumStudyAI ? window.PremiumStudyAI.PROMPT_VERSION : ""),
+                    generatedAt: new Date().toISOString(),
+                    textLength: String(reusable.materialExtractedText || "").length,
+                    source: options.source || "same_material_cache",
+                    blockCount: Array.isArray(reusable.blocks) ? reusable.blocks.length : 0,
+                    warnings: Array.isArray(reusable.aiGeneration && reusable.aiGeneration.warnings)
+                        ? reusable.aiGeneration.warnings.slice()
+                        : [],
+                    coverage: reusable.aiGeneration && reusable.aiGeneration.coverage
+                        ? JSON.parse(JSON.stringify(reusable.aiGeneration.coverage))
+                        : null,
+                    bundleKind: reusable.aiGeneration && reusable.aiGeneration.bundleKind
+                        ? reusable.aiGeneration.bundleKind
+                        : "",
+                    localBundleVersion: reusable.aiGeneration && reusable.aiGeneration.localBundleVersion
+                        ? reusable.aiGeneration.localBundleVersion
+                        : ""
+                },
+                progressLabel: "Reconhecemos este PDF e reaproveitamos a trilha ja preparada para o mesmo material."
+            });
+
+            return {
+                ok: true,
+                status: "reused_same_material",
+                snapshot: reusable
+            };
         },
 
         async findReusableMaterialSnapshot(materialHash) {
@@ -2786,47 +3122,64 @@ ${sections}`
             const state = store.getState();
             const reusable = await this.findReusableMaterialSnapshot(state.materialHash || "");
 
-            if (!reusable) {
-                return {
-                    ok: false,
-                    status: "cache_miss"
+            return this.applyReusableMaterialSnapshot(reusable, options);
+        },
+
+        async primeMaterialPreparation(options = {}) {
+            const store = window.PremiumStudyStore;
+            const state = store.getState();
+            const materialHash = String(options.materialHash || state.materialHash || "").trim();
+
+            if (!state.materialName) {
+                return null;
+            }
+
+            if (
+                this.materialPreparationPromise &&
+                this.materialPreparationKey === materialHash
+            ) {
+                return this.materialPreparationPromise;
+            }
+
+            if (
+                this.materialPreparationResult &&
+                this.materialPreparationResult.materialHash === materialHash
+            ) {
+                return this.materialPreparationResult;
+            }
+
+            this.materialPreparationKey = materialHash;
+            this.materialPreparationPromise = (async () => {
+                const latestState = store.getState();
+                const extractionOptions = {
+                    maxChars: Number(options.maxChars || (latestState.accessTier === "premium" ? 90000 : 30000)) || 30000,
+                    maxPages: Number(options.maxPages || (latestState.accessTier === "premium" ? 160 : 12)) || 12,
+                    allowAiFallback: false,
+                    useCache: true,
+                    saveLocalCache: true,
+                    cacheWeakLocal: true
                 };
-            }
 
-            store.applyGeneratedBundle({
-                title: reusable.studyTitle || reusable.materialName || state.studyTitle || state.materialName,
-                blocks: reusable.blocks || []
+                const [reusable] = await Promise.all([
+                    materialHash
+                        ? this.findReusableMaterialSnapshot(materialHash).catch(() => null)
+                        : Promise.resolve(null),
+                    this.ensureMaterialText(extractionOptions).catch(() => "")
+                ]);
+
+                const result = {
+                    materialHash,
+                    reusable,
+                    extractedTextLength: String(store.getState().materialExtractedText || "").length
+                };
+
+                this.materialPreparationResult = result;
+                return result;
+            })().finally(() => {
+                this.materialPreparationPromise = null;
             });
 
-            if (reusable.materialExtractedText) {
-                store.setMaterialExtraction({
-                    text: reusable.materialExtractedText,
-                    status: reusable.materialExtractionStatus || "cached_snapshot_text",
-                    pageCount: reusable.materialPageCount || state.materialPageCount || 0
-                });
-            }
-
-            store.patch({
-                aiGeneration: {
-                    status: "reused_same_material",
-                    provider: "local-cache",
-                    model: "material-hash",
-                    promptVersion: reusable.aiGeneration && reusable.aiGeneration.promptVersion
-                        ? reusable.aiGeneration.promptVersion
-                        : (window.PremiumStudyAI ? window.PremiumStudyAI.PROMPT_VERSION : ""),
-                    generatedAt: new Date().toISOString(),
-                    textLength: String(reusable.materialExtractedText || "").length,
-                    source: options.source || "same_material_cache",
-                    blockCount: Array.isArray(reusable.blocks) ? reusable.blocks.length : 0
-                },
-                progressLabel: "Reconhecemos este PDF e reaproveitamos a trilha ja preparada para o mesmo material."
-            });
-
-            return {
-                ok: true,
-                status: "reused_same_material",
-                snapshot: reusable
-            };
+            return this.materialPreparationPromise;
         },
 
         buildLowQualityPdfNote(step = "mode-select", options = {}) {
@@ -2945,6 +3298,26 @@ ${sections}`
             }
 
             if (!options.forceRegenerate) {
+                const prepared = await this.primeMaterialPreparation({
+                    materialHash: state.materialHash || "",
+                    maxChars: Number(options.maxChars || (state.accessTier === "premium" ? 90000 : 30000)) || 30000,
+                    maxPages: Number(options.maxPages || (state.accessTier === "premium" ? 160 : 12)) || 12
+                }).catch(() => null);
+
+                if (prepared && prepared.reusable) {
+                    const appliedPrepared = this.applyReusableMaterialSnapshot(prepared.reusable, {
+                        source: options.source || "base_layer_prewarm"
+                    });
+
+                    if (appliedPrepared && appliedPrepared.ok) {
+                        store.setAnalysisProgress(Math.max(92, Number(store.getState().analysisProgress || 0)), "running");
+                        return {
+                            ok: true,
+                            status: appliedPrepared.status || "reused_same_material"
+                        };
+                    }
+                }
+
                 const reused = await this.reuseGeneratedStudyForCurrentMaterial({
                     source: options.source || "base_layer"
                 });
@@ -3039,7 +3412,9 @@ ${sections}`
                         generatedAt: new Date().toISOString(),
                         textLength: summary.textLength,
                         source: options.source || "base_layer",
-                        blockCount: Array.isArray(bundleResult.bundle.blocks) ? bundleResult.bundle.blocks.length : 0
+                        blockCount: Array.isArray(bundleResult.bundle.blocks) ? bundleResult.bundle.blocks.length : 0,
+                        bundleKind: "ai_bundle",
+                        localBundleVersion: ""
                     },
                     progressLabel: "Camada base do estudo pronta. Aprender, Praticar e Prova ja ficaram preparados para abrir no clique."
                 });
@@ -3058,7 +3433,12 @@ ${sections}`
             if (localBundle && Array.isArray(localBundle.blocks) && localBundle.blocks.length) {
                 store.applyGeneratedBundle({
                     ...localBundle,
-                    status: "generated_local_from_extracted_text"
+                    status: "generated_local_from_extracted_text",
+                    provider: "local",
+                    model: "extracted-text-fallback",
+                    promptVersion: window.PremiumStudyAI ? window.PremiumStudyAI.PROMPT_VERSION : "",
+                    bundleKind: "local_fallback",
+                    localBundleVersion: LOCAL_BUNDLE_VERSION
                 });
                 store.setAnalysisProgress(Math.max(92, Number(store.getState().analysisProgress || 0)), "running");
                 store.patch({
@@ -3070,7 +3450,9 @@ ${sections}`
                         generatedAt: new Date().toISOString(),
                         textLength: summary.textLength,
                         source: options.source || "base_layer",
-                        blockCount: localBundle.blocks.length
+                        blockCount: localBundle.blocks.length,
+                        bundleKind: "local_fallback",
+                        localBundleVersion: LOCAL_BUNDLE_VERSION
                     },
                     progressLabel: "A IA passou do tempo limite para fechar o pacote completo, entao montamos uma trilha local com o texto extraido para voce nao ficar travado."
                 });
@@ -3580,8 +3962,10 @@ ${sections}`
                 break;
             }
             case "pick-date":
-                store.setExamDate(payload.dateValue);
-                shouldPersist = true;
+                if (String(payload.dateValue || "") >= getTodayIsoDate()) {
+                    store.setExamDate(payload.dateValue);
+                    shouldPersist = true;
+                }
                 break;
             case "calendar-prev":
                 store.shiftCalendarMonth(-1);
@@ -3590,8 +3974,10 @@ ${sections}`
                 store.shiftCalendarMonth(1);
                 break;
             case "continue-to-target":
-                router.goTo("target-score");
-                shouldPersist = true;
+                if (String(store.getState().examDate || "") >= getTodayIsoDate()) {
+                    router.goTo("target-score");
+                    shouldPersist = true;
+                }
                 break;
             case "continue-to-time":
                 router.goTo("study-time");
