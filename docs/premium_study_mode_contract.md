@@ -51,11 +51,14 @@ Deve fazer:
 - depender de blocos ja montados
 - abrir `learn-map` primeiro
 - levar para o resumo do bloco sem painel grande competindo com a leitura
+- em tela cheia, reduzir a concorrencia visual da navegacao lateral
+- manter a cobertura do material em formato compacto, com detalhes recolhidos quando possivel
 
 Nao deve fazer:
 
 - abrir antes dos blocos existirem
 - usar fallback visual confuso enquanto a base ainda esta em preparacao
+- espalhar conteudo demais na horizontal a ponto de cansar a leitura
 
 ### Praticar
 

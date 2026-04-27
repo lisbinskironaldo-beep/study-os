@@ -7485,14 +7485,65 @@ body[data-mode="clock"] .side-modules {
     transform: translateY(-50%) translateX(16px);
 }
 
+body:not([data-mode="clock"]) {
+    padding-bottom: calc(92px + env(safe-area-inset-bottom, 0px));
+}
+
 body:not([data-mode="clock"]) .side-modules {
+    position: fixed;
+    top: auto;
+    right: auto;
+    bottom: 10px;
+    left: 50%;
+    width: min(520px, calc(100vw - 24px));
+    max-width: calc(100vw - 24px);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 10px;
+    margin: 0;
     opacity: 1;
     pointer-events: auto;
+    transform: translateX(-50%);
     transition: opacity 0.18s ease, transform 0.18s ease;
+    z-index: 1300;
+}
+
+body:not([data-mode="clock"]) .side-group-label {
+    display: none;
+}
+
+body:not([data-mode="clock"]) .side-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0;
+    border: 0;
+}
+
+body:not([data-mode="clock"]) .side-group-buttons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+body:not([data-mode="clock"]) .side-modules .icon-circle,
+body:not([data-mode="clock"]) .side-group[data-nav-group="primary"] .icon-circle,
+body:not([data-mode="clock"]) .side-group[data-nav-group="utility"] .icon-circle {
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+}
+
+body:not([data-mode="clock"]) .side-group[data-nav-group="utility"] {
+    padding-left: 8px;
+    border-left: 1px solid var(--line);
 }
 
 body[data-mode="qts"] .side-modules {
-    right: clamp(8px, calc((100vw - var(--content-width)) / 2 + 8px), 36px);
+    right: auto;
 }
 
 .footer {

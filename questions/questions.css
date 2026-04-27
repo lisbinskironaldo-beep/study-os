@@ -3227,8 +3227,9 @@ right: 24px;
 
 #questionsModule .questions-smart-core {
 width: 184px;
+height: 184px;
 aspect-ratio: 1;
-border-radius: 0;
+border-radius: 999px;
 display: grid;
 position: relative;
 z-index: 3;
@@ -3241,7 +3242,7 @@ color: #0f172a;
 transition: box-shadow 0.16s ease, background 0.16s ease, opacity 0.16s ease;
 pointer-events: auto;
 border: 1px solid rgba(213, 223, 235, 0.84);
-clip-path: polygon(22px 0, calc(100% - 22px) 0, 100% 22px, 100% calc(100% - 22px), calc(100% - 22px) 100%, 22px 100%, 0 calc(100% - 22px), 0 22px);
+clip-path: none;
 }
 
 #questionsModule .questions-smart-core strong {
@@ -3299,6 +3300,7 @@ font-size: 9px;
 
 #questionsModule .questions-smart-start-card:not(.questions-smart-subject-card) .questions-smart-core {
 width: 166px;
+height: 166px;
 }
 
 #questionsModule .questions-smart-start-card:not(.questions-smart-subject-card) .questions-smart-core strong {

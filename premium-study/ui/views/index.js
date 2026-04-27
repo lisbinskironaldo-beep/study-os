@@ -278,7 +278,7 @@ ${renderSessionNote(state, "entry")}`;
             tone: "time"
         })}
     </div>
-    <button type="button" class="premium-time-advance" data-premium-action="continue-to-analysis" aria-label="Montar meu plano">
+    <button type="button" class="premium-step-advance premium-step-advance-time" data-premium-action="continue-to-analysis" aria-label="Montar meu plano">
         <span aria-hidden="true">&rsaquo;</span>
     </button>
 </section>`;
@@ -690,23 +690,13 @@ ${renderSessionNote(state, "mode-select")}`;
     function renderCoveragePanel(state = {}, options = {}) {
         const coverage = deriveCoverageState(state);
         const compact = Boolean(options.compact);
+        const collapsible = Boolean(options.collapsible);
         const qualityLabel = {
             alta: "Base forte",
             media: "Base parcial",
             limitada: "Base limitada"
         }[coverage.sourceQuality] || "Base em leitura";
-
-        return `
-<section class="premium-learn-coverage ${compact ? "is-compact" : ""}">
-    <div class="premium-learn-coverage-head">
-        <div>
-            <span class="premium-panel-kicker">Cobertura do material</span>
-            <strong>${coverage.blockCount} ${coverage.blockCount === 1 ? "bloco" : "blocos"} preparados${coverage.pageCount ? ` para ${coverage.pageCount} paginas` : ""}</strong>
-        </div>
-        <span class="premium-learn-coverage-quality premium-learn-coverage-quality-${UI().escapeHtml(coverage.sourceQuality)}">${UI().escapeHtml(qualityLabel)}</span>
-    </div>
-    <p>${UI().escapeHtml(coverage.summary)}</p>
-    ${coverage.frontsCovered.length ? `
+        const coverageDetails = `${coverage.frontsCovered.length ? `
     <div class="premium-learn-coverage-group">
         <span class="premium-detail-label">Frentes cobertas</span>
         <div class="premium-learn-coverage-tags">
@@ -719,7 +709,23 @@ ${renderSessionNote(state, "mode-select")}`;
         <ul class="premium-learn-coverage-list">
             ${coverage.possibleGaps.map((item) => `<li>${UI().escapeHtml(item)}</li>`).join("")}
         </ul>
-    </div>` : ""}
+    </div>` : ""}`;
+
+        return `
+<section class="premium-learn-coverage ${compact ? "is-compact" : ""} ${collapsible ? "is-collapsible" : ""}">
+    <div class="premium-learn-coverage-head">
+        <div>
+            <span class="premium-panel-kicker">Cobertura do material</span>
+            <strong>${coverage.blockCount} ${coverage.blockCount === 1 ? "bloco" : "blocos"} preparados${coverage.pageCount ? ` para ${coverage.pageCount} paginas` : ""}</strong>
+        </div>
+        <span class="premium-learn-coverage-quality premium-learn-coverage-quality-${UI().escapeHtml(coverage.sourceQuality)}">${UI().escapeHtml(qualityLabel)}</span>
+    </div>
+    <p>${UI().escapeHtml(coverage.summary)}</p>
+    ${collapsible && coverageDetails.trim() ? `
+    <details class="premium-learn-coverage-details" ${coverage.sourceQuality !== "alta" ? "open" : ""}>
+        <summary>${coverage.possibleGaps.length ? "Ver cobertura e pontos de atencao" : "Ver frentes cobertas"}</summary>
+        ${coverageDetails}
+    </details>` : coverageDetails}
 </section>`;
     }
 
@@ -1333,6 +1339,19 @@ ${renderCoveragePanel(state)}
 </section>`;
     }
 
+    function renderBlockNavigator(blocks = [], activeBlockId = "", options = {}) {
+        const compact = Boolean(options.compact);
+
+        return `
+<div class="premium-learn-block-rail ${compact ? "is-compact" : ""}">
+    ${blocks.map((item, index) => `
+    <button type="button" class="premium-learn-rail-item ${compact ? "is-compact" : ""} ${item.id === activeBlockId ? "is-active" : ""}" data-premium-action="open-block" data-block-id="${item.id}">
+        <span>${String(index + 1).padStart(2, "0")}</span>
+        <strong>${UI().escapeHtml(item.title)}</strong>
+    </button>`).join("")}
+</div>`;
+    }
+
     function block(state) {
         const block = Store().getActiveBlock();
         const nextBlockId = Store().getNextBlockId();
@@ -1349,23 +1368,19 @@ ${renderCoveragePanel(state)}
             ? learn.documentSections
             : [];
         const assistPanel = renderAssistPanel(block, state.blockAssistMode);
+        const useCompactRail = Boolean(state.blockFullScreen);
         return `
 <section class="premium-learn-reader ${state.blockFullScreen ? "is-fullscreen" : "is-page"}">
     ${state.blockFullScreen ? `<div class="premium-learn-reader-scrim" aria-hidden="true"></div>` : ""}
     <div class="premium-learn-focus premium-learn-reader-panel">
         <article class="premium-learn-workspace">
+            ${useCompactRail ? "" : `
             <aside class="premium-learn-workspace-rail" aria-label="Assuntos do material">
                 <span class="premium-panel-kicker">Aprender</span>
                 <h2>${UI().escapeHtml(block.title)}</h2>
                 <p>${UI().escapeHtml(block.subtitle)}</p>
-                <div class="premium-learn-block-rail">
-                    ${state.blocks.map((item, index) => `
-                    <button type="button" class="premium-learn-rail-item ${item.id === block.id ? "is-active" : ""}" data-premium-action="open-block" data-block-id="${item.id}">
-                        <span>${String(index + 1).padStart(2, "0")}</span>
-                        <strong>${UI().escapeHtml(item.title)}</strong>
-                    </button>`).join("")}
-                </div>
-            </aside>
+                ${renderBlockNavigator(state.blocks, block.id)}
+            </aside>`}
             <div class="premium-learn-workspace-main">
                 <header class="premium-learn-workspace-head">
                     <div>
@@ -1373,12 +1388,20 @@ ${renderCoveragePanel(state)}
                         <h2>${UI().escapeHtml(block.title)}</h2>
                         <p class="premium-learn-lead">${UI().escapeHtml(block.subtitle)}</p>
                         ${renderWorkspaceMeta(block, state, tabs, activeTab)}
-                        ${renderCoveragePanel(state, { compact: true })}
+                        ${renderCoveragePanel(state, { compact: true, collapsible: true })}
                     </div>
                     <button type="button" class="premium-tab ${state.blockFullScreen ? "" : "is-active"}" data-premium-action="${state.blockFullScreen ? "collapse-block-reader" : "expand-block-reader"}">
                         ${state.blockFullScreen ? "Sair da tela cheia" : "Abrir em tela cheia"}
                     </button>
                 </header>
+                ${useCompactRail ? `
+                <section class="premium-learn-top-strip" aria-label="Assuntos do material">
+                    <div class="premium-learn-top-strip-head">
+                        <span class="premium-detail-label">Assuntos do material</span>
+                        <strong>${Array.isArray(state.blocks) ? state.blocks.length : 0} blocos para navegar</strong>
+                    </div>
+                    ${renderBlockNavigator(state.blocks, block.id, { compact: true })}
+                </section>` : ""}
                 <nav class="premium-learn-workspace-tabs" aria-label="Ferramentas de aprender">
                     ${tabs.map((tab) => `
                     <button type="button" class="premium-learn-tool-tab ${activeTab === tab.id ? "is-active" : ""}" data-premium-action="set-tab" data-tab-id="${tab.id}">
@@ -1387,13 +1410,15 @@ ${renderCoveragePanel(state)}
                         <em>${Number(tab.count || 0)}</em>
                     </button>`).join("")}
                 </nav>
-                <section class="premium-learn-tab-intro">
-                    <span class="premium-detail-label">${UI().escapeHtml((tabs.find((tab) => tab.id === activeTab) || { label: "Aula" }).label)}</span>
-                    <p>${UI().escapeHtml(getLearnTabDescription(activeTab))}</p>
-                </section>
-                ${activeTab === "aula" ? renderBlockInsightGrid(block) : ""}
-                ${renderLearnTabContent(block, effectiveState, documentSections)}
-                ${assistPanel}
+                <div class="premium-learn-reading-column">
+                    <section class="premium-learn-tab-intro">
+                        <span class="premium-detail-label">${UI().escapeHtml((tabs.find((tab) => tab.id === activeTab) || { label: "Aula" }).label)}</span>
+                        <p>${UI().escapeHtml(getLearnTabDescription(activeTab))}</p>
+                    </section>
+                    ${activeTab === "aula" ? renderBlockInsightGrid(block) : ""}
+                    ${renderLearnTabContent(block, effectiveState, documentSections)}
+                    ${assistPanel}
+                </div>
             </div>
         </article>
         ${UI().actionBar([
