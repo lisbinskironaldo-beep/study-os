@@ -8,6 +8,9 @@
     window.PremiumStudyApp = {
         root: null,
         analysisTimers: [],
+        modePreparationTimer: null,
+        shellActivityTimer: null,
+        pendingScrollSelector: "",
         fileInput: null,
         persistenceReady: false,
         activeRingControl: null,
@@ -110,11 +113,13 @@
             };
 
             store.setShellActivity(activity);
+            this.startActivityProgress("shellActivity");
             this.render();
 
             try {
                 return await task(activity);
             } finally {
+                this.stopActivityProgress("shellActivity");
                 if (store.getState().shellActivity && store.getState().shellActivity.active) {
                     store.clearShellActivity();
                 }
@@ -435,7 +440,7 @@
                 },
                 failure: {
                     tone: "premium",
-                    title: "Pagamento não concluÃ­do",
+                    title: "Pagamento não concluído",
                     message: "O pagamento não foi aprovado ou foi cancelado. Você pode tentar novamente quando quiser."
                 }
             };
@@ -1008,6 +1013,53 @@
             return nextFile;
         },
 
+        startActivityProgress(key) {
+            const store = window.PremiumStudyStore;
+            const timerKey = key === "modePreparation" ? "modePreparationTimer" : "shellActivityTimer";
+            const setter = key === "modePreparation" ? "setModePreparation" : "setShellActivity";
+
+            if (this[timerKey]) {
+                window.clearInterval(this[timerKey]);
+            }
+
+            this[timerKey] = window.setInterval(() => {
+                const state = store.getState();
+                const activity = state[key];
+
+                if (!activity || !activity.active) {
+                    this.stopActivityProgress(key);
+                    return;
+                }
+
+                const labels = Array.isArray(activity.labels) && activity.labels.length
+                    ? activity.labels
+                    : ["Lendo material", "Montando Aprender", "Montando Praticar", "Montando Prova"];
+                const currentProgress = Number.isFinite(Number(activity.progress))
+                    ? Number(activity.progress)
+                    : 8;
+                const nextProgress = Math.min(98, currentProgress + Math.max(1, Math.round((99 - currentProgress) * 0.045)));
+                const objectiveTotal = labels.length;
+                const objectiveIndex = Math.max(1, Math.min(objectiveTotal, Math.ceil((nextProgress / 100) * objectiveTotal)));
+
+                store[setter]({
+                    progress: nextProgress,
+                    objectiveIndex,
+                    objectiveTotal,
+                    objectiveLabel: labels[objectiveIndex - 1] || labels[labels.length - 1] || ""
+                });
+                this.render();
+            }, 950);
+        },
+
+        stopActivityProgress(key) {
+            const timerKey = key === "modePreparation" ? "modePreparationTimer" : "shellActivityTimer";
+
+            if (this[timerKey]) {
+                window.clearInterval(this[timerKey]);
+                this[timerKey] = null;
+            }
+        },
+
         isPdfMaterial(file) {
             const validator = window.PremiumStudyPdfValidator;
             return Boolean(validator && typeof validator.isPdfFile === "function" && validator.isPdfFile(file));
@@ -1111,6 +1163,19 @@
                 return {
                     ok: true,
                     status: "inline_pdf_ready",
+                    byteSize,
+                    inlineLimit
+                };
+            }
+
+            if (
+                aiService &&
+                window.PremiumStudyPdfTextExtractor &&
+                typeof window.PremiumStudyPdfTextExtractor.renderPageImages === "function"
+            ) {
+                return {
+                    ok: true,
+                    status: "local_pdf_images_ready",
                     byteSize,
                     inlineLimit
                 };
@@ -2549,6 +2614,118 @@ ${sections}`
             return selectedQuestions;
         },
 
+        buildLocalBundleFromExtractedText(text, options = {}) {
+            const store = window.PremiumStudyStore;
+            const state = store.getState();
+            const materialName = options.materialName || state.studyTitle || state.materialName || "Material";
+            const clean = String(text || "")
+                .replace(/\r/g, "")
+                .replace(/[ \t]+/g, " ")
+                .replace(/\n{3,}/g, "\n\n")
+                .trim();
+            const paragraphs = clean
+                .split(/\n{2,}|(?=Pagina\s+\d+:)/i)
+                .map((part) => part.replace(/\s+/g, " ").trim())
+                .filter((part) => part.length >= 70);
+            const articleMatches = [...clean.matchAll(/\b(?:Art\.?|Artigo)\s*\d+[^\n]{0,220}/gi)]
+                .map((match) => match[0].replace(/\s+/g, " ").trim())
+                .filter(Boolean);
+            const seeds = (articleMatches.length ? articleMatches : paragraphs).slice(0, 40);
+            const desiredBlocks = Math.max(3, Math.min(8, Math.ceil(Math.max(1, seeds.length) / 5)));
+            const chunkSize = Math.max(1, Math.ceil(Math.max(1, seeds.length) / desiredBlocks));
+            const blocks = [];
+
+            const titleFrom = (items, index) => {
+                const first = String(items[0] || paragraphs[index] || materialName)
+                    .replace(/^Pagina\s+\d+:\s*/i, "")
+                    .trim();
+                const article = first.match(/\b(?:Art\.?|Artigo)\s*\d+/i);
+                return article
+                    ? `${article[0].replace(/Artigo/i, "Art.")}: leitura guiada`
+                    : (first.slice(0, 72) || `Bloco ${index + 1}`);
+            };
+            const makeQuestion = (topic) => ({
+                prompt: `Segundo o material, qual conduta de estudo e mais segura sobre "${String(topic || materialName).slice(0, 90)}"?`,
+                options: [
+                    "Voltar ao texto, identificar o criterio e aplicar ao caso.",
+                    "Responder por intuicao, sem conferir os termos do trecho.",
+                    "Ignorar excecoes e palavras de limite.",
+                    "Tratar todo detalhe como irrelevante."
+                ],
+                correctIndex: 0,
+                rationale: "A resposta correta preserva o criterio textual extraido do documento."
+            });
+
+            for (let index = 0; index < desiredBlocks; index += 1) {
+                const chunk = seeds.slice(index * chunkSize, (index + 1) * chunkSize);
+                const support = paragraphs.slice(index * 3, index * 3 + 4);
+                const source = (chunk.length ? chunk : support).slice(0, 6);
+                const title = titleFrom(source, index);
+                const concepts = source.map((item) => item.replace(/^Pagina\s+\d+:\s*/i, "").slice(0, 150)).filter(Boolean);
+                const lessonParagraphs = support.length ? support.slice(0, 3) : [concepts.join(" ").slice(0, 900)];
+                const q1 = makeQuestion(concepts[0] || title);
+                const q2 = makeQuestion(concepts[1] || title);
+                const q3 = makeQuestion(concepts[2] || title);
+
+                blocks.push({
+                    id: `local-block-${index + 1}`,
+                    title,
+                    subtitle: `Recorte ${index + 1} de ${desiredBlocks} extraido do documento.`,
+                    duration: index === 0 ? "25 min" : "20 min",
+                    topics: concepts,
+                    learn: {
+                        summary: lessonParagraphs.join(" ").slice(0, 1000),
+                        intro: "Bloco montado automaticamente a partir do texto extraido para evitar deixar o estudo vazio.",
+                        lessonModules: [{
+                            title,
+                            objective: "Compreender o criterio textual deste recorte.",
+                            paragraphs: lessonParagraphs,
+                            takeaways: concepts.slice(0, 4)
+                        }],
+                        documentSections: [{
+                            id: `local-section-${index + 1}`,
+                            type: "summary",
+                            label: "Aula",
+                            title,
+                            paragraphs: lessonParagraphs,
+                            items: concepts.slice(0, 5)
+                        }],
+                        keyConcepts: concepts.slice(0, 6),
+                        hotPoints: concepts.slice(0, 4),
+                        examFocus: ["Identificar o criterio literal do trecho.", "Separar regra, excecao e consequencia.", "Evitar extrapolar alem do texto extraido."],
+                        pitfalls: ["Responder por conhecimento geral sem voltar ao trecho.", "Ignorar palavras de limite, condicao ou excecao."],
+                        practicalCases: concepts.slice(0, 2).map((item) => `Como aplicar o criterio: ${item}`),
+                        connections: concepts.slice(1, 4),
+                        memoryAnchors: concepts.slice(0, 3),
+                        mnemonics: [{ title: "Leitura segura", formula: "Texto -> criterio -> aplicacao", explanation: "Leia o trecho, identifique o criterio e so depois aplique ao caso." }],
+                        memoryDeck: concepts.slice(0, 4).map((item) => ({ front: item, back: "Revise o trecho no contexto do bloco.", cue: "Procure palavras de condicao, excecao ou consequencia." })),
+                        masteryChecklist: ["Localizo o trecho central.", "Explico a regra com minhas palavras.", "Separo regra e excecao.", "Aplico o criterio em uma questao."],
+                        explainBetter: { title: `Explicando ${title}`, paragraphs: lessonParagraphs },
+                        reviewInFivePoints: concepts.slice(0, 5)
+                    },
+                    practice: {
+                        quiz: [q1, q2, q3],
+                        quizSeries: [[q1, q2, q3]],
+                        trueFalse: [
+                            { statement: `O bloco "${title}" deve ser estudado a partir do criterio textual extraido.`, answer: true, rationale: "A trilha foi montada diretamente do texto extraido." },
+                            { statement: "E seguro responder sem conferir os termos limitadores do trecho.", answer: false, rationale: "Termos limitadores podem mudar a resposta." },
+                            { statement: "Regra, excecao e consequencia devem ser separados na revisao.", answer: true, rationale: "Essa separacao reduz erro de interpretacao." }
+                        ],
+                        trueFalseSeries: [[
+                            { statement: `O bloco "${title}" deve ser estudado a partir do criterio textual extraido.`, answer: true, rationale: "A trilha foi montada diretamente do texto extraido." },
+                            { statement: "E seguro responder sem conferir os termos limitadores do trecho.", answer: false, rationale: "Termos limitadores podem mudar a resposta." },
+                            { statement: "Regra, excecao e consequencia devem ser separados na revisao.", answer: true, rationale: "Essa separacao reduz erro de interpretacao." }
+                        ]],
+                        flashcards: concepts.slice(0, 3).map((item) => ({ front: item, back: "Explique o criterio e conecte com o trecho do material.", tip: "Procure palavras de limite." })),
+                        flashcardSeries: [concepts.slice(0, 3).map((item) => ({ front: item, back: "Explique o criterio e conecte com o trecho do material.", tip: "Procure palavras de limite." }))]
+                    },
+                    exam: { baseCount: 3, questions: [q1, q2, q3] }
+                });
+            }
+
+            return { title: materialName, blocks };
+        },
+
         hasMeaningfulStudyProgress() {
             const store = window.PremiumStudyStore;
 
@@ -2564,6 +2741,92 @@ ${sections}`
             const store = window.PremiumStudyStore;
             const state = store.getState();
             return Array.isArray(state.blocks) && state.blocks.some((block) => block && block.generatedByAi);
+        },
+
+        snapshotHasGeneratedStudy(snapshot = {}) {
+            return Boolean(
+                snapshot &&
+                snapshot.materialHash &&
+                Array.isArray(snapshot.blocks) &&
+                (
+                    snapshot.blocks.some((block) => block && block.generatedByAi) ||
+                    ["base_ready", "base_ready_local", "reused_same_material"].includes(String(snapshot.aiGeneration && snapshot.aiGeneration.status || ""))
+                )
+            );
+        },
+
+        async findReusableMaterialSnapshot(materialHash) {
+            const hash = String(materialHash || "").trim();
+
+            if (!hash) {
+                return null;
+            }
+
+            const store = window.PremiumStudyStore;
+            const stateItems = store && typeof store.getState === "function"
+                ? store.getState().studyLibrary
+                : [];
+            let candidates = Array.isArray(stateItems) ? stateItems : [];
+
+            if (window.PremiumStudyStorage && typeof window.PremiumStudyStorage.getStudyLibrary === "function") {
+                const localItems = await window.PremiumStudyStorage.getStudyLibrary();
+                candidates = window.PremiumStudyLibrary && typeof window.PremiumStudyLibrary.mergeLibraryItems === "function"
+                    ? window.PremiumStudyLibrary.mergeLibraryItems(candidates, localItems)
+                    : [...candidates, ...(Array.isArray(localItems) ? localItems : [])];
+            }
+
+            return candidates
+                .map((item) => item && item.snapshot ? item.snapshot : null)
+                .filter((snapshot) => snapshot && snapshot.materialHash === hash && this.snapshotHasGeneratedStudy(snapshot))
+                .sort((left, right) => Date.parse(right.savedAt || "") - Date.parse(left.savedAt || ""))[0] || null;
+        },
+
+        async reuseGeneratedStudyForCurrentMaterial(options = {}) {
+            const store = window.PremiumStudyStore;
+            const state = store.getState();
+            const reusable = await this.findReusableMaterialSnapshot(state.materialHash || "");
+
+            if (!reusable) {
+                return {
+                    ok: false,
+                    status: "cache_miss"
+                };
+            }
+
+            store.applyGeneratedBundle({
+                title: reusable.studyTitle || reusable.materialName || state.studyTitle || state.materialName,
+                blocks: reusable.blocks || []
+            });
+
+            if (reusable.materialExtractedText) {
+                store.setMaterialExtraction({
+                    text: reusable.materialExtractedText,
+                    status: reusable.materialExtractionStatus || "cached_snapshot_text",
+                    pageCount: reusable.materialPageCount || state.materialPageCount || 0
+                });
+            }
+
+            store.patch({
+                aiGeneration: {
+                    status: "reused_same_material",
+                    provider: "local-cache",
+                    model: "material-hash",
+                    promptVersion: reusable.aiGeneration && reusable.aiGeneration.promptVersion
+                        ? reusable.aiGeneration.promptVersion
+                        : (window.PremiumStudyAI ? window.PremiumStudyAI.PROMPT_VERSION : ""),
+                    generatedAt: new Date().toISOString(),
+                    textLength: String(reusable.materialExtractedText || "").length,
+                    source: options.source || "same_material_cache",
+                    blockCount: Array.isArray(reusable.blocks) ? reusable.blocks.length : 0
+                },
+                progressLabel: "Reconhecemos este PDF e reaproveitamos a trilha ja preparada para o mesmo material."
+            });
+
+            return {
+                ok: true,
+                status: "reused_same_material",
+                snapshot: reusable
+            };
         },
 
         buildLowQualityPdfNote(step = "mode-select", options = {}) {
@@ -2588,13 +2851,17 @@ ${sections}`
                 targetStep: options.targetStep || currentStep,
                 source: options.source || "",
                 title: options.title || "Preparando Aprender, Praticar e Prova",
-                message: options.message || "Aguarde um instante enquanto o sistema organiza a base do material antes de abrir a próxima aba.",
+                message: options.message || "Estamos trabalhando em segundo plano para organizar a versão mais completa do seu estudo.",
                 labels: Array.isArray(options.labels) ? options.labels : ["Lendo base", "Montando Aprender", "Montando Praticar", "Montando Prova"],
                 progress: Number.isFinite(Number(options.progress)) ? Number(options.progress) : null,
+                objectiveIndex: 1,
+                objectiveTotal: Array.isArray(options.labels) && options.labels.length ? options.labels.length : 4,
+                objectiveLabel: Array.isArray(options.labels) && options.labels.length ? options.labels[0] : "Lendo base",
                 startedAt: new Date().toISOString()
             };
 
             store.setModePreparation(preparation);
+            this.startActivityProgress("modePreparation");
             store.setSessionNote({
                 step: currentStep,
                 tone: "info",
@@ -2606,6 +2873,7 @@ ${sections}`
             try {
                 return await task(preparation);
             } finally {
+                this.stopActivityProgress("modePreparation");
                 if (store.getState().modePreparation && store.getState().modePreparation.active) {
                     store.clearModePreparation();
                 }
@@ -2674,6 +2942,20 @@ ${sections}`
                     ok: true,
                     status: "already_ready"
                 };
+            }
+
+            if (!options.forceRegenerate) {
+                const reused = await this.reuseGeneratedStudyForCurrentMaterial({
+                    source: options.source || "base_layer"
+                });
+
+                if (reused && reused.ok) {
+                    store.setAnalysisProgress(Math.max(92, Number(store.getState().analysisProgress || 0)), "running");
+                    return {
+                        ok: true,
+                        status: reused.status || "reused_same_material"
+                    };
+                }
             }
 
             store.setAnalysisProgress(Math.max(18, Number(store.getState().analysisProgress || 0)), "running");
@@ -2766,6 +3048,37 @@ ${sections}`
                     status: "base_ready",
                     text: normalizedText,
                     bundle: bundleResult.bundle
+                };
+            }
+
+            const localBundle = this.buildLocalBundleFromExtractedText(normalizedText, {
+                materialName: state.studyTitle || state.materialName || "Material"
+            });
+
+            if (localBundle && Array.isArray(localBundle.blocks) && localBundle.blocks.length) {
+                store.applyGeneratedBundle({
+                    ...localBundle,
+                    status: "generated_local_from_extracted_text"
+                });
+                store.setAnalysisProgress(Math.max(92, Number(store.getState().analysisProgress || 0)), "running");
+                store.patch({
+                    aiGeneration: {
+                        status: "base_ready_local",
+                        provider: "local",
+                        model: "extracted-text-fallback",
+                        promptVersion: window.PremiumStudyAI ? window.PremiumStudyAI.PROMPT_VERSION : "",
+                        generatedAt: new Date().toISOString(),
+                        textLength: summary.textLength,
+                        source: options.source || "base_layer",
+                        blockCount: localBundle.blocks.length
+                    },
+                    progressLabel: "A IA passou do tempo limite para fechar o pacote completo, entao montamos uma trilha local com o texto extraido para voce nao ficar travado."
+                });
+                return {
+                    ok: true,
+                    status: "base_ready_local",
+                    text: normalizedText,
+                    bundle: localBundle
                 };
             }
 
@@ -2921,8 +3234,8 @@ ${sections}`
                 targetStep: normalizedTargetStep,
                 source: options.source || "base_layer_retry",
                 title: "Preparando a camada base do estudo",
-                message: "Estamos tentando montar Aprender, Praticar e Prova antes de abrir a aba escolhida.",
-                labels: ["Lendo material", "Montando Aprender", "Montando Praticar", "Montando Prova"]
+                message: "Estamos organizando o estudo em segundo plano. Em PDF escaneado, a leitura visual e a montagem dos blocos podem levar alguns minutos.",
+                labels: ["Lendo material", "Montando Aprender", "Montando Praticar", "Finalizando Prova"]
             }, async () => {
                 const baseResult = await this.prepareStudyBaseLayer({
                     source: options.source || "base_layer_retry",
@@ -3310,7 +3623,7 @@ ${sections}`
                         break;
                     }
                 }
-                store.setBlockTab("aprender");
+                store.setBlockTab("aula");
                 router.goTo("learn-map");
                 shouldPersist = true;
                 break;
@@ -3873,6 +4186,18 @@ ${sections}`
                 store.setBlockTab(payload.tabId);
                 shouldPersist = true;
                 break;
+            case "toggle-learn-check":
+                store.toggleLearnChecklistItem(payload.blockId, payload.itemIndex);
+                shouldPersist = true;
+                break;
+            case "toggle-memory-card":
+                store.toggleLearnMemoryCard(payload.blockId, payload.itemIndex);
+                shouldPersist = true;
+                break;
+            case "toggle-learn-case":
+                store.toggleLearnCase(payload.blockId, payload.itemIndex);
+                shouldPersist = true;
+                break;
             case "open-premium-checkout":
                 openPremiumOffer(payload.itemValue || "PREMIUM_LIBRARY");
                 shouldPersist = true;
@@ -3971,7 +4296,7 @@ ${sections}`
                 break;
             case "open-block":
                 store.selectBlock(payload.blockId);
-                store.setBlockTab("aprender");
+                store.setBlockTab("aula");
                 store.setBlockFullScreen(true);
                 store.setBlockAssistMode("");
                 store.markActiveBlockProgress({ learn: true });
@@ -3990,6 +4315,7 @@ ${sections}`
                 const nextBlockId = store.getNextBlockId();
                 if (nextBlockId) {
                     store.selectBlock(nextBlockId);
+                    store.setBlockTab("aula");
                     store.setBlockFullScreen(true);
                     store.setBlockAssistMode("");
                     router.goTo("block");
@@ -4158,6 +4484,7 @@ ${sections}`
                             title: result.title,
                             questions: result.questions
                         });
+                        store.startLevelExam();
                         store.clearSessionNote();
                     } else {
                         const fallbackQuestions = this.buildFallbackLevelExamQuestions(levelExam.questionCount || 10);
@@ -4167,6 +4494,7 @@ ${sections}`
                                 title: "Prova de nível do material",
                                 questions: fallbackQuestions
                             });
+                            store.startLevelExam();
                             store.setSessionNote({
                                 step: "level-exam",
                                 tone: "info",
@@ -4333,6 +4661,7 @@ ${sections}`
                 store.patch({
                     progressLabel: "Leitura complementar aberta para explicar este assunto com mais didatica."
                 });
+                this.pendingScrollSelector = ".premium-learn-assist-panel";
                 shouldPersist = true;
                 break;
             case "ai-quick-review":
@@ -4340,6 +4669,7 @@ ${sections}`
                 store.patch({
                     progressLabel: "Revisao em 5 pontos aberta para fixar este assunto com rapidez."
                 });
+                this.pendingScrollSelector = ".premium-learn-assist-panel";
                 shouldPersist = true;
                 break;
             case "ai-create-questions":
@@ -4356,6 +4686,17 @@ ${sections}`
             }
 
             this.render();
+
+            if (this.pendingScrollSelector) {
+                const selector = this.pendingScrollSelector;
+                this.pendingScrollSelector = "";
+                window.requestAnimationFrame(() => {
+                    const target = this.root && this.root.querySelector(selector);
+                    if (target && typeof target.scrollIntoView === "function") {
+                        target.scrollIntoView({ behavior: "smooth", block: "start" });
+                    }
+                });
+            }
 
             if (shouldSyncNativeFullScreen) {
                 await this.syncNativeFullScreen(preferEnterNativeFullScreen);

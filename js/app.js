@@ -806,9 +806,11 @@ const Core = {
             return this.premiumStudyLoadPromise;
         }
 
+        const premiumStudyVersion = "20260426-ocr-visual-4";
+
         this.premiumStudyLoadPromise =
             this.ensureScriptLoaded(
-                "premium-study/bootstrap/index.js",
+                `premium-study/bootstrap/index.js?v=${premiumStudyVersion}`,
                 "data-premium-bootstrap"
             );
 
@@ -890,7 +892,7 @@ UtilityWindows.open(target)
 return
 }
 
-   if (target === "questions") {
+if (target === "questions") {
 
 const applyRequestedLauncherView = () => {
 const requestedView = String(
@@ -939,6 +941,26 @@ this.hideModules()
 
 const moduleEl = document.getElementById("questionsModule")
 if (moduleEl) moduleEl.classList.add("active")
+
+const requestedQuestionsView = String(
+window.RotaNotaQuestionsLauncherTarget || ""
+).trim()
+
+if (
+moduleEl &&
+requestedQuestionsView === "progress" &&
+!window.questionsLoaded
+) {
+moduleEl.innerHTML = `
+<div class="questions-route-loading" role="status" aria-live="polite">
+<span class="questions-route-loading-kicker">Estatisticas</span>
+<h2>Abrindo seu placar pessoal</h2>
+<p>Estamos carregando o painel completo sem trocar para outra tela.</p>
+<div class="questions-route-loading-grid" aria-hidden="true">
+<span></span><span></span><span></span><span></span>
+</div>
+</div>`
+}
 
 this.state.mode = "questions"
 document.body.setAttribute("data-mode", "questions")
@@ -1038,17 +1060,12 @@ document.body.appendChild(contextScript)
 } else {
 
 if (window.QuestionsPage) {
-if (
-window.QuestionsState &&
-QuestionsState.getPhase() === "session" &&
-!QuestionsState.isComplete()
-) {
-QuestionsPage.render()
-} else {
+const openedRequestedView = applyRequestedLauncherView()
+
+if (!openedRequestedView) {
 QuestionsPage.render()
 }
 
-applyRequestedLauncherView()
 applyPendingQuestionsNotice()
 }
 

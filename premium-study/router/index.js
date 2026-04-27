@@ -95,9 +95,10 @@
                 '<span class="premium-stage-line premium-stage-line-tail premium-stage-line-shift-3">caminho para voce.</span>'
             ].join(""),
             subtitle: "Agora o sistema transforma suas escolhas em uma trilha mais objetiva e focada na sua meta.",
-            label: "Processamento",
+            label: "",
             backVisible: false,
             progressVisible: false,
+            showKicker: false,
             showSummary: false
         },
         "mode-select": {

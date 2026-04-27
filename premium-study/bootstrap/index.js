@@ -5,6 +5,7 @@
 
     const STYLE_ID = "premium-study-styles";
     const SCRIPT_MARK = "data-premium-study-src";
+    const VERSION = "20260426-ocr-visual-4";
     const dependencies = [
         "premium-study/storage/indexeddb.js",
         "premium-study/services/access-control.js",
@@ -28,20 +29,33 @@
     let dependenciesPromise = null;
 
     function ensureStyle() {
-        if (document.getElementById(STYLE_ID)) {
+        const existing = document.getElementById(STYLE_ID);
+        if (existing && existing.dataset.premiumStudyVersion === VERSION) {
             return;
+        }
+
+        if (existing) {
+            existing.remove();
         }
 
         const link = document.createElement("link");
         link.id = STYLE_ID;
         link.rel = "stylesheet";
-        link.href = "premium-study/styles/premium-study.css";
+        link.href = `premium-study/styles/premium-study.css?v=${VERSION}`;
+        link.dataset.premiumStudyVersion = VERSION;
         document.head.appendChild(link);
+    }
+
+    function versionedSrc(src) {
+        return src.includes("?")
+            ? `${src}&v=${VERSION}`
+            : `${src}?v=${VERSION}`;
     }
 
     function loadScript(src) {
         return new Promise((resolve, reject) => {
-            const existing = document.querySelector(`script[${SCRIPT_MARK}="${src}"]`);
+            const actualSrc = versionedSrc(src);
+            const existing = document.querySelector(`script[${SCRIPT_MARK}="${src}"][data-premium-study-version="${VERSION}"]`);
             if (existing) {
                 if (existing.dataset.loaded === "true") {
                     resolve();
@@ -54,9 +68,10 @@
             }
 
             const script = document.createElement("script");
-            script.src = src;
+            script.src = actualSrc;
             script.defer = true;
             script.setAttribute(SCRIPT_MARK, src);
+            script.dataset.premiumStudyVersion = VERSION;
             script.addEventListener("load", () => {
                 script.dataset.loaded = "true";
                 resolve();

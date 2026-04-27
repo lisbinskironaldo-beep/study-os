@@ -175,6 +175,14 @@ window.QuestionsPage = {
         QuestionsContext.load();
         this.resetSimuladoBuilder();
         QuestionsState.init();
+        const initialLauncherView =
+            QuestionsState.isValidLauncherView(
+                window.RotaNotaQuestionsLauncherTarget
+            )
+                ? String(
+                      window.RotaNotaQuestionsLauncherTarget
+                  ).trim()
+                : "home";
         this.loadCoachState();
         QuestionsUI.init(this);
         this.bindSyncBridge();
@@ -207,13 +215,19 @@ window.QuestionsPage = {
             if (this.consumePendingSync()) {
                 return;
             }
-            this.openLauncher("home");
+            this.openLauncher(
+                initialLauncherView
+            );
             return;
         }
 
         this.data.bankStatus = "loading";
-        QuestionsState.openLauncher("home");
-        this.registerCoachView("home");
+        QuestionsState.openLauncher(
+            initialLauncherView
+        );
+        this.registerCoachView(
+            initialLauncherView
+        );
         this.render();
 
         await this.loadSchoolCatalog();
@@ -221,7 +235,9 @@ window.QuestionsPage = {
         if (this.consumePendingSync()) {
             return;
         }
-        this.openLauncher("home");
+        this.openLauncher(
+            initialLauncherView
+        );
     },
 
     async loadSchoolCatalog() {

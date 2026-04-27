@@ -1487,7 +1487,7 @@ color: #111;
 zoom: 0.9;
 }
 
-/* TÃTULO */
+/* TÍTULO */
 h2{
 text-align: center;
 font-size: 380% !important;
@@ -1503,7 +1503,7 @@ width: 100%;
 table-layout: fixed;
 }
 
-/* CÃ‰LULAS BASE */
+/* CÉLULAS BASE */
 #qtsGrid > div {
 font-size: 30px;
 line-height: 1.1;
@@ -1528,7 +1528,7 @@ background: #e9eef5;
 font-weight: 700;
 }
 
-/* HORÃRIO */
+/* HORÁRIO */
 .qts-time{
 font-size: 28px;
 background: #f2f6ff;
@@ -2853,7 +2853,7 @@ this.openIntervalPicker(cell, index)
 return
 }
 
-// BAIXO â†’ vai pra prÃ³xima linha vÃ¡lida
+// BAIXO → vai pra próxima linha válida
 if(e.key==="ArrowDown"){
 e.preventDefault()
 
@@ -2864,7 +2864,7 @@ let next = document.querySelector(
 if(next) next.focus()
 }
 
-// CIMA â†’ mesma lÃ³gica
+// CIMA → mesma lógica
 if(e.key==="ArrowUp"){
 e.preventDefault()
 
@@ -2923,9 +2923,9 @@ e.stopPropagation()
     migrateDayKeys() {
         const aliasMap = {
             "Terça": "Terca",
-            "TerÃ§a": "Terca",
+            "Terça": "Terca",
             "Sábado": "Sabado",
-            "SÃ¡bado": "Sabado"
+            "Sábado": "Sabado"
         };
         const normalizeRows = (collection = []) =>
             collection.map((row) => {
@@ -3106,7 +3106,7 @@ cell.blur()
 return
 }
 
-// DIREITA (vai para primeira cÃ©lula da linha)
+// DIREITA (vai para primeira célula da linha)
 if(e.key==="ArrowRight"){
 e.preventDefault()
 
@@ -3128,7 +3128,7 @@ if(sel && sel.rangeCount > 0){
 
 const range = sel.getRangeAt(0)
 
-// se NÃƒO estÃ¡ no comeÃ§o â†’ nÃ£o sai
+// se NÃO está no começo → não sai
 if(range.startOffset !== 0){
 return
 }
@@ -3137,7 +3137,7 @@ return
 
 e.preventDefault()
 
-// pega a Ãºltima cÃ©lula vÃ¡lida da linha
+// pega a última célula válida da linha
 const cells = document.querySelectorAll(
 `#qtsGrid div[data-row="${row}"][data-col]:not([data-col="-1"])`
 )
@@ -3147,7 +3147,7 @@ cells[cells.length - 1].focus()
 }
 }
 
-// BAIXO (mantÃ©m coluna horÃ¡rio)
+// BAIXO (mantém coluna horário)
 if(e.key==="ArrowDown"){
 e.preventDefault()
 
@@ -3162,7 +3162,7 @@ next = document.querySelector(
 `#qtsGrid .qts-time[data-row="${r}"]`
 )
 
-// se nÃ£o achou horÃ¡rio, tenta cÃ©lula normal
+// se não achou horário, tenta célula normal
 if(!next){
 next = document.querySelector(
 `#qtsGrid div[data-row="${r}"][data-col="0"]`
@@ -3238,7 +3238,7 @@ m = 0
 
 if(!isNaN(h)){
 
-// NORMALIZA A CÃ‰LULA ATUAL
+// NORMALIZA A CÉLULA ATUAL
 const formatted =
 `${String(h).padStart(2,"0")}:${String(m).padStart(2,"0")}`
 
@@ -3374,7 +3374,7 @@ if(sel && sel.rangeCount > 0){
 
 const range = sel.getRangeAt(0)
 
-// forÃ§a leitura correta independente de nodes
+// força leitura correta independente de nodes
 const pre = range.cloneRange()
 pre.selectNodeContents(cell)
 pre.setEnd(range.startContainer, range.startOffset)
@@ -3591,7 +3591,7 @@ let endStudy = start + studyDuration
 let endBreak = endStudy + breakDuration
 
 return {
-start: endStudy,   // inÃ­cio da pausa
+start: endStudy,   // início da pausa
 end: endBreak      // fim da pausa
 }
 

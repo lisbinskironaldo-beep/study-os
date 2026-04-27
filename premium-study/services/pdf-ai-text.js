@@ -5,6 +5,8 @@
 
     const ENDPOINT = "/api/premium/pdf-extract";
     const MAX_INLINE_PDF_BYTES = 3 * 1024 * 1024;
+    const MAX_IMAGE_PAGES = 12;
+    const MAX_IMAGE_PAYLOAD_BYTES = 2800 * 1024;
 
     function blobToBase64(blob) {
         return new Promise((resolve, reject) => {
@@ -40,6 +42,21 @@
             const pdfBase64 = useInline
                 ? await blobToBase64(blob)
                 : "";
+            let pageImages = [];
+            let imageFallback = null;
+
+            if (!pdfBase64 && blob && window.PremiumStudyPdfTextExtractor && typeof window.PremiumStudyPdfTextExtractor.renderPageImages === "function") {
+                imageFallback = await window.PremiumStudyPdfTextExtractor.renderPageImages(blob, {
+                    maxPages: Number(payload.pageCount || 0) > 0
+                        ? Math.min(MAX_IMAGE_PAGES, Number(payload.pageCount || 0))
+                        : MAX_IMAGE_PAGES,
+                    maxTotalBytes: MAX_IMAGE_PAYLOAD_BYTES
+                });
+                pageImages = imageFallback && Array.isArray(imageFallback.pages)
+                    ? imageFallback.pages
+                    : [];
+            }
+
             const response = await fetch(ENDPOINT, {
                 method: "POST",
                 headers: {
@@ -52,7 +69,10 @@
                     pageCount: Number(payload.pageCount || 0) || 0,
                     localExtractedText: payload.localExtractedText || "",
                     byteSize,
-                    pdfBase64
+                    pdfBase64,
+                    pageImages,
+                    imageFallbackStatus: imageFallback && imageFallback.status ? imageFallback.status : "",
+                    renderedPageCount: imageFallback && imageFallback.renderedPages ? imageFallback.renderedPages : 0
                 })
             });
             const data = await response.json().catch(() => null);
@@ -74,6 +94,7 @@
     window.PremiumStudyPdfAiText = {
         ENDPOINT,
         MAX_INLINE_PDF_BYTES,
+        MAX_IMAGE_PAGES,
         requestFallback
     };
 })();

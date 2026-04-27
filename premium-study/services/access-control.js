@@ -60,7 +60,7 @@
         },
         [FEATURES.SCANNED_PDF_TEXT]: {
             title: "PDF escaneado vira texto no premium",
-            message: "No grÃ¡tis, PDFs textuais abrem no editor quando a leitura local funciona. Para converter PDF escaneado ou imagem em texto editÃ¡vel com IA, use o premium."
+            message: "No grátis, PDFs textuais abrem no editor quando a leitura local funciona. Para converter PDF escaneado ou imagem em texto editável com IA, use o premium."
         },
         [FEATURES.PREMIUM_LIBRARY]: {
             title: "Biblioteca premium",
@@ -87,7 +87,7 @@
             title: "Deixe a IA destacar os trechos principais.",
             lead: "O editor segue livre para uso manual. No premium, a IA encontra e marca os pontos mais importantes com contexto.",
             benefits: [
-                "Destaques automÃ¡ticos com contexto"
+                "Destaques automáticos com contexto"
             ],
             cta: "Liberar destaque com IA"
         },

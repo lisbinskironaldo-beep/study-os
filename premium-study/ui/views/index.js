@@ -381,29 +381,70 @@ ${renderSessionNote(state, "entry")}`;
     function renderAnalysisSummary(state) {
         const summary = buildAnalysisSummary(state);
         const pageCount = Math.max(0, Number(state.materialPageCount || 0));
+        const rawProgress = Math.max(0, Number(state.analysisProgress || 0));
+        const progress = rawProgress >= 92 ? 100 : Math.min(100, rawProgress);
+        const steps = [
+            {
+                threshold: 10,
+                label: "Recebido",
+                title: pageCount > 0 ? `${pageCount} paginas identificadas` : "Material recebido",
+                detail: pageCount >= 80 ? "Material extenso; vamos dividir por eixos." : "Medindo porte e densidade."
+            },
+            {
+                threshold: 36,
+                label: "Leitura",
+                title: "Extraindo texto-base",
+                detail: "Buscando titulos, secoes e topicos."
+            },
+            {
+                threshold: 62,
+                label: "Organizacao",
+                title: summary.strategyLabel,
+                detail: `${summary.estimatedBlocks} blocos previstos.`
+            },
+            {
+                threshold: 82,
+                label: "Construcao",
+                title: "Ferramentas de estudo",
+                detail: "Aula, esquemas e revisao."
+            },
+            {
+                threshold: 94,
+                label: "Finalizacao",
+                title: "Fechando sua trilha",
+                detail: "Liberando os modos."
+            }
+        ];
+        const nextStepIndex = steps.findIndex((step) => progress < step.threshold);
+        const currentIndex = nextStepIndex === -1
+            ? steps.length - 1
+            : Math.max(0, nextStepIndex);
 
         return `
 <div class="premium-analysis-summary">
-    <div class="premium-analysis-summary-grid">
-        <article class="premium-analysis-stat">
-            <span>Material</span>
-            <strong>${pageCount > 0 ? `${pageCount} pags` : "Em leitura"}</strong>
-            <small>${UI().escapeHtml(summary.materialSizeLabel)}</small>
-        </article>
-        <article class="premium-analysis-stat">
-            <span>Estrategia</span>
-            <strong>${UI().escapeHtml(summary.strategyLabel)}</strong>
-            <small>${UI().escapeHtml(summary.stageLabel)}</small>
-        </article>
-        <article class="premium-analysis-stat">
-            <span>Previsao inicial</span>
-            <strong>${summary.estimatedBlocks} blocos</strong>
-            <small>adaptados ao prazo e ao porte</small>
-        </article>
+    <div class="premium-analysis-timeline">
+        ${steps.map((step, index) => {
+        const isDone = progress >= step.threshold;
+        const isActive = index === currentIndex;
+        const previousThreshold = index === 0 ? 0 : steps[index - 1].threshold;
+        const stepRange = Math.max(1, step.threshold - previousThreshold);
+        const fill = isDone
+            ? 100
+            : isActive
+                ? Math.max(12, Math.min(96, Math.round(((progress - previousThreshold) / stepRange) * 100)))
+                : 0;
+        return `
+        <article class="premium-analysis-step ${isDone ? "is-done" : ""} ${isActive ? "is-active" : ""}" style="--analysis-step-fill:${fill}%">
+            <i aria-hidden="true"></i>
+            <span>${UI().escapeHtml(step.label)}</span>
+            <strong>${UI().escapeHtml(step.title)}</strong>
+            <p>${UI().escapeHtml(step.detail)}</p>
+        </article>`;
+    }).join("")}
     </div>
-    <div class="premium-analysis-notes">
-        ${summary.statusLines.map((line) => `<p>${UI().escapeHtml(line)}</p>`).join("")}
-        <p>${UI().escapeHtml(state.progressLabel || "Estamos organizando a trilha para liberar Aprender, Praticar e Prova.")}</p>
+    <div class="premium-analysis-current">
+        <span>${UI().escapeHtml(summary.stageLabel)}</span>
+        <strong>${UI().escapeHtml(state.progressLabel || "Estamos organizando a trilha para liberar Aprender, Praticar e Prova.")}</strong>
     </div>
 </div>`;
     }
@@ -411,20 +452,15 @@ ${renderSessionNote(state, "entry")}`;
     function analysis(state) {
         const targetScore = Number(state.targetScore || 0).toFixed(1);
         const examDateLabel = UI().formatDateLabel(state.examDate);
+        const progress = Math.max(10, Math.min(100, Number(state.analysisProgress || 0) >= 92 ? 100 : Number(state.analysisProgress || 0)));
 
         return `
 <section class="premium-loading-stage">
     <div class="premium-loading-orb" aria-hidden="true"></div>
     <strong>Extraindo o melhor conteúdo para você buscar nota ${targetScore} no dia ${UI().escapeHtml(examDateLabel)}.</strong>
     <p>Estamos montando uma trilha mais objetiva para o seu prazo e para o tempo diário que você informou.</p>
-    <div class="premium-loading-checks">
-        <span>Lendo material</span>
-        <span>Separando tópicos</span>
-        <span>Priorizando trilha</span>
-        <span>Montando plano</span>
-    </div>
     <div class="premium-loading-track">
-        <span style="width:${Math.max(10, state.analysisProgress)}%"></span>
+        <span style="width:${progress}%"></span>
     </div>
     ${renderAnalysisSummary(state)}
 </section>`;
@@ -434,17 +470,19 @@ ${renderSessionNote(state, "entry")}`;
         const targetScore = Number(state.targetScore || 0).toFixed(1);
         const examDateLabel = UI().formatDateLabel(state.examDate);
         const summary = buildAnalysisSummary(state);
+        const progress = Math.max(10, Math.min(100, Number(state.analysisProgress || 0) >= 92 ? 100 : Number(state.analysisProgress || 0)));
+        const labels = [
+            "Recebendo material",
+            "Lendo base textual",
+            "Separando topicos",
+            summary.stageLabel
+        ].filter((label, index, source) => label && source.indexOf(label) === index);
 
         return `
 <section class="premium-loading-stage">
     ${UI().loadingSignature({
-            labels: [
-                "Recebendo material",
-                "Lendo base textual",
-                "Separando topicos",
-                summary.stageLabel
-            ],
-            progress: state.analysisProgress
+            labels,
+            progress
         })}
     <strong>Extraindo o melhor conteúdo para você buscar nota ${targetScore} no dia ${UI().escapeHtml(examDateLabel)}.</strong>
     <p>Estamos montando uma trilha mais objetiva para o seu prazo e para o tempo diário que você informou.</p>
@@ -488,6 +526,38 @@ ${renderSessionNote(state, "mode-select")}`;
 </div>`;
     }
 
+    function getLearnTab(state) {
+        const allowed = new Set(["aula", "esquemas", "comparativos", "memorizar", "checklist", "casos"]);
+        return allowed.has(state.blockTab) ? state.blockTab : "aula";
+    }
+
+    function getLearnTabCounts(learn = {}) {
+        return {
+            aula: (Array.isArray(learn.lessonModules) && learn.lessonModules.length)
+                || (Array.isArray(learn.documentSections) ? learn.documentSections.length : 0),
+            esquemas: Array.isArray(learn.flowDiagrams) ? learn.flowDiagrams.length : 0,
+            comparativos: Array.isArray(learn.comparisonTables) ? learn.comparisonTables.length : 0,
+            memorizar: (Array.isArray(learn.mnemonics) ? learn.mnemonics.length : 0)
+                + (Array.isArray(learn.memoryDeck) ? learn.memoryDeck.length : 0)
+                + (Array.isArray(learn.memoryAnchors) ? learn.memoryAnchors.length : 0),
+            checklist: Array.isArray(learn.masteryChecklist) ? learn.masteryChecklist.length : 0,
+            casos: (Array.isArray(learn.caseStudies) ? learn.caseStudies.length : 0)
+                + (Array.isArray(learn.practicalCases) ? learn.practicalCases.length : 0)
+        };
+    }
+
+    function getLearnTabs(learn = {}) {
+        const counts = getLearnTabCounts(learn);
+        return [
+            { id: "aula", label: "Aula", shortLabel: "Aula", count: counts.aula || 1 },
+            { id: "esquemas", label: "Esquemas", shortLabel: "Esq.", count: counts.esquemas },
+            { id: "comparativos", label: "Comparativos", shortLabel: "Comp.", count: counts.comparativos },
+            { id: "memorizar", label: "Memorizar", shortLabel: "Mem.", count: counts.memorizar },
+            { id: "checklist", label: "Checklist", shortLabel: "Check", count: counts.checklist },
+            { id: "casos", label: "Casos", shortLabel: "Casos", count: counts.casos }
+        ].filter((tab) => tab.id === "aula" || Number(tab.count || 0) > 0);
+    }
+
     function renderLearnSections(sections = []) {
         return sections.map((section) => `
         <section class="premium-learn-section premium-learn-section-rich">
@@ -511,6 +581,40 @@ ${renderSessionNote(state, "mode-select")}`;
         : ""}
         </section>
     `).join("");
+    }
+
+    function renderLessonModules(learn = {}, documentSections = []) {
+        const modules = Array.isArray(learn.lessonModules) ? learn.lessonModules.filter(Boolean) : [];
+
+        if (modules.length) {
+            return `
+<div class="premium-learn-lesson-stack">
+    ${modules.map((module, index) => `
+    <section class="premium-learn-lesson">
+        <div class="premium-learn-lesson-index">${String(index + 1).padStart(2, "0")}</div>
+        <div class="premium-learn-lesson-body">
+            <span class="premium-detail-label">${UI().escapeHtml(module.objective || "Aula guiada")}</span>
+            <h3>${UI().escapeHtml(module.title || `Aula ${index + 1}`)}</h3>
+            ${(Array.isArray(module.paragraphs) ? module.paragraphs : []).map((paragraph) => `<p>${UI().escapeHtml(paragraph)}</p>`).join("")}
+            ${Array.isArray(module.takeaways) && module.takeaways.length
+        ? renderBulletList(module.takeaways)
+        : ""}
+        </div>
+    </section>`).join("")}
+</div>`;
+        }
+
+        if (documentSections.length) {
+            return renderDocumentSections(documentSections);
+        }
+
+        return `
+<section class="premium-learn-section premium-learn-section-rich premium-learn-section-document">
+    <span class="premium-detail-label">Aula guiada</span>
+    <h3>Resumo estruturado</h3>
+    <p>${UI().escapeHtml(learn.summary || "Este bloco ainda nao recebeu uma aula detalhada.")}</p>
+    ${learn.intro ? `<p>${UI().escapeHtml(learn.intro)}</p>` : ""}
+</section>`;
     }
 
     function renderInsightCard(label, title, items = [], tone = "default") {
@@ -620,31 +724,116 @@ ${renderSessionNote(state, "mode-select")}`;
         }
 
         return `
-<section class="premium-learn-section premium-learn-section-rich premium-learn-mnemonics">
-    <span class="premium-detail-label">Memorizacao ativa</span>
-    <h3>Ganchos para lembrar sem decorar no escuro</h3>
-    <div class="premium-learn-mnemonic-grid">
+<div class="premium-learn-mnemonic-grid">
         ${filtered.map((item) => `
         <article class="premium-learn-mnemonic">
             <span>${UI().escapeHtml(item.title || "Mnemonico")}</span>
             <strong>${UI().escapeHtml(item.formula || "")}</strong>
             ${item.explanation ? `<p>${UI().escapeHtml(item.explanation)}</p>` : ""}
         </article>`).join("")}
-    </div>
-</section>`;
+    </div>`;
     }
 
-    function renderMasteryChecklist(items = []) {
+    function renderMemoryDeck(cards = [], state = {}, blockId = "") {
+        const filtered = Array.isArray(cards) ? cards.filter(Boolean).slice(0, 8) : [];
+        if (!filtered.length) {
+            return "";
+        }
+        const revealed = state.learnInteractions?.revealedMemory?.[blockId] || {};
+
+        return `
+<div class="premium-learn-memory-deck">
+    ${filtered.map((card, index) => {
+        const isRevealed = Boolean(revealed[String(index)]);
+        return `
+    <article class="premium-learn-memory-card ${isRevealed ? "is-revealed" : ""}">
+        <span>Recordar</span>
+        <strong>${UI().escapeHtml(card.front || "")}</strong>
+        ${isRevealed && card.back ? `<p>${UI().escapeHtml(card.back)}</p>` : ""}
+        ${isRevealed && card.cue ? `<small>${UI().escapeHtml(card.cue)}</small>` : ""}
+        <button type="button" class="premium-learn-mini-action" data-premium-action="toggle-memory-card" data-block-id="${UI().escapeHtml(blockId)}" data-item-index="${index}">
+            ${isRevealed ? "Ocultar" : "Revelar"}
+        </button>
+    </article>`;
+    }).join("")}
+</div>`;
+    }
+
+    function renderCaseStudies(caseStudies = [], practicalCases = [], state = {}, blockId = "") {
+        const structured = Array.isArray(caseStudies) ? caseStudies.filter(Boolean).slice(0, 5) : [];
+        const loose = Array.isArray(practicalCases) ? practicalCases.filter(Boolean).slice(0, 5) : [];
+        const revealed = state.learnInteractions?.revealedCases?.[blockId] || {};
+
+        if (structured.length) {
+            return `
+<div class="premium-learn-case-grid">
+    ${structured.map((caseStudy, index) => {
+        const isRevealed = Boolean(revealed[String(index)]);
+        return `
+    <article class="premium-learn-case ${isRevealed ? "is-revealed" : ""}">
+        <span class="premium-detail-label">${UI().escapeHtml(caseStudy.title || "Caso aplicado")}</span>
+        ${caseStudy.scenario ? `<strong>${UI().escapeHtml(caseStudy.scenario)}</strong>` : ""}
+        ${isRevealed && caseStudy.analysis ? `<p>${UI().escapeHtml(caseStudy.analysis)}</p>` : ""}
+        ${isRevealed && caseStudy.lesson ? `<small>${UI().escapeHtml(caseStudy.lesson)}</small>` : ""}
+        <button type="button" class="premium-learn-mini-action" data-premium-action="toggle-learn-case" data-block-id="${UI().escapeHtml(blockId)}" data-item-index="${index}">
+            ${isRevealed ? "Ocultar analise" : "Ver analise"}
+        </button>
+    </article>`;
+    }).join("")}
+</div>`;
+        }
+
+        if (loose.length) {
+            const activeBlock = Store().getActiveBlock() || {};
+            const learn = activeBlock.learn || {};
+            const anchors = [
+                ...(Array.isArray(learn.keyConcepts) ? learn.keyConcepts.slice(0, 3) : []),
+                ...(Array.isArray(learn.hotPoints) ? learn.hotPoints.slice(0, 2) : [])
+            ].filter(Boolean);
+
+            return `
+<div class="premium-learn-case-grid">
+    ${loose.map((caseText, index) => {
+        const itemKey = `loose-${index}`;
+        const isRevealed = Boolean(revealed[itemKey]);
+        return `
+    <article class="premium-learn-case ${isRevealed ? "is-revealed" : ""}">
+        <span class="premium-detail-label">Caso aplicado</span>
+        <strong>${UI().escapeHtml(caseText)}</strong>
+        ${isRevealed ? `
+        <p>Comece identificando qual conceito do bloco resolve a situação. Depois conecte o fato narrado ao critério central do material, evitando responder só por intuição.</p>
+        ${anchors.length ? `<small>Conceitos de apoio: ${UI().escapeHtml(anchors.join("; "))}</small>` : ""}` : ""}
+        <button type="button" class="premium-learn-mini-action" data-premium-action="toggle-learn-case" data-block-id="${UI().escapeHtml(blockId)}" data-item-index="${UI().escapeHtml(itemKey)}">
+            ${isRevealed ? "Ocultar caminho" : "Ver caminho de resposta"}
+        </button>
+    </article>`;
+    }).join("")}
+</div>`;
+        }
+
+        return "";
+    }
+
+    function renderMasteryChecklist(items = [], state = {}, blockId = "") {
         const filtered = Array.isArray(items) ? items.filter(Boolean).slice(0, 7) : [];
         if (!filtered.length) {
             return "";
         }
+        const checked = state.learnInteractions?.checked?.[blockId] || {};
+        const doneCount = filtered.filter((_, index) => checked[String(index)]).length;
 
         return `
 <section class="premium-learn-section premium-learn-section-rich premium-learn-checklist">
     <span class="premium-detail-label">Checklist de dominio</span>
     <h3>Antes de seguir, confira se voce consegue</h3>
-    ${renderBulletList(filtered)}
+    <div class="premium-learn-check-progress">${doneCount}/${filtered.length} marcados</div>
+    <div class="premium-learn-check-items">
+        ${filtered.map((item, index) => `
+        <button type="button" class="premium-learn-check-item ${checked[String(index)] ? "is-checked" : ""}" data-premium-action="toggle-learn-check" data-block-id="${UI().escapeHtml(blockId)}" data-item-index="${index}">
+            <span>${checked[String(index)] ? "✓" : ""}</span>
+            <strong>${UI().escapeHtml(item)}</strong>
+        </button>`).join("")}
+    </div>
 </section>`;
     }
 
@@ -656,6 +845,73 @@ ${renderSessionNote(state, "mode-select")}`;
             renderMnemonics(learn.mnemonics),
             renderMasteryChecklist(learn.masteryChecklist)
         ].filter(Boolean).join("");
+    }
+
+    function renderLearnTabContent(block, state, documentSections = []) {
+        const learn = block.learn || {};
+        const activeTab = getLearnTab(state);
+        const blockId = block.id || "";
+
+        if (activeTab === "aula") {
+            return `
+<section class="premium-learn-workspace-panel premium-learn-workspace-panel-aula">
+    ${renderLessonModules(learn, documentSections)}
+</section>`;
+        }
+
+        if (activeTab === "esquemas") {
+            const flows = renderFlowDiagrams(learn.flowDiagrams);
+            return `
+<section class="premium-learn-workspace-panel premium-learn-workspace-panel-tools">
+    ${flows || renderEmptyLearnTool("Esquemas", "Este bloco nao trouxe um fluxo proprio. Use a aula e o checklist para consolidar o caminho principal.")}
+</section>`;
+        }
+
+        if (activeTab === "comparativos") {
+            const tables = renderComparisonTables(learn.comparisonTables);
+            return `
+<section class="premium-learn-workspace-panel premium-learn-workspace-panel-tools">
+    ${tables || renderInsightCard("Comparacoes", "O que nao pode ser confundido", learn.connections, "connections") || renderEmptyLearnTool("Comparativos", "Este bloco nao tem tabela propria. Quando o assunto tiver conceitos parecidos, a IA separa as diferencas aqui.")}
+</section>`;
+        }
+
+        if (activeTab === "memorizar") {
+            const content = [
+                renderMnemonics(learn.mnemonics),
+                renderMemoryDeck(learn.memoryDeck, state, blockId),
+                !Array.isArray(learn.mnemonics) || !learn.mnemonics.length
+                    ? renderInsightCard("Ganchos", "Memoria rapida", learn.memoryAnchors, "memory")
+                    : ""
+            ].filter(Boolean).join("");
+
+            return `
+<section class="premium-learn-workspace-panel premium-learn-workspace-panel-memory">
+    ${content || renderEmptyLearnTool("Memorizar", "Este bloco nao exigiu mnemonicos. Quando houver listas, etapas ou formulas, os cards aparecem aqui.")}
+</section>`;
+        }
+
+        if (activeTab === "checklist") {
+            const checklist = renderMasteryChecklist(learn.masteryChecklist, state, blockId);
+            return `
+<section class="premium-learn-workspace-panel premium-learn-workspace-panel-tools">
+    ${checklist || renderEmptyLearnTool("Checklist", "Ainda nao ha checklist especifico para este bloco. Use a revisao em 5 pontos para uma checagem rapida.")}
+</section>`;
+        }
+
+        const cases = renderCaseStudies(learn.caseStudies, learn.practicalCases, state, blockId);
+        return `
+<section class="premium-learn-workspace-panel premium-learn-workspace-panel-cases">
+    ${cases || renderEmptyLearnTool("Casos", "Este bloco nao trouxe exemplos aplicados separados. Quando o tema pedir aplicacao, os casos aparecem aqui.")}
+</section>`;
+    }
+
+    function renderEmptyLearnTool(title, message) {
+        return `
+<article class="premium-learn-empty-tool">
+    <span class="premium-detail-label">${UI().escapeHtml(title)}</span>
+    <strong>Sem ferramenta especifica neste bloco</strong>
+    <p>${UI().escapeHtml(message)}</p>
+</article>`;
     }
 
     function renderAssistPanel(block, assistMode) {
@@ -752,7 +1008,14 @@ ${renderSessionNote(state, "mode-select")}`;
     }
 
     function learnMap(state) {
+        const pageCount = Math.max(0, Number(state.materialPageCount || 0));
+        const blockCount = Array.isArray(state.blocks) ? state.blocks.length : 0;
         return `
+<section class="premium-learn-coverage">
+    <span class="premium-panel-kicker">Cobertura do material</span>
+    <strong>${blockCount} ${blockCount === 1 ? "bloco" : "blocos"} preparados${pageCount ? ` para ${pageCount} paginas` : ""}</strong>
+    <p>${blockCount <= 4 && pageCount >= 80 ? "Este material ainda parece compactado demais; gere novamente para uma cobertura premium mais ampla." : "Escolha uma frente para entrar no workspace de estudo."}</p>
+</section>
 <section class="premium-learn-map-grid">
     ${state.blocks.map((block, index) => {
         const progress = block.progress || {};
@@ -782,6 +1045,14 @@ ${renderSessionNote(state, "mode-select")}`;
         const block = Store().getActiveBlock();
         const nextBlockId = Store().getNextBlockId();
         const learn = block.learn || {};
+        const tabs = getLearnTabs(learn);
+        const requestedTab = getLearnTab(state);
+        const activeTab = tabs.some((tab) => tab.id === requestedTab)
+            ? requestedTab
+            : "aula";
+        const effectiveState = activeTab === state.blockTab
+            ? state
+            : { ...state, blockTab: activeTab };
         const documentSections = Array.isArray(learn.documentSections) && learn.documentSections.length
             ? learn.documentSections
             : [];
@@ -790,23 +1061,42 @@ ${renderSessionNote(state, "mode-select")}`;
 <section class="premium-learn-reader ${state.blockFullScreen ? "is-fullscreen" : "is-page"}">
     ${state.blockFullScreen ? `<div class="premium-learn-reader-scrim" aria-hidden="true"></div>` : ""}
     <div class="premium-learn-focus premium-learn-reader-panel">
-        <article class="premium-learn-article">
-            <div class="premium-learn-reader-head">
-                <div class="premium-learn-reader-copy">
-                    <span class="premium-panel-kicker">Aprender</span>
-                    <h2>${UI().escapeHtml(block.title)}</h2>
-                    <p class="premium-learn-lead">${UI().escapeHtml(block.subtitle)}</p>
+        <article class="premium-learn-workspace">
+            <aside class="premium-learn-workspace-rail" aria-label="Assuntos do material">
+                <span class="premium-panel-kicker">Aprender</span>
+                <h2>${UI().escapeHtml(block.title)}</h2>
+                <p>${UI().escapeHtml(block.subtitle)}</p>
+                <div class="premium-learn-block-rail">
+                    ${state.blocks.map((item, index) => `
+                    <button type="button" class="premium-learn-rail-item ${item.id === block.id ? "is-active" : ""}" data-premium-action="open-block" data-block-id="${item.id}">
+                        <span>${String(index + 1).padStart(2, "0")}</span>
+                        <strong>${UI().escapeHtml(item.title)}</strong>
+                    </button>`).join("")}
                 </div>
-                <div class="premium-inline-actions premium-inline-actions-contextual premium-learn-reader-toggles">
+            </aside>
+            <div class="premium-learn-workspace-main">
+                <header class="premium-learn-workspace-head">
+                    <div>
+                        <span class="premium-panel-kicker">Workspace de estudo</span>
+                        <h2>${UI().escapeHtml(block.title)}</h2>
+                        <p class="premium-learn-lead">${UI().escapeHtml(block.subtitle)}</p>
+                    </div>
                     <button type="button" class="premium-tab ${state.blockFullScreen ? "" : "is-active"}" data-premium-action="${state.blockFullScreen ? "collapse-block-reader" : "expand-block-reader"}">
                         ${state.blockFullScreen ? "Sair da tela cheia" : "Abrir em tela cheia"}
                     </button>
-                </div>
+                </header>
+                <nav class="premium-learn-workspace-tabs" aria-label="Ferramentas de aprender">
+                    ${tabs.map((tab) => `
+                    <button type="button" class="premium-learn-tool-tab ${activeTab === tab.id ? "is-active" : ""}" data-premium-action="set-tab" data-tab-id="${tab.id}">
+                        <span>${UI().escapeHtml(tab.label)}</span>
+                        <small>${UI().escapeHtml(tab.shortLabel)}</small>
+                        <em>${Number(tab.count || 0)}</em>
+                    </button>`).join("")}
+                </nav>
+                ${activeTab === "aula" ? renderBlockInsightGrid(block) : ""}
+                ${renderLearnTabContent(block, effectiveState, documentSections)}
+                ${assistPanel}
             </div>
-            ${renderBlockInsightGrid(block)}
-            ${renderDocumentSections(documentSections)}
-            ${renderLearningStudio(block)}
-            ${assistPanel}
         </article>
         ${UI().actionBar([
             { action: "ai-explain-better", label: "Explicar melhor", variant: state.blockAssistMode === "explain" ? "secondary" : "ghost" },
@@ -1021,7 +1311,7 @@ ${renderSessionNote(state, "mode-select")}`;
             ` : `
                 <div class="premium-empty-library">
                     <strong>Sua biblioteca premium fica aqui.</strong>
-                    <p>Quando você carregar materiais, eles passam a ficar guardados nesta Ã¡rea para retomada futura.</p>
+                    <p>Quando você carregar materiais, eles passam a ficar guardados nesta área para retomada futura.</p>
                 </div>
             `}
         </article>
@@ -1604,9 +1894,9 @@ ${renderSessionNote(state, "pdf-workbench")}`;
             return `
 <section class="premium-result-shell">
     <article class="premium-result-hero premium-result-hero-compact">
-        <span class="premium-detail-label">Questionário concluÃ­do</span>
+        <span class="premium-detail-label">Questionário concluído</span>
         <strong>${seriesMeta.completedCount}/${seriesMeta.freeSeriesLimit}</strong>
-        <p>${seriesMeta.isAllComplete ? "VocÃª concluiu as 3 rodadas grátis deste questionÃ¡rio." : "VocÃª terminou esta rodada. Pode seguir para a prÃ³xima grátis."}</p>
+        <p>${seriesMeta.isAllComplete ? "Você concluiu as 3 rodadas grátis deste questionário." : "Você terminou esta rodada. Pode seguir para a próxima grátis."}</p>
     </article>
     ${UI().actionBar([
         { action: "open-practice", label: "Voltar para prática", variant: "secondary" },
@@ -1732,7 +2022,7 @@ ${renderSessionNote(state, "pdf-workbench")}`;
     <article class="premium-result-hero premium-result-hero-compact">
         <span class="premium-detail-label">Flashcards concluídos</span>
         <strong>${seriesMeta.completedCount}/${seriesMeta.freeSeriesLimit}</strong>
-        <p>${seriesMeta.isAllComplete ? "VocÃª concluiu as 3 rodadas grátis de flashcards." : `Você marcou ${isDone} cards como entendidos nesta rodada.`}</p>
+        <p>${seriesMeta.isAllComplete ? "Você concluiu as 3 rodadas grátis de flashcards." : `Você marcou ${isDone} cards como entendidos nesta rodada.`}</p>
     </article>
     ${UI().actionBar([
         { action: "open-practice", label: "Voltar para prática", variant: "secondary" },
@@ -1773,7 +2063,7 @@ ${renderSessionNote(state, "pdf-workbench")}`;
     <article class="premium-result-hero premium-result-hero-compact">
         <span class="premium-detail-label">Mini prova do assunto</span>
         <strong>${block.exam.questions.length || block.exam.baseCount || 5} questões</strong>
-        <p>${hasHistory ? "Refaça a mesma mini prova deste assunto. Para novas questões e variaÃ§Ãµes, o premium libera extras." : "Gere o pacote base deste assunto agora. Para um volume maior, o premium libera extras."}</p>
+        <p>${hasHistory ? "Refaça a mesma mini prova deste assunto. Para novas questões e variações, o premium libera extras." : "Gere o pacote base deste assunto agora. Para um volume maior, o premium libera extras."}</p>
     </article>
     ${UI().actionBar([
         { action: hasHistory ? "retry-mini-exam" : "generate-mini-exam", label: hasHistory ? "Refazer mini prova" : `Gerar ${block.exam.questions.length || block.exam.baseCount || 5} questões`, variant: "primary" },
@@ -1923,22 +2213,24 @@ ${renderSessionNote(state, "pdf-workbench")}`;
         }
 
         return `
-<section class="premium-result-shell">
+<section class="premium-result-shell premium-level-exam-setup">
     <article class="premium-result-hero premium-result-hero-compact">
         <span class="premium-detail-label">Prova de nível premium</span>
         <strong>${exam.questionCount || 10} questões</strong>
         <p>Escolha o tamanho da prova para medir sua prontidão geral no PDF.</p>
     </article>
-    <div class="premium-inline-actions premium-inline-actions-contextual">
-        ${counts.map((count) => `
-        <button type="button" class="premium-action ${Number(exam.questionCount || 10) === count ? "premium-action-primary" : "premium-action-secondary"}" data-premium-action="select-level-exam-count" data-item-value="${count}">
-            ${count} questões
-        </button>`).join("")}
-    </div>
-    ${UI().actionBar([
-        { action: questions.length ? "start-level-exam" : "generate-level-exam", label: questions.length ? "Comecar prova" : "Gerar prova premium", variant: "primary" },
+    <div class="premium-level-exam-actions">
+        <div class="premium-level-exam-counts" aria-label="Tamanho da prova">
+            ${counts.map((count) => `
+            <button type="button" class="premium-action ${Number(exam.questionCount || 10) === count ? "premium-action-primary" : "premium-action-secondary"}" data-premium-action="select-level-exam-count" data-item-value="${count}">
+                ${count} questões
+            </button>`).join("")}
+        </div>
+        ${UI().actionBar([
+        { action: questions.length ? "start-level-exam" : "generate-level-exam", label: questions.length ? "Entrar nas questões" : `Gerar e começar ${exam.questionCount || 10} questões`, variant: "primary" },
         { action: "back-to-mode-select", label: "Voltar para modos", variant: "secondary" }
     ])}
+    </div>
     ${renderSessionNote(state, "level-exam")}
 </section>`;
     }
@@ -1950,7 +2242,7 @@ ${renderSessionNote(state, "pdf-workbench")}`;
     <article class="premium-result-hero premium-result-hero-compact">
         <span class="premium-detail-label">Progresso geral</span>
         <strong>${progress.ratio}%</strong>
-        <p>${progress.completed} etapas concluÃ­das de ${progress.total} nesta trilha.</p>
+        <p>${progress.completed} etapas concluídas de ${progress.total} nesta trilha.</p>
     </article>
     <div class="premium-trail-list">
         ${state.blocks.map((block) => `

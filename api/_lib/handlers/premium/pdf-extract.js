@@ -8,6 +8,9 @@ const DEFAULT_MODEL = process.env.ROTANOTA_PDF_TEXT_AI_MODEL || "gemini-2.5-flas
 const FALLBACK_MODEL = process.env.ROTANOTA_PDF_TEXT_AI_FALLBACK_MODEL || "gemini-2.5-flash";
 const MAX_INLINE_PDF_BYTES = 3 * 1024 * 1024;
 const MAX_SERVER_PDF_BYTES = 12 * 1024 * 1024;
+const MAX_PAGE_IMAGES = 16;
+const MAX_PAGE_IMAGE_BYTES = 450 * 1024;
+const MAX_PAGE_IMAGES_TOTAL_BYTES = 3600 * 1024;
 const MAX_HINT_CHARS = 6000;
 
 function cleanText(value, fallback = "") {
@@ -39,6 +42,7 @@ function toBase64(bufferLike) {
 function buildPrompt(body = {}) {
     const pageCount = Number(body.pageCount || 0) || 0;
     const extractedHint = cleanText(body.localExtractedText).slice(0, MAX_HINT_CHARS);
+    const imageCount = Array.isArray(body.pageImages) ? body.pageImages.length : 0;
 
     return [
         "Voce e um extrator fiel de PDF para estudo.",
@@ -53,6 +57,7 @@ function buildPrompt(body = {}) {
         "",
         `Material: ${cleanText(body.materialName, "material.pdf")}`,
         `Paginas esperadas: ${pageCount || "nao informado"}`,
+        imageCount ? `Paginas renderizadas como imagem para OCR visual: ${imageCount}` : "",
         "",
         extractedHint
             ? `Texto local parcial para apoio (nao trate como fonte unica):\n${extractedHint}`
@@ -83,14 +88,30 @@ async function callGeminiPdfExtraction(body = {}) {
     const parts = [
         {
             text: prompt
-        },
-        {
+        }
+    ];
+    const images = normalizePageImages(body.pageImages);
+
+    if (body.pdfBase64) {
+        parts.push({
             inlineData: {
                 mimeType: "application/pdf",
                 data: body.pdfBase64
             }
-        }
-    ];
+        });
+    } else {
+        images.forEach((image) => {
+            parts.push({
+                text: `Pagina ${image.pageNumber}:`
+            });
+            parts.push({
+                inlineData: {
+                    mimeType: image.mimeType,
+                    data: image.data
+                }
+            });
+        });
+    }
 
     for (const model of [DEFAULT_MODEL, FALLBACK_MODEL]) {
         if (!model || attemptedModels.includes(model)) {
@@ -124,6 +145,40 @@ async function callGeminiPdfExtraction(body = {}) {
         ...lastResult,
         attemptedModels
     };
+}
+
+function normalizePageImages(items) {
+    if (!Array.isArray(items)) {
+        return [];
+    }
+
+    const images = [];
+    let totalBytes = 0;
+
+    for (const item of items.slice(0, MAX_PAGE_IMAGES)) {
+        const data = cleanText(item && item.data);
+        const mimeType = cleanText(item && item.mimeType, "image/jpeg");
+
+        if (!data || !/^image\/(jpeg|jpg|png|webp)$/i.test(mimeType)) {
+            continue;
+        }
+
+        const byteSize = Math.ceil((data.length * 3) / 4);
+
+        if (byteSize > MAX_PAGE_IMAGE_BYTES || totalBytes + byteSize > MAX_PAGE_IMAGES_TOTAL_BYTES) {
+            continue;
+        }
+
+        totalBytes += byteSize;
+        images.push({
+            pageNumber: Number(item && item.pageNumber) || images.length + 1,
+            mimeType: mimeType.toLowerCase() === "image/jpg" ? "image/jpeg" : mimeType,
+            data,
+            byteSize
+        });
+    }
+
+    return images;
 }
 
 async function loadPdfBase64FromServerAsset(assetId, req) {
@@ -230,12 +285,13 @@ module.exports = async function handler(req, res) {
     let pdfBase64 = cleanText(body.pdfBase64);
     let byteSize = Number(body.byteSize || 0) || 0;
     const assetId = cleanText(body.assetId);
+    const pageImages = normalizePageImages(body.pageImages);
 
     if (pdfBase64 && byteSize > MAX_INLINE_PDF_BYTES) {
         pdfBase64 = "";
     }
 
-    if (!pdfBase64 && assetId) {
+    if (!pdfBase64 && assetId && !pageImages.length) {
         const remotePdf = await loadPdfBase64FromServerAsset(assetId, req);
 
         if (!remotePdf.ok) {
@@ -251,11 +307,11 @@ module.exports = async function handler(req, res) {
         byteSize = remotePdf.byteSize || byteSize;
     }
 
-    if (!pdfBase64) {
+    if (!pdfBase64 && !pageImages.length) {
         return sendJson(res, 400, {
             ok: false,
             status: "missing_pdf_data",
-            message: "Nao recebi os bytes do PDF para a leitura por IA.",
+            message: "Nao recebi os bytes do PDF nem imagens das paginas para a leitura por IA.",
             promptVersion: PROMPT_VERSION,
             maxInlinePdfBytes: MAX_INLINE_PDF_BYTES
         });
@@ -264,7 +320,8 @@ module.exports = async function handler(req, res) {
     const result = await callGeminiPdfExtraction({
         ...body,
         materialName,
-        pdfBase64
+        pdfBase64,
+        pageImages
     });
 
     if (!result.ok) {
@@ -305,7 +362,7 @@ module.exports = async function handler(req, res) {
     return sendJson(res, 200, {
         ok: true,
         status: "extracted_ai",
-        source: assetId && !cleanText(body.pdfBase64) ? "ai_server_pdf" : "ai_inline_pdf",
+        source: pageImages.length ? "ai_page_images" : assetId && !cleanText(body.pdfBase64) ? "ai_server_pdf" : "ai_inline_pdf",
         provider: "gemini",
         providerStatus: result.providerStatus || "",
         model: result.model || DEFAULT_MODEL,

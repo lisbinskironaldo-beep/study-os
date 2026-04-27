@@ -5,6 +5,7 @@
 
     const PROMPT_VERSION = "rotanota-pdf-focused-ai-v1";
     const ENDPOINT = "/api/premium/ai-generate";
+    const REQUEST_TIMEOUT_MS = 240000;
     const state = {
         configured: null,
         model: ""
@@ -86,6 +87,10 @@
         const normalizedTask = task === TASKS.PLAN_FROM_MATERIAL
             ? TASKS.FREE_BUNDLE_FROM_MATERIAL
             : task;
+        const controller = typeof AbortController !== "undefined" ? new AbortController() : null;
+        const timeoutId = controller
+            ? window.setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS)
+            : null;
 
         try {
             const response = await fetch(ENDPOINT, {
@@ -93,6 +98,7 @@
                 headers: {
                     "Content-Type": "application/json"
                 },
+                signal: controller ? controller.signal : undefined,
                 body: JSON.stringify({
                     ...payload,
                     task: normalizedTask
@@ -113,13 +119,19 @@
             state.configured = false;
             return {
                 ok: false,
-                status: "network_error",
+                status: error && error.name === "AbortError" ? "request_timeout" : "network_error",
                 task: normalizedTask,
                 promptVersion: PROMPT_VERSION,
                 cacheKey: buildCacheKey(normalizedTask, payload),
                 contract,
-                message: "Nao consegui acessar a IA agora. Vou manter o pacote base local para voce seguir estudando."
+                message: error && error.name === "AbortError"
+                    ? "A IA demorou demais para montar o pacote completo. Mantive uma base local do texto extraido para voce nao ficar travado."
+                    : "Nao consegui acessar a IA agora. Vou manter o pacote base local para voce seguir estudando."
             };
+        } finally {
+            if (timeoutId) {
+                window.clearTimeout(timeoutId);
+            }
         }
     }
 

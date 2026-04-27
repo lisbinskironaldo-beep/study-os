@@ -137,14 +137,30 @@
         if (!activity || !activity.active) {
             return "";
         }
+        const labels = Array.isArray(activity.labels) ? activity.labels.filter(Boolean) : [];
+        const progressValue = Number.isFinite(Number(activity.progress))
+            ? Math.max(0, Math.min(100, Number(activity.progress)))
+            : null;
+        const objectiveTotal = Number(activity.objectiveTotal || labels.length || 0);
+        const objectiveIndex = objectiveTotal
+            ? Math.max(1, Math.min(objectiveTotal, Number(activity.objectiveIndex || Math.ceil(((progressValue || 12) / 100) * objectiveTotal)) || 1))
+            : 0;
+        const objectiveLabel = activity.objectiveLabel || (objectiveIndex ? labels[objectiveIndex - 1] : "");
 
         return `
 <div class="premium-shell-processing" aria-live="polite" aria-busy="true">
     <article class="premium-shell-processing-card">
         <span class="premium-panel-kicker">${escapeHtml(activity.kicker || "Preparando os modos")}</span>
         ${loadingSignature(activity, { compact: true })}
+        ${objectiveTotal ? `
+        <div class="premium-processing-objective">
+            <span>Etapa ${objectiveIndex} de ${objectiveTotal}</span>
+            <strong>${escapeHtml(objectiveLabel || "Organizando a proxima etapa")}</strong>
+            ${progressValue === null ? "" : `<em>${Math.round(progressValue)}%</em>`}
+        </div>` : ""}
         <strong>${escapeHtml(activity.title || "Estamos organizando Aprender, Praticar e Prova")}</strong>
         <p>${escapeHtml(activity.message || "Aguarde um instante enquanto o sistema prepara a base antes de abrir a proxima tela.")}</p>
+        <small class="premium-processing-footnote">PDFs escaneados podem levar alguns minutos. Voce pode aguardar aqui; o RotaNota continua trabalhando para entregar a versao mais completa.</small>
     </article>
 </div>`;
     }

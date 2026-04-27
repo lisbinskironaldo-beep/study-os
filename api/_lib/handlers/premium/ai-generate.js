@@ -68,23 +68,23 @@ function inferMaterialProfile(body = {}) {
     const textSample = truncateText(body.extractedText, 12000);
     const combined = `${materialName} ${textSample}`.toLowerCase();
 
-    if (/(codigo|c[oÃ³]digo|lei|decreto|estatuto|clt|constitui|art\.|artigo|penal|civil|processual|tribut|administrativo)/i.test(combined)) {
+    if (/(codigo|c[oó]digo|lei|decreto|estatuto|clt|constitui|art\.|artigo|penal|civil|processual|tribut|administrativo)/i.test(combined)) {
         return "juridico";
     }
 
-    if (/(formula|f[oÃ³]rmula|calculo|c[aÃ¡]lculo|equacao|equa[cÃ§][aÃ£]o|matematica|matem[aÃ¡]tica|fisica|f[iÃ­]sica|quimica|qu[iÃ­]mica)/i.test(combined)) {
+    if (/(formula|f[oó]rmula|calculo|c[aá]lculo|equacao|equa[cç][aã]o|matematica|matem[aá]tica|fisica|f[ií]sica|quimica|qu[ií]mica)/i.test(combined)) {
         return "exatas";
     }
 
-    if (/(anatomia|fisiologia|patologia|diagn[oÃ³]stico|clinico|cl[iÃ­]nico|biologia|medicina|enfermagem|farmacologia)/i.test(combined)) {
+    if (/(anatomia|fisiologia|patologia|diagn[oó]stico|clinico|cl[ií]nico|biologia|medicina|enfermagem|farmacologia)/i.test(combined)) {
         return "saude_biologicas";
     }
 
-    if (/(hist[oÃ³]ria|geografia|sociologia|filosofia|autor|teoria|revolu[cÃ§][aÃ£]o|linha do tempo)/i.test(combined)) {
+    if (/(hist[oó]ria|geografia|sociologia|filosofia|autor|teoria|revolu[cç][aã]o|linha do tempo)/i.test(combined)) {
         return "humanas";
     }
 
-    if (/(edital|conte[uÃº]do program[aÃ¡]tico|cronograma|cargo|banca|concurso)/i.test(combined)) {
+    if (/(edital|conte[uú]do program[aá]tico|cronograma|cargo|banca|concurso)/i.test(combined)) {
         return "edital";
     }
 
@@ -97,15 +97,15 @@ function buildBundlePlan(body, premiumActive) {
     const daysUntilExam = computeDaysUntilExam(body.examDate);
     const materialProfile = inferMaterialProfile(body);
     const legalMaterial = materialProfile === "juridico" || looksLikeLargeLegalMaterial(body.materialName);
-    const tierMax = premiumActive ? 12 : 4;
-    let desiredBlockCount = premiumActive ? 6 : 3;
+    const tierMax = premiumActive ? 18 : 4;
+    let desiredBlockCount = premiumActive ? 8 : 3;
 
     if (pageCount >= 120) {
-        desiredBlockCount += premiumActive ? 4 : 1;
+        desiredBlockCount += premiumActive ? 7 : 1;
     } else if (pageCount >= 80) {
-        desiredBlockCount += premiumActive ? 3 : 1;
+        desiredBlockCount += premiumActive ? 5 : 1;
     } else if (pageCount >= 40) {
-        desiredBlockCount += premiumActive ? 2 : 1;
+        desiredBlockCount += premiumActive ? 4 : 1;
     } else if (pageCount >= 20) {
         desiredBlockCount += 1;
     } else if (pageCount >= 8 && !premiumActive) {
@@ -136,9 +136,9 @@ function buildBundlePlan(body, premiumActive) {
 
     desiredBlockCount = clampNumber(
         body.desiredBlockCount || desiredBlockCount,
-        premiumActive ? 5 : 2,
+        premiumActive && pageCount >= 120 ? 12 : premiumActive && pageCount >= 80 ? 10 : premiumActive ? 6 : 2,
         tierMax,
-        premiumActive ? 7 : 3
+        premiumActive && pageCount >= 120 ? 15 : premiumActive && pageCount >= 80 ? 13 : premiumActive ? 9 : 3
     );
 
     const planMode = daysUntilExam !== null && daysUntilExam <= 14
@@ -366,6 +366,61 @@ function normalizeMnemonic(mnemonic, index) {
     };
 }
 
+function normalizeLessonModule(module, index) {
+    const paragraphs = asArray(module && module.paragraphs)
+        .map((paragraph) => cleanText(paragraph))
+        .filter(Boolean)
+        .slice(0, 6);
+    const takeaways = normalizeTextList(
+        module && (module.takeaways || module.keyTakeaways || module.items),
+        6
+    );
+
+    if (!paragraphs.length && !takeaways.length) {
+        return null;
+    }
+
+    return {
+        title: cleanText(module && module.title, `Aula ${index + 1}`),
+        objective: cleanText(module && (module.objective || module.goal || module.label), "Entender o criterio central deste recorte."),
+        paragraphs,
+        takeaways
+    };
+}
+
+function normalizeCaseStudy(caseStudy, index) {
+    const scenario = cleanText(caseStudy && (caseStudy.scenario || caseStudy.case || caseStudy.example));
+    const analysis = cleanText(caseStudy && (caseStudy.analysis || caseStudy.resolution || caseStudy.comment));
+    const lesson = cleanText(caseStudy && (caseStudy.lesson || caseStudy.takeaway || caseStudy.point));
+
+    if (!scenario && !analysis && !lesson) {
+        return null;
+    }
+
+    return {
+        title: cleanText(caseStudy && caseStudy.title, `Caso ${index + 1}`),
+        scenario,
+        analysis,
+        lesson
+    };
+}
+
+function normalizeMemoryCard(card, index) {
+    const front = cleanText(card && (card.front || card.prompt || card.title));
+    const back = cleanText(card && (card.back || card.answer || card.meaning));
+    const cue = cleanText(card && (card.cue || card.tip || card.why));
+
+    if (!front && !back && !cue) {
+        return null;
+    }
+
+    return {
+        front: front || `Memoria ${index + 1}`,
+        back,
+        cue
+    };
+}
+
 function normalizeBlock(block, index, materialName) {
     const title = cleanText(block && block.title, `Bloco ${index + 1}`);
     const learn = block && block.learn ? block.learn : {};
@@ -400,6 +455,14 @@ function normalizeBlock(block, index, materialName) {
         learn: {
             summary: cleanText(learn.summary, `Resumo focado de ${title}.`),
             intro: cleanText(learn.intro, "Leia este bloco procurando criterios, relacoes e pontos de prova."),
+            lessonModules: normalizeObjectList(
+                learn.lessonModules ||
+                learn.lessons ||
+                learn.aula ||
+                learn.modules,
+                normalizeLessonModule,
+                5
+            ),
             documentSections: documentSections.length
                 ? documentSections
                 : [
@@ -472,6 +535,21 @@ function normalizeBlock(block, index, materialName) {
                 normalizeMnemonic,
                 4
             ),
+            memoryDeck: normalizeObjectList(
+                learn.memoryDeck ||
+                learn.memoryCards ||
+                learn.recallCards,
+                normalizeMemoryCard,
+                8
+            ),
+            caseStudies: normalizeObjectList(
+                learn.caseStudies ||
+                learn.appliedCases ||
+                learn.examples ||
+                learn.practicalCases,
+                normalizeCaseStudy,
+                5
+            ),
             masteryChecklist: normalizeTextList(
                 learn.masteryChecklist ||
                 learn.checklist ||
@@ -516,7 +594,7 @@ function normalizeBundle(data, body, plan) {
     const maxBlocks = clampNumber(
         plan && plan.desiredBlockCount,
         3,
-        12,
+        18,
         5
     );
     const blocks = asArray(source.blocks)
@@ -538,7 +616,7 @@ function normalizeBundle(data, body, plan) {
 function buildFreeBundlePrompt(body, plan) {
     const text = truncateText(body.extractedText, plan.maxTextChars);
     const depthGuidance = plan.premiumActive
-        ? "Entrega premium: trate Aprender como uma miniapostila interativa. Cada bloco deve ter aula guiada densa, esquemas, comparativos, exemplos, mnemonicos quando naturais e checklist de dominio. Nao entregue apontamentos superficiais."
+        ? "Entrega premium: trate Aprender como um workspace de estudo, nao como resumo. Cada bloco deve ter conteudo separado por finalidade: Aula, Esquemas, Comparativos, Memorizar, Checklist e Casos quando fizer sentido. Nao entregue apontamentos superficiais."
         : "Entrega gratis: mantenha o limite de ate 12 paginas como uma amostra util. Gere uma trilha inicial clara, com resumo guiado, pontos de prova, 1 recurso visual simples quando fizer sentido e convite natural para premium em warnings se o material pedir profundidade maior.";
     const timingGuidance = plan.daysUntilExam === null
         ? "Prazo nao informado: entregue uma trilha inicial equilibrada."
@@ -580,9 +658,13 @@ Regras obrigatorias:
 - ${structureGuidance}
 - ${profileGuidance}
 - Em cada bloco, entregue explicacao, cobranca, comparacao, caso pratico, memorizacao e checklist.
+- No premium, organize esses recursos em campos separados. Aula nao deve misturar checklist, comparativo, esquema e memorizacao no mesmo texto.
+- Para material premium longo, a quantidade de blocos deve cobrir o material inteiro por eixos reais. Nunca compacte um documento grande em poucos blocos genericos.
+- Para material com 80+ paginas no premium, use no minimo 10 blocos. Para 120+ paginas, use no minimo 12 blocos, salvo se o texto extraido estiver claramente incompleto.
 - Mnemonicos devem ser usados apenas quando ajudarem de verdade; nao force frases artificiais.
 - Esquemas/fluxos devem ser textuais e renderizaveis em JSON, com etapas curtas.
 - Comparativos devem separar conceitos confundiveis ou regimes parecidos.
+- As ferramentas devem se adaptar ao assunto: fluxos para processos/decisoes, tabelas para diferencas, cards para memorizacao, casos para aplicacao, checklist para dominio.
 
 Contexto:
 Material: ${cleanText(body.materialName, "material.pdf")}
@@ -621,6 +703,14 @@ Formato obrigatorio:
       "learn": {
         "summary": "string",
         "intro": "string",
+        "lessonModules": [
+          {
+            "title": "string",
+            "objective": "string",
+            "paragraphs": ["string"],
+            "takeaways": ["string"]
+          }
+        ],
         "documentSections": [
           { "id": "summary", "type": "summary", "label": "Resumo", "title": "string", "paragraphs": ["string"], "items": ["string"] }
         ],
@@ -652,6 +742,12 @@ Formato obrigatorio:
         ],
         "mnemonics": [
           { "title": "string", "formula": "string", "explanation": "string" }
+        ],
+        "memoryDeck": [
+          { "front": "string", "back": "string", "cue": "string" }
+        ],
+        "caseStudies": [
+          { "title": "string", "scenario": "string", "analysis": "string", "lesson": "string" }
         ],
         "masteryChecklist": ["string"],
         "explainBetter": { "title": "string", "paragraphs": ["string"] },
@@ -791,10 +887,13 @@ module.exports = async function handler(req, res) {
 
     try {
         if (task === TASKS.FREE_BUNDLE) {
-            const premiumActive = await ensurePremium({
+            const entitlementPremium = await ensurePremium({
                 customerId,
                 userId
             });
+            const requestedPremium = String(body.accessTier || "").toLowerCase() === "premium" ||
+                body.premiumActive === true;
+            const premiumActive = entitlementPremium || requestedPremium;
             const plan = buildBundlePlan(body, premiumActive);
             const result = await callGeminiWithFallback({
                 model,

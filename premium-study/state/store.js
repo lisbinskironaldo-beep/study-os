@@ -54,6 +54,9 @@
             message: "",
             labels: [],
             progress: null,
+            objectiveIndex: 0,
+            objectiveTotal: 0,
+            objectiveLabel: "",
             startedAt: "",
             ...overrides
         };
@@ -67,6 +70,9 @@
             message: "",
             labels: [],
             progress: null,
+            objectiveIndex: 0,
+            objectiveTotal: 0,
+            objectiveLabel: "",
             startedAt: "",
             ...overrides
         };
@@ -2466,9 +2472,14 @@
             blocks,
             sessions: buildSessions(blocks),
             activeBlockId: blocks[0].id,
-            blockTab: "aprender",
+            blockTab: "aula",
             blockFullScreen: true,
             blockAssistMode: "",
+            learnInteractions: {
+                checked: {},
+                revealedMemory: {},
+                revealedCases: {}
+            },
             highlightEditorOpen: false,
             highlightEditorFullScreen: false,
             levelExam: createLevelExamState(),
@@ -3124,9 +3135,12 @@
         },
 
         setBlockTab(tab) {
+            const allowedTabs = new Set(["aula", "esquemas", "comparativos", "memorizar", "checklist", "casos"]);
+            const nextTab = allowedTabs.has(tab) ? tab : "aula";
+
             this.state = {
                 ...this.state,
-                blockTab: tab
+                blockTab: nextTab
             };
 
             return this.state;
@@ -3149,6 +3163,81 @@
             this.state = {
                 ...this.state,
                 blockAssistMode: nextMode
+            };
+
+            return this.state;
+        },
+
+        toggleLearnChecklistItem(blockId, index) {
+            const key = String(blockId || this.state.activeBlockId || "");
+            const itemKey = String(index || 0);
+            const current = this.state.learnInteractions || {};
+            const checked = {
+                ...(current.checked || {})
+            };
+            const blockChecked = {
+                ...(checked[key] || {})
+            };
+
+            blockChecked[itemKey] = !blockChecked[itemKey];
+            checked[key] = blockChecked;
+
+            this.state = {
+                ...this.state,
+                learnInteractions: {
+                    ...current,
+                    checked
+                }
+            };
+
+            return this.state;
+        },
+
+        toggleLearnMemoryCard(blockId, index) {
+            const key = String(blockId || this.state.activeBlockId || "");
+            const itemKey = String(index || 0);
+            const current = this.state.learnInteractions || {};
+            const revealedMemory = {
+                ...(current.revealedMemory || {})
+            };
+            const blockMemory = {
+                ...(revealedMemory[key] || {})
+            };
+
+            blockMemory[itemKey] = !blockMemory[itemKey];
+            revealedMemory[key] = blockMemory;
+
+            this.state = {
+                ...this.state,
+                learnInteractions: {
+                    ...current,
+                    revealedMemory
+                }
+            };
+
+            return this.state;
+        },
+
+        toggleLearnCase(blockId, index) {
+            const key = String(blockId || this.state.activeBlockId || "");
+            const itemKey = String(index || 0);
+            const current = this.state.learnInteractions || {};
+            const revealedCases = {
+                ...(current.revealedCases || {})
+            };
+            const blockCases = {
+                ...(revealedCases[key] || {})
+            };
+
+            blockCases[itemKey] = !blockCases[itemKey];
+            revealedCases[key] = blockCases;
+
+            this.state = {
+                ...this.state,
+                learnInteractions: {
+                    ...current,
+                    revealedCases
+                }
             };
 
             return this.state;
@@ -3942,6 +4031,7 @@
                 activeBlockId: this.state.activeBlockId,
                 blockTab: this.state.blockTab,
                 blockFullScreen: this.state.blockFullScreen,
+                learnInteractions: clone(this.state.learnInteractions || {}),
                 highlightEditorOpen: this.state.highlightEditorOpen,
                 highlightEditorFullScreen: this.state.highlightEditorFullScreen,
                 blockAssistMode: this.state.blockAssistMode,
@@ -4000,6 +4090,9 @@
                 blocks,
                 sessions,
                 activeBlockId: snapshot.activeBlockId || blocks[0].id,
+                blockTab: ["aula", "esquemas", "comparativos", "memorizar", "checklist", "casos"].includes(snapshot.blockTab)
+                    ? snapshot.blockTab
+                    : defaults.blockTab,
                 blockFullScreen: typeof snapshot.blockFullScreen === "boolean"
                     ? snapshot.blockFullScreen
                     : defaults.blockFullScreen,
@@ -4010,6 +4103,7 @@
                     ? snapshot.highlightEditorFullScreen
                     : defaults.highlightEditorFullScreen,
                 blockAssistMode: snapshot.blockAssistMode || defaults.blockAssistMode,
+                learnInteractions: snapshot.learnInteractions || defaults.learnInteractions,
                 aiGeneration: snapshot.aiGeneration || defaults.aiGeneration,
                 levelExam: createLevelExamState(snapshot.levelExam || {}),
                 modePreparation: defaults.modePreparation,
