@@ -203,20 +203,36 @@ const Pomodoro = {
 
         Object.keys(this.presets).forEach((key) => {
             const preset = this.presets[key];
-            const chip = document.createElement("div");
+            const chip = document.createElement("button");
 
             chip.className = "preset-chip";
+            chip.type = "button";
             chip.textContent = preset.label;
             chip.title = preset.desc;
+            chip.setAttribute(
+                "aria-label",
+                `${preset.label}. ${preset.desc}`
+            );
 
             if (key === this.currentPreset) {
                 chip.classList.add("active");
+                chip.setAttribute(
+                    "aria-pressed",
+                    "true"
+                );
+            } else {
+                chip.setAttribute(
+                    "aria-pressed",
+                    "false"
+                );
             }
 
             if (this.syncEnabled) {
                 chip.classList.add("is-disabled");
+                chip.disabled = true;
             } else {
                 chip.classList.add("is-clickable");
+                chip.disabled = false;
             }
 
             chip.onclick = () => {

@@ -1,0 +1,17 @@
+ M .codex-artifacts/dev-server/vercel-dev.err.log
+ M ambient/ambientUI.js
+ M api/_lib/handlers/premium/ai-generate.js
+ M css/premium.css
+ M index.html
+ M js/app.js
+ M js/pomodoro.js
+?? .codex-artifacts/dev-server/vercel-dev-3001.err.log
+?? .codex-artifacts/dev-server/vercel-dev-3001.out.log
+?? docs/v55_site_audit_next_level.md
+?? docs/visual_cleanup_handoff.md
+?? restore-points/20260428-001329-before-exec-pass1/
+?? restore-points/20260428-002233-after-accessibility-pass/
+?? restore-points/20260428-002543-after-home-mobile-pass/
+?? restore-points/20260428-002949-after-progress-flow-pass/
+?? restore-points/20260428-004204-after-mojibake-pass/
+?? restore-points/20260428-005820-after-home-flow-validation/

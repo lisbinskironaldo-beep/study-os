@@ -1,0 +1,84 @@
+:root {
+    color-scheme: dark;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    background:
+        radial-gradient(circle at top center, rgba(121, 213, 255, 0.1), transparent 28%),
+        linear-gradient(180deg, #0d111a, #090c13);
+    color: #f7f7fb;
+    font-family: "Manrope", system-ui, sans-serif;
+}
+
+.pdf-workbench-root,
+.pdf-workbench-container {
+    height: 100%;
+}
+
+.pdf-workbench-root {
+    position: relative;
+    overflow: hidden;
+}
+
+.pdf-workbench-container {
+    position: absolute;
+    inset: 0;
+    overflow: auto;
+    padding: 24px clamp(16px, 5vw, 56px) 40px;
+}
+
+#viewer {
+    display: grid;
+    justify-items: center;
+}
+
+.pdfViewer .page {
+    margin: 0 auto 22px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 28px 72px rgba(0, 0, 0, 0.28);
+}
+
+.pdfViewer .page canvas {
+    border-radius: 10px;
+}
+
+.pdf-ai-overlay-layer {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.pdf-ai-highlight {
+    position: absolute;
+    border-radius: 4px;
+    pointer-events: auto;
+    cursor: pointer;
+    mix-blend-mode: screen;
+    transition: transform 0.16s ease, box-shadow 0.16s ease, opacity 0.16s ease;
+}
+
+.pdf-ai-highlight:hover,
+.pdf-ai-highlight.is-active {
+    transform: translateY(-1px);
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.3), 0 12px 28px rgba(0, 0, 0, 0.2);
+}
+
+.pdf-ai-highlight-gold {
+    background: rgba(255, 203, 109, 0.28);
+}
+
+.pdf-ai-highlight-blue {
+    background: rgba(121, 213, 255, 0.26);
+}
+
+.pdf-ai-highlight-mint {
+    background: rgba(49, 215, 163, 0.24);
+}
+
+.pdf-ai-highlight-rose {
+    background: rgba(255, 151, 188, 0.22);
+}

@@ -975,6 +975,7 @@ moduleEl.innerHTML = `
 this.state.mode = "questions"
 document.body.setAttribute("data-mode", "questions")
 this.setActiveNav("questions")
+this.syncSideModulesAccessibility()
 if (!skipHistory) {
 this.syncBrowserHistory("questions", {
 replace: replaceHistory
@@ -1182,6 +1183,7 @@ return
             );
         }
         this.setActiveNav(target);
+        this.syncSideModulesAccessibility();
         if (!skipHistory) {
             this.syncBrowserHistory(target, {
                 replace: replaceHistory
@@ -1223,6 +1225,7 @@ return
             )
         );
         this.setActiveNav(mode === "clock" ? null : mode);
+        this.syncSideModulesAccessibility();
 
         this.hideModules();
         this.showHero();
@@ -1237,6 +1240,15 @@ return
         }
 
         this.showControls();
+
+        const moduleEl =
+            document.getElementById(
+                `${mode}Module`
+            );
+
+        if (moduleEl) {
+            moduleEl.classList.add("active");
+        }
 
         if (module && module.render)
             module.render();
@@ -1253,6 +1265,30 @@ return
         document.body.removeAttribute("data-premium-step");
         this.changeMode("clock", options);
         this.refreshHomeStatsWidget();
+    },
+
+    openHomeStatsSurface(options = {}) {
+        const shell =
+            document.querySelector(
+                ".home-stats-shell"
+            );
+        const shouldScroll =
+            options.scroll !== false;
+
+        if (shell) {
+            shell.hidden = false;
+        }
+
+        this.refreshHomeStatsWidget();
+
+        if (shouldScroll && shell) {
+            requestAnimationFrame(() => {
+                shell.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+            });
+        }
     },
 
     openHomeStatsLoginGate(intent = "stats") {
@@ -1474,9 +1510,10 @@ return
             return;
         }
 
-        window.RotaNotaQuestionsLauncherTarget =
-            "progress";
-        this.navigate("questions");
+        this.goHome({
+            replaceHistory: true
+        });
+        this.openHomeStatsSurface();
     },
 
     updateHomeBandPanels(panels = []) {
@@ -2623,9 +2660,23 @@ return
             safeAction ===
             "questions-progress"
         ) {
-            window.RotaNotaQuestionsLauncherTarget =
-                "progress";
-            this.navigate("questions");
+            const intent = {
+                kind: "stats",
+                source: "stats"
+            };
+            const gate =
+                this.requireGoogleLogin(
+                    intent
+                );
+
+            if (
+                gate &&
+                gate.allowed === true
+            ) {
+                this.handleGoogleLoginSuccess(
+                    { intent }
+                );
+            }
             return;
         }
 
@@ -3068,6 +3119,31 @@ return
                 collapsed ? "1" : "0"
             );
         }
+
+        this.syncSideModulesAccessibility();
+    },
+
+    syncSideModulesAccessibility() {
+        const side =
+            document.getElementById("sideModules");
+
+        if (!side) {
+            return;
+        }
+
+        const style =
+            window.getComputedStyle(side);
+        const hidden =
+            style.display === "none" ||
+            style.visibility === "hidden" ||
+            style.pointerEvents === "none" ||
+            Number(style.opacity || "1") < 0.1;
+
+        side.setAttribute(
+            "aria-hidden",
+            hidden ? "true" : "false"
+        );
+        side.inert = hidden;
     },
 
     prepareAmbientForFocus() {
@@ -3129,6 +3205,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
     Core.init();
 
+    const footerLabelMap = {
+        questions: "Questoes",
+        calendar: "Agenda",
+        stopwatch: "Cronometro",
+        timer: "Timer",
+        calculator: "Calculadora",
+        pomodoro: "Pomodoro",
+        routine: "Rotina semanal",
+        "premium-study": "PDF Focado"
+    };
+
     const side =
         document.getElementById("sideModules");
 
@@ -3147,6 +3234,25 @@ document.addEventListener("DOMContentLoaded", () => {
             );
 
         footerIcons.forEach(icon => {
+            const label =
+                String(
+                    footerLabelMap[icon.dataset.module || ""] ||
+                    icon.dataset.label ||
+                    icon.textContent ||
+                    ""
+                ).trim();
+
+            if (label) {
+                icon.setAttribute(
+                    "aria-label",
+                    label
+                );
+                icon.setAttribute(
+                    "title",
+                    label
+                );
+            }
+
             const targetGroup =
                 icon.dataset.tier === "primary"
                     ? primaryGroup
@@ -3159,5 +3265,10 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     }
+
+    Core.syncSideModulesAccessibility();
+    window.addEventListener("resize", () => {
+        Core.syncSideModulesAccessibility();
+    });
 });
 

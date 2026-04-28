@@ -1,0 +1,383 @@
+diff --git a/ambient/ambientUI.js b/ambient/ambientUI.js
+index b9aad98..80ce349 100644
+--- a/ambient/ambientUI.js
++++ b/ambient/ambientUI.js
+@@ -1,5 +1,14 @@
+ const AmbientUI = {
+ 
++setHiddenState(element, hidden) {
++
++if (!element) return
++
++element.setAttribute("aria-hidden", hidden ? "true" : "false")
++element.inert = Boolean(hidden)
++
++},
++
+ icon(name) {
+ 
+ const icons = {
+@@ -233,6 +242,20 @@ panel.dataset.category = item?.category || "default"
+ 
+ },
+ 
++syncAccessibility() {
++
++const mini = document.getElementById("ambientMini")
++const panel = document.getElementById("ambientPanel")
++const peek = document.getElementById("ambientPeek")
++const panelOpen = AmbientState.panelMode === 0
++const miniHidden = AmbientState.panelMode === 2
++
++this.setHiddenState(panel, !panelOpen)
++this.setHiddenState(mini, miniHidden)
++this.setHiddenState(peek, AmbientState.panelMode !== 2)
++
++},
++
+ setPanelMode(mode) {
+ 
+ const mini = document.getElementById("ambientMini")
+@@ -254,6 +277,7 @@ this.closeCategorySelector()
+ }
+ 
+ this.updateShell()
++this.syncAccessibility()
+ 
+ if (mode !== 2) {
+ requestAnimationFrame(() => {
+diff --git a/api/_lib/handlers/premium/ai-generate.js b/api/_lib/handlers/premium/ai-generate.js
+index 91ad591..64c275c 100644
+--- a/api/_lib/handlers/premium/ai-generate.js
++++ b/api/_lib/handlers/premium/ai-generate.js
+@@ -22,6 +22,13 @@ function cleanText(value, fallback = "") {
+         .trim();
+ }
+ 
++function normalizeForMatch(value, fallback = "") {
++    return cleanText(value, fallback)
++        .normalize("NFD")
++        .replace(/[\u0300-\u036f]/g, "")
++        .toLowerCase();
++}
++
+ function truncateText(value, maxLength) {
+     const text = cleanText(value);
+     return text.length > maxLength ? `${text.slice(0, maxLength)}...` : text;
+@@ -60,31 +67,33 @@ function computeDaysUntilExam(value) {
+ }
+ 
+ function looksLikeLargeLegalMaterial(materialName = "") {
+-    return /(?:\bc[oó]digo\s+(?:penal|civil|processual|de\s+[a-zà-ÿ]+)|\blei\b|\bdecreto\b|\bestatuto\b|\bclt\b|constitui|regulamento|\bpenal\b|\bcivil\b|processual)/i.test(cleanText(materialName));
++    return /(?:\bcodigo\s+(?:penal|civil|processual|de\s+[a-z-]+)|\blei\b|\bdecreto\b|\bestatuto\b|\bclt\b|constitui|regulamento|\bpenal\b|\bcivil\b|processual)/i.test(
++        normalizeForMatch(materialName)
++    );
+ }
+ 
+ function inferMaterialProfile(body = {}) {
+     const materialName = cleanText(body.materialName);
+     const textSample = truncateText(body.extractedText, 12000);
+-    const combined = `${materialName} ${textSample}`.toLowerCase();
++    const combined = normalizeForMatch(`${materialName} ${textSample}`);
+ 
+-    if (/(?:\bc[oó]digo\s+(?:penal|civil|processual|de\s+[a-zà-ÿ]+)|\blei\b|\bdecreto\b|\bestatuto\b|\bclt\b|constitui|\bart\\.|\bartigo\b|\bpenal\b|\bcivil\b|processual|tribut|administrativo)/i.test(combined)) {
++    if (/(?:\bcodigo\s+(?:penal|civil|processual|de\s+[a-z-]+)|\blei\b|\bdecreto\b|\bestatuto\b|\bclt\b|constitui|\bart\.|\bartigo\b|\bpenal\b|\bcivil\b|processual|tribut|administrativo)/i.test(combined)) {
+         return "juridico";
+     }
+ 
+-    if (/(formula|f[oó]rmula|calculo|c[aá]lculo|equacao|equa[cç][aã]o|matematica|matem[aá]tica|fisica|f[ií]sica|quimica|qu[ií]mica)/i.test(combined)) {
++    if (/(formula|calculo|equacao|matematica|fisica|quimica)/i.test(combined)) {
+         return "exatas";
+     }
+ 
+-    if (/(anatomia|fisiologia|patologia|diagn[oó]stico|clinico|cl[ií]nico|biologia|medicina|enfermagem|farmacologia)/i.test(combined)) {
++    if (/(anatomia|fisiologia|patologia|diagnostico|clinico|biologia|medicina|enfermagem|farmacologia)/i.test(combined)) {
+         return "saude_biologicas";
+     }
+ 
+-    if (/(hist[oó]ria|geografia|sociologia|filosofia|autor|teoria|revolu[cç][aã]o|linha do tempo)/i.test(combined)) {
++    if (/(historia|geografia|sociologia|filosofia|autor|teoria|revolucao|linha do tempo)/i.test(combined)) {
+         return "humanas";
+     }
+ 
+-    if (/(edital|conte[uú]do program[aá]tico|cronograma|cargo|banca|concurso)/i.test(combined)) {
++    if (/(edital|conteudo programatico|cronograma|cargo|banca|concurso)/i.test(combined)) {
+         return "edital";
+     }
+ 
+@@ -710,7 +719,7 @@ Regras obrigatorias:
+ - ${structureGuidance}
+ - ${profileGuidance}
+ - Em cada bloco, entregue aula guiada, cobranca principal, pratica base e fechamento de dominio.
+-- Recursos auxiliares devem ser seletivos: comparativo, fluxo, mnemônico, deck de memória ou caso aplicado só quando realmente melhorarem o bloco.
++- Recursos auxiliares devem ser seletivos: comparativo, fluxo, mnemonico, deck de memoria ou caso aplicado so quando realmente melhorarem o bloco.
+ - No premium, organize esses recursos em campos separados. Aula nao deve misturar checklist, comparativo, esquema e memorizacao no mesmo texto.
+ - explainBetter e reviewInFivePoints sao opcionais na chamada base; se faltar, o cliente deriva uma primeira versao local.
+ - Para material premium longo, a quantidade de blocos deve cobrir o material inteiro por eixos reais. Nunca compacte um documento grande em poucos blocos genericos.
+@@ -1095,3 +1104,4 @@ module.exports = async function handler(req, res) {
+         });
+     }
+ };
++
+diff --git a/css/premium.css b/css/premium.css
+index 239bf05..4681245 100644
+--- a/css/premium.css
++++ b/css/premium.css
+@@ -4365,7 +4365,7 @@ body.dark .home-command-card em {
+ @media (max-width: 520px) {
+     .home-command-shell {
+         width: min(100%, calc(100vw - 16px));
+-        gap: 10px;
++        gap: 8px;
+     }
+ 
+     .home-command-hero,
+@@ -4374,25 +4374,28 @@ body.dark .home-command-card em {
+     }
+ 
+     .home-command-hero {
+-        padding: 14px;
++        padding: 10px;
++        gap: 10px;
+     }
+ 
+     .home-command-now {
+         grid-template-columns: 1fr;
+-        gap: 8px;
++        gap: 6px;
++        padding: 10px;
+     }
+ 
+     .home-command-now strong {
+-        font-size: clamp(2rem, 16vw, 3.25rem);
++        font-size: clamp(1.45rem, 11vw, 2.3rem);
+     }
+ 
+     .home-command-grid {
+         grid-template-columns: 1fr;
+-        gap: 10px;
++        gap: 8px;
+     }
+ 
+     .home-command-card {
+         min-height: 132px;
++        padding: 14px;
+     }
+ 
+     .home-command-bottom {
+@@ -4418,6 +4421,28 @@ body.dark .home-command-card em {
+         max-width: 15ch;
+     }
+ 
++    .home-command-copy {
++        gap: 6px;
++    }
++
++    .home-command-copy span,
++    .home-command-card span,
++    .home-command-now span,
++    .home-command-status-head span {
++        font-size: 0.64rem;
++    }
++
++    .home-command-copy h1 {
++        font-size: clamp(1.72rem, 9vw, 2.55rem);
++        line-height: 0.98;
++    }
++
++    .home-command-copy p,
++    .home-command-now p {
++        font-size: 0.88rem;
++        line-height: 1.38;
++    }
++
+     .home-login-gate-kicker {
+         font-size: 0.68rem;
+         letter-spacing: 0.14em;
+diff --git a/js/app.js b/js/app.js
+index 8e06459..97ef516 100644
+--- a/js/app.js
++++ b/js/app.js
+@@ -975,6 +975,7 @@ moduleEl.innerHTML = `
+ this.state.mode = "questions"
+ document.body.setAttribute("data-mode", "questions")
+ this.setActiveNav("questions")
++this.syncSideModulesAccessibility()
+ if (!skipHistory) {
+ this.syncBrowserHistory("questions", {
+ replace: replaceHistory
+@@ -1182,6 +1183,7 @@ return
+             );
+         }
+         this.setActiveNav(target);
++        this.syncSideModulesAccessibility();
+         if (!skipHistory) {
+             this.syncBrowserHistory(target, {
+                 replace: replaceHistory
+@@ -1223,6 +1225,7 @@ return
+             )
+         );
+         this.setActiveNav(mode === "clock" ? null : mode);
++        this.syncSideModulesAccessibility();
+ 
+         this.hideModules();
+         this.showHero();
+@@ -1255,6 +1258,30 @@ return
+         this.refreshHomeStatsWidget();
+     },
+ 
++    openHomeStatsSurface(options = {}) {
++        const shell =
++            document.querySelector(
++                ".home-stats-shell"
++            );
++        const shouldScroll =
++            options.scroll !== false;
++
++        if (shell) {
++            shell.hidden = false;
++        }
++
++        this.refreshHomeStatsWidget();
++
++        if (shouldScroll && shell) {
++            requestAnimationFrame(() => {
++                shell.scrollIntoView({
++                    behavior: "smooth",
++                    block: "start"
++                });
++            });
++        }
++    },
++
+     openHomeStatsLoginGate(intent = "stats") {
+         const gate =
+             document.getElementById(
+@@ -1474,9 +1501,10 @@ return
+             return;
+         }
+ 
+-        window.RotaNotaQuestionsLauncherTarget =
+-            "progress";
+-        this.navigate("questions");
++        this.goHome({
++            replaceHistory: true
++        });
++        this.openHomeStatsSurface();
+     },
+ 
+     updateHomeBandPanels(panels = []) {
+@@ -2623,9 +2651,23 @@ return
+             safeAction ===
+             "questions-progress"
+         ) {
+-            window.RotaNotaQuestionsLauncherTarget =
+-                "progress";
+-            this.navigate("questions");
++            const intent = {
++                kind: "stats",
++                source: "stats"
++            };
++            const gate =
++                this.requireGoogleLogin(
++                    intent
++                );
++
++            if (
++                gate &&
++                gate.allowed === true
++            ) {
++                this.handleGoogleLoginSuccess(
++                    { intent }
++                );
++            }
+             return;
+         }
+ 
+@@ -3068,6 +3110,31 @@ return
+                 collapsed ? "1" : "0"
+             );
+         }
++
++        this.syncSideModulesAccessibility();
++    },
++
++    syncSideModulesAccessibility() {
++        const side =
++            document.getElementById("sideModules");
++
++        if (!side) {
++            return;
++        }
++
++        const style =
++            window.getComputedStyle(side);
++        const hidden =
++            style.display === "none" ||
++            style.visibility === "hidden" ||
++            style.pointerEvents === "none" ||
++            Number(style.opacity || "1") < 0.1;
++
++        side.setAttribute(
++            "aria-hidden",
++            hidden ? "true" : "false"
++        );
++        side.inert = hidden;
+     },
+ 
+     prepareAmbientForFocus() {
+@@ -3129,6 +3196,17 @@ document.addEventListener("DOMContentLoaded", () => {
+ 
+     Core.init();
+ 
++    const footerLabelMap = {
++        questions: "Questoes",
++        calendar: "Agenda",
++        stopwatch: "Cronometro",
++        timer: "Timer",
++        calculator: "Calculadora",
++        pomodoro: "Pomodoro",
++        routine: "Rotina semanal",
++        "premium-study": "PDF Focado"
++    };
++
+     const side =
+         document.getElementById("sideModules");
+ 
+@@ -3147,6 +3225,25 @@ document.addEventListener("DOMContentLoaded", () => {
+             );
+ 
+         footerIcons.forEach(icon => {
++            const label =
++                String(
++                    footerLabelMap[icon.dataset.module || ""] ||
++                    icon.dataset.label ||
++                    icon.textContent ||
++                    ""
++                ).trim();
++
++            if (label) {
++                icon.setAttribute(
++                    "aria-label",
++                    label
++                );
++                icon.setAttribute(
++                    "title",
++                    label
++                );
++            }
++
+             const targetGroup =
+                 icon.dataset.tier === "primary"
+                     ? primaryGroup
+@@ -3159,5 +3256,10 @@ document.addEventListener("DOMContentLoaded", () => {
+             }
+         });
+     }
++
++    Core.syncSideModulesAccessibility();
++    window.addEventListener("resize", () => {
++        Core.syncSideModulesAccessibility();
++    });
+ });
+ 

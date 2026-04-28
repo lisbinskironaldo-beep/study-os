@@ -1,0 +1,4 @@
+ M .codex-artifacts/dev-server/vercel-dev.err.log
+?? docs/v55_site_audit_next_level.md
+?? docs/visual_cleanup_handoff.md
+?? restore-points/20260428-001329-before-exec-pass1/

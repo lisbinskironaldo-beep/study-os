@@ -22,6 +22,13 @@ function cleanText(value, fallback = "") {
         .trim();
 }
 
+function normalizeForMatch(value, fallback = "") {
+    return cleanText(value, fallback)
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .toLowerCase();
+}
+
 function truncateText(value, maxLength) {
     const text = cleanText(value);
     return text.length > maxLength ? `${text.slice(0, maxLength)}...` : text;
@@ -60,31 +67,33 @@ function computeDaysUntilExam(value) {
 }
 
 function looksLikeLargeLegalMaterial(materialName = "") {
-    return /(?:\bc[oÃ³]digo\s+(?:penal|civil|processual|de\s+[a-zÃ -Ã¿]+)|\blei\b|\bdecreto\b|\bestatuto\b|\bclt\b|constitui|regulamento|\bpenal\b|\bcivil\b|processual)/i.test(cleanText(materialName));
+    return /(?:\bcodigo\s+(?:penal|civil|processual|de\s+[a-z-]+)|\blei\b|\bdecreto\b|\bestatuto\b|\bclt\b|constitui|regulamento|\bpenal\b|\bcivil\b|processual)/i.test(
+        normalizeForMatch(materialName)
+    );
 }
 
 function inferMaterialProfile(body = {}) {
     const materialName = cleanText(body.materialName);
     const textSample = truncateText(body.extractedText, 12000);
-    const combined = `${materialName} ${textSample}`.toLowerCase();
+    const combined = normalizeForMatch(`${materialName} ${textSample}`);
 
-    if (/(?:\bc[oÃ³]digo\s+(?:penal|civil|processual|de\s+[a-zÃ -Ã¿]+)|\blei\b|\bdecreto\b|\bestatuto\b|\bclt\b|constitui|\bart\\.|\bartigo\b|\bpenal\b|\bcivil\b|processual|tribut|administrativo)/i.test(combined)) {
+    if (/(?:\bcodigo\s+(?:penal|civil|processual|de\s+[a-z-]+)|\blei\b|\bdecreto\b|\bestatuto\b|\bclt\b|constitui|\bart\.|\bartigo\b|\bpenal\b|\bcivil\b|processual|tribut|administrativo)/i.test(combined)) {
         return "juridico";
     }
 
-    if (/(formula|f[oÃ³]rmula|calculo|c[aÃ¡]lculo|equacao|equa[cÃ§][aÃ£]o|matematica|matem[aÃ¡]tica|fisica|f[iÃ­]sica|quimica|qu[iÃ­]mica)/i.test(combined)) {
+    if (/(formula|calculo|equacao|matematica|fisica|quimica)/i.test(combined)) {
         return "exatas";
     }
 
-    if (/(anatomia|fisiologia|patologia|diagn[oÃ³]stico|clinico|cl[iÃ­]nico|biologia|medicina|enfermagem|farmacologia)/i.test(combined)) {
+    if (/(anatomia|fisiologia|patologia|diagnostico|clinico|biologia|medicina|enfermagem|farmacologia)/i.test(combined)) {
         return "saude_biologicas";
     }
 
-    if (/(hist[oÃ³]ria|geografia|sociologia|filosofia|autor|teoria|revolu[cÃ§][aÃ£]o|linha do tempo)/i.test(combined)) {
+    if (/(historia|geografia|sociologia|filosofia|autor|teoria|revolucao|linha do tempo)/i.test(combined)) {
         return "humanas";
     }
 
-    if (/(edital|conte[uÃº]do program[aÃ¡]tico|cronograma|cargo|banca|concurso)/i.test(combined)) {
+    if (/(edital|conteudo programatico|cronograma|cargo|banca|concurso)/i.test(combined)) {
         return "edital";
     }
 
@@ -710,7 +719,7 @@ Regras obrigatorias:
 - ${structureGuidance}
 - ${profileGuidance}
 - Em cada bloco, entregue aula guiada, cobranca principal, pratica base e fechamento de dominio.
-- Recursos auxiliares devem ser seletivos: comparativo, fluxo, mnemÃ´nico, deck de memÃ³ria ou caso aplicado sÃ³ quando realmente melhorarem o bloco.
+- Recursos auxiliares devem ser seletivos: comparativo, fluxo, mnemonico, deck de memoria ou caso aplicado so quando realmente melhorarem o bloco.
 - No premium, organize esses recursos em campos separados. Aula nao deve misturar checklist, comparativo, esquema e memorizacao no mesmo texto.
 - explainBetter e reviewInFivePoints sao opcionais na chamada base; se faltar, o cliente deriva uma primeira versao local.
 - Para material premium longo, a quantidade de blocos deve cobrir o material inteiro por eixos reais. Nunca compacte um documento grande em poucos blocos genericos.
@@ -1095,3 +1104,4 @@ module.exports = async function handler(req, res) {
         });
     }
 };
+
