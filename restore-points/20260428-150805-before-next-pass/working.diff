@@ -1,0 +1,1118 @@
+diff --git a/docs/questions_intelligent_flow_plan.md b/docs/questions_intelligent_flow_plan.md
+index eb1b0d8..3bfbeea 100644
+--- a/docs/questions_intelligent_flow_plan.md
++++ b/docs/questions_intelligent_flow_plan.md
+@@ -1209,13 +1209,14 @@ Objetivo:
+ 
+ Status:
+ 
+-- [ ] proxima etapa
++- [x] concluido
+ 
+ Entregas:
+ 
+-- [ ] 3 botoes grandes
+-- [ ] `Retomar treino` como acao secundaria
+-- [ ] reduzir textos e remover cards informativos
++- [x] 3 botoes grandes
++- [x] `Retomar treino` como acao secundaria
++- [x] reduzir textos e remover cards informativos
++- [x] mover `Busca direta por assunto` para dentro do fluxo `Rapido`
+ 
+ ### Etapa 5 - Construir o wizard do treino inteligente
+ 
+@@ -1243,14 +1244,14 @@ Objetivo:
+ 
+ Status:
+ 
+-- [ ] pendente
++- [~] parcialmente pronto
+ 
+ Entregas:
+ 
+-- [ ] botoes 5, 15, 30, 50
+-- [ ] tempo 15, 30, 60
+-- [ ] campo digitavel
+-- [ ] modo infinito
++- [x] botoes 5, 15, 30, 50
++- [x] tempo 15, 30, 60
++- [x] campo digitavel
++- [x] modo infinito
+ - [ ] regra do primeiro limite atingido
+ 
+ ### Etapa 7 - Guardar e consultar melhor
+@@ -1296,10 +1297,10 @@ Status:
+ - [x] Criar persistencia de `runs`
+ - [x] Criar a tela `Retomar treino`
+ - [x] Persistir sessoes em andamento
+-- [ ] Simplificar a home para 3 botoes principais
++- [x] Simplificar a home para 3 botoes principais
+ - [ ] Implementar o wizard circular do treino inteligente
+ - [ ] Criar a tela dedicada de consulta de bloco
+-- [ ] Implementar tempo e quantidade no novo fluxo inteligente
++- [~] Implementar tempo e quantidade no novo fluxo inteligente
+ - [ ] Implementar o motor adaptativo por dificuldade e revisao
+ - [ ] Refinar a tela da sessao para ficar mais limpa
+ 
+@@ -1325,6 +1326,6 @@ A proxima versao passa a ser considerada boa quando:
+ 
+ ```txt
+ Base tecnica pronta
+-Redesign de entrada pendente
+-Proxima entrega = home seca + tela 1 do wizard inteligente
++Home seca concluida
++Proxima entrega = concluir o wizard inteligente e fechar tempo/quantidade
+ ```
+diff --git a/docs/questions_status_checklist.md b/docs/questions_status_checklist.md
+index e429eac..ef4ad74 100644
+--- a/docs/questions_status_checklist.md
++++ b/docs/questions_status_checklist.md
+@@ -81,8 +81,8 @@ Direcao estrutural oficial desta fase:
+ No modulo `questions`, a etapa visual atual ficou assim:
+ 
+ - [x] simplificar a home para `Treino inteligente` e acessos mais diretos ao estudo
+-- [ ] subir `Rapido` como modo principal
+-- [ ] subir `Simulado` para a home principal
++- [x] subir `Rapido` como modo principal
++- [x] subir `Simulado` para a home principal
+ - [ ] separar `Progresso` como hub de estatisticas
+ - [x] manter a entrada circular do `Treino inteligente`
+ - [x] reduzir a tela final do treino inteligente para uma revisao curta com `objetivo`, `quantidade`, `guardar` e `comecar`
+@@ -91,8 +91,8 @@ Proxima rodada sugerida:
+ 
+ - [ ] transformar a etapa de materias em uma selecao ainda mais direta, com menos leitura auxiliar
+ - [ ] trocar a etapa atual de assuntos por um fluxo por materia, uma aberta por vez
+-- [ ] adicionar a tela curta de limites da sessao com quantidade e tempo
+-- [ ] absorver `Guardados` e `Retomar treino` dentro do `Rapido`
++- [~] adicionar a tela curta de limites da sessao com quantidade e tempo
++- [ ] absorver `Guardados` e `Retomar treino` de forma definitiva dentro do `Rapido`
+ - [ ] manter o mini player fechado por padrao e evitar flashes de tela ao abrir `questions`
+ 
+ Base ja pronta para sustentar essa etapa:
+@@ -107,10 +107,10 @@ Nova frente oficial aberta em 2026-03-31:
+ 
+ Essa frente fecha a proxima reorganizacao do produto:
+ 
+-- [ ] subir `Rapido` como modo principal
++- [x] subir `Rapido` como modo principal
+ - [ ] manter `Inteligente` como fluxo adaptativo com etapa de assuntos
+ - [ ] mover `Por assunto` para dentro de `Simulado > Montar simulado`
+-- [ ] subir `Simulado` para a home como modo oficial
++- [x] subir `Simulado` para a home como modo oficial
+ - [ ] separar `Progresso` como hub de estatisticas, e nao como modo de treino
+ - [ ] rebaixar `Guardados` e `Retomar treino` para dentro do `Rapido`
+ - [ ] executar a melhoria em blocos, sem misturar todos os modos ao mesmo tempo
+diff --git a/questions/app/application/sessionEngine.mjs b/questions/app/application/sessionEngine.mjs
+index df6f587..cfcc31c 100644
+--- a/questions/app/application/sessionEngine.mjs
++++ b/questions/app/application/sessionEngine.mjs
+@@ -432,12 +432,23 @@ export function createQuestionsSessionEngine(
+                 validation.eligibleQuestionCount
+             );
+         const estimatedDuration =
+-            current.smartQuestionCount ===
+-                null
+-                ? "Livre"
+-                : QuestionsService.getEstimatedDurationFromCount(
+-                    amount
+-                );
++            current.smartSessionMetric ===
++                "tempo"
++                ? current.smartTimeMinutes ===
++                    null
++                    ? "Livre"
++                    : `${Math.max(
++                        1,
++                        Number(
++                            current.smartTimeMinutes
++                        ) || 15
++                    )} min`
++                : current.smartQuestionCount ===
++                      null
++                    ? "Livre"
++                    : QuestionsService.getEstimatedDurationFromCount(
++                        amount
++                    );
+ 
+         return {
+             isReady: true,
+diff --git a/questions/questions.css b/questions/questions.css
+index 6b72e77..7fa6e93 100644
+--- a/questions/questions.css
++++ b/questions/questions.css
+@@ -255,6 +255,19 @@ min-height: 42px;
+ justify-self: center;
+ }
+ 
++.questions-entry-secondary-actions {
++display: flex;
++flex-wrap: wrap;
++justify-content: center;
++gap: 10px;
++margin-top: 4px;
++}
++
++.questions-entry-secondary-btn {
++min-height: 40px;
++padding-inline: 16px;
++}
++
+ .questions-entry-option::before {
+ content: "";
+ position: absolute;
+@@ -1794,7 +1807,7 @@ gap: 12px;
+ }
+ 
+ .questions-smart-config-card > .questions-smart-config-group:first-child {
+-display: none;
++display: grid;
+ }
+ 
+ .questions-smart-config-group--solo {
+@@ -3245,6 +3258,18 @@ border: 1px solid rgba(213, 223, 235, 0.84);
+ clip-path: none;
+ }
+ 
++.questions-smart-config-note em {
++font-style: normal;
++color: var(--questions-text-muted, rgba(15, 23, 42, 0.7));
++}
++
++.questions-smart-final-actions {
++display: flex;
++flex-wrap: wrap;
++gap: 12px;
++justify-content: flex-start;
++}
++
+ #questionsModule .questions-smart-core strong {
+ font-family: "Space Grotesk", "Manrope", sans-serif;
+ font-size: 48px;
+@@ -4957,6 +4982,13 @@ margin: 0;
+ font-size: clamp(1rem, 1.8vw, 1.2rem);
+ }
+ 
++.questions-direct-search-copy p {
++margin: 6px 0 0;
++font-size: 14px;
++line-height: 1.5;
++color: rgba(71, 85, 105, 0.84);
++}
++
+ .questions-direct-search-form {
+ display: grid;
+ grid-template-columns: minmax(0, 1fr) auto auto;
+diff --git a/questions/questions.js b/questions/questions.js
+index 5d1e1a7..ca38ea3 100644
+--- a/questions/questions.js
++++ b/questions/questions.js
+@@ -6695,12 +6695,23 @@ window.QuestionsPage = {
+                 validation.eligibleQuestionCount
+             );
+         const estimatedDuration =
+-            current.smartQuestionCount ===
+-                null
+-                ? "Livre"
+-                : QuestionsService.getEstimatedDurationFromCount(
+-                    amount
+-                );
++            current.smartSessionMetric ===
++                "tempo"
++                ? current.smartTimeMinutes ===
++                    null
++                    ? "Livre"
++                    : `${Math.max(
++                        1,
++                        Number(
++                            current.smartTimeMinutes
++                        ) || 15
++                    )} min`
++                : current.smartQuestionCount ===
++                      null
++                    ? "Livre"
++                    : QuestionsService.getEstimatedDurationFromCount(
++                        amount
++                    );
+ 
+         return {
+             isReady: true,
+diff --git a/questions/questions.service.js b/questions/questions.service.js
+index 94d7f36..e57a67e 100644
+--- a/questions/questions.service.js
++++ b/questions/questions.service.js
+@@ -3023,7 +3023,14 @@ window.QuestionsService = {
+     getTrainingModeLabel(
+         context = null
+     ) {
+-        return "Por quantidade";
++        const ctx =
++            context ||
++            QuestionsContext.get();
++
++        return ctx.smartSessionMetric ===
++            "tempo"
++            ? "Por tempo"
++            : "Por quantidade";
+     },
+ 
+     getTrainingValueLabel(
+@@ -3086,6 +3093,120 @@ window.QuestionsService = {
+             : requestedCount;
+     },
+ 
++    getTrainingValueLabel(
++        context = null
++    ) {
++        const ctx =
++            context ||
++            QuestionsContext.get();
++
++        if (
++            ctx.smartSessionMetric ===
++            "tempo"
++        ) {
++            if (
++                ctx.smartTimeMinutes ===
++                null
++            ) {
++                return "Livre";
++            }
++
++            return `${Math.max(
++                1,
++                Number(
++                    ctx.smartTimeMinutes
++                ) || 15
++            )} min`;
++        }
++
++        if (
++            ctx.smartQuestionCount === null
++        ) {
++            return "Livre";
++        }
++
++        return String(
++            Math.max(
++                1,
++                Number(
++                    ctx.smartQuestionCount
++                ) || 5
++            )
++        ).padStart(2, "0");
++    },
++
++    getResolvedSessionAmount(
++        page,
++        context = null,
++        availableCount = 0
++    ) {
++        const ctx =
++            context ||
++            QuestionsContext.get();
++        const safeAvailableCount =
++            Math.max(
++                Number(availableCount) || 0,
++                0
++            );
++
++        if (
++            ctx.smartSessionMetric ===
++            "tempo"
++        ) {
++            if (
++                ctx.smartTimeMinutes ===
++                null
++            ) {
++                return safeAvailableCount;
++            }
++
++            const targetMinutes =
++                Math.max(
++                    1,
++                    Number(
++                        ctx.smartTimeMinutes
++                    ) || 15
++                );
++            const timeBasedCount =
++                Math.max(
++                    1,
++                    Math.floor(
++                        (targetMinutes * 60) /
++                            25
++                    )
++                );
++
++            return safeAvailableCount
++                ? Math.min(
++                    timeBasedCount,
++                    safeAvailableCount
++                )
++                : timeBasedCount;
++        }
++
++        if (
++            ctx.smartQuestionCount === null
++        ) {
++            return safeAvailableCount;
++        }
++
++        const requestedCount =
++            Math.max(
++                1,
++                Number(
++                    ctx.smartQuestionCount ||
++                        ctx.quantidadeQuestoes
++                ) || 5
++            );
++
++        return safeAvailableCount
++            ? Math.min(
++                requestedCount,
++                safeAvailableCount
++            )
++            : requestedCount;
++    },
++
+     getLauncherValidation(page) {
+         const ctx =
+             QuestionsContext.get();
+diff --git a/questions/questions.ui.js b/questions/questions.ui.js
+index a4200d1..5aed6e1 100644
+--- a/questions/questions.ui.js
++++ b/questions/questions.ui.js
+@@ -1747,29 +1747,6 @@
+                 minAttempts: 1,
+                 minErrors: 1
+             })[0] || null;
+-        const directSearchTerms =
+-            Array.isArray(
+-                page.directSearchTerms
+-            )
+-                ? page.directSearchTerms
+-                : [];
+-        const directSearchMatchCount =
+-            typeof page.directSearchMatchCount ===
+-                "number" &&
+-            Number.isFinite(
+-                page.directSearchMatchCount
+-            )
+-                ? page.directSearchMatchCount
+-                : null;
+-        const directSearchStatusLabel =
+-            !directSearchTerms.length
+-                ? "Adicione um termo para buscar"
+-                : page.directSearchLoading
+-                    ? "Buscando questoes..."
+-                    : directSearchMatchCount ===
+-                          null
+-                        ? "Pronto para gerar"
+-                        : `${directSearchMatchCount} questoes encontradas`;
+ 
+         return `
+             <section class="questions-card questions-entry-card">
+@@ -1794,7 +1771,7 @@
+                     <article class="questions-entry-option questions-entry-option-quick">
+                         <div class="questions-entry-copy">
+                             <h3>Rapido</h3>
+-                            <p>${this.escapeHtml(recentRuns.length ? `${recentRuns.length} treino(s) pausado(s)` : "sem treino pausado")} · ${this.escapeHtml(savedBlocks.length ? `${savedBlocks.length} guardado(s)` : "sem guardados")} · ${this.escapeHtml(weakTopic ? weakTopic.topicLabel : "historico em formacao")}</p>
++                            <p>Retome, revise erros recentes e reaproveite o que ja passou pela sua rotina.</p>
+                         </div>
+                         <button class="questions-primary-btn" type="button" data-launcher-view="quick" ${isLoading || isError ? "disabled" : ""}>
+                             ${isLoading ? "Preparando..." : isError ? "Indisponivel" : "Abrir"}
+@@ -1804,6 +1781,7 @@
+                     <article class="questions-entry-option questions-entry-option-smart">
+                         <div class="questions-entry-copy">
+                             <h3>Inteligente</h3>
++                            <p>Monte uma rota adaptativa por serie, materia e assunto em etapas curtas.</p>
+                         </div>
+                         <button class="questions-primary-btn" type="button" data-launcher-view="smart_start" ${isLoading || isError ? "disabled" : ""}>
+                             ${isLoading ? "Preparando..." : isError ? "Indisponivel" : "Comecar"}
+@@ -1813,6 +1791,7 @@
+                     <article class="questions-entry-option questions-entry-option-specific">
+                         <div class="questions-entry-copy">
+                             <h3>Simulado</h3>
++                            <p>Monte um bloco controlado por materia, assunto, dificuldade e quantidade.</p>
+                         </div>
+                         <button class="questions-secondary-btn" type="button" data-launcher-view="simulado" ${isLoading || isError ? "disabled" : ""}>
+                             ${isLoading ? "Preparando..." : isError ? "Indisponivel" : "Entrar"}
+@@ -1820,47 +1799,101 @@
+                     </article>
+                 </div>
+ 
+-                <section class="questions-direct-search" aria-label="Busca direta por assunto">
+-                    <div class="questions-direct-search-copy">
+-                        <h3>Questoes por assunto</h3>
++                ${(recentRuns.length || savedBlocks.length || weakTopic) ? `
++                    <div class="questions-entry-secondary-actions" aria-label="Acessos rapidos do launcher">
++                        ${recentRuns.length ? `
++                            <button class="questions-secondary-btn questions-entry-secondary-btn" type="button" data-launcher-view="resume">
++                                Retomar treino
++                            </button>
++                        ` : ""}
++                        ${savedBlocks.length ? `
++                            <button class="questions-secondary-btn questions-entry-secondary-btn" type="button" data-launcher-view="saved">
++                                Guardados
++                            </button>
++                        ` : ""}
++                        ${weakTopic ? `
++                            <button class="questions-secondary-btn questions-entry-secondary-btn" type="button" data-launcher-view="quick">
++                                Revisar erros
++                            </button>
++                        ` : ""}
+                     </div>
++                ` : ""}
+ 
+-                    <div class="questions-direct-search-form">
+-                        <input
+-                            id="questionsDirectSearchInput"
+-                            class="questions-search-field questions-direct-search-input"
+-                            type="text"
+-                            value="${this.escapeHtml(page.directSearchInput || "")}"
+-                            placeholder="Ex.: funcao afim, organelas, predicado verbal"
+-                        />
+-                        <button class="questions-secondary-btn questions-direct-search-add" type="button" data-direct-search-add="true">
+-                            Adicionar
+-                        </button>
+-                        <button class="questions-primary-btn questions-direct-search-generate" type="button" data-direct-search-generate="true" ${directSearchTerms.length ? "" : "disabled"}>
+-                            Gerar questoes
+-                        </button>
+-                    </div>
++            </section>
++        `;
++    },
+ 
+-                    <div class="questions-direct-search-meta">
+-                        <span>${directSearchTerms.length ? `${directSearchTerms.length} filtro(s) ativo(s)` : "Nenhum filtro ativo"}</span>
+-                        <strong>${directSearchStatusLabel}</strong>
+-                    </div>
++    renderDirectSearchPanel({
++        title = "Questoes por assunto",
++        description = "Digite um ou mais termos para puxar questoes sem montar a rota completa."
++    } = {}) {
++        const page =
++            this.page;
++        const directSearchTerms =
++            Array.isArray(
++                page.directSearchTerms
++            )
++                ? page.directSearchTerms
++                : [];
++        const directSearchMatchCount =
++            typeof page.directSearchMatchCount ===
++                "number" &&
++            Number.isFinite(
++                page.directSearchMatchCount
++            )
++                ? page.directSearchMatchCount
++                : null;
++        const directSearchStatusLabel =
++            !directSearchTerms.length
++                ? "Adicione um termo para buscar"
++                : page.directSearchLoading
++                    ? "Buscando questoes..."
++                    : directSearchMatchCount ===
++                          null
++                        ? "Pronto para gerar"
++                        : `${directSearchMatchCount} questoes encontradas`;
+ 
+-                    ${directSearchTerms.length ? `
+-                        <div class="questions-chip-row questions-direct-search-chips">
+-                            ${directSearchTerms.map((term) => `
+-                                <button class="questions-chip questions-chip-removable" type="button" data-direct-search-remove="${this.escapeHtml(term)}">
+-                                    <span>${this.escapeHtml(term)}</span>
+-                                    <strong aria-hidden="true">x</strong>
+-                                </button>
+-                            `).join("")}
+-                            <button class="questions-chip questions-chip-ghost" type="button" data-direct-search-clear="true">
+-                                Limpar
+-                            </button>
+-                        </div>
+-                    ` : ""}
+-                </section>
++        return `
++            <section class="questions-direct-search" aria-label="Busca direta por assunto">
++                <div class="questions-direct-search-copy">
++                    <h3>${this.escapeHtml(title)}</h3>
++                    <p>${this.escapeHtml(description)}</p>
++                </div>
+ 
++                <div class="questions-direct-search-form">
++                    <input
++                        id="questionsDirectSearchInput"
++                        class="questions-search-field questions-direct-search-input"
++                        type="text"
++                        value="${this.escapeHtml(page.directSearchInput || "")}"
++                        placeholder="Ex.: funcao afim, organelas, predicado verbal"
++                    />
++                    <button class="questions-secondary-btn questions-direct-search-add" type="button" data-direct-search-add="true">
++                        Adicionar
++                    </button>
++                    <button class="questions-primary-btn questions-direct-search-generate" type="button" data-direct-search-generate="true" ${directSearchTerms.length ? "" : "disabled"}>
++                        Gerar questoes
++                    </button>
++                </div>
++
++                <div class="questions-direct-search-meta">
++                    <span>${directSearchTerms.length ? `${directSearchTerms.length} filtro(s) ativo(s)` : "Nenhum filtro ativo"}</span>
++                    <strong>${directSearchStatusLabel}</strong>
++                </div>
++
++                ${directSearchTerms.length ? `
++                    <div class="questions-chip-row questions-direct-search-chips">
++                        ${directSearchTerms.map((term) => `
++                            <button class="questions-chip questions-chip-removable" type="button" data-direct-search-remove="${this.escapeHtml(term)}">
++                                <span>${this.escapeHtml(term)}</span>
++                                <strong aria-hidden="true">x</strong>
++                            </button>
++                        `).join("")}
++                        <button class="questions-chip questions-chip-ghost" type="button" data-direct-search-clear="true">
++                            Limpar
++                        </button>
++                    </div>
++                ` : ""}
+             </section>
+         `;
+     },
+@@ -1943,6 +1976,11 @@
+                         </button>
+                     </article>
+                 </div>
++
++                ${this.renderDirectSearchPanel({
++                    title: "Busca direta por assunto",
++                    description: "Quando quiser pular a montagem completa, pesquise termos e gere uma rota curta daqui."
++                })}
+             </section>
+         `;
+     },
+@@ -6286,90 +6324,36 @@
+             QuestionsContext.get();
+         const smartPreview =
+             page.buildSmartRoutePreview();
+-        const smartQuestionOptions =
++        const questionOptions =
+             page.data
+                 .smartQuestionAmountOptions ||
+             [5, 15, 30, 50];
+-        const smartSelectedQuestionCount =
+-            smartCtx.smartQuestionCount === null
++        const timeOptions =
++            page.data
++                .smartTimeMinuteOptions ||
++            [15, 30, 60];
++        const selectedMetric =
++            smartCtx.smartSessionMetric ===
++            "tempo"
++                ? "tempo"
++                : "quantidade";
++        const selectedTimeMinutes =
++            smartCtx.smartTimeMinutes === null
+                 ? null
+                 : Math.max(
+                     1,
+                     Number(
+-                        smartCtx.smartQuestionCount ||
+-                            smartCtx.quantidadeQuestoes
+-                    ) || 5
++                        smartCtx.smartTimeMinutes
++                    ) || 15
+                 );
+-        return `
+-            <section class="questions-card questions-entry-subview questions-smart-final-card questions-smart-final-card-minimal questions-smart-focus-stage">
+-                <div class="questions-head questions-entry-head">
+-                    <div>
+-                        <div class="questions-kicker">Treino inteligente</div>
+-                        <div class="questions-smart-step">3/3</div>
+-                        <h2>Selecionar quantidade</h2>
+-                    </div>
+-
+-                    <div class="questions-entry-actions questions-smart-entry-actions">
+-                        <button class="questions-secondary-btn questions-review-btn questions-smart-back-btn" type="button" data-launcher-back="true">Voltar</button>
+-                    </div>
+-                </div>
+-
+-                ${page.getRuntimeNotice() ? `
+-                    <div class="questions-inline-notice">
+-                        ${page.getRuntimeNotice()}
+-                    </div>
+-                ` : ""}
+-
+-                <section class="questions-smart-config-card">
+-                    <div class="questions-smart-config-group questions-smart-config-group--solo">
+-                        <div class="questions-panel-label">Quantidade de questões</div>
+-                        <div class="questions-smart-config-grid questions-smart-config-grid--quantity">
+-                            ${smartQuestionOptions.map((amount) => `
+-                                <button class="questions-pill${smartSelectedQuestionCount === amount ? " is-active" : ""}" type="button" data-smart-question-count="${amount}" aria-pressed="${smartSelectedQuestionCount === amount ? "true" : "false"}">
+-                                    ${String(amount).padStart(2, "0")}
+-                                </button>
+-                            `).join("")}
+-                            <button class="questions-pill questions-pill-infinity questions-pill-infinity--large${smartSelectedQuestionCount === null ? " is-active" : ""}" type="button" data-smart-question-infinite="true" aria-label="Sem limite" aria-pressed="${smartSelectedQuestionCount === null ? "true" : "false"}"></button>
+-                        </div>
+-                    </div>
+-
+-                    ${smartPreview.isReady ? `
+-                        <div class="questions-smart-config-note">
+-                            <span>${smartPreview.serieLabel} &middot; ${smartPreview.materiaLabel}</span>
+-                        </div>
+-                    ` : `
+-                        <div class="questions-issue-list">
+-                            ${(smartPreview.issues || [smartPreview.reason]).map((issue) => `
+-                                <div class="questions-issue-item">${issue}</div>
+-                            `).join("")}
+-                        </div>
+-                    `}
+-
+-                    <button id="questionsSmartSavePresetStartBtn" class="questions-primary-btn questions-smart-start-btn-minimal questions-smart-focus-start" type="button" ${smartPreview.isReady ? "" : "disabled"}>
+-                        Salvar predefinicao
+-                    </button>
+-                </section>
+-            </section>
+-        `;
+-
+-        const ctx =
+-            QuestionsContext.get();
+-        const preview =
+-            page.buildSmartRoutePreview();
+-        const timeOptions = [];
+-        const selectedTimeMinutes =
+-            15;
+-        const questionOptions =
+-            page.data
+-                .smartQuestionAmountOptions ||
+-            [5, 15, 30];
+         const selectedQuestionCount =
+-            ctx.smartQuestionCount === null
++            smartCtx.smartQuestionCount ===
++                null
+                 ? null
+                 : Math.max(
+                     1,
+                     Number(
+-                        ctx.smartQuestionCount
++                        smartCtx.smartQuestionCount
+                     ) || 5
+                 );
+         const isCustomQuestionActive =
+@@ -6379,7 +6363,10 @@
+                 selectedQuestionCount
+             );
+         const isCustomTimeActive =
+-            false;
++            selectedTimeMinutes !== null &&
++            !timeOptions.includes(
++                selectedTimeMinutes
++            );
+ 
+         return `
+             <section class="questions-card questions-entry-subview questions-smart-final-card questions-smart-final-card-minimal questions-smart-focus-stage">
+@@ -6387,7 +6374,7 @@
+                     <div>
+                         <div class="questions-kicker">Treino inteligente</div>
+                         <div class="questions-smart-step">3/3</div>
+-                        <h2>Selecionar quantidade</h2>
++                        <h2>Definir limite da sessão</h2>
+                     </div>
+ 
+                     <div class="questions-entry-actions questions-smart-entry-actions">
+@@ -6402,23 +6389,37 @@
+                 ` : ""}
+ 
+                 <section class="questions-smart-config-card">
+-                    <div class="questions-smart-config-group">
+-                        <div class="questions-panel-label">Quantidade de questões</div>
+-                        <div class="questions-smart-config-grid questions-smart-config-grid--quantity">
+-                            ${timeOptions.map((minutes) => `
+-                                <button class="questions-pill${ctx.smartSessionMetric === "tempo" && selectedTimeMinutes === minutes ? " is-active" : ""}" type="button" data-smart-time="${minutes}">
+-                                    ${minutes}
+-                                </button>
+-                            `).join("")}
+-                            <label class="questions-smart-custom-field${isCustomTimeActive ? " is-active" : ""}">
+-                                <input id="questionsSmartTimeInput" type="number" min="1" step="1" inputmode="numeric" value="${isCustomTimeActive ? selectedTimeMinutes : ""}" placeholder="min">
+-                            </label>
+-                            <button class="questions-pill questions-pill-infinity${ctx.smartSessionMetric === "tempo" && selectedTimeMinutes === null ? " is-active" : ""}" type="button" data-smart-time-infinite="true">
+-                                8
++                    <div class="questions-smart-config-group questions-smart-config-group--mode">
++                        <div class="questions-panel-label">Modo do treino</div>
++                        <div class="questions-smart-config-switch">
++                            <button class="questions-pill${selectedMetric === "quantidade" ? " is-active" : ""}" type="button" data-smart-session-metric="quantidade" aria-pressed="${selectedMetric === "quantidade" ? "true" : "false"}">
++                                Quantidade
++                            </button>
++                            <button class="questions-pill${selectedMetric === "tempo" ? " is-active" : ""}" type="button" data-smart-session-metric="tempo" aria-pressed="${selectedMetric === "tempo" ? "true" : "false"}">
++                                Tempo
+                             </button>
+                         </div>
+                     </div>
+ 
++                    ${selectedMetric === "tempo" ? `
++                        <div class="questions-smart-config-group questions-smart-config-group--solo">
++                            <div class="questions-panel-label">Tempo disponível</div>
++                            <div class="questions-smart-config-grid questions-smart-config-grid--quantity">
++                                ${timeOptions.map((minutes) => `
++                                    <button class="questions-pill${selectedTimeMinutes === minutes ? " is-active" : ""}" type="button" data-smart-time="${minutes}" aria-pressed="${selectedTimeMinutes === minutes ? "true" : "false"}">
++                                        ${minutes}m
++                                    </button>
++                                `).join("")}
++                                <label class="questions-smart-custom-field questions-smart-custom-field--large${isCustomTimeActive ? " is-active" : ""}" data-smart-time-custom="true">
++                                    <span class="questions-smart-custom-label">Outro</span>
++                                    <input id="questionsSmartTimeInput" type="number" min="1" step="1" inputmode="numeric" value="${isCustomTimeActive ? selectedTimeMinutes : ""}" placeholder="min">
++                                </label>
++                                <button class="questions-pill questions-pill-infinity${selectedTimeMinutes === null ? " is-active" : ""}" type="button" data-smart-time-infinite="true" aria-label="Sem limite de tempo" aria-pressed="${selectedTimeMinutes === null ? "true" : "false"}">
++                                    Livre
++                                </button>
++                            </div>
++                        </div>
++                    ` : `
+                     <div class="questions-smart-config-group">
+                         <div class="questions-panel-label">Quantidade de questões</div>
+                         <div class="questions-smart-config-grid questions-smart-config-grid--quantity">
+@@ -6427,31 +6428,38 @@
+                                     ${String(amount).padStart(2, "0")}
+                                 </button>
+                             `).join("")}
+-                            <label class="questions-smart-custom-field questions-smart-custom-field--large${isCustomQuestionActive ? " is-active" : ""}">
++                            <label class="questions-smart-custom-field questions-smart-custom-field--large${isCustomQuestionActive ? " is-active" : ""}" data-smart-question-custom="true">
++                                <span class="questions-smart-custom-label">Outro</span>
+                                 <input id="questionsSmartQuestionInput" type="number" min="1" step="1" inputmode="numeric" value="${isCustomQuestionActive ? selectedQuestionCount : ""}" placeholder="n">
+                             </label>
+                             <button class="questions-pill questions-pill-infinity questions-pill-infinity--large${selectedQuestionCount === null ? " is-active" : ""}" type="button" data-smart-question-infinite="true" aria-label="Sem limite">
+-                                8
+                             </button>
+                         </div>
+                     </div>
++                    `}
+ 
+-                    ${preview.isReady ? `
++                    ${smartPreview.isReady ? `
+                         <div class="questions-smart-config-note">
+-                            <span>${preview.serieLabel} • ${preview.materiaLabel}</span>
+-                            <strong>${preview.trainingValueLabel === "8" ? "Todas as questões disponíveis" : `${preview.amount || 0} questões previstas`}</strong>
++                            <span>${smartPreview.serieLabel} • ${smartPreview.materiaLabel}</span>
++                            <strong>${smartPreview.trainingModeLabel}: ${smartPreview.trainingValueLabel}</strong>
++                            <em>${smartPreview.amount || 0} questões previstas • ${smartPreview.estimatedDuration}</em>
+                         </div>
+                     ` : `
+                         <div class="questions-issue-list">
+-                            ${(preview.issues || [preview.reason]).map((issue) => `
++                            ${(smartPreview.issues || [smartPreview.reason]).map((issue) => `
+                                 <div class="questions-issue-item">${issue}</div>
+                             `).join("")}
+                         </div>
+                     `}
+ 
+-                    <button id="questionsSmartSavePresetStartBtn" class="questions-primary-btn questions-smart-start-btn-minimal questions-smart-focus-start" type="button" ${preview.isReady ? "" : "disabled"}>
+-                        Salvar predefinicao
+-                    </button>
++                    <div class="questions-smart-final-actions">
++                        <button id="questionsSmartStartBtn" class="questions-secondary-btn questions-smart-start-btn-minimal" type="button" ${smartPreview.isReady ? "" : "disabled"}>
++                            Comecar agora
++                        </button>
++                        <button id="questionsSmartSavePresetStartBtn" class="questions-primary-btn questions-smart-start-btn-minimal questions-smart-focus-start" type="button" ${smartPreview.isReady ? "" : "disabled"}>
++                            Guardar e comecar
++                        </button>
++                    </div>
+                 </section>
+             </section>
+         `;
+@@ -8367,6 +8375,301 @@
+             }
+         );
+ 
++        document
++            .querySelectorAll(
++                "[data-smart-session-metric]"
++            )
++            .forEach((button) => {
++                button.addEventListener(
++                    "click",
++                    () => {
++                        this.page.setSmartSessionMetric(
++                            button.dataset
++                                .smartSessionMetric
++                        );
++                    }
++                );
++            });
++
++        document
++            .querySelectorAll(
++                "[data-smart-time]"
++            )
++            .forEach((button) => {
++                button.addEventListener(
++                    "click",
++                    () => {
++                        document
++                            .querySelectorAll(
++                                "[data-smart-time], [data-smart-time-infinite]"
++                            )
++                            .forEach(
++                                (item) => {
++                                    item.classList.remove(
++                                        "is-active"
++                                    );
++                                    item.setAttribute(
++                                        "aria-pressed",
++                                        "false"
++                                    );
++                                }
++                            );
++                        button.classList.add(
++                            "is-active"
++                        );
++                        button.setAttribute(
++                            "aria-pressed",
++                            "true"
++                        );
++                        this.page.setSmartTimeMinutes(
++                            Number(
++                                button.dataset
++                                    .smartTime
++                            )
++                        );
++                    }
++                );
++            });
++
++        const smartTimeInput =
++            document.getElementById(
++                "questionsSmartTimeInput"
++            );
++        const smartTimeCustomField =
++            smartTimeInput?.closest(
++                "[data-smart-time-custom]"
++            ) || null;
++        const smartTimePresetButtons =
++            [
++                ...document.querySelectorAll(
++                    "[data-smart-time], [data-smart-time-infinite]"
++                )
++            ];
++        const smartTimePresetValues =
++            this.page.data
++                .smartTimeMinuteOptions ||
++            [15, 30, 60];
++
++        const setSmartTimeEditingState =
++            (isEditing) => {
++                if (
++                    !smartTimeCustomField
++                ) {
++                    return;
++                }
++
++                smartTimeCustomField.classList.toggle(
++                    "is-editing",
++                    Boolean(isEditing)
++                );
++
++                if (!isEditing) {
++                    return;
++                }
++
++                smartTimePresetButtons.forEach(
++                    (button) => {
++                        button.classList.remove(
++                            "is-active"
++                        );
++                    }
++                );
++            };
++
++        smartTimeCustomField?.addEventListener(
++            "click",
++            () => {
++                smartTimeInput?.focus();
++                smartTimeInput?.select();
++                setSmartTimeEditingState(
++                    true
++                );
++            }
++        );
++
++        smartTimeInput?.addEventListener(
++            "focus",
++            () => {
++                setSmartTimeEditingState(
++                    true
++                );
++                smartTimeInput.select();
++            }
++        );
++
++        smartTimeInput?.addEventListener(
++            "click",
++            () => {
++                setSmartTimeEditingState(
++                    true
++                );
++            }
++        );
++
++        smartTimeInput?.addEventListener(
++            "input",
++            (event) => {
++                const value =
++                    String(
++                        event.target
++                            ?.value || ""
++                    )
++                        .replace(/\D+/g, "")
++                        .slice(0, 4);
++
++                event.target.value = value;
++                setSmartTimeEditingState(
++                    true
++                );
++            }
++        );
++
++        smartTimeInput?.addEventListener(
++            "change",
++            (event) => {
++                const value =
++                    String(
++                        event.target
++                            ?.value || ""
++                    )
++                        .replace(/\D+/g, "")
++                        .slice(0, 4);
++
++                event.target.value = value;
++
++                if (!value) {
++                    return;
++                }
++
++                this.page.setSmartTimeMinutes(
++                    Number(value)
++                );
++            }
++        );
++
++        smartTimeInput?.addEventListener(
++            "blur",
++            (event) => {
++                const value =
++                    String(
++                        event.target
++                            ?.value || ""
++                    )
++                        .replace(/\D+/g, "")
++                        .slice(0, 4);
++
++                event.target.value = value;
++
++                if (value) {
++                    this.page.setSmartTimeMinutes(
++                        Number(value)
++                    );
++                }
++            }
++        );
++
++        smartTimeInput?.addEventListener(
++            "keydown",
++            (event) => {
++                if (event.key !== "Enter") {
++                    return;
++                }
++
++                event.preventDefault();
++                const value =
++                    String(
++                        event.target
++                            ?.value || ""
++                    )
++                        .replace(/\D+/g, "")
++                        .slice(0, 4);
++
++                event.target.value = value;
++
++                if (!value) {
++                    return;
++                }
++
++                this.page.setSmartTimeMinutes(
++                    Number(value)
++                );
++            }
++        );
++
++        smartTimeInput?.addEventListener(
++            "blur",
++            () => {
++                window.setTimeout(() => {
++                    if (
++                        document.activeElement ===
++                        smartTimeInput
++                    ) {
++                        return;
++                    }
++
++                    const currentValue =
++                        String(
++                            smartTimeInput.value ||
++                                ""
++                        ).trim();
++                    const currentContext =
++                        QuestionsContext.get();
++                    const isCustomSelected =
++                        currentContext.smartTimeMinutes !==
++                            null &&
++                        !smartTimePresetValues.includes(
++                            Number(
++                                currentContext.smartTimeMinutes
++                            )
++                        );
++
++                    setSmartTimeEditingState(
++                        Boolean(
++                            currentValue ||
++                            isCustomSelected
++                        )
++                    );
++                }, 0);
++            }
++        );
++
++        document
++            .querySelectorAll(
++                "[data-smart-time-infinite]"
++            )
++            .forEach((button) => {
++                button.addEventListener(
++                    "click",
++                    () => {
++                        document
++                            .querySelectorAll(
++                                "[data-smart-time], [data-smart-time-infinite]"
++                            )
++                            .forEach(
++                                (item) => {
++                                    item.classList.remove(
++                                        "is-active"
++                                    );
++                                    item.setAttribute(
++                                        "aria-pressed",
++                                        "false"
++                                    );
++                                }
++                            );
++                        button.classList.add(
++                            "is-active"
++                        );
++                        button.setAttribute(
++                            "aria-pressed",
++                            "true"
++                        );
++                        this.page.setSmartTimeMinutes(
++                            null
++                        );
++                    }
++                );
++            });
++
+         document
+             .querySelectorAll(
+                 "[data-smart-question-count]"

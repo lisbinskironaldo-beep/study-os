@@ -1306,14 +1306,18 @@ window.QuestionsService = {
                 0
             );
         const requestedCount =
-            Number(
-                ctx.quantidadeQuestoes || 5
-            );
-        const readyCount =
-            Math.min(
-                requestedCount,
+            this.getResolvedSessionAmount(
+                page,
+                ctx,
                 eligibleQuestionCount
             );
+        const readyCount =
+            eligibleQuestionCount
+                ? Math.min(
+                    requestedCount,
+                    eligibleQuestionCount
+                )
+                : requestedCount;
         const issues = [];
 
         if (
@@ -3020,13 +3024,7 @@ window.QuestionsService = {
         return `${minutes} min`;
     },
 
-    getTrainingModeLabel(
-        context = null
-    ) {
-        return "Por quantidade";
-    },
-
-    getTrainingValueLabel(
+    getSmartQuestionLimit(
         context = null
     ) {
         const ctx =
@@ -3036,17 +3034,104 @@ window.QuestionsService = {
         if (
             ctx.smartQuestionCount === null
         ) {
-            return "∞";
+            return null;
         }
 
-        return String(
-            Math.max(
-                1,
-                Number(
-                    ctx.smartQuestionCount
-                ) || 5
-            )
-        ).padStart(2, "0");
+        return Math.max(
+            1,
+            Number(
+                ctx.smartQuestionCount ||
+                    ctx.quantidadeQuestoes
+            ) || 5
+        );
+    },
+
+    getSmartTimeLimitMinutes(
+        context = null
+    ) {
+        const ctx =
+            context ||
+            QuestionsContext.get();
+
+        if (
+            ctx.smartTimeMinutes === null
+        ) {
+            return null;
+        }
+
+        return Math.max(
+            1,
+            Number(
+                ctx.smartTimeMinutes
+            ) || 15
+        );
+    },
+
+    getTrainingModeLabel(
+        context = null
+    ) {
+        const questionLimit =
+            this.getSmartQuestionLimit(
+                context
+            );
+        const timeLimitMinutes =
+            this.getSmartTimeLimitMinutes(
+                context
+            );
+
+        if (
+            questionLimit !== null &&
+            timeLimitMinutes !== null
+        ) {
+            return "Primeiro limite";
+        }
+
+        if (questionLimit !== null) {
+            return "Por quantidade";
+        }
+
+        if (timeLimitMinutes !== null) {
+            return "Por tempo";
+        }
+
+        return "Livre";
+    },
+
+    getTrainingValueLabel(
+        context = null
+    ) {
+        const questionLimit =
+            this.getSmartQuestionLimit(
+                context
+            );
+        const timeLimitMinutes =
+            this.getSmartTimeLimitMinutes(
+                context
+            );
+
+        if (
+            questionLimit !== null &&
+            timeLimitMinutes !== null
+        ) {
+            return `${String(
+                questionLimit
+            ).padStart(
+                2,
+                "0"
+            )} questoes ou ${timeLimitMinutes} min`;
+        }
+
+        if (questionLimit !== null) {
+            return `${String(
+                questionLimit
+            ).padStart(2, "0")} questoes`;
+        }
+
+        if (timeLimitMinutes !== null) {
+            return `${timeLimitMinutes} min`;
+        }
+
+        return "Livre";
     },
 
     getResolvedSessionAmount(
@@ -3062,21 +3147,39 @@ window.QuestionsService = {
                 Number(availableCount) || 0,
                 0
             );
+        const questionLimit =
+            this.getSmartQuestionLimit(ctx);
+        const timeLimitMinutes =
+            this.getSmartTimeLimitMinutes(
+                ctx
+            );
+        const limits = [];
 
-        if (
-            ctx.smartQuestionCount === null
-        ) {
+        if (questionLimit !== null) {
+            limits.push(questionLimit);
+        }
+
+        if (timeLimitMinutes !== null) {
+            const targetMinutes =
+                Math.max(1, timeLimitMinutes);
+            const timeBasedCount =
+                Math.max(
+                    1,
+                    Math.floor(
+                        (targetMinutes * 60) /
+                            25
+                    )
+                );
+
+            limits.push(timeBasedCount);
+        }
+
+        if (!limits.length) {
             return safeAvailableCount;
         }
 
         const requestedCount =
-            Math.max(
-                1,
-                Number(
-                    ctx.smartQuestionCount ||
-                        ctx.quantidadeQuestoes
-                ) || 5
-            );
+            Math.min(...limits);
 
         return safeAvailableCount
             ? Math.min(
@@ -3729,6 +3832,10 @@ window.QuestionsService = {
                 strategy?.label || "",
             availableCount:
                 validation.availableCount,
+            smartTimeLimitMinutes:
+                this.getSmartTimeLimitMinutes(
+                    ctx
+                ),
             estimatedDuration:
                 validation.estimatedDuration
         };
@@ -4318,3 +4425,5 @@ window.QuestionsService = {
         };
     }
 };
+
+

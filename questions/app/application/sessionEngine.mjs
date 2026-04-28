@@ -431,13 +431,19 @@ export function createQuestionsSessionEngine(
                 current,
                 validation.eligibleQuestionCount
             );
+        const smartTimeLimitMinutes =
+            QuestionsService.getSmartTimeLimitMinutes(
+                current
+            );
         const estimatedDuration =
-            current.smartQuestionCount ===
-                null
-                ? "Livre"
-                : QuestionsService.getEstimatedDurationFromCount(
-                    amount
-                );
+            smartTimeLimitMinutes !== null
+                ? `ate ${smartTimeLimitMinutes} min`
+                : current.smartQuestionCount ===
+                      null
+                    ? "Livre"
+                    : QuestionsService.getEstimatedDurationFromCount(
+                        amount
+                    );
 
         return {
             isReady: true,

@@ -1747,6 +1747,87 @@
                 minAttempts: 1,
                 minErrors: 1
             })[0] || null;
+        const quickSignals =
+            [
+                recentRuns.length
+                    ? `${recentRuns.length} retomada${recentRuns.length > 1 ? "s" : ""}`
+                    : "",
+                savedBlocks.length
+                    ? `${savedBlocks.length} guardado${savedBlocks.length > 1 ? "s" : ""}`
+                    : "",
+                weakTopic
+                    ? "revisar erros"
+                    : ""
+            ].filter(Boolean);
+
+        return `
+            <section class="questions-card questions-entry-card">
+                <div class="questions-head questions-entry-head">
+                    <div>
+                        <div class="questions-kicker">Questions</div>
+                        <h2>Como quer estudar agora?</h2>
+                    </div>
+
+                    <div class="questions-entry-actions">
+                        <button id="questionsModuleBackBtn" class="questions-secondary-btn" type="button">Voltar</button>
+                    </div>
+                </div>
+
+                ${launcherNotice ? `
+                    <div class="questions-inline-notice">
+                        ${launcherNotice}
+                    </div>
+                ` : ""}
+
+                <div class="questions-entry-grid">
+                    <article class="questions-entry-option questions-entry-option-quick">
+                        <div class="questions-entry-copy">
+                            <h3>Rapido</h3>
+                            <p>Retome, revise erros recentes e reaproveite o que ja passou pela sua rotina.</p>
+                            ${quickSignals.length ? `
+                                <div class="questions-entry-inline-signals" aria-label="Disponivel dentro do modo rapido">
+                                    ${quickSignals.map((signal) => `
+                                        <span class="questions-entry-inline-signal">${this.escapeHtml(signal)}</span>
+                                    `).join("")}
+                                </div>
+                            ` : ""}
+                        </div>
+                        <button class="questions-primary-btn" type="button" data-launcher-view="quick" ${isLoading || isError ? "disabled" : ""}>
+                            ${isLoading ? "Preparando..." : isError ? "Indisponivel" : "Abrir"}
+                        </button>
+                    </article>
+
+                    <article class="questions-entry-option questions-entry-option-smart">
+                        <div class="questions-entry-copy">
+                            <h3>Inteligente</h3>
+                            <p>Monte uma rota adaptativa por serie, materia e assunto em etapas curtas.</p>
+                        </div>
+                        <button class="questions-primary-btn" type="button" data-launcher-view="smart_start" ${isLoading || isError ? "disabled" : ""}>
+                            ${isLoading ? "Preparando..." : isError ? "Indisponivel" : "Comecar"}
+                        </button>
+                    </article>
+
+                    <article class="questions-entry-option questions-entry-option-specific">
+                        <div class="questions-entry-copy">
+                            <h3>Simulado</h3>
+                            <p>Monte um bloco controlado por materia, assunto, dificuldade e quantidade.</p>
+                        </div>
+                        <button class="questions-secondary-btn" type="button" data-launcher-view="simulado" ${isLoading || isError ? "disabled" : ""}>
+                            ${isLoading ? "Preparando..." : isError ? "Indisponivel" : "Entrar"}
+                        </button>
+                    </article>
+                </div>
+
+            </section>
+        `;
+    },
+
+    renderDirectSearchPanel({
+        title = "Questoes por assunto",
+        description = "Digite um ou mais termos para puxar questoes sem montar a rota completa."
+    } = {}) {
+        const page =
+            this.page;
         const directSearchTerms =
             Array.isArray(
                 page.directSearchTerms
@@ -1772,95 +1853,46 @@
                         : `${directSearchMatchCount} questoes encontradas`;
 
         return `
-            <section class="questions-card questions-entry-card">
-                <div class="questions-head questions-entry-head">
-                    <div>
-                        <div class="questions-kicker">Questions</div>
-                        <h2>Como quer estudar agora?</h2>
-                    </div>
-
-                    <div class="questions-entry-actions">
-                        <button id="questionsModuleBackBtn" class="questions-secondary-btn" type="button">Voltar</button>
-                    </div>
+            <section class="questions-direct-search" aria-label="Busca direta por assunto">
+                <div class="questions-direct-search-copy">
+                    <h3>${this.escapeHtml(title)}</h3>
+                    <p>${this.escapeHtml(description)}</p>
                 </div>
 
-                ${launcherNotice ? `
-                    <div class="questions-inline-notice">
-                        ${launcherNotice}
+                <div class="questions-direct-search-form">
+                    <input
+                        id="questionsDirectSearchInput"
+                        class="questions-search-field questions-direct-search-input"
+                        type="text"
+                        value="${this.escapeHtml(page.directSearchInput || "")}"
+                        placeholder="Ex.: funcao afim, organelas, predicado verbal"
+                    />
+                    <button class="questions-secondary-btn questions-direct-search-add" type="button" data-direct-search-add="true">
+                        Adicionar
+                    </button>
+                    <button class="questions-primary-btn questions-direct-search-generate" type="button" data-direct-search-generate="true" ${directSearchTerms.length ? "" : "disabled"}>
+                        Gerar questoes
+                    </button>
+                </div>
+
+                <div class="questions-direct-search-meta">
+                    <span>${directSearchTerms.length ? `${directSearchTerms.length} filtro(s) ativo(s)` : "Nenhum filtro ativo"}</span>
+                    <strong>${directSearchStatusLabel}</strong>
+                </div>
+
+                ${directSearchTerms.length ? `
+                    <div class="questions-chip-row questions-direct-search-chips">
+                        ${directSearchTerms.map((term) => `
+                            <button class="questions-chip questions-chip-removable" type="button" data-direct-search-remove="${this.escapeHtml(term)}">
+                                <span>${this.escapeHtml(term)}</span>
+                                <strong aria-hidden="true">x</strong>
+                            </button>
+                        `).join("")}
+                        <button class="questions-chip questions-chip-ghost" type="button" data-direct-search-clear="true">
+                            Limpar
+                        </button>
                     </div>
                 ` : ""}
-
-                <div class="questions-entry-grid">
-                    <article class="questions-entry-option questions-entry-option-quick">
-                        <div class="questions-entry-copy">
-                            <h3>Rapido</h3>
-                            <p>${this.escapeHtml(recentRuns.length ? `${recentRuns.length} treino(s) pausado(s)` : "sem treino pausado")} · ${this.escapeHtml(savedBlocks.length ? `${savedBlocks.length} guardado(s)` : "sem guardados")} · ${this.escapeHtml(weakTopic ? weakTopic.topicLabel : "historico em formacao")}</p>
-                        </div>
-                        <button class="questions-primary-btn" type="button" data-launcher-view="quick" ${isLoading || isError ? "disabled" : ""}>
-                            ${isLoading ? "Preparando..." : isError ? "Indisponivel" : "Abrir"}
-                        </button>
-                    </article>
-
-                    <article class="questions-entry-option questions-entry-option-smart">
-                        <div class="questions-entry-copy">
-                            <h3>Inteligente</h3>
-                        </div>
-                        <button class="questions-primary-btn" type="button" data-launcher-view="smart_start" ${isLoading || isError ? "disabled" : ""}>
-                            ${isLoading ? "Preparando..." : isError ? "Indisponivel" : "Comecar"}
-                        </button>
-                    </article>
-
-                    <article class="questions-entry-option questions-entry-option-specific">
-                        <div class="questions-entry-copy">
-                            <h3>Simulado</h3>
-                        </div>
-                        <button class="questions-secondary-btn" type="button" data-launcher-view="simulado" ${isLoading || isError ? "disabled" : ""}>
-                            ${isLoading ? "Preparando..." : isError ? "Indisponivel" : "Entrar"}
-                        </button>
-                    </article>
-                </div>
-
-                <section class="questions-direct-search" aria-label="Busca direta por assunto">
-                    <div class="questions-direct-search-copy">
-                        <h3>Questoes por assunto</h3>
-                    </div>
-
-                    <div class="questions-direct-search-form">
-                        <input
-                            id="questionsDirectSearchInput"
-                            class="questions-search-field questions-direct-search-input"
-                            type="text"
-                            value="${this.escapeHtml(page.directSearchInput || "")}"
-                            placeholder="Ex.: funcao afim, organelas, predicado verbal"
-                        />
-                        <button class="questions-secondary-btn questions-direct-search-add" type="button" data-direct-search-add="true">
-                            Adicionar
-                        </button>
-                        <button class="questions-primary-btn questions-direct-search-generate" type="button" data-direct-search-generate="true" ${directSearchTerms.length ? "" : "disabled"}>
-                            Gerar questoes
-                        </button>
-                    </div>
-
-                    <div class="questions-direct-search-meta">
-                        <span>${directSearchTerms.length ? `${directSearchTerms.length} filtro(s) ativo(s)` : "Nenhum filtro ativo"}</span>
-                        <strong>${directSearchStatusLabel}</strong>
-                    </div>
-
-                    ${directSearchTerms.length ? `
-                        <div class="questions-chip-row questions-direct-search-chips">
-                            ${directSearchTerms.map((term) => `
-                                <button class="questions-chip questions-chip-removable" type="button" data-direct-search-remove="${this.escapeHtml(term)}">
-                                    <span>${this.escapeHtml(term)}</span>
-                                    <strong aria-hidden="true">x</strong>
-                                </button>
-                            `).join("")}
-                            <button class="questions-chip questions-chip-ghost" type="button" data-direct-search-clear="true">
-                                Limpar
-                            </button>
-                        </div>
-                    ` : ""}
-                </section>
-
             </section>
         `;
     },
@@ -1943,6 +1975,11 @@
                         </button>
                     </article>
                 </div>
+
+                ${this.renderDirectSearchPanel({
+                    title: "Busca direta por assunto",
+                    description: "Quando quiser pular a montagem completa, pesquise termos e gere uma rota curta daqui."
+                })}
             </section>
         `;
     },
@@ -6067,6 +6104,13 @@
                 ` : ""}
 
                 ${subjectOptions.length ? `
+                    <div class="questions-smart-subject-summary">
+                        <div class="questions-smart-subject-summary-copy">
+                            <strong>${activeCount} materia(s) ativas de ${subjectOptions.length}</strong>
+                            <span>Toque no anel para ligar ou desligar materias. Use <strong>Assunto</strong> so quando quiser lapidar o recorte.</span>
+                        </div>
+                    </div>
+
                     <div class="questions-smart-start-shell${editorSubject ? " is-topic-editor-open" : ""}">
                         <button id="questionsSmartSubjectsSelectAllBtn" class="questions-smart-ring-toggle${allActive ? " is-active" : ""}" type="button">
                             ${allActive ? "Desmarcar" : "Marcar todas"}
@@ -6078,7 +6122,7 @@
                                     <div class="questions-smart-topic-editor-copy">
                                         <span class="questions-kicker">Assuntos da materia</span>
                                         <strong>${this.escapeHtml(editorSubject.label)}</strong>
-                                        <p>Desmarque o que voce nao quer levar para este treino inteligente.</p>
+                                        <p>Desligue so o que voce nao quer levar agora.</p>
                                     </div>
 
                                     <div class="questions-smart-topic-editor-actions">
@@ -6185,8 +6229,8 @@
                                 <div class="questions-smart-topic-review-head">
                                     <div>
                                         <span class="questions-kicker">Antes de gerar</span>
-                                        <h3>Revise os assuntos das materias selecionadas</h3>
-                                        <p>Desmarque o que nao quer levar. Se estiver tudo certo, seguimos com todos os assuntos ativos.</p>
+                                        <h3>Revise os assuntos da materia atual</h3>
+                                        <p>Seguimos uma materia por vez para o ajuste ficar rapido.</p>
                                     </div>
                                     <div class="questions-smart-topic-review-summary">
                                         <strong>${reviewModel.activeSubjects.length}</strong>
@@ -6197,28 +6241,35 @@
                                 </div>
 
                                 <div class="questions-smart-topic-review-list">
-                                    ${reviewModel.activeSubjects.map((subject) => `
+                                    ${reviewModel.currentSubject ? `
                                         <article class="questions-smart-topic-review-group">
+                                            <div class="questions-smart-topic-review-progress">
+                                                <span>Matéria ${reviewModel.currentIndex + 1} de ${reviewModel.totalSubjects}</span>
+                                                <strong>${this.escapeHtml(reviewModel.currentSubject.label)}</strong>
+                                            </div>
                                             <div class="questions-smart-topic-review-group-head">
                                                 <div>
-                                                    <strong>${this.escapeHtml(subject.label)}</strong>
-                                                    <span>${subject.selectedTopicCount} assunto(s) ativo(s)</span>
+                                                    <strong>${this.escapeHtml(reviewModel.currentSubject.label)}</strong>
+                                                    <span>${reviewModel.currentSubject.selectedTopicCount} assunto(s) ativo(s)</span>
                                                 </div>
                                                 <div class="questions-smart-topic-review-group-actions">
-                                                    <button class="questions-smart-topic-editor-btn" type="button" data-smart-topic-editor-select-all="${this.escapeHtml(subject.key)}">
+                                                    <button class="questions-smart-topic-editor-btn" type="button" data-smart-subject="${this.escapeHtml(reviewModel.currentSubject.key)}">
+                                                        Excluir materia
+                                                    </button>
+                                                    <button class="questions-smart-topic-editor-btn" type="button" data-smart-topic-editor-select-all="${this.escapeHtml(reviewModel.currentSubject.key)}">
                                                         Todos
                                                     </button>
-                                                    <button class="questions-smart-topic-editor-btn" type="button" data-smart-topic-editor-clear-all="${this.escapeHtml(subject.key)}">
+                                                    <button class="questions-smart-topic-editor-btn" type="button" data-smart-topic-editor-clear-all="${this.escapeHtml(reviewModel.currentSubject.key)}">
                                                         Limpar
                                                     </button>
                                                 </div>
                                             </div>
                                             <div class="questions-smart-topic-review-topic-grid">
-                                                ${subject.topicOptions.map((topic) => `
+                                                ${reviewModel.currentSubject.topicOptions.map((topic) => `
                                                     <button
                                                         class="questions-smart-topic-row${topic.active ? " is-active" : " is-excluded"}"
                                                         type="button"
-                                                        data-smart-topic-subject="${this.escapeHtml(subject.key)}"
+                                                        data-smart-topic-subject="${this.escapeHtml(reviewModel.currentSubject.key)}"
                                                         data-smart-topic-toggle="${this.escapeHtml(topic.key)}"
                                                     >
                                                         <span class="questions-smart-topic-row-check" aria-hidden="true"></span>
@@ -6230,12 +6281,27 @@
                                                 `).join("")}
                                             </div>
                                         </article>
-                                    `).join("")}
+                                    ` : `
+                                        <div class="questions-empty-inline questions-empty-inline-soft">
+                                            Nenhuma materia ativa ficou disponivel para revisar.
+                                        </div>
+                                    `}
                                 </div>
 
                                 <div class="questions-smart-topic-review-foot">
+                                    <div class="questions-smart-topic-review-nav">
+                                        <button class="questions-secondary-btn" type="button" data-smart-topic-review-prev="true" ${reviewModel.hasPrevious ? "" : "disabled"}>
+                                            Anterior
+                                        </button>
+                                        <button class="questions-secondary-btn" type="button" data-smart-topic-review-next="true" ${reviewModel.hasNext ? "" : "disabled"}>
+                                            Proxima
+                                        </button>
+                                    </div>
                                     <button class="questions-secondary-btn" type="button" data-smart-topic-review-close="true">
                                         Voltar
+                                    </button>
+                                    <button class="questions-secondary-btn" type="button" data-smart-topic-review-start-now="true">
+                                        Ir direto para as questoes
                                     </button>
                                     <button class="questions-primary-btn" type="button" data-smart-topic-review-continue="true">
                                         Seguir com selecao
@@ -6245,7 +6311,7 @@
                         ` : ""}
                         ${hiddenSubjects ? `
                             <div class="questions-inline-note questions-smart-subject-note">
-                                +${hiddenSubjects} matéria(s) continuam disponíveis. Ajuste as séries para refinar mais se quiser.
+                                +${hiddenSubjects} materia(s) ainda disponiveis neste recorte.
                             </div>
                         ` : ""}
                     </div>
@@ -6286,90 +6352,31 @@
             QuestionsContext.get();
         const smartPreview =
             page.buildSmartRoutePreview();
-        const smartQuestionOptions =
-            page.data
-                .smartQuestionAmountOptions ||
-            [5, 15, 30, 50];
-        const smartSelectedQuestionCount =
-            smartCtx.smartQuestionCount === null
-                ? null
-                : Math.max(
-                    1,
-                    Number(
-                        smartCtx.smartQuestionCount ||
-                            smartCtx.quantidadeQuestoes
-                    ) || 5
-                );
-        return `
-            <section class="questions-card questions-entry-subview questions-smart-final-card questions-smart-final-card-minimal questions-smart-focus-stage">
-                <div class="questions-head questions-entry-head">
-                    <div>
-                        <div class="questions-kicker">Treino inteligente</div>
-                        <div class="questions-smart-step">3/3</div>
-                        <h2>Selecionar quantidade</h2>
-                    </div>
-
-                    <div class="questions-entry-actions questions-smart-entry-actions">
-                        <button class="questions-secondary-btn questions-review-btn questions-smart-back-btn" type="button" data-launcher-back="true">Voltar</button>
-                    </div>
-                </div>
-
-                ${page.getRuntimeNotice() ? `
-                    <div class="questions-inline-notice">
-                        ${page.getRuntimeNotice()}
-                    </div>
-                ` : ""}
-
-                <section class="questions-smart-config-card">
-                    <div class="questions-smart-config-group questions-smart-config-group--solo">
-                        <div class="questions-panel-label">Quantidade de questões</div>
-                        <div class="questions-smart-config-grid questions-smart-config-grid--quantity">
-                            ${smartQuestionOptions.map((amount) => `
-                                <button class="questions-pill${smartSelectedQuestionCount === amount ? " is-active" : ""}" type="button" data-smart-question-count="${amount}" aria-pressed="${smartSelectedQuestionCount === amount ? "true" : "false"}">
-                                    ${String(amount).padStart(2, "0")}
-                                </button>
-                            `).join("")}
-                            <button class="questions-pill questions-pill-infinity questions-pill-infinity--large${smartSelectedQuestionCount === null ? " is-active" : ""}" type="button" data-smart-question-infinite="true" aria-label="Sem limite" aria-pressed="${smartSelectedQuestionCount === null ? "true" : "false"}"></button>
-                        </div>
-                    </div>
-
-                    ${smartPreview.isReady ? `
-                        <div class="questions-smart-config-note">
-                            <span>${smartPreview.serieLabel} &middot; ${smartPreview.materiaLabel}</span>
-                        </div>
-                    ` : `
-                        <div class="questions-issue-list">
-                            ${(smartPreview.issues || [smartPreview.reason]).map((issue) => `
-                                <div class="questions-issue-item">${issue}</div>
-                            `).join("")}
-                        </div>
-                    `}
-
-                    <button id="questionsSmartSavePresetStartBtn" class="questions-primary-btn questions-smart-start-btn-minimal questions-smart-focus-start" type="button" ${smartPreview.isReady ? "" : "disabled"}>
-                        Salvar predefinicao
-                    </button>
-                </section>
-            </section>
-        `;
-
-        const ctx =
-            QuestionsContext.get();
-        const preview =
-            page.buildSmartRoutePreview();
-        const timeOptions = [];
-        const selectedTimeMinutes =
-            15;
         const questionOptions =
             page.data
                 .smartQuestionAmountOptions ||
-            [5, 15, 30];
-        const selectedQuestionCount =
-            ctx.smartQuestionCount === null
+            [5, 15, 30, 50];
+        const timeOptions =
+            page.data
+                .smartTimeMinuteOptions ||
+            [15, 30, 60];
+        const selectedTimeMinutes =
+            smartCtx.smartTimeMinutes === null
                 ? null
                 : Math.max(
                     1,
                     Number(
-                        ctx.smartQuestionCount
+                        smartCtx.smartTimeMinutes
+                    ) || 15
+                );
+        const selectedQuestionCount =
+            smartCtx.smartQuestionCount ===
+                null
+                ? null
+                : Math.max(
+                    1,
+                    Number(
+                        smartCtx.smartQuestionCount
                     ) || 5
                 );
         const isCustomQuestionActive =
@@ -6379,7 +6386,14 @@
                 selectedQuestionCount
             );
         const isCustomTimeActive =
-            false;
+            selectedTimeMinutes !== null &&
+            !timeOptions.includes(
+                selectedTimeMinutes
+            );
+        const hasDualLimit =
+            selectedQuestionCount !==
+                null &&
+            selectedTimeMinutes !== null;
 
         return `
             <section class="questions-card questions-entry-subview questions-smart-final-card questions-smart-final-card-minimal questions-smart-focus-stage">
@@ -6387,7 +6401,7 @@
                     <div>
                         <div class="questions-kicker">Treino inteligente</div>
                         <div class="questions-smart-step">3/3</div>
-                        <h2>Selecionar quantidade</h2>
+                        <h2>Definir limite da sessão</h2>
                     </div>
 
                     <div class="questions-entry-actions questions-smart-entry-actions">
@@ -6405,53 +6419,65 @@
                     <div class="questions-smart-config-group">
                         <div class="questions-panel-label">Quantidade de questões</div>
                         <div class="questions-smart-config-grid questions-smart-config-grid--quantity">
-                            ${timeOptions.map((minutes) => `
-                                <button class="questions-pill${ctx.smartSessionMetric === "tempo" && selectedTimeMinutes === minutes ? " is-active" : ""}" type="button" data-smart-time="${minutes}">
-                                    ${minutes}
-                                </button>
-                            `).join("")}
-                            <label class="questions-smart-custom-field${isCustomTimeActive ? " is-active" : ""}">
-                                <input id="questionsSmartTimeInput" type="number" min="1" step="1" inputmode="numeric" value="${isCustomTimeActive ? selectedTimeMinutes : ""}" placeholder="min">
-                            </label>
-                            <button class="questions-pill questions-pill-infinity${ctx.smartSessionMetric === "tempo" && selectedTimeMinutes === null ? " is-active" : ""}" type="button" data-smart-time-infinite="true">
-                                ∞
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="questions-smart-config-group">
-                        <div class="questions-panel-label">Quantidade de questões</div>
-                        <div class="questions-smart-config-grid questions-smart-config-grid--quantity">
                             ${questionOptions.map((amount) => `
-                                <button class="questions-pill${selectedQuestionCount === amount ? " is-active" : ""}" type="button" data-smart-question-count="${amount}">
+                                <button class="questions-pill${selectedQuestionCount === amount ? " is-active" : ""}" type="button" data-smart-question-count="${amount}" aria-pressed="${selectedQuestionCount === amount ? "true" : "false"}">
                                     ${String(amount).padStart(2, "0")}
                                 </button>
                             `).join("")}
-                            <label class="questions-smart-custom-field questions-smart-custom-field--large${isCustomQuestionActive ? " is-active" : ""}">
+                            <label class="questions-smart-custom-field questions-smart-custom-field--large${isCustomQuestionActive ? " is-active" : ""}" data-smart-question-custom="true">
+                                <span class="questions-smart-custom-label">Outro</span>
                                 <input id="questionsSmartQuestionInput" type="number" min="1" step="1" inputmode="numeric" value="${isCustomQuestionActive ? selectedQuestionCount : ""}" placeholder="n">
                             </label>
-                            <button class="questions-pill questions-pill-infinity questions-pill-infinity--large${selectedQuestionCount === null ? " is-active" : ""}" type="button" data-smart-question-infinite="true" aria-label="Sem limite">
-                                ∞
+                            <button class="questions-pill questions-pill-infinity questions-pill-infinity--large${selectedQuestionCount === null ? " is-active" : ""}" type="button" data-smart-question-infinite="true" aria-label="Sem limite de quantidade" aria-pressed="${selectedQuestionCount === null ? "true" : "false"}">
+                                Livre
                             </button>
                         </div>
                     </div>
 
-                    ${preview.isReady ? `
+                    <div class="questions-smart-config-group questions-smart-config-group--solo">
+                        <div class="questions-panel-label">Tempo disponível</div>
+                        <div class="questions-smart-config-grid questions-smart-config-grid--quantity">
+                            ${timeOptions.map((minutes) => `
+                                <button class="questions-pill${selectedTimeMinutes === minutes ? " is-active" : ""}" type="button" data-smart-time="${minutes}" aria-pressed="${selectedTimeMinutes === minutes ? "true" : "false"}">
+                                    ${minutes}m
+                                </button>
+                            `).join("")}
+                            <label class="questions-smart-custom-field questions-smart-custom-field--large${isCustomTimeActive ? " is-active" : ""}" data-smart-time-custom="true">
+                                <span class="questions-smart-custom-label">Outro</span>
+                                <input id="questionsSmartTimeInput" type="number" min="1" step="1" inputmode="numeric" value="${isCustomTimeActive ? selectedTimeMinutes : ""}" placeholder="min">
+                            </label>
+                            <button class="questions-pill questions-pill-infinity${selectedTimeMinutes === null ? " is-active" : ""}" type="button" data-smart-time-infinite="true" aria-label="Sem limite de tempo" aria-pressed="${selectedTimeMinutes === null ? "true" : "false"}">
+                                Livre
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="questions-smart-config-note">
+                        <span>${hasDualLimit ? "A sessão fecha no primeiro limite atingido." : "Use Livre em um dos campos se quiser travar só um limite."}</span>
+                    </div>
+
+                    ${smartPreview.isReady ? `
                         <div class="questions-smart-config-note">
-                            <span>${preview.serieLabel} • ${preview.materiaLabel}</span>
-                            <strong>${preview.trainingValueLabel === "∞" ? "Todas as questões disponíveis" : `${preview.amount || 0} questões previstas`}</strong>
+                            <span>${smartPreview.serieLabel} • ${smartPreview.materiaLabel}</span>
+                            <strong>${smartPreview.trainingModeLabel}: ${smartPreview.trainingValueLabel}</strong>
+                            <em>${smartPreview.amount || 0} questões previstas • ${smartPreview.estimatedDuration}</em>
                         </div>
                     ` : `
                         <div class="questions-issue-list">
-                            ${(preview.issues || [preview.reason]).map((issue) => `
+                            ${(smartPreview.issues || [smartPreview.reason]).map((issue) => `
                                 <div class="questions-issue-item">${issue}</div>
                             `).join("")}
                         </div>
                     `}
 
-                    <button id="questionsSmartSavePresetStartBtn" class="questions-primary-btn questions-smart-start-btn-minimal questions-smart-focus-start" type="button" ${preview.isReady ? "" : "disabled"}>
-                        Salvar predefinicao
-                    </button>
+                    <div class="questions-smart-final-actions">
+                        <button id="questionsSmartStartBtn" class="questions-secondary-btn questions-smart-start-btn-minimal" type="button" ${smartPreview.isReady ? "" : "disabled"}>
+                            Comecar agora
+                        </button>
+                        <button id="questionsSmartSavePresetStartBtn" class="questions-primary-btn questions-smart-start-btn-minimal questions-smart-focus-start" type="button" ${smartPreview.isReady ? "" : "disabled"}>
+                            Guardar e comecar
+                        </button>
+                    </div>
                 </section>
             </section>
         `;
@@ -8117,6 +8143,49 @@
 
         document
             .querySelectorAll(
+                "[data-smart-topic-review-start-now]"
+            )
+            .forEach((button) => {
+                button.addEventListener(
+                    "click",
+                    () => {
+                        this.page.startSmartSessionFromTopicReview();
+                    }
+                );
+            });
+
+        document
+            .querySelectorAll(
+                "[data-smart-topic-review-prev]"
+            )
+            .forEach((button) => {
+                button.addEventListener(
+                    "click",
+                    () => {
+                        this.page.goToSmartTopicReviewStep(
+                            -1
+                        );
+                    }
+                );
+            });
+
+        document
+            .querySelectorAll(
+                "[data-smart-topic-review-next]"
+            )
+            .forEach((button) => {
+                button.addEventListener(
+                    "click",
+                    () => {
+                        this.page.goToSmartTopicReviewStep(
+                            1
+                        );
+                    }
+                );
+            });
+
+        document
+            .querySelectorAll(
                 "[data-smart-subject-option]"
             )
             .forEach((button) => {
@@ -8366,6 +8435,301 @@
                 this.page.saveSmartPresetAndStart();
             }
         );
+
+        document
+            .querySelectorAll(
+                "[data-smart-session-metric]"
+            )
+            .forEach((button) => {
+                button.addEventListener(
+                    "click",
+                    () => {
+                        this.page.setSmartSessionMetric(
+                            button.dataset
+                                .smartSessionMetric
+                        );
+                    }
+                );
+            });
+
+        document
+            .querySelectorAll(
+                "[data-smart-time]"
+            )
+            .forEach((button) => {
+                button.addEventListener(
+                    "click",
+                    () => {
+                        document
+                            .querySelectorAll(
+                                "[data-smart-time], [data-smart-time-infinite]"
+                            )
+                            .forEach(
+                                (item) => {
+                                    item.classList.remove(
+                                        "is-active"
+                                    );
+                                    item.setAttribute(
+                                        "aria-pressed",
+                                        "false"
+                                    );
+                                }
+                            );
+                        button.classList.add(
+                            "is-active"
+                        );
+                        button.setAttribute(
+                            "aria-pressed",
+                            "true"
+                        );
+                        this.page.setSmartTimeMinutes(
+                            Number(
+                                button.dataset
+                                    .smartTime
+                            )
+                        );
+                    }
+                );
+            });
+
+        const smartTimeInput =
+            document.getElementById(
+                "questionsSmartTimeInput"
+            );
+        const smartTimeCustomField =
+            smartTimeInput?.closest(
+                "[data-smart-time-custom]"
+            ) || null;
+        const smartTimePresetButtons =
+            [
+                ...document.querySelectorAll(
+                    "[data-smart-time], [data-smart-time-infinite]"
+                )
+            ];
+        const smartTimePresetValues =
+            this.page.data
+                .smartTimeMinuteOptions ||
+            [15, 30, 60];
+
+        const setSmartTimeEditingState =
+            (isEditing) => {
+                if (
+                    !smartTimeCustomField
+                ) {
+                    return;
+                }
+
+                smartTimeCustomField.classList.toggle(
+                    "is-editing",
+                    Boolean(isEditing)
+                );
+
+                if (!isEditing) {
+                    return;
+                }
+
+                smartTimePresetButtons.forEach(
+                    (button) => {
+                        button.classList.remove(
+                            "is-active"
+                        );
+                    }
+                );
+            };
+
+        smartTimeCustomField?.addEventListener(
+            "click",
+            () => {
+                smartTimeInput?.focus();
+                smartTimeInput?.select();
+                setSmartTimeEditingState(
+                    true
+                );
+            }
+        );
+
+        smartTimeInput?.addEventListener(
+            "focus",
+            () => {
+                setSmartTimeEditingState(
+                    true
+                );
+                smartTimeInput.select();
+            }
+        );
+
+        smartTimeInput?.addEventListener(
+            "click",
+            () => {
+                setSmartTimeEditingState(
+                    true
+                );
+            }
+        );
+
+        smartTimeInput?.addEventListener(
+            "input",
+            (event) => {
+                const value =
+                    String(
+                        event.target
+                            ?.value || ""
+                    )
+                        .replace(/\D+/g, "")
+                        .slice(0, 4);
+
+                event.target.value = value;
+                setSmartTimeEditingState(
+                    true
+                );
+            }
+        );
+
+        smartTimeInput?.addEventListener(
+            "change",
+            (event) => {
+                const value =
+                    String(
+                        event.target
+                            ?.value || ""
+                    )
+                        .replace(/\D+/g, "")
+                        .slice(0, 4);
+
+                event.target.value = value;
+
+                if (!value) {
+                    return;
+                }
+
+                this.page.setSmartTimeMinutes(
+                    Number(value)
+                );
+            }
+        );
+
+        smartTimeInput?.addEventListener(
+            "blur",
+            (event) => {
+                const value =
+                    String(
+                        event.target
+                            ?.value || ""
+                    )
+                        .replace(/\D+/g, "")
+                        .slice(0, 4);
+
+                event.target.value = value;
+
+                if (value) {
+                    this.page.setSmartTimeMinutes(
+                        Number(value)
+                    );
+                }
+            }
+        );
+
+        smartTimeInput?.addEventListener(
+            "keydown",
+            (event) => {
+                if (event.key !== "Enter") {
+                    return;
+                }
+
+                event.preventDefault();
+                const value =
+                    String(
+                        event.target
+                            ?.value || ""
+                    )
+                        .replace(/\D+/g, "")
+                        .slice(0, 4);
+
+                event.target.value = value;
+
+                if (!value) {
+                    return;
+                }
+
+                this.page.setSmartTimeMinutes(
+                    Number(value)
+                );
+            }
+        );
+
+        smartTimeInput?.addEventListener(
+            "blur",
+            () => {
+                window.setTimeout(() => {
+                    if (
+                        document.activeElement ===
+                        smartTimeInput
+                    ) {
+                        return;
+                    }
+
+                    const currentValue =
+                        String(
+                            smartTimeInput.value ||
+                                ""
+                        ).trim();
+                    const currentContext =
+                        QuestionsContext.get();
+                    const isCustomSelected =
+                        currentContext.smartTimeMinutes !==
+                            null &&
+                        !smartTimePresetValues.includes(
+                            Number(
+                                currentContext.smartTimeMinutes
+                            )
+                        );
+
+                    setSmartTimeEditingState(
+                        Boolean(
+                            currentValue ||
+                            isCustomSelected
+                        )
+                    );
+                }, 0);
+            }
+        );
+
+        document
+            .querySelectorAll(
+                "[data-smart-time-infinite]"
+            )
+            .forEach((button) => {
+                button.addEventListener(
+                    "click",
+                    () => {
+                        document
+                            .querySelectorAll(
+                                "[data-smart-time], [data-smart-time-infinite]"
+                            )
+                            .forEach(
+                                (item) => {
+                                    item.classList.remove(
+                                        "is-active"
+                                    );
+                                    item.setAttribute(
+                                        "aria-pressed",
+                                        "false"
+                                    );
+                                }
+                            );
+                        button.classList.add(
+                            "is-active"
+                        );
+                        button.setAttribute(
+                            "aria-pressed",
+                            "true"
+                        );
+                        this.page.setSmartTimeMinutes(
+                            null
+                        );
+                    }
+                );
+            });
 
         document
             .querySelectorAll(

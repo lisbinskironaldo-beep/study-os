@@ -1,0 +1,17 @@
+{
+  "name": "rotanota-browser-agent",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Agente local de browser para validacao e automacao visual do RotaNota.",
+  "type": "commonjs",
+  "scripts": {
+    "doctor": "node doctor.cjs",
+    "open": "npx playwright open",
+    "codegen": "npx playwright codegen",
+    "install:browsers": "npx playwright install chromium",
+    "snapshot": "node snapshot.cjs"
+  },
+  "dependencies": {
+    "playwright": "^1.59.1"
+  }
+}

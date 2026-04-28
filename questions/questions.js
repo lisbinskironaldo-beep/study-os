@@ -14,6 +14,7 @@ window.QuestionsPage = {
     smartSubjectEditorKey: "",
     smartSubjectFocusKey: "",
     smartTopicReviewOpen: false,
+    smartTopicReviewIndex: 0,
     directSearchTerms: [],
     directSearchInput: "",
     directSearchMatchCount: null,
@@ -2289,12 +2290,14 @@ window.QuestionsPage = {
                     ""
             ).trim();
         const timeLimitMinutes =
-            Object.prototype.hasOwnProperty.call(
-                meta || {},
-                "simuladoTimeLimitMinutes"
-            )
-                ? meta.simuladoTimeLimitMinutes
-                : null;
+            sourceMode === "smart"
+                ? meta.smartTimeLimitMinutes
+                : Object.prototype.hasOwnProperty.call(
+                    meta || {},
+                    "simuladoTimeLimitMinutes"
+                )
+                    ? meta.simuladoTimeLimitMinutes
+                    : null;
         const safeMinutes =
             Number(timeLimitMinutes);
         const isResume =
@@ -2306,7 +2309,10 @@ window.QuestionsPage = {
             );
 
         if (
-            sourceMode !== "simulado" ||
+            ![
+                "simulado",
+                "smart"
+            ].includes(sourceMode) ||
             isResume ||
             !Number.isFinite(safeMinutes) ||
             safeMinutes <= 0 ||
@@ -2324,7 +2330,9 @@ window.QuestionsPage = {
             {
                 open: true,
                 autostart: true,
-                simuladoCompact: true
+                simuladoCompact:
+                    sourceMode ===
+                    "simulado"
             }
         );
     },
@@ -2332,11 +2340,15 @@ window.QuestionsPage = {
     pauseSimuladoTimer() {
         const meta =
             QuestionsState.getMeta();
+        const sourceMode = String(
+            meta?.sourceMode || ""
+        ).trim();
 
         if (
-            String(
-                meta?.sourceMode || ""
-            ).trim() !== "simulado" ||
+            ![
+                "simulado",
+                "smart"
+            ].includes(sourceMode) ||
             typeof UtilityWindows ===
                 "undefined" ||
             typeof UtilityWindows
@@ -3979,6 +3991,23 @@ window.QuestionsPage = {
                         0
             );
 
+        const safeIndex =
+            Math.min(
+                Math.max(
+                    0,
+                    Number(
+                        this.smartTopicReviewIndex
+                    ) || 0
+                ),
+                Math.max(
+                    activeSubjects.length - 1,
+                    0
+                )
+            );
+        const currentSubject =
+            activeSubjects[safeIndex] ||
+            null;
+
         return {
             activeSubjects,
             totalTopics:
@@ -3990,7 +4019,17 @@ window.QuestionsPage = {
                                 0
                         ),
                     0
-                )
+                ),
+            currentIndex:
+                safeIndex,
+            totalSubjects:
+                activeSubjects.length,
+            currentSubject,
+            hasPrevious:
+                safeIndex > 0,
+            hasNext:
+                safeIndex <
+                activeSubjects.length - 1
         };
     },
 
@@ -4023,6 +4062,7 @@ window.QuestionsPage = {
             "smart_subjects"
         );
         this.smartSubjectEditorKey = "";
+        this.smartTopicReviewIndex = 0;
         this.clearRuntimeNotice();
         this.smartTopicReviewOpen = true;
         this.render();
@@ -4034,6 +4074,35 @@ window.QuestionsPage = {
         }
 
         this.smartTopicReviewOpen = false;
+        this.smartTopicReviewIndex = 0;
+        this.render();
+    },
+
+    goToSmartTopicReviewStep(
+        direction = 0
+    ) {
+        if (!this.smartTopicReviewOpen) {
+            return;
+        }
+
+        const reviewModel =
+            this.buildSmartTopicReviewModel();
+        const nextIndex =
+            Math.min(
+                Math.max(
+                    reviewModel.currentIndex +
+                        Number(direction || 0),
+                    0
+                ),
+                Math.max(
+                    reviewModel.totalSubjects -
+                        1,
+                    0
+                )
+            );
+
+        this.smartTopicReviewIndex =
+            nextIndex;
         this.render();
     },
 
@@ -4053,9 +4122,32 @@ window.QuestionsPage = {
         }
 
         this.smartTopicReviewOpen = false;
+        this.smartTopicReviewIndex = 0;
         this.smartSubjectFocusKey = "";
         this.clearRuntimeNotice();
         this.openLauncher("smart");
+    },
+
+    startSmartSessionFromTopicReview() {
+        const reviewModel =
+            this.buildSmartTopicReviewModel();
+
+        if (
+            !reviewModel.activeSubjects.length
+        ) {
+            this.runtimeNotice =
+                "Mantenha pelo menos uma materia com assuntos ativos para continuar.";
+            this.smartTopicReviewOpen =
+                false;
+            this.render();
+            return;
+        }
+
+        this.smartTopicReviewOpen = false;
+        this.smartTopicReviewIndex = 0;
+        this.smartSubjectFocusKey = "";
+        this.clearRuntimeNotice();
+        this.startSmartSession();
     },
 
     toggleSmartStartOption(optionKey) {
@@ -4942,7 +5034,7 @@ window.QuestionsPage = {
                 "Nome da predefinicao",
             value: suggestedName,
             confirmLabel: "Salvar e iniciar",
-            onConfirm: (name) => {
+            onConfirm: async (name) => {
                 const cleanName =
                     String(
                         name || ""
@@ -4960,6 +5052,15 @@ window.QuestionsPage = {
                             )
                         }
                     );
+                if (
+                    typeof this
+                        .ensureRouteCatalogLoaded ===
+                    "function"
+                ) {
+                    await this.ensureRouteCatalogLoaded(
+                        preview.patch
+                    );
+                }
                 const snapshot =
                     this.buildSessionSnapshotForBlock(
                         preview.patch,
@@ -4993,6 +5094,13 @@ window.QuestionsPage = {
                             silent: true
                         }
                     );
+
+                if (!savedBlock) {
+                    this.runtimeNotice =
+                        "Nao foi possivel guardar esse treino agora. Tente novamente.";
+                    this.openLauncher("smart");
+                    return;
+                }
 
                 this.runtimeNotice =
                     `Predefinicao salva: ${cleanName}.`;
@@ -6694,13 +6802,19 @@ window.QuestionsPage = {
                 current,
                 validation.eligibleQuestionCount
             );
+        const smartTimeLimitMinutes =
+            QuestionsService.getSmartTimeLimitMinutes(
+                current
+            );
         const estimatedDuration =
-            current.smartQuestionCount ===
-                null
-                ? "Livre"
-                : QuestionsService.getEstimatedDurationFromCount(
-                    amount
-                );
+            smartTimeLimitMinutes !== null
+                ? `ate ${smartTimeLimitMinutes} min`
+                : current.smartQuestionCount ===
+                      null
+                    ? "Livre"
+                    : QuestionsService.getEstimatedDurationFromCount(
+                        amount
+                    );
 
         return {
             isReady: true,

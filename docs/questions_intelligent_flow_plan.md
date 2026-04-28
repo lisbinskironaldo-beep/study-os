@@ -6,7 +6,7 @@ Baseado na decisao de simplificar a entrada do modulo em dois caminhos:
 - `Treino inteligente`
 - `Especificar treino`
 
-Atualizado em 2026-03-27.
+Atualizado em 2026-04-28.
 
 Atualizacao complementar em 2026-04-09:
 
@@ -1209,13 +1209,14 @@ Objetivo:
 
 Status:
 
-- [ ] proxima etapa
+- [x] concluido
 
 Entregas:
 
-- [ ] 3 botoes grandes
-- [ ] `Retomar treino` como acao secundaria
-- [ ] reduzir textos e remover cards informativos
+- [x] 3 botoes grandes
+- [x] `Retomar treino` como acao secundaria
+- [x] reduzir textos e remover cards informativos
+- [x] mover `Busca direta por assunto` para dentro do fluxo `Rapido`
 
 ### Etapa 5 - Construir o wizard do treino inteligente
 
@@ -1225,15 +1226,15 @@ Objetivo:
 
 Status:
 
-- [ ] pendente
+- [x] concluido
 
 Entregas:
 
-- [ ] tela de series/base
-- [ ] tela de materias
-- [ ] telas de assuntos por materia
-- [ ] atalho `Ir direto para as questoes`
-- [ ] acao `Excluir materia`
+- [x] tela de series/base
+- [x] tela de materias
+- [x] telas de assuntos por materia
+- [x] atalho `Ir direto para as questoes`
+- [x] acao `Excluir materia`
 
 ### Etapa 6 - Fechar os limites da sessao
 
@@ -1243,15 +1244,15 @@ Objetivo:
 
 Status:
 
-- [ ] pendente
+- [x] concluido
 
 Entregas:
 
-- [ ] botoes 5, 15, 30, 50
-- [ ] tempo 15, 30, 60
-- [ ] campo digitavel
-- [ ] modo infinito
-- [ ] regra do primeiro limite atingido
+- [x] botoes 5, 15, 30, 50
+- [x] tempo 15, 30, 60
+- [x] campo digitavel
+- [x] modo infinito
+- [x] regra do primeiro limite atingido
 
 ### Etapa 7 - Guardar e consultar melhor
 
@@ -1269,7 +1270,7 @@ Entregas:
 - [x] renomear
 - [x] refazer
 - [ ] consulta detalhada
-- [ ] guardar e iniciar na mesma acao
+- [x] guardar e iniciar na mesma acao
 
 ### Etapa 8 - Motion e polimento
 
@@ -1296,10 +1297,10 @@ Status:
 - [x] Criar persistencia de `runs`
 - [x] Criar a tela `Retomar treino`
 - [x] Persistir sessoes em andamento
-- [ ] Simplificar a home para 3 botoes principais
-- [ ] Implementar o wizard circular do treino inteligente
+- [x] Simplificar a home para 3 botoes principais
+- [x] Implementar o wizard circular do treino inteligente
 - [ ] Criar a tela dedicada de consulta de bloco
-- [ ] Implementar tempo e quantidade no novo fluxo inteligente
+- [x] Implementar tempo e quantidade no novo fluxo inteligente
 - [ ] Implementar o motor adaptativo por dificuldade e revisao
 - [ ] Refinar a tela da sessao para ficar mais limpa
 
@@ -1325,6 +1326,6 @@ A proxima versao passa a ser considerada boa quando:
 
 ```txt
 Base tecnica pronta
-Redesign de entrada pendente
-Proxima entrega = home seca + tela 1 do wizard inteligente
+Home seca concluida
+Proxima entrega = concluir o wizard inteligente e fechar tempo/quantidade
 ```

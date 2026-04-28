@@ -1,0 +1,22 @@
+ M .codex-artifacts/dev-server/vercel-dev.err.log
+ M ambient/ambientState.js
+ M ambient/ambientUI.js
+ M docs/questions_intelligent_flow_plan.md
+ M docs/questions_status_checklist.md
+ M js/app.js
+ M questions/app/application/sessionEngine.mjs
+ M questions/questions.css
+ M questions/questions.js
+ M questions/questions.service.js
+ M questions/questions.ui.js
+?? .codex-artifacts/visual-audit/browser-agent-2026-04-28T16-09-22-796Z.png
+?? .codex-artifacts/visual-audit/questions-home-quick-absorbed.png
+?? .codex-artifacts/visual-audit/questions-launcher-home-dry-ready.png
+?? .codex-artifacts/visual-audit/questions-launcher-quick-ready.png
+?? .codex-artifacts/visual-audit/questions-mini-hidden-check.png
+?? .codex-artifacts/visual-audit/questions-quick-absorbed.png
+?? .codex-artifacts/visual-audit/questions-smart-review-excluir-materia.png
+?? .codex-artifacts/visual-audit/questions-smart-subjects-compact.png
+?? docs/questions_2026-04-28_handoff_next.md
+?? restore-points/20260428-150805-before-next-pass/
+?? tools/browser-agent/
