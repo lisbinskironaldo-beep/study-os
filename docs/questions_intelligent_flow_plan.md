@@ -1345,7 +1345,7 @@ Entregas:
 - [x] Validar conforto do motor adaptativo no browser com historico realista
 - [x] Exibir explicabilidade curta durante a sessao sem tom punitivo
 - [x] Garantir mistura de confianca, consolidacao e desafio
-- [ ] Ajustar limiares do motor apos uso real prolongado
+- [~] Ajustar limiares do motor apos uso real prolongado
 - [x] Refinar a tela da sessao para ficar mais limpa
 
 ---
@@ -1376,5 +1376,5 @@ Sessao limpa concluida
 Progresso como hub proprio concluido
 Motor adaptativo por dificuldade e revisao iniciado
 Motor adaptativo validado com guardrails de motivacao
-Proxima entrega = ajustar limiares apos uso real prolongado
+Proxima entrega = observar uso real prolongado e ajustar fino os limiares restantes
 ```

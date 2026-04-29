@@ -115,7 +115,7 @@ const Core = {
                 <span id="homeLoginGateKicker" class="home-login-gate-kicker">Conta Google</span>
                 <div class="home-login-gate-lockup" aria-hidden="true">
                     <div class="home-login-gate-brand home-login-gate-brand-rotanota">
-                        <img src="assets/rotanota-logo-dark.svg" alt="" class="home-login-gate-brand-rotanota-logo">
+                        <img src="assets/papiro-tools-logo-dark.svg" alt="" class="home-login-gate-brand-rotanota-logo">
                     </div>
                     <span class="home-login-gate-merge" aria-hidden="true"></span>
                     <div class="home-login-gate-brand home-login-gate-brand-google">

@@ -1,4 +1,4 @@
-﻿(function () {
+(function () {
     if (window.PremiumStudyApp) {
         return;
     }
@@ -484,7 +484,7 @@
 
             paymentReturn.consumed = true;
             store.setPremiumOffer({
-                eyebrow: "RotaNota Premium",
+                eyebrow: "Papiro Tools Premium",
                 title: paymentReturn.status === "success"
                     ? "Pagamento recebido. Falta a confirmacao segura."
                     : "Finalize seu acesso premium com segurança.",
@@ -618,7 +618,7 @@
                 });
             } else {
                 store.setPremiumOffer({
-                    eyebrow: "RotaNota Premium",
+                    eyebrow: "Papiro Tools Premium",
                     title: paymentReturn.status === "success"
                         ? "Pagamento recebido. Estamos voltando para sua trilha."
                         : "Finalize seu acesso premium com seguranca.",

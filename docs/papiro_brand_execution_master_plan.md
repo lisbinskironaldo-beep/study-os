@@ -13,15 +13,15 @@ Objetivo desta fase:
 
 ## Decisao de marca desta fase
 
-Decisao fechada:
+Decisao atual:
 
-- marca publica: `Papiro`
-- complemento: `a definir depois`
+- marca publica: `Papiro Tools`
+- nome curto: `Papiro`
 - retaguarda/admin: `NorthStar`
 
 Regra importante:
 
-- o aluno deve ver `Papiro`
+- o aluno deve ver `Papiro Tools` ou `Papiro`, conforme espaco da interface
 - o operador/admin deve ver `NorthStar`
 - nomes tecnicos internos com prefixo `RotaNota` podem continuar temporariamente se a troca impactar codigo, storage, envs ou integracoes
 
@@ -124,9 +124,9 @@ trocar tudo de uma vez mistura rebrand visual com risco tecnico desnecessario.
 Plano:
 
 - criar novos assets paralelos primeiro:
-  - `assets/papiro-mark.svg`
-  - `assets/papiro-logo-light.svg`
-  - `assets/papiro-logo-dark.svg`
+  - `assets/papiro-tools-mark.svg`
+  - `assets/papiro-tools-logo-light.svg`
+  - `assets/papiro-tools-logo-dark.svg`
 - so depois trocar referencias
 - nao sobrescrever os antigos logo de cara
 
@@ -430,11 +430,11 @@ Nao usar:
 
 ## Ordem de execucao recomendada
 
-1. criar assets novos de `Papiro`
-2. trocar marca publica no front principal
-3. trocar marca nos fluxos premium e viewer
-4. revisar frases curtas de consolidacao
-5. adicionar base de app mode Android/iPhone
+1. [x] criar assets novos de `Papiro Tools`
+2. [x] trocar marca publica no front principal
+3. [x] trocar marca nos fluxos premium e viewer nos pontos publicos diretos
+4. [~] revisar frases curtas de consolidacao
+5. [x] adicionar base de app mode Android/iPhone
 6. inserir 1 slot editorial na home e 1 slot no premium
 7. validar browser desktop/mobile
 8. so depois migrar nomenclatura tecnica e comercial
@@ -450,10 +450,28 @@ Nao usar:
 
 ## Proxima decisao que ainda falta
 
-Definir o complemento de `Papiro`.
+Transformar a referencia escolhida em assets finais de `Papiro Tools`.
 
 A recomendacao desta fase:
 
-- implementar tudo com base em `Papiro`
-- deixar o lockup preparado para receber o complemento depois
-- nao travar a reexecucao por causa dessa indecisao
+- implementar tudo com base em `Papiro Tools`
+- usar `Papiro` apenas como nome curto quando faltar espaco
+- criar primeiro os assets finais paralelos antes de trocar as referencias no front
+
+Atualizacao 2026-04-29:
+
+- assets base criados:
+  - `assets/papiro-tools-mark.svg`
+  - `assets/papiro-tools-logo-light.svg`
+  - `assets/papiro-tools-logo-dark.svg`
+- `manifest.webmanifest` criado com nome `Papiro Tools` e nome curto `Papiro`
+- `index.html` passou a usar favicon, manifest e lockups de `Papiro Tools`
+- titulos publicos de `questions-standalone.html`, `qts-lab.html` e viewer PDF foram ajustados
+- textos publicos diretos do premium/checkout/IA foram ajustados
+- nomes tecnicos `RotaNota*`, storage keys e cookies continuam preservados por seguranca
+- validacao local com Playwright em `http://127.0.0.1:4173/`:
+  - home desktop carregou com titulo, favicon, manifest e lockups `Papiro Tools`
+  - home mobile 390px carregou sem overflow horizontal
+  - `questions-standalone.html`, `qts-lab.html` e viewer PDF exibiram titulos novos
+  - screenshots salvos em `.codex-artifacts/papiro-tools-home-desktop.png` e `.codex-artifacts/papiro-tools-home-mobile.png`
+  - 404s observados no servidor estatico local foram `/api/auth/session` e thumbnails externas do YouTube, nao causados pela troca da marca

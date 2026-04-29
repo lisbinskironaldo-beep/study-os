@@ -9728,7 +9728,7 @@ body.focus-mode #shortcutHint.is-visible {
 }
 
 /* =====================================================
-   RotaNota refinement - home, Pomodoro and light radii
+   Papiro Tools refinement - home, Pomodoro and light radii
 ===================================================== */
 
 :root {
@@ -10160,7 +10160,7 @@ body[data-mode="pomodoro"] .main-stats-row {
 }
 
 /* =====================================================
-   RotaNota brand family - icon + lockups
+   Papiro Tools brand family - icon + lockups
 ===================================================== */
 
 .rotanota-topbar-brand {
@@ -10220,7 +10220,7 @@ body.dark .rotanota-topbar-brand {
 .rotanota-topbar-logo {
     width: auto;
     height: 30px;
-    max-width: min(176px, 22vw);
+    max-width: min(196px, 24vw);
 }
 
 .rotanota-topbar-logo-dark {
@@ -10292,7 +10292,7 @@ body:not(.dark) .rotanota-home-brand {
 
     .rotanota-topbar-logo {
         height: 28px;
-        max-width: 148px;
+        max-width: 166px;
     }
 }
 

@@ -8,13 +8,13 @@ const MERCADO_PAGO_PREFERENCES_URL = "https://api.mercadopago.com/checkout/prefe
 const PLAN_CONFIG = {
     premium_monthly: {
         id: "premium_monthly",
-        title: "RotaNota Premium mensal",
+        title: "Papiro Tools Premium mensal",
         description: "Biblioteca premium, PDFs maiores, treinos extras e continuidade dos estudos.",
         priceEnv: "MERCADO_PAGO_MONTHLY_PRICE"
     },
     premium_annual: {
         id: "premium_annual",
-        title: "RotaNota Premium anual",
+        title: "Papiro Tools Premium anual",
         description: "Acesso premium anual com continuidade, biblioteca e treinos extras.",
         priceEnv: "MERCADO_PAGO_ANNUAL_PRICE"
     }

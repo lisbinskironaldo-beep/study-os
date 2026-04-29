@@ -87,10 +87,10 @@
             showSummary: false
         },
         analysis: {
-            title: "RotaNota esta montando o melhor caminho para voce.",
+            title: "Papiro Tools esta montando o melhor caminho para voce.",
             titleClass: "premium-stage-title-editorial premium-stage-title-analysis",
             titleHtml: [
-                '<span class="premium-stage-line premium-stage-line-soft premium-stage-line-shift-1">RotaNota</span>',
+                '<span class="premium-stage-line premium-stage-line-soft premium-stage-line-shift-1">Papiro Tools</span>',
                 '<span class="premium-stage-line premium-stage-line-emphasis premium-stage-line-shift-2">monta o melhor</span>',
                 '<span class="premium-stage-line premium-stage-line-tail premium-stage-line-shift-3">caminho para voce.</span>'
             ].join(""),

@@ -169,20 +169,27 @@ O anúncio deve apontar para o site principal, que hoje ainda é:
 
 Mas o texto deve usar `Papiro`, porque o RotaNota será renomeado.
 
-## Marca Papiro Edu: referências de logo
+## Marca Papiro Tools: referências de logo
 
-O usuário gerou novas referências de logo e pediu para levá-las no repositório:
+Decisão atual do usuário em 2026-04-29:
 
-- `docs/brand/reference/papiro-edu-monogram-reference-2026-04-29.png`
-- `docs/brand/reference/papiro-edu-book-reference-2026-04-29.png`
+- usar `Papiro Tools` como marca pública principal;
+- descartar, por enquanto, as direções `Papiro Edu`, pergaminho institucional, cérebro/rede, montanha, coruja, pilar e versões genéricas;
+- manter no repositório apenas as referências que ajudam a executar a direção escolhida.
+
+Referências mantidas:
+
+- `docs/brand/reference/papiro-tools-p-path-reference-2026-04-29.png`
+- `docs/brand/reference/papiro-tools-wordmark-reference-2026-04-29.png`
 
 Preferência visual atual:
 
-1. A direção mais promissora é `Papiro Edu`, não `Papiro Atlas`.
-2. Entre as referências recentes, a melhor direção é a versão com monograma `P` e dobra de página/caneta, especialmente a imagem `papiro-edu-monogram-reference-2026-04-29.png`.
-3. A segunda direção útil é a versão com livro aberto + `P`, em `papiro-edu-book-reference-2026-04-29.png`.
-4. Evitar logos com globo, tocha, pilar clássico demais, cristal/gelo, neon/gamer ou aparência turística.
-5. A identidade precisa funcionar em:
+1. A direção escolhida é `Papiro Tools`, com símbolo `P` e caminho/seta.
+2. O ícone principal deve partir de `papiro-tools-p-path-reference-2026-04-29.png`.
+3. A wordmark/tipografia pode aproveitar a maturidade de `papiro-tools-wordmark-reference-2026-04-29.png`.
+4. Evitar logos com `Edu`, pergaminho institucional, livro literal demais, cérebro/rede, globo, tocha, pilar clássico, montanha, cristal/gelo, neon/gamer ou aparência turística.
+5. O visual final deve ser mais limpo que os mockups: versão vetorial/flat, alto contraste, sem brilho pesado e sem depender de fundo escuro.
+6. A identidade precisa funcionar em:
    - topo do site principal;
    - favicon/app icon;
    - modo claro;
@@ -192,12 +199,12 @@ Preferência visual atual:
 Prompt de refinamento sugerido:
 
 ```text
-Refine a logo "Papiro Edu" baseada em um monograma P moderno com dobra de página/caneta, mantendo uma aparência educacional premium.
-O símbolo deve funcionar sozinho como ícone de app em tamanho pequeno.
-Use azul petróleo profundo, branco/creme e dourado discreto.
-Evite globo, tocha, pilar clássico, montanha, cristal, elementos gamer e sombras pesadas.
-Texto "PAPIRO" com presença elegante e "EDU" menor abaixo, com espaçamento amplo.
-Criar versão para fundo claro e versão para fundo azul petróleo escuro.
+Refine a logo "Papiro Tools" baseada em um monograma P moderno com caminho/seta de progresso.
+O símbolo deve funcionar sozinho como favicon e ícone de app em tamanho pequeno.
+Use azul petróleo profundo, creme/branco e dourado discreto.
+Evite pergaminho institucional, livro literal demais, cérebro/rede, globo, tocha, pilar clássico, montanha, cristal, elementos gamer, neon excessivo e sombras pesadas.
+Texto "Papiro Tools" com presença elegante, leitura alta e aparência de produto digital premium.
+Criar versão horizontal, versão empilhada, ícone isolado, versão para fundo claro e versão para fundo azul petróleo escuro.
 Estilo limpo, vetorial, sofisticado, sem mockup.
 ```
 
@@ -228,3 +235,15 @@ Produções:
 - `https://planejador-semanal.vercel.app` respondeu `200`.
 - `https://rota-nota.vercel.app` respondeu `200`.
 - `/tabela-classica/` no RotaNota foi removida e deve responder `404`.
+
+Atualização 2026-04-29:
+
+- decisão de marca consolidada como `Papiro Tools`, com `Papiro` como nome curto;
+- referências `Papiro Edu` removidas do repositório;
+- referências mantidas apenas para `Papiro Tools`;
+- base visual aplicada no projeto principal:
+  - `assets/papiro-tools-mark.svg`
+  - `assets/papiro-tools-logo-light.svg`
+  - `assets/papiro-tools-logo-dark.svg`
+  - `manifest.webmanifest`
+- próximo site-isca recomendado continua sendo `Timer Pomodoro`.

@@ -1,0 +1,18 @@
+{
+  "name": "Papiro Tools",
+  "short_name": "Papiro",
+  "description": "Ferramentas de estudo para transformar material, pratica e foco em progresso.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f6f1e6",
+  "theme_color": "#08233d",
+  "icons": [
+    {
+      "src": "assets/papiro-tools-mark.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -698,7 +698,7 @@ function buildFreeBundlePrompt(body, plan) {
     }[plan.materialProfile] || "Adapte o formato ao texto real.";
 
     return `
-Voce e a IA pedagogica do RotaNota. Transforme o material do usuario em blocos de estudo proporcionais ao plano, ao tamanho do documento e ao prazo.
+Voce e a IA pedagogica do Papiro Tools. Transforme o material do usuario em blocos de estudo proporcionais ao plano, ao tamanho do documento e ao prazo.
 
 Regras obrigatorias:
 - Responda SOMENTE JSON valido.
@@ -1083,7 +1083,7 @@ module.exports = async function handler(req, res) {
                 attemptedModels: result.attemptedModels || [result.model || model],
                 providerStatus: result.providerStatus || "OK",
                 promptVersion: PROMPT_VERSION,
-                title: cleanText(result.data && result.data.title, "Prova de nivel RotaNota"),
+                title: cleanText(result.data && result.data.title, "Prova de nivel Papiro"),
                 questions
             });
         }

@@ -367,7 +367,7 @@ Validacao depois:
 Estado:
 
 - produto publico ainda usa RotaNota.
-- candidatos: Papiro Edu, Papiro Labs, Papiro Tools.
+- decisao posterior em 2026-04-29: Papiro Tools como marca publica, Papiro como nome curto.
 - Ops tende a NorthStar.
 
 Decisao:
@@ -381,9 +381,9 @@ Sugestao de taxonomia:
 ```js
 const Brand = {
   currentPublicName: "RotaNota",
-  candidatePublicName: "Papiro Edu",
+  candidatePublicName: "Papiro Tools",
   labBrand: "Papiro Labs",
-  toolsBrand: "Papiro Tools",
+  shortName: "Papiro",
   opsName: "NorthStar"
 };
 ```

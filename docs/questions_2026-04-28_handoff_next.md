@@ -274,4 +274,10 @@ Estado desta continuidade:
 - `motor adaptativo`: primeira fatia executada e validada no browser com historico realista; o perfil agora guarda `lastCorrect`, `lastErrorAt`, `consecutiveHits` e `consecutiveErrors`
 - guardrail implementado: a sessao nao vira escada infinita de dificuldade; ela preserva mistura de confianca, consolidacao e desafio
 - explicabilidade curta implementada na sessao com frases sem tom punitivo
-- proxima frente liberada: testar com uso real prolongado e ajustar os limiares do motor se a cadencia parecer facil ou pesada demais
+- recalibracao inicial aplicada em 2026-04-29:
+  - erro recente agora segura mais tempo em reforco
+  - sucesso moderado fica em confianca antes de subir
+  - sucesso forte sem exagero vira consolidacao
+  - desafio leve so entra com consistencia mais alta
+  - repeticao de topico e subtopico ganhou penalidade maior para preservar mistura
+- proxima frente liberada: testar com uso real prolongado e ajustar fino os limiares se a cadencia parecer facil, pesada ou repetitiva

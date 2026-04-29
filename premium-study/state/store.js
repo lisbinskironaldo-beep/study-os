@@ -75,7 +75,7 @@
     function createLevelExamState(overrides = {}) {
         return {
             questionCount: 10,
-            title: "Prova de nivel RotaNota",
+            title: "Prova de nivel Papiro",
             questions: [],
             started: false,
             index: 0,
@@ -3121,7 +3121,7 @@
                 ...this.state,
                 levelExam: createLevelExamState({
                     ...this.state.levelExam,
-                    title: payload.title || "Prova de nivel RotaNota",
+                    title: payload.title || "Prova de nivel Papiro",
                     questions,
                     questionCount: questions.length || this.state.levelExam.questionCount,
                     started: false,

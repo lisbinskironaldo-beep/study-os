@@ -2157,8 +2157,13 @@ window.QuestionsService = {
         if (
             entry.consecutiveErrors >= 2 ||
             (
+                entry.lastCorrect === false &&
                 daysSinceError !== null &&
-                daysSinceError <= 2
+                daysSinceError <= 1.5
+            ) ||
+            (
+                daysSinceError !== null &&
+                daysSinceError <= 3
             )
         ) {
             return {
@@ -2182,9 +2187,13 @@ window.QuestionsService = {
         }
 
         if (
-            entry.consecutiveHits >= 4 &&
-            accuracy >= 0.82 &&
-            difficulty >= 4
+            entry.consecutiveHits >= 5 &&
+            accuracy >= 0.86 &&
+            difficulty >= 4 &&
+            !(
+                daysSinceError !== null &&
+                daysSinceError <= 4
+            )
         ) {
             return {
                 tone: "challenge",
@@ -2195,8 +2204,8 @@ window.QuestionsService = {
         }
 
         if (
-            entry.consecutiveHits >= 2 &&
-            accuracy >= 0.72
+            entry.consecutiveHits >= 3 &&
+            accuracy >= 0.76
         ) {
             return {
                 tone: "steady",
@@ -2306,35 +2315,35 @@ window.QuestionsService = {
         const reviewWeight =
             entry &&
             entry.errors > 0
-                ? 1 +
+                ? 1.15 +
                   this.clamp(
-                      daysSinceSeen * 0.2,
+                      daysSinceSeen * 0.22,
                       0,
-                      2
+                      2.3
                   )
                 : 0;
         const errorStreakWeight =
             entry?.consecutiveErrors
                 ? this.clamp(
                     entry.consecutiveErrors *
-                        1.15,
+                        1.3,
                     0,
-                    3.5
+                    4
                 )
                 : 0;
         const freshErrorWeight =
             daysSinceError !== null &&
-            daysSinceError <= 3
+            daysSinceError <= 4
                 ? this.clamp(
-                    2.8 - daysSinceError,
-                    0.4,
-                    2.8
+                    3.2 - daysSinceError,
+                    0.55,
+                    3.2
                 )
                 : 0;
         const masteryDampener =
             entry?.consecutiveHits >= 3 &&
             entry.accuracy >= 0.82
-                ? 0.72
+                ? 0.6
                 : 1;
         const focusWeight =
             ctx.focoPrincipal ===
@@ -2351,11 +2360,11 @@ window.QuestionsService = {
                 )
                 : 0.35;
         const noveltyWeight = entry
-            ? 0.25 *
+            ? 0.32 *
               evidence.explorationWeight
-            : 1.2 +
+            : 1.35 +
               evidence.explorationWeight *
-                  1.4;
+                  1.45;
 
         return (
             manualWeight *
@@ -2432,35 +2441,35 @@ window.QuestionsService = {
         let target = baseTarget;
 
         if (
-            attempts < 4 ||
+            attempts < 5 ||
             errorStreak >= 2 ||
-            accuracy < 0.48
+            accuracy < 0.55
         ) {
-            target -= 1.2;
+            target -= 1.35;
         } else if (
-            hitStreak >= 4 &&
-            accuracy >= 0.82
+            hitStreak >= 5 &&
+            accuracy >= 0.86
         ) {
-            target += 1;
+            target += 0.8;
         } else if (
-            hitStreak >= 2 &&
-            accuracy >= 0.72
+            hitStreak >= 3 &&
+            accuracy >= 0.76
         ) {
-            target += 0.45;
+            target += 0.25;
         }
 
         if (
             daysSinceError !== null &&
-            daysSinceError <= 2
+            daysSinceError <= 3
         ) {
-            target -= 0.55;
+            target -= 0.8;
         }
 
         if (
             options.reviewBias &&
             entry.errors > 0
         ) {
-            target -= 0.25;
+            target -= 0.35;
         }
 
         return this.clamp(
@@ -2627,21 +2636,21 @@ window.QuestionsService = {
             lastTopic ===
                 question.topicKey &&
             !options.focusMode
-                ? -2.1
+                ? -2.45
                 : 0;
         const subtopicRepeatPenalty =
             lastSubtopic ===
                 questionSubtopicKey
-                ? -1.25
+                ? -1.55
                 : 0;
         const saturationPenalty =
             (topicCountMap[
                 question.topicKey
-            ] || 0) * 0.85;
+            ] || 0) * 1.05;
         const subtopicSaturationPenalty =
             (subtopicCountMap[
                 questionSubtopicKey
-            ] || 0) * 0.4;
+            ] || 0) * 0.55;
         const reviewBoost =
             options.reviewBias &&
             performanceMap.get(
@@ -2655,9 +2664,9 @@ window.QuestionsService = {
                           )
                               ?.consecutiveErrors ||
                           0
-                      ) * 0.45,
+                      ) * 0.38,
                       0,
-                      1.8
+                      1.45
                   )
                 : 0;
         const proofBalanceBoost =
@@ -3348,7 +3357,7 @@ window.QuestionsService = {
                 profile: "focus",
                 enforceCoverage: true,
                 focusMode: true,
-                reviewBias: 0.8
+                reviewBias: 0.95
             }
         );
     },
@@ -3361,7 +3370,7 @@ window.QuestionsService = {
             {
                 profile: "adaptive",
                 enforceCoverage: true,
-                reviewBias: 1.8,
+                reviewBias: 1.45,
                 focusMode:
                     ctx.mode ===
                     "REFORCO_DIRECIONADO"
@@ -3377,7 +3386,7 @@ window.QuestionsService = {
             {
                 profile: "proof",
                 enforceCoverage: true,
-                reviewBias: 1.2
+                reviewBias: 1.05
             }
         );
     },
@@ -3422,7 +3431,7 @@ window.QuestionsService = {
                 {
                     profile: "single",
                     enforceCoverage: false,
-                    reviewBias: 1
+                    reviewBias: 0.9
                 }
             );
         }

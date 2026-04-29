@@ -160,7 +160,7 @@
         </div>` : ""}
         <strong>${escapeHtml(activity.title || "Estamos organizando Aprender, Praticar e Prova")}</strong>
         <p>${escapeHtml(activity.message || "Aguarde um instante enquanto o sistema prepara a base antes de abrir a proxima tela.")}</p>
-        <small class="premium-processing-footnote">PDFs escaneados podem levar alguns minutos. Voce pode aguardar aqui; o RotaNota continua trabalhando para entregar a versao mais completa.</small>
+        <small class="premium-processing-footnote">PDFs escaneados podem levar alguns minutos. Voce pode aguardar aqui; o Papiro Tools continua trabalhando para entregar a versao mais completa.</small>
     </article>
 </div>`;
     }

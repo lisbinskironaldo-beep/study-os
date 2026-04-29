@@ -22,8 +22,8 @@ mudanca no PDF Focado ou separacao do Ops/NorthStar.
   cuidado, sem remocao brusca.
 - O Ops ainda esta dentro do mesmo projeto e rota `/ops`, mas a direcao de
   produto e separar a gestao para NorthStar.
-- A marca publica ainda aparece como RotaNota em varios pontos. A futura marca
-  esta em decisao entre Papiro Edu, Papiro Labs ou Papiro Tools.
+- A marca publica ainda aparece como RotaNota em varios pontos. A direcao
+  escolhida agora e Papiro Tools, com Papiro como nome curto.
 
 ## Estado do repo antes desta nota
 
@@ -299,9 +299,9 @@ Arquivos provaveis:
 
 Recomendacao atual:
 
-- Produto principal: Papiro Edu.
-- Guarda-chuva/estudio: Papiro Labs.
-- Ferramentas internas ou suite: Papiro Tools.
+- Produto principal: Papiro Tools.
+- Nome curto/app: Papiro.
+- Guarda-chuva/estudio futuro, se necessario: Papiro Labs.
 
 Nao renomear agora se a decisao ainda nao fechou.
 Preparar apenas uma camada de marca:
@@ -309,7 +309,7 @@ Preparar apenas uma camada de marca:
 ```js
 const Brand = {
   publicProduct: "RotaNota",
-  futureProductCandidate: "Papiro Edu",
+  futureProductCandidate: "Papiro Tools",
   opsProduct: "NorthStar Ops"
 };
 ```
