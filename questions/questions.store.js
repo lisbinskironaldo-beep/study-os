@@ -725,15 +725,30 @@ window.QuestionsStore = {
                 errors: 0,
                 attempts: 0,
                 avgTime: 0,
-                lastSeen: 0
+                lastSeen: 0,
+                lastCorrect: null,
+                lastErrorAt: 0,
+                consecutiveHits: 0,
+                consecutiveErrors: 0
             };
 
         current.attempts += 1;
 
         if (correct) {
             current.hits += 1;
+            current.consecutiveHits =
+                (Number(
+                    current.consecutiveHits
+                ) || 0) + 1;
+            current.consecutiveErrors = 0;
         } else {
             current.errors += 1;
+            current.consecutiveErrors =
+                (Number(
+                    current.consecutiveErrors
+                ) || 0) + 1;
+            current.consecutiveHits = 0;
+            current.lastErrorAt = Date.now();
         }
 
         current.avgTime =
@@ -748,6 +763,7 @@ window.QuestionsStore = {
                 : timeMs;
 
         current.lastSeen = Date.now();
+        current.lastCorrect = Boolean(correct);
         this.data.topics[key] = current;
         this.markProfileStateDirty();
     },

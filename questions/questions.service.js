@@ -2010,10 +2010,208 @@ window.QuestionsService = {
                         entry.attempts > 0
                             ? entry.hits /
                               entry.attempts
-                            : 0
+                            : 0,
+                    consecutiveHits:
+                        Number(
+                            entry.consecutiveHits
+                        ) || 0,
+                    consecutiveErrors:
+                        Number(
+                            entry.consecutiveErrors
+                        ) || 0,
+                    lastCorrect:
+                        typeof entry.lastCorrect ===
+                            "boolean"
+                            ? entry.lastCorrect
+                            : null,
+                    lastErrorAt:
+                        Number(
+                            entry.lastErrorAt
+                        ) || 0
                 }
             ])
         );
+    },
+
+    getQuestionPerformanceEntry(
+        question = {}
+    ) {
+        const baseKey =
+            String(
+                question.baseKey || "ESCOLAR"
+            ).trim() || "ESCOLAR";
+        const subjectKey =
+            String(
+                question.subjectKey || ""
+            ).trim();
+        const topicKey =
+            String(
+                question.topicKey || ""
+            ).trim();
+
+        if (!subjectKey || !topicKey) {
+            return null;
+        }
+
+        const entries =
+            QuestionsStore.getTopicEntries({
+                baseKey,
+                subjectKey
+            });
+
+        const entry =
+            entries.find(
+                (item) =>
+                    String(
+                        item?.topicKey || ""
+                    ) === topicKey
+            ) || null;
+
+        if (!entry) {
+            return null;
+        }
+
+        return {
+            ...entry,
+            accuracy:
+                entry.attempts > 0
+                    ? entry.hits /
+                      entry.attempts
+                    : 0,
+            consecutiveHits:
+                Number(
+                    entry.consecutiveHits
+                ) || 0,
+            consecutiveErrors:
+                Number(
+                    entry.consecutiveErrors
+                ) || 0,
+            lastCorrect:
+                typeof entry.lastCorrect ===
+                    "boolean"
+                    ? entry.lastCorrect
+                    : null,
+            lastErrorAt:
+                Number(
+                    entry.lastErrorAt
+                ) || 0
+        };
+    },
+
+    getSessionGuidance(
+        question = {},
+        meta = {}
+    ) {
+        const sourceMode =
+            String(
+                meta.sourceMode || ""
+            ).trim();
+
+        if (
+            sourceMode !== "smart" &&
+            sourceMode !== "specific" &&
+            sourceMode !== "direct_search"
+        ) {
+            return null;
+        }
+
+        const entry =
+            this.getQuestionPerformanceEntry(
+                question
+            );
+        const difficulty =
+            Number(
+                question.difficulty || 1
+            ) || 1;
+        const topicLabel =
+            String(
+                question.topicLabel ||
+                    "este assunto"
+            ).trim();
+
+        if (!entry) {
+            return {
+                tone: "confidence",
+                label: "Primeiro contato",
+                message:
+                    "Comecando por uma questao de confianca para mapear o ritmo."
+            };
+        }
+
+        const now = Date.now();
+        const daysSinceSeen =
+            entry.lastSeen
+                ? (
+                    now - entry.lastSeen
+                ) / 86400000
+                : 99;
+        const daysSinceError =
+            entry.lastErrorAt
+                ? (
+                    now - entry.lastErrorAt
+                ) / 86400000
+                : null;
+        const accuracy =
+            Number(entry.accuracy) || 0;
+
+        if (
+            entry.consecutiveErrors >= 2 ||
+            (
+                daysSinceError !== null &&
+                daysSinceError <= 2
+            )
+        ) {
+            return {
+                tone: "review",
+                label: "Reforco guiado",
+                message:
+                    "Voltamos um passo para reforcar este ponto sem pressa."
+            };
+        }
+
+        if (
+            daysSinceSeen >= 7 &&
+            entry.attempts > 0
+        ) {
+            return {
+                tone: "review",
+                label: "Revisao",
+                message:
+                    "Revisando um ponto visto antes para fixacao."
+            };
+        }
+
+        if (
+            entry.consecutiveHits >= 4 &&
+            accuracy >= 0.82 &&
+            difficulty >= 4
+        ) {
+            return {
+                tone: "challenge",
+                label: "Desafio leve",
+                message:
+                    "Agora vai um desafio leve porque voce manteve consistencia."
+            };
+        }
+
+        if (
+            entry.consecutiveHits >= 2 &&
+            accuracy >= 0.72
+        ) {
+            return {
+                tone: "steady",
+                label: "Consolidacao",
+                message:
+                    "Mantendo o ritmo para consolidar antes de subir."
+            };
+        }
+
+        return {
+            tone: "confidence",
+            label: topicLabel,
+            message:
+                "Entrou uma questao de confianca para fixar o assunto."
+        };
     },
 
     getAdaptiveEvidenceProfile(
@@ -2082,6 +2280,13 @@ window.QuestionsService = {
                 ) /
                 86400000
                 : 14;
+        const daysSinceError =
+            entry?.lastErrorAt
+                ? (
+                    now - entry.lastErrorAt
+                ) /
+                86400000
+                : null;
         const recencyWeight =
             this.clamp(
                 daysSinceSeen * 0.35,
@@ -2108,6 +2313,29 @@ window.QuestionsService = {
                       2
                   )
                 : 0;
+        const errorStreakWeight =
+            entry?.consecutiveErrors
+                ? this.clamp(
+                    entry.consecutiveErrors *
+                        1.15,
+                    0,
+                    3.5
+                )
+                : 0;
+        const freshErrorWeight =
+            daysSinceError !== null &&
+            daysSinceError <= 3
+                ? this.clamp(
+                    2.8 - daysSinceError,
+                    0.4,
+                    2.8
+                )
+                : 0;
+        const masteryDampener =
+            entry?.consecutiveHits >= 3 &&
+            entry.accuracy >= 0.82
+                ? 0.72
+                : 1;
         const focusWeight =
             ctx.focoPrincipal ===
             question.topicKey
@@ -2139,13 +2367,106 @@ window.QuestionsService = {
                 evidence.reinforcementWeight *
                 topicEvidenceFactor +
             recencyWeight +
-            reviewWeight *
+            (
+                reviewWeight +
+                errorStreakWeight +
+                freshErrorWeight
+            ) *
                 evidence.reinforcementWeight *
-                topicEvidenceFactor +
+                topicEvidenceFactor *
+                masteryDampener +
             focusWeight *
                 evidence.reinforcementWeight *
                 topicEvidenceFactor +
             noveltyWeight
+        );
+    },
+
+    getQuestionDifficultyTarget(
+        question,
+        ctx,
+        performanceMap,
+        selected,
+        size,
+        options = {}
+    ) {
+        const baseTarget =
+            this.getDifficultyTarget(
+                ctx,
+                selected.length,
+                size,
+                options
+            );
+        const entry =
+            performanceMap.get(
+                question.topicKey
+            );
+
+        if (!entry) {
+            return this.clamp(
+                baseTarget - 0.7,
+                1,
+                7
+            );
+        }
+
+        const attempts =
+            Number(entry.attempts) || 0;
+        const accuracy =
+            Number(entry.accuracy) || 0;
+        const errorStreak =
+            Number(
+                entry.consecutiveErrors
+            ) || 0;
+        const hitStreak =
+            Number(
+                entry.consecutiveHits
+            ) || 0;
+        const now = Date.now();
+        const daysSinceError =
+            entry.lastErrorAt
+                ? (
+                    now - entry.lastErrorAt
+                ) / 86400000
+                : null;
+        let target = baseTarget;
+
+        if (
+            attempts < 4 ||
+            errorStreak >= 2 ||
+            accuracy < 0.48
+        ) {
+            target -= 1.2;
+        } else if (
+            hitStreak >= 4 &&
+            accuracy >= 0.82
+        ) {
+            target += 1;
+        } else if (
+            hitStreak >= 2 &&
+            accuracy >= 0.72
+        ) {
+            target += 0.45;
+        }
+
+        if (
+            daysSinceError !== null &&
+            daysSinceError <= 2
+        ) {
+            target -= 0.55;
+        }
+
+        if (
+            options.reviewBias &&
+            entry.errors > 0
+        ) {
+            target -= 0.25;
+        }
+
+        return this.clamp(
+            target,
+            1,
+            7
         );
     },
 
@@ -2258,9 +2579,11 @@ window.QuestionsService = {
                   ].id
                 : null;
         const difficultyTarget =
-            this.getDifficultyTarget(
+            this.getQuestionDifficultyTarget(
+                question,
                 ctx,
-                selected.length,
+                performanceMap,
+                selected,
                 size,
                 options
             );
@@ -2324,7 +2647,18 @@ window.QuestionsService = {
             performanceMap.get(
                 question.topicKey
             )?.errors
-                ? options.reviewBias
+                ? options.reviewBias +
+                  this.clamp(
+                      (
+                          performanceMap.get(
+                              question.topicKey
+                          )
+                              ?.consecutiveErrors ||
+                          0
+                      ) * 0.45,
+                      0,
+                      1.8
+                  )
                 : 0;
         const proofBalanceBoost =
             options.profile ===
@@ -2401,8 +2735,14 @@ window.QuestionsService = {
         }
 
         return this.interleaveTopicsForWarmup(
-            this.ensureTopicDiversity(
-                selected,
+            this.ensureComfortMix(
+                this.ensureTopicDiversity(
+                    selected,
+                    pool,
+                    ctx,
+                    size,
+                    options
+                ),
                 pool,
                 ctx,
                 size,
@@ -2664,6 +3004,189 @@ window.QuestionsService = {
                     );
                 }
             }
+        }
+
+        return chosen;
+    },
+
+    ensureComfortMix(
+        selected,
+        pool,
+        ctx,
+        size,
+        options = {}
+    ) {
+        const chosen = Array.isArray(
+            selected
+        )
+            ? [...selected]
+            : [];
+
+        if (
+            chosen.length < 3 ||
+            options.profile === "proof"
+        ) {
+            return chosen;
+        }
+
+        const getDifficulty = (
+            question
+        ) =>
+            Number(question?.difficulty) ||
+            1;
+        const isConfidence = (
+            question
+        ) => getDifficulty(question) <= 3;
+        const isChallenge = (
+            question
+        ) => getDifficulty(question) >= 5;
+        const available =
+            Array.isArray(pool)
+                ? pool.filter(Boolean)
+                : [];
+        const usedIds = () =>
+            new Set(
+                chosen.map(
+                    (question) =>
+                        question?.id || ""
+                )
+            );
+        const findCandidate = (
+            predicate,
+            used
+        ) =>
+            available
+                .filter(
+                    (question) =>
+                        question &&
+                        !used.has(
+                            question.id
+                        ) &&
+                        predicate(question)
+                )
+                .sort(
+                    (left, right) =>
+                        getDifficulty(left) -
+                        getDifficulty(right)
+                )[0] || null;
+        const findReplaceIndex = (
+            predicate
+        ) => {
+            const candidates =
+                chosen
+                    .map(
+                        (
+                            question,
+                            index
+                        ) => ({
+                            question,
+                            index
+                        })
+                    )
+                    .filter(
+                        ({ question }) =>
+                            predicate(question) &&
+                            question?.topicKey !==
+                                ctx.focoPrincipal
+                    )
+                    .sort(
+                        (left, right) =>
+                            getDifficulty(
+                                right.question
+                            ) -
+                                getDifficulty(
+                                    left.question
+                                ) ||
+                            right.index -
+                                left.index
+                    );
+
+            if (candidates.length) {
+                return candidates[0].index;
+            }
+
+            return chosen.findIndex(
+                predicate
+            );
+        };
+
+        if (
+            !chosen.some(isConfidence)
+        ) {
+            const candidate =
+                findCandidate(
+                    isConfidence,
+                    usedIds()
+                );
+            const replaceIndex =
+                candidate
+                    ? findReplaceIndex(
+                        (question) =>
+                            isChallenge(
+                                question
+                            ) ||
+                            !isConfidence(
+                                question
+                            )
+                    )
+                    : -1;
+
+            if (
+                candidate &&
+                replaceIndex >= 0
+            ) {
+                chosen.splice(
+                    replaceIndex,
+                    1,
+                    candidate
+                );
+            }
+        }
+
+        const maxChallengeCount =
+            Math.max(
+                1,
+                Math.ceil(
+                    chosen.length *
+                        (
+                            options.focusMode
+                                ? 0.45
+                                : 0.35
+                        )
+                )
+            );
+
+        while (
+            chosen.filter(isChallenge)
+                .length > maxChallengeCount
+        ) {
+            const candidate =
+                findCandidate(
+                    (question) =>
+                        getDifficulty(
+                            question
+                        ) <= 4,
+                    usedIds()
+                );
+            const replaceIndex =
+                candidate
+                    ? findReplaceIndex(
+                        isChallenge
+                    )
+                    : -1;
+
+            if (
+                !candidate ||
+                replaceIndex < 0
+            ) {
+                break;
+            }
+
+            chosen.splice(
+                replaceIndex,
+                1,
+                candidate
+            );
         }
 
         return chosen;

@@ -83,7 +83,7 @@ No modulo `questions`, a etapa visual atual ficou assim:
 - [x] simplificar a home para `Treino inteligente` e acessos mais diretos ao estudo
 - [x] subir `Rapido` como modo principal
 - [x] subir `Simulado` para a home principal
-- [ ] separar `Progresso` como hub de estatisticas
+- [x] separar `Progresso` como hub de estatisticas
 - [x] manter a entrada circular do `Treino inteligente`
 - [x] reduzir a tela final do treino inteligente para uma revisao curta com `objetivo`, `quantidade`, `guardar` e `comecar`
 
@@ -111,7 +111,7 @@ Essa frente fecha a proxima reorganizacao do produto:
 - [ ] manter `Inteligente` como fluxo adaptativo com etapa de assuntos
 - [ ] mover `Por assunto` para dentro de `Simulado > Montar simulado`
 - [x] subir `Simulado` para a home como modo oficial
-- [ ] separar `Progresso` como hub de estatisticas, e nao como modo de treino
+- [x] separar `Progresso` como hub de estatisticas, e nao como modo de treino
 - [x] rebaixar `Guardados` e `Retomar treino` para dentro do `Rapido`
 - [ ] executar a melhoria em blocos, sem misturar todos os modos ao mesmo tempo
 

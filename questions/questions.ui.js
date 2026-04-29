@@ -596,7 +596,7 @@
 
         const backBtn =
             target.closest(
-                "#questionsBackBtn, #questionsInfoBackBtn"
+                "#questionsBackBtn, #questionsInfoBackBtn, #questionsSessionPauseBtn"
             );
 
         if (backBtn) {
@@ -1678,11 +1678,11 @@
             return this.renderSmartSubjects();
         }
 
-        if (
-            launcherView ===
-                "progress" ||
-            launcherView === "specific"
-        ) {
+        if (launcherView === "progress") {
+            return this.renderProgressLauncher();
+        }
+
+        if (launcherView === "specific") {
             return this.renderSpecificLauncher();
         }
 
@@ -1695,6 +1695,10 @@
 
         if (launcherView === "saved") {
             return this.renderSavedLauncher();
+        }
+
+        if (launcherView === "saved_detail") {
+            return this.renderSavedBlockDetail();
         }
 
         if (launcherView === "resume") {
@@ -1818,13 +1822,20 @@
                     </article>
                 </div>
 
+                <div class="questions-entry-footer questions-entry-footer--secondary">
+                    <button class="questions-secondary-btn" type="button" data-launcher-view="progress" ${isLoading || isError ? "disabled" : ""}>
+                        Ver progresso
+                    </button>
+                </div>
+
             </section>
         `;
     },
 
     renderDirectSearchPanel({
         title = "Questoes por assunto",
-        description = "Digite um ou mais termos para puxar questoes sem montar a rota completa."
+        description = "Digite um ou mais termos para puxar questoes sem montar a rota completa.",
+        variant = ""
     } = {}) {
         const page =
             this.page;
@@ -1851,9 +1862,13 @@
                           null
                         ? "Pronto para gerar"
                         : `${directSearchMatchCount} questoes encontradas`;
+        const variantClass =
+            variant
+                ? ` questions-direct-search--${this.escapeHtml(variant)}`
+                : "";
 
         return `
-            <section class="questions-direct-search" aria-label="Busca direta por assunto">
+            <section class="questions-direct-search${variantClass}" aria-label="Busca direta por assunto">
                 <div class="questions-direct-search-copy">
                     <h3>${this.escapeHtml(title)}</h3>
                     <p>${this.escapeHtml(description)}</p>
@@ -1957,22 +1972,23 @@
 
                     <article class="questions-entry-option questions-entry-option-review">
                         <div class="questions-entry-copy">
-                            <h3>Revisar erros</h3>
+                            <h3>Pontos fracos</h3>
                             <p>${weakTopics.length ? `Revisao curta puxando ${Math.min(3, weakTopics.length)} assunto(s) com erro recente.` : "Ative mais historico para liberar esta sugestao."}</p>
+                            ${weakTopics.length ? `
+                                <div class="questions-entry-inline-signals" aria-label="Resumo dos pontos fracos">
+                                    <span class="questions-entry-inline-signal">${Math.min(3, weakTopics.length)} assunto${Math.min(3, weakTopics.length) > 1 ? "s" : ""}</span>
+                                    <span class="questions-entry-inline-signal">${this.escapeHtml(weakTopics[0].topicLabel)}</span>
+                                </div>
+                            ` : ""}
                         </div>
-                        <button class="questions-secondary-btn" type="button" data-quick-action="review_errors" ${weakTopics.length ? "" : "disabled"}>
-                            Iniciar
-                        </button>
-                    </article>
-
-                    <article class="questions-entry-option questions-entry-option-focus">
-                        <div class="questions-entry-copy">
-                            <h3>Foco nos pontos fracos</h3>
-                            <p>${weakTopics[0] ? `Assunto lider de erro agora: ${this.escapeHtml(weakTopics[0].topicLabel)}.` : "Ative mais historico para destacar um ponto fraco."}</p>
+                        <div class="questions-entry-secondary-actions">
+                            <button class="questions-secondary-btn questions-entry-secondary-btn" type="button" data-quick-action="review_errors" ${weakTopics.length ? "" : "disabled"}>
+                                Revisar erros
+                            </button>
+                            <button class="questions-secondary-btn questions-entry-secondary-btn" type="button" data-quick-action="weak_points" ${weakTopics[0] ? "" : "disabled"}>
+                                Pior ponto
+                            </button>
                         </div>
-                        <button class="questions-secondary-btn" type="button" data-quick-action="weak_points" ${weakTopics[0] ? "" : "disabled"}>
-                            Iniciar
-                        </button>
                     </article>
                 </div>
 
@@ -6670,6 +6686,323 @@
         `;
     },
 
+    getSavedBlockDetailModel(block = {}) {
+        const meta =
+            block.routeSnapshot?.meta || {};
+        const context =
+            block.routeSnapshot?.context ||
+            block.launcherContext ||
+            {};
+        const snapshot = Array.isArray(
+            block.sessionSnapshot
+        )
+            ? block.sessionSnapshot
+            : [];
+        const questionIds = Array.isArray(
+            block.questionIds
+        )
+            ? block.questionIds.filter(Boolean)
+            : [];
+        const topicsFromMeta =
+            Array.isArray(meta.topicsLabel)
+                ? meta.topicsLabel.filter(Boolean)
+                : [];
+        const subjectMap = new Map();
+        const series = new Set();
+
+        snapshot.forEach((question) => {
+            const subject =
+                question?.subjectLabel ||
+                question?.materia ||
+                meta.materiaLabel ||
+                "Materia";
+            const topic =
+                question?.topicLabel ||
+                question?.topico ||
+                question?.subtopicLabel ||
+                question?.subtopico ||
+                "Assunto";
+            const key =
+                `${subject}::${topic}`;
+            const existing =
+                subjectMap.get(key) || {
+                    subject,
+                    topic,
+                    count: 0
+                };
+
+            existing.count += 1;
+            subjectMap.set(key, existing);
+
+            const questionSeries =
+                Array.isArray(question?.serie)
+                    ? question.serie
+                    : [question?.serie];
+            questionSeries
+                .filter(
+                    (item) =>
+                        item !== undefined &&
+                        item !== null &&
+                        item !== ""
+                )
+                .forEach((item) =>
+                    series.add(String(item))
+                );
+        });
+
+        if (
+            !subjectMap.size &&
+            topicsFromMeta.length
+        ) {
+            topicsFromMeta.forEach((topic) => {
+                subjectMap.set(
+                    `${meta.materiaLabel || "Materia"}::${topic}`,
+                    {
+                        subject:
+                            meta.materiaLabel ||
+                            "Materia",
+                        topic,
+                        count: 0
+                    }
+                );
+            });
+        }
+
+        if (!series.size) {
+            const contextSeries =
+                Array.isArray(
+                    context.smartSelectedSeries
+                ) &&
+                context.smartSelectedSeries.length
+                    ? context.smartSelectedSeries
+                    : [context.serie];
+
+            contextSeries
+                .filter(
+                    (item) =>
+                        item !== undefined &&
+                        item !== null &&
+                        item !== ""
+                )
+                .forEach((item) =>
+                    series.add(String(item))
+                );
+        }
+
+        const groups = Array.from(
+            subjectMap.values()
+        ).reduce((acc, item) => {
+            const subject =
+                item.subject || "Materia";
+            const current =
+                acc.get(subject) || [];
+
+            current.push(item);
+            acc.set(subject, current);
+            return acc;
+        }, new Map());
+
+        const amount =
+            Number(meta.amount) ||
+            questionIds.length ||
+            snapshot.length ||
+            0;
+        const timeLabel =
+            Number(meta.smartTimeLimitMinutes)
+                ? `${Number(meta.smartTimeLimitMinutes)} min`
+                : Number(context.smartTimeMinutes)
+                    ? `${Number(context.smartTimeMinutes)} min`
+                    : "";
+        const limitLabel =
+            meta.trainingValueLabel ||
+            [
+                amount ? `${amount} questoes` : "",
+                timeLabel
+            ]
+                .filter(Boolean)
+                .join(" ou ") ||
+            "Sem limite definido";
+
+        return {
+            meta,
+            context,
+            amount,
+            limitLabel,
+            seriesLabels: Array.from(series)
+                .map((serie) =>
+                    this.formatSerieLabel(serie)
+                )
+                .filter(Boolean),
+            subjectGroups: Array.from(
+                groups.entries()
+            ),
+            topicCount:
+                subjectMap.size ||
+                topicsFromMeta.length,
+            note:
+                String(
+                    block.routeSnapshot?.note ||
+                    meta.note ||
+                    ""
+                ).trim()
+        };
+    },
+
+    renderSavedBlockDetail() {
+        const blockId =
+            String(
+                this.page.activeSavedBlockId ||
+                    ""
+            ).trim();
+        const block =
+            blockId
+                ? QuestionsStore.getSavedBlockById(
+                    blockId
+                )
+                : null;
+
+        if (!block) {
+            return `
+                <section class="questions-card questions-entry-subview">
+                    <div class="questions-head questions-entry-head">
+                        <div>
+                            <div class="questions-kicker">Bloco salvo</div>
+                            <h2>Bloco nao encontrado</h2>
+                            <p>Volte para Guardados e escolha outro bloco para consultar.</p>
+                        </div>
+
+                        <div class="questions-entry-actions">
+                            <button class="questions-secondary-btn" type="button" data-launcher-view="saved">Voltar para Guardados</button>
+                        </div>
+                    </div>
+                </section>
+            `;
+        }
+
+        const model =
+            this.getSavedBlockDetailModel(
+                block
+            );
+        const blockIdAttr =
+            this.escapeHtml(block.id);
+        const modeLabel =
+            block.mode === "smart"
+                ? "Treino inteligente"
+                : "Treino especifico";
+        const subjectSummary =
+            model.subjectGroups
+                .map(([subject]) => subject)
+                .join(", ") || "Materia";
+        const seriesSummary =
+            model.seriesLabels.join(", ") ||
+            "Series do recorte";
+
+        return `
+            <section class="questions-card questions-entry-subview questions-saved-detail">
+                <div class="questions-head questions-entry-head">
+                    <div>
+                        <div class="questions-kicker">Consulta de bloco</div>
+                        <h2>${this.escapeHtml(block.name)}</h2>
+                        <p>Veja o que esta guardado antes de refazer ou ajustar este bloco.</p>
+                    </div>
+
+                    <div class="questions-entry-actions">
+                        <button class="questions-secondary-btn" type="button" data-launcher-view="saved">Voltar</button>
+                    </div>
+                </div>
+
+                ${this.page.getRuntimeNotice() ? `
+                    <div class="questions-inline-notice">
+                        ${this.page.getRuntimeNotice()}
+                    </div>
+                ` : ""}
+
+                <div class="questions-saved-detail-actions">
+                    <button class="questions-primary-btn" type="button" data-saved-block-start="${blockIdAttr}">
+                        Refazer
+                    </button>
+                    <button class="questions-secondary-btn" type="button" data-saved-block-rename="${blockIdAttr}">
+                        Renomear
+                    </button>
+                    <button class="questions-secondary-btn" type="button" data-saved-block-duplicate="${blockIdAttr}">
+                        Duplicar
+                    </button>
+                    <button class="questions-secondary-btn" type="button" data-saved-block-delete="${blockIdAttr}">
+                        Apagar
+                    </button>
+                </div>
+
+                <div class="questions-saved-detail-grid">
+                    <article class="questions-route-stat">
+                        <span>Tipo</span>
+                        <strong>${this.escapeHtml(modeLabel)}</strong>
+                    </article>
+                    <article class="questions-route-stat">
+                        <span>Questoes</span>
+                        <strong>${this.escapeHtml(String(model.amount))}</strong>
+                    </article>
+                    <article class="questions-route-stat">
+                        <span>Assuntos</span>
+                        <strong>${this.escapeHtml(String(model.topicCount))}</strong>
+                    </article>
+                    <article class="questions-route-stat">
+                        <span>Limite</span>
+                        <strong>${this.escapeHtml(model.limitLabel)}</strong>
+                    </article>
+                </div>
+
+                <div class="questions-saved-detail-route">
+                    <article class="questions-route-card">
+                        <div>
+                            <div class="questions-summary-label">Rota</div>
+                            <h3>${this.escapeHtml(subjectSummary)}</h3>
+                        </div>
+                        <div class="questions-saved-detail-facts">
+                            <span><strong>Series</strong>${this.escapeHtml(seriesSummary)}</span>
+                            <span><strong>Criado</strong>${this.formatDate(block.createdAt)}</span>
+                            <span><strong>Atualizado</strong>${this.formatDate(block.updatedAt)}</span>
+                            ${block.lastUsedAt ? `<span><strong>Ultimo uso</strong>${this.formatDate(block.lastUsedAt)}</span>` : ""}
+                        </div>
+                        ${model.note ? `
+                            <div class="questions-empty-inline questions-empty-inline-soft">
+                                ${this.escapeHtml(model.note)}
+                            </div>
+                        ` : ""}
+                    </article>
+
+                    <article class="questions-route-card">
+                        <div>
+                            <div class="questions-summary-label">Materias e assuntos</div>
+                            <h3>Conteudo do bloco</h3>
+                        </div>
+
+                        ${model.subjectGroups.length ? `
+                            <div class="questions-saved-topic-groups">
+                                ${model.subjectGroups.map(([subject, topics]) => `
+                                    <div class="questions-saved-topic-group">
+                                        <strong>${this.escapeHtml(subject)}</strong>
+                                        <div class="questions-saved-topic-list">
+                                            ${topics.map((topic) => `
+                                                <span>
+                                                    ${this.escapeHtml(topic.topic)}
+                                                    ${topic.count ? `<small>${topic.count}</small>` : ""}
+                                                </span>
+                                            `).join("")}
+                                        </div>
+                                    </div>
+                                `).join("")}
+                            </div>
+                        ` : `
+                            <div class="questions-empty-inline questions-empty-inline-soft">
+                                Este bloco nao tem assuntos detalhados no snapshot, mas ainda pode ser refeito se houver questoes salvas.
+                            </div>
+                        `}
+                    </article>
+                </div>
+            </section>
+        `;
+    },
+
     renderResumeLauncher() {
         const inProgressRuns =
             QuestionsStore.getRuns({
@@ -6778,7 +7111,38 @@
         `;
     },
 
+    isProgressAccountConnected() {
+        return Boolean(
+            window.RotaNotaAuth &&
+            typeof window.RotaNotaAuth
+                .isAuthenticated ===
+                "function" &&
+            window.RotaNotaAuth.isAuthenticated()
+        );
+    },
+
+    renderProgressAccessPanel() {
+        const connected =
+            this.isProgressAccountConnected();
+
+        return `
+            <section class="questions-progress-account-panel${connected ? " is-connected" : ""}">
+                <div>
+                    <span>${connected ? "Conta conectada" : "Conta Google"}</span>
+                    <strong>${connected ? "Seu progresso pode acompanhar sua rotina completa." : "Entre para sincronizar e abrir o painel completo."}</strong>
+                </div>
+                <button class="questions-secondary-btn" type="button" data-progress-account-action="${connected ? "panel" : "login"}">
+                    ${connected ? "Abrir painel completo" : "Entrar e sincronizar"}
+                </button>
+            </section>
+        `;
+    },
+
     renderSpecificLauncher() {
+        return this.renderSimuladoBuilder();
+    },
+
+    renderProgressLauncher() {
         const page =
             this.page;
 
@@ -6818,6 +7182,8 @@
                             ${page.getRuntimeNotice()}
                         </div>
                     ` : ""}
+
+                    ${this.renderProgressAccessPanel()}
 
                     <div class="questions-hub-stage">
                         ${this.renderProgressHubCurrentBlock(
@@ -6993,16 +7359,54 @@
         `;
     },
 
+    renderSessionFocusHeader(
+        model = {},
+        current = 0
+    ) {
+        const total =
+            Math.max(
+                Number(model.totalCount) || 0,
+                1
+            );
+        const position =
+            Math.min(
+                Math.max(
+                    Number(current) + 1,
+                    1
+                ),
+                total
+            );
+
+        return `
+            <div class="questions-session-focus-bar">
+                <div class="questions-session-focus-copy">
+                    <span>${this.escapeHtml(model.subjectLabel)}</span>
+                    <strong>${this.escapeHtml(model.topicLabel)}</strong>
+                </div>
+
+                <div class="questions-session-focus-pills" aria-label="Resumo da sessao">
+                    <span>${position}/${total}</span>
+                    <span>${this.escapeHtml(model.elapsedLabel)}</span>
+                    <span>${this.escapeHtml(model.trainingValueLabel)}</span>
+                </div>
+
+                <button id="questionsSessionPauseBtn" class="questions-secondary-btn questions-session-pause-btn" type="button">
+                    Pausar
+                </button>
+            </div>
+        `;
+    },
+
     renderSessionInformation(
         meta = {},
         model = {}
     ) {
         return `
-            <section class="questions-session-info-panel">
-                <div class="questions-session-info-head">
-                    <div class="questions-panel-label">Informações da questão</div>
-                    <button id="questionsInfoBackBtn" class="questions-secondary-btn questions-session-info-back-btn" type="button">Voltar</button>
-                </div>
+            <details class="questions-session-info-panel questions-session-info-panel--drawer">
+                <summary class="questions-session-info-summary">
+                    <span>Detalhes da rota</span>
+                    <strong>${this.escapeHtml(model.modeLabel)}</strong>
+                </summary>
                 <div class="questions-session-info-grid">
                     <div>
                         <span>Total</span>
@@ -7033,7 +7437,38 @@
                         <strong>${model.topicLabel}</strong>
                     </div>
                 </div>
-            </section>
+            </details>
+        `;
+    },
+
+    renderSessionGuidance(
+        question = {},
+        meta = {}
+    ) {
+        const guidance =
+            QuestionsService.getSessionGuidance?.(
+                question,
+                meta
+            );
+
+        if (!guidance) {
+            return "";
+        }
+
+        const tone =
+            String(
+                guidance.tone || "steady"
+            )
+                .trim()
+                .toLowerCase()
+                .replace(/[^a-z0-9_-]/g, "") ||
+            "steady";
+
+        return `
+            <div class="questions-session-guidance questions-session-guidance--${this.escapeHtml(tone)}">
+                <span>${this.escapeHtml(guidance.label || "Ritmo")}</span>
+                <strong>${this.escapeHtml(guidance.message || "")}</strong>
+            </div>
         `;
     },
 
@@ -7085,10 +7520,18 @@
                         ${this.page.getRuntimeNotice()}
                     </div>
                 ` : ""}
+                ${this.renderSessionFocusHeader(
+                    progressModel,
+                    current
+                )}
                 <article class="questions-question-card questions-question-card--minimal">
                     <div class="questions-session-progress-bar" aria-hidden="true">
                         <span style="width: ${Math.max(Math.min(progress, 100), 0)}%"></span>
                     </div>
+                    ${this.renderSessionGuidance(
+                        question,
+                        meta
+                    )}
                     <h3>${question.prompt}</h3>
                     <div class="questions-answer-area">
                         ${this.renderAnswerBlock(question, answer)}
@@ -7750,6 +8193,68 @@
                             statsSection:
                                 sectionKey
                         });
+                    }
+                );
+            });
+
+        document
+            .querySelectorAll(
+                "[data-progress-account-action]"
+            )
+            .forEach((button) => {
+                button.addEventListener(
+                    "click",
+                    () => {
+                        const action =
+                            String(
+                                button.dataset
+                                    .progressAccountAction ||
+                                    ""
+                            ).trim();
+
+                        if (
+                            window.RotaNotaCore &&
+                            typeof window.RotaNotaCore
+                                .handleGoogleLoginSuccess ===
+                                "function" &&
+                            action === "panel"
+                        ) {
+                            window.RotaNotaCore.handleGoogleLoginSuccess(
+                                {
+                                    intent: {
+                                        kind: "stats",
+                                        source: "questions_progress"
+                                    }
+                                }
+                            );
+                            return;
+                        }
+
+                        if (
+                            window.RotaNotaCore &&
+                            typeof window.RotaNotaCore
+                                .requireGoogleLogin ===
+                                "function"
+                        ) {
+                            window.RotaNotaCore.requireGoogleLogin(
+                                "stats"
+                            );
+                            return;
+                        }
+
+                        if (
+                            window.RotaNotaAuth &&
+                            typeof window.RotaNotaAuth
+                                .requestGoogleLogin ===
+                                "function"
+                        ) {
+                            window.RotaNotaAuth.requestGoogleLogin(
+                                {
+                                    source:
+                                        "questions_progress"
+                                }
+                            );
+                        }
                     }
                 );
             });
@@ -9700,7 +10205,7 @@
 
             surface
                 .querySelector(
-                    "#questionsBackBtn, #questionsInfoBackBtn"
+                    "#questionsBackBtn, #questionsInfoBackBtn, #questionsSessionPauseBtn"
                 )
                 ?.addEventListener(
                     "click",

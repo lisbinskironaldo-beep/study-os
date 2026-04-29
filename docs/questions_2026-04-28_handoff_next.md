@@ -70,7 +70,7 @@ Fluxos validados:
 
 Resultado observado:
 
-- `Rapido` exibe `Retomar treino`, `Guardados`, `Revisar erros` e `Busca direta por assunto`
+- `Rapido` exibe `Retomar treino`, `Guardados`, `Pontos fracos` e `Busca direta por assunto`
 - a revisao por materia mostra `Excluir materia`
 - o atalho `Ir direto para as questoes` segue presente na revisao
 - a etapa final mostra `Quantidade de questoes` e `Tempo disponivel` ao mesmo tempo
@@ -138,6 +138,10 @@ Meta:
 
 - fechar o ciclo de `Guardados`
 
+Status:
+
+- executado nesta continuidade: `Consultar` agora abre uma tela dedicada de detalhe do bloco salvo antes de refazer
+
 Fazer:
 
 1. criar a tela dedicada de consulta do bloco salvo
@@ -156,6 +160,10 @@ Meta:
 
 - deixar a sessao menos tecnica e mais legivel
 
+Status:
+
+- executado nesta continuidade: a sessao agora usa uma barra compacta de foco, deixa detalhes da rota recolhidos e reforca o player ambiente oculto ao iniciar/retomar sessao
+
 Fazer:
 
 1. reduzir ruido visual do topo
@@ -172,6 +180,10 @@ Meta:
 
 - separar melhor `Progresso` do fluxo de treino
 
+Status:
+
+- executado nesta continuidade: `progress` agora renderiza o hub proprio, `specific` volta para a montagem controlada e a home mostra `Ver progresso` como acao secundaria
+
 Fazer:
 
 1. revisar a entrada de estatisticas sem competir com a home principal
@@ -182,12 +194,23 @@ Fazer:
 Meta:
 
 - nao misturar arquitetura nova com polimento inacabado
+- evitar que adaptacao vire punicao por acerto
 
 Fazer depois:
 
-1. motor adaptativo por dificuldade
-2. motor adaptativo por revisao
-3. sugestoes automaticas a partir de historico
+1. validar o motor adaptativo com historico real no browser
+2. definir guardrails de experiencia para nao desanimar o usuario
+3. expor explicabilidade curta durante a sessao
+4. sugestoes automaticas a partir de historico
+
+Regra de produto:
+
+- o motor nao deve simplesmente aumentar a dificuldade quando o usuario acerta
+- acerto recente primeiro libera consolidacao e variedade, nao obrigatoriamente questao mais dificil
+- subida de dificuldade so acontece com evidencia minima: sequencia de acertos, boa acuracia e sem erro recente no mesmo topico
+- erro recente deve puxar uma questao mais acessivel ou uma revisao curta, sem fazer o usuario sentir que regrediu
+- toda sessao deve manter mistura saudavel: algumas questoes de confianca, algumas de consolidacao e poucas de desafio
+- se o usuario errar duas vezes seguidas no mesmo topico, o proximo contato deve reduzir pressao e explicar que e reforco, nao castigo
 
 Regra:
 
@@ -242,3 +265,13 @@ Antes de mexer em algo novo:
 Ordem oficial a partir daqui:
 
 `guardados detalhados -> limpeza da sessao -> progresso como hub -> motor adaptativo`
+
+Estado desta continuidade:
+
+- `guardados detalhados`: executado e validado
+- `limpeza da sessao`: executado e validado
+- `progresso como hub`: executado e validado
+- `motor adaptativo`: primeira fatia executada e validada no browser com historico realista; o perfil agora guarda `lastCorrect`, `lastErrorAt`, `consecutiveHits` e `consecutiveErrors`
+- guardrail implementado: a sessao nao vira escada infinita de dificuldade; ela preserva mistura de confianca, consolidacao e desafio
+- explicabilidade curta implementada na sessao com frases sem tom punitivo
+- proxima frente liberada: testar com uso real prolongado e ajustar os limiares do motor se a cadencia parecer facil ou pesada demais

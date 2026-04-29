@@ -21,8 +21,6 @@ window.QuestionsPage = {
     directSearchMatchCount: null,
     directSearchLoading: false,
     directSearchRefocusPending: false,
-    directSearchAutoAddPending: false,
-    directSearchAutoStartPending: false,
     simuladoBuilder: null,
     renderFrameId: 0,
     renderQueuedSync: false,
@@ -191,26 +189,8 @@ window.QuestionsPage = {
             window.RotaNotaQuestionsFocusDirectSearch ===
             true
         ) {
-            const launchSearchInput =
-                String(
-                    window.RotaNotaQuestionsDirectSearchInput ||
-                        ""
-                ).trim();
-            this.directSearchInput =
-                launchSearchInput;
-            this.directSearchAutoAddPending =
-                Boolean(launchSearchInput);
-            this.directSearchAutoStartPending =
-                Boolean(
-                    window.RotaNotaQuestionsDirectSearchAutoStart &&
-                        launchSearchInput
-                );
             this.directSearchRefocusPending = true;
             window.RotaNotaQuestionsFocusDirectSearch =
-                false;
-            window.RotaNotaQuestionsDirectSearchInput =
-                "";
-            window.RotaNotaQuestionsDirectSearchAutoStart =
                 false;
         }
         this.loadCoachState();
@@ -248,7 +228,6 @@ window.QuestionsPage = {
             this.openLauncher(
                 initialLauncherView
             );
-            this.applyDirectSearchLaunchIntent();
             return;
         }
 
@@ -269,7 +248,6 @@ window.QuestionsPage = {
         this.openLauncher(
             initialLauncherView
         );
-        this.applyDirectSearchLaunchIntent();
     },
 
     async loadSchoolCatalog() {
@@ -4389,44 +4367,6 @@ window.QuestionsPage = {
     setDirectSearchInput(value = "") {
         this.directSearchInput =
             String(value || "");
-    },
-
-    applyDirectSearchLaunchIntent() {
-        const launchInput =
-            String(
-                this.directSearchInput || ""
-            ).trim();
-
-        if (!launchInput) {
-            this.directSearchAutoAddPending = false;
-            this.directSearchAutoStartPending = false;
-            return false;
-        }
-
-        if (
-            this.directSearchAutoAddPending ===
-            true
-        ) {
-            this.directSearchAutoAddPending = false;
-            this.addDirectSearchTerm(
-                launchInput
-            );
-            if (
-                this.directSearchAutoStartPending ===
-                true
-            ) {
-                this.directSearchAutoStartPending = false;
-                window.setTimeout(() => {
-                    this.startDirectSearchSession();
-                }, 0);
-            }
-            return true;
-        }
-
-        this.directSearchRefocusPending = true;
-        this.directSearchAutoStartPending = false;
-        this.render();
-        return false;
     },
 
     async refreshDirectSearchMatches(

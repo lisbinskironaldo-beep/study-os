@@ -11,6 +11,7 @@ window.QuestionsState = {
         "smart_profiles",
         "specific",
         "saved",
+        "saved_detail",
         "resume"
     ]),
 

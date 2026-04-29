@@ -587,6 +587,7 @@ export function createQuestionsSessionUseCases(
             }
         );
 
+        page.suppressAmbientForQuestionsSession?.();
         page.activateSimuladoTimer?.(
             meta,
             {

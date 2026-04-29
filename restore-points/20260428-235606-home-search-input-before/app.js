@@ -440,24 +440,6 @@ const Core = {
                 });
             });
 
-        document
-            .querySelectorAll("[data-home-search-form]")
-            .forEach((form) => {
-                form.addEventListener("submit", (event) => {
-                    event.preventDefault();
-                    const input =
-                        form.querySelector(
-                            "input"
-                        );
-                    this.openQuestionsSearch(
-                        input ? input.value : "",
-                        {
-                            autoStart: true
-                        }
-                    );
-                });
-            });
-
         this.footerButtons.forEach(btn => {
 
             btn.addEventListener("click", () => {
@@ -941,27 +923,9 @@ QuestionsPage.openLauncher(requestedView)
 if (
 window.RotaNotaQuestionsFocusDirectSearch === true
 ) {
-const directSearchInput = String(
-window.RotaNotaQuestionsDirectSearchInput || ""
-).trim()
-QuestionsPage.directSearchInput = directSearchInput
-QuestionsPage.directSearchAutoAddPending = Boolean(
-directSearchInput
-)
-QuestionsPage.directSearchAutoStartPending = Boolean(
-window.RotaNotaQuestionsDirectSearchAutoStart &&
-directSearchInput
-)
 QuestionsPage.directSearchRefocusPending = true
 window.RotaNotaQuestionsFocusDirectSearch = false
-window.RotaNotaQuestionsDirectSearchInput = ""
-window.RotaNotaQuestionsDirectSearchAutoStart = false
-if (
-typeof QuestionsPage.applyDirectSearchLaunchIntent ===
-"function"
-) {
-QuestionsPage.applyDirectSearchLaunchIntent()
-} else if (typeof QuestionsPage.render === "function") {
+if (typeof QuestionsPage.render === "function") {
 QuestionsPage.render()
 }
 }
@@ -2745,7 +2709,11 @@ return
             safeAction ===
             "questions-search"
         ) {
-            this.openQuestionsSearch();
+            window.RotaNotaQuestionsLauncherTarget =
+                "quick";
+            window.RotaNotaQuestionsFocusDirectSearch =
+                true;
+            this.navigate("questions");
             return;
         }
 
@@ -2760,24 +2728,6 @@ return
                 safeAction;
             this.navigate("premium-study");
         }
-    },
-
-    openQuestionsSearch(query = "", options = {}) {
-        const cleanQuery =
-            String(query || "").trim();
-        const shouldAutoStart =
-            options.autoStart === true &&
-            Boolean(cleanQuery);
-
-        window.RotaNotaQuestionsLauncherTarget =
-            "quick";
-        window.RotaNotaQuestionsFocusDirectSearch =
-            true;
-        window.RotaNotaQuestionsDirectSearchInput =
-            cleanQuery;
-        window.RotaNotaQuestionsDirectSearchAutoStart =
-            shouldAutoStart;
-        this.navigate("questions");
     },
 
     /* ================= CONTROL ================= */

@@ -495,6 +495,15 @@ Cada questao recebe peso a partir de:
 - necessidade de fixacao
 - variedade minima para nao repetir de forma burra
 
+Regra central:
+
+- adaptativo nao significa subir dificuldade sempre que o usuario acerta
+- a meta e manter desafio confortavel, com sensacao de progresso, nao pressionar ate errar
+- acertos recentes liberam consolidacao e variedade antes de liberar dificuldade maior
+- dificuldade maior entra em pequenas doses quando ha sequencia de acertos e boa acuracia no topico
+- erros recentes reduzem pressao e puxam revisao guiada
+- o sistema deve preservar questoes de confianca dentro da sessao para nao quebrar motivacao
+
 ## Decisao importante
 
 O treino inteligente nao escolhe topicos positivos.
@@ -549,9 +558,17 @@ Todo o resto continua elegivel.
 
 Para o usuario confiar no modo inteligente, a interface precisa justificar as mudancas com frases curtas:
 
-- `Subimos um pouco a dificuldade porque voce manteve consistencia`
-- `Voltamos um passo para consolidar esse topico`
-- `Revisando um ponto visto antes para fixacao`
+- `Mantendo o ritmo para consolidar antes de subir.`
+- `Entrou uma questao de confianca para fixar o assunto.`
+- `Agora vai um desafio leve porque voce manteve consistencia.`
+- `Voltamos um passo para reforcar esse ponto sem pressa.`
+- `Revisando um ponto visto antes para fixacao.`
+
+O texto nunca deve soar como punicao:
+
+- evitar `voce errou, entao baixamos`
+- preferir `vamos reforcar este ponto`
+- evitar mostrar nivel tecnico demais durante a resposta
 
 ---
 
@@ -1108,8 +1125,7 @@ Objetivo:
 
 Status:
 
-- [x] base pronta
-- [ ] consulta dedicada pendente
+- [x] concluido
 
 Feito:
 
@@ -1118,10 +1134,7 @@ Feito:
 - duplicar
 - apagar
 - refazer
-
-Falta:
-
-- tela propria de consulta detalhada do bloco
+- consulta detalhada do bloco
 
 ### Bloco 6 - Retomada
 
@@ -1149,7 +1162,28 @@ Objetivo:
 
 Status:
 
-- [ ] pendente
+- [x] primeira fatia implementada e validada no browser
+
+Feito:
+
+- o perfil por topico agora registra ultima resposta correta, ultimo erro e sequencias recentes de acertos/erros
+- o motor reduz alvo de dificuldade quando ha erro recente ou sequencia de erros
+- o motor sobe alvo de dificuldade quando ha sequencia de acertos com boa acuracia
+- a revisao ganha peso extra quando o topico tem erro recente
+- o motor preserva mistura de confianca, consolidacao e desafio para nao virar escada infinita
+- a sessao exibe uma explicacao curta sem tom punitivo sobre o motivo da questao
+
+Validacao executada no browser:
+
+- cenario de topico fraco reduziu alvo de dificuldade
+- cenario de topico forte subiu alvo sem eliminar questoes de confianca
+- a sessao manteve limite de desafio dentro do guardrail
+- a mensagem exibida nao usa linguagem de punicao
+
+Proxima validacao:
+
+- testar com uso real prolongado
+- ajustar limiares se o treino parecer facil demais, pesado demais ou repetitivo
 
 ### Bloco 8 - Refino visual e motion
 
@@ -1262,14 +1296,14 @@ Objetivo:
 
 Status:
 
-- [ ] parcialmente pronto
+- [x] concluido
 
 Entregas:
 
 - [x] guardar bloco
 - [x] renomear
 - [x] refazer
-- [ ] consulta detalhada
+- [x] consulta detalhada
 - [x] guardar e iniciar na mesma acao
 
 ### Etapa 8 - Motion e polimento
@@ -1280,7 +1314,13 @@ Objetivo:
 
 Status:
 
-- [ ] pendente
+- [ ] em andamento
+
+Entregas:
+
+- [x] reduzir a sessao para barra compacta de foco
+- [x] recolher detalhes tecnicos da rota por padrao
+- [x] manter player ambiente oculto ao iniciar/retomar sessao
 
 ---
 
@@ -1299,10 +1339,14 @@ Status:
 - [x] Persistir sessoes em andamento
 - [x] Simplificar a home para 3 botoes principais
 - [x] Implementar o wizard circular do treino inteligente
-- [ ] Criar a tela dedicada de consulta de bloco
+- [x] Criar a tela dedicada de consulta de bloco
 - [x] Implementar tempo e quantidade no novo fluxo inteligente
-- [ ] Implementar o motor adaptativo por dificuldade e revisao
-- [ ] Refinar a tela da sessao para ficar mais limpa
+- [x] Implementar a primeira fatia do motor adaptativo por dificuldade e revisao
+- [x] Validar conforto do motor adaptativo no browser com historico realista
+- [x] Exibir explicabilidade curta durante a sessao sem tom punitivo
+- [x] Garantir mistura de confianca, consolidacao e desafio
+- [ ] Ajustar limiares do motor apos uso real prolongado
+- [x] Refinar a tela da sessao para ficar mais limpa
 
 ---
 
@@ -1327,5 +1371,10 @@ A proxima versao passa a ser considerada boa quando:
 ```txt
 Base tecnica pronta
 Home seca concluida
-Proxima entrega = concluir o wizard inteligente e fechar tempo/quantidade
+Guardados detalhados concluido
+Sessao limpa concluida
+Progresso como hub proprio concluido
+Motor adaptativo por dificuldade e revisao iniciado
+Motor adaptativo validado com guardrails de motivacao
+Proxima entrega = ajustar limiares apos uso real prolongado
 ```

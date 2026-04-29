@@ -724,30 +724,9 @@ export function createQuestionsLibraryUseCases(
             return;
         }
 
-        QuestionsStore.markSavedBlockUsed(
-            block.id
-        );
-        QuestionsContext.replace(
-            {
-                ...QuestionsContext.get(),
-                ...(
-                    block.launcherContext ||
-                    block.routeSnapshot
-                        ?.context ||
-                    {}
-                )
-            },
-            false
-        );
-
-        page.runtimeNotice =
-            `Bloco aplicado: ${block.name}.`;
-        page.syncContext();
-        page.openLauncher(
-            block.mode === "smart"
-                ? "smart"
-                : "specific"
-        );
+        page.activeSavedBlockId =
+            String(block.id || "");
+        page.openLauncher("saved_detail");
     }
 
     async function startSavedBlock(

@@ -508,6 +508,7 @@ export function createQuestionsLegacySessionFallback(
             }
         );
 
+        page.suppressAmbientForQuestionsSession?.();
         page.activateSimuladoTimer?.(
             meta,
             {
