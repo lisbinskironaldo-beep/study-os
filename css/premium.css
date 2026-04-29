@@ -10315,6 +10315,11 @@ body:not(.dark) .rotanota-home-brand {
         height: 26px;
     }
 
+    .rotanota-topbar-brand .rotanota-topbar-mark {
+        width: 28px;
+        height: 28px;
+    }
+
     .rotanota-home-brand {
         padding: 18px;
     }
