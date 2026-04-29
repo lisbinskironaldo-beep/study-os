@@ -210,12 +210,12 @@ Estilo limpo, vetorial, sofisticado, sem mockup.
 
 ## Próximos passos recomendados
 
-1. Criar `C:\dev\timer-pomodoro` como projeto separado.
-2. Extrair/adaptar o essencial do Pomodoro do RotaNota.
-3. Criar layout próprio, mais focado e menos dashboard.
-4. Adicionar anúncio para Papiro.
-5. Validar no browser em claro/escuro/mobile.
-6. Publicar em Vercel como projeto separado.
+1. [x] Criar `C:\dev\timer-pomodoro` como projeto separado.
+2. [x] Extrair/adaptar o essencial do Pomodoro do RotaNota sem remover o Pomodoro do Papiro Tools.
+3. [x] Criar layout próprio, mais focado e menos dashboard.
+4. [x] Adicionar anúncio para Papiro Tools.
+5. [x] Validar no browser em desktop/mobile.
+6. [x] Publicar em Vercel como projeto separado.
 7. Depois criar `calculadoras-de-estudo`.
 
 ## Estado atual importante
@@ -224,17 +224,21 @@ Repositórios/pastas:
 
 - RotaNota atual: `C:\dev\study-os`
 - Planejador Semanal separado: `C:\dev\planejador-semanal`
+- Timer Pomodoro separado: `C:\dev\timer-pomodoro`
 
 Produções:
 
 - RotaNota atual: `https://rota-nota.vercel.app`
 - Planejador Semanal: `https://planejador-semanal.vercel.app`
+- Timer Pomodoro: `https://timer-pomodoro-xi.vercel.app`
 
 Últimas validações:
 
 - `https://planejador-semanal.vercel.app` respondeu `200`.
 - `https://rota-nota.vercel.app` respondeu `200`.
 - `/tabela-classica/` no RotaNota foi removida e deve responder `404`.
+- `https://timer-pomodoro-xi.vercel.app` respondeu `200`.
+- Timer Pomodoro validado com Playwright em mobile 390px sem overflow, CTA apontando para `https://rota-nota.vercel.app/` e sem erros de console.
 
 Atualização 2026-04-29:
 
@@ -247,3 +251,4 @@ Atualização 2026-04-29:
   - `assets/papiro-tools-logo-dark.svg`
   - `manifest.webmanifest`
 - próximo site-isca recomendado continua sendo `Timer Pomodoro`.
+- Timer Pomodoro foi criado e publicado depois desta nota; a próxima frente recomendada passa a ser `Calculadoras de Estudo`.
